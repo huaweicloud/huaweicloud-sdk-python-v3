@@ -28,7 +28,7 @@ class UnbindDbOmEipResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果  - success: 成功  - failed: 失败
+        :param result: 操作结果  - success：成功  - failed：失败
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class UnbindDbOmEipResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this UnbindDbOmEipResponse.
 
-        操作结果  - success: 成功  - failed: 失败
+        操作结果  - success：成功  - failed：失败
 
         :return: The result of this UnbindDbOmEipResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class UnbindDbOmEipResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this UnbindDbOmEipResponse.
 
-        操作结果  - success: 成功  - failed: 失败
+        操作结果  - success：成功  - failed：失败
 
         :param result: The result of this UnbindDbOmEipResponse.
         :type result: str

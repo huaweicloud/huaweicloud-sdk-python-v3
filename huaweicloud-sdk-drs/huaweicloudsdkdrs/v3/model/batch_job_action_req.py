@@ -35,7 +35,7 @@ class BatchJobActionReq:
         :type action: str
         :param job_id: 任务ID（集群模式 取父任务的任务ID）。
         :type job_id: str
-        :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
+        :param _property: 操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html dbtype参数取值：mysql, taurusha, sqlserver, postgresql, ddm, mongodb, awsdocumentdb, hwmongodb, hwpostgresql, oracle, taurus, gaussdb, kafka, mrsKafka, cassandra, dynamo, dws, gaussdbv5, gaussdbv5ha, gaussmongodb, multigaussdbv5, dmq, gaussdbt, gaussdbtha, gaussdb300, elasticsearch, db2, tidb, redis, gaussredis, rediscluster, mariadb, oceanbase, informix, gaussdbv1, gausscassandra, geminidynamo, dds, tauruslite, star-rocks, gaussdbformysqllite, taurus-postgresql, thl, opengauss, ddmforgaussdb, gaussdbmultimaster
         :type _property: str
         """
         
@@ -98,7 +98,7 @@ class BatchJobActionReq:
     def _property(self):
         r"""Gets the _property of this BatchJobActionReq.
 
-        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
+        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html dbtype参数取值：mysql, taurusha, sqlserver, postgresql, ddm, mongodb, awsdocumentdb, hwmongodb, hwpostgresql, oracle, taurus, gaussdb, kafka, mrsKafka, cassandra, dynamo, dws, gaussdbv5, gaussdbv5ha, gaussmongodb, multigaussdbv5, dmq, gaussdbt, gaussdbtha, gaussdb300, elasticsearch, db2, tidb, redis, gaussredis, rediscluster, mariadb, oceanbase, informix, gaussdbv1, gausscassandra, geminidynamo, dds, tauruslite, star-rocks, gaussdbformysqllite, taurus-postgresql, thl, opengauss, ddmforgaussdb, gaussdbmultimaster
 
         :return: The _property of this BatchJobActionReq.
         :rtype: str
@@ -109,7 +109,7 @@ class BatchJobActionReq:
     def _property(self, _property):
         r"""Sets the _property of this BatchJobActionReq.
 
-        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html)
+        操作对应的参数（API参考文档-批量测试连接-集群模式-property字段数据结构说明）[字段说明参考](https://support.huaweicloud.com/api-drs/drs_03_0106.html dbtype参数取值：mysql, taurusha, sqlserver, postgresql, ddm, mongodb, awsdocumentdb, hwmongodb, hwpostgresql, oracle, taurus, gaussdb, kafka, mrsKafka, cassandra, dynamo, dws, gaussdbv5, gaussdbv5ha, gaussmongodb, multigaussdbv5, dmq, gaussdbt, gaussdbtha, gaussdb300, elasticsearch, db2, tidb, redis, gaussredis, rediscluster, mariadb, oceanbase, informix, gaussdbv1, gausscassandra, geminidynamo, dds, tauruslite, star-rocks, gaussdbformysqllite, taurus-postgresql, thl, opengauss, ddmforgaussdb, gaussdbmultimaster
 
         :param _property: The _property of this BatchJobActionReq.
         :type _property: str

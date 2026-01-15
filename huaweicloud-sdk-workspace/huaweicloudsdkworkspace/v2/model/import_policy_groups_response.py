@@ -18,6 +18,7 @@ class ImportPolicyGroupsResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
+        'error_detail': 'str',
         'encoded_authorization_message': 'str',
         'policy_group_name_list': 'list[PolicyGroupNameInfo]',
         'failed_policy_group_name_list': 'list[PolicyGroupNameInfo]'
@@ -26,12 +27,13 @@ class ImportPolicyGroupsResponse(SdkResponse):
     attribute_map = {
         'error_code': 'error_code',
         'error_msg': 'error_msg',
+        'error_detail': 'error_detail',
         'encoded_authorization_message': 'encoded_authorization_message',
         'policy_group_name_list': 'policy_group_name_list',
         'failed_policy_group_name_list': 'failed_policy_group_name_list'
     }
 
-    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, policy_group_name_list=None, failed_policy_group_name_list=None):
+    def __init__(self, error_code=None, error_msg=None, error_detail=None, encoded_authorization_message=None, policy_group_name_list=None, failed_policy_group_name_list=None):
         r"""ImportPolicyGroupsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ImportPolicyGroupsResponse(SdkResponse):
         :type error_code: str
         :param error_msg: 错误描述。
         :type error_msg: str
+        :param error_detail: 错误详情。
+        :type error_detail: str
         :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
         :type encoded_authorization_message: str
         :param policy_group_name_list: 导入策略组所有名字列表。
@@ -52,6 +56,7 @@ class ImportPolicyGroupsResponse(SdkResponse):
 
         self._error_code = None
         self._error_msg = None
+        self._error_detail = None
         self._encoded_authorization_message = None
         self._policy_group_name_list = None
         self._failed_policy_group_name_list = None
@@ -61,6 +66,8 @@ class ImportPolicyGroupsResponse(SdkResponse):
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if error_detail is not None:
+            self.error_detail = error_detail
         if encoded_authorization_message is not None:
             self.encoded_authorization_message = encoded_authorization_message
         if policy_group_name_list is not None:
@@ -111,6 +118,28 @@ class ImportPolicyGroupsResponse(SdkResponse):
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def error_detail(self):
+        r"""Gets the error_detail of this ImportPolicyGroupsResponse.
+
+        错误详情。
+
+        :return: The error_detail of this ImportPolicyGroupsResponse.
+        :rtype: str
+        """
+        return self._error_detail
+
+    @error_detail.setter
+    def error_detail(self, error_detail):
+        r"""Sets the error_detail of this ImportPolicyGroupsResponse.
+
+        错误详情。
+
+        :param error_detail: The error_detail of this ImportPolicyGroupsResponse.
+        :type error_detail: str
+        """
+        self._error_detail = error_detail
 
     @property
     def encoded_authorization_message(self):

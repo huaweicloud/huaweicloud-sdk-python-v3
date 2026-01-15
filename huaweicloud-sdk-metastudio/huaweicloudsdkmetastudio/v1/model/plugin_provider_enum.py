@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PluginProviderEnum:
-
+    """
+    allowed enum values
+    """
+    AMAP_WEATHER = "AMAP_WEATHER"
+    BOCHA = "BOCHA"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

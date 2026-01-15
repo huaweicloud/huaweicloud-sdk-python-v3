@@ -19,20 +19,20 @@ class CentralNetworkAttachment:
         'name': 'str',
         'description': 'str',
         'domain_id': 'str',
-        'state': 'str',
+        'state': 'CentralNetworkConnectionStateEnum',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'central_network_id': 'str',
         'central_network_plane_id': 'str',
         'global_connection_bandwidth_id': 'str',
-        'bandwidth_type': 'str',
+        'bandwidth_type': 'BandwidthTypeEnum',
         'bandwidth_size': 'int',
         'is_frozen': 'bool',
         'enterprise_router_id': 'str',
         'enterprise_router_project_id': 'str',
         'enterprise_router_region_id': 'str',
         'enterprise_router_attachment_id': 'str',
-        'attachment_instance_type': 'str',
+        'attachment_instance_type': 'AttachmentInstanceTypeEnum',
         'attachment_instance_id': 'str',
         'attachment_id': 'str',
         'attachment_instance_project_id': 'str',
@@ -83,8 +83,8 @@ class CentralNetworkAttachment:
         :type description: str
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param state: 中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
@@ -95,8 +95,8 @@ class CentralNetworkAttachment:
         :type central_network_plane_id: str
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
-        :param bandwidth_type: 带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
-        :type bandwidth_type: str
+        :param bandwidth_type: 
+        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         :param is_frozen: 是否冻结。
@@ -109,8 +109,8 @@ class CentralNetworkAttachment:
         :type enterprise_router_region_id: str
         :param enterprise_router_attachment_id: 企业路由器的连接ID。
         :type enterprise_router_attachment_id: str
-        :param attachment_instance_type: 接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-        :type attachment_instance_type: str
+        :param attachment_instance_type: 
+        :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         :param attachment_instance_id: 中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
         :type attachment_instance_id: str
         :param attachment_id: 中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
@@ -280,10 +280,8 @@ class CentralNetworkAttachment:
     def state(self):
         r"""Gets the state of this CentralNetworkAttachment.
 
-        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-
         :return: The state of this CentralNetworkAttachment.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         """
         return self._state
 
@@ -291,10 +289,8 @@ class CentralNetworkAttachment:
     def state(self, state):
         r"""Sets the state of this CentralNetworkAttachment.
 
-        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-
         :param state: The state of this CentralNetworkAttachment.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         """
         self._state = state
 
@@ -412,10 +408,8 @@ class CentralNetworkAttachment:
     def bandwidth_type(self):
         r"""Gets the bandwidth_type of this CentralNetworkAttachment.
 
-        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
-
         :return: The bandwidth_type of this CentralNetworkAttachment.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         """
         return self._bandwidth_type
 
@@ -423,10 +417,8 @@ class CentralNetworkAttachment:
     def bandwidth_type(self, bandwidth_type):
         r"""Sets the bandwidth_type of this CentralNetworkAttachment.
 
-        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
-
         :param bandwidth_type: The bandwidth_type of this CentralNetworkAttachment.
-        :type bandwidth_type: str
+        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         """
         self._bandwidth_type = bandwidth_type
 
@@ -566,10 +558,8 @@ class CentralNetworkAttachment:
     def attachment_instance_type(self):
         r"""Gets the attachment_instance_type of this CentralNetworkAttachment.
 
-        接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-
         :return: The attachment_instance_type of this CentralNetworkAttachment.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         """
         return self._attachment_instance_type
 
@@ -577,10 +567,8 @@ class CentralNetworkAttachment:
     def attachment_instance_type(self, attachment_instance_type):
         r"""Sets the attachment_instance_type of this CentralNetworkAttachment.
 
-        接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-
         :param attachment_instance_type: The attachment_instance_type of this CentralNetworkAttachment.
-        :type attachment_instance_type: str
+        :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         """
         self._attachment_instance_type = attachment_instance_type
 

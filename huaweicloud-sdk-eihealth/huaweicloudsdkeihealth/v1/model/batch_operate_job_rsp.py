@@ -16,7 +16,7 @@ class BatchOperateJobRsp:
 
     openapi_types = {
         'id': 'str',
-        'status': 'str',
+        'status': 'BatchOperateJobStatus',
         'message': 'str'
     }
 
@@ -33,8 +33,8 @@ class BatchOperateJobRsp:
 
         :param id: 作业id
         :type id: str
-        :param status: 批量操作作业的结果
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobStatus`
         :param message: 操作结果失败信息，仅在操作失败时会返回
         :type message: str
         """
@@ -79,10 +79,8 @@ class BatchOperateJobRsp:
     def status(self):
         r"""Gets the status of this BatchOperateJobRsp.
 
-        批量操作作业的结果
-
         :return: The status of this BatchOperateJobRsp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobStatus`
         """
         return self._status
 
@@ -90,10 +88,8 @@ class BatchOperateJobRsp:
     def status(self, status):
         r"""Sets the status of this BatchOperateJobRsp.
 
-        批量操作作业的结果
-
         :param status: The status of this BatchOperateJobRsp.
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.BatchOperateJobStatus`
         """
         self._status = status
 

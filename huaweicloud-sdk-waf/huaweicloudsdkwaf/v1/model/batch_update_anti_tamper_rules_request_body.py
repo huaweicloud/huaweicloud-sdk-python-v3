@@ -15,6 +15,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'hostname': 'str',
         'url': 'str',
         'description': 'str',
@@ -22,17 +23,20 @@ class BatchUpdateAntiTamperRulesRequestBody:
     }
 
     attribute_map = {
+        'name': 'name',
         'hostname': 'hostname',
         'url': 'url',
         'description': 'description',
         'policy_rule_ids': 'policy_rule_ids'
     }
 
-    def __init__(self, hostname=None, url=None, description=None, policy_rule_ids=None):
+    def __init__(self, name=None, hostname=None, url=None, description=None, policy_rule_ids=None):
         r"""BatchUpdateAntiTamperRulesRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type name: str
         :param hostname: 防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
         :type hostname: str
         :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
@@ -45,17 +49,42 @@ class BatchUpdateAntiTamperRulesRequestBody:
         
         
 
+        self._name = None
         self._hostname = None
         self._url = None
         self._description = None
         self._policy_rule_ids = None
         self.discriminator = None
 
+        if name is not None:
+            self.name = name
         self.hostname = hostname
         self.url = url
         if description is not None:
             self.description = description
         self.policy_rule_ids = policy_rule_ids
+
+    @property
+    def name(self):
+        r"""Gets the name of this BatchUpdateAntiTamperRulesRequestBody.
+
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The name of this BatchUpdateAntiTamperRulesRequestBody.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this BatchUpdateAntiTamperRulesRequestBody.
+
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param name: The name of this BatchUpdateAntiTamperRulesRequestBody.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def hostname(self):

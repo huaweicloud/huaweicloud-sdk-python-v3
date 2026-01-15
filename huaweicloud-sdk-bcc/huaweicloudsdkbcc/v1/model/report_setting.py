@@ -18,7 +18,7 @@ class ReportSetting:
         'setting_name': 'str',
         'enabled': 'bool',
         'region_ids': 'list[str]',
-        'resource_types': 'list[str]',
+        'resource_types': 'list[ResourceTypeEnum]',
         'time_range': 'int',
         'report_template_name': 'str',
         'frequency': 'int',
@@ -50,7 +50,7 @@ class ReportSetting:
         :param region_ids: 参与统计的资源归属的区域列表，不设置表示全部区域，默认不设置
         :type region_ids: list[str]
         :param resource_types: 参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
-        :type resource_types: list[str]
+        :type resource_types: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
         :param time_range: 参与统计的数据范围（生成报告时刻往前多少天内的数据参与统计，滚动计算），默认7天，取值范围：7到30天，详情类数据报告不受此项配置约束
         :type time_range: int
         :param report_template_name: 报告模板名称，例如TEMPLATE.TASK
@@ -161,7 +161,7 @@ class ReportSetting:
         参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
 
         :return: The resource_types of this ReportSetting.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
         """
         return self._resource_types
 
@@ -172,7 +172,7 @@ class ReportSetting:
         参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
 
         :param resource_types: The resource_types of this ReportSetting.
-        :type resource_types: list[str]
+        :type resource_types: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
         """
         self._resource_types = resource_types
 

@@ -15,7 +15,7 @@ class CreatePluginConfigReq:
     sensitive_list = []
 
     openapi_types = {
-        'plugin_provider': 'str',
+        'plugin_provider': 'PluginProviderEnum',
         'api_key': 'str'
     }
 
@@ -29,8 +29,8 @@ class CreatePluginConfigReq:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_provider: 插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
-        :type plugin_provider: str
+        :param plugin_provider: 
+        :type plugin_provider: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
         :param api_key: 密钥。
         :type api_key: str
         """
@@ -49,10 +49,8 @@ class CreatePluginConfigReq:
     def plugin_provider(self):
         r"""Gets the plugin_provider of this CreatePluginConfigReq.
 
-        插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
-
         :return: The plugin_provider of this CreatePluginConfigReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
         """
         return self._plugin_provider
 
@@ -60,10 +58,8 @@ class CreatePluginConfigReq:
     def plugin_provider(self, plugin_provider):
         r"""Sets the plugin_provider of this CreatePluginConfigReq.
 
-        插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
-
         :param plugin_provider: The plugin_provider of this CreatePluginConfigReq.
-        :type plugin_provider: str
+        :type plugin_provider: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
         """
         self._plugin_provider = plugin_provider
 

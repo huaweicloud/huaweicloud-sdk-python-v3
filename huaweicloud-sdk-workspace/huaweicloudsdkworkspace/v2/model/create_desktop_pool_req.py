@@ -28,7 +28,7 @@ class CreateDesktopPoolReq:
         'data_volumes': 'list[VolumeInfo]',
         'vpc_id': 'str',
         'subnet_ids': 'list[str]',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupIdInfo]',
         'authorized_objects': 'list[AuthorizedObjects]',
         'ou_name': 'str',
         'tags': 'list[Tag]',
@@ -96,7 +96,7 @@ class CreateDesktopPoolReq:
         :param subnet_ids: 创建桌面使用的子网ID。
         :type subnet_ids: list[str]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         :param authorized_objects: 要授权的用户/用户组列表。
         :type authorized_objects: list[:class:`huaweicloudsdkworkspace.v2.AuthorizedObjects`]
         :param ou_name: OU名称，在对接AD时使用，需提前在AD中创建OU。
@@ -467,7 +467,7 @@ class CreateDesktopPoolReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :return: The security_groups of this CreateDesktopPoolReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         return self._security_groups
 
@@ -478,7 +478,7 @@ class CreateDesktopPoolReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :param security_groups: The security_groups of this CreateDesktopPoolReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         self._security_groups = security_groups
 

@@ -33,7 +33,7 @@ class RdsDbResponseRetList:
 
         :param id: rds数据库id
         :type id: str
-        :param ret_status: 状态 - SUCCESS: 成功 - FAILED： 失败
+        :param ret_status: 状态 - SUCCESS：成功 - FAILED：失败
         :type ret_status: str
         :param ret_message: 描述
         :type ret_message: str
@@ -76,7 +76,7 @@ class RdsDbResponseRetList:
     def ret_status(self):
         r"""Gets the ret_status of this RdsDbResponseRetList.
 
-        状态 - SUCCESS: 成功 - FAILED： 失败
+        状态 - SUCCESS：成功 - FAILED：失败
 
         :return: The ret_status of this RdsDbResponseRetList.
         :rtype: str
@@ -87,7 +87,7 @@ class RdsDbResponseRetList:
     def ret_status(self, ret_status):
         r"""Sets the ret_status of this RdsDbResponseRetList.
 
-        状态 - SUCCESS: 成功 - FAILED： 失败
+        状态 - SUCCESS：成功 - FAILED：失败
 
         :param ret_status: The ret_status of this RdsDbResponseRetList.
         :type ret_status: str

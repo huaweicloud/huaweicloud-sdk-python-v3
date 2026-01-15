@@ -23,7 +23,7 @@ class ListEdgeSitesRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'availability_zone_id': 'list[str]',
-        'status': 'list[str]'
+        'status': 'list[SiteStatus]'
     }
 
     attribute_map = {
@@ -60,7 +60,7 @@ class ListEdgeSitesRequest:
         :param availability_zone_id: 根据边缘可用区ID查询
         :type availability_zone_id: list[str]
         :param status: 根据边缘小站部署状态查询
-        :type status: list[str]
+        :type status: list[:class:`huaweicloudsdkcloudpond.v1.SiteStatus`]
         """
         
         
@@ -278,7 +278,7 @@ class ListEdgeSitesRequest:
         根据边缘小站部署状态查询
 
         :return: The status of this ListEdgeSitesRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcloudpond.v1.SiteStatus`]
         """
         return self._status
 
@@ -289,7 +289,7 @@ class ListEdgeSitesRequest:
         根据边缘小站部署状态查询
 
         :param status: The status of this ListEdgeSitesRequest.
-        :type status: list[str]
+        :type status: list[:class:`huaweicloudsdkcloudpond.v1.SiteStatus`]
         """
         self._status = status
 

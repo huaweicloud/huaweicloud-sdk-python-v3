@@ -30,8 +30,8 @@ class AllTableVO:
         'create_by': 'str',
         'tenant_id': 'str',
         'description': 'str',
-        'status': 'str',
-        'biz_type': 'str',
+        'status': 'BizStatusEnum',
+        'biz_type': 'BizTypeEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'db_name': 'str',
@@ -45,16 +45,16 @@ class AllTableVO:
         'l2_id': 'str',
         'l3_id': 'str',
         'new_biz': 'BizVersionManageVO',
-        'physical_table': 'str',
-        'dev_physical_table': 'str',
-        'technical_asset': 'str',
-        'business_asset': 'str',
-        'meta_data_link': 'str',
-        'data_quality': 'str',
-        'dlf_task': 'str',
-        'materialization': 'str',
-        'publish_to_dlm': 'str',
-        'summary_status': 'str',
+        'physical_table': 'SyncStatusEnum',
+        'dev_physical_table': 'SyncStatusEnum',
+        'technical_asset': 'SyncStatusEnum',
+        'business_asset': 'SyncStatusEnum',
+        'meta_data_link': 'SyncStatusEnum',
+        'data_quality': 'SyncStatusEnum',
+        'dlf_task': 'SyncStatusEnum',
+        'materialization': 'SyncStatusEnum',
+        'publish_to_dlm': 'SyncStatusEnum',
+        'summary_status': 'SyncStatusEnum',
         'standard_count': 'str',
         'alias': 'str',
         'api_id': 'str',
@@ -64,7 +64,7 @@ class AllTableVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'str'
+        'env_type': 'EnvTypeEnum'
     }
 
     attribute_map = {
@@ -155,10 +155,10 @@ class AllTableVO:
         :type tenant_id: str
         :param description: 描述。
         :type description: str
-        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type status: str
-        :param biz_type: 业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-        :type biz_type: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param biz_type: 
+        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -185,26 +185,26 @@ class AllTableVO:
         :type l3_id: str
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type physical_table: str
-        :param dev_physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type dev_physical_table: str
-        :param technical_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type technical_asset: str
-        :param business_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type business_asset: str
-        :param meta_data_link: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type meta_data_link: str
-        :param data_quality: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type data_quality: str
-        :param dlf_task: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type dlf_task: str
-        :param materialization: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type materialization: str
-        :param publish_to_dlm: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type publish_to_dlm: str
-        :param summary_status: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type summary_status: str
+        :param physical_table: 
+        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param dev_physical_table: 
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param technical_asset: 
+        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param business_asset: 
+        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param meta_data_link: 
+        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param data_quality: 
+        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param dlf_task: 
+        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param materialization: 
+        :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param publish_to_dlm: 
+        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param summary_status: 
+        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param standard_count: 标准数量，只读，ID字符串。
         :type standard_count: str
         :param alias: 别名。
@@ -223,8 +223,8 @@ class AllTableVO:
         :type dev_version_name: str
         :param prod_version_name: 生产环境版本名称
         :type prod_version_name: str
-        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-        :type env_type: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         
         
@@ -716,10 +716,8 @@ class AllTableVO:
     def status(self):
         r"""Gets the status of this AllTableVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The status of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._status
 
@@ -727,10 +725,8 @@ class AllTableVO:
     def status(self, status):
         r"""Sets the status of this AllTableVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param status: The status of this AllTableVO.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._status = status
 
@@ -738,10 +734,8 @@ class AllTableVO:
     def biz_type(self):
         r"""Gets the biz_type of this AllTableVO.
 
-        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-
         :return: The biz_type of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         """
         return self._biz_type
 
@@ -749,10 +743,8 @@ class AllTableVO:
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this AllTableVO.
 
-        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-
         :param biz_type: The biz_type of this AllTableVO.
-        :type biz_type: str
+        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         """
         self._biz_type = biz_type
 
@@ -1042,10 +1034,8 @@ class AllTableVO:
     def physical_table(self):
         r"""Gets the physical_table of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The physical_table of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._physical_table
 
@@ -1053,10 +1043,8 @@ class AllTableVO:
     def physical_table(self, physical_table):
         r"""Sets the physical_table of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param physical_table: The physical_table of this AllTableVO.
-        :type physical_table: str
+        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._physical_table = physical_table
 
@@ -1064,10 +1052,8 @@ class AllTableVO:
     def dev_physical_table(self):
         r"""Gets the dev_physical_table of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The dev_physical_table of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._dev_physical_table
 
@@ -1075,10 +1061,8 @@ class AllTableVO:
     def dev_physical_table(self, dev_physical_table):
         r"""Sets the dev_physical_table of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param dev_physical_table: The dev_physical_table of this AllTableVO.
-        :type dev_physical_table: str
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._dev_physical_table = dev_physical_table
 
@@ -1086,10 +1070,8 @@ class AllTableVO:
     def technical_asset(self):
         r"""Gets the technical_asset of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The technical_asset of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._technical_asset
 
@@ -1097,10 +1079,8 @@ class AllTableVO:
     def technical_asset(self, technical_asset):
         r"""Sets the technical_asset of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param technical_asset: The technical_asset of this AllTableVO.
-        :type technical_asset: str
+        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._technical_asset = technical_asset
 
@@ -1108,10 +1088,8 @@ class AllTableVO:
     def business_asset(self):
         r"""Gets the business_asset of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The business_asset of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._business_asset
 
@@ -1119,10 +1097,8 @@ class AllTableVO:
     def business_asset(self, business_asset):
         r"""Sets the business_asset of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param business_asset: The business_asset of this AllTableVO.
-        :type business_asset: str
+        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._business_asset = business_asset
 
@@ -1130,10 +1106,8 @@ class AllTableVO:
     def meta_data_link(self):
         r"""Gets the meta_data_link of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The meta_data_link of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._meta_data_link
 
@@ -1141,10 +1115,8 @@ class AllTableVO:
     def meta_data_link(self, meta_data_link):
         r"""Sets the meta_data_link of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param meta_data_link: The meta_data_link of this AllTableVO.
-        :type meta_data_link: str
+        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._meta_data_link = meta_data_link
 
@@ -1152,10 +1124,8 @@ class AllTableVO:
     def data_quality(self):
         r"""Gets the data_quality of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The data_quality of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._data_quality
 
@@ -1163,10 +1133,8 @@ class AllTableVO:
     def data_quality(self, data_quality):
         r"""Sets the data_quality of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param data_quality: The data_quality of this AllTableVO.
-        :type data_quality: str
+        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._data_quality = data_quality
 
@@ -1174,10 +1142,8 @@ class AllTableVO:
     def dlf_task(self):
         r"""Gets the dlf_task of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The dlf_task of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._dlf_task
 
@@ -1185,10 +1151,8 @@ class AllTableVO:
     def dlf_task(self, dlf_task):
         r"""Sets the dlf_task of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param dlf_task: The dlf_task of this AllTableVO.
-        :type dlf_task: str
+        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._dlf_task = dlf_task
 
@@ -1196,10 +1160,8 @@ class AllTableVO:
     def materialization(self):
         r"""Gets the materialization of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The materialization of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._materialization
 
@@ -1207,10 +1169,8 @@ class AllTableVO:
     def materialization(self, materialization):
         r"""Sets the materialization of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param materialization: The materialization of this AllTableVO.
-        :type materialization: str
+        :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._materialization = materialization
 
@@ -1218,10 +1178,8 @@ class AllTableVO:
     def publish_to_dlm(self):
         r"""Gets the publish_to_dlm of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The publish_to_dlm of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._publish_to_dlm
 
@@ -1229,10 +1187,8 @@ class AllTableVO:
     def publish_to_dlm(self, publish_to_dlm):
         r"""Sets the publish_to_dlm of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param publish_to_dlm: The publish_to_dlm of this AllTableVO.
-        :type publish_to_dlm: str
+        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._publish_to_dlm = publish_to_dlm
 
@@ -1240,10 +1196,8 @@ class AllTableVO:
     def summary_status(self):
         r"""Gets the summary_status of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The summary_status of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._summary_status
 
@@ -1251,10 +1205,8 @@ class AllTableVO:
     def summary_status(self, summary_status):
         r"""Sets the summary_status of this AllTableVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param summary_status: The summary_status of this AllTableVO.
-        :type summary_status: str
+        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._summary_status = summary_status
 
@@ -1460,10 +1412,8 @@ class AllTableVO:
     def env_type(self):
         r"""Gets the env_type of this AllTableVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :return: The env_type of this AllTableVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         return self._env_type
 
@@ -1471,10 +1421,8 @@ class AllTableVO:
     def env_type(self, env_type):
         r"""Sets the env_type of this AllTableVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :param env_type: The env_type of this AllTableVO.
-        :type env_type: str
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
 

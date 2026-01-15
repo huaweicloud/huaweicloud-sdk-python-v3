@@ -49,7 +49,7 @@ class EndpointResp:
         :type name: str
         :param direction: 终端节点方向。 取值： inbound，表示入站终端节点。 outbound，表示出站终端节点。
         :type direction: str
-        :param status: 资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
         :type status: str
         :param vpc_id: 终端节点所属的VPC ID。
         :type vpc_id: str
@@ -165,7 +165,7 @@ class EndpointResp:
     def status(self):
         r"""Gets the status of this EndpointResp.
 
-        资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :return: The status of this EndpointResp.
         :rtype: str
@@ -176,7 +176,7 @@ class EndpointResp:
     def status(self, status):
         r"""Sets the status of this EndpointResp.
 
-        资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :param status: The status of this EndpointResp.
         :type status: str

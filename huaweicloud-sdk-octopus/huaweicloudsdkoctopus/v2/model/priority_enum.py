@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PriorityEnum:
-
+    """
+    allowed enum values
+    """
+    _120 = "120"
+    _100 = "100"
+    _80 = "80"
+    _60 = "60"
+    _40 = "40"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class EndpointType:
-
+    """
+    allowed enum values
+    """
+    EIP = "EIP"
+    ECS = "ECS"
+    ELB = "ELB"
+    CUSTOM_IP = "CUSTOM_IP"
+    CUSTOM_DOMAIN_NAME = "CUSTOM_DOMAIN_NAME"
+    CUSTOM_EIP = "CUSTOM_EIP"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

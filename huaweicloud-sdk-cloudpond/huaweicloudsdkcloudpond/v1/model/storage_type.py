@@ -4,7 +4,24 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StorageType:
-
+    """
+    allowed enum values
+    """
+    SAS = "SAS"
+    SSD = "SSD"
+    SAS_SD = "SAS_SD"
+    SSD_SD = "SSD_SD"
+    SAS_ARM = "SAS_ARM"
+    SSD_ARM = "SSD_ARM"
+    VS_SMALL_CAP = "VS_SMALL_CAP"
+    VS_MEDIUM_CAP = "VS_MEDIUM_CAP"
+    VS_LARGE_CAP = "VS_LARGE_CAP"
+    CBR_STANDARD_SMALL_CAP = "CBR_STANDARD_SMALL_CAP"
+    CBR_STANDARD_MEDIUM_CAP = "CBR_STANDARD_MEDIUM_CAP"
+    CBR_STANDARD_LARGE_CAP = "CBR_STANDARD_LARGE_CAP"
+    CBR_PROFESSIONAL_SMALL_CAP = "CBR_PROFESSIONAL_SMALL_CAP"
+    CBR_PROFESSIONAL_MEDIUM_CAP = "CBR_PROFESSIONAL_MEDIUM_CAP"
+    CBR_PROFESSIONAL_LARGE_CAP = "CBR_PROFESSIONAL_LARGE_CAP"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

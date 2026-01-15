@@ -18,6 +18,7 @@ class CreateChangeOrderReq:
         'type': 'str',
         'period_type': 'int',
         'period_num': 'int',
+        'is_auto_renew': 'int',
         'resize_product_id': 'str',
         'expand_volume_id': 'str',
         'expand_new_size': 'int',
@@ -31,6 +32,7 @@ class CreateChangeOrderReq:
         'type': 'type',
         'period_type': 'period_type',
         'period_num': 'period_num',
+        'is_auto_renew': 'is_auto_renew',
         'resize_product_id': 'resize_product_id',
         'expand_volume_id': 'expand_volume_id',
         'expand_new_size': 'expand_new_size',
@@ -40,17 +42,19 @@ class CreateChangeOrderReq:
         'extend_param': 'extend_param'
     }
 
-    def __init__(self, type=None, period_type=None, period_num=None, resize_product_id=None, expand_volume_id=None, expand_new_size=None, new_quantity=None, exclusive_lites_product_id=None, enterprise_project_id=None, extend_param=None):
+    def __init__(self, type=None, period_type=None, period_num=None, is_auto_renew=None, resize_product_id=None, expand_volume_id=None, expand_new_size=None, new_quantity=None, exclusive_lites_product_id=None, enterprise_project_id=None, extend_param=None):
         r"""CreateChangeOrderReq
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
+        :param type: 类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)、meteredToPeriod(按需转包周期)。
         :type type: str
-        :param period_type: 周期类型，2：包月；3：包年。
+        :param period_type: 周期类型，2：包月；3：包年； type为 meteredToPeriod 并且 is_subscribe &#x3D;&#x3D; true 时不能为空。
         :type period_type: int
-        :param period_num: 周期数。
+        :param period_num: 周期数；type为 meteredToPeriod 并且 is_subscribe &#x3D;&#x3D; true 时不能为空。
         :type period_num: int
+        :param is_auto_renew: 是否自动续费 *  按需转包周期场景支持自动续费； *  0：不自动续费，1：自动续费； *  默认值为0，表示不自动续费；
+        :type is_auto_renew: int
         :param resize_product_id: 变更后规格产品ID，当是resizeDesktops，必传。
         :type resize_product_id: str
         :param expand_volume_id: 扩容的云硬盘的ID，当是expandVolumes，必传。
@@ -72,6 +76,7 @@ class CreateChangeOrderReq:
         self._type = None
         self._period_type = None
         self._period_num = None
+        self._is_auto_renew = None
         self._resize_product_id = None
         self._expand_volume_id = None
         self._expand_new_size = None
@@ -86,6 +91,8 @@ class CreateChangeOrderReq:
             self.period_type = period_type
         if period_num is not None:
             self.period_num = period_num
+        if is_auto_renew is not None:
+            self.is_auto_renew = is_auto_renew
         if resize_product_id is not None:
             self.resize_product_id = resize_product_id
         if expand_volume_id is not None:
@@ -105,7 +112,7 @@ class CreateChangeOrderReq:
     def type(self):
         r"""Gets the type of this CreateChangeOrderReq.
 
-        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
+        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)、meteredToPeriod(按需转包周期)。
 
         :return: The type of this CreateChangeOrderReq.
         :rtype: str
@@ -116,7 +123,7 @@ class CreateChangeOrderReq:
     def type(self, type):
         r"""Sets the type of this CreateChangeOrderReq.
 
-        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)。
+        类型 resizeDesktops(变更规格)、expandVolumes(扩容磁盘)、meteredToPeriod(按需转包周期)。
 
         :param type: The type of this CreateChangeOrderReq.
         :type type: str
@@ -127,7 +134,7 @@ class CreateChangeOrderReq:
     def period_type(self):
         r"""Gets the period_type of this CreateChangeOrderReq.
 
-        周期类型，2：包月；3：包年。
+        周期类型，2：包月；3：包年； type为 meteredToPeriod 并且 is_subscribe == true 时不能为空。
 
         :return: The period_type of this CreateChangeOrderReq.
         :rtype: int
@@ -138,7 +145,7 @@ class CreateChangeOrderReq:
     def period_type(self, period_type):
         r"""Sets the period_type of this CreateChangeOrderReq.
 
-        周期类型，2：包月；3：包年。
+        周期类型，2：包月；3：包年； type为 meteredToPeriod 并且 is_subscribe == true 时不能为空。
 
         :param period_type: The period_type of this CreateChangeOrderReq.
         :type period_type: int
@@ -149,7 +156,7 @@ class CreateChangeOrderReq:
     def period_num(self):
         r"""Gets the period_num of this CreateChangeOrderReq.
 
-        周期数。
+        周期数；type为 meteredToPeriod 并且 is_subscribe == true 时不能为空。
 
         :return: The period_num of this CreateChangeOrderReq.
         :rtype: int
@@ -160,12 +167,34 @@ class CreateChangeOrderReq:
     def period_num(self, period_num):
         r"""Sets the period_num of this CreateChangeOrderReq.
 
-        周期数。
+        周期数；type为 meteredToPeriod 并且 is_subscribe == true 时不能为空。
 
         :param period_num: The period_num of this CreateChangeOrderReq.
         :type period_num: int
         """
         self._period_num = period_num
+
+    @property
+    def is_auto_renew(self):
+        r"""Gets the is_auto_renew of this CreateChangeOrderReq.
+
+        是否自动续费 *  按需转包周期场景支持自动续费； *  0：不自动续费，1：自动续费； *  默认值为0，表示不自动续费；
+
+        :return: The is_auto_renew of this CreateChangeOrderReq.
+        :rtype: int
+        """
+        return self._is_auto_renew
+
+    @is_auto_renew.setter
+    def is_auto_renew(self, is_auto_renew):
+        r"""Sets the is_auto_renew of this CreateChangeOrderReq.
+
+        是否自动续费 *  按需转包周期场景支持自动续费； *  0：不自动续费，1：自动续费； *  默认值为0，表示不自动续费；
+
+        :param is_auto_renew: The is_auto_renew of this CreateChangeOrderReq.
+        :type is_auto_renew: int
+        """
+        self._is_auto_renew = is_auto_renew
 
     @property
     def resize_product_id(self):

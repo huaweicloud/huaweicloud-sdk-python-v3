@@ -16,7 +16,7 @@ class ListenerAccessControlPolicy:
 
     openapi_types = {
         'listener_id': 'str',
-        'type': 'str'
+        'type': 'ListenerAccessControlType'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class ListenerAccessControlPolicy:
 
         :param listener_id: 监听器ID。
         :type listener_id: str
-        :param type: 访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
         """
         
         
@@ -72,10 +72,8 @@ class ListenerAccessControlPolicy:
     def type(self):
         r"""Gets the type of this ListenerAccessControlPolicy.
 
-        访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
-
         :return: The type of this ListenerAccessControlPolicy.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
         """
         return self._type
 
@@ -83,10 +81,8 @@ class ListenerAccessControlPolicy:
     def type(self, type):
         r"""Sets the type of this ListenerAccessControlPolicy.
 
-        访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
-
         :param type: The type of this ListenerAccessControlPolicy.
-        :type type: str
+        :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
         """
         self._type = type
 

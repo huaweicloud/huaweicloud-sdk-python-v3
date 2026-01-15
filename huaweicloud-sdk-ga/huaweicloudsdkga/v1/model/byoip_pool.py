@@ -20,7 +20,7 @@ class ByoipPool:
         'ip_type': 'str',
         'created_at': 'datetime',
         'updated_at': 'str',
-        'area': 'str',
+        'area': 'Area',
         'domain_id': 'str'
     }
 
@@ -49,8 +49,8 @@ class ByoipPool:
         :type created_at: datetime
         :param updated_at: 更新时间。
         :type updated_at: str
-        :param area: 地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-        :type area: str
+        :param area: 
+        :type area: :class:`huaweicloudsdkga.v1.Area`
         :param domain_id: 租户ID。
         :type domain_id: str
         """
@@ -195,10 +195,8 @@ class ByoipPool:
     def area(self):
         r"""Gets the area of this ByoipPool.
 
-        地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-
         :return: The area of this ByoipPool.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.Area`
         """
         return self._area
 
@@ -206,10 +204,8 @@ class ByoipPool:
     def area(self, area):
         r"""Sets the area of this ByoipPool.
 
-        地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-
         :param area: The area of this ByoipPool.
-        :type area: str
+        :type area: :class:`huaweicloudsdkga.v1.Area`
         """
         self._area = area
 

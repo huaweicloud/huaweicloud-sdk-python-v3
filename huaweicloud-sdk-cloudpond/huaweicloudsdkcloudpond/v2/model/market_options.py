@@ -15,7 +15,7 @@ class MarketOptions:
     sensitive_list = []
 
     openapi_types = {
-        'charge_mode': 'str',
+        'charge_mode': 'ChargeMode',
         'prepaid_options': 'PrepaidOptions',
         'strategies': 'list[Strategy]'
     }
@@ -31,8 +31,8 @@ class MarketOptions:
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: 计费模式。 - prepaid：包周期
-        :type charge_mode: str
+        :param charge_mode: 
+        :type charge_mode: :class:`huaweicloudsdkcloudpond.v2.ChargeMode`
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkcloudpond.v2.PrepaidOptions`
         :param strategies: 销售策略列表
@@ -57,10 +57,8 @@ class MarketOptions:
     def charge_mode(self):
         r"""Gets the charge_mode of this MarketOptions.
 
-        计费模式。 - prepaid：包周期
-
         :return: The charge_mode of this MarketOptions.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v2.ChargeMode`
         """
         return self._charge_mode
 
@@ -68,10 +66,8 @@ class MarketOptions:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this MarketOptions.
 
-        计费模式。 - prepaid：包周期
-
         :param charge_mode: The charge_mode of this MarketOptions.
-        :type charge_mode: str
+        :type charge_mode: :class:`huaweicloudsdkcloudpond.v2.ChargeMode`
         """
         self._charge_mode = charge_mode
 

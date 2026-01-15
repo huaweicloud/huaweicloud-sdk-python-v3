@@ -19,10 +19,10 @@ class AnalysisScript:
         'project_id': 'str',
         'workspace_id': 'str',
         'script_name': 'str',
-        'category': 'str',
+        'category': 'ScriptCategory',
         'directory': 'str',
         'description': 'str',
-        'script_type': 'str',
+        'script_type': 'AnalysisScriptType',
         'retrieve_table_id': 'str',
         'script': 'str',
         'owner': 'str',
@@ -65,14 +65,14 @@ class AnalysisScript:
         :type workspace_id: str
         :param script_name: 脚本名称
         :type script_name: str
-        :param category: **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-        :type category: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         :param directory: 脚本目录分组名称，长度在1到256个字符之间。
         :type directory: str
         :param description: 脚本的相关描述信息，长度在1到1024个字符之间。
         :type description: str
-        :param script_type: **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-        :type script_type: str
+        :param script_type: 
+        :type script_type: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         :param retrieve_table_id: UUID
         :type retrieve_table_id: str
         :param script: 脚本内容，长度在1到10240个字符之间。
@@ -236,10 +236,8 @@ class AnalysisScript:
     def category(self):
         r"""Gets the category of this AnalysisScript.
 
-        **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-
         :return: The category of this AnalysisScript.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         """
         return self._category
 
@@ -247,10 +245,8 @@ class AnalysisScript:
     def category(self, category):
         r"""Sets the category of this AnalysisScript.
 
-        **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-
         :param category: The category of this AnalysisScript.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         """
         self._category = category
 
@@ -302,10 +298,8 @@ class AnalysisScript:
     def script_type(self):
         r"""Gets the script_type of this AnalysisScript.
 
-        **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-
         :return: The script_type of this AnalysisScript.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         """
         return self._script_type
 
@@ -313,10 +307,8 @@ class AnalysisScript:
     def script_type(self, script_type):
         r"""Sets the script_type of this AnalysisScript.
 
-        **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-
         :param script_type: The script_type of this AnalysisScript.
-        :type script_type: str
+        :type script_type: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         """
         self._script_type = script_type
 

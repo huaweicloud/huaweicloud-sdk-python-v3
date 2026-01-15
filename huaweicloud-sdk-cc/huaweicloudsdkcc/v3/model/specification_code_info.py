@@ -16,7 +16,7 @@ class SpecificationCodeInfo:
 
     openapi_types = {
         'spec_code': 'str',
-        'billing_mode': 'int',
+        'billing_mode': 'BillingModeEnum',
         'max_bandwidth': 'int',
         'mim_bandwidth': 'int'
     }
@@ -35,8 +35,8 @@ class SpecificationCodeInfo:
 
         :param spec_code: 带宽包实例的规格编码。
         :type spec_code: str
-        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-        :type billing_mode: int
+        :param billing_mode: 
+        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         :param max_bandwidth: 最大带宽。
         :type max_bandwidth: int
         :param mim_bandwidth: 最小带宽。
@@ -84,10 +84,8 @@ class SpecificationCodeInfo:
     def billing_mode(self):
         r"""Gets the billing_mode of this SpecificationCodeInfo.
 
-        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-
         :return: The billing_mode of this SpecificationCodeInfo.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         """
         return self._billing_mode
 
@@ -95,10 +93,8 @@ class SpecificationCodeInfo:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this SpecificationCodeInfo.
 
-        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-
         :param billing_mode: The billing_mode of this SpecificationCodeInfo.
-        :type billing_mode: int
+        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         """
         self._billing_mode = billing_mode
 

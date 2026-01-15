@@ -17,7 +17,7 @@ class ListNetworkDeviceOfferingsRequest:
     openapi_types = {
         'zone_code': 'str',
         'storage_type': 'list[str]',
-        'pay_mode': 'list[str]',
+        'pay_mode': 'list[PayMode]',
         'period_num': 'list[int]',
         'limit': 'int',
         'marker': 'str'
@@ -42,7 +42,7 @@ class ListNetworkDeviceOfferingsRequest:
         :param storage_type: 存储类型
         :type storage_type: list[str]
         :param pay_mode: 付费模式
-        :type pay_mode: list[str]
+        :type pay_mode: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         :param period_num: 购买时长
         :type period_num: list[int]
         :param limit: 每页的数量
@@ -125,7 +125,7 @@ class ListNetworkDeviceOfferingsRequest:
         付费模式
 
         :return: The pay_mode of this ListNetworkDeviceOfferingsRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         """
         return self._pay_mode
 
@@ -136,7 +136,7 @@ class ListNetworkDeviceOfferingsRequest:
         付费模式
 
         :param pay_mode: The pay_mode of this ListNetworkDeviceOfferingsRequest.
-        :type pay_mode: list[str]
+        :type pay_mode: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         """
         self._pay_mode = pay_mode
 

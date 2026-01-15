@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DiagnoseResult:
-
+    """
+    allowed enum values
+    """
+    NO_RISK = "NO_RISK"
+    MEDIUM_RISK = "MEDIUM_RISK"
+    HIGH_RISK = "HIGH_RISK"
+    NOT_SCANNED = "NOT_SCANNED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

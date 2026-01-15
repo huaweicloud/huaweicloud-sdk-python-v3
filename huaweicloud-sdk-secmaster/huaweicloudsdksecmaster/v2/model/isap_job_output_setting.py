@@ -21,7 +21,7 @@ class IsapJobOutputSetting:
         'alert_mapping': 'dict(str, str)',
         'alert_name': 'str',
         'alert_remediation': 'str',
-        'alert_severity': 'str',
+        'alert_severity': 'IsapAlertSeverity',
         'alert_suppression': 'bool',
         'alert_type': 'dict(str, str)',
         'entity_extraction': 'dict(str, str)',
@@ -59,8 +59,8 @@ class IsapJobOutputSetting:
         :type alert_name: str
         :param alert_remediation: 告警修复建议
         :type alert_remediation: str
-        :param alert_severity: **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-        :type alert_severity: str
+        :param alert_severity: 
+        :type alert_severity: :class:`huaweicloudsdksecmaster.v2.IsapAlertSeverity`
         :param alert_suppression: 抑制标志
         :type alert_suppression: bool
         :param alert_type: 告警类型映射表
@@ -245,10 +245,8 @@ class IsapJobOutputSetting:
     def alert_severity(self):
         r"""Gets the alert_severity of this IsapJobOutputSetting.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :return: The alert_severity of this IsapJobOutputSetting.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapAlertSeverity`
         """
         return self._alert_severity
 
@@ -256,10 +254,8 @@ class IsapJobOutputSetting:
     def alert_severity(self, alert_severity):
         r"""Sets the alert_severity of this IsapJobOutputSetting.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :param alert_severity: The alert_severity of this IsapJobOutputSetting.
-        :type alert_severity: str
+        :type alert_severity: :class:`huaweicloudsdksecmaster.v2.IsapAlertSeverity`
         """
         self._alert_severity = alert_severity
 

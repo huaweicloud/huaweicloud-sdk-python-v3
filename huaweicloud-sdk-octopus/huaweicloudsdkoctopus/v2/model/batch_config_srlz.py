@@ -33,8 +33,8 @@ class BatchConfigSrlz:
         'name': 'str',
         'description': 'str',
         'simulator_name': 'str',
-        'record_mode': 'int',
-        'priority': 'int',
+        'record_mode': 'RecordModeEnum',
+        'priority': 'PriorityEnum',
         'datahub': 'bool',
         'passing_score': 'int',
         'scenario_type': 'int',
@@ -114,9 +114,9 @@ class BatchConfigSrlz:
         :param simulator_name: 仿真器名称,取值范围:A,B,C,D,E
         :type simulator_name: str
         :param record_mode: 录制模式  * &#x60;0&#x60; - 不录制 * &#x60;1&#x60; - 录制
-        :type record_mode: :class:`huaweicloudsdkoctopus.v2.int`
+        :type record_mode: :class:`huaweicloudsdkoctopus.v2.RecordModeEnum`
         :param priority: 优先级,取值越大，优先级越高。  * &#x60;120&#x60; - S * &#x60;100&#x60; - A * &#x60;80&#x60; - B * &#x60;60&#x60; - C * &#x60;40&#x60; - D
-        :type priority: :class:`huaweicloudsdkoctopus.v2.int`
+        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
         :param datahub: 是否使用datahub
         :type datahub: bool
         :param passing_score: 融合评测通过分数
@@ -583,7 +583,7 @@ class BatchConfigSrlz:
         录制模式  * `0` - 不录制 * `1` - 录制
 
         :return: The record_mode of this BatchConfigSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.RecordModeEnum`
         """
         return self._record_mode
 
@@ -594,7 +594,7 @@ class BatchConfigSrlz:
         录制模式  * `0` - 不录制 * `1` - 录制
 
         :param record_mode: The record_mode of this BatchConfigSrlz.
-        :type record_mode: :class:`huaweicloudsdkoctopus.v2.int`
+        :type record_mode: :class:`huaweicloudsdkoctopus.v2.RecordModeEnum`
         """
         self._record_mode = record_mode
 
@@ -605,7 +605,7 @@ class BatchConfigSrlz:
         优先级,取值越大，优先级越高。  * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
 
         :return: The priority of this BatchConfigSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
         """
         return self._priority
 
@@ -616,7 +616,7 @@ class BatchConfigSrlz:
         优先级,取值越大，优先级越高。  * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
 
         :param priority: The priority of this BatchConfigSrlz.
-        :type priority: :class:`huaweicloudsdkoctopus.v2.int`
+        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
         """
         self._priority = priority
 

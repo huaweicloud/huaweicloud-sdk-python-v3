@@ -45,9 +45,9 @@ class ProductInfo:
 
         :param id: ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
         :type id: str
-        :param cloud_service_type: 用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。
+        :param cloud_service_type: 用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。 取值：hws.service.type.drs
         :type cloud_service_type: str
-        :param resource_type: 用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。
+        :param resource_type: 用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。 hws.resource.type.drs.instance：instance（实例） hws.resource.type.drs.vm：vm（虚机） hws.resource.type.drs.volume：volume（磁盘） dbs.instanceName：instanceName（实例名称--适配DT） hws.resource.type.drs.flow：flow（DRS流量费） dbs.tag：tag（用户标签） dbs.enterpriseProjectId：enterpriseProjectId（企业项目）
         :type resource_type: str
         :param resource_spec_code: 用户购买云服务产品的资源规格，例如VM的小型规格，资源规格为m1.tiny。
         :type resource_spec_code: str
@@ -121,7 +121,7 @@ class ProductInfo:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this ProductInfo.
 
-        用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。
+        用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。 取值：hws.service.type.drs
 
         :return: The cloud_service_type of this ProductInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class ProductInfo:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this ProductInfo.
 
-        用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。
+        用户购买云服务产品的云服务类型，例如EC2，云服务类型为hws.service.type.ec2。 取值：hws.service.type.drs
 
         :param cloud_service_type: The cloud_service_type of this ProductInfo.
         :type cloud_service_type: str
@@ -143,7 +143,7 @@ class ProductInfo:
     def resource_type(self):
         r"""Gets the resource_type of this ProductInfo.
 
-        用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。
+        用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。 hws.resource.type.drs.instance：instance（实例） hws.resource.type.drs.vm：vm（虚机） hws.resource.type.drs.volume：volume（磁盘） dbs.instanceName：instanceName（实例名称--适配DT） hws.resource.type.drs.flow：flow（DRS流量费） dbs.tag：tag（用户标签） dbs.enterpriseProjectId：enterpriseProjectId（企业项目）
 
         :return: The resource_type of this ProductInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class ProductInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ProductInfo.
 
-        用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。
+        用户购买云服务产品的资源类型，例如EC2中的VM，资源类型为hws.resource.type.vm。 hws.resource.type.drs.instance：instance（实例） hws.resource.type.drs.vm：vm（虚机） hws.resource.type.drs.volume：volume（磁盘） dbs.instanceName：instanceName（实例名称--适配DT） hws.resource.type.drs.flow：flow（DRS流量费） dbs.tag：tag（用户标签） dbs.enterpriseProjectId：enterpriseProjectId（企业项目）
 
         :param resource_type: The resource_type of this ProductInfo.
         :type resource_type: str

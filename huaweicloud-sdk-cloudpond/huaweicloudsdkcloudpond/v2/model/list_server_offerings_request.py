@@ -16,7 +16,7 @@ class ListServerOfferingsRequest:
 
     openapi_types = {
         'zone_code': 'str',
-        'pay_mode': 'list[str]',
+        'pay_mode': 'list[PayMode]',
         'period_num': 'list[int]',
         'limit': 'int',
         'marker': 'str'
@@ -38,7 +38,7 @@ class ListServerOfferingsRequest:
         :param zone_code: 地区编码
         :type zone_code: str
         :param pay_mode: 付费模式
-        :type pay_mode: list[str]
+        :type pay_mode: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         :param period_num: 购买时长
         :type period_num: list[int]
         :param limit: 每页的数量
@@ -96,7 +96,7 @@ class ListServerOfferingsRequest:
         付费模式
 
         :return: The pay_mode of this ListServerOfferingsRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         """
         return self._pay_mode
 
@@ -107,7 +107,7 @@ class ListServerOfferingsRequest:
         付费模式
 
         :param pay_mode: The pay_mode of this ListServerOfferingsRequest.
-        :type pay_mode: list[str]
+        :type pay_mode: list[:class:`huaweicloudsdkcloudpond.v2.PayMode`]
         """
         self._pay_mode = pay_mode
 

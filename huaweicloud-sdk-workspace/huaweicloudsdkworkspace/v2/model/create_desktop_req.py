@@ -18,12 +18,13 @@ class CreateDesktopReq:
         'desktop_type': 'str',
         'availability_zone': 'str',
         'product_id': 'str',
+        'buy_type': 'str',
         'image_type': 'str',
         'image_id': 'str',
         'root_volume': 'Volume',
         'data_volumes': 'list[Volume]',
         'nics': 'list[Nic]',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupIdInfo]',
         'desktops': 'list[Desktop]',
         'desktop_name': 'str',
         'desktop_ips': 'list[str]',
@@ -43,6 +44,7 @@ class CreateDesktopReq:
         'desktop_type': 'desktop_type',
         'availability_zone': 'availability_zone',
         'product_id': 'product_id',
+        'buy_type': 'buy_type',
         'image_type': 'image_type',
         'image_id': 'image_id',
         'root_volume': 'root_volume',
@@ -64,7 +66,7 @@ class CreateDesktopReq:
         'if_mount_old_desktop_disk': 'if_mount_old_desktop_disk'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, buy_type=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None):
         r"""CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateDesktopReq:
         :type availability_zone: str
         :param product_id: 套餐ID。
         :type product_id: str
+        :param buy_type: console页面购买方式。默认值为custom。  - speed：快速购买。 - custom：自定义购买。
+        :type buy_type: str
         :param image_type: 镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
         :type image_type: str
         :param image_id: 镜像ID，用于私有镜像创建桌面场景，配合product_id使用。
@@ -86,7 +90,7 @@ class CreateDesktopReq:
         :param nics: 桌面对应的网卡信息，如果不指定则使用默认网卡。
         :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         :param desktops: 创建桌面使用的参数列表。长度为1-100。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
         :param desktop_name: 搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
@@ -120,6 +124,7 @@ class CreateDesktopReq:
         self._desktop_type = None
         self._availability_zone = None
         self._product_id = None
+        self._buy_type = None
         self._image_type = None
         self._image_id = None
         self._root_volume = None
@@ -145,6 +150,8 @@ class CreateDesktopReq:
         if availability_zone is not None:
             self.availability_zone = availability_zone
         self.product_id = product_id
+        if buy_type is not None:
+            self.buy_type = buy_type
         self.image_type = image_type
         self.image_id = image_id
         self.root_volume = root_volume
@@ -246,6 +253,28 @@ class CreateDesktopReq:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def buy_type(self):
+        r"""Gets the buy_type of this CreateDesktopReq.
+
+        console页面购买方式。默认值为custom。  - speed：快速购买。 - custom：自定义购买。
+
+        :return: The buy_type of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._buy_type
+
+    @buy_type.setter
+    def buy_type(self, buy_type):
+        r"""Sets the buy_type of this CreateDesktopReq.
+
+        console页面购买方式。默认值为custom。  - speed：快速购买。 - custom：自定义购买。
+
+        :param buy_type: The buy_type of this CreateDesktopReq.
+        :type buy_type: str
+        """
+        self._buy_type = buy_type
 
     @property
     def image_type(self):
@@ -360,7 +389,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :return: The security_groups of this CreateDesktopReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         return self._security_groups
 
@@ -371,7 +400,7 @@ class CreateDesktopReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
 
         :param security_groups: The security_groups of this CreateDesktopReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         self._security_groups = security_groups
 

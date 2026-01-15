@@ -16,15 +16,19 @@ class ListHourPackagesTypeRequest:
 
     openapi_types = {
         'desktop_resource_spec_code': 'str',
-        'resource_spec_code': 'str'
+        'resource_spec_code': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'desktop_resource_spec_code': 'desktop_resource_spec_code',
-        'resource_spec_code': 'resource_spec_code'
+        'resource_spec_code': 'resource_spec_code',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, desktop_resource_spec_code=None, resource_spec_code=None):
+    def __init__(self, desktop_resource_spec_code=None, resource_spec_code=None, limit=None, offset=None):
         r"""ListHourPackagesTypeRequest
 
         The model defined in huaweicloud sdk
@@ -33,18 +37,28 @@ class ListHourPackagesTypeRequest:
         :type desktop_resource_spec_code: str
         :param resource_spec_code: 小时包的资源规格编码。
         :type resource_spec_code: str
+        :param limit: 每页数量，范围0-1000，默认1000。
+        :type limit: int
+        :param offset: 偏移量，默认0。
+        :type offset: int
         """
         
         
 
         self._desktop_resource_spec_code = None
         self._resource_spec_code = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if desktop_resource_spec_code is not None:
             self.desktop_resource_spec_code = desktop_resource_spec_code
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def desktop_resource_spec_code(self):
@@ -89,6 +103,50 @@ class ListHourPackagesTypeRequest:
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListHourPackagesTypeRequest.
+
+        每页数量，范围0-1000，默认1000。
+
+        :return: The limit of this ListHourPackagesTypeRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListHourPackagesTypeRequest.
+
+        每页数量，范围0-1000，默认1000。
+
+        :param limit: The limit of this ListHourPackagesTypeRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListHourPackagesTypeRequest.
+
+        偏移量，默认0。
+
+        :return: The offset of this ListHourPackagesTypeRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListHourPackagesTypeRequest.
+
+        偏移量，默认0。
+
+        :param offset: The offset of this ListHourPackagesTypeRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

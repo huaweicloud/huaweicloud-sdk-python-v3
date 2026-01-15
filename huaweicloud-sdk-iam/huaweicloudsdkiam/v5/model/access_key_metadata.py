@@ -18,7 +18,7 @@ class AccessKeyMetadata:
         'user_id': 'str',
         'access_key_id': 'str',
         'created_at': 'datetime',
-        'status': 'str'
+        'status': 'AccessKeyStatus'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class AccessKeyMetadata:
         :type access_key_id: str
         :param created_at: 访问密钥创建时间。
         :type created_at: datetime
-        :param status: 访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         
         
@@ -126,10 +126,8 @@ class AccessKeyMetadata:
     def status(self):
         r"""Gets the status of this AccessKeyMetadata.
 
-        访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-
         :return: The status of this AccessKeyMetadata.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         return self._status
 
@@ -137,10 +135,8 @@ class AccessKeyMetadata:
     def status(self, status):
         r"""Sets the status of this AccessKeyMetadata.
 
-        访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-
         :param status: The status of this AccessKeyMetadata.
-        :type status: str
+        :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         self._status = status
 

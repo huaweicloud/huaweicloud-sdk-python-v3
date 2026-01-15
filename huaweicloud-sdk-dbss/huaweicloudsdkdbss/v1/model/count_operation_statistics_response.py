@@ -36,7 +36,7 @@ class CountOperationStatisticsResponse(SdkResponse):
         :type generate_time: str
         :param operation_statistics: 风险操作统计
         :type operation_statistics: list[:class:`huaweicloudsdkdbss.v1.OperationStatisticsBean`]
-        :param status: 状态  - FINISHED：已完成  - RUNNING：运行中
+        :param status: 状态  - FINISHED：已完成 - RUNNING：运行中
         :type status: str
         """
         
@@ -102,7 +102,7 @@ class CountOperationStatisticsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CountOperationStatisticsResponse.
 
-        状态  - FINISHED：已完成  - RUNNING：运行中
+        状态  - FINISHED：已完成 - RUNNING：运行中
 
         :return: The status of this CountOperationStatisticsResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class CountOperationStatisticsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CountOperationStatisticsResponse.
 
-        状态  - FINISHED：已完成  - RUNNING：运行中
+        状态  - FINISHED：已完成 - RUNNING：运行中
 
         :param status: The status of this CountOperationStatisticsResponse.
         :type status: str

@@ -17,6 +17,7 @@ class NodeMetadata:
     openapi_types = {
         'name': 'str',
         'uid': 'str',
+        'labels': 'dict(str, str)',
         'annotations': 'dict(str, str)',
         'creation_timestamp': 'str',
         'update_timestamp': 'str',
@@ -26,13 +27,14 @@ class NodeMetadata:
     attribute_map = {
         'name': 'name',
         'uid': 'uid',
+        'labels': 'labels',
         'annotations': 'annotations',
         'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp',
         'owner_references': 'ownerReferences'
     }
 
-    def __init__(self, name=None, uid=None, annotations=None, creation_timestamp=None, update_timestamp=None, owner_references=None):
+    def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None, owner_references=None):
         r"""NodeMetadata
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class NodeMetadata:
         :type name: str
         :param uid: **参数解释**： 节点ID，资源唯一标识。 **约束限制**： 创建成功后自动生成，填写无效 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type uid: str
+        :param labels: **参数解释**： CCE自有节点标签，非Kubernetes原生labels。 &gt; 标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及  示例：  &#x60;&#x60;&#x60; \&quot;labels\&quot;: {   \&quot;key\&quot; : \&quot;value\&quot; } &#x60;&#x60;&#x60;
+        :type labels: dict(str, str)
         :param annotations: **参数解释**： CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 &gt; Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。  **约束限制**： 仅用于查询，不支持请求时传入，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及  示例： &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60; 
         :type annotations: dict(str, str)
         :param creation_timestamp: **参数解释**： 节点创建时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
@@ -55,6 +59,7 @@ class NodeMetadata:
 
         self._name = None
         self._uid = None
+        self._labels = None
         self._annotations = None
         self._creation_timestamp = None
         self._update_timestamp = None
@@ -65,6 +70,8 @@ class NodeMetadata:
             self.name = name
         if uid is not None:
             self.uid = uid
+        if labels is not None:
+            self.labels = labels
         if annotations is not None:
             self.annotations = annotations
         if creation_timestamp is not None:
@@ -117,6 +124,28 @@ class NodeMetadata:
         :type uid: str
         """
         self._uid = uid
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this NodeMetadata.
+
+        **参数解释**： CCE自有节点标签，非Kubernetes原生labels。 > 标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
+
+        :return: The labels of this NodeMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this NodeMetadata.
+
+        **参数解释**： CCE自有节点标签，非Kubernetes原生labels。 > 标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
+
+        :param labels: The labels of this NodeMetadata.
+        :type labels: dict(str, str)
+        """
+        self._labels = labels
 
     @property
     def annotations(self):

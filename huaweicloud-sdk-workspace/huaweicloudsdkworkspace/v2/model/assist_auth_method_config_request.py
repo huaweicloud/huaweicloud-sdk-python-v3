@@ -15,7 +15,7 @@ class AssistAuthMethodConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'auth_type': 'str',
+        'auth_type': 'AuthAssistEnum',
         'otp_config_info': 'OtpConfigInfo'
     }
 
@@ -29,8 +29,8 @@ class AssistAuthMethodConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: 认证类型。 OTP：OTP辅助认证 RADIUS: RADIUS认证
-        :type auth_type: str
+        :param auth_type: 
+        :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthAssistEnum`
         :param otp_config_info: 
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
         """
@@ -50,10 +50,8 @@ class AssistAuthMethodConfigRequest:
     def auth_type(self):
         r"""Gets the auth_type of this AssistAuthMethodConfigRequest.
 
-        认证类型。 OTP：OTP辅助认证 RADIUS: RADIUS认证
-
         :return: The auth_type of this AssistAuthMethodConfigRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AuthAssistEnum`
         """
         return self._auth_type
 
@@ -61,10 +59,8 @@ class AssistAuthMethodConfigRequest:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this AssistAuthMethodConfigRequest.
 
-        认证类型。 OTP：OTP辅助认证 RADIUS: RADIUS认证
-
         :param auth_type: The auth_type of this AssistAuthMethodConfigRequest.
-        :type auth_type: str
+        :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthAssistEnum`
         """
         self._auth_type = auth_type
 

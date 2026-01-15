@@ -20,11 +20,12 @@ class ListLoginRecordsNewRequest:
         'user_name': 'str',
         'computer_name': 'str',
         'terminal_type': 'str',
+        'enterprise_project_id': 'str',
+        'public_ip': 'str',
         'offset': 'int',
         'limit': 'int',
         'min_network_rtt': 'int',
-        'max_network_rtt': 'int',
-        'enterprise_project_id': 'str'
+        'max_network_rtt': 'int'
     }
 
     attribute_map = {
@@ -33,14 +34,15 @@ class ListLoginRecordsNewRequest:
         'user_name': 'user_name',
         'computer_name': 'computer_name',
         'terminal_type': 'terminal_type',
+        'enterprise_project_id': 'enterprise_project_id',
+        'public_ip': 'public_ip',
         'offset': 'offset',
         'limit': 'limit',
         'min_network_rtt': 'min_network_rtt',
-        'max_network_rtt': 'max_network_rtt',
-        'enterprise_project_id': 'enterprise_project_id'
+        'max_network_rtt': 'max_network_rtt'
     }
 
-    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None, enterprise_project_id=None):
+    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, enterprise_project_id=None, public_ip=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None):
         r"""ListLoginRecordsNewRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,10 @@ class ListLoginRecordsNewRequest:
         :type computer_name: str
         :param terminal_type: 登录桌面的终端系统类型，当前支持：WI（云桌面客户端）。
         :type terminal_type: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
+        :param public_ip: 终端出口IP。
+        :type public_ip: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，返回登录记录数量限制,取值范围0-1000。如果不指定，默认为20。
@@ -63,8 +69,6 @@ class ListLoginRecordsNewRequest:
         :type min_network_rtt: int
         :param max_network_rtt: 查询端到端时延的最大值。
         :type max_network_rtt: int
-        :param enterprise_project_id: 企业项目ID。
-        :type enterprise_project_id: str
         """
         
         
@@ -74,11 +78,12 @@ class ListLoginRecordsNewRequest:
         self._user_name = None
         self._computer_name = None
         self._terminal_type = None
+        self._enterprise_project_id = None
+        self._public_ip = None
         self._offset = None
         self._limit = None
         self._min_network_rtt = None
         self._max_network_rtt = None
-        self._enterprise_project_id = None
         self.discriminator = None
 
         if start_time is not None:
@@ -91,6 +96,10 @@ class ListLoginRecordsNewRequest:
             self.computer_name = computer_name
         if terminal_type is not None:
             self.terminal_type = terminal_type
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if public_ip is not None:
+            self.public_ip = public_ip
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -99,8 +108,6 @@ class ListLoginRecordsNewRequest:
             self.min_network_rtt = min_network_rtt
         if max_network_rtt is not None:
             self.max_network_rtt = max_network_rtt
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
 
     @property
     def start_time(self):
@@ -213,6 +220,50 @@ class ListLoginRecordsNewRequest:
         self._terminal_type = terminal_type
 
     @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListLoginRecordsNewRequest.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ListLoginRecordsNewRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListLoginRecordsNewRequest.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListLoginRecordsNewRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def public_ip(self):
+        r"""Gets the public_ip of this ListLoginRecordsNewRequest.
+
+        终端出口IP。
+
+        :return: The public_ip of this ListLoginRecordsNewRequest.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        r"""Sets the public_ip of this ListLoginRecordsNewRequest.
+
+        终端出口IP。
+
+        :param public_ip: The public_ip of this ListLoginRecordsNewRequest.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
     def offset(self):
         r"""Gets the offset of this ListLoginRecordsNewRequest.
 
@@ -299,28 +350,6 @@ class ListLoginRecordsNewRequest:
         :type max_network_rtt: int
         """
         self._max_network_rtt = max_network_rtt
-
-    @property
-    def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ListLoginRecordsNewRequest.
-
-        企业项目ID。
-
-        :return: The enterprise_project_id of this ListLoginRecordsNewRequest.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ListLoginRecordsNewRequest.
-
-        企业项目ID。
-
-        :param enterprise_project_id: The enterprise_project_id of this ListLoginRecordsNewRequest.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

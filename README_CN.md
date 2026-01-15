@@ -226,8 +226,8 @@ if __name__ == "__main__":
     * [1.3 超时配置](#13-超时配置-top)
     * [1.4 SSL 配置](#14-ssl-配置-top)
 * [2. 认证信息配置](#2-认证信息配置-top)
-  * [2.1 使用永久 AK 和 SK](#21-使用永久-ak-和-sk-top)
-  * [2.2 使用临时 AK 和 SK](#22-使用临时-ak-和-sk-top)
+  * [2.1 使用临时 AK 和 SK](#21-使用临时-ak-和-sk-top)
+  * [2.2 使用永久 AK 和 SK](#22-使用永久-ak-和-sk-top)
   * [2.3 使用 IdpId 和 IdTokenFile](#23-使用-idpid-和-idtokenfile-top)
   * [2.4 认证信息管理](#24-认证信息管理-top)
     * [2.4.1 环境变量](#241-环境变量-top)
@@ -330,39 +330,11 @@ Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
 客户端认证方式支持以下几种：
 
-- 永久 AK&SK 认证
 - 临时 AK&SK&SecurityToken 认证
+- 永久 AK&SK 认证
 - IdpId&IdTokenFile 认证
 
-#### 2.1 使用永久 AK 和 SK [:top:](#用户手册-top)
-
-**认证参数说明**：
-
-- `ak` 华为云账号 Access Key
-- `sk` 华为云账号 Secret Access Key
-- `project_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID
-- `domain_id` 华为云账号 ID
-
-```python
-# Region级服务
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-project_id = "{your projectId string}"
-
-basic_credentials = BasicCredentials(ak, sk, project_id)
-
-# Global级服务
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-domain_id = "{your domainId string}"
-
-global_credentials = GlobalCredentials(ak, sk, domain_id)
-```
-
-- `3.0.26-beta` 及以上版本支持自动获取 projectId/domainId ，用户需要指定当前华为云账号的永久 AK&SK 和 对应的 region_id，同时在初始化客户端时配合 `with_region()`
-  方法使用，代码示例详见 [3.2 指定Region方式（推荐）](#32-指定-region-方式-推荐-top) 。
-
-#### 2.2 使用临时 AK 和 SK [:top:](#用户手册-top)
+#### 2.1 使用临时 AK 和 SK [:top:](#用户手册-top)
 
 首先需要获得临时 AK、SK 和 SecurityToken ，可以从永久 AK&SK 获得，或者通过委托授权获得。
 
@@ -403,6 +375,37 @@ domain_id = "{your domainId string}"
 
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
 ```
+
+#### 2.2 使用永久 AK 和 SK [:top:](#用户手册-top)
+
+> ⚠️华为云主账号为管理员，对资源及云服务具有完全的访问权限，AK和SK一旦泄露，会给系统带来信息安全风险，不建议使用。
+> 推荐使用最小化授权的IAM用户的AK和SK，关于IAM的安全使用最佳实践，请参考[IAM的安全使用最佳实践](https://support.huaweicloud.com/bestpractice-iam/iam_0426.html)。
+
+**认证参数说明**：
+
+- `ak` 华为云账号 Access Key
+- `sk` 华为云账号 Secret Access Key
+- `project_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID
+- `domain_id` 华为云账号 ID
+
+```python
+# Region级服务
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+
+basic_credentials = BasicCredentials(ak, sk, project_id)
+
+# Global级服务
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+domain_id = "{your domainId string}"
+
+global_credentials = GlobalCredentials(ak, sk, domain_id)
+```
+
+- `3.0.26-beta` 及以上版本支持自动获取 projectId/domainId ，用户需要指定当前华为云账号的永久 AK&SK 和 对应的 region_id，同时在初始化客户端时配合 `with_region()`
+  方法使用，代码示例详见 [3.2 指定Region方式（推荐）](#32-指定-region-方式-推荐-top) 。
 
 #### 2.3 使用 IdpId 和 IdTokenFile [:top:](#用户手册-top)
 

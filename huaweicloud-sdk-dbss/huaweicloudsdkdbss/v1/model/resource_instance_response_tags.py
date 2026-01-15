@@ -29,7 +29,7 @@ class ResourceInstanceResponseTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 键。最大长度128个字符。
         :type key: str
         :param value: 值
         :type value: str
@@ -50,7 +50,7 @@ class ResourceInstanceResponseTags:
     def key(self):
         r"""Gets the key of this ResourceInstanceResponseTags.
 
-        键
+        键。最大长度128个字符。
 
         :return: The key of this ResourceInstanceResponseTags.
         :rtype: str
@@ -61,7 +61,7 @@ class ResourceInstanceResponseTags:
     def key(self, key):
         r"""Sets the key of this ResourceInstanceResponseTags.
 
-        键
+        键。最大长度128个字符。
 
         :param key: The key of this ResourceInstanceResponseTags.
         :type key: str

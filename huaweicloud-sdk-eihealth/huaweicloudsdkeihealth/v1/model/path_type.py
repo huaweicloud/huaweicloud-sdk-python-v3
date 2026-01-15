@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PathType:
-
+    """
+    allowed enum values
+    """
+    FILE = "FILE"
+    FOLDER = "FOLDER"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

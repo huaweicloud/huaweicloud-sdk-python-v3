@@ -16,7 +16,6 @@ class Product:
 
     openapi_types = {
         'product_id': 'str',
-        'flavor_id': 'str',
         'type': 'str',
         'architecture': 'str',
         'cpu': 'str',
@@ -45,7 +44,6 @@ class Product:
 
     attribute_map = {
         'product_id': 'product_id',
-        'flavor_id': 'flavor_id',
         'type': 'type',
         'architecture': 'architecture',
         'cpu': 'cpu',
@@ -72,15 +70,13 @@ class Product:
         'share_space_size': 'share_space_size'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, vram=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, package_type=None, name=None, share_space_size=None):
+    def __init__(self, product_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, vram=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, package_type=None, name=None, share_space_size=None):
         r"""Product
 
         The model defined in huaweicloud sdk
 
         :param product_id: 产品id。
         :type product_id: str
-        :param flavor_id: 规格ID。
-        :type flavor_id: str
         :param type: 产品类型。取值为： BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
         :type type: str
         :param architecture: 产品架构，当前支持：arm、x86。
@@ -134,7 +130,6 @@ class Product:
         
 
         self._product_id = None
-        self._flavor_id = None
         self._type = None
         self._architecture = None
         self._cpu = None
@@ -163,8 +158,6 @@ class Product:
 
         if product_id is not None:
             self.product_id = product_id
-        if flavor_id is not None:
-            self.flavor_id = flavor_id
         if type is not None:
             self.type = type
         if architecture is not None:
@@ -235,28 +228,6 @@ class Product:
         :type product_id: str
         """
         self._product_id = product_id
-
-    @property
-    def flavor_id(self):
-        r"""Gets the flavor_id of this Product.
-
-        规格ID。
-
-        :return: The flavor_id of this Product.
-        :rtype: str
-        """
-        return self._flavor_id
-
-    @flavor_id.setter
-    def flavor_id(self, flavor_id):
-        r"""Sets the flavor_id of this Product.
-
-        规格ID。
-
-        :param flavor_id: The flavor_id of this Product.
-        :type flavor_id: str
-        """
-        self._flavor_id = flavor_id
 
     @property
     def type(self):

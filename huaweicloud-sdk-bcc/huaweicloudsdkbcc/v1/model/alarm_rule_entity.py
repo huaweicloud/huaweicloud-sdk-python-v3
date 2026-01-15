@@ -18,7 +18,7 @@ class AlarmRuleEntity:
         'alarm_id': 'str',
         'name': 'str',
         'description': 'str',
-        'namespace': 'str',
+        'namespace': 'AlarmNamespaceEnum',
         'policies': 'str',
         'resources': 'str',
         'type': 'str',
@@ -63,8 +63,8 @@ class AlarmRuleEntity:
         :type name: str
         :param description: 告警描述
         :type description: str
-        :param namespace: 告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
-        :type namespace: str
+        :param namespace: 
+        :type namespace: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
         :param policies: 告警策略
         :type policies: str
         :param resources: 资源列表
@@ -213,10 +213,8 @@ class AlarmRuleEntity:
     def namespace(self):
         r"""Gets the namespace of this AlarmRuleEntity.
 
-        告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
-
         :return: The namespace of this AlarmRuleEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
         """
         return self._namespace
 
@@ -224,10 +222,8 @@ class AlarmRuleEntity:
     def namespace(self, namespace):
         r"""Sets the namespace of this AlarmRuleEntity.
 
-        告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
-
         :param namespace: The namespace of this AlarmRuleEntity.
-        :type namespace: str
+        :type namespace: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
         """
         self._namespace = namespace
 

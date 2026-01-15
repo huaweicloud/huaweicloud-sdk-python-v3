@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UnSupportAuditInfo:
+class ShowAiOpsSettingRequest:
 
     """
     Attributes:
@@ -15,80 +15,50 @@ class UnSupportAuditInfo:
     sensitive_list = []
 
     openapi_types = {
-        'audit_version': 'str',
-        'server_name': 'str'
+        'cluster_id': 'str'
     }
 
     attribute_map = {
-        'audit_version': 'audit_version',
-        'server_name': 'server_name'
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, audit_version=None, server_name=None):
-        r"""UnSupportAuditInfo
+    def __init__(self, cluster_id=None):
+        r"""ShowAiOpsSettingRequest
 
         The model defined in huaweicloud sdk
 
-        :param audit_version: 实例版本
-        :type audit_version: str
-        :param server_name: 实例名称
-        :type server_name: str
+        :param cluster_id: **参数解释**： 指定查询的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
+        :type cluster_id: str
         """
         
         
 
-        self._audit_version = None
-        self._server_name = None
+        self._cluster_id = None
         self.discriminator = None
 
-        if audit_version is not None:
-            self.audit_version = audit_version
-        if server_name is not None:
-            self.server_name = server_name
+        self.cluster_id = cluster_id
 
     @property
-    def audit_version(self):
-        r"""Gets the audit_version of this UnSupportAuditInfo.
+    def cluster_id(self):
+        r"""Gets the cluster_id of this ShowAiOpsSettingRequest.
 
-        实例版本
+        **参数解释**： 指定查询的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
-        :return: The audit_version of this UnSupportAuditInfo.
+        :return: The cluster_id of this ShowAiOpsSettingRequest.
         :rtype: str
         """
-        return self._audit_version
+        return self._cluster_id
 
-    @audit_version.setter
-    def audit_version(self, audit_version):
-        r"""Sets the audit_version of this UnSupportAuditInfo.
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this ShowAiOpsSettingRequest.
 
-        实例版本
+        **参数解释**： 指定查询的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
-        :param audit_version: The audit_version of this UnSupportAuditInfo.
-        :type audit_version: str
+        :param cluster_id: The cluster_id of this ShowAiOpsSettingRequest.
+        :type cluster_id: str
         """
-        self._audit_version = audit_version
-
-    @property
-    def server_name(self):
-        r"""Gets the server_name of this UnSupportAuditInfo.
-
-        实例名称
-
-        :return: The server_name of this UnSupportAuditInfo.
-        :rtype: str
-        """
-        return self._server_name
-
-    @server_name.setter
-    def server_name(self, server_name):
-        r"""Sets the server_name of this UnSupportAuditInfo.
-
-        实例名称
-
-        :param server_name: The server_name of this UnSupportAuditInfo.
-        :type server_name: str
-        """
-        self._server_name = server_name
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         result = {}
@@ -127,7 +97,7 @@ class UnSupportAuditInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnSupportAuditInfo):
+        if not isinstance(other, ShowAiOpsSettingRequest):
             return False
 
         return self.__dict__ == other.__dict__

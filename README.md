@@ -212,8 +212,8 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
     * [1.3 Timeout Configuration](#13-timeout-configuration-top)
     * [1.4 SSL Certification](#14-ssl-certification-top)
 * [2. Credentials Configuration](#2-credentials-configuration-top)
-    * [2.1 Use Permanent AK&SK](#21-use-permanent-aksk-top)
-    * [2.2 Use Temporary AK&SK](#22-use-temporary-aksk-top)
+    * [2.1 Use Temporary AK&SK](#22-use-temporary-aksk-top)
+    * [2.2 Use Permanent AK&SK](#21-use-permanent-aksk-top)
     * [2.3 Use IdpId&IdTokenFile](#23-use-idpididtokenfile-top)
     * [2.4 Authentication Management](#24-authentication-management-top)
       * [2.4.1 Environment Variables](#241-environment-variables-top)
@@ -316,44 +316,11 @@ For `global` services' authentication, domainId is required to initialize Global
 
 The following authentications are supported:
 
-- permanent AK&SK
 - temporary AK&SK + SecurityToken
+- permanent AK&SK
 - IdpId&IdTokenFile
 
-#### 2.1 Use Permanent AK&SK [:top:](#user-manual-top)
-
-**Parameter description**:
-
-- `ak` is the access key ID for your account.
-- `sk` is the secret access key for your account.
-- `project_id` is the ID of your project depending on your region which you want to operate.
-- `domain_id` is the account ID of Huawei Cloud.
-
-```python
-# Regional services
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-project_id = "{your projectId string}"
-
-basic_credentials = BasicCredentials(ak, sk, project_id)
-
-# Global services
-ak = os.getenv("HUAWEICLOUD_SDK_AK")
-sk = os.getenv("HUAWEICLOUD_SDK_SK")
-domain_id = "{your domainId string}"
-
-global_credentials = GlobalCredentials(ak, sk, domain_id)
-```
-
-**Notice**:
-
-- project_id/domain_id supports **automatic acquisition** in version `3.0.26-beta` or later, if you want to use this
-  feature, you need to provide the ak and sk of your account and the id of the region, and then build your client
-  instance with method `with_region()`, detailed example could refer
-  to [3.2 Initialize the client with specified Region](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
-  .
-
-#### 2.2 Use Temporary AK&SK [:top:](#user-manual-top)
+#### 2.1 Use Temporary AK&SK [:top:](#user-manual-top)
 
 It's required to obtain temporary AK&SK and security token first, which could be obtained through
 permanent AK&SK or through an agency.
@@ -393,6 +360,41 @@ domain_id = "{your domainId string}"
 
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
 ```
+
+#### 2.2 Use Permanent AK&SK [:top:](#user-manual-top)
+
+> ⚠️The Huawei Cloud main account is for administrators and has full access to resources and cloud services. If the AK and SK are leaked, it will pose a significant information security risk to the system; therefore, their use is not recommended.
+> It is recommended to use the AK and SK of a minimally authorized IAM user. For details about how to use IAM securely, please refer to the [Best Practices for Using IAM](https://support.huaweicloud.com/intl/en-us/bestpractice-iam/iam_0426.html).
+
+**Parameter description**:
+
+- `ak` is the access key ID for your account.
+- `sk` is the secret access key for your account.
+- `project_id` is the ID of your project depending on your region which you want to operate.
+- `domain_id` is the account ID of Huawei Cloud.
+
+```python
+# Regional services
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+
+basic_credentials = BasicCredentials(ak, sk, project_id)
+
+# Global services
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+domain_id = "{your domainId string}"
+
+global_credentials = GlobalCredentials(ak, sk, domain_id)
+```
+
+**Notice**:
+
+- project_id/domain_id supports **automatic acquisition** in version `3.0.26-beta` or later, if you want to use this
+  feature, you need to provide the ak and sk of your account and the id of the region, and then build your client
+  instance with method `with_region()`, detailed example could refer
+  to [3.2 Initialize the client with specified Region](#32-initialize-the-serviceclient-with-specified-region-recommended-top).
 
 #### 2.3 Use IdpId&IdTokenFile [:top:](#user-manual-top)
 

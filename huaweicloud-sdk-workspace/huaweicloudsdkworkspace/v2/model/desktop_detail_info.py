@@ -59,7 +59,8 @@ class DesktopDetailInfo:
         'bill_resource_id': 'str',
         'process': 'int',
         'root_resource_id': 'str',
-        'hour_package_info': 'HourPackageInfo'
+        'hour_package_info': 'HourPackageInfo',
+        'is_freeze': 'bool'
     }
 
     attribute_map = {
@@ -107,10 +108,11 @@ class DesktopDetailInfo:
         'bill_resource_id': 'bill_resource_id',
         'process': 'process',
         'root_resource_id': 'root_resource_id',
-        'hour_package_info': 'hour_package_info'
+        'hour_package_info': 'hour_package_info',
+        'is_freeze': 'is_freeze'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None):
         r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -205,6 +207,8 @@ class DesktopDetailInfo:
         :type root_resource_id: str
         :param hour_package_info: 
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
+        :param is_freeze: 是否冻结
+        :type is_freeze: bool
         """
         
         
@@ -254,6 +258,7 @@ class DesktopDetailInfo:
         self._process = None
         self._root_resource_id = None
         self._hour_package_info = None
+        self._is_freeze = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -346,6 +351,8 @@ class DesktopDetailInfo:
             self.root_resource_id = root_resource_id
         if hour_package_info is not None:
             self.hour_package_info = hour_package_info
+        if is_freeze is not None:
+            self.is_freeze = is_freeze
 
     @property
     def desktop_id(self):
@@ -1320,6 +1327,28 @@ class DesktopDetailInfo:
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
         """
         self._hour_package_info = hour_package_info
+
+    @property
+    def is_freeze(self):
+        r"""Gets the is_freeze of this DesktopDetailInfo.
+
+        是否冻结
+
+        :return: The is_freeze of this DesktopDetailInfo.
+        :rtype: bool
+        """
+        return self._is_freeze
+
+    @is_freeze.setter
+    def is_freeze(self, is_freeze):
+        r"""Sets the is_freeze of this DesktopDetailInfo.
+
+        是否冻结
+
+        :param is_freeze: The is_freeze of this DesktopDetailInfo.
+        :type is_freeze: bool
+        """
+        self._is_freeze = is_freeze
 
     def to_dict(self):
         result = {}

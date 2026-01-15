@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LtsLogType:
-
+    """
+    allowed enum values
+    """
+    AUDIT_LOG = "audit_log"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

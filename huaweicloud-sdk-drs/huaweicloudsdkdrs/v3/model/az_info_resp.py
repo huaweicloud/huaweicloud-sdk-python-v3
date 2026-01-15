@@ -35,7 +35,7 @@ class AzInfoResp:
         :type code: str
         :param name: 可用区名称
         :type name: str
-        :param status: 可用区状态
+        :param status: 可用区状态，ENABLED：可用，DISABLED：不可用
         :type status: str
         """
         
@@ -101,7 +101,7 @@ class AzInfoResp:
     def status(self):
         r"""Gets the status of this AzInfoResp.
 
-        可用区状态
+        可用区状态，ENABLED：可用，DISABLED：不可用
 
         :return: The status of this AzInfoResp.
         :rtype: str
@@ -112,7 +112,7 @@ class AzInfoResp:
     def status(self, status):
         r"""Sets the status of this AzInfoResp.
 
-        可用区状态
+        可用区状态，ENABLED：可用，DISABLED：不可用
 
         :param status: The status of this AzInfoResp.
         :type status: str

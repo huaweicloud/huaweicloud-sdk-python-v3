@@ -4,7 +4,18 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ComponentActionType:
-
+    """
+    allowed enum values
+    """
+    START = "start"
+    STOP = "stop"
+    RESTART = "restart"
+    SCALE = "scale"
+    ROLLBACK = "rollback"
+    CONTINUE_DEPLOY = "continue_deploy"
+    CHECK_GRAY_RELEASE = "check_gray_release"
+    MODIFY_GRAY_RULE = "modify_gray_rule"
+    ROLLBACK_CURRENT = "rollback_current"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TableOwnerType:
-
+    """
+    allowed enum values
+    """
+    SYSTEM = "SYSTEM"
+    USER = "USER"
+    SYSTEM_ALLOWED_DELETE = "SYSTEM_ALLOWED_DELETE"
+    USER_ALLOWED_DELETE = "USER_ALLOWED_DELETE"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

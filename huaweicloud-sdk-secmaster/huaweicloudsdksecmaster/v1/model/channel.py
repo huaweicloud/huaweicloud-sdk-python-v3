@@ -15,20 +15,20 @@ class Channel:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str',
+        'action': 'ChannelAction',
         'channel_id': 'str',
-        'config_status': 'str',
+        'config_status': 'ConfigStatus',
         'create_by': 'str',
         'create_by_user': 'str',
         'description': 'str',
-        'error_type': 'str',
-        'health_status': 'str',
+        'error_type': 'ChannelErrorType',
+        'health_status': 'HealthStatus',
         'input_id': 'str',
         'input_name': 'str',
-        'install_status': 'str',
+        'install_status': 'InstallStatus',
         'install_time': 'int',
         'node_refer_count': 'int',
-        'operation_status': 'str',
+        'operation_status': 'ChannelOperationStatus',
         'output_id': 'str',
         'output_name': 'str',
         'parser_id': 'str',
@@ -67,34 +67,34 @@ class Channel:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-        :type action: str
+        :param action: 
+        :type action: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         :param channel_id: UUID
         :type channel_id: str
-        :param config_status: **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-        :type config_status: str
+        :param config_status: 
+        :type config_status: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         :param create_by: Iam用户ID
         :type create_by: str
         :param create_by_user: Iam用户名称
         :type create_by_user: str
         :param description: 描述信息
         :type description: str
-        :param error_type: **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-        :type error_type: str
-        :param health_status: **参数解释**: 采集通道监控状态 - SUCCESS_PART 部分运行 - SUCCESS_ALL 全部运行 - SUCCESS_NO 没有运行  **约束限制** 不涉及 **取值范围**: - SUCCESS_PART - SUCCESS_ALL - SUCCESS_NO  **默认值** 不涉及
-        :type health_status: str
+        :param error_type: 
+        :type error_type: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
+        :param health_status: 
+        :type health_status: :class:`huaweicloudsdksecmaster.v1.HealthStatus`
         :param input_id: UUID
         :type input_id: str
         :param input_name: 所属租户名称
         :type input_name: str
-        :param install_status: **参数解释**: 采集通道下发 - READY 等待下发 - ALL_SUCCESS 全部成功 - PARTIAL_SUCCESS 部分成功 - EXCEPTION 异常  **约束限制** 不涉及 **取值范围**: - READY - ALL_SUCCESS - PARTIAL_SUCCESS - EXCEPTION  **默认值** 不涉及
-        :type install_status: str
+        :param install_status: 
+        :type install_status: :class:`huaweicloudsdksecmaster.v1.InstallStatus`
         :param install_time: 毫秒时间戳
         :type install_time: int
         :param node_refer_count: 关联的节点个数
         :type node_refer_count: int
-        :param operation_status: **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-        :type operation_status: str
+        :param operation_status: 
+        :type operation_status: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         :param output_id: UUID
         :type output_id: str
         :param output_name: 所属租户名称
@@ -183,10 +183,8 @@ class Channel:
     def action(self):
         r"""Gets the action of this Channel.
 
-        **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-
         :return: The action of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         """
         return self._action
 
@@ -194,10 +192,8 @@ class Channel:
     def action(self, action):
         r"""Sets the action of this Channel.
 
-        **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-
         :param action: The action of this Channel.
-        :type action: str
+        :type action: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         """
         self._action = action
 
@@ -227,10 +223,8 @@ class Channel:
     def config_status(self):
         r"""Gets the config_status of this Channel.
 
-        **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-
         :return: The config_status of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         """
         return self._config_status
 
@@ -238,10 +232,8 @@ class Channel:
     def config_status(self, config_status):
         r"""Sets the config_status of this Channel.
 
-        **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-
         :param config_status: The config_status of this Channel.
-        :type config_status: str
+        :type config_status: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         """
         self._config_status = config_status
 
@@ -315,10 +307,8 @@ class Channel:
     def error_type(self):
         r"""Gets the error_type of this Channel.
 
-        **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-
         :return: The error_type of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
         """
         return self._error_type
 
@@ -326,10 +316,8 @@ class Channel:
     def error_type(self, error_type):
         r"""Sets the error_type of this Channel.
 
-        **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-
         :param error_type: The error_type of this Channel.
-        :type error_type: str
+        :type error_type: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
         """
         self._error_type = error_type
 
@@ -337,10 +325,8 @@ class Channel:
     def health_status(self):
         r"""Gets the health_status of this Channel.
 
-        **参数解释**: 采集通道监控状态 - SUCCESS_PART 部分运行 - SUCCESS_ALL 全部运行 - SUCCESS_NO 没有运行  **约束限制** 不涉及 **取值范围**: - SUCCESS_PART - SUCCESS_ALL - SUCCESS_NO  **默认值** 不涉及
-
         :return: The health_status of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.HealthStatus`
         """
         return self._health_status
 
@@ -348,10 +334,8 @@ class Channel:
     def health_status(self, health_status):
         r"""Sets the health_status of this Channel.
 
-        **参数解释**: 采集通道监控状态 - SUCCESS_PART 部分运行 - SUCCESS_ALL 全部运行 - SUCCESS_NO 没有运行  **约束限制** 不涉及 **取值范围**: - SUCCESS_PART - SUCCESS_ALL - SUCCESS_NO  **默认值** 不涉及
-
         :param health_status: The health_status of this Channel.
-        :type health_status: str
+        :type health_status: :class:`huaweicloudsdksecmaster.v1.HealthStatus`
         """
         self._health_status = health_status
 
@@ -403,10 +387,8 @@ class Channel:
     def install_status(self):
         r"""Gets the install_status of this Channel.
 
-        **参数解释**: 采集通道下发 - READY 等待下发 - ALL_SUCCESS 全部成功 - PARTIAL_SUCCESS 部分成功 - EXCEPTION 异常  **约束限制** 不涉及 **取值范围**: - READY - ALL_SUCCESS - PARTIAL_SUCCESS - EXCEPTION  **默认值** 不涉及
-
         :return: The install_status of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.InstallStatus`
         """
         return self._install_status
 
@@ -414,10 +396,8 @@ class Channel:
     def install_status(self, install_status):
         r"""Sets the install_status of this Channel.
 
-        **参数解释**: 采集通道下发 - READY 等待下发 - ALL_SUCCESS 全部成功 - PARTIAL_SUCCESS 部分成功 - EXCEPTION 异常  **约束限制** 不涉及 **取值范围**: - READY - ALL_SUCCESS - PARTIAL_SUCCESS - EXCEPTION  **默认值** 不涉及
-
         :param install_status: The install_status of this Channel.
-        :type install_status: str
+        :type install_status: :class:`huaweicloudsdksecmaster.v1.InstallStatus`
         """
         self._install_status = install_status
 
@@ -469,10 +449,8 @@ class Channel:
     def operation_status(self):
         r"""Gets the operation_status of this Channel.
 
-        **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-
         :return: The operation_status of this Channel.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         """
         return self._operation_status
 
@@ -480,10 +458,8 @@ class Channel:
     def operation_status(self, operation_status):
         r"""Sets the operation_status of this Channel.
 
-        **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-
         :param operation_status: The operation_status of this Channel.
-        :type operation_status: str
+        :type operation_status: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         """
         self._operation_status = operation_status
 

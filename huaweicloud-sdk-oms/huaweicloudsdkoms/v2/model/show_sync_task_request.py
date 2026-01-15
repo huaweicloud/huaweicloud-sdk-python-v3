@@ -16,7 +16,7 @@ class ShowSyncTaskRequest:
 
     openapi_types = {
         'sync_task_id': 'str',
-        'query_time': 'str'
+        'query_time': 'int'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ShowSyncTaskRequest:
         :param sync_task_id: 同步任务ID。
         :type sync_task_id: str
         :param query_time: 查询同步任务详情的时间（毫秒），依据该值返回所在月份的统计数据。
-        :type query_time: str
+        :type query_time: int
         """
         
         
@@ -73,7 +73,7 @@ class ShowSyncTaskRequest:
         查询同步任务详情的时间（毫秒），依据该值返回所在月份的统计数据。
 
         :return: The query_time of this ShowSyncTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._query_time
 
@@ -84,7 +84,7 @@ class ShowSyncTaskRequest:
         查询同步任务详情的时间（毫秒），依据该值返回所在月份的统计数据。
 
         :param query_time: The query_time of this ShowSyncTaskRequest.
-        :type query_time: str
+        :type query_time: int
         """
         self._query_time = query_time
 

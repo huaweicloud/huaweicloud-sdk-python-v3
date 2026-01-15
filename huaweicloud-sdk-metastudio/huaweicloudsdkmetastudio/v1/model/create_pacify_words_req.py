@@ -19,7 +19,7 @@ class CreatePacifyWordsReq:
         'pacify_words_type': 'int',
         'intent': 'str',
         'pacify_words': 'str',
-        'language': 'str'
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
@@ -43,8 +43,8 @@ class CreatePacifyWordsReq:
         :type intent: str
         :param pacify_words: 安抚话术。
         :type pacify_words: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
@@ -155,10 +155,8 @@ class CreatePacifyWordsReq:
     def language(self):
         r"""Gets the language of this CreatePacifyWordsReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this CreatePacifyWordsReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -166,10 +164,8 @@ class CreatePacifyWordsReq:
     def language(self, language):
         r"""Sets the language of this CreatePacifyWordsReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this CreatePacifyWordsReq.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

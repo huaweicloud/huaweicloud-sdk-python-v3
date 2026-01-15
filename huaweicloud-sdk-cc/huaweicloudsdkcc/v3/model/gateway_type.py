@@ -15,7 +15,7 @@ class GatewayType:
     sensitive_list = []
 
     openapi_types = {
-        'gateway_type': 'str'
+        'gateway_type': 'GatewayTypeEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class GatewayType:
 
         The model defined in huaweicloud sdk
 
-        :param gateway_type: 网关的类型。GDGW：全球接入网关。
-        :type gateway_type: str
+        :param gateway_type: 
+        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         """
         
         
@@ -42,10 +42,8 @@ class GatewayType:
     def gateway_type(self):
         r"""Gets the gateway_type of this GatewayType.
 
-        网关的类型。GDGW：全球接入网关。
-
         :return: The gateway_type of this GatewayType.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         """
         return self._gateway_type
 
@@ -53,10 +51,8 @@ class GatewayType:
     def gateway_type(self, gateway_type):
         r"""Sets the gateway_type of this GatewayType.
 
-        网关的类型。GDGW：全球接入网关。
-
         :param gateway_type: The gateway_type of this GatewayType.
-        :type gateway_type: str
+        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         """
         self._gateway_type = gateway_type
 

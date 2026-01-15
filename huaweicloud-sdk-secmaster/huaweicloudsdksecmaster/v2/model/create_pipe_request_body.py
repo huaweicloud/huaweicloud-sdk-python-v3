@@ -17,7 +17,7 @@ class CreatePipeRequestBody:
     openapi_types = {
         'pipe_name': 'str',
         'pipe_alias': 'str',
-        'category': 'str',
+        'category': 'PipeCategory',
         'directory': 'str',
         'description': 'str',
         'schema': 'PipeSchema',
@@ -45,8 +45,8 @@ class CreatePipeRequestBody:
         :type pipe_name: str
         :param pipe_alias: 管道别名
         :type pipe_alias: str
-        :param category: **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-        :type category: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         :param directory: directory 目录分组
         :type directory: str
         :param description: 管道描述
@@ -131,10 +131,8 @@ class CreatePipeRequestBody:
     def category(self):
         r"""Gets the category of this CreatePipeRequestBody.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :return: The category of this CreatePipeRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         return self._category
 
@@ -142,10 +140,8 @@ class CreatePipeRequestBody:
     def category(self, category):
         r"""Sets the category of this CreatePipeRequestBody.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :param category: The category of this CreatePipeRequestBody.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         self._category = category
 

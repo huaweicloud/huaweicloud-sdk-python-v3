@@ -16,6 +16,7 @@ class CreateBatchChangeOrderRequestBody:
 
     openapi_types = {
         'type': 'str',
+        'agency_urn': 'str',
         'add_volume_param': 'EstimateAddVolumeRequestBody',
         'extend_volume_param': 'EstimateExtendVolumeRequestBody',
         'resize_param': 'CreateResizeOrderRequestBody',
@@ -26,6 +27,7 @@ class CreateBatchChangeOrderRequestBody:
 
     attribute_map = {
         'type': 'type',
+        'agency_urn': 'agency_urn',
         'add_volume_param': 'add_volume_param',
         'extend_volume_param': 'extend_volume_param',
         'resize_param': 'resize_param',
@@ -34,13 +36,15 @@ class CreateBatchChangeOrderRequestBody:
         'delete_sub_resources_param': 'delete_sub_resources_param'
     }
 
-    def __init__(self, type=None, add_volume_param=None, extend_volume_param=None, resize_param=None, change_image_param=None, add_sub_resources_param=None, delete_sub_resources_param=None):
+    def __init__(self, type=None, agency_urn=None, add_volume_param=None, extend_volume_param=None, resize_param=None, change_image_param=None, add_sub_resources_param=None, delete_sub_resources_param=None):
         r"""CreateBatchChangeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
         :param type: 下单类型。  - ADD_VOLUME：增加磁盘  - EXTEND_VOLUME：扩容磁盘  - RESIZE：变更规格  - CHANGE_IMAGE：切换镜像  - ADD_SUB_RESOURCES：购买桌面协同资源  - DELETE_SUB_RESOURCES：退订桌面协同资源
         :type type: str
+        :param agency_urn: 授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘、重建系统时，需要传入该字段。
+        :type agency_urn: str
         :param add_volume_param: 
         :type add_volume_param: :class:`huaweicloudsdkworkspace.v2.EstimateAddVolumeRequestBody`
         :param extend_volume_param: 
@@ -58,6 +62,7 @@ class CreateBatchChangeOrderRequestBody:
         
 
         self._type = None
+        self._agency_urn = None
         self._add_volume_param = None
         self._extend_volume_param = None
         self._resize_param = None
@@ -68,6 +73,8 @@ class CreateBatchChangeOrderRequestBody:
 
         if type is not None:
             self.type = type
+        if agency_urn is not None:
+            self.agency_urn = agency_urn
         if add_volume_param is not None:
             self.add_volume_param = add_volume_param
         if extend_volume_param is not None:
@@ -102,6 +109,28 @@ class CreateBatchChangeOrderRequestBody:
         :type type: str
         """
         self._type = type
+
+    @property
+    def agency_urn(self):
+        r"""Gets the agency_urn of this CreateBatchChangeOrderRequestBody.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘、重建系统时，需要传入该字段。
+
+        :return: The agency_urn of this CreateBatchChangeOrderRequestBody.
+        :rtype: str
+        """
+        return self._agency_urn
+
+    @agency_urn.setter
+    def agency_urn(self, agency_urn):
+        r"""Sets the agency_urn of this CreateBatchChangeOrderRequestBody.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘、重建系统时，需要传入该字段。
+
+        :param agency_urn: The agency_urn of this CreateBatchChangeOrderRequestBody.
+        :type agency_urn: str
+        """
+        self._agency_urn = agency_urn
 
     @property
     def add_volume_param(self):

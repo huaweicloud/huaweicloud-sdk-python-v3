@@ -26,6 +26,7 @@ class NodeSpecUpdate:
         'taints': 'list[Taint]',
         'wait_post_install_finish': 'bool',
         'k8s_tags': 'dict(str, str)',
+        'ecs_group_id': 'str',
         'user_tags': 'list[UserTag]',
         'node_name_template': 'NodeSpecUpdateNodeNameTemplate',
         'initialized_conditions': 'list[str]',
@@ -47,6 +48,7 @@ class NodeSpecUpdate:
         'taints': 'taints',
         'wait_post_install_finish': 'waitPostInstallFinish',
         'k8s_tags': 'k8sTags',
+        'ecs_group_id': 'ecsGroupId',
         'user_tags': 'userTags',
         'node_name_template': 'nodeNameTemplate',
         'initialized_conditions': 'initializedConditions',
@@ -56,7 +58,7 @@ class NodeSpecUpdate:
         'public_ip': 'publicIP'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume_update=None, data_volumes_update=None, storage=None, runtime=None, taints=None, wait_post_install_finish=None, k8s_tags=None, user_tags=None, node_name_template=None, initialized_conditions=None, server_enterprise_project_id=None, node_nic_spec_update=None, extend_param=None, public_ip=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume_update=None, data_volumes_update=None, storage=None, runtime=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, user_tags=None, node_name_template=None, initialized_conditions=None, server_enterprise_project_id=None, node_nic_spec_update=None, extend_param=None, public_ip=None):
         r"""NodeSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class NodeSpecUpdate:
         :type wait_post_install_finish: bool
         :param k8s_tags: **参数解释**： 格式为key/value键值对。 - Key：必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，创建节点池时节点模板参数中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。   示例： &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60;  **约束限制**： - 键值对个数不超过20条。 - 参数未指定时将不会更新节点池的自定义K8s标签。 - 参数为空对象时将删除节点池的自定义K8s标签。
         :type k8s_tags: dict(str, str)
+        :param ecs_group_id: **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type ecs_group_id: str
         :param user_tags: **参数解释**： 云服务器标签（资源标签）。 **约束限制**： - 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 - 参数未指定时将不会更新节点池的自定义云服务器标签。 - 参数为空数组时将删除节点池的自定义云服务器标签。
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param node_name_template: 
@@ -112,6 +116,7 @@ class NodeSpecUpdate:
         self._taints = None
         self._wait_post_install_finish = None
         self._k8s_tags = None
+        self._ecs_group_id = None
         self._user_tags = None
         self._node_name_template = None
         self._initialized_conditions = None
@@ -143,6 +148,8 @@ class NodeSpecUpdate:
             self.wait_post_install_finish = wait_post_install_finish
         if k8s_tags is not None:
             self.k8s_tags = k8s_tags
+        if ecs_group_id is not None:
+            self.ecs_group_id = ecs_group_id
         if user_tags is not None:
             self.user_tags = user_tags
         if node_name_template is not None:
@@ -383,6 +390,28 @@ class NodeSpecUpdate:
         :type k8s_tags: dict(str, str)
         """
         self._k8s_tags = k8s_tags
+
+    @property
+    def ecs_group_id(self):
+        r"""Gets the ecs_group_id of this NodeSpecUpdate.
+
+        **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The ecs_group_id of this NodeSpecUpdate.
+        :rtype: str
+        """
+        return self._ecs_group_id
+
+    @ecs_group_id.setter
+    def ecs_group_id(self, ecs_group_id):
+        r"""Sets the ecs_group_id of this NodeSpecUpdate.
+
+        **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param ecs_group_id: The ecs_group_id of this NodeSpecUpdate.
+        :type ecs_group_id: str
+        """
+        self._ecs_group_id = ecs_group_id
 
     @property
     def user_tags(self):

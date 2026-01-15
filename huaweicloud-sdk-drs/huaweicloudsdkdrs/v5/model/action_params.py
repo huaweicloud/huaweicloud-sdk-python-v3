@@ -23,6 +23,7 @@ class ActionParams:
         'compare_task_param': 'CompareTaskParams',
         'is_sync_re_edit': 'bool',
         'is_only_init_task': 'bool',
+        'is_auto_create_compare': 'bool',
         'force_delete': 'bool',
         'public_ip_config': 'PublicIpConfig',
         'replay_config': 'ReplayConfigInfo',
@@ -38,13 +39,14 @@ class ActionParams:
         'compare_task_param': 'compare_task_param',
         'is_sync_re_edit': 'is_sync_re_edit',
         'is_only_init_task': 'is_only_init_task',
+        'is_auto_create_compare': 'is_auto_create_compare',
         'force_delete': 'force_delete',
         'public_ip_config': 'public_ip_config',
         'replay_config': 'replay_config',
         'repair_info': 'repair_info'
     }
 
-    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, force_delete=None, public_ip_config=None, replay_config=None, repair_info=None):
+    def __init__(self, endpoints=None, precheck_mode=None, skip_precheck_info=None, pause_mode=None, start_time=None, compare_task_param=None, is_sync_re_edit=None, is_only_init_task=None, is_auto_create_compare=None, force_delete=None, public_ip_config=None, replay_config=None, repair_info=None):
         r"""ActionParams
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ActionParams:
         :type is_sync_re_edit: bool
         :param is_only_init_task: 是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
         :type is_only_init_task: bool
+        :param is_auto_create_compare: 是否在任务结束时自动创建对比任务，不填默认设置为true。
+        :type is_auto_create_compare: bool
         :param force_delete: 强制结束时取值为true。
         :type force_delete: bool
         :param public_ip_config: 
@@ -85,6 +89,7 @@ class ActionParams:
         self._compare_task_param = None
         self._is_sync_re_edit = None
         self._is_only_init_task = None
+        self._is_auto_create_compare = None
         self._force_delete = None
         self._public_ip_config = None
         self._replay_config = None
@@ -107,6 +112,8 @@ class ActionParams:
             self.is_sync_re_edit = is_sync_re_edit
         if is_only_init_task is not None:
             self.is_only_init_task = is_only_init_task
+        if is_auto_create_compare is not None:
+            self.is_auto_create_compare = is_auto_create_compare
         if force_delete is not None:
             self.force_delete = force_delete
         if public_ip_config is not None:
@@ -283,6 +290,28 @@ class ActionParams:
         :type is_only_init_task: bool
         """
         self._is_only_init_task = is_only_init_task
+
+    @property
+    def is_auto_create_compare(self):
+        r"""Gets the is_auto_create_compare of this ActionParams.
+
+        是否在任务结束时自动创建对比任务，不填默认设置为true。
+
+        :return: The is_auto_create_compare of this ActionParams.
+        :rtype: bool
+        """
+        return self._is_auto_create_compare
+
+    @is_auto_create_compare.setter
+    def is_auto_create_compare(self, is_auto_create_compare):
+        r"""Sets the is_auto_create_compare of this ActionParams.
+
+        是否在任务结束时自动创建对比任务，不填默认设置为true。
+
+        :param is_auto_create_compare: The is_auto_create_compare of this ActionParams.
+        :type is_auto_create_compare: bool
+        """
+        self._is_auto_create_compare = is_auto_create_compare
 
     @property
     def force_delete(self):

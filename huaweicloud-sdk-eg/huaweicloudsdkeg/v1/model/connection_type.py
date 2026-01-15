@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ConnectionType:
-
+    """
+    allowed enum values
+    """
+    WEBHOOK = "WEBHOOK"
+    KAFKA = "KAFKA"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

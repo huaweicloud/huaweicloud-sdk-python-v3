@@ -17,7 +17,7 @@ class AccelerateIp:
     openapi_types = {
         'ip_type': 'str',
         'ip_address': 'str',
-        'area': 'str'
+        'area': 'Area'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class AccelerateIp:
         :type ip_type: str
         :param ip_address: IP地址。
         :type ip_address: str
-        :param area: 地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-        :type area: str
+        :param area: 
+        :type area: :class:`huaweicloudsdkga.v1.Area`
         """
         
         
@@ -100,10 +100,8 @@ class AccelerateIp:
     def area(self):
         r"""Gets the area of this AccelerateIp.
 
-        地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-
         :return: The area of this AccelerateIp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.Area`
         """
         return self._area
 
@@ -111,10 +109,8 @@ class AccelerateIp:
     def area(self, area):
         r"""Sets the area of this AccelerateIp.
 
-        地区，取值： - OUTOFCM：中国大陆以外 - CM：中国大陆
-
         :param area: The area of this AccelerateIp.
-        :type area: str
+        :type area: :class:`huaweicloudsdkga.v1.Area`
         """
         self._area = area
 

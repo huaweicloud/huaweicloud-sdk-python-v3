@@ -19,7 +19,7 @@ class ConnectionCreateReq:
         'description': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
-        'type': 'str',
+        'type': 'ConnectionType',
         'kafka_detail': 'KafkaConnectionDetail'
     }
 
@@ -45,8 +45,8 @@ class ConnectionCreateReq:
         :type vpc_id: str
         :param subnet_id: 待连接的子网ID
         :type subnet_id: str
-        :param type: 目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
         :param kafka_detail: 
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
         """
@@ -163,10 +163,8 @@ class ConnectionCreateReq:
     def type(self):
         r"""Gets the type of this ConnectionCreateReq.
 
-        目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
-
         :return: The type of this ConnectionCreateReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
         """
         return self._type
 
@@ -174,10 +172,8 @@ class ConnectionCreateReq:
     def type(self, type):
         r"""Sets the type of this ConnectionCreateReq.
 
-        目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
-
         :param type: The type of this ConnectionCreateReq.
-        :type type: str
+        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
         """
         self._type = type
 

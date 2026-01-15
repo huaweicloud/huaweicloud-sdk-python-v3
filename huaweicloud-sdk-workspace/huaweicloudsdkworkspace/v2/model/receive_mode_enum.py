@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ReceiveModeEnum:
-
+    """
+    allowed enum values
+    """
+    VMFA = "VMFA"
+    HMFA = "HMFA"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -28,7 +28,7 @@ class CreateGlobalDcGatewayEntry:
         'available_peer_link_count': 'int',
         'tags': 'list[Tag]',
         'admin_state_up': 'bool',
-        'status': 'str',
+        'status': 'GlobalDcGatewayStatus',
         'created_time': 'datetime',
         'address_family': 'str'
     }
@@ -83,8 +83,8 @@ class CreateGlobalDcGatewayEntry:
         :type tags: list[:class:`huaweicloudsdkdc.v3.Tag`]
         :param admin_state_up: 该GDGW的管理状态，true为激活状态、false为冻结状态
         :type admin_state_up: bool
-        :param status: GDGW资源状态，DOWN (未连接状态), PENDING_UPDATE（连接状态更新中），ACTIVE (已连接状态), ERROR (出错)。
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayStatus`
         :param created_time: 创建时间。
         :type created_time: datetime
         :param address_family: 网关的地址簇，IPv4或者ipv6和IPv4双栈 - ipv4 - dual
@@ -434,10 +434,8 @@ class CreateGlobalDcGatewayEntry:
     def status(self):
         r"""Gets the status of this CreateGlobalDcGatewayEntry.
 
-        GDGW资源状态，DOWN (未连接状态), PENDING_UPDATE（连接状态更新中），ACTIVE (已连接状态), ERROR (出错)。
-
         :return: The status of this CreateGlobalDcGatewayEntry.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayStatus`
         """
         return self._status
 
@@ -445,10 +443,8 @@ class CreateGlobalDcGatewayEntry:
     def status(self, status):
         r"""Sets the status of this CreateGlobalDcGatewayEntry.
 
-        GDGW资源状态，DOWN (未连接状态), PENDING_UPDATE（连接状态更新中），ACTIVE (已连接状态), ERROR (出错)。
-
         :param status: The status of this CreateGlobalDcGatewayEntry.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdc.v3.GlobalDcGatewayStatus`
         """
         self._status = status
 

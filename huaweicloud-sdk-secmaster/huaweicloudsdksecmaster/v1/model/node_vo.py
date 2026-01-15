@@ -17,7 +17,7 @@ class NodeVo:
     openapi_types = {
         'args': 'list[ArgsVo]',
         'node_id': 'str',
-        'node_status': 'str'
+        'node_status': 'NodeStatus'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class NodeVo:
         :type args: list[:class:`huaweicloudsdksecmaster.v1.ArgsVo`]
         :param node_id: UUID
         :type node_id: str
-        :param node_status: **参数解释**: 节点状态 - RUN 运行 - STOP 停止  **约束限制** 不涉及 **取值范围**: - RUN - STOP  **默认值** 不涉及
-        :type node_status: str
+        :param node_status: 
+        :type node_status: :class:`huaweicloudsdksecmaster.v1.NodeStatus`
         """
         
         
@@ -101,10 +101,8 @@ class NodeVo:
     def node_status(self):
         r"""Gets the node_status of this NodeVo.
 
-        **参数解释**: 节点状态 - RUN 运行 - STOP 停止  **约束限制** 不涉及 **取值范围**: - RUN - STOP  **默认值** 不涉及
-
         :return: The node_status of this NodeVo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.NodeStatus`
         """
         return self._node_status
 
@@ -112,10 +110,8 @@ class NodeVo:
     def node_status(self, node_status):
         r"""Sets the node_status of this NodeVo.
 
-        **参数解释**: 节点状态 - RUN 运行 - STOP 停止  **约束限制** 不涉及 **取值范围**: - RUN - STOP  **默认值** 不涉及
-
         :param node_status: The node_status of this NodeVo.
-        :type node_status: str
+        :type node_status: :class:`huaweicloudsdksecmaster.v1.NodeStatus`
         """
         self._node_status = node_status
 

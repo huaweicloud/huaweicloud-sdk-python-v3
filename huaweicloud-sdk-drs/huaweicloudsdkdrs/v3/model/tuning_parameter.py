@@ -39,7 +39,7 @@ class TuningParameter:
         :type param_value: str
         :param availability: 是否可用。
         :type availability: str
-        :param range: 参数取值范围。
+        :param range: 参数范围。
         :type range: str
         """
         
@@ -130,7 +130,7 @@ class TuningParameter:
     def range(self):
         r"""Gets the range of this TuningParameter.
 
-        参数取值范围。
+        参数范围。
 
         :return: The range of this TuningParameter.
         :rtype: str
@@ -141,7 +141,7 @@ class TuningParameter:
     def range(self, range):
         r"""Sets the range of this TuningParameter.
 
-        参数取值范围。
+        参数范围。
 
         :param range: The range of this TuningParameter.
         :type range: str

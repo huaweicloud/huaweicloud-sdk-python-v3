@@ -4,7 +4,16 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstanceFailDetail:
-
+    """
+    allowed enum values
+    """
+    CLUSTER_DELETED = "cluster_deleted"
+    CLUSTER_UNAVAILABLE = "cluster_unavailable"
+    CLUSTER_INACCESSIBLE = "cluster_inaccessible"
+    NAMESPACE_DELETED = "namespace_deleted"
+    NAMESPACE_UNAVAILABLE = "namespace_unavailable"
+    NAMESPACE_INACCESSIBLE = "namespace_inaccessible"
+    RESOURCE_DELETED = "resource_deleted"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

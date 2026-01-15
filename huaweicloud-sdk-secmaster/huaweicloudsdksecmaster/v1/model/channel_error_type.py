@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ChannelErrorType:
-
+    """
+    allowed enum values
+    """
+    SUCCESS = "SUCCESS"
+    FILE_UPLOAD_ERROR = "FILE_UPLOAD_ERROR"
+    FILE_COPY_ERROR = "FILE_COPY_ERROR"
+    FILE_ZIP_ERROR = "FILE_ZIP_ERROR"
+    SALT_EXECUTE_ERROR = "SALT_EXECUTE_ERROR"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

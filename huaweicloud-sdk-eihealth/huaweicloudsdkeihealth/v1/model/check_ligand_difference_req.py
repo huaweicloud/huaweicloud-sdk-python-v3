@@ -15,7 +15,7 @@ class CheckLigandDifferenceReq:
     sensitive_list = []
 
     openapi_types = {
-        'method': 'str',
+        'method': 'CheckLigandDifferenceMethod',
         'file': 'DrugFile',
         'ref_file': 'DrugFile'
     }
@@ -31,8 +31,8 @@ class CheckLigandDifferenceReq:
 
         The model defined in huaweicloud sdk
 
-        :param method: 差异计算方法：RMSD、EMD
-        :type method: str
+        :param method: 
+        :type method: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceMethod`
         :param file: 
         :type file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         :param ref_file: 
@@ -54,10 +54,8 @@ class CheckLigandDifferenceReq:
     def method(self):
         r"""Gets the method of this CheckLigandDifferenceReq.
 
-        差异计算方法：RMSD、EMD
-
         :return: The method of this CheckLigandDifferenceReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceMethod`
         """
         return self._method
 
@@ -65,10 +63,8 @@ class CheckLigandDifferenceReq:
     def method(self, method):
         r"""Sets the method of this CheckLigandDifferenceReq.
 
-        差异计算方法：RMSD、EMD
-
         :param method: The method of this CheckLigandDifferenceReq.
-        :type method: str
+        :type method: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceMethod`
         """
         self._method = method
 

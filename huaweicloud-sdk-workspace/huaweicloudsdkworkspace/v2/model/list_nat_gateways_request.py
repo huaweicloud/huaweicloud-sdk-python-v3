@@ -23,7 +23,8 @@ class ListNatGatewaysRequest:
         'status': 'list[str]',
         'spec': 'list[str]',
         'router_id': 'str',
-        'limit': 'int'
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListNatGatewaysRequest:
         'status': 'status',
         'spec': 'spec',
         'router_id': 'router_id',
-        'limit': 'limit'
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, router_id=None, limit=None):
+    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, router_id=None, limit=None, offset=None):
         r"""ListNatGatewaysRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListNatGatewaysRequest:
         :type router_id: str
         :param limit: 功能说明：每页返回的个数。取值范围：1~2000。默认值：2000。
         :type limit: int
+        :param offset: 偏移量，默认0。
+        :type offset: int
         """
         
         
@@ -74,6 +78,7 @@ class ListNatGatewaysRequest:
         self._spec = None
         self._router_id = None
         self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if id is not None:
@@ -94,6 +99,8 @@ class ListNatGatewaysRequest:
             self.router_id = router_id
         if limit is not None:
             self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def id(self):
@@ -292,6 +299,28 @@ class ListNatGatewaysRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListNatGatewaysRequest.
+
+        偏移量，默认0。
+
+        :return: The offset of this ListNatGatewaysRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListNatGatewaysRequest.
+
+        偏移量，默认0。
+
+        :param offset: The offset of this ListNatGatewaysRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

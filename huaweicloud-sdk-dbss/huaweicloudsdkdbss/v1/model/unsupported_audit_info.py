@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UnSupportAuditInfoResponse:
+class UnsupportedAuditInfo:
 
     """
     Attributes:
@@ -15,80 +15,80 @@ class UnSupportAuditInfoResponse:
     sensitive_list = []
 
     openapi_types = {
-        'audit_infos': 'list[UnSupportAuditInfo]',
-        'support_version': 'str'
+        'audit_version': 'str',
+        'server_name': 'str'
     }
 
     attribute_map = {
-        'audit_infos': 'audit_infos',
-        'support_version': 'support_version'
+        'audit_version': 'audit_version',
+        'server_name': 'server_name'
     }
 
-    def __init__(self, audit_infos=None, support_version=None):
-        r"""UnSupportAuditInfoResponse
+    def __init__(self, audit_version=None, server_name=None):
+        r"""UnsupportedAuditInfo
 
         The model defined in huaweicloud sdk
 
-        :param audit_infos: 审计信息
-        :type audit_infos: list[:class:`huaweicloudsdkdbss.v1.UnSupportAuditInfo`]
-        :param support_version: 支持的版本
-        :type support_version: str
+        :param audit_version: 实例版本
+        :type audit_version: str
+        :param server_name: 实例名称
+        :type server_name: str
         """
         
         
 
-        self._audit_infos = None
-        self._support_version = None
+        self._audit_version = None
+        self._server_name = None
         self.discriminator = None
 
-        if audit_infos is not None:
-            self.audit_infos = audit_infos
-        if support_version is not None:
-            self.support_version = support_version
+        if audit_version is not None:
+            self.audit_version = audit_version
+        if server_name is not None:
+            self.server_name = server_name
 
     @property
-    def audit_infos(self):
-        r"""Gets the audit_infos of this UnSupportAuditInfoResponse.
+    def audit_version(self):
+        r"""Gets the audit_version of this UnsupportedAuditInfo.
 
-        审计信息
+        实例版本
 
-        :return: The audit_infos of this UnSupportAuditInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkdbss.v1.UnSupportAuditInfo`]
-        """
-        return self._audit_infos
-
-    @audit_infos.setter
-    def audit_infos(self, audit_infos):
-        r"""Sets the audit_infos of this UnSupportAuditInfoResponse.
-
-        审计信息
-
-        :param audit_infos: The audit_infos of this UnSupportAuditInfoResponse.
-        :type audit_infos: list[:class:`huaweicloudsdkdbss.v1.UnSupportAuditInfo`]
-        """
-        self._audit_infos = audit_infos
-
-    @property
-    def support_version(self):
-        r"""Gets the support_version of this UnSupportAuditInfoResponse.
-
-        支持的版本
-
-        :return: The support_version of this UnSupportAuditInfoResponse.
+        :return: The audit_version of this UnsupportedAuditInfo.
         :rtype: str
         """
-        return self._support_version
+        return self._audit_version
 
-    @support_version.setter
-    def support_version(self, support_version):
-        r"""Sets the support_version of this UnSupportAuditInfoResponse.
+    @audit_version.setter
+    def audit_version(self, audit_version):
+        r"""Sets the audit_version of this UnsupportedAuditInfo.
 
-        支持的版本
+        实例版本
 
-        :param support_version: The support_version of this UnSupportAuditInfoResponse.
-        :type support_version: str
+        :param audit_version: The audit_version of this UnsupportedAuditInfo.
+        :type audit_version: str
         """
-        self._support_version = support_version
+        self._audit_version = audit_version
+
+    @property
+    def server_name(self):
+        r"""Gets the server_name of this UnsupportedAuditInfo.
+
+        实例名称
+
+        :return: The server_name of this UnsupportedAuditInfo.
+        :rtype: str
+        """
+        return self._server_name
+
+    @server_name.setter
+    def server_name(self, server_name):
+        r"""Sets the server_name of this UnsupportedAuditInfo.
+
+        实例名称
+
+        :param server_name: The server_name of this UnsupportedAuditInfo.
+        :type server_name: str
+        """
+        self._server_name = server_name
 
     def to_dict(self):
         result = {}
@@ -127,7 +127,7 @@ class UnSupportAuditInfoResponse:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnSupportAuditInfoResponse):
+        if not isinstance(other, UnsupportedAuditInfo):
             return False
 
         return self.__dict__ == other.__dict__

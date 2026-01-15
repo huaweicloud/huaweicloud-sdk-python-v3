@@ -24,7 +24,7 @@ class ShowNotebookResponse(SdkResponse):
         'creator': 'str',
         'url': 'str',
         'flavor': 'FlavorInfo',
-        'status': 'str',
+        'status': 'NotebookStatus',
         'image': 'NotebookImage',
         'storages': 'list[NotebookStorage]',
         'create_time': 'str',
@@ -73,7 +73,7 @@ class ShowNotebookResponse(SdkResponse):
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
         :param status: 
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         :param image: 
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
         :param storages: notebook存储信息
@@ -315,7 +315,7 @@ class ShowNotebookResponse(SdkResponse):
         r"""Gets the status of this ShowNotebookResponse.
 
         :return: The status of this ShowNotebookResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
         return self._status
 
@@ -324,7 +324,7 @@ class ShowNotebookResponse(SdkResponse):
         r"""Sets the status of this ShowNotebookResponse.
 
         :param status: The status of this ShowNotebookResponse.
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
         self._status = status
 

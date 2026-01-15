@@ -55,7 +55,7 @@ class RuleAddRiskRuleRequest:
         :type action: str
         :param affect_rows: 影响行数
         :type affect_rows: int
-        :param affect_symbol: 影响行数操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        :param affect_symbol: 影响行数操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
         :type affect_symbol: str
         :param client_ips: 客户端IP，多个用英文&#39;,&#39;分隔
         :type client_ips: str
@@ -63,7 +63,7 @@ class RuleAddRiskRuleRequest:
         :type db_ids: str
         :param exception_ips: 例外IP，IP内不做匹配，多个用英文&#39;,&#39;分隔
         :type exception_ips: str
-        :param execution_symbol: 执行时长操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        :param execution_symbol: 执行时长操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
         :type execution_symbol: str
         :param execution_time: 执行时长
         :type execution_time: int
@@ -164,7 +164,7 @@ class RuleAddRiskRuleRequest:
     def affect_symbol(self):
         r"""Gets the affect_symbol of this RuleAddRiskRuleRequest.
 
-        影响行数操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        影响行数操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
 
         :return: The affect_symbol of this RuleAddRiskRuleRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class RuleAddRiskRuleRequest:
     def affect_symbol(self, affect_symbol):
         r"""Sets the affect_symbol of this RuleAddRiskRuleRequest.
 
-        影响行数操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        影响行数操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
 
         :param affect_symbol: The affect_symbol of this RuleAddRiskRuleRequest.
         :type affect_symbol: str
@@ -252,7 +252,7 @@ class RuleAddRiskRuleRequest:
     def execution_symbol(self):
         r"""Gets the execution_symbol of this RuleAddRiskRuleRequest.
 
-        执行时长操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        执行时长操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
 
         :return: The execution_symbol of this RuleAddRiskRuleRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class RuleAddRiskRuleRequest:
     def execution_symbol(self, execution_symbol):
         r"""Sets the execution_symbol of this RuleAddRiskRuleRequest.
 
-        执行时长操作符 - GREATER: 大于 - EQUAL: 等于 - LESS: 小于 - GREATER_EQUAL: 大于等于 - LESS_EQUAL: 小于等于 - NO_MATCH: 不等于
+        执行时长操作符 - GREATER：大于 - EQUAL：等于 - LESS：小于 - GREATER_EQUAL：大于等于 - LESS_EQUAL：小于等于 - NO_MATCH：不等于
 
         :param execution_symbol: The execution_symbol of this RuleAddRiskRuleRequest.
         :type execution_symbol: str

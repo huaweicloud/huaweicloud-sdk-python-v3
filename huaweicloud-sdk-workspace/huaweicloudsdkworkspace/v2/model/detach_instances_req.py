@@ -29,7 +29,7 @@ class DetachInstancesReq:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_ids: 桌面id列表，不能为空。
+        :param desktop_ids: 桌面id列表，不能为空。运行状态为【已休眠】的桌面不支持解绑操作。
         :type desktop_ids: list[str]
         :param shutoff_after_detach: 解绑后是否关机。
         :type shutoff_after_detach: bool
@@ -50,7 +50,7 @@ class DetachInstancesReq:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this DetachInstancesReq.
 
-        桌面id列表，不能为空。
+        桌面id列表，不能为空。运行状态为【已休眠】的桌面不支持解绑操作。
 
         :return: The desktop_ids of this DetachInstancesReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class DetachInstancesReq:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this DetachInstancesReq.
 
-        桌面id列表，不能为空。
+        桌面id列表，不能为空。运行状态为【已休眠】的桌面不支持解绑操作。
 
         :param desktop_ids: The desktop_ids of this DetachInstancesReq.
         :type desktop_ids: list[str]

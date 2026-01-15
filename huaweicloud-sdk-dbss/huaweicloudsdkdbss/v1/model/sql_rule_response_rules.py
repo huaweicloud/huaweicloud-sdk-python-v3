@@ -45,11 +45,11 @@ class SqlRuleResponseRules:
         :type id: str
         :param name: SQL规则名称
         :type name: str
-        :param status: 规则的状态： - ON： 启用 - OFF： 禁用
+        :param status: 规则的状态： - ON：启用 - OFF：禁用
         :type status: str
-        :param risk_level: 风险级别 - HIGH： 高 - MEDIUM：中 - LOW：低
+        :param risk_level: 风险级别 - HIGH：高 - MEDIUM：中 - LOW：低
         :type risk_level: str
-        :param type: 风险类型 - SYSTEM: 系统  - CUSTOMIZE：自定义
+        :param type: 风险类型 - SYSTEM：系统  - CUSTOMIZE：自定义
         :type type: str
         :param rank: 优先级。数字越小优先级越高。
         :type rank: int
@@ -136,7 +136,7 @@ class SqlRuleResponseRules:
     def status(self):
         r"""Gets the status of this SqlRuleResponseRules.
 
-        规则的状态： - ON： 启用 - OFF： 禁用
+        规则的状态： - ON：启用 - OFF：禁用
 
         :return: The status of this SqlRuleResponseRules.
         :rtype: str
@@ -147,7 +147,7 @@ class SqlRuleResponseRules:
     def status(self, status):
         r"""Sets the status of this SqlRuleResponseRules.
 
-        规则的状态： - ON： 启用 - OFF： 禁用
+        规则的状态： - ON：启用 - OFF：禁用
 
         :param status: The status of this SqlRuleResponseRules.
         :type status: str
@@ -158,7 +158,7 @@ class SqlRuleResponseRules:
     def risk_level(self):
         r"""Gets the risk_level of this SqlRuleResponseRules.
 
-        风险级别 - HIGH： 高 - MEDIUM：中 - LOW：低
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低
 
         :return: The risk_level of this SqlRuleResponseRules.
         :rtype: str
@@ -169,7 +169,7 @@ class SqlRuleResponseRules:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this SqlRuleResponseRules.
 
-        风险级别 - HIGH： 高 - MEDIUM：中 - LOW：低
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低
 
         :param risk_level: The risk_level of this SqlRuleResponseRules.
         :type risk_level: str
@@ -180,7 +180,7 @@ class SqlRuleResponseRules:
     def type(self):
         r"""Gets the type of this SqlRuleResponseRules.
 
-        风险类型 - SYSTEM: 系统  - CUSTOMIZE：自定义
+        风险类型 - SYSTEM：系统  - CUSTOMIZE：自定义
 
         :return: The type of this SqlRuleResponseRules.
         :rtype: str
@@ -191,7 +191,7 @@ class SqlRuleResponseRules:
     def type(self, type):
         r"""Sets the type of this SqlRuleResponseRules.
 
-        风险类型 - SYSTEM: 系统  - CUSTOMIZE：自定义
+        风险类型 - SYSTEM：系统  - CUSTOMIZE：自定义
 
         :param type: The type of this SqlRuleResponseRules.
         :type type: str

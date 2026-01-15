@@ -39,7 +39,7 @@ class CreateResizeOrderRequestBody:
 
         :param desktop_pool_id: 桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
         :type desktop_pool_id: str
-        :param desktop_ids: 桌面id
+        :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
         :type desktop_ids: list[str]
         :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
@@ -100,7 +100,7 @@ class CreateResizeOrderRequestBody:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this CreateResizeOrderRequestBody.
 
-        桌面id
+        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
         :return: The desktop_ids of this CreateResizeOrderRequestBody.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class CreateResizeOrderRequestBody:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this CreateResizeOrderRequestBody.
 
-        桌面id
+        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
         :param desktop_ids: The desktop_ids of this CreateResizeOrderRequestBody.
         :type desktop_ids: list[str]

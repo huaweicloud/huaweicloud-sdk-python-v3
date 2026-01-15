@@ -57,7 +57,7 @@ class ReportBean:
         :type end_time: str
         :param finish_time: 完成时间
         :type finish_time: str
-        :param format: 格式  - pdf: PDF文件  - zip: zip文件
+        :param format: 格式  - pdf：PDF文件  - zip：zip文件
         :type format: str
         :param id: 报表ID
         :type id: str
@@ -67,9 +67,9 @@ class ReportBean:
         :type percentum: int
         :param start_time: 开始时间
         :type start_time: str
-        :param template_type: 报表类型 - PDF: pdf - ZIP: zip
+        :param template_type: 报表类型 - PDF：pdf - ZIP：zip
         :type template_type: str
-        :param type: 周期 - AUDIT_REPORT_DAY: 按天 - AUDIT_REPORT_WEEK： 按周 - AUDIT_REPORT_MONTH： 按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
+        :param type: 周期 - AUDIT_REPORT_DAY：按天 - AUDIT_REPORT_WEEK：按周 - AUDIT_REPORT_MONTH：按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
         :type type: str
         :param url: 地址URL
         :type url: str
@@ -208,7 +208,7 @@ class ReportBean:
     def format(self):
         r"""Gets the format of this ReportBean.
 
-        格式  - pdf: PDF文件  - zip: zip文件
+        格式  - pdf：PDF文件  - zip：zip文件
 
         :return: The format of this ReportBean.
         :rtype: str
@@ -219,7 +219,7 @@ class ReportBean:
     def format(self, format):
         r"""Sets the format of this ReportBean.
 
-        格式  - pdf: PDF文件  - zip: zip文件
+        格式  - pdf：PDF文件  - zip：zip文件
 
         :param format: The format of this ReportBean.
         :type format: str
@@ -318,7 +318,7 @@ class ReportBean:
     def template_type(self):
         r"""Gets the template_type of this ReportBean.
 
-        报表类型 - PDF: pdf - ZIP: zip
+        报表类型 - PDF：pdf - ZIP：zip
 
         :return: The template_type of this ReportBean.
         :rtype: str
@@ -329,7 +329,7 @@ class ReportBean:
     def template_type(self, template_type):
         r"""Sets the template_type of this ReportBean.
 
-        报表类型 - PDF: pdf - ZIP: zip
+        报表类型 - PDF：pdf - ZIP：zip
 
         :param template_type: The template_type of this ReportBean.
         :type template_type: str
@@ -340,7 +340,7 @@ class ReportBean:
     def type(self):
         r"""Gets the type of this ReportBean.
 
-        周期 - AUDIT_REPORT_DAY: 按天 - AUDIT_REPORT_WEEK： 按周 - AUDIT_REPORT_MONTH： 按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
+        周期 - AUDIT_REPORT_DAY：按天 - AUDIT_REPORT_WEEK：按周 - AUDIT_REPORT_MONTH：按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
 
         :return: The type of this ReportBean.
         :rtype: str
@@ -351,7 +351,7 @@ class ReportBean:
     def type(self, type):
         r"""Sets the type of this ReportBean.
 
-        周期 - AUDIT_REPORT_DAY: 按天 - AUDIT_REPORT_WEEK： 按周 - AUDIT_REPORT_MONTH： 按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
+        周期 - AUDIT_REPORT_DAY：按天 - AUDIT_REPORT_WEEK：按周 - AUDIT_REPORT_MONTH：按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
 
         :param type: The type of this ReportBean.
         :type type: str

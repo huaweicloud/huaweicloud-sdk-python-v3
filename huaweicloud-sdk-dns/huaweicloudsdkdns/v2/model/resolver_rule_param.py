@@ -51,7 +51,7 @@ class ResolverRuleParam:
         :type domain_name: str
         :param endpoint_id: 当前规则所属的终端节点ID。
         :type endpoint_id: str
-        :param status: 资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
         :type status: str
         :param rule_type: 规则类型。 预留字段，当前默认为FORWARD。
         :type rule_type: str
@@ -187,7 +187,7 @@ class ResolverRuleParam:
     def status(self):
         r"""Gets the status of this ResolverRuleParam.
 
-        资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :return: The status of this ResolverRuleParam.
         :rtype: str
@@ -198,7 +198,7 @@ class ResolverRuleParam:
     def status(self, status):
         r"""Sets the status of this ResolverRuleParam.
 
-        资源状态。 取值范围：PENDING_CREATE, ACTIVE, PENDING_DELETE, ERROR。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :param status: The status of this ResolverRuleParam.
         :type status: str

@@ -23,7 +23,7 @@ class ServerHdaDetails:
         'server_group_name': 'str',
         'sid': 'str',
         'session_count': 'int',
-        'status': 'str',
+        'status': 'ServerStatus',
         'current_version': 'str'
     }
 
@@ -61,8 +61,8 @@ class ServerHdaDetails:
         :type sid: str
         :param session_count: 会话数量。
         :type session_count: int
-        :param status: 实例的状态： * &#x60;UNREGISTER&#x60; - 未就绪 * &#x60;REGISTERED&#x60; - 就绪状态 * &#x60;MAINTAINING&#x60; - 维护中 * &#x60;FREEZE&#x60; - 冻结 * &#x60;STOPPED&#x60; - 停止 * &#x60;NONE&#x60; - 异常状态
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         :param current_version: 当前的accessAgent版本。
         :type current_version: str
         """
@@ -282,10 +282,8 @@ class ServerHdaDetails:
     def status(self):
         r"""Gets the status of this ServerHdaDetails.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :return: The status of this ServerHdaDetails.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         return self._status
 
@@ -293,10 +291,8 @@ class ServerHdaDetails:
     def status(self, status):
         r"""Sets the status of this ServerHdaDetails.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :param status: The status of this ServerHdaDetails.
-        :type status: str
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         self._status = status
 

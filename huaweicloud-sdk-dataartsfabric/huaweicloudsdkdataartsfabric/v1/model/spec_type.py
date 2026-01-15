@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SpecType:
-
+    """
+    allowed enum values
+    """
+    APU = "APU"
+    DPU = "DPU"
+    MU = "MU"
+    RESOURCE_USAGE_UNIT = "RESOURCE_USAGE_UNIT"
+    TOKENS_USAGE_UNIT = "TOKENS_USAGE_UNIT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

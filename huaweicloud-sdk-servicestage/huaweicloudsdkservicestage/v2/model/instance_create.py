@@ -17,7 +17,7 @@ class InstanceCreate:
     openapi_types = {
         'name': 'str',
         'environment_id': 'str',
-        'flavor_id': 'str',
+        'flavor_id': 'FlavorId',
         'replica': 'int',
         'artifacts': 'dict(str, object)',
         'version': 'str',
@@ -49,8 +49,8 @@ class InstanceCreate:
         :type name: str
         :param environment_id: 环境ID。
         :type environment_id: str
-        :param flavor_id: 资源规格。
-        :type flavor_id: str
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         :param replica: 实例副本数。
         :type replica: int
         :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
@@ -143,10 +143,8 @@ class InstanceCreate:
     def flavor_id(self):
         r"""Gets the flavor_id of this InstanceCreate.
 
-        资源规格。
-
         :return: The flavor_id of this InstanceCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -154,10 +152,8 @@ class InstanceCreate:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this InstanceCreate.
 
-        资源规格。
-
         :param flavor_id: The flavor_id of this InstanceCreate.
-        :type flavor_id: str
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 

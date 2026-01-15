@@ -21,7 +21,7 @@ class CentralNetwork:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'domain_id': 'str',
-        'state': 'str',
+        'state': 'CentralNetworkStateEnum',
         'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
         'default_plane_id': 'str',
@@ -63,8 +63,8 @@ class CentralNetwork:
         :type updated_at: datetime
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param state: 中心网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中) - DELETING (删除中) - DELETED (已删除) - RESTORING (恢复中)
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
         :param tags: 实例标签。
@@ -252,10 +252,8 @@ class CentralNetwork:
     def state(self):
         r"""Gets the state of this CentralNetwork.
 
-        中心网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中) - DELETING (删除中) - DELETED (已删除) - RESTORING (恢复中)
-
         :return: The state of this CentralNetwork.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
         """
         return self._state
 
@@ -263,10 +261,8 @@ class CentralNetwork:
     def state(self, state):
         r"""Sets the state of this CentralNetwork.
 
-        中心网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中) - DELETING (删除中) - DELETED (已删除) - RESTORING (恢复中)
-
         :param state: The state of this CentralNetwork.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
         """
         self._state = state
 

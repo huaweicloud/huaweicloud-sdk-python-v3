@@ -56,7 +56,7 @@ class ListAlarmTopicConfigInfoResponse(SdkResponse):
         :type alarm_switch: str
         :param alarm_topic_urn: 通知消息主题URN,调用SMN服务接口获取
         :type alarm_topic_urn: str
-        :param smn_effective: 是否支持SMN订阅  - true: 支持  - false: 不支持
+        :param smn_effective: 是否支持SMN订阅  - true：支持  - false：不支持
         :type smn_effective: bool
         """
         
@@ -247,7 +247,7 @@ class ListAlarmTopicConfigInfoResponse(SdkResponse):
     def smn_effective(self):
         r"""Gets the smn_effective of this ListAlarmTopicConfigInfoResponse.
 
-        是否支持SMN订阅  - true: 支持  - false: 不支持
+        是否支持SMN订阅  - true：支持  - false：不支持
 
         :return: The smn_effective of this ListAlarmTopicConfigInfoResponse.
         :rtype: bool
@@ -258,7 +258,7 @@ class ListAlarmTopicConfigInfoResponse(SdkResponse):
     def smn_effective(self, smn_effective):
         r"""Sets the smn_effective of this ListAlarmTopicConfigInfoResponse.
 
-        是否支持SMN订阅  - true: 支持  - false: 不支持
+        是否支持SMN订阅  - true：支持  - false：不支持
 
         :param smn_effective: The smn_effective of this ListAlarmTopicConfigInfoResponse.
         :type smn_effective: bool

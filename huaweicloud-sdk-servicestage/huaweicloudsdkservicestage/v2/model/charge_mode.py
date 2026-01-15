@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ChargeMode:
-
+    """
+    allowed enum values
+    """
+    PROVIDED = "provided"
+    ON_DEMANDED = "on_demanded"
+    MONTHLY = "monthly"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

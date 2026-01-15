@@ -19,7 +19,8 @@ class VolumeAddInfo:
         'type': 'str',
         'size': 'int',
         'iops': 'int',
-        'throughput': 'int'
+        'throughput': 'int',
+        'kms_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class VolumeAddInfo:
         'type': 'type',
         'size': 'size',
         'iops': 'iops',
-        'throughput': 'throughput'
+        'throughput': 'throughput',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, id=None, type=None, size=None, iops=None, throughput=None):
+    def __init__(self, id=None, type=None, size=None, iops=None, throughput=None, kms_id=None):
         r"""VolumeAddInfo
 
         The model defined in huaweicloud sdk
@@ -39,12 +41,14 @@ class VolumeAddInfo:
         :type id: str
         :param type: 桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。 - SAS：高IO。 - SSD：超高IO。
         :type type: str
-        :param size: 磁盘容量，单位GB。
+        :param size: 磁盘容量，单位GB，必须大于当前磁盘容量。
         :type size: int
         :param iops: iops，云硬盘每秒进行读写的操作次数。
         :type iops: int
         :param throughput: 吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
         :type throughput: int
+        :param kms_id: kms密钥ID。
+        :type kms_id: str
         """
         
         
@@ -54,6 +58,7 @@ class VolumeAddInfo:
         self._size = None
         self._iops = None
         self._throughput = None
+        self._kms_id = None
         self.discriminator = None
 
         if id is not None:
@@ -64,6 +69,8 @@ class VolumeAddInfo:
             self.iops = iops
         if throughput is not None:
             self.throughput = throughput
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def id(self):
@@ -113,7 +120,7 @@ class VolumeAddInfo:
     def size(self):
         r"""Gets the size of this VolumeAddInfo.
 
-        磁盘容量，单位GB。
+        磁盘容量，单位GB，必须大于当前磁盘容量。
 
         :return: The size of this VolumeAddInfo.
         :rtype: int
@@ -124,7 +131,7 @@ class VolumeAddInfo:
     def size(self, size):
         r"""Sets the size of this VolumeAddInfo.
 
-        磁盘容量，单位GB。
+        磁盘容量，单位GB，必须大于当前磁盘容量。
 
         :param size: The size of this VolumeAddInfo.
         :type size: int
@@ -174,6 +181,28 @@ class VolumeAddInfo:
         :type throughput: int
         """
         self._throughput = throughput
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this VolumeAddInfo.
+
+        kms密钥ID。
+
+        :return: The kms_id of this VolumeAddInfo.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this VolumeAddInfo.
+
+        kms密钥ID。
+
+        :param kms_id: The kms_id of this VolumeAddInfo.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

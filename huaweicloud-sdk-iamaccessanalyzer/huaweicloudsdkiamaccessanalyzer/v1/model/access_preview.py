@@ -19,7 +19,7 @@ class AccessPreview:
         'analyzer_id': 'str',
         'configurations': 'Configuration',
         'created_at': 'datetime',
-        'status': 'str',
+        'status': 'AccessPreviewStatus',
         'status_reason': 'PreviewStatusReason'
     }
 
@@ -45,8 +45,8 @@ class AccessPreview:
         :type configurations: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
         :param created_at: 访问预览创建时间。
         :type created_at: datetime
-        :param status: 访问预览的状态。 - creating：创建中 - completed：创建成功 - failed：创建失败 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
         :param status_reason: 
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.PreviewStatusReason`
         """
@@ -157,10 +157,8 @@ class AccessPreview:
     def status(self):
         r"""Gets the status of this AccessPreview.
 
-        访问预览的状态。 - creating：创建中 - completed：创建成功 - failed：创建失败 
-
         :return: The status of this AccessPreview.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
         """
         return self._status
 
@@ -168,10 +166,8 @@ class AccessPreview:
     def status(self, status):
         r"""Sets the status of this AccessPreview.
 
-        访问预览的状态。 - creating：创建中 - completed：创建成功 - failed：创建失败 
-
         :param status: The status of this AccessPreview.
-        :type status: str
+        :type status: :class:`huaweicloudsdkiamaccessanalyzer.v1.AccessPreviewStatus`
         """
         self._status = status
 

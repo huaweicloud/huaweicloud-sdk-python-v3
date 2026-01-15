@@ -16,7 +16,7 @@ class NotebookToolDto:
 
     openapi_types = {
         'display_name': 'str',
-        'profile': 'str'
+        'profile': 'Profile'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class NotebookToolDto:
         :param display_name: 显示名称
         :type display_name: str
         :param profile: 
-        :type profile: str
+        :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`
         """
         
         
@@ -71,7 +71,7 @@ class NotebookToolDto:
         r"""Gets the profile of this NotebookToolDto.
 
         :return: The profile of this NotebookToolDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
         """
         return self._profile
 
@@ -80,7 +80,7 @@ class NotebookToolDto:
         r"""Sets the profile of this NotebookToolDto.
 
         :param profile: The profile of this NotebookToolDto.
-        :type profile: str
+        :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`
         """
         self._profile = profile
 

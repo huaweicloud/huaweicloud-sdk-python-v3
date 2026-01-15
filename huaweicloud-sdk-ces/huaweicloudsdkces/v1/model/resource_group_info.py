@@ -21,7 +21,7 @@ class ResourceGroupInfo:
         'group_id': 'str',
         'create_time': 'int',
         'instance_statistics': 'InstanceStatistics',
-        'status': 'str',
+        'status': 'StatusSchemaResp',
         'enterprise_project_id': 'str',
         'resources': 'list[Resource]'
     }
@@ -55,8 +55,8 @@ class ResourceGroupInfo:
         :type create_time: int
         :param instance_statistics: 
         :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`
-        :param status: **参数解释** 资源分组健康状态 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchemaResp`
         :param enterprise_project_id: **参数解释** 资源分组归属企业项目ID。 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 
         :type enterprise_project_id: str
         :param resources: **参数解释** 一组或者多个资源信息，默认为空。 
@@ -227,10 +227,8 @@ class ResourceGroupInfo:
     def status(self):
         r"""Gets the status of this ResourceGroupInfo.
 
-        **参数解释** 资源分组健康状态 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
-
         :return: The status of this ResourceGroupInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.StatusSchemaResp`
         """
         return self._status
 
@@ -238,10 +236,8 @@ class ResourceGroupInfo:
     def status(self, status):
         r"""Sets the status of this ResourceGroupInfo.
 
-        **参数解释** 资源分组健康状态 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
-
         :param status: The status of this ResourceGroupInfo.
-        :type status: str
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchemaResp`
         """
         self._status = status
 

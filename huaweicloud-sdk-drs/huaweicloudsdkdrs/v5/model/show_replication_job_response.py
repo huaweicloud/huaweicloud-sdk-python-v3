@@ -50,7 +50,7 @@ class ShowReplicationJobResponse(SdkResponse):
 
         :param id: 任务ID。
         :type id: str
-        :param status: 任务状态。
+        :param status: 任务状态。取值：success，failed
         :type status: str
         :param create_time: 任务创建时间。
         :type create_time: str
@@ -136,7 +136,7 @@ class ShowReplicationJobResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowReplicationJobResponse.
 
-        任务状态。
+        任务状态。取值：success，failed
 
         :return: The status of this ShowReplicationJobResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class ShowReplicationJobResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowReplicationJobResponse.
 
-        任务状态。
+        任务状态。取值：success，failed
 
         :param status: The status of this ShowReplicationJobResponse.
         :type status: str

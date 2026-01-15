@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AuditInsanceRiskCount:
+class AuditInstanceRiskCount:
 
     """
     Attributes:
@@ -33,7 +33,7 @@ class AuditInsanceRiskCount:
     }
 
     def __init__(self, count=None, db_id=None, db_ip=None, db_name=None, instance_id=None, instance_name=None):
-        r"""AuditInsanceRiskCount
+        r"""AuditInstanceRiskCount
 
         The model defined in huaweicloud sdk
 
@@ -76,132 +76,132 @@ class AuditInsanceRiskCount:
 
     @property
     def count(self):
-        r"""Gets the count of this AuditInsanceRiskCount.
+        r"""Gets the count of this AuditInstanceRiskCount.
 
         风险数量
 
-        :return: The count of this AuditInsanceRiskCount.
+        :return: The count of this AuditInstanceRiskCount.
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        r"""Sets the count of this AuditInsanceRiskCount.
+        r"""Sets the count of this AuditInstanceRiskCount.
 
         风险数量
 
-        :param count: The count of this AuditInsanceRiskCount.
+        :param count: The count of this AuditInstanceRiskCount.
         :type count: int
         """
         self._count = count
 
     @property
     def db_id(self):
-        r"""Gets the db_id of this AuditInsanceRiskCount.
+        r"""Gets the db_id of this AuditInstanceRiskCount.
 
         数据库ID
 
-        :return: The db_id of this AuditInsanceRiskCount.
+        :return: The db_id of this AuditInstanceRiskCount.
         :rtype: str
         """
         return self._db_id
 
     @db_id.setter
     def db_id(self, db_id):
-        r"""Sets the db_id of this AuditInsanceRiskCount.
+        r"""Sets the db_id of this AuditInstanceRiskCount.
 
         数据库ID
 
-        :param db_id: The db_id of this AuditInsanceRiskCount.
+        :param db_id: The db_id of this AuditInstanceRiskCount.
         :type db_id: str
         """
         self._db_id = db_id
 
     @property
     def db_ip(self):
-        r"""Gets the db_ip of this AuditInsanceRiskCount.
+        r"""Gets the db_ip of this AuditInstanceRiskCount.
 
         数据库IP
 
-        :return: The db_ip of this AuditInsanceRiskCount.
+        :return: The db_ip of this AuditInstanceRiskCount.
         :rtype: str
         """
         return self._db_ip
 
     @db_ip.setter
     def db_ip(self, db_ip):
-        r"""Sets the db_ip of this AuditInsanceRiskCount.
+        r"""Sets the db_ip of this AuditInstanceRiskCount.
 
         数据库IP
 
-        :param db_ip: The db_ip of this AuditInsanceRiskCount.
+        :param db_ip: The db_ip of this AuditInstanceRiskCount.
         :type db_ip: str
         """
         self._db_ip = db_ip
 
     @property
     def db_name(self):
-        r"""Gets the db_name of this AuditInsanceRiskCount.
+        r"""Gets the db_name of this AuditInstanceRiskCount.
 
         数据库名称
 
-        :return: The db_name of this AuditInsanceRiskCount.
+        :return: The db_name of this AuditInstanceRiskCount.
         :rtype: str
         """
         return self._db_name
 
     @db_name.setter
     def db_name(self, db_name):
-        r"""Sets the db_name of this AuditInsanceRiskCount.
+        r"""Sets the db_name of this AuditInstanceRiskCount.
 
         数据库名称
 
-        :param db_name: The db_name of this AuditInsanceRiskCount.
+        :param db_name: The db_name of this AuditInstanceRiskCount.
         :type db_name: str
         """
         self._db_name = db_name
 
     @property
     def instance_id(self):
-        r"""Gets the instance_id of this AuditInsanceRiskCount.
+        r"""Gets the instance_id of this AuditInstanceRiskCount.
 
         实例ID
 
-        :return: The instance_id of this AuditInsanceRiskCount.
+        :return: The instance_id of this AuditInstanceRiskCount.
         :rtype: str
         """
         return self._instance_id
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        r"""Sets the instance_id of this AuditInsanceRiskCount.
+        r"""Sets the instance_id of this AuditInstanceRiskCount.
 
         实例ID
 
-        :param instance_id: The instance_id of this AuditInsanceRiskCount.
+        :param instance_id: The instance_id of this AuditInstanceRiskCount.
         :type instance_id: str
         """
         self._instance_id = instance_id
 
     @property
     def instance_name(self):
-        r"""Gets the instance_name of this AuditInsanceRiskCount.
+        r"""Gets the instance_name of this AuditInstanceRiskCount.
 
         实例名称
 
-        :return: The instance_name of this AuditInsanceRiskCount.
+        :return: The instance_name of this AuditInstanceRiskCount.
         :rtype: str
         """
         return self._instance_name
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        r"""Sets the instance_name of this AuditInsanceRiskCount.
+        r"""Sets the instance_name of this AuditInstanceRiskCount.
 
         实例名称
 
-        :param instance_name: The instance_name of this AuditInsanceRiskCount.
+        :param instance_name: The instance_name of this AuditInstanceRiskCount.
         :type instance_name: str
         """
         self._instance_name = instance_name
@@ -243,7 +243,7 @@ class AuditInsanceRiskCount:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuditInsanceRiskCount):
+        if not isinstance(other, AuditInstanceRiskCount):
             return False
 
         return self.__dict__ == other.__dict__

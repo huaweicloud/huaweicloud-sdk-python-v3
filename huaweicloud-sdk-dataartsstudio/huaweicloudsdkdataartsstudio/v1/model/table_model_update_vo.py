@@ -38,7 +38,7 @@ class TableModelUpdateVO:
         'logic_tb_name': 'str',
         'logic_tb_guid': 'str',
         'description': 'str',
-        'status': 'str',
+        'status': 'BizStatusEnum',
         'logic_tb_id': 'str',
         'biz_catalog_id': 'str',
         'catalog_path': 'str',
@@ -73,20 +73,20 @@ class TableModelUpdateVO:
         'distribute': 'str',
         'distribute_column': 'str',
         'is_partition': 'bool',
-        'physical_table': 'str',
-        'dev_physical_table': 'str',
-        'technical_asset': 'str',
-        'business_asset': 'str',
-        'meta_data_link': 'str',
-        'data_quality': 'str',
-        'summary_status': 'str',
+        'physical_table': 'SyncStatusEnum',
+        'dev_physical_table': 'SyncStatusEnum',
+        'technical_asset': 'SyncStatusEnum',
+        'business_asset': 'SyncStatusEnum',
+        'meta_data_link': 'SyncStatusEnum',
+        'data_quality': 'SyncStatusEnum',
+        'summary_status': 'SyncStatusEnum',
         'alias': 'str',
         'self_defined_fields': 'list[SelfDefinedFieldVO]',
         'dev_version': 'str',
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'str',
+        'env_type': 'EnvTypeEnum',
         'has_related_physical_table': 'bool',
         'has_related_logic_table': 'bool'
     }
@@ -219,8 +219,8 @@ class TableModelUpdateVO:
         :type logic_tb_guid: str
         :param description: 描述。
         :type description: str
-        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param logic_tb_id: 逻辑实体的ID，ID字符串。
         :type logic_tb_id: str
         :param biz_catalog_id: 归属的业务分类的ID，ID字符串。
@@ -289,20 +289,20 @@ class TableModelUpdateVO:
         :type distribute_column: str
         :param is_partition: 是否分区表，只读。
         :type is_partition: bool
-        :param physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type physical_table: str
-        :param dev_physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type dev_physical_table: str
-        :param technical_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type technical_asset: str
-        :param business_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type business_asset: str
-        :param meta_data_link: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type meta_data_link: str
-        :param data_quality: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type data_quality: str
-        :param summary_status: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-        :type summary_status: str
+        :param physical_table: 
+        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param dev_physical_table: 
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param technical_asset: 
+        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param business_asset: 
+        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param meta_data_link: 
+        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param data_quality: 
+        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param summary_status: 
+        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         :param alias: 别名。
         :type alias: str
         :param self_defined_fields: 自定义项。
@@ -315,8 +315,8 @@ class TableModelUpdateVO:
         :type dev_version_name: str
         :param prod_version_name: 生产环境版本名称
         :type prod_version_name: str
-        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-        :type env_type: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         :param has_related_physical_table: 是否关联了物理表
         :type has_related_physical_table: bool
         :param has_related_logic_table: 是否关联了逻辑实体
@@ -1049,10 +1049,8 @@ class TableModelUpdateVO:
     def status(self):
         r"""Gets the status of this TableModelUpdateVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The status of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._status
 
@@ -1060,10 +1058,8 @@ class TableModelUpdateVO:
     def status(self, status):
         r"""Sets the status of this TableModelUpdateVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param status: The status of this TableModelUpdateVO.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._status = status
 
@@ -1811,10 +1807,8 @@ class TableModelUpdateVO:
     def physical_table(self):
         r"""Gets the physical_table of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The physical_table of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._physical_table
 
@@ -1822,10 +1816,8 @@ class TableModelUpdateVO:
     def physical_table(self, physical_table):
         r"""Sets the physical_table of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param physical_table: The physical_table of this TableModelUpdateVO.
-        :type physical_table: str
+        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._physical_table = physical_table
 
@@ -1833,10 +1825,8 @@ class TableModelUpdateVO:
     def dev_physical_table(self):
         r"""Gets the dev_physical_table of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The dev_physical_table of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._dev_physical_table
 
@@ -1844,10 +1834,8 @@ class TableModelUpdateVO:
     def dev_physical_table(self, dev_physical_table):
         r"""Sets the dev_physical_table of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param dev_physical_table: The dev_physical_table of this TableModelUpdateVO.
-        :type dev_physical_table: str
+        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._dev_physical_table = dev_physical_table
 
@@ -1855,10 +1843,8 @@ class TableModelUpdateVO:
     def technical_asset(self):
         r"""Gets the technical_asset of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The technical_asset of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._technical_asset
 
@@ -1866,10 +1852,8 @@ class TableModelUpdateVO:
     def technical_asset(self, technical_asset):
         r"""Sets the technical_asset of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param technical_asset: The technical_asset of this TableModelUpdateVO.
-        :type technical_asset: str
+        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._technical_asset = technical_asset
 
@@ -1877,10 +1861,8 @@ class TableModelUpdateVO:
     def business_asset(self):
         r"""Gets the business_asset of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The business_asset of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._business_asset
 
@@ -1888,10 +1870,8 @@ class TableModelUpdateVO:
     def business_asset(self, business_asset):
         r"""Sets the business_asset of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param business_asset: The business_asset of this TableModelUpdateVO.
-        :type business_asset: str
+        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._business_asset = business_asset
 
@@ -1899,10 +1879,8 @@ class TableModelUpdateVO:
     def meta_data_link(self):
         r"""Gets the meta_data_link of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The meta_data_link of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._meta_data_link
 
@@ -1910,10 +1888,8 @@ class TableModelUpdateVO:
     def meta_data_link(self, meta_data_link):
         r"""Sets the meta_data_link of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param meta_data_link: The meta_data_link of this TableModelUpdateVO.
-        :type meta_data_link: str
+        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._meta_data_link = meta_data_link
 
@@ -1921,10 +1897,8 @@ class TableModelUpdateVO:
     def data_quality(self):
         r"""Gets the data_quality of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The data_quality of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._data_quality
 
@@ -1932,10 +1906,8 @@ class TableModelUpdateVO:
     def data_quality(self, data_quality):
         r"""Sets the data_quality of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param data_quality: The data_quality of this TableModelUpdateVO.
-        :type data_quality: str
+        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._data_quality = data_quality
 
@@ -1943,10 +1915,8 @@ class TableModelUpdateVO:
     def summary_status(self):
         r"""Gets the summary_status of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :return: The summary_status of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         return self._summary_status
 
@@ -1954,10 +1924,8 @@ class TableModelUpdateVO:
     def summary_status(self, summary_status):
         r"""Sets the summary_status of this TableModelUpdateVO.
 
-        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
-
         :param summary_status: The summary_status of this TableModelUpdateVO.
-        :type summary_status: str
+        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
         """
         self._summary_status = summary_status
 
@@ -2097,10 +2065,8 @@ class TableModelUpdateVO:
     def env_type(self):
         r"""Gets the env_type of this TableModelUpdateVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :return: The env_type of this TableModelUpdateVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         return self._env_type
 
@@ -2108,10 +2074,8 @@ class TableModelUpdateVO:
     def env_type(self, env_type):
         r"""Sets the env_type of this TableModelUpdateVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :param env_type: The env_type of this TableModelUpdateVO.
-        :type env_type: str
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
 

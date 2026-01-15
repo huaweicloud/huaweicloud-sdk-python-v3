@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BizStatusEnum:
-
+    """
+    allowed enum values
+    """
+    DRAFT = "DRAFT"
+    PUBLISH_DEVELOPING = "PUBLISH_DEVELOPING"
+    PUBLISHED = "PUBLISHED"
+    OFFLINE_DEVELOPING = "OFFLINE_DEVELOPING"
+    OFFLINE = "OFFLINE"
+    REJECT = "REJECT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

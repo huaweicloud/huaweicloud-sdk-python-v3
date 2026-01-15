@@ -26,7 +26,9 @@ class ScheduledTasksRecords:
         'skip_num': 'int',
         'time_zone': 'str',
         'execute_task_id': 'str',
-        'execute_object_type': 'str'
+        'execute_object_type': 'str',
+        'expire_time': 'str',
+        'extra_params': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ScheduledTasksRecords:
         'skip_num': 'skip_num',
         'time_zone': 'time_zone',
         'execute_task_id': 'execute_task_id',
-        'execute_object_type': 'execute_object_type'
+        'execute_object_type': 'execute_object_type',
+        'expire_time': 'expire_time',
+        'extra_params': 'extra_params'
     }
 
-    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, life_cycle_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None):
+    def __init__(self, id=None, start_time=None, task_type=None, scheduled_type=None, life_cycle_type=None, status=None, success_num=None, failed_num=None, skip_num=None, time_zone=None, execute_task_id=None, execute_object_type=None, expire_time=None, extra_params=None):
         r"""ScheduledTasksRecords
 
         The model defined in huaweicloud sdk
@@ -73,6 +77,10 @@ class ScheduledTasksRecords:
         :type execute_task_id: str
         :param execute_object_type: 执行定时任务的对象类型，只有定时执行脚本返回。
         :type execute_object_type: str
+        :param expire_time: 到期时间，格式为yyyy-MM-dd HH:mm:ss。
+        :type expire_time: str
+        :param extra_params: 扩展参数，json格式。
+        :type extra_params: str
         """
         
         
@@ -89,6 +97,8 @@ class ScheduledTasksRecords:
         self._time_zone = None
         self._execute_task_id = None
         self._execute_object_type = None
+        self._expire_time = None
+        self._extra_params = None
         self.discriminator = None
 
         if id is not None:
@@ -115,6 +125,10 @@ class ScheduledTasksRecords:
             self.execute_task_id = execute_task_id
         if execute_object_type is not None:
             self.execute_object_type = execute_object_type
+        if expire_time is not None:
+            self.expire_time = expire_time
+        if extra_params is not None:
+            self.extra_params = extra_params
 
     @property
     def id(self):
@@ -379,6 +393,50 @@ class ScheduledTasksRecords:
         :type execute_object_type: str
         """
         self._execute_object_type = execute_object_type
+
+    @property
+    def expire_time(self):
+        r"""Gets the expire_time of this ScheduledTasksRecords.
+
+        到期时间，格式为yyyy-MM-dd HH:mm:ss。
+
+        :return: The expire_time of this ScheduledTasksRecords.
+        :rtype: str
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        r"""Sets the expire_time of this ScheduledTasksRecords.
+
+        到期时间，格式为yyyy-MM-dd HH:mm:ss。
+
+        :param expire_time: The expire_time of this ScheduledTasksRecords.
+        :type expire_time: str
+        """
+        self._expire_time = expire_time
+
+    @property
+    def extra_params(self):
+        r"""Gets the extra_params of this ScheduledTasksRecords.
+
+        扩展参数，json格式。
+
+        :return: The extra_params of this ScheduledTasksRecords.
+        :rtype: str
+        """
+        return self._extra_params
+
+    @extra_params.setter
+    def extra_params(self, extra_params):
+        r"""Sets the extra_params of this ScheduledTasksRecords.
+
+        扩展参数，json格式。
+
+        :param extra_params: The extra_params of this ScheduledTasksRecords.
+        :type extra_params: str
+        """
+        self._extra_params = extra_params
 
     def to_dict(self):
         result = {}

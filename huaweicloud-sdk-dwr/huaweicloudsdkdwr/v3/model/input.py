@@ -17,7 +17,7 @@ class Input:
     openapi_types = {
         'parameter_name': 'str',
         'type': 'str',
-        'value_type': 'str',
+        'value_type': 'InputParaValueType',
         'template_parameter_name': 'str',
         'parameter_value': 'str',
         'description': 'str',
@@ -49,8 +49,8 @@ class Input:
         :type parameter_name: str
         :param type: 参数类型。可为string，integer，float，boolean，list，map。type为list类型时，value_type必填
         :type type: str
-        :param value_type: 只支持string,integer,float
-        :type value_type: str
+        :param value_type: 
+        :type value_type: :class:`huaweicloudsdkdwr.v3.InputParaValueType`
         :param template_parameter_name: 当多个相同action template在一个工作流时，增加字段做国际化。 由小写字母、数字和中划线“-”组成
         :type template_parameter_name: str
         :param parameter_value: Input结构体参数类型。支持string,integer,float,boolean,list,map
@@ -148,10 +148,8 @@ class Input:
     def value_type(self):
         r"""Gets the value_type of this Input.
 
-        只支持string,integer,float
-
         :return: The value_type of this Input.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdwr.v3.InputParaValueType`
         """
         return self._value_type
 
@@ -159,10 +157,8 @@ class Input:
     def value_type(self, value_type):
         r"""Sets the value_type of this Input.
 
-        只支持string,integer,float
-
         :param value_type: The value_type of this Input.
-        :type value_type: str
+        :type value_type: :class:`huaweicloudsdkdwr.v3.InputParaValueType`
         """
         self._value_type = value_type
 

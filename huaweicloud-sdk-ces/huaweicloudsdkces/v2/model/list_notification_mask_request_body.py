@@ -15,7 +15,7 @@ class ListNotificationMaskRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'relation_type': 'str',
+        'relation_type': 'ListRelationType',
         'alarm_ids': 'list[str]',
         'relation_ids': 'list[str]',
         'metric_name': 'str',
@@ -47,8 +47,8 @@ class ListNotificationMaskRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param relation_type: **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
-        :type relation_type: str
+        :param relation_type: 
+        :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
         :param alarm_ids: **参数解释**： 告警规则ID列表，用于查询对应的告警通知屏蔽。 **约束限制**： 当relation_type为ALARM_RULE、RESOURCE_POLICY_NOTIFICATION时，应通过alarm_ids查询。当relation_type为RESOURCE、EVENT.SYS时，不支持使用alarm_ids查询，此时alarm_ids为空或不选，表示查询所有的RESOURCE、EVENT.SYS类型的告警屏蔽。 **取值范围**： 包含的告警规则ID数量最多不超过100个，最少为0个。 **默认取值**： 不涉及 
         :type alarm_ids: list[str]
         :param relation_ids: （已废弃，不推荐使用）关联编号（目前是告警规则ID）
@@ -111,10 +111,8 @@ class ListNotificationMaskRequestBody:
     def relation_type(self):
         r"""Gets the relation_type of this ListNotificationMaskRequestBody.
 
-        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
-
         :return: The relation_type of this ListNotificationMaskRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.ListRelationType`
         """
         return self._relation_type
 
@@ -122,10 +120,8 @@ class ListNotificationMaskRequestBody:
     def relation_type(self, relation_type):
         r"""Sets the relation_type of this ListNotificationMaskRequestBody.
 
-        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
-
         :param relation_type: The relation_type of this ListNotificationMaskRequestBody.
-        :type relation_type: str
+        :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
         """
         self._relation_type = relation_type
 

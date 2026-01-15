@@ -28,7 +28,7 @@ class SetAuditScopeRuleSwitchResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态  - SUCCESS: 成功  - FAILED: 失败
+        :param status: 状态  - SUCCESS：成功  - FAILED：失败
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class SetAuditScopeRuleSwitchResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SetAuditScopeRuleSwitchResponse.
 
-        状态  - SUCCESS: 成功  - FAILED: 失败
+        状态  - SUCCESS：成功  - FAILED：失败
 
         :return: The status of this SetAuditScopeRuleSwitchResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class SetAuditScopeRuleSwitchResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SetAuditScopeRuleSwitchResponse.
 
-        状态  - SUCCESS: 成功  - FAILED: 失败
+        状态  - SUCCESS：成功  - FAILED：失败
 
         :param status: The status of this SetAuditScopeRuleSwitchResponse.
         :type status: str

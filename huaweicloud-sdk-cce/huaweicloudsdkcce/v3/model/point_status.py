@@ -15,9 +15,9 @@ class PointStatus:
     sensitive_list = []
 
     openapi_types = {
-        'task_type': 'str',
+        'task_type': 'TaskType',
         'task_id': 'str',
-        'status': 'str',
+        'status': 'UpgradeWorkflowTaskStatus',
         'start_time_stamp': 'str',
         'end_time_stamp': 'str',
         'expire_time_stamp': 'str'
@@ -37,12 +37,12 @@ class PointStatus:
 
         The model defined in huaweicloud sdk
 
-        :param task_type: 集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-        :type task_type: str
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
         :param task_id: 升级任务项ID
         :type task_id: str
-        :param status: 集群升级状态： Init: 任务初始状态 Queuing: 任务已进入执行队列 Running: 任务开始执行 Success: 任务执行成功 Failed: 任务执行失败 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
         :param start_time_stamp: 升级任务开始时间
         :type start_time_stamp: str
         :param end_time_stamp: 升级任务结束时间
@@ -78,10 +78,8 @@ class PointStatus:
     def task_type(self):
         r"""Gets the task_type of this PointStatus.
 
-        集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-
         :return: The task_type of this PointStatus.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         return self._task_type
 
@@ -89,10 +87,8 @@ class PointStatus:
     def task_type(self, task_type):
         r"""Sets the task_type of this PointStatus.
 
-        集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-
         :param task_type: The task_type of this PointStatus.
-        :type task_type: str
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         self._task_type = task_type
 
@@ -122,10 +118,8 @@ class PointStatus:
     def status(self):
         r"""Gets the status of this PointStatus.
 
-        集群升级状态： Init: 任务初始状态 Queuing: 任务已进入执行队列 Running: 任务开始执行 Success: 任务执行成功 Failed: 任务执行失败 
-
         :return: The status of this PointStatus.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
         """
         return self._status
 
@@ -133,10 +127,8 @@ class PointStatus:
     def status(self, status):
         r"""Sets the status of this PointStatus.
 
-        集群升级状态： Init: 任务初始状态 Queuing: 任务已进入执行队列 Running: 任务开始执行 Success: 任务执行成功 Failed: 任务执行失败 
-
         :param status: The status of this PointStatus.
-        :type status: str
+        :type status: :class:`huaweicloudsdkcce.v3.UpgradeWorkflowTaskStatus`
         """
         self._status = status
 

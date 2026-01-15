@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ScenarioVersionEnum:
-
+    """
+    allowed enum values
+    """
+    VTD = "vtd"
+    V0_9_1 = "v0.9.1"
+    V1_0_0 = "v1.0.0"
+    V1_1_0 = "v1.1.0"
+    V1_1_1 = "v1.1.1"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -4,7 +4,18 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ResourceTypeEnum:
-
+    """
+    allowed enum values
+    """
+    SERVER = "Server"
+    VOLUME = "Volume"
+    SFS_TURBO = "Sfs-Turbo"
+    WORKSPACE = "Workspace"
+    MYSQL = "MySQL"
+    POSTGRESQL = "PostgreSQL"
+    SQLSERVER = "SQLServer"
+    MARIADB = "MariaDB"
+    GAUSSDB = "GaussDB"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

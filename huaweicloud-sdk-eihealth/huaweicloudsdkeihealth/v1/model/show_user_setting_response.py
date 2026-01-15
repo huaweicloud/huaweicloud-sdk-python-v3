@@ -16,7 +16,7 @@ class ShowUserSettingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'operation': 'str',
+        'operation': 'Operation',
         'settings': 'UserSettingDto'
     }
 
@@ -31,7 +31,7 @@ class ShowUserSettingResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param operation: 
-        :type operation: str
+        :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
         :param settings: 
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
         """
@@ -52,7 +52,7 @@ class ShowUserSettingResponse(SdkResponse):
         r"""Gets the operation of this ShowUserSettingResponse.
 
         :return: The operation of this ShowUserSettingResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
         return self._operation
 
@@ -61,7 +61,7 @@ class ShowUserSettingResponse(SdkResponse):
         r"""Sets the operation of this ShowUserSettingResponse.
 
         :param operation: The operation of this ShowUserSettingResponse.
-        :type operation: str
+        :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
         self._operation = operation
 

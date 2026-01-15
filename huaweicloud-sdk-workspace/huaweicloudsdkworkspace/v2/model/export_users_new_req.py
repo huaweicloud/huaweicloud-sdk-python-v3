@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExportUsersV3Req:
+class ExportUsersNewReq:
 
     """
     Attributes:
@@ -31,7 +31,7 @@ class ExportUsersV3Req:
     }
 
     def __init__(self, user_name=None, description=None, active_type=None, language=None, enterprise_project_id=None):
-        r"""ExportUsersV3Req
+        r"""ExportUsersNewReq
 
         The model defined in huaweicloud sdk
 
@@ -69,110 +69,110 @@ class ExportUsersV3Req:
 
     @property
     def user_name(self):
-        r"""Gets the user_name of this ExportUsersV3Req.
+        r"""Gets the user_name of this ExportUsersNewReq.
 
         桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。支持模糊查询导出。
 
-        :return: The user_name of this ExportUsersV3Req.
+        :return: The user_name of this ExportUsersNewReq.
         :rtype: str
         """
         return self._user_name
 
     @user_name.setter
     def user_name(self, user_name):
-        r"""Sets the user_name of this ExportUsersV3Req.
+        r"""Sets the user_name of this ExportUsersNewReq.
 
         桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。支持模糊查询导出。
 
-        :param user_name: The user_name of this ExportUsersV3Req.
+        :param user_name: The user_name of this ExportUsersNewReq.
         :type user_name: str
         """
         self._user_name = user_name
 
     @property
     def description(self):
-        r"""Gets the description of this ExportUsersV3Req.
+        r"""Gets the description of this ExportUsersNewReq.
 
         描述，支持模糊查询导出。
 
-        :return: The description of this ExportUsersV3Req.
+        :return: The description of this ExportUsersNewReq.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        r"""Sets the description of this ExportUsersV3Req.
+        r"""Sets the description of this ExportUsersNewReq.
 
         描述，支持模糊查询导出。
 
-        :param description: The description of this ExportUsersV3Req.
+        :param description: The description of this ExportUsersNewReq.
         :type description: str
         """
         self._description = description
 
     @property
     def active_type(self):
-        r"""Gets the active_type of this ExportUsersV3Req.
+        r"""Gets the active_type of this ExportUsersNewReq.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
-        :return: The active_type of this ExportUsersV3Req.
+        :return: The active_type of this ExportUsersNewReq.
         :rtype: str
         """
         return self._active_type
 
     @active_type.setter
     def active_type(self, active_type):
-        r"""Sets the active_type of this ExportUsersV3Req.
+        r"""Sets the active_type of this ExportUsersNewReq.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
-        :param active_type: The active_type of this ExportUsersV3Req.
+        :param active_type: The active_type of this ExportUsersNewReq.
         :type active_type: str
         """
         self._active_type = active_type
 
     @property
     def language(self):
-        r"""Gets the language of this ExportUsersV3Req.
+        r"""Gets the language of this ExportUsersNewReq.
 
         语言，默认英文。 * zh_CN： 中文 * en_US： 英文
 
-        :return: The language of this ExportUsersV3Req.
+        :return: The language of this ExportUsersNewReq.
         :rtype: str
         """
         return self._language
 
     @language.setter
     def language(self, language):
-        r"""Sets the language of this ExportUsersV3Req.
+        r"""Sets the language of this ExportUsersNewReq.
 
         语言，默认英文。 * zh_CN： 中文 * en_US： 英文
 
-        :param language: The language of this ExportUsersV3Req.
+        :param language: The language of this ExportUsersNewReq.
         :type language: str
         """
         self._language = language
 
     @property
     def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ExportUsersV3Req.
+        r"""Gets the enterprise_project_id of this ExportUsersNewReq.
 
         企业项目ID。
 
-        :return: The enterprise_project_id of this ExportUsersV3Req.
+        :return: The enterprise_project_id of this ExportUsersNewReq.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ExportUsersV3Req.
+        r"""Sets the enterprise_project_id of this ExportUsersNewReq.
 
         企业项目ID。
 
-        :param enterprise_project_id: The enterprise_project_id of this ExportUsersV3Req.
+        :param enterprise_project_id: The enterprise_project_id of this ExportUsersNewReq.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
@@ -214,7 +214,7 @@ class ExportUsersV3Req:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExportUsersV3Req):
+        if not isinstance(other, ExportUsersNewReq):
             return False
 
         return self.__dict__ == other.__dict__

@@ -18,8 +18,8 @@ class CreateImageReq:
         'description': 'str',
         'name': 'str',
         'tag': 'str',
-        'type': 'str',
-        'chip_type': 'str'
+        'type': 'ImageType',
+        'chip_type': 'ImageChipType'
     }
 
     attribute_map = {
@@ -42,9 +42,9 @@ class CreateImageReq:
         :param tag: 镜像版本
         :type tag: str
         :param type: 
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
         :param chip_type: 
-        :type chip_type: str
+        :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
         """
         
         
@@ -136,7 +136,7 @@ class CreateImageReq:
         r"""Gets the type of this CreateImageReq.
 
         :return: The type of this CreateImageReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
         """
         return self._type
 
@@ -145,7 +145,7 @@ class CreateImageReq:
         r"""Sets the type of this CreateImageReq.
 
         :param type: The type of this CreateImageReq.
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
         """
         self._type = type
 
@@ -154,7 +154,7 @@ class CreateImageReq:
         r"""Gets the chip_type of this CreateImageReq.
 
         :return: The chip_type of this CreateImageReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
         """
         return self._chip_type
 
@@ -163,7 +163,7 @@ class CreateImageReq:
         r"""Sets the chip_type of this CreateImageReq.
 
         :param chip_type: The chip_type of this CreateImageReq.
-        :type chip_type: str
+        :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
         """
         self._chip_type = chip_type
 

@@ -16,9 +16,9 @@ class ComponentCreate:
 
     openapi_types = {
         'name': 'str',
-        'runtime': 'str',
-        'category': 'str',
-        'sub_category': 'str',
+        'runtime': 'RuntimeType',
+        'category': 'ComponentCategory',
+        'sub_category': 'ComponentSubCategory',
         'description': 'str',
         'source': 'SourceObject',
         'build': 'Build'
@@ -41,12 +41,12 @@ class ComponentCreate:
 
         :param name: 应用组件名称。
         :type name: str
-        :param runtime: 运行时类型。
-        :type runtime: str
-        :param category: 应用组件类型包括：Webapp、MicroService、Common。
-        :type category: str
-        :param sub_category: 应用组件子类型。  Webapp的子类型有Web、Magento、Wordpress。  MicroService的子类型有Java Chassis、Go Chassis、Mesher、SpringCloud。  Common的子类型可以为空。 
-        :type sub_category: str
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
+        :param category: 
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
+        :param sub_category: 
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         :param description: 描述。
         :type description: str
         :param source: 
@@ -104,10 +104,8 @@ class ComponentCreate:
     def runtime(self):
         r"""Gets the runtime of this ComponentCreate.
 
-        运行时类型。
-
         :return: The runtime of this ComponentCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -115,10 +113,8 @@ class ComponentCreate:
     def runtime(self, runtime):
         r"""Sets the runtime of this ComponentCreate.
 
-        运行时类型。
-
         :param runtime: The runtime of this ComponentCreate.
-        :type runtime: str
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 
@@ -126,10 +122,8 @@ class ComponentCreate:
     def category(self):
         r"""Gets the category of this ComponentCreate.
 
-        应用组件类型包括：Webapp、MicroService、Common。
-
         :return: The category of this ComponentCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         return self._category
 
@@ -137,10 +131,8 @@ class ComponentCreate:
     def category(self, category):
         r"""Sets the category of this ComponentCreate.
 
-        应用组件类型包括：Webapp、MicroService、Common。
-
         :param category: The category of this ComponentCreate.
-        :type category: str
+        :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
         self._category = category
 
@@ -148,10 +140,8 @@ class ComponentCreate:
     def sub_category(self):
         r"""Gets the sub_category of this ComponentCreate.
 
-        应用组件子类型。  Webapp的子类型有Web、Magento、Wordpress。  MicroService的子类型有Java Chassis、Go Chassis、Mesher、SpringCloud。  Common的子类型可以为空。 
-
         :return: The sub_category of this ComponentCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         return self._sub_category
 
@@ -159,10 +149,8 @@ class ComponentCreate:
     def sub_category(self, sub_category):
         r"""Sets the sub_category of this ComponentCreate.
 
-        应用组件子类型。  Webapp的子类型有Web、Magento、Wordpress。  MicroService的子类型有Java Chassis、Go Chassis、Mesher、SpringCloud。  Common的子类型可以为空。 
-
         :param sub_category: The sub_category of this ComponentCreate.
-        :type sub_category: str
+        :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
         self._sub_category = sub_category
 

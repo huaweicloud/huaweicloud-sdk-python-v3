@@ -18,7 +18,7 @@ class VpcepServiceData:
         'deprecated': 'bool',
         'id': 'str',
         'name': 'str',
-        'type': 'str'
+        'type': 'VpcServiceType'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class VpcepServiceData:
         :type id: str
         :param name: 所属租户名称
         :type name: str
-        :param type: **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         """
         
         
@@ -130,10 +130,8 @@ class VpcepServiceData:
     def type(self):
         r"""Gets the type of this VpcepServiceData.
 
-        **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-
         :return: The type of this VpcepServiceData.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         """
         return self._type
 
@@ -141,10 +139,8 @@ class VpcepServiceData:
     def type(self, type):
         r"""Sets the type of this VpcepServiceData.
 
-        **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-
         :param type: The type of this VpcepServiceData.
-        :type type: str
+        :type type: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         """
         self._type = type
 

@@ -17,7 +17,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'language': 'str',
+        'language': 'LanguageEnum',
         'rtc_room_info': 'RTCRoomInfoList',
         'chat_subtitle_config': 'SmartChatSubtitleConfig',
         'video_config': 'SmartChatVideoConfig',
@@ -54,8 +54,8 @@ class StartSmartChatJobResponse(SdkResponse):
 
         :param job_id: 智能交互对话任务ID。
         :type job_id: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param rtc_room_info: 
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         :param chat_subtitle_config: 
@@ -150,10 +150,8 @@ class StartSmartChatJobResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this StartSmartChatJobResponse.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this StartSmartChatJobResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -161,10 +159,8 @@ class StartSmartChatJobResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this StartSmartChatJobResponse.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this StartSmartChatJobResponse.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

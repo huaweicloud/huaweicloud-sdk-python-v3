@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TemplateTypeUpdate:
-
+    """
+    allowed enum values
+    """
+    _0 = "0"
+    _2 = "2"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

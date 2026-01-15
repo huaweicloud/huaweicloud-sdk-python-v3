@@ -17,16 +17,20 @@ class ReinstallK8sOptionsConfig:
     openapi_types = {
         'labels': 'dict(str, str)',
         'taints': 'list[Taint]',
-        'max_pods': 'int'
+        'max_pods': 'int',
+        'nic_multiqueue': 'str',
+        'nic_threshold': 'str'
     }
 
     attribute_map = {
         'labels': 'labels',
         'taints': 'taints',
-        'max_pods': 'maxPods'
+        'max_pods': 'maxPods',
+        'nic_multiqueue': 'nicMultiqueue',
+        'nic_threshold': 'nicThreshold'
     }
 
-    def __init__(self, labels=None, taints=None, max_pods=None):
+    def __init__(self, labels=None, taints=None, max_pods=None, nic_multiqueue=None, nic_threshold=None):
         r"""ReinstallK8sOptionsConfig
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ReinstallK8sOptionsConfig:
         :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
         :param max_pods: **参数解释**： 节点最大允许创建的实例数(Pod)，该数量包含系统默认实例。 该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。 节点可以创建多少个Pod，受多个参数影响，具体请参见[节点可创建的最大Pod数量说明](maxPods.xml)。 **约束限制**： 不涉及 **取值范围**： 取值范围为16~256。 **默认取值**： 不涉及
         :type max_pods: int
+        :param nic_multiqueue: - 弹性网卡队列数配置，默认配置示例如下： &#x60;&#x60;&#x60; \&quot;[{\\\&quot;queue\\\&quot;:4}]\&quot; &#x60;&#x60;&#x60; 包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\&quot;1\&quot;:128, \&quot;2\&quot;:92, \&quot;4\&quot;:92, \&quot;8\&quot;:32, \&quot;16\&quot;:16,\&quot;28\&quot;:9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
+        :type nic_multiqueue: str
+        :param nic_threshold: - 弹性网卡预绑定比例配置，默认配置示例如下： &#x60;&#x60;&#x60; \&quot;0.3:0.6\&quot; &#x60;&#x60;&#x60;   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 &#x3D; ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 &#x3D; ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 &lt; BMS节点上绑定的弹性网卡数 &lt; Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 &lt; 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 &#x3D; 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 &gt; 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 &#x3D; 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 &lt;&#x3D; 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
+        :type nic_threshold: str
         """
         
         
@@ -44,6 +52,8 @@ class ReinstallK8sOptionsConfig:
         self._labels = None
         self._taints = None
         self._max_pods = None
+        self._nic_multiqueue = None
+        self._nic_threshold = None
         self.discriminator = None
 
         if labels is not None:
@@ -52,6 +62,10 @@ class ReinstallK8sOptionsConfig:
             self.taints = taints
         if max_pods is not None:
             self.max_pods = max_pods
+        if nic_multiqueue is not None:
+            self.nic_multiqueue = nic_multiqueue
+        if nic_threshold is not None:
+            self.nic_threshold = nic_threshold
 
     @property
     def labels(self):
@@ -118,6 +132,50 @@ class ReinstallK8sOptionsConfig:
         :type max_pods: int
         """
         self._max_pods = max_pods
+
+    @property
+    def nic_multiqueue(self):
+        r"""Gets the nic_multiqueue of this ReinstallK8sOptionsConfig.
+
+        - 弹性网卡队列数配置，默认配置示例如下： ``` \"[{\\\"queue\\\":4}]\" ``` 包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\"1\":128, \"2\":92, \"4\":92, \"8\":32, \"16\":16,\"28\":9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
+
+        :return: The nic_multiqueue of this ReinstallK8sOptionsConfig.
+        :rtype: str
+        """
+        return self._nic_multiqueue
+
+    @nic_multiqueue.setter
+    def nic_multiqueue(self, nic_multiqueue):
+        r"""Sets the nic_multiqueue of this ReinstallK8sOptionsConfig.
+
+        - 弹性网卡队列数配置，默认配置示例如下： ``` \"[{\\\"queue\\\":4}]\" ``` 包含如下字段： - queue: 弹性网卡队列数。 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 当前支持可配置队列数以及弹性网卡数：{\"1\":128, \"2\":92, \"4\":92, \"8\":32, \"16\":16,\"28\":9}, 既1弹性网卡队列可绑定128张弹性网卡，2队列弹性网卡可绑定92张，以此类推。 - 弹性网卡队列数越多，性能越强，但可绑定弹性网卡数越少，请根据您的需求进行配置（创建后不可修改）。 
+
+        :param nic_multiqueue: The nic_multiqueue of this ReinstallK8sOptionsConfig.
+        :type nic_multiqueue: str
+        """
+        self._nic_multiqueue = nic_multiqueue
+
+    @property
+    def nic_threshold(self):
+        r"""Gets the nic_threshold of this ReinstallK8sOptionsConfig.
+
+        - 弹性网卡预绑定比例配置，默认配置示例如下： ``` \"0.3:0.6\" ```   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 < BMS节点上绑定的弹性网卡数 < Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 < 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 = 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 > 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 = 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 <= 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
+
+        :return: The nic_threshold of this ReinstallK8sOptionsConfig.
+        :rtype: str
+        """
+        return self._nic_threshold
+
+    @nic_threshold.setter
+    def nic_threshold(self, nic_threshold):
+        r"""Sets the nic_threshold of this ReinstallK8sOptionsConfig.
+
+        - 弹性网卡预绑定比例配置，默认配置示例如下： ``` \"0.3:0.6\" ```   - 第一位小数：预绑定低水位，弹性网卡预绑定的最低比例（最小预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定低水位⌋）   - 第二位小数：预绑定高水位，弹性网卡预绑定的最高比例（最大预绑定弹性网卡数 = ⌊节点的总弹性网卡数 * 预绑定高水位⌋）   - BMS节点上绑定的弹性网卡数：Pod正在使用的弹性网卡数 + 最小预绑定弹性网卡数 < BMS节点上绑定的弹性网卡数 < Pod正在使用的弹性网卡数 + 最大预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 < 最小预绑定弹性网卡数时：会绑定弹性网卡，使得预绑定弹性网卡数 = 最小预绑定弹性网卡数   - BMS节点上当预绑定弹性网卡数 > 最大预绑定弹性网卡数时：会定时解绑弹性网卡（约2分钟一次），直到预绑定弹性网卡数 = 最大预绑定弹性网卡数   - 取值范围：[0.0, 1.0]; 一位小数; 低水位 <= 高水位 - 仅在turbo集群的BMS节点时，该字段才可配置。 - 弹性网卡预绑定能加快工作负载的创建，但会占用IP，请根据您的需求进行配置。 
+
+        :param nic_threshold: The nic_threshold of this ReinstallK8sOptionsConfig.
+        :type nic_threshold: str
+        """
+        self._nic_threshold = nic_threshold
 
     def to_dict(self):
         result = {}

@@ -15,7 +15,7 @@ class UpdateHotWordsReq:
     sensitive_list = []
 
     openapi_types = {
-        'hot_words_type': 'str',
+        'hot_words_type': 'HotWordsTypeEnum',
         'sis_hot_words': 'UpdateSisHotWords',
         'mobvoi_hot_words': 'UpdateMobvoiHotWords'
     }
@@ -31,8 +31,8 @@ class UpdateHotWordsReq:
 
         The model defined in huaweicloud sdk
 
-        :param hot_words_type: 热词类型。 &gt; SIS:使用的语音识别服务为SIS时选此类型 &gt; MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
-        :type hot_words_type: str
+        :param hot_words_type: 
+        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
         :param sis_hot_words: 
         :type sis_hot_words: :class:`huaweicloudsdkmetastudio.v1.UpdateSisHotWords`
         :param mobvoi_hot_words: 
@@ -56,10 +56,8 @@ class UpdateHotWordsReq:
     def hot_words_type(self):
         r"""Gets the hot_words_type of this UpdateHotWordsReq.
 
-        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
-
         :return: The hot_words_type of this UpdateHotWordsReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
         """
         return self._hot_words_type
 
@@ -67,10 +65,8 @@ class UpdateHotWordsReq:
     def hot_words_type(self, hot_words_type):
         r"""Sets the hot_words_type of this UpdateHotWordsReq.
 
-        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
-
         :param hot_words_type: The hot_words_type of this UpdateHotWordsReq.
-        :type hot_words_type: str
+        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
         """
         self._hot_words_type = hot_words_type
 

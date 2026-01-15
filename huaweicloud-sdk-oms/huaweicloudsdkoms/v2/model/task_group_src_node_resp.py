@@ -43,7 +43,7 @@ class TaskGroupSrcNodeResp:
         :type cloud_type: str
         :param region: 源端桶所处的区域。
         :type region: str
-        :param app_id: 当源端为腾讯云时，会返回此参数。
+        :param app_id: 腾讯云APPID，当源端为腾讯云时，会返回此参数。
         :type app_id: str
         :param object_key: 任务组类型为前缀迁移任务时，表示待迁移前缀。
         :type object_key: list[str]
@@ -144,7 +144,7 @@ class TaskGroupSrcNodeResp:
     def app_id(self):
         r"""Gets the app_id of this TaskGroupSrcNodeResp.
 
-        当源端为腾讯云时，会返回此参数。
+        腾讯云APPID，当源端为腾讯云时，会返回此参数。
 
         :return: The app_id of this TaskGroupSrcNodeResp.
         :rtype: str
@@ -155,7 +155,7 @@ class TaskGroupSrcNodeResp:
     def app_id(self, app_id):
         r"""Sets the app_id of this TaskGroupSrcNodeResp.
 
-        当源端为腾讯云时，会返回此参数。
+        腾讯云APPID，当源端为腾讯云时，会返回此参数。
 
         :param app_id: The app_id of this TaskGroupSrcNodeResp.
         :type app_id: str

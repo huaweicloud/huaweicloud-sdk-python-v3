@@ -16,8 +16,8 @@ class BatchListMetricDataRequestBody:
 
     openapi_types = {
         'metrics': 'list[MetricInfo]',
-        'period': 'str',
-        'filter': 'str',
+        'period': 'BatchPeriod',
+        'filter': 'Filter',
         '_from': 'int',
         'to': 'int'
     }
@@ -37,10 +37,10 @@ class BatchListMetricDataRequestBody:
 
         :param metrics: 指标数据。数组长度最大500
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
-        :param period: 指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
-        :type period: str
-        :param filter: **参数解释**： 数据聚合的方式。 **约束限制**： period为1（原始值）时，filter字段不生效，参数值默认为average。period大于1时filter才起作用。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 **默认取值**： 不涉及。 
-        :type filter: str
+        :param period: 
+        :type period: :class:`huaweicloudsdkces.v1.BatchPeriod`
+        :param filter: 
+        :type filter: :class:`huaweicloudsdkces.v1.Filter`
         :param _from: 
         :type _from: int
         :param to: 
@@ -88,10 +88,8 @@ class BatchListMetricDataRequestBody:
     def period(self):
         r"""Gets the period of this BatchListMetricDataRequestBody.
 
-        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
-
         :return: The period of this BatchListMetricDataRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.BatchPeriod`
         """
         return self._period
 
@@ -99,10 +97,8 @@ class BatchListMetricDataRequestBody:
     def period(self, period):
         r"""Sets the period of this BatchListMetricDataRequestBody.
 
-        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
-
         :param period: The period of this BatchListMetricDataRequestBody.
-        :type period: str
+        :type period: :class:`huaweicloudsdkces.v1.BatchPeriod`
         """
         self._period = period
 
@@ -110,10 +106,8 @@ class BatchListMetricDataRequestBody:
     def filter(self):
         r"""Gets the filter of this BatchListMetricDataRequestBody.
 
-        **参数解释**： 数据聚合的方式。 **约束限制**： period为1（原始值）时，filter字段不生效，参数值默认为average。period大于1时filter才起作用。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 **默认取值**： 不涉及。 
-
         :return: The filter of this BatchListMetricDataRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.Filter`
         """
         return self._filter
 
@@ -121,10 +115,8 @@ class BatchListMetricDataRequestBody:
     def filter(self, filter):
         r"""Sets the filter of this BatchListMetricDataRequestBody.
 
-        **参数解释**： 数据聚合的方式。 **约束限制**： period为1（原始值）时，filter字段不生效，参数值默认为average。period大于1时filter才起作用。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 **默认取值**： 不涉及。 
-
         :param filter: The filter of this BatchListMetricDataRequestBody.
-        :type filter: str
+        :type filter: :class:`huaweicloudsdkces.v1.Filter`
         """
         self._filter = filter
 

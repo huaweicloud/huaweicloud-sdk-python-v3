@@ -15,7 +15,7 @@ class NonRequiredHostedCloud:
     sensitive_list = []
 
     openapi_types = {
-        'hosted_cloud': 'str'
+        'hosted_cloud': 'HostedCloudEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class NonRequiredHostedCloud:
 
         The model defined in huaweicloud sdk
 
-        :param hosted_cloud: - HWCloud (华为云) - Ireland (爱尔兰)
-        :type hosted_cloud: str
+        :param hosted_cloud: 
+        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         
         
@@ -43,10 +43,8 @@ class NonRequiredHostedCloud:
     def hosted_cloud(self):
         r"""Gets the hosted_cloud of this NonRequiredHostedCloud.
 
-        - HWCloud (华为云) - Ireland (爱尔兰)
-
         :return: The hosted_cloud of this NonRequiredHostedCloud.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         return self._hosted_cloud
 
@@ -54,10 +52,8 @@ class NonRequiredHostedCloud:
     def hosted_cloud(self, hosted_cloud):
         r"""Sets the hosted_cloud of this NonRequiredHostedCloud.
 
-        - HWCloud (华为云) - Ireland (爱尔兰)
-
         :param hosted_cloud: The hosted_cloud of this NonRequiredHostedCloud.
-        :type hosted_cloud: str
+        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
         """
         self._hosted_cloud = hosted_cloud
 

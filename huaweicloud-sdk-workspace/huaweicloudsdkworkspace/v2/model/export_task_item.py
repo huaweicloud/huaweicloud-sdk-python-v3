@@ -51,9 +51,9 @@ class ExportTaskItem:
         :type fail_reason: str
         :param error_code: 任务失败错误码。
         :type error_code: str
-        :param create_time: 创建文件的时间, utc时间：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ。
+        :param create_time: 导出任务的开始时间, utc时间：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ。
         :type create_time: str
-        :param end_time: 创建文件的时间, utc时间：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ。
+        :param end_time: 导出任务的结束时间, utc时间：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ。
         :type end_time: str
         :param is_download: 是否已下载。
         :type is_download: bool
@@ -202,7 +202,7 @@ class ExportTaskItem:
     def create_time(self):
         r"""Gets the create_time of this ExportTaskItem.
 
-        创建文件的时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
+        导出任务的开始时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
 
         :return: The create_time of this ExportTaskItem.
         :rtype: str
@@ -213,7 +213,7 @@ class ExportTaskItem:
     def create_time(self, create_time):
         r"""Sets the create_time of this ExportTaskItem.
 
-        创建文件的时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
+        导出任务的开始时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
 
         :param create_time: The create_time of this ExportTaskItem.
         :type create_time: str
@@ -224,7 +224,7 @@ class ExportTaskItem:
     def end_time(self):
         r"""Gets the end_time of this ExportTaskItem.
 
-        创建文件的时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
+        导出任务的结束时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
 
         :return: The end_time of this ExportTaskItem.
         :rtype: str
@@ -235,7 +235,7 @@ class ExportTaskItem:
     def end_time(self, end_time):
         r"""Sets the end_time of this ExportTaskItem.
 
-        创建文件的时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
+        导出任务的结束时间, utc时间：yyyy-MM-dd'T'HH:mm:ss.SSSZ。
 
         :param end_time: The end_time of this ExportTaskItem.
         :type end_time: str

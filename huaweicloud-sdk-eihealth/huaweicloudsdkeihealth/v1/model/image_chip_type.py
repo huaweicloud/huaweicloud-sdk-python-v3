@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ImageChipType:
-
+    """
+    allowed enum values
+    """
+    X86 = "X86"
+    ARM = "ARM"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

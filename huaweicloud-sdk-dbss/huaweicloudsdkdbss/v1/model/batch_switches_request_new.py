@@ -31,7 +31,7 @@ class BatchSwitchesRequestNew:
 
         :param ids: 规则ID列表
         :type ids: list[str]
-        :param status: 开关状态 - OFF: 关闭 - ON: 开启
+        :param status: 开关状态 - OFF：关闭 - ON：开启
         :type status: str
         """
         
@@ -70,7 +70,7 @@ class BatchSwitchesRequestNew:
     def status(self):
         r"""Gets the status of this BatchSwitchesRequestNew.
 
-        开关状态 - OFF: 关闭 - ON: 开启
+        开关状态 - OFF：关闭 - ON：开启
 
         :return: The status of this BatchSwitchesRequestNew.
         :rtype: str
@@ -81,7 +81,7 @@ class BatchSwitchesRequestNew:
     def status(self, status):
         r"""Sets the status of this BatchSwitchesRequestNew.
 
-        开关状态 - OFF: 关闭 - ON: 开启
+        开关状态 - OFF：关闭 - ON：开启
 
         :param status: The status of this BatchSwitchesRequestNew.
         :type status: str

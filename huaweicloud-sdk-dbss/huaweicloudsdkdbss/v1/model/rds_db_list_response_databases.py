@@ -57,7 +57,7 @@ class RdsDbListResponseDatabases:
         :type ip: str
         :param instance_name: rds实例名称
         :type instance_name: str
-        :param type: 数据库类型 - MYSQL: MySql - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG: DAMENG - TAURUS: TaurusDB - DWS: GaussDB DWS - KINGBASE: KINGBASE - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
+        :param type: 数据库类型 - MYSQL：MySql - ORACLE：Oracle - POSTGRESQL：PostgreSQL - SQLSERVER：SQL Server - DAMENG：DAMENG - TAURUS：TaurusDB - DWS：GaussDB DWS - KINGBASE：KINGBASE - MARIADB：MariaDB - GAUSSDBOPENGAUSS：GaussDB/openGauss
         :type type: str
         :param version: 版本
         :type version: str
@@ -230,7 +230,7 @@ class RdsDbListResponseDatabases:
     def type(self):
         r"""Gets the type of this RdsDbListResponseDatabases.
 
-        数据库类型 - MYSQL: MySql - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG: DAMENG - TAURUS: TaurusDB - DWS: GaussDB DWS - KINGBASE: KINGBASE - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
+        数据库类型 - MYSQL：MySql - ORACLE：Oracle - POSTGRESQL：PostgreSQL - SQLSERVER：SQL Server - DAMENG：DAMENG - TAURUS：TaurusDB - DWS：GaussDB DWS - KINGBASE：KINGBASE - MARIADB：MariaDB - GAUSSDBOPENGAUSS：GaussDB/openGauss
 
         :return: The type of this RdsDbListResponseDatabases.
         :rtype: str
@@ -241,7 +241,7 @@ class RdsDbListResponseDatabases:
     def type(self, type):
         r"""Sets the type of this RdsDbListResponseDatabases.
 
-        数据库类型 - MYSQL: MySql - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG: DAMENG - TAURUS: TaurusDB - DWS: GaussDB DWS - KINGBASE: KINGBASE - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
+        数据库类型 - MYSQL：MySql - ORACLE：Oracle - POSTGRESQL：PostgreSQL - SQLSERVER：SQL Server - DAMENG：DAMENG - TAURUS：TaurusDB - DWS：GaussDB DWS - KINGBASE：KINGBASE - MARIADB：MariaDB - GAUSSDBOPENGAUSS：GaussDB/openGauss
 
         :param type: The type of this RdsDbListResponseDatabases.
         :type type: str

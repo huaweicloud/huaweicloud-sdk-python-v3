@@ -16,7 +16,7 @@ class BatchAssignAppAuthorizationsReq:
 
     openapi_types = {
         'app_ids': 'list[str]',
-        'authorization_type': 'str',
+        'authorization_type': 'AssignType',
         'users': 'list[AccountInfo]',
         'del_users': 'list[AccountInfo]'
     }
@@ -35,8 +35,8 @@ class BatchAssignAppAuthorizationsReq:
 
         :param app_ids: 批量唯一标识请求列表，一次请求数量区间 [1, 20]。
         :type app_ids: list[str]
-        :param authorization_type: * &#x60;ALL_USER&#x60; - 全部用户 * &#x60;ASSIGN_USER&#x60; - 授权指定用户
-        :type authorization_type: str
+        :param authorization_type: 
+        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
         :param users: 新增授权用户列表，一次请求数量区间 [0, 100]。
         :type users: list[:class:`huaweicloudsdkworkspace.v2.AccountInfo`]
         :param del_users: 取消授权用户列表，一次请求数量区间 [0, 100]。
@@ -84,10 +84,8 @@ class BatchAssignAppAuthorizationsReq:
     def authorization_type(self):
         r"""Gets the authorization_type of this BatchAssignAppAuthorizationsReq.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :return: The authorization_type of this BatchAssignAppAuthorizationsReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         return self._authorization_type
 
@@ -95,10 +93,8 @@ class BatchAssignAppAuthorizationsReq:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this BatchAssignAppAuthorizationsReq.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :param authorization_type: The authorization_type of this BatchAssignAppAuthorizationsReq.
-        :type authorization_type: str
+        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         self._authorization_type = authorization_type
 

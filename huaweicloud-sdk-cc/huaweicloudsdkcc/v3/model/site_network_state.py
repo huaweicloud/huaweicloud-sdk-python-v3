@@ -15,7 +15,7 @@ class SiteNetworkState:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'str'
+        'state': 'SiteNetworkStateEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class SiteNetworkState:
 
         The model defined in huaweicloud sdk
 
-        :param state: 分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
         """
         
         
@@ -42,10 +42,8 @@ class SiteNetworkState:
     def state(self):
         r"""Gets the state of this SiteNetworkState.
 
-        分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
-
         :return: The state of this SiteNetworkState.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
         """
         return self._state
 
@@ -53,10 +51,8 @@ class SiteNetworkState:
     def state(self, state):
         r"""Sets the state of this SiteNetworkState.
 
-        分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
-
         :param state: The state of this SiteNetworkState.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
         """
         self._state = state
 

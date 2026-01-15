@@ -34,7 +34,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
         :param send_success: 是否上传完成。
         :type send_success: bool
-        :param process_status: 文件解析状态。
+        :param process_status: 文件解析状态。 取值：success，failed
         :type process_status: str
         :param parsed_success_number: 解析成功的行数。
         :type parsed_success_number: str
@@ -80,7 +80,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this UploadDbObjectTemplateResponse.
 
-        文件解析状态。
+        文件解析状态。 取值：success，failed
 
         :return: The process_status of this UploadDbObjectTemplateResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this UploadDbObjectTemplateResponse.
 
-        文件解析状态。
+        文件解析状态。 取值：success，failed
 
         :param process_status: The process_status of this UploadDbObjectTemplateResponse.
         :type process_status: str

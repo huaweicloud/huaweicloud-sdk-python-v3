@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RunImageStatusEnum:
-
+    """
+    allowed enum values
+    """
+    _0 = "0"
+    _100 = "100"
+    _101 = "101"
+    _200 = "200"
+    _201 = "201"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

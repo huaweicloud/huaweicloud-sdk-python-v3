@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StoragePoolStatus:
-
+    """
+    allowed enum values
+    """
+    CREATING = "CREATING"
+    AVAILABLE = "AVAILABLE"
+    EXPANDING = "EXPANDING"
+    PENDING_PAYMENT = "PENDING_PAYMENT"
+    FROZEN = "FROZEN"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

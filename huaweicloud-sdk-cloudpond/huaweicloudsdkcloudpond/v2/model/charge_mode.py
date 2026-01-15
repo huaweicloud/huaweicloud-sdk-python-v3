@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ChargeMode:
-
+    """
+    allowed enum values
+    """
+    PREPAID = "prepaid"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

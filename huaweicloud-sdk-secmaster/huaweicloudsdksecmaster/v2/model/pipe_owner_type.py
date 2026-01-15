@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PipeOwnerType:
-
+    """
+    allowed enum values
+    """
+    SYSTEM = "SYSTEM"
+    USER = "USER"
+    CLOUD_LOG = "CLOUD_LOG"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

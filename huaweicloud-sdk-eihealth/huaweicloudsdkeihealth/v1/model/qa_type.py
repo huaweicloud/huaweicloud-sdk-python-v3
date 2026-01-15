@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class QaType:
-
+    """
+    allowed enum values
+    """
+    CHAT_CALL = "chat_call"
+    TOOL_CALL = "tool_call"
+    DEEPRESEARCH_CALL = "deepresearch_call"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

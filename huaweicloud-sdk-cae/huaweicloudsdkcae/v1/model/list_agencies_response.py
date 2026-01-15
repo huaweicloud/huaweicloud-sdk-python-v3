@@ -16,8 +16,8 @@ class ListAgenciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
-        'kind': 'str',
+        'api_version': 'ApiVersionObj',
+        'kind': 'AgencyKindObj',
         'agencies': 'list[AgencyItem]'
     }
 
@@ -32,10 +32,10 @@ class ListAgenciesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v1”，该值不可修改。
-        :type api_version: str
-        :param kind: API类型，固定值“Agency”，该值不可修改。
-        :type kind: str
+        :param api_version: 
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :param kind: 
+        :type kind: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
         :param agencies: 委托列表。
         :type agencies: list[:class:`huaweicloudsdkcae.v1.AgencyItem`]
         """
@@ -58,10 +58,8 @@ class ListAgenciesResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListAgenciesResponse.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :return: The api_version of this ListAgenciesResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         return self._api_version
 
@@ -69,10 +67,8 @@ class ListAgenciesResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListAgenciesResponse.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :param api_version: The api_version of this ListAgenciesResponse.
-        :type api_version: str
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         self._api_version = api_version
 
@@ -80,10 +76,8 @@ class ListAgenciesResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListAgenciesResponse.
 
-        API类型，固定值“Agency”，该值不可修改。
-
         :return: The kind of this ListAgenciesResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
         """
         return self._kind
 
@@ -91,10 +85,8 @@ class ListAgenciesResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListAgenciesResponse.
 
-        API类型，固定值“Agency”，该值不可修改。
-
         :param kind: The kind of this ListAgenciesResponse.
-        :type kind: str
+        :type kind: :class:`huaweicloudsdkcae.v1.AgencyKindObj`
         """
         self._kind = kind
 

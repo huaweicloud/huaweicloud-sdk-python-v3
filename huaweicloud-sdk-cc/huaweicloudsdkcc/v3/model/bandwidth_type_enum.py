@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BandwidthTypeEnum:
-
+    """
+    allowed enum values
+    """
+    BANDWIDTHPACKAGE = "BandwidthPackage"
+    TESTBANDWIDTH = "TestBandwidth"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

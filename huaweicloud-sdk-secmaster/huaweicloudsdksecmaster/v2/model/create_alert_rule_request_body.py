@@ -19,10 +19,10 @@ class CreateAlertRuleRequestBody:
         'description': 'str',
         'directory': 'str',
         'script': 'str',
-        'status': 'str',
-        'job_mode': 'str',
+        'status': 'JobStatus',
+        'job_mode': 'IsapJobMode',
         'job_mode_setting': 'IsapJobModeSettingDto',
-        'environment': 'str',
+        'environment': 'JobEnvironment',
         'job_output_setting': 'IsapJobOutputSetting',
         'output_table_id': 'str',
         'output_table_name': 'str',
@@ -61,14 +61,14 @@ class CreateAlertRuleRequestBody:
         :type directory: str
         :param script: Job Script 作业脚本
         :type script: str
-        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
-        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-        :type job_mode: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
+        :param job_mode: 
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         :param job_mode_setting: 
         :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
-        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-        :type environment: str
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         :param job_output_setting: 
         :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
         :param output_table_id: UUID
@@ -213,10 +213,8 @@ class CreateAlertRuleRequestBody:
     def status(self):
         r"""Gets the status of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this CreateAlertRuleRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         return self._status
 
@@ -224,10 +222,8 @@ class CreateAlertRuleRequestBody:
     def status(self, status):
         r"""Sets the status of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this CreateAlertRuleRequestBody.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         self._status = status
 
@@ -235,10 +231,8 @@ class CreateAlertRuleRequestBody:
     def job_mode(self):
         r"""Gets the job_mode of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :return: The job_mode of this CreateAlertRuleRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         return self._job_mode
 
@@ -246,10 +240,8 @@ class CreateAlertRuleRequestBody:
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :param job_mode: The job_mode of this CreateAlertRuleRequestBody.
-        :type job_mode: str
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         self._job_mode = job_mode
 
@@ -275,10 +267,8 @@ class CreateAlertRuleRequestBody:
     def environment(self):
         r"""Gets the environment of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :return: The environment of this CreateAlertRuleRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         return self._environment
 
@@ -286,10 +276,8 @@ class CreateAlertRuleRequestBody:
     def environment(self, environment):
         r"""Sets the environment of this CreateAlertRuleRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :param environment: The environment of this CreateAlertRuleRequestBody.
-        :type environment: str
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         self._environment = environment
 

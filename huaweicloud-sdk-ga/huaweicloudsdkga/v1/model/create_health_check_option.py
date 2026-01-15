@@ -16,7 +16,7 @@ class CreateHealthCheckOption:
 
     openapi_types = {
         'endpoint_group_id': 'str',
-        'protocol': 'str',
+        'protocol': 'HealthCheckProtocol',
         'port': 'int',
         'interval': 'int',
         'timeout': 'int',
@@ -41,8 +41,8 @@ class CreateHealthCheckOption:
 
         :param endpoint_group_id: 终端节点组ID。
         :type endpoint_group_id: str
-        :param protocol: 监听的网络传输协议类型。 取值范围：TCP、UDP
-        :type protocol: str
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         :param port: 健康检查的端口。
         :type port: int
         :param interval: 健康检查的时间间隔，单位为秒。
@@ -100,10 +100,8 @@ class CreateHealthCheckOption:
     def protocol(self):
         r"""Gets the protocol of this CreateHealthCheckOption.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :return: The protocol of this CreateHealthCheckOption.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
         return self._protocol
 
@@ -111,10 +109,8 @@ class CreateHealthCheckOption:
     def protocol(self, protocol):
         r"""Sets the protocol of this CreateHealthCheckOption.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :param protocol: The protocol of this CreateHealthCheckOption.
-        :type protocol: str
+        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
         self._protocol = protocol
 

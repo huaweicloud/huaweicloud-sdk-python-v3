@@ -35,7 +35,7 @@ class Router:
         :type router_id: str
         :param router_region: 关联VPC所在的region。
         :type router_region: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
         :type status: str
         """
         
@@ -100,7 +100,7 @@ class Router:
     def status(self):
         r"""Gets the status of this Router.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :return: The status of this Router.
         :rtype: str
@@ -111,7 +111,7 @@ class Router:
     def status(self, status):
         r"""Sets the status of this Router.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :param status: The status of this Router.
         :type status: str

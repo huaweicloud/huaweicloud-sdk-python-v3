@@ -15,7 +15,7 @@ class CrossRegionType:
     sensitive_list = []
 
     openapi_types = {
-        'cross_region_type': 'str'
+        'cross_region_type': 'CrossRegionTypeEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class CrossRegionType:
 
         The model defined in huaweicloud sdk
 
-        :param cross_region_type: 跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
-        :type cross_region_type: str
+        :param cross_region_type: 
+        :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
         """
         
         
@@ -42,10 +42,8 @@ class CrossRegionType:
     def cross_region_type(self):
         r"""Gets the cross_region_type of this CrossRegionType.
 
-        跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
-
         :return: The cross_region_type of this CrossRegionType.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
         """
         return self._cross_region_type
 
@@ -53,10 +51,8 @@ class CrossRegionType:
     def cross_region_type(self, cross_region_type):
         r"""Sets the cross_region_type of this CrossRegionType.
 
-        跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
-
         :param cross_region_type: The cross_region_type of this CrossRegionType.
-        :type cross_region_type: str
+        :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
         """
         self._cross_region_type = cross_region_type
 

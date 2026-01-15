@@ -19,7 +19,7 @@ class AssetResourceRsp:
         'resource_id': 'str',
         'spec_code': 'str',
         'charge_mode': 'str',
-        'status': 'str',
+        'status': 'AssetResourceStatusEnum',
         'create_time': 'str'
     }
 
@@ -45,8 +45,8 @@ class AssetResourceRsp:
         :type spec_code: str
         :param charge_mode: **参数解释**： 计费类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type charge_mode: str
-        :param status: **参数解释**： 计费资产状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常 - Freeze：冻结 - Deleted：删除 **默认取值**： 不涉及 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkeihealth.v1.AssetResourceStatusEnum`
         :param create_time: **参数解释**： 购买时间，UTC时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type create_time: str
         """
@@ -166,10 +166,8 @@ class AssetResourceRsp:
     def status(self):
         r"""Gets the status of this AssetResourceRsp.
 
-        **参数解释**： 计费资产状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常 - Freeze：冻结 - Deleted：删除 **默认取值**： 不涉及 
-
         :return: The status of this AssetResourceRsp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.AssetResourceStatusEnum`
         """
         return self._status
 
@@ -177,10 +175,8 @@ class AssetResourceRsp:
     def status(self, status):
         r"""Sets the status of this AssetResourceRsp.
 
-        **参数解释**： 计费资产状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常 - Freeze：冻结 - Deleted：删除 **默认取值**： 不涉及 
-
         :param status: The status of this AssetResourceRsp.
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.AssetResourceStatusEnum`
         """
         self._status = status
 

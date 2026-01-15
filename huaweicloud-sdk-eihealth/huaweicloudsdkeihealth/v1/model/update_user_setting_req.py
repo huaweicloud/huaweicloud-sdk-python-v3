@@ -15,7 +15,7 @@ class UpdateUserSettingReq:
     sensitive_list = []
 
     openapi_types = {
-        'operation': 'str',
+        'operation': 'Operation',
         'settings': 'UserSettingDto'
     }
 
@@ -30,7 +30,7 @@ class UpdateUserSettingReq:
         The model defined in huaweicloud sdk
 
         :param operation: 
-        :type operation: str
+        :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
         :param settings: 
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
         """
@@ -49,7 +49,7 @@ class UpdateUserSettingReq:
         r"""Gets the operation of this UpdateUserSettingReq.
 
         :return: The operation of this UpdateUserSettingReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
         return self._operation
 
@@ -58,7 +58,7 @@ class UpdateUserSettingReq:
         r"""Sets the operation of this UpdateUserSettingReq.
 
         :param operation: The operation of this UpdateUserSettingReq.
-        :type operation: str
+        :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
         self._operation = operation
 

@@ -22,12 +22,12 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'endpoint_id': 'str',
-        'status': 'str',
+        'status': 'StatusEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'duration': 'int',
         'create_user': 'User',
-        'type': 'str',
+        'type': 'ServiceType',
         'update_user': 'User',
         'url': 'Url',
         'config': 'AppInstanceConfig',
@@ -72,8 +72,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
         :type description: str
         :param endpoint_id: endpoint空间id
         :type endpoint_id: str
-        :param status: 运行状态PENDING, CREATING, RUNNING, UPDATING, SUCCEEDED, FAILED, STOPPING, STOPPED, DELETING, DELETED
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
         :param create_time: 创建时间
         :type create_time: datetime
         :param update_time: 更新时间
@@ -82,8 +82,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
         :type duration: int
         :param create_user: 
         :type create_user: :class:`huaweicloudsdkdataartsfabricep.v1.User`
-        :param type: Service的类型，可选值： - PGSQL_SERVICE：DWS Pay-By-Query - LLM_MODEL：大语言模型
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
         :param update_user: 
         :type update_user: :class:`huaweicloudsdkdataartsfabricep.v1.User`
         :param url: 
@@ -284,10 +284,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowServiceInstanceDetailResponse.
 
-        运行状态PENDING, CREATING, RUNNING, UPDATING, SUCCEEDED, FAILED, STOPPING, STOPPED, DELETING, DELETED
-
         :return: The status of this ShowServiceInstanceDetailResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
         """
         return self._status
 
@@ -295,10 +293,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowServiceInstanceDetailResponse.
 
-        运行状态PENDING, CREATING, RUNNING, UPDATING, SUCCEEDED, FAILED, STOPPING, STOPPED, DELETING, DELETED
-
         :param status: The status of this ShowServiceInstanceDetailResponse.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
         """
         self._status = status
 
@@ -390,10 +386,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowServiceInstanceDetailResponse.
 
-        Service的类型，可选值： - PGSQL_SERVICE：DWS Pay-By-Query - LLM_MODEL：大语言模型
-
         :return: The type of this ShowServiceInstanceDetailResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
         """
         return self._type
 
@@ -401,10 +395,8 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowServiceInstanceDetailResponse.
 
-        Service的类型，可选值： - PGSQL_SERVICE：DWS Pay-By-Query - LLM_MODEL：大语言模型
-
         :param type: The type of this ShowServiceInstanceDetailResponse.
-        :type type: str
+        :type type: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
         """
         self._type = type
 

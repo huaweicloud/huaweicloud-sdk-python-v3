@@ -45,7 +45,7 @@ class UpdateConnectionReq:
 
         :param name: 连接名称。
         :type name: str
-        :param db_type: 数据库类型。
+        :param db_type: 数据库类型。 取值：mysql - postgresql - mongodb - oracle
         :type db_type: str
         :param config: 
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -121,7 +121,7 @@ class UpdateConnectionReq:
     def db_type(self):
         r"""Gets the db_type of this UpdateConnectionReq.
 
-        数据库类型。
+        数据库类型。 取值：mysql - postgresql - mongodb - oracle
 
         :return: The db_type of this UpdateConnectionReq.
         :rtype: str
@@ -132,7 +132,7 @@ class UpdateConnectionReq:
     def db_type(self, db_type):
         r"""Sets the db_type of this UpdateConnectionReq.
 
-        数据库类型。
+        数据库类型。 取值：mysql - postgresql - mongodb - oracle
 
         :param db_type: The db_type of this UpdateConnectionReq.
         :type db_type: str

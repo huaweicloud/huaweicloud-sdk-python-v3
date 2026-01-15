@@ -18,7 +18,7 @@ class DirectedEdge:
         'id': 'str',
         'region_id': 'str',
         'gateway_id': 'str',
-        'gateway_type': 'str',
+        'gateway_type': 'GatewayTypeEnum',
         'site_code': 'str',
         'project_id': 'str'
     }
@@ -43,8 +43,8 @@ class DirectedEdge:
         :type region_id: str
         :param gateway_id: 网关的ID。
         :type gateway_id: str
-        :param gateway_type: 网关的类型。GDGW：全球接入网关。
-        :type gateway_type: str
+        :param gateway_type: 
+        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         :param site_code: 站点编码。
         :type site_code: str
         :param project_id: 实例所属项目ID。
@@ -138,10 +138,8 @@ class DirectedEdge:
     def gateway_type(self):
         r"""Gets the gateway_type of this DirectedEdge.
 
-        网关的类型。GDGW：全球接入网关。
-
         :return: The gateway_type of this DirectedEdge.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         """
         return self._gateway_type
 
@@ -149,10 +147,8 @@ class DirectedEdge:
     def gateway_type(self, gateway_type):
         r"""Sets the gateway_type of this DirectedEdge.
 
-        网关的类型。GDGW：全球接入网关。
-
         :param gateway_type: The gateway_type of this DirectedEdge.
-        :type gateway_type: str
+        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
         """
         self._gateway_type = gateway_type
 

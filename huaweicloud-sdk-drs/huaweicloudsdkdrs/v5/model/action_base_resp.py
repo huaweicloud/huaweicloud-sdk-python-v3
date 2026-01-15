@@ -43,7 +43,7 @@ class ActionBaseResp:
         :type id: str
         :param name: 任务名称。
         :type name: str
-        :param status: 操作结果。
+        :param status: 操作结果。 success，failed
         :type status: str
         """
         
@@ -154,7 +154,7 @@ class ActionBaseResp:
     def status(self):
         r"""Gets the status of this ActionBaseResp.
 
-        操作结果。
+        操作结果。 success，failed
 
         :return: The status of this ActionBaseResp.
         :rtype: str
@@ -165,7 +165,7 @@ class ActionBaseResp:
     def status(self, status):
         r"""Sets the status of this ActionBaseResp.
 
-        操作结果。
+        操作结果。 success，failed
 
         :param status: The status of this ActionBaseResp.
         :type status: str

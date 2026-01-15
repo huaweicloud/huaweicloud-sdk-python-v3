@@ -21,7 +21,7 @@ class ListAlarmRespBodyAlarms:
         'namespace': 'str',
         'policies': 'list[PolicyResp]',
         'resources': 'list[ResourcesInListResp]',
-        'type': 'str',
+        'type': 'AlarmTypeResp',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[NotificationResp]',
@@ -75,8 +75,8 @@ class ListAlarmRespBodyAlarms:
         :type policies: list[:class:`huaweicloudsdkces.v2.PolicyResp`]
         :param resources: **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/en-us/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
-        :param type: **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
         :param enabled: **参数解释**： 是否开启告警规则。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type enabled: bool
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
@@ -301,10 +301,8 @@ class ListAlarmRespBodyAlarms:
     def type(self):
         r"""Gets the type of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
-
         :return: The type of this ListAlarmRespBodyAlarms.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
         """
         return self._type
 
@@ -312,10 +310,8 @@ class ListAlarmRespBodyAlarms:
     def type(self, type):
         r"""Sets the type of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
-
         :param type: The type of this ListAlarmRespBodyAlarms.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
         """
         self._type = type
 

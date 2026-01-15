@@ -181,6 +181,9 @@ from huaweicloudsdkdns.v2.model.list_endpoint_vpcs_request import ListEndpointVp
 from huaweicloudsdkdns.v2.model.list_endpoint_vpcs_response import ListEndpointVpcsResponse
 from huaweicloudsdkdns.v2.model.list_endpoints_request import ListEndpointsRequest
 from huaweicloudsdkdns.v2.model.list_endpoints_response import ListEndpointsResponse
+from huaweicloudsdkdns.v2.model.list_instances_request import ListInstancesRequest
+from huaweicloudsdkdns.v2.model.list_instances_request_body import ListInstancesRequestBody
+from huaweicloudsdkdns.v2.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkdns.v2.model.list_line_groups_request import ListLineGroupsRequest
 from huaweicloudsdkdns.v2.model.list_line_groups_response import ListLineGroupsResponse
 from huaweicloudsdkdns.v2.model.list_name_servers_request import ListNameServersRequest
@@ -233,6 +236,7 @@ from huaweicloudsdkdns.v2.model.query_record_set_with_line_and_tags_resp import 
 from huaweicloudsdkdns.v2.model.query_record_set_with_line_resp import QueryRecordSetWithLineResp
 from huaweicloudsdkdns.v2.model.record_info import RecordInfo
 from huaweicloudsdkdns.v2.model.recordset_data import RecordsetData
+from huaweicloudsdkdns.v2.model.resolution_instances import ResolutionInstances
 from huaweicloudsdkdns.v2.model.resolver_query_log_config import ResolverQueryLogConfig
 from huaweicloudsdkdns.v2.model.resolver_rule_param import ResolverRuleParam
 from huaweicloudsdkdns.v2.model.resource_item import ResourceItem
@@ -242,6 +246,7 @@ from huaweicloudsdkdns.v2.model.restore_ptr_req import RestorePtrReq
 from huaweicloudsdkdns.v2.model.router import Router
 from huaweicloudsdkdns.v2.model.router_for_rule import RouterForRule
 from huaweicloudsdkdns.v2.model.router_with_status import RouterWithStatus
+from huaweicloudsdkdns.v2.model.rset_resolution_instances import RsetResolutionInstances
 from huaweicloudsdkdns.v2.model.set_private_zone_proxy_pattern_request import SetPrivateZoneProxyPatternRequest
 from huaweicloudsdkdns.v2.model.set_private_zone_proxy_pattern_request_body import SetPrivateZoneProxyPatternRequestBody
 from huaweicloudsdkdns.v2.model.set_private_zone_proxy_pattern_response import SetPrivateZoneProxyPatternResponse
@@ -345,6 +350,8 @@ from huaweicloudsdkdns.v2.model.update_zone_status_request_body import UpdateZon
 from huaweicloudsdkdns.v2.model.values_item import ValuesItem
 from huaweicloudsdkdns.v2.model.version_item import VersionItem
 from huaweicloudsdkdns.v2.model.vpc import Vpc
+from huaweicloudsdkdns.v2.model.vpc_resolution_instances import VpcResolutionInstances
 from huaweicloudsdkdns.v2.model.vpcs_data import VpcsData
 from huaweicloudsdkdns.v2.model.zone_data import ZoneData
+from huaweicloudsdkdns.v2.model.zone_resolution_instances import ZoneResolutionInstances
 

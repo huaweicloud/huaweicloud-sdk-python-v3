@@ -18,7 +18,7 @@ class UpdateAnalysisScriptRequestBody:
         'script_name': 'str',
         'directory': 'str',
         'description': 'str',
-        'script_type': 'str',
+        'script_type': 'AnalysisScriptType',
         'retrieve_table_id': 'str',
         'script': 'str',
         'owner': 'list[AnalysisScriptParam]',
@@ -47,8 +47,8 @@ class UpdateAnalysisScriptRequestBody:
         :type directory: str
         :param description: 脚本的相关描述信息，长度在1到1024个字符之间。
         :type description: str
-        :param script_type: **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-        :type script_type: str
+        :param script_type: 
+        :type script_type: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         :param retrieve_table_id: UUID
         :type retrieve_table_id: str
         :param script: 脚本内容，长度在1到10240个字符之间。
@@ -154,10 +154,8 @@ class UpdateAnalysisScriptRequestBody:
     def script_type(self):
         r"""Gets the script_type of this UpdateAnalysisScriptRequestBody.
 
-        **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-
         :return: The script_type of this UpdateAnalysisScriptRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         """
         return self._script_type
 
@@ -165,10 +163,8 @@ class UpdateAnalysisScriptRequestBody:
     def script_type(self, script_type):
         r"""Sets the script_type of this UpdateAnalysisScriptRequestBody.
 
-        **参数解释**: 分析脚本类型 - SEC_MASTER_SQL 安全云脑SQL - RETRIEVE_SQL 检索SQL  **约束限制** 不涉及 **取值范围**: - SEC_MASTER_SQL - RETRIEVE_SQL  **默认值** 不涉及      
-
         :param script_type: The script_type of this UpdateAnalysisScriptRequestBody.
-        :type script_type: str
+        :type script_type: :class:`huaweicloudsdksecmaster.v2.AnalysisScriptType`
         """
         self._script_type = script_type
 

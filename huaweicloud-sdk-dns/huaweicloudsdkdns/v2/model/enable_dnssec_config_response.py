@@ -52,31 +52,31 @@ class EnableDnssecConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param zone_name: 域名。
+        :param zone_name: **参数解释：** 域名。 **取值范围：** 不涉及。
         :type zone_name: str
-        :param key_tag: 密钥标签。
+        :param key_tag: **参数解释：** 密钥标签。 **取值范围：** 不涉及。
         :type key_tag: int
-        :param flag: 旗标。
+        :param flag: **参数解释：** 旗标。 **取值范围：** 不涉及。
         :type flag: int
-        :param digest_algorithm: 摘要算法。
+        :param digest_algorithm: **参数解释：** 摘要算法。 **取值范围：** 不涉及。
         :type digest_algorithm: str
-        :param digest_type: 摘要算法类型。
+        :param digest_type: **参数解释：** 摘要算法类型。 **取值范围：** 不涉及。
         :type digest_type: int
-        :param digest: 摘要。
+        :param digest: **参数解释：** 摘要。 **取值范围：** 不涉及。
         :type digest: str
-        :param signature: 签名算法。
+        :param signature: **参数解释：** 签名算法。 **取值范围：** 不涉及。
         :type signature: str
-        :param signature_type: 签名算法类型。
+        :param signature_type: **参数解释：** 签名算法类型。 **取值范围：** 不涉及。
         :type signature_type: int
-        :param ksk_public_key: 公有密钥。
+        :param ksk_public_key: **参数解释：** 公有密钥。 **取值范围：** 不涉及。
         :type ksk_public_key: str
-        :param ds_record: DS记录。
+        :param ds_record: **参数解释：** DS记录。 **取值范围：** 不涉及。
         :type ds_record: str
-        :param created_at: 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param created_at: **参数解释：** 创建时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type created_at: str
-        :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
+        :param updated_at: **参数解释：** 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。 **取值范围：** 不涉及。
         :type updated_at: str
-        :param status: 状态。  取值范围：  ENABLE：启用 DISABLE：关闭
+        :param status: **参数解释：** 状态。 **取值范围：** - ENABLE：启用 - DISABLE：关闭
         :type status: str
         """
         
@@ -128,7 +128,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def zone_name(self):
         r"""Gets the zone_name of this EnableDnssecConfigResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :return: The zone_name of this EnableDnssecConfigResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def zone_name(self, zone_name):
         r"""Sets the zone_name of this EnableDnssecConfigResponse.
 
-        域名。
+        **参数解释：** 域名。 **取值范围：** 不涉及。
 
         :param zone_name: The zone_name of this EnableDnssecConfigResponse.
         :type zone_name: str
@@ -150,7 +150,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def key_tag(self):
         r"""Gets the key_tag of this EnableDnssecConfigResponse.
 
-        密钥标签。
+        **参数解释：** 密钥标签。 **取值范围：** 不涉及。
 
         :return: The key_tag of this EnableDnssecConfigResponse.
         :rtype: int
@@ -161,7 +161,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def key_tag(self, key_tag):
         r"""Sets the key_tag of this EnableDnssecConfigResponse.
 
-        密钥标签。
+        **参数解释：** 密钥标签。 **取值范围：** 不涉及。
 
         :param key_tag: The key_tag of this EnableDnssecConfigResponse.
         :type key_tag: int
@@ -172,7 +172,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def flag(self):
         r"""Gets the flag of this EnableDnssecConfigResponse.
 
-        旗标。
+        **参数解释：** 旗标。 **取值范围：** 不涉及。
 
         :return: The flag of this EnableDnssecConfigResponse.
         :rtype: int
@@ -183,7 +183,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def flag(self, flag):
         r"""Sets the flag of this EnableDnssecConfigResponse.
 
-        旗标。
+        **参数解释：** 旗标。 **取值范围：** 不涉及。
 
         :param flag: The flag of this EnableDnssecConfigResponse.
         :type flag: int
@@ -194,7 +194,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest_algorithm(self):
         r"""Gets the digest_algorithm of this EnableDnssecConfigResponse.
 
-        摘要算法。
+        **参数解释：** 摘要算法。 **取值范围：** 不涉及。
 
         :return: The digest_algorithm of this EnableDnssecConfigResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest_algorithm(self, digest_algorithm):
         r"""Sets the digest_algorithm of this EnableDnssecConfigResponse.
 
-        摘要算法。
+        **参数解释：** 摘要算法。 **取值范围：** 不涉及。
 
         :param digest_algorithm: The digest_algorithm of this EnableDnssecConfigResponse.
         :type digest_algorithm: str
@@ -216,7 +216,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest_type(self):
         r"""Gets the digest_type of this EnableDnssecConfigResponse.
 
-        摘要算法类型。
+        **参数解释：** 摘要算法类型。 **取值范围：** 不涉及。
 
         :return: The digest_type of this EnableDnssecConfigResponse.
         :rtype: int
@@ -227,7 +227,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest_type(self, digest_type):
         r"""Sets the digest_type of this EnableDnssecConfigResponse.
 
-        摘要算法类型。
+        **参数解释：** 摘要算法类型。 **取值范围：** 不涉及。
 
         :param digest_type: The digest_type of this EnableDnssecConfigResponse.
         :type digest_type: int
@@ -238,7 +238,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest(self):
         r"""Gets the digest of this EnableDnssecConfigResponse.
 
-        摘要。
+        **参数解释：** 摘要。 **取值范围：** 不涉及。
 
         :return: The digest of this EnableDnssecConfigResponse.
         :rtype: str
@@ -249,7 +249,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def digest(self, digest):
         r"""Sets the digest of this EnableDnssecConfigResponse.
 
-        摘要。
+        **参数解释：** 摘要。 **取值范围：** 不涉及。
 
         :param digest: The digest of this EnableDnssecConfigResponse.
         :type digest: str
@@ -260,7 +260,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def signature(self):
         r"""Gets the signature of this EnableDnssecConfigResponse.
 
-        签名算法。
+        **参数解释：** 签名算法。 **取值范围：** 不涉及。
 
         :return: The signature of this EnableDnssecConfigResponse.
         :rtype: str
@@ -271,7 +271,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def signature(self, signature):
         r"""Sets the signature of this EnableDnssecConfigResponse.
 
-        签名算法。
+        **参数解释：** 签名算法。 **取值范围：** 不涉及。
 
         :param signature: The signature of this EnableDnssecConfigResponse.
         :type signature: str
@@ -282,7 +282,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def signature_type(self):
         r"""Gets the signature_type of this EnableDnssecConfigResponse.
 
-        签名算法类型。
+        **参数解释：** 签名算法类型。 **取值范围：** 不涉及。
 
         :return: The signature_type of this EnableDnssecConfigResponse.
         :rtype: int
@@ -293,7 +293,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def signature_type(self, signature_type):
         r"""Sets the signature_type of this EnableDnssecConfigResponse.
 
-        签名算法类型。
+        **参数解释：** 签名算法类型。 **取值范围：** 不涉及。
 
         :param signature_type: The signature_type of this EnableDnssecConfigResponse.
         :type signature_type: int
@@ -304,7 +304,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def ksk_public_key(self):
         r"""Gets the ksk_public_key of this EnableDnssecConfigResponse.
 
-        公有密钥。
+        **参数解释：** 公有密钥。 **取值范围：** 不涉及。
 
         :return: The ksk_public_key of this EnableDnssecConfigResponse.
         :rtype: str
@@ -315,7 +315,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def ksk_public_key(self, ksk_public_key):
         r"""Sets the ksk_public_key of this EnableDnssecConfigResponse.
 
-        公有密钥。
+        **参数解释：** 公有密钥。 **取值范围：** 不涉及。
 
         :param ksk_public_key: The ksk_public_key of this EnableDnssecConfigResponse.
         :type ksk_public_key: str
@@ -326,7 +326,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def ds_record(self):
         r"""Gets the ds_record of this EnableDnssecConfigResponse.
 
-        DS记录。
+        **参数解释：** DS记录。 **取值范围：** 不涉及。
 
         :return: The ds_record of this EnableDnssecConfigResponse.
         :rtype: str
@@ -337,7 +337,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def ds_record(self, ds_record):
         r"""Sets the ds_record of this EnableDnssecConfigResponse.
 
-        DS记录。
+        **参数解释：** DS记录。 **取值范围：** 不涉及。
 
         :param ds_record: The ds_record of this EnableDnssecConfigResponse.
         :type ds_record: str
@@ -348,7 +348,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this EnableDnssecConfigResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The created_at of this EnableDnssecConfigResponse.
         :rtype: str
@@ -359,7 +359,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this EnableDnssecConfigResponse.
 
-        创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 创建时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this EnableDnssecConfigResponse.
         :type created_at: str
@@ -370,7 +370,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def updated_at(self):
         r"""Gets the updated_at of this EnableDnssecConfigResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :return: The updated_at of this EnableDnssecConfigResponse.
         :rtype: str
@@ -381,7 +381,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this EnableDnssecConfigResponse.
 
-        更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。
+        **参数解释：** 更新时间。 格式：yyyy-MM-dd'T'HH:mm:ss.SSS。 **取值范围：** 不涉及。
 
         :param updated_at: The updated_at of this EnableDnssecConfigResponse.
         :type updated_at: str
@@ -392,7 +392,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this EnableDnssecConfigResponse.
 
-        状态。  取值范围：  ENABLE：启用 DISABLE：关闭
+        **参数解释：** 状态。 **取值范围：** - ENABLE：启用 - DISABLE：关闭
 
         :return: The status of this EnableDnssecConfigResponse.
         :rtype: str
@@ -403,7 +403,7 @@ class EnableDnssecConfigResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this EnableDnssecConfigResponse.
 
-        状态。  取值范围：  ENABLE：启用 DISABLE：关闭
+        **参数解释：** 状态。 **取值范围：** - ENABLE：启用 - DISABLE：关闭
 
         :param status: The status of this EnableDnssecConfigResponse.
         :type status: str

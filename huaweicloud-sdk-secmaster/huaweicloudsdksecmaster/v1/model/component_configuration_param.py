@@ -19,7 +19,7 @@ class ComponentConfigurationParam:
         'configuration_id': 'str',
         'file_name': 'str',
         'file_path': 'str',
-        'file_type': 'str',
+        'file_type': 'FileType',
         'node_id': 'str',
         'param': 'str',
         'type': 'str',
@@ -51,8 +51,8 @@ class ComponentConfigurationParam:
         :type file_name: str
         :param file_path: 文件路径
         :type file_path: str
-        :param file_type: **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-        :type file_type: str
+        :param file_type: 
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         :param node_id: 节点ID
         :type node_id: str
         :param param: 参数
@@ -187,10 +187,8 @@ class ComponentConfigurationParam:
     def file_type(self):
         r"""Gets the file_type of this ComponentConfigurationParam.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :return: The file_type of this ComponentConfigurationParam.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         return self._file_type
 
@@ -198,10 +196,8 @@ class ComponentConfigurationParam:
     def file_type(self, file_type):
         r"""Sets the file_type of this ComponentConfigurationParam.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :param file_type: The file_type of this ComponentConfigurationParam.
-        :type file_type: str
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         self._file_type = file_type
 

@@ -17,7 +17,7 @@ class ThirdActionTemplateItem:
     openapi_types = {
         'name': 'str',
         'category': 'str',
-        'register_status': 'str',
+        'register_status': 'PublicTemplateRegisterType',
         'provider_name': 'str',
         'description': 'str',
         'create_time': 'str',
@@ -43,8 +43,8 @@ class ThirdActionTemplateItem:
         :type name: str
         :param category: 算子分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
         :type category: str
-        :param register_status: init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-        :type register_status: str
+        :param register_status: 
+        :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         :param provider_name: 算子提供方
         :type provider_name: str
         :param description: 算子描述
@@ -129,10 +129,8 @@ class ThirdActionTemplateItem:
     def register_status(self):
         r"""Gets the register_status of this ThirdActionTemplateItem.
 
-        init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-
         :return: The register_status of this ThirdActionTemplateItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         """
         return self._register_status
 
@@ -140,10 +138,8 @@ class ThirdActionTemplateItem:
     def register_status(self, register_status):
         r"""Sets the register_status of this ThirdActionTemplateItem.
 
-        init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-
         :param register_status: The register_status of this ThirdActionTemplateItem.
-        :type register_status: str
+        :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         """
         self._register_status = register_status
 

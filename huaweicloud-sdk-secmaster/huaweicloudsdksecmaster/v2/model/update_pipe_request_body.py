@@ -18,7 +18,7 @@ class UpdatePipeRequestBody:
         'pipe_alias': 'str',
         'description': 'str',
         'directory': 'str',
-        'category': 'str'
+        'category': 'PipeCategory'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class UpdatePipeRequestBody:
         :type description: str
         :param directory: directory 目录分组
         :type directory: str
-        :param category: **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-        :type category: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         
         
@@ -130,10 +130,8 @@ class UpdatePipeRequestBody:
     def category(self):
         r"""Gets the category of this UpdatePipeRequestBody.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :return: The category of this UpdatePipeRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         return self._category
 
@@ -141,10 +139,8 @@ class UpdatePipeRequestBody:
     def category(self, category):
         r"""Sets the category of this UpdatePipeRequestBody.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :param category: The category of this UpdatePipeRequestBody.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         self._category = category
 

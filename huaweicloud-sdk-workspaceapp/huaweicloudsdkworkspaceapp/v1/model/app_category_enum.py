@@ -4,7 +4,18 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AppCategoryEnum:
-
+    """
+    allowed enum values
+    """
+    GAME = "GAME"
+    BUSSINESS_INTELLIGENCE = "BUSSINESS_INTELLIGENCE"
+    SECURE_STORAGE = "SECURE_STORAGE"
+    MULTIMEDIA_AND_CODING = "MULTIMEDIA_AND_CODING"
+    PROJECT_MANAGEMENT = "PROJECT_MANAGEMENT"
+    PRODUCTIVITY_AND_COLLABORATION = "PRODUCTIVITY_AND_COLLABORATION"
+    WEB_ADN_APPLICATION = "WEB_ADN_APPLICATION"
+    GRAPHIC_DESIGN = "GRAPHIC_DESIGN"
+    OTHER = "OTHER"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

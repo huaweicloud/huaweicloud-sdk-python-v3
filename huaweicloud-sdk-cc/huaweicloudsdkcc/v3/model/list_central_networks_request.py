@@ -18,10 +18,10 @@ class ListCentralNetworksRequest:
         'limit': 'int',
         'marker': 'str',
         'sort_key': 'str',
-        'sort_dir': 'str',
+        'sort_dir': 'SortDir',
         'id': 'list[str]',
         'name': 'list[str]',
-        'state': 'list[str]',
+        'state': 'list[CentralNetworkStateEnum]',
         'enterprise_project_id': 'list[str]',
         'enterprise_router_id': 'list[str]',
         'attachment_instance_id': 'list[str]',
@@ -55,14 +55,14 @@ class ListCentralNetworksRequest:
         :type marker: str
         :param sort_key: 排序字段。
         :type sort_key: str
-        :param sort_dir: desc(降序), asc(升序).
-        :type sort_dir: str
+        :param sort_dir: 指定排序是升序还是降序（asc为升序，desc为降序）。
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
         :param name: 根据名称查询，可查询多个名称。
         :type name: list[str]
         :param state: 根据状态查询，可查询多个状态。
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`]
         :param enterprise_project_id: 根据企业项目ID过滤列表。
         :type enterprise_project_id: list[str]
         :param enterprise_router_id: 根据ER实例ID过滤列表。
@@ -186,10 +186,10 @@ class ListCentralNetworksRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListCentralNetworksRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :return: The sort_dir of this ListCentralNetworksRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         return self._sort_dir
 
@@ -197,10 +197,10 @@ class ListCentralNetworksRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListCentralNetworksRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :param sort_dir: The sort_dir of this ListCentralNetworksRequest.
-        :type sort_dir: str
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         self._sort_dir = sort_dir
 
@@ -255,7 +255,7 @@ class ListCentralNetworksRequest:
         根据状态查询，可查询多个状态。
 
         :return: The state of this ListCentralNetworksRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`]
         """
         return self._state
 
@@ -266,7 +266,7 @@ class ListCentralNetworksRequest:
         根据状态查询，可查询多个状态。
 
         :param state: The state of this ListCentralNetworksRequest.
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`]
         """
         self._state = state
 

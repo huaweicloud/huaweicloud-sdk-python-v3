@@ -15,8 +15,8 @@ class AreaBandwidthPackageSpecification:
     sensitive_list = []
 
     openapi_types = {
-        'local_area_id': 'str',
-        'remote_area_id': 'str',
+        'local_area_id': 'LocalAreaIdDef',
+        'remote_area_id': 'RemoteAreaIdDef',
         'id': 'str',
         'spec_codes': 'list[SpecificationCodeInfo]'
     }
@@ -33,10 +33,10 @@ class AreaBandwidthPackageSpecification:
 
         The model defined in huaweicloud sdk
 
-        :param local_area_id: 本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-        :type local_area_id: str
-        :param remote_area_id: 对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-        :type remote_area_id: str
+        :param local_area_id: 
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :param remote_area_id: 
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         :param id: 互通大区带宽包的规格ID。
         :type id: str
         :param spec_codes: 带宽包产品规格列表。
@@ -60,10 +60,8 @@ class AreaBandwidthPackageSpecification:
     def local_area_id(self):
         r"""Gets the local_area_id of this AreaBandwidthPackageSpecification.
 
-        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-
         :return: The local_area_id of this AreaBandwidthPackageSpecification.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         return self._local_area_id
 
@@ -71,10 +69,8 @@ class AreaBandwidthPackageSpecification:
     def local_area_id(self, local_area_id):
         r"""Sets the local_area_id of this AreaBandwidthPackageSpecification.
 
-        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-
         :param local_area_id: The local_area_id of this AreaBandwidthPackageSpecification.
-        :type local_area_id: str
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         self._local_area_id = local_area_id
 
@@ -82,10 +78,8 @@ class AreaBandwidthPackageSpecification:
     def remote_area_id(self):
         r"""Gets the remote_area_id of this AreaBandwidthPackageSpecification.
 
-        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-
         :return: The remote_area_id of this AreaBandwidthPackageSpecification.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         return self._remote_area_id
 
@@ -93,10 +87,8 @@ class AreaBandwidthPackageSpecification:
     def remote_area_id(self, remote_area_id):
         r"""Sets the remote_area_id of this AreaBandwidthPackageSpecification.
 
-        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
-
         :param remote_area_id: The remote_area_id of this AreaBandwidthPackageSpecification.
-        :type remote_area_id: str
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         self._remote_area_id = remote_area_id
 

@@ -31,7 +31,7 @@ class ListAdOusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain: 域。
+        :param domain: 域，默认查询主域。
         :type domain: str
         :param limit: 用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面。
         :type limit: int
@@ -57,7 +57,7 @@ class ListAdOusRequest:
     def domain(self):
         r"""Gets the domain of this ListAdOusRequest.
 
-        域。
+        域，默认查询主域。
 
         :return: The domain of this ListAdOusRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListAdOusRequest:
     def domain(self, domain):
         r"""Sets the domain of this ListAdOusRequest.
 
-        域。
+        域，默认查询主域。
 
         :param domain: The domain of this ListAdOusRequest.
         :type domain: str

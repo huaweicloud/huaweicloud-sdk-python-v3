@@ -511,9 +511,9 @@ class DbssClient(Client):
         return http_info
 
     def bind_db_encrypt_eip(self, request):
-        r"""绑定数据库加密实例的eip
+        r"""绑定数据库加密实例的EIP
 
-        绑定数据库加密实例的eip
+        绑定数据库加密实例的EIP
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -578,9 +578,9 @@ class DbssClient(Client):
         return http_info
 
     def bind_db_om_eip(self, request):
-        r"""绑定数据库运维实例的eip
+        r"""绑定数据库运维实例的EIP
 
-        绑定数据库运维实例的eip
+        绑定数据库运维实例的EIP
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1382,7 +1382,7 @@ class DbssClient(Client):
     def create_db_encrypt_instance_period(self, request):
         r"""按包周期方式购买数据库加密实例
 
-        按需方式购买数据库加密实例
+        按包周期方式购买数据库加密实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7449,9 +7449,9 @@ class DbssClient(Client):
         return http_info
 
     def unbind_db_encrypt_eip(self, request):
-        r"""解绑数据库加密实例的eip
+        r"""解绑数据库加密实例的EIP
 
-        解绑数据库加密实例的eip
+        解绑数据库加密实例的EIP
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7514,9 +7514,9 @@ class DbssClient(Client):
         return http_info
 
     def unbind_db_om_eip(self, request):
-        r"""解绑数据库运维实例的eip
+        r"""解绑数据库运维实例的EIP
 
-        解绑数据库运维实例的eip
+        解绑数据库运维实例的EIP
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9845,6 +9845,10 @@ class DbssClient(Client):
             query_params.append(('risk_levels', local_var_params['risk_levels']))
         if 'support_db_classify_rule' in local_var_params:
             query_params.append(('support_db_classify_rule', local_var_params['support_db_classify_rule']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

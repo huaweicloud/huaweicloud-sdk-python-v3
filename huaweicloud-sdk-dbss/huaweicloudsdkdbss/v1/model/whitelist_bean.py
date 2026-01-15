@@ -45,7 +45,7 @@ class WhitelistBean:
         :type db_ids: list[str]
         :param desc: 描述
         :type desc: str
-        :param enabled: 状态 - true:启用 - false: 禁用
+        :param enabled: 状态 - true：启用 - false：禁用
         :type enabled: bool
         :param id: 记录ID
         :type id: str
@@ -151,7 +151,7 @@ class WhitelistBean:
     def enabled(self):
         r"""Gets the enabled of this WhitelistBean.
 
-        状态 - true:启用 - false: 禁用
+        状态 - true：启用 - false：禁用
 
         :return: The enabled of this WhitelistBean.
         :rtype: bool
@@ -162,7 +162,7 @@ class WhitelistBean:
     def enabled(self, enabled):
         r"""Sets the enabled of this WhitelistBean.
 
-        状态 - true:启用 - false: 禁用
+        状态 - true：启用 - false：禁用
 
         :param enabled: The enabled of this WhitelistBean.
         :type enabled: bool

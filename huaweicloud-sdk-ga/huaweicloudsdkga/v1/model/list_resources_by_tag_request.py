@@ -15,7 +15,7 @@ class ListResourcesByTagRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'str',
+        'resource_type': 'ResourceType',
         'limit': 'int',
         'offset': 'int',
         'body': 'ListResourcesByTagRequestBody'
@@ -34,7 +34,7 @@ class ListResourcesByTagRequest:
         The model defined in huaweicloud sdk
 
         :param resource_type: 资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
         :param limit: 每页返回的个数。
         :type limit: int
         :param offset: 偏移量。
@@ -66,7 +66,7 @@ class ListResourcesByTagRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :return: The resource_type of this ListResourcesByTagRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ResourceType`
         """
         return self._resource_type
 
@@ -77,7 +77,7 @@ class ListResourcesByTagRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :param resource_type: The resource_type of this ListResourcesByTagRequest.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
         """
         self._resource_type = resource_type
 

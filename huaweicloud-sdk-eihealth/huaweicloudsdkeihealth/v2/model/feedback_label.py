@@ -4,7 +4,30 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class FeedbackLabel:
-
+    """
+    allowed enum values
+    """
+    OTHERS = "others"
+    PROFESSIONAL = "professional"
+    HELPFUL = "helpful"
+    UNPROFESSIONAL = "unprofessional"
+    UNHELPFUL = "unhelpful"
+    UNSAFE = "unsafe"
+    MISINFORMATION = "misinformation"
+    DOWNLOAD_SUCCESSFUL = "download_successful"
+    PROMISING = "promising"
+    SYNTHESIZABLE = "synthesizable"
+    VALIDATED = "validated"
+    DOWNLOAD_FAILED = "download_failed"
+    UNPROMISING = "unpromising"
+    HARD_TO_SYNTHESIZE = "hard_to_synthesize"
+    NOT_VALIDATED = "not_validated"
+    PLAN_VALIDATED = "plan_validated"
+    ACCURATE_RESULTS = "accurate_results"
+    HIGH_PERFORMANCE = "high_performance"
+    PLAN_FLAWED = "plan_flawed"
+    INACCURATE_RESULTS = "inaccurate_results"
+    LOW_PERFORMANCE = "low_performance"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

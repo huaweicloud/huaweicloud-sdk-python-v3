@@ -16,42 +16,60 @@ class ListAiOpsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_size': 'int',
-        'aiops_list': 'list[ListAiOpsRequestBodyAiopsList]'
+        'aiops_list': 'list[AiOps]',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'total_size': 'total_size',
-        'aiops_list': 'aiops_list'
+        'aiops_list': 'aiops_list',
+        'total_size': 'total_size'
     }
 
-    def __init__(self, total_size=None, aiops_list=None):
+    def __init__(self, aiops_list=None, total_size=None):
         r"""ListAiOpsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_size: 检测任务个数。
+        :param aiops_list: 
+        :type aiops_list: list[:class:`huaweicloudsdkcss.v1.AiOps`]
+        :param total_size: 参数解释： 集群风险检测任务总数。 取值范围： 不涉及
         :type total_size: int
-        :param aiops_list: 创建一个集群检测任务。
-        :type aiops_list: list[:class:`huaweicloudsdkcss.v1.ListAiOpsRequestBodyAiopsList`]
         """
         
         super().__init__()
 
-        self._total_size = None
         self._aiops_list = None
+        self._total_size = None
         self.discriminator = None
 
-        if total_size is not None:
-            self.total_size = total_size
         if aiops_list is not None:
             self.aiops_list = aiops_list
+        if total_size is not None:
+            self.total_size = total_size
+
+    @property
+    def aiops_list(self):
+        r"""Gets the aiops_list of this ListAiOpsResponse.
+
+        :return: The aiops_list of this ListAiOpsResponse.
+        :rtype: list[:class:`huaweicloudsdkcss.v1.AiOps`]
+        """
+        return self._aiops_list
+
+    @aiops_list.setter
+    def aiops_list(self, aiops_list):
+        r"""Sets the aiops_list of this ListAiOpsResponse.
+
+        :param aiops_list: The aiops_list of this ListAiOpsResponse.
+        :type aiops_list: list[:class:`huaweicloudsdkcss.v1.AiOps`]
+        """
+        self._aiops_list = aiops_list
 
     @property
     def total_size(self):
         r"""Gets the total_size of this ListAiOpsResponse.
 
-        检测任务个数。
+        参数解释： 集群风险检测任务总数。 取值范围： 不涉及
 
         :return: The total_size of this ListAiOpsResponse.
         :rtype: int
@@ -62,34 +80,12 @@ class ListAiOpsResponse(SdkResponse):
     def total_size(self, total_size):
         r"""Sets the total_size of this ListAiOpsResponse.
 
-        检测任务个数。
+        参数解释： 集群风险检测任务总数。 取值范围： 不涉及
 
         :param total_size: The total_size of this ListAiOpsResponse.
         :type total_size: int
         """
         self._total_size = total_size
-
-    @property
-    def aiops_list(self):
-        r"""Gets the aiops_list of this ListAiOpsResponse.
-
-        创建一个集群检测任务。
-
-        :return: The aiops_list of this ListAiOpsResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.ListAiOpsRequestBodyAiopsList`]
-        """
-        return self._aiops_list
-
-    @aiops_list.setter
-    def aiops_list(self, aiops_list):
-        r"""Sets the aiops_list of this ListAiOpsResponse.
-
-        创建一个集群检测任务。
-
-        :param aiops_list: The aiops_list of this ListAiOpsResponse.
-        :type aiops_list: list[:class:`huaweicloudsdkcss.v1.ListAiOpsRequestBodyAiopsList`]
-        """
-        self._aiops_list = aiops_list
 
     def to_dict(self):
         import warnings

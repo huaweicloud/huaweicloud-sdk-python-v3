@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CbcFreezeScene:
-
+    """
+    allowed enum values
+    """
+    ARREAR = "ARREAR"
+    POLICE = "POLICE"
+    ILLEGAL = "ILLEGAL"
+    VERIFY = "VERIFY"
+    PARTNER = "PARTNER"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

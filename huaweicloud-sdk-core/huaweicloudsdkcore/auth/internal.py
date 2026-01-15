@@ -61,7 +61,7 @@ class MetadataAccessor:
         resp = self._get_token()
         if resp.status_code == 200:
             self._token = resp.text
-        elif resp.status_code in (404, 405):
+        elif resp.status_code in (404, 405, 503):
             if raise_on_failure:
                 sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
                 raise exceptions.ClientRequestException(resp.status_code, sdk_error)

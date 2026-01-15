@@ -83,7 +83,7 @@ class QueryMetricResult:
         :type apply_average_execute_time: str
         :param apply_average_commit_time: 事务平均提交时间。
         :type apply_average_commit_time: str
-        :param apply_current_state: 同步状态。
+        :param apply_current_state: 同步状态。 succeed：同步成功，failed：同步失败，processing：同步中，waiting：等待中
         :type apply_current_state: str
         """
         
@@ -449,7 +449,7 @@ class QueryMetricResult:
     def apply_current_state(self):
         r"""Gets the apply_current_state of this QueryMetricResult.
 
-        同步状态。
+        同步状态。 succeed：同步成功，failed：同步失败，processing：同步中，waiting：等待中
 
         :return: The apply_current_state of this QueryMetricResult.
         :rtype: str
@@ -460,7 +460,7 @@ class QueryMetricResult:
     def apply_current_state(self, apply_current_state):
         r"""Sets the apply_current_state of this QueryMetricResult.
 
-        同步状态。
+        同步状态。 succeed：同步成功，failed：同步失败，processing：同步中，waiting：等待中
 
         :param apply_current_state: The apply_current_state of this QueryMetricResult.
         :type apply_current_state: str

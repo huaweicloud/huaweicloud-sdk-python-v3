@@ -17,7 +17,7 @@ class CreateModelInput:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'type': 'str',
+        'type': 'ModelType',
         'version': 'ModelVersionInput'
     }
 
@@ -37,8 +37,8 @@ class CreateModelInput:
         :type name: str
         :param description: 描述信息
         :type description: str
-        :param type: 模型的类型，可选值： - LLM_MODEL：大语言模型
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         :param version: 
         :type version: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInput`
         """
@@ -105,10 +105,8 @@ class CreateModelInput:
     def type(self):
         r"""Gets the type of this CreateModelInput.
 
-        模型的类型，可选值： - LLM_MODEL：大语言模型
-
         :return: The type of this CreateModelInput.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         """
         return self._type
 
@@ -116,10 +114,8 @@ class CreateModelInput:
     def type(self, type):
         r"""Sets the type of this CreateModelInput.
 
-        模型的类型，可选值： - LLM_MODEL：大语言模型
-
         :param type: The type of this CreateModelInput.
-        :type type: str
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         """
         self._type = type
 

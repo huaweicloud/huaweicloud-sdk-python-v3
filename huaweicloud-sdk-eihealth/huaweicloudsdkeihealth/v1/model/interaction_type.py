@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InteractionType:
-
+    """
+    allowed enum values
+    """
+    HYDROGEN_BOND = "hydrogen_bond"
+    HYDROPHOBIC_ACTION = "hydrophobic_action"
+    SALT_BRIDGE = "salt_bridge"
+    PI_STACKING = "pi_stacking"
+    PI_CATION = "pi_cation"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -22,6 +22,8 @@ class RebuildDesktopPoolReq:
         'message': 'str',
         'is_fix': 'bool',
         'handle_type': 'str',
+        'encrypt_type': 'EncryptType',
+        'kms_id': 'str',
         'desktop_ids': 'list[str]'
     }
 
@@ -33,10 +35,12 @@ class RebuildDesktopPoolReq:
         'message': 'message',
         'is_fix': 'is_fix',
         'handle_type': 'handle_type',
+        'encrypt_type': 'encrypt_type',
+        'kms_id': 'kms_id',
         'desktop_ids': 'desktop_ids'
     }
 
-    def __init__(self, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, is_fix=None, handle_type=None, desktop_ids=None):
+    def __init__(self, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, is_fix=None, handle_type=None, encrypt_type=None, kms_id=None, desktop_ids=None):
         r"""RebuildDesktopPoolReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class RebuildDesktopPoolReq:
         :type is_fix: bool
         :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
         :type handle_type: str
+        :param encrypt_type: 
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        :param kms_id: 密钥ID，encrypt_type为ENCRYPTED时必传。
+        :type kms_id: str
         :param desktop_ids: 桌面id
         :type desktop_ids: list[str]
         """
@@ -68,6 +76,8 @@ class RebuildDesktopPoolReq:
         self._message = None
         self._is_fix = None
         self._handle_type = None
+        self._encrypt_type = None
+        self._kms_id = None
         self._desktop_ids = None
         self.discriminator = None
 
@@ -84,6 +94,10 @@ class RebuildDesktopPoolReq:
             self.is_fix = is_fix
         if handle_type is not None:
             self.handle_type = handle_type
+        if encrypt_type is not None:
+            self.encrypt_type = encrypt_type
+        if kms_id is not None:
+            self.kms_id = kms_id
         if desktop_ids is not None:
             self.desktop_ids = desktop_ids
 
@@ -240,6 +254,46 @@ class RebuildDesktopPoolReq:
         :type handle_type: str
         """
         self._handle_type = handle_type
+
+    @property
+    def encrypt_type(self):
+        r"""Gets the encrypt_type of this RebuildDesktopPoolReq.
+
+        :return: The encrypt_type of this RebuildDesktopPoolReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        return self._encrypt_type
+
+    @encrypt_type.setter
+    def encrypt_type(self, encrypt_type):
+        r"""Sets the encrypt_type of this RebuildDesktopPoolReq.
+
+        :param encrypt_type: The encrypt_type of this RebuildDesktopPoolReq.
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        self._encrypt_type = encrypt_type
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this RebuildDesktopPoolReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :return: The kms_id of this RebuildDesktopPoolReq.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this RebuildDesktopPoolReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :param kms_id: The kms_id of this RebuildDesktopPoolReq.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     @property
     def desktop_ids(self):

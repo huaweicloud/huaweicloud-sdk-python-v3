@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class WeakConstraintType:
-
+    """
+    allowed enum values
+    """
+    BOOL = "bool"
+    RANGE = "range"
+    STRUCT = "struct"
+    MINIMIZE = "minimize"
+    MAXIMIZE = "maximize"
+    INTERACTION = "interaction"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

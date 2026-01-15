@@ -53,7 +53,7 @@ class AuditAgentRespoonseAgents:
 
         :param agent_id: agent ID
         :type agent_id: str
-        :param agent_type: agent 类型 - DB: 数据库端 - APP: 应用端
+        :param agent_type: agent 类型 - DB：数据库端 - APP：应用端
         :type agent_type: str
         :param agent_os: agent OS
         :type agent_os: str
@@ -145,7 +145,7 @@ class AuditAgentRespoonseAgents:
     def agent_type(self):
         r"""Gets the agent_type of this AuditAgentRespoonseAgents.
 
-        agent 类型 - DB: 数据库端 - APP: 应用端
+        agent 类型 - DB：数据库端 - APP：应用端
 
         :return: The agent_type of this AuditAgentRespoonseAgents.
         :rtype: str
@@ -156,7 +156,7 @@ class AuditAgentRespoonseAgents:
     def agent_type(self, agent_type):
         r"""Sets the agent_type of this AuditAgentRespoonseAgents.
 
-        agent 类型 - DB: 数据库端 - APP: 应用端
+        agent 类型 - DB：数据库端 - APP：应用端
 
         :param agent_type: The agent_type of this AuditAgentRespoonseAgents.
         :type agent_type: str

@@ -17,7 +17,7 @@ class ResourceGroup:
     openapi_types = {
         'namespace': 'str',
         'dimensions': 'list[MetricsDimension]',
-        'status': 'str',
+        'status': 'StatusSchema',
         'event_type': 'int'
     }
 
@@ -37,8 +37,8 @@ class ResourceGroup:
         :type namespace: str
         :param dimensions: **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
-        :param status: **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 **默认取值** 不涉及 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         :param event_type: **参数解释** 事件类型。已废弃。 **取值范围**： 不涉及。
         :type event_type: int
         """
@@ -108,10 +108,8 @@ class ResourceGroup:
     def status(self):
         r"""Gets the status of this ResourceGroup.
 
-        **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 **默认取值** 不涉及 
-
         :return: The status of this ResourceGroup.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         return self._status
 
@@ -119,10 +117,8 @@ class ResourceGroup:
     def status(self, status):
         r"""Sets the status of this ResourceGroup.
 
-        **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示无告警 - unhealth: 表示告警中 - no_alarm_rule: 表示未设置告警规则 **默认取值** 不涉及 
-
         :param status: The status of this ResourceGroup.
-        :type status: str
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         self._status = status
 

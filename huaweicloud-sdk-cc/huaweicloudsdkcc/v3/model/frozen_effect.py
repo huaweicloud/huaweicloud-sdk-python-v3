@@ -15,7 +15,7 @@ class FrozenEffect:
     sensitive_list = []
 
     openapi_types = {
-        'frozen_effect': 'str'
+        'frozen_effect': 'FrozenEffectEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class FrozenEffect:
 
         The model defined in huaweicloud sdk
 
-        :param frozen_effect: 冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
-        :type frozen_effect: str
+        :param frozen_effect: 
+        :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
         """
         
         
@@ -43,10 +43,8 @@ class FrozenEffect:
     def frozen_effect(self):
         r"""Gets the frozen_effect of this FrozenEffect.
 
-        冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
-
         :return: The frozen_effect of this FrozenEffect.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
         """
         return self._frozen_effect
 
@@ -54,10 +52,8 @@ class FrozenEffect:
     def frozen_effect(self, frozen_effect):
         r"""Sets the frozen_effect of this FrozenEffect.
 
-        冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
-
         :param frozen_effect: The frozen_effect of this FrozenEffect.
-        :type frozen_effect: str
+        :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
         """
         self._frozen_effect = frozen_effect
 

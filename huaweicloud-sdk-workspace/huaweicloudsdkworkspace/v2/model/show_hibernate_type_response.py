@@ -17,7 +17,7 @@ class ShowHibernateTypeResponse(SdkResponse):
 
     openapi_types = {
         'tenant_id': 'str',
-        'hibernate_type': 'str',
+        'hibernate_type': 'HibernateType',
         'shutdown_days': 'int'
     }
 
@@ -34,8 +34,8 @@ class ShowHibernateTypeResponse(SdkResponse):
 
         :param tenant_id: 租户id
         :type tenant_id: str
-        :param hibernate_type: ECS休眠类型 - SUSPEND: 带外冷休眠 - PAUSE: 带外热休眠
-        :type hibernate_type: str
+        :param hibernate_type: 
+        :type hibernate_type: :class:`huaweicloudsdkworkspace.v2.HibernateType`
         :param shutdown_days: 休眠关机时长（天）
         :type shutdown_days: int
         """
@@ -80,10 +80,8 @@ class ShowHibernateTypeResponse(SdkResponse):
     def hibernate_type(self):
         r"""Gets the hibernate_type of this ShowHibernateTypeResponse.
 
-        ECS休眠类型 - SUSPEND: 带外冷休眠 - PAUSE: 带外热休眠
-
         :return: The hibernate_type of this ShowHibernateTypeResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.HibernateType`
         """
         return self._hibernate_type
 
@@ -91,10 +89,8 @@ class ShowHibernateTypeResponse(SdkResponse):
     def hibernate_type(self, hibernate_type):
         r"""Sets the hibernate_type of this ShowHibernateTypeResponse.
 
-        ECS休眠类型 - SUSPEND: 带外冷休眠 - PAUSE: 带外热休眠
-
         :param hibernate_type: The hibernate_type of this ShowHibernateTypeResponse.
-        :type hibernate_type: str
+        :type hibernate_type: :class:`huaweicloudsdkworkspace.v2.HibernateType`
         """
         self._hibernate_type = hibernate_type
 

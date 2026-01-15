@@ -20,15 +20,15 @@ class Application:
         'name': 'str',
         'version': 'str',
         'description': 'str',
-        'authorization_type': 'str',
+        'authorization_type': 'AssignType',
         'app_file_store': 'FileStoreLink',
         'app_icon_url': 'str',
-        'install_type': 'str',
+        'install_type': 'InstallType',
         'install_command': 'str',
         'uninstall_command': 'str',
-        'support_os': 'str',
-        'status': 'str',
-        'application_source': 'str',
+        'support_os': 'OsTypeEnum',
+        'status': 'AppStatusEnum',
+        'application_source': 'AppSourceType',
         'create_time': 'datetime',
         'catalog_id': 'str',
         'catalog': 'str',
@@ -71,24 +71,24 @@ class Application:
         :type version: str
         :param description: 描述。
         :type description: str
-        :param authorization_type: * &#x60;ALL_USER&#x60; - 全部用户 * &#x60;ASSIGN_USER&#x60; - 授权指定用户
-        :type authorization_type: str
+        :param authorization_type: 
+        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
         :param app_file_store: 
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
         :param app_icon_url: 应用图标路径。
         :type app_icon_url: str
-        :param install_type: 安装方式：   * &#x60;QUIET_INSTALL&#x60; - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * &#x60;UNZIP_INSTALL&#x60; - 解压安装。     例: unzip ${FILE_PATH}。   * &#x60;GUI_INSTALL&#x60; - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
-        :type install_type: str
+        :param install_type: 
+        :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
         :param install_command: 安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
         :type install_command: str
         :param uninstall_command: 卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
         :type uninstall_command: str
-        :param support_os: 系统类型： * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
-        :type support_os: str
-        :param status: 应用状态(正常、禁用) * &#39;NORMAL&#39; - 正常 * &#39;FORBIDDEN&#39; - 禁用状态
-        :type status: str
-        :param application_source: 应用来源： * &#x60;CUSTOM&#x60; - 用户上传 * &#x60;SYSTEM&#x60; - 内置应用 * &#x60;MARKET&#x60; - 市场应用
-        :type application_source: str
+        :param support_os: 
+        :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
+        :param status: 
+        :type status: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
+        :param application_source: 
+        :type application_source: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
         :param create_time: 应用创建时间。
         :type create_time: datetime
         :param catalog_id: 分类ID。
@@ -272,10 +272,8 @@ class Application:
     def authorization_type(self):
         r"""Gets the authorization_type of this Application.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :return: The authorization_type of this Application.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         return self._authorization_type
 
@@ -283,10 +281,8 @@ class Application:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this Application.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :param authorization_type: The authorization_type of this Application.
-        :type authorization_type: str
+        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         self._authorization_type = authorization_type
 
@@ -334,10 +330,8 @@ class Application:
     def install_type(self):
         r"""Gets the install_type of this Application.
 
-        安装方式：   * `QUIET_INSTALL` - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * `UNZIP_INSTALL` - 解压安装。     例: unzip ${FILE_PATH}。   * `GUI_INSTALL` - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
-
         :return: The install_type of this Application.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
         """
         return self._install_type
 
@@ -345,10 +339,8 @@ class Application:
     def install_type(self, install_type):
         r"""Sets the install_type of this Application.
 
-        安装方式：   * `QUIET_INSTALL` - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * `UNZIP_INSTALL` - 解压安装。     例: unzip ${FILE_PATH}。   * `GUI_INSTALL` - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
-
         :param install_type: The install_type of this Application.
-        :type install_type: str
+        :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
         """
         self._install_type = install_type
 
@@ -400,10 +392,8 @@ class Application:
     def support_os(self):
         r"""Gets the support_os of this Application.
 
-        系统类型： * `Linux` - * `Windows` - * `Other` -
-
         :return: The support_os of this Application.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
         """
         return self._support_os
 
@@ -411,10 +401,8 @@ class Application:
     def support_os(self, support_os):
         r"""Sets the support_os of this Application.
 
-        系统类型： * `Linux` - * `Windows` - * `Other` -
-
         :param support_os: The support_os of this Application.
-        :type support_os: str
+        :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
         """
         self._support_os = support_os
 
@@ -422,10 +410,8 @@ class Application:
     def status(self):
         r"""Gets the status of this Application.
 
-        应用状态(正常、禁用) * 'NORMAL' - 正常 * 'FORBIDDEN' - 禁用状态
-
         :return: The status of this Application.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
         """
         return self._status
 
@@ -433,10 +419,8 @@ class Application:
     def status(self, status):
         r"""Sets the status of this Application.
 
-        应用状态(正常、禁用) * 'NORMAL' - 正常 * 'FORBIDDEN' - 禁用状态
-
         :param status: The status of this Application.
-        :type status: str
+        :type status: :class:`huaweicloudsdkworkspace.v2.AppStatusEnum`
         """
         self._status = status
 
@@ -444,10 +428,8 @@ class Application:
     def application_source(self):
         r"""Gets the application_source of this Application.
 
-        应用来源： * `CUSTOM` - 用户上传 * `SYSTEM` - 内置应用 * `MARKET` - 市场应用
-
         :return: The application_source of this Application.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
         """
         return self._application_source
 
@@ -455,10 +437,8 @@ class Application:
     def application_source(self, application_source):
         r"""Sets the application_source of this Application.
 
-        应用来源： * `CUSTOM` - 用户上传 * `SYSTEM` - 内置应用 * `MARKET` - 市场应用
-
         :param application_source: The application_source of this Application.
-        :type application_source: str
+        :type application_source: :class:`huaweicloudsdkworkspace.v2.AppSourceType`
         """
         self._application_source = application_source
 

@@ -45,7 +45,7 @@ class EcsSpecificationBean:
         :type azs: list[str]
         :param id: 规格ID
         :type id: str
-        :param level: 规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
+        :param level: 规格等级，支持的等级以局点配置为准。 - entry：入门版 - low：基础版 - medium：专业版 - high：高级版
         :type level: str
         :param name: 规格名称
         :type name: str
@@ -55,7 +55,7 @@ class EcsSpecificationBean:
         :type ram: int
         :param vcpus: CPU
         :type vcpus: int
-        :param az_type: 可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
+        :param az_type: 可用区类型 - DEDICATED：大网 - DEC：边缘小站 - EDGE：专属
         :type az_type: str
         """
         
@@ -129,7 +129,7 @@ class EcsSpecificationBean:
     def level(self):
         r"""Gets the level of this EcsSpecificationBean.
 
-        规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
+        规格等级，支持的等级以局点配置为准。 - entry：入门版 - low：基础版 - medium：专业版 - high：高级版
 
         :return: The level of this EcsSpecificationBean.
         :rtype: str
@@ -140,7 +140,7 @@ class EcsSpecificationBean:
     def level(self, level):
         r"""Sets the level of this EcsSpecificationBean.
 
-        规格等级，支持的等级以局点配置为准。 - entry:入门版 - low:基础版 - medium:专业版 - high:高级版
+        规格等级，支持的等级以局点配置为准。 - entry：入门版 - low：基础版 - medium：专业版 - high：高级版
 
         :param level: The level of this EcsSpecificationBean.
         :type level: str
@@ -239,7 +239,7 @@ class EcsSpecificationBean:
     def az_type(self):
         r"""Gets the az_type of this EcsSpecificationBean.
 
-        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
+        可用区类型 - DEDICATED：大网 - DEC：边缘小站 - EDGE：专属
 
         :return: The az_type of this EcsSpecificationBean.
         :rtype: str
@@ -250,7 +250,7 @@ class EcsSpecificationBean:
     def az_type(self, az_type):
         r"""Sets the az_type of this EcsSpecificationBean.
 
-        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
+        可用区类型 - DEDICATED：大网 - DEC：边缘小站 - EDGE：专属
 
         :param az_type: The az_type of this EcsSpecificationBean.
         :type az_type: str

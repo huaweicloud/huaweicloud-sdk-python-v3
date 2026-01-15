@@ -18,7 +18,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     openapi_types = {
         'alert_rule_id': 'str',
         'delete_time': 'int',
-        'process_status': 'str'
+        'process_status': 'JobProcessStatus'
     }
 
     attribute_map = {
@@ -36,8 +36,8 @@ class DeleteAlertRuleResponse(SdkResponse):
         :type alert_rule_id: str
         :param delete_time: 毫秒时间戳
         :type delete_time: int
-        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-        :type process_status: str
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         
         super().__init__()
@@ -102,10 +102,8 @@ class DeleteAlertRuleResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this DeleteAlertRuleResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :return: The process_status of this DeleteAlertRuleResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         return self._process_status
 
@@ -113,10 +111,8 @@ class DeleteAlertRuleResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this DeleteAlertRuleResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :param process_status: The process_status of this DeleteAlertRuleResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         self._process_status = process_status
 

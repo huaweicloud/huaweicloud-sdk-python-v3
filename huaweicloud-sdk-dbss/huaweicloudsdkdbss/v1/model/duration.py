@@ -35,7 +35,7 @@ class Duration:
         :type end_time: str
         :param start_time: 开始时间
         :type start_time: str
-        :param time_range: 时间范围 - HALF_HOUR: 半小时 - HOUR: 1小时 - THREE_HOUR: 3小时 - TWELVE_HOUR: 12小时 - DAY: 1天 - WEEK: 1周 - MONTH: 1个月
+        :param time_range: 时间范围 - HALF_HOUR：半小时 - HOUR：1小时 - THREE_HOUR：3小时 - TWELVE_HOUR：12小时 - DAY：1天 - WEEK：1周 - MONTH：1个月
         :type time_range: str
         """
         
@@ -101,7 +101,7 @@ class Duration:
     def time_range(self):
         r"""Gets the time_range of this Duration.
 
-        时间范围 - HALF_HOUR: 半小时 - HOUR: 1小时 - THREE_HOUR: 3小时 - TWELVE_HOUR: 12小时 - DAY: 1天 - WEEK: 1周 - MONTH: 1个月
+        时间范围 - HALF_HOUR：半小时 - HOUR：1小时 - THREE_HOUR：3小时 - TWELVE_HOUR：12小时 - DAY：1天 - WEEK：1周 - MONTH：1个月
 
         :return: The time_range of this Duration.
         :rtype: str
@@ -112,7 +112,7 @@ class Duration:
     def time_range(self, time_range):
         r"""Sets the time_range of this Duration.
 
-        时间范围 - HALF_HOUR: 半小时 - HOUR: 1小时 - THREE_HOUR: 3小时 - TWELVE_HOUR: 12小时 - DAY: 1天 - WEEK: 1周 - MONTH: 1个月
+        时间范围 - HALF_HOUR：半小时 - HOUR：1小时 - THREE_HOUR：3小时 - TWELVE_HOUR：12小时 - DAY：1天 - WEEK：1周 - MONTH：1个月
 
         :param time_range: The time_range of this Duration.
         :type time_range: str

@@ -35,7 +35,7 @@ class TimelineInfo:
 
         :param name: 时间轴名称。
         :type name: str
-        :param status: 状态。
+        :param status: 状态。 取值：success, failed
         :type status: str
         :param operation_time: 操作时间。
         :type operation_time: str
@@ -86,7 +86,7 @@ class TimelineInfo:
     def status(self):
         r"""Gets the status of this TimelineInfo.
 
-        状态。
+        状态。 取值：success, failed
 
         :return: The status of this TimelineInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class TimelineInfo:
     def status(self, status):
         r"""Sets the status of this TimelineInfo.
 
-        状态。
+        状态。 取值：success, failed
 
         :param status: The status of this TimelineInfo.
         :type status: str

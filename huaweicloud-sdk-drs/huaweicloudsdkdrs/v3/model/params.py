@@ -47,11 +47,11 @@ class Params:
 
         :param compare_result: 参数对比结果
         :type compare_result: str
-        :param data_type: 参数类型
+        :param data_type: 参数类型 figure，string
         :type data_type: str
         :param group: 分组。 - common-常规参数 - performance-性能参数
         :type group: str
-        :param key: 参数名
+        :param key: 参数名 binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，character_set_server，collation_server...
         :type key: str
         :param need_restart: 是否需要重启
         :type need_restart: str
@@ -128,7 +128,7 @@ class Params:
     def data_type(self):
         r"""Gets the data_type of this Params.
 
-        参数类型
+        参数类型 figure，string
 
         :return: The data_type of this Params.
         :rtype: str
@@ -139,7 +139,7 @@ class Params:
     def data_type(self, data_type):
         r"""Sets the data_type of this Params.
 
-        参数类型
+        参数类型 figure，string
 
         :param data_type: The data_type of this Params.
         :type data_type: str
@@ -172,7 +172,7 @@ class Params:
     def key(self):
         r"""Gets the key of this Params.
 
-        参数名
+        参数名 binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，character_set_server，collation_server...
 
         :return: The key of this Params.
         :rtype: str
@@ -183,7 +183,7 @@ class Params:
     def key(self, key):
         r"""Sets the key of this Params.
 
-        参数名
+        参数名 binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，character_set_server，collation_server...
 
         :param key: The key of this Params.
         :type key: str

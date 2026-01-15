@@ -16,7 +16,7 @@ class FileConfiguration:
 
     openapi_types = {
         'file_name': 'str',
-        'file_type': 'str',
+        'file_type': 'FileType',
         'node_id': 'str',
         'param': 'dict(str, str)',
         'type': 'str'
@@ -37,8 +37,8 @@ class FileConfiguration:
 
         :param file_name: 文件名称
         :type file_name: str
-        :param file_type: **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-        :type file_type: str
+        :param file_type: 
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         :param node_id: 节点ID
         :type node_id: str
         :param param: 参数
@@ -91,10 +91,8 @@ class FileConfiguration:
     def file_type(self):
         r"""Gets the file_type of this FileConfiguration.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :return: The file_type of this FileConfiguration.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         return self._file_type
 
@@ -102,10 +100,8 @@ class FileConfiguration:
     def file_type(self, file_type):
         r"""Sets the file_type of this FileConfiguration.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :param file_type: The file_type of this FileConfiguration.
-        :type file_type: str
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         self._file_type = file_type
 

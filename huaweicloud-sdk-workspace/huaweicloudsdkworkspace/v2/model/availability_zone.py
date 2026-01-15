@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AvailabilityZoneInfo:
+class AvailabilityZone:
 
     """
     Attributes:
@@ -35,7 +35,7 @@ class AvailabilityZoneInfo:
     }
 
     def __init__(self, availability_zone=None, display_name=None, i18n=None, sold_out=None, product_ids=None, visible=None, default_availability_zone=None):
-        r"""AvailabilityZoneInfo
+        r"""AvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -83,150 +83,150 @@ class AvailabilityZoneInfo:
 
     @property
     def availability_zone(self):
-        r"""Gets the availability_zone of this AvailabilityZoneInfo.
+        r"""Gets the availability_zone of this AvailabilityZone.
 
         可用分区编码。
 
-        :return: The availability_zone of this AvailabilityZoneInfo.
+        :return: The availability_zone of this AvailabilityZone.
         :rtype: str
         """
         return self._availability_zone
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        r"""Sets the availability_zone of this AvailabilityZoneInfo.
+        r"""Sets the availability_zone of this AvailabilityZone.
 
         可用分区编码。
 
-        :param availability_zone: The availability_zone of this AvailabilityZoneInfo.
+        :param availability_zone: The availability_zone of this AvailabilityZone.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
     @property
     def display_name(self):
-        r"""Gets the display_name of this AvailabilityZoneInfo.
+        r"""Gets the display_name of this AvailabilityZone.
 
         可用分区名称。
 
-        :return: The display_name of this AvailabilityZoneInfo.
+        :return: The display_name of this AvailabilityZone.
         :rtype: str
         """
         return self._display_name
 
     @display_name.setter
     def display_name(self, display_name):
-        r"""Sets the display_name of this AvailabilityZoneInfo.
+        r"""Sets the display_name of this AvailabilityZone.
 
         可用分区名称。
 
-        :param display_name: The display_name of this AvailabilityZoneInfo.
+        :param display_name: The display_name of this AvailabilityZone.
         :type display_name: str
         """
         self._display_name = display_name
 
     @property
     def i18n(self):
-        r"""Gets the i18n of this AvailabilityZoneInfo.
+        r"""Gets the i18n of this AvailabilityZone.
 
         可用分区国际化信息。
 
-        :return: The i18n of this AvailabilityZoneInfo.
+        :return: The i18n of this AvailabilityZone.
         :rtype: dict(str, str)
         """
         return self._i18n
 
     @i18n.setter
     def i18n(self, i18n):
-        r"""Sets the i18n of this AvailabilityZoneInfo.
+        r"""Sets the i18n of this AvailabilityZone.
 
         可用分区国际化信息。
 
-        :param i18n: The i18n of this AvailabilityZoneInfo.
+        :param i18n: The i18n of this AvailabilityZone.
         :type i18n: dict(str, str)
         """
         self._i18n = i18n
 
     @property
     def sold_out(self):
-        r"""Gets the sold_out of this AvailabilityZoneInfo.
+        r"""Gets the sold_out of this AvailabilityZone.
 
-        :return: The sold_out of this AvailabilityZoneInfo.
+        :return: The sold_out of this AvailabilityZone.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
         """
         return self._sold_out
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        r"""Sets the sold_out of this AvailabilityZoneInfo.
+        r"""Sets the sold_out of this AvailabilityZone.
 
-        :param sold_out: The sold_out of this AvailabilityZoneInfo.
+        :param sold_out: The sold_out of this AvailabilityZone.
         :type sold_out: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
         """
         self._sold_out = sold_out
 
     @property
     def product_ids(self):
-        r"""Gets the product_ids of this AvailabilityZoneInfo.
+        r"""Gets the product_ids of this AvailabilityZone.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
-        :return: The product_ids of this AvailabilityZoneInfo.
+        :return: The product_ids of this AvailabilityZone.
         :rtype: list[str]
         """
         return self._product_ids
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        r"""Sets the product_ids of this AvailabilityZoneInfo.
+        r"""Sets the product_ids of this AvailabilityZone.
 
         指定当前分区下自定义支持的产品ID列表，如果为空则支持所有套餐。
 
-        :param product_ids: The product_ids of this AvailabilityZoneInfo.
+        :param product_ids: The product_ids of this AvailabilityZone.
         :type product_ids: list[str]
         """
         self._product_ids = product_ids
 
     @property
     def visible(self):
-        r"""Gets the visible of this AvailabilityZoneInfo.
+        r"""Gets the visible of this AvailabilityZone.
 
         是否可见。
 
-        :return: The visible of this AvailabilityZoneInfo.
+        :return: The visible of this AvailabilityZone.
         :rtype: bool
         """
         return self._visible
 
     @visible.setter
     def visible(self, visible):
-        r"""Sets the visible of this AvailabilityZoneInfo.
+        r"""Sets the visible of this AvailabilityZone.
 
         是否可见。
 
-        :param visible: The visible of this AvailabilityZoneInfo.
+        :param visible: The visible of this AvailabilityZone.
         :type visible: bool
         """
         self._visible = visible
 
     @property
     def default_availability_zone(self):
-        r"""Gets the default_availability_zone of this AvailabilityZoneInfo.
+        r"""Gets the default_availability_zone of this AvailabilityZone.
 
         是否默认可用分区。
 
-        :return: The default_availability_zone of this AvailabilityZoneInfo.
+        :return: The default_availability_zone of this AvailabilityZone.
         :rtype: bool
         """
         return self._default_availability_zone
 
     @default_availability_zone.setter
     def default_availability_zone(self, default_availability_zone):
-        r"""Sets the default_availability_zone of this AvailabilityZoneInfo.
+        r"""Sets the default_availability_zone of this AvailabilityZone.
 
         是否默认可用分区。
 
-        :param default_availability_zone: The default_availability_zone of this AvailabilityZoneInfo.
+        :param default_availability_zone: The default_availability_zone of this AvailabilityZone.
         :type default_availability_zone: bool
         """
         self._default_availability_zone = default_availability_zone
@@ -268,7 +268,7 @@ class AvailabilityZoneInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AvailabilityZoneInfo):
+        if not isinstance(other, AvailabilityZone):
             return False
 
         return self.__dict__ == other.__dict__

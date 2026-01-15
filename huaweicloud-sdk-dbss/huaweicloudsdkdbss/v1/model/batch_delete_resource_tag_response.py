@@ -28,7 +28,7 @@ class BatchDeleteResourceTagResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 无返回内容
         :type body: str
         """
         
@@ -44,6 +44,8 @@ class BatchDeleteResourceTagResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this BatchDeleteResourceTagResponse.
 
+        无返回内容
+
         :return: The body of this BatchDeleteResourceTagResponse.
         :rtype: str
         """
@@ -52,6 +54,8 @@ class BatchDeleteResourceTagResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this BatchDeleteResourceTagResponse.
+
+        无返回内容
 
         :param body: The body of this BatchDeleteResourceTagResponse.
         :type body: str

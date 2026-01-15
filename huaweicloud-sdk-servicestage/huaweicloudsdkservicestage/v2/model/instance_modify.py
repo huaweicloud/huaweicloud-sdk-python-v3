@@ -16,7 +16,7 @@ class InstanceModify:
 
     openapi_types = {
         'version': 'str',
-        'flavor_id': 'str',
+        'flavor_id': 'FlavorId',
         'artifacts': 'dict(str, object)',
         'configuration': 'InstanceConfiguration',
         'description': 'str',
@@ -41,8 +41,8 @@ class InstanceModify:
 
         :param version: 应用组件版本号，满足版本语义，如1.0.1。
         :type version: str
-        :param flavor_id: 资源规格。
-        :type flavor_id: str
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
         :type artifacts: dict(str, object)
         :param configuration: 
@@ -106,10 +106,8 @@ class InstanceModify:
     def flavor_id(self):
         r"""Gets the flavor_id of this InstanceModify.
 
-        资源规格。
-
         :return: The flavor_id of this InstanceModify.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -117,10 +115,8 @@ class InstanceModify:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this InstanceModify.
 
-        资源规格。
-
         :param flavor_id: The flavor_id of this InstanceModify.
-        :type flavor_id: str
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 

@@ -22,16 +22,16 @@ class TableItem:
         'table_alias': 'str',
         'directory': 'str',
         'description': 'str',
-        'category': 'str',
-        'lock_status': 'str',
-        'process_status': 'str',
-        'process_error': 'str',
-        'edit_type': 'str',
-        'format': 'str',
-        'rw_type': 'str',
-        'owner_type': 'str',
-        'data_layering': 'str',
-        'data_classification': 'str',
+        'category': 'TableCategory',
+        'lock_status': 'TableLockStatus',
+        'process_status': 'TableProcessStatus',
+        'process_error': 'TableProcessError',
+        'edit_type': 'TableEditType',
+        'format': 'TableFormat',
+        'rw_type': 'TableRWType',
+        'owner_type': 'TableOwnerType',
+        'data_layering': 'DataLayering',
+        'data_classification': 'DataClassification',
         'create_time': 'int',
         'update_time': 'int',
         'delete_time': 'int',
@@ -81,26 +81,26 @@ class TableItem:
         :type directory: str
         :param description: 表描述
         :type description: str
-        :param category: **参数解释**: 表类别 - STREAMING 流式传输 - INDEX 索引 - APPLICATION 应用 - TENANT_OBS 租户对象存储 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_OBS - LAKE  **默认值** 不涉及      
-        :type category: str
-        :param lock_status: **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-        :type lock_status: str
-        :param process_status: **参数解释**: 表处理状态 - COMPLETED 处理完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - CREATE_FAILED 创建失败 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败 - TRUNCATE_FAILED 清空失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - CREATE_FAILED - UPDATING_FAILED - DELETING_FAILED - TRUNCATE_FAILED  **默认值** 不涉及        
-        :type process_status: str
-        :param process_error: **参数解释**: 表处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-        :type process_error: str
-        :param edit_type: **参数解释**: 表编辑类型 - MODIFIABLE 可任意修改态 - APPENDED 追加态 (原来的内容锁定，只可追加) - LOCKED 锁定态 (完全锁定，不可修改)  **约束限制** 不涉及 **取值范围**: - MODIFIABLE - APPENDED - LOCKED  **默认值** 不涉及      
-        :type edit_type: str
-        :param format: **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-        :type format: str
-        :param rw_type: **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-        :type rw_type: str
-        :param owner_type: **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-        :type owner_type: str
-        :param data_layering: **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-        :type data_layering: str
-        :param data_classification: **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-        :type data_classification: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.TableCategory`
+        :param lock_status: 
+        :type lock_status: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.TableProcessStatus`
+        :param process_error: 
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.TableProcessError`
+        :param edit_type: 
+        :type edit_type: :class:`huaweicloudsdksecmaster.v2.TableEditType`
+        :param format: 
+        :type format: :class:`huaweicloudsdksecmaster.v2.TableFormat`
+        :param rw_type: 
+        :type rw_type: :class:`huaweicloudsdksecmaster.v2.TableRWType`
+        :param owner_type: 
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
+        :param data_layering: 
+        :type data_layering: :class:`huaweicloudsdksecmaster.v2.DataLayering`
+        :param data_classification: 
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         :param create_time: 毫秒时间戳
         :type create_time: int
         :param update_time: 毫秒时间戳
@@ -337,10 +337,8 @@ class TableItem:
     def category(self):
         r"""Gets the category of this TableItem.
 
-        **参数解释**: 表类别 - STREAMING 流式传输 - INDEX 索引 - APPLICATION 应用 - TENANT_OBS 租户对象存储 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_OBS - LAKE  **默认值** 不涉及      
-
         :return: The category of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableCategory`
         """
         return self._category
 
@@ -348,10 +346,8 @@ class TableItem:
     def category(self, category):
         r"""Sets the category of this TableItem.
 
-        **参数解释**: 表类别 - STREAMING 流式传输 - INDEX 索引 - APPLICATION 应用 - TENANT_OBS 租户对象存储 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_OBS - LAKE  **默认值** 不涉及      
-
         :param category: The category of this TableItem.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.TableCategory`
         """
         self._category = category
 
@@ -359,10 +355,8 @@ class TableItem:
     def lock_status(self):
         r"""Gets the lock_status of this TableItem.
 
-        **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-
         :return: The lock_status of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
         """
         return self._lock_status
 
@@ -370,10 +364,8 @@ class TableItem:
     def lock_status(self, lock_status):
         r"""Sets the lock_status of this TableItem.
 
-        **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-
         :param lock_status: The lock_status of this TableItem.
-        :type lock_status: str
+        :type lock_status: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
         """
         self._lock_status = lock_status
 
@@ -381,10 +373,8 @@ class TableItem:
     def process_status(self):
         r"""Gets the process_status of this TableItem.
 
-        **参数解释**: 表处理状态 - COMPLETED 处理完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - CREATE_FAILED 创建失败 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败 - TRUNCATE_FAILED 清空失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - CREATE_FAILED - UPDATING_FAILED - DELETING_FAILED - TRUNCATE_FAILED  **默认值** 不涉及        
-
         :return: The process_status of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableProcessStatus`
         """
         return self._process_status
 
@@ -392,10 +382,8 @@ class TableItem:
     def process_status(self, process_status):
         r"""Sets the process_status of this TableItem.
 
-        **参数解释**: 表处理状态 - COMPLETED 处理完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - CREATE_FAILED 创建失败 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败 - TRUNCATE_FAILED 清空失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - CREATE_FAILED - UPDATING_FAILED - DELETING_FAILED - TRUNCATE_FAILED  **默认值** 不涉及        
-
         :param process_status: The process_status of this TableItem.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.TableProcessStatus`
         """
         self._process_status = process_status
 
@@ -403,10 +391,8 @@ class TableItem:
     def process_error(self):
         r"""Gets the process_error of this TableItem.
 
-        **参数解释**: 表处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-
         :return: The process_error of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableProcessError`
         """
         return self._process_error
 
@@ -414,10 +400,8 @@ class TableItem:
     def process_error(self, process_error):
         r"""Sets the process_error of this TableItem.
 
-        **参数解释**: 表处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-
         :param process_error: The process_error of this TableItem.
-        :type process_error: str
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.TableProcessError`
         """
         self._process_error = process_error
 
@@ -425,10 +409,8 @@ class TableItem:
     def edit_type(self):
         r"""Gets the edit_type of this TableItem.
 
-        **参数解释**: 表编辑类型 - MODIFIABLE 可任意修改态 - APPENDED 追加态 (原来的内容锁定，只可追加) - LOCKED 锁定态 (完全锁定，不可修改)  **约束限制** 不涉及 **取值范围**: - MODIFIABLE - APPENDED - LOCKED  **默认值** 不涉及      
-
         :return: The edit_type of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableEditType`
         """
         return self._edit_type
 
@@ -436,10 +418,8 @@ class TableItem:
     def edit_type(self, edit_type):
         r"""Sets the edit_type of this TableItem.
 
-        **参数解释**: 表编辑类型 - MODIFIABLE 可任意修改态 - APPENDED 追加态 (原来的内容锁定，只可追加) - LOCKED 锁定态 (完全锁定，不可修改)  **约束限制** 不涉及 **取值范围**: - MODIFIABLE - APPENDED - LOCKED  **默认值** 不涉及      
-
         :param edit_type: The edit_type of this TableItem.
-        :type edit_type: str
+        :type edit_type: :class:`huaweicloudsdksecmaster.v2.TableEditType`
         """
         self._edit_type = edit_type
 
@@ -447,10 +427,8 @@ class TableItem:
     def format(self):
         r"""Gets the format of this TableItem.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-
         :return: The format of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableFormat`
         """
         return self._format
 
@@ -458,10 +436,8 @@ class TableItem:
     def format(self, format):
         r"""Sets the format of this TableItem.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-
         :param format: The format of this TableItem.
-        :type format: str
+        :type format: :class:`huaweicloudsdksecmaster.v2.TableFormat`
         """
         self._format = format
 
@@ -469,10 +445,8 @@ class TableItem:
     def rw_type(self):
         r"""Gets the rw_type of this TableItem.
 
-        **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-
         :return: The rw_type of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableRWType`
         """
         return self._rw_type
 
@@ -480,10 +454,8 @@ class TableItem:
     def rw_type(self, rw_type):
         r"""Sets the rw_type of this TableItem.
 
-        **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-
         :param rw_type: The rw_type of this TableItem.
-        :type rw_type: str
+        :type rw_type: :class:`huaweicloudsdksecmaster.v2.TableRWType`
         """
         self._rw_type = rw_type
 
@@ -491,10 +463,8 @@ class TableItem:
     def owner_type(self):
         r"""Gets the owner_type of this TableItem.
 
-        **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-
         :return: The owner_type of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
         """
         return self._owner_type
 
@@ -502,10 +472,8 @@ class TableItem:
     def owner_type(self, owner_type):
         r"""Sets the owner_type of this TableItem.
 
-        **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-
         :param owner_type: The owner_type of this TableItem.
-        :type owner_type: str
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
         """
         self._owner_type = owner_type
 
@@ -513,10 +481,8 @@ class TableItem:
     def data_layering(self):
         r"""Gets the data_layering of this TableItem.
 
-        **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-
         :return: The data_layering of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataLayering`
         """
         return self._data_layering
 
@@ -524,10 +490,8 @@ class TableItem:
     def data_layering(self, data_layering):
         r"""Sets the data_layering of this TableItem.
 
-        **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-
         :param data_layering: The data_layering of this TableItem.
-        :type data_layering: str
+        :type data_layering: :class:`huaweicloudsdksecmaster.v2.DataLayering`
         """
         self._data_layering = data_layering
 
@@ -535,10 +499,8 @@ class TableItem:
     def data_classification(self):
         r"""Gets the data_classification of this TableItem.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :return: The data_classification of this TableItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         return self._data_classification
 
@@ -546,10 +508,8 @@ class TableItem:
     def data_classification(self, data_classification):
         r"""Sets the data_classification of this TableItem.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :param data_classification: The data_classification of this TableItem.
-        :type data_classification: str
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         self._data_classification = data_classification
 

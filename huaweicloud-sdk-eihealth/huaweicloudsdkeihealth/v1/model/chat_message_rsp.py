@@ -16,8 +16,8 @@ class ChatMessageRsp:
 
     openapi_types = {
         'id': 'str',
-        'role': 'str',
-        'type': 'str',
+        'role': 'MessageRole',
+        'type': 'QaType',
         'create_time': 'str',
         'update_time': 'str',
         'message': 'ChatMessage',
@@ -41,10 +41,10 @@ class ChatMessageRsp:
 
         :param id: **参数解释**： 问答ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type id: str
-        :param role: **参数解释**： 问答角色。 **约束限制**： 不涉及 **取值范围**： * user：用户问题的内容 * assistant：助手回答内容 **默认取值**： 不涉及 
-        :type role: str
-        :param type: **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
-        :type type: str
+        :param role: 
+        :type role: :class:`huaweicloudsdkeihealth.v1.MessageRole`
+        :param type: 
+        :type type: :class:`huaweicloudsdkeihealth.v1.QaType`
         :param create_time: **参数解释**： 问答创建时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type create_time: str
         :param update_time: **参数解释**： 问答更新时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
@@ -107,10 +107,8 @@ class ChatMessageRsp:
     def role(self):
         r"""Gets the role of this ChatMessageRsp.
 
-        **参数解释**： 问答角色。 **约束限制**： 不涉及 **取值范围**： * user：用户问题的内容 * assistant：助手回答内容 **默认取值**： 不涉及 
-
         :return: The role of this ChatMessageRsp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.MessageRole`
         """
         return self._role
 
@@ -118,10 +116,8 @@ class ChatMessageRsp:
     def role(self, role):
         r"""Sets the role of this ChatMessageRsp.
 
-        **参数解释**： 问答角色。 **约束限制**： 不涉及 **取值范围**： * user：用户问题的内容 * assistant：助手回答内容 **默认取值**： 不涉及 
-
         :param role: The role of this ChatMessageRsp.
-        :type role: str
+        :type role: :class:`huaweicloudsdkeihealth.v1.MessageRole`
         """
         self._role = role
 
@@ -129,10 +125,8 @@ class ChatMessageRsp:
     def type(self):
         r"""Gets the type of this ChatMessageRsp.
 
-        **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
-
         :return: The type of this ChatMessageRsp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.QaType`
         """
         return self._type
 
@@ -140,10 +134,8 @@ class ChatMessageRsp:
     def type(self, type):
         r"""Sets the type of this ChatMessageRsp.
 
-        **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
-
         :param type: The type of this ChatMessageRsp.
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.QaType`
         """
         self._type = type
 

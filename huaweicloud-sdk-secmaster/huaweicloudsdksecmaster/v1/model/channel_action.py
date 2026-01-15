@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ChannelAction:
-
+    """
+    allowed enum values
+    """
+    START = "START"
+    STOP = "STOP"
+    REMOVE = "REMOVE"
+    RESTART = "RESTART"
+    REFRESH = "REFRESH"
+    INSTALL = "INSTALL"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

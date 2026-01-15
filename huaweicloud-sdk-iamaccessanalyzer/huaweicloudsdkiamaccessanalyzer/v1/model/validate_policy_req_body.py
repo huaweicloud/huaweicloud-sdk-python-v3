@@ -16,8 +16,8 @@ class ValidatePolicyReqBody:
 
     openapi_types = {
         'policy_document': 'str',
-        'policy_type': 'str',
-        'validate_policy_resource_type': 'str'
+        'policy_type': 'PolicyType',
+        'validate_policy_resource_type': 'ValidatePolicyResourceType'
     }
 
     attribute_map = {
@@ -33,10 +33,10 @@ class ValidatePolicyReqBody:
 
         :param policy_document: 该策略JSON格式策略文档。
         :type policy_document: str
-        :param policy_type: 要校验的策略类型。 - identity_policy：身份策略 - resource_policy：资源策略 - service_control_policy：服务控制策略 - resource_control_policy：资源控制策略 - network_control_policy：网络控制策略 
-        :type policy_type: str
-        :param validate_policy_resource_type: 要附加到资源策略的资源类型。 - iam:agency： IAM委托 
-        :type validate_policy_resource_type: str
+        :param policy_type: 
+        :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
+        :param validate_policy_resource_type: 
+        :type validate_policy_resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyResourceType`
         """
         
         
@@ -77,10 +77,8 @@ class ValidatePolicyReqBody:
     def policy_type(self):
         r"""Gets the policy_type of this ValidatePolicyReqBody.
 
-        要校验的策略类型。 - identity_policy：身份策略 - resource_policy：资源策略 - service_control_policy：服务控制策略 - resource_control_policy：资源控制策略 - network_control_policy：网络控制策略 
-
         :return: The policy_type of this ValidatePolicyReqBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
         """
         return self._policy_type
 
@@ -88,10 +86,8 @@ class ValidatePolicyReqBody:
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this ValidatePolicyReqBody.
 
-        要校验的策略类型。 - identity_policy：身份策略 - resource_policy：资源策略 - service_control_policy：服务控制策略 - resource_control_policy：资源控制策略 - network_control_policy：网络控制策略 
-
         :param policy_type: The policy_type of this ValidatePolicyReqBody.
-        :type policy_type: str
+        :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
         """
         self._policy_type = policy_type
 
@@ -99,10 +95,8 @@ class ValidatePolicyReqBody:
     def validate_policy_resource_type(self):
         r"""Gets the validate_policy_resource_type of this ValidatePolicyReqBody.
 
-        要附加到资源策略的资源类型。 - iam:agency： IAM委托 
-
         :return: The validate_policy_resource_type of this ValidatePolicyReqBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyResourceType`
         """
         return self._validate_policy_resource_type
 
@@ -110,10 +104,8 @@ class ValidatePolicyReqBody:
     def validate_policy_resource_type(self, validate_policy_resource_type):
         r"""Sets the validate_policy_resource_type of this ValidatePolicyReqBody.
 
-        要附加到资源策略的资源类型。 - iam:agency： IAM委托 
-
         :param validate_policy_resource_type: The validate_policy_resource_type of this ValidatePolicyReqBody.
-        :type validate_policy_resource_type: str
+        :type validate_policy_resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyResourceType`
         """
         self._validate_policy_resource_type = validate_policy_resource_type
 

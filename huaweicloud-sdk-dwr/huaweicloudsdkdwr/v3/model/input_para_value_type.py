@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InputParaValueType:
-
+    """
+    allowed enum values
+    """
+    STRING = "string"
+    INTEGER = "integer"
+    FLOAT = "float"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

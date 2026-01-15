@@ -37,7 +37,7 @@ class CreateReportRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param db_ids: 数据库ID列表，多个用英文逗号分割
+        :param db_ids: 数据库ID列表，多个用英文逗号分隔
         :type db_ids: str
         :param end_date: 结束日期
         :type end_date: datetime
@@ -75,7 +75,7 @@ class CreateReportRequestBody:
     def db_ids(self):
         r"""Gets the db_ids of this CreateReportRequestBody.
 
-        数据库ID列表，多个用英文逗号分割
+        数据库ID列表，多个用英文逗号分隔
 
         :return: The db_ids of this CreateReportRequestBody.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateReportRequestBody:
     def db_ids(self, db_ids):
         r"""Sets the db_ids of this CreateReportRequestBody.
 
-        数据库ID列表，多个用英文逗号分割
+        数据库ID列表，多个用英文逗号分隔
 
         :param db_ids: The db_ids of this CreateReportRequestBody.
         :type db_ids: str

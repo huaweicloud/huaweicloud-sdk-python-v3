@@ -43,7 +43,7 @@ class CreateLineGroupsResp:
         :type name: str
         :param lines: 线路分组包含的线路列表。 解析线路ID。
         :type lines: list[str]
-        :param status: 资源状态。 取值范围：PENDING_CREATE，ACTIVE，PENDING_DELETE，PENDING_UPDATE，ERROR，FREEZE，DISABLE。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
         :type status: str
         :param description: 线路分组的描述信息
         :type description: str
@@ -129,7 +129,7 @@ class CreateLineGroupsResp:
     def status(self):
         r"""Gets the status of this CreateLineGroupsResp.
 
-        资源状态。 取值范围：PENDING_CREATE，ACTIVE，PENDING_DELETE，PENDING_UPDATE，ERROR，FREEZE，DISABLE。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
 
         :return: The status of this CreateLineGroupsResp.
         :rtype: str
@@ -140,7 +140,7 @@ class CreateLineGroupsResp:
     def status(self, status):
         r"""Sets the status of this CreateLineGroupsResp.
 
-        资源状态。 取值范围：PENDING_CREATE，ACTIVE，PENDING_DELETE，PENDING_UPDATE，ERROR，FREEZE，DISABLE。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
 
         :param status: The status of this CreateLineGroupsResp.
         :type status: str

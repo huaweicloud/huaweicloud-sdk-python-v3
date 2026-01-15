@@ -32,7 +32,7 @@ class ShowAuditTopicReportSchedulerConfigResponse(SdkResponse):
 
         :param scheduler: 
         :type scheduler: :class:`huaweicloudsdkdbss.v1.SchedulerConfigBase`
-        :param smn_effective: 是否支持订阅  - true: 支持  - false: 不支持\&quot;
+        :param smn_effective: 是否支持订阅  - true：支持  - false：不支持
         :type smn_effective: bool
         """
         
@@ -69,7 +69,7 @@ class ShowAuditTopicReportSchedulerConfigResponse(SdkResponse):
     def smn_effective(self):
         r"""Gets the smn_effective of this ShowAuditTopicReportSchedulerConfigResponse.
 
-        是否支持订阅  - true: 支持  - false: 不支持\"
+        是否支持订阅  - true：支持  - false：不支持
 
         :return: The smn_effective of this ShowAuditTopicReportSchedulerConfigResponse.
         :rtype: bool
@@ -80,7 +80,7 @@ class ShowAuditTopicReportSchedulerConfigResponse(SdkResponse):
     def smn_effective(self, smn_effective):
         r"""Sets the smn_effective of this ShowAuditTopicReportSchedulerConfigResponse.
 
-        是否支持订阅  - true: 支持  - false: 不支持\"
+        是否支持订阅  - true：支持  - false：不支持
 
         :param smn_effective: The smn_effective of this ShowAuditTopicReportSchedulerConfigResponse.
         :type smn_effective: bool

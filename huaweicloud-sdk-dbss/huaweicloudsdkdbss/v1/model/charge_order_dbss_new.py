@@ -93,7 +93,7 @@ class ChargeOrderDbssNew:
         :type comment: str
         :param composite_product_id: 组合套餐
         :type composite_product_id: str
-        :param deploy_mode: 实例部署方式，默认为云上 - CLOUD： 云上 - OUTSIDE：云外
+        :param deploy_mode: 实例部署方式，默认为云上 - CLOUD：云上 - OUTSIDE：云外
         :type deploy_mode: str
         :param discount_id: 折扣ID
         :type discount_id: str
@@ -361,7 +361,7 @@ class ChargeOrderDbssNew:
     def deploy_mode(self):
         r"""Gets the deploy_mode of this ChargeOrderDbssNew.
 
-        实例部署方式，默认为云上 - CLOUD： 云上 - OUTSIDE：云外
+        实例部署方式，默认为云上 - CLOUD：云上 - OUTSIDE：云外
 
         :return: The deploy_mode of this ChargeOrderDbssNew.
         :rtype: str
@@ -372,7 +372,7 @@ class ChargeOrderDbssNew:
     def deploy_mode(self, deploy_mode):
         r"""Sets the deploy_mode of this ChargeOrderDbssNew.
 
-        实例部署方式，默认为云上 - CLOUD： 云上 - OUTSIDE：云外
+        实例部署方式，默认为云上 - CLOUD：云上 - OUTSIDE：云外
 
         :param deploy_mode: The deploy_mode of this ChargeOrderDbssNew.
         :type deploy_mode: str

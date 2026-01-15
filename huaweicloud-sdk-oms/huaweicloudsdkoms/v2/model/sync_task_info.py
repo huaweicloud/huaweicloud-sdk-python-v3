@@ -87,7 +87,7 @@ class SyncTaskInfo:
         :type enable_metadata_migration: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
         :type enable_restore: bool
-        :param app_id: 当源端为腾讯云时，需要填写此参数。
+        :param app_id: 腾讯云APPID，当源端为腾讯云时，会返回此参数。
         :type app_id: str
         :param source_cdn: 
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
@@ -448,7 +448,7 @@ class SyncTaskInfo:
     def app_id(self):
         r"""Gets the app_id of this SyncTaskInfo.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，会返回此参数。
 
         :return: The app_id of this SyncTaskInfo.
         :rtype: str
@@ -459,7 +459,7 @@ class SyncTaskInfo:
     def app_id(self, app_id):
         r"""Sets the app_id of this SyncTaskInfo.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，会返回此参数。
 
         :param app_id: The app_id of this SyncTaskInfo.
         :type app_id: str

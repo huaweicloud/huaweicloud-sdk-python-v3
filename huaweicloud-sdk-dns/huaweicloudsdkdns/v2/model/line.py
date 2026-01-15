@@ -49,7 +49,7 @@ class Line:
         :type created_at: str
         :param updated_at: 更新时间。 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSS。
         :type updated_at: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
         :type status: str
         :param description: 自定义线路的描述信息。
         :type description: str
@@ -195,7 +195,7 @@ class Line:
     def status(self):
         r"""Gets the status of this Line.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
 
         :return: The status of this Line.
         :rtype: str
@@ -206,7 +206,7 @@ class Line:
     def status(self, status):
         r"""Sets the status of this Line.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ERROR：失败
 
         :param status: The status of this Line.
         :type status: str

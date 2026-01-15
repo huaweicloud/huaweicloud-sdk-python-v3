@@ -17,7 +17,7 @@ class Connection:
     openapi_types = {
         'channel_refer_count': 'int',
         'connection_id': 'str',
-        'connection_type': 'str',
+        'connection_type': 'FilterConnectionType',
         'description': 'str',
         'info': 'str',
         'module_id': 'str',
@@ -45,8 +45,8 @@ class Connection:
         :type channel_refer_count: int
         :param connection_id: UUID
         :type connection_id: str
-        :param connection_type: **参数解释**: 连接类型 - FILTER 过滤 - INPUT 输入 - OUTPUT 输出  **约束限制** 不涉及 **取值范围**: - FILTER - INPUT - OUTPUT  **默认值** 不涉及
-        :type connection_type: str
+        :param connection_type: 
+        :type connection_type: :class:`huaweicloudsdksecmaster.v1.FilterConnectionType`
         :param description: 描述信息
         :type description: str
         :param info: 描述信息
@@ -136,10 +136,8 @@ class Connection:
     def connection_type(self):
         r"""Gets the connection_type of this Connection.
 
-        **参数解释**: 连接类型 - FILTER 过滤 - INPUT 输入 - OUTPUT 输出  **约束限制** 不涉及 **取值范围**: - FILTER - INPUT - OUTPUT  **默认值** 不涉及
-
         :return: The connection_type of this Connection.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.FilterConnectionType`
         """
         return self._connection_type
 
@@ -147,10 +145,8 @@ class Connection:
     def connection_type(self, connection_type):
         r"""Sets the connection_type of this Connection.
 
-        **参数解释**: 连接类型 - FILTER 过滤 - INPUT 输入 - OUTPUT 输出  **约束限制** 不涉及 **取值范围**: - FILTER - INPUT - OUTPUT  **默认值** 不涉及
-
         :param connection_type: The connection_type of this Connection.
-        :type connection_type: str
+        :type connection_type: :class:`huaweicloudsdksecmaster.v1.FilterConnectionType`
         """
         self._connection_type = connection_type
 

@@ -19,12 +19,12 @@ class UpdateDataTransformationRequestBody:
         'description': 'str',
         'directory': 'str',
         'script': 'str',
-        'status': 'str',
+        'status': 'JobStatus',
         'belong': 'str',
-        'job_mode': 'str',
+        'job_mode': 'IsapJobMode',
         'cu_quota_amount': 'float',
         'job_mode_setting': 'IsapJobModeSettingDto',
-        'environment': 'str',
+        'environment': 'JobEnvironment',
         'output_table_id': 'str',
         'output_table_ids': 'list[str]',
         'output_table_names': 'list[str]'
@@ -59,18 +59,18 @@ class UpdateDataTransformationRequestBody:
         :type directory: str
         :param script: Job Script 作业脚本
         :type script: str
-        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         :param belong: 归属
         :type belong: str
-        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-        :type job_mode: str
+        :param job_mode: 
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         :param cu_quota_amount: cu总量
         :type cu_quota_amount: float
         :param job_mode_setting: 
         :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
-        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-        :type environment: str
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         :param output_table_id: UUID
         :type output_table_id: str
         :param output_table_ids: 输出表ID列表
@@ -215,10 +215,8 @@ class UpdateDataTransformationRequestBody:
     def status(self):
         r"""Gets the status of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this UpdateDataTransformationRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         return self._status
 
@@ -226,10 +224,8 @@ class UpdateDataTransformationRequestBody:
     def status(self, status):
         r"""Sets the status of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this UpdateDataTransformationRequestBody.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         self._status = status
 
@@ -259,10 +255,8 @@ class UpdateDataTransformationRequestBody:
     def job_mode(self):
         r"""Gets the job_mode of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :return: The job_mode of this UpdateDataTransformationRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         return self._job_mode
 
@@ -270,10 +264,8 @@ class UpdateDataTransformationRequestBody:
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :param job_mode: The job_mode of this UpdateDataTransformationRequestBody.
-        :type job_mode: str
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         self._job_mode = job_mode
 
@@ -321,10 +313,8 @@ class UpdateDataTransformationRequestBody:
     def environment(self):
         r"""Gets the environment of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :return: The environment of this UpdateDataTransformationRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         return self._environment
 
@@ -332,10 +322,8 @@ class UpdateDataTransformationRequestBody:
     def environment(self, environment):
         r"""Sets the environment of this UpdateDataTransformationRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :param environment: The environment of this UpdateDataTransformationRequestBody.
-        :type environment: str
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         self._environment = environment
 

@@ -4,7 +4,24 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ComponentStatusType:
-
+    """
+    allowed enum values
+    """
+    INITIALIZING = "INITIALIZING"
+    UPGRADING = "UPGRADING"
+    FAILED = "FAILED"
+    RUNNING = "RUNNING"
+    DOWN = "DOWN"
+    DELETING = "DELETING"
+    DELETED = "DELETED"
+    RESERVED = "RESERVED"
+    STARTING = "STARTING"
+    STOPPING = "STOPPING"
+    STOPPED = "STOPPED"
+    RESTARTING = "RESTARTING"
+    PENDING = "PENDING"
+    UNKNOWN = "UNKNOWN"
+    PARTIALLY_FAILED = "PARTIALLY_FAILED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

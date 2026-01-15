@@ -305,6 +305,71 @@ class CssClient(Client):
 
         return http_info
 
+    def close_ai_ops_setting(self, request):
+        r"""关闭智能运维定时检测
+
+        CSS服务提供智能运维功能的定时检测，支持每日定时检测集群的潜在风险。此接口用于关闭智能运维定时检测。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CloseAiOpsSetting
+        :type request: :class:`huaweicloudsdkcss.v1.CloseAiOpsSettingRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.CloseAiOpsSettingResponse`
+        """
+        http_info = self._close_ai_ops_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def close_ai_ops_setting_invoker(self, request):
+        http_info = self._close_ai_ops_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _close_ai_ops_setting_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "CloseAiOpsSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_agency(self, request):
         r"""自动创建委托
 
@@ -1440,7 +1505,7 @@ class CssClient(Client):
     def list_ai_ops(self, request):
         r"""获取智能运维任务列表及详情
 
-        该接口用于获取智能运维任务列表及详情。
+        CSS服务提供智能运维功能，支持检测集群潜在风险。检测任务完成后，可以查看集群存在的风险项详情，根据风险建议及时处理集群存在的风险。此接口用于获取智能运维任务列表及详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1479,6 +1544,8 @@ class CssClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'report' in local_var_params:
+            query_params.append(('report', local_var_params['report']))
 
         header_params = {}
 
@@ -2545,6 +2612,136 @@ class CssClient(Client):
         query_params = []
         if 'retry_mode' in local_var_params:
             query_params.append(('retry_mode', local_var_params['retry_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ai_ops_detector(self, request):
+        r"""查看智能运维检测项
+
+        CSS服务提供智能运维功能，支持检测集群潜在风险。此接口用于获取智能运维的检测项。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAiOpsDetector
+        :type request: :class:`huaweicloudsdkcss.v1.ShowAiOpsDetectorRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.ShowAiOpsDetectorResponse`
+        """
+        http_info = self._show_ai_ops_detector_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ai_ops_detector_invoker(self, request):
+        http_info = self._show_ai_ops_detector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ai_ops_detector_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/detector",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAiOpsDetectorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ai_ops_setting(self, request):
+        r"""查看智能运维定时检测设置
+
+        CSS服务提供智能运维功能的定时检测，支持每日定时检测集群的潜在风险。此接口用于获取智能运维定时检测设置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAiOpsSetting
+        :type request: :class:`huaweicloudsdkcss.v1.ShowAiOpsSettingRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.ShowAiOpsSettingResponse`
+        """
+        http_info = self._show_ai_ops_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ai_ops_setting_invoker(self, request):
+        http_info = self._show_ai_ops_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ai_ops_setting_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAiOpsSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -4077,6 +4274,73 @@ class CssClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ai_ops_setting(self, request):
+        r"""更新智能运维定时检测设置
+
+        CSS服务提供智能运维功能的定时检测，支持每日定时检测集群的潜在风险。此接口用于设置智能运维定时检测。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAiOpsSetting
+        :type request: :class:`huaweicloudsdkcss.v1.UpdateAiOpsSettingRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateAiOpsSettingResponse`
+        """
+        http_info = self._update_ai_ops_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ai_ops_setting_invoker(self, request):
+        http_info = self._update_ai_ops_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ai_ops_setting_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAiOpsSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

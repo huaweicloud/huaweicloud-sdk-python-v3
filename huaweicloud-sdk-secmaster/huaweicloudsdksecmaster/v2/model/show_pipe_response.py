@@ -21,12 +21,12 @@ class ShowPipeResponse(SdkResponse):
         'pipe_id': 'str',
         'pipe_name': 'str',
         'pipe_alias': 'str',
-        'category': 'str',
+        'category': 'PipeCategory',
         'directory': 'str',
         'description': 'str',
-        'process_status': 'str',
-        'process_error': 'str',
-        'owner_type': 'str',
+        'process_status': 'PipeProcessStatus',
+        'process_error': 'PipeProcessError',
+        'owner_type': 'PipeOwnerType',
         'resources': 'list[PipeResource]',
         'schema': 'PipeSchema',
         'create_time': 'int',
@@ -68,18 +68,18 @@ class ShowPipeResponse(SdkResponse):
         :type pipe_name: str
         :param pipe_alias: 管道别名
         :type pipe_alias: str
-        :param category: **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-        :type category: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         :param directory: directory 目录分组
         :type directory: str
         :param description: 管道描述
         :type description: str
-        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
-        :type process_status: str
-        :param process_error: **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-        :type process_error: str
-        :param owner_type: **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
-        :type owner_type: str
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.PipeProcessStatus`
+        :param process_error: 
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.PipeProcessError`
+        :param owner_type: 
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.PipeOwnerType`
         :param resources: 管道资源
         :type resources: list[:class:`huaweicloudsdksecmaster.v2.PipeResource`]
         :param schema: 
@@ -259,10 +259,8 @@ class ShowPipeResponse(SdkResponse):
     def category(self):
         r"""Gets the category of this ShowPipeResponse.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :return: The category of this ShowPipeResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         return self._category
 
@@ -270,10 +268,8 @@ class ShowPipeResponse(SdkResponse):
     def category(self, category):
         r"""Sets the category of this ShowPipeResponse.
 
-        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
-
         :param category: The category of this ShowPipeResponse.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.PipeCategory`
         """
         self._category = category
 
@@ -325,10 +321,8 @@ class ShowPipeResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this ShowPipeResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
-
         :return: The process_status of this ShowPipeResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeProcessStatus`
         """
         return self._process_status
 
@@ -336,10 +330,8 @@ class ShowPipeResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this ShowPipeResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
-
         :param process_status: The process_status of this ShowPipeResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.PipeProcessStatus`
         """
         self._process_status = process_status
 
@@ -347,10 +339,8 @@ class ShowPipeResponse(SdkResponse):
     def process_error(self):
         r"""Gets the process_error of this ShowPipeResponse.
 
-        **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-
         :return: The process_error of this ShowPipeResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeProcessError`
         """
         return self._process_error
 
@@ -358,10 +348,8 @@ class ShowPipeResponse(SdkResponse):
     def process_error(self, process_error):
         r"""Sets the process_error of this ShowPipeResponse.
 
-        **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
-
         :param process_error: The process_error of this ShowPipeResponse.
-        :type process_error: str
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.PipeProcessError`
         """
         self._process_error = process_error
 
@@ -369,10 +357,8 @@ class ShowPipeResponse(SdkResponse):
     def owner_type(self):
         r"""Gets the owner_type of this ShowPipeResponse.
 
-        **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
-
         :return: The owner_type of this ShowPipeResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeOwnerType`
         """
         return self._owner_type
 
@@ -380,10 +366,8 @@ class ShowPipeResponse(SdkResponse):
     def owner_type(self, owner_type):
         r"""Sets the owner_type of this ShowPipeResponse.
 
-        **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
-
         :param owner_type: The owner_type of this ShowPipeResponse.
-        :type owner_type: str
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.PipeOwnerType`
         """
         self._owner_type = owner_type
 

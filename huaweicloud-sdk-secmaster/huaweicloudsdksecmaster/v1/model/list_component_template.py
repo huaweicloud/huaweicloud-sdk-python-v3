@@ -19,7 +19,7 @@ class ListComponentTemplate:
         'component_name': 'str',
         'file_name': 'str',
         'file_path': 'str',
-        'file_type': 'str',
+        'file_type': 'FileType',
         'param': 'str',
         'version': 'str'
     }
@@ -47,8 +47,8 @@ class ListComponentTemplate:
         :type file_name: str
         :param file_path: 文件路径
         :type file_path: str
-        :param file_type: **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-        :type file_type: str
+        :param file_type: 
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         :param param: 参数
         :type param: str
         :param version: 版本
@@ -173,10 +173,8 @@ class ListComponentTemplate:
     def file_type(self):
         r"""Gets the file_type of this ListComponentTemplate.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :return: The file_type of this ListComponentTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         return self._file_type
 
@@ -184,10 +182,8 @@ class ListComponentTemplate:
     def file_type(self, file_type):
         r"""Sets the file_type of this ListComponentTemplate.
 
-        **参数解释**: 文件类型 - JVM JVM配置文件类型 - LOG4J2 Log4j2日志配置文件类型 - YML YAML配置文件类型  **约束限制** 不涉及 **取值范围**: - JVM - LOG4J2 - YML   **默认值** 不涉及
-
         :param file_type: The file_type of this ListComponentTemplate.
-        :type file_type: str
+        :type file_type: :class:`huaweicloudsdksecmaster.v1.FileType`
         """
         self._file_type = file_type
 

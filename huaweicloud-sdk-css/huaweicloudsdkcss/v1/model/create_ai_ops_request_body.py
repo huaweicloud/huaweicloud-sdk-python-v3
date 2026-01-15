@@ -15,25 +15,33 @@ class CreateAiOpsRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'check_type': 'str',
+        'check_items': 'list[str]',
         'name': 'str',
         'description': 'str',
         'alarm': 'CreateAiOpsRequestBodyAlarm'
     }
 
     attribute_map = {
+        'check_type': 'check_type',
+        'check_items': 'check_items',
         'name': 'name',
         'description': 'description',
         'alarm': 'alarm'
     }
 
-    def __init__(self, name=None, description=None, alarm=None):
+    def __init__(self, check_type=None, check_items=None, name=None, description=None, alarm=None):
         r"""CreateAiOpsRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 检测任务名称。
+        :param check_type: **参数解释**： 检测类型 **约束限制**： 不涉及 **取值范围**： - full_detection  全量检测项 - unavailability_detection 集群不可用检测项 - partial_detection 全量检测项中选取其中部分检测项进行检测，具体检测项需要设置check_items  **默认取值**： 不涉及
+        :type check_type: str
+        :param check_items: **参数解释**： 全量检测项中选取其中部分检测项进行检测，输入检测项列表。 **约束限制**： 当check_type为partial_detection时有效 **取值范围**： 通过智能运维ShowAiOpsDetector获取最新支持的检测项，输入检测项id字符串列表 **默认取值**： 不涉及
+        :type check_items: list[str]
+        :param name: **参数解释**： 检测报告名称，支持自定义检测名。 **约束限制**： 不涉及 **取值范围**： 4～64个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。 **默认取值**： 不涉及
         :type name: str
-        :param description: 检测任务描述。
+        :param description: **参数解释**： 检测报告描述，支持自定义检测描述 **约束限制**： 不涉及 **取值范围**： 0~255个字符 **默认取值**： 不涉及
         :type description: str
         :param alarm: 
         :type alarm: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBodyAlarm`
@@ -41,22 +49,73 @@ class CreateAiOpsRequestBody:
         
         
 
+        self._check_type = None
+        self._check_items = None
         self._name = None
         self._description = None
         self._alarm = None
         self.discriminator = None
 
-        self.name = name
+        if check_type is not None:
+            self.check_type = check_type
+        if check_items is not None:
+            self.check_items = check_items
+        if name is not None:
+            self.name = name
         if description is not None:
             self.description = description
         if alarm is not None:
             self.alarm = alarm
 
     @property
+    def check_type(self):
+        r"""Gets the check_type of this CreateAiOpsRequestBody.
+
+        **参数解释**： 检测类型 **约束限制**： 不涉及 **取值范围**： - full_detection  全量检测项 - unavailability_detection 集群不可用检测项 - partial_detection 全量检测项中选取其中部分检测项进行检测，具体检测项需要设置check_items  **默认取值**： 不涉及
+
+        :return: The check_type of this CreateAiOpsRequestBody.
+        :rtype: str
+        """
+        return self._check_type
+
+    @check_type.setter
+    def check_type(self, check_type):
+        r"""Sets the check_type of this CreateAiOpsRequestBody.
+
+        **参数解释**： 检测类型 **约束限制**： 不涉及 **取值范围**： - full_detection  全量检测项 - unavailability_detection 集群不可用检测项 - partial_detection 全量检测项中选取其中部分检测项进行检测，具体检测项需要设置check_items  **默认取值**： 不涉及
+
+        :param check_type: The check_type of this CreateAiOpsRequestBody.
+        :type check_type: str
+        """
+        self._check_type = check_type
+
+    @property
+    def check_items(self):
+        r"""Gets the check_items of this CreateAiOpsRequestBody.
+
+        **参数解释**： 全量检测项中选取其中部分检测项进行检测，输入检测项列表。 **约束限制**： 当check_type为partial_detection时有效 **取值范围**： 通过智能运维ShowAiOpsDetector获取最新支持的检测项，输入检测项id字符串列表 **默认取值**： 不涉及
+
+        :return: The check_items of this CreateAiOpsRequestBody.
+        :rtype: list[str]
+        """
+        return self._check_items
+
+    @check_items.setter
+    def check_items(self, check_items):
+        r"""Sets the check_items of this CreateAiOpsRequestBody.
+
+        **参数解释**： 全量检测项中选取其中部分检测项进行检测，输入检测项列表。 **约束限制**： 当check_type为partial_detection时有效 **取值范围**： 通过智能运维ShowAiOpsDetector获取最新支持的检测项，输入检测项id字符串列表 **默认取值**： 不涉及
+
+        :param check_items: The check_items of this CreateAiOpsRequestBody.
+        :type check_items: list[str]
+        """
+        self._check_items = check_items
+
+    @property
     def name(self):
         r"""Gets the name of this CreateAiOpsRequestBody.
 
-        检测任务名称。
+        **参数解释**： 检测报告名称，支持自定义检测名。 **约束限制**： 不涉及 **取值范围**： 4～64个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。 **默认取值**： 不涉及
 
         :return: The name of this CreateAiOpsRequestBody.
         :rtype: str
@@ -67,7 +126,7 @@ class CreateAiOpsRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateAiOpsRequestBody.
 
-        检测任务名称。
+        **参数解释**： 检测报告名称，支持自定义检测名。 **约束限制**： 不涉及 **取值范围**： 4～64个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。 **默认取值**： 不涉及
 
         :param name: The name of this CreateAiOpsRequestBody.
         :type name: str
@@ -78,7 +137,7 @@ class CreateAiOpsRequestBody:
     def description(self):
         r"""Gets the description of this CreateAiOpsRequestBody.
 
-        检测任务描述。
+        **参数解释**： 检测报告描述，支持自定义检测描述 **约束限制**： 不涉及 **取值范围**： 0~255个字符 **默认取值**： 不涉及
 
         :return: The description of this CreateAiOpsRequestBody.
         :rtype: str
@@ -89,7 +148,7 @@ class CreateAiOpsRequestBody:
     def description(self, description):
         r"""Sets the description of this CreateAiOpsRequestBody.
 
-        检测任务描述。
+        **参数解释**： 检测报告描述，支持自定义检测描述 **约束限制**： 不涉及 **取值范围**： 0~255个字符 **默认取值**： 不涉及
 
         :param description: The description of this CreateAiOpsRequestBody.
         :type description: str

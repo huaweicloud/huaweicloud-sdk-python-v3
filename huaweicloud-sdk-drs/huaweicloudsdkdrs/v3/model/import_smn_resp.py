@@ -35,7 +35,7 @@ class ImportSmnResp:
 
         :param id: 任务ID
         :type id: str
-        :param status: 状态
+        :param status: 状态 取值：success，failed
         :type status: str
         :param error_code: 错误码
         :type error_code: str
@@ -86,7 +86,7 @@ class ImportSmnResp:
     def status(self):
         r"""Gets the status of this ImportSmnResp.
 
-        状态
+        状态 取值：success，failed
 
         :return: The status of this ImportSmnResp.
         :rtype: str
@@ -97,7 +97,7 @@ class ImportSmnResp:
     def status(self, status):
         r"""Sets the status of this ImportSmnResp.
 
-        状态
+        状态 取值：success，failed
 
         :param status: The status of this ImportSmnResp.
         :type status: str

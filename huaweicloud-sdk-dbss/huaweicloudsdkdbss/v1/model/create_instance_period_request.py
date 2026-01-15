@@ -67,7 +67,7 @@ class CreateInstancePeriodRequest:
         :type flavor_ref: str
         :param vpc_id: 虚拟私有云的ID
         :type vpc_id: str
-        :param availability_zone: 云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
+        :param availability_zone: 云服务器对应可用分区信息。(两个主备分区，中间用“,”分隔，例如az1.dc1,az2.dc2)。
         :type availability_zone: str
         :param enterprise_project_id: 企业项目ID。对接EPS必输。
         :type enterprise_project_id: str
@@ -81,9 +81,9 @@ class CreateInstancePeriodRequest:
         :type region: str
         :param cloud_service_type: 服务类型： - hws.service.type.dbss: 数据库审计
         :type cloud_service_type: str
-        :param charging_mode: 计费模式： - 0: 包周期计费 - 1: 按需计费
+        :param charging_mode: 计费模式： - 0：包周期计费 - 1：按需计费
         :type charging_mode: int
-        :param period_type: -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
+        :param period_type: -订购周期类型 - 0：天 - 1：周 - 2：月 - 3：年 - 4：小时 - 5：绝对时间
         :type period_type: int
         :param period_num: 订购周期数
         :type period_num: int
@@ -95,7 +95,7 @@ class CreateInstancePeriodRequest:
         :type tags: list[:class:`huaweicloudsdkdbss.v1.KeyValueBean`]
         :param promotion_info: 折扣信息
         :type promotion_info: str
-        :param is_auto_renew: 自动续费 - 1: 自动续费 - 0: 不自动续费
+        :param is_auto_renew: 自动续费 - 1：自动续费 - 0：不自动续费
         :type is_auto_renew: int
         """
         
@@ -214,7 +214,7 @@ class CreateInstancePeriodRequest:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateInstancePeriodRequest.
 
-        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
+        云服务器对应可用分区信息。(两个主备分区，中间用“,”分隔，例如az1.dc1,az2.dc2)。
 
         :return: The availability_zone of this CreateInstancePeriodRequest.
         :rtype: str
@@ -225,7 +225,7 @@ class CreateInstancePeriodRequest:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateInstancePeriodRequest.
 
-        云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
+        云服务器对应可用分区信息。(两个主备分区，中间用“,”分隔，例如az1.dc1,az2.dc2)。
 
         :param availability_zone: The availability_zone of this CreateInstancePeriodRequest.
         :type availability_zone: str
@@ -368,7 +368,7 @@ class CreateInstancePeriodRequest:
     def charging_mode(self):
         r"""Gets the charging_mode of this CreateInstancePeriodRequest.
 
-        计费模式： - 0: 包周期计费 - 1: 按需计费
+        计费模式： - 0：包周期计费 - 1：按需计费
 
         :return: The charging_mode of this CreateInstancePeriodRequest.
         :rtype: int
@@ -379,7 +379,7 @@ class CreateInstancePeriodRequest:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this CreateInstancePeriodRequest.
 
-        计费模式： - 0: 包周期计费 - 1: 按需计费
+        计费模式： - 0：包周期计费 - 1：按需计费
 
         :param charging_mode: The charging_mode of this CreateInstancePeriodRequest.
         :type charging_mode: int
@@ -390,7 +390,7 @@ class CreateInstancePeriodRequest:
     def period_type(self):
         r"""Gets the period_type of this CreateInstancePeriodRequest.
 
-        -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
+        -订购周期类型 - 0：天 - 1：周 - 2：月 - 3：年 - 4：小时 - 5：绝对时间
 
         :return: The period_type of this CreateInstancePeriodRequest.
         :rtype: int
@@ -401,7 +401,7 @@ class CreateInstancePeriodRequest:
     def period_type(self, period_type):
         r"""Sets the period_type of this CreateInstancePeriodRequest.
 
-        -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
+        -订购周期类型 - 0：天 - 1：周 - 2：月 - 3：年 - 4：小时 - 5：绝对时间
 
         :param period_type: The period_type of this CreateInstancePeriodRequest.
         :type period_type: int
@@ -522,7 +522,7 @@ class CreateInstancePeriodRequest:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this CreateInstancePeriodRequest.
 
-        自动续费 - 1: 自动续费 - 0: 不自动续费
+        自动续费 - 1：自动续费 - 0：不自动续费
 
         :return: The is_auto_renew of this CreateInstancePeriodRequest.
         :rtype: int
@@ -533,7 +533,7 @@ class CreateInstancePeriodRequest:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this CreateInstancePeriodRequest.
 
-        自动续费 - 1: 自动续费 - 0: 不自动续费
+        自动续费 - 1：自动续费 - 0：不自动续费
 
         :param is_auto_renew: The is_auto_renew of this CreateInstancePeriodRequest.
         :type is_auto_renew: int

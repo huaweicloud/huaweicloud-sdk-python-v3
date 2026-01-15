@@ -24,7 +24,7 @@ class ImageServer:
         'server_id': 'str',
         'instance_id': 'str',
         'image_id': 'str',
-        'status': 'str',
+        'status': 'ImageServerStatus',
         'authorize_accounts': 'list[ImageAccountInfo]',
         'create_time': 'datetime',
         'update_time': 'datetime',
@@ -71,8 +71,8 @@ class ImageServer:
         :type instance_id: str
         :param image_id: 镜像产物唯一标识。
         :type image_id: str
-        :param status: 镜像实例的状态: * &#39;CREATING&#39; - 实例创建中 * &#39;ACTIVE&#39; - 实例正常运行 * &#39;BUILDING&#39; - 镜像创建中 * &#39;BUILT&#39; - 镜像任务结束 * &#39;ERROR&#39; - 实例处于异常 * &#39;DELETING&#39; - 实例删除中 * &#39;NULL&#39; - 未设置
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
         :param authorize_accounts: 应用组授权用户， * 限制用户类型：&#39;USER&#39; - 用户
         :type authorize_accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageAccountInfo`]
         :param create_time: 镜像实例创建时间。
@@ -328,10 +328,8 @@ class ImageServer:
     def status(self):
         r"""Gets the status of this ImageServer.
 
-        镜像实例的状态: * 'CREATING' - 实例创建中 * 'ACTIVE' - 实例正常运行 * 'BUILDING' - 镜像创建中 * 'BUILT' - 镜像任务结束 * 'ERROR' - 实例处于异常 * 'DELETING' - 实例删除中 * 'NULL' - 未设置
-
         :return: The status of this ImageServer.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
         """
         return self._status
 
@@ -339,10 +337,8 @@ class ImageServer:
     def status(self, status):
         r"""Sets the status of this ImageServer.
 
-        镜像实例的状态: * 'CREATING' - 实例创建中 * 'ACTIVE' - 实例正常运行 * 'BUILDING' - 镜像创建中 * 'BUILT' - 镜像任务结束 * 'ERROR' - 实例处于异常 * 'DELETING' - 实例删除中 * 'NULL' - 未设置
-
         :param status: The status of this ImageServer.
-        :type status: str
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
         """
         self._status = status
 

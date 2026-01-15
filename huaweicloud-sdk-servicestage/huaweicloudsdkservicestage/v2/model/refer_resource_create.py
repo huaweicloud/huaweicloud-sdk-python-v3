@@ -16,7 +16,7 @@ class ReferResourceCreate:
 
     openapi_types = {
         'id': 'str',
-        'type': 'str',
+        'type': 'ResourceType',
         'refer_alias': 'str',
         'parameters': 'object'
     }
@@ -35,8 +35,8 @@ class ReferResourceCreate:
 
         :param id: 资源ID。
         :type id: str
-        :param type: 资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         :param refer_alias: 应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
         :type refer_alias: str
         :param parameters: 引用资源参数。
@@ -84,10 +84,8 @@ class ReferResourceCreate:
     def type(self):
         r"""Gets the type of this ReferResourceCreate.
 
-        资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
-
         :return: The type of this ReferResourceCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         return self._type
 
@@ -95,10 +93,8 @@ class ReferResourceCreate:
     def type(self, type):
         r"""Sets the type of this ReferResourceCreate.
 
-        资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
-
         :param type: The type of this ReferResourceCreate.
-        :type type: str
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         self._type = type
 

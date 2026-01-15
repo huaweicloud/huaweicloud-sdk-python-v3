@@ -37,7 +37,7 @@ class CreateRSetBatchLinesReq:
         :type name: str
         :param description: **参数解释：** 记录集的描述信息。 **约束限制：** 不涉及。 **取值范围：** 长度不超过255个字符。 **默认取值：** 不涉及。
         :type description: str
-        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - SOA：提供域名的基本信息和权威服务器的详细信息。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
         :type type: str
         :param lines: **参数解释：** 解析线路域名参数。 **约束限制：** 最多支持50个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type lines: list[:class:`huaweicloudsdkdns.v2.BatchCreateRecordSetWithLine`]
@@ -105,7 +105,7 @@ class CreateRSetBatchLinesReq:
     def type(self):
         r"""Gets the type of this CreateRSetBatchLinesReq.
 
-        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - SOA：提供域名的基本信息和权威服务器的详细信息。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
 
         :return: The type of this CreateRSetBatchLinesReq.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateRSetBatchLinesReq:
     def type(self, type):
         r"""Sets the type of this CreateRSetBatchLinesReq.
 
-        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** A、AAAA、MX、CNAME、TXT、SRV、NS、SOA、CAA。 **默认取值：** 不涉及。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - SOA：提供域名的基本信息和权威服务器的详细信息。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
 
         :param type: The type of this CreateRSetBatchLinesReq.
         :type type: str

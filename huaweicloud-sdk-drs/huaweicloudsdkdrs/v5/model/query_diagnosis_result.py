@@ -53,7 +53,7 @@ class QueryDiagnosisResult:
 
         :param score: 得分。
         :type score: int
-        :param status: 状态。
+        :param status: 状态。 INIT：初始化，RUNNING：诊断中，SUCCESS：诊断完成，FAILED：诊断失败
         :type status: str
         :param progress: 进度。
         :type progress: int
@@ -149,7 +149,7 @@ class QueryDiagnosisResult:
     def status(self):
         r"""Gets the status of this QueryDiagnosisResult.
 
-        状态。
+        状态。 INIT：初始化，RUNNING：诊断中，SUCCESS：诊断完成，FAILED：诊断失败
 
         :return: The status of this QueryDiagnosisResult.
         :rtype: str
@@ -160,7 +160,7 @@ class QueryDiagnosisResult:
     def status(self, status):
         r"""Sets the status of this QueryDiagnosisResult.
 
-        状态。
+        状态。 INIT：初始化，RUNNING：诊断中，SUCCESS：诊断完成，FAILED：诊断失败
 
         :param status: The status of this QueryDiagnosisResult.
         :type status: str

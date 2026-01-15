@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class GlobalDcGatewayStatus:
-
+    """
+    allowed enum values
+    """
+    DOWN = "DOWN"
+    PENDING_UPDATE = "PENDING_UPDATE"
+    ACTIVE = "ACTIVE"
+    ERROR = "ERROR"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -61,7 +61,7 @@ class SrcNodeReq:
         :type json_auth_file: str
         :param security_token: 源端桶的临时Token（最大长度16384个字符）
         :type security_token: str
-        :param app_id: 当源端为腾讯云时，需要填写此参数。
+        :param app_id: 腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
         :type app_id: str
         :param bucket: 源端桶的名称，task_type为非url_list时，本参数为必选。
         :type bucket: str
@@ -267,7 +267,7 @@ class SrcNodeReq:
     def app_id(self):
         r"""Gets the app_id of this SrcNodeReq.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :return: The app_id of this SrcNodeReq.
         :rtype: str
@@ -278,7 +278,7 @@ class SrcNodeReq:
     def app_id(self, app_id):
         r"""Sets the app_id of this SrcNodeReq.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :param app_id: The app_id of this SrcNodeReq.
         :type app_id: str

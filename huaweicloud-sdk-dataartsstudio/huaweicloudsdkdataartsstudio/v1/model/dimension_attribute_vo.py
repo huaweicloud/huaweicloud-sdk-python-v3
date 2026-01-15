@@ -23,7 +23,7 @@ class DimensionAttributeVO:
         'description': 'str',
         'create_by': 'str',
         'data_type': 'str',
-        'domain_type': 'str',
+        'domain_type': 'DataTypeDomainEnum',
         'data_type_extend': 'str',
         'is_primary_key': 'bool',
         'is_biz_primary': 'bool',
@@ -34,7 +34,7 @@ class DimensionAttributeVO:
         'stand_row_name': 'str',
         'quality_infos': 'list[QualityInfoVO]',
         'secrecy_levels': 'list[SecrecyLevelVO]',
-        'status': 'str',
+        'status': 'BizStatusEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'alias': 'str',
@@ -89,8 +89,8 @@ class DimensionAttributeVO:
         :type create_by: str
         :param data_type: 字段类型。
         :type data_type: str
-        :param domain_type: 字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-        :type domain_type: str
+        :param domain_type: 
+        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
         :param is_primary_key: 是否主键。
@@ -111,8 +111,8 @@ class DimensionAttributeVO:
         :type quality_infos: list[:class:`huaweicloudsdkdataartsstudio.v1.QualityInfoVO`]
         :param secrecy_levels: 密级
         :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
-        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -375,10 +375,8 @@ class DimensionAttributeVO:
     def domain_type(self):
         r"""Gets the domain_type of this DimensionAttributeVO.
 
-        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-
         :return: The domain_type of this DimensionAttributeVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         """
         return self._domain_type
 
@@ -386,10 +384,8 @@ class DimensionAttributeVO:
     def domain_type(self, domain_type):
         r"""Sets the domain_type of this DimensionAttributeVO.
 
-        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-
         :param domain_type: The domain_type of this DimensionAttributeVO.
-        :type domain_type: str
+        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         """
         self._domain_type = domain_type
 
@@ -617,10 +613,8 @@ class DimensionAttributeVO:
     def status(self):
         r"""Gets the status of this DimensionAttributeVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The status of this DimensionAttributeVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._status
 
@@ -628,10 +622,8 @@ class DimensionAttributeVO:
     def status(self, status):
         r"""Sets the status of this DimensionAttributeVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param status: The status of this DimensionAttributeVO.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._status = status
 

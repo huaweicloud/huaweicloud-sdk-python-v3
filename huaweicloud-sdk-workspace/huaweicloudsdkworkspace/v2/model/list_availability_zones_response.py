@@ -16,7 +16,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zones': 'list[AvailabilityZoneInfo]',
+        'availability_zones': 'list[AvailabilityZone]',
         'total_count': 'int'
     }
 
@@ -31,7 +31,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param availability_zones: 云桌面支持的可用分区列表。
-        :type availability_zones: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZoneInfo`]
+        :type availability_zones: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZone`]
         :param total_count: 云桌面支持的可用分区列表总数。
         :type total_count: int
         """
@@ -54,7 +54,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
         云桌面支持的可用分区列表。
 
         :return: The availability_zones of this ListAvailabilityZonesResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZoneInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZone`]
         """
         return self._availability_zones
 
@@ -65,7 +65,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
         云桌面支持的可用分区列表。
 
         :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
-        :type availability_zones: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZoneInfo`]
+        :type availability_zones: list[:class:`huaweicloudsdkworkspace.v2.AvailabilityZone`]
         """
         self._availability_zones = availability_zones
 

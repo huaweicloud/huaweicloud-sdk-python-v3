@@ -22,7 +22,7 @@ class ShowServerResponse(SdkResponse):
         'description': 'str',
         'server_group_id': 'str',
         'flavor': 'Flavor',
-        'status': 'str',
+        'status': 'ServerStatus',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'image_id': 'str',
@@ -37,8 +37,8 @@ class ShowServerResponse(SdkResponse):
         'maintain_status': 'bool',
         'scaling_auto_create': 'bool',
         'job_id': 'str',
-        'job_type': 'str',
-        'job_status': 'str',
+        'job_type': 'JobType',
+        'job_status': 'JobStatus',
         'job_time': 'datetime',
         'resource_pool_id': 'str',
         'resource_pool_type': 'str',
@@ -47,8 +47,8 @@ class ShowServerResponse(SdkResponse):
         'product_info': 'ProductInfo',
         'metadata': 'dict(str, str)',
         'session_count': 'int',
-        'vm_status': 'str',
-        'task_status': 'str',
+        'vm_status': 'AppServerStatus',
+        'task_status': 'AppServerTaskStatus',
         'freeze': 'list[CbcFreezeInfo]',
         'host_address': 'list[EcsNetWork]',
         'enterprise_project_id': 'str',
@@ -120,8 +120,8 @@ class ShowServerResponse(SdkResponse):
         :type server_group_id: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
-        :param status: 实例的状态： * &#x60;UNREGISTER&#x60; - 未就绪 * &#x60;REGISTERED&#x60; - 就绪状态 * &#x60;MAINTAINING&#x60; - 维护中 * &#x60;FREEZE&#x60; - 冻结 * &#x60;STOPPED&#x60; - 停止 * &#x60;NONE&#x60; - 异常状态
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         :param create_time: 服务器创建时间。
         :type create_time: datetime
         :param update_time: 更新时间。
@@ -150,10 +150,10 @@ class ShowServerResponse(SdkResponse):
         :type scaling_auto_create: bool
         :param job_id: 上一次执行job的id。
         :type job_id: str
-        :param job_type: job类型： * &#x60;CREATE_SERVER&#x60; - 创建服务器 * &#x60;DELETE_SERVER&#x60; - 删除服务器 * &#x60;UPDATE_FREEZE_STATUS&#x60; - 修改服务器冻结状态 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;REINSTALL_OS&#x60; - 重装操作系统 * &#x60;CHANGE_SERVER_IMAGE&#x60; - 更换镜像 * &#x60;REJOIN_DOMAIN&#x60; - 重新加域 * &#x60;MIGRATE_SERVER&#x60; - 迁移服务器 * &#x60;UPGRADE_ACCESS_AGENT&#x60; - hda升级 * &#x60;UPDATE_SERVER_TSVI&#x60; - 更新虚拟会话IP * &#x60;SCHEDULED_TASK&#x60; - 定时任务job * &#x60;COLLECT_HDA_LOG&#x60; - 收集hda日志 * &#x60;COLLECT_APS_LOG&#x60; - 收集aps日志 * &#x60;CREATE_SERVER_SNAPSHOT&#x60; - 创建服务器快照 * &#x60;DELETE_SERVER_SNAPSHOT&#x60; - 删除服务器快照 * &#x60;RESTORE_SERVER_SNAPSHOT&#x60; - 恢复服务器快照 * &#x60;BATCH_INSTALL_APP&#x60; - 批量安装应用 * &#x60;INSTALL_CES_AGENT&#x60; - 安装CES服务AGENT * &#x60;UNINSTALL_CES_AGENT&#x60; - 卸载CES服务AGENT
-        :type job_type: str
-        :param job_status: job状态 * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
-        :type job_status: str
+        :param job_type: 
+        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
+        :param job_status: 
+        :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         :param job_time: 上一次执行job的执行时间。
         :type job_time: datetime
         :param resource_pool_id: 资源池ID。
@@ -170,10 +170,10 @@ class ShowServerResponse(SdkResponse):
         :type metadata: dict(str, str)
         :param session_count: 会话数量。
         :type session_count: int
-        :param vm_status: 服务器的稳态，完成某个操作的稳定状态。 * &#x60;BUILD&#x60; - 创建APS实例,APS实例进入运行之前的状态 * &#x60;BUILD_FAIL&#x60; - 创建APS实例失败 * &#x60;REBOOT&#x60; - 实例正在进行重启操作 * &#x60;HARD_REBOOT&#x60; - 实例正在进行强制重启操作 * &#x60;REBUILD&#x60; - 实例正在重建中 * &#x60;REBUILD_FAIL&#x60; - 实例重建失败 * &#x60;MIGRATING&#x60; - 实例正在热迁移中 * &#x60;RESIZE&#x60; - 实例接收变更请求，开始进行变更操作 * &#x60;ACTIVE&#x60; - 实例正常运行状态 * &#x60;SHUTOFF&#x60; - 实例被正常停止 * &#x60;REVERT_RESIZE&#x60; - 实例正在回退变更规格的配置 * &#x60;VERIFY_RESIZE&#x60; - 实例正在校验变更完成后的配置。 * &#x60;ERROR&#x60; - 实例处于异常状态。 * &#x60;DELETING&#x60; - 实例删除中。 * &#x60;FREEZE&#x60; - 冻结 * &#x60;BUILD_IMAGE&#x60; - 生成镜像中 * &#x60;BUILD_SNAPSHOT&#x60; - 生成快照中 * &#x60;RESTORE_SNAPSHOT&#x60; - 恢复快照中 * &#x60;NULL&#x60; - 未设置
-        :type vm_status: str
-        :param task_status: server的任务状态: * &#x60;scheduling&#x60; - 实例处于创建中，正在进行调度 * &#x60;block_device_mapping&#x60; - 实例处于创建中，正在准备磁盘 * &#x60;networking&#x60; - 实例处于创建中，正在准备网络 * &#x60;spawning&#x60; - 实例处于创建中，正在内部创建 * &#x60;rebooting&#x60; - 实例处于重启中 * &#x60;reboot_pending&#x60; - 实例处于重启中，正在下发重启。 * &#x60;reboot_started&#x60; - 实例处于重启中，开始内部重启 * &#x60;rebooting_hard&#x60; - 实例处于强制重启中 * &#x60;reboot_pending_hard&#x60; - 实例处于强制重启中，正在下发重启 * &#x60;reboot_started_hard&#x60; - 实例处于强制重启中，开始内部重启。 * &#x60;rebuilding&#x60; - 实例处于重建中。 * &#x60;rebuild_fail&#x60; - 实例重建失败。 * &#x60;updating_tsvi&#x60; - 实例处于虚拟会话IP更新中。 * &#x60;updating_tsvi_failed&#x60; - 实例虚拟会话IP更新失败。 * &#x60;rebuild_block_device_mapping&#x60; - 实例处于重建中，正在准备磁盘。 * &#x60;rebuild_spawning&#x60; - 实例处于重建中，正在内部重建。 * &#x60;migrating&#x60; - 实例处于热迁移中。 * &#x60;resize_prep&#x60; - 实例处于调整规格中，正在准备阶段。 * &#x60;resize_migrating&#x60; - 实例处于调整规格中，正在迁移阶段。 * &#x60;resize_migrated&#x60; - 实例处于调整规格中，已经完成迁移。 * &#x60;resize_finish&#x60; - 实例处于调整规格中，正在完成调整。 * &#x60;resize_reverting&#x60; - 实例处于调整规格中，正在回退调整。 * &#x60;powering-off&#x60; - 实例处于停止中。 * &#x60;powering-on&#x60; - 实例处于启动中。 * &#x60;deleting&#x60; - 实例处于删除中。 * &#x60;source_locking&#x60; - 资源锁定中 * &#x60;rejoining_domain&#x60; - 实例正在重新加域 * &#x60;delete_failed&#x60; - 实例删除失败 * &#x60;upgrading_access_agent&#x60; - 实例正在升级AccessAgent * &#x60;upgrad_access_agent_fail&#x60; - 实例升级AccessAgent失败 * &#x60;upgrad_access_agent_success&#x60; - 实例升级AccessAgent成功 * &#x60;updating_sid&#x60; - 实例处于创建中，等待更新SID * &#x60;migrate_failed&#x60; - 实例迁移失败 * &#x60;build_image&#x60; - 生成镜像中 * &#x60;build_snapshot&#x60; - 生成快照中 * &#x60;restore_snapshot&#x60; - 恢复快照中 * &#x60;installing_app&#x60; - 静默安装app中 * &#x60;install_app_failed&#x60; - 安装app失败 * &#x60;null&#x60; - 未设置
-        :type task_status: str
+        :param vm_status: 
+        :type vm_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
+        :param task_status: 
+        :type task_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
         :param freeze: 冻结信息。
         :type freeze: list[:class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeInfo`]
         :param host_address: vpc和子网信息。
@@ -452,10 +452,8 @@ class ShowServerResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowServerResponse.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :return: The status of this ShowServerResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         return self._status
 
@@ -463,10 +461,8 @@ class ShowServerResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowServerResponse.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :param status: The status of this ShowServerResponse.
-        :type status: str
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         self._status = status
 
@@ -782,10 +778,8 @@ class ShowServerResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this ShowServerResponse.
 
-        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
-
         :return: The job_type of this ShowServerResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         """
         return self._job_type
 
@@ -793,10 +787,8 @@ class ShowServerResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowServerResponse.
 
-        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
-
         :param job_type: The job_type of this ShowServerResponse.
-        :type job_type: str
+        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         """
         self._job_type = job_type
 
@@ -804,10 +796,8 @@ class ShowServerResponse(SdkResponse):
     def job_status(self):
         r"""Gets the job_status of this ShowServerResponse.
 
-        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :return: The job_status of this ShowServerResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         """
         return self._job_status
 
@@ -815,10 +805,8 @@ class ShowServerResponse(SdkResponse):
     def job_status(self, job_status):
         r"""Sets the job_status of this ShowServerResponse.
 
-        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :param job_status: The job_status of this ShowServerResponse.
-        :type job_status: str
+        :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         """
         self._job_status = job_status
 
@@ -998,10 +986,8 @@ class ShowServerResponse(SdkResponse):
     def vm_status(self):
         r"""Gets the vm_status of this ShowServerResponse.
 
-        服务器的稳态，完成某个操作的稳定状态。 * `BUILD` - 创建APS实例,APS实例进入运行之前的状态 * `BUILD_FAIL` - 创建APS实例失败 * `REBOOT` - 实例正在进行重启操作 * `HARD_REBOOT` - 实例正在进行强制重启操作 * `REBUILD` - 实例正在重建中 * `REBUILD_FAIL` - 实例重建失败 * `MIGRATING` - 实例正在热迁移中 * `RESIZE` - 实例接收变更请求，开始进行变更操作 * `ACTIVE` - 实例正常运行状态 * `SHUTOFF` - 实例被正常停止 * `REVERT_RESIZE` - 实例正在回退变更规格的配置 * `VERIFY_RESIZE` - 实例正在校验变更完成后的配置。 * `ERROR` - 实例处于异常状态。 * `DELETING` - 实例删除中。 * `FREEZE` - 冻结 * `BUILD_IMAGE` - 生成镜像中 * `BUILD_SNAPSHOT` - 生成快照中 * `RESTORE_SNAPSHOT` - 恢复快照中 * `NULL` - 未设置
-
         :return: The vm_status of this ShowServerResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
         """
         return self._vm_status
 
@@ -1009,10 +995,8 @@ class ShowServerResponse(SdkResponse):
     def vm_status(self, vm_status):
         r"""Sets the vm_status of this ShowServerResponse.
 
-        服务器的稳态，完成某个操作的稳定状态。 * `BUILD` - 创建APS实例,APS实例进入运行之前的状态 * `BUILD_FAIL` - 创建APS实例失败 * `REBOOT` - 实例正在进行重启操作 * `HARD_REBOOT` - 实例正在进行强制重启操作 * `REBUILD` - 实例正在重建中 * `REBUILD_FAIL` - 实例重建失败 * `MIGRATING` - 实例正在热迁移中 * `RESIZE` - 实例接收变更请求，开始进行变更操作 * `ACTIVE` - 实例正常运行状态 * `SHUTOFF` - 实例被正常停止 * `REVERT_RESIZE` - 实例正在回退变更规格的配置 * `VERIFY_RESIZE` - 实例正在校验变更完成后的配置。 * `ERROR` - 实例处于异常状态。 * `DELETING` - 实例删除中。 * `FREEZE` - 冻结 * `BUILD_IMAGE` - 生成镜像中 * `BUILD_SNAPSHOT` - 生成快照中 * `RESTORE_SNAPSHOT` - 恢复快照中 * `NULL` - 未设置
-
         :param vm_status: The vm_status of this ShowServerResponse.
-        :type vm_status: str
+        :type vm_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
         """
         self._vm_status = vm_status
 
@@ -1020,10 +1004,8 @@ class ShowServerResponse(SdkResponse):
     def task_status(self):
         r"""Gets the task_status of this ShowServerResponse.
 
-        server的任务状态: * `scheduling` - 实例处于创建中，正在进行调度 * `block_device_mapping` - 实例处于创建中，正在准备磁盘 * `networking` - 实例处于创建中，正在准备网络 * `spawning` - 实例处于创建中，正在内部创建 * `rebooting` - 实例处于重启中 * `reboot_pending` - 实例处于重启中，正在下发重启。 * `reboot_started` - 实例处于重启中，开始内部重启 * `rebooting_hard` - 实例处于强制重启中 * `reboot_pending_hard` - 实例处于强制重启中，正在下发重启 * `reboot_started_hard` - 实例处于强制重启中，开始内部重启。 * `rebuilding` - 实例处于重建中。 * `rebuild_fail` - 实例重建失败。 * `updating_tsvi` - 实例处于虚拟会话IP更新中。 * `updating_tsvi_failed` - 实例虚拟会话IP更新失败。 * `rebuild_block_device_mapping` - 实例处于重建中，正在准备磁盘。 * `rebuild_spawning` - 实例处于重建中，正在内部重建。 * `migrating` - 实例处于热迁移中。 * `resize_prep` - 实例处于调整规格中，正在准备阶段。 * `resize_migrating` - 实例处于调整规格中，正在迁移阶段。 * `resize_migrated` - 实例处于调整规格中，已经完成迁移。 * `resize_finish` - 实例处于调整规格中，正在完成调整。 * `resize_reverting` - 实例处于调整规格中，正在回退调整。 * `powering-off` - 实例处于停止中。 * `powering-on` - 实例处于启动中。 * `deleting` - 实例处于删除中。 * `source_locking` - 资源锁定中 * `rejoining_domain` - 实例正在重新加域 * `delete_failed` - 实例删除失败 * `upgrading_access_agent` - 实例正在升级AccessAgent * `upgrad_access_agent_fail` - 实例升级AccessAgent失败 * `upgrad_access_agent_success` - 实例升级AccessAgent成功 * `updating_sid` - 实例处于创建中，等待更新SID * `migrate_failed` - 实例迁移失败 * `build_image` - 生成镜像中 * `build_snapshot` - 生成快照中 * `restore_snapshot` - 恢复快照中 * `installing_app` - 静默安装app中 * `install_app_failed` - 安装app失败 * `null` - 未设置
-
         :return: The task_status of this ShowServerResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
         """
         return self._task_status
 
@@ -1031,10 +1013,8 @@ class ShowServerResponse(SdkResponse):
     def task_status(self, task_status):
         r"""Sets the task_status of this ShowServerResponse.
 
-        server的任务状态: * `scheduling` - 实例处于创建中，正在进行调度 * `block_device_mapping` - 实例处于创建中，正在准备磁盘 * `networking` - 实例处于创建中，正在准备网络 * `spawning` - 实例处于创建中，正在内部创建 * `rebooting` - 实例处于重启中 * `reboot_pending` - 实例处于重启中，正在下发重启。 * `reboot_started` - 实例处于重启中，开始内部重启 * `rebooting_hard` - 实例处于强制重启中 * `reboot_pending_hard` - 实例处于强制重启中，正在下发重启 * `reboot_started_hard` - 实例处于强制重启中，开始内部重启。 * `rebuilding` - 实例处于重建中。 * `rebuild_fail` - 实例重建失败。 * `updating_tsvi` - 实例处于虚拟会话IP更新中。 * `updating_tsvi_failed` - 实例虚拟会话IP更新失败。 * `rebuild_block_device_mapping` - 实例处于重建中，正在准备磁盘。 * `rebuild_spawning` - 实例处于重建中，正在内部重建。 * `migrating` - 实例处于热迁移中。 * `resize_prep` - 实例处于调整规格中，正在准备阶段。 * `resize_migrating` - 实例处于调整规格中，正在迁移阶段。 * `resize_migrated` - 实例处于调整规格中，已经完成迁移。 * `resize_finish` - 实例处于调整规格中，正在完成调整。 * `resize_reverting` - 实例处于调整规格中，正在回退调整。 * `powering-off` - 实例处于停止中。 * `powering-on` - 实例处于启动中。 * `deleting` - 实例处于删除中。 * `source_locking` - 资源锁定中 * `rejoining_domain` - 实例正在重新加域 * `delete_failed` - 实例删除失败 * `upgrading_access_agent` - 实例正在升级AccessAgent * `upgrad_access_agent_fail` - 实例升级AccessAgent失败 * `upgrad_access_agent_success` - 实例升级AccessAgent成功 * `updating_sid` - 实例处于创建中，等待更新SID * `migrate_failed` - 实例迁移失败 * `build_image` - 生成镜像中 * `build_snapshot` - 生成快照中 * `restore_snapshot` - 恢复快照中 * `installing_app` - 静默安装app中 * `install_app_failed` - 安装app失败 * `null` - 未设置
-
         :param task_status: The task_status of this ShowServerResponse.
-        :type task_status: str
+        :type task_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
         """
         self._task_status = task_status
 

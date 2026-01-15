@@ -29,7 +29,7 @@ class UpdateDesktopPoolAttributesReq:
         'data_volumes': 'list[DesktopPoolVolumeInfo]',
         'vpc_id': 'str',
         'subnet_ids': 'list[str]',
-        'security_groups': 'list[SecurityGroup]',
+        'security_groups': 'list[SecurityGroupIdInfo]',
         'enterprise_project_id': 'str'
     }
 
@@ -86,7 +86,7 @@ class UpdateDesktopPoolAttributesReq:
         :param subnet_ids: 桌面池子网ID列表
         :type subnet_ids: list[str]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         """
@@ -451,7 +451,7 @@ class UpdateDesktopPoolAttributesReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
 
         :return: The security_groups of this UpdateDesktopPoolAttributesReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         return self._security_groups
 
@@ -462,7 +462,7 @@ class UpdateDesktopPoolAttributesReq:
         桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
 
         :param security_groups: The security_groups of this UpdateDesktopPoolAttributesReq.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupIdInfo`]
         """
         self._security_groups = security_groups
 

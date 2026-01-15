@@ -51,7 +51,7 @@ class TemplateBean:
         :type desc: str
         :param frequency: 周期
         :type frequency: str
-        :param group: 类型 - COMPREHENSIVE: 综合报表 - COMPLIANCE: 合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
+        :param group: 类型 - COMPREHENSIVE：综合报表 - COMPLIANCE：合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
         :type group: str
         :param id: 模板ID
         :type id: str
@@ -59,7 +59,7 @@ class TemplateBean:
         :type name: str
         :param status: 状态 - OFF：已关闭 - ON：已开启
         :type status: str
-        :param type: 报表类型 - COMPREHENSIVE: 数据库安全综合报表 - COMPLIANCE: 数据库安全合规报表 - SOX: SOX-萨班斯报表 - PCI: 行业标准安全报表 - DB_ANALYSIS: 数据库服务器分析报表 - CLIENT_IP_ANALYSIS: 客户端IP分析报表 - SQL_DCL_COMMAND: DCL命令报表 - SQL_DDL_COMMAND: DDL命令报表 - SQL_DML_COMMAND: DML命令报表
+        :param type: 报表类型 - COMPREHENSIVE：数据库安全综合报表 - COMPLIANCE：数据库安全合规报表 - SOX：SOX-萨班斯报表 - PCI：行业标准安全报表 - DB_ANALYSIS：数据库服务器分析报表 - CLIENT_IP_ANALYSIS：客户端IP分析报表 - SQL_DCL_COMMAND：DCL命令报表 - SQL_DDL_COMMAND：DDL命令报表 - SQL_DML_COMMAND：DML命令报表
         :type type: str
         """
         
@@ -187,7 +187,7 @@ class TemplateBean:
     def group(self):
         r"""Gets the group of this TemplateBean.
 
-        类型 - COMPREHENSIVE: 综合报表 - COMPLIANCE: 合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
+        类型 - COMPREHENSIVE：综合报表 - COMPLIANCE：合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
 
         :return: The group of this TemplateBean.
         :rtype: str
@@ -198,7 +198,7 @@ class TemplateBean:
     def group(self, group):
         r"""Sets the group of this TemplateBean.
 
-        类型 - COMPREHENSIVE: 综合报表 - COMPLIANCE: 合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
+        类型 - COMPREHENSIVE：综合报表 - COMPLIANCE：合规报表 - DB_SPECIAL：数据库专项报表 - CLIENT_SPECIAL：客户端专项报表 - SQL_SPECIAL：SQL
 
         :param group: The group of this TemplateBean.
         :type group: str
@@ -275,7 +275,7 @@ class TemplateBean:
     def type(self):
         r"""Gets the type of this TemplateBean.
 
-        报表类型 - COMPREHENSIVE: 数据库安全综合报表 - COMPLIANCE: 数据库安全合规报表 - SOX: SOX-萨班斯报表 - PCI: 行业标准安全报表 - DB_ANALYSIS: 数据库服务器分析报表 - CLIENT_IP_ANALYSIS: 客户端IP分析报表 - SQL_DCL_COMMAND: DCL命令报表 - SQL_DDL_COMMAND: DDL命令报表 - SQL_DML_COMMAND: DML命令报表
+        报表类型 - COMPREHENSIVE：数据库安全综合报表 - COMPLIANCE：数据库安全合规报表 - SOX：SOX-萨班斯报表 - PCI：行业标准安全报表 - DB_ANALYSIS：数据库服务器分析报表 - CLIENT_IP_ANALYSIS：客户端IP分析报表 - SQL_DCL_COMMAND：DCL命令报表 - SQL_DDL_COMMAND：DDL命令报表 - SQL_DML_COMMAND：DML命令报表
 
         :return: The type of this TemplateBean.
         :rtype: str
@@ -286,7 +286,7 @@ class TemplateBean:
     def type(self, type):
         r"""Sets the type of this TemplateBean.
 
-        报表类型 - COMPREHENSIVE: 数据库安全综合报表 - COMPLIANCE: 数据库安全合规报表 - SOX: SOX-萨班斯报表 - PCI: 行业标准安全报表 - DB_ANALYSIS: 数据库服务器分析报表 - CLIENT_IP_ANALYSIS: 客户端IP分析报表 - SQL_DCL_COMMAND: DCL命令报表 - SQL_DDL_COMMAND: DDL命令报表 - SQL_DML_COMMAND: DML命令报表
+        报表类型 - COMPREHENSIVE：数据库安全综合报表 - COMPLIANCE：数据库安全合规报表 - SOX：SOX-萨班斯报表 - PCI：行业标准安全报表 - DB_ANALYSIS：数据库服务器分析报表 - CLIENT_IP_ANALYSIS：客户端IP分析报表 - SQL_DCL_COMMAND：DCL命令报表 - SQL_DDL_COMMAND：DDL命令报表 - SQL_DML_COMMAND：DML命令报表
 
         :param type: The type of this TemplateBean.
         :type type: str

@@ -4,7 +4,32 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CentralNetworkCapabilityEnum:
-
+    """
+    allowed enum values
+    """
+    CENTRAL_NETWORK_IS_SUPPORT = "central-network.is-support"
+    CENTRAL_NETWORK_IS_SUPPORT_ENTERPRISE_PROJECT = "central-network.is-support-enterprise-project"
+    CENTRAL_NETWORK_IS_SUPPORT_TAG = "central-network.is-support-tag"
+    CENTRAL_NETWORK_IS_SUPPORT_CUSTOM_ER_TABLE = "central-network.is-support-custom-er-table"
+    CONNECTION_BANDWIDTH_SIZE_RANGE = "connection-bandwidth.size-range"
+    CONNECTION_BANDWIDTH_CHARGE_MODE = "connection-bandwidth.charge-mode"
+    CONNECTION_BANDWIDTH_FREE_LINE = "connection-bandwidth.free-line"
+    ER_INSTANCE_SUPPORT_REGIONS = "er-instance.support-regions"
+    ER_INSTANCE_SUPPORT_IPV6_REGIONS = "er-instance.support-ipv6-regions"
+    ER_INSTANCE_SUPPORT_DSCP_REGIONS = "er-instance.support-dscp-regions"
+    ER_INSTANCE_SUPPORT_STS5_REGIONS = "er-instance.support-sts5-regions"
+    ER_INSTANCE_SUPPORT_SITES = "er-instance.support-sites"
+    CUSTOM_CONNECTIONS_IS_SUPPORT = "custom-connections.is-support"
+    CUSTOM_CONNECTIONS_SUPPORT_REGIONS = "custom-connections.support-regions"
+    GDGW_INSTANCE_SUPPORT_DSCP_REGIONS = "gdgw-instance.support-dscp-regions"
+    GDGW_INSTANCE_SUPPORT_FREEZE_REGIONS = "gdgw-instance.support-freeze-regions"
+    GDGW_ATTACHMENT_IS_SUPPORT = "gdgw-attachment.is-support"
+    GDGW_ATTACHMENT_SUPPORT_REGIONS = "gdgw-attachment.support-regions"
+    GDGW_ATTACHMENT_SUPPORT_SITES = "gdgw-attachment.support-sites"
+    ER_ROUTE_TABLE_ATTACHMENT_IS_SUPPORT = "er-route-table-attachment.is-support"
+    ER_ROUTE_TABLE_ATTACHMENT_SUPPORT_REGIONS = "er-route-table-attachment.support-regions"
+    ER_ROUTE_TABLE_ATTACHMENT_SUPPORT_SITES = "er-route-table-attachment.support-sites"
+    CLOUD_ALLIANCE_SUPPORT_REGIONS = "cloud-alliance.support-regions"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

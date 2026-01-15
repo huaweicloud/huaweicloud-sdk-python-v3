@@ -17,35 +17,35 @@ class ShowDomainTemplateResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'temlates': 'list[TemplateItem]'
+        'templates': 'list[TemplateItem]'
     }
 
     attribute_map = {
         'total': 'total',
-        'temlates': 'temlates'
+        'templates': 'templates'
     }
 
-    def __init__(self, total=None, temlates=None):
+    def __init__(self, total=None, templates=None):
         r"""ShowDomainTemplateResponse
 
         The model defined in huaweicloud sdk
 
         :param total: **参数解释：** 查询域名模板总数 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type total: int
-        :param temlates: 
-        :type temlates: list[:class:`huaweicloudsdkcdn.v2.TemplateItem`]
+        :param templates: 
+        :type templates: list[:class:`huaweicloudsdkcdn.v2.TemplateItem`]
         """
         
         super().__init__()
 
         self._total = None
-        self._temlates = None
+        self._templates = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
-        if temlates is not None:
-            self.temlates = temlates
+        if templates is not None:
+            self.templates = templates
 
     @property
     def total(self):
@@ -70,22 +70,22 @@ class ShowDomainTemplateResponse(SdkResponse):
         self._total = total
 
     @property
-    def temlates(self):
-        r"""Gets the temlates of this ShowDomainTemplateResponse.
+    def templates(self):
+        r"""Gets the templates of this ShowDomainTemplateResponse.
 
-        :return: The temlates of this ShowDomainTemplateResponse.
+        :return: The templates of this ShowDomainTemplateResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TemplateItem`]
         """
-        return self._temlates
+        return self._templates
 
-    @temlates.setter
-    def temlates(self, temlates):
-        r"""Sets the temlates of this ShowDomainTemplateResponse.
+    @templates.setter
+    def templates(self, templates):
+        r"""Sets the templates of this ShowDomainTemplateResponse.
 
-        :param temlates: The temlates of this ShowDomainTemplateResponse.
-        :type temlates: list[:class:`huaweicloudsdkcdn.v2.TemplateItem`]
+        :param templates: The templates of this ShowDomainTemplateResponse.
+        :type templates: list[:class:`huaweicloudsdkcdn.v2.TemplateItem`]
         """
-        self._temlates = temlates
+        self._templates = templates
 
     def to_dict(self):
         import warnings

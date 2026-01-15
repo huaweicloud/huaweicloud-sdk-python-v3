@@ -17,8 +17,8 @@ class BatchChangeServerImageReq:
     openapi_types = {
         'server_ids': 'list[str]',
         'image_id': 'str',
-        'image_type': 'str',
-        'os_type': 'str',
+        'image_type': 'ImageTypeEnum',
+        'os_type': 'OsTypeEnum',
         'image_product_id': 'str',
         'update_access_agent': 'bool'
     }
@@ -41,10 +41,10 @@ class BatchChangeServerImageReq:
         :type server_ids: list[str]
         :param image_id: 镜像id，要求与服务器原有镜像id不相同。
         :type image_id: str
-        :param image_type: 镜像类型： * &#x60;gold&#x60; - 云市场镜像 * &#x60;public&#x60; - 公共镜像 * &#x60;private&#x60; - 私有镜像 * &#x60;shared&#x60; - 共享镜像 * &#x60;other&#x60; - 其他
-        :type image_type: str
-        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
-        :type os_type: str
+        :param image_type: 
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
+        :param os_type: 
+        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         :param image_product_id: 镜像的产品id，当镜像是市场镜像时候，该字段必传。
         :type image_product_id: str
         :param update_access_agent: 是否自动升级hda版本。
@@ -119,10 +119,8 @@ class BatchChangeServerImageReq:
     def image_type(self):
         r"""Gets the image_type of this BatchChangeServerImageReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :return: The image_type of this BatchChangeServerImageReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         return self._image_type
 
@@ -130,10 +128,8 @@ class BatchChangeServerImageReq:
     def image_type(self, image_type):
         r"""Sets the image_type of this BatchChangeServerImageReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :param image_type: The image_type of this BatchChangeServerImageReq.
-        :type image_type: str
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         self._image_type = image_type
 
@@ -141,10 +137,8 @@ class BatchChangeServerImageReq:
     def os_type(self):
         r"""Gets the os_type of this BatchChangeServerImageReq.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
-
         :return: The os_type of this BatchChangeServerImageReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         """
         return self._os_type
 
@@ -152,10 +146,8 @@ class BatchChangeServerImageReq:
     def os_type(self, os_type):
         r"""Sets the os_type of this BatchChangeServerImageReq.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
-
         :param os_type: The os_type of this BatchChangeServerImageReq.
-        :type os_type: str
+        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         """
         self._os_type = os_type
 

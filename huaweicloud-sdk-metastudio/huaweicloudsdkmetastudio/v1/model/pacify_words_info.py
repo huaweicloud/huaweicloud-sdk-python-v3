@@ -17,7 +17,7 @@ class PacifyWordsInfo:
     openapi_types = {
         'pacify_words_id': 'str',
         'pacify_words': 'str',
-        'language': 'str',
+        'language': 'LanguageEnum',
         'robot_id': 'str',
         'pacify_words_type': 'int',
         'intent': 'str',
@@ -45,8 +45,8 @@ class PacifyWordsInfo:
         :type pacify_words_id: str
         :param pacify_words: 安抚话术。
         :type pacify_words: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param robot_id: 应用ID。
         :type robot_id: str
         :param pacify_words_type: 安抚话术类型 &gt; 0:通用安抚话术, 1:基于意图匹配安抚话术
@@ -136,10 +136,8 @@ class PacifyWordsInfo:
     def language(self):
         r"""Gets the language of this PacifyWordsInfo.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this PacifyWordsInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -147,10 +145,8 @@ class PacifyWordsInfo:
     def language(self, language):
         r"""Sets the language of this PacifyWordsInfo.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this PacifyWordsInfo.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

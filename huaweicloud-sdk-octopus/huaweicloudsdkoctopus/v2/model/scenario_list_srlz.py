@@ -23,15 +23,15 @@ class ScenarioListSrlz:
         'gen_scenario': 'str',
         'road_scenario': 'str',
         'simulator': 'str',
-        'version': 'str',
+        'version': 'ScenarioVersionEnum',
         'filename': 'str',
         'map_filename': 'str',
         'model_filename': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'name': 'str',
-        'priority': 'int',
-        'status': 'int',
+        'priority': 'PriorityEnum',
+        'status': 'ScenarioStatusEnum',
         'map': 'str',
         'model': 'str'
     }
@@ -79,8 +79,8 @@ class ScenarioListSrlz:
         :type road_scenario: str
         :param simulator: 仿真器名称,取值范围:A,B,C,D,E
         :type simulator: str
-        :param version: 版本
-        :type version: str
+        :param version: 
+        :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
         :param filename: 
         :type filename: str
         :param map_filename: 
@@ -93,10 +93,10 @@ class ScenarioListSrlz:
         :type user_name: str
         :param name: 
         :type name: str
-        :param priority: * &#x60;120&#x60; - S * &#x60;100&#x60; - A * &#x60;80&#x60; - B * &#x60;60&#x60; - C * &#x60;40&#x60; - D
-        :type priority: int
-        :param status: * &#x60;0&#x60; - Released * &#x60;1&#x60; - Available * &#x60;10&#x60; - Initial * &#x60;11&#x60; - Unavailable * &#x60;12&#x60; - Releasing * &#x60;100&#x60; - Deprecated
-        :type status: int
+        :param priority: 
+        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
+        :param status: 
+        :type status: :class:`huaweicloudsdkoctopus.v2.ScenarioStatusEnum`
         :param map: 
         :type map: str
         :param model: 
@@ -300,10 +300,8 @@ class ScenarioListSrlz:
     def version(self):
         r"""Gets the version of this ScenarioListSrlz.
 
-        版本
-
         :return: The version of this ScenarioListSrlz.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
         """
         return self._version
 
@@ -311,10 +309,8 @@ class ScenarioListSrlz:
     def version(self, version):
         r"""Sets the version of this ScenarioListSrlz.
 
-        版本
-
         :param version: The version of this ScenarioListSrlz.
-        :type version: str
+        :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
         """
         self._version = version
 
@@ -430,10 +426,8 @@ class ScenarioListSrlz:
     def priority(self):
         r"""Gets the priority of this ScenarioListSrlz.
 
-        * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
-
         :return: The priority of this ScenarioListSrlz.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
         """
         return self._priority
 
@@ -441,10 +435,8 @@ class ScenarioListSrlz:
     def priority(self, priority):
         r"""Sets the priority of this ScenarioListSrlz.
 
-        * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
-
         :param priority: The priority of this ScenarioListSrlz.
-        :type priority: int
+        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
         """
         self._priority = priority
 
@@ -452,10 +444,8 @@ class ScenarioListSrlz:
     def status(self):
         r"""Gets the status of this ScenarioListSrlz.
 
-        * `0` - Released * `1` - Available * `10` - Initial * `11` - Unavailable * `12` - Releasing * `100` - Deprecated
-
         :return: The status of this ScenarioListSrlz.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioStatusEnum`
         """
         return self._status
 
@@ -463,10 +453,8 @@ class ScenarioListSrlz:
     def status(self, status):
         r"""Sets the status of this ScenarioListSrlz.
 
-        * `0` - Released * `1` - Available * `10` - Initial * `11` - Unavailable * `12` - Releasing * `100` - Deprecated
-
         :param status: The status of this ScenarioListSrlz.
-        :type status: int
+        :type status: :class:`huaweicloudsdkoctopus.v2.ScenarioStatusEnum`
         """
         self._status = status
 

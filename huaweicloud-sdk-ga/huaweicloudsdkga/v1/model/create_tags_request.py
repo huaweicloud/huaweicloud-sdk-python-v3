@@ -15,7 +15,7 @@ class CreateTagsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'str',
+        'resource_type': 'ResourceType',
         'resource_id': 'str',
         'body': 'CreateTagsRequestBody'
     }
@@ -32,7 +32,7 @@ class CreateTagsRequest:
         The model defined in huaweicloud sdk
 
         :param resource_type: 资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
         :param resource_id: 资源ID。
         :type resource_id: str
         :param body: Body of the CreateTagsRequest
@@ -58,7 +58,7 @@ class CreateTagsRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :return: The resource_type of this CreateTagsRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ResourceType`
         """
         return self._resource_type
 
@@ -69,7 +69,7 @@ class CreateTagsRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :param resource_type: The resource_type of this CreateTagsRequest.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
         """
         self._resource_type = resource_type
 

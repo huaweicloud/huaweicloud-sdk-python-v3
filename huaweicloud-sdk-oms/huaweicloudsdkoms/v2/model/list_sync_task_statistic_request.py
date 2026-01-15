@@ -17,8 +17,8 @@ class ListSyncTaskStatisticRequest:
     openapi_types = {
         'sync_task_id': 'str',
         'data_type': 'str',
-        'start_time': 'str',
-        'end_time': 'str'
+        'start_time': 'int',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -38,9 +38,9 @@ class ListSyncTaskStatisticRequest:
         :param data_type: 统计数据类型： 多类型查询用‘,’分隔； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
         :type data_type: str
         :param start_time: 查询开始时间
-        :type start_time: str
+        :type start_time: int
         :param end_time: 查询结束时间
-        :type end_time: str
+        :type end_time: int
         """
         
         
@@ -107,7 +107,7 @@ class ListSyncTaskStatisticRequest:
         查询开始时间
 
         :return: The start_time of this ListSyncTaskStatisticRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -118,7 +118,7 @@ class ListSyncTaskStatisticRequest:
         查询开始时间
 
         :param start_time: The start_time of this ListSyncTaskStatisticRequest.
-        :type start_time: str
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -129,7 +129,7 @@ class ListSyncTaskStatisticRequest:
         查询结束时间
 
         :return: The end_time of this ListSyncTaskStatisticRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -140,7 +140,7 @@ class ListSyncTaskStatisticRequest:
         查询结束时间
 
         :param end_time: The end_time of this ListSyncTaskStatisticRequest.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

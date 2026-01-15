@@ -39,7 +39,7 @@ class DatabaseObjectInfo:
         :type id: str
         :param parent_id: type为table或view时需要填写，为库名
         :type parent_id: str
-        :param type: 类型。
+        :param type: 类型。 table：表名，function：函数，database：SCHEMA，procedure：存储过程
         :type type: str
         :param name: 数据库对象名称，库名、表名、视图名
         :type name: str
@@ -115,7 +115,7 @@ class DatabaseObjectInfo:
     def type(self):
         r"""Gets the type of this DatabaseObjectInfo.
 
-        类型。
+        类型。 table：表名，function：函数，database：SCHEMA，procedure：存储过程
 
         :return: The type of this DatabaseObjectInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class DatabaseObjectInfo:
     def type(self, type):
         r"""Sets the type of this DatabaseObjectInfo.
 
-        类型。
+        类型。 table：表名，function：函数，database：SCHEMA，procedure：存储过程
 
         :param type: The type of this DatabaseObjectInfo.
         :type type: str

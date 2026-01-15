@@ -16,27 +16,27 @@ class IsapJobModeSettingDto:
 
     openapi_types = {
         'batch_overtime_interval': 'int',
-        'batch_overtime_unit': 'str',
+        'batch_overtime_unit': 'IsapTimeUnit',
         'batch_frequency_interval': 'int',
-        'batch_frequency_unit': 'str',
+        'batch_frequency_unit': 'IsapTimeUnit',
         'streaming_state_ttl_interval': 'int',
-        'streaming_state_ttl_unit': 'str',
+        'streaming_state_ttl_unit': 'IsapTimeUnit',
         'streaming_checkpoint_ttl_interval': 'int',
-        'streaming_checkpoint_ttl_unit': 'str',
-        'streaming_startup_mode': 'str',
+        'streaming_checkpoint_ttl_unit': 'IsapTimeUnit',
+        'streaming_startup_mode': 'IsapJobStartupModeEnum',
         'batch_overtime_strategy_interval': 'int',
-        'batch_overtime_strategy_unit': 'str',
+        'batch_overtime_strategy_unit': 'IsapTimeUnit',
         'search_delay_interval': 'int',
-        'search_delay_unit': 'str',
+        'search_delay_unit': 'IsapTimeUnit',
         'search_frequency_interval': 'int',
-        'search_frequency_unit': 'str',
+        'search_frequency_unit': 'IsapTimeUnit',
         'search_overtime_interval': 'int',
-        'search_overtime_unit': 'str',
+        'search_overtime_unit': 'IsapTimeUnit',
         'search_period_interval': 'int',
-        'search_period_unit': 'str',
+        'search_period_unit': 'IsapTimeUnit',
         'search_table_id': 'str',
         'search_table_name': 'str',
-        'field_not_null_policy': 'str',
+        'field_not_null_policy': 'IsapJobFieldNotNullPolicy',
         'dss_id': 'int'
     }
 
@@ -73,48 +73,48 @@ class IsapJobModeSettingDto:
 
         :param batch_overtime_interval: 整型间隔时长
         :type batch_overtime_interval: int
-        :param batch_overtime_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type batch_overtime_unit: str
+        :param batch_overtime_unit: 
+        :type batch_overtime_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param batch_frequency_interval: 整型间隔时长
         :type batch_frequency_interval: int
-        :param batch_frequency_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type batch_frequency_unit: str
+        :param batch_frequency_unit: 
+        :type batch_frequency_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param streaming_state_ttl_interval: 整型间隔时长
         :type streaming_state_ttl_interval: int
-        :param streaming_state_ttl_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type streaming_state_ttl_unit: str
+        :param streaming_state_ttl_unit: 
+        :type streaming_state_ttl_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param streaming_checkpoint_ttl_interval: 整型间隔时长
         :type streaming_checkpoint_ttl_interval: int
-        :param streaming_checkpoint_ttl_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type streaming_checkpoint_ttl_unit: str
-        :param streaming_startup_mode: **参数解释**: 作业启动模式 - UPGRADE 升级启动 - REFRESH_NEW 全新启动  **约束限制** 不涉及 **取值范围**: - UPGRADE - REFRESH_NEW  **默认值** 不涉及      
-        :type streaming_startup_mode: str
+        :param streaming_checkpoint_ttl_unit: 
+        :type streaming_checkpoint_ttl_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
+        :param streaming_startup_mode: 
+        :type streaming_startup_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobStartupModeEnum`
         :param batch_overtime_strategy_interval: 整型间隔时长
         :type batch_overtime_strategy_interval: int
-        :param batch_overtime_strategy_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type batch_overtime_strategy_unit: str
+        :param batch_overtime_strategy_unit: 
+        :type batch_overtime_strategy_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param search_delay_interval: 整型间隔时长
         :type search_delay_interval: int
-        :param search_delay_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type search_delay_unit: str
+        :param search_delay_unit: 
+        :type search_delay_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param search_frequency_interval: 整型间隔时长
         :type search_frequency_interval: int
-        :param search_frequency_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type search_frequency_unit: str
+        :param search_frequency_unit: 
+        :type search_frequency_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param search_overtime_interval: 整型间隔时长
         :type search_overtime_interval: int
-        :param search_overtime_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type search_overtime_unit: str
+        :param search_overtime_unit: 
+        :type search_overtime_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param search_period_interval: 整型间隔时长
         :type search_period_interval: int
-        :param search_period_unit: **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-        :type search_period_unit: str
+        :param search_period_unit: 
+        :type search_period_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         :param search_table_id: UUID
         :type search_table_id: str
         :param search_table_name: 表名称
         :type search_table_name: str
-        :param field_not_null_policy: 参数解释: 作业表非空字段处理策略  LOOSE 宽松 STRICT 严格 约束限制 不涉及 取值范围:  LOOSE STRICT 默认值 LOOSE
-        :type field_not_null_policy: str
+        :param field_not_null_policy: 
+        :type field_not_null_policy: :class:`huaweicloudsdksecmaster.v2.IsapJobFieldNotNullPolicy`
         :param dss_id: 长整型间隔时长
         :type dss_id: int
         """
@@ -219,10 +219,8 @@ class IsapJobModeSettingDto:
     def batch_overtime_unit(self):
         r"""Gets the batch_overtime_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The batch_overtime_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._batch_overtime_unit
 
@@ -230,10 +228,8 @@ class IsapJobModeSettingDto:
     def batch_overtime_unit(self, batch_overtime_unit):
         r"""Sets the batch_overtime_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param batch_overtime_unit: The batch_overtime_unit of this IsapJobModeSettingDto.
-        :type batch_overtime_unit: str
+        :type batch_overtime_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._batch_overtime_unit = batch_overtime_unit
 
@@ -263,10 +259,8 @@ class IsapJobModeSettingDto:
     def batch_frequency_unit(self):
         r"""Gets the batch_frequency_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The batch_frequency_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._batch_frequency_unit
 
@@ -274,10 +268,8 @@ class IsapJobModeSettingDto:
     def batch_frequency_unit(self, batch_frequency_unit):
         r"""Sets the batch_frequency_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param batch_frequency_unit: The batch_frequency_unit of this IsapJobModeSettingDto.
-        :type batch_frequency_unit: str
+        :type batch_frequency_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._batch_frequency_unit = batch_frequency_unit
 
@@ -307,10 +299,8 @@ class IsapJobModeSettingDto:
     def streaming_state_ttl_unit(self):
         r"""Gets the streaming_state_ttl_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The streaming_state_ttl_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._streaming_state_ttl_unit
 
@@ -318,10 +308,8 @@ class IsapJobModeSettingDto:
     def streaming_state_ttl_unit(self, streaming_state_ttl_unit):
         r"""Sets the streaming_state_ttl_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param streaming_state_ttl_unit: The streaming_state_ttl_unit of this IsapJobModeSettingDto.
-        :type streaming_state_ttl_unit: str
+        :type streaming_state_ttl_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._streaming_state_ttl_unit = streaming_state_ttl_unit
 
@@ -351,10 +339,8 @@ class IsapJobModeSettingDto:
     def streaming_checkpoint_ttl_unit(self):
         r"""Gets the streaming_checkpoint_ttl_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The streaming_checkpoint_ttl_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._streaming_checkpoint_ttl_unit
 
@@ -362,10 +348,8 @@ class IsapJobModeSettingDto:
     def streaming_checkpoint_ttl_unit(self, streaming_checkpoint_ttl_unit):
         r"""Sets the streaming_checkpoint_ttl_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param streaming_checkpoint_ttl_unit: The streaming_checkpoint_ttl_unit of this IsapJobModeSettingDto.
-        :type streaming_checkpoint_ttl_unit: str
+        :type streaming_checkpoint_ttl_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._streaming_checkpoint_ttl_unit = streaming_checkpoint_ttl_unit
 
@@ -373,10 +357,8 @@ class IsapJobModeSettingDto:
     def streaming_startup_mode(self):
         r"""Gets the streaming_startup_mode of this IsapJobModeSettingDto.
 
-        **参数解释**: 作业启动模式 - UPGRADE 升级启动 - REFRESH_NEW 全新启动  **约束限制** 不涉及 **取值范围**: - UPGRADE - REFRESH_NEW  **默认值** 不涉及      
-
         :return: The streaming_startup_mode of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobStartupModeEnum`
         """
         return self._streaming_startup_mode
 
@@ -384,10 +366,8 @@ class IsapJobModeSettingDto:
     def streaming_startup_mode(self, streaming_startup_mode):
         r"""Sets the streaming_startup_mode of this IsapJobModeSettingDto.
 
-        **参数解释**: 作业启动模式 - UPGRADE 升级启动 - REFRESH_NEW 全新启动  **约束限制** 不涉及 **取值范围**: - UPGRADE - REFRESH_NEW  **默认值** 不涉及      
-
         :param streaming_startup_mode: The streaming_startup_mode of this IsapJobModeSettingDto.
-        :type streaming_startup_mode: str
+        :type streaming_startup_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobStartupModeEnum`
         """
         self._streaming_startup_mode = streaming_startup_mode
 
@@ -417,10 +397,8 @@ class IsapJobModeSettingDto:
     def batch_overtime_strategy_unit(self):
         r"""Gets the batch_overtime_strategy_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The batch_overtime_strategy_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._batch_overtime_strategy_unit
 
@@ -428,10 +406,8 @@ class IsapJobModeSettingDto:
     def batch_overtime_strategy_unit(self, batch_overtime_strategy_unit):
         r"""Sets the batch_overtime_strategy_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param batch_overtime_strategy_unit: The batch_overtime_strategy_unit of this IsapJobModeSettingDto.
-        :type batch_overtime_strategy_unit: str
+        :type batch_overtime_strategy_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._batch_overtime_strategy_unit = batch_overtime_strategy_unit
 
@@ -461,10 +437,8 @@ class IsapJobModeSettingDto:
     def search_delay_unit(self):
         r"""Gets the search_delay_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The search_delay_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._search_delay_unit
 
@@ -472,10 +446,8 @@ class IsapJobModeSettingDto:
     def search_delay_unit(self, search_delay_unit):
         r"""Sets the search_delay_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param search_delay_unit: The search_delay_unit of this IsapJobModeSettingDto.
-        :type search_delay_unit: str
+        :type search_delay_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._search_delay_unit = search_delay_unit
 
@@ -505,10 +477,8 @@ class IsapJobModeSettingDto:
     def search_frequency_unit(self):
         r"""Gets the search_frequency_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The search_frequency_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._search_frequency_unit
 
@@ -516,10 +486,8 @@ class IsapJobModeSettingDto:
     def search_frequency_unit(self, search_frequency_unit):
         r"""Sets the search_frequency_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param search_frequency_unit: The search_frequency_unit of this IsapJobModeSettingDto.
-        :type search_frequency_unit: str
+        :type search_frequency_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._search_frequency_unit = search_frequency_unit
 
@@ -549,10 +517,8 @@ class IsapJobModeSettingDto:
     def search_overtime_unit(self):
         r"""Gets the search_overtime_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The search_overtime_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._search_overtime_unit
 
@@ -560,10 +526,8 @@ class IsapJobModeSettingDto:
     def search_overtime_unit(self, search_overtime_unit):
         r"""Sets the search_overtime_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param search_overtime_unit: The search_overtime_unit of this IsapJobModeSettingDto.
-        :type search_overtime_unit: str
+        :type search_overtime_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._search_overtime_unit = search_overtime_unit
 
@@ -593,10 +557,8 @@ class IsapJobModeSettingDto:
     def search_period_unit(self):
         r"""Gets the search_period_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :return: The search_period_unit of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         return self._search_period_unit
 
@@ -604,10 +566,8 @@ class IsapJobModeSettingDto:
     def search_period_unit(self, search_period_unit):
         r"""Sets the search_period_unit of this IsapJobModeSettingDto.
 
-        **参数解释**: 时间单位 - MINUTE 分钟 - HOUR 小时 - DAY 天 - MONTH 月  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY - MONTH  **默认值** 不涉及        
-
         :param search_period_unit: The search_period_unit of this IsapJobModeSettingDto.
-        :type search_period_unit: str
+        :type search_period_unit: :class:`huaweicloudsdksecmaster.v2.IsapTimeUnit`
         """
         self._search_period_unit = search_period_unit
 
@@ -659,10 +619,8 @@ class IsapJobModeSettingDto:
     def field_not_null_policy(self):
         r"""Gets the field_not_null_policy of this IsapJobModeSettingDto.
 
-        参数解释: 作业表非空字段处理策略  LOOSE 宽松 STRICT 严格 约束限制 不涉及 取值范围:  LOOSE STRICT 默认值 LOOSE
-
         :return: The field_not_null_policy of this IsapJobModeSettingDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobFieldNotNullPolicy`
         """
         return self._field_not_null_policy
 
@@ -670,10 +628,8 @@ class IsapJobModeSettingDto:
     def field_not_null_policy(self, field_not_null_policy):
         r"""Sets the field_not_null_policy of this IsapJobModeSettingDto.
 
-        参数解释: 作业表非空字段处理策略  LOOSE 宽松 STRICT 严格 约束限制 不涉及 取值范围:  LOOSE STRICT 默认值 LOOSE
-
         :param field_not_null_policy: The field_not_null_policy of this IsapJobModeSettingDto.
-        :type field_not_null_policy: str
+        :type field_not_null_policy: :class:`huaweicloudsdksecmaster.v2.IsapJobFieldNotNullPolicy`
         """
         self._field_not_null_policy = field_not_null_policy
 

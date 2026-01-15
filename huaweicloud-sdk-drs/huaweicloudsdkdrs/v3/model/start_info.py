@@ -17,24 +17,28 @@ class StartInfo:
     openapi_types = {
         'job_id': 'str',
         'is_only_init_task': 'bool',
+        'is_auto_create_compare': 'bool',
         'start_time': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
         'is_only_init_task': 'is_only_init_task',
+        'is_auto_create_compare': 'is_auto_create_compare',
         'start_time': 'start_time'
     }
 
-    def __init__(self, job_id=None, is_only_init_task=None, start_time=None):
+    def __init__(self, job_id=None, is_only_init_task=None, is_auto_create_compare=None, start_time=None):
         r"""StartInfo
 
         The model defined in huaweicloud sdk
 
         :param job_id: 任务id。
         :type job_id: str
-        :param is_only_init_task: 是否支持只初始化任务。
+        :param is_only_init_task: 是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
         :type is_only_init_task: bool
+        :param is_auto_create_compare: 是否在任务结束时自动创建对比任务，不填默认设置为true。
+        :type is_auto_create_compare: bool
         :param start_time: 任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
         :type start_time: str
         """
@@ -43,12 +47,15 @@ class StartInfo:
 
         self._job_id = None
         self._is_only_init_task = None
+        self._is_auto_create_compare = None
         self._start_time = None
         self.discriminator = None
 
         self.job_id = job_id
         if is_only_init_task is not None:
             self.is_only_init_task = is_only_init_task
+        if is_auto_create_compare is not None:
+            self.is_auto_create_compare = is_auto_create_compare
         if start_time is not None:
             self.start_time = start_time
 
@@ -78,7 +85,7 @@ class StartInfo:
     def is_only_init_task(self):
         r"""Gets the is_only_init_task of this StartInfo.
 
-        是否支持只初始化任务。
+        是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
 
         :return: The is_only_init_task of this StartInfo.
         :rtype: bool
@@ -89,12 +96,34 @@ class StartInfo:
     def is_only_init_task(self, is_only_init_task):
         r"""Sets the is_only_init_task of this StartInfo.
 
-        是否支持只初始化任务。
+        是否支持只初始化任务。仅支持白名单用户使用，需要提交工单申请才能使用。
 
         :param is_only_init_task: The is_only_init_task of this StartInfo.
         :type is_only_init_task: bool
         """
         self._is_only_init_task = is_only_init_task
+
+    @property
+    def is_auto_create_compare(self):
+        r"""Gets the is_auto_create_compare of this StartInfo.
+
+        是否在任务结束时自动创建对比任务，不填默认设置为true。
+
+        :return: The is_auto_create_compare of this StartInfo.
+        :rtype: bool
+        """
+        return self._is_auto_create_compare
+
+    @is_auto_create_compare.setter
+    def is_auto_create_compare(self, is_auto_create_compare):
+        r"""Sets the is_auto_create_compare of this StartInfo.
+
+        是否在任务结束时自动创建对比任务，不填默认设置为true。
+
+        :param is_auto_create_compare: The is_auto_create_compare of this StartInfo.
+        :type is_auto_create_compare: bool
+        """
+        self._is_auto_create_compare = is_auto_create_compare
 
     @property
     def start_time(self):

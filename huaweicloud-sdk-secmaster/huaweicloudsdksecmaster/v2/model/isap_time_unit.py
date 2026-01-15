@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class IsapTimeUnit:
-
+    """
+    allowed enum values
+    """
+    MINUTE = "MINUTE"
+    HOUR = "HOUR"
+    DAY = "DAY"
+    MONTH = "MONTH"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

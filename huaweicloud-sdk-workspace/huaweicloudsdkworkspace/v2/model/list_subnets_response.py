@@ -16,7 +16,7 @@ class ListSubnetsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'subnets': 'list[SubnetInfo]',
+        'subnets': 'list[SingleSubnetInfo]',
         'subnet_size': 'int'
     }
 
@@ -31,7 +31,7 @@ class ListSubnetsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param subnets: 子网列表。
-        :type subnets: list[:class:`huaweicloudsdkworkspace.v2.SubnetInfo`]
+        :type subnets: list[:class:`huaweicloudsdkworkspace.v2.SingleSubnetInfo`]
         :param subnet_size: 子网数量。
         :type subnet_size: int
         """
@@ -54,7 +54,7 @@ class ListSubnetsResponse(SdkResponse):
         子网列表。
 
         :return: The subnets of this ListSubnetsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SubnetInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SingleSubnetInfo`]
         """
         return self._subnets
 
@@ -65,7 +65,7 @@ class ListSubnetsResponse(SdkResponse):
         子网列表。
 
         :param subnets: The subnets of this ListSubnetsResponse.
-        :type subnets: list[:class:`huaweicloudsdkworkspace.v2.SubnetInfo`]
+        :type subnets: list[:class:`huaweicloudsdkworkspace.v2.SingleSubnetInfo`]
         """
         self._subnets = subnets
 

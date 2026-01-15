@@ -17,7 +17,7 @@ class InteractionConstraintDto:
     openapi_types = {
         'interactions': 'list[Interaction]',
         'exclusive': 'bool',
-        'operator': 'str'
+        'operator': 'OperatorType'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class InteractionConstraintDto:
         :param exclusive: 是否排除指定的约束作用力
         :type exclusive: bool
         :param operator: 
-        :type operator: str
+        :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         
         
@@ -100,7 +100,7 @@ class InteractionConstraintDto:
         r"""Gets the operator of this InteractionConstraintDto.
 
         :return: The operator of this InteractionConstraintDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         return self._operator
 
@@ -109,7 +109,7 @@ class InteractionConstraintDto:
         r"""Sets the operator of this InteractionConstraintDto.
 
         :param operator: The operator of this InteractionConstraintDto.
-        :type operator: str
+        :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         self._operator = operator
 

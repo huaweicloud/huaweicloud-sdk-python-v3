@@ -15,7 +15,7 @@ class Rule:
     sensitive_list = []
 
     openapi_types = {
-        'scope': 'str',
+        'scope': 'RuleScope',
         'product_rule': 'ProductRule',
         'path_rule': 'PathRule'
     }
@@ -31,8 +31,8 @@ class Rule:
 
         The model defined in huaweicloud sdk
 
-        :param scope: 规则范围： * &#x60;PRODUCT&#x60; - 产品 * &#x60;PATH&#x60; - 路径
-        :type scope: str
+        :param scope: 
+        :type scope: :class:`huaweicloudsdkworkspace.v2.RuleScope`
         :param product_rule: 
         :type product_rule: :class:`huaweicloudsdkworkspace.v2.ProductRule`
         :param path_rule: 
@@ -56,10 +56,8 @@ class Rule:
     def scope(self):
         r"""Gets the scope of this Rule.
 
-        规则范围： * `PRODUCT` - 产品 * `PATH` - 路径
-
         :return: The scope of this Rule.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RuleScope`
         """
         return self._scope
 
@@ -67,10 +65,8 @@ class Rule:
     def scope(self, scope):
         r"""Sets the scope of this Rule.
 
-        规则范围： * `PRODUCT` - 产品 * `PATH` - 路径
-
         :param scope: The scope of this Rule.
-        :type scope: str
+        :type scope: :class:`huaweicloudsdkworkspace.v2.RuleScope`
         """
         self._scope = scope
 

@@ -87,7 +87,7 @@ class CreateSyncTaskReq:
         :type enable_restore: bool
         :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
         :type dst_storage_policy: str
-        :param app_id: 当源端为腾讯云时，需要填写此参数。
+        :param app_id: 腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
         :type app_id: str
         :param source_cdn: 
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
@@ -455,7 +455,7 @@ class CreateSyncTaskReq:
     def app_id(self):
         r"""Gets the app_id of this CreateSyncTaskReq.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :return: The app_id of this CreateSyncTaskReq.
         :rtype: str
@@ -466,7 +466,7 @@ class CreateSyncTaskReq:
     def app_id(self, app_id):
         r"""Sets the app_id of this CreateSyncTaskReq.
 
-        当源端为腾讯云时，需要填写此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :param app_id: The app_id of this CreateSyncTaskReq.
         :type app_id: str

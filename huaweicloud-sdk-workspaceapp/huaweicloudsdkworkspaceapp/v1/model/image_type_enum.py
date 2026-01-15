@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ImageTypeEnum:
-
+    """
+    allowed enum values
+    """
+    GOLD = "gold"
+    PUBLIC = "public"
+    PRIVATE = "private"
+    SHARED = "shared"
+    OTHER = "other"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -17,7 +17,7 @@ class DeleteTableResponse(SdkResponse):
 
     openapi_types = {
         'table_id': 'str',
-        'process_status': 'str',
+        'process_status': 'IsapTableProcessStatus',
         'delete_time': 'int'
     }
 
@@ -34,8 +34,8 @@ class DeleteTableResponse(SdkResponse):
 
         :param table_id: 表ID
         :type table_id: str
-        :param process_status: **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-        :type process_status: str
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
         :param delete_time: 毫秒时间戳
         :type delete_time: int
         """
@@ -80,10 +80,8 @@ class DeleteTableResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this DeleteTableResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-
         :return: The process_status of this DeleteTableResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
         """
         return self._process_status
 
@@ -91,10 +89,8 @@ class DeleteTableResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this DeleteTableResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-
         :param process_status: The process_status of this DeleteTableResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
         """
         self._process_status = process_status
 

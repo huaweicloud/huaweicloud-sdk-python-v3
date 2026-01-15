@@ -47,7 +47,7 @@ class ListPtrRecordsRequest:
         :type enterprise_project_id: str
         :param tags: 资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用“|”分开，每个标签的键值用英文逗号“,”相隔。
         :type tags: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 资源状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败  **默认取值：** 不涉及。
         :type status: str
         """
         
@@ -188,7 +188,7 @@ class ListPtrRecordsRequest:
     def status(self):
         r"""Gets the status of this ListPtrRecordsRequest.
 
-        资源状态。
+        **参数解释：** 资源状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败  **默认取值：** 不涉及。
 
         :return: The status of this ListPtrRecordsRequest.
         :rtype: str
@@ -199,7 +199,7 @@ class ListPtrRecordsRequest:
     def status(self, status):
         r"""Sets the status of this ListPtrRecordsRequest.
 
-        资源状态。
+        **参数解释：** 资源状态。 **约束限制：** 不涉及。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败  **默认取值：** 不涉及。
 
         :param status: The status of this ListPtrRecordsRequest.
         :type status: str

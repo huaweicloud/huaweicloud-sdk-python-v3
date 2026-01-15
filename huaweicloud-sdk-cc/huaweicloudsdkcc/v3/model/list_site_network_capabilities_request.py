@@ -15,7 +15,7 @@ class ListSiteNetworkCapabilitiesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specification': 'list[str]',
+        'specification': 'list[SiteNetworkSpecificationEnum]',
         'limit': 'int',
         'marker': 'str'
     }
@@ -32,7 +32,7 @@ class ListSiteNetworkCapabilitiesRequest:
         The model defined in huaweicloud sdk
 
         :param specification: 根据分支网络租户能力名查询，可查询多个类型。
-        :type specification: list[str]
+        :type specification: list[:class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`]
         :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
@@ -60,7 +60,7 @@ class ListSiteNetworkCapabilitiesRequest:
         根据分支网络租户能力名查询，可查询多个类型。
 
         :return: The specification of this ListSiteNetworkCapabilitiesRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`]
         """
         return self._specification
 
@@ -71,7 +71,7 @@ class ListSiteNetworkCapabilitiesRequest:
         根据分支网络租户能力名查询，可查询多个类型。
 
         :param specification: The specification of this ListSiteNetworkCapabilitiesRequest.
-        :type specification: list[str]
+        :type specification: list[:class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`]
         """
         self._specification = specification
 

@@ -29,7 +29,7 @@ class DeleteAiOpsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待删除的集群ID。
+        :param cluster_id: **参数解释**： 指定删除的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
         :type cluster_id: str
         :param aiops_id: 指定检测任务ID。
         :type aiops_id: str
@@ -48,7 +48,7 @@ class DeleteAiOpsRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this DeleteAiOpsRequest.
 
-        指定待删除的集群ID。
+        **参数解释**： 指定删除的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
         :return: The cluster_id of this DeleteAiOpsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteAiOpsRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DeleteAiOpsRequest.
 
-        指定待删除的集群ID。
+        **参数解释**： 指定删除的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
         :param cluster_id: The cluster_id of this DeleteAiOpsRequest.
         :type cluster_id: str

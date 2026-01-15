@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InconsistentTypeEnum:
-
+    """
+    allowed enum values
+    """
+    PRODUCT_ID = "product_id"
+    IMAGE_ID = "image_id"
+    DISK_NUM = "disk_num"
+    DISK_SIZE = "disk_size"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

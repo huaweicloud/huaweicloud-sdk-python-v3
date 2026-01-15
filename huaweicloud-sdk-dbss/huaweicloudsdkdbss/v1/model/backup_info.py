@@ -55,15 +55,15 @@ class BackupInfo:
 
         :param backup_task_fail_reason: 备份失败原因
         :type backup_task_fail_reason: str
-        :param backup_time: 备份时间,yyyy-MM-dd HH:mm:ss
+        :param backup_time: 备份时间，yyyy-MM-dd HH:mm:ss
         :type backup_time: datetime
         :param deleted: 标记删除
         :type deleted: bool
-        :param end_time: 备份结束时间,yyyy-MM-dd HH:mm:ss
+        :param end_time: 备份结束时间，yyyy-MM-dd HH:mm:ss
         :type end_time: datetime
         :param file_size: 文件大小
         :type file_size: int
-        :param file_size_unit: 文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
+        :param file_size_unit: 文件大小单位 - Byte：Byte - KB：kb - MB：mb - GB：gb
         :type file_size_unit: str
         :param id: 备份ID
         :type id: str
@@ -73,7 +73,7 @@ class BackupInfo:
         :type name: str
         :param percentage: 备份进度
         :type percentage: int
-        :param progress: 进度 - CLEAN_AFTER_FAILED: 清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
+        :param progress: 进度 - CLEAN_AFTER_FAILED：清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
         :type progress: str
         :param restore_task_fail_reason: 还原失败原因
         :type restore_task_fail_reason: str
@@ -156,7 +156,7 @@ class BackupInfo:
     def backup_time(self):
         r"""Gets the backup_time of this BackupInfo.
 
-        备份时间,yyyy-MM-dd HH:mm:ss
+        备份时间，yyyy-MM-dd HH:mm:ss
 
         :return: The backup_time of this BackupInfo.
         :rtype: datetime
@@ -167,7 +167,7 @@ class BackupInfo:
     def backup_time(self, backup_time):
         r"""Sets the backup_time of this BackupInfo.
 
-        备份时间,yyyy-MM-dd HH:mm:ss
+        备份时间，yyyy-MM-dd HH:mm:ss
 
         :param backup_time: The backup_time of this BackupInfo.
         :type backup_time: datetime
@@ -200,7 +200,7 @@ class BackupInfo:
     def end_time(self):
         r"""Gets the end_time of this BackupInfo.
 
-        备份结束时间,yyyy-MM-dd HH:mm:ss
+        备份结束时间，yyyy-MM-dd HH:mm:ss
 
         :return: The end_time of this BackupInfo.
         :rtype: datetime
@@ -211,7 +211,7 @@ class BackupInfo:
     def end_time(self, end_time):
         r"""Sets the end_time of this BackupInfo.
 
-        备份结束时间,yyyy-MM-dd HH:mm:ss
+        备份结束时间，yyyy-MM-dd HH:mm:ss
 
         :param end_time: The end_time of this BackupInfo.
         :type end_time: datetime
@@ -244,7 +244,7 @@ class BackupInfo:
     def file_size_unit(self):
         r"""Gets the file_size_unit of this BackupInfo.
 
-        文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
+        文件大小单位 - Byte：Byte - KB：kb - MB：mb - GB：gb
 
         :return: The file_size_unit of this BackupInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class BackupInfo:
     def file_size_unit(self, file_size_unit):
         r"""Sets the file_size_unit of this BackupInfo.
 
-        文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
+        文件大小单位 - Byte：Byte - KB：kb - MB：mb - GB：gb
 
         :param file_size_unit: The file_size_unit of this BackupInfo.
         :type file_size_unit: str
@@ -354,7 +354,7 @@ class BackupInfo:
     def progress(self):
         r"""Gets the progress of this BackupInfo.
 
-        进度 - CLEAN_AFTER_FAILED: 清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
+        进度 - CLEAN_AFTER_FAILED：清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
 
         :return: The progress of this BackupInfo.
         :rtype: str
@@ -365,7 +365,7 @@ class BackupInfo:
     def progress(self, progress):
         r"""Sets the progress of this BackupInfo.
 
-        进度 - CLEAN_AFTER_FAILED: 清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
+        进度 - CLEAN_AFTER_FAILED：清理失败 - DELETING：删除中 - DELETED：已删除 - DELETE_FAIL：删除失败 - RESTORING_WAITING：恢复等待中 - RESTORING：恢复中 - RESTORED：已恢复 - RESTORE_FAIL：恢复失败 - BACKUP_WAITING：等待备份 - FILE_UPLOAD_WAITING：等待上传备份文件 - FILE_UPLOADING：上传中 - AUTO_BACKUPING：自动备份中 - AUTO_BACKUPED：自动备份结束 - AUTO_BACKUP_FAIL：自动备份失败 - MANUAL_BACKUPING：手动备份中 - MANUAL_BACKUPED：手动备份结束 - MANUAL_BACKUP_FAIL：手动备份失败 - ISAP_WAITING：ISAP等待备份 - ISAP_BACKUPING：ISAP备份中 - ISAP_BACKUPED：ISAP备份成功 - ISAP_BACKUP_FAIL：ISAP备份失败 - ISAP_FILE_UPLOAD_WAITING：ISAP等待上传备份文件 - ISAP_FILE_UPLOADING：ISAP上传中
 
         :param progress: The progress of this BackupInfo.
         :type progress: str

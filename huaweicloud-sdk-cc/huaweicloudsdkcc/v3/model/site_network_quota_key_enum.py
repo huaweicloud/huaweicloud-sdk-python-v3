@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SiteNetworkQuotaKeyEnum:
-
+    """
+    allowed enum values
+    """
+    SITE_NETWORKS_PER_ACCOUNT = "site_networks_per_account"
+    SITES_PER_MESH_SITE_NETWORK = "sites_per_mesh_site_network"
+    SPOKE_SITES_PER_STAR_SITE_NETWORK = "spoke_sites_per_star_site_network"
+    SITES_PER_HYBRID_SITE_NETWORK = "sites_per_hybrid_site_network"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

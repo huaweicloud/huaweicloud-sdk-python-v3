@@ -18,17 +18,19 @@ class DesktopPoolVolumeInfo:
         'id': 'str',
         'type': 'str',
         'iops': 'int',
-        'throughput': 'int'
+        'throughput': 'int',
+        'kms_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'type': 'type',
         'iops': 'iops',
-        'throughput': 'throughput'
+        'throughput': 'throughput',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, id=None, type=None, iops=None, throughput=None):
+    def __init__(self, id=None, type=None, iops=None, throughput=None, kms_id=None):
         r"""DesktopPoolVolumeInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class DesktopPoolVolumeInfo:
         :type iops: int
         :param throughput: 吞吐量，磁盘每秒成功传送的数据量，即读取和写入的数据量。
         :type throughput: int
+        :param kms_id: kms密钥id。变更密钥是传入密钥id；如需删除密钥则传入空字符串；默认null，不变更密钥。
+        :type kms_id: str
         """
         
         
@@ -49,6 +53,7 @@ class DesktopPoolVolumeInfo:
         self._type = None
         self._iops = None
         self._throughput = None
+        self._kms_id = None
         self.discriminator = None
 
         self.id = id
@@ -57,6 +62,8 @@ class DesktopPoolVolumeInfo:
             self.iops = iops
         if throughput is not None:
             self.throughput = throughput
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def id(self):
@@ -145,6 +152,28 @@ class DesktopPoolVolumeInfo:
         :type throughput: int
         """
         self._throughput = throughput
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this DesktopPoolVolumeInfo.
+
+        kms密钥id。变更密钥是传入密钥id；如需删除密钥则传入空字符串；默认null，不变更密钥。
+
+        :return: The kms_id of this DesktopPoolVolumeInfo.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this DesktopPoolVolumeInfo.
+
+        kms密钥id。变更密钥是传入密钥id；如需删除密钥则传入空字符串；默认null，不变更密钥。
+
+        :param kms_id: The kms_id of this DesktopPoolVolumeInfo.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

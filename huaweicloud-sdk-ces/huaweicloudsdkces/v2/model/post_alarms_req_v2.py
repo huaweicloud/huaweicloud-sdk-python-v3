@@ -21,7 +21,7 @@ class PostAlarmsReqV2:
         'resource_group_id': 'str',
         'resources': 'list[list[Dimension]]',
         'policies': 'list[AlarmRulePolicy]',
-        'type': 'str',
+        'type': 'AlarmType',
         'alarm_notifications': 'list[Notification]',
         'ok_notifications': 'list[Notification]',
         'notification_begin_time': 'str',
@@ -75,8 +75,8 @@ class PostAlarmsReqV2:
         :type resources: list[list[Dimension]]
         :param policies: **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略，最少为0个。 
         :type policies: list[:class:`huaweicloudsdkces.v2.AlarmRulePolicy`]
-        :param type: **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
@@ -295,10 +295,8 @@ class PostAlarmsReqV2:
     def type(self):
         r"""Gets the type of this PostAlarmsReqV2.
 
-        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-
         :return: The type of this PostAlarmsReqV2.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         return self._type
 
@@ -306,10 +304,8 @@ class PostAlarmsReqV2:
     def type(self, type):
         r"""Sets the type of this PostAlarmsReqV2.
 
-        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-
         :param type: The type of this PostAlarmsReqV2.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         self._type = type
 

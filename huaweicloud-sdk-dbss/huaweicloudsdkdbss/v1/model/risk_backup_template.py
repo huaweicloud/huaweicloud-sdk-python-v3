@@ -31,7 +31,7 @@ class RiskBackupTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param cycle: 备份周期 - PER_DAY: 每天 - PER_WEEK: 每周 - PER_MONTH: 每月 - PER_HOUR: 每小时 - FIVE_MIN: 每5分钟
+        :param cycle: 备份周期 - PER_DAY：每天 - PER_WEEK：每周 - PER_MONTH：每月 - PER_HOUR：每小时 - FIVE_MIN：每5分钟
         :type cycle: str
         :param db_id: 数据库ID
         :type db_id: str
@@ -55,7 +55,7 @@ class RiskBackupTemplate:
     def cycle(self):
         r"""Gets the cycle of this RiskBackupTemplate.
 
-        备份周期 - PER_DAY: 每天 - PER_WEEK: 每周 - PER_MONTH: 每月 - PER_HOUR: 每小时 - FIVE_MIN: 每5分钟
+        备份周期 - PER_DAY：每天 - PER_WEEK：每周 - PER_MONTH：每月 - PER_HOUR：每小时 - FIVE_MIN：每5分钟
 
         :return: The cycle of this RiskBackupTemplate.
         :rtype: str
@@ -66,7 +66,7 @@ class RiskBackupTemplate:
     def cycle(self, cycle):
         r"""Sets the cycle of this RiskBackupTemplate.
 
-        备份周期 - PER_DAY: 每天 - PER_WEEK: 每周 - PER_MONTH: 每月 - PER_HOUR: 每小时 - FIVE_MIN: 每5分钟
+        备份周期 - PER_DAY：每天 - PER_WEEK：每周 - PER_MONTH：每月 - PER_HOUR：每小时 - FIVE_MIN：每5分钟
 
         :param cycle: The cycle of this RiskBackupTemplate.
         :type cycle: str

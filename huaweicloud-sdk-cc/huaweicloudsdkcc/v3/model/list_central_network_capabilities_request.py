@@ -15,7 +15,7 @@ class ListCentralNetworkCapabilitiesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'capability': 'list[str]',
+        'capability': 'list[CentralNetworkCapabilityEnum]',
         'limit': 'int',
         'marker': 'str'
     }
@@ -32,7 +32,7 @@ class ListCentralNetworkCapabilitiesRequest:
         The model defined in huaweicloud sdk
 
         :param capability: 根据租户能力名查询，可查询多个类型。
-        :type capability: list[str]
+        :type capability: list[:class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`]
         :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
@@ -60,7 +60,7 @@ class ListCentralNetworkCapabilitiesRequest:
         根据租户能力名查询，可查询多个类型。
 
         :return: The capability of this ListCentralNetworkCapabilitiesRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`]
         """
         return self._capability
 
@@ -71,7 +71,7 @@ class ListCentralNetworkCapabilitiesRequest:
         根据租户能力名查询，可查询多个类型。
 
         :param capability: The capability of this ListCentralNetworkCapabilitiesRequest.
-        :type capability: list[str]
+        :type capability: list[:class:`huaweicloudsdkcc.v3.CentralNetworkCapabilityEnum`]
         """
         self._capability = capability
 

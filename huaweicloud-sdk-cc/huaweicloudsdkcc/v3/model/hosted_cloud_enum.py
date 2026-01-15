@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class HostedCloudEnum:
-
+    """
+    allowed enum values
+    """
+    HWCLOUD = "HWCloud"
+    IRELAND = "Ireland"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -29,7 +29,7 @@ class DbParam:
 
         The model defined in huaweicloud sdk
 
-        :param key: 数据库参数名。
+        :param key: 数据库参数名。 取值：binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，innodb_buffer_pool_size，key_buffer_size，long_query_time，query_cache_type，read_buffer_size，read_rnd_buffer_size，sort_buffer_size，sync_binlog，innodb_buffer_pool_instances
         :type key: str
         :param target_value: 目标数据库参数值。
         :type target_value: str
@@ -48,7 +48,7 @@ class DbParam:
     def key(self):
         r"""Gets the key of this DbParam.
 
-        数据库参数名。
+        数据库参数名。 取值：binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，innodb_buffer_pool_size，key_buffer_size，long_query_time，query_cache_type，read_buffer_size，read_rnd_buffer_size，sort_buffer_size，sync_binlog，innodb_buffer_pool_instances
 
         :return: The key of this DbParam.
         :rtype: str
@@ -59,7 +59,7 @@ class DbParam:
     def key(self, key):
         r"""Sets the key of this DbParam.
 
-        数据库参数名。
+        数据库参数名。 取值：binlog_cache_size，binlog_stmt_cache_size，bulk_insert_buffer_size，innodb_buffer_pool_size，key_buffer_size，long_query_time，query_cache_type，read_buffer_size，read_rnd_buffer_size，sort_buffer_size，sync_binlog，innodb_buffer_pool_instances
 
         :param key: The key of this DbParam.
         :type key: str

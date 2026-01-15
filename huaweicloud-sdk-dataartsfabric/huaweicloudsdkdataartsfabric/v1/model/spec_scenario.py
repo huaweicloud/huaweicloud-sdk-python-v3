@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SpecScenario:
-
+    """
+    allowed enum values
+    """
+    COMPUTE = "COMPUTE"
+    ENDPOINT = "ENDPOINT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

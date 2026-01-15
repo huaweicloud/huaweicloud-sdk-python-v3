@@ -55,7 +55,7 @@ class AuditSummaryResponseDataList:
 
         :param id: ID
         :type id: int
-        :param status: 状态 - 1: success - 2: failure
+        :param status: 状态 - 1：success - 2：failure
         :type status: str
         :param project_id: 项目ID
         :type project_id: str
@@ -156,7 +156,7 @@ class AuditSummaryResponseDataList:
     def status(self):
         r"""Gets the status of this AuditSummaryResponseDataList.
 
-        状态 - 1: success - 2: failure
+        状态 - 1：success - 2：failure
 
         :return: The status of this AuditSummaryResponseDataList.
         :rtype: str
@@ -167,7 +167,7 @@ class AuditSummaryResponseDataList:
     def status(self, status):
         r"""Sets the status of this AuditSummaryResponseDataList.
 
-        状态 - 1: success - 2: failure
+        状态 - 1：success - 2：failure
 
         :param status: The status of this AuditSummaryResponseDataList.
         :type status: str

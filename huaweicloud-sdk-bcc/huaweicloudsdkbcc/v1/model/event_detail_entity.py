@@ -19,8 +19,8 @@ class EventDetailEntity:
         'group_id': 'str',
         'resource_id': 'str',
         'resource_name': 'str',
-        'event_state': 'str',
-        'event_level': 'str',
+        'event_state': 'EventStateEnum',
+        'event_level': 'EventLevelEnum',
         'event_user': 'str',
         'event_type': 'str',
         'dimensions': 'str'
@@ -51,10 +51,10 @@ class EventDetailEntity:
         :type resource_id: str
         :param resource_name: 资源名
         :type resource_name: str
-        :param event_state: 事件状态，取值范围：normal,warning,incident
-        :type event_state: str
-        :param event_level: 事件级别，取值范围：Critical,Major,Minor,Info
-        :type event_level: str
+        :param event_state: 
+        :type event_state: :class:`huaweicloudsdkbcc.v1.EventStateEnum`
+        :param event_level: 
+        :type event_level: :class:`huaweicloudsdkbcc.v1.EventLevelEnum`
         :param event_user: 事件用户
         :type event_user: str
         :param event_type: 事件类型
@@ -187,10 +187,8 @@ class EventDetailEntity:
     def event_state(self):
         r"""Gets the event_state of this EventDetailEntity.
 
-        事件状态，取值范围：normal,warning,incident
-
         :return: The event_state of this EventDetailEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.EventStateEnum`
         """
         return self._event_state
 
@@ -198,10 +196,8 @@ class EventDetailEntity:
     def event_state(self, event_state):
         r"""Sets the event_state of this EventDetailEntity.
 
-        事件状态，取值范围：normal,warning,incident
-
         :param event_state: The event_state of this EventDetailEntity.
-        :type event_state: str
+        :type event_state: :class:`huaweicloudsdkbcc.v1.EventStateEnum`
         """
         self._event_state = event_state
 
@@ -209,10 +205,8 @@ class EventDetailEntity:
     def event_level(self):
         r"""Gets the event_level of this EventDetailEntity.
 
-        事件级别，取值范围：Critical,Major,Minor,Info
-
         :return: The event_level of this EventDetailEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.EventLevelEnum`
         """
         return self._event_level
 
@@ -220,10 +214,8 @@ class EventDetailEntity:
     def event_level(self, event_level):
         r"""Sets the event_level of this EventDetailEntity.
 
-        事件级别，取值范围：Critical,Major,Minor,Info
-
         :param event_level: The event_level of this EventDetailEntity.
-        :type event_level: str
+        :type event_level: :class:`huaweicloudsdkbcc.v1.EventLevelEnum`
         """
         self._event_level = event_level
 

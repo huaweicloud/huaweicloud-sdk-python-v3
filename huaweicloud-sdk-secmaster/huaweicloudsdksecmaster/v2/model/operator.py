@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Operator:
-
+    """
+    allowed enum values
+    """
+    GT = "GT"
+    LT = "LT"
+    EQ = "EQ"
+    NE = "NE"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

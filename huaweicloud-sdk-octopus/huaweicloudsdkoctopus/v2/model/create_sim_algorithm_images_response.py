@@ -20,7 +20,7 @@ class CreateSimAlgorithmImagesResponse(SdkResponse):
         'id': 'int',
         'created_at': 'float',
         'updated_at': 'float',
-        'type': 'str',
+        'type': 'Type87eEnum',
         'version': 'str',
         'command': 'str',
         'workspace': 'str',
@@ -55,7 +55,7 @@ class CreateSimAlgorithmImagesResponse(SdkResponse):
         :param updated_at: 
         :type updated_at: float
         :param type: 镜像类型  * &#x60;build&#x60; - Build * &#x60;upload&#x60; - Upload
-        :type type: :class:`huaweicloudsdkoctopus.v2.str`
+        :type type: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
         :param version: 镜像版本
         :type version: str
         :param command: 运行命令
@@ -182,7 +182,7 @@ class CreateSimAlgorithmImagesResponse(SdkResponse):
         镜像类型  * `build` - Build * `upload` - Upload
 
         :return: The type of this CreateSimAlgorithmImagesResponse.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.str`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
         """
         return self._type
 
@@ -193,7 +193,7 @@ class CreateSimAlgorithmImagesResponse(SdkResponse):
         镜像类型  * `build` - Build * `upload` - Upload
 
         :param type: The type of this CreateSimAlgorithmImagesResponse.
-        :type type: :class:`huaweicloudsdkoctopus.v2.str`
+        :type type: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
         """
         self._type = type
 

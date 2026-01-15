@@ -15,7 +15,7 @@ class CentralNetworkConnectionState:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'str'
+        'state': 'CentralNetworkConnectionStateEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class CentralNetworkConnectionState:
 
         The model defined in huaweicloud sdk
 
-        :param state: 中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         """
         
         
@@ -42,10 +42,8 @@ class CentralNetworkConnectionState:
     def state(self):
         r"""Gets the state of this CentralNetworkConnectionState.
 
-        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-
         :return: The state of this CentralNetworkConnectionState.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         """
         return self._state
 
@@ -53,10 +51,8 @@ class CentralNetworkConnectionState:
     def state(self, state):
         r"""Sets the state of this CentralNetworkConnectionState.
 
-        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
-
         :param state: The state of this CentralNetworkConnectionState.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
         """
         self._state = state
 

@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PublicTemplateRegisterType:
-
+    """
+    allowed enum values
+    """
+    INIT_CREATED_SUBMIT_APPROVE_DEPRECATE_APPROVE = "init_created，submit_approve，deprecate_approve"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

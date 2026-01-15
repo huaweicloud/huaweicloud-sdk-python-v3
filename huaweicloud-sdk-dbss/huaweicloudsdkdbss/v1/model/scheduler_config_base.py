@@ -47,7 +47,7 @@ class SchedulerConfigBase:
         :type db_ids: str
         :param format: 文件类型
         :type format: str
-        :param frequency: 周期 - AUDIT_REPORT_DAY: 天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
+        :param frequency: 周期 - AUDIT_REPORT_DAY：天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
         :type frequency: str
         :param id: 报表模板ID
         :type id: str
@@ -57,7 +57,7 @@ class SchedulerConfigBase:
         :type notice: str
         :param start_time: 开始时间
         :type start_time: str
-        :param status: 模板状态 - ON: 开启 - OFF：关闭
+        :param status: 模板状态 - ON：开启 - OFF：关闭
         :type status: str
         :param topic_urn: 主题URN
         :type topic_urn: str
@@ -143,7 +143,7 @@ class SchedulerConfigBase:
     def frequency(self):
         r"""Gets the frequency of this SchedulerConfigBase.
 
-        周期 - AUDIT_REPORT_DAY: 天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
+        周期 - AUDIT_REPORT_DAY：天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
 
         :return: The frequency of this SchedulerConfigBase.
         :rtype: str
@@ -154,7 +154,7 @@ class SchedulerConfigBase:
     def frequency(self, frequency):
         r"""Sets the frequency of this SchedulerConfigBase.
 
-        周期 - AUDIT_REPORT_DAY: 天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
+        周期 - AUDIT_REPORT_DAY：天 - AUDIT_REPORT_WEEK：周 - AUDIT_REPORT_MONTH：月 - AUDIT_REPORT_YEAR：年 - AUDIT_REPORT_REAL_TIME：实时
 
         :param frequency: The frequency of this SchedulerConfigBase.
         :type frequency: str
@@ -253,7 +253,7 @@ class SchedulerConfigBase:
     def status(self):
         r"""Gets the status of this SchedulerConfigBase.
 
-        模板状态 - ON: 开启 - OFF：关闭
+        模板状态 - ON：开启 - OFF：关闭
 
         :return: The status of this SchedulerConfigBase.
         :rtype: str
@@ -264,7 +264,7 @@ class SchedulerConfigBase:
     def status(self, status):
         r"""Sets the status of this SchedulerConfigBase.
 
-        模板状态 - ON: 开启 - OFF：关闭
+        模板状态 - ON：开启 - OFF：关闭
 
         :param status: The status of this SchedulerConfigBase.
         :type status: str

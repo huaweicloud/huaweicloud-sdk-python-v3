@@ -21,7 +21,7 @@ class CreateSimSmMapsResponse(SdkResponse):
         'created_at': 'float',
         'updated_at': 'float',
         'file': 'FileCreateSrlz',
-        'version': 'str'
+        'version': 'MapVersionEnum'
     }
 
     attribute_map = {
@@ -48,8 +48,8 @@ class CreateSimSmMapsResponse(SdkResponse):
         :type updated_at: float
         :param file: 
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateSrlz`
-        :param version: * &#x60;v1.4.0&#x60; - v1.4.0 * &#x60;v1.5.0&#x60; - v1.5.0 * &#x60;v1.6.0&#x60; - v1.6.0 * &#x60;v1.6.1&#x60; - v1.6.1 * &#x60;v1.7.0&#x60; - v1.7.0
-        :type version: str
+        :param version: 
+        :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         
         super().__init__()
@@ -185,10 +185,8 @@ class CreateSimSmMapsResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this CreateSimSmMapsResponse.
 
-        * `v1.4.0` - v1.4.0 * `v1.5.0` - v1.5.0 * `v1.6.0` - v1.6.0 * `v1.6.1` - v1.6.1 * `v1.7.0` - v1.7.0
-
         :return: The version of this CreateSimSmMapsResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         return self._version
 
@@ -196,10 +194,8 @@ class CreateSimSmMapsResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this CreateSimSmMapsResponse.
 
-        * `v1.4.0` - v1.4.0 * `v1.5.0` - v1.5.0 * `v1.6.0` - v1.6.0 * `v1.6.1` - v1.6.1 * `v1.7.0` - v1.7.0
-
         :param version: The version of this CreateSimSmMapsResponse.
-        :type version: str
+        :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         self._version = version
 

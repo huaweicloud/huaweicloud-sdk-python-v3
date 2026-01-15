@@ -15,7 +15,7 @@ class CreateShortJobReq:
     sensitive_list = []
 
     openapi_types = {
-        'job_type': 'str',
+        'job_type': 'ShortJobType',
         'language': 'str'
     }
 
@@ -29,8 +29,8 @@ class CreateShortJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 短任务类型。 * VOICE_ASSESS: 声音质量检测
-        :type job_type: str
+        :param job_type: 
+        :type job_type: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
         :param language: 语言。 * CN: 中文 * EN: 英文
         :type language: str
         """
@@ -49,10 +49,8 @@ class CreateShortJobReq:
     def job_type(self):
         r"""Gets the job_type of this CreateShortJobReq.
 
-        短任务类型。 * VOICE_ASSESS: 声音质量检测
-
         :return: The job_type of this CreateShortJobReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
         """
         return self._job_type
 
@@ -60,10 +58,8 @@ class CreateShortJobReq:
     def job_type(self, job_type):
         r"""Sets the job_type of this CreateShortJobReq.
 
-        短任务类型。 * VOICE_ASSESS: 声音质量检测
-
         :param job_type: The job_type of this CreateShortJobReq.
-        :type job_type: str
+        :type job_type: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
         """
         self._job_type = job_type
 

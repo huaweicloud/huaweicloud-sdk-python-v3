@@ -16,7 +16,7 @@ class UpdateMobvoiHotWords:
 
     openapi_types = {
         'vocabulary_id': 'str',
-        'language': 'str'
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class UpdateMobvoiHotWords:
 
         :param vocabulary_id: 热词ID。
         :type vocabulary_id: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
@@ -72,10 +72,8 @@ class UpdateMobvoiHotWords:
     def language(self):
         r"""Gets the language of this UpdateMobvoiHotWords.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this UpdateMobvoiHotWords.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -83,10 +81,8 @@ class UpdateMobvoiHotWords:
     def language(self, language):
         r"""Sets the language of this UpdateMobvoiHotWords.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this UpdateMobvoiHotWords.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

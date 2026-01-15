@@ -16,17 +16,15 @@ class SubCertData:
 
     openapi_types = {
         'distinguished_name': 'DistinguishedName',
-        'key_algorithm': 'str',
-        'signature_algorithm': 'str'
+        'key_algorithm': 'str'
     }
 
     attribute_map = {
         'distinguished_name': 'distinguished_name',
-        'key_algorithm': 'key_algorithm',
-        'signature_algorithm': 'signature_algorithm'
+        'key_algorithm': 'key_algorithm'
     }
 
-    def __init__(self, distinguished_name=None, key_algorithm=None, signature_algorithm=None):
+    def __init__(self, distinguished_name=None, key_algorithm=None):
         r"""SubCertData
 
         The model defined in huaweicloud sdk
@@ -35,20 +33,16 @@ class SubCertData:
         :type distinguished_name: :class:`huaweicloudsdkworkspace.v2.DistinguishedName`
         :param key_algorithm: 密钥对生成算法 RSA-2048 RSA-3072。
         :type key_algorithm: str
-        :param signature_algorithm: 签名哈希算法 SHA-256 SHA-512。
-        :type signature_algorithm: str
         """
         
         
 
         self._distinguished_name = None
         self._key_algorithm = None
-        self._signature_algorithm = None
         self.discriminator = None
 
         self.distinguished_name = distinguished_name
         self.key_algorithm = key_algorithm
-        self.signature_algorithm = signature_algorithm
 
     @property
     def distinguished_name(self):
@@ -89,28 +83,6 @@ class SubCertData:
         :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
-
-    @property
-    def signature_algorithm(self):
-        r"""Gets the signature_algorithm of this SubCertData.
-
-        签名哈希算法 SHA-256 SHA-512。
-
-        :return: The signature_algorithm of this SubCertData.
-        :rtype: str
-        """
-        return self._signature_algorithm
-
-    @signature_algorithm.setter
-    def signature_algorithm(self, signature_algorithm):
-        r"""Sets the signature_algorithm of this SubCertData.
-
-        签名哈希算法 SHA-256 SHA-512。
-
-        :param signature_algorithm: The signature_algorithm of this SubCertData.
-        :type signature_algorithm: str
-        """
-        self._signature_algorithm = signature_algorithm
 
     def to_dict(self):
         result = {}

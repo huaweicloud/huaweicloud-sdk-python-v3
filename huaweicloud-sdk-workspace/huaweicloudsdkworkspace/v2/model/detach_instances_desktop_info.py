@@ -17,7 +17,7 @@ class DetachInstancesDesktopInfo:
     openapi_types = {
         'desktop_id': 'str',
         'is_detach_all_users': 'bool',
-        'detach_user_infos': 'list[AttachInstancesUserInfo]'
+        'detach_user_infos': 'list[DetachInstancesUserInfo]'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class DetachInstancesDesktopInfo:
         :param is_detach_all_users: 表示解关联所有用户：true，如果指定那么detach_user_infos会失效；指定解关联用户：false，通过detach_user_infos指定解关联的用户。
         :type is_detach_all_users: bool
         :param detach_user_infos: 解分配的用户信息列表。
-        :type detach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        :type detach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.DetachInstancesUserInfo`]
         """
         
         
@@ -104,7 +104,7 @@ class DetachInstancesDesktopInfo:
         解分配的用户信息列表。
 
         :return: The detach_user_infos of this DetachInstancesDesktopInfo.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DetachInstancesUserInfo`]
         """
         return self._detach_user_infos
 
@@ -115,7 +115,7 @@ class DetachInstancesDesktopInfo:
         解分配的用户信息列表。
 
         :param detach_user_infos: The detach_user_infos of this DetachInstancesDesktopInfo.
-        :type detach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        :type detach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.DetachInstancesUserInfo`]
         """
         self._detach_user_infos = detach_user_infos
 

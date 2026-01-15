@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StatusSchemaResp:
-
+    """
+    allowed enum values
+    """
+    HEALTH = "health"
+    UNHEALTH = "unhealth"
+    NO_ALARM_RULE = "no_alarm_rule"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

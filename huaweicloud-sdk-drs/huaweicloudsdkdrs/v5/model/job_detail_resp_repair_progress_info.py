@@ -35,7 +35,7 @@ class JobDetailRespRepairProgressInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: 修复状态。
+        :param status: 修复状态。 取值：\&quot;FAILED\&quot;, \&quot;SUCCEEDED\&quot;, \&quot;FINISHED\&quot;, \&quot;SUCCESS\&quot;
         :type status: str
         :param progress: 修复进度，百分比。
         :type progress: str
@@ -71,7 +71,7 @@ class JobDetailRespRepairProgressInfo:
     def status(self):
         r"""Gets the status of this JobDetailRespRepairProgressInfo.
 
-        修复状态。
+        修复状态。 取值：\"FAILED\", \"SUCCEEDED\", \"FINISHED\", \"SUCCESS\"
 
         :return: The status of this JobDetailRespRepairProgressInfo.
         :rtype: str
@@ -82,7 +82,7 @@ class JobDetailRespRepairProgressInfo:
     def status(self, status):
         r"""Sets the status of this JobDetailRespRepairProgressInfo.
 
-        修复状态。
+        修复状态。 取值：\"FAILED\", \"SUCCEEDED\", \"FINISHED\", \"SUCCESS\"
 
         :param status: The status of this JobDetailRespRepairProgressInfo.
         :type status: str

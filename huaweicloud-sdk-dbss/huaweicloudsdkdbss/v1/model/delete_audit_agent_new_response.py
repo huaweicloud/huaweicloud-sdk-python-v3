@@ -28,7 +28,7 @@ class DeleteAuditAgentNewResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果  - SUCCESS: 成功
+        :param result: 操作结果  - SUCCESS：成功
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class DeleteAuditAgentNewResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this DeleteAuditAgentNewResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :return: The result of this DeleteAuditAgentNewResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteAuditAgentNewResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this DeleteAuditAgentNewResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :param result: The result of this DeleteAuditAgentNewResponse.
         :type result: str

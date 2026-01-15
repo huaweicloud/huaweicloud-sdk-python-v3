@@ -23,7 +23,7 @@ class NotebookEntity:
         'creator': 'str',
         'url': 'str',
         'flavor': 'FlavorInfo',
-        'status': 'str',
+        'status': 'NotebookStatus',
         'image': 'NotebookImage',
         'storages': 'list[NotebookStorage]',
         'create_time': 'str',
@@ -72,7 +72,7 @@ class NotebookEntity:
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
         :param status: 
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         :param image: 
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
         :param storages: notebook存储信息
@@ -314,7 +314,7 @@ class NotebookEntity:
         r"""Gets the status of this NotebookEntity.
 
         :return: The status of this NotebookEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
         return self._status
 
@@ -323,7 +323,7 @@ class NotebookEntity:
         r"""Sets the status of this NotebookEntity.
 
         :param status: The status of this NotebookEntity.
-        :type status: str
+        :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
         self._status = status
 

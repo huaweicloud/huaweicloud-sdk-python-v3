@@ -17,16 +17,22 @@ class BindingVifDetails:
     openapi_types = {
         'primary_interface': 'bool',
         'port_filter': 'bool',
-        'ovs_hybrid_plug': 'bool'
+        'ovs_hybrid_plug': 'bool',
+        'vlan_id': 'str',
+        'parent_id': 'str',
+        'parent_device_id': 'str'
     }
 
     attribute_map = {
         'primary_interface': 'primary_interface',
         'port_filter': 'port_filter',
-        'ovs_hybrid_plug': 'ovs_hybrid_plug'
+        'ovs_hybrid_plug': 'ovs_hybrid_plug',
+        'vlan_id': 'vlan_id',
+        'parent_id': 'parent_id',
+        'parent_device_id': 'parent_device_id'
     }
 
-    def __init__(self, primary_interface=None, port_filter=None, ovs_hybrid_plug=None):
+    def __init__(self, primary_interface=None, port_filter=None, ovs_hybrid_plug=None, vlan_id=None, parent_id=None, parent_device_id=None):
         r"""BindingVifDetails
 
         The model defined in huaweicloud sdk
@@ -37,6 +43,12 @@ class BindingVifDetails:
         :type port_filter: bool
         :param ovs_hybrid_plug: **参数解释**： 是否为ovs/bridge混合模式。 **取值范围**： - true：ovs/bridge混合模式。 - false：非ovs/bridge混合模式。
         :type ovs_hybrid_plug: bool
+        :param vlan_id: **参数解释**： 辅助弹性网卡的vlan ID。 **取值范围**： 不涉及。
+        :type vlan_id: str
+        :param parent_id: **参数解释**： 辅助弹性网卡的宿主网卡ID。 **取值范围**： 不涉及。
+        :type parent_id: str
+        :param parent_device_id: **参数解释**： 辅助弹性网卡的宿主网卡所属的设备ID。 **取值范围**： 不涉及。
+        :type parent_device_id: str
         """
         
         
@@ -44,6 +56,9 @@ class BindingVifDetails:
         self._primary_interface = None
         self._port_filter = None
         self._ovs_hybrid_plug = None
+        self._vlan_id = None
+        self._parent_id = None
+        self._parent_device_id = None
         self.discriminator = None
 
         if primary_interface is not None:
@@ -52,6 +67,12 @@ class BindingVifDetails:
             self.port_filter = port_filter
         if ovs_hybrid_plug is not None:
             self.ovs_hybrid_plug = ovs_hybrid_plug
+        if vlan_id is not None:
+            self.vlan_id = vlan_id
+        if parent_id is not None:
+            self.parent_id = parent_id
+        if parent_device_id is not None:
+            self.parent_device_id = parent_device_id
 
     @property
     def primary_interface(self):
@@ -118,6 +139,72 @@ class BindingVifDetails:
         :type ovs_hybrid_plug: bool
         """
         self._ovs_hybrid_plug = ovs_hybrid_plug
+
+    @property
+    def vlan_id(self):
+        r"""Gets the vlan_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的vlan ID。 **取值范围**： 不涉及。
+
+        :return: The vlan_id of this BindingVifDetails.
+        :rtype: str
+        """
+        return self._vlan_id
+
+    @vlan_id.setter
+    def vlan_id(self, vlan_id):
+        r"""Sets the vlan_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的vlan ID。 **取值范围**： 不涉及。
+
+        :param vlan_id: The vlan_id of this BindingVifDetails.
+        :type vlan_id: str
+        """
+        self._vlan_id = vlan_id
+
+    @property
+    def parent_id(self):
+        r"""Gets the parent_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的宿主网卡ID。 **取值范围**： 不涉及。
+
+        :return: The parent_id of this BindingVifDetails.
+        :rtype: str
+        """
+        return self._parent_id
+
+    @parent_id.setter
+    def parent_id(self, parent_id):
+        r"""Sets the parent_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的宿主网卡ID。 **取值范围**： 不涉及。
+
+        :param parent_id: The parent_id of this BindingVifDetails.
+        :type parent_id: str
+        """
+        self._parent_id = parent_id
+
+    @property
+    def parent_device_id(self):
+        r"""Gets the parent_device_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的宿主网卡所属的设备ID。 **取值范围**： 不涉及。
+
+        :return: The parent_device_id of this BindingVifDetails.
+        :rtype: str
+        """
+        return self._parent_device_id
+
+    @parent_device_id.setter
+    def parent_device_id(self, parent_device_id):
+        r"""Sets the parent_device_id of this BindingVifDetails.
+
+        **参数解释**： 辅助弹性网卡的宿主网卡所属的设备ID。 **取值范围**： 不涉及。
+
+        :param parent_device_id: The parent_device_id of this BindingVifDetails.
+        :type parent_device_id: str
+        """
+        self._parent_device_id = parent_device_id
 
     def to_dict(self):
         result = {}

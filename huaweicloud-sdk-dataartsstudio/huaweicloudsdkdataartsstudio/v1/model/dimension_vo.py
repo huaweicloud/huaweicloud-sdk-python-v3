@@ -28,7 +28,7 @@ class DimensionVO:
         'l2_id': 'str',
         'l3_id': 'str',
         'hierarchies': 'list[DimensionHierarchiesVO]',
-        'status': 'str',
+        'status': 'BizStatusEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'approval_info': 'ApprovalVO',
@@ -51,7 +51,7 @@ class DimensionVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'str',
+        'env_type': 'EnvTypeEnum',
         'model_id': 'str',
         'model': 'WorkspaceVO'
     }
@@ -129,8 +129,8 @@ class DimensionVO:
         :type l3_id: str
         :param hierarchies: 层级属性。
         :type hierarchies: list[:class:`huaweicloudsdkdataartsstudio.v1.DimensionHierarchiesVO`]
-        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -175,8 +175,8 @@ class DimensionVO:
         :type dev_version_name: str
         :param prod_version_name: 生产环境版本名称
         :type prod_version_name: str
-        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-        :type env_type: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         :param model_id: 所属模型ID，ID字符串。
         :type model_id: str
         :param model: 
@@ -583,10 +583,8 @@ class DimensionVO:
     def status(self):
         r"""Gets the status of this DimensionVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The status of this DimensionVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._status
 
@@ -594,10 +592,8 @@ class DimensionVO:
     def status(self, status):
         r"""Sets the status of this DimensionVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param status: The status of this DimensionVO.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._status = status
 
@@ -1077,10 +1073,8 @@ class DimensionVO:
     def env_type(self):
         r"""Gets the env_type of this DimensionVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :return: The env_type of this DimensionVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         return self._env_type
 
@@ -1088,10 +1082,8 @@ class DimensionVO:
     def env_type(self, env_type):
         r"""Sets the env_type of this DimensionVO.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :param env_type: The env_type of this DimensionVO.
-        :type env_type: str
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
 

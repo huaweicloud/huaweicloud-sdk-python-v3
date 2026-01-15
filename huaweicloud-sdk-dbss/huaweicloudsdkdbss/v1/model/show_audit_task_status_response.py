@@ -50,7 +50,7 @@ class ShowAuditTaskStatusResponse(SdkResponse):
 
         :param begin_time: 开始时间
         :type begin_time: int
-        :param busi_type: 业务类型  - audit: 审计  - risk: 风险
+        :param busi_type: 业务类型  - audit：审计  - risk：风险
         :type busi_type: str
         :param completed_num: 已统计实例数
         :type completed_num: int
@@ -136,7 +136,7 @@ class ShowAuditTaskStatusResponse(SdkResponse):
     def busi_type(self):
         r"""Gets the busi_type of this ShowAuditTaskStatusResponse.
 
-        业务类型  - audit: 审计  - risk: 风险
+        业务类型  - audit：审计  - risk：风险
 
         :return: The busi_type of this ShowAuditTaskStatusResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class ShowAuditTaskStatusResponse(SdkResponse):
     def busi_type(self, busi_type):
         r"""Sets the busi_type of this ShowAuditTaskStatusResponse.
 
-        业务类型  - audit: 审计  - risk: 风险
+        业务类型  - audit：审计  - risk：风险
 
         :param busi_type: The busi_type of this ShowAuditTaskStatusResponse.
         :type busi_type: str

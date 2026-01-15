@@ -16,51 +16,51 @@ class ListEcsSpecificationNewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'specification': 'list[EcsSpecificationBean]'
+        'specifications': 'list[EcsSpecificationBean]'
     }
 
     attribute_map = {
-        'specification': 'specification'
+        'specifications': 'specifications'
     }
 
-    def __init__(self, specification=None):
+    def __init__(self, specifications=None):
         r"""ListEcsSpecificationNewResponse
 
         The model defined in huaweicloud sdk
 
-        :param specification: ecs规格集合
-        :type specification: list[:class:`huaweicloudsdkdbss.v1.EcsSpecificationBean`]
+        :param specifications: ecs规格集合
+        :type specifications: list[:class:`huaweicloudsdkdbss.v1.EcsSpecificationBean`]
         """
         
         super().__init__()
 
-        self._specification = None
+        self._specifications = None
         self.discriminator = None
 
-        if specification is not None:
-            self.specification = specification
+        if specifications is not None:
+            self.specifications = specifications
 
     @property
-    def specification(self):
-        r"""Gets the specification of this ListEcsSpecificationNewResponse.
+    def specifications(self):
+        r"""Gets the specifications of this ListEcsSpecificationNewResponse.
 
         ecs规格集合
 
-        :return: The specification of this ListEcsSpecificationNewResponse.
+        :return: The specifications of this ListEcsSpecificationNewResponse.
         :rtype: list[:class:`huaweicloudsdkdbss.v1.EcsSpecificationBean`]
         """
-        return self._specification
+        return self._specifications
 
-    @specification.setter
-    def specification(self, specification):
-        r"""Sets the specification of this ListEcsSpecificationNewResponse.
+    @specifications.setter
+    def specifications(self, specifications):
+        r"""Sets the specifications of this ListEcsSpecificationNewResponse.
 
         ecs规格集合
 
-        :param specification: The specification of this ListEcsSpecificationNewResponse.
-        :type specification: list[:class:`huaweicloudsdkdbss.v1.EcsSpecificationBean`]
+        :param specifications: The specifications of this ListEcsSpecificationNewResponse.
+        :type specifications: list[:class:`huaweicloudsdkdbss.v1.EcsSpecificationBean`]
         """
-        self._specification = specification
+        self._specifications = specifications
 
     def to_dict(self):
         import warnings

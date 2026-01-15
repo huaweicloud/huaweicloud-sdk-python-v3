@@ -24,6 +24,7 @@ class VolumeDetail:
         'id': 'str',
         'volume_id': 'str',
         'bill_resource_id': 'str',
+        'desktop_pool_disk_id': 'str',
         'create_time': 'str',
         'display_name': 'str',
         'resource_spec_code': 'str'
@@ -39,12 +40,13 @@ class VolumeDetail:
         'id': 'id',
         'volume_id': 'volume_id',
         'bill_resource_id': 'bill_resource_id',
+        'desktop_pool_disk_id': 'desktop_pool_disk_id',
         'create_time': 'create_time',
         'display_name': 'display_name',
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, kms_id=None, type=None, size=None, iops=None, throughput=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None, resource_spec_code=None):
+    def __init__(self, kms_id=None, type=None, size=None, iops=None, throughput=None, device=None, id=None, volume_id=None, bill_resource_id=None, desktop_pool_disk_id=None, create_time=None, display_name=None, resource_spec_code=None):
         r"""VolumeDetail
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class VolumeDetail:
         :type volume_id: str
         :param bill_resource_id: 磁盘计费资源ID。
         :type bill_resource_id: str
+        :param desktop_pool_disk_id: 桌面池磁盘ID。
+        :type desktop_pool_disk_id: str
         :param create_time: 磁盘的创建时间。
         :type create_time: str
         :param display_name: 磁盘名。
@@ -86,6 +90,7 @@ class VolumeDetail:
         self._id = None
         self._volume_id = None
         self._bill_resource_id = None
+        self._desktop_pool_disk_id = None
         self._create_time = None
         self._display_name = None
         self._resource_spec_code = None
@@ -107,6 +112,8 @@ class VolumeDetail:
             self.volume_id = volume_id
         if bill_resource_id is not None:
             self.bill_resource_id = bill_resource_id
+        if desktop_pool_disk_id is not None:
+            self.desktop_pool_disk_id = desktop_pool_disk_id
         if create_time is not None:
             self.create_time = create_time
         if display_name is not None:
@@ -311,6 +318,28 @@ class VolumeDetail:
         :type bill_resource_id: str
         """
         self._bill_resource_id = bill_resource_id
+
+    @property
+    def desktop_pool_disk_id(self):
+        r"""Gets the desktop_pool_disk_id of this VolumeDetail.
+
+        桌面池磁盘ID。
+
+        :return: The desktop_pool_disk_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._desktop_pool_disk_id
+
+    @desktop_pool_disk_id.setter
+    def desktop_pool_disk_id(self, desktop_pool_disk_id):
+        r"""Sets the desktop_pool_disk_id of this VolumeDetail.
+
+        桌面池磁盘ID。
+
+        :param desktop_pool_disk_id: The desktop_pool_disk_id of this VolumeDetail.
+        :type desktop_pool_disk_id: str
+        """
+        self._desktop_pool_disk_id = desktop_pool_disk_id
 
     @property
     def create_time(self):

@@ -15,7 +15,7 @@ class RecognizeReceptorPocketReq:
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'str',
+        'mode': 'RecognizeReceptorPocketMode',
         'receptor_file': 'ReceptorDrugFileReq',
         'ligand_file': 'DrugFile',
         'residues': 'list[str]'
@@ -33,8 +33,8 @@ class RecognizeReceptorPocketReq:
 
         The model defined in huaweicloud sdk
 
-        :param mode: 口袋识别的模式：自动、全局、配体、残基
-        :type mode: str
+        :param mode: 
+        :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
         :param receptor_file: 
         :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
         :param ligand_file: 
@@ -62,10 +62,8 @@ class RecognizeReceptorPocketReq:
     def mode(self):
         r"""Gets the mode of this RecognizeReceptorPocketReq.
 
-        口袋识别的模式：自动、全局、配体、残基
-
         :return: The mode of this RecognizeReceptorPocketReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
         """
         return self._mode
 
@@ -73,10 +71,8 @@ class RecognizeReceptorPocketReq:
     def mode(self, mode):
         r"""Sets the mode of this RecognizeReceptorPocketReq.
 
-        口袋识别的模式：自动、全局、配体、残基
-
         :param mode: The mode of this RecognizeReceptorPocketReq.
-        :type mode: str
+        :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
         """
         self._mode = mode
 

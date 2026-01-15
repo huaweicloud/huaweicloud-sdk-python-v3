@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PeerLinkStatus:
-
+    """
+    allowed enum values
+    """
+    PENDING_CREATE = "PENDING_CREATE"
+    PENDING_UPDATE = "PENDING_UPDATE"
+    ACTIVE = "ACTIVE"
+    ERROR = "ERROR"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

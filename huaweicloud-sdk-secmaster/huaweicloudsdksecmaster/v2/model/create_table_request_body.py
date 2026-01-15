@@ -27,7 +27,7 @@ class CreateTableRequestBody:
         'directory': 'str',
         'directory_en': 'str',
         'directory_fr': 'str',
-        'data_classification': 'str',
+        'data_classification': 'DataClassification',
         'schema': 'IsapTableSchema',
         'storage_setting': 'TableStorageSetting',
         'display_setting': 'TableDisplaySetting',
@@ -83,8 +83,8 @@ class CreateTableRequestBody:
         :type directory_en: str
         :param directory_fr: 目录分组
         :type directory_fr: str
-        :param data_classification: **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-        :type data_classification: str
+        :param data_classification: 
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         :param schema: 
         :type schema: :class:`huaweicloudsdksecmaster.v2.IsapTableSchema`
         :param storage_setting: 
@@ -412,10 +412,8 @@ class CreateTableRequestBody:
     def data_classification(self):
         r"""Gets the data_classification of this CreateTableRequestBody.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :return: The data_classification of this CreateTableRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         return self._data_classification
 
@@ -423,10 +421,8 @@ class CreateTableRequestBody:
     def data_classification(self, data_classification):
         r"""Sets the data_classification of this CreateTableRequestBody.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :param data_classification: The data_classification of this CreateTableRequestBody.
-        :type data_classification: str
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         self._data_classification = data_classification
 

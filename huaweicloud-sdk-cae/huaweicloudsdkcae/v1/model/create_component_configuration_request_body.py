@@ -15,8 +15,8 @@ class CreateComponentConfigurationRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
-        'kind': 'str',
+        'api_version': 'ApiVersionObj',
+        'kind': 'ComponentConfigurationKindObj',
         'items': 'list[ConfigurationItem]'
     }
 
@@ -31,10 +31,10 @@ class CreateComponentConfigurationRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v1”，该值不可修改。
-        :type api_version: str
-        :param kind: API类型，固定值“ComponentConfiguration”，该值不可修改。
-        :type kind: str
+        :param api_version: 
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :param kind: 
+        :type kind: :class:`huaweicloudsdkcae.v1.ComponentConfigurationKindObj`
         :param items: 配置项列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.ConfigurationItem`]
         """
@@ -54,10 +54,8 @@ class CreateComponentConfigurationRequestBody:
     def api_version(self):
         r"""Gets the api_version of this CreateComponentConfigurationRequestBody.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :return: The api_version of this CreateComponentConfigurationRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         return self._api_version
 
@@ -65,10 +63,8 @@ class CreateComponentConfigurationRequestBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this CreateComponentConfigurationRequestBody.
 
-        API版本，固定值“v1”，该值不可修改。
-
         :param api_version: The api_version of this CreateComponentConfigurationRequestBody.
-        :type api_version: str
+        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
         """
         self._api_version = api_version
 
@@ -76,10 +72,8 @@ class CreateComponentConfigurationRequestBody:
     def kind(self):
         r"""Gets the kind of this CreateComponentConfigurationRequestBody.
 
-        API类型，固定值“ComponentConfiguration”，该值不可修改。
-
         :return: The kind of this CreateComponentConfigurationRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcae.v1.ComponentConfigurationKindObj`
         """
         return self._kind
 
@@ -87,10 +81,8 @@ class CreateComponentConfigurationRequestBody:
     def kind(self, kind):
         r"""Sets the kind of this CreateComponentConfigurationRequestBody.
 
-        API类型，固定值“ComponentConfiguration”，该值不可修改。
-
         :param kind: The kind of this CreateComponentConfigurationRequestBody.
-        :type kind: str
+        :type kind: :class:`huaweicloudsdkcae.v1.ComponentConfigurationKindObj`
         """
         self._kind = kind
 

@@ -25,7 +25,7 @@ class CreateDigitalAssetRequestBody:
         'shared_config': 'AssetSharedConfig',
         'is_need_generate_cover': 'bool',
         'asset_order': 'int',
-        'supported_service': 'list[str]',
+        'supported_service': 'list[SupportedServiceEnum]',
         'auto_operation_config': 'list[AutoOperationConfig]'
     }
 
@@ -70,7 +70,7 @@ class CreateDigitalAssetRequestBody:
         :param asset_order: **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
         :type asset_order: int
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
-        :type supported_service: list[str]
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param auto_operation_config: 资产自动处理任务。
         :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
         """
@@ -329,7 +329,7 @@ class CreateDigitalAssetRequestBody:
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :return: The supported_service of this CreateDigitalAssetRequestBody.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         return self._supported_service
 
@@ -340,7 +340,7 @@ class CreateDigitalAssetRequestBody:
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :param supported_service: The supported_service of this CreateDigitalAssetRequestBody.
-        :type supported_service: list[str]
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         self._supported_service = supported_service
 

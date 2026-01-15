@@ -18,7 +18,7 @@ class DataLayerVO:
         'id': 'str',
         'level': 'int',
         'name': 'str',
-        'type': 'str',
+        'type': 'LayerType',
         'description': 'str',
         'is_default': 'bool',
         'disabled_customized_field_ids': 'list[str]'
@@ -45,8 +45,8 @@ class DataLayerVO:
         :type level: int
         :param name: 中文名称。
         :type name: str
-        :param type: 数仓分层的类型，可以是关系建模（ER）、维度建模（DIMENSION）和数据集市（DM）
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdataartsstudio.v1.LayerType`
         :param description: 数仓分层描述。
         :type description: str
         :param is_default: 是否是不可删除的默认分层，包含SDI\\DWR\\DM。
@@ -148,10 +148,8 @@ class DataLayerVO:
     def type(self):
         r"""Gets the type of this DataLayerVO.
 
-        数仓分层的类型，可以是关系建模（ER）、维度建模（DIMENSION）和数据集市（DM）
-
         :return: The type of this DataLayerVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.LayerType`
         """
         return self._type
 
@@ -159,10 +157,8 @@ class DataLayerVO:
     def type(self, type):
         r"""Sets the type of this DataLayerVO.
 
-        数仓分层的类型，可以是关系建模（ER）、维度建模（DIMENSION）和数据集市（DM）
-
         :param type: The type of this DataLayerVO.
-        :type type: str
+        :type type: :class:`huaweicloudsdkdataartsstudio.v1.LayerType`
         """
         self._type = type
 

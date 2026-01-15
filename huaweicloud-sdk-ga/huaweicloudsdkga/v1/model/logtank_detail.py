@@ -18,11 +18,11 @@ class LogtankDetail:
         'id': 'str',
         'domain_id': 'str',
         'project_id': 'str',
-        'resource_type': 'str',
+        'resource_type': 'LogtankResourceType',
         'resource_id': 'str',
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'status': 'str',
+        'status': 'ConfigStatus',
         'created_at': 'datetime',
         'updated_at': 'str'
     }
@@ -51,16 +51,16 @@ class LogtankDetail:
         :type domain_id: str
         :param project_id: 项目ID。
         :type project_id: str
-        :param resource_type: 云日志的资源类型。 取值范围： LISTENER：监听器
-        :type resource_type: str
+        :param resource_type: 
+        :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         :param resource_id: 开启云日志的资源ID。
         :type resource_id: str
         :param log_group_id: 云日志组ID。
         :type log_group_id: str
         :param log_stream_id: 云日志流ID。
         :type log_stream_id: str
-        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         :param created_at: 创建时间。
         :type created_at: datetime
         :param updated_at: 更新时间。
@@ -172,10 +172,8 @@ class LogtankDetail:
     def resource_type(self):
         r"""Gets the resource_type of this LogtankDetail.
 
-        云日志的资源类型。 取值范围： LISTENER：监听器
-
         :return: The resource_type of this LogtankDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         """
         return self._resource_type
 
@@ -183,10 +181,8 @@ class LogtankDetail:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this LogtankDetail.
 
-        云日志的资源类型。 取值范围： LISTENER：监听器
-
         :param resource_type: The resource_type of this LogtankDetail.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         """
         self._resource_type = resource_type
 
@@ -260,10 +256,8 @@ class LogtankDetail:
     def status(self):
         r"""Gets the status of this LogtankDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :return: The status of this LogtankDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         return self._status
 
@@ -271,10 +265,8 @@ class LogtankDetail:
     def status(self, status):
         r"""Sets the status of this LogtankDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :param status: The status of this LogtankDetail.
-        :type status: str
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         self._status = status
 

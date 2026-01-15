@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RecognizeReceptorPocketMode:
-
+    """
+    allowed enum values
+    """
+    AUTO = "AUTO"
+    GLOBAL = "GLOBAL"
+    LIGAND = "LIGAND"
+    RESIDUES = "RESIDUES"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

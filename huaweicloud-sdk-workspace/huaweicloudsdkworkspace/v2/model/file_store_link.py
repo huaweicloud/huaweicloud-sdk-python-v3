@@ -15,7 +15,7 @@ class FileStoreLink:
     sensitive_list = []
 
     openapi_types = {
-        'store_type': 'str',
+        'store_type': 'FileStoreTypeEnum',
         'bucket_store': 'BucketStore',
         'file_link': 'str'
     }
@@ -31,8 +31,8 @@ class FileStoreLink:
 
         The model defined in huaweicloud sdk
 
-        :param store_type: 存储方式： * &#x60;OBS&#x60; -  OBS桶存储。 * &#x60;LINK&#x60; - 外部存储,使用的可访问下载链接。
-        :type store_type: str
+        :param store_type: 
+        :type store_type: :class:`huaweicloudsdkworkspace.v2.FileStoreTypeEnum`
         :param bucket_store: 
         :type bucket_store: :class:`huaweicloudsdkworkspace.v2.BucketStore`
         :param file_link: 文件下载完整路径。
@@ -56,10 +56,8 @@ class FileStoreLink:
     def store_type(self):
         r"""Gets the store_type of this FileStoreLink.
 
-        存储方式： * `OBS` -  OBS桶存储。 * `LINK` - 外部存储,使用的可访问下载链接。
-
         :return: The store_type of this FileStoreLink.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreTypeEnum`
         """
         return self._store_type
 
@@ -67,10 +65,8 @@ class FileStoreLink:
     def store_type(self, store_type):
         r"""Sets the store_type of this FileStoreLink.
 
-        存储方式： * `OBS` -  OBS桶存储。 * `LINK` - 外部存储,使用的可访问下载链接。
-
         :param store_type: The store_type of this FileStoreLink.
-        :type store_type: str
+        :type store_type: :class:`huaweicloudsdkworkspace.v2.FileStoreTypeEnum`
         """
         self._store_type = store_type
 

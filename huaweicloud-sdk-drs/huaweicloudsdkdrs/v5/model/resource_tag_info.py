@@ -29,9 +29,9 @@ class ResourceTagInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。
+        :param key: 标签键。例如键值对{“aaa”:\&quot;bbb\&quot;}的key为\&quot;aaa\&quot;
         :type key: str
-        :param value: 标签值。
+        :param value: 标签值。例如键值对{“aaa”:\&quot;bbb\&quot;}的value为\&quot;bbb\&quot;
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class ResourceTagInfo:
     def key(self):
         r"""Gets the key of this ResourceTagInfo.
 
-        标签键。
+        标签键。例如键值对{“aaa”:\"bbb\"}的key为\"aaa\"
 
         :return: The key of this ResourceTagInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ResourceTagInfo:
     def key(self, key):
         r"""Sets the key of this ResourceTagInfo.
 
-        标签键。
+        标签键。例如键值对{“aaa”:\"bbb\"}的key为\"aaa\"
 
         :param key: The key of this ResourceTagInfo.
         :type key: str
@@ -72,7 +72,7 @@ class ResourceTagInfo:
     def value(self):
         r"""Gets the value of this ResourceTagInfo.
 
-        标签值。
+        标签值。例如键值对{“aaa”:\"bbb\"}的value为\"bbb\"
 
         :return: The value of this ResourceTagInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ResourceTagInfo:
     def value(self, value):
         r"""Sets the value of this ResourceTagInfo.
 
-        标签值。
+        标签值。例如键值对{“aaa”:\"bbb\"}的value为\"bbb\"
 
         :param value: The value of this ResourceTagInfo.
         :type value: str

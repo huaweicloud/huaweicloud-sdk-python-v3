@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ScheduledTypeEnum:
-
+    """
+    allowed enum values
+    """
+    FIXED_TIME = "FIXED_TIME"
+    DAY = "DAY"
+    WEEK = "WEEK"
+    MONTH = "MONTH"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

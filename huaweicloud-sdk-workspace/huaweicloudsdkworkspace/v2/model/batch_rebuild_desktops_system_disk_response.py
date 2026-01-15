@@ -18,6 +18,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
+        'error_detail': 'str',
         'encoded_authorization_message': 'str',
         'job_id': 'str'
     }
@@ -25,11 +26,12 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
     attribute_map = {
         'error_code': 'error_code',
         'error_msg': 'error_msg',
+        'error_detail': 'error_detail',
         'encoded_authorization_message': 'encoded_authorization_message',
         'job_id': 'job_id'
     }
 
-    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, job_id=None):
+    def __init__(self, error_code=None, error_msg=None, error_detail=None, encoded_authorization_message=None, job_id=None):
         r"""BatchRebuildDesktopsSystemDiskResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
         :type error_code: str
         :param error_msg: 错误描述。
         :type error_msg: str
+        :param error_detail: 错误详情。
+        :type error_detail: str
         :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
         :type encoded_authorization_message: str
         :param job_id: 重建系统盘总任务id。
@@ -48,6 +52,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
         self._error_code = None
         self._error_msg = None
+        self._error_detail = None
         self._encoded_authorization_message = None
         self._job_id = None
         self.discriminator = None
@@ -56,6 +61,8 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if error_detail is not None:
+            self.error_detail = error_detail
         if encoded_authorization_message is not None:
             self.encoded_authorization_message = encoded_authorization_message
         if job_id is not None:
@@ -104,6 +111,28 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def error_detail(self):
+        r"""Gets the error_detail of this BatchRebuildDesktopsSystemDiskResponse.
+
+        错误详情。
+
+        :return: The error_detail of this BatchRebuildDesktopsSystemDiskResponse.
+        :rtype: str
+        """
+        return self._error_detail
+
+    @error_detail.setter
+    def error_detail(self, error_detail):
+        r"""Sets the error_detail of this BatchRebuildDesktopsSystemDiskResponse.
+
+        错误详情。
+
+        :param error_detail: The error_detail of this BatchRebuildDesktopsSystemDiskResponse.
+        :type error_detail: str
+        """
+        self._error_detail = error_detail
 
     @property
     def encoded_authorization_message(self):

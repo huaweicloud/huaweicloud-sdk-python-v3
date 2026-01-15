@@ -47,9 +47,9 @@ class ReplayErrorSqlTemplateResp:
         :type target_name: str
         :param schema_name: schema名称
         :type schema_name: str
-        :param query_type: SQL类型
+        :param query_type: SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
         :type query_type: str
-        :param target_type: 目标库类型
+        :param target_type: 目标库类型 取值：mysql,taurusha,sqlserver,postgresql,ddm,mongodb,awsdocumentdb,hwmongodb,hwpostgresql,oracle,taurus,gaussdb,kafka,mrsKafka,cassandra,dynamo,dws,gaussdbv5,gaussdbv5ha,gaussmongodb,multigaussdbv5,dmq,gaussdbt,gaussdbtha,gaussdb300,elasticsearch,db2,tidb,redis,gaussredis,rediscluster,mariadb,oceanbase,informix,gaussdbv1,gausscassandra,geminidynamo,dds,tauruslite
         :type target_type: str
         :param count: 归类的SQL数量
         :type count: int
@@ -173,7 +173,7 @@ class ReplayErrorSqlTemplateResp:
     def query_type(self):
         r"""Gets the query_type of this ReplayErrorSqlTemplateResp.
 
-        SQL类型
+        SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :return: The query_type of this ReplayErrorSqlTemplateResp.
         :rtype: str
@@ -184,7 +184,7 @@ class ReplayErrorSqlTemplateResp:
     def query_type(self, query_type):
         r"""Sets the query_type of this ReplayErrorSqlTemplateResp.
 
-        SQL类型
+        SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :param query_type: The query_type of this ReplayErrorSqlTemplateResp.
         :type query_type: str
@@ -195,7 +195,7 @@ class ReplayErrorSqlTemplateResp:
     def target_type(self):
         r"""Gets the target_type of this ReplayErrorSqlTemplateResp.
 
-        目标库类型
+        目标库类型 取值：mysql,taurusha,sqlserver,postgresql,ddm,mongodb,awsdocumentdb,hwmongodb,hwpostgresql,oracle,taurus,gaussdb,kafka,mrsKafka,cassandra,dynamo,dws,gaussdbv5,gaussdbv5ha,gaussmongodb,multigaussdbv5,dmq,gaussdbt,gaussdbtha,gaussdb300,elasticsearch,db2,tidb,redis,gaussredis,rediscluster,mariadb,oceanbase,informix,gaussdbv1,gausscassandra,geminidynamo,dds,tauruslite
 
         :return: The target_type of this ReplayErrorSqlTemplateResp.
         :rtype: str
@@ -206,7 +206,7 @@ class ReplayErrorSqlTemplateResp:
     def target_type(self, target_type):
         r"""Sets the target_type of this ReplayErrorSqlTemplateResp.
 
-        目标库类型
+        目标库类型 取值：mysql,taurusha,sqlserver,postgresql,ddm,mongodb,awsdocumentdb,hwmongodb,hwpostgresql,oracle,taurus,gaussdb,kafka,mrsKafka,cassandra,dynamo,dws,gaussdbv5,gaussdbv5ha,gaussmongodb,multigaussdbv5,dmq,gaussdbt,gaussdbtha,gaussdb300,elasticsearch,db2,tidb,redis,gaussredis,rediscluster,mariadb,oceanbase,informix,gaussdbv1,gausscassandra,geminidynamo,dds,tauruslite
 
         :param target_type: The target_type of this ReplayErrorSqlTemplateResp.
         :type target_type: str

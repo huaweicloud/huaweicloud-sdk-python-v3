@@ -20,13 +20,13 @@ class ApprovalVO:
         'name_ch': 'str',
         'name_en': 'str',
         'biz_id': 'str',
-        'biz_type': 'str',
+        'biz_type': 'BizTypeEnum',
         'biz_info': 'str',
         'biz_info_obj': 'object',
         'biz_version': 'int',
-        'biz_status': 'str',
-        'approval_status': 'str',
-        'approval_type': 'str',
+        'biz_status': 'BizStatusEnum',
+        'approval_status': 'ApprovalStatusEnum',
+        'approval_type': 'ApprovalTypeEnum',
         'submit_time': 'datetime',
         'create_by': 'str',
         'l1': 'str',
@@ -79,20 +79,20 @@ class ApprovalVO:
         :type name_en: str
         :param biz_id: 业务ID，ID字符串。
         :type biz_id: str
-        :param biz_type: 业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-        :type biz_type: str
+        :param biz_type: 
+        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         :param biz_info: 序列化之后的业务详情，类型是string。
         :type biz_info: str
         :param biz_info_obj: 业务详情，类型是object。
         :type biz_info_obj: object
         :param biz_version: 业务版本。
         :type biz_version: int
-        :param biz_status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type biz_status: str
-        :param approval_status: 业务审批状态，只读。 枚举值：   - DEVELOPING: 审核中   - APPROVED: 审核通过   - REJECT: 审核驳回   - WITHDREW: 审核撤销 
-        :type approval_status: str
-        :param approval_type: 业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
-        :type approval_type: str
+        :param biz_status: 
+        :type biz_status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param approval_status: 
+        :type approval_status: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
+        :param approval_type: 
+        :type approval_type: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
         :param submit_time: 提交时间。
         :type submit_time: datetime
         :param create_by: 创建者。
@@ -300,10 +300,8 @@ class ApprovalVO:
     def biz_type(self):
         r"""Gets the biz_type of this ApprovalVO.
 
-        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-
         :return: The biz_type of this ApprovalVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         """
         return self._biz_type
 
@@ -311,10 +309,8 @@ class ApprovalVO:
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this ApprovalVO.
 
-        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
-
         :param biz_type: The biz_type of this ApprovalVO.
-        :type biz_type: str
+        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
         """
         self._biz_type = biz_type
 
@@ -388,10 +384,8 @@ class ApprovalVO:
     def biz_status(self):
         r"""Gets the biz_status of this ApprovalVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The biz_status of this ApprovalVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._biz_status
 
@@ -399,10 +393,8 @@ class ApprovalVO:
     def biz_status(self, biz_status):
         r"""Sets the biz_status of this ApprovalVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param biz_status: The biz_status of this ApprovalVO.
-        :type biz_status: str
+        :type biz_status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._biz_status = biz_status
 
@@ -410,10 +402,8 @@ class ApprovalVO:
     def approval_status(self):
         r"""Gets the approval_status of this ApprovalVO.
 
-        业务审批状态，只读。 枚举值：   - DEVELOPING: 审核中   - APPROVED: 审核通过   - REJECT: 审核驳回   - WITHDREW: 审核撤销 
-
         :return: The approval_status of this ApprovalVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
         """
         return self._approval_status
 
@@ -421,10 +411,8 @@ class ApprovalVO:
     def approval_status(self, approval_status):
         r"""Sets the approval_status of this ApprovalVO.
 
-        业务审批状态，只读。 枚举值：   - DEVELOPING: 审核中   - APPROVED: 审核通过   - REJECT: 审核驳回   - WITHDREW: 审核撤销 
-
         :param approval_status: The approval_status of this ApprovalVO.
-        :type approval_status: str
+        :type approval_status: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
         """
         self._approval_status = approval_status
 
@@ -432,10 +420,8 @@ class ApprovalVO:
     def approval_type(self):
         r"""Gets the approval_type of this ApprovalVO.
 
-        业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
-
         :return: The approval_type of this ApprovalVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
         """
         return self._approval_type
 
@@ -443,10 +429,8 @@ class ApprovalVO:
     def approval_type(self, approval_type):
         r"""Sets the approval_type of this ApprovalVO.
 
-        业务审核类型。 枚举值：   - PUBLISH: 发布   - OFFLINE: 下线 
-
         :param approval_type: The approval_type of this ApprovalVO.
-        :type approval_type: str
+        :type approval_type: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
         """
         self._approval_type = approval_type
 

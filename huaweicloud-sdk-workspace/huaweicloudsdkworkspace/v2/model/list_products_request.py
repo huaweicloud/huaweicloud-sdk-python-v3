@@ -41,7 +41,7 @@ class ListProductsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param product_id: 产品ID。
+        :param product_id: 产品ID。指定该参数会返回支持变更规格的套餐信息。
         :type product_id: str
         :param availability_zone: 可用分区。
         :type availability_zone: str
@@ -92,7 +92,7 @@ class ListProductsRequest:
     def product_id(self):
         r"""Gets the product_id of this ListProductsRequest.
 
-        产品ID。
+        产品ID。指定该参数会返回支持变更规格的套餐信息。
 
         :return: The product_id of this ListProductsRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class ListProductsRequest:
     def product_id(self, product_id):
         r"""Sets the product_id of this ListProductsRequest.
 
-        产品ID。
+        产品ID。指定该参数会返回支持变更规格的套餐信息。
 
         :param product_id: The product_id of this ListProductsRequest.
         :type product_id: str

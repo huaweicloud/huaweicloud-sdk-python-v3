@@ -25,14 +25,14 @@ class AlertRuleTemplate:
         'custom_properties': 'dict(str, str)',
         'description': 'str',
         'event_grouping': 'bool',
-        'job_mode': 'str',
-        'process_status': 'str',
+        'job_mode': 'JobMode',
+        'process_status': 'ProcessStatus',
         'query': 'str',
-        'query_type': 'str',
+        'query_type': 'QueryType',
         'schedule': 'AlertRuleSchedule',
-        'severity': 'str',
+        'severity': 'Serverity',
         'simulation': 'bool',
-        'status': 'str',
+        'status': 'Status',
         'suppresion': 'bool',
         'table_name': 'str',
         'template_id': 'str',
@@ -97,22 +97,22 @@ class AlertRuleTemplate:
         :type description: str
         :param event_grouping: 告警组
         :type event_grouping: bool
-        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-        :type job_mode: str
-        :param process_status: **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-        :type process_status: str
+        :param job_mode: 
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.JobMode`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
         :param query: 查询语句
         :type query: str
-        :param query_type: **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-        :type query_type: str
+        :param query_type: 
+        :type query_type: :class:`huaweicloudsdksecmaster.v2.QueryType`
         :param schedule: 
         :type schedule: :class:`huaweicloudsdksecmaster.v2.AlertRuleSchedule`
-        :param severity: **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-        :type severity: str
+        :param severity: 
+        :type severity: :class:`huaweicloudsdksecmaster.v2.Serverity`
         :param simulation: 是否仿真
         :type simulation: bool
-        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.Status`
         :param suppresion: 告警抑制
         :type suppresion: bool
         :param table_name: 表名称
@@ -438,10 +438,8 @@ class AlertRuleTemplate:
     def job_mode(self):
         r"""Gets the job_mode of this AlertRuleTemplate.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :return: The job_mode of this AlertRuleTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobMode`
         """
         return self._job_mode
 
@@ -449,10 +447,8 @@ class AlertRuleTemplate:
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this AlertRuleTemplate.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :param job_mode: The job_mode of this AlertRuleTemplate.
-        :type job_mode: str
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.JobMode`
         """
         self._job_mode = job_mode
 
@@ -460,10 +456,8 @@ class AlertRuleTemplate:
     def process_status(self):
         r"""Gets the process_status of this AlertRuleTemplate.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-
         :return: The process_status of this AlertRuleTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
         """
         return self._process_status
 
@@ -471,10 +465,8 @@ class AlertRuleTemplate:
     def process_status(self, process_status):
         r"""Sets the process_status of this AlertRuleTemplate.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-
         :param process_status: The process_status of this AlertRuleTemplate.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
         """
         self._process_status = process_status
 
@@ -504,10 +496,8 @@ class AlertRuleTemplate:
     def query_type(self):
         r"""Gets the query_type of this AlertRuleTemplate.
 
-        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-
         :return: The query_type of this AlertRuleTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.QueryType`
         """
         return self._query_type
 
@@ -515,10 +505,8 @@ class AlertRuleTemplate:
     def query_type(self, query_type):
         r"""Sets the query_type of this AlertRuleTemplate.
 
-        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-
         :param query_type: The query_type of this AlertRuleTemplate.
-        :type query_type: str
+        :type query_type: :class:`huaweicloudsdksecmaster.v2.QueryType`
         """
         self._query_type = query_type
 
@@ -544,10 +532,8 @@ class AlertRuleTemplate:
     def severity(self):
         r"""Gets the severity of this AlertRuleTemplate.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :return: The severity of this AlertRuleTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Serverity`
         """
         return self._severity
 
@@ -555,10 +541,8 @@ class AlertRuleTemplate:
     def severity(self, severity):
         r"""Sets the severity of this AlertRuleTemplate.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :param severity: The severity of this AlertRuleTemplate.
-        :type severity: str
+        :type severity: :class:`huaweicloudsdksecmaster.v2.Serverity`
         """
         self._severity = severity
 
@@ -588,10 +572,8 @@ class AlertRuleTemplate:
     def status(self):
         r"""Gets the status of this AlertRuleTemplate.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this AlertRuleTemplate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Status`
         """
         return self._status
 
@@ -599,10 +581,8 @@ class AlertRuleTemplate:
     def status(self, status):
         r"""Sets the status of this AlertRuleTemplate.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this AlertRuleTemplate.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.Status`
         """
         self._status = status
 

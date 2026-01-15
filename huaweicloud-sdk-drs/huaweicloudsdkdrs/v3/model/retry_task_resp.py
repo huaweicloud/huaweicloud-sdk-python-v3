@@ -35,7 +35,7 @@ class RetryTaskResp:
 
         :param id: 任务id
         :type id: str
-        :param status: 状态
+        :param status: 状态：success，failed
         :type status: str
         :param error_code: 错误码
         :type error_code: str
@@ -84,7 +84,7 @@ class RetryTaskResp:
     def status(self):
         r"""Gets the status of this RetryTaskResp.
 
-        状态
+        状态：success，failed
 
         :return: The status of this RetryTaskResp.
         :rtype: str
@@ -95,7 +95,7 @@ class RetryTaskResp:
     def status(self, status):
         r"""Sets the status of this RetryTaskResp.
 
-        状态
+        状态：success，failed
 
         :param status: The status of this RetryTaskResp.
         :type status: str

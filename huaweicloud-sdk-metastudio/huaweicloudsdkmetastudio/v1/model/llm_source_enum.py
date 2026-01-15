@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LlmSourceEnum:
-
+    """
+    allowed enum values
+    """
+    LLM_CONFIG = "LLM_CONFIG"
+    DEEP_SEEK = "DEEP_SEEK"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

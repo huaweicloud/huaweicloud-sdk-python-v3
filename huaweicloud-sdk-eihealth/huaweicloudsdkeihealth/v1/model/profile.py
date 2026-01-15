@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Profile:
-
+    """
+    allowed enum values
+    """
+    PY3 = "PY3"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

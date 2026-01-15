@@ -17,10 +17,10 @@ class AlertRuleSchedule:
     openapi_types = {
         'delay_interval': 'int',
         'frequency_interval': 'int',
-        'frequency_unit': 'str',
+        'frequency_unit': 'FrequencyUnit',
         'overtime_interval': 'int',
         'period_interval': 'int',
-        'period_unit': 'str'
+        'period_unit': 'FrequencyUnit'
     }
 
     attribute_map = {
@@ -41,14 +41,14 @@ class AlertRuleSchedule:
         :type delay_interval: int
         :param frequency_interval: 整型时长
         :type frequency_interval: int
-        :param frequency_unit: **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-        :type frequency_unit: str
+        :param frequency_unit: 
+        :type frequency_unit: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         :param overtime_interval: 整型时长
         :type overtime_interval: int
         :param period_interval: 整型时长
         :type period_interval: int
-        :param period_unit: **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-        :type period_unit: str
+        :param period_unit: 
+        :type period_unit: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         """
         
         
@@ -122,10 +122,8 @@ class AlertRuleSchedule:
     def frequency_unit(self):
         r"""Gets the frequency_unit of this AlertRuleSchedule.
 
-        **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-
         :return: The frequency_unit of this AlertRuleSchedule.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         """
         return self._frequency_unit
 
@@ -133,10 +131,8 @@ class AlertRuleSchedule:
     def frequency_unit(self, frequency_unit):
         r"""Sets the frequency_unit of this AlertRuleSchedule.
 
-        **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-
         :param frequency_unit: The frequency_unit of this AlertRuleSchedule.
-        :type frequency_unit: str
+        :type frequency_unit: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         """
         self._frequency_unit = frequency_unit
 
@@ -188,10 +184,8 @@ class AlertRuleSchedule:
     def period_unit(self):
         r"""Gets the period_unit of this AlertRuleSchedule.
 
-        **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-
         :return: The period_unit of this AlertRuleSchedule.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         """
         return self._period_unit
 
@@ -199,10 +193,8 @@ class AlertRuleSchedule:
     def period_unit(self, period_unit):
         r"""Sets the period_unit of this AlertRuleSchedule.
 
-        **参数解释**: 频率单位 - MINUTE 分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及           
-
         :param period_unit: The period_unit of this AlertRuleSchedule.
-        :type period_unit: str
+        :type period_unit: :class:`huaweicloudsdksecmaster.v2.FrequencyUnit`
         """
         self._period_unit = period_unit
 

@@ -39,7 +39,7 @@ class TrendStatusResponse:
         :type db_name: str
         :param generate_time: 生成时间
         :type generate_time: str
-        :param statistics_type: 统计类型  - RISK: 风险  - SESSION：SESSION  - SQL: SQL  - COUNT: 数量  - INJECTION：注入 - OPERATION: 操作
+        :param statistics_type: 统计类型  - RISK：风险  - SESSION：SESSION  - SQL：SQL  - COUNT：数量  - INJECTION：注入 - OPERATION：操作
         :type statistics_type: str
         """
         
@@ -130,7 +130,7 @@ class TrendStatusResponse:
     def statistics_type(self):
         r"""Gets the statistics_type of this TrendStatusResponse.
 
-        统计类型  - RISK: 风险  - SESSION：SESSION  - SQL: SQL  - COUNT: 数量  - INJECTION：注入 - OPERATION: 操作
+        统计类型  - RISK：风险  - SESSION：SESSION  - SQL：SQL  - COUNT：数量  - INJECTION：注入 - OPERATION：操作
 
         :return: The statistics_type of this TrendStatusResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class TrendStatusResponse:
     def statistics_type(self, statistics_type):
         r"""Sets the statistics_type of this TrendStatusResponse.
 
-        统计类型  - RISK: 风险  - SESSION：SESSION  - SQL: SQL  - COUNT: 数量  - INJECTION：注入 - OPERATION: 操作
+        统计类型  - RISK：风险  - SESSION：SESSION  - SQL：SQL  - COUNT：数量  - INJECTION：注入 - OPERATION：操作
 
         :param statistics_type: The statistics_type of this TrendStatusResponse.
         :type statistics_type: str

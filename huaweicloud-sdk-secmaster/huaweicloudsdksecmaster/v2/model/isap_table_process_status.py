@@ -4,7 +4,20 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class IsapTableProcessStatus:
-
+    """
+    allowed enum values
+    """
+    COMPLETED = "COMPLETED"
+    CREATING = "CREATING"
+    UPDATING = "UPDATING"
+    DELETING = "DELETING"
+    TRUNCATING = "TRUNCATING"
+    UPGRADING = "UPGRADING"
+    CREATE_FAILED = "CREATE_FAILED"
+    UPDATE_FAILED = "UPDATE_FAILED"
+    DELETING_FAILED = "DELETING_FAILED"
+    TRUNCATE_FAILED = "TRUNCATE_FAILED"
+    UPGRADE_FAILED = "UPGRADE_FAILED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

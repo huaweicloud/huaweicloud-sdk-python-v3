@@ -59,13 +59,13 @@ class Cluster:
 
         :param activate_info: 
         :type activate_info: :class:`huaweicloudsdkdbss.v1.InstanceActivateInfo`
-        :param charge_model: 计费模式  - Period: 包周期  - Demand: 按需
+        :param charge_model: 计费模式  - Period：包周期  - Demand：按需
         :type charge_model: str
         :param comment: 备注信息
         :type comment: str
         :param created: 创建时间
         :type created: int
-        :param deploy_mode: 部署方式  - CLOUD: 云上  - OUTSIDE：云外
+        :param deploy_mode: 部署方式  - CLOUD：云上  - OUTSIDE：云外
         :type deploy_mode: str
         :param detail: 
         :type detail: :class:`huaweicloudsdkdbss.v1.ServerList`
@@ -166,7 +166,7 @@ class Cluster:
     def charge_model(self):
         r"""Gets the charge_model of this Cluster.
 
-        计费模式  - Period: 包周期  - Demand: 按需
+        计费模式  - Period：包周期  - Demand：按需
 
         :return: The charge_model of this Cluster.
         :rtype: str
@@ -177,7 +177,7 @@ class Cluster:
     def charge_model(self, charge_model):
         r"""Sets the charge_model of this Cluster.
 
-        计费模式  - Period: 包周期  - Demand: 按需
+        计费模式  - Period：包周期  - Demand：按需
 
         :param charge_model: The charge_model of this Cluster.
         :type charge_model: str
@@ -232,7 +232,7 @@ class Cluster:
     def deploy_mode(self):
         r"""Gets the deploy_mode of this Cluster.
 
-        部署方式  - CLOUD: 云上  - OUTSIDE：云外
+        部署方式  - CLOUD：云上  - OUTSIDE：云外
 
         :return: The deploy_mode of this Cluster.
         :rtype: str
@@ -243,7 +243,7 @@ class Cluster:
     def deploy_mode(self, deploy_mode):
         r"""Sets the deploy_mode of this Cluster.
 
-        部署方式  - CLOUD: 云上  - OUTSIDE：云外
+        部署方式  - CLOUD：云上  - OUTSIDE：云外
 
         :param deploy_mode: The deploy_mode of this Cluster.
         :type deploy_mode: str

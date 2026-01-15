@@ -18,7 +18,7 @@ class LabelBriefSrlz:
         'name': 'str',
         'url': 'str',
         'id': 'int',
-        'family': 'int',
+        'family': 'FamilyEnum',
         'root': 'int',
         'tag_type': 'str',
         'parent_names': 'list[object]'
@@ -45,8 +45,8 @@ class LabelBriefSrlz:
         :type url: str
         :param id: 标签ID
         :type id: int
-        :param family: * &#x60;0&#x60; - Customized * &#x60;1&#x60; - Odd China * &#x60;2&#x60; - Open Odd * &#x60;3&#x60; - Odd Nhtsa * &#x60;4&#x60; - Open Label
-        :type family: int
+        :param family: 
+        :type family: :class:`huaweicloudsdkoctopus.v2.FamilyEnum`
         :param root: 根标签
         :type root: int
         :param tag_type: 标签类型
@@ -145,10 +145,8 @@ class LabelBriefSrlz:
     def family(self):
         r"""Gets the family of this LabelBriefSrlz.
 
-        * `0` - Customized * `1` - Odd China * `2` - Open Odd * `3` - Odd Nhtsa * `4` - Open Label
-
         :return: The family of this LabelBriefSrlz.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkoctopus.v2.FamilyEnum`
         """
         return self._family
 
@@ -156,10 +154,8 @@ class LabelBriefSrlz:
     def family(self, family):
         r"""Sets the family of this LabelBriefSrlz.
 
-        * `0` - Customized * `1` - Odd China * `2` - Open Odd * `3` - Odd Nhtsa * `4` - Open Label
-
         :param family: The family of this LabelBriefSrlz.
-        :type family: int
+        :type family: :class:`huaweicloudsdkoctopus.v2.FamilyEnum`
         """
         self._family = family
 

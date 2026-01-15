@@ -35,7 +35,7 @@ class UpdateWhitelistRequest:
         :type db_ids: list[str]
         :param desc: 备注
         :type desc: str
-        :param enabled: 是否启用  - true: 启用  - false: 禁用
+        :param enabled: 是否启用  - true：启用  - false：禁用
         :type enabled: bool
         """
         
@@ -100,7 +100,7 @@ class UpdateWhitelistRequest:
     def enabled(self):
         r"""Gets the enabled of this UpdateWhitelistRequest.
 
-        是否启用  - true: 启用  - false: 禁用
+        是否启用  - true：启用  - false：禁用
 
         :return: The enabled of this UpdateWhitelistRequest.
         :rtype: bool
@@ -111,7 +111,7 @@ class UpdateWhitelistRequest:
     def enabled(self, enabled):
         r"""Sets the enabled of this UpdateWhitelistRequest.
 
-        是否启用  - true: 启用  - false: 禁用
+        是否启用  - true：启用  - false：禁用
 
         :param enabled: The enabled of this UpdateWhitelistRequest.
         :type enabled: bool

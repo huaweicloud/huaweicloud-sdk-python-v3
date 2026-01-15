@@ -17,7 +17,7 @@ class ServerResourceSpec:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'server_type': 'str',
+        'server_type': 'ServerType',
         'flavor_type': 'str',
         'performance_type': 'str',
         'power': 'int',
@@ -53,8 +53,8 @@ class ServerResourceSpec:
         :type id: str
         :param name: 服务器规格名称。
         :type name: str
-        :param server_type: 服务器类型。 COMPUTE: 计算服务器 NETWORK: 网络服务器 BLOCK_STORAGE: 硬盘存储服务器
-        :type server_type: str
+        :param server_type: 
+        :type server_type: :class:`huaweicloudsdkcloudpond.v2.ServerType`
         :param flavor_type: 服务器发放的资源规格类型
         :type flavor_type: str
         :param performance_type: 服务器规格分类。如通用计算型/云桌面型/网关型等。
@@ -164,10 +164,8 @@ class ServerResourceSpec:
     def server_type(self):
         r"""Gets the server_type of this ServerResourceSpec.
 
-        服务器类型。 COMPUTE: 计算服务器 NETWORK: 网络服务器 BLOCK_STORAGE: 硬盘存储服务器
-
         :return: The server_type of this ServerResourceSpec.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v2.ServerType`
         """
         return self._server_type
 
@@ -175,10 +173,8 @@ class ServerResourceSpec:
     def server_type(self, server_type):
         r"""Sets the server_type of this ServerResourceSpec.
 
-        服务器类型。 COMPUTE: 计算服务器 NETWORK: 网络服务器 BLOCK_STORAGE: 硬盘存储服务器
-
         :param server_type: The server_type of this ServerResourceSpec.
-        :type server_type: str
+        :type server_type: :class:`huaweicloudsdkcloudpond.v2.ServerType`
         """
         self._server_type = server_type
 

@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PipeCategory:
-
+    """
+    allowed enum values
+    """
+    STREAMING_TO_INDEX = "STREAMING_TO_INDEX"
+    STREAMING_TO_LAKE = "STREAMING_TO_LAKE"
+    STREAMING_TO_INDEX_LAKE = "STREAMING_TO_INDEX_LAKE"
+    STREAMING = "STREAMING"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

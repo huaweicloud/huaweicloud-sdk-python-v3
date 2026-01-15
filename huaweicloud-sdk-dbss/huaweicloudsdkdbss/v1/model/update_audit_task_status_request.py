@@ -29,7 +29,7 @@ class UpdateAuditTaskStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param busi_type: **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk: 风险  - audit: 审计实例 **默认取值**： 不涉及
+        :param busi_type: **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk：风险  - audit：审计实例 **默认取值**： 不涉及
         :type busi_type: str
         :param body: Body of the UpdateAuditTaskStatusRequest
         :type body: :class:`huaweicloudsdkdbss.v1.AuditSummaryStatusRequest`
@@ -49,7 +49,7 @@ class UpdateAuditTaskStatusRequest:
     def busi_type(self):
         r"""Gets the busi_type of this UpdateAuditTaskStatusRequest.
 
-        **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk: 风险  - audit: 审计实例 **默认取值**： 不涉及
+        **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk：风险  - audit：审计实例 **默认取值**： 不涉及
 
         :return: The busi_type of this UpdateAuditTaskStatusRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateAuditTaskStatusRequest:
     def busi_type(self, busi_type):
         r"""Sets the busi_type of this UpdateAuditTaskStatusRequest.
 
-        **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk: 风险  - audit: 审计实例 **默认取值**： 不涉及
+        **参数解释**： 业务类型。 **约束限制**： 区分大小写，以取值范围为准 **取值范围**： - risk：风险  - audit：审计实例 **默认取值**： 不涉及
 
         :param busi_type: The busi_type of this UpdateAuditTaskStatusRequest.
         :type busi_type: str

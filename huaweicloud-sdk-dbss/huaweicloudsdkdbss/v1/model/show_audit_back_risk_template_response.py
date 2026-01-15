@@ -48,7 +48,7 @@ class ShowAuditBackRiskTemplateResponse(SdkResponse):
         :type db_port: int
         :param id: 配置ID
         :type id: str
-        :param status: 状态 - 0: 关闭 - 1：开启
+        :param status: 状态 - 0：关闭 - 1：开启
         :type status: int
         """
         
@@ -189,7 +189,7 @@ class ShowAuditBackRiskTemplateResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowAuditBackRiskTemplateResponse.
 
-        状态 - 0: 关闭 - 1：开启
+        状态 - 0：关闭 - 1：开启
 
         :return: The status of this ShowAuditBackRiskTemplateResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class ShowAuditBackRiskTemplateResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowAuditBackRiskTemplateResponse.
 
-        状态 - 0: 关闭 - 1：开启
+        状态 - 0：关闭 - 1：开启
 
         :param status: The status of this ShowAuditBackRiskTemplateResponse.
         :type status: int

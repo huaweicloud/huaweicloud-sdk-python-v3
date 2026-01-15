@@ -15,7 +15,7 @@ class RoleKnowledgeLibraryInfo:
     sensitive_list = []
 
     openapi_types = {
-        'knowledge_type': 'str',
+        'knowledge_type': 'KnowledgeTypeEnum',
         'knowledge_library_info_list': 'list[KnowledgeLibraryBaseInfo]'
     }
 
@@ -29,8 +29,8 @@ class RoleKnowledgeLibraryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param knowledge_type: 知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
-        :type knowledge_type: str
+        :param knowledge_type: 
+        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
         :param knowledge_library_info_list: 知识库列表
         :type knowledge_library_info_list: list[:class:`huaweicloudsdkmetastudio.v1.KnowledgeLibraryBaseInfo`]
         """
@@ -48,10 +48,8 @@ class RoleKnowledgeLibraryInfo:
     def knowledge_type(self):
         r"""Gets the knowledge_type of this RoleKnowledgeLibraryInfo.
 
-        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
-
         :return: The knowledge_type of this RoleKnowledgeLibraryInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
         """
         return self._knowledge_type
 
@@ -59,10 +57,8 @@ class RoleKnowledgeLibraryInfo:
     def knowledge_type(self, knowledge_type):
         r"""Sets the knowledge_type of this RoleKnowledgeLibraryInfo.
 
-        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
-
         :param knowledge_type: The knowledge_type of this RoleKnowledgeLibraryInfo.
-        :type knowledge_type: str
+        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
         """
         self._knowledge_type = knowledge_type
 

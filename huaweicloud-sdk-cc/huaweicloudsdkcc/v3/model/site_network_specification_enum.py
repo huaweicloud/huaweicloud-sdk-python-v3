@@ -4,7 +4,21 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SiteNetworkSpecificationEnum:
-
+    """
+    allowed enum values
+    """
+    SITE_NETWORK_IS_SUPPORT = "site-network.is-support"
+    SITE_NETWORK_IS_SUPPORT_ENTERPRISE_PROJECT = "site-network.is-support-enterprise-project"
+    SITE_NETWORK_IS_SUPPORT_TAG = "site-network.is-support-tag"
+    SITE_NETWORK_IS_SUPPORT_INTRA_REGION = "site-network.is-support-intra-region"
+    SITE_NETWORK_SUPPORT_TOPOLOGIES = "site-network.support-topologies"
+    SITE_NETWORK_SUPPORT_REGIONS = "site-network.support-regions"
+    SITE_NETWORK_SUPPORT_DSCP_REGIONS = "site-network.support-dscp-regions"
+    SITE_NETWORK_SUPPORT_FREEZE_REGIONS = "site-network.support-freeze-regions"
+    SITE_NETWORK_SUPPORT_LOCATIONS = "site-network.support-locations"
+    SITE_CONNECTION_BANDWIDTH_SIZE_RANGE = "site-connection-bandwidth.size-range"
+    SITE_CONNECTION_BANDWIDTH_CHARGE_MODE = "site-connection-bandwidth.charge-mode"
+    SITE_CONNECTION_BANDWIDTH_FREE_LINE = "site-connection-bandwidth.free-line"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

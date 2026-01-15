@@ -15,29 +15,87 @@ class DeleteDesktopPoolVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'volumes': 'list[VolumeInfo]'
+        'handle_type': 'str',
+        'desktop_ids': 'list[str]',
+        'volumes': 'list[DeleteDesktopPoolVolumesReqVolumes]'
     }
 
     attribute_map = {
+        'handle_type': 'handle_type',
+        'desktop_ids': 'desktop_ids',
         'volumes': 'volumes'
     }
 
-    def __init__(self, volumes=None):
+    def __init__(self, handle_type=None, desktop_ids=None, volumes=None):
         r"""DeleteDesktopPoolVolumesReq
 
         The model defined in huaweicloud sdk
 
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
+        :param desktop_ids: 桌面id
+        :type desktop_ids: list[str]
         :param volumes: 删除的桌面池磁盘列表。
-        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeInfo`]
+        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolVolumesReqVolumes`]
         """
         
         
 
+        self._handle_type = None
+        self._desktop_ids = None
         self._volumes = None
         self.discriminator = None
 
+        if handle_type is not None:
+            self.handle_type = handle_type
+        if desktop_ids is not None:
+            self.desktop_ids = desktop_ids
         if volumes is not None:
             self.volumes = volumes
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this DeleteDesktopPoolVolumesReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this DeleteDesktopPoolVolumesReq.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this DeleteDesktopPoolVolumesReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this DeleteDesktopPoolVolumesReq.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
+
+    @property
+    def desktop_ids(self):
+        r"""Gets the desktop_ids of this DeleteDesktopPoolVolumesReq.
+
+        桌面id
+
+        :return: The desktop_ids of this DeleteDesktopPoolVolumesReq.
+        :rtype: list[str]
+        """
+        return self._desktop_ids
+
+    @desktop_ids.setter
+    def desktop_ids(self, desktop_ids):
+        r"""Sets the desktop_ids of this DeleteDesktopPoolVolumesReq.
+
+        桌面id
+
+        :param desktop_ids: The desktop_ids of this DeleteDesktopPoolVolumesReq.
+        :type desktop_ids: list[str]
+        """
+        self._desktop_ids = desktop_ids
 
     @property
     def volumes(self):
@@ -46,7 +104,7 @@ class DeleteDesktopPoolVolumesReq:
         删除的桌面池磁盘列表。
 
         :return: The volumes of this DeleteDesktopPoolVolumesReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.VolumeInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolVolumesReqVolumes`]
         """
         return self._volumes
 
@@ -57,7 +115,7 @@ class DeleteDesktopPoolVolumesReq:
         删除的桌面池磁盘列表。
 
         :param volumes: The volumes of this DeleteDesktopPoolVolumesReq.
-        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.VolumeInfo`]
+        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.DeleteDesktopPoolVolumesReqVolumes`]
         """
         self._volumes = volumes
 

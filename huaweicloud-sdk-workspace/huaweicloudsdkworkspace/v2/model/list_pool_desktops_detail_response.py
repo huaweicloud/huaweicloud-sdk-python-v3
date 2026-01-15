@@ -20,7 +20,11 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         'total_count': 'int',
         'on_demand_desktops_num': 'int',
         'period_desktops_num': 'int',
-        'inconsistent_type': 'str'
+        'on_demand_free_image_desktops_num': 'int',
+        'on_demand_charge_image_desktops_num': 'int',
+        'period_free_image_desktops_num': 'int',
+        'period_charge_image_desktops_num': 'int',
+        'inconsistent_type': 'InconsistentTypeEnum'
     }
 
     attribute_map = {
@@ -28,10 +32,14 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         'total_count': 'total_count',
         'on_demand_desktops_num': 'on_demand_desktops_num',
         'period_desktops_num': 'period_desktops_num',
+        'on_demand_free_image_desktops_num': 'on_demand_free_image_desktops_num',
+        'on_demand_charge_image_desktops_num': 'on_demand_charge_image_desktops_num',
+        'period_free_image_desktops_num': 'period_free_image_desktops_num',
+        'period_charge_image_desktops_num': 'period_charge_image_desktops_num',
         'inconsistent_type': 'inconsistent_type'
     }
 
-    def __init__(self, pool_desktops=None, total_count=None, on_demand_desktops_num=None, period_desktops_num=None, inconsistent_type=None):
+    def __init__(self, pool_desktops=None, total_count=None, on_demand_desktops_num=None, period_desktops_num=None, on_demand_free_image_desktops_num=None, on_demand_charge_image_desktops_num=None, period_free_image_desktops_num=None, period_charge_image_desktops_num=None, inconsistent_type=None):
         r"""ListPoolDesktopsDetailResponse
 
         The model defined in huaweicloud sdk
@@ -44,8 +52,16 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         :type on_demand_desktops_num: int
         :param period_desktops_num: 包周期桌面总数。
         :type period_desktops_num: int
-        :param inconsistent_type: 通过该类型过滤出与桌面池规格类型不一致的桌面 - product_id: 查找productID与桌面池套餐ID不一致的桌面 - image_id: 查找imageID与桌面池镜像ID不一致的桌面 - disk_num: 查找数据盘数量与桌面池配置不一致的桌面 - disk_size: 查找磁盘累加容量与桌面池配置不一致的桌面
-        :type inconsistent_type: str
+        :param on_demand_free_image_desktops_num: 按需免费桌面总数。
+        :type on_demand_free_image_desktops_num: int
+        :param on_demand_charge_image_desktops_num: 按需收费桌面总数。
+        :type on_demand_charge_image_desktops_num: int
+        :param period_free_image_desktops_num: 包周期免费桌面总数。
+        :type period_free_image_desktops_num: int
+        :param period_charge_image_desktops_num: 包周期收费桌面总数。
+        :type period_charge_image_desktops_num: int
+        :param inconsistent_type: 
+        :type inconsistent_type: :class:`huaweicloudsdkworkspace.v2.InconsistentTypeEnum`
         """
         
         super().__init__()
@@ -54,6 +70,10 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         self._total_count = None
         self._on_demand_desktops_num = None
         self._period_desktops_num = None
+        self._on_demand_free_image_desktops_num = None
+        self._on_demand_charge_image_desktops_num = None
+        self._period_free_image_desktops_num = None
+        self._period_charge_image_desktops_num = None
         self._inconsistent_type = None
         self.discriminator = None
 
@@ -65,6 +85,14 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
             self.on_demand_desktops_num = on_demand_desktops_num
         if period_desktops_num is not None:
             self.period_desktops_num = period_desktops_num
+        if on_demand_free_image_desktops_num is not None:
+            self.on_demand_free_image_desktops_num = on_demand_free_image_desktops_num
+        if on_demand_charge_image_desktops_num is not None:
+            self.on_demand_charge_image_desktops_num = on_demand_charge_image_desktops_num
+        if period_free_image_desktops_num is not None:
+            self.period_free_image_desktops_num = period_free_image_desktops_num
+        if period_charge_image_desktops_num is not None:
+            self.period_charge_image_desktops_num = period_charge_image_desktops_num
         if inconsistent_type is not None:
             self.inconsistent_type = inconsistent_type
 
@@ -157,13 +185,99 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         self._period_desktops_num = period_desktops_num
 
     @property
+    def on_demand_free_image_desktops_num(self):
+        r"""Gets the on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        按需免费桌面总数。
+
+        :return: The on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :rtype: int
+        """
+        return self._on_demand_free_image_desktops_num
+
+    @on_demand_free_image_desktops_num.setter
+    def on_demand_free_image_desktops_num(self, on_demand_free_image_desktops_num):
+        r"""Sets the on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        按需免费桌面总数。
+
+        :param on_demand_free_image_desktops_num: The on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :type on_demand_free_image_desktops_num: int
+        """
+        self._on_demand_free_image_desktops_num = on_demand_free_image_desktops_num
+
+    @property
+    def on_demand_charge_image_desktops_num(self):
+        r"""Gets the on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        按需收费桌面总数。
+
+        :return: The on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :rtype: int
+        """
+        return self._on_demand_charge_image_desktops_num
+
+    @on_demand_charge_image_desktops_num.setter
+    def on_demand_charge_image_desktops_num(self, on_demand_charge_image_desktops_num):
+        r"""Sets the on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        按需收费桌面总数。
+
+        :param on_demand_charge_image_desktops_num: The on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :type on_demand_charge_image_desktops_num: int
+        """
+        self._on_demand_charge_image_desktops_num = on_demand_charge_image_desktops_num
+
+    @property
+    def period_free_image_desktops_num(self):
+        r"""Gets the period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        包周期免费桌面总数。
+
+        :return: The period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :rtype: int
+        """
+        return self._period_free_image_desktops_num
+
+    @period_free_image_desktops_num.setter
+    def period_free_image_desktops_num(self, period_free_image_desktops_num):
+        r"""Sets the period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        包周期免费桌面总数。
+
+        :param period_free_image_desktops_num: The period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :type period_free_image_desktops_num: int
+        """
+        self._period_free_image_desktops_num = period_free_image_desktops_num
+
+    @property
+    def period_charge_image_desktops_num(self):
+        r"""Gets the period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        包周期收费桌面总数。
+
+        :return: The period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :rtype: int
+        """
+        return self._period_charge_image_desktops_num
+
+    @period_charge_image_desktops_num.setter
+    def period_charge_image_desktops_num(self, period_charge_image_desktops_num):
+        r"""Sets the period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+
+        包周期收费桌面总数。
+
+        :param period_charge_image_desktops_num: The period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
+        :type period_charge_image_desktops_num: int
+        """
+        self._period_charge_image_desktops_num = period_charge_image_desktops_num
+
+    @property
     def inconsistent_type(self):
         r"""Gets the inconsistent_type of this ListPoolDesktopsDetailResponse.
 
-        通过该类型过滤出与桌面池规格类型不一致的桌面 - product_id: 查找productID与桌面池套餐ID不一致的桌面 - image_id: 查找imageID与桌面池镜像ID不一致的桌面 - disk_num: 查找数据盘数量与桌面池配置不一致的桌面 - disk_size: 查找磁盘累加容量与桌面池配置不一致的桌面
-
         :return: The inconsistent_type of this ListPoolDesktopsDetailResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.InconsistentTypeEnum`
         """
         return self._inconsistent_type
 
@@ -171,10 +285,8 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def inconsistent_type(self, inconsistent_type):
         r"""Sets the inconsistent_type of this ListPoolDesktopsDetailResponse.
 
-        通过该类型过滤出与桌面池规格类型不一致的桌面 - product_id: 查找productID与桌面池套餐ID不一致的桌面 - image_id: 查找imageID与桌面池镜像ID不一致的桌面 - disk_num: 查找数据盘数量与桌面池配置不一致的桌面 - disk_size: 查找磁盘累加容量与桌面池配置不一致的桌面
-
         :param inconsistent_type: The inconsistent_type of this ListPoolDesktopsDetailResponse.
-        :type inconsistent_type: str
+        :type inconsistent_type: :class:`huaweicloudsdkworkspace.v2.InconsistentTypeEnum`
         """
         self._inconsistent_type = inconsistent_type
 

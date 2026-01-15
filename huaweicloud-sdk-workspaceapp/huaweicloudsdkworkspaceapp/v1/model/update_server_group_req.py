@@ -18,14 +18,14 @@ class UpdateServerGroupReq:
         'name': 'str',
         'description': 'str',
         'route_policy': 'RoutePolicy',
-        'storage_mount_policy': 'str',
+        'storage_mount_policy': 'StorageFolderMountType',
         'image_id': 'str',
         'image_product_id': 'str',
-        'image_type': 'str',
-        'system_disk_type': 'str',
+        'image_type': 'ImageTypeEnum',
+        'system_disk_type': 'VolumeType',
         'system_disk_size': 'int',
         'ou_name': 'str',
-        'app_type': 'str',
+        'app_type': 'AppTypeEnum',
         'server_group_status': 'bool'
     }
 
@@ -55,22 +55,22 @@ class UpdateServerGroupReq:
         :type description: str
         :param route_policy: 
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
-        :param storage_mount_policy: 用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * &#x60;USER&#x60; - 仅挂载个人目录。 * &#x60;SHARE&#x60; - 仅挂载共享目录。 * &#x60;ANY&#x60; - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
-        :type storage_mount_policy: str
+        :param storage_mount_policy: 
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         :param image_id: 服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
         :type image_id: str
         :param image_product_id: 服务器组的镜像的productId。
         :type image_product_id: str
-        :param image_type: 镜像类型： * &#x60;gold&#x60; - 云市场镜像 * &#x60;public&#x60; - 公共镜像 * &#x60;private&#x60; - 私有镜像 * &#x60;shared&#x60; - 共享镜像 * &#x60;other&#x60; - 其他
-        :type image_type: str
-        :param system_disk_type: 磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * &#x60;ESSD&#x60; - 极速型SSD * &#x60;SSD&#x60; - 超高IO * &#x60;GPSSD&#x60; - 通用型SSD * &#x60;SAS&#x60; - 高IO * &#x60;SATA&#x60; - 普通IO
-        :type system_disk_type: str
+        :param image_type: 
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
+        :param system_disk_type: 
+        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
         :param ou_name: 默认组织名称。
         :type ou_name: str
-        :param app_type: 服务器组应用类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
-        :type app_type: str
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         :param server_group_status: 服务器是否处于禁用状态： * &#x60;true&#x60; - 启用状态 * &#x60;false&#x60; - 禁用状态
         :type server_group_status: bool
         """
@@ -182,10 +182,8 @@ class UpdateServerGroupReq:
     def storage_mount_policy(self):
         r"""Gets the storage_mount_policy of this UpdateServerGroupReq.
 
-        用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * `USER` - 仅挂载个人目录。 * `SHARE` - 仅挂载共享目录。 * `ANY` - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
-
         :return: The storage_mount_policy of this UpdateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         """
         return self._storage_mount_policy
 
@@ -193,10 +191,8 @@ class UpdateServerGroupReq:
     def storage_mount_policy(self, storage_mount_policy):
         r"""Sets the storage_mount_policy of this UpdateServerGroupReq.
 
-        用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * `USER` - 仅挂载个人目录。 * `SHARE` - 仅挂载共享目录。 * `ANY` - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
-
         :param storage_mount_policy: The storage_mount_policy of this UpdateServerGroupReq.
-        :type storage_mount_policy: str
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         """
         self._storage_mount_policy = storage_mount_policy
 
@@ -248,10 +244,8 @@ class UpdateServerGroupReq:
     def image_type(self):
         r"""Gets the image_type of this UpdateServerGroupReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :return: The image_type of this UpdateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         return self._image_type
 
@@ -259,10 +253,8 @@ class UpdateServerGroupReq:
     def image_type(self, image_type):
         r"""Sets the image_type of this UpdateServerGroupReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :param image_type: The image_type of this UpdateServerGroupReq.
-        :type image_type: str
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         self._image_type = image_type
 
@@ -270,10 +262,8 @@ class UpdateServerGroupReq:
     def system_disk_type(self):
         r"""Gets the system_disk_type of this UpdateServerGroupReq.
 
-        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
-
         :return: The system_disk_type of this UpdateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         """
         return self._system_disk_type
 
@@ -281,10 +271,8 @@ class UpdateServerGroupReq:
     def system_disk_type(self, system_disk_type):
         r"""Sets the system_disk_type of this UpdateServerGroupReq.
 
-        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
-
         :param system_disk_type: The system_disk_type of this UpdateServerGroupReq.
-        :type system_disk_type: str
+        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         """
         self._system_disk_type = system_disk_type
 
@@ -336,10 +324,8 @@ class UpdateServerGroupReq:
     def app_type(self):
         r"""Gets the app_type of this UpdateServerGroupReq.
 
-        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
-
         :return: The app_type of this UpdateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         return self._app_type
 
@@ -347,10 +333,8 @@ class UpdateServerGroupReq:
     def app_type(self, app_type):
         r"""Sets the app_type of this UpdateServerGroupReq.
 
-        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
-
         :param app_type: The app_type of this UpdateServerGroupReq.
-        :type app_type: str
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         self._app_type = app_type
 

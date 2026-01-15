@@ -47,7 +47,7 @@ class ListBucketsReq:
         :type json_auth_file: str
         :param connection_string: 连接字符串，用于微软云Blob鉴权
         :type connection_string: str
-        :param app_id: 当源端为腾讯云时，会返回此参数。
+        :param app_id: 腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
         :type app_id: str
         """
         
@@ -187,7 +187,7 @@ class ListBucketsReq:
     def app_id(self):
         r"""Gets the app_id of this ListBucketsReq.
 
-        当源端为腾讯云时，会返回此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :return: The app_id of this ListBucketsReq.
         :rtype: str
@@ -198,7 +198,7 @@ class ListBucketsReq:
     def app_id(self, app_id):
         r"""Sets the app_id of this ListBucketsReq.
 
-        当源端为腾讯云时，会返回此参数。
+        腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
 
         :param app_id: The app_id of this ListBucketsReq.
         :type app_id: str

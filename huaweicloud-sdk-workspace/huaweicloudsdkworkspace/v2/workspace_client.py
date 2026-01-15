@@ -1657,6 +1657,8 @@ class WorkspaceClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'target_type' in local_var_params:
             query_params.append(('target_type', local_var_params['target_type']))
+        if 'assign_type' in local_var_params:
+            query_params.append(('assign_type', local_var_params['assign_type']))
 
         header_params = {}
 
@@ -4624,6 +4626,10 @@ class WorkspaceClient(Client):
             query_params.append(('computer_name', local_var_params['computer_name']))
         if 'terminal_type' in local_var_params:
             query_params.append(('terminal_type', local_var_params['terminal_type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'public_ip' in local_var_params:
+            query_params.append(('public_ip', local_var_params['public_ip']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -4632,8 +4638,6 @@ class WorkspaceClient(Client):
             query_params.append(('min_network_rtt', local_var_params['min_network_rtt']))
         if 'max_network_rtt' in local_var_params:
             query_params.append(('max_network_rtt', local_var_params['max_network_rtt']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -4716,6 +4720,8 @@ class WorkspaceClient(Client):
             query_params.append(('max_e2e_rtt', local_var_params['max_e2e_rtt']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'public_ip' in local_var_params:
+            query_params.append(('public_ip', local_var_params['public_ip']))
 
         header_params = {}
 
@@ -9076,7 +9082,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_change_tags(self, request):
-        r"""批量添加删除标签
+        r"""批量添加或删除标签
 
         为指定桌面批量添加或删除标签。创建时，如果创建的标签已经存在（key相同），则覆盖。删除时，如果删除的标签不存在，默认处理成功。
         
@@ -9342,9 +9348,9 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_by_tags(self, request):
-        r"""使用标签过滤桌面
+        r"""使用标签过滤桌面（已废弃）
 
-        使用标签过滤桌面。
+        使用标签过滤桌面。该接口已废弃，请使用post /v2/{project_id}/desktops/resource-instances/action
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -9366,6 +9372,71 @@ class WorkspaceClient(Client):
             "resource_path": "/v2/{project_id}/desktops/resource_instances/action",
             "request_type": request.__class__.__name__,
             "response_type": "ListDesktopByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_desktops_by_tags(self, request):
+        r"""使用标签过滤桌面
+
+        使用标签过滤桌面。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopsByTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsByTagsResponse`
+        """
+        http_info = self._list_desktops_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktops_by_tags_invoker(self, request):
+        http_info = self._list_desktops_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktops_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/resource-instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopsByTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -11809,6 +11880,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def check_cidr(self, request):
+        r"""校验租户冲突网段
+
+        该接口用于校验租户网段是否冲突,返回冲突网段列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckCidr
+        :type request: :class:`huaweicloudsdkworkspace.v2.CheckCidrRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CheckCidrResponse`
+        """
+        http_info = self._check_cidr_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_cidr_invoker(self, request):
+        http_info = self._check_cidr_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_cidr_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/check-cidr",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckCidrResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_subnet_bandwidth(self, request):
         r"""删除云办公带宽
 
@@ -12078,6 +12214,8 @@ class WorkspaceClient(Client):
             query_params.append(('router_id', local_var_params['router_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -14586,6 +14724,10 @@ class WorkspaceClient(Client):
             query_params.append(('desktop_resource_spec_code', local_var_params['desktop_resource_spec_code']))
         if 'resource_spec_code' in local_var_params:
             query_params.append(('resource_spec_code', local_var_params['resource_spec_code']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -17597,6 +17739,10 @@ class WorkspaceClient(Client):
             query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -18727,12 +18873,12 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
+        if 'dim' in local_var_params:
+            query_params.append(('dim', local_var_params['dim']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
-        if 'dim' in local_var_params:
-            query_params.append(('dim', local_var_params['dim']))
         if 'metric_names' in local_var_params:
             query_params.append(('metric_names', local_var_params['metric_names']))
             collection_formats['metric_names'] = 'csv'
@@ -18801,12 +18947,12 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
+        if 'dim' in local_var_params:
+            query_params.append(('dim', local_var_params['dim']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
-        if 'dim' in local_var_params:
-            query_params.append(('dim', local_var_params['dim']))
         if 'metric_names' in local_var_params:
             query_params.append(('metric_names', local_var_params['metric_names']))
             collection_formats['metric_names'] = 'csv'
@@ -19158,12 +19304,12 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
-        if 'grow_period' in local_var_params:
-            query_params.append(('grow_period', local_var_params['grow_period']))
-        if 'metric_name' in local_var_params:
-            query_params.append(('metric_name', local_var_params['metric_name']))
         if 'dim' in local_var_params:
             query_params.append(('dim', local_var_params['dim']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if 'grow_period' in local_var_params:
+            query_params.append(('grow_period', local_var_params['grow_period']))
 
         header_params = {}
 
@@ -20821,6 +20967,87 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def list_notification_records(self, request):
+        r"""查询通知拦截记录
+
+        查询通知拦截记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNotificationRecords
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListNotificationRecordsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListNotificationRecordsResponse`
+        """
+        http_info = self._list_notification_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_notification_records_invoker(self, request):
+        http_info = self._list_notification_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notification_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/notification-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'query_type' in local_var_params:
+            query_params.append(('query_type', local_var_params['query_type']))
+        if 'desktop_name' in local_var_params:
+            query_params.append(('desktop_name', local_var_params['desktop_name']))
+        if 'desktop_pool_name' in local_var_params:
+            query_params.append(('desktop_pool_name', local_var_params['desktop_pool_name']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_otp_devices_by_user_id(self, request):
         r"""查询OTP设备
 
@@ -22453,6 +22680,71 @@ class WorkspaceClient(Client):
             "resource_path": "/v2/{project_id}/workspaces",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateWorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_domain_controller(self, request):
+        r"""校验域控有效性
+
+        校验域控有效性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateDomainController
+        :type request: :class:`huaweicloudsdkworkspace.v2.ValidateDomainControllerRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ValidateDomainControllerResponse`
+        """
+        http_info = self._validate_domain_controller_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_domain_controller_invoker(self, request):
+        http_info = self._validate_domain_controller_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_domain_controller_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/domain-controllers/validation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateDomainControllerResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

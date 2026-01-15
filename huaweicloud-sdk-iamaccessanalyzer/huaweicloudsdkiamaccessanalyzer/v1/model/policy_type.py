@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PolicyType:
-
+    """
+    allowed enum values
+    """
+    IDENTITY_POLICY = "identity_policy"
+    RESOURCE_POLICY = "resource_policy"
+    SERVICE_CONTROL_POLICY = "service_control_policy"
+    RESOURCE_CONTROL_POLICY = "resource_control_policy"
+    NETWORK_CONTROL_POLICY = "network_control_policy"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

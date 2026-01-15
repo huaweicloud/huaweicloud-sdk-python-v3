@@ -77,7 +77,7 @@ class ListConnectionsRequest:
         :type limit: int
         :param fetch_all: 值为“true”时会使得offset和limit参数失效并返回所有记录。
         :type fetch_all: bool
-        :param sort_key: 返回结果按该关键字排序，默认为“created_at”。
+        :param sort_key: 返回结果按该关键字排序，默认为“created_at”。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
         :type sort_key: str
         :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）。
         :type sort_dir: str
@@ -398,7 +398,7 @@ class ListConnectionsRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListConnectionsRequest.
 
-        返回结果按该关键字排序，默认为“created_at”。
+        返回结果按该关键字排序，默认为“created_at”。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
 
         :return: The sort_key of this ListConnectionsRequest.
         :rtype: str
@@ -409,7 +409,7 @@ class ListConnectionsRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListConnectionsRequest.
 
-        返回结果按该关键字排序，默认为“created_at”。
+        返回结果按该关键字排序，默认为“created_at”。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
 
         :param sort_key: The sort_key of this ListConnectionsRequest.
         :type sort_key: str

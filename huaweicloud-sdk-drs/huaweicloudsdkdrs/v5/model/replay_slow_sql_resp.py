@@ -33,7 +33,7 @@ class ReplaySlowSqlResp:
 
         The model defined in huaweicloud sdk
 
-        :param object_type: SQL语句类型
+        :param object_type: SQL语句类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
         :type object_type: str
         :param slow_sql: SQL语句
         :type slow_sql: str
@@ -64,7 +64,7 @@ class ReplaySlowSqlResp:
     def object_type(self):
         r"""Gets the object_type of this ReplaySlowSqlResp.
 
-        SQL语句类型
+        SQL语句类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :return: The object_type of this ReplaySlowSqlResp.
         :rtype: str
@@ -75,7 +75,7 @@ class ReplaySlowSqlResp:
     def object_type(self, object_type):
         r"""Sets the object_type of this ReplaySlowSqlResp.
 
-        SQL语句类型
+        SQL语句类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :param object_type: The object_type of this ReplaySlowSqlResp.
         :type object_type: str

@@ -28,7 +28,7 @@ class ListSmnTopicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topics_name: SMN主题名称列表。
+        :param topics_name: 主题名称
         :type topics_name: list[str]
         """
         
@@ -44,7 +44,7 @@ class ListSmnTopicsResponse(SdkResponse):
     def topics_name(self):
         r"""Gets the topics_name of this ListSmnTopicsResponse.
 
-        SMN主题名称列表。
+        主题名称
 
         :return: The topics_name of this ListSmnTopicsResponse.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class ListSmnTopicsResponse(SdkResponse):
     def topics_name(self, topics_name):
         r"""Sets the topics_name of this ListSmnTopicsResponse.
 
-        SMN主题名称列表。
+        主题名称
 
         :param topics_name: The topics_name of this ListSmnTopicsResponse.
         :type topics_name: list[str]

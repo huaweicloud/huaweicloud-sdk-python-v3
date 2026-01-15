@@ -18,17 +18,19 @@ class NodePool:
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'NodePoolMetadata',
-        'spec': 'NodePoolSpec'
+        'spec': 'NodePoolSpec',
+        'status': 'NodePoolStatus'
     }
 
     attribute_map = {
         'kind': 'kind',
         'api_version': 'apiVersion',
         'metadata': 'metadata',
-        'spec': 'spec'
+        'spec': 'spec',
+        'status': 'status'
     }
 
-    def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
         r"""NodePool
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class NodePool:
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
         
         
@@ -49,12 +53,15 @@ class NodePool:
         self._api_version = None
         self._metadata = None
         self._spec = None
+        self._status = None
         self.discriminator = None
 
         self.kind = kind
         self.api_version = api_version
         self.metadata = metadata
         self.spec = spec
+        if status is not None:
+            self.status = status
 
     @property
     def kind(self):
@@ -135,6 +142,24 @@ class NodePool:
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
         self._spec = spec
+
+    @property
+    def status(self):
+        r"""Gets the status of this NodePool.
+
+        :return: The status of this NodePool.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this NodePool.
+
+        :param status: The status of this NodePool.
+        :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

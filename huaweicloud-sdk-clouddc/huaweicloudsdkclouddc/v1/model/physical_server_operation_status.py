@@ -4,7 +4,18 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PhysicalServerOperationStatus:
-
+    """
+    allowed enum values
+    """
+    POWER_ON_PROCESSING = "power-on-processing"
+    POWER_ON_SUCCEED = "power-on-succeed"
+    POWER_ON_FAILED = "power-on-failed"
+    POWER_OFF_PROCESSING = "power-off-processing"
+    POWER_OFF_SUCCEED = "power-off-succeed"
+    POWER_OFF_FAILED = "power-off-failed"
+    REBOOT_PROCESSING = "reboot-processing"
+    REBOOT_SUCCEED = "reboot-succeed"
+    REBOOT_FAILED = "reboot-failed"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

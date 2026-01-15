@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DevelopImageType:
-
+    """
+    allowed enum values
+    """
+    SYSTEM = "SYSTEM"
+    CUSTOMER = "CUSTOMER"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

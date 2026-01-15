@@ -16,7 +16,7 @@ class TemplateSetting:
 
     openapi_types = {
         'template_name': 'str',
-        'template_contents': 'list[str]'
+        'template_contents': 'list[TemplateItemEnum]'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class TemplateSetting:
         :param template_name: 模板名称
         :type template_name: str
         :param template_contents: 模板内容列表
-        :type template_contents: list[str]
+        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
         """
         
         
@@ -73,7 +73,7 @@ class TemplateSetting:
         模板内容列表
 
         :return: The template_contents of this TemplateSetting.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
         """
         return self._template_contents
 
@@ -84,7 +84,7 @@ class TemplateSetting:
         模板内容列表
 
         :param template_contents: The template_contents of this TemplateSetting.
-        :type template_contents: list[str]
+        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
         """
         self._template_contents = template_contents
 

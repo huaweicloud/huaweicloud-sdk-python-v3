@@ -20,7 +20,9 @@ class ShowDirtyDataRequest:
         'begin_time': 'str',
         'end_time': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'anonymize_mode': 'bool',
+        'task_mode': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ShowDirtyDataRequest:
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'anonymize_mode': 'anonymize_mode',
+        'task_mode': 'task_mode'
     }
 
-    def __init__(self, x_language=None, job_id=None, begin_time=None, end_time=None, offset=None, limit=None):
+    def __init__(self, x_language=None, job_id=None, begin_time=None, end_time=None, offset=None, limit=None, anonymize_mode=None, task_mode=None):
         r"""ShowDirtyDataRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ShowDirtyDataRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。默认为10，取值范围【1-1000】
         :type limit: int
+        :param anonymize_mode: 是否脱敏。
+        :type anonymize_mode: bool
+        :param task_mode: 查询任务阶段信息，不传默认查增量阶段信息。 - FULL_TRANSFER，全量阶段
+        :type task_mode: str
         """
         
         
@@ -59,6 +67,8 @@ class ShowDirtyDataRequest:
         self._end_time = None
         self._offset = None
         self._limit = None
+        self._anonymize_mode = None
+        self._task_mode = None
         self.discriminator = None
 
         if x_language is not None:
@@ -72,6 +82,10 @@ class ShowDirtyDataRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if anonymize_mode is not None:
+            self.anonymize_mode = anonymize_mode
+        if task_mode is not None:
+            self.task_mode = task_mode
 
     @property
     def x_language(self):
@@ -204,6 +218,50 @@ class ShowDirtyDataRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def anonymize_mode(self):
+        r"""Gets the anonymize_mode of this ShowDirtyDataRequest.
+
+        是否脱敏。
+
+        :return: The anonymize_mode of this ShowDirtyDataRequest.
+        :rtype: bool
+        """
+        return self._anonymize_mode
+
+    @anonymize_mode.setter
+    def anonymize_mode(self, anonymize_mode):
+        r"""Sets the anonymize_mode of this ShowDirtyDataRequest.
+
+        是否脱敏。
+
+        :param anonymize_mode: The anonymize_mode of this ShowDirtyDataRequest.
+        :type anonymize_mode: bool
+        """
+        self._anonymize_mode = anonymize_mode
+
+    @property
+    def task_mode(self):
+        r"""Gets the task_mode of this ShowDirtyDataRequest.
+
+        查询任务阶段信息，不传默认查增量阶段信息。 - FULL_TRANSFER，全量阶段
+
+        :return: The task_mode of this ShowDirtyDataRequest.
+        :rtype: str
+        """
+        return self._task_mode
+
+    @task_mode.setter
+    def task_mode(self, task_mode):
+        r"""Sets the task_mode of this ShowDirtyDataRequest.
+
+        查询任务阶段信息，不传默认查增量阶段信息。 - FULL_TRANSFER，全量阶段
+
+        :param task_mode: The task_mode of this ShowDirtyDataRequest.
+        :type task_mode: str
+        """
+        self._task_mode = task_mode
 
     def to_dict(self):
         result = {}

@@ -16,7 +16,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'permission_actions': 'list[str]'
+        'permission_actions': 'list[PermissionActions]'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param permission_actions: 权限操作列表
-        :type permission_actions: list[str]
+        :type permission_actions: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
         权限操作列表
 
         :return: The permission_actions of this ListSecurityDatasourceActionsResponse.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
         """
         return self._permission_actions
 
@@ -58,7 +58,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
         权限操作列表
 
         :param permission_actions: The permission_actions of this ListSecurityDatasourceActionsResponse.
-        :type permission_actions: list[str]
+        :type permission_actions: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
         """
         self._permission_actions = permission_actions
 

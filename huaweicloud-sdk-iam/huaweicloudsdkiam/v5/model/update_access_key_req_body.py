@@ -15,7 +15,7 @@ class UpdateAccessKeyReqBody:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'status': 'AccessKeyStatus'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class UpdateAccessKeyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         
         
@@ -42,10 +42,8 @@ class UpdateAccessKeyReqBody:
     def status(self):
         r"""Gets the status of this UpdateAccessKeyReqBody.
 
-        访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-
         :return: The status of this UpdateAccessKeyReqBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         return self._status
 
@@ -53,10 +51,8 @@ class UpdateAccessKeyReqBody:
     def status(self, status):
         r"""Sets the status of this UpdateAccessKeyReqBody.
 
-        访问密钥状态，可以为“启用”（active）或“停用”（inactive）。
-
         :param status: The status of this UpdateAccessKeyReqBody.
-        :type status: str
+        :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
         """
         self._status = status
 

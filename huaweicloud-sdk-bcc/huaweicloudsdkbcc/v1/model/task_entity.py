@@ -16,11 +16,11 @@ class TaskEntity:
 
     openapi_types = {
         'task_id': 'str',
-        'task_type': 'str',
-        'task_status': 'str',
+        'task_type': 'TaskTypeEnum',
+        'task_status': 'TaskStatusEnum',
         'resource_name': 'str',
         'resource_id': 'str',
-        'resource_type': 'str',
+        'resource_type': 'ResourceTypeEnum',
         'region_id': 'str',
         'vault_name': 'str',
         'vault_id': 'str',
@@ -49,16 +49,16 @@ class TaskEntity:
 
         :param task_id: 任务ID
         :type task_id: str
-        :param task_type: 任务类型枚举
-        :type task_type: str
-        :param task_status: 任务状态枚举
-        :type task_status: str
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkbcc.v1.TaskTypeEnum`
+        :param task_status: 
+        :type task_status: :class:`huaweicloudsdkbcc.v1.TaskStatusEnum`
         :param resource_name: 资源名称
         :type resource_name: str
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_type: Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
-        :type resource_type: str
+        :param resource_type: 
+        :type resource_type: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
         :param region_id: 任务归属的区域ID
         :type region_id: str
         :param vault_name: 存储库名称
@@ -126,10 +126,8 @@ class TaskEntity:
     def task_type(self):
         r"""Gets the task_type of this TaskEntity.
 
-        任务类型枚举
-
         :return: The task_type of this TaskEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.TaskTypeEnum`
         """
         return self._task_type
 
@@ -137,10 +135,8 @@ class TaskEntity:
     def task_type(self, task_type):
         r"""Sets the task_type of this TaskEntity.
 
-        任务类型枚举
-
         :param task_type: The task_type of this TaskEntity.
-        :type task_type: str
+        :type task_type: :class:`huaweicloudsdkbcc.v1.TaskTypeEnum`
         """
         self._task_type = task_type
 
@@ -148,10 +144,8 @@ class TaskEntity:
     def task_status(self):
         r"""Gets the task_status of this TaskEntity.
 
-        任务状态枚举
-
         :return: The task_status of this TaskEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.TaskStatusEnum`
         """
         return self._task_status
 
@@ -159,10 +153,8 @@ class TaskEntity:
     def task_status(self, task_status):
         r"""Sets the task_status of this TaskEntity.
 
-        任务状态枚举
-
         :param task_status: The task_status of this TaskEntity.
-        :type task_status: str
+        :type task_status: :class:`huaweicloudsdkbcc.v1.TaskStatusEnum`
         """
         self._task_status = task_status
 
@@ -214,10 +206,8 @@ class TaskEntity:
     def resource_type(self):
         r"""Gets the resource_type of this TaskEntity.
 
-        Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
-
         :return: The resource_type of this TaskEntity.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
         """
         return self._resource_type
 
@@ -225,10 +215,8 @@ class TaskEntity:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this TaskEntity.
 
-        Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
-
         :param resource_type: The resource_type of this TaskEntity.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
         """
         self._resource_type = resource_type
 

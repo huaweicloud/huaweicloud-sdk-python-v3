@@ -16,15 +16,19 @@ class I18n:
 
     openapi_types = {
         'zh_cn': 'str',
-        'en_us': 'str'
+        'en_us': 'str',
+        'es_us': 'str',
+        'pt_br': 'str'
     }
 
     attribute_map = {
         'zh_cn': 'zh_cn',
-        'en_us': 'en_us'
+        'en_us': 'en_us',
+        'es_us': 'es_us',
+        'pt_br': 'pt_br'
     }
 
-    def __init__(self, zh_cn=None, en_us=None):
+    def __init__(self, zh_cn=None, en_us=None, es_us=None, pt_br=None):
         r"""I18n
 
         The model defined in huaweicloud sdk
@@ -33,18 +37,28 @@ class I18n:
         :type zh_cn: str
         :param en_us: 可用分区英语名称。
         :type en_us: str
+        :param es_us: 可用分区西班牙语名称。
+        :type es_us: str
+        :param pt_br: 可用分区葡萄牙语名称。
+        :type pt_br: str
         """
         
         
 
         self._zh_cn = None
         self._en_us = None
+        self._es_us = None
+        self._pt_br = None
         self.discriminator = None
 
         if zh_cn is not None:
             self.zh_cn = zh_cn
         if en_us is not None:
             self.en_us = en_us
+        if es_us is not None:
+            self.es_us = es_us
+        if pt_br is not None:
+            self.pt_br = pt_br
 
     @property
     def zh_cn(self):
@@ -89,6 +103,50 @@ class I18n:
         :type en_us: str
         """
         self._en_us = en_us
+
+    @property
+    def es_us(self):
+        r"""Gets the es_us of this I18n.
+
+        可用分区西班牙语名称。
+
+        :return: The es_us of this I18n.
+        :rtype: str
+        """
+        return self._es_us
+
+    @es_us.setter
+    def es_us(self, es_us):
+        r"""Sets the es_us of this I18n.
+
+        可用分区西班牙语名称。
+
+        :param es_us: The es_us of this I18n.
+        :type es_us: str
+        """
+        self._es_us = es_us
+
+    @property
+    def pt_br(self):
+        r"""Gets the pt_br of this I18n.
+
+        可用分区葡萄牙语名称。
+
+        :return: The pt_br of this I18n.
+        :rtype: str
+        """
+        return self._pt_br
+
+    @pt_br.setter
+    def pt_br(self, pt_br):
+        r"""Sets the pt_br of this I18n.
+
+        可用分区葡萄牙语名称。
+
+        :param pt_br: The pt_br of this I18n.
+        :type pt_br: str
+        """
+        self._pt_br = pt_br
 
     def to_dict(self):
         result = {}

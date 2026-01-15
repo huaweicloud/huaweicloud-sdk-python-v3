@@ -18,7 +18,7 @@ class UpdateRoleReq:
         'name': 'str',
         'description': 'str',
         'role_business_list': 'list[RoleBusinessReq]',
-        'llm_source': 'str',
+        'llm_source': 'LlmSourceEnum',
         'llm_config_id': 'str',
         'plugin_config_list': 'list[RolePluginConfigInfo]',
         'mcp_server_id_list': 'list[str]',
@@ -47,8 +47,8 @@ class UpdateRoleReq:
         :type description: str
         :param role_business_list: 角色业务配置列表
         :type role_business_list: list[:class:`huaweicloudsdkmetastudio.v1.RoleBusinessReq`]
-        :param llm_source: 使用的大语言模型来源 * LLM_CONFIG：大语言模型配置 * DEEP_SEEK：内置的DEEPSEEK
-        :type llm_source: str
+        :param llm_source: 
+        :type llm_source: :class:`huaweicloudsdkmetastudio.v1.LlmSourceEnum`
         :param llm_config_id: 大语言模型配置ID。
         :type llm_config_id: str
         :param plugin_config_list: 插件配置列表
@@ -158,10 +158,8 @@ class UpdateRoleReq:
     def llm_source(self):
         r"""Gets the llm_source of this UpdateRoleReq.
 
-        使用的大语言模型来源 * LLM_CONFIG：大语言模型配置 * DEEP_SEEK：内置的DEEPSEEK
-
         :return: The llm_source of this UpdateRoleReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LlmSourceEnum`
         """
         return self._llm_source
 
@@ -169,10 +167,8 @@ class UpdateRoleReq:
     def llm_source(self, llm_source):
         r"""Sets the llm_source of this UpdateRoleReq.
 
-        使用的大语言模型来源 * LLM_CONFIG：大语言模型配置 * DEEP_SEEK：内置的DEEPSEEK
-
         :param llm_source: The llm_source of this UpdateRoleReq.
-        :type llm_source: str
+        :type llm_source: :class:`huaweicloudsdkmetastudio.v1.LlmSourceEnum`
         """
         self._llm_source = llm_source
 

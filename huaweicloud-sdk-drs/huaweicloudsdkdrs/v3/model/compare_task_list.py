@@ -37,7 +37,7 @@ class CompareTaskList:
 
         :param compare_task_id: 对比任务的id。
         :type compare_task_id: str
-        :param compare_type: 对比任务的类型。
+        :param compare_type: 对比任务的类型。 lines：行对比，contents：值对比，object_comparison：对象级对比落库，object：对象级对比落库，account：账户对比，random：抽样比对，node：内核计算对比结果，mgr：管控计算对比结果
         :type compare_type: str
         :param compare_task_status: 对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
         :type compare_task_status: str
@@ -89,7 +89,7 @@ class CompareTaskList:
     def compare_type(self):
         r"""Gets the compare_type of this CompareTaskList.
 
-        对比任务的类型。
+        对比任务的类型。 lines：行对比，contents：值对比，object_comparison：对象级对比落库，object：对象级对比落库，account：账户对比，random：抽样比对，node：内核计算对比结果，mgr：管控计算对比结果
 
         :return: The compare_type of this CompareTaskList.
         :rtype: str
@@ -100,7 +100,7 @@ class CompareTaskList:
     def compare_type(self, compare_type):
         r"""Sets the compare_type of this CompareTaskList.
 
-        对比任务的类型。
+        对比任务的类型。 lines：行对比，contents：值对比，object_comparison：对象级对比落库，object：对象级对比落库，account：账户对比，random：抽样比对，node：内核计算对比结果，mgr：管控计算对比结果
 
         :param compare_type: The compare_type of this CompareTaskList.
         :type compare_type: str

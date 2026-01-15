@@ -28,7 +28,7 @@ class SetAlarmTopicConfigInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态  - success: 成功  - fail: 失败
+        :param status: 状态  - success：成功  - fail：失败
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class SetAlarmTopicConfigInfoResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SetAlarmTopicConfigInfoResponse.
 
-        状态  - success: 成功  - fail: 失败
+        状态  - success：成功  - fail：失败
 
         :return: The status of this SetAlarmTopicConfigInfoResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class SetAlarmTopicConfigInfoResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SetAlarmTopicConfigInfoResponse.
 
-        状态  - success: 成功  - fail: 失败
+        状态  - success：成功  - fail：失败
 
         :param status: The status of this SetAlarmTopicConfigInfoResponse.
         :type status: str

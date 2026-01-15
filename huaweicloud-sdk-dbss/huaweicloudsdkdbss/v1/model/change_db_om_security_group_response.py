@@ -34,7 +34,7 @@ class ChangeDbOmSecurityGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: - 0: 正常 - 非0: 异常
+        :param code: - 0：正常 - 非0：异常
         :type code: int
         :param description: 备注
         :type description: str
@@ -65,7 +65,7 @@ class ChangeDbOmSecurityGroupResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this ChangeDbOmSecurityGroupResponse.
 
-        - 0: 正常 - 非0: 异常
+        - 0：正常 - 非0：异常
 
         :return: The code of this ChangeDbOmSecurityGroupResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ChangeDbOmSecurityGroupResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this ChangeDbOmSecurityGroupResponse.
 
-        - 0: 正常 - 非0: 异常
+        - 0：正常 - 非0：异常
 
         :param code: The code of this ChangeDbOmSecurityGroupResponse.
         :type code: int

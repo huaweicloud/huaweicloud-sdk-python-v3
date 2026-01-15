@@ -15,7 +15,7 @@ class ClassificationResult:
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str',
+        'result': 'DiagnoseResult',
         'security_level': 'bool',
         'classification': 'bool'
     }
@@ -31,8 +31,8 @@ class ClassificationResult:
 
         The model defined in huaweicloud sdk
 
-        :param result: 检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-        :type result: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         :param security_level: 是否配置了密级
         :type security_level: bool
         :param classification: 是否配置了分类
@@ -57,10 +57,8 @@ class ClassificationResult:
     def result(self):
         r"""Gets the result of this ClassificationResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :return: The result of this ClassificationResult.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         return self._result
 
@@ -68,10 +66,8 @@ class ClassificationResult:
     def result(self, result):
         r"""Sets the result of this ClassificationResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :param result: The result of this ClassificationResult.
-        :type result: str
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         self._result = result
 

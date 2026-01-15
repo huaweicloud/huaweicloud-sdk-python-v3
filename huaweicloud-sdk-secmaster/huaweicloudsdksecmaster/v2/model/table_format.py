@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TableFormat:
-
+    """
+    allowed enum values
+    """
+    JSON = "JSON"
+    DEBEZIUM_JSON = "DEBEZIUM_JSON"
+    CSV = "CSV"
+    PARQUET = "PARQUET"
+    ORC = "ORC"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

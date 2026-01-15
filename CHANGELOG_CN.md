@@ -1,3 +1,663 @@
+# 3.1.183 2026-01-15
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateRuleNew**
+    - 请求参数变更
+      - `+ actions.request_limit_rule`
+      - `- actions.request_limit_rules`
+  - **ShowDomainTemplate**
+    - 响应参数变更
+      - `+ templates`
+      - `- temlates`
+  - **CreateRuleNew**
+    - 请求参数变更
+      - `+ actions.request_limit_rule`
+      - `- actions.request_limit_rules`
+  - **ListRuleDetails**
+    - 响应参数变更
+      - `+ rules.actions.request_limit_rule`
+      - `- rules.actions.request_limit_rules`
+  - **UpdateFullRule**
+    - 请求参数变更
+      - `+ rules.actions.request_limit_rule`
+      - `- rules.actions.request_limit_rules`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowAiOpsDetector`、`ShowAiOpsSetting`、`UpdateAiOpsSetting`、`CloseAiOpsSetting`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAiOps**
+    - 请求参数变更
+      - `+ check_type`
+      - `+ check_items`
+  - **ListAiOps**
+    - 请求参数变更
+      - `+ report`
+    - 响应参数变更
+      - `+ aiops_list.check_type`
+      - `+ aiops_list.trigger_type`
+      - `- aiops_list.create_time`
+      - `- aiops_list.smn_status`
+      - `- aiops_list.smn_fail_reason`
+      - `+ aiops_list.summary.highRisk`
+      - `+ aiops_list.summary.mediumRisk`
+      - `+ aiops_list.summary.normal`
+      - `- aiops_list.summary.high`
+      - `- aiops_list.summary.medium`
+      - `* aiops_list.summary: object -> object<SummaryInfo>`
+      - `+ aiops_list.task_risks.id`
+      - `+ aiops_list.task_risks.name`
+      - `+ aiops_list.task_risks.result`
+      - `- aiops_list.task_risks.riskType`
+      - `* aiops_list.task_risks: list<AIOpsRiskInfo> -> list<AiOpsRiskObject>`
+      - `* aiops_list: list<object> -> list<AiOps>`
+
+### HuaweiCloud SDK DBSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEcsSpecificationNew**
+    - 响应参数变更
+      - `+ specifications`
+      - `- specification`
+  - **ListAuditRuleRisksNew**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DNS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchStartJobs**
+    - 请求参数变更
+      - `+ jobs.is_auto_create_compare`
+  - **BatchListJobDetails**
+    - 响应参数变更
+      - `+ results.job_kernel_direction`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ShowSubscriptionLists`
+    - `ShowColumnInfos`
+    - `DeleteColumnInfos`
+    - `ShowReplayProgress`
+    - `ModifyColumnInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSupportObjectType**
+    - 响应参数变更
+      - `+ import_mapping_type`
+      - `+ is_import_unique_key`
+  - **ShowDirtyData**
+    - 请求参数变更
+      - `+ anonymize_mode`
+      - `+ task_mode`
+  - **ShowProgressData**
+    - 请求参数变更
+      - `+ search_name`
+  - **ListTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [verify]`
+  - **ListAsyncJobDetail**
+    - 响应参数变更
+      - `+ jobs.job_kernel_direction`
+  - **ShowJobDetail**
+    - 请求参数变更
+      - `+ log_level`
+    - 响应参数变更
+      - `+ job.job_kernel_direction`
+  - **ExecuteJobAction**
+    - 请求参数变更
+      - `+ job.action_params.is_auto_create_compare`
+  - **BatchExecuteJobActions**
+    - 请求参数变更
+      - `+ jobs.action_params.is_auto_create_compare`
+
+### HuaweiCloud SDK EPS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEnterpriseProject**
+    - 请求参数变更
+      - `+ type`
+
+### HuaweiCloud SDK OMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSyncTask**
+    - 请求参数变更
+      - `* query_time: string -> int64`
+  - **ListSyncTaskStatistic**
+    - 请求参数变更
+      - `* start_time: string -> int64`
+      - `* end_time: string -> int64`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 响应参数变更
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **CreatePort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **ShowPort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **UpdatePort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronListPorts**
+    - 响应参数变更
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **NeutronCreatePort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronShowPort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronUpdatePort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 响应参数变更
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **ShowPort**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **AddSecurityGroups**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **RemoveSecurityGroups**
+    - 响应参数变更
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchUpdateIpReputationRules**
+    - 请求参数变更
+      - `- policyname`
+  - **BatchUpdateAntitamperRules**
+    - 请求参数变更
+      - `+ name`
+  - **BatchUpdateCustomRules**
+    - 请求参数变更
+      - `- id`
+      - `- policyid`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListDesktopsByTags`、`ListNotificationRecords`、`CheckCidr`、`ValidateDomainController`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateTenantProfile**
+    - 请求参数变更
+      - `- X-Auth-Token`
+  - **RebuildDesktopPool**
+    - 请求参数变更
+      - `+ encrypt_type`
+      - `+ kms_id`
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **DeleteDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `- volumes.type`
+      - `- volumes.size`
+      - `- volumes.iops`
+      - `- volumes.throughput`
+      - `- volumes.resource_spec_code`
+      - `* volumes: list<VolumeInfo> -> list<object>`
+  - **ExpandDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `- volumes.type`
+      - `- volumes.iops`
+      - `- volumes.throughput`
+      - `- volumes.resource_spec_code`
+      - `* volumes: list<VolumeInfo> -> list<object>`
+  - **BatchRebuildDesktopsSystemDisk**
+    - 请求参数变更
+      - `+ encrypt_type`
+      - `+ kms_id`
+    - 响应参数变更
+      - `+ error_detail`
+  - **ExportUserConnectionNew**
+    - 请求参数变更
+      - `+ public_ip`
+  - **ShowDesktopPoolDetail**
+    - 响应参数变更
+      - `+ root_volume.kms_id`
+  - **UpdateDesktopPool**
+    - 请求参数变更
+      - `+ root_volume.kms_id`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ResizeDesktopPool**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ desktop_ids`
+  - **AddDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `+ volumes.kms_id`
+  - **ShowDesktopMonitorData**
+    - 响应参数变更
+      - `+ error_detail`
+      - `+ user_online_info.error_detail`
+  - **ChangeDesktopToImage**
+    - 请求参数变更
+      - `+ is_clear_data`
+  - **ListNatGateways**
+    - 请求参数变更
+      - `+ offset`
+  - **CreateChangeOrder**
+    - 请求参数变更
+      - `+ is_auto_renew`
+  - **CreateDesktopBatchOrder**
+    - 请求参数变更
+      - `+ agency_urn`
+      - `+ add_volume_param.desktop_pool_disk_id`
+      - `+ add_volume_param.kms_id`
+      - `+ add_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ extend_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ resize_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ change_image_param.encrypt_type`
+      - `+ change_image_param.kms_id`
+      - `+ change_image_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ add_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ delete_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateDesktopPoolChangeOrder**
+    - 请求参数变更
+      - `+ agency_urn`
+      - `+ add_volume_param.desktop_pool_disk_id`
+      - `+ add_volume_param.kms_id`
+      - `+ add_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ extend_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ resize_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ change_image_param.encrypt_type`
+      - `+ change_image_param.kms_id`
+      - `+ change_image_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ add_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ delete_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateResourcePackagesOrder**
+    - 请求参数变更
+      - `+ resource_packages.cloud_service_type`
+      - `+ resource_packages.resource_type`
+      - `+ resource_packages.package_type`
+      - `+ resource_packages.cpu`
+      - `+ resource_packages.architecture`
+      - `+ resource_packages.memory`
+      - `+ resource_packages.domain_ids`
+      - `+ resource_packages.resource_packages`
+      - `- resource_packages.status`
+      - `- resource_packages.period_type`
+      - `- resource_packages.period_value`
+      - `- resource_packages.measurement_name`
+      - `- resource_packages.threshold`
+      - `* resource_packages: list<ResourcePackage> -> list<DesktopResourcePackage>`
+  - **ListScheduledTasks**
+    - 响应参数变更
+      - `+ scheduled_tasks.expire_time`
+      - `+ scheduled_tasks.extra_params`
+  - **CreateScheduledTasks**
+    - 请求参数变更
+      - `+ task_type: enum value [DELETE_BLACK_ECS]`
+  - **ListScheduledTasksRecords**
+    - 响应参数变更
+      - `+ tasks_records.expire_time`
+      - `+ tasks_records.extra_params`
+  - **AddDesktopVolumes**
+    - 请求参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+      - `+ volumes.kms_id`
+      - `* volumes.size: int64 -> int32`
+  - **ListSecurityGroups**
+    - 响应参数变更
+      - `+ security_groups.description`
+      - `+ security_groups.security_group_rules`
+      - `+ security_groups.tenant_id`
+      - `+ security_groups.project_id`
+      - `+ security_groups.created_at`
+      - `+ security_groups.updated_at`
+      - `* security_groups: list<SecurityGroup> -> list<SimpleSecurityGroupsInfo>`
+  - **ListSubnets**
+    - 响应参数变更
+      - `+ subnets.id`
+      - `+ subnets.unused`
+      - `+ subnets.checked`
+      - `+ subnets.vpc_id`
+      - `+ subnets.name`
+      - `+ subnets.cidr`
+      - `+ subnets.gateway_ip`
+      - `+ subnets.dhcp_enable`
+      - `+ subnets.ipv6_enable`
+      - `+ subnets.primary_dns`
+      - `+ subnets.secondary_dns`
+      - `+ subnets.status`
+      - `+ subnets.availability_zone`
+      - `+ subnets.neutron_subnet_id`
+      - `+ subnets.neutron_ipv6_subnet_id`
+      - `+ subnets.description`
+      - `- subnets.subnet_id`
+      - `* subnets: list<SubnetInfo> -> list<SingleSubnetInfo>`
+  - **ImportPolicyGroups**
+    - 响应参数变更
+      - `+ error_detail`
+  - **ListProducts**
+    - 响应参数变更
+      - `- products.flavor_id`
+  - **ImportUserList**
+    - 响应参数变更
+      - `+ error_detail`
+  - **ExportCertCsrFile**
+    - 请求参数变更
+      - `- signature_algorithm`
+  - **ImportCert**
+    - 请求参数变更
+      - `- signature_algorithm`
+  - **CheckEdgeSiteResources**
+    - 请求参数变更
+      - `* volumes: list<Volume> -> list<CheckEdgeSiteResourcesVolume>`
+  - **ListLoginRecordsNew**
+    - 请求参数变更
+      - `+ public_ip`
+  - **UpdateUploadedApp**
+    - 请求参数变更
+      - `- X-Auth-Token`
+  - **ListAppAuthorizations**
+    - 请求参数变更
+      - `+ assign_type`
+  - **UpdateAppRule**
+    - 请求参数变更
+      - `- X-Auth-Token`
+  - **CreateDesktopPool**
+    - 请求参数变更
+      - `+ root_volume.kms_id`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ListDesktopPools**
+    - 响应参数变更
+      - `+ desktop_pools.root_volume.kms_id`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ buy_type`
+      - `+ root_volume.iops`
+      - `+ root_volume.throughput`
+      - `+ root_volume.kms_id`
+      - `* root_volume.size: int64 -> int32`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ListDesktops**
+    - 响应参数变更
+      - `+ desktops.pool_id`
+  - **BatchDetachInstances**
+    - 请求参数变更
+      - `* desktops.detach_user_infos: list<AttachInstancesUserInfo> -> list<DetachInstancesUserInfo>`
+  - **AttachInstances**
+    - 请求参数变更
+      - `+ encrypt_type`
+      - `+ kms_id`
+  - **EstimateDesktopPoolExtendVolume**
+    - 请求参数变更
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **AddVolumes**
+    - 请求参数变更
+      - `+ desktop_volumes.volumes.iops`
+      - `+ desktop_volumes.volumes.throughput`
+      - `+ desktop_volumes.volumes.kms_id`
+      - `* desktop_volumes.volumes.size: int64 -> int32`
+  - **ListHourPackagesType**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListWksEdgeSites**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ ad_domains.domain_controllers`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ ad_domains.domain_controllers`
+  - **ApplyWorkspace**
+    - 请求参数变更
+      - `- ad_domains.cba_enabled`
+      - `- ad_domains.certificate_id`
+      - `* ad_domains: object<AdDomain> -> object<ApplyWorkspaceAdDomain>`
+  - **ListPoolDesktopsDetail**
+    - 响应参数变更
+      - `+ period_charge_image_desktops_num`
+      - `+ on_demand_free_image_desktops_num`
+      - `+ on_demand_charge_image_desktops_num`
+      - `+ period_free_image_desktops_num`
+      - `+ pool_desktops.is_freeze`
+      - `+ pool_desktops.root_volume.desktop_pool_disk_id`
+  - **UpdateDesktop**
+    - 响应参数变更
+      - `+ error_detail`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `+ desktop.is_freeze`
+      - `+ desktop.root_volume.desktop_pool_disk_id`
+  - **ListDesktopsDetail**
+    - 响应参数变更
+      - `+ desktops.is_freeze`
+      - `+ desktops.root_volume.desktop_pool_disk_id`
+  - **EstimateChangeImages**
+    - 请求参数变更
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolAddVolume**
+    - 请求参数变更
+      - `+ desktop_pool_disk_id`
+      - `+ kms_id`
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolChangeImage**
+    - 请求参数变更
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolResize**
+    - 请求参数变更
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateAddResources**
+    - 请求参数变更
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateDesktopOrder**
+    - 请求参数变更
+      - `+ hour_package_resources.create_desktops.buy_type`
+      - `+ hour_package_resources.create_desktops.root_volume.iops`
+      - `+ hour_package_resources.create_desktops.root_volume.throughput`
+      - `+ hour_package_resources.create_desktops.root_volume.kms_id`
+      - `* hour_package_resources.create_desktops.root_volume.size: int64 -> int32`
+      - `- hour_package_resources.create_desktops.security_groups.name`
+      - `* hour_package_resources.create_desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **CreateOrder**
+    - 请求参数变更
+      - `+ resources.rebuild_desktops.encrypt_type`
+      - `+ resources.rebuild_desktops.kms_id`
+      - `+ resources.add_volumes.volumes.iops`
+      - `+ resources.add_volumes.volumes.throughput`
+      - `+ resources.add_volumes.volumes.kms_id`
+      - `* resources.add_volumes.volumes.size: int64 -> int32`
+      - `+ resources.create_desktops.buy_type`
+      - `- resources.create_desktops.security_groups.name`
+      - `* resources.create_desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+      - `+ resources.create_desktop_pool.root_volume.kms_id`
+      - `+ resources.subscribe_user_sharer.users.user_id`
+      - `- resources.subscribe_user_sharer.users.id`
+      - `- resources.subscribe_user_sharer.users.sid`
+      - `- resources.subscribe_user_sharer.users.user_email`
+      - `- resources.subscribe_user_sharer.users.total_desktops`
+      - `- resources.subscribe_user_sharer.users.user_phone`
+      - `- resources.subscribe_user_sharer.users.active_type`
+      - `- resources.subscribe_user_sharer.users.is_pre_user`
+      - `- resources.subscribe_user_sharer.users.account_expires`
+      - `- resources.subscribe_user_sharer.users.password_never_expired`
+      - `- resources.subscribe_user_sharer.users.account_expired`
+      - `- resources.subscribe_user_sharer.users.enable_change_password`
+      - `- resources.subscribe_user_sharer.users.next_login_change_password`
+      - `- resources.subscribe_user_sharer.users.description`
+      - `- resources.subscribe_user_sharer.users.locked`
+      - `- resources.subscribe_user_sharer.users.disabled`
+      - `- resources.subscribe_user_sharer.users.share_space_subscription`
+      - `- resources.subscribe_user_sharer.users.share_space_desktops`
+      - `- resources.subscribe_user_sharer.users.group_names`
+      - `- resources.subscribe_user_sharer.users.enterprise_project_id`
+      - `- resources.subscribe_user_sharer.users.user_info_map`
+      - `- resources.subscribe_user_sharer.users.domain`
+      - `* resources.subscribe_user_sharer.users: list<User> -> list<SubscribeUserInfo>`
+      - `+ resources.attach_desktops.encrypt_type`
+      - `+ resources.attach_desktops.kms_id`
+  - **ListPoliciesOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **UpdatePoliciesOfPolicyGroup**
+    - 请求参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+    - 响应参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ policy_groups.policies.cloud_storage`
+      - `+ policy_groups.policies.user_profile`
+      - `+ policy_groups.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyDetailInfoById**
+    - 响应参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyGroupInfo**
+    - 响应参数变更
+      - `+ policy_groups.policies.cloud_storage`
+      - `+ policy_groups.policies.user_profile`
+      - `+ policy_groups.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+
 # 3.1.182 2026-01-08
 
 ### HuaweiCloud SDK AS

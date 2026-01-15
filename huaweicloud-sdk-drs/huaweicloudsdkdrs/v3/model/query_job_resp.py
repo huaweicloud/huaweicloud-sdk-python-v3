@@ -75,7 +75,8 @@ class QueryJobResp:
         'public_ip_list': 'list[PublicIpConfig]',
         'bind_public_ip_state': 'str',
         'children': 'list[FailedToBindEipChildInfo]',
-        'is_open_fast_clean': 'bool'
+        'is_open_fast_clean': 'bool',
+        'job_kernel_direction': 'str'
     }
 
     attribute_map = {
@@ -139,10 +140,11 @@ class QueryJobResp:
         'public_ip_list': 'public_ip_list',
         'bind_public_ip_state': 'bind_public_ip_state',
         'children': 'children',
-        'is_open_fast_clean': 'is_open_fast_clean'
+        'is_open_fast_clean': 'is_open_fast_clean',
+        'job_kernel_direction': 'job_kernel_direction'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None, period_order=None, object_infos=None, original_job_direction=None, data_transformation=None, tags=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_open_fast_clean=None, job_kernel_direction=None):
         r"""QueryJobResp
 
         The model defined in huaweicloud sdk
@@ -269,6 +271,8 @@ class QueryJobResp:
         :type children: list[:class:`huaweicloudsdkdrs.v3.FailedToBindEipChildInfo`]
         :param is_open_fast_clean: 是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
         :type is_open_fast_clean: bool
+        :param job_kernel_direction: 灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        :type job_kernel_direction: str
         """
         
         
@@ -334,6 +338,7 @@ class QueryJobResp:
         self._bind_public_ip_state = None
         self._children = None
         self._is_open_fast_clean = None
+        self._job_kernel_direction = None
         self.discriminator = None
 
         if id is not None:
@@ -458,6 +463,8 @@ class QueryJobResp:
             self.children = children
         if is_open_fast_clean is not None:
             self.is_open_fast_clean = is_open_fast_clean
+        if job_kernel_direction is not None:
+            self.job_kernel_direction = job_kernel_direction
 
     @property
     def id(self):
@@ -1768,6 +1775,28 @@ class QueryJobResp:
         :type is_open_fast_clean: bool
         """
         self._is_open_fast_clean = is_open_fast_clean
+
+    @property
+    def job_kernel_direction(self):
+        r"""Gets the job_kernel_direction of this QueryJobResp.
+
+        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+
+        :return: The job_kernel_direction of this QueryJobResp.
+        :rtype: str
+        """
+        return self._job_kernel_direction
+
+    @job_kernel_direction.setter
+    def job_kernel_direction(self, job_kernel_direction):
+        r"""Sets the job_kernel_direction of this QueryJobResp.
+
+        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+
+        :param job_kernel_direction: The job_kernel_direction of this QueryJobResp.
+        :type job_kernel_direction: str
+        """
+        self._job_kernel_direction = job_kernel_direction
 
     def to_dict(self):
         result = {}

@@ -18,7 +18,7 @@ class CreateInteractiveChatReq:
         'role_id': 'str',
         'message': 'str',
         'session_id': 'str',
-        'language': 'str'
+        'language': 'LanguageEnum'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class CreateInteractiveChatReq:
         :type message: str
         :param session_id: 当前对话的唯一标识，用于关联对话上下文内容。
         :type session_id: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         
         
@@ -127,10 +127,8 @@ class CreateInteractiveChatReq:
     def language(self):
         r"""Gets the language of this CreateInteractiveChatReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this CreateInteractiveChatReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -138,10 +136,8 @@ class CreateInteractiveChatReq:
     def language(self, language):
         r"""Sets the language of this CreateInteractiveChatReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this CreateInteractiveChatReq.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

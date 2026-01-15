@@ -54,9 +54,9 @@ class CreateEipRecordSetResponse(SdkResponse):
         :type ttl: int
         :param address: 弹性公网IP的IP地址。
         :type address: str
-        :param status: 资源状态。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败
         :type status: str
-        :param action: 对该资源的当前操作。取值范围：CREATE，UPDATE，DELETE，NONE CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
+        :param action: **参数解释：** 对该资源的当前操作。 **取值范围：** - CREATE：创建操作 - UPDATE：更新操作 - DELETE：删除操作 - NONE：无操作
         :type action: str
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -210,7 +210,7 @@ class CreateEipRecordSetResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateEipRecordSetResponse.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败
 
         :return: The status of this CreateEipRecordSetResponse.
         :rtype: str
@@ -221,7 +221,7 @@ class CreateEipRecordSetResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateEipRecordSetResponse.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - ERROR：失败
 
         :param status: The status of this CreateEipRecordSetResponse.
         :type status: str
@@ -232,7 +232,7 @@ class CreateEipRecordSetResponse(SdkResponse):
     def action(self):
         r"""Gets the action of this CreateEipRecordSetResponse.
 
-        对该资源的当前操作。取值范围：CREATE，UPDATE，DELETE，NONE CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
+        **参数解释：** 对该资源的当前操作。 **取值范围：** - CREATE：创建操作 - UPDATE：更新操作 - DELETE：删除操作 - NONE：无操作
 
         :return: The action of this CreateEipRecordSetResponse.
         :rtype: str
@@ -243,7 +243,7 @@ class CreateEipRecordSetResponse(SdkResponse):
     def action(self, action):
         r"""Sets the action of this CreateEipRecordSetResponse.
 
-        对该资源的当前操作。取值范围：CREATE，UPDATE，DELETE，NONE CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
+        **参数解释：** 对该资源的当前操作。 **取值范围：** - CREATE：创建操作 - UPDATE：更新操作 - DELETE：删除操作 - NONE：无操作
 
         :param action: The action of this CreateEipRecordSetResponse.
         :type action: str

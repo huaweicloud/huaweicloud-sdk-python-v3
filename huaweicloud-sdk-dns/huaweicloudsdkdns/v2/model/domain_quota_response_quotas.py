@@ -33,7 +33,7 @@ class DomainQuotaResponseQuotas:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 资源类型。
+        :param quota_key: **参数解释：** 资源类型。 **取值范围：** - zone：公网域名配额 - private_zone：内网域名配额 - record_set：记录集配额 - url_record：显性/隐性URL记录集配额 - ptr_record：反向解析配额 - custom_line：自定义线路配额 - line_group：线路分组配额 - inbound_endpoint：入站终端节点配额 - outbound_endpoint：出站终端节点配额 - resolver_rule：转发规则配额
         :type quota_key: str
         :param quota_limit: 资源配额的最大值。
         :type quota_limit: int
@@ -60,7 +60,7 @@ class DomainQuotaResponseQuotas:
     def quota_key(self):
         r"""Gets the quota_key of this DomainQuotaResponseQuotas.
 
-        资源类型。
+        **参数解释：** 资源类型。 **取值范围：** - zone：公网域名配额 - private_zone：内网域名配额 - record_set：记录集配额 - url_record：显性/隐性URL记录集配额 - ptr_record：反向解析配额 - custom_line：自定义线路配额 - line_group：线路分组配额 - inbound_endpoint：入站终端节点配额 - outbound_endpoint：出站终端节点配额 - resolver_rule：转发规则配额
 
         :return: The quota_key of this DomainQuotaResponseQuotas.
         :rtype: str
@@ -71,7 +71,7 @@ class DomainQuotaResponseQuotas:
     def quota_key(self, quota_key):
         r"""Sets the quota_key of this DomainQuotaResponseQuotas.
 
-        资源类型。
+        **参数解释：** 资源类型。 **取值范围：** - zone：公网域名配额 - private_zone：内网域名配额 - record_set：记录集配额 - url_record：显性/隐性URL记录集配额 - ptr_record：反向解析配额 - custom_line：自定义线路配额 - line_group：线路分组配额 - inbound_endpoint：入站终端节点配额 - outbound_endpoint：出站终端节点配额 - resolver_rule：转发规则配额
 
         :param quota_key: The quota_key of this DomainQuotaResponseQuotas.
         :type quota_key: str

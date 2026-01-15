@@ -81,7 +81,7 @@ class ResponseServer:
         :type effect: int
         :param instance_id: 实例ID
         :type instance_id: str
-        :param is_active: 双机实例HA中用来标注实例为主机还是备机, -0: 主机 -1:备机
+        :param is_active: 双机实例HA中用来标注实例为主机还是备机, - 0：主机  - 1：备机
         :type is_active: int
         :param name: 实例名称
         :type name: str
@@ -91,7 +91,7 @@ class ResponseServer:
         :type region: str
         :param resource_spec_code: 实例所属规格编码
         :type resource_spec_code: str
-        :param scene: 冻结场景  - POLICE: 公安冻结  - ILLEGAL: 违规冻结  - VERIFY: 未实名认证冻结  - PARTNER: 合作伙伴冻结 - ARREAR: 普通冻结（普通）
+        :param scene: 冻结场景  - POLICE：公安冻结  - ILLEGAL：违规冻结  - VERIFY：未实名认证冻结  - PARTNER：合作伙伴冻结 - ARREAR：普通冻结（普通）
         :type scene: str
         :param security_group_id: 安全组ID
         :type security_group_id: str
@@ -322,7 +322,7 @@ class ResponseServer:
     def is_active(self):
         r"""Gets the is_active of this ResponseServer.
 
-        双机实例HA中用来标注实例为主机还是备机, -0: 主机 -1:备机
+        双机实例HA中用来标注实例为主机还是备机, - 0：主机  - 1：备机
 
         :return: The is_active of this ResponseServer.
         :rtype: int
@@ -333,7 +333,7 @@ class ResponseServer:
     def is_active(self, is_active):
         r"""Sets the is_active of this ResponseServer.
 
-        双机实例HA中用来标注实例为主机还是备机, -0: 主机 -1:备机
+        双机实例HA中用来标注实例为主机还是备机, - 0：主机  - 1：备机
 
         :param is_active: The is_active of this ResponseServer.
         :type is_active: int
@@ -432,7 +432,7 @@ class ResponseServer:
     def scene(self):
         r"""Gets the scene of this ResponseServer.
 
-        冻结场景  - POLICE: 公安冻结  - ILLEGAL: 违规冻结  - VERIFY: 未实名认证冻结  - PARTNER: 合作伙伴冻结 - ARREAR: 普通冻结（普通）
+        冻结场景  - POLICE：公安冻结  - ILLEGAL：违规冻结  - VERIFY：未实名认证冻结  - PARTNER：合作伙伴冻结 - ARREAR：普通冻结（普通）
 
         :return: The scene of this ResponseServer.
         :rtype: str
@@ -443,7 +443,7 @@ class ResponseServer:
     def scene(self, scene):
         r"""Sets the scene of this ResponseServer.
 
-        冻结场景  - POLICE: 公安冻结  - ILLEGAL: 违规冻结  - VERIFY: 未实名认证冻结  - PARTNER: 合作伙伴冻结 - ARREAR: 普通冻结（普通）
+        冻结场景  - POLICE：公安冻结  - ILLEGAL：违规冻结  - VERIFY：未实名认证冻结  - PARTNER：合作伙伴冻结 - ARREAR：普通冻结（普通）
 
         :param scene: The scene of this ResponseServer.
         :type scene: str

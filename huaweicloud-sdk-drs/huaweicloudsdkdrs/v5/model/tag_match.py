@@ -29,9 +29,9 @@ class TagMatch:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。
+        :param key: 键，例如键值对{“aaa”:\&quot;bbb\&quot;}的key为\&quot;aaa\&quot;
         :type key: str
-        :param value: 值。
+        :param value: 值，例如键值对{“aaa”:\&quot;bbb\&quot;}的value为\&quot;bbb\&quot;
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class TagMatch:
     def key(self):
         r"""Gets the key of this TagMatch.
 
-        键。
+        键，例如键值对{“aaa”:\"bbb\"}的key为\"aaa\"
 
         :return: The key of this TagMatch.
         :rtype: str
@@ -59,7 +59,7 @@ class TagMatch:
     def key(self, key):
         r"""Sets the key of this TagMatch.
 
-        键。
+        键，例如键值对{“aaa”:\"bbb\"}的key为\"aaa\"
 
         :param key: The key of this TagMatch.
         :type key: str
@@ -70,7 +70,7 @@ class TagMatch:
     def value(self):
         r"""Gets the value of this TagMatch.
 
-        值。
+        值，例如键值对{“aaa”:\"bbb\"}的value为\"bbb\"
 
         :return: The value of this TagMatch.
         :rtype: str
@@ -81,7 +81,7 @@ class TagMatch:
     def value(self, value):
         r"""Sets the value of this TagMatch.
 
-        值。
+        值，例如键值对{“aaa”:\"bbb\"}的value为\"bbb\"
 
         :param value: The value of this TagMatch.
         :type value: str

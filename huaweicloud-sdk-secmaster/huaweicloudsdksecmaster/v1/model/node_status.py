@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class NodeStatus:
-
+    """
+    allowed enum values
+    """
+    RUN = "RUN"
+    STOP = "STOP"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

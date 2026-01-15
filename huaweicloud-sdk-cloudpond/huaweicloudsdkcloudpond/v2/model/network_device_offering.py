@@ -18,7 +18,7 @@ class NetworkDeviceOffering:
         'id': 'str',
         'zone_code': 'str',
         'scene_code': 'str',
-        'status': 'str',
+        'status': 'OfferingStatus',
         'spec': 'NetworkDeviceSpec',
         'product_info': 'ProductInfo',
         'sale_cycles': 'list[SaleCycle]'
@@ -45,8 +45,8 @@ class NetworkDeviceOffering:
         :type zone_code: str
         :param scene_code: 销售场景编码
         :type scene_code: str
-        :param status: 商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcloudpond.v2.NetworkDeviceSpec`
         :param product_info: 
@@ -151,10 +151,8 @@ class NetworkDeviceOffering:
     def status(self):
         r"""Gets the status of this NetworkDeviceOffering.
 
-        商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
-
         :return: The status of this NetworkDeviceOffering.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
         """
         return self._status
 
@@ -162,10 +160,8 @@ class NetworkDeviceOffering:
     def status(self, status):
         r"""Sets the status of this NetworkDeviceOffering.
 
-        商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
-
         :param status: The status of this NetworkDeviceOffering.
-        :type status: str
+        :type status: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
         """
         self._status = status
 

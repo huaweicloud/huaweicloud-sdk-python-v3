@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class OsTypeEnum:
-
+    """
+    allowed enum values
+    """
+    LINUX = "Linux"
+    WINDOWS = "Windows"
+    OTHER = "Other"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -16,7 +16,7 @@ class Interaction:
 
     openapi_types = {
         'binding_site': 'str',
-        'type': 'str',
+        'type': 'InteractionType',
         'amino_acid': 'str'
     }
 
@@ -33,8 +33,8 @@ class Interaction:
 
         :param binding_site: 靶点，只支持target1或target2。
         :type binding_site: str
-        :param type: 相互作用力类型：氢键、疏水作用、盐桥、π-π堆积、π-阳离子
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkeihealth.v1.InteractionType`
         :param amino_acid: 氨基酸
         :type amino_acid: str
         """
@@ -76,10 +76,8 @@ class Interaction:
     def type(self):
         r"""Gets the type of this Interaction.
 
-        相互作用力类型：氢键、疏水作用、盐桥、π-π堆积、π-阳离子
-
         :return: The type of this Interaction.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionType`
         """
         return self._type
 
@@ -87,10 +85,8 @@ class Interaction:
     def type(self, type):
         r"""Sets the type of this Interaction.
 
-        相互作用力类型：氢键、疏水作用、盐桥、π-π堆积、π-阳离子
-
         :param type: The type of this Interaction.
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.InteractionType`
         """
         self._type = type
 

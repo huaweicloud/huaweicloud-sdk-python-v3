@@ -15,7 +15,7 @@ class CreateLogtankOption:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'str',
+        'resource_type': 'LogtankResourceType',
         'resource_id': 'str',
         'log_group_id': 'str',
         'log_stream_id': 'str'
@@ -33,8 +33,8 @@ class CreateLogtankOption:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 云日志的资源类型。 取值范围： LISTENER：监听器
-        :type resource_type: str
+        :param resource_type: 
+        :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         :param resource_id: 开启云日志的资源ID。
         :type resource_id: str
         :param log_group_id: 云日志服务提供的日志组ID。
@@ -60,10 +60,8 @@ class CreateLogtankOption:
     def resource_type(self):
         r"""Gets the resource_type of this CreateLogtankOption.
 
-        云日志的资源类型。 取值范围： LISTENER：监听器
-
         :return: The resource_type of this CreateLogtankOption.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         """
         return self._resource_type
 
@@ -71,10 +69,8 @@ class CreateLogtankOption:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CreateLogtankOption.
 
-        云日志的资源类型。 取值范围： LISTENER：监听器
-
         :param resource_type: The resource_type of this CreateLogtankOption.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
         """
         self._resource_type = resource_type
 

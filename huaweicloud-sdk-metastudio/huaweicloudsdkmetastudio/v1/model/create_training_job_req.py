@@ -15,19 +15,19 @@ class CreateTrainingJobReq:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'str',
+        'tag': 'JobTag',
         'description': 'str',
         'sex': 'str',
         'voice_name': 'str',
         'language': 'str',
-        'create_type': 'str',
+        'create_type': 'CreateType',
         'phone': 'str',
         'dhtms_job_id': 'str',
         'batch_name': 'str',
         'output_language': 'str',
         'custom_text': 'str',
         'is_ondemand_resource': 'bool',
-        'supported_service': 'list[str]'
+        'supported_service': 'list[SupportedServiceEnum]'
     }
 
     attribute_map = {
@@ -51,8 +51,8 @@ class CreateTrainingJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param tag: 任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-        :type tag: str
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         :param description: 一段描述信息,会呈现在资产库中。
         :type description: str
         :param sex: 语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
@@ -61,8 +61,8 @@ class CreateTrainingJobReq:
         :type voice_name: str
         :param language: 训练语言,当前仅支持中文。 * CN: 中文 * EN: 英文
         :type language: str
-        :param create_type: 任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
-        :type create_type: str
+        :param create_type: 
+        :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         :param phone: 手机号
         :type phone: str
         :param dhtms_job_id: 形象制作任务id
@@ -76,7 +76,7 @@ class CreateTrainingJobReq:
         :param is_ondemand_resource: 是否使用按需资源
         :type is_ondemand_resource: bool
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
-        :type supported_service: list[str]
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         
         
@@ -126,10 +126,8 @@ class CreateTrainingJobReq:
     def tag(self):
         r"""Gets the tag of this CreateTrainingJobReq.
 
-        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-
         :return: The tag of this CreateTrainingJobReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         """
         return self._tag
 
@@ -137,10 +135,8 @@ class CreateTrainingJobReq:
     def tag(self, tag):
         r"""Sets the tag of this CreateTrainingJobReq.
 
-        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-
         :param tag: The tag of this CreateTrainingJobReq.
-        :type tag: str
+        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         """
         self._tag = tag
 
@@ -236,10 +232,8 @@ class CreateTrainingJobReq:
     def create_type(self):
         r"""Gets the create_type of this CreateTrainingJobReq.
 
-        任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
-
         :return: The create_type of this CreateTrainingJobReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         """
         return self._create_type
 
@@ -247,10 +241,8 @@ class CreateTrainingJobReq:
     def create_type(self, create_type):
         r"""Sets the create_type of this CreateTrainingJobReq.
 
-        任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
-
         :param create_type: The create_type of this CreateTrainingJobReq.
-        :type create_type: str
+        :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
         """
         self._create_type = create_type
 
@@ -393,7 +385,7 @@ class CreateTrainingJobReq:
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :return: The supported_service of this CreateTrainingJobReq.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         return self._supported_service
 
@@ -404,7 +396,7 @@ class CreateTrainingJobReq:
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :param supported_service: The supported_service of this CreateTrainingJobReq.
-        :type supported_service: list[str]
+        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         """
         self._supported_service = supported_service
 

@@ -49,7 +49,8 @@ class JobDetailResp:
         'diagnoses': 'list[QueryDiagnosisResult]',
         'repair_progress_info': 'JobDetailRespRepairProgressInfo',
         'repair_detail_info': 'QueryRepairDetailResp',
-        'repair_export_status': 'str'
+        'repair_export_status': 'str',
+        'job_kernel_direction': 'str'
     }
 
     attribute_map = {
@@ -87,10 +88,11 @@ class JobDetailResp:
         'diagnoses': 'diagnoses',
         'repair_progress_info': 'repair_progress_info',
         'repair_detail_info': 'repair_detail_info',
-        'repair_export_status': 'repair_export_status'
+        'repair_export_status': 'repair_export_status',
+        'job_kernel_direction': 'job_kernel_direction'
     }
 
-    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None):
+    def __init__(self, id=None, status=None, create_time=None, total_count=None, master_job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_param=None, tuning_params=None, period_order=None, node_info=None, logs=None, network_results=None, precheck_result=None, progress_info=None, migration_object_progress_info=None, metrics=None, compare_result=None, support_import_file_resp=None, instance_features=None, task_version=None, connection_management=None, public_ip_list=None, bind_public_ip_state=None, children=None, is_writable=None, diagnoses=None, repair_progress_info=None, repair_detail_info=None, repair_export_status=None, job_kernel_direction=None):
         r"""JobDetailResp
 
         The model defined in huaweicloud sdk
@@ -151,7 +153,7 @@ class JobDetailResp:
         :type connection_management: :class:`huaweicloudsdkdrs.v5.ConnectionManagement`
         :param public_ip_list: 指定公网IP的信息
         :type public_ip_list: list[:class:`huaweicloudsdkdrs.v5.PublicIpConfig`]
-        :param bind_public_ip_state: 是否成功绑定公网IP
+        :param bind_public_ip_state: 是否成功绑定公网IP 取值：SUCCESS，FAILED
         :type bind_public_ip_state: str
         :param children: 多任务时，存在子任务绑定失败时，返回子任务的信息
         :type children: list[:class:`huaweicloudsdkdrs.v5.FailedToBindEipChildInfo`]
@@ -163,8 +165,10 @@ class JobDetailResp:
         :type repair_progress_info: :class:`huaweicloudsdkdrs.v5.JobDetailRespRepairProgressInfo`
         :param repair_detail_info: 
         :type repair_detail_info: :class:`huaweicloudsdkdrs.v5.QueryRepairDetailResp`
-        :param repair_export_status: 修复SQL导出状态。
+        :param repair_export_status: 修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
         :type repair_export_status: str
+        :param job_kernel_direction: 灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+        :type job_kernel_direction: str
         """
         
         
@@ -204,6 +208,7 @@ class JobDetailResp:
         self._repair_progress_info = None
         self._repair_detail_info = None
         self._repair_export_status = None
+        self._job_kernel_direction = None
         self.discriminator = None
 
         if id is not None:
@@ -276,6 +281,8 @@ class JobDetailResp:
             self.repair_detail_info = repair_detail_info
         if repair_export_status is not None:
             self.repair_export_status = repair_export_status
+        if job_kernel_direction is not None:
+            self.job_kernel_direction = job_kernel_direction
 
     @property
     def id(self):
@@ -837,7 +844,7 @@ class JobDetailResp:
     def bind_public_ip_state(self):
         r"""Gets the bind_public_ip_state of this JobDetailResp.
 
-        是否成功绑定公网IP
+        是否成功绑定公网IP 取值：SUCCESS，FAILED
 
         :return: The bind_public_ip_state of this JobDetailResp.
         :rtype: str
@@ -848,7 +855,7 @@ class JobDetailResp:
     def bind_public_ip_state(self, bind_public_ip_state):
         r"""Sets the bind_public_ip_state of this JobDetailResp.
 
-        是否成功绑定公网IP
+        是否成功绑定公网IP 取值：SUCCESS，FAILED
 
         :param bind_public_ip_state: The bind_public_ip_state of this JobDetailResp.
         :type bind_public_ip_state: str
@@ -961,7 +968,7 @@ class JobDetailResp:
     def repair_export_status(self):
         r"""Gets the repair_export_status of this JobDetailResp.
 
-        修复SQL导出状态。
+        修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
 
         :return: The repair_export_status of this JobDetailResp.
         :rtype: str
@@ -972,12 +979,34 @@ class JobDetailResp:
     def repair_export_status(self, repair_export_status):
         r"""Sets the repair_export_status of this JobDetailResp.
 
-        修复SQL导出状态。
+        修复SQL导出状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
 
         :param repair_export_status: The repair_export_status of this JobDetailResp.
         :type repair_export_status: str
         """
         self._repair_export_status = repair_export_status
+
+    @property
+    def job_kernel_direction(self):
+        r"""Gets the job_kernel_direction of this JobDetailResp.
+
+        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+
+        :return: The job_kernel_direction of this JobDetailResp.
+        :rtype: str
+        """
+        return self._job_kernel_direction
+
+    @job_kernel_direction.setter
+    def job_kernel_direction(self, job_kernel_direction):
+        r"""Sets the job_kernel_direction of this JobDetailResp.
+
+        灾备任务内核方向，up上云，down下云。当任务处于倒换中，与灾备任务方向相反，否则相同。
+
+        :param job_kernel_direction: The job_kernel_direction of this JobDetailResp.
+        :type job_kernel_direction: str
+        """
+        self._job_kernel_direction = job_kernel_direction
 
     def to_dict(self):
         result = {}

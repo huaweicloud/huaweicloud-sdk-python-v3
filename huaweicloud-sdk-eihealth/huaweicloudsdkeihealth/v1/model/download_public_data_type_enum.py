@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DownloadPublicDataTypeEnum:
-
+    """
+    allowed enum values
+    """
+    PUBLIC = "PUBLIC"
+    EXTRANET = "EXTRANET"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

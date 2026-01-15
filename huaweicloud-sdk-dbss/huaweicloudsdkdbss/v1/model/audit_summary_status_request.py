@@ -33,9 +33,9 @@ class AuditSummaryStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param code: 操作码，operType为switch时必输入  - on: 开启  - off: 关闭
+        :param code: 操作码，operType为switch时必输入  - on：开启  - off：关闭
         :type code: str
-        :param oper_type: 操作类型  - switch: 任务开关  - execute: 立即刷新
+        :param oper_type: 操作类型  - switch：任务开关  - execute：立即刷新
         :type oper_type: str
         :param query_begin_time: 查询条件：开始时间
         :type query_begin_time: int
@@ -63,7 +63,7 @@ class AuditSummaryStatusRequest:
     def code(self):
         r"""Gets the code of this AuditSummaryStatusRequest.
 
-        操作码，operType为switch时必输入  - on: 开启  - off: 关闭
+        操作码，operType为switch时必输入  - on：开启  - off：关闭
 
         :return: The code of this AuditSummaryStatusRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class AuditSummaryStatusRequest:
     def code(self, code):
         r"""Sets the code of this AuditSummaryStatusRequest.
 
-        操作码，operType为switch时必输入  - on: 开启  - off: 关闭
+        操作码，operType为switch时必输入  - on：开启  - off：关闭
 
         :param code: The code of this AuditSummaryStatusRequest.
         :type code: str
@@ -85,7 +85,7 @@ class AuditSummaryStatusRequest:
     def oper_type(self):
         r"""Gets the oper_type of this AuditSummaryStatusRequest.
 
-        操作类型  - switch: 任务开关  - execute: 立即刷新
+        操作类型  - switch：任务开关  - execute：立即刷新
 
         :return: The oper_type of this AuditSummaryStatusRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class AuditSummaryStatusRequest:
     def oper_type(self, oper_type):
         r"""Sets the oper_type of this AuditSummaryStatusRequest.
 
-        操作类型  - switch: 任务开关  - execute: 立即刷新
+        操作类型  - switch：任务开关  - execute：立即刷新
 
         :param oper_type: The oper_type of this AuditSummaryStatusRequest.
         :type oper_type: str

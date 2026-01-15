@@ -28,7 +28,7 @@ class DeleteDbEncryptInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果  - success: 成功  - failed: 失败
+        :param result: 操作结果  - success：成功  - failed：失败
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class DeleteDbEncryptInstanceResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this DeleteDbEncryptInstanceResponse.
 
-        操作结果  - success: 成功  - failed: 失败
+        操作结果  - success：成功  - failed：失败
 
         :return: The result of this DeleteDbEncryptInstanceResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteDbEncryptInstanceResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this DeleteDbEncryptInstanceResponse.
 
-        操作结果  - success: 成功  - failed: 失败
+        操作结果  - success：成功  - failed：失败
 
         :param result: The result of this DeleteDbEncryptInstanceResponse.
         :type result: str

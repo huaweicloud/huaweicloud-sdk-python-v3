@@ -15,7 +15,7 @@ class CommitJobReq:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'str',
+        'tag': 'JobTag',
         'description': 'str',
         'sex': 'str',
         'voice_name': 'str',
@@ -43,8 +43,8 @@ class CommitJobReq:
 
         The model defined in huaweicloud sdk
 
-        :param tag: 任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-        :type tag: str
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         :param description: 一段描述信息,会呈现在资产库中。
         :type description: str
         :param sex: 语音性别,是男性声音还是女性声音。 * FEMALE: 女性 * MALE: 男性
@@ -99,10 +99,8 @@ class CommitJobReq:
     def tag(self):
         r"""Gets the tag of this CommitJobReq.
 
-        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-
         :return: The tag of this CommitJobReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         """
         return self._tag
 
@@ -110,10 +108,8 @@ class CommitJobReq:
     def tag(self, tag):
         r"""Sets the tag of this CommitJobReq.
 
-        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
-
         :param tag: The tag of this CommitJobReq.
-        :type tag: str
+        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
         """
         self._tag = tag
 

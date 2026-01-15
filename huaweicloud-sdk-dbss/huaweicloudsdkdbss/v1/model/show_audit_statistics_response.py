@@ -22,7 +22,7 @@ class ShowAuditStatisticsResponse(SdkResponse):
         'medium_risk_total': 'int',
         'project_id': 'str',
         'rule_risk_statistics': 'list[RuleRiskStatisticsDto]',
-        'unsupported_audit_infos': 'UnSupportAuditInfoResponse',
+        'unsupported_audit_infos': 'UnsupportedAuditInfoResponse',
         'update_time': 'int'
     }
 
@@ -55,7 +55,7 @@ class ShowAuditStatisticsResponse(SdkResponse):
         :param rule_risk_statistics: 风险规则统计
         :type rule_risk_statistics: list[:class:`huaweicloudsdkdbss.v1.RuleRiskStatisticsDto`]
         :param unsupported_audit_infos: 
-        :type unsupported_audit_infos: :class:`huaweicloudsdkdbss.v1.UnSupportAuditInfoResponse`
+        :type unsupported_audit_infos: :class:`huaweicloudsdkdbss.v1.UnsupportedAuditInfoResponse`
         :param update_time: 更新时间
         :type update_time: int
         """
@@ -226,7 +226,7 @@ class ShowAuditStatisticsResponse(SdkResponse):
         r"""Gets the unsupported_audit_infos of this ShowAuditStatisticsResponse.
 
         :return: The unsupported_audit_infos of this ShowAuditStatisticsResponse.
-        :rtype: :class:`huaweicloudsdkdbss.v1.UnSupportAuditInfoResponse`
+        :rtype: :class:`huaweicloudsdkdbss.v1.UnsupportedAuditInfoResponse`
         """
         return self._unsupported_audit_infos
 
@@ -235,7 +235,7 @@ class ShowAuditStatisticsResponse(SdkResponse):
         r"""Sets the unsupported_audit_infos of this ShowAuditStatisticsResponse.
 
         :param unsupported_audit_infos: The unsupported_audit_infos of this ShowAuditStatisticsResponse.
-        :type unsupported_audit_infos: :class:`huaweicloudsdkdbss.v1.UnSupportAuditInfoResponse`
+        :type unsupported_audit_infos: :class:`huaweicloudsdkdbss.v1.UnsupportedAuditInfoResponse`
         """
         self._unsupported_audit_infos = unsupported_audit_infos
 

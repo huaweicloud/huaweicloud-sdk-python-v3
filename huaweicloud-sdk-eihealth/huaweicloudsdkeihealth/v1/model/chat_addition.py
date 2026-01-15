@@ -17,7 +17,7 @@ class ChatAddition:
     openapi_types = {
         'workspace_id': 'str',
         'job_id': 'str',
-        'tool_type': 'str',
+        'tool_type': 'ToolType',
         'job_type': 'str',
         'data_path': 'str'
     }
@@ -39,8 +39,8 @@ class ChatAddition:
         :type workspace_id: str
         :param job_id: **参数解释**： 实验问答的作业ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type job_id: str
-        :param tool_type: **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
-        :type tool_type: str
+        :param tool_type: 
+        :type tool_type: :class:`huaweicloudsdkeihealth.v1.ToolType`
         :param job_type: **参数解释**： 作业类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type job_type: str
         :param data_path: **参数解释**： 深度探究生成报告存储路径。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
@@ -115,10 +115,8 @@ class ChatAddition:
     def tool_type(self):
         r"""Gets the tool_type of this ChatAddition.
 
-        **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
-
         :return: The tool_type of this ChatAddition.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ToolType`
         """
         return self._tool_type
 
@@ -126,10 +124,8 @@ class ChatAddition:
     def tool_type(self, tool_type):
         r"""Sets the tool_type of this ChatAddition.
 
-        **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
-
         :param tool_type: The tool_type of this ChatAddition.
-        :type tool_type: str
+        :type tool_type: :class:`huaweicloudsdkeihealth.v1.ToolType`
         """
         self._tool_type = tool_type
 

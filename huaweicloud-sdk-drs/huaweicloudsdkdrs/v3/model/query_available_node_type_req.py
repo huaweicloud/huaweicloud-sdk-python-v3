@@ -37,11 +37,11 @@ class QueryAvailableNodeTypeReq:
 
         :param engine_type: 引擎类型
         :type engine_type: str
-        :param db_use_type: 迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        :param db_use_type: 迁移场景 migration实时迁移，sync实时同步，dataGuard实时灾备，subscription实时订阅，replay流量回放
         :type db_use_type: str
         :param job_direction: 迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
         :type job_direction: str
-        :param node_type: 规格类型。
+        :param node_type: 规格类型。 micro：极小，small：小，medium：中，high：高，xlarge：超高，2xlarge：极高
         :type node_type: str
         :param multi_write: 是否是双主灾备，不填默认为false
         :type multi_write: str
@@ -89,7 +89,7 @@ class QueryAvailableNodeTypeReq:
     def db_use_type(self):
         r"""Gets the db_use_type of this QueryAvailableNodeTypeReq.
 
-        迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        迁移场景 migration实时迁移，sync实时同步，dataGuard实时灾备，subscription实时订阅，replay流量回放
 
         :return: The db_use_type of this QueryAvailableNodeTypeReq.
         :rtype: str
@@ -100,7 +100,7 @@ class QueryAvailableNodeTypeReq:
     def db_use_type(self, db_use_type):
         r"""Sets the db_use_type of this QueryAvailableNodeTypeReq.
 
-        迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
+        迁移场景 migration实时迁移，sync实时同步，dataGuard实时灾备，subscription实时订阅，replay流量回放
 
         :param db_use_type: The db_use_type of this QueryAvailableNodeTypeReq.
         :type db_use_type: str
@@ -133,7 +133,7 @@ class QueryAvailableNodeTypeReq:
     def node_type(self):
         r"""Gets the node_type of this QueryAvailableNodeTypeReq.
 
-        规格类型。
+        规格类型。 micro：极小，small：小，medium：中，high：高，xlarge：超高，2xlarge：极高
 
         :return: The node_type of this QueryAvailableNodeTypeReq.
         :rtype: str
@@ -144,7 +144,7 @@ class QueryAvailableNodeTypeReq:
     def node_type(self, node_type):
         r"""Sets the node_type of this QueryAvailableNodeTypeReq.
 
-        规格类型。
+        规格类型。 micro：极小，small：小，medium：中，high：高，xlarge：超高，2xlarge：极高
 
         :param node_type: The node_type of this QueryAvailableNodeTypeReq.
         :type node_type: str

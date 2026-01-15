@@ -15,7 +15,7 @@ class ApplyWorkspaceReq:
     sensitive_list = []
 
     openapi_types = {
-        'ad_domains': 'AdDomain',
+        'ad_domains': 'ApplyWorkspaceAdDomain',
         'enterprise_id': 'str',
         'vpc_id': 'str',
         'subnet_ids': 'list[Subnet]',
@@ -44,7 +44,7 @@ class ApplyWorkspaceReq:
         The model defined in huaweicloud sdk
 
         :param ad_domains: 
-        :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
+        :type ad_domains: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceAdDomain`
         :param enterprise_id: 企业ID。 企业ID是您在云桌面服务的唯一标识，终端用户登录时需要填写企业ID，若不自定义设置企业ID，系统将自动生成您的企业ID。格式为由半角数字、字母、_-组成，长度范围小于等于32个字符。
         :type enterprise_id: str
         :param vpc_id: VPC ID。
@@ -99,7 +99,7 @@ class ApplyWorkspaceReq:
         r"""Gets the ad_domains of this ApplyWorkspaceReq.
 
         :return: The ad_domains of this ApplyWorkspaceReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomain`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceAdDomain`
         """
         return self._ad_domains
 
@@ -108,7 +108,7 @@ class ApplyWorkspaceReq:
         r"""Sets the ad_domains of this ApplyWorkspaceReq.
 
         :param ad_domains: The ad_domains of this ApplyWorkspaceReq.
-        :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
+        :type ad_domains: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceAdDomain`
         """
         self._ad_domains = ad_domains
 

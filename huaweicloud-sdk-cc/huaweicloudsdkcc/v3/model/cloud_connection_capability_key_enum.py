@@ -4,7 +4,24 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CloudConnectionCapabilityKeyEnum:
-
+    """
+    allowed enum values
+    """
+    V2 = "v2"
+    V3 = "v3"
+    BILLING_MODE_PERIOD_REDUCE = "billing_mode_period_reduce"
+    BILLING_MODE_DEMAND = "billing_mode_demand"
+    BWP95 = "bwp95"
+    BWP95AVG = "bwp95Avg"
+    NETWORK_QUALITY = "network-quality"
+    ER = "er"
+    DOMAIN_BANDWIDTH = "domain_bandwidth"
+    IPV6 = "ipv6"
+    IPV6_SUPPORT_REGIONS = "ipv6_support_regions"
+    ENTERPRISE_CLOUD_CONNECTION_IS_SUPPORT = "enterprise-cloud-connection.is-support"
+    ENTERPRISE_CLOUD_CONNECTION_SUPPORT_SITES = "enterprise-cloud-connection.support-sites"
+    ENTERPRISE_CLOUD_CONNECTION_SEGMENT_IS_SUPPORT = "enterprise-cloud-connection-segment.is-support"
+    ENTERPRISE_CLOUD_CONNECTION_DC_ATTACHMENT_IS_SUPPORT = "enterprise-cloud-connection-dc-attachment.is-support"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

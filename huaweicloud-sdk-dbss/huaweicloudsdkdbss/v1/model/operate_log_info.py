@@ -47,7 +47,7 @@ class OperateLogInfo:
         :type user: str
         :param time: 该条记录发生的时间，格式为时间戳。
         :type time: str
-        :param action: 该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+        :param action: 该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download：下载
         :type action: str
         :param function: 该条记录的功能类型
         :type function: str
@@ -55,7 +55,7 @@ class OperateLogInfo:
         :type name: str
         :param description: 该条记录具体的描述
         :type description: str
-        :param result: 该条记录对应用户执行的结果 - success: 成功 - fail: 失败
+        :param result: 该条记录对应用户执行的结果 - success：成功 - fail：失败
         :type result: str
         """
         
@@ -158,7 +158,7 @@ class OperateLogInfo:
     def action(self):
         r"""Gets the action of this OperateLogInfo.
 
-        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download：下载
 
         :return: The action of this OperateLogInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class OperateLogInfo:
     def action(self, action):
         r"""Sets the action of this OperateLogInfo.
 
-        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download: 下载
+        该条记录的操作类型 - create：创建 - update：更新 - delete：删除 - download：下载
 
         :param action: The action of this OperateLogInfo.
         :type action: str
@@ -246,7 +246,7 @@ class OperateLogInfo:
     def result(self):
         r"""Gets the result of this OperateLogInfo.
 
-        该条记录对应用户执行的结果 - success: 成功 - fail: 失败
+        该条记录对应用户执行的结果 - success：成功 - fail：失败
 
         :return: The result of this OperateLogInfo.
         :rtype: str
@@ -257,7 +257,7 @@ class OperateLogInfo:
     def result(self, result):
         r"""Sets the result of this OperateLogInfo.
 
-        该条记录对应用户执行的结果 - success: 成功 - fail: 失败
+        该条记录对应用户执行的结果 - success：成功 - fail：失败
 
         :param result: The result of this OperateLogInfo.
         :type result: str

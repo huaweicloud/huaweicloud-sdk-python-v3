@@ -33,7 +33,7 @@ class ShowDomainDetectionRequest:
 
         :param zone_id: **参数解释：** 域名ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type zone_id: str
-        :param type: 待诊断记录集的类型。 取值范围：CNAME、TXT、MX。
+        :param type: **参数解释：** 待诊断记录集的类型。 **取值范围：** - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。
         :type type: str
         :param domain_name: 待诊断记录集的名称。
         :type domain_name: str
@@ -77,7 +77,7 @@ class ShowDomainDetectionRequest:
     def type(self):
         r"""Gets the type of this ShowDomainDetectionRequest.
 
-        待诊断记录集的类型。 取值范围：CNAME、TXT、MX。
+        **参数解释：** 待诊断记录集的类型。 **取值范围：** - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。
 
         :return: The type of this ShowDomainDetectionRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowDomainDetectionRequest:
     def type(self, type):
         r"""Sets the type of this ShowDomainDetectionRequest.
 
-        待诊断记录集的类型。 取值范围：CNAME、TXT、MX。
+        **参数解释：** 待诊断记录集的类型。 **取值范围：** - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。
 
         :param type: The type of this ShowDomainDetectionRequest.
         :type type: str

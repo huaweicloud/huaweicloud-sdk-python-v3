@@ -15,7 +15,7 @@ class UpdateScheduleTaskReq:
     sensitive_list = []
 
     openapi_types = {
-        'scheduled_type': 'str',
+        'scheduled_type': 'ScheduledTypeEnum',
         'day_interval': 'int',
         'week_list': 'str',
         'month_list': 'str',
@@ -25,7 +25,7 @@ class UpdateScheduleTaskReq:
         'scheduled_time': 'str',
         'expire_time': 'datetime',
         'task_name': 'str',
-        'task_type': 'str',
+        'task_type': 'ScheduleTaskTypeEnum',
         'schedule_task_policy': 'ScheduleTaskPolicy',
         'description': 'str',
         'is_enable': 'bool',
@@ -55,8 +55,8 @@ class UpdateScheduleTaskReq:
 
         The model defined in huaweicloud sdk
 
-        :param scheduled_type: 执行周期： * &#x60;FIXED_TIME&#x60; - 指定时间 * &#x60;DAY&#x60; - 按天 * &#x60;WEEK&#x60; - 按周 * &#x60;MONTH&#x60; - 按月
-        :type scheduled_type: str
+        :param scheduled_type: 
+        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         :param day_interval: 周期按天时：按x天间隔执行。
         :type day_interval: int
         :param week_list: 周期按周时：取值1~7，英文逗号分隔，如1,2,7。
@@ -75,8 +75,8 @@ class UpdateScheduleTaskReq:
         :type expire_time: datetime
         :param task_name: 任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
         :type task_name: str
-        :param task_type: 定时任务类型： * &#x60;RESTART_SERVER&#x60; - 定时重启服务器 * &#x60;START_SERVER&#x60; - 定时开机 * &#x60;STOP_SERVER&#x60; - 定时关机 * &#x60;REINSTALL_OS&#x60; - 定时重装操作系统
-        :type task_type: str
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         :param schedule_task_policy: 
         :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
         :param description: 任务描述。
@@ -141,10 +141,8 @@ class UpdateScheduleTaskReq:
     def scheduled_type(self):
         r"""Gets the scheduled_type of this UpdateScheduleTaskReq.
 
-        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
-
         :return: The scheduled_type of this UpdateScheduleTaskReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         """
         return self._scheduled_type
 
@@ -152,10 +150,8 @@ class UpdateScheduleTaskReq:
     def scheduled_type(self, scheduled_type):
         r"""Sets the scheduled_type of this UpdateScheduleTaskReq.
 
-        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
-
         :param scheduled_type: The scheduled_type of this UpdateScheduleTaskReq.
-        :type scheduled_type: str
+        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         """
         self._scheduled_type = scheduled_type
 
@@ -361,10 +357,8 @@ class UpdateScheduleTaskReq:
     def task_type(self):
         r"""Gets the task_type of this UpdateScheduleTaskReq.
 
-        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
-
         :return: The task_type of this UpdateScheduleTaskReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         """
         return self._task_type
 
@@ -372,10 +366,8 @@ class UpdateScheduleTaskReq:
     def task_type(self, task_type):
         r"""Sets the task_type of this UpdateScheduleTaskReq.
 
-        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
-
         :param task_type: The task_type of this UpdateScheduleTaskReq.
-        :type task_type: str
+        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         """
         self._task_type = task_type
 

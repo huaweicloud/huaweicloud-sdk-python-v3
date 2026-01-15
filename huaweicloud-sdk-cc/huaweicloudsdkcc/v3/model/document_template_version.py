@@ -15,7 +15,7 @@ class DocumentTemplateVersion:
     sensitive_list = []
 
     openapi_types = {
-        'document_template_version': 'str'
+        'document_template_version': 'DocumentTemplateVersionEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class DocumentTemplateVersion:
 
         The model defined in huaweicloud sdk
 
-        :param document_template_version: 文档模板版本。 - 2022.08.30 (2022.08.30)
-        :type document_template_version: str
+        :param document_template_version: 
+        :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
         """
         
         
@@ -42,10 +42,8 @@ class DocumentTemplateVersion:
     def document_template_version(self):
         r"""Gets the document_template_version of this DocumentTemplateVersion.
 
-        文档模板版本。 - 2022.08.30 (2022.08.30)
-
         :return: The document_template_version of this DocumentTemplateVersion.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
         """
         return self._document_template_version
 
@@ -53,10 +51,8 @@ class DocumentTemplateVersion:
     def document_template_version(self, document_template_version):
         r"""Sets the document_template_version of this DocumentTemplateVersion.
 
-        文档模板版本。 - 2022.08.30 (2022.08.30)
-
         :param document_template_version: The document_template_version of this DocumentTemplateVersion.
-        :type document_template_version: str
+        :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
         """
         self._document_template_version = document_template_version
 

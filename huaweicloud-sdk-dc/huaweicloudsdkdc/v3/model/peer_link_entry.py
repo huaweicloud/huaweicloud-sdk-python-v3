@@ -23,7 +23,7 @@ class PeerLinkEntry:
         'global_dc_gateway_id': 'str',
         'bandwidth_info': 'BandWidthInfo',
         'peer_site': 'PeerSite',
-        'status': 'str',
+        'status': 'PeerLinkStatus',
         'created_time': 'datetime',
         'updated_time': 'datetime',
         'create_owner': 'datetime',
@@ -67,8 +67,8 @@ class PeerLinkEntry:
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandWidthInfo`
         :param peer_site: 
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSite`
-        :param status: 关联连接状态， - PENDING_CREATE (创建中) - PENDING_UPDATE (更新中) - ACTIVE (可用状态) - ERROR (失败状态)
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdc.v3.PeerLinkStatus`
         :param created_time: 创建时间。
         :type created_time: datetime
         :param updated_time: 更新时间。
@@ -295,10 +295,8 @@ class PeerLinkEntry:
     def status(self):
         r"""Gets the status of this PeerLinkEntry.
 
-        关联连接状态， - PENDING_CREATE (创建中) - PENDING_UPDATE (更新中) - ACTIVE (可用状态) - ERROR (失败状态)
-
         :return: The status of this PeerLinkEntry.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdc.v3.PeerLinkStatus`
         """
         return self._status
 
@@ -306,10 +304,8 @@ class PeerLinkEntry:
     def status(self, status):
         r"""Sets the status of this PeerLinkEntry.
 
-        关联连接状态， - PENDING_CREATE (创建中) - PENDING_UPDATE (更新中) - ACTIVE (可用状态) - ERROR (失败状态)
-
         :param status: The status of this PeerLinkEntry.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdc.v3.PeerLinkStatus`
         """
         self._status = status
 

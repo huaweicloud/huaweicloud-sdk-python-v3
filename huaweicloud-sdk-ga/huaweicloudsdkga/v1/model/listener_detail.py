@@ -18,10 +18,10 @@ class ListenerDetail:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'protocol': 'str',
-        'status': 'str',
+        'protocol': 'ListenerProtocol',
+        'status': 'ConfigStatus',
         'port_ranges': 'list[PortRange]',
-        'client_affinity': 'str',
+        'client_affinity': 'ClientAffinity',
         'accelerator_id': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -57,14 +57,14 @@ class ListenerDetail:
         :type name: str
         :param description: 监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：&lt;&gt;。
         :type description: str
-        :param protocol: 监听的网络传输协议类型。 取值范围：TCP、UDP
-        :type protocol: str
-        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-        :type status: str
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
+        :param status: 
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         :param port_ranges: 监听端口范围列表。
         :type port_ranges: list[:class:`huaweicloudsdkga.v1.PortRange`]
-        :param client_affinity: 客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-        :type client_affinity: str
+        :param client_affinity: 
+        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
         :param accelerator_id: 全球加速实例ID。
         :type accelerator_id: str
         :param created_at: 创建时间。
@@ -193,10 +193,8 @@ class ListenerDetail:
     def protocol(self):
         r"""Gets the protocol of this ListenerDetail.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :return: The protocol of this ListenerDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
         """
         return self._protocol
 
@@ -204,10 +202,8 @@ class ListenerDetail:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListenerDetail.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :param protocol: The protocol of this ListenerDetail.
-        :type protocol: str
+        :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
         """
         self._protocol = protocol
 
@@ -215,10 +211,8 @@ class ListenerDetail:
     def status(self):
         r"""Gets the status of this ListenerDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :return: The status of this ListenerDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         return self._status
 
@@ -226,10 +220,8 @@ class ListenerDetail:
     def status(self, status):
         r"""Sets the status of this ListenerDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :param status: The status of this ListenerDetail.
-        :type status: str
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         self._status = status
 
@@ -259,10 +251,8 @@ class ListenerDetail:
     def client_affinity(self):
         r"""Gets the client_affinity of this ListenerDetail.
 
-        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-
         :return: The client_affinity of this ListenerDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
         return self._client_affinity
 
@@ -270,10 +260,8 @@ class ListenerDetail:
     def client_affinity(self, client_affinity):
         r"""Sets the client_affinity of this ListenerDetail.
 
-        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-
         :param client_affinity: The client_affinity of this ListenerDetail.
-        :type client_affinity: str
+        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
         self._client_affinity = client_affinity
 

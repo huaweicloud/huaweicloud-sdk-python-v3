@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpgradeWorkflowTaskStatus:
-
+    """
+    allowed enum values
+    """
+    INIT = "Init"
+    QUEUING = "Queuing"
+    RUNNING = "Running"
+    SUCCESS = "Success"
+    FAILED = "Failed"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

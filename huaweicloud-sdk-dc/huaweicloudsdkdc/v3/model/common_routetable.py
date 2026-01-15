@@ -22,7 +22,7 @@ class CommonRoutetable:
         'nexthop': 'str',
         'obtain_mode': 'str',
         'status': 'str',
-        'address_family': 'str',
+        'address_family': 'AddressFamily',
         'description': 'str',
         'type': 'str'
     }
@@ -59,8 +59,8 @@ class CommonRoutetable:
         :type obtain_mode: str
         :param status: 路由状态: - ACTIVE: 下发正常 - ERROR: 下发失败 - PENDING_CREATE: 待下发
         :type status: str
-        :param address_family: 地址族类型: - ipv4: ipv4 - ipv6: ipv6
-        :type address_family: str
+        :param address_family: 
+        :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
         :param description: 路由描述
         :type description: str
         :param type: 下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
@@ -252,10 +252,8 @@ class CommonRoutetable:
     def address_family(self):
         r"""Gets the address_family of this CommonRoutetable.
 
-        地址族类型: - ipv4: ipv4 - ipv6: ipv6
-
         :return: The address_family of this CommonRoutetable.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdc.v3.AddressFamily`
         """
         return self._address_family
 
@@ -263,10 +261,8 @@ class CommonRoutetable:
     def address_family(self, address_family):
         r"""Sets the address_family of this CommonRoutetable.
 
-        地址族类型: - ipv4: ipv4 - ipv6: ipv6
-
         :param address_family: The address_family of this CommonRoutetable.
-        :type address_family: str
+        :type address_family: :class:`huaweicloudsdkdc.v3.AddressFamily`
         """
         self._address_family = address_family
 

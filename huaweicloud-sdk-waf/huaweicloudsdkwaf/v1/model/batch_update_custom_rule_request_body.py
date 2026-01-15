@@ -15,9 +15,7 @@ class BatchUpdateCustomRuleRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'name': 'str',
-        'policyid': 'str',
         'description': 'str',
         'status': 'int',
         'conditions': 'list[CustomRuleConditions]',
@@ -32,9 +30,7 @@ class BatchUpdateCustomRuleRequestBody:
     }
 
     attribute_map = {
-        'id': 'id',
         'name': 'name',
-        'policyid': 'policyid',
         'description': 'description',
         'status': 'status',
         'conditions': 'conditions',
@@ -48,17 +44,13 @@ class BatchUpdateCustomRuleRequestBody:
         'policy_rule_ids': 'policy_rule_ids'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, time=None, start=None, terminal=None, producer=None, policy_rule_ids=None):
+    def __init__(self, name=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, time=None, start=None, terminal=None, producer=None, policy_rule_ids=None):
         r"""BatchUpdateCustomRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则id
-        :type id: str
         :param name: 规则名称
         :type name: str
-        :param policyid: 策略id
-        :type policyid: str
         :param description: 规则描述
         :type description: str
         :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
@@ -85,9 +77,7 @@ class BatchUpdateCustomRuleRequestBody:
         
         
 
-        self._id = None
         self._name = None
-        self._policyid = None
         self._description = None
         self._status = None
         self._conditions = None
@@ -101,12 +91,8 @@ class BatchUpdateCustomRuleRequestBody:
         self._policy_rule_ids = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
         if name is not None:
             self.name = name
-        if policyid is not None:
-            self.policyid = policyid
         if description is not None:
             self.description = description
         if status is not None:
@@ -127,30 +113,7 @@ class BatchUpdateCustomRuleRequestBody:
             self.terminal = terminal
         if producer is not None:
             self.producer = producer
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
-
-    @property
-    def id(self):
-        r"""Gets the id of this BatchUpdateCustomRuleRequestBody.
-
-        规则id
-
-        :return: The id of this BatchUpdateCustomRuleRequestBody.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this BatchUpdateCustomRuleRequestBody.
-
-        规则id
-
-        :param id: The id of this BatchUpdateCustomRuleRequestBody.
-        :type id: str
-        """
-        self._id = id
+        self.policy_rule_ids = policy_rule_ids
 
     @property
     def name(self):
@@ -173,28 +136,6 @@ class BatchUpdateCustomRuleRequestBody:
         :type name: str
         """
         self._name = name
-
-    @property
-    def policyid(self):
-        r"""Gets the policyid of this BatchUpdateCustomRuleRequestBody.
-
-        策略id
-
-        :return: The policyid of this BatchUpdateCustomRuleRequestBody.
-        :rtype: str
-        """
-        return self._policyid
-
-    @policyid.setter
-    def policyid(self, policyid):
-        r"""Sets the policyid of this BatchUpdateCustomRuleRequestBody.
-
-        策略id
-
-        :param policyid: The policyid of this BatchUpdateCustomRuleRequestBody.
-        :type policyid: str
-        """
-        self._policyid = policyid
 
     @property
     def description(self):

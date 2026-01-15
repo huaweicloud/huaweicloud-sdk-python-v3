@@ -18,23 +18,23 @@ class CreateServerGroupReq:
         'name': 'str',
         'image_id': 'str',
         'image_product_id': 'str',
-        'image_type': 'str',
-        'os_type': 'str',
+        'image_type': 'ImageTypeEnum',
+        'os_type': 'OsTypeEnum',
         'description': 'str',
         'route_policy': 'RoutePolicy',
         'product_id': 'str',
         'flavor_id': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
-        'system_disk_type': 'str',
+        'system_disk_type': 'VolumeType',
         'system_disk_size': 'int',
         'ou_name': 'str',
         'cluster_id': 'str',
         'availability_zone': 'str',
         'ip_virtual': 'IpVirtual',
         'is_vdi': 'bool',
-        'app_type': 'str',
-        'extra_session_type': 'str',
+        'app_type': 'AppTypeEnum',
+        'extra_session_type': 'ExtraSessionTypeEnum',
         'extra_session_size': 'int',
         'tags': 'list[TmsTag]',
         'enterprise_project_id': 'str',
@@ -81,10 +81,10 @@ class CreateServerGroupReq:
         :type image_id: str
         :param image_product_id: 服务器组的镜像产品ID，当镜像为云市场镜像时，该字段必填。
         :type image_product_id: str
-        :param image_type: 镜像类型： * &#x60;gold&#x60; - 云市场镜像 * &#x60;public&#x60; - 公共镜像 * &#x60;private&#x60; - 私有镜像 * &#x60;shared&#x60; - 共享镜像 * &#x60;other&#x60; - 其他
-        :type image_type: str
-        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
-        :type os_type: str
+        :param image_type: 
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
+        :param os_type: 
+        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         :param description: 服务器组描述。
         :type description: str
         :param route_policy: 
@@ -97,8 +97,8 @@ class CreateServerGroupReq:
         :type vpc_id: str
         :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
-        :param system_disk_type: 磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * &#x60;ESSD&#x60; - 极速型SSD * &#x60;SSD&#x60; - 超高IO * &#x60;GPSSD&#x60; - 通用型SSD * &#x60;SAS&#x60; - 高IO * &#x60;SATA&#x60; - 普通IO
-        :type system_disk_type: str
+        :param system_disk_type: 
+        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
         :param ou_name: 默认组织名称。
@@ -111,10 +111,10 @@ class CreateServerGroupReq:
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
         :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
-        :param app_type: 服务器组应用类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
-        :type app_type: str
-        :param extra_session_type: 付费会话类型 * &#x60;GPU&#x60; - GPU规格会话 * &#x60;CPU&#x60; - 普通CPU规格会话
-        :type extra_session_type: str
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :param extra_session_type: 
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
         :param extra_session_size: 付费会话数，单位/个。
         :type extra_session_size: int
         :param tags: 标签信息，最多包含20个key,不允许重复。
@@ -268,10 +268,8 @@ class CreateServerGroupReq:
     def image_type(self):
         r"""Gets the image_type of this CreateServerGroupReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :return: The image_type of this CreateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         return self._image_type
 
@@ -279,10 +277,8 @@ class CreateServerGroupReq:
     def image_type(self, image_type):
         r"""Sets the image_type of this CreateServerGroupReq.
 
-        镜像类型： * `gold` - 云市场镜像 * `public` - 公共镜像 * `private` - 私有镜像 * `shared` - 共享镜像 * `other` - 其他
-
         :param image_type: The image_type of this CreateServerGroupReq.
-        :type image_type: str
+        :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
         """
         self._image_type = image_type
 
@@ -290,10 +286,8 @@ class CreateServerGroupReq:
     def os_type(self):
         r"""Gets the os_type of this CreateServerGroupReq.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
-
         :return: The os_type of this CreateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         """
         return self._os_type
 
@@ -301,10 +295,8 @@ class CreateServerGroupReq:
     def os_type(self, os_type):
         r"""Sets the os_type of this CreateServerGroupReq.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
-
         :param os_type: The os_type of this CreateServerGroupReq.
-        :type os_type: str
+        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
         """
         self._os_type = os_type
 
@@ -440,10 +432,8 @@ class CreateServerGroupReq:
     def system_disk_type(self):
         r"""Gets the system_disk_type of this CreateServerGroupReq.
 
-        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
-
         :return: The system_disk_type of this CreateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         """
         return self._system_disk_type
 
@@ -451,10 +441,8 @@ class CreateServerGroupReq:
     def system_disk_type(self, system_disk_type):
         r"""Sets the system_disk_type of this CreateServerGroupReq.
 
-        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
-
         :param system_disk_type: The system_disk_type of this CreateServerGroupReq.
-        :type system_disk_type: str
+        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
         """
         self._system_disk_type = system_disk_type
 
@@ -590,10 +578,8 @@ class CreateServerGroupReq:
     def app_type(self):
         r"""Gets the app_type of this CreateServerGroupReq.
 
-        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
-
         :return: The app_type of this CreateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         return self._app_type
 
@@ -601,10 +587,8 @@ class CreateServerGroupReq:
     def app_type(self, app_type):
         r"""Sets the app_type of this CreateServerGroupReq.
 
-        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
-
         :param app_type: The app_type of this CreateServerGroupReq.
-        :type app_type: str
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         self._app_type = app_type
 
@@ -612,10 +596,8 @@ class CreateServerGroupReq:
     def extra_session_type(self):
         r"""Gets the extra_session_type of this CreateServerGroupReq.
 
-        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
-
         :return: The extra_session_type of this CreateServerGroupReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
         """
         return self._extra_session_type
 
@@ -623,10 +605,8 @@ class CreateServerGroupReq:
     def extra_session_type(self, extra_session_type):
         r"""Sets the extra_session_type of this CreateServerGroupReq.
 
-        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
-
         :param extra_session_type: The extra_session_type of this CreateServerGroupReq.
-        :type extra_session_type: str
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
         """
         self._extra_session_type = extra_session_type
 

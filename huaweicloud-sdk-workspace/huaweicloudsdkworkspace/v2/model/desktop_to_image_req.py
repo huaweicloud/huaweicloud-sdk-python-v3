@@ -21,6 +21,7 @@ class DesktopToImageReq:
         'execute_sysprep': 'bool',
         'image_tags': 'list[TagKeyValue]',
         'enterprise_project_id': 'str',
+        'is_clear_data': 'bool',
         'max_ram': 'str',
         'min_ram': 'str'
     }
@@ -32,11 +33,12 @@ class DesktopToImageReq:
         'execute_sysprep': 'execute_sysprep',
         'image_tags': 'image_tags',
         'enterprise_project_id': 'enterprise_project_id',
+        'is_clear_data': 'is_clear_data',
         'max_ram': 'max_ram',
         'min_ram': 'min_ram'
     }
 
-    def __init__(self, image_name=None, image_description=None, desktop_id=None, execute_sysprep=None, image_tags=None, enterprise_project_id=None, max_ram=None, min_ram=None):
+    def __init__(self, image_name=None, image_description=None, desktop_id=None, execute_sysprep=None, image_tags=None, enterprise_project_id=None, is_clear_data=None, max_ram=None, min_ram=None):
         r"""DesktopToImageReq
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class DesktopToImageReq:
         :type image_tags: list[:class:`huaweicloudsdkworkspace.v2.TagKeyValue`]
         :param enterprise_project_id: 表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。
         :type enterprise_project_id: str
+        :param is_clear_data: 当不封装镜像时,用此字段来区分是否删除用户信息，默认为false。不删除用户信息：false，删除用户信息：true。
+        :type is_clear_data: bool
         :param max_ram: 表示镜像支持的最大内存，单位为MB。
         :type max_ram: str
         :param min_ram: 表示镜像支持的最小内存，单位为MB，默认为0，表示不受限制。
@@ -67,6 +71,7 @@ class DesktopToImageReq:
         self._execute_sysprep = None
         self._image_tags = None
         self._enterprise_project_id = None
+        self._is_clear_data = None
         self._max_ram = None
         self._min_ram = None
         self.discriminator = None
@@ -81,6 +86,8 @@ class DesktopToImageReq:
             self.image_tags = image_tags
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if is_clear_data is not None:
+            self.is_clear_data = is_clear_data
         if max_ram is not None:
             self.max_ram = max_ram
         if min_ram is not None:
@@ -217,6 +224,28 @@ class DesktopToImageReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_clear_data(self):
+        r"""Gets the is_clear_data of this DesktopToImageReq.
+
+        当不封装镜像时,用此字段来区分是否删除用户信息，默认为false。不删除用户信息：false，删除用户信息：true。
+
+        :return: The is_clear_data of this DesktopToImageReq.
+        :rtype: bool
+        """
+        return self._is_clear_data
+
+    @is_clear_data.setter
+    def is_clear_data(self, is_clear_data):
+        r"""Sets the is_clear_data of this DesktopToImageReq.
+
+        当不封装镜像时,用此字段来区分是否删除用户信息，默认为false。不删除用户信息：false，删除用户信息：true。
+
+        :param is_clear_data: The is_clear_data of this DesktopToImageReq.
+        :type is_clear_data: bool
+        """
+        self._is_clear_data = is_clear_data
 
     @property
     def max_ram(self):

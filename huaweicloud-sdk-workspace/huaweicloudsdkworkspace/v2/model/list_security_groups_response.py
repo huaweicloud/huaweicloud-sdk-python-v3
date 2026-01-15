@@ -16,7 +16,7 @@ class ListSecurityGroupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'security_groups': 'list[SecurityGroup]'
+        'security_groups': 'list[SimpleSecurityGroupsInfo]'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param security_groups: 安全组列表。
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SimpleSecurityGroupsInfo`]
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         安全组列表。
 
         :return: The security_groups of this ListSecurityGroupsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SimpleSecurityGroupsInfo`]
         """
         return self._security_groups
 
@@ -58,7 +58,7 @@ class ListSecurityGroupsResponse(SdkResponse):
         安全组列表。
 
         :param security_groups: The security_groups of this ListSecurityGroupsResponse.
-        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SimpleSecurityGroupsInfo`]
         """
         self._security_groups = security_groups
 

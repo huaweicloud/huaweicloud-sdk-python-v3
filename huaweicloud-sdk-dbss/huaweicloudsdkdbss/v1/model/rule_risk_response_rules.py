@@ -49,13 +49,13 @@ class RuleRiskResponseRules:
         :type type: str
         :param feature: 风险规则特征
         :type feature: str
-        :param status: 风险规则状态。 - ON: 开启 - OFF: 关闭
+        :param status: 风险规则状态。 - ON：开启 - OFF：关闭
         :type status: str
         :param rank: 风险规则优先级。数字越小优先级越高。
         :type rank: int
         :param risk_level: 风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
         :type risk_level: str
-        :param rule_type: 规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
+        :param rule_type: 规则类型 - SYSTEM：系统  - CUSTOMIZE：自定义
         :type rule_type: str
         """
         
@@ -176,7 +176,7 @@ class RuleRiskResponseRules:
     def status(self):
         r"""Gets the status of this RuleRiskResponseRules.
 
-        风险规则状态。 - ON: 开启 - OFF: 关闭
+        风险规则状态。 - ON：开启 - OFF：关闭
 
         :return: The status of this RuleRiskResponseRules.
         :rtype: str
@@ -187,7 +187,7 @@ class RuleRiskResponseRules:
     def status(self, status):
         r"""Sets the status of this RuleRiskResponseRules.
 
-        风险规则状态。 - ON: 开启 - OFF: 关闭
+        风险规则状态。 - ON：开启 - OFF：关闭
 
         :param status: The status of this RuleRiskResponseRules.
         :type status: str
@@ -242,7 +242,7 @@ class RuleRiskResponseRules:
     def rule_type(self):
         r"""Gets the rule_type of this RuleRiskResponseRules.
 
-        规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
+        规则类型 - SYSTEM：系统  - CUSTOMIZE：自定义
 
         :return: The rule_type of this RuleRiskResponseRules.
         :rtype: str
@@ -253,7 +253,7 @@ class RuleRiskResponseRules:
     def rule_type(self, rule_type):
         r"""Sets the rule_type of this RuleRiskResponseRules.
 
-        规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
+        规则类型 - SYSTEM：系统  - CUSTOMIZE：自定义
 
         :param rule_type: The rule_type of this RuleRiskResponseRules.
         :type rule_type: str

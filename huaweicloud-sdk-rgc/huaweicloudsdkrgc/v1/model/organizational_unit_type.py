@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class OrganizationalUnitType:
-
+    """
+    allowed enum values
+    """
+    CORE = "CORE"
+    CUSTOM = "CUSTOM"
+    ROOT = "ROOT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

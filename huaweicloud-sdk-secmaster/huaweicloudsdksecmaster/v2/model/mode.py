@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Mode:
-
+    """
+    allowed enum values
+    """
+    COUNT = "COUNT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -18,8 +18,8 @@ class CreateRobotReq:
         'name': 'str',
         'app_type': 'int',
         'room_id': 'str',
-        'robot_type': 'str',
-        'language': 'str',
+        'robot_type': 'RobotTypeEnum',
+        'language': 'LanguageEnum',
         'tail_silence_time': 'int',
         'enable_question_audit': 'bool',
         'huawei_ei_cbs': 'HuaweiEiCbs',
@@ -57,10 +57,10 @@ class CreateRobotReq:
         :type app_type: int
         :param room_id: 智能交互对话房间ID。
         :type room_id: str
-        :param robot_type: 交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-        :type robot_type: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param robot_type: 
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param tail_silence_time: 语音识别后端点静音时长默认500ms
         :type tail_silence_time: int
         :param enable_question_audit: 提问文本审核开关
@@ -191,10 +191,8 @@ class CreateRobotReq:
     def robot_type(self):
         r"""Gets the robot_type of this CreateRobotReq.
 
-        交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-
         :return: The robot_type of this CreateRobotReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         """
         return self._robot_type
 
@@ -202,10 +200,8 @@ class CreateRobotReq:
     def robot_type(self, robot_type):
         r"""Sets the robot_type of this CreateRobotReq.
 
-        交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-
         :param robot_type: The robot_type of this CreateRobotReq.
-        :type robot_type: str
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         """
         self._robot_type = robot_type
 
@@ -213,10 +209,8 @@ class CreateRobotReq:
     def language(self):
         r"""Gets the language of this CreateRobotReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this CreateRobotReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -224,10 +218,8 @@ class CreateRobotReq:
     def language(self, language):
         r"""Sets the language of this CreateRobotReq.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this CreateRobotReq.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 

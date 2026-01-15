@@ -16,7 +16,7 @@ class CreateResourcePackageOrderReq:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'resource_packages': 'list[ResourcePackage]',
+        'resource_packages': 'list[DesktopResourcePackage]',
         'resource_size': 'int',
         'extend_param': 'OrderExtendParam'
     }
@@ -36,7 +36,7 @@ class CreateResourcePackageOrderReq:
         :param enterprise_project_id: 企业项目ID，上传则指定企业项目，不上传则表示所有企业项目。
         :type enterprise_project_id: str
         :param resource_packages: 资源包。
-        :type resource_packages: list[:class:`huaweicloudsdkworkspace.v2.ResourcePackage`]
+        :type resource_packages: list[:class:`huaweicloudsdkworkspace.v2.DesktopResourcePackage`]
         :param resource_size: 购买资源包数量。
         :type resource_size: int
         :param extend_param: 
@@ -88,7 +88,7 @@ class CreateResourcePackageOrderReq:
         资源包。
 
         :return: The resource_packages of this CreateResourcePackageOrderReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResourcePackage`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopResourcePackage`]
         """
         return self._resource_packages
 
@@ -99,7 +99,7 @@ class CreateResourcePackageOrderReq:
         资源包。
 
         :param resource_packages: The resource_packages of this CreateResourcePackageOrderReq.
-        :type resource_packages: list[:class:`huaweicloudsdkworkspace.v2.ResourcePackage`]
+        :type resource_packages: list[:class:`huaweicloudsdkworkspace.v2.DesktopResourcePackage`]
         """
         self._resource_packages = resource_packages
 

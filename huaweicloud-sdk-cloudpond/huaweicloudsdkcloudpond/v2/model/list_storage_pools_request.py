@@ -18,7 +18,7 @@ class ListStoragePoolsRequest:
         'edge_site_id': 'str',
         'limit': 'int',
         'marker': 'str',
-        'status': 'list[str]'
+        'status': 'list[StoragePoolStatus]'
     }
 
     attribute_map = {
@@ -40,7 +40,7 @@ class ListStoragePoolsRequest:
         :param marker: 分页标识
         :type marker: str
         :param status: 根据存储池状态查询，支持多值查询
-        :type status: list[str]
+        :type status: list[:class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`]
         """
         
         
@@ -133,7 +133,7 @@ class ListStoragePoolsRequest:
         根据存储池状态查询，支持多值查询
 
         :return: The status of this ListStoragePoolsRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`]
         """
         return self._status
 
@@ -144,7 +144,7 @@ class ListStoragePoolsRequest:
         根据存储池状态查询，支持多值查询
 
         :param status: The status of this ListStoragePoolsRequest.
-        :type status: list[str]
+        :type status: list[:class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`]
         """
         self._status = status
 

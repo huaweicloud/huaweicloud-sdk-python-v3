@@ -18,6 +18,7 @@ class ImportUserListResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
+        'error_detail': 'str',
         'encoded_authorization_message': 'str',
         'user_detail_list': 'list[DesktopUserDetail]',
         'failed_detail_list': 'list[DesktopUserDetail]',
@@ -27,13 +28,14 @@ class ImportUserListResponse(SdkResponse):
     attribute_map = {
         'error_code': 'error_code',
         'error_msg': 'error_msg',
+        'error_detail': 'error_detail',
         'encoded_authorization_message': 'encoded_authorization_message',
         'user_detail_list': 'user_detail_list',
         'failed_detail_list': 'failed_detail_list',
         'total_count': 'total_count'
     }
 
-    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, user_detail_list=None, failed_detail_list=None, total_count=None):
+    def __init__(self, error_code=None, error_msg=None, error_detail=None, encoded_authorization_message=None, user_detail_list=None, failed_detail_list=None, total_count=None):
         r"""ImportUserListResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class ImportUserListResponse(SdkResponse):
         :type error_code: str
         :param error_msg: 错误描述。
         :type error_msg: str
+        :param error_detail: 错误详情。
+        :type error_detail: str
         :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
         :type encoded_authorization_message: str
         :param user_detail_list: 成功列表。
@@ -56,6 +60,7 @@ class ImportUserListResponse(SdkResponse):
 
         self._error_code = None
         self._error_msg = None
+        self._error_detail = None
         self._encoded_authorization_message = None
         self._user_detail_list = None
         self._failed_detail_list = None
@@ -66,6 +71,8 @@ class ImportUserListResponse(SdkResponse):
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if error_detail is not None:
+            self.error_detail = error_detail
         if encoded_authorization_message is not None:
             self.encoded_authorization_message = encoded_authorization_message
         if user_detail_list is not None:
@@ -118,6 +125,28 @@ class ImportUserListResponse(SdkResponse):
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def error_detail(self):
+        r"""Gets the error_detail of this ImportUserListResponse.
+
+        错误详情。
+
+        :return: The error_detail of this ImportUserListResponse.
+        :rtype: str
+        """
+        return self._error_detail
+
+    @error_detail.setter
+    def error_detail(self, error_detail):
+        r"""Sets the error_detail of this ImportUserListResponse.
+
+        错误详情。
+
+        :param error_detail: The error_detail of this ImportUserListResponse.
+        :type error_detail: str
+        """
+        self._error_detail = error_detail
 
     @property
     def encoded_authorization_message(self):

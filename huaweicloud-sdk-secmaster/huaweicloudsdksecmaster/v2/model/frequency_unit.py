@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class FrequencyUnit:
-
+    """
+    allowed enum values
+    """
+    MINUTE = "MINUTE"
+    HOUR = "HOUR"
+    DAY = "DAY"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

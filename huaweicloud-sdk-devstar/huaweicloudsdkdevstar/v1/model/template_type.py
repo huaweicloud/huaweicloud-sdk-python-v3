@@ -4,7 +4,17 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TemplateType:
-
+    """
+    allowed enum values
+    """
+    MOBILE = "mobile"
+    MICROSERVICE = "microservice"
+    WEB = "web"
+    FUNCTION = "function"
+    IOT = "iot"
+    AI = "ai"
+    OTHERS = "others"
+    NONE = "none"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

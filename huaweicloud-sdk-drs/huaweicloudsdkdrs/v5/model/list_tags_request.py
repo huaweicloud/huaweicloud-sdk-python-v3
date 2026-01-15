@@ -29,7 +29,7 @@ class ListTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        :param resource_type: 资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务
         :type resource_type: str
         :param x_language: 请求语言类型。
         :type x_language: str
@@ -49,7 +49,7 @@ class ListTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListTagsRequest.
 
-        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务
 
         :return: The resource_type of this ListTagsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListTagsRequest.
 
-        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
+        资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放 - verify：校验任务
 
         :param resource_type: The resource_type of this ListTagsRequest.
         :type resource_type: str

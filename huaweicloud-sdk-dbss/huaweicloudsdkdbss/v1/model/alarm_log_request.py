@@ -39,11 +39,11 @@ class AlarmLogRequest:
 
         :param time: 
         :type time: :class:`huaweicloudsdkdbss.v1.AlarmLogRequestTime`
-        :param risk: 风险级别 - LOW: 低 - MEDIUM：中 - HIGH：高
+        :param risk: 风险级别 - LOW：低 - MEDIUM：中 - HIGH：高
         :type risk: list[str]
-        :param type: 告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
+        :param type: 告警类型 - RISK_RULE：风险规则 - RISK_CPU：CPU超限 - RISK_MEMORY：内存超限 - RISK_DISK：磁盘超限 - RISK_DISK_CAPACITY：磁盘容量不足六个月 - RISK_BACKUP：备份失败 - AUDIT_QPS_OVERFLOW：流量超限入库延迟告警 - RISK_AGENT：Agent异常 - AUDIT_BACKUP_FAILED：实例备份失败(运维侧)
         :type type: str
-        :param status: 告警确认状态 - DONE: 已确认 - UNDO: 未确认
+        :param status: 告警确认状态 - DONE：已确认 - UNDO：未确认
         :type status: str
         :param page: 页码
         :type page: int
@@ -93,7 +93,7 @@ class AlarmLogRequest:
     def risk(self):
         r"""Gets the risk of this AlarmLogRequest.
 
-        风险级别 - LOW: 低 - MEDIUM：中 - HIGH：高
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高
 
         :return: The risk of this AlarmLogRequest.
         :rtype: list[str]
@@ -104,7 +104,7 @@ class AlarmLogRequest:
     def risk(self, risk):
         r"""Sets the risk of this AlarmLogRequest.
 
-        风险级别 - LOW: 低 - MEDIUM：中 - HIGH：高
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高
 
         :param risk: The risk of this AlarmLogRequest.
         :type risk: list[str]
@@ -115,7 +115,7 @@ class AlarmLogRequest:
     def type(self):
         r"""Gets the type of this AlarmLogRequest.
 
-        告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
+        告警类型 - RISK_RULE：风险规则 - RISK_CPU：CPU超限 - RISK_MEMORY：内存超限 - RISK_DISK：磁盘超限 - RISK_DISK_CAPACITY：磁盘容量不足六个月 - RISK_BACKUP：备份失败 - AUDIT_QPS_OVERFLOW：流量超限入库延迟告警 - RISK_AGENT：Agent异常 - AUDIT_BACKUP_FAILED：实例备份失败(运维侧)
 
         :return: The type of this AlarmLogRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class AlarmLogRequest:
     def type(self, type):
         r"""Sets the type of this AlarmLogRequest.
 
-        告警类型 - RISK_RULE: 风险规则 - RISK_CPU: CPU超限 - RISK_MEMORY: 内存超限 - RISK_DISK: 磁盘超限 - RISK_DISK_CAPACITY: 磁盘容量不足六个月 - RISK_BACKUP: 备份失败 - AUDIT_QPS_OVERFLOW: 流量超限入库延迟告警 - RISK_AGENT: Agent异常 - AUDIT_BACKUP_FAILED: 实例备份失败(运维侧)
+        告警类型 - RISK_RULE：风险规则 - RISK_CPU：CPU超限 - RISK_MEMORY：内存超限 - RISK_DISK：磁盘超限 - RISK_DISK_CAPACITY：磁盘容量不足六个月 - RISK_BACKUP：备份失败 - AUDIT_QPS_OVERFLOW：流量超限入库延迟告警 - RISK_AGENT：Agent异常 - AUDIT_BACKUP_FAILED：实例备份失败(运维侧)
 
         :param type: The type of this AlarmLogRequest.
         :type type: str
@@ -137,7 +137,7 @@ class AlarmLogRequest:
     def status(self):
         r"""Gets the status of this AlarmLogRequest.
 
-        告警确认状态 - DONE: 已确认 - UNDO: 未确认
+        告警确认状态 - DONE：已确认 - UNDO：未确认
 
         :return: The status of this AlarmLogRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class AlarmLogRequest:
     def status(self, status):
         r"""Sets the status of this AlarmLogRequest.
 
-        告警确认状态 - DONE: 已确认 - UNDO: 未确认
+        告警确认状态 - DONE：已确认 - UNDO：未确认
 
         :param status: The status of this AlarmLogRequest.
         :type status: str

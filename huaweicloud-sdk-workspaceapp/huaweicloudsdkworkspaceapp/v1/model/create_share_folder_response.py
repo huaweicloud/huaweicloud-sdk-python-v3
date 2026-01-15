@@ -19,7 +19,7 @@ class CreateShareFolderResponse(SdkResponse):
         'storage_claim_id': 'str',
         'folder_path': 'str',
         'delimiter': 'str',
-        'claim_mode': 'str'
+        'claim_mode': 'ClaimMode'
     }
 
     attribute_map = {
@@ -40,8 +40,8 @@ class CreateShareFolderResponse(SdkResponse):
         :type folder_path: str
         :param delimiter: 路径分隔符。
         :type delimiter: str
-        :param claim_mode: 存储声明的类型： * &#x60;USER&#x60; -  用户目录 * &#x60;SHARE&#x60; - 共享目录
-        :type claim_mode: str
+        :param claim_mode: 
+        :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
         """
         
         super().__init__()
@@ -131,10 +131,8 @@ class CreateShareFolderResponse(SdkResponse):
     def claim_mode(self):
         r"""Gets the claim_mode of this CreateShareFolderResponse.
 
-        存储声明的类型： * `USER` -  用户目录 * `SHARE` - 共享目录
-
         :return: The claim_mode of this CreateShareFolderResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
         """
         return self._claim_mode
 
@@ -142,10 +140,8 @@ class CreateShareFolderResponse(SdkResponse):
     def claim_mode(self, claim_mode):
         r"""Sets the claim_mode of this CreateShareFolderResponse.
 
-        存储声明的类型： * `USER` -  用户目录 * `SHARE` - 共享目录
-
         :param claim_mode: The claim_mode of this CreateShareFolderResponse.
-        :type claim_mode: str
+        :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
         """
         self._claim_mode = claim_mode
 

@@ -16,7 +16,7 @@ class UpdateVpcepServiceInfo:
 
     openapi_types = {
         'subnet_id': 'str',
-        'type': 'str',
+        'type': 'VpcServiceType',
         'vpc_endpoint_address': 'str',
         'vpc_endpoint_id': 'str',
         'vpc_endpoint_service_id': 'str',
@@ -39,8 +39,8 @@ class UpdateVpcepServiceInfo:
 
         :param subnet_id: 子网ID
         :type subnet_id: str
-        :param type: **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         :param vpc_endpoint_address: Vpc 端点地址
         :type vpc_endpoint_address: str
         :param vpc_endpoint_id: Vpc 端点ID
@@ -100,10 +100,8 @@ class UpdateVpcepServiceInfo:
     def type(self):
         r"""Gets the type of this UpdateVpcepServiceInfo.
 
-        **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-
         :return: The type of this UpdateVpcepServiceInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         """
         return self._type
 
@@ -111,10 +109,8 @@ class UpdateVpcepServiceInfo:
     def type(self, type):
         r"""Sets the type of this UpdateVpcepServiceInfo.
 
-        **参数解释**: Vpc服务状态 - MANAGE 管理通道 - DATA 数据通道  **约束限制** 不涉及  **取值范围**: - MANAGE - DATA  **默认值** 不涉及
-
         :param type: The type of this UpdateVpcepServiceInfo.
-        :type type: str
+        :type type: :class:`huaweicloudsdksecmaster.v1.VpcServiceType`
         """
         self._type = type
 

@@ -51,7 +51,7 @@ class CompareJobInfo:
 
         :param id: 对比任务ID。
         :type id: str
-        :param type: 对比类型。
+        :param type: 对比类型。 object：对象对比，lines：行对比，contents：内容对比
         :type type: str
         :param start_time: 开始时间。
         :type start_time: str
@@ -59,9 +59,9 @@ class CompareJobInfo:
         :type end_time: str
         :param status: 对比任务的状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
         :type status: str
-        :param compute_type: 对比计算资源。
+        :param compute_type: 对比计算资源。 取值：db，drs
         :type compute_type: str
-        :param export_status: 导出比对结果状态。
+        :param export_status: 导出比对结果状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
         :type export_status: str
         :param report_remain_seconds: 导出比对结果有效期剩余时间。
         :type report_remain_seconds: int
@@ -142,7 +142,7 @@ class CompareJobInfo:
     def type(self):
         r"""Gets the type of this CompareJobInfo.
 
-        对比类型。
+        对比类型。 object：对象对比，lines：行对比，contents：内容对比
 
         :return: The type of this CompareJobInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class CompareJobInfo:
     def type(self, type):
         r"""Sets the type of this CompareJobInfo.
 
-        对比类型。
+        对比类型。 object：对象对比，lines：行对比，contents：内容对比
 
         :param type: The type of this CompareJobInfo.
         :type type: str
@@ -230,7 +230,7 @@ class CompareJobInfo:
     def compute_type(self):
         r"""Gets the compute_type of this CompareJobInfo.
 
-        对比计算资源。
+        对比计算资源。 取值：db，drs
 
         :return: The compute_type of this CompareJobInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class CompareJobInfo:
     def compute_type(self, compute_type):
         r"""Sets the compute_type of this CompareJobInfo.
 
-        对比计算资源。
+        对比计算资源。 取值：db，drs
 
         :param compute_type: The compute_type of this CompareJobInfo.
         :type compute_type: str
@@ -252,7 +252,7 @@ class CompareJobInfo:
     def export_status(self):
         r"""Gets the export_status of this CompareJobInfo.
 
-        导出比对结果状态。
+        导出比对结果状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
 
         :return: The export_status of this CompareJobInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class CompareJobInfo:
     def export_status(self, export_status):
         r"""Sets the export_status of this CompareJobInfo.
 
-        导出比对结果状态。
+        导出比对结果状态。 INIT：初始状态，EXPORTING：比对结果导出中，EXPORT_COMPLETE：比对结果导出完成，EXPORT_COMMON_FAILED：比对结果导出失败
 
         :param export_status: The export_status of this CompareJobInfo.
         :type export_status: str

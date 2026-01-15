@@ -27,7 +27,8 @@ class ShowJobDetailRequest:
         'compare_task_id': 'str',
         'source_db_name': 'str',
         'target_db_name': 'str',
-        'compare_detail_type': 'str'
+        'compare_detail_type': 'str',
+        'log_level': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ShowJobDetailRequest:
         'compare_task_id': 'compare_task_id',
         'source_db_name': 'source_db_name',
         'target_db_name': 'target_db_name',
-        'compare_detail_type': 'compare_detail_type'
+        'compare_detail_type': 'compare_detail_type',
+        'log_level': 'log_level'
     }
 
-    def __init__(self, job_id=None, x_language=None, type=None, query_id=None, offset=None, limit=None, compare_type=None, query_type=None, object_type=None, compare_task_id=None, source_db_name=None, target_db_name=None, compare_detail_type=None):
+    def __init__(self, job_id=None, x_language=None, type=None, query_id=None, offset=None, limit=None, compare_type=None, query_type=None, object_type=None, compare_task_id=None, source_db_name=None, target_db_name=None, compare_detail_type=None, log_level=None):
         r"""ShowJobDetailRequest
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class ShowJobDetailRequest:
         :type target_db_name: str
         :param compare_detail_type: 对比结果类型。取值： - compare：对比完成。 - uncompare：无法对比。
         :type compare_detail_type: str
+        :param log_level: 查询日志的级别。取值： - Info：提示级别。 - Warn：警告级别。 - Error：错误级别。
+        :type log_level: str
         """
         
         
@@ -94,6 +98,7 @@ class ShowJobDetailRequest:
         self._source_db_name = None
         self._target_db_name = None
         self._compare_detail_type = None
+        self._log_level = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -120,6 +125,8 @@ class ShowJobDetailRequest:
             self.target_db_name = target_db_name
         if compare_detail_type is not None:
             self.compare_detail_type = compare_detail_type
+        if log_level is not None:
+            self.log_level = log_level
 
     @property
     def job_id(self):
@@ -406,6 +413,28 @@ class ShowJobDetailRequest:
         :type compare_detail_type: str
         """
         self._compare_detail_type = compare_detail_type
+
+    @property
+    def log_level(self):
+        r"""Gets the log_level of this ShowJobDetailRequest.
+
+        查询日志的级别。取值： - Info：提示级别。 - Warn：警告级别。 - Error：错误级别。
+
+        :return: The log_level of this ShowJobDetailRequest.
+        :rtype: str
+        """
+        return self._log_level
+
+    @log_level.setter
+    def log_level(self, log_level):
+        r"""Sets the log_level of this ShowJobDetailRequest.
+
+        查询日志的级别。取值： - Info：提示级别。 - Warn：警告级别。 - Error：错误级别。
+
+        :param log_level: The log_level of this ShowJobDetailRequest.
+        :type log_level: str
+        """
+        self._log_level = log_level
 
     def to_dict(self):
         result = {}

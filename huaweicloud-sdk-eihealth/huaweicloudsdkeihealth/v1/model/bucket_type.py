@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BucketType:
-
+    """
+    allowed enum values
+    """
+    OBJECT = "OBJECT"
+    PFS = "PFS"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

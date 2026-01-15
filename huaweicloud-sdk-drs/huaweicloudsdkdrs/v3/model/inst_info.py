@@ -41,7 +41,7 @@ class InstInfo:
 
         :param engine_type: 引擎类型
         :type engine_type: str
-        :param inst_type: 实例类型
+        :param inst_type: 实例类型 取值：common，high，ultrahigh
         :type inst_type: str
         :param ip: 迁移实例所在的私有IP
         :type ip: str
@@ -107,7 +107,7 @@ class InstInfo:
     def inst_type(self):
         r"""Gets the inst_type of this InstInfo.
 
-        实例类型
+        实例类型 取值：common，high，ultrahigh
 
         :return: The inst_type of this InstInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class InstInfo:
     def inst_type(self, inst_type):
         r"""Sets the inst_type of this InstInfo.
 
-        实例类型
+        实例类型 取值：common，high，ultrahigh
 
         :param inst_type: The inst_type of this InstInfo.
         :type inst_type: str

@@ -15,7 +15,7 @@ class OperationDto:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'action': 'ChannelAction'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class OperationDto:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-        :type action: str
+        :param action: 
+        :type action: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         """
         
         
@@ -43,10 +43,8 @@ class OperationDto:
     def action(self):
         r"""Gets the action of this OperationDto.
 
-        **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-
         :return: The action of this OperationDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         """
         return self._action
 
@@ -54,10 +52,8 @@ class OperationDto:
     def action(self, action):
         r"""Sets the action of this OperationDto.
 
-        **参数解释**: 节点运行状态的监控 - START 开始 - STOP 停止 - REMOVE 移除 - RESTART 重启 - REFRESH 刷新 - INSTALL 安装  **约束限制** 不涉及 **取值范围**: - START - STOP - REMOVE - RESTART - REFRESH - INSTALL  **默认值** 不涉及
-
         :param action: The action of this OperationDto.
-        :type action: str
+        :type action: :class:`huaweicloudsdksecmaster.v1.ChannelAction`
         """
         self._action = action
 

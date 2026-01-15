@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class IsapJobFieldNotNullPolicy:
-
+    """
+    allowed enum values
+    """
+    LOOSE = "LOOSE"
+    STRICT = "STRICT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -16,7 +16,7 @@ class Attachment:
 
     openapi_types = {
         'attach': 'str',
-        'attach_type': 'str'
+        'attach_type': 'AttachType'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class Attachment:
 
         :param attach: 目标。
         :type attach: str
-        :param attach_type: 关联对象类型： * &#x60;USER&#x60; -  用户 * &#x60;USER_GROUP&#x60; - 用户组
-        :type attach_type: str
+        :param attach_type: 
+        :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
         """
         
         
@@ -70,10 +70,8 @@ class Attachment:
     def attach_type(self):
         r"""Gets the attach_type of this Attachment.
 
-        关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
-
         :return: The attach_type of this Attachment.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
         """
         return self._attach_type
 
@@ -81,10 +79,8 @@ class Attachment:
     def attach_type(self, attach_type):
         r"""Sets the attach_type of this Attachment.
 
-        关联对象类型： * `USER` -  用户 * `USER_GROUP` - 用户组
-
         :param attach_type: The attach_type of this Attachment.
-        :type attach_type: str
+        :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
         """
         self._attach_type = attach_type
 

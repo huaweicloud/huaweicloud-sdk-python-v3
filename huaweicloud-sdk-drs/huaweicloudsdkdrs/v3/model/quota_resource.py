@@ -35,7 +35,7 @@ class QuotaResource:
 
         The model defined in huaweicloud sdk
 
-        :param type: 配额类型信息
+        :param type: 配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
         :type type: str
         :param min: 配额最小取值
         :type min: int
@@ -71,7 +71,7 @@ class QuotaResource:
     def type(self):
         r"""Gets the type of this QuotaResource.
 
-        配额类型信息
+        配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
 
         :return: The type of this QuotaResource.
         :rtype: str
@@ -82,7 +82,7 @@ class QuotaResource:
     def type(self, type):
         r"""Sets the type of this QuotaResource.
 
-        配额类型信息
+        配额类型信息 instances：实例的数量配额，cpu：CPU的配额，cores：CPU核心数的配额，server_groups服务器组的配额，mem内存配额，ram主存配额
 
         :param type: The type of this QuotaResource.
         :type type: str

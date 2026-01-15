@@ -18,7 +18,7 @@ class UpdateListenerOption:
         'name': 'str',
         'description': 'str',
         'port_ranges': 'list[PortRange]',
-        'client_affinity': 'str'
+        'client_affinity': 'ClientAffinity'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class UpdateListenerOption:
         :type description: str
         :param port_ranges: 监听端口范围列表。
         :type port_ranges: list[:class:`huaweicloudsdkga.v1.PortRange`]
-        :param client_affinity: 客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-        :type client_affinity: str
+        :param client_affinity: 
+        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
         
         
@@ -130,10 +130,8 @@ class UpdateListenerOption:
     def client_affinity(self):
         r"""Gets the client_affinity of this UpdateListenerOption.
 
-        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-
         :return: The client_affinity of this UpdateListenerOption.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
         return self._client_affinity
 
@@ -141,10 +139,8 @@ class UpdateListenerOption:
     def client_affinity(self, client_affinity):
         r"""Sets the client_affinity of this UpdateListenerOption.
 
-        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
-
         :param client_affinity: The client_affinity of this UpdateListenerOption.
-        :type client_affinity: str
+        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
         self._client_affinity = client_affinity
 

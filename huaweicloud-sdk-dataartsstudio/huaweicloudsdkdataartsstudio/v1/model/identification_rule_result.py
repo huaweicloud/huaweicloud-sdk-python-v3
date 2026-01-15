@@ -15,7 +15,7 @@ class IdentificationRuleResult:
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str',
+        'result': 'DiagnoseResult',
         'count': 'int',
         'abnormal_info': 'list[SecurityLevelInfo]'
     }
@@ -31,8 +31,8 @@ class IdentificationRuleResult:
 
         The model defined in huaweicloud sdk
 
-        :param result: 检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-        :type result: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         :param count: 有风险的问题数量
         :type count: int
         :param abnormal_info: 没有配置识别规则的密级列表
@@ -57,10 +57,8 @@ class IdentificationRuleResult:
     def result(self):
         r"""Gets the result of this IdentificationRuleResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :return: The result of this IdentificationRuleResult.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         return self._result
 
@@ -68,10 +66,8 @@ class IdentificationRuleResult:
     def result(self, result):
         r"""Sets the result of this IdentificationRuleResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :param result: The result of this IdentificationRuleResult.
-        :type result: str
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         self._result = result
 

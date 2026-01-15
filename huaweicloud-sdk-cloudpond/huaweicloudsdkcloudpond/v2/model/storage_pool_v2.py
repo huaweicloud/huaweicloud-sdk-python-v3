@@ -19,7 +19,7 @@ class StoragePoolV2:
         'name': 'str',
         'edge_site_id': 'str',
         'storage_type': 'str',
-        'status': 'str',
+        'status': 'StoragePoolStatus',
         'assigned_size': 'int',
         'product_info': 'ProductInfo',
         'capacity': 'int',
@@ -57,8 +57,8 @@ class StoragePoolV2:
         :type edge_site_id: str
         :param storage_type: 存储类型
         :type storage_type: str
-        :param status: 存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`
         :param assigned_size: 存储池大小。 当前已购买的存储容量。
         :type assigned_size: int
         :param product_info: 
@@ -208,10 +208,8 @@ class StoragePoolV2:
     def status(self):
         r"""Gets the status of this StoragePoolV2.
 
-        存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
-
         :return: The status of this StoragePoolV2.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`
         """
         return self._status
 
@@ -219,10 +217,8 @@ class StoragePoolV2:
     def status(self, status):
         r"""Sets the status of this StoragePoolV2.
 
-        存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
-
         :param status: The status of this StoragePoolV2.
-        :type status: str
+        :type status: :class:`huaweicloudsdkcloudpond.v2.StoragePoolStatus`
         """
         self._status = status
 

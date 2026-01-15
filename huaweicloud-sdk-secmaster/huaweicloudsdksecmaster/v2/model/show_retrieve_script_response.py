@@ -21,7 +21,7 @@ class ShowRetrieveScriptResponse(SdkResponse):
         'workspace_id': 'str',
         'script_name': 'str',
         'table_id': 'str',
-        'category': 'str',
+        'category': 'ScriptCategory',
         'directory': 'str',
         'description': 'str',
         'script': 'str',
@@ -62,8 +62,8 @@ class ShowRetrieveScriptResponse(SdkResponse):
         :type script_name: str
         :param table_id: UUID
         :type table_id: str
-        :param category: **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-        :type category: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         :param directory: 脚本目录分组名称，长度在1到256个字符之间。
         :type directory: str
         :param description: 脚本的相关描述信息，长度在1到1024个字符之间。
@@ -238,10 +238,8 @@ class ShowRetrieveScriptResponse(SdkResponse):
     def category(self):
         r"""Gets the category of this ShowRetrieveScriptResponse.
 
-        **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-
         :return: The category of this ShowRetrieveScriptResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         """
         return self._category
 
@@ -249,10 +247,8 @@ class ShowRetrieveScriptResponse(SdkResponse):
     def category(self, category):
         r"""Sets the category of this ShowRetrieveScriptResponse.
 
-        **参数解释**: 脚本分类 - RETRIEVE 检索 - ANALYSIS 分析  **约束限制** 不涉及 **取值范围**: - RETRIEVE - ANALYSIS  **默认值** 不涉及          
-
         :param category: The category of this ShowRetrieveScriptResponse.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.ScriptCategory`
         """
         self._category = category
 

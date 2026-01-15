@@ -15,7 +15,7 @@ class DataMaskingResult:
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str',
+        'result': 'DiagnoseResult',
         'count': 'int'
     }
 
@@ -29,8 +29,8 @@ class DataMaskingResult:
 
         The model defined in huaweicloud sdk
 
-        :param result: 检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-        :type result: str
+        :param result: 
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         :param count: 没有配置脱敏任务的表数量
         :type count: int
         """
@@ -50,10 +50,8 @@ class DataMaskingResult:
     def result(self):
         r"""Gets the result of this DataMaskingResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :return: The result of this DataMaskingResult.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         return self._result
 
@@ -61,10 +59,8 @@ class DataMaskingResult:
     def result(self, result):
         r"""Sets the result of this DataMaskingResult.
 
-        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
-
         :param result: The result of this DataMaskingResult.
-        :type result: str
+        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
         """
         self._result = result
 

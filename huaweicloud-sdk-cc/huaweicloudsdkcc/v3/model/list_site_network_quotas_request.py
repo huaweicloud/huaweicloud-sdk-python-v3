@@ -15,7 +15,7 @@ class ListSiteNetworkQuotasRequest:
     sensitive_list = []
 
     openapi_types = {
-        'quota_type': 'list[str]',
+        'quota_type': 'list[SiteNetworkQuotaKeyEnum]',
         'limit': 'int',
         'marker': 'str'
     }
@@ -32,7 +32,7 @@ class ListSiteNetworkQuotasRequest:
         The model defined in huaweicloud sdk
 
         :param quota_type: 根据配额类型查询，可查询多个类型。
-        :type quota_type: list[str]
+        :type quota_type: list[:class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`]
         :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
@@ -60,7 +60,7 @@ class ListSiteNetworkQuotasRequest:
         根据配额类型查询，可查询多个类型。
 
         :return: The quota_type of this ListSiteNetworkQuotasRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`]
         """
         return self._quota_type
 
@@ -71,7 +71,7 @@ class ListSiteNetworkQuotasRequest:
         根据配额类型查询，可查询多个类型。
 
         :param quota_type: The quota_type of this ListSiteNetworkQuotasRequest.
-        :type quota_type: list[str]
+        :type quota_type: list[:class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`]
         """
         self._quota_type = quota_type
 

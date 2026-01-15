@@ -21,15 +21,15 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
         'create_time': 'int',
         'cu_quota_amount': 'float',
         'description': 'str',
-        'environment': 'str',
-        'job_mode': 'str',
+        'environment': 'AlertRuleEnvironment',
+        'job_mode': 'IsapJobMode',
         'job_mode_setting': 'IsapJobModeSettingVo',
         'job_output_setting': 'IsapJobOutputSetting',
-        'process_error': 'str',
-        'process_status': 'str',
-        'query_type': 'str',
+        'process_error': 'ProcessError',
+        'process_status': 'ProcessStatus',
+        'query_type': 'QueryType',
         'script': 'str',
-        'status': 'str',
+        'status': 'Status',
         'table_name': 'str',
         'template_id': 'str',
         'template_name': 'str',
@@ -76,24 +76,24 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
         :type cu_quota_amount: float
         :param description: 告警规则模板描述
         :type description: str
-        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-        :type environment: str
-        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-        :type job_mode: str
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksecmaster.v2.AlertRuleEnvironment`
+        :param job_mode: 
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         :param job_mode_setting: 
         :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
         :param job_output_setting: 
         :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
-        :param process_error: **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
-        :type process_error: str
-        :param process_status: **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-        :type process_status: str
-        :param query_type: **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-        :type query_type: str
+        :param process_error: 
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.ProcessError`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
+        :param query_type: 
+        :type query_type: :class:`huaweicloudsdksecmaster.v2.QueryType`
         :param script: Script 脚本
         :type script: str
-        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.Status`
         :param table_name: 表名称
         :type table_name: str
         :param template_id: UUID
@@ -287,10 +287,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def environment(self):
         r"""Gets the environment of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :return: The environment of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertRuleEnvironment`
         """
         return self._environment
 
@@ -298,10 +296,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def environment(self, environment):
         r"""Sets the environment of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :param environment: The environment of this ShowAlertRuleTemplateResponse.
-        :type environment: str
+        :type environment: :class:`huaweicloudsdksecmaster.v2.AlertRuleEnvironment`
         """
         self._environment = environment
 
@@ -309,10 +305,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def job_mode(self):
         r"""Gets the job_mode of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :return: The job_mode of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         return self._job_mode
 
@@ -320,10 +314,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :param job_mode: The job_mode of this ShowAlertRuleTemplateResponse.
-        :type job_mode: str
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         self._job_mode = job_mode
 
@@ -367,10 +359,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def process_error(self):
         r"""Gets the process_error of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
-
         :return: The process_error of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ProcessError`
         """
         return self._process_error
 
@@ -378,10 +368,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def process_error(self, process_error):
         r"""Sets the process_error of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
-
         :param process_error: The process_error of this ShowAlertRuleTemplateResponse.
-        :type process_error: str
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.ProcessError`
         """
         self._process_error = process_error
 
@@ -389,10 +377,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-
         :return: The process_status of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
         """
         return self._process_status
 
@@ -400,10 +386,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
-
         :param process_status: The process_status of this ShowAlertRuleTemplateResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.ProcessStatus`
         """
         self._process_status = process_status
 
@@ -411,10 +395,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query_type(self):
         r"""Gets the query_type of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-
         :return: The query_type of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.QueryType`
         """
         return self._query_type
 
@@ -422,10 +404,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query_type(self, query_type):
         r"""Sets the query_type of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
-
         :param query_type: The query_type of this ShowAlertRuleTemplateResponse.
-        :type query_type: str
+        :type query_type: :class:`huaweicloudsdksecmaster.v2.QueryType`
         """
         self._query_type = query_type
 
@@ -455,10 +435,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Status`
         """
         return self._status
 
@@ -466,10 +444,8 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowAlertRuleTemplateResponse.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this ShowAlertRuleTemplateResponse.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.Status`
         """
         self._status = status
 

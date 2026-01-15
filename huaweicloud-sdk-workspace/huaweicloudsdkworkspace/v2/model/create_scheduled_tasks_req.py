@@ -91,7 +91,7 @@ class CreateScheduledTasksReq:
         :type life_cycle_type: str
         :param time_zone: 时区。
         :type time_zone: str
-        :param task_type: 任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+        :param task_type: 任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
         :type task_type: str
         :param task_name: 任务名称。
         :type task_name: str
@@ -460,7 +460,7 @@ class CreateScheduledTasksReq:
     def task_type(self):
         r"""Gets the task_type of this CreateScheduledTasksReq.
 
-        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
 
         :return: The task_type of this CreateScheduledTasksReq.
         :rtype: str
@@ -471,7 +471,7 @@ class CreateScheduledTasksReq:
     def task_type(self, task_type):
         r"""Sets the task_type of this CreateScheduledTasksReq.
 
-        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
 
         :param task_type: The task_type of this CreateScheduledTasksReq.
         :type task_type: str

@@ -28,7 +28,7 @@ class DisableDnssecConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态。  取值范围：  DISABLE：关闭
+        :param status: **参数解释：** 状态。 **取值范围：** DISABLE：关闭
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class DisableDnssecConfigResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DisableDnssecConfigResponse.
 
-        状态。  取值范围：  DISABLE：关闭
+        **参数解释：** 状态。 **取值范围：** DISABLE：关闭
 
         :return: The status of this DisableDnssecConfigResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DisableDnssecConfigResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DisableDnssecConfigResponse.
 
-        状态。  取值范围：  DISABLE：关闭
+        **参数解释：** 状态。 **取值范围：** DISABLE：关闭
 
         :param status: The status of this DisableDnssecConfigResponse.
         :type status: str

@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class IsapJobStartupModeEnum:
-
+    """
+    allowed enum values
+    """
+    UPGRADE = "UPGRADE"
+    REFRESH_NEW = "REFRESH_NEW"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

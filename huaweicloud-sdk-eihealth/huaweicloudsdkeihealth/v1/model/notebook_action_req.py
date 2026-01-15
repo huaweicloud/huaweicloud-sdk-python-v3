@@ -15,7 +15,7 @@ class NotebookActionReq:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'action': 'ActionType'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class NotebookActionReq:
         The model defined in huaweicloud sdk
 
         :param action: 
-        :type action: str
+        :type action: :class:`huaweicloudsdkeihealth.v1.ActionType`
         """
         
         
@@ -43,7 +43,7 @@ class NotebookActionReq:
         r"""Gets the action of this NotebookActionReq.
 
         :return: The action of this NotebookActionReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ActionType`
         """
         return self._action
 
@@ -52,7 +52,7 @@ class NotebookActionReq:
         r"""Sets the action of this NotebookActionReq.
 
         :param action: The action of this NotebookActionReq.
-        :type action: str
+        :type action: :class:`huaweicloudsdkeihealth.v1.ActionType`
         """
         self._action = action
 

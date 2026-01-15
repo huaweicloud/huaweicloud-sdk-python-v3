@@ -39,7 +39,7 @@ class AsyncUpdateJobResp:
         :type id: str
         :param name: 任务名称。
         :type name: str
-        :param status: 操作结果。
+        :param status: 操作结果。 取值：success，failed
         :type status: str
         :param error_code: 错误码。
         :type error_code: str
@@ -112,7 +112,7 @@ class AsyncUpdateJobResp:
     def status(self):
         r"""Gets the status of this AsyncUpdateJobResp.
 
-        操作结果。
+        操作结果。 取值：success，failed
 
         :return: The status of this AsyncUpdateJobResp.
         :rtype: str
@@ -123,7 +123,7 @@ class AsyncUpdateJobResp:
     def status(self, status):
         r"""Sets the status of this AsyncUpdateJobResp.
 
-        操作结果。
+        操作结果。 取值：success，failed
 
         :param status: The status of this AsyncUpdateJobResp.
         :type status: str

@@ -23,8 +23,8 @@ class RelationVO:
         'target_table_name': 'str',
         'role': 'str',
         'tenant_id': 'str',
-        'source_type': 'str',
-        'target_type': 'str',
+        'source_type': 'RelationType',
+        'target_type': 'RelationType',
         'create_by': 'str',
         'update_by': 'str',
         'create_time': 'datetime',
@@ -71,10 +71,10 @@ class RelationVO:
         :type role: str
         :param tenant_id: 租户ID。
         :type tenant_id: str
-        :param source_type: 关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-        :type source_type: str
-        :param target_type: 关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-        :type target_type: str
+        :param source_type: 
+        :type source_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
+        :param target_type: 
+        :type target_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         :param create_by: 创建人。
         :type create_by: str
         :param update_by: 更新人。
@@ -316,10 +316,8 @@ class RelationVO:
     def source_type(self):
         r"""Gets the source_type of this RelationVO.
 
-        关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-
         :return: The source_type of this RelationVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         """
         return self._source_type
 
@@ -327,10 +325,8 @@ class RelationVO:
     def source_type(self, source_type):
         r"""Sets the source_type of this RelationVO.
 
-        关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-
         :param source_type: The source_type of this RelationVO.
-        :type source_type: str
+        :type source_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         """
         self._source_type = source_type
 
@@ -338,10 +334,8 @@ class RelationVO:
     def target_type(self):
         r"""Gets the target_type of this RelationVO.
 
-        关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-
         :return: The target_type of this RelationVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         """
         return self._target_type
 
@@ -349,10 +343,8 @@ class RelationVO:
     def target_type(self, target_type):
         r"""Sets the target_type of this RelationVO.
 
-        关系类型，只读。 枚举值：   - ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中有且只有一条数据与之对应。   - ZERO_OR_ONE: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中最多有一条数据与之对应。   - ZERO_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中可能有多条数据与之对应。   - ONE_OR_N: 表示每条子（父）逻辑实体数据在父（子）逻辑实体中至少有一条数据与之对应。 
-
         :param target_type: The target_type of this RelationVO.
-        :type target_type: str
+        :type target_type: :class:`huaweicloudsdkdataartsstudio.v1.RelationType`
         """
         self._target_type = target_type
 

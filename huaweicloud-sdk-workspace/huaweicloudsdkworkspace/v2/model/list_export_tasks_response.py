@@ -32,7 +32,7 @@ class ListExportTasksResponse(SdkResponse):
 
         :param export_tasks: 导出任务列表。
         :type export_tasks: list[:class:`huaweicloudsdkworkspace.v2.ExportTaskItem`]
-        :param count: 导出任务列表总数。
+        :param count: 导出任务总数。
         :type count: int
         """
         
@@ -73,7 +73,7 @@ class ListExportTasksResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListExportTasksResponse.
 
-        导出任务列表总数。
+        导出任务总数。
 
         :return: The count of this ListExportTasksResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListExportTasksResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListExportTasksResponse.
 
-        导出任务列表总数。
+        导出任务总数。
 
         :param count: The count of this ListExportTasksResponse.
         :type count: int

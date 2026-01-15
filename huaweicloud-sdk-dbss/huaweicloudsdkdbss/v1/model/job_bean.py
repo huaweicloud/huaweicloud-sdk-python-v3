@@ -53,7 +53,7 @@ class JobBean:
 
         :param job_id: 任务ID。
         :type job_id: str
-        :param status: 任务状态 - SUCCESS: 成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
+        :param status: 任务状态 - SUCCESS：成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
         :type status: str
         :param job_type: 类型[废弃，未使用]
         :type job_type: str
@@ -67,7 +67,7 @@ class JobBean:
         :type begin_time: int
         :param end_time: 结束时间
         :type end_time: int
-        :param charge_mode: 计费模式 - Period: 包周期计费 - Demand: 按需计费
+        :param charge_mode: 计费模式 - Period：包周期计费 - Demand：按需计费
         :type charge_mode: str
         :param error_code: 错误码
         :type error_code: str
@@ -140,7 +140,7 @@ class JobBean:
     def status(self):
         r"""Gets the status of this JobBean.
 
-        任务状态 - SUCCESS: 成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
+        任务状态 - SUCCESS：成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
 
         :return: The status of this JobBean.
         :rtype: str
@@ -151,7 +151,7 @@ class JobBean:
     def status(self, status):
         r"""Sets the status of this JobBean.
 
-        任务状态 - SUCCESS: 成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
+        任务状态 - SUCCESS：成功 - RUNNING：运行中 - FAIL：失败 - INIT：初始化 - READY：就绪
 
         :param status: The status of this JobBean.
         :type status: str
@@ -294,7 +294,7 @@ class JobBean:
     def charge_mode(self):
         r"""Gets the charge_mode of this JobBean.
 
-        计费模式 - Period: 包周期计费 - Demand: 按需计费
+        计费模式 - Period：包周期计费 - Demand：按需计费
 
         :return: The charge_mode of this JobBean.
         :rtype: str
@@ -305,7 +305,7 @@ class JobBean:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this JobBean.
 
-        计费模式 - Period: 包周期计费 - Demand: 按需计费
+        计费模式 - Period：包周期计费 - Demand：按需计费
 
         :param charge_mode: The charge_mode of this JobBean.
         :type charge_mode: str

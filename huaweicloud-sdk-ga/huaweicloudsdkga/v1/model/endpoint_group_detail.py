@@ -18,7 +18,7 @@ class EndpointGroupDetail:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'status': 'str',
+        'status': 'ConfigStatus',
         'traffic_dial_percentage': 'int',
         'region_id': 'str',
         'listeners': 'list[Id]',
@@ -53,8 +53,8 @@ class EndpointGroupDetail:
         :type name: str
         :param description: 终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：&lt;&gt;。
         :type description: str
-        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         :param traffic_dial_percentage: 流量拨分到此组的百分比。
         :type traffic_dial_percentage: int
         :param region_id: 终端节点组所属区域ID。
@@ -179,10 +179,8 @@ class EndpointGroupDetail:
     def status(self):
         r"""Gets the status of this EndpointGroupDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :return: The status of this EndpointGroupDetail.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         return self._status
 
@@ -190,10 +188,8 @@ class EndpointGroupDetail:
     def status(self, status):
         r"""Sets the status of this EndpointGroupDetail.
 
-        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
-
         :param status: The status of this EndpointGroupDetail.
-        :type status: str
+        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
         self._status = status
 

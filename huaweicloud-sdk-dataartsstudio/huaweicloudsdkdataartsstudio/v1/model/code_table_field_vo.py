@@ -22,7 +22,7 @@ class CodeTableFieldVO:
         'name_ch': 'str',
         'description': 'str',
         'data_type': 'str',
-        'domain_type': 'str',
+        'domain_type': 'DataTypeDomainEnum',
         'data_type_extend': 'str',
         'is_unique_key': 'bool',
         'code_table_field_values': 'list[CodeTableFieldValueVO]',
@@ -63,8 +63,8 @@ class CodeTableFieldVO:
         :type description: str
         :param data_type: 字段类型。
         :type data_type: str
-        :param domain_type: 字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-        :type domain_type: str
+        :param domain_type: 
+        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
         :param is_unique_key: 是否唯一。
@@ -270,10 +270,8 @@ class CodeTableFieldVO:
     def domain_type(self):
         r"""Gets the domain_type of this CodeTableFieldVO.
 
-        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-
         :return: The domain_type of this CodeTableFieldVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         """
         return self._domain_type
 
@@ -281,10 +279,8 @@ class CodeTableFieldVO:
     def domain_type(self, domain_type):
         r"""Sets the domain_type of this CodeTableFieldVO.
 
-        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
-
         :param domain_type: The domain_type of this CodeTableFieldVO.
-        :type domain_type: str
+        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
         """
         self._domain_type = domain_type
 

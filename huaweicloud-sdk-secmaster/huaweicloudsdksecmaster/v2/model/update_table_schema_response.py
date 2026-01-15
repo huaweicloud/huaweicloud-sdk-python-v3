@@ -24,15 +24,15 @@ class UpdateTableSchemaResponse(SdkResponse):
         'table_alias': 'str',
         'description': 'str',
         'directory': 'str',
-        'category': 'str',
-        'lock_status': 'str',
-        'process_status': 'str',
-        'process_error': 'str',
-        'format': 'str',
-        'rw_type': 'str',
-        'owner_type': 'str',
-        'data_layering': 'str',
-        'data_classification': 'str',
+        'category': 'IsapTableCategory',
+        'lock_status': 'TableLockStatus',
+        'process_status': 'IsapTableProcessStatus',
+        'process_error': 'IsapTableProcessError',
+        'format': 'TableFormat',
+        'rw_type': 'TableRWType',
+        'owner_type': 'TableOwnerType',
+        'data_layering': 'DataLayering',
+        'data_classification': 'DataClassification',
         'schema': 'IsapTableSchema',
         'storage_setting': 'TableStorageSetting',
         'display_setting': 'TableDisplaySetting',
@@ -88,24 +88,24 @@ class UpdateTableSchemaResponse(SdkResponse):
         :type description: str
         :param directory: directory 目录分组
         :type directory: str
-        :param category: **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及     
-        :type category: str
-        :param lock_status: **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-        :type lock_status: str
-        :param process_status: **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-        :type process_status: str
-        :param process_error: **参数解释**: 表处理错误 - NONE 无 - MISSING_ASSOCIATIONS 关联缺失 - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING 创建时初始化存储资源失败 - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING 创建时初始化 Flink 资源失败 - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING 删除时删除 Flink 资源失败 - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING 删除时删除存储资源失败 - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING 删除时删除所有资源失败 - FAILED_UPDATE_STORAGE_SETTING 更新存储配置失败 - FAILED_UPDATE_FLINK_SCHEMA 更新 Flink 模式失败 - FAILED_UPDATE_STORAGE_SCHEMA 更新存储模式失败 - FAILED_TO_APPLY_RESOURCE 应用资源失败 - FAILED_TO_UPGRADE_RESOURCE_MODEL 升级资源模型失败  **约束限制** 不涉及 **取值范围**: - NONE - MISSING_ASSOCIATIONS - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING - FAILED_UPDATE_STORAGE_SETTING - FAILED_UPDATE_FLINK_SCHEMA - FAILED_UPDATE_STORAGE_SCHEMA - FAILED_TO_APPLY_RESOURCE - FAILED_TO_UPGRADE_RESOURCE_MODEL  **默认值** 不涉及 
-        :type process_error: str
-        :param format: **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-        :type format: str
-        :param rw_type: **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-        :type rw_type: str
-        :param owner_type: **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-        :type owner_type: str
-        :param data_layering: **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-        :type data_layering: str
-        :param data_classification: **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-        :type data_classification: str
+        :param category: 
+        :type category: :class:`huaweicloudsdksecmaster.v2.IsapTableCategory`
+        :param lock_status: 
+        :type lock_status: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
+        :param process_error: 
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessError`
+        :param format: 
+        :type format: :class:`huaweicloudsdksecmaster.v2.TableFormat`
+        :param rw_type: 
+        :type rw_type: :class:`huaweicloudsdksecmaster.v2.TableRWType`
+        :param owner_type: 
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
+        :param data_layering: 
+        :type data_layering: :class:`huaweicloudsdksecmaster.v2.DataLayering`
+        :param data_classification: 
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         :param schema: 
         :type schema: :class:`huaweicloudsdksecmaster.v2.IsapTableSchema`
         :param storage_setting: 
@@ -374,10 +374,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def category(self):
         r"""Gets the category of this UpdateTableSchemaResponse.
 
-        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及     
-
         :return: The category of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTableCategory`
         """
         return self._category
 
@@ -385,10 +383,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def category(self, category):
         r"""Sets the category of this UpdateTableSchemaResponse.
 
-        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及     
-
         :param category: The category of this UpdateTableSchemaResponse.
-        :type category: str
+        :type category: :class:`huaweicloudsdksecmaster.v2.IsapTableCategory`
         """
         self._category = category
 
@@ -396,10 +392,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def lock_status(self):
         r"""Gets the lock_status of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-
         :return: The lock_status of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
         """
         return self._lock_status
 
@@ -407,10 +401,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def lock_status(self, lock_status):
         r"""Sets the lock_status of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表锁状态 - LOCKED 已锁 - UNLOCKED 未锁  **约束限制** 不涉及 **取值范围**: - LOCKED - UNLOCKED  **默认值** 不涉及      
-
         :param lock_status: The lock_status of this UpdateTableSchemaResponse.
-        :type lock_status: str
+        :type lock_status: :class:`huaweicloudsdksecmaster.v2.TableLockStatus`
         """
         self._lock_status = lock_status
 
@@ -418,10 +410,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this UpdateTableSchemaResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-
         :return: The process_status of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
         """
         return self._process_status
 
@@ -429,10 +419,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this UpdateTableSchemaResponse.
 
-        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - TRUNCATING 清空中 - UPGRADING   升级中       - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - DELETE_FAILED 删除失败 - TRUNCATE_FAILED 清空失败 - UPGRADE_FAILED 升级失败        **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - TRUNCATING - UPGRADING       - CREATE_FAILED - UPDATE_FAILED - DELETE_FAILED - TRUNCATE_FAILED - UPGRADE_FAILED  **默认值** 不涉及    
-
         :param process_status: The process_status of this UpdateTableSchemaResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessStatus`
         """
         self._process_status = process_status
 
@@ -440,10 +428,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def process_error(self):
         r"""Gets the process_error of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表处理错误 - NONE 无 - MISSING_ASSOCIATIONS 关联缺失 - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING 创建时初始化存储资源失败 - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING 创建时初始化 Flink 资源失败 - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING 删除时删除 Flink 资源失败 - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING 删除时删除存储资源失败 - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING 删除时删除所有资源失败 - FAILED_UPDATE_STORAGE_SETTING 更新存储配置失败 - FAILED_UPDATE_FLINK_SCHEMA 更新 Flink 模式失败 - FAILED_UPDATE_STORAGE_SCHEMA 更新存储模式失败 - FAILED_TO_APPLY_RESOURCE 应用资源失败 - FAILED_TO_UPGRADE_RESOURCE_MODEL 升级资源模型失败  **约束限制** 不涉及 **取值范围**: - NONE - MISSING_ASSOCIATIONS - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING - FAILED_UPDATE_STORAGE_SETTING - FAILED_UPDATE_FLINK_SCHEMA - FAILED_UPDATE_STORAGE_SCHEMA - FAILED_TO_APPLY_RESOURCE - FAILED_TO_UPGRADE_RESOURCE_MODEL  **默认值** 不涉及 
-
         :return: The process_error of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessError`
         """
         return self._process_error
 
@@ -451,10 +437,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def process_error(self, process_error):
         r"""Sets the process_error of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表处理错误 - NONE 无 - MISSING_ASSOCIATIONS 关联缺失 - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING 创建时初始化存储资源失败 - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING 创建时初始化 Flink 资源失败 - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING 删除时删除 Flink 资源失败 - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING 删除时删除存储资源失败 - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING 删除时删除所有资源失败 - FAILED_UPDATE_STORAGE_SETTING 更新存储配置失败 - FAILED_UPDATE_FLINK_SCHEMA 更新 Flink 模式失败 - FAILED_UPDATE_STORAGE_SCHEMA 更新存储模式失败 - FAILED_TO_APPLY_RESOURCE 应用资源失败 - FAILED_TO_UPGRADE_RESOURCE_MODEL 升级资源模型失败  **约束限制** 不涉及 **取值范围**: - NONE - MISSING_ASSOCIATIONS - FAILED_INIT_STORAGE_RESOURCES_WHEN_CREATING - FAILED_INIT_FLINK_RESOURCES_WHEN_CREATING - FAILED_DELETE_FLINK_RESOURCES_WHEN_DELETING - FAILED_DELETE_STORAGE_RESOURCES_WHEN_DELETING - FAILED_DELETE_ALL_RESOURCES_WHEN_DELETING - FAILED_UPDATE_STORAGE_SETTING - FAILED_UPDATE_FLINK_SCHEMA - FAILED_UPDATE_STORAGE_SCHEMA - FAILED_TO_APPLY_RESOURCE - FAILED_TO_UPGRADE_RESOURCE_MODEL  **默认值** 不涉及 
-
         :param process_error: The process_error of this UpdateTableSchemaResponse.
-        :type process_error: str
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.IsapTableProcessError`
         """
         self._process_error = process_error
 
@@ -462,10 +446,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def format(self):
         r"""Gets the format of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-
         :return: The format of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableFormat`
         """
         return self._format
 
@@ -473,10 +455,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def format(self, format):
         r"""Sets the format of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及  
-
         :param format: The format of this UpdateTableSchemaResponse.
-        :type format: str
+        :type format: :class:`huaweicloudsdksecmaster.v2.TableFormat`
         """
         self._format = format
 
@@ -484,10 +464,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def rw_type(self):
         r"""Gets the rw_type of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-
         :return: The rw_type of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableRWType`
         """
         return self._rw_type
 
@@ -495,10 +473,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def rw_type(self, rw_type):
         r"""Sets the rw_type of this UpdateTableSchemaResponse.
 
-        **参数解释**: 表读写类型 - READ_ONLY 只读 - READ_WRITE 读写 - WRITE_ONLY 只写  **约束限制** 不涉及 **取值范围**: - READ_ONLY - READ_WRITE - WRITE_ONLY  **默认值** 不涉及       
-
         :param rw_type: The rw_type of this UpdateTableSchemaResponse.
-        :type rw_type: str
+        :type rw_type: :class:`huaweicloudsdksecmaster.v2.TableRWType`
         """
         self._rw_type = rw_type
 
@@ -506,10 +482,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def owner_type(self):
         r"""Gets the owner_type of this UpdateTableSchemaResponse.
 
-        **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-
         :return: The owner_type of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
         """
         return self._owner_type
 
@@ -517,10 +491,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def owner_type(self, owner_type):
         r"""Sets the owner_type of this UpdateTableSchemaResponse.
 
-        **参数解释**: 拥有者类型 - SYSTEM 系统 - USER 用户 - SYSTEM_ALLOWED_DELETE 系统可删除 - USER_ALLOWED_DELETE 用户可删除  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - SYSTEM_ALLOWED_DELETE - USER_ALLOWED_DELETE  **默认值** 不涉及         
-
         :param owner_type: The owner_type of this UpdateTableSchemaResponse.
-        :type owner_type: str
+        :type owner_type: :class:`huaweicloudsdksecmaster.v2.TableOwnerType`
         """
         self._owner_type = owner_type
 
@@ -528,10 +500,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def data_layering(self):
         r"""Gets the data_layering of this UpdateTableSchemaResponse.
 
-        **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-
         :return: The data_layering of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataLayering`
         """
         return self._data_layering
 
@@ -539,10 +509,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def data_layering(self, data_layering):
         r"""Sets the data_layering of this UpdateTableSchemaResponse.
 
-        **参数解释**: 数据分层 - ODS 操作数据存储层 - DWS 数据汇总层 - ADS 应用数据服务层  **约束限制** 不涉及 **取值范围**: - ODS - DWS - ADS  **默认值** 不涉及     
-
         :param data_layering: The data_layering of this UpdateTableSchemaResponse.
-        :type data_layering: str
+        :type data_layering: :class:`huaweicloudsdksecmaster.v2.DataLayering`
         """
         self._data_layering = data_layering
 
@@ -550,10 +518,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def data_classification(self):
         r"""Gets the data_classification of this UpdateTableSchemaResponse.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :return: The data_classification of this UpdateTableSchemaResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         return self._data_classification
 
@@ -561,10 +527,8 @@ class UpdateTableSchemaResponse(SdkResponse):
     def data_classification(self, data_classification):
         r"""Sets the data_classification of this UpdateTableSchemaResponse.
 
-        **参数解释**: 数据分类 - FACTUAL_DATA 事实数据 - DIMENSION_DATA 维度数据  **约束限制** 不涉及 **取值范围**: - FACTUAL_DATA - DIMENSION_DATA  **默认值** 不涉及      
-
         :param data_classification: The data_classification of this UpdateTableSchemaResponse.
-        :type data_classification: str
+        :type data_classification: :class:`huaweicloudsdksecmaster.v2.DataClassification`
         """
         self._data_classification = data_classification
 

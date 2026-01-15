@@ -15,7 +15,7 @@ class AttachmentInstanceType:
     sensitive_list = []
 
     openapi_types = {
-        'attachment_instance_type': 'str'
+        'attachment_instance_type': 'AttachmentInstanceTypeEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class AttachmentInstanceType:
 
         The model defined in huaweicloud sdk
 
-        :param attachment_instance_type: 接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-        :type attachment_instance_type: str
+        :param attachment_instance_type: 
+        :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         """
         
         
@@ -42,10 +42,8 @@ class AttachmentInstanceType:
     def attachment_instance_type(self):
         r"""Gets the attachment_instance_type of this AttachmentInstanceType.
 
-        接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-
         :return: The attachment_instance_type of this AttachmentInstanceType.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         """
         return self._attachment_instance_type
 
@@ -53,10 +51,8 @@ class AttachmentInstanceType:
     def attachment_instance_type(self, attachment_instance_type):
         r"""Sets the attachment_instance_type of this AttachmentInstanceType.
 
-        接入网络实例类型，GDGW (专线)和ER_ROUTE_TABLE (路由表)。
-
         :param attachment_instance_type: The attachment_instance_type of this AttachmentInstanceType.
-        :type attachment_instance_type: str
+        :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
         """
         self._attachment_instance_type = attachment_instance_type
 

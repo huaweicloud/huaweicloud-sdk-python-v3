@@ -31,7 +31,7 @@ class AuditScopeSwitchRequestNew:
 
         :param ids: 审计范围ID列表
         :type ids: list[str]
-        :param status: 状态  - OFF： 关闭  - ON： 启用
+        :param status: 状态  - OFF：关闭  - ON：启用
         :type status: str
         """
         
@@ -70,7 +70,7 @@ class AuditScopeSwitchRequestNew:
     def status(self):
         r"""Gets the status of this AuditScopeSwitchRequestNew.
 
-        状态  - OFF： 关闭  - ON： 启用
+        状态  - OFF：关闭  - ON：启用
 
         :return: The status of this AuditScopeSwitchRequestNew.
         :rtype: str
@@ -81,7 +81,7 @@ class AuditScopeSwitchRequestNew:
     def status(self, status):
         r"""Sets the status of this AuditScopeSwitchRequestNew.
 
-        状态  - OFF： 关闭  - ON： 启用
+        状态  - OFF：关闭  - ON：启用
 
         :param status: The status of this AuditScopeSwitchRequestNew.
         :type status: str

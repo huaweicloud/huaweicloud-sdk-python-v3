@@ -19,7 +19,7 @@ class ManagedOrganizationalUnit:
         'organizational_unit_id': 'str',
         'organizational_unit_name': 'str',
         'organizational_unit_status': 'str',
-        'organizational_unit_type': 'str',
+        'organizational_unit_type': 'OrganizationalUnitType',
         'parent_organizational_unit_id': 'str',
         'parent_organizational_unit_name': 'str',
         'created_at': 'datetime',
@@ -55,8 +55,8 @@ class ManagedOrganizationalUnit:
         :type organizational_unit_name: str
         :param organizational_unit_status: 注册OU状态。
         :type organizational_unit_status: str
-        :param organizational_unit_type: 组织单元类型。 * CORE - 基础组织单元 * CUSTOM - 组织单元 * ROOT - ROOT
-        :type organizational_unit_type: str
+        :param organizational_unit_type: 
+        :type organizational_unit_type: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitType`
         :param parent_organizational_unit_id: 父注册OU ID。
         :type parent_organizational_unit_id: str
         :param parent_organizational_unit_name: 父注册OU名称。
@@ -201,10 +201,8 @@ class ManagedOrganizationalUnit:
     def organizational_unit_type(self):
         r"""Gets the organizational_unit_type of this ManagedOrganizationalUnit.
 
-        组织单元类型。 * CORE - 基础组织单元 * CUSTOM - 组织单元 * ROOT - ROOT
-
         :return: The organizational_unit_type of this ManagedOrganizationalUnit.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitType`
         """
         return self._organizational_unit_type
 
@@ -212,10 +210,8 @@ class ManagedOrganizationalUnit:
     def organizational_unit_type(self, organizational_unit_type):
         r"""Sets the organizational_unit_type of this ManagedOrganizationalUnit.
 
-        组织单元类型。 * CORE - 基础组织单元 * CUSTOM - 组织单元 * ROOT - ROOT
-
         :param organizational_unit_type: The organizational_unit_type of this ManagedOrganizationalUnit.
-        :type organizational_unit_type: str
+        :type organizational_unit_type: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitType`
         """
         self._organizational_unit_type = organizational_unit_type
 

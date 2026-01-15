@@ -20,7 +20,7 @@ class Monitor:
         'disk_count': 'str',
         'disk_usage': 'str',
         'down_pps': 'str',
-        'health_status': 'str',
+        'health_status': 'NodeHealthStatus',
         'heart_beat': 'str',
         'heart_beat_time': 'int',
         'memory_cache': 'str',
@@ -69,8 +69,8 @@ class Monitor:
         :type disk_usage: str
         :param down_pps: 下载数据包每秒数量
         :type down_pps: str
-        :param health_status: **参数解释**: 节点的健康状态 - NORMAL 正常 - ANOMALIES 异常 - FAULTS 故障 - LOST_CONTACT 失联  **约束限制** 不涉及 **取值范围**: - NORMAL - ANOMALIES - FAULTS - LOST_CONTACT  **默认值** 不涉及
-        :type health_status: str
+        :param health_status: 
+        :type health_status: :class:`huaweicloudsdksecmaster.v1.NodeHealthStatus`
         :param heart_beat: **参数解释**: 节点是否成功收到心跳信号 - ONLINE 在线 - OFFLINE 离线  **约束限制** 不涉及 **取值范围**: - ONLINE - OFFLINE  **默认值** 不涉及
         :type heart_beat: str
         :param heart_beat_time: 最后一次接收到心跳信号的时间
@@ -265,10 +265,8 @@ class Monitor:
     def health_status(self):
         r"""Gets the health_status of this Monitor.
 
-        **参数解释**: 节点的健康状态 - NORMAL 正常 - ANOMALIES 异常 - FAULTS 故障 - LOST_CONTACT 失联  **约束限制** 不涉及 **取值范围**: - NORMAL - ANOMALIES - FAULTS - LOST_CONTACT  **默认值** 不涉及
-
         :return: The health_status of this Monitor.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.NodeHealthStatus`
         """
         return self._health_status
 
@@ -276,10 +274,8 @@ class Monitor:
     def health_status(self, health_status):
         r"""Sets the health_status of this Monitor.
 
-        **参数解释**: 节点的健康状态 - NORMAL 正常 - ANOMALIES 异常 - FAULTS 故障 - LOST_CONTACT 失联  **约束限制** 不涉及 **取值范围**: - NORMAL - ANOMALIES - FAULTS - LOST_CONTACT  **默认值** 不涉及
-
         :param health_status: The health_status of this Monitor.
-        :type health_status: str
+        :type health_status: :class:`huaweicloudsdksecmaster.v1.NodeHealthStatus`
         """
         self._health_status = health_status
 

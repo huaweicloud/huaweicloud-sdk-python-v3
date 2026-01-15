@@ -18,17 +18,19 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
         'mobile_printer_enable': 'bool',
         'print_data_compression_mode': 'bool',
         'sync_client_default_printer_enable': 'bool',
-        'universal_printer_driver': 'str'
+        'universal_printer_driver': 'str',
+        'network_redirect_printer_enable': 'bool'
     }
 
     attribute_map = {
         'mobile_printer_enable': 'mobile_printer_enable',
         'print_data_compression_mode': 'print_data_compression_mode',
         'sync_client_default_printer_enable': 'sync_client_default_printer_enable',
-        'universal_printer_driver': 'universal_printer_driver'
+        'universal_printer_driver': 'universal_printer_driver',
+        'network_redirect_printer_enable': 'network_redirect_printer_enable'
     }
 
-    def __init__(self, mobile_printer_enable=None, print_data_compression_mode=None, sync_client_default_printer_enable=None, universal_printer_driver=None):
+    def __init__(self, mobile_printer_enable=None, print_data_compression_mode=None, sync_client_default_printer_enable=None, universal_printer_driver=None, network_redirect_printer_enable=None):
         r"""PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
         :type sync_client_default_printer_enable: bool
         :param universal_printer_driver: 通用打印机驱动。取值为：Default：linux客户端选择Universal Printing PS，windows客户端选择HDP XPSDrv Driver。HDP XPSDrv Driver。Universal Printing PCL 5。Universal Printing PCL 6。Universal Printing PS。
         :type universal_printer_driver: str
+        :param network_redirect_printer_enable: 是否开启使用端侧网络连接网络打印机开关。取值为： false：表示关闭。 true：表示开启。
+        :type network_redirect_printer_enable: bool
         """
         
         
@@ -49,6 +53,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
         self._print_data_compression_mode = None
         self._sync_client_default_printer_enable = None
         self._universal_printer_driver = None
+        self._network_redirect_printer_enable = None
         self.discriminator = None
 
         if mobile_printer_enable is not None:
@@ -59,6 +64,8 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
             self.sync_client_default_printer_enable = sync_client_default_printer_enable
         if universal_printer_driver is not None:
             self.universal_printer_driver = universal_printer_driver
+        if network_redirect_printer_enable is not None:
+            self.network_redirect_printer_enable = network_redirect_printer_enable
 
     @property
     def mobile_printer_enable(self):
@@ -147,6 +154,28 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions:
         :type universal_printer_driver: str
         """
         self._universal_printer_driver = universal_printer_driver
+
+    @property
+    def network_redirect_printer_enable(self):
+        r"""Gets the network_redirect_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+
+        是否开启使用端侧网络连接网络打印机开关。取值为： false：表示关闭。 true：表示开启。
+
+        :return: The network_redirect_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        :rtype: bool
+        """
+        return self._network_redirect_printer_enable
+
+    @network_redirect_printer_enable.setter
+    def network_redirect_printer_enable(self, network_redirect_printer_enable):
+        r"""Sets the network_redirect_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+
+        是否开启使用端侧网络连接网络打印机开关。取值为： false：表示关闭。 true：表示开启。
+
+        :param network_redirect_printer_enable: The network_redirect_printer_enable of this PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions.
+        :type network_redirect_printer_enable: bool
+        """
+        self._network_redirect_printer_enable = network_redirect_printer_enable
 
     def to_dict(self):
         result = {}

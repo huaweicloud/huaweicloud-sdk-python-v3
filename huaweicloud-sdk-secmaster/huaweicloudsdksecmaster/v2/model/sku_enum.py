@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SkuEnum:
-
+    """
+    allowed enum values
+    """
+    FLOW_DATA_BANDWIDTH = "FLOW_DATA_BANDWIDTH"
+    CSS_CAPACITY = "CSS_CAPACITY"
+    PAIMON_CAPACITY = "PAIMON_CAPACITY"
+    OBS_CAPACITY = "OBS_CAPACITY"
+    JOB_CAPACITY = "JOB_CAPACITY"
+    AD_HOC_COUNT = "AD_HOC_COUNT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

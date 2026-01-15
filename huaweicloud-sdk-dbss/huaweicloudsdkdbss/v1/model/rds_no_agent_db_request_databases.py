@@ -59,7 +59,7 @@ class RdsNoAgentDbRequestDatabases:
         :type instance_name: str
         :param version: 数据库版本
         :type version: str
-        :param type: 数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - TAURUS: Taurus DB - DWS: GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS： DDS(MongoDB)
+        :param type: 数据库类型 - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL：PostgreSQL - TAURUS：Taurus DB - DWS：GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS：DDS(MongoDB)
         :type type: str
         :param enterprise_id: 企业项目ID
         :type enterprise_id: str
@@ -251,7 +251,7 @@ class RdsNoAgentDbRequestDatabases:
     def type(self):
         r"""Gets the type of this RdsNoAgentDbRequestDatabases.
 
-        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - TAURUS: Taurus DB - DWS: GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS： DDS(MongoDB)
+        数据库类型 - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL：PostgreSQL - TAURUS：Taurus DB - DWS：GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS：DDS(MongoDB)
 
         :return: The type of this RdsNoAgentDbRequestDatabases.
         :rtype: str
@@ -262,7 +262,7 @@ class RdsNoAgentDbRequestDatabases:
     def type(self, type):
         r"""Sets the type of this RdsNoAgentDbRequestDatabases.
 
-        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - TAURUS: Taurus DB - DWS: GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS： DDS(MongoDB)
+        数据库类型 - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL：PostgreSQL - TAURUS：Taurus DB - DWS：GaussDB(DWS) - GAUSSDBOPENGAUSS：GaussDB/openGauss - DDS：DDS(MongoDB)
 
         :param type: The type of this RdsNoAgentDbRequestDatabases.
         :type type: str

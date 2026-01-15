@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AnalysisScriptType:
-
+    """
+    allowed enum values
+    """
+    SEC_MASTER_SQL = "SEC_MASTER_SQL"
+    RETRIEVE_SQL = "RETRIEVE_SQL"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

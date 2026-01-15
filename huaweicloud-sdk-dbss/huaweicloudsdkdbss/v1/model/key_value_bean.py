@@ -29,9 +29,9 @@ class KeyValueBean:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 键。最大长度128个字符。
         :type key: str
-        :param value: 值
+        :param value: 值。每个值最大长度255个字符。
         :type value: str
         """
         
@@ -49,7 +49,7 @@ class KeyValueBean:
     def key(self):
         r"""Gets the key of this KeyValueBean.
 
-        键
+        键。最大长度128个字符。
 
         :return: The key of this KeyValueBean.
         :rtype: str
@@ -60,7 +60,7 @@ class KeyValueBean:
     def key(self, key):
         r"""Sets the key of this KeyValueBean.
 
-        键
+        键。最大长度128个字符。
 
         :param key: The key of this KeyValueBean.
         :type key: str
@@ -71,7 +71,7 @@ class KeyValueBean:
     def value(self):
         r"""Gets the value of this KeyValueBean.
 
-        值
+        值。每个值最大长度255个字符。
 
         :return: The value of this KeyValueBean.
         :rtype: str
@@ -82,7 +82,7 @@ class KeyValueBean:
     def value(self, value):
         r"""Sets the value of this KeyValueBean.
 
-        值
+        值。每个值最大长度255个字符。
 
         :param value: The value of this KeyValueBean.
         :type value: str

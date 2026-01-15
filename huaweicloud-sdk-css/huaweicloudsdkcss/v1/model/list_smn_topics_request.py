@@ -27,7 +27,7 @@ class ListSmnTopicsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 指定待查询的集群ID。
+        :param domain_id: 域账号ID。
         :type domain_id: str
         """
         
@@ -42,7 +42,7 @@ class ListSmnTopicsRequest:
     def domain_id(self):
         r"""Gets the domain_id of this ListSmnTopicsRequest.
 
-        指定待查询的集群ID。
+        域账号ID。
 
         :return: The domain_id of this ListSmnTopicsRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ListSmnTopicsRequest:
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this ListSmnTopicsRequest.
 
-        指定待查询的集群ID。
+        域账号ID。
 
         :param domain_id: The domain_id of this ListSmnTopicsRequest.
         :type domain_id: str

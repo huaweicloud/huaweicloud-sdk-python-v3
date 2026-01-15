@@ -17,7 +17,7 @@ class BucketDto:
     openapi_types = {
         'name': 'str',
         'region': 'str',
-        'type': 'str'
+        'type': 'BucketType'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class BucketDto:
         :param region: 区域
         :type region: str
         :param type: 
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.BucketType`
         """
         
         
@@ -102,7 +102,7 @@ class BucketDto:
         r"""Gets the type of this BucketDto.
 
         :return: The type of this BucketDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.BucketType`
         """
         return self._type
 
@@ -111,7 +111,7 @@ class BucketDto:
         r"""Sets the type of this BucketDto.
 
         :param type: The type of this BucketDto.
-        :type type: str
+        :type type: :class:`huaweicloudsdkeihealth.v1.BucketType`
         """
         self._type = type
 

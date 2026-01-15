@@ -39,7 +39,7 @@ class IpaddressesData:
 
         The model defined in huaweicloud sdk
 
-        :param status: 资源状态。
+        :param status: **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
         :type status: str
         :param id: 终端节点的ID，UUID形式的一个资源标识。
         :type id: str
@@ -85,7 +85,7 @@ class IpaddressesData:
     def status(self):
         r"""Gets the status of this IpaddressesData.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :return: The status of this IpaddressesData.
         :rtype: str
@@ -96,7 +96,7 @@ class IpaddressesData:
     def status(self, status):
         r"""Sets the status of this IpaddressesData.
 
-        资源状态。
+        **参数解释：** 资源状态。 **取值范围：** - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_DELETE：删除中 - ERROR：失败
 
         :param status: The status of this IpaddressesData.
         :type status: str

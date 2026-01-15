@@ -19,7 +19,8 @@ class ListAppAuthorizationsRequest:
         'limit': 'int',
         'app_id': 'str',
         'name': 'str',
-        'target_type': 'str'
+        'target_type': 'str',
+        'assign_type': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ListAppAuthorizationsRequest:
         'limit': 'limit',
         'app_id': 'app_id',
         'name': 'name',
-        'target_type': 'target_type'
+        'target_type': 'target_type',
+        'assign_type': 'assign_type'
     }
 
-    def __init__(self, offset=None, limit=None, app_id=None, name=None, target_type=None):
+    def __init__(self, offset=None, limit=None, app_id=None, name=None, target_type=None, assign_type=None):
         r"""ListAppAuthorizationsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListAppAuthorizationsRequest:
         :type name: str
         :param target_type: 类型： * &#x60;SIMPLE&#x60; - 普通用户 * &#x60;USER_GROUP&#x60; - 用户组
         :type target_type: str
+        :param assign_type: 类型： * &#x60;ALL_USER&#x60; - 所有用户 * &#x60;ASSIGN_USER&#x60; - 部分用户
+        :type assign_type: str
         """
         
         
@@ -54,6 +58,7 @@ class ListAppAuthorizationsRequest:
         self._app_id = None
         self._name = None
         self._target_type = None
+        self._assign_type = None
         self.discriminator = None
 
         if offset is not None:
@@ -65,6 +70,8 @@ class ListAppAuthorizationsRequest:
             self.name = name
         if target_type is not None:
             self.target_type = target_type
+        if assign_type is not None:
+            self.assign_type = assign_type
 
     @property
     def offset(self):
@@ -175,6 +182,28 @@ class ListAppAuthorizationsRequest:
         :type target_type: str
         """
         self._target_type = target_type
+
+    @property
+    def assign_type(self):
+        r"""Gets the assign_type of this ListAppAuthorizationsRequest.
+
+        类型： * `ALL_USER` - 所有用户 * `ASSIGN_USER` - 部分用户
+
+        :return: The assign_type of this ListAppAuthorizationsRequest.
+        :rtype: str
+        """
+        return self._assign_type
+
+    @assign_type.setter
+    def assign_type(self, assign_type):
+        r"""Sets the assign_type of this ListAppAuthorizationsRequest.
+
+        类型： * `ALL_USER` - 所有用户 * `ASSIGN_USER` - 部分用户
+
+        :param assign_type: The assign_type of this ListAppAuthorizationsRequest.
+        :type assign_type: str
+        """
+        self._assign_type = assign_type
 
     def to_dict(self):
         result = {}

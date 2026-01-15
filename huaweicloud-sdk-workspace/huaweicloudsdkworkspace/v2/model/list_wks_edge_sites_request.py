@@ -17,16 +17,20 @@ class ListWksEdgeSitesRequest:
     openapi_types = {
         'name': 'str',
         'availability_zone_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'name': 'name',
         'availability_zone_id': 'availability_zone_id',
-        'status': 'status'
+        'status': 'status',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, name=None, availability_zone_id=None, status=None):
+    def __init__(self, name=None, availability_zone_id=None, status=None, limit=None, offset=None):
         r"""ListWksEdgeSitesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListWksEdgeSitesRequest:
         :type availability_zone_id: str
         :param status: 根据边缘小站部署状态查询。
         :type status: str
+        :param limit: 每页数量，范围0-1000，默认1000。
+        :type limit: int
+        :param offset: 偏移量，默认0。
+        :type offset: int
         """
         
         
@@ -44,6 +52,8 @@ class ListWksEdgeSitesRequest:
         self._name = None
         self._availability_zone_id = None
         self._status = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if name is not None:
@@ -52,6 +62,10 @@ class ListWksEdgeSitesRequest:
             self.availability_zone_id = availability_zone_id
         if status is not None:
             self.status = status
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def name(self):
@@ -118,6 +132,50 @@ class ListWksEdgeSitesRequest:
         :type status: str
         """
         self._status = status
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListWksEdgeSitesRequest.
+
+        每页数量，范围0-1000，默认1000。
+
+        :return: The limit of this ListWksEdgeSitesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListWksEdgeSitesRequest.
+
+        每页数量，范围0-1000，默认1000。
+
+        :param limit: The limit of this ListWksEdgeSitesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListWksEdgeSitesRequest.
+
+        偏移量，默认0。
+
+        :return: The offset of this ListWksEdgeSitesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListWksEdgeSitesRequest.
+
+        偏移量，默认0。
+
+        :param offset: The offset of this ListWksEdgeSitesRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

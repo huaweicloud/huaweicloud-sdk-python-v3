@@ -34,7 +34,7 @@ class ChangeDbEncryptSecurityGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: - 0: 正常 - 非0: 异常
+        :param code: - 0：正常 - 非0：异常
         :type code: int
         :param description: 备注
         :type description: str
@@ -65,7 +65,7 @@ class ChangeDbEncryptSecurityGroupResponse(SdkResponse):
     def code(self):
         r"""Gets the code of this ChangeDbEncryptSecurityGroupResponse.
 
-        - 0: 正常 - 非0: 异常
+        - 0：正常 - 非0：异常
 
         :return: The code of this ChangeDbEncryptSecurityGroupResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ChangeDbEncryptSecurityGroupResponse(SdkResponse):
     def code(self, code):
         r"""Sets the code of this ChangeDbEncryptSecurityGroupResponse.
 
-        - 0: 正常 - 非0: 异常
+        - 0：正常 - 非0：异常
 
         :param code: The code of this ChangeDbEncryptSecurityGroupResponse.
         :type code: int

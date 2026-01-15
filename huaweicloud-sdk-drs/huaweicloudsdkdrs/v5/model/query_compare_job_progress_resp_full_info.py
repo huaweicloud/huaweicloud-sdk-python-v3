@@ -31,7 +31,7 @@ class QueryCompareJobProgressRespFullInfo:
 
         The model defined in huaweicloud sdk
 
-        :param progress: 全量数据对比进度，单位为%。
+        :param progress: 增量数据对比进度，单位为%。
         :type progress: float
         :param src_speed: 全量数据对比速率。
         :type src_speed: str
@@ -57,7 +57,7 @@ class QueryCompareJobProgressRespFullInfo:
     def progress(self):
         r"""Gets the progress of this QueryCompareJobProgressRespFullInfo.
 
-        全量数据对比进度，单位为%。
+        增量数据对比进度，单位为%。
 
         :return: The progress of this QueryCompareJobProgressRespFullInfo.
         :rtype: float
@@ -68,7 +68,7 @@ class QueryCompareJobProgressRespFullInfo:
     def progress(self, progress):
         r"""Sets the progress of this QueryCompareJobProgressRespFullInfo.
 
-        全量数据对比进度，单位为%。
+        增量数据对比进度，单位为%。
 
         :param progress: The progress of this QueryCompareJobProgressRespFullInfo.
         :type progress: float

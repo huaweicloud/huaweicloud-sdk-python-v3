@@ -15,9 +15,9 @@ class Strategy:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str',
-        'scene': 'str',
-        'effect': 'str'
+        'status': 'OperationStatus',
+        'scene': 'Scene',
+        'effect': 'Effect'
     }
 
     attribute_map = {
@@ -31,12 +31,12 @@ class Strategy:
 
         The model defined in huaweicloud sdk
 
-        :param status: 运维状态说明： - FREEZE - 已冻结
-        :type status: str
-        :param scene: 资源运营状态场景： ARREAR：欠费场景； POLICE：公安场景。 ILLEGAL：违规场景。 VERIFY：客户未实名认证冻结场景。
-        :type scene: str
-        :param effect: 资源运营功能： DELETABLE：可删除 UNDELETABLE：不可删除
-        :type effect: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkcloudpond.v1.OperationStatus`
+        :param scene: 
+        :type scene: :class:`huaweicloudsdkcloudpond.v1.Scene`
+        :param effect: 
+        :type effect: :class:`huaweicloudsdkcloudpond.v1.Effect`
         """
         
         
@@ -57,10 +57,8 @@ class Strategy:
     def status(self):
         r"""Gets the status of this Strategy.
 
-        运维状态说明： - FREEZE - 已冻结
-
         :return: The status of this Strategy.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.OperationStatus`
         """
         return self._status
 
@@ -68,10 +66,8 @@ class Strategy:
     def status(self, status):
         r"""Sets the status of this Strategy.
 
-        运维状态说明： - FREEZE - 已冻结
-
         :param status: The status of this Strategy.
-        :type status: str
+        :type status: :class:`huaweicloudsdkcloudpond.v1.OperationStatus`
         """
         self._status = status
 
@@ -79,10 +75,8 @@ class Strategy:
     def scene(self):
         r"""Gets the scene of this Strategy.
 
-        资源运营状态场景： ARREAR：欠费场景； POLICE：公安场景。 ILLEGAL：违规场景。 VERIFY：客户未实名认证冻结场景。
-
         :return: The scene of this Strategy.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.Scene`
         """
         return self._scene
 
@@ -90,10 +84,8 @@ class Strategy:
     def scene(self, scene):
         r"""Sets the scene of this Strategy.
 
-        资源运营状态场景： ARREAR：欠费场景； POLICE：公安场景。 ILLEGAL：违规场景。 VERIFY：客户未实名认证冻结场景。
-
         :param scene: The scene of this Strategy.
-        :type scene: str
+        :type scene: :class:`huaweicloudsdkcloudpond.v1.Scene`
         """
         self._scene = scene
 
@@ -101,10 +93,8 @@ class Strategy:
     def effect(self):
         r"""Gets the effect of this Strategy.
 
-        资源运营功能： DELETABLE：可删除 UNDELETABLE：不可删除
-
         :return: The effect of this Strategy.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.Effect`
         """
         return self._effect
 
@@ -112,10 +102,8 @@ class Strategy:
     def effect(self, effect):
         r"""Sets the effect of this Strategy.
 
-        资源运营功能： DELETABLE：可删除 UNDELETABLE：不可删除
-
         :param effect: The effect of this Strategy.
-        :type effect: str
+        :type effect: :class:`huaweicloudsdkcloudpond.v1.Effect`
         """
         self._effect = effect
 

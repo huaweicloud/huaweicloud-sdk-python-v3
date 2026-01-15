@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class HealthStatus:
-
+    """
+    allowed enum values
+    """
+    SUCCESS_PART = "SUCCESS_PART"
+    SUCCESS_ALL = "SUCCESS_ALL"
+    SUCCESS_NO = "SUCCESS_NO"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

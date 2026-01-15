@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SourceRepoType:
-
+    """
+    allowed enum values
+    """
+    GITHUB = "GitHub"
+    GITLAB = "GitLab"
+    GITEE = "Gitee"
+    BITBUCKET = "Bitbucket"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

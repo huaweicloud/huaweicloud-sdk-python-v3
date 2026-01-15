@@ -19,7 +19,7 @@ class ModelInfo:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'type': 'str',
+        'type': 'ModelType',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'current_version': 'ModelVersionInfo',
@@ -53,8 +53,8 @@ class ModelInfo:
         :type name: str
         :param description: 描述信息
         :type description: str
-        :param type: 模型的类型，可选值： - LLM_MODEL：大语言模型
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         :param create_time: 创建时间
         :type create_time: datetime
         :param update_time: 更新时间
@@ -194,10 +194,8 @@ class ModelInfo:
     def type(self):
         r"""Gets the type of this ModelInfo.
 
-        模型的类型，可选值： - LLM_MODEL：大语言模型
-
         :return: The type of this ModelInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         """
         return self._type
 
@@ -205,10 +203,8 @@ class ModelInfo:
     def type(self, type):
         r"""Sets the type of this ModelInfo.
 
-        模型的类型，可选值： - LLM_MODEL：大语言模型
-
         :param type: The type of this ModelInfo.
-        :type type: str
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
         """
         self._type = type
 

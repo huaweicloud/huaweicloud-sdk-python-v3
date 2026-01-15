@@ -1,3 +1,663 @@
+# 3.1.183 2026-01-15
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateRuleNew**
+    - changes of request param
+      - `+ actions.request_limit_rule`
+      - `- actions.request_limit_rules`
+  - **ShowDomainTemplate**
+    - changes of response param
+      - `+ templates`
+      - `- temlates`
+  - **CreateRuleNew**
+    - changes of request param
+      - `+ actions.request_limit_rule`
+      - `- actions.request_limit_rules`
+  - **ListRuleDetails**
+    - changes of response param
+      - `+ rules.actions.request_limit_rule`
+      - `- rules.actions.request_limit_rules`
+  - **UpdateFullRule**
+    - changes of request param
+      - `+ rules.actions.request_limit_rule`
+      - `- rules.actions.request_limit_rules`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowAiOpsDetector`, `ShowAiOpsSetting`, `UpdateAiOpsSetting`, `CloseAiOpsSetting`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAiOps**
+    - changes of request param
+      - `+ check_type`
+      - `+ check_items`
+  - **ListAiOps**
+    - changes of request param
+      - `+ report`
+    - changes of response param
+      - `+ aiops_list.check_type`
+      - `+ aiops_list.trigger_type`
+      - `- aiops_list.create_time`
+      - `- aiops_list.smn_status`
+      - `- aiops_list.smn_fail_reason`
+      - `+ aiops_list.summary.highRisk`
+      - `+ aiops_list.summary.mediumRisk`
+      - `+ aiops_list.summary.normal`
+      - `- aiops_list.summary.high`
+      - `- aiops_list.summary.medium`
+      - `* aiops_list.summary: object -> object<SummaryInfo>`
+      - `+ aiops_list.task_risks.id`
+      - `+ aiops_list.task_risks.name`
+      - `+ aiops_list.task_risks.result`
+      - `- aiops_list.task_risks.riskType`
+      - `* aiops_list.task_risks: list<AIOpsRiskInfo> -> list<AiOpsRiskObject>`
+      - `* aiops_list: list<object> -> list<AiOps>`
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEcsSpecificationNew**
+    - changes of response param
+      - `+ specifications`
+      - `- specification`
+  - **ListAuditRuleRisksNew**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DNS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchStartJobs**
+    - changes of request param
+      - `+ jobs.is_auto_create_compare`
+  - **BatchListJobDetails**
+    - changes of response param
+      - `+ results.job_kernel_direction`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ShowSubscriptionLists`
+    - `ShowColumnInfos`
+    - `DeleteColumnInfos`
+    - `ShowReplayProgress`
+    - `ModifyColumnInfos`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSupportObjectType**
+    - changes of response param
+      - `+ import_mapping_type`
+      - `+ is_import_unique_key`
+  - **ShowDirtyData**
+    - changes of request param
+      - `+ anonymize_mode`
+      - `+ task_mode`
+  - **ShowProgressData**
+    - changes of request param
+      - `+ search_name`
+  - **ListTags**
+    - changes of request param
+      - `+ resource_type: enum value [verify]`
+  - **ListAsyncJobDetail**
+    - changes of response param
+      - `+ jobs.job_kernel_direction`
+  - **ShowJobDetail**
+    - changes of request param
+      - `+ log_level`
+    - changes of response param
+      - `+ job.job_kernel_direction`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_params.is_auto_create_compare`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_params.is_auto_create_compare`
+
+### HuaweiCloud SDK EPS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEnterpriseProject**
+    - changes of request param
+      - `+ type`
+
+### HuaweiCloud SDK OMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSyncTask**
+    - changes of request param
+      - `* query_time: string -> int64`
+  - **ListSyncTaskStatistic**
+    - changes of request param
+      - `* start_time: string -> int64`
+      - `* end_time: string -> int64`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of response param
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **CreatePort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **ShowPort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **UpdatePort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronListPorts**
+    - changes of response param
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **NeutronCreatePort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronShowPort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **NeutronUpdatePort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of response param
+      - `+ ports.binding:vif_details.vlan_id`
+      - `+ ports.binding:vif_details.parent_id`
+      - `+ ports.binding:vif_details.parent_device_id`
+  - **ShowPort**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **AddSecurityGroups**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+  - **RemoveSecurityGroups**
+    - changes of response param
+      - `+ port.binding:vif_details.vlan_id`
+      - `+ port.binding:vif_details.parent_id`
+      - `+ port.binding:vif_details.parent_device_id`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchUpdateIpReputationRules**
+    - changes of request param
+      - `- policyname`
+  - **BatchUpdateAntitamperRules**
+    - changes of request param
+      - `+ name`
+  - **BatchUpdateCustomRules**
+    - changes of request param
+      - `- id`
+      - `- policyid`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListDesktopsByTags`, `ListNotificationRecords`, `CheckCidr`, `ValidateDomainController`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateTenantProfile**
+    - changes of request param
+      - `- X-Auth-Token`
+  - **RebuildDesktopPool**
+    - changes of request param
+      - `+ encrypt_type`
+      - `+ kms_id`
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **DeleteDesktopPoolVolumes**
+    - changes of request param
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `- volumes.type`
+      - `- volumes.size`
+      - `- volumes.iops`
+      - `- volumes.throughput`
+      - `- volumes.resource_spec_code`
+      - `* volumes: list<VolumeInfo> -> list<object>`
+  - **ExpandDesktopPoolVolumes**
+    - changes of request param
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `- volumes.type`
+      - `- volumes.iops`
+      - `- volumes.throughput`
+      - `- volumes.resource_spec_code`
+      - `* volumes: list<VolumeInfo> -> list<object>`
+  - **BatchRebuildDesktopsSystemDisk**
+    - changes of request param
+      - `+ encrypt_type`
+      - `+ kms_id`
+    - changes of response param
+      - `+ error_detail`
+  - **ExportUserConnectionNew**
+    - changes of request param
+      - `+ public_ip`
+  - **ShowDesktopPoolDetail**
+    - changes of response param
+      - `+ root_volume.kms_id`
+  - **UpdateDesktopPool**
+    - changes of request param
+      - `+ root_volume.kms_id`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ResizeDesktopPool**
+    - changes of request param
+      - `+ handle_type`
+      - `+ desktop_ids`
+  - **AddDesktopPoolVolumes**
+    - changes of request param
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `+ volumes.kms_id`
+  - **ShowDesktopMonitorData**
+    - changes of response param
+      - `+ error_detail`
+      - `+ user_online_info.error_detail`
+  - **ChangeDesktopToImage**
+    - changes of request param
+      - `+ is_clear_data`
+  - **ListNatGateways**
+    - changes of request param
+      - `+ offset`
+  - **CreateChangeOrder**
+    - changes of request param
+      - `+ is_auto_renew`
+  - **CreateDesktopBatchOrder**
+    - changes of request param
+      - `+ agency_urn`
+      - `+ add_volume_param.desktop_pool_disk_id`
+      - `+ add_volume_param.kms_id`
+      - `+ add_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ extend_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ resize_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ change_image_param.encrypt_type`
+      - `+ change_image_param.kms_id`
+      - `+ change_image_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ add_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ delete_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateDesktopPoolChangeOrder**
+    - changes of request param
+      - `+ agency_urn`
+      - `+ add_volume_param.desktop_pool_disk_id`
+      - `+ add_volume_param.kms_id`
+      - `+ add_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ extend_volume_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ resize_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ change_image_param.encrypt_type`
+      - `+ change_image_param.kms_id`
+      - `+ change_image_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ add_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+      - `+ delete_sub_resources_param.handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateResourcePackagesOrder**
+    - changes of request param
+      - `+ resource_packages.cloud_service_type`
+      - `+ resource_packages.resource_type`
+      - `+ resource_packages.package_type`
+      - `+ resource_packages.cpu`
+      - `+ resource_packages.architecture`
+      - `+ resource_packages.memory`
+      - `+ resource_packages.domain_ids`
+      - `+ resource_packages.resource_packages`
+      - `- resource_packages.status`
+      - `- resource_packages.period_type`
+      - `- resource_packages.period_value`
+      - `- resource_packages.measurement_name`
+      - `- resource_packages.threshold`
+      - `* resource_packages: list<ResourcePackage> -> list<DesktopResourcePackage>`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `+ scheduled_tasks.expire_time`
+      - `+ scheduled_tasks.extra_params`
+  - **CreateScheduledTasks**
+    - changes of request param
+      - `+ task_type: enum value [DELETE_BLACK_ECS]`
+  - **ListScheduledTasksRecords**
+    - changes of response param
+      - `+ tasks_records.expire_time`
+      - `+ tasks_records.extra_params`
+  - **AddDesktopVolumes**
+    - changes of request param
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+      - `+ volumes.kms_id`
+      - `* volumes.size: int64 -> int32`
+  - **ListSecurityGroups**
+    - changes of response param
+      - `+ security_groups.description`
+      - `+ security_groups.security_group_rules`
+      - `+ security_groups.tenant_id`
+      - `+ security_groups.project_id`
+      - `+ security_groups.created_at`
+      - `+ security_groups.updated_at`
+      - `* security_groups: list<SecurityGroup> -> list<SimpleSecurityGroupsInfo>`
+  - **ListSubnets**
+    - changes of response param
+      - `+ subnets.id`
+      - `+ subnets.unused`
+      - `+ subnets.checked`
+      - `+ subnets.vpc_id`
+      - `+ subnets.name`
+      - `+ subnets.cidr`
+      - `+ subnets.gateway_ip`
+      - `+ subnets.dhcp_enable`
+      - `+ subnets.ipv6_enable`
+      - `+ subnets.primary_dns`
+      - `+ subnets.secondary_dns`
+      - `+ subnets.status`
+      - `+ subnets.availability_zone`
+      - `+ subnets.neutron_subnet_id`
+      - `+ subnets.neutron_ipv6_subnet_id`
+      - `+ subnets.description`
+      - `- subnets.subnet_id`
+      - `* subnets: list<SubnetInfo> -> list<SingleSubnetInfo>`
+  - **ImportPolicyGroups**
+    - changes of response param
+      - `+ error_detail`
+  - **ListProducts**
+    - changes of response param
+      - `- products.flavor_id`
+  - **ImportUserList**
+    - changes of response param
+      - `+ error_detail`
+  - **ExportCertCsrFile**
+    - changes of request param
+      - `- signature_algorithm`
+  - **ImportCert**
+    - changes of request param
+      - `- signature_algorithm`
+  - **CheckEdgeSiteResources**
+    - changes of request param
+      - `* volumes: list<Volume> -> list<CheckEdgeSiteResourcesVolume>`
+  - **ListLoginRecordsNew**
+    - changes of request param
+      - `+ public_ip`
+  - **UpdateUploadedApp**
+    - changes of request param
+      - `- X-Auth-Token`
+  - **ListAppAuthorizations**
+    - changes of request param
+      - `+ assign_type`
+  - **UpdateAppRule**
+    - changes of request param
+      - `- X-Auth-Token`
+  - **CreateDesktopPool**
+    - changes of request param
+      - `+ root_volume.kms_id`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ListDesktopPools**
+    - changes of response param
+      - `+ desktop_pools.root_volume.kms_id`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ buy_type`
+      - `+ root_volume.iops`
+      - `+ root_volume.throughput`
+      - `+ root_volume.kms_id`
+      - `* root_volume.size: int64 -> int32`
+      - `- security_groups.name`
+      - `* security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **ListDesktops**
+    - changes of response param
+      - `+ desktops.pool_id`
+  - **BatchDetachInstances**
+    - changes of request param
+      - `* desktops.detach_user_infos: list<AttachInstancesUserInfo> -> list<DetachInstancesUserInfo>`
+  - **AttachInstances**
+    - changes of request param
+      - `+ encrypt_type`
+      - `+ kms_id`
+  - **EstimateDesktopPoolExtendVolume**
+    - changes of request param
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **AddVolumes**
+    - changes of request param
+      - `+ desktop_volumes.volumes.iops`
+      - `+ desktop_volumes.volumes.throughput`
+      - `+ desktop_volumes.volumes.kms_id`
+      - `* desktop_volumes.volumes.size: int64 -> int32`
+  - **ListHourPackagesType**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListWksEdgeSites**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ ad_domains.domain_controllers`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `+ ad_domains.domain_controllers`
+  - **ApplyWorkspace**
+    - changes of request param
+      - `- ad_domains.cba_enabled`
+      - `- ad_domains.certificate_id`
+      - `* ad_domains: object<AdDomain> -> object<ApplyWorkspaceAdDomain>`
+  - **ListPoolDesktopsDetail**
+    - changes of response param
+      - `+ period_charge_image_desktops_num`
+      - `+ on_demand_free_image_desktops_num`
+      - `+ on_demand_charge_image_desktops_num`
+      - `+ period_free_image_desktops_num`
+      - `+ pool_desktops.is_freeze`
+      - `+ pool_desktops.root_volume.desktop_pool_disk_id`
+  - **UpdateDesktop**
+    - changes of response param
+      - `+ error_detail`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.is_freeze`
+      - `+ desktop.root_volume.desktop_pool_disk_id`
+  - **ListDesktopsDetail**
+    - changes of response param
+      - `+ desktops.is_freeze`
+      - `+ desktops.root_volume.desktop_pool_disk_id`
+  - **EstimateChangeImages**
+    - changes of request param
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolAddVolume**
+    - changes of request param
+      - `+ desktop_pool_disk_id`
+      - `+ kms_id`
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolChangeImage**
+    - changes of request param
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateDesktopPoolResize**
+    - changes of request param
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **EstimateAddResources**
+    - changes of request param
+      - `+ handle_type: enum value [ONLY_FOR_EXPAND,FOR_EXPAND_AND_IDLE,FOR_EXPAND_AND_ALL]`
+  - **CreateDesktopOrder**
+    - changes of request param
+      - `+ hour_package_resources.create_desktops.buy_type`
+      - `+ hour_package_resources.create_desktops.root_volume.iops`
+      - `+ hour_package_resources.create_desktops.root_volume.throughput`
+      - `+ hour_package_resources.create_desktops.root_volume.kms_id`
+      - `* hour_package_resources.create_desktops.root_volume.size: int64 -> int32`
+      - `- hour_package_resources.create_desktops.security_groups.name`
+      - `* hour_package_resources.create_desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+  - **CreateOrder**
+    - changes of request param
+      - `+ resources.rebuild_desktops.encrypt_type`
+      - `+ resources.rebuild_desktops.kms_id`
+      - `+ resources.add_volumes.volumes.iops`
+      - `+ resources.add_volumes.volumes.throughput`
+      - `+ resources.add_volumes.volumes.kms_id`
+      - `* resources.add_volumes.volumes.size: int64 -> int32`
+      - `+ resources.create_desktops.buy_type`
+      - `- resources.create_desktops.security_groups.name`
+      - `* resources.create_desktops.security_groups: list<SecurityGroup> -> list<SecurityGroupIdInfo>`
+      - `+ resources.create_desktop_pool.root_volume.kms_id`
+      - `+ resources.subscribe_user_sharer.users.user_id`
+      - `- resources.subscribe_user_sharer.users.id`
+      - `- resources.subscribe_user_sharer.users.sid`
+      - `- resources.subscribe_user_sharer.users.user_email`
+      - `- resources.subscribe_user_sharer.users.total_desktops`
+      - `- resources.subscribe_user_sharer.users.user_phone`
+      - `- resources.subscribe_user_sharer.users.active_type`
+      - `- resources.subscribe_user_sharer.users.is_pre_user`
+      - `- resources.subscribe_user_sharer.users.account_expires`
+      - `- resources.subscribe_user_sharer.users.password_never_expired`
+      - `- resources.subscribe_user_sharer.users.account_expired`
+      - `- resources.subscribe_user_sharer.users.enable_change_password`
+      - `- resources.subscribe_user_sharer.users.next_login_change_password`
+      - `- resources.subscribe_user_sharer.users.description`
+      - `- resources.subscribe_user_sharer.users.locked`
+      - `- resources.subscribe_user_sharer.users.disabled`
+      - `- resources.subscribe_user_sharer.users.share_space_subscription`
+      - `- resources.subscribe_user_sharer.users.share_space_desktops`
+      - `- resources.subscribe_user_sharer.users.group_names`
+      - `- resources.subscribe_user_sharer.users.enterprise_project_id`
+      - `- resources.subscribe_user_sharer.users.user_info_map`
+      - `- resources.subscribe_user_sharer.users.domain`
+      - `* resources.subscribe_user_sharer.users: list<User> -> list<SubscribeUserInfo>`
+      - `+ resources.attach_desktops.encrypt_type`
+      - `+ resources.attach_desktops.kms_id`
+  - **ListPoliciesOfPolicyGroup**
+    - changes of response param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **UpdatePoliciesOfPolicyGroup**
+    - changes of request param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+    - changes of response param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.cloud_storage`
+      - `+ policies.user_profile`
+      - `+ policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `+ policy_groups.policies.cloud_storage`
+      - `+ policy_groups.policies.user_profile`
+      - `+ policy_groups.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyDetailInfoById**
+    - changes of response param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.cloud_storage`
+      - `+ policy_group.policies.user_profile`
+      - `+ policy_group.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+  - **ListPolicyGroupInfo**
+    - changes of response param
+      - `+ policy_groups.policies.cloud_storage`
+      - `+ policy_groups.policies.user_profile`
+      - `+ policy_groups.policies.peripherals.device_redirection.printer_redirection.options.network_redirect_printer_enable`
+
 # 3.1.182 2026-01-08
 
 ### HuaweiCloud SDK AS

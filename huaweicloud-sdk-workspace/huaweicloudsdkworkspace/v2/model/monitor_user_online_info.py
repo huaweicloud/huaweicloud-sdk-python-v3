@@ -17,6 +17,7 @@ class MonitorUserOnlineInfo:
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
+        'error_detail': 'str',
         'encoded_authorization_message': 'str',
         'connection_setup_time': 'str',
         'connection_end_time': 'str'
@@ -25,12 +26,13 @@ class MonitorUserOnlineInfo:
     attribute_map = {
         'error_code': 'error_code',
         'error_msg': 'error_msg',
+        'error_detail': 'error_detail',
         'encoded_authorization_message': 'encoded_authorization_message',
         'connection_setup_time': 'connection_setup_time',
         'connection_end_time': 'connection_end_time'
     }
 
-    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, connection_setup_time=None, connection_end_time=None):
+    def __init__(self, error_code=None, error_msg=None, error_detail=None, encoded_authorization_message=None, connection_setup_time=None, connection_end_time=None):
         r"""MonitorUserOnlineInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class MonitorUserOnlineInfo:
         :type error_code: str
         :param error_msg: 错误描述。
         :type error_msg: str
+        :param error_detail: 错误详情。
+        :type error_detail: str
         :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
         :type encoded_authorization_message: str
         :param connection_setup_time: 建立连接时间。
@@ -51,6 +55,7 @@ class MonitorUserOnlineInfo:
 
         self._error_code = None
         self._error_msg = None
+        self._error_detail = None
         self._encoded_authorization_message = None
         self._connection_setup_time = None
         self._connection_end_time = None
@@ -60,6 +65,8 @@ class MonitorUserOnlineInfo:
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
+        if error_detail is not None:
+            self.error_detail = error_detail
         if encoded_authorization_message is not None:
             self.encoded_authorization_message = encoded_authorization_message
         if connection_setup_time is not None:
@@ -110,6 +117,28 @@ class MonitorUserOnlineInfo:
         :type error_msg: str
         """
         self._error_msg = error_msg
+
+    @property
+    def error_detail(self):
+        r"""Gets the error_detail of this MonitorUserOnlineInfo.
+
+        错误详情。
+
+        :return: The error_detail of this MonitorUserOnlineInfo.
+        :rtype: str
+        """
+        return self._error_detail
+
+    @error_detail.setter
+    def error_detail(self, error_detail):
+        r"""Sets the error_detail of this MonitorUserOnlineInfo.
+
+        错误详情。
+
+        :param error_detail: The error_detail of this MonitorUserOnlineInfo.
+        :type error_detail: str
+        """
+        self._error_detail = error_detail
 
     @property
     def encoded_authorization_message(self):

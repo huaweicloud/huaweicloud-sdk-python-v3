@@ -17,7 +17,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     openapi_types = {
         'platform_id': 'str',
-        'access_type': 'str',
+        'access_type': 'AccessTypeEnum',
         'name': 'str',
         'authorization_info': 'PlatformAuthorizationInfo',
         'auth_config': 'CustomPlatformAuthConfig',
@@ -42,8 +42,8 @@ class ShowLivePlatformResponse(SdkResponse):
 
         :param platform_id: 平台ID
         :type platform_id: str
-        :param access_type: 平台对接类型。 * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
-        :type access_type: str
+        :param access_type: 
+        :type access_type: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
         :param name: 直播平台名称
         :type name: str
         :param authorization_info: 
@@ -108,10 +108,8 @@ class ShowLivePlatformResponse(SdkResponse):
     def access_type(self):
         r"""Gets the access_type of this ShowLivePlatformResponse.
 
-        平台对接类型。 * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
-
         :return: The access_type of this ShowLivePlatformResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
         """
         return self._access_type
 
@@ -119,10 +117,8 @@ class ShowLivePlatformResponse(SdkResponse):
     def access_type(self, access_type):
         r"""Sets the access_type of this ShowLivePlatformResponse.
 
-        平台对接类型。 * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
-
         :param access_type: The access_type of this ShowLivePlatformResponse.
-        :type access_type: str
+        :type access_type: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
         """
         self._access_type = access_type
 

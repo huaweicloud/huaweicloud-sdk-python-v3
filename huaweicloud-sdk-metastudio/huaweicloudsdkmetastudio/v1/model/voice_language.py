@@ -4,7 +4,36 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class VoiceLanguage:
-
+    """
+    allowed enum values
+    """
+    UNKNOW = "UNKNOW"
+    CN = "CN"
+    EN = "EN"
+    GER = "GER"
+    FR = "fr"
+    KR = "Kr"
+    POR = "por"
+    JPN = "JPN"
+    ITA = "Ita"
+    ESP = "ESP"
+    DBH = "DBH"
+    GT = "GT"
+    GXH = "GXH"
+    HBH = "HBH"
+    SXH = "SXH"
+    SCH = "SCH"
+    YY = "YY"
+    RUSSIAN = "Russian"
+    FILIPINO = "Filipino"
+    DUTCH = "Dutch"
+    INDONESIAN = "Indonesian"
+    VIETNAMESE = "Vietnamese"
+    ARABIC = "Arabic"
+    TURKISH = "Turkish"
+    MALAY = "Malay"
+    THAI = "Thai"
+    FINNISH = "Finnish"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -15,7 +15,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
     sensitive_list = []
 
     openapi_types = {
-        'log_type': 'str',
+        'log_type': 'LtsLogType',
         'lts_group_id': 'str',
         'lts_stream_id': 'str',
         'enabled': 'bool'
@@ -33,8 +33,8 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
         The model defined in huaweicloud sdk
 
-        :param log_type: LTS日志类型，不能为空，具有以下日志类型。 - audit_log
-        :type log_type: str
+        :param log_type: 
+        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
         :param lts_group_id: 云日志服务LTS日志组ID。
         :type lts_group_id: str
         :param lts_stream_id: 云日志服务LTS日志流ID。
@@ -64,10 +64,8 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
     def log_type(self):
         r"""Gets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
-        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
-
         :return: The log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
         """
         return self._log_type
 
@@ -75,10 +73,8 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
     def log_type(self, log_type):
         r"""Sets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
-        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
-
         :param log_type: The log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
-        :type log_type: str
+        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
         """
         self._log_type = log_type
 

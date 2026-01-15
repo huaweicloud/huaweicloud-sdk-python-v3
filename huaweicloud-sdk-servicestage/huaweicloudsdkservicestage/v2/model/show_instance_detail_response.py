@@ -20,8 +20,8 @@ class ShowInstanceDetailResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'environment_id': 'str',
-        'platform_type': 'str',
-        'flavor_id': 'str',
+        'platform_type': 'InstancePlatformType',
+        'flavor_id': 'FlavorId',
         'artifacts': 'dict(str, object)',
         'version': 'str',
         'configuration': 'object',
@@ -64,10 +64,10 @@ class ShowInstanceDetailResponse(SdkResponse):
         :type description: str
         :param environment_id: 应用组件环境ID。
         :type environment_id: str
-        :param platform_type: 运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
-        :type platform_type: str
-        :param flavor_id: 资源规格。
-        :type flavor_id: str
+        :param platform_type: 
+        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
+        :param flavor_id: 
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
         :type artifacts: dict(str, object)
         :param version: 应用组件版本号。
@@ -230,10 +230,8 @@ class ShowInstanceDetailResponse(SdkResponse):
     def platform_type(self):
         r"""Gets the platform_type of this ShowInstanceDetailResponse.
 
-        运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
-
         :return: The platform_type of this ShowInstanceDetailResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
         """
         return self._platform_type
 
@@ -241,10 +239,8 @@ class ShowInstanceDetailResponse(SdkResponse):
     def platform_type(self, platform_type):
         r"""Sets the platform_type of this ShowInstanceDetailResponse.
 
-        运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
-
         :param platform_type: The platform_type of this ShowInstanceDetailResponse.
-        :type platform_type: str
+        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
         """
         self._platform_type = platform_type
 
@@ -252,10 +248,8 @@ class ShowInstanceDetailResponse(SdkResponse):
     def flavor_id(self):
         r"""Gets the flavor_id of this ShowInstanceDetailResponse.
 
-        资源规格。
-
         :return: The flavor_id of this ShowInstanceDetailResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         return self._flavor_id
 
@@ -263,10 +257,8 @@ class ShowInstanceDetailResponse(SdkResponse):
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this ShowInstanceDetailResponse.
 
-        资源规格。
-
         :param flavor_id: The flavor_id of this ShowInstanceDetailResponse.
-        :type flavor_id: str
+        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
         self._flavor_id = flavor_id
 

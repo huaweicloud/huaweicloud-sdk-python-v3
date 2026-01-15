@@ -60,6 +60,7 @@ class PoolDesktopsDetailInfo:
         'process': 'int',
         'root_resource_id': 'str',
         'hour_package_info': 'HourPackageInfo',
+        'is_freeze': 'bool',
         'inconsistent_types': 'list[str]'
     }
 
@@ -109,10 +110,11 @@ class PoolDesktopsDetailInfo:
         'process': 'process',
         'root_resource_id': 'root_resource_id',
         'hour_package_info': 'hour_package_info',
+        'is_freeze': 'is_freeze',
         'inconsistent_types': 'inconsistent_types'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, inconsistent_types=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None, inconsistent_types=None):
         r"""PoolDesktopsDetailInfo
 
         The model defined in huaweicloud sdk
@@ -207,6 +209,8 @@ class PoolDesktopsDetailInfo:
         :type root_resource_id: str
         :param hour_package_info: 
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
+        :param is_freeze: 是否冻结
+        :type is_freeze: bool
         :param inconsistent_types: 桌面与桌面池不一致的规格类型: - PRODUCT: 产品ID不一致 - IMAGE: 镜像ID不一致
         :type inconsistent_types: list[str]
         """
@@ -258,6 +262,7 @@ class PoolDesktopsDetailInfo:
         self._process = None
         self._root_resource_id = None
         self._hour_package_info = None
+        self._is_freeze = None
         self._inconsistent_types = None
         self.discriminator = None
 
@@ -351,6 +356,8 @@ class PoolDesktopsDetailInfo:
             self.root_resource_id = root_resource_id
         if hour_package_info is not None:
             self.hour_package_info = hour_package_info
+        if is_freeze is not None:
+            self.is_freeze = is_freeze
         if inconsistent_types is not None:
             self.inconsistent_types = inconsistent_types
 
@@ -1327,6 +1334,28 @@ class PoolDesktopsDetailInfo:
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
         """
         self._hour_package_info = hour_package_info
+
+    @property
+    def is_freeze(self):
+        r"""Gets the is_freeze of this PoolDesktopsDetailInfo.
+
+        是否冻结
+
+        :return: The is_freeze of this PoolDesktopsDetailInfo.
+        :rtype: bool
+        """
+        return self._is_freeze
+
+    @is_freeze.setter
+    def is_freeze(self, is_freeze):
+        r"""Sets the is_freeze of this PoolDesktopsDetailInfo.
+
+        是否冻结
+
+        :param is_freeze: The is_freeze of this PoolDesktopsDetailInfo.
+        :type is_freeze: bool
+        """
+        self._is_freeze = is_freeze
 
     @property
     def inconsistent_types(self):

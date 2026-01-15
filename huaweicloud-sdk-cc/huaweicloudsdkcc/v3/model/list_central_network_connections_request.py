@@ -18,14 +18,14 @@ class ListCentralNetworkConnectionsRequest:
         'limit': 'int',
         'marker': 'str',
         'sort_key': 'str',
-        'sort_dir': 'str',
+        'sort_dir': 'SortDir',
         'id': 'list[str]',
         'name': 'list[str]',
-        'state': 'list[str]',
+        'state': 'list[CentralNetworkConnectionStateEnum]',
         'central_network_id': 'str',
         'global_connection_bandwidth_id': 'list[str]',
-        'bandwidth_type': 'str',
-        'connection_type': 'str',
+        'bandwidth_type': 'BandwidthTypeEnum',
+        'connection_type': 'ConnectionTypeEnum',
         'is_cross_region': 'bool'
     }
 
@@ -55,22 +55,22 @@ class ListCentralNetworkConnectionsRequest:
         :type marker: str
         :param sort_key: 排序字段。
         :type sort_key: str
-        :param sort_dir: desc(降序), asc(升序).
-        :type sort_dir: str
+        :param sort_dir: 指定排序是升序还是降序（asc为升序，desc为降序）。
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
         :param name: 根据名称查询，可查询多个名称。
         :type name: list[str]
         :param state: 根据状态查询，可查询多个状态。
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         :param central_network_id: 中心网络的ID。
         :type central_network_id: str
         :param global_connection_bandwidth_id: 根据带宽包ID过滤。
         :type global_connection_bandwidth_id: list[str]
-        :param bandwidth_type: 带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
-        :type bandwidth_type: str
-        :param connection_type: 中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
-        :type connection_type: str
+        :param bandwidth_type: 根据带宽类型查询。带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :param connection_type: 连接类型，支持。
+        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
         :param is_cross_region: 是否跨地域。
         :type is_cross_region: bool
         """
@@ -185,10 +185,10 @@ class ListCentralNetworkConnectionsRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListCentralNetworkConnectionsRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :return: The sort_dir of this ListCentralNetworkConnectionsRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         return self._sort_dir
 
@@ -196,10 +196,10 @@ class ListCentralNetworkConnectionsRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListCentralNetworkConnectionsRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :param sort_dir: The sort_dir of this ListCentralNetworkConnectionsRequest.
-        :type sort_dir: str
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         self._sort_dir = sort_dir
 
@@ -254,7 +254,7 @@ class ListCentralNetworkConnectionsRequest:
         根据状态查询，可查询多个状态。
 
         :return: The state of this ListCentralNetworkConnectionsRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         """
         return self._state
 
@@ -265,7 +265,7 @@ class ListCentralNetworkConnectionsRequest:
         根据状态查询，可查询多个状态。
 
         :param state: The state of this ListCentralNetworkConnectionsRequest.
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         """
         self._state = state
 
@@ -317,10 +317,10 @@ class ListCentralNetworkConnectionsRequest:
     def bandwidth_type(self):
         r"""Gets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
 
-        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        根据带宽类型查询。带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
 
         :return: The bandwidth_type of this ListCentralNetworkConnectionsRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         """
         return self._bandwidth_type
 
@@ -328,10 +328,10 @@ class ListCentralNetworkConnectionsRequest:
     def bandwidth_type(self, bandwidth_type):
         r"""Sets the bandwidth_type of this ListCentralNetworkConnectionsRequest.
 
-        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        根据带宽类型查询。带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
 
         :param bandwidth_type: The bandwidth_type of this ListCentralNetworkConnectionsRequest.
-        :type bandwidth_type: str
+        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
         """
         self._bandwidth_type = bandwidth_type
 
@@ -339,10 +339,10 @@ class ListCentralNetworkConnectionsRequest:
     def connection_type(self):
         r"""Gets the connection_type of this ListCentralNetworkConnectionsRequest.
 
-        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+        连接类型，支持。
 
         :return: The connection_type of this ListCentralNetworkConnectionsRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
         """
         return self._connection_type
 
@@ -350,10 +350,10 @@ class ListCentralNetworkConnectionsRequest:
     def connection_type(self, connection_type):
         r"""Sets the connection_type of this ListCentralNetworkConnectionsRequest.
 
-        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+        连接类型，支持。
 
         :param connection_type: The connection_type of this ListCentralNetworkConnectionsRequest.
-        :type connection_type: str
+        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
         """
         self._connection_type = connection_type
 

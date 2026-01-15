@@ -4,7 +4,19 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SuppressDurationResp:
-
+    """
+    allowed enum values
+    """
+    _0 = "0"
+    _300 = "300"
+    _600 = "600"
+    _900 = "900"
+    _1800 = "1800"
+    _3600 = "3600"
+    _10800 = "10800"
+    _21600 = "21600"
+    _43200 = "43200"
+    _86400 = "86400"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -16,7 +16,7 @@ class BuildUpdateSrlz:
 
     openapi_types = {
         'run_workspace': 'str',
-        'run_image_status': 'int'
+        'run_image_status': 'RunImageStatusEnum'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class BuildUpdateSrlz:
         :param run_workspace: 运行目录
         :type run_workspace: str
         :param run_image_status: 运行镜像状态  * &#x60;0&#x60; - Success * &#x60;100&#x60; - Init * &#x60;101&#x60; - Init Failed * &#x60;200&#x60; - To Push * &#x60;201&#x60; - Uploading
-        :type run_image_status: :class:`huaweicloudsdkoctopus.v2.int`
+        :type run_image_status: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
         """
         
         
@@ -74,7 +74,7 @@ class BuildUpdateSrlz:
         运行镜像状态  * `0` - Success * `100` - Init * `101` - Init Failed * `200` - To Push * `201` - Uploading
 
         :return: The run_image_status of this BuildUpdateSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
         """
         return self._run_image_status
 
@@ -85,7 +85,7 @@ class BuildUpdateSrlz:
         运行镜像状态  * `0` - Success * `100` - Init * `101` - Init Failed * `200` - To Push * `201` - Uploading
 
         :param run_image_status: The run_image_status of this BuildUpdateSrlz.
-        :type run_image_status: :class:`huaweicloudsdkoctopus.v2.int`
+        :type run_image_status: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
         """
         self._run_image_status = run_image_status
 

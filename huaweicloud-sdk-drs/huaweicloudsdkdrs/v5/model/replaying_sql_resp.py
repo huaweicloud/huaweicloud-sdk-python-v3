@@ -49,7 +49,7 @@ class ReplayingSqlResp:
         :type latency: int
         :param execute_latency: 回放执行耗时
         :type execute_latency: int
-        :param status: 执行状态
+        :param status: 执行状态 取值：INIT，RUNNING，FAILED，PAUSE，SUCCESS，FINISHED
         :type status: str
         :param client: 客户端IP
         :type client: str
@@ -180,7 +180,7 @@ class ReplayingSqlResp:
     def status(self):
         r"""Gets the status of this ReplayingSqlResp.
 
-        执行状态
+        执行状态 取值：INIT，RUNNING，FAILED，PAUSE，SUCCESS，FINISHED
 
         :return: The status of this ReplayingSqlResp.
         :rtype: str
@@ -191,7 +191,7 @@ class ReplayingSqlResp:
     def status(self, status):
         r"""Sets the status of this ReplayingSqlResp.
 
-        执行状态
+        执行状态 取值：INIT，RUNNING，FAILED，PAUSE，SUCCESS，FINISHED
 
         :param status: The status of this ReplayingSqlResp.
         :type status: str

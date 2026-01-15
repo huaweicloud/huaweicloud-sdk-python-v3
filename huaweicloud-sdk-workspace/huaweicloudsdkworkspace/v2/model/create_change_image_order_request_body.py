@@ -23,7 +23,9 @@ class CreateChangeImageOrderRequestBody:
         'image_id': 'str',
         'image_type': 'str',
         'delay_time': 'int',
-        'message': 'str'
+        'message': 'str',
+        'encrypt_type': 'EncryptType',
+        'kms_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class CreateChangeImageOrderRequestBody:
         'image_id': 'image_id',
         'image_type': 'image_type',
         'delay_time': 'delay_time',
-        'message': 'message'
+        'message': 'message',
+        'encrypt_type': 'encrypt_type',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, handle_type=None, image_spec_code=None, image_id=None, image_type=None, delay_time=None, message=None):
+    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, handle_type=None, image_spec_code=None, image_id=None, image_type=None, delay_time=None, message=None, encrypt_type=None, kms_id=None):
         r"""CreateChangeImageOrderRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class CreateChangeImageOrderRequestBody:
         :type delay_time: int
         :param message: 下发重建系统盘任务时，给用户发送的提示信息。
         :type message: str
+        :param encrypt_type: 
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        :param kms_id: 密钥ID，encrypt_type为ENCRYPTED时必传。
+        :type kms_id: str
         """
         
         
@@ -74,6 +82,8 @@ class CreateChangeImageOrderRequestBody:
         self._image_type = None
         self._delay_time = None
         self._message = None
+        self._encrypt_type = None
+        self._kms_id = None
         self.discriminator = None
 
         if desktop_pool_id is not None:
@@ -94,6 +104,10 @@ class CreateChangeImageOrderRequestBody:
             self.delay_time = delay_time
         if message is not None:
             self.message = message
+        if encrypt_type is not None:
+            self.encrypt_type = encrypt_type
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def desktop_pool_id(self):
@@ -292,6 +306,46 @@ class CreateChangeImageOrderRequestBody:
         :type message: str
         """
         self._message = message
+
+    @property
+    def encrypt_type(self):
+        r"""Gets the encrypt_type of this CreateChangeImageOrderRequestBody.
+
+        :return: The encrypt_type of this CreateChangeImageOrderRequestBody.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        return self._encrypt_type
+
+    @encrypt_type.setter
+    def encrypt_type(self, encrypt_type):
+        r"""Sets the encrypt_type of this CreateChangeImageOrderRequestBody.
+
+        :param encrypt_type: The encrypt_type of this CreateChangeImageOrderRequestBody.
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        self._encrypt_type = encrypt_type
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this CreateChangeImageOrderRequestBody.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :return: The kms_id of this CreateChangeImageOrderRequestBody.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this CreateChangeImageOrderRequestBody.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :param kms_id: The kms_id of this CreateChangeImageOrderRequestBody.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

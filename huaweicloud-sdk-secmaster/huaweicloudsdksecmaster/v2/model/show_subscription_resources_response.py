@@ -17,7 +17,7 @@ class ShowSubscriptionResourcesResponse(SdkResponse):
 
     openapi_types = {
         'project_id': 'str',
-        'sku': 'str',
+        'sku': 'SkuEnum',
         'upper_limit': 'float',
         'unit': 'str',
         'step': 'float',
@@ -58,8 +58,8 @@ class ShowSubscriptionResourcesResponse(SdkResponse):
 
         :param project_id: 项目ID
         :type project_id: str
-        :param sku: **参数解释**: sku类型 - FLOW_DATA_BANDWIDTH 数据带宽 - CSS_CAPACITY 索引集群容量 - PAIMON_CAPACITY 数据库容量 - OBS_CAPACITY 对象存储容量 - JOB_CAPACITY 作业容量 - AD_HOC_COUNT 即席查询数量  **约束限制** 不涉及 **取值范围**: - FLOW_DATA_BANDWIDTH - CSS_CAPACITY - PAIMON_CAPACITY - OBS_CAPACITY - JOB_CAPACITY - AD_HOC_COUNT  **默认值** 不涉及      
-        :type sku: str
+        :param sku: 
+        :type sku: :class:`huaweicloudsdksecmaster.v2.SkuEnum`
         :param upper_limit: 资源上限值
         :type upper_limit: float
         :param unit: 配额单位（如 GB、条、分片等）
@@ -164,10 +164,8 @@ class ShowSubscriptionResourcesResponse(SdkResponse):
     def sku(self):
         r"""Gets the sku of this ShowSubscriptionResourcesResponse.
 
-        **参数解释**: sku类型 - FLOW_DATA_BANDWIDTH 数据带宽 - CSS_CAPACITY 索引集群容量 - PAIMON_CAPACITY 数据库容量 - OBS_CAPACITY 对象存储容量 - JOB_CAPACITY 作业容量 - AD_HOC_COUNT 即席查询数量  **约束限制** 不涉及 **取值范围**: - FLOW_DATA_BANDWIDTH - CSS_CAPACITY - PAIMON_CAPACITY - OBS_CAPACITY - JOB_CAPACITY - AD_HOC_COUNT  **默认值** 不涉及      
-
         :return: The sku of this ShowSubscriptionResourcesResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.SkuEnum`
         """
         return self._sku
 
@@ -175,10 +173,8 @@ class ShowSubscriptionResourcesResponse(SdkResponse):
     def sku(self, sku):
         r"""Sets the sku of this ShowSubscriptionResourcesResponse.
 
-        **参数解释**: sku类型 - FLOW_DATA_BANDWIDTH 数据带宽 - CSS_CAPACITY 索引集群容量 - PAIMON_CAPACITY 数据库容量 - OBS_CAPACITY 对象存储容量 - JOB_CAPACITY 作业容量 - AD_HOC_COUNT 即席查询数量  **约束限制** 不涉及 **取值范围**: - FLOW_DATA_BANDWIDTH - CSS_CAPACITY - PAIMON_CAPACITY - OBS_CAPACITY - JOB_CAPACITY - AD_HOC_COUNT  **默认值** 不涉及      
-
         :param sku: The sku of this ShowSubscriptionResourcesResponse.
-        :type sku: str
+        :type sku: :class:`huaweicloudsdksecmaster.v2.SkuEnum`
         """
         self._sku = sku
 

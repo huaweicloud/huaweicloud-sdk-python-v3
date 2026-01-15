@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class OfferingStatus:
-
+    """
+    allowed enum values
+    """
+    TESTING = "TESTING"
+    ONSALE = "ONSALE"
+    SUSPENDED = "SUSPENDED"
+    RETIREMENT = "RETIREMENT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

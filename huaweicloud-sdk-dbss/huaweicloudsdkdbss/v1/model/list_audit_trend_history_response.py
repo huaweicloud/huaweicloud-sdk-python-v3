@@ -28,7 +28,7 @@ class ListAuditTrendHistoryResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 趋势统计数据列表
         :type body: list[:class:`huaweicloudsdkdbss.v1.TrendStatusResponse`]
         """
         
@@ -44,6 +44,8 @@ class ListAuditTrendHistoryResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListAuditTrendHistoryResponse.
 
+        趋势统计数据列表
+
         :return: The body of this ListAuditTrendHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkdbss.v1.TrendStatusResponse`]
         """
@@ -52,6 +54,8 @@ class ListAuditTrendHistoryResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ListAuditTrendHistoryResponse.
+
+        趋势统计数据列表
 
         :param body: The body of this ListAuditTrendHistoryResponse.
         :type body: list[:class:`huaweicloudsdkdbss.v1.TrendStatusResponse`]

@@ -16,7 +16,7 @@ class ChannelInstance:
 
     openapi_types = {
         'channel_name': 'str',
-        'config_status': 'str',
+        'config_status': 'ConfigStatus',
         'create_by': 'str',
         'mini_on_online': 'bool',
         'monitor': 'Monitor',
@@ -47,8 +47,8 @@ class ChannelInstance:
 
         :param channel_name: 分组名称
         :type channel_name: str
-        :param config_status: **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-        :type config_status: str
+        :param config_status: 
+        :type config_status: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         :param create_by: Iam用户ID
         :type create_by: str
         :param mini_on_online: 是否在线
@@ -128,10 +128,8 @@ class ChannelInstance:
     def config_status(self):
         r"""Gets the config_status of this ChannelInstance.
 
-        **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-
         :return: The config_status of this ChannelInstance.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         """
         return self._config_status
 
@@ -139,10 +137,8 @@ class ChannelInstance:
     def config_status(self, config_status):
         r"""Sets the config_status of this ChannelInstance.
 
-        **参数解释**: 采集通道配置状态 - OK 完成 - CHANGE 修改  **约束限制** 不涉及 **取值范围**: - OK - CHANGE  **默认值** 不涉及
-
         :param config_status: The config_status of this ChannelInstance.
-        :type config_status: str
+        :type config_status: :class:`huaweicloudsdksecmaster.v1.ConfigStatus`
         """
         self._config_status = config_status
 

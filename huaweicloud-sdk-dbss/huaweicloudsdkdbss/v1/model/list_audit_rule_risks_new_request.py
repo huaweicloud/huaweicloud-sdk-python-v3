@@ -18,17 +18,21 @@ class ListAuditRuleRisksNewRequest:
         'instance_id': 'str',
         'name': 'str',
         'risk_levels': 'str',
-        'support_db_classify_rule': 'bool'
+        'support_db_classify_rule': 'bool',
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'name': 'name',
         'risk_levels': 'risk_levels',
-        'support_db_classify_rule': 'support_db_classify_rule'
+        'support_db_classify_rule': 'support_db_classify_rule',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, name=None, risk_levels=None, support_db_classify_rule=None):
+    def __init__(self, instance_id=None, name=None, risk_levels=None, support_db_classify_rule=None, offset=None, limit=None):
         r"""ListAuditRuleRisksNewRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class ListAuditRuleRisksNewRequest:
         :type risk_levels: str
         :param support_db_classify_rule: **参数解释**： 实例前端是否支持按数据库类型展示风险规则 **约束限制**： 以取值范围为准 **取值范围**： - true: 支持 - false: 不支持 **默认取值**： false: 不支持 
         :type support_db_classify_rule: bool
+        :param offset: **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
+        :type offset: str
+        :param limit: **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于1000 **默认取值**： 默认值为100 
+        :type limit: str
         """
         
         
@@ -49,6 +57,8 @@ class ListAuditRuleRisksNewRequest:
         self._name = None
         self._risk_levels = None
         self._support_db_classify_rule = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -58,6 +68,10 @@ class ListAuditRuleRisksNewRequest:
             self.risk_levels = risk_levels
         if support_db_classify_rule is not None:
             self.support_db_classify_rule = support_db_classify_rule
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def instance_id(self):
@@ -146,6 +160,50 @@ class ListAuditRuleRisksNewRequest:
         :type support_db_classify_rule: bool
         """
         self._support_db_classify_rule = support_db_classify_rule
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListAuditRuleRisksNewRequest.
+
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
+
+        :return: The offset of this ListAuditRuleRisksNewRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListAuditRuleRisksNewRequest.
+
+        **参数解释**： 分页偏移量，从第一条数据偏移offset条数据后开始查询 **约束限制**： 仅支持大于等于0的整数 **取值范围**： 大于等于0 **默认取值**： 默认值为0 
+
+        :param offset: The offset of this ListAuditRuleRisksNewRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListAuditRuleRisksNewRequest.
+
+        **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于1000 **默认取值**： 默认值为100 
+
+        :return: The limit of this ListAuditRuleRisksNewRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListAuditRuleRisksNewRequest.
+
+        **参数解释**： 每页查询记录数。 **约束限制**： 仅支持大于0的整数 **取值范围**： 大于0小于等于1000 **默认取值**： 默认值为100 
+
+        :param limit: The limit of this ListAuditRuleRisksNewRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

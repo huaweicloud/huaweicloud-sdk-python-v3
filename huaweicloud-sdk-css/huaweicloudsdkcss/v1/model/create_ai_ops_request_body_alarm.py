@@ -29,9 +29,9 @@ class CreateAiOpsRequestBodyAlarm:
 
         The model defined in huaweicloud sdk
 
-        :param level: SMN告警消息敏感度。 - high：高风险。 - medium：中风险。 - suggestion：建议。 - norisk：无风险。
+        :param level: **参数解释**： 报告发送风险类别，当前功能已废弃。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type level: str
-        :param smn_topic: SMN主题名称。
+        :param smn_topic: **参数解释**： 报告发送主题，当前功能已废弃。 **约束限制**： 不涉及 **默认取值**： 不涉及
         :type smn_topic: str
         """
         
@@ -41,14 +41,16 @@ class CreateAiOpsRequestBodyAlarm:
         self._smn_topic = None
         self.discriminator = None
 
-        self.level = level
-        self.smn_topic = smn_topic
+        if level is not None:
+            self.level = level
+        if smn_topic is not None:
+            self.smn_topic = smn_topic
 
     @property
     def level(self):
         r"""Gets the level of this CreateAiOpsRequestBodyAlarm.
 
-        SMN告警消息敏感度。 - high：高风险。 - medium：中风险。 - suggestion：建议。 - norisk：无风险。
+        **参数解释**： 报告发送风险类别，当前功能已废弃。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The level of this CreateAiOpsRequestBodyAlarm.
         :rtype: str
@@ -59,7 +61,7 @@ class CreateAiOpsRequestBodyAlarm:
     def level(self, level):
         r"""Sets the level of this CreateAiOpsRequestBodyAlarm.
 
-        SMN告警消息敏感度。 - high：高风险。 - medium：中风险。 - suggestion：建议。 - norisk：无风险。
+        **参数解释**： 报告发送风险类别，当前功能已废弃。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param level: The level of this CreateAiOpsRequestBodyAlarm.
         :type level: str
@@ -70,7 +72,7 @@ class CreateAiOpsRequestBodyAlarm:
     def smn_topic(self):
         r"""Gets the smn_topic of this CreateAiOpsRequestBodyAlarm.
 
-        SMN主题名称。
+        **参数解释**： 报告发送主题，当前功能已废弃。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :return: The smn_topic of this CreateAiOpsRequestBodyAlarm.
         :rtype: str
@@ -81,7 +83,7 @@ class CreateAiOpsRequestBodyAlarm:
     def smn_topic(self, smn_topic):
         r"""Sets the smn_topic of this CreateAiOpsRequestBodyAlarm.
 
-        SMN主题名称。
+        **参数解释**： 报告发送主题，当前功能已废弃。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
         :param smn_topic: The smn_topic of this CreateAiOpsRequestBodyAlarm.
         :type smn_topic: str

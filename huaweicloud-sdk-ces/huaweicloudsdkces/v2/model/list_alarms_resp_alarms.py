@@ -21,7 +21,7 @@ class ListAlarmsRespAlarms:
         'namespace': 'str',
         'policies': 'list[OneClickAlarmPolicy]',
         'resources': 'list[ResourcesInListResp]',
-        'type': 'str',
+        'type': 'AlarmType',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[Notification]',
@@ -69,8 +69,8 @@ class ListAlarmsRespAlarms:
         :type policies: list[:class:`huaweicloudsdkces.v2.OneClickAlarmPolicy`]
         :param resources: 资源列表，关联资源需要使用查询告警规则资源接口获取
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
-        :param type: **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param enabled: **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type enabled: bool
         :param notification_enabled: **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
@@ -280,10 +280,8 @@ class ListAlarmsRespAlarms:
     def type(self):
         r"""Gets the type of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-
         :return: The type of this ListAlarmsRespAlarms.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         return self._type
 
@@ -291,10 +289,8 @@ class ListAlarmsRespAlarms:
     def type(self, type):
         r"""Sets the type of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
-
         :param type: The type of this ListAlarmsRespAlarms.
-        :type type: str
+        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         """
         self._type = type
 

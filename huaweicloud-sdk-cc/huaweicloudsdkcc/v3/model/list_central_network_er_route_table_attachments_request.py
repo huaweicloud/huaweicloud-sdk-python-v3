@@ -18,10 +18,10 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
         'limit': 'int',
         'marker': 'str',
         'sort_key': 'str',
-        'sort_dir': 'str',
+        'sort_dir': 'SortDir',
         'id': 'list[str]',
         'name': 'list[str]',
-        'state': 'list[str]',
+        'state': 'list[CentralNetworkConnectionStateEnum]',
         'central_network_id': 'str',
         'attachment_instance_id': 'list[str]'
     }
@@ -49,14 +49,14 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
         :type marker: str
         :param sort_key: 排序字段。
         :type sort_key: str
-        :param sort_dir: desc(降序), asc(升序).
-        :type sort_dir: str
+        :param sort_dir: 指定排序是升序还是降序（asc为升序，desc为降序）。
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
         :param name: 根据名称查询，可查询多个名称。
         :type name: list[str]
         :param state: 根据状态查询，可查询多个状态。
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         :param central_network_id: 中心网络的ID。
         :type central_network_id: str
         :param attachment_instance_id: Attachment实例的ID。
@@ -164,10 +164,10 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :return: The sort_dir of this ListCentralNetworkErRouteTableAttachmentsRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         return self._sort_dir
 
@@ -175,10 +175,10 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        desc(降序), asc(升序).
+        指定排序是升序还是降序（asc为升序，desc为降序）。
 
         :param sort_dir: The sort_dir of this ListCentralNetworkErRouteTableAttachmentsRequest.
-        :type sort_dir: str
+        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         """
         self._sort_dir = sort_dir
 
@@ -233,7 +233,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
         根据状态查询，可查询多个状态。
 
         :return: The state of this ListCentralNetworkErRouteTableAttachmentsRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         """
         return self._state
 
@@ -244,7 +244,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
         根据状态查询，可查询多个状态。
 
         :param state: The state of this ListCentralNetworkErRouteTableAttachmentsRequest.
-        :type state: list[str]
+        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
         """
         self._state = state
 

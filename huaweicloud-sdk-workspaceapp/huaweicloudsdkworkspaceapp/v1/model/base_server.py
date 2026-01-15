@@ -21,7 +21,7 @@ class BaseServer:
         'description': 'str',
         'server_group_id': 'str',
         'flavor': 'Flavor',
-        'status': 'str',
+        'status': 'ServerStatus',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'image_id': 'str',
@@ -36,8 +36,8 @@ class BaseServer:
         'maintain_status': 'bool',
         'scaling_auto_create': 'bool',
         'job_id': 'str',
-        'job_type': 'str',
-        'job_status': 'str',
+        'job_type': 'JobType',
+        'job_status': 'JobStatus',
         'job_time': 'datetime',
         'resource_pool_id': 'str',
         'resource_pool_type': 'str',
@@ -91,8 +91,8 @@ class BaseServer:
         :type server_group_id: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
-        :param status: 实例的状态： * &#x60;UNREGISTER&#x60; - 未就绪 * &#x60;REGISTERED&#x60; - 就绪状态 * &#x60;MAINTAINING&#x60; - 维护中 * &#x60;FREEZE&#x60; - 冻结 * &#x60;STOPPED&#x60; - 停止 * &#x60;NONE&#x60; - 异常状态
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         :param create_time: 服务器创建时间。
         :type create_time: datetime
         :param update_time: 更新时间。
@@ -121,10 +121,10 @@ class BaseServer:
         :type scaling_auto_create: bool
         :param job_id: 上一次执行job的id。
         :type job_id: str
-        :param job_type: job类型： * &#x60;CREATE_SERVER&#x60; - 创建服务器 * &#x60;DELETE_SERVER&#x60; - 删除服务器 * &#x60;UPDATE_FREEZE_STATUS&#x60; - 修改服务器冻结状态 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;REINSTALL_OS&#x60; - 重装操作系统 * &#x60;CHANGE_SERVER_IMAGE&#x60; - 更换镜像 * &#x60;REJOIN_DOMAIN&#x60; - 重新加域 * &#x60;MIGRATE_SERVER&#x60; - 迁移服务器 * &#x60;UPGRADE_ACCESS_AGENT&#x60; - hda升级 * &#x60;UPDATE_SERVER_TSVI&#x60; - 更新虚拟会话IP * &#x60;SCHEDULED_TASK&#x60; - 定时任务job * &#x60;COLLECT_HDA_LOG&#x60; - 收集hda日志 * &#x60;COLLECT_APS_LOG&#x60; - 收集aps日志 * &#x60;CREATE_SERVER_SNAPSHOT&#x60; - 创建服务器快照 * &#x60;DELETE_SERVER_SNAPSHOT&#x60; - 删除服务器快照 * &#x60;RESTORE_SERVER_SNAPSHOT&#x60; - 恢复服务器快照 * &#x60;BATCH_INSTALL_APP&#x60; - 批量安装应用 * &#x60;INSTALL_CES_AGENT&#x60; - 安装CES服务AGENT * &#x60;UNINSTALL_CES_AGENT&#x60; - 卸载CES服务AGENT
-        :type job_type: str
-        :param job_status: job状态 * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
-        :type job_status: str
+        :param job_type: 
+        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
+        :param job_status: 
+        :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         :param job_time: 上一次执行job的执行时间。
         :type job_time: datetime
         :param resource_pool_id: 资源池ID。
@@ -353,10 +353,8 @@ class BaseServer:
     def status(self):
         r"""Gets the status of this BaseServer.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :return: The status of this BaseServer.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         return self._status
 
@@ -364,10 +362,8 @@ class BaseServer:
     def status(self, status):
         r"""Sets the status of this BaseServer.
 
-        实例的状态： * `UNREGISTER` - 未就绪 * `REGISTERED` - 就绪状态 * `MAINTAINING` - 维护中 * `FREEZE` - 冻结 * `STOPPED` - 停止 * `NONE` - 异常状态
-
         :param status: The status of this BaseServer.
-        :type status: str
+        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
         """
         self._status = status
 
@@ -683,10 +679,8 @@ class BaseServer:
     def job_type(self):
         r"""Gets the job_type of this BaseServer.
 
-        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
-
         :return: The job_type of this BaseServer.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         """
         return self._job_type
 
@@ -694,10 +688,8 @@ class BaseServer:
     def job_type(self, job_type):
         r"""Sets the job_type of this BaseServer.
 
-        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
-
         :param job_type: The job_type of this BaseServer.
-        :type job_type: str
+        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
         """
         self._job_type = job_type
 
@@ -705,10 +697,8 @@ class BaseServer:
     def job_status(self):
         r"""Gets the job_status of this BaseServer.
 
-        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :return: The job_status of this BaseServer.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         """
         return self._job_status
 
@@ -716,10 +706,8 @@ class BaseServer:
     def job_status(self, job_status):
         r"""Sets the job_status of this BaseServer.
 
-        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :param job_status: The job_status of this BaseServer.
-        :type job_status: str
+        :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
         """
         self._job_status = job_status
 

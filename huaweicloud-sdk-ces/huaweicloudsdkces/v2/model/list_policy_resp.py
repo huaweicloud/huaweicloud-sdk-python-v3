@@ -17,7 +17,7 @@ class ListPolicyResp:
     openapi_types = {
         'metric_name': 'str',
         'extra_info': 'MetricExtraInfoResp',
-        'period': 'int',
+        'period': 'PeriodResp',
         'filter': 'str',
         'comparison_operator': 'str',
         'value': 'float',
@@ -25,7 +25,7 @@ class ListPolicyResp:
         'unit': 'str',
         'type': 'str',
         'count': 'int',
-        'suppress_duration': 'int',
+        'suppress_duration': 'SuppressDurationResp',
         'level': 'int',
         'namespace': 'str',
         'dimension_name': 'str'
@@ -57,8 +57,8 @@ class ListPolicyResp:
         :type metric_name: str
         :param extra_info: 
         :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfoResp`
-        :param period: **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
-        :type period: int
+        :param period: 
+        :type period: :class:`huaweicloudsdkces.v2.PeriodResp`
         :param filter: **参数解释**： 聚合方式。         **取值范围**： - average：平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
         :type filter: str
         :param comparison_operator: **参数解释**： 阈值符号。     **取值范围**： 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。 
@@ -73,8 +73,8 @@ class ListPolicyResp:
         :type type: str
         :param count: **参数解释**： 告警连续触发次数。     **取值范围**： 事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180。 
         :type count: int
-        :param suppress_duration: **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
-        :type suppress_duration: int
+        :param suppress_duration: 
+        :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
         :param level: **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
         :type level: int
         :param namespace: **参数解释**： 各服务命名空间，请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。长度为[0,32]个字符。 
@@ -174,10 +174,8 @@ class ListPolicyResp:
     def period(self):
         r"""Gets the period of this ListPolicyResp.
 
-        **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
-
         :return: The period of this ListPolicyResp.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkces.v2.PeriodResp`
         """
         return self._period
 
@@ -185,10 +183,8 @@ class ListPolicyResp:
     def period(self, period):
         r"""Sets the period of this ListPolicyResp.
 
-        **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
-
         :param period: The period of this ListPolicyResp.
-        :type period: int
+        :type period: :class:`huaweicloudsdkces.v2.PeriodResp`
         """
         self._period = period
 
@@ -346,10 +342,8 @@ class ListPolicyResp:
     def suppress_duration(self):
         r"""Gets the suppress_duration of this ListPolicyResp.
 
-        **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
-
         :return: The suppress_duration of this ListPolicyResp.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
         """
         return self._suppress_duration
 
@@ -357,10 +351,8 @@ class ListPolicyResp:
     def suppress_duration(self, suppress_duration):
         r"""Sets the suppress_duration of this ListPolicyResp.
 
-        **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
-
         :param suppress_duration: The suppress_duration of this ListPolicyResp.
-        :type suppress_duration: int
+        :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
         """
         self._suppress_duration = suppress_duration
 

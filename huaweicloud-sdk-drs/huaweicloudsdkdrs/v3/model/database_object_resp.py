@@ -35,7 +35,7 @@ class DatabaseObjectResp:
 
         :param job_id: 任务ID
         :type job_id: str
-        :param status: 选择对象任务成功标志
+        :param status: 选择对象任务成功标志：true，false
         :type status: bool
         :param error_code: 错误码
         :type error_code: str
@@ -86,7 +86,7 @@ class DatabaseObjectResp:
     def status(self):
         r"""Gets the status of this DatabaseObjectResp.
 
-        选择对象任务成功标志
+        选择对象任务成功标志：true，false
 
         :return: The status of this DatabaseObjectResp.
         :rtype: bool
@@ -97,7 +97,7 @@ class DatabaseObjectResp:
     def status(self, status):
         r"""Sets the status of this DatabaseObjectResp.
 
-        选择对象任务成功标志
+        选择对象任务成功标志：true，false
 
         :param status: The status of this DatabaseObjectResp.
         :type status: bool

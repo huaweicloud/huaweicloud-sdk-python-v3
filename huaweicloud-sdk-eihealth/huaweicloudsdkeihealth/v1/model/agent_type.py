@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AgentType:
-
+    """
+    allowed enum values
+    """
+    AUTO = "auto"
+    GENE = "gene"
+    DRUG = "drug"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

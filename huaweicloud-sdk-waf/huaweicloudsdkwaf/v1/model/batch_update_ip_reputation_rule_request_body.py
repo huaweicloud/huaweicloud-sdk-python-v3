@@ -16,7 +16,6 @@ class BatchUpdateIpReputationRuleRequestBody:
 
     openapi_types = {
         'name': 'str',
-        'policyname': 'str',
         'description': 'str',
         'action': 'BatchUpdateIpReputationRuleRequestBodyAction',
         'type': 'str',
@@ -26,7 +25,6 @@ class BatchUpdateIpReputationRuleRequestBody:
 
     attribute_map = {
         'name': 'name',
-        'policyname': 'policyname',
         'description': 'description',
         'action': 'action',
         'type': 'type',
@@ -34,15 +32,13 @@ class BatchUpdateIpReputationRuleRequestBody:
         'policy_rule_ids': 'policy_rule_ids'
     }
 
-    def __init__(self, name=None, policyname=None, description=None, action=None, type=None, tags=None, policy_rule_ids=None):
+    def __init__(self, name=None, description=None, action=None, type=None, tags=None, policy_rule_ids=None):
         r"""BatchUpdateIpReputationRuleRequestBody
 
         The model defined in huaweicloud sdk
 
         :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param policyname: **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policyname: str
         :param description: **参数解释：** 规则描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
         :param action: 
@@ -58,7 +54,6 @@ class BatchUpdateIpReputationRuleRequestBody:
         
 
         self._name = None
-        self._policyname = None
         self._description = None
         self._action = None
         self._type = None
@@ -67,15 +62,12 @@ class BatchUpdateIpReputationRuleRequestBody:
         self.discriminator = None
 
         self.name = name
-        if policyname is not None:
-            self.policyname = policyname
         if description is not None:
             self.description = description
         self.action = action
         self.type = type
         self.tags = tags
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
+        self.policy_rule_ids = policy_rule_ids
 
     @property
     def name(self):
@@ -98,28 +90,6 @@ class BatchUpdateIpReputationRuleRequestBody:
         :type name: str
         """
         self._name = name
-
-    @property
-    def policyname(self):
-        r"""Gets the policyname of this BatchUpdateIpReputationRuleRequestBody.
-
-        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :return: The policyname of this BatchUpdateIpReputationRuleRequestBody.
-        :rtype: str
-        """
-        return self._policyname
-
-    @policyname.setter
-    def policyname(self, policyname):
-        r"""Sets the policyname of this BatchUpdateIpReputationRuleRequestBody.
-
-        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :param policyname: The policyname of this BatchUpdateIpReputationRuleRequestBody.
-        :type policyname: str
-        """
-        self._policyname = policyname
 
     @property
     def description(self):

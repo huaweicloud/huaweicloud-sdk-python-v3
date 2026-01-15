@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DictionaryType:
-
+    """
+    allowed enum values
+    """
+    SYSTEM = "system"
+    USER = "user"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

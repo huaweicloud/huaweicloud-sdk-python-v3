@@ -4,7 +4,19 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstanceState:
-
+    """
+    allowed enum values
+    """
+    PENDING = "pending"
+    RUNNING = "running"
+    STOPPING = "stopping"
+    STOPPED = "stopped"
+    REINSTALLING = "reinstalling"
+    SHUTTING_DOWN = "shutting-down"
+    TERMINATED = "terminated"
+    FAILED = "failed"
+    MODIFYIPING = "modifyIping"
+    SWITCH_INSTALLING = "switch-installing"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

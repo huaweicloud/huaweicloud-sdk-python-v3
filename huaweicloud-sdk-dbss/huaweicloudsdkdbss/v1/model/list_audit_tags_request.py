@@ -29,7 +29,7 @@ class ListAuditTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计 **默认取值**： 不涉及 
+        :param resource_type: **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance：审计 **默认取值**： 不涉及 
         :type resource_type: str
         :param resource_id: **参数解释**：  资源ID。可在查询实例列表接口的resource_id字段获取。 **约束限制**： 不涉及 **取值范围**： 以查询实例列表接口获取值为准，字符长度32-64。 **默认取值**： 不涉及 
         :type resource_id: str
@@ -48,7 +48,7 @@ class ListAuditTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListAuditTagsRequest.
 
-        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计 **默认取值**： 不涉及 
+        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance：审计 **默认取值**： 不涉及 
 
         :return: The resource_type of this ListAuditTagsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListAuditTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListAuditTagsRequest.
 
-        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance: 审计 **默认取值**： 不涉及 
+        **参数解释**：  资源类型。 **约束限制**： 不涉及 **取值范围**：  - auditInstance：审计 **默认取值**： 不涉及 
 
         :param resource_type: The resource_type of this ListAuditTagsRequest.
         :type resource_type: str

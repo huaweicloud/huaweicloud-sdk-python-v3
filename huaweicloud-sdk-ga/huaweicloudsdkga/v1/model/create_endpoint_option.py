@@ -16,7 +16,7 @@ class CreateEndpointOption:
 
     openapi_types = {
         'resource_id': 'str',
-        'resource_type': 'str',
+        'resource_type': 'EndpointType',
         'weight': 'int',
         'ip_address': 'str'
     }
@@ -35,8 +35,8 @@ class CreateEndpointOption:
 
         :param resource_id: 对应后端资源的ID，比如EIP的ID。
         :type resource_id: str
-        :param resource_type: 终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
-        :type resource_type: str
+        :param resource_type: 
+        :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
         :param weight: 终端节点权重。
         :type weight: int
         :param ip_address: IP地址。
@@ -83,10 +83,8 @@ class CreateEndpointOption:
     def resource_type(self):
         r"""Gets the resource_type of this CreateEndpointOption.
 
-        终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
-
         :return: The resource_type of this CreateEndpointOption.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
         """
         return self._resource_type
 
@@ -94,10 +92,8 @@ class CreateEndpointOption:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CreateEndpointOption.
 
-        终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
-
         :param resource_type: The resource_type of this CreateEndpointOption.
-        :type resource_type: str
+        :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
         """
         self._resource_type = resource_type
 

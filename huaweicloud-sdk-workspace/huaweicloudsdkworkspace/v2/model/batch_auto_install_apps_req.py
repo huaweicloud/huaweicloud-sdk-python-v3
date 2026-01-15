@@ -16,7 +16,7 @@ class BatchAutoInstallAppsReq:
 
     openapi_types = {
         'app_ids': 'list[str]',
-        'assign_scope': 'str',
+        'assign_scope': 'AssignType',
         'users': 'list[AccountInfo]'
     }
 
@@ -33,8 +33,8 @@ class BatchAutoInstallAppsReq:
 
         :param app_ids: 批量唯一标识请求列表，一次请求数量区间 [1, 50]。
         :type app_ids: list[str]
-        :param assign_scope: * &#x60;ALL_USER&#x60; - 全部用户 * &#x60;ASSIGN_USER&#x60; - 授权指定用户
-        :type assign_scope: str
+        :param assign_scope: 
+        :type assign_scope: :class:`huaweicloudsdkworkspace.v2.AssignType`
         :param users: 用户列表，一次请求数量区间 [1, 50]。
         :type users: list[:class:`huaweicloudsdkworkspace.v2.AccountInfo`]
         """
@@ -77,10 +77,8 @@ class BatchAutoInstallAppsReq:
     def assign_scope(self):
         r"""Gets the assign_scope of this BatchAutoInstallAppsReq.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :return: The assign_scope of this BatchAutoInstallAppsReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         return self._assign_scope
 
@@ -88,10 +86,8 @@ class BatchAutoInstallAppsReq:
     def assign_scope(self, assign_scope):
         r"""Sets the assign_scope of this BatchAutoInstallAppsReq.
 
-        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
-
         :param assign_scope: The assign_scope of this BatchAutoInstallAppsReq.
-        :type assign_scope: str
+        :type assign_scope: :class:`huaweicloudsdkworkspace.v2.AssignType`
         """
         self._assign_scope = assign_scope
 

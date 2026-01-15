@@ -21,7 +21,8 @@ class ListEnterpriseProjectRequest:
         'offset': 'int',
         'sort_dir': 'str',
         'sort_key': 'str',
-        'status': 'int'
+        'status': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListEnterpriseProjectRequest:
         'offset': 'offset',
         'sort_dir': 'sort_dir',
         'sort_key': 'sort_key',
-        'status': 'status'
+        'status': 'status',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, limit=None, name=None, offset=None, sort_dir=None, sort_key=None, status=None):
+    def __init__(self, id=None, limit=None, name=None, offset=None, sort_dir=None, sort_key=None, status=None, type=None):
         r"""ListEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ListEnterpriseProjectRequest:
         :type sort_key: str
         :param status: 企业项目状态。 1--启用，2--停用
         :type status: int
+        :param type: 查询项目类型。 - prod-商用项目 - poc-测试项目
+        :type type: str
         """
         
         
@@ -64,6 +68,7 @@ class ListEnterpriseProjectRequest:
         self._sort_dir = None
         self._sort_key = None
         self._status = None
+        self._type = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class ListEnterpriseProjectRequest:
             self.sort_key = sort_key
         if status is not None:
             self.status = status
+        if type is not None:
+            self.type = type
 
     @property
     def id(self):
@@ -234,6 +241,28 @@ class ListEnterpriseProjectRequest:
         :type status: int
         """
         self._status = status
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListEnterpriseProjectRequest.
+
+        查询项目类型。 - prod-商用项目 - poc-测试项目
+
+        :return: The type of this ListEnterpriseProjectRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListEnterpriseProjectRequest.
+
+        查询项目类型。 - prod-商用项目 - poc-测试项目
+
+        :param type: The type of this ListEnterpriseProjectRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

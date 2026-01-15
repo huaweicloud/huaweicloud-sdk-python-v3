@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PowerState:
-
+    """
+    allowed enum values
+    """
+    ON = "on"
+    POWERING_ON = "powering-on"
+    OFF = "off"
+    REBOOTING = "rebooting"
+    POWERING_OFF = "powering-off"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -17,12 +17,12 @@ class ScheduleTask:
     openapi_types = {
         'id': 'str',
         'task_name': 'str',
-        'last_status': 'str',
-        'task_type': 'str',
+        'last_status': 'ScheduleTaskStatus',
+        'task_type': 'ScheduleTaskTypeEnum',
         'task_cron': 'str',
         'next_execution_time': 'str',
         'schedule_task_policy': 'ScheduleTaskPolicy',
-        'scheduled_type': 'str',
+        'scheduled_type': 'ScheduledTypeEnum',
         'day_interval': 'int',
         'week_list': 'str',
         'month_list': 'str',
@@ -69,18 +69,18 @@ class ScheduleTask:
         :type id: str
         :param task_name: 任务名称。
         :type task_name: str
-        :param last_status: job状态： * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
-        :type last_status: str
-        :param task_type: 定时任务类型： * &#x60;RESTART_SERVER&#x60; - 定时重启服务器 * &#x60;START_SERVER&#x60; - 定时开机 * &#x60;STOP_SERVER&#x60; - 定时关机 * &#x60;REINSTALL_OS&#x60; - 定时重装操作系统
-        :type task_type: str
+        :param last_status: 
+        :type last_status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         :param task_cron: 定时任务表达式。
         :type task_cron: str
         :param next_execution_time: 下一次执行时间。
         :type next_execution_time: str
         :param schedule_task_policy: 
         :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
-        :param scheduled_type: 执行周期： * &#x60;FIXED_TIME&#x60; - 指定时间 * &#x60;DAY&#x60; - 按天 * &#x60;WEEK&#x60; - 按周 * &#x60;MONTH&#x60; - 按月
-        :type scheduled_type: str
+        :param scheduled_type: 
+        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         :param day_interval: 周期按天时：按x天间隔执行。
         :type day_interval: int
         :param week_list: 周期按周时：取值1~7，英文逗号分隔，如1,2,7。
@@ -220,10 +220,8 @@ class ScheduleTask:
     def last_status(self):
         r"""Gets the last_status of this ScheduleTask.
 
-        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :return: The last_status of this ScheduleTask.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
         """
         return self._last_status
 
@@ -231,10 +229,8 @@ class ScheduleTask:
     def last_status(self, last_status):
         r"""Sets the last_status of this ScheduleTask.
 
-        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
-
         :param last_status: The last_status of this ScheduleTask.
-        :type last_status: str
+        :type last_status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
         """
         self._last_status = last_status
 
@@ -242,10 +238,8 @@ class ScheduleTask:
     def task_type(self):
         r"""Gets the task_type of this ScheduleTask.
 
-        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
-
         :return: The task_type of this ScheduleTask.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         """
         return self._task_type
 
@@ -253,10 +247,8 @@ class ScheduleTask:
     def task_type(self, task_type):
         r"""Sets the task_type of this ScheduleTask.
 
-        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
-
         :param task_type: The task_type of this ScheduleTask.
-        :type task_type: str
+        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
         """
         self._task_type = task_type
 
@@ -326,10 +318,8 @@ class ScheduleTask:
     def scheduled_type(self):
         r"""Gets the scheduled_type of this ScheduleTask.
 
-        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
-
         :return: The scheduled_type of this ScheduleTask.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         """
         return self._scheduled_type
 
@@ -337,10 +327,8 @@ class ScheduleTask:
     def scheduled_type(self, scheduled_type):
         r"""Sets the scheduled_type of this ScheduleTask.
 
-        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
-
         :param scheduled_type: The scheduled_type of this ScheduleTask.
-        :type scheduled_type: str
+        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
         """
         self._scheduled_type = scheduled_type
 

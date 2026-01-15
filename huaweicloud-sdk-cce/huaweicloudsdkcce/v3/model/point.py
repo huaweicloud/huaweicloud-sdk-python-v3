@@ -15,7 +15,7 @@ class Point:
     sensitive_list = []
 
     openapi_types = {
-        'task_type': 'str'
+        'task_type': 'TaskType'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class Point:
 
         The model defined in huaweicloud sdk
 
-        :param task_type: 集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-        :type task_type: str
+        :param task_type: 
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         
         
@@ -43,10 +43,8 @@ class Point:
     def task_type(self):
         r"""Gets the task_type of this Point.
 
-        集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-
         :return: The task_type of this Point.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         return self._task_type
 
@@ -54,10 +52,8 @@ class Point:
     def task_type(self, task_type):
         r"""Sets the task_type of this Point.
 
-        集群升级任务类型： Cluster: 集群升级任务 PreCheck: 集群升级预检查任务 Rollback: 集群升级回归任务 Snapshot: 集群升级快照任务 PostCheck: 集群升级后检查任务 
-
         :param task_type: The task_type of this Point.
-        :type task_type: str
+        :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`
         """
         self._task_type = task_type
 

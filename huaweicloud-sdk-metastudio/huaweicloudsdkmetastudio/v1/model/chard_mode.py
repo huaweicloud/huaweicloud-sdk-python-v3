@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ChardMode:
-
+    """
+    allowed enum values
+    """
+    PERIODIC = "PERIODIC"
+    ONE_TIME = "ONE_TIME"
+    ON_DEMAND = "ON_DEMAND"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

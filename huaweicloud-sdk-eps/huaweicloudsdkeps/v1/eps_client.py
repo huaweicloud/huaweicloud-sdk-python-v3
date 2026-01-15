@@ -410,6 +410,8 @@ class EpsClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 

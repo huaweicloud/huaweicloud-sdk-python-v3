@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class VolumeType:
-
+    """
+    allowed enum values
+    """
+    ESSD = "ESSD"
+    SSD = "SSD"
+    GPSSD = "GPSSD"
+    SAS = "SAS"
+    SATA = "SATA"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

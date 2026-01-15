@@ -29,7 +29,7 @@ class CreateAiOpsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待操作的集群ID。
+        :param cluster_id: **参数解释**： 指定操作的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
         :type cluster_id: str
         :param body: Body of the CreateAiOpsRequest
         :type body: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBody`
@@ -49,7 +49,7 @@ class CreateAiOpsRequest:
     def cluster_id(self):
         r"""Gets the cluster_id of this CreateAiOpsRequest.
 
-        指定待操作的集群ID。
+        **参数解释**： 指定操作的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
         :return: The cluster_id of this CreateAiOpsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateAiOpsRequest:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this CreateAiOpsRequest.
 
-        指定待操作的集群ID。
+        **参数解释**： 指定操作的集群ID。获取方法请参见[获取集群ID](css_03_0101.xml)。 **约束限制**： 不涉及 **取值范围**： 集群ID。 **默认取值**： 不涉及
 
         :param cluster_id: The cluster_id of this CreateAiOpsRequest.
         :type cluster_id: str

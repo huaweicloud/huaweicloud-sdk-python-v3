@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class HibernateType:
-
+    """
+    allowed enum values
+    """
+    SUSPEND = "SUSPEND"
+    PAUSE = "PAUSE"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

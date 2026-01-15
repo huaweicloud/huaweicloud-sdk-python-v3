@@ -4,7 +4,14 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class IsapTableCategory:
-
+    """
+    allowed enum values
+    """
+    STREAMING = "STREAMING"
+    INDEX = "INDEX"
+    APPLICATION = "APPLICATION"
+    TENANT_BUCKET = "TENANT_BUCKET"
+    LAKE = "LAKE"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

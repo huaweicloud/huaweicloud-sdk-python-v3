@@ -17,7 +17,7 @@ class EndpointInput:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'type': 'str',
+        'type': 'EndpointType',
         'reserved_resource': 'ReservedResource',
         'ray_resource': 'RayResourceInput',
         'cap': 'CapRef',
@@ -43,8 +43,8 @@ class EndpointInput:
         :type name: str
         :param description: 描述信息
         :type description: str
-        :param type: Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
-        :type type: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
         :param reserved_resource: 
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
         :param ray_resource: 
@@ -127,10 +127,8 @@ class EndpointInput:
     def type(self):
         r"""Gets the type of this EndpointInput.
 
-        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
-
         :return: The type of this EndpointInput.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
         """
         return self._type
 
@@ -138,10 +136,8 @@ class EndpointInput:
     def type(self, type):
         r"""Sets the type of this EndpointInput.
 
-        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
-
         :param type: The type of this EndpointInput.
-        :type type: str
+        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
         """
         self._type = type
 

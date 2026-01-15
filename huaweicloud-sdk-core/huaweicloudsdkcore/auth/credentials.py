@@ -81,7 +81,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
     _AUTHORIZATION = "Authorization"
-    _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 2 * 60 * 60  # 2h
+    _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 40 * 60  # 40min
     _DEFAULT_DURATION_SECONDS = 6 * 60 * 60  # 6h
     _CACHE = {}
     _LOCK = threading.Lock()

@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstallType:
-
+    """
+    allowed enum values
+    """
+    QUIET_INSTALL = "QUIET_INSTALL"
+    UNZIP_INSTALL = "UNZIP_INSTALL"
+    GUI_INSTALL = "GUI_INSTALL"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

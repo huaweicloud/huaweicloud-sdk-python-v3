@@ -4,7 +4,15 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class JobType:
-
+    """
+    allowed enum values
+    """
+    BASIC = "BASIC"
+    MIDDLE = "MIDDLE"
+    ADVANCE = "ADVANCE"
+    THIRD_PARTY = "THIRD_PARTY"
+    THIRD_PARTY_LJZN = "THIRD_PARTY_LJZN"
+    FLEXUS = "FLEXUS"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

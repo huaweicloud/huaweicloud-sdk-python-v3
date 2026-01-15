@@ -23,7 +23,7 @@ class ShowSearchJobResponse(SdkResponse):
         'databases': 'list[str]',
         'custom_databases': 'list[str]',
         'models': 'list[BasicDrugModel]',
-        'search_method': 'str',
+        'search_method': 'SearchType',
         'part_failed_reason': 'list[FailedReasonRecord]'
     }
 
@@ -59,7 +59,7 @@ class ShowSearchJobResponse(SdkResponse):
         :param models: 模型信息
         :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         :param search_method: 
-        :type search_method: str
+        :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`
         :param part_failed_reason: 部分失败原因和数量
         :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
         """
@@ -251,7 +251,7 @@ class ShowSearchJobResponse(SdkResponse):
         r"""Gets the search_method of this ShowSearchJobResponse.
 
         :return: The search_method of this ShowSearchJobResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.SearchType`
         """
         return self._search_method
 
@@ -260,7 +260,7 @@ class ShowSearchJobResponse(SdkResponse):
         r"""Sets the search_method of this ShowSearchJobResponse.
 
         :param search_method: The search_method of this ShowSearchJobResponse.
-        :type search_method: str
+        :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`
         """
         self._search_method = search_method
 

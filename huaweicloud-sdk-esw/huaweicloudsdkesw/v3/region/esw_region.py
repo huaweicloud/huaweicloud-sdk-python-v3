@@ -20,6 +20,8 @@ class EswRegion:
                         "https://esw.ap-southeast-2.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://esw.ap-southeast-3.myhuaweicloud.com")
+    AP_SOUTHEAST_4 = Region("ap-southeast-4",
+                        "https://esw.ap-southeast-4.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",
                         "https://esw.sa-brazil-1.myhuaweicloud.com")
     LA_SOUTH_2 = Region("la-south-2",
@@ -43,6 +45,7 @@ class EswRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "ap-southeast-4": AP_SOUTHEAST_4,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-south-2": LA_SOUTH_2,
         "tr-west-1": TR_WEST_1,

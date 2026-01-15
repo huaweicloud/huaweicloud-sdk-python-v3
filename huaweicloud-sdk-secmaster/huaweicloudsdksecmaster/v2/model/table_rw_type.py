@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TableRWType:
-
+    """
+    allowed enum values
+    """
+    READ_ONLY = "READ_ONLY"
+    READ_WRITE = "READ_WRITE"
+    WRITE_ONLY = "WRITE_ONLY"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

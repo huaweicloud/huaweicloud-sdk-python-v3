@@ -17,8 +17,8 @@ class EnableDataTransformationResponse(SdkResponse):
 
     openapi_types = {
         'data_transformation_id': 'str',
-        'status': 'str',
-        'process_status': 'str'
+        'status': 'JobStatus',
+        'process_status': 'JobProcessStatus'
     }
 
     attribute_map = {
@@ -34,10 +34,10 @@ class EnableDataTransformationResponse(SdkResponse):
 
         :param data_transformation_id: UUID
         :type data_transformation_id: str
-        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
-        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-        :type process_status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         
         super().__init__()
@@ -80,10 +80,8 @@ class EnableDataTransformationResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this EnableDataTransformationResponse.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this EnableDataTransformationResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         return self._status
 
@@ -91,10 +89,8 @@ class EnableDataTransformationResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this EnableDataTransformationResponse.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this EnableDataTransformationResponse.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         self._status = status
 
@@ -102,10 +98,8 @@ class EnableDataTransformationResponse(SdkResponse):
     def process_status(self):
         r"""Gets the process_status of this EnableDataTransformationResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :return: The process_status of this EnableDataTransformationResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         return self._process_status
 
@@ -113,10 +107,8 @@ class EnableDataTransformationResponse(SdkResponse):
     def process_status(self, process_status):
         r"""Sets the process_status of this EnableDataTransformationResponse.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :param process_status: The process_status of this EnableDataTransformationResponse.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         self._process_status = process_status
 

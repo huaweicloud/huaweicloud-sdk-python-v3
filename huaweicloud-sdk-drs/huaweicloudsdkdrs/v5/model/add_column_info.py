@@ -33,13 +33,13 @@ class AddColumnInfo:
 
         The model defined in huaweicloud sdk
 
-        :param column_type: 列类型
+        :param column_type: 列类型 取值：default_value，create_time，update_time，expression，server_database_table
         :type column_type: str
         :param column_name: 列名称
         :type column_name: str
         :param column_value: 列填充值
         :type column_value: str
-        :param data_type: 填充列的数据类型
+        :param data_type: 填充列的数据类型 取值：int，long，varchar(256)，varchar(191)，datetime，timestamp
         :type data_type: str
         """
         
@@ -64,7 +64,7 @@ class AddColumnInfo:
     def column_type(self):
         r"""Gets the column_type of this AddColumnInfo.
 
-        列类型
+        列类型 取值：default_value，create_time，update_time，expression，server_database_table
 
         :return: The column_type of this AddColumnInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class AddColumnInfo:
     def column_type(self, column_type):
         r"""Sets the column_type of this AddColumnInfo.
 
-        列类型
+        列类型 取值：default_value，create_time，update_time，expression，server_database_table
 
         :param column_type: The column_type of this AddColumnInfo.
         :type column_type: str
@@ -130,7 +130,7 @@ class AddColumnInfo:
     def data_type(self):
         r"""Gets the data_type of this AddColumnInfo.
 
-        填充列的数据类型
+        填充列的数据类型 取值：int，long，varchar(256)，varchar(191)，datetime，timestamp
 
         :return: The data_type of this AddColumnInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class AddColumnInfo:
     def data_type(self, data_type):
         r"""Sets the data_type of this AddColumnInfo.
 
-        填充列的数据类型
+        填充列的数据类型 取值：int，long，varchar(256)，varchar(191)，datetime，timestamp
 
         :param data_type: The data_type of this AddColumnInfo.
         :type data_type: str

@@ -15,32 +15,32 @@ class ListMetricsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'dim': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'dim': 'str',
         'metric_names': 'list[str]',
         'period': 'str'
     }
 
     attribute_map = {
+        'dim': 'dim',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'dim': 'dim',
         'metric_names': 'metric_names',
         'period': 'period'
     }
 
-    def __init__(self, start_time=None, end_time=None, dim=None, metric_names=None, period=None):
+    def __init__(self, dim=None, start_time=None, end_time=None, metric_names=None, period=None):
         r"""ListMetricsRequest
 
         The model defined in huaweicloud sdk
 
+        :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value。
+        :type dim: str
         :param start_time: 开始时间, UTC时间。
         :type start_time: str
         :param end_time: 结束时间,UTC时间。
         :type end_time: str
-        :param dim: 指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}&#x3D;key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0&#x3D;instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0&#x3D;key,value&amp;dim.1&#x3D;key,value。
-        :type dim: str
         :param metric_names: 指标名称列表。
         :type metric_names: list[str]
         :param period: 数据周期 | DAY - 天级数据 HOUR - 小时级数据。
@@ -49,20 +49,42 @@ class ListMetricsRequest:
         
         
 
+        self._dim = None
         self._start_time = None
         self._end_time = None
-        self._dim = None
         self._metric_names = None
         self._period = None
         self.discriminator = None
 
-        self.start_time = start_time
-        self.end_time = end_time
         if dim is not None:
             self.dim = dim
+        self.start_time = start_time
+        self.end_time = end_time
         self.metric_names = metric_names
         if period is not None:
             self.period = period
+
+    @property
+    def dim(self):
+        r"""Gets the dim of this ListMetricsRequest.
+
+        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
+
+        :return: The dim of this ListMetricsRequest.
+        :rtype: str
+        """
+        return self._dim
+
+    @dim.setter
+    def dim(self, dim):
+        r"""Sets the dim of this ListMetricsRequest.
+
+        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
+
+        :param dim: The dim of this ListMetricsRequest.
+        :type dim: str
+        """
+        self._dim = dim
 
     @property
     def start_time(self):
@@ -107,28 +129,6 @@ class ListMetricsRequest:
         :type end_time: str
         """
         self._end_time = end_time
-
-    @property
-    def dim(self):
-        r"""Gets the dim of this ListMetricsRequest.
-
-        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
-
-        :return: The dim of this ListMetricsRequest.
-        :rtype: str
-        """
-        return self._dim
-
-    @dim.setter
-    def dim(self, dim):
-        r"""Sets the dim of this ListMetricsRequest.
-
-        指标维度 | 目前最大支持3个维度，必须从0开始；维度格式为dim.{i}=key,value，key的最大长度32，value的最大长度为256。 单维度：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d 多维度：dim.0=key,value&dim.1=key,value。
-
-        :param dim: The dim of this ListMetricsRequest.
-        :type dim: str
-        """
-        self._dim = dim
 
     @property
     def metric_names(self):

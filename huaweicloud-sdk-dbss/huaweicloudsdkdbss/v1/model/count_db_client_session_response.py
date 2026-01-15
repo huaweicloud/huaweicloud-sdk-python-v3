@@ -28,7 +28,7 @@ class CountDbClientSessionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 客户端会话统计
         :type body: list[:class:`huaweicloudsdkdbss.v1.ReportClientSessionNew`]
         """
         
@@ -44,6 +44,8 @@ class CountDbClientSessionResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this CountDbClientSessionResponse.
 
+        客户端会话统计
+
         :return: The body of this CountDbClientSessionResponse.
         :rtype: list[:class:`huaweicloudsdkdbss.v1.ReportClientSessionNew`]
         """
@@ -52,6 +54,8 @@ class CountDbClientSessionResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this CountDbClientSessionResponse.
+
+        客户端会话统计
 
         :param body: The body of this CountDbClientSessionResponse.
         :type body: list[:class:`huaweicloudsdkdbss.v1.ReportClientSessionNew`]

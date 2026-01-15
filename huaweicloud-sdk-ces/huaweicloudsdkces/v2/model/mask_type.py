@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class MaskType:
-
+    """
+    allowed enum values
+    """
+    START_END_TIME = "START_END_TIME"
+    FOREVER_TIME = "FOREVER_TIME"
+    CYCLE_TIME = "CYCLE_TIME"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

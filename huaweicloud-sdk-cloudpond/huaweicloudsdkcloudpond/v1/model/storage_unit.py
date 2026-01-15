@@ -15,7 +15,7 @@ class StorageUnit:
     sensitive_list = []
 
     openapi_types = {
-        'storage_type': 'str',
+        'storage_type': 'StorageType',
         'capacity': 'int',
         'gears': 'list[int]',
         'flavor_type': 'str',
@@ -35,8 +35,8 @@ class StorageUnit:
 
         The model defined in huaweicloud sdk
 
-        :param storage_type: 存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
-        :type storage_type: str
+        :param storage_type: 
+        :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
         :param capacity: 存储池大小，单位：TB。
         :type capacity: int
         :param gears: 存储池销售档位
@@ -66,10 +66,8 @@ class StorageUnit:
     def storage_type(self):
         r"""Gets the storage_type of this StorageUnit.
 
-        存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
-
         :return: The storage_type of this StorageUnit.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.StorageType`
         """
         return self._storage_type
 
@@ -77,10 +75,8 @@ class StorageUnit:
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this StorageUnit.
 
-        存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
-
         :param storage_type: The storage_type of this StorageUnit.
-        :type storage_type: str
+        :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
         """
         self._storage_type = storage_type
 

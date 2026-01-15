@@ -16,7 +16,7 @@ class ReferResourceCreate:
 
     openapi_types = {
         'id': 'str',
-        'type': 'str',
+        'type': 'ResourceType',
         'parameters': 'ReferResourceCreateParameters'
     }
 
@@ -34,7 +34,7 @@ class ReferResourceCreate:
         :param id: empty id means resource need to be created
         :type id: str
         :param type: 
-        :type type: str
+        :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkservicestage.v3.ReferResourceCreateParameters`
         """
@@ -78,7 +78,7 @@ class ReferResourceCreate:
         r"""Gets the type of this ReferResourceCreate.
 
         :return: The type of this ReferResourceCreate.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         """
         return self._type
 
@@ -87,7 +87,7 @@ class ReferResourceCreate:
         r"""Sets the type of this ReferResourceCreate.
 
         :param type: The type of this ReferResourceCreate.
-        :type type: str
+        :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         """
         self._type = type
 

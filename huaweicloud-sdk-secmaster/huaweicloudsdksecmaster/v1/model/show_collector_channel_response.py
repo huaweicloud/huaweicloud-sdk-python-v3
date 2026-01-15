@@ -18,11 +18,11 @@ class ShowCollectorChannelResponse(SdkResponse):
     openapi_types = {
         'create_by': 'str',
         'description': 'str',
-        'error': 'str',
+        'error': 'ChannelErrorType',
         'group_id': 'str',
         'input': 'list[ShowModuleVo]',
         'nodes': 'list[NodeVo]',
-        'operation_status': 'str',
+        'operation_status': 'ChannelOperationStatus',
         'output': 'list[ShowModuleVo]',
         'parser_id': 'str',
         'parser_name': 'str',
@@ -52,16 +52,16 @@ class ShowCollectorChannelResponse(SdkResponse):
         :type create_by: str
         :param description: 描述信息
         :type description: str
-        :param error: **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-        :type error: str
+        :param error: 
+        :type error: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
         :param group_id: UUID
         :type group_id: str
         :param input: 相关描述信息
         :type input: list[:class:`huaweicloudsdksecmaster.v1.ShowModuleVo`]
         :param nodes: 相关描述信息
         :type nodes: list[:class:`huaweicloudsdksecmaster.v1.NodeVo`]
-        :param operation_status: **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-        :type operation_status: str
+        :param operation_status: 
+        :type operation_status: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         :param output: 相关描述信息
         :type output: list[:class:`huaweicloudsdksecmaster.v1.ShowModuleVo`]
         :param parser_id: UUID
@@ -158,10 +158,8 @@ class ShowCollectorChannelResponse(SdkResponse):
     def error(self):
         r"""Gets the error of this ShowCollectorChannelResponse.
 
-        **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-
         :return: The error of this ShowCollectorChannelResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
         """
         return self._error
 
@@ -169,10 +167,8 @@ class ShowCollectorChannelResponse(SdkResponse):
     def error(self, error):
         r"""Sets the error of this ShowCollectorChannelResponse.
 
-        **参数解释**: 采集通道失败类型 - SUCCESS 成功 - FILE_UPLOAD_ERROR 文件上传失败 - FILE_COPY_ERROR 文件复制失败 - FILE_ZIP_ERROR 文件压缩失败 - SALT_EXECUTE_ERROR Salt执行出错  **约束限制** 不涉及 **取值范围**: - SUCCESS - FILE_UPLOAD_ERROR - FILE_COPY_ERROR - FILE_ZIP_ERROR - SALT_EXECUTE_ERROR  **默认值** 不涉及
-
         :param error: The error of this ShowCollectorChannelResponse.
-        :type error: str
+        :type error: :class:`huaweicloudsdksecmaster.v1.ChannelErrorType`
         """
         self._error = error
 
@@ -246,10 +242,8 @@ class ShowCollectorChannelResponse(SdkResponse):
     def operation_status(self):
         r"""Gets the operation_status of this ShowCollectorChannelResponse.
 
-        **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-
         :return: The operation_status of this ShowCollectorChannelResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         """
         return self._operation_status
 
@@ -257,10 +251,8 @@ class ShowCollectorChannelResponse(SdkResponse):
     def operation_status(self, operation_status):
         r"""Sets the operation_status of this ShowCollectorChannelResponse.
 
-        **参数解释**: 采集通道部署的进度 - READY 等待部署 - START 开始部署 - SUCCESS 部署成功 - FAIL 部署失败  **约束限制** 不涉及 **取值范围**: - READY - START - SUCCESS - FAIL  **默认值** 不涉及
-
         :param operation_status: The operation_status of this ShowCollectorChannelResponse.
-        :type operation_status: str
+        :type operation_status: :class:`huaweicloudsdksecmaster.v1.ChannelOperationStatus`
         """
         self._operation_status = operation_status
 

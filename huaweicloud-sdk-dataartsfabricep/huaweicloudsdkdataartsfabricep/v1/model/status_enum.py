@@ -4,7 +4,19 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StatusEnum:
-
+    """
+    allowed enum values
+    """
+    PENDING = "PENDING"
+    CREATING = "CREATING"
+    RUNNING = "RUNNING"
+    UPDATING = "UPDATING"
+    SUCCEEDED = "SUCCEEDED"
+    FAILED = "FAILED"
+    STOPPING = "STOPPING"
+    STOPPED = "STOPPED"
+    DELETING = "DELETING"
+    DELETED = "DELETED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

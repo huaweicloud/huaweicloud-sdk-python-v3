@@ -20,7 +20,8 @@ class VolumeInfo:
         'size': 'int',
         'iops': 'int',
         'throughput': 'int',
-        'resource_spec_code': 'str'
+        'resource_spec_code': 'str',
+        'kms_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class VolumeInfo:
         'size': 'size',
         'iops': 'iops',
         'throughput': 'throughput',
-        'resource_spec_code': 'resource_spec_code'
+        'resource_spec_code': 'resource_spec_code',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, id=None, type=None, size=None, iops=None, throughput=None, resource_spec_code=None):
+    def __init__(self, id=None, type=None, size=None, iops=None, throughput=None, resource_spec_code=None, kms_id=None):
         r"""VolumeInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class VolumeInfo:
         :type throughput: int
         :param resource_spec_code: 规格。
         :type resource_spec_code: str
+        :param kms_id: kms密钥Id
+        :type kms_id: str
         """
         
         
@@ -59,6 +63,7 @@ class VolumeInfo:
         self._iops = None
         self._throughput = None
         self._resource_spec_code = None
+        self._kms_id = None
         self.discriminator = None
 
         if id is not None:
@@ -71,6 +76,8 @@ class VolumeInfo:
             self.throughput = throughput
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def id(self):
@@ -203,6 +210,28 @@ class VolumeInfo:
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this VolumeInfo.
+
+        kms密钥Id
+
+        :return: The kms_id of this VolumeInfo.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this VolumeInfo.
+
+        kms密钥Id
+
+        :param kms_id: The kms_id of this VolumeInfo.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

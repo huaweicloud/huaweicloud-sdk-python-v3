@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ModelLevel:
-
+    """
+    allowed enum values
+    """
+    SDI = "SDI"
+    DWI = "DWI"
+    DWR = "DWR"
+    DM = "DM"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

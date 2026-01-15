@@ -28,7 +28,7 @@ class UpdateAuditRiskBucketPathResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果  - SUCCESS: 成功
+        :param result: 操作结果  - SUCCESS：成功
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class UpdateAuditRiskBucketPathResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this UpdateAuditRiskBucketPathResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :return: The result of this UpdateAuditRiskBucketPathResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateAuditRiskBucketPathResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this UpdateAuditRiskBucketPathResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :param result: The result of this UpdateAuditRiskBucketPathResponse.
         :type result: str

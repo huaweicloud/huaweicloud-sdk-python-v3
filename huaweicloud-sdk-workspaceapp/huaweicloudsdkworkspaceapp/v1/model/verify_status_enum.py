@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class VerifyStatusEnum:
-
+    """
+    allowed enum values
+    """
+    VERIFYING = "VERIFYING"
+    VERIFY_PASS = "VERIFY_PASS"
+    VERIFY_FAIL = "Verify_FAIL"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

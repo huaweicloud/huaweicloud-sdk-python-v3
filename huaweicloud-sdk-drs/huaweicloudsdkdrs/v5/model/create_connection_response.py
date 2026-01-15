@@ -52,7 +52,7 @@ class CreateConnectionResponse(SdkResponse):
         :type name: str
         :param create_time: 连接创建时间，格式为时间戳。
         :type create_time: int
-        :param db_type: 连接类型。
+        :param db_type: 连接类型。 取值：mysql - postgresql - mongodb - oracle
         :type db_type: str
         :param config: 
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -173,7 +173,7 @@ class CreateConnectionResponse(SdkResponse):
     def db_type(self):
         r"""Gets the db_type of this CreateConnectionResponse.
 
-        连接类型。
+        连接类型。 取值：mysql - postgresql - mongodb - oracle
 
         :return: The db_type of this CreateConnectionResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class CreateConnectionResponse(SdkResponse):
     def db_type(self, db_type):
         r"""Sets the db_type of this CreateConnectionResponse.
 
-        连接类型。
+        连接类型。 取值：mysql - postgresql - mongodb - oracle
 
         :param db_type: The db_type of this CreateConnectionResponse.
         :type db_type: str

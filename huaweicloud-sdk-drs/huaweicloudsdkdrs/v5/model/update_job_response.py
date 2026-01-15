@@ -44,7 +44,7 @@ class UpdateJobResponse(SdkResponse):
         :type id: str
         :param name: 任务名称。
         :type name: str
-        :param status: 操作结果。
+        :param status: 操作结果。 success，failed
         :type status: str
         """
         
@@ -155,7 +155,7 @@ class UpdateJobResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdateJobResponse.
 
-        操作结果。
+        操作结果。 success，failed
 
         :return: The status of this UpdateJobResponse.
         :rtype: str
@@ -166,7 +166,7 @@ class UpdateJobResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateJobResponse.
 
-        操作结果。
+        操作结果。 success，failed
 
         :param status: The status of this UpdateJobResponse.
         :type status: str

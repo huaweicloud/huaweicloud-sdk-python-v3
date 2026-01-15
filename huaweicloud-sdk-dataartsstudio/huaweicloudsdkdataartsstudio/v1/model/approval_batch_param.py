@@ -21,7 +21,7 @@ class ApprovalBatchParam:
         'email': 'str',
         'fast_approval': 'bool',
         'schedule_time': 'str',
-        'env_type': 'str'
+        'env_type': 'EnvTypeEnum'
     }
 
     attribute_map = {
@@ -51,8 +51,8 @@ class ApprovalBatchParam:
         :type fast_approval: bool
         :param schedule_time: 作业调度时间。格式参照：30_18，表示18点30分。
         :type schedule_time: str
-        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-        :type env_type: str
+        :param env_type: 
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         
         
@@ -214,10 +214,8 @@ class ApprovalBatchParam:
     def env_type(self):
         r"""Gets the env_type of this ApprovalBatchParam.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :return: The env_type of this ApprovalBatchParam.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         return self._env_type
 
@@ -225,10 +223,8 @@ class ApprovalBatchParam:
     def env_type(self, env_type):
         r"""Sets the env_type of this ApprovalBatchParam.
 
-        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
-
         :param env_type: The env_type of this ApprovalBatchParam.
-        :type env_type: str
+        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
         """
         self._env_type = env_type
 

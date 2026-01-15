@@ -18,7 +18,7 @@ class CheckEdgeSiteResourcesReq:
         'availability_zone_id': 'str',
         'flavor_id': 'str',
         'resource_counts': 'int',
-        'volumes': 'list[Volume]'
+        'volumes': 'list[CheckEdgeSiteResourcesVolume]'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class CheckEdgeSiteResourcesReq:
         :type flavor_id: str
         :param resource_counts: 需要的资源数量。
         :type resource_counts: int
-        :param volumes: 磁盘列表。
-        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
+        :param volumes: 磁盘列表。包含系统盘。
+        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.CheckEdgeSiteResourcesVolume`]
         """
         
         
@@ -129,10 +129,10 @@ class CheckEdgeSiteResourcesReq:
     def volumes(self):
         r"""Gets the volumes of this CheckEdgeSiteResourcesReq.
 
-        磁盘列表。
+        磁盘列表。包含系统盘。
 
         :return: The volumes of this CheckEdgeSiteResourcesReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.CheckEdgeSiteResourcesVolume`]
         """
         return self._volumes
 
@@ -140,10 +140,10 @@ class CheckEdgeSiteResourcesReq:
     def volumes(self, volumes):
         r"""Sets the volumes of this CheckEdgeSiteResourcesReq.
 
-        磁盘列表。
+        磁盘列表。包含系统盘。
 
         :param volumes: The volumes of this CheckEdgeSiteResourcesReq.
-        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.Volume`]
+        :type volumes: list[:class:`huaweicloudsdkworkspace.v2.CheckEdgeSiteResourcesVolume`]
         """
         self._volumes = volumes
 

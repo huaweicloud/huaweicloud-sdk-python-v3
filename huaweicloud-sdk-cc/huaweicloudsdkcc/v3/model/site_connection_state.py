@@ -15,7 +15,7 @@ class SiteConnectionState:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'str'
+        'state': 'SiteConnectionStateEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class SiteConnectionState:
 
         The model defined in huaweicloud sdk
 
-        :param state: 分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
         """
         
         
@@ -42,10 +42,8 @@ class SiteConnectionState:
     def state(self):
         r"""Gets the state of this SiteConnectionState.
 
-        分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
-
         :return: The state of this SiteConnectionState.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
         """
         return self._state
 
@@ -53,10 +51,8 @@ class SiteConnectionState:
     def state(self, state):
         r"""Sets the state of this SiteConnectionState.
 
-        分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
-
         :param state: The state of this SiteConnectionState.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
         """
         self._state = state
 

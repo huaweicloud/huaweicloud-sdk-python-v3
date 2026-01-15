@@ -5,7 +5,6 @@ from __future__ import absolute_import
 from huaweicloudsdkcss.v1.css_client import CssClient
 from huaweicloudsdkcss.v1.css_async_client import CssAsyncClient
 
-from huaweicloudsdkcss.v1.model.ai_ops_risk_info import AIOpsRiskInfo
 from huaweicloudsdkcss.v1.model.actions import Actions
 from huaweicloudsdkcss.v1.model.add_favorite_req import AddFavoriteReq
 from huaweicloudsdkcss.v1.model.add_favorite_req_template import AddFavoriteReqTemplate
@@ -14,6 +13,10 @@ from huaweicloudsdkcss.v1.model.add_favorite_response import AddFavoriteResponse
 from huaweicloudsdkcss.v1.model.add_independent_node_request import AddIndependentNodeRequest
 from huaweicloudsdkcss.v1.model.add_independent_node_response import AddIndependentNodeResponse
 from huaweicloudsdkcss.v1.model.address_and_ports import AddressAndPorts
+from huaweicloudsdkcss.v1.model.ai_ops import AiOps
+from huaweicloudsdkcss.v1.model.ai_ops_detector import AiOpsDetector
+from huaweicloudsdkcss.v1.model.ai_ops_risk_object import AiOpsRiskObject
+from huaweicloudsdkcss.v1.model.ai_ops_setting import AiOpsSetting
 from huaweicloudsdkcss.v1.model.backup_rsp import BackupRsp
 from huaweicloudsdkcss.v1.model.batch_add_or_delete_tag_on_cluster_req import BatchAddOrDeleteTagOnClusterReq
 from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
@@ -30,6 +33,8 @@ from huaweicloudsdkcss.v1.model.change_mode_response import ChangeModeResponse
 from huaweicloudsdkcss.v1.model.change_security_group_req import ChangeSecurityGroupReq
 from huaweicloudsdkcss.v1.model.change_security_group_request import ChangeSecurityGroupRequest
 from huaweicloudsdkcss.v1.model.change_security_group_response import ChangeSecurityGroupResponse
+from huaweicloudsdkcss.v1.model.close_ai_ops_setting_request import CloseAiOpsSettingRequest
+from huaweicloudsdkcss.v1.model.close_ai_ops_setting_response import CloseAiOpsSettingResponse
 from huaweicloudsdkcss.v1.model.close_kibana_public_req import CloseKibanaPublicReq
 from huaweicloudsdkcss.v1.model.cluster_change_main_subnet import ClusterChangeMainSubnet
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
@@ -129,8 +134,6 @@ from huaweicloudsdkcss.v1.model.kibana_elb_white_list_resp import KibanaElbWhite
 from huaweicloudsdkcss.v1.model.list_actions_request import ListActionsRequest
 from huaweicloudsdkcss.v1.model.list_actions_response import ListActionsResponse
 from huaweicloudsdkcss.v1.model.list_ai_ops_request import ListAiOpsRequest
-from huaweicloudsdkcss.v1.model.list_ai_ops_request_body_aiops_list import ListAiOpsRequestBodyAiopsList
-from huaweicloudsdkcss.v1.model.list_ai_ops_request_body_summary import ListAiOpsRequestBodySummary
 from huaweicloudsdkcss.v1.model.list_ai_ops_response import ListAiOpsResponse
 from huaweicloudsdkcss.v1.model.list_certs_request import ListCertsRequest
 from huaweicloudsdkcss.v1.model.list_certs_response import ListCertsResponse
@@ -201,6 +204,10 @@ from huaweicloudsdkcss.v1.model.role_extend_req import RoleExtendReq
 from huaweicloudsdkcss.v1.model.route_resps_resource import RouteRespsResource
 from huaweicloudsdkcss.v1.model.set_rds_backup_cnf_req import SetRDSBackupCnfReq
 from huaweicloudsdkcss.v1.model.setting import Setting
+from huaweicloudsdkcss.v1.model.show_ai_ops_detector_request import ShowAiOpsDetectorRequest
+from huaweicloudsdkcss.v1.model.show_ai_ops_detector_response import ShowAiOpsDetectorResponse
+from huaweicloudsdkcss.v1.model.show_ai_ops_setting_request import ShowAiOpsSettingRequest
+from huaweicloudsdkcss.v1.model.show_ai_ops_setting_response import ShowAiOpsSettingResponse
 from huaweicloudsdkcss.v1.model.show_all_tags_tags_resp import ShowAllTagsTagsResp
 from huaweicloudsdkcss.v1.model.show_auto_create_policy_request import ShowAutoCreatePolicyRequest
 from huaweicloudsdkcss.v1.model.show_auto_create_policy_response import ShowAutoCreatePolicyResponse
@@ -284,11 +291,14 @@ from huaweicloudsdkcss.v1.model.stop_snapshot_request import StopSnapshotRequest
 from huaweicloudsdkcss.v1.model.stop_snapshot_response import StopSnapshotResponse
 from huaweicloudsdkcss.v1.model.stop_vpecp_request import StopVpecpRequest
 from huaweicloudsdkcss.v1.model.stop_vpecp_response import StopVpecpResponse
+from huaweicloudsdkcss.v1.model.summary_info import SummaryInfo
 from huaweicloudsdkcss.v1.model.system_templates import SystemTemplates
 from huaweicloudsdkcss.v1.model.tag import Tag
 from huaweicloudsdkcss.v1.model.tag_req import TagReq
 from huaweicloudsdkcss.v1.model.un_bind_public_req import UnBindPublicReq
 from huaweicloudsdkcss.v1.model.un_bind_public_req_eip_req import UnBindPublicReqEipReq
+from huaweicloudsdkcss.v1.model.update_ai_ops_setting_request import UpdateAiOpsSettingRequest
+from huaweicloudsdkcss.v1.model.update_ai_ops_setting_response import UpdateAiOpsSettingResponse
 from huaweicloudsdkcss.v1.model.update_alter_kibana_request import UpdateAlterKibanaRequest
 from huaweicloudsdkcss.v1.model.update_alter_kibana_response import UpdateAlterKibanaResponse
 from huaweicloudsdkcss.v1.model.update_az_by_instance_type_req import UpdateAzByInstanceTypeReq

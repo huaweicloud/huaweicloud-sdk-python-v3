@@ -90,8 +90,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
             self.start = start
         if terminal is not None:
             self.terminal = terminal
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
+        self.policy_rule_ids = policy_rule_ids
 
     @property
     def name(self):

@@ -73,7 +73,7 @@ class ListReplicationJobsRequest:
         :type limit: int
         :param offset: 偏移量，默认值为0，表示查询该偏移量后面的记录。
         :type offset: int
-        :param sort_key: 排序字段。
+        :param sort_key: 排序字段。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
         :type sort_key: str
         :param sort_dir: 排序方法。
         :type sort_dir: str
@@ -369,7 +369,7 @@ class ListReplicationJobsRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListReplicationJobsRequest.
 
-        排序字段。
+        排序字段。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
 
         :return: The sort_key of this ListReplicationJobsRequest.
         :rtype: str
@@ -380,7 +380,7 @@ class ListReplicationJobsRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListReplicationJobsRequest.
 
-        排序字段。
+        排序字段。 取值：name，db_type，inst_id，ip，created_at，description，tag_value
 
         :param sort_key: The sort_key of this ListReplicationJobsRequest.
         :type sort_key: str

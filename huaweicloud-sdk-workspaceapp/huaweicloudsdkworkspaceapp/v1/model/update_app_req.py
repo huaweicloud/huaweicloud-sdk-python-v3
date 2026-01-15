@@ -21,7 +21,7 @@ class UpdateAppReq:
         'work_path': 'str',
         'description': 'str',
         'command_param': 'str',
-        'state': 'str',
+        'state': 'AppStateEnum',
         'sandbox_enable': 'bool',
         'app_extended_info': 'AppExtendedInfo'
     }
@@ -55,8 +55,8 @@ class UpdateAppReq:
         :type description: str
         :param command_param: 启动命令行参数。
         :type command_param: str
-        :param state: 应用状态： * &#x60;NORMAL&#x60; - 正常状态。 * &#x60;FORBIDDEN&#x60; - 禁用状态。
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
         :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
         :type sandbox_enable: bool
         :param app_extended_info: 
@@ -231,10 +231,8 @@ class UpdateAppReq:
     def state(self):
         r"""Gets the state of this UpdateAppReq.
 
-        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
-
         :return: The state of this UpdateAppReq.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
         """
         return self._state
 
@@ -242,10 +240,8 @@ class UpdateAppReq:
     def state(self, state):
         r"""Sets the state of this UpdateAppReq.
 
-        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
-
         :param state: The state of this UpdateAppReq.
-        :type state: str
+        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
         """
         self._state = state
 

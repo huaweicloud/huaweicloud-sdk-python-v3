@@ -17,7 +17,7 @@ class StructureConstraintParamsDto:
     openapi_types = {
         'structs': 'list[str]',
         'exclusive': 'bool',
-        'operator': 'str'
+        'operator': 'OperatorType'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class StructureConstraintParamsDto:
         :param exclusive: 是否排除子结构
         :type exclusive: bool
         :param operator: 
-        :type operator: str
+        :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         
         
@@ -100,7 +100,7 @@ class StructureConstraintParamsDto:
         r"""Gets the operator of this StructureConstraintParamsDto.
 
         :return: The operator of this StructureConstraintParamsDto.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         return self._operator
 
@@ -109,7 +109,7 @@ class StructureConstraintParamsDto:
         r"""Sets the operator of this StructureConstraintParamsDto.
 
         :param operator: The operator of this StructureConstraintParamsDto.
-        :type operator: str
+        :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`
         """
         self._operator = operator
 

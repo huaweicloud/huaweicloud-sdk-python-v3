@@ -16,39 +16,60 @@ class Volume:
 
     openapi_types = {
         'type': 'str',
-        'size': 'int'
+        'size': 'int',
+        'iops': 'int',
+        'throughput': 'int',
+        'kms_id': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'size': 'size'
+        'size': 'size',
+        'iops': 'iops',
+        'throughput': 'throughput',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, type=None, size=None):
+    def __init__(self, type=None, size=None, iops=None, throughput=None, kms_id=None):
         r"""Volume
 
         The model defined in huaweicloud sdk
 
-        :param type: 磁盘类型。
+        :param type: 桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
         :type type: str
-        :param size: 磁盘大小，单位GB。
+        :param size: 磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
         :type size: int
+        :param iops: iops，云硬盘每秒进行读写的操作次数。
+        :type iops: int
+        :param throughput: 吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+        :type throughput: int
+        :param kms_id: kms密钥id，对创建的磁盘进行加密。
+        :type kms_id: str
         """
         
         
 
         self._type = None
         self._size = None
+        self._iops = None
+        self._throughput = None
+        self._kms_id = None
         self.discriminator = None
 
         self.type = type
         self.size = size
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def type(self):
         r"""Gets the type of this Volume.
 
-        磁盘类型。
+        桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
 
         :return: The type of this Volume.
         :rtype: str
@@ -59,7 +80,7 @@ class Volume:
     def type(self, type):
         r"""Sets the type of this Volume.
 
-        磁盘类型。
+        桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
 
         :param type: The type of this Volume.
         :type type: str
@@ -70,7 +91,7 @@ class Volume:
     def size(self):
         r"""Gets the size of this Volume.
 
-        磁盘大小，单位GB。
+        磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
 
         :return: The size of this Volume.
         :rtype: int
@@ -81,12 +102,78 @@ class Volume:
     def size(self, size):
         r"""Sets the size of this Volume.
 
-        磁盘大小，单位GB。
+        磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
 
         :param size: The size of this Volume.
         :type size: int
         """
         self._size = size
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this Volume.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :return: The iops of this Volume.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this Volume.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :param iops: The iops of this Volume.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        r"""Gets the throughput of this Volume.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :return: The throughput of this Volume.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        r"""Sets the throughput of this Volume.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :param throughput: The throughput of this Volume.
+        :type throughput: int
+        """
+        self._throughput = throughput
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this Volume.
+
+        kms密钥id，对创建的磁盘进行加密。
+
+        :return: The kms_id of this Volume.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this Volume.
+
+        kms密钥id，对创建的磁盘进行加密。
+
+        :param kms_id: The kms_id of this Volume.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

@@ -17,18 +17,16 @@ class CreateCertSignatureReq:
     openapi_types = {
         'distinguished_name': 'DistinguishedName',
         'key_algorithm': 'str',
-        'signature_algorithm': 'str',
         'transaction_id': 'str'
     }
 
     attribute_map = {
         'distinguished_name': 'distinguished_name',
         'key_algorithm': 'key_algorithm',
-        'signature_algorithm': 'signature_algorithm',
         'transaction_id': 'transaction_id'
     }
 
-    def __init__(self, distinguished_name=None, key_algorithm=None, signature_algorithm=None, transaction_id=None):
+    def __init__(self, distinguished_name=None, key_algorithm=None, transaction_id=None):
         r"""CreateCertSignatureReq
 
         The model defined in huaweicloud sdk
@@ -37,8 +35,6 @@ class CreateCertSignatureReq:
         :type distinguished_name: :class:`huaweicloudsdkworkspace.v2.DistinguishedName`
         :param key_algorithm: 密钥对生成算法 RSA-2048 RSA-3072。
         :type key_algorithm: str
-        :param signature_algorithm: 签名哈希算法 SHA-256 SHA-512。
-        :type signature_algorithm: str
         :param transaction_id: 事务id。
         :type transaction_id: str
         """
@@ -47,13 +43,11 @@ class CreateCertSignatureReq:
 
         self._distinguished_name = None
         self._key_algorithm = None
-        self._signature_algorithm = None
         self._transaction_id = None
         self.discriminator = None
 
         self.distinguished_name = distinguished_name
         self.key_algorithm = key_algorithm
-        self.signature_algorithm = signature_algorithm
         if transaction_id is not None:
             self.transaction_id = transaction_id
 
@@ -96,28 +90,6 @@ class CreateCertSignatureReq:
         :type key_algorithm: str
         """
         self._key_algorithm = key_algorithm
-
-    @property
-    def signature_algorithm(self):
-        r"""Gets the signature_algorithm of this CreateCertSignatureReq.
-
-        签名哈希算法 SHA-256 SHA-512。
-
-        :return: The signature_algorithm of this CreateCertSignatureReq.
-        :rtype: str
-        """
-        return self._signature_algorithm
-
-    @signature_algorithm.setter
-    def signature_algorithm(self, signature_algorithm):
-        r"""Sets the signature_algorithm of this CreateCertSignatureReq.
-
-        签名哈希算法 SHA-256 SHA-512。
-
-        :param signature_algorithm: The signature_algorithm of this CreateCertSignatureReq.
-        :type signature_algorithm: str
-        """
-        self._signature_algorithm = signature_algorithm
 
     @property
     def transaction_id(self):

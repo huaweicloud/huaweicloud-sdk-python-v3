@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TableEditType:
-
+    """
+    allowed enum values
+    """
+    MODIFIABLE = "MODIFIABLE"
+    APPENDED = "APPENDED"
+    LOCKED = "LOCKED"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

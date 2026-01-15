@@ -15,7 +15,7 @@ class UpdateHealthCheckOption:
     sensitive_list = []
 
     openapi_types = {
-        'protocol': 'str',
+        'protocol': 'HealthCheckProtocol',
         'port': 'int',
         'interval': 'int',
         'timeout': 'int',
@@ -37,8 +37,8 @@ class UpdateHealthCheckOption:
 
         The model defined in huaweicloud sdk
 
-        :param protocol: 监听的网络传输协议类型。 取值范围：TCP、UDP
-        :type protocol: str
+        :param protocol: 
+        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         :param port: 健康检查的端口。
         :type port: int
         :param interval: 健康检查的时间间隔，单位为秒。
@@ -78,10 +78,8 @@ class UpdateHealthCheckOption:
     def protocol(self):
         r"""Gets the protocol of this UpdateHealthCheckOption.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :return: The protocol of this UpdateHealthCheckOption.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
         return self._protocol
 
@@ -89,10 +87,8 @@ class UpdateHealthCheckOption:
     def protocol(self, protocol):
         r"""Sets the protocol of this UpdateHealthCheckOption.
 
-        监听的网络传输协议类型。 取值范围：TCP、UDP
-
         :param protocol: The protocol of this UpdateHealthCheckOption.
-        :type protocol: str
+        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
         self._protocol = protocol
 

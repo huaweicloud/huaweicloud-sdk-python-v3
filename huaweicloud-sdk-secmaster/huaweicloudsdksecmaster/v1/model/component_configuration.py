@@ -23,7 +23,7 @@ class ComponentConfiguration:
         'ip_address': 'str',
         'list': 'list[ComponentConfigurationParam]',
         'monitor': 'Monitor',
-        'node_apply_fail_enum': 'str',
+        'node_apply_fail_enum': 'NodeApplyFailEnum',
         'node_expansion': 'IsapNodeExpansion',
         'node_id': 'str',
         'node_name': 'str',
@@ -75,8 +75,8 @@ class ComponentConfiguration:
         :type list: list[:class:`huaweicloudsdksecmaster.v1.ComponentConfigurationParam`]
         :param monitor: 
         :type monitor: :class:`huaweicloudsdksecmaster.v1.Monitor`
-        :param node_apply_fail_enum: **参数解释**: 节点应用成功与否状态、原因 - COLLECTOR_USE 采集器使用中，无法移除 - NODE_OFFLINE 节点失联状态，无法应用  **约束限制** 不涉及 **取值范围**: - COLLECTOR_USE - NODE_OFFLINE  **默认值** 不涉及
-        :type node_apply_fail_enum: str
+        :param node_apply_fail_enum: 
+        :type node_apply_fail_enum: :class:`huaweicloudsdksecmaster.v1.NodeApplyFailEnum`
         :param node_expansion: 
         :type node_expansion: :class:`huaweicloudsdksecmaster.v1.IsapNodeExpansion`
         :param node_id: 节点ID
@@ -327,10 +327,8 @@ class ComponentConfiguration:
     def node_apply_fail_enum(self):
         r"""Gets the node_apply_fail_enum of this ComponentConfiguration.
 
-        **参数解释**: 节点应用成功与否状态、原因 - COLLECTOR_USE 采集器使用中，无法移除 - NODE_OFFLINE 节点失联状态，无法应用  **约束限制** 不涉及 **取值范围**: - COLLECTOR_USE - NODE_OFFLINE  **默认值** 不涉及
-
         :return: The node_apply_fail_enum of this ComponentConfiguration.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.NodeApplyFailEnum`
         """
         return self._node_apply_fail_enum
 
@@ -338,10 +336,8 @@ class ComponentConfiguration:
     def node_apply_fail_enum(self, node_apply_fail_enum):
         r"""Sets the node_apply_fail_enum of this ComponentConfiguration.
 
-        **参数解释**: 节点应用成功与否状态、原因 - COLLECTOR_USE 采集器使用中，无法移除 - NODE_OFFLINE 节点失联状态，无法应用  **约束限制** 不涉及 **取值范围**: - COLLECTOR_USE - NODE_OFFLINE  **默认值** 不涉及
-
         :param node_apply_fail_enum: The node_apply_fail_enum of this ComponentConfiguration.
-        :type node_apply_fail_enum: str
+        :type node_apply_fail_enum: :class:`huaweicloudsdksecmaster.v1.NodeApplyFailEnum`
         """
         self._node_apply_fail_enum = node_apply_fail_enum
 

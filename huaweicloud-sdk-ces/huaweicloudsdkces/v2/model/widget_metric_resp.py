@@ -21,7 +21,7 @@ class WidgetMetricResp:
         'alias': 'list[str]',
         'extra_info': 'ExtraInfoResp',
         'rollup_enable': 'bool',
-        'rollup_filter': 'str',
+        'rollup_filter': 'RollupFilterResp',
         'rollup_dimension': 'str',
         'last_week_compare_enable': 'bool',
         'yesterday_compare_enable': 'bool',
@@ -67,8 +67,8 @@ class WidgetMetricResp:
         :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfoResp`
         :param rollup_enable: **参数解释** 是否开启聚合 **取值范围** - true：表示开启聚合 - false：表示不开启聚合 
         :type rollup_enable: bool
-        :param rollup_filter: **参数解释** 聚合规则 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 
-        :type rollup_filter: str
+        :param rollup_filter: 
+        :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilterResp`
         :param rollup_dimension: **参数解释** 聚合维度 **取值范围** 长度为[1,32]个字符 
         :type rollup_dimension: str
         :param last_week_compare_enable: **参数解释** 是否展示同比（上周同一时间）数据 **取值范围** - true:展示 - false:不展示 
@@ -265,10 +265,8 @@ class WidgetMetricResp:
     def rollup_filter(self):
         r"""Gets the rollup_filter of this WidgetMetricResp.
 
-        **参数解释** 聚合规则 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 
-
         :return: The rollup_filter of this WidgetMetricResp.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v2.RollupFilterResp`
         """
         return self._rollup_filter
 
@@ -276,10 +274,8 @@ class WidgetMetricResp:
     def rollup_filter(self, rollup_filter):
         r"""Sets the rollup_filter of this WidgetMetricResp.
 
-        **参数解释** 聚合规则 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 
-
         :param rollup_filter: The rollup_filter of this WidgetMetricResp.
-        :type rollup_filter: str
+        :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilterResp`
         """
         self._rollup_filter = rollup_filter
 

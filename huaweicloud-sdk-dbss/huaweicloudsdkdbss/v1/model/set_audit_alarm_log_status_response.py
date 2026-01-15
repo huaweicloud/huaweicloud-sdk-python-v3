@@ -28,7 +28,7 @@ class SetAuditAlarmLogStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 请求结果  - request_success: 成功
+        :param result: 请求结果  - request_success：成功
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class SetAuditAlarmLogStatusResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this SetAuditAlarmLogStatusResponse.
 
-        请求结果  - request_success: 成功
+        请求结果  - request_success：成功
 
         :return: The result of this SetAuditAlarmLogStatusResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class SetAuditAlarmLogStatusResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this SetAuditAlarmLogStatusResponse.
 
-        请求结果  - request_success: 成功
+        请求结果  - request_success：成功
 
         :param result: The result of this SetAuditAlarmLogStatusResponse.
         :type result: str

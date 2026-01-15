@@ -18,6 +18,8 @@ class RebuildDesktopsReq:
         'desktop_ids': 'list[str]',
         'image_type': 'str',
         'image_id': 'str',
+        'encrypt_type': 'EncryptType',
+        'kms_id': 'str',
         'os_type': 'str',
         'delay_time': 'int',
         'message': 'str',
@@ -30,6 +32,8 @@ class RebuildDesktopsReq:
         'desktop_ids': 'desktop_ids',
         'image_type': 'image_type',
         'image_id': 'image_id',
+        'encrypt_type': 'encrypt_type',
+        'kms_id': 'kms_id',
         'os_type': 'os_type',
         'delay_time': 'delay_time',
         'message': 'message',
@@ -38,17 +42,21 @@ class RebuildDesktopsReq:
         'handle_type': 'handle_type'
     }
 
-    def __init__(self, desktop_ids=None, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, enterprise_project_id=None, handle_type=None):
+    def __init__(self, desktop_ids=None, image_type=None, image_id=None, encrypt_type=None, kms_id=None, os_type=None, delay_time=None, message=None, order_id=None, enterprise_project_id=None, handle_type=None):
         r"""RebuildDesktopsReq
 
         The model defined in huaweicloud sdk
 
         :param desktop_ids: 计算机id列表。
         :type desktop_ids: list[str]
-        :param image_type: 镜像类型。
+        :param image_type: 镜像类型 - 公共镜像：gold - 私有镜像：private - 市场镜像：market
         :type image_type: str
         :param image_id: 模板ID。
         :type image_id: str
+        :param encrypt_type: 
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        :param kms_id: 密钥ID，encrypt_type为ENCRYPTED时必传。
+        :type kms_id: str
         :param os_type: os类型。
         :type os_type: str
         :param delay_time: 立即重建时给用户预留的保存数据的时间（单位：分钟）。
@@ -68,6 +76,8 @@ class RebuildDesktopsReq:
         self._desktop_ids = None
         self._image_type = None
         self._image_id = None
+        self._encrypt_type = None
+        self._kms_id = None
         self._os_type = None
         self._delay_time = None
         self._message = None
@@ -79,6 +89,10 @@ class RebuildDesktopsReq:
         self.desktop_ids = desktop_ids
         self.image_type = image_type
         self.image_id = image_id
+        if encrypt_type is not None:
+            self.encrypt_type = encrypt_type
+        if kms_id is not None:
+            self.kms_id = kms_id
         if os_type is not None:
             self.os_type = os_type
         if delay_time is not None:
@@ -118,7 +132,7 @@ class RebuildDesktopsReq:
     def image_type(self):
         r"""Gets the image_type of this RebuildDesktopsReq.
 
-        镜像类型。
+        镜像类型 - 公共镜像：gold - 私有镜像：private - 市场镜像：market
 
         :return: The image_type of this RebuildDesktopsReq.
         :rtype: str
@@ -129,7 +143,7 @@ class RebuildDesktopsReq:
     def image_type(self, image_type):
         r"""Sets the image_type of this RebuildDesktopsReq.
 
-        镜像类型。
+        镜像类型 - 公共镜像：gold - 私有镜像：private - 市场镜像：market
 
         :param image_type: The image_type of this RebuildDesktopsReq.
         :type image_type: str
@@ -157,6 +171,46 @@ class RebuildDesktopsReq:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def encrypt_type(self):
+        r"""Gets the encrypt_type of this RebuildDesktopsReq.
+
+        :return: The encrypt_type of this RebuildDesktopsReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        return self._encrypt_type
+
+    @encrypt_type.setter
+    def encrypt_type(self, encrypt_type):
+        r"""Sets the encrypt_type of this RebuildDesktopsReq.
+
+        :param encrypt_type: The encrypt_type of this RebuildDesktopsReq.
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        self._encrypt_type = encrypt_type
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this RebuildDesktopsReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :return: The kms_id of this RebuildDesktopsReq.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this RebuildDesktopsReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :param kms_id: The kms_id of this RebuildDesktopsReq.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     @property
     def os_type(self):

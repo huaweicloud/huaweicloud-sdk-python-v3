@@ -16,7 +16,7 @@ class SubscribeUserSharerReq:
 
     openapi_types = {
         'user_sharer_sku': 'str',
-        'users': 'list[User]'
+        'users': 'list[SubscribeUserInfo]'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class SubscribeUserSharerReq:
         :param user_sharer_sku: 用户协同资源SKU码。
         :type user_sharer_sku: str
         :param users: 开通协同的的用户列表。
-        :type users: list[:class:`huaweicloudsdkworkspace.v2.User`]
+        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
         """
         
         
@@ -73,7 +73,7 @@ class SubscribeUserSharerReq:
         开通协同的的用户列表。
 
         :return: The users of this SubscribeUserSharerReq.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.User`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
         """
         return self._users
 
@@ -84,7 +84,7 @@ class SubscribeUserSharerReq:
         开通协同的的用户列表。
 
         :param users: The users of this SubscribeUserSharerReq.
-        :type users: list[:class:`huaweicloudsdkworkspace.v2.User`]
+        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
         """
         self._users = users
 

@@ -43,7 +43,7 @@ class BatchCreateCombinedPublicRecordsetsTaskRequestBody:
         :type recordset_name_prefixes: list[str]
         :param records: **参数解释：** 解析记录的值。不同类型解析记录对应的值的规则不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type records: list[str]
-        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、CNAME、MX、AAAA、TXT、SRV、NS、CAA。  **默认取值：** 不涉及。
+        :param type: **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
         :type type: str
         :param line: **参数解释：** 解析线路ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** default_view。
         :type line: str
@@ -140,7 +140,7 @@ class BatchCreateCombinedPublicRecordsetsTaskRequestBody:
     def type(self):
         r"""Gets the type of this BatchCreateCombinedPublicRecordsetsTaskRequestBody.
 
-        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、CNAME、MX、AAAA、TXT、SRV、NS、CAA。  **默认取值：** 不涉及。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
 
         :return: The type of this BatchCreateCombinedPublicRecordsetsTaskRequestBody.
         :rtype: str
@@ -151,7 +151,7 @@ class BatchCreateCombinedPublicRecordsetsTaskRequestBody:
     def type(self, type):
         r"""Sets the type of this BatchCreateCombinedPublicRecordsetsTaskRequestBody.
 
-        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - 公网域名的记录类型: A、CNAME、MX、AAAA、TXT、SRV、NS、CAA。  **默认取值：** 不涉及。
+        **参数解释：** 记录集的类型。 **约束限制：** 不涉及。 **取值范围：** - A：将域名解析到指定的IPv4地址。 - AAAA：将域名解析到指定的IPv6地址。 - MX：指定域名对应的邮件服务器。 - CNAME：将域名解析到另一域名，或者多个域名映射到同一域名上。 - TXT：用于对域名进行标识和说明。 - SRV：用于记录某台服务器对外提供了哪些服务。 - NS：指定域名的权威DNS服务器。 - CAA：指定为域名颁发HTTPS证书的授权CA机构，仅支持公网域名解析。  **默认取值：** 不涉及。
 
         :param type: The type of this BatchCreateCombinedPublicRecordsetsTaskRequestBody.
         :type type: str

@@ -15,7 +15,7 @@ class DatabaseFile:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'str',
+        'source': 'DatabaseFileSource',
         'url': 'str',
         'eihealth_project_id': 'str'
     }
@@ -31,8 +31,8 @@ class DatabaseFile:
 
         The model defined in huaweicloud sdk
 
-        :param source: 数据库文件来源
-        :type source: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
         :param url: 文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
         :type url: str
         :param eihealth_project_id: 数据库文件所在项目id，仅文件为数据中心时填写
@@ -55,10 +55,8 @@ class DatabaseFile:
     def source(self):
         r"""Gets the source of this DatabaseFile.
 
-        数据库文件来源
-
         :return: The source of this DatabaseFile.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
         """
         return self._source
 
@@ -66,10 +64,8 @@ class DatabaseFile:
     def source(self, source):
         r"""Sets the source of this DatabaseFile.
 
-        数据库文件来源
-
         :param source: The source of this DatabaseFile.
-        :type source: str
+        :type source: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
         """
         self._source = source
 

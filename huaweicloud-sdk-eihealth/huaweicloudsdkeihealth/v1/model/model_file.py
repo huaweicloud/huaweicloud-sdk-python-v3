@@ -15,7 +15,7 @@ class ModelFile:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'str',
+        'source': 'ModelFileSource',
         'url': 'str',
         'eihealth_project_id': 'str'
     }
@@ -31,8 +31,8 @@ class ModelFile:
 
         The model defined in huaweicloud sdk
 
-        :param source: 模型数据文件来源
-        :type source: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkeihealth.v1.ModelFileSource`
         :param url: 文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
         :type url: str
         :param eihealth_project_id: 模型文件所在项目id，仅文件为数据中心时填写
@@ -55,10 +55,8 @@ class ModelFile:
     def source(self):
         r"""Gets the source of this ModelFile.
 
-        模型数据文件来源
-
         :return: The source of this ModelFile.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ModelFileSource`
         """
         return self._source
 
@@ -66,10 +64,8 @@ class ModelFile:
     def source(self, source):
         r"""Sets the source of this ModelFile.
 
-        模型数据文件来源
-
         :param source: The source of this ModelFile.
-        :type source: str
+        :type source: :class:`huaweicloudsdkeihealth.v1.ModelFileSource`
         """
         self._source = source
 

@@ -17,7 +17,7 @@ class CheckNoNewAccessReqBody:
     openapi_types = {
         'existing_policy_document': 'str',
         'new_policy_document': 'str',
-        'policy_type': 'str'
+        'policy_type': 'PolicyDocumentType'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class CheckNoNewAccessReqBody:
         :type existing_policy_document: str
         :param new_policy_document: 该策略JSON格式策略文档。
         :type new_policy_document: str
-        :param policy_type: 要校验的策略类型。 - identity_policy：身份策略 - agency_trust_policy：委托信任策略 - bucket_policy：桶策略 
-        :type policy_type: str
+        :param policy_type: 
+        :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyDocumentType`
         """
         
         
@@ -98,10 +98,8 @@ class CheckNoNewAccessReqBody:
     def policy_type(self):
         r"""Gets the policy_type of this CheckNoNewAccessReqBody.
 
-        要校验的策略类型。 - identity_policy：身份策略 - agency_trust_policy：委托信任策略 - bucket_policy：桶策略 
-
         :return: The policy_type of this CheckNoNewAccessReqBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyDocumentType`
         """
         return self._policy_type
 
@@ -109,10 +107,8 @@ class CheckNoNewAccessReqBody:
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this CheckNoNewAccessReqBody.
 
-        要校验的策略类型。 - identity_policy：身份策略 - agency_trust_policy：委托信任策略 - bucket_policy：桶策略 
-
         :param policy_type: The policy_type of this CheckNoNewAccessReqBody.
-        :type policy_type: str
+        :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyDocumentType`
         """
         self._policy_type = policy_type
 

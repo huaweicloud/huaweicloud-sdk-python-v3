@@ -17,7 +17,7 @@ class Resource:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'type': 'str'
+        'type': 'ResourceType'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class Resource:
         :param name: 
         :type name: str
         :param type: 
-        :type type: str
+        :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         """
         
         
@@ -92,7 +92,7 @@ class Resource:
         r"""Gets the type of this Resource.
 
         :return: The type of this Resource.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         """
         return self._type
 
@@ -101,7 +101,7 @@ class Resource:
         r"""Sets the type of this Resource.
 
         :param type: The type of this Resource.
-        :type type: str
+        :type type: :class:`huaweicloudsdkservicestage.v3.ResourceType`
         """
         self._type = type
 

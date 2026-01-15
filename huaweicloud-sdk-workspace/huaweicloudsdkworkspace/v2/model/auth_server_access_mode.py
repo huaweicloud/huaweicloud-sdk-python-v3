@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AuthServerAccessMode:
-
+    """
+    allowed enum values
+    """
+    INTERNET = "INTERNET"
+    DEDICATED = "DEDICATED"
+    SYSTEM_DEFAULT = "SYSTEM_DEFAULT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

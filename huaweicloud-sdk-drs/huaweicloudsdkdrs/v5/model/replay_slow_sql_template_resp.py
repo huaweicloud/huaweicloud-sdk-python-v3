@@ -55,7 +55,7 @@ class ReplaySlowSqlTemplateResp:
         :type target_name: str
         :param schema_name: schema名称
         :type schema_name: str
-        :param query_type: SQL类型
+        :param query_type: SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
         :type query_type: str
         :param min_latency: SQL执行最小耗时
         :type min_latency: int
@@ -198,7 +198,7 @@ class ReplaySlowSqlTemplateResp:
     def query_type(self):
         r"""Gets the query_type of this ReplaySlowSqlTemplateResp.
 
-        SQL类型
+        SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :return: The query_type of this ReplaySlowSqlTemplateResp.
         :rtype: str
@@ -209,7 +209,7 @@ class ReplaySlowSqlTemplateResp:
     def query_type(self, query_type):
         r"""Sets the query_type of this ReplaySlowSqlTemplateResp.
 
-        SQL类型
+        SQL类型 取值：SELECT, INSERT, DELETE, UPDATE, DDL
 
         :param query_type: The query_type of this ReplaySlowSqlTemplateResp.
         :type query_type: str

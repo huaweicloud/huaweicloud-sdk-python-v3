@@ -71,6 +71,8 @@ from huaweicloudsdkdrs.v5.model.collect_db_objects_info_request import CollectDb
 from huaweicloudsdkdrs.v5.model.collect_db_objects_info_response import CollectDbObjectsInfoResponse
 from huaweicloudsdkdrs.v5.model.collect_position_async_request import CollectPositionAsyncRequest
 from huaweicloudsdkdrs.v5.model.collect_position_async_response import CollectPositionAsyncResponse
+from huaweicloudsdkdrs.v5.model.column_info import ColumnInfo
+from huaweicloudsdkdrs.v5.model.column_mapping_info import ColumnMappingInfo
 from huaweicloudsdkdrs.v5.model.column_object import ColumnObject
 from huaweicloudsdkdrs.v5.model.commit_async_job_request import CommitAsyncJobRequest
 from huaweicloudsdkdrs.v5.model.commit_async_job_response import CommitAsyncJobResponse
@@ -110,6 +112,9 @@ from huaweicloudsdkdrs.v5.model.db_or_table_rename_rule import DbOrTableRenameRu
 from huaweicloudsdkdrs.v5.model.db_param import DbParam
 from huaweicloudsdkdrs.v5.model.db_param_info import DbParamInfo
 from huaweicloudsdkdrs.v5.model.ddl_alarm_resp import DdlAlarmResp
+from huaweicloudsdkdrs.v5.model.delete_column_info_req import DeleteColumnInfoReq
+from huaweicloudsdkdrs.v5.model.delete_column_infos_request import DeleteColumnInfosRequest
+from huaweicloudsdkdrs.v5.model.delete_column_infos_response import DeleteColumnInfosResponse
 from huaweicloudsdkdrs.v5.model.delete_connection_request import DeleteConnectionRequest
 from huaweicloudsdkdrs.v5.model.delete_connection_response import DeleteConnectionResponse
 from huaweicloudsdkdrs.v5.model.delete_driver_req import DeleteDriverReq
@@ -205,6 +210,9 @@ from huaweicloudsdkdrs.v5.model.list_user_jdbc_drivers_response import ListUserJ
 from huaweicloudsdkdrs.v5.model.lists_agency_permissions_request import ListsAgencyPermissionsRequest
 from huaweicloudsdkdrs.v5.model.lists_agency_permissions_response import ListsAgencyPermissionsResponse
 from huaweicloudsdkdrs.v5.model.migration_object_overview_info import MigrationObjectOverviewInfo
+from huaweicloudsdkdrs.v5.model.modify_column_info_req import ModifyColumnInfoReq
+from huaweicloudsdkdrs.v5.model.modify_column_infos_request import ModifyColumnInfosRequest
+from huaweicloudsdkdrs.v5.model.modify_column_infos_response import ModifyColumnInfosResponse
 from huaweicloudsdkdrs.v5.model.modify_compare_policy_req import ModifyComparePolicyReq
 from huaweicloudsdkdrs.v5.model.modify_connection_request import ModifyConnectionRequest
 from huaweicloudsdkdrs.v5.model.modify_connection_response import ModifyConnectionResponse
@@ -212,6 +220,7 @@ from huaweicloudsdkdrs.v5.model.modify_offline_task_req import ModifyOfflineTask
 from huaweicloudsdkdrs.v5.model.modify_parameter_req import ModifyParameterReq
 from huaweicloudsdkdrs.v5.model.modify_start_position_req import ModifyStartPositionReq
 from huaweicloudsdkdrs.v5.model.modify_tuning_params import ModifyTuningParams
+from huaweicloudsdkdrs.v5.model.object_with_column_info import ObjectWithColumnInfo
 from huaweicloudsdkdrs.v5.model.objects_compare_detail_info import ObjectsCompareDetailInfo
 from huaweicloudsdkdrs.v5.model.objects_compare_overview_info import ObjectsCompareOverviewInfo
 from huaweicloudsdkdrs.v5.model.objects_compare_task_info import ObjectsCompareTaskInfo
@@ -246,6 +255,7 @@ from huaweicloudsdkdrs.v5.model.query_pre_check_result import QueryPreCheckResul
 from huaweicloudsdkdrs.v5.model.query_repair_detail_resp import QueryRepairDetailResp
 from huaweicloudsdkdrs.v5.model.query_repair_detail_resp_repair_details import QueryRepairDetailRespRepairDetails
 from huaweicloudsdkdrs.v5.model.query_select_object_info_req import QuerySelectObjectInfoReq
+from huaweicloudsdkdrs.v5.model.query_subscriptions_req import QuerySubscriptionsReq
 from huaweicloudsdkdrs.v5.model.query_user_selected_object_info_req import QueryUserSelectedObjectInfoReq
 from huaweicloudsdkdrs.v5.model.replay_config_info import ReplayConfigInfo
 from huaweicloudsdkdrs.v5.model.replay_error_classification import ReplayErrorClassification
@@ -254,6 +264,7 @@ from huaweicloudsdkdrs.v5.model.replay_error_sql_template_resp import ReplayErro
 from huaweicloudsdkdrs.v5.model.replay_shard_statics_resp import ReplayShardStaticsResp
 from huaweicloudsdkdrs.v5.model.replay_slow_sql_resp import ReplaySlowSqlResp
 from huaweicloudsdkdrs.v5.model.replay_slow_sql_template_resp import ReplaySlowSqlTemplateResp
+from huaweicloudsdkdrs.v5.model.replay_sql_now_info import ReplaySqlNowInfo
 from huaweicloudsdkdrs.v5.model.replaying_sql_resp import ReplayingSqlResp
 from huaweicloudsdkdrs.v5.model.resource_instance import ResourceInstance
 from huaweicloudsdkdrs.v5.model.resource_tag import ResourceTag
@@ -264,8 +275,11 @@ from huaweicloudsdkdrs.v5.model.show_actions_request import ShowActionsRequest
 from huaweicloudsdkdrs.v5.model.show_actions_response import ShowActionsResponse
 from huaweicloudsdkdrs.v5.model.show_agency_info_request import ShowAgencyInfoRequest
 from huaweicloudsdkdrs.v5.model.show_agency_info_response import ShowAgencyInfoResponse
+from huaweicloudsdkdrs.v5.model.show_column_info_req import ShowColumnInfoReq
 from huaweicloudsdkdrs.v5.model.show_column_info_result_request import ShowColumnInfoResultRequest
 from huaweicloudsdkdrs.v5.model.show_column_info_result_response import ShowColumnInfoResultResponse
+from huaweicloudsdkdrs.v5.model.show_column_infos_request import ShowColumnInfosRequest
+from huaweicloudsdkdrs.v5.model.show_column_infos_response import ShowColumnInfosResponse
 from huaweicloudsdkdrs.v5.model.show_compare_policy_request import ShowComparePolicyRequest
 from huaweicloudsdkdrs.v5.model.show_compare_policy_response import ShowComparePolicyResponse
 from huaweicloudsdkdrs.v5.model.show_compare_progress_request import ShowCompareProgressRequest
@@ -312,10 +326,14 @@ from huaweicloudsdkdrs.v5.model.show_position_result_request import ShowPosition
 from huaweicloudsdkdrs.v5.model.show_position_result_response import ShowPositionResultResponse
 from huaweicloudsdkdrs.v5.model.show_progress_data_request import ShowProgressDataRequest
 from huaweicloudsdkdrs.v5.model.show_progress_data_response import ShowProgressDataResponse
+from huaweicloudsdkdrs.v5.model.show_replay_progress_request import ShowReplayProgressRequest
+from huaweicloudsdkdrs.v5.model.show_replay_progress_response import ShowReplayProgressResponse
 from huaweicloudsdkdrs.v5.model.show_replay_results_request import ShowReplayResultsRequest
 from huaweicloudsdkdrs.v5.model.show_replay_results_response import ShowReplayResultsResponse
 from huaweicloudsdkdrs.v5.model.show_replication_job_request import ShowReplicationJobRequest
 from huaweicloudsdkdrs.v5.model.show_replication_job_response import ShowReplicationJobResponse
+from huaweicloudsdkdrs.v5.model.show_subscription_lists_request import ShowSubscriptionListsRequest
+from huaweicloudsdkdrs.v5.model.show_subscription_lists_response import ShowSubscriptionListsResponse
 from huaweicloudsdkdrs.v5.model.show_support_object_type_request import ShowSupportObjectTypeRequest
 from huaweicloudsdkdrs.v5.model.show_support_object_type_response import ShowSupportObjectTypeResponse
 from huaweicloudsdkdrs.v5.model.show_timeline_request import ShowTimelineRequest
@@ -330,6 +348,7 @@ from huaweicloudsdkdrs.v5.model.stop_job_action_info import StopJobActionInfo
 from huaweicloudsdkdrs.v5.model.stop_job_action_req import StopJobActionReq
 from huaweicloudsdkdrs.v5.model.stop_job_action_request import StopJobActionRequest
 from huaweicloudsdkdrs.v5.model.stop_job_action_response import StopJobActionResponse
+from huaweicloudsdkdrs.v5.model.subscription_list_resp import SubscriptionListResp
 from huaweicloudsdkdrs.v5.model.support_import_file_result import SupportImportFileResult
 from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_request import SyncJdbcDriverRequest
 from huaweicloudsdkdrs.v5.model.sync_jdbc_driver_response import SyncJdbcDriverResponse

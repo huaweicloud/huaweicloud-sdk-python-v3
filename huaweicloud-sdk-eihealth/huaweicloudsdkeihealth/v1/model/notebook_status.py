@@ -4,7 +4,20 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class NotebookStatus:
-
+    """
+    allowed enum values
+    """
+    RUNNING = "Running"
+    ABNORMAL = "Abnormal"
+    HIBERNATE = "Hibernate"
+    SUCCEEDED = "Succeeded"
+    CREATING = "Creating"
+    DELETING = "Deleting"
+    UPDATING = "Updating"
+    CREATEDFAILED = "CreatedFailed"
+    DELETEDFAILED = "DeletedFailed"
+    UPDATEDFAILED = "UpdatedFailed"
+    UNKNOWN = "Unknown"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

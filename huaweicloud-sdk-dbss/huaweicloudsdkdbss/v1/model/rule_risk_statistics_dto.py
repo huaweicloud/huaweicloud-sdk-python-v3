@@ -16,7 +16,7 @@ class RuleRiskStatisticsDto:
 
     openapi_types = {
         'count': 'int',
-        'instance_risk_count': 'list[AuditInsanceRiskCount]',
+        'instance_risk_count': 'list[AuditInstanceRiskCount]',
         'rule_name': 'str'
     }
 
@@ -34,7 +34,7 @@ class RuleRiskStatisticsDto:
         :param count: 数量
         :type count: int
         :param instance_risk_count: 实例数据库风险汇总
-        :type instance_risk_count: list[:class:`huaweicloudsdkdbss.v1.AuditInsanceRiskCount`]
+        :type instance_risk_count: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceRiskCount`]
         :param rule_name: 规则名称
         :type rule_name: str
         """
@@ -82,7 +82,7 @@ class RuleRiskStatisticsDto:
         实例数据库风险汇总
 
         :return: The instance_risk_count of this RuleRiskStatisticsDto.
-        :rtype: list[:class:`huaweicloudsdkdbss.v1.AuditInsanceRiskCount`]
+        :rtype: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceRiskCount`]
         """
         return self._instance_risk_count
 
@@ -93,7 +93,7 @@ class RuleRiskStatisticsDto:
         实例数据库风险汇总
 
         :param instance_risk_count: The instance_risk_count of this RuleRiskStatisticsDto.
-        :type instance_risk_count: list[:class:`huaweicloudsdkdbss.v1.AuditInsanceRiskCount`]
+        :type instance_risk_count: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceRiskCount`]
         """
         self._instance_risk_count = instance_risk_count
 

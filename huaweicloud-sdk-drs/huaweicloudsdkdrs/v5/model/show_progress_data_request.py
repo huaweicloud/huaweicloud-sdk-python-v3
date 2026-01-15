@@ -19,7 +19,8 @@ class ShowProgressDataRequest:
         'job_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'type': 'str'
+        'type': 'str',
+        'search_name': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ShowProgressDataRequest:
         'job_id': 'job_id',
         'offset': 'offset',
         'limit': 'limit',
-        'type': 'type'
+        'type': 'type',
+        'search_name': 'search_name'
     }
 
-    def __init__(self, x_language=None, job_id=None, offset=None, limit=None, type=None):
+    def __init__(self, x_language=None, job_id=None, offset=None, limit=None, type=None, search_name=None):
         r"""ShowProgressDataRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ShowProgressDataRequest:
         :type limit: int
         :param type: 迁移对象类型。 - table - event - table_structure - procedure - view - function - database - trigger - table_indexs
         :type type: str
+        :param search_name: 需要过滤的源库对象名称
+        :type search_name: str
         """
         
         
@@ -54,6 +58,7 @@ class ShowProgressDataRequest:
         self._offset = None
         self._limit = None
         self._type = None
+        self._search_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -64,6 +69,8 @@ class ShowProgressDataRequest:
         if limit is not None:
             self.limit = limit
         self.type = type
+        if search_name is not None:
+            self.search_name = search_name
 
     @property
     def x_language(self):
@@ -174,6 +181,28 @@ class ShowProgressDataRequest:
         :type type: str
         """
         self._type = type
+
+    @property
+    def search_name(self):
+        r"""Gets the search_name of this ShowProgressDataRequest.
+
+        需要过滤的源库对象名称
+
+        :return: The search_name of this ShowProgressDataRequest.
+        :rtype: str
+        """
+        return self._search_name
+
+    @search_name.setter
+    def search_name(self, search_name):
+        r"""Sets the search_name of this ShowProgressDataRequest.
+
+        需要过滤的源库对象名称
+
+        :param search_name: The search_name of this ShowProgressDataRequest.
+        :type search_name: str
+        """
+        self._search_name = search_name
 
     def to_dict(self):
         result = {}

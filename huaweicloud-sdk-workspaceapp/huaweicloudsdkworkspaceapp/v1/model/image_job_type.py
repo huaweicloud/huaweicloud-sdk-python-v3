@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ImageJobType:
-
+    """
+    allowed enum values
+    """
+    CREATE_SERVER = "CREATE_SERVER"
+    CREATE_SERVER_IMAGE = "CREATE_SERVER_IMAGE"
+    DELETE_SERVER = "DELETE_SERVER"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

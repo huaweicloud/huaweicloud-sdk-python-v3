@@ -4,7 +4,11 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DatabaseFileSource:
-
+    """
+    allowed enum values
+    """
+    PUBLIC = "public"
+    PRIVATE = "private"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

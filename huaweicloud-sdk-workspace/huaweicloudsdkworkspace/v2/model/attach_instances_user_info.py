@@ -43,7 +43,7 @@ class AttachInstancesUserInfo:
         :type domain: str
         :param user_group: 桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
-        :param type: 对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+        :param type: 对象类型，可选值为，默认值为USER： - USER：用户。 - GROUP：用户组。
         :type type: str
         """
         
@@ -58,12 +58,10 @@ class AttachInstancesUserInfo:
 
         if user_id is not None:
             self.user_id = user_id
-        if user_name is not None:
-            self.user_name = user_name
+        self.user_name = user_name
         if domain is not None:
             self.domain = domain
-        if user_group is not None:
-            self.user_group = user_group
+        self.user_group = user_group
         if type is not None:
             self.type = type
 
@@ -159,7 +157,7 @@ class AttachInstancesUserInfo:
     def type(self):
         r"""Gets the type of this AttachInstancesUserInfo.
 
-        对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+        对象类型，可选值为，默认值为USER： - USER：用户。 - GROUP：用户组。
 
         :return: The type of this AttachInstancesUserInfo.
         :rtype: str
@@ -170,7 +168,7 @@ class AttachInstancesUserInfo:
     def type(self, type):
         r"""Sets the type of this AttachInstancesUserInfo.
 
-        对象类型，可选值为： - USER：用户。 - GROUP：用户组。
+        对象类型，可选值为，默认值为USER： - USER：用户。 - GROUP：用户组。
 
         :param type: The type of this AttachInstancesUserInfo.
         :type type: str

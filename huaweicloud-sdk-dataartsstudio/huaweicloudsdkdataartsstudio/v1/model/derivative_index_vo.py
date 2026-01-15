@@ -24,7 +24,7 @@ class DerivativeIndexVO:
         'l1_id': 'str',
         'l2_id': 'str',
         'l3_id': 'str',
-        'status': 'str',
+        'status': 'BizStatusEnum',
         'atomic_index_id': 'str',
         'time_condition_id': 'str',
         'time_field_id': 'str',
@@ -97,8 +97,8 @@ class DerivativeIndexVO:
         :type l2_id: str
         :param l3_id: 业务对象guid，ID字符串。
         :type l3_id: str
-        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         :param atomic_index_id: 原子指标ID，ID字符串。
         :type atomic_index_id: str
         :param time_condition_id: 时间限定ID，ID字符串。
@@ -419,10 +419,8 @@ class DerivativeIndexVO:
     def status(self):
         r"""Gets the status of this DerivativeIndexVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :return: The status of this DerivativeIndexVO.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         return self._status
 
@@ -430,10 +428,8 @@ class DerivativeIndexVO:
     def status(self, status):
         r"""Sets the status of this DerivativeIndexVO.
 
-        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
-
         :param status: The status of this DerivativeIndexVO.
-        :type status: str
+        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
         """
         self._status = status
 

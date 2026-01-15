@@ -18,9 +18,9 @@ class Trigger:
         'accumulated_times': 'int',
         'expression': 'str',
         'job_id': 'str',
-        'mode': 'str',
-        'operator': 'str',
-        'severity': 'str'
+        'mode': 'Mode',
+        'operator': 'Operator',
+        'severity': 'Serverity'
     }
 
     attribute_map = {
@@ -43,12 +43,12 @@ class Trigger:
         :type expression: str
         :param job_id: UUID
         :type job_id: str
-        :param mode: **参数解释**: 模式 - COUNT 计数  **约束限制** 不涉及 **取值范围**: - COUNT  **默认值** 不涉及        
-        :type mode: str
-        :param operator: **参数解释**: 操作符类型 - GT 大于 - LT 小于 - EQ 等于 - NE 不等于  **约束限制** 不涉及 **取值范围**: - GT - LT - EQ - NE  **默认值** 不涉及     
-        :type operator: str
-        :param severity: **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-        :type severity: str
+        :param mode: 
+        :type mode: :class:`huaweicloudsdksecmaster.v2.Mode`
+        :param operator: 
+        :type operator: :class:`huaweicloudsdksecmaster.v2.Operator`
+        :param severity: 
+        :type severity: :class:`huaweicloudsdksecmaster.v2.Serverity`
         """
         
         
@@ -144,10 +144,8 @@ class Trigger:
     def mode(self):
         r"""Gets the mode of this Trigger.
 
-        **参数解释**: 模式 - COUNT 计数  **约束限制** 不涉及 **取值范围**: - COUNT  **默认值** 不涉及        
-
         :return: The mode of this Trigger.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Mode`
         """
         return self._mode
 
@@ -155,10 +153,8 @@ class Trigger:
     def mode(self, mode):
         r"""Sets the mode of this Trigger.
 
-        **参数解释**: 模式 - COUNT 计数  **约束限制** 不涉及 **取值范围**: - COUNT  **默认值** 不涉及        
-
         :param mode: The mode of this Trigger.
-        :type mode: str
+        :type mode: :class:`huaweicloudsdksecmaster.v2.Mode`
         """
         self._mode = mode
 
@@ -166,10 +162,8 @@ class Trigger:
     def operator(self):
         r"""Gets the operator of this Trigger.
 
-        **参数解释**: 操作符类型 - GT 大于 - LT 小于 - EQ 等于 - NE 不等于  **约束限制** 不涉及 **取值范围**: - GT - LT - EQ - NE  **默认值** 不涉及     
-
         :return: The operator of this Trigger.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Operator`
         """
         return self._operator
 
@@ -177,10 +171,8 @@ class Trigger:
     def operator(self, operator):
         r"""Sets the operator of this Trigger.
 
-        **参数解释**: 操作符类型 - GT 大于 - LT 小于 - EQ 等于 - NE 不等于  **约束限制** 不涉及 **取值范围**: - GT - LT - EQ - NE  **默认值** 不涉及     
-
         :param operator: The operator of this Trigger.
-        :type operator: str
+        :type operator: :class:`huaweicloudsdksecmaster.v2.Operator`
         """
         self._operator = operator
 
@@ -188,10 +180,8 @@ class Trigger:
     def severity(self):
         r"""Gets the severity of this Trigger.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :return: The severity of this Trigger.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Serverity`
         """
         return self._severity
 
@@ -199,10 +189,8 @@ class Trigger:
     def severity(self, severity):
         r"""Sets the severity of this Trigger.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及  
-
         :param severity: The severity of this Trigger.
-        :type severity: str
+        :type severity: :class:`huaweicloudsdksecmaster.v2.Serverity`
         """
         self._severity = severity
 

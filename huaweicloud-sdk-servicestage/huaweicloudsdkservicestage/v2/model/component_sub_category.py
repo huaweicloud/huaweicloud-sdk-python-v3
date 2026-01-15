@@ -4,7 +4,16 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ComponentSubCategory:
-
+    """
+    allowed enum values
+    """
+    WEB = "Web"
+    MAGENTO = "Magento"
+    WORDPRESS = "Wordpress"
+    SPRINGCLOUD = "SpringCloud"
+    JAVA_CHASSIS = "Java Chassis"
+    GO_CHASSIS = "Go Chassis"
+    MESHER = "Mesher"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

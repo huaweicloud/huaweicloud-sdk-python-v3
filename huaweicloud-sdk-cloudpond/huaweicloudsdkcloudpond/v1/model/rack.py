@@ -20,7 +20,7 @@ class Rack:
         'edge_site_id': 'str',
         'rack_category_id': 'str',
         'rack_type': 'str',
-        'status': 'str',
+        'status': 'RackStatus',
         'storage_assigned_size': 'int',
         'description': 'str',
         'rack_sn_no': 'str',
@@ -71,8 +71,8 @@ class Rack:
         :type rack_category_id: str
         :param rack_type: 机柜类型
         :type rack_type: str
-        :param status: 机柜状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT: 待支付
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkcloudpond.v1.RackStatus`
         :param storage_assigned_size: 已分配存储容量
         :type storage_assigned_size: int
         :param description: 机柜描述
@@ -272,10 +272,8 @@ class Rack:
     def status(self):
         r"""Gets the status of this Rack.
 
-        机柜状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT: 待支付
-
         :return: The status of this Rack.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcloudpond.v1.RackStatus`
         """
         return self._status
 
@@ -283,10 +281,8 @@ class Rack:
     def status(self, status):
         r"""Sets the status of this Rack.
 
-        机柜状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT: 待支付
-
         :param status: The status of this Rack.
-        :type status: str
+        :type status: :class:`huaweicloudsdkcloudpond.v1.RackStatus`
         """
         self._status = status
 

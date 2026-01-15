@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class State:
-
+    """
+    allowed enum values
+    """
+    ENABLED = "Enabled"
+    UNENABLED = "Unenabled"
+    UNKNOWN = "Unknown"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

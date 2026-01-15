@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkcloudpond"
-version = "3.1.182"
+version = "3.1.183"
 description = "CloudPond"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.182"
+    "huaweicloudsdkcore>=3.1.183"
 ]
 
 [project.urls]

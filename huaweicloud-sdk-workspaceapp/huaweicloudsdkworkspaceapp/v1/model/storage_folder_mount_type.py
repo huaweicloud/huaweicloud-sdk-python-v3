@@ -4,7 +4,12 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StorageFolderMountType:
-
+    """
+    allowed enum values
+    """
+    USER = "USER"
+    SHARE = "SHARE"
+    ANY = "ANY"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

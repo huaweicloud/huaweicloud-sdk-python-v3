@@ -15,7 +15,7 @@ class ExportUsersNewRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ExportUsersV3Req'
+        'body': 'ExportUsersNewReq'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class ExportUsersNewRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the ExportUsersNewRequest
-        :type body: :class:`huaweicloudsdkworkspace.v2.ExportUsersV3Req`
+        :type body: :class:`huaweicloudsdkworkspace.v2.ExportUsersNewReq`
         """
         
         
@@ -44,7 +44,7 @@ class ExportUsersNewRequest:
         r"""Gets the body of this ExportUsersNewRequest.
 
         :return: The body of this ExportUsersNewRequest.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUsersV3Req`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUsersNewReq`
         """
         return self._body
 
@@ -53,7 +53,7 @@ class ExportUsersNewRequest:
         r"""Sets the body of this ExportUsersNewRequest.
 
         :param body: The body of this ExportUsersNewRequest.
-        :type body: :class:`huaweicloudsdkworkspace.v2.ExportUsersV3Req`
+        :type body: :class:`huaweicloudsdkworkspace.v2.ExportUsersNewReq`
         """
         self._body = body
 

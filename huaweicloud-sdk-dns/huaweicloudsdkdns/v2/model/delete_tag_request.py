@@ -31,7 +31,7 @@ class DeleteTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
+        :param resource_type: **参数解释：** 资源的类型。 **约束限制：** 不涉及。 **取值范围：** - DNS-public_zone：公网域名 - DNS-private_zone：内网域名 - DNS-public_recordset：公网记录集 - DNS-private_recordset：内网记录集 - DNS-ptr_record：反向解析  **默认取值：** 不涉及。
         :type resource_type: str
         :param resource_id: 资源ID。
         :type resource_id: str
@@ -54,7 +54,7 @@ class DeleteTagRequest:
     def resource_type(self):
         r"""Gets the resource_type of this DeleteTagRequest.
 
-        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
+        **参数解释：** 资源的类型。 **约束限制：** 不涉及。 **取值范围：** - DNS-public_zone：公网域名 - DNS-private_zone：内网域名 - DNS-public_recordset：公网记录集 - DNS-private_recordset：内网记录集 - DNS-ptr_record：反向解析  **默认取值：** 不涉及。
 
         :return: The resource_type of this DeleteTagRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class DeleteTagRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this DeleteTagRequest.
 
-        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
+        **参数解释：** 资源的类型。 **约束限制：** 不涉及。 **取值范围：** - DNS-public_zone：公网域名 - DNS-private_zone：内网域名 - DNS-public_recordset：公网记录集 - DNS-private_recordset：内网记录集 - DNS-ptr_record：反向解析  **默认取值：** 不涉及。
 
         :param resource_type: The resource_type of this DeleteTagRequest.
         :type resource_type: str

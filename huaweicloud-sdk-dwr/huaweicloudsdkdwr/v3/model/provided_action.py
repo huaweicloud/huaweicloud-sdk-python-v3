@@ -27,7 +27,7 @@ class ProvidedAction:
         'func_pkg_endpoint': 'str',
         'upload_func_pkg_size': 'int',
         'upload_func_pkg_etag': 'str',
-        'register_status': 'str',
+        'register_status': 'PublicTemplateRegisterType',
         'description': 'str',
         'function_template': 'str',
         'provider_domainid': 'str',
@@ -83,8 +83,8 @@ class ProvidedAction:
         :type upload_func_pkg_size: int
         :param upload_func_pkg_etag: 上传算子包的etag。
         :type upload_func_pkg_etag: str
-        :param register_status: init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-        :type register_status: str
+        :param register_status: 
+        :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         :param description: 描述。
         :type description: str
         :param function_template: 函数URN
@@ -408,10 +408,8 @@ class ProvidedAction:
     def register_status(self):
         r"""Gets the register_status of this ProvidedAction.
 
-        init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-
         :return: The register_status of this ProvidedAction.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         """
         return self._register_status
 
@@ -419,10 +417,8 @@ class ProvidedAction:
     def register_status(self, register_status):
         r"""Sets the register_status of this ProvidedAction.
 
-        init_created新建，submit_approve等待审核，deprecate_approve申请禁用
-
         :param register_status: The register_status of this ProvidedAction.
-        :type register_status: str
+        :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
         """
         self._register_status = register_status
 

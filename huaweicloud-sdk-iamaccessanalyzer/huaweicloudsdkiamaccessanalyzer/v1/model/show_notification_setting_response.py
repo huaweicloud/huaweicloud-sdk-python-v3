@@ -21,7 +21,7 @@ class ShowNotificationSettingResponse(SdkResponse):
         'urn': 'str',
         'analyzer_id': 'str',
         'analyzer_name': 'str',
-        'analyzer_type': 'str',
+        'analyzer_type': 'AnalyzerType',
         'mc_switch': 'bool',
         'smn_topic_urns': 'list[str]',
         'created_at': 'datetime',
@@ -53,8 +53,8 @@ class ShowNotificationSettingResponse(SdkResponse):
         :type analyzer_id: str
         :param analyzer_name: 分析器的名称。
         :type analyzer_name: str
-        :param analyzer_type: 分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
-        :type analyzer_type: str
+        :param analyzer_type: 
+        :type analyzer_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
         :param mc_switch: 是否开启消息中心通知开关。
         :type mc_switch: bool
         :param smn_topic_urns: 消息通知配置的SMN主题URN列表。
@@ -189,10 +189,8 @@ class ShowNotificationSettingResponse(SdkResponse):
     def analyzer_type(self):
         r"""Gets the analyzer_type of this ShowNotificationSettingResponse.
 
-        分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
-
         :return: The analyzer_type of this ShowNotificationSettingResponse.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
         """
         return self._analyzer_type
 
@@ -200,10 +198,8 @@ class ShowNotificationSettingResponse(SdkResponse):
     def analyzer_type(self, analyzer_type):
         r"""Sets the analyzer_type of this ShowNotificationSettingResponse.
 
-        分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
-
         :param analyzer_type: The analyzer_type of this ShowNotificationSettingResponse.
-        :type analyzer_type: str
+        :type analyzer_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
         """
         self._analyzer_type = analyzer_type
 

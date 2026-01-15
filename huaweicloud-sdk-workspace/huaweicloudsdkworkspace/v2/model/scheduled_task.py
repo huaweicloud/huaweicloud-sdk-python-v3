@@ -22,11 +22,13 @@ class ScheduledTask:
         'life_cycle_type': 'str',
         'last_status': 'str',
         'next_execution_time': 'str',
+        'expire_time': 'str',
         'enable': 'bool',
         'description': 'str',
         'priority': 'int',
         'time_zone': 'str',
-        'wait_time': 'int'
+        'wait_time': 'int',
+        'extra_params': 'str'
     }
 
     attribute_map = {
@@ -37,14 +39,16 @@ class ScheduledTask:
         'life_cycle_type': 'life_cycle_type',
         'last_status': 'last_status',
         'next_execution_time': 'next_execution_time',
+        'expire_time': 'expire_time',
         'enable': 'enable',
         'description': 'description',
         'priority': 'priority',
         'time_zone': 'time_zone',
-        'wait_time': 'wait_time'
+        'wait_time': 'wait_time',
+        'extra_params': 'extra_params'
     }
 
-    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None):
+    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, expire_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None, extra_params=None):
         r"""ScheduledTask
 
         The model defined in huaweicloud sdk
@@ -53,7 +57,7 @@ class ScheduledTask:
         :type id: str
         :param task_name: 任务名称。
         :type task_name: str
-        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
+        :param task_type: 任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照，DELETE_BLACK_ECS：删除桌面
         :type task_type: str
         :param scheduled_type: 执行周期。FIXED_TIME：指定时间，DAY：按天，WEEK：按周，MONTH：按月。
         :type scheduled_type: str
@@ -63,6 +67,8 @@ class ScheduledTask:
         :type last_status: str
         :param next_execution_time: 下一次执行时间。格式为yyyy-MM-dd HH:mm:ss。
         :type next_execution_time: str
+        :param expire_time: 到期时间，格式为yyyy-MM-dd HH:mm:ss。
+        :type expire_time: str
         :param enable: 是否启用。
         :type enable: bool
         :param description: 描述。
@@ -73,6 +79,8 @@ class ScheduledTask:
         :type time_zone: str
         :param wait_time: 触发式任务触发后，等待时长。
         :type wait_time: int
+        :param extra_params: 扩展参数，json格式。
+        :type extra_params: str
         """
         
         
@@ -84,11 +92,13 @@ class ScheduledTask:
         self._life_cycle_type = None
         self._last_status = None
         self._next_execution_time = None
+        self._expire_time = None
         self._enable = None
         self._description = None
         self._priority = None
         self._time_zone = None
         self._wait_time = None
+        self._extra_params = None
         self.discriminator = None
 
         if id is not None:
@@ -105,6 +115,8 @@ class ScheduledTask:
             self.last_status = last_status
         if next_execution_time is not None:
             self.next_execution_time = next_execution_time
+        if expire_time is not None:
+            self.expire_time = expire_time
         if enable is not None:
             self.enable = enable
         if description is not None:
@@ -115,6 +127,8 @@ class ScheduledTask:
             self.time_zone = time_zone
         if wait_time is not None:
             self.wait_time = wait_time
+        if extra_params is not None:
+            self.extra_params = extra_params
 
     @property
     def id(self):
@@ -164,7 +178,7 @@ class ScheduledTask:
     def task_type(self):
         r"""Gets the task_type of this ScheduledTask.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照，DELETE_BLACK_ECS：删除桌面
 
         :return: The task_type of this ScheduledTask.
         :rtype: str
@@ -175,7 +189,7 @@ class ScheduledTask:
     def task_type(self, task_type):
         r"""Sets the task_type of this ScheduledTask.
 
-        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照。
+        任务类型。START：开机，STOP：关机，REBOOT：重启，HIBERNATE：休眠，REBUILD：重建系统盘，EXECUTE_SCRIPT：执行脚本，CREATE_SNAPSHOT：创建快照，DELETE_BLACK_ECS：删除桌面
 
         :param task_type: The task_type of this ScheduledTask.
         :type task_type: str
@@ -269,6 +283,28 @@ class ScheduledTask:
         :type next_execution_time: str
         """
         self._next_execution_time = next_execution_time
+
+    @property
+    def expire_time(self):
+        r"""Gets the expire_time of this ScheduledTask.
+
+        到期时间，格式为yyyy-MM-dd HH:mm:ss。
+
+        :return: The expire_time of this ScheduledTask.
+        :rtype: str
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        r"""Sets the expire_time of this ScheduledTask.
+
+        到期时间，格式为yyyy-MM-dd HH:mm:ss。
+
+        :param expire_time: The expire_time of this ScheduledTask.
+        :type expire_time: str
+        """
+        self._expire_time = expire_time
 
     @property
     def enable(self):
@@ -379,6 +415,28 @@ class ScheduledTask:
         :type wait_time: int
         """
         self._wait_time = wait_time
+
+    @property
+    def extra_params(self):
+        r"""Gets the extra_params of this ScheduledTask.
+
+        扩展参数，json格式。
+
+        :return: The extra_params of this ScheduledTask.
+        :rtype: str
+        """
+        return self._extra_params
+
+    @extra_params.setter
+    def extra_params(self, extra_params):
+        r"""Sets the extra_params of this ScheduledTask.
+
+        扩展参数，json格式。
+
+        :param extra_params: The extra_params of this ScheduledTask.
+        :type extra_params: str
+        """
+        self._extra_params = extra_params
 
     def to_dict(self):
         result = {}

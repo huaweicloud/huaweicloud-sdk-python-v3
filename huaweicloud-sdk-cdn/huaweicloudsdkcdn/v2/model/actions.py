@@ -19,12 +19,12 @@ class Actions:
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
         'access_control': 'AccessControl',
-        'request_limit_rules': 'RequestLimitRulesEngine',
+        'request_limit_rule': 'RequestLimitRulesEngine',
         'origin_request_url_rewrite': 'OriginRequestUrlRewriteEngine',
         'cache_rule': 'CacheRulesEngine',
         'request_url_rewrite': 'RequestUrlRewriteEngine',
         'browser_cache_rule': 'BrowserCacheRulesEngine',
-        'error_code_cache': 'ErrorCodeCacheEngine'
+        'error_code_cache': 'list[ErrorCodeCacheEngine]'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class Actions:
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
         'access_control': 'access_control',
-        'request_limit_rules': 'request_limit_rules',
+        'request_limit_rule': 'request_limit_rule',
         'origin_request_url_rewrite': 'origin_request_url_rewrite',
         'cache_rule': 'cache_rule',
         'request_url_rewrite': 'request_url_rewrite',
@@ -40,7 +40,7 @@ class Actions:
         'error_code_cache': 'error_code_cache'
     }
 
-    def __init__(self, flexible_origin=None, origin_request_header=None, http_response_header=None, access_control=None, request_limit_rules=None, origin_request_url_rewrite=None, cache_rule=None, request_url_rewrite=None, browser_cache_rule=None, error_code_cache=None):
+    def __init__(self, flexible_origin=None, origin_request_header=None, http_response_header=None, access_control=None, request_limit_rule=None, origin_request_url_rewrite=None, cache_rule=None, request_url_rewrite=None, browser_cache_rule=None, error_code_cache=None):
         r"""Actions
 
         The model defined in huaweicloud sdk
@@ -53,8 +53,8 @@ class Actions:
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v2.HttpResponseHeader`]
         :param access_control: 
         :type access_control: :class:`huaweicloudsdkcdn.v2.AccessControl`
-        :param request_limit_rules: 
-        :type request_limit_rules: :class:`huaweicloudsdkcdn.v2.RequestLimitRulesEngine`
+        :param request_limit_rule: 
+        :type request_limit_rule: :class:`huaweicloudsdkcdn.v2.RequestLimitRulesEngine`
         :param origin_request_url_rewrite: 
         :type origin_request_url_rewrite: :class:`huaweicloudsdkcdn.v2.OriginRequestUrlRewriteEngine`
         :param cache_rule: 
@@ -64,7 +64,7 @@ class Actions:
         :param browser_cache_rule: 
         :type browser_cache_rule: :class:`huaweicloudsdkcdn.v2.BrowserCacheRulesEngine`
         :param error_code_cache: 
-        :type error_code_cache: :class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`
+        :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`]
         """
         
         
@@ -73,7 +73,7 @@ class Actions:
         self._origin_request_header = None
         self._http_response_header = None
         self._access_control = None
-        self._request_limit_rules = None
+        self._request_limit_rule = None
         self._origin_request_url_rewrite = None
         self._cache_rule = None
         self._request_url_rewrite = None
@@ -89,8 +89,8 @@ class Actions:
             self.http_response_header = http_response_header
         if access_control is not None:
             self.access_control = access_control
-        if request_limit_rules is not None:
-            self.request_limit_rules = request_limit_rules
+        if request_limit_rule is not None:
+            self.request_limit_rule = request_limit_rule
         if origin_request_url_rewrite is not None:
             self.origin_request_url_rewrite = origin_request_url_rewrite
         if cache_rule is not None:
@@ -187,22 +187,22 @@ class Actions:
         self._access_control = access_control
 
     @property
-    def request_limit_rules(self):
-        r"""Gets the request_limit_rules of this Actions.
+    def request_limit_rule(self):
+        r"""Gets the request_limit_rule of this Actions.
 
-        :return: The request_limit_rules of this Actions.
+        :return: The request_limit_rule of this Actions.
         :rtype: :class:`huaweicloudsdkcdn.v2.RequestLimitRulesEngine`
         """
-        return self._request_limit_rules
+        return self._request_limit_rule
 
-    @request_limit_rules.setter
-    def request_limit_rules(self, request_limit_rules):
-        r"""Sets the request_limit_rules of this Actions.
+    @request_limit_rule.setter
+    def request_limit_rule(self, request_limit_rule):
+        r"""Sets the request_limit_rule of this Actions.
 
-        :param request_limit_rules: The request_limit_rules of this Actions.
-        :type request_limit_rules: :class:`huaweicloudsdkcdn.v2.RequestLimitRulesEngine`
+        :param request_limit_rule: The request_limit_rule of this Actions.
+        :type request_limit_rule: :class:`huaweicloudsdkcdn.v2.RequestLimitRulesEngine`
         """
-        self._request_limit_rules = request_limit_rules
+        self._request_limit_rule = request_limit_rule
 
     @property
     def origin_request_url_rewrite(self):
@@ -281,7 +281,7 @@ class Actions:
         r"""Gets the error_code_cache of this Actions.
 
         :return: The error_code_cache of this Actions.
-        :rtype: :class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`]
         """
         return self._error_code_cache
 
@@ -290,7 +290,7 @@ class Actions:
         r"""Sets the error_code_cache of this Actions.
 
         :param error_code_cache: The error_code_cache of this Actions.
-        :type error_code_cache: :class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`
+        :type error_code_cache: list[:class:`huaweicloudsdkcdn.v2.ErrorCodeCacheEngine`]
         """
         self._error_code_cache = error_code_cache
 

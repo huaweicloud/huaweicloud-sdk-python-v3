@@ -15,11 +15,11 @@ class TemplateView:
     sensitive_list = []
 
     openapi_types = {
-        'template_name': 'str',
+        'template_name': 'Template',
         'template_desc': 'str',
         'source_type': 'str',
         'source_repo_url': 'str',
-        'runtime': 'str'
+        'runtime': 'RuntimeType'
     }
 
     attribute_map = {
@@ -35,16 +35,16 @@ class TemplateView:
 
         The model defined in huaweicloud sdk
 
-        :param template_name: 模板名称。
-        :type template_name: str
+        :param template_name: 
+        :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
         :param template_desc: 模板描述。
         :type template_desc: str
         :param source_type: 模板类别。
         :type source_type: str
         :param source_repo_url: 源码仓库URL
         :type source_repo_url: str
-        :param runtime: 运行时类型。
-        :type runtime: str
+        :param runtime: 
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         
         
@@ -71,10 +71,8 @@ class TemplateView:
     def template_name(self):
         r"""Gets the template_name of this TemplateView.
 
-        模板名称。
-
         :return: The template_name of this TemplateView.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.Template`
         """
         return self._template_name
 
@@ -82,10 +80,8 @@ class TemplateView:
     def template_name(self, template_name):
         r"""Sets the template_name of this TemplateView.
 
-        模板名称。
-
         :param template_name: The template_name of this TemplateView.
-        :type template_name: str
+        :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
         """
         self._template_name = template_name
 
@@ -159,10 +155,8 @@ class TemplateView:
     def runtime(self):
         r"""Gets the runtime of this TemplateView.
 
-        运行时类型。
-
         :return: The runtime of this TemplateView.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         return self._runtime
 
@@ -170,10 +164,8 @@ class TemplateView:
     def runtime(self, runtime):
         r"""Sets the runtime of this TemplateView.
 
-        运行时类型。
-
         :param runtime: The runtime of this TemplateView.
-        :type runtime: str
+        :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
         self._runtime = runtime
 

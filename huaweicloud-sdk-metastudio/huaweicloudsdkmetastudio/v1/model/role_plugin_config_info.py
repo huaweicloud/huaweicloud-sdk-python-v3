@@ -15,8 +15,8 @@ class RolePluginConfigInfo:
     sensitive_list = []
 
     openapi_types = {
-        'plugin_type': 'str',
-        'plugin_source': 'str',
+        'plugin_type': 'PluginTypeEnum',
+        'plugin_source': 'PluginSourceEnum',
         'plugin_config_id': 'str'
     }
 
@@ -31,10 +31,10 @@ class RolePluginConfigInfo:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_type: 插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
-        :type plugin_type: str
-        :param plugin_source: 使用的插件来源 * PLUGIN_CONFIG：插件配置 * DEFAULT：默认
-        :type plugin_source: str
+        :param plugin_type: 
+        :type plugin_type: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
+        :param plugin_source: 
+        :type plugin_source: :class:`huaweicloudsdkmetastudio.v1.PluginSourceEnum`
         :param plugin_config_id: 插件配置ID。
         :type plugin_config_id: str
         """
@@ -55,10 +55,8 @@ class RolePluginConfigInfo:
     def plugin_type(self):
         r"""Gets the plugin_type of this RolePluginConfigInfo.
 
-        插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
-
         :return: The plugin_type of this RolePluginConfigInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
         """
         return self._plugin_type
 
@@ -66,10 +64,8 @@ class RolePluginConfigInfo:
     def plugin_type(self, plugin_type):
         r"""Sets the plugin_type of this RolePluginConfigInfo.
 
-        插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
-
         :param plugin_type: The plugin_type of this RolePluginConfigInfo.
-        :type plugin_type: str
+        :type plugin_type: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
         """
         self._plugin_type = plugin_type
 
@@ -77,10 +73,8 @@ class RolePluginConfigInfo:
     def plugin_source(self):
         r"""Gets the plugin_source of this RolePluginConfigInfo.
 
-        使用的插件来源 * PLUGIN_CONFIG：插件配置 * DEFAULT：默认
-
         :return: The plugin_source of this RolePluginConfigInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.PluginSourceEnum`
         """
         return self._plugin_source
 
@@ -88,10 +82,8 @@ class RolePluginConfigInfo:
     def plugin_source(self, plugin_source):
         r"""Sets the plugin_source of this RolePluginConfigInfo.
 
-        使用的插件来源 * PLUGIN_CONFIG：插件配置 * DEFAULT：默认
-
         :param plugin_source: The plugin_source of this RolePluginConfigInfo.
-        :type plugin_source: str
+        :type plugin_source: :class:`huaweicloudsdkmetastudio.v1.PluginSourceEnum`
         """
         self._plugin_source = plugin_source
 

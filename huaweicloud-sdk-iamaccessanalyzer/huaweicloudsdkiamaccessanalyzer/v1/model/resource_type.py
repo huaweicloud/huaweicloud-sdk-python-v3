@@ -4,7 +4,16 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ResourceType:
-
+    """
+    allowed enum values
+    """
+    IAM_AGENCY = "iam:agency"
+    IAM_USER = "iam:user"
+    KMS_CMK = "kms:cmk"
+    OBS_BUCKET = "obs:bucket"
+    SWR_REPO = "swr:repo"
+    CBR_BACKUP = "cbr:backup"
+    IMS_IMAGE = "ims:image"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

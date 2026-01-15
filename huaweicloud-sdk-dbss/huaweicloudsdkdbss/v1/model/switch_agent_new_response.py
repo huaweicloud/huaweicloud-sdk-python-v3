@@ -28,7 +28,7 @@ class SwitchAgentNewResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果  - SUCCESS: 成功
+        :param result: 操作结果  - SUCCESS：成功
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class SwitchAgentNewResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this SwitchAgentNewResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :return: The result of this SwitchAgentNewResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class SwitchAgentNewResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this SwitchAgentNewResponse.
 
-        操作结果  - SUCCESS: 成功
+        操作结果  - SUCCESS：成功
 
         :param result: The result of this SwitchAgentNewResponse.
         :type result: str

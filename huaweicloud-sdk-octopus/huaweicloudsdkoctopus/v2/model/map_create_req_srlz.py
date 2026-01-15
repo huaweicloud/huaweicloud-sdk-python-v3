@@ -16,7 +16,7 @@ class MapCreateReqSrlz:
 
     openapi_types = {
         'file': 'FileCreateReqSrlz',
-        'version': 'str',
+        'version': 'MapVersionEnum',
         'agreement_confirm': 'bool'
     }
 
@@ -33,8 +33,8 @@ class MapCreateReqSrlz:
 
         :param file: 
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateReqSrlz`
-        :param version: * &#x60;v1.4.0&#x60; - v1.4.0 * &#x60;v1.5.0&#x60; - v1.5.0 * &#x60;v1.6.0&#x60; - v1.6.0 * &#x60;v1.6.1&#x60; - v1.6.1 * &#x60;v1.7.0&#x60; - v1.7.0
-        :type version: str
+        :param version: 
+        :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         :param agreement_confirm: 是否同意协议，必须为true
         :type agreement_confirm: bool
         """
@@ -72,10 +72,8 @@ class MapCreateReqSrlz:
     def version(self):
         r"""Gets the version of this MapCreateReqSrlz.
 
-        * `v1.4.0` - v1.4.0 * `v1.5.0` - v1.5.0 * `v1.6.0` - v1.6.0 * `v1.6.1` - v1.6.1 * `v1.7.0` - v1.7.0
-
         :return: The version of this MapCreateReqSrlz.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         return self._version
 
@@ -83,10 +81,8 @@ class MapCreateReqSrlz:
     def version(self, version):
         r"""Sets the version of this MapCreateReqSrlz.
 
-        * `v1.4.0` - v1.4.0 * `v1.5.0` - v1.5.0 * `v1.6.0` - v1.6.0 * `v1.6.1` - v1.6.1 * `v1.7.0` - v1.7.0
-
         :param version: The version of this MapCreateReqSrlz.
-        :type version: str
+        :type version: :class:`huaweicloudsdkoctopus.v2.MapVersionEnum`
         """
         self._version = version
 

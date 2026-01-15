@@ -15,7 +15,7 @@ class CentralNetworkPolicyState:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'str'
+        'state': 'CentralNetworkPolicyStateEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class CentralNetworkPolicyState:
 
         The model defined in huaweicloud sdk
 
-        :param state: 中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
-        :type state: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
         """
         
         
@@ -42,10 +42,8 @@ class CentralNetworkPolicyState:
     def state(self):
         r"""Gets the state of this CentralNetworkPolicyState.
 
-        中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
-
         :return: The state of this CentralNetworkPolicyState.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
         """
         return self._state
 
@@ -53,10 +51,8 @@ class CentralNetworkPolicyState:
     def state(self, state):
         r"""Sets the state of this CentralNetworkPolicyState.
 
-        中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
-
         :param state: The state of this CentralNetworkPolicyState.
-        :type state: str
+        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
         """
         self._state = state
 

@@ -21,8 +21,8 @@ class RobotInfo:
         'app_id': 'str',
         'app_type': 'int',
         'app_key': 'str',
-        'robot_type': 'str',
-        'language': 'str',
+        'robot_type': 'RobotTypeEnum',
+        'language': 'LanguageEnum',
         'create_time': 'str',
         'update_time': 'str',
         'region': 'int',
@@ -37,7 +37,7 @@ class RobotInfo:
         'sis_project_id': 'str',
         'enable_hot_words': 'bool',
         'enable_question_audit': 'bool',
-        'asr_type': 'str',
+        'asr_type': 'AsrTypeEnum',
         'asr_account': 'str'
     }
 
@@ -85,10 +85,10 @@ class RobotInfo:
         :type app_type: int
         :param app_key: 应用的AccessKey或帐号。
         :type app_key: str
-        :param robot_type: 交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-        :type robot_type: str
-        :param language: 智能交互语言 * CN：中文 * EN：英文
-        :type language: str
+        :param robot_type: 
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
+        :param language: 
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -117,8 +117,8 @@ class RobotInfo:
         :type enable_hot_words: bool
         :param enable_question_audit: 是否开启提问文本审核开关
         :type enable_question_audit: bool
-        :param asr_type: 对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
-        :type asr_type: str
+        :param asr_type: 
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
         :param asr_account: ASR帐号。
         :type asr_account: str
         """
@@ -336,10 +336,8 @@ class RobotInfo:
     def robot_type(self):
         r"""Gets the robot_type of this RobotInfo.
 
-        交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-
         :return: The robot_type of this RobotInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         """
         return self._robot_type
 
@@ -347,10 +345,8 @@ class RobotInfo:
     def robot_type(self, robot_type):
         r"""Sets the robot_type of this RobotInfo.
 
-        交互对接类型 * LIVE:直播交互 * CHAT:智能交互
-
         :param robot_type: The robot_type of this RobotInfo.
-        :type robot_type: str
+        :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
         """
         self._robot_type = robot_type
 
@@ -358,10 +354,8 @@ class RobotInfo:
     def language(self):
         r"""Gets the language of this RobotInfo.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :return: The language of this RobotInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         return self._language
 
@@ -369,10 +363,8 @@ class RobotInfo:
     def language(self, language):
         r"""Sets the language of this RobotInfo.
 
-        智能交互语言 * CN：中文 * EN：英文
-
         :param language: The language of this RobotInfo.
-        :type language: str
+        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
         """
         self._language = language
 
@@ -688,10 +680,8 @@ class RobotInfo:
     def asr_type(self):
         r"""Gets the asr_type of this RobotInfo.
 
-        对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
-
         :return: The asr_type of this RobotInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
         """
         return self._asr_type
 
@@ -699,10 +689,8 @@ class RobotInfo:
     def asr_type(self, asr_type):
         r"""Sets the asr_type of this RobotInfo.
 
-        对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
-
         :param asr_type: The asr_type of this RobotInfo.
-        :type asr_type: str
+        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
         """
         self._asr_type = asr_type
 

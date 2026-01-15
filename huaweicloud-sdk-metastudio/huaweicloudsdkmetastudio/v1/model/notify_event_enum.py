@@ -4,7 +4,10 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class NotifyEventEnum:
-
+    """
+    allowed enum values
+    """
+    AUTO_EXIT = "AUTO_EXIT"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

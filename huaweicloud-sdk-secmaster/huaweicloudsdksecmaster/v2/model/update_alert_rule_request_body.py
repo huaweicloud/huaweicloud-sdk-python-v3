@@ -19,10 +19,10 @@ class UpdateAlertRuleRequestBody:
         'description': 'str',
         'directory': 'str',
         'script': 'str',
-        'status': 'str',
+        'status': 'JobStatus',
         'job_mode_setting': 'IsapJobModeSettingDto',
         'job_output_setting': 'IsapJobOutputSetting',
-        'environment': 'str',
+        'environment': 'JobEnvironment',
         'output_table_id': 'str',
         'output_table_ids': 'list[str]',
         'output_table_names': 'list[str]',
@@ -57,14 +57,14 @@ class UpdateAlertRuleRequestBody:
         :type directory: str
         :param script: Job Script 作业脚本
         :type script: str
-        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         :param job_mode_setting: 
         :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
         :param job_output_setting: 
         :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
-        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-        :type environment: str
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         :param output_table_id: UUID
         :type output_table_id: str
         :param output_table_ids: 输出表ID列表
@@ -208,10 +208,8 @@ class UpdateAlertRuleRequestBody:
     def status(self):
         r"""Gets the status of this UpdateAlertRuleRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this UpdateAlertRuleRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         return self._status
 
@@ -219,10 +217,8 @@ class UpdateAlertRuleRequestBody:
     def status(self, status):
         r"""Sets the status of this UpdateAlertRuleRequestBody.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this UpdateAlertRuleRequestBody.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         self._status = status
 
@@ -266,10 +262,8 @@ class UpdateAlertRuleRequestBody:
     def environment(self):
         r"""Gets the environment of this UpdateAlertRuleRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :return: The environment of this UpdateAlertRuleRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         return self._environment
 
@@ -277,10 +271,8 @@ class UpdateAlertRuleRequestBody:
     def environment(self, environment):
         r"""Sets the environment of this UpdateAlertRuleRequestBody.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :param environment: The environment of this UpdateAlertRuleRequestBody.
-        :type environment: str
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         self._environment = environment
 

@@ -4,7 +4,13 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstallStatus:
-
+    """
+    allowed enum values
+    """
+    READY = "READY"
+    ALL_SUCCESS = "ALL_SUCCESS"
+    PARTIAL_SUCCESS = "PARTIAL_SUCCESS"
+    EXCEPTION = "EXCEPTION"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

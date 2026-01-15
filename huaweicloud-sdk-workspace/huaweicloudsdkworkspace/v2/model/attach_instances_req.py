@@ -18,17 +18,21 @@ class AttachInstancesReq:
         'desktops': 'list[AttachInstancesDesktopInfo]',
         'image_type': 'str',
         'image_id': 'str',
-        'desktop_name_policy_id': 'str'
+        'desktop_name_policy_id': 'str',
+        'encrypt_type': 'EncryptType',
+        'kms_id': 'str'
     }
 
     attribute_map = {
         'desktops': 'desktops',
         'image_type': 'image_type',
         'image_id': 'image_id',
-        'desktop_name_policy_id': 'desktop_name_policy_id'
+        'desktop_name_policy_id': 'desktop_name_policy_id',
+        'encrypt_type': 'encrypt_type',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, desktops=None, image_type=None, image_id=None, desktop_name_policy_id=None):
+    def __init__(self, desktops=None, image_type=None, image_id=None, desktop_name_policy_id=None, encrypt_type=None, kms_id=None):
         r"""AttachInstancesReq
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class AttachInstancesReq:
         :type image_id: str
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
         :type desktop_name_policy_id: str
+        :param encrypt_type: 
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        :param kms_id: 密钥ID，encrypt_type为ENCRYPTED时必传。
+        :type kms_id: str
         """
         
         
@@ -49,6 +57,8 @@ class AttachInstancesReq:
         self._image_type = None
         self._image_id = None
         self._desktop_name_policy_id = None
+        self._encrypt_type = None
+        self._kms_id = None
         self.discriminator = None
 
         if desktops is not None:
@@ -59,6 +69,10 @@ class AttachInstancesReq:
             self.image_id = image_id
         if desktop_name_policy_id is not None:
             self.desktop_name_policy_id = desktop_name_policy_id
+        if encrypt_type is not None:
+            self.encrypt_type = encrypt_type
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def desktops(self):
@@ -147,6 +161,46 @@ class AttachInstancesReq:
         :type desktop_name_policy_id: str
         """
         self._desktop_name_policy_id = desktop_name_policy_id
+
+    @property
+    def encrypt_type(self):
+        r"""Gets the encrypt_type of this AttachInstancesReq.
+
+        :return: The encrypt_type of this AttachInstancesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        return self._encrypt_type
+
+    @encrypt_type.setter
+    def encrypt_type(self, encrypt_type):
+        r"""Sets the encrypt_type of this AttachInstancesReq.
+
+        :param encrypt_type: The encrypt_type of this AttachInstancesReq.
+        :type encrypt_type: :class:`huaweicloudsdkworkspace.v2.EncryptType`
+        """
+        self._encrypt_type = encrypt_type
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this AttachInstancesReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :return: The kms_id of this AttachInstancesReq.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this AttachInstancesReq.
+
+        密钥ID，encrypt_type为ENCRYPTED时必传。
+
+        :param kms_id: The kms_id of this AttachInstancesReq.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

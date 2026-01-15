@@ -19,7 +19,7 @@ class ReadWrite:
         'accept_rate': 'int',
         'channel_id': 'str',
         'channel_instance_count': 'int',
-        'heart_beat': 'str',
+        'heart_beat': 'HeartBeat',
         'heart_beat_time': 'int',
         'latest_transmission_time': 'datetime',
         'minion_id': 'str',
@@ -53,8 +53,8 @@ class ReadWrite:
         :type channel_id: str
         :param channel_instance_count: 采集通道实例的数量
         :type channel_instance_count: int
-        :param heart_beat: **参数解释**: 节点是否成功收到心跳信号 - ONLINE 在线 - OFFLINE 离线  **约束限制** 不涉及 **取值范围**: - ONLINE - OFFLINE  **默认值** 不涉及
-        :type heart_beat: str
+        :param heart_beat: 
+        :type heart_beat: :class:`huaweicloudsdksecmaster.v1.HeartBeat`
         :param heart_beat_time: 最后一次接收到心跳信号的时间
         :type heart_beat_time: int
         :param latest_transmission_time: 最后一次传输的时间
@@ -194,10 +194,8 @@ class ReadWrite:
     def heart_beat(self):
         r"""Gets the heart_beat of this ReadWrite.
 
-        **参数解释**: 节点是否成功收到心跳信号 - ONLINE 在线 - OFFLINE 离线  **约束限制** 不涉及 **取值范围**: - ONLINE - OFFLINE  **默认值** 不涉及
-
         :return: The heart_beat of this ReadWrite.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v1.HeartBeat`
         """
         return self._heart_beat
 
@@ -205,10 +203,8 @@ class ReadWrite:
     def heart_beat(self, heart_beat):
         r"""Sets the heart_beat of this ReadWrite.
 
-        **参数解释**: 节点是否成功收到心跳信号 - ONLINE 在线 - OFFLINE 离线  **约束限制** 不涉及 **取值范围**: - ONLINE - OFFLINE  **默认值** 不涉及
-
         :param heart_beat: The heart_beat of this ReadWrite.
-        :type heart_beat: str
+        :type heart_beat: :class:`huaweicloudsdksecmaster.v1.HeartBeat`
         """
         self._heart_beat = heart_beat
 

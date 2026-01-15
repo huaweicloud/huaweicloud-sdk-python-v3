@@ -68,8 +68,7 @@ class BatchUpdateAntileakageRuleRequestBody:
             self.action = action
         if description is not None:
             self.description = description
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
+        self.policy_rule_ids = policy_rule_ids
 
     @property
     def url(self):

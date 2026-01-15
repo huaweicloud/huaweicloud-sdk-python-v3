@@ -30,7 +30,8 @@ class AdDomain:
         'use_ldaps': 'bool',
         'tls_config': 'TlsConfig',
         'cba_enabled': 'bool',
-        'certificate_id': 'str'
+        'certificate_id': 'str',
+        'domain_controllers': 'list[DomainController]'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class AdDomain:
         'use_ldaps': 'use_ldaps',
         'tls_config': 'tls_config',
         'cba_enabled': 'cba_enabled',
-        'certificate_id': 'certificate_id'
+        'certificate_id': 'certificate_id',
+        'domain_controllers': 'domain_controllers'
     }
 
-    def __init__(self, id=None, domain_type=None, domain_name=None, domain_admin_account=None, domain_password=None, active_domain_ip=None, active_domain_name=None, standby_domain_ip=None, standby_domain_name=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None, cba_enabled=None, certificate_id=None):
+    def __init__(self, id=None, domain_type=None, domain_name=None, domain_admin_account=None, domain_password=None, active_domain_ip=None, active_domain_name=None, standby_domain_ip=None, standby_domain_name=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None, cba_enabled=None, certificate_id=None, domain_controllers=None):
         r"""AdDomain
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class AdDomain:
         :type cba_enabled: bool
         :param certificate_id: 智能卡证书id。
         :type certificate_id: str
+        :param domain_controllers: 域控制器信息列表。有值时，active_domain_name、active_domain_ip、standby_domain_name、standby_domain_ip无效。
+        :type domain_controllers: list[:class:`huaweicloudsdkworkspace.v2.DomainController`]
         """
         
         
@@ -109,6 +113,7 @@ class AdDomain:
         self._tls_config = None
         self._cba_enabled = None
         self._certificate_id = None
+        self._domain_controllers = None
         self.discriminator = None
 
         if id is not None:
@@ -142,6 +147,8 @@ class AdDomain:
             self.cba_enabled = cba_enabled
         if certificate_id is not None:
             self.certificate_id = certificate_id
+        if domain_controllers is not None:
+            self.domain_controllers = domain_controllers
 
     @property
     def id(self):
@@ -490,6 +497,28 @@ class AdDomain:
         :type certificate_id: str
         """
         self._certificate_id = certificate_id
+
+    @property
+    def domain_controllers(self):
+        r"""Gets the domain_controllers of this AdDomain.
+
+        域控制器信息列表。有值时，active_domain_name、active_domain_ip、standby_domain_name、standby_domain_ip无效。
+
+        :return: The domain_controllers of this AdDomain.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DomainController`]
+        """
+        return self._domain_controllers
+
+    @domain_controllers.setter
+    def domain_controllers(self, domain_controllers):
+        r"""Sets the domain_controllers of this AdDomain.
+
+        域控制器信息列表。有值时，active_domain_name、active_domain_ip、standby_domain_name、standby_domain_ip无效。
+
+        :param domain_controllers: The domain_controllers of this AdDomain.
+        :type domain_controllers: list[:class:`huaweicloudsdkworkspace.v2.DomainController`]
+        """
+        self._domain_controllers = domain_controllers
 
     def to_dict(self):
         result = {}

@@ -18,13 +18,13 @@ class AlertRuleItem:
         'alert_rule_id': 'str',
         'alert_rule_name': 'str',
         'script': 'str',
-        'status': 'str',
+        'status': 'JobStatus',
         'directory': 'str',
         'description': 'str',
-        'job_mode': 'str',
-        'process_status': 'str',
-        'process_error': 'str',
-        'environment': 'str',
+        'job_mode': 'IsapJobMode',
+        'process_status': 'JobProcessStatus',
+        'process_error': 'AlertRuleProcessError',
+        'environment': 'JobEnvironment',
         'output_table_id': 'str',
         'output_table_name': 'str',
         'output_table_ids': 'list[str]',
@@ -69,20 +69,20 @@ class AlertRuleItem:
         :type alert_rule_name: str
         :param script: Job Script 作业脚本
         :type script: str
-        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         :param directory: directory 目录分组
         :type directory: str
         :param description: Alert rule description 告警规则描述
         :type description: str
-        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-        :type job_mode: str
-        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-        :type process_status: str
-        :param process_error: **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
-        :type process_error: str
-        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-        :type environment: str
+        :param job_mode: 
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
+        :param process_status: 
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
+        :param process_error: 
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.AlertRuleProcessError`
+        :param environment: 
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         :param output_table_id: UUID
         :type output_table_id: str
         :param output_table_name: 表名称
@@ -221,10 +221,8 @@ class AlertRuleItem:
     def status(self):
         r"""Gets the status of this AlertRuleItem.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :return: The status of this AlertRuleItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         return self._status
 
@@ -232,10 +230,8 @@ class AlertRuleItem:
     def status(self, status):
         r"""Sets the status of this AlertRuleItem.
 
-        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
-
         :param status: The status of this AlertRuleItem.
-        :type status: str
+        :type status: :class:`huaweicloudsdksecmaster.v2.JobStatus`
         """
         self._status = status
 
@@ -287,10 +283,8 @@ class AlertRuleItem:
     def job_mode(self):
         r"""Gets the job_mode of this AlertRuleItem.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :return: The job_mode of this AlertRuleItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         return self._job_mode
 
@@ -298,10 +292,8 @@ class AlertRuleItem:
     def job_mode(self, job_mode):
         r"""Sets the job_mode of this AlertRuleItem.
 
-        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
-
         :param job_mode: The job_mode of this AlertRuleItem.
-        :type job_mode: str
+        :type job_mode: :class:`huaweicloudsdksecmaster.v2.IsapJobMode`
         """
         self._job_mode = job_mode
 
@@ -309,10 +301,8 @@ class AlertRuleItem:
     def process_status(self):
         r"""Gets the process_status of this AlertRuleItem.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :return: The process_status of this AlertRuleItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         return self._process_status
 
@@ -320,10 +310,8 @@ class AlertRuleItem:
     def process_status(self, process_status):
         r"""Sets the process_status of this AlertRuleItem.
 
-        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
-
         :param process_status: The process_status of this AlertRuleItem.
-        :type process_status: str
+        :type process_status: :class:`huaweicloudsdksecmaster.v2.JobProcessStatus`
         """
         self._process_status = process_status
 
@@ -331,10 +319,8 @@ class AlertRuleItem:
     def process_error(self):
         r"""Gets the process_error of this AlertRuleItem.
 
-        **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
-
         :return: The process_error of this AlertRuleItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertRuleProcessError`
         """
         return self._process_error
 
@@ -342,10 +328,8 @@ class AlertRuleItem:
     def process_error(self, process_error):
         r"""Sets the process_error of this AlertRuleItem.
 
-        **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
-
         :param process_error: The process_error of this AlertRuleItem.
-        :type process_error: str
+        :type process_error: :class:`huaweicloudsdksecmaster.v2.AlertRuleProcessError`
         """
         self._process_error = process_error
 
@@ -353,10 +337,8 @@ class AlertRuleItem:
     def environment(self):
         r"""Gets the environment of this AlertRuleItem.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :return: The environment of this AlertRuleItem.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         return self._environment
 
@@ -364,10 +346,8 @@ class AlertRuleItem:
     def environment(self, environment):
         r"""Sets the environment of this AlertRuleItem.
 
-        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
-
         :param environment: The environment of this AlertRuleItem.
-        :type environment: str
+        :type environment: :class:`huaweicloudsdksecmaster.v2.JobEnvironment`
         """
         self._environment = environment
 

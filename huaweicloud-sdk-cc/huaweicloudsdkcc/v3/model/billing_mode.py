@@ -15,7 +15,7 @@ class BillingMode:
     sensitive_list = []
 
     openapi_types = {
-        'billing_mode': 'int'
+        'billing_mode': 'BillingModeEnum'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class BillingMode:
 
         The model defined in huaweicloud sdk
 
-        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-        :type billing_mode: int
+        :param billing_mode: 
+        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         """
         
         
@@ -42,10 +42,8 @@ class BillingMode:
     def billing_mode(self):
         r"""Gets the billing_mode of this BillingMode.
 
-        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-
         :return: The billing_mode of this BillingMode.
-        :rtype: int
+        :rtype: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         """
         return self._billing_mode
 
@@ -53,10 +51,8 @@ class BillingMode:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this BillingMode.
 
-        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
-
         :param billing_mode: The billing_mode of this BillingMode.
-        :type billing_mode: int
+        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
         """
         self._billing_mode = billing_mode
 
