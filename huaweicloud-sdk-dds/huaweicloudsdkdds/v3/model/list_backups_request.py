@@ -53,9 +53,9 @@ class ListBackupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。如果instance_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的instance_id精确匹配查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表和详情-QueryingInstancesandDetails”接口获取。如果未申请实例，可以调用“创建实例-CreatingaDBInstance”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
-        :param backup_id: **参数解释：** 备份ID。如果backup_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的backup_id精确匹配查询。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传，且实例ID必须为精确匹配。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :param backup_id: **参数解释：** 备份ID。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type backup_id: str
         :param backup_type: **参数解释：** 备份类型。 **约束限制：** 当该字段取值为“Incremental”时，实例ID必传。 **取值范围：** - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。 - 取值为“Incremental”，表示自动增量备份。 - 当该字段未传入值时，默认只查询所有的全量备份，包括自动全备备份和手动全量备份。当该字段取值为“Incremental”时，实例ID必传。  **默认取值：** 不涉及。
         :type backup_type: str
@@ -134,7 +134,7 @@ class ListBackupsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListBackupsRequest.
 
-        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。如果instance_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的instance_id精确匹配查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情-QueryingInstancesandDetails”接口获取。如果未申请实例，可以调用“创建实例-CreatingaDBInstance”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this ListBackupsRequest.
         :rtype: str
@@ -145,7 +145,7 @@ class ListBackupsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListBackupsRequest.
 
-        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。如果instance_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的instance_id精确匹配查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情-QueryingInstancesandDetails”接口获取。如果未申请实例，可以调用“创建实例-CreatingaDBInstance”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this ListBackupsRequest.
         :type instance_id: str
@@ -156,7 +156,7 @@ class ListBackupsRequest:
     def backup_id(self):
         r"""Gets the backup_id of this ListBackupsRequest.
 
-        **参数解释：** 备份ID。如果backup_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的backup_id精确匹配查询。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传，且实例ID必须为精确匹配。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 备份ID。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The backup_id of this ListBackupsRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ListBackupsRequest:
     def backup_id(self, backup_id):
         r"""Sets the backup_id of this ListBackupsRequest.
 
-        **参数解释：** 备份ID。如果backup_id以“”起始，表示按照“”后面的值模糊匹配，否则，按照实际填写的backup_id精确匹配查询。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传，且实例ID必须为精确匹配。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 备份ID。 **约束限制：** 当该字段传入的备份ID归属为自动增量备份时，实例ID必传。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param backup_id: The backup_id of this ListBackupsRequest.
         :type backup_id: str

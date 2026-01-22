@@ -30,9 +30,9 @@ class ShowDiagnosisStackResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param thread_name: **参数解释**： 线程名。 **取值范围**： 不涉及。
+        :param thread_name: **参数解释**： 线程名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type thread_name: str
-        :param stack: **参数解释**： 堆信息。 **取值范围**： 不涉及。
+        :param stack: **参数解释**： 客户端的栈信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type stack: str
         """
         
@@ -51,7 +51,7 @@ class ShowDiagnosisStackResponse(SdkResponse):
     def thread_name(self):
         r"""Gets the thread_name of this ShowDiagnosisStackResponse.
 
-        **参数解释**： 线程名。 **取值范围**： 不涉及。
+        **参数解释**： 线程名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The thread_name of this ShowDiagnosisStackResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowDiagnosisStackResponse(SdkResponse):
     def thread_name(self, thread_name):
         r"""Sets the thread_name of this ShowDiagnosisStackResponse.
 
-        **参数解释**： 线程名。 **取值范围**： 不涉及。
+        **参数解释**： 线程名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param thread_name: The thread_name of this ShowDiagnosisStackResponse.
         :type thread_name: str
@@ -73,7 +73,7 @@ class ShowDiagnosisStackResponse(SdkResponse):
     def stack(self):
         r"""Gets the stack of this ShowDiagnosisStackResponse.
 
-        **参数解释**： 堆信息。 **取值范围**： 不涉及。
+        **参数解释**： 客户端的栈信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The stack of this ShowDiagnosisStackResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowDiagnosisStackResponse(SdkResponse):
     def stack(self, stack):
         r"""Sets the stack of this ShowDiagnosisStackResponse.
 
-        **参数解释**： 堆信息。 **取值范围**： 不涉及。
+        **参数解释**： 客户端的栈信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param stack: The stack of this ShowDiagnosisStackResponse.
         :type stack: str

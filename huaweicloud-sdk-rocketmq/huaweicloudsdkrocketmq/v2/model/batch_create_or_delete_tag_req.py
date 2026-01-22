@@ -29,9 +29,9 @@ class BatchCreateOrDeleteTagReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作标识（仅支持小写）： - create（创建） - delete（删除）
+        :param action: **参数解释**： 操作标识。 **约束限制**： 不涉及。 **取值范围**： - create：创建。 - delete：删除。 **默认取值**： 不涉及。
         :type action: str
-        :param tags: 标签列表。
+        :param tags: **参数解释**： 标签列表。 **约束限制**： 一个RocketMQ实例最多添加20个标签。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
         """
         
@@ -41,16 +41,14 @@ class BatchCreateOrDeleteTagReq:
         self._tags = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
-        if tags is not None:
-            self.tags = tags
+        self.action = action
+        self.tags = tags
 
     @property
     def action(self):
         r"""Gets the action of this BatchCreateOrDeleteTagReq.
 
-        操作标识（仅支持小写）： - create（创建） - delete（删除）
+        **参数解释**： 操作标识。 **约束限制**： 不涉及。 **取值范围**： - create：创建。 - delete：删除。 **默认取值**： 不涉及。
 
         :return: The action of this BatchCreateOrDeleteTagReq.
         :rtype: str
@@ -61,7 +59,7 @@ class BatchCreateOrDeleteTagReq:
     def action(self, action):
         r"""Sets the action of this BatchCreateOrDeleteTagReq.
 
-        操作标识（仅支持小写）： - create（创建） - delete（删除）
+        **参数解释**： 操作标识。 **约束限制**： 不涉及。 **取值范围**： - create：创建。 - delete：删除。 **默认取值**： 不涉及。
 
         :param action: The action of this BatchCreateOrDeleteTagReq.
         :type action: str
@@ -72,7 +70,7 @@ class BatchCreateOrDeleteTagReq:
     def tags(self):
         r"""Gets the tags of this BatchCreateOrDeleteTagReq.
 
-        标签列表。
+        **参数解释**： 标签列表。 **约束限制**： 一个RocketMQ实例最多添加20个标签。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tags of this BatchCreateOrDeleteTagReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
@@ -83,7 +81,7 @@ class BatchCreateOrDeleteTagReq:
     def tags(self, tags):
         r"""Sets the tags of this BatchCreateOrDeleteTagReq.
 
-        标签列表。
+        **参数解释**： 标签列表。 **约束限制**： 一个RocketMQ实例最多添加20个标签。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tags: The tags of this BatchCreateOrDeleteTagReq.
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]

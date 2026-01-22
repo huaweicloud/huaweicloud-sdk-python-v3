@@ -30,7 +30,8 @@ class EipResource:
         'object_id': 'str',
         'tags': 'str',
         'domain_id': 'str',
-        'fw_domain_id': 'str'
+        'fw_domain_id': 'str',
+        'bypass_status': 'int'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class EipResource:
         'object_id': 'object_id',
         'tags': 'tags',
         'domain_id': 'domain_id',
-        'fw_domain_id': 'fw_domain_id'
+        'fw_domain_id': 'fw_domain_id',
+        'bypass_status': 'bypass_status'
     }
 
-    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None, object_id=None, tags=None, domain_id=None, fw_domain_id=None):
+    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None, object_id=None, tags=None, domain_id=None, fw_domain_id=None, bypass_status=None):
         r"""EipResource
 
         The model defined in huaweicloud sdk
@@ -73,7 +75,7 @@ class EipResource:
         :type device_name: str
         :param device_owner: EIP绑定设备（如ecs，nat）拥有者
         :type device_owner: str
-        :param associate_instance_type: 关联实例类型，包括：NATGW，ELB，PORT等。
+        :param associate_instance_type: **参数解释**： 关联实例类型 **约束限制**： 不涉及 **取值范围**： PORT：IPV4云服务器 NATGW：NAT网关 ELB： 负载均衡器 VPN： 虚拟专用网络 EVPN： 虚拟专用网络 IPV6_PORT：IPV6云服务器 **默认取值**： 不涉及
         :type associate_instance_type: str
         :param fw_instance_name: 防火墙名称
         :type fw_instance_name: str
@@ -81,7 +83,7 @@ class EipResource:
         :type fw_instance_id: str
         :param fw_enterprise_project_id: Eip绑定的防火墙企业项目id
         :type fw_enterprise_project_id: str
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
         :param tags: 标签列表
         :type tags: str
@@ -89,6 +91,8 @@ class EipResource:
         :type domain_id: str
         :param fw_domain_id: 防火墙所属用户，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
         :type fw_domain_id: str
+        :param bypass_status: bypass状态，0: 未bypass, 1: 已bypass, 2: 失败
+        :type bypass_status: int
         """
         
         
@@ -109,6 +113,7 @@ class EipResource:
         self._tags = None
         self._domain_id = None
         self._fw_domain_id = None
+        self._bypass_status = None
         self.discriminator = None
 
         if id is not None:
@@ -143,6 +148,8 @@ class EipResource:
             self.domain_id = domain_id
         if fw_domain_id is not None:
             self.fw_domain_id = fw_domain_id
+        if bypass_status is not None:
+            self.bypass_status = bypass_status
 
     @property
     def id(self):
@@ -324,7 +331,7 @@ class EipResource:
     def associate_instance_type(self):
         r"""Gets the associate_instance_type of this EipResource.
 
-        关联实例类型，包括：NATGW，ELB，PORT等。
+        **参数解释**： 关联实例类型 **约束限制**： 不涉及 **取值范围**： PORT：IPV4云服务器 NATGW：NAT网关 ELB： 负载均衡器 VPN： 虚拟专用网络 EVPN： 虚拟专用网络 IPV6_PORT：IPV6云服务器 **默认取值**： 不涉及
 
         :return: The associate_instance_type of this EipResource.
         :rtype: str
@@ -335,7 +342,7 @@ class EipResource:
     def associate_instance_type(self, associate_instance_type):
         r"""Sets the associate_instance_type of this EipResource.
 
-        关联实例类型，包括：NATGW，ELB，PORT等。
+        **参数解释**： 关联实例类型 **约束限制**： 不涉及 **取值范围**： PORT：IPV4云服务器 NATGW：NAT网关 ELB： 负载均衡器 VPN： 虚拟专用网络 EVPN： 虚拟专用网络 IPV6_PORT：IPV6云服务器 **默认取值**： 不涉及
 
         :param associate_instance_type: The associate_instance_type of this EipResource.
         :type associate_instance_type: str
@@ -412,7 +419,7 @@ class EipResource:
     def object_id(self):
         r"""Gets the object_id of this EipResource.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this EipResource.
         :rtype: str
@@ -423,7 +430,7 @@ class EipResource:
     def object_id(self, object_id):
         r"""Sets the object_id of this EipResource.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this EipResource.
         :type object_id: str
@@ -495,6 +502,28 @@ class EipResource:
         :type fw_domain_id: str
         """
         self._fw_domain_id = fw_domain_id
+
+    @property
+    def bypass_status(self):
+        r"""Gets the bypass_status of this EipResource.
+
+        bypass状态，0: 未bypass, 1: 已bypass, 2: 失败
+
+        :return: The bypass_status of this EipResource.
+        :rtype: int
+        """
+        return self._bypass_status
+
+    @bypass_status.setter
+    def bypass_status(self, bypass_status):
+        r"""Sets the bypass_status of this EipResource.
+
+        bypass状态，0: 未bypass, 1: 已bypass, 2: 失败
+
+        :param bypass_status: The bypass_status of this EipResource.
+        :type bypass_status: int
+        """
+        self._bypass_status = bypass_status
 
     def to_dict(self):
         result = {}

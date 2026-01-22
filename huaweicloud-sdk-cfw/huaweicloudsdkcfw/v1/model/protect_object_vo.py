@@ -31,11 +31,11 @@ class ProtectObjectVO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。
+        :param object_id: **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。 **取值范围**： 不涉及
         :type object_id: str
-        :param object_name: 防护对象名称
+        :param object_name: **参数解释**： 防护对象名称 **取值范围**： 不涉及
         :type object_name: str
-        :param type: 防护对象类型：0 南北向，1 东西向护对象类型
+        :param type: **参数解释**： 防护对象类型 **取值范围**： - 0：南北向 - 1：东西向
         :type type: int
         """
         
@@ -57,7 +57,7 @@ class ProtectObjectVO:
     def object_id(self):
         r"""Gets the object_id of this ProtectObjectVO.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。 **取值范围**： 不涉及
 
         :return: The object_id of this ProtectObjectVO.
         :rtype: str
@@ -68,7 +68,7 @@ class ProtectObjectVO:
     def object_id(self, object_id):
         r"""Sets the object_id of this ProtectObjectVO.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id。 **取值范围**： 不涉及
 
         :param object_id: The object_id of this ProtectObjectVO.
         :type object_id: str
@@ -79,7 +79,7 @@ class ProtectObjectVO:
     def object_name(self):
         r"""Gets the object_name of this ProtectObjectVO.
 
-        防护对象名称
+        **参数解释**： 防护对象名称 **取值范围**： 不涉及
 
         :return: The object_name of this ProtectObjectVO.
         :rtype: str
@@ -90,7 +90,7 @@ class ProtectObjectVO:
     def object_name(self, object_name):
         r"""Sets the object_name of this ProtectObjectVO.
 
-        防护对象名称
+        **参数解释**： 防护对象名称 **取值范围**： 不涉及
 
         :param object_name: The object_name of this ProtectObjectVO.
         :type object_name: str
@@ -101,7 +101,7 @@ class ProtectObjectVO:
     def type(self):
         r"""Gets the type of this ProtectObjectVO.
 
-        防护对象类型：0 南北向，1 东西向护对象类型
+        **参数解释**： 防护对象类型 **取值范围**： - 0：南北向 - 1：东西向
 
         :return: The type of this ProtectObjectVO.
         :rtype: int
@@ -112,7 +112,7 @@ class ProtectObjectVO:
     def type(self, type):
         r"""Sets the type of this ProtectObjectVO.
 
-        防护对象类型：0 南北向，1 东西向护对象类型
+        **参数解释**： 防护对象类型 **取值范围**： - 0：南北向 - 1：东西向
 
         :param type: The type of this ProtectObjectVO.
         :type type: int

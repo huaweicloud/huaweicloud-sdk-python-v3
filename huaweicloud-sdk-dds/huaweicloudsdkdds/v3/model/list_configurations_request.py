@@ -29,9 +29,9 @@ class ListConfigurationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :param offset: **参数解释：** 索引位置，偏移量。 **约束限制：** 必须为数字。 **取值范围：** 不能为负数。 **默认取值：** 0。偏移0条数据，表示从第一条数据开始查询。
         :type offset: int
-        :param limit: 每页显示的数量，默认是100。
+        :param limit: **参数解释：** 每页显示的数量。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。
         :type limit: int
         """
         
@@ -50,7 +50,7 @@ class ListConfigurationsRequest:
     def offset(self):
         r"""Gets the offset of this ListConfigurationsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 必须为数字。 **取值范围：** 不能为负数。 **默认取值：** 0。偏移0条数据，表示从第一条数据开始查询。
 
         :return: The offset of this ListConfigurationsRequest.
         :rtype: int
@@ -61,7 +61,7 @@ class ListConfigurationsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListConfigurationsRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 必须为数字。 **取值范围：** 不能为负数。 **默认取值：** 0。偏移0条数据，表示从第一条数据开始查询。
 
         :param offset: The offset of this ListConfigurationsRequest.
         :type offset: int
@@ -72,7 +72,7 @@ class ListConfigurationsRequest:
     def limit(self):
         r"""Gets the limit of this ListConfigurationsRequest.
 
-        每页显示的数量，默认是100。
+        **参数解释：** 每页显示的数量。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。
 
         :return: The limit of this ListConfigurationsRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ListConfigurationsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListConfigurationsRequest.
 
-        每页显示的数量，默认是100。
+        **参数解释：** 每页显示的数量。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。
 
         :param limit: The limit of this ListConfigurationsRequest.
         :type limit: int

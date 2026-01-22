@@ -37,13 +37,13 @@ class AdvancedIpsRuleVo:
 
         :param action: 动作：0表示仅记录日志、1表示拦截session、2表示拦截ip
         :type action: int
-        :param ips_rule_id: 高级ips规则id
+        :param ips_rule_id: 频率ips规则id
         :type ips_rule_id: str
-        :param ips_rule_type: ips规则类型：0表示敏感目录扫描、1表示反弹xshell
+        :param ips_rule_type: ips规则类型：0表示敏感目录扫描、1表示反弹shell
         :type ips_rule_type: int
-        :param param: 包含特殊参数的JSON字符串
+        :param param: 频率ips定义JSON字符串
         :type param: str
-        :param status: 开关状态：0表示关闭、1表示开启
+        :param status: 频率ips规则状态，0表示关闭，1表示开启
         :type status: int
         """
         
@@ -93,7 +93,7 @@ class AdvancedIpsRuleVo:
     def ips_rule_id(self):
         r"""Gets the ips_rule_id of this AdvancedIpsRuleVo.
 
-        高级ips规则id
+        频率ips规则id
 
         :return: The ips_rule_id of this AdvancedIpsRuleVo.
         :rtype: str
@@ -104,7 +104,7 @@ class AdvancedIpsRuleVo:
     def ips_rule_id(self, ips_rule_id):
         r"""Sets the ips_rule_id of this AdvancedIpsRuleVo.
 
-        高级ips规则id
+        频率ips规则id
 
         :param ips_rule_id: The ips_rule_id of this AdvancedIpsRuleVo.
         :type ips_rule_id: str
@@ -115,7 +115,7 @@ class AdvancedIpsRuleVo:
     def ips_rule_type(self):
         r"""Gets the ips_rule_type of this AdvancedIpsRuleVo.
 
-        ips规则类型：0表示敏感目录扫描、1表示反弹xshell
+        ips规则类型：0表示敏感目录扫描、1表示反弹shell
 
         :return: The ips_rule_type of this AdvancedIpsRuleVo.
         :rtype: int
@@ -126,7 +126,7 @@ class AdvancedIpsRuleVo:
     def ips_rule_type(self, ips_rule_type):
         r"""Sets the ips_rule_type of this AdvancedIpsRuleVo.
 
-        ips规则类型：0表示敏感目录扫描、1表示反弹xshell
+        ips规则类型：0表示敏感目录扫描、1表示反弹shell
 
         :param ips_rule_type: The ips_rule_type of this AdvancedIpsRuleVo.
         :type ips_rule_type: int
@@ -137,7 +137,7 @@ class AdvancedIpsRuleVo:
     def param(self):
         r"""Gets the param of this AdvancedIpsRuleVo.
 
-        包含特殊参数的JSON字符串
+        频率ips定义JSON字符串
 
         :return: The param of this AdvancedIpsRuleVo.
         :rtype: str
@@ -148,7 +148,7 @@ class AdvancedIpsRuleVo:
     def param(self, param):
         r"""Sets the param of this AdvancedIpsRuleVo.
 
-        包含特殊参数的JSON字符串
+        频率ips定义JSON字符串
 
         :param param: The param of this AdvancedIpsRuleVo.
         :type param: str
@@ -159,7 +159,7 @@ class AdvancedIpsRuleVo:
     def status(self):
         r"""Gets the status of this AdvancedIpsRuleVo.
 
-        开关状态：0表示关闭、1表示开启
+        频率ips规则状态，0表示关闭，1表示开启
 
         :return: The status of this AdvancedIpsRuleVo.
         :rtype: int
@@ -170,7 +170,7 @@ class AdvancedIpsRuleVo:
     def status(self, status):
         r"""Sets the status of this AdvancedIpsRuleVo.
 
-        开关状态：0表示关闭、1表示开启
+        频率ips规则状态，0表示关闭，1表示开启
 
         :param status: The status of this AdvancedIpsRuleVo.
         :type status: int

@@ -35,15 +35,15 @@ class ShowConsumerConnectionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param group: 消费组名称。
+        :param group: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group: str
-        :param limit: 查询数量，取值范围为1~50。
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type offset: int
-        :param is_detail: 是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。
+        :param is_detail: **参数解释**： 是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type is_detail: bool
         """
         
@@ -69,7 +69,7 @@ class ShowConsumerConnectionsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowConsumerConnectionsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowConsumerConnectionsRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowConsumerConnectionsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowConsumerConnectionsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowConsumerConnectionsRequest.
         :type instance_id: str
@@ -91,7 +91,7 @@ class ShowConsumerConnectionsRequest:
     def group(self):
         r"""Gets the group of this ShowConsumerConnectionsRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group of this ShowConsumerConnectionsRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowConsumerConnectionsRequest:
     def group(self, group):
         r"""Sets the group of this ShowConsumerConnectionsRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group: The group of this ShowConsumerConnectionsRequest.
         :type group: str
@@ -113,7 +113,7 @@ class ShowConsumerConnectionsRequest:
     def limit(self):
         r"""Gets the limit of this ShowConsumerConnectionsRequest.
 
-        查询数量，取值范围为1~50。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :return: The limit of this ShowConsumerConnectionsRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ShowConsumerConnectionsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowConsumerConnectionsRequest.
 
-        查询数量，取值范围为1~50。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ShowConsumerConnectionsRequest.
         :type limit: int
@@ -135,7 +135,7 @@ class ShowConsumerConnectionsRequest:
     def offset(self):
         r"""Gets the offset of this ShowConsumerConnectionsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ShowConsumerConnectionsRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ShowConsumerConnectionsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowConsumerConnectionsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ShowConsumerConnectionsRequest.
         :type offset: int
@@ -157,7 +157,7 @@ class ShowConsumerConnectionsRequest:
     def is_detail(self):
         r"""Gets the is_detail of this ShowConsumerConnectionsRequest.
 
-        是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。
+        **参数解释**： 是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The is_detail of this ShowConsumerConnectionsRequest.
         :rtype: bool
@@ -168,7 +168,7 @@ class ShowConsumerConnectionsRequest:
     def is_detail(self, is_detail):
         r"""Sets the is_detail of this ShowConsumerConnectionsRequest.
 
-        是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。
+        **参数解释**： 是否查询消费者详细列表，参数为“true”则表示查询详细列表，否则表示查询简易列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param is_detail: The is_detail of this ShowConsumerConnectionsRequest.
         :type is_detail: bool

@@ -16,7 +16,7 @@ class ImportIpBlacklistResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'body': 'object'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ImportIpBlacklistResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: str
+        :type body: object
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class ImportIpBlacklistResponse(SdkResponse):
         r"""Gets the body of this ImportIpBlacklistResponse.
 
         :return: The body of this ImportIpBlacklistResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._body
 
@@ -54,7 +54,7 @@ class ImportIpBlacklistResponse(SdkResponse):
         r"""Sets the body of this ImportIpBlacklistResponse.
 
         :param body: The body of this ImportIpBlacklistResponse.
-        :type body: str
+        :type body: object
         """
         self._body = body
 

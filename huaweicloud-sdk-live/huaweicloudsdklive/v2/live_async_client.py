@@ -195,6 +195,8 @@ class LiveAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'service_type' in local_var_params:
             query_params.append(('service_type', local_var_params['service_type']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
 
         header_params = {}
 

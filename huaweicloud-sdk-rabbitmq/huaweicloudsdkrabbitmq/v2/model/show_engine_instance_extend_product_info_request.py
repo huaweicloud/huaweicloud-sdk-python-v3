@@ -35,7 +35,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
         :type engine: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param type: 产品的类型。   - advanced：专享版   - platinum：铂金版   - dec：专属云版   - exp：体验版
+        :param type: **参数解释**： 产品的类型。 **约束限制**： 不涉及。 **取值范围**： advanced：专享版 **默认取值**： 不涉及。
         :type type: str
         """
         
@@ -99,7 +99,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def type(self):
         r"""Gets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
-        产品的类型。   - advanced：专享版   - platinum：铂金版   - dec：专属云版   - exp：体验版
+        **参数解释**： 产品的类型。 **约束限制**： 不涉及。 **取值范围**： advanced：专享版 **默认取值**： 不涉及。
 
         :return: The type of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def type(self, type):
         r"""Sets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
-        产品的类型。   - advanced：专享版   - platinum：铂金版   - dec：专属云版   - exp：体验版
+        **参数解释**： 产品的类型。 **约束限制**： 不涉及。 **取值范围**： advanced：专享版 **默认取值**： 不涉及。
 
         :param type: The type of this ShowEngineInstanceExtendProductInfoRequest.
         :type type: str

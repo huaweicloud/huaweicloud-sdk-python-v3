@@ -29,9 +29,9 @@ class Brokers:
 
         The model defined in huaweicloud sdk
 
-        :param broker_name: **参数解释**： Topic关联代理名称。 **取值范围**： 不涉及。
+        :param broker_name: **参数解释**： Topic关联代理名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_name: str
-        :param queues: **参数解释**： 关联代理的队列详情。
+        :param queues: **参数解释**： 关联代理的队列详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]
         """
         
@@ -50,7 +50,7 @@ class Brokers:
     def broker_name(self):
         r"""Gets the broker_name of this Brokers.
 
-        **参数解释**： Topic关联代理名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic关联代理名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_name of this Brokers.
         :rtype: str
@@ -61,7 +61,7 @@ class Brokers:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this Brokers.
 
-        **参数解释**： Topic关联代理名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic关联代理名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_name: The broker_name of this Brokers.
         :type broker_name: str
@@ -72,7 +72,7 @@ class Brokers:
     def queues(self):
         r"""Gets the queues of this Brokers.
 
-        **参数解释**： 关联代理的队列详情。
+        **参数解释**： 关联代理的队列详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this Brokers.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]
@@ -83,7 +83,7 @@ class Brokers:
     def queues(self, queues):
         r"""Sets the queues of this Brokers.
 
-        **参数解释**： 关联代理的队列详情。
+        **参数解释**： 关联代理的队列详情。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this Brokers.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.Queue`]

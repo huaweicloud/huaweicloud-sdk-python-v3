@@ -35,15 +35,15 @@ class ShowCeshierarchyRespDimensions:
 
         The model defined in huaweicloud sdk
 
-        :param name: 监控维度名称。
+        :param name: **参数解释**： 监控维度名称。 **取值范围**： 不涉及。
         :type name: str
-        :param metrics: 监控指标名称。
+        :param metrics: **参数解释**： 监控指标名称。
         :type metrics: list[str]
-        :param key_name: 监控查询使用的key。
+        :param key_name: **参数解释**： 监控查询使用的key。
         :type key_name: list[str]
-        :param dim_router: 监控维度路由。
+        :param dim_router: **参数解释**： 监控维度路由。
         :type dim_router: list[str]
-        :param children: 子维度列表。
+        :param children: **参数解释**： 子维度列表。
         :type children: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]
         """
         
@@ -71,7 +71,7 @@ class ShowCeshierarchyRespDimensions:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespDimensions.
 
-        监控维度名称。
+        **参数解释**： 监控维度名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespDimensions.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowCeshierarchyRespDimensions:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespDimensions.
 
-        监控维度名称。
+        **参数解释**： 监控维度名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespDimensions.
         :type name: str
@@ -93,7 +93,7 @@ class ShowCeshierarchyRespDimensions:
     def metrics(self):
         r"""Gets the metrics of this ShowCeshierarchyRespDimensions.
 
-        监控指标名称。
+        **参数解释**： 监控指标名称。
 
         :return: The metrics of this ShowCeshierarchyRespDimensions.
         :rtype: list[str]
@@ -104,7 +104,7 @@ class ShowCeshierarchyRespDimensions:
     def metrics(self, metrics):
         r"""Sets the metrics of this ShowCeshierarchyRespDimensions.
 
-        监控指标名称。
+        **参数解释**： 监控指标名称。
 
         :param metrics: The metrics of this ShowCeshierarchyRespDimensions.
         :type metrics: list[str]
@@ -115,7 +115,7 @@ class ShowCeshierarchyRespDimensions:
     def key_name(self):
         r"""Gets the key_name of this ShowCeshierarchyRespDimensions.
 
-        监控查询使用的key。
+        **参数解释**： 监控查询使用的key。
 
         :return: The key_name of this ShowCeshierarchyRespDimensions.
         :rtype: list[str]
@@ -126,7 +126,7 @@ class ShowCeshierarchyRespDimensions:
     def key_name(self, key_name):
         r"""Sets the key_name of this ShowCeshierarchyRespDimensions.
 
-        监控查询使用的key。
+        **参数解释**： 监控查询使用的key。
 
         :param key_name: The key_name of this ShowCeshierarchyRespDimensions.
         :type key_name: list[str]
@@ -137,7 +137,7 @@ class ShowCeshierarchyRespDimensions:
     def dim_router(self):
         r"""Gets the dim_router of this ShowCeshierarchyRespDimensions.
 
-        监控维度路由。
+        **参数解释**： 监控维度路由。
 
         :return: The dim_router of this ShowCeshierarchyRespDimensions.
         :rtype: list[str]
@@ -148,7 +148,7 @@ class ShowCeshierarchyRespDimensions:
     def dim_router(self, dim_router):
         r"""Sets the dim_router of this ShowCeshierarchyRespDimensions.
 
-        监控维度路由。
+        **参数解释**： 监控维度路由。
 
         :param dim_router: The dim_router of this ShowCeshierarchyRespDimensions.
         :type dim_router: list[str]
@@ -159,7 +159,7 @@ class ShowCeshierarchyRespDimensions:
     def children(self):
         r"""Gets the children of this ShowCeshierarchyRespDimensions.
 
-        子维度列表。
+        **参数解释**： 子维度列表。
 
         :return: The children of this ShowCeshierarchyRespDimensions.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]
@@ -170,7 +170,7 @@ class ShowCeshierarchyRespDimensions:
     def children(self, children):
         r"""Sets the children of this ShowCeshierarchyRespDimensions.
 
-        子维度列表。
+        **参数解释**： 子维度列表。
 
         :param children: The children of this ShowCeshierarchyRespDimensions.
         :type children: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]

@@ -55,11 +55,11 @@ class AttackStatisticRespBody:
         :type apps: list[:class:`huaweicloudsdkcfw.v1.TopInfo`]
         :param associated_name: **参数解释**： 绑定资源名称 **取值范围**： 不涉及
         :type associated_name: str
-        :param associated_type: **参数解释**： 绑定资源类型 **取值范围**： 不涉及
+        :param associated_type: **参数解释**： 绑定资源类型 **取值范围**： PORT：IPV4云服务器 IPV6_PORT：IPV6云服务器
         :type associated_type: str
         :param attack_count: **参数解释**： 攻击次数 **取值范围**： 不涉及
         :type attack_count: int
-        :param attack_type: **参数解释**： 攻击类型 **取值范围**： 不涉及
+        :param attack_type: **参数解释**： 攻击类型 **取值范围**： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马
         :type attack_type: str
         :param deny_count: **参数解释**： 拦截次数 **取值范围**： 不涉及
         :type deny_count: int
@@ -171,7 +171,7 @@ class AttackStatisticRespBody:
     def associated_type(self):
         r"""Gets the associated_type of this AttackStatisticRespBody.
 
-        **参数解释**： 绑定资源类型 **取值范围**： 不涉及
+        **参数解释**： 绑定资源类型 **取值范围**： PORT：IPV4云服务器 IPV6_PORT：IPV6云服务器
 
         :return: The associated_type of this AttackStatisticRespBody.
         :rtype: str
@@ -182,7 +182,7 @@ class AttackStatisticRespBody:
     def associated_type(self, associated_type):
         r"""Sets the associated_type of this AttackStatisticRespBody.
 
-        **参数解释**： 绑定资源类型 **取值范围**： 不涉及
+        **参数解释**： 绑定资源类型 **取值范围**： PORT：IPV4云服务器 IPV6_PORT：IPV6云服务器
 
         :param associated_type: The associated_type of this AttackStatisticRespBody.
         :type associated_type: str
@@ -215,7 +215,7 @@ class AttackStatisticRespBody:
     def attack_type(self):
         r"""Gets the attack_type of this AttackStatisticRespBody.
 
-        **参数解释**： 攻击类型 **取值范围**： 不涉及
+        **参数解释**： 攻击类型 **取值范围**： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马
 
         :return: The attack_type of this AttackStatisticRespBody.
         :rtype: str
@@ -226,7 +226,7 @@ class AttackStatisticRespBody:
     def attack_type(self, attack_type):
         r"""Sets the attack_type of this AttackStatisticRespBody.
 
-        **参数解释**： 攻击类型 **取值范围**： 不涉及
+        **参数解释**： 攻击类型 **取值范围**： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马
 
         :param attack_type: The attack_type of this AttackStatisticRespBody.
         :type attack_type: str

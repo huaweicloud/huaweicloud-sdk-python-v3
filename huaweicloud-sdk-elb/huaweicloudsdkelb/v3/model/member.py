@@ -59,7 +59,7 @@ class Member:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**：后端服务器ID。 **取值范围**：不涉及 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
         :param availability_zone: **参数解释**：后端服务器所在的可用区。  **取值范围**：不涉及
         :type availability_zone: str
@@ -144,7 +144,7 @@ class Member:
     def id(self):
         r"""Gets the id of this Member.
 
-        **参数解释**：后端服务器ID。 **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this Member.
         :rtype: str
@@ -155,7 +155,7 @@ class Member:
     def id(self, id):
         r"""Sets the id of this Member.
 
-        **参数解释**：后端服务器ID。 **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。  **取值范围**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this Member.
         :type id: str

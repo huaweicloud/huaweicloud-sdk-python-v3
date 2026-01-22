@@ -27,7 +27,7 @@ class PlainSSLSwitchRep:
 
         The model defined in huaweicloud sdk
 
-        :param tls_mode: 协议模式。
+        :param tls_mode: **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tls_mode: str
         """
         
@@ -43,7 +43,7 @@ class PlainSSLSwitchRep:
     def tls_mode(self):
         r"""Gets the tls_mode of this PlainSSLSwitchRep.
 
-        协议模式。
+        **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tls_mode of this PlainSSLSwitchRep.
         :rtype: str
@@ -54,7 +54,7 @@ class PlainSSLSwitchRep:
     def tls_mode(self, tls_mode):
         r"""Sets the tls_mode of this PlainSSLSwitchRep.
 
-        协议模式。
+        **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tls_mode: The tls_mode of this PlainSSLSwitchRep.
         :type tls_mode: str

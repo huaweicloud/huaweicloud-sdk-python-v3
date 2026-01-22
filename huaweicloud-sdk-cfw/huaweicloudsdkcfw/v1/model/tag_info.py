@@ -29,9 +29,9 @@ class TagInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键
+        :param key: **参数解释**： 标签键 **约束限制**： 不涉及
         :type key: str
-        :param values: 标签值列表
+        :param values: **参数解释**： 标签值列表 **约束限制**： 不涉及
         :type values: list[str]
         """
         
@@ -50,7 +50,7 @@ class TagInfo:
     def key(self):
         r"""Gets the key of this TagInfo.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及
 
         :return: The key of this TagInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class TagInfo:
     def key(self, key):
         r"""Sets the key of this TagInfo.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及
 
         :param key: The key of this TagInfo.
         :type key: str
@@ -72,7 +72,7 @@ class TagInfo:
     def values(self):
         r"""Gets the values of this TagInfo.
 
-        标签值列表
+        **参数解释**： 标签值列表 **约束限制**： 不涉及
 
         :return: The values of this TagInfo.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class TagInfo:
     def values(self, values):
         r"""Sets the values of this TagInfo.
 
-        标签值列表
+        **参数解释**： 标签值列表 **约束限制**： 不涉及
 
         :param values: The values of this TagInfo.
         :type values: list[str]

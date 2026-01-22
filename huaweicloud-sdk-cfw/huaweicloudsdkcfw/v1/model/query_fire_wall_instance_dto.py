@@ -35,15 +35,15 @@ class QueryFireWallInstanceDto:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type enterprise_project_id: str
-        :param key_word: 查询关键字，可为防火墙id或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param key_word: **参数解释**： 查询关键字，可为防火墙ID或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key_word: str
-        :param tags: 标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表
+        :param tags: **参数解释**： 标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表 **约束限制**： 不涉及
         :type tags: list[:class:`huaweicloudsdkcfw.v1.TagInfo`]
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0 **默认取值**： 0
         :type offset: int
         """
         
@@ -69,7 +69,7 @@ class QueryFireWallInstanceDto:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this QueryFireWallInstanceDto.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The enterprise_project_id of this QueryFireWallInstanceDto.
         :rtype: str
@@ -80,7 +80,7 @@ class QueryFireWallInstanceDto:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this QueryFireWallInstanceDto.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this QueryFireWallInstanceDto.
         :type enterprise_project_id: str
@@ -91,7 +91,7 @@ class QueryFireWallInstanceDto:
     def key_word(self):
         r"""Gets the key_word of this QueryFireWallInstanceDto.
 
-        查询关键字，可为防火墙id或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 查询关键字，可为防火墙ID或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key_word of this QueryFireWallInstanceDto.
         :rtype: str
@@ -102,7 +102,7 @@ class QueryFireWallInstanceDto:
     def key_word(self, key_word):
         r"""Sets the key_word of this QueryFireWallInstanceDto.
 
-        查询关键字，可为防火墙id或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 查询关键字，可为防火墙ID或防火墙名称的一部分。可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key_word: The key_word of this QueryFireWallInstanceDto.
         :type key_word: str
@@ -113,7 +113,7 @@ class QueryFireWallInstanceDto:
     def tags(self):
         r"""Gets the tags of this QueryFireWallInstanceDto.
 
-        标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表
+        **参数解释**： 标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表 **约束限制**： 不涉及
 
         :return: The tags of this QueryFireWallInstanceDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.TagInfo`]
@@ -124,7 +124,7 @@ class QueryFireWallInstanceDto:
     def tags(self, tags):
         r"""Sets the tags of this QueryFireWallInstanceDto.
 
-        标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表
+        **参数解释**： 标签列表，可通过查询标签服务查询标签接口获得，返回值即为标签列表 **约束限制**： 不涉及
 
         :param tags: The tags of this QueryFireWallInstanceDto.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.TagInfo`]
@@ -135,7 +135,7 @@ class QueryFireWallInstanceDto:
     def limit(self):
         r"""Gets the limit of this QueryFireWallInstanceDto.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :return: The limit of this QueryFireWallInstanceDto.
         :rtype: int
@@ -146,7 +146,7 @@ class QueryFireWallInstanceDto:
     def limit(self, limit):
         r"""Sets the limit of this QueryFireWallInstanceDto.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :param limit: The limit of this QueryFireWallInstanceDto.
         :type limit: int
@@ -157,7 +157,7 @@ class QueryFireWallInstanceDto:
     def offset(self):
         r"""Gets the offset of this QueryFireWallInstanceDto.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0 **默认取值**： 0
 
         :return: The offset of this QueryFireWallInstanceDto.
         :rtype: int
@@ -168,7 +168,7 @@ class QueryFireWallInstanceDto:
     def offset(self, offset):
         r"""Sets the offset of this QueryFireWallInstanceDto.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0 **默认取值**： 0
 
         :param offset: The offset of this QueryFireWallInstanceDto.
         :type offset: int

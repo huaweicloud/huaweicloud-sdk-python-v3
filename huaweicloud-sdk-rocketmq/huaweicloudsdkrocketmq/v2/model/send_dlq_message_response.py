@@ -28,7 +28,7 @@ class SendDlqMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resend_results: 重发死信消息结果。
+        :param resend_results: **参数解释**： 重发死信消息结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type resend_results: list[:class:`huaweicloudsdkrocketmq.v2.DeadletterResendRespResendResults`]
         """
         
@@ -44,7 +44,7 @@ class SendDlqMessageResponse(SdkResponse):
     def resend_results(self):
         r"""Gets the resend_results of this SendDlqMessageResponse.
 
-        重发死信消息结果。
+        **参数解释**： 重发死信消息结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The resend_results of this SendDlqMessageResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.DeadletterResendRespResendResults`]
@@ -55,7 +55,7 @@ class SendDlqMessageResponse(SdkResponse):
     def resend_results(self, resend_results):
         r"""Sets the resend_results of this SendDlqMessageResponse.
 
-        重发死信消息结果。
+        **参数解释**： 重发死信消息结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param resend_results: The resend_results of this SendDlqMessageResponse.
         :type resend_results: list[:class:`huaweicloudsdkrocketmq.v2.DeadletterResendRespResendResults`]

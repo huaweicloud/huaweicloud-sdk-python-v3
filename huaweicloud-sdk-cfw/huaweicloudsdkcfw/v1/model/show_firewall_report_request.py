@@ -35,7 +35,7 @@ class ShowFirewallReportRequest:
         :type fw_instance_id: str
         :param report_profile_id: **参数解释**： 安全报告模板ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type report_profile_id: str
-        :param report_id: **参数解释**： 安全报告ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        :param report_id: **参数解释**： 安全报告ID，可以通过调用[查询安全报告发送历史接口]获得，通过返回值中的data.records.report_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type report_id: str
         """
         
@@ -98,7 +98,7 @@ class ShowFirewallReportRequest:
     def report_id(self):
         r"""Gets the report_id of this ShowFirewallReportRequest.
 
-        **参数解释**： 安全报告ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        **参数解释**： 安全报告ID，可以通过调用[查询安全报告发送历史接口]获得，通过返回值中的data.records.report_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The report_id of this ShowFirewallReportRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ShowFirewallReportRequest:
     def report_id(self, report_id):
         r"""Sets the report_id of this ShowFirewallReportRequest.
 
-        **参数解释**： 安全报告ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        **参数解释**： 安全报告ID，可以通过调用[查询安全报告发送历史接口]获得，通过返回值中的data.records.report_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param report_id: The report_id of this ShowFirewallReportRequest.
         :type report_id: str

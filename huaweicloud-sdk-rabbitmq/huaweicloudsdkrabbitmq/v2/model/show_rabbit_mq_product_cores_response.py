@@ -16,35 +16,42 @@ class ShowRabbitMqProductCoresResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'core_num': 'int'
+        'core_num': 'int',
+        'total_extend_storage_space': 'int'
     }
 
     attribute_map = {
-        'core_num': 'core_num'
+        'core_num': 'core_num',
+        'total_extend_storage_space': 'total_extend_storage_space'
     }
 
-    def __init__(self, core_num=None):
+    def __init__(self, core_num=None, total_extend_storage_space=None):
         r"""ShowRabbitMqProductCoresResponse
 
         The model defined in huaweicloud sdk
 
-        :param core_num: 核数
+        :param core_num: **参数解释**： 核数。 **取值范围**： 不涉及。
         :type core_num: int
+        :param total_extend_storage_space: **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
+        :type total_extend_storage_space: int
         """
         
         super().__init__()
 
         self._core_num = None
+        self._total_extend_storage_space = None
         self.discriminator = None
 
         if core_num is not None:
             self.core_num = core_num
+        if total_extend_storage_space is not None:
+            self.total_extend_storage_space = total_extend_storage_space
 
     @property
     def core_num(self):
         r"""Gets the core_num of this ShowRabbitMqProductCoresResponse.
 
-        核数
+        **参数解释**： 核数。 **取值范围**： 不涉及。
 
         :return: The core_num of this ShowRabbitMqProductCoresResponse.
         :rtype: int
@@ -55,12 +62,34 @@ class ShowRabbitMqProductCoresResponse(SdkResponse):
     def core_num(self, core_num):
         r"""Sets the core_num of this ShowRabbitMqProductCoresResponse.
 
-        核数
+        **参数解释**： 核数。 **取值范围**： 不涉及。
 
         :param core_num: The core_num of this ShowRabbitMqProductCoresResponse.
         :type core_num: int
         """
         self._core_num = core_num
+
+    @property
+    def total_extend_storage_space(self):
+        r"""Gets the total_extend_storage_space of this ShowRabbitMqProductCoresResponse.
+
+        **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
+
+        :return: The total_extend_storage_space of this ShowRabbitMqProductCoresResponse.
+        :rtype: int
+        """
+        return self._total_extend_storage_space
+
+    @total_extend_storage_space.setter
+    def total_extend_storage_space(self, total_extend_storage_space):
+        r"""Sets the total_extend_storage_space of this ShowRabbitMqProductCoresResponse.
+
+        **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
+
+        :param total_extend_storage_space: The total_extend_storage_space of this ShowRabbitMqProductCoresResponse.
+        :type total_extend_storage_space: int
+        """
+        self._total_extend_storage_space = total_extend_storage_space
 
     def to_dict(self):
         import warnings

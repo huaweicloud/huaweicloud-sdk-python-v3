@@ -29,9 +29,9 @@ class CreateTopicReqQueues:
 
         The model defined in huaweicloud sdk
 
-        :param broker: 关联的代理。
+        :param broker: **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker: str
-        :param queue_num: 队列数，范围1~50。
+        :param queue_num: **参数解释**： 队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
         :type queue_num: float
         """
         
@@ -50,7 +50,7 @@ class CreateTopicReqQueues:
     def broker(self):
         r"""Gets the broker of this CreateTopicReqQueues.
 
-        关联的代理。
+        **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker of this CreateTopicReqQueues.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateTopicReqQueues:
     def broker(self, broker):
         r"""Sets the broker of this CreateTopicReqQueues.
 
-        关联的代理。
+        **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker: The broker of this CreateTopicReqQueues.
         :type broker: str
@@ -72,7 +72,7 @@ class CreateTopicReqQueues:
     def queue_num(self):
         r"""Gets the queue_num of this CreateTopicReqQueues.
 
-        队列数，范围1~50。
+        **参数解释**： 队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :return: The queue_num of this CreateTopicReqQueues.
         :rtype: float
@@ -83,7 +83,7 @@ class CreateTopicReqQueues:
     def queue_num(self, queue_num):
         r"""Sets the queue_num of this CreateTopicReqQueues.
 
-        队列数，范围1~50。
+        **参数解释**： 队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :param queue_num: The queue_num of this CreateTopicReqQueues.
         :type queue_num: float

@@ -28,7 +28,7 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 
+        :param data: 查询ips规则细节时间数据
         :type data: list[:class:`huaweicloudsdkcfw.v1.IpsRuleUpdateTimeVO`]
         """
         
@@ -44,6 +44,8 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ShowIpsUpdateTimeResponse.
 
+        查询ips规则细节时间数据
+
         :return: The data of this ShowIpsUpdateTimeResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpsRuleUpdateTimeVO`]
         """
@@ -52,6 +54,8 @@ class ShowIpsUpdateTimeResponse(SdkResponse):
     @data.setter
     def data(self, data):
         r"""Sets the data of this ShowIpsUpdateTimeResponse.
+
+        查询ips规则细节时间数据
 
         :param data: The data of this ShowIpsUpdateTimeResponse.
         :type data: list[:class:`huaweicloudsdkcfw.v1.IpsRuleUpdateTimeVO`]

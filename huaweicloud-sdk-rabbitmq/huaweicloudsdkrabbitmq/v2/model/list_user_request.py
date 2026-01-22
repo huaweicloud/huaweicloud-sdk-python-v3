@@ -31,11 +31,11 @@ class ListUserRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param offset: 分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
+        :param offset: **参数解释**： 分页查询偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
         :type offset: str
-        :param limit: 分页查询单页数量，取值范围0~50，默认查询10条。
+        :param limit: **参数解释**： 分页查询单页数量。 **约束限制**： 不涉及。 **取值范围**： 0~50。 **默认取值**： 10。
         :type limit: str
         """
         
@@ -56,7 +56,7 @@ class ListUserRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListUserRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListUserRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ListUserRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListUserRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListUserRequest.
         :type instance_id: str
@@ -78,7 +78,7 @@ class ListUserRequest:
     def offset(self):
         r"""Gets the offset of this ListUserRequest.
 
-        分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
+        **参数解释**： 分页查询偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :return: The offset of this ListUserRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListUserRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListUserRequest.
 
-        分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
+        **参数解释**： 分页查询偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :param offset: The offset of this ListUserRequest.
         :type offset: str
@@ -100,7 +100,7 @@ class ListUserRequest:
     def limit(self):
         r"""Gets the limit of this ListUserRequest.
 
-        分页查询单页数量，取值范围0~50，默认查询10条。
+        **参数解释**： 分页查询单页数量。 **约束限制**： 不涉及。 **取值范围**： 0~50。 **默认取值**： 10。
 
         :return: The limit of this ListUserRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListUserRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListUserRequest.
 
-        分页查询单页数量，取值范围0~50，默认查询10条。
+        **参数解释**： 分页查询单页数量。 **约束限制**： 不涉及。 **取值范围**： 0~50。 **默认取值**： 10。
 
         :param limit: The limit of this ListUserRequest.
         :type limit: str

@@ -1,3 +1,636 @@
+# 3.1.184 2026-01-22
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainCountryStat**
+    - 响应参数变更
+      - `+ result`
+  - **SetStatsConfig**
+    - 请求参数变更
+      - `- expired_time`
+  - **ShowStatsConfigs**
+    - 响应参数变更
+      - `- data.expired_time`
+
+### HuaweiCloud SDK CFW
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ImportRuleAcl`
+    - `ExportRuleAcl`
+    - `DownloadImportTemplate`
+    - `DownloadExportResult`
+    - `ShowExportStatus`
+    - `DownloadImportResult`
+    - `ListAclRuleHitStatus`
+    - `BatchDeleteAddressSets`
+    - `AddCustomDnsServer`
+    - `ListDomainResolveIp`
+    - `SwitchFirewallEipProtection`
+    - `AddEipAlarmWhitelist`
+    - `ListPrivateNetworkSegments`
+    - `UpdatePrivateNetworkSegment`
+    - `BatchCreatePrivateNetworkSegments`
+    - `BatchDeletePrivateNetworkSegments`
+    - `UpdateFirewallName`
+    - `ShowConfigQuota`
+    - `ShowSnFirewallProtectionStatus`
+    - `BatchDeleteCustomerIps`
+    - `BatchUpdateCustomerIpsAction`
+    - `UpdateIpsWhitelist`
+    - `ListIpsWhitelists`
+    - `BatchCreateIpsWhitelist`
+    - `BatchDeleteIpsWhitelist`
+    - `BatchRemoveAccounts`
+    - `ListSchedules`
+    - `CreateSchedule`
+    - `UpdateSchedule`
+    - `DeleteSchedule`
+    - `BatchDeleteSchedules`
+    - `ListReportHistory`
+    - `BatchDeleteServiceSets`
+    - `BatchCreateBlackWhiteList`
+    - `BatchDeleteBlackWhiteLists`
+    - `CreateCustomerIps`
+    - `BatchAddAccounts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteAddressItem**
+    - 响应参数变更
+      - `+ data`
+  - **ListBlackWhiteLists**
+    - 响应参数变更
+      - `+ data.records.created_date`
+      - `+ data.records.modified_date`
+  - **UpdateObjectConfigDesc**
+    - 请求参数变更
+      - `* body: object<ObjectInfoDto> -> object<UpdateObjectConfigDesc>`
+  - **ListRegions**
+    - 响应参数变更
+      - `* data: object -> list<IpRegionResponseBodyData>`
+  - **ShowImportStatus**
+    - 响应参数变更
+      - `+ data.id`
+      - `+ data.status`
+      - `* data: object -> object<ShowImportStatusId>`
+  - **ListLogs**
+    - 响应参数变更
+      - `* data.records.dst_region_id: object -> string`
+  - **ListDnsServers**
+    - 响应参数变更
+      - `+ data.status`
+  - **CreateFirewall**
+    - 请求参数变更
+      - `- X-Client-Token`
+  - **ListAlarmWhitelist**
+    - 响应参数变更
+      - `- data.endRow`
+      - `- data.hasNextPage`
+      - `- data.hasPreviousPage`
+      - `- data.isFirstPage`
+      - `- data.isLastPage`
+      - `- data.navigateFirstPage`
+      - `- data.navigateLastPage`
+      - `- data.navigatePages`
+      - `- data.navigatepageNums`
+      - `- data.nextPage`
+      - `- data.pageNum`
+      - `- data.pageSize`
+      - `- data.prePage`
+      - `- data.startRow`
+      - `- data.total`
+      - `+ data.list.eip_id`
+      - `+ data.list.fw_instance_id`
+      - `+ data.list.object_id`
+      - `+ data.list.public_ip`
+      - `+ data.list.public_ipv6`
+      - `+ data.list.type`
+      - `* data.list: list<object> -> list<EipInfo>`
+      - `* data: object<PageInfo> -> object<HttpListAlarmWhiteListResponseData>`
+  - **ListCustomerIps**
+    - 请求参数变更
+      - `* object_id: required -> optional`
+  - **ShowCustomerIpsInfo**
+    - 请求参数变更
+      - `* object_id: required -> optional`
+  - **ListFlowStatistic**
+    - 响应参数变更
+      - `+ data.records.agg_start_time`
+      - `+ data.records.agg_end_time`
+  - **ListAclRules**
+    - 响应参数变更
+      - `+ data.up_rules_count`
+      - `+ data.records.modified_date`
+  - **ListEips**
+    - 响应参数变更
+      - `+ data.records.bypass_status`
+  - **ShowAntiVirusRule**
+    - 请求参数变更
+      - `* engine_type: required -> optional`
+  - **DeleteIpBlacklist**
+    - 响应参数变更
+      - `- data`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListDiskType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogsJob**
+    - 响应参数变更
+      - `+ totalSize`
+  - **ShowLogBackup**
+    - 响应参数变更
+      - `+ completed`
+  - **ListYmlsJob**
+    - 响应参数变更
+      - `+ totalSize`
+  - **ShowClusterDetail**
+    - 响应参数变更
+      - `+ snapshotPolicy`
+  - **ListAiOps**
+    - 响应参数变更
+      - `+ aiops_list.create_time`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateEntityConfiguration**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListTasks**
+    - 请求参数变更
+      - `+ id`
+
+### HuaweiCloud SDK EIP
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowPublicipPoolTypes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GEIP
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CountGlobalEipSegment**
+    - 请求参数变更
+      - `- limit`
+      - `- offset`
+      - `- marker`
+      - `- page_reverse`
+  - **ListSupportMasks**
+    - 请求参数变更
+      - `* mask: list<integer> -> int32`
+
+### HuaweiCloud SDK Kafka
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `EnableDns`
+    - `DeleteKafkaTopicMessages`
+    - `CreatePartition`
+    - `ShowGroup`
+    - `DeleteGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`UpdateTopicReplica`、`DeleteUser`
+  - **ShowInstanceTopicDetail**
+    - 响应参数变更
+      - `* partitions.leo: int64 -> int32`
+      - `* partitions.hw: int64 -> int32`
+      - `* partitions.lso: int64 -> int32`
+  - **ShowKafkaScalePreCheckInfo**
+    - 响应参数变更
+      - `+ reason`
+      - `+ success`
+      - `+ name`
+      - `+ risk`
+      - `- body`
+  - **ModifyKafkaPublicIpAccessSwitch**
+    - 请求参数变更
+      - `+ publicip_id`
+      - `- publicIpId`
+  - **ListInstanceConsumerGroup**
+    - 响应参数变更
+      - `* group.createdAt: object -> integer`
+  - **ShowKafkaProductCores**
+    - 请求参数变更
+      - `* instance_id: required -> optional`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ public_cross_vpc_info`
+      - `* cross_vpc_info: string -> object`
+  - **ShowBackgroundTaskProgress**
+    - 响应参数变更
+      - `+ step_list.statue`
+      - `- step_list.status`
+  - **ListInstanceConsumerGroupMessageOffset**
+    - 请求参数变更
+      - `* topic: optional -> required`
+    - 响应参数变更
+      - `+ group_message_offsets.topic`
+      - `+ group_message_offsets.lag`
+  - **ShowKafkaTopicQuota**
+    - 响应参数变更
+      - `+ quotas.producer_byte_rate`
+      - `+ quotas.consumer_byte_rate`
+      - `- quotas.producer-byte-rate`
+      - `- quotas.consumer-byte-rate`
+      - `* quotas: list<KafkaTopicQuotaResp> -> list<KafkaTopicQuota>`
+  - **RestoreRecycleInstance**
+    - 响应参数变更
+      - `+ results`
+      - `- instances`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ public_cross_vpc_info`
+      - `+ instances.public_cross_vpc_info`
+      - `* instances.cross_vpc_info: string -> object`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowCertificateInfo`
+    - `ShowDomainVerification`
+    - `CheckDomainVerification`
+    - `ListPullTasks`
+    - `ModifyPullTask`
+    - `CreatePullTask`
+    - `DeletePullTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBandwidthDetail**
+    - 请求参数变更
+      - `+ ip_type`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ShowVolumeExpandConfig`
+    - `UpdateVolumeExpansionConfig`
+    - `ListScheduledTasks`
+    - `ListConfigFeatures`
+    - `UpdateScheduledTask`
+    - `DeleteScheduledTask`
+    - `ShowRecycleInstances`
+    - `ModifyRecyclePolicy`
+    - `RestoreRecycleInstance`
+    - `EnableDns`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchRestartOrDeleteInstances**
+    - 请求参数变更
+      - `+ force_delete`
+  - **ListBackgroundTasks**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **ShowRabbitMqProductCores**
+    - 请求参数变更
+      - `+ broker_num`
+      - `* instance_id: required -> optional`
+    - 响应参数变更
+      - `+ total_extend_storage_space`
+  - **CreatePostPaidInstanceByEngine**
+    - 请求参数变更
+      - `- disk_encrypted_enable`
+      - `- disk_encrypted_key`
+      - `+ storage_spec_code: enum value [[dms.physical.storage.general](tag:hws,hws_hk,dt,ax),[dms.physical.storage.extreme](tag:hws,hws_hk,dt,ax)]`
+      - `- storage_spec_code: enum value [dms.physical.storage.high.dss.v2,dms.physical.storage.ultra.dss.v2]`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ storage_type`
+      - `+ service_type`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `- disk_encrypted_enable`
+      - `- disk_encrypted_key`
+      - `+ storage_spec_code: enum value [[dms.physical.storage.general](tag:hws,hws_hk,dt,ax),[dms.physical.storage.extreme](tag:hws,hws_hk,dt,ax)]`
+      - `- storage_spec_code: enum value [dms.physical.storage.high.dss.v2,dms.physical.storage.ultra.dss.v2]`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ storage_type`
+      - `+ service_type`
+      - `+ instances.service_type`
+      - `+ instances.storage_type`
+  - **ShowEngineInstanceExtendProductInfo**
+    - 请求参数变更
+      - `+ type: enum value [advanced,platinum,dec,exp]`
+
+### HuaweiCloud SDK RocketMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `CreatePostPaidInstanceForRocketMq`
+    - `ShowUpgradeInstanceVersion`
+    - `ResetConsumeOffsetForRocketMq`
+    - `BatchResetRocketMqMessageOffsets`
+    - `ShowConsumerConnectionsForRocketMq`
+    - `ListMessagesForRocketMq`
+    - `SendMessageForRocketMq`
+    - `ListMessageTraceForRocketMq`
+    - `SendDlqMessageForRocketMq`
+    - `ValidateConsumedMessageForRocketMq`
+    - `ListConsumeGroupAccessPolicyForRocketMq`
+    - `BatchDeleteDiagnosisRecordsForRocketMq`
+    - `BatchDeleteDiagnosisRecords`
+    - `ListDiagnosisReportsForRocketMq`
+    - `CreateDiagnosisTaskForRocketMq`
+    - `ShowDiagnosisReportForRocketMq`
+    - `ShowDiagnosisStackForRocketMq`
+    - `ShowEngineInstanceExtendProductInfoForRocketMq`
+    - `ResizeInstanceForRocketMq`
+    - `ShowVolumeExpandConfig`
+    - `UpdateVolumeExpansionConfig`
+    - `ShowRocketMqScalePreCheckInfo`
+    - `ShowRecycleInstances`
+    - `ModifyRecyclePolicy`
+    - `RestoreRecycleInstance`
+    - `UpdateScheduledTask`
+    - `DeleteScheduledTask`
+    - `ListScheduledTasks`
+    - `ShowBackgroundTaskProgress`
+    - `ShowCesHierarchy`
+    - `ListConfigFeatures`
+    - `EnableDns`
+    - `ShowBackgroundTask`
+    - `ShowRocketMqProductCores`
+    - `DeleteRocketMqMigrationTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchDeleteInstances**
+    - 请求参数变更
+      - `+ force_delete`
+  - **ShowGroup**
+    - 响应参数变更
+      - `+ created_at`
+      - `+ consume_orderly`
+      - `- app_name`
+      - `- app_id`
+  - **ResetConsumeOffset**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+  - **ListMessageTrace**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+    - 响应参数变更
+      - `+ trace.trace_type: enum value [Receive,Ack]`
+      - `+ trace.msg_type: enum value [Order_Msg]`
+  - **SendDlqMessage**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+  - **ValidateConsumedMessage**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+  - **UpdateUser**
+    - 请求参数变更
+      - `- secret_key`
+      - `- default_topic_perm`
+      - `- access_key`
+      - `- topic_perms`
+      - `- admin`
+      - `- white_remote_address`
+      - `- default_group_perm`
+      - `- group_perms`
+  - **ListTopicAccessPolicy**
+    - 请求参数变更
+      - `* offset: string -> int32`
+      - `* limit: string -> int32`
+    - 响应参数变更
+      - `- policies.secret_key`
+  - **ListConsumeGroupAccessPolicy**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+      - `* offset: string -> int32`
+      - `* limit: string -> int32`
+    - 响应参数变更
+      - `- policies.secret_key`
+  - **ListAvailableZones**
+    - 响应参数变更
+      - `+ available_zones.mode`
+      - `+ available_zones.scope`
+      - `* available_zones: list<object> -> list<ListAvailableZonesElements>`
+  - **ShowDiagnosisReport**
+    - 响应参数变更
+      - `+ duplicate_client_id`
+      - `+ created_at`
+      - `+ different_consumer_type`
+      - `- creat_at`
+      - `* subscriptions: list<string> -> list<SubscriptionEntity>`
+      - `* diagnosis_node_report_list: list<string> -> list<DiagnosisNodeReportEntity>`
+  - **ListBackgroundTasks**
+    - 请求参数变更
+      - `+ offset`
+      - `- start`
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ engine: enum value [rocketmq]`
+      - `+ disk_encrypted_enable`
+      - `+ disk_encrypted_key`
+      - `- engine: enum value [reliability]`
+      - `- engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[5.x](tag:hcs)]`
+      - `- product_id: enum value [[c6.4u8g.cluster.small](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.2u8g.single.x86](tag:hcs),[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.32u128g.cluster.x86](tag:hcs,fcs),[c6.2u8g.cluster.x86](tag:fcs),[c6.2u8g.cluster.arm](tag:fcs),[c6.2u8g.single.arm](tag:hcs),[c6.4u16g.cluster.arm](tag:hcs,fcs),[c6.8u32g.cluster.arm](tag:hcs,fcs),[c6.16u64g.cluster.arm](tag:hcs,fcs),[c6.32u128g.cluster.arm](tag:hcs,fcs)]`
+      - `- storage_spec_code: enum value [dms.physical.storage.high.v2,dms.physical.storage.ultra.v2]`
+  - **UpdateInstance**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ quota_address`
+      - `+ arch_type`
+      - `+ enable_elastic_tps`
+      - `+ max_msg_process_tps`
+      - `+ auto_volume_expand_enable`
+      - `- type: enum value [single,cluster]`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - 请求参数变更
+      - `+ job_id`
+      - `- groups`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `+ groups.created_at`
+      - `+ groups.group_online`
+      - `- groups.createdAt`
+  - **ListMessages**
+    - 请求参数变更
+      - `+ engine: enum value [reliability]`
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+  - **CreateUser**
+    - 请求参数变更
+      - `- secret_key`
+      - `- default_topic_perm`
+      - `- access_key`
+      - `- topic_perms`
+      - `- admin`
+      - `- white_remote_address`
+      - `- default_group_perm`
+      - `- group_perms`
+  - **ListUser**
+    - 请求参数变更
+      - `* offset: string -> int32`
+      - `* limit: string -> int32`
+    - 响应参数变更
+      - `* users: list<User> -> list<UserResp>`
+  - **ListRocketMqMigrationTask**
+    - 请求参数变更
+      - `* offset: string -> int32`
+      - `* limit: string -> int32`
+  - **CreateRocketMqMigrationTask**
+    - 请求参数变更
+      - `+ topic_config_table`
+      - `+ subscription_group_table`
+      - `- topicConfigTable`
+      - `- subscriptionGroupTable`
+  - **ShowQuotas**
+    - 请求参数变更
+      - `+ includeTagsQuota`
+      - `+ onlyQuota`
+  - **ListEngineProducts**
+    - 请求参数变更
+      - `* type: required -> optional`
+    - 响应参数变更
+      - `- products.available_zones`
+      - `- products.unavailable_zones`
+      - `* products.charging_mode: object -> list<string>`
+      - `* products.ios: object -> list<IOSEntity>`
+      - `* products.support_features: object -> list<string>`
+      - `+ products.properties.max_topic`
+      - `+ products.properties.broker_num`
+      - `+ products.properties.core`
+      - `+ products.properties.max_consumer`
+      - `+ products.properties.rcu`
+      - `+ products.properties.max_storage`
+      - `+ products.properties.max_storage_per_node`
+      - `+ products.properties.product_alias`
+      - `+ products.properties.max_tps_per_rcu`
+      - `+ products.properties.engine_versions`
+      - `+ products.properties.min_storage`
+      - `+ products.properties.min_storage_per_node`
+      - `+ products.properties.max_broker`
+      - `+ products.properties.max_topic_per_broker`
+      - `+ products.properties.max_consumer_per_broker`
+      - `+ products.properties.min_broker`
+  - **CreateDiagnosisTask**
+    - 请求参数变更
+      - `* body: object<DiagnosisRep> -> object<DiagnosisReq>`
+  - **ListDiagnosisReports**
+    - 响应参数变更
+      - `+ total_num`
+      - `+ diagnosis_report_list.created_at`
+      - `- diagnosis_report_list.creat_at`
+  - **ShowInstanceNodes**
+    - 响应参数变更
+      - `- previous_offset`
+      - `- next_offset`
+  - **CreatePostPaidInstance**
+    - 请求参数变更
+      - `+ disk_encrypted_enable`
+      - `+ disk_encrypted_key`
+      - `- engine: enum value [reliability]`
+      - `- engine_version: enum value [[4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[5.x](tag:hcs)]`
+      - `- product_id: enum value [[c6.4u8g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.4u16g.cluster.x86](tag:hcs,fcs),[c6.8u16g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.8u32g.cluster.x86](tag:hcs,fcs),[c6.12u24g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.16u64g.cluster.x86](tag:hcs,fcs),[c6.16u32g.cluster](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt)[c6.32u128g.cluster.x86](tag:hcs,fcs),[c6.2u8g.cluster.x86](tag:fcs),[c6.2u8g.cluster.arm](tag:fcs),[c6.4u16g.cluster.arm](tag:hcs,fcs),[c6.8u32g.cluster.arm](tag:hcs,fcs),[c6.16u64g.cluster.arm](tag:hcs,fcs),[c6.32u128g.cluster.arm](tag:hcs,fcs)]`
+      - `- storage_spec_code: enum value [dms.physical.storage.high.v2,dms.physical.storage.ultra.v2]`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.arch_type`
+      - `+ instances.quota_address`
+      - `+ instances.max_msg_process_tps`
+      - `+ instances.enable_elastic_tps`
+      - `- instances.type: enum value [single,cluster]`
+  - **ShowEngineInstanceExtendProductInfo**
+    - 响应参数变更
+      - `+ products.properties.feature`
+      - `+ products.properties.max_topic`
+      - `+ products.properties.broker_num`
+      - `+ products.properties.core`
+      - `+ products.properties.max_consumer`
+      - `+ products.properties.rcu`
+      - `+ products.properties.max_storage`
+      - `+ products.properties.min_storage`
+      - `+ products.properties.max_tps_per_rcu`
+      - `+ products.properties.elastic_tps`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListRepoAccessories`、`ListReferences`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowShareFeatureGates**
+    - 响应参数变更
+      - `+ enable_customize_validity_period`
+  - **ListGlobalFeatureGates**
+    - 响应参数变更
+      - `+ enableOBSEncryptUserKmsKey`
+  - **CreateSecret**
+    - 请求参数变更
+      - `+ duration_seconds`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ obs_enc_kms_key_id`
+  - **ListInstanceLtCredentials**
+    - 请求参数变更
+      - `+ self_only`
+
 # 3.1.183 2026-01-15
 
 ### HuaweiCloud SDK CDN

@@ -45,7 +45,7 @@ class ListInstanceConsumerGroupMessageOffsetRequest:
         :type instance_id: str
         :param group: 消费组名称。
         :type group: str
-        :param topic: topic名称。
+        :param topic: topic名称。查询消费组消息位点时必填项。
         :type topic: str
         :param partition: 分区名称。
         :type partition: str
@@ -69,8 +69,7 @@ class ListInstanceConsumerGroupMessageOffsetRequest:
         self.engine = engine
         self.instance_id = instance_id
         self.group = group
-        if topic is not None:
-            self.topic = topic
+        self.topic = topic
         if partition is not None:
             self.partition = partition
         if offset is not None:
@@ -148,7 +147,7 @@ class ListInstanceConsumerGroupMessageOffsetRequest:
     def topic(self):
         r"""Gets the topic of this ListInstanceConsumerGroupMessageOffsetRequest.
 
-        topic名称。
+        topic名称。查询消费组消息位点时必填项。
 
         :return: The topic of this ListInstanceConsumerGroupMessageOffsetRequest.
         :rtype: str
@@ -159,7 +158,7 @@ class ListInstanceConsumerGroupMessageOffsetRequest:
     def topic(self, topic):
         r"""Sets the topic of this ListInstanceConsumerGroupMessageOffsetRequest.
 
-        topic名称。
+        topic名称。查询消费组消息位点时必填项。
 
         :param topic: The topic of this ListInstanceConsumerGroupMessageOffsetRequest.
         :type topic: str

@@ -31,7 +31,7 @@ class ShowReportProfileRequest:
 
         :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param report_profile_id: **参数解释**： 安全报告模板ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        :param report_profile_id: **参数解释**： 安全报告模板ID，可以通过调用[查询安全报告模板列表接口]获得，通过返回值中的data.records.profile_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type report_profile_id: str
         """
         
@@ -70,7 +70,7 @@ class ShowReportProfileRequest:
     def report_profile_id(self):
         r"""Gets the report_profile_id of this ShowReportProfileRequest.
 
-        **参数解释**： 安全报告模板ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        **参数解释**： 安全报告模板ID，可以通过调用[查询安全报告模板列表接口]获得，通过返回值中的data.records.profile_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The report_profile_id of this ShowReportProfileRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowReportProfileRequest:
     def report_profile_id(self, report_profile_id):
         r"""Sets the report_profile_id of this ShowReportProfileRequest.
 
-        **参数解释**： 安全报告模板ID **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        **参数解释**： 安全报告模板ID，可以通过调用[查询安全报告模板列表接口]获得，通过返回值中的data.records.profile_id获得 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param report_profile_id: The report_profile_id of this ShowReportProfileRequest.
         :type report_profile_id: str

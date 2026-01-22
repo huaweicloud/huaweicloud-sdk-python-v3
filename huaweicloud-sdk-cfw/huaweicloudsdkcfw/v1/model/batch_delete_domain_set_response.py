@@ -28,7 +28,7 @@ class BatchDeleteDomainSetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 
+        :param data: **参数解释**： 批量删除域名组响应信息 **取值范围**： 不涉及 
         :type data: dict(str, list[Mapstringstring])
         """
         
@@ -44,6 +44,8 @@ class BatchDeleteDomainSetResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this BatchDeleteDomainSetResponse.
 
+        **参数解释**： 批量删除域名组响应信息 **取值范围**： 不涉及 
+
         :return: The data of this BatchDeleteDomainSetResponse.
         :rtype: dict(str, list[Mapstringstring])
         """
@@ -52,6 +54,8 @@ class BatchDeleteDomainSetResponse(SdkResponse):
     @data.setter
     def data(self, data):
         r"""Sets the data of this BatchDeleteDomainSetResponse.
+
+        **参数解释**： 批量删除域名组响应信息 **取值范围**： 不涉及 
 
         :param data: The data of this BatchDeleteDomainSetResponse.
         :type data: dict(str, list[Mapstringstring])

@@ -688,6 +688,93 @@ class EipAsyncClient(Client):
 
         return http_info
 
+    def show_publicip_pool_types_async(self, request):
+        r"""查询公网IP池类型
+
+        查询公网IP池类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPublicipPoolTypes
+        :type request: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolTypesRequest`
+        :rtype: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolTypesResponse`
+        """
+        http_info = self._show_publicip_pool_types_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_publicip_pool_types_async_invoker(self, request):
+        http_info = self._show_publicip_pool_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_publicip_pool_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/eip/publicip-pool-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicipPoolTypesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_project_geip_bindings_async(self, request):
         r"""查询GEIP与实例绑定关系的租户列表
 

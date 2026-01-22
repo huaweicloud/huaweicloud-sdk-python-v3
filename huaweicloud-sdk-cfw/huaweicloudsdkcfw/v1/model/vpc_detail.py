@@ -31,11 +31,11 @@ class VpcDetail:
 
         The model defined in huaweicloud sdk
 
-        :param id: 创建引流VPC产生的随机UUID
+        :param id: **参数解释**： 创建引流VPC产生的随机UUID **取值范围**： 不涉及
         :type id: str
-        :param name: 引流VPC名称
+        :param name: **参数解释**： 引流VPC名称 **取值范围**： 不涉及
         :type name: str
-        :param cidr: 功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
+        :param cidr: **参数解释**： 虚拟私有云下可用子网的范围 **取值范围**： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24
         :type cidr: str
         """
         
@@ -57,7 +57,7 @@ class VpcDetail:
     def id(self):
         r"""Gets the id of this VpcDetail.
 
-        创建引流VPC产生的随机UUID
+        **参数解释**： 创建引流VPC产生的随机UUID **取值范围**： 不涉及
 
         :return: The id of this VpcDetail.
         :rtype: str
@@ -68,7 +68,7 @@ class VpcDetail:
     def id(self, id):
         r"""Sets the id of this VpcDetail.
 
-        创建引流VPC产生的随机UUID
+        **参数解释**： 创建引流VPC产生的随机UUID **取值范围**： 不涉及
 
         :param id: The id of this VpcDetail.
         :type id: str
@@ -79,7 +79,7 @@ class VpcDetail:
     def name(self):
         r"""Gets the name of this VpcDetail.
 
-        引流VPC名称
+        **参数解释**： 引流VPC名称 **取值范围**： 不涉及
 
         :return: The name of this VpcDetail.
         :rtype: str
@@ -90,7 +90,7 @@ class VpcDetail:
     def name(self, name):
         r"""Sets the name of this VpcDetail.
 
-        引流VPC名称
+        **参数解释**： 引流VPC名称 **取值范围**： 不涉及
 
         :param name: The name of this VpcDetail.
         :type name: str
@@ -101,7 +101,7 @@ class VpcDetail:
     def cidr(self):
         r"""Gets the cidr of this VpcDetail.
 
-        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
+        **参数解释**： 虚拟私有云下可用子网的范围 **取值范围**： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24
 
         :return: The cidr of this VpcDetail.
         :rtype: str
@@ -112,7 +112,7 @@ class VpcDetail:
     def cidr(self, cidr):
         r"""Sets the cidr of this VpcDetail.
 
-        功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
+        **参数解释**： 虚拟私有云下可用子网的范围 **取值范围**： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24
 
         :param cidr: The cidr of this VpcDetail.
         :type cidr: str

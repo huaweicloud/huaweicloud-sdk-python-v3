@@ -33,13 +33,13 @@ class MigrationRabbitExchangeMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param vhost: vhost名称。
+        :param vhost: **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhost: str
-        :param name: 交换机名称。
+        :param name: **参数解释**： 交换机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param type: 交换机类型。
+        :param type: **参数解释**： 交换机类型。 **约束限制**： 不涉及。 **取值范围**： - topic：支持routing key的模糊匹配。 - direct：按routing key精确匹配进行消息路由。 - fanout：广播模式，消息会发送到所有绑定的队列，忽略routing key。 - headers：根据消息头（headers）中的键值对进行路由，而不是routing key。 **默认取值**： 不涉及。
         :type type: str
-        :param durable: 是否持久化。
+        :param durable: **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
         :type durable: bool
         """
         
@@ -64,7 +64,7 @@ class MigrationRabbitExchangeMetadata:
     def vhost(self):
         r"""Gets the vhost of this MigrationRabbitExchangeMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vhost of this MigrationRabbitExchangeMetadata.
         :rtype: str
@@ -75,7 +75,7 @@ class MigrationRabbitExchangeMetadata:
     def vhost(self, vhost):
         r"""Sets the vhost of this MigrationRabbitExchangeMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vhost: The vhost of this MigrationRabbitExchangeMetadata.
         :type vhost: str
@@ -86,7 +86,7 @@ class MigrationRabbitExchangeMetadata:
     def name(self):
         r"""Gets the name of this MigrationRabbitExchangeMetadata.
 
-        交换机名称。
+        **参数解释**： 交换机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this MigrationRabbitExchangeMetadata.
         :rtype: str
@@ -97,7 +97,7 @@ class MigrationRabbitExchangeMetadata:
     def name(self, name):
         r"""Sets the name of this MigrationRabbitExchangeMetadata.
 
-        交换机名称。
+        **参数解释**： 交换机名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this MigrationRabbitExchangeMetadata.
         :type name: str
@@ -108,7 +108,7 @@ class MigrationRabbitExchangeMetadata:
     def type(self):
         r"""Gets the type of this MigrationRabbitExchangeMetadata.
 
-        交换机类型。
+        **参数解释**： 交换机类型。 **约束限制**： 不涉及。 **取值范围**： - topic：支持routing key的模糊匹配。 - direct：按routing key精确匹配进行消息路由。 - fanout：广播模式，消息会发送到所有绑定的队列，忽略routing key。 - headers：根据消息头（headers）中的键值对进行路由，而不是routing key。 **默认取值**： 不涉及。
 
         :return: The type of this MigrationRabbitExchangeMetadata.
         :rtype: str
@@ -119,7 +119,7 @@ class MigrationRabbitExchangeMetadata:
     def type(self, type):
         r"""Sets the type of this MigrationRabbitExchangeMetadata.
 
-        交换机类型。
+        **参数解释**： 交换机类型。 **约束限制**： 不涉及。 **取值范围**： - topic：支持routing key的模糊匹配。 - direct：按routing key精确匹配进行消息路由。 - fanout：广播模式，消息会发送到所有绑定的队列，忽略routing key。 - headers：根据消息头（headers）中的键值对进行路由，而不是routing key。 **默认取值**： 不涉及。
 
         :param type: The type of this MigrationRabbitExchangeMetadata.
         :type type: str
@@ -130,7 +130,7 @@ class MigrationRabbitExchangeMetadata:
     def durable(self):
         r"""Gets the durable of this MigrationRabbitExchangeMetadata.
 
-        是否持久化。
+        **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
 
         :return: The durable of this MigrationRabbitExchangeMetadata.
         :rtype: bool
@@ -141,7 +141,7 @@ class MigrationRabbitExchangeMetadata:
     def durable(self, durable):
         r"""Sets the durable of this MigrationRabbitExchangeMetadata.
 
-        是否持久化。
+        **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
 
         :param durable: The durable of this MigrationRabbitExchangeMetadata.
         :type durable: bool

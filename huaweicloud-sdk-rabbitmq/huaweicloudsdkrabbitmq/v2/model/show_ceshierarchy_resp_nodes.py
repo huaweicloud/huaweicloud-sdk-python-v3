@@ -29,9 +29,9 @@ class ShowCeshierarchyRespNodes:
 
         The model defined in huaweicloud sdk
 
-        :param name: 节点名称。
+        :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
-        :param available_zone: 可用区。
+        :param available_zone: **参数解释**： 可用区。 **取值范围**： 不涉及。
         :type available_zone: str
         """
         
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespNodes:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespNodes.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespNodes.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespNodes:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespNodes.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespNodes.
         :type name: str
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespNodes:
     def available_zone(self):
         r"""Gets the available_zone of this ShowCeshierarchyRespNodes.
 
-        可用区。
+        **参数解释**： 可用区。 **取值范围**： 不涉及。
 
         :return: The available_zone of this ShowCeshierarchyRespNodes.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespNodes:
     def available_zone(self, available_zone):
         r"""Sets the available_zone of this ShowCeshierarchyRespNodes.
 
-        可用区。
+        **参数解释**： 可用区。 **取值范围**： 不涉及。
 
         :param available_zone: The available_zone of this ShowCeshierarchyRespNodes.
         :type available_zone: str

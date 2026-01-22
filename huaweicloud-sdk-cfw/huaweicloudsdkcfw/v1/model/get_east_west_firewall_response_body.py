@@ -47,27 +47,27 @@ class GetEastWestFirewallResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        :param object_id: **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得。type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及
         :type object_id: str
-        :param project_id: 项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        :param project_id: **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
         :type project_id: str
-        :param status: 防护状态：0 已开启防护， 1 未开启防护
+        :param status: **参数解释**： 防护状态： 不涉及 **取值范围**： 0：已开启防护 1：未开启防护
         :type status: int
-        :param firewall_associated_subnets: 云防火墙关联子网信息
+        :param firewall_associated_subnets: **参数解释**： 云防火墙关联子网信息 **取值范围**： 不涉及
         :type firewall_associated_subnets: list[:class:`huaweicloudsdkcfw.v1.SubnetInfo`]
         :param er: 
         :type er: :class:`huaweicloudsdkcfw.v1.ErInstance`
         :param inspection_vpc: 
         :type inspection_vpc: :class:`huaweicloudsdkcfw.v1.VpcDetail`
-        :param protect_infos: 东西向防护资源信息
+        :param protect_infos: **参数解释**： 东西向防护资源信息 **取值范围**： 不涉及
         :type protect_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
-        :param total: 防护VPC总数
+        :param total: **参数解释**： 防护VPC总数 **取值范围**： 不涉及
         :type total: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
         :type offset: int
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param mode: 防护模式，值为er
+        :param mode: **参数解释**： 防护模式，值为er **取值范围**： 不涉及
         :type mode: str
         """
         
@@ -113,7 +113,7 @@ class GetEastWestFirewallResponseBody:
     def object_id(self):
         r"""Gets the object_id of this GetEastWestFirewallResponseBody.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得。type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及
 
         :return: The object_id of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -124,7 +124,7 @@ class GetEastWestFirewallResponseBody:
     def object_id(self, object_id):
         r"""Sets the object_id of this GetEastWestFirewallResponseBody.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得。type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及
 
         :param object_id: The object_id of this GetEastWestFirewallResponseBody.
         :type object_id: str
@@ -135,7 +135,7 @@ class GetEastWestFirewallResponseBody:
     def project_id(self):
         r"""Gets the project_id of this GetEastWestFirewallResponseBody.
 
-        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
 
         :return: The project_id of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -146,7 +146,7 @@ class GetEastWestFirewallResponseBody:
     def project_id(self, project_id):
         r"""Sets the project_id of this GetEastWestFirewallResponseBody.
 
-        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
 
         :param project_id: The project_id of this GetEastWestFirewallResponseBody.
         :type project_id: str
@@ -157,7 +157,7 @@ class GetEastWestFirewallResponseBody:
     def status(self):
         r"""Gets the status of this GetEastWestFirewallResponseBody.
 
-        防护状态：0 已开启防护， 1 未开启防护
+        **参数解释**： 防护状态： 不涉及 **取值范围**： 0：已开启防护 1：未开启防护
 
         :return: The status of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -168,7 +168,7 @@ class GetEastWestFirewallResponseBody:
     def status(self, status):
         r"""Sets the status of this GetEastWestFirewallResponseBody.
 
-        防护状态：0 已开启防护， 1 未开启防护
+        **参数解释**： 防护状态： 不涉及 **取值范围**： 0：已开启防护 1：未开启防护
 
         :param status: The status of this GetEastWestFirewallResponseBody.
         :type status: int
@@ -179,7 +179,7 @@ class GetEastWestFirewallResponseBody:
     def firewall_associated_subnets(self):
         r"""Gets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
 
-        云防火墙关联子网信息
+        **参数解释**： 云防火墙关联子网信息 **取值范围**： 不涉及
 
         :return: The firewall_associated_subnets of this GetEastWestFirewallResponseBody.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.SubnetInfo`]
@@ -190,7 +190,7 @@ class GetEastWestFirewallResponseBody:
     def firewall_associated_subnets(self, firewall_associated_subnets):
         r"""Sets the firewall_associated_subnets of this GetEastWestFirewallResponseBody.
 
-        云防火墙关联子网信息
+        **参数解释**： 云防火墙关联子网信息 **取值范围**： 不涉及
 
         :param firewall_associated_subnets: The firewall_associated_subnets of this GetEastWestFirewallResponseBody.
         :type firewall_associated_subnets: list[:class:`huaweicloudsdkcfw.v1.SubnetInfo`]
@@ -237,7 +237,7 @@ class GetEastWestFirewallResponseBody:
     def protect_infos(self):
         r"""Gets the protect_infos of this GetEastWestFirewallResponseBody.
 
-        东西向防护资源信息
+        **参数解释**： 东西向防护资源信息 **取值范围**： 不涉及
 
         :return: The protect_infos of this GetEastWestFirewallResponseBody.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
@@ -248,7 +248,7 @@ class GetEastWestFirewallResponseBody:
     def protect_infos(self, protect_infos):
         r"""Sets the protect_infos of this GetEastWestFirewallResponseBody.
 
-        东西向防护资源信息
+        **参数解释**： 东西向防护资源信息 **取值范围**： 不涉及
 
         :param protect_infos: The protect_infos of this GetEastWestFirewallResponseBody.
         :type protect_infos: list[:class:`huaweicloudsdkcfw.v1.EwProtectResourceInfo`]
@@ -259,7 +259,7 @@ class GetEastWestFirewallResponseBody:
     def total(self):
         r"""Gets the total of this GetEastWestFirewallResponseBody.
 
-        防护VPC总数
+        **参数解释**： 防护VPC总数 **取值范围**： 不涉及
 
         :return: The total of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -270,7 +270,7 @@ class GetEastWestFirewallResponseBody:
     def total(self, total):
         r"""Sets the total of this GetEastWestFirewallResponseBody.
 
-        防护VPC总数
+        **参数解释**： 防护VPC总数 **取值范围**： 不涉及
 
         :param total: The total of this GetEastWestFirewallResponseBody.
         :type total: int
@@ -281,7 +281,7 @@ class GetEastWestFirewallResponseBody:
     def offset(self):
         r"""Gets the offset of this GetEastWestFirewallResponseBody.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :return: The offset of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -292,7 +292,7 @@ class GetEastWestFirewallResponseBody:
     def offset(self, offset):
         r"""Sets the offset of this GetEastWestFirewallResponseBody.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :param offset: The offset of this GetEastWestFirewallResponseBody.
         :type offset: int
@@ -303,7 +303,7 @@ class GetEastWestFirewallResponseBody:
     def limit(self):
         r"""Gets the limit of this GetEastWestFirewallResponseBody.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -314,7 +314,7 @@ class GetEastWestFirewallResponseBody:
     def limit(self, limit):
         r"""Sets the limit of this GetEastWestFirewallResponseBody.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this GetEastWestFirewallResponseBody.
         :type limit: int
@@ -325,7 +325,7 @@ class GetEastWestFirewallResponseBody:
     def mode(self):
         r"""Gets the mode of this GetEastWestFirewallResponseBody.
 
-        防护模式，值为er
+        **参数解释**： 防护模式，值为er **取值范围**： 不涉及
 
         :return: The mode of this GetEastWestFirewallResponseBody.
         :rtype: str
@@ -336,7 +336,7 @@ class GetEastWestFirewallResponseBody:
     def mode(self, mode):
         r"""Sets the mode of this GetEastWestFirewallResponseBody.
 
-        防护模式，值为er
+        **参数解释**： 防护模式，值为er **取值范围**： 不涉及
 
         :param mode: The mode of this GetEastWestFirewallResponseBody.
         :type mode: str

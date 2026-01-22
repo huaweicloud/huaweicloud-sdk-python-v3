@@ -65,45 +65,45 @@ class GetFirewallInstanceResponseRecord:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        :param fw_instance_id: **参数解释**： 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获取 **取值范围**： 不涉及
         :type fw_instance_id: str
-        :param name: 防火墙名称
+        :param name: **参数解释**： 防火墙名称 **取值范围**： 不涉及
         :type name: str
-        :param ha_type: 集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
+        :param ha_type: **参数解释**： 集群类型 **取值范围**： - 0：主备模式，包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点 - 1：集群模式，仅拉起两个节点作为集群
         :type ha_type: int
-        :param charge_mode: 计费模式 0：包年/包月 1：按需
+        :param charge_mode: **参数解释**： 计费模式 **取值范围**： - 0：包年/包月 - 1：按需
         :type charge_mode: int
-        :param service_type: 防火墙防护类型，目前仅支持0，互联网防护
+        :param service_type: **参数解释**： 防火墙防护类型 **取值范围**： 目前仅支持0，互联网防护
         :type service_type: int
-        :param engine_type: 引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
+        :param engine_type: **参数解释**： 引擎类型 **取值范围**： - 0：自研引擎 - 1：山石引擎 - 3：天融信引擎
         :type engine_type: int
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkcfw.v1.Flavor`
-        :param protect_objects: 防护对象列表
+        :param protect_objects: **参数解释**： 防护对象列表 **取值范围**： 不涉及
         :type protect_objects: list[:class:`huaweicloudsdkcfw.v1.ProtectObjectVO`]
-        :param status: 防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        :param status: **参数解释**： 防火墙状态列表 **取值范围**： - -1：等待支付 - 0：创建中 - 1，删除中 - 2：运行中 - 3：升级中 - 4：删除完成 - 5：冻结中 - 6：创建失败 - 7：删除失败 - 8：冻结失败 - 9：存储中 - 10：存储失败 - 11：升级失败
         :type status: int
-        :param is_old_firewall_instance: 是否为旧引擎，true表示是，false表示不是
+        :param is_old_firewall_instance: **参数解释**： 是否为旧引擎 **取值范围**： - true：是 - false：不是
         :type is_old_firewall_instance: bool
-        :param is_available_obs: 是否支持obs，true表示是，false表示不是
+        :param is_available_obs: **参数解释**： 是否支持obs **取值范围**： - true：是 - false：不是
         :type is_available_obs: bool
-        :param is_support_threat_tags: 是否支持威胁情报标签，true表示是，false表示不是
+        :param is_support_threat_tags: **参数解释**： 是否支持威胁情报标签 **取值范围**： - true：是 - false：不是
         :type is_support_threat_tags: bool
-        :param support_ipv6: 是否支持ipv6，true表示是，false表示不是
+        :param support_ipv6: **参数解释**： 是否支持ipv6 **取值范围**： - true：是 - false：不是
         :type support_ipv6: bool
-        :param feature_toggle: 特性开关，boolean值为true表示是，false表示否
+        :param feature_toggle: **参数解释**： 特性开关 **取值范围**： - true：是 - false：不是
         :type feature_toggle: dict(str, bool)
-        :param resources: 防火墙资源列表
+        :param resources: **参数解释**： 防火墙资源列表 **取值范围**： 不涉及
         :type resources: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
-        :param fw_instance_name: 防火墙名称
+        :param fw_instance_name: **参数解释**： 防火墙名称 **取值范围**： 不涉及
         :type fw_instance_name: str
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **取值范围**： 不涉及
         :type enterprise_project_id: str
-        :param resource_id: 防火墙资源id，同fw_instance_id
+        :param resource_id: **参数解释**： 防火墙资源id，同fw_instance_id **取值范围**： 不涉及
         :type resource_id: str
-        :param support_url_filtering: 是否支持url过滤，true表示是，false表示不是
+        :param support_url_filtering: **参数解释**： 是否支持url过滤 **取值范围**： - true：是 - false：不是
         :type support_url_filtering: bool
-        :param tags: 标签列表，标签键值map转化的json字符串，如\&quot;{\\\&quot;key\\\&quot;:\\\&quot;value\\\&quot;}\&quot;
+        :param tags: **参数解释**： 标签列表，标签键值map转化的json字符串，如\&quot;{\\\&quot;key\\\&quot;:\\\&quot;value\\\&quot;}\&quot; **取值范围**： 不涉及
         :type tags: str
         """
         
@@ -176,7 +176,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        **参数解释**： 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获取 **取值范围**： 不涉及
 
         :return: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -187,7 +187,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，默认情况下，fw_instance_Id为空时，返回账号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
+        **参数解释**： 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id。可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获取 **取值范围**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this GetFirewallInstanceResponseRecord.
         :type fw_instance_id: str
@@ -198,7 +198,7 @@ class GetFirewallInstanceResponseRecord:
     def name(self):
         r"""Gets the name of this GetFirewallInstanceResponseRecord.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 **取值范围**： 不涉及
 
         :return: The name of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -209,7 +209,7 @@ class GetFirewallInstanceResponseRecord:
     def name(self, name):
         r"""Sets the name of this GetFirewallInstanceResponseRecord.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 **取值范围**： 不涉及
 
         :param name: The name of this GetFirewallInstanceResponseRecord.
         :type name: str
@@ -220,7 +220,7 @@ class GetFirewallInstanceResponseRecord:
     def ha_type(self):
         r"""Gets the ha_type of this GetFirewallInstanceResponseRecord.
 
-        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
+        **参数解释**： 集群类型 **取值范围**： - 0：主备模式，包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点 - 1：集群模式，仅拉起两个节点作为集群
 
         :return: The ha_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -231,7 +231,7 @@ class GetFirewallInstanceResponseRecord:
     def ha_type(self, ha_type):
         r"""Sets the ha_type of this GetFirewallInstanceResponseRecord.
 
-        集群类型，包含主备（0）和集群（1）两种方式，主备模式包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点，集群模式仅拉起两个节点作为集群。
+        **参数解释**： 集群类型 **取值范围**： - 0：主备模式，包含四个节点，2个主节点构成集群，剩余两个节点为主节点的备节点 - 1：集群模式，仅拉起两个节点作为集群
 
         :param ha_type: The ha_type of this GetFirewallInstanceResponseRecord.
         :type ha_type: int
@@ -242,7 +242,7 @@ class GetFirewallInstanceResponseRecord:
     def charge_mode(self):
         r"""Gets the charge_mode of this GetFirewallInstanceResponseRecord.
 
-        计费模式 0：包年/包月 1：按需
+        **参数解释**： 计费模式 **取值范围**： - 0：包年/包月 - 1：按需
 
         :return: The charge_mode of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -253,7 +253,7 @@ class GetFirewallInstanceResponseRecord:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this GetFirewallInstanceResponseRecord.
 
-        计费模式 0：包年/包月 1：按需
+        **参数解释**： 计费模式 **取值范围**： - 0：包年/包月 - 1：按需
 
         :param charge_mode: The charge_mode of this GetFirewallInstanceResponseRecord.
         :type charge_mode: int
@@ -264,7 +264,7 @@ class GetFirewallInstanceResponseRecord:
     def service_type(self):
         r"""Gets the service_type of this GetFirewallInstanceResponseRecord.
 
-        防火墙防护类型，目前仅支持0，互联网防护
+        **参数解释**： 防火墙防护类型 **取值范围**： 目前仅支持0，互联网防护
 
         :return: The service_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -275,7 +275,7 @@ class GetFirewallInstanceResponseRecord:
     def service_type(self, service_type):
         r"""Sets the service_type of this GetFirewallInstanceResponseRecord.
 
-        防火墙防护类型，目前仅支持0，互联网防护
+        **参数解释**： 防火墙防护类型 **取值范围**： 目前仅支持0，互联网防护
 
         :param service_type: The service_type of this GetFirewallInstanceResponseRecord.
         :type service_type: int
@@ -286,7 +286,7 @@ class GetFirewallInstanceResponseRecord:
     def engine_type(self):
         r"""Gets the engine_type of this GetFirewallInstanceResponseRecord.
 
-        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
+        **参数解释**： 引擎类型 **取值范围**： - 0：自研引擎 - 1：山石引擎 - 3：天融信引擎
 
         :return: The engine_type of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -297,7 +297,7 @@ class GetFirewallInstanceResponseRecord:
     def engine_type(self, engine_type):
         r"""Sets the engine_type of this GetFirewallInstanceResponseRecord.
 
-        引擎类型，0：自研引擎 1：山石引擎 3：天融信引擎
+        **参数解释**： 引擎类型 **取值范围**： - 0：自研引擎 - 1：山石引擎 - 3：天融信引擎
 
         :param engine_type: The engine_type of this GetFirewallInstanceResponseRecord.
         :type engine_type: int
@@ -326,7 +326,7 @@ class GetFirewallInstanceResponseRecord:
     def protect_objects(self):
         r"""Gets the protect_objects of this GetFirewallInstanceResponseRecord.
 
-        防护对象列表
+        **参数解释**： 防护对象列表 **取值范围**： 不涉及
 
         :return: The protect_objects of this GetFirewallInstanceResponseRecord.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ProtectObjectVO`]
@@ -337,7 +337,7 @@ class GetFirewallInstanceResponseRecord:
     def protect_objects(self, protect_objects):
         r"""Sets the protect_objects of this GetFirewallInstanceResponseRecord.
 
-        防护对象列表
+        **参数解释**： 防护对象列表 **取值范围**： 不涉及
 
         :param protect_objects: The protect_objects of this GetFirewallInstanceResponseRecord.
         :type protect_objects: list[:class:`huaweicloudsdkcfw.v1.ProtectObjectVO`]
@@ -348,7 +348,7 @@ class GetFirewallInstanceResponseRecord:
     def status(self):
         r"""Gets the status of this GetFirewallInstanceResponseRecord.
 
-        防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        **参数解释**： 防火墙状态列表 **取值范围**： - -1：等待支付 - 0：创建中 - 1，删除中 - 2：运行中 - 3：升级中 - 4：删除完成 - 5：冻结中 - 6：创建失败 - 7：删除失败 - 8：冻结失败 - 9：存储中 - 10：存储失败 - 11：升级失败
 
         :return: The status of this GetFirewallInstanceResponseRecord.
         :rtype: int
@@ -359,7 +359,7 @@ class GetFirewallInstanceResponseRecord:
     def status(self, status):
         r"""Sets the status of this GetFirewallInstanceResponseRecord.
 
-        防火墙状态列表，包括-1：等待支付，0：创建中，1，删除中，2：运行中，3：升级中，4：删除完成：5：冻结中，6：创建失败，7：删除失败，8：冻结失败，9：存储中，10：存储失败，11：升级失败
+        **参数解释**： 防火墙状态列表 **取值范围**： - -1：等待支付 - 0：创建中 - 1，删除中 - 2：运行中 - 3：升级中 - 4：删除完成 - 5：冻结中 - 6：创建失败 - 7：删除失败 - 8：冻结失败 - 9：存储中 - 10：存储失败 - 11：升级失败
 
         :param status: The status of this GetFirewallInstanceResponseRecord.
         :type status: int
@@ -370,7 +370,7 @@ class GetFirewallInstanceResponseRecord:
     def is_old_firewall_instance(self):
         r"""Gets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
 
-        是否为旧引擎，true表示是，false表示不是
+        **参数解释**： 是否为旧引擎 **取值范围**： - true：是 - false：不是
 
         :return: The is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -381,7 +381,7 @@ class GetFirewallInstanceResponseRecord:
     def is_old_firewall_instance(self, is_old_firewall_instance):
         r"""Sets the is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
 
-        是否为旧引擎，true表示是，false表示不是
+        **参数解释**： 是否为旧引擎 **取值范围**： - true：是 - false：不是
 
         :param is_old_firewall_instance: The is_old_firewall_instance of this GetFirewallInstanceResponseRecord.
         :type is_old_firewall_instance: bool
@@ -392,7 +392,7 @@ class GetFirewallInstanceResponseRecord:
     def is_available_obs(self):
         r"""Gets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
-        是否支持obs，true表示是，false表示不是
+        **参数解释**： 是否支持obs **取值范围**： - true：是 - false：不是
 
         :return: The is_available_obs of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -403,7 +403,7 @@ class GetFirewallInstanceResponseRecord:
     def is_available_obs(self, is_available_obs):
         r"""Sets the is_available_obs of this GetFirewallInstanceResponseRecord.
 
-        是否支持obs，true表示是，false表示不是
+        **参数解释**： 是否支持obs **取值范围**： - true：是 - false：不是
 
         :param is_available_obs: The is_available_obs of this GetFirewallInstanceResponseRecord.
         :type is_available_obs: bool
@@ -414,7 +414,7 @@ class GetFirewallInstanceResponseRecord:
     def is_support_threat_tags(self):
         r"""Gets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
-        是否支持威胁情报标签，true表示是，false表示不是
+        **参数解释**： 是否支持威胁情报标签 **取值范围**： - true：是 - false：不是
 
         :return: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -425,7 +425,7 @@ class GetFirewallInstanceResponseRecord:
     def is_support_threat_tags(self, is_support_threat_tags):
         r"""Sets the is_support_threat_tags of this GetFirewallInstanceResponseRecord.
 
-        是否支持威胁情报标签，true表示是，false表示不是
+        **参数解释**： 是否支持威胁情报标签 **取值范围**： - true：是 - false：不是
 
         :param is_support_threat_tags: The is_support_threat_tags of this GetFirewallInstanceResponseRecord.
         :type is_support_threat_tags: bool
@@ -436,7 +436,7 @@ class GetFirewallInstanceResponseRecord:
     def support_ipv6(self):
         r"""Gets the support_ipv6 of this GetFirewallInstanceResponseRecord.
 
-        是否支持ipv6，true表示是，false表示不是
+        **参数解释**： 是否支持ipv6 **取值范围**： - true：是 - false：不是
 
         :return: The support_ipv6 of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -447,7 +447,7 @@ class GetFirewallInstanceResponseRecord:
     def support_ipv6(self, support_ipv6):
         r"""Sets the support_ipv6 of this GetFirewallInstanceResponseRecord.
 
-        是否支持ipv6，true表示是，false表示不是
+        **参数解释**： 是否支持ipv6 **取值范围**： - true：是 - false：不是
 
         :param support_ipv6: The support_ipv6 of this GetFirewallInstanceResponseRecord.
         :type support_ipv6: bool
@@ -458,7 +458,7 @@ class GetFirewallInstanceResponseRecord:
     def feature_toggle(self):
         r"""Gets the feature_toggle of this GetFirewallInstanceResponseRecord.
 
-        特性开关，boolean值为true表示是，false表示否
+        **参数解释**： 特性开关 **取值范围**： - true：是 - false：不是
 
         :return: The feature_toggle of this GetFirewallInstanceResponseRecord.
         :rtype: dict(str, bool)
@@ -469,7 +469,7 @@ class GetFirewallInstanceResponseRecord:
     def feature_toggle(self, feature_toggle):
         r"""Sets the feature_toggle of this GetFirewallInstanceResponseRecord.
 
-        特性开关，boolean值为true表示是，false表示否
+        **参数解释**： 特性开关 **取值范围**： - true：是 - false：不是
 
         :param feature_toggle: The feature_toggle of this GetFirewallInstanceResponseRecord.
         :type feature_toggle: dict(str, bool)
@@ -480,7 +480,7 @@ class GetFirewallInstanceResponseRecord:
     def resources(self):
         r"""Gets the resources of this GetFirewallInstanceResponseRecord.
 
-        防火墙资源列表
+        **参数解释**： 防火墙资源列表 **取值范围**： 不涉及
 
         :return: The resources of this GetFirewallInstanceResponseRecord.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
@@ -491,7 +491,7 @@ class GetFirewallInstanceResponseRecord:
     def resources(self, resources):
         r"""Sets the resources of this GetFirewallInstanceResponseRecord.
 
-        防火墙资源列表
+        **参数解释**： 防火墙资源列表 **取值范围**： 不涉及
 
         :param resources: The resources of this GetFirewallInstanceResponseRecord.
         :type resources: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceResource`]
@@ -502,7 +502,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_name(self):
         r"""Gets the fw_instance_name of this GetFirewallInstanceResponseRecord.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 **取值范围**： 不涉及
 
         :return: The fw_instance_name of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -513,7 +513,7 @@ class GetFirewallInstanceResponseRecord:
     def fw_instance_name(self, fw_instance_name):
         r"""Sets the fw_instance_name of this GetFirewallInstanceResponseRecord.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 **取值范围**： 不涉及
 
         :param fw_instance_name: The fw_instance_name of this GetFirewallInstanceResponseRecord.
         :type fw_instance_name: str
@@ -524,7 +524,7 @@ class GetFirewallInstanceResponseRecord:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **取值范围**： 不涉及
 
         :return: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -535,7 +535,7 @@ class GetFirewallInstanceResponseRecord:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this GetFirewallInstanceResponseRecord.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **取值范围**： 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this GetFirewallInstanceResponseRecord.
         :type enterprise_project_id: str
@@ -546,7 +546,7 @@ class GetFirewallInstanceResponseRecord:
     def resource_id(self):
         r"""Gets the resource_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙资源id，同fw_instance_id
+        **参数解释**： 防火墙资源id，同fw_instance_id **取值范围**： 不涉及
 
         :return: The resource_id of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -557,7 +557,7 @@ class GetFirewallInstanceResponseRecord:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this GetFirewallInstanceResponseRecord.
 
-        防火墙资源id，同fw_instance_id
+        **参数解释**： 防火墙资源id，同fw_instance_id **取值范围**： 不涉及
 
         :param resource_id: The resource_id of this GetFirewallInstanceResponseRecord.
         :type resource_id: str
@@ -568,7 +568,7 @@ class GetFirewallInstanceResponseRecord:
     def support_url_filtering(self):
         r"""Gets the support_url_filtering of this GetFirewallInstanceResponseRecord.
 
-        是否支持url过滤，true表示是，false表示不是
+        **参数解释**： 是否支持url过滤 **取值范围**： - true：是 - false：不是
 
         :return: The support_url_filtering of this GetFirewallInstanceResponseRecord.
         :rtype: bool
@@ -579,7 +579,7 @@ class GetFirewallInstanceResponseRecord:
     def support_url_filtering(self, support_url_filtering):
         r"""Sets the support_url_filtering of this GetFirewallInstanceResponseRecord.
 
-        是否支持url过滤，true表示是，false表示不是
+        **参数解释**： 是否支持url过滤 **取值范围**： - true：是 - false：不是
 
         :param support_url_filtering: The support_url_filtering of this GetFirewallInstanceResponseRecord.
         :type support_url_filtering: bool
@@ -590,7 +590,7 @@ class GetFirewallInstanceResponseRecord:
     def tags(self):
         r"""Gets the tags of this GetFirewallInstanceResponseRecord.
 
-        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
+        **参数解释**： 标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\" **取值范围**： 不涉及
 
         :return: The tags of this GetFirewallInstanceResponseRecord.
         :rtype: str
@@ -601,7 +601,7 @@ class GetFirewallInstanceResponseRecord:
     def tags(self, tags):
         r"""Sets the tags of this GetFirewallInstanceResponseRecord.
 
-        标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\"
+        **参数解释**： 标签列表，标签键值map转化的json字符串，如\"{\\\"key\\\":\\\"value\\\"}\" **取值范围**： 不涉及
 
         :param tags: The tags of this GetFirewallInstanceResponseRecord.
         :type tags: str

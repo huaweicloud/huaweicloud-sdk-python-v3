@@ -31,9 +31,9 @@ class SwitchEipStatusDto:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param object_id: 防护对象id
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
         :param status: 是否开启新增eip自动防护，1；是，0：否
         :type status: int
@@ -46,18 +46,15 @@ class SwitchEipStatusDto:
         self._status = None
         self.discriminator = None
 
-        if fw_instance_id is not None:
-            self.fw_instance_id = fw_instance_id
-        if object_id is not None:
-            self.object_id = object_id
-        if status is not None:
-            self.status = status
+        self.fw_instance_id = fw_instance_id
+        self.object_id = object_id
+        self.status = status
 
     @property
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this SwitchEipStatusDto.
 
-        防火墙id
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this SwitchEipStatusDto.
         :rtype: str
@@ -68,7 +65,7 @@ class SwitchEipStatusDto:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this SwitchEipStatusDto.
 
-        防火墙id
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this SwitchEipStatusDto.
         :type fw_instance_id: str
@@ -79,7 +76,7 @@ class SwitchEipStatusDto:
     def object_id(self):
         r"""Gets the object_id of this SwitchEipStatusDto.
 
-        防护对象id
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this SwitchEipStatusDto.
         :rtype: str
@@ -90,7 +87,7 @@ class SwitchEipStatusDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this SwitchEipStatusDto.
 
-        防护对象id
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this SwitchEipStatusDto.
         :type object_id: str

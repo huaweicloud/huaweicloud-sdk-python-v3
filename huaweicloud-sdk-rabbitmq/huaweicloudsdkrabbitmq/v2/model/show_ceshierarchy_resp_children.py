@@ -33,13 +33,13 @@ class ShowCeshierarchyRespChildren:
 
         The model defined in huaweicloud sdk
 
-        :param name: 子维度名称。
+        :param name: **参数解释**： 子维度名称。 **取值范围**： 不涉及。
         :type name: str
-        :param metrics: 监控指标名称列表。
+        :param metrics: **参数解释**： 监控指标名称列表。
         :type metrics: list[str]
-        :param key_name: 监控查询使用的key。
+        :param key_name: **参数解释**： 监控查询使用的key。
         :type key_name: list[str]
-        :param dim_router: 监控维度路由。
+        :param dim_router: **参数解释**： 监控维度路由。
         :type dim_router: list[str]
         """
         
@@ -64,7 +64,7 @@ class ShowCeshierarchyRespChildren:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespChildren.
 
-        子维度名称。
+        **参数解释**： 子维度名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespChildren.
         :rtype: str
@@ -75,7 +75,7 @@ class ShowCeshierarchyRespChildren:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespChildren.
 
-        子维度名称。
+        **参数解释**： 子维度名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespChildren.
         :type name: str
@@ -86,7 +86,7 @@ class ShowCeshierarchyRespChildren:
     def metrics(self):
         r"""Gets the metrics of this ShowCeshierarchyRespChildren.
 
-        监控指标名称列表。
+        **参数解释**： 监控指标名称列表。
 
         :return: The metrics of this ShowCeshierarchyRespChildren.
         :rtype: list[str]
@@ -97,7 +97,7 @@ class ShowCeshierarchyRespChildren:
     def metrics(self, metrics):
         r"""Sets the metrics of this ShowCeshierarchyRespChildren.
 
-        监控指标名称列表。
+        **参数解释**： 监控指标名称列表。
 
         :param metrics: The metrics of this ShowCeshierarchyRespChildren.
         :type metrics: list[str]
@@ -108,7 +108,7 @@ class ShowCeshierarchyRespChildren:
     def key_name(self):
         r"""Gets the key_name of this ShowCeshierarchyRespChildren.
 
-        监控查询使用的key。
+        **参数解释**： 监控查询使用的key。
 
         :return: The key_name of this ShowCeshierarchyRespChildren.
         :rtype: list[str]
@@ -119,7 +119,7 @@ class ShowCeshierarchyRespChildren:
     def key_name(self, key_name):
         r"""Sets the key_name of this ShowCeshierarchyRespChildren.
 
-        监控查询使用的key。
+        **参数解释**： 监控查询使用的key。
 
         :param key_name: The key_name of this ShowCeshierarchyRespChildren.
         :type key_name: list[str]
@@ -130,7 +130,7 @@ class ShowCeshierarchyRespChildren:
     def dim_router(self):
         r"""Gets the dim_router of this ShowCeshierarchyRespChildren.
 
-        监控维度路由。
+        **参数解释**： 监控维度路由。
 
         :return: The dim_router of this ShowCeshierarchyRespChildren.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class ShowCeshierarchyRespChildren:
     def dim_router(self, dim_router):
         r"""Sets the dim_router of this ShowCeshierarchyRespChildren.
 
-        监控维度路由。
+        **参数解释**： 监控维度路由。
 
         :param dim_router: The dim_router of this ShowCeshierarchyRespChildren.
         :type dim_router: list[str]

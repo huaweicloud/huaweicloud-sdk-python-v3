@@ -61,7 +61,7 @@ class FeatureConfig:
         :type feature: str
         :param switch: **参数解释**：特性配置启用开关，表示当前配置是否生效。  **取值范围**： - true：特性配置已生效。 - false: 特性配置未生效。
         :type switch: bool
-        :param type: **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
+        :param type: **参数解释**：特性配置值(value字段)的类型。  **取值范围**： - VARCHAR：字符串 - INT：整型 - BOOL：布尔型 - LIST：列表
         :type type: str
         :param value: **参数解释**：特性配置值。如开关类型的特性配置取值true/false，表示特性开启关闭；配额类型的特性配置取值整数，表示限制配额。  **取值范围**：不涉及
         :type value: str
@@ -256,7 +256,7 @@ class FeatureConfig:
     def type(self):
         r"""Gets the type of this FeatureConfig.
 
-        **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
+        **参数解释**：特性配置值(value字段)的类型。  **取值范围**： - VARCHAR：字符串 - INT：整型 - BOOL：布尔型 - LIST：列表
 
         :return: The type of this FeatureConfig.
         :rtype: str
@@ -267,7 +267,7 @@ class FeatureConfig:
     def type(self, type):
         r"""Sets the type of this FeatureConfig.
 
-        **参数解释**：特性配置值(value字段)的类型，如：INT，表示整型。  **取值范围**：不涉及
+        **参数解释**：特性配置值(value字段)的类型。  **取值范围**： - VARCHAR：字符串 - INT：整型 - BOOL：布尔型 - LIST：列表
 
         :param type: The type of this FeatureConfig.
         :type type: str

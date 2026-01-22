@@ -34,13 +34,13 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: **参数解释**： 总数。 **取值范围**： 不涉及。
+        :param total: **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param next_offset: **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
-        :param tags: **参数解释**： 标签列表。
+        :param tags: **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagMultyValueEntity`]
         """
         
@@ -65,7 +65,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 总数。 **取值范围**： 不涉及。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ShowRocketmqProjectTagsResponse.
         :rtype: float
@@ -76,7 +76,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 总数。 **取值范围**： 不涉及。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ShowRocketmqProjectTagsResponse.
         :type total: float
@@ -87,7 +87,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ShowRocketmqProjectTagsResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ShowRocketmqProjectTagsResponse.
         :type next_offset: int
@@ -109,7 +109,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ShowRocketmqProjectTagsResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ShowRocketmqProjectTagsResponse.
         :type previous_offset: int
@@ -131,7 +131,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 标签列表。
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tags of this ShowRocketmqProjectTagsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.TagMultyValueEntity`]
@@ -142,7 +142,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowRocketmqProjectTagsResponse.
 
-        **参数解释**： 标签列表。
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tags: The tags of this ShowRocketmqProjectTagsResponse.
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagMultyValueEntity`]

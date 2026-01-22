@@ -35,7 +35,7 @@ class AntiVirusVO:
         :type anti_virus_status: int
         :param id: 防护对象id
         :type id: str
-        :param name: 
+        :param name: 防护对象名称
         :type name: str
         """
         
@@ -101,6 +101,8 @@ class AntiVirusVO:
     def name(self):
         r"""Gets the name of this AntiVirusVO.
 
+        防护对象名称
+
         :return: The name of this AntiVirusVO.
         :rtype: str
         """
@@ -109,6 +111,8 @@ class AntiVirusVO:
     @name.setter
     def name(self, name):
         r"""Sets the name of this AntiVirusVO.
+
+        防护对象名称
 
         :param name: The name of this AntiVirusVO.
         :type name: str

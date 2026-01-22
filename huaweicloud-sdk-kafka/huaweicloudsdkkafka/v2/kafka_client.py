@@ -1105,6 +1105,75 @@ class KafkaClient(Client):
 
         return http_info
 
+    def create_partition(self, request):
+        r"""新增Kafka实例指定Topic分区
+
+        新增Kafka实例指定Topic分区。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePartition
+        :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionResponse`
+        """
+        http_info = self._create_partition_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_partition_invoker(self, request):
+        http_info = self._create_partition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_partition_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions-reassignment",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePartitionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic' in local_var_params:
+            path_params['topic'] = local_var_params['topic']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_post_paid_instance(self, request):
         r"""创建实例
 
@@ -1440,10 +1509,79 @@ class KafkaClient(Client):
 
         return http_info
 
+    def delete_group(self, request):
+        r"""kafka实例删除指定消费组
+
+        kafka实例删除指定消费组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteGroupResponse`
+        """
+        http_info = self._delete_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_group_invoker(self, request):
+        http_info = self._delete_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/groups/{group}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_instance(self, request):
         r"""删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
+        
+        [注意：调用本接口删除的实例将被彻底删除，不会进入回收站，且删除后不可恢复。若您需要删除的实例进入回收站，请使用[批量重启或删除实例](BatchRestartOrDeleteInstances.xml)。](tag:hws,hws_hk,cmcc,ctc,sbc,hk_sbc,tm,hk_tm,srg)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1599,6 +1737,75 @@ class KafkaClient(Client):
             "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/topics/{topic}/messages",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteKafkaMessageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic' in local_var_params:
+            path_params['topic'] = local_var_params['topic']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_kafka_topic_messages(self, request):
+        r"""删除Kafka消息
+
+        删除Kafka消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteKafkaTopicMessages
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteKafkaTopicMessagesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteKafkaTopicMessagesResponse`
+        """
+        http_info = self._delete_kafka_topic_messages_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_kafka_topic_messages_invoker(self, request):
+        http_info = self._delete_kafka_topic_messages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_kafka_topic_messages_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/topics/{topic}/messages/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKafkaTopicMessagesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1844,31 +2051,31 @@ class KafkaClient(Client):
 
         return http_info
 
-    def delete_user(self, request):
-        r"""删除指定用户
+    def enable_dns(self, request):
+        r"""开启Kafka实例域名访问能力
 
-        删除指定用户。
+        开启Kafka实例域名访问后，客户端可以通过域名连接Kafka实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for DeleteUser
-        :type request: :class:`huaweicloudsdkkafka.v2.DeleteUserRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteUserResponse`
+        :param request: Request instance for EnableDns
+        :type request: :class:`huaweicloudsdkkafka.v2.EnableDnsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.EnableDnsResponse`
         """
-        http_info = self._delete_user_http_info(request)
+        http_info = self._enable_dns_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_user_invoker(self, request):
-        http_info = self._delete_user_http_info(request)
+    def enable_dns_invoker(self, request):
+        http_info = self._enable_dns_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _delete_user_http_info(cls, request):
+    def _enable_dns_http_info(cls, request):
         http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/{project_id}/instances/{instance_id}/users/{user_name}",
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/dns",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteUserResponse"
+            "response_type": "EnableDnsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1880,8 +2087,6 @@ class KafkaClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
-        if 'user_name' in local_var_params:
-            path_params['user_name'] = local_var_params['user_name']
 
         query_params = []
 
@@ -1898,7 +2103,7 @@ class KafkaClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = ['IAM_AUTH_TYPE_NEW']
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4679,6 +4884,73 @@ class KafkaClient(Client):
 
         return http_info
 
+    def show_group(self, request):
+        r"""查询指定消费组信息
+
+        查询指定消费组信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupResponse`
+        """
+        http_info = self._show_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_group_invoker(self, request):
+        http_info = self._show_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/groups/{group}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_groups(self, request):
         r"""查询消费组信息
 
@@ -4948,8 +5220,9 @@ class KafkaClient(Client):
     def show_instance_messages(self, request):
         r"""查询消息
 
-        查询消息的偏移量和消息内容。
-        先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
+        Kafka实例支持两种消息查询方式，具体查询范围及结果如下：
+        - 按创建时间查询：若已知消息的创建时间段，可通过该方式查询，将返回消息列表及对应偏移量，但不包含消息具体内容。
+        - 按偏移量查询：若已知目标消息所属Topic的分区及具体偏移量，可通过该方式查询，将返回消息列表及完整的消息内容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7538,75 +7811,6 @@ class KafkaClient(Client):
 
         return http_info
 
-    def update_topic_replica(self, request):
-        r"""修改Kafka实例Topic分区的副本
-
-        修改Kafka实例Topic分区的副本。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for UpdateTopicReplica
-        :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaRequest`
-        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaResponse`
-        """
-        http_info = self._update_topic_replica_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_topic_replica_invoker(self, request):
-        http_info = self._update_topic_replica_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _update_topic_replica_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/replicas-reassignment",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateTopicReplicaResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-        if 'topic' in local_var_params:
-            path_params['topic'] = local_var_params['topic']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_volume_expansion_config(self, request):
         r"""修改磁盘自动扩容配置
 
@@ -8479,9 +8683,9 @@ class KafkaClient(Client):
         return http_info
 
     def show_connector_resource_info(self, request):
-        r"""查询开启Smart Connector功能所需资源信息
+        r"""查询开启Smart Connect功能所需资源信息
 
-        查询开启Smart Connector功能所需要使用的资源的情况
+        查询开启Smart Connect功能所需要使用的资源的情况
         
         Please refer to HUAWEI cloud API Explorer for details.
 

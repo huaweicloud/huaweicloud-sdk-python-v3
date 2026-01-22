@@ -35,15 +35,15 @@ class NodeContextEntity:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID
+        :param id: **参数解释**： ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param broker_name: broker名称
+        :param broker_name: **参数解释**： broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_name: str
-        :param broker_id: broker的ID
+        :param broker_id: **参数解释**： broker的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_id: int
-        :param address: 地址
+        :param address: **参数解释**： 地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type address: str
-        :param public_address: 公网地址
+        :param public_address: **参数解释**： 公网地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_address: str
         """
         
@@ -71,7 +71,7 @@ class NodeContextEntity:
     def id(self):
         r"""Gets the id of this NodeContextEntity.
 
-        ID
+        **参数解释**： ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this NodeContextEntity.
         :rtype: str
@@ -82,7 +82,7 @@ class NodeContextEntity:
     def id(self, id):
         r"""Sets the id of this NodeContextEntity.
 
-        ID
+        **参数解释**： ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this NodeContextEntity.
         :type id: str
@@ -93,7 +93,7 @@ class NodeContextEntity:
     def broker_name(self):
         r"""Gets the broker_name of this NodeContextEntity.
 
-        broker名称
+        **参数解释**： broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_name of this NodeContextEntity.
         :rtype: str
@@ -104,7 +104,7 @@ class NodeContextEntity:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this NodeContextEntity.
 
-        broker名称
+        **参数解释**： broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_name: The broker_name of this NodeContextEntity.
         :type broker_name: str
@@ -115,7 +115,7 @@ class NodeContextEntity:
     def broker_id(self):
         r"""Gets the broker_id of this NodeContextEntity.
 
-        broker的ID
+        **参数解释**： broker的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_id of this NodeContextEntity.
         :rtype: int
@@ -126,7 +126,7 @@ class NodeContextEntity:
     def broker_id(self, broker_id):
         r"""Sets the broker_id of this NodeContextEntity.
 
-        broker的ID
+        **参数解释**： broker的ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_id: The broker_id of this NodeContextEntity.
         :type broker_id: int
@@ -137,7 +137,7 @@ class NodeContextEntity:
     def address(self):
         r"""Gets the address of this NodeContextEntity.
 
-        地址
+        **参数解释**： 地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The address of this NodeContextEntity.
         :rtype: str
@@ -148,7 +148,7 @@ class NodeContextEntity:
     def address(self, address):
         r"""Sets the address of this NodeContextEntity.
 
-        地址
+        **参数解释**： 地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param address: The address of this NodeContextEntity.
         :type address: str
@@ -159,7 +159,7 @@ class NodeContextEntity:
     def public_address(self):
         r"""Gets the public_address of this NodeContextEntity.
 
-        公网地址
+        **参数解释**： 公网地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_address of this NodeContextEntity.
         :rtype: str
@@ -170,7 +170,7 @@ class NodeContextEntity:
     def public_address(self, public_address):
         r"""Sets the public_address of this NodeContextEntity.
 
-        公网地址
+        **参数解释**： 公网地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_address: The public_address of this NodeContextEntity.
         :type public_address: str

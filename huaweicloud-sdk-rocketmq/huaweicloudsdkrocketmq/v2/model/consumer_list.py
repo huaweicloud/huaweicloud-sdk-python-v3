@@ -29,9 +29,9 @@ class ConsumerList:
 
         The model defined in huaweicloud sdk
 
-        :param topics: **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        :param topics: **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topics: list[str]
-        :param total: **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
+        :param total: **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: int
         """
         
@@ -50,7 +50,7 @@ class ConsumerList:
     def topics(self):
         r"""Gets the topics of this ConsumerList.
 
-        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topics of this ConsumerList.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class ConsumerList:
     def topics(self, topics):
         r"""Sets the topics of this ConsumerList.
 
-        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。
+        **参数解释**： Topic列表（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topics: The topics of this ConsumerList.
         :type topics: list[str]
@@ -72,7 +72,7 @@ class ConsumerList:
     def total(self):
         r"""Gets the total of this ConsumerList.
 
-        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
+        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ConsumerList.
         :rtype: int
@@ -83,7 +83,7 @@ class ConsumerList:
     def total(self, total):
         r"""Sets the total of this ConsumerList.
 
-        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **取值范围**： 不涉及。
+        **参数解释**： Topic总数（当查询Topic消费“列表”时才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ConsumerList.
         :type total: int

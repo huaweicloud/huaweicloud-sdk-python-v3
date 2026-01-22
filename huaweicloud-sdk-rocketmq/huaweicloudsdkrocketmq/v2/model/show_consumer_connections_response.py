@@ -40,19 +40,19 @@ class ShowConsumerConnectionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 消费组名称。
+        :param group_name: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_name: str
-        :param online: 消费组是否在线。
+        :param online: **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：在线。 - false：不在线。 **默认取值**： 不涉及。
         :type online: bool
-        :param subscription_consistency: 订阅关系是否一致。
+        :param subscription_consistency: **参数解释**： 订阅关系是否一致。 **约束限制**： 不涉及。 **取值范围**： - true：一致。 - false：不一致。 **默认取值**： 不涉及。
         :type subscription_consistency: bool
-        :param total: 消费者总数。
+        :param total: **参数解释**： 消费者总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: int
-        :param next_offset: 下个分页的offset。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
-        :param clients: 消费者订阅详情列表。
+        :param clients: **参数解释**： 消费者订阅详情列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type clients: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]
         """
         
@@ -86,7 +86,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def group_name(self):
         r"""Gets the group_name of this ShowConsumerConnectionsResponse.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_name of this ShowConsumerConnectionsResponse.
         :rtype: str
@@ -97,7 +97,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def group_name(self, group_name):
         r"""Sets the group_name of this ShowConsumerConnectionsResponse.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_name: The group_name of this ShowConsumerConnectionsResponse.
         :type group_name: str
@@ -108,7 +108,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def online(self):
         r"""Gets the online of this ShowConsumerConnectionsResponse.
 
-        消费组是否在线。
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：在线。 - false：不在线。 **默认取值**： 不涉及。
 
         :return: The online of this ShowConsumerConnectionsResponse.
         :rtype: bool
@@ -119,7 +119,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def online(self, online):
         r"""Sets the online of this ShowConsumerConnectionsResponse.
 
-        消费组是否在线。
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：在线。 - false：不在线。 **默认取值**： 不涉及。
 
         :param online: The online of this ShowConsumerConnectionsResponse.
         :type online: bool
@@ -130,7 +130,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def subscription_consistency(self):
         r"""Gets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
-        订阅关系是否一致。
+        **参数解释**： 订阅关系是否一致。 **约束限制**： 不涉及。 **取值范围**： - true：一致。 - false：不一致。 **默认取值**： 不涉及。
 
         :return: The subscription_consistency of this ShowConsumerConnectionsResponse.
         :rtype: bool
@@ -141,7 +141,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def subscription_consistency(self, subscription_consistency):
         r"""Sets the subscription_consistency of this ShowConsumerConnectionsResponse.
 
-        订阅关系是否一致。
+        **参数解释**： 订阅关系是否一致。 **约束限制**： 不涉及。 **取值范围**： - true：一致。 - false：不一致。 **默认取值**： 不涉及。
 
         :param subscription_consistency: The subscription_consistency of this ShowConsumerConnectionsResponse.
         :type subscription_consistency: bool
@@ -152,7 +152,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowConsumerConnectionsResponse.
 
-        消费者总数。
+        **参数解释**： 消费者总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowConsumerConnectionsResponse.
 
-        消费者总数。
+        **参数解释**： 消费者总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ShowConsumerConnectionsResponse.
         :type total: int
@@ -174,7 +174,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ShowConsumerConnectionsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -185,7 +185,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ShowConsumerConnectionsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ShowConsumerConnectionsResponse.
         :type next_offset: int
@@ -196,7 +196,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ShowConsumerConnectionsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ShowConsumerConnectionsResponse.
         :rtype: int
@@ -207,7 +207,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ShowConsumerConnectionsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ShowConsumerConnectionsResponse.
         :type previous_offset: int
@@ -218,7 +218,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def clients(self):
         r"""Gets the clients of this ShowConsumerConnectionsResponse.
 
-        消费者订阅详情列表。
+        **参数解释**： 消费者订阅详情列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The clients of this ShowConsumerConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]
@@ -229,7 +229,7 @@ class ShowConsumerConnectionsResponse(SdkResponse):
     def clients(self, clients):
         r"""Sets the clients of this ShowConsumerConnectionsResponse.
 
-        消费者订阅详情列表。
+        **参数解释**： 消费者订阅详情列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param clients: The clients of this ShowConsumerConnectionsResponse.
         :type clients: list[:class:`huaweicloudsdkrocketmq.v2.ClientData`]

@@ -28,7 +28,7 @@ class ListAppliedInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: 可以应用的实例列表。
+        :param instances: **参数解释：** 可以应用的实例列表。 **取值范围：** 不涉及。
         :type instances: list[:class:`huaweicloudsdkdds.v3.ApplicableInstancesInfo`]
         """
         
@@ -44,7 +44,7 @@ class ListAppliedInstancesResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListAppliedInstancesResponse.
 
-        可以应用的实例列表。
+        **参数解释：** 可以应用的实例列表。 **取值范围：** 不涉及。
 
         :return: The instances of this ListAppliedInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.ApplicableInstancesInfo`]
@@ -55,7 +55,7 @@ class ListAppliedInstancesResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListAppliedInstancesResponse.
 
-        可以应用的实例列表。
+        **参数解释：** 可以应用的实例列表。 **取值范围：** 不涉及。
 
         :param instances: The instances of this ListAppliedInstancesResponse.
         :type instances: list[:class:`huaweicloudsdkdds.v3.ApplicableInstancesInfo`]

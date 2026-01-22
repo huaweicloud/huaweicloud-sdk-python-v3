@@ -27,7 +27,7 @@ class VpcAttachmentDetail:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: 东西向防护添加的防护vpc的id
+        :param vpc_id: **参数解释**： 东西向防护添加的防护VPC的ID **取值范围**： 不涉及
         :type vpc_id: str
         """
         
@@ -43,7 +43,7 @@ class VpcAttachmentDetail:
     def vpc_id(self):
         r"""Gets the vpc_id of this VpcAttachmentDetail.
 
-        东西向防护添加的防护vpc的id
+        **参数解释**： 东西向防护添加的防护VPC的ID **取值范围**： 不涉及
 
         :return: The vpc_id of this VpcAttachmentDetail.
         :rtype: str
@@ -54,7 +54,7 @@ class VpcAttachmentDetail:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this VpcAttachmentDetail.
 
-        东西向防护添加的防护vpc的id
+        **参数解释**： 东西向防护添加的防护VPC的ID **取值范围**： 不涉及
 
         :param vpc_id: The vpc_id of this VpcAttachmentDetail.
         :type vpc_id: str

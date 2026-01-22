@@ -17,7 +17,9 @@ class GroupMessageOffsetsDetailEntity:
     openapi_types = {
         'partition': 'str',
         'message_current_offset': 'str',
+        'topic': 'str',
         'message_log_start_offset': 'int',
+        'lag': 'int',
         'message_log_end_offset': 'int',
         'consumer_id': 'str',
         'host': 'str',
@@ -27,14 +29,16 @@ class GroupMessageOffsetsDetailEntity:
     attribute_map = {
         'partition': 'partition',
         'message_current_offset': 'message_current_offset',
+        'topic': 'topic',
         'message_log_start_offset': 'message_log_start_offset',
+        'lag': 'lag',
         'message_log_end_offset': 'message_log_end_offset',
         'consumer_id': 'consumer_id',
         'host': 'host',
         'client_id': 'client_id'
     }
 
-    def __init__(self, partition=None, message_current_offset=None, message_log_start_offset=None, message_log_end_offset=None, consumer_id=None, host=None, client_id=None):
+    def __init__(self, partition=None, message_current_offset=None, topic=None, message_log_start_offset=None, lag=None, message_log_end_offset=None, consumer_id=None, host=None, client_id=None):
         r"""GroupMessageOffsetsDetailEntity
 
         The model defined in huaweicloud sdk
@@ -43,8 +47,12 @@ class GroupMessageOffsetsDetailEntity:
         :type partition: str
         :param message_current_offset: 消息当前位点
         :type message_current_offset: str
+        :param topic: topic名称
+        :type topic: str
         :param message_log_start_offset: 消息开始位点
         :type message_log_start_offset: int
+        :param lag: 剩余可消费消息数，即消息堆积数
+        :type lag: int
         :param message_log_end_offset: 消息结束位点
         :type message_log_end_offset: int
         :param consumer_id: 消费者Id
@@ -59,7 +67,9 @@ class GroupMessageOffsetsDetailEntity:
 
         self._partition = None
         self._message_current_offset = None
+        self._topic = None
         self._message_log_start_offset = None
+        self._lag = None
         self._message_log_end_offset = None
         self._consumer_id = None
         self._host = None
@@ -70,8 +80,12 @@ class GroupMessageOffsetsDetailEntity:
             self.partition = partition
         if message_current_offset is not None:
             self.message_current_offset = message_current_offset
+        if topic is not None:
+            self.topic = topic
         if message_log_start_offset is not None:
             self.message_log_start_offset = message_log_start_offset
+        if lag is not None:
+            self.lag = lag
         if message_log_end_offset is not None:
             self.message_log_end_offset = message_log_end_offset
         if consumer_id is not None:
@@ -126,6 +140,28 @@ class GroupMessageOffsetsDetailEntity:
         self._message_current_offset = message_current_offset
 
     @property
+    def topic(self):
+        r"""Gets the topic of this GroupMessageOffsetsDetailEntity.
+
+        topic名称
+
+        :return: The topic of this GroupMessageOffsetsDetailEntity.
+        :rtype: str
+        """
+        return self._topic
+
+    @topic.setter
+    def topic(self, topic):
+        r"""Sets the topic of this GroupMessageOffsetsDetailEntity.
+
+        topic名称
+
+        :param topic: The topic of this GroupMessageOffsetsDetailEntity.
+        :type topic: str
+        """
+        self._topic = topic
+
+    @property
     def message_log_start_offset(self):
         r"""Gets the message_log_start_offset of this GroupMessageOffsetsDetailEntity.
 
@@ -146,6 +182,28 @@ class GroupMessageOffsetsDetailEntity:
         :type message_log_start_offset: int
         """
         self._message_log_start_offset = message_log_start_offset
+
+    @property
+    def lag(self):
+        r"""Gets the lag of this GroupMessageOffsetsDetailEntity.
+
+        剩余可消费消息数，即消息堆积数
+
+        :return: The lag of this GroupMessageOffsetsDetailEntity.
+        :rtype: int
+        """
+        return self._lag
+
+    @lag.setter
+    def lag(self, lag):
+        r"""Sets the lag of this GroupMessageOffsetsDetailEntity.
+
+        剩余可消费消息数，即消息堆积数
+
+        :param lag: The lag of this GroupMessageOffsetsDetailEntity.
+        :type lag: int
+        """
+        self._lag = lag
 
     @property
     def message_log_end_offset(self):

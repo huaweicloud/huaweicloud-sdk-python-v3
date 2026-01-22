@@ -40,9 +40,9 @@ class ShowEntityConfigurationResponse(SdkResponse):
         :type datastore_version: str
         :param datastore_name: 数据库类型。
         :type datastore_name: str
-        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量
         :type created: str
-        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量
         :type updated: str
         :param parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
         :type parameters: list[:class:`huaweicloudsdkdds.v3.EntityConfigurationParametersResult`]
@@ -116,7 +116,7 @@ class ShowEntityConfigurationResponse(SdkResponse):
     def created(self):
         r"""Gets the created of this ShowEntityConfigurationResponse.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量
 
         :return: The created of this ShowEntityConfigurationResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowEntityConfigurationResponse(SdkResponse):
     def created(self, created):
         r"""Sets the created of this ShowEntityConfigurationResponse.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量
 
         :param created: The created of this ShowEntityConfigurationResponse.
         :type created: str
@@ -138,7 +138,7 @@ class ShowEntityConfigurationResponse(SdkResponse):
     def updated(self):
         r"""Gets the updated of this ShowEntityConfigurationResponse.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量
 
         :return: The updated of this ShowEntityConfigurationResponse.
         :rtype: str
@@ -149,7 +149,7 @@ class ShowEntityConfigurationResponse(SdkResponse):
     def updated(self, updated):
         r"""Sets the updated of this ShowEntityConfigurationResponse.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量
 
         :param updated: The updated of this ShowEntityConfigurationResponse.
         :type updated: str

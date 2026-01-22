@@ -29,9 +29,9 @@ class AddressItemId:
 
         The model defined in huaweicloud sdk
 
-        :param id: 地址组成员id
+        :param id: **参数解释**： 地址组成员ID **取值范围**： 不涉及
         :type id: str
-        :param name: 地址组成员名称
+        :param name: **参数解释**： IP地址 **取值范围**： 不涉及
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class AddressItemId:
     def id(self):
         r"""Gets the id of this AddressItemId.
 
-        地址组成员id
+        **参数解释**： 地址组成员ID **取值范围**： 不涉及
 
         :return: The id of this AddressItemId.
         :rtype: str
@@ -61,7 +61,7 @@ class AddressItemId:
     def id(self, id):
         r"""Sets the id of this AddressItemId.
 
-        地址组成员id
+        **参数解释**： 地址组成员ID **取值范围**： 不涉及
 
         :param id: The id of this AddressItemId.
         :type id: str
@@ -72,7 +72,7 @@ class AddressItemId:
     def name(self):
         r"""Gets the name of this AddressItemId.
 
-        地址组成员名称
+        **参数解释**： IP地址 **取值范围**： 不涉及
 
         :return: The name of this AddressItemId.
         :rtype: str
@@ -83,7 +83,7 @@ class AddressItemId:
     def name(self, name):
         r"""Sets the name of this AddressItemId.
 
-        地址组成员名称
+        **参数解释**： IP地址 **取值范围**： 不涉及
 
         :param name: The name of this AddressItemId.
         :type name: str

@@ -19,8 +19,8 @@ class ListMessagesRequest:
         'instance_id': 'str',
         'topic': 'str',
         'queue': 'str',
-        'limit': 'str',
-        'offset': 'str',
+        'limit': 'int',
+        'offset': 'int',
         'key': 'str',
         'start_time': 'str',
         'end_time': 'str',
@@ -45,25 +45,25 @@ class ListMessagesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param queue: 队列。
+        :param queue: **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue: str
-        :param limit: 查询数量。
-        :type limit: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
-        :type offset: str
-        :param key: 消息的key。
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type limit: int
+        :param offset: **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        :type offset: int
+        :param key: **参数解释**： 消息的key。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type key: str
-        :param start_time: 开始时间（不通过msg_id精确查询消息时，此参数必填）。
+        :param start_time: **参数解释**： 开始时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间（不通过msg_id精确查询消息时，此参数必填）。
+        :param end_time: **参数解释**： 结束时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type end_time: str
-        :param msg_id: 消息ID。
+        :param msg_id: **参数解释**： 消息ID。 **约束限制**： 不通过时间范围查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type msg_id: str
         """
         
@@ -103,7 +103,7 @@ class ListMessagesRequest:
     def engine(self):
         r"""Gets the engine of this ListMessagesRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this ListMessagesRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class ListMessagesRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListMessagesRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ListMessagesRequest.
         :type engine: str
@@ -125,7 +125,7 @@ class ListMessagesRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListMessagesRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListMessagesRequest.
         :rtype: str
@@ -136,7 +136,7 @@ class ListMessagesRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListMessagesRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListMessagesRequest.
         :type instance_id: str
@@ -147,7 +147,7 @@ class ListMessagesRequest:
     def topic(self):
         r"""Gets the topic of this ListMessagesRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ListMessagesRequest.
         :rtype: str
@@ -158,7 +158,7 @@ class ListMessagesRequest:
     def topic(self, topic):
         r"""Sets the topic of this ListMessagesRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ListMessagesRequest.
         :type topic: str
@@ -169,7 +169,7 @@ class ListMessagesRequest:
     def queue(self):
         r"""Gets the queue of this ListMessagesRequest.
 
-        队列。
+        **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue of this ListMessagesRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ListMessagesRequest:
     def queue(self, queue):
         r"""Sets the queue of this ListMessagesRequest.
 
-        队列。
+        **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue: The queue of this ListMessagesRequest.
         :type queue: str
@@ -191,10 +191,10 @@ class ListMessagesRequest:
     def limit(self):
         r"""Gets the limit of this ListMessagesRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ListMessagesRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -202,10 +202,10 @@ class ListMessagesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMessagesRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListMessagesRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 
@@ -213,10 +213,10 @@ class ListMessagesRequest:
     def offset(self):
         r"""Gets the offset of this ListMessagesRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :return: The offset of this ListMessagesRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -224,10 +224,10 @@ class ListMessagesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMessagesRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListMessagesRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 
@@ -235,7 +235,7 @@ class ListMessagesRequest:
     def key(self):
         r"""Gets the key of this ListMessagesRequest.
 
-        消息的key。
+        **参数解释**： 消息的key。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The key of this ListMessagesRequest.
         :rtype: str
@@ -246,7 +246,7 @@ class ListMessagesRequest:
     def key(self, key):
         r"""Sets the key of this ListMessagesRequest.
 
-        消息的key。
+        **参数解释**： 消息的key。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param key: The key of this ListMessagesRequest.
         :type key: str
@@ -257,7 +257,7 @@ class ListMessagesRequest:
     def start_time(self):
         r"""Gets the start_time of this ListMessagesRequest.
 
-        开始时间（不通过msg_id精确查询消息时，此参数必填）。
+        **参数解释**： 开始时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The start_time of this ListMessagesRequest.
         :rtype: str
@@ -268,7 +268,7 @@ class ListMessagesRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListMessagesRequest.
 
-        开始时间（不通过msg_id精确查询消息时，此参数必填）。
+        **参数解释**： 开始时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param start_time: The start_time of this ListMessagesRequest.
         :type start_time: str
@@ -279,7 +279,7 @@ class ListMessagesRequest:
     def end_time(self):
         r"""Gets the end_time of this ListMessagesRequest.
 
-        结束时间（不通过msg_id精确查询消息时，此参数必填）。
+        **参数解释**： 结束时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The end_time of this ListMessagesRequest.
         :rtype: str
@@ -290,7 +290,7 @@ class ListMessagesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListMessagesRequest.
 
-        结束时间（不通过msg_id精确查询消息时，此参数必填）。
+        **参数解释**： 结束时间。 **约束限制**： 不通过msg_id精确查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param end_time: The end_time of this ListMessagesRequest.
         :type end_time: str
@@ -301,7 +301,7 @@ class ListMessagesRequest:
     def msg_id(self):
         r"""Gets the msg_id of this ListMessagesRequest.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不通过时间范围查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The msg_id of this ListMessagesRequest.
         :rtype: str
@@ -312,7 +312,7 @@ class ListMessagesRequest:
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this ListMessagesRequest.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不通过时间范围查询消息时，此参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param msg_id: The msg_id of this ListMessagesRequest.
         :type msg_id: str

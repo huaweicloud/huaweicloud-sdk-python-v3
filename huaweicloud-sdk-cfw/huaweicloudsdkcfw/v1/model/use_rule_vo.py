@@ -29,7 +29,7 @@ class UseRuleVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则id
+        :param id: 规则ID
         :type id: str
         :param name: 规则名称
         :type name: str
@@ -50,7 +50,7 @@ class UseRuleVO:
     def id(self):
         r"""Gets the id of this UseRuleVO.
 
-        规则id
+        规则ID
 
         :return: The id of this UseRuleVO.
         :rtype: str
@@ -61,7 +61,7 @@ class UseRuleVO:
     def id(self, id):
         r"""Sets the id of this UseRuleVO.
 
-        规则id
+        规则ID
 
         :param id: The id of this UseRuleVO.
         :type id: str

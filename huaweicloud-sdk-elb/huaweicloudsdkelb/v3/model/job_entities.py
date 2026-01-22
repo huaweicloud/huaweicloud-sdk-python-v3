@@ -31,7 +31,7 @@ class JobEntities:
 
         :param resource_id: **参数解释**：子任务关联的资源ID。  **取值范围**：不涉及
         :type resource_id: str
-        :param resource_type: **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
+        :param resource_type: **参数解释**：子任务关联的资源类型。  **取值范围**： - loadbalancer：弹性负载均衡器。 - listener：监听器。
         :type resource_type: str
         """
         
@@ -72,7 +72,7 @@ class JobEntities:
     def resource_type(self):
         r"""Gets the resource_type of this JobEntities.
 
-        **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
+        **参数解释**：子任务关联的资源类型。  **取值范围**： - loadbalancer：弹性负载均衡器。 - listener：监听器。
 
         :return: The resource_type of this JobEntities.
         :rtype: str
@@ -83,7 +83,7 @@ class JobEntities:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this JobEntities.
 
-        **参数解释**：子任务关联的资源类型。  **取值范围**：不涉及
+        **参数解释**：子任务关联的资源类型。  **取值范围**： - loadbalancer：弹性负载均衡器。 - listener：监听器。
 
         :param resource_type: The resource_type of this JobEntities.
         :type resource_type: str

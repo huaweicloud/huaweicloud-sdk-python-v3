@@ -39,19 +39,19 @@ class DomainSetVo:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 域名组id
+        :param set_id: **参数解释**： 域名组id **取值范围**： 不涉及
         :type set_id: str
-        :param name: 域名组名称
+        :param name: **参数解释**： 域名组名称 **取值范围**： 不涉及
         :type name: str
-        :param description: 域名组描述
+        :param description: **参数解释**： 域名组描述 **取值范围**： 不涉及
         :type description: str
-        :param ref_count: 域名组被规则引用次数
+        :param ref_count: **参数解释**： 域名组被规则引用次数 **取值范围**： 不涉及
         :type ref_count: int
-        :param domain_set_type: 域名组类型，0表示应用域名组，1表示网络域名组
+        :param domain_set_type: **参数解释**： 域名组类型 **取值范围**： - 0：应用域名组 - 1：网络域名组
         :type domain_set_type: int
-        :param config_status: 配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
+        :param config_status: **参数解释**： 配置状态 **取值范围**： - -1：未配置态 - 0：配置失败 - 1：配置成功 - 2：配置中 - 3：正常 - 4：配置异常
         :type config_status: int
-        :param rules: 使用规则id列表
+        :param rules: **参数解释**： 使用规则id列表 **取值范围**： 不涉及
         :type rules: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
         """
         
@@ -85,7 +85,7 @@ class DomainSetVo:
     def set_id(self):
         r"""Gets the set_id of this DomainSetVo.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :return: The set_id of this DomainSetVo.
         :rtype: str
@@ -96,7 +96,7 @@ class DomainSetVo:
     def set_id(self, set_id):
         r"""Sets the set_id of this DomainSetVo.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :param set_id: The set_id of this DomainSetVo.
         :type set_id: str
@@ -107,7 +107,7 @@ class DomainSetVo:
     def name(self):
         r"""Gets the name of this DomainSetVo.
 
-        域名组名称
+        **参数解释**： 域名组名称 **取值范围**： 不涉及
 
         :return: The name of this DomainSetVo.
         :rtype: str
@@ -118,7 +118,7 @@ class DomainSetVo:
     def name(self, name):
         r"""Sets the name of this DomainSetVo.
 
-        域名组名称
+        **参数解释**： 域名组名称 **取值范围**： 不涉及
 
         :param name: The name of this DomainSetVo.
         :type name: str
@@ -129,7 +129,7 @@ class DomainSetVo:
     def description(self):
         r"""Gets the description of this DomainSetVo.
 
-        域名组描述
+        **参数解释**： 域名组描述 **取值范围**： 不涉及
 
         :return: The description of this DomainSetVo.
         :rtype: str
@@ -140,7 +140,7 @@ class DomainSetVo:
     def description(self, description):
         r"""Sets the description of this DomainSetVo.
 
-        域名组描述
+        **参数解释**： 域名组描述 **取值范围**： 不涉及
 
         :param description: The description of this DomainSetVo.
         :type description: str
@@ -151,7 +151,7 @@ class DomainSetVo:
     def ref_count(self):
         r"""Gets the ref_count of this DomainSetVo.
 
-        域名组被规则引用次数
+        **参数解释**： 域名组被规则引用次数 **取值范围**： 不涉及
 
         :return: The ref_count of this DomainSetVo.
         :rtype: int
@@ -162,7 +162,7 @@ class DomainSetVo:
     def ref_count(self, ref_count):
         r"""Sets the ref_count of this DomainSetVo.
 
-        域名组被规则引用次数
+        **参数解释**： 域名组被规则引用次数 **取值范围**： 不涉及
 
         :param ref_count: The ref_count of this DomainSetVo.
         :type ref_count: int
@@ -173,7 +173,7 @@ class DomainSetVo:
     def domain_set_type(self):
         r"""Gets the domain_set_type of this DomainSetVo.
 
-        域名组类型，0表示应用域名组，1表示网络域名组
+        **参数解释**： 域名组类型 **取值范围**： - 0：应用域名组 - 1：网络域名组
 
         :return: The domain_set_type of this DomainSetVo.
         :rtype: int
@@ -184,7 +184,7 @@ class DomainSetVo:
     def domain_set_type(self, domain_set_type):
         r"""Sets the domain_set_type of this DomainSetVo.
 
-        域名组类型，0表示应用域名组，1表示网络域名组
+        **参数解释**： 域名组类型 **取值范围**： - 0：应用域名组 - 1：网络域名组
 
         :param domain_set_type: The domain_set_type of this DomainSetVo.
         :type domain_set_type: int
@@ -195,7 +195,7 @@ class DomainSetVo:
     def config_status(self):
         r"""Gets the config_status of this DomainSetVo.
 
-        配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
+        **参数解释**： 配置状态 **取值范围**： - -1：未配置态 - 0：配置失败 - 1：配置成功 - 2：配置中 - 3：正常 - 4：配置异常
 
         :return: The config_status of this DomainSetVo.
         :rtype: int
@@ -206,7 +206,7 @@ class DomainSetVo:
     def config_status(self, config_status):
         r"""Sets the config_status of this DomainSetVo.
 
-        配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
+        **参数解释**： 配置状态 **取值范围**： - -1：未配置态 - 0：配置失败 - 1：配置成功 - 2：配置中 - 3：正常 - 4：配置异常
 
         :param config_status: The config_status of this DomainSetVo.
         :type config_status: int
@@ -217,7 +217,7 @@ class DomainSetVo:
     def rules(self):
         r"""Gets the rules of this DomainSetVo.
 
-        使用规则id列表
+        **参数解释**： 使用规则id列表 **取值范围**： 不涉及
 
         :return: The rules of this DomainSetVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]
@@ -228,7 +228,7 @@ class DomainSetVo:
     def rules(self, rules):
         r"""Sets the rules of this DomainSetVo.
 
-        使用规则id列表
+        **参数解释**： 使用规则id列表 **取值范围**： 不涉及
 
         :param rules: The rules of this DomainSetVo.
         :type rules: list[:class:`huaweicloudsdkcfw.v1.UseRuleVO`]

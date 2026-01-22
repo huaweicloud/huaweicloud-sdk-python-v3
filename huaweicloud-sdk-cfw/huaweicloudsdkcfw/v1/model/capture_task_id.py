@@ -29,7 +29,7 @@ class CaptureTaskId:
 
         The model defined in huaweicloud sdk
 
-        :param id: 防火墙id
+        :param id: 防火墙ID
         :type id: str
         :param name: 防火墙名称
         :type name: str
@@ -50,7 +50,7 @@ class CaptureTaskId:
     def id(self):
         r"""Gets the id of this CaptureTaskId.
 
-        防火墙id
+        防火墙ID
 
         :return: The id of this CaptureTaskId.
         :rtype: str
@@ -61,7 +61,7 @@ class CaptureTaskId:
     def id(self, id):
         r"""Sets the id of this CaptureTaskId.
 
-        防火墙id
+        防火墙ID
 
         :param id: The id of this CaptureTaskId.
         :type id: str

@@ -31,11 +31,11 @@ class AMQPUser:
 
         The model defined in huaweicloud sdk
 
-        :param access_key: 用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        :param access_key: **参数解释**： 用户名。 **取值范围**： 不涉及。
         :type access_key: str
-        :param secret_key: 密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?。 不能与名称或倒序的名称相同。
+        :param secret_key: **参数解释**： 密钥。 **取值范围**： - 8-32个字符。 - 至少包含以下字符中的3种：    - 大写字母    - 小写字母    - 数字    - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?。 - 不能与名称或倒序的名称相同。
         :type secret_key: str
-        :param vhosts: 需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
+        :param vhosts: **参数解释**： 需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]
         """
         
@@ -54,7 +54,7 @@ class AMQPUser:
     def access_key(self):
         r"""Gets the access_key of this AMQPUser.
 
-        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :return: The access_key of this AMQPUser.
         :rtype: str
@@ -65,7 +65,7 @@ class AMQPUser:
     def access_key(self, access_key):
         r"""Sets the access_key of this AMQPUser.
 
-        用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :param access_key: The access_key of this AMQPUser.
         :type access_key: str
@@ -76,7 +76,7 @@ class AMQPUser:
     def secret_key(self):
         r"""Gets the secret_key of this AMQPUser.
 
-        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?。 不能与名称或倒序的名称相同。
+        **参数解释**： 密钥。 **取值范围**： - 8-32个字符。 - 至少包含以下字符中的3种：    - 大写字母    - 小写字母    - 数字    - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?。 - 不能与名称或倒序的名称相同。
 
         :return: The secret_key of this AMQPUser.
         :rtype: str
@@ -87,7 +87,7 @@ class AMQPUser:
     def secret_key(self, secret_key):
         r"""Sets the secret_key of this AMQPUser.
 
-        密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?。 不能与名称或倒序的名称相同。
+        **参数解释**： 密钥。 **取值范围**： - 8-32个字符。 - 至少包含以下字符中的3种：    - 大写字母    - 小写字母    - 数字    - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?。 - 不能与名称或倒序的名称相同。
 
         :param secret_key: The secret_key of this AMQPUser.
         :type secret_key: str
@@ -98,7 +98,7 @@ class AMQPUser:
     def vhosts(self):
         r"""Gets the vhosts of this AMQPUser.
 
-        需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
+        **参数解释**： 需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
 
         :return: The vhosts of this AMQPUser.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]
@@ -109,7 +109,7 @@ class AMQPUser:
     def vhosts(self, vhosts):
         r"""Sets the vhosts of this AMQPUser.
 
-        需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
+        **参数解释**： 需要配置权限的Vhost，一个用户可以配置多个Vhost下的资源权限。
 
         :param vhosts: The vhosts of this AMQPUser.
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUserPerm`]

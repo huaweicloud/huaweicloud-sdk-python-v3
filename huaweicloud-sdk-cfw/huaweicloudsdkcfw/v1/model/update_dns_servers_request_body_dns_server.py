@@ -31,11 +31,11 @@ class UpdateDnsServersRequestBodyDnsServer:
 
         The model defined in huaweicloud sdk
 
-        :param server_ip: DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
+        :param server_ip: **参数解释**： DNS服务器IP，可通过[查询DNS服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type server_ip: str
-        :param is_customized: 是否是用户自定义的dns服务器，0否 1是
+        :param is_customized: **参数解释**： 是否是用户自定义的dns服务器 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
         :type is_customized: int
-        :param is_applied: 是否应用，0否 1是
+        :param is_applied: **参数解释**： 是否应用 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
         :type is_applied: int
         """
         
@@ -54,7 +54,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def server_ip(self):
         r"""Gets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
-        DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
+        **参数解释**： DNS服务器IP，可通过[查询DNS服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The server_ip of this UpdateDnsServersRequestBodyDnsServer.
         :rtype: str
@@ -65,7 +65,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def server_ip(self, server_ip):
         r"""Sets the server_ip of this UpdateDnsServersRequestBodyDnsServer.
 
-        DNS服务器IP，可通过[查询dns服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。
+        **参数解释**： DNS服务器IP，可通过[查询DNS服务器列表接口](ListDnsServers.xml)查询获得，通过返回值中的data.server_ip（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param server_ip: The server_ip of this UpdateDnsServersRequestBodyDnsServer.
         :type server_ip: str
@@ -76,7 +76,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def is_customized(self):
         r"""Gets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
 
-        是否是用户自定义的dns服务器，0否 1是
+        **参数解释**： 是否是用户自定义的dns服务器 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
 
         :return: The is_customized of this UpdateDnsServersRequestBodyDnsServer.
         :rtype: int
@@ -87,7 +87,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def is_customized(self, is_customized):
         r"""Sets the is_customized of this UpdateDnsServersRequestBodyDnsServer.
 
-        是否是用户自定义的dns服务器，0否 1是
+        **参数解释**： 是否是用户自定义的dns服务器 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
 
         :param is_customized: The is_customized of this UpdateDnsServersRequestBodyDnsServer.
         :type is_customized: int
@@ -98,7 +98,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def is_applied(self):
         r"""Gets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
 
-        是否应用，0否 1是
+        **参数解释**： 是否应用 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
 
         :return: The is_applied of this UpdateDnsServersRequestBodyDnsServer.
         :rtype: int
@@ -109,7 +109,7 @@ class UpdateDnsServersRequestBodyDnsServer:
     def is_applied(self, is_applied):
         r"""Sets the is_applied of this UpdateDnsServersRequestBodyDnsServer.
 
-        是否应用，0否 1是
+        **参数解释**： 是否应用 **约束限制**： 不涉及 **取值范围**： - 0：否 - 1：是 **默认取值**： 不涉及
 
         :param is_applied: The is_applied of this UpdateDnsServersRequestBodyDnsServer.
         :type is_applied: int

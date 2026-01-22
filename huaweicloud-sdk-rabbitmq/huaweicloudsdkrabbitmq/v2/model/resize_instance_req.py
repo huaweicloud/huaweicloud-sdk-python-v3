@@ -31,7 +31,7 @@ class ResizeInstanceReq:
 
         :param new_spec_code: 规格变更后的规格ID。
         :type new_spec_code: str
-        :param new_storage_space: 规格变更后的消息存储空间，单位：GB。
+        :param new_storage_space: 规格变更后的消息存储空间，单位：GB。注意：磁盘容量仅支持设置为100的整数倍。
         :type new_storage_space: int
         """
         
@@ -70,7 +70,7 @@ class ResizeInstanceReq:
     def new_storage_space(self):
         r"""Gets the new_storage_space of this ResizeInstanceReq.
 
-        规格变更后的消息存储空间，单位：GB。
+        规格变更后的消息存储空间，单位：GB。注意：磁盘容量仅支持设置为100的整数倍。
 
         :return: The new_storage_space of this ResizeInstanceReq.
         :rtype: int
@@ -81,7 +81,7 @@ class ResizeInstanceReq:
     def new_storage_space(self, new_storage_space):
         r"""Sets the new_storage_space of this ResizeInstanceReq.
 
-        规格变更后的消息存储空间，单位：GB。
+        规格变更后的消息存储空间，单位：GB。注意：磁盘容量仅支持设置为100的整数倍。
 
         :param new_storage_space: The new_storage_space of this ResizeInstanceReq.
         :type new_storage_space: int

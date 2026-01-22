@@ -27,7 +27,7 @@ class BatchDeleteAclRulesResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param response_datas: 批量删除规则返回data
+        :param response_datas: **参数解释**： 批量删除规则返回 **取值范围**： 不涉及
         :type response_datas: list[:class:`huaweicloudsdkcfw.v1.BatchDeleteRuleInfo`]
         """
         
@@ -43,7 +43,7 @@ class BatchDeleteAclRulesResponseData:
     def response_datas(self):
         r"""Gets the response_datas of this BatchDeleteAclRulesResponseData.
 
-        批量删除规则返回data
+        **参数解释**： 批量删除规则返回 **取值范围**： 不涉及
 
         :return: The response_datas of this BatchDeleteAclRulesResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.BatchDeleteRuleInfo`]
@@ -54,7 +54,7 @@ class BatchDeleteAclRulesResponseData:
     def response_datas(self, response_datas):
         r"""Sets the response_datas of this BatchDeleteAclRulesResponseData.
 
-        批量删除规则返回data
+        **参数解释**： 批量删除规则返回 **取值范围**： 不涉及
 
         :param response_datas: The response_datas of this BatchDeleteAclRulesResponseData.
         :type response_datas: list[:class:`huaweicloudsdkcfw.v1.BatchDeleteRuleInfo`]

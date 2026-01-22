@@ -37,17 +37,17 @@ class ListDomainResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
         :type offset: int
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID **取值范围**： 不涉及
         :type project_id: str
-        :param records: 域名信息列表
+        :param records: **参数解释**： 域名信息列表 **取值范围**： 不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainInfo`]
-        :param set_id: 域名组id
+        :param set_id: **参数解释**： 域名组id **取值范围**： 不涉及
         :type set_id: str
-        :param total: 域名总数
+        :param total: **参数解释**： 域名总数 **取值范围**： 不涉及
         :type total: int
         """
         
@@ -78,7 +78,7 @@ class ListDomainResponseData:
     def limit(self):
         r"""Gets the limit of this ListDomainResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this ListDomainResponseData.
         :rtype: int
@@ -89,7 +89,7 @@ class ListDomainResponseData:
     def limit(self, limit):
         r"""Sets the limit of this ListDomainResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this ListDomainResponseData.
         :type limit: int
@@ -100,7 +100,7 @@ class ListDomainResponseData:
     def offset(self):
         r"""Gets the offset of this ListDomainResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :return: The offset of this ListDomainResponseData.
         :rtype: int
@@ -111,7 +111,7 @@ class ListDomainResponseData:
     def offset(self, offset):
         r"""Sets the offset of this ListDomainResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :param offset: The offset of this ListDomainResponseData.
         :type offset: int
@@ -122,7 +122,7 @@ class ListDomainResponseData:
     def project_id(self):
         r"""Gets the project_id of this ListDomainResponseData.
 
-        项目ID
+        **参数解释**： 项目ID **取值范围**： 不涉及
 
         :return: The project_id of this ListDomainResponseData.
         :rtype: str
@@ -133,7 +133,7 @@ class ListDomainResponseData:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListDomainResponseData.
 
-        项目ID
+        **参数解释**： 项目ID **取值范围**： 不涉及
 
         :param project_id: The project_id of this ListDomainResponseData.
         :type project_id: str
@@ -144,7 +144,7 @@ class ListDomainResponseData:
     def records(self):
         r"""Gets the records of this ListDomainResponseData.
 
-        域名信息列表
+        **参数解释**： 域名信息列表 **取值范围**： 不涉及
 
         :return: The records of this ListDomainResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.DomainInfo`]
@@ -155,7 +155,7 @@ class ListDomainResponseData:
     def records(self, records):
         r"""Sets the records of this ListDomainResponseData.
 
-        域名信息列表
+        **参数解释**： 域名信息列表 **取值范围**： 不涉及
 
         :param records: The records of this ListDomainResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainInfo`]
@@ -166,7 +166,7 @@ class ListDomainResponseData:
     def set_id(self):
         r"""Gets the set_id of this ListDomainResponseData.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :return: The set_id of this ListDomainResponseData.
         :rtype: str
@@ -177,7 +177,7 @@ class ListDomainResponseData:
     def set_id(self, set_id):
         r"""Sets the set_id of this ListDomainResponseData.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :param set_id: The set_id of this ListDomainResponseData.
         :type set_id: str
@@ -188,7 +188,7 @@ class ListDomainResponseData:
     def total(self):
         r"""Gets the total of this ListDomainResponseData.
 
-        域名总数
+        **参数解释**： 域名总数 **取值范围**： 不涉及
 
         :return: The total of this ListDomainResponseData.
         :rtype: int
@@ -199,7 +199,7 @@ class ListDomainResponseData:
     def total(self, total):
         r"""Sets the total of this ListDomainResponseData.
 
-        域名总数
+        **参数解释**： 域名总数 **取值范围**： 不涉及
 
         :param total: The total of this ListDomainResponseData.
         :type total: int

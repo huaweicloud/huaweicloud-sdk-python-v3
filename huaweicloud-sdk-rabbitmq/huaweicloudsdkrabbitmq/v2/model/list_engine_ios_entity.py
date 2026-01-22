@@ -33,13 +33,13 @@ class ListEngineIosEntity:
 
         The model defined in huaweicloud sdk
 
-        :param io_spec: 磁盘IO编码。
+        :param io_spec: **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
         :type io_spec: str
-        :param type: 磁盘类型。
+        :param type: **参数解释**： 服务类型。 **取值范围**： evs。
         :type type: str
-        :param available_zones: 可用区。
+        :param available_zones: **参数解释**： 可用区。
         :type available_zones: list[str]
-        :param unavailable_zones: 不可用区。
+        :param unavailable_zones: **参数解释**： 不可用区。
         :type unavailable_zones: list[str]
         """
         
@@ -64,7 +64,7 @@ class ListEngineIosEntity:
     def io_spec(self):
         r"""Gets the io_spec of this ListEngineIosEntity.
 
-        磁盘IO编码。
+        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
 
         :return: The io_spec of this ListEngineIosEntity.
         :rtype: str
@@ -75,7 +75,7 @@ class ListEngineIosEntity:
     def io_spec(self, io_spec):
         r"""Sets the io_spec of this ListEngineIosEntity.
 
-        磁盘IO编码。
+        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
 
         :param io_spec: The io_spec of this ListEngineIosEntity.
         :type io_spec: str
@@ -86,7 +86,7 @@ class ListEngineIosEntity:
     def type(self):
         r"""Gets the type of this ListEngineIosEntity.
 
-        磁盘类型。
+        **参数解释**： 服务类型。 **取值范围**： evs。
 
         :return: The type of this ListEngineIosEntity.
         :rtype: str
@@ -97,7 +97,7 @@ class ListEngineIosEntity:
     def type(self, type):
         r"""Sets the type of this ListEngineIosEntity.
 
-        磁盘类型。
+        **参数解释**： 服务类型。 **取值范围**： evs。
 
         :param type: The type of this ListEngineIosEntity.
         :type type: str
@@ -108,7 +108,7 @@ class ListEngineIosEntity:
     def available_zones(self):
         r"""Gets the available_zones of this ListEngineIosEntity.
 
-        可用区。
+        **参数解释**： 可用区。
 
         :return: The available_zones of this ListEngineIosEntity.
         :rtype: list[str]
@@ -119,7 +119,7 @@ class ListEngineIosEntity:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListEngineIosEntity.
 
-        可用区。
+        **参数解释**： 可用区。
 
         :param available_zones: The available_zones of this ListEngineIosEntity.
         :type available_zones: list[str]
@@ -130,7 +130,7 @@ class ListEngineIosEntity:
     def unavailable_zones(self):
         r"""Gets the unavailable_zones of this ListEngineIosEntity.
 
-        不可用区。
+        **参数解释**： 不可用区。
 
         :return: The unavailable_zones of this ListEngineIosEntity.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class ListEngineIosEntity:
     def unavailable_zones(self, unavailable_zones):
         r"""Sets the unavailable_zones of this ListEngineIosEntity.
 
-        不可用区。
+        **参数解释**： 不可用区。
 
         :param unavailable_zones: The unavailable_zones of this ListEngineIosEntity.
         :type unavailable_zones: list[str]

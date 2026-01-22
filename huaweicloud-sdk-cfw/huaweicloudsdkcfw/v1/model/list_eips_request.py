@@ -51,7 +51,7 @@ class ListEipsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
         :type object_id: str
         :param key_word: 查询防护EIP列表关键字，可选用弹性公网ID和弹性公网IP
         :type key_word: str
@@ -65,13 +65,13 @@ class ListEipsRequest:
         :type offset: int
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param device_key: 设备关键字，是eip绑定的资产的名称或id
+        :param device_key: 设备关键字，是eip绑定的资产的名称或id，可通过EIP服务的查询弹性公网IP列表接口获取，通过返回值中的publicips.id（.表示各对象之间层级的区分）获得
         :type device_key: str
         :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param fw_key_word: 防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
+        :param fw_key_word: 防火墙关键字，可使用防火墙ID或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
         :type fw_key_word: str
         :param eps_id: 弹性公网ip的企业项目id，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，租户未开启企业项目时为0
         :type eps_id: str
@@ -124,7 +124,7 @@ class ListEipsRequest:
     def object_id(self):
         r"""Gets the object_id of this ListEipsRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :return: The object_id of this ListEipsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class ListEipsRequest:
     def object_id(self, object_id):
         r"""Sets the object_id of this ListEipsRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
         :param object_id: The object_id of this ListEipsRequest.
         :type object_id: str
@@ -278,7 +278,7 @@ class ListEipsRequest:
     def device_key(self):
         r"""Gets the device_key of this ListEipsRequest.
 
-        设备关键字，是eip绑定的资产的名称或id
+        设备关键字，是eip绑定的资产的名称或id，可通过EIP服务的查询弹性公网IP列表接口获取，通过返回值中的publicips.id（.表示各对象之间层级的区分）获得
 
         :return: The device_key of this ListEipsRequest.
         :rtype: str
@@ -289,7 +289,7 @@ class ListEipsRequest:
     def device_key(self, device_key):
         r"""Sets the device_key of this ListEipsRequest.
 
-        设备关键字，是eip绑定的资产的名称或id
+        设备关键字，是eip绑定的资产的名称或id，可通过EIP服务的查询弹性公网IP列表接口获取，通过返回值中的publicips.id（.表示各对象之间层级的区分）获得
 
         :param device_key: The device_key of this ListEipsRequest.
         :type device_key: str
@@ -322,7 +322,7 @@ class ListEipsRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListEipsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListEipsRequest.
         :rtype: str
@@ -333,7 +333,7 @@ class ListEipsRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListEipsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListEipsRequest.
         :type fw_instance_id: str
@@ -344,7 +344,7 @@ class ListEipsRequest:
     def fw_key_word(self):
         r"""Gets the fw_key_word of this ListEipsRequest.
 
-        防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
+        防火墙关键字，可使用防火墙ID或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
         :return: The fw_key_word of this ListEipsRequest.
         :rtype: str
@@ -355,7 +355,7 @@ class ListEipsRequest:
     def fw_key_word(self, fw_key_word):
         r"""Sets the fw_key_word of this ListEipsRequest.
 
-        防火墙关键字，可使用防火墙id或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
+        防火墙关键字，可使用防火墙ID或名称查询，可通过[防火墙ID获取方式](cfw_02_0028.xml)
 
         :param fw_key_word: The fw_key_word of this ListEipsRequest.
         :type fw_key_word: str

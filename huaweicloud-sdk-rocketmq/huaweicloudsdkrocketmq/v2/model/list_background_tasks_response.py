@@ -30,9 +30,9 @@ class ListBackgroundTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_count: **参数解释**： 任务数量。 **取值范围**： 不涉及。
+        :param task_count: **参数解释**： 任务数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type task_count: str
-        :param tasks: **参数解释**： 任务列表。
+        :param tasks: **参数解释**： 任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tasks: list[:class:`huaweicloudsdkrocketmq.v2.ListBackgroundTasksRespTasks`]
         """
         
@@ -51,7 +51,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def task_count(self):
         r"""Gets the task_count of this ListBackgroundTasksResponse.
 
-        **参数解释**： 任务数量。 **取值范围**： 不涉及。
+        **参数解释**： 任务数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The task_count of this ListBackgroundTasksResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def task_count(self, task_count):
         r"""Sets the task_count of this ListBackgroundTasksResponse.
 
-        **参数解释**： 任务数量。 **取值范围**： 不涉及。
+        **参数解释**： 任务数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param task_count: The task_count of this ListBackgroundTasksResponse.
         :type task_count: str
@@ -73,7 +73,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def tasks(self):
         r"""Gets the tasks of this ListBackgroundTasksResponse.
 
-        **参数解释**： 任务列表。
+        **参数解释**： 任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tasks of this ListBackgroundTasksResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ListBackgroundTasksRespTasks`]
@@ -84,7 +84,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def tasks(self, tasks):
         r"""Sets the tasks of this ListBackgroundTasksResponse.
 
-        **参数解释**： 任务列表。
+        **参数解释**： 任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tasks: The tasks of this ListBackgroundTasksResponse.
         :type tasks: list[:class:`huaweicloudsdkrocketmq.v2.ListBackgroundTasksRespTasks`]

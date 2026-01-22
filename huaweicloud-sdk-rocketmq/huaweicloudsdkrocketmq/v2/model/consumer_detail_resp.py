@@ -33,13 +33,13 @@ class ConsumerDetailResp:
 
         The model defined in huaweicloud sdk
 
-        :param lag: **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
+        :param lag: **参数解释**： 消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type lag: int
-        :param max_offset: **参数解释**： 消息总数。 **取值范围**： 不涉及。
+        :param max_offset: **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max_offset: int
-        :param consumer_offset: **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        :param consumer_offset: **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type consumer_offset: int
-        :param brokers: **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        :param brokers: **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
         """
         
@@ -64,7 +64,7 @@ class ConsumerDetailResp:
     def lag(self):
         r"""Gets the lag of this ConsumerDetailResp.
 
-        **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
+        **参数解释**： 消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The lag of this ConsumerDetailResp.
         :rtype: int
@@ -75,7 +75,7 @@ class ConsumerDetailResp:
     def lag(self, lag):
         r"""Sets the lag of this ConsumerDetailResp.
 
-        **参数解释**： 消费堆积总数。 **取值范围**： 不涉及。
+        **参数解释**： 消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param lag: The lag of this ConsumerDetailResp.
         :type lag: int
@@ -86,7 +86,7 @@ class ConsumerDetailResp:
     def max_offset(self):
         r"""Gets the max_offset of this ConsumerDetailResp.
 
-        **参数解释**： 消息总数。 **取值范围**： 不涉及。
+        **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max_offset of this ConsumerDetailResp.
         :rtype: int
@@ -97,7 +97,7 @@ class ConsumerDetailResp:
     def max_offset(self, max_offset):
         r"""Sets the max_offset of this ConsumerDetailResp.
 
-        **参数解释**： 消息总数。 **取值范围**： 不涉及。
+        **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max_offset: The max_offset of this ConsumerDetailResp.
         :type max_offset: int
@@ -108,7 +108,7 @@ class ConsumerDetailResp:
     def consumer_offset(self):
         r"""Gets the consumer_offset of this ConsumerDetailResp.
 
-        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The consumer_offset of this ConsumerDetailResp.
         :rtype: int
@@ -119,7 +119,7 @@ class ConsumerDetailResp:
     def consumer_offset(self, consumer_offset):
         r"""Sets the consumer_offset of this ConsumerDetailResp.
 
-        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param consumer_offset: The consumer_offset of this ConsumerDetailResp.
         :type consumer_offset: int
@@ -130,7 +130,7 @@ class ConsumerDetailResp:
     def brokers(self):
         r"""Gets the brokers of this ConsumerDetailResp.
 
-        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this ConsumerDetailResp.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]
@@ -141,7 +141,7 @@ class ConsumerDetailResp:
     def brokers(self, brokers):
         r"""Sets the brokers of this ConsumerDetailResp.
 
-        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。
+        **参数解释**： Topic关联代理（当查询Topic消费“详情”才显示此参数）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this ConsumerDetailResp.
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.Brokers`]

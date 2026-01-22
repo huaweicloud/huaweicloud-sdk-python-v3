@@ -18,19 +18,17 @@ class SetStatsConfigBody:
         'config_type': 'int',
         'resource_type': 'str',
         'resource_name': 'str',
-        'config_info': 'object',
-        'expired_time': 'int'
+        'config_info': 'object'
     }
 
     attribute_map = {
         'config_type': 'config_type',
         'resource_type': 'resource_type',
         'resource_name': 'resource_name',
-        'config_info': 'config_info',
-        'expired_time': 'expired_time'
+        'config_info': 'config_info'
     }
 
-    def __init__(self, config_type=None, resource_type=None, resource_name=None, config_info=None, expired_time=None):
+    def __init__(self, config_type=None, resource_type=None, resource_name=None, config_info=None):
         r"""SetStatsConfigBody
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class SetStatsConfigBody:
         :type resource_name: str
         :param config_info: 配置信息.top指标仅支持ua、refer、url、origin url
         :type config_info: :class:`huaweicloudsdkcdn.v2.object`
-        :param expired_time: 统计配置失效时间，秒时间戳。不能超过当前时间点往后一年
-        :type expired_time: int
         """
         
         
@@ -53,7 +49,6 @@ class SetStatsConfigBody:
         self._resource_type = None
         self._resource_name = None
         self._config_info = None
-        self._expired_time = None
         self.discriminator = None
 
         if config_type is not None:
@@ -61,8 +56,6 @@ class SetStatsConfigBody:
         self.resource_type = resource_type
         self.resource_name = resource_name
         self.config_info = config_info
-        if expired_time is not None:
-            self.expired_time = expired_time
 
     @property
     def config_type(self):
@@ -151,28 +144,6 @@ class SetStatsConfigBody:
         :type config_info: :class:`huaweicloudsdkcdn.v2.object`
         """
         self._config_info = config_info
-
-    @property
-    def expired_time(self):
-        r"""Gets the expired_time of this SetStatsConfigBody.
-
-        统计配置失效时间，秒时间戳。不能超过当前时间点往后一年
-
-        :return: The expired_time of this SetStatsConfigBody.
-        :rtype: int
-        """
-        return self._expired_time
-
-    @expired_time.setter
-    def expired_time(self, expired_time):
-        r"""Sets the expired_time of this SetStatsConfigBody.
-
-        统计配置失效时间，秒时间戳。不能超过当前时间点往后一年
-
-        :param expired_time: The expired_time of this SetStatsConfigBody.
-        :type expired_time: int
-        """
-        self._expired_time = expired_time
 
     def to_dict(self):
         result = {}

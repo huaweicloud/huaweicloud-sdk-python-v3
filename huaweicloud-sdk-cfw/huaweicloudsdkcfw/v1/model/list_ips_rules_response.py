@@ -16,7 +16,7 @@ class ListIpsRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'AdvancedIpsRuleListVo'
+        'data': 'IpsRuleListVO'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ListIpsRulesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleListVo`
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsRuleListVO`
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class ListIpsRulesResponse(SdkResponse):
         r"""Gets the data of this ListIpsRulesResponse.
 
         :return: The data of this ListIpsRulesResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleListVo`
+        :rtype: :class:`huaweicloudsdkcfw.v1.IpsRuleListVO`
         """
         return self._data
 
@@ -54,7 +54,7 @@ class ListIpsRulesResponse(SdkResponse):
         r"""Sets the data of this ListIpsRulesResponse.
 
         :param data: The data of this ListIpsRulesResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleListVo`
+        :type data: :class:`huaweicloudsdkcfw.v1.IpsRuleListVO`
         """
         self._data = data
 

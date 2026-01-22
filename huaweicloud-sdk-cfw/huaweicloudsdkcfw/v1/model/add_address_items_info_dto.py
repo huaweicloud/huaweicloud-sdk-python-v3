@@ -41,8 +41,7 @@ class AddAddressItemsInfoDto:
         self._address_items = None
         self.discriminator = None
 
-        if set_id is not None:
-            self.set_id = set_id
+        self.set_id = set_id
         if address_items is not None:
             self.address_items = address_items
 

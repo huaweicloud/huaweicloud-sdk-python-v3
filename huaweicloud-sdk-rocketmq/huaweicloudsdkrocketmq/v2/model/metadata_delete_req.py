@@ -27,7 +27,7 @@ class MetadataDeleteReq:
 
         The model defined in huaweicloud sdk
 
-        :param task_ids: 需要删除的任务列表。
+        :param task_ids: **参数解释**： 需要删除的任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。
         :type task_ids: list[str]
         """
         
@@ -42,7 +42,7 @@ class MetadataDeleteReq:
     def task_ids(self):
         r"""Gets the task_ids of this MetadataDeleteReq.
 
-        需要删除的任务列表。
+        **参数解释**： 需要删除的任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :return: The task_ids of this MetadataDeleteReq.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class MetadataDeleteReq:
     def task_ids(self, task_ids):
         r"""Sets the task_ids of this MetadataDeleteReq.
 
-        需要删除的任务列表。
+        **参数解释**： 需要删除的任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :param task_ids: The task_ids of this MetadataDeleteReq.
         :type task_ids: list[str]

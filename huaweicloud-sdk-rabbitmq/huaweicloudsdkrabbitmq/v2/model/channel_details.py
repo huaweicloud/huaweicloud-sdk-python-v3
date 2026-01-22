@@ -37,17 +37,17 @@ class ChannelDetails:
 
         The model defined in huaweicloud sdk
 
-        :param name: channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。
+        :param name: **参数解释**： channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。 **取值范围**： 不涉及。
         :type name: str
-        :param number: channel数量
+        :param number: **参数解释**： channel数量。 **取值范围**： 不涉及。
         :type number: int
-        :param user: 消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。
+        :param user: **参数解释**： 消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。 **取值范围**： 不涉及。
         :type user: str
-        :param connection_name: connection信息，包括客户端IP:Port到服务端IP:Port。
+        :param connection_name: **参数解释**： connection信息，包括客户端IP:Port到服务端IP:Port。 **取值范围**： 不涉及。
         :type connection_name: str
-        :param peer_host: 连接的消费者IP
+        :param peer_host: **参数解释**： 连接的消费者IP。 **取值范围**： 不涉及。
         :type peer_host: str
-        :param peer_port: 连接的消费者进程端口号
+        :param peer_port: **参数解释**： 连接的消费者进程端口号。 **取值范围**： 不涉及。
         :type peer_port: int
         """
         
@@ -78,7 +78,7 @@ class ChannelDetails:
     def name(self):
         r"""Gets the name of this ChannelDetails.
 
-        channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。
+        **参数解释**： channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。 **取值范围**： 不涉及。
 
         :return: The name of this ChannelDetails.
         :rtype: str
@@ -89,7 +89,7 @@ class ChannelDetails:
     def name(self, name):
         r"""Sets the name of this ChannelDetails.
 
-        channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。
+        **参数解释**： channel信息，包括客户端IP:Port到服务端IP:Port(channel_id)。 **取值范围**： 不涉及。
 
         :param name: The name of this ChannelDetails.
         :type name: str
@@ -100,7 +100,7 @@ class ChannelDetails:
     def number(self):
         r"""Gets the number of this ChannelDetails.
 
-        channel数量
+        **参数解释**： channel数量。 **取值范围**： 不涉及。
 
         :return: The number of this ChannelDetails.
         :rtype: int
@@ -111,7 +111,7 @@ class ChannelDetails:
     def number(self, number):
         r"""Sets the number of this ChannelDetails.
 
-        channel数量
+        **参数解释**： channel数量。 **取值范围**： 不涉及。
 
         :param number: The number of this ChannelDetails.
         :type number: int
@@ -122,7 +122,7 @@ class ChannelDetails:
     def user(self):
         r"""Gets the user of this ChannelDetails.
 
-        消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。
+        **参数解释**： 消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。 **取值范围**： 不涉及。
 
         :return: The user of this ChannelDetails.
         :rtype: str
@@ -133,7 +133,7 @@ class ChannelDetails:
     def user(self, user):
         r"""Sets the user of this ChannelDetails.
 
-        消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。
+        **参数解释**： 消费者用户名，在开启ACL访问控制后返回真实用户名，未开启ACL时返回null。 **取值范围**： 不涉及。
 
         :param user: The user of this ChannelDetails.
         :type user: str
@@ -144,7 +144,7 @@ class ChannelDetails:
     def connection_name(self):
         r"""Gets the connection_name of this ChannelDetails.
 
-        connection信息，包括客户端IP:Port到服务端IP:Port。
+        **参数解释**： connection信息，包括客户端IP:Port到服务端IP:Port。 **取值范围**： 不涉及。
 
         :return: The connection_name of this ChannelDetails.
         :rtype: str
@@ -155,7 +155,7 @@ class ChannelDetails:
     def connection_name(self, connection_name):
         r"""Sets the connection_name of this ChannelDetails.
 
-        connection信息，包括客户端IP:Port到服务端IP:Port。
+        **参数解释**： connection信息，包括客户端IP:Port到服务端IP:Port。 **取值范围**： 不涉及。
 
         :param connection_name: The connection_name of this ChannelDetails.
         :type connection_name: str
@@ -166,7 +166,7 @@ class ChannelDetails:
     def peer_host(self):
         r"""Gets the peer_host of this ChannelDetails.
 
-        连接的消费者IP
+        **参数解释**： 连接的消费者IP。 **取值范围**： 不涉及。
 
         :return: The peer_host of this ChannelDetails.
         :rtype: str
@@ -177,7 +177,7 @@ class ChannelDetails:
     def peer_host(self, peer_host):
         r"""Sets the peer_host of this ChannelDetails.
 
-        连接的消费者IP
+        **参数解释**： 连接的消费者IP。 **取值范围**： 不涉及。
 
         :param peer_host: The peer_host of this ChannelDetails.
         :type peer_host: str
@@ -188,7 +188,7 @@ class ChannelDetails:
     def peer_port(self):
         r"""Gets the peer_port of this ChannelDetails.
 
-        连接的消费者进程端口号
+        **参数解释**： 连接的消费者进程端口号。 **取值范围**： 不涉及。
 
         :return: The peer_port of this ChannelDetails.
         :rtype: int
@@ -199,7 +199,7 @@ class ChannelDetails:
     def peer_port(self, peer_port):
         r"""Sets the peer_port of this ChannelDetails.
 
-        连接的消费者进程端口号
+        **参数解释**： 连接的消费者进程端口号。 **取值范围**： 不涉及。
 
         :param peer_port: The peer_port of this ChannelDetails.
         :type peer_port: int

@@ -34,7 +34,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
         :param name: Topic名称。
         :type name: str
-        :param topic_type: Topic类型。
+        :param topic_type: **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
         :type topic_type: int
         :param policies: 权限列表。
         :type policies: list[:class:`huaweicloudsdkkafka.v2.PolicyEntity`]
@@ -80,7 +80,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
     def topic_type(self):
         r"""Gets the topic_type of this ShowTopicAccessPolicyResponse.
 
-        Topic类型。
+        **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :return: The topic_type of this ShowTopicAccessPolicyResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
     def topic_type(self, topic_type):
         r"""Sets the topic_type of this ShowTopicAccessPolicyResponse.
 
-        Topic类型。
+        **参数解释**： Topic类型。 **取值范围**： - 0：普通Topic。 - 1：系统(内部)Topic。
 
         :param topic_type: The topic_type of this ShowTopicAccessPolicyResponse.
         :type topic_type: int

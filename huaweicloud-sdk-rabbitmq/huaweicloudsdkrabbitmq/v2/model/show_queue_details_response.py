@@ -46,25 +46,25 @@ class ShowQueueDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param vhost: Queue所属Vhost名称
+        :param vhost: **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
         :type vhost: str
-        :param name: Queue名称
+        :param name: **参数解释**： Queue名称。 **取值范围**： 不涉及。
         :type name: str
-        :param durable: 是否持久化
+        :param durable: **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
         :type durable: bool
-        :param auto_delete: 是否自动删除
+        :param auto_delete: **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
         :type auto_delete: bool
-        :param messages: 待消费消息数
+        :param messages: **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
         :type messages: int
-        :param consumers: 连接的消费者数
+        :param consumers: **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
         :type consumers: int
-        :param policy: 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        :param policy: **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
         :type policy: str
         :param arguments: 
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
-        :param consumer_details: 订阅该Queue的消费者信息。
+        :param consumer_details: **参数解释**： 订阅该Queue的消费者信息。
         :type consumer_details: list[:class:`huaweicloudsdkrabbitmq.v2.ConsumerDetails`]
-        :param queue_bindings: 以此Queue为目标的绑定信息列表。
+        :param queue_bindings: **参数解释**： 以此Queue为目标的绑定信息列表。
         :type queue_bindings: list[:class:`huaweicloudsdkrabbitmq.v2.BindingsDetails`]
         """
         
@@ -107,7 +107,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def vhost(self):
         r"""Gets the vhost of this ShowQueueDetailsResponse.
 
-        Queue所属Vhost名称
+        **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
 
         :return: The vhost of this ShowQueueDetailsResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def vhost(self, vhost):
         r"""Sets the vhost of this ShowQueueDetailsResponse.
 
-        Queue所属Vhost名称
+        **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
 
         :param vhost: The vhost of this ShowQueueDetailsResponse.
         :type vhost: str
@@ -129,7 +129,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowQueueDetailsResponse.
 
-        Queue名称
+        **参数解释**： Queue名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowQueueDetailsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowQueueDetailsResponse.
 
-        Queue名称
+        **参数解释**： Queue名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowQueueDetailsResponse.
         :type name: str
@@ -151,7 +151,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def durable(self):
         r"""Gets the durable of this ShowQueueDetailsResponse.
 
-        是否持久化
+        **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
 
         :return: The durable of this ShowQueueDetailsResponse.
         :rtype: bool
@@ -162,7 +162,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def durable(self, durable):
         r"""Sets the durable of this ShowQueueDetailsResponse.
 
-        是否持久化
+        **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
 
         :param durable: The durable of this ShowQueueDetailsResponse.
         :type durable: bool
@@ -173,7 +173,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def auto_delete(self):
         r"""Gets the auto_delete of this ShowQueueDetailsResponse.
 
-        是否自动删除
+        **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
 
         :return: The auto_delete of this ShowQueueDetailsResponse.
         :rtype: bool
@@ -184,7 +184,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def auto_delete(self, auto_delete):
         r"""Sets the auto_delete of this ShowQueueDetailsResponse.
 
-        是否自动删除
+        **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
 
         :param auto_delete: The auto_delete of this ShowQueueDetailsResponse.
         :type auto_delete: bool
@@ -195,7 +195,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def messages(self):
         r"""Gets the messages of this ShowQueueDetailsResponse.
 
-        待消费消息数
+        **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
 
         :return: The messages of this ShowQueueDetailsResponse.
         :rtype: int
@@ -206,7 +206,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def messages(self, messages):
         r"""Sets the messages of this ShowQueueDetailsResponse.
 
-        待消费消息数
+        **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
 
         :param messages: The messages of this ShowQueueDetailsResponse.
         :type messages: int
@@ -217,7 +217,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def consumers(self):
         r"""Gets the consumers of this ShowQueueDetailsResponse.
 
-        连接的消费者数
+        **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
 
         :return: The consumers of this ShowQueueDetailsResponse.
         :rtype: int
@@ -228,7 +228,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def consumers(self, consumers):
         r"""Sets the consumers of this ShowQueueDetailsResponse.
 
-        连接的消费者数
+        **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
 
         :param consumers: The consumers of this ShowQueueDetailsResponse.
         :type consumers: int
@@ -239,7 +239,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def policy(self):
         r"""Gets the policy of this ShowQueueDetailsResponse.
 
-        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
 
         :return: The policy of this ShowQueueDetailsResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def policy(self, policy):
         r"""Sets the policy of this ShowQueueDetailsResponse.
 
-        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
 
         :param policy: The policy of this ShowQueueDetailsResponse.
         :type policy: str
@@ -279,7 +279,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def consumer_details(self):
         r"""Gets the consumer_details of this ShowQueueDetailsResponse.
 
-        订阅该Queue的消费者信息。
+        **参数解释**： 订阅该Queue的消费者信息。
 
         :return: The consumer_details of this ShowQueueDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ConsumerDetails`]
@@ -290,7 +290,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def consumer_details(self, consumer_details):
         r"""Sets the consumer_details of this ShowQueueDetailsResponse.
 
-        订阅该Queue的消费者信息。
+        **参数解释**： 订阅该Queue的消费者信息。
 
         :param consumer_details: The consumer_details of this ShowQueueDetailsResponse.
         :type consumer_details: list[:class:`huaweicloudsdkrabbitmq.v2.ConsumerDetails`]
@@ -301,7 +301,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def queue_bindings(self):
         r"""Gets the queue_bindings of this ShowQueueDetailsResponse.
 
-        以此Queue为目标的绑定信息列表。
+        **参数解释**： 以此Queue为目标的绑定信息列表。
 
         :return: The queue_bindings of this ShowQueueDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.BindingsDetails`]
@@ -312,7 +312,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def queue_bindings(self, queue_bindings):
         r"""Sets the queue_bindings of this ShowQueueDetailsResponse.
 
-        以此Queue为目标的绑定信息列表。
+        **参数解释**： 以此Queue为目标的绑定信息列表。
 
         :param queue_bindings: The queue_bindings of this ShowQueueDetailsResponse.
         :type queue_bindings: list[:class:`huaweicloudsdkrabbitmq.v2.BindingsDetails`]

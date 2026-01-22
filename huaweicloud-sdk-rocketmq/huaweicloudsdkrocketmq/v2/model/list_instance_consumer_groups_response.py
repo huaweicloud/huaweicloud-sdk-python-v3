@@ -38,17 +38,17 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: **参数解释**： 消费组总数。 **取值范围**： 不涉及。
+        :param total: **参数解释**： 消费组总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param groups: **参数解释**： 消费组列表。
+        :param groups: **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
-        :param max: **参数解释**： 最大可创建消费组数量。 **取值范围**： 不涉及。
+        :param max: **参数解释**： 最大可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max: int
-        :param remaining: **参数解释**： 剩余可创建消费组数量。 **取值范围**： 不涉及。
+        :param remaining: **参数解释**： 剩余可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type remaining: int
-        :param next_offset: **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
         """
         
@@ -79,7 +79,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 消费组总数。 **取值范围**： 不涉及。
+        **参数解释**： 消费组总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ListInstanceConsumerGroupsResponse.
         :rtype: float
@@ -90,7 +90,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 消费组总数。 **取值范围**： 不涉及。
+        **参数解释**： 消费组总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ListInstanceConsumerGroupsResponse.
         :type total: float
@@ -101,7 +101,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def groups(self):
         r"""Gets the groups of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 消费组列表。
+        **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The groups of this ListInstanceConsumerGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
@@ -112,7 +112,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def groups(self, groups):
         r"""Sets the groups of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 消费组列表。
+        **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param groups: The groups of this ListInstanceConsumerGroupsResponse.
         :type groups: list[:class:`huaweicloudsdkrocketmq.v2.ConsumerGroup`]
@@ -123,7 +123,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def max(self):
         r"""Gets the max of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 最大可创建消费组数量。 **取值范围**： 不涉及。
+        **参数解释**： 最大可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def max(self, max):
         r"""Sets the max of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 最大可创建消费组数量。 **取值范围**： 不涉及。
+        **参数解释**： 最大可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max: The max of this ListInstanceConsumerGroupsResponse.
         :type max: int
@@ -145,7 +145,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def remaining(self):
         r"""Gets the remaining of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 剩余可创建消费组数量。 **取值范围**： 不涉及。
+        **参数解释**： 剩余可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The remaining of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def remaining(self, remaining):
         r"""Sets the remaining of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 剩余可创建消费组数量。 **取值范围**： 不涉及。
+        **参数解释**： 剩余可创建消费组数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param remaining: The remaining of this ListInstanceConsumerGroupsResponse.
         :type remaining: int
@@ -167,7 +167,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -178,7 +178,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 下个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ListInstanceConsumerGroupsResponse.
         :type next_offset: int
@@ -189,7 +189,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ListInstanceConsumerGroupsResponse.
 
-        **参数解释**： 上个分页的offset。 **取值范围**： 不涉及。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ListInstanceConsumerGroupsResponse.
         :type previous_offset: int

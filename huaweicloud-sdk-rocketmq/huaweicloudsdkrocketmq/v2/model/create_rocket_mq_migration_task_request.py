@@ -35,13 +35,13 @@ class CreateRocketMqMigrationTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param overwrite: true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
+        :param overwrite: **参数解释**： true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type overwrite: str
-        :param name: 迁移任务名称，名称规则参考创建实例。
+        :param name: **参数解释**： 迁移任务名称，名称规则参考创建实例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param type: 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
+        :param type: **参数解释**： 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type type: str
         :param body: Body of the CreateRocketMqMigrationTaskRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateRocketMqMigrationTaskReq`
@@ -67,7 +67,7 @@ class CreateRocketMqMigrationTaskRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateRocketMqMigrationTaskRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateRocketMqMigrationTaskRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateRocketMqMigrationTaskRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this CreateRocketMqMigrationTaskRequest.
         :type instance_id: str
@@ -89,7 +89,7 @@ class CreateRocketMqMigrationTaskRequest:
     def overwrite(self):
         r"""Gets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
-        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
+        **参数解释**： true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The overwrite of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class CreateRocketMqMigrationTaskRequest:
     def overwrite(self, overwrite):
         r"""Sets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
-        true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
+        **参数解释**： true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param overwrite: The overwrite of this CreateRocketMqMigrationTaskRequest.
         :type overwrite: str
@@ -111,7 +111,7 @@ class CreateRocketMqMigrationTaskRequest:
     def name(self):
         r"""Gets the name of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务名称，名称规则参考创建实例。
+        **参数解释**： 迁移任务名称，名称规则参考创建实例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateRocketMqMigrationTaskRequest:
     def name(self, name):
         r"""Sets the name of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务名称，名称规则参考创建实例。
+        **参数解释**： 迁移任务名称，名称规则参考创建实例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this CreateRocketMqMigrationTaskRequest.
         :type name: str
@@ -133,7 +133,7 @@ class CreateRocketMqMigrationTaskRequest:
     def type(self):
         r"""Gets the type of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
+        **参数解释**： 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The type of this CreateRocketMqMigrationTaskRequest.
         :rtype: str
@@ -144,7 +144,7 @@ class CreateRocketMqMigrationTaskRequest:
     def type(self, type):
         r"""Sets the type of this CreateRocketMqMigrationTaskRequest.
 
-        迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
+        **参数解释**： 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param type: The type of this CreateRocketMqMigrationTaskRequest.
         :type type: str

@@ -52,7 +52,8 @@ class CreateClusterPublicIpReq:
         self.discriminator = None
 
         self.eip = eip
-        self.elb_white_list_req = elb_white_list_req
+        if elb_white_list_req is not None:
+            self.elb_white_list_req = elb_white_list_req
         self.public_bind_type = public_bind_type
         if eip_id is not None:
             self.eip_id = eip_id

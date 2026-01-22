@@ -28,7 +28,7 @@ class ResizeInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 规格变更任务ID。
+        :param job_id: **参数解释**： 规格变更任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type job_id: str
         """
         
@@ -44,7 +44,7 @@ class ResizeInstanceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ResizeInstanceResponse.
 
-        规格变更任务ID。
+        **参数解释**： 规格变更任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The job_id of this ResizeInstanceResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ResizeInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ResizeInstanceResponse.
 
-        规格变更任务ID。
+        **参数解释**： 规格变更任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param job_id: The job_id of this ResizeInstanceResponse.
         :type job_id: str

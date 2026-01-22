@@ -59,9 +59,9 @@ class ShowInstanceMessagesRequest:
         :type topic: str
         :param asc: **参数解释**： 是否按照时间排序。 **约束限制**： 不涉及。 **取值范围**： - true：按照时间排序。 - false：不按照时间排序。 **默认取值**： 不涉及。
         :type asc: bool
-        :param start_time: **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param start_time: **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type start_time: str
-        :param end_time: **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param end_time: **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type end_time: str
         :param limit: **参数解释**： 每一页显示的消息数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type limit: str
@@ -69,9 +69,9 @@ class ShowInstanceMessagesRequest:
         :type offset: str
         :param download: **参数解释**： 是否下载消息到本地。 **约束限制**： 不涉及。 **取值范围**： - true：下载。 - false：不下载。 **默认取值**： 不涉及。
         :type download: bool
-        :param message_offset: **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param message_offset: **参数解释**： 消息偏移量。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type message_offset: str
-        :param partition: **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param partition: **参数解释**： 分区。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type partition: str
         :param keyword: **参数解释**： 设置查询消息的关键词。 **约束限制**： 不涉及。 **取值范围**： 0~50字符。 **默认取值**： 不涉及。
         :type keyword: str
@@ -198,7 +198,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self):
         r"""Gets the start_time of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The start_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -209,7 +209,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param start_time: The start_time of this ShowInstanceMessagesRequest.
         :type start_time: str
@@ -220,7 +220,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The end_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 按创建时间查询时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param end_time: The end_time of this ShowInstanceMessagesRequest.
         :type end_time: str
@@ -308,7 +308,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self):
         r"""Gets the message_offset of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 消息偏移量。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The message_offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -319,7 +319,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 消息偏移量。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param message_offset: The message_offset of this ShowInstanceMessagesRequest.
         :type message_offset: str
@@ -330,7 +330,7 @@ class ShowInstanceMessagesRequest:
     def partition(self):
         r"""Gets the partition of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 分区。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The partition of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -341,7 +341,7 @@ class ShowInstanceMessagesRequest:
     def partition(self, partition):
         r"""Sets the partition of this ShowInstanceMessagesRequest.
 
-        **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 分区。 **约束限制**： 按偏移量查询时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param partition: The partition of this ShowInstanceMessagesRequest.
         :type partition: str

@@ -32,7 +32,7 @@ class ListTasksResponse(SdkResponse):
 
         :param jobs: 任务列表。
         :type jobs: list[:class:`huaweicloudsdkdds.v3.JobInfo`]
-        :param total_count: 任务列表总数
+        :param total_count: 任务列表总数。
         :type total_count: int
         """
         
@@ -73,7 +73,7 @@ class ListTasksResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListTasksResponse.
 
-        任务列表总数
+        任务列表总数。
 
         :return: The total_count of this ListTasksResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListTasksResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListTasksResponse.
 
-        任务列表总数
+        任务列表总数。
 
         :param total_count: The total_count of this ListTasksResponse.
         :type total_count: int

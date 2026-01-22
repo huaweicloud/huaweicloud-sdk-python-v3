@@ -99,6 +99,71 @@ class LiveClient(Client):
 
         return http_info
 
+    def check_domain_verification(self, request):
+        r"""域名归属权认证
+
+        域名归属权认证，确保创建的域名对应的主域名有归属权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckDomainVerification
+        :type request: :class:`huaweicloudsdklive.v1.CheckDomainVerificationRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CheckDomainVerificationResponse`
+        """
+        http_info = self._check_domain_verification_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_domain_verification_invoker(self, request):
+        http_info = self._check_domain_verification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_domain_verification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/domain/verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDomainVerificationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_domain(self, request):
         r"""创建直播域名
 
@@ -347,6 +412,71 @@ class LiveClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_pull_task(self, request):
+        r"""创建直播拉流转推任务
+
+        根据租户指定的拉流源以及拉流任务信息创建直播拉流转推任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePullTask
+        :type request: :class:`huaweicloudsdklive.v1.CreatePullTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreatePullTaskResponse`
+        """
+        http_info = self._create_pull_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pull_task_invoker(self, request):
+        http_info = self._create_pull_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pull_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/pull/stream/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePullTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
 
         auth_settings = []
 
@@ -1443,6 +1573,73 @@ class LiveClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_pull_task(self, request):
+        r"""删除直播拉流转推任务
+
+        停止并删除直播拉流转推任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePullTask
+        :type request: :class:`huaweicloudsdklive.v1.DeletePullTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeletePullTaskResponse`
+        """
+        http_info = self._delete_pull_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pull_task_invoker(self, request):
+        http_info = self._delete_pull_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pull_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/pull/stream/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePullTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
 
         header_params = {}
 
@@ -2600,6 +2797,77 @@ class LiveClient(Client):
 
         return http_info
 
+    def list_pull_tasks(self, request):
+        r"""查询直播拉流转推任务
+
+        查询直播拉流转推任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPullTasks
+        :type request: :class:`huaweicloudsdklive.v1.ListPullTasksRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListPullTasksResponse`
+        """
+        http_info = self._list_pull_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pull_tasks_invoker(self, request):
+        http_info = self._list_pull_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pull_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/pull/stream/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPullTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_record_callback_configs(self, request):
         r"""查询录制回调配置列表
 
@@ -3464,6 +3732,71 @@ class LiveClient(Client):
 
         return http_info
 
+    def modify_pull_task(self, request):
+        r"""修改直播拉流转推任务
+
+        修改直播拉流转推任务，仅当source_type为PullVodPushLive的任务生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyPullTask
+        :type request: :class:`huaweicloudsdklive.v1.ModifyPullTaskRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyPullTaskResponse`
+        """
+        http_info = self._modify_pull_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_pull_task_invoker(self, request):
+        http_info = self._modify_pull_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_pull_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/pull/stream/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyPullTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def run_record(self, request):
         r"""提交录制控制命令
 
@@ -3688,6 +4021,71 @@ class LiveClient(Client):
             "resource_path": "/v1/{project_id}/guard/key-chain",
             "request_type": request.__class__.__name__,
             "response_type": "ShowDomainKeyChainResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_verification(self, request):
+        r"""查询域名归属权验证信息
+
+        查询域名归属权验证信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainVerification
+        :type request: :class:`huaweicloudsdklive.v1.ShowDomainVerificationRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowDomainVerificationResponse`
+        """
+        http_info = self._show_domain_verification_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_verification_invoker(self, request):
+        http_info = self._show_domain_verification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_verification_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainVerificationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5548,6 +5946,75 @@ class LiveClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_certificate_info(self, request):
+        r"""查询HTTPS证书信息
+
+        根据项目ID、域名等信息查询HTTPS证书信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCertificateInfo
+        :type request: :class:`huaweicloudsdklive.v1.ShowCertificateInfoRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowCertificateInfoResponse`
+        """
+        http_info = self._show_certificate_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_certificate_info_invoker(self, request):
+        http_info = self._show_certificate_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

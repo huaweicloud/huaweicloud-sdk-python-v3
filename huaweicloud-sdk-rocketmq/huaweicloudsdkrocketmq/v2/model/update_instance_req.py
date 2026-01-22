@@ -20,7 +20,8 @@ class UpdateInstanceReq:
         'security_group_id': 'str',
         'enable_acl': 'bool',
         'enable_publicip': 'bool',
-        'publicip_id': 'str'
+        'publicip_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -29,26 +30,29 @@ class UpdateInstanceReq:
         'security_group_id': 'security_group_id',
         'enable_acl': 'enable_acl',
         'enable_publicip': 'enable_publicip',
-        'publicip_id': 'publicip_id'
+        'publicip_id': 'publicip_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None, enable_publicip=None, publicip_id=None):
+    def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None, enable_publicip=None, publicip_id=None, enterprise_project_id=None):
         r"""UpdateInstanceReq
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :param name: **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
         :type name: str
-        :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :param description: **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type description: str
-        :param security_group_id: 安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        :param security_group_id: **参数解释**： 安全组ID。 获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
-        :param enable_acl: ACL访问控制。
+        :param enable_acl: **参数解释**： 是否开启ACL访问控制。 **约束限制**： 不涉及。 **取值范围**： - true：开启ACL访问控制。 - false：不开启ACL访问控制。 **默认取值**： 不涉及。
         :type enable_acl: bool
-        :param enable_publicip: 是否开启公网。
+        :param enable_publicip: **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启公网。 - false：不开启公网。 **默认取值**： 不涉及。
         :type enable_publicip: bool
-        :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type publicip_id: str
+        :param enterprise_project_id: **参数解释**： 企业项目。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type enterprise_project_id: str
         """
         
         
@@ -59,6 +63,7 @@ class UpdateInstanceReq:
         self._enable_acl = None
         self._enable_publicip = None
         self._publicip_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if name is not None:
@@ -73,12 +78,14 @@ class UpdateInstanceReq:
             self.enable_publicip = enable_publicip
         if publicip_id is not None:
             self.publicip_id = publicip_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):
         r"""Gets the name of this UpdateInstanceReq.
 
-        实例名称。  由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
 
         :return: The name of this UpdateInstanceReq.
         :rtype: str
@@ -89,7 +96,7 @@ class UpdateInstanceReq:
     def name(self, name):
         r"""Sets the name of this UpdateInstanceReq.
 
-        实例名称。  由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
 
         :param name: The name of this UpdateInstanceReq.
         :type name: str
@@ -100,7 +107,7 @@ class UpdateInstanceReq:
     def description(self):
         r"""Gets the description of this UpdateInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The description of this UpdateInstanceReq.
         :rtype: str
@@ -111,7 +118,7 @@ class UpdateInstanceReq:
     def description(self, description):
         r"""Sets the description of this UpdateInstanceReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param description: The description of this UpdateInstanceReq.
         :type description: str
@@ -122,7 +129,7 @@ class UpdateInstanceReq:
     def security_group_id(self):
         r"""Gets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        **参数解释**： 安全组ID。 获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_id of this UpdateInstanceReq.
         :rtype: str
@@ -133,7 +140,7 @@ class UpdateInstanceReq:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this UpdateInstanceReq.
 
-        安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        **参数解释**： 安全组ID。 获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_id: The security_group_id of this UpdateInstanceReq.
         :type security_group_id: str
@@ -144,7 +151,7 @@ class UpdateInstanceReq:
     def enable_acl(self):
         r"""Gets the enable_acl of this UpdateInstanceReq.
 
-        ACL访问控制。
+        **参数解释**： 是否开启ACL访问控制。 **约束限制**： 不涉及。 **取值范围**： - true：开启ACL访问控制。 - false：不开启ACL访问控制。 **默认取值**： 不涉及。
 
         :return: The enable_acl of this UpdateInstanceReq.
         :rtype: bool
@@ -155,7 +162,7 @@ class UpdateInstanceReq:
     def enable_acl(self, enable_acl):
         r"""Sets the enable_acl of this UpdateInstanceReq.
 
-        ACL访问控制。
+        **参数解释**： 是否开启ACL访问控制。 **约束限制**： 不涉及。 **取值范围**： - true：开启ACL访问控制。 - false：不开启ACL访问控制。 **默认取值**： 不涉及。
 
         :param enable_acl: The enable_acl of this UpdateInstanceReq.
         :type enable_acl: bool
@@ -166,7 +173,7 @@ class UpdateInstanceReq:
     def enable_publicip(self):
         r"""Gets the enable_publicip of this UpdateInstanceReq.
 
-        是否开启公网。
+        **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启公网。 - false：不开启公网。 **默认取值**： 不涉及。
 
         :return: The enable_publicip of this UpdateInstanceReq.
         :rtype: bool
@@ -177,7 +184,7 @@ class UpdateInstanceReq:
     def enable_publicip(self, enable_publicip):
         r"""Sets the enable_publicip of this UpdateInstanceReq.
 
-        是否开启公网。
+        **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启公网。 - false：不开启公网。 **默认取值**： 不涉及。
 
         :param enable_publicip: The enable_publicip of this UpdateInstanceReq.
         :type enable_publicip: bool
@@ -188,7 +195,7 @@ class UpdateInstanceReq:
     def publicip_id(self):
         r"""Gets the publicip_id of this UpdateInstanceReq.
 
-        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The publicip_id of this UpdateInstanceReq.
         :rtype: str
@@ -199,12 +206,34 @@ class UpdateInstanceReq:
     def publicip_id(self, publicip_id):
         r"""Sets the publicip_id of this UpdateInstanceReq.
 
-        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param publicip_id: The publicip_id of this UpdateInstanceReq.
         :type publicip_id: str
         """
         self._publicip_id = publicip_id
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this UpdateInstanceReq.
+
+        **参数解释**： 企业项目。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The enterprise_project_id of this UpdateInstanceReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this UpdateInstanceReq.
+
+        **参数解释**： 企业项目。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateInstanceReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

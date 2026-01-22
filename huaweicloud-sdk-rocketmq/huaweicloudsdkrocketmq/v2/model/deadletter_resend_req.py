@@ -29,9 +29,9 @@ class DeadletterResendReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic: Topic名称。
+        :param topic: **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type topic: str
-        :param msg_id_list: 消息列表。
+        :param msg_id_list: **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id_list: list[str]
         """
         
@@ -50,7 +50,7 @@ class DeadletterResendReq:
     def topic(self):
         r"""Gets the topic of this DeadletterResendReq.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The topic of this DeadletterResendReq.
         :rtype: str
@@ -61,7 +61,7 @@ class DeadletterResendReq:
     def topic(self, topic):
         r"""Sets the topic of this DeadletterResendReq.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param topic: The topic of this DeadletterResendReq.
         :type topic: str
@@ -72,7 +72,7 @@ class DeadletterResendReq:
     def msg_id_list(self):
         r"""Gets the msg_id_list of this DeadletterResendReq.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id_list of this DeadletterResendReq.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DeadletterResendReq:
     def msg_id_list(self, msg_id_list):
         r"""Sets the msg_id_list of this DeadletterResendReq.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id_list: The msg_id_list of this DeadletterResendReq.
         :type msg_id_list: list[str]

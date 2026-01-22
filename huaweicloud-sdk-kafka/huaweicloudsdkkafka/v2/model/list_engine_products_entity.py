@@ -43,7 +43,7 @@ class ListEngineProductsEntity:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 产品类型。 **取值范围**： - single    - cluster
+        :param type: **参数解释**： 产品类型。 **取值范围**： - single：单机。 - cluster：集群。
         :type type: str
         :param product_id: **参数解释**： 产品ID。 **取值范围**： 不涉及。
         :type product_id: str
@@ -99,7 +99,7 @@ class ListEngineProductsEntity:
     def type(self):
         r"""Gets the type of this ListEngineProductsEntity.
 
-        **参数解释**： 产品类型。 **取值范围**： - single    - cluster
+        **参数解释**： 产品类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :return: The type of this ListEngineProductsEntity.
         :rtype: str
@@ -110,7 +110,7 @@ class ListEngineProductsEntity:
     def type(self, type):
         r"""Sets the type of this ListEngineProductsEntity.
 
-        **参数解释**： 产品类型。 **取值范围**： - single    - cluster
+        **参数解释**： 产品类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :param type: The type of this ListEngineProductsEntity.
         :type type: str

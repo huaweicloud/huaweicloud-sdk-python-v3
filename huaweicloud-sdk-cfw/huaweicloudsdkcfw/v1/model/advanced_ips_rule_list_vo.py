@@ -29,9 +29,9 @@ class AdvancedIpsRuleListVo:
 
         The model defined in huaweicloud sdk
 
-        :param advanced_ips_rules: 
+        :param advanced_ips_rules: 频率ips规则列表
         :type advanced_ips_rules: list[:class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleVo`]
-        :param total: 
+        :param total: 频率ips规则总数
         :type total: int
         """
         
@@ -50,6 +50,8 @@ class AdvancedIpsRuleListVo:
     def advanced_ips_rules(self):
         r"""Gets the advanced_ips_rules of this AdvancedIpsRuleListVo.
 
+        频率ips规则列表
+
         :return: The advanced_ips_rules of this AdvancedIpsRuleListVo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleVo`]
         """
@@ -58,6 +60,8 @@ class AdvancedIpsRuleListVo:
     @advanced_ips_rules.setter
     def advanced_ips_rules(self, advanced_ips_rules):
         r"""Sets the advanced_ips_rules of this AdvancedIpsRuleListVo.
+
+        频率ips规则列表
 
         :param advanced_ips_rules: The advanced_ips_rules of this AdvancedIpsRuleListVo.
         :type advanced_ips_rules: list[:class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleVo`]
@@ -68,6 +72,8 @@ class AdvancedIpsRuleListVo:
     def total(self):
         r"""Gets the total of this AdvancedIpsRuleListVo.
 
+        频率ips规则总数
+
         :return: The total of this AdvancedIpsRuleListVo.
         :rtype: int
         """
@@ -76,6 +82,8 @@ class AdvancedIpsRuleListVo:
     @total.setter
     def total(self, total):
         r"""Sets the total of this AdvancedIpsRuleListVo.
+
+        频率ips规则总数
 
         :param total: The total of this AdvancedIpsRuleListVo.
         :type total: int

@@ -31,9 +31,9 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param action: 批量删除消费组时使用，不配置则为创建接口。删除操作：delete。
+        :param action: **参数解释**： 批量删除消费组时使用，不配置则为创建接口。 **约束限制**： 不涉及。 **取值范围**： - delete：删除。 **默认取值**： 不涉及。
         :type action: str
         :param body: Body of the CreateConsumerGroupOrBatchDeleteConsumerGroupRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateConsumerGroupOrBatchDeleteConsumerGroupReq`
@@ -56,7 +56,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :type instance_id: str
@@ -78,7 +78,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
     def action(self):
         r"""Gets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
-        批量删除消费组时使用，不配置则为创建接口。删除操作：delete。
+        **参数解释**： 批量删除消费组时使用，不配置则为创建接口。 **约束限制**： 不涉及。 **取值范围**： - delete：删除。 **默认取值**： 不涉及。
 
         :return: The action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupRequest:
     def action(self, action):
         r"""Sets the action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
 
-        批量删除消费组时使用，不配置则为创建接口。删除操作：delete。
+        **参数解释**： 批量删除消费组时使用，不配置则为创建接口。 **约束限制**： 不涉及。 **取值范围**： - delete：删除。 **默认取值**： 不涉及。
 
         :param action: The action of this CreateConsumerGroupOrBatchDeleteConsumerGroupRequest.
         :type action: str

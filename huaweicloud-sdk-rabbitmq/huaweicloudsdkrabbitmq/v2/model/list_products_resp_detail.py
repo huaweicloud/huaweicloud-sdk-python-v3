@@ -41,21 +41,21 @@ class ListProductsRespDetail:
 
         The model defined in huaweicloud sdk
 
-        :param storage: 消息存储空间。
+        :param storage: **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
         :type storage: str
-        :param product_id: 产品ID。
+        :param product_id: **参数解释**： 产品ID。 **取值范围**： 不涉及。
         :type product_id: str
-        :param spec_code: 规格ID。
+        :param spec_code: **参数解释**： 规格ID。 **取值范围**： 不涉及。
         :type spec_code: str
-        :param io: IO信息。
+        :param io: **参数解释**： IO信息。
         :type io: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
-        :param unavailable_zones: 资源售罄的可用区列表。
+        :param unavailable_zones: **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
         :type unavailable_zones: list[str]
-        :param available_zones: 有可用资源的可用区列表。
+        :param available_zones: **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
         :type available_zones: list[str]
-        :param ecs_flavor_id: 该产品规格对应的虚拟机规格。
+        :param ecs_flavor_id: **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
         :type ecs_flavor_id: str
-        :param arch_type: 实例规格架构类型。当前仅支持X86。
+        :param arch_type: **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
         :type arch_type: str
         """
         
@@ -92,7 +92,7 @@ class ListProductsRespDetail:
     def storage(self):
         r"""Gets the storage of this ListProductsRespDetail.
 
-        消息存储空间。
+        **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
 
         :return: The storage of this ListProductsRespDetail.
         :rtype: str
@@ -103,7 +103,7 @@ class ListProductsRespDetail:
     def storage(self, storage):
         r"""Sets the storage of this ListProductsRespDetail.
 
-        消息存储空间。
+        **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
 
         :param storage: The storage of this ListProductsRespDetail.
         :type storage: str
@@ -114,7 +114,7 @@ class ListProductsRespDetail:
     def product_id(self):
         r"""Gets the product_id of this ListProductsRespDetail.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :return: The product_id of this ListProductsRespDetail.
         :rtype: str
@@ -125,7 +125,7 @@ class ListProductsRespDetail:
     def product_id(self, product_id):
         r"""Sets the product_id of this ListProductsRespDetail.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :param product_id: The product_id of this ListProductsRespDetail.
         :type product_id: str
@@ -136,7 +136,7 @@ class ListProductsRespDetail:
     def spec_code(self):
         r"""Gets the spec_code of this ListProductsRespDetail.
 
-        规格ID。
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :return: The spec_code of this ListProductsRespDetail.
         :rtype: str
@@ -147,7 +147,7 @@ class ListProductsRespDetail:
     def spec_code(self, spec_code):
         r"""Sets the spec_code of this ListProductsRespDetail.
 
-        规格ID。
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :param spec_code: The spec_code of this ListProductsRespDetail.
         :type spec_code: str
@@ -158,7 +158,7 @@ class ListProductsRespDetail:
     def io(self):
         r"""Gets the io of this ListProductsRespDetail.
 
-        IO信息。
+        **参数解释**： IO信息。
 
         :return: The io of this ListProductsRespDetail.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
@@ -169,7 +169,7 @@ class ListProductsRespDetail:
     def io(self, io):
         r"""Sets the io of this ListProductsRespDetail.
 
-        IO信息。
+        **参数解释**： IO信息。
 
         :param io: The io of this ListProductsRespDetail.
         :type io: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespIo`]
@@ -180,7 +180,7 @@ class ListProductsRespDetail:
     def unavailable_zones(self):
         r"""Gets the unavailable_zones of this ListProductsRespDetail.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :return: The unavailable_zones of this ListProductsRespDetail.
         :rtype: list[str]
@@ -191,7 +191,7 @@ class ListProductsRespDetail:
     def unavailable_zones(self, unavailable_zones):
         r"""Sets the unavailable_zones of this ListProductsRespDetail.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespDetail.
         :type unavailable_zones: list[str]
@@ -202,7 +202,7 @@ class ListProductsRespDetail:
     def available_zones(self):
         r"""Gets the available_zones of this ListProductsRespDetail.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :return: The available_zones of this ListProductsRespDetail.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class ListProductsRespDetail:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListProductsRespDetail.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :param available_zones: The available_zones of this ListProductsRespDetail.
         :type available_zones: list[str]
@@ -224,7 +224,7 @@ class ListProductsRespDetail:
     def ecs_flavor_id(self):
         r"""Gets the ecs_flavor_id of this ListProductsRespDetail.
 
-        该产品规格对应的虚拟机规格。
+        **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
 
         :return: The ecs_flavor_id of this ListProductsRespDetail.
         :rtype: str
@@ -235,7 +235,7 @@ class ListProductsRespDetail:
     def ecs_flavor_id(self, ecs_flavor_id):
         r"""Sets the ecs_flavor_id of this ListProductsRespDetail.
 
-        该产品规格对应的虚拟机规格。
+        **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
 
         :param ecs_flavor_id: The ecs_flavor_id of this ListProductsRespDetail.
         :type ecs_flavor_id: str
@@ -246,7 +246,7 @@ class ListProductsRespDetail:
     def arch_type(self):
         r"""Gets the arch_type of this ListProductsRespDetail.
 
-        实例规格架构类型。当前仅支持X86。
+        **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
 
         :return: The arch_type of this ListProductsRespDetail.
         :rtype: str
@@ -257,7 +257,7 @@ class ListProductsRespDetail:
     def arch_type(self, arch_type):
         r"""Sets the arch_type of this ListProductsRespDetail.
 
-        实例规格架构类型。当前仅支持X86。
+        **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
 
         :param arch_type: The arch_type of this ListProductsRespDetail.
         :type arch_type: str

@@ -31,11 +31,11 @@ class ShowConfigurationModifyHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param config_id: 参数模板ID。
+        :param config_id: **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type config_id: str
-        :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
+        :param offset: **参数解释：** 索引位置，偏移量。 **约束限制：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 0。
         :type offset: int
-        :param limit: 查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
+        :param limit: **参数解释：** 查询个数上限值。 **约束限制：** 不传该参数时，默认查询前100条信息。 **取值范围：** 1~100。 **默认取值：** 100。
         :type limit: int
         """
         
@@ -56,7 +56,7 @@ class ShowConfigurationModifyHistoryRequest:
     def config_id(self):
         r"""Gets the config_id of this ShowConfigurationModifyHistoryRequest.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The config_id of this ShowConfigurationModifyHistoryRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowConfigurationModifyHistoryRequest:
     def config_id(self, config_id):
         r"""Sets the config_id of this ShowConfigurationModifyHistoryRequest.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param config_id: The config_id of this ShowConfigurationModifyHistoryRequest.
         :type config_id: str
@@ -78,7 +78,7 @@ class ShowConfigurationModifyHistoryRequest:
     def offset(self):
         r"""Gets the offset of this ShowConfigurationModifyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 0。
 
         :return: The offset of this ShowConfigurationModifyHistoryRequest.
         :rtype: int
@@ -89,7 +89,7 @@ class ShowConfigurationModifyHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowConfigurationModifyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 0。
 
         :param offset: The offset of this ShowConfigurationModifyHistoryRequest.
         :type offset: int
@@ -100,7 +100,7 @@ class ShowConfigurationModifyHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ShowConfigurationModifyHistoryRequest.
 
-        查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不传该参数时，默认查询前100条信息。 **取值范围：** 1~100。 **默认取值：** 100。
 
         :return: The limit of this ShowConfigurationModifyHistoryRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowConfigurationModifyHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowConfigurationModifyHistoryRequest.
 
-        查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不传该参数时，默认查询前100条信息。 **取值范围：** 1~100。 **默认取值：** 100。
 
         :param limit: The limit of this ShowConfigurationModifyHistoryRequest.
         :type limit: int

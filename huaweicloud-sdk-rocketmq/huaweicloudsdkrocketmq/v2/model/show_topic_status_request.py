@@ -29,9 +29,9 @@ class ShowTopicStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
         """
         
@@ -48,7 +48,7 @@ class ShowTopicStatusRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowTopicStatusRequest.
 
-        实例ID。
+        **参数解释**： 实例ID获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowTopicStatusRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowTopicStatusRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowTopicStatusRequest.
 
-        实例ID。
+        **参数解释**： 实例ID获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowTopicStatusRequest.
         :type instance_id: str
@@ -70,7 +70,7 @@ class ShowTopicStatusRequest:
     def topic(self):
         r"""Gets the topic of this ShowTopicStatusRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ShowTopicStatusRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowTopicStatusRequest:
     def topic(self, topic):
         r"""Sets the topic of this ShowTopicStatusRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ShowTopicStatusRequest.
         :type topic: str

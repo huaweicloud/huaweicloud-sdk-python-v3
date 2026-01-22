@@ -59,39 +59,39 @@ class ListAclRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        :param object_id: **参数解释**： 防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志ID，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type object_id: str
-        :param type: 规则类型，0：互联网规则，1：vpc规则，2：nat规则
+        :param type: **参数解释**： 规则类型，用于区分不同防护对象设置规则类型。 **约束限制**： 不涉及 **取值范围**： 0：互联网边界规则，源（source）和目的（destination）地址需要为公网IP或域名； 1：VPC间规则，源（source）和目的（destination）地址需要为私有ip； 2：NAT规则，源（source）地址需要为私网IP，目的地址为公网IP或域名。 **默认取值**： 不涉及
         :type type: int
-        :param ip: ip地址
+        :param ip: **参数解释**： IP地址信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type ip: str
-        :param name: 规则名称
+        :param name: **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param direction: 方向0：外到内1：内到外
+        :param direction: **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type&#x3D;0（互联网规则）或者type&#x3D; 2（nat规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
         :type direction: int
-        :param status: 规则下发状态 0：禁用，1：启用
+        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
         :type status: int
-        :param action_type: 动作0：permit，1：deny
+        :param action_type: **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
         :type action_type: int
-        :param address_type: 地址类型，0表示ipv4，1表示ipv6
+        :param address_type: **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
         :type address_type: int
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **约束限制**： 必须为数字 **取值范围**： 1-1024 **默认取值**： 不涉及
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 不涉及
         :type offset: int
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：  0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param tags_id: 规则标签id，创建规则时产生。
+        :param tags_id: **参数解释**： 规则标签id，创建规则时产生。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type tags_id: str
-        :param source: 源地址
+        :param source: **参数解释**： 源地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type source: str
-        :param destination: 目的地址
+        :param destination: **参数解释**： 目的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type destination: str
-        :param service: 服务端口
+        :param service: **参数解释**： 服务端口 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type service: str
-        :param application: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        :param application: **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
         :type application: str
         """
         
@@ -152,7 +152,7 @@ class ListAclRulesRequest:
     def object_id(self):
         r"""Gets the object_id of this ListAclRulesRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        **参数解释**： 防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志ID，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The object_id of this ListAclRulesRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListAclRulesRequest:
     def object_id(self, object_id):
         r"""Sets the object_id of this ListAclRulesRequest.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        **参数解释**： 防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志ID，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param object_id: The object_id of this ListAclRulesRequest.
         :type object_id: str
@@ -174,7 +174,7 @@ class ListAclRulesRequest:
     def type(self):
         r"""Gets the type of this ListAclRulesRequest.
 
-        规则类型，0：互联网规则，1：vpc规则，2：nat规则
+        **参数解释**： 规则类型，用于区分不同防护对象设置规则类型。 **约束限制**： 不涉及 **取值范围**： 0：互联网边界规则，源（source）和目的（destination）地址需要为公网IP或域名； 1：VPC间规则，源（source）和目的（destination）地址需要为私有ip； 2：NAT规则，源（source）地址需要为私网IP，目的地址为公网IP或域名。 **默认取值**： 不涉及
 
         :return: The type of this ListAclRulesRequest.
         :rtype: int
@@ -185,7 +185,7 @@ class ListAclRulesRequest:
     def type(self, type):
         r"""Sets the type of this ListAclRulesRequest.
 
-        规则类型，0：互联网规则，1：vpc规则，2：nat规则
+        **参数解释**： 规则类型，用于区分不同防护对象设置规则类型。 **约束限制**： 不涉及 **取值范围**： 0：互联网边界规则，源（source）和目的（destination）地址需要为公网IP或域名； 1：VPC间规则，源（source）和目的（destination）地址需要为私有ip； 2：NAT规则，源（source）地址需要为私网IP，目的地址为公网IP或域名。 **默认取值**： 不涉及
 
         :param type: The type of this ListAclRulesRequest.
         :type type: int
@@ -196,7 +196,7 @@ class ListAclRulesRequest:
     def ip(self):
         r"""Gets the ip of this ListAclRulesRequest.
 
-        ip地址
+        **参数解释**： IP地址信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The ip of this ListAclRulesRequest.
         :rtype: str
@@ -207,7 +207,7 @@ class ListAclRulesRequest:
     def ip(self, ip):
         r"""Sets the ip of this ListAclRulesRequest.
 
-        ip地址
+        **参数解释**： IP地址信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param ip: The ip of this ListAclRulesRequest.
         :type ip: str
@@ -218,7 +218,7 @@ class ListAclRulesRequest:
     def name(self):
         r"""Gets the name of this ListAclRulesRequest.
 
-        规则名称
+        **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this ListAclRulesRequest.
         :rtype: str
@@ -229,7 +229,7 @@ class ListAclRulesRequest:
     def name(self, name):
         r"""Sets the name of this ListAclRulesRequest.
 
-        规则名称
+        **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this ListAclRulesRequest.
         :type name: str
@@ -240,7 +240,7 @@ class ListAclRulesRequest:
     def direction(self):
         r"""Gets the direction of this ListAclRulesRequest.
 
-        方向0：外到内1：内到外
+        **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
 
         :return: The direction of this ListAclRulesRequest.
         :rtype: int
@@ -251,7 +251,7 @@ class ListAclRulesRequest:
     def direction(self, direction):
         r"""Sets the direction of this ListAclRulesRequest.
 
-        方向0：外到内1：内到外
+        **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
 
         :param direction: The direction of this ListAclRulesRequest.
         :type direction: int
@@ -262,7 +262,7 @@ class ListAclRulesRequest:
     def status(self):
         r"""Gets the status of this ListAclRulesRequest.
 
-        规则下发状态 0：禁用，1：启用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
 
         :return: The status of this ListAclRulesRequest.
         :rtype: int
@@ -273,7 +273,7 @@ class ListAclRulesRequest:
     def status(self, status):
         r"""Sets the status of this ListAclRulesRequest.
 
-        规则下发状态 0：禁用，1：启用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
 
         :param status: The status of this ListAclRulesRequest.
         :type status: int
@@ -284,7 +284,7 @@ class ListAclRulesRequest:
     def action_type(self):
         r"""Gets the action_type of this ListAclRulesRequest.
 
-        动作0：permit，1：deny
+        **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
 
         :return: The action_type of this ListAclRulesRequest.
         :rtype: int
@@ -295,7 +295,7 @@ class ListAclRulesRequest:
     def action_type(self, action_type):
         r"""Sets the action_type of this ListAclRulesRequest.
 
-        动作0：permit，1：deny
+        **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
 
         :param action_type: The action_type of this ListAclRulesRequest.
         :type action_type: int
@@ -306,7 +306,7 @@ class ListAclRulesRequest:
     def address_type(self):
         r"""Gets the address_type of this ListAclRulesRequest.
 
-        地址类型，0表示ipv4，1表示ipv6
+        **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
 
         :return: The address_type of this ListAclRulesRequest.
         :rtype: int
@@ -317,7 +317,7 @@ class ListAclRulesRequest:
     def address_type(self, address_type):
         r"""Sets the address_type of this ListAclRulesRequest.
 
-        地址类型，0表示ipv4，1表示ipv6
+        **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
 
         :param address_type: The address_type of this ListAclRulesRequest.
         :type address_type: int
@@ -328,7 +328,7 @@ class ListAclRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListAclRulesRequest.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 必须为数字 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :return: The limit of this ListAclRulesRequest.
         :rtype: int
@@ -339,7 +339,7 @@ class ListAclRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAclRulesRequest.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 必须为数字 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :param limit: The limit of this ListAclRulesRequest.
         :type limit: int
@@ -350,7 +350,7 @@ class ListAclRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListAclRulesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 不涉及
 
         :return: The offset of this ListAclRulesRequest.
         :rtype: int
@@ -361,7 +361,7 @@ class ListAclRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAclRulesRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 不涉及
 
         :param offset: The offset of this ListAclRulesRequest.
         :type offset: int
@@ -372,7 +372,7 @@ class ListAclRulesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAclRulesRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：  0
 
         :return: The enterprise_project_id of this ListAclRulesRequest.
         :rtype: str
@@ -383,7 +383,7 @@ class ListAclRulesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAclRulesRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：  0
 
         :param enterprise_project_id: The enterprise_project_id of this ListAclRulesRequest.
         :type enterprise_project_id: str
@@ -394,7 +394,7 @@ class ListAclRulesRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListAclRulesRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The fw_instance_id of this ListAclRulesRequest.
         :rtype: str
@@ -405,7 +405,7 @@ class ListAclRulesRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListAclRulesRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，用户创建防火墙实例后产生的唯一ID，配置后可区分不同防火墙，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this ListAclRulesRequest.
         :type fw_instance_id: str
@@ -416,7 +416,7 @@ class ListAclRulesRequest:
     def tags_id(self):
         r"""Gets the tags_id of this ListAclRulesRequest.
 
-        规则标签id，创建规则时产生。
+        **参数解释**： 规则标签id，创建规则时产生。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The tags_id of this ListAclRulesRequest.
         :rtype: str
@@ -427,7 +427,7 @@ class ListAclRulesRequest:
     def tags_id(self, tags_id):
         r"""Sets the tags_id of this ListAclRulesRequest.
 
-        规则标签id，创建规则时产生。
+        **参数解释**： 规则标签id，创建规则时产生。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param tags_id: The tags_id of this ListAclRulesRequest.
         :type tags_id: str
@@ -438,7 +438,7 @@ class ListAclRulesRequest:
     def source(self):
         r"""Gets the source of this ListAclRulesRequest.
 
-        源地址
+        **参数解释**： 源地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The source of this ListAclRulesRequest.
         :rtype: str
@@ -449,7 +449,7 @@ class ListAclRulesRequest:
     def source(self, source):
         r"""Sets the source of this ListAclRulesRequest.
 
-        源地址
+        **参数解释**： 源地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param source: The source of this ListAclRulesRequest.
         :type source: str
@@ -460,7 +460,7 @@ class ListAclRulesRequest:
     def destination(self):
         r"""Gets the destination of this ListAclRulesRequest.
 
-        目的地址
+        **参数解释**： 目的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The destination of this ListAclRulesRequest.
         :rtype: str
@@ -471,7 +471,7 @@ class ListAclRulesRequest:
     def destination(self, destination):
         r"""Sets the destination of this ListAclRulesRequest.
 
-        目的地址
+        **参数解释**： 目的地址。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param destination: The destination of this ListAclRulesRequest.
         :type destination: str
@@ -482,7 +482,7 @@ class ListAclRulesRequest:
     def service(self):
         r"""Gets the service of this ListAclRulesRequest.
 
-        服务端口
+        **参数解释**： 服务端口 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The service of this ListAclRulesRequest.
         :rtype: str
@@ -493,7 +493,7 @@ class ListAclRulesRequest:
     def service(self, service):
         r"""Sets the service of this ListAclRulesRequest.
 
-        服务端口
+        **参数解释**： 服务端口 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param service: The service of this ListAclRulesRequest.
         :type service: str
@@ -504,7 +504,7 @@ class ListAclRulesRequest:
     def application(self):
         r"""Gets the application of this ListAclRulesRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
 
         :return: The application of this ListAclRulesRequest.
         :rtype: str
@@ -515,7 +515,7 @@ class ListAclRulesRequest:
     def application(self, application):
         r"""Sets the application of this ListAclRulesRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
 
         :param application: The application of this ListAclRulesRequest.
         :type application: str

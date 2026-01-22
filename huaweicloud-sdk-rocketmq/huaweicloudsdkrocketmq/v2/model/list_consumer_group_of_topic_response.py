@@ -28,7 +28,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param groups: 消费组列表。
+        :param groups: **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type groups: list[str]
         """
         
@@ -44,7 +44,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
     def groups(self):
         r"""Gets the groups of this ListConsumerGroupOfTopicResponse.
 
-        消费组列表。
+        **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The groups of this ListConsumerGroupOfTopicResponse.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
     def groups(self, groups):
         r"""Sets the groups of this ListConsumerGroupOfTopicResponse.
 
-        消费组列表。
+        **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param groups: The groups of this ListConsumerGroupOfTopicResponse.
         :type groups: list[str]

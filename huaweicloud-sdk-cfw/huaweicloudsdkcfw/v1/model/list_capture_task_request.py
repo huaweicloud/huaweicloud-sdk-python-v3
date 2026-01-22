@@ -35,7 +35,7 @@ class ListCaptureTaskRequest:
 
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
@@ -83,7 +83,7 @@ class ListCaptureTaskRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListCaptureTaskRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListCaptureTaskRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ListCaptureTaskRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListCaptureTaskRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListCaptureTaskRequest.
         :type fw_instance_id: str

@@ -16,29 +16,36 @@ class ListYmlsJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'config_list': 'list[ConfigListRsp]'
+        'config_list': 'list[ConfigListRsp]',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'config_list': 'configList'
+        'config_list': 'configList',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, config_list=None):
+    def __init__(self, config_list=None, total_size=None):
         r"""ListYmlsJobResponse
 
         The model defined in huaweicloud sdk
 
         :param config_list: 历史修改配置列表。
         :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigListRsp`]
+        :param total_size: **参数解释**： 配置任务数量。 **取值范围**： 不涉及
+        :type total_size: int
         """
         
         super().__init__()
 
         self._config_list = None
+        self._total_size = None
         self.discriminator = None
 
         if config_list is not None:
             self.config_list = config_list
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
     def config_list(self):
@@ -61,6 +68,28 @@ class ListYmlsJobResponse(SdkResponse):
         :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigListRsp`]
         """
         self._config_list = config_list
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListYmlsJobResponse.
+
+        **参数解释**： 配置任务数量。 **取值范围**： 不涉及
+
+        :return: The total_size of this ListYmlsJobResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListYmlsJobResponse.
+
+        **参数解释**： 配置任务数量。 **取值范围**： 不涉及
+
+        :param total_size: The total_size of this ListYmlsJobResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         import warnings

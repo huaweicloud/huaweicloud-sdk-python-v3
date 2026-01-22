@@ -77,7 +77,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type action: str
         :param rule_name: 规则名称
         :type rule_name: str
-        :param rule_id: 规则id
+        :param rule_id: 规则ID
         :type rule_id: str
         :param hit_time: 命中时间，以毫秒为单位的时间戳，如1718936272648
         :type hit_time: int
@@ -101,7 +101,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type dst_port: int
         :param protocol: 协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
         :type protocol: str
-        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        :param app: 规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
         :type app: str
         :param dst_host: 目标主机
         :type dst_host: str
@@ -248,7 +248,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
     def rule_id(self):
         r"""Gets the rule_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
 
-        规则id
+        规则ID
 
         :return: The rule_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
         :rtype: str
@@ -259,7 +259,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
 
-        规则id
+        规则ID
 
         :param rule_id: The rule_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
         :type rule_id: str
@@ -512,7 +512,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
     def app(self):
         r"""Gets the app of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
 
         :return: The app of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
         :rtype: str
@@ -523,7 +523,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
     def app(self, app):
         r"""Sets the app of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
 
         :param app: The app of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
         :type app: str

@@ -21,7 +21,9 @@ class BlackWhiteListResponseDataRecords:
         'address': 'str',
         'protocol': 'int',
         'port': 'str',
-        'description': 'str'
+        'description': 'str',
+        'created_date': 'str',
+        'modified_date': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class BlackWhiteListResponseDataRecords:
         'address': 'address',
         'protocol': 'protocol',
         'port': 'port',
-        'description': 'description'
+        'description': 'description',
+        'created_date': 'created_date',
+        'modified_date': 'modified_date'
     }
 
-    def __init__(self, list_id=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
+    def __init__(self, list_id=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None, created_date=None, modified_date=None):
         r"""BlackWhiteListResponseDataRecords
 
         The model defined in huaweicloud sdk
@@ -43,9 +47,9 @@ class BlackWhiteListResponseDataRecords:
         :type list_id: str
         :param direction: 黑白地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: ip地址类型0：ipv4，1:ipv6
+        :param address_type: IP地址类型0：ipv4，1:ipv6
         :type address_type: int
-        :param address: ip地址
+        :param address: IP地址
         :type address: str
         :param protocol: 协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
         :type protocol: int
@@ -53,6 +57,10 @@ class BlackWhiteListResponseDataRecords:
         :type port: str
         :param description: 描述
         :type description: str
+        :param created_date: |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
+        :type created_date: str
+        :param modified_date: |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
+        :type modified_date: str
         """
         
         
@@ -64,6 +72,8 @@ class BlackWhiteListResponseDataRecords:
         self._protocol = None
         self._port = None
         self._description = None
+        self._created_date = None
+        self._modified_date = None
         self.discriminator = None
 
         if list_id is not None:
@@ -80,6 +90,10 @@ class BlackWhiteListResponseDataRecords:
             self.port = port
         if description is not None:
             self.description = description
+        if created_date is not None:
+            self.created_date = created_date
+        if modified_date is not None:
+            self.modified_date = modified_date
 
     @property
     def list_id(self):
@@ -129,7 +143,7 @@ class BlackWhiteListResponseDataRecords:
     def address_type(self):
         r"""Gets the address_type of this BlackWhiteListResponseDataRecords.
 
-        ip地址类型0：ipv4，1:ipv6
+        IP地址类型0：ipv4，1:ipv6
 
         :return: The address_type of this BlackWhiteListResponseDataRecords.
         :rtype: int
@@ -140,7 +154,7 @@ class BlackWhiteListResponseDataRecords:
     def address_type(self, address_type):
         r"""Sets the address_type of this BlackWhiteListResponseDataRecords.
 
-        ip地址类型0：ipv4，1:ipv6
+        IP地址类型0：ipv4，1:ipv6
 
         :param address_type: The address_type of this BlackWhiteListResponseDataRecords.
         :type address_type: int
@@ -151,7 +165,7 @@ class BlackWhiteListResponseDataRecords:
     def address(self):
         r"""Gets the address of this BlackWhiteListResponseDataRecords.
 
-        ip地址
+        IP地址
 
         :return: The address of this BlackWhiteListResponseDataRecords.
         :rtype: str
@@ -162,7 +176,7 @@ class BlackWhiteListResponseDataRecords:
     def address(self, address):
         r"""Sets the address of this BlackWhiteListResponseDataRecords.
 
-        ip地址
+        IP地址
 
         :param address: The address of this BlackWhiteListResponseDataRecords.
         :type address: str
@@ -234,6 +248,50 @@ class BlackWhiteListResponseDataRecords:
         :type description: str
         """
         self._description = description
+
+    @property
+    def created_date(self):
+        r"""Gets the created_date of this BlackWhiteListResponseDataRecords.
+
+        |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
+
+        :return: The created_date of this BlackWhiteListResponseDataRecords.
+        :rtype: str
+        """
+        return self._created_date
+
+    @created_date.setter
+    def created_date(self, created_date):
+        r"""Sets the created_date of this BlackWhiteListResponseDataRecords.
+
+        |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
+
+        :param created_date: The created_date of this BlackWhiteListResponseDataRecords.
+        :type created_date: str
+        """
+        self._created_date = created_date
+
+    @property
+    def modified_date(self):
+        r"""Gets the modified_date of this BlackWhiteListResponseDataRecords.
+
+        |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
+
+        :return: The modified_date of this BlackWhiteListResponseDataRecords.
+        :rtype: str
+        """
+        return self._modified_date
+
+    @modified_date.setter
+    def modified_date(self, modified_date):
+        r"""Sets the modified_date of this BlackWhiteListResponseDataRecords.
+
+        |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
+
+        :param modified_date: The modified_date of this BlackWhiteListResponseDataRecords.
+        :type modified_date: str
+        """
+        self._modified_date = modified_date
 
     def to_dict(self):
         result = {}

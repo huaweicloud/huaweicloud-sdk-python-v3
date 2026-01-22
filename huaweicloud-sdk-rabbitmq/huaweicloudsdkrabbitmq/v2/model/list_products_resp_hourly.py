@@ -31,11 +31,11 @@ class ListProductsRespHourly:
 
         The model defined in huaweicloud sdk
 
-        :param name: 消息引擎的名称，该字段显示为rabbitmq。
+        :param name: **参数解释**： 消息引擎的名称，该字段显示为rabbitmq。 **取值范围**： 不涉及。
         :type name: str
-        :param version: 消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
+        :param version: **参数解释**： 消息引擎的版本。 **取值范围**： - 3.8.35 [- 3.12.13](tag:srg) [- AMQP-0-9-1](tag:hws,hws_hk,hws_eu)
         :type version: str
-        :param values: 产品规格列表。
+        :param values: **参数解释**： 产品规格列表。 **取值范围**： 不涉及。
         :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
         """
         
@@ -57,7 +57,7 @@ class ListProductsRespHourly:
     def name(self):
         r"""Gets the name of this ListProductsRespHourly.
 
-        消息引擎的名称，该字段显示为rabbitmq。
+        **参数解释**： 消息引擎的名称，该字段显示为rabbitmq。 **取值范围**： 不涉及。
 
         :return: The name of this ListProductsRespHourly.
         :rtype: str
@@ -68,7 +68,7 @@ class ListProductsRespHourly:
     def name(self, name):
         r"""Sets the name of this ListProductsRespHourly.
 
-        消息引擎的名称，该字段显示为rabbitmq。
+        **参数解释**： 消息引擎的名称，该字段显示为rabbitmq。 **取值范围**： 不涉及。
 
         :param name: The name of this ListProductsRespHourly.
         :type name: str
@@ -79,7 +79,7 @@ class ListProductsRespHourly:
     def version(self):
         r"""Gets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
+        **参数解释**： 消息引擎的版本。 **取值范围**： - 3.8.35 [- 3.12.13](tag:srg) [- AMQP-0-9-1](tag:hws,hws_hk,hws_eu)
 
         :return: The version of this ListProductsRespHourly.
         :rtype: str
@@ -90,7 +90,7 @@ class ListProductsRespHourly:
     def version(self, version):
         r"""Sets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:sbc,hk_sbc)。
+        **参数解释**： 消息引擎的版本。 **取值范围**： - 3.8.35 [- 3.12.13](tag:srg) [- AMQP-0-9-1](tag:hws,hws_hk,hws_eu)
 
         :param version: The version of this ListProductsRespHourly.
         :type version: str
@@ -101,7 +101,7 @@ class ListProductsRespHourly:
     def values(self):
         r"""Gets the values of this ListProductsRespHourly.
 
-        产品规格列表。
+        **参数解释**： 产品规格列表。 **取值范围**： 不涉及。
 
         :return: The values of this ListProductsRespHourly.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
@@ -112,7 +112,7 @@ class ListProductsRespHourly:
     def values(self, values):
         r"""Sets the values of this ListProductsRespHourly.
 
-        产品规格列表。
+        **参数解释**： 产品规格列表。 **取值范围**： 不涉及。
 
         :param values: The values of this ListProductsRespHourly.
         :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]

@@ -41,7 +41,7 @@ class UpdateBlackWhiteListDto:
         :type direction: int
         :param address_type: 地址类型0：ipv4，1:ipv6
         :type address_type: int
-        :param address: ip地址
+        :param address: IP地址
         :type address: str
         :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
         :type protocol: int
@@ -121,7 +121,7 @@ class UpdateBlackWhiteListDto:
     def address(self):
         r"""Gets the address of this UpdateBlackWhiteListDto.
 
-        ip地址
+        IP地址
 
         :return: The address of this UpdateBlackWhiteListDto.
         :rtype: str
@@ -132,7 +132,7 @@ class UpdateBlackWhiteListDto:
     def address(self, address):
         r"""Sets the address of this UpdateBlackWhiteListDto.
 
-        ip地址
+        IP地址
 
         :param address: The address of this UpdateBlackWhiteListDto.
         :type address: str

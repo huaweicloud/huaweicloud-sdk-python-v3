@@ -29,9 +29,9 @@ class EntityInfo:
 
         The model defined in huaweicloud sdk
 
-        :param entity_id: 组ID或节点ID。
+        :param entity_id: **参数解释：** 组ID或节点ID。 **取值范围：** 不涉及。
         :type entity_id: str
-        :param entity_name: 组名称或节点名称。
+        :param entity_name: **参数解释：** 组名称或节点名称。 **取值范围：** 不涉及。
         :type entity_name: str
         """
         
@@ -48,7 +48,7 @@ class EntityInfo:
     def entity_id(self):
         r"""Gets the entity_id of this EntityInfo.
 
-        组ID或节点ID。
+        **参数解释：** 组ID或节点ID。 **取值范围：** 不涉及。
 
         :return: The entity_id of this EntityInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class EntityInfo:
     def entity_id(self, entity_id):
         r"""Sets the entity_id of this EntityInfo.
 
-        组ID或节点ID。
+        **参数解释：** 组ID或节点ID。 **取值范围：** 不涉及。
 
         :param entity_id: The entity_id of this EntityInfo.
         :type entity_id: str
@@ -70,7 +70,7 @@ class EntityInfo:
     def entity_name(self):
         r"""Gets the entity_name of this EntityInfo.
 
-        组名称或节点名称。
+        **参数解释：** 组名称或节点名称。 **取值范围：** 不涉及。
 
         :return: The entity_name of this EntityInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class EntityInfo:
     def entity_name(self, entity_name):
         r"""Sets the entity_name of this EntityInfo.
 
-        组名称或节点名称。
+        **参数解释：** 组名称或节点名称。 **取值范围：** 不涉及。
 
         :param entity_name: The entity_name of this EntityInfo.
         :type entity_name: str

@@ -31,11 +31,11 @@ class MigrationRabbitQueueMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param vhost: vhost名称。
+        :param vhost: **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhost: str
-        :param name: 队列名称。
+        :param name: **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param durable: 是否持久化。
+        :param durable: **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
         :type durable: bool
         """
         
@@ -57,7 +57,7 @@ class MigrationRabbitQueueMetadata:
     def vhost(self):
         r"""Gets the vhost of this MigrationRabbitQueueMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vhost of this MigrationRabbitQueueMetadata.
         :rtype: str
@@ -68,7 +68,7 @@ class MigrationRabbitQueueMetadata:
     def vhost(self, vhost):
         r"""Sets the vhost of this MigrationRabbitQueueMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vhost: The vhost of this MigrationRabbitQueueMetadata.
         :type vhost: str
@@ -79,7 +79,7 @@ class MigrationRabbitQueueMetadata:
     def name(self):
         r"""Gets the name of this MigrationRabbitQueueMetadata.
 
-        队列名称。
+        **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this MigrationRabbitQueueMetadata.
         :rtype: str
@@ -90,7 +90,7 @@ class MigrationRabbitQueueMetadata:
     def name(self, name):
         r"""Sets the name of this MigrationRabbitQueueMetadata.
 
-        队列名称。
+        **参数解释**： 队列名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this MigrationRabbitQueueMetadata.
         :type name: str
@@ -101,7 +101,7 @@ class MigrationRabbitQueueMetadata:
     def durable(self):
         r"""Gets the durable of this MigrationRabbitQueueMetadata.
 
-        是否持久化。
+        **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
 
         :return: The durable of this MigrationRabbitQueueMetadata.
         :rtype: bool
@@ -112,7 +112,7 @@ class MigrationRabbitQueueMetadata:
     def durable(self, durable):
         r"""Sets the durable of this MigrationRabbitQueueMetadata.
 
-        是否持久化。
+        **参数解释**： 是否持久化。 **约束限制**： 不涉及。 **取值范围**： - true：持久化。 - false：不进行持久化。 **默认取值**： 不涉及。
 
         :param durable: The durable of this MigrationRabbitQueueMetadata.
         :type durable: bool

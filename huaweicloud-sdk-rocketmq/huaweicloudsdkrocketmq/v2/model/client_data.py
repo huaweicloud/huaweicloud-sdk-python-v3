@@ -35,15 +35,15 @@ class ClientData:
 
         The model defined in huaweicloud sdk
 
-        :param language: 客户端语言。
+        :param language: **参数解释**： 客户端语言。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type language: str
-        :param version: 客户端版本。
+        :param version: **参数解释**： 客户端版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type version: str
-        :param client_id: 客户端ID。
+        :param client_id: **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type client_id: str
-        :param client_addr: 客户端地址。
+        :param client_addr: **参数解释**： 客户端地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type client_addr: str
-        :param subscriptions: 订阅关系列表。
+        :param subscriptions: **参数解释**： 订阅关系列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subscriptions: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]
         """
         
@@ -71,7 +71,7 @@ class ClientData:
     def language(self):
         r"""Gets the language of this ClientData.
 
-        客户端语言。
+        **参数解释**： 客户端语言。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The language of this ClientData.
         :rtype: str
@@ -82,7 +82,7 @@ class ClientData:
     def language(self, language):
         r"""Sets the language of this ClientData.
 
-        客户端语言。
+        **参数解释**： 客户端语言。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param language: The language of this ClientData.
         :type language: str
@@ -93,7 +93,7 @@ class ClientData:
     def version(self):
         r"""Gets the version of this ClientData.
 
-        客户端版本。
+        **参数解释**： 客户端版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The version of this ClientData.
         :rtype: str
@@ -104,7 +104,7 @@ class ClientData:
     def version(self, version):
         r"""Sets the version of this ClientData.
 
-        客户端版本。
+        **参数解释**： 客户端版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param version: The version of this ClientData.
         :type version: str
@@ -115,7 +115,7 @@ class ClientData:
     def client_id(self):
         r"""Gets the client_id of this ClientData.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The client_id of this ClientData.
         :rtype: str
@@ -126,7 +126,7 @@ class ClientData:
     def client_id(self, client_id):
         r"""Sets the client_id of this ClientData.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param client_id: The client_id of this ClientData.
         :type client_id: str
@@ -137,7 +137,7 @@ class ClientData:
     def client_addr(self):
         r"""Gets the client_addr of this ClientData.
 
-        客户端地址。
+        **参数解释**： 客户端地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The client_addr of this ClientData.
         :rtype: str
@@ -148,7 +148,7 @@ class ClientData:
     def client_addr(self, client_addr):
         r"""Sets the client_addr of this ClientData.
 
-        客户端地址。
+        **参数解释**： 客户端地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param client_addr: The client_addr of this ClientData.
         :type client_addr: str
@@ -159,7 +159,7 @@ class ClientData:
     def subscriptions(self):
         r"""Gets the subscriptions of this ClientData.
 
-        订阅关系列表。
+        **参数解释**： 订阅关系列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subscriptions of this ClientData.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]
@@ -170,7 +170,7 @@ class ClientData:
     def subscriptions(self, subscriptions):
         r"""Sets the subscriptions of this ClientData.
 
-        订阅关系列表。
+        **参数解释**： 订阅关系列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subscriptions: The subscriptions of this ClientData.
         :type subscriptions: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]

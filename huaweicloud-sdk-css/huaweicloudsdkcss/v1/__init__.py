@@ -109,6 +109,7 @@ from huaweicloudsdkcss.v1.model.delete_snapshot_response import DeleteSnapshotRe
 from huaweicloudsdkcss.v1.model.delete_template_req import DeleteTemplateReq
 from huaweicloudsdkcss.v1.model.delete_template_request import DeleteTemplateRequest
 from huaweicloudsdkcss.v1.model.delete_template_response import DeleteTemplateResponse
+from huaweicloudsdkcss.v1.model.disk_type import DiskType
 from huaweicloudsdkcss.v1.model.download_cert_request import DownloadCertRequest
 from huaweicloudsdkcss.v1.model.download_cert_response import DownloadCertResponse
 from huaweicloudsdkcss.v1.model.elb_white_list_resp import ElbWhiteListResp
@@ -143,6 +144,8 @@ from huaweicloudsdkcss.v1.model.list_clusters_tags_request import ListClustersTa
 from huaweicloudsdkcss.v1.model.list_clusters_tags_response import ListClustersTagsResponse
 from huaweicloudsdkcss.v1.model.list_confs_request import ListConfsRequest
 from huaweicloudsdkcss.v1.model.list_confs_response import ListConfsResponse
+from huaweicloudsdkcss.v1.model.list_disk_type_request import ListDiskTypeRequest
+from huaweicloudsdkcss.v1.model.list_disk_type_response import ListDiskTypeResponse
 from huaweicloudsdkcss.v1.model.list_elb_certs_request import ListElbCertsRequest
 from huaweicloudsdkcss.v1.model.list_elb_certs_response import ListElbCertsResponse
 from huaweicloudsdkcss.v1.model.list_elbs_request import ListElbsRequest

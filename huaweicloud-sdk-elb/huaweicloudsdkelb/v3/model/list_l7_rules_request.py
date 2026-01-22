@@ -63,7 +63,7 @@ class ListL7RulesRequest:
         :type id: list[str]
         :param compare_type: **参数解释**：转发匹配方式。 支持多值查询，查询条件格式：*compare_type&#x3D;xxx&amp;compare_type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - EQUAL_TO 表示精确匹配。 - REGEX 表示正则匹配。 - STARTS_WITH 表示前缀匹配。  **默认取值**：不涉及
         :type compare_type: list[str]
-        :param provisioning_status: **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：ACTIVE 表示正常。  **默认取值**：不涉及
+        :param provisioning_status: **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status&#x3D;xxx&amp;provisioning_status&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。  **默认取值**：不涉及
         :type provisioning_status: list[str]
         :param invert: **参数解释**：是否反向匹配。  **约束限制**：不涉及  **取值范围**：false  **默认取值**：不涉及
         :type invert: bool
@@ -258,7 +258,7 @@ class ListL7RulesRequest:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this ListL7RulesRequest.
 
-        **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。  **约束限制**：不涉及  **取值范围**：ACTIVE 表示正常。  **默认取值**：不涉及
+        **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。  **约束限制**：不涉及  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。  **默认取值**：不涉及
 
         :return: The provisioning_status of this ListL7RulesRequest.
         :rtype: list[str]
@@ -269,7 +269,7 @@ class ListL7RulesRequest:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this ListL7RulesRequest.
 
-        **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。  **约束限制**：不涉及  **取值范围**：ACTIVE 表示正常。  **默认取值**：不涉及
+        **参数解释**：转发规则的配置状态。 支持多值查询，查询条件格式：*provisioning_status=xxx&provisioning_status=xxx*。  **约束限制**：不涉及  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。  **默认取值**：不涉及
 
         :param provisioning_status: The provisioning_status of this ListL7RulesRequest.
         :type provisioning_status: list[str]

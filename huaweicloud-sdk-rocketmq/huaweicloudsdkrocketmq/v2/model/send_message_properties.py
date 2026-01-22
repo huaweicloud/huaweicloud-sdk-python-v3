@@ -29,9 +29,9 @@ class SendMessageProperties:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 特性名称。 **取值范围**： 不涉及。
+        :param name: **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type name: str
-        :param value: **参数解释**： 特性值。 **取值范围**： 不涉及。
+        :param value: **参数解释**： 特性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class SendMessageProperties:
     def name(self):
         r"""Gets the name of this SendMessageProperties.
 
-        **参数解释**： 特性名称。 **取值范围**： 不涉及。
+        **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The name of this SendMessageProperties.
         :rtype: str
@@ -61,7 +61,7 @@ class SendMessageProperties:
     def name(self, name):
         r"""Sets the name of this SendMessageProperties.
 
-        **参数解释**： 特性名称。 **取值范围**： 不涉及。
+        **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param name: The name of this SendMessageProperties.
         :type name: str
@@ -72,7 +72,7 @@ class SendMessageProperties:
     def value(self):
         r"""Gets the value of this SendMessageProperties.
 
-        **参数解释**： 特性值。 **取值范围**： 不涉及。
+        **参数解释**： 特性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The value of this SendMessageProperties.
         :rtype: str
@@ -83,7 +83,7 @@ class SendMessageProperties:
     def value(self, value):
         r"""Sets the value of this SendMessageProperties.
 
-        **参数解释**： 特性值。 **取值范围**： 不涉及。
+        **参数解释**： 特性值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param value: The value of this SendMessageProperties.
         :type value: str

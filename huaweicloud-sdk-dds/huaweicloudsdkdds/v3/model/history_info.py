@@ -33,13 +33,13 @@ class HistoryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param parameter_name: 参数名称
+        :param parameter_name: **参数解释：** 参数名称。 **取值范围：** 不涉及。
         :type parameter_name: str
-        :param old_value: 修改前的值。
+        :param old_value: **参数解释：** 修改前的值。 **取值范围：** 不涉及。
         :type old_value: str
-        :param new_value: 修改后的值。
+        :param new_value: **参数解释：** 修改后的值。 **取值范围：** 不涉及。
         :type new_value: str
-        :param updated_at: 修改时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param updated_at: **参数解释：** 修改时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **取值范围：** 不涉及。
         :type updated_at: str
         """
         
@@ -60,7 +60,7 @@ class HistoryInfo:
     def parameter_name(self):
         r"""Gets the parameter_name of this HistoryInfo.
 
-        参数名称
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :return: The parameter_name of this HistoryInfo.
         :rtype: str
@@ -71,7 +71,7 @@ class HistoryInfo:
     def parameter_name(self, parameter_name):
         r"""Sets the parameter_name of this HistoryInfo.
 
-        参数名称
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :param parameter_name: The parameter_name of this HistoryInfo.
         :type parameter_name: str
@@ -82,7 +82,7 @@ class HistoryInfo:
     def old_value(self):
         r"""Gets the old_value of this HistoryInfo.
 
-        修改前的值。
+        **参数解释：** 修改前的值。 **取值范围：** 不涉及。
 
         :return: The old_value of this HistoryInfo.
         :rtype: str
@@ -93,7 +93,7 @@ class HistoryInfo:
     def old_value(self, old_value):
         r"""Sets the old_value of this HistoryInfo.
 
-        修改前的值。
+        **参数解释：** 修改前的值。 **取值范围：** 不涉及。
 
         :param old_value: The old_value of this HistoryInfo.
         :type old_value: str
@@ -104,7 +104,7 @@ class HistoryInfo:
     def new_value(self):
         r"""Gets the new_value of this HistoryInfo.
 
-        修改后的值。
+        **参数解释：** 修改后的值。 **取值范围：** 不涉及。
 
         :return: The new_value of this HistoryInfo.
         :rtype: str
@@ -115,7 +115,7 @@ class HistoryInfo:
     def new_value(self, new_value):
         r"""Sets the new_value of this HistoryInfo.
 
-        修改后的值。
+        **参数解释：** 修改后的值。 **取值范围：** 不涉及。
 
         :param new_value: The new_value of this HistoryInfo.
         :type new_value: str
@@ -126,7 +126,7 @@ class HistoryInfo:
     def updated_at(self):
         r"""Gets the updated_at of this HistoryInfo.
 
-        修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **取值范围：** 不涉及。
 
         :return: The updated_at of this HistoryInfo.
         :rtype: str
@@ -137,7 +137,7 @@ class HistoryInfo:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this HistoryInfo.
 
-        修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 修改时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **取值范围：** 不涉及。
 
         :param updated_at: The updated_at of this HistoryInfo.
         :type updated_at: str

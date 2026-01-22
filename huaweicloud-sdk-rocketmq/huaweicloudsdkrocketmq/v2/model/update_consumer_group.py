@@ -35,15 +35,15 @@ class UpdateConsumerGroup:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 是否可以消费。
+        :param enabled: **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
         :type enabled: bool
-        :param broadcast: 是否广播。
+        :param broadcast: **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
         :type broadcast: bool
-        :param brokers: 关联的代理列表。
+        :param brokers: **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[str]
-        :param name: 待修改参数的消费组（消费组名称不支持修改）。
+        :param name: **参数解释**： 待修改参数的消费组（消费组名称不支持修改）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param retry_max_time: 最大重试次数，取值范围为1~16。
+        :param retry_max_time: **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
         :type retry_max_time: int
         """
         
@@ -68,7 +68,7 @@ class UpdateConsumerGroup:
     def enabled(self):
         r"""Gets the enabled of this UpdateConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :return: The enabled of this UpdateConsumerGroup.
         :rtype: bool
@@ -79,7 +79,7 @@ class UpdateConsumerGroup:
     def enabled(self, enabled):
         r"""Sets the enabled of this UpdateConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :param enabled: The enabled of this UpdateConsumerGroup.
         :type enabled: bool
@@ -90,7 +90,7 @@ class UpdateConsumerGroup:
     def broadcast(self):
         r"""Gets the broadcast of this UpdateConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :return: The broadcast of this UpdateConsumerGroup.
         :rtype: bool
@@ -101,7 +101,7 @@ class UpdateConsumerGroup:
     def broadcast(self, broadcast):
         r"""Sets the broadcast of this UpdateConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :param broadcast: The broadcast of this UpdateConsumerGroup.
         :type broadcast: bool
@@ -112,7 +112,7 @@ class UpdateConsumerGroup:
     def brokers(self):
         r"""Gets the brokers of this UpdateConsumerGroup.
 
-        关联的代理列表。
+        **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this UpdateConsumerGroup.
         :rtype: list[str]
@@ -123,7 +123,7 @@ class UpdateConsumerGroup:
     def brokers(self, brokers):
         r"""Sets the brokers of this UpdateConsumerGroup.
 
-        关联的代理列表。
+        **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this UpdateConsumerGroup.
         :type brokers: list[str]
@@ -134,7 +134,7 @@ class UpdateConsumerGroup:
     def name(self):
         r"""Gets the name of this UpdateConsumerGroup.
 
-        待修改参数的消费组（消费组名称不支持修改）。
+        **参数解释**： 待修改参数的消费组（消费组名称不支持修改）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this UpdateConsumerGroup.
         :rtype: str
@@ -145,7 +145,7 @@ class UpdateConsumerGroup:
     def name(self, name):
         r"""Sets the name of this UpdateConsumerGroup.
 
-        待修改参数的消费组（消费组名称不支持修改）。
+        **参数解释**： 待修改参数的消费组（消费组名称不支持修改）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this UpdateConsumerGroup.
         :type name: str
@@ -156,7 +156,7 @@ class UpdateConsumerGroup:
     def retry_max_time(self):
         r"""Gets the retry_max_time of this UpdateConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :return: The retry_max_time of this UpdateConsumerGroup.
         :rtype: int
@@ -167,7 +167,7 @@ class UpdateConsumerGroup:
     def retry_max_time(self, retry_max_time):
         r"""Sets the retry_max_time of this UpdateConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :param retry_max_time: The retry_max_time of this UpdateConsumerGroup.
         :type retry_max_time: int

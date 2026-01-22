@@ -31,11 +31,11 @@ class ResetConsumeOffsetRespQueues:
 
         The model defined in huaweicloud sdk
 
-        :param broker_name: 队列所在的broker。
+        :param broker_name: **参数解释**： 队列所在的broker。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_name: str
-        :param queue_id: 队列ID。
+        :param queue_id: **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_id: int
-        :param timestamp_offset: 重置消费进度。
+        :param timestamp_offset: **参数解释**： 重置消费进度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type timestamp_offset: int
         """
         
@@ -57,7 +57,7 @@ class ResetConsumeOffsetRespQueues:
     def broker_name(self):
         r"""Gets the broker_name of this ResetConsumeOffsetRespQueues.
 
-        队列所在的broker。
+        **参数解释**： 队列所在的broker。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_name of this ResetConsumeOffsetRespQueues.
         :rtype: str
@@ -68,7 +68,7 @@ class ResetConsumeOffsetRespQueues:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this ResetConsumeOffsetRespQueues.
 
-        队列所在的broker。
+        **参数解释**： 队列所在的broker。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_name: The broker_name of this ResetConsumeOffsetRespQueues.
         :type broker_name: str
@@ -79,7 +79,7 @@ class ResetConsumeOffsetRespQueues:
     def queue_id(self):
         r"""Gets the queue_id of this ResetConsumeOffsetRespQueues.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_id of this ResetConsumeOffsetRespQueues.
         :rtype: int
@@ -90,7 +90,7 @@ class ResetConsumeOffsetRespQueues:
     def queue_id(self, queue_id):
         r"""Sets the queue_id of this ResetConsumeOffsetRespQueues.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_id: The queue_id of this ResetConsumeOffsetRespQueues.
         :type queue_id: int
@@ -101,7 +101,7 @@ class ResetConsumeOffsetRespQueues:
     def timestamp_offset(self):
         r"""Gets the timestamp_offset of this ResetConsumeOffsetRespQueues.
 
-        重置消费进度。
+        **参数解释**： 重置消费进度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The timestamp_offset of this ResetConsumeOffsetRespQueues.
         :rtype: int
@@ -112,7 +112,7 @@ class ResetConsumeOffsetRespQueues:
     def timestamp_offset(self, timestamp_offset):
         r"""Sets the timestamp_offset of this ResetConsumeOffsetRespQueues.
 
-        重置消费进度。
+        **参数解释**： 重置消费进度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param timestamp_offset: The timestamp_offset of this ResetConsumeOffsetRespQueues.
         :type timestamp_offset: int

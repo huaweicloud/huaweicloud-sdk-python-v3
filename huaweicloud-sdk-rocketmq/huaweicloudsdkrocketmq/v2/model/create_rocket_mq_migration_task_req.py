@@ -24,8 +24,8 @@ class CreateRocketMqMigrationTaskReq:
     }
 
     attribute_map = {
-        'topic_config_table': 'topicConfigTable',
-        'subscription_group_table': 'subscriptionGroupTable',
+        'topic_config_table': 'topic_config_table',
+        'subscription_group_table': 'subscription_group_table',
         'vhosts': 'vhosts',
         'queues': 'queues',
         'exchanges': 'exchanges',
@@ -37,17 +37,17 @@ class CreateRocketMqMigrationTaskReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic_config_table: RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        :param topic_config_table: **参数解释**： RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_config_table: dict(str, MigrationRocketMqTopicConfig)
-        :param subscription_group_table: RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        :param subscription_group_table: **参数解释**： RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subscription_group_table: dict(str, MigrationRocketMqSubscriptionGroup)
-        :param vhosts: RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        :param vhosts: **参数解释**： RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhosts: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitVhostMetadata`]
-        :param queues: RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        :param queues: **参数解释**： RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitQueueMetadata`]
-        :param exchanges: RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        :param exchanges: **参数解释**： RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type exchanges: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitExchangeMetadata`]
-        :param bindings: RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        :param bindings: **参数解释**： RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type bindings: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitBindingMetadata`]
         """
         
@@ -78,7 +78,7 @@ class CreateRocketMqMigrationTaskReq:
     def topic_config_table(self):
         r"""Gets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        **参数解释**： RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic_config_table of this CreateRocketMqMigrationTaskReq.
         :rtype: dict(str, MigrationRocketMqTopicConfig)
@@ -89,7 +89,7 @@ class CreateRocketMqMigrationTaskReq:
     def topic_config_table(self, topic_config_table):
         r"""Sets the topic_config_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        **参数解释**： RocketMQ Topic 元数据，键为Topic名，值为topic配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic_config_table: The topic_config_table of this CreateRocketMqMigrationTaskReq.
         :type topic_config_table: dict(str, MigrationRocketMqTopicConfig)
@@ -100,7 +100,7 @@ class CreateRocketMqMigrationTaskReq:
     def subscription_group_table(self):
         r"""Gets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        **参数解释**： RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subscription_group_table of this CreateRocketMqMigrationTaskReq.
         :rtype: dict(str, MigrationRocketMqSubscriptionGroup)
@@ -111,7 +111,7 @@ class CreateRocketMqMigrationTaskReq:
     def subscription_group_table(self, subscription_group_table):
         r"""Sets the subscription_group_table of this CreateRocketMqMigrationTaskReq.
 
-        RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。
+        **参数解释**： RocketMQ消费组元数据，键为消费组名，值为消费组配置，迁移任务类型为自建RocketMQ上云(rocketmq)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subscription_group_table: The subscription_group_table of this CreateRocketMqMigrationTaskReq.
         :type subscription_group_table: dict(str, MigrationRocketMqSubscriptionGroup)
@@ -122,7 +122,7 @@ class CreateRocketMqMigrationTaskReq:
     def vhosts(self):
         r"""Gets the vhosts of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vhosts of this CreateRocketMqMigrationTaskReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitVhostMetadata`]
@@ -133,7 +133,7 @@ class CreateRocketMqMigrationTaskReq:
     def vhosts(self, vhosts):
         r"""Sets the vhosts of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ vhost元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vhosts: The vhosts of this CreateRocketMqMigrationTaskReq.
         :type vhosts: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitVhostMetadata`]
@@ -144,7 +144,7 @@ class CreateRocketMqMigrationTaskReq:
     def queues(self):
         r"""Gets the queues of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this CreateRocketMqMigrationTaskReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitQueueMetadata`]
@@ -155,7 +155,7 @@ class CreateRocketMqMigrationTaskReq:
     def queues(self, queues):
         r"""Sets the queues of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ队列元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this CreateRocketMqMigrationTaskReq.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitQueueMetadata`]
@@ -166,7 +166,7 @@ class CreateRocketMqMigrationTaskReq:
     def exchanges(self):
         r"""Gets the exchanges of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The exchanges of this CreateRocketMqMigrationTaskReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitExchangeMetadata`]
@@ -177,7 +177,7 @@ class CreateRocketMqMigrationTaskReq:
     def exchanges(self, exchanges):
         r"""Sets the exchanges of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ交换机元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param exchanges: The exchanges of this CreateRocketMqMigrationTaskReq.
         :type exchanges: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitExchangeMetadata`]
@@ -188,7 +188,7 @@ class CreateRocketMqMigrationTaskReq:
     def bindings(self):
         r"""Gets the bindings of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The bindings of this CreateRocketMqMigrationTaskReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitBindingMetadata`]
@@ -199,7 +199,7 @@ class CreateRocketMqMigrationTaskReq:
     def bindings(self, bindings):
         r"""Sets the bindings of this CreateRocketMqMigrationTaskReq.
 
-        RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。
+        **参数解释**： RabbitMQ binding元数据列表，迁移任务类型为自建RabbitMQ上云(rabbitToRocket)时必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param bindings: The bindings of this CreateRocketMqMigrationTaskReq.
         :type bindings: list[:class:`huaweicloudsdkrocketmq.v2.MigrationRabbitBindingMetadata`]

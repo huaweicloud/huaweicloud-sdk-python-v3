@@ -33,13 +33,13 @@ class ConsumerDetails:
 
         The model defined in huaweicloud sdk
 
-        :param consumer_tag: 消费者标识
+        :param consumer_tag: **参数解释**： 消费者标识。 **取值范围**： 不涉及。
         :type consumer_tag: str
         :param channel_details: 
         :type channel_details: :class:`huaweicloudsdkrabbitmq.v2.ChannelDetails`
-        :param ack_required: 消费者客户端是否设置手动ack
+        :param ack_required: **参数解释**： 消费者客户端是否设置手动ack。 **取值范围**： - true：设置手动ack。 - false：不设置手动ack。
         :type ack_required: bool
-        :param prefetch_count: 消费者客户端预取值
+        :param prefetch_count: **参数解释**： 消费者客户端预取值。 **取值范围**： 不涉及。
         :type prefetch_count: int
         """
         
@@ -64,7 +64,7 @@ class ConsumerDetails:
     def consumer_tag(self):
         r"""Gets the consumer_tag of this ConsumerDetails.
 
-        消费者标识
+        **参数解释**： 消费者标识。 **取值范围**： 不涉及。
 
         :return: The consumer_tag of this ConsumerDetails.
         :rtype: str
@@ -75,7 +75,7 @@ class ConsumerDetails:
     def consumer_tag(self, consumer_tag):
         r"""Sets the consumer_tag of this ConsumerDetails.
 
-        消费者标识
+        **参数解释**： 消费者标识。 **取值范围**： 不涉及。
 
         :param consumer_tag: The consumer_tag of this ConsumerDetails.
         :type consumer_tag: str
@@ -104,7 +104,7 @@ class ConsumerDetails:
     def ack_required(self):
         r"""Gets the ack_required of this ConsumerDetails.
 
-        消费者客户端是否设置手动ack
+        **参数解释**： 消费者客户端是否设置手动ack。 **取值范围**： - true：设置手动ack。 - false：不设置手动ack。
 
         :return: The ack_required of this ConsumerDetails.
         :rtype: bool
@@ -115,7 +115,7 @@ class ConsumerDetails:
     def ack_required(self, ack_required):
         r"""Sets the ack_required of this ConsumerDetails.
 
-        消费者客户端是否设置手动ack
+        **参数解释**： 消费者客户端是否设置手动ack。 **取值范围**： - true：设置手动ack。 - false：不设置手动ack。
 
         :param ack_required: The ack_required of this ConsumerDetails.
         :type ack_required: bool
@@ -126,7 +126,7 @@ class ConsumerDetails:
     def prefetch_count(self):
         r"""Gets the prefetch_count of this ConsumerDetails.
 
-        消费者客户端预取值
+        **参数解释**： 消费者客户端预取值。 **取值范围**： 不涉及。
 
         :return: The prefetch_count of this ConsumerDetails.
         :rtype: int
@@ -137,7 +137,7 @@ class ConsumerDetails:
     def prefetch_count(self, prefetch_count):
         r"""Sets the prefetch_count of this ConsumerDetails.
 
-        消费者客户端预取值
+        **参数解释**： 消费者客户端预取值。 **取值范围**： 不涉及。
 
         :param prefetch_count: The prefetch_count of this ConsumerDetails.
         :type prefetch_count: int

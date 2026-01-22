@@ -31,11 +31,11 @@ class ShowQueueDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param vhost: 所属Vhost名称
+        :param vhost: **参数解释**：  Vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhost: str
-        :param queue: Queue名称
+        :param queue: **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
         :type queue: str
         """
         
@@ -54,7 +54,7 @@ class ShowQueueDetailsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowQueueDetailsRequest.
 
-        实例ID
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowQueueDetailsRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowQueueDetailsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowQueueDetailsRequest.
 
-        实例ID
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowQueueDetailsRequest.
         :type instance_id: str
@@ -76,7 +76,7 @@ class ShowQueueDetailsRequest:
     def vhost(self):
         r"""Gets the vhost of this ShowQueueDetailsRequest.
 
-        所属Vhost名称
+        **参数解释**：  Vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vhost of this ShowQueueDetailsRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowQueueDetailsRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this ShowQueueDetailsRequest.
 
-        所属Vhost名称
+        **参数解释**：  Vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vhost: The vhost of this ShowQueueDetailsRequest.
         :type vhost: str
@@ -98,7 +98,7 @@ class ShowQueueDetailsRequest:
     def queue(self):
         r"""Gets the queue of this ShowQueueDetailsRequest.
 
-        Queue名称
+        **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :return: The queue of this ShowQueueDetailsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ShowQueueDetailsRequest:
     def queue(self, queue):
         r"""Sets the queue of this ShowQueueDetailsRequest.
 
-        Queue名称
+        **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :param queue: The queue of this ShowQueueDetailsRequest.
         :type queue: str

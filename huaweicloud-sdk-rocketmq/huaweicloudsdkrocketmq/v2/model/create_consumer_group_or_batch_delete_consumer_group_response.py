@@ -30,9 +30,9 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 删除消费组的任务ID
+        :param job_id: **参数解释**： 删除消费组的任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type job_id: str
-        :param name: 创建成功的消费组名称。
+        :param name: **参数解释**： 创建成功的消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -51,7 +51,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
-        删除消费组的任务ID
+        **参数解释**： 删除消费组的任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
-        删除消费组的任务ID
+        **参数解释**： 删除消费组的任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param job_id: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
-        创建成功的消费组名称。
+        **参数解释**： 创建成功的消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
-        创建成功的消费组名称。
+        **参数解释**： 创建成功的消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
         :type name: str

@@ -33,13 +33,13 @@ class ShowInstanceNodesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎类型。
+        :param engine: **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type engine: str
-        :param instance_id: 实例id。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param limit: 查询数量。
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
         :type offset: int
         """
         
@@ -62,7 +62,7 @@ class ShowInstanceNodesRequest:
     def engine(self):
         r"""Gets the engine of this ShowInstanceNodesRequest.
 
-        消息引擎类型。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The engine of this ShowInstanceNodesRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowInstanceNodesRequest:
     def engine(self, engine):
         r"""Sets the engine of this ShowInstanceNodesRequest.
 
-        消息引擎类型。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ShowInstanceNodesRequest.
         :type engine: str
@@ -84,7 +84,7 @@ class ShowInstanceNodesRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceNodesRequest.
 
-        实例id。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowInstanceNodesRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ShowInstanceNodesRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceNodesRequest.
 
-        实例id。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowInstanceNodesRequest.
         :type instance_id: str
@@ -106,7 +106,7 @@ class ShowInstanceNodesRequest:
     def limit(self):
         r"""Gets the limit of this ShowInstanceNodesRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :return: The limit of this ShowInstanceNodesRequest.
         :rtype: int
@@ -117,7 +117,7 @@ class ShowInstanceNodesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowInstanceNodesRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :param limit: The limit of this ShowInstanceNodesRequest.
         :type limit: int
@@ -128,7 +128,7 @@ class ShowInstanceNodesRequest:
     def offset(self):
         r"""Gets the offset of this ShowInstanceNodesRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :return: The offset of this ShowInstanceNodesRequest.
         :rtype: int
@@ -139,7 +139,7 @@ class ShowInstanceNodesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowInstanceNodesRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :param offset: The offset of this ShowInstanceNodesRequest.
         :type offset: int

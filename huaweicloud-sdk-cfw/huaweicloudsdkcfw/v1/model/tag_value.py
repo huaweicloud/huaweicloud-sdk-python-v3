@@ -29,7 +29,7 @@ class TagValue:
 
         The model defined in huaweicloud sdk
 
-        :param key: tag键
+        :param key: **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key: str
         :param value: tag值
         :type value: list[str]
@@ -50,7 +50,7 @@ class TagValue:
     def key(self):
         r"""Gets the key of this TagValue.
 
-        tag键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key of this TagValue.
         :rtype: str
@@ -61,7 +61,7 @@ class TagValue:
     def key(self, key):
         r"""Sets the key of this TagValue.
 
-        tag键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key: The key of this TagValue.
         :type key: str

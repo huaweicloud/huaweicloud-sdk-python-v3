@@ -38,17 +38,17 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数。
+        :param total: **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param next_offset: 下个分页的offset。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
-        :param engine: 消息引擎类型。
+        :param engine: **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
-        :param versions: 消息引擎支持的版本。
+        :param versions: **参数解释**： 消息引擎支持的版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type versions: list[str]
-        :param products: 规格变更的产品信息。
+        :param products: **参数解释**： 规格变更的产品信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type products: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]
         """
         
@@ -79,7 +79,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowEngineInstanceExtendProductInfoResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: float
@@ -90,7 +90,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowEngineInstanceExtendProductInfoResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ShowEngineInstanceExtendProductInfoResponse.
         :type total: float
@@ -101,7 +101,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ShowEngineInstanceExtendProductInfoResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: int
@@ -112,7 +112,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ShowEngineInstanceExtendProductInfoResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ShowEngineInstanceExtendProductInfoResponse.
         :type next_offset: int
@@ -123,7 +123,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ShowEngineInstanceExtendProductInfoResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ShowEngineInstanceExtendProductInfoResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ShowEngineInstanceExtendProductInfoResponse.
         :type previous_offset: int
@@ -145,7 +145,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self):
         r"""Gets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def engine(self, engine):
         r"""Sets the engine of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎类型。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ShowEngineInstanceExtendProductInfoResponse.
         :type engine: str
@@ -167,7 +167,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def versions(self):
         r"""Gets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎支持的版本。
+        **参数解释**： 消息引擎支持的版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The versions of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def versions(self, versions):
         r"""Sets the versions of this ShowEngineInstanceExtendProductInfoResponse.
 
-        消息引擎支持的版本。
+        **参数解释**： 消息引擎支持的版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param versions: The versions of this ShowEngineInstanceExtendProductInfoResponse.
         :type versions: list[str]
@@ -189,7 +189,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def products(self):
         r"""Gets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
-        规格变更的产品信息。
+        **参数解释**： 规格变更的产品信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The products of this ShowEngineInstanceExtendProductInfoResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]
@@ -200,7 +200,7 @@ class ShowEngineInstanceExtendProductInfoResponse(SdkResponse):
     def products(self, products):
         r"""Sets the products of this ShowEngineInstanceExtendProductInfoResponse.
 
-        规格变更的产品信息。
+        **参数解释**： 规格变更的产品信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param products: The products of this ShowEngineInstanceExtendProductInfoResponse.
         :type products: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQExtendProductInfoEntity`]

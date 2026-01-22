@@ -31,7 +31,7 @@ class ShowBackgroundTaskProgressRequest:
 
         :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param task_id: **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param task_id: **参数解释**： 任务ID。 **约束限制**： 仅Kafka扩容时支持查询进度。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type task_id: str
         """
         
@@ -70,7 +70,7 @@ class ShowBackgroundTaskProgressRequest:
     def task_id(self):
         r"""Gets the task_id of this ShowBackgroundTaskProgressRequest.
 
-        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 任务ID。 **约束限制**： 仅Kafka扩容时支持查询进度。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The task_id of this ShowBackgroundTaskProgressRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowBackgroundTaskProgressRequest:
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowBackgroundTaskProgressRequest.
 
-        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 任务ID。 **约束限制**： 仅Kafka扩容时支持查询进度。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param task_id: The task_id of this ShowBackgroundTaskProgressRequest.
         :type task_id: str

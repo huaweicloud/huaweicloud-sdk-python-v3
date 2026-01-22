@@ -29,7 +29,7 @@ class ListFirewallListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type enterprise_project_id: str
         :param body: Body of the ListFirewallListRequest
         :type body: :class:`huaweicloudsdkcfw.v1.QueryFireWallInstanceDto`
@@ -50,7 +50,7 @@ class ListFirewallListRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListFirewallListRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The enterprise_project_id of this ListFirewallListRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ListFirewallListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListFirewallListRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ListFirewallListRequest.
         :type enterprise_project_id: str

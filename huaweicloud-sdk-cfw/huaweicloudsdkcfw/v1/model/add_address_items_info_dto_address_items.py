@@ -33,7 +33,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
         :param address_type: 地址类型0 ipv4，1 ipv6
         :type address_type: int
-        :param address: ip
+        :param address: ip地址
         :type address: str
         :param description: 地址组成员描述
         :type description: str
@@ -78,7 +78,7 @@ class AddAddressItemsInfoDtoAddressItems:
     def address(self):
         r"""Gets the address of this AddAddressItemsInfoDtoAddressItems.
 
-        ip
+        ip地址
 
         :return: The address of this AddAddressItemsInfoDtoAddressItems.
         :rtype: str
@@ -89,7 +89,7 @@ class AddAddressItemsInfoDtoAddressItems:
     def address(self, address):
         r"""Sets the address of this AddAddressItemsInfoDtoAddressItems.
 
-        ip
+        ip地址
 
         :param address: The address of this AddAddressItemsInfoDtoAddressItems.
         :type address: str

@@ -33,11 +33,11 @@ class DeleteDomainsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param set_id: 域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        :param set_id: **参数解释**： 域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type set_id: str
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type fw_instance_id: str
         :param body: Body of the DeleteDomainsRequest
         :type body: :class:`huaweicloudsdkcfw.v1.DeleteDomainDto`
@@ -63,7 +63,7 @@ class DeleteDomainsRequest:
     def set_id(self):
         r"""Gets the set_id of this DeleteDomainsRequest.
 
-        域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The set_id of this DeleteDomainsRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class DeleteDomainsRequest:
     def set_id(self, set_id):
         r"""Sets the set_id of this DeleteDomainsRequest.
 
-        域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param set_id: The set_id of this DeleteDomainsRequest.
         :type set_id: str
@@ -85,7 +85,7 @@ class DeleteDomainsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this DeleteDomainsRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
 
         :return: The enterprise_project_id of this DeleteDomainsRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class DeleteDomainsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this DeleteDomainsRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteDomainsRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class DeleteDomainsRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this DeleteDomainsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The fw_instance_id of this DeleteDomainsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class DeleteDomainsRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this DeleteDomainsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this DeleteDomainsRequest.
         :type fw_instance_id: str

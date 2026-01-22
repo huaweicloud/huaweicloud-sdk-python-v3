@@ -31,11 +31,11 @@ class DiffDetails:
 
         The model defined in huaweicloud sdk
 
-        :param parameter_name: 参数名称
+        :param parameter_name: **参数解释：** 参数名称。 **取值范围：** 不涉及。
         :type parameter_name: str
-        :param source_value: 比较参数模板的参数值。
+        :param source_value: **参数解释：** 源参数模板中的参数值。 **取值范围：** 不涉及。
         :type source_value: str
-        :param target_value: 目标参数模板的参数值。
+        :param target_value: **参数解释：** 目标参数模板中的参数值。 **取值范围：** 不涉及。
         :type target_value: str
         """
         
@@ -54,7 +54,7 @@ class DiffDetails:
     def parameter_name(self):
         r"""Gets the parameter_name of this DiffDetails.
 
-        参数名称
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :return: The parameter_name of this DiffDetails.
         :rtype: str
@@ -65,7 +65,7 @@ class DiffDetails:
     def parameter_name(self, parameter_name):
         r"""Sets the parameter_name of this DiffDetails.
 
-        参数名称
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :param parameter_name: The parameter_name of this DiffDetails.
         :type parameter_name: str
@@ -76,7 +76,7 @@ class DiffDetails:
     def source_value(self):
         r"""Gets the source_value of this DiffDetails.
 
-        比较参数模板的参数值。
+        **参数解释：** 源参数模板中的参数值。 **取值范围：** 不涉及。
 
         :return: The source_value of this DiffDetails.
         :rtype: str
@@ -87,7 +87,7 @@ class DiffDetails:
     def source_value(self, source_value):
         r"""Sets the source_value of this DiffDetails.
 
-        比较参数模板的参数值。
+        **参数解释：** 源参数模板中的参数值。 **取值范围：** 不涉及。
 
         :param source_value: The source_value of this DiffDetails.
         :type source_value: str
@@ -98,7 +98,7 @@ class DiffDetails:
     def target_value(self):
         r"""Gets the target_value of this DiffDetails.
 
-        目标参数模板的参数值。
+        **参数解释：** 目标参数模板中的参数值。 **取值范围：** 不涉及。
 
         :return: The target_value of this DiffDetails.
         :rtype: str
@@ -109,7 +109,7 @@ class DiffDetails:
     def target_value(self, target_value):
         r"""Sets the target_value of this DiffDetails.
 
-        目标参数模板的参数值。
+        **参数解释：** 目标参数模板中的参数值。 **取值范围：** 不涉及。
 
         :param target_value: The target_value of this DiffDetails.
         :type target_value: str

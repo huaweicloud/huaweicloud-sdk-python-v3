@@ -38,15 +38,15 @@ class ListFirewallListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param user_support_eps: 是否支持企业项目，true表示是，false表示不是
+        :param user_support_eps: **参数解释**： 是否支持企业项目 **取值范围**： - true：是 - false：否
         :type user_support_eps: bool
-        :param has_ndr: 是否存在ndr，true表示是，false表示不是，NDR为原旁路版防火墙，现已停止售卖。
+        :param has_ndr: **参数解释**： 是否存在NDR，NDR为原旁路版防火墙，现已停止售卖。 **取值范围**： - true：是 - false：不是
         :type has_ndr: bool
-        :param is_support_postpaid: 是否支持按需购买，true表示是，false表示不是
+        :param is_support_postpaid: **参数解释**： 是否支持按需购买 **取值范围**： - true：是 - false：不是
         :type is_support_postpaid: bool
-        :param is_support_basic_version: 是否支持基础版，true表示是，false表示不是
+        :param is_support_basic_version: **参数解释**： 是否支持基础版 **取值范围**： - true：是 - false：不是
         :type is_support_basic_version: bool
-        :param is_support_buy_professional: 是否支持购买专业版，true表示是，false表示不是
+        :param is_support_buy_professional: **参数解释**： 是否支持购买专业版 **取值范围**： - true：是 - false：不是
         :type is_support_buy_professional: bool
         :param data: 
         :type data: :class:`huaweicloudsdkcfw.v1.HttpFirewallInstanceListResponseData`
@@ -79,7 +79,7 @@ class ListFirewallListResponse(SdkResponse):
     def user_support_eps(self):
         r"""Gets the user_support_eps of this ListFirewallListResponse.
 
-        是否支持企业项目，true表示是，false表示不是
+        **参数解释**： 是否支持企业项目 **取值范围**： - true：是 - false：否
 
         :return: The user_support_eps of this ListFirewallListResponse.
         :rtype: bool
@@ -90,7 +90,7 @@ class ListFirewallListResponse(SdkResponse):
     def user_support_eps(self, user_support_eps):
         r"""Sets the user_support_eps of this ListFirewallListResponse.
 
-        是否支持企业项目，true表示是，false表示不是
+        **参数解释**： 是否支持企业项目 **取值范围**： - true：是 - false：否
 
         :param user_support_eps: The user_support_eps of this ListFirewallListResponse.
         :type user_support_eps: bool
@@ -101,7 +101,7 @@ class ListFirewallListResponse(SdkResponse):
     def has_ndr(self):
         r"""Gets the has_ndr of this ListFirewallListResponse.
 
-        是否存在ndr，true表示是，false表示不是，NDR为原旁路版防火墙，现已停止售卖。
+        **参数解释**： 是否存在NDR，NDR为原旁路版防火墙，现已停止售卖。 **取值范围**： - true：是 - false：不是
 
         :return: The has_ndr of this ListFirewallListResponse.
         :rtype: bool
@@ -112,7 +112,7 @@ class ListFirewallListResponse(SdkResponse):
     def has_ndr(self, has_ndr):
         r"""Sets the has_ndr of this ListFirewallListResponse.
 
-        是否存在ndr，true表示是，false表示不是，NDR为原旁路版防火墙，现已停止售卖。
+        **参数解释**： 是否存在NDR，NDR为原旁路版防火墙，现已停止售卖。 **取值范围**： - true：是 - false：不是
 
         :param has_ndr: The has_ndr of this ListFirewallListResponse.
         :type has_ndr: bool
@@ -123,7 +123,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_postpaid(self):
         r"""Gets the is_support_postpaid of this ListFirewallListResponse.
 
-        是否支持按需购买，true表示是，false表示不是
+        **参数解释**： 是否支持按需购买 **取值范围**： - true：是 - false：不是
 
         :return: The is_support_postpaid of this ListFirewallListResponse.
         :rtype: bool
@@ -134,7 +134,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_postpaid(self, is_support_postpaid):
         r"""Sets the is_support_postpaid of this ListFirewallListResponse.
 
-        是否支持按需购买，true表示是，false表示不是
+        **参数解释**： 是否支持按需购买 **取值范围**： - true：是 - false：不是
 
         :param is_support_postpaid: The is_support_postpaid of this ListFirewallListResponse.
         :type is_support_postpaid: bool
@@ -145,7 +145,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_basic_version(self):
         r"""Gets the is_support_basic_version of this ListFirewallListResponse.
 
-        是否支持基础版，true表示是，false表示不是
+        **参数解释**： 是否支持基础版 **取值范围**： - true：是 - false：不是
 
         :return: The is_support_basic_version of this ListFirewallListResponse.
         :rtype: bool
@@ -156,7 +156,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_basic_version(self, is_support_basic_version):
         r"""Sets the is_support_basic_version of this ListFirewallListResponse.
 
-        是否支持基础版，true表示是，false表示不是
+        **参数解释**： 是否支持基础版 **取值范围**： - true：是 - false：不是
 
         :param is_support_basic_version: The is_support_basic_version of this ListFirewallListResponse.
         :type is_support_basic_version: bool
@@ -167,7 +167,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_buy_professional(self):
         r"""Gets the is_support_buy_professional of this ListFirewallListResponse.
 
-        是否支持购买专业版，true表示是，false表示不是
+        **参数解释**： 是否支持购买专业版 **取值范围**： - true：是 - false：不是
 
         :return: The is_support_buy_professional of this ListFirewallListResponse.
         :rtype: bool
@@ -178,7 +178,7 @@ class ListFirewallListResponse(SdkResponse):
     def is_support_buy_professional(self, is_support_buy_professional):
         r"""Sets the is_support_buy_professional of this ListFirewallListResponse.
 
-        是否支持购买专业版，true表示是，false表示不是
+        **参数解释**： 是否支持购买专业版 **取值范围**： - true：是 - false：不是
 
         :param is_support_buy_professional: The is_support_buy_professional of this ListFirewallListResponse.
         :type is_support_buy_professional: bool

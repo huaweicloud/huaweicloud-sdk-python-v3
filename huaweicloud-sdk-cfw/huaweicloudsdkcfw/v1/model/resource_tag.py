@@ -31,11 +31,11 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键
+        :param key: **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key: str
-        :param value: 标签值
+        :param value: **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type value: str
-        :param update_time: 标签更新时间
+        :param update_time: **参数解释**： 标签更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type update_time: str
         """
         
@@ -57,7 +57,7 @@ class ResourceTag:
     def key(self):
         r"""Gets the key of this ResourceTag.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -68,7 +68,7 @@ class ResourceTag:
     def key(self, key):
         r"""Sets the key of this ResourceTag.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -79,7 +79,7 @@ class ResourceTag:
     def value(self):
         r"""Gets the value of this ResourceTag.
 
-        标签值
+        **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -90,7 +90,7 @@ class ResourceTag:
     def value(self, value):
         r"""Sets the value of this ResourceTag.
 
-        标签值
+        **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param value: The value of this ResourceTag.
         :type value: str
@@ -101,7 +101,7 @@ class ResourceTag:
     def update_time(self):
         r"""Gets the update_time of this ResourceTag.
 
-        标签更新时间
+        **参数解释**： 标签更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The update_time of this ResourceTag.
         :rtype: str
@@ -112,7 +112,7 @@ class ResourceTag:
     def update_time(self, update_time):
         r"""Sets the update_time of this ResourceTag.
 
-        标签更新时间
+        **参数解释**： 标签更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param update_time: The update_time of this ResourceTag.
         :type update_time: str

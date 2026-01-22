@@ -35,7 +35,7 @@ class SendMessageReq:
         :type topic: str
         :param body: **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type body: str
-        :param property_list: **参数解释**： 特性列表。
+        :param property_list: **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
         """
         
@@ -46,10 +46,8 @@ class SendMessageReq:
         self._property_list = None
         self.discriminator = None
 
-        if topic is not None:
-            self.topic = topic
-        if body is not None:
-            self.body = body
+        self.topic = topic
+        self.body = body
         if property_list is not None:
             self.property_list = property_list
 
@@ -101,7 +99,7 @@ class SendMessageReq:
     def property_list(self):
         r"""Gets the property_list of this SendMessageReq.
 
-        **参数解释**： 特性列表。
+        **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The property_list of this SendMessageReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
@@ -112,7 +110,7 @@ class SendMessageReq:
     def property_list(self, property_list):
         r"""Sets the property_list of this SendMessageReq.
 
-        **参数解释**： 特性列表。
+        **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param property_list: The property_list of this SendMessageReq.
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]

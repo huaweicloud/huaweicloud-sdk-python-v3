@@ -29,9 +29,9 @@ class CreateFirewallReqTags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 资源标签键
+        :param key: **参数解释**： 资源标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key: str
-        :param value: 资源标签值
+        :param value: **参数解释**： 资源标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class CreateFirewallReqTags:
     def key(self):
         r"""Gets the key of this CreateFirewallReqTags.
 
-        资源标签键
+        **参数解释**： 资源标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key of this CreateFirewallReqTags.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateFirewallReqTags:
     def key(self, key):
         r"""Sets the key of this CreateFirewallReqTags.
 
-        资源标签键
+        **参数解释**： 资源标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key: The key of this CreateFirewallReqTags.
         :type key: str
@@ -72,7 +72,7 @@ class CreateFirewallReqTags:
     def value(self):
         r"""Gets the value of this CreateFirewallReqTags.
 
-        资源标签值
+        **参数解释**： 资源标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The value of this CreateFirewallReqTags.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateFirewallReqTags:
     def value(self, value):
         r"""Sets the value of this CreateFirewallReqTags.
 
-        资源标签值
+        **参数解释**： 资源标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param value: The value of this CreateFirewallReqTags.
         :type value: str

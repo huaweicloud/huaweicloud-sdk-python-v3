@@ -27,7 +27,6 @@ class CreateTranscodingReq:
         'thumbnail': 'Thumbnail',
         'thumbnails': 'list[Thumbnail]',
         'image_sprites': 'list[ImageSprite]',
-        'pipeline_id': 'str',
         'priority': 'int',
         'subtitle': 'Subtitle',
         'encryption': 'Encryption',
@@ -52,7 +51,6 @@ class CreateTranscodingReq:
         'thumbnail': 'thumbnail',
         'thumbnails': 'thumbnails',
         'image_sprites': 'image_sprites',
-        'pipeline_id': 'pipeline_id',
         'priority': 'priority',
         'subtitle': 'subtitle',
         'encryption': 'encryption',
@@ -64,7 +62,7 @@ class CreateTranscodingReq:
         'metadata': 'metadata'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, trans_template_list=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, thumbnails=None, image_sprites=None, pipeline_id=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, metadata=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, trans_template_list=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, thumbnails=None, image_sprites=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, metadata=None):
         r"""CreateTranscodingReq
 
         The model defined in huaweicloud sdk
@@ -93,8 +91,6 @@ class CreateTranscodingReq:
         :type thumbnails: list[:class:`huaweicloudsdkmpc.v1.Thumbnail`]
         :param image_sprites: 雪碧图参数，数组，最多支持20个成员。 
         :type image_sprites: list[:class:`huaweicloudsdkmpc.v1.ImageSprite`]
-        :param pipeline_id: 
-        :type pipeline_id: str
         :param priority: 任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
         :type priority: int
         :param subtitle: 
@@ -129,7 +125,6 @@ class CreateTranscodingReq:
         self._thumbnail = None
         self._thumbnails = None
         self._image_sprites = None
-        self._pipeline_id = None
         self._priority = None
         self._subtitle = None
         self._encryption = None
@@ -164,8 +159,6 @@ class CreateTranscodingReq:
             self.thumbnails = thumbnails
         if image_sprites is not None:
             self.image_sprites = image_sprites
-        if pipeline_id is not None:
-            self.pipeline_id = pipeline_id
         if priority is not None:
             self.priority = priority
         if subtitle is not None:
@@ -436,28 +429,6 @@ class CreateTranscodingReq:
         :type image_sprites: list[:class:`huaweicloudsdkmpc.v1.ImageSprite`]
         """
         self._image_sprites = image_sprites
-
-    @property
-    def pipeline_id(self):
-        r"""Gets the pipeline_id of this CreateTranscodingReq.
-
-        
-
-        :return: The pipeline_id of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._pipeline_id
-
-    @pipeline_id.setter
-    def pipeline_id(self, pipeline_id):
-        r"""Sets the pipeline_id of this CreateTranscodingReq.
-
-        
-
-        :param pipeline_id: The pipeline_id of this CreateTranscodingReq.
-        :type pipeline_id: str
-        """
-        self._pipeline_id = pipeline_id
 
     @property
     def priority(self):

@@ -235,7 +235,7 @@ class RabbitMQAsyncClient(Client):
     def create_post_paid_instance_by_engine_async(self, request):
         r"""创建实例
 
-        创建实例[，该接口支持创建按需[和包周期](tag:hws,hws_eu,hws_hk,ctc,cmcc)计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc,sbc)。
+        创建实例[，该接口支持创建按需[和包周期](tag:hws,hws_eu,hws_hk,ctc,cmcc,ax)计费方式的实例](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,hk_tm,cmcc,sbc,ax,hk_sbc)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -498,6 +498,73 @@ class RabbitMQAsyncClient(Client):
 
         return http_info
 
+    def delete_scheduled_task_async(self, request):
+        r"""删除定时任务管理中的指定记录
+
+        删除定时任务管理中的指定记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScheduledTask
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteScheduledTaskResponse`
+        """
+        http_info = self._delete_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_scheduled_task_async_invoker(self, request):
+        http_info = self._delete_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_user_async(self, request):
         r"""删除用户
 
@@ -536,6 +603,71 @@ class RabbitMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'user_name' in local_var_params:
             path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_dns_async(self, request):
+        r"""开启RabbitMQ实例域名访问能力
+
+        开启RabbitMQ实例域名访问功能后，客户端可以通过域名连接RabbitMQ实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableDns
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.EnableDnsRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.EnableDnsResponse`
+        """
+        http_info = self._enable_dns_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_dns_async_invoker(self, request):
+        http_info = self._enable_dns_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_dns_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rabbitmq/instances/{instance_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDnsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -666,14 +798,77 @@ class RabbitMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'begin_time' in local_var_params:
             query_params.append(('begin_time', local_var_params['begin_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_config_features_async(self, request):
+        r"""查询特性开关列表
+
+        查询特性开关列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigFeatures
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListConfigFeaturesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListConfigFeaturesResponse`
+        """
+        http_info = self._list_config_features_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_config_features_async_invoker(self, request):
+        http_info = self._list_config_features_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_config_features_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/config/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigFeaturesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -979,6 +1174,79 @@ class RabbitMQAsyncClient(Client):
 
         return http_info
 
+    def list_scheduled_tasks_async(self, request):
+        r"""查询实例的定时任务列表
+
+        查询实例的定时任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScheduledTasks
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ListScheduledTasksRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListScheduledTasksResponse`
+        """
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scheduled_tasks_async_invoker(self, request):
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scheduled_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduledTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_user_async(self, request):
         r"""查询用户列表
 
@@ -1027,6 +1295,71 @@ class RabbitMQAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_recycle_policy_async(self, request):
+        r"""更新回收站策略
+
+        更新回收站策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyRecyclePolicy
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ModifyRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ModifyRecyclePolicyResponse`
+        """
+        http_info = self._modify_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_recycle_policy_async_invoker(self, request):
+        http_info = self._modify_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyRecyclePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1120,7 +1453,7 @@ class RabbitMQAsyncClient(Client):
 
         实例规格变更。
         
-        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,hws_hk,ctc,cmcc,hws_eu)
+        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,hws_hk,ctc,cmcc,hws_eu,ax)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1224,6 +1557,71 @@ class RabbitMQAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_recycle_instance_async(self, request):
+        r"""恢复回收站实例
+
+        恢复回收站实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreRecycleInstance
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.RestoreRecycleInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.RestoreRecycleInstanceResponse`
+        """
+        http_info = self._restore_recycle_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_recycle_instance_async_invoker(self, request):
+        http_info = self._restore_recycle_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_recycle_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRecycleInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1758,6 +2156,8 @@ class RabbitMQAsyncClient(Client):
             query_params.append(('instance_id', local_var_params['instance_id']))
         if 'product_id' in local_var_params:
             query_params.append(('product_id', local_var_params['product_id']))
+        if 'broker_num' in local_var_params:
+            query_params.append(('broker_num', local_var_params['broker_num']))
 
         header_params = {}
 
@@ -1873,6 +2273,134 @@ class RabbitMQAsyncClient(Client):
             "resource_path": "/v2/{project_id}/rabbitmq/{instance_id}/tags",
             "request_type": request.__class__.__name__,
             "response_type": "ShowRabbitMqTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_instances_async(self, request):
+        r"""查询回收站实例列表
+
+        查询回收站实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecycleInstances
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRecycleInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRecycleInstancesResponse`
+        """
+        http_info = self._show_recycle_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_instances_async_invoker(self, request):
+        http_info = self._show_recycle_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_volume_expand_config_async(self, request):
+        r"""查询磁盘自动扩容配置
+
+        查询磁盘自动扩容配置，包括磁盘自动扩容是否开启，以及开启后的扩容阈值、扩容步长、扩容上限信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVolumeExpandConfig
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowVolumeExpandConfigRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowVolumeExpandConfigResponse`
+        """
+        http_info = self._show_volume_expand_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_volume_expand_config_async_invoker(self, request):
+        http_info = self._show_volume_expand_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_expand_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeExpandConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2047,6 +2575,77 @@ class RabbitMQAsyncClient(Client):
 
         return http_info
 
+    def update_scheduled_task_async(self, request):
+        r"""修改定时任务管理中的指定记录
+
+        修改定时任务管理中的指定记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateScheduledTask
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateScheduledTaskResponse`
+        """
+        http_info = self._update_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scheduled_task_async_invoker(self, request):
+        http_info = self._update_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'execute_at' in local_var_params:
+            query_params.append(('execute_at', local_var_params['execute_at']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_user_async(self, request):
         r"""修改用户参数
 
@@ -2085,6 +2684,73 @@ class RabbitMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'user_name' in local_var_params:
             path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_volume_expansion_config_async(self, request):
+        r"""修改磁盘自动扩容配置
+
+        该接口用于修改磁盘自动扩容配置，包含磁盘自动扩容是否开启、扩容阈值、扩容步长，以及扩容上限的配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVolumeExpansionConfig
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateVolumeExpansionConfigRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateVolumeExpansionConfigResponse`
+        """
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_volume_expansion_config_async_invoker(self, request):
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_volume_expansion_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVolumeExpansionConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

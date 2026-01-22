@@ -33,13 +33,13 @@ class ListDomainParseDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain_name: 域名，如www.test.com
+        :param domain_name: **参数解释**： 域名 **约束限制**： 域名格式，如www.example.com **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_name: str
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param address_type: 地址类型，0 ipv4,1 ipv6
+        :param address_type: 参数解释： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 约束限制： 不涉及 取值范围： 0：IPv4 1：IPv6 默认取值： 不涉及
         :type address_type: int
         """
         
@@ -63,7 +63,7 @@ class ListDomainParseDetailRequest:
     def domain_name(self):
         r"""Gets the domain_name of this ListDomainParseDetailRequest.
 
-        域名，如www.test.com
+        **参数解释**： 域名 **约束限制**： 域名格式，如www.example.com **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The domain_name of this ListDomainParseDetailRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ListDomainParseDetailRequest:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ListDomainParseDetailRequest.
 
-        域名，如www.test.com
+        **参数解释**： 域名 **约束限制**： 域名格式，如www.example.com **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param domain_name: The domain_name of this ListDomainParseDetailRequest.
         :type domain_name: str
@@ -85,7 +85,7 @@ class ListDomainParseDetailRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListDomainParseDetailRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
 
         :return: The enterprise_project_id of this ListDomainParseDetailRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListDomainParseDetailRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListDomainParseDetailRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，配置后可根据企业项目过滤不同企业项目下的资产，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListDomainParseDetailRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class ListDomainParseDetailRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListDomainParseDetailRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The fw_instance_id of this ListDomainParseDetailRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListDomainParseDetailRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListDomainParseDetailRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this ListDomainParseDetailRequest.
         :type fw_instance_id: str
@@ -129,7 +129,7 @@ class ListDomainParseDetailRequest:
     def address_type(self):
         r"""Gets the address_type of this ListDomainParseDetailRequest.
 
-        地址类型，0 ipv4,1 ipv6
+        参数解释： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 约束限制： 不涉及 取值范围： 0：IPv4 1：IPv6 默认取值： 不涉及
 
         :return: The address_type of this ListDomainParseDetailRequest.
         :rtype: int
@@ -140,7 +140,7 @@ class ListDomainParseDetailRequest:
     def address_type(self, address_type):
         r"""Sets the address_type of this ListDomainParseDetailRequest.
 
-        地址类型，0 ipv4,1 ipv6
+        参数解释： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 约束限制： 不涉及 取值范围： 0：IPv4 1：IPv6 默认取值： 不涉及
 
         :param address_type: The address_type of this ListDomainParseDetailRequest.
         :type address_type: int

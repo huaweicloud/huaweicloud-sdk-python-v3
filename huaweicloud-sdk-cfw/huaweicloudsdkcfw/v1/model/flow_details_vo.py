@@ -20,6 +20,8 @@ class FlowDetailsVO:
         'device_name': 'str',
         'item': 'str',
         'last_time': 'int',
+        'agg_start_time': 'int',
+        'agg_end_time': 'int',
         'ports': 'list[ItemVO]',
         'region': 'str',
         'request_byte': 'float',
@@ -37,6 +39,8 @@ class FlowDetailsVO:
         'device_name': 'device_name',
         'item': 'item',
         'last_time': 'last_time',
+        'agg_start_time': 'agg_start_time',
+        'agg_end_time': 'agg_end_time',
         'ports': 'ports',
         'region': 'region',
         'request_byte': 'request_byte',
@@ -48,7 +52,7 @@ class FlowDetailsVO:
         'protocol': 'protocol'
     }
 
-    def __init__(self, apps=None, associate_instance_type=None, device_name=None, item=None, last_time=None, ports=None, region=None, request_byte=None, response_byte=None, sessions=None, tags=None, src_ip=None, dst_ip=None, protocol=None):
+    def __init__(self, apps=None, associate_instance_type=None, device_name=None, item=None, last_time=None, agg_start_time=None, agg_end_time=None, ports=None, region=None, request_byte=None, response_byte=None, sessions=None, tags=None, src_ip=None, dst_ip=None, protocol=None):
         r"""FlowDetailsVO
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class FlowDetailsVO:
         :type item: str
         :param last_time: **参数解释**： 最近访问时间 **取值范围**： 不涉及
         :type last_time: int
+        :param agg_start_time: **参数解释**： 聚合开始时间 **取值范围**： 不涉及
+        :type agg_start_time: int
+        :param agg_end_time: **参数解释**： 聚合结束时间 **取值范围**： 不涉及
+        :type agg_end_time: int
         :param ports: **参数解释**： 端口统计 **取值范围**： 不涉及
         :type ports: list[:class:`huaweicloudsdkcfw.v1.ItemVO`]
         :param region: **参数解释**： 地区 **取值范围**： 不涉及
@@ -90,6 +98,8 @@ class FlowDetailsVO:
         self._device_name = None
         self._item = None
         self._last_time = None
+        self._agg_start_time = None
+        self._agg_end_time = None
         self._ports = None
         self._region = None
         self._request_byte = None
@@ -111,6 +121,10 @@ class FlowDetailsVO:
             self.item = item
         if last_time is not None:
             self.last_time = last_time
+        if agg_start_time is not None:
+            self.agg_start_time = agg_start_time
+        if agg_end_time is not None:
+            self.agg_end_time = agg_end_time
         if ports is not None:
             self.ports = ports
         if region is not None:
@@ -239,6 +253,50 @@ class FlowDetailsVO:
         :type last_time: int
         """
         self._last_time = last_time
+
+    @property
+    def agg_start_time(self):
+        r"""Gets the agg_start_time of this FlowDetailsVO.
+
+        **参数解释**： 聚合开始时间 **取值范围**： 不涉及
+
+        :return: The agg_start_time of this FlowDetailsVO.
+        :rtype: int
+        """
+        return self._agg_start_time
+
+    @agg_start_time.setter
+    def agg_start_time(self, agg_start_time):
+        r"""Sets the agg_start_time of this FlowDetailsVO.
+
+        **参数解释**： 聚合开始时间 **取值范围**： 不涉及
+
+        :param agg_start_time: The agg_start_time of this FlowDetailsVO.
+        :type agg_start_time: int
+        """
+        self._agg_start_time = agg_start_time
+
+    @property
+    def agg_end_time(self):
+        r"""Gets the agg_end_time of this FlowDetailsVO.
+
+        **参数解释**： 聚合结束时间 **取值范围**： 不涉及
+
+        :return: The agg_end_time of this FlowDetailsVO.
+        :rtype: int
+        """
+        return self._agg_end_time
+
+    @agg_end_time.setter
+    def agg_end_time(self, agg_end_time):
+        r"""Sets the agg_end_time of this FlowDetailsVO.
+
+        **参数解释**： 聚合结束时间 **取值范围**： 不涉及
+
+        :param agg_end_time: The agg_end_time of this FlowDetailsVO.
+        :type agg_end_time: int
+        """
+        self._agg_end_time = agg_end_time
 
     @property
     def ports(self):

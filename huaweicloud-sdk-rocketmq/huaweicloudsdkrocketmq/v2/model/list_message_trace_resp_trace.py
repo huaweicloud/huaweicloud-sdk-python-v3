@@ -65,45 +65,45 @@ class ListMessageTraceRespTrace:
 
         The model defined in huaweicloud sdk
 
-        :param success: 是否成功。
+        :param success: **参数解释**： 是否成功。 **约束限制**： 不涉及。 **取值范围**： - true：成功。 - false：失败。 **默认取值**： 不涉及。
         :type success: bool
-        :param trace_type: 轨迹类型
+        :param trace_type: **参数解释**： 轨迹类型。 **约束限制**： 不涉及。 **取值范围**： - Pub：生产者成功发送消息。 - SubBefore：消费者准备消费消息。 - SubAfter：消费者完成消息消费。 - EndTransaction：事务消息被提交或回滚。 - Receive：服务侧接收消息。 - Ack：消费者手动确认消费。 **默认取值**： 不涉及。
         :type trace_type: str
-        :param timestamp: 时间。
+        :param timestamp: **参数解释**： 时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type timestamp: float
-        :param group_name: 生产组或消费组。
+        :param group_name: **参数解释**： 生产组或消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_name: str
-        :param cost_time: 耗时。
+        :param cost_time: **参数解释**： 耗时。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cost_time: float
-        :param request_id: 请求ID。
+        :param request_id: **参数解释**： 请求ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type request_id: str
-        :param consume_status: 消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
+        :param consume_status: **参数解释**： 消费状态： **约束限制**： 不涉及。 **取值范围**：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败 **默认取值**： 不涉及。
         :type consume_status: float
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**
         :type topic: str
-        :param msg_id: 消息ID。
+        :param msg_id: **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id: str
-        :param offset_msg_id: offset消息ID。
+        :param offset_msg_id: **参数解释**： offset消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type offset_msg_id: str
-        :param tags: 消息的标签。
+        :param tags: **参数解释**： 消息的标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type tags: str
-        :param keys: 消息的keys。
+        :param keys: **参数解释**： 消息的keys。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type keys: str
-        :param store_host: 存储消息的主机IP。
+        :param store_host: **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type store_host: str
-        :param client_host: 产生消息的主机IP。
+        :param client_host: **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type client_host: str
-        :param retry_times: 重试次数。
+        :param retry_times: **参数解释**： 重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type retry_times: int
-        :param body_length: 消息体长度。
+        :param body_length: **参数解释**： 消息体长度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type body_length: float
-        :param msg_type: 消息类型。
+        :param msg_type: **参数解释**： 消息类型。 **约束限制**： 不涉及。 **取值范围**： - Normal_Msg：普通消息。 - Trans_Msg_Half：事务半消息。 - Trans_msg_Commit：事务提交消息。 - Delay_Msg：延迟消息。 - Order_Msg：顺序消息。 **默认取值** 不涉及。
         :type msg_type: str
-        :param transaction_state: 事务状态。
+        :param transaction_state: **参数解释**： 事务状态。 **约束限制**： 不涉及。 **取值范围**： - COMMIT_MESSAGE - ROLLBACK_MESSAGE - UNKNOW **默认取值** 不涉及。
         :type transaction_state: str
-        :param transaction_id: 事务ID。
+        :param transaction_id: **参数解释**： 事务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type transaction_id: str
-        :param from_transaction_check: 是否为事务回查的响应。
+        :param from_transaction_check: **参数解释**： 是否为事务回查的响应。 **约束限制**： 不涉及。 **取值范围**： - true：是事务回查的响应。 - false：不是事务回查的响应。 **默认取值** 不涉及。
         :type from_transaction_check: bool
         """
         
@@ -176,7 +176,7 @@ class ListMessageTraceRespTrace:
     def success(self):
         r"""Gets the success of this ListMessageTraceRespTrace.
 
-        是否成功。
+        **参数解释**： 是否成功。 **约束限制**： 不涉及。 **取值范围**： - true：成功。 - false：失败。 **默认取值**： 不涉及。
 
         :return: The success of this ListMessageTraceRespTrace.
         :rtype: bool
@@ -187,7 +187,7 @@ class ListMessageTraceRespTrace:
     def success(self, success):
         r"""Sets the success of this ListMessageTraceRespTrace.
 
-        是否成功。
+        **参数解释**： 是否成功。 **约束限制**： 不涉及。 **取值范围**： - true：成功。 - false：失败。 **默认取值**： 不涉及。
 
         :param success: The success of this ListMessageTraceRespTrace.
         :type success: bool
@@ -198,7 +198,7 @@ class ListMessageTraceRespTrace:
     def trace_type(self):
         r"""Gets the trace_type of this ListMessageTraceRespTrace.
 
-        轨迹类型
+        **参数解释**： 轨迹类型。 **约束限制**： 不涉及。 **取值范围**： - Pub：生产者成功发送消息。 - SubBefore：消费者准备消费消息。 - SubAfter：消费者完成消息消费。 - EndTransaction：事务消息被提交或回滚。 - Receive：服务侧接收消息。 - Ack：消费者手动确认消费。 **默认取值**： 不涉及。
 
         :return: The trace_type of this ListMessageTraceRespTrace.
         :rtype: str
@@ -209,7 +209,7 @@ class ListMessageTraceRespTrace:
     def trace_type(self, trace_type):
         r"""Sets the trace_type of this ListMessageTraceRespTrace.
 
-        轨迹类型
+        **参数解释**： 轨迹类型。 **约束限制**： 不涉及。 **取值范围**： - Pub：生产者成功发送消息。 - SubBefore：消费者准备消费消息。 - SubAfter：消费者完成消息消费。 - EndTransaction：事务消息被提交或回滚。 - Receive：服务侧接收消息。 - Ack：消费者手动确认消费。 **默认取值**： 不涉及。
 
         :param trace_type: The trace_type of this ListMessageTraceRespTrace.
         :type trace_type: str
@@ -220,7 +220,7 @@ class ListMessageTraceRespTrace:
     def timestamp(self):
         r"""Gets the timestamp of this ListMessageTraceRespTrace.
 
-        时间。
+        **参数解释**： 时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The timestamp of this ListMessageTraceRespTrace.
         :rtype: float
@@ -231,7 +231,7 @@ class ListMessageTraceRespTrace:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this ListMessageTraceRespTrace.
 
-        时间。
+        **参数解释**： 时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param timestamp: The timestamp of this ListMessageTraceRespTrace.
         :type timestamp: float
@@ -242,7 +242,7 @@ class ListMessageTraceRespTrace:
     def group_name(self):
         r"""Gets the group_name of this ListMessageTraceRespTrace.
 
-        生产组或消费组。
+        **参数解释**： 生产组或消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_name of this ListMessageTraceRespTrace.
         :rtype: str
@@ -253,7 +253,7 @@ class ListMessageTraceRespTrace:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListMessageTraceRespTrace.
 
-        生产组或消费组。
+        **参数解释**： 生产组或消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_name: The group_name of this ListMessageTraceRespTrace.
         :type group_name: str
@@ -264,7 +264,7 @@ class ListMessageTraceRespTrace:
     def cost_time(self):
         r"""Gets the cost_time of this ListMessageTraceRespTrace.
 
-        耗时。
+        **参数解释**： 耗时。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The cost_time of this ListMessageTraceRespTrace.
         :rtype: float
@@ -275,7 +275,7 @@ class ListMessageTraceRespTrace:
     def cost_time(self, cost_time):
         r"""Sets the cost_time of this ListMessageTraceRespTrace.
 
-        耗时。
+        **参数解释**： 耗时。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param cost_time: The cost_time of this ListMessageTraceRespTrace.
         :type cost_time: float
@@ -286,7 +286,7 @@ class ListMessageTraceRespTrace:
     def request_id(self):
         r"""Gets the request_id of this ListMessageTraceRespTrace.
 
-        请求ID。
+        **参数解释**： 请求ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The request_id of this ListMessageTraceRespTrace.
         :rtype: str
@@ -297,7 +297,7 @@ class ListMessageTraceRespTrace:
     def request_id(self, request_id):
         r"""Sets the request_id of this ListMessageTraceRespTrace.
 
-        请求ID。
+        **参数解释**： 请求ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param request_id: The request_id of this ListMessageTraceRespTrace.
         :type request_id: str
@@ -308,7 +308,7 @@ class ListMessageTraceRespTrace:
     def consume_status(self):
         r"""Gets the consume_status of this ListMessageTraceRespTrace.
 
-        消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
+        **参数解释**： 消费状态： **约束限制**： 不涉及。 **取值范围**：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败 **默认取值**： 不涉及。
 
         :return: The consume_status of this ListMessageTraceRespTrace.
         :rtype: float
@@ -319,7 +319,7 @@ class ListMessageTraceRespTrace:
     def consume_status(self, consume_status):
         r"""Sets the consume_status of this ListMessageTraceRespTrace.
 
-        消费状态：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败
+        **参数解释**： 消费状态： **约束限制**： 不涉及。 **取值范围**：  - 0-消费成功  - 1-消费超时  - 2-消费发生异常   - 3-消费返回NULL  - 5-消费失败 **默认取值**： 不涉及。
 
         :param consume_status: The consume_status of this ListMessageTraceRespTrace.
         :type consume_status: float
@@ -330,7 +330,7 @@ class ListMessageTraceRespTrace:
     def topic(self):
         r"""Gets the topic of this ListMessageTraceRespTrace.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**
 
         :return: The topic of this ListMessageTraceRespTrace.
         :rtype: str
@@ -341,7 +341,7 @@ class ListMessageTraceRespTrace:
     def topic(self, topic):
         r"""Sets the topic of this ListMessageTraceRespTrace.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**
 
         :param topic: The topic of this ListMessageTraceRespTrace.
         :type topic: str
@@ -352,7 +352,7 @@ class ListMessageTraceRespTrace:
     def msg_id(self):
         r"""Gets the msg_id of this ListMessageTraceRespTrace.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id of this ListMessageTraceRespTrace.
         :rtype: str
@@ -363,7 +363,7 @@ class ListMessageTraceRespTrace:
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this ListMessageTraceRespTrace.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id: The msg_id of this ListMessageTraceRespTrace.
         :type msg_id: str
@@ -374,7 +374,7 @@ class ListMessageTraceRespTrace:
     def offset_msg_id(self):
         r"""Gets the offset_msg_id of this ListMessageTraceRespTrace.
 
-        offset消息ID。
+        **参数解释**： offset消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The offset_msg_id of this ListMessageTraceRespTrace.
         :rtype: str
@@ -385,7 +385,7 @@ class ListMessageTraceRespTrace:
     def offset_msg_id(self, offset_msg_id):
         r"""Sets the offset_msg_id of this ListMessageTraceRespTrace.
 
-        offset消息ID。
+        **参数解释**： offset消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param offset_msg_id: The offset_msg_id of this ListMessageTraceRespTrace.
         :type offset_msg_id: str
@@ -396,7 +396,7 @@ class ListMessageTraceRespTrace:
     def tags(self):
         r"""Gets the tags of this ListMessageTraceRespTrace.
 
-        消息的标签。
+        **参数解释**： 消息的标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The tags of this ListMessageTraceRespTrace.
         :rtype: str
@@ -407,7 +407,7 @@ class ListMessageTraceRespTrace:
     def tags(self, tags):
         r"""Sets the tags of this ListMessageTraceRespTrace.
 
-        消息的标签。
+        **参数解释**： 消息的标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param tags: The tags of this ListMessageTraceRespTrace.
         :type tags: str
@@ -418,7 +418,7 @@ class ListMessageTraceRespTrace:
     def keys(self):
         r"""Gets the keys of this ListMessageTraceRespTrace.
 
-        消息的keys。
+        **参数解释**： 消息的keys。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The keys of this ListMessageTraceRespTrace.
         :rtype: str
@@ -429,7 +429,7 @@ class ListMessageTraceRespTrace:
     def keys(self, keys):
         r"""Sets the keys of this ListMessageTraceRespTrace.
 
-        消息的keys。
+        **参数解释**： 消息的keys。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param keys: The keys of this ListMessageTraceRespTrace.
         :type keys: str
@@ -440,7 +440,7 @@ class ListMessageTraceRespTrace:
     def store_host(self):
         r"""Gets the store_host of this ListMessageTraceRespTrace.
 
-        存储消息的主机IP。
+        **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The store_host of this ListMessageTraceRespTrace.
         :rtype: str
@@ -451,7 +451,7 @@ class ListMessageTraceRespTrace:
     def store_host(self, store_host):
         r"""Sets the store_host of this ListMessageTraceRespTrace.
 
-        存储消息的主机IP。
+        **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param store_host: The store_host of this ListMessageTraceRespTrace.
         :type store_host: str
@@ -462,7 +462,7 @@ class ListMessageTraceRespTrace:
     def client_host(self):
         r"""Gets the client_host of this ListMessageTraceRespTrace.
 
-        产生消息的主机IP。
+        **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The client_host of this ListMessageTraceRespTrace.
         :rtype: str
@@ -473,7 +473,7 @@ class ListMessageTraceRespTrace:
     def client_host(self, client_host):
         r"""Sets the client_host of this ListMessageTraceRespTrace.
 
-        产生消息的主机IP。
+        **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param client_host: The client_host of this ListMessageTraceRespTrace.
         :type client_host: str
@@ -484,7 +484,7 @@ class ListMessageTraceRespTrace:
     def retry_times(self):
         r"""Gets the retry_times of this ListMessageTraceRespTrace.
 
-        重试次数。
+        **参数解释**： 重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The retry_times of this ListMessageTraceRespTrace.
         :rtype: int
@@ -495,7 +495,7 @@ class ListMessageTraceRespTrace:
     def retry_times(self, retry_times):
         r"""Sets the retry_times of this ListMessageTraceRespTrace.
 
-        重试次数。
+        **参数解释**： 重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param retry_times: The retry_times of this ListMessageTraceRespTrace.
         :type retry_times: int
@@ -506,7 +506,7 @@ class ListMessageTraceRespTrace:
     def body_length(self):
         r"""Gets the body_length of this ListMessageTraceRespTrace.
 
-        消息体长度。
+        **参数解释**： 消息体长度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The body_length of this ListMessageTraceRespTrace.
         :rtype: float
@@ -517,7 +517,7 @@ class ListMessageTraceRespTrace:
     def body_length(self, body_length):
         r"""Sets the body_length of this ListMessageTraceRespTrace.
 
-        消息体长度。
+        **参数解释**： 消息体长度。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param body_length: The body_length of this ListMessageTraceRespTrace.
         :type body_length: float
@@ -528,7 +528,7 @@ class ListMessageTraceRespTrace:
     def msg_type(self):
         r"""Gets the msg_type of this ListMessageTraceRespTrace.
 
-        消息类型。
+        **参数解释**： 消息类型。 **约束限制**： 不涉及。 **取值范围**： - Normal_Msg：普通消息。 - Trans_Msg_Half：事务半消息。 - Trans_msg_Commit：事务提交消息。 - Delay_Msg：延迟消息。 - Order_Msg：顺序消息。 **默认取值** 不涉及。
 
         :return: The msg_type of this ListMessageTraceRespTrace.
         :rtype: str
@@ -539,7 +539,7 @@ class ListMessageTraceRespTrace:
     def msg_type(self, msg_type):
         r"""Sets the msg_type of this ListMessageTraceRespTrace.
 
-        消息类型。
+        **参数解释**： 消息类型。 **约束限制**： 不涉及。 **取值范围**： - Normal_Msg：普通消息。 - Trans_Msg_Half：事务半消息。 - Trans_msg_Commit：事务提交消息。 - Delay_Msg：延迟消息。 - Order_Msg：顺序消息。 **默认取值** 不涉及。
 
         :param msg_type: The msg_type of this ListMessageTraceRespTrace.
         :type msg_type: str
@@ -550,7 +550,7 @@ class ListMessageTraceRespTrace:
     def transaction_state(self):
         r"""Gets the transaction_state of this ListMessageTraceRespTrace.
 
-        事务状态。
+        **参数解释**： 事务状态。 **约束限制**： 不涉及。 **取值范围**： - COMMIT_MESSAGE - ROLLBACK_MESSAGE - UNKNOW **默认取值** 不涉及。
 
         :return: The transaction_state of this ListMessageTraceRespTrace.
         :rtype: str
@@ -561,7 +561,7 @@ class ListMessageTraceRespTrace:
     def transaction_state(self, transaction_state):
         r"""Sets the transaction_state of this ListMessageTraceRespTrace.
 
-        事务状态。
+        **参数解释**： 事务状态。 **约束限制**： 不涉及。 **取值范围**： - COMMIT_MESSAGE - ROLLBACK_MESSAGE - UNKNOW **默认取值** 不涉及。
 
         :param transaction_state: The transaction_state of this ListMessageTraceRespTrace.
         :type transaction_state: str
@@ -572,7 +572,7 @@ class ListMessageTraceRespTrace:
     def transaction_id(self):
         r"""Gets the transaction_id of this ListMessageTraceRespTrace.
 
-        事务ID。
+        **参数解释**： 事务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The transaction_id of this ListMessageTraceRespTrace.
         :rtype: str
@@ -583,7 +583,7 @@ class ListMessageTraceRespTrace:
     def transaction_id(self, transaction_id):
         r"""Sets the transaction_id of this ListMessageTraceRespTrace.
 
-        事务ID。
+        **参数解释**： 事务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param transaction_id: The transaction_id of this ListMessageTraceRespTrace.
         :type transaction_id: str
@@ -594,7 +594,7 @@ class ListMessageTraceRespTrace:
     def from_transaction_check(self):
         r"""Gets the from_transaction_check of this ListMessageTraceRespTrace.
 
-        是否为事务回查的响应。
+        **参数解释**： 是否为事务回查的响应。 **约束限制**： 不涉及。 **取值范围**： - true：是事务回查的响应。 - false：不是事务回查的响应。 **默认取值** 不涉及。
 
         :return: The from_transaction_check of this ListMessageTraceRespTrace.
         :rtype: bool
@@ -605,7 +605,7 @@ class ListMessageTraceRespTrace:
     def from_transaction_check(self, from_transaction_check):
         r"""Sets the from_transaction_check of this ListMessageTraceRespTrace.
 
-        是否为事务回查的响应。
+        **参数解释**： 是否为事务回查的响应。 **约束限制**： 不涉及。 **取值范围**： - true：是事务回查的响应。 - false：不是事务回查的响应。 **默认取值** 不涉及。
 
         :param from_transaction_check: The from_transaction_check of this ListMessageTraceRespTrace.
         :type from_transaction_check: bool

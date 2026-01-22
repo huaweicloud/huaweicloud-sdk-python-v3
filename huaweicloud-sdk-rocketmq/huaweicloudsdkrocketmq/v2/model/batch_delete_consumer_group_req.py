@@ -15,51 +15,51 @@ class BatchDeleteConsumerGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'groups': 'list[str]'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'groups': 'groups'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, groups=None):
+    def __init__(self, job_id=None):
         r"""BatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
-        :param groups: 待删除的消费组列表。
-        :type groups: list[str]
+        :param job_id: **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type job_id: str
         """
         
         
 
-        self._groups = None
+        self._job_id = None
         self.discriminator = None
 
-        if groups is not None:
-            self.groups = groups
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def groups(self):
-        r"""Gets the groups of this BatchDeleteConsumerGroupReq.
+    def job_id(self):
+        r"""Gets the job_id of this BatchDeleteConsumerGroupReq.
 
-        待删除的消费组列表。
+        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The groups of this BatchDeleteConsumerGroupReq.
-        :rtype: list[str]
+        :return: The job_id of this BatchDeleteConsumerGroupReq.
+        :rtype: str
         """
-        return self._groups
+        return self._job_id
 
-    @groups.setter
-    def groups(self, groups):
-        r"""Sets the groups of this BatchDeleteConsumerGroupReq.
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this BatchDeleteConsumerGroupReq.
 
-        待删除的消费组列表。
+        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param groups: The groups of this BatchDeleteConsumerGroupReq.
-        :type groups: list[str]
+        :param job_id: The job_id of this BatchDeleteConsumerGroupReq.
+        :type job_id: str
         """
-        self._groups = groups
+        self._job_id = job_id
 
     def to_dict(self):
         result = {}

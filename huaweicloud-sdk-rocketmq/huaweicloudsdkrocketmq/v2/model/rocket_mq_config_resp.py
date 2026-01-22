@@ -37,17 +37,17 @@ class RocketMQConfigResp:
 
         The model defined in huaweicloud sdk
 
-        :param name: RocketMQ配置名称。
+        :param name: **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param value: RocketMQ配置当前值。
+        :param value: **参数解释**： RocketMQ配置当前值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type value: str
-        :param config_type: RocketMQ配置的类型。
+        :param config_type: **参数解释**： RocketMQ配置的类型。 **约束限制**： 不涉及。 **取值范围**： - dynamic：动态。 - static：静态。    **默认取值**： 不涉及。
         :type config_type: str
-        :param default_value: RocketMQ配置的默认值。
+        :param default_value: **参数解释**： RocketMQ配置的默认值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type default_value: str
-        :param valid_values: RocketMQ配置取值的范围。
+        :param valid_values: **参数解释**： RocketMQ配置取值的范围。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type valid_values: str
-        :param value_type: RocketMQ配置值的类型。
+        :param value_type: **参数解释**： RocketMQ配置值的类型。 **约束限制**： 不涉及。 **取值范围**： - integer：整数类型。 - boolean：布尔类型。 **默认取值**： 不涉及。
         :type value_type: str
         """
         
@@ -78,7 +78,7 @@ class RocketMQConfigResp:
     def name(self):
         r"""Gets the name of this RocketMQConfigResp.
 
-        RocketMQ配置名称。
+        **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this RocketMQConfigResp.
         :rtype: str
@@ -89,7 +89,7 @@ class RocketMQConfigResp:
     def name(self, name):
         r"""Sets the name of this RocketMQConfigResp.
 
-        RocketMQ配置名称。
+        **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this RocketMQConfigResp.
         :type name: str
@@ -100,7 +100,7 @@ class RocketMQConfigResp:
     def value(self):
         r"""Gets the value of this RocketMQConfigResp.
 
-        RocketMQ配置当前值。
+        **参数解释**： RocketMQ配置当前值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The value of this RocketMQConfigResp.
         :rtype: str
@@ -111,7 +111,7 @@ class RocketMQConfigResp:
     def value(self, value):
         r"""Sets the value of this RocketMQConfigResp.
 
-        RocketMQ配置当前值。
+        **参数解释**： RocketMQ配置当前值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param value: The value of this RocketMQConfigResp.
         :type value: str
@@ -122,7 +122,7 @@ class RocketMQConfigResp:
     def config_type(self):
         r"""Gets the config_type of this RocketMQConfigResp.
 
-        RocketMQ配置的类型。
+        **参数解释**： RocketMQ配置的类型。 **约束限制**： 不涉及。 **取值范围**： - dynamic：动态。 - static：静态。    **默认取值**： 不涉及。
 
         :return: The config_type of this RocketMQConfigResp.
         :rtype: str
@@ -133,7 +133,7 @@ class RocketMQConfigResp:
     def config_type(self, config_type):
         r"""Sets the config_type of this RocketMQConfigResp.
 
-        RocketMQ配置的类型。
+        **参数解释**： RocketMQ配置的类型。 **约束限制**： 不涉及。 **取值范围**： - dynamic：动态。 - static：静态。    **默认取值**： 不涉及。
 
         :param config_type: The config_type of this RocketMQConfigResp.
         :type config_type: str
@@ -144,7 +144,7 @@ class RocketMQConfigResp:
     def default_value(self):
         r"""Gets the default_value of this RocketMQConfigResp.
 
-        RocketMQ配置的默认值。
+        **参数解释**： RocketMQ配置的默认值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The default_value of this RocketMQConfigResp.
         :rtype: str
@@ -155,7 +155,7 @@ class RocketMQConfigResp:
     def default_value(self, default_value):
         r"""Sets the default_value of this RocketMQConfigResp.
 
-        RocketMQ配置的默认值。
+        **参数解释**： RocketMQ配置的默认值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param default_value: The default_value of this RocketMQConfigResp.
         :type default_value: str
@@ -166,7 +166,7 @@ class RocketMQConfigResp:
     def valid_values(self):
         r"""Gets the valid_values of this RocketMQConfigResp.
 
-        RocketMQ配置取值的范围。
+        **参数解释**： RocketMQ配置取值的范围。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The valid_values of this RocketMQConfigResp.
         :rtype: str
@@ -177,7 +177,7 @@ class RocketMQConfigResp:
     def valid_values(self, valid_values):
         r"""Sets the valid_values of this RocketMQConfigResp.
 
-        RocketMQ配置取值的范围。
+        **参数解释**： RocketMQ配置取值的范围。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param valid_values: The valid_values of this RocketMQConfigResp.
         :type valid_values: str
@@ -188,7 +188,7 @@ class RocketMQConfigResp:
     def value_type(self):
         r"""Gets the value_type of this RocketMQConfigResp.
 
-        RocketMQ配置值的类型。
+        **参数解释**： RocketMQ配置值的类型。 **约束限制**： 不涉及。 **取值范围**： - integer：整数类型。 - boolean：布尔类型。 **默认取值**： 不涉及。
 
         :return: The value_type of this RocketMQConfigResp.
         :rtype: str
@@ -199,7 +199,7 @@ class RocketMQConfigResp:
     def value_type(self, value_type):
         r"""Sets the value_type of this RocketMQConfigResp.
 
-        RocketMQ配置值的类型。
+        **参数解释**： RocketMQ配置值的类型。 **约束限制**： 不涉及。 **取值范围**： - integer：整数类型。 - boolean：布尔类型。 **默认取值**： 不涉及。
 
         :param value_type: The value_type of this RocketMQConfigResp.
         :type value_type: str

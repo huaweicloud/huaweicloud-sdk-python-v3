@@ -75,9 +75,9 @@ class ListAccessControlLogsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
-        :param rule_id: 规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        :param rule_id: 规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type rule_id: str
         :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
@@ -91,9 +91,9 @@ class ListAccessControlLogsRequest:
         :type dst_ip: str
         :param dst_port: 目的端口
         :type dst_port: int
-        :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        :param protocol: 协议类型，包含TCP, UDP，ICMP，ICMPV6等。
         :type protocol: str
-        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        :param app: 规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param log_id: 文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
         :type log_id: str
@@ -103,7 +103,7 @@ class ListAccessControlLogsRequest:
         :type offset: int
         :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param log_type: 日志类型包括：internet，vpc，nat
+        :param log_type: **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
         :type log_type: str
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
@@ -207,7 +207,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -218,7 +218,7 @@ class ListAccessControlLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListAccessControlLogsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListAccessControlLogsRequest.
         :type fw_instance_id: str
@@ -229,7 +229,7 @@ class ListAccessControlLogsRequest:
     def rule_id(self):
         r"""Gets the rule_id of this ListAccessControlLogsRequest.
 
-        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The rule_id of this ListAccessControlLogsRequest.
         :rtype: str
@@ -240,7 +240,7 @@ class ListAccessControlLogsRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this ListAccessControlLogsRequest.
 
-        规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param rule_id: The rule_id of this ListAccessControlLogsRequest.
         :type rule_id: str
@@ -383,7 +383,7 @@ class ListAccessControlLogsRequest:
     def protocol(self):
         r"""Gets the protocol of this ListAccessControlLogsRequest.
 
-        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        协议类型，包含TCP, UDP，ICMP，ICMPV6等。
 
         :return: The protocol of this ListAccessControlLogsRequest.
         :rtype: str
@@ -394,7 +394,7 @@ class ListAccessControlLogsRequest:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListAccessControlLogsRequest.
 
-        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        协议类型，包含TCP, UDP，ICMP，ICMPV6等。
 
         :param protocol: The protocol of this ListAccessControlLogsRequest.
         :type protocol: str
@@ -405,7 +405,7 @@ class ListAccessControlLogsRequest:
     def app(self):
         r"""Gets the app of this ListAccessControlLogsRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this ListAccessControlLogsRequest.
         :rtype: str
@@ -416,7 +416,7 @@ class ListAccessControlLogsRequest:
     def app(self, app):
         r"""Sets the app of this ListAccessControlLogsRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this ListAccessControlLogsRequest.
         :type app: str
@@ -515,7 +515,7 @@ class ListAccessControlLogsRequest:
     def log_type(self):
         r"""Gets the log_type of this ListAccessControlLogsRequest.
 
-        日志类型包括：internet，vpc，nat
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :return: The log_type of this ListAccessControlLogsRequest.
         :rtype: str
@@ -526,7 +526,7 @@ class ListAccessControlLogsRequest:
     def log_type(self, log_type):
         r"""Sets the log_type of this ListAccessControlLogsRequest.
 
-        日志类型包括：internet，vpc，nat
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :param log_type: The log_type of this ListAccessControlLogsRequest.
         :type log_type: str

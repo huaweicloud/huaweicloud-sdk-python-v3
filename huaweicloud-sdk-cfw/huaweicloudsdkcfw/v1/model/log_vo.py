@@ -28,7 +28,7 @@ class LogVO:
         'src_ip': 'str',
         'src_port': 'int',
         'start_time': 'int',
-        'dst_region_id': 'object',
+        'dst_region_id': 'str',
         'dst_region_name': 'str',
         'dst_province_id': 'str',
         'dst_province_name': 'str',
@@ -154,7 +154,7 @@ class LogVO:
         :param start_time: **参数解释**： 会话开始时间，流量日志字段 **取值范围**： 不涉及
         :type start_time: int
         :param dst_region_id: **参数解释**： 目的地区ID **取值范围**： 不涉及
-        :type dst_region_id: object
+        :type dst_region_id: str
         :param dst_region_name: **参数解释**： 目的地区名称 **取值范围**： 不涉及
         :type dst_region_name: str
         :param dst_province_id: **参数解释**： 目的省份ID **取值范围**： 不涉及
@@ -682,7 +682,7 @@ class LogVO:
         **参数解释**： 目的地区ID **取值范围**： 不涉及
 
         :return: The dst_region_id of this LogVO.
-        :rtype: object
+        :rtype: str
         """
         return self._dst_region_id
 
@@ -693,7 +693,7 @@ class LogVO:
         **参数解释**： 目的地区ID **取值范围**： 不涉及
 
         :param dst_region_id: The dst_region_id of this LogVO.
-        :type dst_region_id: object
+        :type dst_region_id: str
         """
         self._dst_region_id = dst_region_id
 

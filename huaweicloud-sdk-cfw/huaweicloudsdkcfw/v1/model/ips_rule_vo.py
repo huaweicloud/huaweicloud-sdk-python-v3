@@ -45,25 +45,25 @@ class IpsRuleVO:
 
         The model defined in huaweicloud sdk
 
-        :param affected_application: 
+        :param affected_application: 受影响对象，可包含如下：Others、Sun、Apache、IBM、VMware、WordPress、Adobe、Oracle、Google Chrome等
         :type affected_application: str
-        :param create_time: 
+        :param create_time: ips规则创建的年份
         :type create_time: str
-        :param default_status: 
+        :param default_status: 默认状态
         :type default_status: str
-        :param ips_cve: 
+        :param ips_cve: cve id
         :type ips_cve: str
-        :param ips_group: 
+        :param ips_group: ips组，使用ips规则拦截模式区分，包含，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
         :type ips_group: str
-        :param ips_id: 
+        :param ips_id: ips规则id
         :type ips_id: str
-        :param ips_level: 
+        :param ips_level: ips严重等级，  ips严重等级，包含CRITICAL、HIGH、MEDIUM、LOW
         :type ips_level: str
-        :param ips_name: 
+        :param ips_name: ips规则名称
         :type ips_name: str
-        :param ips_rules_type: 
+        :param ips_rules_type: ips规则类型，包括漏洞扫描、黑客工具、特洛伊木马等
         :type ips_rules_type: str
-        :param ips_status: 
+        :param ips_status: ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
         :type ips_status: str
         """
         
@@ -106,6 +106,8 @@ class IpsRuleVO:
     def affected_application(self):
         r"""Gets the affected_application of this IpsRuleVO.
 
+        受影响对象，可包含如下：Others、Sun、Apache、IBM、VMware、WordPress、Adobe、Oracle、Google Chrome等
+
         :return: The affected_application of this IpsRuleVO.
         :rtype: str
         """
@@ -114,6 +116,8 @@ class IpsRuleVO:
     @affected_application.setter
     def affected_application(self, affected_application):
         r"""Sets the affected_application of this IpsRuleVO.
+
+        受影响对象，可包含如下：Others、Sun、Apache、IBM、VMware、WordPress、Adobe、Oracle、Google Chrome等
 
         :param affected_application: The affected_application of this IpsRuleVO.
         :type affected_application: str
@@ -124,6 +128,8 @@ class IpsRuleVO:
     def create_time(self):
         r"""Gets the create_time of this IpsRuleVO.
 
+        ips规则创建的年份
+
         :return: The create_time of this IpsRuleVO.
         :rtype: str
         """
@@ -132,6 +138,8 @@ class IpsRuleVO:
     @create_time.setter
     def create_time(self, create_time):
         r"""Sets the create_time of this IpsRuleVO.
+
+        ips规则创建的年份
 
         :param create_time: The create_time of this IpsRuleVO.
         :type create_time: str
@@ -142,6 +150,8 @@ class IpsRuleVO:
     def default_status(self):
         r"""Gets the default_status of this IpsRuleVO.
 
+        默认状态
+
         :return: The default_status of this IpsRuleVO.
         :rtype: str
         """
@@ -150,6 +160,8 @@ class IpsRuleVO:
     @default_status.setter
     def default_status(self, default_status):
         r"""Sets the default_status of this IpsRuleVO.
+
+        默认状态
 
         :param default_status: The default_status of this IpsRuleVO.
         :type default_status: str
@@ -160,6 +172,8 @@ class IpsRuleVO:
     def ips_cve(self):
         r"""Gets the ips_cve of this IpsRuleVO.
 
+        cve id
+
         :return: The ips_cve of this IpsRuleVO.
         :rtype: str
         """
@@ -168,6 +182,8 @@ class IpsRuleVO:
     @ips_cve.setter
     def ips_cve(self, ips_cve):
         r"""Sets the ips_cve of this IpsRuleVO.
+
+        cve id
 
         :param ips_cve: The ips_cve of this IpsRuleVO.
         :type ips_cve: str
@@ -178,6 +194,8 @@ class IpsRuleVO:
     def ips_group(self):
         r"""Gets the ips_group of this IpsRuleVO.
 
+        ips组，使用ips规则拦截模式区分，包含，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
+
         :return: The ips_group of this IpsRuleVO.
         :rtype: str
         """
@@ -186,6 +204,8 @@ class IpsRuleVO:
     @ips_group.setter
     def ips_group(self, ips_group):
         r"""Sets the ips_group of this IpsRuleVO.
+
+        ips组，使用ips规则拦截模式区分，包含，0：观察模式，1：严格模式，2：中等模式，3：宽松模式
 
         :param ips_group: The ips_group of this IpsRuleVO.
         :type ips_group: str
@@ -196,6 +216,8 @@ class IpsRuleVO:
     def ips_id(self):
         r"""Gets the ips_id of this IpsRuleVO.
 
+        ips规则id
+
         :return: The ips_id of this IpsRuleVO.
         :rtype: str
         """
@@ -204,6 +226,8 @@ class IpsRuleVO:
     @ips_id.setter
     def ips_id(self, ips_id):
         r"""Sets the ips_id of this IpsRuleVO.
+
+        ips规则id
 
         :param ips_id: The ips_id of this IpsRuleVO.
         :type ips_id: str
@@ -214,6 +238,8 @@ class IpsRuleVO:
     def ips_level(self):
         r"""Gets the ips_level of this IpsRuleVO.
 
+        ips严重等级，  ips严重等级，包含CRITICAL、HIGH、MEDIUM、LOW
+
         :return: The ips_level of this IpsRuleVO.
         :rtype: str
         """
@@ -222,6 +248,8 @@ class IpsRuleVO:
     @ips_level.setter
     def ips_level(self, ips_level):
         r"""Sets the ips_level of this IpsRuleVO.
+
+        ips严重等级，  ips严重等级，包含CRITICAL、HIGH、MEDIUM、LOW
 
         :param ips_level: The ips_level of this IpsRuleVO.
         :type ips_level: str
@@ -232,6 +260,8 @@ class IpsRuleVO:
     def ips_name(self):
         r"""Gets the ips_name of this IpsRuleVO.
 
+        ips规则名称
+
         :return: The ips_name of this IpsRuleVO.
         :rtype: str
         """
@@ -240,6 +270,8 @@ class IpsRuleVO:
     @ips_name.setter
     def ips_name(self, ips_name):
         r"""Sets the ips_name of this IpsRuleVO.
+
+        ips规则名称
 
         :param ips_name: The ips_name of this IpsRuleVO.
         :type ips_name: str
@@ -250,6 +282,8 @@ class IpsRuleVO:
     def ips_rules_type(self):
         r"""Gets the ips_rules_type of this IpsRuleVO.
 
+        ips规则类型，包括漏洞扫描、黑客工具、特洛伊木马等
+
         :return: The ips_rules_type of this IpsRuleVO.
         :rtype: str
         """
@@ -258,6 +292,8 @@ class IpsRuleVO:
     @ips_rules_type.setter
     def ips_rules_type(self, ips_rules_type):
         r"""Sets the ips_rules_type of this IpsRuleVO.
+
+        ips规则类型，包括漏洞扫描、黑客工具、特洛伊木马等
 
         :param ips_rules_type: The ips_rules_type of this IpsRuleVO.
         :type ips_rules_type: str
@@ -268,6 +304,8 @@ class IpsRuleVO:
     def ips_status(self):
         r"""Gets the ips_status of this IpsRuleVO.
 
+        ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
+
         :return: The ips_status of this IpsRuleVO.
         :rtype: str
         """
@@ -276,6 +314,8 @@ class IpsRuleVO:
     @ips_status.setter
     def ips_status(self, ips_status):
         r"""Sets the ips_status of this IpsRuleVO.
+
+        ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
 
         :param ips_status: The ips_status of this IpsRuleVO.
         :type ips_status: str

@@ -16,27 +16,27 @@ class StepDetail:
 
     openapi_types = {
         'name': 'str',
-        'status': 'str',
+        'statue': 'str',
         'start_time': 'str',
         'end_time': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'status': 'status',
+        'statue': 'statue',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, name=None, status=None, start_time=None, end_time=None):
+    def __init__(self, name=None, statue=None, start_time=None, end_time=None):
         r"""StepDetail
 
         The model defined in huaweicloud sdk
 
         :param name: **参数解释**： 任务名称。  **取值范围**： 不涉及。
         :type name: str
-        :param status: **参数解释**： 任务状态。 **取值范围**： - COMPLETED：任务已完成。 - IN_PROGRESS：任务正在进行。 - FAILED：任务失败。 - WAITING：等待开始。
-        :type status: str
+        :param statue: **参数解释**： 任务状态。 **取值范围**： - COMPLETED：任务已完成。 - IN_PROGRESS：任务正在进行。 - FAILED：任务失败。 - WAITING：等待开始。
+        :type statue: str
         :param start_time: **参数解释**： 开始时间。     **取值范围**： 不涉及。
         :type start_time: str
         :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
@@ -46,15 +46,15 @@ class StepDetail:
         
 
         self._name = None
-        self._status = None
+        self._statue = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if status is not None:
-            self.status = status
+        if statue is not None:
+            self.statue = statue
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -83,26 +83,26 @@ class StepDetail:
         self._name = name
 
     @property
-    def status(self):
-        r"""Gets the status of this StepDetail.
+    def statue(self):
+        r"""Gets the statue of this StepDetail.
 
         **参数解释**： 任务状态。 **取值范围**： - COMPLETED：任务已完成。 - IN_PROGRESS：任务正在进行。 - FAILED：任务失败。 - WAITING：等待开始。
 
-        :return: The status of this StepDetail.
+        :return: The statue of this StepDetail.
         :rtype: str
         """
-        return self._status
+        return self._statue
 
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this StepDetail.
+    @statue.setter
+    def statue(self, statue):
+        r"""Sets the statue of this StepDetail.
 
         **参数解释**： 任务状态。 **取值范围**： - COMPLETED：任务已完成。 - IN_PROGRESS：任务正在进行。 - FAILED：任务失败。 - WAITING：等待开始。
 
-        :param status: The status of this StepDetail.
-        :type status: str
+        :param statue: The statue of this StepDetail.
+        :type statue: str
         """
-        self._status = status
+        self._statue = statue
 
     @property
     def start_time(self):

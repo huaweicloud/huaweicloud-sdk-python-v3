@@ -59,31 +59,31 @@ class AddRuleAclDtoRules:
 
         The model defined in huaweicloud sdk
 
-        :param name: 规则名称
+        :param name: **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
         :param sequence: 
         :type sequence: :class:`huaweicloudsdkcfw.v1.OrderRuleAclDto`
-        :param address_type: 地址类型，0表示ipv4，1表示ipv6
+        :param address_type: **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
         :type address_type: int
-        :param action_type: 规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
+        :param action_type: **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
         :type action_type: int
-        :param status: 规则启用状态，0表示禁用，1表示启用
+        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
         :type status: int
-        :param applications: 规则应用列表，规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        :param applications: **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
         :type applications: list[str]
-        :param long_connect_time: 长连接时长
+        :param long_connect_time: **参数解释**： 长连接时长（s），用于表示流量产生会话保持的最大时长。 **约束限制**： 仅能为数字 **取值范围**： 1-86400000。 **默认取值**： 不涉及
         :type long_connect_time: int
-        :param long_connect_time_hour: 长连接时长对应小时
+        :param long_connect_time_hour: **参数解释**： 长连接时长对应小时数（h）。 **约束限制**： 仅能为数字 **取值范围**： 0-24000。 **默认取值**： 不涉及
         :type long_connect_time_hour: int
-        :param long_connect_time_minute: 长连接时长对应分钟
+        :param long_connect_time_minute: **参数解释**： 长连接时长对应分钟数（min）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
         :type long_connect_time_minute: int
-        :param long_connect_time_second: 长连接时长秒
+        :param long_connect_time_second: **参数解释**： 长连接时长对应秒数（s）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
         :type long_connect_time_second: int
-        :param long_connect_enable: 是否支持长连接，0表示不支持长连接，1表示支持长连接
+        :param long_connect_enable: **参数解释**： 用于表示是否支持长连接。 **约束限制**： 不涉及 **取值范围**： 0表示不支持，1表示支持 **默认取值**： 不涉及
         :type long_connect_enable: int
-        :param description: 描述
+        :param description: **参数解释**： 规则描述，用于描述规则的用途。 **约束限制**： 不涉及 **取值范围**： 长度在0-255之间 **默认取值**： 不涉及
         :type description: str
-        :param direction: 方向：0表示外到内，1表示内到外，规则type&#x3D;0（互联网规则）或者type&#x3D; 2（nat规则）时方向值必填
+        :param direction: **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type&#x3D;0（互联网规则）或者type&#x3D; 2（NAT规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
         :type direction: int
         :param source: 
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForRequest`
@@ -146,7 +146,7 @@ class AddRuleAclDtoRules:
     def name(self):
         r"""Gets the name of this AddRuleAclDtoRules.
 
-        规则名称
+        **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this AddRuleAclDtoRules.
         :rtype: str
@@ -157,7 +157,7 @@ class AddRuleAclDtoRules:
     def name(self, name):
         r"""Sets the name of this AddRuleAclDtoRules.
 
-        规则名称
+        **参数解释**： 规则名称，由用户定义，用于标识规则 **约束限制**： 字符串长度为0到255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this AddRuleAclDtoRules.
         :type name: str
@@ -186,7 +186,7 @@ class AddRuleAclDtoRules:
     def address_type(self):
         r"""Gets the address_type of this AddRuleAclDtoRules.
 
-        地址类型，0表示ipv4，1表示ipv6
+        **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
 
         :return: The address_type of this AddRuleAclDtoRules.
         :rtype: int
@@ -197,7 +197,7 @@ class AddRuleAclDtoRules:
     def address_type(self, address_type):
         r"""Sets the address_type of this AddRuleAclDtoRules.
 
-        地址类型，0表示ipv4，1表示ipv6
+        **参数解释**： IP地址的互联网协议类型，用于指定IP地址的互联网协议，由客户指定 **约束限制**： 不涉及 **取值范围**： 0表示IPv4，1表示IPv6 **默认取值**： 不涉及
 
         :param address_type: The address_type of this AddRuleAclDtoRules.
         :type address_type: int
@@ -208,7 +208,7 @@ class AddRuleAclDtoRules:
     def action_type(self):
         r"""Gets the action_type of this AddRuleAclDtoRules.
 
-        规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
+        **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
 
         :return: The action_type of this AddRuleAclDtoRules.
         :rtype: int
@@ -219,7 +219,7 @@ class AddRuleAclDtoRules:
     def action_type(self, action_type):
         r"""Sets the action_type of this AddRuleAclDtoRules.
 
-        规则动作，0表示允许通行（permit），1表示拒绝通行（deny）
+        **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
 
         :param action_type: The action_type of this AddRuleAclDtoRules.
         :type action_type: int
@@ -230,7 +230,7 @@ class AddRuleAclDtoRules:
     def status(self):
         r"""Gets the status of this AddRuleAclDtoRules.
 
-        规则启用状态，0表示禁用，1表示启用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
 
         :return: The status of this AddRuleAclDtoRules.
         :rtype: int
@@ -241,7 +241,7 @@ class AddRuleAclDtoRules:
     def status(self, status):
         r"""Sets the status of this AddRuleAclDtoRules.
 
-        规则启用状态，0表示禁用，1表示启用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
 
         :param status: The status of this AddRuleAclDtoRules.
         :type status: int
@@ -252,7 +252,7 @@ class AddRuleAclDtoRules:
     def applications(self):
         r"""Gets the applications of this AddRuleAclDtoRules.
 
-        规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
 
         :return: The applications of this AddRuleAclDtoRules.
         :rtype: list[str]
@@ -263,7 +263,7 @@ class AddRuleAclDtoRules:
     def applications(self, applications):
         r"""Sets the applications of this AddRuleAclDtoRules.
 
-        规则应用列表，规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。
+        **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
 
         :param applications: The applications of this AddRuleAclDtoRules.
         :type applications: list[str]
@@ -274,7 +274,7 @@ class AddRuleAclDtoRules:
     def long_connect_time(self):
         r"""Gets the long_connect_time of this AddRuleAclDtoRules.
 
-        长连接时长
+        **参数解释**： 长连接时长（s），用于表示流量产生会话保持的最大时长。 **约束限制**： 仅能为数字 **取值范围**： 1-86400000。 **默认取值**： 不涉及
 
         :return: The long_connect_time of this AddRuleAclDtoRules.
         :rtype: int
@@ -285,7 +285,7 @@ class AddRuleAclDtoRules:
     def long_connect_time(self, long_connect_time):
         r"""Sets the long_connect_time of this AddRuleAclDtoRules.
 
-        长连接时长
+        **参数解释**： 长连接时长（s），用于表示流量产生会话保持的最大时长。 **约束限制**： 仅能为数字 **取值范围**： 1-86400000。 **默认取值**： 不涉及
 
         :param long_connect_time: The long_connect_time of this AddRuleAclDtoRules.
         :type long_connect_time: int
@@ -296,7 +296,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_hour(self):
         r"""Gets the long_connect_time_hour of this AddRuleAclDtoRules.
 
-        长连接时长对应小时
+        **参数解释**： 长连接时长对应小时数（h）。 **约束限制**： 仅能为数字 **取值范围**： 0-24000。 **默认取值**： 不涉及
 
         :return: The long_connect_time_hour of this AddRuleAclDtoRules.
         :rtype: int
@@ -307,7 +307,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_hour(self, long_connect_time_hour):
         r"""Sets the long_connect_time_hour of this AddRuleAclDtoRules.
 
-        长连接时长对应小时
+        **参数解释**： 长连接时长对应小时数（h）。 **约束限制**： 仅能为数字 **取值范围**： 0-24000。 **默认取值**： 不涉及
 
         :param long_connect_time_hour: The long_connect_time_hour of this AddRuleAclDtoRules.
         :type long_connect_time_hour: int
@@ -318,7 +318,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_minute(self):
         r"""Gets the long_connect_time_minute of this AddRuleAclDtoRules.
 
-        长连接时长对应分钟
+        **参数解释**： 长连接时长对应分钟数（min）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
 
         :return: The long_connect_time_minute of this AddRuleAclDtoRules.
         :rtype: int
@@ -329,7 +329,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_minute(self, long_connect_time_minute):
         r"""Sets the long_connect_time_minute of this AddRuleAclDtoRules.
 
-        长连接时长对应分钟
+        **参数解释**： 长连接时长对应分钟数（min）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
 
         :param long_connect_time_minute: The long_connect_time_minute of this AddRuleAclDtoRules.
         :type long_connect_time_minute: int
@@ -340,7 +340,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_second(self):
         r"""Gets the long_connect_time_second of this AddRuleAclDtoRules.
 
-        长连接时长秒
+        **参数解释**： 长连接时长对应秒数（s）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
 
         :return: The long_connect_time_second of this AddRuleAclDtoRules.
         :rtype: int
@@ -351,7 +351,7 @@ class AddRuleAclDtoRules:
     def long_connect_time_second(self, long_connect_time_second):
         r"""Sets the long_connect_time_second of this AddRuleAclDtoRules.
 
-        长连接时长秒
+        **参数解释**： 长连接时长对应秒数（s）。 **约束限制**： 仅能为数字 **取值范围**： 0-60。 **默认取值**： 不涉及
 
         :param long_connect_time_second: The long_connect_time_second of this AddRuleAclDtoRules.
         :type long_connect_time_second: int
@@ -362,7 +362,7 @@ class AddRuleAclDtoRules:
     def long_connect_enable(self):
         r"""Gets the long_connect_enable of this AddRuleAclDtoRules.
 
-        是否支持长连接，0表示不支持长连接，1表示支持长连接
+        **参数解释**： 用于表示是否支持长连接。 **约束限制**： 不涉及 **取值范围**： 0表示不支持，1表示支持 **默认取值**： 不涉及
 
         :return: The long_connect_enable of this AddRuleAclDtoRules.
         :rtype: int
@@ -373,7 +373,7 @@ class AddRuleAclDtoRules:
     def long_connect_enable(self, long_connect_enable):
         r"""Sets the long_connect_enable of this AddRuleAclDtoRules.
 
-        是否支持长连接，0表示不支持长连接，1表示支持长连接
+        **参数解释**： 用于表示是否支持长连接。 **约束限制**： 不涉及 **取值范围**： 0表示不支持，1表示支持 **默认取值**： 不涉及
 
         :param long_connect_enable: The long_connect_enable of this AddRuleAclDtoRules.
         :type long_connect_enable: int
@@ -384,7 +384,7 @@ class AddRuleAclDtoRules:
     def description(self):
         r"""Gets the description of this AddRuleAclDtoRules.
 
-        描述
+        **参数解释**： 规则描述，用于描述规则的用途。 **约束限制**： 不涉及 **取值范围**： 长度在0-255之间 **默认取值**： 不涉及
 
         :return: The description of this AddRuleAclDtoRules.
         :rtype: str
@@ -395,7 +395,7 @@ class AddRuleAclDtoRules:
     def description(self, description):
         r"""Sets the description of this AddRuleAclDtoRules.
 
-        描述
+        **参数解释**： 规则描述，用于描述规则的用途。 **约束限制**： 不涉及 **取值范围**： 长度在0-255之间 **默认取值**： 不涉及
 
         :param description: The description of this AddRuleAclDtoRules.
         :type description: str
@@ -406,7 +406,7 @@ class AddRuleAclDtoRules:
     def direction(self):
         r"""Gets the direction of this AddRuleAclDtoRules.
 
-        方向：0表示外到内，1表示内到外，规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
+        **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type=0（互联网规则）或者type= 2（NAT规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
 
         :return: The direction of this AddRuleAclDtoRules.
         :rtype: int
@@ -417,7 +417,7 @@ class AddRuleAclDtoRules:
     def direction(self, direction):
         r"""Sets the direction of this AddRuleAclDtoRules.
 
-        方向：0表示外到内，1表示内到外，规则type=0（互联网规则）或者type= 2（nat规则）时方向值必填
+        **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type=0（互联网规则）或者type= 2（NAT规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
 
         :param direction: The direction of this AddRuleAclDtoRules.
         :type direction: int

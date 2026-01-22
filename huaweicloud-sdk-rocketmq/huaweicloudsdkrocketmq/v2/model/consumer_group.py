@@ -23,7 +23,8 @@ class ConsumerGroup:
         'retry_max_time': 'int',
         'created_at': 'int',
         'permissions': 'list[str]',
-        'consume_orderly': 'bool'
+        'consume_orderly': 'bool',
+        'group_online': 'bool'
     }
 
     attribute_map = {
@@ -33,34 +34,37 @@ class ConsumerGroup:
         'name': 'name',
         'group_desc': 'group_desc',
         'retry_max_time': 'retry_max_time',
-        'created_at': 'createdAt',
+        'created_at': 'created_at',
         'permissions': 'permissions',
-        'consume_orderly': 'consume_orderly'
+        'consume_orderly': 'consume_orderly',
+        'group_online': 'group_online'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None, group_online=None):
         r"""ConsumerGroup
 
         The model defined in huaweicloud sdk
 
-        :param enabled: **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
+        :param enabled: **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
         :type enabled: bool
-        :param broadcast: **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
+        :param broadcast: **参数解释**： 是否广播。 **约束限制**： 不涉及。 **取值范围**： - true：可以广播。 - false：不可以广播。 **默认取值**： 不涉及。
         :type broadcast: bool
-        :param brokers: **参数解释**： 关联的代理列表。
+        :param brokers: **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[str]
-        :param name: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        :param name: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param group_desc: **参数解释**： 消费组描述。 **取值范围**： 不涉及。
+        :param group_desc: **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_desc: str
-        :param retry_max_time: **参数解释**： 最大重试次数。 **取值范围**： 1~16。
+        :param retry_max_time: **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
         :type retry_max_time: int
-        :param created_at: **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
+        :param created_at: **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type created_at: int
-        :param permissions: **参数解释**： 权限集。
+        :param permissions: **参数解释**： 权限集。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type permissions: list[str]
-        :param consume_orderly: **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
+        :param consume_orderly: **参数解释**： 是否按顺序消费。 **约束限制**： 不涉及。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
         :type consume_orderly: bool
+        :param group_online: **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+        :type group_online: bool
         """
         
         
@@ -74,6 +78,7 @@ class ConsumerGroup:
         self._created_at = None
         self._permissions = None
         self._consume_orderly = None
+        self._group_online = None
         self.discriminator = None
 
         if enabled is not None:
@@ -94,12 +99,14 @@ class ConsumerGroup:
             self.permissions = permissions
         if consume_orderly is not None:
             self.consume_orderly = consume_orderly
+        if group_online is not None:
+            self.group_online = group_online
 
     @property
     def enabled(self):
         r"""Gets the enabled of this ConsumerGroup.
 
-        **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :return: The enabled of this ConsumerGroup.
         :rtype: bool
@@ -110,7 +117,7 @@ class ConsumerGroup:
     def enabled(self, enabled):
         r"""Sets the enabled of this ConsumerGroup.
 
-        **参数解释**： 是否可以消费。 **取值范围**： - true：可以消费。 - false：不可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :param enabled: The enabled of this ConsumerGroup.
         :type enabled: bool
@@ -121,7 +128,7 @@ class ConsumerGroup:
     def broadcast(self):
         r"""Gets the broadcast of this ConsumerGroup.
 
-        **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
+        **参数解释**： 是否广播。 **约束限制**： 不涉及。 **取值范围**： - true：可以广播。 - false：不可以广播。 **默认取值**： 不涉及。
 
         :return: The broadcast of this ConsumerGroup.
         :rtype: bool
@@ -132,7 +139,7 @@ class ConsumerGroup:
     def broadcast(self, broadcast):
         r"""Sets the broadcast of this ConsumerGroup.
 
-        **参数解释**： 是否广播。 **取值范围**： - true：可以广播。 - false：不可以广播。
+        **参数解释**： 是否广播。 **约束限制**： 不涉及。 **取值范围**： - true：可以广播。 - false：不可以广播。 **默认取值**： 不涉及。
 
         :param broadcast: The broadcast of this ConsumerGroup.
         :type broadcast: bool
@@ -143,7 +150,7 @@ class ConsumerGroup:
     def brokers(self):
         r"""Gets the brokers of this ConsumerGroup.
 
-        **参数解释**： 关联的代理列表。
+        **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this ConsumerGroup.
         :rtype: list[str]
@@ -154,7 +161,7 @@ class ConsumerGroup:
     def brokers(self, brokers):
         r"""Sets the brokers of this ConsumerGroup.
 
-        **参数解释**： 关联的代理列表。
+        **参数解释**： 关联的代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this ConsumerGroup.
         :type brokers: list[str]
@@ -165,7 +172,7 @@ class ConsumerGroup:
     def name(self):
         r"""Gets the name of this ConsumerGroup.
 
-        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ConsumerGroup.
         :rtype: str
@@ -176,7 +183,7 @@ class ConsumerGroup:
     def name(self, name):
         r"""Sets the name of this ConsumerGroup.
 
-        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ConsumerGroup.
         :type name: str
@@ -187,7 +194,7 @@ class ConsumerGroup:
     def group_desc(self):
         r"""Gets the group_desc of this ConsumerGroup.
 
-        **参数解释**： 消费组描述。 **取值范围**： 不涉及。
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_desc of this ConsumerGroup.
         :rtype: str
@@ -198,7 +205,7 @@ class ConsumerGroup:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this ConsumerGroup.
 
-        **参数解释**： 消费组描述。 **取值范围**： 不涉及。
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_desc: The group_desc of this ConsumerGroup.
         :type group_desc: str
@@ -209,7 +216,7 @@ class ConsumerGroup:
     def retry_max_time(self):
         r"""Gets the retry_max_time of this ConsumerGroup.
 
-        **参数解释**： 最大重试次数。 **取值范围**： 1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :return: The retry_max_time of this ConsumerGroup.
         :rtype: int
@@ -220,7 +227,7 @@ class ConsumerGroup:
     def retry_max_time(self, retry_max_time):
         r"""Sets the retry_max_time of this ConsumerGroup.
 
-        **参数解释**： 最大重试次数。 **取值范围**： 1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :param retry_max_time: The retry_max_time of this ConsumerGroup.
         :type retry_max_time: int
@@ -231,7 +238,7 @@ class ConsumerGroup:
     def created_at(self):
         r"""Gets the created_at of this ConsumerGroup.
 
-        **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The created_at of this ConsumerGroup.
         :rtype: int
@@ -242,7 +249,7 @@ class ConsumerGroup:
     def created_at(self, created_at):
         r"""Sets the created_at of this ConsumerGroup.
 
-        **参数解释**： 创建时间戳。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param created_at: The created_at of this ConsumerGroup.
         :type created_at: int
@@ -253,7 +260,7 @@ class ConsumerGroup:
     def permissions(self):
         r"""Gets the permissions of this ConsumerGroup.
 
-        **参数解释**： 权限集。
+        **参数解释**： 权限集。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The permissions of this ConsumerGroup.
         :rtype: list[str]
@@ -264,7 +271,7 @@ class ConsumerGroup:
     def permissions(self, permissions):
         r"""Sets the permissions of this ConsumerGroup.
 
-        **参数解释**： 权限集。
+        **参数解释**： 权限集。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param permissions: The permissions of this ConsumerGroup.
         :type permissions: list[str]
@@ -275,7 +282,7 @@ class ConsumerGroup:
     def consume_orderly(self):
         r"""Gets the consume_orderly of this ConsumerGroup.
 
-        **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
+        **参数解释**： 是否按顺序消费。 **约束限制**： 不涉及。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :return: The consume_orderly of this ConsumerGroup.
         :rtype: bool
@@ -286,12 +293,34 @@ class ConsumerGroup:
     def consume_orderly(self, consume_orderly):
         r"""Sets the consume_orderly of this ConsumerGroup.
 
-        **参数解释**： 是否按顺序消费。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。
+        **参数解释**： 是否按顺序消费。 **约束限制**： 不涉及。 **取值范围**： - true：按顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :param consume_orderly: The consume_orderly of this ConsumerGroup.
         :type consume_orderly: bool
         """
         self._consume_orderly = consume_orderly
+
+    @property
+    def group_online(self):
+        r"""Gets the group_online of this ConsumerGroup.
+
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+
+        :return: The group_online of this ConsumerGroup.
+        :rtype: bool
+        """
+        return self._group_online
+
+    @group_online.setter
+    def group_online(self, group_online):
+        r"""Sets the group_online of this ConsumerGroup.
+
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+
+        :param group_online: The group_online of this ConsumerGroup.
+        :type group_online: bool
+        """
+        self._group_online = group_online
 
     def to_dict(self):
         result = {}

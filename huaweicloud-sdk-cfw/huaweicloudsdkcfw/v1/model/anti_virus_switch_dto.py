@@ -29,9 +29,9 @@ class AntiVirusSwitchDto:
 
         The model defined in huaweicloud sdk
 
-        :param anti_virus_status: 反病毒开关状态
+        :param anti_virus_status: 参数解释： 反病毒开关状态，为必传参数 约束限制： 不涉及 取值范围： 0：开启 1：关闭 默认取值： 不涉及
         :type anti_virus_status: int
-        :param object_id: 防护对象ID
+        :param object_id: 防护对象ID，为必传参数
         :type object_id: str
         """
         
@@ -50,7 +50,7 @@ class AntiVirusSwitchDto:
     def anti_virus_status(self):
         r"""Gets the anti_virus_status of this AntiVirusSwitchDto.
 
-        反病毒开关状态
+        参数解释： 反病毒开关状态，为必传参数 约束限制： 不涉及 取值范围： 0：开启 1：关闭 默认取值： 不涉及
 
         :return: The anti_virus_status of this AntiVirusSwitchDto.
         :rtype: int
@@ -61,7 +61,7 @@ class AntiVirusSwitchDto:
     def anti_virus_status(self, anti_virus_status):
         r"""Sets the anti_virus_status of this AntiVirusSwitchDto.
 
-        反病毒开关状态
+        参数解释： 反病毒开关状态，为必传参数 约束限制： 不涉及 取值范围： 0：开启 1：关闭 默认取值： 不涉及
 
         :param anti_virus_status: The anti_virus_status of this AntiVirusSwitchDto.
         :type anti_virus_status: int
@@ -72,7 +72,7 @@ class AntiVirusSwitchDto:
     def object_id(self):
         r"""Gets the object_id of this AntiVirusSwitchDto.
 
-        防护对象ID
+        防护对象ID，为必传参数
 
         :return: The object_id of this AntiVirusSwitchDto.
         :rtype: str
@@ -83,7 +83,7 @@ class AntiVirusSwitchDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this AntiVirusSwitchDto.
 
-        防护对象ID
+        防护对象ID，为必传参数
 
         :param object_id: The object_id of this AntiVirusSwitchDto.
         :type object_id: str

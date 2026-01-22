@@ -37,17 +37,17 @@ class AddDomainSetInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type fw_instance_id: str
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        :param object_id: **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type object_id: str
-        :param name: 域名组名称
+        :param name: **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param description: 域名组描述
+        :param description: **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type description: str
-        :param domain_names: 域名信息列表
+        :param domain_names: **参数解释**： 域名信息列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_names: list[:class:`huaweicloudsdkcfw.v1.DomainSetInfoDto`]
-        :param domain_set_type: 域名组类型，0表示应用域名组，1表示网络域名组
+        :param domain_set_type: **参数解释**： 域名组类型 **约束限制**： 不涉及 **取值范围**： - 0：应用域名组 - 1：网络域名组 **默认取值**： 不涉及
         :type domain_set_type: int
         """
         
@@ -61,8 +61,7 @@ class AddDomainSetInfoDto:
         self._domain_set_type = None
         self.discriminator = None
 
-        if fw_instance_id is not None:
-            self.fw_instance_id = fw_instance_id
+        self.fw_instance_id = fw_instance_id
         self.object_id = object_id
         self.name = name
         if description is not None:
@@ -75,7 +74,7 @@ class AddDomainSetInfoDto:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this AddDomainSetInfoDto.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The fw_instance_id of this AddDomainSetInfoDto.
         :rtype: str
@@ -86,7 +85,7 @@ class AddDomainSetInfoDto:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this AddDomainSetInfoDto.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this AddDomainSetInfoDto.
         :type fw_instance_id: str
@@ -97,7 +96,7 @@ class AddDomainSetInfoDto:
     def object_id(self):
         r"""Gets the object_id of this AddDomainSetInfoDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The object_id of this AddDomainSetInfoDto.
         :rtype: str
@@ -108,7 +107,7 @@ class AddDomainSetInfoDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this AddDomainSetInfoDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param object_id: The object_id of this AddDomainSetInfoDto.
         :type object_id: str
@@ -119,7 +118,7 @@ class AddDomainSetInfoDto:
     def name(self):
         r"""Gets the name of this AddDomainSetInfoDto.
 
-        域名组名称
+        **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this AddDomainSetInfoDto.
         :rtype: str
@@ -130,7 +129,7 @@ class AddDomainSetInfoDto:
     def name(self, name):
         r"""Sets the name of this AddDomainSetInfoDto.
 
-        域名组名称
+        **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this AddDomainSetInfoDto.
         :type name: str
@@ -141,7 +140,7 @@ class AddDomainSetInfoDto:
     def description(self):
         r"""Gets the description of this AddDomainSetInfoDto.
 
-        域名组描述
+        **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The description of this AddDomainSetInfoDto.
         :rtype: str
@@ -152,7 +151,7 @@ class AddDomainSetInfoDto:
     def description(self, description):
         r"""Sets the description of this AddDomainSetInfoDto.
 
-        域名组描述
+        **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param description: The description of this AddDomainSetInfoDto.
         :type description: str
@@ -163,7 +162,7 @@ class AddDomainSetInfoDto:
     def domain_names(self):
         r"""Gets the domain_names of this AddDomainSetInfoDto.
 
-        域名信息列表
+        **参数解释**： 域名信息列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The domain_names of this AddDomainSetInfoDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.DomainSetInfoDto`]
@@ -174,7 +173,7 @@ class AddDomainSetInfoDto:
     def domain_names(self, domain_names):
         r"""Sets the domain_names of this AddDomainSetInfoDto.
 
-        域名信息列表
+        **参数解释**： 域名信息列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param domain_names: The domain_names of this AddDomainSetInfoDto.
         :type domain_names: list[:class:`huaweicloudsdkcfw.v1.DomainSetInfoDto`]
@@ -185,7 +184,7 @@ class AddDomainSetInfoDto:
     def domain_set_type(self):
         r"""Gets the domain_set_type of this AddDomainSetInfoDto.
 
-        域名组类型，0表示应用域名组，1表示网络域名组
+        **参数解释**： 域名组类型 **约束限制**： 不涉及 **取值范围**： - 0：应用域名组 - 1：网络域名组 **默认取值**： 不涉及
 
         :return: The domain_set_type of this AddDomainSetInfoDto.
         :rtype: int
@@ -196,7 +195,7 @@ class AddDomainSetInfoDto:
     def domain_set_type(self, domain_set_type):
         r"""Sets the domain_set_type of this AddDomainSetInfoDto.
 
-        域名组类型，0表示应用域名组，1表示网络域名组
+        **参数解释**： 域名组类型 **约束限制**： 不涉及 **取值范围**： - 0：应用域名组 - 1：网络域名组 **默认取值**： 不涉及
 
         :param domain_set_type: The domain_set_type of this AddDomainSetInfoDto.
         :type domain_set_type: int

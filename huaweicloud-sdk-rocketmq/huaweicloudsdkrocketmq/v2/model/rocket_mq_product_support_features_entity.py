@@ -29,9 +29,9 @@ class RocketMQProductSupportFeaturesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param name: 特性名称。
+        :param name: **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param properties: 功能特性的键值对。
+        :param properties: **参数解释**： 功能特性的键值对。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type properties: dict(str, str)
         """
         
@@ -50,7 +50,7 @@ class RocketMQProductSupportFeaturesEntity:
     def name(self):
         r"""Gets the name of this RocketMQProductSupportFeaturesEntity.
 
-        特性名称。
+        **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this RocketMQProductSupportFeaturesEntity.
         :rtype: str
@@ -61,7 +61,7 @@ class RocketMQProductSupportFeaturesEntity:
     def name(self, name):
         r"""Sets the name of this RocketMQProductSupportFeaturesEntity.
 
-        特性名称。
+        **参数解释**： 特性名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this RocketMQProductSupportFeaturesEntity.
         :type name: str
@@ -72,7 +72,7 @@ class RocketMQProductSupportFeaturesEntity:
     def properties(self):
         r"""Gets the properties of this RocketMQProductSupportFeaturesEntity.
 
-        功能特性的键值对。
+        **参数解释**： 功能特性的键值对。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The properties of this RocketMQProductSupportFeaturesEntity.
         :rtype: dict(str, str)
@@ -83,7 +83,7 @@ class RocketMQProductSupportFeaturesEntity:
     def properties(self, properties):
         r"""Sets the properties of this RocketMQProductSupportFeaturesEntity.
 
-        功能特性的键值对。
+        **参数解释**： 功能特性的键值对。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param properties: The properties of this RocketMQProductSupportFeaturesEntity.
         :type properties: dict(str, str)

@@ -29,9 +29,9 @@ class DiffConfigurationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param source_configuration_id: 需要进行比较的参数模板ID。
+        :param source_configuration_id: **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type source_configuration_id: str
-        :param target_configuration_id: 需要进行比较的参数模板ID。
+        :param target_configuration_id: **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type target_configuration_id: str
         """
         
@@ -48,7 +48,7 @@ class DiffConfigurationRequest:
     def source_configuration_id(self):
         r"""Gets the source_configuration_id of this DiffConfigurationRequest.
 
-        需要进行比较的参数模板ID。
+        **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The source_configuration_id of this DiffConfigurationRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DiffConfigurationRequest:
     def source_configuration_id(self, source_configuration_id):
         r"""Sets the source_configuration_id of this DiffConfigurationRequest.
 
-        需要进行比较的参数模板ID。
+        **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param source_configuration_id: The source_configuration_id of this DiffConfigurationRequest.
         :type source_configuration_id: str
@@ -70,7 +70,7 @@ class DiffConfigurationRequest:
     def target_configuration_id(self):
         r"""Gets the target_configuration_id of this DiffConfigurationRequest.
 
-        需要进行比较的参数模板ID。
+        **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The target_configuration_id of this DiffConfigurationRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class DiffConfigurationRequest:
     def target_configuration_id(self, target_configuration_id):
         r"""Sets the target_configuration_id of this DiffConfigurationRequest.
 
-        需要进行比较的参数模板ID。
+        **参数解释：** 需要进行比较的参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param target_configuration_id: The target_configuration_id of this DiffConfigurationRequest.
         :type target_configuration_id: str

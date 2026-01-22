@@ -100,6 +100,142 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_diagnosis_records_async(self, request):
+        r"""批量删除实例诊断报告
+
+        批量删除实例诊断报告。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteDiagnosisRecords
+        :type request: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisRecordsRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisRecordsResponse`
+        """
+        http_info = self._batch_delete_diagnosis_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_diagnosis_records_async_invoker(self, request):
+        http_info = self._batch_delete_diagnosis_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_diagnosis_records_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{engine}/instances/{instance_id}/diagnosis/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDiagnosisRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_diagnosis_records_for_rocket_mq_async(self, request):
+        r"""批量删除实例诊断报告
+
+        批量删除实例诊断报告。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteDiagnosisRecordsForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisRecordsForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisRecordsForRocketMqResponse`
+        """
+        http_info = self._batch_delete_diagnosis_records_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_diagnosis_records_for_rocket_mq_async_invoker(self, request):
+        http_info = self._batch_delete_diagnosis_records_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_diagnosis_records_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/diagnosis/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDiagnosisRecordsForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_diagnosis_report_async(self, request):
         r"""批量删除实例诊断记录
 
@@ -259,6 +395,73 @@ class RocketMQAsyncClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/metadata/batch-delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteRocketMqMigrationTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_reset_rocket_mq_message_offsets_async(self, request):
+        r"""批量重置消费进度
+
+        批量重置消费进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchResetRocketMqMessageOffsets
+        :type request: :class:`huaweicloudsdkrocketmq.v2.BatchResetRocketMqMessageOffsetsRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchResetRocketMqMessageOffsetsResponse`
+        """
+        http_info = self._batch_reset_rocket_mq_message_offsets_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_reset_rocket_mq_message_offsets_async_invoker(self, request):
+        http_info = self._batch_reset_rocket_mq_message_offsets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_reset_rocket_mq_message_offsets_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/groups/reset-message-offset",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResetRocketMqMessageOffsetsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -506,10 +709,77 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def create_diagnosis_task_for_rocket_mq_async(self, request):
+        r"""创建实例诊断任务
+
+        创建实例诊断任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDiagnosisTaskForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.CreateDiagnosisTaskForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateDiagnosisTaskForRocketMqResponse`
+        """
+        http_info = self._create_diagnosis_task_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_diagnosis_task_for_rocket_mq_async_invoker(self, request):
+        http_info = self._create_diagnosis_task_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_diagnosis_task_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/diagnosis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDiagnosisTaskForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_instance_by_engine_async(self, request):
         r"""创建实例
 
-        创建实例[，该接口支持创建按需和包周期两种计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)。
+        创建实例[，该接口支持创建按需和包周期两种计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -598,6 +868,71 @@ class RocketMQAsyncClient(Client):
             "resource_path": "/v2/{project_id}/instances",
             "request_type": request.__class__.__name__,
             "response_type": "CreatePostPaidInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_post_paid_instance_for_rocket_mq_async(self, request):
+        r"""创建实例
+
+        创建实例[，该接口支持创建按需和包周期两种计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePostPaidInstanceForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceForRocketMqResponse`
+        """
+        http_info = self._create_post_paid_instance_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_post_paid_instance_for_rocket_mq_async_invoker(self, request):
+        http_info = self._create_post_paid_instance_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_post_paid_instance_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPaidInstanceForRocketMqResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -977,6 +1312,140 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def delete_rocket_mq_migration_task_async(self, request):
+        r"""删除元数据迁移任务
+
+        删除元数据迁移任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRocketMqMigrationTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskResponse`
+        """
+        http_info = self._delete_rocket_mq_migration_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_rocket_mq_migration_task_async_invoker(self, request):
+        http_info = self._delete_rocket_mq_migration_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_rocket_mq_migration_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRocketMqMigrationTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_scheduled_task_async(self, request):
+        r"""删除定时任务管理中的指定记录
+
+        删除定时任务管理中的指定记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScheduledTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteScheduledTaskResponse`
+        """
+        http_info = self._delete_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_scheduled_task_async_invoker(self, request):
+        http_info = self._delete_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_user_async(self, request):
         r"""删除用户
 
@@ -1015,6 +1484,71 @@ class RocketMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'user_name' in local_var_params:
             path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_dns_async(self, request):
+        r"""开启RocketMQ实例域名访问能力
+
+        开启RocketMQ实例域名访问能力。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableDns
+        :type request: :class:`huaweicloudsdkrocketmq.v2.EnableDnsRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.EnableDnsResponse`
+        """
+        http_info = self._enable_dns_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_dns_async_invoker(self, request):
+        http_info = self._enable_dns_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_dns_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDnsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -1212,8 +1746,8 @@ class RocketMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'begin_time' in local_var_params:
@@ -1316,6 +1850,69 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def list_config_features_async(self, request):
+        r"""获取特性开关列表
+
+        获取特性开关列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigFeatures
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListConfigFeaturesRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListConfigFeaturesResponse`
+        """
+        http_info = self._list_config_features_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_config_features_async_invoker(self, request):
+        http_info = self._list_config_features_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_config_features_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/config/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigFeaturesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_consume_group_access_policy_async(self, request):
         r"""查询消费组的授权用户列表
 
@@ -1338,7 +1935,7 @@ class RocketMQAsyncClient(Client):
     def _list_consume_group_access_policy_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group_id}/accesspolicy",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}/accesspolicy",
             "request_type": request.__class__.__name__,
             "response_type": "ListConsumeGroupAccessPolicyResponse"
             }
@@ -1354,8 +1951,79 @@ class RocketMQAsyncClient(Client):
             path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_consume_group_access_policy_for_rocket_mq_async(self, request):
+        r"""查询消费组的授权用户列表
+
+        查询消费组的授权用户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConsumeGroupAccessPolicyForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListConsumeGroupAccessPolicyForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListConsumeGroupAccessPolicyForRocketMqResponse`
+        """
+        http_info = self._list_consume_group_access_policy_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_consume_group_access_policy_for_rocket_mq_async_invoker(self, request):
+        http_info = self._list_consume_group_access_policy_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_consume_group_access_policy_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/groups/{group}/accesspolicy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConsumeGroupAccessPolicyForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
 
         query_params = []
         if 'offset' in local_var_params:
@@ -1425,6 +2093,75 @@ class RocketMQAsyncClient(Client):
         path_params = {}
         if 'engine' in local_var_params:
             path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_diagnosis_reports_for_rocket_mq_async(self, request):
+        r"""查询实例诊断报告列表
+
+        查询实例诊断报告列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDiagnosisReportsForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListDiagnosisReportsForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListDiagnosisReportsForRocketMqResponse`
+        """
+        http_info = self._list_diagnosis_reports_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_diagnosis_reports_for_rocket_mq_async_invoker(self, request):
+        http_info = self._list_diagnosis_reports_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_diagnosis_reports_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/diagnosis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnosisReportsForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -1758,6 +2495,77 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def list_message_trace_for_rocket_mq_async(self, request):
+        r"""查询消息轨迹
+
+        查询消息轨迹。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMessageTraceForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessageTraceForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListMessageTraceForRocketMqResponse`
+        """
+        http_info = self._list_message_trace_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_message_trace_for_rocket_mq_async_invoker(self, request):
+        http_info = self._list_message_trace_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_message_trace_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/trace",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageTraceForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'msg_id' in local_var_params:
+            query_params.append(('msg_id', local_var_params['msg_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_messages_async(self, request):
         r"""查询消息
 
@@ -1794,6 +2602,87 @@ class RocketMQAsyncClient(Client):
         path_params = {}
         if 'engine' in local_var_params:
             path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'topic' in local_var_params:
+            query_params.append(('topic', local_var_params['topic']))
+        if 'queue' in local_var_params:
+            query_params.append(('queue', local_var_params['queue']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'msg_id' in local_var_params:
+            query_params.append(('msg_id', local_var_params['msg_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_messages_for_rocket_mq_async(self, request):
+        r"""查询消息
+
+        查询消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMessagesForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListMessagesForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListMessagesForRocketMqResponse`
+        """
+        http_info = self._list_messages_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_messages_for_rocket_mq_async_invoker(self, request):
+        http_info = self._list_messages_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_messages_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessagesForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -1890,6 +2779,79 @@ class RocketMQAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_scheduled_tasks_async(self, request):
+        r"""查询实例的定时任务列表
+
+        查询实例的定时任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScheduledTasks
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ListScheduledTasksRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ListScheduledTasksResponse`
+        """
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scheduled_tasks_async_invoker(self, request):
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scheduled_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduledTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -2026,10 +2988,10 @@ class RocketMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -2058,9 +3020,9 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def modify_instance_ssl_config_async(self, request):
-        r"""修改实例ssl相关配置
+        r"""修改实例SSL相关配置
 
-        修改实例ssl相关配置。
+        修改实例SSL相关配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2126,6 +3088,71 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def modify_recycle_policy_async(self, request):
+        r"""更新回收站策略
+
+        更新回收站策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyRecyclePolicy
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ModifyRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ModifyRecyclePolicyResponse`
+        """
+        http_info = self._modify_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_recycle_policy_async_invoker(self, request):
+        http_info = self._modify_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyRecyclePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_consume_offset_async(self, request):
         r"""重置消费进度
 
@@ -2148,7 +3175,7 @@ class RocketMQAsyncClient(Client):
     def _reset_consume_offset_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group_id}/reset-message-offset",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}/reset-message-offset",
             "request_type": request.__class__.__name__,
             "response_type": "ResetConsumeOffsetResponse"
             }
@@ -2164,8 +3191,77 @@ class RocketMQAsyncClient(Client):
             path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_consume_offset_for_rocket_mq_async(self, request):
+        r"""重置消费进度
+
+        重置消费进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResetConsumeOffsetForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetForRocketMqResponse`
+        """
+        http_info = self._reset_consume_offset_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_consume_offset_for_rocket_mq_async_invoker(self, request):
+        http_info = self._reset_consume_offset_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_consume_offset_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/groups/{group}/reset-message-offset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetConsumeOffsetForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
 
         query_params = []
 
@@ -2202,7 +3298,7 @@ class RocketMQAsyncClient(Client):
 
         实例规格变更。
         
-        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,hws_hk,ctc)
+        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,hws_hk,ctc,cmcc,ax)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2237,6 +3333,140 @@ class RocketMQAsyncClient(Client):
             path_params['engine'] = local_var_params['engine']
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resize_instance_for_rocket_mq_async(self, request):
+        r"""实例规格变更
+
+        实例规格变更。
+        
+        [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,hws_hk,ctc,cmcc)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeInstanceForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ResizeInstanceForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ResizeInstanceForRocketMqResponse`
+        """
+        http_info = self._resize_instance_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_instance_for_rocket_mq_async_invoker(self, request):
+        http_info = self._resize_instance_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_instance_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_recycle_instance_async(self, request):
+        r"""恢复回收站实例
+
+        恢复回收站实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreRecycleInstance
+        :type request: :class:`huaweicloudsdkrocketmq.v2.RestoreRecycleInstanceRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.RestoreRecycleInstanceResponse`
+        """
+        http_info = self._restore_recycle_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_recycle_instance_async_invoker(self, request):
+        http_info = self._restore_recycle_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_recycle_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRecycleInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -2304,6 +3534,73 @@ class RocketMQAsyncClient(Client):
         path_params = {}
         if 'engine' in local_var_params:
             path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def send_dlq_message_for_rocket_mq_async(self, request):
+        r"""重发死信消息
+
+        重发死信消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SendDlqMessageForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.SendDlqMessageForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendDlqMessageForRocketMqResponse`
+        """
+        http_info = self._send_dlq_message_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def send_dlq_message_for_rocket_mq_async_invoker(self, request):
+        http_info = self._send_dlq_message_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_dlq_message_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/messages/deadletter-resend",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendDlqMessageForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -2406,6 +3703,272 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def send_message_for_rocket_mq_async(self, request):
+        r"""发送消息
+
+        发送消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SendMessageForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.SendMessageForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendMessageForRocketMqResponse`
+        """
+        http_info = self._send_message_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def send_message_for_rocket_mq_async_invoker(self, request):
+        http_info = self._send_message_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_message_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendMessageForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_background_task_async(self, request):
+        r"""查询后台任务管理中的指定记录
+
+        查询后台任务管理中的指定记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBackgroundTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowBackgroundTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowBackgroundTaskResponse`
+        """
+        http_info = self._show_background_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_background_task_async_invoker(self, request):
+        http_info = self._show_background_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_background_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackgroundTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_background_task_progress_async(self, request):
+        r"""查询实例变更记录的进度
+
+        查询后台任务管理中的指定实例变更记录的进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBackgroundTaskProgress
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowBackgroundTaskProgressRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowBackgroundTaskProgressResponse`
+        """
+        http_info = self._show_background_task_progress_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_background_task_progress_async_invoker(self, request):
+        http_info = self._show_background_task_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_background_task_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks/{task_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackgroundTaskProgressResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ces_hierarchy_async(self, request):
+        r"""查询实例在CES的监控层级关系
+
+        查询实例在CES的监控层级关系。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCesHierarchy
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyResponse`
+        """
+        http_info = self._show_ces_hierarchy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ces_hierarchy_async_invoker(self, request):
+        http_info = self._show_ces_hierarchy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ces_hierarchy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/ces-hierarchy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCesHierarchyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_consumer_connections_async(self, request):
         r"""查询消费者列表
 
@@ -2431,6 +3994,79 @@ class RocketMQAsyncClient(Client):
             "resource_path": "/v2/rocketmq/{project_id}/instances/{instance_id}/groups/{group}/clients",
             "request_type": request.__class__.__name__,
             "response_type": "ShowConsumerConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'is_detail' in local_var_params:
+            query_params.append(('is_detail', local_var_params['is_detail']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_consumer_connections_for_rocket_mq_async(self, request):
+        r"""查询消费者列表
+
+        查询消费组内消费者列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConsumerConnectionsForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowConsumerConnectionsForRocketMqResponse`
+        """
+        http_info = self._show_consumer_connections_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_consumer_connections_for_rocket_mq_async_invoker(self, request):
+        http_info = self._show_consumer_connections_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_consumer_connections_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/groups/{group}/clients",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConsumerConnectionsForRocketMqResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2619,6 +4255,71 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def show_diagnosis_report_for_rocket_mq_async(self, request):
+        r"""查询实例诊断报告
+
+        查询实例诊断报告。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDiagnosisReportForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowDiagnosisReportForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowDiagnosisReportForRocketMqResponse`
+        """
+        http_info = self._show_diagnosis_report_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_report_for_rocket_mq_async_invoker(self, request):
+        http_info = self._show_diagnosis_report_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_diagnosis_report_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/diagnosis/{report_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisReportForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'report_id' in local_var_params:
+            path_params['report_id'] = local_var_params['report_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_diagnosis_stack_async(self, request):
         r"""查询stack信息
 
@@ -2686,6 +4387,71 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def show_diagnosis_stack_for_rocket_mq_async(self, request):
+        r"""查询stack信息
+
+        查询stack信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDiagnosisStackForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowDiagnosisStackForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowDiagnosisStackForRocketMqResponse`
+        """
+        http_info = self._show_diagnosis_stack_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_diagnosis_stack_for_rocket_mq_async_invoker(self, request):
+        http_info = self._show_diagnosis_stack_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_diagnosis_stack_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/diagnosis/stack/{stack_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiagnosisStackForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_id' in local_var_params:
+            path_params['stack_id'] = local_var_params['stack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_engine_instance_extend_product_info_async(self, request):
         r"""查询实例的扩容规格列表
 
@@ -2722,6 +4488,77 @@ class RocketMQAsyncClient(Client):
         path_params = {}
         if 'engine' in local_var_params:
             path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_engine_instance_extend_product_info_for_rocket_mq_async(self, request):
+        r"""查询实例的扩容规格列表
+
+        查询实例的扩容规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEngineInstanceExtendProductInfoForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowEngineInstanceExtendProductInfoForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowEngineInstanceExtendProductInfoForRocketMqResponse`
+        """
+        http_info = self._show_engine_instance_extend_product_info_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_engine_instance_extend_product_info_for_rocket_mq_async_invoker(self, request):
+        http_info = self._show_engine_instance_extend_product_info_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_engine_instance_extend_product_info_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEngineInstanceExtendProductInfoForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 
@@ -2998,6 +4835,73 @@ class RocketMQAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'include_tags_quota' in local_var_params:
+            query_params.append(('includeTagsQuota', local_var_params['include_tags_quota']))
+        if 'only_quota' in local_var_params:
+            query_params.append(('onlyQuota', local_var_params['only_quota']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_instances_async(self, request):
+        r"""查询回收站实例列表
+
+        查询回收站实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecycleInstances
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowRecycleInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowRecycleInstancesResponse`
+        """
+        http_info = self._show_recycle_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_instances_async_invoker(self, request):
+        http_info = self._show_recycle_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -3067,6 +4971,140 @@ class RocketMQAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_rocket_mq_product_cores_async(self, request):
+        r"""查询RocketMQ产品规格核数
+
+        查询RocketMQ产品规格核数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRocketMqProductCores
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowRocketMqProductCoresRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowRocketMqProductCoresResponse`
+        """
+        http_info = self._show_rocket_mq_product_cores_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_rocket_mq_product_cores_async_invoker(self, request):
+        http_info = self._show_rocket_mq_product_cores_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rocket_mq_product_cores_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rocketmq/products/cores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRocketMqProductCoresResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'broker_num' in local_var_params:
+            query_params.append(('broker_num', local_var_params['broker_num']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_rocket_mq_scale_pre_check_info_async(self, request):
+        r"""查询RocketMQ实例扩容前置检查信息
+
+        获取RocketMQ实例扩容前置检查信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRocketMqScalePreCheckInfo
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowRocketMqScalePreCheckInfoRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowRocketMqScalePreCheckInfoResponse`
+        """
+        http_info = self._show_rocket_mq_scale_pre_check_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_rocket_mq_scale_pre_check_info_async_invoker(self, request):
+        http_info = self._show_rocket_mq_scale_pre_check_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rocket_mq_scale_pre_check_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/extend-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRocketMqScalePreCheckInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -3230,6 +5268,71 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def show_upgrade_instance_version_async(self, request):
+        r"""查询RocketMQ实例版本信息
+
+        查询RocketMQ实例版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowUpgradeInstanceVersion
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowUpgradeInstanceVersionRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowUpgradeInstanceVersionResponse`
+        """
+        http_info = self._show_upgrade_instance_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_upgrade_instance_version_async_invoker(self, request):
+        http_info = self._show_upgrade_instance_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_upgrade_instance_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeInstanceVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_user_async(self, request):
         r"""查询用户详情
 
@@ -3268,6 +5371,71 @@ class RocketMQAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'user_name' in local_var_params:
             path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_volume_expand_config_async(self, request):
+        r"""查询磁盘自动扩容配置
+
+        查询磁盘自动扩容配置，包括磁盘自动扩容是否开启，以及开启后的扩容阈值、扩容步长、扩容上限信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVolumeExpandConfig
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowVolumeExpandConfigRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowVolumeExpandConfigResponse`
+        """
+        http_info = self._show_volume_expand_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_volume_expand_config_async_invoker(self, request):
+        http_info = self._show_volume_expand_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_expand_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeExpandConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -3369,7 +5537,7 @@ class RocketMQAsyncClient(Client):
     def update_instance_async(self, request):
         r"""修改实例信息
 
-        修改实例的名称和描述信息。
+        修改实例相关信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3500,6 +5668,77 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def update_scheduled_task_async(self, request):
+        r"""修改定时任务管理中的指定记录
+
+        修改定时任务管理中的指定记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateScheduledTask
+        :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateScheduledTaskResponse`
+        """
+        http_info = self._update_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scheduled_task_async_invoker(self, request):
+        http_info = self._update_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'execute_at' in local_var_params:
+            query_params.append(('execute_at', local_var_params['execute_at']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_user_async(self, request):
         r"""修改用户参数
 
@@ -3569,6 +5808,73 @@ class RocketMQAsyncClient(Client):
 
         return http_info
 
+    def update_volume_expansion_config_async(self, request):
+        r"""修改磁盘自动扩容配置
+
+        该接口用于修改磁盘自动扩容配置，包含磁盘自动扩容是否开启、扩容阈值、扩容步长，以及扩容上限的配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVolumeExpansionConfig
+        :type request: :class:`huaweicloudsdkrocketmq.v2.UpdateVolumeExpansionConfigRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.UpdateVolumeExpansionConfigResponse`
+        """
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_volume_expansion_config_async_invoker(self, request):
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_volume_expansion_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVolumeExpansionConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def validate_consumed_message_async(self, request):
         r"""消费验证
 
@@ -3605,6 +5911,73 @@ class RocketMQAsyncClient(Client):
         path_params = {}
         if 'engine' in local_var_params:
             path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_consumed_message_for_rocket_mq_async(self, request):
+        r"""消费验证
+
+        消费验证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ValidateConsumedMessageForRocketMq
+        :type request: :class:`huaweicloudsdkrocketmq.v2.ValidateConsumedMessageForRocketMqRequest`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.ValidateConsumedMessageForRocketMqResponse`
+        """
+        http_info = self._validate_consumed_message_for_rocket_mq_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_consumed_message_for_rocket_mq_async_invoker(self, request):
+        http_info = self._validate_consumed_message_for_rocket_mq_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_consumed_message_for_rocket_mq_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/messages/resend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateConsumedMessageForRocketMqResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
 

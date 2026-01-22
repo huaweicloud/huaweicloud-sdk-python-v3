@@ -57,37 +57,37 @@ class CustomerIpsListVO:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释**： 动作 **取值范围**： 0：只记录日志，1：重置/拦截
+        :param action: **参数解释**： 自定义IPS规则执行动作,仅更新自定义IPS规则场景下需要设置，其他场景无需设置 **约束限制**：   不涉及 **取值范围**： 0：只记录日志 1：重置/拦截 **默认取值**：   不涉及
         :type action: int
-        :param affected_os: **参数解释**： 影响操作系统 **取值范围**： 0 any、1 Windows、2 Linux、3 FreeBSD、4 Solaris、5 other Unix、6 网络设备、7 Mac OS、8 ios、9 android、10 others
+        :param affected_os: **参数解释**： 影响操作系统 **约束限制**：   不涉及 **取值范围**：   0：ANY   1：Windows   2：Linux   3：FreeBSD   4：Solaris   5：Other Unix   6：网络设备   7：Mac OS   8：IOS   9：Android   10：Others   **默认取值**：   不涉及
         :type affected_os: int
-        :param attack_type: **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制、2：漏洞扫描、3：邮件攻击、4：漏洞攻击、5：Web攻击、6：密码攻击、7：劫持攻击、8：协议异常、9：特洛伊木马、10：蠕虫、11：缓冲区溢出、12：黑客工具、13：间谍软件、14：DDos泛洪、15：应用层DDos攻击、16：其他可疑行为、17：可疑DNS活动、18：网络钓鱼、19：垃圾邮件、20：其他攻击 **默认取值**： 不涉及
+        :param attack_type: **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制 2：漏洞扫描 3：邮件攻击 4：漏洞攻击 5：Web攻击 6：密码攻击 7：劫持攻击 8：协议异常 9：特洛伊木马 10：蠕虫 11：缓冲区溢出 12：黑客工具 13：间谍软件 14：DDos泛洪 15：应用层DDos攻击 16：其他可疑行为 17：可疑DNS活动 18：网络钓鱼 19：垃圾邮件 20：其他攻击 **默认取值**： 不涉及
         :type attack_type: int
-        :param config_status: **参数解释**： 规则状态 **取值范围**： 0：初始化，1：配置中，2：配置成功，3：配置失败
+        :param config_status: **参数解释**： 规则配置状态 **约束限制**：   不涉及 **取值范围**： 0：初始化 1：配置中 2：配置成功 3：配置失败 **默认取值**：   不涉及
         :type config_status: int
-        :param content: **参数解释**： 匹配IPS攻击的内容 **取值范围**： 不涉及
+        :param content: **参数解释**： 匹配IPS攻击的内容 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type content: str
-        :param dst_port_type: **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        :param dst_port_type: **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
         :type dst_port_type: int
-        :param dst_ports: **参数解释**： 端口 **取值范围**： 1 - 65535
+        :param dst_ports: **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 1 - 65535 **默认取值**：   不涉及
         :type dst_ports: str
         :param ips_cfw_id: **参数解释**： cfw侧自定义IPS规则id **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type ips_cfw_id: str
-        :param ips_id: **参数解释**： ips规则id **取值范围**： 不涉及
+        :param ips_id: **参数解释**： ips规则ID， 可通过调用获取ips规则列表获取，通过data.records.ips_id获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type ips_id: str
-        :param ips_name: **参数解释**： ips规则名称 **取值范围**： 不涉及
+        :param ips_name: **参数解释**： ips规则名称 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type ips_name: str
-        :param protocol: **参数解释**： 协议类型 **取值范围**： 1 FTP、2 TELNET、3 SMTP、4 DNS_TCP、5 DNS_UDP、6 DHCP、7 TFTP、8 FINGER、9 HTTP、10 POP3、11 SUNRPC_TCP、12 SUNRPC_UDP、13 NNTP、14 MSRPC_TCP、15 MSRPC_UDP、16 NETBIOS_NAME_TCP、17 NETBIOS_NAME_UDP、18 NETBIOS_SMB、19 NETBIOS_DATAGRAM、20 IMAP4、21 SNMP、22 LDAP、23 MSSQL、24 ORACLE
+        :param protocol: **参数解释**： 协议类型 **约束限制**：   不涉及 **取值范围**：   1：FTP   2：TELNET   3：SMTP   4：DNS_TCP   5：DNS_UDP   6：DHCP   7：TFTP   8：FINGER   9：HTTP   10：POP3   11：SUNRPC_TCP   12：SUNRPC_UDP   13：NNTP   14：MSRPC_TCP   15：MSRPC_UDP   16：NETBIOS_NAME_TCP   17：NETBIOS_NAME_UDP   18：NETBIOS_SMB   19：NETBIOS_DATAGRAM   20：IMAP4   21：SNMP   22：LDAP   23：MSSQL   24：ORACLE   **默认取值**：   不涉及
         :type protocol: int
-        :param severity: **参数解释**： 严重程度 **取值范围**： critical：致命，high：高危，medium:中危，low:低危
+        :param severity: **参数解释**： 严重程度 **约束限制**： 不涉及 **取值范围**： 0：致命 1：高危 2：中危 3：低危 **默认取值**： 不涉及
         :type severity: int
-        :param software: **参数解释**： 影响软件 **取值范围**： 0 ANY、1 ADOBE、2 APACHE、3 APPLE、4 CA、5 CISCO、6 GOOGLE_CHROME、7 HP、8 IBM、9 IE、10 IIS、11 MC_AFEE、12 MEDIA_PLAYER、13 MICROSOFT_NET、14 MICROSOFT_EDGE、15 MICROSOFT_EXCHANGE、16 MICROSOFT_OFFICE、17 MICROSOFT_OUTLOOK、18 MICROSOFT_SHARE_POINT、19 MICROSOFT_WINDOWS、20 MOZILLA、21 MSSQL、22 MYSQL、23 NOVELL、24 ORACLE、25 SAMBA、26 SAMSUNG、27 SAP、28 SCADA、29 SQUID、30 SUN、31 SYMANTEC、32 TREND_MICRO、33 VMWARE、34 WORD_PRESS、35 Others
+        :param software: **参数解释**： 影响软件 **约束限制**：   不涉及 **取值范围**： 0：ANY 1：ADOBE 2：APACHE 3：APPLE 4：CA 5：CISCO 6：GOOGLE_CHROME 7：HP 8：IBM 9：IE 10：IIS 11：MC_AFEE 12：MEDIA_PLAYER 13：MICROSOFT_NET 14：MICROSOFT_EDGE 15：MICROSOFT_EXCHANGE 16：MICROSOFT_OFFICE 17：MICROSOFT_OUTLOOK 18：MICROSOFT_SHARE_POINT 19：MICROSOFT_WINDOWS 20：MOZILLA 21：MSSQL 22：MYSQL 23：NOVELL 24：ORACLE 25：SAMBA 26：SAMSUNG 27：SAP 28：SCADA 29：SQUID 30：SUN 31：SYMANTEC 32：TREND_MICRO 33：VMWARE 34：WORD_PRESS 35：Others **默认取值**：   不涉及
         :type software: int
-        :param src_port_type: **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        :param src_port_type: **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
         :type src_port_type: int
-        :param src_ports: **参数解释**： 端口 **取值范围**： 不涉及
+        :param src_ports: **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type src_ports: str
-        :param group_id: **参数解释**： 集群ID **取值范围**： 不涉及
+        :param group_id: **参数解释**： 集群ID **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type group_id: str
         """
         
@@ -148,7 +148,7 @@ class CustomerIpsListVO:
     def action(self):
         r"""Gets the action of this CustomerIpsListVO.
 
-        **参数解释**： 动作 **取值范围**： 0：只记录日志，1：重置/拦截
+        **参数解释**： 自定义IPS规则执行动作,仅更新自定义IPS规则场景下需要设置，其他场景无需设置 **约束限制**：   不涉及 **取值范围**： 0：只记录日志 1：重置/拦截 **默认取值**：   不涉及
 
         :return: The action of this CustomerIpsListVO.
         :rtype: int
@@ -159,7 +159,7 @@ class CustomerIpsListVO:
     def action(self, action):
         r"""Sets the action of this CustomerIpsListVO.
 
-        **参数解释**： 动作 **取值范围**： 0：只记录日志，1：重置/拦截
+        **参数解释**： 自定义IPS规则执行动作,仅更新自定义IPS规则场景下需要设置，其他场景无需设置 **约束限制**：   不涉及 **取值范围**： 0：只记录日志 1：重置/拦截 **默认取值**：   不涉及
 
         :param action: The action of this CustomerIpsListVO.
         :type action: int
@@ -170,7 +170,7 @@ class CustomerIpsListVO:
     def affected_os(self):
         r"""Gets the affected_os of this CustomerIpsListVO.
 
-        **参数解释**： 影响操作系统 **取值范围**： 0 any、1 Windows、2 Linux、3 FreeBSD、4 Solaris、5 other Unix、6 网络设备、7 Mac OS、8 ios、9 android、10 others
+        **参数解释**： 影响操作系统 **约束限制**：   不涉及 **取值范围**：   0：ANY   1：Windows   2：Linux   3：FreeBSD   4：Solaris   5：Other Unix   6：网络设备   7：Mac OS   8：IOS   9：Android   10：Others   **默认取值**：   不涉及
 
         :return: The affected_os of this CustomerIpsListVO.
         :rtype: int
@@ -181,7 +181,7 @@ class CustomerIpsListVO:
     def affected_os(self, affected_os):
         r"""Sets the affected_os of this CustomerIpsListVO.
 
-        **参数解释**： 影响操作系统 **取值范围**： 0 any、1 Windows、2 Linux、3 FreeBSD、4 Solaris、5 other Unix、6 网络设备、7 Mac OS、8 ios、9 android、10 others
+        **参数解释**： 影响操作系统 **约束限制**：   不涉及 **取值范围**：   0：ANY   1：Windows   2：Linux   3：FreeBSD   4：Solaris   5：Other Unix   6：网络设备   7：Mac OS   8：IOS   9：Android   10：Others   **默认取值**：   不涉及
 
         :param affected_os: The affected_os of this CustomerIpsListVO.
         :type affected_os: int
@@ -192,7 +192,7 @@ class CustomerIpsListVO:
     def attack_type(self):
         r"""Gets the attack_type of this CustomerIpsListVO.
 
-        **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制、2：漏洞扫描、3：邮件攻击、4：漏洞攻击、5：Web攻击、6：密码攻击、7：劫持攻击、8：协议异常、9：特洛伊木马、10：蠕虫、11：缓冲区溢出、12：黑客工具、13：间谍软件、14：DDos泛洪、15：应用层DDos攻击、16：其他可疑行为、17：可疑DNS活动、18：网络钓鱼、19：垃圾邮件、20：其他攻击 **默认取值**： 不涉及
+        **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制 2：漏洞扫描 3：邮件攻击 4：漏洞攻击 5：Web攻击 6：密码攻击 7：劫持攻击 8：协议异常 9：特洛伊木马 10：蠕虫 11：缓冲区溢出 12：黑客工具 13：间谍软件 14：DDos泛洪 15：应用层DDos攻击 16：其他可疑行为 17：可疑DNS活动 18：网络钓鱼 19：垃圾邮件 20：其他攻击 **默认取值**： 不涉及
 
         :return: The attack_type of this CustomerIpsListVO.
         :rtype: int
@@ -203,7 +203,7 @@ class CustomerIpsListVO:
     def attack_type(self, attack_type):
         r"""Sets the attack_type of this CustomerIpsListVO.
 
-        **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制、2：漏洞扫描、3：邮件攻击、4：漏洞攻击、5：Web攻击、6：密码攻击、7：劫持攻击、8：协议异常、9：特洛伊木马、10：蠕虫、11：缓冲区溢出、12：黑客工具、13：间谍软件、14：DDos泛洪、15：应用层DDos攻击、16：其他可疑行为、17：可疑DNS活动、18：网络钓鱼、19：垃圾邮件、20：其他攻击 **默认取值**： 不涉及
+        **参数解释**： 攻击类型 **约束限制**： 不涉及 **取值范围**： 1：访问控制 2：漏洞扫描 3：邮件攻击 4：漏洞攻击 5：Web攻击 6：密码攻击 7：劫持攻击 8：协议异常 9：特洛伊木马 10：蠕虫 11：缓冲区溢出 12：黑客工具 13：间谍软件 14：DDos泛洪 15：应用层DDos攻击 16：其他可疑行为 17：可疑DNS活动 18：网络钓鱼 19：垃圾邮件 20：其他攻击 **默认取值**： 不涉及
 
         :param attack_type: The attack_type of this CustomerIpsListVO.
         :type attack_type: int
@@ -214,7 +214,7 @@ class CustomerIpsListVO:
     def config_status(self):
         r"""Gets the config_status of this CustomerIpsListVO.
 
-        **参数解释**： 规则状态 **取值范围**： 0：初始化，1：配置中，2：配置成功，3：配置失败
+        **参数解释**： 规则配置状态 **约束限制**：   不涉及 **取值范围**： 0：初始化 1：配置中 2：配置成功 3：配置失败 **默认取值**：   不涉及
 
         :return: The config_status of this CustomerIpsListVO.
         :rtype: int
@@ -225,7 +225,7 @@ class CustomerIpsListVO:
     def config_status(self, config_status):
         r"""Sets the config_status of this CustomerIpsListVO.
 
-        **参数解释**： 规则状态 **取值范围**： 0：初始化，1：配置中，2：配置成功，3：配置失败
+        **参数解释**： 规则配置状态 **约束限制**：   不涉及 **取值范围**： 0：初始化 1：配置中 2：配置成功 3：配置失败 **默认取值**：   不涉及
 
         :param config_status: The config_status of this CustomerIpsListVO.
         :type config_status: int
@@ -236,7 +236,7 @@ class CustomerIpsListVO:
     def content(self):
         r"""Gets the content of this CustomerIpsListVO.
 
-        **参数解释**： 匹配IPS攻击的内容 **取值范围**： 不涉及
+        **参数解释**： 匹配IPS攻击的内容 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The content of this CustomerIpsListVO.
         :rtype: str
@@ -247,7 +247,7 @@ class CustomerIpsListVO:
     def content(self, content):
         r"""Sets the content of this CustomerIpsListVO.
 
-        **参数解释**： 匹配IPS攻击的内容 **取值范围**： 不涉及
+        **参数解释**： 匹配IPS攻击的内容 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param content: The content of this CustomerIpsListVO.
         :type content: str
@@ -258,7 +258,7 @@ class CustomerIpsListVO:
     def dst_port_type(self):
         r"""Gets the dst_port_type of this CustomerIpsListVO.
 
-        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :return: The dst_port_type of this CustomerIpsListVO.
         :rtype: int
@@ -269,7 +269,7 @@ class CustomerIpsListVO:
     def dst_port_type(self, dst_port_type):
         r"""Sets the dst_port_type of this CustomerIpsListVO.
 
-        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :param dst_port_type: The dst_port_type of this CustomerIpsListVO.
         :type dst_port_type: int
@@ -280,7 +280,7 @@ class CustomerIpsListVO:
     def dst_ports(self):
         r"""Gets the dst_ports of this CustomerIpsListVO.
 
-        **参数解释**： 端口 **取值范围**： 1 - 65535
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 1 - 65535 **默认取值**：   不涉及
 
         :return: The dst_ports of this CustomerIpsListVO.
         :rtype: str
@@ -291,7 +291,7 @@ class CustomerIpsListVO:
     def dst_ports(self, dst_ports):
         r"""Sets the dst_ports of this CustomerIpsListVO.
 
-        **参数解释**： 端口 **取值范围**： 1 - 65535
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 1 - 65535 **默认取值**：   不涉及
 
         :param dst_ports: The dst_ports of this CustomerIpsListVO.
         :type dst_ports: str
@@ -324,7 +324,7 @@ class CustomerIpsListVO:
     def ips_id(self):
         r"""Gets the ips_id of this CustomerIpsListVO.
 
-        **参数解释**： ips规则id **取值范围**： 不涉及
+        **参数解释**： ips规则ID， 可通过调用获取ips规则列表获取，通过data.records.ips_id获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The ips_id of this CustomerIpsListVO.
         :rtype: str
@@ -335,7 +335,7 @@ class CustomerIpsListVO:
     def ips_id(self, ips_id):
         r"""Sets the ips_id of this CustomerIpsListVO.
 
-        **参数解释**： ips规则id **取值范围**： 不涉及
+        **参数解释**： ips规则ID， 可通过调用获取ips规则列表获取，通过data.records.ips_id获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param ips_id: The ips_id of this CustomerIpsListVO.
         :type ips_id: str
@@ -346,7 +346,7 @@ class CustomerIpsListVO:
     def ips_name(self):
         r"""Gets the ips_name of this CustomerIpsListVO.
 
-        **参数解释**： ips规则名称 **取值范围**： 不涉及
+        **参数解释**： ips规则名称 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The ips_name of this CustomerIpsListVO.
         :rtype: str
@@ -357,7 +357,7 @@ class CustomerIpsListVO:
     def ips_name(self, ips_name):
         r"""Sets the ips_name of this CustomerIpsListVO.
 
-        **参数解释**： ips规则名称 **取值范围**： 不涉及
+        **参数解释**： ips规则名称 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param ips_name: The ips_name of this CustomerIpsListVO.
         :type ips_name: str
@@ -368,7 +368,7 @@ class CustomerIpsListVO:
     def protocol(self):
         r"""Gets the protocol of this CustomerIpsListVO.
 
-        **参数解释**： 协议类型 **取值范围**： 1 FTP、2 TELNET、3 SMTP、4 DNS_TCP、5 DNS_UDP、6 DHCP、7 TFTP、8 FINGER、9 HTTP、10 POP3、11 SUNRPC_TCP、12 SUNRPC_UDP、13 NNTP、14 MSRPC_TCP、15 MSRPC_UDP、16 NETBIOS_NAME_TCP、17 NETBIOS_NAME_UDP、18 NETBIOS_SMB、19 NETBIOS_DATAGRAM、20 IMAP4、21 SNMP、22 LDAP、23 MSSQL、24 ORACLE
+        **参数解释**： 协议类型 **约束限制**：   不涉及 **取值范围**：   1：FTP   2：TELNET   3：SMTP   4：DNS_TCP   5：DNS_UDP   6：DHCP   7：TFTP   8：FINGER   9：HTTP   10：POP3   11：SUNRPC_TCP   12：SUNRPC_UDP   13：NNTP   14：MSRPC_TCP   15：MSRPC_UDP   16：NETBIOS_NAME_TCP   17：NETBIOS_NAME_UDP   18：NETBIOS_SMB   19：NETBIOS_DATAGRAM   20：IMAP4   21：SNMP   22：LDAP   23：MSSQL   24：ORACLE   **默认取值**：   不涉及
 
         :return: The protocol of this CustomerIpsListVO.
         :rtype: int
@@ -379,7 +379,7 @@ class CustomerIpsListVO:
     def protocol(self, protocol):
         r"""Sets the protocol of this CustomerIpsListVO.
 
-        **参数解释**： 协议类型 **取值范围**： 1 FTP、2 TELNET、3 SMTP、4 DNS_TCP、5 DNS_UDP、6 DHCP、7 TFTP、8 FINGER、9 HTTP、10 POP3、11 SUNRPC_TCP、12 SUNRPC_UDP、13 NNTP、14 MSRPC_TCP、15 MSRPC_UDP、16 NETBIOS_NAME_TCP、17 NETBIOS_NAME_UDP、18 NETBIOS_SMB、19 NETBIOS_DATAGRAM、20 IMAP4、21 SNMP、22 LDAP、23 MSSQL、24 ORACLE
+        **参数解释**： 协议类型 **约束限制**：   不涉及 **取值范围**：   1：FTP   2：TELNET   3：SMTP   4：DNS_TCP   5：DNS_UDP   6：DHCP   7：TFTP   8：FINGER   9：HTTP   10：POP3   11：SUNRPC_TCP   12：SUNRPC_UDP   13：NNTP   14：MSRPC_TCP   15：MSRPC_UDP   16：NETBIOS_NAME_TCP   17：NETBIOS_NAME_UDP   18：NETBIOS_SMB   19：NETBIOS_DATAGRAM   20：IMAP4   21：SNMP   22：LDAP   23：MSSQL   24：ORACLE   **默认取值**：   不涉及
 
         :param protocol: The protocol of this CustomerIpsListVO.
         :type protocol: int
@@ -390,7 +390,7 @@ class CustomerIpsListVO:
     def severity(self):
         r"""Gets the severity of this CustomerIpsListVO.
 
-        **参数解释**： 严重程度 **取值范围**： critical：致命，high：高危，medium:中危，low:低危
+        **参数解释**： 严重程度 **约束限制**： 不涉及 **取值范围**： 0：致命 1：高危 2：中危 3：低危 **默认取值**： 不涉及
 
         :return: The severity of this CustomerIpsListVO.
         :rtype: int
@@ -401,7 +401,7 @@ class CustomerIpsListVO:
     def severity(self, severity):
         r"""Sets the severity of this CustomerIpsListVO.
 
-        **参数解释**： 严重程度 **取值范围**： critical：致命，high：高危，medium:中危，low:低危
+        **参数解释**： 严重程度 **约束限制**： 不涉及 **取值范围**： 0：致命 1：高危 2：中危 3：低危 **默认取值**： 不涉及
 
         :param severity: The severity of this CustomerIpsListVO.
         :type severity: int
@@ -412,7 +412,7 @@ class CustomerIpsListVO:
     def software(self):
         r"""Gets the software of this CustomerIpsListVO.
 
-        **参数解释**： 影响软件 **取值范围**： 0 ANY、1 ADOBE、2 APACHE、3 APPLE、4 CA、5 CISCO、6 GOOGLE_CHROME、7 HP、8 IBM、9 IE、10 IIS、11 MC_AFEE、12 MEDIA_PLAYER、13 MICROSOFT_NET、14 MICROSOFT_EDGE、15 MICROSOFT_EXCHANGE、16 MICROSOFT_OFFICE、17 MICROSOFT_OUTLOOK、18 MICROSOFT_SHARE_POINT、19 MICROSOFT_WINDOWS、20 MOZILLA、21 MSSQL、22 MYSQL、23 NOVELL、24 ORACLE、25 SAMBA、26 SAMSUNG、27 SAP、28 SCADA、29 SQUID、30 SUN、31 SYMANTEC、32 TREND_MICRO、33 VMWARE、34 WORD_PRESS、35 Others
+        **参数解释**： 影响软件 **约束限制**：   不涉及 **取值范围**： 0：ANY 1：ADOBE 2：APACHE 3：APPLE 4：CA 5：CISCO 6：GOOGLE_CHROME 7：HP 8：IBM 9：IE 10：IIS 11：MC_AFEE 12：MEDIA_PLAYER 13：MICROSOFT_NET 14：MICROSOFT_EDGE 15：MICROSOFT_EXCHANGE 16：MICROSOFT_OFFICE 17：MICROSOFT_OUTLOOK 18：MICROSOFT_SHARE_POINT 19：MICROSOFT_WINDOWS 20：MOZILLA 21：MSSQL 22：MYSQL 23：NOVELL 24：ORACLE 25：SAMBA 26：SAMSUNG 27：SAP 28：SCADA 29：SQUID 30：SUN 31：SYMANTEC 32：TREND_MICRO 33：VMWARE 34：WORD_PRESS 35：Others **默认取值**：   不涉及
 
         :return: The software of this CustomerIpsListVO.
         :rtype: int
@@ -423,7 +423,7 @@ class CustomerIpsListVO:
     def software(self, software):
         r"""Sets the software of this CustomerIpsListVO.
 
-        **参数解释**： 影响软件 **取值范围**： 0 ANY、1 ADOBE、2 APACHE、3 APPLE、4 CA、5 CISCO、6 GOOGLE_CHROME、7 HP、8 IBM、9 IE、10 IIS、11 MC_AFEE、12 MEDIA_PLAYER、13 MICROSOFT_NET、14 MICROSOFT_EDGE、15 MICROSOFT_EXCHANGE、16 MICROSOFT_OFFICE、17 MICROSOFT_OUTLOOK、18 MICROSOFT_SHARE_POINT、19 MICROSOFT_WINDOWS、20 MOZILLA、21 MSSQL、22 MYSQL、23 NOVELL、24 ORACLE、25 SAMBA、26 SAMSUNG、27 SAP、28 SCADA、29 SQUID、30 SUN、31 SYMANTEC、32 TREND_MICRO、33 VMWARE、34 WORD_PRESS、35 Others
+        **参数解释**： 影响软件 **约束限制**：   不涉及 **取值范围**： 0：ANY 1：ADOBE 2：APACHE 3：APPLE 4：CA 5：CISCO 6：GOOGLE_CHROME 7：HP 8：IBM 9：IE 10：IIS 11：MC_AFEE 12：MEDIA_PLAYER 13：MICROSOFT_NET 14：MICROSOFT_EDGE 15：MICROSOFT_EXCHANGE 16：MICROSOFT_OFFICE 17：MICROSOFT_OUTLOOK 18：MICROSOFT_SHARE_POINT 19：MICROSOFT_WINDOWS 20：MOZILLA 21：MSSQL 22：MYSQL 23：NOVELL 24：ORACLE 25：SAMBA 26：SAMSUNG 27：SAP 28：SCADA 29：SQUID 30：SUN 31：SYMANTEC 32：TREND_MICRO 33：VMWARE 34：WORD_PRESS 35：Others **默认取值**：   不涉及
 
         :param software: The software of this CustomerIpsListVO.
         :type software: int
@@ -434,7 +434,7 @@ class CustomerIpsListVO:
     def src_port_type(self):
         r"""Gets the src_port_type of this CustomerIpsListVO.
 
-        **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :return: The src_port_type of this CustomerIpsListVO.
         :rtype: int
@@ -445,7 +445,7 @@ class CustomerIpsListVO:
     def src_port_type(self, src_port_type):
         r"""Sets the src_port_type of this CustomerIpsListVO.
 
-        **参数解释**： 端口类型，-1 Any，0 包含，1 排除 **取值范围**： 不涉及
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :param src_port_type: The src_port_type of this CustomerIpsListVO.
         :type src_port_type: int
@@ -456,7 +456,7 @@ class CustomerIpsListVO:
     def src_ports(self):
         r"""Gets the src_ports of this CustomerIpsListVO.
 
-        **参数解释**： 端口 **取值范围**： 不涉及
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The src_ports of this CustomerIpsListVO.
         :rtype: str
@@ -467,7 +467,7 @@ class CustomerIpsListVO:
     def src_ports(self, src_ports):
         r"""Sets the src_ports of this CustomerIpsListVO.
 
-        **参数解释**： 端口 **取值范围**： 不涉及
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param src_ports: The src_ports of this CustomerIpsListVO.
         :type src_ports: str
@@ -478,7 +478,7 @@ class CustomerIpsListVO:
     def group_id(self):
         r"""Gets the group_id of this CustomerIpsListVO.
 
-        **参数解释**： 集群ID **取值范围**： 不涉及
+        **参数解释**： 集群ID **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The group_id of this CustomerIpsListVO.
         :rtype: str
@@ -489,7 +489,7 @@ class CustomerIpsListVO:
     def group_id(self, group_id):
         r"""Sets the group_id of this CustomerIpsListVO.
 
-        **参数解释**： 集群ID **取值范围**： 不涉及
+        **参数解释**： 集群ID **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param group_id: The group_id of this CustomerIpsListVO.
         :type group_id: str

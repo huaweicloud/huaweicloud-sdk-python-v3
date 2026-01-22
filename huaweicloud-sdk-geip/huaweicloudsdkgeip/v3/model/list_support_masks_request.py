@@ -24,7 +24,7 @@ class ListSupportMasksRequest:
         'sort_dir': 'list[str]',
         'id': 'list[str]',
         'ip_version': 'list[int]',
-        'mask': 'list[int]'
+        'mask': 'int'
     }
 
     attribute_map = {
@@ -64,7 +64,7 @@ class ListSupportMasksRequest:
         :param ip_version: 
         :type ip_version: list[int]
         :param mask: 
-        :type mask: list[int]
+        :type mask: int
         """
         
         
@@ -293,7 +293,7 @@ class ListSupportMasksRequest:
         r"""Gets the mask of this ListSupportMasksRequest.
 
         :return: The mask of this ListSupportMasksRequest.
-        :rtype: list[int]
+        :rtype: int
         """
         return self._mask
 
@@ -302,7 +302,7 @@ class ListSupportMasksRequest:
         r"""Sets the mask of this ListSupportMasksRequest.
 
         :param mask: The mask of this ListSupportMasksRequest.
-        :type mask: list[int]
+        :type mask: int
         """
         self._mask = mask
 

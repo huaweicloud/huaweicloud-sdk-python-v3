@@ -26,7 +26,8 @@ class CreateInstanceRequestBody:
         'resource_tags': 'list[CreateInstanceRequestBodyResourceTags]',
         'obs_encrypt': 'bool',
         'encrypt_type': 'str',
-        'obs_bucket_name': 'str'
+        'obs_bucket_name': 'str',
+        'obs_enc_kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateInstanceRequestBody:
         'resource_tags': 'resource_tags',
         'obs_encrypt': 'obs_encrypt',
         'encrypt_type': 'encrypt_type',
-        'obs_bucket_name': 'obs_bucket_name'
+        'obs_bucket_name': 'obs_bucket_name',
+        'obs_enc_kms_key_id': 'obs_enc_kms_key_id'
     }
 
-    def __init__(self, name=None, description=None, spec=None, vpc_id=None, subnet_id=None, project_id=None, charge_mode=None, enterprise_project_id=None, resource_tags=None, obs_encrypt=None, encrypt_type=None, obs_bucket_name=None):
+    def __init__(self, name=None, description=None, spec=None, vpc_id=None, subnet_id=None, project_id=None, charge_mode=None, enterprise_project_id=None, resource_tags=None, obs_encrypt=None, encrypt_type=None, obs_bucket_name=None, obs_enc_kms_key_id=None):
         r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class CreateInstanceRequestBody:
         :type encrypt_type: str
         :param obs_bucket_name: 指定obs桶的名称，当指定自定义obs桶之后，则无需对obs_encrypt、encrypt_type进行传值。
         :type obs_bucket_name: str
+        :param obs_enc_kms_key_id: KMS的密钥ID，用于对自动创建的OBS桶进行加密。密钥的加密算法支持AES-256和SM4。指定该字段时必须开启OBS桶加密开关，且不能指定自定义OBS桶。
+        :type obs_enc_kms_key_id: str
         """
         
         
@@ -89,6 +93,7 @@ class CreateInstanceRequestBody:
         self._obs_encrypt = None
         self._encrypt_type = None
         self._obs_bucket_name = None
+        self._obs_enc_kms_key_id = None
         self.discriminator = None
 
         self.name = name
@@ -108,6 +113,8 @@ class CreateInstanceRequestBody:
             self.encrypt_type = encrypt_type
         if obs_bucket_name is not None:
             self.obs_bucket_name = obs_bucket_name
+        if obs_enc_kms_key_id is not None:
+            self.obs_enc_kms_key_id = obs_enc_kms_key_id
 
     @property
     def name(self):
@@ -372,6 +379,28 @@ class CreateInstanceRequestBody:
         :type obs_bucket_name: str
         """
         self._obs_bucket_name = obs_bucket_name
+
+    @property
+    def obs_enc_kms_key_id(self):
+        r"""Gets the obs_enc_kms_key_id of this CreateInstanceRequestBody.
+
+        KMS的密钥ID，用于对自动创建的OBS桶进行加密。密钥的加密算法支持AES-256和SM4。指定该字段时必须开启OBS桶加密开关，且不能指定自定义OBS桶。
+
+        :return: The obs_enc_kms_key_id of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._obs_enc_kms_key_id
+
+    @obs_enc_kms_key_id.setter
+    def obs_enc_kms_key_id(self, obs_enc_kms_key_id):
+        r"""Sets the obs_enc_kms_key_id of this CreateInstanceRequestBody.
+
+        KMS的密钥ID，用于对自动创建的OBS桶进行加密。密钥的加密算法支持AES-256和SM4。指定该字段时必须开启OBS桶加密开关，且不能指定自定义OBS桶。
+
+        :param obs_enc_kms_key_id: The obs_enc_kms_key_id of this CreateInstanceRequestBody.
+        :type obs_enc_kms_key_id: str
+        """
+        self._obs_enc_kms_key_id = obs_enc_kms_key_id
 
     def to_dict(self):
         result = {}

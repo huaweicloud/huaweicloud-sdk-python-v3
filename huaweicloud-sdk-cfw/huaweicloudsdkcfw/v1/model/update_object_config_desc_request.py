@@ -15,7 +15,7 @@ class UpdateObjectConfigDescRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ObjectInfoDto'
+        'body': 'UpdateObjectConfigDesc'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class UpdateObjectConfigDescRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the UpdateObjectConfigDescRequest
-        :type body: :class:`huaweicloudsdkcfw.v1.ObjectInfoDto`
+        :type body: :class:`huaweicloudsdkcfw.v1.UpdateObjectConfigDesc`
         """
         
         
@@ -44,7 +44,7 @@ class UpdateObjectConfigDescRequest:
         r"""Gets the body of this UpdateObjectConfigDescRequest.
 
         :return: The body of this UpdateObjectConfigDescRequest.
-        :rtype: :class:`huaweicloudsdkcfw.v1.ObjectInfoDto`
+        :rtype: :class:`huaweicloudsdkcfw.v1.UpdateObjectConfigDesc`
         """
         return self._body
 
@@ -53,7 +53,7 @@ class UpdateObjectConfigDescRequest:
         r"""Sets the body of this UpdateObjectConfigDescRequest.
 
         :param body: The body of this UpdateObjectConfigDescRequest.
-        :type body: :class:`huaweicloudsdkcfw.v1.ObjectInfoDto`
+        :type body: :class:`huaweicloudsdkcfw.v1.UpdateObjectConfigDesc`
         """
         self._body = body
 

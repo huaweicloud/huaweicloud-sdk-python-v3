@@ -52,13 +52,13 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
         :type on_demand_desktops_num: int
         :param period_desktops_num: 包周期桌面总数。
         :type period_desktops_num: int
-        :param on_demand_free_image_desktops_num: 按需免费桌面总数。
+        :param on_demand_free_image_desktops_num: 按需免费镜像桌面总数。
         :type on_demand_free_image_desktops_num: int
-        :param on_demand_charge_image_desktops_num: 按需收费桌面总数。
+        :param on_demand_charge_image_desktops_num: 按需收费镜像桌面总数。
         :type on_demand_charge_image_desktops_num: int
-        :param period_free_image_desktops_num: 包周期免费桌面总数。
+        :param period_free_image_desktops_num: 包周期免费镜像桌面总数。
         :type period_free_image_desktops_num: int
-        :param period_charge_image_desktops_num: 包周期收费桌面总数。
+        :param period_charge_image_desktops_num: 包周期收费镜像桌面总数。
         :type period_charge_image_desktops_num: int
         :param inconsistent_type: 
         :type inconsistent_type: :class:`huaweicloudsdkworkspace.v2.InconsistentTypeEnum`
@@ -188,7 +188,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def on_demand_free_image_desktops_num(self):
         r"""Gets the on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        按需免费桌面总数。
+        按需免费镜像桌面总数。
 
         :return: The on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :rtype: int
@@ -199,7 +199,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def on_demand_free_image_desktops_num(self, on_demand_free_image_desktops_num):
         r"""Sets the on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        按需免费桌面总数。
+        按需免费镜像桌面总数。
 
         :param on_demand_free_image_desktops_num: The on_demand_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :type on_demand_free_image_desktops_num: int
@@ -210,7 +210,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def on_demand_charge_image_desktops_num(self):
         r"""Gets the on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        按需收费桌面总数。
+        按需收费镜像桌面总数。
 
         :return: The on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :rtype: int
@@ -221,7 +221,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def on_demand_charge_image_desktops_num(self, on_demand_charge_image_desktops_num):
         r"""Sets the on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        按需收费桌面总数。
+        按需收费镜像桌面总数。
 
         :param on_demand_charge_image_desktops_num: The on_demand_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :type on_demand_charge_image_desktops_num: int
@@ -232,7 +232,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def period_free_image_desktops_num(self):
         r"""Gets the period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        包周期免费桌面总数。
+        包周期免费镜像桌面总数。
 
         :return: The period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :rtype: int
@@ -243,7 +243,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def period_free_image_desktops_num(self, period_free_image_desktops_num):
         r"""Sets the period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        包周期免费桌面总数。
+        包周期免费镜像桌面总数。
 
         :param period_free_image_desktops_num: The period_free_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :type period_free_image_desktops_num: int
@@ -254,7 +254,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def period_charge_image_desktops_num(self):
         r"""Gets the period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        包周期收费桌面总数。
+        包周期收费镜像桌面总数。
 
         :return: The period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :rtype: int
@@ -265,7 +265,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     def period_charge_image_desktops_num(self, period_charge_image_desktops_num):
         r"""Sets the period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
 
-        包周期收费桌面总数。
+        包周期收费镜像桌面总数。
 
         :param period_charge_image_desktops_num: The period_charge_image_desktops_num of this ListPoolDesktopsDetailResponse.
         :type period_charge_image_desktops_num: int

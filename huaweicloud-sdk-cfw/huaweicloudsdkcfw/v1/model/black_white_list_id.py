@@ -31,7 +31,7 @@ class BlackWhiteListId:
 
         :param id: 黑白名单id
         :type id: str
-        :param name: 黑白名单名称，为黑白名单的地址
+        :param name: 黑白名单的地址
         :type name: str
         """
         
@@ -72,7 +72,7 @@ class BlackWhiteListId:
     def name(self):
         r"""Gets the name of this BlackWhiteListId.
 
-        黑白名单名称，为黑白名单的地址
+        黑白名单的地址
 
         :return: The name of this BlackWhiteListId.
         :rtype: str
@@ -83,7 +83,7 @@ class BlackWhiteListId:
     def name(self, name):
         r"""Sets the name of this BlackWhiteListId.
 
-        黑白名单名称，为黑白名单的地址
+        黑白名单的地址
 
         :param name: The name of this BlackWhiteListId.
         :type name: str

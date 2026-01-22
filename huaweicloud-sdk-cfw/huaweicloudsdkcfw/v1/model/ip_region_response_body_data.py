@@ -1,0 +1,224 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class IpRegionResponseBodyData:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'region_id': 'str',
+        'description_cn': 'str',
+        'description_en': 'str',
+        'region_type': 'str',
+        'superior_region_id': 'int'
+    }
+
+    attribute_map = {
+        'region_id': 'region_id',
+        'description_cn': 'description_cn',
+        'description_en': 'description_en',
+        'region_type': 'region_type',
+        'superior_region_id': 'superior_region_id'
+    }
+
+    def __init__(self, region_id=None, description_cn=None, description_en=None, region_type=None, superior_region_id=None):
+        r"""IpRegionResponseBodyData
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: **参数解释**： 区域ID，用于明确规则引用地域，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。 **取值范围**： 不涉及 
+        :type region_id: str
+        :param description_cn: **参数解释**： 区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取 **取值范围**： 不涉及 
+        :type description_cn: str
+        :param description_en: **参数解释**： 区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。 **取值范围**： 不涉及 
+        :type description_en: str
+        :param region_type: **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
+        :type region_type: str
+        :param superior_region_id: **参数解释**： 上级区域ID **取值范围**： 不涉及 
+        :type superior_region_id: int
+        """
+        
+        
+
+        self._region_id = None
+        self._description_cn = None
+        self._description_en = None
+        self._region_type = None
+        self._superior_region_id = None
+        self.discriminator = None
+
+        if region_id is not None:
+            self.region_id = region_id
+        if description_cn is not None:
+            self.description_cn = description_cn
+        if description_en is not None:
+            self.description_en = description_en
+        if region_type is not None:
+            self.region_type = region_type
+        if superior_region_id is not None:
+            self.superior_region_id = superior_region_id
+
+    @property
+    def region_id(self):
+        r"""Gets the region_id of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域ID，用于明确规则引用地域，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。 **取值范围**： 不涉及 
+
+        :return: The region_id of this IpRegionResponseBodyData.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        r"""Sets the region_id of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域ID，用于明确规则引用地域，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。 **取值范围**： 不涉及 
+
+        :param region_id: The region_id of this IpRegionResponseBodyData.
+        :type region_id: str
+        """
+        self._region_id = region_id
+
+    @property
+    def description_cn(self):
+        r"""Gets the description_cn of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取 **取值范围**： 不涉及 
+
+        :return: The description_cn of this IpRegionResponseBodyData.
+        :rtype: str
+        """
+        return self._description_cn
+
+    @description_cn.setter
+    def description_cn(self, description_cn):
+        r"""Sets the description_cn of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域中文描述，仅当区域为中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取 **取值范围**： 不涉及 
+
+        :param description_cn: The description_cn of this IpRegionResponseBodyData.
+        :type description_cn: str
+        """
+        self._description_cn = description_cn
+
+    @property
+    def description_en(self):
+        r"""Gets the description_en of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。 **取值范围**： 不涉及 
+
+        :return: The description_en of this IpRegionResponseBodyData.
+        :rtype: str
+        """
+        return self._description_en
+
+    @description_en.setter
+    def description_en(self, description_en):
+        r"""Sets the description_en of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。 **取值范围**： 不涉及 
+
+        :param description_en: The description_en of this IpRegionResponseBodyData.
+        :type description_en: str
+        """
+        self._description_en = description_en
+
+    @property
+    def region_type(self):
+        r"""Gets the region_type of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
+
+        :return: The region_type of this IpRegionResponseBodyData.
+        :rtype: str
+        """
+        return self._region_type
+
+    @region_type.setter
+    def region_type(self, region_type):
+        r"""Sets the region_type of this IpRegionResponseBodyData.
+
+        **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
+
+        :param region_type: The region_type of this IpRegionResponseBodyData.
+        :type region_type: str
+        """
+        self._region_type = region_type
+
+    @property
+    def superior_region_id(self):
+        r"""Gets the superior_region_id of this IpRegionResponseBodyData.
+
+        **参数解释**： 上级区域ID **取值范围**： 不涉及 
+
+        :return: The superior_region_id of this IpRegionResponseBodyData.
+        :rtype: int
+        """
+        return self._superior_region_id
+
+    @superior_region_id.setter
+    def superior_region_id(self, superior_region_id):
+        r"""Sets the superior_region_id of this IpRegionResponseBodyData.
+
+        **参数解释**： 上级区域ID **取值范围**： 不涉及 
+
+        :param superior_region_id: The superior_region_id of this IpRegionResponseBodyData.
+        :type superior_region_id: int
+        """
+        self._superior_region_id = superior_region_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, IpRegionResponseBodyData):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

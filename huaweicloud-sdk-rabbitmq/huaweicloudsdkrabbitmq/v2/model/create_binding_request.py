@@ -35,7 +35,7 @@ class CreateBindingRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param vhost: Vhost名称
+        :param vhost: vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
         :type vhost: str
         :param exchange: Exchange名称
         :type exchange: str
@@ -83,7 +83,7 @@ class CreateBindingRequest:
     def vhost(self):
         r"""Gets the vhost of this CreateBindingRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :return: The vhost of this CreateBindingRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateBindingRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this CreateBindingRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :param vhost: The vhost of this CreateBindingRequest.
         :type vhost: str

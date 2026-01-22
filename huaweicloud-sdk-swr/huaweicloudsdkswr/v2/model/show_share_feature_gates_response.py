@@ -27,7 +27,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_authorization_token': 'bool',
         'enable_resource': 'bool',
         'enable_list_v3': 'bool',
-        'enable_image_quota': 'bool'
+        'enable_image_quota': 'bool',
+        'enable_customize_validity_period': 'bool'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_authorization_token': 'enable_authorization_token',
         'enable_resource': 'enable_resource',
         'enable_list_v3': 'enable_list_v3',
-        'enable_image_quota': 'enable_image_quota'
+        'enable_image_quota': 'enable_image_quota',
+        'enable_customize_validity_period': 'enable_customize_validity_period'
     }
 
-    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_authorization_token=None, enable_resource=None, enable_list_v3=None, enable_image_quota=None):
+    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_authorization_token=None, enable_resource=None, enable_list_v3=None, enable_image_quota=None, enable_customize_validity_period=None):
         r"""ShowShareFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_list_v3: bool
         :param enable_image_quota: 是否启用镜像配额
         :type enable_image_quota: bool
+        :param enable_customize_validity_period: 是否支持自定义临时登录指令有效期
+        :type enable_customize_validity_period: bool
         """
         
         super().__init__()
@@ -90,6 +94,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         self._enable_resource = None
         self._enable_list_v3 = None
         self._enable_image_quota = None
+        self._enable_customize_validity_period = None
         self.discriminator = None
 
         if enable_experience is not None:
@@ -116,6 +121,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
             self.enable_list_v3 = enable_list_v3
         if enable_image_quota is not None:
             self.enable_image_quota = enable_image_quota
+        if enable_customize_validity_period is not None:
+            self.enable_customize_validity_period = enable_customize_validity_period
 
     @property
     def enable_experience(self):
@@ -380,6 +387,28 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_image_quota: bool
         """
         self._enable_image_quota = enable_image_quota
+
+    @property
+    def enable_customize_validity_period(self):
+        r"""Gets the enable_customize_validity_period of this ShowShareFeatureGatesResponse.
+
+        是否支持自定义临时登录指令有效期
+
+        :return: The enable_customize_validity_period of this ShowShareFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_customize_validity_period
+
+    @enable_customize_validity_period.setter
+    def enable_customize_validity_period(self, enable_customize_validity_period):
+        r"""Sets the enable_customize_validity_period of this ShowShareFeatureGatesResponse.
+
+        是否支持自定义临时登录指令有效期
+
+        :param enable_customize_validity_period: The enable_customize_validity_period of this ShowShareFeatureGatesResponse.
+        :type enable_customize_validity_period: bool
+        """
+        self._enable_customize_validity_period = enable_customize_validity_period
 
     def to_dict(self):
         import warnings

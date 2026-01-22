@@ -18,8 +18,8 @@ class ListRocketMqMigrationTaskRequest:
         'instance_id': 'str',
         'id': 'str',
         'type': 'str',
-        'offset': 'str',
-        'limit': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'name': 'str'
     }
 
@@ -37,17 +37,17 @@ class ListRocketMqMigrationTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param id: 任务ID。
+        :param id: **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param type: 查询类型。
+        :param type: **参数解释**： 查询类型。 **约束限制**： 不涉及。 **取值范围**： - vhost：虚拟主机。 - exchange：交换机。 - queue：队列。 - all：所有。            **默认取值**： 不涉及。
         :type type: str
-        :param offset: 当前页，从1开始。
-        :type offset: str
-        :param limit: 当前页大小。
-        :type limit: str
-        :param name: - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
+        :param offset: **参数解释**： 当前页，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type offset: int
+        :param limit: **参数解释**： 当前页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type limit: int
+        :param name: **参数解释**： vhost名称 **约束限制**： - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -77,7 +77,7 @@ class ListRocketMqMigrationTaskRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListRocketMqMigrationTaskRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ListRocketMqMigrationTaskRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListRocketMqMigrationTaskRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListRocketMqMigrationTaskRequest.
         :type instance_id: str
@@ -99,7 +99,7 @@ class ListRocketMqMigrationTaskRequest:
     def id(self):
         r"""Gets the id of this ListRocketMqMigrationTaskRequest.
 
-        任务ID。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListRocketMqMigrationTaskRequest:
     def id(self, id):
         r"""Sets the id of this ListRocketMqMigrationTaskRequest.
 
-        任务ID。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this ListRocketMqMigrationTaskRequest.
         :type id: str
@@ -121,7 +121,7 @@ class ListRocketMqMigrationTaskRequest:
     def type(self):
         r"""Gets the type of this ListRocketMqMigrationTaskRequest.
 
-        查询类型。
+        **参数解释**： 查询类型。 **约束限制**： 不涉及。 **取值范围**： - vhost：虚拟主机。 - exchange：交换机。 - queue：队列。 - all：所有。            **默认取值**： 不涉及。
 
         :return: The type of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListRocketMqMigrationTaskRequest:
     def type(self, type):
         r"""Sets the type of this ListRocketMqMigrationTaskRequest.
 
-        查询类型。
+        **参数解释**： 查询类型。 **约束限制**： 不涉及。 **取值范围**： - vhost：虚拟主机。 - exchange：交换机。 - queue：队列。 - all：所有。            **默认取值**： 不涉及。
 
         :param type: The type of this ListRocketMqMigrationTaskRequest.
         :type type: str
@@ -143,10 +143,10 @@ class ListRocketMqMigrationTaskRequest:
     def offset(self):
         r"""Gets the offset of this ListRocketMqMigrationTaskRequest.
 
-        当前页，从1开始。
+        **参数解释**： 当前页，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ListRocketMqMigrationTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -154,10 +154,10 @@ class ListRocketMqMigrationTaskRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListRocketMqMigrationTaskRequest.
 
-        当前页，从1开始。
+        **参数解释**： 当前页，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListRocketMqMigrationTaskRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 
@@ -165,10 +165,10 @@ class ListRocketMqMigrationTaskRequest:
     def limit(self):
         r"""Gets the limit of this ListRocketMqMigrationTaskRequest.
 
-        当前页大小。
+        **参数解释**： 当前页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ListRocketMqMigrationTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -176,10 +176,10 @@ class ListRocketMqMigrationTaskRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRocketMqMigrationTaskRequest.
 
-        当前页大小。
+        **参数解释**： 当前页大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListRocketMqMigrationTaskRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 
@@ -187,7 +187,7 @@ class ListRocketMqMigrationTaskRequest:
     def name(self):
         r"""Gets the name of this ListRocketMqMigrationTaskRequest.
 
-        - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
+        **参数解释**： vhost名称 **约束限制**： - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ListRocketMqMigrationTaskRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ListRocketMqMigrationTaskRequest:
     def name(self, name):
         r"""Sets the name of this ListRocketMqMigrationTaskRequest.
 
-        - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
+        **参数解释**： vhost名称 **约束限制**： - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ListRocketMqMigrationTaskRequest.
         :type name: str

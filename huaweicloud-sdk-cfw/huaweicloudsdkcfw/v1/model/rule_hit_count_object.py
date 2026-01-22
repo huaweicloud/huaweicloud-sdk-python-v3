@@ -29,9 +29,9 @@ class RuleHitCountObject:
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 规则id
+        :param rule_id: **参数解释**： 规则ID **取值范围**： 不涉及
         :type rule_id: str
-        :param rule_hit_count: 规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
+        :param rule_hit_count: **参数解释**： 规则击中次数，当acl规则被触发时，对应规则ID的击中次数会添加一次。 **取值范围**： 不涉及
         :type rule_hit_count: int
         """
         
@@ -50,7 +50,7 @@ class RuleHitCountObject:
     def rule_id(self):
         r"""Gets the rule_id of this RuleHitCountObject.
 
-        规则id
+        **参数解释**： 规则ID **取值范围**： 不涉及
 
         :return: The rule_id of this RuleHitCountObject.
         :rtype: str
@@ -61,7 +61,7 @@ class RuleHitCountObject:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this RuleHitCountObject.
 
-        规则id
+        **参数解释**： 规则ID **取值范围**： 不涉及
 
         :param rule_id: The rule_id of this RuleHitCountObject.
         :type rule_id: str
@@ -72,7 +72,7 @@ class RuleHitCountObject:
     def rule_hit_count(self):
         r"""Gets the rule_hit_count of this RuleHitCountObject.
 
-        规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
+        **参数解释**： 规则击中次数，当acl规则被触发时，对应规则ID的击中次数会添加一次。 **取值范围**： 不涉及
 
         :return: The rule_hit_count of this RuleHitCountObject.
         :rtype: int
@@ -83,7 +83,7 @@ class RuleHitCountObject:
     def rule_hit_count(self, rule_hit_count):
         r"""Sets the rule_hit_count of this RuleHitCountObject.
 
-        规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
+        **参数解释**： 规则击中次数，当acl规则被触发时，对应规则ID的击中次数会添加一次。 **取值范围**： 不涉及
 
         :param rule_hit_count: The rule_hit_count of this RuleHitCountObject.
         :type rule_hit_count: int

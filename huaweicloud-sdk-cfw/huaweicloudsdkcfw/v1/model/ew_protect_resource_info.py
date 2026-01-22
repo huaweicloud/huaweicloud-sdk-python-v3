@@ -41,21 +41,21 @@ class EwProtectResourceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param protected_resource_type: 防护资源类型：0 VPC，1 VGW，2 VPN，3 PEERING
+        :param protected_resource_type: **参数解释**： 防护资源类 **取值范围**： - 0：VPC - 1：VGW - 2：VPN - 3：PEERING
         :type protected_resource_type: int
-        :param protected_resource_name: 防护资源名称
+        :param protected_resource_name: **参数解释**： 防护资源名称 **取值范围**： 不涉及
         :type protected_resource_name: str
-        :param protected_resource_id: 防护资源id
+        :param protected_resource_id: **参数解释**： 防护资源id **取值范围**： 不涉及
         :type protected_resource_id: str
-        :param protected_resource_nat_name: 防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。
+        :param protected_resource_nat_name: **参数解释**： 防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。 **取值范围**： 不涉及
         :type protected_resource_nat_name: str
-        :param protected_resource_nat_id: 防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。
+        :param protected_resource_nat_id: **参数解释**： 防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。 **取值范围**： 不涉及
         :type protected_resource_nat_id: str
-        :param protected_resource_project_id: 防火墙支持跨账户防护，此处为防护资源租户id
+        :param protected_resource_project_id: **参数解释**： 防火墙支持跨账户防护，此处为防护资源租户id **取值范围**： 不涉及
         :type protected_resource_project_id: str
-        :param protected_resource_mode: 防护资源模式，为er
+        :param protected_resource_mode: **参数解释**： 防护资源模式，为er **取值范围**： 不涉及
         :type protected_resource_mode: str
-        :param status: 防护资源的防护状态，0表示已关联，1表示未关联。
+        :param status: **参数解释**： 防护资源的防护状态 **取值范围**： - 0：已关联 - 1：未关联
         :type status: int
         """
         
@@ -89,7 +89,7 @@ class EwProtectResourceInfo:
     def protected_resource_type(self):
         r"""Gets the protected_resource_type of this EwProtectResourceInfo.
 
-        防护资源类型：0 VPC，1 VGW，2 VPN，3 PEERING
+        **参数解释**： 防护资源类 **取值范围**： - 0：VPC - 1：VGW - 2：VPN - 3：PEERING
 
         :return: The protected_resource_type of this EwProtectResourceInfo.
         :rtype: int
@@ -100,7 +100,7 @@ class EwProtectResourceInfo:
     def protected_resource_type(self, protected_resource_type):
         r"""Sets the protected_resource_type of this EwProtectResourceInfo.
 
-        防护资源类型：0 VPC，1 VGW，2 VPN，3 PEERING
+        **参数解释**： 防护资源类 **取值范围**： - 0：VPC - 1：VGW - 2：VPN - 3：PEERING
 
         :param protected_resource_type: The protected_resource_type of this EwProtectResourceInfo.
         :type protected_resource_type: int
@@ -111,7 +111,7 @@ class EwProtectResourceInfo:
     def protected_resource_name(self):
         r"""Gets the protected_resource_name of this EwProtectResourceInfo.
 
-        防护资源名称
+        **参数解释**： 防护资源名称 **取值范围**： 不涉及
 
         :return: The protected_resource_name of this EwProtectResourceInfo.
         :rtype: str
@@ -122,7 +122,7 @@ class EwProtectResourceInfo:
     def protected_resource_name(self, protected_resource_name):
         r"""Sets the protected_resource_name of this EwProtectResourceInfo.
 
-        防护资源名称
+        **参数解释**： 防护资源名称 **取值范围**： 不涉及
 
         :param protected_resource_name: The protected_resource_name of this EwProtectResourceInfo.
         :type protected_resource_name: str
@@ -133,7 +133,7 @@ class EwProtectResourceInfo:
     def protected_resource_id(self):
         r"""Gets the protected_resource_id of this EwProtectResourceInfo.
 
-        防护资源id
+        **参数解释**： 防护资源id **取值范围**： 不涉及
 
         :return: The protected_resource_id of this EwProtectResourceInfo.
         :rtype: str
@@ -144,7 +144,7 @@ class EwProtectResourceInfo:
     def protected_resource_id(self, protected_resource_id):
         r"""Sets the protected_resource_id of this EwProtectResourceInfo.
 
-        防护资源id
+        **参数解释**： 防护资源id **取值范围**： 不涉及
 
         :param protected_resource_id: The protected_resource_id of this EwProtectResourceInfo.
         :type protected_resource_id: str
@@ -155,7 +155,7 @@ class EwProtectResourceInfo:
     def protected_resource_nat_name(self):
         r"""Gets the protected_resource_nat_name of this EwProtectResourceInfo.
 
-        防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。
+        **参数解释**： 防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。 **取值范围**： 不涉及
 
         :return: The protected_resource_nat_name of this EwProtectResourceInfo.
         :rtype: str
@@ -166,7 +166,7 @@ class EwProtectResourceInfo:
     def protected_resource_nat_name(self, protected_resource_nat_name):
         r"""Sets the protected_resource_nat_name of this EwProtectResourceInfo.
 
-        防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。
+        **参数解释**： 防护资源nat网关名称，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的名称。 **取值范围**： 不涉及
 
         :param protected_resource_nat_name: The protected_resource_nat_name of this EwProtectResourceInfo.
         :type protected_resource_nat_name: str
@@ -177,7 +177,7 @@ class EwProtectResourceInfo:
     def protected_resource_nat_id(self):
         r"""Gets the protected_resource_nat_id of this EwProtectResourceInfo.
 
-        防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。
+        **参数解释**： 防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。 **取值范围**： 不涉及
 
         :return: The protected_resource_nat_id of this EwProtectResourceInfo.
         :rtype: str
@@ -188,7 +188,7 @@ class EwProtectResourceInfo:
     def protected_resource_nat_id(self, protected_resource_nat_id):
         r"""Sets the protected_resource_nat_id of this EwProtectResourceInfo.
 
-        防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。
+        **参数解释**： 防护资源nat网关id，专业版防火墙支持NAT规则，此字段表示防护连接的NAT的id。 **取值范围**： 不涉及
 
         :param protected_resource_nat_id: The protected_resource_nat_id of this EwProtectResourceInfo.
         :type protected_resource_nat_id: str
@@ -199,7 +199,7 @@ class EwProtectResourceInfo:
     def protected_resource_project_id(self):
         r"""Gets the protected_resource_project_id of this EwProtectResourceInfo.
 
-        防火墙支持跨账户防护，此处为防护资源租户id
+        **参数解释**： 防火墙支持跨账户防护，此处为防护资源租户id **取值范围**： 不涉及
 
         :return: The protected_resource_project_id of this EwProtectResourceInfo.
         :rtype: str
@@ -210,7 +210,7 @@ class EwProtectResourceInfo:
     def protected_resource_project_id(self, protected_resource_project_id):
         r"""Sets the protected_resource_project_id of this EwProtectResourceInfo.
 
-        防火墙支持跨账户防护，此处为防护资源租户id
+        **参数解释**： 防火墙支持跨账户防护，此处为防护资源租户id **取值范围**： 不涉及
 
         :param protected_resource_project_id: The protected_resource_project_id of this EwProtectResourceInfo.
         :type protected_resource_project_id: str
@@ -221,7 +221,7 @@ class EwProtectResourceInfo:
     def protected_resource_mode(self):
         r"""Gets the protected_resource_mode of this EwProtectResourceInfo.
 
-        防护资源模式，为er
+        **参数解释**： 防护资源模式，为er **取值范围**： 不涉及
 
         :return: The protected_resource_mode of this EwProtectResourceInfo.
         :rtype: str
@@ -232,7 +232,7 @@ class EwProtectResourceInfo:
     def protected_resource_mode(self, protected_resource_mode):
         r"""Sets the protected_resource_mode of this EwProtectResourceInfo.
 
-        防护资源模式，为er
+        **参数解释**： 防护资源模式，为er **取值范围**： 不涉及
 
         :param protected_resource_mode: The protected_resource_mode of this EwProtectResourceInfo.
         :type protected_resource_mode: str
@@ -243,7 +243,7 @@ class EwProtectResourceInfo:
     def status(self):
         r"""Gets the status of this EwProtectResourceInfo.
 
-        防护资源的防护状态，0表示已关联，1表示未关联。
+        **参数解释**： 防护资源的防护状态 **取值范围**： - 0：已关联 - 1：未关联
 
         :return: The status of this EwProtectResourceInfo.
         :rtype: int
@@ -254,7 +254,7 @@ class EwProtectResourceInfo:
     def status(self, status):
         r"""Sets the status of this EwProtectResourceInfo.
 
-        防护资源的防护状态，0表示已关联，1表示未关联。
+        **参数解释**： 防护资源的防护状态 **取值范围**： - 0：已关联 - 1：未关联
 
         :param status: The status of this EwProtectResourceInfo.
         :type status: int

@@ -33,13 +33,13 @@ class AddAddressSetDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得，此处只能使用type为0的防护对象id
         :type object_id: str
         :param name: 地址组名称
         :type name: str
         :param description: 地址组描述
         :type description: str
-        :param address_type: 地址类型0 ipv4，1 ipv6
+        :param address_type: **参数解释**： 地址类型 **约束限制**： 不涉及 **取值范围**： - 0：IPv4 - 1：IPv6 **默认取值**： 0：IPv4
         :type address_type: int
         """
         
@@ -62,7 +62,7 @@ class AddAddressSetDto:
     def object_id(self):
         r"""Gets the object_id of this AddAddressSetDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得，此处只能使用type为0的防护对象id
 
         :return: The object_id of this AddAddressSetDto.
         :rtype: str
@@ -73,7 +73,7 @@ class AddAddressSetDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this AddAddressSetDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得，此处只能使用type为0的防护对象id
 
         :param object_id: The object_id of this AddAddressSetDto.
         :type object_id: str
@@ -128,7 +128,7 @@ class AddAddressSetDto:
     def address_type(self):
         r"""Gets the address_type of this AddAddressSetDto.
 
-        地址类型0 ipv4，1 ipv6
+        **参数解释**： 地址类型 **约束限制**： 不涉及 **取值范围**： - 0：IPv4 - 1：IPv6 **默认取值**： 0：IPv4
 
         :return: The address_type of this AddAddressSetDto.
         :rtype: int
@@ -139,7 +139,7 @@ class AddAddressSetDto:
     def address_type(self, address_type):
         r"""Sets the address_type of this AddAddressSetDto.
 
-        地址类型0 ipv4，1 ipv6
+        **参数解释**： 地址类型 **约束限制**： 不涉及 **取值范围**： - 0：IPv4 - 1：IPv6 **默认取值**： 0：IPv4
 
         :param address_type: The address_type of this AddAddressSetDto.
         :type address_type: int

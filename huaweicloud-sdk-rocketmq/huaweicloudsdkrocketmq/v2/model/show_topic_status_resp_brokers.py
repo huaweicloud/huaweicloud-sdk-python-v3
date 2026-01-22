@@ -29,9 +29,9 @@ class ShowTopicStatusRespBrokers:
 
         The model defined in huaweicloud sdk
 
-        :param queues: 队列列表。
+        :param queues: **参数解释**： 队列列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespQueues`]
-        :param broker_name: 节点名称。
+        :param broker_name: **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_name: str
         """
         
@@ -50,7 +50,7 @@ class ShowTopicStatusRespBrokers:
     def queues(self):
         r"""Gets the queues of this ShowTopicStatusRespBrokers.
 
-        队列列表。
+        **参数解释**： 队列列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this ShowTopicStatusRespBrokers.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespQueues`]
@@ -61,7 +61,7 @@ class ShowTopicStatusRespBrokers:
     def queues(self, queues):
         r"""Sets the queues of this ShowTopicStatusRespBrokers.
 
-        队列列表。
+        **参数解释**： 队列列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this ShowTopicStatusRespBrokers.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespQueues`]
@@ -72,7 +72,7 @@ class ShowTopicStatusRespBrokers:
     def broker_name(self):
         r"""Gets the broker_name of this ShowTopicStatusRespBrokers.
 
-        节点名称。
+        **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_name of this ShowTopicStatusRespBrokers.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowTopicStatusRespBrokers:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this ShowTopicStatusRespBrokers.
 
-        节点名称。
+        **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_name: The broker_name of this ShowTopicStatusRespBrokers.
         :type broker_name: str

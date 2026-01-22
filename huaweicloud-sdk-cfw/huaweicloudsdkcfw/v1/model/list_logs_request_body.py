@@ -51,7 +51,7 @@ class ListLogsRequestBody:
         :type offset: int
         :param log_id: **参数解释**： 文档ID **约束限制**： 第一页为空，其他页不为空 **取值范围**： 上一次查询最后一条数据的log_id **默认取值**： 不涉及
         :type log_id: str
-        :param next_date: **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time **默认取值**： 不涉及
+        :param next_date: **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time 查询访问控制日志时为上一次查询最后一条数据的hit_time 查询访问控制日志时为上一次查询最后一条数据的event_time 查询URL日志时为上一次查询最后一条数据的hit_time **默认取值**： 不涉及
         :type next_date: int
         :param start_time: **参数解释**： 开始时间 **约束限制**： 不涉及 **取值范围**： 毫秒级时间戳 **默认取值**： 不涉及
         :type start_time: int
@@ -182,7 +182,7 @@ class ListLogsRequestBody:
     def next_date(self):
         r"""Gets the next_date of this ListLogsRequestBody.
 
-        **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time **默认取值**： 不涉及
+        **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time 查询访问控制日志时为上一次查询最后一条数据的hit_time 查询访问控制日志时为上一次查询最后一条数据的event_time 查询URL日志时为上一次查询最后一条数据的hit_time **默认取值**： 不涉及
 
         :return: The next_date of this ListLogsRequestBody.
         :rtype: int
@@ -193,7 +193,7 @@ class ListLogsRequestBody:
     def next_date(self, next_date):
         r"""Sets the next_date of this ListLogsRequestBody.
 
-        **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time **默认取值**： 不涉及
+        **参数解释**： 下个日期 **约束限制**： 第一页为空，其他页不为空 **取值范围**： 查询流量日志时为上一次查询最后一条数据的end_time 查询访问控制日志时为上一次查询最后一条数据的hit_time 查询访问控制日志时为上一次查询最后一条数据的event_time 查询URL日志时为上一次查询最后一条数据的hit_time **默认取值**： 不涉及
 
         :param next_date: The next_date of this ListLogsRequestBody.
         :type next_date: int

@@ -33,13 +33,13 @@ class CustomerIpsPageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param limit: **参数解释**： 查询返回记录的数量限制 **取值范围**： 1-1024
+        :param limit: **参数解释**： 查询返回记录的数量限制 **约束限制**：   不涉及 **取值范围**： 1-1024 **默认取值**：   不涉及
         :type limit: int
-        :param offset: **参数解释**： 偏移量，表示查询该偏移量后面的记录 **取值范围**： 0 - 1024
+        :param offset: **参数解释**： 偏移量，表示查询该偏移量后面的记录 **约束限制**：   不涉及 **取值范围**： 0 - 1024 **默认取值**：   不涉及
         :type offset: int
-        :param records: **参数解释**： 自定义IPS规则列表 **取值范围**： 不涉及
+        :param records: **参数解释**： 自定义IPS规则列表 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
-        :param total: **参数解释**： 自定义IPS规则数量 **取值范围**： 不涉及
+        :param total: **参数解释**： 自定义IPS规则数量 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type total: int
         """
         
@@ -64,7 +64,7 @@ class CustomerIpsPageInfo:
     def limit(self):
         r"""Gets the limit of this CustomerIpsPageInfo.
 
-        **参数解释**： 查询返回记录的数量限制 **取值范围**： 1-1024
+        **参数解释**： 查询返回记录的数量限制 **约束限制**：   不涉及 **取值范围**： 1-1024 **默认取值**：   不涉及
 
         :return: The limit of this CustomerIpsPageInfo.
         :rtype: int
@@ -75,7 +75,7 @@ class CustomerIpsPageInfo:
     def limit(self, limit):
         r"""Sets the limit of this CustomerIpsPageInfo.
 
-        **参数解释**： 查询返回记录的数量限制 **取值范围**： 1-1024
+        **参数解释**： 查询返回记录的数量限制 **约束限制**：   不涉及 **取值范围**： 1-1024 **默认取值**：   不涉及
 
         :param limit: The limit of this CustomerIpsPageInfo.
         :type limit: int
@@ -86,7 +86,7 @@ class CustomerIpsPageInfo:
     def offset(self):
         r"""Gets the offset of this CustomerIpsPageInfo.
 
-        **参数解释**： 偏移量，表示查询该偏移量后面的记录 **取值范围**： 0 - 1024
+        **参数解释**： 偏移量，表示查询该偏移量后面的记录 **约束限制**：   不涉及 **取值范围**： 0 - 1024 **默认取值**：   不涉及
 
         :return: The offset of this CustomerIpsPageInfo.
         :rtype: int
@@ -97,7 +97,7 @@ class CustomerIpsPageInfo:
     def offset(self, offset):
         r"""Sets the offset of this CustomerIpsPageInfo.
 
-        **参数解释**： 偏移量，表示查询该偏移量后面的记录 **取值范围**： 0 - 1024
+        **参数解释**： 偏移量，表示查询该偏移量后面的记录 **约束限制**：   不涉及 **取值范围**： 0 - 1024 **默认取值**：   不涉及
 
         :param offset: The offset of this CustomerIpsPageInfo.
         :type offset: int
@@ -108,7 +108,7 @@ class CustomerIpsPageInfo:
     def records(self):
         r"""Gets the records of this CustomerIpsPageInfo.
 
-        **参数解释**： 自定义IPS规则列表 **取值范围**： 不涉及
+        **参数解释**： 自定义IPS规则列表 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The records of this CustomerIpsPageInfo.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
@@ -119,7 +119,7 @@ class CustomerIpsPageInfo:
     def records(self, records):
         r"""Sets the records of this CustomerIpsPageInfo.
 
-        **参数解释**： 自定义IPS规则列表 **取值范围**： 不涉及
+        **参数解释**： 自定义IPS规则列表 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param records: The records of this CustomerIpsPageInfo.
         :type records: list[:class:`huaweicloudsdkcfw.v1.CustomerIpsListVO`]
@@ -130,7 +130,7 @@ class CustomerIpsPageInfo:
     def total(self):
         r"""Gets the total of this CustomerIpsPageInfo.
 
-        **参数解释**： 自定义IPS规则数量 **取值范围**： 不涉及
+        **参数解释**： 自定义IPS规则数量 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The total of this CustomerIpsPageInfo.
         :rtype: int
@@ -141,7 +141,7 @@ class CustomerIpsPageInfo:
     def total(self, total):
         r"""Sets the total of this CustomerIpsPageInfo.
 
-        **参数解释**： 自定义IPS规则数量 **取值范围**： 不涉及
+        **参数解释**： 自定义IPS规则数量 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param total: The total of this CustomerIpsPageInfo.
         :type total: int

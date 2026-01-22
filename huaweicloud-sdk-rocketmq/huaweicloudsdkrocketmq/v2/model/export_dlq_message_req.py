@@ -31,11 +31,11 @@ class ExportDlqMessageReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type topic: str
-        :param msg_id_list: 消息ID列表。
+        :param msg_id_list: **参数解释**： 消息ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id_list: list[str]
-        :param uniq_key_list: 唯一Key列表。
+        :param uniq_key_list: **参数解释**： 唯一Key列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type uniq_key_list: list[str]
         """
         
@@ -46,10 +46,8 @@ class ExportDlqMessageReq:
         self._uniq_key_list = None
         self.discriminator = None
 
-        if topic is not None:
-            self.topic = topic
-        if msg_id_list is not None:
-            self.msg_id_list = msg_id_list
+        self.topic = topic
+        self.msg_id_list = msg_id_list
         if uniq_key_list is not None:
             self.uniq_key_list = uniq_key_list
 
@@ -57,7 +55,7 @@ class ExportDlqMessageReq:
     def topic(self):
         r"""Gets the topic of this ExportDlqMessageReq.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The topic of this ExportDlqMessageReq.
         :rtype: str
@@ -68,7 +66,7 @@ class ExportDlqMessageReq:
     def topic(self, topic):
         r"""Sets the topic of this ExportDlqMessageReq.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param topic: The topic of this ExportDlqMessageReq.
         :type topic: str
@@ -79,7 +77,7 @@ class ExportDlqMessageReq:
     def msg_id_list(self):
         r"""Gets the msg_id_list of this ExportDlqMessageReq.
 
-        消息ID列表。
+        **参数解释**： 消息ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id_list of this ExportDlqMessageReq.
         :rtype: list[str]
@@ -90,7 +88,7 @@ class ExportDlqMessageReq:
     def msg_id_list(self, msg_id_list):
         r"""Sets the msg_id_list of this ExportDlqMessageReq.
 
-        消息ID列表。
+        **参数解释**： 消息ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id_list: The msg_id_list of this ExportDlqMessageReq.
         :type msg_id_list: list[str]
@@ -101,7 +99,7 @@ class ExportDlqMessageReq:
     def uniq_key_list(self):
         r"""Gets the uniq_key_list of this ExportDlqMessageReq.
 
-        唯一Key列表。
+        **参数解释**： 唯一Key列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The uniq_key_list of this ExportDlqMessageReq.
         :rtype: list[str]
@@ -112,7 +110,7 @@ class ExportDlqMessageReq:
     def uniq_key_list(self, uniq_key_list):
         r"""Sets the uniq_key_list of this ExportDlqMessageReq.
 
-        唯一Key列表。
+        **参数解释**： 唯一Key列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param uniq_key_list: The uniq_key_list of this ExportDlqMessageReq.
         :type uniq_key_list: list[str]

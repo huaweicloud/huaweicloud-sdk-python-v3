@@ -31,9 +31,9 @@ class UpdateConsumerGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param group: 消费组名称。
+        :param group: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group: str
         :param body: Body of the UpdateConsumerGroupRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.UpdateConsumerGroup`
@@ -55,7 +55,7 @@ class UpdateConsumerGroupRequest:
     def instance_id(self):
         r"""Gets the instance_id of this UpdateConsumerGroupRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this UpdateConsumerGroupRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateConsumerGroupRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this UpdateConsumerGroupRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this UpdateConsumerGroupRequest.
         :type instance_id: str
@@ -77,7 +77,7 @@ class UpdateConsumerGroupRequest:
     def group(self):
         r"""Gets the group of this UpdateConsumerGroupRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group of this UpdateConsumerGroupRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class UpdateConsumerGroupRequest:
     def group(self, group):
         r"""Sets the group of this UpdateConsumerGroupRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group: The group of this UpdateConsumerGroupRequest.
         :type group: str

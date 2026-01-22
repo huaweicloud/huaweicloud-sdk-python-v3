@@ -36,7 +36,8 @@ class UpdateYmlsReqEditModify:
         self._elasticsearch_yml = None
         self.discriminator = None
 
-        self.elasticsearch_yml = elasticsearch_yml
+        if elasticsearch_yml is not None:
+            self.elasticsearch_yml = elasticsearch_yml
 
     @property
     def elasticsearch_yml(self):

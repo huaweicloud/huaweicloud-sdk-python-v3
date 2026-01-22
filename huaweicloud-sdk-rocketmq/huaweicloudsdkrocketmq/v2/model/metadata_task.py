@@ -35,15 +35,15 @@ class MetadataTask:
 
         The model defined in huaweicloud sdk
 
-        :param id: 元数据迁移任务ID。
+        :param id: **参数解释**： 元数据迁移任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param name: 元数据迁移任务名称。
+        :param name: **参数解释**： 元数据迁移任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param start_date: 元数据迁移任务开始时间。
+        :param start_date: **参数解释**： 元数据迁移任务开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type start_date: str
-        :param status: 元数据迁移任务状态。
+        :param status: **参数解释**： 元数据迁移任务状态。 **约束限制**： 不涉及。 **取值范围**： - creating：创建中。 - starting：迁移中。 - failed：迁移失败。 - finished：迁移完成。 **默认取值**： 不涉及。
         :type status: str
-        :param type: 元数据迁移类型。
+        :param type: **参数解释**： 元数据迁移类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：从rocketmq迁移到rocketmq。 - rabbitToRocket：从rabbitmq迁移到rocketmq。 **默认取值**： 不涉及。
         :type type: str
         """
         
@@ -71,7 +71,7 @@ class MetadataTask:
     def id(self):
         r"""Gets the id of this MetadataTask.
 
-        元数据迁移任务ID。
+        **参数解释**： 元数据迁移任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this MetadataTask.
         :rtype: str
@@ -82,7 +82,7 @@ class MetadataTask:
     def id(self, id):
         r"""Sets the id of this MetadataTask.
 
-        元数据迁移任务ID。
+        **参数解释**： 元数据迁移任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this MetadataTask.
         :type id: str
@@ -93,7 +93,7 @@ class MetadataTask:
     def name(self):
         r"""Gets the name of this MetadataTask.
 
-        元数据迁移任务名称。
+        **参数解释**： 元数据迁移任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this MetadataTask.
         :rtype: str
@@ -104,7 +104,7 @@ class MetadataTask:
     def name(self, name):
         r"""Sets the name of this MetadataTask.
 
-        元数据迁移任务名称。
+        **参数解释**： 元数据迁移任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this MetadataTask.
         :type name: str
@@ -115,7 +115,7 @@ class MetadataTask:
     def start_date(self):
         r"""Gets the start_date of this MetadataTask.
 
-        元数据迁移任务开始时间。
+        **参数解释**： 元数据迁移任务开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The start_date of this MetadataTask.
         :rtype: str
@@ -126,7 +126,7 @@ class MetadataTask:
     def start_date(self, start_date):
         r"""Sets the start_date of this MetadataTask.
 
-        元数据迁移任务开始时间。
+        **参数解释**： 元数据迁移任务开始时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param start_date: The start_date of this MetadataTask.
         :type start_date: str
@@ -137,7 +137,7 @@ class MetadataTask:
     def status(self):
         r"""Gets the status of this MetadataTask.
 
-        元数据迁移任务状态。
+        **参数解释**： 元数据迁移任务状态。 **约束限制**： 不涉及。 **取值范围**： - creating：创建中。 - starting：迁移中。 - failed：迁移失败。 - finished：迁移完成。 **默认取值**： 不涉及。
 
         :return: The status of this MetadataTask.
         :rtype: str
@@ -148,7 +148,7 @@ class MetadataTask:
     def status(self, status):
         r"""Sets the status of this MetadataTask.
 
-        元数据迁移任务状态。
+        **参数解释**： 元数据迁移任务状态。 **约束限制**： 不涉及。 **取值范围**： - creating：创建中。 - starting：迁移中。 - failed：迁移失败。 - finished：迁移完成。 **默认取值**： 不涉及。
 
         :param status: The status of this MetadataTask.
         :type status: str
@@ -159,7 +159,7 @@ class MetadataTask:
     def type(self):
         r"""Gets the type of this MetadataTask.
 
-        元数据迁移类型。
+        **参数解释**： 元数据迁移类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：从rocketmq迁移到rocketmq。 - rabbitToRocket：从rabbitmq迁移到rocketmq。 **默认取值**： 不涉及。
 
         :return: The type of this MetadataTask.
         :rtype: str
@@ -170,7 +170,7 @@ class MetadataTask:
     def type(self, type):
         r"""Sets the type of this MetadataTask.
 
-        元数据迁移类型。
+        **参数解释**： 元数据迁移类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：从rocketmq迁移到rocketmq。 - rabbitToRocket：从rabbitmq迁移到rocketmq。 **默认取值**： 不涉及。
 
         :param type: The type of this MetadataTask.
         :type type: str

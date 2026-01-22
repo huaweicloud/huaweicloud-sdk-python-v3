@@ -39,13 +39,13 @@ class CreateExchangeBody:
 
         :param name: Exchange名称
         :type name: str
-        :param type: 类型（direct、fanout、topic、headers）
+        :param type: **参数解释**： Exchange类型。 **约束限制**： 不涉及。 **取值范围**： - direct：该类型Exchange会将消息路由到Routing Key完全匹配的Queue中。 - fanout：该类型Exchange会将消息路由到所有与其绑定的Queue中。 - topic：该类型Exchange将Routing Key进行通配符匹配，然后将消息路由到匹配成功的Queue中。 - headers：该类型Exchange与Routing Key无关，而与消息中的Headers属性信息相关。Exchange根据消息中的Headers属性键值对和绑定的属性键值对进行匹配，根据匹配情况路由消息。 **默认取值**： 不涉及。
         :type type: str
-        :param durable: 是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
+        :param durable: 是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
         :type durable: bool
         :param auto_delete: 是否自动删除
         :type auto_delete: bool
-        :param internal: 内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
+        :param internal: 内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
         :type internal: bool
         :param arguments: 参数列表
         :type arguments: object
@@ -97,7 +97,7 @@ class CreateExchangeBody:
     def type(self):
         r"""Gets the type of this CreateExchangeBody.
 
-        类型（direct、fanout、topic、headers）
+        **参数解释**： Exchange类型。 **约束限制**： 不涉及。 **取值范围**： - direct：该类型Exchange会将消息路由到Routing Key完全匹配的Queue中。 - fanout：该类型Exchange会将消息路由到所有与其绑定的Queue中。 - topic：该类型Exchange将Routing Key进行通配符匹配，然后将消息路由到匹配成功的Queue中。 - headers：该类型Exchange与Routing Key无关，而与消息中的Headers属性信息相关。Exchange根据消息中的Headers属性键值对和绑定的属性键值对进行匹配，根据匹配情况路由消息。 **默认取值**： 不涉及。
 
         :return: The type of this CreateExchangeBody.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateExchangeBody:
     def type(self, type):
         r"""Sets the type of this CreateExchangeBody.
 
-        类型（direct、fanout、topic、headers）
+        **参数解释**： Exchange类型。 **约束限制**： 不涉及。 **取值范围**： - direct：该类型Exchange会将消息路由到Routing Key完全匹配的Queue中。 - fanout：该类型Exchange会将消息路由到所有与其绑定的Queue中。 - topic：该类型Exchange将Routing Key进行通配符匹配，然后将消息路由到匹配成功的Queue中。 - headers：该类型Exchange与Routing Key无关，而与消息中的Headers属性信息相关。Exchange根据消息中的Headers属性键值对和绑定的属性键值对进行匹配，根据匹配情况路由消息。 **默认取值**： 不涉及。
 
         :param type: The type of this CreateExchangeBody.
         :type type: str
@@ -119,7 +119,7 @@ class CreateExchangeBody:
     def durable(self):
         r"""Gets the durable of this CreateExchangeBody.
 
-        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
+        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
 
         :return: The durable of this CreateExchangeBody.
         :rtype: bool
@@ -130,7 +130,7 @@ class CreateExchangeBody:
     def durable(self, durable):
         r"""Sets the durable of this CreateExchangeBody.
 
-        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk)。
+        是否持久化[（AMQP版本默认持久化，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
 
         :param durable: The durable of this CreateExchangeBody.
         :type durable: bool
@@ -163,7 +163,7 @@ class CreateExchangeBody:
     def internal(self):
         r"""Gets the internal of this CreateExchangeBody.
 
-        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
+        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
 
         :return: The internal of this CreateExchangeBody.
         :rtype: bool
@@ -174,7 +174,7 @@ class CreateExchangeBody:
     def internal(self, internal):
         r"""Sets the internal of this CreateExchangeBody.
 
-        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk)。
+        内部Exchange[（AMQP版本不支持内部Exchange，不涉及此参数）](tag:hws,hws_hk,hws_eu)。
 
         :param internal: The internal of this CreateExchangeBody.
         :type internal: bool

@@ -16,7 +16,7 @@ class ListRegionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'list[IpRegionResponseBodyData]'
     }
 
     attribute_map = {
@@ -28,8 +28,8 @@ class ListRegionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: region列表
-        :type data: object
+        :param data: **参数解释**： 地域列表 **取值范围**： 不涉及 
+        :type data: list[:class:`huaweicloudsdkcfw.v1.IpRegionResponseBodyData`]
         """
         
         super().__init__()
@@ -44,10 +44,10 @@ class ListRegionsResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListRegionsResponse.
 
-        region列表
+        **参数解释**： 地域列表 **取值范围**： 不涉及 
 
         :return: The data of this ListRegionsResponse.
-        :rtype: object
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.IpRegionResponseBodyData`]
         """
         return self._data
 
@@ -55,10 +55,10 @@ class ListRegionsResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListRegionsResponse.
 
-        region列表
+        **参数解释**： 地域列表 **取值范围**： 不涉及 
 
         :param data: The data of this ListRegionsResponse.
-        :type data: object
+        :type data: list[:class:`huaweicloudsdkcfw.v1.IpRegionResponseBodyData`]
         """
         self._data = data
 

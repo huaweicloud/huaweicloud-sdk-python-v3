@@ -93,7 +93,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type action: str
         :param event_time: 事件时间，以毫秒为单位的时间戳，如1718936272648
         :type event_time: int
-        :param attack_type: 攻击类型
+        :param attack_type: 参数解释： 入侵事件类型 约束限制： 不涉及 取值范围： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马 worms：蠕虫 Buffer Overflow：缓冲区溢出 Hacking tools：黑客工具 Spyware：间谍软件 DDoS flooding：DDoS泛洪 Application-layer DDoS attacks：应用层DDoS攻击 Other suspicious behavior：其他可疑行为 Suspicious DNS activity：可疑DNS活动 Phishing：网络钓鱼 Spam：垃圾邮件 Others：其他攻击 默认取值： 不涉及
         :type attack_type: str
         :param attack_rule: 攻击规则
         :type attack_rule: str
@@ -121,7 +121,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type protocol: str
         :param packet: 攻击日志报文
         :type packet: str
-        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        :param app: 规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param packet_messages: 攻击报文信息
         :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
@@ -319,7 +319,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def attack_type(self):
         r"""Gets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        攻击类型
+        参数解释： 入侵事件类型 约束限制： 不涉及 取值范围： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马 worms：蠕虫 Buffer Overflow：缓冲区溢出 Hacking tools：黑客工具 Spyware：间谍软件 DDoS flooding：DDoS泛洪 Application-layer DDoS attacks：应用层DDoS攻击 Other suspicious behavior：其他可疑行为 Suspicious DNS activity：可疑DNS活动 Phishing：网络钓鱼 Spam：垃圾邮件 Others：其他攻击 默认取值： 不涉及
 
         :return: The attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -330,7 +330,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def attack_type(self, attack_type):
         r"""Sets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        攻击类型
+        参数解释： 入侵事件类型 约束限制： 不涉及 取值范围： Access Control：访问控制 Vulnerability scanning：漏洞扫描 Email attack：邮件攻击 Vulnerability Attack：漏洞攻击 Web attack：Web攻击 password attack：密码攻击 Hijacking attack：劫持攻击 Protocol exception：协议异常 Trojan horse：特洛伊木马 worms：蠕虫 Buffer Overflow：缓冲区溢出 Hacking tools：黑客工具 Spyware：间谍软件 DDoS flooding：DDoS泛洪 Application-layer DDoS attacks：应用层DDoS攻击 Other suspicious behavior：其他可疑行为 Suspicious DNS activity：可疑DNS活动 Phishing：网络钓鱼 Spam：垃圾邮件 Others：其他攻击 默认取值： 不涉及
 
         :param attack_type: The attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type attack_type: str
@@ -627,7 +627,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def app(self):
         r"""Gets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :rtype: str
@@ -638,7 +638,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     def app(self, app):
         r"""Sets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
         :type app: str

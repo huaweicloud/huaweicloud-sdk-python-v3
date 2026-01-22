@@ -47,7 +47,7 @@ class ReportProfileVO:
         :type status: int
         :param report_id: **参数解释**： 最新的报告的ID **取值范围**： 不涉及
         :type report_id: str
-        :param last_time: **参数解释**： 最新的报告的生成时间 **取值范围**： 不涉及
+        :param last_time: **参数解释**： 最新的报告的生成时间，毫秒级时间戳 **取值范围**： 不涉及
         :type last_time: int
         """
         
@@ -188,7 +188,7 @@ class ReportProfileVO:
     def last_time(self):
         r"""Gets the last_time of this ReportProfileVO.
 
-        **参数解释**： 最新的报告的生成时间 **取值范围**： 不涉及
+        **参数解释**： 最新的报告的生成时间，毫秒级时间戳 **取值范围**： 不涉及
 
         :return: The last_time of this ReportProfileVO.
         :rtype: int
@@ -199,7 +199,7 @@ class ReportProfileVO:
     def last_time(self, last_time):
         r"""Sets the last_time of this ReportProfileVO.
 
-        **参数解释**： 最新的报告的生成时间 **取值范围**： 不涉及
+        **参数解释**： 最新的报告的生成时间，毫秒级时间戳 **取值范围**： 不涉及
 
         :param last_time: The last_time of this ReportProfileVO.
         :type last_time: int

@@ -27,7 +27,7 @@ class QuotasRespQuotas:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 配额列表。
+        :param resources: **参数解释**： 配额列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type resources: list[:class:`huaweicloudsdkrocketmq.v2.QuotaResourceEntity`]
         """
         
@@ -43,7 +43,7 @@ class QuotasRespQuotas:
     def resources(self):
         r"""Gets the resources of this QuotasRespQuotas.
 
-        配额列表。
+        **参数解释**： 配额列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The resources of this QuotasRespQuotas.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.QuotaResourceEntity`]
@@ -54,7 +54,7 @@ class QuotasRespQuotas:
     def resources(self, resources):
         r"""Sets the resources of this QuotasRespQuotas.
 
-        配额列表。
+        **参数解释**： 配额列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param resources: The resources of this QuotasRespQuotas.
         :type resources: list[:class:`huaweicloudsdkrocketmq.v2.QuotaResourceEntity`]

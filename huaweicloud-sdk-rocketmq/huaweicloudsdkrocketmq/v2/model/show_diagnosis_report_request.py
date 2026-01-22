@@ -29,7 +29,7 @@ class ShowDiagnosisReportRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param engine: **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
         :param report_id: **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type report_id: str
@@ -48,7 +48,7 @@ class ShowDiagnosisReportRequest:
     def engine(self):
         r"""Gets the engine of this ShowDiagnosisReportRequest.
 
-        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this ShowDiagnosisReportRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowDiagnosisReportRequest:
     def engine(self, engine):
         r"""Sets the engine of this ShowDiagnosisReportRequest.
 
-        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ShowDiagnosisReportRequest.
         :type engine: str

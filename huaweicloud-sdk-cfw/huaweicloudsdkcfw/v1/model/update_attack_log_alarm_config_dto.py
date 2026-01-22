@@ -47,27 +47,27 @@ class UpdateAttackLogAlarmConfigDto:
 
         The model defined in huaweicloud sdk
 
-        :param account_name: 账号名称
+        :param account_name: 账户名称
         :type account_name: str
-        :param alarm_id: 告警id
+        :param alarm_id: 账户名称ID.
         :type alarm_id: str
-        :param alarm_time_period: 告警周期，0：全天，1：8时到22时
+        :param alarm_time_period: 告警周期，0：全天，1：8时到22时，为必传参数
         :type alarm_time_period: int
-        :param alarm_type: 告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
+        :param alarm_type: 告警类型 0：攻击告警; 1：流量超额预警; 2：EIP未防护告警; 3：异常外联告警，为必传参数
         :type alarm_type: int
-        :param enable_status: 告警状态 0:失效; 1:生效
+        :param enable_status: 告警状态 0：失效; 1：生效，为必传参数
         :type enable_status: int
-        :param frequency_count: 告警触发频次
+        :param frequency_count: 告警触发频次，为必传参数
         :type frequency_count: int
-        :param frequency_time: 告警频次时间范围
+        :param frequency_time: 告警频次时间范围，以分钟为单位，为必传参数
         :type frequency_time: int
-        :param language: 告警语言
+        :param language: 告警语言，zh-cn为中文，en-us为英文
         :type language: str
-        :param severity: 告警等级
+        :param severity: 告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为1时，severity为2；当type为2时，severity固定为3，为必传参数
         :type severity: str
-        :param topic_urn: 告警urn
+        :param topic_urn: 告警urn，为必传参数
         :type topic_urn: str
-        :param username: 用户名称
+        :param username: 用户名称，为cfw，为必传参数
         :type username: str
         """
         
@@ -113,7 +113,7 @@ class UpdateAttackLogAlarmConfigDto:
     def account_name(self):
         r"""Gets the account_name of this UpdateAttackLogAlarmConfigDto.
 
-        账号名称
+        账户名称
 
         :return: The account_name of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -124,7 +124,7 @@ class UpdateAttackLogAlarmConfigDto:
     def account_name(self, account_name):
         r"""Sets the account_name of this UpdateAttackLogAlarmConfigDto.
 
-        账号名称
+        账户名称
 
         :param account_name: The account_name of this UpdateAttackLogAlarmConfigDto.
         :type account_name: str
@@ -135,7 +135,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_id(self):
         r"""Gets the alarm_id of this UpdateAttackLogAlarmConfigDto.
 
-        告警id
+        账户名称ID.
 
         :return: The alarm_id of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -146,7 +146,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this UpdateAttackLogAlarmConfigDto.
 
-        告警id
+        账户名称ID.
 
         :param alarm_id: The alarm_id of this UpdateAttackLogAlarmConfigDto.
         :type alarm_id: str
@@ -157,7 +157,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_time_period(self):
         r"""Gets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
 
-        告警周期，0：全天，1：8时到22时
+        告警周期，0：全天，1：8时到22时，为必传参数
 
         :return: The alarm_time_period of this UpdateAttackLogAlarmConfigDto.
         :rtype: int
@@ -168,7 +168,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_time_period(self, alarm_time_period):
         r"""Sets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
 
-        告警周期，0：全天，1：8时到22时
+        告警周期，0：全天，1：8时到22时，为必传参数
 
         :param alarm_time_period: The alarm_time_period of this UpdateAttackLogAlarmConfigDto.
         :type alarm_time_period: int
@@ -179,7 +179,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_type(self):
         r"""Gets the alarm_type of this UpdateAttackLogAlarmConfigDto.
 
-        告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
+        告警类型 0：攻击告警; 1：流量超额预警; 2：EIP未防护告警; 3：异常外联告警，为必传参数
 
         :return: The alarm_type of this UpdateAttackLogAlarmConfigDto.
         :rtype: int
@@ -190,7 +190,7 @@ class UpdateAttackLogAlarmConfigDto:
     def alarm_type(self, alarm_type):
         r"""Sets the alarm_type of this UpdateAttackLogAlarmConfigDto.
 
-        告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
+        告警类型 0：攻击告警; 1：流量超额预警; 2：EIP未防护告警; 3：异常外联告警，为必传参数
 
         :param alarm_type: The alarm_type of this UpdateAttackLogAlarmConfigDto.
         :type alarm_type: int
@@ -201,7 +201,7 @@ class UpdateAttackLogAlarmConfigDto:
     def enable_status(self):
         r"""Gets the enable_status of this UpdateAttackLogAlarmConfigDto.
 
-        告警状态 0:失效; 1:生效
+        告警状态 0：失效; 1：生效，为必传参数
 
         :return: The enable_status of this UpdateAttackLogAlarmConfigDto.
         :rtype: int
@@ -212,7 +212,7 @@ class UpdateAttackLogAlarmConfigDto:
     def enable_status(self, enable_status):
         r"""Sets the enable_status of this UpdateAttackLogAlarmConfigDto.
 
-        告警状态 0:失效; 1:生效
+        告警状态 0：失效; 1：生效，为必传参数
 
         :param enable_status: The enable_status of this UpdateAttackLogAlarmConfigDto.
         :type enable_status: int
@@ -223,7 +223,7 @@ class UpdateAttackLogAlarmConfigDto:
     def frequency_count(self):
         r"""Gets the frequency_count of this UpdateAttackLogAlarmConfigDto.
 
-        告警触发频次
+        告警触发频次，为必传参数
 
         :return: The frequency_count of this UpdateAttackLogAlarmConfigDto.
         :rtype: int
@@ -234,7 +234,7 @@ class UpdateAttackLogAlarmConfigDto:
     def frequency_count(self, frequency_count):
         r"""Sets the frequency_count of this UpdateAttackLogAlarmConfigDto.
 
-        告警触发频次
+        告警触发频次，为必传参数
 
         :param frequency_count: The frequency_count of this UpdateAttackLogAlarmConfigDto.
         :type frequency_count: int
@@ -245,7 +245,7 @@ class UpdateAttackLogAlarmConfigDto:
     def frequency_time(self):
         r"""Gets the frequency_time of this UpdateAttackLogAlarmConfigDto.
 
-        告警频次时间范围
+        告警频次时间范围，以分钟为单位，为必传参数
 
         :return: The frequency_time of this UpdateAttackLogAlarmConfigDto.
         :rtype: int
@@ -256,7 +256,7 @@ class UpdateAttackLogAlarmConfigDto:
     def frequency_time(self, frequency_time):
         r"""Sets the frequency_time of this UpdateAttackLogAlarmConfigDto.
 
-        告警频次时间范围
+        告警频次时间范围，以分钟为单位，为必传参数
 
         :param frequency_time: The frequency_time of this UpdateAttackLogAlarmConfigDto.
         :type frequency_time: int
@@ -267,7 +267,7 @@ class UpdateAttackLogAlarmConfigDto:
     def language(self):
         r"""Gets the language of this UpdateAttackLogAlarmConfigDto.
 
-        告警语言
+        告警语言，zh-cn为中文，en-us为英文
 
         :return: The language of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -278,7 +278,7 @@ class UpdateAttackLogAlarmConfigDto:
     def language(self, language):
         r"""Sets the language of this UpdateAttackLogAlarmConfigDto.
 
-        告警语言
+        告警语言，zh-cn为中文，en-us为英文
 
         :param language: The language of this UpdateAttackLogAlarmConfigDto.
         :type language: str
@@ -289,7 +289,7 @@ class UpdateAttackLogAlarmConfigDto:
     def severity(self):
         r"""Gets the severity of this UpdateAttackLogAlarmConfigDto.
 
-        告警等级
+        告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为1时，severity为2；当type为2时，severity固定为3，为必传参数
 
         :return: The severity of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -300,7 +300,7 @@ class UpdateAttackLogAlarmConfigDto:
     def severity(self, severity):
         r"""Sets the severity of this UpdateAttackLogAlarmConfigDto.
 
-        告警等级
+        告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为1时，severity为2；当type为2时，severity固定为3，为必传参数
 
         :param severity: The severity of this UpdateAttackLogAlarmConfigDto.
         :type severity: str
@@ -311,7 +311,7 @@ class UpdateAttackLogAlarmConfigDto:
     def topic_urn(self):
         r"""Gets the topic_urn of this UpdateAttackLogAlarmConfigDto.
 
-        告警urn
+        告警urn，为必传参数
 
         :return: The topic_urn of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -322,7 +322,7 @@ class UpdateAttackLogAlarmConfigDto:
     def topic_urn(self, topic_urn):
         r"""Sets the topic_urn of this UpdateAttackLogAlarmConfigDto.
 
-        告警urn
+        告警urn，为必传参数
 
         :param topic_urn: The topic_urn of this UpdateAttackLogAlarmConfigDto.
         :type topic_urn: str
@@ -333,7 +333,7 @@ class UpdateAttackLogAlarmConfigDto:
     def username(self):
         r"""Gets the username of this UpdateAttackLogAlarmConfigDto.
 
-        用户名称
+        用户名称，为cfw，为必传参数
 
         :return: The username of this UpdateAttackLogAlarmConfigDto.
         :rtype: str
@@ -344,7 +344,7 @@ class UpdateAttackLogAlarmConfigDto:
     def username(self, username):
         r"""Sets the username of this UpdateAttackLogAlarmConfigDto.
 
-        用户名称
+        用户名称，为cfw，为必传参数
 
         :param username: The username of this UpdateAttackLogAlarmConfigDto.
         :type username: str

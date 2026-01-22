@@ -29,9 +29,9 @@ class CreateTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键
+        :param key: **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key: str
-        :param value: 标签值
+        :param value: **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class CreateTag:
     def key(self):
         r"""Gets the key of this CreateTag.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key of this CreateTag.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateTag:
     def key(self, key):
         r"""Sets the key of this CreateTag.
 
-        标签键
+        **参数解释**： 标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key: The key of this CreateTag.
         :type key: str
@@ -72,7 +72,7 @@ class CreateTag:
     def value(self):
         r"""Gets the value of this CreateTag.
 
-        标签值
+        **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The value of this CreateTag.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateTag:
     def value(self, value):
         r"""Sets the value of this CreateTag.
 
-        标签值
+        **参数解释**： 标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param value: The value of this CreateTag.
         :type value: str

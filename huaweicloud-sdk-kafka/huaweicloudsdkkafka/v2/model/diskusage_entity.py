@@ -47,9 +47,9 @@ class DiskusageEntity:
         :type data_disk_use: str
         :param data_disk_free: 剩余可用的磁盘容量。
         :type data_disk_free: str
-        :param data_disk_use_percentage: 消息标签。
+        :param data_disk_use_percentage: **参数解释**： 已使用的磁盘容量占比。 **取值范围**： 不涉及。
         :type data_disk_use_percentage: str
-        :param status: 消息标签。
+        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
         :type status: str
         :param topic_list: Topic磁盘容量使用列表。
         :type topic_list: list[:class:`huaweicloudsdkkafka.v2.DiskusageTopicEntity`]
@@ -173,7 +173,7 @@ class DiskusageEntity:
     def data_disk_use_percentage(self):
         r"""Gets the data_disk_use_percentage of this DiskusageEntity.
 
-        消息标签。
+        **参数解释**： 已使用的磁盘容量占比。 **取值范围**： 不涉及。
 
         :return: The data_disk_use_percentage of this DiskusageEntity.
         :rtype: str
@@ -184,7 +184,7 @@ class DiskusageEntity:
     def data_disk_use_percentage(self, data_disk_use_percentage):
         r"""Sets the data_disk_use_percentage of this DiskusageEntity.
 
-        消息标签。
+        **参数解释**： 已使用的磁盘容量占比。 **取值范围**： 不涉及。
 
         :param data_disk_use_percentage: The data_disk_use_percentage of this DiskusageEntity.
         :type data_disk_use_percentage: str
@@ -195,7 +195,7 @@ class DiskusageEntity:
     def status(self):
         r"""Gets the status of this DiskusageEntity.
 
-        消息标签。
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :return: The status of this DiskusageEntity.
         :rtype: str
@@ -206,7 +206,7 @@ class DiskusageEntity:
     def status(self, status):
         r"""Sets the status of this DiskusageEntity.
 
-        消息标签。
+        **参数解释**： 状态。 **取值范围**： 不涉及。
 
         :param status: The status of this DiskusageEntity.
         :type status: str

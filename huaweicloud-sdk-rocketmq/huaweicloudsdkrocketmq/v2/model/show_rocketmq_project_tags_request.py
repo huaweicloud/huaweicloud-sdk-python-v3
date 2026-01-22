@@ -31,7 +31,7 @@ class ShowRocketmqProjectTagsRequest:
 
         :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
         :type limit: int
-        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
         :type offset: int
         """
         
@@ -72,7 +72,7 @@ class ShowRocketmqProjectTagsRequest:
     def offset(self):
         r"""Gets the offset of this ShowRocketmqProjectTagsRequest.
 
-        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :return: The offset of this ShowRocketmqProjectTagsRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ShowRocketmqProjectTagsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowRocketmqProjectTagsRequest.
 
-        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
 
         :param offset: The offset of this ShowRocketmqProjectTagsRequest.
         :type offset: int

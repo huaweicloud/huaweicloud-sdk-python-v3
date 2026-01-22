@@ -23,6 +23,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'updated': 'str',
         'name': 'str',
         'public_ip': 'str',
+        'snapshot_policy': 'object',
         'created': 'str',
         'id': 'str',
         'status': 'str',
@@ -60,6 +61,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'updated': 'updated',
         'name': 'name',
         'public_ip': 'publicIp',
+        'snapshot_policy': 'snapshotPolicy',
         'created': 'created',
         'id': 'id',
         'status': 'status',
@@ -89,7 +91,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'desc': 'desc'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, vpcep_ipv6_address=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, support_vpcep=None, cmk_id=None, order_id=None, current_subnet_ids=None, desc=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, snapshot_policy=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, vpcep_ipv6_address=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, support_vpcep=None, cmk_id=None, order_id=None, current_subnet_ids=None, desc=None):
         r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
@@ -108,6 +110,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type name: str
         :param public_ip: 公网IP信息。
         :type public_ip: str
+        :param snapshot_policy: **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
+        :type snapshot_policy: object
         :param created: 集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
         :type created: str
         :param id: 集群ID。
@@ -173,6 +177,7 @@ class ShowClusterDetailResponse(SdkResponse):
         self._updated = None
         self._name = None
         self._public_ip = None
+        self._snapshot_policy = None
         self._created = None
         self._id = None
         self._status = None
@@ -216,6 +221,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.name = name
         if public_ip is not None:
             self.public_ip = public_ip
+        if snapshot_policy is not None:
+            self.snapshot_policy = snapshot_policy
         if created is not None:
             self.created = created
         if id is not None:
@@ -412,6 +419,28 @@ class ShowClusterDetailResponse(SdkResponse):
         :type public_ip: str
         """
         self._public_ip = public_ip
+
+    @property
+    def snapshot_policy(self):
+        r"""Gets the snapshot_policy of this ShowClusterDetailResponse.
+
+        **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
+
+        :return: The snapshot_policy of this ShowClusterDetailResponse.
+        :rtype: object
+        """
+        return self._snapshot_policy
+
+    @snapshot_policy.setter
+    def snapshot_policy(self, snapshot_policy):
+        r"""Sets the snapshot_policy of this ShowClusterDetailResponse.
+
+        **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
+
+        :param snapshot_policy: The snapshot_policy of this ShowClusterDetailResponse.
+        :type snapshot_policy: object
+        """
+        self._snapshot_policy = snapshot_policy
 
     @property
     def created(self):

@@ -61,7 +61,7 @@ class L7Rule:
         :type type: str
         :param value: **参数解释**：匹配内容的值。  **取值范围**： - 当type为HOST_NAME时，字符串只能包含英文字母、数字、-.*，必须以字母、数字或*开头。若域名中包含*，则*只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。 - 当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以/开头。 - 当type为METHOD、SOURCE_IP、HEADER、QUERY_STRING时，该字段无意义，使用conditions来指定key，value。
         :type value: str
-        :param provisioning_status: **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**：ACTIVE、PENDING_CREATE 或者ERROR。
+        :param provisioning_status: **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。
         :type provisioning_status: str
         :param invert: **参数解释**：是否反向匹配。  **取值范围**：不涉及
         :type invert: bool
@@ -242,7 +242,7 @@ class L7Rule:
     def provisioning_status(self):
         r"""Gets the provisioning_status of this L7Rule.
 
-        **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**：ACTIVE、PENDING_CREATE 或者ERROR。
+        **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。
 
         :return: The provisioning_status of this L7Rule.
         :rtype: str
@@ -253,7 +253,7 @@ class L7Rule:
     def provisioning_status(self, provisioning_status):
         r"""Sets the provisioning_status of this L7Rule.
 
-        **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**：ACTIVE、PENDING_CREATE 或者ERROR。
+        **参数解释**：provisioning状态。该字段无效，默认为ACTIVE。  **取值范围**： - ACTIVE：已生效。 - PENDING_CREATE：创建中。 - ERROR：当前配置有误。
 
         :param provisioning_status: The provisioning_status of this L7Rule.
         :type provisioning_status: str

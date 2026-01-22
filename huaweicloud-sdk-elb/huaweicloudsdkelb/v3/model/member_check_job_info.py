@@ -43,7 +43,7 @@ class MemberCheckJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
+        :param status: **参数解释**：检查任务状态。  **取值范围**： - processed：检查任务执行完成。 - processing：检查任务执行中。 - failed：检查任务执行失败。
         :type status: str
         :param result: 
         :type result: :class:`huaweicloudsdkelb.v3.MemberCheckJobResult`
@@ -99,7 +99,7 @@ class MemberCheckJobInfo:
     def status(self):
         r"""Gets the status of this MemberCheckJobInfo.
 
-        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
+        **参数解释**：检查任务状态。  **取值范围**： - processed：检查任务执行完成。 - processing：检查任务执行中。 - failed：检查任务执行失败。
 
         :return: The status of this MemberCheckJobInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class MemberCheckJobInfo:
     def status(self, status):
         r"""Sets the status of this MemberCheckJobInfo.
 
-        **参数解释**：processed检查完成，processing检查中，failed检查失败。  **取值范围**：不涉及
+        **参数解释**：检查任务状态。  **取值范围**： - processed：检查任务执行完成。 - processing：检查任务执行中。 - failed：检查任务执行失败。
 
         :param status: The status of this MemberCheckJobInfo.
         :type status: str

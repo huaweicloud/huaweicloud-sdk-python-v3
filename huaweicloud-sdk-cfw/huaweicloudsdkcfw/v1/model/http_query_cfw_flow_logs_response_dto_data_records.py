@@ -93,7 +93,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type src_port: int
         :param dst_ip: 目的IP
         :type dst_ip: str
-        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        :param app: 规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param dst_port: 目的端口
         :type dst_port: int
@@ -409,7 +409,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def app(self):
         r"""Gets the app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :rtype: str
@@ -420,7 +420,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
     def app(self, app):
         r"""Sets the app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS”，“TLS1”，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this HttpQueryCfwFlowLogsResponseDTODataRecords.
         :type app: str

@@ -28,7 +28,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param queues: 重置的队列。
+        :param queues: **参数解释**： 重置的队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetRespQueues`]
         """
         
@@ -44,7 +44,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
     def queues(self):
         r"""Gets the queues of this ResetConsumeOffsetResponse.
 
-        重置的队列。
+        **参数解释**： 重置的队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this ResetConsumeOffsetResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetRespQueues`]
@@ -55,7 +55,7 @@ class ResetConsumeOffsetResponse(SdkResponse):
     def queues(self, queues):
         r"""Sets the queues of this ResetConsumeOffsetResponse.
 
-        重置的队列。
+        **参数解释**： 重置的队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this ResetConsumeOffsetResponse.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetRespQueues`]

@@ -30,9 +30,9 @@ class ListDnsServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: dns服务器列表
+        :param data: **参数解释**： dns服务器列表 **取值范围**： 不涉及
         :type data: list[:class:`huaweicloudsdkcfw.v1.DnsServersResponseDTO`]
-        :param total: dns服务器总数
+        :param total: **参数解释**： dns服务器总数 **取值范围**： 不涉及
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ListDnsServersResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListDnsServersResponse.
 
-        dns服务器列表
+        **参数解释**： dns服务器列表 **取值范围**： 不涉及
 
         :return: The data of this ListDnsServersResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.DnsServersResponseDTO`]
@@ -62,7 +62,7 @@ class ListDnsServersResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListDnsServersResponse.
 
-        dns服务器列表
+        **参数解释**： dns服务器列表 **取值范围**： 不涉及
 
         :param data: The data of this ListDnsServersResponse.
         :type data: list[:class:`huaweicloudsdkcfw.v1.DnsServersResponseDTO`]
@@ -73,7 +73,7 @@ class ListDnsServersResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListDnsServersResponse.
 
-        dns服务器总数
+        **参数解释**： dns服务器总数 **取值范围**： 不涉及
 
         :return: The total of this ListDnsServersResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListDnsServersResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListDnsServersResponse.
 
-        dns服务器总数
+        **参数解释**： dns服务器总数 **取值范围**： 不涉及
 
         :param total: The total of this ListDnsServersResponse.
         :type total: int

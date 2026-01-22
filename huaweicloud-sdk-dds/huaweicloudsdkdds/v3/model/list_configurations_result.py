@@ -43,23 +43,23 @@ class ListConfigurationsResult:
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数模板ID。
+        :param id: **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 参数模板名称。
+        :param name: **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
         :type name: str
-        :param description: 参数模板描述。
+        :param description: **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
         :type description: str
-        :param datastore_version: 数据库版本。
+        :param datastore_version: **参数解释：** 数据库版本。 **取值范围：** 不涉及。
         :type datastore_version: str
-        :param datastore_name: 数据库类型。
+        :param datastore_name: **参数解释：** 数据库类型。 **取值范围：** 不涉及。
         :type datastore_name: str
-        :param node_type: 参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        :param node_type: **参数解释：** 参数模板节点类型。 **取值范围：** - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。 - single，表示单节点类型。
         :type node_type: str
-        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param created: **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
         :type created: str
-        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param updated: **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
         :type updated: str
-        :param user_defined: 是否是用户自定义参数模板。 - false表示为默认参数模板。 - true表示为用户自定义参数模板。
+        :param user_defined: **参数解释：** 是否是用户自定义参数模板。 **取值范围：** - 取值为“false”，表示为系统默认参数模板。 - 取值为“true”，表示为用户自定义参数模板。
         :type user_defined: bool
         """
         
@@ -90,7 +90,7 @@ class ListConfigurationsResult:
     def id(self):
         r"""Gets the id of this ListConfigurationsResult.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
 
         :return: The id of this ListConfigurationsResult.
         :rtype: str
@@ -101,7 +101,7 @@ class ListConfigurationsResult:
     def id(self, id):
         r"""Sets the id of this ListConfigurationsResult.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
 
         :param id: The id of this ListConfigurationsResult.
         :type id: str
@@ -112,7 +112,7 @@ class ListConfigurationsResult:
     def name(self):
         r"""Gets the name of this ListConfigurationsResult.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
 
         :return: The name of this ListConfigurationsResult.
         :rtype: str
@@ -123,7 +123,7 @@ class ListConfigurationsResult:
     def name(self, name):
         r"""Sets the name of this ListConfigurationsResult.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
 
         :param name: The name of this ListConfigurationsResult.
         :type name: str
@@ -134,7 +134,7 @@ class ListConfigurationsResult:
     def description(self):
         r"""Gets the description of this ListConfigurationsResult.
 
-        参数模板描述。
+        **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
 
         :return: The description of this ListConfigurationsResult.
         :rtype: str
@@ -145,7 +145,7 @@ class ListConfigurationsResult:
     def description(self, description):
         r"""Sets the description of this ListConfigurationsResult.
 
-        参数模板描述。
+        **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
 
         :param description: The description of this ListConfigurationsResult.
         :type description: str
@@ -156,7 +156,7 @@ class ListConfigurationsResult:
     def datastore_version(self):
         r"""Gets the datastore_version of this ListConfigurationsResult.
 
-        数据库版本。
+        **参数解释：** 数据库版本。 **取值范围：** 不涉及。
 
         :return: The datastore_version of this ListConfigurationsResult.
         :rtype: str
@@ -167,7 +167,7 @@ class ListConfigurationsResult:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ListConfigurationsResult.
 
-        数据库版本。
+        **参数解释：** 数据库版本。 **取值范围：** 不涉及。
 
         :param datastore_version: The datastore_version of this ListConfigurationsResult.
         :type datastore_version: str
@@ -178,7 +178,7 @@ class ListConfigurationsResult:
     def datastore_name(self):
         r"""Gets the datastore_name of this ListConfigurationsResult.
 
-        数据库类型。
+        **参数解释：** 数据库类型。 **取值范围：** 不涉及。
 
         :return: The datastore_name of this ListConfigurationsResult.
         :rtype: str
@@ -189,7 +189,7 @@ class ListConfigurationsResult:
     def datastore_name(self, datastore_name):
         r"""Sets the datastore_name of this ListConfigurationsResult.
 
-        数据库类型。
+        **参数解释：** 数据库类型。 **取值范围：** 不涉及。
 
         :param datastore_name: The datastore_name of this ListConfigurationsResult.
         :type datastore_name: str
@@ -200,7 +200,7 @@ class ListConfigurationsResult:
     def node_type(self):
         r"""Gets the node_type of this ListConfigurationsResult.
 
-        参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        **参数解释：** 参数模板节点类型。 **取值范围：** - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。 - single，表示单节点类型。
 
         :return: The node_type of this ListConfigurationsResult.
         :rtype: str
@@ -211,7 +211,7 @@ class ListConfigurationsResult:
     def node_type(self, node_type):
         r"""Sets the node_type of this ListConfigurationsResult.
 
-        参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        **参数解释：** 参数模板节点类型。 **取值范围：** - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。 - single，表示单节点类型。
 
         :param node_type: The node_type of this ListConfigurationsResult.
         :type node_type: str
@@ -222,7 +222,7 @@ class ListConfigurationsResult:
     def created(self):
         r"""Gets the created of this ListConfigurationsResult.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The created of this ListConfigurationsResult.
         :rtype: str
@@ -233,7 +233,7 @@ class ListConfigurationsResult:
     def created(self, created):
         r"""Sets the created of this ListConfigurationsResult.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param created: The created of this ListConfigurationsResult.
         :type created: str
@@ -244,7 +244,7 @@ class ListConfigurationsResult:
     def updated(self):
         r"""Gets the updated of this ListConfigurationsResult.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The updated of this ListConfigurationsResult.
         :rtype: str
@@ -255,7 +255,7 @@ class ListConfigurationsResult:
     def updated(self, updated):
         r"""Sets the updated of this ListConfigurationsResult.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param updated: The updated of this ListConfigurationsResult.
         :type updated: str
@@ -266,7 +266,7 @@ class ListConfigurationsResult:
     def user_defined(self):
         r"""Gets the user_defined of this ListConfigurationsResult.
 
-        是否是用户自定义参数模板。 - false表示为默认参数模板。 - true表示为用户自定义参数模板。
+        **参数解释：** 是否是用户自定义参数模板。 **取值范围：** - 取值为“false”，表示为系统默认参数模板。 - 取值为“true”，表示为用户自定义参数模板。
 
         :return: The user_defined of this ListConfigurationsResult.
         :rtype: bool
@@ -277,7 +277,7 @@ class ListConfigurationsResult:
     def user_defined(self, user_defined):
         r"""Sets the user_defined of this ListConfigurationsResult.
 
-        是否是用户自定义参数模板。 - false表示为默认参数模板。 - true表示为用户自定义参数模板。
+        **参数解释：** 是否是用户自定义参数模板。 **取值范围：** - 取值为“false”，表示为系统默认参数模板。 - 取值为“true”，表示为用户自定义参数模板。
 
         :param user_defined: The user_defined of this ListConfigurationsResult.
         :type user_defined: bool

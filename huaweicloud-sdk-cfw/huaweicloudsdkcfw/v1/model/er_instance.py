@@ -33,13 +33,13 @@ class ErInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: ER ID，创建ER时产生的ID
+        :param id: **参数解释**： ER ID，创建ER时产生的ID **取值范围**： 不涉及
         :type id: str
-        :param name: ER名称
+        :param name: **参数解释**： ER名称 **取值范围**： 不涉及
         :type name: str
-        :param project_id: 项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        :param project_id: **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
         :type project_id: str
-        :param attachment_id: 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
+        :param attachment_id: **参数解释**： 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。 **取值范围**： 不涉及
         :type attachment_id: str
         """
         
@@ -64,7 +64,7 @@ class ErInstance:
     def id(self):
         r"""Gets the id of this ErInstance.
 
-        ER ID，创建ER时产生的ID
+        **参数解释**： ER ID，创建ER时产生的ID **取值范围**： 不涉及
 
         :return: The id of this ErInstance.
         :rtype: str
@@ -75,7 +75,7 @@ class ErInstance:
     def id(self, id):
         r"""Sets the id of this ErInstance.
 
-        ER ID，创建ER时产生的ID
+        **参数解释**： ER ID，创建ER时产生的ID **取值范围**： 不涉及
 
         :param id: The id of this ErInstance.
         :type id: str
@@ -86,7 +86,7 @@ class ErInstance:
     def name(self):
         r"""Gets the name of this ErInstance.
 
-        ER名称
+        **参数解释**： ER名称 **取值范围**： 不涉及
 
         :return: The name of this ErInstance.
         :rtype: str
@@ -97,7 +97,7 @@ class ErInstance:
     def name(self, name):
         r"""Sets the name of this ErInstance.
 
-        ER名称
+        **参数解释**： ER名称 **取值范围**： 不涉及
 
         :param name: The name of this ErInstance.
         :type name: str
@@ -108,7 +108,7 @@ class ErInstance:
     def project_id(self):
         r"""Gets the project_id of this ErInstance.
 
-        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
 
         :return: The project_id of this ErInstance.
         :rtype: str
@@ -119,7 +119,7 @@ class ErInstance:
     def project_id(self, project_id):
         r"""Sets the project_id of this ErInstance.
 
-        项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
+        **参数解释**： 项目ID，可以通过调用API获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml) **取值范围**： 不涉及
 
         :param project_id: The project_id of this ErInstance.
         :type project_id: str
@@ -130,7 +130,7 @@ class ErInstance:
     def attachment_id(self):
         r"""Gets the attachment_id of this ErInstance.
 
-        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
+        **参数解释**： 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。 **取值范围**： 不涉及
 
         :return: The attachment_id of this ErInstance.
         :rtype: str
@@ -141,7 +141,7 @@ class ErInstance:
     def attachment_id(self, attachment_id):
         r"""Sets the attachment_id of this ErInstance.
 
-        企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
+        **参数解释**： 企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。 **取值范围**： 不涉及
 
         :param attachment_id: The attachment_id of this ErInstance.
         :type attachment_id: str

@@ -47,9 +47,9 @@ class ListLtsSlowLogsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：开始时间不得早于当前时间30天。
+        :param start_time: 开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **注意：** 开始时间不得早于当前时间30天。
         :type start_time: str
-        :param end_time: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：结束时间不能晚于当前时间。
+        :param end_time: 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **说明：** 结束时间不能晚于当前时间。
         :type end_time: str
         :param limit: 表示每次查询的日志条数，最大限制100条。
         :type limit: int
@@ -57,17 +57,17 @@ class ListLtsSlowLogsRequestBody:
         :type line_num: str
         :param operate_type: 语句类型，取空值，表示查询所有语句类型。
         :type operate_type: str
-        :param node_id: 节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
+        :param node_id: 节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。 允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
         :type node_id: str
-        :param keywords: 根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
+        :param keywords: 根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
         :type keywords: list[str]
-        :param database_keywords: 根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
+        :param database_keywords: 根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
         :type database_keywords: list[str]
-        :param collection_keywords: 根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
+        :param collection_keywords: 根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
         :type collection_keywords: list[str]
-        :param max_cost_time: 支持根据最大执行时间范围查找日志。单位：ms
+        :param max_cost_time: 支持根据最大执行时间范围查找日志。 单位：ms
         :type max_cost_time: int
-        :param min_cost_time: 支持根据最小执行时间范围查找日志。单位：ms
+        :param min_cost_time: 支持根据最小执行时间范围查找日志。 单位：ms
         :type min_cost_time: int
         """
         
@@ -110,7 +110,7 @@ class ListLtsSlowLogsRequestBody:
     def start_time(self):
         r"""Gets the start_time of this ListLtsSlowLogsRequestBody.
 
-        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：开始时间不得早于当前时间30天。
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **注意：** 开始时间不得早于当前时间30天。
 
         :return: The start_time of this ListLtsSlowLogsRequestBody.
         :rtype: str
@@ -121,7 +121,7 @@ class ListLtsSlowLogsRequestBody:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListLtsSlowLogsRequestBody.
 
-        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：开始时间不得早于当前时间30天。
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **注意：** 开始时间不得早于当前时间30天。
 
         :param start_time: The start_time of this ListLtsSlowLogsRequestBody.
         :type start_time: str
@@ -132,7 +132,7 @@ class ListLtsSlowLogsRequestBody:
     def end_time(self):
         r"""Gets the end_time of this ListLtsSlowLogsRequestBody.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：结束时间不能晚于当前时间。
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **说明：** 结束时间不能晚于当前时间。
 
         :return: The end_time of this ListLtsSlowLogsRequestBody.
         :rtype: str
@@ -143,7 +143,7 @@ class ListLtsSlowLogsRequestBody:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListLtsSlowLogsRequestBody.
 
-        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。注：结束时间不能晚于当前时间。
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **说明：** 结束时间不能晚于当前时间。
 
         :param end_time: The end_time of this ListLtsSlowLogsRequestBody.
         :type end_time: str
@@ -220,7 +220,7 @@ class ListLtsSlowLogsRequestBody:
     def node_id(self):
         r"""Gets the node_id of this ListLtsSlowLogsRequestBody.
 
-        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
+        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。 允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
         :return: The node_id of this ListLtsSlowLogsRequestBody.
         :rtype: str
@@ -231,7 +231,7 @@ class ListLtsSlowLogsRequestBody:
     def node_id(self, node_id):
         r"""Sets the node_id of this ListLtsSlowLogsRequestBody.
 
-        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
+        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。 允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
         :param node_id: The node_id of this ListLtsSlowLogsRequestBody.
         :type node_id: str
@@ -242,7 +242,7 @@ class ListLtsSlowLogsRequestBody:
     def keywords(self):
         r"""Gets the keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
+        根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
 
         :return: The keywords of this ListLtsSlowLogsRequestBody.
         :rtype: list[str]
@@ -253,7 +253,7 @@ class ListLtsSlowLogsRequestBody:
     def keywords(self, keywords):
         r"""Sets the keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
+        根据多个关键字搜索日志全文，表示同时匹配所有关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过512个字符。
 
         :param keywords: The keywords of this ListLtsSlowLogsRequestBody.
         :type keywords: list[str]
@@ -264,7 +264,7 @@ class ListLtsSlowLogsRequestBody:
     def database_keywords(self):
         r"""Gets the database_keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
+        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
 
         :return: The database_keywords of this ListLtsSlowLogsRequestBody.
         :rtype: list[str]
@@ -275,7 +275,7 @@ class ListLtsSlowLogsRequestBody:
     def database_keywords(self, database_keywords):
         r"""Sets the database_keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
+        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过64个字符。
 
         :param database_keywords: The database_keywords of this ListLtsSlowLogsRequestBody.
         :type database_keywords: list[str]
@@ -286,7 +286,7 @@ class ListLtsSlowLogsRequestBody:
     def collection_keywords(self):
         r"""Gets the collection_keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
+        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
 
         :return: The collection_keywords of this ListLtsSlowLogsRequestBody.
         :rtype: list[str]
@@ -297,7 +297,7 @@ class ListLtsSlowLogsRequestBody:
     def collection_keywords(self, collection_keywords):
         r"""Sets the collection_keywords of this ListLtsSlowLogsRequestBody.
 
-        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
+        根据多个数据库表名关键字模糊搜索日志，表示匹配至少一个关键字。 - 只支持关键字前缀模糊搜索，最多支持10个关键字。 - 每个关键字最大长度不超过128个字符。
 
         :param collection_keywords: The collection_keywords of this ListLtsSlowLogsRequestBody.
         :type collection_keywords: list[str]
@@ -308,7 +308,7 @@ class ListLtsSlowLogsRequestBody:
     def max_cost_time(self):
         r"""Gets the max_cost_time of this ListLtsSlowLogsRequestBody.
 
-        支持根据最大执行时间范围查找日志。单位：ms
+        支持根据最大执行时间范围查找日志。 单位：ms
 
         :return: The max_cost_time of this ListLtsSlowLogsRequestBody.
         :rtype: int
@@ -319,7 +319,7 @@ class ListLtsSlowLogsRequestBody:
     def max_cost_time(self, max_cost_time):
         r"""Sets the max_cost_time of this ListLtsSlowLogsRequestBody.
 
-        支持根据最大执行时间范围查找日志。单位：ms
+        支持根据最大执行时间范围查找日志。 单位：ms
 
         :param max_cost_time: The max_cost_time of this ListLtsSlowLogsRequestBody.
         :type max_cost_time: int
@@ -330,7 +330,7 @@ class ListLtsSlowLogsRequestBody:
     def min_cost_time(self):
         r"""Gets the min_cost_time of this ListLtsSlowLogsRequestBody.
 
-        支持根据最小执行时间范围查找日志。单位：ms
+        支持根据最小执行时间范围查找日志。 单位：ms
 
         :return: The min_cost_time of this ListLtsSlowLogsRequestBody.
         :rtype: int
@@ -341,7 +341,7 @@ class ListLtsSlowLogsRequestBody:
     def min_cost_time(self, min_cost_time):
         r"""Sets the min_cost_time of this ListLtsSlowLogsRequestBody.
 
-        支持根据最小执行时间范围查找日志。单位：ms
+        支持根据最小执行时间范围查找日志。 单位：ms
 
         :param min_cost_time: The min_cost_time of this ListLtsSlowLogsRequestBody.
         :type min_cost_time: int

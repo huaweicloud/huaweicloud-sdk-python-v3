@@ -17,28 +17,28 @@ class ResetConsumeOffsetRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'group_id': 'str',
+        'group': 'str',
         'body': 'ResetConsumeOffsetReq'
     }
 
     attribute_map = {
         'engine': 'engine',
         'instance_id': 'instance_id',
-        'group_id': 'group_id',
+        'group': 'group',
         'body': 'body'
     }
 
-    def __init__(self, engine=None, instance_id=None, group_id=None, body=None):
+    def __init__(self, engine=None, instance_id=None, group=None, body=None):
         r"""ResetConsumeOffsetRequest
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎类型：reliability。
+        :param engine: **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param group_id: 消费组名称。
-        :type group_id: str
+        :param group: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type group: str
         :param body: Body of the ResetConsumeOffsetRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetReq`
         """
@@ -47,13 +47,13 @@ class ResetConsumeOffsetRequest:
 
         self._engine = None
         self._instance_id = None
-        self._group_id = None
+        self._group = None
         self._body = None
         self.discriminator = None
 
         self.engine = engine
         self.instance_id = instance_id
-        self.group_id = group_id
+        self.group = group
         if body is not None:
             self.body = body
 
@@ -61,7 +61,7 @@ class ResetConsumeOffsetRequest:
     def engine(self):
         r"""Gets the engine of this ResetConsumeOffsetRequest.
 
-        引擎类型：reliability。
+        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this ResetConsumeOffsetRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class ResetConsumeOffsetRequest:
     def engine(self, engine):
         r"""Sets the engine of this ResetConsumeOffsetRequest.
 
-        引擎类型：reliability。
+        **参数解释**： 引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ResetConsumeOffsetRequest.
         :type engine: str
@@ -83,7 +83,7 @@ class ResetConsumeOffsetRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ResetConsumeOffsetRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ResetConsumeOffsetRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ResetConsumeOffsetRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ResetConsumeOffsetRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ResetConsumeOffsetRequest.
         :type instance_id: str
@@ -102,26 +102,26 @@ class ResetConsumeOffsetRequest:
         self._instance_id = instance_id
 
     @property
-    def group_id(self):
-        r"""Gets the group_id of this ResetConsumeOffsetRequest.
+    def group(self):
+        r"""Gets the group of this ResetConsumeOffsetRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The group_id of this ResetConsumeOffsetRequest.
+        :return: The group of this ResetConsumeOffsetRequest.
         :rtype: str
         """
-        return self._group_id
+        return self._group
 
-    @group_id.setter
-    def group_id(self, group_id):
-        r"""Sets the group_id of this ResetConsumeOffsetRequest.
+    @group.setter
+    def group(self, group):
+        r"""Sets the group of this ResetConsumeOffsetRequest.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param group_id: The group_id of this ResetConsumeOffsetRequest.
-        :type group_id: str
+        :param group: The group of this ResetConsumeOffsetRequest.
+        :type group: str
         """
-        self._group_id = group_id
+        self._group = group
 
     @property
     def body(self):

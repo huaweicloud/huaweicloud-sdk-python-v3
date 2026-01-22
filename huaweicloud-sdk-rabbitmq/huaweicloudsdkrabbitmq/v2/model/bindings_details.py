@@ -35,15 +35,15 @@ class BindingsDetails:
 
         The model defined in huaweicloud sdk
 
-        :param source: Exchange名称
+        :param source: **参数解释**： Exchange名称。 **取值范围**： 不涉及。
         :type source: str
-        :param destination_type: 绑定目标类型
+        :param destination_type: **参数解释**： 绑定目标的类型。 **取值范围**： - exchange：交换机。 - queue：队列。
         :type destination_type: str
-        :param destination: 绑定目标的名称
+        :param destination: **参数解释**： 绑定目标。 **取值范围**： 不涉及。
         :type destination: str
-        :param routing_key: 绑定键值
+        :param routing_key: **参数解释**： 绑定键值。 **取值范围**： 不涉及。
         :type routing_key: str
-        :param properties_key: 经过URL转译后routing_key
+        :param properties_key: **参数解释**： 经过URL转译后routing_key。 **取值范围**： 不涉及。
         :type properties_key: str
         """
         
@@ -71,7 +71,7 @@ class BindingsDetails:
     def source(self):
         r"""Gets the source of this BindingsDetails.
 
-        Exchange名称
+        **参数解释**： Exchange名称。 **取值范围**： 不涉及。
 
         :return: The source of this BindingsDetails.
         :rtype: str
@@ -82,7 +82,7 @@ class BindingsDetails:
     def source(self, source):
         r"""Sets the source of this BindingsDetails.
 
-        Exchange名称
+        **参数解释**： Exchange名称。 **取值范围**： 不涉及。
 
         :param source: The source of this BindingsDetails.
         :type source: str
@@ -93,7 +93,7 @@ class BindingsDetails:
     def destination_type(self):
         r"""Gets the destination_type of this BindingsDetails.
 
-        绑定目标类型
+        **参数解释**： 绑定目标的类型。 **取值范围**： - exchange：交换机。 - queue：队列。
 
         :return: The destination_type of this BindingsDetails.
         :rtype: str
@@ -104,7 +104,7 @@ class BindingsDetails:
     def destination_type(self, destination_type):
         r"""Sets the destination_type of this BindingsDetails.
 
-        绑定目标类型
+        **参数解释**： 绑定目标的类型。 **取值范围**： - exchange：交换机。 - queue：队列。
 
         :param destination_type: The destination_type of this BindingsDetails.
         :type destination_type: str
@@ -115,7 +115,7 @@ class BindingsDetails:
     def destination(self):
         r"""Gets the destination of this BindingsDetails.
 
-        绑定目标的名称
+        **参数解释**： 绑定目标。 **取值范围**： 不涉及。
 
         :return: The destination of this BindingsDetails.
         :rtype: str
@@ -126,7 +126,7 @@ class BindingsDetails:
     def destination(self, destination):
         r"""Sets the destination of this BindingsDetails.
 
-        绑定目标的名称
+        **参数解释**： 绑定目标。 **取值范围**： 不涉及。
 
         :param destination: The destination of this BindingsDetails.
         :type destination: str
@@ -137,7 +137,7 @@ class BindingsDetails:
     def routing_key(self):
         r"""Gets the routing_key of this BindingsDetails.
 
-        绑定键值
+        **参数解释**： 绑定键值。 **取值范围**： 不涉及。
 
         :return: The routing_key of this BindingsDetails.
         :rtype: str
@@ -148,7 +148,7 @@ class BindingsDetails:
     def routing_key(self, routing_key):
         r"""Sets the routing_key of this BindingsDetails.
 
-        绑定键值
+        **参数解释**： 绑定键值。 **取值范围**： 不涉及。
 
         :param routing_key: The routing_key of this BindingsDetails.
         :type routing_key: str
@@ -159,7 +159,7 @@ class BindingsDetails:
     def properties_key(self):
         r"""Gets the properties_key of this BindingsDetails.
 
-        经过URL转译后routing_key
+        **参数解释**： 经过URL转译后routing_key。 **取值范围**： 不涉及。
 
         :return: The properties_key of this BindingsDetails.
         :rtype: str
@@ -170,7 +170,7 @@ class BindingsDetails:
     def properties_key(self, properties_key):
         r"""Sets the properties_key of this BindingsDetails.
 
-        经过URL转译后routing_key
+        **参数解释**： 经过URL转译后routing_key。 **取值范围**： 不涉及。
 
         :param properties_key: The properties_key of this BindingsDetails.
         :type properties_key: str

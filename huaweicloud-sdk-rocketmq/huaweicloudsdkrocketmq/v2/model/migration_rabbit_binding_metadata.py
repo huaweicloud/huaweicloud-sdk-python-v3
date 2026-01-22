@@ -35,15 +35,15 @@ class MigrationRabbitBindingMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param vhost: vhost名称。
+        :param vhost: **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhost: str
-        :param source: 消息的来源。
+        :param source: **参数解释**： 消息的来源。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type source: str
-        :param destination: 消息的目标。
+        :param destination: **参数解释**： 消息的目标。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type destination: str
-        :param destination_type: 目标的类型。
+        :param destination_type: **参数解释**： 目标的类型。 **约束限制**： 不涉及。 **取值范围**： - exchange：交换机。 - queue：队列。[RabbitMQ AMQP版本只支持绑定queue。](tag:hws,hws_hk) **默认取值**： 不涉及。
         :type destination_type: str
-        :param routing_key: 路由键。
+        :param routing_key: **参数解释**： 路由键。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type routing_key: str
         """
         
@@ -71,7 +71,7 @@ class MigrationRabbitBindingMetadata:
     def vhost(self):
         r"""Gets the vhost of this MigrationRabbitBindingMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vhost of this MigrationRabbitBindingMetadata.
         :rtype: str
@@ -82,7 +82,7 @@ class MigrationRabbitBindingMetadata:
     def vhost(self, vhost):
         r"""Sets the vhost of this MigrationRabbitBindingMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vhost: The vhost of this MigrationRabbitBindingMetadata.
         :type vhost: str
@@ -93,7 +93,7 @@ class MigrationRabbitBindingMetadata:
     def source(self):
         r"""Gets the source of this MigrationRabbitBindingMetadata.
 
-        消息的来源。
+        **参数解释**： 消息的来源。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The source of this MigrationRabbitBindingMetadata.
         :rtype: str
@@ -104,7 +104,7 @@ class MigrationRabbitBindingMetadata:
     def source(self, source):
         r"""Sets the source of this MigrationRabbitBindingMetadata.
 
-        消息的来源。
+        **参数解释**： 消息的来源。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param source: The source of this MigrationRabbitBindingMetadata.
         :type source: str
@@ -115,7 +115,7 @@ class MigrationRabbitBindingMetadata:
     def destination(self):
         r"""Gets the destination of this MigrationRabbitBindingMetadata.
 
-        消息的目标。
+        **参数解释**： 消息的目标。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The destination of this MigrationRabbitBindingMetadata.
         :rtype: str
@@ -126,7 +126,7 @@ class MigrationRabbitBindingMetadata:
     def destination(self, destination):
         r"""Sets the destination of this MigrationRabbitBindingMetadata.
 
-        消息的目标。
+        **参数解释**： 消息的目标。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param destination: The destination of this MigrationRabbitBindingMetadata.
         :type destination: str
@@ -137,7 +137,7 @@ class MigrationRabbitBindingMetadata:
     def destination_type(self):
         r"""Gets the destination_type of this MigrationRabbitBindingMetadata.
 
-        目标的类型。
+        **参数解释**： 目标的类型。 **约束限制**： 不涉及。 **取值范围**： - exchange：交换机。 - queue：队列。[RabbitMQ AMQP版本只支持绑定queue。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :return: The destination_type of this MigrationRabbitBindingMetadata.
         :rtype: str
@@ -148,7 +148,7 @@ class MigrationRabbitBindingMetadata:
     def destination_type(self, destination_type):
         r"""Sets the destination_type of this MigrationRabbitBindingMetadata.
 
-        目标的类型。
+        **参数解释**： 目标的类型。 **约束限制**： 不涉及。 **取值范围**： - exchange：交换机。 - queue：队列。[RabbitMQ AMQP版本只支持绑定queue。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :param destination_type: The destination_type of this MigrationRabbitBindingMetadata.
         :type destination_type: str
@@ -159,7 +159,7 @@ class MigrationRabbitBindingMetadata:
     def routing_key(self):
         r"""Gets the routing_key of this MigrationRabbitBindingMetadata.
 
-        路由键。
+        **参数解释**： 路由键。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The routing_key of this MigrationRabbitBindingMetadata.
         :rtype: str
@@ -170,7 +170,7 @@ class MigrationRabbitBindingMetadata:
     def routing_key(self, routing_key):
         r"""Sets the routing_key of this MigrationRabbitBindingMetadata.
 
-        路由键。
+        **参数解释**： 路由键。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param routing_key: The routing_key of this MigrationRabbitBindingMetadata.
         :type routing_key: str

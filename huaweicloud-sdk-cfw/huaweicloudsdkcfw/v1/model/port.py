@@ -29,9 +29,9 @@ class Port:
 
         The model defined in huaweicloud sdk
 
-        :param port_type: **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        :param port_type: **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
         :type port_type: int
-        :param ports: **参数解释**： 端口 **取值范围**： 不涉及
+        :param ports: **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type ports: str
         """
         
@@ -50,7 +50,7 @@ class Port:
     def port_type(self):
         r"""Gets the port_type of this Port.
 
-        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :return: The port_type of this Port.
         :rtype: int
@@ -61,7 +61,7 @@ class Port:
     def port_type(self, port_type):
         r"""Sets the port_type of this Port.
 
-        **参数解释**： 端口类型 **取值范围**： -1 Any，0 包含，1 排除
+        **参数解释**： 端口操作类型 **约束限制**：   不涉及 **取值范围**： -1：Any 0：包含 1：排除 **默认取值**：   不涉及
 
         :param port_type: The port_type of this Port.
         :type port_type: int
@@ -72,7 +72,7 @@ class Port:
     def ports(self):
         r"""Gets the ports of this Port.
 
-        **参数解释**： 端口 **取值范围**： 不涉及
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The ports of this Port.
         :rtype: str
@@ -83,7 +83,7 @@ class Port:
     def ports(self, ports):
         r"""Sets the ports of this Port.
 
-        **参数解释**： 端口 **取值范围**： 不涉及
+        **参数解释**： 端口 **约束限制**：   不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param ports: The ports of this Port.
         :type ports: str

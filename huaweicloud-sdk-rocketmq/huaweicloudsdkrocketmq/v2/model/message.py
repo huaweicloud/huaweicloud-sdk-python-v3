@@ -53,33 +53,33 @@ class Message:
 
         The model defined in huaweicloud sdk
 
-        :param msg_id: 消息ID。
+        :param msg_id: **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type msg_id: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param store_timestamp: 存储消息的时间。
+        :param store_timestamp: **参数解释**： 存储消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type store_timestamp: float
-        :param born_timestamp: 产生消息的时间。
+        :param born_timestamp: **参数解释**： 产生消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type born_timestamp: float
-        :param reconsume_times: 重试次数。
+        :param reconsume_times: **参数解释**： 重试次数。 **取值范围**： 不涉及。
         :type reconsume_times: int
-        :param body: 消息体。
+        :param body: **参数解释**： 消息体。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type body: str
-        :param body_crc: 消息体校验和。
+        :param body_crc: **参数解释**： 消息体校验和。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type body_crc: float
-        :param store_size: 存储大小。
+        :param store_size: **参数解释**： 存储大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type store_size: float
-        :param property_list: 消息属性列表。
+        :param property_list: **参数解释**： 消息属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.MessagePropertyList`]
-        :param born_host: 产生消息的主机IP。
+        :param born_host: **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type born_host: str
-        :param store_host: 存储消息的主机IP。
+        :param store_host: **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type store_host: str
-        :param queue_id: 队列ID。
+        :param queue_id: **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_id: int
-        :param queue_offset: 在队列中的偏移量。
+        :param queue_offset: **参数解释**： 在队列中的偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue_offset: int
         """
         
@@ -134,7 +134,7 @@ class Message:
     def msg_id(self):
         r"""Gets the msg_id of this Message.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The msg_id of this Message.
         :rtype: str
@@ -145,7 +145,7 @@ class Message:
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this Message.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param msg_id: The msg_id of this Message.
         :type msg_id: str
@@ -156,7 +156,7 @@ class Message:
     def instance_id(self):
         r"""Gets the instance_id of this Message.
 
-        实例ID。
+        **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this Message.
         :rtype: str
@@ -167,7 +167,7 @@ class Message:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this Message.
 
-        实例ID。
+        **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this Message.
         :type instance_id: str
@@ -178,7 +178,7 @@ class Message:
     def topic(self):
         r"""Gets the topic of this Message.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this Message.
         :rtype: str
@@ -189,7 +189,7 @@ class Message:
     def topic(self, topic):
         r"""Sets the topic of this Message.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this Message.
         :type topic: str
@@ -200,7 +200,7 @@ class Message:
     def store_timestamp(self):
         r"""Gets the store_timestamp of this Message.
 
-        存储消息的时间。
+        **参数解释**： 存储消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The store_timestamp of this Message.
         :rtype: float
@@ -211,7 +211,7 @@ class Message:
     def store_timestamp(self, store_timestamp):
         r"""Sets the store_timestamp of this Message.
 
-        存储消息的时间。
+        **参数解释**： 存储消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param store_timestamp: The store_timestamp of this Message.
         :type store_timestamp: float
@@ -222,7 +222,7 @@ class Message:
     def born_timestamp(self):
         r"""Gets the born_timestamp of this Message.
 
-        产生消息的时间。
+        **参数解释**： 产生消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The born_timestamp of this Message.
         :rtype: float
@@ -233,7 +233,7 @@ class Message:
     def born_timestamp(self, born_timestamp):
         r"""Sets the born_timestamp of this Message.
 
-        产生消息的时间。
+        **参数解释**： 产生消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param born_timestamp: The born_timestamp of this Message.
         :type born_timestamp: float
@@ -244,7 +244,7 @@ class Message:
     def reconsume_times(self):
         r"""Gets the reconsume_times of this Message.
 
-        重试次数。
+        **参数解释**： 重试次数。 **取值范围**： 不涉及。
 
         :return: The reconsume_times of this Message.
         :rtype: int
@@ -255,7 +255,7 @@ class Message:
     def reconsume_times(self, reconsume_times):
         r"""Sets the reconsume_times of this Message.
 
-        重试次数。
+        **参数解释**： 重试次数。 **取值范围**： 不涉及。
 
         :param reconsume_times: The reconsume_times of this Message.
         :type reconsume_times: int
@@ -266,7 +266,7 @@ class Message:
     def body(self):
         r"""Gets the body of this Message.
 
-        消息体。
+        **参数解释**： 消息体。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The body of this Message.
         :rtype: str
@@ -277,7 +277,7 @@ class Message:
     def body(self, body):
         r"""Sets the body of this Message.
 
-        消息体。
+        **参数解释**： 消息体。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param body: The body of this Message.
         :type body: str
@@ -288,7 +288,7 @@ class Message:
     def body_crc(self):
         r"""Gets the body_crc of this Message.
 
-        消息体校验和。
+        **参数解释**： 消息体校验和。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The body_crc of this Message.
         :rtype: float
@@ -299,7 +299,7 @@ class Message:
     def body_crc(self, body_crc):
         r"""Sets the body_crc of this Message.
 
-        消息体校验和。
+        **参数解释**： 消息体校验和。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param body_crc: The body_crc of this Message.
         :type body_crc: float
@@ -310,7 +310,7 @@ class Message:
     def store_size(self):
         r"""Gets the store_size of this Message.
 
-        存储大小。
+        **参数解释**： 存储大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The store_size of this Message.
         :rtype: float
@@ -321,7 +321,7 @@ class Message:
     def store_size(self, store_size):
         r"""Sets the store_size of this Message.
 
-        存储大小。
+        **参数解释**： 存储大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param store_size: The store_size of this Message.
         :type store_size: float
@@ -332,7 +332,7 @@ class Message:
     def property_list(self):
         r"""Gets the property_list of this Message.
 
-        消息属性列表。
+        **参数解释**： 消息属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The property_list of this Message.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MessagePropertyList`]
@@ -343,7 +343,7 @@ class Message:
     def property_list(self, property_list):
         r"""Sets the property_list of this Message.
 
-        消息属性列表。
+        **参数解释**： 消息属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param property_list: The property_list of this Message.
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.MessagePropertyList`]
@@ -354,7 +354,7 @@ class Message:
     def born_host(self):
         r"""Gets the born_host of this Message.
 
-        产生消息的主机IP。
+        **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The born_host of this Message.
         :rtype: str
@@ -365,7 +365,7 @@ class Message:
     def born_host(self, born_host):
         r"""Sets the born_host of this Message.
 
-        产生消息的主机IP。
+        **参数解释**： 产生消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param born_host: The born_host of this Message.
         :type born_host: str
@@ -376,7 +376,7 @@ class Message:
     def store_host(self):
         r"""Gets the store_host of this Message.
 
-        存储消息的主机IP。
+        **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The store_host of this Message.
         :rtype: str
@@ -387,7 +387,7 @@ class Message:
     def store_host(self, store_host):
         r"""Sets the store_host of this Message.
 
-        存储消息的主机IP。
+        **参数解释**： 存储消息的主机IP。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param store_host: The store_host of this Message.
         :type store_host: str
@@ -398,7 +398,7 @@ class Message:
     def queue_id(self):
         r"""Gets the queue_id of this Message.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_id of this Message.
         :rtype: int
@@ -409,7 +409,7 @@ class Message:
     def queue_id(self, queue_id):
         r"""Sets the queue_id of this Message.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_id: The queue_id of this Message.
         :type queue_id: int
@@ -420,7 +420,7 @@ class Message:
     def queue_offset(self):
         r"""Gets the queue_offset of this Message.
 
-        在队列中的偏移量。
+        **参数解释**： 在队列中的偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue_offset of this Message.
         :rtype: int
@@ -431,7 +431,7 @@ class Message:
     def queue_offset(self, queue_offset):
         r"""Sets the queue_offset of this Message.
 
-        在队列中的偏移量。
+        **参数解释**： 在队列中的偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue_offset: The queue_offset of this Message.
         :type queue_offset: int

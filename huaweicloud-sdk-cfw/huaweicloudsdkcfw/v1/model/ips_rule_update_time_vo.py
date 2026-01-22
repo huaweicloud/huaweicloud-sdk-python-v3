@@ -31,11 +31,11 @@ class IpsRuleUpdateTimeVO:
 
         The model defined in huaweicloud sdk
 
-        :param ips_type: 
+        :param ips_type: ips类型，0表示基础防御，1表示虚拟补丁
         :type ips_type: int
-        :param ips_version: 
+        :param ips_version: ips规则版本
         :type ips_version: str
-        :param update_time: 
+        :param update_time: ips更新时间戳
         :type update_time: int
         """
         
@@ -57,6 +57,8 @@ class IpsRuleUpdateTimeVO:
     def ips_type(self):
         r"""Gets the ips_type of this IpsRuleUpdateTimeVO.
 
+        ips类型，0表示基础防御，1表示虚拟补丁
+
         :return: The ips_type of this IpsRuleUpdateTimeVO.
         :rtype: int
         """
@@ -65,6 +67,8 @@ class IpsRuleUpdateTimeVO:
     @ips_type.setter
     def ips_type(self, ips_type):
         r"""Sets the ips_type of this IpsRuleUpdateTimeVO.
+
+        ips类型，0表示基础防御，1表示虚拟补丁
 
         :param ips_type: The ips_type of this IpsRuleUpdateTimeVO.
         :type ips_type: int
@@ -75,6 +79,8 @@ class IpsRuleUpdateTimeVO:
     def ips_version(self):
         r"""Gets the ips_version of this IpsRuleUpdateTimeVO.
 
+        ips规则版本
+
         :return: The ips_version of this IpsRuleUpdateTimeVO.
         :rtype: str
         """
@@ -83,6 +89,8 @@ class IpsRuleUpdateTimeVO:
     @ips_version.setter
     def ips_version(self, ips_version):
         r"""Sets the ips_version of this IpsRuleUpdateTimeVO.
+
+        ips规则版本
 
         :param ips_version: The ips_version of this IpsRuleUpdateTimeVO.
         :type ips_version: str
@@ -93,6 +101,8 @@ class IpsRuleUpdateTimeVO:
     def update_time(self):
         r"""Gets the update_time of this IpsRuleUpdateTimeVO.
 
+        ips更新时间戳
+
         :return: The update_time of this IpsRuleUpdateTimeVO.
         :rtype: int
         """
@@ -101,6 +111,8 @@ class IpsRuleUpdateTimeVO:
     @update_time.setter
     def update_time(self, update_time):
         r"""Sets the update_time of this IpsRuleUpdateTimeVO.
+
+        ips更新时间戳
 
         :param update_time: The update_time of this IpsRuleUpdateTimeVO.
         :type update_time: int

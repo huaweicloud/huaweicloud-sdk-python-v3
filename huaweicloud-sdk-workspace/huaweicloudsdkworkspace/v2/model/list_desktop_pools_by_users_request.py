@@ -35,7 +35,7 @@ class ListDesktopPoolsByUsersRequest:
         :type user_ids: list[str]
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+        :param limit: 用于分页查询，返回桌面数量限制。取值范围0-10，默认值是10。
         :type limit: int
         """
         
@@ -101,7 +101,7 @@ class ListDesktopPoolsByUsersRequest:
     def limit(self):
         r"""Gets the limit of this ListDesktopPoolsByUsersRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+        用于分页查询，返回桌面数量限制。取值范围0-10，默认值是10。
 
         :return: The limit of this ListDesktopPoolsByUsersRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListDesktopPoolsByUsersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListDesktopPoolsByUsersRequest.
 
-        用于分页查询，返回桌面数量限制。取值范围0-100，默认值是10。
+        用于分页查询，返回桌面数量限制。取值范围0-10，默认值是10。
 
         :param limit: The limit of this ListDesktopPoolsByUsersRequest.
         :type limit: int

@@ -30,9 +30,9 @@ class UpdateEntityConfigurationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 修改实例参数的异步任务ID。
+        :param job_id: **参数解释：** 修改实例参数的异步任务ID。 **取值范围：** 不涉及。
         :type job_id: str
-        :param restart_required: 参数修改涉及范围（实例，组，节点）否需要重启。 - false不需要重启 - true需要重启。
+        :param restart_required: **参数解释：** 参数修改涉及范围（实例，组，节点）否需要重启。 **取值范围：** - 取值为false，不需要重启。 - 取值为true，需要重启。
         :type restart_required: bool
         """
         
@@ -51,7 +51,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpdateEntityConfigurationResponse.
 
-        修改实例参数的异步任务ID。
+        **参数解释：** 修改实例参数的异步任务ID。 **取值范围：** 不涉及。
 
         :return: The job_id of this UpdateEntityConfigurationResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpdateEntityConfigurationResponse.
 
-        修改实例参数的异步任务ID。
+        **参数解释：** 修改实例参数的异步任务ID。 **取值范围：** 不涉及。
 
         :param job_id: The job_id of this UpdateEntityConfigurationResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
     def restart_required(self):
         r"""Gets the restart_required of this UpdateEntityConfigurationResponse.
 
-        参数修改涉及范围（实例，组，节点）否需要重启。 - false不需要重启 - true需要重启。
+        **参数解释：** 参数修改涉及范围（实例，组，节点）否需要重启。 **取值范围：** - 取值为false，不需要重启。 - 取值为true，需要重启。
 
         :return: The restart_required of this UpdateEntityConfigurationResponse.
         :rtype: bool
@@ -84,7 +84,7 @@ class UpdateEntityConfigurationResponse(SdkResponse):
     def restart_required(self, restart_required):
         r"""Sets the restart_required of this UpdateEntityConfigurationResponse.
 
-        参数修改涉及范围（实例，组，节点）否需要重启。 - false不需要重启 - true需要重启。
+        **参数解释：** 参数修改涉及范围（实例，组，节点）否需要重启。 **取值范围：** - 取值为false，不需要重启。 - 取值为true，需要重启。
 
         :param restart_required: The restart_required of this UpdateEntityConfigurationResponse.
         :type restart_required: bool

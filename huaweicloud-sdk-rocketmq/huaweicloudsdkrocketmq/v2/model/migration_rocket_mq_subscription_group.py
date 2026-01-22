@@ -26,14 +26,14 @@ class MigrationRocketMqSubscriptionGroup:
     }
 
     attribute_map = {
-        'group_name': 'groupName',
-        'consume_broadcast_enable': 'consumeBroadcastEnable',
-        'consume_enable': 'consumeEnable',
-        'consume_from_min_enable': 'consumeFromMinEnable',
-        'notify_consumer_ids_changed_enable': 'notifyConsumerIdsChangedEnable',
-        'retry_max_times': 'retryMaxTimes',
-        'retry_queue_nums': 'retryQueueNums',
-        'which_broker_when_consume_slow': 'whichBrokerWhenConsumeSlow'
+        'group_name': 'group_name',
+        'consume_broadcast_enable': 'consume_broadcast_enable',
+        'consume_enable': 'consume_enable',
+        'consume_from_min_enable': 'consume_from_min_enable',
+        'notify_consumer_ids_changed_enable': 'notify_consumer_ids_changed_enable',
+        'retry_max_times': 'retry_max_times',
+        'retry_queue_nums': 'retry_queue_nums',
+        'which_broker_when_consume_slow': 'which_broker_when_consume_slow'
     }
 
     def __init__(self, group_name=None, consume_broadcast_enable=None, consume_enable=None, consume_from_min_enable=None, notify_consumer_ids_changed_enable=None, retry_max_times=None, retry_queue_nums=None, which_broker_when_consume_slow=None):
@@ -41,21 +41,21 @@ class MigrationRocketMqSubscriptionGroup:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 消费组名。
+        :param group_name: **参数解释**： 消费组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_name: str
-        :param consume_broadcast_enable: 是否允许以广播模式消费。
+        :param consume_broadcast_enable: **参数解释**： 是否允许以广播模式消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许以广播模式消费。 - false：不允许以广播模式消费。 **默认取值**： 不涉及。
         :type consume_broadcast_enable: bool
-        :param consume_enable: 是否允许消费。
+        :param consume_enable: **参数解释**： 是否允许消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许消费。 - false：不允许消费。 **默认取值**： true。
         :type consume_enable: bool
-        :param consume_from_min_enable: 是否从最小偏移量开始消费。
+        :param consume_from_min_enable: **参数解释**： 是否从最小偏移量开始消费。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
         :type consume_from_min_enable: bool
-        :param notify_consumer_ids_changed_enable: 消费者ID变化时是否通知。
+        :param notify_consumer_ids_changed_enable: **参数解释**： 消费者ID变化时是否通知。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
         :type notify_consumer_ids_changed_enable: bool
-        :param retry_max_times: 消费最大重试次数。
+        :param retry_max_times: **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 16。
         :type retry_max_times: int
-        :param retry_queue_nums: 重试队列个数。
+        :param retry_queue_nums: **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
         :type retry_queue_nums: int
-        :param which_broker_when_consume_slow: 慢消费时选择的broker节点ID。
+        :param which_broker_when_consume_slow: **参数解释**： 慢消费时选择的broker节点ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
         :type which_broker_when_consume_slow: int
         """
         
@@ -92,7 +92,7 @@ class MigrationRocketMqSubscriptionGroup:
     def group_name(self):
         r"""Gets the group_name of this MigrationRocketMqSubscriptionGroup.
 
-        消费组名。
+        **参数解释**： 消费组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_name of this MigrationRocketMqSubscriptionGroup.
         :rtype: str
@@ -103,7 +103,7 @@ class MigrationRocketMqSubscriptionGroup:
     def group_name(self, group_name):
         r"""Sets the group_name of this MigrationRocketMqSubscriptionGroup.
 
-        消费组名。
+        **参数解释**： 消费组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_name: The group_name of this MigrationRocketMqSubscriptionGroup.
         :type group_name: str
@@ -114,7 +114,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_broadcast_enable(self):
         r"""Gets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否允许以广播模式消费。
+        **参数解释**： 是否允许以广播模式消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许以广播模式消费。 - false：不允许以广播模式消费。 **默认取值**： 不涉及。
 
         :return: The consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
         :rtype: bool
@@ -125,7 +125,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_broadcast_enable(self, consume_broadcast_enable):
         r"""Sets the consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否允许以广播模式消费。
+        **参数解释**： 是否允许以广播模式消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许以广播模式消费。 - false：不允许以广播模式消费。 **默认取值**： 不涉及。
 
         :param consume_broadcast_enable: The consume_broadcast_enable of this MigrationRocketMqSubscriptionGroup.
         :type consume_broadcast_enable: bool
@@ -136,7 +136,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_enable(self):
         r"""Gets the consume_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否允许消费。
+        **参数解释**： 是否允许消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许消费。 - false：不允许消费。 **默认取值**： true。
 
         :return: The consume_enable of this MigrationRocketMqSubscriptionGroup.
         :rtype: bool
@@ -147,7 +147,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_enable(self, consume_enable):
         r"""Sets the consume_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否允许消费。
+        **参数解释**： 是否允许消费。 **约束限制**： 不涉及。 **取值范围**： - true：允许消费。 - false：不允许消费。 **默认取值**： true。
 
         :param consume_enable: The consume_enable of this MigrationRocketMqSubscriptionGroup.
         :type consume_enable: bool
@@ -158,7 +158,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_from_min_enable(self):
         r"""Gets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否从最小偏移量开始消费。
+        **参数解释**： 是否从最小偏移量开始消费。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
 
         :return: The consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
         :rtype: bool
@@ -169,7 +169,7 @@ class MigrationRocketMqSubscriptionGroup:
     def consume_from_min_enable(self, consume_from_min_enable):
         r"""Sets the consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
 
-        是否从最小偏移量开始消费。
+        **参数解释**： 是否从最小偏移量开始消费。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
 
         :param consume_from_min_enable: The consume_from_min_enable of this MigrationRocketMqSubscriptionGroup.
         :type consume_from_min_enable: bool
@@ -180,7 +180,7 @@ class MigrationRocketMqSubscriptionGroup:
     def notify_consumer_ids_changed_enable(self):
         r"""Gets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
 
-        消费者ID变化时是否通知。
+        **参数解释**： 消费者ID变化时是否通知。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
 
         :return: The notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
         :rtype: bool
@@ -191,7 +191,7 @@ class MigrationRocketMqSubscriptionGroup:
     def notify_consumer_ids_changed_enable(self, notify_consumer_ids_changed_enable):
         r"""Sets the notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
 
-        消费者ID变化时是否通知。
+        **参数解释**： 消费者ID变化时是否通知。 **约束限制**： 不涉及。 **取值范围**： - true：是。 - false：不是。 **默认取值**： true。
 
         :param notify_consumer_ids_changed_enable: The notify_consumer_ids_changed_enable of this MigrationRocketMqSubscriptionGroup.
         :type notify_consumer_ids_changed_enable: bool
@@ -202,7 +202,7 @@ class MigrationRocketMqSubscriptionGroup:
     def retry_max_times(self):
         r"""Gets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
 
-        消费最大重试次数。
+        **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 16。
 
         :return: The retry_max_times of this MigrationRocketMqSubscriptionGroup.
         :rtype: int
@@ -213,7 +213,7 @@ class MigrationRocketMqSubscriptionGroup:
     def retry_max_times(self, retry_max_times):
         r"""Sets the retry_max_times of this MigrationRocketMqSubscriptionGroup.
 
-        消费最大重试次数。
+        **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 16。
 
         :param retry_max_times: The retry_max_times of this MigrationRocketMqSubscriptionGroup.
         :type retry_max_times: int
@@ -224,7 +224,7 @@ class MigrationRocketMqSubscriptionGroup:
     def retry_queue_nums(self):
         r"""Gets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
 
-        重试队列个数。
+        **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
 
         :return: The retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
         :rtype: int
@@ -235,7 +235,7 @@ class MigrationRocketMqSubscriptionGroup:
     def retry_queue_nums(self, retry_queue_nums):
         r"""Sets the retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
 
-        重试队列个数。
+        **参数解释**： 消费最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
 
         :param retry_queue_nums: The retry_queue_nums of this MigrationRocketMqSubscriptionGroup.
         :type retry_queue_nums: int
@@ -246,7 +246,7 @@ class MigrationRocketMqSubscriptionGroup:
     def which_broker_when_consume_slow(self):
         r"""Gets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
 
-        慢消费时选择的broker节点ID。
+        **参数解释**： 慢消费时选择的broker节点ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
 
         :return: The which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
         :rtype: int
@@ -257,7 +257,7 @@ class MigrationRocketMqSubscriptionGroup:
     def which_broker_when_consume_slow(self, which_broker_when_consume_slow):
         r"""Sets the which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
 
-        慢消费时选择的broker节点ID。
+        **参数解释**： 慢消费时选择的broker节点ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 1。
 
         :param which_broker_when_consume_slow: The which_broker_when_consume_slow of this MigrationRocketMqSubscriptionGroup.
         :type which_broker_when_consume_slow: int

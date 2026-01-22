@@ -47,7 +47,8 @@ class StartKibanaPublicReq:
         self.discriminator = None
 
         self.eip_size = eip_size
-        self.elb_white_list = elb_white_list
+        if elb_white_list is not None:
+            self.elb_white_list = elb_white_list
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
 

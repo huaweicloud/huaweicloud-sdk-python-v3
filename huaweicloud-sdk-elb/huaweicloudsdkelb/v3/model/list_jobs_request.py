@@ -51,9 +51,9 @@ class ListJobsRequest:
         :type page_reverse: bool
         :param job_id: **参数解释**：任务ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type job_id: str
-        :param job_type: **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param job_type: **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**： - cloneLoadbalancer：复制负载均衡器任务。 - cloneListener：复制监听器任务。 - batchCreateV2Loadbalancer：批量创建共享型负载均衡器任务。 - batchCreateV3Loadbalancer：批量创建独享型负载均衡器任务。 - batchDeleteLoadbalancer：批量删除负载均衡器任务。 - batchDeleteListener：批量删除监听器任务。  **默认取值**：不涉及
         :type job_type: str
-        :param status: **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
+        :param status: **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**： - INIT：初始状态。 - RUNNING：任务处理中。 - FAIL：任务处理失败。 - SUCCESS：任务处理成功。 - ROLLBACKING：任务正在回退。 - COMPLETE：任务完成。 - ROLLBACK_FAIL：回退失败。 - CANCEL：已取消。  **默认取值**：不涉及
         :type status: str
         :param error_code: **参数解释**：任务的错误码。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type error_code: str
@@ -187,7 +187,7 @@ class ListJobsRequest:
     def job_type(self):
         r"""Gets the job_type of this ListJobsRequest.
 
-        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**： - cloneLoadbalancer：复制负载均衡器任务。 - cloneListener：复制监听器任务。 - batchCreateV2Loadbalancer：批量创建共享型负载均衡器任务。 - batchCreateV3Loadbalancer：批量创建独享型负载均衡器任务。 - batchDeleteLoadbalancer：批量删除负载均衡器任务。 - batchDeleteListener：批量删除监听器任务。  **默认取值**：不涉及
 
         :return: The job_type of this ListJobsRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ListJobsRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this ListJobsRequest.
 
-        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：任务类型。  **约束限制**：不涉及  **取值范围**： - cloneLoadbalancer：复制负载均衡器任务。 - cloneListener：复制监听器任务。 - batchCreateV2Loadbalancer：批量创建共享型负载均衡器任务。 - batchCreateV3Loadbalancer：批量创建独享型负载均衡器任务。 - batchDeleteLoadbalancer：批量删除负载均衡器任务。 - batchDeleteListener：批量删除监听器任务。  **默认取值**：不涉及
 
         :param job_type: The job_type of this ListJobsRequest.
         :type job_type: str
@@ -209,7 +209,7 @@ class ListJobsRequest:
     def status(self):
         r"""Gets the status of this ListJobsRequest.
 
-        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
+        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**： - INIT：初始状态。 - RUNNING：任务处理中。 - FAIL：任务处理失败。 - SUCCESS：任务处理成功。 - ROLLBACKING：任务正在回退。 - COMPLETE：任务完成。 - ROLLBACK_FAIL：回退失败。 - CANCEL：已取消。  **默认取值**：不涉及
 
         :return: The status of this ListJobsRequest.
         :rtype: str
@@ -220,7 +220,7 @@ class ListJobsRequest:
     def status(self, status):
         r"""Sets the status of this ListJobsRequest.
 
-        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**：INIT,RUNNING,FAIL,SUCCESS,ROLLBACKING,COMPLETE,ROLLBACK_FAIL,CANCEL  **默认取值**：不涉及
+        **参数解释**：任务状态。  **约束限制**：不涉及  **取值范围**： - INIT：初始状态。 - RUNNING：任务处理中。 - FAIL：任务处理失败。 - SUCCESS：任务处理成功。 - ROLLBACKING：任务正在回退。 - COMPLETE：任务完成。 - ROLLBACK_FAIL：回退失败。 - CANCEL：已取消。  **默认取值**：不涉及
 
         :param status: The status of this ListJobsRequest.
         :type status: str

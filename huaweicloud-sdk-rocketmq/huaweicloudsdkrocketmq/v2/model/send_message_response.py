@@ -40,19 +40,19 @@ class SendMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param topic: **参数解释**： 主题名称。 **取值范围**： 不涉及。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type topic: str
-        :param body: **参数解释**： 消息内容。 **取值范围**： 不涉及。
+        :param body: **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type body: str
-        :param property_list: **参数解释**： 特性列表。 **取值范围**： 不涉及。
+        :param property_list: **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
-        :param msg_id: **参数解释**： 消息ID。 **取值范围**： 不涉及。
+        :param msg_id: **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id: str
-        :param queue_id: **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        :param queue_id: **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type queue_id: float
-        :param queue_offset: **参数解释**： 队列offset。 **取值范围**： 不涉及。
+        :param queue_offset: **参数解释**： 队列offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type queue_offset: float
-        :param broker_name: **参数解释**： Broker名称。 **取值范围**： 不涉及。
+        :param broker_name: **参数解释**： Broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type broker_name: str
         """
         
@@ -86,7 +86,7 @@ class SendMessageResponse(SdkResponse):
     def topic(self):
         r"""Gets the topic of this SendMessageResponse.
 
-        **参数解释**： 主题名称。 **取值范围**： 不涉及。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The topic of this SendMessageResponse.
         :rtype: str
@@ -97,7 +97,7 @@ class SendMessageResponse(SdkResponse):
     def topic(self, topic):
         r"""Sets the topic of this SendMessageResponse.
 
-        **参数解释**： 主题名称。 **取值范围**： 不涉及。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param topic: The topic of this SendMessageResponse.
         :type topic: str
@@ -108,7 +108,7 @@ class SendMessageResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this SendMessageResponse.
 
-        **参数解释**： 消息内容。 **取值范围**： 不涉及。
+        **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The body of this SendMessageResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class SendMessageResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this SendMessageResponse.
 
-        **参数解释**： 消息内容。 **取值范围**： 不涉及。
+        **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param body: The body of this SendMessageResponse.
         :type body: str
@@ -130,7 +130,7 @@ class SendMessageResponse(SdkResponse):
     def property_list(self):
         r"""Gets the property_list of this SendMessageResponse.
 
-        **参数解释**： 特性列表。 **取值范围**： 不涉及。
+        **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The property_list of this SendMessageResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
@@ -141,7 +141,7 @@ class SendMessageResponse(SdkResponse):
     def property_list(self, property_list):
         r"""Sets the property_list of this SendMessageResponse.
 
-        **参数解释**： 特性列表。 **取值范围**： 不涉及。
+        **参数解释**： 特性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param property_list: The property_list of this SendMessageResponse.
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
@@ -152,7 +152,7 @@ class SendMessageResponse(SdkResponse):
     def msg_id(self):
         r"""Gets the msg_id of this SendMessageResponse.
 
-        **参数解释**： 消息ID。 **取值范围**： 不涉及。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id of this SendMessageResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class SendMessageResponse(SdkResponse):
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this SendMessageResponse.
 
-        **参数解释**： 消息ID。 **取值范围**： 不涉及。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id: The msg_id of this SendMessageResponse.
         :type msg_id: str
@@ -174,7 +174,7 @@ class SendMessageResponse(SdkResponse):
     def queue_id(self):
         r"""Gets the queue_id of this SendMessageResponse.
 
-        **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The queue_id of this SendMessageResponse.
         :rtype: float
@@ -185,7 +185,7 @@ class SendMessageResponse(SdkResponse):
     def queue_id(self, queue_id):
         r"""Sets the queue_id of this SendMessageResponse.
 
-        **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param queue_id: The queue_id of this SendMessageResponse.
         :type queue_id: float
@@ -196,7 +196,7 @@ class SendMessageResponse(SdkResponse):
     def queue_offset(self):
         r"""Gets the queue_offset of this SendMessageResponse.
 
-        **参数解释**： 队列offset。 **取值范围**： 不涉及。
+        **参数解释**： 队列offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The queue_offset of this SendMessageResponse.
         :rtype: float
@@ -207,7 +207,7 @@ class SendMessageResponse(SdkResponse):
     def queue_offset(self, queue_offset):
         r"""Sets the queue_offset of this SendMessageResponse.
 
-        **参数解释**： 队列offset。 **取值范围**： 不涉及。
+        **参数解释**： 队列offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param queue_offset: The queue_offset of this SendMessageResponse.
         :type queue_offset: float
@@ -218,7 +218,7 @@ class SendMessageResponse(SdkResponse):
     def broker_name(self):
         r"""Gets the broker_name of this SendMessageResponse.
 
-        **参数解释**： Broker名称。 **取值范围**： 不涉及。
+        **参数解释**： Broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The broker_name of this SendMessageResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class SendMessageResponse(SdkResponse):
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this SendMessageResponse.
 
-        **参数解释**： Broker名称。 **取值范围**： 不涉及。
+        **参数解释**： Broker名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param broker_name: The broker_name of this SendMessageResponse.
         :type broker_name: str

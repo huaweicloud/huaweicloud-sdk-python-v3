@@ -28,7 +28,7 @@ class AddLogConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 添加日志配置返回值，为防火墙id
+        :param data: 添加日志配置返回值，为防火墙ID
         :type data: str
         """
         
@@ -44,7 +44,7 @@ class AddLogConfigResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this AddLogConfigResponse.
 
-        添加日志配置返回值，为防火墙id
+        添加日志配置返回值，为防火墙ID
 
         :return: The data of this AddLogConfigResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class AddLogConfigResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this AddLogConfigResponse.
 
-        添加日志配置返回值，为防火墙id
+        添加日志配置返回值，为防火墙ID
 
         :param data: The data of this AddLogConfigResponse.
         :type data: str

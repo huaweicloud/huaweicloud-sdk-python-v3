@@ -25,7 +25,8 @@ class ListBandwidthDetailRequest:
         'interval': 'int',
         'start_time': 'str',
         'end_time': 'str',
-        'service_type': 'str'
+        'service_type': 'str',
+        'ip_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListBandwidthDetailRequest:
         'interval': 'interval',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'service_type': 'service_type'
+        'service_type': 'service_type',
+        'ip_type': 'ip_type'
     }
 
-    def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
+    def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None, ip_type=None):
         r"""ListBandwidthDetailRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ListBandwidthDetailRequest:
         :type end_time: str
         :param service_type: 服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
         :type service_type: str
+        :param ip_type: ip类型，取值如下：  - v4 ：ipv4协议  - v6 ：ipv6协议   不填写默认查询所有ip类型的数据   该参数只对2026-01-30后的数据生效。 
+        :type ip_type: str
         """
         
         
@@ -84,6 +88,7 @@ class ListBandwidthDetailRequest:
         self._start_time = None
         self._end_time = None
         self._service_type = None
+        self._ip_type = None
         self.discriminator = None
 
         if play_domains is not None:
@@ -108,6 +113,8 @@ class ListBandwidthDetailRequest:
             self.end_time = end_time
         if service_type is not None:
             self.service_type = service_type
+        if ip_type is not None:
+            self.ip_type = ip_type
 
     @property
     def play_domains(self):
@@ -350,6 +357,28 @@ class ListBandwidthDetailRequest:
         :type service_type: str
         """
         self._service_type = service_type
+
+    @property
+    def ip_type(self):
+        r"""Gets the ip_type of this ListBandwidthDetailRequest.
+
+        ip类型，取值如下：  - v4 ：ipv4协议  - v6 ：ipv6协议   不填写默认查询所有ip类型的数据   该参数只对2026-01-30后的数据生效。 
+
+        :return: The ip_type of this ListBandwidthDetailRequest.
+        :rtype: str
+        """
+        return self._ip_type
+
+    @ip_type.setter
+    def ip_type(self, ip_type):
+        r"""Sets the ip_type of this ListBandwidthDetailRequest.
+
+        ip类型，取值如下：  - v4 ：ipv4协议  - v6 ：ipv6协议   不填写默认查询所有ip类型的数据   该参数只对2026-01-30后的数据生效。 
+
+        :param ip_type: The ip_type of this ListBandwidthDetailRequest.
+        :type ip_type: str
+        """
+        self._ip_type = ip_type
 
     def to_dict(self):
         result = {}

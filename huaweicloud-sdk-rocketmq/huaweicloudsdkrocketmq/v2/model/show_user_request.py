@@ -29,9 +29,9 @@ class ShowUserRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param user_name: 用户名。
+        :param user_name: **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_name: str
         """
         
@@ -48,7 +48,7 @@ class ShowUserRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowUserRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowUserRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowUserRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowUserRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowUserRequest.
         :type instance_id: str
@@ -70,7 +70,7 @@ class ShowUserRequest:
     def user_name(self):
         r"""Gets the user_name of this ShowUserRequest.
 
-        用户名。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_name of this ShowUserRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowUserRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ShowUserRequest.
 
-        用户名。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_name: The user_name of this ShowUserRequest.
         :type user_name: str

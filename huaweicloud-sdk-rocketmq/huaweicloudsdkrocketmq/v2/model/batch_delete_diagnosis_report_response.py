@@ -28,7 +28,7 @@ class BatchDeleteDiagnosisReportResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param report_id_list: **参数解释**： 诊断报告ID列表。 **取值范围**： 不涉及。
+        :param report_id_list: **参数解释**： 诊断报告ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type report_id_list: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteDiagnosisReportResponse(SdkResponse):
     def report_id_list(self):
         r"""Gets the report_id_list of this BatchDeleteDiagnosisReportResponse.
 
-        **参数解释**： 诊断报告ID列表。 **取值范围**： 不涉及。
+        **参数解释**： 诊断报告ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The report_id_list of this BatchDeleteDiagnosisReportResponse.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteDiagnosisReportResponse(SdkResponse):
     def report_id_list(self, report_id_list):
         r"""Sets the report_id_list of this BatchDeleteDiagnosisReportResponse.
 
-        **参数解释**： 诊断报告ID列表。 **取值范围**： 不涉及。
+        **参数解释**： 诊断报告ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param report_id_list: The report_id_list of this BatchDeleteDiagnosisReportResponse.
         :type report_id_list: list[str]

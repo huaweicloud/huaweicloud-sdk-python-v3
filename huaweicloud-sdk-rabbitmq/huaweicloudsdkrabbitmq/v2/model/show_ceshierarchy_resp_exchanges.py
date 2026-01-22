@@ -29,9 +29,9 @@ class ShowCeshierarchyRespExchanges:
 
         The model defined in huaweicloud sdk
 
-        :param name: Exchange名称。
+        :param name: **参数解释**： Exchange名称。   **取值范围**： 不涉及。
         :type name: str
-        :param vhost: 对应的Vhost。
+        :param vhost: **参数解释**： 对应的Vhost。      **取值范围**： 不涉及。
         :type vhost: str
         """
         
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespExchanges:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespExchanges.
 
-        Exchange名称。
+        **参数解释**： Exchange名称。   **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespExchanges.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespExchanges:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespExchanges.
 
-        Exchange名称。
+        **参数解释**： Exchange名称。   **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespExchanges.
         :type name: str
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespExchanges:
     def vhost(self):
         r"""Gets the vhost of this ShowCeshierarchyRespExchanges.
 
-        对应的Vhost。
+        **参数解释**： 对应的Vhost。      **取值范围**： 不涉及。
 
         :return: The vhost of this ShowCeshierarchyRespExchanges.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespExchanges:
     def vhost(self, vhost):
         r"""Sets the vhost of this ShowCeshierarchyRespExchanges.
 
-        对应的Vhost。
+        **参数解释**： 对应的Vhost。      **取值范围**： 不涉及。
 
         :param vhost: The vhost of this ShowCeshierarchyRespExchanges.
         :type vhost: str

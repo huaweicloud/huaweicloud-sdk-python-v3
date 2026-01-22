@@ -15,92 +15,48 @@ class DeleteServiceItemRequest:
     sensitive_list = []
 
     openapi_types = {
+        'fw_instance_id': 'str',
         'item_id': 'str',
-        'enterprise_project_id': 'str',
-        'fw_instance_id': 'str'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
+        'fw_instance_id': 'fw_instance_id',
         'item_id': 'item_id',
-        'enterprise_project_id': 'enterprise_project_id',
-        'fw_instance_id': 'fw_instance_id'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, item_id=None, enterprise_project_id=None, fw_instance_id=None):
+    def __init__(self, fw_instance_id=None, item_id=None, enterprise_project_id=None):
         r"""DeleteServiceItemRequest
 
         The model defined in huaweicloud sdk
 
-        :param item_id: 服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
-        :type item_id: str
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
-        :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，字段已废弃 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
+        :param item_id: **参数解释**： 服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        :type item_id: str
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+        :type enterprise_project_id: str
         """
         
         
 
+        self._fw_instance_id = None
         self._item_id = None
         self._enterprise_project_id = None
-        self._fw_instance_id = None
         self.discriminator = None
 
+        if fw_instance_id is not None:
+            self.fw_instance_id = fw_instance_id
         self.item_id = item_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if fw_instance_id is not None:
-            self.fw_instance_id = fw_instance_id
-
-    @property
-    def item_id(self):
-        r"""Gets the item_id of this DeleteServiceItemRequest.
-
-        服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
-
-        :return: The item_id of this DeleteServiceItemRequest.
-        :rtype: str
-        """
-        return self._item_id
-
-    @item_id.setter
-    def item_id(self, item_id):
-        r"""Sets the item_id of this DeleteServiceItemRequest.
-
-        服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。
-
-        :param item_id: The item_id of this DeleteServiceItemRequest.
-        :type item_id: str
-        """
-        self._item_id = item_id
-
-    @property
-    def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this DeleteServiceItemRequest.
-
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
-
-        :return: The enterprise_project_id of this DeleteServiceItemRequest.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this DeleteServiceItemRequest.
-
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
-
-        :param enterprise_project_id: The enterprise_project_id of this DeleteServiceItemRequest.
-        :type enterprise_project_id: str
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     @property
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this DeleteServiceItemRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，字段已废弃 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The fw_instance_id of this DeleteServiceItemRequest.
         :rtype: str
@@ -111,12 +67,56 @@ class DeleteServiceItemRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this DeleteServiceItemRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，字段已废弃 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this DeleteServiceItemRequest.
         :type fw_instance_id: str
         """
         self._fw_instance_id = fw_instance_id
+
+    @property
+    def item_id(self):
+        r"""Gets the item_id of this DeleteServiceItemRequest.
+
+        **参数解释**： 服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+
+        :return: The item_id of this DeleteServiceItemRequest.
+        :rtype: str
+        """
+        return self._item_id
+
+    @item_id.setter
+    def item_id(self, item_id):
+        r"""Sets the item_id of this DeleteServiceItemRequest.
+
+        **参数解释**： 服务组成员id，可通过[查询服务成员列表接口](ListServiceItems.xml)查询获得，通过返回值中的data.records.item_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+
+        :param item_id: The item_id of this DeleteServiceItemRequest.
+        :type item_id: str
+        """
+        self._item_id = item_id
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this DeleteServiceItemRequest.
+
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+
+        :return: The enterprise_project_id of this DeleteServiceItemRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this DeleteServiceItemRequest.
+
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
+
+        :param enterprise_project_id: The enterprise_project_id of this DeleteServiceItemRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

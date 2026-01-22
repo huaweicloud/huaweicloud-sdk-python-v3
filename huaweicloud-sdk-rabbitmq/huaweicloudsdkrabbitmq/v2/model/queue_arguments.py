@@ -33,13 +33,13 @@ class QueueArguments:
 
         The model defined in huaweicloud sdk
 
-        :param x_message_ttl: 消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。
+        :param x_message_ttl: **参数解释**： 消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。 **取值范围**： 不涉及。
         :type x_message_ttl: int
-        :param x_dead_letter_exchange: 死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
+        :param x_dead_letter_exchange: **参数解释**： 死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。 **取值范围**： 不涉及。
         :type x_dead_letter_exchange: str
-        :param x_dead_letter_routing_key: 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
+        :param x_dead_letter_routing_key: **参数解释**： 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。 **取值范围**： 不涉及。
         :type x_dead_letter_routing_key: str
-        :param x_queue_mode: 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
+        :param x_queue_mode: **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
         :type x_queue_mode: str
         """
         
@@ -64,7 +64,7 @@ class QueueArguments:
     def x_message_ttl(self):
         r"""Gets the x_message_ttl of this QueueArguments.
 
-        消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。
+        **参数解释**： 消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。 **取值范围**： 不涉及。
 
         :return: The x_message_ttl of this QueueArguments.
         :rtype: int
@@ -75,7 +75,7 @@ class QueueArguments:
     def x_message_ttl(self, x_message_ttl):
         r"""Sets the x_message_ttl of this QueueArguments.
 
-        消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。
+        **参数解释**： 消息过期时间，发布到Queue的消息在被丢弃之前可以存活多长时间。 **取值范围**： 不涉及。
 
         :param x_message_ttl: The x_message_ttl of this QueueArguments.
         :type x_message_ttl: int
@@ -86,7 +86,7 @@ class QueueArguments:
     def x_dead_letter_exchange(self):
         r"""Gets the x_dead_letter_exchange of this QueueArguments.
 
-        死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
+        **参数解释**： 死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。 **取值范围**： 不涉及。
 
         :return: The x_dead_letter_exchange of this QueueArguments.
         :rtype: str
@@ -97,7 +97,7 @@ class QueueArguments:
     def x_dead_letter_exchange(self, x_dead_letter_exchange):
         r"""Sets the x_dead_letter_exchange of this QueueArguments.
 
-        死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
+        **参数解释**： 死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。 **取值范围**： 不涉及。
 
         :param x_dead_letter_exchange: The x_dead_letter_exchange of this QueueArguments.
         :type x_dead_letter_exchange: str
@@ -108,7 +108,7 @@ class QueueArguments:
     def x_dead_letter_routing_key(self):
         r"""Gets the x_dead_letter_routing_key of this QueueArguments.
 
-        死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
+        **参数解释**： 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。 **取值范围**： 不涉及。
 
         :return: The x_dead_letter_routing_key of this QueueArguments.
         :rtype: str
@@ -119,7 +119,7 @@ class QueueArguments:
     def x_dead_letter_routing_key(self, x_dead_letter_routing_key):
         r"""Sets the x_dead_letter_routing_key of this QueueArguments.
 
-        死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
+        **参数解释**： 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。 **取值范围**： 不涉及。
 
         :param x_dead_letter_routing_key: The x_dead_letter_routing_key of this QueueArguments.
         :type x_dead_letter_routing_key: str
@@ -130,7 +130,7 @@ class QueueArguments:
     def x_queue_mode(self):
         r"""Gets the x_queue_mode of this QueueArguments.
 
-        惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
 
         :return: The x_queue_mode of this QueueArguments.
         :rtype: str
@@ -141,7 +141,7 @@ class QueueArguments:
     def x_queue_mode(self, x_queue_mode):
         r"""Sets the x_queue_mode of this QueueArguments.
 
-        惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
 
         :param x_queue_mode: The x_queue_mode of this QueueArguments.
         :type x_queue_mode: str

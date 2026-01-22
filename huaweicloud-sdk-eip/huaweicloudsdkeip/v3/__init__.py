@@ -79,6 +79,7 @@ from huaweicloudsdkeip.v3.model.nexthop_dict import NexthopDict
 from huaweicloudsdkeip.v3.model.page_info_dict import PageInfoDict
 from huaweicloudsdkeip.v3.model.page_info_option import PageInfoOption
 from huaweicloudsdkeip.v3.model.profile_info import ProfileInfo
+from huaweicloudsdkeip.v3.model.public_pool_type import PublicPoolType
 from huaweicloudsdkeip.v3.model.publicip_bandwidth_info import PublicipBandwidthInfo
 from huaweicloudsdkeip.v3.model.publicip_info_response_body import PublicipInfoResponseBody
 from huaweicloudsdkeip.v3.model.publicip_instance_resp import PublicipInstanceResp
@@ -91,6 +92,8 @@ from huaweicloudsdkeip.v3.model.show_internal_vpc_igw_request import ShowInterna
 from huaweicloudsdkeip.v3.model.show_internal_vpc_igw_response import ShowInternalVpcIgwResponse
 from huaweicloudsdkeip.v3.model.show_publicip_pool_request import ShowPublicipPoolRequest
 from huaweicloudsdkeip.v3.model.show_publicip_pool_response import ShowPublicipPoolResponse
+from huaweicloudsdkeip.v3.model.show_publicip_pool_types_request import ShowPublicipPoolTypesRequest
+from huaweicloudsdkeip.v3.model.show_publicip_pool_types_response import ShowPublicipPoolTypesResponse
 from huaweicloudsdkeip.v3.model.show_publicip_request import ShowPublicipRequest
 from huaweicloudsdkeip.v3.model.show_publicip_response import ShowPublicipResponse
 from huaweicloudsdkeip.v3.model.show_tenant_dict import ShowTenantDict

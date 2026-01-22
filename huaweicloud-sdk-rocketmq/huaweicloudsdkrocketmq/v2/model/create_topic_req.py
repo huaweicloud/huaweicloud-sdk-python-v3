@@ -37,17 +37,17 @@ class CreateTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        :param name: **参数解释**： 主题名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建主题时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param brokers: 关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        :param brokers: **参数解释**： 关联的代理。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[str]
-        :param queue_num: 总队列数，范围1~50。
+        :param queue_num: **参数解释**： 总队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
         :type queue_num: float
-        :param queues: 队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        :param queues: **参数解释**： 队列。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
-        :param permission: 权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
+        :param permission: **参数解释**： 权限。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： - pub：发布。 - sub：订阅。 - all：发布+订阅。 **默认取值**： 不涉及。
         :type permission: str
-        :param message_type: 消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
+        :param message_type: **参数解释**： 消息类型。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
         :type message_type: str
         """
         
@@ -78,7 +78,7 @@ class CreateTopicReq:
     def name(self):
         r"""Gets the name of this CreateTopicReq.
 
-        主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 主题名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建主题时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this CreateTopicReq.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateTopicReq:
     def name(self, name):
         r"""Sets the name of this CreateTopicReq.
 
-        主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 主题名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建主题时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this CreateTopicReq.
         :type name: str
@@ -100,7 +100,7 @@ class CreateTopicReq:
     def brokers(self):
         r"""Gets the brokers of this CreateTopicReq.
 
-        关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 关联的代理。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this CreateTopicReq.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class CreateTopicReq:
     def brokers(self, brokers):
         r"""Sets the brokers of this CreateTopicReq.
 
-        关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 关联的代理。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this CreateTopicReq.
         :type brokers: list[str]
@@ -122,7 +122,7 @@ class CreateTopicReq:
     def queue_num(self):
         r"""Gets the queue_num of this CreateTopicReq.
 
-        总队列数，范围1~50。
+        **参数解释**： 总队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :return: The queue_num of this CreateTopicReq.
         :rtype: float
@@ -133,7 +133,7 @@ class CreateTopicReq:
     def queue_num(self, queue_num):
         r"""Sets the queue_num of this CreateTopicReq.
 
-        总队列数，范围1~50。
+        **参数解释**： 总队列数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 不涉及。
 
         :param queue_num: The queue_num of this CreateTopicReq.
         :type queue_num: float
@@ -144,7 +144,7 @@ class CreateTopicReq:
     def queues(self):
         r"""Gets the queues of this CreateTopicReq.
 
-        队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 队列。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this CreateTopicReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
@@ -155,7 +155,7 @@ class CreateTopicReq:
     def queues(self, queues):
         r"""Sets the queues of this CreateTopicReq.
 
-        队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 队列。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this CreateTopicReq.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.CreateTopicReqQueues`]
@@ -166,7 +166,7 @@ class CreateTopicReq:
     def permission(self):
         r"""Gets the permission of this CreateTopicReq.
 
-        权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
+        **参数解释**： 权限。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： - pub：发布。 - sub：订阅。 - all：发布+订阅。 **默认取值**： 不涉及。
 
         :return: The permission of this CreateTopicReq.
         :rtype: str
@@ -177,7 +177,7 @@ class CreateTopicReq:
     def permission(self, permission):
         r"""Sets the permission of this CreateTopicReq.
 
-        权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
+        **参数解释**： 权限。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： - pub：发布。 - sub：订阅。 - all：发布+订阅。 **默认取值**： 不涉及。
 
         :param permission: The permission of this CreateTopicReq.
         :type permission: str
@@ -188,7 +188,7 @@ class CreateTopicReq:
     def message_type(self):
         r"""Gets the message_type of this CreateTopicReq.
 
-        消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
+        **参数解释**： 消息类型。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
 
         :return: The message_type of this CreateTopicReq.
         :rtype: str
@@ -199,7 +199,7 @@ class CreateTopicReq:
     def message_type(self, message_type):
         r"""Sets the message_type of this CreateTopicReq.
 
-        消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
+        **参数解释**： 消息类型。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
 
         :param message_type: The message_type of this CreateTopicReq.
         :type message_type: str

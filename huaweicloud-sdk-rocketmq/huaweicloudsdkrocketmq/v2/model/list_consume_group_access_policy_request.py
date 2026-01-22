@@ -17,48 +17,48 @@ class ListConsumeGroupAccessPolicyRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'group_id': 'str',
-        'offset': 'str',
-        'limit': 'str'
+        'group': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'engine': 'engine',
         'instance_id': 'instance_id',
-        'group_id': 'group_id',
+        'group': 'group',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, engine=None, instance_id=None, group_id=None, offset=None, limit=None):
+    def __init__(self, engine=None, instance_id=None, group=None, offset=None, limit=None):
         r"""ListConsumeGroupAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： rocketmq。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param group_id: 消费组。
-        :type group_id: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
-        :type offset: str
-        :param limit: 查询数量。
-        :type limit: str
+        :param group: **参数解释**： 消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type group: str
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type offset: int
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type limit: int
         """
         
         
 
         self._engine = None
         self._instance_id = None
-        self._group_id = None
+        self._group = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.engine = engine
         self.instance_id = instance_id
-        self.group_id = group_id
+        self.group = group
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -68,7 +68,7 @@ class ListConsumeGroupAccessPolicyRequest:
     def engine(self):
         r"""Gets the engine of this ListConsumeGroupAccessPolicyRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： rocketmq。
 
         :return: The engine of this ListConsumeGroupAccessPolicyRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class ListConsumeGroupAccessPolicyRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListConsumeGroupAccessPolicyRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： rocketmq。
 
         :param engine: The engine of this ListConsumeGroupAccessPolicyRequest.
         :type engine: str
@@ -90,7 +90,7 @@ class ListConsumeGroupAccessPolicyRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListConsumeGroupAccessPolicyRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListConsumeGroupAccessPolicyRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListConsumeGroupAccessPolicyRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListConsumeGroupAccessPolicyRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListConsumeGroupAccessPolicyRequest.
         :type instance_id: str
@@ -109,35 +109,35 @@ class ListConsumeGroupAccessPolicyRequest:
         self._instance_id = instance_id
 
     @property
-    def group_id(self):
-        r"""Gets the group_id of this ListConsumeGroupAccessPolicyRequest.
+    def group(self):
+        r"""Gets the group of this ListConsumeGroupAccessPolicyRequest.
 
-        消费组。
+        **参数解释**： 消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The group_id of this ListConsumeGroupAccessPolicyRequest.
+        :return: The group of this ListConsumeGroupAccessPolicyRequest.
         :rtype: str
         """
-        return self._group_id
+        return self._group
 
-    @group_id.setter
-    def group_id(self, group_id):
-        r"""Sets the group_id of this ListConsumeGroupAccessPolicyRequest.
+    @group.setter
+    def group(self, group):
+        r"""Sets the group of this ListConsumeGroupAccessPolicyRequest.
 
-        消费组。
+        **参数解释**： 消费组。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param group_id: The group_id of this ListConsumeGroupAccessPolicyRequest.
-        :type group_id: str
+        :param group: The group of this ListConsumeGroupAccessPolicyRequest.
+        :type group: str
         """
-        self._group_id = group_id
+        self._group = group
 
     @property
     def offset(self):
         r"""Gets the offset of this ListConsumeGroupAccessPolicyRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ListConsumeGroupAccessPolicyRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -145,10 +145,10 @@ class ListConsumeGroupAccessPolicyRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListConsumeGroupAccessPolicyRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListConsumeGroupAccessPolicyRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 
@@ -156,10 +156,10 @@ class ListConsumeGroupAccessPolicyRequest:
     def limit(self):
         r"""Gets the limit of this ListConsumeGroupAccessPolicyRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ListConsumeGroupAccessPolicyRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -167,10 +167,10 @@ class ListConsumeGroupAccessPolicyRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListConsumeGroupAccessPolicyRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListConsumeGroupAccessPolicyRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 

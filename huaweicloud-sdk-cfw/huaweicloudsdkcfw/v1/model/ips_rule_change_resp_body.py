@@ -43,7 +43,7 @@ class IpsRuleChangeRespBody:
         :type error_msg: str
         :param group_id: 分组id
         :type group_id: str
-        :param id: 防火墙id
+        :param id: 防火墙ID
         :type id: str
         :param ips_ids: ips的id列表
         :type ips_ids: list[str]
@@ -144,7 +144,7 @@ class IpsRuleChangeRespBody:
     def id(self):
         r"""Gets the id of this IpsRuleChangeRespBody.
 
-        防火墙id
+        防火墙ID
 
         :return: The id of this IpsRuleChangeRespBody.
         :rtype: str
@@ -155,7 +155,7 @@ class IpsRuleChangeRespBody:
     def id(self, id):
         r"""Sets the id of this IpsRuleChangeRespBody.
 
-        防火墙id
+        防火墙ID
 
         :param id: The id of this IpsRuleChangeRespBody.
         :type id: str

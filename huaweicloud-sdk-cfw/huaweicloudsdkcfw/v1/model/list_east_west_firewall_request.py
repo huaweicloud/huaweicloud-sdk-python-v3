@@ -33,13 +33,13 @@ class ListEastWestFirewallRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 默认0
         :type offset: int
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 用户未开启企业项目时为0 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type fw_instance_id: str
         """
         
@@ -61,7 +61,7 @@ class ListEastWestFirewallRequest:
     def limit(self):
         r"""Gets the limit of this ListEastWestFirewallRequest.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :return: The limit of this ListEastWestFirewallRequest.
         :rtype: int
@@ -72,7 +72,7 @@ class ListEastWestFirewallRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListEastWestFirewallRequest.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024 **默认取值**： 不涉及
 
         :param limit: The limit of this ListEastWestFirewallRequest.
         :type limit: int
@@ -83,7 +83,7 @@ class ListEastWestFirewallRequest:
     def offset(self):
         r"""Gets the offset of this ListEastWestFirewallRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 默认0
 
         :return: The offset of this ListEastWestFirewallRequest.
         :rtype: int
@@ -94,7 +94,7 @@ class ListEastWestFirewallRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListEastWestFirewallRequest.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 必须为数字 **取值范围**： 大于或等于0 **默认取值**： 默认0
 
         :param offset: The offset of this ListEastWestFirewallRequest.
         :type offset: int
@@ -105,7 +105,7 @@ class ListEastWestFirewallRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListEastWestFirewallRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 用户未开启企业项目时为0 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The enterprise_project_id of this ListEastWestFirewallRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListEastWestFirewallRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListEastWestFirewallRequest.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 **约束限制**： 用户未开启企业项目时为0 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ListEastWestFirewallRequest.
         :type enterprise_project_id: str
@@ -127,7 +127,7 @@ class ListEastWestFirewallRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListEastWestFirewallRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The fw_instance_id of this ListEastWestFirewallRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class ListEastWestFirewallRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListEastWestFirewallRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this ListEastWestFirewallRequest.
         :type fw_instance_id: str

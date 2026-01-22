@@ -32,9 +32,9 @@ class CreateFirewallResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 实例创建的任务id。仅创建按需实例时会返回该参数。
+        :param job_id: **参数解释**： 实例创建的任务id **取值范围**： 不涉及
         :type job_id: str
-        :param order_id: 订单号，创建包年包月时返回该参数。
+        :param order_id: **参数解释**： 订单号 **取值范围**： 不涉及
         :type order_id: str
         :param data: 
         :type data: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`
@@ -58,7 +58,7 @@ class CreateFirewallResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateFirewallResponse.
 
-        实例创建的任务id。仅创建按需实例时会返回该参数。
+        **参数解释**： 实例创建的任务id **取值范围**： 不涉及
 
         :return: The job_id of this CreateFirewallResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class CreateFirewallResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateFirewallResponse.
 
-        实例创建的任务id。仅创建按需实例时会返回该参数。
+        **参数解释**： 实例创建的任务id **取值范围**： 不涉及
 
         :param job_id: The job_id of this CreateFirewallResponse.
         :type job_id: str
@@ -80,7 +80,7 @@ class CreateFirewallResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this CreateFirewallResponse.
 
-        订单号，创建包年包月时返回该参数。
+        **参数解释**： 订单号 **取值范围**： 不涉及
 
         :return: The order_id of this CreateFirewallResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateFirewallResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this CreateFirewallResponse.
 
-        订单号，创建包年包月时返回该参数。
+        **参数解释**： 订单号 **取值范围**： 不涉及
 
         :param order_id: The order_id of this CreateFirewallResponse.
         :type order_id: str

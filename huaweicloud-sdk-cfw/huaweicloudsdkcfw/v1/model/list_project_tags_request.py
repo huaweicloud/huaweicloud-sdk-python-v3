@@ -31,9 +31,9 @@ class ListProjectTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询数据限制
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param offset: 查询偏移量
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
@@ -55,7 +55,7 @@ class ListProjectTagsRequest:
     def limit(self):
         r"""Gets the limit of this ListProjectTagsRequest.
 
-        分页查询数据限制
+        每页显示个数，范围为1-1024
 
         :return: The limit of this ListProjectTagsRequest.
         :rtype: int
@@ -66,7 +66,7 @@ class ListProjectTagsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListProjectTagsRequest.
 
-        分页查询数据限制
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this ListProjectTagsRequest.
         :type limit: int
@@ -77,7 +77,7 @@ class ListProjectTagsRequest:
     def offset(self):
         r"""Gets the offset of this ListProjectTagsRequest.
 
-        查询偏移量
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :return: The offset of this ListProjectTagsRequest.
         :rtype: int
@@ -88,7 +88,7 @@ class ListProjectTagsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListProjectTagsRequest.
 
-        查询偏移量
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this ListProjectTagsRequest.
         :type offset: int

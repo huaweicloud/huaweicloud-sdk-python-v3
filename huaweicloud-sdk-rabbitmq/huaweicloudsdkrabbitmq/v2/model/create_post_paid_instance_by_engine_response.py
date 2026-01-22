@@ -28,7 +28,7 @@ class CreatePostPaidInstanceByEngineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
         """
         
@@ -44,7 +44,7 @@ class CreatePostPaidInstanceByEngineResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this CreatePostPaidInstanceByEngineResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The instance_id of this CreatePostPaidInstanceByEngineResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreatePostPaidInstanceByEngineResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreatePostPaidInstanceByEngineResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this CreatePostPaidInstanceByEngineResponse.
         :type instance_id: str

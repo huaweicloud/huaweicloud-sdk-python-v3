@@ -27,7 +27,7 @@ class ShowCeshierarchyRespGroups:
 
         The model defined in huaweicloud sdk
 
-        :param name: 消费组名称。
+        :param name: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
         :type name: str
         """
         
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespGroups:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespGroups.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespGroups.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespGroups:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespGroups.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespGroups.
         :type name: str

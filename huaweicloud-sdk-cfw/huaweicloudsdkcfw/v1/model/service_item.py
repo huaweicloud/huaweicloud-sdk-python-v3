@@ -35,15 +35,15 @@ class ServiceItem:
 
         The model defined in huaweicloud sdk
 
-        :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,RuleServiceDto.type为0时不能为空。
+        :param protocol: **参数解释**： 协议类型，用于明确规则网络协议 **约束限制**：  RuleServiceDto.type为0时，此处不能为空。 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
         :type protocol: int
-        :param source_port: 源端口
+        :param source_port: **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type source_port: str
-        :param dest_port: 目的端口
+        :param dest_port: **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type dest_port: str
-        :param description: 服务成员描述
+        :param description: **参数解释**： 服务组成员描述信息 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type description: str
-        :param name: 服务成员名称
+        :param name: **参数解释**： 服务（协议、源端口、目的端口）成员 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
         """
         
@@ -71,7 +71,7 @@ class ServiceItem:
     def protocol(self):
         r"""Gets the protocol of this ServiceItem.
 
-        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,RuleServiceDto.type为0时不能为空。
+        **参数解释**： 协议类型，用于明确规则网络协议 **约束限制**：  RuleServiceDto.type为0时，此处不能为空。 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
 
         :return: The protocol of this ServiceItem.
         :rtype: int
@@ -82,7 +82,7 @@ class ServiceItem:
     def protocol(self, protocol):
         r"""Sets the protocol of this ServiceItem.
 
-        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,RuleServiceDto.type为0时不能为空。
+        **参数解释**： 协议类型，用于明确规则网络协议 **约束限制**：  RuleServiceDto.type为0时，此处不能为空。 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
 
         :param protocol: The protocol of this ServiceItem.
         :type protocol: int
@@ -93,7 +93,7 @@ class ServiceItem:
     def source_port(self):
         r"""Gets the source_port of this ServiceItem.
 
-        源端口
+        **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The source_port of this ServiceItem.
         :rtype: str
@@ -104,7 +104,7 @@ class ServiceItem:
     def source_port(self, source_port):
         r"""Sets the source_port of this ServiceItem.
 
-        源端口
+        **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param source_port: The source_port of this ServiceItem.
         :type source_port: str
@@ -115,7 +115,7 @@ class ServiceItem:
     def dest_port(self):
         r"""Gets the dest_port of this ServiceItem.
 
-        目的端口
+        **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The dest_port of this ServiceItem.
         :rtype: str
@@ -126,7 +126,7 @@ class ServiceItem:
     def dest_port(self, dest_port):
         r"""Sets the dest_port of this ServiceItem.
 
-        目的端口
+        **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param dest_port: The dest_port of this ServiceItem.
         :type dest_port: str
@@ -137,7 +137,7 @@ class ServiceItem:
     def description(self):
         r"""Gets the description of this ServiceItem.
 
-        服务成员描述
+        **参数解释**： 服务组成员描述信息 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The description of this ServiceItem.
         :rtype: str
@@ -148,7 +148,7 @@ class ServiceItem:
     def description(self, description):
         r"""Sets the description of this ServiceItem.
 
-        服务成员描述
+        **参数解释**： 服务组成员描述信息 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param description: The description of this ServiceItem.
         :type description: str
@@ -159,7 +159,7 @@ class ServiceItem:
     def name(self):
         r"""Gets the name of this ServiceItem.
 
-        服务成员名称
+        **参数解释**： 服务（协议、源端口、目的端口）成员 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this ServiceItem.
         :rtype: str
@@ -170,7 +170,7 @@ class ServiceItem:
     def name(self, name):
         r"""Sets the name of this ServiceItem.
 
-        服务成员名称
+        **参数解释**： 服务（协议、源端口、目的端口）成员 **约束限制**： 字符串长度0-255 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this ServiceItem.
         :type name: str

@@ -27,7 +27,7 @@ class MigrationRabbitVhostMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: vhost名称。
+        :param name: **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -43,7 +43,7 @@ class MigrationRabbitVhostMetadata:
     def name(self):
         r"""Gets the name of this MigrationRabbitVhostMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this MigrationRabbitVhostMetadata.
         :rtype: str
@@ -54,7 +54,7 @@ class MigrationRabbitVhostMetadata:
     def name(self, name):
         r"""Sets the name of this MigrationRabbitVhostMetadata.
 
-        vhost名称。
+        **参数解释**： vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this MigrationRabbitVhostMetadata.
         :type name: str

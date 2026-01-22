@@ -41,15 +41,15 @@ class AddBlackWhiteListDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
         :type object_id: str
         :param list_type: 黑白名单类型4：黑名单，5：白名单
         :type list_type: int
         :param direction: 地址方向0：源地址1：目的地址
         :type direction: int
-        :param address_type: ip地址类型 0：ipv4，1:ipv6
+        :param address_type: IP地址类型 0：ipv4，1:ipv6
         :type address_type: int
-        :param address: ip地址
+        :param address: IP地址
         :type address: str
         :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,手动类型不为空，自动类型为空
         :type protocol: int
@@ -85,7 +85,7 @@ class AddBlackWhiteListDto:
     def object_id(self):
         r"""Gets the object_id of this AddBlackWhiteListDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :return: The object_id of this AddBlackWhiteListDto.
         :rtype: str
@@ -96,7 +96,7 @@ class AddBlackWhiteListDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this AddBlackWhiteListDto.
 
-        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
         :param object_id: The object_id of this AddBlackWhiteListDto.
         :type object_id: str
@@ -151,7 +151,7 @@ class AddBlackWhiteListDto:
     def address_type(self):
         r"""Gets the address_type of this AddBlackWhiteListDto.
 
-        ip地址类型 0：ipv4，1:ipv6
+        IP地址类型 0：ipv4，1:ipv6
 
         :return: The address_type of this AddBlackWhiteListDto.
         :rtype: int
@@ -162,7 +162,7 @@ class AddBlackWhiteListDto:
     def address_type(self, address_type):
         r"""Sets the address_type of this AddBlackWhiteListDto.
 
-        ip地址类型 0：ipv4，1:ipv6
+        IP地址类型 0：ipv4，1:ipv6
 
         :param address_type: The address_type of this AddBlackWhiteListDto.
         :type address_type: int
@@ -173,7 +173,7 @@ class AddBlackWhiteListDto:
     def address(self):
         r"""Gets the address of this AddBlackWhiteListDto.
 
-        ip地址
+        IP地址
 
         :return: The address of this AddBlackWhiteListDto.
         :rtype: str
@@ -184,7 +184,7 @@ class AddBlackWhiteListDto:
     def address(self, address):
         r"""Sets the address of this AddBlackWhiteListDto.
 
-        ip地址
+        IP地址
 
         :param address: The address of this AddBlackWhiteListDto.
         :type address: str

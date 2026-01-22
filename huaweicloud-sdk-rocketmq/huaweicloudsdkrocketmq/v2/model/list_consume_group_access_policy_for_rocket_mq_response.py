@@ -1,0 +1,170 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ListConsumeGroupAccessPolicyForRocketMqResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'policies': 'list[ListAccessPolicyRespPolicies]',
+        'total': 'float',
+        'name': 'str'
+    }
+
+    attribute_map = {
+        'policies': 'policies',
+        'total': 'total',
+        'name': 'name'
+    }
+
+    def __init__(self, policies=None, total=None, name=None):
+        r"""ListConsumeGroupAccessPolicyForRocketMqResponse
+
+        The model defined in huaweicloud sdk
+
+        :param policies: **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type policies: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
+        :param total: **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type total: float
+        :param name: **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type name: str
+        """
+        
+        super().__init__()
+
+        self._policies = None
+        self._total = None
+        self._name = None
+        self.discriminator = None
+
+        if policies is not None:
+            self.policies = policies
+        if total is not None:
+            self.total = total
+        if name is not None:
+            self.name = name
+
+    @property
+    def policies(self):
+        r"""Gets the policies of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The policies of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
+        """
+        return self._policies
+
+    @policies.setter
+    def policies(self, policies):
+        r"""Sets the policies of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param policies: The policies of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :type policies: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
+        """
+        self._policies = policies
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The total of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :rtype: float
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param total: The total of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :type total: float
+        """
+        self._total = total
+
+    @property
+    def name(self):
+        r"""Gets the name of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The name of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+
+        **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param name: The name of this ListConsumeGroupAccessPolicyForRocketMqResponse.
+        :type name: str
+        """
+        self._name = name
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("ListConsumeGroupAccessPolicyForRocketMqResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListConsumeGroupAccessPolicyForRocketMqResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

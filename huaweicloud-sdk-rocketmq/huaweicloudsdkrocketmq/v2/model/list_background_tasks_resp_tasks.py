@@ -41,21 +41,21 @@ class ListBackgroundTasksRespTasks:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**： 任务ID。 **取值范围**： 不涉及。
+        :param id: **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param name: **参数解释**： 任务名称。 **取值范围**： 不涉及。
+        :param name: **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
+        :param user_name: **参数解释**： 用户名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_name: str
-        :param user_id: **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        :param user_id: **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_id: str
-        :param params: **参数解释**： 任务参数。 **取值范围**： 不涉及。
+        :param params: **参数解释**： 任务参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type params: str
-        :param status: **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
+        :param status: **参数解释**： 任务状态。 **约束限制**： 不涉及。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。 **默认取值**： 不涉及。
         :type status: str
-        :param created_at: **参数解释**： 启动时间。 **取值范围**： 不涉及。
+        :param created_at: **参数解释**： 启动时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type created_at: str
-        :param updated_at: **参数解释**： 结束时间。 **取值范围**： 不涉及。
+        :param updated_at: **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type updated_at: str
         """
         
@@ -92,7 +92,7 @@ class ListBackgroundTasksRespTasks:
     def id(self):
         r"""Gets the id of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务ID。 **取值范围**： 不涉及。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -103,7 +103,7 @@ class ListBackgroundTasksRespTasks:
     def id(self, id):
         r"""Sets the id of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务ID。 **取值范围**： 不涉及。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this ListBackgroundTasksRespTasks.
         :type id: str
@@ -114,7 +114,7 @@ class ListBackgroundTasksRespTasks:
     def name(self):
         r"""Gets the name of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务名称。 **取值范围**： 不涉及。
+        **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -125,7 +125,7 @@ class ListBackgroundTasksRespTasks:
     def name(self, name):
         r"""Sets the name of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务名称。 **取值范围**： 不涉及。
+        **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ListBackgroundTasksRespTasks.
         :type name: str
@@ -136,7 +136,7 @@ class ListBackgroundTasksRespTasks:
     def user_name(self):
         r"""Gets the user_name of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 用户名。 **取值范围**： 不涉及。
+        **参数解释**： 用户名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_name of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -147,7 +147,7 @@ class ListBackgroundTasksRespTasks:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 用户名。 **取值范围**： 不涉及。
+        **参数解释**： 用户名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_name: The user_name of this ListBackgroundTasksRespTasks.
         :type user_name: str
@@ -158,7 +158,7 @@ class ListBackgroundTasksRespTasks:
     def user_id(self):
         r"""Gets the user_id of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_id of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -169,7 +169,7 @@ class ListBackgroundTasksRespTasks:
     def user_id(self, user_id):
         r"""Sets the user_id of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_id: The user_id of this ListBackgroundTasksRespTasks.
         :type user_id: str
@@ -180,7 +180,7 @@ class ListBackgroundTasksRespTasks:
     def params(self):
         r"""Gets the params of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务参数。 **取值范围**： 不涉及。
+        **参数解释**： 任务参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The params of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -191,7 +191,7 @@ class ListBackgroundTasksRespTasks:
     def params(self, params):
         r"""Sets the params of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务参数。 **取值范围**： 不涉及。
+        **参数解释**： 任务参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param params: The params of this ListBackgroundTasksRespTasks.
         :type params: str
@@ -202,7 +202,7 @@ class ListBackgroundTasksRespTasks:
     def status(self):
         r"""Gets the status of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
+        **参数解释**： 任务状态。 **约束限制**： 不涉及。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。 **默认取值**： 不涉及。
 
         :return: The status of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -213,7 +213,7 @@ class ListBackgroundTasksRespTasks:
     def status(self, status):
         r"""Sets the status of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
+        **参数解释**： 任务状态。 **约束限制**： 不涉及。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。 **默认取值**： 不涉及。
 
         :param status: The status of this ListBackgroundTasksRespTasks.
         :type status: str
@@ -224,7 +224,7 @@ class ListBackgroundTasksRespTasks:
     def created_at(self):
         r"""Gets the created_at of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 启动时间。 **取值范围**： 不涉及。
+        **参数解释**： 启动时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The created_at of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -235,7 +235,7 @@ class ListBackgroundTasksRespTasks:
     def created_at(self, created_at):
         r"""Sets the created_at of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 启动时间。 **取值范围**： 不涉及。
+        **参数解释**： 启动时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param created_at: The created_at of this ListBackgroundTasksRespTasks.
         :type created_at: str
@@ -246,7 +246,7 @@ class ListBackgroundTasksRespTasks:
     def updated_at(self):
         r"""Gets the updated_at of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 结束时间。 **取值范围**： 不涉及。
+        **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The updated_at of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -257,7 +257,7 @@ class ListBackgroundTasksRespTasks:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 结束时间。 **取值范围**： 不涉及。
+        **参数解释**： 结束时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param updated_at: The updated_at of this ListBackgroundTasksRespTasks.
         :type updated_at: str

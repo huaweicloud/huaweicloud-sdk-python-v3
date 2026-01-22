@@ -37,17 +37,17 @@ class Topic:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： Topic名称。 **取值范围**： 不涉及。
+        :param name: **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param total_read_queue_num: **参数解释**： 总读队列个数。 **取值范围**： 不涉及。
+        :param total_read_queue_num: **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total_read_queue_num: float
-        :param total_write_queue_num: **参数解释**： 总写队列个数。 **取值范围**： 不涉及。
+        :param total_write_queue_num: **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total_write_queue_num: float
-        :param permission: **参数解释**： 权限。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。
+        :param permission: **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。       **默认取值**： 不涉及。
         :type permission: str
-        :param brokers: 关联的代理。
+        :param brokers: **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
-        :param message_type: **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。
+        :param message_type: **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **约束限制**： 不涉及。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
         :type message_type: str
         """
         
@@ -78,7 +78,7 @@ class Topic:
     def name(self):
         r"""Gets the name of this Topic.
 
-        **参数解释**： Topic名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this Topic.
         :rtype: str
@@ -89,7 +89,7 @@ class Topic:
     def name(self, name):
         r"""Sets the name of this Topic.
 
-        **参数解释**： Topic名称。 **取值范围**： 不涉及。
+        **参数解释**： Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this Topic.
         :type name: str
@@ -100,7 +100,7 @@ class Topic:
     def total_read_queue_num(self):
         r"""Gets the total_read_queue_num of this Topic.
 
-        **参数解释**： 总读队列个数。 **取值范围**： 不涉及。
+        **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total_read_queue_num of this Topic.
         :rtype: float
@@ -111,7 +111,7 @@ class Topic:
     def total_read_queue_num(self, total_read_queue_num):
         r"""Sets the total_read_queue_num of this Topic.
 
-        **参数解释**： 总读队列个数。 **取值范围**： 不涉及。
+        **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total_read_queue_num: The total_read_queue_num of this Topic.
         :type total_read_queue_num: float
@@ -122,7 +122,7 @@ class Topic:
     def total_write_queue_num(self):
         r"""Gets the total_write_queue_num of this Topic.
 
-        **参数解释**： 总写队列个数。 **取值范围**： 不涉及。
+        **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total_write_queue_num of this Topic.
         :rtype: float
@@ -133,7 +133,7 @@ class Topic:
     def total_write_queue_num(self, total_write_queue_num):
         r"""Sets the total_write_queue_num of this Topic.
 
-        **参数解释**： 总写队列个数。 **取值范围**： 不涉及。
+        **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total_write_queue_num: The total_write_queue_num of this Topic.
         :type total_write_queue_num: float
@@ -144,7 +144,7 @@ class Topic:
     def permission(self):
         r"""Gets the permission of this Topic.
 
-        **参数解释**： 权限。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。
+        **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。       **默认取值**： 不涉及。
 
         :return: The permission of this Topic.
         :rtype: str
@@ -155,7 +155,7 @@ class Topic:
     def permission(self, permission):
         r"""Sets the permission of this Topic.
 
-        **参数解释**： 权限。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。
+        **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。       **默认取值**： 不涉及。
 
         :param permission: The permission of this Topic.
         :type permission: str
@@ -166,7 +166,7 @@ class Topic:
     def brokers(self):
         r"""Gets the brokers of this Topic.
 
-        关联的代理。
+        **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this Topic.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
@@ -177,7 +177,7 @@ class Topic:
     def brokers(self, brokers):
         r"""Sets the brokers of this Topic.
 
-        关联的代理。
+        **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this Topic.
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
@@ -188,7 +188,7 @@ class Topic:
     def message_type(self):
         r"""Gets the message_type of this Topic.
 
-        **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。
+        **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **约束限制**： 不涉及。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
 
         :return: The message_type of this Topic.
         :rtype: str
@@ -199,7 +199,7 @@ class Topic:
     def message_type(self, message_type):
         r"""Sets the message_type of this Topic.
 
-        **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。
+        **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **约束限制**： 不涉及。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
 
         :param message_type: The message_type of this Topic.
         :type message_type: str

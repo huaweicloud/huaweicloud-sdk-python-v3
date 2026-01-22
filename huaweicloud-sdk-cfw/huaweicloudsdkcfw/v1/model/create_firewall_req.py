@@ -35,11 +35,11 @@ class CreateFirewallReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 防火墙名称
+        :param name: **参数解释**： 防火墙名称 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 不涉及
         :type name: str
-        :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        :param enterprise_project_id: **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 0
         :type enterprise_project_id: str
-        :param tags: 服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
+        :param tags: **参数解释**： 服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计 **约束限制**： 不涉及
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkcfw.v1.CreateFirewallReqFlavor`
@@ -68,7 +68,7 @@ class CreateFirewallReq:
     def name(self):
         r"""Gets the name of this CreateFirewallReq.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 不涉及
 
         :return: The name of this CreateFirewallReq.
         :rtype: str
@@ -79,7 +79,7 @@ class CreateFirewallReq:
     def name(self, name):
         r"""Sets the name of this CreateFirewallReq.
 
-        防火墙名称
+        **参数解释**： 防火墙名称 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 不涉及
 
         :param name: The name of this CreateFirewallReq.
         :type name: str
@@ -90,7 +90,7 @@ class CreateFirewallReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateFirewallReq.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 0
 
         :return: The enterprise_project_id of this CreateFirewallReq.
         :rtype: str
@@ -101,7 +101,7 @@ class CreateFirewallReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateFirewallReq.
 
-        企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
+        **参数解释**： 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取 约束限制： 不涉及 **取值范围**： 不涉及 默认取值： 0
 
         :param enterprise_project_id: The enterprise_project_id of this CreateFirewallReq.
         :type enterprise_project_id: str
@@ -112,7 +112,7 @@ class CreateFirewallReq:
     def tags(self):
         r"""Gets the tags of this CreateFirewallReq.
 
-        服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
+        **参数解释**： 服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计 **约束限制**： 不涉及
 
         :return: The tags of this CreateFirewallReq.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]
@@ -123,7 +123,7 @@ class CreateFirewallReq:
     def tags(self, tags):
         r"""Sets the tags of this CreateFirewallReq.
 
-        服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计。
+        **参数解释**： 服务资源标签列表，防火墙资源添加标签后，可根据键、值组合查询资源，同时可根据键、值组合进行话单合并统计 **约束限制**： 不涉及
 
         :param tags: The tags of this CreateFirewallReq.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateFirewallReqTags`]

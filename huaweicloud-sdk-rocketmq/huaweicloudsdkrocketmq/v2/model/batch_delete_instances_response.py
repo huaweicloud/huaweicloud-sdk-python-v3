@@ -28,7 +28,7 @@ class BatchDeleteInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param results: 修改实例的结果。
+        :param results: **参数解释**： 修改实例的结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type results: list[:class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstanceRespResults`]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteInstancesResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this BatchDeleteInstancesResponse.
 
-        修改实例的结果。
+        **参数解释**： 修改实例的结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The results of this BatchDeleteInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstanceRespResults`]
@@ -55,7 +55,7 @@ class BatchDeleteInstancesResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this BatchDeleteInstancesResponse.
 
-        修改实例的结果。
+        **参数解释**： 修改实例的结果。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param results: The results of this BatchDeleteInstancesResponse.
         :type results: list[:class:`huaweicloudsdkrocketmq.v2.BatchDeleteInstanceRespResults`]

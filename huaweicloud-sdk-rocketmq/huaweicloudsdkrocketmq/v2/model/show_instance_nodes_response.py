@@ -16,100 +16,42 @@ class ShowInstanceNodesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'next_offset': 'int',
-        'previous_offset': 'int',
         'nodes': 'list[NodeContextEntity]',
         'total': 'int'
     }
 
     attribute_map = {
-        'next_offset': 'next_offset',
-        'previous_offset': 'previous_offset',
         'nodes': 'nodes',
         'total': 'total'
     }
 
-    def __init__(self, next_offset=None, previous_offset=None, nodes=None, total=None):
+    def __init__(self, nodes=None, total=None):
         r"""ShowInstanceNodesResponse
 
         The model defined in huaweicloud sdk
 
-        :param next_offset: 下个分页的offset。
-        :type next_offset: int
-        :param previous_offset: 上个分页的offset。
-        :type previous_offset: int
-        :param nodes: 后台任务ID
+        :param nodes: **参数解释**： 后台任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.NodeContextEntity`]
-        :param total: 总个数
+        :param total: **参数解释**： 总个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: int
         """
         
         super().__init__()
 
-        self._next_offset = None
-        self._previous_offset = None
         self._nodes = None
         self._total = None
         self.discriminator = None
 
-        if next_offset is not None:
-            self.next_offset = next_offset
-        if previous_offset is not None:
-            self.previous_offset = previous_offset
         if nodes is not None:
             self.nodes = nodes
         if total is not None:
             self.total = total
 
     @property
-    def next_offset(self):
-        r"""Gets the next_offset of this ShowInstanceNodesResponse.
-
-        下个分页的offset。
-
-        :return: The next_offset of this ShowInstanceNodesResponse.
-        :rtype: int
-        """
-        return self._next_offset
-
-    @next_offset.setter
-    def next_offset(self, next_offset):
-        r"""Sets the next_offset of this ShowInstanceNodesResponse.
-
-        下个分页的offset。
-
-        :param next_offset: The next_offset of this ShowInstanceNodesResponse.
-        :type next_offset: int
-        """
-        self._next_offset = next_offset
-
-    @property
-    def previous_offset(self):
-        r"""Gets the previous_offset of this ShowInstanceNodesResponse.
-
-        上个分页的offset。
-
-        :return: The previous_offset of this ShowInstanceNodesResponse.
-        :rtype: int
-        """
-        return self._previous_offset
-
-    @previous_offset.setter
-    def previous_offset(self, previous_offset):
-        r"""Sets the previous_offset of this ShowInstanceNodesResponse.
-
-        上个分页的offset。
-
-        :param previous_offset: The previous_offset of this ShowInstanceNodesResponse.
-        :type previous_offset: int
-        """
-        self._previous_offset = previous_offset
-
-    @property
     def nodes(self):
         r"""Gets the nodes of this ShowInstanceNodesResponse.
 
-        后台任务ID
+        **参数解释**： 后台任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The nodes of this ShowInstanceNodesResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.NodeContextEntity`]
@@ -120,7 +62,7 @@ class ShowInstanceNodesResponse(SdkResponse):
     def nodes(self, nodes):
         r"""Sets the nodes of this ShowInstanceNodesResponse.
 
-        后台任务ID
+        **参数解释**： 后台任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param nodes: The nodes of this ShowInstanceNodesResponse.
         :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.NodeContextEntity`]
@@ -131,7 +73,7 @@ class ShowInstanceNodesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowInstanceNodesResponse.
 
-        总个数
+        **参数解释**： 总个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ShowInstanceNodesResponse.
         :rtype: int
@@ -142,7 +84,7 @@ class ShowInstanceNodesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowInstanceNodesResponse.
 
-        总个数
+        **参数解释**： 总个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ShowInstanceNodesResponse.
         :type total: int

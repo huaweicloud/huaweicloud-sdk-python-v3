@@ -37,7 +37,7 @@ class CreateCorsConfig:
 
         The model defined in huaweicloud sdk
 
-        :param allow_origin: **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。  **取值范围**：不涉及  **默认取值**：不涉及
+        :param allow_origin: **参数解释**：允许的访问来源列表。  **约束限制**： - 若配置了通配符（*），则不能配其他值。 - 不支持IP地址。 - 不能配置重复的值。  **取值范围**：单个列表项的取值 - 通配符（*），表示匹配所有来源。 - 除通配符外，其他值只能是以http://或者https://开头（小写），后面加域名。可以是具体域名或一级泛域名，可以包含端口或不包含端口。例：http://*.test.abc.example.com:80  **默认取值**：不涉及
         :type allow_origin: list[str]
         :param allow_methods: **参数解释**：选择跨域访问时允许的 HTTP 方法。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type allow_methods: list[str]
@@ -78,7 +78,7 @@ class CreateCorsConfig:
     def allow_origin(self):
         r"""Gets the allow_origin of this CreateCorsConfig.
 
-        **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：允许的访问来源列表。  **约束限制**： - 若配置了通配符（*），则不能配其他值。 - 不支持IP地址。 - 不能配置重复的值。  **取值范围**：单个列表项的取值 - 通配符（*），表示匹配所有来源。 - 除通配符外，其他值只能是以http://或者https://开头（小写），后面加域名。可以是具体域名或一级泛域名，可以包含端口或不包含端口。例：http://*.test.abc.example.com:80  **默认取值**：不涉及
 
         :return: The allow_origin of this CreateCorsConfig.
         :rtype: list[str]
@@ -89,7 +89,7 @@ class CreateCorsConfig:
     def allow_origin(self, allow_origin):
         r"""Sets the allow_origin of this CreateCorsConfig.
 
-        **参数解释**：允许的访问来源列表。支持只配置一个元素*，或配置一个或多个值。  **约束限制**： - 单个值必须以http://或者https://开头，后边加一个正确的域名或一级泛域名。（例：http://*.test.abc.example.com） - 单个值可以不加端口，也可以指定端口，端口范围：1~65535。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：允许的访问来源列表。  **约束限制**： - 若配置了通配符（*），则不能配其他值。 - 不支持IP地址。 - 不能配置重复的值。  **取值范围**：单个列表项的取值 - 通配符（*），表示匹配所有来源。 - 除通配符外，其他值只能是以http://或者https://开头（小写），后面加域名。可以是具体域名或一级泛域名，可以包含端口或不包含端口。例：http://*.test.abc.example.com:80  **默认取值**：不涉及
 
         :param allow_origin: The allow_origin of this CreateCorsConfig.
         :type allow_origin: list[str]

@@ -43,15 +43,15 @@ class User:
 
         :param access_key: **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type access_key: str
-        :param secret_key: **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param secret_key: **参数解释**： 密钥。当密钥为空时，不更新密钥，继续使用旧密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type secret_key: str
         :param white_remote_address: **参数解释**： IP白名单。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type white_remote_address: str
-        :param admin: **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        :param admin: **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
         :type admin: bool
-        :param default_topic_perm: **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        :param default_topic_perm: **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
         :type default_topic_perm: str
-        :param default_group_perm: **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        :param default_group_perm: **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
         :type default_group_perm: str
         :param topic_perms: **参数解释**： 特殊的主题权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserTopicPerms`]
@@ -73,8 +73,7 @@ class User:
 
         if access_key is not None:
             self.access_key = access_key
-        if secret_key is not None:
-            self.secret_key = secret_key
+        self.secret_key = secret_key
         if white_remote_address is not None:
             self.white_remote_address = white_remote_address
         if admin is not None:
@@ -114,7 +113,7 @@ class User:
     def secret_key(self):
         r"""Gets the secret_key of this User.
 
-        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 密钥。当密钥为空时，不更新密钥，继续使用旧密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The secret_key of this User.
         :rtype: str
@@ -125,7 +124,7 @@ class User:
     def secret_key(self, secret_key):
         r"""Sets the secret_key of this User.
 
-        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 密钥。当密钥为空时，不更新密钥，继续使用旧密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param secret_key: The secret_key of this User.
         :type secret_key: str
@@ -158,7 +157,7 @@ class User:
     def admin(self):
         r"""Gets the admin of this User.
 
-        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
 
         :return: The admin of this User.
         :rtype: bool
@@ -169,7 +168,7 @@ class User:
     def admin(self, admin):
         r"""Sets the admin of this User.
 
-        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
 
         :param admin: The admin of this User.
         :type admin: bool
@@ -180,7 +179,7 @@ class User:
     def default_topic_perm(self):
         r"""Gets the default_topic_perm of this User.
 
-        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :return: The default_topic_perm of this User.
         :rtype: str
@@ -191,7 +190,7 @@ class User:
     def default_topic_perm(self, default_topic_perm):
         r"""Sets the default_topic_perm of this User.
 
-        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :param default_topic_perm: The default_topic_perm of this User.
         :type default_topic_perm: str
@@ -202,7 +201,7 @@ class User:
     def default_group_perm(self):
         r"""Gets the default_group_perm of this User.
 
-        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :return: The default_group_perm of this User.
         :rtype: str
@@ -213,7 +212,7 @@ class User:
     def default_group_perm(self, default_group_perm):
         r"""Sets the default_group_perm of this User.
 
-        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :param default_group_perm: The default_group_perm of this User.
         :type default_group_perm: str

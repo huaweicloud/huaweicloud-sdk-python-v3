@@ -16,47 +16,47 @@ class DeleteIpBlacklistResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'body': 'object'
     }
 
     attribute_map = {
-        'data': 'data'
+        'body': 'body'
     }
 
-    def __init__(self, data=None):
+    def __init__(self, body=None):
         r"""DeleteIpBlacklistResponse
 
         The model defined in huaweicloud sdk
 
-        :param data: 
-        :type data: object
+        :param body: 
+        :type body: object
         """
         
         super().__init__()
 
-        self._data = None
+        self._body = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        if body is not None:
+            self.body = body
 
     @property
-    def data(self):
-        r"""Gets the data of this DeleteIpBlacklistResponse.
+    def body(self):
+        r"""Gets the body of this DeleteIpBlacklistResponse.
 
-        :return: The data of this DeleteIpBlacklistResponse.
+        :return: The body of this DeleteIpBlacklistResponse.
         :rtype: object
         """
-        return self._data
+        return self._body
 
-    @data.setter
-    def data(self, data):
-        r"""Sets the data of this DeleteIpBlacklistResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this DeleteIpBlacklistResponse.
 
-        :param data: The data of this DeleteIpBlacklistResponse.
-        :type data: object
+        :param body: The body of this DeleteIpBlacklistResponse.
+        :type body: object
         """
-        self._data = data
+        self._body = body
 
     def to_dict(self):
         import warnings

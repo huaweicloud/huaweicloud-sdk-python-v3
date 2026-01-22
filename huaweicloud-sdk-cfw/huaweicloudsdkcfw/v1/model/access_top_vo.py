@@ -63,9 +63,9 @@ class AccessTopVO:
 
         :param deny_count: **参数解释**： 阻断次数 **取值范围**： 不涉及
         :type deny_count: int
-        :param deny_top_one_acl_id: **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        :param deny_top_one_acl_id: **参数解释**： Top命中的阻断策略ID **取值范围**： 不涉及
         :type deny_top_one_acl_id: str
-        :param deny_top_one_acl_name: **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        :param deny_top_one_acl_name: **参数解释**： Top命中的阻断策略名称 **取值范围**： 不涉及
         :type deny_top_one_acl_name: str
         :param hit_count: **参数解释**： 命中次数 **取值范围**： 不涉及
         :type hit_count: int
@@ -184,7 +184,7 @@ class AccessTopVO:
     def deny_top_one_acl_id(self):
         r"""Gets the deny_top_one_acl_id of this AccessTopVO.
 
-        **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        **参数解释**： Top命中的阻断策略ID **取值范围**： 不涉及
 
         :return: The deny_top_one_acl_id of this AccessTopVO.
         :rtype: str
@@ -195,7 +195,7 @@ class AccessTopVO:
     def deny_top_one_acl_id(self, deny_top_one_acl_id):
         r"""Sets the deny_top_one_acl_id of this AccessTopVO.
 
-        **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        **参数解释**： Top命中的阻断策略ID **取值范围**： 不涉及
 
         :param deny_top_one_acl_id: The deny_top_one_acl_id of this AccessTopVO.
         :type deny_top_one_acl_id: str
@@ -206,7 +206,7 @@ class AccessTopVO:
     def deny_top_one_acl_name(self):
         r"""Gets the deny_top_one_acl_name of this AccessTopVO.
 
-        **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        **参数解释**： Top命中的阻断策略名称 **取值范围**： 不涉及
 
         :return: The deny_top_one_acl_name of this AccessTopVO.
         :rtype: str
@@ -217,7 +217,7 @@ class AccessTopVO:
     def deny_top_one_acl_name(self, deny_top_one_acl_name):
         r"""Sets the deny_top_one_acl_name of this AccessTopVO.
 
-        **参数解释**： 高频命中的阻断策略ID **取值范围**： 不涉及
+        **参数解释**： Top命中的阻断策略名称 **取值范围**： 不涉及
 
         :param deny_top_one_acl_name: The deny_top_one_acl_name of this AccessTopVO.
         :type deny_top_one_acl_name: str

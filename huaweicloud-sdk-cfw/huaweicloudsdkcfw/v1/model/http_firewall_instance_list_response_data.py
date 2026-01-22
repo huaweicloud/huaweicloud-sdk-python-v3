@@ -35,15 +35,15 @@ class HttpFirewallInstanceListResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0
         :type offset: int
-        :param project_id: 租户项目ID
+        :param project_id: **参数解释**： 租户项目ID **约束限制**： 不涉及
         :type project_id: str
-        :param total: 防火墙总数量
+        :param total: **参数解释**： 防火墙总数量 **约束限制**： 不涉及
         :type total: int
-        :param records: 查询防火墙列表记录
+        :param records: **参数解释**： 查询防火墙列表记录 **约束限制**： 不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceVO`]
         """
         
@@ -71,7 +71,7 @@ class HttpFirewallInstanceListResponseData:
     def limit(self):
         r"""Gets the limit of this HttpFirewallInstanceListResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024
 
         :return: The limit of this HttpFirewallInstanceListResponseData.
         :rtype: int
@@ -82,7 +82,7 @@ class HttpFirewallInstanceListResponseData:
     def limit(self, limit):
         r"""Sets the limit of this HttpFirewallInstanceListResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **约束限制**： 不涉及 **取值范围**： 1-1024
 
         :param limit: The limit of this HttpFirewallInstanceListResponseData.
         :type limit: int
@@ -93,7 +93,7 @@ class HttpFirewallInstanceListResponseData:
     def offset(self):
         r"""Gets the offset of this HttpFirewallInstanceListResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0
 
         :return: The offset of this HttpFirewallInstanceListResponseData.
         :rtype: int
@@ -104,7 +104,7 @@ class HttpFirewallInstanceListResponseData:
     def offset(self, offset):
         r"""Sets the offset of this HttpFirewallInstanceListResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **约束限制**： 不涉及 **取值范围**： 大于或等于0
 
         :param offset: The offset of this HttpFirewallInstanceListResponseData.
         :type offset: int
@@ -115,7 +115,7 @@ class HttpFirewallInstanceListResponseData:
     def project_id(self):
         r"""Gets the project_id of this HttpFirewallInstanceListResponseData.
 
-        租户项目ID
+        **参数解释**： 租户项目ID **约束限制**： 不涉及
 
         :return: The project_id of this HttpFirewallInstanceListResponseData.
         :rtype: str
@@ -126,7 +126,7 @@ class HttpFirewallInstanceListResponseData:
     def project_id(self, project_id):
         r"""Sets the project_id of this HttpFirewallInstanceListResponseData.
 
-        租户项目ID
+        **参数解释**： 租户项目ID **约束限制**： 不涉及
 
         :param project_id: The project_id of this HttpFirewallInstanceListResponseData.
         :type project_id: str
@@ -137,7 +137,7 @@ class HttpFirewallInstanceListResponseData:
     def total(self):
         r"""Gets the total of this HttpFirewallInstanceListResponseData.
 
-        防火墙总数量
+        **参数解释**： 防火墙总数量 **约束限制**： 不涉及
 
         :return: The total of this HttpFirewallInstanceListResponseData.
         :rtype: int
@@ -148,7 +148,7 @@ class HttpFirewallInstanceListResponseData:
     def total(self, total):
         r"""Sets the total of this HttpFirewallInstanceListResponseData.
 
-        防火墙总数量
+        **参数解释**： 防火墙总数量 **约束限制**： 不涉及
 
         :param total: The total of this HttpFirewallInstanceListResponseData.
         :type total: int
@@ -159,7 +159,7 @@ class HttpFirewallInstanceListResponseData:
     def records(self):
         r"""Gets the records of this HttpFirewallInstanceListResponseData.
 
-        查询防火墙列表记录
+        **参数解释**： 查询防火墙列表记录 **约束限制**： 不涉及
 
         :return: The records of this HttpFirewallInstanceListResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceVO`]
@@ -170,7 +170,7 @@ class HttpFirewallInstanceListResponseData:
     def records(self, records):
         r"""Sets the records of this HttpFirewallInstanceListResponseData.
 
-        查询防火墙列表记录
+        **参数解释**： 查询防火墙列表记录 **约束限制**： 不涉及
 
         :param records: The records of this HttpFirewallInstanceListResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.FirewallInstanceVO`]

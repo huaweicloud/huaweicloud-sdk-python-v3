@@ -29,9 +29,9 @@ class DomainSetResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param id: 域名组id
+        :param id: **参数解释**： 域名组id **取值范围**： 不涉及
         :type id: str
-        :param name: 域名组名称
+        :param name: **参数解释**： 域名组名称 **取值范围**： 不涉及
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class DomainSetResponseData:
     def id(self):
         r"""Gets the id of this DomainSetResponseData.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :return: The id of this DomainSetResponseData.
         :rtype: str
@@ -61,7 +61,7 @@ class DomainSetResponseData:
     def id(self, id):
         r"""Sets the id of this DomainSetResponseData.
 
-        域名组id
+        **参数解释**： 域名组id **取值范围**： 不涉及
 
         :param id: The id of this DomainSetResponseData.
         :type id: str
@@ -72,7 +72,7 @@ class DomainSetResponseData:
     def name(self):
         r"""Gets the name of this DomainSetResponseData.
 
-        域名组名称
+        **参数解释**： 域名组名称 **取值范围**： 不涉及
 
         :return: The name of this DomainSetResponseData.
         :rtype: str
@@ -83,7 +83,7 @@ class DomainSetResponseData:
     def name(self, name):
         r"""Sets the name of this DomainSetResponseData.
 
-        域名组名称
+        **参数解释**： 域名组名称 **取值范围**： 不涉及
 
         :param name: The name of this DomainSetResponseData.
         :type name: str

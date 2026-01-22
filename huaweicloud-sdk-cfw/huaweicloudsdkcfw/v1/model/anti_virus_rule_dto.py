@@ -29,9 +29,9 @@ class AntiVirusRuleDto:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: 防护对象ID
+        :param object_id: 防护对象ID，为必传参数
         :type object_id: str
-        :param scan_protocol_configs: 扫描协议配置
+        :param scan_protocol_configs: 扫描协议配置列表
         :type scan_protocol_configs: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
         """
         
@@ -50,7 +50,7 @@ class AntiVirusRuleDto:
     def object_id(self):
         r"""Gets the object_id of this AntiVirusRuleDto.
 
-        防护对象ID
+        防护对象ID，为必传参数
 
         :return: The object_id of this AntiVirusRuleDto.
         :rtype: str
@@ -61,7 +61,7 @@ class AntiVirusRuleDto:
     def object_id(self, object_id):
         r"""Sets the object_id of this AntiVirusRuleDto.
 
-        防护对象ID
+        防护对象ID，为必传参数
 
         :param object_id: The object_id of this AntiVirusRuleDto.
         :type object_id: str
@@ -72,7 +72,7 @@ class AntiVirusRuleDto:
     def scan_protocol_configs(self):
         r"""Gets the scan_protocol_configs of this AntiVirusRuleDto.
 
-        扫描协议配置
+        扫描协议配置列表
 
         :return: The scan_protocol_configs of this AntiVirusRuleDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
@@ -83,7 +83,7 @@ class AntiVirusRuleDto:
     def scan_protocol_configs(self, scan_protocol_configs):
         r"""Sets the scan_protocol_configs of this AntiVirusRuleDto.
 
-        扫描协议配置
+        扫描协议配置列表
 
         :param scan_protocol_configs: The scan_protocol_configs of this AntiVirusRuleDto.
         :type scan_protocol_configs: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]

@@ -30,9 +30,9 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 元数据迁移任务总数。
+        :param total: **参数解释**： 元数据迁移任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: int
-        :param task: 元数据迁移任务列表。
+        :param task: **参数解释**： 元数据迁移任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type task: list[:class:`huaweicloudsdkrocketmq.v2.MetadataTask`]
         """
         
@@ -51,7 +51,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListRocketMqMigrationTaskResponse.
 
-        元数据迁移任务总数。
+        **参数解释**： 元数据迁移任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ListRocketMqMigrationTaskResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListRocketMqMigrationTaskResponse.
 
-        元数据迁移任务总数。
+        **参数解释**： 元数据迁移任务总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ListRocketMqMigrationTaskResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
     def task(self):
         r"""Gets the task of this ListRocketMqMigrationTaskResponse.
 
-        元数据迁移任务列表。
+        **参数解释**： 元数据迁移任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The task of this ListRocketMqMigrationTaskResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.MetadataTask`]
@@ -84,7 +84,7 @@ class ListRocketMqMigrationTaskResponse(SdkResponse):
     def task(self, task):
         r"""Sets the task of this ListRocketMqMigrationTaskResponse.
 
-        元数据迁移任务列表。
+        **参数解释**： 元数据迁移任务列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param task: The task of this ListRocketMqMigrationTaskResponse.
         :type task: list[:class:`huaweicloudsdkrocketmq.v2.MetadataTask`]

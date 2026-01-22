@@ -79,8 +79,13 @@ class ShowInstanceResponse(SdkResponse):
         'produce_portion': 'int',
         'consume_portion': 'int',
         'dr_enable': 'bool',
+        'quota_address': 'str',
+        'max_msg_process_tps': 'int',
         'config_ssl_need_restart_process': 'bool',
-        'tls_mode': 'str'
+        'tls_mode': 'str',
+        'arch_type': 'str',
+        'enable_elastic_tps': 'bool',
+        'auto_volume_expand_enable': 'bool'
     }
 
     attribute_map = {
@@ -147,145 +152,160 @@ class ShowInstanceResponse(SdkResponse):
         'produce_portion': 'produce_portion',
         'consume_portion': 'consume_portion',
         'dr_enable': 'dr_enable',
+        'quota_address': 'quota_address',
+        'max_msg_process_tps': 'max_msg_process_tps',
         'config_ssl_need_restart_process': 'config_ssl_need_restart_process',
-        'tls_mode': 'tls_mode'
+        'tls_mode': 'tls_mode',
+        'arch_type': 'arch_type',
+        'enable_elastic_tps': 'enable_elastic_tps',
+        'auto_volume_expand_enable': 'auto_volume_expand_enable'
     }
 
-    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, public_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, config_ssl_need_restart_process=None, tls_mode=None):
+    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, public_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, quota_address=None, max_msg_process_tps=None, config_ssl_need_restart_process=None, tls_mode=None, arch_type=None, enable_elastic_tps=None, auto_volume_expand_enable=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
+        :param name: **参数解释**： 实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param engine: **参数解释**： 消息引擎。 **取值范围**： 不涉及。
+        :param engine: **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
-        :param status: **参数解释**： 状态。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs)
+        :param status: **参数解释**： 消息状态。 **约束限制**： 不涉及。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,dt,ax,srg)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs,hcs_oemout) **默认取值**： 不涉及。
         :type status: str
-        :param description: **参数解释**： 消息描述。 **取值范围**： 不涉及。
+        :param description: **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type description: str
-        :param type: **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
+        :param type: **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： [- single：4.8.0单机。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- cluster：4.8.0集群。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- single.basic：5.x单机基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.basic：5.x集群基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.professional：5.x集群专业版。](tag:hws,hws_eu,hws_hk,ctc,srg) **默认取值**： 不涉及。
         :type type: str
-        :param specification: **参数解释**： 实例规格。 **取值范围**： 不涉及。
+        :param specification: **参数解释**： 实例规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type specification: str
-        :param engine_version: **参数解释**： 实例版本。 **取值范围**： 不涉及。
+        :param engine_version: **参数解释**： 实例版本。 **约束限制**： 不涉及。 **取值范围**： [- 4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- 5.x](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) **默认取值**： 不涉及。
         :type engine_version: str
-        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
+        :param instance_id: **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
+        :param charging_mode: **参数解释**： 付费模式。 **约束限制**： 不涉及。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,dt)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc,cmcc,ax) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs,hcs_oemout,srg) **默认取值**： 不涉及。
         :type charging_mode: int
-        :param vpc_id: **参数解释**： 私有云ID。 **取值范围**： 不涉及。
+        :param vpc_id: **参数解释**： 私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_id: str
-        :param vpc_name: **参数解释**： 私有云名称。 **取值范围**： 不涉及。
+        :param vpc_name: **参数解释**： 私有云名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_name: str
-        :param created_at: **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
+        :param created_at: **参数解释**： 完成创建时间。 格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type created_at: str
-        :param product_id: **参数解释**： 产品标识。 **取值范围**： 不涉及。
+        :param product_id: **参数解释**： RocketMQ实例规格。[x86环境后缀为.x86，arm环境为.arm。single表示单机，cluster表示集群。](tag:hcs,fcs,hcs_oemout)  **约束限制**： 不涉及。 **取值范围**： [当“type”为“single.basic”选择单机规格；当“type”为“cluster.basic”选择集群规格。](tag:dt) [- c6.2u8g.cluster.x86或c6.2u8g.cluster.arm：单个代理最大分区数50，单个代理最大消费组数100](tag:fcs) [- c6.4u8g.cluster.small：单个代理最大Topic数2000，单个代理最大消费组数2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u8g.cluster：单个代理最大Topic数4000，单个代理最大消费组数4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u16g.cluster.x86或c6.4u16g.cluster.arm：单个代理最大分区数100，单个代理最大消费组数200](tag:hcs,hcs_oemout) [- c6.8u16g.cluster：单个代理最大Topic数8000，单个代理最大消费组数8000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.8u32g.cluster.x86或c6.8u32g.cluster.arm：单个代理最大Topic数200，单个代理最大消费组数400](tag:hcs,fcs,hcs_oemout) [- c6.12u24g.cluster：单个代理最大Topic数12000，单个代理最大消费组数12000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.16u64g.cluster.x86或c6.16u64g.cluster.arm：单个代理最大Topic数300，单个代理最大消费组数600](tag:hcs,fcs,hcs_oemout) [- c6.16u32g.cluster：单个代理最大Topic数16000，单个代理最大消费组数16000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.32u128g.cluster.x86或c6.32u128g.cluster.arm：单个代理最大Topic数400，单个代理最大消费组数800](tag:hcs,fcs,hcs_oemout) [- rocketmq.b1.large.1：RocketMQ 5.x基础版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.4：RocketMQ 5.x基础版集群规格，实例TPS 2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.8：RocketMQ 5.x基础版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.12：RocketMQ 5.x基础版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.p1.large.1：RocketMQ 5.x专业版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.8：RocketMQ 5.x专业版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.12：RocketMQ 5.x专业版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.20：RocketMQ 5.x专业版集群规格，实例TPS 10000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.40：RocketMQ 5.x专业版集群规格，实例TPS 20000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.100：RocketMQ 5.x专业版集群规格，实例TPS 50000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.150：RocketMQ 5.x专业版集群规格，实例TPS 75000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.200：RocketMQ 5.x专业版集群规格，实例TPS 100000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.300：RocketMQ 5.x专业版集群规格，实例TPS 150000](tag:hws,hws_eu,hws_hk,ctc,srg)  **默认取值**： 不涉及。
         :type product_id: str
-        :param security_group_id: **参数解释**： 安全组ID。 **取值范围**： 不涉及。
+        :param security_group_id: **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
-        :param security_group_name: **参数解释**： 安全组名称。 **取值范围**： 不涉及。
+        :param security_group_name: **参数解释**： 安全组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_name: str
-        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
+        :param subnet_id: **参数解释**： 子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_id: str
-        :param subnet_name: **参数解释**： 子网名称。 **取值范围**： 不涉及。
+        :param subnet_name: **参数解释**： 子网名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_name: str
-        :param subnet_cidr: **参数解释**： 子网路由（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        :param subnet_cidr: **参数解释**： 子网路由。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_cidr: str
-        :param available_zones: **参数解释**： 可用区ID列表。 **取值范围**： 不涉及。
+        :param available_zones: **参数解释**： 可用区ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type available_zones: list[str]
-        :param available_zone_names: **参数解释**： 可用区名称列表。
+        :param available_zone_names: **参数解释**： 可用区名称列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type available_zone_names: list[str]
-        :param user_id: **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        :param user_id: **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_id: str
-        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
+        :param user_name: **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type user_name: str
-        :param maintain_begin: **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        :param maintain_begin: **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type maintain_begin: str
-        :param maintain_end: **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        :param maintain_end: **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type maintain_end: str
-        :param enable_log_collection: **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启。 - false：不开启。
+        :param enable_log_collection: **参数解释**： 是否开启消息收集功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type enable_log_collection: bool
-        :param storage_space: **参数解释**： 存储空间，单位：GB。 **取值范围**： 不涉及。
+        :param storage_space: **参数解释**： 存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
         :type storage_space: int
-        :param used_storage_space: **参数解释**： 已用消息存储空间，单位：GB。 **取值范围**： 不涉及。
+        :param used_storage_space: **参数解释**： 已用消息存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
         :type used_storage_space: int
-        :param enable_publicip: **参数解释**： 是否开启公网。 **取值范围**： - true：开启。 - false：不开启。
+        :param enable_publicip: **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type enable_publicip: bool
-        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。
+        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type publicip_id: str
-        :param publicip_address: **参数解释**： 公网IP地址。 **取值范围**： 不涉及。
+        :param publicip_address: **参数解释**： 公网IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type publicip_address: str
-        :param ssl_enable: **参数解释**： 是否开启SSL。 **取值范围**： - true：开启。 - false：未开启。
+        :param ssl_enable: **参数解释**： 是否开启SSL。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type ssl_enable: bool
-        :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
+        :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type cross_vpc_info: str
-        :param storage_resource_id: **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
+        :param storage_resource_id: **参数解释**： 存储资源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type storage_resource_id: str
-        :param storage_spec_code: **参数解释**： 存储规格代码。 **取值范围**： 不涉及。
+        :param storage_spec_code: **参数解释**： 存储规格代码。 **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘 - dms.physical.storage.ultra.v2：超高IO类型磁盘 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) **默认取值**： 不涉及。
         :type storage_spec_code: str
-        :param service_type: **参数解释**： 服务类型。 **取值范围**： 不涉及。
+        :param service_type: **参数解释**： 服务类型。 **约束限制**： 不涉及。 **取值范围**： - advanced：[华为云服务类型。](tag:hws,hws_hk)[服务类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dec：专属云服务类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
         :type service_type: str
-        :param storage_type: **参数解释**： 存储类型。 **取值范围**： 不涉及。
+        :param storage_type: **参数解释**： 存储类型。 **约束限制**： 不涉及。 **取值范围**： - hec：[华为云存储类型。](tag:hws,hws_hk)[存储类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dss：专属云存储类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
         :type storage_type: str
-        :param extend_times: **参数解释**： 扩展时间。 **取值范围**： 不涉及。
+        :param extend_times: **参数解释**： 扩展时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type extend_times: int
-        :param ipv6_enable: **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：未开启。
+        :param ipv6_enable: **参数解释**： 是否开启IPv6。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type ipv6_enable: bool
-        :param support_features: **参数解释**： 实例支持的特性功能。 **取值范围**： 不涉及。
+        :param support_features: **参数解释**： 实例支持的特性功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type support_features: str
-        :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启。 - false：不开启。
+        :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type disk_encrypted: bool
-        :param ces_version: **参数解释**： 云监控版本。 **取值范围**： 不涉及。
+        :param ces_version: **参数解释**： 云监控版本。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type ces_version: str
-        :param node_num: **参数解释**： 节点数。 **取值范围**： 不涉及。
+        :param node_num: **参数解释**： 节点数。（仅RocketMQ 4.8.0版本会显示此字段） **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type node_num: int
-        :param new_spec_billing_enable: **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启。 - false：未开启。
+        :param new_spec_billing_enable: **参数解释**： 是否启用新规格计费。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type new_spec_billing_enable: bool
-        :param enable_acl: **参数解释**： 是否开启访问控制列表。 **取值范围**： - true：开启。 - false：未开启。
+        :param enable_acl: **参数解释**： 是否开启访问控制列表。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type enable_acl: bool
-        :param broker_num: **参数解释**： Broker节点数（仅RocketMQ 4.8.0版本会显示此字段）。 **取值范围**： 不涉及。
+        :param broker_num: **参数解释**： Broker节点数。 **约束限制**： 不涉及。 **取值范围**：   不涉及。 **默认取值**： 不涉及。
         :type broker_num: int
-        :param dns_enable: **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启。 - false：未开启。
+        :param dns_enable: **参数解释**： 实例是否开启域名访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type dns_enable: bool
-        :param namesrv_address: **参数解释**： 元数据地址。 **取值范围**： 不涉及。
+        :param namesrv_address: **参数解释**： 元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type namesrv_address: str
-        :param namesrv_domain_name: **参数解释**： 元数据域名。 **取值范围**： 不涉及。
+        :param namesrv_domain_name: **参数解释**： 元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type namesrv_domain_name: str
-        :param broker_address: **参数解释**： 业务数据地址。 **取值范围**： 不涉及。
+        :param broker_address: **参数解释**： 业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_address: str
-        :param public_namesrv_address: **参数解释**： 公网元数据地址。 **取值范围**： 不涉及。
+        :param public_namesrv_address: **参数解释**： 公网元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_namesrv_address: str
-        :param public_namesrv_domain_name: **参数解释**： 公网元数据域名。 **取值范围**： 不涉及。
+        :param public_namesrv_domain_name: **参数解释**： 公网元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_namesrv_domain_name: str
-        :param public_broker_address: **参数解释**： 公网业务数据地址。 **取值范围**： 不涉及。
+        :param public_broker_address: **参数解释**： 公网业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_broker_address: str
-        :param grpc_address: **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        :param grpc_address: **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type grpc_address: str
-        :param grpc_domain_name: **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        :param grpc_domain_name: **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type grpc_domain_name: str
-        :param public_grpc_address: **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        :param public_grpc_address: **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_grpc_address: str
-        :param public_grpc_domain_name: **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        :param public_grpc_domain_name: **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_grpc_domain_name: str
-        :param enterprise_project_id: **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
+        :param enterprise_project_id: **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type enterprise_project_id: str
-        :param tags: **参数解释**： 标签列表。 **取值范围**： 不涉及。
+        :param tags: **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
-        :param total_storage_space: **参数解释**： 总存储空间。 **取值范围**： 不涉及。
+        :param total_storage_space: **参数解释**： 总存储空间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total_storage_space: int
-        :param resource_spec_code: **参数解释**： 资源规格。 **取值范围**： 不涉及。
+        :param resource_spec_code: **参数解释**： 资源规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type resource_spec_code: str
-        :param produce_portion: **参数解释**： 生产TPS占比。 **取值范围**： 不涉及。
+        :param produce_portion: **参数解释**： 生产TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type produce_portion: int
-        :param consume_portion: **参数解释**： 消费TPS占比。 **取值范围**： 不涉及。
+        :param consume_portion: **参数解释**： 消费TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type consume_portion: int
-        :param dr_enable: **参数解释**： 是否为容灾实例。 **取值范围**： 不涉及。
+        :param dr_enable: **参数解释**： 是否为容灾实例。 **约束限制**： 不涉及。 **取值范围**： - true：容灾实例。 - false：非容灾实例。 **默认取值**： 不涉及。
         :type dr_enable: bool
-        :param config_ssl_need_restart_process: **参数解释**： 配置ssl是否需要重启。 **取值范围**： 不涉及。
+        :param quota_address: **参数解释**： 流控地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type quota_address: str
+        :param max_msg_process_tps: **参数解释**： 最大消息TPS。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type max_msg_process_tps: int
+        :param config_ssl_need_restart_process: **参数解释**： 配置ssl是否需要重启。 **约束限制**： 不涉及。 **取值范围**： - true：需要重启。 - false：不需要重启。 **默认取值**： 不涉及。
         :type config_ssl_need_restart_process: bool
-        :param tls_mode: **参数解释**： 实例使用的安全协议。 **取值范围**： 不涉及。
+        :param tls_mode: **参数解释**： 实例使用的安全协议。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tls_mode: str
+        :param arch_type: **参数解释**： 架构类型。 **约束限制**： 不涉及。 **取值范围**： - X86。 - ARM。 **默认取值**： 不涉及。
+        :type arch_type: str
+        :param enable_elastic_tps: **参数解释**： 弹性TPS开关状态。 **约束限制**： 不涉及。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+        :type enable_elastic_tps: bool
+        :param auto_volume_expand_enable: **参数解释**： 是否开启自动磁盘扩容。 **约束限制**： 不涉及。 **取值范围**： - true：开启自动磁盘扩容。 - false：不开启自动磁盘扩容。     **默认取值**： 不涉及。
+        :type auto_volume_expand_enable: bool
         """
         
         super().__init__()
@@ -353,8 +373,13 @@ class ShowInstanceResponse(SdkResponse):
         self._produce_portion = None
         self._consume_portion = None
         self._dr_enable = None
+        self._quota_address = None
+        self._max_msg_process_tps = None
         self._config_ssl_need_restart_process = None
         self._tls_mode = None
+        self._arch_type = None
+        self._enable_elastic_tps = None
+        self._auto_volume_expand_enable = None
         self.discriminator = None
 
         if name is not None:
@@ -483,16 +508,26 @@ class ShowInstanceResponse(SdkResponse):
             self.consume_portion = consume_portion
         if dr_enable is not None:
             self.dr_enable = dr_enable
+        if quota_address is not None:
+            self.quota_address = quota_address
+        if max_msg_process_tps is not None:
+            self.max_msg_process_tps = max_msg_process_tps
         if config_ssl_need_restart_process is not None:
             self.config_ssl_need_restart_process = config_ssl_need_restart_process
         if tls_mode is not None:
             self.tls_mode = tls_mode
+        if arch_type is not None:
+            self.arch_type = arch_type
+        if enable_elastic_tps is not None:
+            self.enable_elastic_tps = enable_elastic_tps
+        if auto_volume_expand_enable is not None:
+            self.auto_volume_expand_enable = auto_volume_expand_enable
 
     @property
     def name(self):
         r"""Gets the name of this ShowInstanceResponse.
 
-        **参数解释**： 实例名称。 **取值范围**： 不涉及。
+        **参数解释**： 实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ShowInstanceResponse.
         :rtype: str
@@ -503,7 +538,7 @@ class ShowInstanceResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowInstanceResponse.
 
-        **参数解释**： 实例名称。 **取值范围**： 不涉及。
+        **参数解释**： 实例名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ShowInstanceResponse.
         :type name: str
@@ -514,7 +549,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine(self):
         r"""Gets the engine of this ShowInstanceResponse.
 
-        **参数解释**： 消息引擎。 **取值范围**： 不涉及。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this ShowInstanceResponse.
         :rtype: str
@@ -525,7 +560,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine(self, engine):
         r"""Sets the engine of this ShowInstanceResponse.
 
-        **参数解释**： 消息引擎。 **取值范围**： 不涉及。
+        **参数解释**： 消息引擎类型。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ShowInstanceResponse.
         :type engine: str
@@ -536,7 +571,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        **参数解释**： 状态。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs)
+        **参数解释**： 消息状态。 **约束限制**： 不涉及。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,dt,ax,srg)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs,hcs_oemout) **默认取值**： 不涉及。
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -547,7 +582,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        **参数解释**： 状态。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs)
+        **参数解释**： 消息状态。 **约束限制**： 不涉及。 **取值范围**： [详细状态说明请参考[实例状态说明](hrm-api-0010.xml)。](tag:hws,hws_hk,ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,dt,ax,srg)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。](tag:hcs,fcs,hcs_oemout) **默认取值**： 不涉及。
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -558,7 +593,7 @@ class ShowInstanceResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowInstanceResponse.
 
-        **参数解释**： 消息描述。 **取值范围**： 不涉及。
+        **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The description of this ShowInstanceResponse.
         :rtype: str
@@ -569,7 +604,7 @@ class ShowInstanceResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowInstanceResponse.
 
-        **参数解释**： 消息描述。 **取值范围**： 不涉及。
+        **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param description: The description of this ShowInstanceResponse.
         :type description: str
@@ -580,7 +615,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowInstanceResponse.
 
-        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
+        **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： [- single：4.8.0单机。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- cluster：4.8.0集群。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- single.basic：5.x单机基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.basic：5.x集群基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.professional：5.x集群专业版。](tag:hws,hws_eu,hws_hk,ctc,srg) **默认取值**： 不涉及。
 
         :return: The type of this ShowInstanceResponse.
         :rtype: str
@@ -591,7 +626,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowInstanceResponse.
 
-        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
+        **参数解释**： 消息描述。 **约束限制**： 不涉及。 **取值范围**： [- single：4.8.0单机。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- cluster：4.8.0集群。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- single.basic：5.x单机基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.basic：5.x集群基础版。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- cluster.professional：5.x集群专业版。](tag:hws,hws_eu,hws_hk,ctc,srg) **默认取值**： 不涉及。
 
         :param type: The type of this ShowInstanceResponse.
         :type type: str
@@ -602,7 +637,7 @@ class ShowInstanceResponse(SdkResponse):
     def specification(self):
         r"""Gets the specification of this ShowInstanceResponse.
 
-        **参数解释**： 实例规格。 **取值范围**： 不涉及。
+        **参数解释**： 实例规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The specification of this ShowInstanceResponse.
         :rtype: str
@@ -613,7 +648,7 @@ class ShowInstanceResponse(SdkResponse):
     def specification(self, specification):
         r"""Sets the specification of this ShowInstanceResponse.
 
-        **参数解释**： 实例规格。 **取值范围**： 不涉及。
+        **参数解释**： 实例规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param specification: The specification of this ShowInstanceResponse.
         :type specification: str
@@ -624,7 +659,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self):
         r"""Gets the engine_version of this ShowInstanceResponse.
 
-        **参数解释**： 实例版本。 **取值范围**： 不涉及。
+        **参数解释**： 实例版本。 **约束限制**： 不涉及。 **取值范围**： [- 4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- 5.x](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) **默认取值**： 不涉及。
 
         :return: The engine_version of this ShowInstanceResponse.
         :rtype: str
@@ -635,7 +670,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this ShowInstanceResponse.
 
-        **参数解释**： 实例版本。 **取值范围**： 不涉及。
+        **参数解释**： 实例版本。 **约束限制**： 不涉及。 **取值范围**： [- 4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- 5.x](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) **默认取值**： 不涉及。
 
         :param engine_version: The engine_version of this ShowInstanceResponse.
         :type engine_version: str
@@ -646,7 +681,7 @@ class ShowInstanceResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例ID。 **取值范围**： 不涉及。
+        **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowInstanceResponse.
         :rtype: str
@@ -657,7 +692,7 @@ class ShowInstanceResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例ID。 **取值范围**： 不涉及。
+        **参数解释**： 实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowInstanceResponse.
         :type instance_id: str
@@ -668,7 +703,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self):
         r"""Gets the charging_mode of this ShowInstanceResponse.
 
-        **参数解释**： 付费模式。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
+        **参数解释**： 付费模式。 **约束限制**： 不涉及。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,dt)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc,cmcc,ax) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs,hcs_oemout,srg) **默认取值**： 不涉及。
 
         :return: The charging_mode of this ShowInstanceResponse.
         :rtype: int
@@ -679,7 +714,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ShowInstanceResponse.
 
-        **参数解释**： 付费模式。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
+        **参数解释**： 付费模式。 **约束限制**： 不涉及。 **取值范围**： [1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,dt)[1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc,cmcc,ax) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs,hcs_oemout,srg) **默认取值**： 不涉及。
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
         :type charging_mode: int
@@ -690,7 +725,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_id(self):
         r"""Gets the vpc_id of this ShowInstanceResponse.
 
-        **参数解释**： 私有云ID。 **取值范围**： 不涉及。
+        **参数解释**： 私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_id of this ShowInstanceResponse.
         :rtype: str
@@ -701,7 +736,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ShowInstanceResponse.
 
-        **参数解释**： 私有云ID。 **取值范围**： 不涉及。
+        **参数解释**： 私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_id: The vpc_id of this ShowInstanceResponse.
         :type vpc_id: str
@@ -712,7 +747,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_name(self):
         r"""Gets the vpc_name of this ShowInstanceResponse.
 
-        **参数解释**： 私有云名称。 **取值范围**： 不涉及。
+        **参数解释**： 私有云名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_name of this ShowInstanceResponse.
         :rtype: str
@@ -723,7 +758,7 @@ class ShowInstanceResponse(SdkResponse):
     def vpc_name(self, vpc_name):
         r"""Sets the vpc_name of this ShowInstanceResponse.
 
-        **参数解释**： 私有云名称。 **取值范围**： 不涉及。
+        **参数解释**： 私有云名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_name: The vpc_name of this ShowInstanceResponse.
         :type vpc_name: str
@@ -734,7 +769,7 @@ class ShowInstanceResponse(SdkResponse):
     def created_at(self):
         r"""Gets the created_at of this ShowInstanceResponse.
 
-        **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
+        **参数解释**： 完成创建时间。 格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The created_at of this ShowInstanceResponse.
         :rtype: str
@@ -745,7 +780,7 @@ class ShowInstanceResponse(SdkResponse):
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowInstanceResponse.
 
-        **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
+        **参数解释**： 完成创建时间。 格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param created_at: The created_at of this ShowInstanceResponse.
         :type created_at: str
@@ -756,7 +791,7 @@ class ShowInstanceResponse(SdkResponse):
     def product_id(self):
         r"""Gets the product_id of this ShowInstanceResponse.
 
-        **参数解释**： 产品标识。 **取值范围**： 不涉及。
+        **参数解释**： RocketMQ实例规格。[x86环境后缀为.x86，arm环境为.arm。single表示单机，cluster表示集群。](tag:hcs,fcs,hcs_oemout)  **约束限制**： 不涉及。 **取值范围**： [当“type”为“single.basic”选择单机规格；当“type”为“cluster.basic”选择集群规格。](tag:dt) [- c6.2u8g.cluster.x86或c6.2u8g.cluster.arm：单个代理最大分区数50，单个代理最大消费组数100](tag:fcs) [- c6.4u8g.cluster.small：单个代理最大Topic数2000，单个代理最大消费组数2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u8g.cluster：单个代理最大Topic数4000，单个代理最大消费组数4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u16g.cluster.x86或c6.4u16g.cluster.arm：单个代理最大分区数100，单个代理最大消费组数200](tag:hcs,hcs_oemout) [- c6.8u16g.cluster：单个代理最大Topic数8000，单个代理最大消费组数8000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.8u32g.cluster.x86或c6.8u32g.cluster.arm：单个代理最大Topic数200，单个代理最大消费组数400](tag:hcs,fcs,hcs_oemout) [- c6.12u24g.cluster：单个代理最大Topic数12000，单个代理最大消费组数12000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.16u64g.cluster.x86或c6.16u64g.cluster.arm：单个代理最大Topic数300，单个代理最大消费组数600](tag:hcs,fcs,hcs_oemout) [- c6.16u32g.cluster：单个代理最大Topic数16000，单个代理最大消费组数16000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.32u128g.cluster.x86或c6.32u128g.cluster.arm：单个代理最大Topic数400，单个代理最大消费组数800](tag:hcs,fcs,hcs_oemout) [- rocketmq.b1.large.1：RocketMQ 5.x基础版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.4：RocketMQ 5.x基础版集群规格，实例TPS 2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.8：RocketMQ 5.x基础版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.12：RocketMQ 5.x基础版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.p1.large.1：RocketMQ 5.x专业版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.8：RocketMQ 5.x专业版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.12：RocketMQ 5.x专业版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.20：RocketMQ 5.x专业版集群规格，实例TPS 10000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.40：RocketMQ 5.x专业版集群规格，实例TPS 20000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.100：RocketMQ 5.x专业版集群规格，实例TPS 50000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.150：RocketMQ 5.x专业版集群规格，实例TPS 75000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.200：RocketMQ 5.x专业版集群规格，实例TPS 100000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.300：RocketMQ 5.x专业版集群规格，实例TPS 150000](tag:hws,hws_eu,hws_hk,ctc,srg)  **默认取值**： 不涉及。
 
         :return: The product_id of this ShowInstanceResponse.
         :rtype: str
@@ -767,7 +802,7 @@ class ShowInstanceResponse(SdkResponse):
     def product_id(self, product_id):
         r"""Sets the product_id of this ShowInstanceResponse.
 
-        **参数解释**： 产品标识。 **取值范围**： 不涉及。
+        **参数解释**： RocketMQ实例规格。[x86环境后缀为.x86，arm环境为.arm。single表示单机，cluster表示集群。](tag:hcs,fcs,hcs_oemout)  **约束限制**： 不涉及。 **取值范围**： [当“type”为“single.basic”选择单机规格；当“type”为“cluster.basic”选择集群规格。](tag:dt) [- c6.2u8g.cluster.x86或c6.2u8g.cluster.arm：单个代理最大分区数50，单个代理最大消费组数100](tag:fcs) [- c6.4u8g.cluster.small：单个代理最大Topic数2000，单个代理最大消费组数2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u8g.cluster：单个代理最大Topic数4000，单个代理最大消费组数4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.4u16g.cluster.x86或c6.4u16g.cluster.arm：单个代理最大分区数100，单个代理最大消费组数200](tag:hcs,hcs_oemout) [- c6.8u16g.cluster：单个代理最大Topic数8000，单个代理最大消费组数8000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.8u32g.cluster.x86或c6.8u32g.cluster.arm：单个代理最大Topic数200，单个代理最大消费组数400](tag:hcs,fcs,hcs_oemout) [- c6.12u24g.cluster：单个代理最大Topic数12000，单个代理最大消费组数12000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.16u64g.cluster.x86或c6.16u64g.cluster.arm：单个代理最大Topic数300，单个代理最大消费组数600](tag:hcs,fcs,hcs_oemout) [- c6.16u32g.cluster：单个代理最大Topic数16000，单个代理最大消费组数16000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- c6.32u128g.cluster.x86或c6.32u128g.cluster.arm：单个代理最大Topic数400，单个代理最大消费组数800](tag:hcs,fcs,hcs_oemout) [- rocketmq.b1.large.1：RocketMQ 5.x基础版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.4：RocketMQ 5.x基础版集群规格，实例TPS 2000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.8：RocketMQ 5.x基础版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.b2.large.12：RocketMQ 5.x基础版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) [- rocketmq.p1.large.1：RocketMQ 5.x专业版单机规格，实例TPS 500](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.8：RocketMQ 5.x专业版集群规格，实例TPS 4000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.12：RocketMQ 5.x专业版集群规格，实例TPS 6000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.20：RocketMQ 5.x专业版集群规格，实例TPS 10000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.40：RocketMQ 5.x专业版集群规格，实例TPS 20000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.100：RocketMQ 5.x专业版集群规格，实例TPS 50000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.150：RocketMQ 5.x专业版集群规格，实例TPS 75000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.200：RocketMQ 5.x专业版集群规格，实例TPS 100000](tag:hws,hws_eu,hws_hk,ctc,srg) [- rocketmq.p2.large.300：RocketMQ 5.x专业版集群规格，实例TPS 150000](tag:hws,hws_eu,hws_hk,ctc,srg)  **默认取值**： 不涉及。
 
         :param product_id: The product_id of this ShowInstanceResponse.
         :type product_id: str
@@ -778,7 +813,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_id(self):
         r"""Gets the security_group_id of this ShowInstanceResponse.
 
-        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
+        **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_id of this ShowInstanceResponse.
         :rtype: str
@@ -789,7 +824,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ShowInstanceResponse.
 
-        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
+        **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_id: The security_group_id of this ShowInstanceResponse.
         :type security_group_id: str
@@ -800,7 +835,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_name(self):
         r"""Gets the security_group_name of this ShowInstanceResponse.
 
-        **参数解释**： 安全组名称。 **取值范围**： 不涉及。
+        **参数解释**： 安全组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_name of this ShowInstanceResponse.
         :rtype: str
@@ -811,7 +846,7 @@ class ShowInstanceResponse(SdkResponse):
     def security_group_name(self, security_group_name):
         r"""Sets the security_group_name of this ShowInstanceResponse.
 
-        **参数解释**： 安全组名称。 **取值范围**： 不涉及。
+        **参数解释**： 安全组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_name: The security_group_name of this ShowInstanceResponse.
         :type security_group_name: str
@@ -822,7 +857,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self):
         r"""Gets the subnet_id of this ShowInstanceResponse.
 
-        **参数解释**： 子网ID。 **取值范围**： 不涉及。
+        **参数解释**： 子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_id of this ShowInstanceResponse.
         :rtype: str
@@ -833,7 +868,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ShowInstanceResponse.
 
-        **参数解释**： 子网ID。 **取值范围**： 不涉及。
+        **参数解释**： 子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_id: The subnet_id of this ShowInstanceResponse.
         :type subnet_id: str
@@ -844,7 +879,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_name(self):
         r"""Gets the subnet_name of this ShowInstanceResponse.
 
-        **参数解释**： 子网名称。 **取值范围**： 不涉及。
+        **参数解释**： 子网名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_name of this ShowInstanceResponse.
         :rtype: str
@@ -855,7 +890,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_name(self, subnet_name):
         r"""Sets the subnet_name of this ShowInstanceResponse.
 
-        **参数解释**： 子网名称。 **取值范围**： 不涉及。
+        **参数解释**： 子网名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_name: The subnet_name of this ShowInstanceResponse.
         :type subnet_name: str
@@ -866,7 +901,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_cidr(self):
         r"""Gets the subnet_cidr of this ShowInstanceResponse.
 
-        **参数解释**： 子网路由（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 子网路由。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_cidr of this ShowInstanceResponse.
         :rtype: str
@@ -877,7 +912,7 @@ class ShowInstanceResponse(SdkResponse):
     def subnet_cidr(self, subnet_cidr):
         r"""Sets the subnet_cidr of this ShowInstanceResponse.
 
-        **参数解释**： 子网路由（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 子网路由。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_cidr: The subnet_cidr of this ShowInstanceResponse.
         :type subnet_cidr: str
@@ -888,7 +923,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zones(self):
         r"""Gets the available_zones of this ShowInstanceResponse.
 
-        **参数解释**： 可用区ID列表。 **取值范围**： 不涉及。
+        **参数解释**： 可用区ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The available_zones of this ShowInstanceResponse.
         :rtype: list[str]
@@ -899,7 +934,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ShowInstanceResponse.
 
-        **参数解释**： 可用区ID列表。 **取值范围**： 不涉及。
+        **参数解释**： 可用区ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param available_zones: The available_zones of this ShowInstanceResponse.
         :type available_zones: list[str]
@@ -910,7 +945,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zone_names(self):
         r"""Gets the available_zone_names of this ShowInstanceResponse.
 
-        **参数解释**： 可用区名称列表。
+        **参数解释**： 可用区名称列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The available_zone_names of this ShowInstanceResponse.
         :rtype: list[str]
@@ -921,7 +956,7 @@ class ShowInstanceResponse(SdkResponse):
     def available_zone_names(self, available_zone_names):
         r"""Sets the available_zone_names of this ShowInstanceResponse.
 
-        **参数解释**： 可用区名称列表。
+        **参数解释**： 可用区名称列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param available_zone_names: The available_zone_names of this ShowInstanceResponse.
         :type available_zone_names: list[str]
@@ -932,7 +967,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_id(self):
         r"""Gets the user_id of this ShowInstanceResponse.
 
-        **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_id of this ShowInstanceResponse.
         :rtype: str
@@ -943,7 +978,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_id(self, user_id):
         r"""Sets the user_id of this ShowInstanceResponse.
 
-        **参数解释**： 用户ID。 **取值范围**： 不涉及。
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_id: The user_id of this ShowInstanceResponse.
         :type user_id: str
@@ -954,7 +989,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_name(self):
         r"""Gets the user_name of this ShowInstanceResponse.
 
-        **参数解释**： 用户名。 **取值范围**： 不涉及。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The user_name of this ShowInstanceResponse.
         :rtype: str
@@ -965,7 +1000,7 @@ class ShowInstanceResponse(SdkResponse):
     def user_name(self, user_name):
         r"""Sets the user_name of this ShowInstanceResponse.
 
-        **参数解释**： 用户名。 **取值范围**： 不涉及。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param user_name: The user_name of this ShowInstanceResponse.
         :type user_name: str
@@ -976,7 +1011,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self):
         r"""Gets the maintain_begin of this ShowInstanceResponse.
 
-        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The maintain_begin of this ShowInstanceResponse.
         :rtype: str
@@ -987,7 +1022,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self, maintain_begin):
         r"""Sets the maintain_begin of this ShowInstanceResponse.
 
-        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResponse.
         :type maintain_begin: str
@@ -998,7 +1033,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self):
         r"""Gets the maintain_end of this ShowInstanceResponse.
 
-        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The maintain_end of this ShowInstanceResponse.
         :rtype: str
@@ -1009,7 +1044,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self, maintain_end):
         r"""Sets the maintain_end of this ShowInstanceResponse.
 
-        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param maintain_end: The maintain_end of this ShowInstanceResponse.
         :type maintain_end: str
@@ -1020,7 +1055,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_log_collection(self):
         r"""Gets the enable_log_collection of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启消息收集功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The enable_log_collection of this ShowInstanceResponse.
         :rtype: bool
@@ -1031,7 +1066,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_log_collection(self, enable_log_collection):
         r"""Sets the enable_log_collection of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启消息收集功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param enable_log_collection: The enable_log_collection of this ShowInstanceResponse.
         :type enable_log_collection: bool
@@ -1042,7 +1077,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self):
         r"""Gets the storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 存储空间，单位：GB。 **取值范围**： 不涉及。
+        **参数解释**： 存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
 
         :return: The storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -1053,7 +1088,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 存储空间，单位：GB。 **取值范围**： 不涉及。
+        **参数解释**： 存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
 
         :param storage_space: The storage_space of this ShowInstanceResponse.
         :type storage_space: int
@@ -1064,7 +1099,7 @@ class ShowInstanceResponse(SdkResponse):
     def used_storage_space(self):
         r"""Gets the used_storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 已用消息存储空间，单位：GB。 **取值范围**： 不涉及。
+        **参数解释**： 已用消息存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
 
         :return: The used_storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -1075,7 +1110,7 @@ class ShowInstanceResponse(SdkResponse):
     def used_storage_space(self, used_storage_space):
         r"""Sets the used_storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 已用消息存储空间，单位：GB。 **取值范围**： 不涉及。
+        **参数解释**： 已用消息存储空间，单位：GB。 **约束限制**： 不涉及。 **取值范围**： 不同的实例规格支持不同的存储配置。 [- RocketMQ 5.x 单机存储取值范围：100-30000。](tag:dt) [- RocketMQ 5.x 集群存储取值范围：200-60000。](tag:dt) **默认取值**： 不涉及。
 
         :param used_storage_space: The used_storage_space of this ShowInstanceResponse.
         :type used_storage_space: int
@@ -1086,7 +1121,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_publicip(self):
         r"""Gets the enable_publicip of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启公网。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The enable_publicip of this ShowInstanceResponse.
         :rtype: bool
@@ -1097,7 +1132,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_publicip(self, enable_publicip):
         r"""Sets the enable_publicip of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启公网。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param enable_publicip: The enable_publicip of this ShowInstanceResponse.
         :type enable_publicip: bool
@@ -1108,7 +1143,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self):
         r"""Gets the publicip_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。
+        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The publicip_id of this ShowInstanceResponse.
         :rtype: str
@@ -1119,7 +1154,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self, publicip_id):
         r"""Sets the publicip_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。
+        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param publicip_id: The publicip_id of this ShowInstanceResponse.
         :type publicip_id: str
@@ -1130,7 +1165,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self):
         r"""Gets the publicip_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网IP地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The publicip_address of this ShowInstanceResponse.
         :rtype: str
@@ -1141,7 +1176,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self, publicip_address):
         r"""Sets the publicip_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网IP地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param publicip_address: The publicip_address of this ShowInstanceResponse.
         :type publicip_address: str
@@ -1152,7 +1187,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_enable(self):
         r"""Gets the ssl_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启SSL。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启SSL。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :return: The ssl_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1163,7 +1198,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_enable(self, ssl_enable):
         r"""Sets the ssl_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启SSL。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启SSL。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :param ssl_enable: The ssl_enable of this ShowInstanceResponse.
         :type ssl_enable: bool
@@ -1174,7 +1209,7 @@ class ShowInstanceResponse(SdkResponse):
     def cross_vpc_info(self):
         r"""Gets the cross_vpc_info of this ShowInstanceResponse.
 
-        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
+        **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :return: The cross_vpc_info of this ShowInstanceResponse.
         :rtype: str
@@ -1185,7 +1220,7 @@ class ShowInstanceResponse(SdkResponse):
     def cross_vpc_info(self, cross_vpc_info):
         r"""Sets the cross_vpc_info of this ShowInstanceResponse.
 
-        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
+        **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowInstanceResponse.
         :type cross_vpc_info: str
@@ -1196,7 +1231,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_resource_id(self):
         r"""Gets the storage_resource_id of this ShowInstanceResponse.
 
-        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
+        **参数解释**： 存储资源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The storage_resource_id of this ShowInstanceResponse.
         :rtype: str
@@ -1207,7 +1242,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_resource_id(self, storage_resource_id):
         r"""Sets the storage_resource_id of this ShowInstanceResponse.
 
-        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
+        **参数解释**： 存储资源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param storage_resource_id: The storage_resource_id of this ShowInstanceResponse.
         :type storage_resource_id: str
@@ -1218,7 +1253,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_spec_code(self):
         r"""Gets the storage_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 存储规格代码。 **取值范围**： 不涉及。
+        **参数解释**： 存储规格代码。 **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘 - dms.physical.storage.ultra.v2：超高IO类型磁盘 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) **默认取值**： 不涉及。
 
         :return: The storage_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -1229,7 +1264,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_spec_code(self, storage_spec_code):
         r"""Sets the storage_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 存储规格代码。 **取值范围**： 不涉及。
+        **参数解释**： 存储规格代码。 **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘 - dms.physical.storage.ultra.v2：超高IO类型磁盘 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,dt,ctc,ax) **默认取值**： 不涉及。
 
         :param storage_spec_code: The storage_spec_code of this ShowInstanceResponse.
         :type storage_spec_code: str
@@ -1240,7 +1275,7 @@ class ShowInstanceResponse(SdkResponse):
     def service_type(self):
         r"""Gets the service_type of this ShowInstanceResponse.
 
-        **参数解释**： 服务类型。 **取值范围**： 不涉及。
+        **参数解释**： 服务类型。 **约束限制**： 不涉及。 **取值范围**： - advanced：[华为云服务类型。](tag:hws,hws_hk)[服务类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dec：专属云服务类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :return: The service_type of this ShowInstanceResponse.
         :rtype: str
@@ -1251,7 +1286,7 @@ class ShowInstanceResponse(SdkResponse):
     def service_type(self, service_type):
         r"""Sets the service_type of this ShowInstanceResponse.
 
-        **参数解释**： 服务类型。 **取值范围**： 不涉及。
+        **参数解释**： 服务类型。 **约束限制**： 不涉及。 **取值范围**： - advanced：[华为云服务类型。](tag:hws,hws_hk)[服务类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dec：专属云服务类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :param service_type: The service_type of this ShowInstanceResponse.
         :type service_type: str
@@ -1262,7 +1297,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_type(self):
         r"""Gets the storage_type of this ShowInstanceResponse.
 
-        **参数解释**： 存储类型。 **取值范围**： 不涉及。
+        **参数解释**： 存储类型。 **约束限制**： 不涉及。 **取值范围**： - hec：[华为云存储类型。](tag:hws,hws_hk)[存储类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dss：专属云存储类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :return: The storage_type of this ShowInstanceResponse.
         :rtype: str
@@ -1273,7 +1308,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this ShowInstanceResponse.
 
-        **参数解释**： 存储类型。 **取值范围**： 不涉及。
+        **参数解释**： 存储类型。 **约束限制**： 不涉及。 **取值范围**： - hec：[华为云存储类型。](tag:hws,hws_hk)[存储类型。](tag:ctc,hws_eu,ocb,g42,hk_g42,tm,sbc,hk_sbc,cmcc,hk_tm,hcs,fcs,dt,srg,ax,srg,hcs_oemout) [- dss：专属云存储类型。](tag:hws,hws_hk) **默认取值**： 不涉及。
 
         :param storage_type: The storage_type of this ShowInstanceResponse.
         :type storage_type: str
@@ -1284,7 +1319,7 @@ class ShowInstanceResponse(SdkResponse):
     def extend_times(self):
         r"""Gets the extend_times of this ShowInstanceResponse.
 
-        **参数解释**： 扩展时间。 **取值范围**： 不涉及。
+        **参数解释**： 扩展时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The extend_times of this ShowInstanceResponse.
         :rtype: int
@@ -1295,7 +1330,7 @@ class ShowInstanceResponse(SdkResponse):
     def extend_times(self, extend_times):
         r"""Sets the extend_times of this ShowInstanceResponse.
 
-        **参数解释**： 扩展时间。 **取值范围**： 不涉及。
+        **参数解释**： 扩展时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param extend_times: The extend_times of this ShowInstanceResponse.
         :type extend_times: int
@@ -1306,7 +1341,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启IPv6。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :return: The ipv6_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1317,7 +1352,7 @@ class ShowInstanceResponse(SdkResponse):
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启IPv6。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :param ipv6_enable: The ipv6_enable of this ShowInstanceResponse.
         :type ipv6_enable: bool
@@ -1328,7 +1363,7 @@ class ShowInstanceResponse(SdkResponse):
     def support_features(self):
         r"""Gets the support_features of this ShowInstanceResponse.
 
-        **参数解释**： 实例支持的特性功能。 **取值范围**： 不涉及。
+        **参数解释**： 实例支持的特性功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :return: The support_features of this ShowInstanceResponse.
         :rtype: str
@@ -1339,7 +1374,7 @@ class ShowInstanceResponse(SdkResponse):
     def support_features(self, support_features):
         r"""Sets the support_features of this ShowInstanceResponse.
 
-        **参数解释**： 实例支持的特性功能。 **取值范围**： 不涉及。
+        **参数解释**： 实例支持的特性功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
 
         :param support_features: The support_features of this ShowInstanceResponse.
         :type support_features: str
@@ -1350,7 +1385,7 @@ class ShowInstanceResponse(SdkResponse):
     def disk_encrypted(self):
         r"""Gets the disk_encrypted of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The disk_encrypted of this ShowInstanceResponse.
         :rtype: bool
@@ -1361,7 +1396,7 @@ class ShowInstanceResponse(SdkResponse):
     def disk_encrypted(self, disk_encrypted):
         r"""Sets the disk_encrypted of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启。 - false：不开启。
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param disk_encrypted: The disk_encrypted of this ShowInstanceResponse.
         :type disk_encrypted: bool
@@ -1372,7 +1407,7 @@ class ShowInstanceResponse(SdkResponse):
     def ces_version(self):
         r"""Gets the ces_version of this ShowInstanceResponse.
 
-        **参数解释**： 云监控版本。 **取值范围**： 不涉及。
+        **参数解释**： 云监控版本。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The ces_version of this ShowInstanceResponse.
         :rtype: str
@@ -1383,7 +1418,7 @@ class ShowInstanceResponse(SdkResponse):
     def ces_version(self, ces_version):
         r"""Sets the ces_version of this ShowInstanceResponse.
 
-        **参数解释**： 云监控版本。 **取值范围**： 不涉及。
+        **参数解释**： 云监控版本。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param ces_version: The ces_version of this ShowInstanceResponse.
         :type ces_version: str
@@ -1394,7 +1429,7 @@ class ShowInstanceResponse(SdkResponse):
     def node_num(self):
         r"""Gets the node_num of this ShowInstanceResponse.
 
-        **参数解释**： 节点数。 **取值范围**： 不涉及。
+        **参数解释**： 节点数。（仅RocketMQ 4.8.0版本会显示此字段） **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The node_num of this ShowInstanceResponse.
         :rtype: int
@@ -1405,7 +1440,7 @@ class ShowInstanceResponse(SdkResponse):
     def node_num(self, node_num):
         r"""Sets the node_num of this ShowInstanceResponse.
 
-        **参数解释**： 节点数。 **取值范围**： 不涉及。
+        **参数解释**： 节点数。（仅RocketMQ 4.8.0版本会显示此字段） **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param node_num: The node_num of this ShowInstanceResponse.
         :type node_num: int
@@ -1416,7 +1451,7 @@ class ShowInstanceResponse(SdkResponse):
     def new_spec_billing_enable(self):
         r"""Gets the new_spec_billing_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否启用新规格计费。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The new_spec_billing_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1427,7 +1462,7 @@ class ShowInstanceResponse(SdkResponse):
     def new_spec_billing_enable(self, new_spec_billing_enable):
         r"""Sets the new_spec_billing_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否启用新规格计费。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param new_spec_billing_enable: The new_spec_billing_enable of this ShowInstanceResponse.
         :type new_spec_billing_enable: bool
@@ -1438,7 +1473,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_acl(self):
         r"""Gets the enable_acl of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启访问控制列表。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启访问控制列表。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The enable_acl of this ShowInstanceResponse.
         :rtype: bool
@@ -1449,7 +1484,7 @@ class ShowInstanceResponse(SdkResponse):
     def enable_acl(self, enable_acl):
         r"""Sets the enable_acl of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启访问控制列表。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 是否开启访问控制列表。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param enable_acl: The enable_acl of this ShowInstanceResponse.
         :type enable_acl: bool
@@ -1460,7 +1495,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self):
         r"""Gets the broker_num of this ShowInstanceResponse.
 
-        **参数解释**： Broker节点数（仅RocketMQ 4.8.0版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： Broker节点数。 **约束限制**： 不涉及。 **取值范围**：   不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_num of this ShowInstanceResponse.
         :rtype: int
@@ -1471,7 +1506,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_num(self, broker_num):
         r"""Sets the broker_num of this ShowInstanceResponse.
 
-        **参数解释**： Broker节点数（仅RocketMQ 4.8.0版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： Broker节点数。 **约束限制**： 不涉及。 **取值范围**：   不涉及。 **默认取值**： 不涉及。
 
         :param broker_num: The broker_num of this ShowInstanceResponse.
         :type broker_num: int
@@ -1482,7 +1517,7 @@ class ShowInstanceResponse(SdkResponse):
     def dns_enable(self):
         r"""Gets the dns_enable of this ShowInstanceResponse.
 
-        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 实例是否开启域名访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :return: The dns_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1493,7 +1528,7 @@ class ShowInstanceResponse(SdkResponse):
     def dns_enable(self, dns_enable):
         r"""Sets the dns_enable of this ShowInstanceResponse.
 
-        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启。 - false：未开启。
+        **参数解释**： 实例是否开启域名访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
 
         :param dns_enable: The dns_enable of this ShowInstanceResponse.
         :type dns_enable: bool
@@ -1504,7 +1539,7 @@ class ShowInstanceResponse(SdkResponse):
     def namesrv_address(self):
         r"""Gets the namesrv_address of this ShowInstanceResponse.
 
-        **参数解释**： 元数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The namesrv_address of this ShowInstanceResponse.
         :rtype: str
@@ -1515,7 +1550,7 @@ class ShowInstanceResponse(SdkResponse):
     def namesrv_address(self, namesrv_address):
         r"""Sets the namesrv_address of this ShowInstanceResponse.
 
-        **参数解释**： 元数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param namesrv_address: The namesrv_address of this ShowInstanceResponse.
         :type namesrv_address: str
@@ -1526,7 +1561,7 @@ class ShowInstanceResponse(SdkResponse):
     def namesrv_domain_name(self):
         r"""Gets the namesrv_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 元数据域名。 **取值范围**： 不涉及。
+        **参数解释**： 元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The namesrv_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1537,7 +1572,7 @@ class ShowInstanceResponse(SdkResponse):
     def namesrv_domain_name(self, namesrv_domain_name):
         r"""Sets the namesrv_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 元数据域名。 **取值范围**： 不涉及。
+        **参数解释**： 元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param namesrv_domain_name: The namesrv_domain_name of this ShowInstanceResponse.
         :type namesrv_domain_name: str
@@ -1548,7 +1583,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_address(self):
         r"""Gets the broker_address of this ShowInstanceResponse.
 
-        **参数解释**： 业务数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_address of this ShowInstanceResponse.
         :rtype: str
@@ -1559,7 +1594,7 @@ class ShowInstanceResponse(SdkResponse):
     def broker_address(self, broker_address):
         r"""Sets the broker_address of this ShowInstanceResponse.
 
-        **参数解释**： 业务数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_address: The broker_address of this ShowInstanceResponse.
         :type broker_address: str
@@ -1570,7 +1605,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_namesrv_address(self):
         r"""Gets the public_namesrv_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网元数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_namesrv_address of this ShowInstanceResponse.
         :rtype: str
@@ -1581,7 +1616,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_namesrv_address(self, public_namesrv_address):
         r"""Sets the public_namesrv_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网元数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_namesrv_address: The public_namesrv_address of this ShowInstanceResponse.
         :type public_namesrv_address: str
@@ -1592,7 +1627,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_namesrv_domain_name(self):
         r"""Gets the public_namesrv_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 公网元数据域名。 **取值范围**： 不涉及。
+        **参数解释**： 公网元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_namesrv_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1603,7 +1638,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_namesrv_domain_name(self, public_namesrv_domain_name):
         r"""Sets the public_namesrv_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 公网元数据域名。 **取值范围**： 不涉及。
+        **参数解释**： 公网元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_namesrv_domain_name: The public_namesrv_domain_name of this ShowInstanceResponse.
         :type public_namesrv_domain_name: str
@@ -1614,7 +1649,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_broker_address(self):
         r"""Gets the public_broker_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网业务数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_broker_address of this ShowInstanceResponse.
         :rtype: str
@@ -1625,7 +1660,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_broker_address(self, public_broker_address):
         r"""Sets the public_broker_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网业务数据地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_broker_address: The public_broker_address of this ShowInstanceResponse.
         :type public_broker_address: str
@@ -1636,7 +1671,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_address(self):
         r"""Gets the grpc_address of this ShowInstanceResponse.
 
-        **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The grpc_address of this ShowInstanceResponse.
         :rtype: str
@@ -1647,7 +1682,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_address(self, grpc_address):
         r"""Sets the grpc_address of this ShowInstanceResponse.
 
-        **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param grpc_address: The grpc_address of this ShowInstanceResponse.
         :type grpc_address: str
@@ -1658,7 +1693,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_domain_name(self):
         r"""Gets the grpc_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The grpc_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1669,7 +1704,7 @@ class ShowInstanceResponse(SdkResponse):
     def grpc_domain_name(self, grpc_domain_name):
         r"""Sets the grpc_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param grpc_domain_name: The grpc_domain_name of this ShowInstanceResponse.
         :type grpc_domain_name: str
@@ -1680,7 +1715,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_address(self):
         r"""Gets the public_grpc_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_grpc_address of this ShowInstanceResponse.
         :rtype: str
@@ -1691,7 +1726,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_address(self, public_grpc_address):
         r"""Sets the public_grpc_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_grpc_address: The public_grpc_address of this ShowInstanceResponse.
         :type public_grpc_address: str
@@ -1702,7 +1737,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_domain_name(self):
         r"""Gets the public_grpc_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The public_grpc_domain_name of this ShowInstanceResponse.
         :rtype: str
@@ -1713,7 +1748,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_grpc_domain_name(self, public_grpc_domain_name):
         r"""Sets the public_grpc_domain_name of this ShowInstanceResponse.
 
-        **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **取值范围**： 不涉及。
+        **参数解释**： 公网grpc连接域名（仅RocketMQ 5.x版本会显示此字段）。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param public_grpc_domain_name: The public_grpc_domain_name of this ShowInstanceResponse.
         :type public_grpc_domain_name: str
@@ -1724,7 +1759,7 @@ class ShowInstanceResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowInstanceResponse.
 
-        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The enterprise_project_id of this ShowInstanceResponse.
         :rtype: str
@@ -1735,7 +1770,7 @@ class ShowInstanceResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowInstanceResponse.
 
-        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
+        **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResponse.
         :type enterprise_project_id: str
@@ -1746,7 +1781,7 @@ class ShowInstanceResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowInstanceResponse.
 
-        **参数解释**： 标签列表。 **取值范围**： 不涉及。
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tags of this ShowInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
@@ -1757,7 +1792,7 @@ class ShowInstanceResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this ShowInstanceResponse.
 
-        **参数解释**： 标签列表。 **取值范围**： 不涉及。
+        **参数解释**： 标签列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tags: The tags of this ShowInstanceResponse.
         :type tags: list[:class:`huaweicloudsdkrocketmq.v2.TagEntity`]
@@ -1768,7 +1803,7 @@ class ShowInstanceResponse(SdkResponse):
     def total_storage_space(self):
         r"""Gets the total_storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 总存储空间。 **取值范围**： 不涉及。
+        **参数解释**： 总存储空间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total_storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -1779,7 +1814,7 @@ class ShowInstanceResponse(SdkResponse):
     def total_storage_space(self, total_storage_space):
         r"""Sets the total_storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 总存储空间。 **取值范围**： 不涉及。
+        **参数解释**： 总存储空间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total_storage_space: The total_storage_space of this ShowInstanceResponse.
         :type total_storage_space: int
@@ -1790,7 +1825,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格。 **取值范围**： 不涉及。
+        **参数解释**： 资源规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The resource_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -1801,7 +1836,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格。 **取值范围**： 不涉及。
+        **参数解释**： 资源规格。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResponse.
         :type resource_spec_code: str
@@ -1812,7 +1847,7 @@ class ShowInstanceResponse(SdkResponse):
     def produce_portion(self):
         r"""Gets the produce_portion of this ShowInstanceResponse.
 
-        **参数解释**： 生产TPS占比。 **取值范围**： 不涉及。
+        **参数解释**： 生产TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The produce_portion of this ShowInstanceResponse.
         :rtype: int
@@ -1823,7 +1858,7 @@ class ShowInstanceResponse(SdkResponse):
     def produce_portion(self, produce_portion):
         r"""Sets the produce_portion of this ShowInstanceResponse.
 
-        **参数解释**： 生产TPS占比。 **取值范围**： 不涉及。
+        **参数解释**： 生产TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param produce_portion: The produce_portion of this ShowInstanceResponse.
         :type produce_portion: int
@@ -1834,7 +1869,7 @@ class ShowInstanceResponse(SdkResponse):
     def consume_portion(self):
         r"""Gets the consume_portion of this ShowInstanceResponse.
 
-        **参数解释**： 消费TPS占比。 **取值范围**： 不涉及。
+        **参数解释**： 消费TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The consume_portion of this ShowInstanceResponse.
         :rtype: int
@@ -1845,7 +1880,7 @@ class ShowInstanceResponse(SdkResponse):
     def consume_portion(self, consume_portion):
         r"""Sets the consume_portion of this ShowInstanceResponse.
 
-        **参数解释**： 消费TPS占比。 **取值范围**： 不涉及。
+        **参数解释**： 消费TPS占比。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param consume_portion: The consume_portion of this ShowInstanceResponse.
         :type consume_portion: int
@@ -1856,7 +1891,7 @@ class ShowInstanceResponse(SdkResponse):
     def dr_enable(self):
         r"""Gets the dr_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否为容灾实例。 **取值范围**： 不涉及。
+        **参数解释**： 是否为容灾实例。 **约束限制**： 不涉及。 **取值范围**： - true：容灾实例。 - false：非容灾实例。 **默认取值**： 不涉及。
 
         :return: The dr_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1867,7 +1902,7 @@ class ShowInstanceResponse(SdkResponse):
     def dr_enable(self, dr_enable):
         r"""Sets the dr_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否为容灾实例。 **取值范围**： 不涉及。
+        **参数解释**： 是否为容灾实例。 **约束限制**： 不涉及。 **取值范围**： - true：容灾实例。 - false：非容灾实例。 **默认取值**： 不涉及。
 
         :param dr_enable: The dr_enable of this ShowInstanceResponse.
         :type dr_enable: bool
@@ -1875,10 +1910,54 @@ class ShowInstanceResponse(SdkResponse):
         self._dr_enable = dr_enable
 
     @property
+    def quota_address(self):
+        r"""Gets the quota_address of this ShowInstanceResponse.
+
+        **参数解释**： 流控地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The quota_address of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._quota_address
+
+    @quota_address.setter
+    def quota_address(self, quota_address):
+        r"""Sets the quota_address of this ShowInstanceResponse.
+
+        **参数解释**： 流控地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param quota_address: The quota_address of this ShowInstanceResponse.
+        :type quota_address: str
+        """
+        self._quota_address = quota_address
+
+    @property
+    def max_msg_process_tps(self):
+        r"""Gets the max_msg_process_tps of this ShowInstanceResponse.
+
+        **参数解释**： 最大消息TPS。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The max_msg_process_tps of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._max_msg_process_tps
+
+    @max_msg_process_tps.setter
+    def max_msg_process_tps(self, max_msg_process_tps):
+        r"""Sets the max_msg_process_tps of this ShowInstanceResponse.
+
+        **参数解释**： 最大消息TPS。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param max_msg_process_tps: The max_msg_process_tps of this ShowInstanceResponse.
+        :type max_msg_process_tps: int
+        """
+        self._max_msg_process_tps = max_msg_process_tps
+
+    @property
     def config_ssl_need_restart_process(self):
         r"""Gets the config_ssl_need_restart_process of this ShowInstanceResponse.
 
-        **参数解释**： 配置ssl是否需要重启。 **取值范围**： 不涉及。
+        **参数解释**： 配置ssl是否需要重启。 **约束限制**： 不涉及。 **取值范围**： - true：需要重启。 - false：不需要重启。 **默认取值**： 不涉及。
 
         :return: The config_ssl_need_restart_process of this ShowInstanceResponse.
         :rtype: bool
@@ -1889,7 +1968,7 @@ class ShowInstanceResponse(SdkResponse):
     def config_ssl_need_restart_process(self, config_ssl_need_restart_process):
         r"""Sets the config_ssl_need_restart_process of this ShowInstanceResponse.
 
-        **参数解释**： 配置ssl是否需要重启。 **取值范围**： 不涉及。
+        **参数解释**： 配置ssl是否需要重启。 **约束限制**： 不涉及。 **取值范围**： - true：需要重启。 - false：不需要重启。 **默认取值**： 不涉及。
 
         :param config_ssl_need_restart_process: The config_ssl_need_restart_process of this ShowInstanceResponse.
         :type config_ssl_need_restart_process: bool
@@ -1900,7 +1979,7 @@ class ShowInstanceResponse(SdkResponse):
     def tls_mode(self):
         r"""Gets the tls_mode of this ShowInstanceResponse.
 
-        **参数解释**： 实例使用的安全协议。 **取值范围**： 不涉及。
+        **参数解释**： 实例使用的安全协议。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tls_mode of this ShowInstanceResponse.
         :rtype: str
@@ -1911,12 +1990,78 @@ class ShowInstanceResponse(SdkResponse):
     def tls_mode(self, tls_mode):
         r"""Sets the tls_mode of this ShowInstanceResponse.
 
-        **参数解释**： 实例使用的安全协议。 **取值范围**： 不涉及。
+        **参数解释**： 实例使用的安全协议。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tls_mode: The tls_mode of this ShowInstanceResponse.
         :type tls_mode: str
         """
         self._tls_mode = tls_mode
+
+    @property
+    def arch_type(self):
+        r"""Gets the arch_type of this ShowInstanceResponse.
+
+        **参数解释**： 架构类型。 **约束限制**： 不涉及。 **取值范围**： - X86。 - ARM。 **默认取值**： 不涉及。
+
+        :return: The arch_type of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._arch_type
+
+    @arch_type.setter
+    def arch_type(self, arch_type):
+        r"""Sets the arch_type of this ShowInstanceResponse.
+
+        **参数解释**： 架构类型。 **约束限制**： 不涉及。 **取值范围**： - X86。 - ARM。 **默认取值**： 不涉及。
+
+        :param arch_type: The arch_type of this ShowInstanceResponse.
+        :type arch_type: str
+        """
+        self._arch_type = arch_type
+
+    @property
+    def enable_elastic_tps(self):
+        r"""Gets the enable_elastic_tps of this ShowInstanceResponse.
+
+        **参数解释**： 弹性TPS开关状态。 **约束限制**： 不涉及。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+
+        :return: The enable_elastic_tps of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._enable_elastic_tps
+
+    @enable_elastic_tps.setter
+    def enable_elastic_tps(self, enable_elastic_tps):
+        r"""Sets the enable_elastic_tps of this ShowInstanceResponse.
+
+        **参数解释**： 弹性TPS开关状态。 **约束限制**： 不涉及。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+
+        :param enable_elastic_tps: The enable_elastic_tps of this ShowInstanceResponse.
+        :type enable_elastic_tps: bool
+        """
+        self._enable_elastic_tps = enable_elastic_tps
+
+    @property
+    def auto_volume_expand_enable(self):
+        r"""Gets the auto_volume_expand_enable of this ShowInstanceResponse.
+
+        **参数解释**： 是否开启自动磁盘扩容。 **约束限制**： 不涉及。 **取值范围**： - true：开启自动磁盘扩容。 - false：不开启自动磁盘扩容。     **默认取值**： 不涉及。
+
+        :return: The auto_volume_expand_enable of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._auto_volume_expand_enable
+
+    @auto_volume_expand_enable.setter
+    def auto_volume_expand_enable(self, auto_volume_expand_enable):
+        r"""Sets the auto_volume_expand_enable of this ShowInstanceResponse.
+
+        **参数解释**： 是否开启自动磁盘扩容。 **约束限制**： 不涉及。 **取值范围**： - true：开启自动磁盘扩容。 - false：不开启自动磁盘扩容。     **默认取值**： 不涉及。
+
+        :param auto_volume_expand_enable: The auto_volume_expand_enable of this ShowInstanceResponse.
+        :type auto_volume_expand_enable: bool
+        """
+        self._auto_volume_expand_enable = auto_volume_expand_enable
 
     def to_dict(self):
         import warnings

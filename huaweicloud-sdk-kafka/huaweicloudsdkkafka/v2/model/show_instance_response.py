@@ -74,7 +74,8 @@ class ShowInstanceResponse(SdkResponse):
         'public_bandwidth': 'int',
         'enable_log_collection': 'bool',
         'new_auth_cert': 'bool',
-        'cross_vpc_info': 'str',
+        'cross_vpc_info': 'object',
+        'public_cross_vpc_info': 'object',
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
         'connector_enable': 'bool',
@@ -164,6 +165,7 @@ class ShowInstanceResponse(SdkResponse):
         'enable_log_collection': 'enable_log_collection',
         'new_auth_cert': 'new_auth_cert',
         'cross_vpc_info': 'cross_vpc_info',
+        'public_cross_vpc_info': 'public_cross_vpc_info',
         'ipv6_enable': 'ipv6_enable',
         'ipv6_connect_addresses': 'ipv6_connect_addresses',
         'connector_enable': 'connector_enable',
@@ -193,7 +195,7 @@ class ShowInstanceResponse(SdkResponse):
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, dns_enable=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, public_connect_domain_name=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, kafka_private_connect_domain_name=None, ces_version=None, public_access_enabled=None, node_num=None, port_protocols=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, dns_enable=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, subnet_name=None, subnet_cidr=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, broker_ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, ssl_two_way_enable=None, cert_replaced=None, public_management_connect_address=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, public_connect_address=None, public_connect_domain_name=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, enable_log_collection=None, new_auth_cert=None, cross_vpc_info=None, public_cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_node_num=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, kafka_private_connect_address=None, kafka_private_connect_domain_name=None, ces_version=None, public_access_enabled=None, node_num=None, port_protocols=None, enable_acl=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -202,13 +204,13 @@ class ShowInstanceResponse(SdkResponse):
         :type name: str
         :param engine: **参数解释**： 引擎。 **取值范围**： kafka
         :type engine: str
-        :param engine_version: **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
+        :param engine_version: **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,hk_sbc,cmcc,ax,srg) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,cmcc,ocb,hws_ocb) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hk_sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax,cmcc,srg)
         :type engine_version: str
         :param description: **参数解释**： 实例描述。 **取值范围**： 不涉及。
         :type description: str
         :param specification: **参数解释**： 实例规格。 **取值范围**： 不涉及。
         :type specification: str
-        :param storage_space: **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        :param storage_space: **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,cmcc,sbc,hk_sbc,srg) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
         :type storage_space: int
         :param partition_num: **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
         :type partition_num: str
@@ -226,7 +228,7 @@ class ShowInstanceResponse(SdkResponse):
         :type instance_id: str
         :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
         :type resource_spec_code: str
-        :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc)
         :type charging_mode: int
         :param vpc_id: **参数解释**： VPC ID。 **取值范围**： 不涉及。
         :type vpc_id: str
@@ -258,15 +260,15 @@ class ShowInstanceResponse(SdkResponse):
         :type ssl_enable: bool
         :param broker_ssl_enable: **参数解释**： 是否开启broker间副本加密传输。 **取值范围**： - true：开启 - false：未开启
         :type broker_ssl_enable: bool
-        :param kafka_security_protocol: **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        :param kafka_security_protocol: **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 [- SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
         :type kafka_security_protocol: str
         :param sasl_enabled_mechanisms: **参数解释**： 开启SASL后使用的认证机制。
         :type sasl_enabled_mechanisms: list[str]
-        :param ssl_two_way_enable: **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
+        :param ssl_two_way_enable: **参数解释**： 是否开启双向认证。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
         :type ssl_two_way_enable: bool
-        :param cert_replaced: **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
+        :param cert_replaced: **参数解释**： 是否开启证书替换。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
         :type cert_replaced: bool
-        :param public_management_connect_address: **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
+        :param public_management_connect_address: **参数解释**： 公网访问Kafka Manager连接地址。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： 不涉及。
         :type public_management_connect_address: str
         :param enterprise_project_id: **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
         :type enterprise_project_id: str
@@ -300,9 +302,9 @@ class ShowInstanceResponse(SdkResponse):
         :type storage_resource_id: str
         :param storage_spec_code: **参数解释**： IO规格。 **取值范围**： 不涉及。
         :type storage_spec_code: str
-        :param service_type: **参数解释**： 服务类型。 **取值范围**： advanced。
+        :param service_type: **参数解释**： 服务类型。 **取值范围**： advanced：服务类型。
         :type service_type: str
-        :param storage_type: **参数解释**： 存储类型。 **取值范围**： hec
+        :param storage_type: **参数解释**： 存储类型。 **取值范围**： hec：存储类型。
         :type storage_type: str
         :param retention_policy: **参数解释**： 消息老化策略。 **取值范围**： - time_base：表示自动删除最老消息。 - produce_reject：表示拒绝消息写入。
         :type retention_policy: str
@@ -315,7 +317,9 @@ class ShowInstanceResponse(SdkResponse):
         :param new_auth_cert: **参数解释**： 是否开启新证书。 **取值范围**： - true：开启 - false：不开启
         :type new_auth_cert: bool
         :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
-        :type cross_vpc_info: str
+        :type cross_vpc_info: object
+        :param public_cross_vpc_info: **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
+        :type public_cross_vpc_info: object
         :param ipv6_enable: **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启 - false：不开启
         :type ipv6_enable: bool
         :param ipv6_connect_addresses: **参数解释**： IPv6的连接地址。
@@ -356,7 +360,7 @@ class ShowInstanceResponse(SdkResponse):
         :type ces_version: str
         :param public_access_enabled: **参数解释**： 区分实例什么时候开启的公网访问 **取值范围**： - true：已开启公网访问 - actived：已开启公网访问 - closed：已关闭公网访问 - false：已关闭公网访问
         :type public_access_enabled: str
-        :param node_num: **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
+        :param node_num: **参数解释**： 节点数。 **取值范围**： [- 1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
         :type node_num: int
         :param port_protocols: 
         :type port_protocols: :class:`huaweicloudsdkkafka.v2.PortProtocolsEntity`
@@ -433,6 +437,7 @@ class ShowInstanceResponse(SdkResponse):
         self._enable_log_collection = None
         self._new_auth_cert = None
         self._cross_vpc_info = None
+        self._public_cross_vpc_info = None
         self._ipv6_enable = None
         self._ipv6_connect_addresses = None
         self._connector_enable = None
@@ -580,6 +585,8 @@ class ShowInstanceResponse(SdkResponse):
             self.new_auth_cert = new_auth_cert
         if cross_vpc_info is not None:
             self.cross_vpc_info = cross_vpc_info
+        if public_cross_vpc_info is not None:
+            self.public_cross_vpc_info = public_cross_vpc_info
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
         if ipv6_connect_addresses is not None:
@@ -683,7 +690,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self):
         r"""Gets the engine_version of this ShowInstanceResponse.
 
-        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
+        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,hk_sbc,cmcc,ax,srg) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,cmcc,ocb,hws_ocb) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hk_sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax,cmcc,srg)
 
         :return: The engine_version of this ShowInstanceResponse.
         :rtype: str
@@ -694,7 +701,7 @@ class ShowInstanceResponse(SdkResponse):
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this ShowInstanceResponse.
 
-        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
+        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,hk_sbc,cmcc,ax,srg) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,cmcc,ocb,hws_ocb) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hk_sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax,cmcc,srg)
 
         :param engine_version: The engine_version of this ShowInstanceResponse.
         :type engine_version: str
@@ -749,7 +756,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self):
         r"""Gets the storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,cmcc,sbc,hk_sbc,srg) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :return: The storage_space of this ShowInstanceResponse.
         :rtype: int
@@ -760,7 +767,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this ShowInstanceResponse.
 
-        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,cmcc,sbc,hk_sbc,srg) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :param storage_space: The storage_space of this ShowInstanceResponse.
         :type storage_space: int
@@ -947,7 +954,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self):
         r"""Gets the charging_mode of this ShowInstanceResponse.
 
-        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc)
 
         :return: The charging_mode of this ShowInstanceResponse.
         :rtype: int
@@ -958,7 +965,7 @@ class ShowInstanceResponse(SdkResponse):
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ShowInstanceResponse.
 
-        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc)
 
         :param charging_mode: The charging_mode of this ShowInstanceResponse.
         :type charging_mode: int
@@ -1299,7 +1306,7 @@ class ShowInstanceResponse(SdkResponse):
     def kafka_security_protocol(self):
         r"""Gets the kafka_security_protocol of this ShowInstanceResponse.
 
-        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 [- SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
 
         :return: The kafka_security_protocol of this ShowInstanceResponse.
         :rtype: str
@@ -1310,7 +1317,7 @@ class ShowInstanceResponse(SdkResponse):
     def kafka_security_protocol(self, kafka_security_protocol):
         r"""Sets the kafka_security_protocol of this ShowInstanceResponse.
 
-        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 [- SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
 
         :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResponse.
         :type kafka_security_protocol: str
@@ -1343,7 +1350,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_two_way_enable(self):
         r"""Gets the ssl_two_way_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： 是否开启双向认证。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
 
         :return: The ssl_two_way_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1354,7 +1361,7 @@ class ShowInstanceResponse(SdkResponse):
     def ssl_two_way_enable(self, ssl_two_way_enable):
         r"""Sets the ssl_two_way_enable of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： 是否开启双向认证。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
 
         :param ssl_two_way_enable: The ssl_two_way_enable of this ShowInstanceResponse.
         :type ssl_two_way_enable: bool
@@ -1365,7 +1372,7 @@ class ShowInstanceResponse(SdkResponse):
     def cert_replaced(self):
         r"""Gets the cert_replaced of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： 是否开启证书替换。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
 
         :return: The cert_replaced of this ShowInstanceResponse.
         :rtype: bool
@@ -1376,7 +1383,7 @@ class ShowInstanceResponse(SdkResponse):
     def cert_replaced(self, cert_replaced):
         r"""Sets the cert_replaced of this ShowInstanceResponse.
 
-        **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： 是否开启证书替换。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： - true：开启 - false：未开启
 
         :param cert_replaced: The cert_replaced of this ShowInstanceResponse.
         :type cert_replaced: bool
@@ -1387,7 +1394,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_address(self):
         r"""Gets the public_management_connect_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网访问Kafka Manager连接地址。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： 不涉及。
 
         :return: The public_management_connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -1398,7 +1405,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_management_connect_address(self, public_management_connect_address):
         r"""Sets the public_management_connect_address of this ShowInstanceResponse.
 
-        **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
+        **参数解释**： 公网访问Kafka Manager连接地址。[华为云Stack不支持此参数。](tag:hcs) **取值范围**： 不涉及。
 
         :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResponse.
         :type public_management_connect_address: str
@@ -1761,7 +1768,7 @@ class ShowInstanceResponse(SdkResponse):
     def service_type(self):
         r"""Gets the service_type of this ShowInstanceResponse.
 
-        **参数解释**： 服务类型。 **取值范围**： advanced。
+        **参数解释**： 服务类型。 **取值范围**： advanced：服务类型。
 
         :return: The service_type of this ShowInstanceResponse.
         :rtype: str
@@ -1772,7 +1779,7 @@ class ShowInstanceResponse(SdkResponse):
     def service_type(self, service_type):
         r"""Sets the service_type of this ShowInstanceResponse.
 
-        **参数解释**： 服务类型。 **取值范围**： advanced。
+        **参数解释**： 服务类型。 **取值范围**： advanced：服务类型。
 
         :param service_type: The service_type of this ShowInstanceResponse.
         :type service_type: str
@@ -1783,7 +1790,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_type(self):
         r"""Gets the storage_type of this ShowInstanceResponse.
 
-        **参数解释**： 存储类型。 **取值范围**： hec
+        **参数解释**： 存储类型。 **取值范围**： hec：存储类型。
 
         :return: The storage_type of this ShowInstanceResponse.
         :rtype: str
@@ -1794,7 +1801,7 @@ class ShowInstanceResponse(SdkResponse):
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this ShowInstanceResponse.
 
-        **参数解释**： 存储类型。 **取值范围**： hec
+        **参数解释**： 存储类型。 **取值范围**： hec：存储类型。
 
         :param storage_type: The storage_type of this ShowInstanceResponse.
         :type storage_type: str
@@ -1918,7 +1925,7 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :return: The cross_vpc_info of this ShowInstanceResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._cross_vpc_info
 
@@ -1929,9 +1936,31 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowInstanceResponse.
-        :type cross_vpc_info: str
+        :type cross_vpc_info: object
         """
         self._cross_vpc_info = cross_vpc_info
+
+    @property
+    def public_cross_vpc_info(self):
+        r"""Gets the public_cross_vpc_info of this ShowInstanceResponse.
+
+        **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
+
+        :return: The public_cross_vpc_info of this ShowInstanceResponse.
+        :rtype: object
+        """
+        return self._public_cross_vpc_info
+
+    @public_cross_vpc_info.setter
+    def public_cross_vpc_info(self, public_cross_vpc_info):
+        r"""Sets the public_cross_vpc_info of this ShowInstanceResponse.
+
+        **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
+
+        :param public_cross_vpc_info: The public_cross_vpc_info of this ShowInstanceResponse.
+        :type public_cross_vpc_info: object
+        """
+        self._public_cross_vpc_info = public_cross_vpc_info
 
     @property
     def ipv6_enable(self):
@@ -2377,7 +2406,7 @@ class ShowInstanceResponse(SdkResponse):
     def node_num(self):
         r"""Gets the node_num of this ShowInstanceResponse.
 
-        **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
+        **参数解释**： 节点数。 **取值范围**： [- 1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
 
         :return: The node_num of this ShowInstanceResponse.
         :rtype: int
@@ -2388,7 +2417,7 @@ class ShowInstanceResponse(SdkResponse):
     def node_num(self, node_num):
         r"""Sets the node_num of this ShowInstanceResponse.
 
-        **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
+        **参数解释**： 节点数。 **取值范围**： [- 1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
 
         :param node_num: The node_num of this ShowInstanceResponse.
         :type node_num: int

@@ -33,7 +33,7 @@ class DeleteQueueInfoRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param vhost: Vhost名称
+        :param vhost: vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
         :type vhost: str
         :param queue: Queue名称
         :type queue: str
@@ -76,7 +76,7 @@ class DeleteQueueInfoRequest:
     def vhost(self):
         r"""Gets the vhost of this DeleteQueueInfoRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :return: The vhost of this DeleteQueueInfoRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class DeleteQueueInfoRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this DeleteQueueInfoRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :param vhost: The vhost of this DeleteQueueInfoRequest.
         :type vhost: str

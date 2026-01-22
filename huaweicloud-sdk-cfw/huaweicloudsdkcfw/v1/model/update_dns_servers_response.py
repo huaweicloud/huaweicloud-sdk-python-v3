@@ -28,7 +28,7 @@ class UpdateDnsServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 域名服务器列表
+        :param data: **参数解释**： 域名服务器列表 **取值范围**： 不涉及
         :type data: list[str]
         """
         
@@ -44,7 +44,7 @@ class UpdateDnsServersResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this UpdateDnsServersResponse.
 
-        域名服务器列表
+        **参数解释**： 域名服务器列表 **取值范围**： 不涉及
 
         :return: The data of this UpdateDnsServersResponse.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class UpdateDnsServersResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this UpdateDnsServersResponse.
 
-        域名服务器列表
+        **参数解释**： 域名服务器列表 **取值范围**： 不涉及
 
         :param data: The data of this UpdateDnsServersResponse.
         :type data: list[str]

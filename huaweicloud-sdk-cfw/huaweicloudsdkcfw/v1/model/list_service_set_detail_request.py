@@ -37,7 +37,7 @@ class ListServiceSetDetailRequest:
         :type set_id: str
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param query_service_set_type: 查询服务组类型，0表示自定义服务组，1表示预定义服务组
         :type query_service_set_type: int
@@ -107,7 +107,7 @@ class ListServiceSetDetailRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListServiceSetDetailRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListServiceSetDetailRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListServiceSetDetailRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListServiceSetDetailRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListServiceSetDetailRequest.
         :type fw_instance_id: str

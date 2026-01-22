@@ -804,6 +804,8 @@ class SwrClient(Client):
         query_params = []
         if 'projectname' in local_var_params:
             query_params.append(('projectname', local_var_params['projectname']))
+        if 'duration_seconds' in local_var_params:
+            query_params.append(('duration_seconds', local_var_params['duration_seconds']))
 
         header_params = {}
 
@@ -1752,6 +1754,152 @@ class SwrClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_references(self, request):
+        r"""获取签名镜像关联的被签名镜像版本列表
+
+        获取签名镜像关联的被签名镜像版本列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListReferences
+        :type request: :class:`huaweicloudsdkswr.v2.ListReferencesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListReferencesResponse`
+        """
+        http_info = self._list_references_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_references_invoker(self, request):
+        http_info = self._list_references_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_references_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/{tag}/references",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReferencesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+        if 'tag' in local_var_params:
+            path_params['tag'] = local_var_params['tag']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_repo_accessories(self, request):
+        r"""查询镜像的附件列表
+
+        获取共享仓的镜像的附件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRepoAccessories
+        :type request: :class:`huaweicloudsdkswr.v2.ListRepoAccessoriesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListRepoAccessoriesResponse`
+        """
+        http_info = self._list_repo_accessories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repo_accessories_invoker(self, request):
+        http_info = self._list_repo_accessories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_repo_accessories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/{tag}/accessories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepoAccessoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+        if 'tag' in local_var_params:
+            path_params['tag'] = local_var_params['tag']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -7201,6 +7349,8 @@ class SwrClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'self_only' in local_var_params:
+            query_params.append(('self_only', local_var_params['self_only']))
 
         header_params = {}
 

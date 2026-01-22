@@ -53,33 +53,33 @@ class RuleAddressDtoForResponse:
 
         The model defined in huaweicloud sdk
 
-        :param type: 地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
+        :param type: **参数解释**： 地址输入类型，用于区分不同的输入类型 **约束限制**： 不涉及 **取值范围**： 0手动输入，1关联IP地址组，2域名，3地理位置，4域名组-应用型，5多对象，6域名组-网络型，7域名-应用型。 **默认取值**： 不涉及
         :type type: int
-        :param address_type: 地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
+        :param address_type: **参数解释**： IP地址互联网协议类型，用于区分不同互联网协议 **约束限制**： 不涉及 **取值范围**： 地址类型0 IPv4，1 IPv6。 **默认取值**： 不涉及
         :type address_type: int
-        :param address: IP地址信息
+        :param address: **参数解释**： IP地址信息，用于明确规则IP地址 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type address: str
-        :param address_set_id: 关联IP地址组ID
+        :param address_set_id: **参数解释**： 关联IP地址组ID，用于明确规则IP地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type address_set_id: str
-        :param address_set_name: 地址组名称
+        :param address_set_name: **参数解释**： 关联IP地址组名称，用于明确规则IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type address_set_name: str
-        :param domain_address_name: 域名地址名称
+        :param domain_address_name: **参数解释**： 域名名称或引用域名组名称，用于明确规则引用域名或域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_address_name: str
-        :param region_list_json: 规则地域列表json值
+        :param region_list_json: **参数解释**： 规则地域列表json值，用于明确规则引用地域名称列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type region_list_json: str
-        :param region_list: 规则地域列表
+        :param region_list: **参数解释**： 规则地域列表传输值 **约束限制**： 不涉及
         :type region_list: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
-        :param domain_set_id: 域名组id
+        :param domain_set_id: **参数解释**： 域名组id，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_set_id: str
-        :param domain_set_name: 域名组名称
+        :param domain_set_name: **参数解释**： 域名组名称，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_set_name: str
-        :param ip_address: IP地址列表
+        :param ip_address: **参数解释**： IP地址列表，用于明确规则引用IP地址列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type ip_address: list[str]
-        :param address_group: 地址组id列表
+        :param address_group: **参数解释**： 地址组id列表，用于明确规则引用地址组id列表。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为0自定义地址组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type address_group: list[str]
-        :param address_group_names: 地址组名称列表
+        :param address_group_names: **参数解释**： 地址组名称列表 **约束限制**： 不涉及
         :type address_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
-        :param address_set_type: 地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        :param address_set_type: **参数解释**： 地址组类型，用于明确规则引用地址组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义地址组，1表示WAF回源IP地址组，3表示NAT64转换地址组 **默认取值**： 不涉及
         :type address_set_type: int
         """
         
@@ -133,7 +133,7 @@ class RuleAddressDtoForResponse:
     def type(self):
         r"""Gets the type of this RuleAddressDtoForResponse.
 
-        地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
+        **参数解释**： 地址输入类型，用于区分不同的输入类型 **约束限制**： 不涉及 **取值范围**： 0手动输入，1关联IP地址组，2域名，3地理位置，4域名组-应用型，5多对象，6域名组-网络型，7域名-应用型。 **默认取值**： 不涉及
 
         :return: The type of this RuleAddressDtoForResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class RuleAddressDtoForResponse:
     def type(self, type):
         r"""Sets the type of this RuleAddressDtoForResponse.
 
-        地址类型0手工输入，1关联IP地址组，2域名，3地理位置，4域名组，5多对象，6域名组-DNS解析，7域名组-应用型。
+        **参数解释**： 地址输入类型，用于区分不同的输入类型 **约束限制**： 不涉及 **取值范围**： 0手动输入，1关联IP地址组，2域名，3地理位置，4域名组-应用型，5多对象，6域名组-网络型，7域名-应用型。 **默认取值**： 不涉及
 
         :param type: The type of this RuleAddressDtoForResponse.
         :type type: int
@@ -155,7 +155,7 @@ class RuleAddressDtoForResponse:
     def address_type(self):
         r"""Gets the address_type of this RuleAddressDtoForResponse.
 
-        地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
+        **参数解释**： IP地址互联网协议类型，用于区分不同互联网协议 **约束限制**： 不涉及 **取值范围**： 地址类型0 IPv4，1 IPv6。 **默认取值**： 不涉及
 
         :return: The address_type of this RuleAddressDtoForResponse.
         :rtype: int
@@ -166,7 +166,7 @@ class RuleAddressDtoForResponse:
     def address_type(self, address_type):
         r"""Sets the address_type of this RuleAddressDtoForResponse.
 
-        地址类型0 ipv4，1 ipv6，当type为0手动输入类型时不能为空
+        **参数解释**： IP地址互联网协议类型，用于区分不同互联网协议 **约束限制**： 不涉及 **取值范围**： 地址类型0 IPv4，1 IPv6。 **默认取值**： 不涉及
 
         :param address_type: The address_type of this RuleAddressDtoForResponse.
         :type address_type: int
@@ -177,7 +177,7 @@ class RuleAddressDtoForResponse:
     def address(self):
         r"""Gets the address of this RuleAddressDtoForResponse.
 
-        IP地址信息
+        **参数解释**： IP地址信息，用于明确规则IP地址 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The address of this RuleAddressDtoForResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class RuleAddressDtoForResponse:
     def address(self, address):
         r"""Sets the address of this RuleAddressDtoForResponse.
 
-        IP地址信息
+        **参数解释**： IP地址信息，用于明确规则IP地址 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param address: The address of this RuleAddressDtoForResponse.
         :type address: str
@@ -199,7 +199,7 @@ class RuleAddressDtoForResponse:
     def address_set_id(self):
         r"""Gets the address_set_id of this RuleAddressDtoForResponse.
 
-        关联IP地址组ID
+        **参数解释**： 关联IP地址组ID，用于明确规则IP地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The address_set_id of this RuleAddressDtoForResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class RuleAddressDtoForResponse:
     def address_set_id(self, address_set_id):
         r"""Sets the address_set_id of this RuleAddressDtoForResponse.
 
-        关联IP地址组ID
+        **参数解释**： 关联IP地址组ID，用于明确规则IP地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param address_set_id: The address_set_id of this RuleAddressDtoForResponse.
         :type address_set_id: str
@@ -221,7 +221,7 @@ class RuleAddressDtoForResponse:
     def address_set_name(self):
         r"""Gets the address_set_name of this RuleAddressDtoForResponse.
 
-        地址组名称
+        **参数解释**： 关联IP地址组名称，用于明确规则IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The address_set_name of this RuleAddressDtoForResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class RuleAddressDtoForResponse:
     def address_set_name(self, address_set_name):
         r"""Sets the address_set_name of this RuleAddressDtoForResponse.
 
-        地址组名称
+        **参数解释**： 关联IP地址组名称，用于明确规则IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param address_set_name: The address_set_name of this RuleAddressDtoForResponse.
         :type address_set_name: str
@@ -243,7 +243,7 @@ class RuleAddressDtoForResponse:
     def domain_address_name(self):
         r"""Gets the domain_address_name of this RuleAddressDtoForResponse.
 
-        域名地址名称
+        **参数解释**： 域名名称或引用域名组名称，用于明确规则引用域名或域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The domain_address_name of this RuleAddressDtoForResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class RuleAddressDtoForResponse:
     def domain_address_name(self, domain_address_name):
         r"""Sets the domain_address_name of this RuleAddressDtoForResponse.
 
-        域名地址名称
+        **参数解释**： 域名名称或引用域名组名称，用于明确规则引用域名或域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param domain_address_name: The domain_address_name of this RuleAddressDtoForResponse.
         :type domain_address_name: str
@@ -265,7 +265,7 @@ class RuleAddressDtoForResponse:
     def region_list_json(self):
         r"""Gets the region_list_json of this RuleAddressDtoForResponse.
 
-        规则地域列表json值
+        **参数解释**： 规则地域列表json值，用于明确规则引用地域名称列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The region_list_json of this RuleAddressDtoForResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class RuleAddressDtoForResponse:
     def region_list_json(self, region_list_json):
         r"""Sets the region_list_json of this RuleAddressDtoForResponse.
 
-        规则地域列表json值
+        **参数解释**： 规则地域列表json值，用于明确规则引用地域名称列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param region_list_json: The region_list_json of this RuleAddressDtoForResponse.
         :type region_list_json: str
@@ -287,7 +287,7 @@ class RuleAddressDtoForResponse:
     def region_list(self):
         r"""Gets the region_list of this RuleAddressDtoForResponse.
 
-        规则地域列表
+        **参数解释**： 规则地域列表传输值 **约束限制**： 不涉及
 
         :return: The region_list of this RuleAddressDtoForResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
@@ -298,7 +298,7 @@ class RuleAddressDtoForResponse:
     def region_list(self, region_list):
         r"""Sets the region_list of this RuleAddressDtoForResponse.
 
-        规则地域列表
+        **参数解释**： 规则地域列表传输值 **约束限制**： 不涉及
 
         :param region_list: The region_list of this RuleAddressDtoForResponse.
         :type region_list: list[:class:`huaweicloudsdkcfw.v1.IpRegionDto`]
@@ -309,7 +309,7 @@ class RuleAddressDtoForResponse:
     def domain_set_id(self):
         r"""Gets the domain_set_id of this RuleAddressDtoForResponse.
 
-        域名组id
+        **参数解释**： 域名组id，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The domain_set_id of this RuleAddressDtoForResponse.
         :rtype: str
@@ -320,7 +320,7 @@ class RuleAddressDtoForResponse:
     def domain_set_id(self, domain_set_id):
         r"""Sets the domain_set_id of this RuleAddressDtoForResponse.
 
-        域名组id
+        **参数解释**： 域名组id，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param domain_set_id: The domain_set_id of this RuleAddressDtoForResponse.
         :type domain_set_id: str
@@ -331,7 +331,7 @@ class RuleAddressDtoForResponse:
     def domain_set_name(self):
         r"""Gets the domain_set_name of this RuleAddressDtoForResponse.
 
-        域名组名称
+        **参数解释**： 域名组名称，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The domain_set_name of this RuleAddressDtoForResponse.
         :rtype: str
@@ -342,7 +342,7 @@ class RuleAddressDtoForResponse:
     def domain_set_name(self, domain_set_name):
         r"""Sets the domain_set_name of this RuleAddressDtoForResponse.
 
-        域名组名称
+        **参数解释**： 域名组名称，用于明确规则引用域名组。可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param domain_set_name: The domain_set_name of this RuleAddressDtoForResponse.
         :type domain_set_name: str
@@ -353,7 +353,7 @@ class RuleAddressDtoForResponse:
     def ip_address(self):
         r"""Gets the ip_address of this RuleAddressDtoForResponse.
 
-        IP地址列表
+        **参数解释**： IP地址列表，用于明确规则引用IP地址列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The ip_address of this RuleAddressDtoForResponse.
         :rtype: list[str]
@@ -364,7 +364,7 @@ class RuleAddressDtoForResponse:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this RuleAddressDtoForResponse.
 
-        IP地址列表
+        **参数解释**： IP地址列表，用于明确规则引用IP地址列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param ip_address: The ip_address of this RuleAddressDtoForResponse.
         :type ip_address: list[str]
@@ -375,7 +375,7 @@ class RuleAddressDtoForResponse:
     def address_group(self):
         r"""Gets the address_group of this RuleAddressDtoForResponse.
 
-        地址组id列表
+        **参数解释**： 地址组id列表，用于明确规则引用地址组id列表。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为0自定义地址组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The address_group of this RuleAddressDtoForResponse.
         :rtype: list[str]
@@ -386,7 +386,7 @@ class RuleAddressDtoForResponse:
     def address_group(self, address_group):
         r"""Sets the address_group of this RuleAddressDtoForResponse.
 
-        地址组id列表
+        **参数解释**： 地址组id列表，用于明确规则引用地址组id列表。地址组id可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_address_set_type需要设置为0自定义地址组。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param address_group: The address_group of this RuleAddressDtoForResponse.
         :type address_group: list[str]
@@ -397,7 +397,7 @@ class RuleAddressDtoForResponse:
     def address_group_names(self):
         r"""Gets the address_group_names of this RuleAddressDtoForResponse.
 
-        地址组名称列表
+        **参数解释**： 地址组名称列表 **约束限制**： 不涉及
 
         :return: The address_group_names of this RuleAddressDtoForResponse.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
@@ -408,7 +408,7 @@ class RuleAddressDtoForResponse:
     def address_group_names(self, address_group_names):
         r"""Sets the address_group_names of this RuleAddressDtoForResponse.
 
-        地址组名称列表
+        **参数解释**： 地址组名称列表 **约束限制**： 不涉及
 
         :param address_group_names: The address_group_names of this RuleAddressDtoForResponse.
         :type address_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
@@ -419,7 +419,7 @@ class RuleAddressDtoForResponse:
     def address_set_type(self):
         r"""Gets the address_set_type of this RuleAddressDtoForResponse.
 
-        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        **参数解释**： 地址组类型，用于明确规则引用地址组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义地址组，1表示WAF回源IP地址组，3表示NAT64转换地址组 **默认取值**： 不涉及
 
         :return: The address_set_type of this RuleAddressDtoForResponse.
         :rtype: int
@@ -430,7 +430,7 @@ class RuleAddressDtoForResponse:
     def address_set_type(self, address_set_type):
         r"""Sets the address_set_type of this RuleAddressDtoForResponse.
 
-        地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
+        **参数解释**： 地址组类型，用于明确规则引用地址组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义地址组，1表示WAF回源IP地址组，3表示NAT64转换地址组 **默认取值**： 不涉及
 
         :param address_set_type: The address_set_type of this RuleAddressDtoForResponse.
         :type address_set_type: int

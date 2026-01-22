@@ -29,9 +29,9 @@ class DeleteServiceItemResponseBodyData:
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务组成员id
+        :param id: **参数解释**： 服务组成员ID **取值范围**： 不涉及
         :type id: str
-        :param name: 服务组成员名称，为源和目的端口
+        :param name: **参数解释**： 源、目的端口 **取值范围**： 不涉及
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class DeleteServiceItemResponseBodyData:
     def id(self):
         r"""Gets the id of this DeleteServiceItemResponseBodyData.
 
-        服务组成员id
+        **参数解释**： 服务组成员ID **取值范围**： 不涉及
 
         :return: The id of this DeleteServiceItemResponseBodyData.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteServiceItemResponseBodyData:
     def id(self, id):
         r"""Sets the id of this DeleteServiceItemResponseBodyData.
 
-        服务组成员id
+        **参数解释**： 服务组成员ID **取值范围**： 不涉及
 
         :param id: The id of this DeleteServiceItemResponseBodyData.
         :type id: str
@@ -72,7 +72,7 @@ class DeleteServiceItemResponseBodyData:
     def name(self):
         r"""Gets the name of this DeleteServiceItemResponseBodyData.
 
-        服务组成员名称，为源和目的端口
+        **参数解释**： 源、目的端口 **取值范围**： 不涉及
 
         :return: The name of this DeleteServiceItemResponseBodyData.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteServiceItemResponseBodyData:
     def name(self, name):
         r"""Sets the name of this DeleteServiceItemResponseBodyData.
 
-        服务组成员名称，为源和目的端口
+        **参数解释**： 源、目的端口 **取值范围**： 不涉及
 
         :param name: The name of this DeleteServiceItemResponseBodyData.
         :type name: str

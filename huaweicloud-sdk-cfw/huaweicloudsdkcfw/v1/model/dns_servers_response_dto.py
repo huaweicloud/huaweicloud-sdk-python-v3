@@ -19,6 +19,7 @@ class DnsServersResponseDTO:
         'is_applied': 'int',
         'is_customized': 'int',
         'server_ip': 'str',
+        'status': 'int',
         'health_check_domain_name': 'str'
     }
 
@@ -27,23 +28,26 @@ class DnsServersResponseDTO:
         'is_applied': 'is_applied',
         'is_customized': 'is_customized',
         'server_ip': 'server_ip',
+        'status': 'status',
         'health_check_domain_name': 'health_check_domain_name'
     }
 
-    def __init__(self, id=None, is_applied=None, is_customized=None, server_ip=None, health_check_domain_name=None):
+    def __init__(self, id=None, is_applied=None, is_customized=None, server_ip=None, status=None, health_check_domain_name=None):
         r"""DnsServersResponseDTO
 
         The model defined in huaweicloud sdk
 
-        :param id: 域名服务器id
+        :param id: **参数解释**： 域名服务器id **取值范围**： 不涉及
         :type id: int
-        :param is_applied: 域名服务器是否应用，0否 1是
+        :param is_applied: **参数解释**： 域名服务器是否应用 **取值范围**： - 0：否 - 1：是
         :type is_applied: int
-        :param is_customized: 域名服务器是否是用户自定义的dns服务器，0否 1是
+        :param is_customized: **参数解释**： 域名服务器是否是用户自定义的dns服务器 **取值范围**： - 0：否 - 1：是
         :type is_customized: int
-        :param server_ip: DNS服务器IP
+        :param server_ip: **参数解释**： DNS服务器IP **取值范围**： 不涉及
         :type server_ip: str
-        :param health_check_domain_name: 健康检查域名
+        :param status: **参数解释**： dns服务器解析状态 **取值范围**： 0：解析域名的频率正常 1：解析域名的频率缓慢 2：解析域名异常 
+        :type status: int
+        :param health_check_domain_name: **参数解释**： 健康检查域名 **取值范围**： 不涉及
         :type health_check_domain_name: str
         """
         
@@ -53,6 +57,7 @@ class DnsServersResponseDTO:
         self._is_applied = None
         self._is_customized = None
         self._server_ip = None
+        self._status = None
         self._health_check_domain_name = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class DnsServersResponseDTO:
             self.is_customized = is_customized
         if server_ip is not None:
             self.server_ip = server_ip
+        if status is not None:
+            self.status = status
         if health_check_domain_name is not None:
             self.health_check_domain_name = health_check_domain_name
 
@@ -71,7 +78,7 @@ class DnsServersResponseDTO:
     def id(self):
         r"""Gets the id of this DnsServersResponseDTO.
 
-        域名服务器id
+        **参数解释**： 域名服务器id **取值范围**： 不涉及
 
         :return: The id of this DnsServersResponseDTO.
         :rtype: int
@@ -82,7 +89,7 @@ class DnsServersResponseDTO:
     def id(self, id):
         r"""Sets the id of this DnsServersResponseDTO.
 
-        域名服务器id
+        **参数解释**： 域名服务器id **取值范围**： 不涉及
 
         :param id: The id of this DnsServersResponseDTO.
         :type id: int
@@ -93,7 +100,7 @@ class DnsServersResponseDTO:
     def is_applied(self):
         r"""Gets the is_applied of this DnsServersResponseDTO.
 
-        域名服务器是否应用，0否 1是
+        **参数解释**： 域名服务器是否应用 **取值范围**： - 0：否 - 1：是
 
         :return: The is_applied of this DnsServersResponseDTO.
         :rtype: int
@@ -104,7 +111,7 @@ class DnsServersResponseDTO:
     def is_applied(self, is_applied):
         r"""Sets the is_applied of this DnsServersResponseDTO.
 
-        域名服务器是否应用，0否 1是
+        **参数解释**： 域名服务器是否应用 **取值范围**： - 0：否 - 1：是
 
         :param is_applied: The is_applied of this DnsServersResponseDTO.
         :type is_applied: int
@@ -115,7 +122,7 @@ class DnsServersResponseDTO:
     def is_customized(self):
         r"""Gets the is_customized of this DnsServersResponseDTO.
 
-        域名服务器是否是用户自定义的dns服务器，0否 1是
+        **参数解释**： 域名服务器是否是用户自定义的dns服务器 **取值范围**： - 0：否 - 1：是
 
         :return: The is_customized of this DnsServersResponseDTO.
         :rtype: int
@@ -126,7 +133,7 @@ class DnsServersResponseDTO:
     def is_customized(self, is_customized):
         r"""Sets the is_customized of this DnsServersResponseDTO.
 
-        域名服务器是否是用户自定义的dns服务器，0否 1是
+        **参数解释**： 域名服务器是否是用户自定义的dns服务器 **取值范围**： - 0：否 - 1：是
 
         :param is_customized: The is_customized of this DnsServersResponseDTO.
         :type is_customized: int
@@ -137,7 +144,7 @@ class DnsServersResponseDTO:
     def server_ip(self):
         r"""Gets the server_ip of this DnsServersResponseDTO.
 
-        DNS服务器IP
+        **参数解释**： DNS服务器IP **取值范围**： 不涉及
 
         :return: The server_ip of this DnsServersResponseDTO.
         :rtype: str
@@ -148,7 +155,7 @@ class DnsServersResponseDTO:
     def server_ip(self, server_ip):
         r"""Sets the server_ip of this DnsServersResponseDTO.
 
-        DNS服务器IP
+        **参数解释**： DNS服务器IP **取值范围**： 不涉及
 
         :param server_ip: The server_ip of this DnsServersResponseDTO.
         :type server_ip: str
@@ -156,10 +163,32 @@ class DnsServersResponseDTO:
         self._server_ip = server_ip
 
     @property
+    def status(self):
+        r"""Gets the status of this DnsServersResponseDTO.
+
+        **参数解释**： dns服务器解析状态 **取值范围**： 0：解析域名的频率正常 1：解析域名的频率缓慢 2：解析域名异常 
+
+        :return: The status of this DnsServersResponseDTO.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this DnsServersResponseDTO.
+
+        **参数解释**： dns服务器解析状态 **取值范围**： 0：解析域名的频率正常 1：解析域名的频率缓慢 2：解析域名异常 
+
+        :param status: The status of this DnsServersResponseDTO.
+        :type status: int
+        """
+        self._status = status
+
+    @property
     def health_check_domain_name(self):
         r"""Gets the health_check_domain_name of this DnsServersResponseDTO.
 
-        健康检查域名
+        **参数解释**： 健康检查域名 **取值范围**： 不涉及
 
         :return: The health_check_domain_name of this DnsServersResponseDTO.
         :rtype: str
@@ -170,7 +199,7 @@ class DnsServersResponseDTO:
     def health_check_domain_name(self, health_check_domain_name):
         r"""Sets the health_check_domain_name of this DnsServersResponseDTO.
 
-        健康检查域名
+        **参数解释**： 健康检查域名 **取值范围**： 不涉及
 
         :param health_check_domain_name: The health_check_domain_name of this DnsServersResponseDTO.
         :type health_check_domain_name: str

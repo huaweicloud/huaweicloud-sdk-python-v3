@@ -31,11 +31,11 @@ class CreateEastWestFirewallRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param er_id: 出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
+        :param er_id: **参数解释**： 出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分） **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type er_id: str
-        :param inspection_cidr: 创建引流VPC时使用的网段
+        :param inspection_cidr: **参数解释**： 创建引流VPC时使用的网段 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type inspection_cidr: str
-        :param mode: 东西向防火墙模式，填写er
+        :param mode: **参数解释**： 东西向防火墙模式，填写er **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type mode: str
         """
         
@@ -54,7 +54,7 @@ class CreateEastWestFirewallRequestBody:
     def er_id(self):
         r"""Gets the er_id of this CreateEastWestFirewallRequestBody.
 
-        出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
+        **参数解释**： 出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分） **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The er_id of this CreateEastWestFirewallRequestBody.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateEastWestFirewallRequestBody:
     def er_id(self, er_id):
         r"""Sets the er_id of this CreateEastWestFirewallRequestBody.
 
-        出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分）
+        **参数解释**： 出方向关联ER ID,可通过ER服务查询企业路由器列表接口获得，返回值中instances.id即为erid（.表示各对象之间层级的区分） **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param er_id: The er_id of this CreateEastWestFirewallRequestBody.
         :type er_id: str
@@ -76,7 +76,7 @@ class CreateEastWestFirewallRequestBody:
     def inspection_cidr(self):
         r"""Gets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
-        创建引流VPC时使用的网段
+        **参数解释**： 创建引流VPC时使用的网段 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The inspection_cidr of this CreateEastWestFirewallRequestBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateEastWestFirewallRequestBody:
     def inspection_cidr(self, inspection_cidr):
         r"""Sets the inspection_cidr of this CreateEastWestFirewallRequestBody.
 
-        创建引流VPC时使用的网段
+        **参数解释**： 创建引流VPC时使用的网段 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param inspection_cidr: The inspection_cidr of this CreateEastWestFirewallRequestBody.
         :type inspection_cidr: str
@@ -98,7 +98,7 @@ class CreateEastWestFirewallRequestBody:
     def mode(self):
         r"""Gets the mode of this CreateEastWestFirewallRequestBody.
 
-        东西向防火墙模式，填写er
+        **参数解释**： 东西向防火墙模式，填写er **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The mode of this CreateEastWestFirewallRequestBody.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateEastWestFirewallRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this CreateEastWestFirewallRequestBody.
 
-        东西向防火墙模式，填写er
+        **参数解释**： 东西向防火墙模式，填写er **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param mode: The mode of this CreateEastWestFirewallRequestBody.
         :type mode: str

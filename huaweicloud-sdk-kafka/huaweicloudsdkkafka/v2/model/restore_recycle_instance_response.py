@@ -16,51 +16,51 @@ class RestoreRecycleInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[InstanceResumeResult]'
+        'results': 'list[InstanceResumeResult]'
     }
 
     attribute_map = {
-        'instances': 'instances'
+        'results': 'results'
     }
 
-    def __init__(self, instances=None):
+    def __init__(self, results=None):
         r"""RestoreRecycleInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param instances: **参数解释**： 实例列表。
-        :type instances: list[:class:`huaweicloudsdkkafka.v2.InstanceResumeResult`]
+        :param results: **参数解释**： 实例恢复列表。
+        :type results: list[:class:`huaweicloudsdkkafka.v2.InstanceResumeResult`]
         """
         
         super().__init__()
 
-        self._instances = None
+        self._results = None
         self.discriminator = None
 
-        if instances is not None:
-            self.instances = instances
+        if results is not None:
+            self.results = results
 
     @property
-    def instances(self):
-        r"""Gets the instances of this RestoreRecycleInstanceResponse.
+    def results(self):
+        r"""Gets the results of this RestoreRecycleInstanceResponse.
 
-        **参数解释**： 实例列表。
+        **参数解释**： 实例恢复列表。
 
-        :return: The instances of this RestoreRecycleInstanceResponse.
+        :return: The results of this RestoreRecycleInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.InstanceResumeResult`]
         """
-        return self._instances
+        return self._results
 
-    @instances.setter
-    def instances(self, instances):
-        r"""Sets the instances of this RestoreRecycleInstanceResponse.
+    @results.setter
+    def results(self, results):
+        r"""Sets the results of this RestoreRecycleInstanceResponse.
 
-        **参数解释**： 实例列表。
+        **参数解释**： 实例恢复列表。
 
-        :param instances: The instances of this RestoreRecycleInstanceResponse.
-        :type instances: list[:class:`huaweicloudsdkkafka.v2.InstanceResumeResult`]
+        :param results: The results of this RestoreRecycleInstanceResponse.
+        :type results: list[:class:`huaweicloudsdkkafka.v2.InstanceResumeResult`]
         """
-        self._instances = instances
+        self._results = results
 
     def to_dict(self):
         import warnings

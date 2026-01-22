@@ -17,16 +17,18 @@ class BatchRestartOrDeleteInstanceReq:
     openapi_types = {
         'instances': 'list[str]',
         'action': 'str',
-        'all_failure': 'str'
+        'all_failure': 'str',
+        'force_delete': 'bool'
     }
 
     attribute_map = {
         'instances': 'instances',
         'action': 'action',
-        'all_failure': 'all_failure'
+        'all_failure': 'all_failure',
+        'force_delete': 'force_delete'
     }
 
-    def __init__(self, instances=None, action=None, all_failure=None):
+    def __init__(self, instances=None, action=None, all_failure=None, force_delete=None):
         r"""BatchRestartOrDeleteInstanceReq
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class BatchRestartOrDeleteInstanceReq:
         :type action: str
         :param all_failure: 是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
         :type all_failure: str
+        :param force_delete: **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，实例进入回收站。 **默认取值**： 不涉及。
+        :type force_delete: bool
         """
         
         
@@ -44,6 +48,7 @@ class BatchRestartOrDeleteInstanceReq:
         self._instances = None
         self._action = None
         self._all_failure = None
+        self._force_delete = None
         self.discriminator = None
 
         if instances is not None:
@@ -51,6 +56,8 @@ class BatchRestartOrDeleteInstanceReq:
         self.action = action
         if all_failure is not None:
             self.all_failure = all_failure
+        if force_delete is not None:
+            self.force_delete = force_delete
 
     @property
     def instances(self):
@@ -117,6 +124,28 @@ class BatchRestartOrDeleteInstanceReq:
         :type all_failure: str
         """
         self._all_failure = all_failure
+
+    @property
+    def force_delete(self):
+        r"""Gets the force_delete of this BatchRestartOrDeleteInstanceReq.
+
+        **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，实例进入回收站。 **默认取值**： 不涉及。
+
+        :return: The force_delete of this BatchRestartOrDeleteInstanceReq.
+        :rtype: bool
+        """
+        return self._force_delete
+
+    @force_delete.setter
+    def force_delete(self, force_delete):
+        r"""Sets the force_delete of this BatchRestartOrDeleteInstanceReq.
+
+        **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，实例进入回收站。 **默认取值**： 不涉及。
+
+        :param force_delete: The force_delete of this BatchRestartOrDeleteInstanceReq.
+        :type force_delete: bool
+        """
+        self._force_delete = force_delete
 
     def to_dict(self):
         result = {}

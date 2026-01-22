@@ -28,7 +28,7 @@ class DeleteFirewallResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 删除防火墙时生成的任务的job_id
+        :param data: **参数解释**： 删除防火墙时生成的任务的job_id **约束限制**： 不涉及
         :type data: str
         """
         
@@ -44,7 +44,7 @@ class DeleteFirewallResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this DeleteFirewallResponse.
 
-        删除防火墙时生成的任务的job_id
+        **参数解释**： 删除防火墙时生成的任务的job_id **约束限制**： 不涉及
 
         :return: The data of this DeleteFirewallResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteFirewallResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this DeleteFirewallResponse.
 
-        删除防火墙时生成的任务的job_id
+        **参数解释**： 删除防火墙时生成的任务的job_id **约束限制**： 不涉及
 
         :param data: The data of this DeleteFirewallResponse.
         :type data: str

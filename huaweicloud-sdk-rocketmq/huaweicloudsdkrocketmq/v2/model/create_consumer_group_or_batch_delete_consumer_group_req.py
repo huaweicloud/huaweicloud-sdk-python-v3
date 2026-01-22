@@ -15,7 +15,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'groups': 'list[str]',
+        'job_id': 'str',
         'name': 'str',
         'brokers': 'list[str]',
         'broadcast': 'bool',
@@ -26,7 +26,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     }
 
     attribute_map = {
-        'groups': 'groups',
+        'job_id': 'job_id',
         'name': 'name',
         'brokers': 'brokers',
         'broadcast': 'broadcast',
@@ -36,32 +36,32 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         'group_desc': 'group_desc'
     }
 
-    def __init__(self, groups=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
+    def __init__(self, job_id=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
         r"""CreateConsumerGroupOrBatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
-        :param groups: 待删除的消费组列表。
-        :type groups: list[str]
-        :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        :param job_id: **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type job_id: str
+        :param name: **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param brokers: 关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        :param brokers: **参数解释**： 关联的代理列表。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[str]
-        :param broadcast: 是否广播。
+        :param broadcast: **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
         :type broadcast: bool
-        :param retry_max_time: 最大重试次数，取值范围为1~16。
+        :param retry_max_time: **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
         :type retry_max_time: int
-        :param enabled: 是否可以消费。
+        :param enabled: **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
         :type enabled: bool
-        :param consume_orderly: 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        :param consume_orderly: **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
         :type consume_orderly: bool
-        :param group_desc: 消费组描述，长度0~200个字符。
+        :param group_desc: **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
         :type group_desc: str
         """
         
         
 
-        self._groups = None
+        self._job_id = None
         self._name = None
         self._brokers = None
         self._broadcast = None
@@ -71,8 +71,8 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._group_desc = None
         self.discriminator = None
 
-        if groups is not None:
-            self.groups = groups
+        if job_id is not None:
+            self.job_id = job_id
         if name is not None:
             self.name = name
         if brokers is not None:
@@ -89,32 +89,32 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
             self.group_desc = group_desc
 
     @property
-    def groups(self):
-        r"""Gets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def job_id(self):
+        r"""Gets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        待删除的消费组列表。
+        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: list[str]
+        :return: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: str
         """
-        return self._groups
+        return self._job_id
 
-    @groups.setter
-    def groups(self, groups):
-        r"""Sets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        待删除的消费组列表。
+        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param groups: The groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type groups: list[str]
+        :param job_id: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type job_id: str
         """
-        self._groups = groups
+        self._job_id = job_id
 
     @property
     def name(self):
         r"""Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: str
@@ -125,7 +125,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def name(self, name):
         r"""Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type name: str
@@ -136,7 +136,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def brokers(self):
         r"""Gets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 关联的代理列表。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: list[str]
@@ -147,7 +147,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def brokers(self, brokers):
         r"""Sets the brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        关联的代理列表（仅RocketMQ实例4.8.0版本需要填写此参数）。
+        **参数解释**： 关联的代理列表。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type brokers: list[str]
@@ -158,7 +158,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def broadcast(self):
         r"""Gets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :return: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: bool
@@ -169,7 +169,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def broadcast(self, broadcast):
         r"""Sets the broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :param broadcast: The broadcast of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type broadcast: bool
@@ -180,7 +180,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def retry_max_time(self):
         r"""Gets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :return: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: int
@@ -191,7 +191,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def retry_max_time(self, retry_max_time):
         r"""Sets the retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :param retry_max_time: The retry_max_time of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type retry_max_time: int
@@ -202,7 +202,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def enabled(self):
         r"""Gets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :return: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: bool
@@ -213,7 +213,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def enabled(self, enabled):
         r"""Sets the enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :param enabled: The enabled of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type enabled: bool
@@ -224,7 +224,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def consume_orderly(self):
         r"""Gets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :return: The consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: bool
@@ -235,7 +235,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def consume_orderly(self, consume_orderly):
         r"""Sets the consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :param consume_orderly: The consume_orderly of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type consume_orderly: bool
@@ -246,7 +246,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def group_desc(self):
         r"""Gets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
 
         :return: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :rtype: str
@@ -257,7 +257,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
 
         :param group_desc: The group_desc of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
         :type group_desc: str

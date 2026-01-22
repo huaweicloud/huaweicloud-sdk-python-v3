@@ -33,13 +33,13 @@ class AntiVirusRuleVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: 反病毒规则id
         :type id: str
-        :param name: 
+        :param name: 反病毒规则名称
         :type name: str
-        :param scan_protocol_configs: 
+        :param scan_protocol_configs: 反病毒扫描协议列表
         :type scan_protocol_configs: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
-        :param total: 
+        :param total: 反病毒扫描协议列表总数
         :type total: int
         """
         
@@ -64,6 +64,8 @@ class AntiVirusRuleVO:
     def id(self):
         r"""Gets the id of this AntiVirusRuleVO.
 
+        反病毒规则id
+
         :return: The id of this AntiVirusRuleVO.
         :rtype: str
         """
@@ -72,6 +74,8 @@ class AntiVirusRuleVO:
     @id.setter
     def id(self, id):
         r"""Sets the id of this AntiVirusRuleVO.
+
+        反病毒规则id
 
         :param id: The id of this AntiVirusRuleVO.
         :type id: str
@@ -82,6 +86,8 @@ class AntiVirusRuleVO:
     def name(self):
         r"""Gets the name of this AntiVirusRuleVO.
 
+        反病毒规则名称
+
         :return: The name of this AntiVirusRuleVO.
         :rtype: str
         """
@@ -90,6 +96,8 @@ class AntiVirusRuleVO:
     @name.setter
     def name(self, name):
         r"""Sets the name of this AntiVirusRuleVO.
+
+        反病毒规则名称
 
         :param name: The name of this AntiVirusRuleVO.
         :type name: str
@@ -100,6 +108,8 @@ class AntiVirusRuleVO:
     def scan_protocol_configs(self):
         r"""Gets the scan_protocol_configs of this AntiVirusRuleVO.
 
+        反病毒扫描协议列表
+
         :return: The scan_protocol_configs of this AntiVirusRuleVO.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
         """
@@ -108,6 +118,8 @@ class AntiVirusRuleVO:
     @scan_protocol_configs.setter
     def scan_protocol_configs(self, scan_protocol_configs):
         r"""Sets the scan_protocol_configs of this AntiVirusRuleVO.
+
+        反病毒扫描协议列表
 
         :param scan_protocol_configs: The scan_protocol_configs of this AntiVirusRuleVO.
         :type scan_protocol_configs: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
@@ -118,6 +130,8 @@ class AntiVirusRuleVO:
     def total(self):
         r"""Gets the total of this AntiVirusRuleVO.
 
+        反病毒扫描协议列表总数
+
         :return: The total of this AntiVirusRuleVO.
         :rtype: int
         """
@@ -126,6 +140,8 @@ class AntiVirusRuleVO:
     @total.setter
     def total(self, total):
         r"""Sets the total of this AntiVirusRuleVO.
+
+        反病毒扫描协议列表总数
 
         :param total: The total of this AntiVirusRuleVO.
         :type total: int

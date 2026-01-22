@@ -39,11 +39,11 @@ class PartitionReassignRequest:
         :type reassignments: list[:class:`huaweicloudsdkkafka.v2.PartitionReassignEntity`]
         :param throttle: 分区平衡门限值。
         :type throttle: int
-        :param is_schedule: 是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
+        :param is_schedule: **参数解释**： 是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
         :type is_schedule: bool
-        :param execute_at: 定时时间，格式为Unix时间戳，单位为毫秒
+        :param execute_at: **参数解释**： 定时时间，格式为Unix时间戳，单位为毫秒 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
         :type execute_at: int
-        :param time_estimate: 设为true表示执行时间预估任务，false为执行分区平衡任务。
+        :param time_estimate: **参数解释**： 设为true表示执行时间预估任务，false为执行分区平衡任务。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
         :type time_estimate: bool
         """
         
@@ -114,7 +114,7 @@ class PartitionReassignRequest:
     def is_schedule(self):
         r"""Gets the is_schedule of this PartitionReassignRequest.
 
-        是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
+        **参数解释**： 是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :return: The is_schedule of this PartitionReassignRequest.
         :rtype: bool
@@ -125,7 +125,7 @@ class PartitionReassignRequest:
     def is_schedule(self, is_schedule):
         r"""Sets the is_schedule of this PartitionReassignRequest.
 
-        是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。
+        **参数解释**： 是否作为定时任务执行。若非定时执行，is_schedule和execute_at字段可为空。若为定时执行，is_schedule为true，execute_at字段非空。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :param is_schedule: The is_schedule of this PartitionReassignRequest.
         :type is_schedule: bool
@@ -136,7 +136,7 @@ class PartitionReassignRequest:
     def execute_at(self):
         r"""Gets the execute_at of this PartitionReassignRequest.
 
-        定时时间，格式为Unix时间戳，单位为毫秒
+        **参数解释**： 定时时间，格式为Unix时间戳，单位为毫秒 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :return: The execute_at of this PartitionReassignRequest.
         :rtype: int
@@ -147,7 +147,7 @@ class PartitionReassignRequest:
     def execute_at(self, execute_at):
         r"""Sets the execute_at of this PartitionReassignRequest.
 
-        定时时间，格式为Unix时间戳，单位为毫秒
+        **参数解释**： 定时时间，格式为Unix时间戳，单位为毫秒 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :param execute_at: The execute_at of this PartitionReassignRequest.
         :type execute_at: int
@@ -158,7 +158,7 @@ class PartitionReassignRequest:
     def time_estimate(self):
         r"""Gets the time_estimate of this PartitionReassignRequest.
 
-        设为true表示执行时间预估任务，false为执行分区平衡任务。
+        **参数解释**： 设为true表示执行时间预估任务，false为执行分区平衡任务。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :return: The time_estimate of this PartitionReassignRequest.
         :rtype: bool
@@ -169,7 +169,7 @@ class PartitionReassignRequest:
     def time_estimate(self, time_estimate):
         r"""Sets the time_estimate of this PartitionReassignRequest.
 
-        设为true表示执行时间预估任务，false为执行分区平衡任务。
+        **参数解释**： 设为true表示执行时间预估任务，false为执行分区平衡任务。 **约束限制**： [不涉及。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax,sbc,hk_sbc,srg,fcs,cmcc)[华为云Stack不支持此参数。](tag:hcs)
 
         :param time_estimate: The time_estimate of this PartitionReassignRequest.
         :type time_estimate: bool

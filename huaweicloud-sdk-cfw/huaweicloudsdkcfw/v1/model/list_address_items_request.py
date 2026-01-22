@@ -49,11 +49,11 @@ class ListAddressItemsRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param address: ip地址
+        :param address: IP地址
         :type address: str
         :param enterprise_project_id: 企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
         :type enterprise_project_id: str
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param query_address_set_type: 查询地址组类型，0表示自定义地址组，1表示预定义地址组
         :type query_address_set_type: int
@@ -177,7 +177,7 @@ class ListAddressItemsRequest:
     def address(self):
         r"""Gets the address of this ListAddressItemsRequest.
 
-        ip地址
+        IP地址
 
         :return: The address of this ListAddressItemsRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class ListAddressItemsRequest:
     def address(self, address):
         r"""Sets the address of this ListAddressItemsRequest.
 
-        ip地址
+        IP地址
 
         :param address: The address of this ListAddressItemsRequest.
         :type address: str
@@ -221,7 +221,7 @@ class ListAddressItemsRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListAddressItemsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListAddressItemsRequest.
         :rtype: str
@@ -232,7 +232,7 @@ class ListAddressItemsRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListAddressItemsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListAddressItemsRequest.
         :type fw_instance_id: str

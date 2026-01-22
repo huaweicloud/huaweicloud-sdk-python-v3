@@ -37,17 +37,17 @@ class FirewallInstanceResource:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
+        :param resource_id: **参数解释**： 资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。 **取值范围**： 不涉及
         :type resource_id: str
-        :param cloud_service_type: 服务类型，用于CBC使用，特指：hws.service.type.cfw
+        :param cloud_service_type: **参数解释**： 服务类型，用于CBC使用，特指：hws.service.type.cfw **取值范围**： 不涉及
         :type cloud_service_type: str
-        :param resource_type: 资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
+        :param resource_type: **参数解释**： 资源类型 **取值范围**： - 1：云防火墙:hws.resource.type.cfw - 2：EIP:hws.resource.type.cfw.exp.eip - 3：带宽:hws.resource.type.cfw.exp.bandwidth - 4：VPC:hws.resource.type.cfw.exp
         :type resource_type: str
-        :param resource_spec_code: 库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
+        :param resource_spec_code: **参数解释**： 库存单位码 **取值范围**： - 1：防火墙标准版cfw.standard - 2：防火墙专业版cfw.professional - 3：eip标准版cfw.expack.eip.standard - 4：eip专业版cfw.expack.eip.professional - 5：带宽基础版cfw.expack.bandwidth.standard - 6：带宽专业版cfw.expack.bandwidth.professional - 7：vpc专业版cfw.expack.vpc.professional
         :type resource_spec_code: str
-        :param resource_size: 资源数量
+        :param resource_size: **参数解释**： 资源数量 **取值范围**： 不涉及
         :type resource_size: int
-        :param resource_size_measure_id: 资源单位
+        :param resource_size_measure_id: **参数解释**： 资源单位 **取值范围**： 不涉及
         :type resource_size_measure_id: int
         """
         
@@ -78,7 +78,7 @@ class FirewallInstanceResource:
     def resource_id(self):
         r"""Gets the resource_id of this FirewallInstanceResource.
 
-        资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
+        **参数解释**： 资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。 **取值范围**： 不涉及
 
         :return: The resource_id of this FirewallInstanceResource.
         :rtype: str
@@ -89,7 +89,7 @@ class FirewallInstanceResource:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this FirewallInstanceResource.
 
-        资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。
+        **参数解释**： 资源id，包括防火墙资源id，带宽资源id，eip资源id，vpc资源id，cbc回调后返回id。 **取值范围**： 不涉及
 
         :param resource_id: The resource_id of this FirewallInstanceResource.
         :type resource_id: str
@@ -100,7 +100,7 @@ class FirewallInstanceResource:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this FirewallInstanceResource.
 
-        服务类型，用于CBC使用，特指：hws.service.type.cfw
+        **参数解释**： 服务类型，用于CBC使用，特指：hws.service.type.cfw **取值范围**： 不涉及
 
         :return: The cloud_service_type of this FirewallInstanceResource.
         :rtype: str
@@ -111,7 +111,7 @@ class FirewallInstanceResource:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this FirewallInstanceResource.
 
-        服务类型，用于CBC使用，特指：hws.service.type.cfw
+        **参数解释**： 服务类型，用于CBC使用，特指：hws.service.type.cfw **取值范围**： 不涉及
 
         :param cloud_service_type: The cloud_service_type of this FirewallInstanceResource.
         :type cloud_service_type: str
@@ -122,7 +122,7 @@ class FirewallInstanceResource:
     def resource_type(self):
         r"""Gets the resource_type of this FirewallInstanceResource.
 
-        资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
+        **参数解释**： 资源类型 **取值范围**： - 1：云防火墙:hws.resource.type.cfw - 2：EIP:hws.resource.type.cfw.exp.eip - 3：带宽:hws.resource.type.cfw.exp.bandwidth - 4：VPC:hws.resource.type.cfw.exp
 
         :return: The resource_type of this FirewallInstanceResource.
         :rtype: str
@@ -133,7 +133,7 @@ class FirewallInstanceResource:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this FirewallInstanceResource.
 
-        资源类型 包括:   1、云防火墙:hws.resource.type.cfw   2、EIP:hws.resource.type.cfw.exp.eip   3、带宽:hws.resource.type.cfw.exp.bandwidth   4、VPC:hws.resource.type.cfw.exp
+        **参数解释**： 资源类型 **取值范围**： - 1：云防火墙:hws.resource.type.cfw - 2：EIP:hws.resource.type.cfw.exp.eip - 3：带宽:hws.resource.type.cfw.exp.bandwidth - 4：VPC:hws.resource.type.cfw.exp
 
         :param resource_type: The resource_type of this FirewallInstanceResource.
         :type resource_type: str
@@ -144,7 +144,7 @@ class FirewallInstanceResource:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this FirewallInstanceResource.
 
-        库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
+        **参数解释**： 库存单位码 **取值范围**： - 1：防火墙标准版cfw.standard - 2：防火墙专业版cfw.professional - 3：eip标准版cfw.expack.eip.standard - 4：eip专业版cfw.expack.eip.professional - 5：带宽基础版cfw.expack.bandwidth.standard - 6：带宽专业版cfw.expack.bandwidth.professional - 7：vpc专业版cfw.expack.vpc.professional
 
         :return: The resource_spec_code of this FirewallInstanceResource.
         :rtype: str
@@ -155,7 +155,7 @@ class FirewallInstanceResource:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this FirewallInstanceResource.
 
-        库存单位码，包括：1、防火墙标准版cfw.standard 2、防火墙专业版cfw.professional 3、eip标准版cfw.expack.eip.standard 4、eip专业版cfw.expack.eip.professional 5、带宽基础版cfw.expack.bandwidth.standard 6、带宽专业版cfw.expack.bandwidth.professional 7、vpc专业版cfw.expack.vpc.professional
+        **参数解释**： 库存单位码 **取值范围**： - 1：防火墙标准版cfw.standard - 2：防火墙专业版cfw.professional - 3：eip标准版cfw.expack.eip.standard - 4：eip专业版cfw.expack.eip.professional - 5：带宽基础版cfw.expack.bandwidth.standard - 6：带宽专业版cfw.expack.bandwidth.professional - 7：vpc专业版cfw.expack.vpc.professional
 
         :param resource_spec_code: The resource_spec_code of this FirewallInstanceResource.
         :type resource_spec_code: str
@@ -166,7 +166,7 @@ class FirewallInstanceResource:
     def resource_size(self):
         r"""Gets the resource_size of this FirewallInstanceResource.
 
-        资源数量
+        **参数解释**： 资源数量 **取值范围**： 不涉及
 
         :return: The resource_size of this FirewallInstanceResource.
         :rtype: int
@@ -177,7 +177,7 @@ class FirewallInstanceResource:
     def resource_size(self, resource_size):
         r"""Sets the resource_size of this FirewallInstanceResource.
 
-        资源数量
+        **参数解释**： 资源数量 **取值范围**： 不涉及
 
         :param resource_size: The resource_size of this FirewallInstanceResource.
         :type resource_size: int
@@ -188,7 +188,7 @@ class FirewallInstanceResource:
     def resource_size_measure_id(self):
         r"""Gets the resource_size_measure_id of this FirewallInstanceResource.
 
-        资源单位
+        **参数解释**： 资源单位 **取值范围**： 不涉及
 
         :return: The resource_size_measure_id of this FirewallInstanceResource.
         :rtype: int
@@ -199,7 +199,7 @@ class FirewallInstanceResource:
     def resource_size_measure_id(self, resource_size_measure_id):
         r"""Sets the resource_size_measure_id of this FirewallInstanceResource.
 
-        资源单位
+        **参数解释**： 资源单位 **取值范围**： 不涉及
 
         :param resource_size_measure_id: The resource_size_measure_id of this FirewallInstanceResource.
         :type resource_size_measure_id: int

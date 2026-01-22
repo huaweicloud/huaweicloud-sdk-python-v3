@@ -28,7 +28,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param report_id: **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        :param report_id: **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type report_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
     def report_id(self):
         r"""Gets the report_id of this CreateDiagnosisTaskResponse.
 
-        **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The report_id of this CreateDiagnosisTaskResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateDiagnosisTaskResponse(SdkResponse):
     def report_id(self, report_id):
         r"""Sets the report_id of this CreateDiagnosisTaskResponse.
 
-        **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param report_id: The report_id of this CreateDiagnosisTaskResponse.
         :type report_id: str

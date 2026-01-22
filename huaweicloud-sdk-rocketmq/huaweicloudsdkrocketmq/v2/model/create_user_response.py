@@ -23,7 +23,7 @@ class CreateUserResponse(SdkResponse):
         'default_topic_perm': 'str',
         'default_group_perm': 'str',
         'topic_perms': 'list[UserTopicPerms]',
-        'group_perms': 'list[UserGroupPerms]'
+        'group_perms': 'list[UserRespGroupPerms]'
     }
 
     attribute_map = {
@@ -42,22 +42,22 @@ class CreateUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_key: **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param access_key: **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type access_key: str
-        :param secret_key: **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符&#x60;~!@#$%^&amp;*()-_&#x3D;+\\\\|[{}];:\\&#39;\\\&quot;,&lt;.&gt;/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param secret_key: **参数解释**： 密钥。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type secret_key: str
         :param white_remote_address: **参数解释**： IP白名单。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type white_remote_address: str
-        :param admin: **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        :param admin: **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
         :type admin: bool
-        :param default_topic_perm: **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        :param default_topic_perm: **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
         :type default_topic_perm: str
-        :param default_group_perm: **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        :param default_group_perm: **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
         :type default_group_perm: str
         :param topic_perms: **参数解释**： 特殊的主题权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserTopicPerms`]
         :param group_perms: **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]
+        :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserRespGroupPerms`]
         """
         
         super().__init__()
@@ -93,7 +93,7 @@ class CreateUserResponse(SdkResponse):
     def access_key(self):
         r"""Gets the access_key of this CreateUserResponse.
 
-        **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The access_key of this CreateUserResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class CreateUserResponse(SdkResponse):
     def access_key(self, access_key):
         r"""Sets the access_key of this CreateUserResponse.
 
-        **参数解释**： 用户名。 **约束限制**： 只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 用户名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param access_key: The access_key of this CreateUserResponse.
         :type access_key: str
@@ -115,7 +115,7 @@ class CreateUserResponse(SdkResponse):
     def secret_key(self):
         r"""Gets the secret_key of this CreateUserResponse.
 
-        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 密钥。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The secret_key of this CreateUserResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class CreateUserResponse(SdkResponse):
     def secret_key(self, secret_key):
         r"""Sets the secret_key of this CreateUserResponse.
 
-        **参数解释**： 密钥。 **约束限制**： 8-32个字符。 至少包含以下字符中的3种： - 大写字母 - 小写字母 - 数字 - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。  **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 密钥。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param secret_key: The secret_key of this CreateUserResponse.
         :type secret_key: str
@@ -159,7 +159,7 @@ class CreateUserResponse(SdkResponse):
     def admin(self):
         r"""Gets the admin of this CreateUserResponse.
 
-        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
 
         :return: The admin of this CreateUserResponse.
         :rtype: bool
@@ -170,7 +170,7 @@ class CreateUserResponse(SdkResponse):
     def admin(self, admin):
         r"""Sets the admin of this CreateUserResponse.
 
-        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。  **默认取值**： 不涉及。
+        **参数解释**： 是否为管理员。 **约束限制**： 不涉及。 **取值范围**： - true：是管理员。 - false：不是管理员。 **默认取值**： 不涉及。
 
         :param admin: The admin of this CreateUserResponse.
         :type admin: bool
@@ -181,7 +181,7 @@ class CreateUserResponse(SdkResponse):
     def default_topic_perm(self):
         r"""Gets the default_topic_perm of this CreateUserResponse.
 
-        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :return: The default_topic_perm of this CreateUserResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class CreateUserResponse(SdkResponse):
     def default_topic_perm(self, default_topic_perm):
         r"""Sets the default_topic_perm of this CreateUserResponse.
 
-        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - pub：拥有发布权限。 - sub：拥有订阅权限。 - PUB|sub：拥有发布订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的主题权限。 **约束限制**： 不涉及。 **取值范围**： - PUB：拥有发布权限。 - SUB：拥有订阅权限。 - PUB|SUB：拥有发布订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :param default_topic_perm: The default_topic_perm of this CreateUserResponse.
         :type default_topic_perm: str
@@ -203,7 +203,7 @@ class CreateUserResponse(SdkResponse):
     def default_group_perm(self):
         r"""Gets the default_group_perm of this CreateUserResponse.
 
-        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :return: The default_group_perm of this CreateUserResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class CreateUserResponse(SdkResponse):
     def default_group_perm(self, default_group_perm):
         r"""Sets the default_group_perm of this CreateUserResponse.
 
-        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - DENY：无权限。  **默认取值**： 不涉及。
+        **参数解释**： 默认的消费组权限。 **约束限制**： 不涉及。 **取值范围**： - SUB：拥有订阅权限。 - DENY：无权限。 **默认取值**： 不涉及。
 
         :param default_group_perm: The default_group_perm of this CreateUserResponse.
         :type default_group_perm: str
@@ -250,7 +250,7 @@ class CreateUserResponse(SdkResponse):
         **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_perms of this CreateUserResponse.
-        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.UserRespGroupPerms`]
         """
         return self._group_perms
 
@@ -261,7 +261,7 @@ class CreateUserResponse(SdkResponse):
         **参数解释**： 特殊的消费组权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_perms: The group_perms of this CreateUserResponse.
-        :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserGroupPerms`]
+        :type group_perms: list[:class:`huaweicloudsdkrocketmq.v2.UserRespGroupPerms`]
         """
         self._group_perms = group_perms
 

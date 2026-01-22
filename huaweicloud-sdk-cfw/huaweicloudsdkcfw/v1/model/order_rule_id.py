@@ -27,7 +27,7 @@ class OrderRuleId:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则id
+        :param id: **参数解释**： 移动的规则ID **取值范围**： 不涉及
         :type id: str
         """
         
@@ -43,7 +43,7 @@ class OrderRuleId:
     def id(self):
         r"""Gets the id of this OrderRuleId.
 
-        规则id
+        **参数解释**： 移动的规则ID **取值范围**： 不涉及
 
         :return: The id of this OrderRuleId.
         :rtype: str
@@ -54,7 +54,7 @@ class OrderRuleId:
     def id(self, id):
         r"""Sets the id of this OrderRuleId.
 
-        规则id
+        **参数解释**： 移动的规则ID **取值范围**： 不涉及
 
         :param id: The id of this OrderRuleId.
         :type id: str

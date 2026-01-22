@@ -29,9 +29,9 @@ class ResetConsumeOffsetReq:
 
         The model defined in huaweicloud sdk
 
-        :param topic: 重置的主题。
+        :param topic: **参数解释**： 重置的主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param timestamp: 重置的时间。
+        :param timestamp: **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type timestamp: str
         """
         
@@ -48,7 +48,7 @@ class ResetConsumeOffsetReq:
     def topic(self):
         r"""Gets the topic of this ResetConsumeOffsetReq.
 
-        重置的主题。
+        **参数解释**： 重置的主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ResetConsumeOffsetReq.
         :rtype: str
@@ -59,7 +59,7 @@ class ResetConsumeOffsetReq:
     def topic(self, topic):
         r"""Sets the topic of this ResetConsumeOffsetReq.
 
-        重置的主题。
+        **参数解释**： 重置的主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ResetConsumeOffsetReq.
         :type topic: str
@@ -70,7 +70,7 @@ class ResetConsumeOffsetReq:
     def timestamp(self):
         r"""Gets the timestamp of this ResetConsumeOffsetReq.
 
-        重置的时间。
+        **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The timestamp of this ResetConsumeOffsetReq.
         :rtype: str
@@ -81,7 +81,7 @@ class ResetConsumeOffsetReq:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this ResetConsumeOffsetReq.
 
-        重置的时间。
+        **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param timestamp: The timestamp of this ResetConsumeOffsetReq.
         :type timestamp: str

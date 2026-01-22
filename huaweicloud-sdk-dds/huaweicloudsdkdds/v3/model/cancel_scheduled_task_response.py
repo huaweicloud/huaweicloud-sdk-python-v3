@@ -16,47 +16,20 @@ class CancelScheduledTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         r"""CancelScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         """
         
         super().__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this CancelScheduledTaskResponse.
-
-        :return: The body of this CancelScheduledTaskResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this CancelScheduledTaskResponse.
-
-        :param body: The body of this CancelScheduledTaskResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings

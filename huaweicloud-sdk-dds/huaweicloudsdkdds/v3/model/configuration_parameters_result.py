@@ -39,19 +39,19 @@ class ConfigurationParametersResult:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名称。
+        :param name: **参数解释：** 参数名称。 **取值范围：** 不涉及。
         :type name: str
-        :param value: 参数值。
+        :param value: **参数解释：** 参数值。 **取值范围：** 不涉及。
         :type value: str
-        :param description: 参数描述。
+        :param description: **参数解释：** 参数描述。 **取值范围：** 不涉及。
         :type description: str
-        :param type: 参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
+        :param type: **参数解释：** 参数类型。 **取值范围：** - integer - string - boolean - float - list
         :type type: str
-        :param value_range: 参数值范围，如integer取值0-1、boolean取值true|false等。
+        :param value_range: **参数解释：** 参数值范围。 **取值范围：** - integer取值0-1。 - boolean取值true/false等。
         :type value_range: str
-        :param restart_required: 参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
+        :param restart_required: **参数解释：** 参数是否需要重启。 **取值范围：** - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
         :type restart_required: bool
-        :param readonly: 是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
+        :param readonly: **参数解释：** 是否只读 **取值范围：** - 取值为“true”，只读参数。 - 取值为“false”，非只读参数。
         :type readonly: bool
         """
         
@@ -78,7 +78,7 @@ class ConfigurationParametersResult:
     def name(self):
         r"""Gets the name of this ConfigurationParametersResult.
 
-        参数名称。
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :return: The name of this ConfigurationParametersResult.
         :rtype: str
@@ -89,7 +89,7 @@ class ConfigurationParametersResult:
     def name(self, name):
         r"""Sets the name of this ConfigurationParametersResult.
 
-        参数名称。
+        **参数解释：** 参数名称。 **取值范围：** 不涉及。
 
         :param name: The name of this ConfigurationParametersResult.
         :type name: str
@@ -100,7 +100,7 @@ class ConfigurationParametersResult:
     def value(self):
         r"""Gets the value of this ConfigurationParametersResult.
 
-        参数值。
+        **参数解释：** 参数值。 **取值范围：** 不涉及。
 
         :return: The value of this ConfigurationParametersResult.
         :rtype: str
@@ -111,7 +111,7 @@ class ConfigurationParametersResult:
     def value(self, value):
         r"""Sets the value of this ConfigurationParametersResult.
 
-        参数值。
+        **参数解释：** 参数值。 **取值范围：** 不涉及。
 
         :param value: The value of this ConfigurationParametersResult.
         :type value: str
@@ -122,7 +122,7 @@ class ConfigurationParametersResult:
     def description(self):
         r"""Gets the description of this ConfigurationParametersResult.
 
-        参数描述。
+        **参数解释：** 参数描述。 **取值范围：** 不涉及。
 
         :return: The description of this ConfigurationParametersResult.
         :rtype: str
@@ -133,7 +133,7 @@ class ConfigurationParametersResult:
     def description(self, description):
         r"""Sets the description of this ConfigurationParametersResult.
 
-        参数描述。
+        **参数解释：** 参数描述。 **取值范围：** 不涉及。
 
         :param description: The description of this ConfigurationParametersResult.
         :type description: str
@@ -144,7 +144,7 @@ class ConfigurationParametersResult:
     def type(self):
         r"""Gets the type of this ConfigurationParametersResult.
 
-        参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
+        **参数解释：** 参数类型。 **取值范围：** - integer - string - boolean - float - list
 
         :return: The type of this ConfigurationParametersResult.
         :rtype: str
@@ -155,7 +155,7 @@ class ConfigurationParametersResult:
     def type(self, type):
         r"""Sets the type of this ConfigurationParametersResult.
 
-        参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
+        **参数解释：** 参数类型。 **取值范围：** - integer - string - boolean - float - list
 
         :param type: The type of this ConfigurationParametersResult.
         :type type: str
@@ -166,7 +166,7 @@ class ConfigurationParametersResult:
     def value_range(self):
         r"""Gets the value_range of this ConfigurationParametersResult.
 
-        参数值范围，如integer取值0-1、boolean取值true|false等。
+        **参数解释：** 参数值范围。 **取值范围：** - integer取值0-1。 - boolean取值true/false等。
 
         :return: The value_range of this ConfigurationParametersResult.
         :rtype: str
@@ -177,7 +177,7 @@ class ConfigurationParametersResult:
     def value_range(self, value_range):
         r"""Sets the value_range of this ConfigurationParametersResult.
 
-        参数值范围，如integer取值0-1、boolean取值true|false等。
+        **参数解释：** 参数值范围。 **取值范围：** - integer取值0-1。 - boolean取值true/false等。
 
         :param value_range: The value_range of this ConfigurationParametersResult.
         :type value_range: str
@@ -188,7 +188,7 @@ class ConfigurationParametersResult:
     def restart_required(self):
         r"""Gets the restart_required of this ConfigurationParametersResult.
 
-        参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
+        **参数解释：** 参数是否需要重启。 **取值范围：** - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
         :return: The restart_required of this ConfigurationParametersResult.
         :rtype: bool
@@ -199,7 +199,7 @@ class ConfigurationParametersResult:
     def restart_required(self, restart_required):
         r"""Sets the restart_required of this ConfigurationParametersResult.
 
-        参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
+        **参数解释：** 参数是否需要重启。 **取值范围：** - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
         :param restart_required: The restart_required of this ConfigurationParametersResult.
         :type restart_required: bool
@@ -210,7 +210,7 @@ class ConfigurationParametersResult:
     def readonly(self):
         r"""Gets the readonly of this ConfigurationParametersResult.
 
-        是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
+        **参数解释：** 是否只读 **取值范围：** - 取值为“true”，只读参数。 - 取值为“false”，非只读参数。
 
         :return: The readonly of this ConfigurationParametersResult.
         :rtype: bool
@@ -221,7 +221,7 @@ class ConfigurationParametersResult:
     def readonly(self, readonly):
         r"""Sets the readonly of this ConfigurationParametersResult.
 
-        是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
+        **参数解释：** 是否只读 **取值范围：** - 取值为“true”，只读参数。 - 取值为“false”，非只读参数。
 
         :param readonly: The readonly of this ConfigurationParametersResult.
         :type readonly: bool

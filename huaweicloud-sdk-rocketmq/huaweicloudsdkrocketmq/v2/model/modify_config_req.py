@@ -27,7 +27,7 @@ class ModifyConfigReq:
 
         The model defined in huaweicloud sdk
 
-        :param rocketmq_configs: RocketMQ配置。
+        :param rocketmq_configs: **参数解释**： RocketMQ配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type rocketmq_configs: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigReq`]
         """
         
@@ -36,14 +36,13 @@ class ModifyConfigReq:
         self._rocketmq_configs = None
         self.discriminator = None
 
-        if rocketmq_configs is not None:
-            self.rocketmq_configs = rocketmq_configs
+        self.rocketmq_configs = rocketmq_configs
 
     @property
     def rocketmq_configs(self):
         r"""Gets the rocketmq_configs of this ModifyConfigReq.
 
-        RocketMQ配置。
+        **参数解释**： RocketMQ配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The rocketmq_configs of this ModifyConfigReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigReq`]
@@ -54,7 +53,7 @@ class ModifyConfigReq:
     def rocketmq_configs(self, rocketmq_configs):
         r"""Sets the rocketmq_configs of this ModifyConfigReq.
 
-        RocketMQ配置。
+        **参数解释**： RocketMQ配置。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param rocketmq_configs: The rocketmq_configs of this ModifyConfigReq.
         :type rocketmq_configs: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigReq`]

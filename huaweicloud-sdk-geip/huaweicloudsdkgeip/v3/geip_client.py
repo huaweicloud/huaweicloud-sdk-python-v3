@@ -1323,7 +1323,6 @@ class GeipClient(Client):
             collection_formats['ip_version'] = 'multi'
         if 'mask' in local_var_params:
             query_params.append(('mask', local_var_params['mask']))
-            collection_formats['mask'] = 'multi'
 
         header_params = {}
 
@@ -2583,14 +2582,6 @@ class GeipClient(Client):
         path_params = {}
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
             collection_formats['fields'] = 'multi'

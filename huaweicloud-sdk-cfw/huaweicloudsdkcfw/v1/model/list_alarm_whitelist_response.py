@@ -16,7 +16,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'PageInfo'
+        'data': 'HttpListAlarmWhiteListResponseData'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: :class:`huaweicloudsdkcfw.v1.PageInfo`
+        :type data: :class:`huaweicloudsdkcfw.v1.HttpListAlarmWhiteListResponseData`
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
         r"""Gets the data of this ListAlarmWhitelistResponse.
 
         :return: The data of this ListAlarmWhitelistResponse.
-        :rtype: :class:`huaweicloudsdkcfw.v1.PageInfo`
+        :rtype: :class:`huaweicloudsdkcfw.v1.HttpListAlarmWhiteListResponseData`
         """
         return self._data
 
@@ -54,7 +54,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
         r"""Sets the data of this ListAlarmWhitelistResponse.
 
         :param data: The data of this ListAlarmWhitelistResponse.
-        :type data: :class:`huaweicloudsdkcfw.v1.PageInfo`
+        :type data: :class:`huaweicloudsdkcfw.v1.HttpListAlarmWhiteListResponseData`
         """
         self._data = data
 

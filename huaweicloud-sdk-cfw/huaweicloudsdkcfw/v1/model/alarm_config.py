@@ -49,11 +49,11 @@ class AlarmConfig:
 
         The model defined in huaweicloud sdk
 
-        :param account_name: 账号名称
+        :param account_name: 
         :type account_name: str
-        :param alarm_id: 告警id
+        :param alarm_id: 
         :type alarm_id: str
-        :param alarm_time_period: 告警周期，0：全天，1：8时到22时
+        :param alarm_time_period: 告警周期，0：8时到22时，1：全天
         :type alarm_time_period: int
         :param alarm_type: 告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
         :type alarm_type: int
@@ -61,17 +61,17 @@ class AlarmConfig:
         :type enable_status: int
         :param frequency_count: 告警触发频次
         :type frequency_count: int
-        :param frequency_time: 告警频次时间范围
+        :param frequency_time: 告警频次时间范围，以分钟为单位
         :type frequency_time: int
-        :param language: 告警语言
+        :param language: 告警语言，zh-cn为中文，en-us为英文
         :type language: str
-        :param name: 告警主题名称
+        :param name: 通知群组名称
         :type name: str
-        :param severity: 告警等级
+        :param severity: 告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为2时，severity固定为3
         :type severity: str
-        :param topic_urn: 告警urn
+        :param topic_urn: 告警topic的urn
         :type topic_urn: str
-        :param username: 用户名称
+        :param username: 用户名称，为cfw
         :type username: str
         """
         
@@ -120,8 +120,6 @@ class AlarmConfig:
     def account_name(self):
         r"""Gets the account_name of this AlarmConfig.
 
-        账号名称
-
         :return: The account_name of this AlarmConfig.
         :rtype: str
         """
@@ -130,8 +128,6 @@ class AlarmConfig:
     @account_name.setter
     def account_name(self, account_name):
         r"""Sets the account_name of this AlarmConfig.
-
-        账号名称
 
         :param account_name: The account_name of this AlarmConfig.
         :type account_name: str
@@ -142,8 +138,6 @@ class AlarmConfig:
     def alarm_id(self):
         r"""Gets the alarm_id of this AlarmConfig.
 
-        告警id
-
         :return: The alarm_id of this AlarmConfig.
         :rtype: str
         """
@@ -152,8 +146,6 @@ class AlarmConfig:
     @alarm_id.setter
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this AlarmConfig.
-
-        告警id
 
         :param alarm_id: The alarm_id of this AlarmConfig.
         :type alarm_id: str
@@ -164,7 +156,7 @@ class AlarmConfig:
     def alarm_time_period(self):
         r"""Gets the alarm_time_period of this AlarmConfig.
 
-        告警周期，0：全天，1：8时到22时
+        告警周期，0：8时到22时，1：全天
 
         :return: The alarm_time_period of this AlarmConfig.
         :rtype: int
@@ -175,7 +167,7 @@ class AlarmConfig:
     def alarm_time_period(self, alarm_time_period):
         r"""Sets the alarm_time_period of this AlarmConfig.
 
-        告警周期，0：全天，1：8时到22时
+        告警周期，0：8时到22时，1：全天
 
         :param alarm_time_period: The alarm_time_period of this AlarmConfig.
         :type alarm_time_period: int
@@ -252,7 +244,7 @@ class AlarmConfig:
     def frequency_time(self):
         r"""Gets the frequency_time of this AlarmConfig.
 
-        告警频次时间范围
+        告警频次时间范围，以分钟为单位
 
         :return: The frequency_time of this AlarmConfig.
         :rtype: int
@@ -263,7 +255,7 @@ class AlarmConfig:
     def frequency_time(self, frequency_time):
         r"""Sets the frequency_time of this AlarmConfig.
 
-        告警频次时间范围
+        告警频次时间范围，以分钟为单位
 
         :param frequency_time: The frequency_time of this AlarmConfig.
         :type frequency_time: int
@@ -274,7 +266,7 @@ class AlarmConfig:
     def language(self):
         r"""Gets the language of this AlarmConfig.
 
-        告警语言
+        告警语言，zh-cn为中文，en-us为英文
 
         :return: The language of this AlarmConfig.
         :rtype: str
@@ -285,7 +277,7 @@ class AlarmConfig:
     def language(self, language):
         r"""Sets the language of this AlarmConfig.
 
-        告警语言
+        告警语言，zh-cn为中文，en-us为英文
 
         :param language: The language of this AlarmConfig.
         :type language: str
@@ -296,7 +288,7 @@ class AlarmConfig:
     def name(self):
         r"""Gets the name of this AlarmConfig.
 
-        告警主题名称
+        通知群组名称
 
         :return: The name of this AlarmConfig.
         :rtype: str
@@ -307,7 +299,7 @@ class AlarmConfig:
     def name(self, name):
         r"""Sets the name of this AlarmConfig.
 
-        告警主题名称
+        通知群组名称
 
         :param name: The name of this AlarmConfig.
         :type name: str
@@ -318,7 +310,7 @@ class AlarmConfig:
     def severity(self):
         r"""Gets the severity of this AlarmConfig.
 
-        告警等级
+        告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为2时，severity固定为3
 
         :return: The severity of this AlarmConfig.
         :rtype: str
@@ -329,7 +321,7 @@ class AlarmConfig:
     def severity(self, severity):
         r"""Sets the severity of this AlarmConfig.
 
-        告警等级
+        告警等级，当type为0和4时，severity为CRITICAL,HIGH,MEDIUM,LOW四种等级的组合字符串，当type为2时，severity固定为3
 
         :param severity: The severity of this AlarmConfig.
         :type severity: str
@@ -340,7 +332,7 @@ class AlarmConfig:
     def topic_urn(self):
         r"""Gets the topic_urn of this AlarmConfig.
 
-        告警urn
+        告警topic的urn
 
         :return: The topic_urn of this AlarmConfig.
         :rtype: str
@@ -351,7 +343,7 @@ class AlarmConfig:
     def topic_urn(self, topic_urn):
         r"""Sets the topic_urn of this AlarmConfig.
 
-        告警urn
+        告警topic的urn
 
         :param topic_urn: The topic_urn of this AlarmConfig.
         :type topic_urn: str
@@ -362,7 +354,7 @@ class AlarmConfig:
     def username(self):
         r"""Gets the username of this AlarmConfig.
 
-        用户名称
+        用户名称，为cfw
 
         :return: The username of this AlarmConfig.
         :rtype: str
@@ -373,7 +365,7 @@ class AlarmConfig:
     def username(self, username):
         r"""Sets the username of this AlarmConfig.
 
-        用户名称
+        用户名称，为cfw
 
         :param username: The username of this AlarmConfig.
         :type username: str

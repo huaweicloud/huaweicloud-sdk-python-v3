@@ -33,13 +33,13 @@ class GetFirewallInstanceData:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位 **取值范围**： 大于或等于0
         :type offset: int
-        :param total: 防火墙总数
+        :param total: **参数解释**： 防火墙总数 **取值范围**： 不涉及
         :type total: int
-        :param records: 查询防火墙实例信息列表
+        :param records: **参数解释**： 查询防火墙实例信息列表 **取值范围**： 不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseRecord`]
         """
         
@@ -64,7 +64,7 @@ class GetFirewallInstanceData:
     def limit(self):
         r"""Gets the limit of this GetFirewallInstanceData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this GetFirewallInstanceData.
         :rtype: int
@@ -75,7 +75,7 @@ class GetFirewallInstanceData:
     def limit(self, limit):
         r"""Sets the limit of this GetFirewallInstanceData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this GetFirewallInstanceData.
         :type limit: int
@@ -86,7 +86,7 @@ class GetFirewallInstanceData:
     def offset(self):
         r"""Gets the offset of this GetFirewallInstanceData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位 **取值范围**： 大于或等于0
 
         :return: The offset of this GetFirewallInstanceData.
         :rtype: int
@@ -97,7 +97,7 @@ class GetFirewallInstanceData:
     def offset(self, offset):
         r"""Sets the offset of this GetFirewallInstanceData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位 **取值范围**： 大于或等于0
 
         :param offset: The offset of this GetFirewallInstanceData.
         :type offset: int
@@ -108,7 +108,7 @@ class GetFirewallInstanceData:
     def total(self):
         r"""Gets the total of this GetFirewallInstanceData.
 
-        防火墙总数
+        **参数解释**： 防火墙总数 **取值范围**： 不涉及
 
         :return: The total of this GetFirewallInstanceData.
         :rtype: int
@@ -119,7 +119,7 @@ class GetFirewallInstanceData:
     def total(self, total):
         r"""Sets the total of this GetFirewallInstanceData.
 
-        防火墙总数
+        **参数解释**： 防火墙总数 **取值范围**： 不涉及
 
         :param total: The total of this GetFirewallInstanceData.
         :type total: int
@@ -130,7 +130,7 @@ class GetFirewallInstanceData:
     def records(self):
         r"""Gets the records of this GetFirewallInstanceData.
 
-        查询防火墙实例信息列表
+        **参数解释**： 查询防火墙实例信息列表 **取值范围**： 不涉及
 
         :return: The records of this GetFirewallInstanceData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseRecord`]
@@ -141,7 +141,7 @@ class GetFirewallInstanceData:
     def records(self, records):
         r"""Sets the records of this GetFirewallInstanceData.
 
-        查询防火墙实例信息列表
+        **参数解释**： 查询防火墙实例信息列表 **取值范围**： 不涉及
 
         :param records: The records of this GetFirewallInstanceData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.GetFirewallInstanceResponseRecord`]

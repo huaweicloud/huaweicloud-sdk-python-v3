@@ -33,7 +33,7 @@ class CreateExchangeRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param vhost: Vhost名称
+        :param vhost: vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
         :type vhost: str
         :param body: Body of the CreateExchangeRequest
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateExchangeBody`
@@ -77,7 +77,7 @@ class CreateExchangeRequest:
     def vhost(self):
         r"""Gets the vhost of this CreateExchangeRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :return: The vhost of this CreateExchangeRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateExchangeRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this CreateExchangeRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :param vhost: The vhost of this CreateExchangeRequest.
         :type vhost: str

@@ -33,13 +33,13 @@ class RuleHitCountRecords:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置，必须为数字 **取值范围**： 大于或等于0，默认0
         :type offset: int
-        :param total: 获取规则击中次数总条数
+        :param total: **参数解释**： 获取规则击中次数总条数 **取值范围**： 不涉及
         :type total: int
-        :param records: 规则击中次数信息列表
+        :param records: **参数解释**： 规则击中次数信息列表 **约束限制**： 不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.RuleHitCountObject`]
         """
         
@@ -64,7 +64,7 @@ class RuleHitCountRecords:
     def limit(self):
         r"""Gets the limit of this RuleHitCountRecords.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this RuleHitCountRecords.
         :rtype: int
@@ -75,7 +75,7 @@ class RuleHitCountRecords:
     def limit(self, limit):
         r"""Sets the limit of this RuleHitCountRecords.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this RuleHitCountRecords.
         :type limit: int
@@ -86,7 +86,7 @@ class RuleHitCountRecords:
     def offset(self):
         r"""Gets the offset of this RuleHitCountRecords.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置，必须为数字 **取值范围**： 大于或等于0，默认0
 
         :return: The offset of this RuleHitCountRecords.
         :rtype: int
@@ -97,7 +97,7 @@ class RuleHitCountRecords:
     def offset(self, offset):
         r"""Sets the offset of this RuleHitCountRecords.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置，必须为数字 **取值范围**： 大于或等于0，默认0
 
         :param offset: The offset of this RuleHitCountRecords.
         :type offset: int
@@ -108,7 +108,7 @@ class RuleHitCountRecords:
     def total(self):
         r"""Gets the total of this RuleHitCountRecords.
 
-        获取规则击中次数总条数
+        **参数解释**： 获取规则击中次数总条数 **取值范围**： 不涉及
 
         :return: The total of this RuleHitCountRecords.
         :rtype: int
@@ -119,7 +119,7 @@ class RuleHitCountRecords:
     def total(self, total):
         r"""Sets the total of this RuleHitCountRecords.
 
-        获取规则击中次数总条数
+        **参数解释**： 获取规则击中次数总条数 **取值范围**： 不涉及
 
         :param total: The total of this RuleHitCountRecords.
         :type total: int
@@ -130,7 +130,7 @@ class RuleHitCountRecords:
     def records(self):
         r"""Gets the records of this RuleHitCountRecords.
 
-        规则击中次数信息列表
+        **参数解释**： 规则击中次数信息列表 **约束限制**： 不涉及
 
         :return: The records of this RuleHitCountRecords.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.RuleHitCountObject`]
@@ -141,7 +141,7 @@ class RuleHitCountRecords:
     def records(self, records):
         r"""Sets the records of this RuleHitCountRecords.
 
-        规则击中次数信息列表
+        **参数解释**： 规则击中次数信息列表 **约束限制**： 不涉及
 
         :param records: The records of this RuleHitCountRecords.
         :type records: list[:class:`huaweicloudsdkcfw.v1.RuleHitCountObject`]

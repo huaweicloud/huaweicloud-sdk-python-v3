@@ -39,11 +39,11 @@ class DeleteBindingRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param vhost: Vhost名称
+        :param vhost: vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
         :type vhost: str
         :param exchange: Exchange名称
         :type exchange: str
-        :param destination_type: 绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
+        :param destination_type: **参数解释**： 绑定目标端类型。 **约束限制**： [不涉及。](tag:sbc,cmcc,tm,hk_tm,ax,hk_sbc)[AMQP版本只支持绑定Queue。](tag:hws,hws_hk,hws_eu) **取值范围**： - Exchange：交换机。 - Queue：队列。 **默认取值**： 不涉及。
         :type destination_type: str
         :param destination: 绑定的目标端名称
         :type destination: str
@@ -94,7 +94,7 @@ class DeleteBindingRequest:
     def vhost(self):
         r"""Gets the vhost of this DeleteBindingRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :return: The vhost of this DeleteBindingRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class DeleteBindingRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this DeleteBindingRequest.
 
-        Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :param vhost: The vhost of this DeleteBindingRequest.
         :type vhost: str
@@ -138,7 +138,7 @@ class DeleteBindingRequest:
     def destination_type(self):
         r"""Gets the destination_type of this DeleteBindingRequest.
 
-        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
+        **参数解释**： 绑定目标端类型。 **约束限制**： [不涉及。](tag:sbc,cmcc,tm,hk_tm,ax,hk_sbc)[AMQP版本只支持绑定Queue。](tag:hws,hws_hk,hws_eu) **取值范围**： - Exchange：交换机。 - Queue：队列。 **默认取值**： 不涉及。
 
         :return: The destination_type of this DeleteBindingRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class DeleteBindingRequest:
     def destination_type(self, destination_type):
         r"""Sets the destination_type of this DeleteBindingRequest.
 
-        绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
+        **参数解释**： 绑定目标端类型。 **约束限制**： [不涉及。](tag:sbc,cmcc,tm,hk_tm,ax,hk_sbc)[AMQP版本只支持绑定Queue。](tag:hws,hws_hk,hws_eu) **取值范围**： - Exchange：交换机。 - Queue：队列。 **默认取值**： 不涉及。
 
         :param destination_type: The destination_type of this DeleteBindingRequest.
         :type destination_type: str

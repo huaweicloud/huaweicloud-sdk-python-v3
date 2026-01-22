@@ -31,11 +31,11 @@ class DeadletterResendRespResendResults:
 
         The model defined in huaweicloud sdk
 
-        :param msg_id: 消息ID。
+        :param msg_id: **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id: str
-        :param error_code: 错误码。
+        :param error_code: **参数解释**： 错误码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type error_code: str
-        :param error_message: 错误信息。
+        :param error_message: **参数解释**： 错误信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type error_message: str
         """
         
@@ -57,7 +57,7 @@ class DeadletterResendRespResendResults:
     def msg_id(self):
         r"""Gets the msg_id of this DeadletterResendRespResendResults.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id of this DeadletterResendRespResendResults.
         :rtype: str
@@ -68,7 +68,7 @@ class DeadletterResendRespResendResults:
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this DeadletterResendRespResendResults.
 
-        消息ID。
+        **参数解释**： 消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id: The msg_id of this DeadletterResendRespResendResults.
         :type msg_id: str
@@ -79,7 +79,7 @@ class DeadletterResendRespResendResults:
     def error_code(self):
         r"""Gets the error_code of this DeadletterResendRespResendResults.
 
-        错误码。
+        **参数解释**： 错误码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The error_code of this DeadletterResendRespResendResults.
         :rtype: str
@@ -90,7 +90,7 @@ class DeadletterResendRespResendResults:
     def error_code(self, error_code):
         r"""Sets the error_code of this DeadletterResendRespResendResults.
 
-        错误码。
+        **参数解释**： 错误码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param error_code: The error_code of this DeadletterResendRespResendResults.
         :type error_code: str
@@ -101,7 +101,7 @@ class DeadletterResendRespResendResults:
     def error_message(self):
         r"""Gets the error_message of this DeadletterResendRespResendResults.
 
-        错误信息。
+        **参数解释**： 错误信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The error_message of this DeadletterResendRespResendResults.
         :rtype: str
@@ -112,7 +112,7 @@ class DeadletterResendRespResendResults:
     def error_message(self, error_message):
         r"""Sets the error_message of this DeadletterResendRespResendResults.
 
-        错误信息。
+        **参数解释**： 错误信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param error_message: The error_message of this DeadletterResendRespResendResults.
         :type error_message: str

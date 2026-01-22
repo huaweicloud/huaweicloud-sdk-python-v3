@@ -27,7 +27,7 @@ class CreateTagsDto:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 创建防火墙标签列表
+        :param tags: **参数解释**： 创建防火墙标签列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateTag`]
         """
         
@@ -43,7 +43,7 @@ class CreateTagsDto:
     def tags(self):
         r"""Gets the tags of this CreateTagsDto.
 
-        创建防火墙标签列表
+        **参数解释**： 创建防火墙标签列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The tags of this CreateTagsDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CreateTag`]
@@ -54,7 +54,7 @@ class CreateTagsDto:
     def tags(self, tags):
         r"""Sets the tags of this CreateTagsDto.
 
-        创建防火墙标签列表
+        **参数解释**： 创建防火墙标签列表 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param tags: The tags of this CreateTagsDto.
         :type tags: list[:class:`huaweicloudsdkcfw.v1.CreateTag`]

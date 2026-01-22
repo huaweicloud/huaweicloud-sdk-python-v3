@@ -45,7 +45,7 @@ class UpdateReportProfileDto:
         :type description: str
         :param name: **参数解释**： 模板名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param send_period: **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param send_period: **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 0-23 **默认取值**： 不涉及
         :type send_period: int
         :param send_week_day: **参数解释**： 发送星期，周报需要设置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type send_week_day: int
@@ -136,7 +136,7 @@ class UpdateReportProfileDto:
     def send_period(self):
         r"""Gets the send_period of this UpdateReportProfileDto.
 
-        **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 0-23 **默认取值**： 不涉及
 
         :return: The send_period of this UpdateReportProfileDto.
         :rtype: int
@@ -147,7 +147,7 @@ class UpdateReportProfileDto:
     def send_period(self, send_period):
         r"""Sets the send_period of this UpdateReportProfileDto.
 
-        **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 发送时间，日报和周报需要设置 **约束限制**： 不涉及 **取值范围**： 0-23 **默认取值**： 不涉及
 
         :param send_period: The send_period of this UpdateReportProfileDto.
         :type send_period: int

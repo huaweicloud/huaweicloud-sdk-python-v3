@@ -33,13 +33,13 @@ class ServiceGroupVO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 服务组名称
+        :param name: **参数解释**： 服务（协议、源端口、目的端口）组的名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param protocols: 协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
+        :param protocols: **参数解释**： 协议列表 **约束限制**： 不涉及 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
         :type protocols: list[int]
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示预定义服务组
+        :param service_set_type: **参数解释**： 服务（协议、源端口、目的端口）组的类型 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示预定义服务组 **默认取值**： 不涉及
         :type service_set_type: int
-        :param set_id: 服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        :param set_id: **参数解释**： 服务组ID，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type set_id: str
         """
         
@@ -64,7 +64,7 @@ class ServiceGroupVO:
     def name(self):
         r"""Gets the name of this ServiceGroupVO.
 
-        服务组名称
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this ServiceGroupVO.
         :rtype: str
@@ -75,7 +75,7 @@ class ServiceGroupVO:
     def name(self, name):
         r"""Sets the name of this ServiceGroupVO.
 
-        服务组名称
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this ServiceGroupVO.
         :type name: str
@@ -86,7 +86,7 @@ class ServiceGroupVO:
     def protocols(self):
         r"""Gets the protocols of this ServiceGroupVO.
 
-        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
+        **参数解释**： 协议列表 **约束限制**： 不涉及 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
 
         :return: The protocols of this ServiceGroupVO.
         :rtype: list[int]
@@ -97,7 +97,7 @@ class ServiceGroupVO:
     def protocols(self, protocols):
         r"""Sets the protocols of this ServiceGroupVO.
 
-        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
+        **参数解释**： 协议列表 **约束限制**： 不涉及 **取值范围**： - 6：TCP - 17：UDP - 1：ICMP - 58：ICMPV6 - -1：Any **默认取值**： 不涉及
 
         :param protocols: The protocols of this ServiceGroupVO.
         :type protocols: list[int]
@@ -108,7 +108,7 @@ class ServiceGroupVO:
     def service_set_type(self):
         r"""Gets the service_set_type of this ServiceGroupVO.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        **参数解释**： 服务（协议、源端口、目的端口）组的类型 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示预定义服务组 **默认取值**： 不涉及
 
         :return: The service_set_type of this ServiceGroupVO.
         :rtype: int
@@ -119,7 +119,7 @@ class ServiceGroupVO:
     def service_set_type(self, service_set_type):
         r"""Sets the service_set_type of this ServiceGroupVO.
 
-        服务组类型，0表示自定义服务组，1表示预定义服务组
+        **参数解释**： 服务（协议、源端口、目的端口）组的类型 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示预定义服务组 **默认取值**： 不涉及
 
         :param service_set_type: The service_set_type of this ServiceGroupVO.
         :type service_set_type: int
@@ -130,7 +130,7 @@ class ServiceGroupVO:
     def set_id(self):
         r"""Gets the set_id of this ServiceGroupVO.
 
-        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务组ID，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The set_id of this ServiceGroupVO.
         :rtype: str
@@ -141,7 +141,7 @@ class ServiceGroupVO:
     def set_id(self, set_id):
         r"""Sets the set_id of this ServiceGroupVO.
 
-        服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务组ID，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param set_id: The set_id of this ServiceGroupVO.
         :type set_id: str

@@ -33,13 +33,13 @@ class HttpGetAclTagResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
         :type offset: int
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param total: 规则标签总数
+        :param total: **参数解释**： 规则标签总数 **取值范围**： 大于0
         :type total: int
-        :param records: 规则标签列表
+        :param records: **参数解释**： 规则标签列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]
         """
         
@@ -64,7 +64,7 @@ class HttpGetAclTagResponseData:
     def offset(self):
         r"""Gets the offset of this HttpGetAclTagResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :return: The offset of this HttpGetAclTagResponseData.
         :rtype: int
@@ -75,7 +75,7 @@ class HttpGetAclTagResponseData:
     def offset(self, offset):
         r"""Sets the offset of this HttpGetAclTagResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于或等于0
 
         :param offset: The offset of this HttpGetAclTagResponseData.
         :type offset: int
@@ -86,7 +86,7 @@ class HttpGetAclTagResponseData:
     def limit(self):
         r"""Gets the limit of this HttpGetAclTagResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this HttpGetAclTagResponseData.
         :rtype: int
@@ -97,7 +97,7 @@ class HttpGetAclTagResponseData:
     def limit(self, limit):
         r"""Sets the limit of this HttpGetAclTagResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this HttpGetAclTagResponseData.
         :type limit: int
@@ -108,7 +108,7 @@ class HttpGetAclTagResponseData:
     def total(self):
         r"""Gets the total of this HttpGetAclTagResponseData.
 
-        规则标签总数
+        **参数解释**： 规则标签总数 **取值范围**： 大于0
 
         :return: The total of this HttpGetAclTagResponseData.
         :rtype: int
@@ -119,7 +119,7 @@ class HttpGetAclTagResponseData:
     def total(self, total):
         r"""Sets the total of this HttpGetAclTagResponseData.
 
-        规则标签总数
+        **参数解释**： 规则标签总数 **取值范围**： 大于0
 
         :param total: The total of this HttpGetAclTagResponseData.
         :type total: int
@@ -130,7 +130,7 @@ class HttpGetAclTagResponseData:
     def records(self):
         r"""Gets the records of this HttpGetAclTagResponseData.
 
-        规则标签列表
+        **参数解释**： 规则标签列表
 
         :return: The records of this HttpGetAclTagResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]
@@ -141,7 +141,7 @@ class HttpGetAclTagResponseData:
     def records(self, records):
         r"""Sets the records of this HttpGetAclTagResponseData.
 
-        规则标签列表
+        **参数解释**： 规则标签列表
 
         :param records: The records of this HttpGetAclTagResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.TagsVO`]

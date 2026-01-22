@@ -27,7 +27,7 @@ class UpdateCustomerIpsRespData:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**： 防火墙id **取值范围**： 不涉及
+        :param id: **参数解释**： 防火墙id **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type id: str
         """
         
@@ -43,7 +43,7 @@ class UpdateCustomerIpsRespData:
     def id(self):
         r"""Gets the id of this UpdateCustomerIpsRespData.
 
-        **参数解释**： 防火墙id **取值范围**： 不涉及
+        **参数解释**： 防火墙id **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The id of this UpdateCustomerIpsRespData.
         :rtype: str
@@ -54,7 +54,7 @@ class UpdateCustomerIpsRespData:
     def id(self, id):
         r"""Sets the id of this UpdateCustomerIpsRespData.
 
-        **参数解释**： 防火墙id **取值范围**： 不涉及
+        **参数解释**： 防火墙id **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param id: The id of this UpdateCustomerIpsRespData.
         :type id: str

@@ -29,7 +29,7 @@ class CreateInstanceByEngineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
         :type engine: str
         :param body: Body of the CreateInstanceByEngineRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateInstanceByEngineReq`
@@ -49,7 +49,7 @@ class CreateInstanceByEngineRequest:
     def engine(self):
         r"""Gets the engine of this CreateInstanceByEngineRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :return: The engine of this CreateInstanceByEngineRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateInstanceByEngineRequest:
     def engine(self, engine):
         r"""Sets the engine of this CreateInstanceByEngineRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。 **默认取值**： 不涉及。
 
         :param engine: The engine of this CreateInstanceByEngineRequest.
         :type engine: str

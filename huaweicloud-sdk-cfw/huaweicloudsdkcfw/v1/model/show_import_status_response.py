@@ -16,7 +16,7 @@ class ShowImportStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'ShowImportStatusId'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class ShowImportStatusResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 
-        :type data: object
+        :type data: :class:`huaweicloudsdkcfw.v1.ShowImportStatusId`
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class ShowImportStatusResponse(SdkResponse):
         r"""Gets the data of this ShowImportStatusResponse.
 
         :return: The data of this ShowImportStatusResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcfw.v1.ShowImportStatusId`
         """
         return self._data
 
@@ -54,7 +54,7 @@ class ShowImportStatusResponse(SdkResponse):
         r"""Sets the data of this ShowImportStatusResponse.
 
         :param data: The data of this ShowImportStatusResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkcfw.v1.ShowImportStatusId`
         """
         self._data = data
 

@@ -35,15 +35,15 @@ class ShowEngineInstanceExtendProductInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎的类型。支持的类型为rocketmq。
+        :param engine: **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param type: 产品的类型。 advanced：专享版。
+        :param type: **参数解释**： 产品的类型。 advanced：专享版。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type type: str
-        :param limit: 查询数量。
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
         :type offset: int
         """
         
@@ -69,7 +69,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def engine(self):
         r"""Gets the engine of this ShowEngineInstanceExtendProductInfoRequest.
 
-        消息引擎的类型。支持的类型为rocketmq。
+        **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The engine of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def engine(self, engine):
         r"""Sets the engine of this ShowEngineInstanceExtendProductInfoRequest.
 
-        消息引擎的类型。支持的类型为rocketmq。
+        **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ShowEngineInstanceExtendProductInfoRequest.
         :type engine: str
@@ -91,7 +91,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowEngineInstanceExtendProductInfoRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowEngineInstanceExtendProductInfoRequest.
         :type instance_id: str
@@ -113,7 +113,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def type(self):
         r"""Gets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
-        产品的类型。 advanced：专享版。
+        **参数解释**： 产品的类型。 advanced：专享版。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The type of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def type(self, type):
         r"""Sets the type of this ShowEngineInstanceExtendProductInfoRequest.
 
-        产品的类型。 advanced：专享版。
+        **参数解释**： 产品的类型。 advanced：专享版。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param type: The type of this ShowEngineInstanceExtendProductInfoRequest.
         :type type: str
@@ -135,7 +135,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def limit(self):
         r"""Gets the limit of this ShowEngineInstanceExtendProductInfoRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :return: The limit of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowEngineInstanceExtendProductInfoRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :param limit: The limit of this ShowEngineInstanceExtendProductInfoRequest.
         :type limit: int
@@ -157,7 +157,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def offset(self):
         r"""Gets the offset of this ShowEngineInstanceExtendProductInfoRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :return: The offset of this ShowEngineInstanceExtendProductInfoRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ShowEngineInstanceExtendProductInfoRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowEngineInstanceExtendProductInfoRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :param offset: The offset of this ShowEngineInstanceExtendProductInfoRequest.
         :type offset: int

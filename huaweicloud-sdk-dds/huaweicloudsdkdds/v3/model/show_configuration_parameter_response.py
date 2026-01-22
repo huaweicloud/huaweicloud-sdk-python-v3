@@ -42,21 +42,21 @@ class ShowConfigurationParameterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 参数模板ID。
+        :param id: **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 参数模板名称。
+        :param name: **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
         :type name: str
-        :param datastore_version: 数据库版本。
+        :param datastore_version: **参数解释：** 数据库版本。 **取值范围：** 不涉及。
         :type datastore_version: str
-        :param datastore_name: 数据库类型。
+        :param datastore_name: **参数解释：** 数据库类型。 **取值范围：** 不涉及。
         :type datastore_name: str
-        :param description: 参数模板描述。
+        :param description: **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
         :type description: str
-        :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param created: **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
         :type created: str
-        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        :param updated: **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
         :type updated: str
-        :param parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
+        :param parameters: **参数解释：** 参数对象，用户基于默认参数模板自定义的参数配置。 **取值范围：** 不涉及。
         :type parameters: list[:class:`huaweicloudsdkdds.v3.ConfigurationParametersResult`]
         """
         
@@ -93,7 +93,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowConfigurationParameterResponse.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
 
         :return: The id of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowConfigurationParameterResponse.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **取值范围：** 不涉及。
 
         :param id: The id of this ShowConfigurationParameterResponse.
         :type id: str
@@ -115,7 +115,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowConfigurationParameterResponse.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
 
         :return: The name of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowConfigurationParameterResponse.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **取值范围：** 不涉及。
 
         :param name: The name of this ShowConfigurationParameterResponse.
         :type name: str
@@ -137,7 +137,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def datastore_version(self):
         r"""Gets the datastore_version of this ShowConfigurationParameterResponse.
 
-        数据库版本。
+        **参数解释：** 数据库版本。 **取值范围：** 不涉及。
 
         :return: The datastore_version of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ShowConfigurationParameterResponse.
 
-        数据库版本。
+        **参数解释：** 数据库版本。 **取值范围：** 不涉及。
 
         :param datastore_version: The datastore_version of this ShowConfigurationParameterResponse.
         :type datastore_version: str
@@ -159,7 +159,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def datastore_name(self):
         r"""Gets the datastore_name of this ShowConfigurationParameterResponse.
 
-        数据库类型。
+        **参数解释：** 数据库类型。 **取值范围：** 不涉及。
 
         :return: The datastore_name of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def datastore_name(self, datastore_name):
         r"""Sets the datastore_name of this ShowConfigurationParameterResponse.
 
-        数据库类型。
+        **参数解释：** 数据库类型。 **取值范围：** 不涉及。
 
         :param datastore_name: The datastore_name of this ShowConfigurationParameterResponse.
         :type datastore_name: str
@@ -181,7 +181,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowConfigurationParameterResponse.
 
-        参数模板描述。
+        **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
 
         :return: The description of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowConfigurationParameterResponse.
 
-        参数模板描述。
+        **参数解释：** 参数模板描述。 **取值范围：** 不涉及。
 
         :param description: The description of this ShowConfigurationParameterResponse.
         :type description: str
@@ -203,7 +203,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def created(self):
         r"""Gets the created of this ShowConfigurationParameterResponse.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The created of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def created(self, created):
         r"""Sets the created of this ShowConfigurationParameterResponse.
 
-        创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 创建时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param created: The created of this ShowConfigurationParameterResponse.
         :type created: str
@@ -225,7 +225,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def updated(self):
         r"""Gets the updated of this ShowConfigurationParameterResponse.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The updated of this ShowConfigurationParameterResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def updated(self, updated):
         r"""Sets the updated of this ShowConfigurationParameterResponse.
 
-        更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
+        **参数解释：** 更新时间，格式为“yyyy-MM-ddTHH:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param updated: The updated of this ShowConfigurationParameterResponse.
         :type updated: str
@@ -247,7 +247,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def parameters(self):
         r"""Gets the parameters of this ShowConfigurationParameterResponse.
 
-        参数对象，用户基于默认参数模板自定义的参数配置。
+        **参数解释：** 参数对象，用户基于默认参数模板自定义的参数配置。 **取值范围：** 不涉及。
 
         :return: The parameters of this ShowConfigurationParameterResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.ConfigurationParametersResult`]
@@ -258,7 +258,7 @@ class ShowConfigurationParameterResponse(SdkResponse):
     def parameters(self, parameters):
         r"""Sets the parameters of this ShowConfigurationParameterResponse.
 
-        参数对象，用户基于默认参数模板自定义的参数配置。
+        **参数解释：** 参数对象，用户基于默认参数模板自定义的参数配置。 **取值范围：** 不涉及。
 
         :param parameters: The parameters of this ShowConfigurationParameterResponse.
         :type parameters: list[:class:`huaweicloudsdkdds.v3.ConfigurationParametersResult`]

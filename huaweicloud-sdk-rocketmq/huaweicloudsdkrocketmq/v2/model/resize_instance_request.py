@@ -31,9 +31,9 @@ class ResizeInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎的类型。支持的类型为rocketmq。
+        :param engine: **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
         :param body: Body of the ResizeInstanceRequest
         :type body: :class:`huaweicloudsdkrocketmq.v2.ResizeEngineInstanceReq`
@@ -55,7 +55,7 @@ class ResizeInstanceRequest:
     def engine(self):
         r"""Gets the engine of this ResizeInstanceRequest.
 
-        消息引擎的类型。支持的类型为rocketmq。
+        **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The engine of this ResizeInstanceRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ResizeInstanceRequest:
     def engine(self, engine):
         r"""Sets the engine of this ResizeInstanceRequest.
 
-        消息引擎的类型。支持的类型为rocketmq。
+        **参数解释**： 消息引擎的类型。支持的类型为rocketmq。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ResizeInstanceRequest.
         :type engine: str
@@ -77,7 +77,7 @@ class ResizeInstanceRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ResizeInstanceRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ResizeInstanceRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ResizeInstanceRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ResizeInstanceRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ResizeInstanceRequest.
         :type instance_id: str

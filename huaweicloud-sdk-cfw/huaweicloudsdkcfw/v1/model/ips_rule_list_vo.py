@@ -37,17 +37,17 @@ class IpsRuleListVO:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 
+        :param fw_instance_id: 防火墙ID
         :type fw_instance_id: str
-        :param limit: 
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
-        :param object_id: 
+        :param object_id: 防护对象id
         :type object_id: str
-        :param offset: 
+        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param records: 
+        :param records: 查询ips规则列表
         :type records: list[:class:`huaweicloudsdkcfw.v1.IpsRuleVO`]
-        :param total: 
+        :param total: 查询ips规则总数
         :type total: int
         """
         
@@ -78,6 +78,8 @@ class IpsRuleListVO:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this IpsRuleListVO.
 
+        防火墙ID
+
         :return: The fw_instance_id of this IpsRuleListVO.
         :rtype: str
         """
@@ -86,6 +88,8 @@ class IpsRuleListVO:
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this IpsRuleListVO.
+
+        防火墙ID
 
         :param fw_instance_id: The fw_instance_id of this IpsRuleListVO.
         :type fw_instance_id: str
@@ -96,6 +100,8 @@ class IpsRuleListVO:
     def limit(self):
         r"""Gets the limit of this IpsRuleListVO.
 
+        每页显示个数，范围为1-1024
+
         :return: The limit of this IpsRuleListVO.
         :rtype: int
         """
@@ -104,6 +110,8 @@ class IpsRuleListVO:
     @limit.setter
     def limit(self, limit):
         r"""Sets the limit of this IpsRuleListVO.
+
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this IpsRuleListVO.
         :type limit: int
@@ -114,6 +122,8 @@ class IpsRuleListVO:
     def object_id(self):
         r"""Gets the object_id of this IpsRuleListVO.
 
+        防护对象id
+
         :return: The object_id of this IpsRuleListVO.
         :rtype: str
         """
@@ -122,6 +132,8 @@ class IpsRuleListVO:
     @object_id.setter
     def object_id(self, object_id):
         r"""Sets the object_id of this IpsRuleListVO.
+
+        防护对象id
 
         :param object_id: The object_id of this IpsRuleListVO.
         :type object_id: str
@@ -132,6 +144,8 @@ class IpsRuleListVO:
     def offset(self):
         r"""Gets the offset of this IpsRuleListVO.
 
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+
         :return: The offset of this IpsRuleListVO.
         :rtype: int
         """
@@ -140,6 +154,8 @@ class IpsRuleListVO:
     @offset.setter
     def offset(self, offset):
         r"""Sets the offset of this IpsRuleListVO.
+
+        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
         :param offset: The offset of this IpsRuleListVO.
         :type offset: int
@@ -150,6 +166,8 @@ class IpsRuleListVO:
     def records(self):
         r"""Gets the records of this IpsRuleListVO.
 
+        查询ips规则列表
+
         :return: The records of this IpsRuleListVO.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.IpsRuleVO`]
         """
@@ -158,6 +176,8 @@ class IpsRuleListVO:
     @records.setter
     def records(self, records):
         r"""Sets the records of this IpsRuleListVO.
+
+        查询ips规则列表
 
         :param records: The records of this IpsRuleListVO.
         :type records: list[:class:`huaweicloudsdkcfw.v1.IpsRuleVO`]
@@ -168,6 +188,8 @@ class IpsRuleListVO:
     def total(self):
         r"""Gets the total of this IpsRuleListVO.
 
+        查询ips规则总数
+
         :return: The total of this IpsRuleListVO.
         :rtype: int
         """
@@ -176,6 +198,8 @@ class IpsRuleListVO:
     @total.setter
     def total(self, total):
         r"""Sets the total of this IpsRuleListVO.
+
+        查询ips规则总数
 
         :param total: The total of this IpsRuleListVO.
         :type total: int

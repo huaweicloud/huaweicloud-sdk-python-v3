@@ -34,13 +34,13 @@ class ShowRocketMqConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数。
+        :param total: **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param next_offset: 下个分页的offset。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
-        :param rocketmq_configs: RocketMQ配置。
+        :param rocketmq_configs: **参数解释**： RocketMQ配置。    **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type rocketmq_configs: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigResp`]
         """
         
@@ -65,7 +65,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowRocketMqConfigsResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ShowRocketMqConfigsResponse.
         :rtype: float
@@ -76,7 +76,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowRocketMqConfigsResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ShowRocketMqConfigsResponse.
         :type total: float
@@ -87,7 +87,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ShowRocketMqConfigsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ShowRocketMqConfigsResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ShowRocketMqConfigsResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ShowRocketMqConfigsResponse.
         :type next_offset: int
@@ -109,7 +109,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ShowRocketMqConfigsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ShowRocketMqConfigsResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ShowRocketMqConfigsResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ShowRocketMqConfigsResponse.
         :type previous_offset: int
@@ -131,7 +131,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def rocketmq_configs(self):
         r"""Gets the rocketmq_configs of this ShowRocketMqConfigsResponse.
 
-        RocketMQ配置。
+        **参数解释**： RocketMQ配置。    **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The rocketmq_configs of this ShowRocketMqConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigResp`]
@@ -142,7 +142,7 @@ class ShowRocketMqConfigsResponse(SdkResponse):
     def rocketmq_configs(self, rocketmq_configs):
         r"""Sets the rocketmq_configs of this ShowRocketMqConfigsResponse.
 
-        RocketMQ配置。
+        **参数解释**： RocketMQ配置。    **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param rocketmq_configs: The rocketmq_configs of this ShowRocketMqConfigsResponse.
         :type rocketmq_configs: list[:class:`huaweicloudsdkrocketmq.v2.RocketMQConfigResp`]

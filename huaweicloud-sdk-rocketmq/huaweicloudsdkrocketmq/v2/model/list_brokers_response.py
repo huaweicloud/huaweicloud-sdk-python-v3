@@ -34,13 +34,13 @@ class ListBrokersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数。
+        :param total: **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param next_offset: 下个分页的offset。
+        :param next_offset: **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type next_offset: int
-        :param previous_offset: 上个分页的offset。
+        :param previous_offset: **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type previous_offset: int
-        :param brokers: 代理列表。
+        :param brokers: **参数解释**： 代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.ListBrokersRespBrokers`]
         """
         
@@ -65,7 +65,7 @@ class ListBrokersResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListBrokersResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ListBrokersResponse.
         :rtype: float
@@ -76,7 +76,7 @@ class ListBrokersResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListBrokersResponse.
 
-        总数。
+        **参数解释**： 总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ListBrokersResponse.
         :type total: float
@@ -87,7 +87,7 @@ class ListBrokersResponse(SdkResponse):
     def next_offset(self):
         r"""Gets the next_offset of this ListBrokersResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The next_offset of this ListBrokersResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class ListBrokersResponse(SdkResponse):
     def next_offset(self, next_offset):
         r"""Sets the next_offset of this ListBrokersResponse.
 
-        下个分页的offset。
+        **参数解释**： 下个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param next_offset: The next_offset of this ListBrokersResponse.
         :type next_offset: int
@@ -109,7 +109,7 @@ class ListBrokersResponse(SdkResponse):
     def previous_offset(self):
         r"""Gets the previous_offset of this ListBrokersResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The previous_offset of this ListBrokersResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ListBrokersResponse(SdkResponse):
     def previous_offset(self, previous_offset):
         r"""Sets the previous_offset of this ListBrokersResponse.
 
-        上个分页的offset。
+        **参数解释**： 上个分页的offset。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param previous_offset: The previous_offset of this ListBrokersResponse.
         :type previous_offset: int
@@ -131,7 +131,7 @@ class ListBrokersResponse(SdkResponse):
     def brokers(self):
         r"""Gets the brokers of this ListBrokersResponse.
 
-        代理列表。
+        **参数解释**： 代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this ListBrokersResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ListBrokersRespBrokers`]
@@ -142,7 +142,7 @@ class ListBrokersResponse(SdkResponse):
     def brokers(self, brokers):
         r"""Sets the brokers of this ListBrokersResponse.
 
-        代理列表。
+        **参数解释**： 代理列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this ListBrokersResponse.
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.ListBrokersRespBrokers`]

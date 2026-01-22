@@ -19,7 +19,7 @@ class DiagnosisReportResp:
         'group_name': 'str',
         'consumer_nums': 'int',
         'status': 'str',
-        'creat_at': 'int',
+        'created_at': 'str',
         'abnormal_item_sum': 'int',
         'faulted_node_sum': 'int'
     }
@@ -29,29 +29,29 @@ class DiagnosisReportResp:
         'group_name': 'group_name',
         'consumer_nums': 'consumer_nums',
         'status': 'status',
-        'creat_at': 'creat_at',
+        'created_at': 'created_at',
         'abnormal_item_sum': 'abnormal_item_sum',
         'faulted_node_sum': 'faulted_node_sum'
     }
 
-    def __init__(self, report_id=None, group_name=None, consumer_nums=None, status=None, creat_at=None, abnormal_item_sum=None, faulted_node_sum=None):
+    def __init__(self, report_id=None, group_name=None, consumer_nums=None, status=None, created_at=None, abnormal_item_sum=None, faulted_node_sum=None):
         r"""DiagnosisReportResp
 
         The model defined in huaweicloud sdk
 
-        :param report_id: **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        :param report_id: **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type report_id: str
-        :param group_name: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        :param group_name: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_name: str
-        :param consumer_nums: **参数解释**： 消费者数量。 **取值范围**： 不涉及。
+        :param consumer_nums: **参数解释**： 消费者数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type consumer_nums: int
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **约束限制**： 不涉及。 **取值范围**： - diagnosing：诊断中。 - failed：诊断失败。 - deleted：手动删除。 - finished：诊断完成。 - normal：诊断结果正常。 - abnormal：诊断结果异常。 **默认取值**： 不涉及。
         :type status: str
-        :param creat_at: **参数解释**： 生成时间。 **取值范围**： 不涉及。
-        :type creat_at: int
-        :param abnormal_item_sum: **参数解释**： 异常项数量。 **取值范围**： 不涉及。
+        :param created_at: **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type created_at: str
+        :param abnormal_item_sum: **参数解释**： 异常项数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type abnormal_item_sum: int
-        :param faulted_node_sum: **参数解释**： 异常节点数量。 **取值范围**： 不涉及。
+        :param faulted_node_sum: **参数解释**： 异常节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type faulted_node_sum: int
         """
         
@@ -61,7 +61,7 @@ class DiagnosisReportResp:
         self._group_name = None
         self._consumer_nums = None
         self._status = None
-        self._creat_at = None
+        self._created_at = None
         self._abnormal_item_sum = None
         self._faulted_node_sum = None
         self.discriminator = None
@@ -74,8 +74,8 @@ class DiagnosisReportResp:
             self.consumer_nums = consumer_nums
         if status is not None:
             self.status = status
-        if creat_at is not None:
-            self.creat_at = creat_at
+        if created_at is not None:
+            self.created_at = created_at
         if abnormal_item_sum is not None:
             self.abnormal_item_sum = abnormal_item_sum
         if faulted_node_sum is not None:
@@ -85,7 +85,7 @@ class DiagnosisReportResp:
     def report_id(self):
         r"""Gets the report_id of this DiagnosisReportResp.
 
-        **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The report_id of this DiagnosisReportResp.
         :rtype: str
@@ -96,7 +96,7 @@ class DiagnosisReportResp:
     def report_id(self, report_id):
         r"""Sets the report_id of this DiagnosisReportResp.
 
-        **参数解释**： 报告ID。 **取值范围**： 不涉及。
+        **参数解释**： 报告ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param report_id: The report_id of this DiagnosisReportResp.
         :type report_id: str
@@ -107,7 +107,7 @@ class DiagnosisReportResp:
     def group_name(self):
         r"""Gets the group_name of this DiagnosisReportResp.
 
-        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_name of this DiagnosisReportResp.
         :rtype: str
@@ -118,7 +118,7 @@ class DiagnosisReportResp:
     def group_name(self, group_name):
         r"""Sets the group_name of this DiagnosisReportResp.
 
-        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_name: The group_name of this DiagnosisReportResp.
         :type group_name: str
@@ -129,7 +129,7 @@ class DiagnosisReportResp:
     def consumer_nums(self):
         r"""Gets the consumer_nums of this DiagnosisReportResp.
 
-        **参数解释**： 消费者数量。 **取值范围**： 不涉及。
+        **参数解释**： 消费者数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The consumer_nums of this DiagnosisReportResp.
         :rtype: int
@@ -140,7 +140,7 @@ class DiagnosisReportResp:
     def consumer_nums(self, consumer_nums):
         r"""Sets the consumer_nums of this DiagnosisReportResp.
 
-        **参数解释**： 消费者数量。 **取值范围**： 不涉及。
+        **参数解释**： 消费者数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param consumer_nums: The consumer_nums of this DiagnosisReportResp.
         :type consumer_nums: int
@@ -151,7 +151,7 @@ class DiagnosisReportResp:
     def status(self):
         r"""Gets the status of this DiagnosisReportResp.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **约束限制**： 不涉及。 **取值范围**： - diagnosing：诊断中。 - failed：诊断失败。 - deleted：手动删除。 - finished：诊断完成。 - normal：诊断结果正常。 - abnormal：诊断结果异常。 **默认取值**： 不涉及。
 
         :return: The status of this DiagnosisReportResp.
         :rtype: str
@@ -162,7 +162,7 @@ class DiagnosisReportResp:
     def status(self, status):
         r"""Sets the status of this DiagnosisReportResp.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **约束限制**： 不涉及。 **取值范围**： - diagnosing：诊断中。 - failed：诊断失败。 - deleted：手动删除。 - finished：诊断完成。 - normal：诊断结果正常。 - abnormal：诊断结果异常。 **默认取值**： 不涉及。
 
         :param status: The status of this DiagnosisReportResp.
         :type status: str
@@ -170,32 +170,32 @@ class DiagnosisReportResp:
         self._status = status
 
     @property
-    def creat_at(self):
-        r"""Gets the creat_at of this DiagnosisReportResp.
+    def created_at(self):
+        r"""Gets the created_at of this DiagnosisReportResp.
 
-        **参数解释**： 生成时间。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The creat_at of this DiagnosisReportResp.
-        :rtype: int
+        :return: The created_at of this DiagnosisReportResp.
+        :rtype: str
         """
-        return self._creat_at
+        return self._created_at
 
-    @creat_at.setter
-    def creat_at(self, creat_at):
-        r"""Sets the creat_at of this DiagnosisReportResp.
+    @created_at.setter
+    def created_at(self, created_at):
+        r"""Sets the created_at of this DiagnosisReportResp.
 
-        **参数解释**： 生成时间。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param creat_at: The creat_at of this DiagnosisReportResp.
-        :type creat_at: int
+        :param created_at: The created_at of this DiagnosisReportResp.
+        :type created_at: str
         """
-        self._creat_at = creat_at
+        self._created_at = created_at
 
     @property
     def abnormal_item_sum(self):
         r"""Gets the abnormal_item_sum of this DiagnosisReportResp.
 
-        **参数解释**： 异常项数量。 **取值范围**： 不涉及。
+        **参数解释**： 异常项数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The abnormal_item_sum of this DiagnosisReportResp.
         :rtype: int
@@ -206,7 +206,7 @@ class DiagnosisReportResp:
     def abnormal_item_sum(self, abnormal_item_sum):
         r"""Sets the abnormal_item_sum of this DiagnosisReportResp.
 
-        **参数解释**： 异常项数量。 **取值范围**： 不涉及。
+        **参数解释**： 异常项数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param abnormal_item_sum: The abnormal_item_sum of this DiagnosisReportResp.
         :type abnormal_item_sum: int
@@ -217,7 +217,7 @@ class DiagnosisReportResp:
     def faulted_node_sum(self):
         r"""Gets the faulted_node_sum of this DiagnosisReportResp.
 
-        **参数解释**： 异常节点数量。 **取值范围**： 不涉及。
+        **参数解释**： 异常节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The faulted_node_sum of this DiagnosisReportResp.
         :rtype: int
@@ -228,7 +228,7 @@ class DiagnosisReportResp:
     def faulted_node_sum(self, faulted_node_sum):
         r"""Sets the faulted_node_sum of this DiagnosisReportResp.
 
-        **参数解释**： 异常节点数量。 **取值范围**： 不涉及。
+        **参数解释**： 异常节点数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param faulted_node_sum: The faulted_node_sum of this DiagnosisReportResp.
         :type faulted_node_sum: int

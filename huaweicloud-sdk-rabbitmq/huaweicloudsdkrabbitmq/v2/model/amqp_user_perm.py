@@ -33,13 +33,13 @@ class AMQPUserPerm:
 
         The model defined in huaweicloud sdk
 
-        :param vhost: 需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。
+        :param vhost: **参数解释**： 需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。 **取值范围**： 不涉及。
         :type vhost: str
-        :param conf: 使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。
+        :param conf: **参数解释**： 使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。 **取值范围**： 不涉及。
         :type conf: str
-        :param write: 使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。
+        :param write: **参数解释**： 使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。 **取值范围**： 不涉及。
         :type write: str
-        :param read: 使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。
+        :param read: **参数解释**： 使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。 **取值范围**： 不涉及。
         :type read: str
         """
         
@@ -60,7 +60,7 @@ class AMQPUserPerm:
     def vhost(self):
         r"""Gets the vhost of this AMQPUserPerm.
 
-        需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。
+        **参数解释**： 需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。 **取值范围**： 不涉及。
 
         :return: The vhost of this AMQPUserPerm.
         :rtype: str
@@ -71,7 +71,7 @@ class AMQPUserPerm:
     def vhost(self, vhost):
         r"""Sets the vhost of this AMQPUserPerm.
 
-        需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。
+        **参数解释**： 需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。 **取值范围**： 不涉及。
 
         :param vhost: The vhost of this AMQPUserPerm.
         :type vhost: str
@@ -82,7 +82,7 @@ class AMQPUserPerm:
     def conf(self):
         r"""Gets the conf of this AMQPUserPerm.
 
-        使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。
+        **参数解释**： 使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。 **取值范围**： 不涉及。
 
         :return: The conf of this AMQPUserPerm.
         :rtype: str
@@ -93,7 +93,7 @@ class AMQPUserPerm:
     def conf(self, conf):
         r"""Sets the conf of this AMQPUserPerm.
 
-        使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。
+        **参数解释**： 使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。 **取值范围**： 不涉及。
 
         :param conf: The conf of this AMQPUserPerm.
         :type conf: str
@@ -104,7 +104,7 @@ class AMQPUserPerm:
     def write(self):
         r"""Gets the write of this AMQPUserPerm.
 
-        使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。
+        **参数解释**： 使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。 **取值范围**： 不涉及。
 
         :return: The write of this AMQPUserPerm.
         :rtype: str
@@ -115,7 +115,7 @@ class AMQPUserPerm:
     def write(self, write):
         r"""Sets the write of this AMQPUserPerm.
 
-        使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。
+        **参数解释**： 使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。 **取值范围**： 不涉及。
 
         :param write: The write of this AMQPUserPerm.
         :type write: str
@@ -126,7 +126,7 @@ class AMQPUserPerm:
     def read(self):
         r"""Gets the read of this AMQPUserPerm.
 
-        使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。
+        **参数解释**： 使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。 **取值范围**： 不涉及。
 
         :return: The read of this AMQPUserPerm.
         :rtype: str
@@ -137,7 +137,7 @@ class AMQPUserPerm:
     def read(self, read):
         r"""Sets the read of this AMQPUserPerm.
 
-        使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。
+        **参数解释**： 使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。 **取值范围**： 不涉及。
 
         :param read: The read of this AMQPUserPerm.
         :type read: str

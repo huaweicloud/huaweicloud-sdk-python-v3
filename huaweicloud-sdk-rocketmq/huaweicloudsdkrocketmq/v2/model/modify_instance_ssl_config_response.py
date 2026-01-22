@@ -30,9 +30,9 @@ class ModifyInstanceSslConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
+        :param job_id: **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type job_id: str
-        :param tls_mode: 协议模式。
+        :param tls_mode: **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tls_mode: str
         """
         
@@ -51,7 +51,7 @@ class ModifyInstanceSslConfigResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ModifyInstanceSslConfigResponse.
 
-        任务ID。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The job_id of this ModifyInstanceSslConfigResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ModifyInstanceSslConfigResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ModifyInstanceSslConfigResponse.
 
-        任务ID。
+        **参数解释**： 任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param job_id: The job_id of this ModifyInstanceSslConfigResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class ModifyInstanceSslConfigResponse(SdkResponse):
     def tls_mode(self):
         r"""Gets the tls_mode of this ModifyInstanceSslConfigResponse.
 
-        协议模式。
+        **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The tls_mode of this ModifyInstanceSslConfigResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class ModifyInstanceSslConfigResponse(SdkResponse):
     def tls_mode(self, tls_mode):
         r"""Sets the tls_mode of this ModifyInstanceSslConfigResponse.
 
-        协议模式。
+        **参数解释**： 协议模式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param tls_mode: The tls_mode of this ModifyInstanceSslConfigResponse.
         :type tls_mode: str

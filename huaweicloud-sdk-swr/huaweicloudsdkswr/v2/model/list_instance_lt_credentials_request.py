@@ -17,16 +17,18 @@ class ListInstanceLtCredentialsRequest:
     openapi_types = {
         'instance_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'self_only': 'bool'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'self_only': 'self_only'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, self_only=None):
         r"""ListInstanceLtCredentialsRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListInstanceLtCredentialsRequest:
         :type offset: int
         :param limit: 返回条数，默认为100，最大值为100。**注意：offset和limit参数需要配套使用。**
         :type limit: int
+        :param self_only: 值为false的时候，拥有te_admin角色的用户可以查询实例下所有的长期登录凭证，默认情况下只查询自己创建的长期登录凭证
+        :type self_only: bool
         """
         
         
@@ -44,6 +48,7 @@ class ListInstanceLtCredentialsRequest:
         self._instance_id = None
         self._offset = None
         self._limit = None
+        self._self_only = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -51,6 +56,8 @@ class ListInstanceLtCredentialsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if self_only is not None:
+            self.self_only = self_only
 
     @property
     def instance_id(self):
@@ -117,6 +124,28 @@ class ListInstanceLtCredentialsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def self_only(self):
+        r"""Gets the self_only of this ListInstanceLtCredentialsRequest.
+
+        值为false的时候，拥有te_admin角色的用户可以查询实例下所有的长期登录凭证，默认情况下只查询自己创建的长期登录凭证
+
+        :return: The self_only of this ListInstanceLtCredentialsRequest.
+        :rtype: bool
+        """
+        return self._self_only
+
+    @self_only.setter
+    def self_only(self, self_only):
+        r"""Sets the self_only of this ListInstanceLtCredentialsRequest.
+
+        值为false的时候，拥有te_admin角色的用户可以查询实例下所有的长期登录凭证，默认情况下只查询自己创建的长期登录凭证
+
+        :param self_only: The self_only of this ListInstanceLtCredentialsRequest.
+        :type self_only: bool
+        """
+        self._self_only = self_only
 
     def to_dict(self):
         result = {}

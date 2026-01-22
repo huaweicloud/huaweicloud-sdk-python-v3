@@ -31,9 +31,9 @@ class Subscription:
 
         The model defined in huaweicloud sdk
 
-        :param topic: 订阅的Topic名称。
+        :param topic: **参数解释**： 订阅的Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param type: 订阅类型，取值如下：TAG和SQL92。
+        :param type: **参数解释**： 订阅类型。 **约束限制**： 不涉及。 **取值范围**： - TAG：基于TAG进行订阅。 - SQL92：基于消息属性进行复杂条件过滤的订阅。 **默认取值**： 不涉及。
         :type type: str
         :param expression: 订阅tag字符。
         :type expression: str
@@ -57,7 +57,7 @@ class Subscription:
     def topic(self):
         r"""Gets the topic of this Subscription.
 
-        订阅的Topic名称。
+        **参数解释**： 订阅的Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this Subscription.
         :rtype: str
@@ -68,7 +68,7 @@ class Subscription:
     def topic(self, topic):
         r"""Sets the topic of this Subscription.
 
-        订阅的Topic名称。
+        **参数解释**： 订阅的Topic名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this Subscription.
         :type topic: str
@@ -79,7 +79,7 @@ class Subscription:
     def type(self):
         r"""Gets the type of this Subscription.
 
-        订阅类型，取值如下：TAG和SQL92。
+        **参数解释**： 订阅类型。 **约束限制**： 不涉及。 **取值范围**： - TAG：基于TAG进行订阅。 - SQL92：基于消息属性进行复杂条件过滤的订阅。 **默认取值**： 不涉及。
 
         :return: The type of this Subscription.
         :rtype: str
@@ -90,7 +90,7 @@ class Subscription:
     def type(self, type):
         r"""Sets the type of this Subscription.
 
-        订阅类型，取值如下：TAG和SQL92。
+        **参数解释**： 订阅类型。 **约束限制**： 不涉及。 **取值范围**： - TAG：基于TAG进行订阅。 - SQL92：基于消息属性进行复杂条件过滤的订阅。 **默认取值**： 不涉及。
 
         :param type: The type of this Subscription.
         :type type: str

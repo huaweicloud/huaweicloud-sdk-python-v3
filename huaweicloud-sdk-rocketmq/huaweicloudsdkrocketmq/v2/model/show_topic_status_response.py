@@ -32,11 +32,11 @@ class ShowTopicStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param max_offset: 最大偏移量。
+        :param max_offset: **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max_offset: int
-        :param min_offset: 最小偏移量。
+        :param min_offset: **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type min_offset: int
-        :param brokers: 代理。
+        :param brokers: **参数解释**： 代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespBrokers`]
         """
         
@@ -58,7 +58,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def max_offset(self):
         r"""Gets the max_offset of this ShowTopicStatusResponse.
 
-        最大偏移量。
+        **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max_offset of this ShowTopicStatusResponse.
         :rtype: int
@@ -69,7 +69,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def max_offset(self, max_offset):
         r"""Sets the max_offset of this ShowTopicStatusResponse.
 
-        最大偏移量。
+        **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max_offset: The max_offset of this ShowTopicStatusResponse.
         :type max_offset: int
@@ -80,7 +80,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def min_offset(self):
         r"""Gets the min_offset of this ShowTopicStatusResponse.
 
-        最小偏移量。
+        **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The min_offset of this ShowTopicStatusResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def min_offset(self, min_offset):
         r"""Sets the min_offset of this ShowTopicStatusResponse.
 
-        最小偏移量。
+        **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param min_offset: The min_offset of this ShowTopicStatusResponse.
         :type min_offset: int
@@ -102,7 +102,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def brokers(self):
         r"""Gets the brokers of this ShowTopicStatusResponse.
 
-        代理。
+        **参数解释**： 代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The brokers of this ShowTopicStatusResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespBrokers`]
@@ -113,7 +113,7 @@ class ShowTopicStatusResponse(SdkResponse):
     def brokers(self, brokers):
         r"""Sets the brokers of this ShowTopicStatusResponse.
 
-        代理。
+        **参数解释**： 代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param brokers: The brokers of this ShowTopicStatusResponse.
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.ShowTopicStatusRespBrokers`]

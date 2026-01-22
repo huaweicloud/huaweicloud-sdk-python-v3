@@ -16,7 +16,7 @@ class DescribeGroupsRespGroup:
 
     openapi_types = {
         'state': 'str',
-        'created_at': 'object',
+        'created_at': 'int',
         'group_id': 'str',
         'coordinator_id': 'int',
         'assignment_strategy': 'str',
@@ -40,7 +40,7 @@ class DescribeGroupsRespGroup:
         :param state: **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
         :type state: str
         :param created_at: **参数解释**： 创建时间。 **取值范围**： 不涉及。
-        :type created_at: object
+        :type created_at: int
         :param group_id: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
         :type group_id: str
         :param coordinator_id: **参数解释**： 协调器编号。 **取值范围**： 不涉及。
@@ -103,7 +103,7 @@ class DescribeGroupsRespGroup:
         **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The created_at of this DescribeGroupsRespGroup.
-        :rtype: object
+        :rtype: int
         """
         return self._created_at
 
@@ -114,7 +114,7 @@ class DescribeGroupsRespGroup:
         **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param created_at: The created_at of this DescribeGroupsRespGroup.
-        :type created_at: object
+        :type created_at: int
         """
         self._created_at = created_at
 

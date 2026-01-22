@@ -40,19 +40,19 @@ class ShowCesHierarchyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dimensions: 监控维度。
+        :param dimensions: **参数解释**： 监控维度。
         :type dimensions: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespDimensions`]
-        :param instance_ids: 实例信息。
+        :param instance_ids: **参数解释**： 实例信息。
         :type instance_ids: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespInstanceIds`]
-        :param nodes: 节点信息。
+        :param nodes: **参数解释**： 节点信息。
         :type nodes: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespNodes`]
-        :param queues: Queue信息。
+        :param queues: **参数解释**： Queue信息。
         :type queues: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
-        :param vhosts: Vhost信息
+        :param vhosts: **参数解释**： Vhost信息
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
-        :param exchanges: exchange信息
+        :param exchanges: **参数解释**： Exchange信息
         :type exchanges: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
-        :param groups: 消费组信息。
+        :param groups: **参数解释**： 消费组信息。
         :type groups: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespGroups`]
         """
         
@@ -86,7 +86,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def dimensions(self):
         r"""Gets the dimensions of this ShowCesHierarchyResponse.
 
-        监控维度。
+        **参数解释**： 监控维度。
 
         :return: The dimensions of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespDimensions`]
@@ -97,7 +97,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this ShowCesHierarchyResponse.
 
-        监控维度。
+        **参数解释**： 监控维度。
 
         :param dimensions: The dimensions of this ShowCesHierarchyResponse.
         :type dimensions: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespDimensions`]
@@ -108,7 +108,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def instance_ids(self):
         r"""Gets the instance_ids of this ShowCesHierarchyResponse.
 
-        实例信息。
+        **参数解释**： 实例信息。
 
         :return: The instance_ids of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespInstanceIds`]
@@ -119,7 +119,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def instance_ids(self, instance_ids):
         r"""Sets the instance_ids of this ShowCesHierarchyResponse.
 
-        实例信息。
+        **参数解释**： 实例信息。
 
         :param instance_ids: The instance_ids of this ShowCesHierarchyResponse.
         :type instance_ids: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespInstanceIds`]
@@ -130,7 +130,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def nodes(self):
         r"""Gets the nodes of this ShowCesHierarchyResponse.
 
-        节点信息。
+        **参数解释**： 节点信息。
 
         :return: The nodes of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespNodes`]
@@ -141,7 +141,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def nodes(self, nodes):
         r"""Sets the nodes of this ShowCesHierarchyResponse.
 
-        节点信息。
+        **参数解释**： 节点信息。
 
         :param nodes: The nodes of this ShowCesHierarchyResponse.
         :type nodes: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespNodes`]
@@ -152,7 +152,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def queues(self):
         r"""Gets the queues of this ShowCesHierarchyResponse.
 
-        Queue信息。
+        **参数解释**： Queue信息。
 
         :return: The queues of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
@@ -163,7 +163,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def queues(self, queues):
         r"""Sets the queues of this ShowCesHierarchyResponse.
 
-        Queue信息。
+        **参数解释**： Queue信息。
 
         :param queues: The queues of this ShowCesHierarchyResponse.
         :type queues: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespQueues`]
@@ -174,7 +174,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def vhosts(self):
         r"""Gets the vhosts of this ShowCesHierarchyResponse.
 
-        Vhost信息
+        **参数解释**： Vhost信息
 
         :return: The vhosts of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
@@ -185,7 +185,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def vhosts(self, vhosts):
         r"""Sets the vhosts of this ShowCesHierarchyResponse.
 
-        Vhost信息
+        **参数解释**： Vhost信息
 
         :param vhosts: The vhosts of this ShowCesHierarchyResponse.
         :type vhosts: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespVhosts`]
@@ -196,7 +196,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def exchanges(self):
         r"""Gets the exchanges of this ShowCesHierarchyResponse.
 
-        exchange信息
+        **参数解释**： Exchange信息
 
         :return: The exchanges of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
@@ -207,7 +207,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def exchanges(self, exchanges):
         r"""Sets the exchanges of this ShowCesHierarchyResponse.
 
-        exchange信息
+        **参数解释**： Exchange信息
 
         :param exchanges: The exchanges of this ShowCesHierarchyResponse.
         :type exchanges: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespExchanges`]
@@ -218,7 +218,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def groups(self):
         r"""Gets the groups of this ShowCesHierarchyResponse.
 
-        消费组信息。
+        **参数解释**： 消费组信息。
 
         :return: The groups of this ShowCesHierarchyResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespGroups`]
@@ -229,7 +229,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def groups(self, groups):
         r"""Sets the groups of this ShowCesHierarchyResponse.
 
-        消费组信息。
+        **参数解释**： 消费组信息。
 
         :param groups: The groups of this ShowCesHierarchyResponse.
         :type groups: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespGroups`]

@@ -37,17 +37,17 @@ class BatchUpdateConsumerGroup:
 
         The model defined in huaweicloud sdk
 
-        :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        :param name: **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param broadcast: 是否广播。
+        :param broadcast: **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
         :type broadcast: bool
-        :param retry_max_time: 最大重试次数，取值范围为1~16。
+        :param retry_max_time: **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
         :type retry_max_time: int
-        :param enabled: 是否可以消费。
+        :param enabled: **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
         :type enabled: bool
-        :param consume_orderly: 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        :param consume_orderly: **参数解释**： 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。[华为云Stack不支持](tag:hcs,hcs_oemout) **约束限制**： 不涉及。 **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
         :type consume_orderly: bool
-        :param group_desc: 消费组描述，长度0~200个字符。
+        :param group_desc: **参数解释**： 消费组描述。 **约束限制**： 长度0~200个字符 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group_desc: str
         """
         
@@ -61,8 +61,7 @@ class BatchUpdateConsumerGroup:
         self._group_desc = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if broadcast is not None:
             self.broadcast = broadcast
         if retry_max_time is not None:
@@ -78,7 +77,7 @@ class BatchUpdateConsumerGroup:
     def name(self):
         r"""Gets the name of this BatchUpdateConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this BatchUpdateConsumerGroup.
         :rtype: str
@@ -89,7 +88,7 @@ class BatchUpdateConsumerGroup:
     def name(self, name):
         r"""Sets the name of this BatchUpdateConsumerGroup.
 
-        消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
+        **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this BatchUpdateConsumerGroup.
         :type name: str
@@ -100,7 +99,7 @@ class BatchUpdateConsumerGroup:
     def broadcast(self):
         r"""Gets the broadcast of this BatchUpdateConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :return: The broadcast of this BatchUpdateConsumerGroup.
         :rtype: bool
@@ -111,7 +110,7 @@ class BatchUpdateConsumerGroup:
     def broadcast(self, broadcast):
         r"""Sets the broadcast of this BatchUpdateConsumerGroup.
 
-        是否广播。
+        **参数解释**： 是否设置为广播消费。 **约束限制**： 不涉及。 **取值范围**： - true：使用广播消费。 - false：不使用广播消费。 **默认取值**： 不涉及。
 
         :param broadcast: The broadcast of this BatchUpdateConsumerGroup.
         :type broadcast: bool
@@ -122,7 +121,7 @@ class BatchUpdateConsumerGroup:
     def retry_max_time(self):
         r"""Gets the retry_max_time of this BatchUpdateConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :return: The retry_max_time of this BatchUpdateConsumerGroup.
         :rtype: int
@@ -133,7 +132,7 @@ class BatchUpdateConsumerGroup:
     def retry_max_time(self, retry_max_time):
         r"""Sets the retry_max_time of this BatchUpdateConsumerGroup.
 
-        最大重试次数，取值范围为1~16。
+        **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
 
         :param retry_max_time: The retry_max_time of this BatchUpdateConsumerGroup.
         :type retry_max_time: int
@@ -144,7 +143,7 @@ class BatchUpdateConsumerGroup:
     def enabled(self):
         r"""Gets the enabled of this BatchUpdateConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :return: The enabled of this BatchUpdateConsumerGroup.
         :rtype: bool
@@ -155,7 +154,7 @@ class BatchUpdateConsumerGroup:
     def enabled(self, enabled):
         r"""Sets the enabled of this BatchUpdateConsumerGroup.
 
-        是否可以消费。
+        **参数解释**： 是否可以消费。 **约束限制**： 不涉及。 **取值范围**： - true：可以消费。 - false：不可以消费。 **默认取值**： 不涉及。
 
         :param enabled: The enabled of this BatchUpdateConsumerGroup.
         :type enabled: bool
@@ -166,7 +165,7 @@ class BatchUpdateConsumerGroup:
     def consume_orderly(self):
         r"""Gets the consume_orderly of this BatchUpdateConsumerGroup.
 
-        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        **参数解释**： 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。[华为云Stack不支持](tag:hcs,hcs_oemout) **约束限制**： 不涉及。 **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :return: The consume_orderly of this BatchUpdateConsumerGroup.
         :rtype: bool
@@ -177,7 +176,7 @@ class BatchUpdateConsumerGroup:
     def consume_orderly(self, consume_orderly):
         r"""Sets the consume_orderly of this BatchUpdateConsumerGroup.
 
-        是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。
+        **参数解释**： 是否按顺序消费（仅RocketMQ实例5.x版本需要填写此参数）。[华为云Stack不支持](tag:hcs,hcs_oemout) **约束限制**： 不涉及。 **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
 
         :param consume_orderly: The consume_orderly of this BatchUpdateConsumerGroup.
         :type consume_orderly: bool
@@ -188,7 +187,7 @@ class BatchUpdateConsumerGroup:
     def group_desc(self):
         r"""Gets the group_desc of this BatchUpdateConsumerGroup.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **约束限制**： 长度0~200个字符 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group_desc of this BatchUpdateConsumerGroup.
         :rtype: str
@@ -199,7 +198,7 @@ class BatchUpdateConsumerGroup:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this BatchUpdateConsumerGroup.
 
-        消费组描述，长度0~200个字符。
+        **参数解释**： 消费组描述。 **约束限制**： 长度0~200个字符 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group_desc: The group_desc of this BatchUpdateConsumerGroup.
         :type group_desc: str

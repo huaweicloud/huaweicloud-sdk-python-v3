@@ -19,17 +19,19 @@ class ShowDomainCountryStatResponse(SdkResponse):
         'action': 'str',
         'start_time': 'int',
         'end_time': 'int',
-        'stat_type': 'str'
+        'stat_type': 'str',
+        'result': 'dict(str, object)'
     }
 
     attribute_map = {
         'action': 'action',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'stat_type': 'stat_type'
+        'stat_type': 'stat_type',
+        'result': 'result'
     }
 
-    def __init__(self, action=None, start_time=None, end_time=None, stat_type=None):
+    def __init__(self, action=None, start_time=None, end_time=None, stat_type=None, result=None):
         r"""ShowDomainCountryStatResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class ShowDomainCountryStatResponse(SdkResponse):
         :type end_time: int
         :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
         :type stat_type: str
+        :param result: 按指定的分组方式组织的数据
+        :type result: dict(str, object)
         """
         
         super().__init__()
@@ -50,6 +54,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
         self._start_time = None
         self._end_time = None
         self._stat_type = None
+        self._result = None
         self.discriminator = None
 
         if action is not None:
@@ -60,6 +65,8 @@ class ShowDomainCountryStatResponse(SdkResponse):
             self.end_time = end_time
         if stat_type is not None:
             self.stat_type = stat_type
+        if result is not None:
+            self.result = result
 
     @property
     def action(self):
@@ -148,6 +155,28 @@ class ShowDomainCountryStatResponse(SdkResponse):
         :type stat_type: str
         """
         self._stat_type = stat_type
+
+    @property
+    def result(self):
+        r"""Gets the result of this ShowDomainCountryStatResponse.
+
+        按指定的分组方式组织的数据
+
+        :return: The result of this ShowDomainCountryStatResponse.
+        :rtype: dict(str, object)
+        """
+        return self._result
+
+    @result.setter
+    def result(self, result):
+        r"""Sets the result of this ShowDomainCountryStatResponse.
+
+        按指定的分组方式组织的数据
+
+        :param result: The result of this ShowDomainCountryStatResponse.
+        :type result: dict(str, object)
+        """
+        self._result = result
 
     def to_dict(self):
         import warnings

@@ -29,7 +29,7 @@ class UpdateConfigurationParameterRequest:
 
         The model defined in huaweicloud sdk
 
-        :param config_id: 参数模板ID。
+        :param config_id: **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type config_id: str
         :param body: Body of the UpdateConfigurationParameterRequest
         :type body: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequestBody`
@@ -49,7 +49,7 @@ class UpdateConfigurationParameterRequest:
     def config_id(self):
         r"""Gets the config_id of this UpdateConfigurationParameterRequest.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The config_id of this UpdateConfigurationParameterRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateConfigurationParameterRequest:
     def config_id(self, config_id):
         r"""Sets the config_id of this UpdateConfigurationParameterRequest.
 
-        参数模板ID。
+        **参数解释：** 参数模板ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param config_id: The config_id of this UpdateConfigurationParameterRequest.
         :type config_id: str

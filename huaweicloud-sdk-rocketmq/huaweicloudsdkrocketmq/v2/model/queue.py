@@ -35,15 +35,15 @@ class Queue:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        :param id: **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: int
-        :param lag: **参数解释**： 队列消费堆积总数。 **取值范围**： 不涉及。
+        :param lag: **参数解释**： 队列消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type lag: int
-        :param broker_offset: **参数解释**： 队列消息总数。 **取值范围**： 不涉及。
+        :param broker_offset: **参数解释**： 队列消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_offset: int
-        :param consumer_offset: **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        :param consumer_offset: **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type consumer_offset: int
-        :param last_message_time: **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **取值范围**： 不涉及。
+        :param last_message_time: **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type last_message_time: int
         """
         
@@ -71,7 +71,7 @@ class Queue:
     def id(self):
         r"""Gets the id of this Queue.
 
-        **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this Queue.
         :rtype: int
@@ -82,7 +82,7 @@ class Queue:
     def id(self, id):
         r"""Sets the id of this Queue.
 
-        **参数解释**： 队列ID。 **取值范围**： 不涉及。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this Queue.
         :type id: int
@@ -93,7 +93,7 @@ class Queue:
     def lag(self):
         r"""Gets the lag of this Queue.
 
-        **参数解释**： 队列消费堆积总数。 **取值范围**： 不涉及。
+        **参数解释**： 队列消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The lag of this Queue.
         :rtype: int
@@ -104,7 +104,7 @@ class Queue:
     def lag(self, lag):
         r"""Sets the lag of this Queue.
 
-        **参数解释**： 队列消费堆积总数。 **取值范围**： 不涉及。
+        **参数解释**： 队列消费堆积总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param lag: The lag of this Queue.
         :type lag: int
@@ -115,7 +115,7 @@ class Queue:
     def broker_offset(self):
         r"""Gets the broker_offset of this Queue.
 
-        **参数解释**： 队列消息总数。 **取值范围**： 不涉及。
+        **参数解释**： 队列消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_offset of this Queue.
         :rtype: int
@@ -126,7 +126,7 @@ class Queue:
     def broker_offset(self, broker_offset):
         r"""Sets the broker_offset of this Queue.
 
-        **参数解释**： 队列消息总数。 **取值范围**： 不涉及。
+        **参数解释**： 队列消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_offset: The broker_offset of this Queue.
         :type broker_offset: int
@@ -137,7 +137,7 @@ class Queue:
     def consumer_offset(self):
         r"""Gets the consumer_offset of this Queue.
 
-        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The consumer_offset of this Queue.
         :rtype: int
@@ -148,7 +148,7 @@ class Queue:
     def consumer_offset(self, consumer_offset):
         r"""Sets the consumer_offset of this Queue.
 
-        **参数解释**： 已消费消息数。 **取值范围**： 不涉及。
+        **参数解释**： 已消费消息数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param consumer_offset: The consumer_offset of this Queue.
         :type consumer_offset: int
@@ -159,7 +159,7 @@ class Queue:
     def last_message_time(self):
         r"""Gets the last_message_time of this Queue.
 
-        **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **取值范围**： 不涉及。
+        **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The last_message_time of this Queue.
         :rtype: int
@@ -170,7 +170,7 @@ class Queue:
     def last_message_time(self, last_message_time):
         r"""Sets the last_message_time of this Queue.
 
-        **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **取值范围**： 不涉及。
+        **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param last_message_time: The last_message_time of this Queue.
         :type last_message_time: int

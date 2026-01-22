@@ -6,6 +6,7 @@ from huaweicloudsdkswr.v2.swr_client import SwrClient
 from huaweicloudsdkswr.v2.swr_async_client import SwrAsyncClient
 
 from huaweicloudsdkswr.v2.model.accessory import Accessory
+from huaweicloudsdkswr.v2.model.accessory_list_accessories import AccessoryListAccessories
 from huaweicloudsdkswr.v2.model.add_domain_name_request import AddDomainNameRequest
 from huaweicloudsdkswr.v2.model.add_domain_name_request_body import AddDomainNameRequestBody
 from huaweicloudsdkswr.v2.model.add_domain_name_response import AddDomainNameResponse
@@ -253,6 +254,10 @@ from huaweicloudsdkswr.v2.model.list_namespaces_request import ListNamespacesReq
 from huaweicloudsdkswr.v2.model.list_namespaces_response import ListNamespacesResponse
 from huaweicloudsdkswr.v2.model.list_quotas_request import ListQuotasRequest
 from huaweicloudsdkswr.v2.model.list_quotas_response import ListQuotasResponse
+from huaweicloudsdkswr.v2.model.list_references_request import ListReferencesRequest
+from huaweicloudsdkswr.v2.model.list_references_response import ListReferencesResponse
+from huaweicloudsdkswr.v2.model.list_repo_accessories_request import ListRepoAccessoriesRequest
+from huaweicloudsdkswr.v2.model.list_repo_accessories_response import ListRepoAccessoriesResponse
 from huaweicloudsdkswr.v2.model.list_repo_details_request import ListRepoDetailsRequest
 from huaweicloudsdkswr.v2.model.list_repo_details_response import ListRepoDetailsResponse
 from huaweicloudsdkswr.v2.model.list_repo_domains_request import ListRepoDomainsRequest

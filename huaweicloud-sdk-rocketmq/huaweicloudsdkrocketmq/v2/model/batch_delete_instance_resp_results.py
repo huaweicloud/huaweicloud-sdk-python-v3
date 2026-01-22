@@ -29,7 +29,7 @@ class BatchDeleteInstanceRespResults:
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果。
+        :param result: **参数解释**： 操作结果。 **约束限制**： 不涉及。 **取值范围**： - success - failed **默认取值**： 不涉及。
         :type result: str
         :param instance: 实例ID。
         :type instance: str
@@ -50,7 +50,7 @@ class BatchDeleteInstanceRespResults:
     def result(self):
         r"""Gets the result of this BatchDeleteInstanceRespResults.
 
-        操作结果。
+        **参数解释**： 操作结果。 **约束限制**： 不涉及。 **取值范围**： - success - failed **默认取值**： 不涉及。
 
         :return: The result of this BatchDeleteInstanceRespResults.
         :rtype: str
@@ -61,7 +61,7 @@ class BatchDeleteInstanceRespResults:
     def result(self, result):
         r"""Sets the result of this BatchDeleteInstanceRespResults.
 
-        操作结果。
+        **参数解释**： 操作结果。 **约束限制**： 不涉及。 **取值范围**： - success - failed **默认取值**： 不涉及。
 
         :param result: The result of this BatchDeleteInstanceRespResults.
         :type result: str

@@ -31,7 +31,7 @@ class ScanProtocolConfig:
 
         :param action: 反病毒动作，0：观察 1：拦截 2：禁用
         :type action: int
-        :param protocol_type: 协议类型
+        :param protocol_type: 协议类型，包括0：HTTP、1：SMTP、2： POP3、3：IMAP4、4：FTP、5：SMB、6：恶意访问、7：IM
         :type protocol_type: int
         """
         
@@ -72,7 +72,7 @@ class ScanProtocolConfig:
     def protocol_type(self):
         r"""Gets the protocol_type of this ScanProtocolConfig.
 
-        协议类型
+        协议类型，包括0：HTTP、1：SMTP、2： POP3、3：IMAP4、4：FTP、5：SMB、6：恶意访问、7：IM
 
         :return: The protocol_type of this ScanProtocolConfig.
         :rtype: int
@@ -83,7 +83,7 @@ class ScanProtocolConfig:
     def protocol_type(self, protocol_type):
         r"""Sets the protocol_type of this ScanProtocolConfig.
 
-        协议类型
+        协议类型，包括0：HTTP、1：SMTP、2： POP3、3：IMAP4、4：FTP、5：SMB、6：恶意访问、7：IM
 
         :param protocol_type: The protocol_type of this ScanProtocolConfig.
         :type protocol_type: int

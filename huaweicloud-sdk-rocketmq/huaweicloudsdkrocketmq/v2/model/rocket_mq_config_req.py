@@ -29,9 +29,9 @@ class RocketMQConfigReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: RocketMQ配置名称。
+        :param name: **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param value: RocketMQ配置目标值。
+        :param value: **参数解释**： RocketMQ配置目标值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type value: str
         """
         
@@ -41,16 +41,14 @@ class RocketMQConfigReq:
         self._value = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if value is not None:
-            self.value = value
+        self.name = name
+        self.value = value
 
     @property
     def name(self):
         r"""Gets the name of this RocketMQConfigReq.
 
-        RocketMQ配置名称。
+        **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this RocketMQConfigReq.
         :rtype: str
@@ -61,7 +59,7 @@ class RocketMQConfigReq:
     def name(self, name):
         r"""Sets the name of this RocketMQConfigReq.
 
-        RocketMQ配置名称。
+        **参数解释**： RocketMQ配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this RocketMQConfigReq.
         :type name: str
@@ -72,7 +70,7 @@ class RocketMQConfigReq:
     def value(self):
         r"""Gets the value of this RocketMQConfigReq.
 
-        RocketMQ配置目标值。
+        **参数解释**： RocketMQ配置目标值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The value of this RocketMQConfigReq.
         :rtype: str
@@ -83,7 +81,7 @@ class RocketMQConfigReq:
     def value(self, value):
         r"""Sets the value of this RocketMQConfigReq.
 
-        RocketMQ配置目标值。
+        **参数解释**： RocketMQ配置目标值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param value: The value of this RocketMQConfigReq.
         :type value: str

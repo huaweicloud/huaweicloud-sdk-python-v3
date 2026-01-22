@@ -81,10 +81,8 @@ class CreateClusterBackupStrategyBody:
         self.keepday = keepday
         if frequency is not None:
             self.frequency = frequency
-        if bucket is not None:
-            self.bucket = bucket
-        if base_path is not None:
-            self.base_path = base_path
+        self.bucket = bucket
+        self.base_path = base_path
         if agency is not None:
             self.agency = agency
         if max_snapshot_bytes_per_seconds is not None:

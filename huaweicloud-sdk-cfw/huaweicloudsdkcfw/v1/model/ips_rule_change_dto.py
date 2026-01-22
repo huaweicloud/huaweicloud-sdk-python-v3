@@ -31,11 +31,11 @@ class IpsRuleChangeDto:
 
         The model defined in huaweicloud sdk
 
-        :param ips_ids: ips的id列表
+        :param ips_ids: ips的id列表，Ips规则id，为必填参数，可通过[获取ips规则列表]( ListIpsRules.xml)查询获得，通过返回值中的data.records.ips_id（.表示各对象之间层级的区分）获得。
         :type ips_ids: list[str]
         :param object_id: 防护对象id
         :type object_id: str
-        :param status: ips规则状态
+        :param status: ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
         :type status: str
         """
         
@@ -57,7 +57,7 @@ class IpsRuleChangeDto:
     def ips_ids(self):
         r"""Gets the ips_ids of this IpsRuleChangeDto.
 
-        ips的id列表
+        ips的id列表，Ips规则id，为必填参数，可通过[获取ips规则列表]( ListIpsRules.xml)查询获得，通过返回值中的data.records.ips_id（.表示各对象之间层级的区分）获得。
 
         :return: The ips_ids of this IpsRuleChangeDto.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class IpsRuleChangeDto:
     def ips_ids(self, ips_ids):
         r"""Sets the ips_ids of this IpsRuleChangeDto.
 
-        ips的id列表
+        ips的id列表，Ips规则id，为必填参数，可通过[获取ips规则列表]( ListIpsRules.xml)查询获得，通过返回值中的data.records.ips_id（.表示各对象之间层级的区分）获得。
 
         :param ips_ids: The ips_ids of this IpsRuleChangeDto.
         :type ips_ids: list[str]
@@ -101,7 +101,7 @@ class IpsRuleChangeDto:
     def status(self):
         r"""Gets the status of this IpsRuleChangeDto.
 
-        ips规则状态
+        ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
 
         :return: The status of this IpsRuleChangeDto.
         :rtype: str
@@ -112,7 +112,7 @@ class IpsRuleChangeDto:
     def status(self, status):
         r"""Sets the status of this IpsRuleChangeDto.
 
-        ips规则状态
+        ips规则状态，包含观察：OBSERVE、拦截：ENABLE、禁用：CLOSE、恢复默认：DEFAULT、全局恢复默认：ALL_DEFAULT
 
         :param status: The status of this IpsRuleChangeDto.
         :type status: str

@@ -17,7 +17,7 @@ class ShowInstanceExtendProductInfoRespHourly:
     openapi_types = {
         'name': 'str',
         'version': 'str',
-        'values': 'list[ListProductsRespValues]'
+        'values': 'list[ShowInstanceExtendProductInfoRespValues]'
     }
 
     attribute_map = {
@@ -33,10 +33,10 @@ class ShowInstanceExtendProductInfoRespHourly:
 
         :param name: 消息引擎的名称，该字段显示为rabbitmq。
         :type name: str
-        :param version: 消息引擎的版本，当前支持3.8.35[和3.7.17](tag:hk_sbc,sbc)。
+        :param version: 消息引擎的版本，当前支持3.8.35。
         :type version: str
         :param values: 产品规格列表。
-        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
+        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespValues`]
         """
         
         
@@ -79,7 +79,7 @@ class ShowInstanceExtendProductInfoRespHourly:
     def version(self):
         r"""Gets the version of this ShowInstanceExtendProductInfoRespHourly.
 
-        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:hk_sbc,sbc)。
+        消息引擎的版本，当前支持3.8.35。
 
         :return: The version of this ShowInstanceExtendProductInfoRespHourly.
         :rtype: str
@@ -90,7 +90,7 @@ class ShowInstanceExtendProductInfoRespHourly:
     def version(self, version):
         r"""Sets the version of this ShowInstanceExtendProductInfoRespHourly.
 
-        消息引擎的版本，当前支持3.8.35[和3.7.17](tag:hk_sbc,sbc)。
+        消息引擎的版本，当前支持3.8.35。
 
         :param version: The version of this ShowInstanceExtendProductInfoRespHourly.
         :type version: str
@@ -104,7 +104,7 @@ class ShowInstanceExtendProductInfoRespHourly:
         产品规格列表。
 
         :return: The values of this ShowInstanceExtendProductInfoRespHourly.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
+        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespValues`]
         """
         return self._values
 
@@ -115,7 +115,7 @@ class ShowInstanceExtendProductInfoRespHourly:
         产品规格列表。
 
         :param values: The values of this ShowInstanceExtendProductInfoRespHourly.
-        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ListProductsRespValues`]
+        :type values: list[:class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRespValues`]
         """
         self._values = values
 

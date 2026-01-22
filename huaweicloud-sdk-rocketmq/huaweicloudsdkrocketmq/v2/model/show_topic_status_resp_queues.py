@@ -33,13 +33,13 @@ class ShowTopicStatusRespQueues:
 
         The model defined in huaweicloud sdk
 
-        :param id: 队列ID。
+        :param id: **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: int
-        :param min_offset: 最小偏移量。
+        :param min_offset: **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type min_offset: int
-        :param max_offset: 最大偏移量。
+        :param max_offset: **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max_offset: int
-        :param last_message_time: 最后一条消息的时间。
+        :param last_message_time: **参数解释**： 最后一条消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type last_message_time: int
         """
         
@@ -64,7 +64,7 @@ class ShowTopicStatusRespQueues:
     def id(self):
         r"""Gets the id of this ShowTopicStatusRespQueues.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this ShowTopicStatusRespQueues.
         :rtype: int
@@ -75,7 +75,7 @@ class ShowTopicStatusRespQueues:
     def id(self, id):
         r"""Sets the id of this ShowTopicStatusRespQueues.
 
-        队列ID。
+        **参数解释**： 队列ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this ShowTopicStatusRespQueues.
         :type id: int
@@ -86,7 +86,7 @@ class ShowTopicStatusRespQueues:
     def min_offset(self):
         r"""Gets the min_offset of this ShowTopicStatusRespQueues.
 
-        最小偏移量。
+        **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The min_offset of this ShowTopicStatusRespQueues.
         :rtype: int
@@ -97,7 +97,7 @@ class ShowTopicStatusRespQueues:
     def min_offset(self, min_offset):
         r"""Sets the min_offset of this ShowTopicStatusRespQueues.
 
-        最小偏移量。
+        **参数解释**： 最小偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param min_offset: The min_offset of this ShowTopicStatusRespQueues.
         :type min_offset: int
@@ -108,7 +108,7 @@ class ShowTopicStatusRespQueues:
     def max_offset(self):
         r"""Gets the max_offset of this ShowTopicStatusRespQueues.
 
-        最大偏移量。
+        **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The max_offset of this ShowTopicStatusRespQueues.
         :rtype: int
@@ -119,7 +119,7 @@ class ShowTopicStatusRespQueues:
     def max_offset(self, max_offset):
         r"""Sets the max_offset of this ShowTopicStatusRespQueues.
 
-        最大偏移量。
+        **参数解释**： 最大偏移量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param max_offset: The max_offset of this ShowTopicStatusRespQueues.
         :type max_offset: int
@@ -130,7 +130,7 @@ class ShowTopicStatusRespQueues:
     def last_message_time(self):
         r"""Gets the last_message_time of this ShowTopicStatusRespQueues.
 
-        最后一条消息的时间。
+        **参数解释**： 最后一条消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The last_message_time of this ShowTopicStatusRespQueues.
         :rtype: int
@@ -141,7 +141,7 @@ class ShowTopicStatusRespQueues:
     def last_message_time(self, last_message_time):
         r"""Sets the last_message_time of this ShowTopicStatusRespQueues.
 
-        最后一条消息的时间。
+        **参数解释**： 最后一条消息的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param last_message_time: The last_message_time of this ShowTopicStatusRespQueues.
         :type last_message_time: int

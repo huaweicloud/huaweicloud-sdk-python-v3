@@ -33,13 +33,13 @@ class ResendReq:
 
         The model defined in huaweicloud sdk
 
-        :param group: Group ID。
+        :param group: **参数解释**： Group ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type group: str
-        :param topic: 消息所属Topic。
+        :param topic: **参数解释**： 消息所属Topic。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type topic: str
-        :param client_id: 客户端ID。
+        :param client_id: **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type client_id: str
-        :param msg_id_list: 消息列表。
+        :param msg_id_list: **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
         :type msg_id_list: list[str]
         """
         
@@ -62,7 +62,7 @@ class ResendReq:
     def group(self):
         r"""Gets the group of this ResendReq.
 
-        Group ID。
+        **参数解释**： Group ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The group of this ResendReq.
         :rtype: str
@@ -73,7 +73,7 @@ class ResendReq:
     def group(self, group):
         r"""Sets the group of this ResendReq.
 
-        Group ID。
+        **参数解释**： Group ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param group: The group of this ResendReq.
         :type group: str
@@ -84,7 +84,7 @@ class ResendReq:
     def topic(self):
         r"""Gets the topic of this ResendReq.
 
-        消息所属Topic。
+        **参数解释**： 消息所属Topic。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The topic of this ResendReq.
         :rtype: str
@@ -95,7 +95,7 @@ class ResendReq:
     def topic(self, topic):
         r"""Sets the topic of this ResendReq.
 
-        消息所属Topic。
+        **参数解释**： 消息所属Topic。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param topic: The topic of this ResendReq.
         :type topic: str
@@ -106,7 +106,7 @@ class ResendReq:
     def client_id(self):
         r"""Gets the client_id of this ResendReq.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The client_id of this ResendReq.
         :rtype: str
@@ -117,7 +117,7 @@ class ResendReq:
     def client_id(self, client_id):
         r"""Sets the client_id of this ResendReq.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param client_id: The client_id of this ResendReq.
         :type client_id: str
@@ -128,7 +128,7 @@ class ResendReq:
     def msg_id_list(self):
         r"""Gets the msg_id_list of this ResendReq.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :return: The msg_id_list of this ResendReq.
         :rtype: list[str]
@@ -139,7 +139,7 @@ class ResendReq:
     def msg_id_list(self, msg_id_list):
         r"""Sets the msg_id_list of this ResendReq.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值** 不涉及。
 
         :param msg_id_list: The msg_id_list of this ResendReq.
         :type msg_id_list: list[str]

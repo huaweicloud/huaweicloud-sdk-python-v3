@@ -1498,7 +1498,7 @@ class DdsAsyncClient(Client):
     def delete_configuration_async(self, request):
         r"""删除参数模板
 
-        删除参数模板。
+        删除指定参数模板。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3767,7 +3767,7 @@ class DdsAsyncClient(Client):
     def list_lts_slow_logs_async(self, request):
         r"""查询数据库慢日志
 
-        查询数据库慢日志信息。
+        查询数据库慢日志信息，支持关键字、数据库表名等搜索功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4585,6 +4585,8 @@ class DdsAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'offset' in local_var_params:
@@ -6152,7 +6154,7 @@ class DdsAsyncClient(Client):
     def show_configuration_parameter_async(self, request):
         r"""获取参数模板的详情
 
-        获取参数模板的详情。
+        获取指定参数模板的参数信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6351,7 +6353,7 @@ class DdsAsyncClient(Client):
     def show_entity_configuration_async(self, request):
         r"""获取指定实例的参数信息
 
-        获取指定实例的参数，可以是实例，组，节点的参数模板。
+        获取指定实例的参数信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

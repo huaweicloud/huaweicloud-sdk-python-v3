@@ -31,7 +31,7 @@ class BackupDatabase:
 
         :param type: **参数解释：** 数据库引擎 **取值范围：** DDS-Community。
         :type type: str
-        :param version: **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
+        :param version: **参数解释：** 数据库版本。支持5.0、4.4、4.2、4.0、3.4版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
         :type version: str
         """
         
@@ -70,7 +70,7 @@ class BackupDatabase:
     def version(self):
         r"""Gets the version of this BackupDatabase.
 
-        **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
+        **参数解释：** 数据库版本。支持5.0、4.4、4.2、4.0、3.4版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :return: The version of this BackupDatabase.
         :rtype: str
@@ -81,7 +81,7 @@ class BackupDatabase:
     def version(self, version):
         r"""Sets the version of this BackupDatabase.
 
-        **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
+        **参数解释：** 数据库版本。支持5.0、4.4、4.2、4.0、3.4版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :param version: The version of this BackupDatabase.
         :type version: str

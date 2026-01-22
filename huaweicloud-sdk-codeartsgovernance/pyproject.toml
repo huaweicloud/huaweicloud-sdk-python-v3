@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkcodeartsgovernance"
-version = "3.1.183"
+version = "3.1.184"
 description = "CodeArtsGovernance"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.183"
+    "huaweicloudsdkcore>=3.1.184"
 ]
 
 [project.urls]

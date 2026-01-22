@@ -28,7 +28,7 @@ class UpdateObjectConfigDescResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 
+        :param data: 成员id
         :type data: object
         """
         
@@ -44,6 +44,8 @@ class UpdateObjectConfigDescResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this UpdateObjectConfigDescResponse.
 
+        成员id
+
         :return: The data of this UpdateObjectConfigDescResponse.
         :rtype: object
         """
@@ -52,6 +54,8 @@ class UpdateObjectConfigDescResponse(SdkResponse):
     @data.setter
     def data(self, data):
         r"""Sets the data of this UpdateObjectConfigDescResponse.
+
+        成员id
 
         :param data: The data of this UpdateObjectConfigDescResponse.
         :type data: object

@@ -71,11 +71,11 @@ class ListFlowLogsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param direction: 方向，包含in2out，out2in
         :type direction: str
-        :param log_type: 日志类型包括：internet，vpc，nat
+        :param log_type: **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
         :type log_type: str
         :param start_time: 开始时间，以毫秒为单位的时间戳，如1718936272648
         :type start_time: int
@@ -89,9 +89,9 @@ class ListFlowLogsRequest:
         :type dst_ip: str
         :param dst_port: 目的端口
         :type dst_port: int
-        :param protocol: 协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        :param protocol: 协议类型，包含TCP, UDP，ICMP，ICMPV6等。
         :type protocol: str
-        :param app: 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        :param app: 规则应用类型包括：“HTTP”，“HTTPS“，“TLS1“，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
         :type app: str
         :param log_id: 文档ID,第一页为空，其他页不为空，其他页可取上一次查询最后一条数据的log_id
         :type log_id: str
@@ -193,7 +193,7 @@ class ListFlowLogsRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this ListFlowLogsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this ListFlowLogsRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListFlowLogsRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this ListFlowLogsRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this ListFlowLogsRequest.
         :type fw_instance_id: str
@@ -237,7 +237,7 @@ class ListFlowLogsRequest:
     def log_type(self):
         r"""Gets the log_type of this ListFlowLogsRequest.
 
-        日志类型包括：internet，vpc，nat
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :return: The log_type of this ListFlowLogsRequest.
         :rtype: str
@@ -248,7 +248,7 @@ class ListFlowLogsRequest:
     def log_type(self, log_type):
         r"""Sets the log_type of this ListFlowLogsRequest.
 
-        日志类型包括：internet，vpc，nat
+        **参数解释**： 日志类型 **约束限制**： 不涉及 **取值范围**： internet为南北向日志、nat为nat场景日志，vpc为东西向日志，vgw为vgw场景日志 **默认取值**： 不涉及
 
         :param log_type: The log_type of this ListFlowLogsRequest.
         :type log_type: str
@@ -391,7 +391,7 @@ class ListFlowLogsRequest:
     def protocol(self):
         r"""Gets the protocol of this ListFlowLogsRequest.
 
-        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        协议类型，包含TCP, UDP，ICMP，ICMPV6等。
 
         :return: The protocol of this ListFlowLogsRequest.
         :rtype: str
@@ -402,7 +402,7 @@ class ListFlowLogsRequest:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListFlowLogsRequest.
 
-        协议类型，包含TCP, UDP,ICMP,ICMPV6等。
+        协议类型，包含TCP, UDP，ICMP，ICMPV6等。
 
         :param protocol: The protocol of this ListFlowLogsRequest.
         :type protocol: str
@@ -413,7 +413,7 @@ class ListFlowLogsRequest:
     def app(self):
         r"""Gets the app of this ListFlowLogsRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS“，“TLS1“，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :return: The app of this ListFlowLogsRequest.
         :rtype: str
@@ -424,7 +424,7 @@ class ListFlowLogsRequest:
     def app(self, app):
         r"""Sets the app of this ListFlowLogsRequest.
 
-        规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
+        规则应用类型包括：“HTTP”，“HTTPS“，“TLS1“，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
         :param app: The app of this ListFlowLogsRequest.
         :type app: str

@@ -31,11 +31,11 @@ class DomainInfo:
 
         The model defined in huaweicloud sdk
 
-        :param domain_address_id: 域名地址id
+        :param domain_address_id: **参数解释**： 域名地址id **取值范围**： 不涉及
         :type domain_address_id: str
-        :param domain_name: 域名，如www.test.com
+        :param domain_name: **参数解释**： 域名 **取值范围**： 不涉及
         :type domain_name: str
-        :param description: 域名描述
+        :param description: **参数解释**： 域名描述 **取值范围**： 不涉及
         :type description: str
         """
         
@@ -57,7 +57,7 @@ class DomainInfo:
     def domain_address_id(self):
         r"""Gets the domain_address_id of this DomainInfo.
 
-        域名地址id
+        **参数解释**： 域名地址id **取值范围**： 不涉及
 
         :return: The domain_address_id of this DomainInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class DomainInfo:
     def domain_address_id(self, domain_address_id):
         r"""Sets the domain_address_id of this DomainInfo.
 
-        域名地址id
+        **参数解释**： 域名地址id **取值范围**： 不涉及
 
         :param domain_address_id: The domain_address_id of this DomainInfo.
         :type domain_address_id: str
@@ -79,7 +79,7 @@ class DomainInfo:
     def domain_name(self):
         r"""Gets the domain_name of this DomainInfo.
 
-        域名，如www.test.com
+        **参数解释**： 域名 **取值范围**： 不涉及
 
         :return: The domain_name of this DomainInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class DomainInfo:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DomainInfo.
 
-        域名，如www.test.com
+        **参数解释**： 域名 **取值范围**： 不涉及
 
         :param domain_name: The domain_name of this DomainInfo.
         :type domain_name: str
@@ -101,7 +101,7 @@ class DomainInfo:
     def description(self):
         r"""Gets the description of this DomainInfo.
 
-        域名描述
+        **参数解释**： 域名描述 **取值范围**： 不涉及
 
         :return: The description of this DomainInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class DomainInfo:
     def description(self, description):
         r"""Sets the description of this DomainInfo.
 
-        域名描述
+        **参数解释**： 域名描述 **取值范围**： 不涉及
 
         :param description: The description of this DomainInfo.
         :type description: str

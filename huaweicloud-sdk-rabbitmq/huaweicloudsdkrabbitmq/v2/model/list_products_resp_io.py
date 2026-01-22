@@ -35,15 +35,15 @@ class ListProductsRespIo:
 
         The model defined in huaweicloud sdk
 
-        :param io_type: IO类型。
+        :param io_type: **参数解释**： IO类型。 **取值范围**： 不涉及。
         :type io_type: str
-        :param storage_spec_code: IO规格。
+        :param storage_spec_code: **参数解释**： IO规格。 **取值范围**： 不涉及。
         :type storage_spec_code: str
-        :param available_zones: IO未售罄的可用区列表。
+        :param available_zones: **参数解释**： IO未售罄的可用区列表。 **取值范围**： 不涉及。
         :type available_zones: list[str]
-        :param unavailable_zones: IO已售罄的不可用区列表。
+        :param unavailable_zones: **参数解释**： IO已售罄的不可用区列表。 **取值范围**： 不涉及。
         :type unavailable_zones: list[str]
-        :param volume_type: 磁盘类型。
+        :param volume_type: **参数解释**： 磁盘类型。 **取值范围**： 不涉及。
         :type volume_type: str
         """
         
@@ -71,7 +71,7 @@ class ListProductsRespIo:
     def io_type(self):
         r"""Gets the io_type of this ListProductsRespIo.
 
-        IO类型。
+        **参数解释**： IO类型。 **取值范围**： 不涉及。
 
         :return: The io_type of this ListProductsRespIo.
         :rtype: str
@@ -82,7 +82,7 @@ class ListProductsRespIo:
     def io_type(self, io_type):
         r"""Sets the io_type of this ListProductsRespIo.
 
-        IO类型。
+        **参数解释**： IO类型。 **取值范围**： 不涉及。
 
         :param io_type: The io_type of this ListProductsRespIo.
         :type io_type: str
@@ -93,7 +93,7 @@ class ListProductsRespIo:
     def storage_spec_code(self):
         r"""Gets the storage_spec_code of this ListProductsRespIo.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :return: The storage_spec_code of this ListProductsRespIo.
         :rtype: str
@@ -104,7 +104,7 @@ class ListProductsRespIo:
     def storage_spec_code(self, storage_spec_code):
         r"""Sets the storage_spec_code of this ListProductsRespIo.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :param storage_spec_code: The storage_spec_code of this ListProductsRespIo.
         :type storage_spec_code: str
@@ -115,7 +115,7 @@ class ListProductsRespIo:
     def available_zones(self):
         r"""Gets the available_zones of this ListProductsRespIo.
 
-        IO未售罄的可用区列表。
+        **参数解释**： IO未售罄的可用区列表。 **取值范围**： 不涉及。
 
         :return: The available_zones of this ListProductsRespIo.
         :rtype: list[str]
@@ -126,7 +126,7 @@ class ListProductsRespIo:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListProductsRespIo.
 
-        IO未售罄的可用区列表。
+        **参数解释**： IO未售罄的可用区列表。 **取值范围**： 不涉及。
 
         :param available_zones: The available_zones of this ListProductsRespIo.
         :type available_zones: list[str]
@@ -137,7 +137,7 @@ class ListProductsRespIo:
     def unavailable_zones(self):
         r"""Gets the unavailable_zones of this ListProductsRespIo.
 
-        IO已售罄的不可用区列表。
+        **参数解释**： IO已售罄的不可用区列表。 **取值范围**： 不涉及。
 
         :return: The unavailable_zones of this ListProductsRespIo.
         :rtype: list[str]
@@ -148,7 +148,7 @@ class ListProductsRespIo:
     def unavailable_zones(self, unavailable_zones):
         r"""Sets the unavailable_zones of this ListProductsRespIo.
 
-        IO已售罄的不可用区列表。
+        **参数解释**： IO已售罄的不可用区列表。 **取值范围**： 不涉及。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespIo.
         :type unavailable_zones: list[str]
@@ -159,7 +159,7 @@ class ListProductsRespIo:
     def volume_type(self):
         r"""Gets the volume_type of this ListProductsRespIo.
 
-        磁盘类型。
+        **参数解释**： 磁盘类型。 **取值范围**： 不涉及。
 
         :return: The volume_type of this ListProductsRespIo.
         :rtype: str
@@ -170,7 +170,7 @@ class ListProductsRespIo:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this ListProductsRespIo.
 
-        磁盘类型。
+        **参数解释**： 磁盘类型。 **取值范围**： 不涉及。
 
         :param volume_type: The volume_type of this ListProductsRespIo.
         :type volume_type: str

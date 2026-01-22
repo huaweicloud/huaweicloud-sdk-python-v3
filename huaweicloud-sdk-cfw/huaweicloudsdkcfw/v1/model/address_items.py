@@ -31,7 +31,7 @@ class AddressItems:
 
         :param items: 地址组成员id列表
         :type items: list[:class:`huaweicloudsdkcfw.v1.AddressItemIdWithoutName`]
-        :param covered_ip: 覆盖ip列表
+        :param covered_ip: 覆盖IP列表
         :type covered_ip: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
         """
         
@@ -72,7 +72,7 @@ class AddressItems:
     def covered_ip(self):
         r"""Gets the covered_ip of this AddressItems.
 
-        覆盖ip列表
+        覆盖IP列表
 
         :return: The covered_ip of this AddressItems.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
@@ -83,7 +83,7 @@ class AddressItems:
     def covered_ip(self, covered_ip):
         r"""Sets the covered_ip of this AddressItems.
 
-        覆盖ip列表
+        覆盖IP列表
 
         :param covered_ip: The covered_ip of this AddressItems.
         :type covered_ip: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]

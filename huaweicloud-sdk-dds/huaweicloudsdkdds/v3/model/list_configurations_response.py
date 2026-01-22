@@ -30,9 +30,9 @@ class ListConfigurationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 总记录数。
+        :param total_count: **参数解释：** 总记录数。 **取值范围：** 不涉及。
         :type total_count: int
-        :param configurations: 参数模板列表。
+        :param configurations: **参数解释：** 参数模板列表。 **取值范围：** 不涉及。
         :type configurations: list[:class:`huaweicloudsdkdds.v3.ListConfigurationsResult`]
         """
         
@@ -51,7 +51,7 @@ class ListConfigurationsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListConfigurationsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ListConfigurationsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListConfigurationsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListConfigurationsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ListConfigurationsResponse.
         :type total_count: int
@@ -73,7 +73,7 @@ class ListConfigurationsResponse(SdkResponse):
     def configurations(self):
         r"""Gets the configurations of this ListConfigurationsResponse.
 
-        参数模板列表。
+        **参数解释：** 参数模板列表。 **取值范围：** 不涉及。
 
         :return: The configurations of this ListConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.ListConfigurationsResult`]
@@ -84,7 +84,7 @@ class ListConfigurationsResponse(SdkResponse):
     def configurations(self, configurations):
         r"""Sets the configurations of this ListConfigurationsResponse.
 
-        参数模板列表。
+        **参数解释：** 参数模板列表。 **取值范围：** 不涉及。
 
         :param configurations: The configurations of this ListConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkdds.v3.ListConfigurationsResult`]

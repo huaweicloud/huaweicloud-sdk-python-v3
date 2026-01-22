@@ -21,6 +21,7 @@ class AiOps:
         'name': 'str',
         'desc': 'str',
         'status': 'int',
+        'create_time': 'date',
         'summary': 'SummaryInfo',
         'task_risks': 'list[AiOpsRiskObject]'
     }
@@ -32,11 +33,12 @@ class AiOps:
         'name': 'name',
         'desc': 'desc',
         'status': 'status',
+        'create_time': 'create_time',
         'summary': 'summary',
         'task_risks': 'task_risks'
     }
 
-    def __init__(self, id=None, check_type=None, trigger_type=None, name=None, desc=None, status=None, summary=None, task_risks=None):
+    def __init__(self, id=None, check_type=None, trigger_type=None, name=None, desc=None, status=None, create_time=None, summary=None, task_risks=None):
         r"""AiOps
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class AiOps:
         :type desc: str
         :param status: **参数解释**： 任务执行状态。 **取值范围**： - 150：未开启。 - 200：已开启。 - 300：已发送。
         :type status: int
+        :param create_time: **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
+        :type create_time: date
         :param summary: 
         :type summary: :class:`huaweicloudsdkcss.v1.SummaryInfo`
         :param task_risks: **参数解释**： 集群风险项详情。 **取值范围**： 不涉及
@@ -67,6 +71,7 @@ class AiOps:
         self._name = None
         self._desc = None
         self._status = None
+        self._create_time = None
         self._summary = None
         self._task_risks = None
         self.discriminator = None
@@ -83,6 +88,8 @@ class AiOps:
             self.desc = desc
         if status is not None:
             self.status = status
+        if create_time is not None:
+            self.create_time = create_time
         if summary is not None:
             self.summary = summary
         if task_risks is not None:
@@ -219,6 +226,28 @@ class AiOps:
         :type status: int
         """
         self._status = status
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this AiOps.
+
+        **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
+
+        :return: The create_time of this AiOps.
+        :rtype: date
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this AiOps.
+
+        **参数解释**： 集群风险检测任务创建时间。 **取值范围**： 格式：Unix时间戳格式。
+
+        :param create_time: The create_time of this AiOps.
+        :type create_time: date
+        """
+        self._create_time = create_time
 
     @property
     def summary(self):

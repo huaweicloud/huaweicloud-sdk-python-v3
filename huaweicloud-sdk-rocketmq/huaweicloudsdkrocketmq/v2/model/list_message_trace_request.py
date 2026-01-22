@@ -35,15 +35,15 @@ class ListMessageTraceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： reliability。
         :type engine: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param msg_id: 消息ID。
+        :param msg_id: **参数解释**：  消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type msg_id: str
-        :param limit: 查询数量。
+        :param limit: **参数解释**：  查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
+        :param offset: **参数解释**：  偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
         :type offset: int
         """
         
@@ -68,7 +68,7 @@ class ListMessageTraceRequest:
     def engine(self):
         r"""Gets the engine of this ListMessageTraceRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： reliability。
 
         :return: The engine of this ListMessageTraceRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class ListMessageTraceRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListMessageTraceRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： reliability。
 
         :param engine: The engine of this ListMessageTraceRequest.
         :type engine: str
@@ -90,7 +90,7 @@ class ListMessageTraceRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListMessageTraceRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListMessageTraceRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListMessageTraceRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListMessageTraceRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListMessageTraceRequest.
         :type instance_id: str
@@ -112,7 +112,7 @@ class ListMessageTraceRequest:
     def msg_id(self):
         r"""Gets the msg_id of this ListMessageTraceRequest.
 
-        消息ID。
+        **参数解释**：  消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The msg_id of this ListMessageTraceRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListMessageTraceRequest:
     def msg_id(self, msg_id):
         r"""Sets the msg_id of this ListMessageTraceRequest.
 
-        消息ID。
+        **参数解释**：  消息ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param msg_id: The msg_id of this ListMessageTraceRequest.
         :type msg_id: str
@@ -134,7 +134,7 @@ class ListMessageTraceRequest:
     def limit(self):
         r"""Gets the limit of this ListMessageTraceRequest.
 
-        查询数量。
+        **参数解释**：  查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :return: The limit of this ListMessageTraceRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class ListMessageTraceRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListMessageTraceRequest.
 
-        查询数量。
+        **参数解释**：  查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 10。
 
         :param limit: The limit of this ListMessageTraceRequest.
         :type limit: int
@@ -156,7 +156,7 @@ class ListMessageTraceRequest:
     def offset(self):
         r"""Gets the offset of this ListMessageTraceRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**：  偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :return: The offset of this ListMessageTraceRequest.
         :rtype: int
@@ -167,7 +167,7 @@ class ListMessageTraceRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListMessageTraceRequest.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0。
+        **参数解释**：  偏移量，表示从此偏移量开始查询，offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0。
 
         :param offset: The offset of this ListMessageTraceRequest.
         :type offset: int

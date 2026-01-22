@@ -47,7 +47,7 @@ class DnsIpResponse:
         :type ip_address: str
         :param type: **参数解释**：地址类型。  **取值范围**： vip：私网ip。 eip：公网ip。
         :type type: str
-        :param domain_name: **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名 - 如果ip为公网类型，则这里为负载均衡实例的公网域名
+        :param domain_name: **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
         :type domain_name: str
         :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
         :type created_at: str
@@ -173,7 +173,7 @@ class DnsIpResponse:
     def domain_name(self):
         r"""Gets the domain_name of this DnsIpResponse.
 
-        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名 - 如果ip为公网类型，则这里为负载均衡实例的公网域名
+        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
 
         :return: The domain_name of this DnsIpResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class DnsIpResponse:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DnsIpResponse.
 
-        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名 - 如果ip为公网类型，则这里为负载均衡实例的公网域名
+        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
 
         :param domain_name: The domain_name of this DnsIpResponse.
         :type domain_name: str

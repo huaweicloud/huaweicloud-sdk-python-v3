@@ -16,29 +16,36 @@ class ListLogsJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cluster_log_record': 'list[ClusterLogRecord]'
+        'cluster_log_record': 'list[ClusterLogRecord]',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'cluster_log_record': 'clusterLogRecord'
+        'cluster_log_record': 'clusterLogRecord',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, cluster_log_record=None):
+    def __init__(self, cluster_log_record=None, total_size=None):
         r"""ListLogsJobResponse
 
         The model defined in huaweicloud sdk
 
         :param cluster_log_record: 
         :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
+        :param total_size: **参数解释**： 日志记录总条数。 **取值范围**： 不涉及
+        :type total_size: int
         """
         
         super().__init__()
 
         self._cluster_log_record = None
+        self._total_size = None
         self.discriminator = None
 
         if cluster_log_record is not None:
             self.cluster_log_record = cluster_log_record
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
     def cluster_log_record(self):
@@ -57,6 +64,28 @@ class ListLogsJobResponse(SdkResponse):
         :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
         """
         self._cluster_log_record = cluster_log_record
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListLogsJobResponse.
+
+        **参数解释**： 日志记录总条数。 **取值范围**： 不涉及
+
+        :return: The total_size of this ListLogsJobResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListLogsJobResponse.
+
+        **参数解释**： 日志记录总条数。 **取值范围**： 不涉及
+
+        :param total_size: The total_size of this ListLogsJobResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         import warnings

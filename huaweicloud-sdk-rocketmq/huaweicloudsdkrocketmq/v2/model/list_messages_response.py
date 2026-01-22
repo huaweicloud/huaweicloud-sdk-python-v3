@@ -30,9 +30,9 @@ class ListMessagesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param messages: 消息列表。
+        :param messages: **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type messages: list[:class:`huaweicloudsdkrocketmq.v2.Message`]
-        :param total: 消息总数。
+        :param total: **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
         """
         
@@ -51,7 +51,7 @@ class ListMessagesResponse(SdkResponse):
     def messages(self):
         r"""Gets the messages of this ListMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The messages of this ListMessagesResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Message`]
@@ -62,7 +62,7 @@ class ListMessagesResponse(SdkResponse):
     def messages(self, messages):
         r"""Sets the messages of this ListMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param messages: The messages of this ListMessagesResponse.
         :type messages: list[:class:`huaweicloudsdkrocketmq.v2.Message`]
@@ -73,7 +73,7 @@ class ListMessagesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListMessagesResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ListMessagesResponse.
         :rtype: float
@@ -84,7 +84,7 @@ class ListMessagesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListMessagesResponse.
 
-        消息总数。
+        **参数解释**： 消息总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ListMessagesResponse.
         :type total: float

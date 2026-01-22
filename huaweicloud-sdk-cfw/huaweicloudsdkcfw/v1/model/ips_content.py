@@ -39,19 +39,19 @@ class IpsContent:
 
         The model defined in huaweicloud sdk
 
-        :param content: **参数解释**： 内容 **取值范围**： 不涉及
+        :param content: **参数解释**： 内容 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type content: str
-        :param depth: **参数解释**： 深度 **取值范围**： 不涉及
+        :param depth: **参数解释**： 匹配特征时，截止匹配的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type depth: int
-        :param is_hex: **参数解释**： 报文内容是否为十六进制 **取值范围**： 不涉及
+        :param is_hex: **参数解释**： 报文内容是否为十六进制 **约束限制**： 不涉及 **取值范围**： true： 是十六进制 false： 不是十六进制 **默认取值**：   不涉及
         :type is_hex: bool
-        :param is_ignore: **参数解释**： 是否忽略大小写 **取值范围**： 不涉及
+        :param is_ignore: **参数解释**： 是否忽略大小写 **约束限制**： 不涉及 **取值范围**： true： 忽略 false： 不忽略 **默认取值**：   不涉及
         :type is_ignore: bool
-        :param is_uri: **参数解释**： 是否在uri中截取报文 **取值范围**： 不涉及
+        :param is_uri: **参数解释**： 是否匹配URL中跟“内容”一致的字段 **约束限制**： 不涉及 **取值范围**： true： 匹配 false： 不匹配 **默认取值**：   不涉及
         :type is_uri: bool
-        :param offset: **参数解释**： 偏移量 **取值范围**： 不涉及
+        :param offset: **参数解释**： 匹配特征时开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type offset: int
-        :param relative_position: **参数解释**： 相对位置 **取值范围**： 不涉及
+        :param relative_position: **参数解释**： 匹配特征时，指定开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
         :type relative_position: int
         """
         
@@ -85,7 +85,7 @@ class IpsContent:
     def content(self):
         r"""Gets the content of this IpsContent.
 
-        **参数解释**： 内容 **取值范围**： 不涉及
+        **参数解释**： 内容 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The content of this IpsContent.
         :rtype: str
@@ -96,7 +96,7 @@ class IpsContent:
     def content(self, content):
         r"""Sets the content of this IpsContent.
 
-        **参数解释**： 内容 **取值范围**： 不涉及
+        **参数解释**： 内容 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param content: The content of this IpsContent.
         :type content: str
@@ -107,7 +107,7 @@ class IpsContent:
     def depth(self):
         r"""Gets the depth of this IpsContent.
 
-        **参数解释**： 深度 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时，截止匹配的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The depth of this IpsContent.
         :rtype: int
@@ -118,7 +118,7 @@ class IpsContent:
     def depth(self, depth):
         r"""Sets the depth of this IpsContent.
 
-        **参数解释**： 深度 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时，截止匹配的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param depth: The depth of this IpsContent.
         :type depth: int
@@ -129,7 +129,7 @@ class IpsContent:
     def is_hex(self):
         r"""Gets the is_hex of this IpsContent.
 
-        **参数解释**： 报文内容是否为十六进制 **取值范围**： 不涉及
+        **参数解释**： 报文内容是否为十六进制 **约束限制**： 不涉及 **取值范围**： true： 是十六进制 false： 不是十六进制 **默认取值**：   不涉及
 
         :return: The is_hex of this IpsContent.
         :rtype: bool
@@ -140,7 +140,7 @@ class IpsContent:
     def is_hex(self, is_hex):
         r"""Sets the is_hex of this IpsContent.
 
-        **参数解释**： 报文内容是否为十六进制 **取值范围**： 不涉及
+        **参数解释**： 报文内容是否为十六进制 **约束限制**： 不涉及 **取值范围**： true： 是十六进制 false： 不是十六进制 **默认取值**：   不涉及
 
         :param is_hex: The is_hex of this IpsContent.
         :type is_hex: bool
@@ -151,7 +151,7 @@ class IpsContent:
     def is_ignore(self):
         r"""Gets the is_ignore of this IpsContent.
 
-        **参数解释**： 是否忽略大小写 **取值范围**： 不涉及
+        **参数解释**： 是否忽略大小写 **约束限制**： 不涉及 **取值范围**： true： 忽略 false： 不忽略 **默认取值**：   不涉及
 
         :return: The is_ignore of this IpsContent.
         :rtype: bool
@@ -162,7 +162,7 @@ class IpsContent:
     def is_ignore(self, is_ignore):
         r"""Sets the is_ignore of this IpsContent.
 
-        **参数解释**： 是否忽略大小写 **取值范围**： 不涉及
+        **参数解释**： 是否忽略大小写 **约束限制**： 不涉及 **取值范围**： true： 忽略 false： 不忽略 **默认取值**：   不涉及
 
         :param is_ignore: The is_ignore of this IpsContent.
         :type is_ignore: bool
@@ -173,7 +173,7 @@ class IpsContent:
     def is_uri(self):
         r"""Gets the is_uri of this IpsContent.
 
-        **参数解释**： 是否在uri中截取报文 **取值范围**： 不涉及
+        **参数解释**： 是否匹配URL中跟“内容”一致的字段 **约束限制**： 不涉及 **取值范围**： true： 匹配 false： 不匹配 **默认取值**：   不涉及
 
         :return: The is_uri of this IpsContent.
         :rtype: bool
@@ -184,7 +184,7 @@ class IpsContent:
     def is_uri(self, is_uri):
         r"""Sets the is_uri of this IpsContent.
 
-        **参数解释**： 是否在uri中截取报文 **取值范围**： 不涉及
+        **参数解释**： 是否匹配URL中跟“内容”一致的字段 **约束限制**： 不涉及 **取值范围**： true： 匹配 false： 不匹配 **默认取值**：   不涉及
 
         :param is_uri: The is_uri of this IpsContent.
         :type is_uri: bool
@@ -195,7 +195,7 @@ class IpsContent:
     def offset(self):
         r"""Gets the offset of this IpsContent.
 
-        **参数解释**： 偏移量 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The offset of this IpsContent.
         :rtype: int
@@ -206,7 +206,7 @@ class IpsContent:
     def offset(self, offset):
         r"""Sets the offset of this IpsContent.
 
-        **参数解释**： 偏移量 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param offset: The offset of this IpsContent.
         :type offset: int
@@ -217,7 +217,7 @@ class IpsContent:
     def relative_position(self):
         r"""Gets the relative_position of this IpsContent.
 
-        **参数解释**： 相对位置 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时，指定开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :return: The relative_position of this IpsContent.
         :rtype: int
@@ -228,7 +228,7 @@ class IpsContent:
     def relative_position(self, relative_position):
         r"""Sets the relative_position of this IpsContent.
 
-        **参数解释**： 相对位置 **取值范围**： 不涉及
+        **参数解释**： 匹配特征时，指定开始的位置 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**：   不涉及
 
         :param relative_position: The relative_position of this IpsContent.
         :type relative_position: int

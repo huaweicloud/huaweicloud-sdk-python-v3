@@ -17,8 +17,8 @@ class ListTopicAccessPolicyRequest:
     openapi_types = {
         'instance_id': 'str',
         'topic': 'str',
-        'offset': 'str',
-        'limit': 'str'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -33,14 +33,14 @@ class ListTopicAccessPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: 主题名称。
+        :param topic: **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
-        :type offset: str
-        :param limit: 查询数量。
-        :type limit: str
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type offset: int
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type limit: int
         """
         
         
@@ -62,7 +62,7 @@ class ListTopicAccessPolicyRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListTopicAccessPolicyRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListTopicAccessPolicyRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ListTopicAccessPolicyRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListTopicAccessPolicyRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListTopicAccessPolicyRequest.
         :type instance_id: str
@@ -84,7 +84,7 @@ class ListTopicAccessPolicyRequest:
     def topic(self):
         r"""Gets the topic of this ListTopicAccessPolicyRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ListTopicAccessPolicyRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListTopicAccessPolicyRequest:
     def topic(self, topic):
         r"""Sets the topic of this ListTopicAccessPolicyRequest.
 
-        主题名称。
+        **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ListTopicAccessPolicyRequest.
         :type topic: str
@@ -106,10 +106,10 @@ class ListTopicAccessPolicyRequest:
     def offset(self):
         r"""Gets the offset of this ListTopicAccessPolicyRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ListTopicAccessPolicyRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -117,10 +117,10 @@ class ListTopicAccessPolicyRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTopicAccessPolicyRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量，表示从此偏移量开始查询， offset大于等于0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListTopicAccessPolicyRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 
@@ -128,10 +128,10 @@ class ListTopicAccessPolicyRequest:
     def limit(self):
         r"""Gets the limit of this ListTopicAccessPolicyRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ListTopicAccessPolicyRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -139,10 +139,10 @@ class ListTopicAccessPolicyRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTopicAccessPolicyRequest.
 
-        查询数量。
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ListTopicAccessPolicyRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 

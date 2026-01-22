@@ -43,7 +43,7 @@ class LogConfigDto:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
         :type fw_instance_id: str
         :param lts_enable: 是否开启LTS，1表示是，0表示不是
         :type lts_enable: int
@@ -96,7 +96,7 @@ class LogConfigDto:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this LogConfigDto.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :return: The fw_instance_id of this LogConfigDto.
         :rtype: str
@@ -107,7 +107,7 @@ class LogConfigDto:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this LogConfigDto.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
         :param fw_instance_id: The fw_instance_id of this LogConfigDto.
         :type fw_instance_id: str

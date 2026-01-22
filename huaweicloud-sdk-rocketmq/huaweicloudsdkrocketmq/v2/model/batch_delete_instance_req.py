@@ -17,26 +17,30 @@ class BatchDeleteInstanceReq:
     openapi_types = {
         'instances': 'list[str]',
         'action': 'str',
-        'all_failure': 'str'
+        'all_failure': 'str',
+        'force_delete': 'bool'
     }
 
     attribute_map = {
         'instances': 'instances',
         'action': 'action',
-        'all_failure': 'all_failure'
+        'all_failure': 'all_failure',
+        'force_delete': 'force_delete'
     }
 
-    def __init__(self, instances=None, action=None, all_failure=None):
+    def __init__(self, instances=None, action=None, all_failure=None, force_delete=None):
         r"""BatchDeleteInstanceReq
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例的ID列表。
+        :param instances: **参数解释**： 实例的ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instances: list[str]
-        :param action: 对实例的操作：delete。
+        :param action: **参数解释**： 对实例的操作：delete。 **约束限制**： 不涉及。 **取值范围**：  - delete **默认取值**： 不涉及
         :type action: str
-        :param all_failure: 参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
+        :param all_failure: **参数解释**： 参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。 **约束限制**： 不涉及。 **取值范围**： - reliability **默认取值**： 不涉及。
         :type all_failure: str
+        :param force_delete: **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，开启回收站功能后，实例进入回收站。 **默认取值**： 不涉及。
+        :type force_delete: bool
         """
         
         
@@ -44,6 +48,7 @@ class BatchDeleteInstanceReq:
         self._instances = None
         self._action = None
         self._all_failure = None
+        self._force_delete = None
         self.discriminator = None
 
         if instances is not None:
@@ -51,12 +56,14 @@ class BatchDeleteInstanceReq:
         self.action = action
         if all_failure is not None:
             self.all_failure = all_failure
+        if force_delete is not None:
+            self.force_delete = force_delete
 
     @property
     def instances(self):
         r"""Gets the instances of this BatchDeleteInstanceReq.
 
-        实例的ID列表。
+        **参数解释**： 实例的ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instances of this BatchDeleteInstanceReq.
         :rtype: list[str]
@@ -67,7 +74,7 @@ class BatchDeleteInstanceReq:
     def instances(self, instances):
         r"""Sets the instances of this BatchDeleteInstanceReq.
 
-        实例的ID列表。
+        **参数解释**： 实例的ID列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instances: The instances of this BatchDeleteInstanceReq.
         :type instances: list[str]
@@ -78,7 +85,7 @@ class BatchDeleteInstanceReq:
     def action(self):
         r"""Gets the action of this BatchDeleteInstanceReq.
 
-        对实例的操作：delete。
+        **参数解释**： 对实例的操作：delete。 **约束限制**： 不涉及。 **取值范围**：  - delete **默认取值**： 不涉及
 
         :return: The action of this BatchDeleteInstanceReq.
         :rtype: str
@@ -89,7 +96,7 @@ class BatchDeleteInstanceReq:
     def action(self, action):
         r"""Sets the action of this BatchDeleteInstanceReq.
 
-        对实例的操作：delete。
+        **参数解释**： 对实例的操作：delete。 **约束限制**： 不涉及。 **取值范围**：  - delete **默认取值**： 不涉及
 
         :param action: The action of this BatchDeleteInstanceReq.
         :type action: str
@@ -100,7 +107,7 @@ class BatchDeleteInstanceReq:
     def all_failure(self):
         r"""Gets the all_failure of this BatchDeleteInstanceReq.
 
-        参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
+        **参数解释**： 参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。 **约束限制**： 不涉及。 **取值范围**： - reliability **默认取值**： 不涉及。
 
         :return: The all_failure of this BatchDeleteInstanceReq.
         :rtype: str
@@ -111,12 +118,34 @@ class BatchDeleteInstanceReq:
     def all_failure(self, all_failure):
         r"""Sets the all_failure of this BatchDeleteInstanceReq.
 
-        参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
+        **参数解释**： 参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。 **约束限制**： 不涉及。 **取值范围**： - reliability **默认取值**： 不涉及。
 
         :param all_failure: The all_failure of this BatchDeleteInstanceReq.
         :type all_failure: str
         """
         self._all_failure = all_failure
+
+    @property
+    def force_delete(self):
+        r"""Gets the force_delete of this BatchDeleteInstanceReq.
+
+        **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，开启回收站功能后，实例进入回收站。 **默认取值**： 不涉及。
+
+        :return: The force_delete of this BatchDeleteInstanceReq.
+        :rtype: bool
+        """
+        return self._force_delete
+
+    @force_delete.setter
+    def force_delete(self, force_delete):
+        r"""Sets the force_delete of this BatchDeleteInstanceReq.
+
+        **参数解释**： 是否强删除。 **约束限制**： 不涉及。 **取值范围**： - true：强删除，强删除实例不进入回收站。 - false：弱删除，开启回收站功能后，实例进入回收站。 **默认取值**： 不涉及。
+
+        :param force_delete: The force_delete of this BatchDeleteInstanceReq.
+        :type force_delete: bool
+        """
+        self._force_delete = force_delete
 
     def to_dict(self):
         result = {}

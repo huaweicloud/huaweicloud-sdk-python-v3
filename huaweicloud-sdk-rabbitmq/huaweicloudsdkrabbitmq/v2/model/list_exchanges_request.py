@@ -35,7 +35,7 @@ class ListExchangesRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param vhost: 所属Vhost名称
+        :param vhost: vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
         :type vhost: str
         :param offset: 分页查询偏移量，表示从此偏移量开始查询，offset大于等于0，默认从0开始查询。
         :type offset: int
@@ -84,7 +84,7 @@ class ListExchangesRequest:
     def vhost(self):
         r"""Gets the vhost of this ListExchangesRequest.
 
-        所属Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :return: The vhost of this ListExchangesRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListExchangesRequest:
     def vhost(self, vhost):
         r"""Sets the vhost of this ListExchangesRequest.
 
-        所属Vhost名称
+        vhost名称，名称中包含/时，需要将/替换为__F_SLASH__，否则会调用失败。例如：Vhost名称为/test，入参值为__F_SLASH__test。
 
         :param vhost: The vhost of this ListExchangesRequest.
         :type vhost: str

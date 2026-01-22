@@ -29,9 +29,9 @@ class RuleId:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则id
+        :param id: **参数解释**： 规则ID **取值范围**： 不涉及
         :type id: str
-        :param name: 规则名称
+        :param name: **参数解释**： 规则名称 **取值范围**： 不涉及
         :type name: str
         """
         
@@ -50,7 +50,7 @@ class RuleId:
     def id(self):
         r"""Gets the id of this RuleId.
 
-        规则id
+        **参数解释**： 规则ID **取值范围**： 不涉及
 
         :return: The id of this RuleId.
         :rtype: str
@@ -61,7 +61,7 @@ class RuleId:
     def id(self, id):
         r"""Sets the id of this RuleId.
 
-        规则id
+        **参数解释**： 规则ID **取值范围**： 不涉及
 
         :param id: The id of this RuleId.
         :type id: str
@@ -72,7 +72,7 @@ class RuleId:
     def name(self):
         r"""Gets the name of this RuleId.
 
-        规则名称
+        **参数解释**： 规则名称 **取值范围**： 不涉及
 
         :return: The name of this RuleId.
         :rtype: str
@@ -83,7 +83,7 @@ class RuleId:
     def name(self, name):
         r"""Sets the name of this RuleId.
 
-        规则名称
+        **参数解释**： 规则名称 **取值范围**： 不涉及
 
         :param name: The name of this RuleId.
         :type name: str

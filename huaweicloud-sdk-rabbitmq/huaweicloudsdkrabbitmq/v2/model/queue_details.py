@@ -41,19 +41,19 @@ class QueueDetails:
 
         The model defined in huaweicloud sdk
 
-        :param vhost: Queue所属Vhost名称
+        :param vhost: **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
         :type vhost: str
-        :param name: Queue名称
+        :param name: **参数解释**： Queue名称。 **取值范围**： 不涉及。
         :type name: str
-        :param durable: 是否持久化
+        :param durable: **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
         :type durable: bool
-        :param auto_delete: 是否自动删除
+        :param auto_delete: **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
         :type auto_delete: bool
-        :param messages: 待消费消息数
+        :param messages: **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
         :type messages: int
-        :param consumers: 连接的消费者数
+        :param consumers: **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
         :type consumers: int
-        :param policy: 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        :param policy: **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,,hws_eu)。 **取值范围**： 不涉及。
         :type policy: str
         :param arguments: 
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -92,7 +92,7 @@ class QueueDetails:
     def vhost(self):
         r"""Gets the vhost of this QueueDetails.
 
-        Queue所属Vhost名称
+        **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
 
         :return: The vhost of this QueueDetails.
         :rtype: str
@@ -103,7 +103,7 @@ class QueueDetails:
     def vhost(self, vhost):
         r"""Sets the vhost of this QueueDetails.
 
-        Queue所属Vhost名称
+        **参数解释**： Queue所属Vhost名称。 **取值范围**： 不涉及。
 
         :param vhost: The vhost of this QueueDetails.
         :type vhost: str
@@ -114,7 +114,7 @@ class QueueDetails:
     def name(self):
         r"""Gets the name of this QueueDetails.
 
-        Queue名称
+        **参数解释**： Queue名称。 **取值范围**： 不涉及。
 
         :return: The name of this QueueDetails.
         :rtype: str
@@ -125,7 +125,7 @@ class QueueDetails:
     def name(self, name):
         r"""Sets the name of this QueueDetails.
 
-        Queue名称
+        **参数解释**： Queue名称。 **取值范围**： 不涉及。
 
         :param name: The name of this QueueDetails.
         :type name: str
@@ -136,7 +136,7 @@ class QueueDetails:
     def durable(self):
         r"""Gets the durable of this QueueDetails.
 
-        是否持久化
+        **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
 
         :return: The durable of this QueueDetails.
         :rtype: bool
@@ -147,7 +147,7 @@ class QueueDetails:
     def durable(self, durable):
         r"""Sets the durable of this QueueDetails.
 
-        是否持久化
+        **参数解释**： Queue是否开启持久化。 **取值范围**： - true：开启持久化。 - false：未开启持久化。
 
         :param durable: The durable of this QueueDetails.
         :type durable: bool
@@ -158,7 +158,7 @@ class QueueDetails:
     def auto_delete(self):
         r"""Gets the auto_delete of this QueueDetails.
 
-        是否自动删除
+        **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
 
         :return: The auto_delete of this QueueDetails.
         :rtype: bool
@@ -169,7 +169,7 @@ class QueueDetails:
     def auto_delete(self, auto_delete):
         r"""Sets the auto_delete of this QueueDetails.
 
-        是否自动删除
+        **参数解释**： Queue是否开启自动删除。 **取值范围**： - true：开启自动删除。 - false：未开启自动删除。
 
         :param auto_delete: The auto_delete of this QueueDetails.
         :type auto_delete: bool
@@ -180,7 +180,7 @@ class QueueDetails:
     def messages(self):
         r"""Gets the messages of this QueueDetails.
 
-        待消费消息数
+        **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
 
         :return: The messages of this QueueDetails.
         :rtype: int
@@ -191,7 +191,7 @@ class QueueDetails:
     def messages(self, messages):
         r"""Sets the messages of this QueueDetails.
 
-        待消费消息数
+        **参数解释**： 待消费消息数。 **取值范围**： 不涉及。
 
         :param messages: The messages of this QueueDetails.
         :type messages: int
@@ -202,7 +202,7 @@ class QueueDetails:
     def consumers(self):
         r"""Gets the consumers of this QueueDetails.
 
-        连接的消费者数
+        **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
 
         :return: The consumers of this QueueDetails.
         :rtype: int
@@ -213,7 +213,7 @@ class QueueDetails:
     def consumers(self, consumers):
         r"""Sets the consumers of this QueueDetails.
 
-        连接的消费者数
+        **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
 
         :param consumers: The consumers of this QueueDetails.
         :type consumers: int
@@ -224,7 +224,7 @@ class QueueDetails:
     def policy(self):
         r"""Gets the policy of this QueueDetails.
 
-        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,,hws_eu)。 **取值范围**： 不涉及。
 
         :return: The policy of this QueueDetails.
         :rtype: str
@@ -235,7 +235,7 @@ class QueueDetails:
     def policy(self, policy):
         r"""Sets the policy of this QueueDetails.
 
-        策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,,hws_eu)。 **取值范围**： 不涉及。
 
         :param policy: The policy of this QueueDetails.
         :type policy: str

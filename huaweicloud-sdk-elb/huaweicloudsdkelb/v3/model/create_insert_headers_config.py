@@ -27,7 +27,7 @@ class CreateInsertHeadersConfig:
 
         The model defined in huaweicloud sdk
 
-        :param configs: **参数解释**：要添加请求头、响应头参数列表。  **约束限制**：不涉及
+        :param configs: **参数解释**：要添加请求头参数列表。  **约束限制**：不涉及
         :type configs: list[:class:`huaweicloudsdkelb.v3.CreateInsertHeaderConfig`]
         """
         
@@ -42,7 +42,7 @@ class CreateInsertHeadersConfig:
     def configs(self):
         r"""Gets the configs of this CreateInsertHeadersConfig.
 
-        **参数解释**：要添加请求头、响应头参数列表。  **约束限制**：不涉及
+        **参数解释**：要添加请求头参数列表。  **约束限制**：不涉及
 
         :return: The configs of this CreateInsertHeadersConfig.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CreateInsertHeaderConfig`]
@@ -53,7 +53,7 @@ class CreateInsertHeadersConfig:
     def configs(self, configs):
         r"""Sets the configs of this CreateInsertHeadersConfig.
 
-        **参数解释**：要添加请求头、响应头参数列表。  **约束限制**：不涉及
+        **参数解释**：要添加请求头参数列表。  **约束限制**：不涉及
 
         :param configs: The configs of this CreateInsertHeadersConfig.
         :type configs: list[:class:`huaweicloudsdkelb.v3.CreateInsertHeaderConfig`]

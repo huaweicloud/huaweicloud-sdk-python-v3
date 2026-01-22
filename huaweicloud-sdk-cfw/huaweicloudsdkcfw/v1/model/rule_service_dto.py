@@ -49,29 +49,29 @@ class RuleServiceDto:
 
         The model defined in huaweicloud sdk
 
-        :param type: 服务输入类型，0为手动输入类型，1为自动输入类型
+        :param type: **参数解释**： 服务输入类型，用于明确规则的服务输入类型。 **约束限制**： 不涉及 **取值范围**： 0为手动输入类型，1为自动输入类型 **默认取值**： 不涉及
         :type type: int
-        :param protocol: 协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        :param protocol: **参数解释**： 服务协议类型，用于明确规则引用服务协议类型。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
         :type protocol: int
-        :param protocols: 协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        :param protocols: **参数解释**： 协议列表，用于明确规则引用协议列表。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
         :type protocols: list[int]
-        :param source_port: 源端口
+        :param source_port: **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type source_port: str
-        :param dest_port: 目的端口
+        :param dest_port: **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type dest_port: str
-        :param service_set_id: 服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        :param service_set_id: **参数解释**： 服务组ID，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type service_set_id: str
-        :param service_set_name: 服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
+        :param service_set_name: **参数解释**： 服务（协议、源端口、目的端口）组的名称，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type service_set_name: str
-        :param custom_service: 自定义服务
+        :param custom_service: **参数解释**： 自定义服务，用于明确规则引用服务。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
-        :param predefined_group: 预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
+        :param predefined_group: **参数解释**： 预定义服务组ID列表，用于明确规则引用预定义服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为1预定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type predefined_group: list[str]
-        :param service_group: 服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
+        :param service_group: **参数解释**： 服务组ID列表，用于明确规则引用服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为0自定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type service_group: list[str]
-        :param service_group_names: 服务组名称列表
+        :param service_group_names: **参数解释**： 服务（协议、源端口、目的端口）组的名称。列表。 **约束限制**： 不涉及
         :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
-        :param service_set_type: 服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        :param service_set_type: **参数解释**： 服务组类型，用于明确规则引用服务组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示常用Web服务，2表示常用远程登录和PING，3表示常用数据库 **默认取值**： 不涉及
         :type service_set_type: int
         """
         
@@ -119,7 +119,7 @@ class RuleServiceDto:
     def type(self):
         r"""Gets the type of this RuleServiceDto.
 
-        服务输入类型，0为手动输入类型，1为自动输入类型
+        **参数解释**： 服务输入类型，用于明确规则的服务输入类型。 **约束限制**： 不涉及 **取值范围**： 0为手动输入类型，1为自动输入类型 **默认取值**： 不涉及
 
         :return: The type of this RuleServiceDto.
         :rtype: int
@@ -130,7 +130,7 @@ class RuleServiceDto:
     def type(self, type):
         r"""Sets the type of this RuleServiceDto.
 
-        服务输入类型，0为手动输入类型，1为自动输入类型
+        **参数解释**： 服务输入类型，用于明确规则的服务输入类型。 **约束限制**： 不涉及 **取值范围**： 0为手动输入类型，1为自动输入类型 **默认取值**： 不涉及
 
         :param type: The type of this RuleServiceDto.
         :type type: int
@@ -141,7 +141,7 @@ class RuleServiceDto:
     def protocol(self):
         r"""Gets the protocol of this RuleServiceDto.
 
-        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        **参数解释**： 服务协议类型，用于明确规则引用服务协议类型。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
 
         :return: The protocol of this RuleServiceDto.
         :rtype: int
@@ -152,7 +152,7 @@ class RuleServiceDto:
     def protocol(self, protocol):
         r"""Sets the protocol of this RuleServiceDto.
 
-        协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        **参数解释**： 服务协议类型，用于明确规则引用服务协议类型。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
 
         :param protocol: The protocol of this RuleServiceDto.
         :type protocol: int
@@ -163,7 +163,7 @@ class RuleServiceDto:
     def protocols(self):
         r"""Gets the protocols of this RuleServiceDto.
 
-        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        **参数解释**： 协议列表，用于明确规则引用协议列表。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
 
         :return: The protocols of this RuleServiceDto.
         :rtype: list[int]
@@ -174,7 +174,7 @@ class RuleServiceDto:
     def protocols(self, protocols):
         r"""Sets the protocols of this RuleServiceDto.
 
-        协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
+        **参数解释**： 协议列表，用于明确规则引用协议列表。 **约束限制**： type为0（手动类型）时，此处不能为空。 **取值范围**： 协议类型：TCP为6，UDP为17，ICMP为1，ICMPv6为58，Any为-1 **默认取值**： 不涉及
 
         :param protocols: The protocols of this RuleServiceDto.
         :type protocols: list[int]
@@ -185,7 +185,7 @@ class RuleServiceDto:
     def source_port(self):
         r"""Gets the source_port of this RuleServiceDto.
 
-        源端口
+        **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The source_port of this RuleServiceDto.
         :rtype: str
@@ -196,7 +196,7 @@ class RuleServiceDto:
     def source_port(self, source_port):
         r"""Sets the source_port of this RuleServiceDto.
 
-        源端口
+        **参数解释**： 源端口，会话发起方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param source_port: The source_port of this RuleServiceDto.
         :type source_port: str
@@ -207,7 +207,7 @@ class RuleServiceDto:
     def dest_port(self):
         r"""Gets the dest_port of this RuleServiceDto.
 
-        目的端口
+        **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The dest_port of this RuleServiceDto.
         :rtype: str
@@ -218,7 +218,7 @@ class RuleServiceDto:
     def dest_port(self, dest_port):
         r"""Sets the dest_port of this RuleServiceDto.
 
-        目的端口
+        **参数解释**： 目的端口，会话接收方的端口。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param dest_port: The dest_port of this RuleServiceDto.
         :type dest_port: str
@@ -229,7 +229,7 @@ class RuleServiceDto:
     def service_set_id(self):
         r"""Gets the service_set_id of this RuleServiceDto.
 
-        服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务组ID，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The service_set_id of this RuleServiceDto.
         :rtype: str
@@ -240,7 +240,7 @@ class RuleServiceDto:
     def service_set_id(self, service_set_id):
         r"""Sets the service_set_id of this RuleServiceDto.
 
-        服务组id，当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务组ID，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param service_set_id: The service_set_id of this RuleServiceDto.
         :type service_set_id: str
@@ -251,7 +251,7 @@ class RuleServiceDto:
     def service_set_name(self):
         r"""Gets the service_set_name of this RuleServiceDto.
 
-        服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The service_set_name of this RuleServiceDto.
         :rtype: str
@@ -262,7 +262,7 @@ class RuleServiceDto:
     def service_set_name(self, service_set_name):
         r"""Sets the service_set_name of this RuleServiceDto.
 
-        服务组名称,当type为1（关联IP地址组）时不能为空，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称，用于明确规则引用服务组，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。 **约束限制**： 当address的type为1（关联IP地址组）时，此处不能为空 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param service_set_name: The service_set_name of this RuleServiceDto.
         :type service_set_name: str
@@ -273,7 +273,7 @@ class RuleServiceDto:
     def custom_service(self):
         r"""Gets the custom_service of this RuleServiceDto.
 
-        自定义服务
+        **参数解释**： 自定义服务，用于明确规则引用服务。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The custom_service of this RuleServiceDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
@@ -284,7 +284,7 @@ class RuleServiceDto:
     def custom_service(self, custom_service):
         r"""Sets the custom_service of this RuleServiceDto.
 
-        自定义服务
+        **参数解释**： 自定义服务，用于明确规则引用服务。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param custom_service: The custom_service of this RuleServiceDto.
         :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
@@ -295,7 +295,7 @@ class RuleServiceDto:
     def predefined_group(self):
         r"""Gets the predefined_group of this RuleServiceDto.
 
-        预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
+        **参数解释**： 预定义服务组ID列表，用于明确规则引用预定义服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为1预定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The predefined_group of this RuleServiceDto.
         :rtype: list[str]
@@ -306,7 +306,7 @@ class RuleServiceDto:
     def predefined_group(self, predefined_group):
         r"""Sets the predefined_group of this RuleServiceDto.
 
-        预定义服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为1预定义服务组。
+        **参数解释**： 预定义服务组ID列表，用于明确规则引用预定义服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为1预定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param predefined_group: The predefined_group of this RuleServiceDto.
         :type predefined_group: list[str]
@@ -317,7 +317,7 @@ class RuleServiceDto:
     def service_group(self):
         r"""Gets the service_group of this RuleServiceDto.
 
-        服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
+        **参数解释**： 服务组ID列表，用于明确规则引用服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为0自定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The service_group of this RuleServiceDto.
         :rtype: list[str]
@@ -328,7 +328,7 @@ class RuleServiceDto:
     def service_group(self, service_group):
         r"""Sets the service_group of this RuleServiceDto.
 
-        服务组id列表，服务组id可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。查询条件中query_service_set_type需要设置为0自定义服务组。
+        **参数解释**： 服务组ID列表，用于明确规则引用服务组。服务组ID可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。 **约束限制**： 查询条件中query_service_set_type需要设置为0自定义服务组。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param service_group: The service_group of this RuleServiceDto.
         :type service_group: list[str]
@@ -339,7 +339,7 @@ class RuleServiceDto:
     def service_group_names(self):
         r"""Gets the service_group_names of this RuleServiceDto.
 
-        服务组名称列表
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称。列表。 **约束限制**： 不涉及
 
         :return: The service_group_names of this RuleServiceDto.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
@@ -350,7 +350,7 @@ class RuleServiceDto:
     def service_group_names(self, service_group_names):
         r"""Sets the service_group_names of this RuleServiceDto.
 
-        服务组名称列表
+        **参数解释**： 服务（协议、源端口、目的端口）组的名称。列表。 **约束限制**： 不涉及
 
         :param service_group_names: The service_group_names of this RuleServiceDto.
         :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.ServiceGroupVO`]
@@ -361,7 +361,7 @@ class RuleServiceDto:
     def service_set_type(self):
         r"""Gets the service_set_type of this RuleServiceDto.
 
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        **参数解释**： 服务组类型，用于明确规则引用服务组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示常用Web服务，2表示常用远程登录和PING，3表示常用数据库 **默认取值**： 不涉及
 
         :return: The service_set_type of this RuleServiceDto.
         :rtype: int
@@ -372,7 +372,7 @@ class RuleServiceDto:
     def service_set_type(self, service_set_type):
         r"""Sets the service_set_type of this RuleServiceDto.
 
-        服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
+        **参数解释**： 服务组类型，用于明确规则引用服务组类型。 **约束限制**： 不涉及 **取值范围**： 0表示自定义服务组，1表示常用Web服务，2表示常用远程登录和PING，3表示常用数据库 **默认取值**： 不涉及
 
         :param service_set_type: The service_set_type of this RuleServiceDto.
         :type service_set_type: int

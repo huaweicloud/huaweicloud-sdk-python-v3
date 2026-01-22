@@ -16,47 +16,47 @@ class SwitchAutoProtectStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'str'
+        'body': 'object'
     }
 
     attribute_map = {
-        'data': 'data'
+        'body': 'body'
     }
 
-    def __init__(self, data=None):
+    def __init__(self, body=None):
         r"""SwitchAutoProtectStatusResponse
 
         The model defined in huaweicloud sdk
 
-        :param data: 
-        :type data: str
+        :param body: 
+        :type body: object
         """
         
         super().__init__()
 
-        self._data = None
+        self._body = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        if body is not None:
+            self.body = body
 
     @property
-    def data(self):
-        r"""Gets the data of this SwitchAutoProtectStatusResponse.
+    def body(self):
+        r"""Gets the body of this SwitchAutoProtectStatusResponse.
 
-        :return: The data of this SwitchAutoProtectStatusResponse.
-        :rtype: str
+        :return: The body of this SwitchAutoProtectStatusResponse.
+        :rtype: object
         """
-        return self._data
+        return self._body
 
-    @data.setter
-    def data(self, data):
-        r"""Sets the data of this SwitchAutoProtectStatusResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this SwitchAutoProtectStatusResponse.
 
-        :param data: The data of this SwitchAutoProtectStatusResponse.
-        :type data: str
+        :param body: The body of this SwitchAutoProtectStatusResponse.
+        :type body: object
         """
-        self._data = data
+        self._body = body
 
     def to_dict(self):
         import warnings

@@ -31,11 +31,11 @@ class OrderRuleAclDto:
 
         The model defined in huaweicloud sdk
 
-        :param dest_rule_id: 目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        :param dest_rule_id: **参数解释**： 目标规则ID，填写后添加的新规则置位于此规则之后，非置顶时不能为空，置顶时为空，目标规则ID可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。 **约束限制**： 非置顶时目标规则需要存在 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type dest_rule_id: str
-        :param top: 是否置顶，0代表非置顶，1代表置顶
+        :param top: **参数解释**： 规则是否置顶，用于确认规则是否置顶 **约束限制**： 不涉及 **取值范围**： 0代表非置顶，1代表置顶 **默认取值**： 不涉及
         :type top: int
-        :param bottom: 是否置底，0代表非置底，1代表置底
+        :param bottom: **参数解释**： 规则是否置底，用于确认规则是否置底 **约束限制**： 不涉及 **取值范围**： 0代表非置底，1代表置底 **默认取值**： 不涉及
         :type bottom: int
         """
         
@@ -57,7 +57,7 @@ class OrderRuleAclDto:
     def dest_rule_id(self):
         r"""Gets the dest_rule_id of this OrderRuleAclDto.
 
-        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 目标规则ID，填写后添加的新规则置位于此规则之后，非置顶时不能为空，置顶时为空，目标规则ID可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。 **约束限制**： 非置顶时目标规则需要存在 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The dest_rule_id of this OrderRuleAclDto.
         :rtype: str
@@ -68,7 +68,7 @@ class OrderRuleAclDto:
     def dest_rule_id(self, dest_rule_id):
         r"""Sets the dest_rule_id of this OrderRuleAclDto.
 
-        目标规则id，添加规则位于此规则之后，非置顶时不能为空，置顶时为空，目标规则id可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        **参数解释**： 目标规则ID，填写后添加的新规则置位于此规则之后，非置顶时不能为空，置顶时为空，目标规则ID可以通过[查询防护规则接口](ListAclRules.xml)获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。 **约束限制**： 非置顶时目标规则需要存在 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param dest_rule_id: The dest_rule_id of this OrderRuleAclDto.
         :type dest_rule_id: str
@@ -79,7 +79,7 @@ class OrderRuleAclDto:
     def top(self):
         r"""Gets the top of this OrderRuleAclDto.
 
-        是否置顶，0代表非置顶，1代表置顶
+        **参数解释**： 规则是否置顶，用于确认规则是否置顶 **约束限制**： 不涉及 **取值范围**： 0代表非置顶，1代表置顶 **默认取值**： 不涉及
 
         :return: The top of this OrderRuleAclDto.
         :rtype: int
@@ -90,7 +90,7 @@ class OrderRuleAclDto:
     def top(self, top):
         r"""Sets the top of this OrderRuleAclDto.
 
-        是否置顶，0代表非置顶，1代表置顶
+        **参数解释**： 规则是否置顶，用于确认规则是否置顶 **约束限制**： 不涉及 **取值范围**： 0代表非置顶，1代表置顶 **默认取值**： 不涉及
 
         :param top: The top of this OrderRuleAclDto.
         :type top: int
@@ -101,7 +101,7 @@ class OrderRuleAclDto:
     def bottom(self):
         r"""Gets the bottom of this OrderRuleAclDto.
 
-        是否置底，0代表非置底，1代表置底
+        **参数解释**： 规则是否置底，用于确认规则是否置底 **约束限制**： 不涉及 **取值范围**： 0代表非置底，1代表置底 **默认取值**： 不涉及
 
         :return: The bottom of this OrderRuleAclDto.
         :rtype: int
@@ -112,7 +112,7 @@ class OrderRuleAclDto:
     def bottom(self, bottom):
         r"""Sets the bottom of this OrderRuleAclDto.
 
-        是否置底，0代表非置底，1代表置底
+        **参数解释**： 规则是否置底，用于确认规则是否置底 **约束限制**： 不涉及 **取值范围**： 0代表非置底，1代表置底 **默认取值**： 不涉及
 
         :param bottom: The bottom of this OrderRuleAclDto.
         :type bottom: int

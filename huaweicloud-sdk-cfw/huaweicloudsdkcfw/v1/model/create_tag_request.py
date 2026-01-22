@@ -29,7 +29,7 @@ class CreateTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param fw_instance_id: 防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        :param fw_instance_id: **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type fw_instance_id: str
         :param body: Body of the CreateTagRequest
         :type body: :class:`huaweicloudsdkcfw.v1.CreateTagsDto`
@@ -49,7 +49,7 @@ class CreateTagRequest:
     def fw_instance_id(self):
         r"""Gets the fw_instance_id of this CreateTagRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The fw_instance_id of this CreateTagRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateTagRequest:
     def fw_instance_id(self, fw_instance_id):
         r"""Sets the fw_instance_id of this CreateTagRequest.
 
-        防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
+        **参数解释**： 防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param fw_instance_id: The fw_instance_id of this CreateTagRequest.
         :type fw_instance_id: str

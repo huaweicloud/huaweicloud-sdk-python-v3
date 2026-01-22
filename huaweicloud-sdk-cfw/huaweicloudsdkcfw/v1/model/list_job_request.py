@@ -27,7 +27,7 @@ class ListJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id
+        :param job_id: **参数解释**： 创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
         :type job_id: str
         """
         
@@ -42,7 +42,7 @@ class ListJobRequest:
     def job_id(self):
         r"""Gets the job_id of this ListJobRequest.
 
-        创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id
+        **参数解释**： 创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :return: The job_id of this ListJobRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ListJobRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ListJobRequest.
 
-        创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id
+        **参数解释**： 创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id **约束限制**： 不涉及 **取值范围**： 32位UUID **默认取值**： 不涉及
 
         :param job_id: The job_id of this ListJobRequest.
         :type job_id: str

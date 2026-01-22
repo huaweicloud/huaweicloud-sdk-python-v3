@@ -33,13 +33,13 @@ class ListDomainsetsResponseData:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页显示个数，范围为1-1024
+        :param limit: **参数解释**： 每页显示个数 **取值范围**： 1-1024
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        :param offset: **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于等于0
         :type offset: int
-        :param total: 域名组总数
+        :param total: **参数解释**： 域名组总数 **取值范围**： 大于等于0
         :type total: int
-        :param records: 域名组列表
+        :param records: **参数解释**： 域名组列表 **取值范围**： 不涉及
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainSetVo`]
         """
         
@@ -64,7 +64,7 @@ class ListDomainsetsResponseData:
     def limit(self):
         r"""Gets the limit of this ListDomainsetsResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :return: The limit of this ListDomainsetsResponseData.
         :rtype: int
@@ -75,7 +75,7 @@ class ListDomainsetsResponseData:
     def limit(self, limit):
         r"""Sets the limit of this ListDomainsetsResponseData.
 
-        每页显示个数，范围为1-1024
+        **参数解释**： 每页显示个数 **取值范围**： 1-1024
 
         :param limit: The limit of this ListDomainsetsResponseData.
         :type limit: int
@@ -86,7 +86,7 @@ class ListDomainsetsResponseData:
     def offset(self):
         r"""Gets the offset of this ListDomainsetsResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于等于0
 
         :return: The offset of this ListDomainsetsResponseData.
         :rtype: int
@@ -97,7 +97,7 @@ class ListDomainsetsResponseData:
     def offset(self, offset):
         r"""Sets the offset of this ListDomainsetsResponseData.
 
-        偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
+        **参数解释**： 偏移量：指定返回记录的开始位置 **取值范围**： 大于等于0
 
         :param offset: The offset of this ListDomainsetsResponseData.
         :type offset: int
@@ -108,7 +108,7 @@ class ListDomainsetsResponseData:
     def total(self):
         r"""Gets the total of this ListDomainsetsResponseData.
 
-        域名组总数
+        **参数解释**： 域名组总数 **取值范围**： 大于等于0
 
         :return: The total of this ListDomainsetsResponseData.
         :rtype: int
@@ -119,7 +119,7 @@ class ListDomainsetsResponseData:
     def total(self, total):
         r"""Sets the total of this ListDomainsetsResponseData.
 
-        域名组总数
+        **参数解释**： 域名组总数 **取值范围**： 大于等于0
 
         :param total: The total of this ListDomainsetsResponseData.
         :type total: int
@@ -130,7 +130,7 @@ class ListDomainsetsResponseData:
     def records(self):
         r"""Gets the records of this ListDomainsetsResponseData.
 
-        域名组列表
+        **参数解释**： 域名组列表 **取值范围**： 不涉及
 
         :return: The records of this ListDomainsetsResponseData.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.DomainSetVo`]
@@ -141,7 +141,7 @@ class ListDomainsetsResponseData:
     def records(self, records):
         r"""Sets the records of this ListDomainsetsResponseData.
 
-        域名组列表
+        **参数解释**： 域名组列表 **取值范围**： 不涉及
 
         :param records: The records of this ListDomainsetsResponseData.
         :type records: list[:class:`huaweicloudsdkcfw.v1.DomainSetVo`]

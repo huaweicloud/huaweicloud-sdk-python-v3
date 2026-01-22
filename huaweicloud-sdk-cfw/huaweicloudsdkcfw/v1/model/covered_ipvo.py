@@ -29,9 +29,9 @@ class CoveredIPVO:
 
         The model defined in huaweicloud sdk
 
-        :param ip: ip地址
+        :param ip: IP地址
         :type ip: str
-        :param covered_ip: 覆盖ip地址。
+        :param covered_ip: 覆盖IP地址。
         :type covered_ip: str
         """
         
@@ -50,7 +50,7 @@ class CoveredIPVO:
     def ip(self):
         r"""Gets the ip of this CoveredIPVO.
 
-        ip地址
+        IP地址
 
         :return: The ip of this CoveredIPVO.
         :rtype: str
@@ -61,7 +61,7 @@ class CoveredIPVO:
     def ip(self, ip):
         r"""Sets the ip of this CoveredIPVO.
 
-        ip地址
+        IP地址
 
         :param ip: The ip of this CoveredIPVO.
         :type ip: str
@@ -72,7 +72,7 @@ class CoveredIPVO:
     def covered_ip(self):
         r"""Gets the covered_ip of this CoveredIPVO.
 
-        覆盖ip地址。
+        覆盖IP地址。
 
         :return: The covered_ip of this CoveredIPVO.
         :rtype: str
@@ -83,7 +83,7 @@ class CoveredIPVO:
     def covered_ip(self, covered_ip):
         r"""Sets the covered_ip of this CoveredIPVO.
 
-        覆盖ip地址。
+        覆盖IP地址。
 
         :param covered_ip: The covered_ip of this CoveredIPVO.
         :type covered_ip: str

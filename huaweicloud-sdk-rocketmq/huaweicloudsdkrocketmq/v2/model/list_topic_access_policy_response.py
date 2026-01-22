@@ -32,11 +32,11 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param policies: 用户列表。
+        :param policies: **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type policies: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
-        :param total: 总用户个数。
+        :param total: **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type total: float
-        :param name: 主题或消费组名称。
+        :param name: **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         """
         
@@ -58,7 +58,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def policies(self):
         r"""Gets the policies of this ListTopicAccessPolicyResponse.
 
-        用户列表。
+        **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The policies of this ListTopicAccessPolicyResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
@@ -69,7 +69,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def policies(self, policies):
         r"""Sets the policies of this ListTopicAccessPolicyResponse.
 
-        用户列表。
+        **参数解释**： 用户列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param policies: The policies of this ListTopicAccessPolicyResponse.
         :type policies: list[:class:`huaweicloudsdkrocketmq.v2.ListAccessPolicyRespPolicies`]
@@ -80,7 +80,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTopicAccessPolicyResponse.
 
-        总用户个数。
+        **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total of this ListTopicAccessPolicyResponse.
         :rtype: float
@@ -91,7 +91,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTopicAccessPolicyResponse.
 
-        总用户个数。
+        **参数解释**： 总用户个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total: The total of this ListTopicAccessPolicyResponse.
         :type total: float
@@ -102,7 +102,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ListTopicAccessPolicyResponse.
 
-        主题或消费组名称。
+        **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this ListTopicAccessPolicyResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ListTopicAccessPolicyResponse.
 
-        主题或消费组名称。
+        **参数解释**： 主题或消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this ListTopicAccessPolicyResponse.
         :type name: str

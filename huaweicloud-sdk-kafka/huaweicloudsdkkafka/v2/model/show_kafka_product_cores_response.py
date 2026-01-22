@@ -32,7 +32,7 @@ class ShowKafkaProductCoresResponse(SdkResponse):
 
         :param core_num: **参数解释**： 核数。 **取值范围**： 不涉及。
         :type core_num: int
-        :param total_extend_storage_space: **参数解释**： 需要扩容的存储空间。 **取值范围**： 不涉及。
+        :param total_extend_storage_space: **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
         :type total_extend_storage_space: int
         """
         
@@ -73,7 +73,7 @@ class ShowKafkaProductCoresResponse(SdkResponse):
     def total_extend_storage_space(self):
         r"""Gets the total_extend_storage_space of this ShowKafkaProductCoresResponse.
 
-        **参数解释**： 需要扩容的存储空间。 **取值范围**： 不涉及。
+        **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
 
         :return: The total_extend_storage_space of this ShowKafkaProductCoresResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowKafkaProductCoresResponse(SdkResponse):
     def total_extend_storage_space(self, total_extend_storage_space):
         r"""Sets the total_extend_storage_space of this ShowKafkaProductCoresResponse.
 
-        **参数解释**： 需要扩容的存储空间。 **取值范围**： 不涉及。
+        **参数解释**： 预估存储空间，当填写的broker_num小于等于当前实例真实值时，显示为当前实例的存储空间。如果填写的broker_num大于当前实例真实值时，显示为所填写broker_num时实例的预估存储空间。 **取值范围**： 不涉及。
 
         :param total_extend_storage_space: The total_extend_storage_space of this ShowKafkaProductCoresResponse.
         :type total_extend_storage_space: int

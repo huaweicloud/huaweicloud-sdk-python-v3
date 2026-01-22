@@ -29,9 +29,9 @@ class UpdateDomainSetInfoDto:
 
         The model defined in huaweicloud sdk
 
-        :param name: 域名组名称
+        :param name: **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
-        :param description: 域名组描述
+        :param description: **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type description: str
         """
         
@@ -49,7 +49,7 @@ class UpdateDomainSetInfoDto:
     def name(self):
         r"""Gets the name of this UpdateDomainSetInfoDto.
 
-        域名组名称
+        **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this UpdateDomainSetInfoDto.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateDomainSetInfoDto:
     def name(self, name):
         r"""Sets the name of this UpdateDomainSetInfoDto.
 
-        域名组名称
+        **参数解释**： 域名组名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this UpdateDomainSetInfoDto.
         :type name: str
@@ -71,7 +71,7 @@ class UpdateDomainSetInfoDto:
     def description(self):
         r"""Gets the description of this UpdateDomainSetInfoDto.
 
-        域名组描述
+        **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The description of this UpdateDomainSetInfoDto.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateDomainSetInfoDto:
     def description(self, description):
         r"""Sets the description of this UpdateDomainSetInfoDto.
 
-        域名组描述
+        **参数解释**： 域名组描述 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param description: The description of this UpdateDomainSetInfoDto.
         :type description: str

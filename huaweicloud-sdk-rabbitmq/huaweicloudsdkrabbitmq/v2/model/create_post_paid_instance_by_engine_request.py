@@ -29,7 +29,7 @@ class CreatePostPaidInstanceByEngineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
         :type engine: str
         :param body: Body of the CreatePostPaidInstanceByEngineRequest
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateInstanceReq`
@@ -49,7 +49,7 @@ class CreatePostPaidInstanceByEngineRequest:
     def engine(self):
         r"""Gets the engine of this CreatePostPaidInstanceByEngineRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
 
         :return: The engine of this CreatePostPaidInstanceByEngineRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class CreatePostPaidInstanceByEngineRequest:
     def engine(self, engine):
         r"""Sets the engine of this CreatePostPaidInstanceByEngineRequest.
 
-        消息引擎。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
 
         :param engine: The engine of this CreatePostPaidInstanceByEngineRequest.
         :type engine: str

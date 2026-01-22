@@ -28,7 +28,7 @@ class DeleteUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param message: 信息。
+        :param message: **参数解释**： 信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type message: str
         """
         
@@ -44,7 +44,7 @@ class DeleteUserResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this DeleteUserResponse.
 
-        信息。
+        **参数解释**： 信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The message of this DeleteUserResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteUserResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this DeleteUserResponse.
 
-        信息。
+        **参数解释**： 信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param message: The message of this DeleteUserResponse.
         :type message: str

@@ -59,7 +59,7 @@ class AvailableZonesResp:
         :type default_az: bool
         :param remain_time: **参数解释**： 剩余时间，以Unix时间戳显示。 **取值范围**： 不涉及
         :type remain_time: int
-        :param ipv6_enable: **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持 - false：不支持
+        :param ipv6_enable: **参数解释**： 是否支持IPv6。[华为云Stack不支持此参数。](tag:hcs)  **取值范围**： - true：支持 - false：不支持
         :type ipv6_enable: bool
         """
         
@@ -275,7 +275,7 @@ class AvailableZonesResp:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this AvailableZonesResp.
 
-        **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持 - false：不支持
+        **参数解释**： 是否支持IPv6。[华为云Stack不支持此参数。](tag:hcs)  **取值范围**： - true：支持 - false：不支持
 
         :return: The ipv6_enable of this AvailableZonesResp.
         :rtype: bool
@@ -286,7 +286,7 @@ class AvailableZonesResp:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this AvailableZonesResp.
 
-        **参数解释**： 是否支持IPv6。 **取值范围**： - true：支持 - false：不支持
+        **参数解释**： 是否支持IPv6。[华为云Stack不支持此参数。](tag:hcs)  **取值范围**： - true：支持 - false：不支持
 
         :param ipv6_enable: The ipv6_enable of this AvailableZonesResp.
         :type ipv6_enable: bool

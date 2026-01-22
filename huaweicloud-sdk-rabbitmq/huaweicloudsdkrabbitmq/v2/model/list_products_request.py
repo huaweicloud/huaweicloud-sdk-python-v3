@@ -27,7 +27,7 @@ class ListProductsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎的类型。当前只支持rabbitmq。
+        :param engine: **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
         :type engine: str
         """
         
@@ -43,7 +43,7 @@ class ListProductsRequest:
     def engine(self):
         r"""Gets the engine of this ListProductsRequest.
 
-        消息引擎的类型。当前只支持rabbitmq。
+        **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
 
         :return: The engine of this ListProductsRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ListProductsRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListProductsRequest.
 
-        消息引擎的类型。当前只支持rabbitmq。
+        **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： rabbitmq：RabbitMQ引擎。 **默认取值**： 不涉及。
 
         :param engine: The engine of this ListProductsRequest.
         :type engine: str

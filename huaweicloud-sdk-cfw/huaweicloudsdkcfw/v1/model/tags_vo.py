@@ -31,11 +31,11 @@ class TagsVO:
 
         The model defined in huaweicloud sdk
 
-        :param tag_id: 规则id
+        :param tag_id: **参数解释**： 规则标签ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type tag_id: str
-        :param tag_key: 规则标签键
+        :param tag_key: **参数解释**： 规则标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type tag_key: str
-        :param tag_value: 规则标签值
+        :param tag_value: **参数解释**： 规则标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type tag_value: str
         """
         
@@ -57,7 +57,7 @@ class TagsVO:
     def tag_id(self):
         r"""Gets the tag_id of this TagsVO.
 
-        规则id
+        **参数解释**： 规则标签ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The tag_id of this TagsVO.
         :rtype: str
@@ -68,7 +68,7 @@ class TagsVO:
     def tag_id(self, tag_id):
         r"""Sets the tag_id of this TagsVO.
 
-        规则id
+        **参数解释**： 规则标签ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param tag_id: The tag_id of this TagsVO.
         :type tag_id: str
@@ -79,7 +79,7 @@ class TagsVO:
     def tag_key(self):
         r"""Gets the tag_key of this TagsVO.
 
-        规则标签键
+        **参数解释**： 规则标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The tag_key of this TagsVO.
         :rtype: str
@@ -90,7 +90,7 @@ class TagsVO:
     def tag_key(self, tag_key):
         r"""Sets the tag_key of this TagsVO.
 
-        规则标签键
+        **参数解释**： 规则标签键 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param tag_key: The tag_key of this TagsVO.
         :type tag_key: str
@@ -101,7 +101,7 @@ class TagsVO:
     def tag_value(self):
         r"""Gets the tag_value of this TagsVO.
 
-        规则标签值
+        **参数解释**： 规则标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The tag_value of this TagsVO.
         :rtype: str
@@ -112,7 +112,7 @@ class TagsVO:
     def tag_value(self, tag_value):
         r"""Sets the tag_value of this TagsVO.
 
-        规则标签值
+        **参数解释**： 规则标签值 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param tag_value: The tag_value of this TagsVO.
         :type tag_value: str

@@ -32,11 +32,11 @@ class ListEngineProductsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param engine: 分布式消息服务的产品类型。
+        :param engine: **参数解释**： 消息引擎类型。 **取值范围**： rabbitmq：RabbitMQ引擎。
         :type engine: str
-        :param versions: 支持的产品版本类型。
+        :param versions: **参数解释**： 支持的产品版本类型。
         :type versions: list[str]
-        :param products: 产品规格的详细信息。
+        :param products: **参数解释**： 产品规格的详细信息。
         :type products: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]
         """
         
@@ -58,7 +58,7 @@ class ListEngineProductsResponse(SdkResponse):
     def engine(self):
         r"""Gets the engine of this ListEngineProductsResponse.
 
-        分布式消息服务的产品类型。
+        **参数解释**： 消息引擎类型。 **取值范围**： rabbitmq：RabbitMQ引擎。
 
         :return: The engine of this ListEngineProductsResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ListEngineProductsResponse(SdkResponse):
     def engine(self, engine):
         r"""Sets the engine of this ListEngineProductsResponse.
 
-        分布式消息服务的产品类型。
+        **参数解释**： 消息引擎类型。 **取值范围**： rabbitmq：RabbitMQ引擎。
 
         :param engine: The engine of this ListEngineProductsResponse.
         :type engine: str
@@ -80,7 +80,7 @@ class ListEngineProductsResponse(SdkResponse):
     def versions(self):
         r"""Gets the versions of this ListEngineProductsResponse.
 
-        支持的产品版本类型。
+        **参数解释**： 支持的产品版本类型。
 
         :return: The versions of this ListEngineProductsResponse.
         :rtype: list[str]
@@ -91,7 +91,7 @@ class ListEngineProductsResponse(SdkResponse):
     def versions(self, versions):
         r"""Sets the versions of this ListEngineProductsResponse.
 
-        支持的产品版本类型。
+        **参数解释**： 支持的产品版本类型。
 
         :param versions: The versions of this ListEngineProductsResponse.
         :type versions: list[str]
@@ -102,7 +102,7 @@ class ListEngineProductsResponse(SdkResponse):
     def products(self):
         r"""Gets the products of this ListEngineProductsResponse.
 
-        产品规格的详细信息。
+        **参数解释**： 产品规格的详细信息。
 
         :return: The products of this ListEngineProductsResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]
@@ -113,7 +113,7 @@ class ListEngineProductsResponse(SdkResponse):
     def products(self, products):
         r"""Sets the products of this ListEngineProductsResponse.
 
-        产品规格的详细信息。
+        **参数解释**： 产品规格的详细信息。
 
         :param products: The products of this ListEngineProductsResponse.
         :type products: list[:class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsEntity`]

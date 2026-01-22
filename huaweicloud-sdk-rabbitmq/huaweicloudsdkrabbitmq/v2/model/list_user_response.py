@@ -30,9 +30,9 @@ class ListUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param users: 用户列表。
+        :param users: **参数解释**： 用户列表。
         :type users: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUser`]
-        :param total: 总用户个数。
+        :param total: **参数解释**： 总用户个数。 **取值范围**： 不涉及。
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ListUserResponse(SdkResponse):
     def users(self):
         r"""Gets the users of this ListUserResponse.
 
-        用户列表。
+        **参数解释**： 用户列表。
 
         :return: The users of this ListUserResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUser`]
@@ -62,7 +62,7 @@ class ListUserResponse(SdkResponse):
     def users(self, users):
         r"""Sets the users of this ListUserResponse.
 
-        用户列表。
+        **参数解释**： 用户列表。
 
         :param users: The users of this ListUserResponse.
         :type users: list[:class:`huaweicloudsdkrabbitmq.v2.AMQPUser`]
@@ -73,7 +73,7 @@ class ListUserResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListUserResponse.
 
-        总用户个数。
+        **参数解释**： 总用户个数。 **取值范围**： 不涉及。
 
         :return: The total of this ListUserResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListUserResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListUserResponse.
 
-        总用户个数。
+        **参数解释**： 总用户个数。 **取值范围**： 不涉及。
 
         :param total: The total of this ListUserResponse.
         :type total: int

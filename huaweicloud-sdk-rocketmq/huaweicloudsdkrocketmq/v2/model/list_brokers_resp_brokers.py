@@ -29,9 +29,9 @@ class ListBrokersRespBrokers:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 全部代理ID。
+        :param ids: **参数解释**： 全部代理ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ids: list[float]
-        :param broker_name: 节点名称。
+        :param broker_name: **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_name: str
         """
         
@@ -50,7 +50,7 @@ class ListBrokersRespBrokers:
     def ids(self):
         r"""Gets the ids of this ListBrokersRespBrokers.
 
-        全部代理ID。
+        **参数解释**： 全部代理ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The ids of this ListBrokersRespBrokers.
         :rtype: list[float]
@@ -61,7 +61,7 @@ class ListBrokersRespBrokers:
     def ids(self, ids):
         r"""Sets the ids of this ListBrokersRespBrokers.
 
-        全部代理ID。
+        **参数解释**： 全部代理ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param ids: The ids of this ListBrokersRespBrokers.
         :type ids: list[float]
@@ -72,7 +72,7 @@ class ListBrokersRespBrokers:
     def broker_name(self):
         r"""Gets the broker_name of this ListBrokersRespBrokers.
 
-        节点名称。
+        **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The broker_name of this ListBrokersRespBrokers.
         :rtype: str
@@ -83,7 +83,7 @@ class ListBrokersRespBrokers:
     def broker_name(self, broker_name):
         r"""Sets the broker_name of this ListBrokersRespBrokers.
 
-        节点名称。
+        **参数解释**： 节点名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param broker_name: The broker_name of this ListBrokersRespBrokers.
         :type broker_name: str

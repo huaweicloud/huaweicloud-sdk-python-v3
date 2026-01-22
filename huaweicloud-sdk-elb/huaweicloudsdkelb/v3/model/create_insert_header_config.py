@@ -31,11 +31,11 @@ class CreateInsertHeaderConfig:
 
         The model defined in huaweicloud sdk
 
-        :param key: **参数解释**：请求头、响应头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
+        :param key: **参数解释**：请求头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
         :type key: str
-        :param value_type: **参数解释**：请求头、响应头参数类别。  **约束限制**：不涉及  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。  **默认取值**：不涉及
+        :param value_type: **参数解释**：请求头参数类别。  **约束限制**：不涉及  **取值范围**： - USER_DEFINED：用户自定义请求头。 - REFERENCE_HEADER：引用请求头字段中的某一个字段。 - SYSTEM_DEFINED：表示请求头参数只能使用系统定义的一系列固定值，取值列表见value字段描述。  **默认取值**：不涉及
         :type value_type: str
-        :param value: **参数解释**：请求头、响应头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32&lt;&#x3D;ch&lt;&#x3D;127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
+        :param value: **参数解释**：请求头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32&lt;&#x3D;ch&lt;&#x3D;127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class CreateInsertHeaderConfig:
     def key(self):
         r"""Gets the key of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
+        **参数解释**：请求头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
 
         :return: The key of this CreateInsertHeaderConfig.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateInsertHeaderConfig:
     def key(self, key):
         r"""Sets the key of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
+        **参数解释**：请求头参数名。  **约束限制**：不涉及 [**约束限制**： - 请求方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 - 响应方向转发策略不允许的值： connection、upgrade、content-length、transfer-encoding](tag:test)  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。  **默认取值**：不涉及
 
         :param key: The key of this CreateInsertHeaderConfig.
         :type key: str
@@ -76,7 +76,7 @@ class CreateInsertHeaderConfig:
     def value_type(self):
         r"""Gets the value_type of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数类别。  **约束限制**：不涉及  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。  **默认取值**：不涉及
+        **参数解释**：请求头参数类别。  **约束限制**：不涉及  **取值范围**： - USER_DEFINED：用户自定义请求头。 - REFERENCE_HEADER：引用请求头字段中的某一个字段。 - SYSTEM_DEFINED：表示请求头参数只能使用系统定义的一系列固定值，取值列表见value字段描述。  **默认取值**：不涉及
 
         :return: The value_type of this CreateInsertHeaderConfig.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateInsertHeaderConfig:
     def value_type(self, value_type):
         r"""Sets the value_type of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数类别。  **约束限制**：不涉及  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。  **默认取值**：不涉及
+        **参数解释**：请求头参数类别。  **约束限制**：不涉及  **取值范围**： - USER_DEFINED：用户自定义请求头。 - REFERENCE_HEADER：引用请求头字段中的某一个字段。 - SYSTEM_DEFINED：表示请求头参数只能使用系统定义的一系列固定值，取值列表见value字段描述。  **默认取值**：不涉及
 
         :param value_type: The value_type of this CreateInsertHeaderConfig.
         :type value_type: str
@@ -98,7 +98,7 @@ class CreateInsertHeaderConfig:
     def value(self):
         r"""Gets the value of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
+        **参数解释**：请求头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
 
         :return: The value of this CreateInsertHeaderConfig.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateInsertHeaderConfig:
     def value(self, value):
         r"""Sets the value of this CreateInsertHeaderConfig.
 
-        **参数解释**：请求头、响应头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
+        **参数解释**：请求头参数的值。  **约束限制**：当value_type为SYSTEM_DEFINED时，value只可从CLIENT-PORT, CLIENT-IP, ELB-PROTOCOL, ELB-ID,         ELB-PORT, ELB-EIP, ELB-VIP, TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4中取值。{TLS-PROTOCOL, TLS-CIPHER, CLIENTCERT-SUBJECTDN, CLIENTCERT-ISSUERDN,         CLIENTCERT-FINGERPRINT, CLIENTCERT-CLIENTVERIFY, CLIENTCERT-SERIALNUMBER,         CLIENTCERT, CLIENTCERT-CIPHERS, CLIENTCERT-END, TLS-ALPN-PROTOCOL, TLS-SNI,         TLS-JA3, TLS-JA4}只有HTTPS、quic协议类型的监听器支持  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。 [请求方向转发策略不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。 响应方向转发策略不允许设置的值为：connection、upgrade、content-length、transfer-encoding。](tag:test)  **默认取值**：不涉及
 
         :param value: The value of this CreateInsertHeaderConfig.
         :type value: str

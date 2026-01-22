@@ -15,10 +15,6 @@ class CountGlobalEipSegmentRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'int',
-        'offset': 'int',
-        'marker': 'str',
-        'page_reverse': 'bool',
         'fields': 'list[str]',
         'id': 'list[str]',
         'internet_bandwidth_id': 'list[str]',
@@ -44,10 +40,6 @@ class CountGlobalEipSegmentRequest:
     }
 
     attribute_map = {
-        'limit': 'limit',
-        'offset': 'offset',
-        'marker': 'marker',
-        'page_reverse': 'page_reverse',
         'fields': 'fields',
         'id': 'id',
         'internet_bandwidth_id': 'internet_bandwidth_id',
@@ -72,19 +64,11 @@ class CountGlobalEipSegmentRequest:
         'tags': 'tags'
     }
 
-    def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, cidr=None, cidr_v6=None, freezen=None, internet_bandwidth_is_null=None, status=None, associate_instance_region=None, associate_instance_public_border_group=None, associate_instance_instance_site=None, associate_instance_instance_type=None, associate_instance_instance_id=None, associate_instance_project_id=None, enterprise_project_id=None, tags=None):
+    def __init__(self, fields=None, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, cidr=None, cidr_v6=None, freezen=None, internet_bandwidth_is_null=None, status=None, associate_instance_region=None, associate_instance_public_border_group=None, associate_instance_instance_site=None, associate_instance_instance_type=None, associate_instance_instance_id=None, associate_instance_project_id=None, enterprise_project_id=None, tags=None):
         r"""CountGlobalEipSegmentRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页条数
-        :type limit: int
-        :param offset: 分页起始点
-        :type offset: int
-        :param marker: 分页起始点
-        :type marker: str
-        :param page_reverse: 翻页方向
-        :type page_reverse: bool
         :param fields: 
         :type fields: list[str]
         :param id: 
@@ -133,10 +117,6 @@ class CountGlobalEipSegmentRequest:
         
         
 
-        self._limit = None
-        self._offset = None
-        self._marker = None
-        self._page_reverse = None
         self._fields = None
         self._id = None
         self._internet_bandwidth_id = None
@@ -161,14 +141,6 @@ class CountGlobalEipSegmentRequest:
         self._tags = None
         self.discriminator = None
 
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
-        if marker is not None:
-            self.marker = marker
-        if page_reverse is not None:
-            self.page_reverse = page_reverse
         if fields is not None:
             self.fields = fields
         if id is not None:
@@ -213,94 +185,6 @@ class CountGlobalEipSegmentRequest:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
-
-    @property
-    def limit(self):
-        r"""Gets the limit of this CountGlobalEipSegmentRequest.
-
-        每页条数
-
-        :return: The limit of this CountGlobalEipSegmentRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this CountGlobalEipSegmentRequest.
-
-        每页条数
-
-        :param limit: The limit of this CountGlobalEipSegmentRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
-    def offset(self):
-        r"""Gets the offset of this CountGlobalEipSegmentRequest.
-
-        分页起始点
-
-        :return: The offset of this CountGlobalEipSegmentRequest.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this CountGlobalEipSegmentRequest.
-
-        分页起始点
-
-        :param offset: The offset of this CountGlobalEipSegmentRequest.
-        :type offset: int
-        """
-        self._offset = offset
-
-    @property
-    def marker(self):
-        r"""Gets the marker of this CountGlobalEipSegmentRequest.
-
-        分页起始点
-
-        :return: The marker of this CountGlobalEipSegmentRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        r"""Sets the marker of this CountGlobalEipSegmentRequest.
-
-        分页起始点
-
-        :param marker: The marker of this CountGlobalEipSegmentRequest.
-        :type marker: str
-        """
-        self._marker = marker
-
-    @property
-    def page_reverse(self):
-        r"""Gets the page_reverse of this CountGlobalEipSegmentRequest.
-
-        翻页方向
-
-        :return: The page_reverse of this CountGlobalEipSegmentRequest.
-        :rtype: bool
-        """
-        return self._page_reverse
-
-    @page_reverse.setter
-    def page_reverse(self, page_reverse):
-        r"""Sets the page_reverse of this CountGlobalEipSegmentRequest.
-
-        翻页方向
-
-        :param page_reverse: The page_reverse of this CountGlobalEipSegmentRequest.
-        :type page_reverse: bool
-        """
-        self._page_reverse = page_reverse
 
     @property
     def fields(self):

@@ -35,13 +35,13 @@ class UpdateTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param read_queue_num: **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param read_queue_num: **参数解释**： 总读队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type read_queue_num: float
-        :param write_queue_num: **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param write_queue_num: **参数解释**： 总写队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type write_queue_num: float
-        :param permission: **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param permission: **参数解释**： 权限。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type permission: str
-        :param queues: **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param queues: **参数解释**： 队列。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.UpdateTopicQueueEntity`]
         :param topic_desc: **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_desc: str
@@ -71,7 +71,7 @@ class UpdateTopicReq:
     def read_queue_num(self):
         r"""Gets the read_queue_num of this UpdateTopicReq.
 
-        **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 总读队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The read_queue_num of this UpdateTopicReq.
         :rtype: float
@@ -82,7 +82,7 @@ class UpdateTopicReq:
     def read_queue_num(self, read_queue_num):
         r"""Sets the read_queue_num of this UpdateTopicReq.
 
-        **参数解释**： 总读队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 总读队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param read_queue_num: The read_queue_num of this UpdateTopicReq.
         :type read_queue_num: float
@@ -93,7 +93,7 @@ class UpdateTopicReq:
     def write_queue_num(self):
         r"""Gets the write_queue_num of this UpdateTopicReq.
 
-        **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 总写队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The write_queue_num of this UpdateTopicReq.
         :rtype: float
@@ -104,7 +104,7 @@ class UpdateTopicReq:
     def write_queue_num(self, write_queue_num):
         r"""Sets the write_queue_num of this UpdateTopicReq.
 
-        **参数解释**： 总写队列个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 总写队列个数。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param write_queue_num: The write_queue_num of this UpdateTopicReq.
         :type write_queue_num: float
@@ -115,7 +115,7 @@ class UpdateTopicReq:
     def permission(self):
         r"""Gets the permission of this UpdateTopicReq.
 
-        **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 权限。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The permission of this UpdateTopicReq.
         :rtype: str
@@ -126,7 +126,7 @@ class UpdateTopicReq:
     def permission(self, permission):
         r"""Sets the permission of this UpdateTopicReq.
 
-        **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 权限。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param permission: The permission of this UpdateTopicReq.
         :type permission: str
@@ -137,7 +137,7 @@ class UpdateTopicReq:
     def queues(self):
         r"""Gets the queues of this UpdateTopicReq.
 
-        **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 队列。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queues of this UpdateTopicReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.UpdateTopicQueueEntity`]
@@ -148,7 +148,7 @@ class UpdateTopicReq:
     def queues(self, queues):
         r"""Sets the queues of this UpdateTopicReq.
 
-        **参数解释**： 队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 队列。 **约束限制**： 仅4.8.0实例支持修改该参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queues: The queues of this UpdateTopicReq.
         :type queues: list[:class:`huaweicloudsdkrocketmq.v2.UpdateTopicQueueEntity`]

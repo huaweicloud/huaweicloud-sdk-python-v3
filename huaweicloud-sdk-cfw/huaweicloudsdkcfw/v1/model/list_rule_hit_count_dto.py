@@ -27,7 +27,7 @@ class ListRuleHitCountDto:
 
         The model defined in huaweicloud sdk
 
-        :param rule_ids: 规则id列表，规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        :param rule_ids: 规则id列表，规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
         :type rule_ids: list[str]
         """
         
@@ -42,7 +42,7 @@ class ListRuleHitCountDto:
     def rule_ids(self):
         r"""Gets the rule_ids of this ListRuleHitCountDto.
 
-        规则id列表，规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        规则id列表，规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :return: The rule_ids of this ListRuleHitCountDto.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ListRuleHitCountDto:
     def rule_ids(self, rule_ids):
         r"""Sets the rule_ids of this ListRuleHitCountDto.
 
-        规则id列表，规则id，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
+        规则id列表，规则ID，可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
         :param rule_ids: The rule_ids of this ListRuleHitCountDto.
         :type rule_ids: list[str]
