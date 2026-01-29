@@ -21,7 +21,9 @@ class AccountChangeRecord:
         'trade_id': 'str',
         'change_amount': 'str',
         'balance_after_change': 'str',
-        'type': 'str'
+        'type': 'str',
+        'customer_id': 'str',
+        'account_name': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class AccountChangeRecord:
         'trade_id': 'trade_id',
         'change_amount': 'change_amount',
         'balance_after_change': 'balance_after_change',
-        'type': 'type'
+        'type': 'type',
+        'customer_id': 'customer_id',
+        'account_name': 'account_name'
     }
 
-    def __init__(self, account_change_id=None, trade_detail_type=None, trade_time=None, trade_id=None, change_amount=None, balance_after_change=None, type=None):
+    def __init__(self, account_change_id=None, trade_detail_type=None, trade_time=None, trade_id=None, change_amount=None, balance_after_change=None, type=None, customer_id=None, account_name=None):
         r"""AccountChangeRecord
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class AccountChangeRecord:
         :type balance_after_change: str
         :param type: 收支类型。 1：收入2：支出
         :type type: str
+        :param customer_id: |参数名称：客户账号ID| |参数约束及描述：客户账号ID。说明：交易详细类型取值为如下值时，该字段不为空 SOURCE_OPERATION_BEADJUST：伙伴拨款 SOURCE_OPERATION_BEUNBIND：交易模式变更(切换/解除关联回收) SOURCE_OPERATION_BERETRIEVE：伙伴回收|
+        :type customer_id: str
+        :param account_name: |参数名称：客户登录名称| |参数约束及描述：客户登录名称。说明：客户账号ID不为空时，该字段不为空|
+        :type account_name: str
         """
         
         
@@ -64,6 +72,8 @@ class AccountChangeRecord:
         self._change_amount = None
         self._balance_after_change = None
         self._type = None
+        self._customer_id = None
+        self._account_name = None
         self.discriminator = None
 
         if account_change_id is not None:
@@ -80,6 +90,10 @@ class AccountChangeRecord:
             self.balance_after_change = balance_after_change
         if type is not None:
             self.type = type
+        if customer_id is not None:
+            self.customer_id = customer_id
+        if account_name is not None:
+            self.account_name = account_name
 
     @property
     def account_change_id(self):
@@ -234,6 +248,50 @@ class AccountChangeRecord:
         :type type: str
         """
         self._type = type
+
+    @property
+    def customer_id(self):
+        r"""Gets the customer_id of this AccountChangeRecord.
+
+        |参数名称：客户账号ID| |参数约束及描述：客户账号ID。说明：交易详细类型取值为如下值时，该字段不为空 SOURCE_OPERATION_BEADJUST：伙伴拨款 SOURCE_OPERATION_BEUNBIND：交易模式变更(切换/解除关联回收) SOURCE_OPERATION_BERETRIEVE：伙伴回收|
+
+        :return: The customer_id of this AccountChangeRecord.
+        :rtype: str
+        """
+        return self._customer_id
+
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        r"""Sets the customer_id of this AccountChangeRecord.
+
+        |参数名称：客户账号ID| |参数约束及描述：客户账号ID。说明：交易详细类型取值为如下值时，该字段不为空 SOURCE_OPERATION_BEADJUST：伙伴拨款 SOURCE_OPERATION_BEUNBIND：交易模式变更(切换/解除关联回收) SOURCE_OPERATION_BERETRIEVE：伙伴回收|
+
+        :param customer_id: The customer_id of this AccountChangeRecord.
+        :type customer_id: str
+        """
+        self._customer_id = customer_id
+
+    @property
+    def account_name(self):
+        r"""Gets the account_name of this AccountChangeRecord.
+
+        |参数名称：客户登录名称| |参数约束及描述：客户登录名称。说明：客户账号ID不为空时，该字段不为空|
+
+        :return: The account_name of this AccountChangeRecord.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        r"""Sets the account_name of this AccountChangeRecord.
+
+        |参数名称：客户登录名称| |参数约束及描述：客户登录名称。说明：客户账号ID不为空时，该字段不为空|
+
+        :param account_name: The account_name of this AccountChangeRecord.
+        :type account_name: str
+        """
+        self._account_name = account_name
 
     def to_dict(self):
         result = {}

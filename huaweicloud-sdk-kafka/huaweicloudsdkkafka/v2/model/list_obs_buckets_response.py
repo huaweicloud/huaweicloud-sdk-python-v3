@@ -16,7 +16,7 @@ class ListObsBucketsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ListObsBucketsResponseBody]'
+        'body': 'list[ObsBucketEntity]'
     }
 
     attribute_map = {
@@ -28,8 +28,8 @@ class ListObsBucketsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: list[:class:`huaweicloudsdkkafka.v2.ListObsBucketsResponseBody`]
+        :param body: Obs桶查询列表
+        :type body: list[:class:`huaweicloudsdkkafka.v2.ObsBucketEntity`]
         """
         
         super().__init__()
@@ -44,8 +44,10 @@ class ListObsBucketsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListObsBucketsResponse.
 
+        Obs桶查询列表
+
         :return: The body of this ListObsBucketsResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListObsBucketsResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ObsBucketEntity`]
         """
         return self._body
 
@@ -53,8 +55,10 @@ class ListObsBucketsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListObsBucketsResponse.
 
+        Obs桶查询列表
+
         :param body: The body of this ListObsBucketsResponse.
-        :type body: list[:class:`huaweicloudsdkkafka.v2.ListObsBucketsResponseBody`]
+        :type body: list[:class:`huaweicloudsdkkafka.v2.ObsBucketEntity`]
         """
         self._body = body
 

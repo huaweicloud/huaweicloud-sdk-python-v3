@@ -39,7 +39,7 @@ class ProductRspProfessional:
 
         The model defined in huaweicloud sdk
 
-        :param cloud_service_type: 云服务产品的主服务类型，云脑默认为：hws.service.type.sa
+        :param cloud_service_type: 云服务产品的主服务类型，云脑默认为：xxx.service.type.sa
         :type cloud_service_type: str
         :param resource_type: 资源类型编码
         :type resource_type: str
@@ -85,7 +85,7 @@ class ProductRspProfessional:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this ProductRspProfessional.
 
-        云服务产品的主服务类型，云脑默认为：hws.service.type.sa
+        云服务产品的主服务类型，云脑默认为：xxx.service.type.sa
 
         :return: The cloud_service_type of this ProductRspProfessional.
         :rtype: str
@@ -96,7 +96,7 @@ class ProductRspProfessional:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this ProductRspProfessional.
 
-        云服务产品的主服务类型，云脑默认为：hws.service.type.sa
+        云服务产品的主服务类型，云脑默认为：xxx.service.type.sa
 
         :param cloud_service_type: The cloud_service_type of this ProductRspProfessional.
         :type cloud_service_type: str

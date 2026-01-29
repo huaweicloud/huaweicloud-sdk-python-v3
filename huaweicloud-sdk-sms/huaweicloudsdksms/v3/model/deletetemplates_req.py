@@ -36,8 +36,7 @@ class DeletetemplatesReq:
         self._ids = None
         self.discriminator = None
 
-        if ids is not None:
-            self.ids = ids
+        self.ids = ids
 
     @property
     def ids(self):

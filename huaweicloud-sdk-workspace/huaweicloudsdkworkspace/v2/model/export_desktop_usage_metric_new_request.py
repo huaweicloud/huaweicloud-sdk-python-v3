@@ -47,7 +47,7 @@ class ExportDesktopUsageMetricNewRequest:
 
         :param start_time: 查询起始时间(0时区) 云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上 跨天的记录会按照统计周期进行计算 假设一天内桌面登录多次，09:00~12:00,13:00~21:00,22:00~01:00(次日): 则当天的累计使用时长数据会被汇聚到23:59:59这个点;总使用时长为 3hours(09:00~12:00)+8hours(13:00~21:00)+2hours(22:00~00:00) 如果查询的from-to不足一个周期内，可能造成查询到数据为空；
         :type start_time: str
-        :param end_time: 查询截至时间(0时区)。
+        :param end_time: 查询截止时间(0时区)。
         :type end_time: str
         :param resource_name: 资源名称(模糊匹配)。
         :type resource_name: str
@@ -126,7 +126,7 @@ class ExportDesktopUsageMetricNewRequest:
     def end_time(self):
         r"""Gets the end_time of this ExportDesktopUsageMetricNewRequest.
 
-        查询截至时间(0时区)。
+        查询截止时间(0时区)。
 
         :return: The end_time of this ExportDesktopUsageMetricNewRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ExportDesktopUsageMetricNewRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ExportDesktopUsageMetricNewRequest.
 
-        查询截至时间(0时区)。
+        查询截止时间(0时区)。
 
         :param end_time: The end_time of this ExportDesktopUsageMetricNewRequest.
         :type end_time: str

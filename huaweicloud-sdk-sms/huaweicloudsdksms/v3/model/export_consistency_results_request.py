@@ -29,7 +29,7 @@ class ExportConsistencyResultsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 中英文选择
+        :param x_language: 中英文选择。当前仅支持英文。
         :type x_language: str
         :param body: Body of the ExportConsistencyResultsRequest
         :type body: :class:`huaweicloudsdksms.v3.BatchGetConsistencyResultReq`
@@ -50,7 +50,7 @@ class ExportConsistencyResultsRequest:
     def x_language(self):
         r"""Gets the x_language of this ExportConsistencyResultsRequest.
 
-        中英文选择
+        中英文选择。当前仅支持英文。
 
         :return: The x_language of this ExportConsistencyResultsRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ExportConsistencyResultsRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ExportConsistencyResultsRequest.
 
-        中英文选择
+        中英文选择。当前仅支持英文。
 
         :param x_language: The x_language of this ExportConsistencyResultsRequest.
         :type x_language: str

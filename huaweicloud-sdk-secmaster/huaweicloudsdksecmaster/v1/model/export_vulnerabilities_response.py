@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExportVulnerabilitiesResponse(SdkResponse):
+class ExportVulnerabilitiesResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -21,14 +21,14 @@ class ExportVulnerabilitiesResponse(SdkResponse):
     attribute_map = {
     }
 
-    def __init__(self):
+    def __init__(self, response):
         r"""ExportVulnerabilitiesResponse
 
         The model defined in huaweicloud sdk
 
         """
         
-        super().__init__()
+        super().__init__(response)
         self.discriminator = None
 
     def to_dict(self):

@@ -24,7 +24,8 @@ class ShowGroupResponse(SdkResponse):
         'created_at': 'int',
         'retry_max_time': 'int',
         'permissions': 'list[str]',
-        'consume_orderly': 'bool'
+        'consume_orderly': 'bool',
+        'group_online': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowGroupResponse(SdkResponse):
         'created_at': 'created_at',
         'retry_max_time': 'retry_max_time',
         'permissions': 'permissions',
-        'consume_orderly': 'consume_orderly'
+        'consume_orderly': 'consume_orderly',
+        'group_online': 'group_online'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, created_at=None, retry_max_time=None, permissions=None, consume_orderly=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, created_at=None, retry_max_time=None, permissions=None, consume_orderly=None, group_online=None):
         r"""ShowGroupResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class ShowGroupResponse(SdkResponse):
         :type permissions: list[str]
         :param consume_orderly: **参数解释**： 是否顺序消费。 **约束限制**： 不涉及。 **取值范围**： - true：开启顺序消费。 - false：不开启顺序消费。 **默认取值**： 不涉及。
         :type consume_orderly: bool
+        :param group_online: **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+        :type group_online: bool
         """
         
         super().__init__()
@@ -75,6 +79,7 @@ class ShowGroupResponse(SdkResponse):
         self._retry_max_time = None
         self._permissions = None
         self._consume_orderly = None
+        self._group_online = None
         self.discriminator = None
 
         if enabled is not None:
@@ -95,6 +100,8 @@ class ShowGroupResponse(SdkResponse):
             self.permissions = permissions
         if consume_orderly is not None:
             self.consume_orderly = consume_orderly
+        if group_online is not None:
+            self.group_online = group_online
 
     @property
     def enabled(self):
@@ -293,6 +300,28 @@ class ShowGroupResponse(SdkResponse):
         :type consume_orderly: bool
         """
         self._consume_orderly = consume_orderly
+
+    @property
+    def group_online(self):
+        r"""Gets the group_online of this ShowGroupResponse.
+
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+
+        :return: The group_online of this ShowGroupResponse.
+        :rtype: bool
+        """
+        return self._group_online
+
+    @group_online.setter
+    def group_online(self, group_online):
+        r"""Sets the group_online of this ShowGroupResponse.
+
+        **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
+
+        :param group_online: The group_online of this ShowGroupResponse.
+        :type group_online: bool
+        """
+        self._group_online = group_online
 
     def to_dict(self):
         import warnings

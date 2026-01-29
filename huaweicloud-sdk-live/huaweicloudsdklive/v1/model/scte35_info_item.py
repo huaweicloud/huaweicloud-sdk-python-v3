@@ -21,7 +21,9 @@ class SCTE35InfoItem:
         'duration': 'int',
         'segmentation_type': 'str',
         'base64_data': 'str',
-        'raw_splice': 'str'
+        'raw_splice': 'str',
+        'region_type': 'str',
+        'region': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class SCTE35InfoItem:
         'duration': 'duration',
         'segmentation_type': 'segmentation_type',
         'base64_data': 'base64_data',
-        'raw_splice': 'raw_splice'
+        'raw_splice': 'raw_splice',
+        'region_type': 'region_type',
+        'region': 'region'
     }
 
-    def __init__(self, type=None, event_id=None, start_date=None, duration=None, segmentation_type=None, base64_data=None, raw_splice=None):
+    def __init__(self, type=None, event_id=None, start_date=None, duration=None, segmentation_type=None, base64_data=None, raw_splice=None, region_type=None, region=None):
         r"""SCTE35InfoItem
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class SCTE35InfoItem:
         :type base64_data: str
         :param raw_splice: 广告信号全量信息。
         :type raw_splice: str
+        :param region_type: **参数解释**： 该广告信号对应的region类型，是主region，还是备region **取值范围**：  - master: 主region  - slave: 备region 
+        :type region_type: str
+        :param region: **参数解释**： 该广告信号对应的region区域 **取值范围**： 华为云的region 
+        :type region: str
         """
         
         
@@ -64,6 +72,8 @@ class SCTE35InfoItem:
         self._segmentation_type = None
         self._base64_data = None
         self._raw_splice = None
+        self._region_type = None
+        self._region = None
         self.discriminator = None
 
         self.type = type
@@ -73,6 +83,10 @@ class SCTE35InfoItem:
         self.segmentation_type = segmentation_type
         self.base64_data = base64_data
         self.raw_splice = raw_splice
+        if region_type is not None:
+            self.region_type = region_type
+        if region is not None:
+            self.region = region
 
     @property
     def type(self):
@@ -227,6 +241,50 @@ class SCTE35InfoItem:
         :type raw_splice: str
         """
         self._raw_splice = raw_splice
+
+    @property
+    def region_type(self):
+        r"""Gets the region_type of this SCTE35InfoItem.
+
+        **参数解释**： 该广告信号对应的region类型，是主region，还是备region **取值范围**：  - master: 主region  - slave: 备region 
+
+        :return: The region_type of this SCTE35InfoItem.
+        :rtype: str
+        """
+        return self._region_type
+
+    @region_type.setter
+    def region_type(self, region_type):
+        r"""Sets the region_type of this SCTE35InfoItem.
+
+        **参数解释**： 该广告信号对应的region类型，是主region，还是备region **取值范围**：  - master: 主region  - slave: 备region 
+
+        :param region_type: The region_type of this SCTE35InfoItem.
+        :type region_type: str
+        """
+        self._region_type = region_type
+
+    @property
+    def region(self):
+        r"""Gets the region of this SCTE35InfoItem.
+
+        **参数解释**： 该广告信号对应的region区域 **取值范围**： 华为云的region 
+
+        :return: The region of this SCTE35InfoItem.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this SCTE35InfoItem.
+
+        **参数解释**： 该广告信号对应的region区域 **取值范围**： 华为云的region 
+
+        :param region: The region of this SCTE35InfoItem.
+        :type region: str
+        """
+        self._region = region
 
     def to_dict(self):
         result = {}

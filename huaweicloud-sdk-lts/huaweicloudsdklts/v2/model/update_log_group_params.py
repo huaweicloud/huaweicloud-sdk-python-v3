@@ -29,7 +29,7 @@ class UpdateLogGroupParams:
 
         The model defined in huaweicloud sdk
 
-        :param ttl_in_days: 日志存储时间 天。 取值范围为 [1, 30]
+        :param ttl_in_days: 日志存储时间 天。 取值范围为 [1, 365]
         :type ttl_in_days: int
         :param tags: 标签字段信息
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsBody`]
@@ -49,7 +49,7 @@ class UpdateLogGroupParams:
     def ttl_in_days(self):
         r"""Gets the ttl_in_days of this UpdateLogGroupParams.
 
-        日志存储时间 天。 取值范围为 [1, 30]
+        日志存储时间 天。 取值范围为 [1, 365]
 
         :return: The ttl_in_days of this UpdateLogGroupParams.
         :rtype: int
@@ -60,7 +60,7 @@ class UpdateLogGroupParams:
     def ttl_in_days(self, ttl_in_days):
         r"""Sets the ttl_in_days of this UpdateLogGroupParams.
 
-        日志存储时间 天。 取值范围为 [1, 30]
+        日志存储时间 天。 取值范围为 [1, 365]
 
         :param ttl_in_days: The ttl_in_days of this UpdateLogGroupParams.
         :type ttl_in_days: int

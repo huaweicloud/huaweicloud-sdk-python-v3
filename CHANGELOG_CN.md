@@ -1,3 +1,716 @@
+# 3.1.185 2026-01-29
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPartnerAccountChangeRecords**
+    - 响应参数变更
+      - `+ records.customer_id`
+      - `+ records.account_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSubCustomerBudget**
+    - 请求参数变更
+      - `* budget_amount: double -> bigdecimal`
+  - **ListInvoices**
+    - 响应参数变更
+      - `+ invoices.taxList.taxVisibleFlag`
+      - `+ invoices.taxList.taxAccountingFlag`
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListUserPrivileges`
+    - `ShowProjectRelatedRepository`
+    - `ShowVersionList`
+    - `ShowProjectVersionsCount`
+    - `ShowRepositoryRolesPrivilege`
+    - `UpdateRepoRolesPrivilege`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowApplicableInstances**
+    - 请求参数变更
+      - `+ instance_name`
+      - `+ instance_id`
+
+### HuaweiCloud SDK Kafka
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ShowInstanceExtendProductInfo`
+    - `ResizeInstance`
+    - `ShowEngineInstanceExtendProductInfo`
+    - `ResizeEngineInstance`
+    - `ListUserPolicies`
+    - `SetUserPolicies`
+    - `DeleteKafkaMessage`
+    - `ListProducts`
+    - `CreateReassignmentTask`
+    - `ShowSpecConvertProduct`
+    - `CreatePostPaidInstance`
+  - **ShowInstance**
+    - 响应参数变更
+      - `* cross_vpc_info: object -> string`
+      - `* public_cross_vpc_info: object -> string`
+  - **ListInstances**
+    - 响应参数变更
+      - `* instances.cross_vpc_info: object -> string`
+      - `* instances.public_cross_vpc_info: object -> string`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCesDimsInfo**
+    - 响应参数变更
+      - `+ query.region`
+  - **ShowChannelStatistic**
+    - 请求参数变更
+      - `+ region_type`
+    - 响应参数变更
+      - `+ scte35.scte35_info.region_type`
+      - `+ scte35.scte35_info.region`
+  - **ShowFlowDetail**
+    - 响应参数变更
+      - `+ sources.health_status`
+  - **ModifyFlowSources**
+    - 请求参数变更
+      - `+ source.health_status`
+    - 响应参数变更
+      - `+ source.health_status`
+  - **CreateFlows**
+    - 请求参数变更
+      - `+ sources.health_status`
+    - 响应参数变更
+      - `+ flow.sources.health_status`
+  - **ModifyOttChannelInfoEndPoints**
+    - 请求参数变更
+      - `+ endpoints.dash_package.id`
+      - `+ endpoints.dash_package.manifest_selection`
+      - `+ endpoints.mss_package.id`
+      - `+ endpoints.mss_package.manifest_selection`
+      - `+ endpoints.hls_package.id`
+      - `+ endpoints.hls_package.manifest_selection`
+  - **CreateOttChannelInfo**
+    - 请求参数变更
+      - `+ endpoints.dash_package.id`
+      - `+ endpoints.dash_package.manifest_selection`
+      - `+ endpoints.mss_package.id`
+      - `+ endpoints.mss_package.manifest_selection`
+      - `+ endpoints.hls_package.id`
+      - `+ endpoints.hls_package.manifest_selection`
+  - **ListOttChannelInfo**
+    - 响应参数变更
+      - `+ channels.endpoints.dash_package.id`
+      - `+ channels.endpoints.dash_package.manifest_selection`
+      - `+ channels.endpoints.mss_package.id`
+      - `+ channels.endpoints.mss_package.manifest_selection`
+      - `+ channels.endpoints.hls_package.id`
+      - `+ channels.endpoints.hls_package.manifest_selection`
+
+### HuaweiCloud SDK ProjectMan
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 支持接口`DownloadIpdImageInIssue`、`UploadIpdImageInIssue`、`DeleteIpdImageInIssue`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListIpdProjectIssues**
+    - 响应参数变更
+      - `+ result.issues`
+      - `+ result.total`
+      - `* result: object -> object<IssueListResult>`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowInstanceExtendProductInfo`、`ResizeInstance`、`CreatePostPaidInstance`
+
+### HuaweiCloud SDK RocketMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ExportDlqMessage`
+    - `ShowUpgradeInstanceVersion`
+    - `BatchResetRocketMqMessageOffsets`
+    - `DeleteRocketMqMigrationTask`
+    - `BatchDeleteDiagnosisReport`
+  - **ShowGroup**
+    - 响应参数变更
+      - `+ group_online`
+  - **ListDiagnosisReports**
+    - 响应参数变更
+      - `* total_num: object -> int64`
+  - **ListDiagnosisReportsForRocketMq**
+    - 响应参数变更
+      - `* total_num: object -> int64`
+
+### HuaweiCloud SDK SCM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCertificates**
+    - 请求参数变更
+      - `+ content`
+
+### HuaweiCloud SDK SecMaster
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListSubscriptionOrder`
+    - `UpdateSubscriptionOrder`
+    - `CreateSubscriptionOrder`
+    - `DeleteSubscriptionOrder`
+    - `ListSubscriptionGlobalOrder`
+    - `ListTasks`
+    - `ShowTask`
+    - `UpdateTask`
+    - `CreateSearchAnalysis`
+    - `ExecuteLayout`
+    - `UpdateWorkflowInstance`
+    - `UpdateMapper`
+    - `DeleteClassifier`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportAopworkflow**
+    - 请求参数变更
+      - `- content-type`
+  - **ShowMappingFunction**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ code`
+      - `+ data`
+      - `+ message`
+      - `- operation_list`
+      - `- compare_list`
+  - **ExportCollectorParser**
+    - 响应参数变更
+      - `- parser_ids`
+  - **ListWorkflows**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateAopWorkflow**
+    - 请求参数变更
+      - `- content-type`
+  - **ShowAopWorkflow**
+    - 请求参数变更
+      - `- content-type`
+  - **UpdateAopWorkflow**
+    - 请求参数变更
+      - `- content-type`
+  - **DeleteAopWorkflow**
+    - 请求参数变更
+      - `- content-type`
+  - **ListAopWorkflowVersions**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateAopWorkflowVersion**
+    - 请求参数变更
+      - `- content-type`
+  - **ShowAopWorkflowVersion**
+    - 请求参数变更
+      - `- content-type`
+  - **UpdateAopWorkflowVersion**
+    - 请求参数变更
+      - `- content-type`
+  - **DeleteAopWorkflowVersion**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateAopWorkflowVersionApprovel**
+    - 请求参数变更
+      - `- content-type`
+  - **ValidateAopWorkflowVersion**
+    - 请求参数变更
+      - `- content-type`
+  - **ListDataobjectRelations**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **CreateDataobjectRelation**
+    - 响应参数变更
+      - `- total`
+      - `- offset`
+      - `- limit`
+  - **DeleteDataobjectRelation**
+    - 响应参数变更
+      - `+ success`
+      - `+ request_id`
+  - **BatchCreateDataobjectRelations**
+    - 响应参数变更
+      - `- total`
+      - `- offset`
+      - `- limit`
+  - **ListDataobjects**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ShowDataobject**
+    - 响应参数变更
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **UpdateDataobject**
+    - 响应参数变更
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ShowDatapanelObject**
+    - 响应参数变更
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ListDatapanelObjects**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **CopyMapping**
+    - 请求参数变更
+      - `- content-type`
+  - **UpdateMappingInfoStatus**
+    - 请求参数变更
+      - `- content-type`
+  - **CreatePreProcessRules**
+    - 请求参数变更
+      - `- content-type`
+  - **ShowPreProcessRulesList**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.creator_id`
+      - `+ data.creator_name`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+  - **ShowAopWorkflowInstance**
+    - 请求参数变更
+      - `- content-type`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ data.creator_id`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+      - `+ data.operation_history`
+      - `- data.operate_history`
+  - **ShowComponent**
+    - 响应参数变更
+      - `+ data.creator_id`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+      - `+ data.operation_history`
+      - `- data.operate_history`
+  - **CreateDataclassType**
+    - 响应参数变更
+      - `+ sub_count`
+  - **ListAlerts**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `* data.data_object.resource_list.tags: string -> object`
+  - **CreateAlert**
+    - 请求参数变更
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ShowAlert**
+    - 响应参数变更
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeAlert**
+    - 请求参数变更
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeAlerts**
+    - 请求参数变更
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ListIncidents**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `* data.data_object.sla: int32 -> string`
+  - **CreateIncident**
+    - 请求参数变更
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `* data.data_object.sla: int32 -> string`
+  - **ShowIncident**
+    - 响应参数变更
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeIncident**
+    - 请求参数变更
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeIncidents**
+    - 请求参数变更
+      - `* data_object.sla: int32 -> string`
+    - 响应参数变更
+      - `* data.data_object.sla: int32 -> string`
+  - **ListIndicators**
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **CreateIndicator**
+    - 请求参数变更
+      - `- data_object.dataclass_id`
+      - `- data_object.dataclass`
+    - 响应参数变更
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **ShowIndicatorDetail**
+    - 响应参数变更
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **UpdateIndicator**
+    - 请求参数变更
+      - `+ data_object.labels`
+      - `+ data_object.defanged`
+      - `+ data_object.data_source.product_name`
+      - `+ data_object.data_source.product_feature`
+    - 响应参数变更
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **ShowMappingInfoList**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.built_in`
+      - `+ data.data_source`
+  - **DeleteMappingInfo**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateMapper**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ data.data_source`
+      - `+ data.status`
+      - `+ data.description`
+      - `+ data.mapper`
+      - `- data.dataclass_name`
+      - `- data.mapper_type_id`
+      - `- data.dpe_info`
+      - `- data.mapper_field_list`
+      - `* body: object<DpeMappingDetail> -> object<CreateDpeMappingRequestBody>`
+  - **ShowMapperList**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+  - **ShowMapperDetail**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ data.mapping_id`
+      - `+ data.mapping_info`
+      - `- data.dpe_info`
+  - **DeleteSingleMapper**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateWorkflowInstance**
+    - 请求参数变更
+      - `- content-type`
+  - **ListAopWorkflowInstance**
+    - 请求参数变更
+      - `- content-type`
+  - **CreateClassifier**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ data.project_id`
+      - `+ data.workspace_id`
+      - `+ data.classifier.mapping_info.built_in`
+      - `+ data.classifier.mapping_info.data_source`
+  - **ShowClassifierInfo**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ data.mapping_info.built_in`
+      - `+ data.mapping_info.data_source`
+  - **UpdateClassifier**
+    - 请求参数变更
+      - `- content-type`
+    - 响应参数变更
+      - `+ data.project_id`
+      - `+ data.workspace_id`
+      - `+ data.classifier.mapping_info.built_in`
+      - `+ data.classifier.mapping_info.data_source`
+  - **ChangeResource**
+    - 响应参数变更
+      - `+ code`
+      - `+ data`
+      - `+ message`
+      - `- data_object`
+
+### HuaweiCloud SDK SecMaster
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListCollectConfig`、`CreateCollectConfig`、`CreateSqlRender`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAdhocResult**
+    - 响应参数变更
+      - `* batch: object -> integer`
+
+### HuaweiCloud SDK SMS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMigproject**
+    - 响应参数变更
+      - `- id`
+  - **UpdateMigproject**
+    - 请求参数变更
+      - `- id`
+  - **UpdateCopyState**
+    - 请求参数变更
+      - `+ copystate: enum value [init,premiging]`
+      - `- copystate: enum value [initialize]`
+      - `+ migrationcycle: enum value [no_ready,ready_for_test,testing,tested]`
+  - **ListErrorServers**
+    - 请求参数变更
+      - `- migproject`
+  - **ShowConsistencyResult**
+    - 响应参数变更
+      - `* result_list: list<object> -> list<string>`
+  - **UpdateDiskInfo**
+    - 请求参数变更
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **ListTemplates**
+    - 请求参数变更
+      - `+ id`
+  - **CreateTemplate**
+    - 请求参数变更
+      - `- template.volumetype: enum value [SAS,SSD,SATA]`
+      - `- template.data_volume_type: enum value [SAS,SSD,SATA]`
+  - **UpdateTemplate**
+    - 请求参数变更
+      - `- template.volumetype: enum value [SAS,SSD,SATA]`
+      - `- template.data_volume_type: enum value [SAS,SSD,SATA]`
+  - **ShowServer**
+    - 响应参数变更
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ clonevm_template_id`
+  - **UpdateTask**
+    - 请求参数变更
+      - `+ use_ipv6`
+      - `+ use_public_ip`
+      - `+ enterprise_project`
+      - `+ image_disk_id`
+      - `+ target_disk_ids`
+      - `+ snapshot_ids`
+      - `+ cutovered_snapshot_ids`
+      - `- os_type`
+      - `- id`
+      - `- priority`
+      - `- start_target_server`
+      - `- enterprise_project_id`
+      - `- source_server`
+      - `- state`
+      - `- estimate_complete_time`
+      - `- connected`
+      - `- create_date`
+      - `- start_date`
+      - `- finish_date`
+      - `- migrate_speed`
+      - `- error_json`
+      - `- total_time`
+      - `- float_ip`
+      - `- remain_seconds`
+      - `- target_snapshot_id`
+      - `- sub_tasks`
+  - **RegisterServer**
+    - 请求参数变更
+      - `+ ipv6`
+      - `- boot_loader: enum value [GRUB,LILO]`
+      - `- start_type: enum value [MANUAL,MGC,]`
+      - `+ platform: enum value [default]`
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **ListServers**
+    - 请求参数变更
+      - `+ ipv6`
+      - `+ vm_id`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 响应参数变更
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **CreatePort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **ShowPort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **UpdatePort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronListPorts**
+    - 响应参数变更
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronCreatePort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronShowPort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronUpdatePort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 响应参数变更
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **ShowPort**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **AddSecurityGroups**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **RemoveSecurityGroups**
+    - 响应参数变更
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+
 # 3.1.184 2026-01-22
 
 ### HuaweiCloud SDK CDN

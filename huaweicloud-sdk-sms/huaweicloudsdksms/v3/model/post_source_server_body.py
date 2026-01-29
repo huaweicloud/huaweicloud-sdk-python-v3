@@ -17,6 +17,7 @@ class PostSourceServerBody:
     openapi_types = {
         'id': 'str',
         'ip': 'str',
+        'ipv6': 'str',
         'name': 'str',
         'hostname': 'str',
         'os_type': 'str',
@@ -52,6 +53,7 @@ class PostSourceServerBody:
     attribute_map = {
         'id': 'id',
         'ip': 'ip',
+        'ipv6': 'ipv6',
         'name': 'name',
         'hostname': 'hostname',
         'os_type': 'os_type',
@@ -84,18 +86,20 @@ class PostSourceServerBody:
         'platform': 'platform'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
+    def __init__(self, id=None, ip=None, ipv6=None, name=None, hostname=None, os_type=None, os_version=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
         r"""PostSourceServerBody
 
         The model defined in huaweicloud sdk
 
         :param id: 源端在SMS数据库中的ID
         :type id: str
-        :param ip: 源端服务器ip，注册源端时必选，更新非必选
+        :param ip: 源端服务器ip，格式需满足ip标准格式。ip与ipv6必填一个。
         :type ip: str
+        :param ipv6: 源端服务器ip，格式需满足ipv6标准格式。ip与ipv6必填一个。
+        :type ipv6: str
         :param name: 用来区分不同源端服务器的名称
         :type name: str
-        :param hostname: 源端主机名，注册源端必选，更新非必选
+        :param hostname: 源端主机名
         :type hostname: str
         :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
         :type os_type: str
@@ -111,29 +115,29 @@ class PostSourceServerBody:
         :type memory: int
         :param disks: 源端服务器的磁盘信息
         :type disks: list[:class:`huaweicloudsdksms.v3.ServerDisk`]
-        :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        :param btrfs_list: 源端的Btrfs信息。如果源端不存在Btrfs，则为[] Linux场景必选，否则无法通过后续环境检查
         :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
         :param networks: 源端服务器的网卡信息
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         :param domain_id: 租户的domainId
         :type domain_id: str
-        :param has_rsync: 是否安装rsync组件，Linux系统此参数为必选
+        :param has_rsync: 是否安装rsync组件，Linux系统此参数为必选，否则无法通过后续环境检查
         :type has_rsync: bool
-        :param paravirtualization: Linux场景必选，源端是否是半虚拟化
+        :param paravirtualization: 源端是否是半虚拟化 Linux场景必选，否则无法通过后续环境检查
         :type paravirtualization: bool
-        :param raw_devices: Linux必选，裸设备列表
+        :param raw_devices: 裸设备列表 Linux场景必选，否则无法通过后续环境检查
         :type raw_devices: str
-        :param driver_files: Windows 必选，是否缺少驱动文件
+        :param driver_files: 是否缺少驱动文件 Windows场景必选，否则无法通过后续环境检查
         :type driver_files: bool
-        :param system_services: Windows必选，是否存在不正常服务
+        :param system_services: 是否存在不正常服务 Windows场景必选，否则无法通过后续环境检查
         :type system_services: bool
-        :param account_rights: Windows必选，权限是否满足要求
+        :param account_rights: 权限是否满足要求 Windows场景必选，否则无法通过后续环境检查
         :type account_rights: bool
-        :param boot_loader: Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
+        :param boot_loader: 系统引导类型 仅允许“GRUB”取值，Linux场景必选，否则无法通过后续环境检查
         :type boot_loader: str
-        :param system_dir: Windows必选，系统目录
+        :param system_dir: 系统目录 Windows场景必选，否则无法通过后续环境检查
         :type system_dir: str
-        :param volume_groups: Linux必选，如果没有卷组，输入[]
+        :param volume_groups: 卷组 如果没有卷组，输入[] Linux场景必选，否则无法通过后续环境检查
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         :param agent_version: Agent版本
         :type agent_version: str
@@ -141,17 +145,17 @@ class PostSourceServerBody:
         :type kernel_version: str
         :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
         :type migration_cycle: str
-        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiging：迁移演练中 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
         :type state: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
-        :param start_type: 启动方式，可以取值MANUAL、MGC或者空。
+        :param start_type: 启动方式 可以取值MANUAL、MGC或者空，不进行校验
         :type start_type: str
         :param io_read_wait: 磁盘IO读时延，单位为ms
         :type io_read_wait: float
-        :param has_tc: 是否安装tc组件，Linux系统此参数为必选
+        :param has_tc: 是否安装tc组件，Linux系统此参数为必选，否则无法通过后续环境检查
         :type has_tc: bool
-        :param platform: 平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+        :param platform: 平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware：VMware hyperv：HyperV other：其他 default：默认
         :type platform: str
         """
         
@@ -159,6 +163,7 @@ class PostSourceServerBody:
 
         self._id = None
         self._ip = None
+        self._ipv6 = None
         self._name = None
         self._hostname = None
         self._os_type = None
@@ -195,14 +200,13 @@ class PostSourceServerBody:
             self.id = id
         if ip is not None:
             self.ip = ip
-        if name is not None:
-            self.name = name
+        if ipv6 is not None:
+            self.ipv6 = ipv6
+        self.name = name
         if hostname is not None:
             self.hostname = hostname
-        if os_type is not None:
-            self.os_type = os_type
-        if os_version is not None:
-            self.os_version = os_version
+        self.os_type = os_type
+        self.os_version = os_version
         if linux_block_check is not None:
             self.linux_block_check = linux_block_check
         if firmware is not None:
@@ -215,8 +219,7 @@ class PostSourceServerBody:
             self.disks = disks
         if btrfs_list is not None:
             self.btrfs_list = btrfs_list
-        if networks is not None:
-            self.networks = networks
+        self.networks = networks
         if domain_id is not None:
             self.domain_id = domain_id
         if has_rsync is not None:
@@ -237,8 +240,7 @@ class PostSourceServerBody:
             self.system_dir = system_dir
         if volume_groups is not None:
             self.volume_groups = volume_groups
-        if agent_version is not None:
-            self.agent_version = agent_version
+        self.agent_version = agent_version
         if kernel_version is not None:
             self.kernel_version = kernel_version
         if migration_cycle is not None:
@@ -282,7 +284,7 @@ class PostSourceServerBody:
     def ip(self):
         r"""Gets the ip of this PostSourceServerBody.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器ip，格式需满足ip标准格式。ip与ipv6必填一个。
 
         :return: The ip of this PostSourceServerBody.
         :rtype: str
@@ -293,12 +295,34 @@ class PostSourceServerBody:
     def ip(self, ip):
         r"""Sets the ip of this PostSourceServerBody.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器ip，格式需满足ip标准格式。ip与ipv6必填一个。
 
         :param ip: The ip of this PostSourceServerBody.
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def ipv6(self):
+        r"""Gets the ipv6 of this PostSourceServerBody.
+
+        源端服务器ip，格式需满足ipv6标准格式。ip与ipv6必填一个。
+
+        :return: The ipv6 of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._ipv6
+
+    @ipv6.setter
+    def ipv6(self, ipv6):
+        r"""Sets the ipv6 of this PostSourceServerBody.
+
+        源端服务器ip，格式需满足ipv6标准格式。ip与ipv6必填一个。
+
+        :param ipv6: The ipv6 of this PostSourceServerBody.
+        :type ipv6: str
+        """
+        self._ipv6 = ipv6
 
     @property
     def name(self):
@@ -326,7 +350,7 @@ class PostSourceServerBody:
     def hostname(self):
         r"""Gets the hostname of this PostSourceServerBody.
 
-        源端主机名，注册源端必选，更新非必选
+        源端主机名
 
         :return: The hostname of this PostSourceServerBody.
         :rtype: str
@@ -337,7 +361,7 @@ class PostSourceServerBody:
     def hostname(self, hostname):
         r"""Sets the hostname of this PostSourceServerBody.
 
-        源端主机名，注册源端必选，更新非必选
+        源端主机名
 
         :param hostname: The hostname of this PostSourceServerBody.
         :type hostname: str
@@ -502,7 +526,7 @@ class PostSourceServerBody:
     def btrfs_list(self):
         r"""Gets the btrfs_list of this PostSourceServerBody.
 
-        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        源端的Btrfs信息。如果源端不存在Btrfs，则为[] Linux场景必选，否则无法通过后续环境检查
 
         :return: The btrfs_list of this PostSourceServerBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
@@ -513,7 +537,7 @@ class PostSourceServerBody:
     def btrfs_list(self, btrfs_list):
         r"""Sets the btrfs_list of this PostSourceServerBody.
 
-        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+        源端的Btrfs信息。如果源端不存在Btrfs，则为[] Linux场景必选，否则无法通过后续环境检查
 
         :param btrfs_list: The btrfs_list of this PostSourceServerBody.
         :type btrfs_list: list[:class:`huaweicloudsdksms.v3.BtrfsFileSystem`]
@@ -568,7 +592,7 @@ class PostSourceServerBody:
     def has_rsync(self):
         r"""Gets the has_rsync of this PostSourceServerBody.
 
-        是否安装rsync组件，Linux系统此参数为必选
+        是否安装rsync组件，Linux系统此参数为必选，否则无法通过后续环境检查
 
         :return: The has_rsync of this PostSourceServerBody.
         :rtype: bool
@@ -579,7 +603,7 @@ class PostSourceServerBody:
     def has_rsync(self, has_rsync):
         r"""Sets the has_rsync of this PostSourceServerBody.
 
-        是否安装rsync组件，Linux系统此参数为必选
+        是否安装rsync组件，Linux系统此参数为必选，否则无法通过后续环境检查
 
         :param has_rsync: The has_rsync of this PostSourceServerBody.
         :type has_rsync: bool
@@ -590,7 +614,7 @@ class PostSourceServerBody:
     def paravirtualization(self):
         r"""Gets the paravirtualization of this PostSourceServerBody.
 
-        Linux场景必选，源端是否是半虚拟化
+        源端是否是半虚拟化 Linux场景必选，否则无法通过后续环境检查
 
         :return: The paravirtualization of this PostSourceServerBody.
         :rtype: bool
@@ -601,7 +625,7 @@ class PostSourceServerBody:
     def paravirtualization(self, paravirtualization):
         r"""Sets the paravirtualization of this PostSourceServerBody.
 
-        Linux场景必选，源端是否是半虚拟化
+        源端是否是半虚拟化 Linux场景必选，否则无法通过后续环境检查
 
         :param paravirtualization: The paravirtualization of this PostSourceServerBody.
         :type paravirtualization: bool
@@ -612,7 +636,7 @@ class PostSourceServerBody:
     def raw_devices(self):
         r"""Gets the raw_devices of this PostSourceServerBody.
 
-        Linux必选，裸设备列表
+        裸设备列表 Linux场景必选，否则无法通过后续环境检查
 
         :return: The raw_devices of this PostSourceServerBody.
         :rtype: str
@@ -623,7 +647,7 @@ class PostSourceServerBody:
     def raw_devices(self, raw_devices):
         r"""Sets the raw_devices of this PostSourceServerBody.
 
-        Linux必选，裸设备列表
+        裸设备列表 Linux场景必选，否则无法通过后续环境检查
 
         :param raw_devices: The raw_devices of this PostSourceServerBody.
         :type raw_devices: str
@@ -634,7 +658,7 @@ class PostSourceServerBody:
     def driver_files(self):
         r"""Gets the driver_files of this PostSourceServerBody.
 
-        Windows 必选，是否缺少驱动文件
+        是否缺少驱动文件 Windows场景必选，否则无法通过后续环境检查
 
         :return: The driver_files of this PostSourceServerBody.
         :rtype: bool
@@ -645,7 +669,7 @@ class PostSourceServerBody:
     def driver_files(self, driver_files):
         r"""Sets the driver_files of this PostSourceServerBody.
 
-        Windows 必选，是否缺少驱动文件
+        是否缺少驱动文件 Windows场景必选，否则无法通过后续环境检查
 
         :param driver_files: The driver_files of this PostSourceServerBody.
         :type driver_files: bool
@@ -656,7 +680,7 @@ class PostSourceServerBody:
     def system_services(self):
         r"""Gets the system_services of this PostSourceServerBody.
 
-        Windows必选，是否存在不正常服务
+        是否存在不正常服务 Windows场景必选，否则无法通过后续环境检查
 
         :return: The system_services of this PostSourceServerBody.
         :rtype: bool
@@ -667,7 +691,7 @@ class PostSourceServerBody:
     def system_services(self, system_services):
         r"""Sets the system_services of this PostSourceServerBody.
 
-        Windows必选，是否存在不正常服务
+        是否存在不正常服务 Windows场景必选，否则无法通过后续环境检查
 
         :param system_services: The system_services of this PostSourceServerBody.
         :type system_services: bool
@@ -678,7 +702,7 @@ class PostSourceServerBody:
     def account_rights(self):
         r"""Gets the account_rights of this PostSourceServerBody.
 
-        Windows必选，权限是否满足要求
+        权限是否满足要求 Windows场景必选，否则无法通过后续环境检查
 
         :return: The account_rights of this PostSourceServerBody.
         :rtype: bool
@@ -689,7 +713,7 @@ class PostSourceServerBody:
     def account_rights(self, account_rights):
         r"""Sets the account_rights of this PostSourceServerBody.
 
-        Windows必选，权限是否满足要求
+        权限是否满足要求 Windows场景必选，否则无法通过后续环境检查
 
         :param account_rights: The account_rights of this PostSourceServerBody.
         :type account_rights: bool
@@ -700,7 +724,7 @@ class PostSourceServerBody:
     def boot_loader(self):
         r"""Gets the boot_loader of this PostSourceServerBody.
 
-        Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
+        系统引导类型 仅允许“GRUB”取值，Linux场景必选，否则无法通过后续环境检查
 
         :return: The boot_loader of this PostSourceServerBody.
         :rtype: str
@@ -711,7 +735,7 @@ class PostSourceServerBody:
     def boot_loader(self, boot_loader):
         r"""Sets the boot_loader of this PostSourceServerBody.
 
-        Linux必选，系统引导类型，BOOT_LOADER(GRUB/LILO)
+        系统引导类型 仅允许“GRUB”取值，Linux场景必选，否则无法通过后续环境检查
 
         :param boot_loader: The boot_loader of this PostSourceServerBody.
         :type boot_loader: str
@@ -722,7 +746,7 @@ class PostSourceServerBody:
     def system_dir(self):
         r"""Gets the system_dir of this PostSourceServerBody.
 
-        Windows必选，系统目录
+        系统目录 Windows场景必选，否则无法通过后续环境检查
 
         :return: The system_dir of this PostSourceServerBody.
         :rtype: str
@@ -733,7 +757,7 @@ class PostSourceServerBody:
     def system_dir(self, system_dir):
         r"""Sets the system_dir of this PostSourceServerBody.
 
-        Windows必选，系统目录
+        系统目录 Windows场景必选，否则无法通过后续环境检查
 
         :param system_dir: The system_dir of this PostSourceServerBody.
         :type system_dir: str
@@ -744,7 +768,7 @@ class PostSourceServerBody:
     def volume_groups(self):
         r"""Gets the volume_groups of this PostSourceServerBody.
 
-        Linux必选，如果没有卷组，输入[]
+        卷组 如果没有卷组，输入[] Linux场景必选，否则无法通过后续环境检查
 
         :return: The volume_groups of this PostSourceServerBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
@@ -755,7 +779,7 @@ class PostSourceServerBody:
     def volume_groups(self, volume_groups):
         r"""Sets the volume_groups of this PostSourceServerBody.
 
-        Linux必选，如果没有卷组，输入[]
+        卷组 如果没有卷组，输入[] Linux场景必选，否则无法通过后续环境检查
 
         :param volume_groups: The volume_groups of this PostSourceServerBody.
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
@@ -832,7 +856,7 @@ class PostSourceServerBody:
     def state(self):
         r"""Gets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiging：迁移演练中 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
 
         :return: The state of this PostSourceServerBody.
         :rtype: str
@@ -843,7 +867,7 @@ class PostSourceServerBody:
     def state(self, state):
         r"""Sets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiging：迁移演练中 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
 
         :param state: The state of this PostSourceServerBody.
         :type state: str
@@ -876,7 +900,7 @@ class PostSourceServerBody:
     def start_type(self):
         r"""Gets the start_type of this PostSourceServerBody.
 
-        启动方式，可以取值MANUAL、MGC或者空。
+        启动方式 可以取值MANUAL、MGC或者空，不进行校验
 
         :return: The start_type of this PostSourceServerBody.
         :rtype: str
@@ -887,7 +911,7 @@ class PostSourceServerBody:
     def start_type(self, start_type):
         r"""Sets the start_type of this PostSourceServerBody.
 
-        启动方式，可以取值MANUAL、MGC或者空。
+        启动方式 可以取值MANUAL、MGC或者空，不进行校验
 
         :param start_type: The start_type of this PostSourceServerBody.
         :type start_type: str
@@ -920,7 +944,7 @@ class PostSourceServerBody:
     def has_tc(self):
         r"""Gets the has_tc of this PostSourceServerBody.
 
-        是否安装tc组件，Linux系统此参数为必选
+        是否安装tc组件，Linux系统此参数为必选，否则无法通过后续环境检查
 
         :return: The has_tc of this PostSourceServerBody.
         :rtype: bool
@@ -931,7 +955,7 @@ class PostSourceServerBody:
     def has_tc(self, has_tc):
         r"""Sets the has_tc of this PostSourceServerBody.
 
-        是否安装tc组件，Linux系统此参数为必选
+        是否安装tc组件，Linux系统此参数为必选，否则无法通过后续环境检查
 
         :param has_tc: The has_tc of this PostSourceServerBody.
         :type has_tc: bool
@@ -942,7 +966,7 @@ class PostSourceServerBody:
     def platform(self):
         r"""Gets the platform of this PostSourceServerBody.
 
-        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware：VMware hyperv：HyperV other：其他 default：默认
 
         :return: The platform of this PostSourceServerBody.
         :rtype: str
@@ -953,7 +977,7 @@ class PostSourceServerBody:
     def platform(self, platform):
         r"""Sets the platform of this PostSourceServerBody.
 
-        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware hyperv other：其他
+        平台信息: hw：华为  ali：阿里 aws：亚马逊 azure：微软云 gcp：谷歌云 tencent：腾讯云 vmware：VMware hyperv：HyperV other：其他 default：默认
 
         :param platform: The platform of this PostSourceServerBody.
         :type platform: str

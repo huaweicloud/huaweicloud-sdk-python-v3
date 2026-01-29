@@ -18,7 +18,7 @@ class CreateMapperResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'DpeMappingDetail'
+        'data': 'CreateDpeMappingRequestBody'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class CreateMapperResponse(SdkResponse):
         :param message: **参数解释**: 错误描述 **取值范围**: 不涉及
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdksecmaster.v1.DpeMappingDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v1.CreateDpeMappingRequestBody`
         """
         
         super().__init__()
@@ -103,7 +103,7 @@ class CreateMapperResponse(SdkResponse):
         r"""Gets the data of this CreateMapperResponse.
 
         :return: The data of this CreateMapperResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v1.DpeMappingDetail`
+        :rtype: :class:`huaweicloudsdksecmaster.v1.CreateDpeMappingRequestBody`
         """
         return self._data
 
@@ -112,7 +112,7 @@ class CreateMapperResponse(SdkResponse):
         r"""Sets the data of this CreateMapperResponse.
 
         :param data: The data of this CreateMapperResponse.
-        :type data: :class:`huaweicloudsdksecmaster.v1.DpeMappingDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v1.CreateDpeMappingRequestBody`
         """
         self._data = data
 

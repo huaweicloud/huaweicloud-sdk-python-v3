@@ -29,10 +29,8 @@ class CreateIndicatorDetail:
         'id': 'str',
         'indicator_type': 'CreateIndicatorDetailIndicatorType',
         'name': 'str',
-        'dataclass_id': 'str',
         'workspace_id': 'str',
         'project_id': 'str',
-        'dataclass': 'DataClassRefPojo',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -52,15 +50,13 @@ class CreateIndicatorDetail:
         'id': 'id',
         'indicator_type': 'indicator_type',
         'name': 'name',
-        'dataclass_id': 'dataclass_id',
         'workspace_id': 'workspace_id',
         'project_id': 'project_id',
-        'dataclass': 'dataclass',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, data_source=None, verdict=None, confidence=None, status=None, labels=None, value=None, granular_marking=None, environment=None, defanged=None, first_report_time=None, last_report_time=None, id=None, indicator_type=None, name=None, dataclass_id=None, workspace_id=None, project_id=None, dataclass=None, create_time=None, update_time=None):
+    def __init__(self, data_source=None, verdict=None, confidence=None, status=None, labels=None, value=None, granular_marking=None, environment=None, defanged=None, first_report_time=None, last_report_time=None, id=None, indicator_type=None, name=None, workspace_id=None, project_id=None, create_time=None, update_time=None):
         r"""CreateIndicatorDetail
 
         The model defined in huaweicloud sdk
@@ -93,14 +89,10 @@ class CreateIndicatorDetail:
         :type indicator_type: :class:`huaweicloudsdksecmaster.v1.CreateIndicatorDetailIndicatorType`
         :param name: 威胁情报名称
         :type name: str
-        :param dataclass_id: 数据类ID
-        :type dataclass_id: str
         :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param project_id: 项目ID
         :type project_id: str
-        :param dataclass: 
-        :type dataclass: :class:`huaweicloudsdksecmaster.v1.DataClassRefPojo`
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 更新时间
@@ -123,10 +115,8 @@ class CreateIndicatorDetail:
         self._id = None
         self._indicator_type = None
         self._name = None
-        self._dataclass_id = None
         self._workspace_id = None
         self._project_id = None
-        self._dataclass = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -150,13 +140,9 @@ class CreateIndicatorDetail:
             self.id = id
         self.indicator_type = indicator_type
         self.name = name
-        if dataclass_id is not None:
-            self.dataclass_id = dataclass_id
         self.workspace_id = workspace_id
         if project_id is not None:
             self.project_id = project_id
-        if dataclass is not None:
-            self.dataclass = dataclass
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -459,28 +445,6 @@ class CreateIndicatorDetail:
         self._name = name
 
     @property
-    def dataclass_id(self):
-        r"""Gets the dataclass_id of this CreateIndicatorDetail.
-
-        数据类ID
-
-        :return: The dataclass_id of this CreateIndicatorDetail.
-        :rtype: str
-        """
-        return self._dataclass_id
-
-    @dataclass_id.setter
-    def dataclass_id(self, dataclass_id):
-        r"""Sets the dataclass_id of this CreateIndicatorDetail.
-
-        数据类ID
-
-        :param dataclass_id: The dataclass_id of this CreateIndicatorDetail.
-        :type dataclass_id: str
-        """
-        self._dataclass_id = dataclass_id
-
-    @property
     def workspace_id(self):
         r"""Gets the workspace_id of this CreateIndicatorDetail.
 
@@ -523,24 +487,6 @@ class CreateIndicatorDetail:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def dataclass(self):
-        r"""Gets the dataclass of this CreateIndicatorDetail.
-
-        :return: The dataclass of this CreateIndicatorDetail.
-        :rtype: :class:`huaweicloudsdksecmaster.v1.DataClassRefPojo`
-        """
-        return self._dataclass
-
-    @dataclass.setter
-    def dataclass(self, dataclass):
-        r"""Sets the dataclass of this CreateIndicatorDetail.
-
-        :param dataclass: The dataclass of this CreateIndicatorDetail.
-        :type dataclass: :class:`huaweicloudsdksecmaster.v1.DataClassRefPojo`
-        """
-        self._dataclass = dataclass
 
     @property
     def create_time(self):

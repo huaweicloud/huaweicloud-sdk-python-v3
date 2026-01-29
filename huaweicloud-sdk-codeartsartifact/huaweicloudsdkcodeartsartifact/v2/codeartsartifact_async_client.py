@@ -1815,6 +1815,71 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return http_info
 
+    def list_user_privileges_async(self, request):
+        r"""查询用户权限
+
+        查询用户在项目下的角色及权限，如创建仓库、编辑仓库、上传、下载、导入和导出等权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserPrivileges
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ListUserPrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListUserPrivilegesResponse`
+        """
+        http_info = self._list_user_privileges_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_privileges_async_invoker(self, request):
+        http_info = self._list_user_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_privileges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/user/{project_id}/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserPrivilegesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_repository_async(self, request):
         r"""编辑仓库
 
@@ -2960,6 +3025,77 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return http_info
 
+    def show_project_related_repository_async(self, request):
+        r"""查询项目列表
+
+        调用该接口可以快速查询项目列表信息，包含仓库和项目的关联关系，以便于仓库的管理和协作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectRelatedRepository
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectRelatedRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectRelatedRepositoryResponse`
+        """
+        http_info = self._show_project_related_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_related_repository_async_invoker(self, request):
+        http_info = self._show_project_related_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_related_repository_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/maven/project/repository",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectRelatedRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'search_name' in local_var_params:
+            query_params.append(('search_name', local_var_params['search_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'repo_id' in local_var_params:
+            query_params.append(('repo_id', local_var_params['repo_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_project_release_files_async(self, request):
         r"""获取项目下文件版本信息列表
 
@@ -3071,6 +3207,73 @@ class CodeArtsArtifactAsyncClient(Client):
         query_params = []
         if 'parent_id' in local_var_params:
             query_params.append(('parent_id', local_var_params['parent_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_versions_count_async(self, request):
+        r"""查询项目下的版本数量
+
+        当发布库版本众多时，用户可根据项目ID查询对应发布库的版本数量，以便于管理和跟踪不同版本的发布情况。该接口支持通过版本名称过滤。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectVersionsCount
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectVersionsCountRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowProjectVersionsCountResponse`
+        """
+        http_info = self._show_project_versions_count_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_versions_count_async_invoker(self, request):
+        http_info = self._show_project_versions_count_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_versions_count_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/versions/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectVersionsCountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'build_version' in local_var_params:
+            query_params.append(('build_version', local_var_params['build_version']))
 
         header_params = {}
 
@@ -3370,6 +3573,75 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return http_info
 
+    def show_repository_roles_privilege_async(self, request):
+        r"""查询仓库权限
+
+        根据仓库ID查询指定仓库的权限，包含各角色对该仓库的权限信息。当用户需要指定仓库的指定权限时，可调用该接口查看需要授权的角色。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepositoryRolesPrivilege
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryRolesPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowRepositoryRolesPrivilegeResponse`
+        """
+        http_info = self._show_repository_roles_privilege_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_roles_privilege_async_invoker(self, request):
+        http_info = self._show_repository_roles_privilege_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_roles_privilege_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cloudartifact/v5/repositories/{project_id}/{repo_id}/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryRolesPrivilegeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'repo_id' in local_var_params:
+            path_params['repo_id'] = local_var_params['repo_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_storage_async(self, request):
         r"""仓库用量查询
 
@@ -3565,6 +3837,77 @@ class CodeArtsArtifactAsyncClient(Client):
 
         return http_info
 
+    def show_version_list_async(self, request):
+        r"""查询发布库版本列表
+
+        当发布库版本众多时，用户可根据项目ID分页查询对应发布库下的版本列表。该接口支持版本名称的模糊搜索。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVersionList
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.ShowVersionListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ShowVersionListResponse`
+        """
+        http_info = self._show_version_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_version_list_async_invoker(self, request):
+        http_info = self._show_version_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_version_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'build_version' in local_var_params:
+            query_params.append(('build_version', local_var_params['build_version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_artifactory_async(self, request):
         r"""编辑非maven仓库信息
 
@@ -3618,6 +3961,73 @@ class CodeArtsArtifactAsyncClient(Client):
             ['application/json'])
 
         auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_repo_roles_privilege_async(self, request):
+        r"""更新角色权限
+
+        根据角色ID更新指定角色的权限，如创建仓库、编辑仓库、上传、下载、导入和导出等权限，实现权限的集中管理和自动化分配。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepoRolesPrivilege
+        :type request: :class:`huaweicloudsdkcodeartsartifact.v2.UpdateRepoRolesPrivilegeRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.UpdateRepoRolesPrivilegeResponse`
+        """
+        http_info = self._update_repo_roles_privilege_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repo_roles_privilege_async_invoker(self, request):
+        http_info = self._update_repo_roles_privilege_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repo_roles_privilege_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/cloudartifact/v5/repositories/{role_id}/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepoRolesPrivilegeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

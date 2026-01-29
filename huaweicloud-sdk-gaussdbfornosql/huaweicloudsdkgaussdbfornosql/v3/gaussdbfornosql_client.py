@@ -6883,6 +6883,10 @@ class GaussDBforNoSQLClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
 

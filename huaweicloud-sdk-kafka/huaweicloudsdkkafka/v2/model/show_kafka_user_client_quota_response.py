@@ -16,7 +16,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'list[Quota]',
+        'quotas': 'list[QuotaResp]',
         'count': 'int'
     }
 
@@ -31,7 +31,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param quotas: 客户端流控配置列表。 
-        :type quotas: list[:class:`huaweicloudsdkkafka.v2.Quota`]
+        :type quotas: list[:class:`huaweicloudsdkkafka.v2.QuotaResp`]
         :param count: 用户/客户端流控配置数目。 
         :type count: int
         """
@@ -54,7 +54,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
         客户端流控配置列表。 
 
         :return: The quotas of this ShowKafkaUserClientQuotaResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.Quota`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.QuotaResp`]
         """
         return self._quotas
 
@@ -65,7 +65,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
         客户端流控配置列表。 
 
         :param quotas: The quotas of this ShowKafkaUserClientQuotaResponse.
-        :type quotas: list[:class:`huaweicloudsdkkafka.v2.Quota`]
+        :type quotas: list[:class:`huaweicloudsdkkafka.v2.QuotaResp`]
         """
         self._quotas = quotas
 

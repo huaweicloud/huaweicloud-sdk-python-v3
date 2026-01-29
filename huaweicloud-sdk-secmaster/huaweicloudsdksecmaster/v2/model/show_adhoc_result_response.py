@@ -16,7 +16,7 @@ class ShowAdhocResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'batch': 'object',
+        'batch': 'int',
         'schema': 'list[AdhocQueryAnalysisField]',
         'datarows': 'list[list[object]]',
         'datarows_upsert': 'list[list[DataRow]]',
@@ -45,7 +45,7 @@ class ShowAdhocResultResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param batch: 获取数据的批次，为0则为第一次查询
-        :type batch: object
+        :type batch: int
         :param schema: 统计分析结果字段类型
         :type schema: list[:class:`huaweicloudsdksecmaster.v2.AdhocQueryAnalysisField`]
         :param datarows: 统计分析结果数据
@@ -103,7 +103,7 @@ class ShowAdhocResultResponse(SdkResponse):
         获取数据的批次，为0则为第一次查询
 
         :return: The batch of this ShowAdhocResultResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._batch
 
@@ -114,7 +114,7 @@ class ShowAdhocResultResponse(SdkResponse):
         获取数据的批次，为0则为第一次查询
 
         :param batch: The batch of this ShowAdhocResultResponse.
-        :type batch: object
+        :type batch: int
         """
         self._batch = batch
 

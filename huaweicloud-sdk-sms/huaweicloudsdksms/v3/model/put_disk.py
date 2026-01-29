@@ -53,8 +53,10 @@ class PutDisk:
 
         if need_migration is not None:
             self.need_migration = need_migration
-        self.id = id
-        self.adjust_size = adjust_size
+        if id is not None:
+            self.id = id
+        if adjust_size is not None:
+            self.adjust_size = adjust_size
         if physical_volumes is not None:
             self.physical_volumes = physical_volumes
 

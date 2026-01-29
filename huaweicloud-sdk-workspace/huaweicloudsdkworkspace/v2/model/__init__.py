@@ -104,7 +104,7 @@ from huaweicloudsdkworkspace.v2.model.auto_disconnect_or_logout_control_options 
 from huaweicloudsdkworkspace.v2.model.auto_install_app_req import AutoInstallAppReq
 from huaweicloudsdkworkspace.v2.model.auto_lock_options import AutoLockOptions
 from huaweicloudsdkworkspace.v2.model.autoscale_policy import AutoscalePolicy
-from huaweicloudsdkworkspace.v2.model.availability_zone import AvailabilityZone
+from huaweicloudsdkworkspace.v2.model.availability_zone_info import AvailabilityZoneInfo
 from huaweicloudsdkworkspace.v2.model.az_info import AzInfo
 from huaweicloudsdkworkspace.v2.model.backup_info import BackupInfo
 from huaweicloudsdkworkspace.v2.model.base_error import BaseError

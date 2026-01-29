@@ -35,7 +35,7 @@ class ShowMetricResultResponseBodyResult:
         :type labels: list[str]
         :param datarows: 指标查询结果内容表格
         :type datarows: list[list[object]]
-        :param effective_column: 生效的列, 当有该参数时，使用指定列作为指标数据结果
+        :param effective_column: 生效的列，当有该参数时，使用指定列作为指标数据结果
         :type effective_column: str
         """
         
@@ -99,7 +99,7 @@ class ShowMetricResultResponseBodyResult:
     def effective_column(self):
         r"""Gets the effective_column of this ShowMetricResultResponseBodyResult.
 
-        生效的列, 当有该参数时，使用指定列作为指标数据结果
+        生效的列，当有该参数时，使用指定列作为指标数据结果
 
         :return: The effective_column of this ShowMetricResultResponseBodyResult.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowMetricResultResponseBodyResult:
     def effective_column(self, effective_column):
         r"""Sets the effective_column of this ShowMetricResultResponseBodyResult.
 
-        生效的列, 当有该参数时，使用指定列作为指标数据结果
+        生效的列，当有该参数时，使用指定列作为指标数据结果
 
         :param effective_column: The effective_column of this ShowMetricResultResponseBodyResult.
         :type effective_column: str

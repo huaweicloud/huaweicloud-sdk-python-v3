@@ -17,6 +17,8 @@ class CreateDpeClassifyRequestBody:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'project_id': 'object',
+        'workspace_id': 'object',
         'dataclass_id': 'str',
         'data_source': 'str',
         'description': 'str',
@@ -26,13 +28,15 @@ class CreateDpeClassifyRequestBody:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'project_id': 'project_id',
+        'workspace_id': 'workspace_id',
         'dataclass_id': 'dataclass_id',
         'data_source': 'data_source',
         'description': 'description',
         'classifier': 'classifier'
     }
 
-    def __init__(self, id=None, name=None, dataclass_id=None, data_source=None, description=None, classifier=None):
+    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, data_source=None, description=None, classifier=None):
         r"""CreateDpeClassifyRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class CreateDpeClassifyRequestBody:
         :type id: str
         :param name: 名称
         :type name: str
+        :param project_id: 
+        :type project_id: object
+        :param workspace_id: 
+        :type workspace_id: object
         :param dataclass_id: 映射id
         :type dataclass_id: str
         :param data_source: 数据源
@@ -55,6 +63,8 @@ class CreateDpeClassifyRequestBody:
 
         self._id = None
         self._name = None
+        self._project_id = None
+        self._workspace_id = None
         self._dataclass_id = None
         self._data_source = None
         self._description = None
@@ -63,6 +73,10 @@ class CreateDpeClassifyRequestBody:
 
         self.id = id
         self.name = name
+        if project_id is not None:
+            self.project_id = project_id
+        if workspace_id is not None:
+            self.workspace_id = workspace_id
         self.dataclass_id = dataclass_id
         self.data_source = data_source
         self.description = description
@@ -111,6 +125,42 @@ class CreateDpeClassifyRequestBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this CreateDpeClassifyRequestBody.
+
+        :return: The project_id of this CreateDpeClassifyRequestBody.
+        :rtype: object
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this CreateDpeClassifyRequestBody.
+
+        :param project_id: The project_id of this CreateDpeClassifyRequestBody.
+        :type project_id: object
+        """
+        self._project_id = project_id
+
+    @property
+    def workspace_id(self):
+        r"""Gets the workspace_id of this CreateDpeClassifyRequestBody.
+
+        :return: The workspace_id of this CreateDpeClassifyRequestBody.
+        :rtype: object
+        """
+        return self._workspace_id
+
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        r"""Sets the workspace_id of this CreateDpeClassifyRequestBody.
+
+        :param workspace_id: The workspace_id of this CreateDpeClassifyRequestBody.
+        :type workspace_id: object
+        """
+        self._workspace_id = workspace_id
 
     @property
     def dataclass_id(self):

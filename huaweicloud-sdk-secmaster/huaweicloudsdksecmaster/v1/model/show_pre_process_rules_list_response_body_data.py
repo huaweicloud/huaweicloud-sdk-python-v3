@@ -23,9 +23,13 @@ class ShowPreProcessRulesListResponseBodyData:
         'mapper_id': 'str',
         'mapper_type_id': 'str',
         'action': 'str',
+        'creator_id': 'str',
+        'creator_name': 'str',
         'expression': 'str',
         'create_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'modifier_id': 'str',
+        'modifier_name': 'str'
     }
 
     attribute_map = {
@@ -37,12 +41,16 @@ class ShowPreProcessRulesListResponseBodyData:
         'mapper_id': 'mapper_id',
         'mapper_type_id': 'mapper_type_id',
         'action': 'action',
+        'creator_id': 'creator_id',
+        'creator_name': 'creator_name',
         'expression': 'expression',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'modifier_id': 'modifier_id',
+        'modifier_name': 'modifier_name'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, mapping_id=None, mapper_id=None, mapper_type_id=None, action=None, expression=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, mapping_id=None, mapper_id=None, mapper_type_id=None, action=None, creator_id=None, creator_name=None, expression=None, create_time=None, update_time=None, modifier_id=None, modifier_name=None):
         r"""ShowPreProcessRulesListResponseBodyData
 
         The model defined in huaweicloud sdk
@@ -63,12 +71,20 @@ class ShowPreProcessRulesListResponseBodyData:
         :type mapper_type_id: str
         :param action: 预处理选项: drop-丢弃
         :type action: str
+        :param creator_id: 创建者id
+        :type creator_id: str
+        :param creator_name: 创建者名称
+        :type creator_name: str
         :param expression: 表达式
         :type expression: str
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 更新时间
         :type update_time: str
+        :param modifier_id: 修改者id
+        :type modifier_id: str
+        :param modifier_name: 修改者名称
+        :type modifier_name: str
         """
         
         
@@ -81,9 +97,13 @@ class ShowPreProcessRulesListResponseBodyData:
         self._mapper_id = None
         self._mapper_type_id = None
         self._action = None
+        self._creator_id = None
+        self._creator_name = None
         self._expression = None
         self._create_time = None
         self._update_time = None
+        self._modifier_id = None
+        self._modifier_name = None
         self.discriminator = None
 
         if id is not None:
@@ -102,12 +122,20 @@ class ShowPreProcessRulesListResponseBodyData:
             self.mapper_type_id = mapper_type_id
         if action is not None:
             self.action = action
+        if creator_id is not None:
+            self.creator_id = creator_id
+        if creator_name is not None:
+            self.creator_name = creator_name
         if expression is not None:
             self.expression = expression
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if modifier_id is not None:
+            self.modifier_id = modifier_id
+        if modifier_name is not None:
+            self.modifier_name = modifier_name
 
     @property
     def id(self):
@@ -286,6 +314,50 @@ class ShowPreProcessRulesListResponseBodyData:
         self._action = action
 
     @property
+    def creator_id(self):
+        r"""Gets the creator_id of this ShowPreProcessRulesListResponseBodyData.
+
+        创建者id
+
+        :return: The creator_id of this ShowPreProcessRulesListResponseBodyData.
+        :rtype: str
+        """
+        return self._creator_id
+
+    @creator_id.setter
+    def creator_id(self, creator_id):
+        r"""Sets the creator_id of this ShowPreProcessRulesListResponseBodyData.
+
+        创建者id
+
+        :param creator_id: The creator_id of this ShowPreProcessRulesListResponseBodyData.
+        :type creator_id: str
+        """
+        self._creator_id = creator_id
+
+    @property
+    def creator_name(self):
+        r"""Gets the creator_name of this ShowPreProcessRulesListResponseBodyData.
+
+        创建者名称
+
+        :return: The creator_name of this ShowPreProcessRulesListResponseBodyData.
+        :rtype: str
+        """
+        return self._creator_name
+
+    @creator_name.setter
+    def creator_name(self, creator_name):
+        r"""Sets the creator_name of this ShowPreProcessRulesListResponseBodyData.
+
+        创建者名称
+
+        :param creator_name: The creator_name of this ShowPreProcessRulesListResponseBodyData.
+        :type creator_name: str
+        """
+        self._creator_name = creator_name
+
+    @property
     def expression(self):
         r"""Gets the expression of this ShowPreProcessRulesListResponseBodyData.
 
@@ -350,6 +422,50 @@ class ShowPreProcessRulesListResponseBodyData:
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def modifier_id(self):
+        r"""Gets the modifier_id of this ShowPreProcessRulesListResponseBodyData.
+
+        修改者id
+
+        :return: The modifier_id of this ShowPreProcessRulesListResponseBodyData.
+        :rtype: str
+        """
+        return self._modifier_id
+
+    @modifier_id.setter
+    def modifier_id(self, modifier_id):
+        r"""Sets the modifier_id of this ShowPreProcessRulesListResponseBodyData.
+
+        修改者id
+
+        :param modifier_id: The modifier_id of this ShowPreProcessRulesListResponseBodyData.
+        :type modifier_id: str
+        """
+        self._modifier_id = modifier_id
+
+    @property
+    def modifier_name(self):
+        r"""Gets the modifier_name of this ShowPreProcessRulesListResponseBodyData.
+
+        修改者名称
+
+        :return: The modifier_name of this ShowPreProcessRulesListResponseBodyData.
+        :rtype: str
+        """
+        return self._modifier_name
+
+    @modifier_name.setter
+    def modifier_name(self, modifier_name):
+        r"""Sets the modifier_name of this ShowPreProcessRulesListResponseBodyData.
+
+        修改者名称
+
+        :param modifier_name: The modifier_name of this ShowPreProcessRulesListResponseBodyData.
+        :type modifier_name: str
+        """
+        self._modifier_name = modifier_name
 
     def to_dict(self):
         result = {}

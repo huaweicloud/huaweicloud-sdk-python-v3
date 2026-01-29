@@ -18,7 +18,7 @@ class BindingVifDetails:
         'primary_interface': 'bool',
         'port_filter': 'bool',
         'ovs_hybrid_plug': 'bool',
-        'vlan_id': 'str',
+        'vlan_id': 'int',
         'parent_id': 'str',
         'parent_device_id': 'str'
     }
@@ -44,7 +44,7 @@ class BindingVifDetails:
         :param ovs_hybrid_plug: 是否为ovs/bridge混合模式。
         :type ovs_hybrid_plug: bool
         :param vlan_id: 辅助弹性网卡的vlan ID。
-        :type vlan_id: str
+        :type vlan_id: int
         :param parent_id: 辅助弹性网卡的宿主网卡ID。
         :type parent_id: str
         :param parent_device_id: 辅助弹性网卡的宿主网卡所属的设备ID。
@@ -147,7 +147,7 @@ class BindingVifDetails:
         辅助弹性网卡的vlan ID。
 
         :return: The vlan_id of this BindingVifDetails.
-        :rtype: str
+        :rtype: int
         """
         return self._vlan_id
 
@@ -158,7 +158,7 @@ class BindingVifDetails:
         辅助弹性网卡的vlan ID。
 
         :param vlan_id: The vlan_id of this BindingVifDetails.
-        :type vlan_id: str
+        :type vlan_id: int
         """
         self._vlan_id = vlan_id
 

@@ -25,6 +25,8 @@ class DpeInfo:
         'status': 'str',
         'complete_degree': 'str',
         'instance_num': 'str',
+        'built_in': 'str',
+        'data_source': 'str',
         'description': 'str',
         'update_time': 'str',
         'create_time': 'str',
@@ -45,6 +47,8 @@ class DpeInfo:
         'status': 'status',
         'complete_degree': 'complete_degree',
         'instance_num': 'instance_num',
+        'built_in': 'built_in',
+        'data_source': 'data_source',
         'description': 'description',
         'update_time': 'update_time',
         'create_time': 'create_time',
@@ -54,7 +58,7 @@ class DpeInfo:
         'modifier_name': 'modifier_name'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, dataclass_name=None, classifier_id=None, status=None, complete_degree=None, instance_num=None, description=None, update_time=None, create_time=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None):
+    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, dataclass_name=None, classifier_id=None, status=None, complete_degree=None, instance_num=None, built_in=None, data_source=None, description=None, update_time=None, create_time=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None):
         r"""DpeInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class DpeInfo:
         :type complete_degree: str
         :param instance_num: 关联实例数
         :type instance_num: str
+        :param built_in: 是否内置数据
+        :type built_in: str
+        :param data_source: 数据源
+        :type data_source: str
         :param description: 描述信息
         :type description: str
         :param update_time: 更新时间
@@ -107,6 +115,8 @@ class DpeInfo:
         self._status = None
         self._complete_degree = None
         self._instance_num = None
+        self._built_in = None
+        self._data_source = None
         self._description = None
         self._update_time = None
         self._create_time = None
@@ -136,6 +146,10 @@ class DpeInfo:
             self.complete_degree = complete_degree
         if instance_num is not None:
             self.instance_num = instance_num
+        if built_in is not None:
+            self.built_in = built_in
+        if data_source is not None:
+            self.data_source = data_source
         if description is not None:
             self.description = description
         if update_time is not None:
@@ -370,6 +384,50 @@ class DpeInfo:
         :type instance_num: str
         """
         self._instance_num = instance_num
+
+    @property
+    def built_in(self):
+        r"""Gets the built_in of this DpeInfo.
+
+        是否内置数据
+
+        :return: The built_in of this DpeInfo.
+        :rtype: str
+        """
+        return self._built_in
+
+    @built_in.setter
+    def built_in(self, built_in):
+        r"""Sets the built_in of this DpeInfo.
+
+        是否内置数据
+
+        :param built_in: The built_in of this DpeInfo.
+        :type built_in: str
+        """
+        self._built_in = built_in
+
+    @property
+    def data_source(self):
+        r"""Gets the data_source of this DpeInfo.
+
+        数据源
+
+        :return: The data_source of this DpeInfo.
+        :rtype: str
+        """
+        return self._data_source
+
+    @data_source.setter
+    def data_source(self, data_source):
+        r"""Sets the data_source of this DpeInfo.
+
+        数据源
+
+        :param data_source: The data_source of this DpeInfo.
+        :type data_source: str
+        """
+        self._data_source = data_source
 
     @property
     def description(self):

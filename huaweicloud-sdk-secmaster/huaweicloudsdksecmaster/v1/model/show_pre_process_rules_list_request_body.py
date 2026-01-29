@@ -68,9 +68,9 @@ class ShowPreProcessRulesListRequestBody:
 
         if mapper_ids is not None:
             self.mapper_ids = mapper_ids
-        self.name = name
-        if mapping_id is not None:
-            self.mapping_id = mapping_id
+        if name is not None:
+            self.name = name
+        self.mapping_id = mapping_id
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:

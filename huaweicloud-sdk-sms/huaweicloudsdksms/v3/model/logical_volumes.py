@@ -57,7 +57,7 @@ class LogicalVolumes:
         :type inode_size: int
         :param inode_nums: inode节点数量
         :type inode_nums: int
-        :param device_use: 分区类型，普通分区，启动分区，系统分区
+        :param device_use: 分区类型 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
         :type device_use: str
         :param mount_point: 挂载点
         :type mount_point: str
@@ -90,17 +90,24 @@ class LogicalVolumes:
             self.block_count = block_count
         if block_size is not None:
             self.block_size = block_size
-        self.file_system = file_system
-        self.inode_size = inode_size
+        if file_system is not None:
+            self.file_system = file_system
+        if inode_size is not None:
+            self.inode_size = inode_size
         if inode_nums is not None:
             self.inode_nums = inode_nums
         if device_use is not None:
             self.device_use = device_use
-        self.mount_point = mount_point
-        self.name = name
-        self.size = size
-        self.used_size = used_size
-        self.free_size = free_size
+        if mount_point is not None:
+            self.mount_point = mount_point
+        if name is not None:
+            self.name = name
+        if size is not None:
+            self.size = size
+        if used_size is not None:
+            self.used_size = used_size
+        if free_size is not None:
+            self.free_size = free_size
 
     @property
     def block_count(self):
@@ -216,7 +223,7 @@ class LogicalVolumes:
     def device_use(self):
         r"""Gets the device_use of this LogicalVolumes.
 
-        分区类型，普通分区，启动分区，系统分区
+        分区类型 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :return: The device_use of this LogicalVolumes.
         :rtype: str
@@ -227,7 +234,7 @@ class LogicalVolumes:
     def device_use(self, device_use):
         r"""Sets the device_use of this LogicalVolumes.
 
-        分区类型，普通分区，启动分区，系统分区
+        分区类型 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :param device_use: The device_use of this LogicalVolumes.
         :type device_use: str

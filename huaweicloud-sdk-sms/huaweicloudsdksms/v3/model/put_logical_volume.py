@@ -46,7 +46,8 @@ class PutLogicalVolume:
         self._adjust_size = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
         if need_migration is not None:
             self.need_migration = need_migration
         if adjust_size is not None:

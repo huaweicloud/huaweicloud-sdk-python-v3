@@ -32,7 +32,9 @@ class IndicatorDataObjectDetail:
         'status': 'str',
         'verdict': 'str',
         'workspace_id': 'str',
-        'confidence': 'int'
+        'confidence': 'int',
+        'labels': 'str',
+        'defanged': 'bool'
     }
 
     attribute_map = {
@@ -53,10 +55,12 @@ class IndicatorDataObjectDetail:
         'status': 'status',
         'verdict': 'verdict',
         'workspace_id': 'workspace_id',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'labels': 'labels',
+        'defanged': 'defanged'
     }
 
-    def __init__(self, indicator_type=None, value=None, update_time=None, create_time=None, environment=None, data_source=None, first_report_time=None, is_deleted=None, last_report_time=None, granular_marking=None, name=None, id=None, project_id=None, revoked=None, status=None, verdict=None, workspace_id=None, confidence=None):
+    def __init__(self, indicator_type=None, value=None, update_time=None, create_time=None, environment=None, data_source=None, first_report_time=None, is_deleted=None, last_report_time=None, granular_marking=None, name=None, id=None, project_id=None, revoked=None, status=None, verdict=None, workspace_id=None, confidence=None, labels=None, defanged=None):
         r"""IndicatorDataObjectDetail
 
         The model defined in huaweicloud sdk
@@ -97,6 +101,10 @@ class IndicatorDataObjectDetail:
         :type workspace_id: str
         :param confidence: 置信度，取值范围是80-100
         :type confidence: int
+        :param labels: 标签
+        :type labels: str
+        :param defanged: 是否失效
+        :type defanged: bool
         """
         
         
@@ -119,6 +127,8 @@ class IndicatorDataObjectDetail:
         self._verdict = None
         self._workspace_id = None
         self._confidence = None
+        self._labels = None
+        self._defanged = None
         self.discriminator = None
 
         if indicator_type is not None:
@@ -157,6 +167,10 @@ class IndicatorDataObjectDetail:
             self.workspace_id = workspace_id
         if confidence is not None:
             self.confidence = confidence
+        if labels is not None:
+            self.labels = labels
+        if defanged is not None:
+            self.defanged = defanged
 
     @property
     def indicator_type(self):
@@ -541,6 +555,50 @@ class IndicatorDataObjectDetail:
         :type confidence: int
         """
         self._confidence = confidence
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this IndicatorDataObjectDetail.
+
+        标签
+
+        :return: The labels of this IndicatorDataObjectDetail.
+        :rtype: str
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this IndicatorDataObjectDetail.
+
+        标签
+
+        :param labels: The labels of this IndicatorDataObjectDetail.
+        :type labels: str
+        """
+        self._labels = labels
+
+    @property
+    def defanged(self):
+        r"""Gets the defanged of this IndicatorDataObjectDetail.
+
+        是否失效
+
+        :return: The defanged of this IndicatorDataObjectDetail.
+        :rtype: bool
+        """
+        return self._defanged
+
+    @defanged.setter
+    def defanged(self, defanged):
+        r"""Sets the defanged of this IndicatorDataObjectDetail.
+
+        是否失效
+
+        :param defanged: The defanged of this IndicatorDataObjectDetail.
+        :type defanged: bool
+        """
+        self._defanged = defanged
 
     def to_dict(self):
         result = {}

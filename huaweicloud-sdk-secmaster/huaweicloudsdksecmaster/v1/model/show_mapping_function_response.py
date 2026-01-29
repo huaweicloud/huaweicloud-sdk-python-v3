@@ -16,80 +16,109 @@ class ShowMappingFunctionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'compare_list': 'list[DpeCompareFunctionDetail]',
-        'operation_list': 'list[DpeOperateFunctionDetail]'
+        'code': 'str',
+        'message': 'str',
+        'data': 'object'
     }
 
     attribute_map = {
-        'compare_list': 'compare_list',
-        'operation_list': 'operation_list'
+        'code': 'code',
+        'message': 'message',
+        'data': 'data'
     }
 
-    def __init__(self, compare_list=None, operation_list=None):
+    def __init__(self, code=None, message=None, data=None):
         r"""ShowMappingFunctionResponse
 
         The model defined in huaweicloud sdk
 
-        :param compare_list: 比较函数信息
-        :type compare_list: list[:class:`huaweicloudsdksecmaster.v1.DpeCompareFunctionDetail`]
-        :param operation_list: 操作函数信息
-        :type operation_list: list[:class:`huaweicloudsdksecmaster.v1.DpeOperateFunctionDetail`]
+        :param code: **参数解释**: 错误码 **取值范围**: 不涉及
+        :type code: str
+        :param message: **参数解释**: 错误描述 **取值范围**: 不涉及
+        :type message: str
+        :param data: 分类映射函数数据
+        :type data: object
         """
         
         super().__init__()
 
-        self._compare_list = None
-        self._operation_list = None
+        self._code = None
+        self._message = None
+        self._data = None
         self.discriminator = None
 
-        if compare_list is not None:
-            self.compare_list = compare_list
-        if operation_list is not None:
-            self.operation_list = operation_list
+        if code is not None:
+            self.code = code
+        if message is not None:
+            self.message = message
+        if data is not None:
+            self.data = data
 
     @property
-    def compare_list(self):
-        r"""Gets the compare_list of this ShowMappingFunctionResponse.
+    def code(self):
+        r"""Gets the code of this ShowMappingFunctionResponse.
 
-        比较函数信息
+        **参数解释**: 错误码 **取值范围**: 不涉及
 
-        :return: The compare_list of this ShowMappingFunctionResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v1.DpeCompareFunctionDetail`]
+        :return: The code of this ShowMappingFunctionResponse.
+        :rtype: str
         """
-        return self._compare_list
+        return self._code
 
-    @compare_list.setter
-    def compare_list(self, compare_list):
-        r"""Sets the compare_list of this ShowMappingFunctionResponse.
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ShowMappingFunctionResponse.
 
-        比较函数信息
+        **参数解释**: 错误码 **取值范围**: 不涉及
 
-        :param compare_list: The compare_list of this ShowMappingFunctionResponse.
-        :type compare_list: list[:class:`huaweicloudsdksecmaster.v1.DpeCompareFunctionDetail`]
+        :param code: The code of this ShowMappingFunctionResponse.
+        :type code: str
         """
-        self._compare_list = compare_list
+        self._code = code
 
     @property
-    def operation_list(self):
-        r"""Gets the operation_list of this ShowMappingFunctionResponse.
+    def message(self):
+        r"""Gets the message of this ShowMappingFunctionResponse.
 
-        操作函数信息
+        **参数解释**: 错误描述 **取值范围**: 不涉及
 
-        :return: The operation_list of this ShowMappingFunctionResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v1.DpeOperateFunctionDetail`]
+        :return: The message of this ShowMappingFunctionResponse.
+        :rtype: str
         """
-        return self._operation_list
+        return self._message
 
-    @operation_list.setter
-    def operation_list(self, operation_list):
-        r"""Sets the operation_list of this ShowMappingFunctionResponse.
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this ShowMappingFunctionResponse.
 
-        操作函数信息
+        **参数解释**: 错误描述 **取值范围**: 不涉及
 
-        :param operation_list: The operation_list of this ShowMappingFunctionResponse.
-        :type operation_list: list[:class:`huaweicloudsdksecmaster.v1.DpeOperateFunctionDetail`]
+        :param message: The message of this ShowMappingFunctionResponse.
+        :type message: str
         """
-        self._operation_list = operation_list
+        self._message = message
+
+    @property
+    def data(self):
+        r"""Gets the data of this ShowMappingFunctionResponse.
+
+        分类映射函数数据
+
+        :return: The data of this ShowMappingFunctionResponse.
+        :rtype: object
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ShowMappingFunctionResponse.
+
+        分类映射函数数据
+
+        :param data: The data of this ShowMappingFunctionResponse.
+        :type data: object
+        """
+        self._data = data
 
     def to_dict(self):
         import warnings

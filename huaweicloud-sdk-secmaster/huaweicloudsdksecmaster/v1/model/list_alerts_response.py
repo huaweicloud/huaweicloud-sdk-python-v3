@@ -19,8 +19,8 @@ class ListAlertsResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'total': 'int',
-        'limit': 'int',
-        'offset': 'int',
+        'size': 'int',
+        'page': 'int',
         'success': 'bool',
         'data': 'list[ListAlertDetail]',
         'x_request_id': 'str'
@@ -30,14 +30,14 @@ class ListAlertsResponse(SdkResponse):
         'code': 'code',
         'message': 'message',
         'total': 'total',
-        'limit': 'limit',
-        'offset': 'offset',
+        'size': 'size',
+        'page': 'page',
         'success': 'success',
         'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, code=None, message=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
+    def __init__(self, code=None, message=None, total=None, size=None, page=None, success=None, data=None, x_request_id=None):
         r"""ListAlertsResponse
 
         The model defined in huaweicloud sdk
@@ -48,10 +48,10 @@ class ListAlertsResponse(SdkResponse):
         :type message: str
         :param total: 告警总数
         :type total: int
-        :param limit: 分页大小
-        :type limit: int
-        :param offset: 偏移量
-        :type offset: int
+        :param size: 分页大小
+        :type size: int
+        :param page: 分页的页码
+        :type page: int
         :param success: 是否成功
         :type success: bool
         :param data: 告警列表
@@ -65,8 +65,8 @@ class ListAlertsResponse(SdkResponse):
         self._code = None
         self._message = None
         self._total = None
-        self._limit = None
-        self._offset = None
+        self._size = None
+        self._page = None
         self._success = None
         self._data = None
         self._x_request_id = None
@@ -78,10 +78,10 @@ class ListAlertsResponse(SdkResponse):
             self.message = message
         if total is not None:
             self.total = total
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
+        if size is not None:
+            self.size = size
+        if page is not None:
+            self.page = page
         if success is not None:
             self.success = success
         if data is not None:
@@ -156,48 +156,48 @@ class ListAlertsResponse(SdkResponse):
         self._total = total
 
     @property
-    def limit(self):
-        r"""Gets the limit of this ListAlertsResponse.
+    def size(self):
+        r"""Gets the size of this ListAlertsResponse.
 
         分页大小
 
-        :return: The limit of this ListAlertsResponse.
+        :return: The size of this ListAlertsResponse.
         :rtype: int
         """
-        return self._limit
+        return self._size
 
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ListAlertsResponse.
+    @size.setter
+    def size(self, size):
+        r"""Sets the size of this ListAlertsResponse.
 
         分页大小
 
-        :param limit: The limit of this ListAlertsResponse.
-        :type limit: int
+        :param size: The size of this ListAlertsResponse.
+        :type size: int
         """
-        self._limit = limit
+        self._size = size
 
     @property
-    def offset(self):
-        r"""Gets the offset of this ListAlertsResponse.
+    def page(self):
+        r"""Gets the page of this ListAlertsResponse.
 
-        偏移量
+        分页的页码
 
-        :return: The offset of this ListAlertsResponse.
+        :return: The page of this ListAlertsResponse.
         :rtype: int
         """
-        return self._offset
+        return self._page
 
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ListAlertsResponse.
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListAlertsResponse.
 
-        偏移量
+        分页的页码
 
-        :param offset: The offset of this ListAlertsResponse.
-        :type offset: int
+        :param page: The page of this ListAlertsResponse.
+        :type page: int
         """
-        self._offset = offset
+        self._page = page
 
     @property
     def success(self):

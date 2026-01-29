@@ -29,7 +29,7 @@ class AlertSeverities:
 
         The model defined in huaweicloud sdk
 
-        :param severity_category: **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及  
+        :param severity_category: **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及
         :type severity_category: str
         :param metric: 
         :type metric: :class:`huaweicloudsdksecmaster.v2.MetricMap`
@@ -50,7 +50,7 @@ class AlertSeverities:
     def severity_category(self):
         r"""Gets the severity_category of this AlertSeverities.
 
-        **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及  
+        **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及
 
         :return: The severity_category of this AlertSeverities.
         :rtype: str
@@ -61,7 +61,7 @@ class AlertSeverities:
     def severity_category(self, severity_category):
         r"""Sets the severity_category of this AlertSeverities.
 
-        **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及  
+        **参数解释**: 目录 - SEVERITY 严重性  **约束限制** 不涉及 **取值范围**: - SEVERITY  **默认值** 不涉及
 
         :param severity_category: The severity_category of this AlertSeverities.
         :type severity_category: str

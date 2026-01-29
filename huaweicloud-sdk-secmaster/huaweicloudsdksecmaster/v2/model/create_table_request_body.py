@@ -67,9 +67,9 @@ class CreateTableRequestBody:
         :type table_alias_en: str
         :param table_alias_fr: 表别名
         :type table_alias_fr: str
-        :param category: **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及    
+        :param category: **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及
         :type category: str
-        :param format: **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及            
+        :param format: **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及
         :type format: str
         :param description: 表相关描述
         :type description: str
@@ -91,7 +91,7 @@ class CreateTableRequestBody:
         :type storage_setting: :class:`huaweicloudsdksecmaster.v2.TableStorageSetting`
         :param display_setting: 
         :type display_setting: :class:`huaweicloudsdksecmaster.v2.TableDisplaySetting`
-        :param create_policy: **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及            
+        :param create_policy: **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及
         :type create_policy: str
         """
         
@@ -236,7 +236,7 @@ class CreateTableRequestBody:
     def category(self):
         r"""Gets the category of this CreateTableRequestBody.
 
-        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及    
+        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及
 
         :return: The category of this CreateTableRequestBody.
         :rtype: str
@@ -247,7 +247,7 @@ class CreateTableRequestBody:
     def category(self, category):
         r"""Sets the category of this CreateTableRequestBody.
 
-        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及    
+        **参数解释**: 目录类型 - STREAMING 实时流 - INDEX 索引 - APPLICATION 应用 - TENANT_BUCKET 租户桶 - LAKE 数据湖  **约束限制** 不涉及 **取值范围**: - STREAMING - INDEX - APPLICATION - TENANT_BUCKET - LAKE  **默认值** 不涉及
 
         :param category: The category of this CreateTableRequestBody.
         :type category: str
@@ -258,7 +258,7 @@ class CreateTableRequestBody:
     def format(self):
         r"""Gets the format of this CreateTableRequestBody.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及            
+        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及
 
         :return: The format of this CreateTableRequestBody.
         :rtype: str
@@ -269,7 +269,7 @@ class CreateTableRequestBody:
     def format(self, format):
         r"""Sets the format of this CreateTableRequestBody.
 
-        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及            
+        **参数解释**: 表格式 - JSON Json格式 - DEBEZIUM_JSON Debezium JSON 格式 - CSV CSV格式 - PARQUET PARQUET格式 - ORC ORC格式  **约束限制** 不涉及 **取值范围**: - JSON - DEBEZIUM_JSON - CSV - PARQUET - ORC  **默认值** 不涉及
 
         :param format: The format of this CreateTableRequestBody.
         :type format: str
@@ -484,7 +484,7 @@ class CreateTableRequestBody:
     def create_policy(self):
         r"""Gets the create_policy of this CreateTableRequestBody.
 
-        **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及            
+        **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及
 
         :return: The create_policy of this CreateTableRequestBody.
         :rtype: str
@@ -495,7 +495,7 @@ class CreateTableRequestBody:
     def create_policy(self, create_policy):
         r"""Sets the create_policy of this CreateTableRequestBody.
 
-        **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及            
+        **参数解释**: 创建政策 - SYS_INIT_INDEX_APP_TBL 系统初始化索引应用表 - DEFAULT 默认  **约束限制** 不涉及 **取值范围**: - SYS_INIT_INDEX_APP_TBL - DEFAULT  **默认值** 不涉及
 
         :param create_policy: The create_policy of this CreateTableRequestBody.
         :type create_policy: str

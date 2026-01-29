@@ -45,9 +45,9 @@ class ServerDisk:
 
         :param name: 磁盘名称
         :type name: str
-        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
+        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选，否则无法通过后续环境检查 （非枚举数据，来源于EVS服务） 常见类型如：MBR：主启动记录分区，GPT：Guid Partition Table，全局分区表。 详细类型请参考EVS服务API文档中“MBR和GPT分区形式有何区别”部分描述
         :type partition_style: str
-        :param device_use: 磁盘类型 BOOT：BOOT设备 OS：系统设备
+        :param device_use: 磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
         :type device_use: str
         :param size: 磁盘总大小，以字节为单位
         :type size: int
@@ -76,13 +76,18 @@ class ServerDisk:
         self._inode_size = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         if partition_style is not None:
             self.partition_style = partition_style
-        self.device_use = device_use
-        self.size = size
-        self.used_size = used_size
-        self.physical_volumes = physical_volumes
+        if device_use is not None:
+            self.device_use = device_use
+        if size is not None:
+            self.size = size
+        if used_size is not None:
+            self.used_size = used_size
+        if physical_volumes is not None:
+            self.physical_volumes = physical_volumes
         if os_disk is not None:
             self.os_disk = os_disk
         if relation_name is not None:
@@ -116,7 +121,7 @@ class ServerDisk:
     def partition_style(self):
         r"""Gets the partition_style of this ServerDisk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
+        磁盘的分区类型，添加源端时源端磁盘必选，否则无法通过后续环境检查 （非枚举数据，来源于EVS服务） 常见类型如：MBR：主启动记录分区，GPT：Guid Partition Table，全局分区表。 详细类型请参考EVS服务API文档中“MBR和GPT分区形式有何区别”部分描述
 
         :return: The partition_style of this ServerDisk.
         :rtype: str
@@ -127,7 +132,7 @@ class ServerDisk:
     def partition_style(self, partition_style):
         r"""Sets the partition_style of this ServerDisk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
+        磁盘的分区类型，添加源端时源端磁盘必选，否则无法通过后续环境检查 （非枚举数据，来源于EVS服务） 常见类型如：MBR：主启动记录分区，GPT：Guid Partition Table，全局分区表。 详细类型请参考EVS服务API文档中“MBR和GPT分区形式有何区别”部分描述
 
         :param partition_style: The partition_style of this ServerDisk.
         :type partition_style: str
@@ -138,7 +143,7 @@ class ServerDisk:
     def device_use(self):
         r"""Gets the device_use of this ServerDisk.
 
-        磁盘类型 BOOT：BOOT设备 OS：系统设备
+        磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :return: The device_use of this ServerDisk.
         :rtype: str
@@ -149,7 +154,7 @@ class ServerDisk:
     def device_use(self, device_use):
         r"""Sets the device_use of this ServerDisk.
 
-        磁盘类型 BOOT：BOOT设备 OS：系统设备
+        磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :param device_use: The device_use of this ServerDisk.
         :type device_use: str

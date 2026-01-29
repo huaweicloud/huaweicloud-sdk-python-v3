@@ -21,7 +21,7 @@ class ListAlertRsp:
         'region_id': 'str',
         'workspace_id': 'str',
         'labels': 'str',
-        'environment': 'AlertEnvironment',
+        'environment': 'ListAlertRspEnvironment',
         'data_source': 'AlertDataSource',
         'first_observed_time': 'str',
         'last_observed_time': 'str',
@@ -134,7 +134,7 @@ class ListAlertRsp:
         :param labels: 标签，仅展示
         :type labels: str
         :param environment: 
-        :type environment: :class:`huaweicloudsdksecmaster.v1.AlertEnvironment`
+        :type environment: :class:`huaweicloudsdksecmaster.v1.ListAlertRspEnvironment`
         :param data_source: 
         :type data_source: :class:`huaweicloudsdksecmaster.v1.AlertDataSource`
         :param first_observed_time: 首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
@@ -505,7 +505,7 @@ class ListAlertRsp:
         r"""Gets the environment of this ListAlertRsp.
 
         :return: The environment of this ListAlertRsp.
-        :rtype: :class:`huaweicloudsdksecmaster.v1.AlertEnvironment`
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ListAlertRspEnvironment`
         """
         return self._environment
 
@@ -514,7 +514,7 @@ class ListAlertRsp:
         r"""Sets the environment of this ListAlertRsp.
 
         :param environment: The environment of this ListAlertRsp.
-        :type environment: :class:`huaweicloudsdksecmaster.v1.AlertEnvironment`
+        :type environment: :class:`huaweicloudsdksecmaster.v1.ListAlertRspEnvironment`
         """
         self._environment = environment
 

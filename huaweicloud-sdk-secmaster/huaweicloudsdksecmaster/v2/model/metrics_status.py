@@ -29,7 +29,7 @@ class MetricsStatus:
 
         The model defined in huaweicloud sdk
 
-        :param metrics_category: **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及  
+        :param metrics_category: **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及
         :type metrics_category: str
         :param status_metric: 
         :type status_metric: :class:`huaweicloudsdksecmaster.v2.StatusMetric`
@@ -50,7 +50,7 @@ class MetricsStatus:
     def metrics_category(self):
         r"""Gets the metrics_category of this MetricsStatus.
 
-        **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及  
+        **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及
 
         :return: The metrics_category of this MetricsStatus.
         :rtype: str
@@ -61,7 +61,7 @@ class MetricsStatus:
     def metrics_category(self, metrics_category):
         r"""Sets the metrics_category of this MetricsStatus.
 
-        **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及  
+        **参数解释**: 目录指标 - STATUS 状态  **约束限制** 不涉及 **取值范围**: - STATUS  **默认值** 不涉及
 
         :param metrics_category: The metrics_category of this MetricsStatus.
         :type metrics_category: str

@@ -18,22 +18,22 @@ class ShowMappingInfoListResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
+        'size': 'int',
+        'page': 'int',
         'total': 'int',
-        'offset': 'int',
-        'limit': 'int',
         'data': 'list[DpeInfo]'
     }
 
     attribute_map = {
         'code': 'code',
         'message': 'message',
+        'size': 'size',
+        'page': 'page',
         'total': 'total',
-        'offset': 'offset',
-        'limit': 'limit',
         'data': 'data'
     }
 
-    def __init__(self, code=None, message=None, total=None, offset=None, limit=None, data=None):
+    def __init__(self, code=None, message=None, size=None, page=None, total=None, data=None):
         r"""ShowMappingInfoListResponse
 
         The model defined in huaweicloud sdk
@@ -42,12 +42,12 @@ class ShowMappingInfoListResponse(SdkResponse):
         :type code: str
         :param message: **参数解释**: 错误描述 **取值范围**: 不涉及
         :type message: str
+        :param size: 分页查询数据大小
+        :type size: int
+        :param page: 当前页码
+        :type page: int
         :param total: 总数
         :type total: int
-        :param offset: **参数解释：** 偏移量 **约束限制：** 0-10000 **取值范围：** 不涉及 **默认取值：** 0
-        :type offset: int
-        :param limit: **参数解释**: 当前页码 **约束限制**: 不涉及
-        :type limit: int
         :param data: 分类映射信息集合
         :type data: list[:class:`huaweicloudsdksecmaster.v1.DpeInfo`]
         """
@@ -56,9 +56,9 @@ class ShowMappingInfoListResponse(SdkResponse):
 
         self._code = None
         self._message = None
+        self._size = None
+        self._page = None
         self._total = None
-        self._offset = None
-        self._limit = None
         self._data = None
         self.discriminator = None
 
@@ -66,12 +66,12 @@ class ShowMappingInfoListResponse(SdkResponse):
             self.code = code
         if message is not None:
             self.message = message
+        if size is not None:
+            self.size = size
+        if page is not None:
+            self.page = page
         if total is not None:
             self.total = total
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
         if data is not None:
             self.data = data
 
@@ -120,6 +120,50 @@ class ShowMappingInfoListResponse(SdkResponse):
         self._message = message
 
     @property
+    def size(self):
+        r"""Gets the size of this ShowMappingInfoListResponse.
+
+        分页查询数据大小
+
+        :return: The size of this ShowMappingInfoListResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        r"""Sets the size of this ShowMappingInfoListResponse.
+
+        分页查询数据大小
+
+        :param size: The size of this ShowMappingInfoListResponse.
+        :type size: int
+        """
+        self._size = size
+
+    @property
+    def page(self):
+        r"""Gets the page of this ShowMappingInfoListResponse.
+
+        当前页码
+
+        :return: The page of this ShowMappingInfoListResponse.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ShowMappingInfoListResponse.
+
+        当前页码
+
+        :param page: The page of this ShowMappingInfoListResponse.
+        :type page: int
+        """
+        self._page = page
+
+    @property
     def total(self):
         r"""Gets the total of this ShowMappingInfoListResponse.
 
@@ -140,50 +184,6 @@ class ShowMappingInfoListResponse(SdkResponse):
         :type total: int
         """
         self._total = total
-
-    @property
-    def offset(self):
-        r"""Gets the offset of this ShowMappingInfoListResponse.
-
-        **参数解释：** 偏移量 **约束限制：** 0-10000 **取值范围：** 不涉及 **默认取值：** 0
-
-        :return: The offset of this ShowMappingInfoListResponse.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ShowMappingInfoListResponse.
-
-        **参数解释：** 偏移量 **约束限制：** 0-10000 **取值范围：** 不涉及 **默认取值：** 0
-
-        :param offset: The offset of this ShowMappingInfoListResponse.
-        :type offset: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        r"""Gets the limit of this ShowMappingInfoListResponse.
-
-        **参数解释**: 当前页码 **约束限制**: 不涉及
-
-        :return: The limit of this ShowMappingInfoListResponse.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ShowMappingInfoListResponse.
-
-        **参数解释**: 当前页码 **约束限制**: 不涉及
-
-        :param limit: The limit of this ShowMappingInfoListResponse.
-        :type limit: int
-        """
-        self._limit = limit
 
     @property
     def data(self):

@@ -29,6 +29,7 @@ class PostTask:
         'project_id': 'str',
         'priority': 'int',
         'vm_template_id': 'str',
+        'clonevm_template_id': 'str',
         'use_public_ip': 'bool',
         'use_ipv6': 'bool',
         'syncing': 'bool',
@@ -55,6 +56,7 @@ class PostTask:
         'project_id': 'project_id',
         'priority': 'priority',
         'vm_template_id': 'vm_template_id',
+        'clonevm_template_id': 'clonevm_template_id',
         'use_public_ip': 'use_public_ip',
         'use_ipv6': 'use_ipv6',
         'syncing': 'syncing',
@@ -66,12 +68,12 @@ class PostTask:
         'need_migration_test': 'need_migration_test'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None, need_migration_test=None):
+    def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, clonevm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None, need_migration_test=None):
         r"""PostTask
 
         The model defined in huaweicloud sdk
 
-        :param name: 任务名称
+        :param name: 任务名称，只能由中文字符、英文字母、数字、下划线、短横线组成
         :type name: str
         :param type: 任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
         :type type: str
@@ -85,7 +87,7 @@ class PostTask:
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`
-        :param migration_ip: 迁移IP，如果是自动创建虚拟机，不需要此参数
+        :param migration_ip: 迁移IP，如果是自动创建虚拟机，不需要此参数。 use_ipv6是false时，migration_ip应满足ipv4的格式标准；use_ipv6是true时，migration_ip应满足ipv6的格式标准。
         :type migration_ip: str
         :param region_name: region的名称
         :type region_name: str
@@ -99,6 +101,8 @@ class PostTask:
         :type priority: int
         :param vm_template_id: 自动创建虚拟机使用模板
         :type vm_template_id: str
+        :param clonevm_template_id: 克隆服务器模板ID
+        :type clonevm_template_id: str
         :param use_public_ip: 是否使用公网ip
         :type use_public_ip: bool
         :param use_ipv6: 是否使用ipv6
@@ -135,6 +139,7 @@ class PostTask:
         self._project_id = None
         self._priority = None
         self._vm_template_id = None
+        self._clonevm_template_id = None
         self._use_public_ip = None
         self._use_ipv6 = None
         self._syncing = None
@@ -152,7 +157,8 @@ class PostTask:
             self.start_target_server = start_target_server
         if auto_start is not None:
             self.auto_start = auto_start
-        self.os_type = os_type
+        if os_type is not None:
+            self.os_type = os_type
         self.source_server = source_server
         self.target_server = target_server
         if migration_ip is not None:
@@ -165,6 +171,8 @@ class PostTask:
             self.priority = priority
         if vm_template_id is not None:
             self.vm_template_id = vm_template_id
+        if clonevm_template_id is not None:
+            self.clonevm_template_id = clonevm_template_id
         if use_public_ip is not None:
             self.use_public_ip = use_public_ip
         if use_ipv6 is not None:
@@ -188,7 +196,7 @@ class PostTask:
     def name(self):
         r"""Gets the name of this PostTask.
 
-        任务名称
+        任务名称，只能由中文字符、英文字母、数字、下划线、短横线组成
 
         :return: The name of this PostTask.
         :rtype: str
@@ -199,7 +207,7 @@ class PostTask:
     def name(self, name):
         r"""Sets the name of this PostTask.
 
-        任务名称
+        任务名称，只能由中文字符、英文字母、数字、下划线、短横线组成
 
         :param name: The name of this PostTask.
         :type name: str
@@ -334,7 +342,7 @@ class PostTask:
     def migration_ip(self):
         r"""Gets the migration_ip of this PostTask.
 
-        迁移IP，如果是自动创建虚拟机，不需要此参数
+        迁移IP，如果是自动创建虚拟机，不需要此参数。 use_ipv6是false时，migration_ip应满足ipv4的格式标准；use_ipv6是true时，migration_ip应满足ipv6的格式标准。
 
         :return: The migration_ip of this PostTask.
         :rtype: str
@@ -345,7 +353,7 @@ class PostTask:
     def migration_ip(self, migration_ip):
         r"""Sets the migration_ip of this PostTask.
 
-        迁移IP，如果是自动创建虚拟机，不需要此参数
+        迁移IP，如果是自动创建虚拟机，不需要此参数。 use_ipv6是false时，migration_ip应满足ipv4的格式标准；use_ipv6是true时，migration_ip应满足ipv6的格式标准。
 
         :param migration_ip: The migration_ip of this PostTask.
         :type migration_ip: str
@@ -483,6 +491,28 @@ class PostTask:
         :type vm_template_id: str
         """
         self._vm_template_id = vm_template_id
+
+    @property
+    def clonevm_template_id(self):
+        r"""Gets the clonevm_template_id of this PostTask.
+
+        克隆服务器模板ID
+
+        :return: The clonevm_template_id of this PostTask.
+        :rtype: str
+        """
+        return self._clonevm_template_id
+
+    @clonevm_template_id.setter
+    def clonevm_template_id(self, clonevm_template_id):
+        r"""Sets the clonevm_template_id of this PostTask.
+
+        克隆服务器模板ID
+
+        :param clonevm_template_id: The clonevm_template_id of this PostTask.
+        :type clonevm_template_id: str
+        """
+        self._clonevm_template_id = clonevm_template_id
 
     @property
     def use_public_ip(self):

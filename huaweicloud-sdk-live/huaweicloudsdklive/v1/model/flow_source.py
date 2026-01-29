@@ -23,7 +23,8 @@ class FlowSource:
         'description': 'str',
         'protocol': 'str',
         'name': 'str',
-        'decryption': 'FlowSourceDecryption'
+        'decryption': 'FlowSourceDecryption',
+        'health_status': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class FlowSource:
         'description': 'description',
         'protocol': 'protocol',
         'name': 'name',
-        'decryption': 'decryption'
+        'decryption': 'decryption',
+        'health_status': 'health_status'
     }
 
-    def __init__(self, source_listener_address=None, source_listener_port=None, stream_id=None, min_latency=None, cidr_whitelist=None, description=None, protocol=None, name=None, decryption=None):
+    def __init__(self, source_listener_address=None, source_listener_port=None, stream_id=None, min_latency=None, cidr_whitelist=None, description=None, protocol=None, name=None, decryption=None, health_status=None):
         r"""FlowSource
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class FlowSource:
         :type name: str
         :param decryption: 
         :type decryption: :class:`huaweicloudsdklive.v1.FlowSourceDecryption`
+        :param health_status: **参数解释**： 转推流状态 **约束限制**： 不涉及 **取值范围**： - CONNECTED：转推中 - DISCONNECTED：转推中断 
+        :type health_status: str
         """
         
         
@@ -74,6 +78,7 @@ class FlowSource:
         self._protocol = None
         self._name = None
         self._decryption = None
+        self._health_status = None
         self.discriminator = None
 
         if source_listener_address is not None:
@@ -92,6 +97,8 @@ class FlowSource:
         self.name = name
         if decryption is not None:
             self.decryption = decryption
+        if health_status is not None:
+            self.health_status = health_status
 
     @property
     def source_listener_address(self):
@@ -286,6 +293,28 @@ class FlowSource:
         :type decryption: :class:`huaweicloudsdklive.v1.FlowSourceDecryption`
         """
         self._decryption = decryption
+
+    @property
+    def health_status(self):
+        r"""Gets the health_status of this FlowSource.
+
+        **参数解释**： 转推流状态 **约束限制**： 不涉及 **取值范围**： - CONNECTED：转推中 - DISCONNECTED：转推中断 
+
+        :return: The health_status of this FlowSource.
+        :rtype: str
+        """
+        return self._health_status
+
+    @health_status.setter
+    def health_status(self, health_status):
+        r"""Sets the health_status of this FlowSource.
+
+        **参数解释**： 转推流状态 **约束限制**： 不涉及 **取值范围**： - CONNECTED：转推中 - DISCONNECTED：转推中断 
+
+        :param health_status: The health_status of this FlowSource.
+        :type health_status: str
+        """
+        self._health_status = health_status
 
     def to_dict(self):
         result = {}

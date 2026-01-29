@@ -45,9 +45,9 @@ class CreateWorkspaceRequestBody:
 
         :param region_id: 区域id
         :type region_id: str
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: enterprise project id
         :type enterprise_project_id: str
-        :param enterprise_project_name: 企业项目名称
+        :param enterprise_project_name: enterprise project name
         :type enterprise_project_name: str
         :param view_bind_id: 视图绑定的空间id
         :type view_bind_id: str
@@ -118,7 +118,7 @@ class CreateWorkspaceRequestBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateWorkspaceRequestBody.
 
-        企业项目id
+        enterprise project id
 
         :return: The enterprise_project_id of this CreateWorkspaceRequestBody.
         :rtype: str
@@ -129,7 +129,7 @@ class CreateWorkspaceRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateWorkspaceRequestBody.
 
-        企业项目id
+        enterprise project id
 
         :param enterprise_project_id: The enterprise_project_id of this CreateWorkspaceRequestBody.
         :type enterprise_project_id: str
@@ -140,7 +140,7 @@ class CreateWorkspaceRequestBody:
     def enterprise_project_name(self):
         r"""Gets the enterprise_project_name of this CreateWorkspaceRequestBody.
 
-        企业项目名称
+        enterprise project name
 
         :return: The enterprise_project_name of this CreateWorkspaceRequestBody.
         :rtype: str
@@ -151,7 +151,7 @@ class CreateWorkspaceRequestBody:
     def enterprise_project_name(self, enterprise_project_name):
         r"""Sets the enterprise_project_name of this CreateWorkspaceRequestBody.
 
-        企业项目名称
+        enterprise project name
 
         :param enterprise_project_name: The enterprise_project_name of this CreateWorkspaceRequestBody.
         :type enterprise_project_name: str

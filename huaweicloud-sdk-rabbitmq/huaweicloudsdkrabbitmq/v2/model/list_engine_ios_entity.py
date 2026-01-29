@@ -33,7 +33,7 @@ class ListEngineIosEntity:
 
         The model defined in huaweicloud sdk
 
-        :param io_spec: **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
+        :param io_spec: **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt)
         :type io_spec: str
         :param type: **参数解释**： 服务类型。 **取值范围**： evs。
         :type type: str
@@ -64,7 +64,7 @@ class ListEngineIosEntity:
     def io_spec(self):
         r"""Gets the io_spec of this ListEngineIosEntity.
 
-        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
+        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt)
 
         :return: The io_spec of this ListEngineIosEntity.
         :rtype: str
@@ -75,7 +75,7 @@ class ListEngineIosEntity:
     def io_spec(self, io_spec):
         r"""Sets the io_spec of this ListEngineIosEntity.
 
-        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax)
+        **参数解释**： 存储类型规格编码。 **取值范围**： - dms.physical.storage.high.v2：高IO类型磁盘。 - dms.physical.storage.ultra.v2：超高IO类型磁盘。 [- dms.physical.storage.general：使用通用型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt) [- dms.physical.storage.extreme：使用极速型SSD的磁盘类型。](tag:hws,hws_hk,ax,dt)
 
         :param io_spec: The io_spec of this ListEngineIosEntity.
         :type io_spec: str

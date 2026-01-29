@@ -41,7 +41,7 @@ class BatchSearchMetricHitsRequest:
         :type workspace_id: str
         :param timespan: 查询指标的时间范围，ISO8601格式，例如：2007-03-01T13:00:00Z/2008-05-11T15:30:00Z或2007-03-01T13:00:00Z/P1Y2M10DT2H30M或P1Y2M10DT2H30M/2008-05-11T15:30:00Z
         :type timespan: str
-        :param cache: 是否启用缓存，默认true, 禁用缓存 false
+        :param cache: 是否启用缓存，默认true，禁用缓存 false
         :type cache: bool
         :param body: Body of the BatchSearchMetricHitsRequest
         :type body: :class:`huaweicloudsdksecmaster.v1.BatchSearchMetricHitsRequestBody`
@@ -135,7 +135,7 @@ class BatchSearchMetricHitsRequest:
     def cache(self):
         r"""Gets the cache of this BatchSearchMetricHitsRequest.
 
-        是否启用缓存，默认true, 禁用缓存 false
+        是否启用缓存，默认true，禁用缓存 false
 
         :return: The cache of this BatchSearchMetricHitsRequest.
         :rtype: bool
@@ -146,7 +146,7 @@ class BatchSearchMetricHitsRequest:
     def cache(self, cache):
         r"""Sets the cache of this BatchSearchMetricHitsRequest.
 
-        是否启用缓存，默认true, 禁用缓存 false
+        是否启用缓存，默认true，禁用缓存 false
 
         :param cache: The cache of this BatchSearchMetricHitsRequest.
         :type cache: bool

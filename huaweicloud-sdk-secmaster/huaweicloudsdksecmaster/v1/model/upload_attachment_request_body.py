@@ -31,7 +31,7 @@ class UploadAttachmentRequestBody:
 
         :param file_type: 固定枚举，当前仅支持user_task/用户任务
         :type file_type: str
-        :param upload_file: 导入的流程文件
+        :param upload_file: 上传的附件
         :type upload_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -71,7 +71,7 @@ class UploadAttachmentRequestBody:
     def upload_file(self):
         r"""Gets the upload_file of this UploadAttachmentRequestBody.
 
-        导入的流程文件
+        上传的附件
 
         :return: The upload_file of this UploadAttachmentRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -82,7 +82,7 @@ class UploadAttachmentRequestBody:
     def upload_file(self, upload_file):
         r"""Sets the upload_file of this UploadAttachmentRequestBody.
 
-        导入的流程文件
+        上传的附件
 
         :param upload_file: The upload_file of this UploadAttachmentRequestBody.
         :type upload_file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

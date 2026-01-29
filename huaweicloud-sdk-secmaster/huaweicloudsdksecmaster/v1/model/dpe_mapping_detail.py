@@ -22,7 +22,8 @@ class DpeMappingDetail:
         'dataclass_id': 'str',
         'dataclass_name': 'str',
         'mapper_type_id': 'str',
-        'dpe_info': 'DpeInfo',
+        'mapping_id': 'str',
+        'mapping_info': 'DpeInfo',
         'create_time': 'str',
         'creator_id': 'str',
         'creator_name': 'str',
@@ -40,7 +41,8 @@ class DpeMappingDetail:
         'dataclass_id': 'dataclass_id',
         'dataclass_name': 'dataclass_name',
         'mapper_type_id': 'mapper_type_id',
-        'dpe_info': 'dpe_info',
+        'mapping_id': 'mapping_id',
+        'mapping_info': 'mapping_info',
         'create_time': 'create_time',
         'creator_id': 'creator_id',
         'creator_name': 'creator_name',
@@ -50,7 +52,7 @@ class DpeMappingDetail:
         'mapper_field_list': 'mapper_field_list'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, dataclass_name=None, mapper_type_id=None, dpe_info=None, create_time=None, creator_id=None, creator_name=None, update_time=None, modifier_id=None, modifier_name=None, mapper_field_list=None):
+    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, dataclass_name=None, mapper_type_id=None, mapping_id=None, mapping_info=None, create_time=None, creator_id=None, creator_name=None, update_time=None, modifier_id=None, modifier_name=None, mapper_field_list=None):
         r"""DpeMappingDetail
 
         The model defined in huaweicloud sdk
@@ -69,8 +71,10 @@ class DpeMappingDetail:
         :type dataclass_name: str
         :param mapper_type_id: 映射id
         :type mapper_type_id: str
-        :param dpe_info: 
-        :type dpe_info: :class:`huaweicloudsdksecmaster.v1.DpeInfo`
+        :param mapping_id: 映射id
+        :type mapping_id: str
+        :param mapping_info: 
+        :type mapping_info: :class:`huaweicloudsdksecmaster.v1.DpeInfo`
         :param create_time: 创建时间
         :type create_time: str
         :param creator_id: 创建者id
@@ -96,7 +100,8 @@ class DpeMappingDetail:
         self._dataclass_id = None
         self._dataclass_name = None
         self._mapper_type_id = None
-        self._dpe_info = None
+        self._mapping_id = None
+        self._mapping_info = None
         self._create_time = None
         self._creator_id = None
         self._creator_name = None
@@ -120,8 +125,10 @@ class DpeMappingDetail:
             self.dataclass_name = dataclass_name
         if mapper_type_id is not None:
             self.mapper_type_id = mapper_type_id
-        if dpe_info is not None:
-            self.dpe_info = dpe_info
+        if mapping_id is not None:
+            self.mapping_id = mapping_id
+        if mapping_info is not None:
+            self.mapping_info = mapping_info
         if create_time is not None:
             self.create_time = create_time
         if creator_id is not None:
@@ -292,22 +299,44 @@ class DpeMappingDetail:
         self._mapper_type_id = mapper_type_id
 
     @property
-    def dpe_info(self):
-        r"""Gets the dpe_info of this DpeMappingDetail.
+    def mapping_id(self):
+        r"""Gets the mapping_id of this DpeMappingDetail.
 
-        :return: The dpe_info of this DpeMappingDetail.
+        映射id
+
+        :return: The mapping_id of this DpeMappingDetail.
+        :rtype: str
+        """
+        return self._mapping_id
+
+    @mapping_id.setter
+    def mapping_id(self, mapping_id):
+        r"""Sets the mapping_id of this DpeMappingDetail.
+
+        映射id
+
+        :param mapping_id: The mapping_id of this DpeMappingDetail.
+        :type mapping_id: str
+        """
+        self._mapping_id = mapping_id
+
+    @property
+    def mapping_info(self):
+        r"""Gets the mapping_info of this DpeMappingDetail.
+
+        :return: The mapping_info of this DpeMappingDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v1.DpeInfo`
         """
-        return self._dpe_info
+        return self._mapping_info
 
-    @dpe_info.setter
-    def dpe_info(self, dpe_info):
-        r"""Sets the dpe_info of this DpeMappingDetail.
+    @mapping_info.setter
+    def mapping_info(self, mapping_info):
+        r"""Sets the mapping_info of this DpeMappingDetail.
 
-        :param dpe_info: The dpe_info of this DpeMappingDetail.
-        :type dpe_info: :class:`huaweicloudsdksecmaster.v1.DpeInfo`
+        :param mapping_info: The mapping_info of this DpeMappingDetail.
+        :type mapping_info: :class:`huaweicloudsdksecmaster.v1.DpeInfo`
         """
-        self._dpe_info = dpe_info
+        self._mapping_info = mapping_info
 
     @property
     def create_time(self):

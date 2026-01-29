@@ -16,47 +16,105 @@ class ChangeResourceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data_object': 'ResourceDetail'
+        'code': 'str',
+        'message': 'str',
+        'data': 'ChangeResourceRequestBody'
     }
 
     attribute_map = {
-        'data_object': 'data_object'
+        'code': 'code',
+        'message': 'message',
+        'data': 'data'
     }
 
-    def __init__(self, data_object=None):
+    def __init__(self, code=None, message=None, data=None):
         r"""ChangeResourceResponse
 
         The model defined in huaweicloud sdk
 
-        :param data_object: 
-        :type data_object: :class:`huaweicloudsdksecmaster.v1.ResourceDetail`
+        :param code: 错误码
+        :type code: str
+        :param message: 错误信息
+        :type message: str
+        :param data: 
+        :type data: :class:`huaweicloudsdksecmaster.v1.ChangeResourceRequestBody`
         """
         
         super().__init__()
 
-        self._data_object = None
+        self._code = None
+        self._message = None
+        self._data = None
         self.discriminator = None
 
-        if data_object is not None:
-            self.data_object = data_object
+        if code is not None:
+            self.code = code
+        if message is not None:
+            self.message = message
+        if data is not None:
+            self.data = data
 
     @property
-    def data_object(self):
-        r"""Gets the data_object of this ChangeResourceResponse.
+    def code(self):
+        r"""Gets the code of this ChangeResourceResponse.
 
-        :return: The data_object of this ChangeResourceResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v1.ResourceDetail`
+        错误码
+
+        :return: The code of this ChangeResourceResponse.
+        :rtype: str
         """
-        return self._data_object
+        return self._code
 
-    @data_object.setter
-    def data_object(self, data_object):
-        r"""Sets the data_object of this ChangeResourceResponse.
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ChangeResourceResponse.
 
-        :param data_object: The data_object of this ChangeResourceResponse.
-        :type data_object: :class:`huaweicloudsdksecmaster.v1.ResourceDetail`
+        错误码
+
+        :param code: The code of this ChangeResourceResponse.
+        :type code: str
         """
-        self._data_object = data_object
+        self._code = code
+
+    @property
+    def message(self):
+        r"""Gets the message of this ChangeResourceResponse.
+
+        错误信息
+
+        :return: The message of this ChangeResourceResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this ChangeResourceResponse.
+
+        错误信息
+
+        :param message: The message of this ChangeResourceResponse.
+        :type message: str
+        """
+        self._message = message
+
+    @property
+    def data(self):
+        r"""Gets the data of this ChangeResourceResponse.
+
+        :return: The data of this ChangeResourceResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v1.ChangeResourceRequestBody`
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ChangeResourceResponse.
+
+        :param data: The data of this ChangeResourceResponse.
+        :type data: :class:`huaweicloudsdksecmaster.v1.ChangeResourceRequestBody`
+        """
+        self._data = data
 
     def to_dict(self):
         import warnings

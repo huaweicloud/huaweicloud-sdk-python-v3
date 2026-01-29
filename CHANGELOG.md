@@ -1,3 +1,716 @@
+# 3.1.185 2026-01-29
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPartnerAccountChangeRecords**
+    - changes of response param
+      - `+ records.customer_id`
+      - `+ records.account_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSubCustomerBudget**
+    - changes of request param
+      - `* budget_amount: double -> bigdecimal`
+  - **ListInvoices**
+    - changes of response param
+      - `+ invoices.taxList.taxVisibleFlag`
+      - `+ invoices.taxList.taxAccountingFlag`
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListUserPrivileges`
+    - `ShowProjectRelatedRepository`
+    - `ShowVersionList`
+    - `ShowProjectVersionsCount`
+    - `ShowRepositoryRolesPrivilege`
+    - `UpdateRepoRolesPrivilege`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowApplicableInstances**
+    - changes of request param
+      - `+ instance_name`
+      - `+ instance_id`
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ShowInstanceExtendProductInfo`
+    - `ResizeInstance`
+    - `ShowEngineInstanceExtendProductInfo`
+    - `ResizeEngineInstance`
+    - `ListUserPolicies`
+    - `SetUserPolicies`
+    - `DeleteKafkaMessage`
+    - `ListProducts`
+    - `CreateReassignmentTask`
+    - `ShowSpecConvertProduct`
+    - `CreatePostPaidInstance`
+  - **ShowInstance**
+    - changes of response param
+      - `* cross_vpc_info: object -> string`
+      - `* public_cross_vpc_info: object -> string`
+  - **ListInstances**
+    - changes of response param
+      - `* instances.cross_vpc_info: object -> string`
+      - `* instances.public_cross_vpc_info: object -> string`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCesDimsInfo**
+    - changes of response param
+      - `+ query.region`
+  - **ShowChannelStatistic**
+    - changes of request param
+      - `+ region_type`
+    - changes of response param
+      - `+ scte35.scte35_info.region_type`
+      - `+ scte35.scte35_info.region`
+  - **ShowFlowDetail**
+    - changes of response param
+      - `+ sources.health_status`
+  - **ModifyFlowSources**
+    - changes of request param
+      - `+ source.health_status`
+    - changes of response param
+      - `+ source.health_status`
+  - **CreateFlows**
+    - changes of request param
+      - `+ sources.health_status`
+    - changes of response param
+      - `+ flow.sources.health_status`
+  - **ModifyOttChannelInfoEndPoints**
+    - changes of request param
+      - `+ endpoints.dash_package.id`
+      - `+ endpoints.dash_package.manifest_selection`
+      - `+ endpoints.mss_package.id`
+      - `+ endpoints.mss_package.manifest_selection`
+      - `+ endpoints.hls_package.id`
+      - `+ endpoints.hls_package.manifest_selection`
+  - **CreateOttChannelInfo**
+    - changes of request param
+      - `+ endpoints.dash_package.id`
+      - `+ endpoints.dash_package.manifest_selection`
+      - `+ endpoints.mss_package.id`
+      - `+ endpoints.mss_package.manifest_selection`
+      - `+ endpoints.hls_package.id`
+      - `+ endpoints.hls_package.manifest_selection`
+  - **ListOttChannelInfo**
+    - changes of response param
+      - `+ channels.endpoints.dash_package.id`
+      - `+ channels.endpoints.dash_package.manifest_selection`
+      - `+ channels.endpoints.mss_package.id`
+      - `+ channels.endpoints.mss_package.manifest_selection`
+      - `+ channels.endpoints.hls_package.id`
+      - `+ channels.endpoints.hls_package.manifest_selection`
+
+### HuaweiCloud SDK ProjectMan
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the APIs `DownloadIpdImageInIssue`, `UploadIpdImageInIssue`, `DeleteIpdImageInIssue`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListIpdProjectIssues**
+    - changes of response param
+      - `+ result.issues`
+      - `+ result.total`
+      - `* result: object -> object<IssueListResult>`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowInstanceExtendProductInfo`, `ResizeInstance`, `CreatePostPaidInstance`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ExportDlqMessage`
+    - `ShowUpgradeInstanceVersion`
+    - `BatchResetRocketMqMessageOffsets`
+    - `DeleteRocketMqMigrationTask`
+    - `BatchDeleteDiagnosisReport`
+  - **ShowGroup**
+    - changes of response param
+      - `+ group_online`
+  - **ListDiagnosisReports**
+    - changes of response param
+      - `* total_num: object -> int64`
+  - **ListDiagnosisReportsForRocketMq**
+    - changes of response param
+      - `* total_num: object -> int64`
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCertificates**
+    - changes of request param
+      - `+ content`
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListSubscriptionOrder`
+    - `UpdateSubscriptionOrder`
+    - `CreateSubscriptionOrder`
+    - `DeleteSubscriptionOrder`
+    - `ListSubscriptionGlobalOrder`
+    - `ListTasks`
+    - `ShowTask`
+    - `UpdateTask`
+    - `CreateSearchAnalysis`
+    - `ExecuteLayout`
+    - `UpdateWorkflowInstance`
+    - `UpdateMapper`
+    - `DeleteClassifier`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportAopworkflow**
+    - changes of request param
+      - `- content-type`
+  - **ShowMappingFunction**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ code`
+      - `+ data`
+      - `+ message`
+      - `- operation_list`
+      - `- compare_list`
+  - **ExportCollectorParser**
+    - changes of response param
+      - `- parser_ids`
+  - **ListWorkflows**
+    - changes of request param
+      - `- content-type`
+  - **CreateAopWorkflow**
+    - changes of request param
+      - `- content-type`
+  - **ShowAopWorkflow**
+    - changes of request param
+      - `- content-type`
+  - **UpdateAopWorkflow**
+    - changes of request param
+      - `- content-type`
+  - **DeleteAopWorkflow**
+    - changes of request param
+      - `- content-type`
+  - **ListAopWorkflowVersions**
+    - changes of request param
+      - `- content-type`
+  - **CreateAopWorkflowVersion**
+    - changes of request param
+      - `- content-type`
+  - **ShowAopWorkflowVersion**
+    - changes of request param
+      - `- content-type`
+  - **UpdateAopWorkflowVersion**
+    - changes of request param
+      - `- content-type`
+  - **DeleteAopWorkflowVersion**
+    - changes of request param
+      - `- content-type`
+  - **CreateAopWorkflowVersionApprovel**
+    - changes of request param
+      - `- content-type`
+  - **ValidateAopWorkflowVersion**
+    - changes of request param
+      - `- content-type`
+  - **ListDataobjectRelations**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **CreateDataobjectRelation**
+    - changes of response param
+      - `- total`
+      - `- offset`
+      - `- limit`
+  - **DeleteDataobjectRelation**
+    - changes of response param
+      - `+ success`
+      - `+ request_id`
+  - **BatchCreateDataobjectRelations**
+    - changes of response param
+      - `- total`
+      - `- offset`
+      - `- limit`
+  - **ListDataobjects**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ShowDataobject**
+    - changes of response param
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **UpdateDataobject**
+    - changes of response param
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ShowDatapanelObject**
+    - changes of response param
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **ListDatapanelObjects**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.data_object`
+      - `- data.dataobject`
+  - **CopyMapping**
+    - changes of request param
+      - `- content-type`
+  - **UpdateMappingInfoStatus**
+    - changes of request param
+      - `- content-type`
+  - **CreatePreProcessRules**
+    - changes of request param
+      - `- content-type`
+  - **ShowPreProcessRulesList**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.creator_id`
+      - `+ data.creator_name`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+  - **ShowAopWorkflowInstance**
+    - changes of request param
+      - `- content-type`
+  - **ListComponents**
+    - changes of response param
+      - `+ data.creator_id`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+      - `+ data.operation_history`
+      - `- data.operate_history`
+  - **ShowComponent**
+    - changes of response param
+      - `+ data.creator_id`
+      - `+ data.modifier_id`
+      - `+ data.modifier_name`
+      - `+ data.operation_history`
+      - `- data.operate_history`
+  - **CreateDataclassType**
+    - changes of response param
+      - `+ sub_count`
+  - **ListAlerts**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `* data.data_object.resource_list.tags: string -> object`
+  - **CreateAlert**
+    - changes of request param
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ShowAlert**
+    - changes of response param
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeAlert**
+    - changes of request param
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeAlerts**
+    - changes of request param
+      - `- data_object.environment.cross_workspace_id`
+      - `* data_object.resource_list.tags: string -> object`
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `- data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.resource_list.tags: string -> object`
+      - `* data.data_object.sla: int32 -> string`
+  - **ListIncidents**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `* data.data_object.sla: int32 -> string`
+  - **CreateIncident**
+    - changes of request param
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `* data.data_object.sla: int32 -> string`
+  - **ShowIncident**
+    - changes of response param
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeIncident**
+    - changes of request param
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `* data.data_object.sla: int32 -> string`
+  - **ChangeIncidents**
+    - changes of request param
+      - `* data_object.sla: int32 -> string`
+    - changes of response param
+      - `* data.data_object.sla: int32 -> string`
+  - **ListIndicators**
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **CreateIndicator**
+    - changes of request param
+      - `- data_object.dataclass_id`
+      - `- data_object.dataclass`
+    - changes of response param
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **ShowIndicatorDetail**
+    - changes of response param
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **UpdateIndicator**
+    - changes of request param
+      - `+ data_object.labels`
+      - `+ data_object.defanged`
+      - `+ data_object.data_source.product_name`
+      - `+ data_object.data_source.product_feature`
+    - changes of response param
+      - `+ data.data_object.labels`
+      - `+ data.data_object.defanged`
+      - `+ data.data_object.data_source.product_name`
+      - `+ data.data_object.data_source.product_feature`
+  - **ShowMappingInfoList**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+      - `+ data.built_in`
+      - `+ data.data_source`
+  - **DeleteMappingInfo**
+    - changes of request param
+      - `- content-type`
+  - **CreateMapper**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ data.data_source`
+      - `+ data.status`
+      - `+ data.description`
+      - `+ data.mapper`
+      - `- data.dataclass_name`
+      - `- data.mapper_type_id`
+      - `- data.dpe_info`
+      - `- data.mapper_field_list`
+      - `* body: object<DpeMappingDetail> -> object<CreateDpeMappingRequestBody>`
+  - **ShowMapperList**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ size`
+      - `+ page`
+      - `- offset`
+      - `- limit`
+  - **ShowMapperDetail**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ data.mapping_id`
+      - `+ data.mapping_info`
+      - `- data.dpe_info`
+  - **DeleteSingleMapper**
+    - changes of request param
+      - `- content-type`
+  - **CreateWorkflowInstance**
+    - changes of request param
+      - `- content-type`
+  - **ListAopWorkflowInstance**
+    - changes of request param
+      - `- content-type`
+  - **CreateClassifier**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ data.project_id`
+      - `+ data.workspace_id`
+      - `+ data.classifier.mapping_info.built_in`
+      - `+ data.classifier.mapping_info.data_source`
+  - **ShowClassifierInfo**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ data.mapping_info.built_in`
+      - `+ data.mapping_info.data_source`
+  - **UpdateClassifier**
+    - changes of request param
+      - `- content-type`
+    - changes of response param
+      - `+ data.project_id`
+      - `+ data.workspace_id`
+      - `+ data.classifier.mapping_info.built_in`
+      - `+ data.classifier.mapping_info.data_source`
+  - **ChangeResource**
+    - changes of response param
+      - `+ code`
+      - `+ data`
+      - `+ message`
+      - `- data_object`
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListCollectConfig`, `CreateCollectConfig`, `CreateSqlRender`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAdhocResult**
+    - changes of response param
+      - `* batch: object -> integer`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMigproject**
+    - changes of response param
+      - `- id`
+  - **UpdateMigproject**
+    - changes of request param
+      - `- id`
+  - **UpdateCopyState**
+    - changes of request param
+      - `+ copystate: enum value [init,premiging]`
+      - `- copystate: enum value [initialize]`
+      - `+ migrationcycle: enum value [no_ready,ready_for_test,testing,tested]`
+  - **ListErrorServers**
+    - changes of request param
+      - `- migproject`
+  - **ShowConsistencyResult**
+    - changes of response param
+      - `* result_list: list<object> -> list<string>`
+  - **UpdateDiskInfo**
+    - changes of request param
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **ListTemplates**
+    - changes of request param
+      - `+ id`
+  - **CreateTemplate**
+    - changes of request param
+      - `- template.volumetype: enum value [SAS,SSD,SATA]`
+      - `- template.data_volume_type: enum value [SAS,SSD,SATA]`
+  - **UpdateTemplate**
+    - changes of request param
+      - `- template.volumetype: enum value [SAS,SSD,SATA]`
+      - `- template.data_volume_type: enum value [SAS,SSD,SATA]`
+  - **ShowServer**
+    - changes of response param
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **CreateTask**
+    - changes of request param
+      - `+ clonevm_template_id`
+  - **UpdateTask**
+    - changes of request param
+      - `+ use_ipv6`
+      - `+ use_public_ip`
+      - `+ enterprise_project`
+      - `+ image_disk_id`
+      - `+ target_disk_ids`
+      - `+ snapshot_ids`
+      - `+ cutovered_snapshot_ids`
+      - `- os_type`
+      - `- id`
+      - `- priority`
+      - `- start_target_server`
+      - `- enterprise_project_id`
+      - `- source_server`
+      - `- state`
+      - `- estimate_complete_time`
+      - `- connected`
+      - `- create_date`
+      - `- start_date`
+      - `- finish_date`
+      - `- migrate_speed`
+      - `- error_json`
+      - `- total_time`
+      - `- float_ip`
+      - `- remain_seconds`
+      - `- target_snapshot_id`
+      - `- sub_tasks`
+  - **RegisterServer**
+    - changes of request param
+      - `+ ipv6`
+      - `- boot_loader: enum value [GRUB,LILO]`
+      - `- start_type: enum value [MANUAL,MGC,]`
+      - `+ platform: enum value [default]`
+      - `- disks.partition_style: enum value [MBR,GPT]`
+      - `- disks.device_use: enum value [BOOT,OS]`
+  - **ListServers**
+    - changes of request param
+      - `+ ipv6`
+      - `+ vm_id`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of response param
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **CreatePort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **ShowPort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **UpdatePort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronListPorts**
+    - changes of response param
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronCreatePort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronShowPort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **NeutronUpdatePort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of response param
+      - `* ports.binding:vif_details.vlan_id: string -> int32`
+  - **ShowPort**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **AddSecurityGroups**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+  - **RemoveSecurityGroups**
+    - changes of response param
+      - `* port.binding:vif_details.vlan_id: string -> int32`
+
 # 3.1.184 2026-01-22
 
 ### HuaweiCloud SDK CDN

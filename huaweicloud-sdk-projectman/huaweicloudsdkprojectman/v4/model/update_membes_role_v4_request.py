@@ -16,7 +16,7 @@ class UpdateMembesRoleV4Request:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'UpdateMembesRoleV4RequestBody'
+        'body': 'UpdateMembersRoleV4RequestBody'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class UpdateMembesRoleV4Request:
         :param project_id: devcloud项目的32位id
         :type project_id: str
         :param body: Body of the UpdateMembesRoleV4Request
-        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4RequestBody`
+        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateMembersRoleV4RequestBody`
         """
         
         
@@ -72,7 +72,7 @@ class UpdateMembesRoleV4Request:
         r"""Gets the body of this UpdateMembesRoleV4Request.
 
         :return: The body of this UpdateMembesRoleV4Request.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4RequestBody`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembersRoleV4RequestBody`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class UpdateMembesRoleV4Request:
         r"""Sets the body of this UpdateMembesRoleV4Request.
 
         :param body: The body of this UpdateMembesRoleV4Request.
-        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4RequestBody`
+        :type body: :class:`huaweicloudsdkprojectman.v4.UpdateMembersRoleV4RequestBody`
         """
         self._body = body
 

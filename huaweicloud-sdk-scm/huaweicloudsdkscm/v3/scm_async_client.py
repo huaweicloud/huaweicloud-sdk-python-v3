@@ -745,6 +745,8 @@ class ScmAsyncClient(Client):
             query_params.append(('owned_by_self', local_var_params['owned_by_self']))
         if 'expired_days_since' in local_var_params:
             query_params.append(('expired_days_since', local_var_params['expired_days_since']))
+        if 'content' in local_var_params:
+            query_params.append(('content', local_var_params['content']))
 
         header_params = {}
 

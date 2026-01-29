@@ -29,7 +29,7 @@ class CuUsage:
 
         The model defined in huaweicloud sdk
 
-        :param usage_category: **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及  
+        :param usage_category: **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及
         :type usage_category: str
         :param usage_metric: 
         :type usage_metric: :class:`huaweicloudsdksecmaster.v2.UsageMetric`
@@ -50,7 +50,7 @@ class CuUsage:
     def usage_category(self):
         r"""Gets the usage_category of this CuUsage.
 
-        **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及  
+        **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及
 
         :return: The usage_category of this CuUsage.
         :rtype: str
@@ -61,7 +61,7 @@ class CuUsage:
     def usage_category(self, usage_category):
         r"""Sets the usage_category of this CuUsage.
 
-        **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及  
+        **参数解释**: 目录 - USAGE 使用  **约束限制** 不涉及 **取值范围**: - USAGE  **默认值** 不涉及
 
         :param usage_category: The usage_category of this CuUsage.
         :type usage_category: str

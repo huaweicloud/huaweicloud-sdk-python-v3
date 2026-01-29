@@ -21,7 +21,8 @@ class CesQueryRespQuery:
         'medialive_cdn': 'CesDimsItem',
         'medialive_package': 'CesDimsItem',
         'medialive_connect': 'CesDimsItem',
-        'medialive_tailor': 'CesDimsItem'
+        'medialive_tailor': 'CesDimsItem',
+        'region': 'CesDimsItem'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CesQueryRespQuery:
         'medialive_cdn': 'medialive_cdn',
         'medialive_package': 'medialive_package',
         'medialive_connect': 'medialive_connect',
-        'medialive_tailor': 'medialive_tailor'
+        'medialive_tailor': 'medialive_tailor',
+        'region': 'region'
     }
 
-    def __init__(self, medialive_mpc=None, pipeline=None, audio=None, medialive_cdn=None, medialive_package=None, medialive_connect=None, medialive_tailor=None):
+    def __init__(self, medialive_mpc=None, pipeline=None, audio=None, medialive_cdn=None, medialive_package=None, medialive_connect=None, medialive_tailor=None, region=None):
         r"""CesQueryRespQuery
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CesQueryRespQuery:
         :type medialive_connect: :class:`huaweicloudsdklive.v1.CesDimsItem`
         :param medialive_tailor: 
         :type medialive_tailor: :class:`huaweicloudsdklive.v1.CesDimsItem`
+        :param region: 
+        :type region: :class:`huaweicloudsdklive.v1.CesDimsItem`
         """
         
         
@@ -64,6 +68,7 @@ class CesQueryRespQuery:
         self._medialive_package = None
         self._medialive_connect = None
         self._medialive_tailor = None
+        self._region = None
         self.discriminator = None
 
         self.medialive_mpc = medialive_mpc
@@ -73,6 +78,7 @@ class CesQueryRespQuery:
         self.medialive_package = medialive_package
         self.medialive_connect = medialive_connect
         self.medialive_tailor = medialive_tailor
+        self.region = region
 
     @property
     def medialive_mpc(self):
@@ -199,6 +205,24 @@ class CesQueryRespQuery:
         :type medialive_tailor: :class:`huaweicloudsdklive.v1.CesDimsItem`
         """
         self._medialive_tailor = medialive_tailor
+
+    @property
+    def region(self):
+        r"""Gets the region of this CesQueryRespQuery.
+
+        :return: The region of this CesQueryRespQuery.
+        :rtype: :class:`huaweicloudsdklive.v1.CesDimsItem`
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this CesQueryRespQuery.
+
+        :param region: The region of this CesQueryRespQuery.
+        :type region: :class:`huaweicloudsdklive.v1.CesDimsItem`
+        """
+        self._region = region
 
     def to_dict(self):
         result = {}

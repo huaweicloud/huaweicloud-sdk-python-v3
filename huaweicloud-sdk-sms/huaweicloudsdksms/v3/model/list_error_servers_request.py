@@ -17,18 +17,16 @@ class ListErrorServersRequest:
     openapi_types = {
         'limit': 'int',
         'offset': 'int',
-        'migproject': 'str',
         'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'offset': 'offset',
-        'migproject': 'migproject',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=None, offset=None, migproject=None, enterprise_project_id=None):
+    def __init__(self, limit=None, offset=None, enterprise_project_id=None):
         r"""ListErrorServersRequest
 
         The model defined in huaweicloud sdk
@@ -37,8 +35,6 @@ class ListErrorServersRequest:
         :type limit: int
         :param offset: 偏移量
         :type offset: int
-        :param migproject: 需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
-        :type migproject: str
         :param enterprise_project_id: 需要查询的企业项目ID
         :type enterprise_project_id: str
         """
@@ -47,15 +43,12 @@ class ListErrorServersRequest:
 
         self._limit = None
         self._offset = None
-        self._migproject = None
         self._enterprise_project_id = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
         self.offset = offset
-        if migproject is not None:
-            self.migproject = migproject
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -102,28 +95,6 @@ class ListErrorServersRequest:
         :type offset: int
         """
         self._offset = offset
-
-    @property
-    def migproject(self):
-        r"""Gets the migproject of this ListErrorServersRequest.
-
-        需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
-
-        :return: The migproject of this ListErrorServersRequest.
-        :rtype: str
-        """
-        return self._migproject
-
-    @migproject.setter
-    def migproject(self, migproject):
-        r"""Sets the migproject of this ListErrorServersRequest.
-
-        需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
-
-        :param migproject: The migproject of this ListErrorServersRequest.
-        :type migproject: str
-        """
-        self._migproject = migproject
 
     @property
     def enterprise_project_id(self):

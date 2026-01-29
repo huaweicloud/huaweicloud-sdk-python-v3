@@ -58,7 +58,7 @@ class ShowQueueDetailsResponse(SdkResponse):
         :type messages: int
         :param consumers: **参数解释**： 连接的消费者数。 **取值范围**： 不涉及。
         :type consumers: int
-        :param policy: **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        :param policy: **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
         :type policy: str
         :param arguments: 
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -239,7 +239,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def policy(self):
         r"""Gets the policy of this ShowQueueDetailsResponse.
 
-        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
 
         :return: The policy of this ShowQueueDetailsResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     def policy(self, policy):
         r"""Sets the policy of this ShowQueueDetailsResponse.
 
-        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        **参数解释**： 策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
 
         :param policy: The policy of this ShowQueueDetailsResponse.
         :type policy: str

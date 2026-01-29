@@ -32,7 +32,7 @@ class UpdateInstanceConfigurationsResponse(SdkResponse):
 
         :param job_id: 修改实例参数的异步任务ID。
         :type job_id: str
-        :param restart_required: 实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
+        :param restart_required: **参数解释：** 实例是否需要重启。 **取值范围：** - “true”需要重启。 - “false”不需要重启。
         :type restart_required: bool
         """
         
@@ -73,7 +73,7 @@ class UpdateInstanceConfigurationsResponse(SdkResponse):
     def restart_required(self):
         r"""Gets the restart_required of this UpdateInstanceConfigurationsResponse.
 
-        实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
+        **参数解释：** 实例是否需要重启。 **取值范围：** - “true”需要重启。 - “false”不需要重启。
 
         :return: The restart_required of this UpdateInstanceConfigurationsResponse.
         :rtype: bool
@@ -84,7 +84,7 @@ class UpdateInstanceConfigurationsResponse(SdkResponse):
     def restart_required(self, restart_required):
         r"""Sets the restart_required of this UpdateInstanceConfigurationsResponse.
 
-        实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
+        **参数解释：** 实例是否需要重启。 **取值范围：** - “true”需要重启。 - “false”不需要重启。
 
         :param restart_required: The restart_required of this UpdateInstanceConfigurationsResponse.
         :type restart_required: bool

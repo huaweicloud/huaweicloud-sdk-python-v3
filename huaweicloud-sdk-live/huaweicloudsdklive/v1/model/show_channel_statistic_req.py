@@ -19,7 +19,8 @@ class ShowChannelStatisticReq:
         'app_name': 'str',
         'id': 'str',
         'type': 'str',
-        'scte35': 'SCTE35StatisticReq'
+        'scte35': 'SCTE35StatisticReq',
+        'region_type': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ShowChannelStatisticReq:
         'app_name': 'app_name',
         'id': 'id',
         'type': 'type',
-        'scte35': 'scte35'
+        'scte35': 'scte35',
+        'region_type': 'region_type'
     }
 
-    def __init__(self, domain=None, app_name=None, id=None, type=None, scte35=None):
+    def __init__(self, domain=None, app_name=None, id=None, type=None, scte35=None, region_type=None):
         r"""ShowChannelStatisticReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ShowChannelStatisticReq:
         :type type: str
         :param scte35: 
         :type scte35: :class:`huaweicloudsdklive.v1.SCTE35StatisticReq`
+        :param region_type: **参数解释**： 频道对应的region类型，是主region，还是备region **约束限制**： 如果region_type不填，或是没有该字段，则按照主region处理 **取值范围**： - master: 主region - slave: 备region - all: 所有region 
+        :type region_type: str
         """
         
         
@@ -54,6 +58,7 @@ class ShowChannelStatisticReq:
         self._id = None
         self._type = None
         self._scte35 = None
+        self._region_type = None
         self.discriminator = None
 
         self.domain = domain
@@ -62,6 +67,8 @@ class ShowChannelStatisticReq:
         self.type = type
         if scte35 is not None:
             self.scte35 = scte35
+        if region_type is not None:
+            self.region_type = region_type
 
     @property
     def domain(self):
@@ -168,6 +175,28 @@ class ShowChannelStatisticReq:
         :type scte35: :class:`huaweicloudsdklive.v1.SCTE35StatisticReq`
         """
         self._scte35 = scte35
+
+    @property
+    def region_type(self):
+        r"""Gets the region_type of this ShowChannelStatisticReq.
+
+        **参数解释**： 频道对应的region类型，是主region，还是备region **约束限制**： 如果region_type不填，或是没有该字段，则按照主region处理 **取值范围**： - master: 主region - slave: 备region - all: 所有region 
+
+        :return: The region_type of this ShowChannelStatisticReq.
+        :rtype: str
+        """
+        return self._region_type
+
+    @region_type.setter
+    def region_type(self, region_type):
+        r"""Sets the region_type of this ShowChannelStatisticReq.
+
+        **参数解释**： 频道对应的region类型，是主region，还是备region **约束限制**： 如果region_type不填，或是没有该字段，则按照主region处理 **取值范围**： - master: 主region - slave: 备region - all: 所有region 
+
+        :param region_type: The region_type of this ShowChannelStatisticReq.
+        :type region_type: str
+        """
+        self._region_type = region_type
 
     def to_dict(self):
         result = {}

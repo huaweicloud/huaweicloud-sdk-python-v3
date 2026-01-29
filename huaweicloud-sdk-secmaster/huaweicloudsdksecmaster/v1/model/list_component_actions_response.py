@@ -22,7 +22,8 @@ class ListComponentActionsResponse(SdkResponse):
         'page': 'int',
         'message': 'str',
         'success': 'bool',
-        'request_id': 'str'
+        'request_id': 'str',
+        'data': 'list[ComponentActionInfo]'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ListComponentActionsResponse(SdkResponse):
         'page': 'page',
         'message': 'message',
         'success': 'success',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'data': 'data'
     }
 
-    def __init__(self, code=None, total=None, size=None, page=None, message=None, success=None, request_id=None):
+    def __init__(self, code=None, total=None, size=None, page=None, message=None, success=None, request_id=None, data=None):
         r"""ListComponentActionsResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class ListComponentActionsResponse(SdkResponse):
         :type success: bool
         :param request_id: **参数解释**: 请求id **约束限制**: 不涉及
         :type request_id: str
+        :param data: 列表
+        :type data: list[:class:`huaweicloudsdksecmaster.v1.ComponentActionInfo`]
         """
         
         super().__init__()
@@ -65,6 +69,7 @@ class ListComponentActionsResponse(SdkResponse):
         self._message = None
         self._success = None
         self._request_id = None
+        self._data = None
         self.discriminator = None
 
         if code is not None:
@@ -81,6 +86,8 @@ class ListComponentActionsResponse(SdkResponse):
             self.success = success
         if request_id is not None:
             self.request_id = request_id
+        if data is not None:
+            self.data = data
 
     @property
     def code(self):
@@ -235,6 +242,28 @@ class ListComponentActionsResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def data(self):
+        r"""Gets the data of this ListComponentActionsResponse.
+
+        列表
+
+        :return: The data of this ListComponentActionsResponse.
+        :rtype: list[:class:`huaweicloudsdksecmaster.v1.ComponentActionInfo`]
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ListComponentActionsResponse.
+
+        列表
+
+        :param data: The data of this ListComponentActionsResponse.
+        :type data: list[:class:`huaweicloudsdksecmaster.v1.ComponentActionInfo`]
+        """
+        self._data = data
 
     def to_dict(self):
         import warnings

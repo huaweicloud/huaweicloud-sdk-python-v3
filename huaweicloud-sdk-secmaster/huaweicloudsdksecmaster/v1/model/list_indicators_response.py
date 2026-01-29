@@ -19,6 +19,8 @@ class ListIndicatorsResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'total': 'int',
+        'size': 'int',
+        'page': 'int',
         'data': 'list[IndicatorDetail]',
         'x_request_id': 'str'
     }
@@ -27,11 +29,13 @@ class ListIndicatorsResponse(SdkResponse):
         'code': 'code',
         'message': 'message',
         'total': 'total',
+        'size': 'size',
+        'page': 'page',
         'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, code=None, message=None, total=None, data=None, x_request_id=None):
+    def __init__(self, code=None, message=None, total=None, size=None, page=None, data=None, x_request_id=None):
         r"""ListIndicatorsResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +46,10 @@ class ListIndicatorsResponse(SdkResponse):
         :type message: str
         :param total: 总数
         :type total: int
+        :param size: 分页大小
+        :type size: int
+        :param page: 分页的页码
+        :type page: int
         :param data: 情报列表数据
         :type data: list[:class:`huaweicloudsdksecmaster.v1.IndicatorDetail`]
         :param x_request_id: 
@@ -53,6 +61,8 @@ class ListIndicatorsResponse(SdkResponse):
         self._code = None
         self._message = None
         self._total = None
+        self._size = None
+        self._page = None
         self._data = None
         self._x_request_id = None
         self.discriminator = None
@@ -63,6 +73,10 @@ class ListIndicatorsResponse(SdkResponse):
             self.message = message
         if total is not None:
             self.total = total
+        if size is not None:
+            self.size = size
+        if page is not None:
+            self.page = page
         if data is not None:
             self.data = data
         if x_request_id is not None:
@@ -133,6 +147,50 @@ class ListIndicatorsResponse(SdkResponse):
         :type total: int
         """
         self._total = total
+
+    @property
+    def size(self):
+        r"""Gets the size of this ListIndicatorsResponse.
+
+        分页大小
+
+        :return: The size of this ListIndicatorsResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        r"""Sets the size of this ListIndicatorsResponse.
+
+        分页大小
+
+        :param size: The size of this ListIndicatorsResponse.
+        :type size: int
+        """
+        self._size = size
+
+    @property
+    def page(self):
+        r"""Gets the page of this ListIndicatorsResponse.
+
+        分页的页码
+
+        :return: The page of this ListIndicatorsResponse.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListIndicatorsResponse.
+
+        分页的页码
+
+        :param page: The page of this ListIndicatorsResponse.
+        :type page: int
+        """
+        self._page = page
 
     @property
     def data(self):

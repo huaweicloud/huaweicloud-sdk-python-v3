@@ -18,6 +18,8 @@ class DeleteDataobjectRelationResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
+        'request_id': 'str',
+        'success': 'bool',
         'data': 'BatchOperateDataobjectResult',
         'x_request_id': 'str'
     }
@@ -25,11 +27,13 @@ class DeleteDataobjectRelationResponse(SdkResponse):
     attribute_map = {
         'code': 'code',
         'message': 'message',
+        'request_id': 'request_id',
+        'success': 'success',
         'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, code=None, message=None, data=None, x_request_id=None):
+    def __init__(self, code=None, message=None, request_id=None, success=None, data=None, x_request_id=None):
         r"""DeleteDataobjectRelationResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +42,10 @@ class DeleteDataobjectRelationResponse(SdkResponse):
         :type code: str
         :param message: 错误信息
         :type message: str
+        :param request_id: 请求ID
+        :type request_id: str
+        :param success: 是否成功
+        :type success: bool
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v1.BatchOperateDataobjectResult`
         :param x_request_id: 
@@ -48,6 +56,8 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
         self._code = None
         self._message = None
+        self._request_id = None
+        self._success = None
         self._data = None
         self._x_request_id = None
         self.discriminator = None
@@ -56,6 +66,10 @@ class DeleteDataobjectRelationResponse(SdkResponse):
             self.code = code
         if message is not None:
             self.message = message
+        if request_id is not None:
+            self.request_id = request_id
+        if success is not None:
+            self.success = success
         if data is not None:
             self.data = data
         if x_request_id is not None:
@@ -104,6 +118,50 @@ class DeleteDataobjectRelationResponse(SdkResponse):
         :type message: str
         """
         self._message = message
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this DeleteDataobjectRelationResponse.
+
+        请求ID
+
+        :return: The request_id of this DeleteDataobjectRelationResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this DeleteDataobjectRelationResponse.
+
+        请求ID
+
+        :param request_id: The request_id of this DeleteDataobjectRelationResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
+
+    @property
+    def success(self):
+        r"""Gets the success of this DeleteDataobjectRelationResponse.
+
+        是否成功
+
+        :return: The success of this DeleteDataobjectRelationResponse.
+        :rtype: bool
+        """
+        return self._success
+
+    @success.setter
+    def success(self, success):
+        r"""Sets the success of this DeleteDataobjectRelationResponse.
+
+        是否成功
+
+        :param success: The success of this DeleteDataobjectRelationResponse.
+        :type success: bool
+        """
+        self._success = success
 
     @property
     def data(self):

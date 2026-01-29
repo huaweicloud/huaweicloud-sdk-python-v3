@@ -24,7 +24,7 @@ class AlertResourceList:
         'project_id': 'str',
         'ep_id': 'str',
         'ep_name': 'str',
-        'tags': 'str'
+        'tags': 'object'
     }
 
     attribute_map = {
@@ -64,7 +64,7 @@ class AlertResourceList:
         :param ep_name: 企业项目名称
         :type ep_name: str
         :param tags: 资产标签 1、最多50个key/values对 2、values：最大255字符，取值范围：字母数字,空格,+, -, &#x3D;, ., _, :, /,@
-        :type tags: str
+        :type tags: object
         """
         
         
@@ -307,7 +307,7 @@ class AlertResourceList:
         资产标签 1、最多50个key/values对 2、values：最大255字符，取值范围：字母数字,空格,+, -, =, ., _, :, /,@
 
         :return: The tags of this AlertResourceList.
-        :rtype: str
+        :rtype: object
         """
         return self._tags
 
@@ -318,7 +318,7 @@ class AlertResourceList:
         资产标签 1、最多50个key/values对 2、values：最大255字符，取值范围：字母数字,空格,+, -, =, ., _, :, /,@
 
         :param tags: The tags of this AlertResourceList.
-        :type tags: str
+        :type tags: object
         """
         self._tags = tags
 

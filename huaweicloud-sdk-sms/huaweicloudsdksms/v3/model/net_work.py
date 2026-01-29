@@ -53,7 +53,7 @@ class NetWork:
         :type gateway: str
         :param mtu: Linux必选，网卡的MTU
         :type mtu: int
-        :param mac: Mac地址
+        :param mac: 列表中第一个Mac地址必须非空
         :type mac: str
         :param id: 数据库ID
         :type id: str
@@ -71,12 +71,16 @@ class NetWork:
         self._id = None
         self.discriminator = None
 
-        self.name = name
-        self.ip = ip
+        if name is not None:
+            self.name = name
+        if ip is not None:
+            self.ip = ip
         if ipv6 is not None:
             self.ipv6 = ipv6
-        self.netmask = netmask
-        self.gateway = gateway
+        if netmask is not None:
+            self.netmask = netmask
+        if gateway is not None:
+            self.gateway = gateway
         if mtu is not None:
             self.mtu = mtu
         self.mac = mac
@@ -219,7 +223,7 @@ class NetWork:
     def mac(self):
         r"""Gets the mac of this NetWork.
 
-        Mac地址
+        列表中第一个Mac地址必须非空
 
         :return: The mac of this NetWork.
         :rtype: str
@@ -230,7 +234,7 @@ class NetWork:
     def mac(self, mac):
         r"""Sets the mac of this NetWork.
 
-        Mac地址
+        列表中第一个Mac地址必须非空
 
         :param mac: The mac of this NetWork.
         :type mac: str

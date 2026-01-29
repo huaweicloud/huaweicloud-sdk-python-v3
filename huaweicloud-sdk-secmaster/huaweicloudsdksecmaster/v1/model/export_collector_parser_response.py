@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExportCollectorParserResponse(SdkResponse):
+class ExportCollectorParserResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -16,51 +16,20 @@ class ExportCollectorParserResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'parser_ids': 'list[ExportParserResponseDto]'
     }
 
     attribute_map = {
-        'parser_ids': 'parser_ids'
     }
 
-    def __init__(self, parser_ids=None):
+    def __init__(self, response):
         r"""ExportCollectorParserResponse
 
         The model defined in huaweicloud sdk
 
-        :param parser_ids: 相关描述信息
-        :type parser_ids: list[:class:`huaweicloudsdksecmaster.v1.ExportParserResponseDto`]
         """
         
-        super().__init__()
-
-        self._parser_ids = None
+        super().__init__(response)
         self.discriminator = None
-
-        if parser_ids is not None:
-            self.parser_ids = parser_ids
-
-    @property
-    def parser_ids(self):
-        r"""Gets the parser_ids of this ExportCollectorParserResponse.
-
-        相关描述信息
-
-        :return: The parser_ids of this ExportCollectorParserResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v1.ExportParserResponseDto`]
-        """
-        return self._parser_ids
-
-    @parser_ids.setter
-    def parser_ids(self, parser_ids):
-        r"""Sets the parser_ids of this ExportCollectorParserResponse.
-
-        相关描述信息
-
-        :param parser_ids: The parser_ids of this ExportCollectorParserResponse.
-        :type parser_ids: list[:class:`huaweicloudsdksecmaster.v1.ExportParserResponseDto`]
-        """
-        self._parser_ids = parser_ids
 
     def to_dict(self):
         import warnings

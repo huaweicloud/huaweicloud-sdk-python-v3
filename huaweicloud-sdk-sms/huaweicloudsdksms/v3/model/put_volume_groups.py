@@ -53,7 +53,8 @@ class PutVolumeGroups:
 
         if logical_volumes is not None:
             self.logical_volumes = logical_volumes
-        self.id = id
+        if id is not None:
+            self.id = id
         if need_migration is not None:
             self.need_migration = need_migration
         if adjust_size is not None:

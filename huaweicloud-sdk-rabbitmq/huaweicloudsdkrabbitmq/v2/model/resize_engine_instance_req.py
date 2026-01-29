@@ -35,7 +35,7 @@ class ResizeEngineInstanceReq:
 
         The model defined in huaweicloud sdk
 
-        :param oper_type: 变更类型。  取值范围：  [storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)  horizontal：代理数量扩容，每个broker的存储空间不变。  [vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)
+        :param oper_type: 变更类型。  取值范围：  - storage：存储空间扩容，代理数量不变。  - horizontal：代理数量扩容，每个broker的存储空间不变。  - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
         :type oper_type: str
         :param new_storage_space: 扩容后的存储空间。注意：磁盘容量仅支持设置为100的整数倍。  当oper_type类型是storage或horizontal时，该参数有效且必填。  实例存储空间 &#x3D; 代理数量 * 每个broker的存储空间。  - 当oper_type类型是storage时，代理数量不变，每个broker存储空间最少扩容100GB。  - 当oper_type类型是horizontal时，每个broker的存储空间不变。
         :type new_storage_space: int
@@ -70,7 +70,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self):
         r"""Gets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：  [storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)  horizontal：代理数量扩容，每个broker的存储空间不变。  [vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)
+        变更类型。  取值范围：  - storage：存储空间扩容，代理数量不变。  - horizontal：代理数量扩容，每个broker的存储空间不变。  - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
 
         :return: The oper_type of this ResizeEngineInstanceReq.
         :rtype: str
@@ -81,7 +81,7 @@ class ResizeEngineInstanceReq:
     def oper_type(self, oper_type):
         r"""Sets the oper_type of this ResizeEngineInstanceReq.
 
-        变更类型。  取值范围：  [storage：存储空间扩容，代理数量不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)  horizontal：代理数量扩容，每个broker的存储空间不变。  [vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。](tag:hws,hws_eu,hws_hk,sbc,ctc,g42,hk_g42,tm,hk_tm,cmcc,ax,hk_sbc)
+        变更类型。  取值范围：  - storage：存储空间扩容，代理数量不变。  - horizontal：代理数量扩容，每个broker的存储空间不变。  - vertical：垂直扩容，broker的底层虚机规格变更，代理数量和存储空间不变。
 
         :param oper_type: The oper_type of this ResizeEngineInstanceReq.
         :type oper_type: str

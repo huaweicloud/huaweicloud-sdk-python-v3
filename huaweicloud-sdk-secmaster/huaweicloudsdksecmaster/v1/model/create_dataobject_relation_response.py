@@ -19,9 +19,6 @@ class CreateDataobjectRelationResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'request_id': 'str',
-        'total': 'int',
-        'limit': 'int',
-        'offset': 'int',
         'success': 'bool',
         'data': 'BatchOperateDataobjectResult',
         'x_request_id': 'str'
@@ -31,15 +28,12 @@ class CreateDataobjectRelationResponse(SdkResponse):
         'code': 'code',
         'message': 'message',
         'request_id': 'request_id',
-        'total': 'total',
-        'limit': 'limit',
-        'offset': 'offset',
         'success': 'success',
         'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, code=None, message=None, request_id=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
+    def __init__(self, code=None, message=None, request_id=None, success=None, data=None, x_request_id=None):
         r"""CreateDataobjectRelationResponse
 
         The model defined in huaweicloud sdk
@@ -50,12 +44,6 @@ class CreateDataobjectRelationResponse(SdkResponse):
         :type message: str
         :param request_id: 请求ID
         :type request_id: str
-        :param total: 总数
-        :type total: int
-        :param limit: 分页大小
-        :type limit: int
-        :param offset: 偏移量
-        :type offset: int
         :param success: 是否成功
         :type success: bool
         :param data: 
@@ -69,9 +57,6 @@ class CreateDataobjectRelationResponse(SdkResponse):
         self._code = None
         self._message = None
         self._request_id = None
-        self._total = None
-        self._limit = None
-        self._offset = None
         self._success = None
         self._data = None
         self._x_request_id = None
@@ -83,12 +68,6 @@ class CreateDataobjectRelationResponse(SdkResponse):
             self.message = message
         if request_id is not None:
             self.request_id = request_id
-        if total is not None:
-            self.total = total
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
         if success is not None:
             self.success = success
         if data is not None:
@@ -161,72 +140,6 @@ class CreateDataobjectRelationResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
-
-    @property
-    def total(self):
-        r"""Gets the total of this CreateDataobjectRelationResponse.
-
-        总数
-
-        :return: The total of this CreateDataobjectRelationResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        r"""Sets the total of this CreateDataobjectRelationResponse.
-
-        总数
-
-        :param total: The total of this CreateDataobjectRelationResponse.
-        :type total: int
-        """
-        self._total = total
-
-    @property
-    def limit(self):
-        r"""Gets the limit of this CreateDataobjectRelationResponse.
-
-        分页大小
-
-        :return: The limit of this CreateDataobjectRelationResponse.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this CreateDataobjectRelationResponse.
-
-        分页大小
-
-        :param limit: The limit of this CreateDataobjectRelationResponse.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
-    def offset(self):
-        r"""Gets the offset of this CreateDataobjectRelationResponse.
-
-        偏移量
-
-        :return: The offset of this CreateDataobjectRelationResponse.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this CreateDataobjectRelationResponse.
-
-        偏移量
-
-        :param offset: The offset of this CreateDataobjectRelationResponse.
-        :type offset: int
-        """
-        self._offset = offset
 
     @property
     def success(self):

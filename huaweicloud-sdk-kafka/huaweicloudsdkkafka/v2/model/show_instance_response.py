@@ -74,8 +74,8 @@ class ShowInstanceResponse(SdkResponse):
         'public_bandwidth': 'int',
         'enable_log_collection': 'bool',
         'new_auth_cert': 'bool',
-        'cross_vpc_info': 'object',
-        'public_cross_vpc_info': 'object',
+        'cross_vpc_info': 'str',
+        'public_cross_vpc_info': 'str',
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
         'connector_enable': 'bool',
@@ -226,7 +226,7 @@ class ShowInstanceResponse(SdkResponse):
         :type status: str
         :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
+        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
         :type resource_spec_code: str
         :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc)
         :type charging_mode: int
@@ -317,9 +317,9 @@ class ShowInstanceResponse(SdkResponse):
         :param new_auth_cert: **参数解释**： 是否开启新证书。 **取值范围**： - true：开启 - false：不开启
         :type new_auth_cert: bool
         :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
-        :type cross_vpc_info: object
+        :type cross_vpc_info: str
         :param public_cross_vpc_info: **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
-        :type public_cross_vpc_info: object
+        :type public_cross_vpc_info: str
         :param ipv6_enable: **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启 - false：不开启
         :type ipv6_enable: bool
         :param ipv6_connect_addresses: **参数解释**： IPv6的连接地址。
@@ -932,7 +932,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
 
         :return: The resource_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -943,7 +943,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResponse.
         :type resource_spec_code: str
@@ -1925,7 +1925,7 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :return: The cross_vpc_info of this ShowInstanceResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._cross_vpc_info
 
@@ -1936,7 +1936,7 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowInstanceResponse.
-        :type cross_vpc_info: object
+        :type cross_vpc_info: str
         """
         self._cross_vpc_info = cross_vpc_info
 
@@ -1947,7 +1947,7 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
 
         :return: The public_cross_vpc_info of this ShowInstanceResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._public_cross_vpc_info
 
@@ -1958,7 +1958,7 @@ class ShowInstanceResponse(SdkResponse):
         **参数解释**： 公网跨VPC访问信息。 **取值范围**： 不涉及。
 
         :param public_cross_vpc_info: The public_cross_vpc_info of this ShowInstanceResponse.
-        :type public_cross_vpc_info: object
+        :type public_cross_vpc_info: str
         """
         self._public_cross_vpc_info = public_cross_vpc_info
 

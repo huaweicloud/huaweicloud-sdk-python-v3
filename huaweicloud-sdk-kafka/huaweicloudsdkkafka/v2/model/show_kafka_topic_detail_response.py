@@ -16,7 +16,7 @@ class ShowKafkaTopicDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ShowKafkaTopicDetailResponseBody]'
+        'body': 'list[KafkaTopicDetailEntity]'
     }
 
     attribute_map = {
@@ -28,8 +28,8 @@ class ShowKafkaTopicDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: Topic详情。
-        :type body: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaTopicDetailResponseBody`]
+        :param body: 查询Kafka主题详情
+        :type body: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicDetailEntity`]
         """
         
         super().__init__()
@@ -44,10 +44,10 @@ class ShowKafkaTopicDetailResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ShowKafkaTopicDetailResponse.
 
-        Topic详情。
+        查询Kafka主题详情
 
         :return: The body of this ShowKafkaTopicDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaTopicDetailResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicDetailEntity`]
         """
         return self._body
 
@@ -55,10 +55,10 @@ class ShowKafkaTopicDetailResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ShowKafkaTopicDetailResponse.
 
-        Topic详情。
+        查询Kafka主题详情
 
         :param body: The body of this ShowKafkaTopicDetailResponse.
-        :type body: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaTopicDetailResponseBody`]
+        :type body: list[:class:`huaweicloudsdkkafka.v2.KafkaTopicDetailEntity`]
         """
         self._body = body
 

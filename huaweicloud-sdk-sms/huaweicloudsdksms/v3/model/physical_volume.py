@@ -47,7 +47,7 @@ class PhysicalVolume:
 
         The model defined in huaweicloud sdk
 
-        :param device_use: 分区类型，普通分区，启动分区，系统分区
+        :param device_use: 磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
         :type device_use: str
         :param file_system: 文件系统类型
         :type file_system: str
@@ -113,7 +113,7 @@ class PhysicalVolume:
     def device_use(self):
         r"""Gets the device_use of this PhysicalVolume.
 
-        分区类型，普通分区，启动分区，系统分区
+        磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :return: The device_use of this PhysicalVolume.
         :rtype: str
@@ -124,7 +124,7 @@ class PhysicalVolume:
     def device_use(self, device_use):
         r"""Sets the device_use of this PhysicalVolume.
 
-        分区类型，普通分区，启动分区，系统分区
+        磁盘类型。 无强约束，可为空值，常见取值如下 NORMAL：平常 OS：系统设备 BOOT：BOOT设备 VOLUME_GROUP：VolumeGroup组成设备 BTRFS：BTRFS组成设备
 
         :param device_use: The device_use of this PhysicalVolume.
         :type device_use: str

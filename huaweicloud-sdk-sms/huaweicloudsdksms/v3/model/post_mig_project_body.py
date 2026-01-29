@@ -59,7 +59,7 @@ class PostMigProjectBody:
         :type region: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
         :type start_target_server: bool
-        :param speed_limit: 限制迁移速率，单位：Mbps
+        :param speed_limit: 限制迁移速率，单位：Mbps。0表示不限速
         :type speed_limit: int
         :param use_public_ip: 是否使用公网IP迁移
         :type use_public_ip: bool
@@ -227,7 +227,7 @@ class PostMigProjectBody:
     def speed_limit(self):
         r"""Gets the speed_limit of this PostMigProjectBody.
 
-        限制迁移速率，单位：Mbps
+        限制迁移速率，单位：Mbps。0表示不限速
 
         :return: The speed_limit of this PostMigProjectBody.
         :rtype: int
@@ -238,7 +238,7 @@ class PostMigProjectBody:
     def speed_limit(self, speed_limit):
         r"""Sets the speed_limit of this PostMigProjectBody.
 
-        限制迁移速率，单位：Mbps
+        限制迁移速率，单位：Mbps。0表示不限速
 
         :param speed_limit: The speed_limit of this PostMigProjectBody.
         :type speed_limit: int

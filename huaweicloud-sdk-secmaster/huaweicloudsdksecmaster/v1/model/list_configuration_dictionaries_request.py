@@ -47,7 +47,7 @@ class ListConfigurationDictionariesRequest:
         :type project_id: str
         :param x_language: 用户当前语言环境
         :type x_language: str
-        :param scene: 字典使用场景, 告警为ALERT, 等级云为QUAD_CLOUD
+        :param scene: 字典使用场景，告警为ALERT，等级云为QUAD_CLOUD
         :type scene: str
         :param level: 仅QUAD_CLOUD场景使用[S1, S2, S3, S4]
         :type level: str
@@ -141,7 +141,7 @@ class ListConfigurationDictionariesRequest:
     def scene(self):
         r"""Gets the scene of this ListConfigurationDictionariesRequest.
 
-        字典使用场景, 告警为ALERT, 等级云为QUAD_CLOUD
+        字典使用场景，告警为ALERT，等级云为QUAD_CLOUD
 
         :return: The scene of this ListConfigurationDictionariesRequest.
         :rtype: str
@@ -152,7 +152,7 @@ class ListConfigurationDictionariesRequest:
     def scene(self, scene):
         r"""Sets the scene of this ListConfigurationDictionariesRequest.
 
-        字典使用场景, 告警为ALERT, 等级云为QUAD_CLOUD
+        字典使用场景，告警为ALERT，等级云为QUAD_CLOUD
 
         :param scene: The scene of this ListConfigurationDictionariesRequest.
         :type scene: str

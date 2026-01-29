@@ -18,7 +18,6 @@ class AlertEnvironment:
         'vendor_type': 'str',
         'domain_id': 'str',
         'region_id': 'str',
-        'cross_workspace_id': 'str',
         'project_id': 'str'
     }
 
@@ -26,11 +25,10 @@ class AlertEnvironment:
         'vendor_type': 'vendor_type',
         'domain_id': 'domain_id',
         'region_id': 'region_id',
-        'cross_workspace_id': 'cross_workspace_id',
         'project_id': 'project_id'
     }
 
-    def __init__(self, vendor_type=None, domain_id=None, region_id=None, cross_workspace_id=None, project_id=None):
+    def __init__(self, vendor_type=None, domain_id=None, region_id=None, project_id=None):
         r"""AlertEnvironment
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class AlertEnvironment:
         :type domain_id: str
         :param region_id: 区域id，全局服务global
         :type region_id: str
-        :param cross_workspace_id: 数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
-        :type cross_workspace_id: str
         :param project_id: 项目id， 全局服务默认null
         :type project_id: str
         """
@@ -52,7 +48,6 @@ class AlertEnvironment:
         self._vendor_type = None
         self._domain_id = None
         self._region_id = None
-        self._cross_workspace_id = None
         self._project_id = None
         self.discriminator = None
 
@@ -62,8 +57,6 @@ class AlertEnvironment:
             self.domain_id = domain_id
         if region_id is not None:
             self.region_id = region_id
-        if cross_workspace_id is not None:
-            self.cross_workspace_id = cross_workspace_id
         if project_id is not None:
             self.project_id = project_id
 
@@ -132,28 +125,6 @@ class AlertEnvironment:
         :type region_id: str
         """
         self._region_id = region_id
-
-    @property
-    def cross_workspace_id(self):
-        r"""Gets the cross_workspace_id of this AlertEnvironment.
-
-        数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
-
-        :return: The cross_workspace_id of this AlertEnvironment.
-        :rtype: str
-        """
-        return self._cross_workspace_id
-
-    @cross_workspace_id.setter
-    def cross_workspace_id(self, cross_workspace_id):
-        r"""Sets the cross_workspace_id of this AlertEnvironment.
-
-        数据投递前的源工作空间id，在源空间下值为null，投递后为被委托用户的id
-
-        :param cross_workspace_id: The cross_workspace_id of this AlertEnvironment.
-        :type cross_workspace_id: str
-        """
-        self._cross_workspace_id = cross_workspace_id
 
     @property
     def project_id(self):

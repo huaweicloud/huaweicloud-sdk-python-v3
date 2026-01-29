@@ -61,12 +61,18 @@ class BtrfsSubvolumn:
         self._subvol_mount_path = None
         self.discriminator = None
 
-        self.uuid = uuid
-        self.is_snapshot = is_snapshot
-        self.subvol_id = subvol_id
-        self.parent_id = parent_id
-        self.subvol_name = subvol_name
-        self.subvol_mount_path = subvol_mount_path
+        if uuid is not None:
+            self.uuid = uuid
+        if is_snapshot is not None:
+            self.is_snapshot = is_snapshot
+        if subvol_id is not None:
+            self.subvol_id = subvol_id
+        if parent_id is not None:
+            self.parent_id = parent_id
+        if subvol_name is not None:
+            self.subvol_name = subvol_name
+        if subvol_mount_path is not None:
+            self.subvol_mount_path = subvol_mount_path
 
     @property
     def uuid(self):

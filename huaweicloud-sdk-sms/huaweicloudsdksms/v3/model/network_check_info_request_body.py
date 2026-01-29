@@ -47,17 +47,17 @@ class NetworkCheckInfoRequestBody:
         :type domain_connectivity: bool
         :param destination_connectivity: 目的端连通性
         :type destination_connectivity: bool
-        :param network_delay: 网络时延
+        :param network_delay: 网络时延（ms）
         :type network_delay: float
-        :param network_jitter: 网络抖动
+        :param network_jitter: 网络抖动（ms）
         :type network_jitter: float
-        :param migration_speed: 带宽
+        :param migration_speed: 带宽速率（Mbit/s）
         :type migration_speed: float
-        :param loss_percentage: 丢包
+        :param loss_percentage: 丢包率（%）
         :type loss_percentage: float
-        :param cpu_usage: CPU占用
+        :param cpu_usage: CPU占用率（%）
         :type cpu_usage: float
-        :param mem_usage: 内存占用
+        :param mem_usage: 内存占用率（%）
         :type mem_usage: float
         :param evaluation_result: 评估结果
         :type evaluation_result: str
@@ -136,7 +136,7 @@ class NetworkCheckInfoRequestBody:
     def network_delay(self):
         r"""Gets the network_delay of this NetworkCheckInfoRequestBody.
 
-        网络时延
+        网络时延（ms）
 
         :return: The network_delay of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -147,7 +147,7 @@ class NetworkCheckInfoRequestBody:
     def network_delay(self, network_delay):
         r"""Sets the network_delay of this NetworkCheckInfoRequestBody.
 
-        网络时延
+        网络时延（ms）
 
         :param network_delay: The network_delay of this NetworkCheckInfoRequestBody.
         :type network_delay: float
@@ -158,7 +158,7 @@ class NetworkCheckInfoRequestBody:
     def network_jitter(self):
         r"""Gets the network_jitter of this NetworkCheckInfoRequestBody.
 
-        网络抖动
+        网络抖动（ms）
 
         :return: The network_jitter of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -169,7 +169,7 @@ class NetworkCheckInfoRequestBody:
     def network_jitter(self, network_jitter):
         r"""Sets the network_jitter of this NetworkCheckInfoRequestBody.
 
-        网络抖动
+        网络抖动（ms）
 
         :param network_jitter: The network_jitter of this NetworkCheckInfoRequestBody.
         :type network_jitter: float
@@ -180,7 +180,7 @@ class NetworkCheckInfoRequestBody:
     def migration_speed(self):
         r"""Gets the migration_speed of this NetworkCheckInfoRequestBody.
 
-        带宽
+        带宽速率（Mbit/s）
 
         :return: The migration_speed of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -191,7 +191,7 @@ class NetworkCheckInfoRequestBody:
     def migration_speed(self, migration_speed):
         r"""Sets the migration_speed of this NetworkCheckInfoRequestBody.
 
-        带宽
+        带宽速率（Mbit/s）
 
         :param migration_speed: The migration_speed of this NetworkCheckInfoRequestBody.
         :type migration_speed: float
@@ -202,7 +202,7 @@ class NetworkCheckInfoRequestBody:
     def loss_percentage(self):
         r"""Gets the loss_percentage of this NetworkCheckInfoRequestBody.
 
-        丢包
+        丢包率（%）
 
         :return: The loss_percentage of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -213,7 +213,7 @@ class NetworkCheckInfoRequestBody:
     def loss_percentage(self, loss_percentage):
         r"""Sets the loss_percentage of this NetworkCheckInfoRequestBody.
 
-        丢包
+        丢包率（%）
 
         :param loss_percentage: The loss_percentage of this NetworkCheckInfoRequestBody.
         :type loss_percentage: float
@@ -224,7 +224,7 @@ class NetworkCheckInfoRequestBody:
     def cpu_usage(self):
         r"""Gets the cpu_usage of this NetworkCheckInfoRequestBody.
 
-        CPU占用
+        CPU占用率（%）
 
         :return: The cpu_usage of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -235,7 +235,7 @@ class NetworkCheckInfoRequestBody:
     def cpu_usage(self, cpu_usage):
         r"""Sets the cpu_usage of this NetworkCheckInfoRequestBody.
 
-        CPU占用
+        CPU占用率（%）
 
         :param cpu_usage: The cpu_usage of this NetworkCheckInfoRequestBody.
         :type cpu_usage: float
@@ -246,7 +246,7 @@ class NetworkCheckInfoRequestBody:
     def mem_usage(self):
         r"""Gets the mem_usage of this NetworkCheckInfoRequestBody.
 
-        内存占用
+        内存占用率（%）
 
         :return: The mem_usage of this NetworkCheckInfoRequestBody.
         :rtype: float
@@ -257,7 +257,7 @@ class NetworkCheckInfoRequestBody:
     def mem_usage(self, mem_usage):
         r"""Sets the mem_usage of this NetworkCheckInfoRequestBody.
 
-        内存占用
+        内存占用率（%）
 
         :param mem_usage: The mem_usage of this NetworkCheckInfoRequestBody.
         :type mem_usage: float

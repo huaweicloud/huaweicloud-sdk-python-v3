@@ -17,7 +17,7 @@ class ListDiagnosisReportsResponse(SdkResponse):
 
     openapi_types = {
         'diagnosis_report_list': 'list[DiagnosisReportResp]',
-        'total_num': 'object'
+        'total_num': 'int'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListDiagnosisReportsResponse(SdkResponse):
         :param diagnosis_report_list: **参数解释**： 诊断报告列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type diagnosis_report_list: list[:class:`huaweicloudsdkrocketmq.v2.DiagnosisReportResp`]
         :param total_num: **参数解释**： 报告数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type total_num: object
+        :type total_num: int
         """
         
         super().__init__()
@@ -76,7 +76,7 @@ class ListDiagnosisReportsResponse(SdkResponse):
         **参数解释**： 报告数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The total_num of this ListDiagnosisReportsResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._total_num
 
@@ -87,7 +87,7 @@ class ListDiagnosisReportsResponse(SdkResponse):
         **参数解释**： 报告数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param total_num: The total_num of this ListDiagnosisReportsResponse.
-        :type total_num: object
+        :type total_num: int
         """
         self._total_num = total_num
 

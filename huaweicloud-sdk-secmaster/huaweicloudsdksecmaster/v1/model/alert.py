@@ -40,7 +40,7 @@ class Alert:
         'remediation': 'AlertRemediation',
         'verification_state': 'str',
         'handle_status': 'str',
-        'sla': 'int',
+        'sla': 'str',
         'update_time': 'str',
         'close_time': 'str',
         'ipdrr_phase': 'str',
@@ -157,8 +157,8 @@ class Alert:
         :type verification_state: str
         :param handle_status: 事件处理状态，可选类型如下： Open – 打开，默认 Block – 阻塞 Closed – 关闭 默认填写Open
         :type handle_status: str
-        :param sla: 约束闭环时间：设置风险接受持续时间。单位：小时
-        :type sla: int
+        :param sla: 约束闭环时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+        :type sla: str
         :param update_time: 更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type update_time: str
         :param close_time: 关闭时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
@@ -857,10 +857,10 @@ class Alert:
     def sla(self):
         r"""Gets the sla of this Alert.
 
-        约束闭环时间：设置风险接受持续时间。单位：小时
+        约束闭环时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
         :return: The sla of this Alert.
-        :rtype: int
+        :rtype: str
         """
         return self._sla
 
@@ -868,10 +868,10 @@ class Alert:
     def sla(self, sla):
         r"""Sets the sla of this Alert.
 
-        约束闭环时间：设置风险接受持续时间。单位：小时
+        约束闭环时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
         :param sla: The sla of this Alert.
-        :type sla: int
+        :type sla: str
         """
         self._sla = sla
 

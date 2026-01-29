@@ -52,9 +52,9 @@ class EnableDataConsumptionResponse(SdkResponse):
         :type pipe_id: str
         :param pipe_name: 管道名称
         :type pipe_name: str
-        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及       
+        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
         :type status: str
-        :param type: **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及               
+        :param type: **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及
         :type type: str
         :param access_point: 接入点域名信息(格式：{dataspace}.{endpoint})
         :type access_point: str
@@ -188,7 +188,7 @@ class EnableDataConsumptionResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this EnableDataConsumptionResponse.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及       
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
 
         :return: The status of this EnableDataConsumptionResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class EnableDataConsumptionResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this EnableDataConsumptionResponse.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及       
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
 
         :param status: The status of this EnableDataConsumptionResponse.
         :type status: str
@@ -210,7 +210,7 @@ class EnableDataConsumptionResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this EnableDataConsumptionResponse.
 
-        **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及               
+        **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及
 
         :return: The type of this EnableDataConsumptionResponse.
         :rtype: str
@@ -221,7 +221,7 @@ class EnableDataConsumptionResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this EnableDataConsumptionResponse.
 
-        **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及               
+        **参数解释**: 网络类型 - INTERNET 互联网 - INTRANET 内联网  **约束限制** 不涉及 **取值范围**: - INTERNET - INTRANET  **默认值** 不涉及
 
         :param type: The type of this EnableDataConsumptionResponse.
         :type type: str

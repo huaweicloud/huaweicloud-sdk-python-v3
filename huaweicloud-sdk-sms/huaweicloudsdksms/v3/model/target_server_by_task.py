@@ -58,7 +58,8 @@ class TargetServerByTask:
 
         if btrfs_list is not None:
             self.btrfs_list = btrfs_list
-        self.disks = disks
+        if disks is not None:
+            self.disks = disks
         self.name = name
         self.vm_id = vm_id
         if volume_groups is not None:

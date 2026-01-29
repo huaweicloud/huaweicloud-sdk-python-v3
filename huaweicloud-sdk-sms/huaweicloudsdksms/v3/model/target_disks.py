@@ -37,7 +37,7 @@ class TargetDisks:
 
         The model defined in huaweicloud sdk
 
-        :param device_use: 磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
+        :param device_use: 磁盘类型，仅起提示作用，不作校验 BOOT：BOOT所在磁盘 OS：OS所在磁盘 NORMAL：普通磁盘
         :type device_use: str
         :param disk_id: 磁盘ID,自动创建虚拟机不用设置
         :type disk_id: str
@@ -65,16 +65,20 @@ class TargetDisks:
             self.device_use = device_use
         if disk_id is not None:
             self.disk_id = disk_id
-        self.name = name
-        self.physical_volumes = physical_volumes
-        self.size = size
-        self.used_size = used_size
+        if name is not None:
+            self.name = name
+        if physical_volumes is not None:
+            self.physical_volumes = physical_volumes
+        if size is not None:
+            self.size = size
+        if used_size is not None:
+            self.used_size = used_size
 
     @property
     def device_use(self):
         r"""Gets the device_use of this TargetDisks.
 
-        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
+        磁盘类型，仅起提示作用，不作校验 BOOT：BOOT所在磁盘 OS：OS所在磁盘 NORMAL：普通磁盘
 
         :return: The device_use of this TargetDisks.
         :rtype: str
@@ -85,7 +89,7 @@ class TargetDisks:
     def device_use(self, device_use):
         r"""Sets the device_use of this TargetDisks.
 
-        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
+        磁盘类型，仅起提示作用，不作校验 BOOT：BOOT所在磁盘 OS：OS所在磁盘 NORMAL：普通磁盘
 
         :param device_use: The device_use of this TargetDisks.
         :type device_use: str

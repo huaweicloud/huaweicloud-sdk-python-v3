@@ -18,8 +18,8 @@ class ListRetrieveScriptsRequest:
         'project_id': 'str',
         'workspace_id': 'str',
         'table_id': 'str',
-        'script_name': 'str',
         'offset': 'int',
+        'script_name': 'str',
         'limit': 'int',
         'sort_key': 'str',
         'sort_dir': 'str'
@@ -29,14 +29,14 @@ class ListRetrieveScriptsRequest:
         'project_id': 'project_id',
         'workspace_id': 'workspace_id',
         'table_id': 'table_id',
-        'script_name': 'script_name',
         'offset': 'offset',
+        'script_name': 'script_name',
         'limit': 'limit',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, project_id=None, workspace_id=None, table_id=None, script_name=None, offset=None, limit=None, sort_key=None, sort_dir=None):
+    def __init__(self, project_id=None, workspace_id=None, table_id=None, offset=None, script_name=None, limit=None, sort_key=None, sort_dir=None):
         r"""ListRetrieveScriptsRequest
 
         The model defined in huaweicloud sdk
@@ -47,10 +47,10 @@ class ListRetrieveScriptsRequest:
         :type workspace_id: str
         :param table_id: 表ID
         :type table_id: str
-        :param script_name: 脚本名称
-        :type script_name: str
         :param offset: **参数解释：** 偏移量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type offset: int
+        :param script_name: 脚本名称
+        :type script_name: str
         :param limit: **参数解释：** 查询数据限制 **取值范围：** 0-1000 **默认取值：** 不涉及
         :type limit: int
         :param sort_key: 按照属性排序。
@@ -64,8 +64,8 @@ class ListRetrieveScriptsRequest:
         self._project_id = None
         self._workspace_id = None
         self._table_id = None
-        self._script_name = None
         self._offset = None
+        self._script_name = None
         self._limit = None
         self._sort_key = None
         self._sort_dir = None
@@ -75,10 +75,10 @@ class ListRetrieveScriptsRequest:
         self.workspace_id = workspace_id
         if table_id is not None:
             self.table_id = table_id
-        if script_name is not None:
-            self.script_name = script_name
         if offset is not None:
             self.offset = offset
+        if script_name is not None:
+            self.script_name = script_name
         if limit is not None:
             self.limit = limit
         if sort_key is not None:
@@ -153,28 +153,6 @@ class ListRetrieveScriptsRequest:
         self._table_id = table_id
 
     @property
-    def script_name(self):
-        r"""Gets the script_name of this ListRetrieveScriptsRequest.
-
-        脚本名称
-
-        :return: The script_name of this ListRetrieveScriptsRequest.
-        :rtype: str
-        """
-        return self._script_name
-
-    @script_name.setter
-    def script_name(self, script_name):
-        r"""Sets the script_name of this ListRetrieveScriptsRequest.
-
-        脚本名称
-
-        :param script_name: The script_name of this ListRetrieveScriptsRequest.
-        :type script_name: str
-        """
-        self._script_name = script_name
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListRetrieveScriptsRequest.
 
@@ -195,6 +173,28 @@ class ListRetrieveScriptsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def script_name(self):
+        r"""Gets the script_name of this ListRetrieveScriptsRequest.
+
+        脚本名称
+
+        :return: The script_name of this ListRetrieveScriptsRequest.
+        :rtype: str
+        """
+        return self._script_name
+
+    @script_name.setter
+    def script_name(self, script_name):
+        r"""Sets the script_name of this ListRetrieveScriptsRequest.
+
+        脚本名称
+
+        :param script_name: The script_name of this ListRetrieveScriptsRequest.
+        :type script_name: str
+        """
+        self._script_name = script_name
 
     @property
     def limit(self):

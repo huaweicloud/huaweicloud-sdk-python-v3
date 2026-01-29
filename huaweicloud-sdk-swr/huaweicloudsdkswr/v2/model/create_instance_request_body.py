@@ -51,7 +51,7 @@ class CreateInstanceRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 企业仓库实例名称，小写字母或数字开头，后面跟小写字母、数字、点、下划线或中划线（其中点、下划线、中划线不能直接连续），小写字母或数字结尾，3-64个字符。
+        :param name: 企业仓库实例名称，长度范围为3-64个字符，以小写字母开头，支持小写字母、数字和中划线(-)，不能以中划线(-)结尾，中划线不能连续。
         :type name: str
         :param description: 企业仓库实例描述
         :type description: str
@@ -120,7 +120,7 @@ class CreateInstanceRequestBody:
     def name(self):
         r"""Gets the name of this CreateInstanceRequestBody.
 
-        企业仓库实例名称，小写字母或数字开头，后面跟小写字母、数字、点、下划线或中划线（其中点、下划线、中划线不能直接连续），小写字母或数字结尾，3-64个字符。
+        企业仓库实例名称，长度范围为3-64个字符，以小写字母开头，支持小写字母、数字和中划线(-)，不能以中划线(-)结尾，中划线不能连续。
 
         :return: The name of this CreateInstanceRequestBody.
         :rtype: str
@@ -131,7 +131,7 @@ class CreateInstanceRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateInstanceRequestBody.
 
-        企业仓库实例名称，小写字母或数字开头，后面跟小写字母、数字、点、下划线或中划线（其中点、下划线、中划线不能直接连续），小写字母或数字结尾，3-64个字符。
+        企业仓库实例名称，长度范围为3-64个字符，以小写字母开头，支持小写字母、数字和中划线(-)，不能以中划线(-)结尾，中划线不能连续。
 
         :param name: The name of this CreateInstanceRequestBody.
         :type name: str

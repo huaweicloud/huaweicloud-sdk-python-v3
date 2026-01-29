@@ -33,7 +33,7 @@ class SearchQueryField:
 
         :param name: 字段名
         :type name: str
-        :param type: **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及       
+        :param type: **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及
         :type type: str
         :param alias: 字段别名
         :type alias: str
@@ -77,7 +77,7 @@ class SearchQueryField:
     def type(self):
         r"""Gets the type of this SearchQueryField.
 
-        **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及       
+        **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及
 
         :return: The type of this SearchQueryField.
         :rtype: str
@@ -88,7 +88,7 @@ class SearchQueryField:
     def type(self, type):
         r"""Sets the type of this SearchQueryField.
 
-        **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及       
+        **参数解释**: 数据类型 - boolean 布尔型 - byte 字节型 - short 短整型 - integer 整型 - long 长整型 - float 单精度浮点型 - half_float 半精度浮点型 - scaled_float 缩放浮点型 - double 双精度浮点型 - keyword 关键字型 - text 文本型 - date 日期型 - ip IP地址型 - binary 二进制型 - object 对象型 - nested 嵌套型  **约束限制** 不涉及 **取值范围**: - boolean - byte - short - integer - long - float - half_float - scaled_float - double - keyword - text - date - ip - binary - object - nested  **默认值** 不涉及
 
         :param type: The type of this SearchQueryField.
         :type type: str

@@ -35,7 +35,7 @@ class ListDirectoriesRequest:
         :type project_id: str
         :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param category: **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及        
+        :param category: **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及
         :type category: str
         """
         
@@ -98,7 +98,7 @@ class ListDirectoriesRequest:
     def category(self):
         r"""Gets the category of this ListDirectoriesRequest.
 
-        **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及        
+        **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及
 
         :return: The category of this ListDirectoriesRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListDirectoriesRequest:
     def category(self, category):
         r"""Sets the category of this ListDirectoriesRequest.
 
-        **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及        
+        **参数解释**: 目录类型 - TABLE 表 - PIPE 管道 - RETRIEVE_SCRIPT 检索脚本 - ANALYSIS_SCRIPT 分析脚本 - DATA_TRANSFORMATION 数据加工 - ALERT_RULE 告警规则  **约束限制** 不涉及 **取值范围**: - TABLE - PIPE - RETRIEVE_SCRIPT - ANALYSIS_SCRIPT - DATA_TRANSFORMATION - ALERT_RULE  **默认值** 不涉及
 
         :param category: The category of this ListDirectoriesRequest.
         :type category: str

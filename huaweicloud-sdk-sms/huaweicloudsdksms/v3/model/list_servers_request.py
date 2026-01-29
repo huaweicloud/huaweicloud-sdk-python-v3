@@ -19,13 +19,15 @@ class ListServersRequest:
         'name': 'str',
         'id': 'str',
         'ip': 'str',
+        'ipv6': 'str',
         'migproject': 'str',
         'limit': 'int',
         'offset': 'int',
         'migration_cycle': 'str',
         'connected': 'bool',
         'enterprise_project_id': 'str',
-        'is_consistency_result_exist': 'bool'
+        'is_consistency_result_exist': 'bool',
+        'vm_id': 'str'
     }
 
     attribute_map = {
@@ -33,16 +35,18 @@ class ListServersRequest:
         'name': 'name',
         'id': 'id',
         'ip': 'ip',
+        'ipv6': 'ipv6',
         'migproject': 'migproject',
         'limit': 'limit',
         'offset': 'offset',
         'migration_cycle': 'migration_cycle',
         'connected': 'connected',
         'enterprise_project_id': 'enterprise_project_id',
-        'is_consistency_result_exist': 'is_consistency_result_exist'
+        'is_consistency_result_exist': 'is_consistency_result_exist',
+        'vm_id': 'vm_id'
     }
 
-    def __init__(self, state=None, name=None, id=None, ip=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None, is_consistency_result_exist=None):
+    def __init__(self, state=None, name=None, id=None, ip=None, ipv6=None, migproject=None, limit=None, offset=None, migration_cycle=None, connected=None, enterprise_project_id=None, is_consistency_result_exist=None, vm_id=None):
         r"""ListServersRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,8 @@ class ListServersRequest:
         :type id: str
         :param ip: 源端服务器IP地址
         :type ip: str
+        :param ipv6: 源端服务器IPV6地址，优先使用IP进行查询
+        :type ipv6: str
         :param migproject: 迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
         :type migproject: str
         :param limit: 每一页记录的源端服务器数量，0表示用默认值 200
@@ -69,6 +75,8 @@ class ListServersRequest:
         :type enterprise_project_id: str
         :param is_consistency_result_exist: 是否存在一致性校验结果
         :type is_consistency_result_exist: bool
+        :param vm_id: 平台的克隆服务器id
+        :type vm_id: str
         """
         
         
@@ -77,6 +85,7 @@ class ListServersRequest:
         self._name = None
         self._id = None
         self._ip = None
+        self._ipv6 = None
         self._migproject = None
         self._limit = None
         self._offset = None
@@ -84,6 +93,7 @@ class ListServersRequest:
         self._connected = None
         self._enterprise_project_id = None
         self._is_consistency_result_exist = None
+        self._vm_id = None
         self.discriminator = None
 
         if state is not None:
@@ -94,6 +104,8 @@ class ListServersRequest:
             self.id = id
         if ip is not None:
             self.ip = ip
+        if ipv6 is not None:
+            self.ipv6 = ipv6
         if migproject is not None:
             self.migproject = migproject
         if limit is not None:
@@ -108,6 +120,8 @@ class ListServersRequest:
             self.enterprise_project_id = enterprise_project_id
         if is_consistency_result_exist is not None:
             self.is_consistency_result_exist = is_consistency_result_exist
+        if vm_id is not None:
+            self.vm_id = vm_id
 
     @property
     def state(self):
@@ -196,6 +210,28 @@ class ListServersRequest:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def ipv6(self):
+        r"""Gets the ipv6 of this ListServersRequest.
+
+        源端服务器IPV6地址，优先使用IP进行查询
+
+        :return: The ipv6 of this ListServersRequest.
+        :rtype: str
+        """
+        return self._ipv6
+
+    @ipv6.setter
+    def ipv6(self, ipv6):
+        r"""Sets the ipv6 of this ListServersRequest.
+
+        源端服务器IPV6地址，优先使用IP进行查询
+
+        :param ipv6: The ipv6 of this ListServersRequest.
+        :type ipv6: str
+        """
+        self._ipv6 = ipv6
 
     @property
     def migproject(self):
@@ -350,6 +386,28 @@ class ListServersRequest:
         :type is_consistency_result_exist: bool
         """
         self._is_consistency_result_exist = is_consistency_result_exist
+
+    @property
+    def vm_id(self):
+        r"""Gets the vm_id of this ListServersRequest.
+
+        平台的克隆服务器id
+
+        :return: The vm_id of this ListServersRequest.
+        :rtype: str
+        """
+        return self._vm_id
+
+    @vm_id.setter
+    def vm_id(self, vm_id):
+        r"""Sets the vm_id of this ListServersRequest.
+
+        平台的克隆服务器id
+
+        :param vm_id: The vm_id of this ListServersRequest.
+        :type vm_id: str
+        """
+        self._vm_id = vm_id
 
     def to_dict(self):
         result = {}

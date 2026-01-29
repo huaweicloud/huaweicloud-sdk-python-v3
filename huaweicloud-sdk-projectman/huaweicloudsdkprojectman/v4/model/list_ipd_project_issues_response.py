@@ -17,7 +17,7 @@ class ListIpdProjectIssuesResponse(SdkResponse):
 
     openapi_types = {
         'message': 'str',
-        'result': 'object',
+        'result': 'IssueListResult',
         'status': 'str'
     }
 
@@ -34,8 +34,8 @@ class ListIpdProjectIssuesResponse(SdkResponse):
 
         :param message: 返回信息
         :type message: str
-        :param result: 返回对象
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkprojectman.v4.IssueListResult`
         :param status: 返回状态
         :type status: str
         """
@@ -80,10 +80,8 @@ class ListIpdProjectIssuesResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ListIpdProjectIssuesResponse.
 
-        返回对象
-
         :return: The result of this ListIpdProjectIssuesResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueListResult`
         """
         return self._result
 
@@ -91,10 +89,8 @@ class ListIpdProjectIssuesResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ListIpdProjectIssuesResponse.
 
-        返回对象
-
         :param result: The result of this ListIpdProjectIssuesResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkprojectman.v4.IssueListResult`
         """
         self._result = result
 

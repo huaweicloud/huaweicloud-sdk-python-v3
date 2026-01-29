@@ -2041,6 +2041,144 @@ class ProjectManClient(Client):
 
         return http_info
 
+    def delete_ipd_image_in_issue(self, request):
+        r"""删除工作项描述中的图片
+
+        删除工作项描述中的图片
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteIpdImageInIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIpdImageInIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIpdImageInIssueResponse`
+        """
+        http_info = self._delete_ipd_image_in_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ipd_image_in_issue_invoker(self, request):
+        http_info = self._delete_ipd_image_in_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ipd_image_in_issue_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/ipdprojectservice/projects/{project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpdImageInIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_id' in local_var_params:
+            query_params.append(('issue_id', local_var_params['issue_id']))
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_ipd_image_in_issue(self, request):
+        r"""下载工作项描述中的图片
+
+        下载工作项描述中的图片
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadIpdImageInIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.DownloadIpdImageInIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadIpdImageInIssueResponse`
+        """
+        http_info = self._download_ipd_image_in_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_ipd_image_in_issue_invoker(self, request):
+        http_info = self._download_ipd_image_in_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_ipd_image_in_issue_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/ipdprojectservice/projects/{project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadIpdImageInIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_id' in local_var_params:
+            query_params.append(('issue_id', local_var_params['issue_id']))
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ipd_project_issues(self, request):
         r"""查询项目工作项列表
 
@@ -2512,6 +2650,77 @@ class ProjectManClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_ipd_image_in_issue(self, request):
+        r"""上传图片到工作项描述中
+
+        上传图片并更新到工作项描述中
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadIpdImageInIssue
+        :type request: :class:`huaweicloudsdkprojectman.v4.UploadIpdImageInIssueRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIpdImageInIssueResponse`
+        """
+        http_info = self._upload_ipd_image_in_issue_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_ipd_image_in_issue_invoker(self, request):
+        http_info = self._upload_ipd_image_in_issue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_ipd_image_in_issue_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/ipdprojectservice/projects/{project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadIpdImageInIssueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'issue_id' in local_var_params:
+            query_params.append(('issue_id', local_var_params['issue_id']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
 
         auth_settings = ['apig-auth-iam']
 

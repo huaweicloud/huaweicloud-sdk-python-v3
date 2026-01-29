@@ -18,17 +18,21 @@ class TaxInfo:
         'tax_class': 'str',
         'tax_rate': 'str',
         'sub_tax_class': 'str',
-        'tax_amount': 'decimal.Decimal'
+        'tax_amount': 'decimal.Decimal',
+        'tax_visible_flag': 'str',
+        'tax_accounting_flag': 'str'
     }
 
     attribute_map = {
         'tax_class': 'taxClass',
         'tax_rate': 'taxRate',
         'sub_tax_class': 'subTaxClass',
-        'tax_amount': 'taxAmount'
+        'tax_amount': 'taxAmount',
+        'tax_visible_flag': 'taxVisibleFlag',
+        'tax_accounting_flag': 'taxAccountingFlag'
     }
 
-    def __init__(self, tax_class=None, tax_rate=None, sub_tax_class=None, tax_amount=None):
+    def __init__(self, tax_class=None, tax_rate=None, sub_tax_class=None, tax_amount=None, tax_visible_flag=None, tax_accounting_flag=None):
         r"""TaxInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class TaxInfo:
         :type sub_tax_class: str
         :param tax_amount: 税金金额。 单位：美元
         :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        :param tax_visible_flag: |参数名称：是否展示| |参数的约束及描述：是否展示。Y：展示 N：不展示|
+        :type tax_visible_flag: str
+        :param tax_accounting_flag: |参数名称：是否入账| |参数的约束及描述：是否入账。Y：入账 N：不入账|
+        :type tax_accounting_flag: str
         """
         
         
@@ -49,6 +57,8 @@ class TaxInfo:
         self._tax_rate = None
         self._sub_tax_class = None
         self._tax_amount = None
+        self._tax_visible_flag = None
+        self._tax_accounting_flag = None
         self.discriminator = None
 
         if tax_class is not None:
@@ -59,6 +69,10 @@ class TaxInfo:
             self.sub_tax_class = sub_tax_class
         if tax_amount is not None:
             self.tax_amount = tax_amount
+        if tax_visible_flag is not None:
+            self.tax_visible_flag = tax_visible_flag
+        if tax_accounting_flag is not None:
+            self.tax_accounting_flag = tax_accounting_flag
 
     @property
     def tax_class(self):
@@ -147,6 +161,50 @@ class TaxInfo:
         :type tax_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._tax_amount = tax_amount
+
+    @property
+    def tax_visible_flag(self):
+        r"""Gets the tax_visible_flag of this TaxInfo.
+
+        |参数名称：是否展示| |参数的约束及描述：是否展示。Y：展示 N：不展示|
+
+        :return: The tax_visible_flag of this TaxInfo.
+        :rtype: str
+        """
+        return self._tax_visible_flag
+
+    @tax_visible_flag.setter
+    def tax_visible_flag(self, tax_visible_flag):
+        r"""Sets the tax_visible_flag of this TaxInfo.
+
+        |参数名称：是否展示| |参数的约束及描述：是否展示。Y：展示 N：不展示|
+
+        :param tax_visible_flag: The tax_visible_flag of this TaxInfo.
+        :type tax_visible_flag: str
+        """
+        self._tax_visible_flag = tax_visible_flag
+
+    @property
+    def tax_accounting_flag(self):
+        r"""Gets the tax_accounting_flag of this TaxInfo.
+
+        |参数名称：是否入账| |参数的约束及描述：是否入账。Y：入账 N：不入账|
+
+        :return: The tax_accounting_flag of this TaxInfo.
+        :rtype: str
+        """
+        return self._tax_accounting_flag
+
+    @tax_accounting_flag.setter
+    def tax_accounting_flag(self, tax_accounting_flag):
+        r"""Sets the tax_accounting_flag of this TaxInfo.
+
+        |参数名称：是否入账| |参数的约束及描述：是否入账。Y：入账 N：不入账|
+
+        :param tax_accounting_flag: The tax_accounting_flag of this TaxInfo.
+        :type tax_accounting_flag: str
+        """
+        self._tax_accounting_flag = tax_accounting_flag
 
     def to_dict(self):
         result = {}

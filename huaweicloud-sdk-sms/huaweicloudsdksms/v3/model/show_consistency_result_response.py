@@ -16,7 +16,7 @@ class ShowConsistencyResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result_list': 'list[ConsistencyResultRequestBodyResultList]',
+        'result_list': 'list[str]',
         'task_id': 'str'
     }
 
@@ -31,7 +31,7 @@ class ShowConsistencyResultResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param result_list: 一致性校验结果列表
-        :type result_list: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
+        :type result_list: list[str]
         :param task_id: 任务id
         :type task_id: str
         """
@@ -54,7 +54,7 @@ class ShowConsistencyResultResponse(SdkResponse):
         一致性校验结果列表
 
         :return: The result_list of this ShowConsistencyResultResponse.
-        :rtype: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
+        :rtype: list[str]
         """
         return self._result_list
 
@@ -65,7 +65,7 @@ class ShowConsistencyResultResponse(SdkResponse):
         一致性校验结果列表
 
         :param result_list: The result_list of this ShowConsistencyResultResponse.
-        :type result_list: list[:class:`huaweicloudsdksms.v3.ConsistencyResultRequestBodyResultList`]
+        :type result_list: list[str]
         """
         self._result_list = result_list
 

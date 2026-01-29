@@ -16,7 +16,7 @@ class DataObjectDetail:
 
     openapi_types = {
         'create_time': 'str',
-        'dataobject': 'object',
+        'data_object': 'object',
         'dataclass_ref': 'AlertDetailDataclassRef',
         'format_version': 'int',
         'id': 'str',
@@ -28,7 +28,7 @@ class DataObjectDetail:
 
     attribute_map = {
         'create_time': 'create_time',
-        'dataobject': 'dataobject',
+        'data_object': 'data_object',
         'dataclass_ref': 'dataclass_ref',
         'format_version': 'format_version',
         'id': 'id',
@@ -38,15 +38,15 @@ class DataObjectDetail:
         'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, create_time=None, dataobject=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
+    def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
         r"""DataObjectDetail
 
         The model defined in huaweicloud sdk
 
         :param create_time: 记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type create_time: str
-        :param dataobject: 数据对象
-        :type dataobject: object
+        :param data_object: 数据对象
+        :type data_object: object
         :param dataclass_ref: 
         :type dataclass_ref: :class:`huaweicloudsdksecmaster.v1.AlertDetailDataclassRef`
         :param format_version: 格式版本
@@ -66,7 +66,7 @@ class DataObjectDetail:
         
 
         self._create_time = None
-        self._dataobject = None
+        self._data_object = None
         self._dataclass_ref = None
         self._format_version = None
         self._id = None
@@ -78,8 +78,8 @@ class DataObjectDetail:
 
         if create_time is not None:
             self.create_time = create_time
-        if dataobject is not None:
-            self.dataobject = dataobject
+        if data_object is not None:
+            self.data_object = data_object
         if dataclass_ref is not None:
             self.dataclass_ref = dataclass_ref
         if format_version is not None:
@@ -118,26 +118,26 @@ class DataObjectDetail:
         self._create_time = create_time
 
     @property
-    def dataobject(self):
-        r"""Gets the dataobject of this DataObjectDetail.
+    def data_object(self):
+        r"""Gets the data_object of this DataObjectDetail.
 
         数据对象
 
-        :return: The dataobject of this DataObjectDetail.
+        :return: The data_object of this DataObjectDetail.
         :rtype: object
         """
-        return self._dataobject
+        return self._data_object
 
-    @dataobject.setter
-    def dataobject(self, dataobject):
-        r"""Sets the dataobject of this DataObjectDetail.
+    @data_object.setter
+    def data_object(self, data_object):
+        r"""Sets the data_object of this DataObjectDetail.
 
         数据对象
 
-        :param dataobject: The dataobject of this DataObjectDetail.
-        :type dataobject: object
+        :param data_object: The data_object of this DataObjectDetail.
+        :type data_object: object
         """
-        self._dataobject = dataobject
+        self._data_object = data_object
 
     @property
     def dataclass_ref(self):

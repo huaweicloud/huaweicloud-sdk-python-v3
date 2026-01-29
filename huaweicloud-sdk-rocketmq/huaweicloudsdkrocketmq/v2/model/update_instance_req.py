@@ -39,9 +39,9 @@ class UpdateInstanceReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+        :param name: **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param description: **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param description: **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\&quot;。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type description: str
         :param security_group_id: **参数解释**： 安全组ID。 获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
@@ -85,7 +85,7 @@ class UpdateInstanceReq:
     def name(self):
         r"""Gets the name of this UpdateInstanceReq.
 
-        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this UpdateInstanceReq.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateInstanceReq:
     def name(self, name):
         r"""Sets the name of this UpdateInstanceReq.
 
-        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： - true：开启弹性TPS。 - false：不开启弹性TPS。 **默认取值**： 不涉及。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this UpdateInstanceReq.
         :type name: str
@@ -107,7 +107,7 @@ class UpdateInstanceReq:
     def description(self):
         r"""Gets the description of this UpdateInstanceReq.
 
-        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The description of this UpdateInstanceReq.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateInstanceReq:
     def description(self, description):
         r"""Sets the description of this UpdateInstanceReq.
 
-        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param description: The description of this UpdateInstanceReq.
         :type description: str

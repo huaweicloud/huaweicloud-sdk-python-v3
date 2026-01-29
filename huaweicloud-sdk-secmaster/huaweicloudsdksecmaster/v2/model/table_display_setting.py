@@ -31,7 +31,7 @@ class TableDisplaySetting:
 
         :param columns: 表格列展示列表
         :type columns: list[:class:`huaweicloudsdksecmaster.v2.TableColumnDisplaySetting`]
-        :param format: **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及   
+        :param format: **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及
         :type format: str
         """
         
@@ -72,7 +72,7 @@ class TableDisplaySetting:
     def format(self):
         r"""Gets the format of this TableDisplaySetting.
 
-        **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及   
+        **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及
 
         :return: The format of this TableDisplaySetting.
         :rtype: str
@@ -83,7 +83,7 @@ class TableDisplaySetting:
     def format(self, format):
         r"""Sets the format of this TableDisplaySetting.
 
-        **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及   
+        **参数解释**: 表展示设置 - TABLE 表展示 - RAW 原始数据展示  **约束限制** 不涉及 **取值范围**: - TABLE - RAW  **默认值** 不涉及
 
         :param format: The format of this TableDisplaySetting.
         :type format: str

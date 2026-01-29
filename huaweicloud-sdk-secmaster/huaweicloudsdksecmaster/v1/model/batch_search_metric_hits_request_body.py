@@ -35,9 +35,9 @@ class BatchSearchMetricHitsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param metric_ids: 待查询的指标Id列表, 可参照附录中指标信息说明获取已有指标信息。
+        :param metric_ids: 待查询的指标Id列表，可参照附录中指标信息说明获取已有指标信息。
         :type metric_ids: list[str]
-        :param workspace_ids: 工作空间列表, 当指标支持获取多工作空间数据时填写。
+        :param workspace_ids: 工作空间列表，当指标支持获取多工作空间数据时填写。
         :type workspace_ids: list[str]
         :param params: 待查询指标的参数列表，列表内每个元素为&lt;String, String&gt;的K-V形式，元素数量必须与metric_ids列表相同，具体填写方式请参照附录。
         :type params: list[dict(str, str)]
@@ -70,7 +70,7 @@ class BatchSearchMetricHitsRequestBody:
     def metric_ids(self):
         r"""Gets the metric_ids of this BatchSearchMetricHitsRequestBody.
 
-        待查询的指标Id列表, 可参照附录中指标信息说明获取已有指标信息。
+        待查询的指标Id列表，可参照附录中指标信息说明获取已有指标信息。
 
         :return: The metric_ids of this BatchSearchMetricHitsRequestBody.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class BatchSearchMetricHitsRequestBody:
     def metric_ids(self, metric_ids):
         r"""Sets the metric_ids of this BatchSearchMetricHitsRequestBody.
 
-        待查询的指标Id列表, 可参照附录中指标信息说明获取已有指标信息。
+        待查询的指标Id列表，可参照附录中指标信息说明获取已有指标信息。
 
         :param metric_ids: The metric_ids of this BatchSearchMetricHitsRequestBody.
         :type metric_ids: list[str]
@@ -92,7 +92,7 @@ class BatchSearchMetricHitsRequestBody:
     def workspace_ids(self):
         r"""Gets the workspace_ids of this BatchSearchMetricHitsRequestBody.
 
-        工作空间列表, 当指标支持获取多工作空间数据时填写。
+        工作空间列表，当指标支持获取多工作空间数据时填写。
 
         :return: The workspace_ids of this BatchSearchMetricHitsRequestBody.
         :rtype: list[str]
@@ -103,7 +103,7 @@ class BatchSearchMetricHitsRequestBody:
     def workspace_ids(self, workspace_ids):
         r"""Sets the workspace_ids of this BatchSearchMetricHitsRequestBody.
 
-        工作空间列表, 当指标支持获取多工作空间数据时填写。
+        工作空间列表，当指标支持获取多工作空间数据时填写。
 
         :param workspace_ids: The workspace_ids of this BatchSearchMetricHitsRequestBody.
         :type workspace_ids: list[str]

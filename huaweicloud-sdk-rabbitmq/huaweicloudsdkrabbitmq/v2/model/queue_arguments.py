@@ -39,7 +39,7 @@ class QueueArguments:
         :type x_dead_letter_exchange: str
         :param x_dead_letter_routing_key: **参数解释**： 死信的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。 **取值范围**： 不涉及。
         :type x_dead_letter_routing_key: str
-        :param x_queue_mode: **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        :param x_queue_mode: **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
         :type x_queue_mode: str
         """
         
@@ -130,7 +130,7 @@ class QueueArguments:
     def x_queue_mode(self):
         r"""Gets the x_queue_mode of this QueueArguments.
 
-        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
 
         :return: The x_queue_mode of this QueueArguments.
         :rtype: str
@@ -141,7 +141,7 @@ class QueueArguments:
     def x_queue_mode(self, x_queue_mode):
         r"""Sets the x_queue_mode of this QueueArguments.
 
-        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu)。 **取值范围**： 不涉及。
+        **参数解释**： 惰性队列[（AMQP版本默认持久化所有消息，不涉及此参数）](tag:hws,hws_hk,hws_eu,srg)。 **取值范围**： 不涉及。
 
         :param x_queue_mode: The x_queue_mode of this QueueArguments.
         :type x_queue_mode: str

@@ -46,9 +46,12 @@ class BatchConsistencyReq:
         self._source_name = None
         self.discriminator = None
 
-        self.task_id = task_id
-        self.source_id = source_id
-        self.source_name = source_name
+        if task_id is not None:
+            self.task_id = task_id
+        if source_id is not None:
+            self.source_id = source_id
+        if source_name is not None:
+            self.source_name = source_name
 
     @property
     def task_id(self):

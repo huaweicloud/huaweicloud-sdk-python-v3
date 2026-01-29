@@ -15,7 +15,6 @@ class MigProject:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'name': 'str',
         'description': 'str',
         'isdefault': 'bool',
@@ -31,7 +30,6 @@ class MigProject:
     }
 
     attribute_map = {
-        'id': 'id',
         'name': 'name',
         'description': 'description',
         'isdefault': 'isdefault',
@@ -46,14 +44,12 @@ class MigProject:
         'start_network_check': 'start_network_check'
     }
 
-    def __init__(self, id=None, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
+    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
         r"""MigProject
 
         The model defined in huaweicloud sdk
 
-        :param id: 迁移项目ID
-        :type id: str
-        :param name: 迁移项目名称
+        :param name: 迁移项目名称，只能由中文字符、英文字母、数字、下划线、短横线组成
         :type name: str
         :param description: 迁移项目描述
         :type description: str
@@ -81,7 +77,6 @@ class MigProject:
         
         
 
-        self._id = None
         self._name = None
         self._description = None
         self._isdefault = None
@@ -96,54 +91,36 @@ class MigProject:
         self._start_network_check = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        self.name = name
+        if name is not None:
+            self.name = name
         if description is not None:
             self.description = description
         if isdefault is not None:
             self.isdefault = isdefault
-        self.region = region
+        if region is not None:
+            self.region = region
         if start_target_server is not None:
             self.start_target_server = start_target_server
         if speed_limit is not None:
             self.speed_limit = speed_limit
-        self.use_public_ip = use_public_ip
-        self.exist_server = exist_server
-        self.type = type
+        if use_public_ip is not None:
+            self.use_public_ip = use_public_ip
+        if exist_server is not None:
+            self.exist_server = exist_server
+        if type is not None:
+            self.type = type
         if enterprise_project is not None:
             self.enterprise_project = enterprise_project
-        self.syncing = syncing
+        if syncing is not None:
+            self.syncing = syncing
         if start_network_check is not None:
             self.start_network_check = start_network_check
-
-    @property
-    def id(self):
-        r"""Gets the id of this MigProject.
-
-        迁移项目ID
-
-        :return: The id of this MigProject.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this MigProject.
-
-        迁移项目ID
-
-        :param id: The id of this MigProject.
-        :type id: str
-        """
-        self._id = id
 
     @property
     def name(self):
         r"""Gets the name of this MigProject.
 
-        迁移项目名称
+        迁移项目名称，只能由中文字符、英文字母、数字、下划线、短横线组成
 
         :return: The name of this MigProject.
         :rtype: str
@@ -154,7 +131,7 @@ class MigProject:
     def name(self, name):
         r"""Sets the name of this MigProject.
 
-        迁移项目名称
+        迁移项目名称，只能由中文字符、英文字母、数字、下划线、短横线组成
 
         :param name: The name of this MigProject.
         :type name: str

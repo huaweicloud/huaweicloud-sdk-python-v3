@@ -37,7 +37,7 @@ class ExportAppUserAccessDataRequestBody:
 
         :param start_time: 查询起始时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z\&quot;。
         :type start_time: str
-        :param end_time: 查询截至时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z\&quot;。
+        :param end_time: 查询截止时间，格式为：UTC格式，例如\&quot;2022-05-11T11:45:42Z\&quot;。
         :type end_time: str
         :param username: 用户名(模糊匹配)。
         :type username: str
@@ -91,7 +91,7 @@ class ExportAppUserAccessDataRequestBody:
     def end_time(self):
         r"""Gets the end_time of this ExportAppUserAccessDataRequestBody.
 
-        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"。
+        查询截止时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"。
 
         :return: The end_time of this ExportAppUserAccessDataRequestBody.
         :rtype: str
@@ -102,7 +102,7 @@ class ExportAppUserAccessDataRequestBody:
     def end_time(self, end_time):
         r"""Sets the end_time of this ExportAppUserAccessDataRequestBody.
 
-        查询截至时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"。
+        查询截止时间，格式为：UTC格式，例如\"2022-05-11T11:45:42Z\"。
 
         :param end_time: The end_time of this ExportAppUserAccessDataRequestBody.
         :type end_time: str

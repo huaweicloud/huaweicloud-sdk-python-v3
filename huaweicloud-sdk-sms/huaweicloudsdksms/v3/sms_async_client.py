@@ -920,8 +920,6 @@ class SmsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-        if 'migproject' in local_var_params:
-            query_params.append(('migproject', local_var_params['migproject']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
@@ -1062,6 +1060,8 @@ class SmsAsyncClient(Client):
             query_params.append(('id', local_var_params['id']))
         if 'ip' in local_var_params:
             query_params.append(('ip', local_var_params['ip']))
+        if 'ipv6' in local_var_params:
+            query_params.append(('ipv6', local_var_params['ipv6']))
         if 'migproject' in local_var_params:
             query_params.append(('migproject', local_var_params['migproject']))
         if 'limit' in local_var_params:
@@ -1076,6 +1076,8 @@ class SmsAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'is_consistency_result_exist' in local_var_params:
             query_params.append(('is_consistency_result_exist', local_var_params['is_consistency_result_exist']))
+        if 'vm_id' in local_var_params:
+            query_params.append(('vm_id', local_var_params['vm_id']))
 
         header_params = {}
 
@@ -1226,6 +1228,8 @@ class SmsAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
 
         header_params = {}
 
@@ -2301,6 +2305,7 @@ class SmsAsyncClient(Client):
         r"""更新任务对应源端复制状态
 
         更新任务对应源端复制状态。
+        在以下情况下不校验请求参数且更新不会生效：“迁移服务器”列表中“实时状态”一栏为“校验失败”、“暂停中”、“已暂停”、“删除中”、“迁移已完成”、“资源清理中”、“资源清理失败”时。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2433,6 +2438,7 @@ class SmsAsyncClient(Client):
         r"""更新磁盘信息
 
         更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息。
+        接口仅在“待设置目的端”才能生效，开始迁移后更改磁盘信息不生效。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2902,7 +2908,7 @@ class SmsAsyncClient(Client):
     def update_task_status_async(self, request):
         r"""管理迁移任务
 
-        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务，删除快照资源。
+        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，删除快照资源等。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3176,7 +3182,7 @@ class SmsAsyncClient(Client):
     def list_api_version_async(self, request):
         r"""查询主机迁移服务的API版本信息
 
-        查询主机迁移服务的API版本信息。
+        查询主机迁移服务的API版本信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -19,7 +19,8 @@ class ListTemplatesRequest:
         'availability_zone': 'str',
         'region': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ListTemplatesRequest:
         'availability_zone': 'availability_zone',
         'region': 'region',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'id': 'id'
     }
 
-    def __init__(self, name=None, availability_zone=None, region=None, limit=None, offset=None):
+    def __init__(self, name=None, availability_zone=None, region=None, limit=None, offset=None, id=None):
         r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListTemplatesRequest:
         :type limit: int
         :param offset: 偏移量，不传值默认为0
         :type offset: int
+        :param id: 模板id
+        :type id: str
         """
         
         
@@ -54,6 +58,7 @@ class ListTemplatesRequest:
         self._region = None
         self._limit = None
         self._offset = None
+        self._id = None
         self.discriminator = None
 
         if name is not None:
@@ -66,6 +71,8 @@ class ListTemplatesRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if id is not None:
+            self.id = id
 
     @property
     def name(self):
@@ -176,6 +183,28 @@ class ListTemplatesRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def id(self):
+        r"""Gets the id of this ListTemplatesRequest.
+
+        模板id
+
+        :return: The id of this ListTemplatesRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ListTemplatesRequest.
+
+        模板id
+
+        :param id: The id of this ListTemplatesRequest.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         result = {}

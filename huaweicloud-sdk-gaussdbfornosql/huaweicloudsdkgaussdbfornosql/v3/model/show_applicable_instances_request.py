@@ -17,16 +17,20 @@ class ShowApplicableInstancesRequest:
     openapi_types = {
         'config_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'instance_name': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
         'config_id': 'config_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'instance_name': 'instance_name',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, config_id=None, offset=None, limit=None):
+    def __init__(self, config_id=None, offset=None, limit=None, instance_name=None, instance_id=None):
         r"""ShowApplicableInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ShowApplicableInstancesRequest:
         :type offset: int
         :param limit: 查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
         :type limit: int
+        :param instance_name: **参数解释：** 实例名称，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instance_name: str
+        :param instance_id: **参数解释：** 实例ID，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instance_id: str
         """
         
         
@@ -44,6 +52,8 @@ class ShowApplicableInstancesRequest:
         self._config_id = None
         self._offset = None
         self._limit = None
+        self._instance_name = None
+        self._instance_id = None
         self.discriminator = None
 
         self.config_id = config_id
@@ -51,6 +61,10 @@ class ShowApplicableInstancesRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def config_id(self):
@@ -117,6 +131,50 @@ class ShowApplicableInstancesRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def instance_name(self):
+        r"""Gets the instance_name of this ShowApplicableInstancesRequest.
+
+        **参数解释：** 实例名称，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The instance_name of this ShowApplicableInstancesRequest.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        r"""Sets the instance_name of this ShowApplicableInstancesRequest.
+
+        **参数解释：** 实例名称，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param instance_name: The instance_name of this ShowApplicableInstancesRequest.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this ShowApplicableInstancesRequest.
+
+        **参数解释：** 实例ID，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The instance_id of this ShowApplicableInstancesRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ShowApplicableInstancesRequest.
+
+        **参数解释：** 实例ID，支持模糊搜索。 **约束限制：** 不涉及。 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param instance_id: The instance_id of this ShowApplicableInstancesRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         result = {}

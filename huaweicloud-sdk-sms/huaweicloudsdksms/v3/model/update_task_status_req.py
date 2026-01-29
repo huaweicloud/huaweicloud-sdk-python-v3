@@ -33,11 +33,11 @@ class UpdateTaskStatusReq:
 
         The model defined in huaweicloud sdk
 
-        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练
+        :param operation: 操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 cutover:启动目的端 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练 error_for_overspeed:处理任务超速，任务自动暂停
         :type operation: str
         :param template_id: 模板id
         :type template_id: str
-        :param switch_hce: 是否切换hce
+        :param switch_hce: 是否切换hce，仅支持linux的迁移任务
         :type switch_hce: bool
         :param is_need_consistency_check: 是否进行一致性校验
         :type is_need_consistency_check: bool
@@ -63,7 +63,7 @@ class UpdateTaskStatusReq:
     def operation(self):
         r"""Gets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 cutover:启动目的端 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练 error_for_overspeed:处理任务超速，任务自动暂停
 
         :return: The operation of this UpdateTaskStatusReq.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateTaskStatusReq:
     def operation(self, operation):
         r"""Sets the operation of this UpdateTaskStatusReq.
 
-        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练
+        操作任务的具体动作 start:开始任务 stop:停止任务 test:测试 cutover:启动目的端 clone_test:克隆测试 restart:重新开始 network_check:网络质量检测 skip:跳过一致性校验子任务 clear:清理快照资源 migration_test: 开始迁移演练 error_for_overspeed:处理任务超速，任务自动暂停
 
         :param operation: The operation of this UpdateTaskStatusReq.
         :type operation: str
@@ -107,7 +107,7 @@ class UpdateTaskStatusReq:
     def switch_hce(self):
         r"""Gets the switch_hce of this UpdateTaskStatusReq.
 
-        是否切换hce
+        是否切换hce，仅支持linux的迁移任务
 
         :return: The switch_hce of this UpdateTaskStatusReq.
         :rtype: bool
@@ -118,7 +118,7 @@ class UpdateTaskStatusReq:
     def switch_hce(self, switch_hce):
         r"""Sets the switch_hce of this UpdateTaskStatusReq.
 
-        是否切换hce
+        是否切换hce，仅支持linux的迁移任务
 
         :param switch_hce: The switch_hce of this UpdateTaskStatusReq.
         :type switch_hce: bool

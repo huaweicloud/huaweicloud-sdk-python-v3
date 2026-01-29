@@ -309,6 +309,75 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
+    def create_collect_config_async(self, request):
+        r"""保存云服务采集配置
+
+        保存云服务采集配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCollectConfig
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateCollectConfigRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateCollectConfigResponse`
+        """
+        http_info = self._create_collect_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_collect_config_async_invoker(self, request):
+        http_info = self._create_collect_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_collect_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/collector/cloudlogs/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCollectConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_customized_checkitem_async(self, request):
         r"""新增自定义检查项
 
@@ -683,6 +752,75 @@ class SecMasterAsyncClient(Client):
             "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts",
             "request_type": request.__class__.__name__,
             "response_type": "CreateRetrieveScriptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_sql_render_async(self, request):
+        r"""Adhoc sql参数渲染
+
+        Adhoc sql参数渲染
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSqlRender
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateSqlRenderRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateSqlRenderResponse`
+        """
+        http_info = self._create_sql_render_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_render_async_invoker(self, request):
+        http_info = self._create_sql_render_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_render_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/ad-hoc-queries/sql-render",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlRenderResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2496,6 +2634,87 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
+    def list_collect_config_async(self, request):
+        r"""获取云服务采集配置
+
+        获取云服务采集配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCollectConfig
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponse`
+        """
+        http_info = self._list_collect_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_collect_config_async_invoker(self, request):
+        http_info = self._list_collect_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_collect_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/collector/cloudlogs/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCollectConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'csvc' in local_var_params:
+            query_params.append(('csvc', local_var_params['csvc']))
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
+        if 'query_statistics' in local_var_params:
+            query_params.append(('query_statistics', local_var_params['query_statistics']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_data_transformation_metrics_async(self, request):
         r"""数据加工总览
 
@@ -2909,10 +3128,10 @@ class SecMasterAsyncClient(Client):
         query_params = []
         if 'table_id' in local_var_params:
             query_params.append(('table_id', local_var_params['table_id']))
-        if 'script_name' in local_var_params:
-            query_params.append(('script_name', local_var_params['script_name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'script_name' in local_var_params:
+            query_params.append(('script_name', local_var_params['script_name']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'sort_key' in local_var_params:

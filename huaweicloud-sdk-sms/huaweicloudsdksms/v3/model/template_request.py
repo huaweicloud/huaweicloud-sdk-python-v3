@@ -57,7 +57,7 @@ class TemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 模板名称
+        :param name: 模板名称 仅由中文字符、下划线、短横线、数字、英文大小写字母组成
         :type name: str
         :param is_template: 是否是通用模板，如果模板关联一个任务，则不算通用模板
         :type is_template: bool
@@ -69,7 +69,7 @@ class TemplateRequest:
         :type target_server_name: str
         :param availability_zone: 可用区
         :type availability_zone: str
-        :param volumetype: 磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        :param volumetype: 磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
         :type volumetype: str
         :param flavor: 虚拟机规格
         :type flavor: str
@@ -83,7 +83,7 @@ class TemplateRequest:
         :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
         :param disk: 磁盘信息
         :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
-        :param data_volume_type: 数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        :param data_volume_type: 数据盘磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
         :type data_volume_type: str
         :param target_password: 目的端密码
         :type target_password: str
@@ -112,9 +112,12 @@ class TemplateRequest:
         self.discriminator = None
 
         self.name = name
-        self.is_template = is_template
-        self.region = region
-        self.projectid = projectid
+        if is_template is not None:
+            self.is_template = is_template
+        if region is not None:
+            self.region = region
+        if projectid is not None:
+            self.projectid = projectid
         if target_server_name is not None:
             self.target_server_name = target_server_name
         if availability_zone is not None:
@@ -144,7 +147,7 @@ class TemplateRequest:
     def name(self):
         r"""Gets the name of this TemplateRequest.
 
-        模板名称
+        模板名称 仅由中文字符、下划线、短横线、数字、英文大小写字母组成
 
         :return: The name of this TemplateRequest.
         :rtype: str
@@ -155,7 +158,7 @@ class TemplateRequest:
     def name(self, name):
         r"""Sets the name of this TemplateRequest.
 
-        模板名称
+        模板名称 仅由中文字符、下划线、短横线、数字、英文大小写字母组成
 
         :param name: The name of this TemplateRequest.
         :type name: str
@@ -276,7 +279,7 @@ class TemplateRequest:
     def volumetype(self):
         r"""Gets the volumetype of this TemplateRequest.
 
-        磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :return: The volumetype of this TemplateRequest.
         :rtype: str
@@ -287,7 +290,7 @@ class TemplateRequest:
     def volumetype(self, volumetype):
         r"""Sets the volumetype of this TemplateRequest.
 
-        磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :param volumetype: The volumetype of this TemplateRequest.
         :type volumetype: str
@@ -422,7 +425,7 @@ class TemplateRequest:
     def data_volume_type(self):
         r"""Gets the data_volume_type of this TemplateRequest.
 
-        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        数据盘磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :return: The data_volume_type of this TemplateRequest.
         :rtype: str
@@ -433,7 +436,7 @@ class TemplateRequest:
     def data_volume_type(self, data_volume_type):
         r"""Sets the data_volume_type of this TemplateRequest.
 
-        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
+        数据盘磁盘类型 （非枚举数据，来源于EVS服务） 常见类型如：SAS:串行连接SCSI，SSD:固态硬盘，SATA:串口硬盘等。 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :param data_volume_type: The data_volume_type of this TemplateRequest.
         :type data_volume_type: str

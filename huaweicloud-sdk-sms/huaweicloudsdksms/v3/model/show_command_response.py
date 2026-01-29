@@ -30,7 +30,7 @@ class ShowCommandResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param command_name: 命令名称，分为：START、STOP、DELETE、SYNC、SKIP
+        :param command_name: 命令名称，分为：START、STOP、SKIP、PREMIGRATE、TASK_NOT_STARTED、TASK_HAS_STOPPED、TASK_HAS_FINISHED
         :type command_name: str
         :param command_param: 
         :type command_param: :class:`huaweicloudsdksms.v3.CommandParam`
@@ -51,7 +51,7 @@ class ShowCommandResponse(SdkResponse):
     def command_name(self):
         r"""Gets the command_name of this ShowCommandResponse.
 
-        命令名称，分为：START、STOP、DELETE、SYNC、SKIP
+        命令名称，分为：START、STOP、SKIP、PREMIGRATE、TASK_NOT_STARTED、TASK_HAS_STOPPED、TASK_HAS_FINISHED
 
         :return: The command_name of this ShowCommandResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowCommandResponse(SdkResponse):
     def command_name(self, command_name):
         r"""Sets the command_name of this ShowCommandResponse.
 
-        命令名称，分为：START、STOP、DELETE、SYNC、SKIP
+        命令名称，分为：START、STOP、SKIP、PREMIGRATE、TASK_NOT_STARTED、TASK_HAS_STOPPED、TASK_HAS_FINISHED
 
         :param command_name: The command_name of this ShowCommandResponse.
         :type command_name: str

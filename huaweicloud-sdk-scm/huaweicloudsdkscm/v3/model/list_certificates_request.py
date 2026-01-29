@@ -23,7 +23,8 @@ class ListCertificatesRequest:
         'enterprise_project_id': 'str',
         'deploy_support': 'bool',
         'owned_by_self': 'bool',
-        'expired_days_since': 'int'
+        'expired_days_since': 'int',
+        'content': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListCertificatesRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'deploy_support': 'deploy_support',
         'owned_by_self': 'owned_by_self',
-        'expired_days_since': 'expired_days_since'
+        'expired_days_since': 'expired_days_since',
+        'content': 'content'
     }
 
-    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None, owned_by_self=None, expired_days_since=None):
+    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None, owned_by_self=None, expired_days_since=None, content=None):
         r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListCertificatesRequest:
         :type owned_by_self: bool
         :param expired_days_since: 证书在有效期内及最多过期xx天。
         :type expired_days_since: int
+        :param content: 证书名称、域名搜索关键词
+        :type content: str
         """
         
         
@@ -74,6 +78,7 @@ class ListCertificatesRequest:
         self._deploy_support = None
         self._owned_by_self = None
         self._expired_days_since = None
+        self._content = None
         self.discriminator = None
 
         if limit is not None:
@@ -94,6 +99,8 @@ class ListCertificatesRequest:
             self.owned_by_self = owned_by_self
         if expired_days_since is not None:
             self.expired_days_since = expired_days_since
+        if content is not None:
+            self.content = content
 
     @property
     def limit(self):
@@ -292,6 +299,28 @@ class ListCertificatesRequest:
         :type expired_days_since: int
         """
         self._expired_days_since = expired_days_since
+
+    @property
+    def content(self):
+        r"""Gets the content of this ListCertificatesRequest.
+
+        证书名称、域名搜索关键词
+
+        :return: The content of this ListCertificatesRequest.
+        :rtype: str
+        """
+        return self._content
+
+    @content.setter
+    def content(self, content):
+        r"""Sets the content of this ListCertificatesRequest.
+
+        证书名称、域名搜索关键词
+
+        :param content: The content of this ListCertificatesRequest.
+        :type content: str
+        """
+        self._content = content
 
     def to_dict(self):
         result = {}

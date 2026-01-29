@@ -27,7 +27,7 @@ class ListRecipientsStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param email_address: 收件人邮箱,可以为多个，多个时由英文分号(\&quot;;\&quot;)分割
+        :param email_address: 收件人邮箱,可以为多个，多个时由英文分号(\&quot;;\&quot;)分隔
         :type email_address: str
         """
         
@@ -42,7 +42,7 @@ class ListRecipientsStatusRequestBody:
     def email_address(self):
         r"""Gets the email_address of this ListRecipientsStatusRequestBody.
 
-        收件人邮箱,可以为多个，多个时由英文分号(\";\")分割
+        收件人邮箱,可以为多个，多个时由英文分号(\";\")分隔
 
         :return: The email_address of this ListRecipientsStatusRequestBody.
         :rtype: str
@@ -53,7 +53,7 @@ class ListRecipientsStatusRequestBody:
     def email_address(self, email_address):
         r"""Sets the email_address of this ListRecipientsStatusRequestBody.
 
-        收件人邮箱,可以为多个，多个时由英文分号(\";\")分割
+        收件人邮箱,可以为多个，多个时由英文分号(\";\")分隔
 
         :param email_address: The email_address of this ListRecipientsStatusRequestBody.
         :type email_address: str

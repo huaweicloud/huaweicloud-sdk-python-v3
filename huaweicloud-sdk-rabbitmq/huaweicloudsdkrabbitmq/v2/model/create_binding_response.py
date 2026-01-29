@@ -36,7 +36,7 @@ class CreateBindingResponse(SdkResponse):
 
         :param source: 绑定对象
         :type source: str
-        :param destination_type: **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu)
+        :param destination_type: **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu,srg)
         :type destination_type: str
         :param destination: 要投递的Exchange或Queue名称
         :type destination: str
@@ -87,7 +87,7 @@ class CreateBindingResponse(SdkResponse):
     def destination_type(self):
         r"""Gets the destination_type of this CreateBindingResponse.
 
-        **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu)
+        **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu,srg)
 
         :return: The destination_type of this CreateBindingResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class CreateBindingResponse(SdkResponse):
     def destination_type(self, destination_type):
         r"""Sets the destination_type of this CreateBindingResponse.
 
-        **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu)
+        **参数解释**： 绑定目标端类型。 **取值范围**： - exchange：交换机。 - queue：队列。[AMQP版本只支持绑定queue。](tag:hws,hws_hk,hws_eu,srg)
 
         :param destination_type: The destination_type of this CreateBindingResponse.
         :type destination_type: str

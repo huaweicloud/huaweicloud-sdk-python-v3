@@ -39,7 +39,8 @@ class CreateDataclassTypeResponse(SdkResponse):
         'modifier_name': 'str',
         'create_time': 'str',
         'update_time': 'str',
-        'dataclass_business_code': 'str'
+        'dataclass_business_code': 'str',
+        'sub_count': 'int'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class CreateDataclassTypeResponse(SdkResponse):
         'modifier_name': 'modifier_name',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'dataclass_business_code': 'dataclass_business_code'
+        'dataclass_business_code': 'dataclass_business_code',
+        'sub_count': 'sub_count'
     }
 
-    def __init__(self, id=None, dataclass_id=None, domain_id=None, project_id=None, workspace_id=None, region_id=None, layout_id=None, layout_name=None, category=None, category_code=None, sub_category=None, sub_category_code=None, description=None, enabled=None, level=None, is_built_in=None, sla=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None, create_time=None, update_time=None, dataclass_business_code=None):
+    def __init__(self, id=None, dataclass_id=None, domain_id=None, project_id=None, workspace_id=None, region_id=None, layout_id=None, layout_name=None, category=None, category_code=None, sub_category=None, sub_category_code=None, description=None, enabled=None, level=None, is_built_in=None, sla=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None, create_time=None, update_time=None, dataclass_business_code=None, sub_count=None):
         r"""CreateDataclassTypeResponse
 
         The model defined in huaweicloud sdk
@@ -122,6 +124,8 @@ class CreateDataclassTypeResponse(SdkResponse):
         :type update_time: str
         :param dataclass_business_code: 所属数据类业务编码
         :type dataclass_business_code: str
+        :param sub_count: 类型分类下子类型数目
+        :type sub_count: int
         """
         
         super().__init__()
@@ -150,6 +154,7 @@ class CreateDataclassTypeResponse(SdkResponse):
         self._create_time = None
         self._update_time = None
         self._dataclass_business_code = None
+        self._sub_count = None
         self.discriminator = None
 
         if id is not None:
@@ -200,6 +205,8 @@ class CreateDataclassTypeResponse(SdkResponse):
             self.update_time = update_time
         if dataclass_business_code is not None:
             self.dataclass_business_code = dataclass_business_code
+        if sub_count is not None:
+            self.sub_count = sub_count
 
     @property
     def id(self):
@@ -728,6 +735,28 @@ class CreateDataclassTypeResponse(SdkResponse):
         :type dataclass_business_code: str
         """
         self._dataclass_business_code = dataclass_business_code
+
+    @property
+    def sub_count(self):
+        r"""Gets the sub_count of this CreateDataclassTypeResponse.
+
+        类型分类下子类型数目
+
+        :return: The sub_count of this CreateDataclassTypeResponse.
+        :rtype: int
+        """
+        return self._sub_count
+
+    @sub_count.setter
+    def sub_count(self, sub_count):
+        r"""Sets the sub_count of this CreateDataclassTypeResponse.
+
+        类型分类下子类型数目
+
+        :param sub_count: The sub_count of this CreateDataclassTypeResponse.
+        :type sub_count: int
+        """
+        self._sub_count = sub_count
 
     def to_dict(self):
         import warnings

@@ -35,7 +35,7 @@ class UpdateWorkspaceResponse(SdkResponse):
         'region_id': 'str',
         'view_bind_id': 'str',
         'view_bind_name': 'str',
-        'workspace_agency_list': 'list[CreateWorkspaceResponseBodyWorkspaceAgencyList]'
+        'workspace_agency_list': 'list[UpdateWorkspaceResponseBodyWorkspaceAgencyList]'
     }
 
     attribute_map = {
@@ -105,7 +105,7 @@ class UpdateWorkspaceResponse(SdkResponse):
         :param view_bind_name: 视图绑定的空间名称
         :type view_bind_name: str
         :param workspace_agency_list: 纳管空间列表
-        :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v1.CreateWorkspaceResponseBodyWorkspaceAgencyList`]
+        :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v1.UpdateWorkspaceResponseBodyWorkspaceAgencyList`]
         """
         
         super().__init__()
@@ -598,7 +598,7 @@ class UpdateWorkspaceResponse(SdkResponse):
         纳管空间列表
 
         :return: The workspace_agency_list of this UpdateWorkspaceResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v1.CreateWorkspaceResponseBodyWorkspaceAgencyList`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v1.UpdateWorkspaceResponseBodyWorkspaceAgencyList`]
         """
         return self._workspace_agency_list
 
@@ -609,7 +609,7 @@ class UpdateWorkspaceResponse(SdkResponse):
         纳管空间列表
 
         :param workspace_agency_list: The workspace_agency_list of this UpdateWorkspaceResponse.
-        :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v1.CreateWorkspaceResponseBodyWorkspaceAgencyList`]
+        :type workspace_agency_list: list[:class:`huaweicloudsdksecmaster.v1.UpdateWorkspaceResponseBodyWorkspaceAgencyList`]
         """
         self._workspace_agency_list = workspace_agency_list
 

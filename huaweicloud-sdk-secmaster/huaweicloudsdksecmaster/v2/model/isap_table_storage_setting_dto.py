@@ -67,7 +67,7 @@ class IsapTableStorageSettingDto:
         :type index_shards: int
         :param lake_storage_period: 数据湖存储周期
         :type lake_storage_period: int
-        :param lake_partition_setting: **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及    
+        :param lake_partition_setting: **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
         :type lake_partition_setting: str
         """
         
@@ -333,7 +333,7 @@ class IsapTableStorageSettingDto:
     def lake_partition_setting(self):
         r"""Gets the lake_partition_setting of this IsapTableStorageSettingDto.
 
-        **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及    
+        **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
 
         :return: The lake_partition_setting of this IsapTableStorageSettingDto.
         :rtype: str
@@ -344,7 +344,7 @@ class IsapTableStorageSettingDto:
     def lake_partition_setting(self, lake_partition_setting):
         r"""Sets the lake_partition_setting of this IsapTableStorageSettingDto.
 
-        **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及    
+        **参数解释**: 数据湖定时分区设置 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
 
         :param lake_partition_setting: The lake_partition_setting of this IsapTableStorageSettingDto.
         :type lake_partition_setting: str

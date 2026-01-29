@@ -45,7 +45,7 @@ class CreatePipeRequestBody:
         :type description: str
         :param mapping: 索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
         :type mapping: dict(str, KeyIndex)
-        :param pipe_name: 数据管道名称
+        :param pipe_name: 数据管道名称；必须以英文字母开头，且只能包含小写英文字母、数字和&#39;_&#39;，且&#39;_&#39;不能在结尾，也不能连续出现。 不能以系统预留的前缀isap_、csb_、secmaster_、sec_、s_sec_、i_sec_、l_sec_、security_开头
         :type pipe_name: str
         :param shards: 数据管道分区个数；默认创建1个，最大支持创建64个分区
         :type shards: int
@@ -147,7 +147,7 @@ class CreatePipeRequestBody:
     def pipe_name(self):
         r"""Gets the pipe_name of this CreatePipeRequestBody.
 
-        数据管道名称
+        数据管道名称；必须以英文字母开头，且只能包含小写英文字母、数字和'_'，且'_'不能在结尾，也不能连续出现。 不能以系统预留的前缀isap_、csb_、secmaster_、sec_、s_sec_、i_sec_、l_sec_、security_开头
 
         :return: The pipe_name of this CreatePipeRequestBody.
         :rtype: str
@@ -158,7 +158,7 @@ class CreatePipeRequestBody:
     def pipe_name(self, pipe_name):
         r"""Sets the pipe_name of this CreatePipeRequestBody.
 
-        数据管道名称
+        数据管道名称；必须以英文字母开头，且只能包含小写英文字母、数字和'_'，且'_'不能在结尾，也不能连续出现。 不能以系统预留的前缀isap_、csb_、secmaster_、sec_、s_sec_、i_sec_、l_sec_、security_开头
 
         :param pipe_name: The pipe_name of this CreatePipeRequestBody.
         :type pipe_name: str

@@ -236,75 +236,6 @@ class RocketMQClient(Client):
 
         return http_info
 
-    def batch_delete_diagnosis_report(self, request):
-        r"""批量删除实例诊断记录
-
-        批量删除实例诊断记录。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for BatchDeleteDiagnosisReport
-        :type request: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisReportRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchDeleteDiagnosisReportResponse`
-        """
-        http_info = self._batch_delete_diagnosis_report_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_delete_diagnosis_report_invoker(self, request):
-        http_info = self._batch_delete_diagnosis_report_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _batch_delete_diagnosis_report_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/diagnosis",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteDiagnosisReportResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'engine' in local_var_params:
-            path_params['engine'] = local_var_params['engine']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def batch_delete_instances(self, request):
         r"""批量删除实例
 
@@ -395,73 +326,6 @@ class RocketMQClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/metadata/batch-delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteRocketMqMigrationTaskResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_reset_rocket_mq_message_offsets(self, request):
-        r"""批量重置消费进度
-
-        批量重置消费进度。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for BatchResetRocketMqMessageOffsets
-        :type request: :class:`huaweicloudsdkrocketmq.v2.BatchResetRocketMqMessageOffsetsRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchResetRocketMqMessageOffsetsResponse`
-        """
-        http_info = self._batch_reset_rocket_mq_message_offsets_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_reset_rocket_mq_message_offsets_invoker(self, request):
-        http_info = self._batch_reset_rocket_mq_message_offsets_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _batch_reset_rocket_mq_message_offsets_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/groups/reset-message-offset",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchResetRocketMqMessageOffsetsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1312,73 +1176,6 @@ class RocketMQClient(Client):
 
         return http_info
 
-    def delete_rocket_mq_migration_task(self, request):
-        r"""删除元数据迁移任务
-
-        删除元数据迁移任务。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for DeleteRocketMqMigrationTask
-        :type request: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.DeleteRocketMqMigrationTaskResponse`
-        """
-        http_info = self._delete_rocket_mq_migration_task_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_rocket_mq_migration_task_invoker(self, request):
-        http_info = self._delete_rocket_mq_migration_task_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _delete_rocket_mq_migration_task_http_info(cls, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2/{project_id}/instances/{instance_id}/metadata",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteRocketMqMigrationTaskResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_scheduled_task(self, request):
         r"""删除定时任务管理中的指定记录
 
@@ -1557,73 +1354,6 @@ class RocketMQClient(Client):
         form_params = {}
 
         body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def export_dlq_message(self, request):
-        r"""导出死信消息
-
-        导出死信消息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ExportDlqMessage
-        :type request: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageResponse`
-        """
-        http_info = self._export_dlq_message_http_info(request)
-        return self._call_api(**http_info)
-
-    def export_dlq_message_invoker(self, request):
-        http_info = self._export_dlq_message_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _export_dlq_message_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v2/{project_id}/instances/{instance_id}/messages/export",
-            "request_type": request.__class__.__name__,
-            "response_type": "ExportDlqMessageResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -3972,7 +3702,7 @@ class RocketMQClient(Client):
     def show_consumer_connections(self, request):
         r"""查询消费者列表
 
-        查询消费组内消费者列表
+        查询消费组内消费者列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5241,71 +4971,6 @@ class RocketMQClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_upgrade_instance_version(self, request):
-        r"""查询RocketMQ实例版本信息
-
-        查询RocketMQ实例版本信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowUpgradeInstanceVersion
-        :type request: :class:`huaweicloudsdkrocketmq.v2.ShowUpgradeInstanceVersionRequest`
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.ShowUpgradeInstanceVersionResponse`
-        """
-        http_info = self._show_upgrade_instance_version_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_upgrade_instance_version_invoker(self, request):
-        http_info = self._show_upgrade_instance_version_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_upgrade_instance_version_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v2/{project_id}/rocketmq/instances/{instance_id}/upgrade",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowUpgradeInstanceVersionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
 
         header_params = {}
 

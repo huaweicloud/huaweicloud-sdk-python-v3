@@ -187,6 +187,7 @@ from huaweicloudsdklive.v1.model.live_request_args import LiveRequestArgs
 from huaweicloudsdklive.v1.model.live_snapshot_config import LiveSnapshotConfig
 from huaweicloudsdklive.v1.model.log_info import LogInfo
 from huaweicloudsdklive.v1.model.mp4_record_config import MP4RecordConfig
+from huaweicloudsdklive.v1.model.manifest_selection import ManifestSelection
 from huaweicloudsdklive.v1.model.modify_delay_config import ModifyDelayConfig
 from huaweicloudsdklive.v1.model.modify_flow_output_request import ModifyFlowOutputRequest
 from huaweicloudsdklive.v1.model.modify_flow_output_response import ModifyFlowOutputResponse

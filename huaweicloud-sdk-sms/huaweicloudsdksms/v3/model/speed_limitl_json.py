@@ -53,7 +53,8 @@ class SpeedLimitlJson:
 
         self.start = start
         self.end = end
-        self.speed = speed
+        if speed is not None:
+            self.speed = speed
         if over_speed_threshold is not None:
             self.over_speed_threshold = over_speed_threshold
 

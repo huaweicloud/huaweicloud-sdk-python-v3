@@ -49,9 +49,9 @@ class ListAlertRuleTemplatesRequest:
         :type workspace_id: str
         :param template_name: 模板名称
         :type template_name: str
-        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及           
+        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
         :type status: str
-        :param severity: **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及                 
+        :param severity: **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及
         :type severity: str
         :param offset: **参数解释：** 偏移量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type offset: int
@@ -163,7 +163,7 @@ class ListAlertRuleTemplatesRequest:
     def status(self):
         r"""Gets the status of this ListAlertRuleTemplatesRequest.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及           
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
 
         :return: The status of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ListAlertRuleTemplatesRequest:
     def status(self, status):
         r"""Sets the status of this ListAlertRuleTemplatesRequest.
 
-        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及           
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及
 
         :param status: The status of this ListAlertRuleTemplatesRequest.
         :type status: str
@@ -185,7 +185,7 @@ class ListAlertRuleTemplatesRequest:
     def severity(self):
         r"""Gets the severity of this ListAlertRuleTemplatesRequest.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及                 
+        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及
 
         :return: The severity of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -196,7 +196,7 @@ class ListAlertRuleTemplatesRequest:
     def severity(self, severity):
         r"""Sets the severity of this ListAlertRuleTemplatesRequest.
 
-        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及                 
+        **参数解释**: 告警等级 - TIPS 提示 - LOW 低危 - MEDIUM 中危 - HIGH 高危 - FATAL 致命  **约束限制** 不涉及 **取值范围**: - TIPS - LOW - MEDIUM - HIGH - FATAL  **默认值** 不涉及
 
         :param severity: The severity of this ListAlertRuleTemplatesRequest.
         :type severity: str

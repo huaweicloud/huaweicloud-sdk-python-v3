@@ -16,7 +16,7 @@ class BatchDeleteIssuesV4Request:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'BatchDelelteIssuesRequestV4'
+        'body': 'BatchDeleteIssuesRequestV4'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class BatchDeleteIssuesV4Request:
         :param project_id: devcloud项目的32位id
         :type project_id: str
         :param body: Body of the BatchDeleteIssuesV4Request
-        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesRequestV4`
         """
         
         
@@ -72,7 +72,7 @@ class BatchDeleteIssuesV4Request:
         r"""Gets the body of this BatchDeleteIssuesV4Request.
 
         :return: The body of this BatchDeleteIssuesV4Request.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesRequestV4`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class BatchDeleteIssuesV4Request:
         r"""Sets the body of this BatchDeleteIssuesV4Request.
 
         :param body: The body of this BatchDeleteIssuesV4Request.
-        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDelelteIssuesRequestV4`
+        :type body: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesRequestV4`
         """
         self._body = body
 

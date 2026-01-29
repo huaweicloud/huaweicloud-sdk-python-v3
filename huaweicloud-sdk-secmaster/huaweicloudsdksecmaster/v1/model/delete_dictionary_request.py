@@ -31,7 +31,7 @@ class DeleteDictionaryRequest:
 
         :param dict_list: 字典列表
         :type dict_list: list[:class:`huaweicloudsdksecmaster.v1.DictionaryDelete`]
-        :param is_built_in: 是否删除内置字典,默认不对外开放删除内置字典工具
+        :param is_built_in: 是否删除内置字典，默认不对外开放删除内置字典工具
         :type is_built_in: bool
         """
         
@@ -72,7 +72,7 @@ class DeleteDictionaryRequest:
     def is_built_in(self):
         r"""Gets the is_built_in of this DeleteDictionaryRequest.
 
-        是否删除内置字典,默认不对外开放删除内置字典工具
+        是否删除内置字典，默认不对外开放删除内置字典工具
 
         :return: The is_built_in of this DeleteDictionaryRequest.
         :rtype: bool
@@ -83,7 +83,7 @@ class DeleteDictionaryRequest:
     def is_built_in(self, is_built_in):
         r"""Sets the is_built_in of this DeleteDictionaryRequest.
 
-        是否删除内置字典,默认不对外开放删除内置字典工具
+        是否删除内置字典，默认不对外开放删除内置字典工具
 
         :param is_built_in: The is_built_in of this DeleteDictionaryRequest.
         :type is_built_in: bool

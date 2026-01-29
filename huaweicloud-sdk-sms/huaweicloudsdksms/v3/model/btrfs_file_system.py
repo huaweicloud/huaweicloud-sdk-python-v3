@@ -111,22 +111,38 @@ class BtrfsFileSystem:
         self._subvolumn = None
         self.discriminator = None
 
-        self.name = name
-        self.label = label
-        self.uuid = uuid
-        self.device = device
-        self.size = size
-        self.nodesize = nodesize
-        self.sectorsize = sectorsize
-        self.data_profile = data_profile
-        self.system_profile = system_profile
-        self.metadata_profile = metadata_profile
-        self.global_reserve1 = global_reserve1
-        self.g_vol_used_size = g_vol_used_size
-        self.default_subvolid = default_subvolid
-        self.default_subvol_name = default_subvol_name
-        self.default_subvol_mountpath = default_subvol_mountpath
-        self.subvolumn = subvolumn
+        if name is not None:
+            self.name = name
+        if label is not None:
+            self.label = label
+        if uuid is not None:
+            self.uuid = uuid
+        if device is not None:
+            self.device = device
+        if size is not None:
+            self.size = size
+        if nodesize is not None:
+            self.nodesize = nodesize
+        if sectorsize is not None:
+            self.sectorsize = sectorsize
+        if data_profile is not None:
+            self.data_profile = data_profile
+        if system_profile is not None:
+            self.system_profile = system_profile
+        if metadata_profile is not None:
+            self.metadata_profile = metadata_profile
+        if global_reserve1 is not None:
+            self.global_reserve1 = global_reserve1
+        if g_vol_used_size is not None:
+            self.g_vol_used_size = g_vol_used_size
+        if default_subvolid is not None:
+            self.default_subvolid = default_subvolid
+        if default_subvol_name is not None:
+            self.default_subvol_name = default_subvol_name
+        if default_subvol_mountpath is not None:
+            self.default_subvol_mountpath = default_subvol_mountpath
+        if subvolumn is not None:
+            self.subvolumn = subvolumn
 
     @property
     def name(self):

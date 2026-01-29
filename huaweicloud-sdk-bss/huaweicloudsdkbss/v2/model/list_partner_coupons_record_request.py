@@ -47,7 +47,7 @@ class ListPartnerCouponsRecordRequest:
 
         The model defined in huaweicloud sdk
 
-        :param operation_types: 操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
+        :param operation_types: 操作类型 1：发放，2：手动回收，3：解绑自动回收，4：过期回收，5：退订回收，6：退款充值撤销，7：建立关联回收， 8：切换关联模式自动回收，9：云经销商转移。此参数不携带时，不作为筛选条件；携带值为空列表时，作为筛选条件。
         :type operation_types: list[str]
         :param quota_id: 额度ID。请从“查询优惠券额度”接口的响应参数中获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type quota_id: str
@@ -113,7 +113,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_types(self):
         r"""Gets the operation_types of this ListPartnerCouponsRecordRequest.
 
-        操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
+        操作类型 1：发放，2：手动回收，3：解绑自动回收，4：过期回收，5：退订回收，6：退款充值撤销，7：建立关联回收， 8：切换关联模式自动回收，9：云经销商转移。此参数不携带时，不作为筛选条件；携带值为空列表时，作为筛选条件。
 
         :return: The operation_types of this ListPartnerCouponsRecordRequest.
         :rtype: list[str]
@@ -124,7 +124,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_types(self, operation_types):
         r"""Sets the operation_types of this ListPartnerCouponsRecordRequest.
 
-        操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收此参数不携带时，不作为筛选条件；携带值为空列表或携带值为null时，作为筛选条件。
+        操作类型 1：发放，2：手动回收，3：解绑自动回收，4：过期回收，5：退订回收，6：退款充值撤销，7：建立关联回收， 8：切换关联模式自动回收，9：云经销商转移。此参数不携带时，不作为筛选条件；携带值为空列表时，作为筛选条件。
 
         :param operation_types: The operation_types of this ListPartnerCouponsRecordRequest.
         :type operation_types: list[str]

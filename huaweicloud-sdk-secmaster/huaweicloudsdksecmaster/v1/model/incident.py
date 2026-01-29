@@ -36,11 +36,11 @@ class Incident:
         'criticality': 'int',
         'incident_type': 'IncidentIncidentType',
         'network_list': 'list[AlertNetworkList]',
-        'resource_list': 'list[AlertResourceList]',
+        'resource_list': 'list[IncidentResourceList]',
         'remediation': 'AlertRemediation',
         'verification_state': 'str',
         'handle_status': 'str',
-        'sla': 'int',
+        'sla': 'str',
         'update_time': 'str',
         'close_time': 'str',
         'ipdrr_phase': 'str',
@@ -150,15 +150,15 @@ class Incident:
         :param network_list: 网络信息
         :type network_list: list[:class:`huaweicloudsdksecmaster.v1.AlertNetworkList`]
         :param resource_list: 受影响资产
-        :type resource_list: list[:class:`huaweicloudsdksecmaster.v1.AlertResourceList`]
+        :type resource_list: list[:class:`huaweicloudsdksecmaster.v1.IncidentResourceList`]
         :param remediation: 
         :type remediation: :class:`huaweicloudsdksecmaster.v1.AlertRemediation`
         :param verification_state: 验证状态，标识事件的准确性。可选类型如下： Unknown – 未知 True_Positive – 确认 False_Positive – 误报 默认填写Unknown
         :type verification_state: str
         :param handle_status: 事件处理状态，可选类型如下： Open – 打开，默认 Block – 阻塞 Closed – 关闭 默认填写Open
         :type handle_status: str
-        :param sla: 约束闭环时间：设置风险接受持续时间。单位：小时
-        :type sla: int
+        :param sla: 约束闭环时间：设置风险接受持续时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+        :type sla: str
         :param update_time: 更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type update_time: str
         :param close_time: 关闭时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
@@ -776,7 +776,7 @@ class Incident:
         受影响资产
 
         :return: The resource_list of this Incident.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v1.AlertResourceList`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v1.IncidentResourceList`]
         """
         return self._resource_list
 
@@ -787,7 +787,7 @@ class Incident:
         受影响资产
 
         :param resource_list: The resource_list of this Incident.
-        :type resource_list: list[:class:`huaweicloudsdksecmaster.v1.AlertResourceList`]
+        :type resource_list: list[:class:`huaweicloudsdksecmaster.v1.IncidentResourceList`]
         """
         self._resource_list = resource_list
 
@@ -857,10 +857,10 @@ class Incident:
     def sla(self):
         r"""Gets the sla of this Incident.
 
-        约束闭环时间：设置风险接受持续时间。单位：小时
+        约束闭环时间：设置风险接受持续时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
         :return: The sla of this Incident.
-        :rtype: int
+        :rtype: str
         """
         return self._sla
 
@@ -868,10 +868,10 @@ class Incident:
     def sla(self, sla):
         r"""Sets the sla of this Incident.
 
-        约束闭环时间：设置风险接受持续时间。单位：小时
+        约束闭环时间：设置风险接受持续时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
         :param sla: The sla of this Incident.
-        :type sla: int
+        :type sla: str
         """
         self._sla = sla
 

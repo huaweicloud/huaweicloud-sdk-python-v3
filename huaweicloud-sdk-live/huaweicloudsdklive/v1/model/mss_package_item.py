@@ -15,6 +15,7 @@ class MssPackageItem:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'url': 'str',
         'stream_selection': 'list[StreamSelectionItem]',
         'segment_duration_seconds': 'int',
@@ -30,10 +31,12 @@ class MssPackageItem:
         'origin_domain_master': 'str',
         'origin_domain_slave': 'str',
         'manifest_name': 'str',
-        'slave_url': 'str'
+        'slave_url': 'str',
+        'manifest_selection': 'ManifestSelection'
     }
 
     attribute_map = {
+        'id': 'id',
         'url': 'url',
         'stream_selection': 'stream_selection',
         'segment_duration_seconds': 'segment_duration_seconds',
@@ -49,14 +52,17 @@ class MssPackageItem:
         'origin_domain_master': 'origin_domain_master',
         'origin_domain_slave': 'origin_domain_slave',
         'manifest_name': 'manifest_name',
-        'slave_url': 'slave_url'
+        'slave_url': 'slave_url',
+        'manifest_selection': 'manifest_selection'
     }
 
-    def __init__(self, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ext_args=None, delay_segment=None, request_args=None, enable_access=None, allow_all_ip_access=None, ip_whitelist=None, cdn_identifier_header=None, origin_domain_master=None, origin_domain_slave=None, manifest_name=None, slave_url=None):
+    def __init__(self, id=None, url=None, stream_selection=None, segment_duration_seconds=None, playlist_window_seconds=None, encryption=None, ext_args=None, delay_segment=None, request_args=None, enable_access=None, allow_all_ip_access=None, ip_whitelist=None, cdn_identifier_header=None, origin_domain_master=None, origin_domain_slave=None, manifest_name=None, slave_url=None, manifest_selection=None):
         r"""MssPackageItem
 
         The model defined in huaweicloud sdk
 
+        :param id: package唯一标识id，由服务创建并在查询时返回，修改endpoints时需要携带。
+        :type id: str
         :param url: 客户自定义的拉流地址，包括方法、域名、路径
         :type url: str
         :param stream_selection: 从全量流中过滤出一个码率在[min, max]区间的流。如果不需要码率过滤可不选。
@@ -89,10 +95,13 @@ class MssPackageItem:
         :type manifest_name: str
         :param slave_url: 客户自定义的拉流地址，包括方法、域名、路径
         :type slave_url: str
+        :param manifest_selection: 
+        :type manifest_selection: :class:`huaweicloudsdklive.v1.ManifestSelection`
         """
         
         
 
+        self._id = None
         self._url = None
         self._stream_selection = None
         self._segment_duration_seconds = None
@@ -109,8 +118,11 @@ class MssPackageItem:
         self._origin_domain_slave = None
         self._manifest_name = None
         self._slave_url = None
+        self._manifest_selection = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if url is not None:
             self.url = url
         if stream_selection is not None:
@@ -142,6 +154,30 @@ class MssPackageItem:
             self.manifest_name = manifest_name
         if slave_url is not None:
             self.slave_url = slave_url
+        if manifest_selection is not None:
+            self.manifest_selection = manifest_selection
+
+    @property
+    def id(self):
+        r"""Gets the id of this MssPackageItem.
+
+        package唯一标识id，由服务创建并在查询时返回，修改endpoints时需要携带。
+
+        :return: The id of this MssPackageItem.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this MssPackageItem.
+
+        package唯一标识id，由服务创建并在查询时返回，修改endpoints时需要携带。
+
+        :param id: The id of this MssPackageItem.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def url(self):
@@ -482,6 +518,24 @@ class MssPackageItem:
         :type slave_url: str
         """
         self._slave_url = slave_url
+
+    @property
+    def manifest_selection(self):
+        r"""Gets the manifest_selection of this MssPackageItem.
+
+        :return: The manifest_selection of this MssPackageItem.
+        :rtype: :class:`huaweicloudsdklive.v1.ManifestSelection`
+        """
+        return self._manifest_selection
+
+    @manifest_selection.setter
+    def manifest_selection(self, manifest_selection):
+        r"""Sets the manifest_selection of this MssPackageItem.
+
+        :param manifest_selection: The manifest_selection of this MssPackageItem.
+        :type manifest_selection: :class:`huaweicloudsdklive.v1.ManifestSelection`
+        """
+        self._manifest_selection = manifest_selection
 
     def to_dict(self):
         result = {}

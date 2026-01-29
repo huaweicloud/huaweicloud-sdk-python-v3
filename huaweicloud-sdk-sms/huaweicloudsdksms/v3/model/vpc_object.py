@@ -46,8 +46,10 @@ class VpcObject:
         self._cidr = None
         self.discriminator = None
 
-        self.id = id
-        self.name = name
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
         if cidr is not None:
             self.cidr = cidr
 

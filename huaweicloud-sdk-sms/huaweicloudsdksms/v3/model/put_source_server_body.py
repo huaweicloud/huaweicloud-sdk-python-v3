@@ -37,9 +37,9 @@ class PutSourceServerBody:
         :type name: str
         :param migprojectid: 源端服务器修改后所属的迁移项目ID
         :type migprojectid: str
-        :param disks: 磁盘
+        :param disks: 磁盘，仅在“待配置目的端”状态下，此修改才生效
         :type disks: list[:class:`huaweicloudsdksms.v3.PutDisk`]
-        :param volume_groups: 卷组
+        :param volume_groups: 卷组，仅在“待配置目的端”状态下，此修改才生效
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]
         """
         
@@ -108,7 +108,7 @@ class PutSourceServerBody:
     def disks(self):
         r"""Gets the disks of this PutSourceServerBody.
 
-        磁盘
+        磁盘，仅在“待配置目的端”状态下，此修改才生效
 
         :return: The disks of this PutSourceServerBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.PutDisk`]
@@ -119,7 +119,7 @@ class PutSourceServerBody:
     def disks(self, disks):
         r"""Sets the disks of this PutSourceServerBody.
 
-        磁盘
+        磁盘，仅在“待配置目的端”状态下，此修改才生效
 
         :param disks: The disks of this PutSourceServerBody.
         :type disks: list[:class:`huaweicloudsdksms.v3.PutDisk`]
@@ -130,7 +130,7 @@ class PutSourceServerBody:
     def volume_groups(self):
         r"""Gets the volume_groups of this PutSourceServerBody.
 
-        卷组
+        卷组，仅在“待配置目的端”状态下，此修改才生效
 
         :return: The volume_groups of this PutSourceServerBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]
@@ -141,7 +141,7 @@ class PutSourceServerBody:
     def volume_groups(self, volume_groups):
         r"""Sets the volume_groups of this PutSourceServerBody.
 
-        卷组
+        卷组，仅在“待配置目的端”状态下，此修改才生效
 
         :param volume_groups: The volume_groups of this PutSourceServerBody.
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]

@@ -19,8 +19,8 @@ class ListDataobjectsResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'total': 'int',
-        'limit': 'int',
-        'offset': 'int',
+        'size': 'int',
+        'page': 'int',
         'success': 'bool',
         'data': 'list[DataObjectDetail]'
     }
@@ -29,13 +29,13 @@ class ListDataobjectsResponse(SdkResponse):
         'code': 'code',
         'message': 'message',
         'total': 'total',
-        'limit': 'limit',
-        'offset': 'offset',
+        'size': 'size',
+        'page': 'page',
         'success': 'success',
         'data': 'data'
     }
 
-    def __init__(self, code=None, message=None, total=None, limit=None, offset=None, success=None, data=None):
+    def __init__(self, code=None, message=None, total=None, size=None, page=None, success=None, data=None):
         r"""ListDataobjectsResponse
 
         The model defined in huaweicloud sdk
@@ -46,10 +46,10 @@ class ListDataobjectsResponse(SdkResponse):
         :type message: str
         :param total: 总数
         :type total: int
-        :param limit: 分页大小
-        :type limit: int
-        :param offset: 偏移量
-        :type offset: int
+        :param size: 分页大小
+        :type size: int
+        :param page: 分页的页码
+        :type page: int
         :param success: 是否成功
         :type success: bool
         :param data: 详情列表
@@ -61,8 +61,8 @@ class ListDataobjectsResponse(SdkResponse):
         self._code = None
         self._message = None
         self._total = None
-        self._limit = None
-        self._offset = None
+        self._size = None
+        self._page = None
         self._success = None
         self._data = None
         self.discriminator = None
@@ -73,10 +73,10 @@ class ListDataobjectsResponse(SdkResponse):
             self.message = message
         if total is not None:
             self.total = total
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
+        if size is not None:
+            self.size = size
+        if page is not None:
+            self.page = page
         if success is not None:
             self.success = success
         if data is not None:
@@ -149,48 +149,48 @@ class ListDataobjectsResponse(SdkResponse):
         self._total = total
 
     @property
-    def limit(self):
-        r"""Gets the limit of this ListDataobjectsResponse.
+    def size(self):
+        r"""Gets the size of this ListDataobjectsResponse.
 
         分页大小
 
-        :return: The limit of this ListDataobjectsResponse.
+        :return: The size of this ListDataobjectsResponse.
         :rtype: int
         """
-        return self._limit
+        return self._size
 
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ListDataobjectsResponse.
+    @size.setter
+    def size(self, size):
+        r"""Sets the size of this ListDataobjectsResponse.
 
         分页大小
 
-        :param limit: The limit of this ListDataobjectsResponse.
-        :type limit: int
+        :param size: The size of this ListDataobjectsResponse.
+        :type size: int
         """
-        self._limit = limit
+        self._size = size
 
     @property
-    def offset(self):
-        r"""Gets the offset of this ListDataobjectsResponse.
+    def page(self):
+        r"""Gets the page of this ListDataobjectsResponse.
 
-        偏移量
+        分页的页码
 
-        :return: The offset of this ListDataobjectsResponse.
+        :return: The page of this ListDataobjectsResponse.
         :rtype: int
         """
-        return self._offset
+        return self._page
 
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ListDataobjectsResponse.
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListDataobjectsResponse.
 
-        偏移量
+        分页的页码
 
-        :param offset: The offset of this ListDataobjectsResponse.
-        :type offset: int
+        :param page: The page of this ListDataobjectsResponse.
+        :type page: int
         """
-        self._offset = offset
+        self._page = page
 
     @property
     def success(self):

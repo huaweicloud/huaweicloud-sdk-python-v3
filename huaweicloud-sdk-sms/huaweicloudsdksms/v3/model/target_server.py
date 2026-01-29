@@ -168,11 +168,14 @@ class TargetServer:
 
         if id is not None:
             self.id = id
-        self.ip = ip
-        self.name = name
+        if ip is not None:
+            self.ip = ip
+        if name is not None:
+            self.name = name
         if hostname is not None:
             self.hostname = hostname
-        self.os_type = os_type
+        if os_type is not None:
+            self.os_type = os_type
         if os_version is not None:
             self.os_version = os_version
         if firmware is not None:
@@ -209,7 +212,8 @@ class TargetServer:
             self.vm_id = vm_id
         if flavor is not None:
             self.flavor = flavor
-        self.disks = disks
+        if disks is not None:
+            self.disks = disks
         if image_disk_id is not None:
             self.image_disk_id = image_disk_id
         if snapshot_ids is not None:

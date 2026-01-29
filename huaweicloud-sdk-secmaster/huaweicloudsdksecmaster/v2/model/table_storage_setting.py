@@ -77,9 +77,9 @@ class TableStorageSetting:
         :type index_replicas: int
         :param lake_storage_period: 数据湖存储周期
         :type lake_storage_period: int
-        :param lake_partition_setting: **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及 
+        :param lake_partition_setting: **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
         :type lake_partition_setting: str
-        :param lake_expiration_status: **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及         
+        :param lake_expiration_status: **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及
         :type lake_expiration_status: str
         """
         
@@ -398,7 +398,7 @@ class TableStorageSetting:
     def lake_partition_setting(self):
         r"""Gets the lake_partition_setting of this TableStorageSetting.
 
-        **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及 
+        **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
 
         :return: The lake_partition_setting of this TableStorageSetting.
         :rtype: str
@@ -409,7 +409,7 @@ class TableStorageSetting:
     def lake_partition_setting(self, lake_partition_setting):
         r"""Sets the lake_partition_setting of this TableStorageSetting.
 
-        **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及 
+        **参数解释**: 时间单位 - MINUTE10 10分钟 - HOUR 小时 - DAY 天  **约束限制** 不涉及 **取值范围**: - MINUTE - HOUR - DAY  **默认值** 不涉及
 
         :param lake_partition_setting: The lake_partition_setting of this TableStorageSetting.
         :type lake_partition_setting: str
@@ -420,7 +420,7 @@ class TableStorageSetting:
     def lake_expiration_status(self):
         r"""Gets the lake_expiration_status of this TableStorageSetting.
 
-        **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及         
+        **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及
 
         :return: The lake_expiration_status of this TableStorageSetting.
         :rtype: str
@@ -431,7 +431,7 @@ class TableStorageSetting:
     def lake_expiration_status(self, lake_expiration_status):
         r"""Sets the lake_expiration_status of this TableStorageSetting.
 
-        **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及         
+        **参数解释**: 数据湖过期状态 - NOT_EXPIRED 未过期 - EXPIRED_PROCESSING 过期处理中 - EXPIRED_SUCCESS 过期处理成功 - EXPIRED_FAILURE 过期处理失败  **约束限制** 不涉及 **取值范围**: - NOT_EXPIRED - EXPIRED_PROCESSING - EXPIRED_SUCCESS - EXPIRED_FAILURE  **默认值** 不涉及
 
         :param lake_expiration_status: The lake_expiration_status of this TableStorageSetting.
         :type lake_expiration_status: str

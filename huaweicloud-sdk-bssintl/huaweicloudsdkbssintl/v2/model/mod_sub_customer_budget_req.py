@@ -16,7 +16,7 @@ class ModSubCustomerBudgetReq:
 
     openapi_types = {
         'customer_id': 'str',
-        'budget_amount': 'float',
+        'budget_amount': 'decimal.Decimal',
         'cancel_partner_frozen': 'str',
         'indirect_partner_id': 'str',
         'budget_type': 'str',
@@ -40,7 +40,7 @@ class ModSubCustomerBudgetReq:
         :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
         :type customer_id: str
         :param budget_amount: 调整的目标金额。 单位：元。精确至小数点后2位。
-        :type budget_amount: float
+        :type budget_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param cancel_partner_frozen: 是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
         :type cancel_partner_frozen: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
@@ -101,7 +101,7 @@ class ModSubCustomerBudgetReq:
         调整的目标金额。 单位：元。精确至小数点后2位。
 
         :return: The budget_amount of this ModSubCustomerBudgetReq.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         return self._budget_amount
 
@@ -112,7 +112,7 @@ class ModSubCustomerBudgetReq:
         调整的目标金额。 单位：元。精确至小数点后2位。
 
         :param budget_amount: The budget_amount of this ModSubCustomerBudgetReq.
-        :type budget_amount: float
+        :type budget_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         self._budget_amount = budget_amount
 

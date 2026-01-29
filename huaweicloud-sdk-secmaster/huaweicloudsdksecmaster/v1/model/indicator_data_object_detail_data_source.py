@@ -18,17 +18,21 @@ class IndicatorDataObjectDetailDataSource:
         'source_type': 'int',
         'domain_id': 'str',
         'project_id': 'str',
-        'region_id': 'str'
+        'region_id': 'str',
+        'product_name': 'str',
+        'product_feature': 'str'
     }
 
     attribute_map = {
         'source_type': 'source_type',
         'domain_id': 'domain_id',
         'project_id': 'project_id',
-        'region_id': 'region_id'
+        'region_id': 'region_id',
+        'product_name': 'product_name',
+        'product_feature': 'product_feature'
     }
 
-    def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None):
+    def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None, product_name=None, product_feature=None):
         r"""IndicatorDataObjectDetailDataSource
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class IndicatorDataObjectDetailDataSource:
         :type project_id: str
         :param region_id: 区域ID
         :type region_id: str
+        :param product_name: 数据源产品名称
+        :type product_name: str
+        :param product_feature: 数据源产品特性
+        :type product_feature: str
         """
         
         
@@ -49,6 +57,8 @@ class IndicatorDataObjectDetailDataSource:
         self._domain_id = None
         self._project_id = None
         self._region_id = None
+        self._product_name = None
+        self._product_feature = None
         self.discriminator = None
 
         if source_type is not None:
@@ -59,6 +69,10 @@ class IndicatorDataObjectDetailDataSource:
             self.project_id = project_id
         if region_id is not None:
             self.region_id = region_id
+        if product_name is not None:
+            self.product_name = product_name
+        if product_feature is not None:
+            self.product_feature = product_feature
 
     @property
     def source_type(self):
@@ -147,6 +161,50 @@ class IndicatorDataObjectDetailDataSource:
         :type region_id: str
         """
         self._region_id = region_id
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this IndicatorDataObjectDetailDataSource.
+
+        数据源产品名称
+
+        :return: The product_name of this IndicatorDataObjectDetailDataSource.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this IndicatorDataObjectDetailDataSource.
+
+        数据源产品名称
+
+        :param product_name: The product_name of this IndicatorDataObjectDetailDataSource.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def product_feature(self):
+        r"""Gets the product_feature of this IndicatorDataObjectDetailDataSource.
+
+        数据源产品特性
+
+        :return: The product_feature of this IndicatorDataObjectDetailDataSource.
+        :rtype: str
+        """
+        return self._product_feature
+
+    @product_feature.setter
+    def product_feature(self, product_feature):
+        r"""Sets the product_feature of this IndicatorDataObjectDetailDataSource.
+
+        数据源产品特性
+
+        :param product_feature: The product_feature of this IndicatorDataObjectDetailDataSource.
+        :type product_feature: str
+        """
+        self._product_feature = product_feature
 
     def to_dict(self):
         result = {}

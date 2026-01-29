@@ -47,7 +47,7 @@ class ListUserUsageMetricRequest:
 
         :param start_time: 查询起始时间(0时区)。
         :type start_time: str
-        :param end_time: 查询截至时间(0时区)。
+        :param end_time: 查询截止时间(0时区)。
         :type end_time: str
         :param username: 用户名(模糊匹配)。
         :type username: str
@@ -126,7 +126,7 @@ class ListUserUsageMetricRequest:
     def end_time(self):
         r"""Gets the end_time of this ListUserUsageMetricRequest.
 
-        查询截至时间(0时区)。
+        查询截止时间(0时区)。
 
         :return: The end_time of this ListUserUsageMetricRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ListUserUsageMetricRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListUserUsageMetricRequest.
 
-        查询截至时间(0时区)。
+        查询截止时间(0时区)。
 
         :param end_time: The end_time of this ListUserUsageMetricRequest.
         :type end_time: str
