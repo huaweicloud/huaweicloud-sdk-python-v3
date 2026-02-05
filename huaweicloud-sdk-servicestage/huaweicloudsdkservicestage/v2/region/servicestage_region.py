@@ -40,6 +40,16 @@ class ServiceStageRegion:
                         "https://servicestage.ru-moscow-1.myhuaweicloud.com")
     MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
                         "https://servicestage.my-kualalumpur-1.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://servicestage.cn-north-12.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://servicestage.cn-south-4.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://servicestage.cn-east-4.myhuaweicloud.com")
+    CN_NORTH_9 = Region("cn-north-9",
+                        "https://servicestage.cn-north-9.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://servicestage.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -59,6 +69,11 @@ class ServiceStageRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "ru-moscow-1": RU_MOSCOW_1,
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
+        "cn-north-12": CN_NORTH_12,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-east-4": CN_EAST_4,
+        "cn-north-9": CN_NORTH_9,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod

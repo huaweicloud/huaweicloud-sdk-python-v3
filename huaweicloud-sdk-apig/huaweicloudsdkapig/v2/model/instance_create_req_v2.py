@@ -77,33 +77,33 @@ class InstanceCreateReqV2:
         :type instance_id: str
         :param spec_id: 实例规格： - BASIC：基础版实例 - PROFESSIONAL：专业版实例 - ENTERPRISE：企业版实例 - PLATINUM：铂金版实例 - BASIC_IPV6：基础版IPV6实例 - PROFESSIONAL_IPV6：专业版IPV6实例 - ENTERPRISE_IPV6：企业版IPV6实例 - PLATINUM_IPV6：铂金版IPV6实例 - PLATINUM_X2：铂金版 x2实例 - PLATINUM_X3：铂金版 x3实例 - PLATINUM_X4：铂金版 x4实例 - PLATINUM_X5：铂金版 x5实例 - PLATINUM_X6：铂金版 x6实例 - PLATINUM_X7：铂金版 x7实例 - PLATINUM_X8：铂金版 x8实例  当前仅部分region支持铂金版 x2、铂金版 x3、铂金版 x4、铂金版 x5、铂金版 x6、铂金版 x7、铂金版 x8
         :type spec_id: str
-        :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
         :type vpc_id: str
-        :param subnet_id: 子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        :param subnet_id: 子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
         :type subnet_id: str
-        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
-        :param eip_id: 弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        :param eip_id: 弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：在虚拟私有云服务的控制台界面，进入弹性公网IP的详情页面查找弹性公网IP ID。
         :type eip_id: str
-        :param enterprise_project_id: 企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        :param enterprise_project_id: 企业项目ID，企业账号必填。  获取方法如下： - 方法1：在企业项目管理界面，进入项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
         :type enterprise_project_id: str
         :param available_zone_ids: 可用区列表
         :type available_zone_ids: list[str]
-        :param bandwidth_size: 出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源
+        :param bandwidth_size: 出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源 
         :type bandwidth_size: int
-        :param bandwidth_charging_mode: 带宽收费模式： - bandwidth - traffic
+        :param bandwidth_charging_mode: 带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
         :type bandwidth_charging_mode: str
-        :param ipv6_enable: 公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
+        :param ipv6_enable: 公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6 
         :type ipv6_enable: bool
         :param loadbalancer_provider: 负载均衡器类型： - lvs - elb
         :type loadbalancer_provider: str
-        :param tags: 标签列表。  一个实例默认最多支持创建20个标签
+        :param tags: 标签列表。  一个实例默认最多支持创建20个标签 
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
         :param vpcep_service_name: 终端节点服务的名称。  支持英文、数字、中划线、下划线，0~16个字符。  如果您不填写该参数，系统生成的终端节点服务的名称为{region}.apig.{service_id}。 如果您填写该参数，系统生成的终端节点服务的名称为{region}.{vpcep_service_name}.{service_id}。 实例创建完成后，可以在实例管理-&gt;终端节点管理页面修改该名称。 
         :type vpcep_service_name: str
         :param ingress_bandwidth_size: 入口带宽大小
         :type ingress_bandwidth_size: int
-        :param ingress_bandwidth_charging_mode: 入口带宽收费模式： - bandwidth - traffic
+        :param ingress_bandwidth_charging_mode: 入口带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
         :type ingress_bandwidth_charging_mode: str
         """
         
@@ -308,7 +308,7 @@ class InstanceCreateReqV2:
     def vpc_id(self):
         r"""Gets the vpc_id of this InstanceCreateReqV2.
 
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
 
         :return: The vpc_id of this InstanceCreateReqV2.
         :rtype: str
@@ -319,7 +319,7 @@ class InstanceCreateReqV2:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this InstanceCreateReqV2.
 
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
 
         :param vpc_id: The vpc_id of this InstanceCreateReqV2.
         :type vpc_id: str
@@ -330,7 +330,7 @@ class InstanceCreateReqV2:
     def subnet_id(self):
         r"""Gets the subnet_id of this InstanceCreateReqV2.
 
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
 
         :return: The subnet_id of this InstanceCreateReqV2.
         :rtype: str
@@ -341,7 +341,7 @@ class InstanceCreateReqV2:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this InstanceCreateReqV2.
 
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
 
         :param subnet_id: The subnet_id of this InstanceCreateReqV2.
         :type subnet_id: str
@@ -352,7 +352,7 @@ class InstanceCreateReqV2:
     def security_group_id(self):
         r"""Gets the security_group_id of this InstanceCreateReqV2.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :return: The security_group_id of this InstanceCreateReqV2.
         :rtype: str
@@ -363,7 +363,7 @@ class InstanceCreateReqV2:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this InstanceCreateReqV2.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :param security_group_id: The security_group_id of this InstanceCreateReqV2.
         :type security_group_id: str
@@ -374,7 +374,7 @@ class InstanceCreateReqV2:
     def eip_id(self):
         r"""Gets the eip_id of this InstanceCreateReqV2.
 
-        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：在虚拟私有云服务的控制台界面，进入弹性公网IP的详情页面查找弹性公网IP ID。
 
         :return: The eip_id of this InstanceCreateReqV2.
         :rtype: str
@@ -385,7 +385,7 @@ class InstanceCreateReqV2:
     def eip_id(self, eip_id):
         r"""Sets the eip_id of this InstanceCreateReqV2.
 
-        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：登录虚拟私有云服务的控制台界面，在弹性公网IP的详情页面查找弹性公网IP ID。
+        弹性公网IP ID。  实例需要开启公网访问，且loadbalancer_provider为lvs时需要填写，绑定后使用者可以通过该入口从公网访问APIG实例中的API等资源  获取方法：在虚拟私有云服务的控制台界面，进入弹性公网IP的详情页面查找弹性公网IP ID。
 
         :param eip_id: The eip_id of this InstanceCreateReqV2.
         :type eip_id: str
@@ -396,7 +396,7 @@ class InstanceCreateReqV2:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this InstanceCreateReqV2.
 
-        企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        企业项目ID，企业账号必填。  获取方法如下： - 方法1：在企业项目管理界面，进入项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
 
         :return: The enterprise_project_id of this InstanceCreateReqV2.
         :rtype: str
@@ -407,7 +407,7 @@ class InstanceCreateReqV2:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this InstanceCreateReqV2.
 
-        企业项目ID，企业账号必填。  获取方法如下： - 方法1：登录企业项目管理界面，在项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
+        企业项目ID，企业账号必填。  获取方法如下： - 方法1：在企业项目管理界面，进入项目管理详情页面查找项目ID。 - 方法2：通过企业项目管理的API接口查询，具体方法请参见《企业管理API参考》的“查询企业项目列表”章节。
 
         :param enterprise_project_id: The enterprise_project_id of this InstanceCreateReqV2.
         :type enterprise_project_id: str
@@ -440,7 +440,7 @@ class InstanceCreateReqV2:
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this InstanceCreateReqV2.
 
-        出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源
+        出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源 
 
         :return: The bandwidth_size of this InstanceCreateReqV2.
         :rtype: int
@@ -451,7 +451,7 @@ class InstanceCreateReqV2:
     def bandwidth_size(self, bandwidth_size):
         r"""Sets the bandwidth_size of this InstanceCreateReqV2.
 
-        出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源
+        出公网带宽  实例需要开启出公网功能时需要填写，绑定后使用者可以利用该出口访问公网上的互联网资源 
 
         :param bandwidth_size: The bandwidth_size of this InstanceCreateReqV2.
         :type bandwidth_size: int
@@ -462,7 +462,7 @@ class InstanceCreateReqV2:
     def bandwidth_charging_mode(self):
         r"""Gets the bandwidth_charging_mode of this InstanceCreateReqV2.
 
-        带宽收费模式： - bandwidth - traffic
+        带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :return: The bandwidth_charging_mode of this InstanceCreateReqV2.
         :rtype: str
@@ -473,7 +473,7 @@ class InstanceCreateReqV2:
     def bandwidth_charging_mode(self, bandwidth_charging_mode):
         r"""Sets the bandwidth_charging_mode of this InstanceCreateReqV2.
 
-        带宽收费模式： - bandwidth - traffic
+        带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :param bandwidth_charging_mode: The bandwidth_charging_mode of this InstanceCreateReqV2.
         :type bandwidth_charging_mode: str
@@ -484,7 +484,7 @@ class InstanceCreateReqV2:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this InstanceCreateReqV2.
 
-        公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
+        公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6 
 
         :return: The ipv6_enable of this InstanceCreateReqV2.
         :rtype: bool
@@ -495,7 +495,7 @@ class InstanceCreateReqV2:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this InstanceCreateReqV2.
 
-        公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
+        公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6 
 
         :param ipv6_enable: The ipv6_enable of this InstanceCreateReqV2.
         :type ipv6_enable: bool
@@ -528,7 +528,7 @@ class InstanceCreateReqV2:
     def tags(self):
         r"""Gets the tags of this InstanceCreateReqV2.
 
-        标签列表。  一个实例默认最多支持创建20个标签
+        标签列表。  一个实例默认最多支持创建20个标签 
 
         :return: The tags of this InstanceCreateReqV2.
         :rtype: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
@@ -539,7 +539,7 @@ class InstanceCreateReqV2:
     def tags(self, tags):
         r"""Sets the tags of this InstanceCreateReqV2.
 
-        标签列表。  一个实例默认最多支持创建20个标签
+        标签列表。  一个实例默认最多支持创建20个标签 
 
         :param tags: The tags of this InstanceCreateReqV2.
         :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
@@ -594,7 +594,7 @@ class InstanceCreateReqV2:
     def ingress_bandwidth_charging_mode(self):
         r"""Gets the ingress_bandwidth_charging_mode of this InstanceCreateReqV2.
 
-        入口带宽收费模式： - bandwidth - traffic
+        入口带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :return: The ingress_bandwidth_charging_mode of this InstanceCreateReqV2.
         :rtype: str
@@ -605,7 +605,7 @@ class InstanceCreateReqV2:
     def ingress_bandwidth_charging_mode(self, ingress_bandwidth_charging_mode):
         r"""Sets the ingress_bandwidth_charging_mode of this InstanceCreateReqV2.
 
-        入口带宽收费模式： - bandwidth - traffic
+        入口带宽收费模式： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :param ingress_bandwidth_charging_mode: The ingress_bandwidth_charging_mode of this InstanceCreateReqV2.
         :type ingress_bandwidth_charging_mode: str

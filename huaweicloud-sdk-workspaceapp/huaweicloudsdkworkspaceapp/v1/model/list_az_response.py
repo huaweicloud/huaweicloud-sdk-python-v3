@@ -34,9 +34,9 @@ class ListAzResponse(SdkResponse):
 
         :param azs: 云应用支持的可用分区表格，按站点分类。
         :type azs: dict(str, list[AvailabilityZoneInfo])
-        :param default_type: 默认站点类型。
+        :param default_type: 默认站点类型： - CENTER - IES
         :type default_type: str
-        :param support_type: 云应用支持的站点类型。
+        :param support_type: 云应用支持的站点类型： - CENTER - IES
         :type support_type: list[str]
         """
         
@@ -80,7 +80,7 @@ class ListAzResponse(SdkResponse):
     def default_type(self):
         r"""Gets the default_type of this ListAzResponse.
 
-        默认站点类型。
+        默认站点类型： - CENTER - IES
 
         :return: The default_type of this ListAzResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ListAzResponse(SdkResponse):
     def default_type(self, default_type):
         r"""Sets the default_type of this ListAzResponse.
 
-        默认站点类型。
+        默认站点类型： - CENTER - IES
 
         :param default_type: The default_type of this ListAzResponse.
         :type default_type: str
@@ -102,7 +102,7 @@ class ListAzResponse(SdkResponse):
     def support_type(self):
         r"""Gets the support_type of this ListAzResponse.
 
-        云应用支持的站点类型。
+        云应用支持的站点类型： - CENTER - IES
 
         :return: The support_type of this ListAzResponse.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ListAzResponse(SdkResponse):
     def support_type(self, support_type):
         r"""Sets the support_type of this ListAzResponse.
 
-        云应用支持的站点类型。
+        云应用支持的站点类型： - CENTER - IES
 
         :param support_type: The support_type of this ListAzResponse.
         :type support_type: list[str]

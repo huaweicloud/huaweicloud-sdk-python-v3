@@ -39,19 +39,19 @@ class ImportApiDefinitionsV2RequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_create_group: 是否创建新分组
+        :param is_create_group: 是否创建新分组。
         :type is_create_group: bool
-        :param group_id: API分组编号，当is_create_group&#x3D;false时为必填
+        :param group_id: API分组编号，当is_create_group&#x3D;false时为必填。
         :type group_id: str
-        :param extend_mode: 扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
+        :param extend_mode: 扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息 
         :type extend_mode: str
-        :param simple_mode: 是否开启简易导入模式
+        :param simple_mode: 是否开启简易导入模式。
         :type simple_mode: bool
-        :param mock_mode: 是否开启Mock后端
+        :param mock_mode: 是否开启Mock后端。
         :type mock_mode: bool
-        :param api_mode: 导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
+        :param api_mode: 导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息 
         :type api_mode: str
-        :param file_name: 导入Api的请求体，json或yaml格式的文件
+        :param file_name: 导入Api的请求体，json或yaml或yml格式的文件。
         :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -84,7 +84,7 @@ class ImportApiDefinitionsV2RequestBody:
     def is_create_group(self):
         r"""Gets the is_create_group of this ImportApiDefinitionsV2RequestBody.
 
-        是否创建新分组
+        是否创建新分组。
 
         :return: The is_create_group of this ImportApiDefinitionsV2RequestBody.
         :rtype: bool
@@ -95,7 +95,7 @@ class ImportApiDefinitionsV2RequestBody:
     def is_create_group(self, is_create_group):
         r"""Sets the is_create_group of this ImportApiDefinitionsV2RequestBody.
 
-        是否创建新分组
+        是否创建新分组。
 
         :param is_create_group: The is_create_group of this ImportApiDefinitionsV2RequestBody.
         :type is_create_group: bool
@@ -106,7 +106,7 @@ class ImportApiDefinitionsV2RequestBody:
     def group_id(self):
         r"""Gets the group_id of this ImportApiDefinitionsV2RequestBody.
 
-        API分组编号，当is_create_group=false时为必填
+        API分组编号，当is_create_group=false时为必填。
 
         :return: The group_id of this ImportApiDefinitionsV2RequestBody.
         :rtype: str
@@ -117,7 +117,7 @@ class ImportApiDefinitionsV2RequestBody:
     def group_id(self, group_id):
         r"""Sets the group_id of this ImportApiDefinitionsV2RequestBody.
 
-        API分组编号，当is_create_group=false时为必填
+        API分组编号，当is_create_group=false时为必填。
 
         :param group_id: The group_id of this ImportApiDefinitionsV2RequestBody.
         :type group_id: str
@@ -128,7 +128,7 @@ class ImportApiDefinitionsV2RequestBody:
     def extend_mode(self):
         r"""Gets the extend_mode of this ImportApiDefinitionsV2RequestBody.
 
-        扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
+        扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息 
 
         :return: The extend_mode of this ImportApiDefinitionsV2RequestBody.
         :rtype: str
@@ -139,7 +139,7 @@ class ImportApiDefinitionsV2RequestBody:
     def extend_mode(self, extend_mode):
         r"""Sets the extend_mode of this ImportApiDefinitionsV2RequestBody.
 
-        扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
+        扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息 
 
         :param extend_mode: The extend_mode of this ImportApiDefinitionsV2RequestBody.
         :type extend_mode: str
@@ -150,7 +150,7 @@ class ImportApiDefinitionsV2RequestBody:
     def simple_mode(self):
         r"""Gets the simple_mode of this ImportApiDefinitionsV2RequestBody.
 
-        是否开启简易导入模式
+        是否开启简易导入模式。
 
         :return: The simple_mode of this ImportApiDefinitionsV2RequestBody.
         :rtype: bool
@@ -161,7 +161,7 @@ class ImportApiDefinitionsV2RequestBody:
     def simple_mode(self, simple_mode):
         r"""Sets the simple_mode of this ImportApiDefinitionsV2RequestBody.
 
-        是否开启简易导入模式
+        是否开启简易导入模式。
 
         :param simple_mode: The simple_mode of this ImportApiDefinitionsV2RequestBody.
         :type simple_mode: bool
@@ -172,7 +172,7 @@ class ImportApiDefinitionsV2RequestBody:
     def mock_mode(self):
         r"""Gets the mock_mode of this ImportApiDefinitionsV2RequestBody.
 
-        是否开启Mock后端
+        是否开启Mock后端。
 
         :return: The mock_mode of this ImportApiDefinitionsV2RequestBody.
         :rtype: bool
@@ -183,7 +183,7 @@ class ImportApiDefinitionsV2RequestBody:
     def mock_mode(self, mock_mode):
         r"""Sets the mock_mode of this ImportApiDefinitionsV2RequestBody.
 
-        是否开启Mock后端
+        是否开启Mock后端。
 
         :param mock_mode: The mock_mode of this ImportApiDefinitionsV2RequestBody.
         :type mock_mode: bool
@@ -194,7 +194,7 @@ class ImportApiDefinitionsV2RequestBody:
     def api_mode(self):
         r"""Gets the api_mode of this ImportApiDefinitionsV2RequestBody.
 
-        导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
+        导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息 
 
         :return: The api_mode of this ImportApiDefinitionsV2RequestBody.
         :rtype: str
@@ -205,7 +205,7 @@ class ImportApiDefinitionsV2RequestBody:
     def api_mode(self, api_mode):
         r"""Sets the api_mode of this ImportApiDefinitionsV2RequestBody.
 
-        导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
+        导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息 
 
         :param api_mode: The api_mode of this ImportApiDefinitionsV2RequestBody.
         :type api_mode: str
@@ -216,7 +216,7 @@ class ImportApiDefinitionsV2RequestBody:
     def file_name(self):
         r"""Gets the file_name of this ImportApiDefinitionsV2RequestBody.
 
-        导入Api的请求体，json或yaml格式的文件
+        导入Api的请求体，json或yaml或yml格式的文件。
 
         :return: The file_name of this ImportApiDefinitionsV2RequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -227,7 +227,7 @@ class ImportApiDefinitionsV2RequestBody:
     def file_name(self, file_name):
         r"""Sets the file_name of this ImportApiDefinitionsV2RequestBody.
 
-        导入Api的请求体，json或yaml格式的文件
+        导入Api的请求体，json或yaml或yml格式的文件。
 
         :param file_name: The file_name of this ImportApiDefinitionsV2RequestBody.
         :type file_name: :class:`huaweicloudsdkcore.http.formdata.FormFile`

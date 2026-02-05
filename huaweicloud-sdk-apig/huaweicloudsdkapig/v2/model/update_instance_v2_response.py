@@ -136,75 +136,75 @@ class UpdateInstanceV2Response(SdkResponse):
         :type enterprise_project_id: str
         :param eip_address: 实例绑定的弹性IP地址
         :type eip_address: str
-        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
         :type charging_mode: int
-        :param cbc_metadata: [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        :param cbc_metadata: [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
         :type cbc_metadata: str
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
         :param cbc_operation_locks: 云运营限制操作锁
         :type cbc_operation_locks: list[:class:`huaweicloudsdkapig.v2.CbcOperationLock`]
-        :param description: 实例描述
+        :param description: 实例描述 
         :type description: str
-        :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
         :type vpc_id: str
-        :param subnet_id: 子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        :param subnet_id: 子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
         :type subnet_id: str
-        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
-        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39; 
         :type maintain_begin: str
-        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。 
         :type maintain_end: str
-        :param ingress_ip: 实例入口，虚拟私有云访问地址
+        :param ingress_ip: 实例入口，虚拟私有云访问地址 
         :type ingress_ip: str
-        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6)
+        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6) 
         :type ingress_ip_v6: str
-        :param user_id: 实例所属用户ID
+        :param user_id: 实例所属用户ID 
         :type user_id: str
-        :param nat_eip_ipv6_cidr: 出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
+        :param nat_eip_ipv6_cidr: 出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6 
         :type nat_eip_ipv6_cidr: str
-        :param eip_ipv6_address: 弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6
+        :param eip_ipv6_address: 弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6 
         :type eip_ipv6_address: str
-        :param nat_eip_address: 实例出公网IP
+        :param nat_eip_address: 实例出公网IP 
         :type nat_eip_address: str
-        :param bandwidth_size: 出公网带宽
+        :param bandwidth_size: 出公网带宽 
         :type bandwidth_size: int
-        :param bandwidth_charging_mode: 出公网带宽计费模式
+        :param bandwidth_charging_mode: 出公网带宽计费模式 
         :type bandwidth_charging_mode: str
-        :param available_zone_ids: 可用区
+        :param available_zone_ids: 可用区 
         :type available_zone_ids: str
-        :param instance_version: 实例版本编号
+        :param instance_version: 实例版本编号 
         :type instance_version: str
-        :param virsubnet_id: 子网的网络ID。  暂不支持
+        :param virsubnet_id: 子网的网络ID。  暂不支持 
         :type virsubnet_id: str
-        :param roma_eip_address: roma弹性公网IP。  暂不支持
+        :param roma_eip_address: roma弹性公网IP。  暂不支持 
         :type roma_eip_address: str
-        :param listeners: 监听信息  暂不支持
+        :param listeners: 监听信息  暂不支持 
         :type listeners: object
-        :param supported_features: 实例支持的特性列表
+        :param supported_features: 实例支持的特性列表 
         :type supported_features: list[str]
         :param endpoint_service: 
         :type endpoint_service: :class:`huaweicloudsdkapig.v2.EndpointService`
-        :param endpoint_services: 终端节点服务列表
+        :param endpoint_services: 终端节点服务列表 
         :type endpoint_services: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
         :param node_ips: 
         :type node_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
         :param node_ipv6_ips: 
         :type node_ipv6_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
-        :param public_ipv6_ips: 实例IPV6出公网IP
+        :param public_ipv6_ips: 实例IPV6出公网IP 
         :type public_ipv6_ips: list[str]
-        :param publicips: 公网入口地址列表
+        :param publicips: 公网入口地址列表 
         :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
-        :param privateips: 私网入口地址列表
+        :param privateips: 私网入口地址列表 
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
-        :param unreliable_ips: 不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
+        :param unreliable_ips: 不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组 
         :type unreliable_ips: list[str]
-        :param enable_fullstack_ipv6: 实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
+        :param enable_fullstack_ipv6: 实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6 
         :type enable_fullstack_ipv6: bool
-        :param is_releasable: 实例是否可释放 - true：可释放 - false：不可释放
+        :param is_releasable: 实例是否可释放 - true：可释放 - false：不可释放 
         :type is_releasable: bool
-        :param ingress_bandwidth_charging_mode: 入公网带宽计费模式
+        :param ingress_bandwidth_charging_mode: 入公网带宽计费模式 
         :type ingress_bandwidth_charging_mode: str
         """
         
@@ -572,7 +572,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def charging_mode(self):
         r"""Gets the charging_mode of this UpdateInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :return: The charging_mode of this UpdateInstanceV2Response.
         :rtype: int
@@ -583,7 +583,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this UpdateInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :param charging_mode: The charging_mode of this UpdateInstanceV2Response.
         :type charging_mode: int
@@ -594,7 +594,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def cbc_metadata(self):
         r"""Gets the cbc_metadata of this UpdateInstanceV2Response.
 
-        [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :return: The cbc_metadata of this UpdateInstanceV2Response.
         :rtype: str
@@ -605,7 +605,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def cbc_metadata(self, cbc_metadata):
         r"""Sets the cbc_metadata of this UpdateInstanceV2Response.
 
-        [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :param cbc_metadata: The cbc_metadata of this UpdateInstanceV2Response.
         :type cbc_metadata: str
@@ -660,7 +660,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def description(self):
         r"""Gets the description of this UpdateInstanceV2Response.
 
-        实例描述
+        实例描述 
 
         :return: The description of this UpdateInstanceV2Response.
         :rtype: str
@@ -671,7 +671,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def description(self, description):
         r"""Sets the description of this UpdateInstanceV2Response.
 
-        实例描述
+        实例描述 
 
         :param description: The description of this UpdateInstanceV2Response.
         :type description: str
@@ -682,7 +682,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def vpc_id(self):
         r"""Gets the vpc_id of this UpdateInstanceV2Response.
 
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
 
         :return: The vpc_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -693,7 +693,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this UpdateInstanceV2Response.
 
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
+        虚拟私有云ID。  获取方法如下：   - 方法1：在虚拟私有云服务的控制台界面，进入虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
 
         :param vpc_id: The vpc_id of this UpdateInstanceV2Response.
         :type vpc_id: str
@@ -704,7 +704,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def subnet_id(self):
         r"""Gets the subnet_id of this UpdateInstanceV2Response.
 
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
 
         :return: The subnet_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -715,7 +715,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this UpdateInstanceV2Response.
 
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
+        子网的网络ID。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询子网列表”章节。 
 
         :param subnet_id: The subnet_id of this UpdateInstanceV2Response.
         :type subnet_id: str
@@ -726,7 +726,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def security_group_id(self):
         r"""Gets the security_group_id of this UpdateInstanceV2Response.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :return: The security_group_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -737,7 +737,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this UpdateInstanceV2Response.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：在虚拟私有云服务的控制台界面，进入安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :param security_group_id: The security_group_id of this UpdateInstanceV2Response.
         :type security_group_id: str
@@ -748,7 +748,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def maintain_begin(self):
         r"""Gets the maintain_begin of this UpdateInstanceV2Response.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。' 
 
         :return: The maintain_begin of this UpdateInstanceV2Response.
         :rtype: str
@@ -759,7 +759,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def maintain_begin(self, maintain_begin):
         r"""Sets the maintain_begin of this UpdateInstanceV2Response.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。' 
 
         :param maintain_begin: The maintain_begin of this UpdateInstanceV2Response.
         :type maintain_begin: str
@@ -770,7 +770,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def maintain_end(self):
         r"""Gets the maintain_end of this UpdateInstanceV2Response.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。 
 
         :return: The maintain_end of this UpdateInstanceV2Response.
         :rtype: str
@@ -781,7 +781,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def maintain_end(self, maintain_end):
         r"""Sets the maintain_end of this UpdateInstanceV2Response.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。 
 
         :param maintain_end: The maintain_end of this UpdateInstanceV2Response.
         :type maintain_end: str
@@ -792,7 +792,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_ip(self):
         r"""Gets the ingress_ip of this UpdateInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址
+        实例入口，虚拟私有云访问地址 
 
         :return: The ingress_ip of this UpdateInstanceV2Response.
         :rtype: str
@@ -803,7 +803,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_ip(self, ingress_ip):
         r"""Sets the ingress_ip of this UpdateInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址
+        实例入口，虚拟私有云访问地址 
 
         :param ingress_ip: The ingress_ip of this UpdateInstanceV2Response.
         :type ingress_ip: str
@@ -814,7 +814,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self):
         r"""Gets the ingress_ip_v6 of this UpdateInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6)
+        实例入口，虚拟私有云访问地址 (IPv6) 
 
         :return: The ingress_ip_v6 of this UpdateInstanceV2Response.
         :rtype: str
@@ -825,7 +825,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self, ingress_ip_v6):
         r"""Sets the ingress_ip_v6 of this UpdateInstanceV2Response.
 
-        实例入口，虚拟私有云访问地址 (IPv6)
+        实例入口，虚拟私有云访问地址 (IPv6) 
 
         :param ingress_ip_v6: The ingress_ip_v6 of this UpdateInstanceV2Response.
         :type ingress_ip_v6: str
@@ -836,7 +836,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def user_id(self):
         r"""Gets the user_id of this UpdateInstanceV2Response.
 
-        实例所属用户ID
+        实例所属用户ID 
 
         :return: The user_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -847,7 +847,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def user_id(self, user_id):
         r"""Sets the user_id of this UpdateInstanceV2Response.
 
-        实例所属用户ID
+        实例所属用户ID 
 
         :param user_id: The user_id of this UpdateInstanceV2Response.
         :type user_id: str
@@ -858,7 +858,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def nat_eip_ipv6_cidr(self):
         r"""Gets the nat_eip_ipv6_cidr of this UpdateInstanceV2Response.
 
-        出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
+        出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6 
 
         :return: The nat_eip_ipv6_cidr of this UpdateInstanceV2Response.
         :rtype: str
@@ -869,7 +869,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def nat_eip_ipv6_cidr(self, nat_eip_ipv6_cidr):
         r"""Sets the nat_eip_ipv6_cidr of this UpdateInstanceV2Response.
 
-        出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
+        出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6 
 
         :param nat_eip_ipv6_cidr: The nat_eip_ipv6_cidr of this UpdateInstanceV2Response.
         :type nat_eip_ipv6_cidr: str
@@ -880,7 +880,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def eip_ipv6_address(self):
         r"""Gets the eip_ipv6_address of this UpdateInstanceV2Response.
 
-        弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6
+        弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6 
 
         :return: The eip_ipv6_address of this UpdateInstanceV2Response.
         :rtype: str
@@ -891,7 +891,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def eip_ipv6_address(self, eip_ipv6_address):
         r"""Sets the eip_ipv6_address of this UpdateInstanceV2Response.
 
-        弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6
+        弹性IP地址(IPv6)。  当前仅部分region部分可用区支持IPv6 
 
         :param eip_ipv6_address: The eip_ipv6_address of this UpdateInstanceV2Response.
         :type eip_ipv6_address: str
@@ -902,7 +902,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def nat_eip_address(self):
         r"""Gets the nat_eip_address of this UpdateInstanceV2Response.
 
-        实例出公网IP
+        实例出公网IP 
 
         :return: The nat_eip_address of this UpdateInstanceV2Response.
         :rtype: str
@@ -913,7 +913,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def nat_eip_address(self, nat_eip_address):
         r"""Sets the nat_eip_address of this UpdateInstanceV2Response.
 
-        实例出公网IP
+        实例出公网IP 
 
         :param nat_eip_address: The nat_eip_address of this UpdateInstanceV2Response.
         :type nat_eip_address: str
@@ -924,7 +924,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this UpdateInstanceV2Response.
 
-        出公网带宽
+        出公网带宽 
 
         :return: The bandwidth_size of this UpdateInstanceV2Response.
         :rtype: int
@@ -935,7 +935,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def bandwidth_size(self, bandwidth_size):
         r"""Sets the bandwidth_size of this UpdateInstanceV2Response.
 
-        出公网带宽
+        出公网带宽 
 
         :param bandwidth_size: The bandwidth_size of this UpdateInstanceV2Response.
         :type bandwidth_size: int
@@ -946,7 +946,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def bandwidth_charging_mode(self):
         r"""Gets the bandwidth_charging_mode of this UpdateInstanceV2Response.
 
-        出公网带宽计费模式
+        出公网带宽计费模式 
 
         :return: The bandwidth_charging_mode of this UpdateInstanceV2Response.
         :rtype: str
@@ -957,7 +957,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def bandwidth_charging_mode(self, bandwidth_charging_mode):
         r"""Sets the bandwidth_charging_mode of this UpdateInstanceV2Response.
 
-        出公网带宽计费模式
+        出公网带宽计费模式 
 
         :param bandwidth_charging_mode: The bandwidth_charging_mode of this UpdateInstanceV2Response.
         :type bandwidth_charging_mode: str
@@ -968,7 +968,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def available_zone_ids(self):
         r"""Gets the available_zone_ids of this UpdateInstanceV2Response.
 
-        可用区
+        可用区 
 
         :return: The available_zone_ids of this UpdateInstanceV2Response.
         :rtype: str
@@ -979,7 +979,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def available_zone_ids(self, available_zone_ids):
         r"""Sets the available_zone_ids of this UpdateInstanceV2Response.
 
-        可用区
+        可用区 
 
         :param available_zone_ids: The available_zone_ids of this UpdateInstanceV2Response.
         :type available_zone_ids: str
@@ -990,7 +990,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def instance_version(self):
         r"""Gets the instance_version of this UpdateInstanceV2Response.
 
-        实例版本编号
+        实例版本编号 
 
         :return: The instance_version of this UpdateInstanceV2Response.
         :rtype: str
@@ -1001,7 +1001,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def instance_version(self, instance_version):
         r"""Sets the instance_version of this UpdateInstanceV2Response.
 
-        实例版本编号
+        实例版本编号 
 
         :param instance_version: The instance_version of this UpdateInstanceV2Response.
         :type instance_version: str
@@ -1012,7 +1012,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def virsubnet_id(self):
         r"""Gets the virsubnet_id of this UpdateInstanceV2Response.
 
-        子网的网络ID。  暂不支持
+        子网的网络ID。  暂不支持 
 
         :return: The virsubnet_id of this UpdateInstanceV2Response.
         :rtype: str
@@ -1023,7 +1023,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def virsubnet_id(self, virsubnet_id):
         r"""Sets the virsubnet_id of this UpdateInstanceV2Response.
 
-        子网的网络ID。  暂不支持
+        子网的网络ID。  暂不支持 
 
         :param virsubnet_id: The virsubnet_id of this UpdateInstanceV2Response.
         :type virsubnet_id: str
@@ -1034,7 +1034,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def roma_eip_address(self):
         r"""Gets the roma_eip_address of this UpdateInstanceV2Response.
 
-        roma弹性公网IP。  暂不支持
+        roma弹性公网IP。  暂不支持 
 
         :return: The roma_eip_address of this UpdateInstanceV2Response.
         :rtype: str
@@ -1045,7 +1045,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def roma_eip_address(self, roma_eip_address):
         r"""Sets the roma_eip_address of this UpdateInstanceV2Response.
 
-        roma弹性公网IP。  暂不支持
+        roma弹性公网IP。  暂不支持 
 
         :param roma_eip_address: The roma_eip_address of this UpdateInstanceV2Response.
         :type roma_eip_address: str
@@ -1056,7 +1056,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def listeners(self):
         r"""Gets the listeners of this UpdateInstanceV2Response.
 
-        监听信息  暂不支持
+        监听信息  暂不支持 
 
         :return: The listeners of this UpdateInstanceV2Response.
         :rtype: object
@@ -1067,7 +1067,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def listeners(self, listeners):
         r"""Sets the listeners of this UpdateInstanceV2Response.
 
-        监听信息  暂不支持
+        监听信息  暂不支持 
 
         :param listeners: The listeners of this UpdateInstanceV2Response.
         :type listeners: object
@@ -1078,7 +1078,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def supported_features(self):
         r"""Gets the supported_features of this UpdateInstanceV2Response.
 
-        实例支持的特性列表
+        实例支持的特性列表 
 
         :return: The supported_features of this UpdateInstanceV2Response.
         :rtype: list[str]
@@ -1089,7 +1089,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def supported_features(self, supported_features):
         r"""Sets the supported_features of this UpdateInstanceV2Response.
 
-        实例支持的特性列表
+        实例支持的特性列表 
 
         :param supported_features: The supported_features of this UpdateInstanceV2Response.
         :type supported_features: list[str]
@@ -1118,7 +1118,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def endpoint_services(self):
         r"""Gets the endpoint_services of this UpdateInstanceV2Response.
 
-        终端节点服务列表
+        终端节点服务列表 
 
         :return: The endpoint_services of this UpdateInstanceV2Response.
         :rtype: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
@@ -1129,7 +1129,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def endpoint_services(self, endpoint_services):
         r"""Sets the endpoint_services of this UpdateInstanceV2Response.
 
-        终端节点服务列表
+        终端节点服务列表 
 
         :param endpoint_services: The endpoint_services of this UpdateInstanceV2Response.
         :type endpoint_services: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
@@ -1176,7 +1176,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def public_ipv6_ips(self):
         r"""Gets the public_ipv6_ips of this UpdateInstanceV2Response.
 
-        实例IPV6出公网IP
+        实例IPV6出公网IP 
 
         :return: The public_ipv6_ips of this UpdateInstanceV2Response.
         :rtype: list[str]
@@ -1187,7 +1187,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def public_ipv6_ips(self, public_ipv6_ips):
         r"""Sets the public_ipv6_ips of this UpdateInstanceV2Response.
 
-        实例IPV6出公网IP
+        实例IPV6出公网IP 
 
         :param public_ipv6_ips: The public_ipv6_ips of this UpdateInstanceV2Response.
         :type public_ipv6_ips: list[str]
@@ -1198,7 +1198,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def publicips(self):
         r"""Gets the publicips of this UpdateInstanceV2Response.
 
-        公网入口地址列表
+        公网入口地址列表 
 
         :return: The publicips of this UpdateInstanceV2Response.
         :rtype: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
@@ -1209,7 +1209,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def publicips(self, publicips):
         r"""Sets the publicips of this UpdateInstanceV2Response.
 
-        公网入口地址列表
+        公网入口地址列表 
 
         :param publicips: The publicips of this UpdateInstanceV2Response.
         :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
@@ -1220,7 +1220,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def privateips(self):
         r"""Gets the privateips of this UpdateInstanceV2Response.
 
-        私网入口地址列表
+        私网入口地址列表 
 
         :return: The privateips of this UpdateInstanceV2Response.
         :rtype: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
@@ -1231,7 +1231,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def privateips(self, privateips):
         r"""Sets the privateips of this UpdateInstanceV2Response.
 
-        私网入口地址列表
+        私网入口地址列表 
 
         :param privateips: The privateips of this UpdateInstanceV2Response.
         :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
@@ -1242,7 +1242,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def unreliable_ips(self):
         r"""Gets the unreliable_ips of this UpdateInstanceV2Response.
 
-        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
+        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组 
 
         :return: The unreliable_ips of this UpdateInstanceV2Response.
         :rtype: list[str]
@@ -1253,7 +1253,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def unreliable_ips(self, unreliable_ips):
         r"""Sets the unreliable_ips of this UpdateInstanceV2Response.
 
-        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组
+        不建议使用的实例入口列表：分组子域名解析未指向到该列表的IP，不能用该列表的IP直接访问DEFAULT分组 
 
         :param unreliable_ips: The unreliable_ips of this UpdateInstanceV2Response.
         :type unreliable_ips: list[str]
@@ -1264,7 +1264,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def enable_fullstack_ipv6(self):
         r"""Gets the enable_fullstack_ipv6 of this UpdateInstanceV2Response.
 
-        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
+        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6 
 
         :return: The enable_fullstack_ipv6 of this UpdateInstanceV2Response.
         :rtype: bool
@@ -1275,7 +1275,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def enable_fullstack_ipv6(self, enable_fullstack_ipv6):
         r"""Sets the enable_fullstack_ipv6 of this UpdateInstanceV2Response.
 
-        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6
+        实例是否支持全量IPv6 - true：支持，实例入口和实例出口都支持IPV6 - false：不支持，仅实例入口支持IPV6 
 
         :param enable_fullstack_ipv6: The enable_fullstack_ipv6 of this UpdateInstanceV2Response.
         :type enable_fullstack_ipv6: bool
@@ -1286,7 +1286,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def is_releasable(self):
         r"""Gets the is_releasable of this UpdateInstanceV2Response.
 
-        实例是否可释放 - true：可释放 - false：不可释放
+        实例是否可释放 - true：可释放 - false：不可释放 
 
         :return: The is_releasable of this UpdateInstanceV2Response.
         :rtype: bool
@@ -1297,7 +1297,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def is_releasable(self, is_releasable):
         r"""Sets the is_releasable of this UpdateInstanceV2Response.
 
-        实例是否可释放 - true：可释放 - false：不可释放
+        实例是否可释放 - true：可释放 - false：不可释放 
 
         :param is_releasable: The is_releasable of this UpdateInstanceV2Response.
         :type is_releasable: bool
@@ -1308,7 +1308,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_bandwidth_charging_mode(self):
         r"""Gets the ingress_bandwidth_charging_mode of this UpdateInstanceV2Response.
 
-        入公网带宽计费模式
+        入公网带宽计费模式 
 
         :return: The ingress_bandwidth_charging_mode of this UpdateInstanceV2Response.
         :rtype: str
@@ -1319,7 +1319,7 @@ class UpdateInstanceV2Response(SdkResponse):
     def ingress_bandwidth_charging_mode(self, ingress_bandwidth_charging_mode):
         r"""Sets the ingress_bandwidth_charging_mode of this UpdateInstanceV2Response.
 
-        入公网带宽计费模式
+        入公网带宽计费模式 
 
         :param ingress_bandwidth_charging_mode: The ingress_bandwidth_charging_mode of this UpdateInstanceV2Response.
         :type ingress_bandwidth_charging_mode: str

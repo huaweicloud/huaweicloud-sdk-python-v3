@@ -53,7 +53,7 @@ class ApiForSign:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: API的认证方式
+        :param auth_type: API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
         :type auth_type: str
         :param run_env_name: 发布的环境名
         :type run_env_name: str
@@ -75,7 +75,7 @@ class ApiForSign:
         :type req_uri: str
         :param tags: API绑定的标签，标签配额默认10条，可以联系技术调整。
         :type tags: list[str]
-        :param type: API类型
+        :param type: API类型。 - 1：公有API - 2：私有API 
         :type type: int
         :param signature_name: 已绑定的签名密钥名称
         :type signature_name: str
@@ -134,7 +134,7 @@ class ApiForSign:
     def auth_type(self):
         r"""Gets the auth_type of this ApiForSign.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :return: The auth_type of this ApiForSign.
         :rtype: str
@@ -145,7 +145,7 @@ class ApiForSign:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this ApiForSign.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this ApiForSign.
         :type auth_type: str
@@ -376,7 +376,7 @@ class ApiForSign:
     def type(self):
         r"""Gets the type of this ApiForSign.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :return: The type of this ApiForSign.
         :rtype: int
@@ -387,7 +387,7 @@ class ApiForSign:
     def type(self, type):
         r"""Sets the type of this ApiForSign.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :param type: The type of this ApiForSign.
         :type type: int

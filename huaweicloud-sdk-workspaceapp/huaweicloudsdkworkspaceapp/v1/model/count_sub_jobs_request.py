@@ -33,7 +33,7 @@ class CountSubJobsRequest:
 
         :param status: job详情的状态： * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 成功 * &#x60;FAILED&#x60; - 失败 * &#x60;ABNORMAL&#x60; - 异常 * &#x60;ROLLBACK&#x60; - 回滚中 * &#x60;ABORTING&#x60; - 取消
         :type status: str
-        :param job_type: 任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔。
+        :param job_type: 任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔： - CREATE_SERVER 创建服务器 - CREATE_SERVER_IMAGE 创建镜像 - DELETE_SERVER 删除服务器 - UPGRADE_ACCESS_AGENT 升级access agent
         :type job_type: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -79,7 +79,7 @@ class CountSubJobsRequest:
     def job_type(self):
         r"""Gets the job_type of this CountSubJobsRequest.
 
-        任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔。
+        任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔： - CREATE_SERVER 创建服务器 - CREATE_SERVER_IMAGE 创建镜像 - DELETE_SERVER 删除服务器 - UPGRADE_ACCESS_AGENT 升级access agent
 
         :return: The job_type of this CountSubJobsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CountSubJobsRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this CountSubJobsRequest.
 
-        任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔。
+        任务类型，传入多个任务类型的时候将任务类型用英文逗号(,)进行分隔： - CREATE_SERVER 创建服务器 - CREATE_SERVER_IMAGE 创建镜像 - DELETE_SERVER 删除服务器 - UPGRADE_ACCESS_AGENT 升级access agent
 
         :param job_type: The job_type of this CountSubJobsRequest.
         :type job_type: str

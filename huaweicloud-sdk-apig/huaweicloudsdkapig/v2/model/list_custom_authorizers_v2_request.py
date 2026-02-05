@@ -47,7 +47,7 @@ class ListCustomAuthorizersV2Request:
         :type id: str
         :param name: 名称
         :type name: str
-        :param type: 类型
+        :param type: 自定义认证类型。 - FRONTEND：前端 - BACKEND：后端 
         :type type: str
         """
         
@@ -187,7 +187,7 @@ class ListCustomAuthorizersV2Request:
     def type(self):
         r"""Gets the type of this ListCustomAuthorizersV2Request.
 
-        类型
+        自定义认证类型。 - FRONTEND：前端 - BACKEND：后端 
 
         :return: The type of this ListCustomAuthorizersV2Request.
         :rtype: str
@@ -198,7 +198,7 @@ class ListCustomAuthorizersV2Request:
     def type(self, type):
         r"""Sets the type of this ListCustomAuthorizersV2Request.
 
-        类型
+        自定义认证类型。 - FRONTEND：前端 - BACKEND：后端 
 
         :param type: The type of this ListCustomAuthorizersV2Request.
         :type type: str

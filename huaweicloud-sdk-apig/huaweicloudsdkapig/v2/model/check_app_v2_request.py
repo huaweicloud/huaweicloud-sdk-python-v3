@@ -31,7 +31,7 @@ class CheckAppV2Request:
 
         :param instance_id: 实例ID，在API网关控制台的“实例信息”中获取。
         :type instance_id: str
-        :param app_id: 应用编号
+        :param app_id: 凭据编号
         :type app_id: str
         """
         
@@ -70,7 +70,7 @@ class CheckAppV2Request:
     def app_id(self):
         r"""Gets the app_id of this CheckAppV2Request.
 
-        应用编号
+        凭据编号
 
         :return: The app_id of this CheckAppV2Request.
         :rtype: str
@@ -81,7 +81,7 @@ class CheckAppV2Request:
     def app_id(self, app_id):
         r"""Sets the app_id of this CheckAppV2Request.
 
-        应用编号
+        凭据编号
 
         :param app_id: The app_id of this CheckAppV2Request.
         :type app_id: str

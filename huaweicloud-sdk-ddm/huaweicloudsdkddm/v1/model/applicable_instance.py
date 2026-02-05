@@ -15,80 +15,80 @@ class ApplicableInstance:
     sensitive_list = []
 
     openapi_types = {
-        'entity_id': 'str',
-        'config_id': 'str'
+        'instance_id': 'str',
+        'instance_name': 'str'
     }
 
     attribute_map = {
-        'entity_id': 'entity_id',
-        'config_id': 'config_id'
+        'instance_id': 'instance_id',
+        'instance_name': 'instance_name'
     }
 
-    def __init__(self, entity_id=None, config_id=None):
+    def __init__(self, instance_id=None, instance_name=None):
         r"""ApplicableInstance
 
         The model defined in huaweicloud sdk
 
-        :param entity_id: **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
-        :type entity_id: str
-        :param config_id: **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
-        :type config_id: str
+        :param instance_id: **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
+        :type instance_id: str
+        :param instance_name: **参数解释**：  实例名称。  **参数范围**：  不涉及。
+        :type instance_name: str
         """
         
         
 
-        self._entity_id = None
-        self._config_id = None
+        self._instance_id = None
+        self._instance_name = None
         self.discriminator = None
 
-        if entity_id is not None:
-            self.entity_id = entity_id
-        if config_id is not None:
-            self.config_id = config_id
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_name is not None:
+            self.instance_name = instance_name
 
     @property
-    def entity_id(self):
-        r"""Gets the entity_id of this ApplicableInstance.
+    def instance_id(self):
+        r"""Gets the instance_id of this ApplicableInstance.
 
-        **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
 
-        :return: The entity_id of this ApplicableInstance.
+        :return: The instance_id of this ApplicableInstance.
         :rtype: str
         """
-        return self._entity_id
+        return self._instance_id
 
-    @entity_id.setter
-    def entity_id(self, entity_id):
-        r"""Sets the entity_id of this ApplicableInstance.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ApplicableInstance.
 
-        **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
 
-        :param entity_id: The entity_id of this ApplicableInstance.
-        :type entity_id: str
+        :param instance_id: The instance_id of this ApplicableInstance.
+        :type instance_id: str
         """
-        self._entity_id = entity_id
+        self._instance_id = instance_id
 
     @property
-    def config_id(self):
-        r"""Gets the config_id of this ApplicableInstance.
+    def instance_name(self):
+        r"""Gets the instance_name of this ApplicableInstance.
 
-        **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  实例名称。  **参数范围**：  不涉及。
 
-        :return: The config_id of this ApplicableInstance.
+        :return: The instance_name of this ApplicableInstance.
         :rtype: str
         """
-        return self._config_id
+        return self._instance_name
 
-    @config_id.setter
-    def config_id(self, config_id):
-        r"""Sets the config_id of this ApplicableInstance.
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        r"""Sets the instance_name of this ApplicableInstance.
 
-        **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  实例名称。  **参数范围**：  不涉及。
 
-        :param config_id: The config_id of this ApplicableInstance.
-        :type config_id: str
+        :param instance_name: The instance_name of this ApplicableInstance.
+        :type instance_name: str
         """
-        self._config_id = config_id
+        self._instance_name = instance_name
 
     def to_dict(self):
         result = {}

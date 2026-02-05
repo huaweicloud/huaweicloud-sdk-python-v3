@@ -107,7 +107,7 @@ class StatisticsAPI:
         :type req_time: datetime
         :param register_time: 记录时间
         :type register_time: datetime
-        :param status: 状态
+        :param status: 状态。 - 1：有效 
         :type status: int
         """
         
@@ -623,7 +623,7 @@ class StatisticsAPI:
     def status(self):
         r"""Gets the status of this StatisticsAPI.
 
-        状态
+        状态。 - 1：有效 
 
         :return: The status of this StatisticsAPI.
         :rtype: int
@@ -634,7 +634,7 @@ class StatisticsAPI:
     def status(self, status):
         r"""Sets the status of this StatisticsAPI.
 
-        状态
+        状态。 - 1：有效 
 
         :param status: The status of this StatisticsAPI.
         :type status: int

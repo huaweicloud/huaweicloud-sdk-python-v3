@@ -61,7 +61,7 @@ class UnbindApiForAcl:
         :type group_id: str
         :param group_name: API所属分组的名称
         :type group_name: str
-        :param type: API开放状态
+        :param type: API开放状态。 - 1：公有API - 2：私有API 
         :type type: int
         :param remark: API描述
         :type remark: str
@@ -75,7 +75,7 @@ class UnbindApiForAcl:
         :type acl_name: str
         :param req_uri: API的请求地址
         :type req_uri: str
-        :param auth_type: API的认证方式
+        :param auth_type: API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
         :type auth_type: str
         :param req_method: API请求方法
         :type req_method: str
@@ -222,7 +222,7 @@ class UnbindApiForAcl:
     def type(self):
         r"""Gets the type of this UnbindApiForAcl.
 
-        API开放状态
+        API开放状态。 - 1：公有API - 2：私有API 
 
         :return: The type of this UnbindApiForAcl.
         :rtype: int
@@ -233,7 +233,7 @@ class UnbindApiForAcl:
     def type(self, type):
         r"""Sets the type of this UnbindApiForAcl.
 
-        API开放状态
+        API开放状态。 - 1：公有API - 2：私有API 
 
         :param type: The type of this UnbindApiForAcl.
         :type type: int
@@ -376,7 +376,7 @@ class UnbindApiForAcl:
     def auth_type(self):
         r"""Gets the auth_type of this UnbindApiForAcl.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :return: The auth_type of this UnbindApiForAcl.
         :rtype: str
@@ -387,7 +387,7 @@ class UnbindApiForAcl:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this UnbindApiForAcl.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this UnbindApiForAcl.
         :type auth_type: str

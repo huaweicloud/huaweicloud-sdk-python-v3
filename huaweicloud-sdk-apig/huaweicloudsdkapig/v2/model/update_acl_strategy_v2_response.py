@@ -40,7 +40,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
 
         :param acl_name: 名称
         :type acl_name: str
-        :param acl_type: 类型: - PERMIT（白名单类型） - DENY（黑名单类型）
+        :param acl_type: 类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
         :type acl_type: str
         :param acl_value: ACL策略值
         :type acl_value: str
@@ -101,7 +101,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
     def acl_type(self):
         r"""Gets the acl_type of this UpdateAclStrategyV2Response.
 
-        类型: - PERMIT（白名单类型） - DENY（黑名单类型）
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :return: The acl_type of this UpdateAclStrategyV2Response.
         :rtype: str
@@ -112,7 +112,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
     def acl_type(self, acl_type):
         r"""Sets the acl_type of this UpdateAclStrategyV2Response.
 
-        类型: - PERMIT（白名单类型） - DENY（黑名单类型）
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :param acl_type: The acl_type of this UpdateAclStrategyV2Response.
         :type acl_type: str

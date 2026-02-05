@@ -51,9 +51,11 @@ class UpdateProduct:
         self._resource_id = None
         self.discriminator = None
 
-        self.resource_type = resource_type
+        if resource_type is not None:
+            self.resource_type = resource_type
         self.resource_spec_code = resource_spec_code
-        self.resource_size = resource_size
+        if resource_size is not None:
+            self.resource_size = resource_size
         self.resource_id = resource_id
 
     @property

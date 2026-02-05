@@ -23,7 +23,9 @@ class ListAppsV2Request:
         'status': 'int',
         'app_key': 'str',
         'creator': 'str',
-        'precise_search': 'str'
+        'precise_search': 'str',
+        'related_domain_id': 'str',
+        'related_project_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class ListAppsV2Request:
         'status': 'status',
         'app_key': 'app_key',
         'creator': 'creator',
-        'precise_search': 'precise_search'
+        'precise_search': 'precise_search',
+        'related_domain_id': 'related_domain_id',
+        'related_project_id': 'related_project_id'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, status=None, app_key=None, creator=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, status=None, app_key=None, creator=None, precise_search=None, related_domain_id=None, related_project_id=None):
         r"""ListAppsV2Request
 
         The model defined in huaweicloud sdk
@@ -53,14 +57,18 @@ class ListAppsV2Request:
         :type id: str
         :param name: APP名称
         :type name: str
-        :param status: APP状态
+        :param status: APP状态。 - 1：有效 
         :type status: int
-        :param app_key: APP的KEY
+        :param app_key: APP凭据的key。
         :type app_key: str
-        :param creator: APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        :param creator: APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
         :type creator: str
         :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
         :type precise_search: str
+        :param related_domain_id: 凭据关联的账号ID。
+        :type related_domain_id: str
+        :param related_project_id: 凭据关联的项目ID。
+        :type related_project_id: str
         """
         
         
@@ -74,6 +82,8 @@ class ListAppsV2Request:
         self._app_key = None
         self._creator = None
         self._precise_search = None
+        self._related_domain_id = None
+        self._related_project_id = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -93,6 +103,10 @@ class ListAppsV2Request:
             self.creator = creator
         if precise_search is not None:
             self.precise_search = precise_search
+        if related_domain_id is not None:
+            self.related_domain_id = related_domain_id
+        if related_project_id is not None:
+            self.related_project_id = related_project_id
 
     @property
     def instance_id(self):
@@ -208,7 +222,7 @@ class ListAppsV2Request:
     def status(self):
         r"""Gets the status of this ListAppsV2Request.
 
-        APP状态
+        APP状态。 - 1：有效 
 
         :return: The status of this ListAppsV2Request.
         :rtype: int
@@ -219,7 +233,7 @@ class ListAppsV2Request:
     def status(self, status):
         r"""Sets the status of this ListAppsV2Request.
 
-        APP状态
+        APP状态。 - 1：有效 
 
         :param status: The status of this ListAppsV2Request.
         :type status: int
@@ -230,7 +244,7 @@ class ListAppsV2Request:
     def app_key(self):
         r"""Gets the app_key of this ListAppsV2Request.
 
-        APP的KEY
+        APP凭据的key。
 
         :return: The app_key of this ListAppsV2Request.
         :rtype: str
@@ -241,7 +255,7 @@ class ListAppsV2Request:
     def app_key(self, app_key):
         r"""Sets the app_key of this ListAppsV2Request.
 
-        APP的KEY
+        APP凭据的key。
 
         :param app_key: The app_key of this ListAppsV2Request.
         :type app_key: str
@@ -252,7 +266,7 @@ class ListAppsV2Request:
     def creator(self):
         r"""Gets the creator of this ListAppsV2Request.
 
-        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :return: The creator of this ListAppsV2Request.
         :rtype: str
@@ -263,7 +277,7 @@ class ListAppsV2Request:
     def creator(self, creator):
         r"""Sets the creator of this ListAppsV2Request.
 
-        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :param creator: The creator of this ListAppsV2Request.
         :type creator: str
@@ -291,6 +305,50 @@ class ListAppsV2Request:
         :type precise_search: str
         """
         self._precise_search = precise_search
+
+    @property
+    def related_domain_id(self):
+        r"""Gets the related_domain_id of this ListAppsV2Request.
+
+        凭据关联的账号ID。
+
+        :return: The related_domain_id of this ListAppsV2Request.
+        :rtype: str
+        """
+        return self._related_domain_id
+
+    @related_domain_id.setter
+    def related_domain_id(self, related_domain_id):
+        r"""Sets the related_domain_id of this ListAppsV2Request.
+
+        凭据关联的账号ID。
+
+        :param related_domain_id: The related_domain_id of this ListAppsV2Request.
+        :type related_domain_id: str
+        """
+        self._related_domain_id = related_domain_id
+
+    @property
+    def related_project_id(self):
+        r"""Gets the related_project_id of this ListAppsV2Request.
+
+        凭据关联的项目ID。
+
+        :return: The related_project_id of this ListAppsV2Request.
+        :rtype: str
+        """
+        return self._related_project_id
+
+    @related_project_id.setter
+    def related_project_id(self, related_project_id):
+        r"""Sets the related_project_id of this ListAppsV2Request.
+
+        凭据关联的项目ID。
+
+        :param related_project_id: The related_project_id of this ListAppsV2Request.
+        :type related_project_id: str
+        """
+        self._related_project_id = related_project_id
 
     def to_dict(self):
         result = {}

@@ -36,11 +36,11 @@ class ShowAsyncTaskResultResponse(SdkResponse):
 
         :param task_id: 任务id
         :type task_id: str
-        :param task_status: 任务状态。waiting等待处理，processing处理中，succeed成功，failed失败。
+        :param task_status: 异步任务状态。 - waiting：异步任务等待处理。 - processing：异步任务处理中。 - succeed：异步任务执行完成。 - failed：异步任务执行失败。 
         :type task_status: str
         :param task_type: 任务类型。 import_api为异步导入api，export_api为异步导出api。
         :type task_type: str
-        :param task_result: 任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。其中success数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。failure数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。swagger结构体包括2个字段，swagger文档编号id、导入结果说明result。ignore数组元素包括API请求方法method、API请求路径path。 当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。
+        :param task_result: 任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。   - success数组：导入成功的API，数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。   - failure数组：导入失败的API，数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。   - swagger结构体：包括2个字段，swagger文档编号id、导入结果说明result。   - ignore数组：元素包括API请求方法method、API请求路径path。    当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。 
         :type task_result: str
         """
         
@@ -87,7 +87,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
     def task_status(self):
         r"""Gets the task_status of this ShowAsyncTaskResultResponse.
 
-        任务状态。waiting等待处理，processing处理中，succeed成功，failed失败。
+        异步任务状态。 - waiting：异步任务等待处理。 - processing：异步任务处理中。 - succeed：异步任务执行完成。 - failed：异步任务执行失败。 
 
         :return: The task_status of this ShowAsyncTaskResultResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
     def task_status(self, task_status):
         r"""Sets the task_status of this ShowAsyncTaskResultResponse.
 
-        任务状态。waiting等待处理，processing处理中，succeed成功，failed失败。
+        异步任务状态。 - waiting：异步任务等待处理。 - processing：异步任务处理中。 - succeed：异步任务执行完成。 - failed：异步任务执行失败。 
 
         :param task_status: The task_status of this ShowAsyncTaskResultResponse.
         :type task_status: str
@@ -131,7 +131,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
     def task_result(self):
         r"""Gets the task_result of this ShowAsyncTaskResultResponse.
 
-        任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。其中success数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。failure数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。swagger结构体包括2个字段，swagger文档编号id、导入结果说明result。ignore数组元素包括API请求方法method、API请求路径path。 当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。
+        任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。   - success数组：导入成功的API，数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。   - failure数组：导入失败的API，数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。   - swagger结构体：包括2个字段，swagger文档编号id、导入结果说明result。   - ignore数组：元素包括API请求方法method、API请求路径path。    当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。 
 
         :return: The task_result of this ShowAsyncTaskResultResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class ShowAsyncTaskResultResponse(SdkResponse):
     def task_result(self, task_result):
         r"""Sets the task_result of this ShowAsyncTaskResultResponse.
 
-        任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。其中success数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。failure数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。swagger结构体包括2个字段，swagger文档编号id、导入结果说明result。ignore数组元素包括API请求方法method、API请求路径path。 当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。
+        任务结果。string可转成json object。 当task_type为import_api时，字段包括API分组编号group_id、success数组、failure数组、swagger结构体、ignore数组。   - success数组：导入成功的API，数组元素中包括4个字段，导入成功的API编号id、API请求方法method、API请求路径path、导入行为action（枚举值，update表示更新API，create表示新建API）。   - failure数组：导入失败的API，数组元素中包括4个字段，API请求方法method、API请求路径path、导入失败的错误码error_code、导入失败的错误信息error_msg。   - swagger结构体：包括2个字段，swagger文档编号id、导入结果说明result。   - ignore数组：元素包括API请求方法method、API请求路径path。    当task_type为export_api时，字段包括导出文件类型file_type、导出文件内容content。 
 
         :param task_result: The task_result of this ShowAsyncTaskResultResponse.
         :type task_result: str

@@ -15,36 +15,29 @@ class CreateSecretRequest:
     sensitive_list = []
 
     openapi_types = {
-        'projectname': 'str',
-        'duration_seconds': 'int'
+        'projectname': 'str'
     }
 
     attribute_map = {
-        'projectname': 'projectname',
-        'duration_seconds': 'duration_seconds'
+        'projectname': 'projectname'
     }
 
-    def __init__(self, projectname=None, duration_seconds=None):
+    def __init__(self, projectname=None):
         r"""CreateSecretRequest
 
         The model defined in huaweicloud sdk
 
         :param projectname: 项目名称，缺省值默认为区域名称，例如：cn-north-1。 
         :type projectname: str
-        :param duration_seconds: 自定义临时凭证有效期，单位秒，取值范围15min-24h
-        :type duration_seconds: int
         """
         
         
 
         self._projectname = None
-        self._duration_seconds = None
         self.discriminator = None
 
         if projectname is not None:
             self.projectname = projectname
-        if duration_seconds is not None:
-            self.duration_seconds = duration_seconds
 
     @property
     def projectname(self):
@@ -67,28 +60,6 @@ class CreateSecretRequest:
         :type projectname: str
         """
         self._projectname = projectname
-
-    @property
-    def duration_seconds(self):
-        r"""Gets the duration_seconds of this CreateSecretRequest.
-
-        自定义临时凭证有效期，单位秒，取值范围15min-24h
-
-        :return: The duration_seconds of this CreateSecretRequest.
-        :rtype: int
-        """
-        return self._duration_seconds
-
-    @duration_seconds.setter
-    def duration_seconds(self, duration_seconds):
-        r"""Sets the duration_seconds of this CreateSecretRequest.
-
-        自定义临时凭证有效期，单位秒，取值范围15min-24h
-
-        :param duration_seconds: The duration_seconds of this CreateSecretRequest.
-        :type duration_seconds: int
-        """
-        self._duration_seconds = duration_seconds
 
     def to_dict(self):
         result = {}

@@ -15,50 +15,50 @@ class CreateCloudStorageReq:
     sensitive_list = []
 
     openapi_types = {
-        'project_config_ids': 'list[str]'
+        'project_config_cluster_group_id_list': 'list[ProjectConfigClusterGroupIdEntity]'
     }
 
     attribute_map = {
-        'project_config_ids': 'project_config_ids'
+        'project_config_cluster_group_id_list': 'project_config_cluster_group_id_list'
     }
 
-    def __init__(self, project_config_ids=None):
+    def __init__(self, project_config_cluster_group_id_list=None):
         r"""CreateCloudStorageReq
 
         The model defined in huaweicloud sdk
 
-        :param project_config_ids: project_config_id,数量区间 [1, 50]。
-        :type project_config_ids: list[str]
+        :param project_config_cluster_group_id_list: 创建项目配置关联ID列表。
+        :type project_config_cluster_group_id_list: list[:class:`huaweicloudsdkworkspaceapp.v1.ProjectConfigClusterGroupIdEntity`]
         """
         
         
 
-        self._project_config_ids = None
+        self._project_config_cluster_group_id_list = None
         self.discriminator = None
 
-        self.project_config_ids = project_config_ids
+        self.project_config_cluster_group_id_list = project_config_cluster_group_id_list
 
     @property
-    def project_config_ids(self):
-        r"""Gets the project_config_ids of this CreateCloudStorageReq.
+    def project_config_cluster_group_id_list(self):
+        r"""Gets the project_config_cluster_group_id_list of this CreateCloudStorageReq.
 
-        project_config_id,数量区间 [1, 50]。
+        创建项目配置关联ID列表。
 
-        :return: The project_config_ids of this CreateCloudStorageReq.
-        :rtype: list[str]
+        :return: The project_config_cluster_group_id_list of this CreateCloudStorageReq.
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ProjectConfigClusterGroupIdEntity`]
         """
-        return self._project_config_ids
+        return self._project_config_cluster_group_id_list
 
-    @project_config_ids.setter
-    def project_config_ids(self, project_config_ids):
-        r"""Sets the project_config_ids of this CreateCloudStorageReq.
+    @project_config_cluster_group_id_list.setter
+    def project_config_cluster_group_id_list(self, project_config_cluster_group_id_list):
+        r"""Sets the project_config_cluster_group_id_list of this CreateCloudStorageReq.
 
-        project_config_id,数量区间 [1, 50]。
+        创建项目配置关联ID列表。
 
-        :param project_config_ids: The project_config_ids of this CreateCloudStorageReq.
-        :type project_config_ids: list[str]
+        :param project_config_cluster_group_id_list: The project_config_cluster_group_id_list of this CreateCloudStorageReq.
+        :type project_config_cluster_group_id_list: list[:class:`huaweicloudsdkworkspaceapp.v1.ProjectConfigClusterGroupIdEntity`]
         """
-        self._project_config_ids = project_config_ids
+        self._project_config_cluster_group_id_list = project_config_cluster_group_id_list
 
     def to_dict(self):
         result = {}

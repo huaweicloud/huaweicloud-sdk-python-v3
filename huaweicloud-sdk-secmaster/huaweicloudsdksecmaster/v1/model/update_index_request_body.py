@@ -15,20 +15,134 @@ class UpdateIndexRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'mapping': 'dict(str, KeyIndex)',
+        'pipe_id': 'str',
+        'status': 'str',
+        'timestamp_field': 'str'
     }
 
     attribute_map = {
+        'mapping': 'mapping',
+        'pipe_id': 'pipe_id',
+        'status': 'status',
+        'timestamp_field': 'timestamp_field'
     }
 
-    def __init__(self):
+    def __init__(self, mapping=None, pipe_id=None, status=None, timestamp_field=None):
         r"""UpdateIndexRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param mapping: 索引映射信息
+        :type mapping: dict(str, KeyIndex)
+        :param pipe_id: 数据管道ID
+        :type pipe_id: str
+        :param status: 索引状态；open 开启，closed 关闭
+        :type status: str
+        :param timestamp_field: 时间戳字段名称
+        :type timestamp_field: str
         """
         
         
+
+        self._mapping = None
+        self._pipe_id = None
+        self._status = None
+        self._timestamp_field = None
         self.discriminator = None
+
+        self.mapping = mapping
+        self.pipe_id = pipe_id
+        self.status = status
+        self.timestamp_field = timestamp_field
+
+    @property
+    def mapping(self):
+        r"""Gets the mapping of this UpdateIndexRequestBody.
+
+        索引映射信息
+
+        :return: The mapping of this UpdateIndexRequestBody.
+        :rtype: dict(str, KeyIndex)
+        """
+        return self._mapping
+
+    @mapping.setter
+    def mapping(self, mapping):
+        r"""Sets the mapping of this UpdateIndexRequestBody.
+
+        索引映射信息
+
+        :param mapping: The mapping of this UpdateIndexRequestBody.
+        :type mapping: dict(str, KeyIndex)
+        """
+        self._mapping = mapping
+
+    @property
+    def pipe_id(self):
+        r"""Gets the pipe_id of this UpdateIndexRequestBody.
+
+        数据管道ID
+
+        :return: The pipe_id of this UpdateIndexRequestBody.
+        :rtype: str
+        """
+        return self._pipe_id
+
+    @pipe_id.setter
+    def pipe_id(self, pipe_id):
+        r"""Sets the pipe_id of this UpdateIndexRequestBody.
+
+        数据管道ID
+
+        :param pipe_id: The pipe_id of this UpdateIndexRequestBody.
+        :type pipe_id: str
+        """
+        self._pipe_id = pipe_id
+
+    @property
+    def status(self):
+        r"""Gets the status of this UpdateIndexRequestBody.
+
+        索引状态；open 开启，closed 关闭
+
+        :return: The status of this UpdateIndexRequestBody.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this UpdateIndexRequestBody.
+
+        索引状态；open 开启，closed 关闭
+
+        :param status: The status of this UpdateIndexRequestBody.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def timestamp_field(self):
+        r"""Gets the timestamp_field of this UpdateIndexRequestBody.
+
+        时间戳字段名称
+
+        :return: The timestamp_field of this UpdateIndexRequestBody.
+        :rtype: str
+        """
+        return self._timestamp_field
+
+    @timestamp_field.setter
+    def timestamp_field(self, timestamp_field):
+        r"""Sets the timestamp_field of this UpdateIndexRequestBody.
+
+        时间戳字段名称
+
+        :param timestamp_field: The timestamp_field of this UpdateIndexRequestBody.
+        :type timestamp_field: str
+        """
+        self._timestamp_field = timestamp_field
 
     def to_dict(self):
         result = {}

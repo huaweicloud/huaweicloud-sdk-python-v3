@@ -28,7 +28,7 @@ class ShowDdmDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例详情。
+        :param instances: **参数解释**：  查询实例详情相关信息的返回集合。  **参数范围**：  不涉及。
         :type instances: list[:class:`huaweicloudsdkddm.v1.InstanceDetail`]
         """
         
@@ -44,7 +44,7 @@ class ShowDdmDetailResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ShowDdmDetailResponse.
 
-        实例详情。
+        **参数解释**：  查询实例详情相关信息的返回集合。  **参数范围**：  不涉及。
 
         :return: The instances of this ShowDdmDetailResponse.
         :rtype: list[:class:`huaweicloudsdkddm.v1.InstanceDetail`]
@@ -55,7 +55,7 @@ class ShowDdmDetailResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ShowDdmDetailResponse.
 
-        实例详情。
+        **参数解释**：  查询实例详情相关信息的返回集合。  **参数范围**：  不涉及。
 
         :param instances: The instances of this ShowDdmDetailResponse.
         :type instances: list[:class:`huaweicloudsdkddm.v1.InstanceDetail`]

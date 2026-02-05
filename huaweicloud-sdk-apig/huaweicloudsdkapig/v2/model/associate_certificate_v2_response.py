@@ -26,7 +26,9 @@ class AssociateCertificateV2Response(SdkResponse):
         'ingress_https_port': 'int',
         'ssl_name': 'str',
         'ssl_id': 'str',
-        'ssl_infos': 'list[SslInfo]'
+        'instance_id': 'str',
+        'api_group_id': 'str',
+        'api_group_name': 'str'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class AssociateCertificateV2Response(SdkResponse):
         'ingress_https_port': 'ingress_https_port',
         'ssl_name': 'ssl_name',
         'ssl_id': 'ssl_id',
-        'ssl_infos': 'ssl_infos'
+        'instance_id': 'instance_id',
+        'api_group_id': 'api_group_id',
+        'api_group_name': 'api_group_name'
     }
 
-    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_name=None, ssl_id=None, ssl_infos=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_name=None, ssl_id=None, instance_id=None, api_group_id=None, api_group_name=None):
         r"""AssociateCertificateV2Response
 
         The model defined in huaweicloud sdk
@@ -68,8 +72,12 @@ class AssociateCertificateV2Response(SdkResponse):
         :type ssl_name: str
         :param ssl_id: 证书的编号
         :type ssl_id: str
-        :param ssl_infos: SSL证书列表。
-        :type ssl_infos: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param api_group_id: API分组的ID。
+        :type api_group_id: str
+        :param api_group_name: API分组的名称。
+        :type api_group_name: str
         """
         
         super().__init__()
@@ -84,7 +92,9 @@ class AssociateCertificateV2Response(SdkResponse):
         self._ingress_https_port = None
         self._ssl_name = None
         self._ssl_id = None
-        self._ssl_infos = None
+        self._instance_id = None
+        self._api_group_id = None
+        self._api_group_name = None
         self.discriminator = None
 
         self.url_domain = url_domain
@@ -101,8 +111,12 @@ class AssociateCertificateV2Response(SdkResponse):
             self.ingress_https_port = ingress_https_port
         self.ssl_name = ssl_name
         self.ssl_id = ssl_id
-        if ssl_infos is not None:
-            self.ssl_infos = ssl_infos
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if api_group_id is not None:
+            self.api_group_id = api_group_id
+        if api_group_name is not None:
+            self.api_group_name = api_group_name
 
     @property
     def url_domain(self):
@@ -325,26 +339,70 @@ class AssociateCertificateV2Response(SdkResponse):
         self._ssl_id = ssl_id
 
     @property
-    def ssl_infos(self):
-        r"""Gets the ssl_infos of this AssociateCertificateV2Response.
+    def instance_id(self):
+        r"""Gets the instance_id of this AssociateCertificateV2Response.
 
-        SSL证书列表。
+        实例ID。
 
-        :return: The ssl_infos of this AssociateCertificateV2Response.
-        :rtype: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
+        :return: The instance_id of this AssociateCertificateV2Response.
+        :rtype: str
         """
-        return self._ssl_infos
+        return self._instance_id
 
-    @ssl_infos.setter
-    def ssl_infos(self, ssl_infos):
-        r"""Sets the ssl_infos of this AssociateCertificateV2Response.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this AssociateCertificateV2Response.
 
-        SSL证书列表。
+        实例ID。
 
-        :param ssl_infos: The ssl_infos of this AssociateCertificateV2Response.
-        :type ssl_infos: list[:class:`huaweicloudsdkapig.v2.SslInfo`]
+        :param instance_id: The instance_id of this AssociateCertificateV2Response.
+        :type instance_id: str
         """
-        self._ssl_infos = ssl_infos
+        self._instance_id = instance_id
+
+    @property
+    def api_group_id(self):
+        r"""Gets the api_group_id of this AssociateCertificateV2Response.
+
+        API分组的ID。
+
+        :return: The api_group_id of this AssociateCertificateV2Response.
+        :rtype: str
+        """
+        return self._api_group_id
+
+    @api_group_id.setter
+    def api_group_id(self, api_group_id):
+        r"""Sets the api_group_id of this AssociateCertificateV2Response.
+
+        API分组的ID。
+
+        :param api_group_id: The api_group_id of this AssociateCertificateV2Response.
+        :type api_group_id: str
+        """
+        self._api_group_id = api_group_id
+
+    @property
+    def api_group_name(self):
+        r"""Gets the api_group_name of this AssociateCertificateV2Response.
+
+        API分组的名称。
+
+        :return: The api_group_name of this AssociateCertificateV2Response.
+        :rtype: str
+        """
+        return self._api_group_name
+
+    @api_group_name.setter
+    def api_group_name(self, api_group_name):
+        r"""Sets the api_group_name of this AssociateCertificateV2Response.
+
+        API分组的名称。
+
+        :param api_group_name: The api_group_name of this AssociateCertificateV2Response.
+        :type api_group_name: str
+        """
+        self._api_group_name = api_group_name
 
     def to_dict(self):
         import warnings

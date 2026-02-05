@@ -74,7 +74,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         :type register_time: datetime
         :param update_time: 最近修改时间
         :type update_time: datetime
-        :param on_sell_status: 是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        :param on_sell_status: 是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
@@ -92,7 +92,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         :type time_unit: str
         :param is_default: 是否为默认分组
         :type is_default: int
-        :param version: 分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认为V1
+        :param version: 分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
         :type version: str
         :param roma_app_id: 分组归属的集成应用编号。  分组版本V2时必填。  暂不支持
         :type roma_app_id: str
@@ -288,7 +288,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def on_sell_status(self):
         r"""Gets the on_sell_status of this ShowDetailsOfApiGroupV2Response.
 
-        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :return: The on_sell_status of this ShowDetailsOfApiGroupV2Response.
         :rtype: int
@@ -299,7 +299,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def on_sell_status(self, on_sell_status):
         r"""Sets the on_sell_status of this ShowDetailsOfApiGroupV2Response.
 
-        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :param on_sell_status: The on_sell_status of this ShowDetailsOfApiGroupV2Response.
         :type on_sell_status: int
@@ -486,7 +486,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def version(self):
         r"""Gets the version of this ShowDetailsOfApiGroupV2Response.
 
-        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认为V1
+        分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
 
         :return: The version of this ShowDetailsOfApiGroupV2Response.
         :rtype: str
@@ -497,7 +497,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def version(self, version):
         r"""Sets the version of this ShowDetailsOfApiGroupV2Response.
 
-        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认为V1
+        分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
 
         :param version: The version of this ShowDetailsOfApiGroupV2Response.
         :type version: str

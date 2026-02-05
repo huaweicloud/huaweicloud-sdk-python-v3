@@ -41,7 +41,8 @@ class ScalingPolicyBySession:
         self._shrink_after_session_idle_minutes = None
         self.discriminator = None
 
-        self.session_usage_threshold = session_usage_threshold
+        if session_usage_threshold is not None:
+            self.session_usage_threshold = session_usage_threshold
         self.shrink_after_session_idle_minutes = shrink_after_session_idle_minutes
 
     @property

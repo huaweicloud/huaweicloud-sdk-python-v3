@@ -18,18 +18,16 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
     openapi_types = {
         'enable_user_def_obs': 'bool',
         'enable_enterprise': 'bool',
-        'cer_available': 'bool',
-        'enable_obs_encrypt_user_kms_key': 'bool'
+        'cer_available': 'bool'
     }
 
     attribute_map = {
         'enable_user_def_obs': 'enableUserDefObs',
         'enable_enterprise': 'enableEnterprise',
-        'cer_available': 'cerAvailable',
-        'enable_obs_encrypt_user_kms_key': 'enableOBSEncryptUserKmsKey'
+        'cer_available': 'cerAvailable'
     }
 
-    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None, enable_obs_encrypt_user_kms_key=None):
+    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None):
         r"""ListGlobalFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -40,8 +38,6 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type enable_enterprise: bool
         :param cer_available: 是否支持SWR企业版功能
         :type cer_available: bool
-        :param enable_obs_encrypt_user_kms_key: 是否支持使用已有KSM密钥ID创建OBS桶
-        :type enable_obs_encrypt_user_kms_key: bool
         """
         
         super().__init__()
@@ -49,7 +45,6 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         self._enable_user_def_obs = None
         self._enable_enterprise = None
         self._cer_available = None
-        self._enable_obs_encrypt_user_kms_key = None
         self.discriminator = None
 
         if enable_user_def_obs is not None:
@@ -58,8 +53,6 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
             self.enable_enterprise = enable_enterprise
         if cer_available is not None:
             self.cer_available = cer_available
-        if enable_obs_encrypt_user_kms_key is not None:
-            self.enable_obs_encrypt_user_kms_key = enable_obs_encrypt_user_kms_key
 
     @property
     def enable_user_def_obs(self):
@@ -126,28 +119,6 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type cer_available: bool
         """
         self._cer_available = cer_available
-
-    @property
-    def enable_obs_encrypt_user_kms_key(self):
-        r"""Gets the enable_obs_encrypt_user_kms_key of this ListGlobalFeatureGatesResponse.
-
-        是否支持使用已有KSM密钥ID创建OBS桶
-
-        :return: The enable_obs_encrypt_user_kms_key of this ListGlobalFeatureGatesResponse.
-        :rtype: bool
-        """
-        return self._enable_obs_encrypt_user_kms_key
-
-    @enable_obs_encrypt_user_kms_key.setter
-    def enable_obs_encrypt_user_kms_key(self, enable_obs_encrypt_user_kms_key):
-        r"""Sets the enable_obs_encrypt_user_kms_key of this ListGlobalFeatureGatesResponse.
-
-        是否支持使用已有KSM密钥ID创建OBS桶
-
-        :param enable_obs_encrypt_user_kms_key: The enable_obs_encrypt_user_kms_key of this ListGlobalFeatureGatesResponse.
-        :type enable_obs_encrypt_user_kms_key: bool
-        """
-        self._enable_obs_encrypt_user_kms_key = enable_obs_encrypt_user_kms_key
 
     def to_dict(self):
         import warnings

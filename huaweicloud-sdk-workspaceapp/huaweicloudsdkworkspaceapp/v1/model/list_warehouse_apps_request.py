@@ -41,7 +41,7 @@ class ListWarehouseAppsRequest:
         :type limit: int
         :param offset: 查询的偏移量，默认值0。
         :type offset: int
-        :param verify_status: 审核状态。
+        :param verify_status: 审核状态： - VERIFYING：审核中 - VERIFY_PASS：审核通过 - Verify_FAIL：审核不通过
         :type verify_status: str
         :param app_id: 应用仓库中的应用记录ID。
         :type app_id: str
@@ -122,7 +122,7 @@ class ListWarehouseAppsRequest:
     def verify_status(self):
         r"""Gets the verify_status of this ListWarehouseAppsRequest.
 
-        审核状态。
+        审核状态： - VERIFYING：审核中 - VERIFY_PASS：审核通过 - Verify_FAIL：审核不通过
 
         :return: The verify_status of this ListWarehouseAppsRequest.
         :rtype: str
@@ -133,7 +133,7 @@ class ListWarehouseAppsRequest:
     def verify_status(self, verify_status):
         r"""Sets the verify_status of this ListWarehouseAppsRequest.
 
-        审核状态。
+        审核状态： - VERIFYING：审核中 - VERIFY_PASS：审核通过 - Verify_FAIL：审核不通过
 
         :param verify_status: The verify_status of this ListWarehouseAppsRequest.
         :type verify_status: str

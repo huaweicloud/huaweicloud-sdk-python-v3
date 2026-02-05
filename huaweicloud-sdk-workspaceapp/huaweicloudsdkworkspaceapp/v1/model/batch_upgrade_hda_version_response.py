@@ -16,20 +16,51 @@ class BatchUpgradeHdaVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str'
     }
 
     attribute_map = {
+        'job_id': 'job_id'
     }
 
-    def __init__(self):
+    def __init__(self, job_id=None):
         r"""BatchUpgradeHdaVersionResponse
 
         The model defined in huaweicloud sdk
 
+        :param job_id: 任务ID。
+        :type job_id: str
         """
         
         super().__init__()
+
+        self._job_id = None
         self.discriminator = None
+
+        if job_id is not None:
+            self.job_id = job_id
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this BatchUpgradeHdaVersionResponse.
+
+        任务ID。
+
+        :return: The job_id of this BatchUpgradeHdaVersionResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this BatchUpgradeHdaVersionResponse.
+
+        任务ID。
+
+        :param job_id: The job_id of this BatchUpgradeHdaVersionResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         import warnings

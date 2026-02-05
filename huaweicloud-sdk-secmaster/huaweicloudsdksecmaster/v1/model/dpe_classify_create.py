@@ -21,7 +21,7 @@ class DpeClassifyCreate:
         'dataclass_id': 'str',
         'dataclass_name': 'str',
         'mapping_id': 'str',
-        'direct_classifier': 'object',
+        'direct_classifier': 'str',
         'direct_classifier_type_id': 'str',
         'create_time': 'str',
         'creator_id': 'str',
@@ -69,8 +69,8 @@ class DpeClassifyCreate:
         :type dataclass_name: str
         :param mapping_id: 映射id
         :type mapping_id: str
-        :param direct_classifier: 分类方式
-        :type direct_classifier: object
+        :param direct_classifier: 是否直接分类
+        :type direct_classifier: str
         :param direct_classifier_type_id: 映射id
         :type direct_classifier_type_id: str
         :param create_time: 创建时间
@@ -280,10 +280,10 @@ class DpeClassifyCreate:
     def direct_classifier(self):
         r"""Gets the direct_classifier of this DpeClassifyCreate.
 
-        分类方式
+        是否直接分类
 
         :return: The direct_classifier of this DpeClassifyCreate.
-        :rtype: object
+        :rtype: str
         """
         return self._direct_classifier
 
@@ -291,10 +291,10 @@ class DpeClassifyCreate:
     def direct_classifier(self, direct_classifier):
         r"""Sets the direct_classifier of this DpeClassifyCreate.
 
-        分类方式
+        是否直接分类
 
         :param direct_classifier: The direct_classifier of this DpeClassifyCreate.
-        :type direct_classifier: object
+        :type direct_classifier: str
         """
         self._direct_classifier = direct_classifier
 

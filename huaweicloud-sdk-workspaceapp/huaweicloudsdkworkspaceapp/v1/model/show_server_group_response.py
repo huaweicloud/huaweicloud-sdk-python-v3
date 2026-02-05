@@ -174,7 +174,7 @@ class ShowServerGroupResponse(SdkResponse):
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
         :param image_product_id: 镜像的产品id。
         :type image_product_id: str
-        :param image_type: 镜像类型。
+        :param image_type: 镜像类型： - gold：云市场镜像 - private：私有镜像
         :type image_type: str
         :param ip_virtual: 
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
@@ -1063,7 +1063,7 @@ class ShowServerGroupResponse(SdkResponse):
     def image_type(self):
         r"""Gets the image_type of this ShowServerGroupResponse.
 
-        镜像类型。
+        镜像类型： - gold：云市场镜像 - private：私有镜像
 
         :return: The image_type of this ShowServerGroupResponse.
         :rtype: str
@@ -1074,7 +1074,7 @@ class ShowServerGroupResponse(SdkResponse):
     def image_type(self, image_type):
         r"""Sets the image_type of this ShowServerGroupResponse.
 
-        镜像类型。
+        镜像类型： - gold：云市场镜像 - private：私有镜像
 
         :param image_type: The image_type of this ShowServerGroupResponse.
         :type image_type: str

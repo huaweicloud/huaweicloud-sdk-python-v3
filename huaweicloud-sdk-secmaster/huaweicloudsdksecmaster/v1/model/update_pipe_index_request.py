@@ -18,7 +18,7 @@ class UpdatePipeIndexRequest:
         'project_id': 'str',
         'workspace_id': 'str',
         'pipe_id': 'str',
-        'body': 'Index'
+        'body': 'UpdateIndexRequestBody'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class UpdatePipeIndexRequest:
         :type workspace_id: str
         :param pipe_id: 管道ID
         :type pipe_id: str
-        :param body: 
-        :type body: :class:`huaweicloudsdksecmaster.v1.Index`
+        :param body: Body of the UpdatePipeIndexRequest
+        :type body: :class:`huaweicloudsdksecmaster.v1.UpdateIndexRequestBody`
         """
         
         
@@ -128,7 +128,7 @@ class UpdatePipeIndexRequest:
         r"""Gets the body of this UpdatePipeIndexRequest.
 
         :return: The body of this UpdatePipeIndexRequest.
-        :rtype: :class:`huaweicloudsdksecmaster.v1.Index`
+        :rtype: :class:`huaweicloudsdksecmaster.v1.UpdateIndexRequestBody`
         """
         return self._body
 
@@ -137,7 +137,7 @@ class UpdatePipeIndexRequest:
         r"""Sets the body of this UpdatePipeIndexRequest.
 
         :param body: The body of this UpdatePipeIndexRequest.
-        :type body: :class:`huaweicloudsdksecmaster.v1.Index`
+        :type body: :class:`huaweicloudsdksecmaster.v1.UpdateIndexRequestBody`
         """
         self._body = body
 

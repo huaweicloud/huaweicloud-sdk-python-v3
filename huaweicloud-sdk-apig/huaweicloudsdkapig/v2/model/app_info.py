@@ -21,6 +21,8 @@ class AppInfo:
         'creator': 'str',
         'update_time': 'datetime',
         'app_key': 'str',
+        'related_domain_id': 'str',
+        'related_project_id': 'str',
         'app_secret': 'str',
         'register_time': 'datetime',
         'status': 'int',
@@ -35,6 +37,8 @@ class AppInfo:
         'creator': 'creator',
         'update_time': 'update_time',
         'app_key': 'app_key',
+        'related_domain_id': 'related_domain_id',
+        'related_project_id': 'related_project_id',
         'app_secret': 'app_secret',
         'register_time': 'register_time',
         'status': 'status',
@@ -42,7 +46,7 @@ class AppInfo:
         'roma_app_type': 'roma_app_type'
     }
 
-    def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None):
+    def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, related_domain_id=None, related_project_id=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None):
         r"""AppInfo
 
         The model defined in huaweicloud sdk
@@ -57,15 +61,19 @@ class AppInfo:
         :type creator: str
         :param update_time: 更新时间
         :type update_time: datetime
-        :param app_key: APP的key
+        :param app_key: APP凭据的key。
         :type app_key: str
+        :param related_domain_id: 凭据关联的账号ID。
+        :type related_domain_id: str
+        :param related_project_id: 凭据关联的项目ID。
+        :type related_project_id: str
         :param app_secret: 密钥
         :type app_secret: str
         :param register_time: 注册时间
         :type register_time: datetime
         :param status: 状态   - 1： 有效
         :type status: int
-        :param app_type: APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用  默认apig，暂不支持其他类型
+        :param app_type: APP的类型。 - apig：APIG凭据应用  默认apig，暂不支持其他类型 
         :type app_type: str
         :param roma_app_type: ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
         :type roma_app_type: str
@@ -79,6 +87,8 @@ class AppInfo:
         self._creator = None
         self._update_time = None
         self._app_key = None
+        self._related_domain_id = None
+        self._related_project_id = None
         self._app_secret = None
         self._register_time = None
         self._status = None
@@ -98,6 +108,10 @@ class AppInfo:
             self.update_time = update_time
         if app_key is not None:
             self.app_key = app_key
+        if related_domain_id is not None:
+            self.related_domain_id = related_domain_id
+        if related_project_id is not None:
+            self.related_project_id = related_project_id
         if app_secret is not None:
             self.app_secret = app_secret
         if register_time is not None:
@@ -223,7 +237,7 @@ class AppInfo:
     def app_key(self):
         r"""Gets the app_key of this AppInfo.
 
-        APP的key
+        APP凭据的key。
 
         :return: The app_key of this AppInfo.
         :rtype: str
@@ -234,12 +248,56 @@ class AppInfo:
     def app_key(self, app_key):
         r"""Sets the app_key of this AppInfo.
 
-        APP的key
+        APP凭据的key。
 
         :param app_key: The app_key of this AppInfo.
         :type app_key: str
         """
         self._app_key = app_key
+
+    @property
+    def related_domain_id(self):
+        r"""Gets the related_domain_id of this AppInfo.
+
+        凭据关联的账号ID。
+
+        :return: The related_domain_id of this AppInfo.
+        :rtype: str
+        """
+        return self._related_domain_id
+
+    @related_domain_id.setter
+    def related_domain_id(self, related_domain_id):
+        r"""Sets the related_domain_id of this AppInfo.
+
+        凭据关联的账号ID。
+
+        :param related_domain_id: The related_domain_id of this AppInfo.
+        :type related_domain_id: str
+        """
+        self._related_domain_id = related_domain_id
+
+    @property
+    def related_project_id(self):
+        r"""Gets the related_project_id of this AppInfo.
+
+        凭据关联的项目ID。
+
+        :return: The related_project_id of this AppInfo.
+        :rtype: str
+        """
+        return self._related_project_id
+
+    @related_project_id.setter
+    def related_project_id(self, related_project_id):
+        r"""Sets the related_project_id of this AppInfo.
+
+        凭据关联的项目ID。
+
+        :param related_project_id: The related_project_id of this AppInfo.
+        :type related_project_id: str
+        """
+        self._related_project_id = related_project_id
 
     @property
     def app_secret(self):
@@ -311,7 +369,7 @@ class AppInfo:
     def app_type(self):
         r"""Gets the app_type of this AppInfo.
 
-        APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用  默认apig，暂不支持其他类型
+        APP的类型。 - apig：APIG凭据应用  默认apig，暂不支持其他类型 
 
         :return: The app_type of this AppInfo.
         :rtype: str
@@ -322,7 +380,7 @@ class AppInfo:
     def app_type(self, app_type):
         r"""Sets the app_type of this AppInfo.
 
-        APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用  默认apig，暂不支持其他类型
+        APP的类型。 - apig：APIG凭据应用  默认apig，暂不支持其他类型 
 
         :param app_type: The app_type of this AppInfo.
         :type app_type: str

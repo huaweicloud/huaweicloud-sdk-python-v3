@@ -28,7 +28,7 @@ class ShowHdaUpgradeFlagResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param upgrade_flag: hda是否需要升级标识。
+        :param upgrade_flag: hda是否需要升级标识。0为无需提示升级, 1为需提示升级
         :type upgrade_flag: int
         """
         
@@ -44,7 +44,7 @@ class ShowHdaUpgradeFlagResponse(SdkResponse):
     def upgrade_flag(self):
         r"""Gets the upgrade_flag of this ShowHdaUpgradeFlagResponse.
 
-        hda是否需要升级标识。
+        hda是否需要升级标识。0为无需提示升级, 1为需提示升级
 
         :return: The upgrade_flag of this ShowHdaUpgradeFlagResponse.
         :rtype: int
@@ -55,7 +55,7 @@ class ShowHdaUpgradeFlagResponse(SdkResponse):
     def upgrade_flag(self, upgrade_flag):
         r"""Sets the upgrade_flag of this ShowHdaUpgradeFlagResponse.
 
-        hda是否需要升级标识。
+        hda是否需要升级标识。0为无需提示升级, 1为需提示升级
 
         :param upgrade_flag: The upgrade_flag of this ShowHdaUpgradeFlagResponse.
         :type upgrade_flag: int

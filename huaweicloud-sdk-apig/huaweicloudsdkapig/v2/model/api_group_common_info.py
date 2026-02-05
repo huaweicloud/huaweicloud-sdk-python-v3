@@ -55,7 +55,7 @@ class ApiGroupCommonInfo:
         :type register_time: datetime
         :param update_time: 最近修改时间
         :type update_time: datetime
-        :param on_sell_status: 是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        :param on_sell_status: 是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
@@ -224,7 +224,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self):
         r"""Gets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :return: The on_sell_status of this ApiGroupCommonInfo.
         :rtype: int
@@ -235,7 +235,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self, on_sell_status):
         r"""Sets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中  [暂不支持](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax)
 
         :param on_sell_status: The on_sell_status of this ApiGroupCommonInfo.
         :type on_sell_status: int

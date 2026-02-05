@@ -79,7 +79,7 @@ class ApiAuthInfo:
         :type api_name: str
         :param group_name: API绑定的分组名称
         :type group_name: str
-        :param api_type: API类型
+        :param api_type: API类型。 - 1：公有API - 2：私有API 
         :type api_type: int
         :param api_remark: API的描述信息
         :type api_remark: str
@@ -285,7 +285,7 @@ class ApiAuthInfo:
     def api_type(self):
         r"""Gets the api_type of this ApiAuthInfo.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :return: The api_type of this ApiAuthInfo.
         :rtype: int
@@ -296,7 +296,7 @@ class ApiAuthInfo:
     def api_type(self, api_type):
         r"""Sets the api_type of this ApiAuthInfo.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :param api_type: The api_type of this ApiAuthInfo.
         :type api_type: int

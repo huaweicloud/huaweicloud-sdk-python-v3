@@ -49,7 +49,7 @@ class CertificateForm:
         :type cert_content: str
         :param private_key: 证书私钥
         :type private_key: str
-        :param type: 证书可见范围
+        :param type: 证书类型。 - instance：实例证书 - global：全局证书 
         :type type: str
         :param instance_id: 所属实例ID，当type&#x3D;instance时必填
         :type instance_id: str
@@ -162,7 +162,7 @@ class CertificateForm:
     def type(self):
         r"""Gets the type of this CertificateForm.
 
-        证书可见范围
+        证书类型。 - instance：实例证书 - global：全局证书 
 
         :return: The type of this CertificateForm.
         :rtype: str
@@ -173,7 +173,7 @@ class CertificateForm:
     def type(self, type):
         r"""Sets the type of this CertificateForm.
 
-        证书可见范围
+        证书类型。 - instance：实例证书 - global：全局证书 
 
         :param type: The type of this CertificateForm.
         :type type: str

@@ -15,47 +15,78 @@ class ConfigurationDiffReqV3:
     sensitive_list = []
 
     openapi_types = {
-        'diff_para': 'ParaGroupDiff'
+        'source_id': 'str',
+        'target_id': 'str'
     }
 
     attribute_map = {
-        'diff_para': 'diff_para'
+        'source_id': 'source_id',
+        'target_id': 'target_id'
     }
 
-    def __init__(self, diff_para=None):
+    def __init__(self, source_id=None, target_id=None):
         r"""ConfigurationDiffReqV3
 
         The model defined in huaweicloud sdk
 
-        :param diff_para: 
-        :type diff_para: :class:`huaweicloudsdkddm.v1.ParaGroupDiff`
+        :param source_id: **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        :type source_id: str
+        :param target_id: **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        :type target_id: str
         """
         
         
 
-        self._diff_para = None
+        self._source_id = None
+        self._target_id = None
         self.discriminator = None
 
-        if diff_para is not None:
-            self.diff_para = diff_para
+        self.source_id = source_id
+        self.target_id = target_id
 
     @property
-    def diff_para(self):
-        r"""Gets the diff_para of this ConfigurationDiffReqV3.
+    def source_id(self):
+        r"""Gets the source_id of this ConfigurationDiffReqV3.
 
-        :return: The diff_para of this ConfigurationDiffReqV3.
-        :rtype: :class:`huaweicloudsdkddm.v1.ParaGroupDiff`
+        **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+
+        :return: The source_id of this ConfigurationDiffReqV3.
+        :rtype: str
         """
-        return self._diff_para
+        return self._source_id
 
-    @diff_para.setter
-    def diff_para(self, diff_para):
-        r"""Sets the diff_para of this ConfigurationDiffReqV3.
+    @source_id.setter
+    def source_id(self, source_id):
+        r"""Sets the source_id of this ConfigurationDiffReqV3.
 
-        :param diff_para: The diff_para of this ConfigurationDiffReqV3.
-        :type diff_para: :class:`huaweicloudsdkddm.v1.ParaGroupDiff`
+        **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+
+        :param source_id: The source_id of this ConfigurationDiffReqV3.
+        :type source_id: str
         """
-        self._diff_para = diff_para
+        self._source_id = source_id
+
+    @property
+    def target_id(self):
+        r"""Gets the target_id of this ConfigurationDiffReqV3.
+
+        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+
+        :return: The target_id of this ConfigurationDiffReqV3.
+        :rtype: str
+        """
+        return self._target_id
+
+    @target_id.setter
+    def target_id(self, target_id):
+        r"""Sets the target_id of this ConfigurationDiffReqV3.
+
+        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+
+        :param target_id: The target_id of this ConfigurationDiffReqV3.
+        :type target_id: str
+        """
+        self._target_id = target_id
 
     def to_dict(self):
         result = {}

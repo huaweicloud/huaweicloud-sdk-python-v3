@@ -17,6 +17,7 @@ class AppConnectionInfo:
     openapi_types = {
         'id': 'str',
         'sid': 'str',
+        'app_id': 'str',
         'machine_name': 'str',
         'user_name': 'str',
         'app_group_name': 'str',
@@ -48,6 +49,7 @@ class AppConnectionInfo:
     attribute_map = {
         'id': 'id',
         'sid': 'sid',
+        'app_id': 'app_id',
         'machine_name': 'machine_name',
         'user_name': 'user_name',
         'app_group_name': 'app_group_name',
@@ -76,7 +78,7 @@ class AppConnectionInfo:
         'secondary_server_group_id': 'secondary_server_group_id'
     }
 
-    def __init__(self, id=None, sid=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, brokering_time=None, failed_code=None, connection_failure_reason=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, virtual_ip=None, public_ip=None, transaction_id=None, end_time=None, aps_instance_id=None, aps_instance_name=None, aps_host_id=None, primary_server_group_id=None, secondary_server_group_id=None):
+    def __init__(self, id=None, sid=None, app_id=None, machine_name=None, user_name=None, app_group_name=None, app_group_id=None, app_name=None, brokering_time=None, failed_code=None, connection_failure_reason=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, wi_ip=None, tenant_id=None, virtual_ip=None, public_ip=None, transaction_id=None, end_time=None, aps_instance_id=None, aps_instance_name=None, aps_host_id=None, primary_server_group_id=None, secondary_server_group_id=None):
         r"""AppConnectionInfo
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class AppConnectionInfo:
         :type id: str
         :param sid: 应用服务器sid。
         :type sid: str
+        :param app_id: 应用id。
+        :type app_id: str
         :param machine_name: 应用服务器名称。
         :type machine_name: str
         :param user_name: 登录用户。
@@ -143,6 +147,7 @@ class AppConnectionInfo:
 
         self._id = None
         self._sid = None
+        self._app_id = None
         self._machine_name = None
         self._user_name = None
         self._app_group_name = None
@@ -175,6 +180,8 @@ class AppConnectionInfo:
             self.id = id
         if sid is not None:
             self.sid = sid
+        if app_id is not None:
+            self.app_id = app_id
         if machine_name is not None:
             self.machine_name = machine_name
         if user_name is not None:
@@ -271,6 +278,28 @@ class AppConnectionInfo:
         :type sid: str
         """
         self._sid = sid
+
+    @property
+    def app_id(self):
+        r"""Gets the app_id of this AppConnectionInfo.
+
+        应用id。
+
+        :return: The app_id of this AppConnectionInfo.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        r"""Sets the app_id of this AppConnectionInfo.
+
+        应用id。
+
+        :param app_id: The app_id of this AppConnectionInfo.
+        :type app_id: str
+        """
+        self._app_id = app_id
 
     @property
     def machine_name(self):

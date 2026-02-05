@@ -17,7 +17,7 @@ class ListCollectConfigResponse(SdkResponse):
 
     openapi_types = {
         'all_vendors': 'list[ListCollectConfigResponseBodyAllVendors]',
-        'cofing_statistics': 'ListCollectConfigResponseBodyCofingStatistics',
+        'config_statistics': 'ListCollectConfigResponseBodyConfigStatistics',
         'data_list': 'list[ListCollectConfigResponseBodyDataList]',
         'datasets': 'list[DatasetInfo]',
         'dataspace_id': 'str',
@@ -31,7 +31,7 @@ class ListCollectConfigResponse(SdkResponse):
 
     attribute_map = {
         'all_vendors': 'all_vendors',
-        'cofing_statistics': 'cofing_statistics',
+        'config_statistics': 'config_statistics',
         'data_list': 'data_list',
         'datasets': 'datasets',
         'dataspace_id': 'dataspace_id',
@@ -43,15 +43,15 @@ class ListCollectConfigResponse(SdkResponse):
         'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, all_vendors=None, cofing_statistics=None, data_list=None, datasets=None, dataspace_id=None, dataspace_name=None, domain_id=None, lts_sets=None, project_id=None, region_id=None, workspace_id=None):
+    def __init__(self, all_vendors=None, config_statistics=None, data_list=None, datasets=None, dataspace_id=None, dataspace_name=None, domain_id=None, lts_sets=None, project_id=None, region_id=None, workspace_id=None):
         r"""ListCollectConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param all_vendors: 所有的云厂商、云产品和日志
         :type all_vendors: list[:class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyAllVendors`]
-        :param cofing_statistics: 
-        :type cofing_statistics: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyCofingStatistics`
+        :param config_statistics: 
+        :type config_statistics: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyConfigStatistics`
         :param data_list: 数据
         :type data_list: list[:class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyDataList`]
         :param datasets: 数据集列表
@@ -75,7 +75,7 @@ class ListCollectConfigResponse(SdkResponse):
         super().__init__()
 
         self._all_vendors = None
-        self._cofing_statistics = None
+        self._config_statistics = None
         self._data_list = None
         self._datasets = None
         self._dataspace_id = None
@@ -89,8 +89,8 @@ class ListCollectConfigResponse(SdkResponse):
 
         if all_vendors is not None:
             self.all_vendors = all_vendors
-        if cofing_statistics is not None:
-            self.cofing_statistics = cofing_statistics
+        if config_statistics is not None:
+            self.config_statistics = config_statistics
         if data_list is not None:
             self.data_list = data_list
         if datasets is not None:
@@ -133,22 +133,22 @@ class ListCollectConfigResponse(SdkResponse):
         self._all_vendors = all_vendors
 
     @property
-    def cofing_statistics(self):
-        r"""Gets the cofing_statistics of this ListCollectConfigResponse.
+    def config_statistics(self):
+        r"""Gets the config_statistics of this ListCollectConfigResponse.
 
-        :return: The cofing_statistics of this ListCollectConfigResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyCofingStatistics`
+        :return: The config_statistics of this ListCollectConfigResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyConfigStatistics`
         """
-        return self._cofing_statistics
+        return self._config_statistics
 
-    @cofing_statistics.setter
-    def cofing_statistics(self, cofing_statistics):
-        r"""Sets the cofing_statistics of this ListCollectConfigResponse.
+    @config_statistics.setter
+    def config_statistics(self, config_statistics):
+        r"""Sets the config_statistics of this ListCollectConfigResponse.
 
-        :param cofing_statistics: The cofing_statistics of this ListCollectConfigResponse.
-        :type cofing_statistics: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyCofingStatistics`
+        :param config_statistics: The config_statistics of this ListCollectConfigResponse.
+        :type config_statistics: :class:`huaweicloudsdksecmaster.v2.ListCollectConfigResponseBodyConfigStatistics`
         """
-        self._cofing_statistics = cofing_statistics
+        self._config_statistics = config_statistics
 
     @property
     def data_list(self):

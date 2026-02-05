@@ -53,15 +53,15 @@ class UrlDomain:
         :type domain: str
         :param cname_status: 域名cname状态： - 1：未解析 - 2：解析中 - 3：解析成功 - 4：解析失败
         :type cname_status: int
-        :param ssl_id: SSL证书编号
+        :param ssl_id: SSL证书编号。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的编号。
         :type ssl_id: str
-        :param ssl_name: SSL证书名称
+        :param ssl_name: SSL证书名称。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的名称。
         :type ssl_name: str
         :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
         :type min_ssl_version: str
         :param verified_client_certificate_enabled: 是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
         :type verified_client_certificate_enabled: bool
-        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。只有当域名绑定的所有证书都存在信任的根证书CA时为true。
         :type is_has_trusted_root_ca: bool
         :param ingress_http_port: 访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
         :type ingress_http_port: int
@@ -179,7 +179,7 @@ class UrlDomain:
     def ssl_id(self):
         r"""Gets the ssl_id of this UrlDomain.
 
-        SSL证书编号
+        SSL证书编号。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的编号。
 
         :return: The ssl_id of this UrlDomain.
         :rtype: str
@@ -190,7 +190,7 @@ class UrlDomain:
     def ssl_id(self, ssl_id):
         r"""Sets the ssl_id of this UrlDomain.
 
-        SSL证书编号
+        SSL证书编号。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的编号。
 
         :param ssl_id: The ssl_id of this UrlDomain.
         :type ssl_id: str
@@ -201,7 +201,7 @@ class UrlDomain:
     def ssl_name(self):
         r"""Gets the ssl_name of this UrlDomain.
 
-        SSL证书名称
+        SSL证书名称。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的名称。
 
         :return: The ssl_name of this UrlDomain.
         :rtype: str
@@ -212,7 +212,7 @@ class UrlDomain:
     def ssl_name(self, ssl_name):
         r"""Sets the ssl_name of this UrlDomain.
 
-        SSL证书名称
+        SSL证书名称。当绑定的证书有RSA类型时，该字段有值，且展示对应RSA证书的名称。
 
         :param ssl_name: The ssl_name of this UrlDomain.
         :type ssl_name: str
@@ -267,7 +267,7 @@ class UrlDomain:
     def is_has_trusted_root_ca(self):
         r"""Gets the is_has_trusted_root_ca of this UrlDomain.
 
-        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        是否存在信任的根证书CA。只有当域名绑定的所有证书都存在信任的根证书CA时为true。
 
         :return: The is_has_trusted_root_ca of this UrlDomain.
         :rtype: bool
@@ -278,7 +278,7 @@ class UrlDomain:
     def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
         r"""Sets the is_has_trusted_root_ca of this UrlDomain.
 
-        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        是否存在信任的根证书CA。只有当域名绑定的所有证书都存在信任的根证书CA时为true。
 
         :param is_has_trusted_root_ca: The is_has_trusted_root_ca of this UrlDomain.
         :type is_has_trusted_root_ca: bool

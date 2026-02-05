@@ -33,11 +33,11 @@ class EsdbCheckRdsConnectionRequestV3:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint: **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **参数范围**：  不涉及。
+        :param endpoint: **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type endpoint: str
-        :param username: **参数解释**：  实例账号名称。  **参数范围**：  不涉及。
+        :param username: **参数解释**：  数据节点的账号名称。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type username: str
-        :param password: **参数解释**：  实例账号密码。  **约束限制**：  - 至少包含三种字符组合：小写字母、大写字母、数字、特殊字符 ~ ! @ # % ^ * - _ + ? - 不能使用简单、强度不够、容易被猜测的密码。 - 不能与账号名称或者倒序的账号名称相同。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param password: **参数解释**：  数据节点的账号密码。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type password: str
         :param rds_instance_id: **参数解释**：  rds实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in01，长度为36个字符。  **默认取值**：  不涉及。
         :type rds_instance_id: str
@@ -60,7 +60,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def endpoint(self):
         r"""Gets the endpoint of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **参数范围**：  不涉及。
+        **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The endpoint of this EsdbCheckRdsConnectionRequestV3.
         :rtype: str
@@ -71,7 +71,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def endpoint(self, endpoint):
         r"""Sets the endpoint of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **参数范围**：  不涉及。
+        **参数解释**：  内网地址以及端口号。  格式为xx.xx.xx.xx:xx。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param endpoint: The endpoint of this EsdbCheckRdsConnectionRequestV3.
         :type endpoint: str
@@ -82,7 +82,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def username(self):
         r"""Gets the username of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  实例账号名称。  **参数范围**：  不涉及。
+        **参数解释**：  数据节点的账号名称。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The username of this EsdbCheckRdsConnectionRequestV3.
         :rtype: str
@@ -93,7 +93,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def username(self, username):
         r"""Sets the username of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  实例账号名称。  **参数范围**：  不涉及。
+        **参数解释**：  数据节点的账号名称。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param username: The username of this EsdbCheckRdsConnectionRequestV3.
         :type username: str
@@ -104,7 +104,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def password(self):
         r"""Gets the password of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  实例账号密码。  **约束限制**：  - 至少包含三种字符组合：小写字母、大写字母、数字、特殊字符 ~ ! @ # % ^ * - _ + ? - 不能使用简单、强度不够、容易被猜测的密码。 - 不能与账号名称或者倒序的账号名称相同。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  数据节点的账号密码。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The password of this EsdbCheckRdsConnectionRequestV3.
         :rtype: str
@@ -115,7 +115,7 @@ class EsdbCheckRdsConnectionRequestV3:
     def password(self, password):
         r"""Sets the password of this EsdbCheckRdsConnectionRequestV3.
 
-        **参数解释**：  实例账号密码。  **约束限制**：  - 至少包含三种字符组合：小写字母、大写字母、数字、特殊字符 ~ ! @ # % ^ * - _ + ? - 不能使用简单、强度不够、容易被猜测的密码。 - 不能与账号名称或者倒序的账号名称相同。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释**：  数据节点的账号密码。  **约束限制**：  不涉及  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param password: The password of this EsdbCheckRdsConnectionRequestV3.
         :type password: str

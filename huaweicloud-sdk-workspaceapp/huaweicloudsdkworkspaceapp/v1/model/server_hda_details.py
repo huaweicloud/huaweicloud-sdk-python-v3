@@ -49,7 +49,7 @@ class ServerHdaDetails:
         :type server_id: str
         :param machine_name: 机器名称。
         :type machine_name: str
-        :param maintain_status: 是否是维护状态。
+        :param maintain_status: 服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
         :type maintain_status: bool
         :param server_name: 服务器名称。
         :type server_name: str
@@ -150,7 +150,7 @@ class ServerHdaDetails:
     def maintain_status(self):
         r"""Gets the maintain_status of this ServerHdaDetails.
 
-        是否是维护状态。
+        服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
         :return: The maintain_status of this ServerHdaDetails.
         :rtype: bool
@@ -161,7 +161,7 @@ class ServerHdaDetails:
     def maintain_status(self, maintain_status):
         r"""Sets the maintain_status of this ServerHdaDetails.
 
-        是否是维护状态。
+        服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
         :param maintain_status: The maintain_status of this ServerHdaDetails.
         :type maintain_status: bool

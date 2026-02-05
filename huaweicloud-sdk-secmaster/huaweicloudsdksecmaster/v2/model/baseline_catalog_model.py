@@ -66,11 +66,16 @@ class BaselineCatalogModel:
         self._check_items = None
         self.discriminator = None
 
-        self.uuid = uuid
-        self.serial_number = serial_number
-        self.level_number = level_number
-        self.root = root
-        self.parent = parent
+        if uuid is not None:
+            self.uuid = uuid
+        if serial_number is not None:
+            self.serial_number = serial_number
+        if level_number is not None:
+            self.level_number = level_number
+        if root is not None:
+            self.root = root
+        if parent is not None:
+            self.parent = parent
         if is_leaf is not None:
             self.is_leaf = is_leaf
         if check_items is not None:

@@ -18,17 +18,21 @@ class AppCreate:
         'name': 'str',
         'remark': 'str',
         'app_key': 'str',
-        'app_secret': 'str'
+        'app_secret': 'str',
+        'related_domain_id': 'str',
+        'related_project_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'remark': 'remark',
         'app_key': 'app_key',
-        'app_secret': 'app_secret'
+        'app_secret': 'app_secret',
+        'related_domain_id': 'related_domain_id',
+        'related_project_id': 'related_project_id'
     }
 
-    def __init__(self, name=None, remark=None, app_key=None, app_secret=None):
+    def __init__(self, name=None, remark=None, app_key=None, app_secret=None, related_domain_id=None, related_project_id=None):
         r"""AppCreate
 
         The model defined in huaweicloud sdk
@@ -37,10 +41,14 @@ class AppCreate:
         :type name: str
         :param remark: APP描述。字符长度不能大于255。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
-        :param app_key: APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
+        :param app_key: APP凭据的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
         :type app_key: str
         :param app_secret: 密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
         :type app_secret: str
+        :param related_domain_id: 凭据关联的账号ID。
+        :type related_domain_id: str
+        :param related_project_id: 凭据关联的项目ID。
+        :type related_project_id: str
         """
         
         
@@ -49,6 +57,8 @@ class AppCreate:
         self._remark = None
         self._app_key = None
         self._app_secret = None
+        self._related_domain_id = None
+        self._related_project_id = None
         self.discriminator = None
 
         self.name = name
@@ -58,6 +68,10 @@ class AppCreate:
             self.app_key = app_key
         if app_secret is not None:
             self.app_secret = app_secret
+        if related_domain_id is not None:
+            self.related_domain_id = related_domain_id
+        if related_project_id is not None:
+            self.related_project_id = related_project_id
 
     @property
     def name(self):
@@ -107,7 +121,7 @@ class AppCreate:
     def app_key(self):
         r"""Gets the app_key of this AppCreate.
 
-        APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
+        APP凭据的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
         :return: The app_key of this AppCreate.
         :rtype: str
@@ -118,7 +132,7 @@ class AppCreate:
     def app_key(self, app_key):
         r"""Sets the app_key of this AppCreate.
 
-        APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
+        APP凭据的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
         :param app_key: The app_key of this AppCreate.
         :type app_key: str
@@ -146,6 +160,50 @@ class AppCreate:
         :type app_secret: str
         """
         self._app_secret = app_secret
+
+    @property
+    def related_domain_id(self):
+        r"""Gets the related_domain_id of this AppCreate.
+
+        凭据关联的账号ID。
+
+        :return: The related_domain_id of this AppCreate.
+        :rtype: str
+        """
+        return self._related_domain_id
+
+    @related_domain_id.setter
+    def related_domain_id(self, related_domain_id):
+        r"""Sets the related_domain_id of this AppCreate.
+
+        凭据关联的账号ID。
+
+        :param related_domain_id: The related_domain_id of this AppCreate.
+        :type related_domain_id: str
+        """
+        self._related_domain_id = related_domain_id
+
+    @property
+    def related_project_id(self):
+        r"""Gets the related_project_id of this AppCreate.
+
+        凭据关联的项目ID。
+
+        :return: The related_project_id of this AppCreate.
+        :rtype: str
+        """
+        return self._related_project_id
+
+    @related_project_id.setter
+    def related_project_id(self, related_project_id):
+        r"""Sets the related_project_id of this AppCreate.
+
+        凭据关联的项目ID。
+
+        :param related_project_id: The related_project_id of this AppCreate.
+        :type related_project_id: str
+        """
+        self._related_project_id = related_project_id
 
     def to_dict(self):
         result = {}

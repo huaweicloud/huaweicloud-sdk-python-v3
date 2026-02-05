@@ -63,11 +63,11 @@ class CheckitemModel:
         :type description: str
         :param level: 表示该检查项的严重程度 informational：提示 low: 低危 medium：中危 high: 高危 fatal：致命
         :type level: str
-        :param method: 表示该检查项的检查方式 0：自动项 3: 剧本流程/logic app
+        :param method: 表示该检查项的检查方式 0：手动 1：自动 3: 自动-剧本流程 4: 自动-企业主机安全 5：自动-配置审计服务
         :type method: int
         :param name: 检查项的名称
         :type name: str
-        :param source: 表示该检查项的来源 0：默认/default 2: 剧本流程/playbook
+        :param source: 表示该检查项的来源 0：自动 2: 自动-剧本流程 3: 手动 4: 自动-企业主机安全 5：自动-配置审计服务
         :type source: int
         :param workflow_id: **参数解释**: 流程ID **约束限制**: 不涉及
         :type workflow_id: str
@@ -269,7 +269,7 @@ class CheckitemModel:
     def method(self):
         r"""Gets the method of this CheckitemModel.
 
-        表示该检查项的检查方式 0：自动项 3: 剧本流程/logic app
+        表示该检查项的检查方式 0：手动 1：自动 3: 自动-剧本流程 4: 自动-企业主机安全 5：自动-配置审计服务
 
         :return: The method of this CheckitemModel.
         :rtype: int
@@ -280,7 +280,7 @@ class CheckitemModel:
     def method(self, method):
         r"""Sets the method of this CheckitemModel.
 
-        表示该检查项的检查方式 0：自动项 3: 剧本流程/logic app
+        表示该检查项的检查方式 0：手动 1：自动 3: 自动-剧本流程 4: 自动-企业主机安全 5：自动-配置审计服务
 
         :param method: The method of this CheckitemModel.
         :type method: int
@@ -313,7 +313,7 @@ class CheckitemModel:
     def source(self):
         r"""Gets the source of this CheckitemModel.
 
-        表示该检查项的来源 0：默认/default 2: 剧本流程/playbook
+        表示该检查项的来源 0：自动 2: 自动-剧本流程 3: 手动 4: 自动-企业主机安全 5：自动-配置审计服务
 
         :return: The source of this CheckitemModel.
         :rtype: int
@@ -324,7 +324,7 @@ class CheckitemModel:
     def source(self, source):
         r"""Sets the source of this CheckitemModel.
 
-        表示该检查项的来源 0：默认/default 2: 剧本流程/playbook
+        表示该检查项的来源 0：自动 2: 自动-剧本流程 3: 手动 4: 自动-企业主机安全 5：自动-配置审计服务
 
         :param source: The source of this CheckitemModel.
         :type source: int

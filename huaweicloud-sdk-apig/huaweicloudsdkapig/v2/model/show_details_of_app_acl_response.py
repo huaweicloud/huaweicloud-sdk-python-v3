@@ -34,7 +34,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
 
         :param app_id: APP编号
         :type app_id: str
-        :param app_acl_type: 类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        :param app_acl_type: 类型 - PERMIT：白名单类型 - DENY：黑名单类型
         :type app_acl_type: str
         :param app_acl_values: ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
         :type app_acl_values: list[str]
@@ -80,7 +80,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
     def app_acl_type(self):
         r"""Gets the app_acl_type of this ShowDetailsOfAppAclResponse.
 
-        类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
         :return: The app_acl_type of this ShowDetailsOfAppAclResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowDetailsOfAppAclResponse(SdkResponse):
     def app_acl_type(self, app_acl_type):
         r"""Sets the app_acl_type of this ShowDetailsOfAppAclResponse.
 
-        类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
         :param app_acl_type: The app_acl_type of this ShowDetailsOfAppAclResponse.
         :type app_acl_type: str

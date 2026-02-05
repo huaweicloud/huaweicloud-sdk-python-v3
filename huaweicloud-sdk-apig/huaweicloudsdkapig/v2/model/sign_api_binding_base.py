@@ -65,7 +65,7 @@ class SignApiBindingBase:
         :type env_id: str
         :param env_name: API所属环境的名称
         :type env_name: str
-        :param api_type: API类型
+        :param api_type: API类型。 - 1：公有API - 2：私有API 
         :type api_type: int
         :param api_name: API名称
         :type api_name: str
@@ -266,7 +266,7 @@ class SignApiBindingBase:
     def api_type(self):
         r"""Gets the api_type of this SignApiBindingBase.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :return: The api_type of this SignApiBindingBase.
         :rtype: int
@@ -277,7 +277,7 @@ class SignApiBindingBase:
     def api_type(self, api_type):
         r"""Sets the api_type of this SignApiBindingBase.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :param api_type: The api_type of this SignApiBindingBase.
         :type api_type: int

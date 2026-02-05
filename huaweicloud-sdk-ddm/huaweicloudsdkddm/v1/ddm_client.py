@@ -2930,6 +2930,73 @@ class DdmClient(Client):
 
         return http_info
 
+    def list_ddms(self, request):
+        r"""查询实例列表
+
+        查询实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDdms
+        :type request: :class:`huaweicloudsdkddm.v1.ListDdmsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListDdmsResponse`
+        """
+        http_info = self._list_ddms_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ddms_invoker(self, request):
+        http_info = self._list_ddms_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ddms_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDdmsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_engines(self, request):
         r"""查询DDM引擎信息
 
@@ -3390,6 +3457,81 @@ class DdmClient(Client):
             query_params.append(('startDate', local_var_params['start_date']))
         if 'end_date' in local_var_params:
             query_params.append(('endDate', local_var_params['end_date']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_slow_log_analysis(self, request):
+        r"""查询慢日志
+
+        查询慢日志V3
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSlowLogAnalysis
+        :type request: :class:`huaweicloudsdkddm.v1.ListSlowLogAnalysisRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListSlowLogAnalysisResponse`
+        """
+        http_info = self._list_slow_log_analysis_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_slow_log_analysis_invoker(self, request):
+        http_info = self._list_slow_log_analysis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_slow_log_analysis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-log-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSlowLogAnalysisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 
@@ -5248,6 +5390,73 @@ class DdmClient(Client):
 
         return http_info
 
+    def show_ip_group(self, request):
+        r"""查询访问控制组
+
+        查询访问控制组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIpGroup
+        :type request: :class:`huaweicloudsdkddm.v1.ShowIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowIpGroupResponse`
+        """
+        http_info = self._show_ip_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ip_group_invoker(self, request):
+        http_info = self._show_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/groups/{group_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_logical_processes(self, request):
         r"""查询逻辑会话列表
 
@@ -5292,6 +5501,77 @@ class DdmClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'keyword' in local_var_params:
             query_params.append(('keyword', local_var_params['keyword']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_migration_log(self, request):
+        r"""查询分片变更的日志
+
+        查询分片变更的日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMigrationLog
+        :type request: :class:`huaweicloudsdkddm.v1.ShowMigrationLogRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowMigrationLogResponse`
+        """
+        http_info = self._show_migration_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_migration_log_invoker(self, request):
+        http_info = self._show_migration_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_migration_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/task/{task_id}/run-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMigrationLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -5702,6 +5982,75 @@ class DdmClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_ip_group(self, request):
+        r"""创建访问控制组
+
+        创建访问控制组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchIpGroup
+        :type request: :class:`huaweicloudsdkddm.v1.SwitchIpGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.SwitchIpGroupResponse`
+        """
+        http_info = self._switch_ip_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_ip_group_invoker(self, request):
+        http_info = self._switch_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/groups/{group_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchIpGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
 
@@ -6602,31 +6951,31 @@ class DdmClient(Client):
 
         return http_info
 
-    def check_data_node_connection_v0_v3(self, request):
+    def check_data_node_connection(self, request):
         r"""rds连通性检查V3
 
         rds连通性检查V3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CheckDataNodeConnectionV0V3
-        :type request: :class:`huaweicloudsdkddm.v1.CheckDataNodeConnectionV0V3Request`
-        :rtype: :class:`huaweicloudsdkddm.v1.CheckDataNodeConnectionV0V3Response`
+        :param request: Request instance for CheckDataNodeConnection
+        :type request: :class:`huaweicloudsdkddm.v1.CheckDataNodeConnectionRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CheckDataNodeConnectionResponse`
         """
-        http_info = self._check_data_node_connection_v0_v3_http_info(request)
+        http_info = self._check_data_node_connection_http_info(request)
         return self._call_api(**http_info)
 
-    def check_data_node_connection_v0_v3_invoker(self, request):
-        http_info = self._check_data_node_connection_v0_v3_http_info(request)
+    def check_data_node_connection_invoker(self, request):
+        http_info = self._check_data_node_connection_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _check_data_node_connection_v0_v3_http_info(cls, request):
+    def _check_data_node_connection_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v3/ddm/instance/rds/connection",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/rds/connection",
             "request_type": request.__class__.__name__,
-            "response_type": "CheckDataNodeConnectionV0V3Response"
+            "response_type": "CheckDataNodeConnectionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6636,6 +6985,8 @@ class DdmClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -6732,31 +7083,31 @@ class DdmClient(Client):
 
         return http_info
 
-    def copy_parameter_group(self, request):
+    def copy_configuration(self, request):
         r"""复制参数组V3
 
         复制参数组V3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CopyParameterGroup
-        :type request: :class:`huaweicloudsdkddm.v1.CopyParameterGroupRequest`
-        :rtype: :class:`huaweicloudsdkddm.v1.CopyParameterGroupResponse`
+        :param request: Request instance for CopyConfiguration
+        :type request: :class:`huaweicloudsdkddm.v1.CopyConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CopyConfigurationResponse`
         """
-        http_info = self._copy_parameter_group_http_info(request)
+        http_info = self._copy_configuration_http_info(request)
         return self._call_api(**http_info)
 
-    def copy_parameter_group_invoker(self, request):
-        http_info = self._copy_parameter_group_http_info(request)
+    def copy_configuration_invoker(self, request):
+        http_info = self._copy_configuration_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _copy_parameter_group_http_info(cls, request):
+    def _copy_configuration_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v3/{project_id}/configurations/{config_id}/copy",
             "request_type": request.__class__.__name__,
-            "response_type": "CopyParameterGroupResponse"
+            "response_type": "CopyConfigurationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6799,31 +7150,31 @@ class DdmClient(Client):
 
         return http_info
 
-    def list_instances_applied_parameter_group_v0_v3(self, request):
-        r"""查询可应用的实例列表V3
+    def list_configuration_apply_histories(self, request):
+        r"""参数组应用记录V3
 
-        查询可应用的实例列表V3
+        参数组应用记录V3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListInstancesAppliedParameterGroupV0V3
-        :type request: :class:`huaweicloudsdkddm.v1.ListInstancesAppliedParameterGroupV0V3Request`
-        :rtype: :class:`huaweicloudsdkddm.v1.ListInstancesAppliedParameterGroupV0V3Response`
+        :param request: Request instance for ListConfigurationApplyHistories
+        :type request: :class:`huaweicloudsdkddm.v1.ListConfigurationApplyHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListConfigurationApplyHistoriesResponse`
         """
-        http_info = self._list_instances_applied_parameter_group_v0_v3_http_info(request)
+        http_info = self._list_configuration_apply_histories_http_info(request)
         return self._call_api(**http_info)
 
-    def list_instances_applied_parameter_group_v0_v3_invoker(self, request):
-        http_info = self._list_instances_applied_parameter_group_v0_v3_http_info(request)
+    def list_configuration_apply_histories_invoker(self, request):
+        http_info = self._list_configuration_apply_histories_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_instances_applied_parameter_group_v0_v3_http_info(cls, request):
+    def _list_configuration_apply_histories_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v3/{project_id}/configurations/{config_id}/query-instances",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/apply-histories",
             "request_type": request.__class__.__name__,
-            "response_type": "ListInstancesAppliedParameterGroupV0V3Response"
+            "response_type": "ListConfigurationApplyHistoriesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6868,31 +7219,31 @@ class DdmClient(Client):
 
         return http_info
 
-    def list_parameter_group_apply_history_v0_v3(self, request):
-        r"""参数组应用记录V3
+    def list_instances_configurations(self, request):
+        r"""查询可应用的实例列表V3
 
-        参数组应用记录V3
+        查询可应用的实例列表V3
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListParameterGroupApplyHistoryV0V3
-        :type request: :class:`huaweicloudsdkddm.v1.ListParameterGroupApplyHistoryV0V3Request`
-        :rtype: :class:`huaweicloudsdkddm.v1.ListParameterGroupApplyHistoryV0V3Response`
+        :param request: Request instance for ListInstancesConfigurations
+        :type request: :class:`huaweicloudsdkddm.v1.ListInstancesConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListInstancesConfigurationsResponse`
         """
-        http_info = self._list_parameter_group_apply_history_v0_v3_http_info(request)
+        http_info = self._list_instances_configurations_http_info(request)
         return self._call_api(**http_info)
 
-    def list_parameter_group_apply_history_v0_v3_invoker(self, request):
-        http_info = self._list_parameter_group_apply_history_v0_v3_http_info(request)
+    def list_instances_configurations_invoker(self, request):
+        http_info = self._list_instances_configurations_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _list_parameter_group_apply_history_v0_v3_http_info(cls, request):
+    def _list_instances_configurations_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v3/{project_id}/configurations/{config_id}/apply-histories",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/query-instances",
             "request_type": request.__class__.__name__,
-            "response_type": "ListParameterGroupApplyHistoryV0V3Response"
+            "response_type": "ListInstancesConfigurationsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6959,7 +7310,7 @@ class DdmClient(Client):
     def _reset_parameter_group_http_info(cls, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v3/{project_id}/configurations/{config_id}/reset",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ResetParameterGroupResponse"
             }
@@ -7040,6 +7391,209 @@ class DdmClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_modify_read_write_strategy(self, request):
+        r"""批量设置读策略V3
+
+        批量设置读策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchModifyReadWriteStrategy
+        :type request: :class:`huaweicloudsdkddm.v1.BatchModifyReadWriteStrategyRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.BatchModifyReadWriteStrategyResponse`
+        """
+        http_info = self._batch_modify_read_write_strategy_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_modify_read_write_strategy_invoker(self, request):
+        http_info = self._batch_modify_read_write_strategy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_modify_read_write_strategy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/action/batch-modify-read-write-strategy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchModifyReadWriteStrategyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_sql_black_list(self, request):
+        r"""修改sql黑名单
+
+        修改sql黑名单V3
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifySqlBlackList
+        :type request: :class:`huaweicloudsdkddm.v1.ModifySqlBlackListRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ModifySqlBlackListResponse`
+        """
+        http_info = self._modify_sql_black_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_sql_black_list_invoker(self, request):
+        http_info = self._modify_sql_black_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_sql_black_list_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{logic_db_name}/sql-black-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySqlBlackListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'logic_db_name' in local_var_params:
+            path_params['logic_db_name'] = local_var_params['logic_db_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_black(self, request):
+        r"""查询sql黑名单V3
+
+        查询sql黑名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSqlBlack
+        :type request: :class:`huaweicloudsdkddm.v1.ListSqlBlackRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListSqlBlackResponse`
+        """
+        http_info = self._list_sql_black_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_black_invoker(self, request):
+        http_info = self._list_sql_black_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_black_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{logic_db_name}/sql-black-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlBlackResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'logic_db_name' in local_var_params:
+            path_params['logic_db_name'] = local_var_params['logic_db_name']
 
         query_params = []
 

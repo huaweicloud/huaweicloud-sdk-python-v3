@@ -18,7 +18,7 @@ class ResourceUsage:
         'unit': 'str',
         'resource_type_name': 'str',
         'source_resource_spec_code': 'str',
-        'resource_spec_code': 'object',
+        'resource_spec_code': 'str',
         'source_type': 'str',
         'used_percent': 'float',
         'quota': 'float',
@@ -50,7 +50,7 @@ class ResourceUsage:
         :param source_resource_spec_code: 源资源规格编码
         :type source_resource_spec_code: str
         :param resource_spec_code: 源资源规格编码
-        :type resource_spec_code: object
+        :type resource_spec_code: str
         :param source_type: 源资源类型编码
         :type source_type: str
         :param used_percent: 用量百分比
@@ -168,7 +168,7 @@ class ResourceUsage:
         源资源规格编码
 
         :return: The resource_spec_code of this ResourceUsage.
-        :rtype: object
+        :rtype: str
         """
         return self._resource_spec_code
 
@@ -179,7 +179,7 @@ class ResourceUsage:
         源资源规格编码
 
         :param resource_spec_code: The resource_spec_code of this ResourceUsage.
-        :type resource_spec_code: object
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 

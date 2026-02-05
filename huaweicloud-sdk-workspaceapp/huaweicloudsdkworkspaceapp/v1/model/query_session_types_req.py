@@ -35,11 +35,11 @@ class QuerySessionTypesReq:
 
         :param resource_spec_code: 资源规格编码。
         :type resource_spec_code: str
-        :param session_type: 磁盘类型。
+        :param session_type: 会话类型： - CPU - GPU
         :type session_type: str
-        :param resource_type: 资源类型字段。
+        :param resource_type: 资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
         :type resource_type: str
-        :param cloud_service_type: 资源所属云服务类型编码。
+        :param cloud_service_type: 资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
         :type cloud_service_type: str
         """
         
@@ -86,7 +86,7 @@ class QuerySessionTypesReq:
     def session_type(self):
         r"""Gets the session_type of this QuerySessionTypesReq.
 
-        磁盘类型。
+        会话类型： - CPU - GPU
 
         :return: The session_type of this QuerySessionTypesReq.
         :rtype: str
@@ -97,7 +97,7 @@ class QuerySessionTypesReq:
     def session_type(self, session_type):
         r"""Sets the session_type of this QuerySessionTypesReq.
 
-        磁盘类型。
+        会话类型： - CPU - GPU
 
         :param session_type: The session_type of this QuerySessionTypesReq.
         :type session_type: str
@@ -108,7 +108,7 @@ class QuerySessionTypesReq:
     def resource_type(self):
         r"""Gets the resource_type of this QuerySessionTypesReq.
 
-        资源类型字段。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :return: The resource_type of this QuerySessionTypesReq.
         :rtype: str
@@ -119,7 +119,7 @@ class QuerySessionTypesReq:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this QuerySessionTypesReq.
 
-        资源类型字段。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :param resource_type: The resource_type of this QuerySessionTypesReq.
         :type resource_type: str
@@ -130,7 +130,7 @@ class QuerySessionTypesReq:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this QuerySessionTypesReq.
 
-        资源所属云服务类型编码。
+        资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
 
         :return: The cloud_service_type of this QuerySessionTypesReq.
         :rtype: str
@@ -141,7 +141,7 @@ class QuerySessionTypesReq:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this QuerySessionTypesReq.
 
-        资源所属云服务类型编码。
+        资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
 
         :param cloud_service_type: The cloud_service_type of this QuerySessionTypesReq.
         :type cloud_service_type: str

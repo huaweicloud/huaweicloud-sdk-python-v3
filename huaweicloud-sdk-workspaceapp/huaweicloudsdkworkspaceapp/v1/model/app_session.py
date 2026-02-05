@@ -87,7 +87,7 @@ class AppSession:
         :type session_stamp: str
         :param os_session_id: 会话在hda的os中会话id。
         :type os_session_id: str
-        :param protocol_type: 协议类型。
+        :param protocol_type: 协议类型： - HDP
         :type protocol_type: str
         :param login_user: 当前会话的登录用户。
         :type login_user: str
@@ -109,7 +109,7 @@ class AppSession:
         :type machine_sid: str
         :param machine_name: 服务器名称。
         :type machine_name: str
-        :param session_state: 会话状态。
+        :param session_state: 会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
         :type session_state: str
         :param app_name: 会话中的应用名称。
         :type app_name: str
@@ -298,7 +298,7 @@ class AppSession:
     def protocol_type(self):
         r"""Gets the protocol_type of this AppSession.
 
-        协议类型。
+        协议类型： - HDP
 
         :return: The protocol_type of this AppSession.
         :rtype: str
@@ -309,7 +309,7 @@ class AppSession:
     def protocol_type(self, protocol_type):
         r"""Sets the protocol_type of this AppSession.
 
-        协议类型。
+        协议类型： - HDP
 
         :param protocol_type: The protocol_type of this AppSession.
         :type protocol_type: str
@@ -540,7 +540,7 @@ class AppSession:
     def session_state(self):
         r"""Gets the session_state of this AppSession.
 
-        会话状态。
+        会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
 
         :return: The session_state of this AppSession.
         :rtype: str
@@ -551,7 +551,7 @@ class AppSession:
     def session_state(self, session_state):
         r"""Sets the session_state of this AppSession.
 
-        会话状态。
+        会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
 
         :param session_state: The session_state of this AppSession.
         :type session_state: str

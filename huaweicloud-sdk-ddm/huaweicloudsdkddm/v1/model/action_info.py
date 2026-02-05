@@ -27,7 +27,7 @@ class ActionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param action: 锁。
+        :param action: **参数解释**：  锁。  **参数范围**：  不涉及。
         :type action: str
         """
         
@@ -43,7 +43,7 @@ class ActionInfo:
     def action(self):
         r"""Gets the action of this ActionInfo.
 
-        锁。
+        **参数解释**：  锁。  **参数范围**：  不涉及。
 
         :return: The action of this ActionInfo.
         :rtype: str
@@ -54,7 +54,7 @@ class ActionInfo:
     def action(self, action):
         r"""Sets the action of this ActionInfo.
 
-        锁。
+        **参数解释**：  锁。  **参数范围**：  不涉及。
 
         :param action: The action of this ActionInfo.
         :type action: str

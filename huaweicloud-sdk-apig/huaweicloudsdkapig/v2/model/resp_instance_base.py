@@ -73,9 +73,9 @@ class RespInstanceBase:
         :type enterprise_project_id: str
         :param eip_address: 实例绑定的弹性IP地址
         :type eip_address: str
-        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
         :type charging_mode: int
-        :param cbc_metadata: [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        :param cbc_metadata: [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
         :type cbc_metadata: str
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
@@ -354,7 +354,7 @@ class RespInstanceBase:
     def charging_mode(self):
         r"""Gets the charging_mode of this RespInstanceBase.
 
-        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :return: The charging_mode of this RespInstanceBase.
         :rtype: int
@@ -365,7 +365,7 @@ class RespInstanceBase:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this RespInstanceBase.
 
-        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws)[暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,ctc)[暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :param charging_mode: The charging_mode of this RespInstanceBase.
         :type charging_mode: int
@@ -376,7 +376,7 @@ class RespInstanceBase:
     def cbc_metadata(self):
         r"""Gets the cbc_metadata of this RespInstanceBase.
 
-        [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :return: The cbc_metadata of this RespInstanceBase.
         :rtype: str
@@ -387,7 +387,7 @@ class RespInstanceBase:
     def cbc_metadata(self, cbc_metadata):
         r"""Sets the cbc_metadata of this RespInstanceBase.
 
-        [包周期计费订单编号](tag:hws)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
+        [包周期计费订单编号](tag:hws,ctc)[计费订单编号参数暂未使用](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :param cbc_metadata: The cbc_metadata of this RespInstanceBase.
         :type cbc_metadata: str

@@ -49,7 +49,7 @@ class MicroserviceImportReq:
 
         :param group_info: 
         :type group_info: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
-        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
+        :param service_type: 微服务中心类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
         :type service_type: str
         :param protocol: API网关访问微服务的请求协议 - HTTP - HTTPS
         :type protocol: str
@@ -128,7 +128,7 @@ class MicroserviceImportReq:
     def service_type(self):
         r"""Gets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
 
         :return: The service_type of this MicroserviceImportReq.
         :rtype: str
@@ -139,7 +139,7 @@ class MicroserviceImportReq:
     def service_type(self, service_type):
         r"""Sets the service_type of this MicroserviceImportReq.
 
-        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
+        微服务中心类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
 
         :param service_type: The service_type of this MicroserviceImportReq.
         :type service_type: str

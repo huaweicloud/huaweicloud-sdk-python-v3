@@ -19,6 +19,8 @@ class AppQuotaAppInfo:
         'name': 'str',
         'status': 'int',
         'app_key': 'str',
+        'related_domain_id': 'str',
+        'related_project_id': 'str',
         'remark': 'str',
         'register_time': 'datetime',
         'update_time': 'datetime',
@@ -32,6 +34,8 @@ class AppQuotaAppInfo:
         'name': 'name',
         'status': 'status',
         'app_key': 'app_key',
+        'related_domain_id': 'related_domain_id',
+        'related_project_id': 'related_project_id',
         'remark': 'remark',
         'register_time': 'register_time',
         'update_time': 'update_time',
@@ -40,26 +44,30 @@ class AppQuotaAppInfo:
         'bound_time': 'bound_time'
     }
 
-    def __init__(self, app_id=None, name=None, status=None, app_key=None, remark=None, register_time=None, update_time=None, app_quota_id=None, app_quota_name=None, bound_time=None):
+    def __init__(self, app_id=None, name=None, status=None, app_key=None, related_domain_id=None, related_project_id=None, remark=None, register_time=None, update_time=None, app_quota_id=None, app_quota_name=None, bound_time=None):
         r"""AppQuotaAppInfo
 
         The model defined in huaweicloud sdk
 
-        :param app_id: 凭据编号
+        :param app_id: APP凭据编号。
         :type app_id: str
-        :param name: 凭据名称
+        :param name: APP凭据名称。
         :type name: str
         :param status: 凭据状态： - 1：启用 - 2：禁用
         :type status: int
-        :param app_key: 凭据的Key
+        :param app_key: APP凭据的key。
         :type app_key: str
-        :param remark: 凭据描述
+        :param related_domain_id: 凭据关联的账号ID。
+        :type related_domain_id: str
+        :param related_project_id: 凭据关联的项目ID。
+        :type related_project_id: str
+        :param remark: APP凭据描述。
         :type remark: str
         :param register_time: 创建时间
         :type register_time: datetime
         :param update_time: 更新时间
         :type update_time: datetime
-        :param app_quota_id: 凭据配额编号
+        :param app_quota_id: APP凭据配额编号。
         :type app_quota_id: str
         :param app_quota_name: 配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
         :type app_quota_name: str
@@ -73,6 +81,8 @@ class AppQuotaAppInfo:
         self._name = None
         self._status = None
         self._app_key = None
+        self._related_domain_id = None
+        self._related_project_id = None
         self._remark = None
         self._register_time = None
         self._update_time = None
@@ -89,6 +99,10 @@ class AppQuotaAppInfo:
             self.status = status
         if app_key is not None:
             self.app_key = app_key
+        if related_domain_id is not None:
+            self.related_domain_id = related_domain_id
+        if related_project_id is not None:
+            self.related_project_id = related_project_id
         if remark is not None:
             self.remark = remark
         if register_time is not None:
@@ -106,7 +120,7 @@ class AppQuotaAppInfo:
     def app_id(self):
         r"""Gets the app_id of this AppQuotaAppInfo.
 
-        凭据编号
+        APP凭据编号。
 
         :return: The app_id of this AppQuotaAppInfo.
         :rtype: str
@@ -117,7 +131,7 @@ class AppQuotaAppInfo:
     def app_id(self, app_id):
         r"""Sets the app_id of this AppQuotaAppInfo.
 
-        凭据编号
+        APP凭据编号。
 
         :param app_id: The app_id of this AppQuotaAppInfo.
         :type app_id: str
@@ -128,7 +142,7 @@ class AppQuotaAppInfo:
     def name(self):
         r"""Gets the name of this AppQuotaAppInfo.
 
-        凭据名称
+        APP凭据名称。
 
         :return: The name of this AppQuotaAppInfo.
         :rtype: str
@@ -139,7 +153,7 @@ class AppQuotaAppInfo:
     def name(self, name):
         r"""Sets the name of this AppQuotaAppInfo.
 
-        凭据名称
+        APP凭据名称。
 
         :param name: The name of this AppQuotaAppInfo.
         :type name: str
@@ -172,7 +186,7 @@ class AppQuotaAppInfo:
     def app_key(self):
         r"""Gets the app_key of this AppQuotaAppInfo.
 
-        凭据的Key
+        APP凭据的key。
 
         :return: The app_key of this AppQuotaAppInfo.
         :rtype: str
@@ -183,7 +197,7 @@ class AppQuotaAppInfo:
     def app_key(self, app_key):
         r"""Sets the app_key of this AppQuotaAppInfo.
 
-        凭据的Key
+        APP凭据的key。
 
         :param app_key: The app_key of this AppQuotaAppInfo.
         :type app_key: str
@@ -191,10 +205,54 @@ class AppQuotaAppInfo:
         self._app_key = app_key
 
     @property
+    def related_domain_id(self):
+        r"""Gets the related_domain_id of this AppQuotaAppInfo.
+
+        凭据关联的账号ID。
+
+        :return: The related_domain_id of this AppQuotaAppInfo.
+        :rtype: str
+        """
+        return self._related_domain_id
+
+    @related_domain_id.setter
+    def related_domain_id(self, related_domain_id):
+        r"""Sets the related_domain_id of this AppQuotaAppInfo.
+
+        凭据关联的账号ID。
+
+        :param related_domain_id: The related_domain_id of this AppQuotaAppInfo.
+        :type related_domain_id: str
+        """
+        self._related_domain_id = related_domain_id
+
+    @property
+    def related_project_id(self):
+        r"""Gets the related_project_id of this AppQuotaAppInfo.
+
+        凭据关联的项目ID。
+
+        :return: The related_project_id of this AppQuotaAppInfo.
+        :rtype: str
+        """
+        return self._related_project_id
+
+    @related_project_id.setter
+    def related_project_id(self, related_project_id):
+        r"""Sets the related_project_id of this AppQuotaAppInfo.
+
+        凭据关联的项目ID。
+
+        :param related_project_id: The related_project_id of this AppQuotaAppInfo.
+        :type related_project_id: str
+        """
+        self._related_project_id = related_project_id
+
+    @property
     def remark(self):
         r"""Gets the remark of this AppQuotaAppInfo.
 
-        凭据描述
+        APP凭据描述。
 
         :return: The remark of this AppQuotaAppInfo.
         :rtype: str
@@ -205,7 +263,7 @@ class AppQuotaAppInfo:
     def remark(self, remark):
         r"""Sets the remark of this AppQuotaAppInfo.
 
-        凭据描述
+        APP凭据描述。
 
         :param remark: The remark of this AppQuotaAppInfo.
         :type remark: str
@@ -260,7 +318,7 @@ class AppQuotaAppInfo:
     def app_quota_id(self):
         r"""Gets the app_quota_id of this AppQuotaAppInfo.
 
-        凭据配额编号
+        APP凭据配额编号。
 
         :return: The app_quota_id of this AppQuotaAppInfo.
         :rtype: str
@@ -271,7 +329,7 @@ class AppQuotaAppInfo:
     def app_quota_id(self, app_quota_id):
         r"""Sets the app_quota_id of this AppQuotaAppInfo.
 
-        凭据配额编号
+        APP凭据配额编号。
 
         :param app_quota_id: The app_quota_id of this AppQuotaAppInfo.
         :type app_quota_id: str

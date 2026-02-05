@@ -45,25 +45,25 @@ class DdmGroupInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 组ID。
+        :param id: **参数解释**：  组ID。  **参数范围**：  不涉及。
         :type id: str
-        :param name: 名称。
+        :param name: **参数解释**：  名称。  **参数范围**：  不涉及。
         :type name: str
-        :param role: 角色。
+        :param role: **参数解释**：  角色。  **参数范围**：  不涉及。
         :type role: str
-        :param endpoint: 组ip。
+        :param endpoint: **参数解释**：  组ip。  **参数范围**：  不涉及。
         :type endpoint: str
-        :param ipv6_endpoint: ipv6。
+        :param ipv6_endpoint: **参数解释**：  ipv6。  **参数范围**：  不涉及。
         :type ipv6_endpoint: str
-        :param node_count: 节点数量。
+        :param node_count: **参数解释**：  节点数量。  **参数范围**：  不涉及。
         :type node_count: int
-        :param load_balance: 负载均衡。
+        :param load_balance: **参数解释**：  负载均衡。  **参数范围**：  不涉及。
         :type load_balance: bool
-        :param is_default_group: 是否默认组。
+        :param is_default_group: **参数解释**：  是否默认组。  **参数范围**：  不涉及。
         :type is_default_group: bool
-        :param extend_map: 其他信息。
+        :param extend_map: **参数解释**：  其他信息。  **参数范围**：  不涉及。
         :type extend_map: dict(str, str)
-        :param nodes: 节点信息。
+        :param nodes: **参数解释**：  节点信息。  **参数范围**：  不涉及。
         :type nodes: list[:class:`huaweicloudsdkddm.v1.DdmNodeInfo`]
         """
         
@@ -106,7 +106,7 @@ class DdmGroupInfo:
     def id(self):
         r"""Gets the id of this DdmGroupInfo.
 
-        组ID。
+        **参数解释**：  组ID。  **参数范围**：  不涉及。
 
         :return: The id of this DdmGroupInfo.
         :rtype: str
@@ -117,7 +117,7 @@ class DdmGroupInfo:
     def id(self, id):
         r"""Sets the id of this DdmGroupInfo.
 
-        组ID。
+        **参数解释**：  组ID。  **参数范围**：  不涉及。
 
         :param id: The id of this DdmGroupInfo.
         :type id: str
@@ -128,7 +128,7 @@ class DdmGroupInfo:
     def name(self):
         r"""Gets the name of this DdmGroupInfo.
 
-        名称。
+        **参数解释**：  名称。  **参数范围**：  不涉及。
 
         :return: The name of this DdmGroupInfo.
         :rtype: str
@@ -139,7 +139,7 @@ class DdmGroupInfo:
     def name(self, name):
         r"""Sets the name of this DdmGroupInfo.
 
-        名称。
+        **参数解释**：  名称。  **参数范围**：  不涉及。
 
         :param name: The name of this DdmGroupInfo.
         :type name: str
@@ -150,7 +150,7 @@ class DdmGroupInfo:
     def role(self):
         r"""Gets the role of this DdmGroupInfo.
 
-        角色。
+        **参数解释**：  角色。  **参数范围**：  不涉及。
 
         :return: The role of this DdmGroupInfo.
         :rtype: str
@@ -161,7 +161,7 @@ class DdmGroupInfo:
     def role(self, role):
         r"""Sets the role of this DdmGroupInfo.
 
-        角色。
+        **参数解释**：  角色。  **参数范围**：  不涉及。
 
         :param role: The role of this DdmGroupInfo.
         :type role: str
@@ -172,7 +172,7 @@ class DdmGroupInfo:
     def endpoint(self):
         r"""Gets the endpoint of this DdmGroupInfo.
 
-        组ip。
+        **参数解释**：  组ip。  **参数范围**：  不涉及。
 
         :return: The endpoint of this DdmGroupInfo.
         :rtype: str
@@ -183,7 +183,7 @@ class DdmGroupInfo:
     def endpoint(self, endpoint):
         r"""Sets the endpoint of this DdmGroupInfo.
 
-        组ip。
+        **参数解释**：  组ip。  **参数范围**：  不涉及。
 
         :param endpoint: The endpoint of this DdmGroupInfo.
         :type endpoint: str
@@ -194,7 +194,7 @@ class DdmGroupInfo:
     def ipv6_endpoint(self):
         r"""Gets the ipv6_endpoint of this DdmGroupInfo.
 
-        ipv6。
+        **参数解释**：  ipv6。  **参数范围**：  不涉及。
 
         :return: The ipv6_endpoint of this DdmGroupInfo.
         :rtype: str
@@ -205,7 +205,7 @@ class DdmGroupInfo:
     def ipv6_endpoint(self, ipv6_endpoint):
         r"""Sets the ipv6_endpoint of this DdmGroupInfo.
 
-        ipv6。
+        **参数解释**：  ipv6。  **参数范围**：  不涉及。
 
         :param ipv6_endpoint: The ipv6_endpoint of this DdmGroupInfo.
         :type ipv6_endpoint: str
@@ -216,7 +216,7 @@ class DdmGroupInfo:
     def node_count(self):
         r"""Gets the node_count of this DdmGroupInfo.
 
-        节点数量。
+        **参数解释**：  节点数量。  **参数范围**：  不涉及。
 
         :return: The node_count of this DdmGroupInfo.
         :rtype: int
@@ -227,7 +227,7 @@ class DdmGroupInfo:
     def node_count(self, node_count):
         r"""Sets the node_count of this DdmGroupInfo.
 
-        节点数量。
+        **参数解释**：  节点数量。  **参数范围**：  不涉及。
 
         :param node_count: The node_count of this DdmGroupInfo.
         :type node_count: int
@@ -238,7 +238,7 @@ class DdmGroupInfo:
     def load_balance(self):
         r"""Gets the load_balance of this DdmGroupInfo.
 
-        负载均衡。
+        **参数解释**：  负载均衡。  **参数范围**：  不涉及。
 
         :return: The load_balance of this DdmGroupInfo.
         :rtype: bool
@@ -249,7 +249,7 @@ class DdmGroupInfo:
     def load_balance(self, load_balance):
         r"""Sets the load_balance of this DdmGroupInfo.
 
-        负载均衡。
+        **参数解释**：  负载均衡。  **参数范围**：  不涉及。
 
         :param load_balance: The load_balance of this DdmGroupInfo.
         :type load_balance: bool
@@ -260,7 +260,7 @@ class DdmGroupInfo:
     def is_default_group(self):
         r"""Gets the is_default_group of this DdmGroupInfo.
 
-        是否默认组。
+        **参数解释**：  是否默认组。  **参数范围**：  不涉及。
 
         :return: The is_default_group of this DdmGroupInfo.
         :rtype: bool
@@ -271,7 +271,7 @@ class DdmGroupInfo:
     def is_default_group(self, is_default_group):
         r"""Sets the is_default_group of this DdmGroupInfo.
 
-        是否默认组。
+        **参数解释**：  是否默认组。  **参数范围**：  不涉及。
 
         :param is_default_group: The is_default_group of this DdmGroupInfo.
         :type is_default_group: bool
@@ -282,7 +282,7 @@ class DdmGroupInfo:
     def extend_map(self):
         r"""Gets the extend_map of this DdmGroupInfo.
 
-        其他信息。
+        **参数解释**：  其他信息。  **参数范围**：  不涉及。
 
         :return: The extend_map of this DdmGroupInfo.
         :rtype: dict(str, str)
@@ -293,7 +293,7 @@ class DdmGroupInfo:
     def extend_map(self, extend_map):
         r"""Sets the extend_map of this DdmGroupInfo.
 
-        其他信息。
+        **参数解释**：  其他信息。  **参数范围**：  不涉及。
 
         :param extend_map: The extend_map of this DdmGroupInfo.
         :type extend_map: dict(str, str)
@@ -304,7 +304,7 @@ class DdmGroupInfo:
     def nodes(self):
         r"""Gets the nodes of this DdmGroupInfo.
 
-        节点信息。
+        **参数解释**：  节点信息。  **参数范围**：  不涉及。
 
         :return: The nodes of this DdmGroupInfo.
         :rtype: list[:class:`huaweicloudsdkddm.v1.DdmNodeInfo`]
@@ -315,7 +315,7 @@ class DdmGroupInfo:
     def nodes(self, nodes):
         r"""Sets the nodes of this DdmGroupInfo.
 
-        节点信息。
+        **参数解释**：  节点信息。  **参数范围**：  不涉及。
 
         :param nodes: The nodes of this DdmGroupInfo.
         :type nodes: list[:class:`huaweicloudsdkddm.v1.DdmNodeInfo`]

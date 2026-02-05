@@ -43,7 +43,7 @@ class ExportOpenApiReq:
         :type group_id: str
         :param define: 导出API的定义范围： - spec：基础定义，只包括api前端定义 - proxy：全量定义，包括api前后端定义 - all：扩展定义，包括api前后端定义以及流控、访问控制、自定义认证等扩展定义 - dev：开发定义，包括未发布的api的前后端定义
         :type define: str
-        :param type: 导出的API定义的格式
+        :param type: 导出的API定义的格式。 - json - yaml - yml 
         :type type: str
         :param version: 导出的API定义版本，默认为当前时间
         :type version: str
@@ -142,7 +142,7 @@ class ExportOpenApiReq:
     def type(self):
         r"""Gets the type of this ExportOpenApiReq.
 
-        导出的API定义的格式
+        导出的API定义的格式。 - json - yaml - yml 
 
         :return: The type of this ExportOpenApiReq.
         :rtype: str
@@ -153,7 +153,7 @@ class ExportOpenApiReq:
     def type(self, type):
         r"""Sets the type of this ExportOpenApiReq.
 
-        导出的API定义的格式
+        导出的API定义的格式。 - json - yaml - yml 
 
         :param type: The type of this ExportOpenApiReq.
         :type type: str

@@ -28,7 +28,7 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 自定义响应列表。
         :type body: dict(str, ResponseInfoResp)
         """
         
@@ -44,6 +44,8 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     def body(self):
         r"""Gets the body of this UpdateGatewayResponseTypeV2Response.
 
+        自定义响应列表。
+
         :return: The body of this UpdateGatewayResponseTypeV2Response.
         :rtype: dict(str, ResponseInfoResp)
         """
@@ -52,6 +54,8 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this UpdateGatewayResponseTypeV2Response.
+
+        自定义响应列表。
 
         :param body: The body of this UpdateGatewayResponseTypeV2Response.
         :type body: dict(str, ResponseInfoResp)

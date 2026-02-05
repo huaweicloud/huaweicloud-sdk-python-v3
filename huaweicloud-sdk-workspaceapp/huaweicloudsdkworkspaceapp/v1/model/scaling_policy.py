@@ -18,17 +18,19 @@ class ScalingPolicy:
         'enable': 'bool',
         'max_scaling_amount': 'int',
         'single_expansion_count': 'int',
-        'scaling_policy_by_session': 'ScalingPolicyBySession'
+        'scaling_policy_by_session': 'ScalingPolicyBySession',
+        'scaling_policy_by_resource': 'ScalingPolicyByResource'
     }
 
     attribute_map = {
         'enable': 'enable',
         'max_scaling_amount': 'max_scaling_amount',
         'single_expansion_count': 'single_expansion_count',
-        'scaling_policy_by_session': 'scaling_policy_by_session'
+        'scaling_policy_by_session': 'scaling_policy_by_session',
+        'scaling_policy_by_resource': 'scaling_policy_by_resource'
     }
 
-    def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None):
+    def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None, scaling_policy_by_resource=None):
         r"""ScalingPolicy
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ScalingPolicy:
         :type single_expansion_count: int
         :param scaling_policy_by_session: 
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
+        :param scaling_policy_by_resource: 
+        :type scaling_policy_by_resource: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
         """
         
         
@@ -49,6 +53,7 @@ class ScalingPolicy:
         self._max_scaling_amount = None
         self._single_expansion_count = None
         self._scaling_policy_by_session = None
+        self._scaling_policy_by_resource = None
         self.discriminator = None
 
         if enable is not None:
@@ -56,6 +61,8 @@ class ScalingPolicy:
         self.max_scaling_amount = max_scaling_amount
         self.single_expansion_count = single_expansion_count
         self.scaling_policy_by_session = scaling_policy_by_session
+        if scaling_policy_by_resource is not None:
+            self.scaling_policy_by_resource = scaling_policy_by_resource
 
     @property
     def enable(self):
@@ -140,6 +147,24 @@ class ScalingPolicy:
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
         """
         self._scaling_policy_by_session = scaling_policy_by_session
+
+    @property
+    def scaling_policy_by_resource(self):
+        r"""Gets the scaling_policy_by_resource of this ScalingPolicy.
+
+        :return: The scaling_policy_by_resource of this ScalingPolicy.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
+        """
+        return self._scaling_policy_by_resource
+
+    @scaling_policy_by_resource.setter
+    def scaling_policy_by_resource(self, scaling_policy_by_resource):
+        r"""Sets the scaling_policy_by_resource of this ScalingPolicy.
+
+        :param scaling_policy_by_resource: The scaling_policy_by_resource of this ScalingPolicy.
+        :type scaling_policy_by_resource: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
+        """
+        self._scaling_policy_by_resource = scaling_policy_by_resource
 
     def to_dict(self):
         result = {}

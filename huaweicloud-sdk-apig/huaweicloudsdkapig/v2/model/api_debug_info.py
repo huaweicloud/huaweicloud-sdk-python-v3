@@ -53,7 +53,7 @@ class ApiDebugInfo:
         :type header: dict(str, list[str])
         :param method: API的请求方法
         :type method: str
-        :param mode: 调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER 调试指定运行环境下的API定义 &gt; DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
+        :param mode: 调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER 调试指定运行环境下的API定义 &gt; DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
         :type mode: str
         :param path: API的请求路径，需以\&quot;/\&quot;开头，最大长度1024 &gt; 须符合路径规范，百分号编码格式可被正确解码
         :type path: str
@@ -61,11 +61,11 @@ class ApiDebugInfo:
         :type query: dict(str, list[str])
         :param scheme: API的请求协议 - HTTP - HTTPS
         :type scheme: str
-        :param app_key: 调试请求使用的APP的key
+        :param app_key: 调试请求使用的APP凭据的key
         :type app_key: str
-        :param app_secret: 调试请求使用的APP的密钥
+        :param app_secret: 调试请求使用的APP凭据的密钥
         :type app_secret: str
-        :param domain: API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER API分组的子域名
+        :param domain: API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER API分组的子域名
         :type domain: str
         :param stage: 调试请求指定的运行环境，仅在mode为CONSUMER时有效，未提供时有如下默认值: - CONSUMER RELEASE
         :type stage: str
@@ -175,7 +175,7 @@ class ApiDebugInfo:
     def mode(self):
         r"""Gets the mode of this ApiDebugInfo.
 
-        调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
+        调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
 
         :return: The mode of this ApiDebugInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class ApiDebugInfo:
     def mode(self, mode):
         r"""Sets the mode of this ApiDebugInfo.
 
-        调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
+        调试模式 - DEVELOPER 调试尚未发布的API定义 - MARKET [调试云商店已购买的API](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER 调试指定运行环境下的API定义 > DEVELOPER模式，接口调用者必须是API拥有者。    [MARKET模式，接口调用者必须是API购买者或拥有者。](tag:hws)    CONSUMER模式，接口调用者必须有API在指定环境上的授权信息或是API拥有者。
 
         :param mode: The mode of this ApiDebugInfo.
         :type mode: str
@@ -263,7 +263,7 @@ class ApiDebugInfo:
     def app_key(self):
         r"""Gets the app_key of this ApiDebugInfo.
 
-        调试请求使用的APP的key
+        调试请求使用的APP凭据的key
 
         :return: The app_key of this ApiDebugInfo.
         :rtype: str
@@ -274,7 +274,7 @@ class ApiDebugInfo:
     def app_key(self, app_key):
         r"""Sets the app_key of this ApiDebugInfo.
 
-        调试请求使用的APP的key
+        调试请求使用的APP凭据的key
 
         :param app_key: The app_key of this ApiDebugInfo.
         :type app_key: str
@@ -285,7 +285,7 @@ class ApiDebugInfo:
     def app_secret(self):
         r"""Gets the app_secret of this ApiDebugInfo.
 
-        调试请求使用的APP的密钥
+        调试请求使用的APP凭据的密钥
 
         :return: The app_secret of this ApiDebugInfo.
         :rtype: str
@@ -296,7 +296,7 @@ class ApiDebugInfo:
     def app_secret(self, app_secret):
         r"""Sets the app_secret of this ApiDebugInfo.
 
-        调试请求使用的APP的密钥
+        调试请求使用的APP凭据的密钥
 
         :param app_secret: The app_secret of this ApiDebugInfo.
         :type app_secret: str
@@ -307,7 +307,7 @@ class ApiDebugInfo:
     def domain(self):
         r"""Gets the domain of this ApiDebugInfo.
 
-        API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER API分组的子域名
+        API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER API分组的子域名
 
         :return: The domain of this ApiDebugInfo.
         :rtype: str
@@ -318,7 +318,7 @@ class ApiDebugInfo:
     def domain(self, domain):
         r"""Sets the domain of this ApiDebugInfo.
 
-        API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk) - CONSUMER API分组的子域名
+        API的访问域名，如果使用自定义入方向端口的特性时，需要带上端口信息，用冒号分隔，例如test.com:8080。 API的访问域名未提供时根据mode的取值使用如下默认值： - DEVELOPER API分组的子域名 - MARKET [云商店为API分组分配的域名](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk,srg,ax) - CONSUMER API分组的子域名
 
         :param domain: The domain of this ApiDebugInfo.
         :type domain: str

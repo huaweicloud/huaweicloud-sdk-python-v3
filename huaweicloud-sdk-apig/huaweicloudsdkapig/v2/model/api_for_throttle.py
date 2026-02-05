@@ -57,7 +57,7 @@ class ApiForThrottle:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: API的认证方式
+        :param auth_type: API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
         :type auth_type: str
         :param group_name: API所属分组的名称
         :type group_name: str
@@ -71,7 +71,7 @@ class ApiForThrottle:
         :type remark: str
         :param run_env_id: 发布的环境id
         :type run_env_id: str
-        :param type: API类型
+        :param type: API类型。 - 1：公有API - 2：私有API 
         :type type: int
         :param throttle_name: 绑定的流控策略名称
         :type throttle_name: str
@@ -148,7 +148,7 @@ class ApiForThrottle:
     def auth_type(self):
         r"""Gets the auth_type of this ApiForThrottle.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :return: The auth_type of this ApiForThrottle.
         :rtype: str
@@ -159,7 +159,7 @@ class ApiForThrottle:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this ApiForThrottle.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this ApiForThrottle.
         :type auth_type: str
@@ -302,7 +302,7 @@ class ApiForThrottle:
     def type(self):
         r"""Gets the type of this ApiForThrottle.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :return: The type of this ApiForThrottle.
         :rtype: int
@@ -313,7 +313,7 @@ class ApiForThrottle:
     def type(self, type):
         r"""Sets the type of this ApiForThrottle.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :param type: The type of this ApiForThrottle.
         :type type: int

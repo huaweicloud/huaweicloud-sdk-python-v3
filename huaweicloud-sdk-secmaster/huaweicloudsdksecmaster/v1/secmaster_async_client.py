@@ -22050,9 +22050,9 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def update_subscription_order_async(self, request):
-        r"""更新订购资源
+        r"""更新订阅资源
 
-        更新订购资源
+        更新订阅资源
         
         Please refer to HUAWEI cloud API Explorer for details.
 

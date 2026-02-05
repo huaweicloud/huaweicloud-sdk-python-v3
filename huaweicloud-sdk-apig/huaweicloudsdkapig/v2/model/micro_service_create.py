@@ -35,7 +35,7 @@ class MicroServiceCreate:
 
         The model defined in huaweicloud sdk
 
-        :param service_type: 微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填
+        :param service_type: 微服务类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
         :type service_type: str
         :param cse_info: 
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSEBase`
@@ -71,7 +71,7 @@ class MicroServiceCreate:
     def service_type(self):
         r"""Gets the service_type of this MicroServiceCreate.
 
-        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填
+        微服务类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
 
         :return: The service_type of this MicroServiceCreate.
         :rtype: str
@@ -82,7 +82,7 @@ class MicroServiceCreate:
     def service_type(self, service_type):
         r"""Sets the service_type of this MicroServiceCreate.
 
-        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填
+        微服务类型。 - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE：CCE云容器引擎（Service）（暂不支持） - NACOS：nacos注册中心，nacos_info必填 
 
         :param service_type: The service_type of this MicroServiceCreate.
         :type service_type: str

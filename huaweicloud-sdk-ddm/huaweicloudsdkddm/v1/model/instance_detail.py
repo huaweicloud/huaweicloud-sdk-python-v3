@@ -44,7 +44,7 @@ class InstanceDetail:
         'only_default_group': 'bool',
         'groups': 'list[DdmGroupInfo]',
         'extend_map': 'dict(str, str)',
-        'tags_info': 'list[TagsInfo]',
+        'tags_info': 'object',
         'admin_user_name': 'str',
         'eip_binding_info': 'object',
         'enable_ssl': 'int'
@@ -91,71 +91,71 @@ class InstanceDetail:
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID。
+        :param id: **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
         :type id: str
-        :param name: 实例名称。
+        :param name: **参数解释**：  实例名称。  **参数范围**：  不涉及。
         :type name: str
-        :param alias: 实例别名。
+        :param alias: **参数解释**：  实例别名。  **参数范围**：  不涉及。
         :type alias: str
-        :param project_id: 项目ID。
+        :param project_id: **参数解释**：  租户在某一Region下的project ID。  获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-ddm/ddm_api_01_0063.html)。  **参数范围**：  只能由英文字母、数字组成，且长度为32个字符。 
         :type project_id: str
-        :param cluster_mode: 集群模式。
+        :param cluster_mode: **参数解释**：  集群模式。  **参数范围**：  不涉及。
         :type cluster_mode: str
-        :param status: 状态。
+        :param status: **参数解释**：  状态。  **参数范围**：  不涉及。
         :type status: str
-        :param bpdomain_id: bpdomain_id
+        :param bpdomain_id: **参数解释**：  bpdomain_id。  **参数范围**：  不涉及。
         :type bpdomain_id: str
-        :param user_id: 账户ID。
+        :param user_id: **参数解释**：  账户ID。  **参数范围**：  不涉及。
         :type user_id: str
-        :param datastore_version: 数据库版本。
+        :param datastore_version: **参数解释**：  数据库版本。  **参数范围**：  不涉及。
         :type datastore_version: str
-        :param datastore_type: 数据库类型。
+        :param datastore_type: **参数解释**：  数据库类型。  **参数范围**：  不涉及。
         :type datastore_type: str
-        :param create_at: 创建时间。
+        :param create_at: **参数解释**：  创建时间。  **参数范围**：  不涉及。
         :type create_at: str
-        :param update_at: 更新时间。
+        :param update_at: **参数解释**：  更新时间。  **参数范围**：  不涉及。
         :type update_at: str
-        :param delete_at: 删除时间。
+        :param delete_at: **参数解释**：  删除时间。  **参数范围**：  不涉及。
         :type delete_at: str
-        :param new_version_available: 是否有版本可升级。
+        :param new_version_available: **参数解释**：  是否有版本可升级。  **参数范围**：  不涉及。
         :type new_version_available: bool
-        :param rollback_version_available: 是否有版本可回滚。
+        :param rollback_version_available: **参数解释**：  是否有版本可回滚。  **参数范围**：  不涉及。
         :type rollback_version_available: bool
-        :param degrade_version_available: 是否有版本可降级。
+        :param degrade_version_available: **参数解释**：  是否有版本可降级。  **参数范围**：  不涉及。
         :type degrade_version_available: bool
-        :param public_ip: 公共ip。
+        :param public_ip: **参数解释**：  公共ip。  **参数范围**：  不涉及。
         :type public_ip: str
-        :param port: 端口。
+        :param port: **参数解释**：  端口。  **参数范围**：  不涉及。
         :type port: str
-        :param create_fail_error_code: 创建失败原因编码。
+        :param create_fail_error_code: **参数解释**：  创建失败原因编码。  **参数范围**：  不涉及。
         :type create_fail_error_code: str
-        :param time_zone: 时区。
+        :param time_zone: **参数解释**：  时区。  **参数范围**：  不涉及。
         :type time_zone: str
-        :param pay_model: 付费模式。
+        :param pay_model: **参数解释**：  付费模式。  **参数范围**：  不涉及。
         :type pay_model: str
-        :param order_id: 订单ID。
+        :param order_id: **参数解释**：  订单ID。  **参数范围**：  不涉及。
         :type order_id: str
-        :param period: 周期。
+        :param period: **参数解释**：  周期。  **参数范围**：  不涉及。
         :type period: int
-        :param is_frozen: 是否冻结。
+        :param is_frozen: **参数解释**：  是否冻结。  **参数范围**：  不涉及。
         :type is_frozen: bool
-        :param frozen_time: 冻结时间。
+        :param frozen_time: **参数解释**：  冻结时间。  **参数范围**：  不涉及。
         :type frozen_time: str
-        :param actions: 锁状态。
+        :param actions: **参数解释**：  锁状态。  **参数范围**：  不涉及。
         :type actions: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
-        :param only_default_group: 是否只有默认组。
+        :param only_default_group: **参数解释**：  是否只有默认组。  **参数范围**：  不涉及。
         :type only_default_group: bool
-        :param groups: 组信息。
+        :param groups: **参数解释**：  组信息。  **参数范围**：  不涉及。
         :type groups: list[:class:`huaweicloudsdkddm.v1.DdmGroupInfo`]
-        :param extend_map: 其他信息。
+        :param extend_map: **参数解释**：  其他信息。  **参数范围**：  不涉及。
         :type extend_map: dict(str, str)
-        :param tags_info: 标签信息。
-        :type tags_info: list[:class:`huaweicloudsdkddm.v1.TagsInfo`]
-        :param admin_user_name: 管理员账号。
+        :param tags_info: **参数解释**：  标签信息。  **参数范围**：  不涉及。
+        :type tags_info: object
+        :param admin_user_name: **参数解释**：  管理员账号。  **参数范围**：  不涉及。
         :type admin_user_name: str
-        :param eip_binding_info: 绑定eip信息。
+        :param eip_binding_info: **参数解释**：  绑定eip信息。  **参数范围**：  不涉及。
         :type eip_binding_info: object
-        :param enable_ssl: 是否支持ssl。
+        :param enable_ssl: **参数解释**：  是否支持ssl。  **参数范围**：  不涉及。
         :type enable_ssl: int
         """
         
@@ -267,7 +267,7 @@ class InstanceDetail:
     def id(self):
         r"""Gets the id of this InstanceDetail.
 
-        实例ID。
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
 
         :return: The id of this InstanceDetail.
         :rtype: str
@@ -278,7 +278,7 @@ class InstanceDetail:
     def id(self, id):
         r"""Sets the id of this InstanceDetail.
 
-        实例ID。
+        **参数解释**：  实例ID，此参数是实例的唯一标识。  **参数范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。
 
         :param id: The id of this InstanceDetail.
         :type id: str
@@ -289,7 +289,7 @@ class InstanceDetail:
     def name(self):
         r"""Gets the name of this InstanceDetail.
 
-        实例名称。
+        **参数解释**：  实例名称。  **参数范围**：  不涉及。
 
         :return: The name of this InstanceDetail.
         :rtype: str
@@ -300,7 +300,7 @@ class InstanceDetail:
     def name(self, name):
         r"""Sets the name of this InstanceDetail.
 
-        实例名称。
+        **参数解释**：  实例名称。  **参数范围**：  不涉及。
 
         :param name: The name of this InstanceDetail.
         :type name: str
@@ -311,7 +311,7 @@ class InstanceDetail:
     def alias(self):
         r"""Gets the alias of this InstanceDetail.
 
-        实例别名。
+        **参数解释**：  实例别名。  **参数范围**：  不涉及。
 
         :return: The alias of this InstanceDetail.
         :rtype: str
@@ -322,7 +322,7 @@ class InstanceDetail:
     def alias(self, alias):
         r"""Sets the alias of this InstanceDetail.
 
-        实例别名。
+        **参数解释**：  实例别名。  **参数范围**：  不涉及。
 
         :param alias: The alias of this InstanceDetail.
         :type alias: str
@@ -333,7 +333,7 @@ class InstanceDetail:
     def project_id(self):
         r"""Gets the project_id of this InstanceDetail.
 
-        项目ID。
+        **参数解释**：  租户在某一Region下的project ID。  获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-ddm/ddm_api_01_0063.html)。  **参数范围**：  只能由英文字母、数字组成，且长度为32个字符。 
 
         :return: The project_id of this InstanceDetail.
         :rtype: str
@@ -344,7 +344,7 @@ class InstanceDetail:
     def project_id(self, project_id):
         r"""Sets the project_id of this InstanceDetail.
 
-        项目ID。
+        **参数解释**：  租户在某一Region下的project ID。  获取方法请参见[获取项目ID](https://support.huaweicloud.com/api-ddm/ddm_api_01_0063.html)。  **参数范围**：  只能由英文字母、数字组成，且长度为32个字符。 
 
         :param project_id: The project_id of this InstanceDetail.
         :type project_id: str
@@ -355,7 +355,7 @@ class InstanceDetail:
     def cluster_mode(self):
         r"""Gets the cluster_mode of this InstanceDetail.
 
-        集群模式。
+        **参数解释**：  集群模式。  **参数范围**：  不涉及。
 
         :return: The cluster_mode of this InstanceDetail.
         :rtype: str
@@ -366,7 +366,7 @@ class InstanceDetail:
     def cluster_mode(self, cluster_mode):
         r"""Sets the cluster_mode of this InstanceDetail.
 
-        集群模式。
+        **参数解释**：  集群模式。  **参数范围**：  不涉及。
 
         :param cluster_mode: The cluster_mode of this InstanceDetail.
         :type cluster_mode: str
@@ -377,7 +377,7 @@ class InstanceDetail:
     def status(self):
         r"""Gets the status of this InstanceDetail.
 
-        状态。
+        **参数解释**：  状态。  **参数范围**：  不涉及。
 
         :return: The status of this InstanceDetail.
         :rtype: str
@@ -388,7 +388,7 @@ class InstanceDetail:
     def status(self, status):
         r"""Sets the status of this InstanceDetail.
 
-        状态。
+        **参数解释**：  状态。  **参数范围**：  不涉及。
 
         :param status: The status of this InstanceDetail.
         :type status: str
@@ -399,7 +399,7 @@ class InstanceDetail:
     def bpdomain_id(self):
         r"""Gets the bpdomain_id of this InstanceDetail.
 
-        bpdomain_id
+        **参数解释**：  bpdomain_id。  **参数范围**：  不涉及。
 
         :return: The bpdomain_id of this InstanceDetail.
         :rtype: str
@@ -410,7 +410,7 @@ class InstanceDetail:
     def bpdomain_id(self, bpdomain_id):
         r"""Sets the bpdomain_id of this InstanceDetail.
 
-        bpdomain_id
+        **参数解释**：  bpdomain_id。  **参数范围**：  不涉及。
 
         :param bpdomain_id: The bpdomain_id of this InstanceDetail.
         :type bpdomain_id: str
@@ -421,7 +421,7 @@ class InstanceDetail:
     def user_id(self):
         r"""Gets the user_id of this InstanceDetail.
 
-        账户ID。
+        **参数解释**：  账户ID。  **参数范围**：  不涉及。
 
         :return: The user_id of this InstanceDetail.
         :rtype: str
@@ -432,7 +432,7 @@ class InstanceDetail:
     def user_id(self, user_id):
         r"""Sets the user_id of this InstanceDetail.
 
-        账户ID。
+        **参数解释**：  账户ID。  **参数范围**：  不涉及。
 
         :param user_id: The user_id of this InstanceDetail.
         :type user_id: str
@@ -443,7 +443,7 @@ class InstanceDetail:
     def datastore_version(self):
         r"""Gets the datastore_version of this InstanceDetail.
 
-        数据库版本。
+        **参数解释**：  数据库版本。  **参数范围**：  不涉及。
 
         :return: The datastore_version of this InstanceDetail.
         :rtype: str
@@ -454,7 +454,7 @@ class InstanceDetail:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this InstanceDetail.
 
-        数据库版本。
+        **参数解释**：  数据库版本。  **参数范围**：  不涉及。
 
         :param datastore_version: The datastore_version of this InstanceDetail.
         :type datastore_version: str
@@ -465,7 +465,7 @@ class InstanceDetail:
     def datastore_type(self):
         r"""Gets the datastore_type of this InstanceDetail.
 
-        数据库类型。
+        **参数解释**：  数据库类型。  **参数范围**：  不涉及。
 
         :return: The datastore_type of this InstanceDetail.
         :rtype: str
@@ -476,7 +476,7 @@ class InstanceDetail:
     def datastore_type(self, datastore_type):
         r"""Sets the datastore_type of this InstanceDetail.
 
-        数据库类型。
+        **参数解释**：  数据库类型。  **参数范围**：  不涉及。
 
         :param datastore_type: The datastore_type of this InstanceDetail.
         :type datastore_type: str
@@ -487,7 +487,7 @@ class InstanceDetail:
     def create_at(self):
         r"""Gets the create_at of this InstanceDetail.
 
-        创建时间。
+        **参数解释**：  创建时间。  **参数范围**：  不涉及。
 
         :return: The create_at of this InstanceDetail.
         :rtype: str
@@ -498,7 +498,7 @@ class InstanceDetail:
     def create_at(self, create_at):
         r"""Sets the create_at of this InstanceDetail.
 
-        创建时间。
+        **参数解释**：  创建时间。  **参数范围**：  不涉及。
 
         :param create_at: The create_at of this InstanceDetail.
         :type create_at: str
@@ -509,7 +509,7 @@ class InstanceDetail:
     def update_at(self):
         r"""Gets the update_at of this InstanceDetail.
 
-        更新时间。
+        **参数解释**：  更新时间。  **参数范围**：  不涉及。
 
         :return: The update_at of this InstanceDetail.
         :rtype: str
@@ -520,7 +520,7 @@ class InstanceDetail:
     def update_at(self, update_at):
         r"""Sets the update_at of this InstanceDetail.
 
-        更新时间。
+        **参数解释**：  更新时间。  **参数范围**：  不涉及。
 
         :param update_at: The update_at of this InstanceDetail.
         :type update_at: str
@@ -531,7 +531,7 @@ class InstanceDetail:
     def delete_at(self):
         r"""Gets the delete_at of this InstanceDetail.
 
-        删除时间。
+        **参数解释**：  删除时间。  **参数范围**：  不涉及。
 
         :return: The delete_at of this InstanceDetail.
         :rtype: str
@@ -542,7 +542,7 @@ class InstanceDetail:
     def delete_at(self, delete_at):
         r"""Sets the delete_at of this InstanceDetail.
 
-        删除时间。
+        **参数解释**：  删除时间。  **参数范围**：  不涉及。
 
         :param delete_at: The delete_at of this InstanceDetail.
         :type delete_at: str
@@ -553,7 +553,7 @@ class InstanceDetail:
     def new_version_available(self):
         r"""Gets the new_version_available of this InstanceDetail.
 
-        是否有版本可升级。
+        **参数解释**：  是否有版本可升级。  **参数范围**：  不涉及。
 
         :return: The new_version_available of this InstanceDetail.
         :rtype: bool
@@ -564,7 +564,7 @@ class InstanceDetail:
     def new_version_available(self, new_version_available):
         r"""Sets the new_version_available of this InstanceDetail.
 
-        是否有版本可升级。
+        **参数解释**：  是否有版本可升级。  **参数范围**：  不涉及。
 
         :param new_version_available: The new_version_available of this InstanceDetail.
         :type new_version_available: bool
@@ -575,7 +575,7 @@ class InstanceDetail:
     def rollback_version_available(self):
         r"""Gets the rollback_version_available of this InstanceDetail.
 
-        是否有版本可回滚。
+        **参数解释**：  是否有版本可回滚。  **参数范围**：  不涉及。
 
         :return: The rollback_version_available of this InstanceDetail.
         :rtype: bool
@@ -586,7 +586,7 @@ class InstanceDetail:
     def rollback_version_available(self, rollback_version_available):
         r"""Sets the rollback_version_available of this InstanceDetail.
 
-        是否有版本可回滚。
+        **参数解释**：  是否有版本可回滚。  **参数范围**：  不涉及。
 
         :param rollback_version_available: The rollback_version_available of this InstanceDetail.
         :type rollback_version_available: bool
@@ -597,7 +597,7 @@ class InstanceDetail:
     def degrade_version_available(self):
         r"""Gets the degrade_version_available of this InstanceDetail.
 
-        是否有版本可降级。
+        **参数解释**：  是否有版本可降级。  **参数范围**：  不涉及。
 
         :return: The degrade_version_available of this InstanceDetail.
         :rtype: bool
@@ -608,7 +608,7 @@ class InstanceDetail:
     def degrade_version_available(self, degrade_version_available):
         r"""Sets the degrade_version_available of this InstanceDetail.
 
-        是否有版本可降级。
+        **参数解释**：  是否有版本可降级。  **参数范围**：  不涉及。
 
         :param degrade_version_available: The degrade_version_available of this InstanceDetail.
         :type degrade_version_available: bool
@@ -619,7 +619,7 @@ class InstanceDetail:
     def public_ip(self):
         r"""Gets the public_ip of this InstanceDetail.
 
-        公共ip。
+        **参数解释**：  公共ip。  **参数范围**：  不涉及。
 
         :return: The public_ip of this InstanceDetail.
         :rtype: str
@@ -630,7 +630,7 @@ class InstanceDetail:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this InstanceDetail.
 
-        公共ip。
+        **参数解释**：  公共ip。  **参数范围**：  不涉及。
 
         :param public_ip: The public_ip of this InstanceDetail.
         :type public_ip: str
@@ -641,7 +641,7 @@ class InstanceDetail:
     def port(self):
         r"""Gets the port of this InstanceDetail.
 
-        端口。
+        **参数解释**：  端口。  **参数范围**：  不涉及。
 
         :return: The port of this InstanceDetail.
         :rtype: str
@@ -652,7 +652,7 @@ class InstanceDetail:
     def port(self, port):
         r"""Sets the port of this InstanceDetail.
 
-        端口。
+        **参数解释**：  端口。  **参数范围**：  不涉及。
 
         :param port: The port of this InstanceDetail.
         :type port: str
@@ -663,7 +663,7 @@ class InstanceDetail:
     def create_fail_error_code(self):
         r"""Gets the create_fail_error_code of this InstanceDetail.
 
-        创建失败原因编码。
+        **参数解释**：  创建失败原因编码。  **参数范围**：  不涉及。
 
         :return: The create_fail_error_code of this InstanceDetail.
         :rtype: str
@@ -674,7 +674,7 @@ class InstanceDetail:
     def create_fail_error_code(self, create_fail_error_code):
         r"""Sets the create_fail_error_code of this InstanceDetail.
 
-        创建失败原因编码。
+        **参数解释**：  创建失败原因编码。  **参数范围**：  不涉及。
 
         :param create_fail_error_code: The create_fail_error_code of this InstanceDetail.
         :type create_fail_error_code: str
@@ -685,7 +685,7 @@ class InstanceDetail:
     def time_zone(self):
         r"""Gets the time_zone of this InstanceDetail.
 
-        时区。
+        **参数解释**：  时区。  **参数范围**：  不涉及。
 
         :return: The time_zone of this InstanceDetail.
         :rtype: str
@@ -696,7 +696,7 @@ class InstanceDetail:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this InstanceDetail.
 
-        时区。
+        **参数解释**：  时区。  **参数范围**：  不涉及。
 
         :param time_zone: The time_zone of this InstanceDetail.
         :type time_zone: str
@@ -707,7 +707,7 @@ class InstanceDetail:
     def pay_model(self):
         r"""Gets the pay_model of this InstanceDetail.
 
-        付费模式。
+        **参数解释**：  付费模式。  **参数范围**：  不涉及。
 
         :return: The pay_model of this InstanceDetail.
         :rtype: str
@@ -718,7 +718,7 @@ class InstanceDetail:
     def pay_model(self, pay_model):
         r"""Sets the pay_model of this InstanceDetail.
 
-        付费模式。
+        **参数解释**：  付费模式。  **参数范围**：  不涉及。
 
         :param pay_model: The pay_model of this InstanceDetail.
         :type pay_model: str
@@ -729,7 +729,7 @@ class InstanceDetail:
     def order_id(self):
         r"""Gets the order_id of this InstanceDetail.
 
-        订单ID。
+        **参数解释**：  订单ID。  **参数范围**：  不涉及。
 
         :return: The order_id of this InstanceDetail.
         :rtype: str
@@ -740,7 +740,7 @@ class InstanceDetail:
     def order_id(self, order_id):
         r"""Sets the order_id of this InstanceDetail.
 
-        订单ID。
+        **参数解释**：  订单ID。  **参数范围**：  不涉及。
 
         :param order_id: The order_id of this InstanceDetail.
         :type order_id: str
@@ -751,7 +751,7 @@ class InstanceDetail:
     def period(self):
         r"""Gets the period of this InstanceDetail.
 
-        周期。
+        **参数解释**：  周期。  **参数范围**：  不涉及。
 
         :return: The period of this InstanceDetail.
         :rtype: int
@@ -762,7 +762,7 @@ class InstanceDetail:
     def period(self, period):
         r"""Sets the period of this InstanceDetail.
 
-        周期。
+        **参数解释**：  周期。  **参数范围**：  不涉及。
 
         :param period: The period of this InstanceDetail.
         :type period: int
@@ -773,7 +773,7 @@ class InstanceDetail:
     def is_frozen(self):
         r"""Gets the is_frozen of this InstanceDetail.
 
-        是否冻结。
+        **参数解释**：  是否冻结。  **参数范围**：  不涉及。
 
         :return: The is_frozen of this InstanceDetail.
         :rtype: bool
@@ -784,7 +784,7 @@ class InstanceDetail:
     def is_frozen(self, is_frozen):
         r"""Sets the is_frozen of this InstanceDetail.
 
-        是否冻结。
+        **参数解释**：  是否冻结。  **参数范围**：  不涉及。
 
         :param is_frozen: The is_frozen of this InstanceDetail.
         :type is_frozen: bool
@@ -795,7 +795,7 @@ class InstanceDetail:
     def frozen_time(self):
         r"""Gets the frozen_time of this InstanceDetail.
 
-        冻结时间。
+        **参数解释**：  冻结时间。  **参数范围**：  不涉及。
 
         :return: The frozen_time of this InstanceDetail.
         :rtype: str
@@ -806,7 +806,7 @@ class InstanceDetail:
     def frozen_time(self, frozen_time):
         r"""Sets the frozen_time of this InstanceDetail.
 
-        冻结时间。
+        **参数解释**：  冻结时间。  **参数范围**：  不涉及。
 
         :param frozen_time: The frozen_time of this InstanceDetail.
         :type frozen_time: str
@@ -817,7 +817,7 @@ class InstanceDetail:
     def actions(self):
         r"""Gets the actions of this InstanceDetail.
 
-        锁状态。
+        **参数解释**：  锁状态。  **参数范围**：  不涉及。
 
         :return: The actions of this InstanceDetail.
         :rtype: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
@@ -828,7 +828,7 @@ class InstanceDetail:
     def actions(self, actions):
         r"""Sets the actions of this InstanceDetail.
 
-        锁状态。
+        **参数解释**：  锁状态。  **参数范围**：  不涉及。
 
         :param actions: The actions of this InstanceDetail.
         :type actions: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
@@ -839,7 +839,7 @@ class InstanceDetail:
     def only_default_group(self):
         r"""Gets the only_default_group of this InstanceDetail.
 
-        是否只有默认组。
+        **参数解释**：  是否只有默认组。  **参数范围**：  不涉及。
 
         :return: The only_default_group of this InstanceDetail.
         :rtype: bool
@@ -850,7 +850,7 @@ class InstanceDetail:
     def only_default_group(self, only_default_group):
         r"""Sets the only_default_group of this InstanceDetail.
 
-        是否只有默认组。
+        **参数解释**：  是否只有默认组。  **参数范围**：  不涉及。
 
         :param only_default_group: The only_default_group of this InstanceDetail.
         :type only_default_group: bool
@@ -861,7 +861,7 @@ class InstanceDetail:
     def groups(self):
         r"""Gets the groups of this InstanceDetail.
 
-        组信息。
+        **参数解释**：  组信息。  **参数范围**：  不涉及。
 
         :return: The groups of this InstanceDetail.
         :rtype: list[:class:`huaweicloudsdkddm.v1.DdmGroupInfo`]
@@ -872,7 +872,7 @@ class InstanceDetail:
     def groups(self, groups):
         r"""Sets the groups of this InstanceDetail.
 
-        组信息。
+        **参数解释**：  组信息。  **参数范围**：  不涉及。
 
         :param groups: The groups of this InstanceDetail.
         :type groups: list[:class:`huaweicloudsdkddm.v1.DdmGroupInfo`]
@@ -883,7 +883,7 @@ class InstanceDetail:
     def extend_map(self):
         r"""Gets the extend_map of this InstanceDetail.
 
-        其他信息。
+        **参数解释**：  其他信息。  **参数范围**：  不涉及。
 
         :return: The extend_map of this InstanceDetail.
         :rtype: dict(str, str)
@@ -894,7 +894,7 @@ class InstanceDetail:
     def extend_map(self, extend_map):
         r"""Sets the extend_map of this InstanceDetail.
 
-        其他信息。
+        **参数解释**：  其他信息。  **参数范围**：  不涉及。
 
         :param extend_map: The extend_map of this InstanceDetail.
         :type extend_map: dict(str, str)
@@ -905,10 +905,10 @@ class InstanceDetail:
     def tags_info(self):
         r"""Gets the tags_info of this InstanceDetail.
 
-        标签信息。
+        **参数解释**：  标签信息。  **参数范围**：  不涉及。
 
         :return: The tags_info of this InstanceDetail.
-        :rtype: list[:class:`huaweicloudsdkddm.v1.TagsInfo`]
+        :rtype: object
         """
         return self._tags_info
 
@@ -916,10 +916,10 @@ class InstanceDetail:
     def tags_info(self, tags_info):
         r"""Sets the tags_info of this InstanceDetail.
 
-        标签信息。
+        **参数解释**：  标签信息。  **参数范围**：  不涉及。
 
         :param tags_info: The tags_info of this InstanceDetail.
-        :type tags_info: list[:class:`huaweicloudsdkddm.v1.TagsInfo`]
+        :type tags_info: object
         """
         self._tags_info = tags_info
 
@@ -927,7 +927,7 @@ class InstanceDetail:
     def admin_user_name(self):
         r"""Gets the admin_user_name of this InstanceDetail.
 
-        管理员账号。
+        **参数解释**：  管理员账号。  **参数范围**：  不涉及。
 
         :return: The admin_user_name of this InstanceDetail.
         :rtype: str
@@ -938,7 +938,7 @@ class InstanceDetail:
     def admin_user_name(self, admin_user_name):
         r"""Sets the admin_user_name of this InstanceDetail.
 
-        管理员账号。
+        **参数解释**：  管理员账号。  **参数范围**：  不涉及。
 
         :param admin_user_name: The admin_user_name of this InstanceDetail.
         :type admin_user_name: str
@@ -949,7 +949,7 @@ class InstanceDetail:
     def eip_binding_info(self):
         r"""Gets the eip_binding_info of this InstanceDetail.
 
-        绑定eip信息。
+        **参数解释**：  绑定eip信息。  **参数范围**：  不涉及。
 
         :return: The eip_binding_info of this InstanceDetail.
         :rtype: object
@@ -960,7 +960,7 @@ class InstanceDetail:
     def eip_binding_info(self, eip_binding_info):
         r"""Sets the eip_binding_info of this InstanceDetail.
 
-        绑定eip信息。
+        **参数解释**：  绑定eip信息。  **参数范围**：  不涉及。
 
         :param eip_binding_info: The eip_binding_info of this InstanceDetail.
         :type eip_binding_info: object
@@ -971,7 +971,7 @@ class InstanceDetail:
     def enable_ssl(self):
         r"""Gets the enable_ssl of this InstanceDetail.
 
-        是否支持ssl。
+        **参数解释**：  是否支持ssl。  **参数范围**：  不涉及。
 
         :return: The enable_ssl of this InstanceDetail.
         :rtype: int
@@ -982,7 +982,7 @@ class InstanceDetail:
     def enable_ssl(self, enable_ssl):
         r"""Sets the enable_ssl of this InstanceDetail.
 
-        是否支持ssl。
+        **参数解释**：  是否支持ssl。  **参数范围**：  不涉及。
 
         :param enable_ssl: The enable_ssl of this InstanceDetail.
         :type enable_ssl: int

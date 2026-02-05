@@ -17,7 +17,7 @@ class ListPolicyTemplateResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'items': 'list[PolicyGroup]'
+        'items': 'list[PolicyGroupForTemplate]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListPolicyTemplateResponse(SdkResponse):
         :param count: 总数。
         :type count: int
         :param items: 策略组列表，返回列表条目数量上限为分页的最大上限值。
-        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`]
+        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroupForTemplate`]
         """
         
         super().__init__()
@@ -76,7 +76,7 @@ class ListPolicyTemplateResponse(SdkResponse):
         策略组列表，返回列表条目数量上限为分页的最大上限值。
 
         :return: The items of this ListPolicyTemplateResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`]
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroupForTemplate`]
         """
         return self._items
 
@@ -87,7 +87,7 @@ class ListPolicyTemplateResponse(SdkResponse):
         策略组列表，返回列表条目数量上限为分页的最大上限值。
 
         :param items: The items of this ListPolicyTemplateResponse.
-        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroup`]
+        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PolicyGroupForTemplate`]
         """
         self._items = items
 

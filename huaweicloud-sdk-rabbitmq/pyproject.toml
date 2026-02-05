@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkrabbitmq"
-version = "3.1.185"
+version = "3.1.186"
 description = "RabbitMQ"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.185"
+    "huaweicloudsdkcore>=3.1.186"
 ]
 
 [project.urls]

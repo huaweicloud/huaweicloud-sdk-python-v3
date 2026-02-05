@@ -17,16 +17,18 @@ class CreateServerImageReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'execute_sysprep': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'execute_sysprep': 'execute_sysprep'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, execute_sysprep=None):
         r"""CreateServerImageReq
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateServerImageReq:
         :type description: str
         :param enterprise_project_id: **⚠ : 此属性是预留字段，不需要传值，目前镜像产物默认属于default企业项目** 镜像所属的企业项目ID，默认属于default企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考“[企业中心总览](https://support.huaweicloud.com/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)”。
         :type enterprise_project_id: str
+        :param execute_sysprep: 是否执行系统封装步骤。
+        :type execute_sysprep: bool
         """
         
         
@@ -44,6 +48,7 @@ class CreateServerImageReq:
         self._name = None
         self._description = None
         self._enterprise_project_id = None
+        self._execute_sysprep = None
         self.discriminator = None
 
         self.name = name
@@ -51,6 +56,8 @@ class CreateServerImageReq:
             self.description = description
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if execute_sysprep is not None:
+            self.execute_sysprep = execute_sysprep
 
     @property
     def name(self):
@@ -117,6 +124,28 @@ class CreateServerImageReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def execute_sysprep(self):
+        r"""Gets the execute_sysprep of this CreateServerImageReq.
+
+        是否执行系统封装步骤。
+
+        :return: The execute_sysprep of this CreateServerImageReq.
+        :rtype: bool
+        """
+        return self._execute_sysprep
+
+    @execute_sysprep.setter
+    def execute_sysprep(self, execute_sysprep):
+        r"""Sets the execute_sysprep of this CreateServerImageReq.
+
+        是否执行系统封装步骤。
+
+        :param execute_sysprep: The execute_sysprep of this CreateServerImageReq.
+        :type execute_sysprep: bool
+        """
+        self._execute_sysprep = execute_sysprep
 
     def to_dict(self):
         result = {}

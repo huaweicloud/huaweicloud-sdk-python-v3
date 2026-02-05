@@ -51,7 +51,7 @@ class ListAclStrategiesV2Request:
         :type id: str
         :param name: ACL策略名称。
         :type name: str
-        :param acl_type: 类型 - PERMIT (白名单类型) - DENY (黑名单类型)
+        :param acl_type: 类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
         :type acl_type: str
         :param entity_type: 作用的对象类型： - IP - DOMAIN
         :type entity_type: str
@@ -201,7 +201,7 @@ class ListAclStrategiesV2Request:
     def acl_type(self):
         r"""Gets the acl_type of this ListAclStrategiesV2Request.
 
-        类型 - PERMIT (白名单类型) - DENY (黑名单类型)
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :return: The acl_type of this ListAclStrategiesV2Request.
         :rtype: str
@@ -212,7 +212,7 @@ class ListAclStrategiesV2Request:
     def acl_type(self, acl_type):
         r"""Sets the acl_type of this ListAclStrategiesV2Request.
 
-        类型 - PERMIT (白名单类型) - DENY (黑名单类型)
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :param acl_type: The acl_type of this ListAclStrategiesV2Request.
         :type acl_type: str

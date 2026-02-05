@@ -44,15 +44,15 @@ class ShowPluginResponse(SdkResponse):
 
         :param plugin_id: 插件编码。
         :type plugin_id: str
-        :param plugin_name: 插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param plugin_name: 插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。 
         :type plugin_name: str
-        :param plugin_type: 插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证
+        :param plugin_type: 插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证 
         :type plugin_type: str
         :param plugin_scope: 插件可见范围。global：全局可见；
         :type plugin_scope: str
-        :param plugin_content: 插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthContent](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容
+        :param plugin_content: 插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthResp](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容 
         :type plugin_content: str
-        :param remark: 插件描述，255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param remark: 插件描述，255字符。 &gt; 中文字符必须为UTF-8或者unicode编码。 
         :type remark: str
         :param create_time: 创建时间。
         :type create_time: datetime
@@ -115,7 +115,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_name(self):
         r"""Gets the plugin_name of this ShowPluginResponse.
 
-        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。 
 
         :return: The plugin_name of this ShowPluginResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this ShowPluginResponse.
 
-        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件名称。支持汉字，英文，数字，中划线，下划线，且只能以英文和汉字开头，3-255字符。 > 中文字符必须为UTF-8或者unicode编码。 
 
         :param plugin_name: The plugin_name of this ShowPluginResponse.
         :type plugin_name: str
@@ -137,7 +137,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_type(self):
         r"""Gets the plugin_type of this ShowPluginResponse.
 
-        插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证
+        插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证 
 
         :return: The plugin_type of this ShowPluginResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_type(self, plugin_type):
         r"""Sets the plugin_type of this ShowPluginResponse.
 
-        插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证
+        插件类型。 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证 - proxy_cache: 响应缓存 - proxy_mirror: 请求镜像 - oidc_auth: OIDC认证 - jwt_auth: JWT认证 
 
         :param plugin_type: The plugin_type of this ShowPluginResponse.
         :type plugin_type: str
@@ -181,7 +181,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_content(self):
         r"""Gets the plugin_content of this ShowPluginResponse.
 
-        插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthContent](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容
+        插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthResp](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容 
 
         :return: The plugin_content of this ShowPluginResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ShowPluginResponse(SdkResponse):
     def plugin_content(self, plugin_content):
         r"""Sets the plugin_content of this ShowPluginResponse.
 
-        插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthContent](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容
+        插件定义内容，支持json。参考提供的具体模型定义  [CorsPluginContent](apig-api-CorsPluginContent.xml)：跨域资源共享 定义内容 [SetRespHeadersContent](apig-api-SetRespHeadersContent.xml)：HTTP响应头管理 定义内容 [KafkaLogContent](apig-api-KafkaLogContent.xml)：Kafka日志推送 定义内容 [BreakerContent](apig-api-BreakerContent.xml)：断路器 定义内容 [RateLimitContent](apig-api-RateLimitContent.xml)：流量控制 定义内容 [ThirdAuthContent](apig-api-ThirdAuthContent.xml)：第三方认证 定义内容 [ProxyCacheContent](apig-api-ProxyCacheContent.xml)：响应缓存 定义内容 [ProxyMirrorContent](apig-api-ProxyMirrorContent.xml)：请求镜像 定义内容 [OIDCAuthResp](apig-api-OIDCAuthContent.xml)：OIDC认证 定义内容 [JWTAuthContent](apig-api-JWTAuthContent.xml)：JWT认证 定义内容 
 
         :param plugin_content: The plugin_content of this ShowPluginResponse.
         :type plugin_content: str
@@ -203,7 +203,7 @@ class ShowPluginResponse(SdkResponse):
     def remark(self):
         r"""Gets the remark of this ShowPluginResponse.
 
-        插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。 
 
         :return: The remark of this ShowPluginResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class ShowPluginResponse(SdkResponse):
     def remark(self, remark):
         r"""Sets the remark of this ShowPluginResponse.
 
-        插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
+        插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。 
 
         :param remark: The remark of this ShowPluginResponse.
         :type remark: str

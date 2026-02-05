@@ -69,7 +69,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
         :type iam_agency_id: str
         :param iam_agency_name: iam委托名称
         :type iam_agency_name: str
-        :param resource_spec_code: 委托空间购买版本
+        :param resource_spec_code: 资源规格编码
         :type resource_spec_code: list[str]
         :param selected: 是否被视图选中
         :type selected: bool
@@ -340,7 +340,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
-        委托空间购买版本
+        资源规格编码
 
         :return: The resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
         :rtype: list[str]
@@ -351,7 +351,7 @@ class CreateWorkspaceResponseBodyWorkspaceAgencyList:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
 
-        委托空间购买版本
+        资源规格编码
 
         :param resource_spec_code: The resource_spec_code of this CreateWorkspaceResponseBodyWorkspaceAgencyList.
         :type resource_spec_code: list[str]

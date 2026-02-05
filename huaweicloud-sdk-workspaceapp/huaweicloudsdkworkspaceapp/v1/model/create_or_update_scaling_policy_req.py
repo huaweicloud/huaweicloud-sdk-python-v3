@@ -19,6 +19,7 @@ class CreateOrUpdateScalingPolicyReq:
         'max_scaling_amount': 'int',
         'single_expansion_count': 'int',
         'scaling_policy_by_session': 'ScalingPolicyBySession',
+        'scaling_policy_by_resource': 'ScalingPolicyByResource',
         'server_group_id': 'str'
     }
 
@@ -27,10 +28,11 @@ class CreateOrUpdateScalingPolicyReq:
         'max_scaling_amount': 'max_scaling_amount',
         'single_expansion_count': 'single_expansion_count',
         'scaling_policy_by_session': 'scaling_policy_by_session',
+        'scaling_policy_by_resource': 'scaling_policy_by_resource',
         'server_group_id': 'server_group_id'
     }
 
-    def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None, server_group_id=None):
+    def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None, scaling_policy_by_resource=None, server_group_id=None):
         r"""CreateOrUpdateScalingPolicyReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateOrUpdateScalingPolicyReq:
         :type single_expansion_count: int
         :param scaling_policy_by_session: 
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
+        :param scaling_policy_by_resource: 
+        :type scaling_policy_by_resource: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
         :param server_group_id: 服务器组唯一标识(仅按需服务器组支持该操作)。
         :type server_group_id: str
         """
@@ -53,6 +57,7 @@ class CreateOrUpdateScalingPolicyReq:
         self._max_scaling_amount = None
         self._single_expansion_count = None
         self._scaling_policy_by_session = None
+        self._scaling_policy_by_resource = None
         self._server_group_id = None
         self.discriminator = None
 
@@ -61,6 +66,8 @@ class CreateOrUpdateScalingPolicyReq:
         self.max_scaling_amount = max_scaling_amount
         self.single_expansion_count = single_expansion_count
         self.scaling_policy_by_session = scaling_policy_by_session
+        if scaling_policy_by_resource is not None:
+            self.scaling_policy_by_resource = scaling_policy_by_resource
         self.server_group_id = server_group_id
 
     @property
@@ -146,6 +153,24 @@ class CreateOrUpdateScalingPolicyReq:
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
         """
         self._scaling_policy_by_session = scaling_policy_by_session
+
+    @property
+    def scaling_policy_by_resource(self):
+        r"""Gets the scaling_policy_by_resource of this CreateOrUpdateScalingPolicyReq.
+
+        :return: The scaling_policy_by_resource of this CreateOrUpdateScalingPolicyReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
+        """
+        return self._scaling_policy_by_resource
+
+    @scaling_policy_by_resource.setter
+    def scaling_policy_by_resource(self, scaling_policy_by_resource):
+        r"""Sets the scaling_policy_by_resource of this CreateOrUpdateScalingPolicyReq.
+
+        :param scaling_policy_by_resource: The scaling_policy_by_resource of this CreateOrUpdateScalingPolicyReq.
+        :type scaling_policy_by_resource: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyByResource`
+        """
+        self._scaling_policy_by_resource = scaling_policy_by_resource
 
     @property
     def server_group_id(self):

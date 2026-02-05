@@ -144,7 +144,7 @@ class ShowServerResponse(SdkResponse):
         :type os_type: str
         :param order_id: 包周期产品的订单ID。
         :type order_id: str
-        :param maintain_status: 是否维护状态。
+        :param maintain_status: 服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
         :type maintain_status: bool
         :param scaling_auto_create: 配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
         :type scaling_auto_create: bool
@@ -712,7 +712,7 @@ class ShowServerResponse(SdkResponse):
     def maintain_status(self):
         r"""Gets the maintain_status of this ShowServerResponse.
 
-        是否维护状态。
+        服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
         :return: The maintain_status of this ShowServerResponse.
         :rtype: bool
@@ -723,7 +723,7 @@ class ShowServerResponse(SdkResponse):
     def maintain_status(self, maintain_status):
         r"""Sets the maintain_status of this ShowServerResponse.
 
-        是否维护状态。
+        服务器维护状态： - true : 维护态的实例。 - false: 非维护态的实例。
 
         :param maintain_status: The maintain_status of this ShowServerResponse.
         :type maintain_status: bool

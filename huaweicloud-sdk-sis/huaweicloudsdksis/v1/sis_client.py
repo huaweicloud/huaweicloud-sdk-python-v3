@@ -163,6 +163,71 @@ class SisClient(Client):
 
         return http_info
 
+    def create_voice(self, request):
+        r"""注册接口
+
+        客户上传一段录音，并指定voice_name，在系统中注册声音。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVoice
+        :type request: :class:`huaweicloudsdksis.v1.CreateVoiceRequest`
+        :rtype: :class:`huaweicloudsdksis.v1.CreateVoiceResponse`
+        """
+        http_info = self._create_voice_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_voice_invoker(self, request):
+        http_info = self._create_voice_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_voice_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/vcs/voices",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVoiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_vocabulary(self, request):
         r"""删除热词表
 
@@ -201,6 +266,138 @@ class SisClient(Client):
             path_params['vocabulary_id'] = local_var_params['vocabulary_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_speech(self, request):
+        r"""合成接口
+
+        用户指定一个声色名称，并指定对应的文本，合成对应的复刻的声音
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GenerateSpeech
+        :type request: :class:`huaweicloudsdksis.v1.GenerateSpeechRequest`
+        :rtype: :class:`huaweicloudsdksis.v1.GenerateSpeechResponse`
+        """
+        http_info = self._generate_speech_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_speech_invoker(self, request):
+        http_info = self._generate_speech_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _generate_speech_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/vcs/voices/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateSpeechResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_voices(self, request):
+        r"""查询接口
+
+        查询已注册的声音列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVoices
+        :type request: :class:`huaweicloudsdksis.v1.ListVoicesRequest`
+        :rtype: :class:`huaweicloudsdksis.v1.ListVoicesResponse`
+        """
+        http_info = self._list_voices_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_voices_invoker(self, request):
+        http_info = self._list_voices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_voices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vcs/voices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVoicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

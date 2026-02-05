@@ -55,9 +55,9 @@ class OrderInfoReq:
         :type product_list: list[:class:`huaweicloudsdksecmaster.v1.Product`]
         :param config: 
         :type config: :class:`huaweicloudsdksecmaster.v1.OrderConfig`
-        :param period_type: 当scene&#x3D;PREPAID时需要填写，订购周期类型： 2：月； 3：年；
+        :param period_type: 当scene&#x3D;PREPAID时需要填写，订阅周期类型： 2：月； 3：年；
         :type period_type: int
-        :param period_num: 订购周期数，当scene&#x3D;PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type&#x3D;2时，其可选范围为[1, 9]，当period_type&#x3D;3，其可选范围为[1, 3]
+        :param period_num: 订阅周期数，当scene&#x3D;PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type&#x3D;2时，其可选范围为[1, 9]，当period_type&#x3D;3，其可选范围为[1, 3]
         :type period_num: int
         :param is_auto_renew: 当scene&#x3D;PREPAID时，当前字段必填，是否自动续订，为空时表示不自动续订； 1：自动续订 0：不自动续订（默认）
         :type is_auto_renew: int
@@ -225,7 +225,7 @@ class OrderInfoReq:
     def period_type(self):
         r"""Gets the period_type of this OrderInfoReq.
 
-        当scene=PREPAID时需要填写，订购周期类型： 2：月； 3：年；
+        当scene=PREPAID时需要填写，订阅周期类型： 2：月； 3：年；
 
         :return: The period_type of this OrderInfoReq.
         :rtype: int
@@ -236,7 +236,7 @@ class OrderInfoReq:
     def period_type(self, period_type):
         r"""Sets the period_type of this OrderInfoReq.
 
-        当scene=PREPAID时需要填写，订购周期类型： 2：月； 3：年；
+        当scene=PREPAID时需要填写，订阅周期类型： 2：月； 3：年；
 
         :param period_type: The period_type of this OrderInfoReq.
         :type period_type: int
@@ -247,7 +247,7 @@ class OrderInfoReq:
     def period_num(self):
         r"""Gets the period_num of this OrderInfoReq.
 
-        订购周期数，当scene=PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type=2时，其可选范围为[1, 9]，当period_type=3，其可选范围为[1, 3]
+        订阅周期数，当scene=PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type=2时，其可选范围为[1, 9]，当period_type=3，其可选范围为[1, 3]
 
         :return: The period_num of this OrderInfoReq.
         :rtype: int
@@ -258,7 +258,7 @@ class OrderInfoReq:
     def period_num(self, period_num):
         r"""Sets the period_num of this OrderInfoReq.
 
-        订购周期数，当scene=PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type=2时，其可选范围为[1, 9]，当period_type=3，其可选范围为[1, 3]
+        订阅周期数，当scene=PREPAID时需要填写该值 取值大于0；小于等于0会报错。 当period_type=2时，其可选范围为[1, 9]，当period_type=3，其可选范围为[1, 3]
 
         :param period_num: The period_num of this OrderInfoReq.
         :type period_num: int

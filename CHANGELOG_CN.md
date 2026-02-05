@@ -1,3 +1,352 @@
+# 3.1.186 2026-02-05
+
+### HuaweiCloud SDK APIG
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListAiApiKeys`、`CreateAiApiKey`、`ShowDetailsOfAiApiKey`、`DeleteAiApiKey`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDetailsOfAppV2**
+    - 响应参数变更
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **UpdateAppV2**
+    - 请求参数变更
+      - `+ related_domain_id`
+      - `+ related_project_id`
+  - **ResettingAppSecretV2**
+    - 响应参数变更
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **AssociateCertificateV2**
+    - 响应参数变更
+      - `+ api_group_id`
+      - `+ instance_id`
+      - `+ api_group_name`
+      - `- ssl_infos`
+  - **ShowDetailsOfAclPolicyV2**
+    - 响应参数变更
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **UpdateAclStrategyV2**
+    - 响应参数变更
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **AddEipV2**
+    - 响应参数变更
+      - `+ eip_status: enum value [FREEZED,BIND_ERROR,BINDING,PENDING_DELETE,PENDING_CREATE,NOTIFYING,NOTIFY_DELETE,PENDING_UPDATE,DOWN,ACTIVE,ELB,VPN,ERROR]`
+  - **AssociateSignatureKeyV2**
+    - 响应参数变更
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListSignatureKeysBindedToApiV2**
+    - 响应参数变更
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListApisNotBoundWithSignatureKeyV2**
+    - 响应参数变更
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **ListApisBindedToSignatureKeyV2**
+    - 响应参数变更
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListApisBindedToRequestThrottlingPolicyV2**
+    - 响应参数变更
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **ListApisUnbindedToRequestThrottlingPolicyV2**
+    - 响应参数变更
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **CreateAnAppV2**
+    - 请求参数变更
+      - `+ related_domain_id`
+      - `+ related_project_id`
+    - 响应参数变更
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **ListAppsV2**
+    - 请求参数变更
+      - `+ related_domain_id`
+      - `+ related_project_id`
+      - `+ status: enum value [1]`
+    - 响应参数变更
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+      - `- apps.app_type: enum value [roma]`
+  - **ListAppsBindedToApiV2**
+    - 响应参数变更
+      - `+ auths.api_type: enum value [1,2]`
+  - **ListApisBindedToAppV2**
+    - 响应参数变更
+      - `+ auths.api_type: enum value [1,2]`
+  - **ListApisUnbindedToAppV2**
+    - 响应参数变更
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+  - **CreateAclStrategyV2**
+    - 响应参数变更
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **ListAclStrategiesV2**
+    - 请求参数变更
+      - `+ acl_type: enum value [PERMIT,DENY]`
+    - 响应参数变更
+      - `+ acls.acl_type: enum value [PERMIT,DENY]`
+  - **ListApisBindedToAclPolicyV2**
+    - 响应参数变更
+      - `* apis.api_type: int64 -> int32`
+  - **ListApisUnbindedToAclPolicyV2**
+    - 响应参数变更
+      - `+ apis.type: enum value [1,2]`
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+  - **ListLatelyApiStatisticsV2**
+    - 响应参数变更
+      - `+ list.status: enum value [1]`
+  - **ListAppQuotaBoundApps**
+    - 响应参数变更
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+  - **ListAppQuotaBindableApps**
+    - 响应参数变更
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+  - **ShowDetailsOfApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **UpdateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **ListCustomAuthorizersV2**
+    - 请求参数变更
+      - `+ type: enum value [FRONTEND,BACKEND]`
+  - **CreateApiGroupV2**
+    - 响应参数变更
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **ListApiGroupsV2**
+    - 响应参数变更
+      - `+ groups.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* groups.url_domains.ssl_infos.type: string -> int32`
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ backend_api.vpc_channel_status: enum value [3,4]`
+    - 响应参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ backend_api.vpc_channel_status: enum value [3,4]`
+    - 响应参数变更
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **ListApisV2**
+    - 请求参数变更
+      - `+ auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ type: enum value [1,2]`
+    - 响应参数变更
+      - `+ apis.backend_api.member_group_url_infos`
+      - `+ apis.api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* apis.api_group_info.url_domains.ssl_infos.type: string -> int32`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchModifyReadWriteStrategy`
+    - `ListSqlBlack`
+    - `ModifySqlBlackList`
+    - `ListSlowLogAnalysis`
+    - `ShowIpGroup`
+    - `SwitchIpGroup`
+    - `ShowMigrationLog`
+    - `CheckDataNodeConnection`
+    - `ListDdms`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckDataNodeConnectionV0V3`
+  - **ListConfigurationApplyHistories**
+    - 响应参数变更
+      - `+ total`
+      - `+ histories`
+      - `- rds_check_infos`
+  - **CopyConfiguration**
+    - 请求参数变更
+      - `+ new_name`
+      - `+ description`
+      - `- copy_para`
+      - `- source_id`
+  - **ListInstancesConfigurations**
+    - 响应参数变更
+      - `+ total`
+      - `- instance_count_limit`
+      - `+ entities.instance_id`
+      - `+ entities.instance_name`
+      - `- entities.entity_id`
+      - `- entities.config_id`
+  - **CompareParameterGroups**
+    - 请求参数变更
+      - `+ source_id`
+      - `+ target_id`
+      - `- diff_para`
+  - **ShowDdmDetail**
+    - 响应参数变更
+      - `* instances.tags_info: list<TagsInfo> -> object`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`DeleteBackupSelection`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SecMaster
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCollectConfig**
+    - 响应参数变更
+      - `+ config_statistics`
+      - `- cofing_statistics`
+      - `+ all_vendors.csvc_list.source_list.csvc_help`
+      - `- all_vendors.csvc_list.source_list.csvc_hzzelp`
+      - `+ data_list.datasets.reference.csvc_help`
+      - `- data_list.datasets.reference.csvc_hzzelp`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `CheckPublishApp`
+    - `ChangeCluster`
+    - `ListHotspotSessionConfig`
+    - `CreateHotspotSessionConfig`
+    - `UpdateHotspotSessionConfig`
+    - `ListNonMigrationUsers`
+    - `UpdateNonMigrationUsers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowPrivacyStatement`、`SignPrivacyStatement`
+  - **RecreateServerImage**
+    - 请求参数变更
+      - `+ execute_sysprep`
+  - **ListAppConnection**
+    - 响应参数变更
+      - `+ items.app_id`
+  - **ShowScalingPolicy**
+    - 响应参数变更
+      - `+ scaling_policy_by_resource`
+  - **CreateOrUpdateScalingPolicy**
+    - 请求参数变更
+      - `+ scaling_policy_by_resource`
+    - 响应参数变更
+      - `+ scaling_policy_by_resource`
+  - **ListProjectConfigs**
+    - 响应参数变更
+      - `+ items.cluster_group_id`
+  - **ShowProjectConfig**
+    - 响应参数变更
+      - `+ project_config.cluster_group_id`
+  - **CreateCloudStorage**
+    - 请求参数变更
+      - `+ project_config_cluster_group_id_list`
+      - `- project_config_ids`
+  - **ListCloudStorage**
+    - 响应参数变更
+      - `+ items.cluster_group_id`
+  - **ShowServerGroup**
+    - 响应参数变更
+      - `+ scaling_policy_by_resource`
+      - `+ scaling_policy.scaling_policy_by_resource`
+  - **CreateImageServer**
+    - 请求参数变更
+      - `+ X-Linked-Id`
+  - **CreateServerGroup**
+    - 响应参数变更
+      - `+ scaling_policy_by_resource`
+      - `+ scaling_policy.scaling_policy_by_resource`
+  - **ListServerGroups**
+    - 响应参数变更
+      - `+ scaling_policy_by_resource`
+      - `+ items.scaling_policy.scaling_policy_by_resource`
+  - **ShowOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.user_profile_management`
+  - **ListPolicyOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.user_profile_management`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ items.policies.user_profile_management`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.user_profile_management`
+  - **ShowPolicyGroup**
+    - 响应参数变更
+      - `+ policy_group.policies.user_profile_management`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.user_profile_management`
+  - **ListPolicyGroupDetailInfo**
+    - 响应参数变更
+      - `+ items.policies.user_profile_management`
+  - **ListPolicyTemplate**
+    - 响应参数变更
+      - `- items.targets`
+      - `- items.policies`
+      - `* items: list<PolicyGroup> -> list<PolicyGroupForTemplate>`
+  - **CreatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.user_profile_management`
+  - **UpdatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.user_profile_management`
+
 # 3.1.185 2026-01-29
 
 ### HuaweiCloud SDK BSS

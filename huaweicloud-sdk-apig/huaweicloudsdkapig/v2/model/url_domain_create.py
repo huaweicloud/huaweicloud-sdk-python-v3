@@ -43,7 +43,7 @@ class UrlDomainCreate:
         :type ingress_http_port: int
         :param ingress_https_port: 访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
         :type ingress_https_port: int
-        :param url_domain: 自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则&#39;^(\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$&#39;或者符合正则&#39;^\\[*](\\\\.\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$&#39;）。
+        :param url_domain: 自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则&#39;^(\\[a-zA-Z0-9]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$&#39;或者符合正则&#39;^\\[*](\\\\.\\[a-zA-Z0-9_]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$&#39;）。
         :type url_domain: str
         """
         
@@ -159,7 +159,7 @@ class UrlDomainCreate:
     def url_domain(self):
         r"""Gets the url_domain of this UrlDomainCreate.
 
-        自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则'^(\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$'或者符合正则'^\\[*](\\\\.\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$'）。
+        自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则'^(\\[a-zA-Z0-9]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$'或者符合正则'^\\[*](\\\\.\\[a-zA-Z0-9_]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$'）。
 
         :return: The url_domain of this UrlDomainCreate.
         :rtype: str
@@ -170,7 +170,7 @@ class UrlDomainCreate:
     def url_domain(self, url_domain):
         r"""Sets the url_domain of this UrlDomainCreate.
 
-        自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则'^(\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$'或者符合正则'^\\[*](\\\\.\\[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$'）。
+        自定义域名。长度为0-255位的字符串，需要符合域名规范（即符合正则'^(\\[a-zA-Z0-9]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?\\\\.){1,7}[a-zA-Z]{2,64}\\\\.?$'或者符合正则'^\\[*](\\\\.\\[a-zA-Z0-9_]([a-zA-Z0-9-_]{0,61}[a-zA-Z0-9_])?){1,6}\\\\.[a-zA-Z]{2,64}\\\\.?$'）。
 
         :param url_domain: The url_domain of this UrlDomainCreate.
         :type url_domain: str

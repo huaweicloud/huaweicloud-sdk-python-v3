@@ -22,6 +22,7 @@ class ApiPolicyHttpCreate:
         'timeout': 'int',
         'retry_count': 'str',
         'enable_sm_channel': 'bool',
+        'member_group_url_infos': 'list[MemberGroupUrlInfo]',
         'effect_mode': 'str',
         'name': 'str',
         'backend_params': 'list[BackendParamBase]',
@@ -39,6 +40,7 @@ class ApiPolicyHttpCreate:
         'timeout': 'timeout',
         'retry_count': 'retry_count',
         'enable_sm_channel': 'enable_sm_channel',
+        'member_group_url_infos': 'member_group_url_infos',
         'effect_mode': 'effect_mode',
         'name': 'name',
         'backend_params': 'backend_params',
@@ -48,18 +50,18 @@ class ApiPolicyHttpCreate:
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, enable_sm_channel=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, retry_count=None, enable_sm_channel=None, member_group_url_infos=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, vpc_channel_info=None, vpc_channel_status=None):
         r"""ApiPolicyHttpCreate
 
         The model defined in huaweicloud sdk
 
         :param url_domain: 策略后端的Endpoint。  由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。
         :type url_domain: str
-        :param req_protocol: 请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC时可选GRPC、GRPCS
+        :param req_protocol: 请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC&amp;GRPCS时可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
         :type req_protocol: str
-        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
+        :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC&amp;GRPCS时固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        :param req_uri: 请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/ 
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -67,6 +69,8 @@ class ApiPolicyHttpCreate:
         :type retry_count: str
         :param enable_sm_channel: 是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
         :type enable_sm_channel: bool
+        :param member_group_url_infos: 后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+        :type member_group_url_infos: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
         :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
         :type effect_mode: str
         :param name: 策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
@@ -79,7 +83,7 @@ class ApiPolicyHttpCreate:
         :type authorizer_id: str
         :param vpc_channel_info: 
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
-        :param vpc_channel_status: 是否使用VPC通道 - 1 : 使用VPC通道 - 2 : 不使用VPC通道
+        :param vpc_channel_status: 负载类型。 - 1: 使用VPC通道，单模后端 - 2: 不使用VPC通道 - 3：livedata（暂不支持） - 4：使用VPC通道，多模后端 
         :type vpc_channel_status: int
         """
         
@@ -92,6 +96,7 @@ class ApiPolicyHttpCreate:
         self._timeout = None
         self._retry_count = None
         self._enable_sm_channel = None
+        self._member_group_url_infos = None
         self._effect_mode = None
         self._name = None
         self._backend_params = None
@@ -103,15 +108,20 @@ class ApiPolicyHttpCreate:
 
         if url_domain is not None:
             self.url_domain = url_domain
-        self.req_protocol = req_protocol
-        self.req_method = req_method
-        self.req_uri = req_uri
+        if req_protocol is not None:
+            self.req_protocol = req_protocol
+        if req_method is not None:
+            self.req_method = req_method
+        if req_uri is not None:
+            self.req_uri = req_uri
         if timeout is not None:
             self.timeout = timeout
         if retry_count is not None:
             self.retry_count = retry_count
         if enable_sm_channel is not None:
             self.enable_sm_channel = enable_sm_channel
+        if member_group_url_infos is not None:
+            self.member_group_url_infos = member_group_url_infos
         self.effect_mode = effect_mode
         self.name = name
         if backend_params is not None:
@@ -150,7 +160,7 @@ class ApiPolicyHttpCreate:
     def req_protocol(self):
         r"""Gets the req_protocol of this ApiPolicyHttpCreate.
 
-        请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC时可选GRPC、GRPCS
+        请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC&GRPCS时可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :return: The req_protocol of this ApiPolicyHttpCreate.
         :rtype: str
@@ -161,7 +171,7 @@ class ApiPolicyHttpCreate:
     def req_protocol(self, req_protocol):
         r"""Sets the req_protocol of this ApiPolicyHttpCreate.
 
-        请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC时可选GRPC、GRPCS
+        请求协议：HTTP、HTTPS、GRPC、GRPCS，后端类型为GRPC&GRPCS时可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :param req_protocol: The req_protocol of this ApiPolicyHttpCreate.
         :type req_protocol: str
@@ -172,7 +182,7 @@ class ApiPolicyHttpCreate:
     def req_method(self):
         r"""Gets the req_method of this ApiPolicyHttpCreate.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC&GRPCS时固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :return: The req_method of this ApiPolicyHttpCreate.
         :rtype: str
@@ -183,7 +193,7 @@ class ApiPolicyHttpCreate:
     def req_method(self, req_method):
         r"""Sets the req_method of this ApiPolicyHttpCreate.
 
-        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC时固定为POST
+        请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY，后端类型为GRPC&GRPCS时固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :param req_method: The req_method of this ApiPolicyHttpCreate.
         :type req_method: str
@@ -194,7 +204,7 @@ class ApiPolicyHttpCreate:
     def req_uri(self):
         r"""Gets the req_uri of this ApiPolicyHttpCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/ 
 
         :return: The req_uri of this ApiPolicyHttpCreate.
         :rtype: str
@@ -205,7 +215,7 @@ class ApiPolicyHttpCreate:
     def req_uri(self, req_uri):
         r"""Sets the req_uri of this ApiPolicyHttpCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/ 
 
         :param req_uri: The req_uri of this ApiPolicyHttpCreate.
         :type req_uri: str
@@ -277,6 +287,28 @@ class ApiPolicyHttpCreate:
         :type enable_sm_channel: bool
         """
         self._enable_sm_channel = enable_sm_channel
+
+    @property
+    def member_group_url_infos(self):
+        r"""Gets the member_group_url_infos of this ApiPolicyHttpCreate.
+
+        后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+
+        :return: The member_group_url_infos of this ApiPolicyHttpCreate.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
+        """
+        return self._member_group_url_infos
+
+    @member_group_url_infos.setter
+    def member_group_url_infos(self, member_group_url_infos):
+        r"""Sets the member_group_url_infos of this ApiPolicyHttpCreate.
+
+        后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+
+        :param member_group_url_infos: The member_group_url_infos of this ApiPolicyHttpCreate.
+        :type member_group_url_infos: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
+        """
+        self._member_group_url_infos = member_group_url_infos
 
     @property
     def effect_mode(self):
@@ -410,7 +442,7 @@ class ApiPolicyHttpCreate:
     def vpc_channel_status(self):
         r"""Gets the vpc_channel_status of this ApiPolicyHttpCreate.
 
-        是否使用VPC通道 - 1 : 使用VPC通道 - 2 : 不使用VPC通道
+        负载类型。 - 1: 使用VPC通道，单模后端 - 2: 不使用VPC通道 - 3：livedata（暂不支持） - 4：使用VPC通道，多模后端 
 
         :return: The vpc_channel_status of this ApiPolicyHttpCreate.
         :rtype: int
@@ -421,7 +453,7 @@ class ApiPolicyHttpCreate:
     def vpc_channel_status(self, vpc_channel_status):
         r"""Sets the vpc_channel_status of this ApiPolicyHttpCreate.
 
-        是否使用VPC通道 - 1 : 使用VPC通道 - 2 : 不使用VPC通道
+        负载类型。 - 1: 使用VPC通道，单模后端 - 2: 不使用VPC通道 - 3：livedata（暂不支持） - 4：使用VPC通道，多模后端 
 
         :param vpc_channel_status: The vpc_channel_status of this ApiPolicyHttpCreate.
         :type vpc_channel_status: int

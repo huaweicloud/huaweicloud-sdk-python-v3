@@ -41,13 +41,13 @@ class VolumeTypeInfo:
 
         :param resource_spec_code: 资源规格编码。
         :type resource_spec_code: str
-        :param volume_type: 磁盘类型。
+        :param volume_type: 磁盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
         :type volume_type: str
-        :param volume_product_type: 磁盘产品类型。
+        :param volume_product_type: 磁盘产品类型： - workspace
         :type volume_product_type: str
-        :param resource_type: 资源类型字段。
+        :param resource_type: 资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
         :type resource_type: str
-        :param cloud_service_type: 资源所属云服务类型编码。
+        :param cloud_service_type: 资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
         :type cloud_service_type: str
         :param name: 磁盘中英文名称。
         :type name: list[dict(str, str)]
@@ -107,7 +107,7 @@ class VolumeTypeInfo:
     def volume_type(self):
         r"""Gets the volume_type of this VolumeTypeInfo.
 
-        磁盘类型。
+        磁盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
 
         :return: The volume_type of this VolumeTypeInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class VolumeTypeInfo:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this VolumeTypeInfo.
 
-        磁盘类型。
+        磁盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
 
         :param volume_type: The volume_type of this VolumeTypeInfo.
         :type volume_type: str
@@ -129,7 +129,7 @@ class VolumeTypeInfo:
     def volume_product_type(self):
         r"""Gets the volume_product_type of this VolumeTypeInfo.
 
-        磁盘产品类型。
+        磁盘产品类型： - workspace
 
         :return: The volume_product_type of this VolumeTypeInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class VolumeTypeInfo:
     def volume_product_type(self, volume_product_type):
         r"""Sets the volume_product_type of this VolumeTypeInfo.
 
-        磁盘产品类型。
+        磁盘产品类型： - workspace
 
         :param volume_product_type: The volume_product_type of this VolumeTypeInfo.
         :type volume_product_type: str
@@ -151,7 +151,7 @@ class VolumeTypeInfo:
     def resource_type(self):
         r"""Gets the resource_type of this VolumeTypeInfo.
 
-        资源类型字段。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :return: The resource_type of this VolumeTypeInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class VolumeTypeInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this VolumeTypeInfo.
 
-        资源类型字段。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :param resource_type: The resource_type of this VolumeTypeInfo.
         :type resource_type: str
@@ -173,7 +173,7 @@ class VolumeTypeInfo:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this VolumeTypeInfo.
 
-        资源所属云服务类型编码。
+        资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
 
         :return: The cloud_service_type of this VolumeTypeInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class VolumeTypeInfo:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this VolumeTypeInfo.
 
-        资源所属云服务类型编码。
+        资源所属云服务类型编码： - hws.service.type.vdi - hws.service.type.marketplace
 
         :param cloud_service_type: The cloud_service_type of this VolumeTypeInfo.
         :type cloud_service_type: str

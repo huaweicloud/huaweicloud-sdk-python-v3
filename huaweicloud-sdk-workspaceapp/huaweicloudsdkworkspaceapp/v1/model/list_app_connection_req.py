@@ -87,7 +87,7 @@ class ListAppConnectionReq:
         :type client_name: str
         :param client_version: 客户端版本。
         :type client_version: str
-        :param client_type: 客户端操作系统类型。
+        :param client_type: 客户端操作系统类型： - Windows - Mac
         :type client_type: str
         :param agent_version: aps hda版本。
         :type agent_version: str
@@ -99,9 +99,9 @@ class ListAppConnectionReq:
         :type public_ip: str
         :param tenant_id: 租户id。
         :type tenant_id: str
-        :param brokering_start_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        :param brokering_start_time: 登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type brokering_start_time: datetime
-        :param brokering_end_time: 登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        :param brokering_end_time: 登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type brokering_end_time: datetime
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
@@ -418,7 +418,7 @@ class ListAppConnectionReq:
     def client_type(self):
         r"""Gets the client_type of this ListAppConnectionReq.
 
-        客户端操作系统类型。
+        客户端操作系统类型： - Windows - Mac
 
         :return: The client_type of this ListAppConnectionReq.
         :rtype: str
@@ -429,7 +429,7 @@ class ListAppConnectionReq:
     def client_type(self, client_type):
         r"""Sets the client_type of this ListAppConnectionReq.
 
-        客户端操作系统类型。
+        客户端操作系统类型： - Windows - Mac
 
         :param client_type: The client_type of this ListAppConnectionReq.
         :type client_type: str
@@ -550,7 +550,7 @@ class ListAppConnectionReq:
     def brokering_start_time(self):
         r"""Gets the brokering_start_time of this ListAppConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The brokering_start_time of this ListAppConnectionReq.
         :rtype: datetime
@@ -561,7 +561,7 @@ class ListAppConnectionReq:
     def brokering_start_time(self, brokering_start_time):
         r"""Sets the brokering_start_time of this ListAppConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param brokering_start_time: The brokering_start_time of this ListAppConnectionReq.
         :type brokering_start_time: datetime
@@ -572,7 +572,7 @@ class ListAppConnectionReq:
     def brokering_end_time(self):
         r"""Gets the brokering_end_time of this ListAppConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The brokering_end_time of this ListAppConnectionReq.
         :rtype: datetime
@@ -583,7 +583,7 @@ class ListAppConnectionReq:
     def brokering_end_time(self, brokering_end_time):
         r"""Sets the brokering_end_time of this ListAppConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中brokering_start_time与brokering_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param brokering_end_time: The brokering_end_time of this ListAppConnectionReq.
         :type brokering_end_time: datetime

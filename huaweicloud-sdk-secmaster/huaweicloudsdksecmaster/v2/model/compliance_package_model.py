@@ -104,7 +104,8 @@ class CompliancePackageModel:
             self.owner = owner
         if spec_catalog_vo_list is not None:
             self.spec_catalog_vo_list = spec_catalog_vo_list
-        self.description = description
+        if description is not None:
+            self.description = description
         if classify is not None:
             self.classify = classify
         if areas is not None:

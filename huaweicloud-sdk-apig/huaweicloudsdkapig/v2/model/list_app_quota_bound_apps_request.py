@@ -43,7 +43,7 @@ class ListAppQuotaBoundAppsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
         :type limit: int
-        :param app_name: 凭据名称
+        :param app_name: APP凭据名称。
         :type app_name: str
         """
         
@@ -157,7 +157,7 @@ class ListAppQuotaBoundAppsRequest:
     def app_name(self):
         r"""Gets the app_name of this ListAppQuotaBoundAppsRequest.
 
-        凭据名称
+        APP凭据名称。
 
         :return: The app_name of this ListAppQuotaBoundAppsRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListAppQuotaBoundAppsRequest:
     def app_name(self, app_name):
         r"""Sets the app_name of this ListAppQuotaBoundAppsRequest.
 
-        凭据名称
+        APP凭据名称。
 
         :param app_name: The app_name of this ListAppQuotaBoundAppsRequest.
         :type app_name: str

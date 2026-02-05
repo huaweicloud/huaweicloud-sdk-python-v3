@@ -35,7 +35,7 @@ class Product:
         :type resource_type: str
         :param resource_spec_code: 资源规格编码
         :type resource_spec_code: str
-        :param resource_size: 订购数量
+        :param resource_size: 订阅数量
         :type resource_size: int
         """
         
@@ -98,7 +98,7 @@ class Product:
     def resource_size(self):
         r"""Gets the resource_size of this Product.
 
-        订购数量
+        订阅数量
 
         :return: The resource_size of this Product.
         :rtype: int
@@ -109,7 +109,7 @@ class Product:
     def resource_size(self, resource_size):
         r"""Sets the resource_size of this Product.
 
-        订购数量
+        订阅数量
 
         :param resource_size: The resource_size of this Product.
         :type resource_size: int

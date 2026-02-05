@@ -51,7 +51,7 @@ class CoditionResp:
 
         :param req_param_name: 关联的请求参数对象名称。策略类型为param时必选
         :type req_param_name: str
-        :param sys_param_name: 系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        :param sys_param_name: 系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
         :type sys_param_name: str
         :param cookie_param_name: COOKIE参数名称。策略类型为cookie时必选
         :type cookie_param_name: str
@@ -140,7 +140,7 @@ class CoditionResp:
     def sys_param_name(self):
         r"""Gets the sys_param_name of this CoditionResp.
 
-        系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
         :return: The sys_param_name of this CoditionResp.
         :rtype: str
@@ -151,7 +151,7 @@ class CoditionResp:
     def sys_param_name(self, sys_param_name):
         r"""Sets the sys_param_name of this CoditionResp.
 
-        系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        系统参数-网关内置参数名称。策略类型为system时必选。支持以下参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
         :param sys_param_name: The sys_param_name of this CoditionResp.
         :type sys_param_name: str

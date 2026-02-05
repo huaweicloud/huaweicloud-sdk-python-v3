@@ -35,13 +35,13 @@ class ApplyHistory:
 
         The model defined in huaweicloud sdk
 
-        :param target_id: **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        :param target_id: **参数解释**：  参数组ID。  **参数范围**：  不涉及。
         :type target_id: str
         :param target_name: **参数解释**：  参数组的名称。  **参数范围**：  不涉及。
         :type target_name: str
         :param apply_result: **参数解释**：  应用结果。  **参数范围**：  不涉及。
         :type apply_result: str
-        :param applied_at: **参数解释**：  应用日期。  格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。  **参数范围**：  不涉及。
+        :param applied_at: **参数解释**：  应用日期。  **参数范围**：  不涉及。
         :type applied_at: datetime
         :param error_code: **参数解释**：  错误码。  **参数范围**：  不涉及。
         :type error_code: str
@@ -71,7 +71,7 @@ class ApplyHistory:
     def target_id(self):
         r"""Gets the target_id of this ApplyHistory.
 
-        **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  参数组ID。  **参数范围**：  不涉及。
 
         :return: The target_id of this ApplyHistory.
         :rtype: str
@@ -82,7 +82,7 @@ class ApplyHistory:
     def target_id(self, target_id):
         r"""Sets the target_id of this ApplyHistory.
 
-        **参数解释**：  参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  参数组ID。  **参数范围**：  不涉及。
 
         :param target_id: The target_id of this ApplyHistory.
         :type target_id: str
@@ -137,7 +137,7 @@ class ApplyHistory:
     def applied_at(self):
         r"""Gets the applied_at of this ApplyHistory.
 
-        **参数解释**：  应用日期。  格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。  **参数范围**：  不涉及。
+        **参数解释**：  应用日期。  **参数范围**：  不涉及。
 
         :return: The applied_at of this ApplyHistory.
         :rtype: datetime
@@ -148,7 +148,7 @@ class ApplyHistory:
     def applied_at(self, applied_at):
         r"""Sets the applied_at of this ApplyHistory.
 
-        **参数解释**：  应用日期。  格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。  **参数范围**：  不涉及。
+        **参数解释**：  应用日期。  **参数范围**：  不涉及。
 
         :param applied_at: The applied_at of this ApplyHistory.
         :type applied_at: datetime

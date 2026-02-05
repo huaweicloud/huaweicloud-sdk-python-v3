@@ -39,7 +39,7 @@ class ApiGroupCreate:
         :type remark: str
         :param roma_app_id: 分组归属的集成应用编号。  分组版本V2时必填。  暂不支持
         :type roma_app_id: str
-        :param version: 分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认V1
+        :param version: 分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
         :type version: str
         """
         
@@ -129,7 +129,7 @@ class ApiGroupCreate:
     def version(self):
         r"""Gets the version of this ApiGroupCreate.
 
-        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认V1
+        分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
 
         :return: The version of this ApiGroupCreate.
         :rtype: str
@@ -140,7 +140,7 @@ class ApiGroupCreate:
     def version(self, version):
         r"""Sets the version of this ApiGroupCreate.
 
-        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认V1
+        分组版本。 - V1：全局分组。 - V2：应用级分组。 暂不支持。 
 
         :param version: The version of this ApiGroupCreate.
         :type version: str

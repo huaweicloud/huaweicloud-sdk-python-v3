@@ -29,7 +29,7 @@ class CbcOperationLock:
 
         The model defined in huaweicloud sdk
 
-        :param lock_scene: 限制操作场景： - TO_PERIOD_LOCK：按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等 - SPEC_CHG_LOCK：包周期规格变更场景锁，不允许进行删除、规格变更等
+        :param lock_scene: 限制操作场景： - TO_PERIOD_LOCK：[按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax) - SPEC_CHG_LOCK：[包周期规格变更场景锁，不允许进行删除、规格变更等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
         :type lock_scene: str
         :param lock_source_id: 发起限制操作对象的标志
         :type lock_source_id: str
@@ -50,7 +50,7 @@ class CbcOperationLock:
     def lock_scene(self):
         r"""Gets the lock_scene of this CbcOperationLock.
 
-        限制操作场景： - TO_PERIOD_LOCK：按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等 - SPEC_CHG_LOCK：包周期规格变更场景锁，不允许进行删除、规格变更等
+        限制操作场景： - TO_PERIOD_LOCK：[按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax) - SPEC_CHG_LOCK：[包周期规格变更场景锁，不允许进行删除、规格变更等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :return: The lock_scene of this CbcOperationLock.
         :rtype: str
@@ -61,7 +61,7 @@ class CbcOperationLock:
     def lock_scene(self, lock_scene):
         r"""Sets the lock_scene of this CbcOperationLock.
 
-        限制操作场景： - TO_PERIOD_LOCK：按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等 - SPEC_CHG_LOCK：包周期规格变更场景锁，不允许进行删除、规格变更等
+        限制操作场景： - TO_PERIOD_LOCK：[按需转包周期场景锁，不允许进行删除、规格变更、按需转包周期等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax) - SPEC_CHG_LOCK：[包周期规格变更场景锁，不允许进行删除、规格变更等](tag:hws,ctc)[暂不支持](tag:hws_hk,cmcc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,srg,ax)
 
         :param lock_scene: The lock_scene of this CbcOperationLock.
         :type lock_scene: str

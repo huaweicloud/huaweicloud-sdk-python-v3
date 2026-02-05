@@ -35,7 +35,7 @@ class ThrottleSpecialCreate:
         :type call_limits: int
         :param object_id: 特殊APP的编号或特殊租户的账号ID
         :type object_id: str
-        :param object_type: 特殊对象类型
+        :param object_type: 特殊对象类型。 - APP：特殊APP - USER：特殊租户 
         :type object_type: str
         """
         
@@ -98,7 +98,7 @@ class ThrottleSpecialCreate:
     def object_type(self):
         r"""Gets the object_type of this ThrottleSpecialCreate.
 
-        特殊对象类型
+        特殊对象类型。 - APP：特殊APP - USER：特殊租户 
 
         :return: The object_type of this ThrottleSpecialCreate.
         :rtype: str
@@ -109,7 +109,7 @@ class ThrottleSpecialCreate:
     def object_type(self, object_type):
         r"""Sets the object_type of this ThrottleSpecialCreate.
 
-        特殊对象类型
+        特殊对象类型。 - APP：特殊APP - USER：特殊租户 
 
         :param object_type: The object_type of this ThrottleSpecialCreate.
         :type object_type: str

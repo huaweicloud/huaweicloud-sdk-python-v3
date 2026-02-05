@@ -1002,6 +1002,75 @@ class ApigAsyncClient(Client):
 
         return http_info
 
+    def create_ai_api_key_async(self, request):
+        r"""创建AIAPIKey
+
+        创建AIAPIKey，适用于AI场景下的API Key认证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAiApiKey
+        :type request: :class:`huaweicloudsdkapig.v2.CreateAiApiKeyRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.CreateAiApiKeyResponse`
+        """
+        http_info = self._create_ai_api_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ai_api_key_async_invoker(self, request):
+        http_info = self._create_ai_api_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ai_api_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/ai-api-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAiApiKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_an_app_v2_async(self, request):
         r"""创建APP
 
@@ -2229,6 +2298,75 @@ class ApigAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ai_api_key_async(self, request):
+        r"""删除AIAPIKey
+
+        删除AIAPIKey。删除后，将无法使用该AIAPIKey进行认证。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAiApiKey
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteAiApiKeyRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteAiApiKeyResponse`
+        """
+        http_info = self._delete_ai_api_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ai_api_key_async_invoker(self, request):
+        http_info = self._delete_ai_api_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ai_api_key_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/ai-api-keys/{ai_api_key_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAiApiKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'ai_api_key_id' in local_var_params:
+            path_params['ai_api_key_id'] = local_var_params['ai_api_key_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4029,6 +4167,77 @@ class ApigAsyncClient(Client):
 
         return http_info
 
+    def list_ai_api_keys_async(self, request):
+        r"""查询AIAPIKey列表
+
+        查询AIAPIKey列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAiApiKeys
+        :type request: :class:`huaweicloudsdkapig.v2.ListAiApiKeysRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListAiApiKeysResponse`
+        """
+        http_info = self._list_ai_api_keys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ai_api_keys_async_invoker(self, request):
+        http_info = self._list_ai_api_keys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ai_api_keys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/ai-api-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiApiKeysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_api_attachable_plugins_async(self, request):
         r"""查询可绑定当前API的插件
 
@@ -4325,7 +4534,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_signature_key_v2_async(self, request):
-        r"""查看签名密钥绑定的API列表
+        r"""查询签名密钥绑定的API列表
 
         查询某个签名密钥上已经绑定的API列表。
         
@@ -4406,7 +4615,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_not_bound_with_signature_key_v2_async(self, request):
-        r"""查看签名密钥未绑定的API列表
+        r"""查询签名密钥未绑定的API列表
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
@@ -4893,6 +5102,10 @@ class ApigAsyncClient(Client):
             query_params.append(('creator', local_var_params['creator']))
         if 'precise_search' in local_var_params:
             query_params.append(('precise_search', local_var_params['precise_search']))
+        if 'related_domain_id' in local_var_params:
+            query_params.append(('related_domain_id', local_var_params['related_domain_id']))
+        if 'related_project_id' in local_var_params:
+            query_params.append(('related_project_id', local_var_params['related_project_id']))
 
         header_params = {}
 
@@ -4921,9 +5134,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_available_zones_v2_async(self, request):
-        r"""查看可用区信息
+        r"""查询可用区信息
 
-        查看可用区信息
+        查询可用区信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5499,9 +5712,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_features_v2_async(self, request):
-        r"""查看实例特性列表
+        r"""查询实例特性列表
 
-        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。
+        查询实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。
         
         支持配置的特性列表及特性配置示例请参考本手册中的“附录 &gt; 实例支持的APIG特性”章节。
         
@@ -6277,9 +6490,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_orchestrations_async(self, request):
-        r"""查看编排规则列表
+        r"""查询编排规则列表
 
-        查看编排规则列表
+        查询编排规则列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6615,7 +6828,7 @@ class ApigAsyncClient(Client):
     def list_project_cofigs_v2_async(self, request):
         r"""查询某个实例的租户配置列表
 
-        查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
+        查询某个实例的租户配置列表，用户可以通过此接口查询各类型资源配置及使用情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6820,7 +7033,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_signature_keys_binded_to_api_v2_async(self, request):
-        r"""查看API绑定的签名密钥列表
+        r"""查询API绑定的签名密钥列表
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
@@ -6972,9 +7185,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_special_throttling_configurations_v2_async(self, request):
-        r"""查看特殊设置列表
+        r"""查询特殊设置列表
 
-        查看给流控策略设置的特殊配置。
+        查询给流控策略设置的特殊配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7049,9 +7262,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_tags_v2_async(self, request):
-        r"""查询标签列表
+        r"""查询API的标签列表
 
-        查询标签列表
+        查询API的标签列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7384,7 +7597,7 @@ class ApigAsyncClient(Client):
     def show_app_bound_app_quota_async(self, request):
         r"""查询凭据关联的凭据配额
 
-        查看指定凭据关联的凭据配额。
+        查询指定凭据关联的凭据配额。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7582,10 +7795,79 @@ class ApigAsyncClient(Client):
 
         return http_info
 
-    def show_details_of_app_acl_async(self, request):
-        r"""查看APP的访问控制详情
+    def show_details_of_ai_api_key_async(self, request):
+        r"""查看AIAPIKey详情
 
-        查看APP的访问控制详情。
+        查看AIAPIKey详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDetailsOfAiApiKey
+        :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAiApiKeyRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAiApiKeyResponse`
+        """
+        http_info = self._show_details_of_ai_api_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_details_of_ai_api_key_async_invoker(self, request):
+        http_info = self._show_details_of_ai_api_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_ai_api_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/ai-api-keys/{ai_api_key_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAiApiKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'ai_api_key_id' in local_var_params:
+            path_params['ai_api_key_id'] = local_var_params['ai_api_key_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_details_of_app_acl_async(self, request):
+        r"""查询APP的访问控制详情
+
+        查询APP的访问控制详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7650,7 +7932,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_app_code_v2_async(self, request):
-        r"""查看APP Code详情
+        r"""查询APP Code详情
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
@@ -7719,9 +8001,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_app_v2_async(self, request):
-        r"""查看APP详情
+        r"""查询APP详情
 
-        查看指定APP的详细信息。
+        查询指定APP的详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7786,9 +8068,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_custom_authorizers_v2_async(self, request):
-        r"""查看自定义认证详情
+        r"""查询自定义认证详情
 
-        查看自定义认证详情
+        查询自定义认证详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7853,9 +8135,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_domain_name_certificate_v2_async(self, request):
-        r"""查看域名证书
+        r"""查询域名证书
 
-        查看域名下绑定的证书详情。
+        查询域名下绑定的证书详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7924,9 +8206,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_environment_variable_v2_async(self, request):
-        r"""查看变量详情
+        r"""查询变量详情
 
-        查看指定的环境变量的详情。
+        查询指定的环境变量的详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7991,9 +8273,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_gateway_response_type_v2_async(self, request):
-        r"""查看分组下指定错误类型的自定义响应
+        r"""查询分组下指定错误类型的自定义响应
 
-        查看分组下指定错误类型的自定义响应
+        查询分组下指定错误类型的自定义响应
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8131,9 +8413,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_instance_progress_v2_async(self, request):
-        r"""查看专享版实例创建进度
+        r"""查询专享版实例创建进度
 
-        查看专享版实例创建进度
+        查询专享版实例创建进度
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8196,9 +8478,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_instance_v2_async(self, request):
-        r"""查看专享版实例详情
+        r"""查询专享版实例详情
 
-        查看专享版实例详情
+        查询专享版实例详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8328,9 +8610,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_request_throttling_policy_v2_async(self, request):
-        r"""查看流控策略详情
+        r"""查询流控策略详情
 
-        查看指定流控策略的详细信息。
+        查询指定流控策略的详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8527,9 +8809,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_restriction_of_instance_v2_async(self, request):
-        r"""查看实例约束信息
+        r"""查询实例约束信息
 
-        查看实例约束信息
+        查询实例约束信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8732,7 +9014,7 @@ class ApigAsyncClient(Client):
     def update_app_v2_async(self, request):
         r"""修改APP
 
-        修改指定APP的信息。其中可修改的属性为：name、remark，当支持用户自定义key和secret的开关开启时，app_key和app_secret也支持修改，其它属性不可修改。
+        修改指定APP的信息。其中可修改的属性为：name、remark、related_domain_id、related_project_id，当支持用户自定义key和secret的开关开启时，app_key和app_secret也支持修改，其它属性不可修改。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10045,7 +10327,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_acl_strategies_v2_async(self, request):
-        r"""查看ACL策略列表
+        r"""查询ACL策略列表
 
         查询所有的ACL策略列表。
         
@@ -10124,7 +10406,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_acl_policy_v2_async(self, request):
-        r"""查看ACL策略详情
+        r"""查询ACL策略详情
 
         查询指定ACL策略的详情。
         
@@ -11306,7 +11588,7 @@ class ApigAsyncClient(Client):
     def list_api_runtime_definition_v2_async(self, request):
         r"""查询API运行时定义
 
-        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。
+        查询指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。
         
         API的定义分为临时定义和运行时定义，分别代表如下含义：
         - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态
@@ -11379,7 +11661,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_version_detail_v2_async(self, request):
-        r"""查看版本详情
+        r"""查询版本详情
 
         查询某个指定的版本详情。
         
@@ -11521,7 +11803,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_request_throttling_policy_v2_async(self, request):
-        r"""查看流控策略绑定的API列表
+        r"""查询流控策略绑定的API列表
 
         查询某个流控策略上已经绑定的API列表。
         
@@ -11600,7 +11882,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_request_throttling_policy_v2_async(self, request):
-        r"""查看流控策略未绑定的API列表
+        r"""查询流控策略未绑定的API列表
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
@@ -11683,7 +11965,7 @@ class ApigAsyncClient(Client):
     def list_apis_v2_async(self, request):
         r"""查询API列表
 
-        查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息和API请求参数信息
+        查询API列表，返回API详细信息、发布信息等，但不能查询到后端服务信息和API请求参数信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11776,7 +12058,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_request_throttling_policies_binded_to_api_v2_async(self, request):
-        r"""查看API绑定的流控策略列表
+        r"""查询API绑定的流控策略列表
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
@@ -11922,7 +12204,7 @@ class ApigAsyncClient(Client):
     def show_details_of_api_v2_async(self, request):
         r"""查询API详情
 
-        查看指定的API的详细信息。
+        查询指定的API的详细信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12330,9 +12612,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_acl_policy_binded_to_api_v2_async(self, request):
-        r"""查看API绑定的ACL策略列表
+        r"""查询API绑定的ACL策略列表
 
-        查看API绑定的ACL策略列表
+        查询API绑定的ACL策略列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12409,9 +12691,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_acl_policy_v2_async(self, request):
-        r"""查看ACL策略绑定的API列表
+        r"""查询ACL策略绑定的API列表
 
-        查看ACL策略绑定的API列表
+        查询ACL策略绑定的API列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12490,9 +12772,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_acl_policy_v2_async(self, request):
-        r"""查看ACL策略未绑定的API列表
+        r"""查询ACL策略未绑定的API列表
 
-        查看ACL策略未绑定的API列表，需要API已发布
+        查询ACL策略未绑定的API列表，需要API已发布
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12705,7 +12987,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_app_v2_async(self, request):
-        r"""查看APP已绑定的API列表
+        r"""查询APP已绑定的API列表
 
         查询APP已经绑定的API列表。
         
@@ -12788,7 +13070,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_app_v2_async(self, request):
-        r"""查看APP未绑定的API列表
+        r"""查询APP未绑定的API列表
 
         查询指定环境上某个APP未绑定的API列表[，包括自有API和从云商店购买的API](tag:hws)。
         
@@ -12869,7 +13151,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apps_binded_to_api_v2_async(self, request):
-        r"""查看API已绑定的APP列表
+        r"""查询API已绑定的APP列表
 
         查询API绑定的APP列表。
         
@@ -13652,9 +13934,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_certificate_v2_async(self, request):
-        r"""查看证书详情
+        r"""查询证书详情
 
-        查看证书详情。
+        查询证书详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14345,9 +14627,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_backend_instances_v2_async(self, request):
-        r"""查看后端实例列表
+        r"""查询后端实例列表
 
-        查看指定VPC通道的后端实例列表。
+        查询指定VPC通道的后端实例列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14503,7 +14785,7 @@ class ApigAsyncClient(Client):
     def list_vpc_channels_v2_async(self, request):
         r"""查询VPC通道列表
 
-        查看VPC通道列表
+        查询VPC通道列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14588,9 +14870,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_member_group_async(self, request):
-        r"""查看VPC通道后端服务器组详情
+        r"""查询VPC通道后端服务器组详情
 
-        查看指定的VPC通道后端服务器组详情
+        查询指定的VPC通道后端服务器组详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14657,9 +14939,9 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_vpc_channel_v2_async(self, request):
-        r"""查看VPC通道详情
+        r"""查询VPC通道详情
 
-        查看指定的VPC通道详情
+        查询指定的VPC通道详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 

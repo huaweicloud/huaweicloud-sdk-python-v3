@@ -41,7 +41,7 @@ class ApiAclInfoWithBindNum:
 
         :param acl_name: ACL策略名称
         :type acl_name: str
-        :param acl_type: 类型 - PERMIT（白名单类型） - DENY（黑名单类型）
+        :param acl_type: 类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
         :type acl_type: str
         :param acl_value: ACL策略的值
         :type acl_value: str
@@ -107,7 +107,7 @@ class ApiAclInfoWithBindNum:
     def acl_type(self):
         r"""Gets the acl_type of this ApiAclInfoWithBindNum.
 
-        类型 - PERMIT（白名单类型） - DENY（黑名单类型）
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :return: The acl_type of this ApiAclInfoWithBindNum.
         :rtype: str
@@ -118,7 +118,7 @@ class ApiAclInfoWithBindNum:
     def acl_type(self, acl_type):
         r"""Sets the acl_type of this ApiAclInfoWithBindNum.
 
-        类型 - PERMIT（白名单类型） - DENY（黑名单类型）
+        类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :param acl_type: The acl_type of this ApiAclInfoWithBindNum.
         :type acl_type: str

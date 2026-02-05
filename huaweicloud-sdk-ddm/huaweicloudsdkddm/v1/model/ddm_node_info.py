@@ -37,17 +37,17 @@ class DdmNodeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点ID。
+        :param id: **参数解释**：  节点ID。  **参数范围**：  不涉及。
         :type id: str
-        :param status: 状态。
+        :param status: **参数解释**：  状态。  **参数范围**：  不涉及。
         :type status: str
-        :param name: 名称。
+        :param name: **参数解释**：  名称。  **参数范围**：  不涉及。
         :type name: str
-        :param az_code: 可用区编码。
+        :param az_code: **参数解释**：  可用区编码。  **参数范围**：  不涉及。
         :type az_code: str
-        :param actions: 锁状态。
+        :param actions: **参数解释**：  锁状态。  **参数范围**：  不涉及。
         :type actions: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
-        :param subnet_id: 子网ID。
+        :param subnet_id: **参数解释**：  子网ID。  **参数范围**：  不涉及。
         :type subnet_id: str
         """
         
@@ -78,7 +78,7 @@ class DdmNodeInfo:
     def id(self):
         r"""Gets the id of this DdmNodeInfo.
 
-        节点ID。
+        **参数解释**：  节点ID。  **参数范围**：  不涉及。
 
         :return: The id of this DdmNodeInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class DdmNodeInfo:
     def id(self, id):
         r"""Sets the id of this DdmNodeInfo.
 
-        节点ID。
+        **参数解释**：  节点ID。  **参数范围**：  不涉及。
 
         :param id: The id of this DdmNodeInfo.
         :type id: str
@@ -100,7 +100,7 @@ class DdmNodeInfo:
     def status(self):
         r"""Gets the status of this DdmNodeInfo.
 
-        状态。
+        **参数解释**：  状态。  **参数范围**：  不涉及。
 
         :return: The status of this DdmNodeInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class DdmNodeInfo:
     def status(self, status):
         r"""Sets the status of this DdmNodeInfo.
 
-        状态。
+        **参数解释**：  状态。  **参数范围**：  不涉及。
 
         :param status: The status of this DdmNodeInfo.
         :type status: str
@@ -122,7 +122,7 @@ class DdmNodeInfo:
     def name(self):
         r"""Gets the name of this DdmNodeInfo.
 
-        名称。
+        **参数解释**：  名称。  **参数范围**：  不涉及。
 
         :return: The name of this DdmNodeInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class DdmNodeInfo:
     def name(self, name):
         r"""Sets the name of this DdmNodeInfo.
 
-        名称。
+        **参数解释**：  名称。  **参数范围**：  不涉及。
 
         :param name: The name of this DdmNodeInfo.
         :type name: str
@@ -144,7 +144,7 @@ class DdmNodeInfo:
     def az_code(self):
         r"""Gets the az_code of this DdmNodeInfo.
 
-        可用区编码。
+        **参数解释**：  可用区编码。  **参数范围**：  不涉及。
 
         :return: The az_code of this DdmNodeInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class DdmNodeInfo:
     def az_code(self, az_code):
         r"""Sets the az_code of this DdmNodeInfo.
 
-        可用区编码。
+        **参数解释**：  可用区编码。  **参数范围**：  不涉及。
 
         :param az_code: The az_code of this DdmNodeInfo.
         :type az_code: str
@@ -166,7 +166,7 @@ class DdmNodeInfo:
     def actions(self):
         r"""Gets the actions of this DdmNodeInfo.
 
-        锁状态。
+        **参数解释**：  锁状态。  **参数范围**：  不涉及。
 
         :return: The actions of this DdmNodeInfo.
         :rtype: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
@@ -177,7 +177,7 @@ class DdmNodeInfo:
     def actions(self, actions):
         r"""Sets the actions of this DdmNodeInfo.
 
-        锁状态。
+        **参数解释**：  锁状态。  **参数范围**：  不涉及。
 
         :param actions: The actions of this DdmNodeInfo.
         :type actions: list[:class:`huaweicloudsdkddm.v1.ActionInfo`]
@@ -188,7 +188,7 @@ class DdmNodeInfo:
     def subnet_id(self):
         r"""Gets the subnet_id of this DdmNodeInfo.
 
-        子网ID。
+        **参数解释**：  子网ID。  **参数范围**：  不涉及。
 
         :return: The subnet_id of this DdmNodeInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class DdmNodeInfo:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this DdmNodeInfo.
 
-        子网ID。
+        **参数解释**：  子网ID。  **参数范围**：  不涉及。
 
         :param subnet_id: The subnet_id of this DdmNodeInfo.
         :type subnet_id: str

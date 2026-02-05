@@ -51,11 +51,11 @@ class ListCertificatesV2Request:
         :type common_name: str
         :param signature_algorithm: 证书签名算法
         :type signature_algorithm: str
-        :param type: 证书可见范围
+        :param type: 证书类型。 - instance：实例证书 - global：全局证书 
         :type type: str
         :param instance_id: 证书所属实例ID
         :type instance_id: str
-        :param algorithm_type: 证书算法类型： - RSA。 - ECC。 - SM2。
+        :param algorithm_type: 证书算法类型。 - RSA - ECC - SM2 
         :type algorithm_type: str
         """
         
@@ -201,7 +201,7 @@ class ListCertificatesV2Request:
     def type(self):
         r"""Gets the type of this ListCertificatesV2Request.
 
-        证书可见范围
+        证书类型。 - instance：实例证书 - global：全局证书 
 
         :return: The type of this ListCertificatesV2Request.
         :rtype: str
@@ -212,7 +212,7 @@ class ListCertificatesV2Request:
     def type(self, type):
         r"""Sets the type of this ListCertificatesV2Request.
 
-        证书可见范围
+        证书类型。 - instance：实例证书 - global：全局证书 
 
         :param type: The type of this ListCertificatesV2Request.
         :type type: str
@@ -245,7 +245,7 @@ class ListCertificatesV2Request:
     def algorithm_type(self):
         r"""Gets the algorithm_type of this ListCertificatesV2Request.
 
-        证书算法类型： - RSA。 - ECC。 - SM2。
+        证书算法类型。 - RSA - ECC - SM2 
 
         :return: The algorithm_type of this ListCertificatesV2Request.
         :rtype: str
@@ -256,7 +256,7 @@ class ListCertificatesV2Request:
     def algorithm_type(self, algorithm_type):
         r"""Sets the algorithm_type of this ListCertificatesV2Request.
 
-        证书算法类型： - RSA。 - ECC。 - SM2。
+        证书算法类型。 - RSA - ECC - SM2 
 
         :param algorithm_type: The algorithm_type of this ListCertificatesV2Request.
         :type algorithm_type: str

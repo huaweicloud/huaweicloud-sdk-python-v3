@@ -18,6 +18,7 @@ class CloudStorage:
         'id': 'str',
         'name': 'str',
         'project_config_id': 'str',
+        'cluster_group_id': 'str',
         'create_time': 'datetime',
         'user_claim_count': 'int',
         'share_claim_count': 'int'
@@ -27,12 +28,13 @@ class CloudStorage:
         'id': 'id',
         'name': 'name',
         'project_config_id': 'project_config_id',
+        'cluster_group_id': 'cluster_group_id',
         'create_time': 'create_time',
         'user_claim_count': 'user_claim_count',
         'share_claim_count': 'share_claim_count'
     }
 
-    def __init__(self, id=None, name=None, project_config_id=None, create_time=None, user_claim_count=None, share_claim_count=None):
+    def __init__(self, id=None, name=None, project_config_id=None, cluster_group_id=None, create_time=None, user_claim_count=None, share_claim_count=None):
         r"""CloudStorage
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CloudStorage:
         :type name: str
         :param project_config_id: 云存储id。
         :type project_config_id: str
+        :param cluster_group_id: sfs集群ID。
+        :type cluster_group_id: str
         :param create_time: 创建时间。
         :type create_time: datetime
         :param user_claim_count: 个人目录声明数量。
@@ -56,6 +60,7 @@ class CloudStorage:
         self._id = None
         self._name = None
         self._project_config_id = None
+        self._cluster_group_id = None
         self._create_time = None
         self._user_claim_count = None
         self._share_claim_count = None
@@ -67,6 +72,8 @@ class CloudStorage:
             self.name = name
         if project_config_id is not None:
             self.project_config_id = project_config_id
+        if cluster_group_id is not None:
+            self.cluster_group_id = cluster_group_id
         if create_time is not None:
             self.create_time = create_time
         if user_claim_count is not None:
@@ -139,6 +146,28 @@ class CloudStorage:
         :type project_config_id: str
         """
         self._project_config_id = project_config_id
+
+    @property
+    def cluster_group_id(self):
+        r"""Gets the cluster_group_id of this CloudStorage.
+
+        sfs集群ID。
+
+        :return: The cluster_group_id of this CloudStorage.
+        :rtype: str
+        """
+        return self._cluster_group_id
+
+    @cluster_group_id.setter
+    def cluster_group_id(self, cluster_group_id):
+        r"""Sets the cluster_group_id of this CloudStorage.
+
+        sfs集群ID。
+
+        :param cluster_group_id: The cluster_group_id of this CloudStorage.
+        :type cluster_group_id: str
+        """
+        self._cluster_group_id = cluster_group_id
 
     @property
     def create_time(self):

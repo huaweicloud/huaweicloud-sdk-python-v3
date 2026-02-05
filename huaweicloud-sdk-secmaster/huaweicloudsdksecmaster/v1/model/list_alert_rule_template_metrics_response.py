@@ -16,51 +16,72 @@ class ListAlertRuleTemplateMetricsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, AlertRuleTemplateMetric)'
+        'severity': 'AlertRuleTemplateMetric',
+        'status': 'AlertRuleTemplateMetric'
     }
 
     attribute_map = {
-        'body': 'body'
+        'severity': 'severity',
+        'status': 'status'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, severity=None, status=None):
         r"""ListAlertRuleTemplateMetricsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 响应结果
-        :type body: dict(str, AlertRuleTemplateMetric)
+        :param severity: 
+        :type severity: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
+        :param status: 
+        :type status: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
         """
         
         super().__init__()
 
-        self._body = None
+        self._severity = None
+        self._status = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if severity is not None:
+            self.severity = severity
+        if status is not None:
+            self.status = status
 
     @property
-    def body(self):
-        r"""Gets the body of this ListAlertRuleTemplateMetricsResponse.
+    def severity(self):
+        r"""Gets the severity of this ListAlertRuleTemplateMetricsResponse.
 
-        响应结果
-
-        :return: The body of this ListAlertRuleTemplateMetricsResponse.
-        :rtype: dict(str, AlertRuleTemplateMetric)
+        :return: The severity of this ListAlertRuleTemplateMetricsResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
         """
-        return self._body
+        return self._severity
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListAlertRuleTemplateMetricsResponse.
+    @severity.setter
+    def severity(self, severity):
+        r"""Sets the severity of this ListAlertRuleTemplateMetricsResponse.
 
-        响应结果
-
-        :param body: The body of this ListAlertRuleTemplateMetricsResponse.
-        :type body: dict(str, AlertRuleTemplateMetric)
+        :param severity: The severity of this ListAlertRuleTemplateMetricsResponse.
+        :type severity: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
         """
-        self._body = body
+        self._severity = severity
+
+    @property
+    def status(self):
+        r"""Gets the status of this ListAlertRuleTemplateMetricsResponse.
+
+        :return: The status of this ListAlertRuleTemplateMetricsResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListAlertRuleTemplateMetricsResponse.
+
+        :param status: The status of this ListAlertRuleTemplateMetricsResponse.
+        :type status: :class:`huaweicloudsdksecmaster.v1.AlertRuleTemplateMetric`
+        """
+        self._status = status
 
     def to_dict(self):
         import warnings

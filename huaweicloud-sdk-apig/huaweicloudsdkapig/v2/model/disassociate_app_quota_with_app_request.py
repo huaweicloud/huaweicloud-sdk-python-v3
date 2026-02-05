@@ -35,7 +35,7 @@ class DisassociateAppQuotaWithAppRequest:
         :type instance_id: str
         :param app_quota_id: 凭据配额编号
         :type app_quota_id: str
-        :param app_id: 应用编号
+        :param app_id: 凭据编号
         :type app_id: str
         """
         
@@ -98,7 +98,7 @@ class DisassociateAppQuotaWithAppRequest:
     def app_id(self):
         r"""Gets the app_id of this DisassociateAppQuotaWithAppRequest.
 
-        应用编号
+        凭据编号
 
         :return: The app_id of this DisassociateAppQuotaWithAppRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class DisassociateAppQuotaWithAppRequest:
     def app_id(self, app_id):
         r"""Sets the app_id of this DisassociateAppQuotaWithAppRequest.
 
-        应用编号
+        凭据编号
 
         :param app_id: The app_id of this DisassociateAppQuotaWithAppRequest.
         :type app_id: str

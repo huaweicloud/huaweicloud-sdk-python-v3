@@ -75,11 +75,11 @@ class ListApisV2Request:
         :type req_method: str
         :param req_uri: 请求路径
         :type req_uri: str
-        :param auth_type: 授权类型
+        :param auth_type: 授权类型。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
         :type auth_type: str
         :param env_id: 发布的环境编号
         :type env_id: str
-        :param type: API类型
+        :param type: API类型。 - 1：公有API - 2：私有API 
         :type type: int
         :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
         :type precise_search: str
@@ -345,7 +345,7 @@ class ListApisV2Request:
     def auth_type(self):
         r"""Gets the auth_type of this ListApisV2Request.
 
-        授权类型
+        授权类型。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :return: The auth_type of this ListApisV2Request.
         :rtype: str
@@ -356,7 +356,7 @@ class ListApisV2Request:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this ListApisV2Request.
 
-        授权类型
+        授权类型。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this ListApisV2Request.
         :type auth_type: str
@@ -389,7 +389,7 @@ class ListApisV2Request:
     def type(self):
         r"""Gets the type of this ListApisV2Request.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :return: The type of this ListApisV2Request.
         :rtype: int
@@ -400,7 +400,7 @@ class ListApisV2Request:
     def type(self, type):
         r"""Sets the type of this ListApisV2Request.
 
-        API类型
+        API类型。 - 1：公有API - 2：私有API 
 
         :param type: The type of this ListApisV2Request.
         :type type: int

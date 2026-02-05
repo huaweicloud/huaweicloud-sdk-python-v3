@@ -26,6 +26,7 @@ class BackendApiBase:
         'enable_client_ssl': 'bool',
         'retry_count': 'str',
         'enable_sm_channel': 'bool',
+        'member_group_url_infos': 'list[MemberGroupUrlInfo]',
         'id': 'str',
         'status': 'int',
         'register_time': 'datetime',
@@ -44,30 +45,31 @@ class BackendApiBase:
         'enable_client_ssl': 'enable_client_ssl',
         'retry_count': 'retry_count',
         'enable_sm_channel': 'enable_sm_channel',
+        'member_group_url_infos': 'member_group_url_infos',
         'id': 'id',
         'status': 'status',
         'register_time': 'register_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, enable_sm_channel=None, id=None, status=None, register_time=None, update_time=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, enable_sm_channel=None, member_group_url_infos=None, id=None, status=None, register_time=None, update_time=None):
         r"""BackendApiBase
 
         The model defined in huaweicloud sdk
 
         :param authorizer_id: 后端自定义认证对象的ID
         :type authorizer_id: str
-        :param url_domain: 后端服务的地址。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
+        :param url_domain: 后端服务的地址。后端服务不使用VPC通道时，参数必选   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
         :type url_domain: str
-        :param req_protocol: 请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
+        :param req_protocol: 请求协议，后端类型为GRPC&amp;GRPCS时请求协议可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
         :type req_protocol: str
         :param remark: 描述。字符长度不超过255 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
-        :param req_method: 请求方式，后端类型为GRPC时请求方式固定为POST
+        :param req_method: 请求方式，后端类型为GRPC&amp;GRPCS时请求方式固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
         :type req_method: str
         :param version: web后端版本，字符长度不超过16
         :type version: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        :param req_uri: 请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
         :type req_uri: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
@@ -77,6 +79,8 @@ class BackendApiBase:
         :type retry_count: str
         :param enable_sm_channel: 是否启用SM商密通道。  仅实例支持SM系列商密算法的实例时支持开启。
         :type enable_sm_channel: bool
+        :param member_group_url_infos: 后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+        :type member_group_url_infos: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
         :param id: 编号
         :type id: str
         :param status: 后端状态   - 1： 有效
@@ -100,6 +104,7 @@ class BackendApiBase:
         self._enable_client_ssl = None
         self._retry_count = None
         self._enable_sm_channel = None
+        self._member_group_url_infos = None
         self._id = None
         self._status = None
         self._register_time = None
@@ -110,13 +115,16 @@ class BackendApiBase:
             self.authorizer_id = authorizer_id
         if url_domain is not None:
             self.url_domain = url_domain
-        self.req_protocol = req_protocol
+        if req_protocol is not None:
+            self.req_protocol = req_protocol
         if remark is not None:
             self.remark = remark
-        self.req_method = req_method
+        if req_method is not None:
+            self.req_method = req_method
         if version is not None:
             self.version = version
-        self.req_uri = req_uri
+        if req_uri is not None:
+            self.req_uri = req_uri
         self.timeout = timeout
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
@@ -124,6 +132,8 @@ class BackendApiBase:
             self.retry_count = retry_count
         if enable_sm_channel is not None:
             self.enable_sm_channel = enable_sm_channel
+        if member_group_url_infos is not None:
+            self.member_group_url_infos = member_group_url_infos
         if id is not None:
             self.id = id
         if status is not None:
@@ -159,7 +169,7 @@ class BackendApiBase:
     def url_domain(self):
         r"""Gets the url_domain of this BackendApiBase.
 
-        后端服务的地址。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
+        后端服务的地址。后端服务不使用VPC通道时，参数必选   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
         :return: The url_domain of this BackendApiBase.
         :rtype: str
@@ -170,7 +180,7 @@ class BackendApiBase:
     def url_domain(self, url_domain):
         r"""Sets the url_domain of this BackendApiBase.
 
-        后端服务的地址。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
+        后端服务的地址。后端服务不使用VPC通道时，参数必选   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
         :param url_domain: The url_domain of this BackendApiBase.
         :type url_domain: str
@@ -181,7 +191,7 @@ class BackendApiBase:
     def req_protocol(self):
         r"""Gets the req_protocol of this BackendApiBase.
 
-        请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
+        请求协议，后端类型为GRPC&GRPCS时请求协议可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :return: The req_protocol of this BackendApiBase.
         :rtype: str
@@ -192,7 +202,7 @@ class BackendApiBase:
     def req_protocol(self, req_protocol):
         r"""Sets the req_protocol of this BackendApiBase.
 
-        请求协议，后端类型为GRPC时请求协议可选GRPC、GRPCS
+        请求协议，后端类型为GRPC&GRPCS时请求协议可选GRPC、GRPCS，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :param req_protocol: The req_protocol of this BackendApiBase.
         :type req_protocol: str
@@ -225,7 +235,7 @@ class BackendApiBase:
     def req_method(self):
         r"""Gets the req_method of this BackendApiBase.
 
-        请求方式，后端类型为GRPC时请求方式固定为POST
+        请求方式，后端类型为GRPC&GRPCS时请求方式固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :return: The req_method of this BackendApiBase.
         :rtype: str
@@ -236,7 +246,7 @@ class BackendApiBase:
     def req_method(self, req_method):
         r"""Sets the req_method of this BackendApiBase.
 
-        请求方式，后端类型为GRPC时请求方式固定为POST
+        请求方式，后端类型为GRPC&GRPCS时请求方式固定为POST，当vpc_channel_status取值为1或者2时，该字段必填。
 
         :param req_method: The req_method of this BackendApiBase.
         :type req_method: str
@@ -269,7 +279,7 @@ class BackendApiBase:
     def req_uri(self):
         r"""Gets the req_uri of this BackendApiBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :return: The req_uri of this BackendApiBase.
         :rtype: str
@@ -280,7 +290,7 @@ class BackendApiBase:
     def req_uri(self, req_uri):
         r"""Sets the req_uri of this BackendApiBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
+        请求地址，当vpc_channel_status取值为1或者2时，该字段必填。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512字符，且满足URI规范。   支持环境变量，使用环境变量时，每个变量名的长度为3~32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。  后端类型为GRPC时请求地址固定为/
 
         :param req_uri: The req_uri of this BackendApiBase.
         :type req_uri: str
@@ -374,6 +384,28 @@ class BackendApiBase:
         :type enable_sm_channel: bool
         """
         self._enable_sm_channel = enable_sm_channel
+
+    @property
+    def member_group_url_infos(self):
+        r"""Gets the member_group_url_infos of this BackendApiBase.
+
+        后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+
+        :return: The member_group_url_infos of this BackendApiBase.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
+        """
+        return self._member_group_url_infos
+
+    @member_group_url_infos.setter
+    def member_group_url_infos(self, member_group_url_infos):
+        r"""Sets the member_group_url_infos of this BackendApiBase.
+
+        后端服务器分组详细信息，当vpc_channel_status取值为4时，该字段必填。
+
+        :param member_group_url_infos: The member_group_url_infos of this BackendApiBase.
+        :type member_group_url_infos: list[:class:`huaweicloudsdkapig.v2.MemberGroupUrlInfo`]
+        """
+        self._member_group_url_infos = member_group_url_infos
 
     @property
     def id(self):

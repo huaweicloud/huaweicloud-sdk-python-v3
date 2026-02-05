@@ -59,9 +59,9 @@ class JobResourceInfo:
         :type resource_id: str
         :param resource_name: 资源名称；创建、有最新资源名称场景，必填。
         :type resource_name: str
-        :param cloud_service_type: 云服务类型编码；新购、规格变更场景，必填。
+        :param cloud_service_type: 云服务类型编码；新购、规格变更场景，必填： - hws.service.type.vdi - hws.service.type.marketplace
         :type cloud_service_type: str
-        :param resource_type: 资源类型编码；新购、规格变更场景，必填。
+        :param resource_type: 资源类型编码；新购、规格变更场景，必填: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
         :type resource_type: str
         :param resource_spec_code: 资源规格编码；新购、规格变更场景，必填。
         :type resource_spec_code: str
@@ -185,7 +185,7 @@ class JobResourceInfo:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this JobResourceInfo.
 
-        云服务类型编码；新购、规格变更场景，必填。
+        云服务类型编码；新购、规格变更场景，必填： - hws.service.type.vdi - hws.service.type.marketplace
 
         :return: The cloud_service_type of this JobResourceInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class JobResourceInfo:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this JobResourceInfo.
 
-        云服务类型编码；新购、规格变更场景，必填。
+        云服务类型编码；新购、规格变更场景，必填： - hws.service.type.vdi - hws.service.type.marketplace
 
         :param cloud_service_type: The cloud_service_type of this JobResourceInfo.
         :type cloud_service_type: str
@@ -207,7 +207,7 @@ class JobResourceInfo:
     def resource_type(self):
         r"""Gets the resource_type of this JobResourceInfo.
 
-        资源类型编码；新购、规格变更场景，必填。
+        资源类型编码；新购、规格变更场景，必填: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :return: The resource_type of this JobResourceInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class JobResourceInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this JobResourceInfo.
 
-        资源类型编码；新购、规格变更场景，必填。
+        资源类型编码；新购、规格变更场景，必填: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
         :param resource_type: The resource_type of this JobResourceInfo.
         :type resource_type: str

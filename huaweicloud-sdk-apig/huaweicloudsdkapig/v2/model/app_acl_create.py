@@ -29,7 +29,7 @@ class AppAclCreate:
 
         The model defined in huaweicloud sdk
 
-        :param app_acl_type: 类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        :param app_acl_type: 类型 - PERMIT：白名单类型 - DENY：黑名单类型
         :type app_acl_type: str
         :param app_acl_values: ACL策略值，支持IP、IP范围和CIDR方式。IP范围以英文中划线分隔。
         :type app_acl_values: list[str]
@@ -48,7 +48,7 @@ class AppAclCreate:
     def app_acl_type(self):
         r"""Gets the app_acl_type of this AppAclCreate.
 
-        类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
         :return: The app_acl_type of this AppAclCreate.
         :rtype: str
@@ -59,7 +59,7 @@ class AppAclCreate:
     def app_acl_type(self, app_acl_type):
         r"""Sets the app_acl_type of this AppAclCreate.
 
-        类型 -  PERMIT (白名单类型) -  DENY (黑名单类型)
+        类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
         :param app_acl_type: The app_acl_type of this AppAclCreate.
         :type app_acl_type: str

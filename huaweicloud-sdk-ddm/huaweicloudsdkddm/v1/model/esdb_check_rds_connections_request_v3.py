@@ -15,64 +15,34 @@ class EsdbCheckRdsConnectionsRequestV3:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
         'infos': 'list[EsdbCheckRdsConnectionRequestV3]'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
         'infos': 'infos'
     }
 
-    def __init__(self, instance_id=None, infos=None):
+    def __init__(self, infos=None):
         r"""EsdbCheckRdsConnectionsRequestV3
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
-        :type instance_id: str
-        :param infos: **参数解释**：  rds连通性检查相关信息的集合。  **参数范围**：  不涉及。
+        :param infos: **参数解释**：  rds连通性检查相关信息的集合。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type infos: list[:class:`huaweicloudsdkddm.v1.EsdbCheckRdsConnectionRequestV3`]
         """
         
         
 
-        self._instance_id = None
         self._infos = None
         self.discriminator = None
 
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if infos is not None:
-            self.infos = infos
-
-    @property
-    def instance_id(self):
-        r"""Gets the instance_id of this EsdbCheckRdsConnectionsRequestV3.
-
-        **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
-
-        :return: The instance_id of this EsdbCheckRdsConnectionsRequestV3.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this EsdbCheckRdsConnectionsRequestV3.
-
-        **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in09，长度为36个字符。  **默认取值**：  不涉及。
-
-        :param instance_id: The instance_id of this EsdbCheckRdsConnectionsRequestV3.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
+        self.infos = infos
 
     @property
     def infos(self):
         r"""Gets the infos of this EsdbCheckRdsConnectionsRequestV3.
 
-        **参数解释**：  rds连通性检查相关信息的集合。  **参数范围**：  不涉及。
+        **参数解释**：  rds连通性检查相关信息的集合。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :return: The infos of this EsdbCheckRdsConnectionsRequestV3.
         :rtype: list[:class:`huaweicloudsdkddm.v1.EsdbCheckRdsConnectionRequestV3`]
@@ -83,7 +53,7 @@ class EsdbCheckRdsConnectionsRequestV3:
     def infos(self, infos):
         r"""Sets the infos of this EsdbCheckRdsConnectionsRequestV3.
 
-        **参数解释**：  rds连通性检查相关信息的集合。  **参数范围**：  不涉及。
+        **参数解释**：  rds连通性检查相关信息的集合。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
         :param infos: The infos of this EsdbCheckRdsConnectionsRequestV3.
         :type infos: list[:class:`huaweicloudsdkddm.v1.EsdbCheckRdsConnectionRequestV3`]

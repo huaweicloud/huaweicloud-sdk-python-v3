@@ -62,7 +62,7 @@ class ShowDetailsOfCustomAuthorizersV2Response(SdkResponse):
         :type name: str
         :param type: 自定义认证类型  - FRONTEND：前端 - BACKEND：后端  不支持修改
         :type type: str
-        :param authorizer_type: 只能为：FUNC
+        :param authorizer_type: 自定义认证的类型。当前只支持函数类型：FUNC。
         :type authorizer_type: str
         :param authorizer_uri: 函数地址。
         :type authorizer_uri: str
@@ -189,7 +189,7 @@ class ShowDetailsOfCustomAuthorizersV2Response(SdkResponse):
     def authorizer_type(self):
         r"""Gets the authorizer_type of this ShowDetailsOfCustomAuthorizersV2Response.
 
-        只能为：FUNC
+        自定义认证的类型。当前只支持函数类型：FUNC。
 
         :return: The authorizer_type of this ShowDetailsOfCustomAuthorizersV2Response.
         :rtype: str
@@ -200,7 +200,7 @@ class ShowDetailsOfCustomAuthorizersV2Response(SdkResponse):
     def authorizer_type(self, authorizer_type):
         r"""Sets the authorizer_type of this ShowDetailsOfCustomAuthorizersV2Response.
 
-        只能为：FUNC
+        自定义认证的类型。当前只支持函数类型：FUNC。
 
         :param authorizer_type: The authorizer_type of this ShowDetailsOfCustomAuthorizersV2Response.
         :type authorizer_type: str

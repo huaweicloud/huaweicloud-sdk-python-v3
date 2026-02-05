@@ -21,8 +21,10 @@ class SubscriptionResource:
         'cloud_service': 'str',
         'resource_type': 'str',
         'resource_spec_code': 'str',
-        'create_time': 'str',
-        'expire_time': 'str',
+        'to_period': 'bool',
+        'create_time': 'int',
+        'update_time': 'int',
+        'expire_time': 'int',
         'resource_status': 'int',
         'order_id': 'str',
         'charging_mode': 'str',
@@ -37,7 +39,9 @@ class SubscriptionResource:
         'cloud_service': 'cloud_service',
         'resource_type': 'resource_type',
         'resource_spec_code': 'resource_spec_code',
+        'to_period': 'to_period',
         'create_time': 'create_time',
+        'update_time': 'update_time',
         'expire_time': 'expire_time',
         'resource_status': 'resource_status',
         'order_id': 'order_id',
@@ -46,7 +50,7 @@ class SubscriptionResource:
         'usages': 'usages'
     }
 
-    def __init__(self, resource_id=None, resource_type_name=None, resource_size=None, cloud_service=None, resource_type=None, resource_spec_code=None, create_time=None, expire_time=None, resource_status=None, order_id=None, charging_mode=None, tag_list=None, usages=None):
+    def __init__(self, resource_id=None, resource_type_name=None, resource_size=None, cloud_service=None, resource_type=None, resource_spec_code=None, to_period=None, create_time=None, update_time=None, expire_time=None, resource_status=None, order_id=None, charging_mode=None, tag_list=None, usages=None):
         r"""SubscriptionResource
 
         The model defined in huaweicloud sdk
@@ -63,10 +67,14 @@ class SubscriptionResource:
         :type resource_type: str
         :param resource_spec_code: 资源规格编码
         :type resource_spec_code: str
+        :param to_period: 当前资源是否能进行按需转包周期操作
+        :type to_period: bool
         :param create_time: 创建时间戳
-        :type create_time: str
-        :param expire_time: 到期时间戳，只有按需资源有该字段
-        :type expire_time: str
+        :type create_time: int
+        :param update_time: 更新时间戳
+        :type update_time: int
+        :param expire_time: 到期时间戳，只有包年包月资源才有该字段
+        :type expire_time: int
         :param resource_status: 资源状态，目前返回正常运行的资源，其状态值为0
         :type resource_status: int
         :param order_id: 订单Id，包周期资源有该字段
@@ -87,7 +95,9 @@ class SubscriptionResource:
         self._cloud_service = None
         self._resource_type = None
         self._resource_spec_code = None
+        self._to_period = None
         self._create_time = None
+        self._update_time = None
         self._expire_time = None
         self._resource_status = None
         self._order_id = None
@@ -108,8 +118,12 @@ class SubscriptionResource:
             self.resource_type = resource_type
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+        if to_period is not None:
+            self.to_period = to_period
         if create_time is not None:
             self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
         if expire_time is not None:
             self.expire_time = expire_time
         if resource_status is not None:
@@ -256,13 +270,35 @@ class SubscriptionResource:
         self._resource_spec_code = resource_spec_code
 
     @property
+    def to_period(self):
+        r"""Gets the to_period of this SubscriptionResource.
+
+        当前资源是否能进行按需转包周期操作
+
+        :return: The to_period of this SubscriptionResource.
+        :rtype: bool
+        """
+        return self._to_period
+
+    @to_period.setter
+    def to_period(self, to_period):
+        r"""Sets the to_period of this SubscriptionResource.
+
+        当前资源是否能进行按需转包周期操作
+
+        :param to_period: The to_period of this SubscriptionResource.
+        :type to_period: bool
+        """
+        self._to_period = to_period
+
+    @property
     def create_time(self):
         r"""Gets the create_time of this SubscriptionResource.
 
         创建时间戳
 
         :return: The create_time of this SubscriptionResource.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -273,18 +309,40 @@ class SubscriptionResource:
         创建时间戳
 
         :param create_time: The create_time of this SubscriptionResource.
-        :type create_time: str
+        :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this SubscriptionResource.
+
+        更新时间戳
+
+        :return: The update_time of this SubscriptionResource.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this SubscriptionResource.
+
+        更新时间戳
+
+        :param update_time: The update_time of this SubscriptionResource.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     @property
     def expire_time(self):
         r"""Gets the expire_time of this SubscriptionResource.
 
-        到期时间戳，只有按需资源有该字段
+        到期时间戳，只有包年包月资源才有该字段
 
         :return: The expire_time of this SubscriptionResource.
-        :rtype: str
+        :rtype: int
         """
         return self._expire_time
 
@@ -292,10 +350,10 @@ class SubscriptionResource:
     def expire_time(self, expire_time):
         r"""Sets the expire_time of this SubscriptionResource.
 
-        到期时间戳，只有按需资源有该字段
+        到期时间戳，只有包年包月资源才有该字段
 
         :param expire_time: The expire_time of this SubscriptionResource.
-        :type expire_time: str
+        :type expire_time: int
         """
         self._expire_time = expire_time
 

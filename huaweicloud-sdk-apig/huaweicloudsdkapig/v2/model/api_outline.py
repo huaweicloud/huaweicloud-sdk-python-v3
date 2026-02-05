@@ -47,7 +47,7 @@ class ApiOutline:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: API的认证方式
+        :param auth_type: API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
         :type auth_type: str
         :param run_env_name: 发布的环境名
         :type run_env_name: str
@@ -113,7 +113,7 @@ class ApiOutline:
     def auth_type(self):
         r"""Gets the auth_type of this ApiOutline.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :return: The auth_type of this ApiOutline.
         :rtype: str
@@ -124,7 +124,7 @@ class ApiOutline:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this ApiOutline.
 
-        API的认证方式
+        API的认证方式。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
 
         :param auth_type: The auth_type of this ApiOutline.
         :type auth_type: str

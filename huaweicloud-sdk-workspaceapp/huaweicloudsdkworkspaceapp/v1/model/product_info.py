@@ -109,7 +109,7 @@ class ProductInfo:
         :type resource_type: str
         :param cloud_service_type: 云服务类型。
         :type cloud_service_type: str
-        :param volume_product_type: 磁盘产品类型。
+        :param volume_product_type: 磁盘产品类型： - workspace
         :type volume_product_type: str
         :param sessions: 套餐默认支持的最大会话数。
         :type sessions: int
@@ -123,7 +123,7 @@ class ProductInfo:
         :type domain_ids: list[str]
         :param package_type: 套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
         :type package_type: str
-        :param series_type: 系列类型。
+        :param series_type: 系列类型： - d7 - c7
         :type series_type: str
         :param expire_time: 产品套餐过期时间,产品将在该时间点后逐步下架。
         :type expire_time: datetime
@@ -570,7 +570,7 @@ class ProductInfo:
     def volume_product_type(self):
         r"""Gets the volume_product_type of this ProductInfo.
 
-        磁盘产品类型。
+        磁盘产品类型： - workspace
 
         :return: The volume_product_type of this ProductInfo.
         :rtype: str
@@ -581,7 +581,7 @@ class ProductInfo:
     def volume_product_type(self, volume_product_type):
         r"""Sets the volume_product_type of this ProductInfo.
 
-        磁盘产品类型。
+        磁盘产品类型： - workspace
 
         :param volume_product_type: The volume_product_type of this ProductInfo.
         :type volume_product_type: str
@@ -724,7 +724,7 @@ class ProductInfo:
     def series_type(self):
         r"""Gets the series_type of this ProductInfo.
 
-        系列类型。
+        系列类型： - d7 - c7
 
         :return: The series_type of this ProductInfo.
         :rtype: str
@@ -735,7 +735,7 @@ class ProductInfo:
     def series_type(self, series_type):
         r"""Sets the series_type of this ProductInfo.
 
-        系列类型。
+        系列类型： - d7 - c7
 
         :param series_type: The series_type of this ProductInfo.
         :type series_type: str

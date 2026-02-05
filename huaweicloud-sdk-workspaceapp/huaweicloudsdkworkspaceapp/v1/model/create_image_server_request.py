@@ -16,21 +16,25 @@ class CreateImageServerRequest:
 
     openapi_types = {
         'service_transaction_id': 'str',
+        'x_linked_id': 'str',
         'body': 'CreateImageServerReq'
     }
 
     attribute_map = {
         'service_transaction_id': 'Service-Transaction-Id',
+        'x_linked_id': 'X-Linked-Id',
         'body': 'body'
     }
 
-    def __init__(self, service_transaction_id=None, body=None):
+    def __init__(self, service_transaction_id=None, x_linked_id=None, body=None):
         r"""CreateImageServerRequest
 
         The model defined in huaweicloud sdk
 
         :param service_transaction_id: CBC接口回调时，请求头里带上的业务ID。
         :type service_transaction_id: str
+        :param x_linked_id: 交易组件调用时下发的关联ID。
+        :type x_linked_id: str
         :param body: Body of the CreateImageServerRequest
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateImageServerReq`
         """
@@ -38,11 +42,14 @@ class CreateImageServerRequest:
         
 
         self._service_transaction_id = None
+        self._x_linked_id = None
         self._body = None
         self.discriminator = None
 
         if service_transaction_id is not None:
             self.service_transaction_id = service_transaction_id
+        if x_linked_id is not None:
+            self.x_linked_id = x_linked_id
         if body is not None:
             self.body = body
 
@@ -67,6 +74,28 @@ class CreateImageServerRequest:
         :type service_transaction_id: str
         """
         self._service_transaction_id = service_transaction_id
+
+    @property
+    def x_linked_id(self):
+        r"""Gets the x_linked_id of this CreateImageServerRequest.
+
+        交易组件调用时下发的关联ID。
+
+        :return: The x_linked_id of this CreateImageServerRequest.
+        :rtype: str
+        """
+        return self._x_linked_id
+
+    @x_linked_id.setter
+    def x_linked_id(self, x_linked_id):
+        r"""Sets the x_linked_id of this CreateImageServerRequest.
+
+        交易组件调用时下发的关联ID。
+
+        :param x_linked_id: The x_linked_id of this CreateImageServerRequest.
+        :type x_linked_id: str
+        """
+        self._x_linked_id = x_linked_id
 
     @property
     def body(self):

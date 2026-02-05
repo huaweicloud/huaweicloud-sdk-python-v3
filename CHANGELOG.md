@@ -1,3 +1,352 @@
+# 3.1.186 2026-02-05
+
+### HuaweiCloud SDK APIG
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListAiApiKeys`, `CreateAiApiKey`, `ShowDetailsOfAiApiKey`, `DeleteAiApiKey`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDetailsOfAppV2**
+    - changes of response param
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **UpdateAppV2**
+    - changes of request param
+      - `+ related_domain_id`
+      - `+ related_project_id`
+  - **ResettingAppSecretV2**
+    - changes of response param
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **AssociateCertificateV2**
+    - changes of response param
+      - `+ api_group_id`
+      - `+ instance_id`
+      - `+ api_group_name`
+      - `- ssl_infos`
+  - **ShowDetailsOfAclPolicyV2**
+    - changes of response param
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **UpdateAclStrategyV2**
+    - changes of response param
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **AddEipV2**
+    - changes of response param
+      - `+ eip_status: enum value [FREEZED,BIND_ERROR,BINDING,PENDING_DELETE,PENDING_CREATE,NOTIFYING,NOTIFY_DELETE,PENDING_UPDATE,DOWN,ACTIVE,ELB,VPN,ERROR]`
+  - **AssociateSignatureKeyV2**
+    - changes of response param
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListSignatureKeysBindedToApiV2**
+    - changes of response param
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListApisNotBoundWithSignatureKeyV2**
+    - changes of response param
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **ListApisBindedToSignatureKeyV2**
+    - changes of response param
+      - `+ bindings.api_type: enum value [1,2]`
+  - **ListApisBindedToRequestThrottlingPolicyV2**
+    - changes of response param
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **ListApisUnbindedToRequestThrottlingPolicyV2**
+    - changes of response param
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ apis.type: enum value [1,2]`
+  - **CreateAnAppV2**
+    - changes of request param
+      - `+ related_domain_id`
+      - `+ related_project_id`
+    - changes of response param
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `- app_type: enum value [roma]`
+  - **ListAppsV2**
+    - changes of request param
+      - `+ related_domain_id`
+      - `+ related_project_id`
+      - `+ status: enum value [1]`
+    - changes of response param
+      - `+ related_project_id`
+      - `+ related_domain_id`
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+      - `- apps.app_type: enum value [roma]`
+  - **ListAppsBindedToApiV2**
+    - changes of response param
+      - `+ auths.api_type: enum value [1,2]`
+  - **ListApisBindedToAppV2**
+    - changes of response param
+      - `+ auths.api_type: enum value [1,2]`
+  - **ListApisUnbindedToAppV2**
+    - changes of response param
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+  - **CreateAclStrategyV2**
+    - changes of response param
+      - `+ acl_type: enum value [PERMIT,DENY]`
+  - **ListAclStrategiesV2**
+    - changes of request param
+      - `+ acl_type: enum value [PERMIT,DENY]`
+    - changes of response param
+      - `+ acls.acl_type: enum value [PERMIT,DENY]`
+  - **ListApisBindedToAclPolicyV2**
+    - changes of response param
+      - `* apis.api_type: int64 -> int32`
+  - **ListApisUnbindedToAclPolicyV2**
+    - changes of response param
+      - `+ apis.type: enum value [1,2]`
+      - `+ apis.auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+  - **ListLatelyApiStatisticsV2**
+    - changes of response param
+      - `+ list.status: enum value [1]`
+  - **ListAppQuotaBoundApps**
+    - changes of response param
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+  - **ListAppQuotaBindableApps**
+    - changes of response param
+      - `+ apps.related_domain_id`
+      - `+ apps.related_project_id`
+  - **ShowDetailsOfApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **UpdateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **ListCustomAuthorizersV2**
+    - changes of request param
+      - `+ type: enum value [FRONTEND,BACKEND]`
+  - **CreateApiGroupV2**
+    - changes of response param
+      - `+ url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* url_domains.ssl_infos.type: string -> int32`
+  - **ListApiGroupsV2**
+    - changes of response param
+      - `+ groups.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* groups.url_domains.ssl_infos.type: string -> int32`
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ backend_api.vpc_channel_status: enum value [3,4]`
+    - changes of response param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ backend_api.vpc_channel_status: enum value [3,4]`
+    - changes of response param
+      - `+ policy_https.member_group_url_infos`
+      - `+ policy_https.vpc_channel_status: enum value [1,2,3,4]`
+      - `+ backend_api.member_group_url_infos`
+      - `+ api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* api_group_info.url_domains.ssl_infos.type: string -> int32`
+  - **ListApisV2**
+    - changes of request param
+      - `+ auth_type: enum value [NONE,APP,IAM,AUTHORIZER]`
+      - `+ type: enum value [1,2]`
+    - changes of response param
+      - `+ apis.backend_api.member_group_url_infos`
+      - `+ apis.api_group_info.url_domains.ssl_infos.is_has_trusted_root_ca`
+      - `* apis.api_group_info.url_domains.ssl_infos.type: string -> int32`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchModifyReadWriteStrategy`
+    - `ListSqlBlack`
+    - `ModifySqlBlackList`
+    - `ListSlowLogAnalysis`
+    - `ShowIpGroup`
+    - `SwitchIpGroup`
+    - `ShowMigrationLog`
+    - `CheckDataNodeConnection`
+    - `ListDdms`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `CheckDataNodeConnectionV0V3`
+  - **ListConfigurationApplyHistories**
+    - changes of response param
+      - `+ total`
+      - `+ histories`
+      - `- rds_check_infos`
+  - **CopyConfiguration**
+    - changes of request param
+      - `+ new_name`
+      - `+ description`
+      - `- copy_para`
+      - `- source_id`
+  - **ListInstancesConfigurations**
+    - changes of response param
+      - `+ total`
+      - `- instance_count_limit`
+      - `+ entities.instance_id`
+      - `+ entities.instance_name`
+      - `- entities.entity_id`
+      - `- entities.config_id`
+  - **CompareParameterGroups**
+    - changes of request param
+      - `+ source_id`
+      - `+ target_id`
+      - `- diff_para`
+  - **ShowDdmDetail**
+    - changes of response param
+      - `* instances.tags_info: list<TagsInfo> -> object`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `DeleteBackupSelection`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCollectConfig**
+    - changes of response param
+      - `+ config_statistics`
+      - `- cofing_statistics`
+      - `+ all_vendors.csvc_list.source_list.csvc_help`
+      - `- all_vendors.csvc_list.source_list.csvc_hzzelp`
+      - `+ data_list.datasets.reference.csvc_help`
+      - `- data_list.datasets.reference.csvc_hzzelp`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CheckPublishApp`
+    - `ChangeCluster`
+    - `ListHotspotSessionConfig`
+    - `CreateHotspotSessionConfig`
+    - `UpdateHotspotSessionConfig`
+    - `ListNonMigrationUsers`
+    - `UpdateNonMigrationUsers`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ShowPrivacyStatement`, `SignPrivacyStatement`
+  - **RecreateServerImage**
+    - changes of request param
+      - `+ execute_sysprep`
+  - **ListAppConnection**
+    - changes of response param
+      - `+ items.app_id`
+  - **ShowScalingPolicy**
+    - changes of response param
+      - `+ scaling_policy_by_resource`
+  - **CreateOrUpdateScalingPolicy**
+    - changes of request param
+      - `+ scaling_policy_by_resource`
+    - changes of response param
+      - `+ scaling_policy_by_resource`
+  - **ListProjectConfigs**
+    - changes of response param
+      - `+ items.cluster_group_id`
+  - **ShowProjectConfig**
+    - changes of response param
+      - `+ project_config.cluster_group_id`
+  - **CreateCloudStorage**
+    - changes of request param
+      - `+ project_config_cluster_group_id_list`
+      - `- project_config_ids`
+  - **ListCloudStorage**
+    - changes of response param
+      - `+ items.cluster_group_id`
+  - **ShowServerGroup**
+    - changes of response param
+      - `+ scaling_policy_by_resource`
+      - `+ scaling_policy.scaling_policy_by_resource`
+  - **CreateImageServer**
+    - changes of request param
+      - `+ X-Linked-Id`
+  - **CreateServerGroup**
+    - changes of response param
+      - `+ scaling_policy_by_resource`
+      - `+ scaling_policy.scaling_policy_by_resource`
+  - **ListServerGroups**
+    - changes of response param
+      - `+ scaling_policy_by_resource`
+      - `+ items.scaling_policy.scaling_policy_by_resource`
+  - **ShowOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.user_profile_management`
+  - **ListPolicyOfPolicyGroup**
+    - changes of response param
+      - `+ policies.user_profile_management`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `+ items.policies.user_profile_management`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.user_profile_management`
+  - **ShowPolicyGroup**
+    - changes of response param
+      - `+ policy_group.policies.user_profile_management`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.user_profile_management`
+  - **ListPolicyGroupDetailInfo**
+    - changes of response param
+      - `+ items.policies.user_profile_management`
+  - **ListPolicyTemplate**
+    - changes of response param
+      - `- items.targets`
+      - `- items.policies`
+      - `* items: list<PolicyGroup> -> list<PolicyGroupForTemplate>`
+  - **CreatePolicyTemplate**
+    - changes of request param
+      - `+ policy_group.policies.user_profile_management`
+  - **UpdatePolicyTemplate**
+    - changes of request param
+      - `+ policy_group.policies.user_profile_management`
+
 # 3.1.185 2026-01-29
 
 ### HuaweiCloud SDK BSS

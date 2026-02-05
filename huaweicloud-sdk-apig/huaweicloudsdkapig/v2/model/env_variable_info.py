@@ -41,7 +41,7 @@ class EnvVariableInfo:
         :type env_id: str
         :param group_id: API分组编号
         :type group_id: str
-        :param variable_name: 变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param variable_name: 变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值替换。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type variable_name: str
         :param id: 环境变量编号
         :type id: str
@@ -136,7 +136,7 @@ class EnvVariableInfo:
     def variable_name(self):
         r"""Gets the variable_name of this EnvVariableInfo.
 
-        变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 > 中文字符必须为UTF-8或者unicode编码。
+        变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值替换。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The variable_name of this EnvVariableInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class EnvVariableInfo:
     def variable_name(self, variable_name):
         r"""Sets the variable_name of this EnvVariableInfo.
 
-        变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 > 中文字符必须为UTF-8或者unicode编码。
+        变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值替换。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param variable_name: The variable_name of this EnvVariableInfo.
         :type variable_name: str

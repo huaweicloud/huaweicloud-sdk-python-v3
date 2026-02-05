@@ -29,7 +29,8 @@ class CreateDpeMappingRequestBody:
         'update_time': 'str',
         'modifier_id': 'str',
         'modifier_name': 'str',
-        'mapper': 'DpeMappingDetail'
+        'mapper': 'DpeMappingDetail',
+        'classifier': 'DpeClassifyCreate'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class CreateDpeMappingRequestBody:
         'update_time': 'update_time',
         'modifier_id': 'modifier_id',
         'modifier_name': 'modifier_name',
-        'mapper': 'mapper'
+        'mapper': 'mapper',
+        'classifier': 'classifier'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, data_source=None, status=None, description=None, create_time=None, creator_id=None, creator_name=None, update_time=None, modifier_id=None, modifier_name=None, mapper=None):
+    def __init__(self, id=None, name=None, project_id=None, workspace_id=None, dataclass_id=None, data_source=None, status=None, description=None, create_time=None, creator_id=None, creator_name=None, update_time=None, modifier_id=None, modifier_name=None, mapper=None, classifier=None):
         r"""CreateDpeMappingRequestBody
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class CreateDpeMappingRequestBody:
         :type modifier_name: str
         :param mapper: 
         :type mapper: :class:`huaweicloudsdksecmaster.v1.DpeMappingDetail`
+        :param classifier: 
+        :type classifier: :class:`huaweicloudsdksecmaster.v1.DpeClassifyCreate`
         """
         
         
@@ -104,6 +108,7 @@ class CreateDpeMappingRequestBody:
         self._modifier_id = None
         self._modifier_name = None
         self._mapper = None
+        self._classifier = None
         self.discriminator = None
 
         self.id = id
@@ -133,6 +138,8 @@ class CreateDpeMappingRequestBody:
         if modifier_name is not None:
             self.modifier_name = modifier_name
         self.mapper = mapper
+        if classifier is not None:
+            self.classifier = classifier
 
     @property
     def id(self):
@@ -459,6 +466,24 @@ class CreateDpeMappingRequestBody:
         :type mapper: :class:`huaweicloudsdksecmaster.v1.DpeMappingDetail`
         """
         self._mapper = mapper
+
+    @property
+    def classifier(self):
+        r"""Gets the classifier of this CreateDpeMappingRequestBody.
+
+        :return: The classifier of this CreateDpeMappingRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v1.DpeClassifyCreate`
+        """
+        return self._classifier
+
+    @classifier.setter
+    def classifier(self, classifier):
+        r"""Sets the classifier of this CreateDpeMappingRequestBody.
+
+        :param classifier: The classifier of this CreateDpeMappingRequestBody.
+        :type classifier: :class:`huaweicloudsdksecmaster.v1.DpeClassifyCreate`
+        """
+        self._classifier = classifier
 
     def to_dict(self):
         result = {}

@@ -29,9 +29,9 @@ class OpenIngressEipReq:
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_size: 入公网带宽  单位：Mbit/s
+        :param bandwidth_size: 入公网带宽  单位：Mbit/s 
         :type bandwidth_size: int
-        :param bandwidth_charging_mode: 入公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+        :param bandwidth_charging_mode: 入公网带宽计费类型： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
         :type bandwidth_charging_mode: str
         """
         
@@ -50,7 +50,7 @@ class OpenIngressEipReq:
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this OpenIngressEipReq.
 
-        入公网带宽  单位：Mbit/s
+        入公网带宽  单位：Mbit/s 
 
         :return: The bandwidth_size of this OpenIngressEipReq.
         :rtype: int
@@ -61,7 +61,7 @@ class OpenIngressEipReq:
     def bandwidth_size(self, bandwidth_size):
         r"""Sets the bandwidth_size of this OpenIngressEipReq.
 
-        入公网带宽  单位：Mbit/s
+        入公网带宽  单位：Mbit/s 
 
         :param bandwidth_size: The bandwidth_size of this OpenIngressEipReq.
         :type bandwidth_size: int
@@ -72,7 +72,7 @@ class OpenIngressEipReq:
     def bandwidth_charging_mode(self):
         r"""Gets the bandwidth_charging_mode of this OpenIngressEipReq.
 
-        入公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+        入公网带宽计费类型： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :return: The bandwidth_charging_mode of this OpenIngressEipReq.
         :rtype: str
@@ -83,7 +83,7 @@ class OpenIngressEipReq:
     def bandwidth_charging_mode(self, bandwidth_charging_mode):
         r"""Sets the bandwidth_charging_mode of this OpenIngressEipReq.
 
-        入公网带宽计费类型： - bandwidth：按带宽计费 - traffic：按流量计费
+        入公网带宽计费类型： - bandwidth：按带宽计费 - [traffic：按流量计费](tag:hws_test) 
 
         :param bandwidth_charging_mode: The bandwidth_charging_mode of this OpenIngressEipReq.
         :type bandwidth_charging_mode: str

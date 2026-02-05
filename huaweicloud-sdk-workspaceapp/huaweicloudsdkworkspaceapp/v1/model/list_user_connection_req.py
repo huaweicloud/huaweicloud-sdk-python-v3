@@ -67,7 +67,7 @@ class ListUserConnectionReq:
 
         :param id: 登录记录唯一标识ID。
         :type id: str
-        :param connect_type: 用户连接类别。
+        :param connect_type: 用户连接类别,1代表共享桌面，2代表普通应用。
         :type connect_type: str
         :param user_name: 登录用户名称。
         :type user_name: str
@@ -83,7 +83,7 @@ class ListUserConnectionReq:
         :type client_name: str
         :param client_version: 客户端版本。
         :type client_version: str
-        :param client_type: 客户端操作系统类型。
+        :param client_type: 客户端操作系统类型： - Mac - Windows
         :type client_type: str
         :param agent_version: aps hda版本。
         :type agent_version: str
@@ -95,13 +95,13 @@ class ListUserConnectionReq:
         :type wi_ip: str
         :param public_ip: 客户端出口ip。
         :type public_ip: str
-        :param update_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        :param update_time: 登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z。
         :type update_time: datetime
         :param tenant_id: 租户id。
         :type tenant_id: str
-        :param login_start_time: 登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        :param login_start_time: 登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type login_start_time: datetime
-        :param login_end_time: 登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        :param login_end_time: 登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type login_end_time: datetime
         :param virtual_ip: 会话虚拟ip。
         :type virtual_ip: str
@@ -198,7 +198,7 @@ class ListUserConnectionReq:
     def connect_type(self):
         r"""Gets the connect_type of this ListUserConnectionReq.
 
-        用户连接类别。
+        用户连接类别,1代表共享桌面，2代表普通应用。
 
         :return: The connect_type of this ListUserConnectionReq.
         :rtype: str
@@ -209,7 +209,7 @@ class ListUserConnectionReq:
     def connect_type(self, connect_type):
         r"""Sets the connect_type of this ListUserConnectionReq.
 
-        用户连接类别。
+        用户连接类别,1代表共享桌面，2代表普通应用。
 
         :param connect_type: The connect_type of this ListUserConnectionReq.
         :type connect_type: str
@@ -374,7 +374,7 @@ class ListUserConnectionReq:
     def client_type(self):
         r"""Gets the client_type of this ListUserConnectionReq.
 
-        客户端操作系统类型。
+        客户端操作系统类型： - Mac - Windows
 
         :return: The client_type of this ListUserConnectionReq.
         :rtype: str
@@ -385,7 +385,7 @@ class ListUserConnectionReq:
     def client_type(self, client_type):
         r"""Sets the client_type of this ListUserConnectionReq.
 
-        客户端操作系统类型。
+        客户端操作系统类型： - Mac - Windows
 
         :param client_type: The client_type of this ListUserConnectionReq.
         :type client_type: str
@@ -506,7 +506,7 @@ class ListUserConnectionReq:
     def update_time(self):
         r"""Gets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z。
 
         :return: The update_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -517,7 +517,7 @@ class ListUserConnectionReq:
     def update_time(self, update_time):
         r"""Sets the update_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z。
 
         :param update_time: The update_time of this ListUserConnectionReq.
         :type update_time: datetime
@@ -550,7 +550,7 @@ class ListUserConnectionReq:
     def login_start_time(self):
         r"""Gets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The login_start_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -561,7 +561,7 @@ class ListUserConnectionReq:
     def login_start_time(self, login_start_time):
         r"""Sets the login_start_time of this ListUserConnectionReq.
 
-        登录应用开始时间，格式 2022-10-31T08:07:39Z。
+        登录应用开始时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param login_start_time: The login_start_time of this ListUserConnectionReq.
         :type login_start_time: datetime
@@ -572,7 +572,7 @@ class ListUserConnectionReq:
     def login_end_time(self):
         r"""Gets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The login_end_time of this ListUserConnectionReq.
         :rtype: datetime
@@ -583,7 +583,7 @@ class ListUserConnectionReq:
     def login_end_time(self, login_end_time):
         r"""Sets the login_end_time of this ListUserConnectionReq.
 
-        登录应用结束时间，格式 2022-10-31T08:07:39Z。
+        登录应用结束时间，只支持导出30天内数据，格式 2022-10-31T08:07:39Z，参数中login_start_time与login_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param login_end_time: The login_end_time of this ListUserConnectionReq.
         :type login_end_time: datetime

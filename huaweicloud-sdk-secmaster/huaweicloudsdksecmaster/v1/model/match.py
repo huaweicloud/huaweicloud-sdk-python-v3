@@ -31,7 +31,7 @@ class Match:
 
         :param key: 键。第一期限定为resource_name,后续扩展。
         :type key: str
-        :param value: 值。每个值最大长度255个unicode字符 。不校验字符集范。
+        :param value: 值。每个值最大长度255个unicode字符。
         :type value: str
         """
         
@@ -70,7 +70,7 @@ class Match:
     def value(self):
         r"""Gets the value of this Match.
 
-        值。每个值最大长度255个unicode字符 。不校验字符集范。
+        值。每个值最大长度255个unicode字符。
 
         :return: The value of this Match.
         :rtype: str
@@ -81,7 +81,7 @@ class Match:
     def value(self, value):
         r"""Sets the value of this Match.
 
-        值。每个值最大长度255个unicode字符 。不校验字符集范。
+        值。每个值最大长度255个unicode字符。
 
         :param value: The value of this Match.
         :type value: str

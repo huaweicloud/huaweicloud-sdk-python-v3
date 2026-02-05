@@ -16,20 +16,51 @@ class ResetParameterGroupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'need_restart': 'bool'
     }
 
     attribute_map = {
+        'need_restart': 'need_restart'
     }
 
-    def __init__(self):
+    def __init__(self, need_restart=None):
         r"""ResetParameterGroupResponse
 
         The model defined in huaweicloud sdk
 
+        :param need_restart: **参数解释**：  是否需要重启。  **参数范围**：  false、true。
+        :type need_restart: bool
         """
         
         super().__init__()
+
+        self._need_restart = None
         self.discriminator = None
+
+        if need_restart is not None:
+            self.need_restart = need_restart
+
+    @property
+    def need_restart(self):
+        r"""Gets the need_restart of this ResetParameterGroupResponse.
+
+        **参数解释**：  是否需要重启。  **参数范围**：  false、true。
+
+        :return: The need_restart of this ResetParameterGroupResponse.
+        :rtype: bool
+        """
+        return self._need_restart
+
+    @need_restart.setter
+    def need_restart(self, need_restart):
+        r"""Sets the need_restart of this ResetParameterGroupResponse.
+
+        **参数解释**：  是否需要重启。  **参数范围**：  false、true。
+
+        :param need_restart: The need_restart of this ResetParameterGroupResponse.
+        :type need_restart: bool
+        """
+        self._need_restart = need_restart
 
     def to_dict(self):
         import warnings

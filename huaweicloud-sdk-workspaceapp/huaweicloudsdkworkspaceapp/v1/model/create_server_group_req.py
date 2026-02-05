@@ -123,7 +123,7 @@ class CreateServerGroupReq:
         :type enterprise_project_id: str
         :param primary_server_group_id: 主服务器组id,绑定主服务器组，则创建的是备服务器。
         :type primary_server_group_id: str
-        :param server_group_status: 是否启用服务器组。
+        :param server_group_status: 是否启用服务器组： - true： 启用 - false： 禁用
         :type server_group_status: bool
         """
         
@@ -702,7 +702,7 @@ class CreateServerGroupReq:
     def server_group_status(self):
         r"""Gets the server_group_status of this CreateServerGroupReq.
 
-        是否启用服务器组。
+        是否启用服务器组： - true： 启用 - false： 禁用
 
         :return: The server_group_status of this CreateServerGroupReq.
         :rtype: bool
@@ -713,7 +713,7 @@ class CreateServerGroupReq:
     def server_group_status(self, server_group_status):
         r"""Sets the server_group_status of this CreateServerGroupReq.
 
-        是否启用服务器组。
+        是否启用服务器组： - true： 启用 - false： 禁用
 
         :param server_group_status: The server_group_status of this CreateServerGroupReq.
         :type server_group_status: bool

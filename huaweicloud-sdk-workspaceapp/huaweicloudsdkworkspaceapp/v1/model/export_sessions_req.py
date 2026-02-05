@@ -45,9 +45,9 @@ class ExportSessionsReq:
 
         :param user_name: 用户名。
         :type user_name: str
-        :param query_begin_time: 搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        :param query_begin_time: 搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type query_begin_time: datetime
-        :param query_end_time: 搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        :param query_end_time: 搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
         :type query_end_time: datetime
         :param app_server_group_id: AppServer组ID。
         :type app_server_group_id: str
@@ -121,7 +121,7 @@ class ExportSessionsReq:
     def query_begin_time(self):
         r"""Gets the query_begin_time of this ExportSessionsReq.
 
-        搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The query_begin_time of this ExportSessionsReq.
         :rtype: datetime
@@ -132,7 +132,7 @@ class ExportSessionsReq:
     def query_begin_time(self, query_begin_time):
         r"""Sets the query_begin_time of this ExportSessionsReq.
 
-        搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        搜索开始时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param query_begin_time: The query_begin_time of this ExportSessionsReq.
         :type query_begin_time: datetime
@@ -143,7 +143,7 @@ class ExportSessionsReq:
     def query_end_time(self):
         r"""Gets the query_end_time of this ExportSessionsReq.
 
-        搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :return: The query_end_time of this ExportSessionsReq.
         :rtype: datetime
@@ -154,7 +154,7 @@ class ExportSessionsReq:
     def query_end_time(self, query_end_time):
         r"""Sets the query_end_time of this ExportSessionsReq.
 
-        搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z。
+        搜索结束时间，以会话开始时间为条件查询，只支持导出30天内数据，格式2024-02-27T03:47:51.182Z，参数中query_begin_time与query_end_time必须同时存在或都不存在，都不存在时导出近一个月的数据。
 
         :param query_end_time: The query_end_time of this ExportSessionsReq.
         :type query_end_time: datetime

@@ -12,11 +12,20 @@ from huaweicloudsdksis.v1.model.collect_transcriber_job_response import CollectT
 from huaweicloudsdksis.v1.model.config import Config
 from huaweicloudsdksis.v1.model.create_vocabulary_request import CreateVocabularyRequest
 from huaweicloudsdksis.v1.model.create_vocabulary_response import CreateVocabularyResponse
+from huaweicloudsdksis.v1.model.create_voice_request import CreateVoiceRequest
+from huaweicloudsdksis.v1.model.create_voice_response import CreateVoiceResponse
 from huaweicloudsdksis.v1.model.custom_result import CustomResult
 from huaweicloudsdksis.v1.model.delete_vocabulary_request import DeleteVocabularyRequest
 from huaweicloudsdksis.v1.model.delete_vocabulary_response import DeleteVocabularyResponse
 from huaweicloudsdksis.v1.model.flash_result import FlashResult
 from huaweicloudsdksis.v1.model.flash_score_result import FlashScoreResult
+from huaweicloudsdksis.v1.model.generate_speech_request import GenerateSpeechRequest
+from huaweicloudsdksis.v1.model.generate_speech_request_body import GenerateSpeechRequestBody
+from huaweicloudsdksis.v1.model.generate_speech_request_body_config import GenerateSpeechRequestBodyConfig
+from huaweicloudsdksis.v1.model.generate_speech_response import GenerateSpeechResponse
+from huaweicloudsdksis.v1.model.generate_speech_rsp_result import GenerateSpeechRspResult
+from huaweicloudsdksis.v1.model.list_voices_request import ListVoicesRequest
+from huaweicloudsdksis.v1.model.list_voices_response import ListVoicesResponse
 from huaweicloudsdksis.v1.model.post_create_vocab_req import PostCreateVocabReq
 from huaweicloudsdksis.v1.model.post_custom_tts_req import PostCustomTTSReq
 from huaweicloudsdksis.v1.model.post_short_audio_req import PostShortAudioReq
@@ -28,6 +37,9 @@ from huaweicloudsdksis.v1.model.recognize_flash_asr_request import RecognizeFlas
 from huaweicloudsdksis.v1.model.recognize_flash_asr_response import RecognizeFlashAsrResponse
 from huaweicloudsdksis.v1.model.recognize_short_audio_request import RecognizeShortAudioRequest
 from huaweicloudsdksis.v1.model.recognize_short_audio_response import RecognizeShortAudioResponse
+from huaweicloudsdksis.v1.model.register_voice_req import RegisterVoiceReq
+from huaweicloudsdksis.v1.model.register_voice_req_config import RegisterVoiceReqConfig
+from huaweicloudsdksis.v1.model.register_voice_response_body_result import RegisterVoiceResponseBodyResult
 from huaweicloudsdksis.v1.model.result import Result
 from huaweicloudsdksis.v1.model.run_tts_request import RunTtsRequest
 from huaweicloudsdksis.v1.model.run_tts_response import RunTtsResponse
@@ -44,5 +56,7 @@ from huaweicloudsdksis.v1.model.tts_config import TtsConfig
 from huaweicloudsdksis.v1.model.update_vocabulary_request import UpdateVocabularyRequest
 from huaweicloudsdksis.v1.model.update_vocabulary_response import UpdateVocabularyResponse
 from huaweicloudsdksis.v1.model.vocab_info import VocabInfo
+from huaweicloudsdksis.v1.model.voice_list_result import VoiceListResult
+from huaweicloudsdksis.v1.model.voice_list_result_voices import VoiceListResultVoices
 from huaweicloudsdksis.v1.model.word_info import WordInfo
 

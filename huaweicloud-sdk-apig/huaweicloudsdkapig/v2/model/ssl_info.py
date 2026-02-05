@@ -18,17 +18,19 @@ class SslInfo:
         'ssl_id': 'str',
         'ssl_name': 'str',
         'algorithm_type': 'str',
-        'type': 'str'
+        'type': 'int',
+        'is_has_trusted_root_ca': 'bool'
     }
 
     attribute_map = {
         'ssl_id': 'ssl_id',
         'ssl_name': 'ssl_name',
         'algorithm_type': 'algorithm_type',
-        'type': 'type'
+        'type': 'type',
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca'
     }
 
-    def __init__(self, ssl_id=None, ssl_name=None, algorithm_type=None, type=None):
+    def __init__(self, ssl_id=None, ssl_name=None, algorithm_type=None, type=None, is_has_trusted_root_ca=None):
         r"""SslInfo
 
         The model defined in huaweicloud sdk
@@ -39,8 +41,10 @@ class SslInfo:
         :type ssl_name: str
         :param algorithm_type: 证书算法类型： - RSA - ECC - SM2
         :type algorithm_type: str
-        :param type: 证书可见范围： - instance：当前实例 - global：全局
-        :type type: str
+        :param type: 证书可见范围： - 1: 当前实例 - 2: 全局 
+        :type type: int
+        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+        :type is_has_trusted_root_ca: bool
         """
         
         
@@ -49,6 +53,7 @@ class SslInfo:
         self._ssl_name = None
         self._algorithm_type = None
         self._type = None
+        self._is_has_trusted_root_ca = None
         self.discriminator = None
 
         if ssl_id is not None:
@@ -59,6 +64,8 @@ class SslInfo:
             self.algorithm_type = algorithm_type
         if type is not None:
             self.type = type
+        if is_has_trusted_root_ca is not None:
+            self.is_has_trusted_root_ca = is_has_trusted_root_ca
 
     @property
     def ssl_id(self):
@@ -130,10 +137,10 @@ class SslInfo:
     def type(self):
         r"""Gets the type of this SslInfo.
 
-        证书可见范围： - instance：当前实例 - global：全局
+        证书可见范围： - 1: 当前实例 - 2: 全局 
 
         :return: The type of this SslInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._type
 
@@ -141,12 +148,34 @@ class SslInfo:
     def type(self, type):
         r"""Sets the type of this SslInfo.
 
-        证书可见范围： - instance：当前实例 - global：全局
+        证书可见范围： - 1: 当前实例 - 2: 全局 
 
         :param type: The type of this SslInfo.
-        :type type: str
+        :type type: int
         """
         self._type = type
+
+    @property
+    def is_has_trusted_root_ca(self):
+        r"""Gets the is_has_trusted_root_ca of this SslInfo.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :return: The is_has_trusted_root_ca of this SslInfo.
+        :rtype: bool
+        """
+        return self._is_has_trusted_root_ca
+
+    @is_has_trusted_root_ca.setter
+    def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
+        r"""Sets the is_has_trusted_root_ca of this SslInfo.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。
+
+        :param is_has_trusted_root_ca: The is_has_trusted_root_ca of this SslInfo.
+        :type is_has_trusted_root_ca: bool
+        """
+        self._is_has_trusted_root_ca = is_has_trusted_root_ca
 
     def to_dict(self):
         result = {}

@@ -24,6 +24,7 @@ class SubscriptionResourceInfo:
         'resource_status': 'int',
         'order_id': 'str',
         'charging_mode': 'str',
+        'to_period': 'bool',
         'tag_list': 'list[TagInfo]'
     }
 
@@ -37,10 +38,11 @@ class SubscriptionResourceInfo:
         'resource_status': 'resource_status',
         'order_id': 'order_id',
         'charging_mode': 'charging_mode',
+        'to_period': 'to_period',
         'tag_list': 'tag_list'
     }
 
-    def __init__(self, resource_id=None, resource_size=None, resource_type=None, resource_spec_code=None, create_time=None, expire_time=None, resource_status=None, order_id=None, charging_mode=None, tag_list=None):
+    def __init__(self, resource_id=None, resource_size=None, resource_type=None, resource_spec_code=None, create_time=None, expire_time=None, resource_status=None, order_id=None, charging_mode=None, to_period=None, tag_list=None):
         r"""SubscriptionResourceInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class SubscriptionResourceInfo:
         :type order_id: str
         :param charging_mode: 计费模式，目前有包周期（包年包月）PREPAID、按需POSTPAID，大小写不敏感
         :type charging_mode: str
+        :param to_period: 当前资源是否能进行按需转包周期操作
+        :type to_period: bool
         :param tag_list: 资源列表
         :type tag_list: list[:class:`huaweicloudsdksecmaster.v1.TagInfo`]
         """
@@ -78,6 +82,7 @@ class SubscriptionResourceInfo:
         self._resource_status = None
         self._order_id = None
         self._charging_mode = None
+        self._to_period = None
         self._tag_list = None
         self.discriminator = None
 
@@ -99,6 +104,8 @@ class SubscriptionResourceInfo:
             self.order_id = order_id
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if to_period is not None:
+            self.to_period = to_period
         if tag_list is not None:
             self.tag_list = tag_list
 
@@ -299,6 +306,28 @@ class SubscriptionResourceInfo:
         :type charging_mode: str
         """
         self._charging_mode = charging_mode
+
+    @property
+    def to_period(self):
+        r"""Gets the to_period of this SubscriptionResourceInfo.
+
+        当前资源是否能进行按需转包周期操作
+
+        :return: The to_period of this SubscriptionResourceInfo.
+        :rtype: bool
+        """
+        return self._to_period
+
+    @to_period.setter
+    def to_period(self, to_period):
+        r"""Sets the to_period of this SubscriptionResourceInfo.
+
+        当前资源是否能进行按需转包周期操作
+
+        :param to_period: The to_period of this SubscriptionResourceInfo.
+        :type to_period: bool
+        """
+        self._to_period = to_period
 
     @property
     def tag_list(self):

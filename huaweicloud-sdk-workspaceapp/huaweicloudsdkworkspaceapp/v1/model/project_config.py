@@ -19,6 +19,7 @@ class ProjectConfig:
         'project_config_name': 'str',
         'storage_quota': 'int',
         'is_relevance': 'bool',
+        'cluster_group_id': 'str',
         'create_time': 'datetime'
     }
 
@@ -27,10 +28,11 @@ class ProjectConfig:
         'project_config_name': 'project_config_name',
         'storage_quota': 'storage_quota',
         'is_relevance': 'is_relevance',
+        'cluster_group_id': 'cluster_group_id',
         'create_time': 'create_time'
     }
 
-    def __init__(self, project_config_id=None, project_config_name=None, storage_quota=None, is_relevance=None, create_time=None):
+    def __init__(self, project_config_id=None, project_config_name=None, storage_quota=None, is_relevance=None, cluster_group_id=None, create_time=None):
         r"""ProjectConfig
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ProjectConfig:
         :type storage_quota: int
         :param is_relevance: 是否已经关联
         :type is_relevance: bool
+        :param cluster_group_id: sfs集群ID。
+        :type cluster_group_id: str
         :param create_time: 创建时间。
         :type create_time: datetime
         """
@@ -53,6 +57,7 @@ class ProjectConfig:
         self._project_config_name = None
         self._storage_quota = None
         self._is_relevance = None
+        self._cluster_group_id = None
         self._create_time = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class ProjectConfig:
             self.storage_quota = storage_quota
         if is_relevance is not None:
             self.is_relevance = is_relevance
+        if cluster_group_id is not None:
+            self.cluster_group_id = cluster_group_id
         if create_time is not None:
             self.create_time = create_time
 
@@ -154,6 +161,28 @@ class ProjectConfig:
         :type is_relevance: bool
         """
         self._is_relevance = is_relevance
+
+    @property
+    def cluster_group_id(self):
+        r"""Gets the cluster_group_id of this ProjectConfig.
+
+        sfs集群ID。
+
+        :return: The cluster_group_id of this ProjectConfig.
+        :rtype: str
+        """
+        return self._cluster_group_id
+
+    @cluster_group_id.setter
+    def cluster_group_id(self, cluster_group_id):
+        r"""Sets the cluster_group_id of this ProjectConfig.
+
+        sfs集群ID。
+
+        :param cluster_group_id: The cluster_group_id of this ProjectConfig.
+        :type cluster_group_id: str
+        """
+        self._cluster_group_id = cluster_group_id
 
     @property
     def create_time(self):

@@ -804,8 +804,6 @@ class SwrClient(Client):
         query_params = []
         if 'projectname' in local_var_params:
             query_params.append(('projectname', local_var_params['projectname']))
-        if 'duration_seconds' in local_var_params:
-            query_params.append(('duration_seconds', local_var_params['duration_seconds']))
 
         header_params = {}
 

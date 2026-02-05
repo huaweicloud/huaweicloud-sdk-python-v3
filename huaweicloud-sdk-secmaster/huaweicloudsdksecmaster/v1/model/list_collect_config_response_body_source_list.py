@@ -16,7 +16,7 @@ class ListCollectConfigResponseBodySourceList:
 
     openapi_types = {
         'csvc_display': 'str',
-        'csvc_hzzelp': 'str',
+        'csvc_help': 'str',
         'link': 'str',
         'source_display': 'str',
         'source_help': 'str'
@@ -24,21 +24,21 @@ class ListCollectConfigResponseBodySourceList:
 
     attribute_map = {
         'csvc_display': 'csvc_display',
-        'csvc_hzzelp': 'csvc_hzzelp',
+        'csvc_help': 'csvc_help',
         'link': 'link',
         'source_display': 'source_display',
         'source_help': 'source_help'
     }
 
-    def __init__(self, csvc_display=None, csvc_hzzelp=None, link=None, source_display=None, source_help=None):
+    def __init__(self, csvc_display=None, csvc_help=None, link=None, source_display=None, source_help=None):
         r"""ListCollectConfigResponseBodySourceList
 
         The model defined in huaweicloud sdk
 
         :param csvc_display: 云产品名称
         :type csvc_display: str
-        :param csvc_hzzelp: 云产品描述
-        :type csvc_hzzelp: str
+        :param csvc_help: 云产品描述
+        :type csvc_help: str
         :param link: 链接
         :type link: str
         :param source_display: 日志名称
@@ -50,7 +50,7 @@ class ListCollectConfigResponseBodySourceList:
         
 
         self._csvc_display = None
-        self._csvc_hzzelp = None
+        self._csvc_help = None
         self._link = None
         self._source_display = None
         self._source_help = None
@@ -58,8 +58,8 @@ class ListCollectConfigResponseBodySourceList:
 
         if csvc_display is not None:
             self.csvc_display = csvc_display
-        if csvc_hzzelp is not None:
-            self.csvc_hzzelp = csvc_hzzelp
+        if csvc_help is not None:
+            self.csvc_help = csvc_help
         if link is not None:
             self.link = link
         if source_display is not None:
@@ -90,26 +90,26 @@ class ListCollectConfigResponseBodySourceList:
         self._csvc_display = csvc_display
 
     @property
-    def csvc_hzzelp(self):
-        r"""Gets the csvc_hzzelp of this ListCollectConfigResponseBodySourceList.
+    def csvc_help(self):
+        r"""Gets the csvc_help of this ListCollectConfigResponseBodySourceList.
 
         云产品描述
 
-        :return: The csvc_hzzelp of this ListCollectConfigResponseBodySourceList.
+        :return: The csvc_help of this ListCollectConfigResponseBodySourceList.
         :rtype: str
         """
-        return self._csvc_hzzelp
+        return self._csvc_help
 
-    @csvc_hzzelp.setter
-    def csvc_hzzelp(self, csvc_hzzelp):
-        r"""Sets the csvc_hzzelp of this ListCollectConfigResponseBodySourceList.
+    @csvc_help.setter
+    def csvc_help(self, csvc_help):
+        r"""Sets the csvc_help of this ListCollectConfigResponseBodySourceList.
 
         云产品描述
 
-        :param csvc_hzzelp: The csvc_hzzelp of this ListCollectConfigResponseBodySourceList.
-        :type csvc_hzzelp: str
+        :param csvc_help: The csvc_help of this ListCollectConfigResponseBodySourceList.
+        :type csvc_help: str
         """
-        self._csvc_hzzelp = csvc_hzzelp
+        self._csvc_help = csvc_help
 
     @property
     def link(self):

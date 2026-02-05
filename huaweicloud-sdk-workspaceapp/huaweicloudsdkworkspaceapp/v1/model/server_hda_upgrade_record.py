@@ -57,7 +57,7 @@ class ServerHdaUpgradeRecord:
         :type current_version: str
         :param target_version: 目标的accessAgent版本。
         :type target_version: str
-        :param upgrade_status: HDA升级状态。
+        :param upgrade_status: HDA升级状态： - fail：升级失败 - upgrade success：升级成功
         :type upgrade_status: str
         :param upgrade_time: 更新时间。
         :type upgrade_time: str
@@ -253,7 +253,7 @@ class ServerHdaUpgradeRecord:
     def upgrade_status(self):
         r"""Gets the upgrade_status of this ServerHdaUpgradeRecord.
 
-        HDA升级状态。
+        HDA升级状态： - fail：升级失败 - upgrade success：升级成功
 
         :return: The upgrade_status of this ServerHdaUpgradeRecord.
         :rtype: str
@@ -264,7 +264,7 @@ class ServerHdaUpgradeRecord:
     def upgrade_status(self, upgrade_status):
         r"""Sets the upgrade_status of this ServerHdaUpgradeRecord.
 
-        HDA升级状态。
+        HDA升级状态： - fail：升级失败 - upgrade success：升级成功
 
         :param upgrade_status: The upgrade_status of this ServerHdaUpgradeRecord.
         :type upgrade_status: str

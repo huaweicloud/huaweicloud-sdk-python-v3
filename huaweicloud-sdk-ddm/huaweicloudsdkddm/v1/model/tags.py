@@ -29,9 +29,9 @@ class Tags:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签名称。
+        :param key: **参数解释**：  标签名称。  **参数范围**：  不涉及。
         :type key: str
-        :param value: 标签值。
+        :param value: **参数解释**：  标签值。  **参数范围**：  不涉及。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class Tags:
     def key(self):
         r"""Gets the key of this Tags.
 
-        标签名称。
+        **参数解释**：  标签名称。  **参数范围**：  不涉及。
 
         :return: The key of this Tags.
         :rtype: str
@@ -61,7 +61,7 @@ class Tags:
     def key(self, key):
         r"""Sets the key of this Tags.
 
-        标签名称。
+        **参数解释**：  标签名称。  **参数范围**：  不涉及。
 
         :param key: The key of this Tags.
         :type key: str
@@ -72,7 +72,7 @@ class Tags:
     def value(self):
         r"""Gets the value of this Tags.
 
-        标签值。
+        **参数解释**：  标签值。  **参数范围**：  不涉及。
 
         :return: The value of this Tags.
         :rtype: str
@@ -83,7 +83,7 @@ class Tags:
     def value(self, value):
         r"""Sets the value of this Tags.
 
-        标签值。
+        **参数解释**：  标签值。  **参数范围**：  不涉及。
 
         :param value: The value of this Tags.
         :type value: str

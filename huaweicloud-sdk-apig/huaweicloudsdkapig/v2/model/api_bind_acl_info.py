@@ -47,9 +47,9 @@ class ApiBindAclInfo:
         :type acl_id: str
         :param acl_name: ACL策略名称
         :type acl_name: str
-        :param entity_type: ACL策略作用的对象类型
+        :param entity_type: ACL策略作用的对象类型。 - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID 
         :type entity_type: str
-        :param acl_type: ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
+        :param acl_type: ACL策略类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
         :type acl_type: str
         :param acl_value: ACL策略值
         :type acl_value: str
@@ -143,7 +143,7 @@ class ApiBindAclInfo:
     def entity_type(self):
         r"""Gets the entity_type of this ApiBindAclInfo.
 
-        ACL策略作用的对象类型
+        ACL策略作用的对象类型。 - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID 
 
         :return: The entity_type of this ApiBindAclInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class ApiBindAclInfo:
     def entity_type(self, entity_type):
         r"""Sets the entity_type of this ApiBindAclInfo.
 
-        ACL策略作用的对象类型
+        ACL策略作用的对象类型。 - IP：IP地址 - DOMAIN：账号名 - DOMAIN_ID：账号ID 
 
         :param entity_type: The entity_type of this ApiBindAclInfo.
         :type entity_type: str
@@ -165,7 +165,7 @@ class ApiBindAclInfo:
     def acl_type(self):
         r"""Gets the acl_type of this ApiBindAclInfo.
 
-        ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
+        ACL策略类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :return: The acl_type of this ApiBindAclInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class ApiBindAclInfo:
     def acl_type(self, acl_type):
         r"""Sets the acl_type of this ApiBindAclInfo.
 
-        ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
+        ACL策略类型。 - PERMIT：白名单类型 - DENY：黑名单类型 
 
         :param acl_type: The acl_type of this ApiBindAclInfo.
         :type acl_type: str

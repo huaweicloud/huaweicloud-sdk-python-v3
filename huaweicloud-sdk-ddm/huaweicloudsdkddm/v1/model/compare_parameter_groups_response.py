@@ -36,11 +36,11 @@ class CompareParameterGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param source_id: **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        :param source_id: **参数解释**：  源参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
         :type source_id: str
         :param source_name: **参数解释**：  源参数组名称。  **参数范围**：  不涉及。
         :type source_name: str
-        :param target_id: **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        :param target_id: **参数解释**：  目标参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
         :type target_id: str
         :param target_name: **参数解释**：  目标参数组名称。  **参数范围**：  不涉及。
         :type target_name: str
@@ -72,7 +72,7 @@ class CompareParameterGroupsResponse(SdkResponse):
     def source_id(self):
         r"""Gets the source_id of this CompareParameterGroupsResponse.
 
-        **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  源参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
 
         :return: The source_id of this CompareParameterGroupsResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class CompareParameterGroupsResponse(SdkResponse):
     def source_id(self, source_id):
         r"""Sets the source_id of this CompareParameterGroupsResponse.
 
-        **参数解释**：  源参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  源参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
 
         :param source_id: The source_id of this CompareParameterGroupsResponse.
         :type source_id: str
@@ -116,7 +116,7 @@ class CompareParameterGroupsResponse(SdkResponse):
     def target_id(self):
         r"""Gets the target_id of this CompareParameterGroupsResponse.
 
-        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  目标参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
 
         :return: The target_id of this CompareParameterGroupsResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class CompareParameterGroupsResponse(SdkResponse):
     def target_id(self, target_id):
         r"""Sets the target_id of this CompareParameterGroupsResponse.
 
-        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  目标参数组ID。  **参数范围**：  只能由英文字母、数字组成，长度为36个字符。
 
         :param target_id: The target_id of this CompareParameterGroupsResponse.
         :type target_id: str

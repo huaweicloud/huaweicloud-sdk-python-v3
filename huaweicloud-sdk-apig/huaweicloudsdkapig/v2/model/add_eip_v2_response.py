@@ -38,7 +38,7 @@ class AddEipV2Response(SdkResponse):
         :type eip_id: str
         :param eip_address: 弹性公网IP
         :type eip_address: str
-        :param eip_status: 弹性公网IP状态
+        :param eip_status: 弹性公网IP状态。 - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败 
         :type eip_status: str
         :param eip_ipv6_address: 弹性公网IP(IPV6)
         :type eip_ipv6_address: str
@@ -109,7 +109,7 @@ class AddEipV2Response(SdkResponse):
     def eip_status(self):
         r"""Gets the eip_status of this AddEipV2Response.
 
-        弹性公网IP状态
+        弹性公网IP状态。 - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败 
 
         :return: The eip_status of this AddEipV2Response.
         :rtype: str
@@ -120,7 +120,7 @@ class AddEipV2Response(SdkResponse):
     def eip_status(self, eip_status):
         r"""Sets the eip_status of this AddEipV2Response.
 
-        弹性公网IP状态
+        弹性公网IP状态。 - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败 
 
         :param eip_status: The eip_status of this AddEipV2Response.
         :type eip_status: str

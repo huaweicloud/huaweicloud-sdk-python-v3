@@ -15,76 +15,79 @@ class ConfigurationCopyReqV3:
     sensitive_list = []
 
     openapi_types = {
-        'copy_para': 'ParaGroupCopy',
-        'source_id': 'str'
+        'new_name': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
-        'copy_para': 'copy_para',
-        'source_id': 'source_id'
+        'new_name': 'new_name',
+        'description': 'description'
     }
 
-    def __init__(self, copy_para=None, source_id=None):
+    def __init__(self, new_name=None, description=None):
         r"""ConfigurationCopyReqV3
 
         The model defined in huaweicloud sdk
 
-        :param copy_para: 
-        :type copy_para: :class:`huaweicloudsdkddm.v1.ParaGroupCopy`
-        :param source_id: **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
-        :type source_id: str
+        :param new_name: **参数解释**：  新参数组的名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type new_name: str
+        :param description: **参数解释**：  描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type description: str
         """
         
         
 
-        self._copy_para = None
-        self._source_id = None
+        self._new_name = None
+        self._description = None
         self.discriminator = None
 
-        if copy_para is not None:
-            self.copy_para = copy_para
-        if source_id is not None:
-            self.source_id = source_id
+        self.new_name = new_name
+        if description is not None:
+            self.description = description
 
     @property
-    def copy_para(self):
-        r"""Gets the copy_para of this ConfigurationCopyReqV3.
+    def new_name(self):
+        r"""Gets the new_name of this ConfigurationCopyReqV3.
 
-        :return: The copy_para of this ConfigurationCopyReqV3.
-        :rtype: :class:`huaweicloudsdkddm.v1.ParaGroupCopy`
-        """
-        return self._copy_para
+        **参数解释**：  新参数组的名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-    @copy_para.setter
-    def copy_para(self, copy_para):
-        r"""Sets the copy_para of this ConfigurationCopyReqV3.
-
-        :param copy_para: The copy_para of this ConfigurationCopyReqV3.
-        :type copy_para: :class:`huaweicloudsdkddm.v1.ParaGroupCopy`
-        """
-        self._copy_para = copy_para
-
-    @property
-    def source_id(self):
-        r"""Gets the source_id of this ConfigurationCopyReqV3.
-
-        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
-
-        :return: The source_id of this ConfigurationCopyReqV3.
+        :return: The new_name of this ConfigurationCopyReqV3.
         :rtype: str
         """
-        return self._source_id
+        return self._new_name
 
-    @source_id.setter
-    def source_id(self, source_id):
-        r"""Sets the source_id of this ConfigurationCopyReqV3.
+    @new_name.setter
+    def new_name(self, new_name):
+        r"""Sets the new_name of this ConfigurationCopyReqV3.
 
-        **参数解释**：  目标参数组ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，长度为36个字符。  **默认取值**：  不涉及。
+        **参数解释**：  新参数组的名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
-        :param source_id: The source_id of this ConfigurationCopyReqV3.
-        :type source_id: str
+        :param new_name: The new_name of this ConfigurationCopyReqV3.
+        :type new_name: str
         """
-        self._source_id = source_id
+        self._new_name = new_name
+
+    @property
+    def description(self):
+        r"""Gets the description of this ConfigurationCopyReqV3.
+
+        **参数解释**：  描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The description of this ConfigurationCopyReqV3.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this ConfigurationCopyReqV3.
+
+        **参数解释**：  描述。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param description: The description of this ConfigurationCopyReqV3.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         result = {}
