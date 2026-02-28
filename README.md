@@ -173,15 +173,15 @@ if __name__ == "__main__":
 
     http_handler = HttpHandler().add_response_handler(response_handler)
 
-    // Create a service client
-    client = VpcClient.new_builder() \
-        .with_credentials(credentials) \  # Configure authentication
-        .with_region(VpcRegion.value_of("cn-north-4")) \  # Configure region, it will throw a KeyError if the region does not exist
-        .with_http_config(http_config) \  # Configure HTTP
-        .with_stream_log(log_level=logging.INFO) \  # Configure request log output to console
-        .with_file_log(path="test.log", log_level=logging.INFO) \  # Configure request log output to file
-        .with_http_handler(http_handler) \  # Configure HTTP handler
-        .build()
+    # Create a service client
+    client = (VpcClient.new_builder()
+              .with_credentials(credentials)  # Configure authentication
+              .with_region(VpcRegion.value_of("cn-north-4"))  # Configure region, it will throw a KeyError if the region does not exist
+              .with_http_config(http_config)  # Configure HTTP
+              .with_stream_log(log_level=logging.INFO)  # Configure request log output to console
+              .with_file_log(path="test.log", log_level=logging.INFO)  # Configure request log output to file
+              .with_http_handler(http_handler)  # Configure HTTP handler
+              .build())
 
     # Send the request and get the response
     try:
@@ -871,7 +871,7 @@ try:
     request = ListVpcsRequest(limit=1)
     response = client.list_vpcs(request)
     print(response)
-except exception.ServiceResponseException as e:
+except exceptions.ServiceResponseException as e:
     print(e.status_code)
     print(e.request_id)
     print(e.error_code)
@@ -925,10 +925,10 @@ specified files.
 Initialize specified service client instance, take VpcClient for example:
 
 ```python
-client = VpcClient.new_builder() \
-    .with_file_log(path="test.log", log_level=logging.INFO) \  # Write log files
-    .with_stream_log(log_level=logging.INFO) \                 # Write log to console
-    .build()
+client = (VpcClient.new_builder()
+          .with_file_log(path="test.log", log_level=logging.INFO)  # Write log files
+          .with_stream_log(log_level=logging.INFO)  # Write log to console
+          .build())
 ```
 
 **where:**
@@ -963,6 +963,7 @@ needed. The SDK provides a listener function to obtain the original encrypted ht
 
 ```python
 from huaweicloudsdkcore.http.http_handler import HttpHandler
+from huaweicloudsdkvpc.v3 import VpcClient
 
 
 def response_handler(**kwargs):
@@ -1011,8 +1012,8 @@ client = VpcClient.new_builder() \
     .build()
 
 request = ListVpcsRequest()
+# Custom request headers
 response = client.list_vpcs_invoker(request) \
-    # Custom request headers
     .add_header("key1", "value1") \
     .add_header("key2", "value2") \
     .invoke()

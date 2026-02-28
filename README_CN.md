@@ -188,14 +188,14 @@ if __name__ == "__main__":
     http_handler = HttpHandler().add_response_handler(response_handler)
 
     # 创建服务客户端
-    client = VpcClient.new_builder() \
-        .with_credentials(credentials) \  # 配置认证信息
-        .with_region(VpcRegion.value_of("cn-north-4")) \  # 配置地区, 如果地区不存在会抛出KeyError
-        .with_http_config(http_config) \  # HTTP配置
-        .with_stream_log(log_level=logging.INFO) \  # 配置请求日志输出到控制台
-        .with_file_log(path="test.log", log_level=logging.INFO) \  # 配置请求日志输出到文件
-        .with_http_handler(http_handler) \  # 配置HTTP监听器
-        .build()
+    client = (VpcClient.new_builder()
+              .with_credentials(credentials)  # 配置认证信息
+              .with_region(VpcRegion.value_of("cn-north-4"))  # 配置地区, 如果地区不存在会抛出KeyError
+              .with_http_config(http_config)  # HTTP配置
+              .with_stream_log(log_level=logging.INFO)  # 配置请求日志输出到控制台
+              .with_file_log(path="test.log", log_level=logging.INFO)  # 配置请求日志输出到文件
+              .with_http_handler(http_handler)  # 配置HTTP监听器
+              .build())
 
     # 发送请求并获取响应
     try:
@@ -879,7 +879,7 @@ try:
     request = ListVpcsRequest(limit=1)
     response = client.list_vpcs(request)
     print(response)
-except exception.ServiceResponseException as e:
+except exceptions.ServiceResponseException as e:
     print(e.status_code)
     print(e.request_id)
     print(e.error_code)
@@ -931,10 +931,10 @@ SDK 支持打印 Access 级别的访问日志，需要用户手动打开日志�
 初始化指定服务的客户端实例，以 VpcClient 为例：
 
 ```python
-client = VpcClient.new_builder() \
-    .with_file_log(path="test.log", log_level=logging.INFO) \  # 日志打印至文件
-    .with_stream_log(log_level=logging.INFO) \                 # 日志打印至控制台
-    .build()
+client = (VpcClient.new_builder()
+          .with_file_log(path="test.log", log_level=logging.INFO)  # 日志打印至文件
+          .with_stream_log(log_level=logging.INFO)  # 日志打印至控制台
+          .build())
 ```
 
 **说明**：
@@ -968,6 +968,7 @@ client = VpcClient.new_builder() \
 
 ```python
 from huaweicloudsdkcore.http.http_handler import HttpHandler
+from huaweicloudsdkvpc.v3 import VpcClient
 
 
 def response_handler(**kwargs):
@@ -1015,8 +1016,8 @@ client = VpcClient.new_builder() \
     .build()
 
 request = ListVpcsRequest()
+# 自定义请求头
 response = client.list_vpcs_invoker(request) \
-    # 自定义请求头
     .add_header("key1", "value1") \
     .add_header("key2", "value2") \
     .invoke()
