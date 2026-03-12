@@ -13937,7 +13937,7 @@ class GaussDBforopenGaussClient(Client):
         
               - 分布式实例：根据分片数滚动升级。
               - 集中式实例：根据AZ数进行滚动升级。 
-            
+        
             - 提交阶段可以对升级完成后的实例进行业务测试，根据需要可以选择提交升级或者升级回退。
         
               - 提交升级：提交升级。在升级完成，进入提交阶段时。业务测试正常后提交升级，完成本次升级流程。
@@ -17426,6 +17426,14 @@ class GaussDBforopenGaussClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'job_id' in local_var_params:
             query_params.append(('job_id', local_var_params['job_id']))
+        if 'job_end_time' in local_var_params:
+            query_params.append(('job_end_time', local_var_params['job_end_time']))
+        if 'job_start_time' in local_var_params:
+            query_params.append(('job_start_time', local_var_params['job_start_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'wdr_type' in local_var_params:
+            query_params.append(('wdr_type', local_var_params['wdr_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:

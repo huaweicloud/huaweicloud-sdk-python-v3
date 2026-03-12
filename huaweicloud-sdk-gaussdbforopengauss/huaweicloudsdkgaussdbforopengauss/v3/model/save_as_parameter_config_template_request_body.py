@@ -41,8 +41,7 @@ class SaveAsParameterConfigTemplateRequestBody:
         self._description = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
 

@@ -18,6 +18,7 @@ class UploadDbObjectTemplateRequest:
         'job_id': 'str',
         'x_language': 'str',
         'file_import_db_level': 'str',
+        'file_import_mapping_type': 'str',
         'body': 'UploadDbObjectTemplateRequestBody'
     }
 
@@ -25,10 +26,11 @@ class UploadDbObjectTemplateRequest:
         'job_id': 'job_id',
         'x_language': 'X-Language',
         'file_import_db_level': 'file_import_db_level',
+        'file_import_mapping_type': 'file_import_mapping_type',
         'body': 'body'
     }
 
-    def __init__(self, job_id=None, x_language=None, file_import_db_level=None, body=None):
+    def __init__(self, job_id=None, x_language=None, file_import_db_level=None, file_import_mapping_type=None, body=None):
         r"""UploadDbObjectTemplateRequest
 
         The model defined in huaweicloud sdk
@@ -37,8 +39,10 @@ class UploadDbObjectTemplateRequest:
         :type job_id: str
         :param x_language: 请求语言类型。
         :type x_language: str
-        :param file_import_db_level: 文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
+        :param file_import_db_level: 文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级 - partition：partition分区级导入
         :type file_import_db_level: str
+        :param file_import_mapping_type: 导入文件模板的映射场景，取值： - table_mapping：表名映射 - topic_mapping：topic名映射
+        :type file_import_mapping_type: str
         :param body: Body of the UploadDbObjectTemplateRequest
         :type body: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateRequestBody`
         """
@@ -48,6 +52,7 @@ class UploadDbObjectTemplateRequest:
         self._job_id = None
         self._x_language = None
         self._file_import_db_level = None
+        self._file_import_mapping_type = None
         self._body = None
         self.discriminator = None
 
@@ -56,6 +61,8 @@ class UploadDbObjectTemplateRequest:
             self.x_language = x_language
         if file_import_db_level is not None:
             self.file_import_db_level = file_import_db_level
+        if file_import_mapping_type is not None:
+            self.file_import_mapping_type = file_import_mapping_type
         if body is not None:
             self.body = body
 
@@ -107,7 +114,7 @@ class UploadDbObjectTemplateRequest:
     def file_import_db_level(self):
         r"""Gets the file_import_db_level of this UploadDbObjectTemplateRequest.
 
-        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级 - partition：partition分区级导入
 
         :return: The file_import_db_level of this UploadDbObjectTemplateRequest.
         :rtype: str
@@ -118,12 +125,34 @@ class UploadDbObjectTemplateRequest:
     def file_import_db_level(self, file_import_db_level):
         r"""Sets the file_import_db_level of this UploadDbObjectTemplateRequest.
 
-        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级
+        文件模板支持数据同步级别，不填默认为table表级。 - database：库级 - table：表级 - column：列级 - partition：partition分区级导入
 
         :param file_import_db_level: The file_import_db_level of this UploadDbObjectTemplateRequest.
         :type file_import_db_level: str
         """
         self._file_import_db_level = file_import_db_level
+
+    @property
+    def file_import_mapping_type(self):
+        r"""Gets the file_import_mapping_type of this UploadDbObjectTemplateRequest.
+
+        导入文件模板的映射场景，取值： - table_mapping：表名映射 - topic_mapping：topic名映射
+
+        :return: The file_import_mapping_type of this UploadDbObjectTemplateRequest.
+        :rtype: str
+        """
+        return self._file_import_mapping_type
+
+    @file_import_mapping_type.setter
+    def file_import_mapping_type(self, file_import_mapping_type):
+        r"""Sets the file_import_mapping_type of this UploadDbObjectTemplateRequest.
+
+        导入文件模板的映射场景，取值： - table_mapping：表名映射 - topic_mapping：topic名映射
+
+        :param file_import_mapping_type: The file_import_mapping_type of this UploadDbObjectTemplateRequest.
+        :type file_import_mapping_type: str
+        """
+        self._file_import_mapping_type = file_import_mapping_type
 
     @property
     def body(self):

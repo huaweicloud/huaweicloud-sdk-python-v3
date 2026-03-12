@@ -25,7 +25,8 @@ class CreateCertificateAuthorityRequestBody:
         'key_usages': 'list[str]',
         'crl_configuration': 'CrlConfiguration',
         'enterprise_project_id': 'str',
-        'ca_id': 'str'
+        'ca_id': 'str',
+        'hsm_cluster_info': 'HsmClusterInfo'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CreateCertificateAuthorityRequestBody:
         'key_usages': 'key_usages',
         'crl_configuration': 'crl_configuration',
         'enterprise_project_id': 'enterprise_project_id',
-        'ca_id': 'ca_id'
+        'ca_id': 'ca_id',
+        'hsm_cluster_info': 'hsm_cluster_info'
     }
 
-    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None, ca_id=None):
+    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None, ca_id=None, hsm_cluster_info=None):
         r"""CreateCertificateAuthorityRequestBody
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class CreateCertificateAuthorityRequestBody:
         :type enterprise_project_id: str
         :param ca_id: CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
         :type ca_id: str
+        :param hsm_cluster_info: 
+        :type hsm_cluster_info: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
         """
         
         
@@ -84,6 +88,7 @@ class CreateCertificateAuthorityRequestBody:
         self._crl_configuration = None
         self._enterprise_project_id = None
         self._ca_id = None
+        self._hsm_cluster_info = None
         self.discriminator = None
 
         self.type = type
@@ -105,6 +110,8 @@ class CreateCertificateAuthorityRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if ca_id is not None:
             self.ca_id = ca_id
+        if hsm_cluster_info is not None:
+            self.hsm_cluster_info = hsm_cluster_info
 
     @property
     def type(self):
@@ -335,6 +342,24 @@ class CreateCertificateAuthorityRequestBody:
         :type ca_id: str
         """
         self._ca_id = ca_id
+
+    @property
+    def hsm_cluster_info(self):
+        r"""Gets the hsm_cluster_info of this CreateCertificateAuthorityRequestBody.
+
+        :return: The hsm_cluster_info of this CreateCertificateAuthorityRequestBody.
+        :rtype: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
+        """
+        return self._hsm_cluster_info
+
+    @hsm_cluster_info.setter
+    def hsm_cluster_info(self, hsm_cluster_info):
+        r"""Sets the hsm_cluster_info of this CreateCertificateAuthorityRequestBody.
+
+        :param hsm_cluster_info: The hsm_cluster_info of this CreateCertificateAuthorityRequestBody.
+        :type hsm_cluster_info: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
+        """
+        self._hsm_cluster_info = hsm_cluster_info
 
     def to_dict(self):
         result = {}

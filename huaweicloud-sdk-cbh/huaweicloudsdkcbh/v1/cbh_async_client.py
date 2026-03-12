@@ -45,10 +45,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkResponse`
         """
+        warnings.warn("Method 'change_instance_network_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_instance_network_http_info(request)
         return self._call_api(**http_info)
 
     def change_instance_network_async_invoker(self, request):
+        warnings.warn("Method 'change_instance_network_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_instance_network_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -112,10 +114,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderResponse`
         """
+        warnings.warn("Method 'change_instance_order_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_instance_order_http_info(request)
         return self._call_api(**http_info)
 
     def change_instance_order_async_invoker(self, request):
+        warnings.warn("Method 'change_instance_order_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_instance_order_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -179,10 +183,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateCbhRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateCbhResponse`
         """
+        warnings.warn("Method 'create_cbh_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_cbh_http_info(request)
         return self._call_api(**http_info)
 
     def create_cbh_async_invoker(self, request):
+        warnings.warn("Method 'create_cbh_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_cbh_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -244,10 +250,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderResponse`
         """
+        warnings.warn("Method 'create_instance_order_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_instance_order_http_info(request)
         return self._call_api(**http_info)
 
     def create_instance_order_async_invoker(self, request):
+        warnings.warn("Method 'create_instance_order_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_instance_order_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -309,10 +317,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.InstallCbhEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.InstallCbhEipResponse`
         """
+        warnings.warn("Method 'install_cbh_eip_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._install_cbh_eip_http_info(request)
         return self._call_api(**http_info)
 
     def install_cbh_eip_async_invoker(self, request):
+        warnings.warn("Method 'install_cbh_eip_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._install_cbh_eip_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -439,10 +449,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusResponse`
         """
+        warnings.warn("Method 'list_quota_status_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_quota_status_http_info(request)
         return self._call_api(**http_info)
 
     def list_quota_status_async_invoker(self, request):
+        warnings.warn("Method 'list_quota_status_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_quota_status_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -506,10 +518,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodResponse`
         """
+        warnings.warn("Method 'reset_login_method_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._reset_login_method_http_info(request)
         return self._call_api(**http_info)
 
     def reset_login_method_async_invoker(self, request):
+        warnings.warn("Method 'reset_login_method_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._reset_login_method_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -571,10 +585,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetPasswordResponse`
         """
+        warnings.warn("Method 'reset_password_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._reset_password_http_info(request)
         return self._call_api(**http_info)
 
     def reset_password_async_invoker(self, request):
+        warnings.warn("Method 'reset_password_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._reset_password_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -636,10 +652,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceResponse`
         """
+        warnings.warn("Method 'restart_cbh_instance_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._restart_cbh_instance_http_info(request)
         return self._call_api(**http_info)
 
     def restart_cbh_instance_async_invoker(self, request):
+        warnings.warn("Method 'restart_cbh_instance_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._restart_cbh_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -701,10 +719,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.SearchQuotaRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.SearchQuotaResponse`
         """
+        warnings.warn("Method 'search_quota_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._search_quota_http_info(request)
         return self._call_api(**http_info)
 
     def search_quota_async_invoker(self, request):
+        warnings.warn("Method 'search_quota_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._search_quota_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -764,10 +784,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoResponse`
         """
+        warnings.warn("Method 'show_available_zone_info_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_available_zone_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_available_zone_info_async_invoker(self, request):
+        warnings.warn("Method 'show_available_zone_info_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_available_zone_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -827,10 +849,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationResponse`
         """
+        warnings.warn("Method 'show_network_configuration_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_network_configuration_http_info(request)
         return self._call_api(**http_info)
 
     def show_network_configuration_async_invoker(self, request):
+        warnings.warn("Method 'show_network_configuration_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_network_configuration_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -892,10 +916,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceResponse`
         """
+        warnings.warn("Method 'start_cbh_instance_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_cbh_instance_http_info(request)
         return self._call_api(**http_info)
 
     def start_cbh_instance_async_invoker(self, request):
+        warnings.warn("Method 'start_cbh_instance_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_cbh_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -957,10 +983,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceResponse`
         """
+        warnings.warn("Method 'stop_cbh_instance_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._stop_cbh_instance_http_info(request)
         return self._call_api(**http_info)
 
     def stop_cbh_instance_async_invoker(self, request):
+        warnings.warn("Method 'stop_cbh_instance_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._stop_cbh_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1022,10 +1050,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UninstallCbhEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UninstallCbhEipResponse`
         """
+        warnings.warn("Method 'uninstall_cbh_eip_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._uninstall_cbh_eip_http_info(request)
         return self._call_api(**http_info)
 
     def uninstall_cbh_eip_async_invoker(self, request):
+        warnings.warn("Method 'uninstall_cbh_eip_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._uninstall_cbh_eip_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1089,10 +1119,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceResponse`
         """
+        warnings.warn("Method 'upgrade_cbh_instance_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upgrade_cbh_instance_http_info(request)
         return self._call_api(**http_info)
 
     def upgrade_cbh_instance_async_invoker(self, request):
+        warnings.warn("Method 'upgrade_cbh_instance_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._upgrade_cbh_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -1154,10 +1186,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.LoginCbhRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.LoginCbhResponse`
         """
+        warnings.warn("Method 'login_cbh_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._login_cbh_http_info(request)
         return self._call_api(**http_info)
 
     def login_cbh_async_invoker(self, request):
+        warnings.warn("Method 'login_cbh_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._login_cbh_http_info(request)
         return AsyncInvoker(self, http_info)
 

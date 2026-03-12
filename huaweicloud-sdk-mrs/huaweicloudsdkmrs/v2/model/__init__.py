@@ -24,6 +24,7 @@ from huaweicloudsdkmrs.v2.model.cancel_sync_iam_user_request import CancelSyncIa
 from huaweicloudsdkmrs.v2.model.cancel_sync_iam_user_response import CancelSyncIamUserResponse
 from huaweicloudsdkmrs.v2.model.cancel_sync_request import CancelSyncRequest
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
+from huaweicloudsdkmrs.v2.model.cluster_auth_tros import ClusterAuthTros
 from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
 from huaweicloudsdkmrs.v2.model.cluster_node import ClusterNode
 from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
@@ -57,6 +58,8 @@ from huaweicloudsdkmrs.v2.model.job_batch_delete import JobBatchDelete
 from huaweicloudsdkmrs.v2.model.job_execution import JobExecution
 from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
 from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
+from huaweicloudsdkmrs.v2.model.list_cluster_manager_auth_state_request import ListClusterManagerAuthStateRequest
+from huaweicloudsdkmrs.v2.model.list_cluster_manager_auth_state_response import ListClusterManagerAuthStateResponse
 from huaweicloudsdkmrs.v2.model.list_data_connector_request import ListDataConnectorRequest
 from huaweicloudsdkmrs.v2.model.list_data_connector_response import ListDataConnectorResponse
 from huaweicloudsdkmrs.v2.model.list_nodes_request import ListNodesRequest
@@ -117,6 +120,8 @@ from huaweicloudsdkmrs.v2.model.update_agency_mapping_request import UpdateAgenc
 from huaweicloudsdkmrs.v2.model.update_agency_mapping_response import UpdateAgencyMappingResponse
 from huaweicloudsdkmrs.v2.model.update_auto_scaling_policy_request import UpdateAutoScalingPolicyRequest
 from huaweicloudsdkmrs.v2.model.update_auto_scaling_policy_response import UpdateAutoScalingPolicyResponse
+from huaweicloudsdkmrs.v2.model.update_cluster_auth_tros_request import UpdateClusterAuthTrosRequest
+from huaweicloudsdkmrs.v2.model.update_cluster_auth_tros_response import UpdateClusterAuthTrosResponse
 from huaweicloudsdkmrs.v2.model.update_cluster_name_request import UpdateClusterNameRequest
 from huaweicloudsdkmrs.v2.model.update_cluster_name_response import UpdateClusterNameResponse
 from huaweicloudsdkmrs.v2.model.update_cluster_req import UpdateClusterReq

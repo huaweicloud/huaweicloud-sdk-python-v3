@@ -34,7 +34,9 @@ class CertificateAuthorities:
         'crl_configuration': 'ListCrlConfiguration',
         'enterprise_project_id': 'str',
         'free_quota': 'int',
-        'charging_mode': 'int'
+        'charging_mode': 'int',
+        'cluster_id': 'str',
+        'domain_id': 'str'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class CertificateAuthorities:
         'crl_configuration': 'crl_configuration',
         'enterprise_project_id': 'enterprise_project_id',
         'free_quota': 'free_quota',
-        'charging_mode': 'charging_mode'
+        'charging_mode': 'charging_mode',
+        'cluster_id': 'cluster_id',
+        'domain_id': 'domain_id'
     }
 
-    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, enterprise_project_id=None, free_quota=None, charging_mode=None):
+    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, enterprise_project_id=None, free_quota=None, charging_mode=None, cluster_id=None, domain_id=None):
         r"""CertificateAuthorities
 
         The model defined in huaweicloud sdk
@@ -105,6 +109,10 @@ class CertificateAuthorities:
         :type free_quota: int
         :param charging_mode: 计费模式:   - **0** : 包周期；   - **1** : 按需。
         :type charging_mode: int
+        :param cluster_id: dhsm集群id。
+        :type cluster_id: str
+        :param domain_id: 账号ID。
+        :type domain_id: str
         """
         
         
@@ -129,6 +137,8 @@ class CertificateAuthorities:
         self._enterprise_project_id = None
         self._free_quota = None
         self._charging_mode = None
+        self._cluster_id = None
+        self._domain_id = None
         self.discriminator = None
 
         self.ca_id = ca_id
@@ -154,6 +164,10 @@ class CertificateAuthorities:
             self.free_quota = free_quota
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if domain_id is not None:
+            self.domain_id = domain_id
 
     @property
     def ca_id(self):
@@ -586,6 +600,50 @@ class CertificateAuthorities:
         :type charging_mode: int
         """
         self._charging_mode = charging_mode
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this CertificateAuthorities.
+
+        dhsm集群id。
+
+        :return: The cluster_id of this CertificateAuthorities.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this CertificateAuthorities.
+
+        dhsm集群id。
+
+        :param cluster_id: The cluster_id of this CertificateAuthorities.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def domain_id(self):
+        r"""Gets the domain_id of this CertificateAuthorities.
+
+        账号ID。
+
+        :return: The domain_id of this CertificateAuthorities.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this CertificateAuthorities.
+
+        账号ID。
+
+        :param domain_id: The domain_id of this CertificateAuthorities.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
 
     def to_dict(self):
         result = {}

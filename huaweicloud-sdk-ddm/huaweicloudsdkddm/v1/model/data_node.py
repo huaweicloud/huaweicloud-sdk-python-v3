@@ -46,12 +46,9 @@ class DataNode:
         self._password = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if user is not None:
-            self.user = user
-        if password is not None:
-            self.password = password
+        self.id = id
+        self.user = user
+        self.password = password
 
     @property
     def id(self):

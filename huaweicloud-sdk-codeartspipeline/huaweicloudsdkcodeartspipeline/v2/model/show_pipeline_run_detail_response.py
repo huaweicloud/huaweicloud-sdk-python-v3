@@ -27,6 +27,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         'status': 'str',
         'trigger_type': 'str',
         'run_number': 'int',
+        'pause_time': 'int',
         'start_time': 'int',
         'end_time': 'int',
         'stages': 'list[StageRun]',
@@ -56,6 +57,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         'status': 'status',
         'trigger_type': 'trigger_type',
         'run_number': 'run_number',
+        'pause_time': 'pause_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'stages': 'stages',
@@ -73,7 +75,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         'current_system_time': 'current_system_time'
     }
 
-    def __init__(self, id=None, pipeline_id=None, manifest_version=None, name=None, description=None, is_publish=None, executor_id=None, executor_name=None, status=None, trigger_type=None, run_number=None, start_time=None, end_time=None, stages=None, domain_id=None, project_id=None, region=None, component_id=None, language=None, sources=None, artifacts=None, subject_id=None, group_id=None, group_name=None, detail_url=None, current_system_time=None):
+    def __init__(self, id=None, pipeline_id=None, manifest_version=None, name=None, description=None, is_publish=None, executor_id=None, executor_name=None, status=None, trigger_type=None, run_number=None, pause_time=None, start_time=None, end_time=None, stages=None, domain_id=None, project_id=None, region=None, component_id=None, language=None, sources=None, artifacts=None, subject_id=None, group_id=None, group_name=None, detail_url=None, current_system_time=None):
         r"""ShowPipelineRunDetailResponse
 
         The model defined in huaweicloud sdk
@@ -100,6 +102,8 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         :type trigger_type: str
         :param run_number: **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
         :type run_number: int
+        :param pause_time: **参数解释**： 流水线中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+        :type pause_time: int
         :param start_time: **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
         :param end_time: **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
@@ -145,6 +149,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         self._status = None
         self._trigger_type = None
         self._run_number = None
+        self._pause_time = None
         self._start_time = None
         self._end_time = None
         self._stages = None
@@ -184,6 +189,8 @@ class ShowPipelineRunDetailResponse(SdkResponse):
             self.trigger_type = trigger_type
         if run_number is not None:
             self.run_number = run_number
+        if pause_time is not None:
+            self.pause_time = pause_time
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -456,6 +463,28 @@ class ShowPipelineRunDetailResponse(SdkResponse):
         :type run_number: int
         """
         self._run_number = run_number
+
+    @property
+    def pause_time(self):
+        r"""Gets the pause_time of this ShowPipelineRunDetailResponse.
+
+        **参数解释**： 流水线中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+
+        :return: The pause_time of this ShowPipelineRunDetailResponse.
+        :rtype: int
+        """
+        return self._pause_time
+
+    @pause_time.setter
+    def pause_time(self, pause_time):
+        r"""Sets the pause_time of this ShowPipelineRunDetailResponse.
+
+        **参数解释**： 流水线中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+
+        :param pause_time: The pause_time of this ShowPipelineRunDetailResponse.
+        :type pause_time: int
+        """
+        self._pause_time = pause_time
 
     @property
     def start_time(self):

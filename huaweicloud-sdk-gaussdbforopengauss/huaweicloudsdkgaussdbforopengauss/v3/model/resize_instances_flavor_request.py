@@ -17,7 +17,7 @@ class ResizeInstancesFlavorRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'OpenGaussResizeRequest'
+        'body': 'OpenGaussResizeRequestBody'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class ResizeInstancesFlavorRequest:
         :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         :param body: Body of the ResizeInstancesFlavorRequest
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequestBody`
         """
         
         
@@ -101,7 +101,7 @@ class ResizeInstancesFlavorRequest:
         r"""Gets the body of this ResizeInstancesFlavorRequest.
 
         :return: The body of this ResizeInstancesFlavorRequest.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequestBody`
         """
         return self._body
 
@@ -110,7 +110,7 @@ class ResizeInstancesFlavorRequest:
         r"""Sets the body of this ResizeInstancesFlavorRequest.
 
         :param body: The body of this ResizeInstancesFlavorRequest.
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequestBody`
         """
         self._body = body
 

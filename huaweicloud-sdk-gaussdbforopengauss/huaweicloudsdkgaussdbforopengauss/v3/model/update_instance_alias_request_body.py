@@ -36,8 +36,7 @@ class UpdateInstanceAliasRequestBody:
         self._alias = None
         self.discriminator = None
 
-        if alias is not None:
-            self.alias = alias
+        self.alias = alias
 
     @property
     def alias(self):

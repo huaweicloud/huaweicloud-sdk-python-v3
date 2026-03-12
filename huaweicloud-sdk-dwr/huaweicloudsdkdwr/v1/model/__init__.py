@@ -16,7 +16,6 @@ from huaweicloudsdkdwr.v1.model.create_store_body import CreateStoreBody
 from huaweicloudsdkdwr.v1.model.create_store_data import CreateStoreData
 from huaweicloudsdkdwr.v1.model.create_store_request import CreateStoreRequest
 from huaweicloudsdkdwr.v1.model.create_store_response import CreateStoreResponse
-from huaweicloudsdkdwr.v1.model.decribe_collection_data import DecribeCollectionData
 from huaweicloudsdkdwr.v1.model.delete_collection_request import DeleteCollectionRequest
 from huaweicloudsdkdwr.v1.model.delete_collection_response import DeleteCollectionResponse
 from huaweicloudsdkdwr.v1.model.delete_entities_body import DeleteEntitiesBody
@@ -28,6 +27,7 @@ from huaweicloudsdkdwr.v1.model.delete_index_response import DeleteIndexResponse
 from huaweicloudsdkdwr.v1.model.delete_store_data import DeleteStoreData
 from huaweicloudsdkdwr.v1.model.delete_store_request import DeleteStoreRequest
 from huaweicloudsdkdwr.v1.model.delete_store_response import DeleteStoreResponse
+from huaweicloudsdkdwr.v1.model.describe_collection_data import DescribeCollectionData
 from huaweicloudsdkdwr.v1.model.describe_collection_request import DescribeCollectionRequest
 from huaweicloudsdkdwr.v1.model.describe_collection_response import DescribeCollectionResponse
 from huaweicloudsdkdwr.v1.model.describe_index_body import DescribeIndexBody
@@ -51,7 +51,7 @@ from huaweicloudsdkdwr.v1.model.hybrid_search_body import HybridSearchBody
 from huaweicloudsdkdwr.v1.model.hybrid_search_request import HybridSearchRequest
 from huaweicloudsdkdwr.v1.model.hybrid_search_response import HybridSearchResponse
 from huaweicloudsdkdwr.v1.model.index_desc import IndexDesc
-from huaweicloudsdkdwr.v1.model.index_params import IndexParams
+from huaweicloudsdkdwr.v1.model.index_param import IndexParam
 from huaweicloudsdkdwr.v1.model.insert_entities_body import InsertEntitiesBody
 from huaweicloudsdkdwr.v1.model.insert_entities_data import InsertEntitiesData
 from huaweicloudsdkdwr.v1.model.insert_entities_request import InsertEntitiesRequest

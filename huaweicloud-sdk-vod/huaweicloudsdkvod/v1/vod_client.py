@@ -1817,6 +1817,74 @@ class VodClient(Client):
 
         return http_info
 
+    def delete_thumbnails(self, request):
+        r"""删除媒资下的多个截图
+
+        删除媒资对应的截图，支持批量删除单个媒资下的多个截图结果，一次最多能删除十个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteThumbnails
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteThumbnailsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteThumbnailsResponse`
+        """
+        http_info = self._delete_thumbnails_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_thumbnails_invoker(self, request):
+        http_info = self._delete_thumbnails_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_thumbnails_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset/thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteThumbnailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+            collection_formats['task_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_transcode_product(self, request):
         r"""删除转码产物
 
@@ -2643,6 +2711,146 @@ class VodClient(Client):
         query_params = []
         if 'group_collection_id' in local_var_params:
             query_params.append(('group_collection_id', local_var_params['group_collection_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_thumbnail_details(self, request):
+        r"""查询截图详情
+
+        查询截图结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListThumbnailDetails
+        :type request: :class:`huaweicloudsdkvod.v1.ListThumbnailDetailsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListThumbnailDetailsResponse`
+        """
+        http_info = self._list_thumbnail_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_thumbnail_details_invoker(self, request):
+        http_info = self._list_thumbnail_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_thumbnail_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/thumbnail/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListThumbnailDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_thumbnail_info(self, request):
+        r"""查询截图任务结果列表
+
+        查询截图任务结果列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListThumbnailInfo
+        :type request: :class:`huaweicloudsdkvod.v1.ListThumbnailInfoRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListThumbnailInfoResponse`
+        """
+        http_info = self._list_thumbnail_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_thumbnail_info_invoker(self, request):
+        http_info = self._list_thumbnail_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_thumbnail_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListThumbnailInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:

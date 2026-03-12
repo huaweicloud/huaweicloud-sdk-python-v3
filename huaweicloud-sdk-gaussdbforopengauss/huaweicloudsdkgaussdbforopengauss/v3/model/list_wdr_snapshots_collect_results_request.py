@@ -21,7 +21,11 @@ class ListWdrSnapshotsCollectResultsRequest:
         'limit': 'int',
         'start_time': 'str',
         'end_time': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'job_end_time': 'str',
+        'job_start_time': 'str',
+        'status': 'str',
+        'wdr_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +35,14 @@ class ListWdrSnapshotsCollectResultsRequest:
         'limit': 'limit',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'job_end_time': 'job_end_time',
+        'job_start_time': 'job_start_time',
+        'status': 'status',
+        'wdr_type': 'wdr_type'
     }
 
-    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, start_time=None, end_time=None, job_id=None):
+    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, start_time=None, end_time=None, job_id=None, job_end_time=None, job_start_time=None, status=None, wdr_type=None):
         r"""ListWdrSnapshotsCollectResultsRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +61,14 @@ class ListWdrSnapshotsCollectResultsRequest:
         :type end_time: str
         :param job_id: **参数解释**:   任务ID。正确填写后，可查询指定任务对应的快照报告采集结果。不支持模糊匹配，需填写完整的任务ID。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
         :type job_id: str
+        :param job_end_time: **参数解释**:   采集任务创建时间终点。可查询任务创建时间小于等于该时间终点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_end_time&#x3D;2024-03-16T17:20:33+0800，传参时编码为job_end_time&#x3D;2024-03-16T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+        :type job_end_time: str
+        :param job_start_time: **参数解释**:   采集任务创建时间起点。可查询任务创建时间大于等于该时间起点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_start_time&#x3D;2024-03-15T17:20:33+0800传参时编码为job_start_time&#x3D;2024-03-15T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+        :type job_start_time: str
+        :param status: **参数解释**: 任务采集状态。填写后，可查询对应采集状态的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法状态值。 **取值范围**: - EXPORTING：采集中。 - SUCCESS：采集成功。 - FAILED：采集失败。  **默认取值**:   不涉及。
+        :type status: str
+        :param wdr_type: **参数解释**: 填写后，可查询对应采集类型的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法枚举值。 **取值范围**: - cluster：实例级。 - component：组件级。 - pdb：租户级。  **默认取值**:   不涉及。
+        :type wdr_type: str
         """
         
         
@@ -64,6 +80,10 @@ class ListWdrSnapshotsCollectResultsRequest:
         self._start_time = None
         self._end_time = None
         self._job_id = None
+        self._job_end_time = None
+        self._job_start_time = None
+        self._status = None
+        self._wdr_type = None
         self.discriminator = None
 
         if x_language is not None:
@@ -79,6 +99,14 @@ class ListWdrSnapshotsCollectResultsRequest:
             self.end_time = end_time
         if job_id is not None:
             self.job_id = job_id
+        if job_end_time is not None:
+            self.job_end_time = job_end_time
+        if job_start_time is not None:
+            self.job_start_time = job_start_time
+        if status is not None:
+            self.status = status
+        if wdr_type is not None:
+            self.wdr_type = wdr_type
 
     @property
     def x_language(self):
@@ -233,6 +261,94 @@ class ListWdrSnapshotsCollectResultsRequest:
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def job_end_time(self):
+        r"""Gets the job_end_time of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**:   采集任务创建时间终点。可查询任务创建时间小于等于该时间终点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_end_time=2024-03-16T17:20:33+0800，传参时编码为job_end_time=2024-03-16T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+
+        :return: The job_end_time of this ListWdrSnapshotsCollectResultsRequest.
+        :rtype: str
+        """
+        return self._job_end_time
+
+    @job_end_time.setter
+    def job_end_time(self, job_end_time):
+        r"""Sets the job_end_time of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**:   采集任务创建时间终点。可查询任务创建时间小于等于该时间终点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_end_time=2024-03-16T17:20:33+0800，传参时编码为job_end_time=2024-03-16T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+
+        :param job_end_time: The job_end_time of this ListWdrSnapshotsCollectResultsRequest.
+        :type job_end_time: str
+        """
+        self._job_end_time = job_end_time
+
+    @property
+    def job_start_time(self):
+        r"""Gets the job_start_time of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**:   采集任务创建时间起点。可查询任务创建时间大于等于该时间起点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_start_time=2024-03-15T17:20:33+0800传参时编码为job_start_time=2024-03-15T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+
+        :return: The job_start_time of this ListWdrSnapshotsCollectResultsRequest.
+        :rtype: str
+        """
+        return self._job_start_time
+
+    @job_start_time.setter
+    def job_start_time(self, job_start_time):
+        r"""Sets the job_start_time of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**:   采集任务创建时间起点。可查询任务创建时间大于等于该时间起点的任务结果。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。例如，北京时间偏移显示为+0800，job_start_time=2024-03-15T17:20:33+0800传参时编码为job_start_time=2024-03-15T17:20:33%2B0800。 **约束限制**:   不涉及。 **取值范围**:   不涉及。 **默认取值**:   不涉及。
+
+        :param job_start_time: The job_start_time of this ListWdrSnapshotsCollectResultsRequest.
+        :type job_start_time: str
+        """
+        self._job_start_time = job_start_time
+
+    @property
+    def status(self):
+        r"""Gets the status of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**: 任务采集状态。填写后，可查询对应采集状态的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法状态值。 **取值范围**: - EXPORTING：采集中。 - SUCCESS：采集成功。 - FAILED：采集失败。  **默认取值**:   不涉及。
+
+        :return: The status of this ListWdrSnapshotsCollectResultsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**: 任务采集状态。填写后，可查询对应采集状态的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法状态值。 **取值范围**: - EXPORTING：采集中。 - SUCCESS：采集成功。 - FAILED：采集失败。  **默认取值**:   不涉及。
+
+        :param status: The status of this ListWdrSnapshotsCollectResultsRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def wdr_type(self):
+        r"""Gets the wdr_type of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**: 填写后，可查询对应采集类型的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法枚举值。 **取值范围**: - cluster：实例级。 - component：组件级。 - pdb：租户级。  **默认取值**:   不涉及。
+
+        :return: The wdr_type of this ListWdrSnapshotsCollectResultsRequest.
+        :rtype: str
+        """
+        return self._wdr_type
+
+    @wdr_type.setter
+    def wdr_type(self, wdr_type):
+        r"""Sets the wdr_type of this ListWdrSnapshotsCollectResultsRequest.
+
+        **参数解释**: 填写后，可查询对应采集类型的任务结果。 **约束限制**: 不支持模糊匹配，区分大小写，请填写完整的合法枚举值。 **取值范围**: - cluster：实例级。 - component：组件级。 - pdb：租户级。  **默认取值**:   不涉及。
+
+        :param wdr_type: The wdr_type of this ListWdrSnapshotsCollectResultsRequest.
+        :type wdr_type: str
+        """
+        self._wdr_type = wdr_type
 
     def to_dict(self):
         result = {}

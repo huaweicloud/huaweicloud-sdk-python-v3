@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class WaitEventQueryInfo:
+class WaitEventQueryInfoOption:
 
     """
     Attributes:
@@ -20,7 +20,7 @@ class WaitEventQueryInfo:
         'waiting': 'str',
         'session_id': 'str',
         'block_session_id': 'str',
-        'block_count': 'str',
+        'block_count': 'int',
         'unique_sql_id': 'str',
         'query_id': 'str',
         'state': 'str',
@@ -43,7 +43,7 @@ class WaitEventQueryInfo:
     }
 
     def __init__(self, database_name=None, user_name=None, waiting=None, session_id=None, block_session_id=None, block_count=None, unique_sql_id=None, query_id=None, state=None, wait_event=None, wait_status=None):
-        r"""WaitEventQueryInfo
+        r"""WaitEventQueryInfoOption
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class WaitEventQueryInfo:
         :param block_session_id: **参数解释**: 阻塞当前会话的会话ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type block_session_id: str
         :param block_count: **参数解释**: 阻塞当前会话的会话数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
-        :type block_count: str
+        :type block_count: int
         :param unique_sql_id: **参数解释**: 唯一的SQL ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type unique_sql_id: str
         :param query_id: **参数解释**: SQL查询ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
@@ -111,242 +111,242 @@ class WaitEventQueryInfo:
 
     @property
     def database_name(self):
-        r"""Gets the database_name of this WaitEventQueryInfo.
+        r"""Gets the database_name of this WaitEventQueryInfoOption.
 
         **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The database_name of this WaitEventQueryInfo.
+        :return: The database_name of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._database_name
 
     @database_name.setter
     def database_name(self, database_name):
-        r"""Sets the database_name of this WaitEventQueryInfo.
+        r"""Sets the database_name of this WaitEventQueryInfoOption.
 
         **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param database_name: The database_name of this WaitEventQueryInfo.
+        :param database_name: The database_name of this WaitEventQueryInfoOption.
         :type database_name: str
         """
         self._database_name = database_name
 
     @property
     def user_name(self):
-        r"""Gets the user_name of this WaitEventQueryInfo.
+        r"""Gets the user_name of this WaitEventQueryInfoOption.
 
         **参数解释**: 用户名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The user_name of this WaitEventQueryInfo.
+        :return: The user_name of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._user_name
 
     @user_name.setter
     def user_name(self, user_name):
-        r"""Sets the user_name of this WaitEventQueryInfo.
+        r"""Sets the user_name of this WaitEventQueryInfoOption.
 
         **参数解释**: 用户名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param user_name: The user_name of this WaitEventQueryInfo.
+        :param user_name: The user_name of this WaitEventQueryInfoOption.
         :type user_name: str
         """
         self._user_name = user_name
 
     @property
     def waiting(self):
-        r"""Gets the waiting of this WaitEventQueryInfo.
+        r"""Gets the waiting of this WaitEventQueryInfoOption.
 
         **参数解释**: 是否在等待状态。 **约束限制**: 不涉及。 **取值范围**: -t：是。 -f：否。 **默认取值**: 不涉及。
 
-        :return: The waiting of this WaitEventQueryInfo.
+        :return: The waiting of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._waiting
 
     @waiting.setter
     def waiting(self, waiting):
-        r"""Sets the waiting of this WaitEventQueryInfo.
+        r"""Sets the waiting of this WaitEventQueryInfoOption.
 
         **参数解释**: 是否在等待状态。 **约束限制**: 不涉及。 **取值范围**: -t：是。 -f：否。 **默认取值**: 不涉及。
 
-        :param waiting: The waiting of this WaitEventQueryInfo.
+        :param waiting: The waiting of this WaitEventQueryInfoOption.
         :type waiting: str
         """
         self._waiting = waiting
 
     @property
     def session_id(self):
-        r"""Gets the session_id of this WaitEventQueryInfo.
+        r"""Gets the session_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 会话ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The session_id of this WaitEventQueryInfo.
+        :return: The session_id of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._session_id
 
     @session_id.setter
     def session_id(self, session_id):
-        r"""Sets the session_id of this WaitEventQueryInfo.
+        r"""Sets the session_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 会话ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param session_id: The session_id of this WaitEventQueryInfo.
+        :param session_id: The session_id of this WaitEventQueryInfoOption.
         :type session_id: str
         """
         self._session_id = session_id
 
     @property
     def block_session_id(self):
-        r"""Gets the block_session_id of this WaitEventQueryInfo.
+        r"""Gets the block_session_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 阻塞当前会话的会话ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The block_session_id of this WaitEventQueryInfo.
+        :return: The block_session_id of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._block_session_id
 
     @block_session_id.setter
     def block_session_id(self, block_session_id):
-        r"""Sets the block_session_id of this WaitEventQueryInfo.
+        r"""Sets the block_session_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 阻塞当前会话的会话ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param block_session_id: The block_session_id of this WaitEventQueryInfo.
+        :param block_session_id: The block_session_id of this WaitEventQueryInfoOption.
         :type block_session_id: str
         """
         self._block_session_id = block_session_id
 
     @property
     def block_count(self):
-        r"""Gets the block_count of this WaitEventQueryInfo.
+        r"""Gets the block_count of this WaitEventQueryInfoOption.
 
         **参数解释**: 阻塞当前会话的会话数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The block_count of this WaitEventQueryInfo.
-        :rtype: str
+        :return: The block_count of this WaitEventQueryInfoOption.
+        :rtype: int
         """
         return self._block_count
 
     @block_count.setter
     def block_count(self, block_count):
-        r"""Sets the block_count of this WaitEventQueryInfo.
+        r"""Sets the block_count of this WaitEventQueryInfoOption.
 
         **参数解释**: 阻塞当前会话的会话数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param block_count: The block_count of this WaitEventQueryInfo.
-        :type block_count: str
+        :param block_count: The block_count of this WaitEventQueryInfoOption.
+        :type block_count: int
         """
         self._block_count = block_count
 
     @property
     def unique_sql_id(self):
-        r"""Gets the unique_sql_id of this WaitEventQueryInfo.
+        r"""Gets the unique_sql_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 唯一的SQL ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The unique_sql_id of this WaitEventQueryInfo.
+        :return: The unique_sql_id of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._unique_sql_id
 
     @unique_sql_id.setter
     def unique_sql_id(self, unique_sql_id):
-        r"""Sets the unique_sql_id of this WaitEventQueryInfo.
+        r"""Sets the unique_sql_id of this WaitEventQueryInfoOption.
 
         **参数解释**: 唯一的SQL ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param unique_sql_id: The unique_sql_id of this WaitEventQueryInfo.
+        :param unique_sql_id: The unique_sql_id of this WaitEventQueryInfoOption.
         :type unique_sql_id: str
         """
         self._unique_sql_id = unique_sql_id
 
     @property
     def query_id(self):
-        r"""Gets the query_id of this WaitEventQueryInfo.
+        r"""Gets the query_id of this WaitEventQueryInfoOption.
 
         **参数解释**: SQL查询ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The query_id of this WaitEventQueryInfo.
+        :return: The query_id of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._query_id
 
     @query_id.setter
     def query_id(self, query_id):
-        r"""Sets the query_id of this WaitEventQueryInfo.
+        r"""Sets the query_id of this WaitEventQueryInfoOption.
 
         **参数解释**: SQL查询ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param query_id: The query_id of this WaitEventQueryInfo.
+        :param query_id: The query_id of this WaitEventQueryInfoOption.
         :type query_id: str
         """
         self._query_id = query_id
 
     @property
     def state(self):
-        r"""Gets the state of this WaitEventQueryInfo.
+        r"""Gets the state of this WaitEventQueryInfoOption.
 
         **参数解释**: 该会话当前整体状态。 **约束限制**: 不涉及。 **取值范围**: -active：后台正在执行一个查询。 -idle：后台正在等待一个新的客户端命令。 -idle in transaction：后台在事务中，但事务中没有语句在执行。 -fastpath function call：后台正在执行一个fast-path函数。 -disabled：如果后台禁用track_activities，则事务显示此状态。 **默认取值**: 不涉及。
 
-        :return: The state of this WaitEventQueryInfo.
+        :return: The state of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        r"""Sets the state of this WaitEventQueryInfo.
+        r"""Sets the state of this WaitEventQueryInfoOption.
 
         **参数解释**: 该会话当前整体状态。 **约束限制**: 不涉及。 **取值范围**: -active：后台正在执行一个查询。 -idle：后台正在等待一个新的客户端命令。 -idle in transaction：后台在事务中，但事务中没有语句在执行。 -fastpath function call：后台正在执行一个fast-path函数。 -disabled：如果后台禁用track_activities，则事务显示此状态。 **默认取值**: 不涉及。
 
-        :param state: The state of this WaitEventQueryInfo.
+        :param state: The state of this WaitEventQueryInfoOption.
         :type state: str
         """
         self._state = state
 
     @property
     def wait_event(self):
-        r"""Gets the wait_event of this WaitEventQueryInfo.
+        r"""Gets the wait_event of this WaitEventQueryInfoOption.
 
         **参数解释**: 等待事件。 参见“开发指南 > 系统表和系统视图 > 系统视图 > 其他系统视图 > PG_THREAD_WAIT_STATUS”中的wait_event字段。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The wait_event of this WaitEventQueryInfo.
+        :return: The wait_event of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._wait_event
 
     @wait_event.setter
     def wait_event(self, wait_event):
-        r"""Sets the wait_event of this WaitEventQueryInfo.
+        r"""Sets the wait_event of this WaitEventQueryInfoOption.
 
         **参数解释**: 等待事件。 参见“开发指南 > 系统表和系统视图 > 系统视图 > 其他系统视图 > PG_THREAD_WAIT_STATUS”中的wait_event字段。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param wait_event: The wait_event of this WaitEventQueryInfo.
+        :param wait_event: The wait_event of this WaitEventQueryInfoOption.
         :type wait_event: str
         """
         self._wait_event = wait_event
 
     @property
     def wait_status(self):
-        r"""Gets the wait_status of this WaitEventQueryInfo.
+        r"""Gets the wait_status of this WaitEventQueryInfoOption.
 
         **参数解释**: 等待状态。 参见“开发指南 > 系统表和系统视图 > 系统视图 > 其他系统视图 > PG_THREAD_WAIT_STATUS”中的wait_status列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :return: The wait_status of this WaitEventQueryInfo.
+        :return: The wait_status of this WaitEventQueryInfoOption.
         :rtype: str
         """
         return self._wait_status
 
     @wait_status.setter
     def wait_status(self, wait_status):
-        r"""Sets the wait_status of this WaitEventQueryInfo.
+        r"""Sets the wait_status of this WaitEventQueryInfoOption.
 
         **参数解释**: 等待状态。 参见“开发指南 > 系统表和系统视图 > 系统视图 > 其他系统视图 > PG_THREAD_WAIT_STATUS”中的wait_status列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
-        :param wait_status: The wait_status of this WaitEventQueryInfo.
+        :param wait_status: The wait_status of this WaitEventQueryInfoOption.
         :type wait_status: str
         """
         self._wait_status = wait_status
@@ -388,7 +388,7 @@ class WaitEventQueryInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WaitEventQueryInfo):
+        if not isinstance(other, WaitEventQueryInfoOption):
             return False
 
         return self.__dict__ == other.__dict__

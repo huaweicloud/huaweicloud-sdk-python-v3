@@ -51,13 +51,13 @@ class DatabasePermissionReq:
         :type type: str
         :param is_grant: **参数解释**： 是否授权操作。 **取值范围**： 不涉及。
         :type is_grant: bool
-        :param grant_list: **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
+        :param grant_list: **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 列表项最大值为100。
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.Grant`]
-        :param revoke_list: **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
+        :param revoke_list: **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 列表项最大值为100。
         :type revoke_list: list[:class:`huaweicloudsdkdws.v2.Revoke`]
-        :param role_list: **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
+        :param role_list: **参数解释**： 被授权角色列表。 **取值范围**： 列表项取值[0,100]。
         :type role_list: list[str]
-        :param object_list: **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
+        :param object_list: **参数解释**： 权限所属对象列表。 **取值范围**： 列表项取值[0,2000]。
         :type object_list: list[str]
         :param all_object: **参数解释**： schema下所有数据库对象权限，默认false。 **取值范围**： 不涉及。
         :type all_object: bool
@@ -152,7 +152,7 @@ class DatabasePermissionReq:
     def grant_list(self):
         r"""Gets the grant_list of this DatabasePermissionReq.
 
-        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
+        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 列表项最大值为100。
 
         :return: The grant_list of this DatabasePermissionReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Grant`]
@@ -163,7 +163,7 @@ class DatabasePermissionReq:
     def grant_list(self, grant_list):
         r"""Sets the grant_list of this DatabasePermissionReq.
 
-        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 不涉及。
+        **参数解释**： 授权列表。is_grant为true时必填。 **取值范围**： 列表项最大值为100。
 
         :param grant_list: The grant_list of this DatabasePermissionReq.
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.Grant`]
@@ -174,7 +174,7 @@ class DatabasePermissionReq:
     def revoke_list(self):
         r"""Gets the revoke_list of this DatabasePermissionReq.
 
-        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
+        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 列表项最大值为100。
 
         :return: The revoke_list of this DatabasePermissionReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.Revoke`]
@@ -185,7 +185,7 @@ class DatabasePermissionReq:
     def revoke_list(self, revoke_list):
         r"""Sets the revoke_list of this DatabasePermissionReq.
 
-        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 不涉及。
+        **参数解释**： 撤销权限列表。is_grant为false时必填。 **取值范围**： 列表项最大值为100。
 
         :param revoke_list: The revoke_list of this DatabasePermissionReq.
         :type revoke_list: list[:class:`huaweicloudsdkdws.v2.Revoke`]
@@ -196,7 +196,7 @@ class DatabasePermissionReq:
     def role_list(self):
         r"""Gets the role_list of this DatabasePermissionReq.
 
-        **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
+        **参数解释**： 被授权角色列表。 **取值范围**： 列表项取值[0,100]。
 
         :return: The role_list of this DatabasePermissionReq.
         :rtype: list[str]
@@ -207,7 +207,7 @@ class DatabasePermissionReq:
     def role_list(self, role_list):
         r"""Sets the role_list of this DatabasePermissionReq.
 
-        **参数解释**： 被授权角色列表。 **取值范围**： 不涉及。
+        **参数解释**： 被授权角色列表。 **取值范围**： 列表项取值[0,100]。
 
         :param role_list: The role_list of this DatabasePermissionReq.
         :type role_list: list[str]
@@ -218,7 +218,7 @@ class DatabasePermissionReq:
     def object_list(self):
         r"""Gets the object_list of this DatabasePermissionReq.
 
-        **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
+        **参数解释**： 权限所属对象列表。 **取值范围**： 列表项取值[0,2000]。
 
         :return: The object_list of this DatabasePermissionReq.
         :rtype: list[str]
@@ -229,7 +229,7 @@ class DatabasePermissionReq:
     def object_list(self, object_list):
         r"""Sets the object_list of this DatabasePermissionReq.
 
-        **参数解释**： 权限所属对象列表。 **取值范围**： 不涉及。
+        **参数解释**： 权限所属对象列表。 **取值范围**： 列表项取值[0,2000]。
 
         :param object_list: The object_list of this DatabasePermissionReq.
         :type object_list: list[str]

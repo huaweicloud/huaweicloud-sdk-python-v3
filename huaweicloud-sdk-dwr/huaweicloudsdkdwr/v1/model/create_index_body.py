@@ -17,16 +17,16 @@ class CreateIndexBody:
     openapi_types = {
         'store_name': 'str',
         'collection_name': 'str',
-        'index_params': 'IndexParams'
+        'index_param': 'IndexParam'
     }
 
     attribute_map = {
         'store_name': 'store_name',
         'collection_name': 'collection_name',
-        'index_params': 'index_params'
+        'index_param': 'index_param'
     }
 
-    def __init__(self, store_name=None, collection_name=None, index_params=None):
+    def __init__(self, store_name=None, collection_name=None, index_param=None):
         r"""CreateIndexBody
 
         The model defined in huaweicloud sdk
@@ -35,20 +35,20 @@ class CreateIndexBody:
         :type store_name: str
         :param collection_name: **参数解释：** collection名称，知识仓内唯一。 **约束限制：** 长度范围为1到255个字符，支持字母、数字、中划线（-）和下划线（ _ ），大小写敏感。第一个字符只能够是下划线（ _ ）和字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type collection_name: str
-        :param index_params: 
-        :type index_params: :class:`huaweicloudsdkdwr.v1.IndexParams`
+        :param index_param: 
+        :type index_param: :class:`huaweicloudsdkdwr.v1.IndexParam`
         """
         
         
 
         self._store_name = None
         self._collection_name = None
-        self._index_params = None
+        self._index_param = None
         self.discriminator = None
 
         self.store_name = store_name
         self.collection_name = collection_name
-        self.index_params = index_params
+        self.index_param = index_param
 
     @property
     def store_name(self):
@@ -95,22 +95,22 @@ class CreateIndexBody:
         self._collection_name = collection_name
 
     @property
-    def index_params(self):
-        r"""Gets the index_params of this CreateIndexBody.
+    def index_param(self):
+        r"""Gets the index_param of this CreateIndexBody.
 
-        :return: The index_params of this CreateIndexBody.
-        :rtype: :class:`huaweicloudsdkdwr.v1.IndexParams`
+        :return: The index_param of this CreateIndexBody.
+        :rtype: :class:`huaweicloudsdkdwr.v1.IndexParam`
         """
-        return self._index_params
+        return self._index_param
 
-    @index_params.setter
-    def index_params(self, index_params):
-        r"""Sets the index_params of this CreateIndexBody.
+    @index_param.setter
+    def index_param(self, index_param):
+        r"""Sets the index_param of this CreateIndexBody.
 
-        :param index_params: The index_params of this CreateIndexBody.
-        :type index_params: :class:`huaweicloudsdkdwr.v1.IndexParams`
+        :param index_param: The index_param of this CreateIndexBody.
+        :type index_param: :class:`huaweicloudsdkdwr.v1.IndexParam`
         """
-        self._index_params = index_params
+        self._index_param = index_param
 
     def to_dict(self):
         result = {}

@@ -24,7 +24,8 @@ class IssueCertificateAuthorityCertificateRequestBody:
         'key_algorithm': 'str',
         'key_usages': 'list[str]',
         'crl_configuration': 'CrlConfiguration',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'hsm_cluster_info': 'HsmClusterInfo'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class IssueCertificateAuthorityCertificateRequestBody:
         'key_algorithm': 'key_algorithm',
         'key_usages': 'key_usages',
         'crl_configuration': 'crl_configuration',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'hsm_cluster_info': 'hsm_cluster_info'
     }
 
-    def __init__(self, issuer_id=None, path_length=None, signature_algorithm=None, validity=None, type=None, distinguished_name=None, key_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None):
+    def __init__(self, issuer_id=None, path_length=None, signature_algorithm=None, validity=None, type=None, distinguished_name=None, key_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None, hsm_cluster_info=None):
         r"""IssueCertificateAuthorityCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class IssueCertificateAuthorityCertificateRequestBody:
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
         :type enterprise_project_id: str
+        :param hsm_cluster_info: 
+        :type hsm_cluster_info: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
         """
         
         
@@ -79,6 +83,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
         self._key_usages = None
         self._crl_configuration = None
         self._enterprise_project_id = None
+        self._hsm_cluster_info = None
         self.discriminator = None
 
         self.issuer_id = issuer_id
@@ -98,6 +103,8 @@ class IssueCertificateAuthorityCertificateRequestBody:
             self.crl_configuration = crl_configuration
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if hsm_cluster_info is not None:
+            self.hsm_cluster_info = hsm_cluster_info
 
     @property
     def issuer_id(self):
@@ -306,6 +313,24 @@ class IssueCertificateAuthorityCertificateRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def hsm_cluster_info(self):
+        r"""Gets the hsm_cluster_info of this IssueCertificateAuthorityCertificateRequestBody.
+
+        :return: The hsm_cluster_info of this IssueCertificateAuthorityCertificateRequestBody.
+        :rtype: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
+        """
+        return self._hsm_cluster_info
+
+    @hsm_cluster_info.setter
+    def hsm_cluster_info(self, hsm_cluster_info):
+        r"""Sets the hsm_cluster_info of this IssueCertificateAuthorityCertificateRequestBody.
+
+        :param hsm_cluster_info: The hsm_cluster_info of this IssueCertificateAuthorityCertificateRequestBody.
+        :type hsm_cluster_info: :class:`huaweicloudsdkccm.v1.HsmClusterInfo`
+        """
+        self._hsm_cluster_info = hsm_cluster_info
 
     def to_dict(self):
         result = {}

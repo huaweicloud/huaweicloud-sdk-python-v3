@@ -19,7 +19,8 @@ class ExtendedKeyUsage:
         'client_auth': 'bool',
         'code_signing': 'bool',
         'email_protection': 'bool',
-        'time_stamping': 'bool'
+        'time_stamping': 'bool',
+        'smart_card_logon': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ExtendedKeyUsage:
         'client_auth': 'client_auth',
         'code_signing': 'code_signing',
         'email_protection': 'email_protection',
-        'time_stamping': 'time_stamping'
+        'time_stamping': 'time_stamping',
+        'smart_card_logon': 'smart_card_logon'
     }
 
-    def __init__(self, server_auth=None, client_auth=None, code_signing=None, email_protection=None, time_stamping=None):
+    def __init__(self, server_auth=None, client_auth=None, code_signing=None, email_protection=None, time_stamping=None, smart_card_logon=None):
         r"""ExtendedKeyUsage
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ExtendedKeyUsage:
         :type email_protection: bool
         :param time_stamping: 时间戳，OID为：1.3.6.1.5.5.7.3.8。 - **true** - **false** &gt; 将一个对象的哈希绑定到一个时间，默认为false。
         :type time_stamping: bool
+        :param smart_card_logon: 智能卡登录，OID为：1.3.6.1.4.1.311.20.2.2。 - **true** - **false** &gt; Active Directory登录，默认为false。
+        :type smart_card_logon: bool
         """
         
         
@@ -54,6 +58,7 @@ class ExtendedKeyUsage:
         self._code_signing = None
         self._email_protection = None
         self._time_stamping = None
+        self._smart_card_logon = None
         self.discriminator = None
 
         if server_auth is not None:
@@ -66,6 +71,8 @@ class ExtendedKeyUsage:
             self.email_protection = email_protection
         if time_stamping is not None:
             self.time_stamping = time_stamping
+        if smart_card_logon is not None:
+            self.smart_card_logon = smart_card_logon
 
     @property
     def server_auth(self):
@@ -176,6 +183,28 @@ class ExtendedKeyUsage:
         :type time_stamping: bool
         """
         self._time_stamping = time_stamping
+
+    @property
+    def smart_card_logon(self):
+        r"""Gets the smart_card_logon of this ExtendedKeyUsage.
+
+        智能卡登录，OID为：1.3.6.1.4.1.311.20.2.2。 - **true** - **false** > Active Directory登录，默认为false。
+
+        :return: The smart_card_logon of this ExtendedKeyUsage.
+        :rtype: bool
+        """
+        return self._smart_card_logon
+
+    @smart_card_logon.setter
+    def smart_card_logon(self, smart_card_logon):
+        r"""Sets the smart_card_logon of this ExtendedKeyUsage.
+
+        智能卡登录，OID为：1.3.6.1.4.1.311.20.2.2。 - **true** - **false** > Active Directory登录，默认为false。
+
+        :param smart_card_logon: The smart_card_logon of this ExtendedKeyUsage.
+        :type smart_card_logon: bool
+        """
+        self._smart_card_logon = smart_card_logon
 
     def to_dict(self):
         result = {}

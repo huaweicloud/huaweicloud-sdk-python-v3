@@ -75,9 +75,9 @@ class UserAuthorityReq:
         :type inherit: bool
         :param conn_limit: **参数解释**： 连接数限制。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type conn_limit: int
-        :param grant_members: **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param grant_members: **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为100。 **默认取值**： 不涉及。
         :type grant_members: list[str]
-        :param grant_list: **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param grant_list: **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为2000。 **默认取值**： 不涉及。
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.GrantAuthority`]
         :param desc: **参数解释**： 描述信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type desc: str
@@ -374,7 +374,7 @@ class UserAuthorityReq:
     def grant_members(self):
         r"""Gets the grant_members of this UserAuthorityReq.
 
-        **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为100。 **默认取值**： 不涉及。
 
         :return: The grant_members of this UserAuthorityReq.
         :rtype: list[str]
@@ -385,7 +385,7 @@ class UserAuthorityReq:
     def grant_members(self, grant_members):
         r"""Sets the grant_members of this UserAuthorityReq.
 
-        **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 授权对象信息。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为100。 **默认取值**： 不涉及。
 
         :param grant_members: The grant_members of this UserAuthorityReq.
         :type grant_members: list[str]
@@ -396,7 +396,7 @@ class UserAuthorityReq:
     def grant_list(self):
         r"""Gets the grant_list of this UserAuthorityReq.
 
-        **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为2000。 **默认取值**： 不涉及。
 
         :return: The grant_list of this UserAuthorityReq.
         :rtype: list[:class:`huaweicloudsdkdws.v2.GrantAuthority`]
@@ -407,7 +407,7 @@ class UserAuthorityReq:
     def grant_list(self, grant_list):
         r"""Sets the grant_list of this UserAuthorityReq.
 
-        **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 授权列表。 **约束限制**： 不涉及。 **取值范围**： 列表项最大值为2000。 **默认取值**： 不涉及。
 
         :param grant_list: The grant_list of this UserAuthorityReq.
         :type grant_list: list[:class:`huaweicloudsdkdws.v2.GrantAuthority`]

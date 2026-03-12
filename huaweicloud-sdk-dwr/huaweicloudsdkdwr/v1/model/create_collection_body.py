@@ -20,7 +20,7 @@ class CreateCollectionBody:
         'primary_field': 'PrimaryField',
         'fields': 'list[Field]',
         'description': 'str',
-        'index_params': 'list[IndexParams]',
+        'index_params': 'list[IndexParam]',
         'params': 'dict(str, object)'
     }
 
@@ -50,7 +50,7 @@ class CreateCollectionBody:
         :param description: **参数解释：** 指定 Collection 的描述信息。 **约束限制：** 有效长度0-255字节。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type description: str
         :param index_params: **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
-        :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParam`]
         :param params: **参数解释：** collection常用参数。 **约束限制：** shards_num: 默认2，取值范围[1, 16] partitions_num: 默认4，取值范围[1, 1024]，若所有field的partition_key为false，则partitions_num固定为1。 max_length: 默认256，取值范围[1, 65535]，当primary_field.type为String时，指示String的最大长度。
         :type params: dict(str, object)
         """
@@ -190,7 +190,7 @@ class CreateCollectionBody:
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :return: The index_params of this CreateCollectionBody.
-        :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexParam`]
         """
         return self._index_params
 
@@ -201,7 +201,7 @@ class CreateCollectionBody:
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
         :param index_params: The index_params of this CreateCollectionBody.
-        :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParams`]
+        :type index_params: list[:class:`huaweicloudsdkdwr.v1.IndexParam`]
         """
         self._index_params = index_params
 

@@ -20,7 +20,7 @@ class ShowPartitionMetricsRequest:
         'label': 'str',
         'label_list': 'str',
         'start_time': 'int',
-        'end_time': 'str'
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ShowPartitionMetricsRequest:
         :param start_time: 监控开始时间点，10位时间戳。
         :type start_time: int
         :param end_time: 监控结束时间点，10位时间戳。
-        :type end_time: str
+        :type end_time: int
         """
         
         
@@ -187,7 +187,7 @@ class ShowPartitionMetricsRequest:
         监控结束时间点，10位时间戳。
 
         :return: The end_time of this ShowPartitionMetricsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -198,7 +198,7 @@ class ShowPartitionMetricsRequest:
         监控结束时间点，10位时间戳。
 
         :param end_time: The end_time of this ShowPartitionMetricsRequest.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

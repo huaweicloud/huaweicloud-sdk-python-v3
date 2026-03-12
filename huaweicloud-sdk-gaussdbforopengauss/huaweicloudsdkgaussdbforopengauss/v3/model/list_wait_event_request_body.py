@@ -20,7 +20,7 @@ class ListWaitEventRequestBody:
         'limit': 'int',
         'offset': 'int',
         'order_fields': 'list[list[str]]',
-        'wait_event_query_info': 'WaitEventQueryInfo'
+        'wait_event_query_info': 'WaitEventQueryInfoOption'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListWaitEventRequestBody:
         :param order_fields: **参数解释**: 排序字段列表，内部List&lt;String&gt;。 **约束限制**: 不涉及。
         :type order_fields: list[list[str]]
         :param wait_event_query_info: 
-        :type wait_event_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfo`
+        :type wait_event_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfoOption`
         """
         
         
@@ -188,7 +188,7 @@ class ListWaitEventRequestBody:
         r"""Gets the wait_event_query_info of this ListWaitEventRequestBody.
 
         :return: The wait_event_query_info of this ListWaitEventRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfo`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfoOption`
         """
         return self._wait_event_query_info
 
@@ -197,7 +197,7 @@ class ListWaitEventRequestBody:
         r"""Sets the wait_event_query_info of this ListWaitEventRequestBody.
 
         :param wait_event_query_info: The wait_event_query_info of this ListWaitEventRequestBody.
-        :type wait_event_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfo`
+        :type wait_event_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventQueryInfoOption`
         """
         self._wait_event_query_info = wait_event_query_info
 

@@ -84,7 +84,8 @@ class UpdateSqlLimitTaskRequestBody:
             self.key_words = key_words
         if parallel_size is not None:
             self.parallel_size = parallel_size
-        self.task_name = task_name
+        if task_name is not None:
+            self.task_name = task_name
         if cpu_utilization is not None:
             self.cpu_utilization = cpu_utilization
         if memory_utilization is not None:

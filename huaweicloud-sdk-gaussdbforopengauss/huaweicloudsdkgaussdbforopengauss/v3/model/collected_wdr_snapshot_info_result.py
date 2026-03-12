@@ -22,7 +22,13 @@ class CollectedWdrSnapshotInfoResult:
         'end_time': 'str',
         'download_url': 'str',
         'status': 'str',
-        'notes': 'str'
+        'notes': 'str',
+        'job_create_time': 'str',
+        'start_snapshot_id': 'str',
+        'end_snapshot_id': 'str',
+        'file_name': 'str',
+        'file_path': 'str',
+        'obs_bucket': 'CollectedWdrSnapshotInfoResultObsBucket'
     }
 
     attribute_map = {
@@ -33,10 +39,16 @@ class CollectedWdrSnapshotInfoResult:
         'end_time': 'end_time',
         'download_url': 'download_url',
         'status': 'status',
-        'notes': 'notes'
+        'notes': 'notes',
+        'job_create_time': 'job_create_time',
+        'start_snapshot_id': 'start_snapshot_id',
+        'end_snapshot_id': 'end_snapshot_id',
+        'file_name': 'file_name',
+        'file_path': 'file_path',
+        'obs_bucket': 'obs_bucket'
     }
 
-    def __init__(self, job_id=None, wdr_type=None, file_size=None, start_time=None, end_time=None, download_url=None, status=None, notes=None):
+    def __init__(self, job_id=None, wdr_type=None, file_size=None, start_time=None, end_time=None, download_url=None, status=None, notes=None, job_create_time=None, start_snapshot_id=None, end_snapshot_id=None, file_name=None, file_path=None, obs_bucket=None):
         r"""CollectedWdrSnapshotInfoResult
 
         The model defined in huaweicloud sdk
@@ -57,6 +69,18 @@ class CollectedWdrSnapshotInfoResult:
         :type status: str
         :param notes: **参数解释**： 备注。采集类型为组件级时，内容包括采集的组件ID。 **取值范围**： 不涉及。
         :type notes: str
+        :param job_create_time: **参数解释**： WDR报告生成任务的创建时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，当前时间固定为+0时区。例如，\&quot;2025-07-08T10:57:59+0000\&quot;。 **取值范围**： 不涉及。
+        :type job_create_time: str
+        :param start_snapshot_id: **参数解释**： 用于生成WDR报告的第一个对比快照ID。例如：\&quot;20024\&quot;。只针对使用报告生成模式为对比快照ID（mode&#x3D;snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode&#x3D;time_range），则该字段为空。 **取值范围**： 不涉及。
+        :type start_snapshot_id: str
+        :param end_snapshot_id: **参数解释**： 用于生成WDR报告的第二个对比快照ID。例如：\&quot;20025\&quot;。只针对使用报告生成模式为对比快照ID（mode&#x3D;snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode&#x3D;time_range）来生成的，则该字段为空。 **取值范围**： 不涉及。
+        :type end_snapshot_id: str
+        :param file_name: **参数解释**： WDR报告临时文件名称。 **取值范围**： 不涉及。
+        :type file_name: str
+        :param file_path: **参数解释**： WDR报告临时文件保存路径。 **取值范围**： 不涉及。
+        :type file_path: str
+        :param obs_bucket: 
+        :type obs_bucket: :class:`huaweicloudsdkgaussdbforopengauss.v3.CollectedWdrSnapshotInfoResultObsBucket`
         """
         
         
@@ -69,6 +93,12 @@ class CollectedWdrSnapshotInfoResult:
         self._download_url = None
         self._status = None
         self._notes = None
+        self._job_create_time = None
+        self._start_snapshot_id = None
+        self._end_snapshot_id = None
+        self._file_name = None
+        self._file_path = None
+        self._obs_bucket = None
         self.discriminator = None
 
         if job_id is not None:
@@ -87,6 +117,18 @@ class CollectedWdrSnapshotInfoResult:
             self.status = status
         if notes is not None:
             self.notes = notes
+        if job_create_time is not None:
+            self.job_create_time = job_create_time
+        if start_snapshot_id is not None:
+            self.start_snapshot_id = start_snapshot_id
+        if end_snapshot_id is not None:
+            self.end_snapshot_id = end_snapshot_id
+        if file_name is not None:
+            self.file_name = file_name
+        if file_path is not None:
+            self.file_path = file_path
+        if obs_bucket is not None:
+            self.obs_bucket = obs_bucket
 
     @property
     def job_id(self):
@@ -263,6 +305,134 @@ class CollectedWdrSnapshotInfoResult:
         :type notes: str
         """
         self._notes = notes
+
+    @property
+    def job_create_time(self):
+        r"""Gets the job_create_time of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告生成任务的创建时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，当前时间固定为+0时区。例如，\"2025-07-08T10:57:59+0000\"。 **取值范围**： 不涉及。
+
+        :return: The job_create_time of this CollectedWdrSnapshotInfoResult.
+        :rtype: str
+        """
+        return self._job_create_time
+
+    @job_create_time.setter
+    def job_create_time(self, job_create_time):
+        r"""Sets the job_create_time of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告生成任务的创建时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，当前时间固定为+0时区。例如，\"2025-07-08T10:57:59+0000\"。 **取值范围**： 不涉及。
+
+        :param job_create_time: The job_create_time of this CollectedWdrSnapshotInfoResult.
+        :type job_create_time: str
+        """
+        self._job_create_time = job_create_time
+
+    @property
+    def start_snapshot_id(self):
+        r"""Gets the start_snapshot_id of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： 用于生成WDR报告的第一个对比快照ID。例如：\"20024\"。只针对使用报告生成模式为对比快照ID（mode=snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode=time_range），则该字段为空。 **取值范围**： 不涉及。
+
+        :return: The start_snapshot_id of this CollectedWdrSnapshotInfoResult.
+        :rtype: str
+        """
+        return self._start_snapshot_id
+
+    @start_snapshot_id.setter
+    def start_snapshot_id(self, start_snapshot_id):
+        r"""Sets the start_snapshot_id of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： 用于生成WDR报告的第一个对比快照ID。例如：\"20024\"。只针对使用报告生成模式为对比快照ID（mode=snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode=time_range），则该字段为空。 **取值范围**： 不涉及。
+
+        :param start_snapshot_id: The start_snapshot_id of this CollectedWdrSnapshotInfoResult.
+        :type start_snapshot_id: str
+        """
+        self._start_snapshot_id = start_snapshot_id
+
+    @property
+    def end_snapshot_id(self):
+        r"""Gets the end_snapshot_id of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： 用于生成WDR报告的第二个对比快照ID。例如：\"20025\"。只针对使用报告生成模式为对比快照ID（mode=snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode=time_range）来生成的，则该字段为空。 **取值范围**： 不涉及。
+
+        :return: The end_snapshot_id of this CollectedWdrSnapshotInfoResult.
+        :rtype: str
+        """
+        return self._end_snapshot_id
+
+    @end_snapshot_id.setter
+    def end_snapshot_id(self, end_snapshot_id):
+        r"""Sets the end_snapshot_id of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： 用于生成WDR报告的第二个对比快照ID。例如：\"20025\"。只针对使用报告生成模式为对比快照ID（mode=snapshot_id）的采集任务生效；如果该任务使用的是时间区间查询方式（mode=time_range）来生成的，则该字段为空。 **取值范围**： 不涉及。
+
+        :param end_snapshot_id: The end_snapshot_id of this CollectedWdrSnapshotInfoResult.
+        :type end_snapshot_id: str
+        """
+        self._end_snapshot_id = end_snapshot_id
+
+    @property
+    def file_name(self):
+        r"""Gets the file_name of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告临时文件名称。 **取值范围**： 不涉及。
+
+        :return: The file_name of this CollectedWdrSnapshotInfoResult.
+        :rtype: str
+        """
+        return self._file_name
+
+    @file_name.setter
+    def file_name(self, file_name):
+        r"""Sets the file_name of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告临时文件名称。 **取值范围**： 不涉及。
+
+        :param file_name: The file_name of this CollectedWdrSnapshotInfoResult.
+        :type file_name: str
+        """
+        self._file_name = file_name
+
+    @property
+    def file_path(self):
+        r"""Gets the file_path of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告临时文件保存路径。 **取值范围**： 不涉及。
+
+        :return: The file_path of this CollectedWdrSnapshotInfoResult.
+        :rtype: str
+        """
+        return self._file_path
+
+    @file_path.setter
+    def file_path(self, file_path):
+        r"""Sets the file_path of this CollectedWdrSnapshotInfoResult.
+
+        **参数解释**： WDR报告临时文件保存路径。 **取值范围**： 不涉及。
+
+        :param file_path: The file_path of this CollectedWdrSnapshotInfoResult.
+        :type file_path: str
+        """
+        self._file_path = file_path
+
+    @property
+    def obs_bucket(self):
+        r"""Gets the obs_bucket of this CollectedWdrSnapshotInfoResult.
+
+        :return: The obs_bucket of this CollectedWdrSnapshotInfoResult.
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CollectedWdrSnapshotInfoResultObsBucket`
+        """
+        return self._obs_bucket
+
+    @obs_bucket.setter
+    def obs_bucket(self, obs_bucket):
+        r"""Sets the obs_bucket of this CollectedWdrSnapshotInfoResult.
+
+        :param obs_bucket: The obs_bucket of this CollectedWdrSnapshotInfoResult.
+        :type obs_bucket: :class:`huaweicloudsdkgaussdbforopengauss.v3.CollectedWdrSnapshotInfoResultObsBucket`
+        """
+        self._obs_bucket = obs_bucket
 
     def to_dict(self):
         result = {}

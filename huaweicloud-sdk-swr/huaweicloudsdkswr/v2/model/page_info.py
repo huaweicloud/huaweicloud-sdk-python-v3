@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BackupNodeInfoResult:
+class PageInfo:
 
     """
     Attributes:
@@ -15,80 +15,51 @@ class BackupNodeInfoResult:
     sensitive_list = []
 
     openapi_types = {
-        'az_list': 'str',
-        'node_list': 'str'
+        'next_marker': 'str'
     }
 
     attribute_map = {
-        'az_list': 'az_list',
-        'node_list': 'node_list'
+        'next_marker': 'next_marker'
     }
 
-    def __init__(self, az_list=None, node_list=None):
-        r"""BackupNodeInfoResult
+    def __init__(self, next_marker=None):
+        r"""PageInfo
 
         The model defined in huaweicloud sdk
 
-        :param az_list: **参数解释**: 选择指定az下的节点进行备份。 **取值范围**: 不涉及。
-        :type az_list: str
-        :param node_list: **参数解释**: 选择指定节点进行备份。 **取值范围**: 不涉及。
-        :type node_list: str
+        :param next_marker: 下一次分页查询的起始标记。如果未返回该值，则表示数据已查询完毕
+        :type next_marker: str
         """
         
         
 
-        self._az_list = None
-        self._node_list = None
+        self._next_marker = None
         self.discriminator = None
 
-        if az_list is not None:
-            self.az_list = az_list
-        if node_list is not None:
-            self.node_list = node_list
+        if next_marker is not None:
+            self.next_marker = next_marker
 
     @property
-    def az_list(self):
-        r"""Gets the az_list of this BackupNodeInfoResult.
+    def next_marker(self):
+        r"""Gets the next_marker of this PageInfo.
 
-        **参数解释**: 选择指定az下的节点进行备份。 **取值范围**: 不涉及。
+        下一次分页查询的起始标记。如果未返回该值，则表示数据已查询完毕
 
-        :return: The az_list of this BackupNodeInfoResult.
+        :return: The next_marker of this PageInfo.
         :rtype: str
         """
-        return self._az_list
+        return self._next_marker
 
-    @az_list.setter
-    def az_list(self, az_list):
-        r"""Sets the az_list of this BackupNodeInfoResult.
+    @next_marker.setter
+    def next_marker(self, next_marker):
+        r"""Sets the next_marker of this PageInfo.
 
-        **参数解释**: 选择指定az下的节点进行备份。 **取值范围**: 不涉及。
+        下一次分页查询的起始标记。如果未返回该值，则表示数据已查询完毕
 
-        :param az_list: The az_list of this BackupNodeInfoResult.
-        :type az_list: str
+        :param next_marker: The next_marker of this PageInfo.
+        :type next_marker: str
         """
-        self._az_list = az_list
-
-    @property
-    def node_list(self):
-        r"""Gets the node_list of this BackupNodeInfoResult.
-
-        **参数解释**: 选择指定节点进行备份。 **取值范围**: 不涉及。
-
-        :return: The node_list of this BackupNodeInfoResult.
-        :rtype: str
-        """
-        return self._node_list
-
-    @node_list.setter
-    def node_list(self, node_list):
-        r"""Sets the node_list of this BackupNodeInfoResult.
-
-        **参数解释**: 选择指定节点进行备份。 **取值范围**: 不涉及。
-
-        :param node_list: The node_list of this BackupNodeInfoResult.
-        :type node_list: str
-        """
-        self._node_list = node_list
+        self._next_marker = next_marker
 
     def to_dict(self):
         result = {}
@@ -127,7 +98,7 @@ class BackupNodeInfoResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BackupNodeInfoResult):
+        if not isinstance(other, PageInfo):
             return False
 
         return self.__dict__ == other.__dict__

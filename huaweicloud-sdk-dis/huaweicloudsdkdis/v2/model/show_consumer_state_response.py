@@ -16,56 +16,100 @@ class ShowConsumerStateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'has_more': 'bool',
+        'stream_name': 'str',
         'app_name': 'str',
-        'app_id': 'str',
-        'create_time': 'int',
-        'commit_checkpoint_stream_names': 'list[str]'
+        'partition_consuming_states': 'list[PartitionConsumingStates]'
     }
 
     attribute_map = {
+        'has_more': 'has_more',
+        'stream_name': 'stream_name',
         'app_name': 'app_name',
-        'app_id': 'app_id',
-        'create_time': 'create_time',
-        'commit_checkpoint_stream_names': 'commit_checkpoint_stream_names'
+        'partition_consuming_states': 'partition_consuming_states'
     }
 
-    def __init__(self, app_name=None, app_id=None, create_time=None, commit_checkpoint_stream_names=None):
+    def __init__(self, has_more=None, stream_name=None, app_name=None, partition_consuming_states=None):
         r"""ShowConsumerStateResponse
 
         The model defined in huaweicloud sdk
 
-        :param app_name: App的名称。
+        :param has_more: 是否还有更多满足条件的App。  - true：是。 - false：否。
+        :type has_more: bool
+        :param stream_name: 要查询的通道名称。
+        :type stream_name: str
+        :param app_name: 要查询的APP的名称，用户数据消费程序的唯一标识符。
         :type app_name: str
-        :param app_id: App的唯一标识符。
-        :type app_id: str
-        :param create_time: App创建的时间，单位毫秒。
-        :type create_time: int
-        :param commit_checkpoint_stream_names: 关联通道列表。
-        :type commit_checkpoint_stream_names: list[str]
+        :param partition_consuming_states: 当前分区消费状态.
+        :type partition_consuming_states: list[:class:`huaweicloudsdkdis.v2.PartitionConsumingStates`]
         """
         
         super().__init__()
 
+        self._has_more = None
+        self._stream_name = None
         self._app_name = None
-        self._app_id = None
-        self._create_time = None
-        self._commit_checkpoint_stream_names = None
+        self._partition_consuming_states = None
         self.discriminator = None
 
+        if has_more is not None:
+            self.has_more = has_more
+        if stream_name is not None:
+            self.stream_name = stream_name
         if app_name is not None:
             self.app_name = app_name
-        if app_id is not None:
-            self.app_id = app_id
-        if create_time is not None:
-            self.create_time = create_time
-        if commit_checkpoint_stream_names is not None:
-            self.commit_checkpoint_stream_names = commit_checkpoint_stream_names
+        if partition_consuming_states is not None:
+            self.partition_consuming_states = partition_consuming_states
+
+    @property
+    def has_more(self):
+        r"""Gets the has_more of this ShowConsumerStateResponse.
+
+        是否还有更多满足条件的App。  - true：是。 - false：否。
+
+        :return: The has_more of this ShowConsumerStateResponse.
+        :rtype: bool
+        """
+        return self._has_more
+
+    @has_more.setter
+    def has_more(self, has_more):
+        r"""Sets the has_more of this ShowConsumerStateResponse.
+
+        是否还有更多满足条件的App。  - true：是。 - false：否。
+
+        :param has_more: The has_more of this ShowConsumerStateResponse.
+        :type has_more: bool
+        """
+        self._has_more = has_more
+
+    @property
+    def stream_name(self):
+        r"""Gets the stream_name of this ShowConsumerStateResponse.
+
+        要查询的通道名称。
+
+        :return: The stream_name of this ShowConsumerStateResponse.
+        :rtype: str
+        """
+        return self._stream_name
+
+    @stream_name.setter
+    def stream_name(self, stream_name):
+        r"""Sets the stream_name of this ShowConsumerStateResponse.
+
+        要查询的通道名称。
+
+        :param stream_name: The stream_name of this ShowConsumerStateResponse.
+        :type stream_name: str
+        """
+        self._stream_name = stream_name
 
     @property
     def app_name(self):
         r"""Gets the app_name of this ShowConsumerStateResponse.
 
-        App的名称。
+        要查询的APP的名称，用户数据消费程序的唯一标识符。
 
         :return: The app_name of this ShowConsumerStateResponse.
         :rtype: str
@@ -76,7 +120,7 @@ class ShowConsumerStateResponse(SdkResponse):
     def app_name(self, app_name):
         r"""Sets the app_name of this ShowConsumerStateResponse.
 
-        App的名称。
+        要查询的APP的名称，用户数据消费程序的唯一标识符。
 
         :param app_name: The app_name of this ShowConsumerStateResponse.
         :type app_name: str
@@ -84,70 +128,26 @@ class ShowConsumerStateResponse(SdkResponse):
         self._app_name = app_name
 
     @property
-    def app_id(self):
-        r"""Gets the app_id of this ShowConsumerStateResponse.
+    def partition_consuming_states(self):
+        r"""Gets the partition_consuming_states of this ShowConsumerStateResponse.
 
-        App的唯一标识符。
+        当前分区消费状态.
 
-        :return: The app_id of this ShowConsumerStateResponse.
-        :rtype: str
+        :return: The partition_consuming_states of this ShowConsumerStateResponse.
+        :rtype: list[:class:`huaweicloudsdkdis.v2.PartitionConsumingStates`]
         """
-        return self._app_id
+        return self._partition_consuming_states
 
-    @app_id.setter
-    def app_id(self, app_id):
-        r"""Sets the app_id of this ShowConsumerStateResponse.
+    @partition_consuming_states.setter
+    def partition_consuming_states(self, partition_consuming_states):
+        r"""Sets the partition_consuming_states of this ShowConsumerStateResponse.
 
-        App的唯一标识符。
+        当前分区消费状态.
 
-        :param app_id: The app_id of this ShowConsumerStateResponse.
-        :type app_id: str
+        :param partition_consuming_states: The partition_consuming_states of this ShowConsumerStateResponse.
+        :type partition_consuming_states: list[:class:`huaweicloudsdkdis.v2.PartitionConsumingStates`]
         """
-        self._app_id = app_id
-
-    @property
-    def create_time(self):
-        r"""Gets the create_time of this ShowConsumerStateResponse.
-
-        App创建的时间，单位毫秒。
-
-        :return: The create_time of this ShowConsumerStateResponse.
-        :rtype: int
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        r"""Sets the create_time of this ShowConsumerStateResponse.
-
-        App创建的时间，单位毫秒。
-
-        :param create_time: The create_time of this ShowConsumerStateResponse.
-        :type create_time: int
-        """
-        self._create_time = create_time
-
-    @property
-    def commit_checkpoint_stream_names(self):
-        r"""Gets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
-
-        关联通道列表。
-
-        :return: The commit_checkpoint_stream_names of this ShowConsumerStateResponse.
-        :rtype: list[str]
-        """
-        return self._commit_checkpoint_stream_names
-
-    @commit_checkpoint_stream_names.setter
-    def commit_checkpoint_stream_names(self, commit_checkpoint_stream_names):
-        r"""Sets the commit_checkpoint_stream_names of this ShowConsumerStateResponse.
-
-        关联通道列表。
-
-        :param commit_checkpoint_stream_names: The commit_checkpoint_stream_names of this ShowConsumerStateResponse.
-        :type commit_checkpoint_stream_names: list[str]
-        """
-        self._commit_checkpoint_stream_names = commit_checkpoint_stream_names
+        self._partition_consuming_states = partition_consuming_states
 
     def to_dict(self):
         import warnings

@@ -43,7 +43,7 @@ class Field:
         :type element_data_type: str
         :param element_type_params: **参数解释：** 每个field列的参数。 **约束限制：** 如果field为FloatVector类型向量字段，则必须设定维度参数dim； 如果field为String类型字段或Array 元素类型为String类型，则可设定字段值最大长度max_length； 如果field为Array类型字段，则可设定数组最大容量max_capacity。 **取值范围：** 如果field为FloatVector类型向量字段时，参数dim的有效取值范围是[2-32768]; 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的有效取值范围是[1-65535]; 如果field为Array类型字段，参数max_capacity的有效取值范围是[1-32768] **默认取值:** 如果field为String类型字段或Array 元素类型为String类型, 参数max_length的默认值是256 如果field为Array类型字段，参数max_capacity的默认值是32。
         :type element_type_params: dict(str, object)
-        :param partition_key: **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
+        :param partition_key: **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** false。
         :type partition_key: bool
         """
         
@@ -157,7 +157,7 @@ class Field:
     def partition_key(self):
         r"""Gets the partition_key of this Field.
 
-        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
+        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** false。
 
         :return: The partition_key of this Field.
         :rtype: bool
@@ -168,7 +168,7 @@ class Field:
     def partition_key(self, partition_key):
         r"""Sets the partition_key of this Field.
 
-        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true，false。 **默认取值:** false。
+        **参数解释：** 是否将这个filed列设置为分区键。 **约束限制：** 1.只能在数据类型为String与Int64的field列上设置分区键； 2.最多只能设置1个field为分区键。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** false。
 
         :param partition_key: The partition_key of this Field.
         :type partition_key: bool

@@ -16,7 +16,7 @@ class ShowFullSqlResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'trace_statistics': 'object',
+        'trace_statistics': 'FullSqlTraceStatisticsResult',
         'components': 'list[FullSqlComponetResult]'
     }
 
@@ -30,8 +30,8 @@ class ShowFullSqlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param trace_statistics: **参数解释**: 链路详情。
-        :type trace_statistics: object
+        :param trace_statistics: 
+        :type trace_statistics: :class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlTraceStatisticsResult`
         :param components: **参数解释**: 组件上SQL执行记录列表。
         :type components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlComponetResult`]
         """
@@ -51,10 +51,8 @@ class ShowFullSqlResponse(SdkResponse):
     def trace_statistics(self):
         r"""Gets the trace_statistics of this ShowFullSqlResponse.
 
-        **参数解释**: 链路详情。
-
         :return: The trace_statistics of this ShowFullSqlResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlTraceStatisticsResult`
         """
         return self._trace_statistics
 
@@ -62,10 +60,8 @@ class ShowFullSqlResponse(SdkResponse):
     def trace_statistics(self, trace_statistics):
         r"""Sets the trace_statistics of this ShowFullSqlResponse.
 
-        **参数解释**: 链路详情。
-
         :param trace_statistics: The trace_statistics of this ShowFullSqlResponse.
-        :type trace_statistics: object
+        :type trace_statistics: :class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlTraceStatisticsResult`
         """
         self._trace_statistics = trace_statistics
 

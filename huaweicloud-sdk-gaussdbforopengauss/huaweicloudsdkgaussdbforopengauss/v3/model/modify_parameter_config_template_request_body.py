@@ -41,8 +41,7 @@ class ModifyParameterConfigTemplateRequestBody:
         self._description = None
         self.discriminator = None
 
-        if values is not None:
-            self.values = values
+        self.values = values
         if description is not None:
             self.description = description
 

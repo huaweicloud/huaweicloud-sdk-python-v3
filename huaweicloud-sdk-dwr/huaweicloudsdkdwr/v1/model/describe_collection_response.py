@@ -18,7 +18,7 @@ class DescribeCollectionResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'DecribeCollectionData'
+        'data': 'DescribeCollectionData'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class DescribeCollectionResponse(SdkResponse):
         :param message: **参数解释：** 描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdkdwr.v1.DecribeCollectionData`
+        :type data: :class:`huaweicloudsdkdwr.v1.DescribeCollectionData`
         """
         
         super().__init__()
@@ -103,7 +103,7 @@ class DescribeCollectionResponse(SdkResponse):
         r"""Gets the data of this DescribeCollectionResponse.
 
         :return: The data of this DescribeCollectionResponse.
-        :rtype: :class:`huaweicloudsdkdwr.v1.DecribeCollectionData`
+        :rtype: :class:`huaweicloudsdkdwr.v1.DescribeCollectionData`
         """
         return self._data
 
@@ -112,7 +112,7 @@ class DescribeCollectionResponse(SdkResponse):
         r"""Sets the data of this DescribeCollectionResponse.
 
         :param data: The data of this DescribeCollectionResponse.
-        :type data: :class:`huaweicloudsdkdwr.v1.DecribeCollectionData`
+        :type data: :class:`huaweicloudsdkdwr.v1.DescribeCollectionData`
         """
         self._data = data
 

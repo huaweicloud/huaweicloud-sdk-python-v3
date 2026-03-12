@@ -46,6 +46,8 @@ from huaweicloudsdkmrs.v1.model.list_async_task_status_request import ListAsyncT
 from huaweicloudsdkmrs.v1.model.list_async_task_status_response import ListAsyncTaskStatusResponse
 from huaweicloudsdkmrs.v1.model.list_available_zones_request import ListAvailableZonesRequest
 from huaweicloudsdkmrs.v1.model.list_available_zones_response import ListAvailableZonesResponse
+from huaweicloudsdkmrs.v1.model.list_cluster_ssh_state_request import ListClusterSshStateRequest
+from huaweicloudsdkmrs.v1.model.list_cluster_ssh_state_response import ListClusterSshStateResponse
 from huaweicloudsdkmrs.v1.model.list_cluster_tags_request import ListClusterTagsRequest
 from huaweicloudsdkmrs.v1.model.list_cluster_tags_response import ListClusterTagsResponse
 from huaweicloudsdkmrs.v1.model.list_clusters_by_tags_request import ListClustersByTagsRequest
@@ -82,5 +84,7 @@ from huaweicloudsdkmrs.v1.model.task_node_info import TaskNodeInfo
 from huaweicloudsdkmrs.v1.model.trigger import Trigger
 from huaweicloudsdkmrs.v1.model.update_cluster_scaling_request import UpdateClusterScalingRequest
 from huaweicloudsdkmrs.v1.model.update_cluster_scaling_response import UpdateClusterScalingResponse
+from huaweicloudsdkmrs.v1.model.update_cluster_ssh_request import UpdateClusterSshRequest
+from huaweicloudsdkmrs.v1.model.update_cluster_ssh_response import UpdateClusterSshResponse
 from huaweicloudsdkmrs.v1.model.version_component import VersionComponent
 from huaweicloudsdkmrs.v1.model.version_constraint import VersionConstraint

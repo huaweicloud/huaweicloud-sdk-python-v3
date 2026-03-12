@@ -28,6 +28,7 @@ class StageRun:
         'status': 'str',
         'start_time': 'int',
         'end_time': 'int',
+        'pause_time': 'int',
         'pre': 'list[StepRun]',
         'post': 'list[StepRun]',
         'jobs': 'list[JobRun]'
@@ -47,12 +48,13 @@ class StageRun:
         'status': 'status',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'pause_time': 'pause_time',
         'pre': 'pre',
         'post': 'post',
         'jobs': 'jobs'
     }
 
-    def __init__(self, id=None, category=None, name=None, identifier=None, run_always=None, parallel=None, is_select=None, sequence=None, depends_on=None, condition=None, status=None, start_time=None, end_time=None, pre=None, post=None, jobs=None):
+    def __init__(self, id=None, category=None, name=None, identifier=None, run_always=None, parallel=None, is_select=None, sequence=None, depends_on=None, condition=None, status=None, start_time=None, end_time=None, pause_time=None, pre=None, post=None, jobs=None):
         r"""StageRun
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class StageRun:
         :type start_time: int
         :param end_time: **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
+        :param pause_time: **参数解释**： 阶段中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+        :type pause_time: int
         :param pre: **参数解释**： 阶段准入。 **取值范围**： 不涉及。 
         :type pre: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
         :param post: **参数解释**： 阶段准出。 **取值范围**： 不涉及。 
@@ -106,6 +110,7 @@ class StageRun:
         self._status = None
         self._start_time = None
         self._end_time = None
+        self._pause_time = None
         self._pre = None
         self._post = None
         self._jobs = None
@@ -137,6 +142,8 @@ class StageRun:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if pause_time is not None:
+            self.pause_time = pause_time
         if pre is not None:
             self.pre = pre
         if post is not None:
@@ -429,6 +436,28 @@ class StageRun:
         :type end_time: int
         """
         self._end_time = end_time
+
+    @property
+    def pause_time(self):
+        r"""Gets the pause_time of this StageRun.
+
+        **参数解释**： 阶段中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+
+        :return: The pause_time of this StageRun.
+        :rtype: int
+        """
+        return self._pause_time
+
+    @pause_time.setter
+    def pause_time(self, pause_time):
+        r"""Sets the pause_time of this StageRun.
+
+        **参数解释**： 阶段中断时间，单位毫秒。 **取值范围**： 大于等于 0。 
+
+        :param pause_time: The pause_time of this StageRun.
+        :type pause_time: int
+        """
+        self._pause_time = pause_time
 
     @property
     def pre(self):

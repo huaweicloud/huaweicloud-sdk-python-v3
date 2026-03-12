@@ -1131,6 +1131,700 @@ class OrganizationsClient(Client):
 
         return http_info
 
+    def show_dry_run_config(self, request):
+        r"""查询组织策略试运行的配置
+
+        查询组织策略试运行的配置。此操作只能由组织的管理或云服务委托管理员账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDryRunConfig
+        :type request: :class:`huaweicloudsdkorganizations.v1.ShowDryRunConfigRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ShowDryRunConfigResponse`
+        """
+        http_info = self._show_dry_run_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dry_run_config_invoker(self, request):
+        http_info = self._show_dry_run_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dry_run_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/dry-run-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDryRunConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'root_id' in local_var_params:
+            query_params.append(('root_id', local_var_params['root_id']))
+        if 'policy_type' in local_var_params:
+            query_params.append(('policy_type', local_var_params['policy_type']))
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_dry_run_config(self, request):
+        r"""更新组织策略试运行的配置
+
+        更新组织策略试运行的配置。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDryRunConfig
+        :type request: :class:`huaweicloudsdkorganizations.v1.UpdateDryRunConfigRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateDryRunConfigResponse`
+        """
+        http_info = self._update_dry_run_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_dry_run_config_invoker(self, request):
+        http_info = self._update_dry_run_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dry_run_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/dry-run-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDryRunConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def attach_dry_run_policy(self, request):
+        r"""将试运行策略跟实体绑定
+
+        绑定试运行策略到根、组织单元或个人账户。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.AttachDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.AttachDryRunPolicyResponse`
+        """
+        http_info = self._attach_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_dry_run_policy_invoker(self, request):
+        http_info = self._attach_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_dry_run_policy(self, request):
+        r"""创建试运行策略
+
+        创建指定类型的试运行策略。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.CreateDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.CreateDryRunPolicyResponse`
+        """
+        http_info = self._create_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dry_run_policy_invoker(self, request):
+        http_info = self._create_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/dry-run-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dry_run_policy(self, request):
+        r"""删除试运行策略
+
+        从组织中删除指定的试运行策略。在执行此操作之前，必须首先将策略跟所有组织单元、根和账号解绑。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.DeleteDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteDryRunPolicyResponse`
+        """
+        http_info = self._delete_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dry_run_policy_invoker(self, request):
+        http_info = self._delete_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def detach_dry_run_policy(self, request):
+        r"""将试运行策略跟实体解绑
+
+        从根、组织单元或账号解绑试运行策略。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetachDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.DetachDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.DetachDryRunPolicyResponse`
+        """
+        http_info = self._detach_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_dry_run_policy_invoker(self, request):
+        http_info = self._detach_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dry_run_policies(self, request):
+        r"""列出试运行策略
+
+        列出组织中的所有试运行策略。如果指定了资源ID，例如组织单元ID或账号ID，则将获得该资源已绑定的策略列表。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDryRunPolicies
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListDryRunPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListDryRunPoliciesResponse`
+        """
+        http_info = self._list_dry_run_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dry_run_policies_invoker(self, request):
+        http_info = self._list_dry_run_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dry_run_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/dry-run-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDryRunPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'attached_entity_id' in local_var_params:
+            query_params.append(('attached_entity_id', local_var_params['attached_entity_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_entities_for_dry_run_policy(self, request):
+        r"""列出跟指定试运行策略绑定的所有实体
+
+        列出跟指定试运行策略绑定的所有根、组织单元和账号。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEntitiesForDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForDryRunPolicyResponse`
+        """
+        http_info = self._list_entities_for_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_entities_for_dry_run_policy_invoker(self, request):
+        http_info = self._list_entities_for_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_entities_for_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}/attached-entities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEntitiesForDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dry_run_policy(self, request):
+        r"""查询试运行策略相关信息
+
+        检索试运行策略的相关信息。此操作只能由组织的管理账号或作为服务委托管理员的成员账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.ShowDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.ShowDryRunPolicyResponse`
+        """
+        http_info = self._show_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dry_run_policy_invoker(self, request):
+        http_info = self._show_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_dry_run_policy(self, request):
+        r"""更新试运行策略
+
+        更新试运行策略，可以更新试运行策略的名称、描述或内容。如果不提供任何参数，则策略将保持不变。您不能更改策略的类型。此操作只能由组织的管理账号调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDryRunPolicy
+        :type request: :class:`huaweicloudsdkorganizations.v1.UpdateDryRunPolicyRequest`
+        :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateDryRunPolicyResponse`
+        """
+        http_info = self._update_dry_run_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_dry_run_policy_invoker(self, request):
+        http_info = self._update_dry_run_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dry_run_policy_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/organizations/dry-run-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDryRunPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_security_token' in local_var_params:
+            header_params['X-Security-Token'] = local_var_params['x_security_token']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def accept_handshake(self, request):
         r"""接受邀请
 

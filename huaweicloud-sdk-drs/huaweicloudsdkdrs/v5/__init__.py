@@ -13,7 +13,7 @@ from huaweicloudsdkdrs.v5.model.action_req import ActionReq
 from huaweicloudsdkdrs.v5.model.add_column_info import AddColumnInfo
 from huaweicloudsdkdrs.v5.model.agency_role import AgencyRole
 from huaweicloudsdkdrs.v5.model.alarm_notify_config import AlarmNotifyConfig
-from huaweicloudsdkdrs.v5.model.api_http_null_resp import ApiHttpNullResp
+from huaweicloudsdkdrs.v5.model.api_http_resp import ApiHttpResp
 from huaweicloudsdkdrs.v5.model.async_action_base_resp import AsyncActionBaseResp
 from huaweicloudsdkdrs.v5.model.async_action_resp import AsyncActionResp
 from huaweicloudsdkdrs.v5.model.async_commit_job_resp import AsyncCommitJobResp

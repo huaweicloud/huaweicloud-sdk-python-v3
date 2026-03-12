@@ -7023,6 +7023,8 @@ class DrsClient(Client):
         query_params = []
         if 'file_import_db_level' in local_var_params:
             query_params.append(('file_import_db_level', local_var_params['file_import_db_level']))
+        if 'file_import_mapping_type' in local_var_params:
+            query_params.append(('file_import_mapping_type', local_var_params['file_import_mapping_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:

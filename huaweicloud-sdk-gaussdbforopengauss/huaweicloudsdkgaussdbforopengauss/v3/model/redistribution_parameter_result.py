@@ -19,7 +19,7 @@ class RedistributionParameterResult:
         'value': 'str',
         'restart_required': 'bool',
         'value_range': 'str',
-        'type': 'object',
+        'type': 'str',
         'description': 'str'
     }
 
@@ -46,7 +46,7 @@ class RedistributionParameterResult:
         :param value_range: **参数解释**: 参数取值范围。 **取值范围**: 不涉及。
         :type value_range: str
         :param type: **参数解释**: 参数类型。 **取值范围**: - integer：整数。 - boolean：布尔类型。 - string：字符串类型。
-        :type type: object
+        :type type: str
         :param description: **参数解释**: 参数解释。 **取值范围**: 不涉及。
         :type description: str
         """
@@ -169,7 +169,7 @@ class RedistributionParameterResult:
         **参数解释**: 参数类型。 **取值范围**: - integer：整数。 - boolean：布尔类型。 - string：字符串类型。
 
         :return: The type of this RedistributionParameterResult.
-        :rtype: object
+        :rtype: str
         """
         return self._type
 
@@ -180,7 +180,7 @@ class RedistributionParameterResult:
         **参数解释**: 参数类型。 **取值范围**: - integer：整数。 - boolean：布尔类型。 - string：字符串类型。
 
         :param type: The type of this RedistributionParameterResult.
-        :type type: object
+        :type type: str
         """
         self._type = type
 

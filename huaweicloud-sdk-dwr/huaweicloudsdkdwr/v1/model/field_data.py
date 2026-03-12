@@ -43,9 +43,9 @@ class FieldData:
         :type field_name: str
         :param data_type: **参数解释：** 字段的数据类型。 **约束限制：** 不涉及。 **取值范围：** “Bool”,“Int8”,“Int16”,“Int32”,“Int64”,“Float”,“String”,“Array”,“JSON”,\&quot;FloatVector\&quot;, \&quot;SparseFloatVector\&quot;。 **默认取值:** 不涉及。
         :type data_type: str
-        :param primary_key: **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        :param primary_key: **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作主键。 false：表示该列不作为主键。 **默认取值:** 不涉及。
         :type primary_key: bool
-        :param partition_key: **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        :param partition_key: **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** 不涉及。
         :type partition_key: bool
         :param dim: **参数解释：** 向量列的维度值。 **约束限制：** field的数据类型是FloatVector, SparseFloatVector时生效。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type dim: str
@@ -125,7 +125,7 @@ class FieldData:
     def primary_key(self):
         r"""Gets the primary_key of this FieldData.
 
-        **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作主键。 false：表示该列不作为主键。 **默认取值:** 不涉及。
 
         :return: The primary_key of this FieldData.
         :rtype: bool
@@ -136,7 +136,7 @@ class FieldData:
     def primary_key(self, primary_key):
         r"""Sets the primary_key of this FieldData.
 
-        **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        **参数解释：** 是否是主键字段。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作主键。 false：表示该列不作为主键。 **默认取值:** 不涉及。
 
         :param primary_key: The primary_key of this FieldData.
         :type primary_key: bool
@@ -147,7 +147,7 @@ class FieldData:
     def partition_key(self):
         r"""Gets the partition_key of this FieldData.
 
-        **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** 不涉及。
 
         :return: The partition_key of this FieldData.
         :rtype: bool
@@ -158,7 +158,7 @@ class FieldData:
     def partition_key(self, partition_key):
         r"""Sets the partition_key of this FieldData.
 
-        **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true，false。 **默认取值:** 不涉及。
+        **参数解释：** 是否是partition key。 **约束限制：** 不涉及。 **取值范围：** true：表示该列将被用作分区键。 false：表示该列不作为分区键。 **默认取值:** 不涉及。
 
         :param partition_key: The partition_key of this FieldData.
         :type partition_key: bool

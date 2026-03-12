@@ -6463,6 +6463,75 @@ class SwrClient(Client):
 
         return http_info
 
+    def list_all_instance_repositories(self, request):
+        r"""获取当前项目下所有企业仓库实例的仓库列表
+
+        获取当前项目下所有企业仓库实例的仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllInstanceRepositories
+        :type request: :class:`huaweicloudsdkswr.v2.ListAllInstanceRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListAllInstanceRepositoriesResponse`
+        """
+        http_info = self._list_all_instance_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_instance_repositories_invoker(self, request):
+        http_info = self._list_all_instance_repositories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_instance_repositories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllInstanceRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_audit_logs(self, request):
         r"""获取上传下载的相关审计日志列表
 

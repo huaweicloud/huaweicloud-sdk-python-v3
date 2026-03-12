@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DecribeCollectionData:
+class DescribeCollectionData:
 
     """
     Attributes:
@@ -39,7 +39,7 @@ class DecribeCollectionData:
     }
 
     def __init__(self, store_name=None, collection_name=None, fields=None, load_state=None, description=None, indexes=None, entity_num=None, partitions_num=None, shards_num=None):
-        r"""DecribeCollectionData
+        r"""DescribeCollectionData
 
         The model defined in huaweicloud sdk
 
@@ -94,198 +94,198 @@ class DecribeCollectionData:
 
     @property
     def store_name(self):
-        r"""Gets the store_name of this DecribeCollectionData.
+        r"""Gets the store_name of this DescribeCollectionData.
 
         **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :return: The store_name of this DecribeCollectionData.
+        :return: The store_name of this DescribeCollectionData.
         :rtype: str
         """
         return self._store_name
 
     @store_name.setter
     def store_name(self, store_name):
-        r"""Sets the store_name of this DecribeCollectionData.
+        r"""Sets the store_name of this DescribeCollectionData.
 
         **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
-        :param store_name: The store_name of this DecribeCollectionData.
+        :param store_name: The store_name of this DescribeCollectionData.
         :type store_name: str
         """
         self._store_name = store_name
 
     @property
     def collection_name(self):
-        r"""Gets the collection_name of this DecribeCollectionData.
+        r"""Gets the collection_name of this DescribeCollectionData.
 
         **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :return: The collection_name of this DecribeCollectionData.
+        :return: The collection_name of this DescribeCollectionData.
         :rtype: str
         """
         return self._collection_name
 
     @collection_name.setter
     def collection_name(self, collection_name):
-        r"""Sets the collection_name of this DecribeCollectionData.
+        r"""Sets the collection_name of this DescribeCollectionData.
 
         **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :param collection_name: The collection_name of this DecribeCollectionData.
+        :param collection_name: The collection_name of this DescribeCollectionData.
         :type collection_name: str
         """
         self._collection_name = collection_name
 
     @property
     def fields(self):
-        r"""Gets the fields of this DecribeCollectionData.
+        r"""Gets the fields of this DescribeCollectionData.
 
         **参数解释：** collection各个field信息。 **约束限制：** 不涉及。
 
-        :return: The fields of this DecribeCollectionData.
+        :return: The fields of this DescribeCollectionData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.FieldData`]
         """
         return self._fields
 
     @fields.setter
     def fields(self, fields):
-        r"""Sets the fields of this DecribeCollectionData.
+        r"""Sets the fields of this DescribeCollectionData.
 
         **参数解释：** collection各个field信息。 **约束限制：** 不涉及。
 
-        :param fields: The fields of this DecribeCollectionData.
+        :param fields: The fields of this DescribeCollectionData.
         :type fields: list[:class:`huaweicloudsdkdwr.v1.FieldData`]
         """
         self._fields = fields
 
     @property
     def load_state(self):
-        r"""Gets the load_state of this DecribeCollectionData.
+        r"""Gets the load_state of this DescribeCollectionData.
 
         **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
-        :return: The load_state of this DecribeCollectionData.
+        :return: The load_state of this DescribeCollectionData.
         :rtype: str
         """
         return self._load_state
 
     @load_state.setter
     def load_state(self, load_state):
-        r"""Sets the load_state of this DecribeCollectionData.
+        r"""Sets the load_state of this DescribeCollectionData.
 
         **参数解释：** 标识当前Collection加载状态。 **约束限制：** 不涉及。 **取值范围：** 1、LoadStateLoaded：表示当前Collection已准备就绪，可正常使用。 2、LoadStateLoading：表示当前Collection正在load。 3、LoadStateNotLoad：表示collection未加载。 **默认取值:** 不涉及。
 
-        :param load_state: The load_state of this DecribeCollectionData.
+        :param load_state: The load_state of this DescribeCollectionData.
         :type load_state: str
         """
         self._load_state = load_state
 
     @property
     def description(self):
-        r"""Gets the description of this DecribeCollectionData.
+        r"""Gets the description of this DescribeCollectionData.
 
         **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :return: The description of this DecribeCollectionData.
+        :return: The description of this DescribeCollectionData.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        r"""Sets the description of this DecribeCollectionData.
+        r"""Sets the description of this DescribeCollectionData.
 
         **参数解释：** Collection 的描述信息。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :param description: The description of this DecribeCollectionData.
+        :param description: The description of this DescribeCollectionData.
         :type description: str
         """
         self._description = description
 
     @property
     def indexes(self):
-        r"""Gets the indexes of this DecribeCollectionData.
+        r"""Gets the indexes of this DescribeCollectionData.
 
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
-        :return: The indexes of this DecribeCollectionData.
+        :return: The indexes of this DescribeCollectionData.
         :rtype: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
         """
         return self._indexes
 
     @indexes.setter
     def indexes(self, indexes):
-        r"""Sets the indexes of this DecribeCollectionData.
+        r"""Sets the indexes of this DescribeCollectionData.
 
         **参数解释：** 索引的配置信息。 **约束限制：** 不涉及。
 
-        :param indexes: The indexes of this DecribeCollectionData.
+        :param indexes: The indexes of this DescribeCollectionData.
         :type indexes: list[:class:`huaweicloudsdkdwr.v1.IndexDesc`]
         """
         self._indexes = indexes
 
     @property
     def entity_num(self):
-        r"""Gets the entity_num of this DecribeCollectionData.
+        r"""Gets the entity_num of this DescribeCollectionData.
 
         **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :return: The entity_num of this DecribeCollectionData.
+        :return: The entity_num of this DescribeCollectionData.
         :rtype: int
         """
         return self._entity_num
 
     @entity_num.setter
     def entity_num(self, entity_num):
-        r"""Sets the entity_num of this DecribeCollectionData.
+        r"""Sets the entity_num of this DescribeCollectionData.
 
         **参数解释：** collection中的entity数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :param entity_num: The entity_num of this DecribeCollectionData.
+        :param entity_num: The entity_num of this DescribeCollectionData.
         :type entity_num: int
         """
         self._entity_num = entity_num
 
     @property
     def partitions_num(self):
-        r"""Gets the partitions_num of this DecribeCollectionData.
+        r"""Gets the partitions_num of this DescribeCollectionData.
 
         **参数解释：** collection中的partition数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :return: The partitions_num of this DecribeCollectionData.
+        :return: The partitions_num of this DescribeCollectionData.
         :rtype: int
         """
         return self._partitions_num
 
     @partitions_num.setter
     def partitions_num(self, partitions_num):
-        r"""Sets the partitions_num of this DecribeCollectionData.
+        r"""Sets the partitions_num of this DescribeCollectionData.
 
         **参数解释：** collection中的partition数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :param partitions_num: The partitions_num of this DecribeCollectionData.
+        :param partitions_num: The partitions_num of this DescribeCollectionData.
         :type partitions_num: int
         """
         self._partitions_num = partitions_num
 
     @property
     def shards_num(self):
-        r"""Gets the shards_num of this DecribeCollectionData.
+        r"""Gets the shards_num of this DescribeCollectionData.
 
         **参数解释：** collection中的shard数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :return: The shards_num of this DecribeCollectionData.
+        :return: The shards_num of this DescribeCollectionData.
         :rtype: int
         """
         return self._shards_num
 
     @shards_num.setter
     def shards_num(self, shards_num):
-        r"""Sets the shards_num of this DecribeCollectionData.
+        r"""Sets the shards_num of this DescribeCollectionData.
 
         **参数解释：** collection中的shard数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
-        :param shards_num: The shards_num of this DecribeCollectionData.
+        :param shards_num: The shards_num of this DescribeCollectionData.
         :type shards_num: int
         """
         self._shards_num = shards_num
@@ -327,7 +327,7 @@ class DecribeCollectionData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DecribeCollectionData):
+        if not isinstance(other, DescribeCollectionData):
             return False
 
         return self.__dict__ == other.__dict__

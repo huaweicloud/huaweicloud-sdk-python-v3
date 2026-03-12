@@ -23,8 +23,7 @@ class ShowConfigurationResponse(SdkResponse):
         'close_compression': 'bool',
         'default_backup_media_type': 'str',
         'default_backup_method': 'str',
-        'backup_parallel_degree': 'int',
-        'backup_node_info': 'BackupNodeInfoResult'
+        'backup_parallel_degree': 'int'
     }
 
     attribute_map = {
@@ -35,11 +34,10 @@ class ShowConfigurationResponse(SdkResponse):
         'close_compression': 'close_compression',
         'default_backup_media_type': 'default_backup_media_type',
         'default_backup_method': 'default_backup_method',
-        'backup_parallel_degree': 'backup_parallel_degree',
-        'backup_node_info': 'backup_node_info'
+        'backup_parallel_degree': 'backup_parallel_degree'
     }
 
-    def __init__(self, rate_limit=None, prefetch_block=None, file_split_size=None, enable_standby_backup=None, close_compression=None, default_backup_media_type=None, default_backup_method=None, backup_parallel_degree=None, backup_node_info=None):
+    def __init__(self, rate_limit=None, prefetch_block=None, file_split_size=None, enable_standby_backup=None, close_compression=None, default_backup_media_type=None, default_backup_method=None, backup_parallel_degree=None):
         r"""ShowConfigurationResponse
 
         The model defined in huaweicloud sdk
@@ -60,8 +58,6 @@ class ShowConfigurationResponse(SdkResponse):
         :type default_backup_method: str
         :param backup_parallel_degree: **参数解释**: 备份并行参数。 **取值范围**: 1, 2, 4, 8
         :type backup_parallel_degree: int
-        :param backup_node_info: 
-        :type backup_node_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupNodeInfoResult`
         """
         
         super().__init__()
@@ -74,7 +70,6 @@ class ShowConfigurationResponse(SdkResponse):
         self._default_backup_media_type = None
         self._default_backup_method = None
         self._backup_parallel_degree = None
-        self._backup_node_info = None
         self.discriminator = None
 
         if rate_limit is not None:
@@ -93,8 +88,6 @@ class ShowConfigurationResponse(SdkResponse):
             self.default_backup_method = default_backup_method
         if backup_parallel_degree is not None:
             self.backup_parallel_degree = backup_parallel_degree
-        if backup_node_info is not None:
-            self.backup_node_info = backup_node_info
 
     @property
     def rate_limit(self):
@@ -271,24 +264,6 @@ class ShowConfigurationResponse(SdkResponse):
         :type backup_parallel_degree: int
         """
         self._backup_parallel_degree = backup_parallel_degree
-
-    @property
-    def backup_node_info(self):
-        r"""Gets the backup_node_info of this ShowConfigurationResponse.
-
-        :return: The backup_node_info of this ShowConfigurationResponse.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupNodeInfoResult`
-        """
-        return self._backup_node_info
-
-    @backup_node_info.setter
-    def backup_node_info(self, backup_node_info):
-        r"""Sets the backup_node_info of this ShowConfigurationResponse.
-
-        :param backup_node_info: The backup_node_info of this ShowConfigurationResponse.
-        :type backup_node_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupNodeInfoResult`
-        """
-        self._backup_node_info = backup_node_info
 
     def to_dict(self):
         import warnings

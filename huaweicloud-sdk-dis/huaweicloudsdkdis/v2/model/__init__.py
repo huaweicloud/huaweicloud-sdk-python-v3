@@ -74,6 +74,7 @@ from huaweicloudsdkdis.v2.model.open_tsdb_tags import OpenTSDBTags
 from huaweicloudsdkdis.v2.model.open_tsdb_timestamp import OpenTSDBTimestamp
 from huaweicloudsdkdis.v2.model.open_tsdb_value import OpenTSDBValue
 from huaweicloudsdkdis.v2.model.options import Options
+from huaweicloudsdkdis.v2.model.partition_consuming_states import PartitionConsumingStates
 from huaweicloudsdkdis.v2.model.partition_result import PartitionResult
 from huaweicloudsdkdis.v2.model.principal_rule import PrincipalRule
 from huaweicloudsdkdis.v2.model.processing_schema import ProcessingSchema
@@ -81,6 +82,7 @@ from huaweicloudsdkdis.v2.model.put_records_request import PutRecordsRequest
 from huaweicloudsdkdis.v2.model.put_records_request_entry import PutRecordsRequestEntry
 from huaweicloudsdkdis.v2.model.put_records_result_entry import PutRecordsResultEntry
 from huaweicloudsdkdis.v2.model.record import Record
+from huaweicloudsdkdis.v2.model.resource_detail import ResourceDetail
 from huaweicloudsdkdis.v2.model.row_key import RowKey
 from huaweicloudsdkdis.v2.model.send_records_request import SendRecordsRequest
 from huaweicloudsdkdis.v2.model.send_records_response import SendRecordsResponse
@@ -106,6 +108,7 @@ from huaweicloudsdkdis.v2.model.stream_info import StreamInfo
 from huaweicloudsdkdis.v2.model.sys_tag import SysTag
 from huaweicloudsdkdis.v2.model.tag import Tag
 from huaweicloudsdkdis.v2.model.tags import Tags
+from huaweicloudsdkdis.v2.model.tms_resource import TmsResource
 from huaweicloudsdkdis.v2.model.transfer_task import TransferTask
 from huaweicloudsdkdis.v2.model.update_partition_count import UpdatePartitionCount
 from huaweicloudsdkdis.v2.model.update_partition_count_req import UpdatePartitionCountReq

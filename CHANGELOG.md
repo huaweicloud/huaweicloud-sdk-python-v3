@@ -1,3 +1,486 @@
+# 3.1.187 2026-03-12
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `ListQuotaStatus`
+    - `LoginCbh`
+    - `StopCbhInstance`
+    - `UpgradeCbhInstance`
+    - `InstallCbhEip`
+    - `UninstallCbhEip`
+    - `ResetPassword`
+    - `StartCbhInstance`
+    - `SearchQuota`
+    - `ResetLoginMethod`
+    - `ChangeInstanceOrder`
+    - `ShowNetworkConfiguration`
+    - `RestartCbhInstance`
+    - `ShowAvailableZoneInfo`
+    - `CreateInstanceOrder`
+    - `ChangeInstanceNetwork`
+    - `CreateCbh`
+
+### HuaweiCloud SDK CCM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCertificateAuthority**
+    - changes of response param
+      - `+ domain_id`
+      - `+ cluster_id`
+  - **IssueCertificateAuthorityCertificate**
+    - changes of request param
+      - `+ hsm_cluster_info`
+  - **CreateCertificateAuthority**
+    - changes of request param
+      - `+ hsm_cluster_info`
+  - **ListCertificateAuthority**
+    - changes of response param
+      - `+ domain_id`
+      - `+ cluster_id`
+      - `+ certificate_authorities.cluster_id`
+      - `+ certificate_authorities.domain_id`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ extended_key_usage.smart_card_logon`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdatePolicyAssignment**
+    - changes of request param
+      - `+ policy_filter_v2`
+  - **CreatePolicyAssignments**
+    - changes of request param
+      - `+ policy_filter_v2`
+
+### HuaweiCloud SDK DIS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConsumerState**
+    - changes of response param
+      - `+ stream_name`
+      - `+ has_more`
+      - `+ partition_consuming_states`
+      - `- commit_checkpoint_stream_names`
+      - `- create_time`
+      - `- app_id`
+      - `* app_name: int32 -> string`
+  - **ListResourcesByTags**
+    - changes of response param
+      - `+ total_count`
+      - `+ resources`
+      - `- offset`
+      - `- not_tags_any`
+      - `- limit`
+      - `- action`
+      - `- not_tags`
+      - `- matches`
+      - `- tags`
+      - `- tags_any`
+  - **ShowPartitionMetrics**
+    - changes of request param
+      - `* end_time: string -> int64`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteJobs**
+    - changes of request param
+      - `+ jobs.delete_type: enum value [roll_back_upgrade_active_standby]`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DownloadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_db_level: enum value [partition]`
+  - **UploadDbObjectTemplate**
+    - changes of request param
+      - `+ file_import_mapping_type`
+      - `+ file_import_db_level: enum value [partition]`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDependencyVersion**
+    - changes of request param
+      - `+ runtime: enum value [PHP8.3]`
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+  - **ShowDependencyVersion**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+  - **ListDependencies**
+    - changes of response param
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ListDependencyVersion**
+    - changes of response param
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ShowFunctionCode**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **UpdateFunctionCode**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ImportFunction**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+  - **ListFunctions**
+    - changes of response param
+      - `+ functions.runtime: enum value [PHP8.3]`
+  - **CreateFunction**
+    - changes of request param
+      - `+ runtime: enum value [PHP8.3]`
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **UpdateFunctionConfig**
+    - changes of request param
+      - `+ runtime: enum value [PHP8.3]`
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **UpdateFunctionMaxInstanceConfig**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ListBridgeFunctions**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+  - **CreateFunctionVersion**
+    - changes of response param
+      - `+ runtime: enum value [PHP8.3]`
+      - `+ dependencies.runtime: enum value [PHP8.3]`
+  - **ListFunctionVersions**
+    - changes of response param
+      - `+ versions.runtime: enum value [PHP8.3]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowConfiguration**
+    - changes of response param
+      - `- backup_node_info`
+  - **ResizeInstanceFlavor**
+    - changes of request param
+      - `+ cn_concurrent_resize_num`
+      - `+ dn_concurrent_resize_num`
+      - `* body: object<OpenGaussResizeRequest> -> object<OpenGaussResizeRequestBody>`
+  - **ResizeInstancesFlavor**
+    - changes of request param
+      - `+ cn_concurrent_resize_num`
+      - `+ dn_concurrent_resize_num`
+      - `* body: object<OpenGaussResizeRequest> -> object<OpenGaussResizeRequestBody>`
+  - **ShowInstanceConfiguration**
+    - changes of response param
+      - `+ configuration_parameters.readonly`
+      - `* configuration_parameters: list<ConfigurationParameter> -> list<ConfigurationParameterResult>`
+  - **ShowInstanceParamGroup**
+    - changes of response param
+      - `+ configuration_parameters.readonly`
+      - `* configuration_parameters: list<ConfigurationParameter> -> list<ConfigurationParameterResult>`
+  - **ShowInstanceParamGroupDetail**
+    - changes of response param
+      - `+ configuration_parameters.readonly`
+      - `* configuration_parameters: list<ConfigurationParameter> -> list<ConfigurationParameterResult>`
+  - **ListWdrSnapshotsCollectResults**
+    - changes of request param
+      - `+ job_end_time`
+      - `+ job_start_time`
+      - `+ status`
+      - `+ wdr_type`
+    - changes of response param
+      - `+ wdr_snapshots.job_create_time`
+      - `+ wdr_snapshots.start_snapshot_id`
+      - `+ wdr_snapshots.end_snapshot_id`
+      - `+ wdr_snapshots.file_name`
+      - `+ wdr_snapshots.file_path`
+      - `+ wdr_snapshots.obs_bucket`
+  - **ListWaitEvent**
+    - changes of request param
+      - `* wait_event_query_info.block_count: string -> int32`
+      - `* wait_event_query_info: object<WaitEventQueryInfo> -> object<WaitEventQueryInfoOption>`
+  - **ShowRedistributionParameters**
+    - changes of response param
+      - `* expansion_parameters.type: object -> string`
+  - **ShowFullSql**
+    - changes of response param
+      - `+ trace_statistics.hit_rate`
+      - `+ trace_statistics.db_time`
+      - `+ trace_statistics.cpu_time`
+      - `+ trace_statistics.io_time`
+      - `+ trace_statistics.execution_time`
+      - `+ trace_statistics.scan_rows`
+      - `+ trace_statistics.update_rows`
+      - `+ trace_statistics.insert_rows`
+      - `+ trace_statistics.delete_rows`
+      - `* trace_statistics: object -> object<FullSqlTraceStatisticsResult>`
+      - `+ components.start_time`
+      - `+ components.finish_time`
+      - `+ components.n_returned_rows`
+      - `- components.begin_time`
+      - `- components.end_time`
+      - `- components.n_return_rows`
+  - **ListTopTableVolumes**
+    - changes of response param
+      - `+ job_id`
+      - `+ node_id`
+  - **ListFullSqlSwitches**
+    - changes of response param
+      - `- allowed_sql_types.prefixes`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowHotQuestion**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateHotQuestion**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowPacifyWords**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdatePacifyWords**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdatePacifyWordsSwitch**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdatePacifyWordsTriggerTime**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowWelcomeSpeech**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateWelcomeSpeech**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateWelcomeSpeechSwitch**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateInteractiveChat**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowKnowledgeLibrary**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **StartSmartChatJob**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateHotQuestion**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListHotQuestion**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListHotWords**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateHotWords**
+    - changes of request param
+      - `+ sis_hot_words.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowHotWords**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateHotWords**
+    - changes of request param
+      - `+ sis_hot_words.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreatePacifyWords**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListPacifyWords**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListRobot**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateRobot**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowRobot**
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateRobot**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateWelcomeSpeech**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+    - changes of response param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListWelcomeSpeech**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowInstruction**
+    - changes of response param
+      - `+ reply_words_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateInstruction**
+    - changes of request param
+      - `+ reply_words_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateKnowledgeLibrary**
+    - changes of request param
+      - `+ language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListKnowledgeLibrary**
+    - changes of response param
+      - `+ data.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateInstruction**
+    - changes of request param
+      - `+ reply_words_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListInstruction**
+    - changes of response param
+      - `+ data.reply_words_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ShowRole**
+    - changes of response param
+      - `+ role_business_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **UpdateRole**
+    - changes of request param
+      - `+ role_business_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **CreateRole**
+    - changes of request param
+      - `+ role_business_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+  - **ListRole**
+    - changes of response param
+      - `+ data.role_business_list.language: enum value [zh_CN,en_US,ESP,por,Arabic,Thai,fr]`
+
+### HuaweiCloud SDK MRS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListClusterSshState`, `UpdateClusterSsh`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MRS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListClusterManagerAuthState`, `UpdateClusterAuthTros`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Organizations
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowDryRunConfig`
+    - `UpdateDryRunConfig`
+    - `ListDryRunPolicies`
+    - `CreateDryRunPolicy`
+    - `ShowDryRunPolicy`
+    - `DeleteDryRunPolicy`
+    - `UpdateDryRunPolicy`
+    - `AttachDryRunPolicy`
+    - `DetachDryRunPolicy`
+    - `ListEntitiesForDryRunPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListAllInstanceRepositories`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListThumbnailInfo`, `DeleteThumbnails`, `ListThumbnailDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.186 2026-02-05
 
 ### HuaweiCloud SDK APIG

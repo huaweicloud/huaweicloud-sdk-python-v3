@@ -18,16 +18,20 @@ class ListTopTableVolumesResponse(SdkResponse):
     openapi_types = {
         'table_volumes': 'list[TableVolumeResult]',
         'total_count': 'int',
-        'state': 'str'
+        'state': 'str',
+        'job_id': 'str',
+        'node_id': 'str'
     }
 
     attribute_map = {
         'table_volumes': 'table_volumes',
         'total_count': 'total_count',
-        'state': 'state'
+        'state': 'state',
+        'job_id': 'job_id',
+        'node_id': 'node_id'
     }
 
-    def __init__(self, table_volumes=None, total_count=None, state=None):
+    def __init__(self, table_volumes=None, total_count=None, state=None, job_id=None, node_id=None):
         r"""ListTopTableVolumesResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +42,10 @@ class ListTopTableVolumesResponse(SdkResponse):
         :type total_count: int
         :param state: **参数解释**: 任务状态。 **取值范围**: - RUNNING：运行中。 - ERROR：运行异常。 - FINISHED： 运行结束。 
         :type state: str
+        :param job_id: **参数解释**: 任务ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+        :type job_id: str
+        :param node_id: **参数解释**: 工作流执行节点ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+        :type node_id: str
         """
         
         super().__init__()
@@ -45,6 +53,8 @@ class ListTopTableVolumesResponse(SdkResponse):
         self._table_volumes = None
         self._total_count = None
         self._state = None
+        self._job_id = None
+        self._node_id = None
         self.discriminator = None
 
         if table_volumes is not None:
@@ -53,6 +63,10 @@ class ListTopTableVolumesResponse(SdkResponse):
             self.total_count = total_count
         if state is not None:
             self.state = state
+        if job_id is not None:
+            self.job_id = job_id
+        if node_id is not None:
+            self.node_id = node_id
 
     @property
     def table_volumes(self):
@@ -119,6 +133,50 @@ class ListTopTableVolumesResponse(SdkResponse):
         :type state: str
         """
         self._state = state
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this ListTopTableVolumesResponse.
+
+        **参数解释**: 任务ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+
+        :return: The job_id of this ListTopTableVolumesResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this ListTopTableVolumesResponse.
+
+        **参数解释**: 任务ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+
+        :param job_id: The job_id of this ListTopTableVolumesResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
+
+    @property
+    def node_id(self):
+        r"""Gets the node_id of this ListTopTableVolumesResponse.
+
+        **参数解释**: 工作流执行节点ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+
+        :return: The node_id of this ListTopTableVolumesResponse.
+        :rtype: str
+        """
+        return self._node_id
+
+    @node_id.setter
+    def node_id(self, node_id):
+        r"""Sets the node_id of this ListTopTableVolumesResponse.
+
+        **参数解释**: 工作流执行节点ID，当无请求参数时返回。 **取值范围**: 不涉及。 
+
+        :param node_id: The node_id of this ListTopTableVolumesResponse.
+        :type node_id: str
+        """
+        self._node_id = node_id
 
     def to_dict(self):
         import warnings

@@ -167,11 +167,14 @@ from huaweicloudsdkswr.v2.model.image_retention import ImageRetention
 from huaweicloudsdkswr.v2.model.image_tag import ImageTag
 from huaweicloudsdkswr.v2.model.immutable_rule import ImmutableRule
 from huaweicloudsdkswr.v2.model.instance import Instance
+from huaweicloudsdkswr.v2.model.instance_repository import InstanceRepository
 from huaweicloudsdkswr.v2.model.internal_endpoint import InternalEndpoint
 from huaweicloudsdkswr.v2.model.ip_info import IpInfo
 from huaweicloudsdkswr.v2.model.job import Job
 from huaweicloudsdkswr.v2.model.job_detail import JobDetail
 from huaweicloudsdkswr.v2.model.link import Link
+from huaweicloudsdkswr.v2.model.list_all_instance_repositories_request import ListAllInstanceRepositoriesRequest
+from huaweicloudsdkswr.v2.model.list_all_instance_repositories_response import ListAllInstanceRepositoriesResponse
 from huaweicloudsdkswr.v2.model.list_api_versions_request import ListApiVersionsRequest
 from huaweicloudsdkswr.v2.model.list_api_versions_response import ListApiVersionsResponse
 from huaweicloudsdkswr.v2.model.list_audit_logs_request import ListAuditLogsRequest
@@ -288,6 +291,7 @@ from huaweicloudsdkswr.v2.model.list_triggers_details_response import ListTrigge
 from huaweicloudsdkswr.v2.model.namespace import Namespace
 from huaweicloudsdkswr.v2.model.namespace_metadata import NamespaceMetadata
 from huaweicloudsdkswr.v2.model.native_report_summary import NativeReportSummary
+from huaweicloudsdkswr.v2.model.page_info import PageInfo
 from huaweicloudsdkswr.v2.model.project_tag import ProjectTag
 from huaweicloudsdkswr.v2.model.region_info import RegionInfo
 from huaweicloudsdkswr.v2.model.registry import Registry

@@ -793,6 +793,71 @@ class MrsClient(Client):
 
         return http_info
 
+    def list_cluster_ssh_state(self, request):
+        r"""查询集群节点授权状态
+
+        查询集群节点授权状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListClusterSshState
+        :type request: :class:`huaweicloudsdkmrs.v1.ListClusterSshStateRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListClusterSshStateResponse`
+        """
+        http_info = self._list_cluster_ssh_state_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_ssh_state_invoker(self, request):
+        http_info = self._list_cluster_ssh_state_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_ssh_state_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cluster/{cluster_id}/ssh",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterSshStateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cluster_tags(self, request):
         r"""查询指定集群的标签
 
@@ -1327,6 +1392,75 @@ class MrsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_cluster_ssh(self, request):
+        r"""开启/关闭集群节点授权
+
+        开启/关闭集群节点授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClusterSsh
+        :type request: :class:`huaweicloudsdkmrs.v1.UpdateClusterSshRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.UpdateClusterSshResponse`
+        """
+        http_info = self._update_cluster_ssh_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_cluster_ssh_invoker(self, request):
+        http_info = self._update_cluster_ssh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_ssh_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cluster/{cluster_id}/ssh",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterSshResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'enable' in local_var_params:
+            query_params.append(('enable', local_var_params['enable']))
+        if 'expire_time' in local_var_params:
+            query_params.append(('expire_time', local_var_params['expire_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

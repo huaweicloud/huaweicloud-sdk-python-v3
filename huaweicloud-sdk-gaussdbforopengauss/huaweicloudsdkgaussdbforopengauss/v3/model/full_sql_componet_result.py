@@ -31,13 +31,13 @@ class FullSqlComponetResult:
         'query': 'str',
         'thread_id': 'str',
         'session_id': 'str',
-        'begin_time': 'str',
-        'end_time': 'str',
+        'start_time': 'str',
+        'finish_time': 'str',
         'slow_query_threshold': 'int',
         'n_soft_parse': 'int',
         'n_hard_parse': 'int',
         'query_plan': 'str',
-        'n_return_rows': 'int',
+        'n_returned_rows': 'int',
         'n_tuples_fetched': 'int',
         'n_tuples_returned': 'int',
         'n_tuples_inserted': 'int',
@@ -85,13 +85,13 @@ class FullSqlComponetResult:
         'query': 'query',
         'thread_id': 'thread_id',
         'session_id': 'session_id',
-        'begin_time': 'begin_time',
-        'end_time': 'end_time',
+        'start_time': 'start_time',
+        'finish_time': 'finish_time',
         'slow_query_threshold': 'slow_query_threshold',
         'n_soft_parse': 'n_soft_parse',
         'n_hard_parse': 'n_hard_parse',
         'query_plan': 'query_plan',
-        'n_return_rows': 'n_return_rows',
+        'n_returned_rows': 'n_returned_rows',
         'n_tuples_fetched': 'n_tuples_fetched',
         'n_tuples_returned': 'n_tuples_returned',
         'n_tuples_inserted': 'n_tuples_inserted',
@@ -122,7 +122,7 @@ class FullSqlComponetResult:
         'net_stream_recv_info': 'net_stream_recv_info'
     }
 
-    def __init__(self, component_id=None, db_name=None, schema_name=None, origin_node=None, username=None, application_name=None, client_addr=None, client_port=None, parent_sql_id=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, query=None, thread_id=None, session_id=None, begin_time=None, end_time=None, slow_query_threshold=None, n_soft_parse=None, n_hard_parse=None, query_plan=None, n_return_rows=None, n_tuples_fetched=None, n_tuples_returned=None, n_tuples_inserted=None, n_tuples_updated=None, n_tuples_deleted=None, n_blocks_fetched=None, n_blocks_hit=None, db_time=None, cpu_time=None, execution_time=None, parse_time=None, plan_time=None, rewrite_time=None, pl_execution_time=None, pl_compilation_time=None, data_io_time=None, lock_count=None, lock_time=None, lock_wait_count=None, lock_wait_time=None, details=None, is_slow_sql=None, advise=None, finish_status=None, net_send_info=None, net_recv_info=None, net_stream_send_info=None, net_stream_recv_info=None):
+    def __init__(self, component_id=None, db_name=None, schema_name=None, origin_node=None, username=None, application_name=None, client_addr=None, client_port=None, parent_sql_id=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, query=None, thread_id=None, session_id=None, start_time=None, finish_time=None, slow_query_threshold=None, n_soft_parse=None, n_hard_parse=None, query_plan=None, n_returned_rows=None, n_tuples_fetched=None, n_tuples_returned=None, n_tuples_inserted=None, n_tuples_updated=None, n_tuples_deleted=None, n_blocks_fetched=None, n_blocks_hit=None, db_time=None, cpu_time=None, execution_time=None, parse_time=None, plan_time=None, rewrite_time=None, pl_execution_time=None, pl_compilation_time=None, data_io_time=None, lock_count=None, lock_time=None, lock_wait_count=None, lock_wait_time=None, details=None, is_slow_sql=None, advise=None, finish_status=None, net_send_info=None, net_recv_info=None, net_stream_send_info=None, net_stream_recv_info=None):
         r"""FullSqlComponetResult
 
         The model defined in huaweicloud sdk
@@ -159,10 +159,10 @@ class FullSqlComponetResult:
         :type thread_id: str
         :param session_id: **参数解释**: 会话ID。 **取值范围**: 不涉及。
         :type session_id: str
-        :param begin_time: **参数解释**: 开始时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
-        :type begin_time: str
-        :param end_time: **参数解释**: 结束时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
-        :type end_time: str
+        :param start_time: **参数解释**: 开始时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
+        :type start_time: str
+        :param finish_time: **参数解释**: 结束时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
+        :type finish_time: str
         :param slow_query_threshold: **参数解释**: 慢SQL阈值。 **取值范围**: 不涉及。
         :type slow_query_threshold: int
         :param n_soft_parse: **参数解释**: 软解析次数。 **取值范围**: 不涉及。
@@ -171,8 +171,8 @@ class FullSqlComponetResult:
         :type n_hard_parse: int
         :param query_plan: **参数解释**: 执行计划。 **取值范围**: 不涉及。
         :type query_plan: str
-        :param n_return_rows: **参数解释**: SELECT语句的返回结果集行数。 **取值范围**: 不涉及。
-        :type n_return_rows: int
+        :param n_returned_rows: **参数解释**: SELECT语句的返回结果集行数。 **取值范围**: 不涉及。
+        :type n_returned_rows: int
         :param n_tuples_fetched: **参数解释**: 随机扫描行。 **取值范围**: 不涉及。
         :type n_tuples_fetched: int
         :param n_tuples_returned: **参数解释**: 顺序扫描行。 **取值范围**: 不涉及。
@@ -249,13 +249,13 @@ class FullSqlComponetResult:
         self._query = None
         self._thread_id = None
         self._session_id = None
-        self._begin_time = None
-        self._end_time = None
+        self._start_time = None
+        self._finish_time = None
         self._slow_query_threshold = None
         self._n_soft_parse = None
         self._n_hard_parse = None
         self._query_plan = None
-        self._n_return_rows = None
+        self._n_returned_rows = None
         self._n_tuples_fetched = None
         self._n_tuples_returned = None
         self._n_tuples_inserted = None
@@ -318,10 +318,10 @@ class FullSqlComponetResult:
             self.thread_id = thread_id
         if session_id is not None:
             self.session_id = session_id
-        if begin_time is not None:
-            self.begin_time = begin_time
-        if end_time is not None:
-            self.end_time = end_time
+        if start_time is not None:
+            self.start_time = start_time
+        if finish_time is not None:
+            self.finish_time = finish_time
         if slow_query_threshold is not None:
             self.slow_query_threshold = slow_query_threshold
         if n_soft_parse is not None:
@@ -330,8 +330,8 @@ class FullSqlComponetResult:
             self.n_hard_parse = n_hard_parse
         if query_plan is not None:
             self.query_plan = query_plan
-        if n_return_rows is not None:
-            self.n_return_rows = n_return_rows
+        if n_returned_rows is not None:
+            self.n_returned_rows = n_returned_rows
         if n_tuples_fetched is not None:
             self.n_tuples_fetched = n_tuples_fetched
         if n_tuples_returned is not None:
@@ -742,48 +742,48 @@ class FullSqlComponetResult:
         self._session_id = session_id
 
     @property
-    def begin_time(self):
-        r"""Gets the begin_time of this FullSqlComponetResult.
+    def start_time(self):
+        r"""Gets the start_time of this FullSqlComponetResult.
 
         **参数解释**: 开始时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
 
-        :return: The begin_time of this FullSqlComponetResult.
+        :return: The start_time of this FullSqlComponetResult.
         :rtype: str
         """
-        return self._begin_time
+        return self._start_time
 
-    @begin_time.setter
-    def begin_time(self, begin_time):
-        r"""Sets the begin_time of this FullSqlComponetResult.
+    @start_time.setter
+    def start_time(self, start_time):
+        r"""Sets the start_time of this FullSqlComponetResult.
 
         **参数解释**: 开始时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
 
-        :param begin_time: The begin_time of this FullSqlComponetResult.
-        :type begin_time: str
+        :param start_time: The start_time of this FullSqlComponetResult.
+        :type start_time: str
         """
-        self._begin_time = begin_time
+        self._start_time = start_time
 
     @property
-    def end_time(self):
-        r"""Gets the end_time of this FullSqlComponetResult.
+    def finish_time(self):
+        r"""Gets the finish_time of this FullSqlComponetResult.
 
         **参数解释**: 结束时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
 
-        :return: The end_time of this FullSqlComponetResult.
+        :return: The finish_time of this FullSqlComponetResult.
         :rtype: str
         """
-        return self._end_time
+        return self._finish_time
 
-    @end_time.setter
-    def end_time(self, end_time):
-        r"""Sets the end_time of this FullSqlComponetResult.
+    @finish_time.setter
+    def finish_time(self, finish_time):
+        r"""Sets the finish_time of this FullSqlComponetResult.
 
         **参数解释**: 结束时间，格式为“yyyy-mm-ddThh:mm:ss.SSSSSZ”。 **取值范围**: 不涉及。
 
-        :param end_time: The end_time of this FullSqlComponetResult.
-        :type end_time: str
+        :param finish_time: The finish_time of this FullSqlComponetResult.
+        :type finish_time: str
         """
-        self._end_time = end_time
+        self._finish_time = finish_time
 
     @property
     def slow_query_threshold(self):
@@ -874,26 +874,26 @@ class FullSqlComponetResult:
         self._query_plan = query_plan
 
     @property
-    def n_return_rows(self):
-        r"""Gets the n_return_rows of this FullSqlComponetResult.
+    def n_returned_rows(self):
+        r"""Gets the n_returned_rows of this FullSqlComponetResult.
 
         **参数解释**: SELECT语句的返回结果集行数。 **取值范围**: 不涉及。
 
-        :return: The n_return_rows of this FullSqlComponetResult.
+        :return: The n_returned_rows of this FullSqlComponetResult.
         :rtype: int
         """
-        return self._n_return_rows
+        return self._n_returned_rows
 
-    @n_return_rows.setter
-    def n_return_rows(self, n_return_rows):
-        r"""Sets the n_return_rows of this FullSqlComponetResult.
+    @n_returned_rows.setter
+    def n_returned_rows(self, n_returned_rows):
+        r"""Sets the n_returned_rows of this FullSqlComponetResult.
 
         **参数解释**: SELECT语句的返回结果集行数。 **取值范围**: 不涉及。
 
-        :param n_return_rows: The n_return_rows of this FullSqlComponetResult.
-        :type n_return_rows: int
+        :param n_returned_rows: The n_returned_rows of this FullSqlComponetResult.
+        :type n_returned_rows: int
         """
-        self._n_return_rows = n_return_rows
+        self._n_returned_rows = n_returned_rows
 
     @property
     def n_tuples_fetched(self):

@@ -20,7 +20,7 @@ class ShowInstanceParamGroupResponse(SdkResponse):
         'datastore_name': 'str',
         'created': 'str',
         'updated': 'str',
-        'configuration_parameters': 'list[ConfigurationParameter]'
+        'configuration_parameters': 'list[ConfigurationParameterResult]'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class ShowInstanceParamGroupResponse(SdkResponse):
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddHH:mm:ss\&quot;。
         :type updated: str
         :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
-        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameter`]
+        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]
         """
         
         super().__init__()
@@ -163,7 +163,7 @@ class ShowInstanceParamGroupResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :return: The configuration_parameters of this ShowInstanceParamGroupResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameter`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]
         """
         return self._configuration_parameters
 
@@ -174,7 +174,7 @@ class ShowInstanceParamGroupResponse(SdkResponse):
         参数对象，用户基于默认参数模板自定义的参数配置。
 
         :param configuration_parameters: The configuration_parameters of this ShowInstanceParamGroupResponse.
-        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameter`]
+        :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]
         """
         self._configuration_parameters = configuration_parameters
 
