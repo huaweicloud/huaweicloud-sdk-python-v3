@@ -1,10 +1,10 @@
-name: Publish Check
+name: Verify Install
 permissions:
   contents: read
 on:
   workflow_dispatch:
 jobs:
-  check:
+  install:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
