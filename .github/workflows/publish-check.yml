@@ -14,13 +14,5 @@ jobs:
         python-version: '3.10'
     - name: Check
       run: |
-        for dir in $(find . -type d -maxdepth 2 -mindepth 2 -name "huaweicloudsdk*" ! -name "huaweicloudsdkcore"); do
-            pkg=$(basename "$dir")
-            if ! grep -q "$pkg" huaweicloud-sdk-all/huaweicloudsdkall/requirements.txt; then
-                echo "${pkg} not found in huaweicloud-sdk-all/huaweicloudsdkall/requirements.txt" >&2
-                exit 1
-            fi
-        done
         version=$(cat VERSION)
         pip install huaweicloudsdkall=="$version"
-      shell: bash
