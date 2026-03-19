@@ -29,6 +29,7 @@ class FullSqlComponetResult:
         'transaction_id': 'str',
         'trace_id': 'str',
         'query': 'str',
+        'sql': 'str',
         'thread_id': 'str',
         'session_id': 'str',
         'start_time': 'str',
@@ -83,6 +84,7 @@ class FullSqlComponetResult:
         'transaction_id': 'transaction_id',
         'trace_id': 'trace_id',
         'query': 'query',
+        'sql': 'sql',
         'thread_id': 'thread_id',
         'session_id': 'session_id',
         'start_time': 'start_time',
@@ -122,7 +124,7 @@ class FullSqlComponetResult:
         'net_stream_recv_info': 'net_stream_recv_info'
     }
 
-    def __init__(self, component_id=None, db_name=None, schema_name=None, origin_node=None, username=None, application_name=None, client_addr=None, client_port=None, parent_sql_id=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, query=None, thread_id=None, session_id=None, start_time=None, finish_time=None, slow_query_threshold=None, n_soft_parse=None, n_hard_parse=None, query_plan=None, n_returned_rows=None, n_tuples_fetched=None, n_tuples_returned=None, n_tuples_inserted=None, n_tuples_updated=None, n_tuples_deleted=None, n_blocks_fetched=None, n_blocks_hit=None, db_time=None, cpu_time=None, execution_time=None, parse_time=None, plan_time=None, rewrite_time=None, pl_execution_time=None, pl_compilation_time=None, data_io_time=None, lock_count=None, lock_time=None, lock_wait_count=None, lock_wait_time=None, details=None, is_slow_sql=None, advise=None, finish_status=None, net_send_info=None, net_recv_info=None, net_stream_send_info=None, net_stream_recv_info=None):
+    def __init__(self, component_id=None, db_name=None, schema_name=None, origin_node=None, username=None, application_name=None, client_addr=None, client_port=None, parent_sql_id=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, query=None, sql=None, thread_id=None, session_id=None, start_time=None, finish_time=None, slow_query_threshold=None, n_soft_parse=None, n_hard_parse=None, query_plan=None, n_returned_rows=None, n_tuples_fetched=None, n_tuples_returned=None, n_tuples_inserted=None, n_tuples_updated=None, n_tuples_deleted=None, n_blocks_fetched=None, n_blocks_hit=None, db_time=None, cpu_time=None, execution_time=None, parse_time=None, plan_time=None, rewrite_time=None, pl_execution_time=None, pl_compilation_time=None, data_io_time=None, lock_count=None, lock_time=None, lock_wait_count=None, lock_wait_time=None, details=None, is_slow_sql=None, advise=None, finish_status=None, net_send_info=None, net_recv_info=None, net_stream_send_info=None, net_stream_recv_info=None):
         r"""FullSqlComponetResult
 
         The model defined in huaweicloud sdk
@@ -155,6 +157,8 @@ class FullSqlComponetResult:
         :type trace_id: str
         :param query: **参数解释**: 归一化SQL。 **取值范围**: 不涉及。
         :type query: str
+        :param sql: **参数解释**: 解析后的原始SQL文本。 开启track_stmt_parameter参数后，会把SQL文本中的变量替换成真实值，展示原始的SQL。对于track_stmt_parameter参数关闭时采集的SQL文本，无法获取到SQL参数变量的值，展示的内容为空。 **取值范围**: 不涉及。
+        :type sql: str
         :param thread_id: **参数解释**: 线程ID。 **取值范围**: 不涉及。
         :type thread_id: str
         :param session_id: **参数解释**: 会话ID。 **取值范围**: 不涉及。
@@ -247,6 +251,7 @@ class FullSqlComponetResult:
         self._transaction_id = None
         self._trace_id = None
         self._query = None
+        self._sql = None
         self._thread_id = None
         self._session_id = None
         self._start_time = None
@@ -314,6 +319,8 @@ class FullSqlComponetResult:
             self.trace_id = trace_id
         if query is not None:
             self.query = query
+        if sql is not None:
+            self.sql = sql
         if thread_id is not None:
             self.thread_id = thread_id
         if session_id is not None:
@@ -696,6 +703,28 @@ class FullSqlComponetResult:
         :type query: str
         """
         self._query = query
+
+    @property
+    def sql(self):
+        r"""Gets the sql of this FullSqlComponetResult.
+
+        **参数解释**: 解析后的原始SQL文本。 开启track_stmt_parameter参数后，会把SQL文本中的变量替换成真实值，展示原始的SQL。对于track_stmt_parameter参数关闭时采集的SQL文本，无法获取到SQL参数变量的值，展示的内容为空。 **取值范围**: 不涉及。
+
+        :return: The sql of this FullSqlComponetResult.
+        :rtype: str
+        """
+        return self._sql
+
+    @sql.setter
+    def sql(self, sql):
+        r"""Sets the sql of this FullSqlComponetResult.
+
+        **参数解释**: 解析后的原始SQL文本。 开启track_stmt_parameter参数后，会把SQL文本中的变量替换成真实值，展示原始的SQL。对于track_stmt_parameter参数关闭时采集的SQL文本，无法获取到SQL参数变量的值，展示的内容为空。 **取值范围**: 不涉及。
+
+        :param sql: The sql of this FullSqlComponetResult.
+        :type sql: str
+        """
+        self._sql = sql
 
     @property
     def thread_id(self):

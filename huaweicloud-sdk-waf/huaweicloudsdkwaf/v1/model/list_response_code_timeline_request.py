@@ -41,17 +41,17 @@ class ListResponseCodeTimelineRequest:
 
         :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
-        :param _from: **参数解释：** 起始时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: **参数解释：** 结束时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param hosts: **参数解释：** 要查询的域名列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type hosts: list[str]
-        :param instances: **参数解释：** 要查询的实例列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param instances: **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type instances: list[str]
-        :param response_source: **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM  **默认取值：** 不涉及
+        :param response_source: **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM **默认取值：** 不涉及
         :type response_source: str
-        :param group_by: **参数解释：** 展示维度，按天展示时传\&quot;DAY\&quot; **约束限制：** 不涉及 **取值范围：** - DAY  **默认取值：** 不涉及
+        :param group_by: **参数解释：** 展示维度，按天展示时传\&quot;DAY\&quot; **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
         :type group_by: str
         """
         
@@ -105,7 +105,7 @@ class ListResponseCodeTimelineRequest:
     def _from(self):
         r"""Gets the _from of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 起始时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListResponseCodeTimelineRequest.
         :rtype: int
@@ -116,7 +116,7 @@ class ListResponseCodeTimelineRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 起始时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListResponseCodeTimelineRequest.
         :type _from: int
@@ -127,7 +127,7 @@ class ListResponseCodeTimelineRequest:
     def to(self):
         r"""Gets the to of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 结束时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListResponseCodeTimelineRequest.
         :rtype: int
@@ -138,7 +138,7 @@ class ListResponseCodeTimelineRequest:
     def to(self, to):
         r"""Sets the to of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 结束时间（13位毫秒时间戳） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListResponseCodeTimelineRequest.
         :type to: int
@@ -149,7 +149,7 @@ class ListResponseCodeTimelineRequest:
     def hosts(self):
         r"""Gets the hosts of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 要查询的域名列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListResponseCodeTimelineRequest.
         :rtype: list[str]
@@ -160,7 +160,7 @@ class ListResponseCodeTimelineRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 要查询的域名列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListResponseCodeTimelineRequest.
         :type hosts: list[str]
@@ -171,7 +171,7 @@ class ListResponseCodeTimelineRequest:
     def instances(self):
         r"""Gets the instances of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 要查询的实例列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instances of this ListResponseCodeTimelineRequest.
         :rtype: list[str]
@@ -182,7 +182,7 @@ class ListResponseCodeTimelineRequest:
     def instances(self, instances):
         r"""Sets the instances of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 要查询的实例列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instances: The instances of this ListResponseCodeTimelineRequest.
         :type instances: list[str]
@@ -193,7 +193,7 @@ class ListResponseCodeTimelineRequest:
     def response_source(self):
         r"""Gets the response_source of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM  **默认取值：** 不涉及
+        **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM **默认取值：** 不涉及
 
         :return: The response_source of this ListResponseCodeTimelineRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListResponseCodeTimelineRequest:
     def response_source(self, response_source):
         r"""Sets the response_source of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM  **默认取值：** 不涉及
+        **参数解释：** 响应源 **约束限制：** 不涉及 **取值范围：** - WAF - UPSTREAM **默认取值：** 不涉及
 
         :param response_source: The response_source of this ListResponseCodeTimelineRequest.
         :type response_source: str
@@ -215,7 +215,7 @@ class ListResponseCodeTimelineRequest:
     def group_by(self):
         r"""Gets the group_by of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY  **默认取值：** 不涉及
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :return: The group_by of this ListResponseCodeTimelineRequest.
         :rtype: str
@@ -226,7 +226,7 @@ class ListResponseCodeTimelineRequest:
     def group_by(self, group_by):
         r"""Sets the group_by of this ListResponseCodeTimelineRequest.
 
-        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY  **默认取值：** 不涉及
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :param group_by: The group_by of this ListResponseCodeTimelineRequest.
         :type group_by: str

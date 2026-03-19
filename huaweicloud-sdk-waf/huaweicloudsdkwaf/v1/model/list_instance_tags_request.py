@@ -15,41 +15,69 @@ class ListInstanceTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'resource_type': 'str',
         'resourceid': 'str',
         'enterprise_project_id': 'str'
     }
 
     attribute_map = {
+        'resource_type': 'resource_type',
         'resourceid': 'resourceid',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, resourceid=None, enterprise_project_id=None):
+    def __init__(self, resource_type=None, resourceid=None, enterprise_project_id=None):
         r"""ListInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
-        :param resourceid: **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** - waf - waf-instance  **默认取值：** 不涉及
+        :param resource_type: **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - waf 云模式引擎 - waf-instance 独享引擎 **默认取值：** 不涉及
+        :type resource_type: str
+        :param resourceid: **参数解释：** 引擎id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type resourceid: str
-        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
         """
         
         
 
+        self._resource_type = None
         self._resourceid = None
         self._enterprise_project_id = None
         self.discriminator = None
 
+        self.resource_type = resource_type
         self.resourceid = resourceid
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
     @property
+    def resource_type(self):
+        r"""Gets the resource_type of this ListInstanceTagsRequest.
+
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - waf 云模式引擎 - waf-instance 独享引擎 **默认取值：** 不涉及
+
+        :return: The resource_type of this ListInstanceTagsRequest.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        r"""Sets the resource_type of this ListInstanceTagsRequest.
+
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - waf 云模式引擎 - waf-instance 独享引擎 **默认取值：** 不涉及
+
+        :param resource_type: The resource_type of this ListInstanceTagsRequest.
+        :type resource_type: str
+        """
+        self._resource_type = resource_type
+
+    @property
     def resourceid(self):
         r"""Gets the resourceid of this ListInstanceTagsRequest.
 
-        **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** - waf - waf-instance  **默认取值：** 不涉及
+        **参数解释：** 引擎id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The resourceid of this ListInstanceTagsRequest.
         :rtype: str
@@ -60,7 +88,7 @@ class ListInstanceTagsRequest:
     def resourceid(self, resourceid):
         r"""Sets the resourceid of this ListInstanceTagsRequest.
 
-        **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** - waf - waf-instance  **默认取值：** 不涉及
+        **参数解释：** 引擎id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param resourceid: The resourceid of this ListInstanceTagsRequest.
         :type resourceid: str
@@ -71,7 +99,7 @@ class ListInstanceTagsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListInstanceTagsRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this ListInstanceTagsRequest.
         :rtype: str
@@ -82,7 +110,7 @@ class ListInstanceTagsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListInstanceTagsRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstanceTagsRequest.
         :type enterprise_project_id: str

@@ -29,7 +29,8 @@ class ListVulHostVulsRequest:
         'type': 'str',
         'repair_type': 'str',
         'severity_level': 'str',
-        'repair_priority': 'str'
+        'repair_priority': 'str',
+        'host_id_list': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ListVulHostVulsRequest:
         'type': 'type',
         'repair_type': 'repair_type',
         'severity_level': 'severity_level',
-        'repair_priority': 'repair_priority'
+        'repair_priority': 'repair_priority',
+        'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, vul_name=None, cve_id=None, label_list=None, status=None, asset_value=None, group_name=None, host_name=None, host_ip=None, type=None, repair_type=None, severity_level=None, repair_priority=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, vul_name=None, cve_id=None, label_list=None, status=None, asset_value=None, group_name=None, host_name=None, host_ip=None, type=None, repair_type=None, severity_level=None, repair_priority=None, host_id_list=None):
         r"""ListVulHostVulsRequest
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class ListVulHostVulsRequest:
         :type severity_level: str
         :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低 **默认取值**: 不涉及 
         :type repair_priority: str
+        :param host_id_list: **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+        :type host_id_list: str
         """
         
         
@@ -104,6 +108,7 @@ class ListVulHostVulsRequest:
         self._repair_type = None
         self._severity_level = None
         self._repair_priority = None
+        self._host_id_list = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -136,6 +141,8 @@ class ListVulHostVulsRequest:
             self.severity_level = severity_level
         if repair_priority is not None:
             self.repair_priority = repair_priority
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
 
     @property
     def enterprise_project_id(self):
@@ -466,6 +473,28 @@ class ListVulHostVulsRequest:
         :type repair_priority: str
         """
         self._repair_priority = repair_priority
+
+    @property
+    def host_id_list(self):
+        r"""Gets the host_id_list of this ListVulHostVulsRequest.
+
+        **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+
+        :return: The host_id_list of this ListVulHostVulsRequest.
+        :rtype: str
+        """
+        return self._host_id_list
+
+    @host_id_list.setter
+    def host_id_list(self, host_id_list):
+        r"""Sets the host_id_list of this ListVulHostVulsRequest.
+
+        **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+
+        :param host_id_list: The host_id_list of this ListVulHostVulsRequest.
+        :type host_id_list: str
+        """
+        self._host_id_list = host_id_list
 
     def to_dict(self):
         result = {}

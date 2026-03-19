@@ -33,13 +33,13 @@ class ListInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
-        :param page: 分页查询参数，第page页，默认值为1
+        :param page: **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
         :type page: int
-        :param pagesize: 分页查询参数，每页pagesize条记录，默认值为10
+        :param pagesize: **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
         :type pagesize: int
-        :param instancename: 模糊查询，独享引擎名称
+        :param instancename: **参数解释：** 模糊查询，独享引擎名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type instancename: str
         """
         
@@ -64,7 +64,7 @@ class ListInstanceRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListInstanceRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this ListInstanceRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListInstanceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListInstanceRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstanceRequest.
         :type enterprise_project_id: str
@@ -86,7 +86,7 @@ class ListInstanceRequest:
     def page(self):
         r"""Gets the page of this ListInstanceRequest.
 
-        分页查询参数，第page页，默认值为1
+        **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
 
         :return: The page of this ListInstanceRequest.
         :rtype: int
@@ -97,7 +97,7 @@ class ListInstanceRequest:
     def page(self, page):
         r"""Sets the page of this ListInstanceRequest.
 
-        分页查询参数，第page页，默认值为1
+        **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
 
         :param page: The page of this ListInstanceRequest.
         :type page: int
@@ -108,7 +108,7 @@ class ListInstanceRequest:
     def pagesize(self):
         r"""Gets the pagesize of this ListInstanceRequest.
 
-        分页查询参数，每页pagesize条记录，默认值为10
+        **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
 
         :return: The pagesize of this ListInstanceRequest.
         :rtype: int
@@ -119,7 +119,7 @@ class ListInstanceRequest:
     def pagesize(self, pagesize):
         r"""Sets the pagesize of this ListInstanceRequest.
 
-        分页查询参数，每页pagesize条记录，默认值为10
+        **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
 
         :param pagesize: The pagesize of this ListInstanceRequest.
         :type pagesize: int
@@ -130,7 +130,7 @@ class ListInstanceRequest:
     def instancename(self):
         r"""Gets the instancename of this ListInstanceRequest.
 
-        模糊查询，独享引擎名称
+        **参数解释：** 模糊查询，独享引擎名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instancename of this ListInstanceRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListInstanceRequest:
     def instancename(self, instancename):
         r"""Sets the instancename of this ListInstanceRequest.
 
-        模糊查询，独享引擎名称
+        **参数解释：** 模糊查询，独享引擎名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instancename: The instancename of this ListInstanceRequest.
         :type instancename: str

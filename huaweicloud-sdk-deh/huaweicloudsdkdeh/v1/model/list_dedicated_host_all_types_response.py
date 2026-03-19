@@ -16,29 +16,36 @@ class ListDedicatedHostAllTypesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'dedicated_host_types': 'list[DedicatedHostType]'
+        'dedicated_host_types': 'list[DedicatedHostType]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'dedicated_host_types': 'dedicated_host_types'
+        'dedicated_host_types': 'dedicated_host_types',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, dedicated_host_types=None):
+    def __init__(self, dedicated_host_types=None, page_info=None):
         r"""ListDedicatedHostAllTypesResponse
 
         The model defined in huaweicloud sdk
 
         :param dedicated_host_types: 指定可用的DeH类型。
         :type dedicated_host_types: list[:class:`huaweicloudsdkdeh.v1.DedicatedHostType`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkdeh.v1.PageInfo`
         """
         
         super().__init__()
 
         self._dedicated_host_types = None
+        self._page_info = None
         self.discriminator = None
 
         if dedicated_host_types is not None:
             self.dedicated_host_types = dedicated_host_types
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def dedicated_host_types(self):
@@ -61,6 +68,24 @@ class ListDedicatedHostAllTypesResponse(SdkResponse):
         :type dedicated_host_types: list[:class:`huaweicloudsdkdeh.v1.DedicatedHostType`]
         """
         self._dedicated_host_types = dedicated_host_types
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListDedicatedHostAllTypesResponse.
+
+        :return: The page_info of this ListDedicatedHostAllTypesResponse.
+        :rtype: :class:`huaweicloudsdkdeh.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListDedicatedHostAllTypesResponse.
+
+        :param page_info: The page_info of this ListDedicatedHostAllTypesResponse.
+        :type page_info: :class:`huaweicloudsdkdeh.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

@@ -27,7 +27,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
 
         The model defined in huaweicloud sdk
 
-        :param console_area: 租户所在的站点，hec-hk：华为云国际站
+        :param console_area: 租户所在的站点 - hec-hk：华为云国际站 - hws：华为云大陆站
         :type console_area: str
         """
         
@@ -42,7 +42,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
     def console_area(self):
         r"""Gets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
 
-        租户所在的站点，hec-hk：华为云国际站
+        租户所在的站点 - hec-hk：华为云国际站 - hws：华为云大陆站
 
         :return: The console_area of this CreateCloudWafPostPaidResourceRequestbody.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateCloudWafPostPaidResourceRequestbody:
     def console_area(self, console_area):
         r"""Sets the console_area of this CreateCloudWafPostPaidResourceRequestbody.
 
-        租户所在的站点，hec-hk：华为云国际站
+        租户所在的站点 - hec-hk：华为云国际站 - hws：华为云大陆站
 
         :param console_area: The console_area of this CreateCloudWafPostPaidResourceRequestbody.
         :type console_area: str

@@ -43,23 +43,23 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param addr: 黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        :param addr: **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type addr: str
         :param description: 黑白名单规则描述
         :type description: str
-        :param white: 防护动作：  - 0 拦截  - 1 放行   - 2 仅记录
+        :param white: **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
         :type white: int
-        :param ip_group_id: 创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理-&gt;地址组管理中添加。
+        :param ip_group_id: **参数解释：** Ip地址组id，可在控制台中对象管理-&gt;地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ip_group_id: str
-        :param time_mode: 生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        :param time_mode: **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
         :type time_mode: str
         :param start: 规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
         :type start: int
         :param terminal: 规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
         :type terminal: int
-        :param policy_ids: 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开
+        :param policy_ids: **参数解释：** 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_ids: list[str]
         """
         
@@ -96,7 +96,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def name(self):
         r"""Gets the name of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -107,7 +107,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def name(self, name):
         r"""Sets the name of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type name: str
@@ -118,7 +118,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def addr(self):
         r"""Gets the addr of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The addr of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -129,7 +129,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def addr(self, addr):
         r"""Sets the addr of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param addr: The addr of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type addr: str
@@ -162,7 +162,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def white(self):
         r"""Gets the white of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        防护动作：  - 0 拦截  - 1 放行   - 2 仅记录
+        **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
 
         :return: The white of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: int
@@ -173,7 +173,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def white(self, white):
         r"""Sets the white of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        防护动作：  - 0 拦截  - 1 放行   - 2 仅记录
+        **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
 
         :param white: The white of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type white: int
@@ -184,7 +184,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def ip_group_id(self):
         r"""Gets the ip_group_id of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理->地址组管理中添加。
+        **参数解释：** Ip地址组id，可在控制台中对象管理->地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The ip_group_id of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -195,7 +195,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def ip_group_id(self, ip_group_id):
         r"""Sets the ip_group_id of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理->地址组管理中添加。
+        **参数解释：** Ip地址组id，可在控制台中对象管理->地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param ip_group_id: The ip_group_id of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type ip_group_id: str
@@ -206,7 +206,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def time_mode(self):
         r"""Gets the time_mode of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
 
         :return: The time_mode of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -217,7 +217,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def time_mode(self, time_mode):
         r"""Sets the time_mode of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
 
         :param time_mode: The time_mode of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type time_mode: str
@@ -272,7 +272,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_ids of this BacthCreateWhiteBlackIpRuleRequestBody.
         :rtype: list[str]
@@ -283,7 +283,7 @@ class BacthCreateWhiteBlackIpRuleRequestBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this BacthCreateWhiteBlackIpRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_ids: The policy_ids of this BacthCreateWhiteBlackIpRuleRequestBody.
         :type policy_ids: list[str]

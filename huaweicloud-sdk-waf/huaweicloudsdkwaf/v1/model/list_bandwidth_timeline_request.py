@@ -18,8 +18,8 @@ class ListBandwidthTimelineRequest:
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
-        'hosts': 'str',
-        'instances': 'str',
+        'hosts': 'list[str]',
+        'instances': 'list[str]',
         'group_by': 'str',
         'display_option': 'int'
     }
@@ -41,17 +41,17 @@ class ListBandwidthTimelineRequest:
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param _from: 查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: 查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param hosts: 域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: str
-        :param instances: 引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
-        :type instances: str
-        :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示。
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type hosts: list[str]
+        :param instances: **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instances: list[str]
+        :param group_by: **参数解释：** 展示维度，按天展示时传\&quot;DAY\&quot; **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
         :type group_by: str
-        :param display_option: 发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+        :param display_option: **参数解释：** 发送/接受字节数查看形式 **约束限制：** 不涉及 **取值范围：** - 0 平均值 - 1 峰值 **默认取值：** 不涉及
         :type display_option: int
         """
         
@@ -105,7 +105,7 @@ class ListBandwidthTimelineRequest:
     def _from(self):
         r"""Gets the _from of this ListBandwidthTimelineRequest.
 
-        查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListBandwidthTimelineRequest.
         :rtype: int
@@ -116,7 +116,7 @@ class ListBandwidthTimelineRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListBandwidthTimelineRequest.
 
-        查询的带宽统计数据的起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListBandwidthTimelineRequest.
         :type _from: int
@@ -127,7 +127,7 @@ class ListBandwidthTimelineRequest:
     def to(self):
         r"""Gets the to of this ListBandwidthTimelineRequest.
 
-        查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListBandwidthTimelineRequest.
         :rtype: int
@@ -138,7 +138,7 @@ class ListBandwidthTimelineRequest:
     def to(self, to):
         r"""Sets the to of this ListBandwidthTimelineRequest.
 
-        查询的带宽统计数据的结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListBandwidthTimelineRequest.
         :type to: int
@@ -149,10 +149,10 @@ class ListBandwidthTimelineRequest:
     def hosts(self):
         r"""Gets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListBandwidthTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -160,10 +160,10 @@ class ListBandwidthTimelineRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id，用于查询指定的防护域名在from到to这段时间内的带宽数据。通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListBandwidthTimelineRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -171,10 +171,10 @@ class ListBandwidthTimelineRequest:
     def instances(self):
         r"""Gets the instances of this ListBandwidthTimelineRequest.
 
-        引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instances of this ListBandwidthTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -182,10 +182,10 @@ class ListBandwidthTimelineRequest:
     def instances(self, instances):
         r"""Sets the instances of this ListBandwidthTimelineRequest.
 
-        引擎实例id，用于查询指定的独享引擎实例所防护的域名在from到to这段时间内的带宽数据。
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instances: The instances of this ListBandwidthTimelineRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 
@@ -193,7 +193,7 @@ class ListBandwidthTimelineRequest:
     def group_by(self):
         r"""Gets the group_by of this ListBandwidthTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :return: The group_by of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListBandwidthTimelineRequest:
     def group_by(self, group_by):
         r"""Sets the group_by of this ListBandwidthTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示。
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :param group_by: The group_by of this ListBandwidthTimelineRequest.
         :type group_by: str
@@ -215,7 +215,7 @@ class ListBandwidthTimelineRequest:
     def display_option(self):
         r"""Gets the display_option of this ListBandwidthTimelineRequest.
 
-        发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+        **参数解释：** 发送/接受字节数查看形式 **约束限制：** 不涉及 **取值范围：** - 0 平均值 - 1 峰值 **默认取值：** 不涉及
 
         :return: The display_option of this ListBandwidthTimelineRequest.
         :rtype: int
@@ -226,7 +226,7 @@ class ListBandwidthTimelineRequest:
     def display_option(self, display_option):
         r"""Sets the display_option of this ListBandwidthTimelineRequest.
 
-        发送/接受字节数，查看峰值请输入1，查看平均值请输入0
+        **参数解释：** 发送/接受字节数查看形式 **约束限制：** 不涉及 **取值范围：** - 0 平均值 - 1 峰值 **默认取值：** 不涉及
 
         :param display_option: The display_option of this ListBandwidthTimelineRequest.
         :type display_option: int

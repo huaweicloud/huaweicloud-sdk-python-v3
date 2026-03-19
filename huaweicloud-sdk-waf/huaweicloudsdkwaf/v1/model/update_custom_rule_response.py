@@ -70,7 +70,7 @@ class UpdateCustomRuleResponse(SdkResponse):
         :type action_mode: bool
         :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
-        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        :param time: 精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
         :type time: bool
         :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才会返回该参数。
         :type start: int
@@ -322,7 +322,7 @@ class UpdateCustomRuleResponse(SdkResponse):
     def time(self):
         r"""Gets the time of this UpdateCustomRuleResponse.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
 
         :return: The time of this UpdateCustomRuleResponse.
         :rtype: bool
@@ -333,7 +333,7 @@ class UpdateCustomRuleResponse(SdkResponse):
     def time(self, time):
         r"""Sets the time of this UpdateCustomRuleResponse.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
 
         :param time: The time of this UpdateCustomRuleResponse.
         :type time: bool

@@ -23,6 +23,7 @@ class ExportAntiVirusResultRequest:
         'public_ip': 'str',
         'handle_status': 'str',
         'severity_list': 'list[str]',
+        'severities': 'str',
         'asset_value': 'str',
         'malware_name': 'str',
         'file_path': 'str',
@@ -42,6 +43,7 @@ class ExportAntiVirusResultRequest:
         'public_ip': 'public_ip',
         'handle_status': 'handle_status',
         'severity_list': 'severity_list',
+        'severities': 'severities',
         'asset_value': 'asset_value',
         'malware_name': 'malware_name',
         'file_path': 'file_path',
@@ -52,7 +54,7 @@ class ExportAntiVirusResultRequest:
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, host_name=None, private_ip=None, public_ip=None, handle_status=None, severity_list=None, asset_value=None, malware_name=None, file_path=None, export_size=None, file_hash=None, task_name=None, manual_isolate=None, body=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, host_name=None, private_ip=None, public_ip=None, handle_status=None, severity_list=None, severities=None, asset_value=None, malware_name=None, file_path=None, export_size=None, file_hash=None, task_name=None, manual_isolate=None, body=None):
         r"""ExportAntiVirusResultRequest
 
         The model defined in huaweicloud sdk
@@ -71,8 +73,10 @@ class ExportAntiVirusResultRequest:
         :type public_ip: str
         :param handle_status: **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
         :type handle_status: str
-        :param severity_list: **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
         :type severity_list: list[str]
+        :param severities: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        :type severities: str
         :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
         :param malware_name: **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
@@ -101,6 +105,7 @@ class ExportAntiVirusResultRequest:
         self._public_ip = None
         self._handle_status = None
         self._severity_list = None
+        self._severities = None
         self._asset_value = None
         self._malware_name = None
         self._file_path = None
@@ -125,6 +130,8 @@ class ExportAntiVirusResultRequest:
             self.handle_status = handle_status
         if severity_list is not None:
             self.severity_list = severity_list
+        if severities is not None:
+            self.severities = severities
         if asset_value is not None:
             self.asset_value = asset_value
         if malware_name is not None:
@@ -300,7 +307,7 @@ class ExportAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :return: The severity_list of this ExportAntiVirusResultRequest.
         :rtype: list[str]
@@ -311,12 +318,34 @@ class ExportAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ExportAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ExportAntiVirusResultRequest.
         :type severity_list: list[str]
         """
         self._severity_list = severity_list
+
+    @property
+    def severities(self):
+        r"""Gets the severities of this ExportAntiVirusResultRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :return: The severities of this ExportAntiVirusResultRequest.
+        :rtype: str
+        """
+        return self._severities
+
+    @severities.setter
+    def severities(self, severities):
+        r"""Sets the severities of this ExportAntiVirusResultRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :param severities: The severities of this ExportAntiVirusResultRequest.
+        :type severities: str
+        """
+        self._severities = severities
 
     @property
     def asset_value(self):

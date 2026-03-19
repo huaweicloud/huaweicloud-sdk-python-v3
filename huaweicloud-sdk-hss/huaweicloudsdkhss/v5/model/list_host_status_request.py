@@ -31,6 +31,10 @@ class ListHostStatusRequest:
         'group_id': 'str',
         'group_name': 'str',
         'vpc_id': 'str',
+        'host_name_list': 'str',
+        'host_id_list': 'str',
+        'public_ip_list': 'str',
+        'private_ip_list': 'str',
         'has_intrusion': 'bool',
         'has_vul': 'bool',
         'has_baseline': 'bool',
@@ -74,6 +78,10 @@ class ListHostStatusRequest:
         'group_id': 'group_id',
         'group_name': 'group_name',
         'vpc_id': 'vpc_id',
+        'host_name_list': 'host_name_list',
+        'host_id_list': 'host_id_list',
+        'public_ip_list': 'public_ip_list',
+        'private_ip_list': 'private_ip_list',
         'has_intrusion': 'has_intrusion',
         'has_vul': 'has_vul',
         'has_baseline': 'has_baseline',
@@ -100,7 +108,7 @@ class ListHostStatusRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, cluster_id=None, offset=None, limit=None):
+    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, vpc_id=None, host_name_list=None, host_id_list=None, public_ip_list=None, private_ip_list=None, has_intrusion=None, has_vul=None, has_baseline=None, sort_key=None, sort_dir=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, get_common_login_locations=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, install_mode=None, binding_key=None, protect_interrupt=None, incluster=None, protect_degradation=None, cluster_id=None, offset=None, limit=None):
         r"""ListHostStatusRequest
 
         The model defined in huaweicloud sdk
@@ -137,6 +145,14 @@ class ListHostStatusRequest:
         :type group_name: str
         :param vpc_id: **参数解释**: VPC的ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type vpc_id: str
+        :param host_name_list: **参数解释**: 服务器名称列表 **约束限制**: 不涉及 **取值范围**: 单个服务器名称字符长度1-64位 批量查询服务器名称个数1-60个 采用逗号分割 **默认取值**: 不涉及
+        :type host_name_list: str
+        :param host_id_list: **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-36位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+        :type host_id_list: str
+        :param public_ip_list: **参数解释**: 服务器公网IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器公网IP字符长度1-39位 批量查询服务器公网IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+        :type public_ip_list: str
+        :param private_ip_list: **参数解释**: 服务器私有IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器私有IP字符长度1-39位 批量查询服务器私有IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+        :type private_ip_list: str
         :param has_intrusion: **参数解释**: 存在告警事件 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
         :type has_intrusion: bool
         :param has_vul: **参数解释**: 存在漏洞风险 **约束限制**: 不涉及 **取值范围**: true或者false **默认取值**: 不涉及 
@@ -205,6 +221,10 @@ class ListHostStatusRequest:
         self._group_id = None
         self._group_name = None
         self._vpc_id = None
+        self._host_name_list = None
+        self._host_id_list = None
+        self._public_ip_list = None
+        self._private_ip_list = None
         self._has_intrusion = None
         self._has_vul = None
         self._has_baseline = None
@@ -263,6 +283,14 @@ class ListHostStatusRequest:
             self.group_name = group_name
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if host_name_list is not None:
+            self.host_name_list = host_name_list
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
+        if public_ip_list is not None:
+            self.public_ip_list = public_ip_list
+        if private_ip_list is not None:
+            self.private_ip_list = private_ip_list
         if has_intrusion is not None:
             self.has_intrusion = has_intrusion
         if has_vul is not None:
@@ -663,6 +691,94 @@ class ListHostStatusRequest:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def host_name_list(self):
+        r"""Gets the host_name_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器名称列表 **约束限制**: 不涉及 **取值范围**: 单个服务器名称字符长度1-64位 批量查询服务器名称个数1-60个 采用逗号分割 **默认取值**: 不涉及
+
+        :return: The host_name_list of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._host_name_list
+
+    @host_name_list.setter
+    def host_name_list(self, host_name_list):
+        r"""Sets the host_name_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器名称列表 **约束限制**: 不涉及 **取值范围**: 单个服务器名称字符长度1-64位 批量查询服务器名称个数1-60个 采用逗号分割 **默认取值**: 不涉及
+
+        :param host_name_list: The host_name_list of this ListHostStatusRequest.
+        :type host_name_list: str
+        """
+        self._host_name_list = host_name_list
+
+    @property
+    def host_id_list(self):
+        r"""Gets the host_id_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-36位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :return: The host_id_list of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._host_id_list
+
+    @host_id_list.setter
+    def host_id_list(self, host_id_list):
+        r"""Sets the host_id_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-36位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :param host_id_list: The host_id_list of this ListHostStatusRequest.
+        :type host_id_list: str
+        """
+        self._host_id_list = host_id_list
+
+    @property
+    def public_ip_list(self):
+        r"""Gets the public_ip_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器公网IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器公网IP字符长度1-39位 批量查询服务器公网IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :return: The public_ip_list of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._public_ip_list
+
+    @public_ip_list.setter
+    def public_ip_list(self, public_ip_list):
+        r"""Sets the public_ip_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器公网IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器公网IP字符长度1-39位 批量查询服务器公网IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :param public_ip_list: The public_ip_list of this ListHostStatusRequest.
+        :type public_ip_list: str
+        """
+        self._public_ip_list = public_ip_list
+
+    @property
+    def private_ip_list(self):
+        r"""Gets the private_ip_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器私有IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器私有IP字符长度1-39位 批量查询服务器私有IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :return: The private_ip_list of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._private_ip_list
+
+    @private_ip_list.setter
+    def private_ip_list(self, private_ip_list):
+        r"""Sets the private_ip_list of this ListHostStatusRequest.
+
+        **参数解释**: 服务器私有IP列表 **约束限制**: 不涉及 **取值范围**: 单个服务器私有IP字符长度1-39位 批量查询服务器私有IP个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :param private_ip_list: The private_ip_list of this ListHostStatusRequest.
+        :type private_ip_list: str
+        """
+        self._private_ip_list = private_ip_list
 
     @property
     def has_intrusion(self):

@@ -16,64 +16,64 @@ class ListInstanceReplicationPolicyExecSubTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'subtasks': 'list[SubtaskDetail]',
+        'sub_tasks': 'list[SubtaskDetail]',
         'total': 'int'
     }
 
     attribute_map = {
-        'subtasks': 'subtasks',
+        'sub_tasks': 'sub_tasks',
         'total': 'total'
     }
 
-    def __init__(self, subtasks=None, total=None):
+    def __init__(self, sub_tasks=None, total=None):
         r"""ListInstanceReplicationPolicyExecSubTasksResponse
 
         The model defined in huaweicloud sdk
 
-        :param subtasks: 老化策略执行记录子任务列表
-        :type subtasks: list[:class:`huaweicloudsdkswr.v2.SubtaskDetail`]
-        :param total: 老化策略执行记录子任务总数
+        :param sub_tasks: 镜像同步策略执行记录子任务列表
+        :type sub_tasks: list[:class:`huaweicloudsdkswr.v2.SubtaskDetail`]
+        :param total: 镜像同步策略执行记录子任务总数
         :type total: int
         """
         
         super().__init__()
 
-        self._subtasks = None
+        self._sub_tasks = None
         self._total = None
         self.discriminator = None
 
-        if subtasks is not None:
-            self.subtasks = subtasks
+        if sub_tasks is not None:
+            self.sub_tasks = sub_tasks
         if total is not None:
             self.total = total
 
     @property
-    def subtasks(self):
-        r"""Gets the subtasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
+    def sub_tasks(self):
+        r"""Gets the sub_tasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
 
-        老化策略执行记录子任务列表
+        镜像同步策略执行记录子任务列表
 
-        :return: The subtasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
+        :return: The sub_tasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.SubtaskDetail`]
         """
-        return self._subtasks
+        return self._sub_tasks
 
-    @subtasks.setter
-    def subtasks(self, subtasks):
-        r"""Sets the subtasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
+    @sub_tasks.setter
+    def sub_tasks(self, sub_tasks):
+        r"""Sets the sub_tasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
 
-        老化策略执行记录子任务列表
+        镜像同步策略执行记录子任务列表
 
-        :param subtasks: The subtasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
-        :type subtasks: list[:class:`huaweicloudsdkswr.v2.SubtaskDetail`]
+        :param sub_tasks: The sub_tasks of this ListInstanceReplicationPolicyExecSubTasksResponse.
+        :type sub_tasks: list[:class:`huaweicloudsdkswr.v2.SubtaskDetail`]
         """
-        self._subtasks = subtasks
+        self._sub_tasks = sub_tasks
 
     @property
     def total(self):
         r"""Gets the total of this ListInstanceReplicationPolicyExecSubTasksResponse.
 
-        老化策略执行记录子任务总数
+        镜像同步策略执行记录子任务总数
 
         :return: The total of this ListInstanceReplicationPolicyExecSubTasksResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListInstanceReplicationPolicyExecSubTasksResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstanceReplicationPolicyExecSubTasksResponse.
 
-        老化策略执行记录子任务总数
+        镜像同步策略执行记录子任务总数
 
         :param total: The total of this ListInstanceReplicationPolicyExecSubTasksResponse.
         :type total: int

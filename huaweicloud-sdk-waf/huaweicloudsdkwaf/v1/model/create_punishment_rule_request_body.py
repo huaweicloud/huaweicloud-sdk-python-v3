@@ -16,24 +16,28 @@ class CreatePunishmentRuleRequestBody:
 
     openapi_types = {
         'category': 'str',
+        'time_unit': 'str',
         'block_time': 'int',
         'description': 'str'
     }
 
     attribute_map = {
         'category': 'category',
+        'time_unit': 'time_unit',
         'block_time': 'block_time',
         'description': 'description'
     }
 
-    def __init__(self, category=None, block_time=None, description=None):
+    def __init__(self, category=None, time_unit=None, block_time=None, description=None):
         r"""CreatePunishmentRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param category: **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
+        :param category: **参数解释：** 攻击惩罚类别 **约束限制：** 创建后不可修改，单个类别只能存在一个规则 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - long_header_block  - short_ip_block  - short_cookie_block  - short_params_block  - short_header_block **默认取值：** 不涉及
         :type category: str
-        :param block_time: 拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
+        :param time_unit: **参数解释：** 时间单位，会影响“拦截时间”参数的取值范围 **约束限制：** 不涉及 **取值范围：**  - SECOND  - MINUTE  - HOUR  - DAY  - MONTH **默认取值：** SECOND
+        :type time_unit: str
+        :param block_time: **参数解释：** 拦截时间 **约束限制：** 取值范围取决于惩罚类别和时间单位 **取值范围：** - short_xxx   - SECOND  [1, 300] - long_xxx   - SECOND [301, 7776000]   - MINUTE [6, 129600]   - HOUR [1, 2160]   - DAY [1, 90]   - MONTH [1, 3] **默认取值：** 不涉及
         :type block_time: int
         :param description: 规则描述
         :type description: str
@@ -42,11 +46,14 @@ class CreatePunishmentRuleRequestBody:
         
 
         self._category = None
+        self._time_unit = None
         self._block_time = None
         self._description = None
         self.discriminator = None
 
         self.category = category
+        if time_unit is not None:
+            self.time_unit = time_unit
         self.block_time = block_time
         if description is not None:
             self.description = description
@@ -55,7 +62,7 @@ class CreatePunishmentRuleRequestBody:
     def category(self):
         r"""Gets the category of this CreatePunishmentRuleRequestBody.
 
-        **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
+        **参数解释：** 攻击惩罚类别 **约束限制：** 创建后不可修改，单个类别只能存在一个规则 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - long_header_block  - short_ip_block  - short_cookie_block  - short_params_block  - short_header_block **默认取值：** 不涉及
 
         :return: The category of this CreatePunishmentRuleRequestBody.
         :rtype: str
@@ -66,7 +73,7 @@ class CreatePunishmentRuleRequestBody:
     def category(self, category):
         r"""Sets the category of this CreatePunishmentRuleRequestBody.
 
-        **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
+        **参数解释：** 攻击惩罚类别 **约束限制：** 创建后不可修改，单个类别只能存在一个规则 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - long_header_block  - short_ip_block  - short_cookie_block  - short_params_block  - short_header_block **默认取值：** 不涉及
 
         :param category: The category of this CreatePunishmentRuleRequestBody.
         :type category: str
@@ -74,10 +81,32 @@ class CreatePunishmentRuleRequestBody:
         self._category = category
 
     @property
+    def time_unit(self):
+        r"""Gets the time_unit of this CreatePunishmentRuleRequestBody.
+
+        **参数解释：** 时间单位，会影响“拦截时间”参数的取值范围 **约束限制：** 不涉及 **取值范围：**  - SECOND  - MINUTE  - HOUR  - DAY  - MONTH **默认取值：** SECOND
+
+        :return: The time_unit of this CreatePunishmentRuleRequestBody.
+        :rtype: str
+        """
+        return self._time_unit
+
+    @time_unit.setter
+    def time_unit(self, time_unit):
+        r"""Sets the time_unit of this CreatePunishmentRuleRequestBody.
+
+        **参数解释：** 时间单位，会影响“拦截时间”参数的取值范围 **约束限制：** 不涉及 **取值范围：**  - SECOND  - MINUTE  - HOUR  - DAY  - MONTH **默认取值：** SECOND
+
+        :param time_unit: The time_unit of this CreatePunishmentRuleRequestBody.
+        :type time_unit: str
+        """
+        self._time_unit = time_unit
+
+    @property
     def block_time(self):
         r"""Gets the block_time of this CreatePunishmentRuleRequestBody.
 
-        拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
+        **参数解释：** 拦截时间 **约束限制：** 取值范围取决于惩罚类别和时间单位 **取值范围：** - short_xxx   - SECOND  [1, 300] - long_xxx   - SECOND [301, 7776000]   - MINUTE [6, 129600]   - HOUR [1, 2160]   - DAY [1, 90]   - MONTH [1, 3] **默认取值：** 不涉及
 
         :return: The block_time of this CreatePunishmentRuleRequestBody.
         :rtype: int
@@ -88,7 +117,7 @@ class CreatePunishmentRuleRequestBody:
     def block_time(self, block_time):
         r"""Sets the block_time of this CreatePunishmentRuleRequestBody.
 
-        拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
+        **参数解释：** 拦截时间 **约束限制：** 取值范围取决于惩罚类别和时间单位 **取值范围：** - short_xxx   - SECOND  [1, 300] - long_xxx   - SECOND [301, 7776000]   - MINUTE [6, 129600]   - HOUR [1, 2160]   - DAY [1, 90]   - MONTH [1, 3] **默认取值：** 不涉及
 
         :param block_time: The block_time of this CreatePunishmentRuleRequestBody.
         :type block_time: int

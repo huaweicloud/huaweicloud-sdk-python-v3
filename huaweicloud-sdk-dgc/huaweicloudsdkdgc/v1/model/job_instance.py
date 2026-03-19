@@ -57,7 +57,7 @@ class JobInstance:
 
         :param job_name: 作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名。如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
         :type job_name: str
-        :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
         :type status: str
         :param plan_time: 作业实例计划执行时间
         :type plan_time: int
@@ -163,7 +163,7 @@ class JobInstance:
     def status(self):
         r"""Gets the status of this JobInstance.
 
-        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
         :return: The status of this JobInstance.
         :rtype: str
@@ -174,7 +174,7 @@ class JobInstance:
     def status(self, status):
         r"""Sets the status of this JobInstance.
 
-        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
         :param status: The status of this JobInstance.
         :type status: str

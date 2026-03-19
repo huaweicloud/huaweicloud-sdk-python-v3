@@ -65,7 +65,7 @@ class CreateInstanceRequestBody:
         :type instancename: str
         :param specification: 独享引擎版本规格   - waf.instance.enterprise：企业版，对应控制台WI-500规格   - waf.instance.professional：专业版，对应控制台WI-100规格
         :type specification: str
-        :param cpu_flavor: 独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
+        :param cpu_flavor: 独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，如8U32G的ECS规格
         :type cpu_flavor: str
         :param vpc_id: 独享引擎所在VPC的ID（通过调用虚拟私有云ListVpcs接口获取所有的VPC列表查询VPC的ID，如果需要关联企业项目，则调用虚拟私有云的接口也需要关联企业项目ID）
         :type vpc_id: str
@@ -257,7 +257,7 @@ class CreateInstanceRequestBody:
     def cpu_flavor(self):
         r"""Gets the cpu_flavor of this CreateInstanceRequestBody.
 
-        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
+        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，如8U32G的ECS规格
 
         :return: The cpu_flavor of this CreateInstanceRequestBody.
         :rtype: str
@@ -268,7 +268,7 @@ class CreateInstanceRequestBody:
     def cpu_flavor(self, cpu_flavor):
         r"""Sets the cpu_flavor of this CreateInstanceRequestBody.
 
-        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通资源租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格。
+        独享引擎ECS规格，实例规格。创建资源租户类独享引擎可不填该参数，创建普通租户独享引擎必填该参数。普通租户类独享引擎具体支持的规格以waf控制台上支持的规格为准，如8U32G的ECS规格
 
         :param cpu_flavor: The cpu_flavor of this CreateInstanceRequestBody.
         :type cpu_flavor: str

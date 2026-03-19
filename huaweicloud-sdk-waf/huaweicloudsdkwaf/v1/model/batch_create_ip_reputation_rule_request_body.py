@@ -18,7 +18,7 @@ class BatchCreateIpReputationRuleRequestBody:
         'name': 'str',
         'type': 'str',
         'tags': 'list[str]',
-        'action': 'UpdateIpReputationRuleRequestBodyAction',
+        'action': 'CreateIpReputationRuleRequestBodyAction',
         'description': 'str',
         'policy_ids': 'list[str]'
     }
@@ -37,17 +37,17 @@ class BatchCreateIpReputationRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param type: **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        :param type: **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
         :type type: str
-        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\&quot;,\&quot;分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         :param description: **参数解释：** 规则描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
-        :param policy_ids: **参数解释：** 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param policy_ids: **参数解释：** 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_ids: list[str]
         """
         
@@ -73,7 +73,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def name(self):
         r"""Gets the name of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BatchCreateIpReputationRuleRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def name(self, name):
         r"""Sets the name of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BatchCreateIpReputationRuleRequestBody.
         :type name: str
@@ -95,7 +95,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def type(self):
         r"""Gets the type of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :return: The type of this BatchCreateIpReputationRuleRequestBody.
         :rtype: str
@@ -106,7 +106,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def type(self, type):
         r"""Sets the type of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :param type: The type of this BatchCreateIpReputationRuleRequestBody.
         :type type: str
@@ -117,7 +117,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def tags(self):
         r"""Gets the tags of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The tags of this BatchCreateIpReputationRuleRequestBody.
         :rtype: list[str]
@@ -128,7 +128,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param tags: The tags of this BatchCreateIpReputationRuleRequestBody.
         :type tags: list[str]
@@ -140,7 +140,7 @@ class BatchCreateIpReputationRuleRequestBody:
         r"""Gets the action of this BatchCreateIpReputationRuleRequestBody.
 
         :return: The action of this BatchCreateIpReputationRuleRequestBody.
-        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         return self._action
 
@@ -149,7 +149,7 @@ class BatchCreateIpReputationRuleRequestBody:
         r"""Sets the action of this BatchCreateIpReputationRuleRequestBody.
 
         :param action: The action of this BatchCreateIpReputationRuleRequestBody.
-        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         self._action = action
 
@@ -179,7 +179,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_ids of this BatchCreateIpReputationRuleRequestBody.
         :rtype: list[str]
@@ -190,7 +190,7 @@ class BatchCreateIpReputationRuleRequestBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this BatchCreateIpReputationRuleRequestBody.
 
-        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_ids: The policy_ids of this BatchCreateIpReputationRuleRequestBody.
         :type policy_ids: list[str]

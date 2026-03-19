@@ -1,3 +1,558 @@
+# 3.1.188 2026-03-19
+
+### HuaweiCloud SDK AAD
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDDoSPeak**
+    - 响应参数变更
+      - `* utime: int32 -> int64`
+  - **ListWafBandwidth**
+    - 响应参数变更
+      - `* curve.time: int32 -> int64`
+  - **ListWafQps**
+    - 响应参数变更
+      - `* curve.time: int32 -> int64`
+  - **ListWafGeoIpRule**
+    - 响应参数变更
+      - `* items.timestamp: int32 -> int64`
+  - **ShowInstanceByInstanceId**
+    - 响应参数变更
+      - `* expire_time: int32 -> int64`
+      - `* create_time: int32 -> int64`
+      - `* current_time: int32 -> int64`
+  - **ListDDoSBlackHoleEvent**
+    - 响应参数变更
+      - `* items.start_time: int32 -> int64`
+      - `* items.end_time: int32 -> int64`
+  - **ListWafAttackEvent**
+    - 响应参数变更
+      - `* list.time: int32 -> int64`
+  - **ListDDoSConnectionNumber**
+    - 响应参数变更
+      - `* data.list.time: int32 -> int64`
+
+### HuaweiCloud SDK CloudDC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServer**
+    - 响应参数变更
+      - `+ manage_state: enum value [os-ready,maintain]`
+  - **ListServers**
+    - 请求参数变更
+      - `+ manage_state: enum value [os-ready,maintain]`
+    - 响应参数变更
+      - `+ servers.manage_state: enum value [os-ready,maintain]`
+
+### HuaweiCloud SDK DeH
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDedicatedHostAllTypes**
+    - 响应参数变更
+      - `+ page_info`
+      - `- dedicated_host_types.page_info`
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJobStatus**
+    - 响应参数变更
+      - `+ lastModifiyUser`
+      - `+ createUser`
+      - `+ status: enum value [STARTING,PAUSE,ABNORMAL,DISABLE,OVERLOAD,INIT]`
+      - `- status: enum value [STARTTING]`
+      - `+ nodes.lastInstanceStatus`
+      - `+ nodes.runningData`
+      - `+ nodes.extendCounter`
+      - `+ nodes.status: enum value [STARTING,PAUSE,ABNORMAL,DISABLE,OVERLOAD,INIT]`
+      - `- nodes.status: enum value [STARTTING]`
+  - **ListJobInstances**
+    - 请求参数变更
+      - `+ status: enum value [forceSuccess,ignoreSuccess,freeze,skip-by-depend,waiting-confirm]`
+    - 响应参数变更
+      - `+ instances.status: enum value [forceSuccess,ignoreSuccess,freeze,skip-by-depend,waiting-confirm]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSqlLimitTask**
+    - 请求参数变更
+      - `+ node_infos.sql_ids`
+      - `- node_infos.sql_id`
+      - `* node_infos: list<CreateLimitTaskNodeOption> -> list<CreateSqlLimitTaskNodeOption>`
+  - **ListWdrSnapshotsCollectResults**
+    - 响应参数变更
+      - `* wdr_snapshots.obs_bucket.port: string -> int32`
+  - **ShowFullSql**
+    - 响应参数变更
+      - `+ components.sql`
+  - **ListSchemaVolumes**
+    - 响应参数变更
+      - `+ schema_volumes.schema_name`
+      - `- schema_volumes.nsp_name`
+  - **ListFullSqlSwitches**
+    - 响应参数变更
+      - `+ allowed_sql_types.prefixes`
+  - **ListLtsConfigs**
+    - 请求参数变更
+      - `+ instance_id`
+      - `- instance_id`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportAntiVirusResult**
+    - 请求参数变更
+      - `+ severities`
+  - **ShowSwitchesStatus**
+    - 请求参数变更
+      - `+ code: enum value [display_unprotected_host]`
+  - **ChangeSwitchesStatus**
+    - 请求参数变更
+      - `+ code: enum value [display_unprotected_host]`
+  - **ListVulHostVuls**
+    - 请求参数变更
+      - `+ host_id_list`
+  - **ListVulHostHosts**
+    - 请求参数变更
+      - `+ host_id_list`
+  - **ListHostStatus**
+    - 请求参数变更
+      - `+ host_name_list`
+      - `+ host_id_list`
+      - `+ public_ip_list`
+      - `+ private_ip_list`
+  - **ListImageLocal**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListRaspEvents**
+    - 请求参数变更
+      - `* host_id: required -> optional`
+  - **ListAntivirusHandleHistory**
+    - 请求参数变更
+      - `+ severities`
+  - **ListAntiVirusHost**
+    - 响应参数变更
+      - `+ data_list.os_name`
+      - `+ data_list.host_status`
+      - `+ data_list.agent_status`
+      - `+ data_list.asset_value`
+  - **ListAntiVirusPaidHosts**
+    - 请求参数变更
+      - `* scan_type: required -> optional`
+  - **ListAppWhitelistHostStatus**
+    - 响应参数变更
+      - `+ data_list.os_name`
+      - `+ data_list.host_status`
+      - `+ data_list.agent_status`
+  - **ShowBaselineOverview**
+    - 请求参数变更
+      - `+ statistics_type`
+  - **ListAntiVirusResult**
+    - 请求参数变更
+      - `+ severities`
+      - `+ id_list`
+      - `+ file_hash_list`
+
+### HuaweiCloud SDK OBS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PutObject**
+    - 请求参数变更
+      - `+ x-obs-server-side-encryption-bucket-key-enabled`
+      - `+ x-obs-server-side-data-encryption`
+      - `+ x-obs-tagging`
+      - `+ x-obs-object-lock-mode`
+      - `+ x-obs-object-lock-retain-until-date`
+
+### HuaweiCloud SDK RGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTemplateDeployParams**
+    - 响应参数变更
+      - `+ variables.latest_param`
+
+### HuaweiCloud SDK SCM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`DisableNotification`、`EnableNotification`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceReplicationPolicyExecSubTasks**
+    - 响应参数变更
+      - `+ sub_tasks`
+      - `- subtasks`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateIgnoreRuleHitNum`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPunishmentRule**
+    - 响应参数变更
+      - `+ time_unit`
+  - **UpdatePunishmentRule**
+    - 请求参数变更
+      - `+ time_unit`
+      - `+ category: enum value [long_header_block,short_header_block]`
+    - 响应参数变更
+      - `+ time_unit`
+  - **DeletePunishmentRule**
+    - 响应参数变更
+      - `+ time_unit`
+  - **ShowConsoleConfig**
+    - 请求参数变更
+      - `+ region`
+  - **UpdatePolicyRuleStatus**
+    - 请求参数变更
+      - `+ ruletype: enum value [antileakage,ip-reputation,llm-guards]`
+  - **UpdatePremiumHostAccessStatus**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ConfirmPolicyIpReputationMap**
+    - 请求参数变更
+      - `* lang: required -> optional`
+      - `+ lang: enum value [cn,en]`
+      - `+ type: enum value [idc]`
+  - **ShowWebProtectionRule**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **ConfirmPolicyAntileakageMap**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **BatchDeleteRules**
+    - 请求参数变更
+      - `+ rule_type: enum value [cc,custom,whiteblackip,privacy,ignore,geoip,antitamper,antileakage,ip-reputation,llm-guards]`
+  - **BatchUpdateGeoipRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **BatchUpdateWhiteblackipRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ time_mode: enum value [permanent,customize]`
+  - **BatchUpdateIpReputationRules**
+    - 请求参数变更
+      - `+ action.category: enum value [log,pass,block]`
+      - `+ type: enum value [idc]`
+  - **BatchUpdateAntitamperRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **BatchUpdateAntileakageRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **UpdateIpReputationRule**
+    - 请求参数变更
+      - `- policyname`
+  - **UpdatePremiumInstanceProgress**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ListThreats**
+    - 请求参数变更
+      - `+ from`
+      - `+ to`
+      - `+ instances`
+      - `* recent: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+    - 响应参数变更
+      - `+ llm_prompt_injection`
+      - `+ llm_prompt_sensitive`
+      - `+ llm_response_sensitive`
+  - **ListUrl**
+    - 请求参数变更
+      - `* top: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+  - **ListSourceIpTop5**
+    - 请求参数变更
+      - `+ from`
+      - `+ to`
+      - `+ top`
+      - `+ instances`
+      - `* recent: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+      - `* hosts: required -> optional`
+  - **ShowAnticrawlerRule**
+    - 响应参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **UpdateAnticrawlerRule**
+    - 请求参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+    - 响应参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **DeleteAnticrawlerRule**
+    - 响应参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **CreatePunishmentRule**
+    - 请求参数变更
+      - `+ time_unit`
+      - `+ category: enum value [long_header_block,short_header_block]`
+    - 响应参数变更
+      - `+ time_unit`
+  - **ListPunishmentRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - 响应参数变更
+      - `+ items.time_unit`
+  - **ListAntileakageRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ShowIgnoreRule**
+    - 响应参数变更
+      - `+ clear_time`
+      - `+ update_time`
+      - `+ hit_num`
+  - **UpdateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+    - 响应参数变更
+      - `+ clear_time`
+      - `+ update_time`
+      - `+ hit_num`
+  - **ListStatistics**
+    - 请求参数变更
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListTopAbnormal**
+    - 请求参数变更
+      - `+ code: enum value [404,500,502]`
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListEvent**
+    - 请求参数变更
+      - `+ ids`
+      - `+ nids`
+      - `+ nattacks`
+      - `+ rules`
+      - `+ nrules`
+      - `+ nsips`
+      - `+ sip`
+      - `+ urls`
+      - `+ nurls`
+      - `+ url`
+      - `+ actions`
+      - `+ nactions`
+      - `+ domain`
+      - `+ ndomain`
+      - `+ domains`
+      - `+ ip_countries`
+      - `+ nip_countries`
+      - `+ ip_regions`
+      - `+ nip_regions`
+      - `+ response_codes`
+      - `+ payload`
+      - `+ instances`
+      - `+ sort_key`
+      - `+ sort_direction`
+      - `+ query_mode`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **ShowEvent**
+    - 请求参数变更
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **UpdateWhiteblackipRule**
+    - 请求参数变更
+      - `+ time_mode: enum value [permanent,customize]`
+  - **ShowIpGroup**
+    - 响应参数变更
+      - `+ ip_remarks`
+  - **UpdateIpGroup**
+    - 请求参数变更
+      - `+ action: enum value [add,delete,update]`
+      - `+ ip_remarks`
+    - 响应参数变更
+      - `+ ip_remarks`
+  - **DeleteIpGroup**
+    - 响应参数变更
+      - `+ ip_remarks`
+  - **ListTopIp**
+    - 请求参数变更
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListTopUrl**
+    - 请求参数变更
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **CreateIpReputationRule**
+    - 请求参数变更
+      - `- policyname`
+      - `- status`
+      - `+ action.category: enum value [log,pass,block]`
+  - **ListIpReputationRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListGeoIpPolicyRules**
+    - 请求参数变更
+      - `* policyids: string -> list<string>`
+  - **BatchCreateAntiTamperRule**
+    - 请求参数变更
+      - `* policyids: string -> list<string>`
+  - **ListAntiTamperPolicyRules**
+    - 请求参数变更
+      - `* policyids: string -> list<string>`
+    - 响应参数变更
+      - `+ items.hostname`
+      - `- items.policyname`
+      - `- items.category`
+      - `- items.contents`
+      - `- items.action`
+      - `* items: list<LeakageListInfo> -> list<AntiTamperRuleResponseBody>`
+  - **BatchCreateIpReputationRule**
+    - 请求参数变更
+      - `+ type: enum value [idc]`
+      - `+ action.category: enum value [log,pass,block]`
+  - **BatchUpdateCcRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **BatchUpdateCustomRules**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `* body: object<BatchUpdateCustomRuleRequestBody> -> object<BatchUpdateCustomRulesRequestBody>`
+  - **BatchUpdateIgnoreRules**
+    - 请求参数变更
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+  - **ListCcRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListCustomRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **CreateAnticrawlerRule**
+    - 请求参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+    - 响应参数变更
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **ListAnticrawlerRules**
+    - 请求参数变更
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - 响应参数变更
+      - `+ items.conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **CreateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+  - **ListQpsTimeline**
+    - 请求参数变更
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListBandwidthTimeline**
+    - 请求参数变更
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+      - `+ display_option: enum value [0,1]`
+  - **ListOverviewsClassification**
+    - 请求参数变更
+      - `+ X-Language: enum value [zh-cn,en-us]`
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **CreateWhiteblackipRule**
+    - 请求参数变更
+      - `+ time_mode: enum value [permanent,customize]`
+  - **CreateIpGroup**
+    - 请求参数变更
+      - `+ ip_remarks`
+    - 响应参数变更
+      - `+ ip_remarks`
+  - **ListIpGroup**
+    - 响应参数变更
+      - `+ items.ip_remarks`
+  - **BatchCreateCustomRule**
+    - 请求参数变更
+      - `* policyids: string -> list<string>`
+  - **ListCustomPolicyRules**
+    - 请求参数变更
+      - `* policyids: string -> list<string>`
+  - **BatchCreateWhiteblackipRule**
+    - 请求参数变更
+      - `+ time_mode: enum value [permanent,customize]`
+  - **BatchCreateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+
 # 3.1.187 2026-03-12
 
 ### HuaweiCloud SDK CBH

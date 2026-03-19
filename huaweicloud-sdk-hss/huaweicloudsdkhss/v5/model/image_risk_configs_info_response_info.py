@@ -39,13 +39,13 @@ class ImageRiskConfigsInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param severity: **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
+        :param severity: **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 
         :type severity: str
-        :param check_name: **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如&#39;CentOS 7&#39;、&#39;EulerOS&#39;等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
+        :param check_name: **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如&#39;CentOS 7&#39;、&#39;EulerOS&#39;等） **取值范围** 支持的基线名称列表详见功能介绍 
         :type check_name: str
         :param check_type: **参数解释** 用于区分基线的类型 **取值范围** 字符长度0-256位 
         :type check_type: str
-        :param standard: **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
+        :param standard: **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
         :type standard: str
         :param check_rule_num: **参数解释** 该基线对应的安全配置检测总检查项数量 **取值范围** 取值0-2097152 
         :type check_rule_num: int
@@ -85,7 +85,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 
 
         :return: The severity of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 
 
         :param severity: The severity of this ImageRiskConfigsInfoResponseInfo.
         :type severity: str
@@ -107,7 +107,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_name(self):
         r"""Gets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **取值范围** 支持的基线名称列表详见功能介绍 
 
         :return: The check_name of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_name(self, check_name):
         r"""Sets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **取值范围** 支持的基线名称列表详见功能介绍 
 
         :param check_name: The check_name of this ImageRiskConfigsInfoResponseInfo.
         :type check_name: str
@@ -151,7 +151,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self):
         r"""Gets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
 
         :return: The standard of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self, standard):
         r"""Sets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 
 
         :param standard: The standard of this ImageRiskConfigsInfoResponseInfo.
         :type standard: str

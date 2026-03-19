@@ -46,11 +46,11 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param id: **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 同一个标签在多个规则中只能出现一次，即多个规则的标签列表不允许重合 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: str
         :param policyid: **参数解释：** 所属防护策略ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyid: str
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
         :param policyname: **参数解释：** 所属策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyname: str
@@ -62,7 +62,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
         :type status: int
         :param type: **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type type: str
-        :param tags: **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\&quot;,\&quot;分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
         :param action: 
         :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
@@ -107,7 +107,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 同一个标签在多个规则中只能出现一次，即多个规则的标签列表不允许重合 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The id of this BatchCreateIpReputationRuleResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则ID，唯一标识该规则 **约束限制：** 同一个标签在多个规则中只能出现一次，即多个规则的标签列表不允许重合 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param id: The id of this BatchCreateIpReputationRuleResponse.
         :type id: str
@@ -151,7 +151,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BatchCreateIpReputationRuleResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BatchCreateIpReputationRuleResponse.
         :type name: str
@@ -283,7 +283,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The tags of this BatchCreateIpReputationRuleResponse.
         :rtype: list[str]
@@ -294,7 +294,7 @@ class BatchCreateIpReputationRuleResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this BatchCreateIpReputationRuleResponse.
 
-        **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param tags: The tags of this BatchCreateIpReputationRuleResponse.
         :type tags: list[str]

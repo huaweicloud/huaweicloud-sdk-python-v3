@@ -19,7 +19,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
         'hostname': 'str',
         'url': 'str',
         'description': 'str',
-        'policy_rule_ids': 'list[PolicyRuleIdRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateAntiTamperRulesRequestBodyPolicyRuleIds]'
     }
 
     attribute_map = {
@@ -35,16 +35,16 @@ class BatchUpdateAntiTamperRulesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
         :param hostname: 防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
         :type hostname: str
-        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\&quot;\\*\&quot;号结尾代表路径前缀
         :type url: str
         :param description: 规则描述
         :type description: str
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntiTamperRulesRequestBodyPolicyRuleIds`]
         """
         
         
@@ -68,7 +68,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
     def name(self):
         r"""Gets the name of this BatchUpdateAntiTamperRulesRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BatchUpdateAntiTamperRulesRequestBody.
         :rtype: str
@@ -79,7 +79,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
     def name(self, name):
         r"""Sets the name of this BatchUpdateAntiTamperRulesRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BatchUpdateAntiTamperRulesRequestBody.
         :type name: str
@@ -112,7 +112,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
     def url(self):
         r"""Gets the url of this BatchUpdateAntiTamperRulesRequestBody.
 
-        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :return: The url of this BatchUpdateAntiTamperRulesRequestBody.
         :rtype: str
@@ -123,7 +123,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
     def url(self, url):
         r"""Sets the url of this BatchUpdateAntiTamperRulesRequestBody.
 
-        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :param url: The url of this BatchUpdateAntiTamperRulesRequestBody.
         :type url: str
@@ -159,7 +159,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_rule_ids of this BatchUpdateAntiTamperRulesRequestBody.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntiTamperRulesRequestBodyPolicyRuleIds`]
         """
         return self._policy_rule_ids
 
@@ -170,7 +170,7 @@ class BatchUpdateAntiTamperRulesRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_rule_ids: The policy_rule_ids of this BatchUpdateAntiTamperRulesRequestBody.
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntiTamperRulesRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
 

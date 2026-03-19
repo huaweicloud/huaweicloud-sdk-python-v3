@@ -25,7 +25,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         'timestamp': 'int',
         'description': 'str',
         'status': 'int',
-        'action': 'CreateIpReputationRuleResponseBodyAction',
+        'action': 'UpdateIdcIpRuleResponseBodyAction',
         'isp': 'str'
     }
 
@@ -52,11 +52,11 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         :type id: str
         :param policyid: **参数解释：** 所属防护策略ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyid: str
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
         :param type: **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type type: str
-        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\&quot;,\&quot;分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
         :param policyname: **参数解释：** 所属策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyname: str
@@ -67,7 +67,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         :param status: **参数解释：** 规则状态（1表示开启，0表示关闭） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type status: int
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         :param isp: **参数解释：** 互联网服务提供商信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type isp: str
         """
@@ -158,7 +158,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this UpdateIpReputationRuleResponse.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this UpdateIpReputationRuleResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this UpdateIpReputationRuleResponse.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this UpdateIpReputationRuleResponse.
         :type name: str
@@ -202,7 +202,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this UpdateIpReputationRuleResponse.
 
-        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The tags of this UpdateIpReputationRuleResponse.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
     def tags(self, tags):
         r"""Sets the tags of this UpdateIpReputationRuleResponse.
 
-        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param tags: The tags of this UpdateIpReputationRuleResponse.
         :type tags: list[str]
@@ -313,7 +313,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         r"""Gets the action of this UpdateIpReputationRuleResponse.
 
         :return: The action of this UpdateIpReputationRuleResponse.
-        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         """
         return self._action
 
@@ -322,7 +322,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         r"""Sets the action of this UpdateIpReputationRuleResponse.
 
         :param action: The action of this UpdateIpReputationRuleResponse.
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         """
         self._action = action
 

@@ -52,7 +52,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
         :type description: str
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\&quot;\\*\&quot;号结尾代表路径前缀
         :type url: str
         :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
         :type category: str
@@ -203,7 +203,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def url(self):
         r"""Gets the url of this DeletePrivacyRuleResponse.
 
-        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :return: The url of this DeletePrivacyRuleResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def url(self, url):
         r"""Sets the url of this DeletePrivacyRuleResponse.
 
-        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :param url: The url of this DeletePrivacyRuleResponse.
         :type url: str

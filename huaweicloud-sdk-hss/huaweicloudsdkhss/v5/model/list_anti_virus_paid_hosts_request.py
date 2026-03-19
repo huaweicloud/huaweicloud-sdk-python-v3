@@ -61,7 +61,7 @@ class ListAntiVirusPaidHostsRequest:
         :type public_ip: str
         :param group_id: **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
-        :param scan_type: **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**:   - quick ：快速扫描   - full：全盘扫描   - custom : 自定义扫描 **默认取值**: 不涉及 
+        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
         :type scan_type: str
         :param start_type: **参数解释**: 启动类型 **约束限制**: 不涉及 **取值范围**: - now ：立即启动 - period : 周期启动 **默认取值**: 不涉及 
         :type start_type: str
@@ -97,7 +97,8 @@ class ListAntiVirusPaidHostsRequest:
             self.public_ip = public_ip
         if group_id is not None:
             self.group_id = group_id
-        self.scan_type = scan_type
+        if scan_type is not None:
+            self.scan_type = scan_type
         self.start_type = start_type
 
     @property
@@ -280,7 +281,7 @@ class ListAntiVirusPaidHostsRequest:
     def scan_type(self):
         r"""Gets the scan_type of this ListAntiVirusPaidHostsRequest.
 
-        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**:   - quick ：快速扫描   - full：全盘扫描   - custom : 自定义扫描 **默认取值**: 不涉及 
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
 
         :return: The scan_type of this ListAntiVirusPaidHostsRequest.
         :rtype: str
@@ -291,7 +292,7 @@ class ListAntiVirusPaidHostsRequest:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ListAntiVirusPaidHostsRequest.
 
-        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**:   - quick ：快速扫描   - full：全盘扫描   - custom : 自定义扫描 **默认取值**: 不涉及 
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
 
         :param scan_type: The scan_type of this ListAntiVirusPaidHostsRequest.
         :type scan_type: str

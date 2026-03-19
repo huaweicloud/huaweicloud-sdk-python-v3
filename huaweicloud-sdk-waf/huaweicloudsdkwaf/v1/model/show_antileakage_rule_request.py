@@ -33,9 +33,9 @@ class ShowAntileakageRuleRequest:
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :param policy_id: **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param rule_id: 防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
+        :param rule_id: **参数解释：** 防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type rule_id: str
         """
         
@@ -77,7 +77,7 @@ class ShowAntileakageRuleRequest:
     def policy_id(self):
         r"""Gets the policy_id of this ShowAntileakageRuleRequest.
 
-        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_id of this ShowAntileakageRuleRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowAntileakageRuleRequest:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ShowAntileakageRuleRequest.
 
-        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_id: The policy_id of this ShowAntileakageRuleRequest.
         :type policy_id: str
@@ -99,7 +99,7 @@ class ShowAntileakageRuleRequest:
     def rule_id(self):
         r"""Gets the rule_id of this ShowAntileakageRuleRequest.
 
-        防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
+        **参数解释：** 防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The rule_id of this ShowAntileakageRuleRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowAntileakageRuleRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this ShowAntileakageRuleRequest.
 
-        防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
+        **参数解释：** 防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param rule_id: The rule_id of this ShowAntileakageRuleRequest.
         :type rule_id: str

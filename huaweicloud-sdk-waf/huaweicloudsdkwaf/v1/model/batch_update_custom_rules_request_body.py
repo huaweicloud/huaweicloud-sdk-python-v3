@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchUpdateCustomRuleRequestBody:
+class BatchUpdateCustomRulesRequestBody:
 
     """
     Attributes:
@@ -26,7 +26,7 @@ class BatchUpdateCustomRuleRequestBody:
         'start': 'int',
         'terminal': 'int',
         'producer': 'int',
-        'policy_rule_ids': 'list[PolicyRuleIdRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateCustomRulesRequestBodyPolicyRuleIds]'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class BatchUpdateCustomRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, conditions=None, action=None, action_mode=None, priority=None, time=None, start=None, terminal=None, producer=None, policy_rule_ids=None):
-        r"""BatchUpdateCustomRuleRequestBody
+        r"""BatchUpdateCustomRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BatchUpdateCustomRuleRequestBody:
         :type action_mode: bool
         :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
-        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        :param time: 精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
         :type time: bool
         :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才会返回该参数。
         :type start: int
@@ -72,7 +72,7 @@ class BatchUpdateCustomRuleRequestBody:
         :param producer: 规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
         :type producer: int
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateCustomRulesRequestBodyPolicyRuleIds`]
         """
         
         
@@ -117,261 +117,261 @@ class BatchUpdateCustomRuleRequestBody:
 
     @property
     def name(self):
-        r"""Gets the name of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the name of this BatchUpdateCustomRulesRequestBody.
 
         规则名称
 
-        :return: The name of this BatchUpdateCustomRuleRequestBody.
+        :return: The name of this BatchUpdateCustomRulesRequestBody.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the name of this BatchUpdateCustomRulesRequestBody.
 
         规则名称
 
-        :param name: The name of this BatchUpdateCustomRuleRequestBody.
+        :param name: The name of this BatchUpdateCustomRulesRequestBody.
         :type name: str
         """
         self._name = name
 
     @property
     def description(self):
-        r"""Gets the description of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the description of this BatchUpdateCustomRulesRequestBody.
 
         规则描述
 
-        :return: The description of this BatchUpdateCustomRuleRequestBody.
+        :return: The description of this BatchUpdateCustomRulesRequestBody.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        r"""Sets the description of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the description of this BatchUpdateCustomRulesRequestBody.
 
         规则描述
 
-        :param description: The description of this BatchUpdateCustomRuleRequestBody.
+        :param description: The description of this BatchUpdateCustomRulesRequestBody.
         :type description: str
         """
         self._description = description
 
     @property
     def status(self):
-        r"""Gets the status of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the status of this BatchUpdateCustomRulesRequestBody.
 
         **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
-        :return: The status of this BatchUpdateCustomRuleRequestBody.
+        :return: The status of this BatchUpdateCustomRulesRequestBody.
         :rtype: int
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        r"""Sets the status of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the status of this BatchUpdateCustomRulesRequestBody.
 
         **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
-        :param status: The status of this BatchUpdateCustomRuleRequestBody.
+        :param status: The status of this BatchUpdateCustomRulesRequestBody.
         :type status: int
         """
         self._status = status
 
     @property
     def conditions(self):
-        r"""Gets the conditions of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the conditions of this BatchUpdateCustomRulesRequestBody.
 
         匹配条件列表，匹配条件必须同时满足。
 
-        :return: The conditions of this BatchUpdateCustomRuleRequestBody.
+        :return: The conditions of this BatchUpdateCustomRulesRequestBody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.CustomRuleConditions`]
         """
         return self._conditions
 
     @conditions.setter
     def conditions(self, conditions):
-        r"""Sets the conditions of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the conditions of this BatchUpdateCustomRulesRequestBody.
 
         匹配条件列表，匹配条件必须同时满足。
 
-        :param conditions: The conditions of this BatchUpdateCustomRuleRequestBody.
+        :param conditions: The conditions of this BatchUpdateCustomRulesRequestBody.
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.CustomRuleConditions`]
         """
         self._conditions = conditions
 
     @property
     def action(self):
-        r"""Gets the action of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the action of this BatchUpdateCustomRulesRequestBody.
 
-        :return: The action of this BatchUpdateCustomRuleRequestBody.
+        :return: The action of this BatchUpdateCustomRulesRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomAction`
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        r"""Sets the action of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the action of this BatchUpdateCustomRulesRequestBody.
 
-        :param action: The action of this BatchUpdateCustomRuleRequestBody.
+        :param action: The action of this BatchUpdateCustomRulesRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
         """
         self._action = action
 
     @property
     def action_mode(self):
-        r"""Gets the action_mode of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the action_mode of this BatchUpdateCustomRulesRequestBody.
 
         预留参数，可忽略。
 
-        :return: The action_mode of this BatchUpdateCustomRuleRequestBody.
+        :return: The action_mode of this BatchUpdateCustomRulesRequestBody.
         :rtype: bool
         """
         return self._action_mode
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        r"""Sets the action_mode of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the action_mode of this BatchUpdateCustomRulesRequestBody.
 
         预留参数，可忽略。
 
-        :param action_mode: The action_mode of this BatchUpdateCustomRuleRequestBody.
+        :param action_mode: The action_mode of this BatchUpdateCustomRulesRequestBody.
         :type action_mode: bool
         """
         self._action_mode = action_mode
 
     @property
     def priority(self):
-        r"""Gets the priority of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the priority of this BatchUpdateCustomRulesRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
-        :return: The priority of this BatchUpdateCustomRuleRequestBody.
+        :return: The priority of this BatchUpdateCustomRulesRequestBody.
         :rtype: int
         """
         return self._priority
 
     @priority.setter
     def priority(self, priority):
-        r"""Sets the priority of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the priority of this BatchUpdateCustomRulesRequestBody.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
-        :param priority: The priority of this BatchUpdateCustomRuleRequestBody.
+        :param priority: The priority of this BatchUpdateCustomRulesRequestBody.
         :type priority: int
         """
         self._priority = priority
 
     @property
     def time(self):
-        r"""Gets the time of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the time of this BatchUpdateCustomRulesRequestBody.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
 
-        :return: The time of this BatchUpdateCustomRuleRequestBody.
+        :return: The time of this BatchUpdateCustomRulesRequestBody.
         :rtype: bool
         """
         return self._time
 
     @time.setter
     def time(self, time):
-        r"""Sets the time of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the time of this BatchUpdateCustomRulesRequestBody.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效 - true：表示自定义生效时间
 
-        :param time: The time of this BatchUpdateCustomRuleRequestBody.
+        :param time: The time of this BatchUpdateCustomRulesRequestBody.
         :type time: bool
         """
         self._time = time
 
     @property
     def start(self):
-        r"""Gets the start of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the start of this BatchUpdateCustomRulesRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
-        :return: The start of this BatchUpdateCustomRuleRequestBody.
+        :return: The start of this BatchUpdateCustomRulesRequestBody.
         :rtype: int
         """
         return self._start
 
     @start.setter
     def start(self, start):
-        r"""Sets the start of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the start of this BatchUpdateCustomRulesRequestBody.
 
         精准防护规则生效的起始时间戳（秒）。当time=true，才会返回该参数。
 
-        :param start: The start of this BatchUpdateCustomRuleRequestBody.
+        :param start: The start of this BatchUpdateCustomRulesRequestBody.
         :type start: int
         """
         self._start = start
 
     @property
     def terminal(self):
-        r"""Gets the terminal of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the terminal of this BatchUpdateCustomRulesRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
-        :return: The terminal of this BatchUpdateCustomRuleRequestBody.
+        :return: The terminal of this BatchUpdateCustomRulesRequestBody.
         :rtype: int
         """
         return self._terminal
 
     @terminal.setter
     def terminal(self, terminal):
-        r"""Sets the terminal of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the terminal of this BatchUpdateCustomRulesRequestBody.
 
         精准防护规则生效的终止时间戳（秒）。当time=true，才会返回该参数。
 
-        :param terminal: The terminal of this BatchUpdateCustomRuleRequestBody.
+        :param terminal: The terminal of this BatchUpdateCustomRulesRequestBody.
         :type terminal: int
         """
         self._terminal = terminal
 
     @property
     def producer(self):
-        r"""Gets the producer of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the producer of this BatchUpdateCustomRulesRequestBody.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
-        :return: The producer of this BatchUpdateCustomRuleRequestBody.
+        :return: The producer of this BatchUpdateCustomRulesRequestBody.
         :rtype: int
         """
         return self._producer
 
     @producer.setter
     def producer(self, producer):
-        r"""Sets the producer of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the producer of this BatchUpdateCustomRulesRequestBody.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
-        :param producer: The producer of this BatchUpdateCustomRuleRequestBody.
+        :param producer: The producer of this BatchUpdateCustomRulesRequestBody.
         :type producer: int
         """
         self._producer = producer
 
     @property
     def policy_rule_ids(self):
-        r"""Gets the policy_rule_ids of this BatchUpdateCustomRuleRequestBody.
+        r"""Gets the policy_rule_ids of this BatchUpdateCustomRulesRequestBody.
 
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :return: The policy_rule_ids of this BatchUpdateCustomRuleRequestBody.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :return: The policy_rule_ids of this BatchUpdateCustomRulesRequestBody.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateCustomRulesRequestBodyPolicyRuleIds`]
         """
         return self._policy_rule_ids
 
     @policy_rule_ids.setter
     def policy_rule_ids(self, policy_rule_ids):
-        r"""Sets the policy_rule_ids of this BatchUpdateCustomRuleRequestBody.
+        r"""Sets the policy_rule_ids of this BatchUpdateCustomRulesRequestBody.
 
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :param policy_rule_ids: The policy_rule_ids of this BatchUpdateCustomRuleRequestBody.
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :param policy_rule_ids: The policy_rule_ids of this BatchUpdateCustomRulesRequestBody.
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateCustomRulesRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
 
@@ -412,7 +412,7 @@ class BatchUpdateCustomRuleRequestBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchUpdateCustomRuleRequestBody):
+        if not isinstance(other, BatchUpdateCustomRulesRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

@@ -30,9 +30,9 @@ class ListAttackActionTypesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: CountItem的总数量
+        :param total: AttackActionCountItem的总数量
         :type total: int
-        :param items: CountItem详细信息
+        :param items: AttackActionCountItem详细信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.AttackActionCountItem`]
         """
         
@@ -51,7 +51,7 @@ class ListAttackActionTypesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListAttackActionTypesResponse.
 
-        CountItem的总数量
+        AttackActionCountItem的总数量
 
         :return: The total of this ListAttackActionTypesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListAttackActionTypesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListAttackActionTypesResponse.
 
-        CountItem的总数量
+        AttackActionCountItem的总数量
 
         :param total: The total of this ListAttackActionTypesResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListAttackActionTypesResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAttackActionTypesResponse.
 
-        CountItem详细信息
+        AttackActionCountItem详细信息
 
         :return: The items of this ListAttackActionTypesResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.AttackActionCountItem`]
@@ -84,7 +84,7 @@ class ListAttackActionTypesResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAttackActionTypesResponse.
 
-        CountItem详细信息
+        AttackActionCountItem详细信息
 
         :param items: The items of this ListAttackActionTypesResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.AttackActionCountItem`]

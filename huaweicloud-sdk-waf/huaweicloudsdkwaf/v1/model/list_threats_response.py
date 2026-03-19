@@ -27,7 +27,10 @@ class ListThreatsResponse(SdkResponse):
         'custom': 'int',
         'whiteblackip': 'int',
         'antileakage': 'int',
-        'antitamper': 'int'
+        'antitamper': 'int',
+        'llm_prompt_injection': 'int',
+        'llm_prompt_sensitive': 'int',
+        'llm_response_sensitive': 'int'
     }
 
     attribute_map = {
@@ -42,10 +45,13 @@ class ListThreatsResponse(SdkResponse):
         'custom': 'custom',
         'whiteblackip': 'whiteblackip',
         'antileakage': 'antileakage',
-        'antitamper': 'antitamper'
+        'antitamper': 'antitamper',
+        'llm_prompt_injection': 'llm_prompt_injection',
+        'llm_prompt_sensitive': 'llm_prompt_sensitive',
+        'llm_response_sensitive': 'llm_response_sensitive'
     }
 
-    def __init__(self, xss=None, sqli=None, cmdi=None, lfi=None, rfi=None, webshell=None, robot=None, cc=None, custom=None, whiteblackip=None, antileakage=None, antitamper=None):
+    def __init__(self, xss=None, sqli=None, cmdi=None, lfi=None, rfi=None, webshell=None, robot=None, cc=None, custom=None, whiteblackip=None, antileakage=None, antitamper=None, llm_prompt_injection=None, llm_prompt_sensitive=None, llm_response_sensitive=None):
         r"""ListThreatsResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +80,12 @@ class ListThreatsResponse(SdkResponse):
         :type antileakage: int
         :param antitamper: 时间区间内防篡改数量
         :type antitamper: int
+        :param llm_prompt_injection: 时间区间内大模型提示词注入攻击数量
+        :type llm_prompt_injection: int
+        :param llm_prompt_sensitive: 时间区间内大模型提示词合规检测数量
+        :type llm_prompt_sensitive: int
+        :param llm_response_sensitive: 时间区间内大模型响应合规检测数量
+        :type llm_response_sensitive: int
         """
         
         super().__init__()
@@ -90,6 +102,9 @@ class ListThreatsResponse(SdkResponse):
         self._whiteblackip = None
         self._antileakage = None
         self._antitamper = None
+        self._llm_prompt_injection = None
+        self._llm_prompt_sensitive = None
+        self._llm_response_sensitive = None
         self.discriminator = None
 
         if xss is not None:
@@ -116,6 +131,12 @@ class ListThreatsResponse(SdkResponse):
             self.antileakage = antileakage
         if antitamper is not None:
             self.antitamper = antitamper
+        if llm_prompt_injection is not None:
+            self.llm_prompt_injection = llm_prompt_injection
+        if llm_prompt_sensitive is not None:
+            self.llm_prompt_sensitive = llm_prompt_sensitive
+        if llm_response_sensitive is not None:
+            self.llm_response_sensitive = llm_response_sensitive
 
     @property
     def xss(self):
@@ -380,6 +401,72 @@ class ListThreatsResponse(SdkResponse):
         :type antitamper: int
         """
         self._antitamper = antitamper
+
+    @property
+    def llm_prompt_injection(self):
+        r"""Gets the llm_prompt_injection of this ListThreatsResponse.
+
+        时间区间内大模型提示词注入攻击数量
+
+        :return: The llm_prompt_injection of this ListThreatsResponse.
+        :rtype: int
+        """
+        return self._llm_prompt_injection
+
+    @llm_prompt_injection.setter
+    def llm_prompt_injection(self, llm_prompt_injection):
+        r"""Sets the llm_prompt_injection of this ListThreatsResponse.
+
+        时间区间内大模型提示词注入攻击数量
+
+        :param llm_prompt_injection: The llm_prompt_injection of this ListThreatsResponse.
+        :type llm_prompt_injection: int
+        """
+        self._llm_prompt_injection = llm_prompt_injection
+
+    @property
+    def llm_prompt_sensitive(self):
+        r"""Gets the llm_prompt_sensitive of this ListThreatsResponse.
+
+        时间区间内大模型提示词合规检测数量
+
+        :return: The llm_prompt_sensitive of this ListThreatsResponse.
+        :rtype: int
+        """
+        return self._llm_prompt_sensitive
+
+    @llm_prompt_sensitive.setter
+    def llm_prompt_sensitive(self, llm_prompt_sensitive):
+        r"""Sets the llm_prompt_sensitive of this ListThreatsResponse.
+
+        时间区间内大模型提示词合规检测数量
+
+        :param llm_prompt_sensitive: The llm_prompt_sensitive of this ListThreatsResponse.
+        :type llm_prompt_sensitive: int
+        """
+        self._llm_prompt_sensitive = llm_prompt_sensitive
+
+    @property
+    def llm_response_sensitive(self):
+        r"""Gets the llm_response_sensitive of this ListThreatsResponse.
+
+        时间区间内大模型响应合规检测数量
+
+        :return: The llm_response_sensitive of this ListThreatsResponse.
+        :rtype: int
+        """
+        return self._llm_response_sensitive
+
+    @llm_response_sensitive.setter
+    def llm_response_sensitive(self, llm_response_sensitive):
+        r"""Sets the llm_response_sensitive of this ListThreatsResponse.
+
+        时间区间内大模型响应合规检测数量
+
+        :param llm_response_sensitive: The llm_response_sensitive of this ListThreatsResponse.
+        :type llm_response_sensitive: int
+        """
+        self._llm_response_sensitive = llm_response_sensitive
 
     def to_dict(self):
         import warnings

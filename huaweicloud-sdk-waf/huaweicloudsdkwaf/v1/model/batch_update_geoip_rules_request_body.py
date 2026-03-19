@@ -37,7 +37,7 @@ class BatchUpdateGeoipRulesRequestBody:
 
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
-        :param status: **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1  **默认取值：** 不涉及
+        :param status: **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1 **默认取值：** 不涉及
         :type status: int
         :param name: **参数解释：** 规则名称，标识地理位置访问控制规则的名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
@@ -56,8 +56,7 @@ class BatchUpdateGeoipRulesRequestBody:
         self._white = None
         self.discriminator = None
 
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
+        self.policy_rule_ids = policy_rule_ids
         if status is not None:
             self.status = status
         if name is not None:
@@ -93,7 +92,7 @@ class BatchUpdateGeoipRulesRequestBody:
     def status(self):
         r"""Gets the status of this BatchUpdateGeoipRulesRequestBody.
 
-        **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1  **默认取值：** 不涉及
+        **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1 **默认取值：** 不涉及
 
         :return: The status of this BatchUpdateGeoipRulesRequestBody.
         :rtype: int
@@ -104,7 +103,7 @@ class BatchUpdateGeoipRulesRequestBody:
     def status(self, status):
         r"""Sets the status of this BatchUpdateGeoipRulesRequestBody.
 
-        **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1  **默认取值：** 不涉及
+        **参数解释：** 规则状态，控制地理位置访问控制规则的启用/禁用（如1表示启用，0表示禁用） **约束限制：** 不涉及 **取值范围：** - 0 - 1 **默认取值：** 不涉及
 
         :param status: The status of this BatchUpdateGeoipRulesRequestBody.
         :type status: int

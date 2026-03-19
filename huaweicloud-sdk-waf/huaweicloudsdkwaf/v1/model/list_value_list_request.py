@@ -33,7 +33,7 @@ class ListValueListRequest:
 
         :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: int
-        :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        :param pagesize: 分页查询时，每页包含多少条结果。范围-1-100，默认值为-1，表示查询全部结果。
         :type pagesize: int
         :param name: 引用表名称
         :type name: str
@@ -79,7 +79,7 @@ class ListValueListRequest:
     def pagesize(self):
         r"""Gets the pagesize of this ListValueListRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围-1-100，默认值为-1，表示查询全部结果。
 
         :return: The pagesize of this ListValueListRequest.
         :rtype: int
@@ -90,7 +90,7 @@ class ListValueListRequest:
     def pagesize(self, pagesize):
         r"""Sets the pagesize of this ListValueListRequest.
 
-        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
+        分页查询时，每页包含多少条结果。范围-1-100，默认值为-1，表示查询全部结果。
 
         :param pagesize: The pagesize of this ListValueListRequest.
         :type pagesize: int

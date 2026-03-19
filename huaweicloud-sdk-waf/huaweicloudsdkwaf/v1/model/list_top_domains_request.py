@@ -35,15 +35,15 @@ class ListTopDomainsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
-        :param _from: **参数解释：** 起始时间（13位毫秒时间戳），需要和to同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: **参数解释：** 结束时间（13位毫秒时间戳），需要和from同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param top: **参数解释：** 查询受攻击次数排名在前几的结果 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 5
+        :param top: **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
         :type top: int
-        :param hosts: **参数解释：** 域名ID，查询的域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type hosts: list[str]
         """
         
@@ -69,7 +69,7 @@ class ListTopDomainsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListTopDomainsRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this ListTopDomainsRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ListTopDomainsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListTopDomainsRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopDomainsRequest.
         :type enterprise_project_id: str
@@ -91,7 +91,7 @@ class ListTopDomainsRequest:
     def _from(self):
         r"""Gets the _from of this ListTopDomainsRequest.
 
-        **参数解释：** 起始时间（13位毫秒时间戳），需要和to同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListTopDomainsRequest.
         :rtype: int
@@ -102,7 +102,7 @@ class ListTopDomainsRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListTopDomainsRequest.
 
-        **参数解释：** 起始时间（13位毫秒时间戳），需要和to同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListTopDomainsRequest.
         :type _from: int
@@ -113,7 +113,7 @@ class ListTopDomainsRequest:
     def to(self):
         r"""Gets the to of this ListTopDomainsRequest.
 
-        **参数解释：** 结束时间（13位毫秒时间戳），需要和from同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListTopDomainsRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListTopDomainsRequest:
     def to(self, to):
         r"""Sets the to of this ListTopDomainsRequest.
 
-        **参数解释：** 结束时间（13位毫秒时间戳），需要和from同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListTopDomainsRequest.
         :type to: int
@@ -135,7 +135,7 @@ class ListTopDomainsRequest:
     def top(self):
         r"""Gets the top of this ListTopDomainsRequest.
 
-        **参数解释：** 查询受攻击次数排名在前几的结果 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 5
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :return: The top of this ListTopDomainsRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ListTopDomainsRequest:
     def top(self, top):
         r"""Sets the top of this ListTopDomainsRequest.
 
-        **参数解释：** 查询受攻击次数排名在前几的结果 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 5
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :param top: The top of this ListTopDomainsRequest.
         :type top: int
@@ -157,7 +157,7 @@ class ListTopDomainsRequest:
     def hosts(self):
         r"""Gets the hosts of this ListTopDomainsRequest.
 
-        **参数解释：** 域名ID，查询的域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListTopDomainsRequest.
         :rtype: list[str]
@@ -168,7 +168,7 @@ class ListTopDomainsRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListTopDomainsRequest.
 
-        **参数解释：** 域名ID，查询的域名列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListTopDomainsRequest.
         :type hosts: list[str]

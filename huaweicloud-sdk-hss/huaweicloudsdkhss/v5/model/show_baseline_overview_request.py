@@ -16,15 +16,17 @@ class ShowBaselineOverviewRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'group_id': 'str'
+        'group_id': 'str',
+        'statistics_type': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'statistics_type': 'statistics_type'
     }
 
-    def __init__(self, enterprise_project_id=None, group_id=None):
+    def __init__(self, enterprise_project_id=None, group_id=None, statistics_type=None):
         r"""ShowBaselineOverviewRequest
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class ShowBaselineOverviewRequest:
         :type enterprise_project_id: str
         :param group_id: **参数解释**: 策略组ID。当传此字段时，返回当前策略组ID下的数据。当不传此字段时，返回当前企业项目下所有数据。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type group_id: str
+        :param statistics_type: **参数解释** 统计类型，不同的查询类型返回不同的统计数据，为空表示返回所有数据 **约束限制** 不涉及 **取值范围** - weakpwd: 查询主机弱口令检测统计数据 - baseline_passrate: 查询基线检查通过率、主机配置基线通过率、基线风险统计、未通过检查项/已检查项 - host_risk_top_5: 查询主机配置风险TO5 - host_num: 未通过主机/主机总数  **默认取值** 不涉及
+        :type statistics_type: str
         """
         
         
 
         self._enterprise_project_id = None
         self._group_id = None
+        self._statistics_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if group_id is not None:
             self.group_id = group_id
+        if statistics_type is not None:
+            self.statistics_type = statistics_type
 
     @property
     def enterprise_project_id(self):
@@ -89,6 +96,28 @@ class ShowBaselineOverviewRequest:
         :type group_id: str
         """
         self._group_id = group_id
+
+    @property
+    def statistics_type(self):
+        r"""Gets the statistics_type of this ShowBaselineOverviewRequest.
+
+        **参数解释** 统计类型，不同的查询类型返回不同的统计数据，为空表示返回所有数据 **约束限制** 不涉及 **取值范围** - weakpwd: 查询主机弱口令检测统计数据 - baseline_passrate: 查询基线检查通过率、主机配置基线通过率、基线风险统计、未通过检查项/已检查项 - host_risk_top_5: 查询主机配置风险TO5 - host_num: 未通过主机/主机总数  **默认取值** 不涉及
+
+        :return: The statistics_type of this ShowBaselineOverviewRequest.
+        :rtype: str
+        """
+        return self._statistics_type
+
+    @statistics_type.setter
+    def statistics_type(self, statistics_type):
+        r"""Sets the statistics_type of this ShowBaselineOverviewRequest.
+
+        **参数解释** 统计类型，不同的查询类型返回不同的统计数据，为空表示返回所有数据 **约束限制** 不涉及 **取值范围** - weakpwd: 查询主机弱口令检测统计数据 - baseline_passrate: 查询基线检查通过率、主机配置基线通过率、基线风险统计、未通过检查项/已检查项 - host_risk_top_5: 查询主机配置风险TO5 - host_num: 未通过主机/主机总数  **默认取值** 不涉及
+
+        :param statistics_type: The statistics_type of this ShowBaselineOverviewRequest.
+        :type statistics_type: str
+        """
+        self._statistics_type = statistics_type
 
     def to_dict(self):
         result = {}

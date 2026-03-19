@@ -31,7 +31,7 @@ class PolicyRuleIdRequestBodyPolicyRuleIds:
 
         :param policy_id: **参数解释：** 策略id，唯一标识一条防护策略.策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param rule_ids: **参数解释：** 规则id数组，包含当前防护策略下的多条规则ID.精准防护规则id，通过对应规则类型的查询防护规则列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param rule_ids: **参数解释：** 规则id数组，包含当前防护策略下的单个规则id，通过ListGeoipRule接口获取规则id **约束限制：** 单条规则ID **取值范围：** 不涉及 **默认取值：** 不涉及
         :type rule_ids: list[str]
         """
         
@@ -41,10 +41,8 @@ class PolicyRuleIdRequestBodyPolicyRuleIds:
         self._rule_ids = None
         self.discriminator = None
 
-        if policy_id is not None:
-            self.policy_id = policy_id
-        if rule_ids is not None:
-            self.rule_ids = rule_ids
+        self.policy_id = policy_id
+        self.rule_ids = rule_ids
 
     @property
     def policy_id(self):
@@ -72,7 +70,7 @@ class PolicyRuleIdRequestBodyPolicyRuleIds:
     def rule_ids(self):
         r"""Gets the rule_ids of this PolicyRuleIdRequestBodyPolicyRuleIds.
 
-        **参数解释：** 规则id数组，包含当前防护策略下的多条规则ID.精准防护规则id，通过对应规则类型的查询防护规则列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则id数组，包含当前防护策略下的单个规则id，通过ListGeoipRule接口获取规则id **约束限制：** 单条规则ID **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The rule_ids of this PolicyRuleIdRequestBodyPolicyRuleIds.
         :rtype: list[str]
@@ -83,7 +81,7 @@ class PolicyRuleIdRequestBodyPolicyRuleIds:
     def rule_ids(self, rule_ids):
         r"""Sets the rule_ids of this PolicyRuleIdRequestBodyPolicyRuleIds.
 
-        **参数解释：** 规则id数组，包含当前防护策略下的多条规则ID.精准防护规则id，通过对应规则类型的查询防护规则列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则id数组，包含当前防护策略下的单个规则id，通过ListGeoipRule接口获取规则id **约束限制：** 单条规则ID **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param rule_ids: The rule_ids of this PolicyRuleIdRequestBodyPolicyRuleIds.
         :type rule_ids: list[str]

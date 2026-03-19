@@ -18,8 +18,8 @@ class ListQpsTimelineRequest:
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
-        'hosts': 'str',
-        'instances': 'str',
+        'hosts': 'list[str]',
+        'instances': 'list[str]',
         'group_by': 'str'
     }
 
@@ -39,15 +39,15 @@ class ListQpsTimelineRequest:
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: str
-        :param instances: 要查询引擎实例id（仅独享或者ELB实例化模式涉及）
-        :type instances: str
-        :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type hosts: list[str]
+        :param instances: **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instances: list[str]
+        :param group_by: **参数解释：** 展示维度，按天展示时传\&quot;DAY\&quot; **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
         :type group_by: str
         """
         
@@ -98,7 +98,7 @@ class ListQpsTimelineRequest:
     def _from(self):
         r"""Gets the _from of this ListQpsTimelineRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListQpsTimelineRequest.
         :rtype: int
@@ -109,7 +109,7 @@ class ListQpsTimelineRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListQpsTimelineRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListQpsTimelineRequest.
         :type _from: int
@@ -120,7 +120,7 @@ class ListQpsTimelineRequest:
     def to(self):
         r"""Gets the to of this ListQpsTimelineRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListQpsTimelineRequest.
         :rtype: int
@@ -131,7 +131,7 @@ class ListQpsTimelineRequest:
     def to(self, to):
         r"""Sets the to of this ListQpsTimelineRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListQpsTimelineRequest.
         :type to: int
@@ -142,10 +142,10 @@ class ListQpsTimelineRequest:
     def hosts(self):
         r"""Gets the hosts of this ListQpsTimelineRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListQpsTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -153,10 +153,10 @@ class ListQpsTimelineRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListQpsTimelineRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListQpsTimelineRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -164,10 +164,10 @@ class ListQpsTimelineRequest:
     def instances(self):
         r"""Gets the instances of this ListQpsTimelineRequest.
 
-        要查询引擎实例id（仅独享或者ELB实例化模式涉及）
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instances of this ListQpsTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -175,10 +175,10 @@ class ListQpsTimelineRequest:
     def instances(self, instances):
         r"""Sets the instances of this ListQpsTimelineRequest.
 
-        要查询引擎实例id（仅独享或者ELB实例化模式涉及）
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instances: The instances of this ListQpsTimelineRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 
@@ -186,7 +186,7 @@ class ListQpsTimelineRequest:
     def group_by(self):
         r"""Gets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :return: The group_by of this ListQpsTimelineRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ListQpsTimelineRequest:
     def group_by(self, group_by):
         r"""Sets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
+        **参数解释：** 展示维度，按天展示时传\"DAY\" **约束限制：** 不涉及 **取值范围：** - DAY **默认取值：** 不涉及
 
         :param group_by: The group_by of this ListQpsTimelineRequest.
         :type group_by: str

@@ -18,7 +18,7 @@ class BatchCreateCcRuleRequestBody:
         'name': 'str',
         'mode': 'int',
         'conditions': 'list[CcCondition]',
-        'action': 'CreateCcRuleRequestBodyAction',
+        'action': 'BatchCreateCcRuleRequestBodyAction',
         'tag_type': 'str',
         'tag_index': 'str',
         'tag_condition': 'CcrulesListInfoTagCondition',
@@ -62,7 +62,7 @@ class BatchCreateCcRuleRequestBody:
         :param conditions: cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.CcCondition`]
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.BatchCreateCcRuleRequestBodyAction`
         :param tag_type: **参数解释：** 限速模式标识，用于指定区分单个Web访问者的判断依据 **约束限制：** 不涉及 **取值范围：**  - ip：IP限速，根据IP区分单个Web访问者  - cookie：用户限速，根据Cookie键值区分单个Web访问者  - header：用户限速，根据Header区分单个Web访问者  - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者  - policy：策略限速  - domain：域名限速  - url：url限速 **默认取值：** 不涉及
         :type tag_type: str
         :param tag_index: 用户标识，当限速模式为用户限速(cookie或header)时，需要传该参数。   - 选择cookie时，设置cookie字段名，即用户需要根据网站实际情况配置唯一可识别Web访问者的cookie中的某属性变量名。用户标识的cookie，不支持正则，必须完全匹配。例如：如果网站使用cookie中的某个字段name唯一标识用户，那么可以选取name字段来区分Web访问者。   - 选择header时，设置需要防护的自定义HTTP首部，即用户需要根据网站实际情况配置可识别Web访问者的HTTP首部。
@@ -201,7 +201,7 @@ class BatchCreateCcRuleRequestBody:
         r"""Gets the action of this BatchCreateCcRuleRequestBody.
 
         :return: The action of this BatchCreateCcRuleRequestBody.
-        :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.BatchCreateCcRuleRequestBodyAction`
         """
         return self._action
 
@@ -210,7 +210,7 @@ class BatchCreateCcRuleRequestBody:
         r"""Sets the action of this BatchCreateCcRuleRequestBody.
 
         :param action: The action of this BatchCreateCcRuleRequestBody.
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.BatchCreateCcRuleRequestBodyAction`
         """
         self._action = action
 

@@ -33,7 +33,7 @@ class CreateAntiTamperRulesRequestBody:
 
         :param hostname: 防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
         :type hostname: str
-        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :param url: 防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\&quot;\\*\&quot;号结尾代表路径前缀
         :type url: str
         :param description: 规则描述
         :type description: str
@@ -77,7 +77,7 @@ class CreateAntiTamperRulesRequestBody:
     def url(self):
         r"""Gets the url of this CreateAntiTamperRulesRequestBody.
 
-        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :return: The url of this CreateAntiTamperRulesRequestBody.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateAntiTamperRulesRequestBody:
     def url(self, url):
         r"""Sets the url of this CreateAntiTamperRulesRequestBody.
 
-        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/\\*,以\"\\*\"号结尾代表路径前缀
 
         :param url: The url of this CreateAntiTamperRulesRequestBody.
         :type url: str

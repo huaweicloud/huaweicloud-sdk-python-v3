@@ -39,7 +39,7 @@ class CircuitBreaker:
 
         The model defined in huaweicloud sdk
 
-        :param switch: 熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
+        :param switch: 熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护
         :type switch: bool
         :param dead_num: 502/504数量阈值，每30s累加的502/504数量阈值
         :type dead_num: int
@@ -85,7 +85,7 @@ class CircuitBreaker:
     def switch(self):
         r"""Gets the switch of this CircuitBreaker.
 
-        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
+        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护
 
         :return: The switch of this CircuitBreaker.
         :rtype: bool
@@ -96,7 +96,7 @@ class CircuitBreaker:
     def switch(self, switch):
         r"""Sets the switch of this CircuitBreaker.
 
-        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
+        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护
 
         :param switch: The switch of this CircuitBreaker.
         :type switch: bool

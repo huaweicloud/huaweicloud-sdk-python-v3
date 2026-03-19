@@ -23,7 +23,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
         'time_mode': 'str',
         'start': 'int',
         'terminal': 'int',
-        'policy_rule_ids': 'list[PolicyRuleIdRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateWhiteBlackIpRuleRequestBodyPolicyRuleIds]'
     }
 
     attribute_map = {
@@ -43,24 +43,24 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 黑白名单规则名称
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param addr: 黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        :param addr: **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type addr: str
         :param description: 黑白名单规则描述
         :type description: str
-        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        :param white: **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
         :type white: int
-        :param ip_group_id: 创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理-&gt;地址组管理中添加。
+        :param ip_group_id: **参数解释：** Ip地址组id，可在控制台中对象管理-&gt;地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ip_group_id: str
-        :param time_mode: 生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        :param time_mode: **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
         :type time_mode: str
         :param start: 规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
         :type start: int
         :param terminal: 规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
         :type terminal: int
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateWhiteBlackIpRuleRequestBodyPolicyRuleIds`]
         """
         
         
@@ -96,7 +96,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def name(self):
         r"""Gets the name of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单规则名称
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -107,7 +107,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def name(self, name):
         r"""Sets the name of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单规则名称
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :type name: str
@@ -118,7 +118,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def addr(self):
         r"""Gets the addr of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The addr of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -129,7 +129,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def addr(self, addr):
         r"""Sets the addr of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
+        **参数解释：** ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param addr: The addr of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :type addr: str
@@ -162,7 +162,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def white(self):
         r"""Gets the white of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
 
         :return: The white of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :rtype: int
@@ -173,7 +173,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def white(self, white):
         r"""Sets the white of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
+        **参数解释：** 防护动作 **约束限制：** 不涉及 **取值范围：**  - 0 拦截  - 1 放行   - 2 仅记录 **默认取值：** 不涉及
 
         :param white: The white of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :type white: int
@@ -184,7 +184,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def ip_group_id(self):
         r"""Gets the ip_group_id of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理->地址组管理中添加。
+        **参数解释：** Ip地址组id，可在控制台中对象管理->地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The ip_group_id of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -195,7 +195,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def ip_group_id(self, ip_group_id):
         r"""Sets the ip_group_id of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理->地址组管理中添加。
+        **参数解释：** Ip地址组id，可在控制台中对象管理->地址组管理中添加 **约束限制：** 参数“addr”和“ip_group_id”必须存在一个，同时存在时以参数“addr”为准 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param ip_group_id: The ip_group_id of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :type ip_group_id: str
@@ -206,7 +206,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def time_mode(self):
         r"""Gets the time_mode of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
 
         :return: The time_mode of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -217,7 +217,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
     def time_mode(self, time_mode):
         r"""Sets the time_mode of this BatchUpdateWhiteBlackIpRuleRequestBody.
 
-        生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
+        **参数解释：** 生效模式 **约束限制：** 不涉及 **取值范围：** - permanent 立即生效 - customize 自定义生效 **默认取值：** permanent
 
         :param time_mode: The time_mode of this BatchUpdateWhiteBlackIpRuleRequestBody.
         :type time_mode: str
@@ -275,7 +275,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_rule_ids of this BatchUpdateWhiteBlackIpRuleRequestBody.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateWhiteBlackIpRuleRequestBodyPolicyRuleIds`]
         """
         return self._policy_rule_ids
 
@@ -286,7 +286,7 @@ class BatchUpdateWhiteBlackIpRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_rule_ids: The policy_rule_ids of this BatchUpdateWhiteBlackIpRuleRequestBody.
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateWhiteBlackIpRuleRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
 

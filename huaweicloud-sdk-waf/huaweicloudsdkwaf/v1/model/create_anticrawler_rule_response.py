@@ -50,7 +50,7 @@ class CreateAnticrawlerRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.AnticrawlerCondition`]
         :param name: 规则名称
         :type name: str
-        :param type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        :param type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
         :type type: str
         :param timestamp: 创建规则时间戳
         :type timestamp: int
@@ -181,7 +181,7 @@ class CreateAnticrawlerRuleResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this CreateAnticrawlerRuleResponse.
 
-        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :return: The type of this CreateAnticrawlerRuleResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class CreateAnticrawlerRuleResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this CreateAnticrawlerRuleResponse.
 
-        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :param type: The type of this CreateAnticrawlerRuleResponse.
         :type type: str

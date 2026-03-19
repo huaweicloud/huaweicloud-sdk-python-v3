@@ -27,7 +27,7 @@ class LeakageListInfoAction:
 
         The model defined in huaweicloud sdk
 
-        :param category: 操作类型。   - “block”：过滤。   - “log”：仅记录
+        :param category: 操作类型。   - block：过滤。   - log：仅记录
         :type category: str
         """
         
@@ -42,7 +42,7 @@ class LeakageListInfoAction:
     def category(self):
         r"""Gets the category of this LeakageListInfoAction.
 
-        操作类型。   - “block”：过滤。   - “log”：仅记录
+        操作类型。   - block：过滤。   - log：仅记录
 
         :return: The category of this LeakageListInfoAction.
         :rtype: str
@@ -53,7 +53,7 @@ class LeakageListInfoAction:
     def category(self, category):
         r"""Sets the category of this LeakageListInfoAction.
 
-        操作类型。   - “block”：过滤。   - “log”：仅记录
+        操作类型。   - block：过滤。   - log：仅记录
 
         :param category: The category of this LeakageListInfoAction.
         :type category: str

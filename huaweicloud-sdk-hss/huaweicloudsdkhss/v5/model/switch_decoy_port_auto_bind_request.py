@@ -33,13 +33,13 @@ class SwitchDecoyPortAutoBindRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
+        :param enterprise_project_id: **参数解释**: 企业项目ID，（该字段已废弃） **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
         :param enable: **参数解释**: 是否启用 **约束限制**: 不涉及 **取值范围**: -true：是。 -false：否。 **默认取值**: false 
         :type enable: bool
-        :param linux_policy_id: **参数解释**: linux策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        :param linux_policy_id: **参数解释**: linux策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type linux_policy_id: str
-        :param windows_policy_id: **参数解释**: windows策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        :param windows_policy_id: **参数解释**: windows策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type windows_policy_id: str
         """
         
@@ -63,7 +63,7 @@ class SwitchDecoyPortAutoBindRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
+        **参数解释**: 企业项目ID，（该字段已废弃） **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this SwitchDecoyPortAutoBindRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class SwitchDecoyPortAutoBindRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
+        **参数解释**: 企业项目ID，（该字段已废弃） **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this SwitchDecoyPortAutoBindRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class SwitchDecoyPortAutoBindRequest:
     def linux_policy_id(self):
         r"""Gets the linux_policy_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: linux策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: linux策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The linux_policy_id of this SwitchDecoyPortAutoBindRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class SwitchDecoyPortAutoBindRequest:
     def linux_policy_id(self, linux_policy_id):
         r"""Sets the linux_policy_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: linux策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: linux策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param linux_policy_id: The linux_policy_id of this SwitchDecoyPortAutoBindRequest.
         :type linux_policy_id: str
@@ -129,7 +129,7 @@ class SwitchDecoyPortAutoBindRequest:
     def windows_policy_id(self):
         r"""Gets the windows_policy_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: windows策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: windows策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The windows_policy_id of this SwitchDecoyPortAutoBindRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class SwitchDecoyPortAutoBindRequest:
     def windows_policy_id(self, windows_policy_id):
         r"""Sets the windows_policy_id of this SwitchDecoyPortAutoBindRequest.
 
-        **参数解释**: windows策略id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**: windows策略id（该字段已废弃） **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param windows_policy_id: The windows_policy_id of this SwitchDecoyPortAutoBindRequest.
         :type windows_policy_id: str

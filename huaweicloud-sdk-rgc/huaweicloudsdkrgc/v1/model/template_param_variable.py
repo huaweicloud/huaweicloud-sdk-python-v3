@@ -21,7 +21,8 @@ class TemplateParamVariable:
         'nullable': 'bool',
         'sensitive': 'bool',
         'type': 'str',
-        'validations': 'list[TemplateParamVariableValidation]'
+        'validations': 'list[TemplateParamVariableValidation]',
+        'latest_param': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class TemplateParamVariable:
         'nullable': 'nullable',
         'sensitive': 'sensitive',
         'type': 'type',
-        'validations': 'validations'
+        'validations': 'validations',
+        'latest_param': 'latest_param'
     }
 
-    def __init__(self, default=None, name=None, description=None, nullable=None, sensitive=None, type=None, validations=None):
+    def __init__(self, default=None, name=None, description=None, nullable=None, sensitive=None, type=None, validations=None, latest_param=None):
         r"""TemplateParamVariable
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class TemplateParamVariable:
         :type type: str
         :param validations: 模板的部署参数变量的校验规则。
         :type validations: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariableValidation`]
+        :param latest_param: 最近一次的部署参数。
+        :type latest_param: str
         """
         
         
@@ -64,6 +68,7 @@ class TemplateParamVariable:
         self._sensitive = None
         self._type = None
         self._validations = None
+        self._latest_param = None
         self.discriminator = None
 
         if default is not None:
@@ -80,6 +85,8 @@ class TemplateParamVariable:
             self.type = type
         if validations is not None:
             self.validations = validations
+        if latest_param is not None:
+            self.latest_param = latest_param
 
     @property
     def default(self):
@@ -234,6 +241,28 @@ class TemplateParamVariable:
         :type validations: list[:class:`huaweicloudsdkrgc.v1.TemplateParamVariableValidation`]
         """
         self._validations = validations
+
+    @property
+    def latest_param(self):
+        r"""Gets the latest_param of this TemplateParamVariable.
+
+        最近一次的部署参数。
+
+        :return: The latest_param of this TemplateParamVariable.
+        :rtype: str
+        """
+        return self._latest_param
+
+    @latest_param.setter
+    def latest_param(self, latest_param):
+        r"""Sets the latest_param of this TemplateParamVariable.
+
+        最近一次的部署参数。
+
+        :param latest_param: The latest_param of this TemplateParamVariable.
+        :type latest_param: str
+        """
+        self._latest_param = latest_param
 
     def to_dict(self):
         result = {}

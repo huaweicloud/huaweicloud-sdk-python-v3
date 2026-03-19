@@ -47,7 +47,7 @@ class CreatePrepaidCloudWafRequestBody:
         :type is_auto_pay: bool
         :param is_auto_renew: 是否自动续订   -  true：自动续订   - false：不自动续订
         :type is_auto_renew: bool
-        :param region_id: region Id
+        :param region_id: **参数解释：** 局点ID **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
         :type region_id: str
         :param waf_product_info: 
         :type waf_product_info: :class:`huaweicloudsdkwaf.v1.WafProductInfo`
@@ -154,7 +154,7 @@ class CreatePrepaidCloudWafRequestBody:
     def region_id(self):
         r"""Gets the region_id of this CreatePrepaidCloudWafRequestBody.
 
-        region Id
+        **参数解释：** 局点ID **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The region_id of this CreatePrepaidCloudWafRequestBody.
         :rtype: str
@@ -165,7 +165,7 @@ class CreatePrepaidCloudWafRequestBody:
     def region_id(self, region_id):
         r"""Sets the region_id of this CreatePrepaidCloudWafRequestBody.
 
-        region Id
+        **参数解释：** 局点ID **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param region_id: The region_id of this CreatePrepaidCloudWafRequestBody.
         :type region_id: str

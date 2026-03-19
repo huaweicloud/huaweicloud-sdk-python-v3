@@ -1,9 +1,10 @@
 # coding: utf-8
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class BatchUpdateIpReputationRuleRequestBodyAction:
+class EnableNotificationResponse(SdkResponse):
 
     """
     Attributes:
@@ -15,53 +16,25 @@ class BatchUpdateIpReputationRuleRequestBodyAction:
     sensitive_list = []
 
     openapi_types = {
-        'category': 'str'
     }
 
     attribute_map = {
-        'category': 'category'
     }
 
-    def __init__(self, category=None):
-        r"""BatchUpdateIpReputationRuleRequestBodyAction
+    def __init__(self):
+        r"""EnableNotificationResponse
 
         The model defined in huaweicloud sdk
 
-        :param category: **参数解释：** 动作类型（如captcha表示验证码） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type category: str
         """
         
-        
-
-        self._category = None
+        super().__init__()
         self.discriminator = None
 
-        if category is not None:
-            self.category = category
-
-    @property
-    def category(self):
-        r"""Gets the category of this BatchUpdateIpReputationRuleRequestBodyAction.
-
-        **参数解释：** 动作类型（如captcha表示验证码） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :return: The category of this BatchUpdateIpReputationRuleRequestBodyAction.
-        :rtype: str
-        """
-        return self._category
-
-    @category.setter
-    def category(self, category):
-        r"""Sets the category of this BatchUpdateIpReputationRuleRequestBodyAction.
-
-        **参数解释：** 动作类型（如captcha表示验证码） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :param category: The category of this BatchUpdateIpReputationRuleRequestBodyAction.
-        :type category: str
-        """
-        self._category = category
-
     def to_dict(self):
+        import warnings
+        warnings.warn("EnableNotificationResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
         for attr, _ in self.openapi_types.items():
@@ -98,7 +71,7 @@ class BatchUpdateIpReputationRuleRequestBodyAction:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchUpdateIpReputationRuleRequestBodyAction):
+        if not isinstance(other, EnableNotificationResponse):
             return False
 
         return self.__dict__ == other.__dict__

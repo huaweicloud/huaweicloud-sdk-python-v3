@@ -140,6 +140,7 @@ class WafClient(Client):
         query_params = []
         if 'policyids' in local_var_params:
             query_params.append(('policyids', local_var_params['policyids']))
+            collection_formats['policyids'] = 'multi'
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
@@ -345,10 +346,11 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
-        if 'policyids' in local_var_params:
-            query_params.append(('policyids', local_var_params['policyids']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'policyids' in local_var_params:
+            query_params.append(('policyids', local_var_params['policyids']))
+            collection_formats['policyids'] = 'multi'
 
         header_params = {}
 
@@ -1027,6 +1029,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1092,6 +1096,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1157,6 +1163,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1222,6 +1230,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1287,6 +1297,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1547,6 +1559,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1946,6 +1960,8 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'lang' in local_var_params:
             query_params.append(('lang', local_var_params['lang']))
 
@@ -3600,7 +3616,7 @@ class WafClient(Client):
     def create_prepaid_cloud_waf(self, request):
         r"""购买包周期云模式waf
 
-        购买包周期云模式waf。
+        购买包周期云模式waf
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5538,6 +5554,7 @@ class WafClient(Client):
         query_params = []
         if 'policyids' in local_var_params:
             query_params.append(('policyids', local_var_params['policyids']))
+            collection_formats['policyids'] = 'multi'
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
@@ -5615,6 +5632,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
 
@@ -5759,6 +5780,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
 
         header_params = {}
 
@@ -5970,8 +5995,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
         if 'display_option' in local_var_params:
@@ -6118,6 +6145,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'status' in local_var_params:
@@ -6347,6 +6378,7 @@ class WafClient(Client):
         query_params = []
         if 'policyids' in local_var_params:
             query_params.append(('policyids', local_var_params['policyids']))
+            collection_formats['policyids'] = 'multi'
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
@@ -6424,6 +6456,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
 
         header_params = {}
 
@@ -6495,19 +6531,86 @@ class WafClient(Client):
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
             query_params.append(('to', local_var_params['to']))
+        if 'ids' in local_var_params:
+            query_params.append(('ids', local_var_params['ids']))
+            collection_formats['ids'] = 'multi'
+        if 'nids' in local_var_params:
+            query_params.append(('nids', local_var_params['nids']))
+            collection_formats['nids'] = 'multi'
         if 'attacks' in local_var_params:
             query_params.append(('attacks', local_var_params['attacks']))
             collection_formats['attacks'] = 'multi'
-        if 'hosts' in local_var_params:
-            query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'multi'
+        if 'nattacks' in local_var_params:
+            query_params.append(('nattacks', local_var_params['nattacks']))
+            collection_formats['nattacks'] = 'multi'
+        if 'rules' in local_var_params:
+            query_params.append(('rules', local_var_params['rules']))
+            collection_formats['rules'] = 'multi'
+        if 'nrules' in local_var_params:
+            query_params.append(('nrules', local_var_params['nrules']))
+            collection_formats['nrules'] = 'multi'
         if 'sips' in local_var_params:
             query_params.append(('sips', local_var_params['sips']))
             collection_formats['sips'] = 'multi'
+        if 'nsips' in local_var_params:
+            query_params.append(('nsips', local_var_params['nsips']))
+            collection_formats['nsips'] = 'multi'
+        if 'sip' in local_var_params:
+            query_params.append(('sip', local_var_params['sip']))
+        if 'urls' in local_var_params:
+            query_params.append(('urls', local_var_params['urls']))
+            collection_formats['urls'] = 'multi'
+        if 'nurls' in local_var_params:
+            query_params.append(('nurls', local_var_params['nurls']))
+            collection_formats['nurls'] = 'multi'
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+        if 'actions' in local_var_params:
+            query_params.append(('actions', local_var_params['actions']))
+            collection_formats['actions'] = 'multi'
+        if 'nactions' in local_var_params:
+            query_params.append(('nactions', local_var_params['nactions']))
+            collection_formats['nactions'] = 'multi'
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'ndomain' in local_var_params:
+            query_params.append(('ndomain', local_var_params['ndomain']))
+        if 'domains' in local_var_params:
+            query_params.append(('domains', local_var_params['domains']))
+            collection_formats['domains'] = 'multi'
+        if 'ip_countries' in local_var_params:
+            query_params.append(('ip_countries', local_var_params['ip_countries']))
+            collection_formats['ip_countries'] = 'multi'
+        if 'nip_countries' in local_var_params:
+            query_params.append(('nip_countries', local_var_params['nip_countries']))
+            collection_formats['nip_countries'] = 'multi'
+        if 'ip_regions' in local_var_params:
+            query_params.append(('ip_regions', local_var_params['ip_regions']))
+            collection_formats['ip_regions'] = 'multi'
+        if 'nip_regions' in local_var_params:
+            query_params.append(('nip_regions', local_var_params['nip_regions']))
+            collection_formats['nip_regions'] = 'multi'
+        if 'response_codes' in local_var_params:
+            query_params.append(('response_codes', local_var_params['response_codes']))
+            collection_formats['response_codes'] = 'multi'
+        if 'payload' in local_var_params:
+            query_params.append(('payload', local_var_params['payload']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
             query_params.append(('pagesize', local_var_params['pagesize']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_direction' in local_var_params:
+            query_params.append(('sort_direction', local_var_params['sort_direction']))
+        if 'query_mode' in local_var_params:
+            query_params.append(('query_mode', local_var_params['query_mode']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -6640,10 +6743,11 @@ class WafClient(Client):
         path_params = {}
 
         query_params = []
-        if 'policyids' in local_var_params:
-            query_params.append(('policyids', local_var_params['policyids']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'policyids' in local_var_params:
+            query_params.append(('policyids', local_var_params['policyids']))
+            collection_formats['policyids'] = 'multi'
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -7121,7 +7225,7 @@ class WafClient(Client):
     def _list_instance_tags_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/waf/{resourceid}/tags",
+            "resource_path": "/v1/{project_id}/waf/{resource_type}/{resourceid}/tags",
             "request_type": request.__class__.__name__,
             "response_type": "ListInstanceTagsResponse"
             }
@@ -7133,6 +7237,8 @@ class WafClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
         if 'resourceid' in local_var_params:
             path_params['resourceid'] = local_var_params['resourceid']
 
@@ -7354,6 +7460,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
 
         header_params = {}
 
@@ -7492,8 +7602,10 @@ class WafClient(Client):
             query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -7924,6 +8036,10 @@ class WafClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
 
         header_params = {}
 
@@ -7995,8 +8111,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
 
@@ -8147,10 +8265,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
-            collection_formats['instances'] = 'csv'
+            collection_formats['instances'] = 'multi'
         if 'response_source' in local_var_params:
             query_params.append(('response_source', local_var_params['response_source']))
         if 'group_by' in local_var_params:
@@ -8435,9 +8553,18 @@ class WafClient(Client):
         query_params = []
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -8509,8 +8636,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -8576,9 +8705,16 @@ class WafClient(Client):
         query_params = []
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
             collection_formats['hosts'] = 'csv'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
 
         header_params = {}
 
@@ -8654,8 +8790,10 @@ class WafClient(Client):
             query_params.append(('code', local_var_params['code']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -8729,7 +8867,7 @@ class WafClient(Client):
             query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
 
         header_params = {}
 
@@ -8803,8 +8941,10 @@ class WafClient(Client):
             query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -8878,8 +9018,10 @@ class WafClient(Client):
             query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -8953,10 +9095,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
-            collection_formats['hosts'] = 'csv'
+            collection_formats['hosts'] = 'multi'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
-            collection_formats['instances'] = 'csv'
+            collection_formats['instances'] = 'multi'
 
         header_params = {}
 
@@ -9872,6 +10014,8 @@ class WafClient(Client):
         query_params = []
 
         header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
 
         form_params = {}
 
@@ -12209,6 +12353,75 @@ class WafClient(Client):
 
         return http_info
 
+    def update_ignore_rule_hit_num(self, request):
+        r"""全局白名单(原误报屏蔽)防护规则的命中次数清零
+
+        全局白名单(原误报屏蔽)防护规则的命中次数清零
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateIgnoreRuleHitNum
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleHitNumRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleHitNumResponse`
+        """
+        http_info = self._update_ignore_rule_hit_num_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ignore_rule_hit_num_invoker(self, request):
+        http_info = self._update_ignore_rule_hit_num_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ignore_rule_hit_num_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}/recount",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIgnoreRuleHitNumResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_instance_route(self, request):
         r"""修改云模式域名路由信息
 
@@ -12805,6 +13018,8 @@ class WafClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -13008,6 +13223,8 @@ class WafClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -13424,6 +13641,8 @@ class WafClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

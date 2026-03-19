@@ -16,40 +16,32 @@ class CreateIpReputationRuleRequestBody:
 
     openapi_types = {
         'name': 'str',
-        'policyname': 'str',
         'description': 'str',
-        'status': 'int',
-        'action': 'UpdateIpReputationRuleRequestBodyAction',
+        'action': 'CreateIpReputationRuleRequestBodyAction',
         'type': 'str',
         'tags': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
-        'policyname': 'policyname',
         'description': 'description',
-        'status': 'status',
         'action': 'action',
         'type': 'type',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, policyname=None, description=None, status=None, action=None, type=None, tags=None):
+    def __init__(self, name=None, description=None, action=None, type=None, tags=None):
         r"""CreateIpReputationRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param policyname: **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 策略名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
-        :type policyname: str
         :param description: **参数解释：** 规则描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
-        :param status: **参数解释：** 规则状态（1表示开启，0表示关闭） **约束限制：** 不涉及 **取值范围：** - 0：关闭 - 1：开启  **默认取值：** 不涉及
-        :type status: int
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
-        :param type: **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
+        :param type: **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
         :type type: str
         :param tags: **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
@@ -58,21 +50,15 @@ class CreateIpReputationRuleRequestBody:
         
 
         self._name = None
-        self._policyname = None
         self._description = None
-        self._status = None
         self._action = None
         self._type = None
         self._tags = None
         self.discriminator = None
 
         self.name = name
-        if policyname is not None:
-            self.policyname = policyname
         if description is not None:
             self.description = description
-        if status is not None:
-            self.status = status
         self.action = action
         self.type = type
         self.tags = tags
@@ -81,7 +67,7 @@ class CreateIpReputationRuleRequestBody:
     def name(self):
         r"""Gets the name of this CreateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this CreateIpReputationRuleRequestBody.
         :rtype: str
@@ -92,34 +78,12 @@ class CreateIpReputationRuleRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this CreateIpReputationRuleRequestBody.
         :type name: str
         """
         self._name = name
-
-    @property
-    def policyname(self):
-        r"""Gets the policyname of this CreateIpReputationRuleRequestBody.
-
-        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 策略名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
-
-        :return: The policyname of this CreateIpReputationRuleRequestBody.
-        :rtype: str
-        """
-        return self._policyname
-
-    @policyname.setter
-    def policyname(self, policyname):
-        r"""Sets the policyname of this CreateIpReputationRuleRequestBody.
-
-        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 策略名称只能由字母、数字、-、_和.组成，长度不能超过64个字符 **默认取值：** 不涉及
-
-        :param policyname: The policyname of this CreateIpReputationRuleRequestBody.
-        :type policyname: str
-        """
-        self._policyname = policyname
 
     @property
     def description(self):
@@ -144,33 +108,11 @@ class CreateIpReputationRuleRequestBody:
         self._description = description
 
     @property
-    def status(self):
-        r"""Gets the status of this CreateIpReputationRuleRequestBody.
-
-        **参数解释：** 规则状态（1表示开启，0表示关闭） **约束限制：** 不涉及 **取值范围：** - 0：关闭 - 1：开启  **默认取值：** 不涉及
-
-        :return: The status of this CreateIpReputationRuleRequestBody.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this CreateIpReputationRuleRequestBody.
-
-        **参数解释：** 规则状态（1表示开启，0表示关闭） **约束限制：** 不涉及 **取值范围：** - 0：关闭 - 1：开启  **默认取值：** 不涉及
-
-        :param status: The status of this CreateIpReputationRuleRequestBody.
-        :type status: int
-        """
-        self._status = status
-
-    @property
     def action(self):
         r"""Gets the action of this CreateIpReputationRuleRequestBody.
 
         :return: The action of this CreateIpReputationRuleRequestBody.
-        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         return self._action
 
@@ -179,7 +121,7 @@ class CreateIpReputationRuleRequestBody:
         r"""Sets the action of this CreateIpReputationRuleRequestBody.
 
         :param action: The action of this CreateIpReputationRuleRequestBody.
-        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIpReputationRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         self._action = action
 
@@ -187,7 +129,7 @@ class CreateIpReputationRuleRequestBody:
     def type(self):
         r"""Gets the type of this CreateIpReputationRuleRequestBody.
 
-        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :return: The type of this CreateIpReputationRuleRequestBody.
         :rtype: str
@@ -198,7 +140,7 @@ class CreateIpReputationRuleRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateIpReputationRuleRequestBody.
 
-        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc   **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :param type: The type of this CreateIpReputationRuleRequestBody.
         :type type: str

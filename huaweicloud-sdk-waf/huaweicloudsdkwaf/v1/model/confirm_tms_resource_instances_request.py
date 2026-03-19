@@ -29,7 +29,7 @@ class ConfirmTmsResourceInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        :param resource_type: **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** - waf - waf-instance **默认取值：** 不涉及
         :type resource_type: str
         :param body: Body of the ConfirmTmsResourceInstancesRequest
         :type body: :class:`huaweicloudsdkwaf.v1.TmsResourceInstancesRequest`
@@ -49,7 +49,7 @@ class ConfirmTmsResourceInstancesRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ConfirmTmsResourceInstancesRequest.
 
-        **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** - waf - waf-instance **默认取值：** 不涉及
 
         :return: The resource_type of this ConfirmTmsResourceInstancesRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ConfirmTmsResourceInstancesRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ConfirmTmsResourceInstancesRequest.
 
-        **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        **参数解释：** 资源类型，目前支持waf-instance，waf **约束限制：** 不涉及 **取值范围：** - waf - waf-instance **默认取值：** 不涉及
 
         :param resource_type: The resource_type of this ConfirmTmsResourceInstancesRequest.
         :type resource_type: str

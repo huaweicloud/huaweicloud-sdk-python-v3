@@ -53,7 +53,7 @@ class ListJobInstancesRequest:
         :type min_plan_time: int
         :param max_plan_time: 返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
         :type max_plan_time: int
-        :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
         :type status: str
         :param precise_query: 支持通过作业名进行精确查询。
         :type precise_query: bool
@@ -209,7 +209,7 @@ class ListJobInstancesRequest:
     def status(self):
         r"""Gets the status of this ListJobInstancesRequest.
 
-        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
         :return: The status of this ListJobInstancesRequest.
         :rtype: str
@@ -220,7 +220,7 @@ class ListJobInstancesRequest:
     def status(self, status):
         r"""Sets the status of this ListJobInstancesRequest.
 
-        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
+        实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
         :param status: The status of this ListJobInstancesRequest.
         :type status: str

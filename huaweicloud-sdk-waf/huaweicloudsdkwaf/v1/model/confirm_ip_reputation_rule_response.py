@@ -24,7 +24,7 @@ class ConfirmIpReputationRuleResponse(SdkResponse):
         'status': 'int',
         'type': 'str',
         'tags': 'list[str]',
-        'action': 'CreateIpReputationRuleResponseBodyAction'
+        'action': 'UpdateIdcIpRuleResponseBodyAction'
     }
 
     attribute_map = {
@@ -61,7 +61,7 @@ class ConfirmIpReputationRuleResponse(SdkResponse):
         :param tags: **参数解释：** 规则关联的标签列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         """
         
         super().__init__()
@@ -277,7 +277,7 @@ class ConfirmIpReputationRuleResponse(SdkResponse):
         r"""Gets the action of this ConfirmIpReputationRuleResponse.
 
         :return: The action of this ConfirmIpReputationRuleResponse.
-        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         """
         return self._action
 
@@ -286,7 +286,7 @@ class ConfirmIpReputationRuleResponse(SdkResponse):
         r"""Sets the action of this ConfirmIpReputationRuleResponse.
 
         :param action: The action of this ConfirmIpReputationRuleResponse.
-        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleResponseBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.UpdateIdcIpRuleResponseBodyAction`
         """
         self._action = action
 

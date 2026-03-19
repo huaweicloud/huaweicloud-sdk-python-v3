@@ -30,9 +30,9 @@ class ListTopDomainsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: CountItem的总数量
+        :param total: TopDomainsCountItem的总数量
         :type total: int
-        :param items: CountItem详细信息
+        :param items: TopDomainsCountItem的详细信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.TopDomainsCountItem`]
         """
         
@@ -51,7 +51,7 @@ class ListTopDomainsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTopDomainsResponse.
 
-        CountItem的总数量
+        TopDomainsCountItem的总数量
 
         :return: The total of this ListTopDomainsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListTopDomainsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTopDomainsResponse.
 
-        CountItem的总数量
+        TopDomainsCountItem的总数量
 
         :param total: The total of this ListTopDomainsResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListTopDomainsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListTopDomainsResponse.
 
-        CountItem详细信息
+        TopDomainsCountItem的详细信息
 
         :return: The items of this ListTopDomainsResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TopDomainsCountItem`]
@@ -84,7 +84,7 @@ class ListTopDomainsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListTopDomainsResponse.
 
-        CountItem详细信息
+        TopDomainsCountItem的详细信息
 
         :param items: The items of this ListTopDomainsResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.TopDomainsCountItem`]

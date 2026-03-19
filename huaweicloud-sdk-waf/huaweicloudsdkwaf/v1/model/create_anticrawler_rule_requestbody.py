@@ -33,13 +33,13 @@ class CreateAnticrawlerRuleRequestbody:
 
         The model defined in huaweicloud sdk
 
-        :param conditions: 匹配条件列表
+        :param conditions: 匹配条件列表，最多30个
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.AnticrawlerCondition`]
-        :param name: 规则名称
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        :param type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 创建后不支持修改 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
         :type type: str
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        :param priority: **参数解释：** 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
         :type priority: int
         """
         
@@ -60,7 +60,7 @@ class CreateAnticrawlerRuleRequestbody:
     def conditions(self):
         r"""Gets the conditions of this CreateAnticrawlerRuleRequestbody.
 
-        匹配条件列表
+        匹配条件列表，最多30个
 
         :return: The conditions of this CreateAnticrawlerRuleRequestbody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.AnticrawlerCondition`]
@@ -71,7 +71,7 @@ class CreateAnticrawlerRuleRequestbody:
     def conditions(self, conditions):
         r"""Sets the conditions of this CreateAnticrawlerRuleRequestbody.
 
-        匹配条件列表
+        匹配条件列表，最多30个
 
         :param conditions: The conditions of this CreateAnticrawlerRuleRequestbody.
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.AnticrawlerCondition`]
@@ -82,7 +82,7 @@ class CreateAnticrawlerRuleRequestbody:
     def name(self):
         r"""Gets the name of this CreateAnticrawlerRuleRequestbody.
 
-        规则名称
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this CreateAnticrawlerRuleRequestbody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateAnticrawlerRuleRequestbody:
     def name(self, name):
         r"""Sets the name of this CreateAnticrawlerRuleRequestbody.
 
-        规则名称
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this CreateAnticrawlerRuleRequestbody.
         :type name: str
@@ -104,7 +104,7 @@ class CreateAnticrawlerRuleRequestbody:
     def type(self):
         r"""Gets the type of this CreateAnticrawlerRuleRequestbody.
 
-        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 创建后不支持修改 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :return: The type of this CreateAnticrawlerRuleRequestbody.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateAnticrawlerRuleRequestbody:
     def type(self, type):
         r"""Sets the type of this CreateAnticrawlerRuleRequestbody.
 
-        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 创建后不支持修改 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :param type: The type of this CreateAnticrawlerRuleRequestbody.
         :type type: str
@@ -126,7 +126,7 @@ class CreateAnticrawlerRuleRequestbody:
     def priority(self):
         r"""Gets the priority of this CreateAnticrawlerRuleRequestbody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        **参数解释：** 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :return: The priority of this CreateAnticrawlerRuleRequestbody.
         :rtype: int
@@ -137,7 +137,7 @@ class CreateAnticrawlerRuleRequestbody:
     def priority(self, priority):
         r"""Sets the priority of this CreateAnticrawlerRuleRequestbody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        **参数解释：** 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :param priority: The priority of this CreateAnticrawlerRuleRequestbody.
         :type priority: int

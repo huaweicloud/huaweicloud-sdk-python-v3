@@ -22,6 +22,7 @@ class ListAntivirusHandleHistoryRequest:
         'malware_name': 'str',
         'file_path': 'str',
         'severity_list': 'list[str]',
+        'severities': 'str',
         'host_name': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
@@ -41,6 +42,7 @@ class ListAntivirusHandleHistoryRequest:
         'malware_name': 'malware_name',
         'file_path': 'file_path',
         'severity_list': 'severity_list',
+        'severities': 'severities',
         'host_name': 'host_name',
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
@@ -52,7 +54,7 @@ class ListAntivirusHandleHistoryRequest:
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, sort_dir=None, event_type=None, sort_key=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, severities=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, sort_dir=None, event_type=None, sort_key=None):
         r"""ListAntivirusHandleHistoryRequest
 
         The model defined in huaweicloud sdk
@@ -69,8 +71,10 @@ class ListAntivirusHandleHistoryRequest:
         :type malware_name: str
         :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
         :type file_path: str
-        :param severity_list: **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
         :type severity_list: list[str]
+        :param severities: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        :type severities: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
@@ -100,6 +104,7 @@ class ListAntivirusHandleHistoryRequest:
         self._malware_name = None
         self._file_path = None
         self._severity_list = None
+        self._severities = None
         self._host_name = None
         self._private_ip = None
         self._public_ip = None
@@ -123,6 +128,8 @@ class ListAntivirusHandleHistoryRequest:
             self.file_path = file_path
         if severity_list is not None:
             self.severity_list = severity_list
+        if severities is not None:
+            self.severities = severities
         if host_name is not None:
             self.host_name = host_name
         if private_ip is not None:
@@ -278,7 +285,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :return: The severity_list of this ListAntivirusHandleHistoryRequest.
         :rtype: list[str]
@@ -289,12 +296,34 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ListAntivirusHandleHistoryRequest.
         :type severity_list: list[str]
         """
         self._severity_list = severity_list
+
+    @property
+    def severities(self):
+        r"""Gets the severities of this ListAntivirusHandleHistoryRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :return: The severities of this ListAntivirusHandleHistoryRequest.
+        :rtype: str
+        """
+        return self._severities
+
+    @severities.setter
+    def severities(self, severities):
+        r"""Sets the severities of this ListAntivirusHandleHistoryRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :param severities: The severities of this ListAntivirusHandleHistoryRequest.
+        :type severities: str
+        """
+        self._severities = severities
 
     @property
     def host_name(self):

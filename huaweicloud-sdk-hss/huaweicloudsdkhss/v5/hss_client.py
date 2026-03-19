@@ -7954,12 +7954,12 @@ class HssClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-        if 'host_id' in local_var_params:
-            query_params.append(('host_id', local_var_params['host_id']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -15538,6 +15538,8 @@ class HssClient(Client):
         if 'severity_list' in local_var_params:
             query_params.append(('severity_list', local_var_params['severity_list']))
             collection_formats['severity_list'] = 'csv'
+        if 'severities' in local_var_params:
+            query_params.append(('severities', local_var_params['severities']))
         if 'asset_value' in local_var_params:
             query_params.append(('asset_value', local_var_params['asset_value']))
         if 'malware_name' in local_var_params:
@@ -15942,6 +15944,8 @@ class HssClient(Client):
         if 'severity_list' in local_var_params:
             query_params.append(('severity_list', local_var_params['severity_list']))
             collection_formats['severity_list'] = 'csv'
+        if 'severities' in local_var_params:
+            query_params.append(('severities', local_var_params['severities']))
         if 'asset_value' in local_var_params:
             query_params.append(('asset_value', local_var_params['asset_value']))
         if 'malware_name' in local_var_params:
@@ -15954,6 +15958,12 @@ class HssClient(Client):
             query_params.append(('task_name', local_var_params['task_name']))
         if 'manual_isolate' in local_var_params:
             query_params.append(('manual_isolate', local_var_params['manual_isolate']))
+        if 'id_list' in local_var_params:
+            query_params.append(('id_list', local_var_params['id_list']))
+            collection_formats['id_list'] = 'csv'
+        if 'file_hash_list' in local_var_params:
+            query_params.append(('file_hash_list', local_var_params['file_hash_list']))
+            collection_formats['file_hash_list'] = 'csv'
 
         header_params = {}
 
@@ -17747,9 +17757,9 @@ class HssClient(Client):
         return http_info
 
     def list_security_check_policy_group(self, request):
-        r"""查询配置检测策略组列表10
+        r"""查询配置检测策略组列表
 
-        查询配置检测策略组列表10。
+        查询配置检测策略组列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18070,6 +18080,8 @@ class HssClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'group_id' in local_var_params:
             query_params.append(('group_id', local_var_params['group_id']))
+        if 'statistics_type' in local_var_params:
+            query_params.append(('statistics_type', local_var_params['statistics_type']))
 
         header_params = {}
 
@@ -22567,9 +22579,9 @@ class HssClient(Client):
         return http_info
 
     def create_vpc_endpoint(self, request):
-        r"""创建VPC终端节点的创建
+        r"""创建VPC终端节点
 
-        创建VPC终端节点的创建。
+        创建VPC终端节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -22904,6 +22916,14 @@ class HssClient(Client):
             query_params.append(('group_name', local_var_params['group_name']))
         if 'vpc_id' in local_var_params:
             query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'host_name_list' in local_var_params:
+            query_params.append(('host_name_list', local_var_params['host_name_list']))
+        if 'host_id_list' in local_var_params:
+            query_params.append(('host_id_list', local_var_params['host_id_list']))
+        if 'public_ip_list' in local_var_params:
+            query_params.append(('public_ip_list', local_var_params['public_ip_list']))
+        if 'private_ip_list' in local_var_params:
+            query_params.append(('private_ip_list', local_var_params['private_ip_list']))
         if 'has_intrusion' in local_var_params:
             query_params.append(('has_intrusion', local_var_params['has_intrusion']))
         if 'has_vul' in local_var_params:
@@ -25836,7 +25856,7 @@ class HssClient(Client):
     def list_image_local(self, request):
         r"""本地镜像列表查询
 
-        本地镜像列表查询。
+        本地镜像列表查询
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -25871,14 +25891,14 @@ class HssClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'image_name' in local_var_params:
-            query_params.append(('image_name', local_var_params['image_name']))
-        if 'image_version' in local_var_params:
-            query_params.append(('image_version', local_var_params['image_version']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'image_version' in local_var_params:
+            query_params.append(('image_version', local_var_params['image_version']))
         if 'scan_status' in local_var_params:
             query_params.append(('scan_status', local_var_params['scan_status']))
         if 'local_image_type' in local_var_params:
@@ -32489,6 +32509,8 @@ class HssClient(Client):
         if 'severity_list' in local_var_params:
             query_params.append(('severity_list', local_var_params['severity_list']))
             collection_formats['severity_list'] = 'csv'
+        if 'severities' in local_var_params:
+            query_params.append(('severities', local_var_params['severities']))
         if 'host_name' in local_var_params:
             query_params.append(('host_name', local_var_params['host_name']))
         if 'private_ip' in local_var_params:
@@ -33271,9 +33293,9 @@ class HssClient(Client):
         return http_info
 
     def list_serverless_asset(self, request):
-        r"""查询Serverless资产列表
+        r"""查询Serverless资产列表--接口已废弃
 
-        查询Serverless资产列表。
+        查询Serverless资产列表--接口已废弃
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -33342,9 +33364,9 @@ class HssClient(Client):
         return http_info
 
     def list_serverless_asset_detail(self, request):
-        r"""查询Serverless资产详细信息
+        r"""查询Serverless资产详细信息--接口已废弃
 
-        查询Serverless资产详细信息。
+        查询Serverless资产详细信息--接口已废弃
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -36696,6 +36718,8 @@ class HssClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'cluster_id' in local_var_params:
             query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'host_id_list' in local_var_params:
+            query_params.append(('host_id_list', local_var_params['host_id_list']))
 
         header_params = {}
 
@@ -36937,6 +36961,8 @@ class HssClient(Client):
             query_params.append(('severity_level', local_var_params['severity_level']))
         if 'repair_priority' in local_var_params:
             query_params.append(('repair_priority', local_var_params['repair_priority']))
+        if 'host_id_list' in local_var_params:
+            query_params.append(('host_id_list', local_var_params['host_id_list']))
 
         header_params = {}
 

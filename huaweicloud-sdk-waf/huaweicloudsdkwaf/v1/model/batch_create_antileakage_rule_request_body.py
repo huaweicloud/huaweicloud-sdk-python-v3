@@ -47,7 +47,7 @@ class BatchCreateAntileakageRuleRequestBody:
         :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         :param description: 规则描述
         :type description: str
-        :param policy_ids: 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开
+        :param policy_ids: **参数解释：** 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_ids: list[str]
         """
         
@@ -180,7 +180,7 @@ class BatchCreateAntileakageRuleRequestBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this BatchCreateAntileakageRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_ids of this BatchCreateAntileakageRuleRequestBody.
         :rtype: list[str]
@@ -191,7 +191,7 @@ class BatchCreateAntileakageRuleRequestBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this BatchCreateAntileakageRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_ids: The policy_ids of this BatchCreateAntileakageRuleRequestBody.
         :type policy_ids: list[str]

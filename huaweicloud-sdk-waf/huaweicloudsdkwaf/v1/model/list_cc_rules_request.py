@@ -19,6 +19,8 @@ class ListCcRulesRequest:
         'policy_id': 'str',
         'offset': 'int',
         'limit': 'int',
+        'page': 'int',
+        'pagesize': 'int',
         'name': 'str',
         'status': 'int',
         'category': 'str',
@@ -30,25 +32,31 @@ class ListCcRulesRequest:
         'policy_id': 'policy_id',
         'offset': 'offset',
         'limit': 'limit',
+        'page': 'page',
+        'pagesize': 'pagesize',
         'name': 'name',
         'status': 'status',
         'category': 'category',
         'tag_type': 'tag_type'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, name=None, status=None, category=None, tag_type=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, page=None, pagesize=None, name=None, status=None, category=None, tag_type=None):
         r"""ListCcRulesRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param policy_id: 策略id（策略id从查询防护策略列表接口获取）
+        :param policy_id: **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param offset: 偏移量，表示查询该偏移量之后的记录。
+        :param offset: **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
         :type offset: int
-        :param limit: 查询返回记录的数量限制。
+        :param limit: **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
         :type limit: int
+        :param page: **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+        :type page: int
+        :param pagesize: **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+        :type pagesize: int
         :param name: 规则名称
         :type name: str
         :param status: 规则的开启状态，1表示开启，0表示关闭
@@ -65,6 +73,8 @@ class ListCcRulesRequest:
         self._policy_id = None
         self._offset = None
         self._limit = None
+        self._page = None
+        self._pagesize = None
         self._name = None
         self._status = None
         self._category = None
@@ -74,8 +84,14 @@ class ListCcRulesRequest:
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if page is not None:
+            self.page = page
+        if pagesize is not None:
+            self.pagesize = pagesize
         if name is not None:
             self.name = name
         if status is not None:
@@ -111,7 +127,7 @@ class ListCcRulesRequest:
     def policy_id(self):
         r"""Gets the policy_id of this ListCcRulesRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_id of this ListCcRulesRequest.
         :rtype: str
@@ -122,7 +138,7 @@ class ListCcRulesRequest:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ListCcRulesRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_id: The policy_id of this ListCcRulesRequest.
         :type policy_id: str
@@ -133,7 +149,7 @@ class ListCcRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListCcRulesRequest.
 
-        偏移量，表示查询该偏移量之后的记录。
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :return: The offset of this ListCcRulesRequest.
         :rtype: int
@@ -144,7 +160,7 @@ class ListCcRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListCcRulesRequest.
 
-        偏移量，表示查询该偏移量之后的记录。
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :param offset: The offset of this ListCcRulesRequest.
         :type offset: int
@@ -155,7 +171,7 @@ class ListCcRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListCcRulesRequest.
 
-        查询返回记录的数量限制。
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :return: The limit of this ListCcRulesRequest.
         :rtype: int
@@ -166,12 +182,56 @@ class ListCcRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCcRulesRequest.
 
-        查询返回记录的数量限制。
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :param limit: The limit of this ListCcRulesRequest.
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def page(self):
+        r"""Gets the page of this ListCcRulesRequest.
+
+        **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+
+        :return: The page of this ListCcRulesRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListCcRulesRequest.
+
+        **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+
+        :param page: The page of this ListCcRulesRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def pagesize(self):
+        r"""Gets the pagesize of this ListCcRulesRequest.
+
+        **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+
+        :return: The pagesize of this ListCcRulesRequest.
+        :rtype: int
+        """
+        return self._pagesize
+
+    @pagesize.setter
+    def pagesize(self, pagesize):
+        r"""Sets the pagesize of this ListCcRulesRequest.
+
+        **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+
+        :param pagesize: The pagesize of this ListCcRulesRequest.
+        :type pagesize: int
+        """
+        self._pagesize = pagesize
 
     @property
     def name(self):

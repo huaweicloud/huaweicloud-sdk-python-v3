@@ -21,7 +21,9 @@ class ShowJobStatusResponse(SdkResponse):
         'starttime': 'str',
         'end_time': 'str',
         'last_update_time': 'str',
-        'nodes': 'list[RealTimeNodeStatus]'
+        'nodes': 'list[RealTimeNodeStatus]',
+        'create_user': 'str',
+        'last_modifiy_user': 'str'
     }
 
     attribute_map = {
@@ -30,26 +32,32 @@ class ShowJobStatusResponse(SdkResponse):
         'starttime': 'starttime',
         'end_time': 'endTime',
         'last_update_time': 'lastUpdateTime',
-        'nodes': 'nodes'
+        'nodes': 'nodes',
+        'create_user': 'createUser',
+        'last_modifiy_user': 'lastModifiyUser'
     }
 
-    def __init__(self, name=None, status=None, starttime=None, end_time=None, last_update_time=None, nodes=None):
+    def __init__(self, name=None, status=None, starttime=None, end_time=None, last_update_time=None, nodes=None, create_user=None, last_modifiy_user=None):
         r"""ShowJobStatusResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 
+        :param name: 作业名称。
         :type name: str
-        :param status: 
+        :param status: 作业状态： - STARTING：启动中 - NORMAL：正常 - EXCEPTION：异常 - STOPPING： 停止中 - STOPPED：停止 - PAUSE: 暂停 - ABNORMAL: 运行异常/失败 - DISABLE: 节点禁用 - OVERLOAD: 繁忙 - INIT: 初始化
         :type status: str
-        :param starttime: 
+        :param starttime: 开始时间。
         :type starttime: str
-        :param end_time: 
+        :param end_time: 结束时间。
         :type end_time: str
-        :param last_update_time: 状态最后更新时间
+        :param last_update_time: 状态最后更新时间。
         :type last_update_time: str
         :param nodes: 
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
+        :param create_user: 创建人。
+        :type create_user: str
+        :param last_modifiy_user: 最后修改人。
+        :type last_modifiy_user: str
         """
         
         super().__init__()
@@ -60,6 +68,8 @@ class ShowJobStatusResponse(SdkResponse):
         self._end_time = None
         self._last_update_time = None
         self._nodes = None
+        self._create_user = None
+        self._last_modifiy_user = None
         self.discriminator = None
 
         if name is not None:
@@ -74,10 +84,16 @@ class ShowJobStatusResponse(SdkResponse):
             self.last_update_time = last_update_time
         if nodes is not None:
             self.nodes = nodes
+        if create_user is not None:
+            self.create_user = create_user
+        if last_modifiy_user is not None:
+            self.last_modifiy_user = last_modifiy_user
 
     @property
     def name(self):
         r"""Gets the name of this ShowJobStatusResponse.
+
+        作业名称。
 
         :return: The name of this ShowJobStatusResponse.
         :rtype: str
@@ -88,6 +104,8 @@ class ShowJobStatusResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowJobStatusResponse.
 
+        作业名称。
+
         :param name: The name of this ShowJobStatusResponse.
         :type name: str
         """
@@ -96,6 +114,8 @@ class ShowJobStatusResponse(SdkResponse):
     @property
     def status(self):
         r"""Gets the status of this ShowJobStatusResponse.
+
+        作业状态： - STARTING：启动中 - NORMAL：正常 - EXCEPTION：异常 - STOPPING： 停止中 - STOPPED：停止 - PAUSE: 暂停 - ABNORMAL: 运行异常/失败 - DISABLE: 节点禁用 - OVERLOAD: 繁忙 - INIT: 初始化
 
         :return: The status of this ShowJobStatusResponse.
         :rtype: str
@@ -106,6 +126,8 @@ class ShowJobStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowJobStatusResponse.
 
+        作业状态： - STARTING：启动中 - NORMAL：正常 - EXCEPTION：异常 - STOPPING： 停止中 - STOPPED：停止 - PAUSE: 暂停 - ABNORMAL: 运行异常/失败 - DISABLE: 节点禁用 - OVERLOAD: 繁忙 - INIT: 初始化
+
         :param status: The status of this ShowJobStatusResponse.
         :type status: str
         """
@@ -114,6 +136,8 @@ class ShowJobStatusResponse(SdkResponse):
     @property
     def starttime(self):
         r"""Gets the starttime of this ShowJobStatusResponse.
+
+        开始时间。
 
         :return: The starttime of this ShowJobStatusResponse.
         :rtype: str
@@ -124,6 +148,8 @@ class ShowJobStatusResponse(SdkResponse):
     def starttime(self, starttime):
         r"""Sets the starttime of this ShowJobStatusResponse.
 
+        开始时间。
+
         :param starttime: The starttime of this ShowJobStatusResponse.
         :type starttime: str
         """
@@ -132,6 +158,8 @@ class ShowJobStatusResponse(SdkResponse):
     @property
     def end_time(self):
         r"""Gets the end_time of this ShowJobStatusResponse.
+
+        结束时间。
 
         :return: The end_time of this ShowJobStatusResponse.
         :rtype: str
@@ -142,6 +170,8 @@ class ShowJobStatusResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowJobStatusResponse.
 
+        结束时间。
+
         :param end_time: The end_time of this ShowJobStatusResponse.
         :type end_time: str
         """
@@ -151,7 +181,7 @@ class ShowJobStatusResponse(SdkResponse):
     def last_update_time(self):
         r"""Gets the last_update_time of this ShowJobStatusResponse.
 
-        状态最后更新时间
+        状态最后更新时间。
 
         :return: The last_update_time of this ShowJobStatusResponse.
         :rtype: str
@@ -162,7 +192,7 @@ class ShowJobStatusResponse(SdkResponse):
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this ShowJobStatusResponse.
 
-        状态最后更新时间
+        状态最后更新时间。
 
         :param last_update_time: The last_update_time of this ShowJobStatusResponse.
         :type last_update_time: str
@@ -186,6 +216,50 @@ class ShowJobStatusResponse(SdkResponse):
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
         """
         self._nodes = nodes
+
+    @property
+    def create_user(self):
+        r"""Gets the create_user of this ShowJobStatusResponse.
+
+        创建人。
+
+        :return: The create_user of this ShowJobStatusResponse.
+        :rtype: str
+        """
+        return self._create_user
+
+    @create_user.setter
+    def create_user(self, create_user):
+        r"""Sets the create_user of this ShowJobStatusResponse.
+
+        创建人。
+
+        :param create_user: The create_user of this ShowJobStatusResponse.
+        :type create_user: str
+        """
+        self._create_user = create_user
+
+    @property
+    def last_modifiy_user(self):
+        r"""Gets the last_modifiy_user of this ShowJobStatusResponse.
+
+        最后修改人。
+
+        :return: The last_modifiy_user of this ShowJobStatusResponse.
+        :rtype: str
+        """
+        return self._last_modifiy_user
+
+    @last_modifiy_user.setter
+    def last_modifiy_user(self, last_modifiy_user):
+        r"""Sets the last_modifiy_user of this ShowJobStatusResponse.
+
+        最后修改人。
+
+        :param last_modifiy_user: The last_modifiy_user of this ShowJobStatusResponse.
+        :type last_modifiy_user: str
+        """
+        self._last_modifiy_user = last_modifiy_user
 
     def to_dict(self):
         import warnings

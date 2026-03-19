@@ -22,8 +22,7 @@ class DedicatedHostType:
         'memory': 'int',
         'supported_flavors': 'list[str]',
         'category': 'str',
-        'availability_zone_offerings': 'list[DedicatedHostTypeOffering]',
-        'page_info': 'PageInfo'
+        'availability_zone_offerings': 'list[DedicatedHostTypeOffering]'
     }
 
     attribute_map = {
@@ -34,11 +33,10 @@ class DedicatedHostType:
         'memory': 'memory',
         'supported_flavors': 'supported_flavors',
         'category': 'category',
-        'availability_zone_offerings': 'availability_zone_offerings',
-        'page_info': 'page_info'
+        'availability_zone_offerings': 'availability_zone_offerings'
     }
 
-    def __init__(self, host_type=None, vcpus=None, cores=None, sockets=None, memory=None, supported_flavors=None, category=None, availability_zone_offerings=None, page_info=None):
+    def __init__(self, host_type=None, vcpus=None, cores=None, sockets=None, memory=None, supported_flavors=None, category=None, availability_zone_offerings=None):
         r"""DedicatedHostType
 
         The model defined in huaweicloud sdk
@@ -59,8 +57,6 @@ class DedicatedHostType:
         :type category: str
         :param availability_zone_offerings: 
         :type availability_zone_offerings: list[:class:`huaweicloudsdkdeh.v1.DedicatedHostTypeOffering`]
-        :param page_info: 
-        :type page_info: :class:`huaweicloudsdkdeh.v1.PageInfo`
         """
         
         
@@ -73,7 +69,6 @@ class DedicatedHostType:
         self._supported_flavors = None
         self._category = None
         self._availability_zone_offerings = None
-        self._page_info = None
         self.discriminator = None
 
         self.host_type = host_type
@@ -85,7 +80,6 @@ class DedicatedHostType:
         self.category = category
         if availability_zone_offerings is not None:
             self.availability_zone_offerings = availability_zone_offerings
-        self.page_info = page_info
 
     @property
     def host_type(self):
@@ -258,24 +252,6 @@ class DedicatedHostType:
         :type availability_zone_offerings: list[:class:`huaweicloudsdkdeh.v1.DedicatedHostTypeOffering`]
         """
         self._availability_zone_offerings = availability_zone_offerings
-
-    @property
-    def page_info(self):
-        r"""Gets the page_info of this DedicatedHostType.
-
-        :return: The page_info of this DedicatedHostType.
-        :rtype: :class:`huaweicloudsdkdeh.v1.PageInfo`
-        """
-        return self._page_info
-
-    @page_info.setter
-    def page_info(self, page_info):
-        r"""Sets the page_info of this DedicatedHostType.
-
-        :param page_info: The page_info of this DedicatedHostType.
-        :type page_info: :class:`huaweicloudsdkdeh.v1.PageInfo`
-        """
-        self._page_info = page_info
 
     def to_dict(self):
         result = {}

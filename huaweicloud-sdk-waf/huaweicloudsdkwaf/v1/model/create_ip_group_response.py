@@ -19,6 +19,7 @@ class CreateIpGroupResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'ips': 'str',
+        'ip_remarks': 'dict(str, str)',
         'size': 'int',
         'rules': 'list[RuleInfo]',
         'description': 'str',
@@ -29,13 +30,14 @@ class CreateIpGroupResponse(SdkResponse):
         'id': 'id',
         'name': 'name',
         'ips': 'ips',
+        'ip_remarks': 'ip_remarks',
         'size': 'size',
         'rules': 'rules',
         'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, ips=None, size=None, rules=None, description=None, timestamp=None):
+    def __init__(self, id=None, name=None, ips=None, ip_remarks=None, size=None, rules=None, description=None, timestamp=None):
         r"""CreateIpGroupResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class CreateIpGroupResponse(SdkResponse):
         :type name: str
         :param ips: 地址组ip（以逗号分隔的ip或ip段）
         :type ips: str
+        :param ip_remarks: ip或ip段的备注
+        :type ip_remarks: dict(str, str)
         :param size: 地址组长度
         :type size: int
         :param rules: ip地址组绑定的规则列表
@@ -61,6 +65,7 @@ class CreateIpGroupResponse(SdkResponse):
         self._id = None
         self._name = None
         self._ips = None
+        self._ip_remarks = None
         self._size = None
         self._rules = None
         self._description = None
@@ -73,6 +78,8 @@ class CreateIpGroupResponse(SdkResponse):
             self.name = name
         if ips is not None:
             self.ips = ips
+        if ip_remarks is not None:
+            self.ip_remarks = ip_remarks
         if size is not None:
             self.size = size
         if rules is not None:
@@ -147,6 +154,28 @@ class CreateIpGroupResponse(SdkResponse):
         :type ips: str
         """
         self._ips = ips
+
+    @property
+    def ip_remarks(self):
+        r"""Gets the ip_remarks of this CreateIpGroupResponse.
+
+        ip或ip段的备注
+
+        :return: The ip_remarks of this CreateIpGroupResponse.
+        :rtype: dict(str, str)
+        """
+        return self._ip_remarks
+
+    @ip_remarks.setter
+    def ip_remarks(self, ip_remarks):
+        r"""Sets the ip_remarks of this CreateIpGroupResponse.
+
+        ip或ip段的备注
+
+        :param ip_remarks: The ip_remarks of this CreateIpGroupResponse.
+        :type ip_remarks: dict(str, str)
+        """
+        self._ip_remarks = ip_remarks
 
     @property
     def size(self):

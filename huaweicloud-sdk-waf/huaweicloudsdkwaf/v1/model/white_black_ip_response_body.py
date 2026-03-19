@@ -63,7 +63,7 @@ class WhiteBlackIpResponseBody:
         :type status: int
         :param addr: Ip/Ip段
         :type addr: str
-        :param white: 防护动作：  - 0拦截  - 1放行  - 2仅记录
+        :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
         :param ip_group: 
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -274,7 +274,7 @@ class WhiteBlackIpResponseBody:
     def white(self):
         r"""Gets the white of this WhiteBlackIpResponseBody.
 
-        防护动作：  - 0拦截  - 1放行  - 2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :return: The white of this WhiteBlackIpResponseBody.
         :rtype: int
@@ -285,7 +285,7 @@ class WhiteBlackIpResponseBody:
     def white(self, white):
         r"""Sets the white of this WhiteBlackIpResponseBody.
 
-        防护动作：  - 0拦截  - 1放行  - 2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this WhiteBlackIpResponseBody.
         :type white: int

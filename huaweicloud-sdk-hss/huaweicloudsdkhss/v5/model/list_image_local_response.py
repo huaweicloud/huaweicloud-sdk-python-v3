@@ -30,9 +30,9 @@ class ListImageLocalResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 本地镜像总数
+        :param total_num: **参数解释** 符合所有筛选条件的本地镜像总记录数，用于分页计算总页数 **取值范围** 取值0-2147483647 
         :type total_num: int
-        :param data_list: 本地镜像数据列表
+        :param data_list: **参数解释** 包含查询到的本地镜像详情，每个元素对应一个本地镜像的完整信息 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合ImageLocalInfo定义，数组为空表示无匹配结果 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageLocalInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListImageLocalResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListImageLocalResponse.
 
-        本地镜像总数
+        **参数解释** 符合所有筛选条件的本地镜像总记录数，用于分页计算总页数 **取值范围** 取值0-2147483647 
 
         :return: The total_num of this ListImageLocalResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListImageLocalResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListImageLocalResponse.
 
-        本地镜像总数
+        **参数解释** 符合所有筛选条件的本地镜像总记录数，用于分页计算总页数 **取值范围** 取值0-2147483647 
 
         :param total_num: The total_num of this ListImageLocalResponse.
         :type total_num: int
@@ -73,7 +73,7 @@ class ListImageLocalResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListImageLocalResponse.
 
-        本地镜像数据列表
+        **参数解释** 包含查询到的本地镜像详情，每个元素对应一个本地镜像的完整信息 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合ImageLocalInfo定义，数组为空表示无匹配结果 
 
         :return: The data_list of this ListImageLocalResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ImageLocalInfo`]
@@ -84,7 +84,7 @@ class ListImageLocalResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListImageLocalResponse.
 
-        本地镜像数据列表
+        **参数解释** 包含查询到的本地镜像详情，每个元素对应一个本地镜像的完整信息 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合ImageLocalInfo定义，数组为空表示无匹配结果 
 
         :param data_list: The data_list of this ListImageLocalResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageLocalInfo`]

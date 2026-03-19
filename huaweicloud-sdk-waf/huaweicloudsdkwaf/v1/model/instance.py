@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListInstance:
+class Instance:
 
     """
     Attributes:
@@ -65,7 +65,7 @@ class ListInstance:
     }
 
     def __init__(self, id=None, instancename=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, server_id=None, create_time=None, instance_name=None):
-        r"""ListInstance
+        r"""Instance
 
         The model defined in huaweicloud sdk
 
@@ -188,484 +188,484 @@ class ListInstance:
 
     @property
     def id(self):
-        r"""Gets the id of this ListInstance.
+        r"""Gets the id of this Instance.
 
         独享引擎实例ID
 
-        :return: The id of this ListInstance.
+        :return: The id of this Instance.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        r"""Sets the id of this ListInstance.
+        r"""Sets the id of this Instance.
 
         独享引擎实例ID
 
-        :param id: The id of this ListInstance.
+        :param id: The id of this Instance.
         :type id: str
         """
         self._id = id
 
     @property
     def instancename(self):
-        r"""Gets the instancename of this ListInstance.
+        r"""Gets the instancename of this Instance.
 
         独享引擎实例名称
 
-        :return: The instancename of this ListInstance.
+        :return: The instancename of this Instance.
         :rtype: str
         """
         return self._instancename
 
     @instancename.setter
     def instancename(self, instancename):
-        r"""Sets the instancename of this ListInstance.
+        r"""Sets the instancename of this Instance.
 
         独享引擎实例名称
 
-        :param instancename: The instancename of this ListInstance.
+        :param instancename: The instancename of this Instance.
         :type instancename: str
         """
         self._instancename = instancename
 
     @property
     def region(self):
-        r"""Gets the region of this ListInstance.
+        r"""Gets the region of this Instance.
 
         独享引擎实例Region ID
 
-        :return: The region of this ListInstance.
+        :return: The region of this Instance.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        r"""Sets the region of this ListInstance.
+        r"""Sets the region of this Instance.
 
         独享引擎实例Region ID
 
-        :param region: The region of this ListInstance.
+        :param region: The region of this Instance.
         :type region: str
         """
         self._region = region
 
     @property
     def zone(self):
-        r"""Gets the zone of this ListInstance.
+        r"""Gets the zone of this Instance.
 
         可用区ID
 
-        :return: The zone of this ListInstance.
+        :return: The zone of this Instance.
         :rtype: str
         """
         return self._zone
 
     @zone.setter
     def zone(self, zone):
-        r"""Sets the zone of this ListInstance.
+        r"""Sets the zone of this Instance.
 
         可用区ID
 
-        :param zone: The zone of this ListInstance.
+        :param zone: The zone of this Instance.
         :type zone: str
         """
         self._zone = zone
 
     @property
     def arch(self):
-        r"""Gets the arch of this ListInstance.
+        r"""Gets the arch of this Instance.
 
         CPU架构
 
-        :return: The arch of this ListInstance.
+        :return: The arch of this Instance.
         :rtype: str
         """
         return self._arch
 
     @arch.setter
     def arch(self, arch):
-        r"""Sets the arch of this ListInstance.
+        r"""Sets the arch of this Instance.
 
         CPU架构
 
-        :param arch: The arch of this ListInstance.
+        :param arch: The arch of this Instance.
         :type arch: str
         """
         self._arch = arch
 
     @property
     def cpu_flavor(self):
-        r"""Gets the cpu_flavor of this ListInstance.
+        r"""Gets the cpu_flavor of this Instance.
 
         ECS规格
 
-        :return: The cpu_flavor of this ListInstance.
+        :return: The cpu_flavor of this Instance.
         :rtype: str
         """
         return self._cpu_flavor
 
     @cpu_flavor.setter
     def cpu_flavor(self, cpu_flavor):
-        r"""Sets the cpu_flavor of this ListInstance.
+        r"""Sets the cpu_flavor of this Instance.
 
         ECS规格
 
-        :param cpu_flavor: The cpu_flavor of this ListInstance.
+        :param cpu_flavor: The cpu_flavor of this Instance.
         :type cpu_flavor: str
         """
         self._cpu_flavor = cpu_flavor
 
     @property
     def vpc_id(self):
-        r"""Gets the vpc_id of this ListInstance.
+        r"""Gets the vpc_id of this Instance.
 
         独享引擎实例所在VPC ID
 
-        :return: The vpc_id of this ListInstance.
+        :return: The vpc_id of this Instance.
         :rtype: str
         """
         return self._vpc_id
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        r"""Sets the vpc_id of this ListInstance.
+        r"""Sets the vpc_id of this Instance.
 
         独享引擎实例所在VPC ID
 
-        :param vpc_id: The vpc_id of this ListInstance.
+        :param vpc_id: The vpc_id of this Instance.
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
     @property
     def subnet_id(self):
-        r"""Gets the subnet_id of this ListInstance.
+        r"""Gets the subnet_id of this Instance.
 
         独享引擎实例所在VPC的子网ID
 
-        :return: The subnet_id of this ListInstance.
+        :return: The subnet_id of this Instance.
         :rtype: str
         """
         return self._subnet_id
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        r"""Sets the subnet_id of this ListInstance.
+        r"""Sets the subnet_id of this Instance.
 
         独享引擎实例所在VPC的子网ID
 
-        :param subnet_id: The subnet_id of this ListInstance.
+        :param subnet_id: The subnet_id of this Instance.
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
     @property
     def service_ip(self):
-        r"""Gets the service_ip of this ListInstance.
+        r"""Gets the service_ip of this Instance.
 
         独享引擎实例的业务面IP
 
-        :return: The service_ip of this ListInstance.
+        :return: The service_ip of this Instance.
         :rtype: str
         """
         return self._service_ip
 
     @service_ip.setter
     def service_ip(self, service_ip):
-        r"""Sets the service_ip of this ListInstance.
+        r"""Sets the service_ip of this Instance.
 
         独享引擎实例的业务面IP
 
-        :param service_ip: The service_ip of this ListInstance.
+        :param service_ip: The service_ip of this Instance.
         :type service_ip: str
         """
         self._service_ip = service_ip
 
     @property
     def security_group_ids(self):
-        r"""Gets the security_group_ids of this ListInstance.
+        r"""Gets the security_group_ids of this Instance.
 
         独享引擎绑定的安全组
 
-        :return: The security_group_ids of this ListInstance.
+        :return: The security_group_ids of this Instance.
         :rtype: list[str]
         """
         return self._security_group_ids
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        r"""Sets the security_group_ids of this ListInstance.
+        r"""Sets the security_group_ids of this Instance.
 
         独享引擎绑定的安全组
 
-        :param security_group_ids: The security_group_ids of this ListInstance.
+        :param security_group_ids: The security_group_ids of this Instance.
         :type security_group_ids: list[str]
         """
         self._security_group_ids = security_group_ids
 
     @property
     def status(self):
-        r"""Gets the status of this ListInstance.
+        r"""Gets the status of this Instance.
 
         **参数解释：** 独享引擎计费状态标识，用于指示独享引擎当前的计费使用状态 **约束限制：** 不涉及 **取值范围：**  - 0：正常计费  - 1：冻结，资源和数据会保留，但租户无法再正常使用云服务  - 2：终止，资源和数据将清除 **默认取值：** 不涉及
 
-        :return: The status of this ListInstance.
+        :return: The status of this Instance.
         :rtype: int
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        r"""Sets the status of this ListInstance.
+        r"""Sets the status of this Instance.
 
         **参数解释：** 独享引擎计费状态标识，用于指示独享引擎当前的计费使用状态 **约束限制：** 不涉及 **取值范围：**  - 0：正常计费  - 1：冻结，资源和数据会保留，但租户无法再正常使用云服务  - 2：终止，资源和数据将清除 **默认取值：** 不涉及
 
-        :param status: The status of this ListInstance.
+        :param status: The status of this Instance.
         :type status: int
         """
         self._status = status
 
     @property
     def run_status(self):
-        r"""Gets the run_status of this ListInstance.
+        r"""Gets the run_status of this Instance.
 
         **参数解释：** 独享引擎运行状态标识，用于反映独享引擎当前的运行生命周期状态 **约束限制：** 不涉及 **取值范围：**  - 0：创建中  - 1：运行中  - 2：删除中  - 3：已删除  - 4：创建失败  - 5：已冻结  - 6：异常  - 7：更新中  - 8：更新失败 **默认取值：** 不涉及
 
-        :return: The run_status of this ListInstance.
+        :return: The run_status of this Instance.
         :rtype: int
         """
         return self._run_status
 
     @run_status.setter
     def run_status(self, run_status):
-        r"""Sets the run_status of this ListInstance.
+        r"""Sets the run_status of this Instance.
 
         **参数解释：** 独享引擎运行状态标识，用于反映独享引擎当前的运行生命周期状态 **约束限制：** 不涉及 **取值范围：**  - 0：创建中  - 1：运行中  - 2：删除中  - 3：已删除  - 4：创建失败  - 5：已冻结  - 6：异常  - 7：更新中  - 8：更新失败 **默认取值：** 不涉及
 
-        :param run_status: The run_status of this ListInstance.
+        :param run_status: The run_status of this Instance.
         :type run_status: int
         """
         self._run_status = run_status
 
     @property
     def access_status(self):
-        r"""Gets the access_status of this ListInstance.
+        r"""Gets the access_status of this Instance.
 
         **参数解释：** 独享引擎接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
-        :return: The access_status of this ListInstance.
+        :return: The access_status of this Instance.
         :rtype: int
         """
         return self._access_status
 
     @access_status.setter
     def access_status(self, access_status):
-        r"""Sets the access_status of this ListInstance.
+        r"""Sets the access_status of this Instance.
 
         **参数解释：** 独享引擎接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
-        :param access_status: The access_status of this ListInstance.
+        :param access_status: The access_status of this Instance.
         :type access_status: int
         """
         self._access_status = access_status
 
     @property
     def upgradable(self):
-        r"""Gets the upgradable of this ListInstance.
+        r"""Gets the upgradable of this Instance.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
-        :return: The upgradable of this ListInstance.
+        :return: The upgradable of this Instance.
         :rtype: int
         """
         return self._upgradable
 
     @upgradable.setter
     def upgradable(self, upgradable):
-        r"""Sets the upgradable of this ListInstance.
+        r"""Sets the upgradable of this Instance.
 
         独享引擎是否可升级（0：不可升级，1：可升级）
 
-        :param upgradable: The upgradable of this ListInstance.
+        :param upgradable: The upgradable of this Instance.
         :type upgradable: int
         """
         self._upgradable = upgradable
 
     @property
     def cloud_service_type(self):
-        r"""Gets the cloud_service_type of this ListInstance.
+        r"""Gets the cloud_service_type of this Instance.
 
         云服务代码。 仅作为标记，用户可忽略。
 
-        :return: The cloud_service_type of this ListInstance.
+        :return: The cloud_service_type of this Instance.
         :rtype: str
         """
         return self._cloud_service_type
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        r"""Sets the cloud_service_type of this ListInstance.
+        r"""Sets the cloud_service_type of this Instance.
 
         云服务代码。 仅作为标记，用户可忽略。
 
-        :param cloud_service_type: The cloud_service_type of this ListInstance.
+        :param cloud_service_type: The cloud_service_type of this Instance.
         :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
     @property
     def resource_type(self):
-        r"""Gets the resource_type of this ListInstance.
+        r"""Gets the resource_type of this Instance.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
-        :return: The resource_type of this ListInstance.
+        :return: The resource_type of this Instance.
         :rtype: str
         """
         return self._resource_type
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        r"""Sets the resource_type of this ListInstance.
+        r"""Sets the resource_type of this Instance.
 
         云服务资源类型，仅作为标记，用户可忽略。
 
-        :param resource_type: The resource_type of this ListInstance.
+        :param resource_type: The resource_type of this Instance.
         :type resource_type: str
         """
         self._resource_type = resource_type
 
     @property
     def resource_spec_code(self):
-        r"""Gets the resource_spec_code of this ListInstance.
+        r"""Gets the resource_spec_code of this Instance.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
-        :return: The resource_spec_code of this ListInstance.
+        :return: The resource_spec_code of this Instance.
         :rtype: str
         """
         return self._resource_spec_code
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        r"""Sets the resource_spec_code of this ListInstance.
+        r"""Sets the resource_spec_code of this Instance.
 
         云服务资源代码。仅作为标记，用户可忽略。
 
-        :param resource_spec_code: The resource_spec_code of this ListInstance.
+        :param resource_spec_code: The resource_spec_code of this Instance.
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 
     @property
     def specification(self):
-        r"""Gets the specification of this ListInstance.
+        r"""Gets the specification of this Instance.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
-        :return: The specification of this ListInstance.
+        :return: The specification of this Instance.
         :rtype: str
         """
         return self._specification
 
     @specification.setter
     def specification(self, specification):
-        r"""Sets the specification of this ListInstance.
+        r"""Sets the specification of this Instance.
 
         独享引擎ECS规格，如\"8vCPUs | 16GB\"
 
-        :param specification: The specification of this ListInstance.
+        :param specification: The specification of this Instance.
         :type specification: str
         """
         self._specification = specification
 
     @property
     def hosts(self):
-        r"""Gets the hosts of this ListInstance.
+        r"""Gets the hosts of this Instance.
 
         独享引擎防护的域名
 
-        :return: The hosts of this ListInstance.
+        :return: The hosts of this Instance.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.IdHostnameEntry`]
         """
         return self._hosts
 
     @hosts.setter
     def hosts(self, hosts):
-        r"""Sets the hosts of this ListInstance.
+        r"""Sets the hosts of this Instance.
 
         独享引擎防护的域名
 
-        :param hosts: The hosts of this ListInstance.
+        :param hosts: The hosts of this Instance.
         :type hosts: list[:class:`huaweicloudsdkwaf.v1.IdHostnameEntry`]
         """
         self._hosts = hosts
 
     @property
     def server_id(self):
-        r"""Gets the server_id of this ListInstance.
+        r"""Gets the server_id of this Instance.
 
         独享引擎ECS ID
 
-        :return: The server_id of this ListInstance.
+        :return: The server_id of this Instance.
         :rtype: str
         """
         return self._server_id
 
     @server_id.setter
     def server_id(self, server_id):
-        r"""Sets the server_id of this ListInstance.
+        r"""Sets the server_id of this Instance.
 
         独享引擎ECS ID
 
-        :param server_id: The server_id of this ListInstance.
+        :param server_id: The server_id of this Instance.
         :type server_id: str
         """
         self._server_id = server_id
 
     @property
     def create_time(self):
-        r"""Gets the create_time of this ListInstance.
+        r"""Gets the create_time of this Instance.
 
         引擎实例创建时间
 
-        :return: The create_time of this ListInstance.
+        :return: The create_time of this Instance.
         :rtype: int
         """
         return self._create_time
 
     @create_time.setter
     def create_time(self, create_time):
-        r"""Sets the create_time of this ListInstance.
+        r"""Sets the create_time of this Instance.
 
         引擎实例创建时间
 
-        :param create_time: The create_time of this ListInstance.
+        :param create_time: The create_time of this Instance.
         :type create_time: int
         """
         self._create_time = create_time
 
     @property
     def instance_name(self):
-        r"""Gets the instance_name of this ListInstance.
+        r"""Gets the instance_name of this Instance.
 
         独享引擎实例名称
 
-        :return: The instance_name of this ListInstance.
+        :return: The instance_name of this Instance.
         :rtype: str
         """
         return self._instance_name
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        r"""Sets the instance_name of this ListInstance.
+        r"""Sets the instance_name of this Instance.
 
         独享引擎实例名称
 
-        :param instance_name: The instance_name of this ListInstance.
+        :param instance_name: The instance_name of this Instance.
         :type instance_name: str
         """
         self._instance_name = instance_name
@@ -707,7 +707,7 @@ class ListInstance:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListInstance):
+        if not isinstance(other, Instance):
             return False
 
         return self.__dict__ == other.__dict__

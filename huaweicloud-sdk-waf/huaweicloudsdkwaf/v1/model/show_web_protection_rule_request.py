@@ -16,40 +16,47 @@ class ShowWebProtectionRuleRequest:
 
     openapi_types = {
         'x_language': 'str',
+        'enterprise_project_id': 'str',
         'rule_id': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
+        'enterprise_project_id': 'enterprise_project_id',
         'rule_id': 'rule_id'
     }
 
-    def __init__(self, x_language=None, rule_id=None):
+    def __init__(self, x_language=None, enterprise_project_id=None, rule_id=None):
         r"""ShowWebProtectionRuleRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** zh-cn
+        :param x_language: **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** zh-cn
         :type x_language: str
-        :param rule_id: **参数解释：** 防护规则ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
+        :type enterprise_project_id: str
+        :param rule_id: **参数解释：** 基础防护规则id，通过查询内置规则集列表（ListWebBasicProtectionRules）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type rule_id: str
         """
         
         
 
         self._x_language = None
+        self._enterprise_project_id = None
         self._rule_id = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.rule_id = rule_id
 
     @property
     def x_language(self):
         r"""Gets the x_language of this ShowWebProtectionRuleRequest.
 
-        **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** zh-cn
+        **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** zh-cn
 
         :return: The x_language of this ShowWebProtectionRuleRequest.
         :rtype: str
@@ -60,7 +67,7 @@ class ShowWebProtectionRuleRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowWebProtectionRuleRequest.
 
-        **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** zh-cn
+        **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** zh-cn
 
         :param x_language: The x_language of this ShowWebProtectionRuleRequest.
         :type x_language: str
@@ -68,10 +75,32 @@ class ShowWebProtectionRuleRequest:
         self._x_language = x_language
 
     @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ShowWebProtectionRuleRequest.
+
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
+
+        :return: The enterprise_project_id of this ShowWebProtectionRuleRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ShowWebProtectionRuleRequest.
+
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowWebProtectionRuleRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
     def rule_id(self):
         r"""Gets the rule_id of this ShowWebProtectionRuleRequest.
 
-        **参数解释：** 防护规则ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 基础防护规则id，通过查询内置规则集列表（ListWebBasicProtectionRules）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The rule_id of this ShowWebProtectionRuleRequest.
         :rtype: str
@@ -82,7 +111,7 @@ class ShowWebProtectionRuleRequest:
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this ShowWebProtectionRuleRequest.
 
-        **参数解释：** 防护规则ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 基础防护规则id，通过查询内置规则集列表（ListWebBasicProtectionRules）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param rule_id: The rule_id of this ShowWebProtectionRuleRequest.
         :type rule_id: str

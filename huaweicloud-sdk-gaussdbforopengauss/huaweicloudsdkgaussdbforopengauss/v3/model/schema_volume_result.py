@@ -18,17 +18,17 @@ class SchemaVolumeResult:
         'schema_size': 'str',
         'table_count': 'str',
         'user_name': 'str',
-        'nsp_name': 'str'
+        'schema_name': 'str'
     }
 
     attribute_map = {
         'schema_size': 'schema_size',
         'table_count': 'table_count',
         'user_name': 'user_name',
-        'nsp_name': 'nsp_name'
+        'schema_name': 'schema_name'
     }
 
-    def __init__(self, schema_size=None, table_count=None, user_name=None, nsp_name=None):
+    def __init__(self, schema_size=None, table_count=None, user_name=None, schema_name=None):
         r"""SchemaVolumeResult
 
         The model defined in huaweicloud sdk
@@ -39,8 +39,8 @@ class SchemaVolumeResult:
         :type table_count: str
         :param user_name: **参数解释**: schema所属用户名称。 **取值范围**: 不涉及。 
         :type user_name: str
-        :param nsp_name: **参数解释**: schema名称空间的名称。 **取值范围**: 不涉及。 
-        :type nsp_name: str
+        :param schema_name: **参数解释**: schema名称空间的名称。 **取值范围**: 不涉及。 
+        :type schema_name: str
         """
         
         
@@ -48,7 +48,7 @@ class SchemaVolumeResult:
         self._schema_size = None
         self._table_count = None
         self._user_name = None
-        self._nsp_name = None
+        self._schema_name = None
         self.discriminator = None
 
         if schema_size is not None:
@@ -57,8 +57,8 @@ class SchemaVolumeResult:
             self.table_count = table_count
         if user_name is not None:
             self.user_name = user_name
-        if nsp_name is not None:
-            self.nsp_name = nsp_name
+        if schema_name is not None:
+            self.schema_name = schema_name
 
     @property
     def schema_size(self):
@@ -127,26 +127,26 @@ class SchemaVolumeResult:
         self._user_name = user_name
 
     @property
-    def nsp_name(self):
-        r"""Gets the nsp_name of this SchemaVolumeResult.
+    def schema_name(self):
+        r"""Gets the schema_name of this SchemaVolumeResult.
 
         **参数解释**: schema名称空间的名称。 **取值范围**: 不涉及。 
 
-        :return: The nsp_name of this SchemaVolumeResult.
+        :return: The schema_name of this SchemaVolumeResult.
         :rtype: str
         """
-        return self._nsp_name
+        return self._schema_name
 
-    @nsp_name.setter
-    def nsp_name(self, nsp_name):
-        r"""Sets the nsp_name of this SchemaVolumeResult.
+    @schema_name.setter
+    def schema_name(self, schema_name):
+        r"""Sets the schema_name of this SchemaVolumeResult.
 
         **参数解释**: schema名称空间的名称。 **取值范围**: 不涉及。 
 
-        :param nsp_name: The nsp_name of this SchemaVolumeResult.
-        :type nsp_name: str
+        :param schema_name: The schema_name of this SchemaVolumeResult.
+        :type schema_name: str
         """
-        self._nsp_name = nsp_name
+        self._schema_name = schema_name
 
     def to_dict(self):
         result = {}

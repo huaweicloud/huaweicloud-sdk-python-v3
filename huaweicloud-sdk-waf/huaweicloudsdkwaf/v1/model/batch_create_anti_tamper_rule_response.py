@@ -44,7 +44,7 @@ class BatchCreateAntiTamperRuleResponse(SdkResponse):
         :type policyid: str
         :param hostname: 防篡改的域名
         :type hostname: str
-        :param url: 防篡改的url，
+        :param url: 防篡改的url
         :type url: str
         :param description: 创建规则的时间戳
         :type description: str
@@ -145,7 +145,7 @@ class BatchCreateAntiTamperRuleResponse(SdkResponse):
     def url(self):
         r"""Gets the url of this BatchCreateAntiTamperRuleResponse.
 
-        防篡改的url，
+        防篡改的url
 
         :return: The url of this BatchCreateAntiTamperRuleResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class BatchCreateAntiTamperRuleResponse(SdkResponse):
     def url(self, url):
         r"""Sets the url of this BatchCreateAntiTamperRuleResponse.
 
-        防篡改的url，
+        防篡改的url
 
         :param url: The url of this BatchCreateAntiTamperRuleResponse.
         :type url: str

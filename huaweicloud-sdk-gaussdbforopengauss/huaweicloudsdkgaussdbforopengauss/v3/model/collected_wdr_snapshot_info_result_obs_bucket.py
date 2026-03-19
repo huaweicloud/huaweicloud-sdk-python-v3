@@ -18,7 +18,7 @@ class CollectedWdrSnapshotInfoResultObsBucket:
         'name': 'str',
         'type': 'str',
         'url': 'str',
-        'port': 'str',
+        'port': 'int',
         'domain_id': 'str'
     }
 
@@ -42,7 +42,7 @@ class CollectedWdrSnapshotInfoResultObsBucket:
         :param url: **参数解释**： OBS服务访问地址。 **取值范围**： 不涉及。
         :type url: str
         :param port: **参数解释**： OBS服务端口号。 **取值范围**： 不涉及。
-        :type port: str
+        :type port: int
         :param domain_id: **参数解释**： 最终租户ID。 **取值范围**： 不涉及。
         :type domain_id: str
         """
@@ -140,7 +140,7 @@ class CollectedWdrSnapshotInfoResultObsBucket:
         **参数解释**： OBS服务端口号。 **取值范围**： 不涉及。
 
         :return: The port of this CollectedWdrSnapshotInfoResultObsBucket.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -151,7 +151,7 @@ class CollectedWdrSnapshotInfoResultObsBucket:
         **参数解释**： OBS服务端口号。 **取值范围**： 不涉及。
 
         :param port: The port of this CollectedWdrSnapshotInfoResultObsBucket.
-        :type port: str
+        :type port: int
         """
         self._port = port
 

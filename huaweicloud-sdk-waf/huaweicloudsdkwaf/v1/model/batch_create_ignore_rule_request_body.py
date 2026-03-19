@@ -39,19 +39,19 @@ class BatchCreateIgnoreRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param domain: 防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以&lt;域名&gt;:&lt;id&gt;格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
+        :param domain: 防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以&lt;域名&gt;:\\&lt;id\\&gt;格式填写（如www.example.com:b061fb5b-8ea0-4357-b0f4-cb6178ab378a），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可通过ShowPremiumHost接口查询与该域名绑定的ELB实例id，在帮助中心-ELB服务-API文档下查询监听器id
         :type domain: list[str]
         :param conditions: 条件列表
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.CreateCondition`]
         :param mode: 固定值为1,代表v2版本误报屏蔽规则，v1版本仅用于兼容旧版本，不支持创建
         :type mode: int
-        :param rule: 需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护的高级设置-&gt;防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        :param rule: **参数解释：** 需要屏蔽的规则 **约束限制：** 参数值根据\&quot;不检测模块\&quot;变化 **取值范围：** 不检测模块: - 所有模块: bypass - Web基础防护模块按照规则类型划分:   - ID: 内置规则id，通过ListWebBasicProtectionRules接口获取ID，多个id以分号;分隔，比如：\&quot;000000;111111\&quot;   - 类别: 多个类型以分号;分隔，比如：\&quot;xss;webshell\&quot;     - xss：XSS攻击     - webshell：网站木马     - vuln：其他类型攻击     - sqli：SQL注入攻击     - robot：恶意爬虫     - rfi：远程文件包含     - lfi：本地文件包含     - cmdi：命令注入攻击   - 所有内置规则 - 非法请求: illegal **默认取值：** 不涉及
         :type rule: str
         :param advanced: 
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         :param description: 屏蔽规则描述
         :type description: str
-        :param policy_ids: 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开
+        :param policy_ids: **参数解释：** 添加规则的策略id列表。策略id从\&quot;查询防护策略列表\&quot;(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_ids: list[str]
         """
         
@@ -80,7 +80,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def domain(self):
         r"""Gets the domain of this BatchCreateIgnoreRuleRequestBody.
 
-        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:<id>格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
+        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:\\<id\\>格式填写（如www.example.com:b061fb5b-8ea0-4357-b0f4-cb6178ab378a），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可通过ShowPremiumHost接口查询与该域名绑定的ELB实例id，在帮助中心-ELB服务-API文档下查询监听器id
 
         :return: The domain of this BatchCreateIgnoreRuleRequestBody.
         :rtype: list[str]
@@ -91,7 +91,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def domain(self, domain):
         r"""Sets the domain of this BatchCreateIgnoreRuleRequestBody.
 
-        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:<id>格式填写（如www.example.com:id），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可在WAF控制台域名详情页查询与该域名绑定的ELB实例id，在ELB侧监听器页签下查询其监听器id
+        防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效。当防护域名的接入模式为云模式-ELB接入时，该参数需以<域名>:\\<id\\>格式填写（如www.example.com:b061fb5b-8ea0-4357-b0f4-cb6178ab378a），若域名绑定的负载均衡器（ELB）下所有监听器都接入WAF防护，填入的id为负载均衡器（ELB）id，否则填入的id为指定监听器id；可通过ShowPremiumHost接口查询与该域名绑定的ELB实例id，在帮助中心-ELB服务-API文档下查询监听器id
 
         :param domain: The domain of this BatchCreateIgnoreRuleRequestBody.
         :type domain: list[str]
@@ -146,7 +146,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def rule(self):
         r"""Gets the rule of this BatchCreateIgnoreRuleRequestBody.
 
-        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        **参数解释：** 需要屏蔽的规则 **约束限制：** 参数值根据\"不检测模块\"变化 **取值范围：** 不检测模块: - 所有模块: bypass - Web基础防护模块按照规则类型划分:   - ID: 内置规则id，通过ListWebBasicProtectionRules接口获取ID，多个id以分号;分隔，比如：\"000000;111111\"   - 类别: 多个类型以分号;分隔，比如：\"xss;webshell\"     - xss：XSS攻击     - webshell：网站木马     - vuln：其他类型攻击     - sqli：SQL注入攻击     - robot：恶意爬虫     - rfi：远程文件包含     - lfi：本地文件包含     - cmdi：命令注入攻击   - 所有内置规则 - 非法请求: illegal **默认取值：** 不涉及
 
         :return: The rule of this BatchCreateIgnoreRuleRequestBody.
         :rtype: str
@@ -157,7 +157,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def rule(self, rule):
         r"""Sets the rule of this BatchCreateIgnoreRuleRequestBody.
 
-        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        **参数解释：** 需要屏蔽的规则 **约束限制：** 参数值根据\"不检测模块\"变化 **取值范围：** 不检测模块: - 所有模块: bypass - Web基础防护模块按照规则类型划分:   - ID: 内置规则id，通过ListWebBasicProtectionRules接口获取ID，多个id以分号;分隔，比如：\"000000;111111\"   - 类别: 多个类型以分号;分隔，比如：\"xss;webshell\"     - xss：XSS攻击     - webshell：网站木马     - vuln：其他类型攻击     - sqli：SQL注入攻击     - robot：恶意爬虫     - rfi：远程文件包含     - lfi：本地文件包含     - cmdi：命令注入攻击   - 所有内置规则 - 非法请求: illegal **默认取值：** 不涉及
 
         :param rule: The rule of this BatchCreateIgnoreRuleRequestBody.
         :type rule: str
@@ -208,7 +208,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this BatchCreateIgnoreRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_ids of this BatchCreateIgnoreRuleRequestBody.
         :rtype: list[str]
@@ -219,7 +219,7 @@ class BatchCreateIgnoreRuleRequestBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this BatchCreateIgnoreRuleRequestBody.
 
-        添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开
+        **参数解释：** 添加规则的策略id列表。策略id从\"查询防护策略列表\"(ListPolicy)接口获取，多个策略之间用“,”隔开 **约束限制：** 不能为空 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_ids: The policy_ids of this BatchCreateIgnoreRuleRequestBody.
         :type policy_ids: list[str]

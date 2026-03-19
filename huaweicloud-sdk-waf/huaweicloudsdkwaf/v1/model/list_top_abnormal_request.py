@@ -20,8 +20,8 @@ class ListTopAbnormalRequest:
         'to': 'int',
         'top': 'int',
         'code': 'int',
-        'hosts': 'str',
-        'instances': 'str'
+        'hosts': 'list[str]',
+        'instances': 'list[str]'
     }
 
     attribute_map = {
@@ -41,18 +41,18 @@ class ListTopAbnormalRequest:
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param top: 要查询的前几的结果，默认值为5，最大值为10。
+        :param top: **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
         :type top: int
-        :param code: 要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
+        :param code: **参数解释：** 要查询的异常状态码 **约束限制：** 不涉及 **取值范围：** - 404 - 500 - 502 **默认取值：** 404
         :type code: int
-        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
-        :type hosts: str
-        :param instances: 要查询引擎实例id
-        :type instances: str
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type hosts: list[str]
+        :param instances: **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type instances: list[str]
         """
         
         
@@ -105,7 +105,7 @@ class ListTopAbnormalRequest:
     def _from(self):
         r"""Gets the _from of this ListTopAbnormalRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListTopAbnormalRequest.
         :rtype: int
@@ -116,7 +116,7 @@ class ListTopAbnormalRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListTopAbnormalRequest.
 
-        起始时间（13位毫秒时间戳），需要和to同时使用
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListTopAbnormalRequest.
         :type _from: int
@@ -127,7 +127,7 @@ class ListTopAbnormalRequest:
     def to(self):
         r"""Gets the to of this ListTopAbnormalRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListTopAbnormalRequest.
         :rtype: int
@@ -138,7 +138,7 @@ class ListTopAbnormalRequest:
     def to(self, to):
         r"""Sets the to of this ListTopAbnormalRequest.
 
-        结束时间（13位毫秒时间戳），需要和from同时使用
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListTopAbnormalRequest.
         :type to: int
@@ -149,7 +149,7 @@ class ListTopAbnormalRequest:
     def top(self):
         r"""Gets the top of this ListTopAbnormalRequest.
 
-        要查询的前几的结果，默认值为5，最大值为10。
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :return: The top of this ListTopAbnormalRequest.
         :rtype: int
@@ -160,7 +160,7 @@ class ListTopAbnormalRequest:
     def top(self, top):
         r"""Sets the top of this ListTopAbnormalRequest.
 
-        要查询的前几的结果，默认值为5，最大值为10。
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :param top: The top of this ListTopAbnormalRequest.
         :type top: int
@@ -171,7 +171,7 @@ class ListTopAbnormalRequest:
     def code(self):
         r"""Gets the code of this ListTopAbnormalRequest.
 
-        要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
+        **参数解释：** 要查询的异常状态码 **约束限制：** 不涉及 **取值范围：** - 404 - 500 - 502 **默认取值：** 404
 
         :return: The code of this ListTopAbnormalRequest.
         :rtype: int
@@ -182,7 +182,7 @@ class ListTopAbnormalRequest:
     def code(self, code):
         r"""Sets the code of this ListTopAbnormalRequest.
 
-        要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
+        **参数解释：** 要查询的异常状态码 **约束限制：** 不涉及 **取值范围：** - 404 - 500 - 502 **默认取值：** 404
 
         :param code: The code of this ListTopAbnormalRequest.
         :type code: int
@@ -193,10 +193,10 @@ class ListTopAbnormalRequest:
     def hosts(self):
         r"""Gets the hosts of this ListTopAbnormalRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListTopAbnormalRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -204,10 +204,10 @@ class ListTopAbnormalRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListTopAbnormalRequest.
 
-        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListTopAbnormalRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -215,10 +215,10 @@ class ListTopAbnormalRequest:
     def instances(self):
         r"""Gets the instances of this ListTopAbnormalRequest.
 
-        要查询引擎实例id
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instances of this ListTopAbnormalRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -226,10 +226,10 @@ class ListTopAbnormalRequest:
     def instances(self, instances):
         r"""Sets the instances of this ListTopAbnormalRequest.
 
-        要查询引擎实例id
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instances: The instances of this ListTopAbnormalRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 

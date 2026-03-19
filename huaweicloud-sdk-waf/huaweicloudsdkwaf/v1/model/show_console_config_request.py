@@ -15,20 +15,51 @@ class ShowConsoleConfigRequest:
     sensitive_list = []
 
     openapi_types = {
+        'region': 'str'
     }
 
     attribute_map = {
+        'region': 'region'
     }
 
-    def __init__(self):
+    def __init__(self, region=None):
         r"""ShowConsoleConfigRequest
 
         The model defined in huaweicloud sdk
 
+        :param region: **参数解释：** 局点ID，未携带时仅查询基础数据 **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type region: str
         """
         
         
+
+        self._region = None
         self.discriminator = None
+
+        if region is not None:
+            self.region = region
+
+    @property
+    def region(self):
+        r"""Gets the region of this ShowConsoleConfigRequest.
+
+        **参数解释：** 局点ID，未携带时仅查询基础数据 **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The region of this ShowConsoleConfigRequest.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this ShowConsoleConfigRequest.
+
+        **参数解释：** 局点ID，未携带时仅查询基础数据 **约束限制：** 华为云支持的局点ID **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param region: The region of this ShowConsoleConfigRequest.
+        :type region: str
+        """
+        self._region = region
 
     def to_dict(self):
         result = {}

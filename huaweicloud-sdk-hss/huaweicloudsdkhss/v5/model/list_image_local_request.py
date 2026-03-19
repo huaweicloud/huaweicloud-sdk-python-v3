@@ -16,10 +16,10 @@ class ListImageLocalRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'image_name': 'str',
-        'image_version': 'str',
         'offset': 'int',
         'limit': 'int',
+        'image_name': 'str',
+        'image_version': 'str',
         'scan_status': 'str',
         'local_image_type': 'str',
         'image_size': 'int',
@@ -41,10 +41,10 @@ class ListImageLocalRequest:
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'image_name': 'image_name',
-        'image_version': 'image_version',
         'offset': 'offset',
         'limit': 'limit',
+        'image_name': 'image_name',
+        'image_version': 'image_version',
         'scan_status': 'scan_status',
         'local_image_type': 'local_image_type',
         'image_size': 'image_size',
@@ -64,64 +64,64 @@ class ListImageLocalRequest:
         'has_container': 'has_container'
     }
 
-    def __init__(self, enterprise_project_id=None, image_name=None, image_version=None, offset=None, limit=None, scan_status=None, local_image_type=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_vul=None, host_name=None, host_id=None, host_ip=None, container_id=None, container_name=None, pod_id=None, pod_name=None, app_name=None, has_container=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, image_name=None, image_version=None, scan_status=None, local_image_type=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_vul=None, host_name=None, host_id=None, host_ip=None, container_id=None, container_name=None, pod_id=None, pod_name=None, app_name=None, has_container=None):
         r"""ListImageLocalRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param image_name: 镜像名称
-        :type image_name: str
-        :param image_version: 镜像版本
-        :type image_version: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
+        :param image_name: **参数解释** 本地镜像的名称，用于模糊筛选指定名称的本地镜像列表 **约束限制** 支持部分匹配（如传入&#39;web&#39;可匹配所有名称含&#39;web&#39;的镜像），区分大小写 **取值范围** 字符长度1-256位，支持字母、数字、短横线、下划线、点号，禁止含@#$%等特殊字符 **默认取值** 无 
+        :type image_name: str
+        :param image_version: **参数解释** 本地镜像的版本标识，用于筛选指定版本的本地镜像，需与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 字符长度1-128位，支持字母、数字、短横线、下划线、点号、冒号 **默认取值** 无 
+        :type image_version: str
+        :param scan_status: **参数解释** 本地镜像的安全扫描状态，用于筛选指定扫描状态的镜像列表 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描 **默认取值** 无 
         :type scan_status: str
-        :param local_image_type: **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
+        :param local_image_type: **参数解释** 本地镜像的存储来源类型，用于筛选不同来源的本地镜像 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** 无 
         :type local_image_type: str
-        :param image_size: 镜像大小，单位字节
+        :param image_size: **参数解释** 本地镜像的大小（单位字节），用于筛选指定大小的镜像（精确匹配） **约束限制** 仅支持精确匹配，如需范围筛选需结合业务层处理 **取值范围** 取值0-9223372036854775807（约9EB） **默认取值** 无 
         :type image_size: int
-        :param start_latest_update_time: 最近更新时间搜索开始日期，时间单位：毫秒（ms）
+        :param start_latest_update_time: **参数解释** 本地镜像版本最后更新时间的查询起始值（Unix时间戳，单位ms），与end_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1697509433000表示2023-10-16 10:23:53） **约束限制** 需与end_latest_update_time同时使用，且小于end_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
         :type start_latest_update_time: int
-        :param end_latest_update_time: 最近更新时间搜索结束日期，时间单位：毫秒（ms）
+        :param end_latest_update_time: **参数解释** 本地镜像版本最后更新时间的查询结束值（Unix时间戳，单位ms），与start_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1709973506292表示2024-03-08 15:18:26） **约束限制** 需与start_latest_update_time同时使用，且大于start_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
         :type end_latest_update_time: int
-        :param start_latest_scan_time: 最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
+        :param start_latest_scan_time: **参数解释** 本地镜像最近一次扫描完成时间的查询起始值（Unix时间戳，单位ms），与end_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，需与end_latest_scan_time同时使用 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
         :type start_latest_scan_time: int
-        :param end_latest_scan_time: 最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
+        :param end_latest_scan_time: **参数解释** 本地镜像最近一次扫描完成时间的查询结束值（Unix时间戳，单位ms），与start_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，且需大于start_latest_scan_time **取值范围** 取值0-9223372036854775807 **默认取值** 无 
         :type end_latest_scan_time: int
-        :param has_vul: 是否存在软件漏洞
+        :param has_vul: **参数解释** 用于筛选是否存在软件漏洞的本地镜像，true表示筛选有漏洞的镜像，false表示筛选无漏洞的镜像 **约束限制** 仅对scan_status为success的镜像有效，未扫描镜像不会被筛选 **取值范围** true（存在漏洞）、false（不存在漏洞） **默认取值** 无（不筛选漏洞状态） 
         :type has_vul: bool
-        :param host_name: 本地镜像所关联服务器的名称
+        :param host_name: **参数解释** 本地镜像所关联的云服务器名称，用于筛选关联指定服务器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了服务器的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线，禁止含特殊字符 **默认取值** 无 
         :type host_name: str
-        :param host_id: 本地镜像所关联服务器的ID
+        :param host_id: **参数解释** 本地镜像所关联的云服务器唯一标识（ECS实例ID），用于精准筛选关联指定服务器的本地镜像 **约束限制** 精确匹配，仅对关联了该服务器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
         :type host_id: str
-        :param host_ip: 本地镜像所关联服务器的IP（公网或私网）
+        :param host_ip: **参数解释** 本地镜像所关联服务器的公网或私网IP地址，用于筛选关联指定IP服务器的本地镜像 **约束限制** 支持IPv4格式，精确匹配，多个IP需通过业务层分批查询 **取值范围** 符合IPv4格式的字符串（如 **默认取值** 无 
         :type host_ip: str
-        :param container_id: 本地镜像所关联容器的ID
+        :param container_id: **参数解释** 本地镜像所关联的容器唯一标识（Docker容器ID），用于精准筛选关联指定容器的本地镜像 **约束限制** 精确匹配，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线 **默认取值** 无 
         :type container_id: str
-        :param container_name: 本地镜像所关联容器的名称
+        :param container_name: **参数解释** 本地镜像所关联的容器名称，用于筛选关联指定名称容器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线、点号 **默认取值** 无 
         :type container_name: str
-        :param pod_id: 本地镜像所关联Pod的ID
+        :param pod_id: **参数解释** 本地镜像所关联的Kubernetes Pod唯一标识，用于精准筛选关联指定Pod的本地镜像 **约束限制** 精确匹配，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
         :type pod_id: str
-        :param pod_name: 本地镜像所关联Pod的名称
+        :param pod_name: **参数解释** 本地镜像所关联的Kubernetes Pod名称，用于筛选关联指定名称Pod的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-63位，支持字母、数字、短横线，不能以短横线开头或结尾 **默认取值** 无 
         :type pod_name: str
-        :param app_name: 本地镜像所关联软件的名称
+        :param app_name: **参数解释** 本地镜像中部署的应用软件名称（如Nginx、MySQL），用于筛选包含指定应用的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对已识别应用的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线 **默认取值** 无 
         :type app_name: str
-        :param has_container: **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+        :param has_container: **参数解释** 用于筛选是否关联了容器的本地镜像 **取值范围**: - true：关联容器的镜像 - false：未关联容器的镜像 **默认取值** 无（不筛选容器关联状态） 
         :type has_container: bool
         """
         
         
 
         self._enterprise_project_id = None
-        self._image_name = None
-        self._image_version = None
         self._offset = None
         self._limit = None
+        self._image_name = None
+        self._image_version = None
         self._scan_status = None
         self._local_image_type = None
         self._image_size = None
@@ -143,14 +143,14 @@ class ListImageLocalRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if image_name is not None:
-            self.image_name = image_name
-        if image_version is not None:
-            self.image_version = image_version
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if image_name is not None:
+            self.image_name = image_name
+        if image_version is not None:
+            self.image_version = image_version
         if scan_status is not None:
             self.scan_status = scan_status
         if local_image_type is not None:
@@ -190,7 +190,7 @@ class ListImageLocalRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListImageLocalRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListImageLocalRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListImageLocalRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListImageLocalRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageLocalRequest.
         :type enterprise_project_id: str
@@ -209,54 +209,10 @@ class ListImageLocalRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def image_name(self):
-        r"""Gets the image_name of this ListImageLocalRequest.
-
-        镜像名称
-
-        :return: The image_name of this ListImageLocalRequest.
-        :rtype: str
-        """
-        return self._image_name
-
-    @image_name.setter
-    def image_name(self, image_name):
-        r"""Sets the image_name of this ListImageLocalRequest.
-
-        镜像名称
-
-        :param image_name: The image_name of this ListImageLocalRequest.
-        :type image_name: str
-        """
-        self._image_name = image_name
-
-    @property
-    def image_version(self):
-        r"""Gets the image_version of this ListImageLocalRequest.
-
-        镜像版本
-
-        :return: The image_version of this ListImageLocalRequest.
-        :rtype: str
-        """
-        return self._image_version
-
-    @image_version.setter
-    def image_version(self, image_version):
-        r"""Sets the image_version of this ListImageLocalRequest.
-
-        镜像版本
-
-        :param image_version: The image_version of this ListImageLocalRequest.
-        :type image_version: str
-        """
-        self._image_version = image_version
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListImageLocalRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListImageLocalRequest.
         :rtype: int
@@ -267,7 +223,7 @@ class ListImageLocalRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListImageLocalRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListImageLocalRequest.
         :type offset: int
@@ -278,7 +234,7 @@ class ListImageLocalRequest:
     def limit(self):
         r"""Gets the limit of this ListImageLocalRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListImageLocalRequest.
         :rtype: int
@@ -289,7 +245,7 @@ class ListImageLocalRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListImageLocalRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListImageLocalRequest.
         :type limit: int
@@ -297,10 +253,54 @@ class ListImageLocalRequest:
         self._limit = limit
 
     @property
+    def image_name(self):
+        r"""Gets the image_name of this ListImageLocalRequest.
+
+        **参数解释** 本地镜像的名称，用于模糊筛选指定名称的本地镜像列表 **约束限制** 支持部分匹配（如传入'web'可匹配所有名称含'web'的镜像），区分大小写 **取值范围** 字符长度1-256位，支持字母、数字、短横线、下划线、点号，禁止含@#$%等特殊字符 **默认取值** 无 
+
+        :return: The image_name of this ListImageLocalRequest.
+        :rtype: str
+        """
+        return self._image_name
+
+    @image_name.setter
+    def image_name(self, image_name):
+        r"""Sets the image_name of this ListImageLocalRequest.
+
+        **参数解释** 本地镜像的名称，用于模糊筛选指定名称的本地镜像列表 **约束限制** 支持部分匹配（如传入'web'可匹配所有名称含'web'的镜像），区分大小写 **取值范围** 字符长度1-256位，支持字母、数字、短横线、下划线、点号，禁止含@#$%等特殊字符 **默认取值** 无 
+
+        :param image_name: The image_name of this ListImageLocalRequest.
+        :type image_name: str
+        """
+        self._image_name = image_name
+
+    @property
+    def image_version(self):
+        r"""Gets the image_version of this ListImageLocalRequest.
+
+        **参数解释** 本地镜像的版本标识，用于筛选指定版本的本地镜像，需与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 字符长度1-128位，支持字母、数字、短横线、下划线、点号、冒号 **默认取值** 无 
+
+        :return: The image_version of this ListImageLocalRequest.
+        :rtype: str
+        """
+        return self._image_version
+
+    @image_version.setter
+    def image_version(self, image_version):
+        r"""Sets the image_version of this ListImageLocalRequest.
+
+        **参数解释** 本地镜像的版本标识，用于筛选指定版本的本地镜像，需与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 字符长度1-128位，支持字母、数字、短横线、下划线、点号、冒号 **默认取值** 无 
+
+        :param image_version: The image_version of this ListImageLocalRequest.
+        :type image_version: str
+        """
+        self._image_version = image_version
+
+    @property
     def scan_status(self):
         r"""Gets the scan_status of this ListImageLocalRequest.
 
-        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
+        **参数解释** 本地镜像的安全扫描状态，用于筛选指定扫描状态的镜像列表 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描 **默认取值** 无 
 
         :return: The scan_status of this ListImageLocalRequest.
         :rtype: str
@@ -311,7 +311,7 @@ class ListImageLocalRequest:
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this ListImageLocalRequest.
 
-        扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
+        **参数解释** 本地镜像的安全扫描状态，用于筛选指定扫描状态的镜像列表 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描 **默认取值** 无 
 
         :param scan_status: The scan_status of this ListImageLocalRequest.
         :type scan_status: str
@@ -322,7 +322,7 @@ class ListImageLocalRequest:
     def local_image_type(self):
         r"""Gets the local_image_type of this ListImageLocalRequest.
 
-        **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
+        **参数解释** 本地镜像的存储来源类型，用于筛选不同来源的本地镜像 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** 无 
 
         :return: The local_image_type of this ListImageLocalRequest.
         :rtype: str
@@ -333,7 +333,7 @@ class ListImageLocalRequest:
     def local_image_type(self, local_image_type):
         r"""Sets the local_image_type of this ListImageLocalRequest.
 
-        **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
+        **参数解释** 本地镜像的存储来源类型，用于筛选不同来源的本地镜像 **约束限制** 取值必须在指定范围内，否则返回空结果，区分大小写 **取值范围**  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** 无 
 
         :param local_image_type: The local_image_type of this ListImageLocalRequest.
         :type local_image_type: str
@@ -344,7 +344,7 @@ class ListImageLocalRequest:
     def image_size(self):
         r"""Gets the image_size of this ListImageLocalRequest.
 
-        镜像大小，单位字节
+        **参数解释** 本地镜像的大小（单位字节），用于筛选指定大小的镜像（精确匹配） **约束限制** 仅支持精确匹配，如需范围筛选需结合业务层处理 **取值范围** 取值0-9223372036854775807（约9EB） **默认取值** 无 
 
         :return: The image_size of this ListImageLocalRequest.
         :rtype: int
@@ -355,7 +355,7 @@ class ListImageLocalRequest:
     def image_size(self, image_size):
         r"""Sets the image_size of this ListImageLocalRequest.
 
-        镜像大小，单位字节
+        **参数解释** 本地镜像的大小（单位字节），用于筛选指定大小的镜像（精确匹配） **约束限制** 仅支持精确匹配，如需范围筛选需结合业务层处理 **取值范围** 取值0-9223372036854775807（约9EB） **默认取值** 无 
 
         :param image_size: The image_size of this ListImageLocalRequest.
         :type image_size: int
@@ -366,7 +366,7 @@ class ListImageLocalRequest:
     def start_latest_update_time(self):
         r"""Gets the start_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索开始日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像版本最后更新时间的查询起始值（Unix时间戳，单位ms），与end_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1697509433000表示2023-10-16 10:23:53） **约束限制** 需与end_latest_update_time同时使用，且小于end_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :return: The start_latest_update_time of this ListImageLocalRequest.
         :rtype: int
@@ -377,7 +377,7 @@ class ListImageLocalRequest:
     def start_latest_update_time(self, start_latest_update_time):
         r"""Sets the start_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索开始日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像版本最后更新时间的查询起始值（Unix时间戳，单位ms），与end_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1697509433000表示2023-10-16 10:23:53） **约束限制** 需与end_latest_update_time同时使用，且小于end_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :param start_latest_update_time: The start_latest_update_time of this ListImageLocalRequest.
         :type start_latest_update_time: int
@@ -388,7 +388,7 @@ class ListImageLocalRequest:
     def end_latest_update_time(self):
         r"""Gets the end_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索结束日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像版本最后更新时间的查询结束值（Unix时间戳，单位ms），与start_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1709973506292表示2024-03-08 15:18:26） **约束限制** 需与start_latest_update_time同时使用，且大于start_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :return: The end_latest_update_time of this ListImageLocalRequest.
         :rtype: int
@@ -399,7 +399,7 @@ class ListImageLocalRequest:
     def end_latest_update_time(self, end_latest_update_time):
         r"""Sets the end_latest_update_time of this ListImageLocalRequest.
 
-        最近更新时间搜索结束日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像版本最后更新时间的查询结束值（Unix时间戳，单位ms），与start_latest_update_time配合筛选时间范围 **时间格式** Unix时间戳（如1709973506292表示2024-03-08 15:18:26） **约束限制** 需与start_latest_update_time同时使用，且大于start_latest_update_time，否则筛选无效 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :param end_latest_update_time: The end_latest_update_time of this ListImageLocalRequest.
         :type end_latest_update_time: int
@@ -410,7 +410,7 @@ class ListImageLocalRequest:
     def start_latest_scan_time(self):
         r"""Gets the start_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像最近一次扫描完成时间的查询起始值（Unix时间戳，单位ms），与end_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，需与end_latest_scan_time同时使用 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :return: The start_latest_scan_time of this ListImageLocalRequest.
         :rtype: int
@@ -421,7 +421,7 @@ class ListImageLocalRequest:
     def start_latest_scan_time(self, start_latest_scan_time):
         r"""Sets the start_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索开始日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像最近一次扫描完成时间的查询起始值（Unix时间戳，单位ms），与end_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，需与end_latest_scan_time同时使用 **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :param start_latest_scan_time: The start_latest_scan_time of this ListImageLocalRequest.
         :type start_latest_scan_time: int
@@ -432,7 +432,7 @@ class ListImageLocalRequest:
     def end_latest_scan_time(self):
         r"""Gets the end_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像最近一次扫描完成时间的查询结束值（Unix时间戳，单位ms），与start_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，且需大于start_latest_scan_time **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :return: The end_latest_scan_time of this ListImageLocalRequest.
         :rtype: int
@@ -443,7 +443,7 @@ class ListImageLocalRequest:
     def end_latest_scan_time(self, end_latest_scan_time):
         r"""Sets the end_latest_scan_time of this ListImageLocalRequest.
 
-        最近一次扫描完成时间搜索结束日期，时间单位：毫秒（ms）
+        **参数解释** 本地镜像最近一次扫描完成时间的查询结束值（Unix时间戳，单位ms），与start_latest_scan_time配合筛选时间范围 **时间格式** Unix时间戳（精确到毫秒） **约束限制** 仅对scan_status为success的镜像有效，且需大于start_latest_scan_time **取值范围** 取值0-9223372036854775807 **默认取值** 无 
 
         :param end_latest_scan_time: The end_latest_scan_time of this ListImageLocalRequest.
         :type end_latest_scan_time: int
@@ -454,7 +454,7 @@ class ListImageLocalRequest:
     def has_vul(self):
         r"""Gets the has_vul of this ListImageLocalRequest.
 
-        是否存在软件漏洞
+        **参数解释** 用于筛选是否存在软件漏洞的本地镜像，true表示筛选有漏洞的镜像，false表示筛选无漏洞的镜像 **约束限制** 仅对scan_status为success的镜像有效，未扫描镜像不会被筛选 **取值范围** true（存在漏洞）、false（不存在漏洞） **默认取值** 无（不筛选漏洞状态） 
 
         :return: The has_vul of this ListImageLocalRequest.
         :rtype: bool
@@ -465,7 +465,7 @@ class ListImageLocalRequest:
     def has_vul(self, has_vul):
         r"""Sets the has_vul of this ListImageLocalRequest.
 
-        是否存在软件漏洞
+        **参数解释** 用于筛选是否存在软件漏洞的本地镜像，true表示筛选有漏洞的镜像，false表示筛选无漏洞的镜像 **约束限制** 仅对scan_status为success的镜像有效，未扫描镜像不会被筛选 **取值范围** true（存在漏洞）、false（不存在漏洞） **默认取值** 无（不筛选漏洞状态） 
 
         :param has_vul: The has_vul of this ListImageLocalRequest.
         :type has_vul: bool
@@ -476,7 +476,7 @@ class ListImageLocalRequest:
     def host_name(self):
         r"""Gets the host_name of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的名称
+        **参数解释** 本地镜像所关联的云服务器名称，用于筛选关联指定服务器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了服务器的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线，禁止含特殊字符 **默认取值** 无 
 
         :return: The host_name of this ListImageLocalRequest.
         :rtype: str
@@ -487,7 +487,7 @@ class ListImageLocalRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的名称
+        **参数解释** 本地镜像所关联的云服务器名称，用于筛选关联指定服务器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了服务器的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线，禁止含特殊字符 **默认取值** 无 
 
         :param host_name: The host_name of this ListImageLocalRequest.
         :type host_name: str
@@ -498,7 +498,7 @@ class ListImageLocalRequest:
     def host_id(self):
         r"""Gets the host_id of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的ID
+        **参数解释** 本地镜像所关联的云服务器唯一标识（ECS实例ID），用于精准筛选关联指定服务器的本地镜像 **约束限制** 精确匹配，仅对关联了该服务器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
 
         :return: The host_id of this ListImageLocalRequest.
         :rtype: str
@@ -509,7 +509,7 @@ class ListImageLocalRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的ID
+        **参数解释** 本地镜像所关联的云服务器唯一标识（ECS实例ID），用于精准筛选关联指定服务器的本地镜像 **约束限制** 精确匹配，仅对关联了该服务器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
 
         :param host_id: The host_id of this ListImageLocalRequest.
         :type host_id: str
@@ -520,7 +520,7 @@ class ListImageLocalRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的IP（公网或私网）
+        **参数解释** 本地镜像所关联服务器的公网或私网IP地址，用于筛选关联指定IP服务器的本地镜像 **约束限制** 支持IPv4格式，精确匹配，多个IP需通过业务层分批查询 **取值范围** 符合IPv4格式的字符串（如 **默认取值** 无 
 
         :return: The host_ip of this ListImageLocalRequest.
         :rtype: str
@@ -531,7 +531,7 @@ class ListImageLocalRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListImageLocalRequest.
 
-        本地镜像所关联服务器的IP（公网或私网）
+        **参数解释** 本地镜像所关联服务器的公网或私网IP地址，用于筛选关联指定IP服务器的本地镜像 **约束限制** 支持IPv4格式，精确匹配，多个IP需通过业务层分批查询 **取值范围** 符合IPv4格式的字符串（如 **默认取值** 无 
 
         :param host_ip: The host_ip of this ListImageLocalRequest.
         :type host_ip: str
@@ -542,7 +542,7 @@ class ListImageLocalRequest:
     def container_id(self):
         r"""Gets the container_id of this ListImageLocalRequest.
 
-        本地镜像所关联容器的ID
+        **参数解释** 本地镜像所关联的容器唯一标识（Docker容器ID），用于精准筛选关联指定容器的本地镜像 **约束限制** 精确匹配，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线 **默认取值** 无 
 
         :return: The container_id of this ListImageLocalRequest.
         :rtype: str
@@ -553,7 +553,7 @@ class ListImageLocalRequest:
     def container_id(self, container_id):
         r"""Sets the container_id of this ListImageLocalRequest.
 
-        本地镜像所关联容器的ID
+        **参数解释** 本地镜像所关联的容器唯一标识（Docker容器ID），用于精准筛选关联指定容器的本地镜像 **约束限制** 精确匹配，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线 **默认取值** 无 
 
         :param container_id: The container_id of this ListImageLocalRequest.
         :type container_id: str
@@ -564,7 +564,7 @@ class ListImageLocalRequest:
     def container_name(self):
         r"""Gets the container_name of this ListImageLocalRequest.
 
-        本地镜像所关联容器的名称
+        **参数解释** 本地镜像所关联的容器名称，用于筛选关联指定名称容器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线、点号 **默认取值** 无 
 
         :return: The container_name of this ListImageLocalRequest.
         :rtype: str
@@ -575,7 +575,7 @@ class ListImageLocalRequest:
     def container_name(self, container_name):
         r"""Sets the container_name of this ListImageLocalRequest.
 
-        本地镜像所关联容器的名称
+        **参数解释** 本地镜像所关联的容器名称，用于筛选关联指定名称容器的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对关联了容器的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线、下划线、点号 **默认取值** 无 
 
         :param container_name: The container_name of this ListImageLocalRequest.
         :type container_name: str
@@ -586,7 +586,7 @@ class ListImageLocalRequest:
     def pod_id(self):
         r"""Gets the pod_id of this ListImageLocalRequest.
 
-        本地镜像所关联Pod的ID
+        **参数解释** 本地镜像所关联的Kubernetes Pod唯一标识，用于精准筛选关联指定Pod的本地镜像 **约束限制** 精确匹配，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
 
         :return: The pod_id of this ListImageLocalRequest.
         :rtype: str
@@ -597,7 +597,7 @@ class ListImageLocalRequest:
     def pod_id(self, pod_id):
         r"""Sets the pod_id of this ListImageLocalRequest.
 
-        本地镜像所关联Pod的ID
+        **参数解释** 本地镜像所关联的Kubernetes Pod唯一标识，用于精准筛选关联指定Pod的本地镜像 **约束限制** 精确匹配，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-64位，支持字母、数字、短横线 **默认取值** 无 
 
         :param pod_id: The pod_id of this ListImageLocalRequest.
         :type pod_id: str
@@ -608,7 +608,7 @@ class ListImageLocalRequest:
     def pod_name(self):
         r"""Gets the pod_name of this ListImageLocalRequest.
 
-        本地镜像所关联Pod的名称
+        **参数解释** 本地镜像所关联的Kubernetes Pod名称，用于筛选关联指定名称Pod的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-63位，支持字母、数字、短横线，不能以短横线开头或结尾 **默认取值** 无 
 
         :return: The pod_name of this ListImageLocalRequest.
         :rtype: str
@@ -619,7 +619,7 @@ class ListImageLocalRequest:
     def pod_name(self, pod_name):
         r"""Sets the pod_name of this ListImageLocalRequest.
 
-        本地镜像所关联Pod的名称
+        **参数解释** 本地镜像所关联的Kubernetes Pod名称，用于筛选关联指定名称Pod的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对K8s环境中关联了Pod的镜像有效 **取值范围** 字符长度1-63位，支持字母、数字、短横线，不能以短横线开头或结尾 **默认取值** 无 
 
         :param pod_name: The pod_name of this ListImageLocalRequest.
         :type pod_name: str
@@ -630,7 +630,7 @@ class ListImageLocalRequest:
     def app_name(self):
         r"""Gets the app_name of this ListImageLocalRequest.
 
-        本地镜像所关联软件的名称
+        **参数解释** 本地镜像中部署的应用软件名称（如Nginx、MySQL），用于筛选包含指定应用的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对已识别应用的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线 **默认取值** 无 
 
         :return: The app_name of this ListImageLocalRequest.
         :rtype: str
@@ -641,7 +641,7 @@ class ListImageLocalRequest:
     def app_name(self, app_name):
         r"""Sets the app_name of this ListImageLocalRequest.
 
-        本地镜像所关联软件的名称
+        **参数解释** 本地镜像中部署的应用软件名称（如Nginx、MySQL），用于筛选包含指定应用的本地镜像 **约束限制** 支持模糊匹配，区分大小写，仅对已识别应用的镜像有效 **取值范围** 字符长度1-64位，支持中文、英文、数字、短横线、下划线 **默认取值** 无 
 
         :param app_name: The app_name of this ListImageLocalRequest.
         :type app_name: str
@@ -652,7 +652,7 @@ class ListImageLocalRequest:
     def has_container(self):
         r"""Gets the has_container of this ListImageLocalRequest.
 
-        **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+        **参数解释** 用于筛选是否关联了容器的本地镜像 **取值范围**: - true：关联容器的镜像 - false：未关联容器的镜像 **默认取值** 无（不筛选容器关联状态） 
 
         :return: The has_container of this ListImageLocalRequest.
         :rtype: bool
@@ -663,7 +663,7 @@ class ListImageLocalRequest:
     def has_container(self, has_container):
         r"""Sets the has_container of this ListImageLocalRequest.
 
-        **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+        **参数解释** 用于筛选是否关联了容器的本地镜像 **取值范围**: - true：关联容器的镜像 - false：未关联容器的镜像 **默认取值** 无（不筛选容器关联状态） 
 
         :param has_container: The has_container of this ListImageLocalRequest.
         :type has_container: bool

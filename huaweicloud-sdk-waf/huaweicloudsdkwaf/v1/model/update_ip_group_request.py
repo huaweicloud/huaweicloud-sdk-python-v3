@@ -33,11 +33,11 @@ class UpdateIpGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
-        :param id: ip地址组id
+        :param id: **参数解释：** ip地址组id，可从查询地址组列表(ListIpGroup)接口中获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: str
-        :param action: 增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+        :param action: **参数解释：** 修改ip地址组时，此为必传字段 **约束限制：** 不涉及 **取值范围：** - add 添加 - delete 删除 - update 修改 **默认取值：** 不涉及
         :type action: str
         :param body: Body of the UpdateIpGroupRequest
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequestBody`
@@ -63,7 +63,7 @@ class UpdateIpGroupRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this UpdateIpGroupRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this UpdateIpGroupRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateIpGroupRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this UpdateIpGroupRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateIpGroupRequest.
         :type enterprise_project_id: str
@@ -85,7 +85,7 @@ class UpdateIpGroupRequest:
     def id(self):
         r"""Gets the id of this UpdateIpGroupRequest.
 
-        ip地址组id
+        **参数解释：** ip地址组id，可从查询地址组列表(ListIpGroup)接口中获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The id of this UpdateIpGroupRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateIpGroupRequest:
     def id(self, id):
         r"""Sets the id of this UpdateIpGroupRequest.
 
-        ip地址组id
+        **参数解释：** ip地址组id，可从查询地址组列表(ListIpGroup)接口中获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param id: The id of this UpdateIpGroupRequest.
         :type id: str
@@ -107,7 +107,7 @@ class UpdateIpGroupRequest:
     def action(self):
         r"""Gets the action of this UpdateIpGroupRequest.
 
-        增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+        **参数解释：** 修改ip地址组时，此为必传字段 **约束限制：** 不涉及 **取值范围：** - add 添加 - delete 删除 - update 修改 **默认取值：** 不涉及
 
         :return: The action of this UpdateIpGroupRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateIpGroupRequest:
     def action(self, action):
         r"""Sets the action of this UpdateIpGroupRequest.
 
-        增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
+        **参数解释：** 修改ip地址组时，此为必传字段 **约束限制：** 不涉及 **取值范围：** - add 添加 - delete 删除 - update 修改 **默认取值：** 不涉及
 
         :param action: The action of this UpdateIpGroupRequest.
         :type action: str

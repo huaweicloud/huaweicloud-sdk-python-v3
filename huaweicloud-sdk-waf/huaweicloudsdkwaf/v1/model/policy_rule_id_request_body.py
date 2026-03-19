@@ -36,8 +36,7 @@ class PolicyRuleIdRequestBody:
         self._policy_rule_ids = None
         self.discriminator = None
 
-        if policy_rule_ids is not None:
-            self.policy_rule_ids = policy_rule_ids
+        self.policy_rule_ids = policy_rule_ids
 
     @property
     def policy_rule_ids(self):

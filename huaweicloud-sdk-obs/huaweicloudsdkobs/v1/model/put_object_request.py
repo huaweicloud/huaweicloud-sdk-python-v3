@@ -33,11 +33,16 @@ class PutObjectRequest(SdkStreamRequest):
         'x_obs_website_redirect_location': 'str',
         'x_obs_server_side_encryption': 'str',
         'x_obs_server_side_encryption_kms_key_id': 'str',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'str',
+        'x_obs_server_side_data_encryption': 'str',
         'x_obs_server_side_encryption_customer_algorithm': 'str',
         'x_obs_server_side_encryption_customer_key': 'str',
         'x_obs_server_side_encryption_customer_key_md5': 'str',
         'success_action_redirect': 'str',
-        'x_obs_expires': 'int'
+        'x_obs_expires': 'int',
+        'x_obs_tagging': 'str',
+        'x_obs_object_lock_mode': 'str',
+        'x_obs_object_lock_retain_until_date': 'str'
     }
 
     attribute_map = {
@@ -56,14 +61,19 @@ class PutObjectRequest(SdkStreamRequest):
         'x_obs_website_redirect_location': 'x-obs-website-redirect-location',
         'x_obs_server_side_encryption': 'x-obs-server-side-encryption',
         'x_obs_server_side_encryption_kms_key_id': 'x-obs-server-side-encryption-kms-key-id',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'x-obs-server-side-encryption-bucket-key-enabled',
+        'x_obs_server_side_data_encryption': 'x-obs-server-side-data-encryption',
         'x_obs_server_side_encryption_customer_algorithm': 'x-obs-server-side-encryption-customer-algorithm',
         'x_obs_server_side_encryption_customer_key': 'x-obs-server-side-encryption-customer-key',
         'x_obs_server_side_encryption_customer_key_md5': 'x-obs-server-side-encryption-customer-key-MD5',
         'success_action_redirect': 'success-action-redirect',
-        'x_obs_expires': 'x-obs-expires'
+        'x_obs_expires': 'x-obs-expires',
+        'x_obs_tagging': 'x-obs-tagging',
+        'x_obs_object_lock_mode': 'x-obs-object-lock-mode',
+        'x_obs_object_lock_retain_until_date': 'x-obs-object-lock-retain-until-date'
     }
 
-    def __init__(self, stream=None, bucket_name=None, object_key=None, date=None, content_md5=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_storage_class=None, x_obs_meta_xxx=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, success_action_redirect=None, x_obs_expires=None):
+    def __init__(self, stream=None, bucket_name=None, object_key=None, date=None, content_md5=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_storage_class=None, x_obs_meta_xxx=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_bucket_key_enabled=None, x_obs_server_side_data_encryption=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, success_action_redirect=None, x_obs_expires=None, x_obs_tagging=None, x_obs_object_lock_mode=None, x_obs_object_lock_retain_until_date=None):
         r"""PutObjectRequest
 
         The model defined in huaweicloud sdk
@@ -98,6 +108,10 @@ class PutObjectRequest(SdkStreamRequest):
         :type x_obs_server_side_encryption: str
         :param x_obs_server_side_encryption_kms_key_id: Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
         :type x_obs_server_side_encryption_kms_key_id: str
+        :param x_obs_server_side_encryption_bucket_key_enabled: Specifies whether to enable the SSE-KMS bucket key function. Example：x-obs-server-side-encryption-bucket-key-enabled:true Restriction：When you set this header to true, you must set the x-obs-server-side-encryption-kms-key-id header of this API to specify the key ID. 
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        :param x_obs_server_side_data_encryption: This header field indicates the data encryption algorithm used by the object. Example：x-obs-server-side-data-encryption：SM4 Restriction：This header field is used only when SSE-KMS is used.              If this header field is not carried, the AES256 algorithm is used. 
+        :type x_obs_server_side_data_encryption: str
         :param x_obs_server_side_encryption_customer_algorithm: The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
         :type x_obs_server_side_encryption_customer_algorithm: str
         :param x_obs_server_side_encryption_customer_key: Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw&#x3D;Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
@@ -108,6 +122,12 @@ class PutObjectRequest(SdkStreamRequest):
         :type success_action_redirect: str
         :param x_obs_expires: When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
         :type x_obs_expires: int
+        :param x_obs_tagging: Object&#39;s tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA&#x3D;A&amp;TagB&amp;TagC Restriction: If a tag key or value contains special characters, equal signs (&#x3D;), or full-width characters, it must be URL-encoded.              If there is no equal sign (&#x3D;) in a configuration, the tag value is considered left blank. 
+        :type x_obs_tagging: str
+        :param x_obs_object_lock_mode: WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE Restriction: Only COMPLIANCE (compliance mode) is supported.              This parameter must be used together with x-obs-object-lock-retain-until-date. 
+        :type x_obs_object_lock_mode: str
+        :param x_obs_object_lock_retain_until_date: When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
+        :type x_obs_object_lock_retain_until_date: str
         """
         super().__init__(stream)
         
@@ -127,11 +147,16 @@ class PutObjectRequest(SdkStreamRequest):
         self._x_obs_website_redirect_location = None
         self._x_obs_server_side_encryption = None
         self._x_obs_server_side_encryption_kms_key_id = None
+        self._x_obs_server_side_encryption_bucket_key_enabled = None
+        self._x_obs_server_side_data_encryption = None
         self._x_obs_server_side_encryption_customer_algorithm = None
         self._x_obs_server_side_encryption_customer_key = None
         self._x_obs_server_side_encryption_customer_key_md5 = None
         self._success_action_redirect = None
         self._x_obs_expires = None
+        self._x_obs_tagging = None
+        self._x_obs_object_lock_mode = None
+        self._x_obs_object_lock_retain_until_date = None
         self.discriminator = None
 
         self.bucket_name = bucket_name
@@ -162,6 +187,10 @@ class PutObjectRequest(SdkStreamRequest):
             self.x_obs_server_side_encryption = x_obs_server_side_encryption
         if x_obs_server_side_encryption_kms_key_id is not None:
             self.x_obs_server_side_encryption_kms_key_id = x_obs_server_side_encryption_kms_key_id
+        if x_obs_server_side_encryption_bucket_key_enabled is not None:
+            self.x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+        if x_obs_server_side_data_encryption is not None:
+            self.x_obs_server_side_data_encryption = x_obs_server_side_data_encryption
         if x_obs_server_side_encryption_customer_algorithm is not None:
             self.x_obs_server_side_encryption_customer_algorithm = x_obs_server_side_encryption_customer_algorithm
         if x_obs_server_side_encryption_customer_key is not None:
@@ -172,6 +201,12 @@ class PutObjectRequest(SdkStreamRequest):
             self.success_action_redirect = success_action_redirect
         if x_obs_expires is not None:
             self.x_obs_expires = x_obs_expires
+        if x_obs_tagging is not None:
+            self.x_obs_tagging = x_obs_tagging
+        if x_obs_object_lock_mode is not None:
+            self.x_obs_object_lock_mode = x_obs_object_lock_mode
+        if x_obs_object_lock_retain_until_date is not None:
+            self.x_obs_object_lock_retain_until_date = x_obs_object_lock_retain_until_date
 
     @property
     def bucket_name(self):
@@ -504,6 +539,50 @@ class PutObjectRequest(SdkStreamRequest):
         self._x_obs_server_side_encryption_kms_key_id = x_obs_server_side_encryption_kms_key_id
 
     @property
+    def x_obs_server_side_encryption_bucket_key_enabled(self):
+        r"""Gets the x_obs_server_side_encryption_bucket_key_enabled of this PutObjectRequest.
+
+        Specifies whether to enable the SSE-KMS bucket key function. Example：x-obs-server-side-encryption-bucket-key-enabled:true Restriction：When you set this header to true, you must set the x-obs-server-side-encryption-kms-key-id header of this API to specify the key ID. 
+
+        :return: The x_obs_server_side_encryption_bucket_key_enabled of this PutObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_encryption_bucket_key_enabled
+
+    @x_obs_server_side_encryption_bucket_key_enabled.setter
+    def x_obs_server_side_encryption_bucket_key_enabled(self, x_obs_server_side_encryption_bucket_key_enabled):
+        r"""Sets the x_obs_server_side_encryption_bucket_key_enabled of this PutObjectRequest.
+
+        Specifies whether to enable the SSE-KMS bucket key function. Example：x-obs-server-side-encryption-bucket-key-enabled:true Restriction：When you set this header to true, you must set the x-obs-server-side-encryption-kms-key-id header of this API to specify the key ID. 
+
+        :param x_obs_server_side_encryption_bucket_key_enabled: The x_obs_server_side_encryption_bucket_key_enabled of this PutObjectRequest.
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        """
+        self._x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+
+    @property
+    def x_obs_server_side_data_encryption(self):
+        r"""Gets the x_obs_server_side_data_encryption of this PutObjectRequest.
+
+        This header field indicates the data encryption algorithm used by the object. Example：x-obs-server-side-data-encryption：SM4 Restriction：This header field is used only when SSE-KMS is used.              If this header field is not carried, the AES256 algorithm is used. 
+
+        :return: The x_obs_server_side_data_encryption of this PutObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_data_encryption
+
+    @x_obs_server_side_data_encryption.setter
+    def x_obs_server_side_data_encryption(self, x_obs_server_side_data_encryption):
+        r"""Sets the x_obs_server_side_data_encryption of this PutObjectRequest.
+
+        This header field indicates the data encryption algorithm used by the object. Example：x-obs-server-side-data-encryption：SM4 Restriction：This header field is used only when SSE-KMS is used.              If this header field is not carried, the AES256 algorithm is used. 
+
+        :param x_obs_server_side_data_encryption: The x_obs_server_side_data_encryption of this PutObjectRequest.
+        :type x_obs_server_side_data_encryption: str
+        """
+        self._x_obs_server_side_data_encryption = x_obs_server_side_data_encryption
+
+    @property
     def x_obs_server_side_encryption_customer_algorithm(self):
         r"""Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
 
@@ -612,6 +691,72 @@ class PutObjectRequest(SdkStreamRequest):
         :type x_obs_expires: int
         """
         self._x_obs_expires = x_obs_expires
+
+    @property
+    def x_obs_tagging(self):
+        r"""Gets the x_obs_tagging of this PutObjectRequest.
+
+        Object's tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA=A&TagB&TagC Restriction: If a tag key or value contains special characters, equal signs (=), or full-width characters, it must be URL-encoded.              If there is no equal sign (=) in a configuration, the tag value is considered left blank. 
+
+        :return: The x_obs_tagging of this PutObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_tagging
+
+    @x_obs_tagging.setter
+    def x_obs_tagging(self, x_obs_tagging):
+        r"""Sets the x_obs_tagging of this PutObjectRequest.
+
+        Object's tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA=A&TagB&TagC Restriction: If a tag key or value contains special characters, equal signs (=), or full-width characters, it must be URL-encoded.              If there is no equal sign (=) in a configuration, the tag value is considered left blank. 
+
+        :param x_obs_tagging: The x_obs_tagging of this PutObjectRequest.
+        :type x_obs_tagging: str
+        """
+        self._x_obs_tagging = x_obs_tagging
+
+    @property
+    def x_obs_object_lock_mode(self):
+        r"""Gets the x_obs_object_lock_mode of this PutObjectRequest.
+
+        WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE Restriction: Only COMPLIANCE (compliance mode) is supported.              This parameter must be used together with x-obs-object-lock-retain-until-date. 
+
+        :return: The x_obs_object_lock_mode of this PutObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_object_lock_mode
+
+    @x_obs_object_lock_mode.setter
+    def x_obs_object_lock_mode(self, x_obs_object_lock_mode):
+        r"""Sets the x_obs_object_lock_mode of this PutObjectRequest.
+
+        WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE Restriction: Only COMPLIANCE (compliance mode) is supported.              This parameter must be used together with x-obs-object-lock-retain-until-date. 
+
+        :param x_obs_object_lock_mode: The x_obs_object_lock_mode of this PutObjectRequest.
+        :type x_obs_object_lock_mode: str
+        """
+        self._x_obs_object_lock_mode = x_obs_object_lock_mode
+
+    @property
+    def x_obs_object_lock_retain_until_date(self):
+        r"""Gets the x_obs_object_lock_retain_until_date of this PutObjectRequest.
+
+        When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
+
+        :return: The x_obs_object_lock_retain_until_date of this PutObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_object_lock_retain_until_date
+
+    @x_obs_object_lock_retain_until_date.setter
+    def x_obs_object_lock_retain_until_date(self, x_obs_object_lock_retain_until_date):
+        r"""Sets the x_obs_object_lock_retain_until_date of this PutObjectRequest.
+
+        When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
+
+        :param x_obs_object_lock_retain_until_date: The x_obs_object_lock_retain_until_date of this PutObjectRequest.
+        :type x_obs_object_lock_retain_until_date: str
+        """
+        self._x_obs_object_lock_retain_until_date = x_obs_object_lock_retain_until_date
 
     def to_dict(self):
         result = {}

@@ -51,19 +51,19 @@ class ListWebBasicProtectionRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文  **默认取值：** - zh-cn
+        :param x_language: **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文 **默认取值：** zh-cn
         :type x_language: str
-        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
-        :param offset: **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回（从1开始计数）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1
+        :param offset: **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回 **约束限制：** 不涉及 **取值范围：** [0,2147483645] **默认取值：** 0
         :type offset: int
-        :param limit: **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
+        :param limit: **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** [1, 1000] **默认取值：** 10
         :type limit: int
         :param _from: **参数解释：** 起始时间（13位毫秒时间戳），需要和to同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type _from: int
         :param to: **参数解释：** 结束时间（13位毫秒时间戳），需要和from同时使用。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type to: int
-        :param level: **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格  **默认取值：** 不涉及
+        :param level: **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格 **默认取值：** 不涉及
         :type level: int
         :param id: **参数解释：** 规则ID，规则的唯一标识。 **约束限制：** 不涉及 **取值范围：** 长度为6个字符 **默认取值：** 不涉及
         :type id: str
@@ -71,11 +71,11 @@ class ListWebBasicProtectionRulesRequest:
         :type description: str
         :param cve_number: **参数解释：** CVE编号 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cve_number: str
-        :param risk_level: **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危  **默认取值：** 不涉及
+        :param risk_level: **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危 **默认取值：** 不涉及
         :type risk_level: int
-        :param protection_type_names: **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入  **默认取值：** 不涉及
+        :param protection_type_names: **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入 **默认取值：** 不涉及
         :type protection_type_names: str
-        :param application_type_names: **参数解释：** 应用类型 **约束限制：** 不涉及 **取值范围：** 请参见WAF控制台，Web基础防护规则详情页面的应用类型。 **默认取值：** 不涉及
+        :param application_type_names: **参数解释：** 应用类型，可通过ConfirmApplicationTypes接口获取支持的应用类型 **约束限制：** 不涉及 **取值范围：** 请参见ConfirmApplicationTypes接口 **默认取值：** 不涉及
         :type application_type_names: str
         """
         
@@ -127,7 +127,7 @@ class ListWebBasicProtectionRulesRequest:
     def x_language(self):
         r"""Gets the x_language of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文  **默认取值：** - zh-cn
+        **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文 **默认取值：** zh-cn
 
         :return: The x_language of this ListWebBasicProtectionRulesRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class ListWebBasicProtectionRulesRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文  **默认取值：** - zh-cn
+        **参数解释：** 语言，默认值为zh-cn。zh-cn（中文）/en-us（英文）。 **约束限制：** 不涉及 **取值范围：** - zh-cn：中文 - en-us：英文 **默认取值：** zh-cn
 
         :param x_language: The x_language of this ListWebBasicProtectionRulesRequest.
         :type x_language: str
@@ -149,7 +149,7 @@ class ListWebBasicProtectionRulesRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this ListWebBasicProtectionRulesRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListWebBasicProtectionRulesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListWebBasicProtectionRulesRequest.
         :type enterprise_project_id: str
@@ -171,7 +171,7 @@ class ListWebBasicProtectionRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回（从1开始计数）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1
+        **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回 **约束限制：** 不涉及 **取值范围：** [0,2147483645] **默认取值：** 0
 
         :return: The offset of this ListWebBasicProtectionRulesRequest.
         :rtype: int
@@ -182,7 +182,7 @@ class ListWebBasicProtectionRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回（从1开始计数）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1
+        **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回 **约束限制：** 不涉及 **取值范围：** [0,2147483645] **默认取值：** 0
 
         :param offset: The offset of this ListWebBasicProtectionRulesRequest.
         :type offset: int
@@ -193,7 +193,7 @@ class ListWebBasicProtectionRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
+        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** [1, 1000] **默认取值：** 10
 
         :return: The limit of this ListWebBasicProtectionRulesRequest.
         :rtype: int
@@ -204,7 +204,7 @@ class ListWebBasicProtectionRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
+        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** [1, 1000] **默认取值：** 10
 
         :param limit: The limit of this ListWebBasicProtectionRulesRequest.
         :type limit: int
@@ -259,7 +259,7 @@ class ListWebBasicProtectionRulesRequest:
     def level(self):
         r"""Gets the level of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格  **默认取值：** 不涉及
+        **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格 **默认取值：** 不涉及
 
         :return: The level of this ListWebBasicProtectionRulesRequest.
         :rtype: int
@@ -270,7 +270,7 @@ class ListWebBasicProtectionRulesRequest:
     def level(self, level):
         r"""Sets the level of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格  **默认取值：** 不涉及
+        **参数解释：** 规则集的防护严格程度。规则集（宽松）下对业务的误报率降低，但漏报率可能会增高；而规则集（严格）下对业务的误报率可能会增高，但漏报率降低。 **约束限制：** 不涉及 **取值范围：** - 1：宽松 - 2：中等 - 3：严格 **默认取值：** 不涉及
 
         :param level: The level of this ListWebBasicProtectionRulesRequest.
         :type level: int
@@ -347,7 +347,7 @@ class ListWebBasicProtectionRulesRequest:
     def risk_level(self):
         r"""Gets the risk_level of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危  **默认取值：** 不涉及
+        **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危 **默认取值：** 不涉及
 
         :return: The risk_level of this ListWebBasicProtectionRulesRequest.
         :rtype: int
@@ -358,7 +358,7 @@ class ListWebBasicProtectionRulesRequest:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危  **默认取值：** 不涉及
+        **参数解释：** 危险等级 **约束限制：** 不涉及 **取值范围：** - 1：高危 - 2：中危 - 3：低危 **默认取值：** 不涉及
 
         :param risk_level: The risk_level of this ListWebBasicProtectionRulesRequest.
         :type risk_level: int
@@ -369,7 +369,7 @@ class ListWebBasicProtectionRulesRequest:
     def protection_type_names(self):
         r"""Gets the protection_type_names of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入  **默认取值：** 不涉及
+        **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入 **默认取值：** 不涉及
 
         :return: The protection_type_names of this ListWebBasicProtectionRulesRequest.
         :rtype: str
@@ -380,7 +380,7 @@ class ListWebBasicProtectionRulesRequest:
     def protection_type_names(self, protection_type_names):
         r"""Sets the protection_type_names of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入  **默认取值：** 不涉及
+        **参数解释：** 防护类型 **约束限制：** 不涉及 **取值范围：** - vuln：其他 - xss：跨站脚本 - cmdi：命令注入 - lfi：本地文件包含 - rfi：远程文件包含 - webshell：网站木马 - robot：恶意爬虫 - sqli：SQL注入 **默认取值：** 不涉及
 
         :param protection_type_names: The protection_type_names of this ListWebBasicProtectionRulesRequest.
         :type protection_type_names: str
@@ -391,7 +391,7 @@ class ListWebBasicProtectionRulesRequest:
     def application_type_names(self):
         r"""Gets the application_type_names of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 应用类型 **约束限制：** 不涉及 **取值范围：** 请参见WAF控制台，Web基础防护规则详情页面的应用类型。 **默认取值：** 不涉及
+        **参数解释：** 应用类型，可通过ConfirmApplicationTypes接口获取支持的应用类型 **约束限制：** 不涉及 **取值范围：** 请参见ConfirmApplicationTypes接口 **默认取值：** 不涉及
 
         :return: The application_type_names of this ListWebBasicProtectionRulesRequest.
         :rtype: str
@@ -402,7 +402,7 @@ class ListWebBasicProtectionRulesRequest:
     def application_type_names(self, application_type_names):
         r"""Sets the application_type_names of this ListWebBasicProtectionRulesRequest.
 
-        **参数解释：** 应用类型 **约束限制：** 不涉及 **取值范围：** 请参见WAF控制台，Web基础防护规则详情页面的应用类型。 **默认取值：** 不涉及
+        **参数解释：** 应用类型，可通过ConfirmApplicationTypes接口获取支持的应用类型 **约束限制：** 不涉及 **取值范围：** 请参见ConfirmApplicationTypes接口 **默认取值：** 不涉及
 
         :param application_type_names: The application_type_names of this ListWebBasicProtectionRulesRequest.
         :type application_type_names: str

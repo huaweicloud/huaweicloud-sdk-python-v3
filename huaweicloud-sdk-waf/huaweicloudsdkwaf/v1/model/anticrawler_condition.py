@@ -33,13 +33,13 @@ class AnticrawlerCondition:
 
         The model defined in huaweicloud sdk
 
-        :param category: **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
+        :param category: **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent **默认取值：** 不涉及
         :type category: str
-        :param logic_operation: 条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
+        :param logic_operation: **参数解释：** 条件列表匹配逻辑 **约束限制：** 不涉及 **取值范围：** - contain_any: 包含任意一个 - not_contain_all: 不包含全部 - equal_any: 等于任意一个 - not_equal_all: 不等于全部 - prefix_any: 前缀匹配任意一个 - not_prefix_all: 前缀不匹配全部 - suffix_any: 后缀匹配任意一个 - not_suffix_all: 后缀不匹配全部 - contain: 包含 - not_contain: 不包含 - equal: 等于 - not_equal: 不等于 - prefix: 前缀匹配 - not_prefix: 前缀不匹配 - suffix: 后缀匹配 - not_suffix: 后缀不匹配 - len_equal: 长度等于 - len_not_equal: 长度不等于 - len_greater: 长度大于 - len_less: 长度小于 - len_greater_equal: 长度大于等于 - len_less_equal: 长度小于等于 - regular_match: 正则匹配 - regular_not_match: 正则不匹配 **默认取值：** 不涉及
         :type logic_operation: str
-        :param contents: 条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
+        :param contents: **参数解释：** 条件列表逻辑匹配内容 **约束限制：** 当logic_operation参数不以any或者all结尾时，需要传该参数；仅支持单个匹配内容 **取值范围：** 匹配内容字符串长度范围：[1, 4096] **默认取值：** 不涉及
         :type contents: list[str]
-        :param value_list_id: 引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+        :param value_list_id: **参数解释：** 引用表ID **约束限制：** 当logic_operation参数以any或者all结尾时，需要传该参数；引用表类型要与category类型保持一致 **取值范围：** 通过ListValueList接口获取引用表ID **默认取值：** 不涉及
         :type value_list_id: str
         """
         
@@ -51,10 +51,8 @@ class AnticrawlerCondition:
         self._value_list_id = None
         self.discriminator = None
 
-        if category is not None:
-            self.category = category
-        if logic_operation is not None:
-            self.logic_operation = logic_operation
+        self.category = category
+        self.logic_operation = logic_operation
         if contents is not None:
             self.contents = contents
         if value_list_id is not None:
@@ -64,7 +62,7 @@ class AnticrawlerCondition:
     def category(self):
         r"""Gets the category of this AnticrawlerCondition.
 
-        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent **默认取值：** 不涉及
 
         :return: The category of this AnticrawlerCondition.
         :rtype: str
@@ -75,7 +73,7 @@ class AnticrawlerCondition:
     def category(self, category):
         r"""Sets the category of this AnticrawlerCondition.
 
-        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent **默认取值：** 不涉及
 
         :param category: The category of this AnticrawlerCondition.
         :type category: str
@@ -86,7 +84,7 @@ class AnticrawlerCondition:
     def logic_operation(self):
         r"""Gets the logic_operation of this AnticrawlerCondition.
 
-        条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
+        **参数解释：** 条件列表匹配逻辑 **约束限制：** 不涉及 **取值范围：** - contain_any: 包含任意一个 - not_contain_all: 不包含全部 - equal_any: 等于任意一个 - not_equal_all: 不等于全部 - prefix_any: 前缀匹配任意一个 - not_prefix_all: 前缀不匹配全部 - suffix_any: 后缀匹配任意一个 - not_suffix_all: 后缀不匹配全部 - contain: 包含 - not_contain: 不包含 - equal: 等于 - not_equal: 不等于 - prefix: 前缀匹配 - not_prefix: 前缀不匹配 - suffix: 后缀匹配 - not_suffix: 后缀不匹配 - len_equal: 长度等于 - len_not_equal: 长度不等于 - len_greater: 长度大于 - len_less: 长度小于 - len_greater_equal: 长度大于等于 - len_less_equal: 长度小于等于 - regular_match: 正则匹配 - regular_not_match: 正则不匹配 **默认取值：** 不涉及
 
         :return: The logic_operation of this AnticrawlerCondition.
         :rtype: str
@@ -97,7 +95,7 @@ class AnticrawlerCondition:
     def logic_operation(self, logic_operation):
         r"""Sets the logic_operation of this AnticrawlerCondition.
 
-        条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
+        **参数解释：** 条件列表匹配逻辑 **约束限制：** 不涉及 **取值范围：** - contain_any: 包含任意一个 - not_contain_all: 不包含全部 - equal_any: 等于任意一个 - not_equal_all: 不等于全部 - prefix_any: 前缀匹配任意一个 - not_prefix_all: 前缀不匹配全部 - suffix_any: 后缀匹配任意一个 - not_suffix_all: 后缀不匹配全部 - contain: 包含 - not_contain: 不包含 - equal: 等于 - not_equal: 不等于 - prefix: 前缀匹配 - not_prefix: 前缀不匹配 - suffix: 后缀匹配 - not_suffix: 后缀不匹配 - len_equal: 长度等于 - len_not_equal: 长度不等于 - len_greater: 长度大于 - len_less: 长度小于 - len_greater_equal: 长度大于等于 - len_less_equal: 长度小于等于 - regular_match: 正则匹配 - regular_not_match: 正则不匹配 **默认取值：** 不涉及
 
         :param logic_operation: The logic_operation of this AnticrawlerCondition.
         :type logic_operation: str
@@ -108,7 +106,7 @@ class AnticrawlerCondition:
     def contents(self):
         r"""Gets the contents of this AnticrawlerCondition.
 
-        条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
+        **参数解释：** 条件列表逻辑匹配内容 **约束限制：** 当logic_operation参数不以any或者all结尾时，需要传该参数；仅支持单个匹配内容 **取值范围：** 匹配内容字符串长度范围：[1, 4096] **默认取值：** 不涉及
 
         :return: The contents of this AnticrawlerCondition.
         :rtype: list[str]
@@ -119,7 +117,7 @@ class AnticrawlerCondition:
     def contents(self, contents):
         r"""Sets the contents of this AnticrawlerCondition.
 
-        条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
+        **参数解释：** 条件列表逻辑匹配内容 **约束限制：** 当logic_operation参数不以any或者all结尾时，需要传该参数；仅支持单个匹配内容 **取值范围：** 匹配内容字符串长度范围：[1, 4096] **默认取值：** 不涉及
 
         :param contents: The contents of this AnticrawlerCondition.
         :type contents: list[str]
@@ -130,7 +128,7 @@ class AnticrawlerCondition:
     def value_list_id(self):
         r"""Gets the value_list_id of this AnticrawlerCondition.
 
-        引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+        **参数解释：** 引用表ID **约束限制：** 当logic_operation参数以any或者all结尾时，需要传该参数；引用表类型要与category类型保持一致 **取值范围：** 通过ListValueList接口获取引用表ID **默认取值：** 不涉及
 
         :return: The value_list_id of this AnticrawlerCondition.
         :rtype: str
@@ -141,7 +139,7 @@ class AnticrawlerCondition:
     def value_list_id(self, value_list_id):
         r"""Sets the value_list_id of this AnticrawlerCondition.
 
-        引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+        **参数解释：** 引用表ID **约束限制：** 当logic_operation参数以any或者all结尾时，需要传该参数；引用表类型要与category类型保持一致 **取值范围：** 通过ListValueList接口获取引用表ID **默认取值：** 不涉及
 
         :param value_list_id: The value_list_id of this AnticrawlerCondition.
         :type value_list_id: str

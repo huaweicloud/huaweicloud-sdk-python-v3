@@ -27,7 +27,7 @@ class UpdateIpReputationRuleRequestBodyAction:
 
         The model defined in huaweicloud sdk
 
-        :param category: **参数解释：** 动作类型（如log表示仅记录） **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截  **默认取值：** 不涉及
+        :param category: **参数解释：** 动作类型 **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截 **默认取值：** 不涉及
         :type category: str
         """
         
@@ -36,14 +36,13 @@ class UpdateIpReputationRuleRequestBodyAction:
         self._category = None
         self.discriminator = None
 
-        if category is not None:
-            self.category = category
+        self.category = category
 
     @property
     def category(self):
         r"""Gets the category of this UpdateIpReputationRuleRequestBodyAction.
 
-        **参数解释：** 动作类型（如log表示仅记录） **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截  **默认取值：** 不涉及
+        **参数解释：** 动作类型 **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截 **默认取值：** 不涉及
 
         :return: The category of this UpdateIpReputationRuleRequestBodyAction.
         :rtype: str
@@ -54,7 +53,7 @@ class UpdateIpReputationRuleRequestBodyAction:
     def category(self, category):
         r"""Sets the category of this UpdateIpReputationRuleRequestBodyAction.
 
-        **参数解释：** 动作类型（如log表示仅记录） **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截  **默认取值：** 不涉及
+        **参数解释：** 动作类型 **约束限制：** 不涉及 **取值范围：** - pass :放行 - log ： 仅记录 - block： 拦截 **默认取值：** 不涉及
 
         :param category: The category of this UpdateIpReputationRuleRequestBodyAction.
         :type category: str

@@ -27,7 +27,7 @@ class ShowPolicyGeoipMapRequest:
 
         The model defined in huaweicloud sdk
 
-        :param lang: **参数解释：** 语言的类型 - cn代表中文 - en代表英文  **约束限制：** 不涉及 **取值范围：** - cn - en  **默认取值：** - cn
+        :param lang: **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - cn 中文 - en 英文 **默认取值：** cn
         :type lang: str
         """
         
@@ -43,7 +43,7 @@ class ShowPolicyGeoipMapRequest:
     def lang(self):
         r"""Gets the lang of this ShowPolicyGeoipMapRequest.
 
-        **参数解释：** 语言的类型 - cn代表中文 - en代表英文  **约束限制：** 不涉及 **取值范围：** - cn - en  **默认取值：** - cn
+        **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - cn 中文 - en 英文 **默认取值：** cn
 
         :return: The lang of this ShowPolicyGeoipMapRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowPolicyGeoipMapRequest:
     def lang(self, lang):
         r"""Sets the lang of this ShowPolicyGeoipMapRequest.
 
-        **参数解释：** 语言的类型 - cn代表中文 - en代表英文  **约束限制：** 不涉及 **取值范围：** - cn - en  **默认取值：** - cn
+        **参数解释：** 语言类型 **约束限制：** 不涉及 **取值范围：** - cn 中文 - en 英文 **默认取值：** cn
 
         :param lang: The lang of this ShowPolicyGeoipMapRequest.
         :type lang: str

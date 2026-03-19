@@ -39,7 +39,7 @@ class BatchCreateGeoIpRuleRequestBody:
 
         :param name: 地理位置控制规则名称
         :type name: str
-        :param geoip: 地理位置封禁区域： (CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 中国-台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 中国-澳门,HK： 中国-香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)。具体的位置编码参见《附录-地理位置编码》查询。
+        :param geoip: 地理位置封禁区域，可通过ShowPolicyGeoipMap接口查询支持的区域
         :type geoip: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
@@ -96,7 +96,7 @@ class BatchCreateGeoIpRuleRequestBody:
     def geoip(self):
         r"""Gets the geoip of this BatchCreateGeoIpRuleRequestBody.
 
-        地理位置封禁区域： (CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 中国-台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 中国-澳门,HK： 中国-香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)。具体的位置编码参见《附录-地理位置编码》查询。
+        地理位置封禁区域，可通过ShowPolicyGeoipMap接口查询支持的区域
 
         :return: The geoip of this BatchCreateGeoIpRuleRequestBody.
         :rtype: str
@@ -107,7 +107,7 @@ class BatchCreateGeoIpRuleRequestBody:
     def geoip(self, geoip):
         r"""Sets the geoip of this BatchCreateGeoIpRuleRequestBody.
 
-        地理位置封禁区域： (CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 中国-台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 中国-澳门,HK： 中国-香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)。具体的位置编码参见《附录-地理位置编码》查询。
+        地理位置封禁区域，可通过ShowPolicyGeoipMap接口查询支持的区域
 
         :param geoip: The geoip of this BatchCreateGeoIpRuleRequestBody.
         :type geoip: str

@@ -1,3 +1,558 @@
+# 3.1.188 2026-03-19
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDDoSPeak**
+    - changes of response param
+      - `* utime: int32 -> int64`
+  - **ListWafBandwidth**
+    - changes of response param
+      - `* curve.time: int32 -> int64`
+  - **ListWafQps**
+    - changes of response param
+      - `* curve.time: int32 -> int64`
+  - **ListWafGeoIpRule**
+    - changes of response param
+      - `* items.timestamp: int32 -> int64`
+  - **ShowInstanceByInstanceId**
+    - changes of response param
+      - `* expire_time: int32 -> int64`
+      - `* create_time: int32 -> int64`
+      - `* current_time: int32 -> int64`
+  - **ListDDoSBlackHoleEvent**
+    - changes of response param
+      - `* items.start_time: int32 -> int64`
+      - `* items.end_time: int32 -> int64`
+  - **ListWafAttackEvent**
+    - changes of response param
+      - `* list.time: int32 -> int64`
+  - **ListDDoSConnectionNumber**
+    - changes of response param
+      - `* data.list.time: int32 -> int64`
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ manage_state: enum value [os-ready,maintain]`
+  - **ListServers**
+    - changes of request param
+      - `+ manage_state: enum value [os-ready,maintain]`
+    - changes of response param
+      - `+ servers.manage_state: enum value [os-ready,maintain]`
+
+### HuaweiCloud SDK DeH
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDedicatedHostAllTypes**
+    - changes of response param
+      - `+ page_info`
+      - `- dedicated_host_types.page_info`
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJobStatus**
+    - changes of response param
+      - `+ lastModifiyUser`
+      - `+ createUser`
+      - `+ status: enum value [STARTING,PAUSE,ABNORMAL,DISABLE,OVERLOAD,INIT]`
+      - `- status: enum value [STARTTING]`
+      - `+ nodes.lastInstanceStatus`
+      - `+ nodes.runningData`
+      - `+ nodes.extendCounter`
+      - `+ nodes.status: enum value [STARTING,PAUSE,ABNORMAL,DISABLE,OVERLOAD,INIT]`
+      - `- nodes.status: enum value [STARTTING]`
+  - **ListJobInstances**
+    - changes of request param
+      - `+ status: enum value [forceSuccess,ignoreSuccess,freeze,skip-by-depend,waiting-confirm]`
+    - changes of response param
+      - `+ instances.status: enum value [forceSuccess,ignoreSuccess,freeze,skip-by-depend,waiting-confirm]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateSqlLimitTask**
+    - changes of request param
+      - `+ node_infos.sql_ids`
+      - `- node_infos.sql_id`
+      - `* node_infos: list<CreateLimitTaskNodeOption> -> list<CreateSqlLimitTaskNodeOption>`
+  - **ListWdrSnapshotsCollectResults**
+    - changes of response param
+      - `* wdr_snapshots.obs_bucket.port: string -> int32`
+  - **ShowFullSql**
+    - changes of response param
+      - `+ components.sql`
+  - **ListSchemaVolumes**
+    - changes of response param
+      - `+ schema_volumes.schema_name`
+      - `- schema_volumes.nsp_name`
+  - **ListFullSqlSwitches**
+    - changes of response param
+      - `+ allowed_sql_types.prefixes`
+  - **ListLtsConfigs**
+    - changes of request param
+      - `+ instance_id`
+      - `- instance_id`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportAntiVirusResult**
+    - changes of request param
+      - `+ severities`
+  - **ShowSwitchesStatus**
+    - changes of request param
+      - `+ code: enum value [display_unprotected_host]`
+  - **ChangeSwitchesStatus**
+    - changes of request param
+      - `+ code: enum value [display_unprotected_host]`
+  - **ListVulHostVuls**
+    - changes of request param
+      - `+ host_id_list`
+  - **ListVulHostHosts**
+    - changes of request param
+      - `+ host_id_list`
+  - **ListHostStatus**
+    - changes of request param
+      - `+ host_name_list`
+      - `+ host_id_list`
+      - `+ public_ip_list`
+      - `+ private_ip_list`
+  - **ListImageLocal**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListRaspEvents**
+    - changes of request param
+      - `* host_id: required -> optional`
+  - **ListAntivirusHandleHistory**
+    - changes of request param
+      - `+ severities`
+  - **ListAntiVirusHost**
+    - changes of response param
+      - `+ data_list.os_name`
+      - `+ data_list.host_status`
+      - `+ data_list.agent_status`
+      - `+ data_list.asset_value`
+  - **ListAntiVirusPaidHosts**
+    - changes of request param
+      - `* scan_type: required -> optional`
+  - **ListAppWhitelistHostStatus**
+    - changes of response param
+      - `+ data_list.os_name`
+      - `+ data_list.host_status`
+      - `+ data_list.agent_status`
+  - **ShowBaselineOverview**
+    - changes of request param
+      - `+ statistics_type`
+  - **ListAntiVirusResult**
+    - changes of request param
+      - `+ severities`
+      - `+ id_list`
+      - `+ file_hash_list`
+
+### HuaweiCloud SDK OBS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **PutObject**
+    - changes of request param
+      - `+ x-obs-server-side-encryption-bucket-key-enabled`
+      - `+ x-obs-server-side-data-encryption`
+      - `+ x-obs-tagging`
+      - `+ x-obs-object-lock-mode`
+      - `+ x-obs-object-lock-retain-until-date`
+
+### HuaweiCloud SDK RGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTemplateDeployParams**
+    - changes of response param
+      - `+ variables.latest_param`
+
+### HuaweiCloud SDK SCM
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `DisableNotification`, `EnableNotification`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceReplicationPolicyExecSubTasks**
+    - changes of response param
+      - `+ sub_tasks`
+      - `- subtasks`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UpdateIgnoreRuleHitNum`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPunishmentRule**
+    - changes of response param
+      - `+ time_unit`
+  - **UpdatePunishmentRule**
+    - changes of request param
+      - `+ time_unit`
+      - `+ category: enum value [long_header_block,short_header_block]`
+    - changes of response param
+      - `+ time_unit`
+  - **DeletePunishmentRule**
+    - changes of response param
+      - `+ time_unit`
+  - **ShowConsoleConfig**
+    - changes of request param
+      - `+ region`
+  - **UpdatePolicyRuleStatus**
+    - changes of request param
+      - `+ ruletype: enum value [antileakage,ip-reputation,llm-guards]`
+  - **UpdatePremiumHostAccessStatus**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **ConfirmPolicyIpReputationMap**
+    - changes of request param
+      - `* lang: required -> optional`
+      - `+ lang: enum value [cn,en]`
+      - `+ type: enum value [idc]`
+  - **ShowWebProtectionRule**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **ConfirmPolicyAntileakageMap**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **BatchDeleteRules**
+    - changes of request param
+      - `+ rule_type: enum value [cc,custom,whiteblackip,privacy,ignore,geoip,antitamper,antileakage,ip-reputation,llm-guards]`
+  - **BatchUpdateGeoipRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **BatchUpdateWhiteblackipRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `+ time_mode: enum value [permanent,customize]`
+  - **BatchUpdateIpReputationRules**
+    - changes of request param
+      - `+ action.category: enum value [log,pass,block]`
+      - `+ type: enum value [idc]`
+  - **BatchUpdateAntitamperRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **BatchUpdateAntileakageRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **UpdateIpReputationRule**
+    - changes of request param
+      - `- policyname`
+  - **UpdatePremiumInstanceProgress**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **ListThreats**
+    - changes of request param
+      - `+ from`
+      - `+ to`
+      - `+ instances`
+      - `* recent: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+    - changes of response param
+      - `+ llm_prompt_injection`
+      - `+ llm_prompt_sensitive`
+      - `+ llm_response_sensitive`
+  - **ListUrl**
+    - changes of request param
+      - `* top: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+  - **ListSourceIpTop5**
+    - changes of request param
+      - `+ from`
+      - `+ to`
+      - `+ top`
+      - `+ instances`
+      - `* recent: required -> optional`
+      - `+ recent: enum value [yesterday,today,3days,1week,1month]`
+      - `* hosts: required -> optional`
+  - **ShowAnticrawlerRule**
+    - changes of response param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **UpdateAnticrawlerRule**
+    - changes of request param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+    - changes of response param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **DeleteAnticrawlerRule**
+    - changes of response param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **CreatePunishmentRule**
+    - changes of request param
+      - `+ time_unit`
+      - `+ category: enum value [long_header_block,short_header_block]`
+    - changes of response param
+      - `+ time_unit`
+  - **ListPunishmentRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - changes of response param
+      - `+ items.time_unit`
+  - **ListAntileakageRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ShowIgnoreRule**
+    - changes of response param
+      - `+ clear_time`
+      - `+ update_time`
+      - `+ hit_num`
+  - **UpdateIgnoreRule**
+    - changes of request param
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+    - changes of response param
+      - `+ clear_time`
+      - `+ update_time`
+      - `+ hit_num`
+  - **ListStatistics**
+    - changes of request param
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListTopAbnormal**
+    - changes of request param
+      - `+ code: enum value [404,500,502]`
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListEvent**
+    - changes of request param
+      - `+ ids`
+      - `+ nids`
+      - `+ nattacks`
+      - `+ rules`
+      - `+ nrules`
+      - `+ nsips`
+      - `+ sip`
+      - `+ urls`
+      - `+ nurls`
+      - `+ url`
+      - `+ actions`
+      - `+ nactions`
+      - `+ domain`
+      - `+ ndomain`
+      - `+ domains`
+      - `+ ip_countries`
+      - `+ nip_countries`
+      - `+ ip_regions`
+      - `+ nip_regions`
+      - `+ response_codes`
+      - `+ payload`
+      - `+ instances`
+      - `+ sort_key`
+      - `+ sort_direction`
+      - `+ query_mode`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **ShowEvent**
+    - changes of request param
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **UpdateWhiteblackipRule**
+    - changes of request param
+      - `+ time_mode: enum value [permanent,customize]`
+  - **ShowIpGroup**
+    - changes of response param
+      - `+ ip_remarks`
+  - **UpdateIpGroup**
+    - changes of request param
+      - `+ action: enum value [add,delete,update]`
+      - `+ ip_remarks`
+    - changes of response param
+      - `+ ip_remarks`
+  - **DeleteIpGroup**
+    - changes of response param
+      - `+ ip_remarks`
+  - **ListTopIp**
+    - changes of request param
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListTopUrl**
+    - changes of request param
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **CreateIpReputationRule**
+    - changes of request param
+      - `- policyname`
+      - `- status`
+      - `+ action.category: enum value [log,pass,block]`
+  - **ListIpReputationRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListGeoIpPolicyRules**
+    - changes of request param
+      - `* policyids: string -> list<string>`
+  - **BatchCreateAntiTamperRule**
+    - changes of request param
+      - `* policyids: string -> list<string>`
+  - **ListAntiTamperPolicyRules**
+    - changes of request param
+      - `* policyids: string -> list<string>`
+    - changes of response param
+      - `+ items.hostname`
+      - `- items.policyname`
+      - `- items.category`
+      - `- items.contents`
+      - `- items.action`
+      - `* items: list<LeakageListInfo> -> list<AntiTamperRuleResponseBody>`
+  - **BatchCreateIpReputationRule**
+    - changes of request param
+      - `+ type: enum value [idc]`
+      - `+ action.category: enum value [log,pass,block]`
+  - **BatchUpdateCcRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **BatchUpdateCustomRules**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `* body: object<BatchUpdateCustomRuleRequestBody> -> object<BatchUpdateCustomRulesRequestBody>`
+  - **BatchUpdateIgnoreRules**
+    - changes of request param
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+  - **ListCcRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListCustomRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **CreateAnticrawlerRule**
+    - changes of request param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+    - changes of response param
+      - `+ conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **ListAnticrawlerRules**
+    - changes of request param
+      - `+ page`
+      - `+ pagesize`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - changes of response param
+      - `+ items.conditions.logic_operation: enum value [contain_any,not_contain_all,equal_any,not_equal_all,prefix_any,not_prefix_all,suffix_any,not_suffix_all,contain,not_contain,equal,not_equal,prefix,not_prefix,suffix,not_suffix,len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match]`
+  - **CreateIgnoreRule**
+    - changes of request param
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+  - **ListQpsTimeline**
+    - changes of request param
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **ListBandwidthTimeline**
+    - changes of request param
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+      - `+ display_option: enum value [0,1]`
+  - **ListOverviewsClassification**
+    - changes of request param
+      - `+ X-Language: enum value [zh-cn,en-us]`
+      - `* hosts: string -> list<string>`
+      - `* instances: string -> list<string>`
+  - **CreateWhiteblackipRule**
+    - changes of request param
+      - `+ time_mode: enum value [permanent,customize]`
+  - **CreateIpGroup**
+    - changes of request param
+      - `+ ip_remarks`
+    - changes of response param
+      - `+ ip_remarks`
+  - **ListIpGroup**
+    - changes of response param
+      - `+ items.ip_remarks`
+  - **BatchCreateCustomRule**
+    - changes of request param
+      - `* policyids: string -> list<string>`
+  - **ListCustomPolicyRules**
+    - changes of request param
+      - `* policyids: string -> list<string>`
+  - **BatchCreateWhiteblackipRule**
+    - changes of request param
+      - `+ time_mode: enum value [permanent,customize]`
+  - **BatchCreateIgnoreRule**
+    - changes of request param
+      - `+ conditions.category: enum value [url,custom_geo,robot,user-agent,ip,ipv6,params,cookie,referer,header,method,request_line,request,protocol,request_body]`
+      - `+ conditions.logic_operation: enum value [len_equal,len_not_equal,len_greater,len_less,len_greater_equal,len_less_equal,regular_match,regular_not_match,match,not_match,num_equal,num_not_equal,num_greater,num_less,exist,not_exist,equal,not_equal,equal_any,not_equal_all,prefix,prefix_any,not_prefix,not_prefix_all,suffix,suffix_any,not_suffix,not_suffix_all,contain,contain_any,not_contain,not_contain_all]`
+
 # 3.1.187 2026-03-12
 
 ### HuaweiCloud SDK CBH

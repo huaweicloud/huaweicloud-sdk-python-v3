@@ -20,7 +20,7 @@ class BatchUpdateAntileakageRuleRequestBody:
         'contents': 'list[str]',
         'action': 'LeakageListInfoAction',
         'description': 'str',
-        'policy_rule_ids': 'list[PolicyRuleIdRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateAntileakageRuleRequestBodyPolicyRuleIds]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class BatchUpdateAntileakageRuleRequestBody:
         :param description: 规则描述
         :type description: str
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntileakageRuleRequestBodyPolicyRuleIds`]
         """
         
         
@@ -183,7 +183,7 @@ class BatchUpdateAntileakageRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_rule_ids of this BatchUpdateAntileakageRuleRequestBody.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntileakageRuleRequestBodyPolicyRuleIds`]
         """
         return self._policy_rule_ids
 
@@ -194,7 +194,7 @@ class BatchUpdateAntileakageRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_rule_ids: The policy_rule_ids of this BatchUpdateAntileakageRuleRequestBody.
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateAntileakageRuleRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
 

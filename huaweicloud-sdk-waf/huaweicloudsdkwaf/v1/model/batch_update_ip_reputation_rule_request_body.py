@@ -17,10 +17,10 @@ class BatchUpdateIpReputationRuleRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'action': 'BatchUpdateIpReputationRuleRequestBodyAction',
+        'action': 'CreateIpReputationRuleRequestBodyAction',
         'type': 'str',
         'tags': 'list[str]',
-        'policy_rule_ids': 'list[PolicyRuleIdRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateIpReputationRuleRequestBodyPolicyRuleIds]'
     }
 
     attribute_map = {
@@ -37,18 +37,18 @@ class BatchUpdateIpReputationRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param name: **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
         :param description: **参数解释：** 规则描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type description: str
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyAction`
-        :param type: **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
+        :param type: **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
         :type type: str
-        :param tags: **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\&quot;,\&quot;分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tags: list[str]
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyPolicyRuleIds`]
         """
         
         
@@ -73,7 +73,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def name(self):
         r"""Gets the name of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this BatchUpdateIpReputationRuleRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def name(self, name):
         r"""Sets the name of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 规则名称 **约束限制：** 长度范围：[1, 256] **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this BatchUpdateIpReputationRuleRequestBody.
         :type name: str
@@ -118,7 +118,7 @@ class BatchUpdateIpReputationRuleRequestBody:
         r"""Gets the action of this BatchUpdateIpReputationRuleRequestBody.
 
         :return: The action of this BatchUpdateIpReputationRuleRequestBody.
-        :rtype: :class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         return self._action
 
@@ -127,7 +127,7 @@ class BatchUpdateIpReputationRuleRequestBody:
         r"""Sets the action of this BatchUpdateIpReputationRuleRequestBody.
 
         :param action: The action of this BatchUpdateIpReputationRuleRequestBody.
-        :type action: :class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.CreateIpReputationRuleRequestBodyAction`
         """
         self._action = action
 
@@ -135,7 +135,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def type(self):
         r"""Gets the type of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :return: The type of this BatchUpdateIpReputationRuleRequestBody.
         :rtype: str
@@ -146,7 +146,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def type(self, type):
         r"""Sets the type of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 信誉类型（目前只支持idc） **约束限制：** 不涉及 **取值范围：** - idc  **默认取值：** 不涉及
 
         :param type: The type of this BatchUpdateIpReputationRuleRequestBody.
         :type type: str
@@ -157,7 +157,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def tags(self):
         r"""Gets the tags of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The tags of this BatchUpdateIpReputationRuleRequestBody.
         :rtype: list[str]
@@ -168,7 +168,7 @@ class BatchUpdateIpReputationRuleRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this BatchUpdateIpReputationRuleRequestBody.
 
-        **参数解释：** 标签列表，关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 标签列表，用于指定关联的情报标识，可通过ConfirmPolicyIpReputationMap接口查询；多个标识之间使用逗号\",\"分隔 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param tags: The tags of this BatchUpdateIpReputationRuleRequestBody.
         :type tags: list[str]
@@ -182,7 +182,7 @@ class BatchUpdateIpReputationRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_rule_ids of this BatchUpdateIpReputationRuleRequestBody.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyPolicyRuleIds`]
         """
         return self._policy_rule_ids
 
@@ -193,7 +193,7 @@ class BatchUpdateIpReputationRuleRequestBody:
         **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_rule_ids: The policy_rule_ids of this BatchUpdateIpReputationRuleRequestBody.
-        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.PolicyRuleIdRequestBodyPolicyRuleIds`]
+        :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateIpReputationRuleRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
 

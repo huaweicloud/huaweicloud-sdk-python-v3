@@ -17,24 +17,28 @@ class UpdateIpGroupRequestBody:
     openapi_types = {
         'name': 'str',
         'ips': 'str',
+        'ip_remarks': 'dict(str, str)',
         'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'ips': 'ips',
+        'ip_remarks': 'ip_remarks',
         'description': 'description'
     }
 
-    def __init__(self, name=None, ips=None, description=None):
+    def __init__(self, name=None, ips=None, ip_remarks=None, description=None):
         r"""UpdateIpGroupRequestBody
 
         The model defined in huaweicloud sdk
 
         :param name: 地址组名称
         :type name: str
-        :param ips: 以逗号分隔的ip或ip段
+        :param ips: **参数解释：** 以逗号分隔的ip或ip段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ips: str
+        :param ip_remarks: **参数解释：** ip或ip段的备注 **约束限制：** key必须是ips中包含的单个ip或ip段 **取值范围：** value必须匹配正则：[^&lt;&gt;]{0,64} **默认取值：** 不涉及
+        :type ip_remarks: dict(str, str)
         :param description: 地址组描述
         :type description: str
         """
@@ -43,12 +47,15 @@ class UpdateIpGroupRequestBody:
 
         self._name = None
         self._ips = None
+        self._ip_remarks = None
         self._description = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         self.ips = ips
+        if ip_remarks is not None:
+            self.ip_remarks = ip_remarks
         if description is not None:
             self.description = description
 
@@ -78,7 +85,7 @@ class UpdateIpGroupRequestBody:
     def ips(self):
         r"""Gets the ips of this UpdateIpGroupRequestBody.
 
-        以逗号分隔的ip或ip段
+        **参数解释：** 以逗号分隔的ip或ip段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The ips of this UpdateIpGroupRequestBody.
         :rtype: str
@@ -89,12 +96,34 @@ class UpdateIpGroupRequestBody:
     def ips(self, ips):
         r"""Sets the ips of this UpdateIpGroupRequestBody.
 
-        以逗号分隔的ip或ip段
+        **参数解释：** 以逗号分隔的ip或ip段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param ips: The ips of this UpdateIpGroupRequestBody.
         :type ips: str
         """
         self._ips = ips
+
+    @property
+    def ip_remarks(self):
+        r"""Gets the ip_remarks of this UpdateIpGroupRequestBody.
+
+        **参数解释：** ip或ip段的备注 **约束限制：** key必须是ips中包含的单个ip或ip段 **取值范围：** value必须匹配正则：[^<>]{0,64} **默认取值：** 不涉及
+
+        :return: The ip_remarks of this UpdateIpGroupRequestBody.
+        :rtype: dict(str, str)
+        """
+        return self._ip_remarks
+
+    @ip_remarks.setter
+    def ip_remarks(self, ip_remarks):
+        r"""Sets the ip_remarks of this UpdateIpGroupRequestBody.
+
+        **参数解释：** ip或ip段的备注 **约束限制：** key必须是ips中包含的单个ip或ip段 **取值范围：** value必须匹配正则：[^<>]{0,64} **默认取值：** 不涉及
+
+        :param ip_remarks: The ip_remarks of this UpdateIpGroupRequestBody.
+        :type ip_remarks: dict(str, str)
+        """
+        self._ip_remarks = ip_remarks
 
     @property
     def description(self):

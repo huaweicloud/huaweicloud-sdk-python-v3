@@ -29,7 +29,7 @@ class CustomAction:
 
         The model defined in huaweicloud sdk
 
-        :param category: 操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
+        :param category: 操作类型。   - block：拦截  - pass：放行   - log：仅记录
         :type category: str
         :param followed_action_id: 攻击惩罚规则id，只有当category参数值为block时才可配置该参数
         :type followed_action_id: str
@@ -49,7 +49,7 @@ class CustomAction:
     def category(self):
         r"""Gets the category of this CustomAction.
 
-        操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
+        操作类型。   - block：拦截  - pass：放行   - log：仅记录
 
         :return: The category of this CustomAction.
         :rtype: str
@@ -60,7 +60,7 @@ class CustomAction:
     def category(self, category):
         r"""Sets the category of this CustomAction.
 
-        操作类型。   - “block”：拦截。   - “pass”：放行。   - “log”：仅记录
+        操作类型。   - block：拦截  - pass：放行   - log：仅记录
 
         :param category: The category of this CustomAction.
         :type category: str

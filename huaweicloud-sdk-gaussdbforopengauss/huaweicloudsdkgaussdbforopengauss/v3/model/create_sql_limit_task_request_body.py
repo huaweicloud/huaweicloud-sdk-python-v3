@@ -27,7 +27,7 @@ class CreateSqlLimitTaskRequestBody:
         'cpu_utilization': 'int',
         'memory_utilization': 'int',
         'databases': 'str',
-        'node_infos': 'list[CreateLimitTaskNodeOption]'
+        'node_infos': 'list[CreateSqlLimitTaskNodeOption]'
     }
 
     attribute_map = {
@@ -76,7 +76,7 @@ class CreateSqlLimitTaskRequestBody:
         :param databases: **参数解释**: 数据库名称，限流只对指定的数据库生效，多个数据库名称用英文逗号分割。 **约束限制**: 当“limit_type”为SQL_TYPE类型时，databases参数必选。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type databases: str
         :param node_infos: **参数解释**: CN节点信息列表 **约束限制**: 如果“limit_type”为SQL_ID，则“node_infos”必选。
-        :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskNodeOption`]
+        :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateSqlLimitTaskNodeOption`]
         """
         
         
@@ -390,7 +390,7 @@ class CreateSqlLimitTaskRequestBody:
         **参数解释**: CN节点信息列表 **约束限制**: 如果“limit_type”为SQL_ID，则“node_infos”必选。
 
         :return: The node_infos of this CreateSqlLimitTaskRequestBody.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskNodeOption`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateSqlLimitTaskNodeOption`]
         """
         return self._node_infos
 
@@ -401,7 +401,7 @@ class CreateSqlLimitTaskRequestBody:
         **参数解释**: CN节点信息列表 **约束限制**: 如果“limit_type”为SQL_ID，则“node_infos”必选。
 
         :param node_infos: The node_infos of this CreateSqlLimitTaskRequestBody.
-        :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateLimitTaskNodeOption`]
+        :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CreateSqlLimitTaskNodeOption`]
         """
         self._node_infos = node_infos
 

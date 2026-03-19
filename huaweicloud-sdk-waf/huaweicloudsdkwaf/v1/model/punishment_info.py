@@ -18,6 +18,7 @@ class PunishmentInfo:
         'id': 'str',
         'policyid': 'str',
         'block_time': 'int',
+        'time_unit': 'str',
         'category': 'str',
         'description': 'str',
         'timestamp': 'int'
@@ -27,12 +28,13 @@ class PunishmentInfo:
         'id': 'id',
         'policyid': 'policyid',
         'block_time': 'block_time',
+        'time_unit': 'time_unit',
         'category': 'category',
         'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, policyid=None, block_time=None, category=None, description=None, timestamp=None):
+    def __init__(self, id=None, policyid=None, block_time=None, time_unit=None, category=None, description=None, timestamp=None):
         r"""PunishmentInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PunishmentInfo:
         :type policyid: str
         :param block_time: 拦截时间
         :type block_time: int
+        :param time_unit: 时间单位
+        :type time_unit: str
         :param category: 攻击惩罚类别
         :type category: str
         :param description: 规则描述
@@ -56,6 +60,7 @@ class PunishmentInfo:
         self._id = None
         self._policyid = None
         self._block_time = None
+        self._time_unit = None
         self._category = None
         self._description = None
         self._timestamp = None
@@ -67,6 +72,8 @@ class PunishmentInfo:
             self.policyid = policyid
         if block_time is not None:
             self.block_time = block_time
+        if time_unit is not None:
+            self.time_unit = time_unit
         if category is not None:
             self.category = category
         if description is not None:
@@ -139,6 +146,28 @@ class PunishmentInfo:
         :type block_time: int
         """
         self._block_time = block_time
+
+    @property
+    def time_unit(self):
+        r"""Gets the time_unit of this PunishmentInfo.
+
+        时间单位
+
+        :return: The time_unit of this PunishmentInfo.
+        :rtype: str
+        """
+        return self._time_unit
+
+    @time_unit.setter
+    def time_unit(self, time_unit):
+        r"""Sets the time_unit of this PunishmentInfo.
+
+        时间单位
+
+        :param time_unit: The time_unit of this PunishmentInfo.
+        :type time_unit: str
+        """
+        self._time_unit = time_unit
 
     @property
     def category(self):

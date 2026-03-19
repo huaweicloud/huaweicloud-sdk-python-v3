@@ -23,12 +23,15 @@ class ListAntiVirusResultRequest:
         'public_ip': 'str',
         'handle_status': 'str',
         'severity_list': 'list[str]',
+        'severities': 'str',
         'asset_value': 'str',
         'malware_name': 'str',
         'file_path': 'str',
         'file_hash': 'str',
         'task_name': 'str',
-        'manual_isolate': 'bool'
+        'manual_isolate': 'bool',
+        'id_list': 'list[str]',
+        'file_hash_list': 'list[str]'
     }
 
     attribute_map = {
@@ -40,15 +43,18 @@ class ListAntiVirusResultRequest:
         'public_ip': 'public_ip',
         'handle_status': 'handle_status',
         'severity_list': 'severity_list',
+        'severities': 'severities',
         'asset_value': 'asset_value',
         'malware_name': 'malware_name',
         'file_path': 'file_path',
         'file_hash': 'file_hash',
         'task_name': 'task_name',
-        'manual_isolate': 'manual_isolate'
+        'manual_isolate': 'manual_isolate',
+        'id_list': 'id_list',
+        'file_hash_list': 'file_hash_list'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, host_name=None, private_ip=None, public_ip=None, handle_status=None, severity_list=None, asset_value=None, malware_name=None, file_path=None, file_hash=None, task_name=None, manual_isolate=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, host_name=None, private_ip=None, public_ip=None, handle_status=None, severity_list=None, severities=None, asset_value=None, malware_name=None, file_path=None, file_hash=None, task_name=None, manual_isolate=None, id_list=None, file_hash_list=None):
         r"""ListAntiVirusResultRequest
 
         The model defined in huaweicloud sdk
@@ -67,8 +73,10 @@ class ListAntiVirusResultRequest:
         :type public_ip: str
         :param handle_status: **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
         :type handle_status: str
-        :param severity_list: **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        :param severity_list: **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
         :type severity_list: list[str]
+        :param severities: 威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+        :type severities: str
         :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
         :param malware_name: **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
@@ -81,6 +89,10 @@ class ListAntiVirusResultRequest:
         :type task_name: str
         :param manual_isolate: **参数解释**: 是否使用手动隔离按钮 **约束限制**: 不涉及 **取值范围**: true（已使用手动隔离）、false（未使用手动隔离） **默认取值**: 不涉及 
         :type manual_isolate: bool
+        :param id_list: id列表
+        :type id_list: list[str]
+        :param file_hash_list: hash列表
+        :type file_hash_list: list[str]
         """
         
         
@@ -93,12 +105,15 @@ class ListAntiVirusResultRequest:
         self._public_ip = None
         self._handle_status = None
         self._severity_list = None
+        self._severities = None
         self._asset_value = None
         self._malware_name = None
         self._file_path = None
         self._file_hash = None
         self._task_name = None
         self._manual_isolate = None
+        self._id_list = None
+        self._file_hash_list = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -115,6 +130,8 @@ class ListAntiVirusResultRequest:
             self.handle_status = handle_status
         if severity_list is not None:
             self.severity_list = severity_list
+        if severities is not None:
+            self.severities = severities
         if asset_value is not None:
             self.asset_value = asset_value
         if malware_name is not None:
@@ -127,6 +144,10 @@ class ListAntiVirusResultRequest:
             self.task_name = task_name
         if manual_isolate is not None:
             self.manual_isolate = manual_isolate
+        if id_list is not None:
+            self.id_list = id_list
+        if file_hash_list is not None:
+            self.file_hash_list = file_hash_list
 
     @property
     def enterprise_project_id(self):
@@ -286,7 +307,7 @@ class ListAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :return: The severity_list of this ListAntiVirusResultRequest.
         :rtype: list[str]
@@ -297,12 +318,34 @@ class ListAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntiVirusResultRequest.
 
-        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
+        **参数解释**: 威胁等级，已废弃 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ListAntiVirusResultRequest.
         :type severity_list: list[str]
         """
         self._severity_list = severity_list
+
+    @property
+    def severities(self):
+        r"""Gets the severities of this ListAntiVirusResultRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :return: The severities of this ListAntiVirusResultRequest.
+        :rtype: str
+        """
+        return self._severities
+
+    @severities.setter
+    def severities(self, severities):
+        r"""Sets the severities of this ListAntiVirusResultRequest.
+
+        威胁等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
+
+        :param severities: The severities of this ListAntiVirusResultRequest.
+        :type severities: str
+        """
+        self._severities = severities
 
     @property
     def asset_value(self):
@@ -435,6 +478,50 @@ class ListAntiVirusResultRequest:
         :type manual_isolate: bool
         """
         self._manual_isolate = manual_isolate
+
+    @property
+    def id_list(self):
+        r"""Gets the id_list of this ListAntiVirusResultRequest.
+
+        id列表
+
+        :return: The id_list of this ListAntiVirusResultRequest.
+        :rtype: list[str]
+        """
+        return self._id_list
+
+    @id_list.setter
+    def id_list(self, id_list):
+        r"""Sets the id_list of this ListAntiVirusResultRequest.
+
+        id列表
+
+        :param id_list: The id_list of this ListAntiVirusResultRequest.
+        :type id_list: list[str]
+        """
+        self._id_list = id_list
+
+    @property
+    def file_hash_list(self):
+        r"""Gets the file_hash_list of this ListAntiVirusResultRequest.
+
+        hash列表
+
+        :return: The file_hash_list of this ListAntiVirusResultRequest.
+        :rtype: list[str]
+        """
+        return self._file_hash_list
+
+    @file_hash_list.setter
+    def file_hash_list(self, file_hash_list):
+        r"""Sets the file_hash_list of this ListAntiVirusResultRequest.
+
+        hash列表
+
+        :param file_hash_list: The file_hash_list of this ListAntiVirusResultRequest.
+        :type file_hash_list: list[str]
+        """
+        self._file_hash_list = file_hash_list
 
     def to_dict(self):
         result = {}

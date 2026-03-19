@@ -15,7 +15,7 @@ class BatchCreateAntiTamperRuleRequest:
     sensitive_list = []
 
     openapi_types = {
-        'policyids': 'str',
+        'policyids': 'list[str]',
         'enterprise_project_id': 'str',
         'body': 'BatchCreateAntiTamperRulesRequestBody'
     }
@@ -31,9 +31,9 @@ class BatchCreateAntiTamperRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param policyids: **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
-        :type policyids: str
-        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        :param policyids: **参数解释：** 防护策略id列表，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type policyids: list[str]
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
         :type enterprise_project_id: str
         :param body: Body of the BatchCreateAntiTamperRuleRequest
         :type body: :class:`huaweicloudsdkwaf.v1.BatchCreateAntiTamperRulesRequestBody`
@@ -57,10 +57,10 @@ class BatchCreateAntiTamperRuleRequest:
     def policyids(self):
         r"""Gets the policyids of this BatchCreateAntiTamperRuleRequest.
 
-        **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        **参数解释：** 防护策略id列表，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policyids of this BatchCreateAntiTamperRuleRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._policyids
 
@@ -68,10 +68,10 @@ class BatchCreateAntiTamperRuleRequest:
     def policyids(self, policyids):
         r"""Sets the policyids of this BatchCreateAntiTamperRuleRequest.
 
-        **参数解释：** 域名id。 **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        **参数解释：** 防护策略id列表，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policyids: The policyids of this BatchCreateAntiTamperRuleRequest.
-        :type policyids: str
+        :type policyids: list[str]
         """
         self._policyids = policyids
 
@@ -79,7 +79,7 @@ class BatchCreateAntiTamperRuleRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this BatchCreateAntiTamperRuleRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :return: The enterprise_project_id of this BatchCreateAntiTamperRuleRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchCreateAntiTamperRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this BatchCreateAntiTamperRuleRequest.
 
-        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符 **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this BatchCreateAntiTamperRuleRequest.
         :type enterprise_project_id: str

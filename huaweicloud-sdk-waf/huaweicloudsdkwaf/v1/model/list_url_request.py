@@ -37,17 +37,17 @@ class ListUrlRequest:
 
         The model defined in huaweicloud sdk
 
-        :param top: 受攻击次数最多的几条url
+        :param top: **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
         :type top: int
-        :param recent: **参数解释：** 查询日志的时间范围，如1week（1周）、1month（1个月） **约束限制：** 不涉及 **取值范围：** - yesterday - today - 3days - 1week - 1month  **默认取值：** 不涉及
+        :param recent: **参数解释：** 查询的时间范围，recent参数与from、to必须使用其中一个。当同时使用recent参数与from、to时，以recent参数为准 **约束限制：** 不涉及 **取值范围：**  - yesterday：昨天  - today：今天  - 3days：近3天   - 1week：近7天   - 1month：近30天  **默认取值：** 不涉及
         :type recent: str
-        :param _from: **参数解释：** 开始时间，统计周期的起始时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param _from: **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from &lt;&#x3D; to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
         :type _from: int
-        :param to: **参数解释：** 结束时间，统计周期的终止时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param to: **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
         :type to: int
-        :param hosts: 要查询事件的域名id列表
+        :param hosts: **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type hosts: list[str]
-        :param instances: 要查询事件的独享域名id列表
+        :param instances: **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type instances: list[str]
         """
         
@@ -61,7 +61,8 @@ class ListUrlRequest:
         self._instances = None
         self.discriminator = None
 
-        self.top = top
+        if top is not None:
+            self.top = top
         if recent is not None:
             self.recent = recent
         if _from is not None:
@@ -77,7 +78,7 @@ class ListUrlRequest:
     def top(self):
         r"""Gets the top of this ListUrlRequest.
 
-        受攻击次数最多的几条url
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :return: The top of this ListUrlRequest.
         :rtype: int
@@ -88,7 +89,7 @@ class ListUrlRequest:
     def top(self, top):
         r"""Sets the top of this ListUrlRequest.
 
-        受攻击次数最多的几条url
+        **参数解释：** 查询前TopN的结果 **约束限制：** 不涉及 **取值范围：** [1, 10] **默认取值：** 5
 
         :param top: The top of this ListUrlRequest.
         :type top: int
@@ -99,7 +100,7 @@ class ListUrlRequest:
     def recent(self):
         r"""Gets the recent of this ListUrlRequest.
 
-        **参数解释：** 查询日志的时间范围，如1week（1周）、1month（1个月） **约束限制：** 不涉及 **取值范围：** - yesterday - today - 3days - 1week - 1month  **默认取值：** 不涉及
+        **参数解释：** 查询的时间范围，recent参数与from、to必须使用其中一个。当同时使用recent参数与from、to时，以recent参数为准 **约束限制：** 不涉及 **取值范围：**  - yesterday：昨天  - today：今天  - 3days：近3天   - 1week：近7天   - 1month：近30天  **默认取值：** 不涉及
 
         :return: The recent of this ListUrlRequest.
         :rtype: str
@@ -110,7 +111,7 @@ class ListUrlRequest:
     def recent(self, recent):
         r"""Sets the recent of this ListUrlRequest.
 
-        **参数解释：** 查询日志的时间范围，如1week（1周）、1month（1个月） **约束限制：** 不涉及 **取值范围：** - yesterday - today - 3days - 1week - 1month  **默认取值：** 不涉及
+        **参数解释：** 查询的时间范围，recent参数与from、to必须使用其中一个。当同时使用recent参数与from、to时，以recent参数为准 **约束限制：** 不涉及 **取值范围：**  - yesterday：昨天  - today：今天  - 3days：近3天   - 1week：近7天   - 1month：近30天  **默认取值：** 不涉及
 
         :param recent: The recent of this ListUrlRequest.
         :type recent: str
@@ -121,7 +122,7 @@ class ListUrlRequest:
     def _from(self):
         r"""Gets the _from of this ListUrlRequest.
 
-        **参数解释：** 开始时间，统计周期的起始时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :return: The _from of this ListUrlRequest.
         :rtype: int
@@ -132,7 +133,7 @@ class ListUrlRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListUrlRequest.
 
-        **参数解释：** 开始时间，统计周期的起始时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 起始时间(毫秒时间戳)，需要和to同时使用 **约束限制：** from <= to **取值范围：** from ~ to 最大范围30天 **默认取值：** 不涉及
 
         :param _from: The _from of this ListUrlRequest.
         :type _from: int
@@ -143,7 +144,7 @@ class ListUrlRequest:
     def to(self):
         r"""Gets the to of this ListUrlRequest.
 
-        **参数解释：** 结束时间，统计周期的终止时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :return: The to of this ListUrlRequest.
         :rtype: int
@@ -154,7 +155,7 @@ class ListUrlRequest:
     def to(self, to):
         r"""Sets the to of this ListUrlRequest.
 
-        **参数解释：** 结束时间，统计周期的终止时间戳（毫秒级）。不使用recent参数时需要填写 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 结束时间(毫秒时间戳)，需要和from同时使用 **约束限制：** from ~ to 最大范围30天 **取值范围：** 不能超过当天的结束时间 **默认取值：** 不涉及
 
         :param to: The to of this ListUrlRequest.
         :type to: int
@@ -165,7 +166,7 @@ class ListUrlRequest:
     def hosts(self):
         r"""Gets the hosts of this ListUrlRequest.
 
-        要查询事件的域名id列表
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The hosts of this ListUrlRequest.
         :rtype: list[str]
@@ -176,7 +177,7 @@ class ListUrlRequest:
     def hosts(self, hosts):
         r"""Sets the hosts of this ListUrlRequest.
 
-        要查询事件的域名id列表
+        **参数解释：** 要查询的域名id列表，通过 ”查询独享模式域名列表“（ListPremiumHost）或者 “查询云模式防护域名列表” （ListHost）接口获取；不传参代表查询全部域名的数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param hosts: The hosts of this ListUrlRequest.
         :type hosts: list[str]
@@ -187,7 +188,7 @@ class ListUrlRequest:
     def instances(self):
         r"""Gets the instances of this ListUrlRequest.
 
-        要查询事件的独享域名id列表
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The instances of this ListUrlRequest.
         :rtype: list[str]
@@ -198,7 +199,7 @@ class ListUrlRequest:
     def instances(self, instances):
         r"""Sets the instances of this ListUrlRequest.
 
-        要查询事件的独享域名id列表
+        **参数解释：** 要查询的实例id列表，通过 “查询WAF独享引擎列表”（ListInstance）接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param instances: The instances of this ListUrlRequest.
         :type instances: list[str]

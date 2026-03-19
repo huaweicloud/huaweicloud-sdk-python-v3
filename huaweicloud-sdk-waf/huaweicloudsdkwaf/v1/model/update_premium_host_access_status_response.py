@@ -28,7 +28,7 @@ class UpdatePremiumHostAccessStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** - 0 关闭 - 1 开启 **默认取值：** 不涉及
         :type access_status: int
         """
         
@@ -44,7 +44,7 @@ class UpdatePremiumHostAccessStatusResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this UpdatePremiumHostAccessStatusResponse.
 
-        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** - 0 关闭 - 1 开启 **默认取值：** 不涉及
 
         :return: The access_status of this UpdatePremiumHostAccessStatusResponse.
         :rtype: int
@@ -55,7 +55,7 @@ class UpdatePremiumHostAccessStatusResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this UpdatePremiumHostAccessStatusResponse.
 
-        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：** - 0 关闭 - 1 开启 **默认取值：** 不涉及
 
         :param access_status: The access_status of this UpdatePremiumHostAccessStatusResponse.
         :type access_status: int

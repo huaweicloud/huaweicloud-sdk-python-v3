@@ -49,7 +49,7 @@ class WebBasicProtectionRulesItem:
         :type description: str
         :param cve_number: **参数解释：** CVE编号 **取值范围：** 不涉及
         :type cve_number: str
-        :param risk_level: **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        :param risk_level: **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
         :type risk_level: int
         :param application_type: **参数解释：** 应用类型 **取值范围：** 不涉及
         :type application_type: str
@@ -165,7 +165,7 @@ class WebBasicProtectionRulesItem:
     def risk_level(self):
         r"""Gets the risk_level of this WebBasicProtectionRulesItem.
 
-        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
 
         :return: The risk_level of this WebBasicProtectionRulesItem.
         :rtype: int
@@ -176,7 +176,7 @@ class WebBasicProtectionRulesItem:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this WebBasicProtectionRulesItem.
 
-        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
 
         :param risk_level: The risk_level of this WebBasicProtectionRulesItem.
         :type risk_level: int

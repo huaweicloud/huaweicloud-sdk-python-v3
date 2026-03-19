@@ -27,7 +27,7 @@ class BatchDeletePoliciesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param policy_ids: **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不涉及 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
+        :param policy_ids: **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不能为空 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
         :type policy_ids: list[str]
         """
         
@@ -43,7 +43,7 @@ class BatchDeletePoliciesRequestBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this BatchDeletePoliciesRequestBody.
 
-        **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不涉及 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
+        **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不能为空 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
 
         :return: The policy_ids of this BatchDeletePoliciesRequestBody.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class BatchDeletePoliciesRequestBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this BatchDeletePoliciesRequestBody.
 
-        **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不涉及 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
+        **参数解释：** 策略id数组，包含待批量删除的防护策略唯一标识，从查询防护策略列表接口获取。 **约束限制：** 不能为空 **取值范围：** 数组内元素为字符串类型，每个元素对应一个防护策略ID **默认取值：** 不涉及
 
         :param policy_ids: The policy_ids of this BatchDeletePoliciesRequestBody.
         :type policy_ids: list[str]

@@ -18,17 +18,21 @@ class ListIpReputationRulesRequest:
         'enterprise_project_id': 'str',
         'policy_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'page': 'int',
+        'pagesize': 'int'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'page': 'page',
+        'pagesize': 'pagesize'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, page=None, pagesize=None):
         r"""ListIpReputationRulesRequest
 
         The model defined in huaweicloud sdk
@@ -37,10 +41,14 @@ class ListIpReputationRulesRequest:
         :type enterprise_project_id: str
         :param policy_id: **参数解释：** 策略id（策略id从查询防护策略列表接口获取） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param offset: **参数解释：** 偏移量，表示查询该偏移量之后的记录。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param offset: **参数解释：** 偏移量，表示查询该偏移量之后的记录 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
         :type offset: int
-        :param limit: **参数解释：** 查询返回记录的数量限制。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        :param limit: **参数解释：** 查询返回记录的数量限制 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
         :type limit: int
+        :param page: **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
+        :type page: int
+        :param pagesize: **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
+        :type pagesize: int
         """
         
         
@@ -49,13 +57,21 @@ class ListIpReputationRulesRequest:
         self._policy_id = None
         self._offset = None
         self._limit = None
+        self._page = None
+        self._pagesize = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if page is not None:
+            self.page = page
+        if pagesize is not None:
+            self.pagesize = pagesize
 
     @property
     def enterprise_project_id(self):
@@ -105,7 +121,7 @@ class ListIpReputationRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListIpReputationRulesRequest.
 
-        **参数解释：** 偏移量，表示查询该偏移量之后的记录。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :return: The offset of this ListIpReputationRulesRequest.
         :rtype: int
@@ -116,7 +132,7 @@ class ListIpReputationRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListIpReputationRulesRequest.
 
-        **参数解释：** 偏移量，表示查询该偏移量之后的记录。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :param offset: The offset of this ListIpReputationRulesRequest.
         :type offset: int
@@ -127,7 +143,7 @@ class ListIpReputationRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListIpReputationRulesRequest.
 
-        **参数解释：** 查询返回记录的数量限制。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        **参数解释：** 查询返回记录的数量限制 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :return: The limit of this ListIpReputationRulesRequest.
         :rtype: int
@@ -138,12 +154,56 @@ class ListIpReputationRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListIpReputationRulesRequest.
 
-        **参数解释：** 查询返回记录的数量限制。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        **参数解释：** 查询返回记录的数量限制 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :param limit: The limit of this ListIpReputationRulesRequest.
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def page(self):
+        r"""Gets the page of this ListIpReputationRulesRequest.
+
+        **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
+
+        :return: The page of this ListIpReputationRulesRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListIpReputationRulesRequest.
+
+        **参数解释：** 分页查询时，返回第几页数据 **约束限制：** 不涉及 **取值范围：** page参数的实际有效范围取决于总数据量和pagesize的取值，不能大于总页数 **默认取值：** 1
+
+        :param page: The page of this ListIpReputationRulesRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def pagesize(self):
+        r"""Gets the pagesize of this ListIpReputationRulesRequest.
+
+        **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
+
+        :return: The pagesize of this ListIpReputationRulesRequest.
+        :rtype: int
+        """
+        return self._pagesize
+
+    @pagesize.setter
+    def pagesize(self, pagesize):
+        r"""Sets the pagesize of this ListIpReputationRulesRequest.
+
+        **参数解释：** 分页查询时，每页包含的结果条数 **约束限制：** 不涉及 **取值范围：** [0, 总数据量] **默认取值：** 10
+
+        :param pagesize: The pagesize of this ListIpReputationRulesRequest.
+        :type pagesize: int
+        """
+        self._pagesize = pagesize
 
     def to_dict(self):
         result = {}

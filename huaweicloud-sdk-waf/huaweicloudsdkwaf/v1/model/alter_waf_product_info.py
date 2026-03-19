@@ -27,7 +27,7 @@ class AlterWafProductInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: waf规格   - professional：标准版   - enterprise：专业版   ultimate：企业版
+        :param resource_spec_code: waf规格   - professional：标准版   - enterprise：专业版   - ultimate：企业版
         :type resource_spec_code: str
         """
         
@@ -43,7 +43,7 @@ class AlterWafProductInfo:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this AlterWafProductInfo.
 
-        waf规格   - professional：标准版   - enterprise：专业版   ultimate：企业版
+        waf规格   - professional：标准版   - enterprise：专业版   - ultimate：企业版
 
         :return: The resource_spec_code of this AlterWafProductInfo.
         :rtype: str
@@ -54,7 +54,7 @@ class AlterWafProductInfo:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this AlterWafProductInfo.
 
-        waf规格   - professional：标准版   - enterprise：专业版   ultimate：企业版
+        waf规格   - professional：标准版   - enterprise：专业版   - ultimate：企业版
 
         :param resource_spec_code: The resource_spec_code of this AlterWafProductInfo.
         :type resource_spec_code: str

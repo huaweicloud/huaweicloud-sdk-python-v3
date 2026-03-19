@@ -19,6 +19,8 @@ class ListAnticrawlerRulesRequest:
         'policy_id': 'str',
         'offset': 'int',
         'limit': 'int',
+        'page': 'int',
+        'pagesize': 'int',
         'type': 'str'
     }
 
@@ -27,23 +29,29 @@ class ListAnticrawlerRulesRequest:
         'policy_id': 'policy_id',
         'offset': 'offset',
         'limit': 'limit',
+        'page': 'page',
+        'pagesize': 'pagesize',
         'type': 'type'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, type=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, page=None, pagesize=None, type=None):
         r"""ListAnticrawlerRulesRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param policy_id: 防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        :param policy_id: **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param offset: 偏移量，表示查询该偏移量之后的记录。
+        :param offset: **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
         :type offset: int
-        :param limit: 查询返回记录的数量限制。
+        :param limit: **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
         :type limit: int
-        :param type: **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        :param page: **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+        :type page: int
+        :param pagesize: **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+        :type pagesize: int
+        :param type: **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
         :type type: str
         """
         
@@ -53,14 +61,22 @@ class ListAnticrawlerRulesRequest:
         self._policy_id = None
         self._offset = None
         self._limit = None
+        self._page = None
+        self._pagesize = None
         self._type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if page is not None:
+            self.page = page
+        if pagesize is not None:
+            self.pagesize = pagesize
         if type is not None:
             self.type = type
 
@@ -90,7 +106,7 @@ class ListAnticrawlerRulesRequest:
     def policy_id(self):
         r"""Gets the policy_id of this ListAnticrawlerRulesRequest.
 
-        防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The policy_id of this ListAnticrawlerRulesRequest.
         :rtype: str
@@ -101,7 +117,7 @@ class ListAnticrawlerRulesRequest:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ListAnticrawlerRulesRequest.
 
-        防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
+        **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param policy_id: The policy_id of this ListAnticrawlerRulesRequest.
         :type policy_id: str
@@ -112,7 +128,7 @@ class ListAnticrawlerRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListAnticrawlerRulesRequest.
 
-        偏移量，表示查询该偏移量之后的记录。
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :return: The offset of this ListAnticrawlerRulesRequest.
         :rtype: int
@@ -123,7 +139,7 @@ class ListAnticrawlerRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAnticrawlerRulesRequest.
 
-        偏移量，表示查询该偏移量之后的记录。
+        **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
 
         :param offset: The offset of this ListAnticrawlerRulesRequest.
         :type offset: int
@@ -134,7 +150,7 @@ class ListAnticrawlerRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListAnticrawlerRulesRequest.
 
-        查询返回记录的数量限制。
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :return: The limit of this ListAnticrawlerRulesRequest.
         :rtype: int
@@ -145,7 +161,7 @@ class ListAnticrawlerRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAnticrawlerRulesRequest.
 
-        查询返回记录的数量限制。
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :param limit: The limit of this ListAnticrawlerRulesRequest.
         :type limit: int
@@ -153,10 +169,54 @@ class ListAnticrawlerRulesRequest:
         self._limit = limit
 
     @property
+    def page(self):
+        r"""Gets the page of this ListAnticrawlerRulesRequest.
+
+        **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+
+        :return: The page of this ListAnticrawlerRulesRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListAnticrawlerRulesRequest.
+
+        **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
+
+        :param page: The page of this ListAnticrawlerRulesRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def pagesize(self):
+        r"""Gets the pagesize of this ListAnticrawlerRulesRequest.
+
+        **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+
+        :return: The pagesize of this ListAnticrawlerRulesRequest.
+        :rtype: int
+        """
+        return self._pagesize
+
+    @pagesize.setter
+    def pagesize(self, pagesize):
+        r"""Sets the pagesize of this ListAnticrawlerRulesRequest.
+
+        **参数解释：** 每页大小，与参数page一起使用 **约束限制：** 不涉及 **取值范围：** [0, 2147483647] **默认取值：** 1000
+
+        :param pagesize: The pagesize of this ListAnticrawlerRulesRequest.
+        :type pagesize: int
+        """
+        self._pagesize = pagesize
+
+    @property
     def type(self):
         r"""Gets the type of this ListAnticrawlerRulesRequest.
 
-        **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :return: The type of this ListAnticrawlerRulesRequest.
         :rtype: str
@@ -167,7 +227,7 @@ class ListAnticrawlerRulesRequest:
     def type(self, type):
         r"""Sets the type of this ListAnticrawlerRulesRequest.
 
-        **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则防护模式 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则 **默认取值：** anticrawler_except_url
 
         :param type: The type of this ListAnticrawlerRulesRequest.
         :type type: str

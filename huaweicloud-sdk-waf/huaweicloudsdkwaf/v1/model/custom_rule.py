@@ -71,7 +71,7 @@ class CustomRule:
         :type priority: int
         :param timestamp: 创建精准防护规则的时间戳
         :type timestamp: int
-        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        :param time: 精准防护规则生效时间:  - false：表示该规则立即生效  - true：表示自定义生效时间
         :type time: bool
         :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才会返回该参数。
         :type start: int
@@ -328,7 +328,7 @@ class CustomRule:
     def time(self):
         r"""Gets the time of this CustomRule.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效  - true：表示自定义生效时间
 
         :return: The time of this CustomRule.
         :rtype: bool
@@ -339,7 +339,7 @@ class CustomRule:
     def time(self, time):
         r"""Sets the time of this CustomRule.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效  - true：表示自定义生效时间
 
         :param time: The time of this CustomRule.
         :type time: bool

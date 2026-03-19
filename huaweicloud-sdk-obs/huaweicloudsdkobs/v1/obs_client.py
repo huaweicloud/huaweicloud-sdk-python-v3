@@ -1517,6 +1517,10 @@ class ObsClient(Client):
             header_params['x-obs-server-side-encryption'] = local_var_params['x_obs_server_side_encryption']
         if 'x_obs_server_side_encryption_kms_key_id' in local_var_params:
             header_params['x-obs-server-side-encryption-kms-key-id'] = local_var_params['x_obs_server_side_encryption_kms_key_id']
+        if 'x_obs_server_side_encryption_bucket_key_enabled' in local_var_params:
+            header_params['x-obs-server-side-encryption-bucket-key-enabled'] = local_var_params['x_obs_server_side_encryption_bucket_key_enabled']
+        if 'x_obs_server_side_data_encryption' in local_var_params:
+            header_params['x-obs-server-side-data-encryption'] = local_var_params['x_obs_server_side_data_encryption']
         if 'x_obs_server_side_encryption_customer_algorithm' in local_var_params:
             header_params['x-obs-server-side-encryption-customer-algorithm'] = local_var_params['x_obs_server_side_encryption_customer_algorithm']
         if 'x_obs_server_side_encryption_customer_key' in local_var_params:
@@ -1527,6 +1531,12 @@ class ObsClient(Client):
             header_params['success-action-redirect'] = local_var_params['success_action_redirect']
         if 'x_obs_expires' in local_var_params:
             header_params['x-obs-expires'] = local_var_params['x_obs_expires']
+        if 'x_obs_tagging' in local_var_params:
+            header_params['x-obs-tagging'] = local_var_params['x_obs_tagging']
+        if 'x_obs_object_lock_mode' in local_var_params:
+            header_params['x-obs-object-lock-mode'] = local_var_params['x_obs_object_lock_mode']
+        if 'x_obs_object_lock_retain_until_date' in local_var_params:
+            header_params['x-obs-object-lock-retain-until-date'] = local_var_params['x_obs_object_lock_retain_until_date']
 
         form_params = {}
 

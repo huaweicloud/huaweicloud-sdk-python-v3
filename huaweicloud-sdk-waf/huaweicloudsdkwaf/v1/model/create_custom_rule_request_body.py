@@ -41,7 +41,7 @@ class CreateCustomRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        :param time: 精准防护规则生效时间:  - false：表示该规则立即生效。  - true：表示自定义生效时间。
         :type time: bool
         :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才需要填写该参数。
         :type start: int
@@ -87,7 +87,7 @@ class CreateCustomRuleRequestBody:
     def time(self):
         r"""Gets the time of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效。  - true：表示自定义生效时间。
 
         :return: The time of this CreateCustomRuleRequestBody.
         :rtype: bool
@@ -98,7 +98,7 @@ class CreateCustomRuleRequestBody:
     def time(self, time):
         r"""Sets the time of this CreateCustomRuleRequestBody.
 
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
+        精准防护规则生效时间:  - false：表示该规则立即生效。  - true：表示自定义生效时间。
 
         :param time: The time of this CreateCustomRuleRequestBody.
         :type time: bool

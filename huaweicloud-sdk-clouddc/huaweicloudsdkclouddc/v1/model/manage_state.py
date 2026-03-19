@@ -8,8 +8,10 @@ class ManageState:
     allowed enum values
     """
     ONBOARD = "onboard"
+    OS_READY = "os-ready"
     READY = "ready"
     IN_USE = "in-use"
+    MAINTAIN = "maintain"
     FROZEN = "frozen"
     OFFBOARDING = "offboarding"
     """

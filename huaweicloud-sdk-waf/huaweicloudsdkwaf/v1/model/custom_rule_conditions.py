@@ -39,7 +39,7 @@ class CustomRuleConditions:
         :type category: str
         :param index: 子字段：  - 字段类型为url、user-agent、ip、refer、request_line、method、reqeust时，不需要传index参数    - 字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
         :type index: str
-        :param logic_operation: 条件匹配逻辑。
+        :param logic_operation: 条件匹配逻辑
         :type logic_operation: str
         :param contents: 条件匹配的内容
         :type contents: list[str]
@@ -115,7 +115,7 @@ class CustomRuleConditions:
     def logic_operation(self):
         r"""Gets the logic_operation of this CustomRuleConditions.
 
-        条件匹配逻辑。
+        条件匹配逻辑
 
         :return: The logic_operation of this CustomRuleConditions.
         :rtype: str
@@ -126,7 +126,7 @@ class CustomRuleConditions:
     def logic_operation(self, logic_operation):
         r"""Sets the logic_operation of this CustomRuleConditions.
 
-        条件匹配逻辑。
+        条件匹配逻辑
 
         :param logic_operation: The logic_operation of this CustomRuleConditions.
         :type logic_operation: str

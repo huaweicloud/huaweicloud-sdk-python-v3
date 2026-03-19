@@ -26,7 +26,8 @@ class ListVulHostHostsRequest:
         'severity_level': 'str',
         'handle_status': 'str',
         'status': 'str',
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'host_id_list': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ListVulHostHostsRequest:
         'severity_level': 'severity_level',
         'handle_status': 'handle_status',
         'status': 'status',
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, asset_value=None, group_name=None, host_name=None, public_ip=None, private_ip=None, severity_level=None, handle_status=None, status=None, cluster_id=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, asset_value=None, group_name=None, host_name=None, public_ip=None, private_ip=None, severity_level=None, handle_status=None, status=None, cluster_id=None, host_id_list=None):
         r"""ListVulHostHostsRequest
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class ListVulHostHostsRequest:
         :type status: str
         :param cluster_id: **参数解释**: 集群id **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type cluster_id: str
+        :param host_id_list: **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+        :type host_id_list: str
         """
         
         
@@ -89,6 +93,7 @@ class ListVulHostHostsRequest:
         self._handle_status = None
         self._status = None
         self._cluster_id = None
+        self._host_id_list = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -113,6 +118,8 @@ class ListVulHostHostsRequest:
             self.status = status
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
 
     @property
     def enterprise_project_id(self):
@@ -377,6 +384,28 @@ class ListVulHostHostsRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def host_id_list(self):
+        r"""Gets the host_id_list of this ListVulHostHostsRequest.
+
+        **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+
+        :return: The host_id_list of this ListVulHostHostsRequest.
+        :rtype: str
+        """
+        return self._host_id_list
+
+    @host_id_list.setter
+    def host_id_list(self, host_id_list):
+        r"""Sets the host_id_list of this ListVulHostHostsRequest.
+
+        **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
+
+        :param host_id_list: The host_id_list of this ListVulHostHostsRequest.
+        :type host_id_list: str
+        """
+        self._host_id_list = host_id_list
 
     def to_dict(self):
         result = {}

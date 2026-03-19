@@ -27,7 +27,10 @@ class ShowIgnoreRuleResponse(SdkResponse):
         'url_logic': 'str',
         'conditions': 'list[Condition]',
         'advanced': 'IgnoreAdvanced',
-        'domain': 'list[str]'
+        'domain': 'list[str]',
+        'update_time': 'int',
+        'clear_time': 'int',
+        'hit_num': 'int'
     }
 
     attribute_map = {
@@ -42,10 +45,13 @@ class ShowIgnoreRuleResponse(SdkResponse):
         'url_logic': 'url_logic',
         'conditions': 'conditions',
         'advanced': 'advanced',
-        'domain': 'domain'
+        'domain': 'domain',
+        'update_time': 'update_time',
+        'clear_time': 'clear_time',
+        'hit_num': 'hit_num'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domain=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domain=None, update_time=None, clear_time=None, hit_num=None):
         r"""ShowIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
@@ -62,7 +68,7 @@ class ShowIgnoreRuleResponse(SdkResponse):
         :type status: int
         :param url: 误报规则屏蔽路径，仅在mode为0的状态下有该字段
         :type url: str
-        :param rule: 需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护的高级设置-&gt;防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        :param rule: 被屏蔽检测的规则类型或规则ID
         :type rule: str
         :param mode: 版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions字段
         :type mode: int
@@ -74,6 +80,12 @@ class ShowIgnoreRuleResponse(SdkResponse):
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         :param domain: 防护域名或防护网站
         :type domain: list[str]
+        :param update_time: 规则的最后更新时间
+        :type update_time: int
+        :param clear_time: 命中次数手动清零时间
+        :type clear_time: int
+        :param hit_num: 规则的命中次数
+        :type hit_num: int
         """
         
         super().__init__()
@@ -90,6 +102,9 @@ class ShowIgnoreRuleResponse(SdkResponse):
         self._conditions = None
         self._advanced = None
         self._domain = None
+        self._update_time = None
+        self._clear_time = None
+        self._hit_num = None
         self.discriminator = None
 
         if id is not None:
@@ -116,6 +131,12 @@ class ShowIgnoreRuleResponse(SdkResponse):
             self.advanced = advanced
         if domain is not None:
             self.domain = domain
+        if update_time is not None:
+            self.update_time = update_time
+        if clear_time is not None:
+            self.clear_time = clear_time
+        if hit_num is not None:
+            self.hit_num = hit_num
 
     @property
     def id(self):
@@ -253,7 +274,7 @@ class ShowIgnoreRuleResponse(SdkResponse):
     def rule(self):
         r"""Gets the rule of this ShowIgnoreRuleResponse.
 
-        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        被屏蔽检测的规则类型或规则ID
 
         :return: The rule of this ShowIgnoreRuleResponse.
         :rtype: str
@@ -264,7 +285,7 @@ class ShowIgnoreRuleResponse(SdkResponse):
     def rule(self, rule):
         r"""Sets the rule of this ShowIgnoreRuleResponse.
 
-        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        被屏蔽检测的规则类型或规则ID
 
         :param rule: The rule of this ShowIgnoreRuleResponse.
         :type rule: str
@@ -376,6 +397,72 @@ class ShowIgnoreRuleResponse(SdkResponse):
         :type domain: list[str]
         """
         self._domain = domain
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ShowIgnoreRuleResponse.
+
+        规则的最后更新时间
+
+        :return: The update_time of this ShowIgnoreRuleResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ShowIgnoreRuleResponse.
+
+        规则的最后更新时间
+
+        :param update_time: The update_time of this ShowIgnoreRuleResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
+
+    @property
+    def clear_time(self):
+        r"""Gets the clear_time of this ShowIgnoreRuleResponse.
+
+        命中次数手动清零时间
+
+        :return: The clear_time of this ShowIgnoreRuleResponse.
+        :rtype: int
+        """
+        return self._clear_time
+
+    @clear_time.setter
+    def clear_time(self, clear_time):
+        r"""Sets the clear_time of this ShowIgnoreRuleResponse.
+
+        命中次数手动清零时间
+
+        :param clear_time: The clear_time of this ShowIgnoreRuleResponse.
+        :type clear_time: int
+        """
+        self._clear_time = clear_time
+
+    @property
+    def hit_num(self):
+        r"""Gets the hit_num of this ShowIgnoreRuleResponse.
+
+        规则的命中次数
+
+        :return: The hit_num of this ShowIgnoreRuleResponse.
+        :rtype: int
+        """
+        return self._hit_num
+
+    @hit_num.setter
+    def hit_num(self, hit_num):
+        r"""Sets the hit_num of this ShowIgnoreRuleResponse.
+
+        规则的命中次数
+
+        :param hit_num: The hit_num of this ShowIgnoreRuleResponse.
+        :type hit_num: int
+        """
+        self._hit_num = hit_num
 
     def to_dict(self):
         import warnings

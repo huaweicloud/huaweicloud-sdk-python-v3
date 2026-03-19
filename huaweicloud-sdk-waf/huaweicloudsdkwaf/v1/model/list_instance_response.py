@@ -18,7 +18,7 @@ class ListInstanceResponse(SdkResponse):
     openapi_types = {
         'total': 'int',
         'purchased': 'bool',
-        'items': 'list[ListInstance]'
+        'items': 'list[Instance]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListInstanceResponse(SdkResponse):
         :param purchased: 是否曾经购买过独享引擎
         :type purchased: bool
         :param items: 详细的独享引擎信息列表
-        :type items: list[:class:`huaweicloudsdkwaf.v1.ListInstance`]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.Instance`]
         """
         
         super().__init__()
@@ -105,7 +105,7 @@ class ListInstanceResponse(SdkResponse):
         详细的独享引擎信息列表
 
         :return: The items of this ListInstanceResponse.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.ListInstance`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.Instance`]
         """
         return self._items
 
@@ -116,7 +116,7 @@ class ListInstanceResponse(SdkResponse):
         详细的独享引擎信息列表
 
         :param items: The items of this ListInstanceResponse.
-        :type items: list[:class:`huaweicloudsdkwaf.v1.ListInstance`]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.Instance`]
         """
         self._items = items
 

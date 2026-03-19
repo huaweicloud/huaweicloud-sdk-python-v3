@@ -30,9 +30,9 @@ class ListTopUrlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: **参数解释：** CountItem的总数量 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
+        :param total: UrlCountItem的总数量
         :type total: int
-        :param items: **参数解释：** CountItem详细信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param items: UrlCountItem详细信息列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
         """
         
@@ -51,7 +51,7 @@ class ListTopUrlResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTopUrlResponse.
 
-        **参数解释：** CountItem的总数量 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
+        UrlCountItem的总数量
 
         :return: The total of this ListTopUrlResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListTopUrlResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTopUrlResponse.
 
-        **参数解释：** CountItem的总数量 **约束限制：** 不涉及 **取值范围：** ≥0 **默认取值：** 0
+        UrlCountItem的总数量
 
         :param total: The total of this ListTopUrlResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListTopUrlResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListTopUrlResponse.
 
-        **参数解释：** CountItem详细信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        UrlCountItem详细信息列表
 
         :return: The items of this ListTopUrlResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
@@ -84,7 +84,7 @@ class ListTopUrlResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListTopUrlResponse.
 
-        **参数解释：** CountItem详细信息列表 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        UrlCountItem详细信息列表
 
         :param items: The items of this ListTopUrlResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]

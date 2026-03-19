@@ -68,7 +68,8 @@ class ListLtsConfigsRequest:
 
         if x_language is not None:
             self.x_language = x_language
-        self.instance_id = instance_id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if instance_name is not None:
             self.instance_name = instance_name
         if instance_mode is not None:

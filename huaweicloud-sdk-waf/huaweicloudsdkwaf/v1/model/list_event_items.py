@@ -85,9 +85,9 @@ class ListEventItems:
         :type attack: str
         :param rule: 命中的规则id
         :type rule: str
-        :param payload: 命中的载荷
+        :param payload: 恶意负载： Web 基础防护(SQL注入、XSS、命令注入等)：被WAF识别的攻击片段 CC 攻击：命中规则的请求次数 精准防护、IP黑白名单、地理访问控制：空 攻击惩罚：命中攻击惩罚的用户标识 恶意爬虫：命中规则的 User-Agent 字段 网页反爬虫：JS 脚本事件：js_verified（JS 脚本验证通过事件）和 js_challenge（发送 JS 验证内容事件）。如果请求验证失败则为空。 网站信息泄露：敏感信息过滤为过滤类型，既电话号码,电子邮箱,身份证号；响应码拦截则为拦截的响应码值。 BOT攻击：命中规则的User-Agent等异常请求特征，或AI行为检测结果的评分细节
         :type payload: str
-        :param payload_location: 命中的载荷位置
+        :param payload_location: 恶意载荷位置
         :type payload_location: str
         :param action: 防护动作
         :type action: str
@@ -366,7 +366,7 @@ class ListEventItems:
     def payload(self):
         r"""Gets the payload of this ListEventItems.
 
-        命中的载荷
+        恶意负载： Web 基础防护(SQL注入、XSS、命令注入等)：被WAF识别的攻击片段 CC 攻击：命中规则的请求次数 精准防护、IP黑白名单、地理访问控制：空 攻击惩罚：命中攻击惩罚的用户标识 恶意爬虫：命中规则的 User-Agent 字段 网页反爬虫：JS 脚本事件：js_verified（JS 脚本验证通过事件）和 js_challenge（发送 JS 验证内容事件）。如果请求验证失败则为空。 网站信息泄露：敏感信息过滤为过滤类型，既电话号码,电子邮箱,身份证号；响应码拦截则为拦截的响应码值。 BOT攻击：命中规则的User-Agent等异常请求特征，或AI行为检测结果的评分细节
 
         :return: The payload of this ListEventItems.
         :rtype: str
@@ -377,7 +377,7 @@ class ListEventItems:
     def payload(self, payload):
         r"""Sets the payload of this ListEventItems.
 
-        命中的载荷
+        恶意负载： Web 基础防护(SQL注入、XSS、命令注入等)：被WAF识别的攻击片段 CC 攻击：命中规则的请求次数 精准防护、IP黑白名单、地理访问控制：空 攻击惩罚：命中攻击惩罚的用户标识 恶意爬虫：命中规则的 User-Agent 字段 网页反爬虫：JS 脚本事件：js_verified（JS 脚本验证通过事件）和 js_challenge（发送 JS 验证内容事件）。如果请求验证失败则为空。 网站信息泄露：敏感信息过滤为过滤类型，既电话号码,电子邮箱,身份证号；响应码拦截则为拦截的响应码值。 BOT攻击：命中规则的User-Agent等异常请求特征，或AI行为检测结果的评分细节
 
         :param payload: The payload of this ListEventItems.
         :type payload: str
@@ -388,7 +388,7 @@ class ListEventItems:
     def payload_location(self):
         r"""Gets the payload_location of this ListEventItems.
 
-        命中的载荷位置
+        恶意载荷位置
 
         :return: The payload_location of this ListEventItems.
         :rtype: str
@@ -399,7 +399,7 @@ class ListEventItems:
     def payload_location(self, payload_location):
         r"""Sets the payload_location of this ListEventItems.
 
-        命中的载荷位置
+        恶意载荷位置
 
         :param payload_location: The payload_location of this ListEventItems.
         :type payload_location: str

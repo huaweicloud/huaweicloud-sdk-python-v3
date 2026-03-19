@@ -31,11 +31,11 @@ class ShowEventRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        :param x_language: **参数解释：** 客户端IP所属地理位置展示语言，默认值为en-us **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** en-us
         :type x_language: str
         :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
         :type enterprise_project_id: str
-        :param eventid: 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
+        :param eventid: **参数解释：** 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type eventid: str
         """
         
@@ -56,7 +56,7 @@ class ShowEventRequest:
     def x_language(self):
         r"""Gets the x_language of this ShowEventRequest.
 
-        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        **参数解释：** 客户端IP所属地理位置展示语言，默认值为en-us **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** en-us
 
         :return: The x_language of this ShowEventRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowEventRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ShowEventRequest.
 
-        语言，默认值为en-us。zh-cn（中文）/en-us（英文）
+        **参数解释：** 客户端IP所属地理位置展示语言，默认值为en-us **约束限制：** 不涉及 **取值范围：** - zh-cn 中文 - en-us 英文 **默认取值：** en-us
 
         :param x_language: The x_language of this ShowEventRequest.
         :type x_language: str
@@ -100,7 +100,7 @@ class ShowEventRequest:
     def eventid(self):
         r"""Gets the eventid of this ShowEventRequest.
 
-        防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
+        **参数解释：** 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The eventid of this ShowEventRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowEventRequest:
     def eventid(self, eventid):
         r"""Sets the eventid of this ShowEventRequest.
 
-        防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
+        **参数解释：** 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param eventid: The eventid of this ShowEventRequest.
         :type eventid: str

@@ -44,7 +44,7 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         :type id: str
         :param cve_number: **参数解释：** 关联的CVE编号，对应规则防护的漏洞的CVE标准编号（如CVE-2021-41773） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type cve_number: str
-        :param risk_level: **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        :param risk_level: **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
         :type risk_level: int
         :param application_type: **参数解释：** 应用类型，指定规则适用的应用场景（如Web应用、API接口） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type application_type: str
@@ -130,7 +130,7 @@ class ShowWebProtectionRuleResponse(SdkResponse):
     def risk_level(self):
         r"""Gets the risk_level of this ShowWebProtectionRuleResponse.
 
-        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
 
         :return: The risk_level of this ShowWebProtectionRuleResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class ShowWebProtectionRuleResponse(SdkResponse):
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this ShowWebProtectionRuleResponse.
 
-        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危  **取值范围：** - 1 - 2 - 3
+        **参数解释：** 危险等级 - 1：高危 - 2：中危 - 3：低危 **取值范围：** - 1 - 2 - 3
 
         :param risk_level: The risk_level of this ShowWebProtectionRuleResponse.
         :type risk_level: int

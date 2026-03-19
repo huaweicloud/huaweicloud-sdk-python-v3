@@ -28,7 +28,7 @@ class ListResponseCodeTimelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: **参数解释：** 安全统计的时间线，按时间顺序展示统计数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param body: 安全统计的时间线，按时间顺序展示统计数据
         :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
         
@@ -44,7 +44,7 @@ class ListResponseCodeTimelineResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ListResponseCodeTimelineResponse.
 
-        **参数解释：** 安全统计的时间线，按时间顺序展示统计数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        安全统计的时间线，按时间顺序展示统计数据
 
         :return: The body of this ListResponseCodeTimelineResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
@@ -55,7 +55,7 @@ class ListResponseCodeTimelineResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ListResponseCodeTimelineResponse.
 
-        **参数解释：** 安全统计的时间线，按时间顺序展示统计数据 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        安全统计的时间线，按时间顺序展示统计数据
 
         :param body: The body of this ListResponseCodeTimelineResponse.
         :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]

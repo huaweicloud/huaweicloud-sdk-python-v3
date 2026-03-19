@@ -71,9 +71,9 @@ class TableVolumeResult:
         :type schema_name: str
         :param database_name: **参数解释**: 数据库名称。 **取值范围**: 不涉及。 
         :type database_name: str
-        :param is_part_type: **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: 不涉及。 
+        :param is_part_type: **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: - true：具有分区表的性质。 - false：不具有分区表的性质。 
         :type is_part_type: bool
-        :param is_hash_cluster_key: **参数解释**: 是否包含hash分区列信息。 **取值范围**: 不涉及。 
+        :param is_hash_cluster_key: **参数解释**: 是否包含hash分区列信息。 **取值范围**: - true：包含hash分区列信息。 - false：不包含hash分区列信息。 
         :type is_hash_cluster_key: bool
         :param tuples: **参数解释**: 表中行的数目。 **取值范围**: 不涉及。 
         :type tuples: str
@@ -91,7 +91,7 @@ class TableVolumeResult:
         :type skew_size: str
         :param skew_ratio: **参数解释**: 表分布倾斜率（skewsize/totalsize）。 **取值范围**: 不涉及。 
         :type skew_ratio: str
-        :param skew_stddev: **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。。 **取值范围**: 不涉及。 
+        :param skew_stddev: **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。 **取值范围**: 不涉及。 
         :type skew_stddev: str
         """
         
@@ -287,7 +287,7 @@ class TableVolumeResult:
     def is_part_type(self):
         r"""Gets the is_part_type of this TableVolumeResult.
 
-        **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: 不涉及。 
+        **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: - true：具有分区表的性质。 - false：不具有分区表的性质。 
 
         :return: The is_part_type of this TableVolumeResult.
         :rtype: bool
@@ -298,7 +298,7 @@ class TableVolumeResult:
     def is_part_type(self, is_part_type):
         r"""Sets the is_part_type of this TableVolumeResult.
 
-        **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: 不涉及。 
+        **参数解释**: 表或者索引是否具有分区表的性质。 **取值范围**: - true：具有分区表的性质。 - false：不具有分区表的性质。 
 
         :param is_part_type: The is_part_type of this TableVolumeResult.
         :type is_part_type: bool
@@ -309,7 +309,7 @@ class TableVolumeResult:
     def is_hash_cluster_key(self):
         r"""Gets the is_hash_cluster_key of this TableVolumeResult.
 
-        **参数解释**: 是否包含hash分区列信息。 **取值范围**: 不涉及。 
+        **参数解释**: 是否包含hash分区列信息。 **取值范围**: - true：包含hash分区列信息。 - false：不包含hash分区列信息。 
 
         :return: The is_hash_cluster_key of this TableVolumeResult.
         :rtype: bool
@@ -320,7 +320,7 @@ class TableVolumeResult:
     def is_hash_cluster_key(self, is_hash_cluster_key):
         r"""Sets the is_hash_cluster_key of this TableVolumeResult.
 
-        **参数解释**: 是否包含hash分区列信息。 **取值范围**: 不涉及。 
+        **参数解释**: 是否包含hash分区列信息。 **取值范围**: - true：包含hash分区列信息。 - false：不包含hash分区列信息。 
 
         :param is_hash_cluster_key: The is_hash_cluster_key of this TableVolumeResult.
         :type is_hash_cluster_key: bool
@@ -507,7 +507,7 @@ class TableVolumeResult:
     def skew_stddev(self):
         r"""Gets the skew_stddev of this TableVolumeResult.
 
-        **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。。 **取值范围**: 不涉及。 
+        **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。 **取值范围**: 不涉及。 
 
         :return: The skew_stddev of this TableVolumeResult.
         :rtype: str
@@ -518,7 +518,7 @@ class TableVolumeResult:
     def skew_stddev(self, skew_stddev):
         r"""Sets the skew_stddev of this TableVolumeResult.
 
-        **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。。 **取值范围**: 不涉及。 
+        **参数解释**: 表分布标准方差（在表大小一定的情况下，该值越大表明表的整体分布情况越倾斜）。 **取值范围**: 不涉及。 
 
         :param skew_stddev: The skew_stddev of this TableVolumeResult.
         :type skew_stddev: str
