@@ -7,11 +7,11 @@ class RunImageStatusEnum:
     """
     allowed enum values
     """
-    _0 = "0"
-    _100 = "100"
-    _101 = "101"
-    _200 = "200"
-    _201 = "201"
+    _0 = 0
+    _100 = 100
+    _101 = 101
+    _200 = 200
+    _201 = 201
     """
     Attributes:
       openapi_types (dict): The key is attribute name

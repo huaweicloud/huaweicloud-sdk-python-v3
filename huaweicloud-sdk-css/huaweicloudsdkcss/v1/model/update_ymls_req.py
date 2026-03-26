@@ -31,7 +31,7 @@ class UpdateYmlsReq:
 
         :param edit: 
         :type edit: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
-        :param inst_type: 节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+        :param inst_type: **参数解释**： 节点类型。 **约束限制**： KooSearch集群涉及不同类型的节点，其他类型集群不涉及。 **取值范围**： - kos: KooSearch的搜索中控节点 - kos-doc: KooSearch的文档解析节点 **默认取值**： 不涉及
         :type inst_type: str
         """
         
@@ -67,7 +67,7 @@ class UpdateYmlsReq:
     def inst_type(self):
         r"""Gets the inst_type of this UpdateYmlsReq.
 
-        节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+        **参数解释**： 节点类型。 **约束限制**： KooSearch集群涉及不同类型的节点，其他类型集群不涉及。 **取值范围**： - kos: KooSearch的搜索中控节点 - kos-doc: KooSearch的文档解析节点 **默认取值**： 不涉及
 
         :return: The inst_type of this UpdateYmlsReq.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateYmlsReq:
     def inst_type(self, inst_type):
         r"""Sets the inst_type of this UpdateYmlsReq.
 
-        节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+        **参数解释**： 节点类型。 **约束限制**： KooSearch集群涉及不同类型的节点，其他类型集群不涉及。 **取值范围**： - kos: KooSearch的搜索中控节点 - kos-doc: KooSearch的文档解析节点 **默认取值**： 不涉及
 
         :param inst_type: The inst_type of this UpdateYmlsReq.
         :type inst_type: str

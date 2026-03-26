@@ -21,7 +21,9 @@ class AlarmSubRequest:
         'notification_target': 'str',
         'notification_target_name': 'str',
         'notification_target_type': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'cluster_id': 'str',
+        'alarm_detail': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class AlarmSubRequest:
         'notification_target': 'notification_target',
         'notification_target_name': 'notification_target_name',
         'notification_target_type': 'notification_target_type',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'cluster_id': 'cluster_id',
+        'alarm_detail': 'alarm_detail'
     }
 
-    def __init__(self, name=None, enable=None, alarm_level=None, notification_target=None, notification_target_name=None, notification_target_type=None, time_zone=None):
+    def __init__(self, name=None, enable=None, alarm_level=None, notification_target=None, notification_target_name=None, notification_target_type=None, time_zone=None, cluster_id=None, alarm_detail=None):
         r"""AlarmSubRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class AlarmSubRequest:
         :type notification_target_type: str
         :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
+        :type cluster_id: str
+        :param alarm_detail: **参数解释**： 细粒度告警详细信息，规则为告警ID与告警级别用英文冒号分割，告警之间用逗号分割。当该字段不为空时，alarm_level字段需要设置为空 **取值范围**： 不涉及。
+        :type alarm_detail: str
         """
         
         
@@ -64,6 +72,8 @@ class AlarmSubRequest:
         self._notification_target_name = None
         self._notification_target_type = None
         self._time_zone = None
+        self._cluster_id = None
+        self._alarm_detail = None
         self.discriminator = None
 
         self.name = name
@@ -75,6 +85,10 @@ class AlarmSubRequest:
         self.notification_target_name = notification_target_name
         self.notification_target_type = notification_target_type
         self.time_zone = time_zone
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if alarm_detail is not None:
+            self.alarm_detail = alarm_detail
 
     @property
     def name(self):
@@ -229,6 +243,50 @@ class AlarmSubRequest:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this AlarmSubRequest.
+
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
+
+        :return: The cluster_id of this AlarmSubRequest.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this AlarmSubRequest.
+
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
+
+        :param cluster_id: The cluster_id of this AlarmSubRequest.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def alarm_detail(self):
+        r"""Gets the alarm_detail of this AlarmSubRequest.
+
+        **参数解释**： 细粒度告警详细信息，规则为告警ID与告警级别用英文冒号分割，告警之间用逗号分割。当该字段不为空时，alarm_level字段需要设置为空 **取值范围**： 不涉及。
+
+        :return: The alarm_detail of this AlarmSubRequest.
+        :rtype: str
+        """
+        return self._alarm_detail
+
+    @alarm_detail.setter
+    def alarm_detail(self, alarm_detail):
+        r"""Sets the alarm_detail of this AlarmSubRequest.
+
+        **参数解释**： 细粒度告警详细信息，规则为告警ID与告警级别用英文冒号分割，告警之间用逗号分割。当该字段不为空时，alarm_level字段需要设置为空 **取值范围**： 不涉及。
+
+        :param alarm_detail: The alarm_detail of this AlarmSubRequest.
+        :type alarm_detail: str
+        """
+        self._alarm_detail = alarm_detail
 
     def to_dict(self):
         result = {}

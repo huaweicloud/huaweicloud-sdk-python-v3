@@ -33,6 +33,77 @@ class ObsAsyncClient(Client):
 
         return client_builder
 
+    def delete_dis_policy_async(self, request):
+        r"""Delete DIS Notification Policy
+
+        This API is used to delete all DIS notification policies configured for the specified bucket. If the deletion is successful, the status code returned is 204.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDisPolicy
+        :type request: :class:`huaweicloudsdkobs.v1.DeleteDisPolicyRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.DeleteDisPolicyResponse`
+        """
+        http_info = self._delete_dis_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dis_policy_async_invoker(self, request):
+        http_info = self._delete_dis_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dis_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDisPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'dis_policy' in local_var_params:
+            query_params.append(('disPolicy', local_var_params['dis_policy']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_bucket_customdomain_async(self, request):
         r"""Deleting a Custom Domain Name of a Bucket
 
@@ -539,6 +610,150 @@ class ObsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_dis_policy_async(self, request):
+        r"""Get DIS Notification Policy
+
+        This API is used to query the DIS notification policy information of a specified bucket. If the policy exists, the request succeeds and the status code returned is 200.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDisPolicy
+        :type request: :class:`huaweicloudsdkobs.v1.GetDisPolicyRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetDisPolicyResponse`
+        """
+        http_info = self._get_dis_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dis_policy_async_invoker(self, request):
+        http_info = self._get_dis_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dis_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDisPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'dis_policy' in local_var_params:
+            query_params.append(('disPolicy', local_var_params['dis_policy']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_dis_policy_async(self, request):
+        r"""Configure DIS notification policy
+
+        This API is used to configure a DIS notification policy for a specified bucket. The API is idempotent. If the same policy already exists on the bucket, the request succeeds and returns a status code of 200; otherwise, it returns a status code of 201.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetDisPolicy
+        :type request: :class:`huaweicloudsdkobs.v1.SetDisPolicyRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetDisPolicyResponse`
+        """
+        http_info = self._set_dis_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_dis_policy_async_invoker(self, request):
+        http_info = self._set_dis_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_dis_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetDisPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'dis_policy' in local_var_params:
+            query_params.append(('disPolicy', local_var_params['dis_policy']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

@@ -16,29 +16,36 @@ class ListElbsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'elbs': 'list[ClusterElbInfo]'
+        'elbs': 'list[ClusterElbInfo]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'elbs': 'elbs'
+        'elbs': 'elbs',
+        'count': 'count'
     }
 
-    def __init__(self, elbs=None):
+    def __init__(self, elbs=None, count=None):
         r"""ListElbsResponse
 
         The model defined in huaweicloud sdk
 
         :param elbs: **参数解释**： 弹性负载均衡列表。 **取值范围**： 不涉及。
         :type elbs: list[:class:`huaweicloudsdkdws.v2.ClusterElbInfo`]
+        :param count: **参数解释**： 总条数。 **取值范围**： 不涉及。
+        :type count: int
         """
         
         super().__init__()
 
         self._elbs = None
+        self._count = None
         self.discriminator = None
 
         if elbs is not None:
             self.elbs = elbs
+        if count is not None:
+            self.count = count
 
     @property
     def elbs(self):
@@ -61,6 +68,28 @@ class ListElbsResponse(SdkResponse):
         :type elbs: list[:class:`huaweicloudsdkdws.v2.ClusterElbInfo`]
         """
         self._elbs = elbs
+
+    @property
+    def count(self):
+        r"""Gets the count of this ListElbsResponse.
+
+        **参数解释**： 总条数。 **取值范围**： 不涉及。
+
+        :return: The count of this ListElbsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ListElbsResponse.
+
+        **参数解释**： 总条数。 **取值范围**： 不涉及。
+
+        :param count: The count of this ListElbsResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         import warnings

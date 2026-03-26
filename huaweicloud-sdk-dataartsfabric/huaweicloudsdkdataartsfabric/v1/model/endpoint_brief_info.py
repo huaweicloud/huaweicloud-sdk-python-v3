@@ -25,6 +25,7 @@ class EndpointBriefInfo:
         'update_time': 'datetime',
         'owner': 'User',
         'cap': 'CapRef',
+        'custom_image_id': 'str',
         'reserved_resource': 'ReservedResource',
         'ray_resource': 'RayResourceInfo',
         'error_code': 'str',
@@ -42,13 +43,14 @@ class EndpointBriefInfo:
         'update_time': 'update_time',
         'owner': 'owner',
         'cap': 'cap',
+        'custom_image_id': 'custom_image_id',
         'reserved_resource': 'reserved_resource',
         'ray_resource': 'ray_resource',
         'error_code': 'error_code',
         'error_msg': 'error_msg'
     }
 
-    def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None):
+    def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, custom_image_id=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None):
         r"""EndpointBriefInfo
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class EndpointBriefInfo:
         :type owner: :class:`huaweicloudsdkdataartsfabric.v1.User`
         :param cap: 
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
+        :param custom_image_id: - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+        :type custom_image_id: str
         :param reserved_resource: 
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
         :param ray_resource: 
@@ -95,6 +99,7 @@ class EndpointBriefInfo:
         self._update_time = None
         self._owner = None
         self._cap = None
+        self._custom_image_id = None
         self._reserved_resource = None
         self._ray_resource = None
         self._error_code = None
@@ -114,6 +119,8 @@ class EndpointBriefInfo:
         self.owner = owner
         if cap is not None:
             self.cap = cap
+        if custom_image_id is not None:
+            self.custom_image_id = custom_image_id
         if reserved_resource is not None:
             self.reserved_resource = reserved_resource
         if ray_resource is not None:
@@ -326,6 +333,28 @@ class EndpointBriefInfo:
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
         """
         self._cap = cap
+
+    @property
+    def custom_image_id(self):
+        r"""Gets the custom_image_id of this EndpointBriefInfo.
+
+        - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+
+        :return: The custom_image_id of this EndpointBriefInfo.
+        :rtype: str
+        """
+        return self._custom_image_id
+
+    @custom_image_id.setter
+    def custom_image_id(self, custom_image_id):
+        r"""Sets the custom_image_id of this EndpointBriefInfo.
+
+        - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+
+        :param custom_image_id: The custom_image_id of this EndpointBriefInfo.
+        :type custom_image_id: str
+        """
+        self._custom_image_id = custom_image_id
 
     @property
     def reserved_resource(self):

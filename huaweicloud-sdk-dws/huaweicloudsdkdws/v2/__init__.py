@@ -20,6 +20,7 @@ from huaweicloudsdkdws.v2.model.add_workload_rule_response import AddWorkloadRul
 from huaweicloudsdkdws.v2.model.alarm_config_response import AlarmConfigResponse
 from huaweicloudsdkdws.v2.model.alarm_detail_response import AlarmDetailResponse
 from huaweicloudsdkdws.v2.model.alarm_statistic_response import AlarmStatisticResponse
+from huaweicloudsdkdws.v2.model.alarm_sub_detail_resopnse import AlarmSubDetailResopnse
 from huaweicloudsdkdws.v2.model.alarm_sub_request import AlarmSubRequest
 from huaweicloudsdkdws.v2.model.alarm_sub_update_request import AlarmSubUpdateRequest
 from huaweicloudsdkdws.v2.model.alarm_subscription_response import AlarmSubscriptionResponse

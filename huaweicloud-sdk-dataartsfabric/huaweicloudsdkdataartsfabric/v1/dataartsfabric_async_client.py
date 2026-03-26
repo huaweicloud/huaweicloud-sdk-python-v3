@@ -1030,6 +1030,436 @@ class DataArtsFabricAsyncClient(Client):
 
         return http_info
 
+    def create_job_async(self, request):
+        r"""创建作业
+
+        创建作业。支持创建一个spark或python或ray作业，支持的作业类型有spark、python和ray，接口返回作业的详情。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateJob
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.CreateJobRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CreateJobResponse`
+        """
+        http_info = self._create_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_job_async_invoker(self, request):
+        http_info = self._create_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_job_async(self, request):
+        r"""删除指定作业
+
+        删除指定作业。删除一个作业，根据id删除对应作业，接口无返回体。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJob
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.DeleteJobRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.DeleteJobResponse`
+        """
+        http_info = self._delete_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_async_invoker(self, request):
+        http_info = self._delete_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_job_version_async(self, request):
+        r"""删除指定作业的指定版本
+
+        删除作业版本。删除一个作业版本，根据id删除对应作业版本，接口无返回体。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJobVersion
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.DeleteJobVersionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.DeleteJobVersionResponse`
+        """
+        http_info = self._delete_job_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_version_async_invoker(self, request):
+        http_info = self._delete_job_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/{job_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_job_versions_async(self, request):
+        r"""查询指定作业的版本列表
+
+        列举作业版本。列举作业下的作业版本，分页返回。支持按名称、id等信息查询，接口分页返回作业版本列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobVersions
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.ListJobVersionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ListJobVersionsResponse`
+        """
+        http_info = self._list_job_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_versions_async_invoker(self, request):
+        http_info = self._list_job_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/{job_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'version_id' in local_var_params:
+            query_params.append(('version_id', local_var_params['version_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_jobs_async(self, request):
+        r"""查询作业列表
+
+        列举作业。列举工作空间下的作业，分页返回。支持按作业类型、名称、id、端点等信息查询，接口分页返回作业列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobs
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.ListJobsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ListJobsResponse`
+        """
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_jobs_async_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'endpoint_id' in local_var_params:
+            query_params.append(('endpoint_id', local_var_params['endpoint_id']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'create_by_me' in local_var_params:
+            query_params.append(('create_by_me', local_var_params['create_by_me']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_job_async(self, request):
+        r"""更新作业
+
+        更新作业详情。更新一个作业的详情，支持更新作业名称、描述、当前版本、当前端点和可见性，接口返回更新后的作业详情。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateJob
+        :type request: :class:`huaweicloudsdkdataartsfabric.v1.UpdateJobRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.UpdateJobResponse`
+        """
+        http_info = self._update_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_job_async_invoker(self, request):
+        http_info = self._update_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_message_notification_policy_async(self, request):
         r"""创建消息通知策略
 

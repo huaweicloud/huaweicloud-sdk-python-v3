@@ -17,15 +17,17 @@ class ShowServerStatusResponse(SdkResponse):
 
     openapi_types = {
         'server_status': 'ServerStatus',
-        'server_power_status': 'ServerPowerStatus'
+        'server_power_status': 'ServerPowerStatus',
+        'server_manage_state': 'ServerManageState'
     }
 
     attribute_map = {
         'server_status': 'server_status',
-        'server_power_status': 'server_power_status'
+        'server_power_status': 'server_power_status',
+        'server_manage_state': 'server_manage_state'
     }
 
-    def __init__(self, server_status=None, server_power_status=None):
+    def __init__(self, server_status=None, server_power_status=None, server_manage_state=None):
         r"""ShowServerStatusResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ShowServerStatusResponse(SdkResponse):
         :type server_status: :class:`huaweicloudsdkclouddc.v1.ServerStatus`
         :param server_power_status: 
         :type server_power_status: :class:`huaweicloudsdkclouddc.v1.ServerPowerStatus`
+        :param server_manage_state: 
+        :type server_manage_state: :class:`huaweicloudsdkclouddc.v1.ServerManageState`
         """
         
         super().__init__()
 
         self._server_status = None
         self._server_power_status = None
+        self._server_manage_state = None
         self.discriminator = None
 
         if server_status is not None:
             self.server_status = server_status
         if server_power_status is not None:
             self.server_power_status = server_power_status
+        if server_manage_state is not None:
+            self.server_manage_state = server_manage_state
 
     @property
     def server_status(self):
@@ -82,6 +89,24 @@ class ShowServerStatusResponse(SdkResponse):
         :type server_power_status: :class:`huaweicloudsdkclouddc.v1.ServerPowerStatus`
         """
         self._server_power_status = server_power_status
+
+    @property
+    def server_manage_state(self):
+        r"""Gets the server_manage_state of this ShowServerStatusResponse.
+
+        :return: The server_manage_state of this ShowServerStatusResponse.
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerManageState`
+        """
+        return self._server_manage_state
+
+    @server_manage_state.setter
+    def server_manage_state(self, server_manage_state):
+        r"""Sets the server_manage_state of this ShowServerStatusResponse.
+
+        :param server_manage_state: The server_manage_state of this ShowServerStatusResponse.
+        :type server_manage_state: :class:`huaweicloudsdkclouddc.v1.ServerManageState`
+        """
+        self._server_manage_state = server_manage_state
 
     def to_dict(self):
         import warnings

@@ -12,7 +12,6 @@ class ManageState:
     READY = "ready"
     IN_USE = "in-use"
     MAINTAIN = "maintain"
-    FROZEN = "frozen"
     OFFBOARDING = "offboarding"
     """
     Attributes:

@@ -1608,6 +1608,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def delete_auto_sql_limiting(self, request):
+        r"""关闭自治限流
+
+        关闭自治限流。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAutoSqlLimiting
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteAutoSqlLimitingRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteAutoSqlLimitingResponse`
+        """
+        http_info = self._delete_auto_sql_limiting_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_auto_sql_limiting_invoker(self, request):
+        http_info = self._delete_auto_sql_limiting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_auto_sql_limiting_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/auto-sql-limiting",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutoSqlLimitingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_database_permission(self, request):
         r"""删除数据库用户的数据库权限
 
@@ -7641,6 +7710,85 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def show_instance_backups(self, request):
+        r"""查询指定实例全量备份列表
+
+        查询指定实例全量备份列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceBackups
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceBackupsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceBackupsResponse`
+        """
+        http_info = self._show_instance_backups_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_backups_invoker(self, request):
+        http_info = self._show_instance_backups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_backups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceBackupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'order_rule' in local_var_params:
+            query_params.append(('order_rule', local_var_params['order_rule']))
+        if 'filter_field' in local_var_params:
+            query_params.append(('filter_field', local_var_params['filter_field']))
+        if 'filter_content' in local_var_params:
+            query_params.append(('filter_content', local_var_params['filter_content']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance_database_version(self, request):
         r"""查询内核版本信息
 
@@ -13395,6 +13543,142 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def delete_htap_process_list(self, request):
+        r"""删除HTAP实例会话
+
+        删除HTAP实例会话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteHtapProcessList
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteHtapProcessListRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteHtapProcessListResponse`
+        """
+        http_info = self._delete_htap_process_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_htap_process_list_invoker(self, request):
+        http_info = self._delete_htap_process_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_htap_process_list_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHtapProcessListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_star_rock_lts_config(self, request):
+        r"""批量解除LTS日志配置
+
+        批量解除LTS日志配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteStarRockLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRockLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteStarRockLtsConfigResponse`
+        """
+        http_info = self._delete_star_rock_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_star_rock_lts_config_invoker(self, request):
+        http_info = self._delete_star_rock_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_star_rock_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/starrocks/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStarRockLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_star_rocks_data_replication(self, request):
         r"""删除StarRocks数据同步
 
@@ -16035,6 +16319,77 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def show_htap_process_list(self, request):
+        r"""查询HTAP实例当前会话
+
+        查询HTAP实例当前会话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHtapProcessList
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowHtapProcessListRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowHtapProcessListResponse`
+        """
+        http_info = self._show_htap_process_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_htap_process_list_invoker(self, request):
+        http_info = self._show_htap_process_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_htap_process_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHtapProcessListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_htap_query_queues_rule(self, request):
         r"""查询当前查询队列开关和阈值
 
@@ -16842,6 +17197,73 @@ class GaussDBClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_star_rock_lts_config(self, request):
+        r"""批量创建LTS日志配置
+
+        批量创建LTS日志配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateStarRockLtsConfig
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRockLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateStarRockLtsConfigResponse`
+        """
+        http_info = self._update_star_rock_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_star_rock_lts_config_invoker(self, request):
+        http_info = self._update_star_rock_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_star_rock_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/starrocks/instances/logs/lts-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStarRockLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

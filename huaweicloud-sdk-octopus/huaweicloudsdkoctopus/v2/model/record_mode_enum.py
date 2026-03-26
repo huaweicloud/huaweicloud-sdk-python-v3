@@ -7,8 +7,8 @@ class RecordModeEnum:
     """
     allowed enum values
     """
-    _0 = "0"
-    _1 = "1"
+    _0 = 0
+    _1 = 1
     """
     Attributes:
       openapi_types (dict): The key is attribute name

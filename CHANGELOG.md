@@ -1,3 +1,324 @@
+# 3.1.189 2026-03-26
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainLocationStats**
+    - changes of request param
+      - `+ ip_version`
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ frozen_state`
+      - `- manage_state: enum value [frozen]`
+      - `- power_state: enum value [powering-on,rebooting,powering-off]`
+  - **ListServers**
+    - changes of request param
+      - `+ manage_state: enum value [frozen]`
+    - changes of response param
+      - `+ frozen_state`
+      - `+ servers.frozen_state`
+      - `- servers.manage_state: enum value [frozen]`
+      - `- servers.power_state: enum value [powering-on,rebooting,powering-off]`
+  - **ShowServerStatus**
+    - changes of response param
+      - `+ server_manage_state`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchAddCaseResultInTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterDetail**
+    - changes of response param
+      - `+ snapshotPolicy.backupEnable`
+      - `+ snapshotPolicy.bakPeriod`
+      - `+ snapshotPolicy.bakFrequency`
+      - `+ snapshotPolicy.bakKeepDay`
+      - `* snapshotPolicy: object -> object<SnapshotPolicyResp>`
+  - **UpdateYmls**
+    - changes of request param
+      - `+ edit.modify.kibana.yml`
+  - **ShowDataStoreFlavorDetail**
+    - changes of response param
+      - `+ modelList`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListLockBlockingDb`
+    - `ListLockBlockingDetail`
+    - `ListLockBlockingRelationship`
+    - `ShowLockBlockingStatistics`
+    - `ShowLockBlockingTrend`
+    - `ShowLockBlockingSwitch`
+    - `SetLockBlockingSwitch`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsFabric
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DeleteJobVersion`
+    - `ListJobs`
+    - `CreateJob`
+    - `ListJobVersions`
+    - `UpdateJob`
+    - `DeleteJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowEndpoint**
+    - changes of response param
+      - `+ custom_image_id`
+      - `+ tokens_quota`
+      - `+ runtime_env_type`
+      - `+ config`
+      - `- log_config`
+      - `+ type: enum value [ray_service,sql,container_job,notebook]`
+  - **UpdateEndpoint**
+    - changes of response param
+      - `+ custom_image_id`
+      - `+ tokens_quota`
+      - `+ runtime_env_type`
+      - `+ config`
+      - `- log_config`
+      - `+ type: enum value [ray_service,sql,container_job,notebook]`
+  - **CreateEndpoint**
+    - changes of request param
+      - `+ config`
+      - `+ cache_list`
+      - `+ public_access`
+      - `+ custom_image_id`
+      - `- log_config`
+      - `+ type: enum value [ray_service,sql,container_job,notebook]`
+    - changes of response param
+      - `+ custom_image_id`
+      - `+ tokens_quota`
+      - `+ runtime_env_type`
+      - `+ config`
+      - `- log_config`
+      - `+ type: enum value [ray_service,sql,container_job,notebook]`
+  - **ListEndpoints**
+    - changes of request param
+      - `+ type: enum value [ray_service,sql,container_job,notebook]`
+    - changes of response param
+      - `+ endpoints.custom_image_id`
+      - `+ endpoints.type: enum value [ray_service,sql,container_job,notebook]`
+
+### HuaweiCloud SDK DataArtsFabricEp
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ClearJobRun`
+    - `ShowJobRunDetail`
+    - `DeleteJobRun`
+    - `CancelJobRun`
+    - `ListJobRuns`
+    - `RunJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ScaleStore**
+    - changes of request param
+      - `+ action`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAlarmSub**
+    - changes of request param
+      - `+ language`
+      - `+ time_zone`
+      - `+ cluster_id`
+      - `+ alarm_details`
+    - changes of response param
+      - `+ alarm_details`
+      - `+ cluster_id`
+  - **DeleteAlarmSub**
+    - changes of response param
+      - `+ alarm_details`
+      - `+ cluster_id`
+  - **ResizeCluster**
+    - changes of request param
+      - `+ mode`
+      - `+ redis_conf`
+  - **ListElbs**
+    - changes of response param
+      - `+ count`
+      - `+ elbs.ip_target_enable`
+  - **ListAlarmDetail**
+    - changes of request param
+      - `+ from`
+      - `+ to`
+      - `+ recent_day`
+  - **CreateAlarmSub**
+    - changes of request param
+      - `+ cluster_id`
+      - `+ alarm_detail`
+    - changes of response param
+      - `+ alarm_details`
+      - `+ cluster_id`
+  - **ListAlarmSubs**
+    - changes of response param
+      - `+ alarm_details`
+      - `+ cluster_id`
+      - `+ alarm_subscriptions.cluster_id`
+      - `+ alarm_subscriptions.alarm_details`
+  - **CheckGrowCluster**
+    - changes of request param
+      - `+ mode`
+      - `+ redis_conf`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ server.capacity_reservation_id`
+      - `+ server.capacity_reservation_specification`
+      - `+ server.spod_id`
+      - `+ server.enclave_options`
+  - **ListServersDetails**
+    - changes of response param
+      - `+ servers.capacity_reservation_id`
+      - `+ servers.capacity_reservation_specification`
+      - `+ servers.spod_id`
+      - `+ servers.enclave_options`
+  - **ListRecycleBinServers**
+    - changes of response param
+      - `+ servers.capacity_reservation_id`
+      - `+ servers.capacity_reservation_specification`
+      - `+ servers.spod_id`
+      - `+ servers.enclave_options`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowHtapProcessList`
+    - `DeleteHtapProcessList`
+    - `ShowInstanceBackups`
+    - `DeleteAutoSqlLimiting`
+    - `UpdateStarRockLtsConfig`
+    - `DeleteStarRockLtsConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRecycleInstances**
+    - changes of response param
+      - `+ instances.recycle_backups`
+      - `- instances.recycle_bakcups`
+  - **ListImmediateJobs**
+    - changes of response param
+      - `+ jobs.show_detail`
+      - `+ jobs.action_names`
+  - **CreateGaussMySqlInstance**
+    - changes of request param
+      - `+ volume.type`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowBackupConfig`, `ChangeBackupConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportConsistencyResults**
+    - changes of response param
+      - `* : string -> binary`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTopDomains**
+    - changes of response param
+      - `+ items.web_tag`
+
 # 3.1.188 2026-03-19
 
 ### HuaweiCloud SDK AAD

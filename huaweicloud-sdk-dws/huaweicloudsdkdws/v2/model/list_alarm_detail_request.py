@@ -17,16 +17,22 @@ class ListAlarmDetailRequest:
     openapi_types = {
         'time_zone': 'str',
         'offset': 'str',
-        'limit': 'str'
+        'limit': 'str',
+        '_from': 'int',
+        'to': 'int',
+        'recent_day': 'int'
     }
 
     attribute_map = {
         'time_zone': 'time_zone',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        '_from': 'from',
+        'to': 'to',
+        'recent_day': 'recent_day'
     }
 
-    def __init__(self, time_zone=None, offset=None, limit=None):
+    def __init__(self, time_zone=None, offset=None, limit=None, _from=None, to=None, recent_day=None):
         r"""ListAlarmDetailRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +43,12 @@ class ListAlarmDetailRequest:
         :type offset: str
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 10。
         :type limit: str
+        :param _from: **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        :type _from: int
+        :param to: **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+        :type to: int
+        :param recent_day: **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+        :type recent_day: int
         """
         
         
@@ -44,6 +56,9 @@ class ListAlarmDetailRequest:
         self._time_zone = None
         self._offset = None
         self._limit = None
+        self.__from = None
+        self._to = None
+        self._recent_day = None
         self.discriminator = None
 
         if time_zone is not None:
@@ -52,6 +67,12 @@ class ListAlarmDetailRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
+        if recent_day is not None:
+            self.recent_day = recent_day
 
     @property
     def time_zone(self):
@@ -118,6 +139,72 @@ class ListAlarmDetailRequest:
         :type limit: str
         """
         self._limit = limit
+
+    @property
+    def _from(self):
+        r"""Gets the _from of this ListAlarmDetailRequest.
+
+        **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+
+        :return: The _from of this ListAlarmDetailRequest.
+        :rtype: int
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        r"""Sets the _from of this ListAlarmDetailRequest.
+
+        **参数解释**：  开始UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+
+        :param _from: The _from of this ListAlarmDetailRequest.
+        :type _from: int
+        """
+        self.__from = _from
+
+    @property
+    def to(self):
+        r"""Gets the to of this ListAlarmDetailRequest.
+
+        **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+
+        :return: The to of this ListAlarmDetailRequest.
+        :rtype: int
+        """
+        return self._to
+
+    @to.setter
+    def to(self, to):
+        r"""Sets the to of this ListAlarmDetailRequest.
+
+        **参数解释**：  结束UTC时间，单位精确到毫秒。  **取值范围**：  不涉及。
+
+        :param to: The to of this ListAlarmDetailRequest.
+        :type to: int
+        """
+        self._to = to
+
+    @property
+    def recent_day(self):
+        r"""Gets the recent_day of this ListAlarmDetailRequest.
+
+        **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+
+        :return: The recent_day of this ListAlarmDetailRequest.
+        :rtype: int
+        """
+        return self._recent_day
+
+    @recent_day.setter
+    def recent_day(self, recent_day):
+        r"""Sets the recent_day of this ListAlarmDetailRequest.
+
+        **参数解释**：  查询前N天到当前时间范围内的告警。  **约束限制**： 不涉及。 **取值范围**： 大于0。
+
+        :param recent_day: The recent_day of this ListAlarmDetailRequest.
+        :type recent_day: int
+        """
+        self._recent_day = recent_day
 
     def to_dict(self):
         result = {}

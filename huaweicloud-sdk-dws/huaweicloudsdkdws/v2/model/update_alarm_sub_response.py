@@ -26,7 +26,9 @@ class UpdateAlarmSubResponse(SdkResponse):
         'notification_target_name': 'str',
         'notification_target_type': 'str',
         'language': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'cluster_id': 'str',
+        'alarm_details': 'list[AlarmSubDetailResopnse]'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class UpdateAlarmSubResponse(SdkResponse):
         'notification_target_name': 'notification_target_name',
         'notification_target_type': 'notification_target_type',
         'language': 'language',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'cluster_id': 'cluster_id',
+        'alarm_details': 'alarm_details'
     }
 
-    def __init__(self, id=None, name=None, enable=None, alarm_level=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None):
+    def __init__(self, id=None, name=None, enable=None, alarm_level=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None, cluster_id=None, alarm_details=None):
         r"""UpdateAlarmSubResponse
 
         The model defined in huaweicloud sdk
@@ -70,6 +74,10 @@ class UpdateAlarmSubResponse(SdkResponse):
         :type language: str
         :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
+        :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 不涉及。
+        :type cluster_id: str
+        :param alarm_details: **参数解释**： 订阅的所有告警详细信息。 **取值范围**： 不涉及。
+        :type alarm_details: list[:class:`huaweicloudsdkdws.v2.AlarmSubDetailResopnse`]
         """
         
         super().__init__()
@@ -85,6 +93,8 @@ class UpdateAlarmSubResponse(SdkResponse):
         self._notification_target_type = None
         self._language = None
         self._time_zone = None
+        self._cluster_id = None
+        self._alarm_details = None
         self.discriminator = None
 
         if id is not None:
@@ -109,6 +119,10 @@ class UpdateAlarmSubResponse(SdkResponse):
             self.language = language
         if time_zone is not None:
             self.time_zone = time_zone
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if alarm_details is not None:
+            self.alarm_details = alarm_details
 
     @property
     def id(self):
@@ -351,6 +365,50 @@ class UpdateAlarmSubResponse(SdkResponse):
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this UpdateAlarmSubResponse.
+
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
+
+        :return: The cluster_id of this UpdateAlarmSubResponse.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this UpdateAlarmSubResponse.
+
+        **参数解释**： 集群ID。 **取值范围**： 不涉及。
+
+        :param cluster_id: The cluster_id of this UpdateAlarmSubResponse.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def alarm_details(self):
+        r"""Gets the alarm_details of this UpdateAlarmSubResponse.
+
+        **参数解释**： 订阅的所有告警详细信息。 **取值范围**： 不涉及。
+
+        :return: The alarm_details of this UpdateAlarmSubResponse.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.AlarmSubDetailResopnse`]
+        """
+        return self._alarm_details
+
+    @alarm_details.setter
+    def alarm_details(self, alarm_details):
+        r"""Sets the alarm_details of this UpdateAlarmSubResponse.
+
+        **参数解释**： 订阅的所有告警详细信息。 **取值范围**： 不涉及。
+
+        :param alarm_details: The alarm_details of this UpdateAlarmSubResponse.
+        :type alarm_details: list[:class:`huaweicloudsdkdws.v2.AlarmSubDetailResopnse`]
+        """
+        self._alarm_details = alarm_details
 
     def to_dict(self):
         import warnings

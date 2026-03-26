@@ -26,13 +26,16 @@ class ShowEndpointResponse(SdkResponse):
         'update_time': 'datetime',
         'owner': 'User',
         'cap': 'CapRef',
+        'custom_image_id': 'str',
         'reserved_resource': 'ReservedResource',
         'ray_resource': 'RayResourceInfo',
         'error_code': 'str',
         'error_msg': 'str',
         'urls': 'list[Url]',
-        'log_config': 'LogConfigInfo',
         'business_engine_instance_ids': 'list[str]',
+        'tokens_quota': 'TokensQuota',
+        'runtime_env_type': 'RuntimeEnvType',
+        'config': 'EndpointConfigResponse',
         'x_request_id': 'str'
     }
 
@@ -47,17 +50,20 @@ class ShowEndpointResponse(SdkResponse):
         'update_time': 'update_time',
         'owner': 'owner',
         'cap': 'cap',
+        'custom_image_id': 'custom_image_id',
         'reserved_resource': 'reserved_resource',
         'ray_resource': 'ray_resource',
         'error_code': 'error_code',
         'error_msg': 'error_msg',
         'urls': 'urls',
-        'log_config': 'log_config',
         'business_engine_instance_ids': 'business_engine_instance_ids',
+        'tokens_quota': 'tokens_quota',
+        'runtime_env_type': 'runtime_env_type',
+        'config': 'config',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None, urls=None, log_config=None, business_engine_instance_ids=None, x_request_id=None):
+    def __init__(self, visibility=None, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, owner=None, cap=None, custom_image_id=None, reserved_resource=None, ray_resource=None, error_code=None, error_msg=None, urls=None, business_engine_instance_ids=None, tokens_quota=None, runtime_env_type=None, config=None, x_request_id=None):
         r"""ShowEndpointResponse
 
         The model defined in huaweicloud sdk
@@ -82,6 +88,8 @@ class ShowEndpointResponse(SdkResponse):
         :type owner: :class:`huaweicloudsdkdataartsfabric.v1.User`
         :param cap: 
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
+        :param custom_image_id: - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+        :type custom_image_id: str
         :param reserved_resource: 
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
         :param ray_resource: 
@@ -92,10 +100,14 @@ class ShowEndpointResponse(SdkResponse):
         :type error_msg: str
         :param urls: 调用地址
         :type urls: list[:class:`huaweicloudsdkdataartsfabric.v1.Url`]
-        :param log_config: 
-        :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfigInfo`
         :param business_engine_instance_ids: 引擎实例id列表
         :type business_engine_instance_ids: list[str]
+        :param tokens_quota: 
+        :type tokens_quota: :class:`huaweicloudsdkdataartsfabric.v1.TokensQuota`
+        :param runtime_env_type: 
+        :type runtime_env_type: :class:`huaweicloudsdkdataartsfabric.v1.RuntimeEnvType`
+        :param config: 
+        :type config: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfigResponse`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -112,13 +124,16 @@ class ShowEndpointResponse(SdkResponse):
         self._update_time = None
         self._owner = None
         self._cap = None
+        self._custom_image_id = None
         self._reserved_resource = None
         self._ray_resource = None
         self._error_code = None
         self._error_msg = None
         self._urls = None
-        self._log_config = None
         self._business_engine_instance_ids = None
+        self._tokens_quota = None
+        self._runtime_env_type = None
+        self._config = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -135,6 +150,8 @@ class ShowEndpointResponse(SdkResponse):
         self.owner = owner
         if cap is not None:
             self.cap = cap
+        if custom_image_id is not None:
+            self.custom_image_id = custom_image_id
         if reserved_resource is not None:
             self.reserved_resource = reserved_resource
         if ray_resource is not None:
@@ -145,10 +162,14 @@ class ShowEndpointResponse(SdkResponse):
             self.error_msg = error_msg
         if urls is not None:
             self.urls = urls
-        if log_config is not None:
-            self.log_config = log_config
         if business_engine_instance_ids is not None:
             self.business_engine_instance_ids = business_engine_instance_ids
+        if tokens_quota is not None:
+            self.tokens_quota = tokens_quota
+        if runtime_env_type is not None:
+            self.runtime_env_type = runtime_env_type
+        if config is not None:
+            self.config = config
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -357,6 +378,28 @@ class ShowEndpointResponse(SdkResponse):
         self._cap = cap
 
     @property
+    def custom_image_id(self):
+        r"""Gets the custom_image_id of this ShowEndpointResponse.
+
+        - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+
+        :return: The custom_image_id of this ShowEndpointResponse.
+        :rtype: str
+        """
+        return self._custom_image_id
+
+    @custom_image_id.setter
+    def custom_image_id(self, custom_image_id):
+        r"""Sets the custom_image_id of this ShowEndpointResponse.
+
+        - **参数解释**：CustomImageId。 - **约束限制**：不涉及。 - **取值范围**：长度为[32,36]的英文字符、数字和中划线(-)的组合。 - **默认取值**：不涉及。 
+
+        :param custom_image_id: The custom_image_id of this ShowEndpointResponse.
+        :type custom_image_id: str
+        """
+        self._custom_image_id = custom_image_id
+
+    @property
     def reserved_resource(self):
         r"""Gets the reserved_resource of this ShowEndpointResponse.
 
@@ -459,24 +502,6 @@ class ShowEndpointResponse(SdkResponse):
         self._urls = urls
 
     @property
-    def log_config(self):
-        r"""Gets the log_config of this ShowEndpointResponse.
-
-        :return: The log_config of this ShowEndpointResponse.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.LogConfigInfo`
-        """
-        return self._log_config
-
-    @log_config.setter
-    def log_config(self, log_config):
-        r"""Sets the log_config of this ShowEndpointResponse.
-
-        :param log_config: The log_config of this ShowEndpointResponse.
-        :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfigInfo`
-        """
-        self._log_config = log_config
-
-    @property
     def business_engine_instance_ids(self):
         r"""Gets the business_engine_instance_ids of this ShowEndpointResponse.
 
@@ -497,6 +522,60 @@ class ShowEndpointResponse(SdkResponse):
         :type business_engine_instance_ids: list[str]
         """
         self._business_engine_instance_ids = business_engine_instance_ids
+
+    @property
+    def tokens_quota(self):
+        r"""Gets the tokens_quota of this ShowEndpointResponse.
+
+        :return: The tokens_quota of this ShowEndpointResponse.
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.TokensQuota`
+        """
+        return self._tokens_quota
+
+    @tokens_quota.setter
+    def tokens_quota(self, tokens_quota):
+        r"""Sets the tokens_quota of this ShowEndpointResponse.
+
+        :param tokens_quota: The tokens_quota of this ShowEndpointResponse.
+        :type tokens_quota: :class:`huaweicloudsdkdataartsfabric.v1.TokensQuota`
+        """
+        self._tokens_quota = tokens_quota
+
+    @property
+    def runtime_env_type(self):
+        r"""Gets the runtime_env_type of this ShowEndpointResponse.
+
+        :return: The runtime_env_type of this ShowEndpointResponse.
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.RuntimeEnvType`
+        """
+        return self._runtime_env_type
+
+    @runtime_env_type.setter
+    def runtime_env_type(self, runtime_env_type):
+        r"""Sets the runtime_env_type of this ShowEndpointResponse.
+
+        :param runtime_env_type: The runtime_env_type of this ShowEndpointResponse.
+        :type runtime_env_type: :class:`huaweicloudsdkdataartsfabric.v1.RuntimeEnvType`
+        """
+        self._runtime_env_type = runtime_env_type
+
+    @property
+    def config(self):
+        r"""Gets the config of this ShowEndpointResponse.
+
+        :return: The config of this ShowEndpointResponse.
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfigResponse`
+        """
+        return self._config
+
+    @config.setter
+    def config(self, config):
+        r"""Sets the config of this ShowEndpointResponse.
+
+        :param config: The config of this ShowEndpointResponse.
+        :type config: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfigResponse`
+        """
+        self._config = config
 
     @property
     def x_request_id(self):

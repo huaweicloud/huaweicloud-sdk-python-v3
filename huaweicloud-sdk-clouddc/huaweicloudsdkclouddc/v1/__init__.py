@@ -46,6 +46,7 @@ from huaweicloudsdkclouddc.v1.model.export_server_logs_response import ExportSer
 from huaweicloudsdkclouddc.v1.model.fan import Fan
 from huaweicloudsdkclouddc.v1.model.fault_host_info import FaultHostInfo
 from huaweicloudsdkclouddc.v1.model.firmware_details import FirmwareDetails
+from huaweicloudsdkclouddc.v1.model.frozen_state import FrozenState
 from huaweicloudsdkclouddc.v1.model.hardware_metric import HardwareMetric
 from huaweicloudsdkclouddc.v1.model.hardware_summary import HardwareSummary
 from huaweicloudsdkclouddc.v1.model.health import Health
@@ -103,6 +104,7 @@ from huaweicloudsdkclouddc.v1.model.run_instances_request import RunInstancesReq
 from huaweicloudsdkclouddc.v1.model.run_instances_response import RunInstancesResponse
 from huaweicloudsdkclouddc.v1.model.sas_address import SasAddress
 from huaweicloudsdkclouddc.v1.model.server_instance_id_set import ServerInstanceIdSet
+from huaweicloudsdkclouddc.v1.model.server_manage_state import ServerManageState
 from huaweicloudsdkclouddc.v1.model.server_power_status import ServerPowerStatus
 from huaweicloudsdkclouddc.v1.model.server_state import ServerState
 from huaweicloudsdkclouddc.v1.model.server_status import ServerStatus

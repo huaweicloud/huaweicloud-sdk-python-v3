@@ -15,35 +15,42 @@ class UpdateYmlsReqEditModify:
     sensitive_list = []
 
     openapi_types = {
-        'elasticsearch_yml': 'object'
+        'elasticsearch_yml': 'object',
+        'kibana_yml': 'object'
     }
 
     attribute_map = {
-        'elasticsearch_yml': 'elasticsearch.yml'
+        'elasticsearch_yml': 'elasticsearch.yml',
+        'kibana_yml': 'kibana.yml'
     }
 
-    def __init__(self, elasticsearch_yml=None):
+    def __init__(self, elasticsearch_yml=None, kibana_yml=None):
         r"""UpdateYmlsReqEditModify
 
         The model defined in huaweicloud sdk
 
-        :param elasticsearch_yml: 参数配置列表。值为需要修改的json数据。
+        :param elasticsearch_yml: **参数解释**： 参数配置列表，值为需要修改的json数据，OpenSearch集群也使用此参数，即修改opensearch.yml时，这里也是填写elasticsearch.yml。 **约束限制**： 不涉及
         :type elasticsearch_yml: object
+        :param kibana_yml: **参数解释**： 参数配置列表，值为需要修改的json数据。OpenSearch集群也使用此参数，即修改opensearch_dashboards.yml时，这里也是填写kibana.yml。 **约束限制**： 不涉及
+        :type kibana_yml: object
         """
         
         
 
         self._elasticsearch_yml = None
+        self._kibana_yml = None
         self.discriminator = None
 
         if elasticsearch_yml is not None:
             self.elasticsearch_yml = elasticsearch_yml
+        if kibana_yml is not None:
+            self.kibana_yml = kibana_yml
 
     @property
     def elasticsearch_yml(self):
         r"""Gets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
-        参数配置列表。值为需要修改的json数据。
+        **参数解释**： 参数配置列表，值为需要修改的json数据，OpenSearch集群也使用此参数，即修改opensearch.yml时，这里也是填写elasticsearch.yml。 **约束限制**： 不涉及
 
         :return: The elasticsearch_yml of this UpdateYmlsReqEditModify.
         :rtype: object
@@ -54,12 +61,34 @@ class UpdateYmlsReqEditModify:
     def elasticsearch_yml(self, elasticsearch_yml):
         r"""Sets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
-        参数配置列表。值为需要修改的json数据。
+        **参数解释**： 参数配置列表，值为需要修改的json数据，OpenSearch集群也使用此参数，即修改opensearch.yml时，这里也是填写elasticsearch.yml。 **约束限制**： 不涉及
 
         :param elasticsearch_yml: The elasticsearch_yml of this UpdateYmlsReqEditModify.
         :type elasticsearch_yml: object
         """
         self._elasticsearch_yml = elasticsearch_yml
+
+    @property
+    def kibana_yml(self):
+        r"""Gets the kibana_yml of this UpdateYmlsReqEditModify.
+
+        **参数解释**： 参数配置列表，值为需要修改的json数据。OpenSearch集群也使用此参数，即修改opensearch_dashboards.yml时，这里也是填写kibana.yml。 **约束限制**： 不涉及
+
+        :return: The kibana_yml of this UpdateYmlsReqEditModify.
+        :rtype: object
+        """
+        return self._kibana_yml
+
+    @kibana_yml.setter
+    def kibana_yml(self, kibana_yml):
+        r"""Sets the kibana_yml of this UpdateYmlsReqEditModify.
+
+        **参数解释**： 参数配置列表，值为需要修改的json数据。OpenSearch集群也使用此参数，即修改opensearch_dashboards.yml时，这里也是填写kibana.yml。 **约束限制**： 不涉及
+
+        :param kibana_yml: The kibana_yml of this UpdateYmlsReqEditModify.
+        :type kibana_yml: object
+        """
+        self._kibana_yml = kibana_yml
 
     def to_dict(self):
         result = {}

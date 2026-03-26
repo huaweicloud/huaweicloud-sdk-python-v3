@@ -16,15 +16,17 @@ class TopDomainsCountItem:
 
     openapi_types = {
         'key': 'str',
-        'num': 'int'
+        'num': 'int',
+        'web_tag': 'str'
     }
 
     attribute_map = {
         'key': 'key',
-        'num': 'num'
+        'num': 'num',
+        'web_tag': 'web_tag'
     }
 
-    def __init__(self, key=None, num=None):
+    def __init__(self, key=None, num=None, web_tag=None):
         r"""TopDomainsCountItem
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class TopDomainsCountItem:
         :type key: str
         :param num: **参数解释：** 数量 **取值范围：** 不涉及
         :type num: int
+        :param web_tag: **参数解释：** 网站名称，对应WAF控制台域名详情中的网站名称 **取值范围：** 不涉及
+        :type web_tag: str
         """
         
         
 
         self._key = None
         self._num = None
+        self._web_tag = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
         if num is not None:
             self.num = num
+        if web_tag is not None:
+            self.web_tag = web_tag
 
     @property
     def key(self):
@@ -89,6 +96,28 @@ class TopDomainsCountItem:
         :type num: int
         """
         self._num = num
+
+    @property
+    def web_tag(self):
+        r"""Gets the web_tag of this TopDomainsCountItem.
+
+        **参数解释：** 网站名称，对应WAF控制台域名详情中的网站名称 **取值范围：** 不涉及
+
+        :return: The web_tag of this TopDomainsCountItem.
+        :rtype: str
+        """
+        return self._web_tag
+
+    @web_tag.setter
+    def web_tag(self, web_tag):
+        r"""Sets the web_tag of this TopDomainsCountItem.
+
+        **参数解释：** 网站名称，对应WAF控制台域名详情中的网站名称 **取值范围：** 不涉及
+
+        :param web_tag: The web_tag of this TopDomainsCountItem.
+        :type web_tag: str
+        """
+        self._web_tag = web_tag
 
     def to_dict(self):
         result = {}

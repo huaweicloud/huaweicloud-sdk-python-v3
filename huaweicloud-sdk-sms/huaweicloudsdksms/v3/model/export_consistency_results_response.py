@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExportConsistencyResultsResponse(SdkResponse):
+class ExportConsistencyResultsResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -16,51 +16,20 @@ class ExportConsistencyResultsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, response):
         r"""ExportConsistencyResultsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: OK
-        :type body: str
         """
         
-        super().__init__()
-
-        self._body = None
+        super().__init__(response)
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this ExportConsistencyResultsResponse.
-
-        OK
-
-        :return: The body of this ExportConsistencyResultsResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ExportConsistencyResultsResponse.
-
-        OK
-
-        :param body: The body of this ExportConsistencyResultsResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings

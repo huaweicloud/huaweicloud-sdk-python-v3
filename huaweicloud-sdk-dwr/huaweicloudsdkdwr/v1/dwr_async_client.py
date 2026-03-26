@@ -1080,9 +1080,9 @@ class DwrAsyncClient(Client):
         return http_info
 
     def scale_store_async(self, request):
-        r"""扩容知识仓实例
+        r"""变更知识仓实例
 
-        对指定的知识仓实例进行扩容。
+        对指定的知识仓实例进行扩容或缩容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

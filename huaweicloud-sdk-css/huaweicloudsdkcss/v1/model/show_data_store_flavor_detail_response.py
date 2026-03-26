@@ -18,16 +18,18 @@ class ShowDataStoreFlavorDetailResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'dbname': 'str',
-        'versions': 'list[FlavorRespVersionBody]'
+        'versions': 'list[FlavorRespVersionBody]',
+        'model_list': 'ModelList'
     }
 
     attribute_map = {
         'id': 'id',
         'dbname': 'dbname',
-        'versions': 'versions'
+        'versions': 'versions',
+        'model_list': 'modelList'
     }
 
-    def __init__(self, id=None, dbname=None, versions=None):
+    def __init__(self, id=None, dbname=None, versions=None, model_list=None):
         r"""ShowDataStoreFlavorDetailResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ShowDataStoreFlavorDetailResponse(SdkResponse):
         :type dbname: str
         :param versions: **参数解释**： 引擎版本。 **取值范围**： 不涉及
         :type versions: list[:class:`huaweicloudsdkcss.v1.FlavorRespVersionBody`]
+        :param model_list: 
+        :type model_list: :class:`huaweicloudsdkcss.v1.ModelList`
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ShowDataStoreFlavorDetailResponse(SdkResponse):
         self._id = None
         self._dbname = None
         self._versions = None
+        self._model_list = None
         self.discriminator = None
 
         if id is not None:
@@ -53,6 +58,8 @@ class ShowDataStoreFlavorDetailResponse(SdkResponse):
             self.dbname = dbname
         if versions is not None:
             self.versions = versions
+        if model_list is not None:
+            self.model_list = model_list
 
     @property
     def id(self):
@@ -119,6 +126,24 @@ class ShowDataStoreFlavorDetailResponse(SdkResponse):
         :type versions: list[:class:`huaweicloudsdkcss.v1.FlavorRespVersionBody`]
         """
         self._versions = versions
+
+    @property
+    def model_list(self):
+        r"""Gets the model_list of this ShowDataStoreFlavorDetailResponse.
+
+        :return: The model_list of this ShowDataStoreFlavorDetailResponse.
+        :rtype: :class:`huaweicloudsdkcss.v1.ModelList`
+        """
+        return self._model_list
+
+    @model_list.setter
+    def model_list(self, model_list):
+        r"""Sets the model_list of this ShowDataStoreFlavorDetailResponse.
+
+        :param model_list: The model_list of this ShowDataStoreFlavorDetailResponse.
+        :type model_list: :class:`huaweicloudsdkcss.v1.ModelList`
+        """
+        self._model_list = model_list
 
     def to_dict(self):
         import warnings

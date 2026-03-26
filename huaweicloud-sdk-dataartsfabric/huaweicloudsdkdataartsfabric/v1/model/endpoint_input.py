@@ -21,7 +21,10 @@ class EndpointInput:
         'reserved_resource': 'ReservedResource',
         'ray_resource': 'RayResourceInput',
         'cap': 'CapRef',
-        'log_config': 'LogConfig'
+        'config': 'EndpointConfig',
+        'cache_list': 'list[CacheConfig]',
+        'public_access': 'bool',
+        'custom_image_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class EndpointInput:
         'reserved_resource': 'reserved_resource',
         'ray_resource': 'ray_resource',
         'cap': 'cap',
-        'log_config': 'log_config'
+        'config': 'config',
+        'cache_list': 'cache_list',
+        'public_access': 'public_access',
+        'custom_image_id': 'custom_image_id'
     }
 
-    def __init__(self, name=None, description=None, type=None, reserved_resource=None, ray_resource=None, cap=None, log_config=None):
+    def __init__(self, name=None, description=None, type=None, reserved_resource=None, ray_resource=None, cap=None, config=None, cache_list=None, public_access=None, custom_image_id=None):
         r"""EndpointInput
 
         The model defined in huaweicloud sdk
@@ -51,8 +57,14 @@ class EndpointInput:
         :type ray_resource: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInput`
         :param cap: 
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
-        :param log_config: 
-        :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfig`
+        :param config: 
+        :type config: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfig`
+        :param cache_list: 
+        :type cache_list: list[:class:`huaweicloudsdkdataartsfabric.v1.CacheConfig`]
+        :param public_access: **参数解释**：是否开启公网访问。 **约束限制**：不涉及。 **取值范围**：开启true，关闭false。 **默认取值**：false。 
+        :type public_access: bool
+        :param custom_image_id: 自定义镜像ID
+        :type custom_image_id: str
         """
         
         
@@ -63,7 +75,10 @@ class EndpointInput:
         self._reserved_resource = None
         self._ray_resource = None
         self._cap = None
-        self._log_config = None
+        self._config = None
+        self._cache_list = None
+        self._public_access = None
+        self._custom_image_id = None
         self.discriminator = None
 
         self.name = name
@@ -76,8 +91,14 @@ class EndpointInput:
             self.ray_resource = ray_resource
         if cap is not None:
             self.cap = cap
-        if log_config is not None:
-            self.log_config = log_config
+        if config is not None:
+            self.config = config
+        if cache_list is not None:
+            self.cache_list = cache_list
+        if public_access is not None:
+            self.public_access = public_access
+        if custom_image_id is not None:
+            self.custom_image_id = custom_image_id
 
     @property
     def name(self):
@@ -196,22 +217,84 @@ class EndpointInput:
         self._cap = cap
 
     @property
-    def log_config(self):
-        r"""Gets the log_config of this EndpointInput.
+    def config(self):
+        r"""Gets the config of this EndpointInput.
 
-        :return: The log_config of this EndpointInput.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.LogConfig`
+        :return: The config of this EndpointInput.
+        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfig`
         """
-        return self._log_config
+        return self._config
 
-    @log_config.setter
-    def log_config(self, log_config):
-        r"""Sets the log_config of this EndpointInput.
+    @config.setter
+    def config(self, config):
+        r"""Sets the config of this EndpointInput.
 
-        :param log_config: The log_config of this EndpointInput.
-        :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfig`
+        :param config: The config of this EndpointInput.
+        :type config: :class:`huaweicloudsdkdataartsfabric.v1.EndpointConfig`
         """
-        self._log_config = log_config
+        self._config = config
+
+    @property
+    def cache_list(self):
+        r"""Gets the cache_list of this EndpointInput.
+
+        :return: The cache_list of this EndpointInput.
+        :rtype: list[:class:`huaweicloudsdkdataartsfabric.v1.CacheConfig`]
+        """
+        return self._cache_list
+
+    @cache_list.setter
+    def cache_list(self, cache_list):
+        r"""Sets the cache_list of this EndpointInput.
+
+        :param cache_list: The cache_list of this EndpointInput.
+        :type cache_list: list[:class:`huaweicloudsdkdataartsfabric.v1.CacheConfig`]
+        """
+        self._cache_list = cache_list
+
+    @property
+    def public_access(self):
+        r"""Gets the public_access of this EndpointInput.
+
+        **参数解释**：是否开启公网访问。 **约束限制**：不涉及。 **取值范围**：开启true，关闭false。 **默认取值**：false。 
+
+        :return: The public_access of this EndpointInput.
+        :rtype: bool
+        """
+        return self._public_access
+
+    @public_access.setter
+    def public_access(self, public_access):
+        r"""Sets the public_access of this EndpointInput.
+
+        **参数解释**：是否开启公网访问。 **约束限制**：不涉及。 **取值范围**：开启true，关闭false。 **默认取值**：false。 
+
+        :param public_access: The public_access of this EndpointInput.
+        :type public_access: bool
+        """
+        self._public_access = public_access
+
+    @property
+    def custom_image_id(self):
+        r"""Gets the custom_image_id of this EndpointInput.
+
+        自定义镜像ID
+
+        :return: The custom_image_id of this EndpointInput.
+        :rtype: str
+        """
+        return self._custom_image_id
+
+    @custom_image_id.setter
+    def custom_image_id(self, custom_image_id):
+        r"""Sets the custom_image_id of this EndpointInput.
+
+        自定义镜像ID
+
+        :param custom_image_id: The custom_image_id of this EndpointInput.
+        :type custom_image_id: str
+        """
+        self._custom_image_id = custom_image_id
 
     def to_dict(self):
         result = {}

@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class LogStream:
+class SetLockBlockingSwitchRequest:
 
     """
     Attributes:
@@ -15,80 +15,76 @@ class LogStream:
     sensitive_list = []
 
     openapi_types = {
-        'log_stream_id': 'str',
-        'log_stream_name': 'str'
+        'x_language': 'str',
+        'body': 'SetLockBlockingSwitchReq'
     }
 
     attribute_map = {
-        'log_stream_id': 'log_stream_id',
-        'log_stream_name': 'log_stream_name'
+        'x_language': 'X-Language',
+        'body': 'body'
     }
 
-    def __init__(self, log_stream_id=None, log_stream_name=None):
-        r"""LogStream
+    def __init__(self, x_language=None, body=None):
+        r"""SetLockBlockingSwitchRequest
 
         The model defined in huaweicloud sdk
 
-        :param log_stream_id: 日志流ID
-        :type log_stream_id: str
-        :param log_stream_name: 日志流名称
-        :type log_stream_name: str
+        :param x_language: 请求语言类型。en-us：英文。 zh-cn：中文。
+        :type x_language: str
+        :param body: Body of the SetLockBlockingSwitchRequest
+        :type body: :class:`huaweicloudsdkdas.v3.SetLockBlockingSwitchReq`
         """
         
         
 
-        self._log_stream_id = None
-        self._log_stream_name = None
+        self._x_language = None
+        self._body = None
         self.discriminator = None
 
-        if log_stream_id is not None:
-            self.log_stream_id = log_stream_id
-        if log_stream_name is not None:
-            self.log_stream_name = log_stream_name
+        if x_language is not None:
+            self.x_language = x_language
+        if body is not None:
+            self.body = body
 
     @property
-    def log_stream_id(self):
-        r"""Gets the log_stream_id of this LogStream.
+    def x_language(self):
+        r"""Gets the x_language of this SetLockBlockingSwitchRequest.
 
-        日志流ID
+        请求语言类型。en-us：英文。 zh-cn：中文。
 
-        :return: The log_stream_id of this LogStream.
+        :return: The x_language of this SetLockBlockingSwitchRequest.
         :rtype: str
         """
-        return self._log_stream_id
+        return self._x_language
 
-    @log_stream_id.setter
-    def log_stream_id(self, log_stream_id):
-        r"""Sets the log_stream_id of this LogStream.
+    @x_language.setter
+    def x_language(self, x_language):
+        r"""Sets the x_language of this SetLockBlockingSwitchRequest.
 
-        日志流ID
+        请求语言类型。en-us：英文。 zh-cn：中文。
 
-        :param log_stream_id: The log_stream_id of this LogStream.
-        :type log_stream_id: str
+        :param x_language: The x_language of this SetLockBlockingSwitchRequest.
+        :type x_language: str
         """
-        self._log_stream_id = log_stream_id
+        self._x_language = x_language
 
     @property
-    def log_stream_name(self):
-        r"""Gets the log_stream_name of this LogStream.
+    def body(self):
+        r"""Gets the body of this SetLockBlockingSwitchRequest.
 
-        日志流名称
-
-        :return: The log_stream_name of this LogStream.
-        :rtype: str
+        :return: The body of this SetLockBlockingSwitchRequest.
+        :rtype: :class:`huaweicloudsdkdas.v3.SetLockBlockingSwitchReq`
         """
-        return self._log_stream_name
+        return self._body
 
-    @log_stream_name.setter
-    def log_stream_name(self, log_stream_name):
-        r"""Sets the log_stream_name of this LogStream.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this SetLockBlockingSwitchRequest.
 
-        日志流名称
-
-        :param log_stream_name: The log_stream_name of this LogStream.
-        :type log_stream_name: str
+        :param body: The body of this SetLockBlockingSwitchRequest.
+        :type body: :class:`huaweicloudsdkdas.v3.SetLockBlockingSwitchReq`
         """
-        self._log_stream_name = log_stream_name
+        self._body = body
 
     def to_dict(self):
         result = {}
@@ -127,7 +123,7 @@ class LogStream:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, LogStream):
+        if not isinstance(other, SetLockBlockingSwitchRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -7,12 +7,12 @@ class ScenarioStatusEnum:
     """
     allowed enum values
     """
-    _0 = "0"
-    _1 = "1"
-    _10 = "10"
-    _11 = "11"
-    _12 = "12"
-    _100 = "100"
+    _0 = 0
+    _1 = 1
+    _10 = 10
+    _11 = 11
+    _12 = 12
+    _100 = 100
     """
     Attributes:
       openapi_types (dict): The key is attribute name

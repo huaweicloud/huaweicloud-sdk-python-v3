@@ -19,7 +19,9 @@ class ResizeClusterRequestBody:
         'logical_cluster_name': 'str',
         'create_node_only': 'bool',
         'waiting_for_killing': 'int',
-        'auto_redistribute': 'bool'
+        'auto_redistribute': 'bool',
+        'mode': 'str',
+        'redis_conf': 'RedisConfReq'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class ResizeClusterRequestBody:
         'logical_cluster_name': 'logical_cluster_name',
         'create_node_only': 'create_node_only',
         'waiting_for_killing': 'waiting_for_killing',
-        'auto_redistribute': 'auto_redistribute'
+        'auto_redistribute': 'auto_redistribute',
+        'mode': 'mode',
+        'redis_conf': 'redis_conf'
     }
 
-    def __init__(self, scale_out=None, logical_cluster_name=None, create_node_only=None, waiting_for_killing=None, auto_redistribute=None):
+    def __init__(self, scale_out=None, logical_cluster_name=None, create_node_only=None, waiting_for_killing=None, auto_redistribute=None, mode=None, redis_conf=None):
         r"""ResizeClusterRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class ResizeClusterRequestBody:
         :type waiting_for_killing: int
         :param auto_redistribute: **参数解释**： 扩容完成后是否自动启动重分布，默认是。如果设置为false，扩容后不进行重分布，此时集群任务信息处于“待重分布”状态，无法进行其他操作。 **约束限制**： 不涉及。 **取值范围**： - true：扩容后立即重分布。 - false：扩容后不进行重分布，此时集群任务信息处于“待重分布”状态。  **默认取值**： true
         :type auto_redistribute: bool
+        :param mode: **参数解释**： 扩容模式，分为在线和离线。在线扩容过程中，支持数据增删改查及部分DDL语法，其余不支持的语法将会报错。在线扩容对业务影响更小，离线模式存在短暂的中断，数据库不可用。 **约束限制**： 不涉及。 **取值范围**： - insert：在线模式。 - read-only：离线模式。  **默认取值**： read-only
+        :type mode: str
+        :param redis_conf: 
+        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConfReq`
         """
         
         
@@ -54,6 +62,8 @@ class ResizeClusterRequestBody:
         self._create_node_only = None
         self._waiting_for_killing = None
         self._auto_redistribute = None
+        self._mode = None
+        self._redis_conf = None
         self.discriminator = None
 
         self.scale_out = scale_out
@@ -65,6 +75,10 @@ class ResizeClusterRequestBody:
             self.waiting_for_killing = waiting_for_killing
         if auto_redistribute is not None:
             self.auto_redistribute = auto_redistribute
+        if mode is not None:
+            self.mode = mode
+        if redis_conf is not None:
+            self.redis_conf = redis_conf
 
     @property
     def scale_out(self):
@@ -171,6 +185,46 @@ class ResizeClusterRequestBody:
         :type auto_redistribute: bool
         """
         self._auto_redistribute = auto_redistribute
+
+    @property
+    def mode(self):
+        r"""Gets the mode of this ResizeClusterRequestBody.
+
+        **参数解释**： 扩容模式，分为在线和离线。在线扩容过程中，支持数据增删改查及部分DDL语法，其余不支持的语法将会报错。在线扩容对业务影响更小，离线模式存在短暂的中断，数据库不可用。 **约束限制**： 不涉及。 **取值范围**： - insert：在线模式。 - read-only：离线模式。  **默认取值**： read-only
+
+        :return: The mode of this ResizeClusterRequestBody.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this ResizeClusterRequestBody.
+
+        **参数解释**： 扩容模式，分为在线和离线。在线扩容过程中，支持数据增删改查及部分DDL语法，其余不支持的语法将会报错。在线扩容对业务影响更小，离线模式存在短暂的中断，数据库不可用。 **约束限制**： 不涉及。 **取值范围**： - insert：在线模式。 - read-only：离线模式。  **默认取值**： read-only
+
+        :param mode: The mode of this ResizeClusterRequestBody.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def redis_conf(self):
+        r"""Gets the redis_conf of this ResizeClusterRequestBody.
+
+        :return: The redis_conf of this ResizeClusterRequestBody.
+        :rtype: :class:`huaweicloudsdkdws.v2.RedisConfReq`
+        """
+        return self._redis_conf
+
+    @redis_conf.setter
+    def redis_conf(self, redis_conf):
+        r"""Sets the redis_conf of this ResizeClusterRequestBody.
+
+        :param redis_conf: The redis_conf of this ResizeClusterRequestBody.
+        :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConfReq`
+        """
+        self._redis_conf = redis_conf
 
     def to_dict(self):
         result = {}

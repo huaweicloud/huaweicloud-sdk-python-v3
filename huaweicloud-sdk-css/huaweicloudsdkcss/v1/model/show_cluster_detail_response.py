@@ -23,7 +23,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'updated': 'str',
         'name': 'str',
         'public_ip': 'str',
-        'snapshot_policy': 'object',
+        'snapshot_policy': 'SnapshotPolicyResp',
         'created': 'str',
         'id': 'str',
         'status': 'str',
@@ -110,8 +110,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type name: str
         :param public_ip: 公网IP信息。
         :type public_ip: str
-        :param snapshot_policy: **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
-        :type snapshot_policy: object
+        :param snapshot_policy: 
+        :type snapshot_policy: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         :param created: 集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
         :type created: str
         :param id: 集群ID。
@@ -424,10 +424,8 @@ class ShowClusterDetailResponse(SdkResponse):
     def snapshot_policy(self):
         r"""Gets the snapshot_policy of this ShowClusterDetailResponse.
 
-        **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
-
         :return: The snapshot_policy of this ShowClusterDetailResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         """
         return self._snapshot_policy
 
@@ -435,10 +433,8 @@ class ShowClusterDetailResponse(SdkResponse):
     def snapshot_policy(self, snapshot_policy):
         r"""Sets the snapshot_policy of this ShowClusterDetailResponse.
 
-        **参数解释**： 集群自动快照策略相关信息。 **取值范围**： 不涉及
-
         :param snapshot_policy: The snapshot_policy of this ShowClusterDetailResponse.
-        :type snapshot_policy: object
+        :type snapshot_policy: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         """
         self._snapshot_policy = snapshot_policy
 

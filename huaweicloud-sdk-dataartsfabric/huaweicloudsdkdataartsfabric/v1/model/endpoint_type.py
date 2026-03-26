@@ -11,6 +11,10 @@ class EndpointType:
     RAY = "ray"
     INFERENCE = "inference"
     JOB = "job"
+    RAY_SERVICE = "ray_service"
+    SQL = "sql"
+    CONTAINER_JOB = "container_job"
+    NOTEBOOK = "notebook"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

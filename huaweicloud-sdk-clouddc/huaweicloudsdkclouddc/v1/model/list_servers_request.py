@@ -31,7 +31,7 @@ class ListServersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param manage_state: **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
+        :param manage_state: **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
         :type manage_state: str
         :param marker: 上一页数据的最后一条记录的id
         :type marker: str
@@ -57,7 +57,7 @@ class ListServersRequest:
     def manage_state(self):
         r"""Gets the manage_state of this ListServersRequest.
 
-        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
 
         :return: The manage_state of this ListServersRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListServersRequest:
     def manage_state(self, manage_state):
         r"""Sets the manage_state of this ListServersRequest.
 
-        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - os-ready: 软调完成 服务器完成软调，即将进行转维。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - maintain:维护中 服务器故障，进入维修 - offboarding：下架中。  **默认取值**： 不涉及
 
         :param manage_state: The manage_state of this ListServersRequest.
         :type manage_state: str

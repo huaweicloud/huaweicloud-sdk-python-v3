@@ -33,6 +33,428 @@ class DataArtsFabricEpClient(Client):
 
         return client_builder
 
+    def cancel_job_run(self, request):
+        r"""取消作业运行
+
+        取消作业运行。主要在取消运行Ray job/python job/spark job等job场景使用；输入workspace_id和run_id；输出为接口运行成功或失败的响应消息，无具体的返回值内容。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CancelJobRun
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.CancelJobRunRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.CancelJobRunResponse`
+        """
+        http_info = self._cancel_job_run_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_job_run_invoker(self, request):
+        http_info = self._cancel_job_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_job_run_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/runs/{run_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelJobRunResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'run_id' in local_var_params:
+            path_params['run_id'] = local_var_params['run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def clear_job_run(self, request):
+        r"""删除端点下所有的作业
+
+        删除端点下所有的job运行记录。主要在删除指定端点下所有的Ray job/python job/spark job等job场景使用；输入参数workspace_id和endpoint_id；输出为接口运行成功或失败的响应消息，无具体的返回值内容。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ClearJobRun
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.ClearJobRunRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ClearJobRunResponse`
+        """
+        http_info = self._clear_job_run_http_info(request)
+        return self._call_api(**http_info)
+
+    def clear_job_run_invoker(self, request):
+        http_info = self._clear_job_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _clear_job_run_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/workspaces/{workspace_id}/endpoints/{endpoint_id}/jobs/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClearJobRunResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_job_run(self, request):
+        r"""删除作业
+
+        删除作业。主要在删除Ray job/python job/spark job等job场景使用；输入workspace_id和run_id；输出为接口运行成功或失败的响应消息，无具体的返回值内容。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteJobRun
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.DeleteJobRunRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.DeleteJobRunResponse`
+        """
+        http_info = self._delete_job_run_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_run_invoker(self, request):
+        http_info = self._delete_job_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_job_run_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/runs/{run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobRunResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'run_id' in local_var_params:
+            path_params['run_id'] = local_var_params['run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_job_runs(self, request):
+        r"""查看作业运行列表
+
+        查看作业运行列表。主要在查询所有Ray job/python job/spark job等job场景使用；输入workspace_id，job运行id(可选)，job运行名称（可选），分页查询参数limit和offset，job id（可选），endpoint id（可选），job version id（可选），job状态（可选），job类型（可选），排序参数及升序/降序排序方式；输出job运行信息列表。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListJobRuns
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.ListJobRunsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ListJobRunsResponse`
+        """
+        http_info = self._list_job_runs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_runs_invoker(self, request):
+        http_info = self._list_job_runs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_job_runs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobRunsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'endpoint_id' in local_var_params:
+            query_params.append(('endpoint_id', local_var_params['endpoint_id']))
+        if 'version_id' in local_var_params:
+            query_params.append(('version_id', local_var_params['version_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_job(self, request):
+        r"""运行作业
+
+        运行作业。主要在运行Ray job/python job/spark job等job场景使用；输入workspace_id，job信息（jobId、jobVersionId），job运行名称，job运行端点id；输出作业运行Id。此接口为异步接口，配套使用接口showJobRunDetail接口或ListJobRuns接口查询job运行状态，无特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunJob
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.RunJobRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.RunJobResponse`
+        """
+        http_info = self._run_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_job_invoker(self, request):
+        http_info = self._run_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_run_detail(self, request):
+        r"""查看作业运行详情
+
+        查看指定作业运行详情。主要在Ray job/python job/spark job等job场景用户查询job运行详细信息；输入workspace_id和run_id；输出job的详细信息，包括id、创建时间、更新时间、状态、运行时长、job类型、错误码、错误信息、错误解决方案、远端信息，其中只有job错误时才会有错误码、错误信息等。此接口为同步接口，无配套使用接口和特殊场景。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobRunDetail
+        :type request: :class:`huaweicloudsdkdataartsfabricep.v1.ShowJobRunDetailRequest`
+        :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ShowJobRunDetailResponse`
+        """
+        http_info = self._show_job_run_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_run_detail_invoker(self, request):
+        http_info = self._show_job_run_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_run_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/workspaces/{workspace_id}/jobs/runs/{run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobRunDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'run_id' in local_var_params:
+            path_params['run_id'] = local_var_params['run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_service_instance(self, request):
         r"""删除Service实例
 

@@ -25,7 +25,8 @@ class ClusterElbInfo:
         'type': 'str',
         'admin_state_up': 'bool',
         'bandwidth': 'int',
-        'vpc_id': 'str'
+        'vpc_id': 'str',
+        'ip_target_enable': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ClusterElbInfo:
         'type': 'type',
         'admin_state_up': 'admin_state_up',
         'bandwidth': 'bandwidth',
-        'vpc_id': 'vpc_id'
+        'vpc_id': 'vpc_id',
+        'ip_target_enable': 'ip_target_enable'
     }
 
-    def __init__(self, id=None, cluster_id=None, name=None, description=None, vip_address=None, vip_subnet_id=None, tenant_id=None, type=None, admin_state_up=None, bandwidth=None, vpc_id=None):
+    def __init__(self, id=None, cluster_id=None, name=None, description=None, vip_address=None, vip_subnet_id=None, tenant_id=None, type=None, admin_state_up=None, bandwidth=None, vpc_id=None, ip_target_enable=None):
         r"""ClusterElbInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ClusterElbInfo:
         :type bandwidth: int
         :param vpc_id: **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
         :type vpc_id: str
+        :param ip_target_enable: **参数解释**： 是否支持跨vpc绑定。 **取值范围**： 不涉及。
+        :type ip_target_enable: bool
         """
         
         
@@ -84,6 +88,7 @@ class ClusterElbInfo:
         self._admin_state_up = None
         self._bandwidth = None
         self._vpc_id = None
+        self._ip_target_enable = None
         self.discriminator = None
 
         if id is not None:
@@ -108,6 +113,8 @@ class ClusterElbInfo:
             self.bandwidth = bandwidth
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if ip_target_enable is not None:
+            self.ip_target_enable = ip_target_enable
 
     @property
     def id(self):
@@ -350,6 +357,28 @@ class ClusterElbInfo:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def ip_target_enable(self):
+        r"""Gets the ip_target_enable of this ClusterElbInfo.
+
+        **参数解释**： 是否支持跨vpc绑定。 **取值范围**： 不涉及。
+
+        :return: The ip_target_enable of this ClusterElbInfo.
+        :rtype: bool
+        """
+        return self._ip_target_enable
+
+    @ip_target_enable.setter
+    def ip_target_enable(self, ip_target_enable):
+        r"""Sets the ip_target_enable of this ClusterElbInfo.
+
+        **参数解释**： 是否支持跨vpc绑定。 **取值范围**： 不涉及。
+
+        :param ip_target_enable: The ip_target_enable of this ClusterElbInfo.
+        :type ip_target_enable: bool
+        """
+        self._ip_target_enable = ip_target_enable
 
     def to_dict(self):
         result = {}

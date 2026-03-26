@@ -37,7 +37,7 @@ class SetBucketCustomedomainRequest:
 
         The model defined in huaweicloud sdk
 
-        :param content_md5: When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog&#x3D;&#x3D;
+        :param content_md5: When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent. Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog&#x3D;&#x3D;
         :type content_md5: str
         :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
@@ -71,7 +71,7 @@ class SetBucketCustomedomainRequest:
     def content_md5(self):
         r"""Gets the content_md5 of this SetBucketCustomedomainRequest.
 
-        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
+        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent. Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
         :return: The content_md5 of this SetBucketCustomedomainRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class SetBucketCustomedomainRequest:
     def content_md5(self, content_md5):
         r"""Sets the content_md5 of this SetBucketCustomedomainRequest.
 
-        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
+        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent. Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
         :param content_md5: The content_md5 of this SetBucketCustomedomainRequest.
         :type content_md5: str

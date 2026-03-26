@@ -3648,6 +3648,8 @@ class CdnAsyncClient(Client):
             query_params.append(('domain_name', local_var_params['domain_name']))
         if 'stat_type' in local_var_params:
             query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
         if 'interval' in local_var_params:
             query_params.append(('interval', local_var_params['interval']))
         if 'country' in local_var_params:

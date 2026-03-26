@@ -179,6 +179,8 @@ from huaweicloudsdkcss.v1.model.loadbalancers_resource import LoadbalancersResou
 from huaweicloudsdkcss.v1.model.log_configuration import LogConfiguration
 from huaweicloudsdkcss.v1.model.log_list import LogList
 from huaweicloudsdkcss.v1.model.member import Member
+from huaweicloudsdkcss.v1.model.model import Model
+from huaweicloudsdkcss.v1.model.model_list import ModelList
 from huaweicloudsdkcss.v1.model.pay_info_body import PayInfoBody
 from huaweicloudsdkcss.v1.model.period_req import PeriodReq
 from huaweicloudsdkcss.v1.model.permission_info import PermissionInfo

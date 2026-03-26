@@ -79,7 +79,7 @@ class MysqlInstanceRequest:
         :type name: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInReq`
-        :param mode: 实例类型，目前仅支持Cluster。
+        :param mode: **参数解释**：    实例模式。  **约束限制**：   不涉及。  **取值范围**：  - Cluster：集群版。 - StandSingle：单机版。  **默认取值**：  不涉及。
         :type mode: str
         :param flavor_ref: 规格码。
         :type flavor_ref: str
@@ -101,7 +101,7 @@ class MysqlInstanceRequest:
         :type availability_zone_mode: str
         :param master_availability_zone: 主可用区。
         :type master_availability_zone: str
-        :param slave_count: 只读节点个数。单次接口调用最多支持创建9个只读节点。
+        :param slave_count: 只读节点个数。单次接口调用最多支持创建9个只读节点。实例模式取值为StandSingle时取值必须为0。
         :type slave_count: int
         :param volume: 
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
@@ -265,7 +265,7 @@ class MysqlInstanceRequest:
     def mode(self):
         r"""Gets the mode of this MysqlInstanceRequest.
 
-        实例类型，目前仅支持Cluster。
+        **参数解释**：    实例模式。  **约束限制**：   不涉及。  **取值范围**：  - Cluster：集群版。 - StandSingle：单机版。  **默认取值**：  不涉及。
 
         :return: The mode of this MysqlInstanceRequest.
         :rtype: str
@@ -276,7 +276,7 @@ class MysqlInstanceRequest:
     def mode(self, mode):
         r"""Sets the mode of this MysqlInstanceRequest.
 
-        实例类型，目前仅支持Cluster。
+        **参数解释**：    实例模式。  **约束限制**：   不涉及。  **取值范围**：  - Cluster：集群版。 - StandSingle：单机版。  **默认取值**：  不涉及。
 
         :param mode: The mode of this MysqlInstanceRequest.
         :type mode: str
@@ -503,7 +503,7 @@ class MysqlInstanceRequest:
     def slave_count(self):
         r"""Gets the slave_count of this MysqlInstanceRequest.
 
-        只读节点个数。单次接口调用最多支持创建9个只读节点。
+        只读节点个数。单次接口调用最多支持创建9个只读节点。实例模式取值为StandSingle时取值必须为0。
 
         :return: The slave_count of this MysqlInstanceRequest.
         :rtype: int
@@ -514,7 +514,7 @@ class MysqlInstanceRequest:
     def slave_count(self, slave_count):
         r"""Sets the slave_count of this MysqlInstanceRequest.
 
-        只读节点个数。单次接口调用最多支持创建9个只读节点。
+        只读节点个数。单次接口调用最多支持创建9个只读节点。实例模式取值为StandSingle时取值必须为0。
 
         :param slave_count: The slave_count of this MysqlInstanceRequest.
         :type slave_count: int

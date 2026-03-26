@@ -15,6 +15,10 @@ class ServerDetail:
     sensitive_list = []
 
     openapi_types = {
+        'capacity_reservation_id': 'str',
+        'capacity_reservation_specification': 'CapacityReservationSpecification',
+        'spod_id': 'str',
+        'enclave_options': 'EnclaveOptions',
         'status': 'str',
         'updated': 'str',
         'auto_terminate_time': 'str',
@@ -67,6 +71,10 @@ class ServerDetail:
     }
 
     attribute_map = {
+        'capacity_reservation_id': 'capacity_reservation_id',
+        'capacity_reservation_specification': 'capacity_reservation_specification',
+        'spod_id': 'spod_id',
+        'enclave_options': 'enclave_options',
         'status': 'status',
         'updated': 'updated',
         'auto_terminate_time': 'auto_terminate_time',
@@ -118,11 +126,19 @@ class ServerDetail:
         'network_interfaces': 'network_interfaces'
     }
 
-    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, security_options=None, hypervisor=None, network_interfaces=None):
+    def __init__(self, capacity_reservation_id=None, capacity_reservation_specification=None, spod_id=None, enclave_options=None, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, security_options=None, hypervisor=None, network_interfaces=None):
         r"""ServerDetail
 
         The model defined in huaweicloud sdk
 
+        :param capacity_reservation_id: 容量预留ID
+        :type capacity_reservation_id: str
+        :param capacity_reservation_specification: 
+        :type capacity_reservation_specification: :class:`huaweicloudsdkecs.v2.CapacityReservationSpecification`
+        :param spod_id: 共池裸机按整机柜发放的同一批次的批创ID
+        :type spod_id: str
+        :param enclave_options: 
+        :type enclave_options: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
         :param status: 弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
         :type status: str
         :param updated: 弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
@@ -225,6 +241,10 @@ class ServerDetail:
         
         
 
+        self._capacity_reservation_id = None
+        self._capacity_reservation_specification = None
+        self._spod_id = None
+        self._enclave_options = None
         self._status = None
         self._updated = None
         self._auto_terminate_time = None
@@ -276,6 +296,10 @@ class ServerDetail:
         self._network_interfaces = None
         self.discriminator = None
 
+        self.capacity_reservation_id = capacity_reservation_id
+        self.capacity_reservation_specification = capacity_reservation_specification
+        self.spod_id = spod_id
+        self.enclave_options = enclave_options
         self.status = status
         self.updated = updated
         self.auto_terminate_time = auto_terminate_time
@@ -339,6 +363,86 @@ class ServerDetail:
             self.hypervisor = hypervisor
         if network_interfaces is not None:
             self.network_interfaces = network_interfaces
+
+    @property
+    def capacity_reservation_id(self):
+        r"""Gets the capacity_reservation_id of this ServerDetail.
+
+        容量预留ID
+
+        :return: The capacity_reservation_id of this ServerDetail.
+        :rtype: str
+        """
+        return self._capacity_reservation_id
+
+    @capacity_reservation_id.setter
+    def capacity_reservation_id(self, capacity_reservation_id):
+        r"""Sets the capacity_reservation_id of this ServerDetail.
+
+        容量预留ID
+
+        :param capacity_reservation_id: The capacity_reservation_id of this ServerDetail.
+        :type capacity_reservation_id: str
+        """
+        self._capacity_reservation_id = capacity_reservation_id
+
+    @property
+    def capacity_reservation_specification(self):
+        r"""Gets the capacity_reservation_specification of this ServerDetail.
+
+        :return: The capacity_reservation_specification of this ServerDetail.
+        :rtype: :class:`huaweicloudsdkecs.v2.CapacityReservationSpecification`
+        """
+        return self._capacity_reservation_specification
+
+    @capacity_reservation_specification.setter
+    def capacity_reservation_specification(self, capacity_reservation_specification):
+        r"""Sets the capacity_reservation_specification of this ServerDetail.
+
+        :param capacity_reservation_specification: The capacity_reservation_specification of this ServerDetail.
+        :type capacity_reservation_specification: :class:`huaweicloudsdkecs.v2.CapacityReservationSpecification`
+        """
+        self._capacity_reservation_specification = capacity_reservation_specification
+
+    @property
+    def spod_id(self):
+        r"""Gets the spod_id of this ServerDetail.
+
+        共池裸机按整机柜发放的同一批次的批创ID
+
+        :return: The spod_id of this ServerDetail.
+        :rtype: str
+        """
+        return self._spod_id
+
+    @spod_id.setter
+    def spod_id(self, spod_id):
+        r"""Sets the spod_id of this ServerDetail.
+
+        共池裸机按整机柜发放的同一批次的批创ID
+
+        :param spod_id: The spod_id of this ServerDetail.
+        :type spod_id: str
+        """
+        self._spod_id = spod_id
+
+    @property
+    def enclave_options(self):
+        r"""Gets the enclave_options of this ServerDetail.
+
+        :return: The enclave_options of this ServerDetail.
+        :rtype: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
+        """
+        return self._enclave_options
+
+    @enclave_options.setter
+    def enclave_options(self, enclave_options):
+        r"""Sets the enclave_options of this ServerDetail.
+
+        :param enclave_options: The enclave_options of this ServerDetail.
+        :type enclave_options: :class:`huaweicloudsdkecs.v2.EnclaveOptions`
+        """
+        self._enclave_options = enclave_options
 
     @property
     def status(self):

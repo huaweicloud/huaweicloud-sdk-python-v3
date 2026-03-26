@@ -43,7 +43,7 @@ class Contents:
 
         :param owner: 
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
-        :param e_tag: Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
+        :param e_tag: 128-bit MD5 digest of an object, Displayed in hexadecimal format. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
         :type e_tag: str
         :param type: Object type. This parameter is returned when the object type is not **Normal**.
         :type type: str
@@ -105,7 +105,7 @@ class Contents:
     def e_tag(self):
         r"""Gets the e_tag of this Contents.
 
-        Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
+        128-bit MD5 digest of an object, Displayed in hexadecimal format. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
         :return: The e_tag of this Contents.
         :rtype: str
@@ -116,7 +116,7 @@ class Contents:
     def e_tag(self, e_tag):
         r"""Sets the e_tag of this Contents.
 
-        Base64-encoded 128-bit MD5 digest of an object. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
+        128-bit MD5 digest of an object, Displayed in hexadecimal format. ETag is the unique identifier of the object content. It determines whether the object content changes. For example, when an object is uploaded, its ETag value is **A**, but when it is downloaded, its ETag value is **B**, this indicates that the object content changes. The ETag is a hash of the object. The ETag reflects changes only to the object content, rather than its metadata. An uploaded object or copied object has a unique ETag after being encrypted with MD5. (If the object is encrypted on the server side, the ETag value is not the MD5 digest of the object, but the unique identifier calculated through server-side encryption.)
 
         :param e_tag: The e_tag of this Contents.
         :type e_tag: str

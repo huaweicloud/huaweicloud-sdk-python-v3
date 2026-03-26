@@ -20,6 +20,7 @@ class PhysicalServer:
         'project_id': 'str',
         'domain_id': 'str',
         'manage_state': 'ManageState',
+        'frozen_state': 'FrozenState',
         'power_state': 'PowerState',
         'operation_state': 'PhysicalServerOperationStatus',
         'health_state': 'Health',
@@ -36,6 +37,7 @@ class PhysicalServer:
         'project_id': 'project_id',
         'domain_id': 'domain_id',
         'manage_state': 'manage_state',
+        'frozen_state': 'frozen_state',
         'power_state': 'power_state',
         'operation_state': 'operation_state',
         'health_state': 'health_state',
@@ -46,7 +48,7 @@ class PhysicalServer:
         'error': 'error'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, domain_id=None, manage_state=None, power_state=None, operation_state=None, health_state=None, onboard_time=None, location=None, hardware_attributes=None, tags=None, error=None):
+    def __init__(self, id=None, name=None, project_id=None, domain_id=None, manage_state=None, frozen_state=None, power_state=None, operation_state=None, health_state=None, onboard_time=None, location=None, hardware_attributes=None, tags=None, error=None):
         r"""PhysicalServer
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class PhysicalServer:
         :type domain_id: str
         :param manage_state: 
         :type manage_state: :class:`huaweicloudsdkclouddc.v1.ManageState`
+        :param frozen_state: 
+        :type frozen_state: :class:`huaweicloudsdkclouddc.v1.FrozenState`
         :param power_state: 
         :type power_state: :class:`huaweicloudsdkclouddc.v1.PowerState`
         :param operation_state: 
@@ -86,6 +90,7 @@ class PhysicalServer:
         self._project_id = None
         self._domain_id = None
         self._manage_state = None
+        self._frozen_state = None
         self._power_state = None
         self._operation_state = None
         self._health_state = None
@@ -101,6 +106,8 @@ class PhysicalServer:
         self.project_id = project_id
         self.domain_id = domain_id
         self.manage_state = manage_state
+        if frozen_state is not None:
+            self.frozen_state = frozen_state
         if power_state is not None:
             self.power_state = power_state
         if operation_state is not None:
@@ -220,6 +227,24 @@ class PhysicalServer:
         :type manage_state: :class:`huaweicloudsdkclouddc.v1.ManageState`
         """
         self._manage_state = manage_state
+
+    @property
+    def frozen_state(self):
+        r"""Gets the frozen_state of this PhysicalServer.
+
+        :return: The frozen_state of this PhysicalServer.
+        :rtype: :class:`huaweicloudsdkclouddc.v1.FrozenState`
+        """
+        return self._frozen_state
+
+    @frozen_state.setter
+    def frozen_state(self, frozen_state):
+        r"""Sets the frozen_state of this PhysicalServer.
+
+        :param frozen_state: The frozen_state of this PhysicalServer.
+        :type frozen_state: :class:`huaweicloudsdkclouddc.v1.FrozenState`
+        """
+        self._frozen_state = frozen_state
 
     @property
     def power_state(self):
