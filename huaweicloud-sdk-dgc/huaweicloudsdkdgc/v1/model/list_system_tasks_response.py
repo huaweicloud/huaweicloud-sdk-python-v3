@@ -52,7 +52,7 @@ class ListSystemTasksResponse(SdkResponse):
         :type end_time: int
         :param last_update: 作业最后更新日期 13位时间戳
         :type last_update: int
-        :param status: 作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        :param status: 作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
         :type status: str
         :param message: 作业消息
         :type message: str
@@ -203,7 +203,7 @@ class ListSystemTasksResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ListSystemTasksResponse.
 
-        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
 
         :return: The status of this ListSystemTasksResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class ListSystemTasksResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ListSystemTasksResponse.
 
-        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
 
         :param status: The status of this ListSystemTasksResponse.
         :type status: str

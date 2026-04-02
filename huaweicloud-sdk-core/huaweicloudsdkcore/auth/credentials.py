@@ -20,20 +20,19 @@
  under the LICENSE.
 """
 import json
-import os
 import re
 import threading
 from abc import abstractmethod, ABC
 from typing import Callable, Optional, Dict, Any
 
-from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor, StsHelper
+from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor, StsHelper, StsAccessor, FederalAccessor
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException, \
     HostUnreachableException
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner, P256SHA256Signer, SM2SM3Signer
-from huaweicloudsdkcore.utils import time_utils, string_utils
+from huaweicloudsdkcore.utils import string_utils, six_utils, time_utils
 
 
 class DerivedCredentials(ABC):
@@ -56,33 +55,10 @@ class DerivedCredentials(ABC):
         return lambda request: not bool(re.match(cls._DEFAULT_ENDPOINT_REG, request.host))
 
 
-class TempCredentials(ABC):
-    @abstractmethod
-    def _need_update_security_token_from_metadata(self) -> bool:
-        pass
-
-    @abstractmethod
-    def update_security_token_from_metadata(self):
-        pass
-
-
-class FederalCredentials(ABC):
-    @abstractmethod
-    def _need_update_federal_auth_token(self) -> bool:
-        pass
-
-    @abstractmethod
-    def _update_auth_token_by_id_token(self, http_client: HttpClient):
-        pass
-
-
-class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
-    _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
+class Credentials(DerivedCredentials):
     _X_SECURITY_TOKEN = "X-Security-Token"
-    _X_AUTH_TOKEN = "X-Auth-Token"
     _AUTHORIZATION = "Authorization"
     _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 40 * 60  # 40min
-    _DEFAULT_DURATION_SECONDS = 6 * 60 * 60  # 6h
     _CACHE = {}
     _LOCK = threading.Lock()
     _SIGNER_CASE = {
@@ -102,10 +78,10 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         self._security_token: Optional[str] = None
         self._derived_auth_service_name: Optional[str] = None
         self._derived_predicate: Optional[Callable[[SdkRequest], bool]] = None
-        self._expired_at: Optional[float] = None
-        self._auth_token: Optional[str] = None
         self._region_id: Optional[str] = None
-        self._metadata_accessor: Optional[MetadataAccessor] = None
+        self._sts_accessor: Optional[StsAccessor] = None
+        self._expire_at: Optional[float] = 0
+        self._once = six_utils.Once()
 
     @property
     def ak(self):
@@ -160,12 +136,12 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         self._security_token = value
 
     @property
-    def metadata_accessor(self):
-        return self._metadata_accessor
+    def sts_accessor(self):
+        return self._sts_accessor
 
-    @metadata_accessor.setter
-    def metadata_accessor(self, value: MetadataAccessor):
-        self._metadata_accessor = value
+    @sts_accessor.setter
+    def sts_accessor(self, value):
+        self._sts_accessor = value
 
     def with_ak(self, ak: str):
         self.ak = ak
@@ -198,19 +174,43 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         pass
 
     def process_auth_request(self, request: SdkRequest, http_client: HttpClient):
-        if self._need_update_federal_auth_token():
-            self._update_auth_token_by_id_token(http_client)
-        elif self._need_update_security_token_from_metadata():
-            self.update_security_token_from_metadata()
+        self.process_sts(http_client)
 
         return http_client.executor.submit(self.sign_request, request)
 
-    def sign_request(self, request: SdkRequest) -> SdkRequest:
-        if self._auth_token:
-            request.header_params[self._X_AUTH_TOKEN] = self._auth_token
-            Signer.process_request_uri(request)
-            return request
+    def process_sts(self, http_client: Optional[HttpClient]):
+        self._once.do(self._process_accessor)
 
+        if self._need_refresh_sts():
+            iam_endpoint = self.iam_endpoint or IamHelper.get_iam_endpoint()
+            credential = self.sts_accessor.get_credential(
+                iam_endpoint=iam_endpoint,
+                http_client=http_client,
+                idp_id=self.idp_id,
+                id_token_file=self.id_token_file
+            )
+
+            self.ak = credential.access
+            self.sk = credential.secret
+            self.security_token = credential.security_token
+            self._expire_at = credential.expire_at
+
+    def _process_accessor(self):
+        if self.sts_accessor:
+            return
+
+        if self.idp_id and self.id_token_file:
+            self.sts_accessor = FederalAccessor()
+        elif not self.ak and not self.sk:
+            self.sts_accessor = MetadataAccessor()
+
+    def _need_refresh_sts(self) -> bool:
+        return self.sts_accessor and self._is_expired()
+
+    def _is_expired(self) -> bool:
+        return self._expire_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
+
+    def sign_request(self, request: SdkRequest) -> SdkRequest:
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
 
@@ -238,52 +238,6 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
 
     def _process_derived_auth_params(self, derived_auth_service_name: str, region_id: str):
         pass
-
-    def _need_update_security_token_from_metadata(self) -> bool:
-        if not self._expired_at or not self.security_token:
-            return False
-        return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
-
-    def update_security_token_from_metadata(self):
-        if not self.metadata_accessor:
-            self.metadata_accessor = MetadataAccessor()
-        credential = self.metadata_accessor.get_credentials()
-
-        self.ak = credential.get("access")
-        self.sk = credential.get("secret")
-        self.security_token = credential.get("securitytoken")
-        self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
-
-    def _need_update_federal_auth_token(self) -> bool:
-        if not self.idp_id or not self.id_token_file:
-            return False
-        if not self.security_token or not self._expired_at:
-            return True
-        return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
-
-    def _update_auth_token_by_id_token(self, http_client: HttpClient):
-        iam_endpoint = self.iam_endpoint or IamHelper.get_iam_endpoint()
-        request = IamHelper.get_create_unscoped_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
-                                                                          self._get_id_token())
-        token = IamHelper.create_unscoped_token_by_id_token(http_client, request)
-        request = IamHelper.get_create_temporary_access_key_by_token_request(http_client.config, iam_endpoint, token,
-                                                                             self._DEFAULT_DURATION_SECONDS)
-        credential = IamHelper.create_temporary_access_key_by_token(http_client, request)
-
-        self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
-        self.ak = credential.get("access")
-        self.sk = credential.get("secret")
-        self.security_token = credential.get("securitytoken")
-
-    def _get_id_token(self) -> str:
-        if not os.path.exists(self.id_token_file):
-            raise ApiValueError("id_token_file '{}' does not exist".format(self.id_token_file))
-
-        with open(self.id_token_file, "r") as f:
-            id_token = f.read()
-        if not id_token:
-            raise ApiValueError("id_token is empty in id_token_file '{}'".format(self.id_token_file))
-        return id_token.strip()
 
     def _check_required_idp_params(self):
         if self.idp_id or self.id_token_file:

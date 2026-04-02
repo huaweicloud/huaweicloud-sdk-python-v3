@@ -69,7 +69,7 @@ class ShowJobExeListNewRequest:
         :type queue: str
         :param limit: 返回结果中每页显示条数。缺省值：10
         :type limit: str
-        :param offset: 表示作业列表从该偏移量开始查询。缺省值：0
+        :param offset: 表示作业列表从该偏移量开始查询。缺省值：1
         :type offset: str
         :param sort_by: 返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
         :type sort_by: str
@@ -324,7 +324,7 @@ class ShowJobExeListNewRequest:
     def offset(self):
         r"""Gets the offset of this ShowJobExeListNewRequest.
 
-        表示作业列表从该偏移量开始查询。缺省值：0
+        表示作业列表从该偏移量开始查询。缺省值：1
 
         :return: The offset of this ShowJobExeListNewRequest.
         :rtype: str
@@ -335,7 +335,7 @@ class ShowJobExeListNewRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowJobExeListNewRequest.
 
-        表示作业列表从该偏移量开始查询。缺省值：0
+        表示作业列表从该偏移量开始查询。缺省值：1
 
         :param offset: The offset of this ShowJobExeListNewRequest.
         :type offset: str

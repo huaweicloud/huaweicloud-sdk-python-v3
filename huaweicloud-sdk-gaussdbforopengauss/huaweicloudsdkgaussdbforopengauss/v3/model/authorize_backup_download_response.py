@@ -30,9 +30,9 @@ class AuthorizeBackupDownloadResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param bucket: OBS桶名。
+        :param bucket: **参数解释**: 文件所在桶名。 **取值范围**: 不涉及。
         :type bucket: str
-        :param file_paths: 通过OBS Browser+下载备份文件的路径名称。
+        :param file_paths: **参数解释**: 通过OBS Browser+下载备份文件的路径名称。
         :type file_paths: list[str]
         """
         
@@ -51,7 +51,7 @@ class AuthorizeBackupDownloadResponse(SdkResponse):
     def bucket(self):
         r"""Gets the bucket of this AuthorizeBackupDownloadResponse.
 
-        OBS桶名。
+        **参数解释**: 文件所在桶名。 **取值范围**: 不涉及。
 
         :return: The bucket of this AuthorizeBackupDownloadResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class AuthorizeBackupDownloadResponse(SdkResponse):
     def bucket(self, bucket):
         r"""Sets the bucket of this AuthorizeBackupDownloadResponse.
 
-        OBS桶名。
+        **参数解释**: 文件所在桶名。 **取值范围**: 不涉及。
 
         :param bucket: The bucket of this AuthorizeBackupDownloadResponse.
         :type bucket: str
@@ -73,7 +73,7 @@ class AuthorizeBackupDownloadResponse(SdkResponse):
     def file_paths(self):
         r"""Gets the file_paths of this AuthorizeBackupDownloadResponse.
 
-        通过OBS Browser+下载备份文件的路径名称。
+        **参数解释**: 通过OBS Browser+下载备份文件的路径名称。
 
         :return: The file_paths of this AuthorizeBackupDownloadResponse.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class AuthorizeBackupDownloadResponse(SdkResponse):
     def file_paths(self, file_paths):
         r"""Sets the file_paths of this AuthorizeBackupDownloadResponse.
 
-        通过OBS Browser+下载备份文件的路径名称。
+        **参数解释**: 通过OBS Browser+下载备份文件的路径名称。
 
         :param file_paths: The file_paths of this AuthorizeBackupDownloadResponse.
         :type file_paths: list[str]

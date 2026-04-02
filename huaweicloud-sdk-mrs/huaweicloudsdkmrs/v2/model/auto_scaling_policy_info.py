@@ -61,9 +61,12 @@ class AutoScalingPolicyInfo:
         self._tags = None
         self.discriminator = None
 
-        self.auto_scaling_enable = auto_scaling_enable
-        self.min_capacity = min_capacity
-        self.max_capacity = max_capacity
+        if auto_scaling_enable is not None:
+            self.auto_scaling_enable = auto_scaling_enable
+        if min_capacity is not None:
+            self.min_capacity = min_capacity
+        if max_capacity is not None:
+            self.max_capacity = max_capacity
         if resources_plans is not None:
             self.resources_plans = resources_plans
         if rules is not None:

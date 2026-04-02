@@ -219,7 +219,8 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
       * [2.4.1 Environment Variables](#241-environment-variables-top)
 	  * [2.4.2 Profile](#242-profile-top)
 	  * [2.4.3 Metadata](#243-metadata-top)
-	  * [2.4.4 Provider Chain](#244-provider-chain-top)
+      * [2.4.4 Pod Identity](#244-pod-identity-top)
+	  * [2.4.5 Provider Chain](#245-provider-chain-top)
 * [3. Client Initialization](#3-client-initialization-top)
     * [3.1 Initialize the client with specified Endpoint](#31-initialize-the-serviceclient-with-specified-endpoint-top)
     * [3.2 Initialize the client with specified Region (Recommended)](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
@@ -605,9 +606,27 @@ global_provider = MetadataCredentialProvider.get_global_credential_metadata_prov
 global_cred = global_provider.get_credentials()
 ```
 
-##### 2.4.4 Provider Chain [:top:](#user-manual-top)
+##### 2.4.4 Pod Identity [:top:](#user-manual-top)
 
-When creating a service client without credentials, try to load authentication in the order **Environment Variables -> Profile -> Metadata**
+Starting from version `3.1.190`, obtaining temporary AK/SK and security token using Pod Identity in CCE clusters is supported.
+
+Refer to [Pod Identity](https://support.huaweicloud.com/usermanual-cce/cce_10_1110.html) for more information.
+
+```python
+from huaweicloudsdkcore.auth.provider import PodIdentityCredentialProvider
+
+# basic
+basic_provider = PodIdentityCredentialProvider.get_basic()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = PodIdentityCredentialProvider.get_global()
+global_provider = global_provider.get_credentials()
+```
+
+##### 2.4.5 Provider Chain [:top:](#user-manual-top)
+
+When creating a service client without credentials, try to load authentication in the order **Environment Variables -> Profile -> Metadata -> Pod Identity**
 
 Get authentication from provider chain:
 

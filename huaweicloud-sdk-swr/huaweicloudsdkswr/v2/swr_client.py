@@ -6256,6 +6256,73 @@ class SwrClient(Client):
 
         return http_info
 
+    def execute_gc_schedule(self, request):
+        r"""执行制品清理计划
+
+        执行制品清理计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGcSchedule
+        :type request: :class:`huaweicloudsdkswr.v2.ExecuteGcScheduleRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ExecuteGcScheduleResponse`
+        """
+        http_info = self._execute_gc_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_gc_schedule_invoker(self, request):
+        http_info = self._execute_gc_schedule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_gc_schedule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc/schedule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGcScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute_instance_replication_policy(self, request):
         r"""手动执行镜像同步策略
 
@@ -6710,6 +6777,77 @@ class SwrClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_gc_tasks(self, request):
+        r"""查询制品清理的任务列表
+
+        查询制品清理的任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListGcTasks
+        :type request: :class:`huaweicloudsdkswr.v2.ListGcTasksRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListGcTasksResponse`
+        """
+        http_info = self._list_gc_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_gc_tasks_invoker(self, request):
+        http_info = self._list_gc_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gc_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGcTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -9345,6 +9483,138 @@ class SwrClient(Client):
 
         return http_info
 
+    def show_gc_schedule(self, request):
+        r"""获取制品清理的计划信息
+
+        获取制品清理的计划信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowGcSchedule
+        :type request: :class:`huaweicloudsdkswr.v2.ShowGcScheduleRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowGcScheduleResponse`
+        """
+        http_info = self._show_gc_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_gc_schedule_invoker(self, request):
+        http_info = self._show_gc_schedule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gc_schedule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc/schedule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGcScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_gc_task(self, request):
+        r"""查询制品清理的任务详情
+
+        查询制品清理的任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowGcTask
+        :type request: :class:`huaweicloudsdkswr.v2.ShowGcTaskRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ShowGcTaskResponse`
+        """
+        http_info = self._show_gc_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_gc_task_invoker(self, request):
+        http_info = self._show_gc_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gc_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc/{gc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGcTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'gc_id' in local_var_params:
+            path_params['gc_id'] = local_var_params['gc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance(self, request):
         r"""获取实例详情
 
@@ -10504,6 +10774,73 @@ class SwrClient(Client):
 
         return http_info
 
+    def stop_gc_task(self, request):
+        r"""停止制品清理任务
+
+        停止制品清理任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopGcTask
+        :type request: :class:`huaweicloudsdkswr.v2.StopGcTaskRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.StopGcTaskResponse`
+        """
+        http_info = self._stop_gc_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_gc_task_invoker(self, request):
+        http_info = self._stop_gc_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_gc_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc/{gc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopGcTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'gc_id' in local_var_params:
+            path_params['gc_id'] = local_var_params['gc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def stop_instance_replication_policy_execution(self, request):
         r"""停止镜像同步任务
 
@@ -10609,6 +10946,73 @@ class SwrClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'domainname_id' in local_var_params:
             path_params['domainname_id'] = local_var_params['domainname_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_gc_schedule(self, request):
+        r"""配置制品清理计划
+
+        配置制品清理计划
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateGcSchedule
+        :type request: :class:`huaweicloudsdkswr.v2.UpdateGcScheduleRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateGcScheduleResponse`
+        """
+        http_info = self._update_gc_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_gc_schedule_invoker(self, request):
+        http_info = self._update_gc_schedule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gc_schedule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/system/gc/schedule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGcScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

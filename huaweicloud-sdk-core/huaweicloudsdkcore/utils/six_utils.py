@@ -19,14 +19,15 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-from threading import Lock
+
+import threading
 from typing import Union
 
 
 class SingletonMeta(type):
     _instances = {}
 
-    _lock = Lock()
+    _lock = threading.Lock()
 
     def __call__(cls, *args, **kwargs):
         with cls._lock:
@@ -52,3 +53,18 @@ def ensure_str(s: Union[str, bytes], encoding: str = "utf-8", errors: str = "str
         return s.decode(encoding, errors)
 
     raise TypeError(f"not expecting type '{type(s)}'")
+
+
+class Once:
+    def __init__(self):
+        self._done = False
+        self._lock = threading.Lock()
+
+    def do(self, func, *args, **kwargs):
+        if self._done:
+            return
+
+        with self._lock:
+            if not self._done:
+                self._done = True
+                func(*args, **kwargs)

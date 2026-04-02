@@ -8,9 +8,12 @@ class BssintlRegion:
 
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
                         "https://bss-intl.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://bss.myhuaweicloud.eu")
 
     static_fields = {
         "ap-southeast-1": AP_SOUTHEAST_1,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

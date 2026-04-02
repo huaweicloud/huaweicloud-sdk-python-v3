@@ -5547,9 +5547,9 @@ class EcsAsyncClient(Client):
         return http_info
 
     def show_flavor_capacity_async(self, request):
-        r"""查询flavor的容量
+        r"""查询规格的容量
 
-        查询flavor的容量
+        查询规格的容量
         
         Please refer to HUAWEI cloud API Explorer for details.
 

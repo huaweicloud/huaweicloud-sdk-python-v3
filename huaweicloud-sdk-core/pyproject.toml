@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkcore"
-version = "3.1.189"
+version = "3.1.190"
 description = "HuaweiCloud SDK Python Core"
 readme = "README_PYPI.md"
 authors = [
@@ -32,9 +32,10 @@ dependencies = [
     "PyYAML>=6.0.1",
     "pyasn1>=0.5.0",
     "certifi>=2025.4.26",
-    "pymongo",
     "defusedxml",
-    "six"
+    "six",
+    "pymongo<=4.0.2; python_version < '3.9'",
+    "pymongo==4.15.1; python_version >= '3.9'"
 ]
 
 [project.urls]

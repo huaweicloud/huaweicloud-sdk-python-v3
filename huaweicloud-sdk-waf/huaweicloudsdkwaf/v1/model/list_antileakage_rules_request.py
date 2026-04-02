@@ -43,7 +43,7 @@ class ListAntileakageRulesRequest:
         :type policy_id: str
         :param offset: **参数解释：** 偏移量，表示查询该偏移量之后的记录，与参数limit一起使用 **约束限制：** 不涉及 **取值范围：** [0, 65535] **默认取值：** 不涉及
         :type offset: int
-        :param limit: **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
+        :param limit: **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset未设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
         :type limit: int
         :param page: **参数解释：** 当前页码，与参数pagesize一起使用 **约束限制：** 不涉及 **取值范围：** [1, 记录数/pagesize] **默认取值：** 1
         :type page: int
@@ -143,7 +143,7 @@ class ListAntileakageRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListAntileakageRulesRequest.
 
-        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset未设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :return: The limit of this ListAntileakageRulesRequest.
         :rtype: int
@@ -154,7 +154,7 @@ class ListAntileakageRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAntileakageRulesRequest.
 
-        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset为设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
+        **参数解释：** 查询返回记录的数量限制，与参数offset一起使用，如果offset未设置值，则limit无效 **约束限制：** 不涉及 **取值范围：** [1, 65535] **默认取值：** 10
 
         :param limit: The limit of this ListAntileakageRulesRequest.
         :type limit: int

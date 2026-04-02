@@ -48,8 +48,7 @@ class AutoScalingPolicyV2:
 
         self.node_group_name = node_group_name
         self.resource_pool_name = resource_pool_name
-        if auto_scaling_policy is not None:
-            self.auto_scaling_policy = auto_scaling_policy
+        self.auto_scaling_policy = auto_scaling_policy
 
     @property
     def node_group_name(self):

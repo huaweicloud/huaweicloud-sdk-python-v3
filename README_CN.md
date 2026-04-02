@@ -233,7 +233,8 @@ if __name__ == "__main__":
     * [2.4.1 环境变量](#241-环境变量-top)
 	* [2.4.2 配置文件](#242-配置文件-top)
 	* [2.4.3 实例元数据](#243-实例元数据-top)
-	* [2.4.4 认证信息提供链](#244-认证信息提供链-top)
+    * [2.4.4 容器组身份](#244-容器组身份-top)
+	* [2.4.5 认证信息提供链](#245-认证信息提供链-top)
 * [3. 客户端初始化](#3-客户端初始化-top)
     * [3.1 指定云服务 Endpoint 方式](#31-指定云服务-endpoint-方式-top)
     * [3.2 指定 Region 方式（推荐）](#32-指定-region-方式-推荐-top)
@@ -616,9 +617,27 @@ global_provider = MetadataCredentialProvider.get_global_credential_metadata_prov
 global_cred = global_provider.get_credentials()
 ```
 
-##### 2.4.4 认证信息提供链 [:top:](#用户手册-top)
+##### 2.4.4 容器组身份 [:top:](#用户手册-top)
 
-在创建服务客户端，未显式指定认证信息时，按照顺序 **环境变量 -> 配置文件 -> 实例元数据** 尝试加载认证信息
+自`3.1.190`版本起，支持在CCE集群中使用容器组身份（Pod Identity）获取临时AK/SK和securitytoken。
+
+详细说明参考 [在CCE集群中使用容器组身份（Pod Identity）获取IAM凭证](https://support.huaweicloud.com/usermanual-cce/cce_10_1110.html)
+
+```python
+from huaweicloudsdkcore.auth.provider import PodIdentityCredentialProvider
+
+# basic
+basic_provider = PodIdentityCredentialProvider.get_basic()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = PodIdentityCredentialProvider.get_global()
+global_provider = global_provider.get_credentials()
+```
+
+##### 2.4.5 认证信息提供链 [:top:](#用户手册-top)
+
+在创建服务客户端，未显式指定认证信息时，按照顺序 **环境变量 -> 配置文件 -> 实例元数据 -> 容器组身份** 尝试加载认证信息
 
 通过提供链获取认证信息：
 

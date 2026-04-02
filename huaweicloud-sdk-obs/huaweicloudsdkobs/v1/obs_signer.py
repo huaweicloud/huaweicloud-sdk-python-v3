@@ -73,6 +73,7 @@ _ALLOWED_RESOURCE_PARAMTER_NAMES = (
     'replication',
     'metadata',
     'encryption',
+    'dispolicy',
 
     # File System API
     'append',

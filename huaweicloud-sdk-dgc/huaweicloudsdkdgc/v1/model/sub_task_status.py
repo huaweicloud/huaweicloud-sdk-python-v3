@@ -41,7 +41,7 @@ class SubTaskStatus:
         :type name: str
         :param last_update: 作业最后更新日期
         :type last_update: int
-        :param status: 作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        :param status: 作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
         :type status: str
         :param message: 作业消息
         :type message: str
@@ -137,7 +137,7 @@ class SubTaskStatus:
     def status(self):
         r"""Gets the status of this SubTaskStatus.
 
-        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
 
         :return: The status of this SubTaskStatus.
         :rtype: str
@@ -148,7 +148,7 @@ class SubTaskStatus:
     def status(self, status):
         r"""Sets the status of this SubTaskStatus.
 
-        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败
+        作业运行状态 RUNNING：运行中 SUCCESSFUL：运行成功 FAILED：运行失败 WARNING：告警
 
         :param status: The status of this SubTaskStatus.
         :type status: str

@@ -780,7 +780,7 @@ class ObsClient(Client):
         A bucket name must be unique in OBS. If you create namesake buckets in the same region, a success message is returned. In other cases, if namesake buckets are created, an error message will be returned, indicating that the bucket already exists. You can add parameters like **x-obs-acl** in request headers to configure access control policies for a bucket.
         
         **Storage Classes**
-        You can create buckets with different storage classes. In a bucket creation request, add the **x-obs-storage-class** header to specify the default storage class for a bucket. The storage class of objects in a bucket defaults to that of the bucket. There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD). If **x-obs-storage-class** is not included in a bucket creation request, the bucket is created in the Standard storage class.
+        You can create buckets with different storage classes. In a bucket creation request, add the **x-obs-storage-class** header to specify the default storage class for a bucket. The storage class of objects in a bucket defaults to that of the bucket. There are four storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), Deep Archive storage (DEEP_ARCHIVE) . If **x-obs-storage-class** is not included in a bucket creation request, the bucket is created in the Standard storage class.
         
         When uploading an object, if you do not specify a storage class for the object (see the upload with PUT), it inherits the storage class of the bucket by default.
         
@@ -827,6 +827,18 @@ class ObsClient(Client):
             header_params['Date'] = local_var_params['date']
         if 'x_obs_acl' in local_var_params:
             header_params['x-obs-acl'] = local_var_params['x_obs_acl']
+        if 'x_obs_server_side_encryption' in local_var_params:
+            header_params['x-obs-server-side-encryption'] = local_var_params['x_obs_server_side_encryption']
+        if 'x_obs_server_side_data_encryption' in local_var_params:
+            header_params['x-obs-server-side-data-encryption'] = local_var_params['x_obs_server_side_data_encryption']
+        if 'x_obs_server_side_encryption_kms_key_id' in local_var_params:
+            header_params['x-obs-server-side-encryption-kms-key-id'] = local_var_params['x_obs_server_side_encryption_kms_key_id']
+        if 'x_obs_server_side_encryption_bucket_key_enabled' in local_var_params:
+            header_params['x-obs-server-side-encryption-bucket-key-enabled'] = local_var_params['x_obs_server_side_encryption_bucket_key_enabled']
+        if 'x_obs_sse_kms_key_project_id' in local_var_params:
+            header_params['x-obs-sse-kms-key-project-id'] = local_var_params['x_obs_sse_kms_key_project_id']
+        if 'x_obs_bucket_object_lock_enabled' in local_var_params:
+            header_params['x-obs-bucket-object-lock-enabled'] = local_var_params['x_obs_bucket_object_lock_enabled']
         if 'x_obs_storage_class' in local_var_params:
             header_params['x-obs-storage-class'] = local_var_params['x_obs_storage_class']
         if 'x_obs_grant_read' in local_var_params:
@@ -849,10 +861,6 @@ class ObsClient(Client):
             header_params['x-obs-fs-file-interface'] = local_var_params['x_obs_fs_file_interface']
         if 'x_obs_epid' in local_var_params:
             header_params['x-obs-epid'] = local_var_params['x_obs_epid']
-        if 'x_obs_cluster_type' in local_var_params:
-            header_params['x-obs-cluster-type'] = local_var_params['x_obs_cluster_type']
-        if 'x_obs_location_clustergroup_id' in local_var_params:
-            header_params['x-obs-location-clustergroup-id'] = local_var_params['x_obs_location_clustergroup_id']
         if 'x_obs_ies_location' in local_var_params:
             header_params['x-obs-ies-location'] = local_var_params['x_obs_ies_location']
 
@@ -1093,6 +1101,7 @@ class ObsClient(Client):
         r"""Listing Objects in a Bucket
 
         This operation returns objects in a bucket.
+        You can also add the versions parameter to the request to list multiple versions of an object in a bucket.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1127,6 +1136,8 @@ class ObsClient(Client):
         query_params = []
         if 'bucket_name' in local_var_params:
             cname = local_var_params['bucket_name']
+        if 'versions' in local_var_params:
+            query_params.append(('versions', local_var_params['versions']))
         if 'prefix' in local_var_params:
             query_params.append(('prefix', local_var_params['prefix']))
         if 'marker' in local_var_params:

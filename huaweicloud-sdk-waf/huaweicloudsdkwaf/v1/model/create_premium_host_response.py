@@ -78,7 +78,7 @@ class CreatePremiumHostResponse(SdkResponse):
         :type id: str
         :param hostname: 防护域名
         :type hostname: str
-        :param protocol: **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&amp;HTTPS: 同事 **默认取值：** 不涉及
+        :param protocol: **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&amp;HTTPS: 同时 **默认取值：** 不涉及
         :type protocol: str
         :param server: 防护域名的源站服务器配置信息
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
@@ -249,7 +249,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protocol(self):
         r"""Gets the protocol of this CreatePremiumHostResponse.
 
-        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同事 **默认取值：** 不涉及
+        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同时 **默认取值：** 不涉及
 
         :return: The protocol of this CreatePremiumHostResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protocol(self, protocol):
         r"""Sets the protocol of this CreatePremiumHostResponse.
 
-        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同事 **默认取值：** 不涉及
+        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同时 **默认取值：** 不涉及
 
         :param protocol: The protocol of this CreatePremiumHostResponse.
         :type protocol: str

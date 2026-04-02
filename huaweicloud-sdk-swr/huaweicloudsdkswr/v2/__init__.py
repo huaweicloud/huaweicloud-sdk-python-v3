@@ -154,6 +154,8 @@ from huaweicloudsdkswr.v2.model.delete_user_repository_auth_request import Delet
 from huaweicloudsdkswr.v2.model.delete_user_repository_auth_response import DeleteUserRepositoryAuthResponse
 from huaweicloudsdkswr.v2.model.dns_conf import DnsConf
 from huaweicloudsdkswr.v2.model.domain_name_info import DomainNameInfo
+from huaweicloudsdkswr.v2.model.execute_gc_schedule_request import ExecuteGcScheduleRequest
+from huaweicloudsdkswr.v2.model.execute_gc_schedule_response import ExecuteGcScheduleResponse
 from huaweicloudsdkswr.v2.model.execute_instance_replication_policy_request import ExecuteInstanceReplicationPolicyRequest
 from huaweicloudsdkswr.v2.model.execute_instance_replication_policy_response import ExecuteInstanceReplicationPolicyResponse
 from huaweicloudsdkswr.v2.model.execute_instance_retention_policy_request import ExecuteInstanceRetentionPolicyRequest
@@ -161,8 +163,12 @@ from huaweicloudsdkswr.v2.model.execute_instance_retention_policy_response impor
 from huaweicloudsdkswr.v2.model.execute_instance_sign_policy_request import ExecuteInstanceSignPolicyRequest
 from huaweicloudsdkswr.v2.model.execute_instance_sign_policy_response import ExecuteInstanceSignPolicyResponse
 from huaweicloudsdkswr.v2.model.execute_retention_policy_request_body import ExecuteRetentionPolicyRequestBody
+from huaweicloudsdkswr.v2.model.execute_schedule_obj import ExecuteScheduleObj
+from huaweicloudsdkswr.v2.model.execute_schedule_request_body import ExecuteScheduleRequestBody
 from huaweicloudsdkswr.v2.model.execution import Execution
 from huaweicloudsdkswr.v2.model.filter import Filter
+from huaweicloudsdkswr.v2.model.gc_parameters import GcParameters
+from huaweicloudsdkswr.v2.model.gc_task import GcTask
 from huaweicloudsdkswr.v2.model.image_retention import ImageRetention
 from huaweicloudsdkswr.v2.model.image_tag import ImageTag
 from huaweicloudsdkswr.v2.model.immutable_rule import ImmutableRule
@@ -172,6 +178,7 @@ from huaweicloudsdkswr.v2.model.internal_endpoint import InternalEndpoint
 from huaweicloudsdkswr.v2.model.ip_info import IpInfo
 from huaweicloudsdkswr.v2.model.job import Job
 from huaweicloudsdkswr.v2.model.job_detail import JobDetail
+from huaweicloudsdkswr.v2.model.job_parameters import JobParameters
 from huaweicloudsdkswr.v2.model.link import Link
 from huaweicloudsdkswr.v2.model.list_all_instance_repositories_request import ListAllInstanceRepositoriesRequest
 from huaweicloudsdkswr.v2.model.list_all_instance_repositories_response import ListAllInstanceRepositoriesResponse
@@ -183,6 +190,8 @@ from huaweicloudsdkswr.v2.model.list_domain_names_request import ListDomainNames
 from huaweicloudsdkswr.v2.model.list_domain_names_response import ListDomainNamesResponse
 from huaweicloudsdkswr.v2.model.list_feature_gates_request import ListFeatureGatesRequest
 from huaweicloudsdkswr.v2.model.list_feature_gates_response import ListFeatureGatesResponse
+from huaweicloudsdkswr.v2.model.list_gc_tasks_request import ListGcTasksRequest
+from huaweicloudsdkswr.v2.model.list_gc_tasks_response import ListGcTasksResponse
 from huaweicloudsdkswr.v2.model.list_global_feature_gates_request import ListGlobalFeatureGatesRequest
 from huaweicloudsdkswr.v2.model.list_global_feature_gates_response import ListGlobalFeatureGatesResponse
 from huaweicloudsdkswr.v2.model.list_image_auto_sync_repos_details_request import ListImageAutoSyncReposDetailsRequest
@@ -311,6 +320,8 @@ from huaweicloudsdkswr.v2.model.retention_selector import RetentionSelector
 from huaweicloudsdkswr.v2.model.rule import Rule
 from huaweicloudsdkswr.v2.model.rule_selector import RuleSelector
 from huaweicloudsdkswr.v2.model.scanner import Scanner
+from huaweicloudsdkswr.v2.model.schedule_details import ScheduleDetails
+from huaweicloudsdkswr.v2.model.schedule_obj import ScheduleObj
 from huaweicloudsdkswr.v2.model.scope_rule import ScopeRule
 from huaweicloudsdkswr.v2.model.show_access_domain_request import ShowAccessDomainRequest
 from huaweicloudsdkswr.v2.model.show_access_domain_response import ShowAccessDomainResponse
@@ -320,6 +331,10 @@ from huaweicloudsdkswr.v2.model.show_domain_overview_request import ShowDomainOv
 from huaweicloudsdkswr.v2.model.show_domain_overview_response import ShowDomainOverviewResponse
 from huaweicloudsdkswr.v2.model.show_domain_resource_reports_request import ShowDomainResourceReportsRequest
 from huaweicloudsdkswr.v2.model.show_domain_resource_reports_response import ShowDomainResourceReportsResponse
+from huaweicloudsdkswr.v2.model.show_gc_schedule_request import ShowGcScheduleRequest
+from huaweicloudsdkswr.v2.model.show_gc_schedule_response import ShowGcScheduleResponse
+from huaweicloudsdkswr.v2.model.show_gc_task_request import ShowGcTaskRequest
+from huaweicloudsdkswr.v2.model.show_gc_task_response import ShowGcTaskResponse
 from huaweicloudsdkswr.v2.model.show_instance_artifact_addition_request import ShowInstanceArtifactAdditionRequest
 from huaweicloudsdkswr.v2.model.show_instance_artifact_addition_response import ShowInstanceArtifactAdditionResponse
 from huaweicloudsdkswr.v2.model.show_instance_artifact_request import ShowInstanceArtifactRequest
@@ -384,6 +399,8 @@ from huaweicloudsdkswr.v2.model.signature_execution_sub_task import SignatureExe
 from huaweicloudsdkswr.v2.model.signature_execution_task import SignatureExecutionTask
 from huaweicloudsdkswr.v2.model.start_manual_scanning_request import StartManualScanningRequest
 from huaweicloudsdkswr.v2.model.start_manual_scanning_response import StartManualScanningResponse
+from huaweicloudsdkswr.v2.model.stop_gc_task_request import StopGcTaskRequest
+from huaweicloudsdkswr.v2.model.stop_gc_task_response import StopGcTaskResponse
 from huaweicloudsdkswr.v2.model.stop_instance_replication_policy_execution_request import StopInstanceReplicationPolicyExecutionRequest
 from huaweicloudsdkswr.v2.model.stop_instance_replication_policy_execution_response import StopInstanceReplicationPolicyExecutionResponse
 from huaweicloudsdkswr.v2.model.subtask import Subtask
@@ -403,6 +420,8 @@ from huaweicloudsdkswr.v2.model.update_cve_allowlist_request import UpdateCVEAll
 from huaweicloudsdkswr.v2.model.update_domain_name_request import UpdateDomainNameRequest
 from huaweicloudsdkswr.v2.model.update_domain_name_request_body import UpdateDomainNameRequestBody
 from huaweicloudsdkswr.v2.model.update_domain_name_response import UpdateDomainNameResponse
+from huaweicloudsdkswr.v2.model.update_gc_schedule_request import UpdateGcScheduleRequest
+from huaweicloudsdkswr.v2.model.update_gc_schedule_response import UpdateGcScheduleResponse
 from huaweicloudsdkswr.v2.model.update_immutable_rule_body import UpdateImmutableRuleBody
 from huaweicloudsdkswr.v2.model.update_immutable_rule_request import UpdateImmutableRuleRequest
 from huaweicloudsdkswr.v2.model.update_immutable_rule_response import UpdateImmutableRuleResponse
@@ -444,6 +463,7 @@ from huaweicloudsdkswr.v2.model.update_retention_policy_request_body import Upda
 from huaweicloudsdkswr.v2.model.update_retention_request import UpdateRetentionRequest
 from huaweicloudsdkswr.v2.model.update_retention_request_body import UpdateRetentionRequestBody
 from huaweicloudsdkswr.v2.model.update_retention_response import UpdateRetentionResponse
+from huaweicloudsdkswr.v2.model.update_schedule_request_body import UpdateScheduleRequestBody
 from huaweicloudsdkswr.v2.model.update_signature_policy_request_body import UpdateSignaturePolicyRequestBody
 from huaweicloudsdkswr.v2.model.update_trigger_request import UpdateTriggerRequest
 from huaweicloudsdkswr.v2.model.update_trigger_request_body import UpdateTriggerRequestBody

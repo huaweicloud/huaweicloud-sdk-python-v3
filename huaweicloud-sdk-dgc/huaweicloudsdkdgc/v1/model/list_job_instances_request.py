@@ -49,9 +49,9 @@ class ListJobInstancesRequest:
         :type limit: int
         :param offset: 分页参数：页数
         :type offset: int
-        :param min_plan_time: 返回作业实际开始时间大于minPlanTime的作业实例，单位为毫秒ms。
+        :param min_plan_time: 返回作业实例开始运行时间大于minPlanTime的作业实例，单位为毫秒ms，默认设置为查询当天0点。
         :type min_plan_time: int
-        :param max_plan_time: 返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
+        :param max_plan_time: 返回作业实例开始运行时间小于maxPlanTime的作业实例，单位为毫秒ms，默认设置为此时的时间点，且开始时间和结束时间的查询范围不超过7天。
         :type max_plan_time: int
         :param status: 实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - forceSuccess：强制成功 - ignoreSuccess：忽略失败 - freeze：冻结 - skip-by-depend：跳过 - waiting-confirm：待确认执行 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
         :type status: str
@@ -165,7 +165,7 @@ class ListJobInstancesRequest:
     def min_plan_time(self):
         r"""Gets the min_plan_time of this ListJobInstancesRequest.
 
-        返回作业实际开始时间大于minPlanTime的作业实例，单位为毫秒ms。
+        返回作业实例开始运行时间大于minPlanTime的作业实例，单位为毫秒ms，默认设置为查询当天0点。
 
         :return: The min_plan_time of this ListJobInstancesRequest.
         :rtype: int
@@ -176,7 +176,7 @@ class ListJobInstancesRequest:
     def min_plan_time(self, min_plan_time):
         r"""Sets the min_plan_time of this ListJobInstancesRequest.
 
-        返回作业实际开始时间大于minPlanTime的作业实例，单位为毫秒ms。
+        返回作业实例开始运行时间大于minPlanTime的作业实例，单位为毫秒ms，默认设置为查询当天0点。
 
         :param min_plan_time: The min_plan_time of this ListJobInstancesRequest.
         :type min_plan_time: int
@@ -187,7 +187,7 @@ class ListJobInstancesRequest:
     def max_plan_time(self):
         r"""Gets the max_plan_time of this ListJobInstancesRequest.
 
-        返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
+        返回作业实例开始运行时间小于maxPlanTime的作业实例，单位为毫秒ms，默认设置为此时的时间点，且开始时间和结束时间的查询范围不超过7天。
 
         :return: The max_plan_time of this ListJobInstancesRequest.
         :rtype: int
@@ -198,7 +198,7 @@ class ListJobInstancesRequest:
     def max_plan_time(self, max_plan_time):
         r"""Sets the max_plan_time of this ListJobInstancesRequest.
 
-        返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
+        返回作业实例开始运行时间小于maxPlanTime的作业实例，单位为毫秒ms，默认设置为此时的时间点，且开始时间和结束时间的查询范围不超过7天。
 
         :param max_plan_time: The max_plan_time of this ListJobInstancesRequest.
         :type max_plan_time: int

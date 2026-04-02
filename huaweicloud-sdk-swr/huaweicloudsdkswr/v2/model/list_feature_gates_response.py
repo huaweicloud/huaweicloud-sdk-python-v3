@@ -18,16 +18,18 @@ class ListFeatureGatesResponse(SdkResponse):
     openapi_types = {
         'enable_domain_name': 'bool',
         'enable_combination_retention': 'bool',
-        'enable_artifact_scanning': 'bool'
+        'enable_artifact_scanning': 'bool',
+        'enable_artifact_gc': 'bool'
     }
 
     attribute_map = {
         'enable_domain_name': 'enableDomainName',
         'enable_combination_retention': 'enableCombinationRetention',
-        'enable_artifact_scanning': 'enableArtifactScanning'
+        'enable_artifact_scanning': 'enableArtifactScanning',
+        'enable_artifact_gc': 'enableArtifactGc'
     }
 
-    def __init__(self, enable_domain_name=None, enable_combination_retention=None, enable_artifact_scanning=None):
+    def __init__(self, enable_domain_name=None, enable_combination_retention=None, enable_artifact_scanning=None, enable_artifact_gc=None):
         r"""ListFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListFeatureGatesResponse(SdkResponse):
         :type enable_combination_retention: bool
         :param enable_artifact_scanning: 是否支持制品扫描
         :type enable_artifact_scanning: bool
+        :param enable_artifact_gc: 是否支持制品清理
+        :type enable_artifact_gc: bool
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ListFeatureGatesResponse(SdkResponse):
         self._enable_domain_name = None
         self._enable_combination_retention = None
         self._enable_artifact_scanning = None
+        self._enable_artifact_gc = None
         self.discriminator = None
 
         if enable_domain_name is not None:
@@ -53,6 +58,8 @@ class ListFeatureGatesResponse(SdkResponse):
             self.enable_combination_retention = enable_combination_retention
         if enable_artifact_scanning is not None:
             self.enable_artifact_scanning = enable_artifact_scanning
+        if enable_artifact_gc is not None:
+            self.enable_artifact_gc = enable_artifact_gc
 
     @property
     def enable_domain_name(self):
@@ -119,6 +126,28 @@ class ListFeatureGatesResponse(SdkResponse):
         :type enable_artifact_scanning: bool
         """
         self._enable_artifact_scanning = enable_artifact_scanning
+
+    @property
+    def enable_artifact_gc(self):
+        r"""Gets the enable_artifact_gc of this ListFeatureGatesResponse.
+
+        是否支持制品清理
+
+        :return: The enable_artifact_gc of this ListFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_artifact_gc
+
+    @enable_artifact_gc.setter
+    def enable_artifact_gc(self, enable_artifact_gc):
+        r"""Sets the enable_artifact_gc of this ListFeatureGatesResponse.
+
+        是否支持制品清理
+
+        :param enable_artifact_gc: The enable_artifact_gc of this ListFeatureGatesResponse.
+        :type enable_artifact_gc: bool
+        """
+        self._enable_artifact_gc = enable_artifact_gc
 
     def to_dict(self):
         import warnings

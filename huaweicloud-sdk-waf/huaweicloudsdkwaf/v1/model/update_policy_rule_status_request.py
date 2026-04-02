@@ -17,7 +17,7 @@ class UpdatePolicyRuleStatusRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'policy_id': 'str',
-        'ruletype': 'str',
+        'rule_type': 'str',
         'rule_id': 'str',
         'body': 'UpdatePolicyRuleStatusRequestBody'
     }
@@ -25,12 +25,12 @@ class UpdatePolicyRuleStatusRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
-        'ruletype': 'ruletype',
+        'rule_type': 'rule_type',
         'rule_id': 'rule_id',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, ruletype=None, rule_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, rule_type=None, rule_id=None, body=None):
         r"""UpdatePolicyRuleStatusRequest
 
         The model defined in huaweicloud sdk
@@ -39,8 +39,8 @@ class UpdatePolicyRuleStatusRequest:
         :type enterprise_project_id: str
         :param policy_id: **参数解释：** 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_id: str
-        :param ruletype: **参数解释：** 规则类型 **约束限制：** 需要购买“大模型防火墙”服务后才可使用llm-guards **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 - llm-guards 大模型防火墙 **默认取值：** 不涉及
-        :type ruletype: str
+        :param rule_type: **参数解释：** 规则类型 **约束限制：** 不涉及 **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 **默认取值：** 不涉及
+        :type rule_type: str
         :param rule_id: **参数解释：** 规则id，通过对应规则类型的查询防护规则列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type rule_id: str
         :param body: Body of the UpdatePolicyRuleStatusRequest
@@ -51,7 +51,7 @@ class UpdatePolicyRuleStatusRequest:
 
         self._enterprise_project_id = None
         self._policy_id = None
-        self._ruletype = None
+        self._rule_type = None
         self._rule_id = None
         self._body = None
         self.discriminator = None
@@ -59,7 +59,7 @@ class UpdatePolicyRuleStatusRequest:
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
-        self.ruletype = ruletype
+        self.rule_type = rule_type
         self.rule_id = rule_id
         if body is not None:
             self.body = body
@@ -109,26 +109,26 @@ class UpdatePolicyRuleStatusRequest:
         self._policy_id = policy_id
 
     @property
-    def ruletype(self):
-        r"""Gets the ruletype of this UpdatePolicyRuleStatusRequest.
+    def rule_type(self):
+        r"""Gets the rule_type of this UpdatePolicyRuleStatusRequest.
 
-        **参数解释：** 规则类型 **约束限制：** 需要购买“大模型防火墙”服务后才可使用llm-guards **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 - llm-guards 大模型防火墙 **默认取值：** 不涉及
+        **参数解释：** 规则类型 **约束限制：** 不涉及 **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 **默认取值：** 不涉及
 
-        :return: The ruletype of this UpdatePolicyRuleStatusRequest.
+        :return: The rule_type of this UpdatePolicyRuleStatusRequest.
         :rtype: str
         """
-        return self._ruletype
+        return self._rule_type
 
-    @ruletype.setter
-    def ruletype(self, ruletype):
-        r"""Sets the ruletype of this UpdatePolicyRuleStatusRequest.
+    @rule_type.setter
+    def rule_type(self, rule_type):
+        r"""Sets the rule_type of this UpdatePolicyRuleStatusRequest.
 
-        **参数解释：** 规则类型 **约束限制：** 需要购买“大模型防火墙”服务后才可使用llm-guards **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 - llm-guards 大模型防火墙 **默认取值：** 不涉及
+        **参数解释：** 规则类型 **约束限制：** 不涉及 **取值范围：** - cc CC防护 - custom 精准防护 - whiteblackip 黑白名单 - geoip 地理位置防护 - ip-reputation 威胁情报 - antitamper 防篡改 - antileakage 防敏感信息泄露 - ignore 全局白名单(原误报屏蔽) - privacy 隐私屏蔽 **默认取值：** 不涉及
 
-        :param ruletype: The ruletype of this UpdatePolicyRuleStatusRequest.
-        :type ruletype: str
+        :param rule_type: The rule_type of this UpdatePolicyRuleStatusRequest.
+        :type rule_type: str
         """
-        self._ruletype = ruletype
+        self._rule_type = rule_type
 
     @property
     def rule_id(self):

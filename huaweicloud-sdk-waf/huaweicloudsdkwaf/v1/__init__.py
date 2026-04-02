@@ -284,6 +284,7 @@ from huaweicloudsdkwaf.v1.model.geo_classification_item import GeoClassification
 from huaweicloudsdkwaf.v1.model.geo_item import GeoItem
 from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
 from huaweicloudsdkwaf.v1.model.id_hostname_entry import IdHostnameEntry
+from huaweicloudsdkwaf.v1.model.id_name_entry import IdNameEntry
 from huaweicloudsdkwaf.v1.model.ignore_advanced import IgnoreAdvanced
 from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
 from huaweicloudsdkwaf.v1.model.instance import Instance
@@ -343,8 +344,12 @@ from huaweicloudsdkwaf.v1.model.list_ignore_policy_rules_request import ListIgno
 from huaweicloudsdkwaf.v1.model.list_ignore_policy_rules_response import ListIgnorePolicyRulesResponse
 from huaweicloudsdkwaf.v1.model.list_ignore_rule_request import ListIgnoreRuleRequest
 from huaweicloudsdkwaf.v1.model.list_ignore_rule_response import ListIgnoreRuleResponse
+from huaweicloudsdkwaf.v1.model.list_instance_pools_request import ListInstancePoolsRequest
+from huaweicloudsdkwaf.v1.model.list_instance_pools_response import ListInstancePoolsResponse
 from huaweicloudsdkwaf.v1.model.list_instance_request import ListInstanceRequest
 from huaweicloudsdkwaf.v1.model.list_instance_response import ListInstanceResponse
+from huaweicloudsdkwaf.v1.model.list_instance_status_request import ListInstanceStatusRequest
+from huaweicloudsdkwaf.v1.model.list_instance_status_response import ListInstanceStatusResponse
 from huaweicloudsdkwaf.v1.model.list_instance_tags_request import ListInstanceTagsRequest
 from huaweicloudsdkwaf.v1.model.list_instance_tags_response import ListInstanceTagsResponse
 from huaweicloudsdkwaf.v1.model.list_ip_group_request import ListIpGroupRequest
@@ -357,6 +362,10 @@ from huaweicloudsdkwaf.v1.model.list_notice_configs_request import ListNoticeCon
 from huaweicloudsdkwaf.v1.model.list_notice_configs_response import ListNoticeConfigsResponse
 from huaweicloudsdkwaf.v1.model.list_overviews_classification_request import ListOverviewsClassificationRequest
 from huaweicloudsdkwaf.v1.model.list_overviews_classification_response import ListOverviewsClassificationResponse
+from huaweicloudsdkwaf.v1.model.list_overviews_host_domains_request import ListOverviewsHostDomainsRequest
+from huaweicloudsdkwaf.v1.model.list_overviews_host_domains_response import ListOverviewsHostDomainsResponse
+from huaweicloudsdkwaf.v1.model.list_policy_protect_rules_request import ListPolicyProtectRulesRequest
+from huaweicloudsdkwaf.v1.model.list_policy_protect_rules_response import ListPolicyProtectRulesResponse
 from huaweicloudsdkwaf.v1.model.list_policy_request import ListPolicyRequest
 from huaweicloudsdkwaf.v1.model.list_policy_response import ListPolicyResponse
 from huaweicloudsdkwaf.v1.model.list_premium_host_request import ListPremiumHostRequest
@@ -403,6 +412,8 @@ from huaweicloudsdkwaf.v1.model.list_url_request import ListUrlRequest
 from huaweicloudsdkwaf.v1.model.list_url_response import ListUrlResponse
 from huaweicloudsdkwaf.v1.model.list_value_list_request import ListValueListRequest
 from huaweicloudsdkwaf.v1.model.list_value_list_response import ListValueListResponse
+from huaweicloudsdkwaf.v1.model.list_vuln_rules_request import ListVulnRulesRequest
+from huaweicloudsdkwaf.v1.model.list_vuln_rules_response import ListVulnRulesResponse
 from huaweicloudsdkwaf.v1.model.list_web_basic_protection_rules_request import ListWebBasicProtectionRulesRequest
 from huaweicloudsdkwaf.v1.model.list_web_basic_protection_rules_response import ListWebBasicProtectionRulesResponse
 from huaweicloudsdkwaf.v1.model.list_whiteblackip_policy_rules_request import ListWhiteblackipPolicyRulesRequest
@@ -422,7 +433,9 @@ from huaweicloudsdkwaf.v1.model.policy_rule_id_request_body_policy_rule_ids impo
 from huaweicloudsdkwaf.v1.model.policy_rule_id_response_body_policy_rule_ids import PolicyRuleIdResponseBodyPolicyRuleIds
 from huaweicloudsdkwaf.v1.model.premium import Premium
 from huaweicloudsdkwaf.v1.model.premium_waf_agency_request import PremiumWafAgencyRequest
+from huaweicloudsdkwaf.v1.model.premium_waf_instance_status_response import PremiumWafInstanceStatusResponse
 from huaweicloudsdkwaf.v1.model.premium_waf_instances import PremiumWafInstances
+from huaweicloudsdkwaf.v1.model.premium_waf_pool_response import PremiumWafPoolResponse
 from huaweicloudsdkwaf.v1.model.premium_waf_server import PremiumWafServer
 from huaweicloudsdkwaf.v1.model.privacy_response_body import PrivacyResponseBody
 from huaweicloudsdkwaf.v1.model.protectable_resources import ProtectableResources
@@ -634,6 +647,7 @@ from huaweicloudsdkwaf.v1.model.url_classification_item import UrlClassification
 from huaweicloudsdkwaf.v1.model.url_count_item import UrlCountItem
 from huaweicloudsdkwaf.v1.model.url_item import UrlItem
 from huaweicloudsdkwaf.v1.model.value_list_response_body import ValueListResponseBody
+from huaweicloudsdkwaf.v1.model.vuln_dto import VulnDto
 from huaweicloudsdkwaf.v1.model.waf_product_info import WafProductInfo
 from huaweicloudsdkwaf.v1.model.waf_server import WafServer
 from huaweicloudsdkwaf.v1.model.web_basic_protection_rules_item import WebBasicProtectionRulesItem

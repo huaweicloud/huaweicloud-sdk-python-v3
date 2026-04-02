@@ -23,38 +23,165 @@
 import json
 import os
 import time
+from abc import ABC, abstractmethod
 from typing import Dict, Optional
 
 import requests
+
+from huaweicloudsdkcore.utils import time_utils
 from six.moves.urllib.parse import urlparse
 
 from huaweicloudsdkcore.auth import endpoint
 from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.exceptions.exceptions import SdkException
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.user_agent import user_agent_string
 from huaweicloudsdkcore.sdk_request import SdkRequest
 
+_TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
-class MetadataAccessor:
-    METADATA_ENDPOINT = "http://169.254.169.254"
-    GET_TOKEN_PATH = "/meta-data/latest/api/token"
-    GET_SECURITY_KEY_PATH = "/openstack/latest/securitykey"
-    X_METADATA_TOKEN = "X-Metadata-Token"
-    X_METADATA_TOKEN_TTL_SECONDS = "X-Metadata-Token-Ttl-Seconds"
-    CONFIG_AGENCY_ERROR = "Please configure Cloud Service Agency first"
-    DEFAULT_TOKEN_TTL_SECONDS = 6 * 60 * 60  # 6h
-    DEFAULT_CHECK_TOKEN_DURATION_SECONDS = 24 * 60 * 60  # 24h
-    DEFAULT_TIME_OUT = (3, 3)
+
+class Credential:
+    def __init__(self):
+        self._access = None
+        self._secret = None
+        self._security_token = None
+        self._expire_at = None
+
+    @property
+    def access(self) -> str:
+        return self._access
+
+    @access.setter
+    def access(self, value: str):
+        self._access = value
+
+    @property
+    def secret(self) -> str:
+        return self._secret
+
+    @secret.setter
+    def secret(self, value: str):
+        self._secret = value
+
+    @property
+    def security_token(self) -> str:
+        return self._security_token
+
+    @security_token.setter
+    def security_token(self, value: str):
+        self._security_token = value
+
+    @property
+    def expire_at(self) -> float:
+        return self._expire_at
+
+    @expire_at.setter
+    def expire_at(self, value: float):
+        self._expire_at = value
+
+
+class StsAccessor(ABC):
+    @abstractmethod
+    def get_credential(self, *args, **kwargs) -> Credential:
+        pass
+
+    @classmethod
+    def _process_credential(cls, data) -> Credential:
+        if isinstance(data, (bytes, str)):
+            credential_map = json.loads(data)
+        elif isinstance(data, dict):
+            credential_map = data
+        else:
+            raise SdkException("failed to process credential from data")
+
+        if "credential" in credential_map:
+            credential_map = credential_map.get("credential")
+        elif "credentials" in credential_map:
+            credential_map = credential_map.get("credentials")
+
+        credential = Credential()
+        credential.access = credential_map.get("access") or credential_map.get("accessKeyId")
+        credential.secret = credential_map.get("secret") or credential_map.get("secretAccessKey")
+        credential.security_token = credential_map.get("securitytoken") or credential_map.get("securityToken")
+        expire_at = credential_map.get("expires_at") or credential_map.get("expiration")
+        credential.expire_at = time_utils.get_timestamp_from_str(expire_at, _TIME_FORMAT)
+        return credential
+
+    @classmethod
+    def _get_content(cls, path) -> str:
+        if not os.path.exists(path):
+            raise SdkException("file '{}' does not exist".format(path))
+
+        with open(path, "r") as f:
+            content = f.read()
+        if not content:
+            raise SdkException("empty content in file '{}'".format(path))
+        return content.strip()
+
+
+class FederalAccessor(StsAccessor):
+    _DEFAULT_DURATION_SECONDS = 6 * 60 * 60  # 6h
+
+    def get_credential(self, *args, **kwargs):
+        iam_endpoint = kwargs.get("iam_endpoint")
+        http_client = kwargs.get("http_client")
+        idp_id = kwargs.get("idp_id")
+        id_token_file = kwargs.get("id_token_file")
+
+        request = IamHelper.get_create_unscoped_token_by_id_token_request(
+            http_client.config,
+            iam_endpoint,
+            idp_id,
+            self._get_content(id_token_file)
+        )
+        token = IamHelper.create_unscoped_token_by_id_token(http_client, request)
+        request = IamHelper.get_create_temporary_access_key_by_token_request(http_client.config, iam_endpoint, token,
+                                                                             self._DEFAULT_DURATION_SECONDS)
+        return self._process_credential(IamHelper.create_temporary_access_key_by_token(http_client, request))
+
+
+class PodIdentityAccessor(StsAccessor):
+
+    def __init__(self, uri, file):
+        self._uri = uri
+        self._file = file
+
+    def get_credential(self, *args, **kwargs) -> Credential:
+        resp = requests.post(
+            url=self._uri,
+            headers={"Authorization": self._get_content(self._file)},
+            json={},
+            timeout=(5, 5)
+        )
+        try:
+            resp.raise_for_status()
+        except requests.HTTPError as e:
+            raise SdkException("failed to get credential from pod identity, detail: {}".format(e))
+        return self._process_credential(resp.content)
+
+
+class MetadataAccessor(StsAccessor):
+    _METADATA_ENDPOINT = "http://169.254.169.254"
+    _GET_TOKEN_PATH = "/meta-data/latest/api/token"
+    _GET_SECURITY_KEY_PATH = "/openstack/latest/securitykey"
+    _X_METADATA_TOKEN = "X-Metadata-Token"
+    _X_METADATA_TOKEN_TTL_SECONDS = "X-Metadata-Token-Ttl-Seconds"
+    _CONFIG_AGENCY_ERROR = "Please configure Cloud Service Agency first"
+    _DEFAULT_TOKEN_TTL_SECONDS = 6 * 60 * 60  # 6h
+    _DEFAULT_CHECK_TOKEN_DURATION_SECONDS = 24 * 60 * 60  # 24h
+    _DEFAULT_TIME_OUT = (3, 3)
 
     def __init__(self):
+        super().__init__()
         self._last_call_seconds = None
         self._token = None
 
     def _get_token(self) -> requests.Response:
-        url = self.METADATA_ENDPOINT + self.GET_TOKEN_PATH
-        headers = {self.X_METADATA_TOKEN_TTL_SECONDS: str(self.DEFAULT_TOKEN_TTL_SECONDS)}
-        return requests.put(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
+        url = self._METADATA_ENDPOINT + self._GET_TOKEN_PATH
+        headers = {self._X_METADATA_TOKEN_TTL_SECONDS: str(self._DEFAULT_TOKEN_TTL_SECONDS)}
+        return requests.put(url=url, headers=headers, timeout=self._DEFAULT_TIME_OUT)
 
     def _try_update_token(self, raise_on_failure: bool):
         self._last_call_seconds = time.time()
@@ -71,27 +198,27 @@ class MetadataAccessor:
             sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
             raise exceptions.ClientRequestException(resp.status_code, sdk_error)
 
-    def get_credentials(self) -> Dict[str, str]:
+    def get_credential(self, *args, **kwargs) -> Credential:
         if not self._token and (not self._last_call_seconds or
-                                time.time() - self._last_call_seconds > self.DEFAULT_CHECK_TOKEN_DURATION_SECONDS):
+                                time.time() - self._last_call_seconds > self._DEFAULT_CHECK_TOKEN_DURATION_SECONDS):
             self._try_update_token(False)
 
-        url = self.METADATA_ENDPOINT + self.GET_SECURITY_KEY_PATH
+        url = self._METADATA_ENDPOINT + self._GET_SECURITY_KEY_PATH
         headers = {}
         if self._token:
-            headers[self.X_METADATA_TOKEN] = self._token
+            headers[self._X_METADATA_TOKEN] = self._token
 
-        resp = requests.get(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
-        if resp.status_code == 401 and self.CONFIG_AGENCY_ERROR not in resp.text:
+        resp = requests.get(url=url, headers=headers, timeout=self._DEFAULT_TIME_OUT)
+        if resp.status_code == 401 and self._CONFIG_AGENCY_ERROR not in resp.text:
             self._try_update_token(True)
-            headers[self.X_METADATA_TOKEN] = self._token
-            resp = requests.get(url=url, headers=headers, timeout=self.DEFAULT_TIME_OUT)
+            headers[self._X_METADATA_TOKEN] = self._token
+            resp = requests.get(url=url, headers=headers, timeout=self._DEFAULT_TIME_OUT)
 
         if resp.status_code >= 400:
             sdk_error = exceptions.SdkError("", resp.status_code, resp.text)
             raise exceptions.ClientRequestException(resp.status_code, sdk_error)
 
-        return json.loads(resp.text).get("credential")
+        return self._process_credential(resp.text)
 
 
 class StsHelper:

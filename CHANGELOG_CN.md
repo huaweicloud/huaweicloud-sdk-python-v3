@@ -1,3 +1,119 @@
+# 3.1.190 2026-04-02
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持在CCE集群中使用容器组身份获取临时AK/SK和securitytoken
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSystemTasks**
+    - 响应参数变更
+      - `+ status: enum value [WARNING]`
+      - `+ subtasks.status: enum value [WARNING]`
+
+### HuaweiCloud SDK DLF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSystemTasks**
+    - 响应参数变更
+      - `+ status: enum value [WARNING]`
+      - `+ subTasks.status: enum value [WARNING]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ModifySecurityGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OBS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBucket**
+    - 请求参数变更
+      - `+ x-obs-server-side-encryption`
+      - `+ x-obs-server-side-data-encryption`
+      - `+ x-obs-server-side-encryption-kms-key-id`
+      - `+ x-obs-server-side-encryption-bucket-key-enabled`
+      - `+ x-obs-sse-kms-key-project-id`
+      - `+ x-obs-bucket-object-lock-enabled`
+      - `+ x-obs-edge-location`
+      - `- x-obs-cluster-type`
+      - `- x-obs-location-clustergroup-id`
+      - `+ x-obs-storage-class: enum value [DEEP_ARCHIVE]`
+  - **ListObjects**
+    - 请求参数变更
+      - `+ versions`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListGcTasks`
+    - `ShowGcTask`
+    - `StopGcTask`
+    - `ShowGcSchedule`
+    - `UpdateGcSchedule`
+    - `ExecuteGcSchedule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFeatureGates**
+    - 响应参数变更
+      - `+ enableArtifactGc`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListOverviewsHostDomains`
+    - `ListVulnRules`
+    - `ListInstanceStatus`
+    - `ListPolicyProtectRules`
+    - `ListInstancePools`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdatePolicyRuleStatus**
+    - 请求参数变更
+      - `+ rule_type`
+      - `- ruletype`
+  - **BatchDeleteRules**
+    - 请求参数变更
+      - `+ rule_type: enum value [llm-guards]`
+
 # 3.1.189 2026-03-26
 
 ### HuaweiCloud SDK CDN

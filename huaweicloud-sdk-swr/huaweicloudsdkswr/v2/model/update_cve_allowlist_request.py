@@ -39,7 +39,7 @@ class UpdateCVEAllowlistRequest:
         :type namespace_id: int
         :param expires_at: 漏洞白名单的有效期时间，以自 1970 年 1 月 1 日以来的秒数表示；如果没有配置，则永不过期
         :type expires_at: int
-        :param items: 漏洞列表
+        :param items: 漏洞列表，最多支持100条数据，且不能有重复漏洞。
         :type items: list[:class:`huaweicloudsdkswr.v2.CVEAllowlistItem`]
         """
         
@@ -130,7 +130,7 @@ class UpdateCVEAllowlistRequest:
     def items(self):
         r"""Gets the items of this UpdateCVEAllowlistRequest.
 
-        漏洞列表
+        漏洞列表，最多支持100条数据，且不能有重复漏洞。
 
         :return: The items of this UpdateCVEAllowlistRequest.
         :rtype: list[:class:`huaweicloudsdkswr.v2.CVEAllowlistItem`]
@@ -141,7 +141,7 @@ class UpdateCVEAllowlistRequest:
     def items(self, items):
         r"""Sets the items of this UpdateCVEAllowlistRequest.
 
-        漏洞列表
+        漏洞列表，最多支持100条数据，且不能有重复漏洞。
 
         :param items: The items of this UpdateCVEAllowlistRequest.
         :type items: list[:class:`huaweicloudsdkswr.v2.CVEAllowlistItem`]

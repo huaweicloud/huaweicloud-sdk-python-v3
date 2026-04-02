@@ -22,6 +22,8 @@
 import os
 import configparser
 from abc import abstractmethod, ABC
+
+from huaweicloudsdkcore.auth.internal import MetadataAccessor, FederalAccessor, PodIdentityAccessor
 from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiTypeError, ApiValueError, SdkException
@@ -60,6 +62,14 @@ class EnvCredentialProvider(CredentialProvider):
     def get_global_credential_env_provider():
         return EnvCredentialProvider(_CredentialType.GLOBAL)
 
+    @staticmethod
+    def get_basic():
+        return EnvCredentialProvider(_CredentialType.BASIC)
+
+    @staticmethod
+    def get_global():
+        return EnvCredentialProvider(_CredentialType.GLOBAL)
+
     def get_credentials(self):
         if self._credential_type.startswith(_CredentialType.BASIC):
             credentials = BasicCredentials().with_project_id(os.getenv(self._PROJECT_ID_ENV_NAME))
@@ -76,6 +86,7 @@ class EnvCredentialProvider(CredentialProvider):
 
         if idp_id and id_token_file:
             credentials.with_idp_id(idp_id).with_id_token_file(id_token_file)
+            credentials.sts_accessor = FederalAccessor()
         elif ak and sk:
             credentials.with_ak(ak).with_sk(sk).with_security_token(security_token)
         else:
@@ -105,6 +116,14 @@ class ProfileCredentialProvider(CredentialProvider):
 
     @staticmethod
     def get_global_credential_profile_provider():
+        return ProfileCredentialProvider(_CredentialType.GLOBAL)
+
+    @staticmethod
+    def get_basic():
+        return ProfileCredentialProvider(_CredentialType.BASIC)
+
+    @staticmethod
+    def get_global():
         return ProfileCredentialProvider(_CredentialType.GLOBAL)
 
     def get_credentials(self):
@@ -137,6 +156,7 @@ class ProfileCredentialProvider(CredentialProvider):
 
         if idp_id and id_token_file:
             credentials.with_idp_id(idp_id).with_id_token_file(id_token_file)
+            credentials.sts_accessor = FederalAccessor()
         elif ak and sk:
             credentials.with_ak(ak).with_sk(sk).with_security_token(security_token)
         else:
@@ -158,6 +178,37 @@ class ProfileCredentialProvider(CredentialProvider):
                             ) if home_path else home_path
 
 
+class PodIdentityCredentialProvider(CredentialProvider):
+    _HC_CONTAINER_CREDENTIALS_FULL_URI = "HC_CONTAINER_CREDENTIALS_FULL_URI"
+    _HC_CONTAINER_AUTHORIZATION_TOKEN_FILE = "HC_CONTAINER_AUTHORIZATION_TOKEN_FILE"
+
+    @staticmethod
+    def get_basic():
+        return PodIdentityCredentialProvider(_CredentialType.BASIC)
+
+    @staticmethod
+    def get_global():
+        return PodIdentityCredentialProvider(_CredentialType.GLOBAL)
+
+    def get_credentials(self):
+        uri = os.getenv(self._HC_CONTAINER_CREDENTIALS_FULL_URI)
+        file = os.getenv(self._HC_CONTAINER_AUTHORIZATION_TOKEN_FILE)
+        if not uri or not file:
+            raise SdkException("The environment variable HC_CONTAINER_CREDENTIALS_FULL_URI" +
+                               " and HC_CONTAINER_AUTHORIZATION_TOKEN_FILE must be set when using pod identity credential")
+
+        if self._credential_type.startswith(_CredentialType.BASIC):
+            credentials = BasicCredentials()
+        elif self._credential_type.startswith(_CredentialType.GLOBAL):
+            credentials = GlobalCredentials()
+        else:
+            raise SdkException("unsupported credential type: " + self._credential_type)
+
+        credentials.sts_accessor = PodIdentityAccessor(uri, file)
+        credentials.process_sts(None)
+        return credentials
+
+
 class MetadataCredentialProvider(CredentialProvider):
     @staticmethod
     def get_basic_credential_metadata_provider():
@@ -165,6 +216,14 @@ class MetadataCredentialProvider(CredentialProvider):
 
     @staticmethod
     def get_global_credential_metadata_provider():
+        return MetadataGlobalCredentialProvider()
+
+    @staticmethod
+    def get_basic():
+        return MetadataBasicCredentialProvider()
+
+    @staticmethod
+    def get_global():
         return MetadataGlobalCredentialProvider()
 
     def get_credentials(self):
@@ -192,8 +251,9 @@ class MetadataBasicCredentialProvider(MetadataCredentialProvider):
         self._project_id = value
 
     def get_credentials(self):
-        credentials = BasicCredentials(project_id=self._project_id)
-        credentials.update_security_token_from_metadata()
+        credentials = BasicCredentials(project_id=self.project_id)
+        credentials.sts_accessor = MetadataAccessor()
+        credentials.process_sts(None)
         return credentials
 
 
@@ -211,8 +271,9 @@ class MetadataGlobalCredentialProvider(MetadataCredentialProvider):
         self._domain_id = value
 
     def get_credentials(self):
-        credentials = GlobalCredentials(domain_id=self._domain_id)
-        credentials.update_security_token_from_metadata()
+        credentials = GlobalCredentials(domain_id=self.domain_id)
+        credentials.sts_accessor = MetadataAccessor()
+        credentials.process_sts(None)
         return credentials
 
 
@@ -223,29 +284,44 @@ class CredentialProviderChain:
     @staticmethod
     def get_basic_credential_provider_chain():
         providers = (
-            EnvCredentialProvider.get_basic_credential_env_provider(),
-            ProfileCredentialProvider.get_basic_credential_profile_provider(),
-            MetadataCredentialProvider.get_basic_credential_metadata_provider()
+            EnvCredentialProvider.get_basic(),
+            ProfileCredentialProvider.get_basic(),
+            MetadataCredentialProvider.get_basic(),
+            PodIdentityCredentialProvider.get_basic()
         )
         return CredentialProviderChain(providers)
 
     @staticmethod
+    def get_basic():
+        return CredentialProviderChain.get_basic_credential_provider_chain()
+
+    @staticmethod
     def get_global_credential_provider_chain():
         providers = (
-            EnvCredentialProvider.get_global_credential_env_provider(),
-            ProfileCredentialProvider.get_global_credential_profile_provider(),
-            MetadataCredentialProvider.get_global_credential_metadata_provider()
+            EnvCredentialProvider.get_global(),
+            ProfileCredentialProvider.get_global(),
+            MetadataCredentialProvider.get_global(),
+            PodIdentityCredentialProvider.get_global()
         )
         return CredentialProviderChain(providers)
+
+    @staticmethod
+    def get_global():
+        return CredentialProviderChain.get_global_credential_provider_chain()
 
     @staticmethod
     def get_default_credential_provider_chain(credential_type):
         providers = (
             EnvCredentialProvider(credential_type),
             ProfileCredentialProvider(credential_type),
-            MetadataCredentialProvider(credential_type)
+            MetadataCredentialProvider(credential_type),
+            PodIdentityCredentialProvider(credential_type)
         )
         return CredentialProviderChain(providers)
+
+    @staticmethod
+    def get_default(credential_type):
+        return CredentialProviderChain.get_default_credential_provider_chain(credential_type)
 
     def get_credentials(self):
         errors = []

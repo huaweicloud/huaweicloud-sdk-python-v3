@@ -19,6 +19,7 @@ class ListObjectsRequest:
     openapi_types = {
         'date': 'str',
         'bucket_name': 'str',
+        'versions': 'str',
         'prefix': 'str',
         'marker': 'str',
         'max_keys': 'int',
@@ -31,6 +32,7 @@ class ListObjectsRequest:
     attribute_map = {
         'date': 'Date',
         'bucket_name': 'bucket_name',
+        'versions': 'versions',
         'prefix': 'prefix',
         'marker': 'marker',
         'max_keys': 'max-keys',
@@ -40,7 +42,7 @@ class ListObjectsRequest:
         'encoding_type': 'encoding-type'
     }
 
-    def __init__(self, date=None, bucket_name=None, prefix=None, marker=None, max_keys=None, delimiter=None, key_marker=None, version_id_marker=None, encoding_type=None):
+    def __init__(self, date=None, bucket_name=None, versions=None, prefix=None, marker=None, max_keys=None, delimiter=None, key_marker=None, version_id_marker=None, encoding_type=None):
         r"""ListObjectsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListObjectsRequest:
         :type date: str
         :param bucket_name: Name of the requested bucket
         :type bucket_name: str
+        :param versions: Indicates the API for listing object versions in a bucket.
+        :type versions: str
         :param prefix: Lists objects whose name starts with the specified prefix.
         :type prefix: str
         :param marker: Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
@@ -69,6 +73,7 @@ class ListObjectsRequest:
 
         self._date = None
         self._bucket_name = None
+        self._versions = None
         self._prefix = None
         self._marker = None
         self._max_keys = None
@@ -81,6 +86,8 @@ class ListObjectsRequest:
         if date is not None:
             self.date = date
         self.bucket_name = bucket_name
+        if versions is not None:
+            self.versions = versions
         if prefix is not None:
             self.prefix = prefix
         if marker is not None:
@@ -139,6 +146,28 @@ class ListObjectsRequest:
         :type bucket_name: str
         """
         self._bucket_name = bucket_name
+
+    @property
+    def versions(self):
+        r"""Gets the versions of this ListObjectsRequest.
+
+        Indicates the API for listing object versions in a bucket.
+
+        :return: The versions of this ListObjectsRequest.
+        :rtype: str
+        """
+        return self._versions
+
+    @versions.setter
+    def versions(self, versions):
+        r"""Sets the versions of this ListObjectsRequest.
+
+        Indicates the API for listing object versions in a bucket.
+
+        :param versions: The versions of this ListObjectsRequest.
+        :type versions: str
+        """
+        self._versions = versions
 
     @property
     def prefix(self):

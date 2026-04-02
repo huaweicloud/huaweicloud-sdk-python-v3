@@ -20,6 +20,12 @@ class CreateBucketRequest:
         'bucket_name': 'str',
         'date': 'str',
         'x_obs_acl': 'str',
+        'x_obs_server_side_encryption': 'str',
+        'x_obs_server_side_data_encryption': 'str',
+        'x_obs_server_side_encryption_kms_key_id': 'str',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'str',
+        'x_obs_sse_kms_key_project_id': 'str',
+        'x_obs_bucket_object_lock_enabled': 'str',
         'x_obs_storage_class': 'str',
         'x_obs_grant_read': 'str',
         'x_obs_grant_write': 'str',
@@ -31,8 +37,6 @@ class CreateBucketRequest:
         'x_obs_az_redundancy': 'str',
         'x_obs_fs_file_interface': 'str',
         'x_obs_epid': 'str',
-        'x_obs_cluster_type': 'str',
-        'x_obs_location_clustergroup_id': 'str',
         'x_obs_ies_location': 'str',
         'body': 'CreateBucketRequestBody'
     }
@@ -41,6 +45,12 @@ class CreateBucketRequest:
         'bucket_name': 'bucket_name',
         'date': 'Date',
         'x_obs_acl': 'x-obs-acl',
+        'x_obs_server_side_encryption': 'x-obs-server-side-encryption',
+        'x_obs_server_side_data_encryption': 'x-obs-server-side-data-encryption',
+        'x_obs_server_side_encryption_kms_key_id': 'x-obs-server-side-encryption-kms-key-id',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'x-obs-server-side-encryption-bucket-key-enabled',
+        'x_obs_sse_kms_key_project_id': 'x-obs-sse-kms-key-project-id',
+        'x_obs_bucket_object_lock_enabled': 'x-obs-bucket-object-lock-enabled',
         'x_obs_storage_class': 'x-obs-storage-class',
         'x_obs_grant_read': 'x-obs-grant-read',
         'x_obs_grant_write': 'x-obs-grant-write',
@@ -52,13 +62,11 @@ class CreateBucketRequest:
         'x_obs_az_redundancy': 'x-obs-az-redundancy',
         'x_obs_fs_file_interface': 'x-obs-fs-file-interface',
         'x_obs_epid': 'x-obs-epid',
-        'x_obs_cluster_type': 'x-obs-cluster-type',
-        'x_obs_location_clustergroup_id': 'x-obs-location-clustergroup-id',
         'x_obs_ies_location': 'x-obs-ies-location',
         'body': 'body'
     }
 
-    def __init__(self, bucket_name=None, date=None, x_obs_acl=None, x_obs_storage_class=None, x_obs_grant_read=None, x_obs_grant_write=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_grant_read_delivered=None, x_obs_grant_full_control_delivered=None, x_obs_az_redundancy=None, x_obs_fs_file_interface=None, x_obs_epid=None, x_obs_cluster_type=None, x_obs_location_clustergroup_id=None, x_obs_ies_location=None, body=None):
+    def __init__(self, bucket_name=None, date=None, x_obs_acl=None, x_obs_server_side_encryption=None, x_obs_server_side_data_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_bucket_key_enabled=None, x_obs_sse_kms_key_project_id=None, x_obs_bucket_object_lock_enabled=None, x_obs_storage_class=None, x_obs_grant_read=None, x_obs_grant_write=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_grant_read_delivered=None, x_obs_grant_full_control_delivered=None, x_obs_az_redundancy=None, x_obs_fs_file_interface=None, x_obs_epid=None, x_obs_ies_location=None, body=None):
         r"""CreateBucketRequest
 
         The model defined in huaweicloud sdk
@@ -69,7 +77,19 @@ class CreateBucketRequest:
         :type date: str
         :param x_obs_acl: When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
         :type x_obs_acl: str
-        :param x_obs_storage_class: When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
+        :param x_obs_server_side_encryption: When creating a bucket, you can use this header to specify an encryption method for the bucket.  Example: x-obs-server-side-encryption: kms
+        :type x_obs_server_side_encryption: str
+        :param x_obs_server_side_data_encryption: When creating a bucket, you can use this header to specify an encryption algorithm for server-side encryption. Example: x-obs-server-side-data-encryption: AES256
+        :type x_obs_server_side_data_encryption: str
+        :param x_obs_server_side_encryption_kms_key_id: ID of a specified key used for SSE-KMS encryption. For details about how to obtain a key ID Constraints: This header can only be used when you specify kms for the x-obs-server-side-encryption header.
+        :type x_obs_server_side_encryption_kms_key_id: str
+        :param x_obs_server_side_encryption_bucket_key_enabled: Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        :param x_obs_sse_kms_key_project_id: ID of the project (not an enterprise project) where the KMS CMK belongs when SSE-KMS is used
+        :type x_obs_sse_kms_key_project_id: str
+        :param x_obs_bucket_object_lock_enabled: When creating a bucket, you can use this header to enable WORM for the bucket. Example: x-obs-bucket-object-lock-enabled:true
+        :type x_obs_bucket_object_lock_enabled: str
+        :param x_obs_storage_class: When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and Deep Archive storage (DEEP_ARCHIVE). If this header is not included, the bucket is created in the Standard storage class.
         :type x_obs_storage_class: str
         :param x_obs_grant_read: Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
         :type x_obs_grant_read: str
@@ -91,10 +111,6 @@ class CreateBucketRequest:
         :type x_obs_fs_file_interface: str
         :param x_obs_epid: Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
         :type x_obs_epid: str
-        :param x_obs_cluster_type: Specifies the type (public or dedicated) of the cluster where a bucket is created.
-        :type x_obs_cluster_type: str
-        :param x_obs_location_clustergroup_id: Cluster group ID when a bucket is explicitly created in a cluster.
-        :type x_obs_location_clustergroup_id: str
         :param x_obs_ies_location: ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
         :type x_obs_ies_location: str
         :param body: Body of the CreateBucketRequest
@@ -106,6 +122,12 @@ class CreateBucketRequest:
         self._bucket_name = None
         self._date = None
         self._x_obs_acl = None
+        self._x_obs_server_side_encryption = None
+        self._x_obs_server_side_data_encryption = None
+        self._x_obs_server_side_encryption_kms_key_id = None
+        self._x_obs_server_side_encryption_bucket_key_enabled = None
+        self._x_obs_sse_kms_key_project_id = None
+        self._x_obs_bucket_object_lock_enabled = None
         self._x_obs_storage_class = None
         self._x_obs_grant_read = None
         self._x_obs_grant_write = None
@@ -117,8 +139,6 @@ class CreateBucketRequest:
         self._x_obs_az_redundancy = None
         self._x_obs_fs_file_interface = None
         self._x_obs_epid = None
-        self._x_obs_cluster_type = None
-        self._x_obs_location_clustergroup_id = None
         self._x_obs_ies_location = None
         self._body = None
         self.discriminator = None
@@ -128,6 +148,18 @@ class CreateBucketRequest:
             self.date = date
         if x_obs_acl is not None:
             self.x_obs_acl = x_obs_acl
+        if x_obs_server_side_encryption is not None:
+            self.x_obs_server_side_encryption = x_obs_server_side_encryption
+        if x_obs_server_side_data_encryption is not None:
+            self.x_obs_server_side_data_encryption = x_obs_server_side_data_encryption
+        if x_obs_server_side_encryption_kms_key_id is not None:
+            self.x_obs_server_side_encryption_kms_key_id = x_obs_server_side_encryption_kms_key_id
+        if x_obs_server_side_encryption_bucket_key_enabled is not None:
+            self.x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+        if x_obs_sse_kms_key_project_id is not None:
+            self.x_obs_sse_kms_key_project_id = x_obs_sse_kms_key_project_id
+        if x_obs_bucket_object_lock_enabled is not None:
+            self.x_obs_bucket_object_lock_enabled = x_obs_bucket_object_lock_enabled
         if x_obs_storage_class is not None:
             self.x_obs_storage_class = x_obs_storage_class
         if x_obs_grant_read is not None:
@@ -150,10 +182,6 @@ class CreateBucketRequest:
             self.x_obs_fs_file_interface = x_obs_fs_file_interface
         if x_obs_epid is not None:
             self.x_obs_epid = x_obs_epid
-        if x_obs_cluster_type is not None:
-            self.x_obs_cluster_type = x_obs_cluster_type
-        if x_obs_location_clustergroup_id is not None:
-            self.x_obs_location_clustergroup_id = x_obs_location_clustergroup_id
         if x_obs_ies_location is not None:
             self.x_obs_ies_location = x_obs_ies_location
         if body is not None:
@@ -226,10 +254,142 @@ class CreateBucketRequest:
         self._x_obs_acl = x_obs_acl
 
     @property
+    def x_obs_server_side_encryption(self):
+        r"""Gets the x_obs_server_side_encryption of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to specify an encryption method for the bucket.  Example: x-obs-server-side-encryption: kms
+
+        :return: The x_obs_server_side_encryption of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_encryption
+
+    @x_obs_server_side_encryption.setter
+    def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
+        r"""Sets the x_obs_server_side_encryption of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to specify an encryption method for the bucket.  Example: x-obs-server-side-encryption: kms
+
+        :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this CreateBucketRequest.
+        :type x_obs_server_side_encryption: str
+        """
+        self._x_obs_server_side_encryption = x_obs_server_side_encryption
+
+    @property
+    def x_obs_server_side_data_encryption(self):
+        r"""Gets the x_obs_server_side_data_encryption of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to specify an encryption algorithm for server-side encryption. Example: x-obs-server-side-data-encryption: AES256
+
+        :return: The x_obs_server_side_data_encryption of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_data_encryption
+
+    @x_obs_server_side_data_encryption.setter
+    def x_obs_server_side_data_encryption(self, x_obs_server_side_data_encryption):
+        r"""Sets the x_obs_server_side_data_encryption of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to specify an encryption algorithm for server-side encryption. Example: x-obs-server-side-data-encryption: AES256
+
+        :param x_obs_server_side_data_encryption: The x_obs_server_side_data_encryption of this CreateBucketRequest.
+        :type x_obs_server_side_data_encryption: str
+        """
+        self._x_obs_server_side_data_encryption = x_obs_server_side_data_encryption
+
+    @property
+    def x_obs_server_side_encryption_kms_key_id(self):
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this CreateBucketRequest.
+
+        ID of a specified key used for SSE-KMS encryption. For details about how to obtain a key ID Constraints: This header can only be used when you specify kms for the x-obs-server-side-encryption header.
+
+        :return: The x_obs_server_side_encryption_kms_key_id of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_encryption_kms_key_id
+
+    @x_obs_server_side_encryption_kms_key_id.setter
+    def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this CreateBucketRequest.
+
+        ID of a specified key used for SSE-KMS encryption. For details about how to obtain a key ID Constraints: This header can only be used when you specify kms for the x-obs-server-side-encryption header.
+
+        :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this CreateBucketRequest.
+        :type x_obs_server_side_encryption_kms_key_id: str
+        """
+        self._x_obs_server_side_encryption_kms_key_id = x_obs_server_side_encryption_kms_key_id
+
+    @property
+    def x_obs_server_side_encryption_bucket_key_enabled(self):
+        r"""Gets the x_obs_server_side_encryption_bucket_key_enabled of this CreateBucketRequest.
+
+        Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+
+        :return: The x_obs_server_side_encryption_bucket_key_enabled of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_encryption_bucket_key_enabled
+
+    @x_obs_server_side_encryption_bucket_key_enabled.setter
+    def x_obs_server_side_encryption_bucket_key_enabled(self, x_obs_server_side_encryption_bucket_key_enabled):
+        r"""Sets the x_obs_server_side_encryption_bucket_key_enabled of this CreateBucketRequest.
+
+        Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+
+        :param x_obs_server_side_encryption_bucket_key_enabled: The x_obs_server_side_encryption_bucket_key_enabled of this CreateBucketRequest.
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        """
+        self._x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+
+    @property
+    def x_obs_sse_kms_key_project_id(self):
+        r"""Gets the x_obs_sse_kms_key_project_id of this CreateBucketRequest.
+
+        ID of the project (not an enterprise project) where the KMS CMK belongs when SSE-KMS is used
+
+        :return: The x_obs_sse_kms_key_project_id of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_sse_kms_key_project_id
+
+    @x_obs_sse_kms_key_project_id.setter
+    def x_obs_sse_kms_key_project_id(self, x_obs_sse_kms_key_project_id):
+        r"""Sets the x_obs_sse_kms_key_project_id of this CreateBucketRequest.
+
+        ID of the project (not an enterprise project) where the KMS CMK belongs when SSE-KMS is used
+
+        :param x_obs_sse_kms_key_project_id: The x_obs_sse_kms_key_project_id of this CreateBucketRequest.
+        :type x_obs_sse_kms_key_project_id: str
+        """
+        self._x_obs_sse_kms_key_project_id = x_obs_sse_kms_key_project_id
+
+    @property
+    def x_obs_bucket_object_lock_enabled(self):
+        r"""Gets the x_obs_bucket_object_lock_enabled of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to enable WORM for the bucket. Example: x-obs-bucket-object-lock-enabled:true
+
+        :return: The x_obs_bucket_object_lock_enabled of this CreateBucketRequest.
+        :rtype: str
+        """
+        return self._x_obs_bucket_object_lock_enabled
+
+    @x_obs_bucket_object_lock_enabled.setter
+    def x_obs_bucket_object_lock_enabled(self, x_obs_bucket_object_lock_enabled):
+        r"""Sets the x_obs_bucket_object_lock_enabled of this CreateBucketRequest.
+
+        When creating a bucket, you can use this header to enable WORM for the bucket. Example: x-obs-bucket-object-lock-enabled:true
+
+        :param x_obs_bucket_object_lock_enabled: The x_obs_bucket_object_lock_enabled of this CreateBucketRequest.
+        :type x_obs_bucket_object_lock_enabled: str
+        """
+        self._x_obs_bucket_object_lock_enabled = x_obs_bucket_object_lock_enabled
+
+    @property
     def x_obs_storage_class(self):
         r"""Gets the x_obs_storage_class of this CreateBucketRequest.
 
-        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
+        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and Deep Archive storage (DEEP_ARCHIVE). If this header is not included, the bucket is created in the Standard storage class.
 
         :return: The x_obs_storage_class of this CreateBucketRequest.
         :rtype: str
@@ -240,7 +400,7 @@ class CreateBucketRequest:
     def x_obs_storage_class(self, x_obs_storage_class):
         r"""Sets the x_obs_storage_class of this CreateBucketRequest.
 
-        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
+        When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and Deep Archive storage (DEEP_ARCHIVE). If this header is not included, the bucket is created in the Standard storage class.
 
         :param x_obs_storage_class: The x_obs_storage_class of this CreateBucketRequest.
         :type x_obs_storage_class: str
@@ -466,50 +626,6 @@ class CreateBucketRequest:
         :type x_obs_epid: str
         """
         self._x_obs_epid = x_obs_epid
-
-    @property
-    def x_obs_cluster_type(self):
-        r"""Gets the x_obs_cluster_type of this CreateBucketRequest.
-
-        Specifies the type (public or dedicated) of the cluster where a bucket is created.
-
-        :return: The x_obs_cluster_type of this CreateBucketRequest.
-        :rtype: str
-        """
-        return self._x_obs_cluster_type
-
-    @x_obs_cluster_type.setter
-    def x_obs_cluster_type(self, x_obs_cluster_type):
-        r"""Sets the x_obs_cluster_type of this CreateBucketRequest.
-
-        Specifies the type (public or dedicated) of the cluster where a bucket is created.
-
-        :param x_obs_cluster_type: The x_obs_cluster_type of this CreateBucketRequest.
-        :type x_obs_cluster_type: str
-        """
-        self._x_obs_cluster_type = x_obs_cluster_type
-
-    @property
-    def x_obs_location_clustergroup_id(self):
-        r"""Gets the x_obs_location_clustergroup_id of this CreateBucketRequest.
-
-        Cluster group ID when a bucket is explicitly created in a cluster.
-
-        :return: The x_obs_location_clustergroup_id of this CreateBucketRequest.
-        :rtype: str
-        """
-        return self._x_obs_location_clustergroup_id
-
-    @x_obs_location_clustergroup_id.setter
-    def x_obs_location_clustergroup_id(self, x_obs_location_clustergroup_id):
-        r"""Sets the x_obs_location_clustergroup_id of this CreateBucketRequest.
-
-        Cluster group ID when a bucket is explicitly created in a cluster.
-
-        :param x_obs_location_clustergroup_id: The x_obs_location_clustergroup_id of this CreateBucketRequest.
-        :type x_obs_location_clustergroup_id: str
-        """
-        self._x_obs_location_clustergroup_id = x_obs_location_clustergroup_id
 
     @property
     def x_obs_ies_location(self):
