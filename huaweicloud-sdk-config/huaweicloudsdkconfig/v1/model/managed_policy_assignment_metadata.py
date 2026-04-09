@@ -19,6 +19,7 @@ class ManagedPolicyAssignmentMetadata:
         'period': 'str',
         'parameters': 'dict(str, PolicyParameterValue)',
         'policy_filter': 'PolicyFilterDefinition',
+        'policy_filter_v2': 'PolicyFilterDefinitionV2',
         'policy_definition_id': 'str'
     }
 
@@ -27,10 +28,11 @@ class ManagedPolicyAssignmentMetadata:
         'period': 'period',
         'parameters': 'parameters',
         'policy_filter': 'policy_filter',
+        'policy_filter_v2': 'policy_filter_v2',
         'policy_definition_id': 'policy_definition_id'
     }
 
-    def __init__(self, description=None, period=None, parameters=None, policy_filter=None, policy_definition_id=None):
+    def __init__(self, description=None, period=None, parameters=None, policy_filter=None, policy_filter_v2=None, policy_definition_id=None):
         r"""ManagedPolicyAssignmentMetadata
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ManagedPolicyAssignmentMetadata:
         :type parameters: dict(str, PolicyParameterValue)
         :param policy_filter: 
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
+        :param policy_filter_v2: 
+        :type policy_filter_v2: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
         :param policy_definition_id: 预定义策略标识符。
         :type policy_definition_id: str
         """
@@ -53,6 +57,7 @@ class ManagedPolicyAssignmentMetadata:
         self._period = None
         self._parameters = None
         self._policy_filter = None
+        self._policy_filter_v2 = None
         self._policy_definition_id = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class ManagedPolicyAssignmentMetadata:
             self.parameters = parameters
         if policy_filter is not None:
             self.policy_filter = policy_filter
+        if policy_filter_v2 is not None:
+            self.policy_filter_v2 = policy_filter_v2
         self.policy_definition_id = policy_definition_id
 
     @property
@@ -149,6 +156,24 @@ class ManagedPolicyAssignmentMetadata:
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
         """
         self._policy_filter = policy_filter
+
+    @property
+    def policy_filter_v2(self):
+        r"""Gets the policy_filter_v2 of this ManagedPolicyAssignmentMetadata.
+
+        :return: The policy_filter_v2 of this ManagedPolicyAssignmentMetadata.
+        :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
+        """
+        return self._policy_filter_v2
+
+    @policy_filter_v2.setter
+    def policy_filter_v2(self, policy_filter_v2):
+        r"""Sets the policy_filter_v2 of this ManagedPolicyAssignmentMetadata.
+
+        :param policy_filter_v2: The policy_filter_v2 of this ManagedPolicyAssignmentMetadata.
+        :type policy_filter_v2: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
+        """
+        self._policy_filter_v2 = policy_filter_v2
 
     @property
     def policy_definition_id(self):

@@ -18,7 +18,7 @@ class BatchAddTestCaseResultInTaskInfo:
         'result': 'AddTestCaseResultInfo',
         'task_uri': 'str',
         'task_result_uri': 'str',
-        'test_case_uris': 'str',
+        'test_case_uris': 'list[str]',
         'is_asyn': 'bool'
     }
 
@@ -41,8 +41,8 @@ class BatchAddTestCaseResultInTaskInfo:
         :type task_uri: str
         :param task_result_uri: 测试套结果URI
         :type task_result_uri: str
-        :param test_case_uris: 用例uri
-        :type test_case_uris: str
+        :param test_case_uris: 用例uri列表
+        :type test_case_uris: list[str]
         :param is_asyn: 是否异步执行
         :type is_asyn: bool
         """
@@ -133,10 +133,10 @@ class BatchAddTestCaseResultInTaskInfo:
     def test_case_uris(self):
         r"""Gets the test_case_uris of this BatchAddTestCaseResultInTaskInfo.
 
-        用例uri
+        用例uri列表
 
         :return: The test_case_uris of this BatchAddTestCaseResultInTaskInfo.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._test_case_uris
 
@@ -144,10 +144,10 @@ class BatchAddTestCaseResultInTaskInfo:
     def test_case_uris(self, test_case_uris):
         r"""Sets the test_case_uris of this BatchAddTestCaseResultInTaskInfo.
 
-        用例uri
+        用例uri列表
 
         :param test_case_uris: The test_case_uris of this BatchAddTestCaseResultInTaskInfo.
-        :type test_case_uris: str
+        :type test_case_uris: list[str]
         """
         self._test_case_uris = test_case_uris
 

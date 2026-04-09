@@ -17,16 +17,18 @@ class OrganizationPolicyAssignmentRequest:
     openapi_types = {
         'excluded_accounts': 'list[str]',
         'organization_policy_assignment_name': 'str',
-        'managed_policy_assignment_metadata': 'ManagedPolicyAssignmentMetadata'
+        'managed_policy_assignment_metadata': 'ManagedPolicyAssignmentMetadata',
+        'custom_policy_assignment_metadata': 'CustomPolicyAssignmentMetadata'
     }
 
     attribute_map = {
         'excluded_accounts': 'excluded_accounts',
         'organization_policy_assignment_name': 'organization_policy_assignment_name',
-        'managed_policy_assignment_metadata': 'managed_policy_assignment_metadata'
+        'managed_policy_assignment_metadata': 'managed_policy_assignment_metadata',
+        'custom_policy_assignment_metadata': 'custom_policy_assignment_metadata'
     }
 
-    def __init__(self, excluded_accounts=None, organization_policy_assignment_name=None, managed_policy_assignment_metadata=None):
+    def __init__(self, excluded_accounts=None, organization_policy_assignment_name=None, managed_policy_assignment_metadata=None, custom_policy_assignment_metadata=None):
         r"""OrganizationPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class OrganizationPolicyAssignmentRequest:
         :type organization_policy_assignment_name: str
         :param managed_policy_assignment_metadata: 
         :type managed_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.ManagedPolicyAssignmentMetadata`
+        :param custom_policy_assignment_metadata: 
+        :type custom_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.CustomPolicyAssignmentMetadata`
         """
         
         
@@ -44,6 +48,7 @@ class OrganizationPolicyAssignmentRequest:
         self._excluded_accounts = None
         self._organization_policy_assignment_name = None
         self._managed_policy_assignment_metadata = None
+        self._custom_policy_assignment_metadata = None
         self.discriminator = None
 
         if excluded_accounts is not None:
@@ -51,6 +56,8 @@ class OrganizationPolicyAssignmentRequest:
         self.organization_policy_assignment_name = organization_policy_assignment_name
         if managed_policy_assignment_metadata is not None:
             self.managed_policy_assignment_metadata = managed_policy_assignment_metadata
+        if custom_policy_assignment_metadata is not None:
+            self.custom_policy_assignment_metadata = custom_policy_assignment_metadata
 
     @property
     def excluded_accounts(self):
@@ -113,6 +120,24 @@ class OrganizationPolicyAssignmentRequest:
         :type managed_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.ManagedPolicyAssignmentMetadata`
         """
         self._managed_policy_assignment_metadata = managed_policy_assignment_metadata
+
+    @property
+    def custom_policy_assignment_metadata(self):
+        r"""Gets the custom_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+
+        :return: The custom_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+        :rtype: :class:`huaweicloudsdkconfig.v1.CustomPolicyAssignmentMetadata`
+        """
+        return self._custom_policy_assignment_metadata
+
+    @custom_policy_assignment_metadata.setter
+    def custom_policy_assignment_metadata(self, custom_policy_assignment_metadata):
+        r"""Sets the custom_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+
+        :param custom_policy_assignment_metadata: The custom_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+        :type custom_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.CustomPolicyAssignmentMetadata`
+        """
+        self._custom_policy_assignment_metadata = custom_policy_assignment_metadata
 
     def to_dict(self):
         result = {}

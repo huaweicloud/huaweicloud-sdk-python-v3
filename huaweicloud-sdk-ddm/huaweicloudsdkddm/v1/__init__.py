@@ -63,6 +63,8 @@ from huaweicloudsdkddm.v1.model.create_ddm_database_response import CreateDdmDat
 from huaweicloudsdkddm.v1.model.create_ddm_instance_req import CreateDdmInstanceReq
 from huaweicloudsdkddm.v1.model.create_ddm_instance_request import CreateDdmInstanceRequest
 from huaweicloudsdkddm.v1.model.create_ddm_instance_response import CreateDdmInstanceResponse
+from huaweicloudsdkddm.v1.model.create_ddm_user_request import CreateDdmUserRequest
+from huaweicloudsdkddm.v1.model.create_ddm_user_response import CreateDdmUserResponse
 from huaweicloudsdkddm.v1.model.create_group_request import CreateGroupRequest
 from huaweicloudsdkddm.v1.model.create_group_request_body import CreateGroupRequestBody
 from huaweicloudsdkddm.v1.model.create_group_response import CreateGroupResponse
@@ -71,6 +73,8 @@ from huaweicloudsdkddm.v1.model.create_instance_extend_param import CreateInstan
 from huaweicloudsdkddm.v1.model.create_instance_req import CreateInstanceReq
 from huaweicloudsdkddm.v1.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkddm.v1.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkddm.v1.model.create_user_related_logic_db_v3 import CreateUserRelatedLogicDbV3
+from huaweicloudsdkddm.v1.model.create_user_request_v3 import CreateUserRequestV3
 from huaweicloudsdkddm.v1.model.create_users_databases import CreateUsersDatabases
 from huaweicloudsdkddm.v1.model.create_users_detail_responses import CreateUsersDetailResponses
 from huaweicloudsdkddm.v1.model.create_users_info import CreateUsersInfo
@@ -98,6 +102,8 @@ from huaweicloudsdkddm.v1.model.delete_ddm_database_request import DeleteDdmData
 from huaweicloudsdkddm.v1.model.delete_ddm_database_response import DeleteDdmDatabaseResponse
 from huaweicloudsdkddm.v1.model.delete_ddm_instance_request import DeleteDdmInstanceRequest
 from huaweicloudsdkddm.v1.model.delete_ddm_instance_response import DeleteDdmInstanceResponse
+from huaweicloudsdkddm.v1.model.delete_ddm_user_request import DeleteDdmUserRequest
+from huaweicloudsdkddm.v1.model.delete_ddm_user_response import DeleteDdmUserResponse
 from huaweicloudsdkddm.v1.model.delete_group_request import DeleteGroupRequest
 from huaweicloudsdkddm.v1.model.delete_group_response import DeleteGroupResponse
 from huaweicloudsdkddm.v1.model.delete_instance_request import DeleteInstanceRequest
@@ -135,7 +141,9 @@ from huaweicloudsdkddm.v1.model.get_database_used_rds import GetDatabaseUsedRds
 from huaweicloudsdkddm.v1.model.get_databases import GetDatabases
 from huaweicloudsdkddm.v1.model.get_detailf_nodes_info import GetDetailfNodesInfo
 from huaweicloudsdkddm.v1.model.get_users_list_detail_responses import GetUsersListDetailResponses
+from huaweicloudsdkddm.v1.model.get_users_list_detail_responses_v3 import GetUsersListDetailResponsesV3
 from huaweicloudsdkddm.v1.model.get_users_listdatabase import GetUsersListdatabase
+from huaweicloudsdkddm.v1.model.get_users_listdatabase_v3 import GetUsersListdatabaseV3
 from huaweicloudsdkddm.v1.model.group_info import GroupInfo
 from huaweicloudsdkddm.v1.model.group_node_info import GroupNodeInfo
 from huaweicloudsdkddm.v1.model.iam_account import IamAccount
@@ -168,6 +176,8 @@ from huaweicloudsdkddm.v1.model.list_ddm_engines_request import ListDdmEnginesRe
 from huaweicloudsdkddm.v1.model.list_ddm_engines_response import ListDdmEnginesResponse
 from huaweicloudsdkddm.v1.model.list_ddm_flavors_request import ListDdmFlavorsRequest
 from huaweicloudsdkddm.v1.model.list_ddm_flavors_response import ListDdmFlavorsResponse
+from huaweicloudsdkddm.v1.model.list_ddm_users_request import ListDdmUsersRequest
+from huaweicloudsdkddm.v1.model.list_ddm_users_response import ListDdmUsersResponse
 from huaweicloudsdkddm.v1.model.list_ddms_request import ListDdmsRequest
 from huaweicloudsdkddm.v1.model.list_ddms_response import ListDdmsResponse
 from huaweicloudsdkddm.v1.model.list_engines_request import ListEnginesRequest
@@ -215,6 +225,9 @@ from huaweicloudsdkddm.v1.model.modify_instance_security_group_req import Modify
 from huaweicloudsdkddm.v1.model.modify_read_and_write_strategy_req import ModifyReadAndWriteStrategyReq
 from huaweicloudsdkddm.v1.model.modify_sql_black_list_request import ModifySqlBlackListRequest
 from huaweicloudsdkddm.v1.model.modify_sql_black_list_response import ModifySqlBlackListResponse
+from huaweicloudsdkddm.v1.model.move_tmlog_files_request import MoveTmlogFilesRequest
+from huaweicloudsdkddm.v1.model.move_tmlog_files_response import MoveTmlogFilesResponse
+from huaweicloudsdkddm.v1.model.move_tmlogs_request import MoveTmlogsRequest
 from huaweicloudsdkddm.v1.model.node_info import NodeInfo
 from huaweicloudsdkddm.v1.model.node_list import NodeList
 from huaweicloudsdkddm.v1.model.para_group_update import ParaGroupUpdate
@@ -223,6 +236,7 @@ from huaweicloudsdkddm.v1.model.physical_process_info import PhysicalProcessInfo
 from huaweicloudsdkddm.v1.model.pre_check_result import PreCheckResult
 from huaweicloudsdkddm.v1.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkddm.v1.model.query_available_rds_list import QueryAvailableRdsList
+from huaweicloudsdkddm.v1.model.read_only_switch_req import ReadOnlySwitchReq
 from huaweicloudsdkddm.v1.model.read_write_ratio_list import ReadWriteRatioList
 from huaweicloudsdkddm.v1.model.rebuild_config_request import RebuildConfigRequest
 from huaweicloudsdkddm.v1.model.rebuild_config_response import RebuildConfigResponse
@@ -232,11 +246,14 @@ from huaweicloudsdkddm.v1.model.related_dn import RelatedDn
 from huaweicloudsdkddm.v1.model.related_dn_vo import RelatedDnVO
 from huaweicloudsdkddm.v1.model.reset_administrator_request import ResetAdministratorRequest
 from huaweicloudsdkddm.v1.model.reset_administrator_response import ResetAdministratorResponse
+from huaweicloudsdkddm.v1.model.reset_ddm_user_password_request import ResetDdmUserPasswordRequest
+from huaweicloudsdkddm.v1.model.reset_ddm_user_password_response import ResetDdmUserPasswordResponse
 from huaweicloudsdkddm.v1.model.reset_parameter_group_request import ResetParameterGroupRequest
 from huaweicloudsdkddm.v1.model.reset_parameter_group_response import ResetParameterGroupResponse
 from huaweicloudsdkddm.v1.model.reset_user_password_req import ResetUserPasswordReq
 from huaweicloudsdkddm.v1.model.reset_user_password_request import ResetUserPasswordRequest
 from huaweicloudsdkddm.v1.model.reset_user_password_response import ResetUserPasswordResponse
+from huaweicloudsdkddm.v1.model.reset_user_password_v3_request_body import ResetUserPasswordV3RequestBody
 from huaweicloudsdkddm.v1.model.resize_flavor_req import ResizeFlavorReq
 from huaweicloudsdkddm.v1.model.resize_flavor_request import ResizeFlavorRequest
 from huaweicloudsdkddm.v1.model.resize_flavor_response import ResizeFlavorResponse
@@ -262,6 +279,8 @@ from huaweicloudsdkddm.v1.model.roll_back_database_version_request import RollBa
 from huaweicloudsdkddm.v1.model.roll_back_database_version_response import RollBackDatabaseVersionResponse
 from huaweicloudsdkddm.v1.model.rollback_migration_request import RollbackMigrationRequest
 from huaweicloudsdkddm.v1.model.rollback_migration_response import RollbackMigrationResponse
+from huaweicloudsdkddm.v1.model.set_read_only_status_request import SetReadOnlyStatusRequest
+from huaweicloudsdkddm.v1.model.set_read_only_status_response import SetReadOnlyStatusResponse
 from huaweicloudsdkddm.v1.model.shards import Shards
 from huaweicloudsdkddm.v1.model.show_avalible_ddms_request import ShowAvalibleDdmsRequest
 from huaweicloudsdkddm.v1.model.show_avalible_ddms_response import ShowAvalibleDdmsResponse
@@ -306,6 +325,8 @@ from huaweicloudsdkddm.v1.model.show_related_dns_request import ShowRelatedDnsRe
 from huaweicloudsdkddm.v1.model.show_related_dns_response import ShowRelatedDnsResponse
 from huaweicloudsdkddm.v1.model.show_risk_info_request import ShowRiskInfoRequest
 from huaweicloudsdkddm.v1.model.show_risk_info_response import ShowRiskInfoResponse
+from huaweicloudsdkddm.v1.model.show_tmlog_infos_request import ShowTmlogInfosRequest
+from huaweicloudsdkddm.v1.model.show_tmlog_infos_response import ShowTmlogInfosResponse
 from huaweicloudsdkddm.v1.model.shrink_instance_nodes_request import ShrinkInstanceNodesRequest
 from huaweicloudsdkddm.v1.model.shrink_instance_nodes_response import ShrinkInstanceNodesResponse
 from huaweicloudsdkddm.v1.model.slow_log_list import SlowLogList
@@ -323,10 +344,13 @@ from huaweicloudsdkddm.v1.model.sync_dn_information_response import SyncDnInform
 from huaweicloudsdkddm.v1.model.tags import Tags
 from huaweicloudsdkddm.v1.model.target_dn4_restore import TargetDn4Restore
 from huaweicloudsdkddm.v1.model.task_logs_vo import TaskLogsVO
+from huaweicloudsdkddm.v1.model.tmlog_info import TmlogInfo
 from huaweicloudsdkddm.v1.model.unbind_eip_request import UnbindEipRequest
 from huaweicloudsdkddm.v1.model.unbind_eip_response import UnbindEipResponse
 from huaweicloudsdkddm.v1.model.update_database_info_request import UpdateDatabaseInfoRequest
 from huaweicloudsdkddm.v1.model.update_database_info_response import UpdateDatabaseInfoResponse
+from huaweicloudsdkddm.v1.model.update_ddm_user_request import UpdateDdmUserRequest
+from huaweicloudsdkddm.v1.model.update_ddm_user_response import UpdateDdmUserResponse
 from huaweicloudsdkddm.v1.model.update_instance_name_request import UpdateInstanceNameRequest
 from huaweicloudsdkddm.v1.model.update_instance_name_response import UpdateInstanceNameResponse
 from huaweicloudsdkddm.v1.model.update_instance_param_request import UpdateInstanceParamRequest
@@ -341,9 +365,11 @@ from huaweicloudsdkddm.v1.model.update_port_request import UpdatePortRequest
 from huaweicloudsdkddm.v1.model.update_read_and_write_strategy_request import UpdateReadAndWriteStrategyRequest
 from huaweicloudsdkddm.v1.model.update_read_and_write_strategy_response import UpdateReadAndWriteStrategyResponse
 from huaweicloudsdkddm.v1.model.update_user_detail_req import UpdateUserDetailReq
+from huaweicloudsdkddm.v1.model.update_user_related_logic_db_v3 import UpdateUserRelatedLogicDbV3
 from huaweicloudsdkddm.v1.model.update_user_req import UpdateUserReq
 from huaweicloudsdkddm.v1.model.update_user_request import UpdateUserRequest
 from huaweicloudsdkddm.v1.model.update_user_response import UpdateUserResponse
+from huaweicloudsdkddm.v1.model.update_user_v3_request_body import UpdateUserV3RequestBody
 from huaweicloudsdkddm.v1.model.update_users_databases import UpdateUsersDatabases
 from huaweicloudsdkddm.v1.model.upload_schema_metadata_request import UploadSchemaMetadataRequest
 from huaweicloudsdkddm.v1.model.upload_schema_metadata_response import UploadSchemaMetadataResponse

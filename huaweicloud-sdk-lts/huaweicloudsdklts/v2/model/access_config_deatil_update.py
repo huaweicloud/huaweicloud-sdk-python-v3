@@ -21,6 +21,7 @@ class AccessConfigDeatilUpdate:
         'windows_log_info': 'AccessConfigWindowsLogInfoUpdate',
         'stdout': 'bool',
         'stderr': 'bool',
+        'combine_stdout': 'bool',
         'path_type': 'str',
         'namespace_regex': 'str',
         'pod_name_regex': 'str',
@@ -51,6 +52,7 @@ class AccessConfigDeatilUpdate:
         'windows_log_info': 'windows_log_info',
         'stdout': 'stdout',
         'stderr': 'stderr',
+        'combine_stdout': 'combine_stdout',
         'path_type': 'pathType',
         'namespace_regex': 'namespaceRegex',
         'pod_name_regex': 'podNameRegex',
@@ -74,7 +76,7 @@ class AccessConfigDeatilUpdate:
         'exclude_envs_logical': 'excludeEnvsLogical'
     }
 
-    def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None, stdout=None, stderr=None, path_type=None, namespace_regex=None, pod_name_regex=None, container_name_regex=None, include_labels=None, exclude_labels=None, include_envs=None, exclude_envs=None, log_labels=None, log_envs=None, include_k8s_labels=None, exclude_k8s_labels=None, log_k8s=None, system_fields=None, custom_key_value=None, include_labels_logical=None, exclude_labels_logical=None, include_k8s_labels_logical=None, exclude_k8s_labels_logical=None, include_envs_logical=None, exclude_envs_logical=None):
+    def __init__(self, paths=None, black_paths=None, format=None, windows_log_info=None, stdout=None, stderr=None, combine_stdout=None, path_type=None, namespace_regex=None, pod_name_regex=None, container_name_regex=None, include_labels=None, exclude_labels=None, include_envs=None, exclude_envs=None, log_labels=None, log_envs=None, include_k8s_labels=None, exclude_k8s_labels=None, log_k8s=None, system_fields=None, custom_key_value=None, include_labels_logical=None, exclude_labels_logical=None, include_k8s_labels_logical=None, exclude_k8s_labels_logical=None, include_envs_logical=None, exclude_envs_logical=None):
         r"""AccessConfigDeatilUpdate
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class AccessConfigDeatilUpdate:
         :type stdout: bool
         :param stderr: 标准输出开关标准错误开关，仅CCE接入类型时使用
         :type stderr: bool
+        :param combine_stdout: **参数解释：** 云容器引擎CCE应用日志接入时，是否将标准输出和标准错误采集到同一个文件。 **取值范围：** - true：将标准输出和标准错误采集到同一个文件（stdout.log）。 - false：将标准输出和标准错误采集到不同的文件（stdout.log和stderr.log）。
+        :type combine_stdout: bool
         :param path_type: CCE接入类型，仅CCE接入类型时使用
         :type path_type: str
         :param namespace_regex: K8s Namespace正则匹配，仅CCE接入类型时使用
@@ -143,6 +147,7 @@ class AccessConfigDeatilUpdate:
         self._windows_log_info = None
         self._stdout = None
         self._stderr = None
+        self._combine_stdout = None
         self._path_type = None
         self._namespace_regex = None
         self._pod_name_regex = None
@@ -178,6 +183,8 @@ class AccessConfigDeatilUpdate:
             self.stdout = stdout
         if stderr is not None:
             self.stderr = stderr
+        if combine_stdout is not None:
+            self.combine_stdout = combine_stdout
         if path_type is not None:
             self.path_type = path_type
         if namespace_regex is not None:
@@ -344,6 +351,28 @@ class AccessConfigDeatilUpdate:
         :type stderr: bool
         """
         self._stderr = stderr
+
+    @property
+    def combine_stdout(self):
+        r"""Gets the combine_stdout of this AccessConfigDeatilUpdate.
+
+        **参数解释：** 云容器引擎CCE应用日志接入时，是否将标准输出和标准错误采集到同一个文件。 **取值范围：** - true：将标准输出和标准错误采集到同一个文件（stdout.log）。 - false：将标准输出和标准错误采集到不同的文件（stdout.log和stderr.log）。
+
+        :return: The combine_stdout of this AccessConfigDeatilUpdate.
+        :rtype: bool
+        """
+        return self._combine_stdout
+
+    @combine_stdout.setter
+    def combine_stdout(self, combine_stdout):
+        r"""Sets the combine_stdout of this AccessConfigDeatilUpdate.
+
+        **参数解释：** 云容器引擎CCE应用日志接入时，是否将标准输出和标准错误采集到同一个文件。 **取值范围：** - true：将标准输出和标准错误采集到同一个文件（stdout.log）。 - false：将标准输出和标准错误采集到不同的文件（stdout.log和stderr.log）。
+
+        :param combine_stdout: The combine_stdout of this AccessConfigDeatilUpdate.
+        :type combine_stdout: bool
+        """
+        self._combine_stdout = combine_stdout
 
     @property
     def path_type(self):

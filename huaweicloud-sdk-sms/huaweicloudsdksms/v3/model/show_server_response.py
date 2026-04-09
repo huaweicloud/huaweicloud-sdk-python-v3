@@ -44,7 +44,8 @@ class ShowServerResponse(SdkResponse):
         'last_visit_time': 'int',
         'stage_action_time': 'int',
         'agent_version': 'str',
-        'has_tc': 'bool'
+        'has_tc': 'bool',
+        'start_type': 'str'
     }
 
     attribute_map = {
@@ -76,10 +77,11 @@ class ShowServerResponse(SdkResponse):
         'last_visit_time': 'last_visit_time',
         'stage_action_time': 'stage_action_time',
         'agent_version': 'agent_version',
-        'has_tc': 'has_tc'
+        'has_tc': 'has_tc',
+        'start_type': 'start_type'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None, has_tc=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, firmware=None, init_target_server=None, cpu_quantity=None, memory=None, current_task=None, disks=None, volume_groups=None, btrfs_list=None, networks=None, checks=None, migration_cycle=None, state_action_time=None, replicatesize=None, totalsize=None, last_visit_time=None, stage_action_time=None, agent_version=None, has_tc=None, start_type=None):
         r"""ShowServerResponse
 
         The model defined in huaweicloud sdk
@@ -142,6 +144,8 @@ class ShowServerResponse(SdkResponse):
         :type agent_version: str
         :param has_tc: 是否安装tc组件，Linux系统此参数为必选
         :type has_tc: bool
+        :param start_type: 启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+        :type start_type: str
         """
         
         super().__init__()
@@ -175,6 +179,7 @@ class ShowServerResponse(SdkResponse):
         self._stage_action_time = None
         self._agent_version = None
         self._has_tc = None
+        self._start_type = None
         self.discriminator = None
 
         if id is not None:
@@ -235,6 +240,8 @@ class ShowServerResponse(SdkResponse):
             self.agent_version = agent_version
         if has_tc is not None:
             self.has_tc = has_tc
+        if start_type is not None:
+            self.start_type = start_type
 
     @property
     def id(self):
@@ -865,6 +872,28 @@ class ShowServerResponse(SdkResponse):
         :type has_tc: bool
         """
         self._has_tc = has_tc
+
+    @property
+    def start_type(self):
+        r"""Gets the start_type of this ShowServerResponse.
+
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+
+        :return: The start_type of this ShowServerResponse.
+        :rtype: str
+        """
+        return self._start_type
+
+    @start_type.setter
+    def start_type(self, start_type):
+        r"""Sets the start_type of this ShowServerResponse.
+
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+
+        :param start_type: The start_type of this ShowServerResponse.
+        :type start_type: str
+        """
+        self._start_type = start_type
 
     def to_dict(self):
         import warnings

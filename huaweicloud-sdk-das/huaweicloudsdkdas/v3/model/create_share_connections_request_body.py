@@ -17,16 +17,18 @@ class CreateShareConnectionsRequestBody:
     openapi_types = {
         'shared_conn_id': 'str',
         'expired_time': 'str',
+        'timezone': 'str',
         'users': 'list[ShareConnUserInfo]'
     }
 
     attribute_map = {
         'shared_conn_id': 'shared_conn_id',
         'expired_time': 'expired_time',
+        'timezone': 'timezone',
         'users': 'users'
     }
 
-    def __init__(self, shared_conn_id=None, expired_time=None, users=None):
+    def __init__(self, shared_conn_id=None, expired_time=None, timezone=None, users=None):
         r"""CreateShareConnectionsRequestBody
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class CreateShareConnectionsRequestBody:
         :type shared_conn_id: str
         :param expired_time: 过期时间
         :type expired_time: str
+        :param timezone: 时区
+        :type timezone: str
         :param users: 用户
         :type users: list[:class:`huaweicloudsdkdas.v3.ShareConnUserInfo`]
         """
@@ -43,12 +47,15 @@ class CreateShareConnectionsRequestBody:
 
         self._shared_conn_id = None
         self._expired_time = None
+        self._timezone = None
         self._users = None
         self.discriminator = None
 
         self.shared_conn_id = shared_conn_id
         if expired_time is not None:
             self.expired_time = expired_time
+        if timezone is not None:
+            self.timezone = timezone
         self.users = users
 
     @property
@@ -94,6 +101,28 @@ class CreateShareConnectionsRequestBody:
         :type expired_time: str
         """
         self._expired_time = expired_time
+
+    @property
+    def timezone(self):
+        r"""Gets the timezone of this CreateShareConnectionsRequestBody.
+
+        时区
+
+        :return: The timezone of this CreateShareConnectionsRequestBody.
+        :rtype: str
+        """
+        return self._timezone
+
+    @timezone.setter
+    def timezone(self, timezone):
+        r"""Sets the timezone of this CreateShareConnectionsRequestBody.
+
+        时区
+
+        :param timezone: The timezone of this CreateShareConnectionsRequestBody.
+        :type timezone: str
+        """
+        self._timezone = timezone
 
     @property
     def users(self):

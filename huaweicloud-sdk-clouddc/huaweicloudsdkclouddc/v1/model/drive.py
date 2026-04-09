@@ -23,7 +23,7 @@ class Drive:
         'revision': 'str',
         'media_type': 'str',
         'protocol': 'str',
-        'sas_address': 'str',
+        'sas_address': 'list[str]',
         'capacity_bytes': 'int',
         'capable_speed_gbs': 'int',
         'negotiated_speed_gbs': 'int',
@@ -79,8 +79,8 @@ class Drive:
         :type media_type: str
         :param protocol: 驱动器遵从的协议
         :type protocol: str
-        :param sas_address: SAS地址
-        :type sas_address: str
+        :param sas_address: 驱动器SAS地址
+        :type sas_address: list[str]
         :param capacity_bytes: 容量（单位：byte）
         :type capacity_bytes: int
         :param capable_speed_gbs: 驱动器接口的最大速率（单位：Gbps）
@@ -345,10 +345,10 @@ class Drive:
     def sas_address(self):
         r"""Gets the sas_address of this Drive.
 
-        SAS地址
+        驱动器SAS地址
 
         :return: The sas_address of this Drive.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._sas_address
 
@@ -356,10 +356,10 @@ class Drive:
     def sas_address(self, sas_address):
         r"""Sets the sas_address of this Drive.
 
-        SAS地址
+        驱动器SAS地址
 
         :param sas_address: The sas_address of this Drive.
-        :type sas_address: str
+        :type sas_address: list[str]
         """
         self._sas_address = sas_address
 

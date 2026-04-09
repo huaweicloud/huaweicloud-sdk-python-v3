@@ -74,6 +74,10 @@ _ALLOWED_RESOURCE_PARAMTER_NAMES = (
     'metadata',
     'encryption',
     'dispolicy',
+    'object-lock',
+    'bucketStatus',
+    'policystatus',
+    'publicaccessblock',
 
     # File System API
     'append',

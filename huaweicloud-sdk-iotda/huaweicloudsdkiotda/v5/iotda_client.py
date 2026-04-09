@@ -1432,6 +1432,75 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def confirm_batch_task(self, request):
+        r"""确认执行批量任务
+
+        应用服务器可调用此接口确执行认批量任务，目前只支持task_type为firmwareUpgrade，softwareUpgrade和moduleUpgrade。如果task_id对应任务已经完成（成功、失败、部分成功，已经停止）或正在停止中，则不可以调用该接口。如果请求Body为{}，则调用该接口后会确认执行所有处于等待中状态子任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ConfirmBatchTask
+        :type request: :class:`huaweicloudsdkiotda.v5.ConfirmBatchTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ConfirmBatchTaskResponse`
+        """
+        http_info = self._confirm_batch_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def confirm_batch_task_invoker(self, request):
+        http_info = self._confirm_batch_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_batch_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/batchtasks/{task_id}/confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmBatchTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_batch_task(self, request):
         r"""创建批量任务
 

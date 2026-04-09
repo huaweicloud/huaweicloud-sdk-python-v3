@@ -19,6 +19,7 @@ class CreateBatchTask:
         'task_name': 'str',
         'task_type': 'str',
         'task_mode': 'str',
+        'need_confirm': 'bool',
         'task_ext_info': 'object',
         'targets': 'list[str]',
         'targets_filter': 'dict(str, object)',
@@ -32,6 +33,7 @@ class CreateBatchTask:
         'task_name': 'task_name',
         'task_type': 'task_type',
         'task_mode': 'task_mode',
+        'need_confirm': 'need_confirm',
         'task_ext_info': 'task_ext_info',
         'targets': 'targets',
         'targets_filter': 'targets_filter',
@@ -40,7 +42,7 @@ class CreateBatchTask:
         'document_source': 'document_source'
     }
 
-    def __init__(self, app_id=None, task_name=None, task_type=None, task_mode=None, task_ext_info=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):
+    def __init__(self, app_id=None, task_name=None, task_type=None, task_mode=None, need_confirm=None, task_ext_info=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):
         r"""CreateBatchTask
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CreateBatchTask:
         :type task_type: str
         :param task_mode: **参数说明**：批量任务的模式，当前只支持网关模式，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，若升级的设备为某个网关的子设备，则平台下发获取版本信息通知和平台下发升级通知将携带task_id（软固件升级批量任务的任务ID）和sub_device_count（批量任务中网关设备包含的升级子设备数量）字段。 **取值范围**：GATEWAY: 网关模式。
         :type task_mode: str
+        :param need_confirm: **参数说明**：当需要自主控制该任务时设置此参数，当task_type为firmwareUpgrade，softwareUpgrade，moduleUpgrade支持该参数。软固件升级的场景下，当need_confirm为true时，任务分发后所有子任务一直为waitting状态，需要调确认接口后才变为processing状态，任务开始分发，不设置或者设置为false时子任务自动分发。 **取值范围**：true: 需要确认才分发子任务，false: 不需要确认自动分发子任务。
+        :type need_confirm: bool
         :param task_ext_info: **参数说明**：批量任务额外扩展信息，当task_type为firmwareUpgrade，softwareUpgrade支持该参数。软固件升级的场景下，平台下发获取版本信息通知和平台下发升级通知将携带该字段。 **取值范围**：最长不超过512个字符。
         :type task_ext_info: object
         :param targets: **参数说明**：执行批量任务的目标，此处填写device_id列表，且最多支持3万个device_id。当task_type为firmwareUpgrade，softwareUpgrade，deleteDevices，freezeDevices，unfreezeDevices，createCommands，createAsyncCommands，createMessages，updateDeviceShadows，支持该参数。同时使用targets、targets_filter、document_source参数时，只有一个参数会生效，且平台优先使用targets，其次是targets_filter，最后是document_source。 **取值范围**：device_id列表。device_id支持长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
@@ -73,6 +77,7 @@ class CreateBatchTask:
         self._task_name = None
         self._task_type = None
         self._task_mode = None
+        self._need_confirm = None
         self._task_ext_info = None
         self._targets = None
         self._targets_filter = None
@@ -87,6 +92,8 @@ class CreateBatchTask:
         self.task_type = task_type
         if task_mode is not None:
             self.task_mode = task_mode
+        if need_confirm is not None:
+            self.need_confirm = need_confirm
         if task_ext_info is not None:
             self.task_ext_info = task_ext_info
         if targets is not None:
@@ -187,6 +194,28 @@ class CreateBatchTask:
         :type task_mode: str
         """
         self._task_mode = task_mode
+
+    @property
+    def need_confirm(self):
+        r"""Gets the need_confirm of this CreateBatchTask.
+
+        **参数说明**：当需要自主控制该任务时设置此参数，当task_type为firmwareUpgrade，softwareUpgrade，moduleUpgrade支持该参数。软固件升级的场景下，当need_confirm为true时，任务分发后所有子任务一直为waitting状态，需要调确认接口后才变为processing状态，任务开始分发，不设置或者设置为false时子任务自动分发。 **取值范围**：true: 需要确认才分发子任务，false: 不需要确认自动分发子任务。
+
+        :return: The need_confirm of this CreateBatchTask.
+        :rtype: bool
+        """
+        return self._need_confirm
+
+    @need_confirm.setter
+    def need_confirm(self, need_confirm):
+        r"""Sets the need_confirm of this CreateBatchTask.
+
+        **参数说明**：当需要自主控制该任务时设置此参数，当task_type为firmwareUpgrade，softwareUpgrade，moduleUpgrade支持该参数。软固件升级的场景下，当need_confirm为true时，任务分发后所有子任务一直为waitting状态，需要调确认接口后才变为processing状态，任务开始分发，不设置或者设置为false时子任务自动分发。 **取值范围**：true: 需要确认才分发子任务，false: 不需要确认自动分发子任务。
+
+        :param need_confirm: The need_confirm of this CreateBatchTask.
+        :type need_confirm: bool
+        """
+        self._need_confirm = need_confirm
 
     @property
     def task_ext_info(self):

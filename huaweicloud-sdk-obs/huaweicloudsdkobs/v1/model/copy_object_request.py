@@ -32,6 +32,11 @@ class CopyObjectRequest:
         'x_obs_copy_source_if_unmodified_since': 'str',
         'x_obs_copy_source_if_modified_since': 'str',
         'x_obs_storage_class': 'str',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'str',
+        'x_obs_tagging_directive': 'str',
+        'x_obs_object_lock_mode': 'str',
+        'x_obs_object_lock_retain_until_date': 'datetime',
+        'x_obs_tagging': 'str',
         'x_obs_persistent_headers': 'str',
         'x_obs_website_redirect_location': 'str',
         'x_obs_server_side_encryption': 'str',
@@ -61,6 +66,11 @@ class CopyObjectRequest:
         'x_obs_copy_source_if_unmodified_since': 'x-obs-copy-source-if-unmodified-since',
         'x_obs_copy_source_if_modified_since': 'x-obs-copy-source-if-modified-since',
         'x_obs_storage_class': 'x-obs-storage-class',
+        'x_obs_server_side_encryption_bucket_key_enabled': 'x-obs-server-side-encryption-bucket-key-enabled',
+        'x_obs_tagging_directive': 'x-obs-tagging-directive',
+        'x_obs_object_lock_mode': 'x-obs-object-lock-mode',
+        'x_obs_object_lock_retain_until_date': 'x-obs-object-lock-retain-until-date',
+        'x_obs_tagging': 'x-obs-tagging',
         'x_obs_persistent_headers': 'x-obs-persistent-headers',
         'x_obs_website_redirect_location': 'x-obs-website-redirect-location',
         'x_obs_server_side_encryption': 'x-obs-server-side-encryption',
@@ -74,7 +84,7 @@ class CopyObjectRequest:
         'success_action_redirect': 'success_action_redirect'
     }
 
-    def __init__(self, date=None, bucket_name=None, object_key=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_copy_source=None, x_obs_metadata_directive=None, x_obs_copy_source_if_match=None, x_obs_copy_source_if_none_match=None, x_obs_copy_source_if_unmodified_since=None, x_obs_copy_source_if_modified_since=None, x_obs_storage_class=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_copy_source_server_side_encryption_customer_algorithm=None, x_obs_copy_source_server_side_encryption_customer_key=None, x_obs_copy_source_server_side_encryption_customer_key_md5=None, success_action_redirect=None):
+    def __init__(self, date=None, bucket_name=None, object_key=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_copy_source=None, x_obs_metadata_directive=None, x_obs_copy_source_if_match=None, x_obs_copy_source_if_none_match=None, x_obs_copy_source_if_unmodified_since=None, x_obs_copy_source_if_modified_since=None, x_obs_storage_class=None, x_obs_server_side_encryption_bucket_key_enabled=None, x_obs_tagging_directive=None, x_obs_object_lock_mode=None, x_obs_object_lock_retain_until_date=None, x_obs_tagging=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_copy_source_server_side_encryption_customer_algorithm=None, x_obs_copy_source_server_side_encryption_customer_key=None, x_obs_copy_source_server_side_encryption_customer_key_md5=None, success_action_redirect=None):
         r"""CopyObjectRequest
 
         The model defined in huaweicloud sdk
@@ -107,8 +117,18 @@ class CopyObjectRequest:
         :type x_obs_copy_source_if_unmodified_since: str
         :param x_obs_copy_source_if_modified_since: Copies the source object only if it has been modified since the time specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned. This header can be used with **x-obs-copy-source-if-none-match**, but cannot be used with other conditional copy headers.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**  Example: x-obs-copy-source-if-modified-since: time-sta
         :type x_obs_copy_source_if_modified_since: str
-        :param x_obs_storage_class: When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
+        :param x_obs_storage_class: When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD),Deep Archive storage class(DEEP_ARCHIVE) so the value can be **STANDARD**, **WARM**, or **COLD**, **DEEP_ARCHIVE**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
         :type x_obs_storage_class: str
+        :param x_obs_server_side_encryption_bucket_key_enabled: Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        :param x_obs_tagging_directive: Used to specify how object tags are copied. If this header is not contained, tags are not copied from source objects to destination ones. COPY: Tags of source objects are copied to the target objects. REPLACE: The tags specified in the request are added to the target objects. Example: x-obs-tagging-directive:COPY
+        :type x_obs_tagging_directive: str
+        :param x_obs_object_lock_mode: WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE
+        :type x_obs_object_lock_mode: str
+        :param x_obs_object_lock_retain_until_date: When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z
+        :type x_obs_object_lock_retain_until_date: datetime
+        :param x_obs_tagging: Object&#39;s tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA&#x3D;A&amp;TagB&amp;TagC
+        :type x_obs_tagging: str
         :param x_obs_persistent_headers: When copying an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the target object or query the object metadata, the custom headers will be returned in the response message.  Type: string  Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**  Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.  Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  When you download the target object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.  Restrictions:  + Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.  + Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.  + The total length of this header and the custom metadata cannot exceed 8 KB.  + If the same keys are transferred, values are separated with commas (,) and then returned in one key.  + If the source object already has custom response headers, such response headers will not be copied to the target object.
         :type x_obs_persistent_headers: str
         :param x_obs_website_redirect_location: If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.  Type: string  Default value: none  Restriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
@@ -150,6 +170,11 @@ class CopyObjectRequest:
         self._x_obs_copy_source_if_unmodified_since = None
         self._x_obs_copy_source_if_modified_since = None
         self._x_obs_storage_class = None
+        self._x_obs_server_side_encryption_bucket_key_enabled = None
+        self._x_obs_tagging_directive = None
+        self._x_obs_object_lock_mode = None
+        self._x_obs_object_lock_retain_until_date = None
+        self._x_obs_tagging = None
         self._x_obs_persistent_headers = None
         self._x_obs_website_redirect_location = None
         self._x_obs_server_side_encryption = None
@@ -190,6 +215,16 @@ class CopyObjectRequest:
             self.x_obs_copy_source_if_modified_since = x_obs_copy_source_if_modified_since
         if x_obs_storage_class is not None:
             self.x_obs_storage_class = x_obs_storage_class
+        if x_obs_server_side_encryption_bucket_key_enabled is not None:
+            self.x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+        if x_obs_tagging_directive is not None:
+            self.x_obs_tagging_directive = x_obs_tagging_directive
+        if x_obs_object_lock_mode is not None:
+            self.x_obs_object_lock_mode = x_obs_object_lock_mode
+        if x_obs_object_lock_retain_until_date is not None:
+            self.x_obs_object_lock_retain_until_date = x_obs_object_lock_retain_until_date
+        if x_obs_tagging is not None:
+            self.x_obs_tagging = x_obs_tagging
         if x_obs_persistent_headers is not None:
             self.x_obs_persistent_headers = x_obs_persistent_headers
         if x_obs_website_redirect_location is not None:
@@ -525,7 +560,7 @@ class CopyObjectRequest:
     def x_obs_storage_class(self):
         r"""Gets the x_obs_storage_class of this CopyObjectRequest.
 
-        When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
+        When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD),Deep Archive storage class(DEEP_ARCHIVE) so the value can be **STANDARD**, **WARM**, or **COLD**, **DEEP_ARCHIVE**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
 
         :return: The x_obs_storage_class of this CopyObjectRequest.
         :rtype: str
@@ -536,12 +571,122 @@ class CopyObjectRequest:
     def x_obs_storage_class(self, x_obs_storage_class):
         r"""Sets the x_obs_storage_class of this CopyObjectRequest.
 
-        When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
+        When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD),Deep Archive storage class(DEEP_ARCHIVE) so the value can be **STANDARD**, **WARM**, or **COLD**, **DEEP_ARCHIVE**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
 
         :param x_obs_storage_class: The x_obs_storage_class of this CopyObjectRequest.
         :type x_obs_storage_class: str
         """
         self._x_obs_storage_class = x_obs_storage_class
+
+    @property
+    def x_obs_server_side_encryption_bucket_key_enabled(self):
+        r"""Gets the x_obs_server_side_encryption_bucket_key_enabled of this CopyObjectRequest.
+
+        Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+
+        :return: The x_obs_server_side_encryption_bucket_key_enabled of this CopyObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_server_side_encryption_bucket_key_enabled
+
+    @x_obs_server_side_encryption_bucket_key_enabled.setter
+    def x_obs_server_side_encryption_bucket_key_enabled(self, x_obs_server_side_encryption_bucket_key_enabled):
+        r"""Sets the x_obs_server_side_encryption_bucket_key_enabled of this CopyObjectRequest.
+
+        Whether to enable the SSE-KMS bucket key feature. Constraints: If you set this header to true, you must also specify x-obs-server-side-encryption-kms-key-id to specify the key ID.
+
+        :param x_obs_server_side_encryption_bucket_key_enabled: The x_obs_server_side_encryption_bucket_key_enabled of this CopyObjectRequest.
+        :type x_obs_server_side_encryption_bucket_key_enabled: str
+        """
+        self._x_obs_server_side_encryption_bucket_key_enabled = x_obs_server_side_encryption_bucket_key_enabled
+
+    @property
+    def x_obs_tagging_directive(self):
+        r"""Gets the x_obs_tagging_directive of this CopyObjectRequest.
+
+        Used to specify how object tags are copied. If this header is not contained, tags are not copied from source objects to destination ones. COPY: Tags of source objects are copied to the target objects. REPLACE: The tags specified in the request are added to the target objects. Example: x-obs-tagging-directive:COPY
+
+        :return: The x_obs_tagging_directive of this CopyObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_tagging_directive
+
+    @x_obs_tagging_directive.setter
+    def x_obs_tagging_directive(self, x_obs_tagging_directive):
+        r"""Sets the x_obs_tagging_directive of this CopyObjectRequest.
+
+        Used to specify how object tags are copied. If this header is not contained, tags are not copied from source objects to destination ones. COPY: Tags of source objects are copied to the target objects. REPLACE: The tags specified in the request are added to the target objects. Example: x-obs-tagging-directive:COPY
+
+        :param x_obs_tagging_directive: The x_obs_tagging_directive of this CopyObjectRequest.
+        :type x_obs_tagging_directive: str
+        """
+        self._x_obs_tagging_directive = x_obs_tagging_directive
+
+    @property
+    def x_obs_object_lock_mode(self):
+        r"""Gets the x_obs_object_lock_mode of this CopyObjectRequest.
+
+        WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE
+
+        :return: The x_obs_object_lock_mode of this CopyObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_object_lock_mode
+
+    @x_obs_object_lock_mode.setter
+    def x_obs_object_lock_mode(self, x_obs_object_lock_mode):
+        r"""Sets the x_obs_object_lock_mode of this CopyObjectRequest.
+
+        WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE
+
+        :param x_obs_object_lock_mode: The x_obs_object_lock_mode of this CopyObjectRequest.
+        :type x_obs_object_lock_mode: str
+        """
+        self._x_obs_object_lock_mode = x_obs_object_lock_mode
+
+    @property
+    def x_obs_object_lock_retain_until_date(self):
+        r"""Gets the x_obs_object_lock_retain_until_date of this CopyObjectRequest.
+
+        When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z
+
+        :return: The x_obs_object_lock_retain_until_date of this CopyObjectRequest.
+        :rtype: datetime
+        """
+        return self._x_obs_object_lock_retain_until_date
+
+    @x_obs_object_lock_retain_until_date.setter
+    def x_obs_object_lock_retain_until_date(self, x_obs_object_lock_retain_until_date):
+        r"""Sets the x_obs_object_lock_retain_until_date of this CopyObjectRequest.
+
+        When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z
+
+        :param x_obs_object_lock_retain_until_date: The x_obs_object_lock_retain_until_date of this CopyObjectRequest.
+        :type x_obs_object_lock_retain_until_date: datetime
+        """
+        self._x_obs_object_lock_retain_until_date = x_obs_object_lock_retain_until_date
+
+    @property
+    def x_obs_tagging(self):
+        r"""Gets the x_obs_tagging of this CopyObjectRequest.
+
+        Object's tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA=A&TagB&TagC
+
+        :return: The x_obs_tagging of this CopyObjectRequest.
+        :rtype: str
+        """
+        return self._x_obs_tagging
+
+    @x_obs_tagging.setter
+    def x_obs_tagging(self, x_obs_tagging):
+        r"""Sets the x_obs_tagging of this CopyObjectRequest.
+
+        Object's tag information in key-value pairs. Multiple tags can be added at the same time. Example: x-obs-tagging:TagA=A&TagB&TagC
+
+        :param x_obs_tagging: The x_obs_tagging of this CopyObjectRequest.
+        :type x_obs_tagging: str
+        """
+        self._x_obs_tagging = x_obs_tagging
 
     @property
     def x_obs_persistent_headers(self):

@@ -1367,6 +1367,73 @@ class DdmClient(Client):
 
         return http_info
 
+    def create_ddm_user(self, request):
+        r"""创建账号
+
+        账号用于连接和管理逻辑库。一个DDM账号可以关联多个逻辑库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDdmUser
+        :type request: :class:`huaweicloudsdkddm.v1.CreateDdmUserRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateDdmUserResponse`
+        """
+        http_info = self._create_ddm_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ddm_user_invoker(self, request):
+        http_info = self._create_ddm_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ddm_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDdmUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_group(self, request):
         r"""创建组
 
@@ -1811,6 +1878,73 @@ class DdmClient(Client):
         query_params = []
         if 'delete_dn_data' in local_var_params:
             query_params.append(('delete_dn_data', local_var_params['delete_dn_data']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ddm_user(self, request):
+        r"""删除账号
+
+        删除账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDdmUser
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteDdmUserRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteDdmUserResponse`
+        """
+        http_info = self._delete_ddm_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ddm_user_invoker(self, request):
+        http_info = self._delete_ddm_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ddm_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/users/{username}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDdmUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'username' in local_var_params:
+            path_params['username'] = local_var_params['username']
+
+        query_params = []
 
         header_params = {}
 
@@ -2903,6 +3037,75 @@ class DdmClient(Client):
             query_params.append(('engine_version', local_var_params['engine_version']))
         if 'available_zones' in local_var_params:
             query_params.append(('available_zones', local_var_params['available_zones']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ddm_users(self, request):
+        r"""查询账号列表
+
+        查询账号列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDdmUsers
+        :type request: :class:`huaweicloudsdkddm.v1.ListDdmUsersRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListDdmUsersResponse`
+        """
+        http_info = self._list_ddm_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ddm_users_invoker(self, request):
+        http_info = self._list_ddm_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ddm_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDdmUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -4078,6 +4281,75 @@ class DdmClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reset_ddm_user_password(self, request):
+        r"""重置账号密码
+
+        重置现有账号的密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetDdmUserPassword
+        :type request: :class:`huaweicloudsdkddm.v1.ResetDdmUserPasswordRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ResetDdmUserPasswordResponse`
+        """
+        http_info = self._reset_ddm_user_password_http_info(request)
+        return self._call_api(**http_info)
+
+    def reset_ddm_user_password_invoker(self, request):
+        http_info = self._reset_ddm_user_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_ddm_user_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/users/{username}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetDdmUserPasswordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'username' in local_var_params:
+            path_params['username'] = local_var_params['username']
 
         query_params = []
 
@@ -6413,6 +6685,75 @@ class DdmClient(Client):
 
         return http_info
 
+    def update_ddm_user(self, request):
+        r"""修改账号
+
+        修改现有DDM账号的权限或者与逻辑库的关联关系。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDdmUser
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateDdmUserRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateDdmUserResponse`
+        """
+        http_info = self._update_ddm_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ddm_user_invoker(self, request):
+        http_info = self._update_ddm_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ddm_user_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/users/{username}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDdmUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'username' in local_var_params:
+            path_params['username'] = local_var_params['username']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_instance_name(self, request):
         r"""修改DDM实例名称
 
@@ -7288,6 +7629,74 @@ class DdmClient(Client):
 
         return http_info
 
+    def move_tmlog_files(self, request):
+        r"""移动TMLOG文件
+
+        移动TMLOG文件
+        将当前的TMLOG文件压缩移动到备份目录下
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for MoveTmlogFiles
+        :type request: :class:`huaweicloudsdkddm.v1.MoveTmlogFilesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.MoveTmlogFilesResponse`
+        """
+        http_info = self._move_tmlog_files_http_info(request)
+        return self._call_api(**http_info)
+
+    def move_tmlog_files_invoker(self, request):
+        http_info = self._move_tmlog_files_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _move_tmlog_files_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tmlogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "MoveTmlogFilesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_parameter_group(self, request):
         r"""更新参数组V3
 
@@ -7324,6 +7733,73 @@ class DdmClient(Client):
         path_params = {}
         if 'config_id' in local_var_params:
             path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_read_only_status(self, request):
+        r"""设置实例只读状态V3
+
+        设置实例只读状态V3
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetReadOnlyStatus
+        :type request: :class:`huaweicloudsdkddm.v1.SetReadOnlyStatusRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.SetReadOnlyStatusResponse`
+        """
+        http_info = self._set_read_only_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_read_only_status_invoker(self, request):
+        http_info = self._set_read_only_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_read_only_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/readonly-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetReadOnlyStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -7393,6 +7869,76 @@ class DdmClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tmlog_infos(self, request):
+        r"""查询TMLOG信息
+
+        查询TMLOG信息
+        TMLOG记录XA事务信息，用以支持事务恢复
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTmlogInfos
+        :type request: :class:`huaweicloudsdkddm.v1.ShowTmlogInfosRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowTmlogInfosResponse`
+        """
+        http_info = self._show_tmlog_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tmlog_infos_invoker(self, request):
+        http_info = self._show_tmlog_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tmlog_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tmlogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTmlogInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

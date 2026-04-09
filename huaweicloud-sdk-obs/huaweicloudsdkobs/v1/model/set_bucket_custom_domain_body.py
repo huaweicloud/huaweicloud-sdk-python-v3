@@ -58,13 +58,16 @@ class SetBucketCustomDomainBody:
         self._private_key = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         if certificate_id is not None:
             self.certificate_id = certificate_id
-        self.certificate = certificate
+        if certificate is not None:
+            self.certificate = certificate
         if certificate_chain is not None:
             self.certificate_chain = certificate_chain
-        self.private_key = private_key
+        if private_key is not None:
+            self.private_key = private_key
 
     @property
     def name(self):

@@ -175,6 +175,76 @@ class ObsClient(Client):
 
         return http_info
 
+    def delete_bucket_public_access_block(self, request):
+        r"""Deleting the Public Access Block Configuration of a Bucket
+
+        This API deletes the public access block configuration of an OBS bucket.
+        To perform this operation, you must have the DeleteBucketPublicAccessBlock permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteBucketPublicAccessBlock
+        :type request: :class:`huaweicloudsdkobs.v1.DeleteBucketPublicAccessBlockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.DeleteBucketPublicAccessBlockResponse`
+        """
+        http_info = self._delete_bucket_public_access_block_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_bucket_public_access_block_invoker(self, request):
+        http_info = self._delete_bucket_public_access_block_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_bucket_public_access_block_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBucketPublicAccessBlockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'public_access_block' in local_var_params:
+            query_params.append(('publicAccessBlock', local_var_params['public_access_block']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_bucket_acl(self, request):
         r"""Obtaining a Bucket ACL
 
@@ -373,6 +443,216 @@ class ObsClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_policy_public_status(self, request):
+        r"""Obtaining the Public Access Status of a Bucket Policy
+
+        This API obtains the public access status of an OBS bucket policy.
+        To perform this operation, you must have the GetBucketPolicyPublicStatus permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetBucketPolicyPublicStatus
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketPolicyPublicStatusRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketPolicyPublicStatusResponse`
+        """
+        http_info = self._get_bucket_policy_public_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_policy_public_status_invoker(self, request):
+        http_info = self._get_bucket_policy_public_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_bucket_policy_public_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketPolicyPublicStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'policy_status' in local_var_params:
+            query_params.append(('policyStatus', local_var_params['policy_status']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_public_access_block(self, request):
+        r"""Obtaining the Public Access Block Configuration of a Bucket
+
+        This API returns the public access block configuration of an OBS bucket.
+        To perform this operation, you must have the GetBucketPublicAccessBlock permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetBucketPublicAccessBlock
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketPublicAccessBlockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketPublicAccessBlockResponse`
+        """
+        http_info = self._get_bucket_public_access_block_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_public_access_block_invoker(self, request):
+        http_info = self._get_bucket_public_access_block_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_bucket_public_access_block_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketPublicAccessBlockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'public_access_block_' in local_var_params:
+            query_params.append(('publicAccessBlock ', local_var_params['public_access_block_']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_bucket_public_status(self, request):
+        r"""Obtaining the Public Access Status of a Bucket
+
+        This API obtains the public access status of an OBS bucket.
+        To perform this operation, you must have the GetBucketPublicStatus permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetBucketPublicStatus
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketPublicStatusRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketPublicStatusResponse`
+        """
+        http_info = self._get_bucket_public_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_public_status_invoker(self, request):
+        http_info = self._get_bucket_public_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_bucket_public_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketPublicStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'bucket_status_' in local_var_params:
+            query_params.append(('bucketStatus ', local_var_params['bucket_status_']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "x-obs-bucket-type", "Connection", "Content-Length", "Date", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -593,6 +873,226 @@ class ObsClient(Client):
             cname = local_var_params['bucket_name']
         if 'notification' in local_var_params:
             query_params.append(('notification', local_var_params['notification']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_object_lock(self, request):
+        r"""Configuring a Default WORM Policy for a Bucket
+
+        This API configures a default WORM policy and retention period for a bucket. With the bucket&#39;s default WORM policy, if you do not specify a WORM policy or a retention period when you upload an object to the bucket, the default policy will be automatically applied to the newly uploaded object. An object-level WORM policy requires configuring a specific date, which indicates an object will be protected until that date. For a default bucket-level WORM policy, a retention period is required, and the protection for an object starts when the object is uploaded to the bucket. To perform this operation, you must have the PutBucketObjectLockConfiguration permission. By default, only the bucket owner can perform this operation. The bucket owner can grant the permission to other users by configuring the bucket policy or user policy.
+        Note： 1. You can modify or even delete the default WORM policy of a bucket. The change applies only to the objects uploaded after the change, but not to those uploaded before. 2. During a multipart upload, the object parts uploaded are not protected before they are assembled. After object parts are assembled, the new object is protected by the default bucket-level WORM policy. You can also configure an object-level WORM policy for the new object.
+        Other restrictions on the WORM retention configuration: 1. The WORM mode can only be COMPLIANCE. 2. The retention period can be set to 1 to 36500 days or 1 to 100 years.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetBucketObjectLock
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketObjectLockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketObjectLockResponse`
+        """
+        http_info = self._set_bucket_object_lock_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_object_lock_invoker(self, request):
+        http_info = self._set_bucket_object_lock_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_bucket_object_lock_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketObjectLockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'object_lock' in local_var_params:
+            query_params.append(('object-lock', local_var_params['object_lock']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_policy(self, request):
+        r"""Configuring a Bucket Policy
+
+        This operation creates or updates the policy of a bucket. If a bucket already has a policy configured, the current request will overwrite the previous policy. There is no limit on the number of bucket policies (statements) for a bucket, but the total size of JSON descriptions of all bucket policies in a bucket cannot exceed 20 KB.
+        
+        To use this operation, you must be the bucket owner or have the permissions required to configure bucket policies.
+        
+        For details about how to use bucket policies to control permissions, see the [OBS permission control](https://support.huaweicloud.com/intl/en-us/perms-cfg-obs/obs_40_0001.html) in the *Object Storage Service Permissions Configuration Guide*.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetBucketPolicy
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketPolicyRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketPolicyResponse`
+        """
+        http_info = self._set_bucket_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_policy_invoker(self, request):
+        http_info = self._set_bucket_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_bucket_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'policy' in local_var_params:
+            query_params.append(('policy', local_var_params['policy']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_public_access_block(self, request):
+        r"""Configuring Public Access Block for a Bucket
+
+        This API creates or modifies the public access block configuration of an OBS bucket by enabling or disabling the feature.
+        To perform this operation, you must have the PutBucketPublicAccessBlock permission. The bucket owner can perform this operation by default and can grant this permission to others by using a bucket policy or a user policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetBucketPublicAccessBlock
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketPublicAccessBlockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketPublicAccessBlockResponse`
+        """
+        http_info = self._set_bucket_public_access_block_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_public_access_block_invoker(self, request):
+        http_info = self._set_bucket_public_access_block_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_bucket_public_access_block_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketPublicAccessBlockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'public_access_block' in local_var_params:
+            query_params.append(('publicAccessBlock', local_var_params['public_access_block']))
 
         header_params = {}
         if 'date' in local_var_params:
@@ -1274,6 +1774,16 @@ class ObsClient(Client):
             header_params['x-obs-copy-source-if-modified-since'] = local_var_params['x_obs_copy_source_if_modified_since']
         if 'x_obs_storage_class' in local_var_params:
             header_params['x-obs-storage-class'] = local_var_params['x_obs_storage_class']
+        if 'x_obs_server_side_encryption_bucket_key_enabled' in local_var_params:
+            header_params['x-obs-server-side-encryption-bucket-key-enabled'] = local_var_params['x_obs_server_side_encryption_bucket_key_enabled']
+        if 'x_obs_tagging_directive' in local_var_params:
+            header_params['x-obs-tagging-directive'] = local_var_params['x_obs_tagging_directive']
+        if 'x_obs_object_lock_mode' in local_var_params:
+            header_params['x-obs-object-lock-mode'] = local_var_params['x_obs_object_lock_mode']
+        if 'x_obs_object_lock_retain_until_date' in local_var_params:
+            header_params['x-obs-object-lock-retain-until-date'] = local_var_params['x_obs_object_lock_retain_until_date']
+        if 'x_obs_tagging' in local_var_params:
+            header_params['x-obs-tagging'] = local_var_params['x_obs_tagging']
         if 'x_obs_persistent_headers' in local_var_params:
             header_params['x-obs-persistent-headers'] = local_var_params['x_obs_persistent_headers']
         if 'x_obs_website_redirect_location' in local_var_params:
@@ -1380,6 +1890,84 @@ class ObsClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", "x-obs-delete-marker", "x-obs-version-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_object_tagging(self, request):
+        r"""Deleting Object Tags
+
+        This operation deletes tags from an object.
+        If you do not specify a version ID in a request, make sure that you have the DeleteObjectTagging permission. If you do specify a version ID in a request, make sure that you have the DeleteObjectTagging and DeleteObjectVersionTagging permissions. By default, only the object owner can perform this operation. The object owner can grant this permission to others by using a bucket or user policy.
+        OBS deletes tags from the current object version by default. You can use the versionId parameter to delete tags from any other version. If the version you are deleting tags from is a delete marker, OBS returns 404 Not Found.
+        
+        NOTE:
+        Tags are not supported for files in parallel file systems.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteObjectTagging
+        :type request: :class:`huaweicloudsdkobs.v1.DeleteObjectTaggingRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.DeleteObjectTaggingResponse`
+        """
+        http_info = self._delete_object_tagging_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_object_tagging_invoker(self, request):
+        http_info = self._delete_object_tagging_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_object_tagging_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/{object_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteObjectTaggingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'object_key' in local_var_params:
+            path_params['object_key'] = local_var_params['object_key']
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'tagging' in local_var_params:
+            query_params.append(('tagging', local_var_params['tagging']))
+        if 'version_id' in local_var_params:
+            query_params.append(('versionId', local_var_params['version_id']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "Connection", "Content-Length", "Date", "x-obs-version-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1586,7 +2174,85 @@ class ObsClient(Client):
 
         return http_info
 
-    def get_object_metadata(self, request):
+    def get_object_tagging(self, request):
+        r"""Obtaining Object Tags
+
+        This operation returns tags of an object.
+        If you do not specify a version ID in a request, make sure that you have the GetObjectTagging permission. If you do specify a version ID in a request, make sure that you have the GetObjectTagging and GetObjectVersionTagging permissions. By default, only the object owner can perform this operation. The object owner can grant this permission to others by using a bucket or user policy.
+        OBS returns the tags of the current object version by default. You can use the versionId parameter to retrieve tags of any other version. If the version you are retrieving tags from is a delete marker, OBS returns 404 Not Found.
+        
+        NOTE:
+        Tags are not supported for files in parallel file systems.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetObjectTagging
+        :type request: :class:`huaweicloudsdkobs.v1.GetObjectTaggingRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetObjectTaggingResponse`
+        """
+        http_info = self._get_object_tagging_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_object_tagging_invoker(self, request):
+        http_info = self._get_object_tagging_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_object_tagging_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{object_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetObjectTaggingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'object_key' in local_var_params:
+            path_params['object_key'] = local_var_params['object_key']
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'tagging' in local_var_params:
+            query_params.append(('tagging', local_var_params['tagging']))
+        if 'version_id' in local_var_params:
+            query_params.append(('versionId', local_var_params['version_id']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "Connection", "Content-Length", "Date", "x-obs-version-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def head_object(self, request):
         r"""Getting Metadata of an Object
 
         This operation returns the metadata of an object. To use this operation, you must have the read permission on the object.
@@ -1597,24 +2263,24 @@ class ObsClient(Client):
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for GetObjectMetadata
-        :type request: :class:`huaweicloudsdkobs.v1.GetObjectMetadataRequest`
-        :rtype: :class:`huaweicloudsdkobs.v1.GetObjectMetadataResponse`
+        :param request: Request instance for HeadObject
+        :type request: :class:`huaweicloudsdkobs.v1.HeadObjectRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.HeadObjectResponse`
         """
-        http_info = self._get_object_metadata_http_info(request)
+        http_info = self._head_object_http_info(request)
         return self._call_api(**http_info)
 
-    def get_object_metadata_invoker(self, request):
-        http_info = self._get_object_metadata_http_info(request)
+    def head_object_invoker(self, request):
+        http_info = self._head_object_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _get_object_metadata_http_info(cls, request):
+    def _head_object_http_info(cls, request):
         http_info = {
             "method": "HEAD",
             "resource_path": "/{object_key}",
             "request_type": request.__class__.__name__,
-            "response_type": "GetObjectMetadataResponse"
+            "response_type": "HeadObjectResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1646,10 +2312,6 @@ class ObsClient(Client):
             header_params['x-obs-server-side-encryption-customer-key'] = local_var_params['x_obs_server_side_encryption_customer_key']
         if 'x_obs_server_side_encryption_customer_key_md5' in local_var_params:
             header_params['x-obs-server-side-encryption-customer-key-MD5'] = local_var_params['x_obs_server_side_encryption_customer_key_md5']
-        if 'success_action_redirect' in local_var_params:
-            header_params['success-action-redirect'] = local_var_params['success_action_redirect']
-        if 'x_obs_expires' in local_var_params:
-            header_params['x-obs-expires'] = local_var_params['x_obs_expires']
 
         form_params = {}
 
@@ -1774,6 +2436,84 @@ class ObsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/octet-stream'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def put_object_tagging(self, request):
+        r"""Adding Object Tags
+
+        This operation adds or updates the tag information for an object. An object tag is a key-value pair. If you do not specify a version ID in a request, make sure that you have the PutObjectTagging permission. If you do specify a version ID in a request, make sure that you have the PutObjectTagging and PutObjectVersionTagging permissions. By default, only the object owner can perform this operation. The object owner can grant this permission to others by using a bucket or user policy. Tags are added to the current version of an object by default. You can use the versionId parameter to add tags to any other version. If the version you are adding tags to is a delete marker, OBS returns 404 Not Found.
+        Note: 1. Tags cannot be set for files in parallel file systems. 2. An object can have up to 10 tags. 3. Constraints on the tag key and value: A tag key is case sensitive and must be unique. It cannot be left blank or exceed 128 characters. The following characters are not allowed: ,/|&lt;&gt;&#x3D;*\\ A tag value is case sensitive and can be left blank. It cannot exceed 255 characters. The following characters are not allowed: ,/|&lt;&gt;&#x3D;*\\
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PutObjectTagging
+        :type request: :class:`huaweicloudsdkobs.v1.PutObjectTaggingRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.PutObjectTaggingResponse`
+        """
+        http_info = self._put_object_tagging_http_info(request)
+        return self._call_api(**http_info)
+
+    def put_object_tagging_invoker(self, request):
+        http_info = self._put_object_tagging_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _put_object_tagging_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/{object_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "PutObjectTaggingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'object_key' in local_var_params:
+            path_params['object_key'] = local_var_params['object_key']
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'tagging' in local_var_params:
+            query_params.append(('tagging', local_var_params['tagging']))
+        if 'version_id' in local_var_params:
+            query_params.append(('versionId', local_var_params['version_id']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'content_md5' in local_var_params:
+            header_params['Content-MD5'] = local_var_params['content_md5']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
 
         auth_settings = []
 

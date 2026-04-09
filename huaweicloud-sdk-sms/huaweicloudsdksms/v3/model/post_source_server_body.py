@@ -149,7 +149,7 @@ class PostSourceServerBody:
         :type state: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
-        :param start_type: 启动方式 可以取值MANUAL、MGC或者空，不进行校验
+        :param start_type: 启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
         :type start_type: str
         :param io_read_wait: 磁盘IO读时延，单位为ms
         :type io_read_wait: float
@@ -900,7 +900,7 @@ class PostSourceServerBody:
     def start_type(self):
         r"""Gets the start_type of this PostSourceServerBody.
 
-        启动方式 可以取值MANUAL、MGC或者空，不进行校验
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
 
         :return: The start_type of this PostSourceServerBody.
         :rtype: str
@@ -911,7 +911,7 @@ class PostSourceServerBody:
     def start_type(self, start_type):
         r"""Sets the start_type of this PostSourceServerBody.
 
-        启动方式 可以取值MANUAL、MGC或者空，不进行校验
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
 
         :param start_type: The start_type of this PostSourceServerBody.
         :type start_type: str

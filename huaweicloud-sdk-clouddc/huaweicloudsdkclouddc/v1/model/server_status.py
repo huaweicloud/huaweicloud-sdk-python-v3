@@ -21,7 +21,7 @@ class ServerStatus:
         'unknown': 'ServerState',
         'critical': 'ServerState',
         'health': 'ServerState',
-        'unhealth': 'ServerState',
+        'un_health': 'ServerState',
         'isolation': 'ServerState'
     }
 
@@ -32,11 +32,11 @@ class ServerStatus:
         'unknown': 'unknown',
         'critical': 'critical',
         'health': 'health',
-        'unhealth': 'unhealth',
+        'un_health': 'unHealth',
         'isolation': 'isolation'
     }
 
-    def __init__(self, total=None, ok=None, warning=None, unknown=None, critical=None, health=None, unhealth=None, isolation=None):
+    def __init__(self, total=None, ok=None, warning=None, unknown=None, critical=None, health=None, un_health=None, isolation=None):
         r"""ServerStatus
 
         The model defined in huaweicloud sdk
@@ -53,8 +53,8 @@ class ServerStatus:
         :type critical: :class:`huaweicloudsdkclouddc.v1.ServerState`
         :param health: 
         :type health: :class:`huaweicloudsdkclouddc.v1.ServerState`
-        :param unhealth: 
-        :type unhealth: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param un_health: 
+        :type un_health: :class:`huaweicloudsdkclouddc.v1.ServerState`
         :param isolation: 
         :type isolation: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
@@ -67,7 +67,7 @@ class ServerStatus:
         self._unknown = None
         self._critical = None
         self._health = None
-        self._unhealth = None
+        self._un_health = None
         self._isolation = None
         self.discriminator = None
 
@@ -78,8 +78,7 @@ class ServerStatus:
             self.unknown = unknown
         self.critical = critical
         self.health = health
-        if unhealth is not None:
-            self.unhealth = unhealth
+        self.un_health = un_health
         self.isolation = isolation
 
     @property
@@ -191,22 +190,22 @@ class ServerStatus:
         self._health = health
 
     @property
-    def unhealth(self):
-        r"""Gets the unhealth of this ServerStatus.
+    def un_health(self):
+        r"""Gets the un_health of this ServerStatus.
 
-        :return: The unhealth of this ServerStatus.
+        :return: The un_health of this ServerStatus.
         :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
-        return self._unhealth
+        return self._un_health
 
-    @unhealth.setter
-    def unhealth(self, unhealth):
-        r"""Sets the unhealth of this ServerStatus.
+    @un_health.setter
+    def un_health(self, un_health):
+        r"""Sets the un_health of this ServerStatus.
 
-        :param unhealth: The unhealth of this ServerStatus.
-        :type unhealth: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param un_health: The un_health of this ServerStatus.
+        :type un_health: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
-        self._unhealth = unhealth
+        self._un_health = un_health
 
     @property
     def isolation(self):

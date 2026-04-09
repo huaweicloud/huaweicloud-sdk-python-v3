@@ -37,7 +37,8 @@ class SourceServersResponseBody:
         'migration_cycle': 'str',
         'state_action_time': 'int',
         'is_consistency_result_exist': 'bool',
-        'has_tc': 'bool'
+        'has_tc': 'bool',
+        'start_type': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class SourceServersResponseBody:
         'migration_cycle': 'migration_cycle',
         'state_action_time': 'state_action_time',
         'is_consistency_result_exist': 'is_consistency_result_exist',
-        'has_tc': 'has_tc'
+        'has_tc': 'has_tc',
+        'start_type': 'start_type'
     }
 
-    def __init__(self, id=None, ip=None, name=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, cpu_quantity=None, memory=None, current_task=None, checks=None, init_target_server=None, replicatesize=None, stage_action_time=None, totalsize=None, last_visit_time=None, migration_cycle=None, state_action_time=None, is_consistency_result_exist=None, has_tc=None):
+    def __init__(self, id=None, ip=None, name=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, cpu_quantity=None, memory=None, current_task=None, checks=None, init_target_server=None, replicatesize=None, stage_action_time=None, totalsize=None, last_visit_time=None, migration_cycle=None, state_action_time=None, is_consistency_result_exist=None, has_tc=None, start_type=None):
         r"""SourceServersResponseBody
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class SourceServersResponseBody:
         :type is_consistency_result_exist: bool
         :param has_tc: 是否安装tc组件，Linux系统此参数为必选
         :type has_tc: bool
+        :param start_type: 启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+        :type start_type: str
         """
         
         
@@ -144,6 +148,7 @@ class SourceServersResponseBody:
         self._state_action_time = None
         self._is_consistency_result_exist = None
         self._has_tc = None
+        self._start_type = None
         self.discriminator = None
 
         if id is not None:
@@ -192,6 +197,8 @@ class SourceServersResponseBody:
             self.is_consistency_result_exist = is_consistency_result_exist
         if has_tc is not None:
             self.has_tc = has_tc
+        if start_type is not None:
+            self.start_type = start_type
 
     @property
     def id(self):
@@ -690,6 +697,28 @@ class SourceServersResponseBody:
         :type has_tc: bool
         """
         self._has_tc = has_tc
+
+    @property
+    def start_type(self):
+        r"""Gets the start_type of this SourceServersResponseBody.
+
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+
+        :return: The start_type of this SourceServersResponseBody.
+        :rtype: str
+        """
+        return self._start_type
+
+    @start_type.setter
+    def start_type(self, start_type):
+        r"""Sets the start_type of this SourceServersResponseBody.
+
+        启动方式 可以取值MANUAL、AUTO或者空，不进行校验。 默认值取值MANUAL，其余则表示从MGC平台启动
+
+        :param start_type: The start_type of this SourceServersResponseBody.
+        :type start_type: str
+        """
+        self._start_type = start_type
 
     def to_dict(self):
         result = {}

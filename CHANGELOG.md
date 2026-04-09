@@ -1,3 +1,223 @@
+# 3.1.191 2026-04-09
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceStatus**
+    - changes of response param
+      - `+ state: enum value [error]`
+      - `- state: enum value [stopping,reinstalling,failed,modifyIping,switch-installing]`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.state: enum value [error]`
+      - `- instances.state: enum value [stopping,reinstalling,failed,modifyIping,switch-installing]`
+  - **ShowServerStatus**
+    - changes of response param
+      - `+ server_status.unHealth`
+      - `- server_status.unhealth`
+  - **ShowServerHardwareAttributes**
+    - changes of response param
+      - `* storage_controllers.volumes.drives.sas_address: string -> list<SasAddress>`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchAddCaseResultInTask**
+    - changes of request param
+      - `* test_case_uris: string -> list<string>`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListOrganizationPolicyAssignments**
+    - changes of response param
+      - `+ policy_filter_v2`
+      - `+ organization_policy_assignments.policy_filter_v2`
+  - **CreateOrganizationPolicyAssignment**
+    - changes of request param
+      - `+ custom_policy_assignment_metadata`
+      - `+ managed_policy_assignment_metadata.policy_filter_v2`
+    - changes of response param
+      - `+ policy_filter_v2`
+  - **ShowOrganizationPolicyAssignment**
+    - changes of response param
+      - `+ policy_filter_v2`
+  - **UpdateOrganizationPolicyAssignment**
+    - changes of request param
+      - `+ custom_policy_assignment_metadata`
+      - `+ managed_policy_assignment_metadata.policy_filter_v2`
+    - changes of response param
+      - `+ policy_filter_v2`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateShareConnections**
+    - changes of request param
+      - `+ timezone`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListDdmUsers`
+    - `CreateDdmUser`
+    - `UpdateDdmUser`
+    - `DeleteDdmUser`
+    - `ResetDdmUserPassword`
+    - `SetReadOnlyStatus`
+    - `ShowTmlogInfos`
+    - `MoveTmlogFiles`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `SwitchLoggerReplicaAvailabilityZones`, `ChangeDemand2Period`, `SwitchLoggerReplica`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ConfirmBatchTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBatchTask**
+    - changes of request param
+      - `+ need_confirm`
+    - changes of response param
+      - `+ need_confirm`
+  - **ListBatchTasks**
+    - changes of response param
+      - `+ need_confirm`
+      - `+ batchtasks.need_confirm`
+  - **ShowBatchTask**
+    - changes of response param
+      - `+ need_confirm`
+      - `+ batchtask.need_confirm`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ result.access_config_detail.combine_stdout`
+  - **UpdateAccessConfig**
+    - changes of request param
+      - `+ access_config_detail.combine_stdout`
+    - changes of response param
+      - `+ access_config_detail.combine_stdout`
+  - **CreateAccessConfig**
+    - changes of request param
+      - `+ access_config_detail.combine_stdout`
+    - changes of response param
+      - `+ access_config_detail.combine_stdout`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ result.access_config_detail.combine_stdout`
+
+### HuaweiCloud SDK OBS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `SetBucketObjectLock`
+    - `GetBucketPolicyPublicStatus`
+    - `GetBucketPublicStatus`
+    - `DeleteBucketPublicAccessBlock`
+    - `GetBucketPublicAccessBlock`
+    - `SetBucketPublicAccessBlock`
+    - `SetBucketPolicy`
+    - `GetObjectTagging`
+    - `DeleteObjectTagging`
+- _Bug Fix_
+  - None
+- _Change_
+  - **PutObject**
+    - changes of request param
+      - `* x-obs-object-lock-retain-until-date: string -> date-time`
+  - **HeadObject**
+    - changes of request param
+      - `- success-action-redirect`
+      - `- x-obs-expires`
+  - **CopyObject**
+    - changes of request param
+      - `+ x-obs-server-side-encryption-bucket-key-enabled`
+      - `+ x-obs-tagging-directive`
+      - `+ x-obs-object-lock-mode`
+      - `+ x-obs-object-lock-retain-until-date`
+      - `+ x-obs-tagging`
+  - **SetBucketCustomedomain**
+    - changes of request param
+      - `+ CertificateType`
+      - `+ ENCCertificate`
+      - `+ ENCPrivateKey`
+      - `+ DeleteCertificate`
+  - **ListBuckets**
+    - changes of request param
+      - `+ x-obs-ies-location`
+      - `+ x-obs-edge-location`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ start_type`
+  - **ListServers**
+    - changes of response param
+      - `+ source_servers.start_type`
+
 # 3.1.190 2026-04-02
 
 ### HuaweiCloud SDK Core

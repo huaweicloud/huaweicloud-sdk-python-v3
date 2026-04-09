@@ -9,14 +9,10 @@ class InstanceState:
     """
     PENDING = "pending"
     RUNNING = "running"
-    STOPPING = "stopping"
     STOPPED = "stopped"
-    REINSTALLING = "reinstalling"
     SHUTTING_DOWN = "shutting-down"
     TERMINATED = "terminated"
-    FAILED = "failed"
-    MODIFYIPING = "modifyIping"
-    SWITCH_INSTALLING = "switch-installing"
+    ERROR = "error"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

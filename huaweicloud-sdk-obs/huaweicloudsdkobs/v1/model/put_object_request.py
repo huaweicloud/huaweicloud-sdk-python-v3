@@ -42,7 +42,7 @@ class PutObjectRequest(SdkStreamRequest):
         'x_obs_expires': 'int',
         'x_obs_tagging': 'str',
         'x_obs_object_lock_mode': 'str',
-        'x_obs_object_lock_retain_until_date': 'str'
+        'x_obs_object_lock_retain_until_date': 'datetime'
     }
 
     attribute_map = {
@@ -127,7 +127,7 @@ class PutObjectRequest(SdkStreamRequest):
         :param x_obs_object_lock_mode: WORM mode applied to the object. Example: x-obs-object-lock-mode:COMPLIANCE Restriction: Only COMPLIANCE (compliance mode) is supported.              This parameter must be used together with x-obs-object-lock-retain-until-date. 
         :type x_obs_object_lock_mode: str
         :param x_obs_object_lock_retain_until_date: When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
-        :type x_obs_object_lock_retain_until_date: str
+        :type x_obs_object_lock_retain_until_date: datetime
         """
         super().__init__(stream)
         
@@ -743,7 +743,7 @@ class PutObjectRequest(SdkStreamRequest):
         When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
 
         :return: The x_obs_object_lock_retain_until_date of this PutObjectRequest.
-        :rtype: str
+        :rtype: datetime
         """
         return self._x_obs_object_lock_retain_until_date
 
@@ -754,7 +754,7 @@ class PutObjectRequest(SdkStreamRequest):
         When the WORM policy of the object expires. Example: x-obs-object-lock-retain-until-date:2015-07-01T04:11:15Z Restriction: The value must be a UTC time that complies with the ISO 8601 standard. Example: 2015-07-01T04:11:15Z This parameter must be used together with x-obs-object-lock-mode. 
 
         :param x_obs_object_lock_retain_until_date: The x_obs_object_lock_retain_until_date of this PutObjectRequest.
-        :type x_obs_object_lock_retain_until_date: str
+        :type x_obs_object_lock_retain_until_date: datetime
         """
         self._x_obs_object_lock_retain_until_date = x_obs_object_lock_retain_until_date
 

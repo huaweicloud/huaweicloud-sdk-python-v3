@@ -76,6 +76,8 @@ from huaweicloudsdkiotda.v5.model.close_device_tunnel_response import CloseDevic
 from huaweicloudsdkiotda.v5.model.cmd import Cmd
 from huaweicloudsdkiotda.v5.model.column_mapping import ColumnMapping
 from huaweicloudsdkiotda.v5.model.condition_group import ConditionGroup
+from huaweicloudsdkiotda.v5.model.confirm_batch_task_request import ConfirmBatchTaskRequest
+from huaweicloudsdkiotda.v5.model.confirm_batch_task_response import ConfirmBatchTaskResponse
 from huaweicloudsdkiotda.v5.model.connect_state import ConnectState
 from huaweicloudsdkiotda.v5.model.count_async_history_commands_request import CountAsyncHistoryCommandsRequest
 from huaweicloudsdkiotda.v5.model.count_async_history_commands_response import CountAsyncHistoryCommandsResponse
