@@ -20,6 +20,7 @@ class ScheduledTask:
         'task_type': 'str',
         'scheduled_type': 'str',
         'life_cycle_type': 'str',
+        'life_cycle_exec_period': 'int',
         'last_status': 'str',
         'next_execution_time': 'str',
         'expire_time': 'str',
@@ -37,6 +38,7 @@ class ScheduledTask:
         'task_type': 'task_type',
         'scheduled_type': 'scheduled_type',
         'life_cycle_type': 'life_cycle_type',
+        'life_cycle_exec_period': 'life_cycle_exec_period',
         'last_status': 'last_status',
         'next_execution_time': 'next_execution_time',
         'expire_time': 'expire_time',
@@ -48,7 +50,7 @@ class ScheduledTask:
         'extra_params': 'extra_params'
     }
 
-    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, last_status=None, next_execution_time=None, expire_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None, extra_params=None):
+    def __init__(self, id=None, task_name=None, task_type=None, scheduled_type=None, life_cycle_type=None, life_cycle_exec_period=None, last_status=None, next_execution_time=None, expire_time=None, enable=None, description=None, priority=None, time_zone=None, wait_time=None, extra_params=None):
         r"""ScheduledTask
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ScheduledTask:
         :type scheduled_type: str
         :param life_cycle_type: 触发场景类型。
         :type life_cycle_type: str
+        :param life_cycle_exec_period: 触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+        :type life_cycle_exec_period: int
         :param last_status: 最近一次执行状态。SUCCESS：成功，SKIP：跳过，FAIL：失败。
         :type last_status: str
         :param next_execution_time: 下一次执行时间。格式为yyyy-MM-dd HH:mm:ss。
@@ -90,6 +94,7 @@ class ScheduledTask:
         self._task_type = None
         self._scheduled_type = None
         self._life_cycle_type = None
+        self._life_cycle_exec_period = None
         self._last_status = None
         self._next_execution_time = None
         self._expire_time = None
@@ -111,6 +116,8 @@ class ScheduledTask:
             self.scheduled_type = scheduled_type
         if life_cycle_type is not None:
             self.life_cycle_type = life_cycle_type
+        if life_cycle_exec_period is not None:
+            self.life_cycle_exec_period = life_cycle_exec_period
         if last_status is not None:
             self.last_status = last_status
         if next_execution_time is not None:
@@ -239,6 +246,28 @@ class ScheduledTask:
         :type life_cycle_type: str
         """
         self._life_cycle_type = life_cycle_type
+
+    @property
+    def life_cycle_exec_period(self):
+        r"""Gets the life_cycle_exec_period of this ScheduledTask.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :return: The life_cycle_exec_period of this ScheduledTask.
+        :rtype: int
+        """
+        return self._life_cycle_exec_period
+
+    @life_cycle_exec_period.setter
+    def life_cycle_exec_period(self, life_cycle_exec_period):
+        r"""Sets the life_cycle_exec_period of this ScheduledTask.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :param life_cycle_exec_period: The life_cycle_exec_period of this ScheduledTask.
+        :type life_cycle_exec_period: int
+        """
+        self._life_cycle_exec_period = life_cycle_exec_period
 
     @property
     def last_status(self):

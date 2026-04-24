@@ -26,7 +26,9 @@ class ListUsersRequest:
         'share_space_desktops': 'bool',
         'is_query_total_desktops': 'bool',
         'enterprise_project_id': 'str',
-        'domain': 'str'
+        'disabled': 'bool',
+        'domain': 'str',
+        'platform_type': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ListUsersRequest:
         'share_space_desktops': 'share_space_desktops',
         'is_query_total_desktops': 'is_query_total_desktops',
         'enterprise_project_id': 'enterprise_project_id',
-        'domain': 'domain'
+        'disabled': 'disabled',
+        'domain': 'domain',
+        'platform_type': 'platform_type'
     }
 
-    def __init__(self, user_name=None, user_names=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None, enterprise_project_id=None, domain=None):
+    def __init__(self, user_name=None, user_names=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None, enterprise_project_id=None, disabled=None, domain=None, platform_type=None):
         r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
@@ -71,8 +75,12 @@ class ListUsersRequest:
         :type is_query_total_desktops: bool
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param disabled: 用户是否被禁用
+        :type disabled: bool
         :param domain: 域。
         :type domain: str
+        :param platform_type: 用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+        :type platform_type: str
         """
         
         
@@ -88,7 +96,9 @@ class ListUsersRequest:
         self._share_space_desktops = None
         self._is_query_total_desktops = None
         self._enterprise_project_id = None
+        self._disabled = None
         self._domain = None
+        self._platform_type = None
         self.discriminator = None
 
         if user_name is not None:
@@ -113,8 +123,12 @@ class ListUsersRequest:
             self.is_query_total_desktops = is_query_total_desktops
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if disabled is not None:
+            self.disabled = disabled
         if domain is not None:
             self.domain = domain
+        if platform_type is not None:
+            self.platform_type = platform_type
 
     @property
     def user_name(self):
@@ -359,6 +373,28 @@ class ListUsersRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def disabled(self):
+        r"""Gets the disabled of this ListUsersRequest.
+
+        用户是否被禁用
+
+        :return: The disabled of this ListUsersRequest.
+        :rtype: bool
+        """
+        return self._disabled
+
+    @disabled.setter
+    def disabled(self, disabled):
+        r"""Sets the disabled of this ListUsersRequest.
+
+        用户是否被禁用
+
+        :param disabled: The disabled of this ListUsersRequest.
+        :type disabled: bool
+        """
+        self._disabled = disabled
+
+    @property
     def domain(self):
         r"""Gets the domain of this ListUsersRequest.
 
@@ -379,6 +415,28 @@ class ListUsersRequest:
         :type domain: str
         """
         self._domain = domain
+
+    @property
+    def platform_type(self):
+        r"""Gets the platform_type of this ListUsersRequest.
+
+        用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+
+        :return: The platform_type of this ListUsersRequest.
+        :rtype: str
+        """
+        return self._platform_type
+
+    @platform_type.setter
+    def platform_type(self, platform_type):
+        r"""Sets the platform_type of this ListUsersRequest.
+
+        用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+
+        :param platform_type: The platform_type of this ListUsersRequest.
+        :type platform_type: str
+        """
+        self._platform_type = platform_type
 
     def to_dict(self):
         result = {}

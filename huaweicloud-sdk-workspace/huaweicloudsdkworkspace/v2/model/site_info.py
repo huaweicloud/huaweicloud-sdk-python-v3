@@ -20,7 +20,8 @@ class SiteInfo:
         'site_type': 'str',
         'project_id': 'str',
         'status': 'str',
-        'create_time': 'str'
+        'create_time': 'str',
+        'network_config': 'NetworkConfig'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class SiteInfo:
         'site_type': 'site_type',
         'project_id': 'project_id',
         'status': 'status',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'network_config': 'network_config'
     }
 
-    def __init__(self, site_id=None, site_name=None, site_type=None, project_id=None, status=None, create_time=None):
+    def __init__(self, site_id=None, site_name=None, site_type=None, project_id=None, status=None, create_time=None, network_config=None):
         r"""SiteInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class SiteInfo:
         :type status: str
         :param create_time: 创建时间。
         :type create_time: str
+        :param network_config: 
+        :type network_config: :class:`huaweicloudsdkworkspace.v2.NetworkConfig`
         """
         
         
@@ -59,6 +63,7 @@ class SiteInfo:
         self._project_id = None
         self._status = None
         self._create_time = None
+        self._network_config = None
         self.discriminator = None
 
         if site_id is not None:
@@ -73,6 +78,8 @@ class SiteInfo:
             self.status = status
         if create_time is not None:
             self.create_time = create_time
+        if network_config is not None:
+            self.network_config = network_config
 
     @property
     def site_id(self):
@@ -205,6 +212,24 @@ class SiteInfo:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def network_config(self):
+        r"""Gets the network_config of this SiteInfo.
+
+        :return: The network_config of this SiteInfo.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.NetworkConfig`
+        """
+        return self._network_config
+
+    @network_config.setter
+    def network_config(self, network_config):
+        r"""Sets the network_config of this SiteInfo.
+
+        :param network_config: The network_config of this SiteInfo.
+        :type network_config: :class:`huaweicloudsdkworkspace.v2.NetworkConfig`
+        """
+        self._network_config = network_config
 
     def to_dict(self):
         result = {}

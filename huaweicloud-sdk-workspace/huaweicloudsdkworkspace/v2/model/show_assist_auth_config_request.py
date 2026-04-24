@@ -15,20 +15,51 @@ class ShowAssistAuthConfigRequest:
     sensitive_list = []
 
     openapi_types = {
+        'main_auth_config_id': 'str'
     }
 
     attribute_map = {
+        'main_auth_config_id': 'main_auth_config_id'
     }
 
-    def __init__(self):
+    def __init__(self, main_auth_config_id=None):
         r"""ShowAssistAuthConfigRequest
 
         The model defined in huaweicloud sdk
 
+        :param main_auth_config_id: 主认证配置id
+        :type main_auth_config_id: str
         """
         
         
+
+        self._main_auth_config_id = None
         self.discriminator = None
+
+        if main_auth_config_id is not None:
+            self.main_auth_config_id = main_auth_config_id
+
+    @property
+    def main_auth_config_id(self):
+        r"""Gets the main_auth_config_id of this ShowAssistAuthConfigRequest.
+
+        主认证配置id
+
+        :return: The main_auth_config_id of this ShowAssistAuthConfigRequest.
+        :rtype: str
+        """
+        return self._main_auth_config_id
+
+    @main_auth_config_id.setter
+    def main_auth_config_id(self, main_auth_config_id):
+        r"""Sets the main_auth_config_id of this ShowAssistAuthConfigRequest.
+
+        主认证配置id
+
+        :param main_auth_config_id: The main_auth_config_id of this ShowAssistAuthConfigRequest.
+        :type main_auth_config_id: str
+        """
+        self._main_auth_config_id = main_auth_config_id
 
     def to_dict(self):
         result = {}

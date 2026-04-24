@@ -21,6 +21,7 @@ class ListUserEventsRequest:
         'event_type': 'str',
         'resource_id': 'str',
         'resource_name': 'str',
+        'domain': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -32,11 +33,12 @@ class ListUserEventsRequest:
         'event_type': 'event_type',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
+        'domain': 'domain',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, start_time=None, end_time=None, username=None, event_type=None, resource_id=None, resource_name=None, offset=None, limit=None):
+    def __init__(self, start_time=None, end_time=None, username=None, event_type=None, resource_id=None, resource_name=None, domain=None, offset=None, limit=None):
         r"""ListUserEventsRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ListUserEventsRequest:
         :type resource_id: str
         :param resource_name: 操作资源名称。
         :type resource_name: str
+        :param domain: 域名
+        :type domain: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
         :param limit: 用于分页查询，返回用户事件数量限制，取值范围0-1000。如果不指定，默认为100。
@@ -67,6 +71,7 @@ class ListUserEventsRequest:
         self._event_type = None
         self._resource_id = None
         self._resource_name = None
+        self._domain = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -81,6 +86,8 @@ class ListUserEventsRequest:
             self.resource_id = resource_id
         if resource_name is not None:
             self.resource_name = resource_name
+        if domain is not None:
+            self.domain = domain
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -217,6 +224,28 @@ class ListUserEventsRequest:
         :type resource_name: str
         """
         self._resource_name = resource_name
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ListUserEventsRequest.
+
+        域名
+
+        :return: The domain of this ListUserEventsRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ListUserEventsRequest.
+
+        域名
+
+        :param domain: The domain of this ListUserEventsRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def offset(self):

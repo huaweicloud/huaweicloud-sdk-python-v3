@@ -16,6 +16,7 @@ class OrderV5:
 
     openapi_types = {
         'order_id': 'str',
+        'job_id': 'str',
         'order_status': 'int',
         'result': 'str',
         'result_code': 'str',
@@ -24,19 +25,22 @@ class OrderV5:
 
     attribute_map = {
         'order_id': 'order_id',
+        'job_id': 'job_id',
         'order_status': 'order_status',
         'result': 'result',
         'result_code': 'result_code',
         'result_msg': 'result_msg'
     }
 
-    def __init__(self, order_id=None, order_status=None, result=None, result_code=None, result_msg=None):
+    def __init__(self, order_id=None, job_id=None, order_status=None, result=None, result_code=None, result_msg=None):
         r"""OrderV5
 
         The model defined in huaweicloud sdk
 
         :param order_id: 订单id。
         :type order_id: str
+        :param job_id: jobId。
+        :type job_id: str
         :param order_status: 订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货。
         :type order_status: int
         :param result: 结果，SUCCESS:成功； FAIL：失败。
@@ -50,6 +54,7 @@ class OrderV5:
         
 
         self._order_id = None
+        self._job_id = None
         self._order_status = None
         self._result = None
         self._result_code = None
@@ -58,6 +63,8 @@ class OrderV5:
 
         if order_id is not None:
             self.order_id = order_id
+        if job_id is not None:
+            self.job_id = job_id
         if order_status is not None:
             self.order_status = order_status
         if result is not None:
@@ -88,6 +95,28 @@ class OrderV5:
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this OrderV5.
+
+        jobId。
+
+        :return: The job_id of this OrderV5.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this OrderV5.
+
+        jobId。
+
+        :param job_id: The job_id of this OrderV5.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     @property
     def order_status(self):

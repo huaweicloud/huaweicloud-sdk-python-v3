@@ -34,7 +34,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
         :param username: 用户名。
         :type username: str
-        :param biz_type: 接入阶段 | APP - 应用 DESKTOP - 桌面。
+        :param biz_type: 接入阶段 | APP、SHARE_APP - 应用 DESKTOP、VDI - 桌面。
         :type biz_type: str
         :param stages: 接入各阶段详情。
         :type stages: list[:class:`huaweicloudsdkworkspace.v2.UserAccessStage`]
@@ -80,7 +80,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def biz_type(self):
         r"""Gets the biz_type of this ShowUserAccessStagesResponse.
 
-        接入阶段 | APP - 应用 DESKTOP - 桌面。
+        接入阶段 | APP、SHARE_APP - 应用 DESKTOP、VDI - 桌面。
 
         :return: The biz_type of this ShowUserAccessStagesResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this ShowUserAccessStagesResponse.
 
-        接入阶段 | APP - 应用 DESKTOP - 桌面。
+        接入阶段 | APP、SHARE_APP - 应用 DESKTOP、VDI - 桌面。
 
         :param biz_type: The biz_type of this ShowUserAccessStagesResponse.
         :type biz_type: str

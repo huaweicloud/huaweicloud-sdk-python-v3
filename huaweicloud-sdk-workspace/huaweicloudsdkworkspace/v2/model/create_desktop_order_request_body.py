@@ -33,7 +33,7 @@ class CreateDesktopOrderRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;。
         :type enterprise_project_id: str
         :param agency_urn: 授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
         :type agency_urn: str
@@ -63,7 +63,7 @@ class CreateDesktopOrderRequestBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateDesktopOrderRequestBody.
 
-        企业项目ID，默认\"0。\"
+        企业项目ID，默认\"0\"。
 
         :return: The enterprise_project_id of this CreateDesktopOrderRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class CreateDesktopOrderRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateDesktopOrderRequestBody.
 
-        企业项目ID，默认\"0。\"
+        企业项目ID，默认\"0\"。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateDesktopOrderRequestBody.
         :type enterprise_project_id: str

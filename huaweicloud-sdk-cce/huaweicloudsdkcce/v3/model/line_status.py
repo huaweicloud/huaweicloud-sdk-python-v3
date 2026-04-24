@@ -17,7 +17,7 @@ class LineStatus:
     openapi_types = {
         'start_point': 'Point',
         'end_point': 'Point',
-        'critical': 'str'
+        'critical': 'bool'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class LineStatus:
         :param end_point: 
         :type end_point: :class:`huaweicloudsdkcce.v3.Point`
         :param critical: 表示是否为关键线路（关键线路未执行无法取消升级流程）
-        :type critical: str
+        :type critical: bool
         """
         
         
@@ -96,7 +96,7 @@ class LineStatus:
         表示是否为关键线路（关键线路未执行无法取消升级流程）
 
         :return: The critical of this LineStatus.
-        :rtype: str
+        :rtype: bool
         """
         return self._critical
 
@@ -107,7 +107,7 @@ class LineStatus:
         表示是否为关键线路（关键线路未执行无法取消升级流程）
 
         :param critical: The critical of this LineStatus.
-        :type critical: str
+        :type critical: bool
         """
         self._critical = critical
 

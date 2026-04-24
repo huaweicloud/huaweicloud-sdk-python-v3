@@ -2935,8 +2935,6 @@ class DcClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'vif_peer_id' in local_var_params:
-            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
 
         query_params = []
         if 'marker' in local_var_params:

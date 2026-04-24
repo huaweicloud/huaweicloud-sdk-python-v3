@@ -16,15 +16,19 @@ class ShowInstanceResultRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'workspace': 'str'
+        'workspace': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'workspace': 'workspace'
+        'workspace': 'workspace',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, workspace=None):
+    def __init__(self, instance_id=None, workspace=None, limit=None, offset=None):
         r"""ShowInstanceResultRequest
 
         The model defined in huaweicloud sdk
@@ -33,16 +37,26 @@ class ShowInstanceResultRequest:
         :type instance_id: str
         :param workspace: DataArts Studio工作空间ID
         :type workspace: str
+        :param limit: 每页的记录数，取值范围为0~100。
+        :type limit: int
+        :param offset: 分页偏移量，最小值为0。
+        :type offset: int
         """
         
         
 
         self._instance_id = None
         self._workspace = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.workspace = workspace
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def instance_id(self):
@@ -87,6 +101,50 @@ class ShowInstanceResultRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowInstanceResultRequest.
+
+        每页的记录数，取值范围为0~100。
+
+        :return: The limit of this ShowInstanceResultRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowInstanceResultRequest.
+
+        每页的记录数，取值范围为0~100。
+
+        :param limit: The limit of this ShowInstanceResultRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowInstanceResultRequest.
+
+        分页偏移量，最小值为0。
+
+        :return: The offset of this ShowInstanceResultRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowInstanceResultRequest.
+
+        分页偏移量，最小值为0。
+
+        :param offset: The offset of this ShowInstanceResultRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

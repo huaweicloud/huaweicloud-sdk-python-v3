@@ -27,6 +27,8 @@ class ApplyWorkspaceAdDomain:
         'standby_dns_ip': 'str',
         'delete_computer_object': 'int',
         'use_ldaps': 'bool',
+        'cba_enabled': 'bool',
+        'certificate_id': 'str',
         'tls_config': 'TlsConfig'
     }
 
@@ -43,10 +45,12 @@ class ApplyWorkspaceAdDomain:
         'standby_dns_ip': 'standby_dns_ip',
         'delete_computer_object': 'delete_computer_object',
         'use_ldaps': 'use_ldaps',
+        'cba_enabled': 'cba_enabled',
+        'certificate_id': 'certificate_id',
         'tls_config': 'tls_config'
     }
 
-    def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, domain_password=None, active_domain_ip=None, active_domain_name=None, standby_domain_ip=None, standby_domain_name=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None):
+    def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, domain_password=None, active_domain_ip=None, active_domain_name=None, standby_domain_ip=None, standby_domain_name=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, cba_enabled=None, certificate_id=None, tls_config=None):
         r"""ApplyWorkspaceAdDomain
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class ApplyWorkspaceAdDomain:
         :type delete_computer_object: int
         :param use_ldaps: 是否开启LDAPS。
         :type use_ldaps: bool
+        :param cba_enabled: 是否开启智能卡认证
+        :type cba_enabled: bool
+        :param certificate_id: 智能卡证书id
+        :type certificate_id: str
         :param tls_config: 
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
         """
@@ -93,6 +101,8 @@ class ApplyWorkspaceAdDomain:
         self._standby_dns_ip = None
         self._delete_computer_object = None
         self._use_ldaps = None
+        self._cba_enabled = None
+        self._certificate_id = None
         self._tls_config = None
         self.discriminator = None
 
@@ -119,6 +129,10 @@ class ApplyWorkspaceAdDomain:
             self.delete_computer_object = delete_computer_object
         if use_ldaps is not None:
             self.use_ldaps = use_ldaps
+        if cba_enabled is not None:
+            self.cba_enabled = cba_enabled
+        if certificate_id is not None:
+            self.certificate_id = certificate_id
         if tls_config is not None:
             self.tls_config = tls_config
 
@@ -385,6 +399,50 @@ class ApplyWorkspaceAdDomain:
         :type use_ldaps: bool
         """
         self._use_ldaps = use_ldaps
+
+    @property
+    def cba_enabled(self):
+        r"""Gets the cba_enabled of this ApplyWorkspaceAdDomain.
+
+        是否开启智能卡认证
+
+        :return: The cba_enabled of this ApplyWorkspaceAdDomain.
+        :rtype: bool
+        """
+        return self._cba_enabled
+
+    @cba_enabled.setter
+    def cba_enabled(self, cba_enabled):
+        r"""Sets the cba_enabled of this ApplyWorkspaceAdDomain.
+
+        是否开启智能卡认证
+
+        :param cba_enabled: The cba_enabled of this ApplyWorkspaceAdDomain.
+        :type cba_enabled: bool
+        """
+        self._cba_enabled = cba_enabled
+
+    @property
+    def certificate_id(self):
+        r"""Gets the certificate_id of this ApplyWorkspaceAdDomain.
+
+        智能卡证书id
+
+        :return: The certificate_id of this ApplyWorkspaceAdDomain.
+        :rtype: str
+        """
+        return self._certificate_id
+
+    @certificate_id.setter
+    def certificate_id(self, certificate_id):
+        r"""Sets the certificate_id of this ApplyWorkspaceAdDomain.
+
+        智能卡证书id
+
+        :param certificate_id: The certificate_id of this ApplyWorkspaceAdDomain.
+        :type certificate_id: str
+        """
+        self._certificate_id = certificate_id
 
     @property
     def tls_config(self):

@@ -22,6 +22,7 @@ class UpdateDesktopPoolAttributesReq:
         'disconnected_retention_period': 'int',
         'enable_autoscale': 'bool',
         'autoscale_policy': 'AutoscalePolicy',
+        'user_reset_policy': 'UserResetPolicy',
         'in_maintenance_mode': 'bool',
         'desktop_name_policy_id': 'str',
         'availability_zone': 'str',
@@ -41,6 +42,7 @@ class UpdateDesktopPoolAttributesReq:
         'disconnected_retention_period': 'disconnected_retention_period',
         'enable_autoscale': 'enable_autoscale',
         'autoscale_policy': 'autoscale_policy',
+        'user_reset_policy': 'user_reset_policy',
         'in_maintenance_mode': 'in_maintenance_mode',
         'desktop_name_policy_id': 'desktop_name_policy_id',
         'availability_zone': 'availability_zone',
@@ -52,12 +54,12 @@ class UpdateDesktopPoolAttributesReq:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, ou_name=None, tags=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, in_maintenance_mode=None, desktop_name_policy_id=None, availability_zone=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, ou_name=None, tags=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, user_reset_policy=None, in_maintenance_mode=None, desktop_name_policy_id=None, availability_zone=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, enterprise_project_id=None):
         r"""UpdateDesktopPoolAttributesReq
 
         The model defined in huaweicloud sdk
 
-        :param name: 桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        :param name: 桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
         :type name: str
         :param description: 桌面池描述。
         :type description: str
@@ -71,6 +73,8 @@ class UpdateDesktopPoolAttributesReq:
         :type enable_autoscale: bool
         :param autoscale_policy: 
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
+        :param user_reset_policy: 
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
         :param in_maintenance_mode: 是否处于管理员维护模式。
         :type in_maintenance_mode: bool
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
@@ -100,6 +104,7 @@ class UpdateDesktopPoolAttributesReq:
         self._disconnected_retention_period = None
         self._enable_autoscale = None
         self._autoscale_policy = None
+        self._user_reset_policy = None
         self._in_maintenance_mode = None
         self._desktop_name_policy_id = None
         self._availability_zone = None
@@ -125,6 +130,8 @@ class UpdateDesktopPoolAttributesReq:
             self.enable_autoscale = enable_autoscale
         if autoscale_policy is not None:
             self.autoscale_policy = autoscale_policy
+        if user_reset_policy is not None:
+            self.user_reset_policy = user_reset_policy
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
         if desktop_name_policy_id is not None:
@@ -148,7 +155,7 @@ class UpdateDesktopPoolAttributesReq:
     def name(self):
         r"""Gets the name of this UpdateDesktopPoolAttributesReq.
 
-        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
 
         :return: The name of this UpdateDesktopPoolAttributesReq.
         :rtype: str
@@ -159,7 +166,7 @@ class UpdateDesktopPoolAttributesReq:
     def name(self, name):
         r"""Sets the name of this UpdateDesktopPoolAttributesReq.
 
-        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
 
         :param name: The name of this UpdateDesktopPoolAttributesReq.
         :type name: str
@@ -293,6 +300,24 @@ class UpdateDesktopPoolAttributesReq:
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
         """
         self._autoscale_policy = autoscale_policy
+
+    @property
+    def user_reset_policy(self):
+        r"""Gets the user_reset_policy of this UpdateDesktopPoolAttributesReq.
+
+        :return: The user_reset_policy of this UpdateDesktopPoolAttributesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        return self._user_reset_policy
+
+    @user_reset_policy.setter
+    def user_reset_policy(self, user_reset_policy):
+        r"""Sets the user_reset_policy of this UpdateDesktopPoolAttributesReq.
+
+        :param user_reset_policy: The user_reset_policy of this UpdateDesktopPoolAttributesReq.
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        self._user_reset_policy = user_reset_policy
 
     @property
     def in_maintenance_mode(self):

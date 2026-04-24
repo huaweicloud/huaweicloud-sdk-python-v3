@@ -17,20 +17,26 @@ class DesktopMetric:
     openapi_types = {
         'resource_id': 'str',
         'resource_pool_id': 'str',
+        'resource_pool_name': 'str',
         'resource_name': 'str',
         'enterprise_project_id': 'str',
+        'machine_sid': 'str',
+        'latest_connect_username': 'str',
         'metric': 'list[Metric]'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_pool_id': 'resource_pool_id',
+        'resource_pool_name': 'resource_pool_name',
         'resource_name': 'resource_name',
         'enterprise_project_id': 'enterprise_project_id',
+        'machine_sid': 'machine_sid',
+        'latest_connect_username': 'latest_connect_username',
         'metric': 'metric'
     }
 
-    def __init__(self, resource_id=None, resource_pool_id=None, resource_name=None, enterprise_project_id=None, metric=None):
+    def __init__(self, resource_id=None, resource_pool_id=None, resource_pool_name=None, resource_name=None, enterprise_project_id=None, machine_sid=None, latest_connect_username=None, metric=None):
         r"""DesktopMetric
 
         The model defined in huaweicloud sdk
@@ -39,10 +45,16 @@ class DesktopMetric:
         :type resource_id: str
         :param resource_pool_id: 桌面池ID(仅桌面池中的桌面存在该字段)。
         :type resource_pool_id: str
+        :param resource_pool_name: 桌面池名称(仅桌面池中的桌面存在该字段)。
+        :type resource_pool_name: str
         :param resource_name: 桌面名称。
         :type resource_name: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param machine_sid: 虚机sid
+        :type machine_sid: str
+        :param latest_connect_username: 最近一个登录的用户
+        :type latest_connect_username: str
         :param metric: 统计信息 * &#x60;desktop_usage&#x60; -  桌面使用时长(单位:秒) * &#x60;desktop_idle_duration&#x60; -  桌面空闲时长(单位:秒)
         :type metric: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
         """
@@ -51,8 +63,11 @@ class DesktopMetric:
 
         self._resource_id = None
         self._resource_pool_id = None
+        self._resource_pool_name = None
         self._resource_name = None
         self._enterprise_project_id = None
+        self._machine_sid = None
+        self._latest_connect_username = None
         self._metric = None
         self.discriminator = None
 
@@ -60,10 +75,16 @@ class DesktopMetric:
             self.resource_id = resource_id
         if resource_pool_id is not None:
             self.resource_pool_id = resource_pool_id
+        if resource_pool_name is not None:
+            self.resource_pool_name = resource_pool_name
         if resource_name is not None:
             self.resource_name = resource_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if machine_sid is not None:
+            self.machine_sid = machine_sid
+        if latest_connect_username is not None:
+            self.latest_connect_username = latest_connect_username
         if metric is not None:
             self.metric = metric
 
@@ -112,6 +133,28 @@ class DesktopMetric:
         self._resource_pool_id = resource_pool_id
 
     @property
+    def resource_pool_name(self):
+        r"""Gets the resource_pool_name of this DesktopMetric.
+
+        桌面池名称(仅桌面池中的桌面存在该字段)。
+
+        :return: The resource_pool_name of this DesktopMetric.
+        :rtype: str
+        """
+        return self._resource_pool_name
+
+    @resource_pool_name.setter
+    def resource_pool_name(self, resource_pool_name):
+        r"""Sets the resource_pool_name of this DesktopMetric.
+
+        桌面池名称(仅桌面池中的桌面存在该字段)。
+
+        :param resource_pool_name: The resource_pool_name of this DesktopMetric.
+        :type resource_pool_name: str
+        """
+        self._resource_pool_name = resource_pool_name
+
+    @property
     def resource_name(self):
         r"""Gets the resource_name of this DesktopMetric.
 
@@ -154,6 +197,50 @@ class DesktopMetric:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def machine_sid(self):
+        r"""Gets the machine_sid of this DesktopMetric.
+
+        虚机sid
+
+        :return: The machine_sid of this DesktopMetric.
+        :rtype: str
+        """
+        return self._machine_sid
+
+    @machine_sid.setter
+    def machine_sid(self, machine_sid):
+        r"""Sets the machine_sid of this DesktopMetric.
+
+        虚机sid
+
+        :param machine_sid: The machine_sid of this DesktopMetric.
+        :type machine_sid: str
+        """
+        self._machine_sid = machine_sid
+
+    @property
+    def latest_connect_username(self):
+        r"""Gets the latest_connect_username of this DesktopMetric.
+
+        最近一个登录的用户
+
+        :return: The latest_connect_username of this DesktopMetric.
+        :rtype: str
+        """
+        return self._latest_connect_username
+
+    @latest_connect_username.setter
+    def latest_connect_username(self, latest_connect_username):
+        r"""Sets the latest_connect_username of this DesktopMetric.
+
+        最近一个登录的用户
+
+        :param latest_connect_username: The latest_connect_username of this DesktopMetric.
+        :type latest_connect_username: str
+        """
+        self._latest_connect_username = latest_connect_username
 
     @property
     def metric(self):

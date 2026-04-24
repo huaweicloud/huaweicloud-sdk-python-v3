@@ -17,28 +17,42 @@ class SetBucketObjectLockDefaultRetention:
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'str'
+        'mode': 'str',
+        'days': 'int',
+        'years': 'int'
     }
 
     attribute_map = {
-        'mode': 'Mode'
+        'mode': 'Mode',
+        'days': 'Days',
+        'years': 'Years'
     }
 
-    def __init__(self, mode=None):
+    def __init__(self, mode=None, days=None, years=None):
         r"""SetBucketObjectLockDefaultRetention
 
         The model defined in huaweicloud sdk
 
         :param mode: Definition: WORM retention policy of a bucket. Constraints: None Range: COMPLIANCE: compliance mode Default value: None 
         :type mode: str
+        :param days: Definition: Number of retention days. Constraints: Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 36500 Default value: None 
+        :type days: int
+        :param years: Definition: Default retention years. Constraints: One year is considered as 365 days, regardless of the leap year. Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 100 Default value: None 
+        :type years: int
         """
         
         
 
         self._mode = None
+        self._days = None
+        self._years = None
         self.discriminator = None
 
         self.mode = mode
+        if days is not None:
+            self.days = days
+        if years is not None:
+            self.years = years
 
     @property
     def mode(self):
@@ -61,6 +75,50 @@ class SetBucketObjectLockDefaultRetention:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def days(self):
+        r"""Gets the days of this SetBucketObjectLockDefaultRetention.
+
+        Definition: Number of retention days. Constraints: Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 36500 Default value: None 
+
+        :return: The days of this SetBucketObjectLockDefaultRetention.
+        :rtype: int
+        """
+        return self._days
+
+    @days.setter
+    def days(self, days):
+        r"""Sets the days of this SetBucketObjectLockDefaultRetention.
+
+        Definition: Number of retention days. Constraints: Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 36500 Default value: None 
+
+        :param days: The days of this SetBucketObjectLockDefaultRetention.
+        :type days: int
+        """
+        self._days = days
+
+    @property
+    def years(self):
+        r"""Gets the years of this SetBucketObjectLockDefaultRetention.
+
+        Definition: Default retention years. Constraints: One year is considered as 365 days, regardless of the leap year. Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 100 Default value: None 
+
+        :return: The years of this SetBucketObjectLockDefaultRetention.
+        :rtype: int
+        """
+        return self._years
+
+    @years.setter
+    def years(self, years):
+        r"""Sets the years of this SetBucketObjectLockDefaultRetention.
+
+        Definition: Default retention years. Constraints: One year is considered as 365 days, regardless of the leap year. Only one of Days and Years can be set to a value other than 0. The value must be within the allowed range. Range: 1 to 100 Default value: None 
+
+        :param years: The years of this SetBucketObjectLockDefaultRetention.
+        :type years: int
+        """
+        self._years = years
 
     def to_dict(self):
         result = {}

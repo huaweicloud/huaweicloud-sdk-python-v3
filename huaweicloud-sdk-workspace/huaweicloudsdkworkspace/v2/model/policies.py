@@ -29,7 +29,8 @@ class Policies:
         'custom': 'PoliciesCustom',
         'record_audit': 'PoliciesRecordAudit',
         'cloud_storage': 'PoliciesCloudStorage',
-        'user_profile': 'PoliciesUserProfile'
+        'user_profile': 'PoliciesUserProfile',
+        'domain_control': 'PoliciesDomainControl'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class Policies:
         'custom': 'custom',
         'record_audit': 'record_audit',
         'cloud_storage': 'cloud_storage',
-        'user_profile': 'user_profile'
+        'user_profile': 'user_profile',
+        'domain_control': 'domain_control'
     }
 
-    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, watermark=None, keyboard_mouse=None, seamless=None, personalized_data_mgmt=None, custom=None, record_audit=None, cloud_storage=None, user_profile=None):
+    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, watermark=None, keyboard_mouse=None, seamless=None, personalized_data_mgmt=None, custom=None, record_audit=None, cloud_storage=None, user_profile=None, domain_control=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class Policies:
         :type cloud_storage: :class:`huaweicloudsdkworkspace.v2.PoliciesCloudStorage`
         :param user_profile: 
         :type user_profile: :class:`huaweicloudsdkworkspace.v2.PoliciesUserProfile`
+        :param domain_control: 
+        :type domain_control: :class:`huaweicloudsdkworkspace.v2.PoliciesDomainControl`
         """
         
         
@@ -104,6 +108,7 @@ class Policies:
         self._record_audit = None
         self._cloud_storage = None
         self._user_profile = None
+        self._domain_control = None
         self.discriminator = None
 
         if peripherals is not None:
@@ -136,6 +141,8 @@ class Policies:
             self.cloud_storage = cloud_storage
         if user_profile is not None:
             self.user_profile = user_profile
+        if domain_control is not None:
+            self.domain_control = domain_control
 
     @property
     def peripherals(self):
@@ -406,6 +413,24 @@ class Policies:
         :type user_profile: :class:`huaweicloudsdkworkspace.v2.PoliciesUserProfile`
         """
         self._user_profile = user_profile
+
+    @property
+    def domain_control(self):
+        r"""Gets the domain_control of this Policies.
+
+        :return: The domain_control of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDomainControl`
+        """
+        return self._domain_control
+
+    @domain_control.setter
+    def domain_control(self, domain_control):
+        r"""Sets the domain_control of this Policies.
+
+        :param domain_control: The domain_control of this Policies.
+        :type domain_control: :class:`huaweicloudsdkworkspace.v2.PoliciesDomainControl`
+        """
+        self._domain_control = domain_control
 
     def to_dict(self):
         result = {}

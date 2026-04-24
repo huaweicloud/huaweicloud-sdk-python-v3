@@ -34,7 +34,9 @@ class ShowScreenRecordResponse(SdkResponse):
         'start_time': 'str',
         'end_time': 'str',
         'update_time': 'str',
-        'duration': 'int'
+        'duration': 'int',
+        'upload_type': 'str',
+        'site_type': 'str'
     }
 
     attribute_map = {
@@ -56,10 +58,12 @@ class ShowScreenRecordResponse(SdkResponse):
         'start_time': 'start_time',
         'end_time': 'end_time',
         'update_time': 'update_time',
-        'duration': 'duration'
+        'duration': 'duration',
+        'upload_type': 'upload_type',
+        'site_type': 'site_type'
     }
 
-    def __init__(self, id=None, desktop_id=None, desktop_name=None, desktop_pool_id=None, username=None, size=None, type=None, status=None, policy_id=None, obs_bucket=None, file_directory=None, video_filename=None, video_file_sha256=None, event_filename=None, event_file_sha256=None, start_time=None, end_time=None, update_time=None, duration=None):
+    def __init__(self, id=None, desktop_id=None, desktop_name=None, desktop_pool_id=None, username=None, size=None, type=None, status=None, policy_id=None, obs_bucket=None, file_directory=None, video_filename=None, video_file_sha256=None, event_filename=None, event_file_sha256=None, start_time=None, end_time=None, update_time=None, duration=None, upload_type=None, site_type=None):
         r"""ShowScreenRecordResponse
 
         The model defined in huaweicloud sdk
@@ -102,6 +106,10 @@ class ShowScreenRecordResponse(SdkResponse):
         :type update_time: str
         :param duration: 视频时长（秒）。
         :type duration: int
+        :param upload_type: 上传类型。
+        :type upload_type: str
+        :param site_type: 站点类型。
+        :type site_type: str
         """
         
         super().__init__()
@@ -125,6 +133,8 @@ class ShowScreenRecordResponse(SdkResponse):
         self._end_time = None
         self._update_time = None
         self._duration = None
+        self._upload_type = None
+        self._site_type = None
         self.discriminator = None
 
         if id is not None:
@@ -165,6 +175,10 @@ class ShowScreenRecordResponse(SdkResponse):
             self.update_time = update_time
         if duration is not None:
             self.duration = duration
+        if upload_type is not None:
+            self.upload_type = upload_type
+        if site_type is not None:
+            self.site_type = site_type
 
     @property
     def id(self):
@@ -583,6 +597,50 @@ class ShowScreenRecordResponse(SdkResponse):
         :type duration: int
         """
         self._duration = duration
+
+    @property
+    def upload_type(self):
+        r"""Gets the upload_type of this ShowScreenRecordResponse.
+
+        上传类型。
+
+        :return: The upload_type of this ShowScreenRecordResponse.
+        :rtype: str
+        """
+        return self._upload_type
+
+    @upload_type.setter
+    def upload_type(self, upload_type):
+        r"""Sets the upload_type of this ShowScreenRecordResponse.
+
+        上传类型。
+
+        :param upload_type: The upload_type of this ShowScreenRecordResponse.
+        :type upload_type: str
+        """
+        self._upload_type = upload_type
+
+    @property
+    def site_type(self):
+        r"""Gets the site_type of this ShowScreenRecordResponse.
+
+        站点类型。
+
+        :return: The site_type of this ShowScreenRecordResponse.
+        :rtype: str
+        """
+        return self._site_type
+
+    @site_type.setter
+    def site_type(self, site_type):
+        r"""Sets the site_type of this ShowScreenRecordResponse.
+
+        站点类型。
+
+        :param site_type: The site_type of this ShowScreenRecordResponse.
+        :type site_type: str
+        """
+        self._site_type = site_type
 
     def to_dict(self):
         import warnings

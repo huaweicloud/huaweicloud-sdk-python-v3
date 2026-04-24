@@ -38,7 +38,8 @@ class ListPoolDesktopsDetailRequest:
         'is_share_desktop': 'bool',
         'subnet_id': 'str',
         'is_support_internet': 'bool',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'isolated': 'bool'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class ListPoolDesktopsDetailRequest:
         'is_share_desktop': 'is_share_desktop',
         'subnet_id': 'subnet_id',
         'is_support_internet': 'is_support_internet',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'isolated': 'isolated'
     }
 
-    def __init__(self, pool_id=None, inconsistent_type=None, offset=None, limit=None, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, desktop_type=None, tag=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
+    def __init__(self, pool_id=None, inconsistent_type=None, offset=None, limit=None, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, desktop_type=None, tag=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, isolated=None):
         r"""ListPoolDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -121,6 +123,8 @@ class ListPoolDesktopsDetailRequest:
         :type is_support_internet: bool
         :param availability_zone: 查询可用区。
         :type availability_zone: str
+        :param isolated: 动态池桌面隔离状态：false表示未隔离，true表示已隔离。
+        :type isolated: bool
         """
         
         
@@ -149,6 +153,7 @@ class ListPoolDesktopsDetailRequest:
         self._subnet_id = None
         self._is_support_internet = None
         self._availability_zone = None
+        self._isolated = None
         self.discriminator = None
 
         self.pool_id = pool_id
@@ -198,6 +203,8 @@ class ListPoolDesktopsDetailRequest:
             self.is_support_internet = is_support_internet
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if isolated is not None:
+            self.isolated = isolated
 
     @property
     def pool_id(self):
@@ -726,6 +733,28 @@ class ListPoolDesktopsDetailRequest:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def isolated(self):
+        r"""Gets the isolated of this ListPoolDesktopsDetailRequest.
+
+        动态池桌面隔离状态：false表示未隔离，true表示已隔离。
+
+        :return: The isolated of this ListPoolDesktopsDetailRequest.
+        :rtype: bool
+        """
+        return self._isolated
+
+    @isolated.setter
+    def isolated(self, isolated):
+        r"""Sets the isolated of this ListPoolDesktopsDetailRequest.
+
+        动态池桌面隔离状态：false表示未隔离，true表示已隔离。
+
+        :param isolated: The isolated of this ListPoolDesktopsDetailRequest.
+        :type isolated: bool
+        """
+        self._isolated = isolated
 
     def to_dict(self):
         result = {}

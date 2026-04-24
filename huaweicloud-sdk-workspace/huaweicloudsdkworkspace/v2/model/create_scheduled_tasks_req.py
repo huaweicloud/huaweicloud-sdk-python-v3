@@ -34,7 +34,8 @@ class CreateScheduledTasksReq:
         'description': 'str',
         'extra_params': 'str',
         'apply_objects': 'list[ApplyObject]',
-        'wait_time': 'int'
+        'wait_time': 'int',
+        'life_cycle_exec_period': 'int'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CreateScheduledTasksReq:
         'description': 'description',
         'extra_params': 'extra_params',
         'apply_objects': 'apply_objects',
-        'wait_time': 'wait_time'
+        'wait_time': 'wait_time',
+        'life_cycle_exec_period': 'life_cycle_exec_period'
     }
 
-    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_type=None, task_name=None, force_execute=None, description=None, extra_params=None, apply_objects=None, wait_time=None):
+    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_type=None, task_name=None, force_execute=None, description=None, extra_params=None, apply_objects=None, wait_time=None, life_cycle_exec_period=None):
         r"""CreateScheduledTasksReq
 
         The model defined in huaweicloud sdk
@@ -91,7 +93,7 @@ class CreateScheduledTasksReq:
         :type life_cycle_type: str
         :param time_zone: 时区。
         :type time_zone: str
-        :param task_type: 任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
+        :param task_type: 任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照
         :type task_type: str
         :param task_name: 任务名称。
         :type task_name: str
@@ -105,6 +107,8 @@ class CreateScheduledTasksReq:
         :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObject`]
         :param wait_time: 触发式任务触发后，等待时长。
         :type wait_time: int
+        :param life_cycle_exec_period: 触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+        :type life_cycle_exec_period: int
         """
         
         
@@ -129,6 +133,7 @@ class CreateScheduledTasksReq:
         self._extra_params = None
         self._apply_objects = None
         self._wait_time = None
+        self._life_cycle_exec_period = None
         self.discriminator = None
 
         if scheduled_type is not None:
@@ -169,6 +174,8 @@ class CreateScheduledTasksReq:
             self.apply_objects = apply_objects
         if wait_time is not None:
             self.wait_time = wait_time
+        if life_cycle_exec_period is not None:
+            self.life_cycle_exec_period = life_cycle_exec_period
 
     @property
     def scheduled_type(self):
@@ -460,7 +467,7 @@ class CreateScheduledTasksReq:
     def task_type(self):
         r"""Gets the task_type of this CreateScheduledTasksReq.
 
-        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照
 
         :return: The task_type of this CreateScheduledTasksReq.
         :rtype: str
@@ -471,7 +478,7 @@ class CreateScheduledTasksReq:
     def task_type(self, task_type):
         r"""Sets the task_type of this CreateScheduledTasksReq.
 
-        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。 - DELETE_BLACK_ECS: 删除黑产ecs
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照
 
         :param task_type: The task_type of this CreateScheduledTasksReq.
         :type task_type: str
@@ -609,6 +616,28 @@ class CreateScheduledTasksReq:
         :type wait_time: int
         """
         self._wait_time = wait_time
+
+    @property
+    def life_cycle_exec_period(self):
+        r"""Gets the life_cycle_exec_period of this CreateScheduledTasksReq.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :return: The life_cycle_exec_period of this CreateScheduledTasksReq.
+        :rtype: int
+        """
+        return self._life_cycle_exec_period
+
+    @life_cycle_exec_period.setter
+    def life_cycle_exec_period(self, life_cycle_exec_period):
+        r"""Sets the life_cycle_exec_period of this CreateScheduledTasksReq.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :param life_cycle_exec_period: The life_cycle_exec_period of this CreateScheduledTasksReq.
+        :type life_cycle_exec_period: int
+        """
+        self._life_cycle_exec_period = life_cycle_exec_period
 
     def to_dict(self):
         result = {}

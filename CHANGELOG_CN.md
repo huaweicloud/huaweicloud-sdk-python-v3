@@ -1,3 +1,396 @@
+# 3.1.192 2026-04-24
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListFactorySearchBaselineInstances`
+    - `ListSearchFactoryEvents`
+    - `ListSearchFactoryBaselines`
+    - `CreateFactoryBaseline`
+    - `ListFactoryWorkspacesApproval`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstanceResult**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK DC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVifPeerDetections**
+    - 请求参数变更
+      - `- vif_peer_id`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UpdateDdmInstanceName`、`UpdateDdmInstanceSecurityGroup`、`RebuildDdmConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateJob**
+    - 请求参数变更
+      - `+ nodes.type: enum value [MRSSparkPython]`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ nodes.type: enum value [MRSSparkPython]`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ nodes.type: enum value [MRSSparkPython]`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ShowSubscriptionDetail`
+    - `DeleteSubscription`
+    - `ShowCompareUsersDetail`
+    - `ShowSmnTopicInfo`
+    - `ShowChildNum`
+    - `CreateSubscription`
+    - `UpdateSubscriptionInfo`
+    - `ShowReplayReportExportStatus`
+    - `ExportReplayReport`
+    - `ListSupportLinks`
+    - `ListExtraColumns`
+    - `PauseCompareJobs`
+    - `RestartCompareJobs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateComparePolicy**
+    - 请求参数变更
+      - `+ compare_policy: enum value [normal,manyToOne]`
+  - **ShowObjectMapping**
+    - 响应参数变更
+      - `+ object_mapping_list.object_name`
+  - **ListJobs**
+    - 请求参数变更
+      - `+ sort_key: enum value [name,status,create_time,net_type,job_direction,pay_mode]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListDNatInfo`、`BindDNat`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateAgency**
+    - 响应参数变更
+      - `* agency.duration: string -> object`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListLifeCycleTypeConfigurations`
+    - `ListScreenRecordsTrafficLimitConfig`
+    - `UpdateScreenRecordsTrafficLimitConfig`
+    - `ListSubscribeAiAssistantUsers`
+    - `SubscribeAiAssistant`
+    - `ShowAiAssistantUsageFrequency`
+    - `DownloadSpMetadata`
+    - `UpdateDcVnc`
+    - `ShowDomainsNew`
+    - `UpdateDomainNew`
+    - `CreateDomainNew`
+    - `CloseDomainNew`
+    - `SyncExternalUser`
+    - `UpdateFullSpeedRecordConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDesktopNamePolicy**
+    - 请求参数变更
+      - `+ prefix_truncation_enabled`
+  - **ShowScreenRecord**
+    - 响应参数变更
+      - `+ upload_type`
+      - `+ site_type`
+  - **ExportUsersNew**
+    - 请求参数变更
+      - `+ user_names`
+  - **ExportUserConnectionNew**
+    - 请求参数变更
+      - `+ domain`
+  - **CreateDesktopNamePolicy**
+    - 请求参数变更
+      - `+ prefix_truncation_enabled`
+  - **ListDesktopNamePolicy**
+    - 响应参数变更
+      - `+ desktop_name_policy_infos.prefix_truncation_enabled`
+  - **ShowDesktopPoolDetail**
+    - 响应参数变更
+      - `+ user_reset_policy`
+      - `+ image_resource_type`
+      - `+ isolation_num`
+      - `+ image_cloud_service_type`
+      - `+ domain`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **UpdateDesktopPool**
+    - 请求参数变更
+      - `+ user_reset_policy`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **CreateChangeOrder**
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateSubnetBandwidthChangeOrder**
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateResourcePackagesOrder**
+    - 请求参数变更
+      - `+ resource_packages.resource_package_name`
+      - `+ resource_packages.desktop_resource_spec_code`
+      - `+ resource_packages.effective_time`
+      - `+ resource_packages.is_auto_renew`
+      - `- resource_packages.cloud_service_type`
+      - `- resource_packages.resource_type`
+      - `- resource_packages.package_type`
+      - `- resource_packages.cpu`
+      - `- resource_packages.architecture`
+      - `- resource_packages.memory`
+      - `- resource_packages.domain_ids`
+      - `- resource_packages.description`
+      - `- resource_packages.resource_packages`
+      - `* resource_packages: list<DesktopResourcePackage> -> list<DesktopResourceItem>`
+    - 响应参数变更
+      - `+ job_id`
+  - **ListScheduledTasks**
+    - 响应参数变更
+      - `+ scheduled_tasks.life_cycle_exec_period`
+  - **CreateScheduledTasks**
+    - 请求参数变更
+      - `+ life_cycle_exec_period`
+      - `- task_type: enum value [DELETE_BLACK_ECS]`
+  - **ShowScheduledTasks**
+    - 响应参数变更
+      - `+ life_cycle_exec_period`
+  - **UpdateScheduledTasks**
+    - 请求参数变更
+      - `+ apply_object_update_type`
+      - `+ life_cycle_exec_period`
+  - **ListUserGroups**
+    - 请求参数变更
+      - `+ domain`
+      - `+ platform_type`
+    - 响应参数变更
+      - `+ user_groups.platform_type: enum value [UOS]`
+  - **ListUsersOfGroup**
+    - 请求参数变更
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+  - **ListTargetOfPolicyGroup**
+    - 响应参数变更
+      - `+ targets.target_domain`
+  - **ListScreenRecords**
+    - 响应参数变更
+      - `+ upload_type`
+      - `+ site_type`
+      - `+ screen_records.upload_type`
+      - `+ screen_records.site_type`
+  - **ListUsers**
+    - 请求参数变更
+      - `+ disabled`
+      - `+ platform_type`
+  - **ShowUserAccessStages**
+    - 响应参数变更
+      - `+ biz_type: enum value [SHARE_APP,VDI]`
+      - `+ stages.stage: enum value [MAIN_AUTH,MFA_AUTH,CLICK_ICON]`
+  - **ListUserEvents**
+    - 请求参数变更
+      - `+ domain`
+  - **CreateAgencies**
+    - 请求参数变更
+      - `+ scene: enum value [IMAGE_CREATION]`
+  - **CreateDesktopPool**
+    - 请求参数变更
+      - `+ user_reset_policy`
+      - `+ domain`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **ListDesktopPools**
+    - 响应参数变更
+      - `+ user_reset_policy`
+      - `+ image_resource_type`
+      - `+ isolation_num`
+      - `+ image_cloud_service_type`
+      - `+ domain`
+      - `+ desktop_pools.image_cloud_service_type`
+      - `+ desktop_pools.image_resource_type`
+      - `+ desktop_pools.user_reset_policy`
+      - `+ desktop_pools.isolation_num`
+      - `+ desktop_pools.domain`
+      - `+ desktop_pools.autoscale_policy.auto_isolation_enable`
+      - `+ desktop_pools.autoscale_policy.auto_isolation_max_num`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ domain`
+  - **CreateDesktopBatchOrder**
+    - 响应参数变更
+      - `+ orders.job_id`
+  - **CreateDesktopPoolChangeOrder**
+    - 响应参数变更
+      - `+ orders.job_id`
+  - **ShowAssistAuthConfig**
+    - 请求参数变更
+      - `+ main_auth_config_id`
+    - 响应参数变更
+      - `+ main_auth_config_id`
+  - **ListSiteConfigs**
+    - 响应参数变更
+      - `+ site_infos.network_config`
+  - **ListNatMappingConfigs**
+    - 响应参数变更
+      - `+ nat_vag_maps.assist_auth_enabled`
+  - **UpdateNatMappingConfigs**
+    - 请求参数变更
+      - `+ nat_vag_maps.assist_auth_enabled`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ site_configs.network_config.dc_vnc_ip`
+  - **ApplyWorkspace**
+    - 请求参数变更
+      - `+ ad_domains.cba_enabled`
+      - `+ ad_domains.certificate_id`
+  - **ListDesktopUsageMetric**
+    - 响应参数变更
+      - `+ items.resource_pool_name`
+      - `+ items.machine_sid`
+      - `+ items.latest_connect_username`
+  - **ListUserUsageMetric**
+    - 请求参数变更
+      - `+ domain`
+  - **ListPoolDesktopsDetail**
+    - 请求参数变更
+      - `+ isolated`
+      - `+ inconsistent_type: enum value [AUTO_ISOLATION]`
+    - 响应参数变更
+      - `+ pool_desktops.isolated`
+      - `+ pool_desktops.domain`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `+ desktop.isolated`
+      - `+ desktop.domain`
+  - **ListDesktopsDetail**
+    - 响应参数变更
+      - `+ desktops.isolated`
+      - `+ desktops.domain`
+  - **CreateDesktopOrder**
+    - 请求参数变更
+      - `+ hour_package_resources.create_desktops.domain`
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateOrder**
+    - 请求参数变更
+      - `+ resources.create_desktops.domain`
+      - `+ resources.create_desktop_pool.user_reset_policy`
+      - `+ resources.create_desktop_pool.domain`
+      - `+ resources.create_desktop_pool.autoscale_policy.auto_isolation_enable`
+      - `+ resources.create_desktop_pool.autoscale_policy.auto_isolation_max_num`
+      - `+ resources.subscribe_user_sharer.users.user_phone`
+      - `+ resources.subscribe_user_sharer.users.ai_func`
+    - 响应参数变更
+      - `+ job_id`
+  - **ListPoliciesOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **UpdatePoliciesOfPolicyGroup**
+    - 请求参数变更
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+    - 响应参数变更
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **ListOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ policy_groups.targets.target_domain`
+      - `+ policy_groups.policies.domain_control`
+      - `+ policy_groups.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_groups.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_groups.policies.session.vdi.ignore_power_status`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **ListPolicyDetailInfoById**
+    - 响应参数变更
+      - `+ policy_group.targets.target_domain`
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **ListPolicyGroupInfo**
+    - 响应参数变更
+      - `+ policy_groups.targets.target_domain`
+      - `+ policy_groups.policies.domain_control`
+      - `+ policy_groups.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_groups.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_groups.policies.session.vdi.ignore_power_status`
+
 # 3.1.191 2026-04-09
 
 ### HuaweiCloud SDK CloudDC

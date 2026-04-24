@@ -18,7 +18,7 @@ class ListAutopilotUpgradeWorkFlowsResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'items': 'UpgradeWorkFlow'
+        'items': 'list[UpgradeWorkFlow]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListAutopilotUpgradeWorkFlowsResponse(SdkResponse):
         :param api_version: API版本，固定值“v3”，该值不可修改。 
         :type api_version: str
         :param items: 
-        :type items: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`
+        :type items: list[:class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`]
         """
         
         super().__init__()
@@ -103,7 +103,7 @@ class ListAutopilotUpgradeWorkFlowsResponse(SdkResponse):
         r"""Gets the items of this ListAutopilotUpgradeWorkFlowsResponse.
 
         :return: The items of this ListAutopilotUpgradeWorkFlowsResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`
+        :rtype: list[:class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`]
         """
         return self._items
 
@@ -112,7 +112,7 @@ class ListAutopilotUpgradeWorkFlowsResponse(SdkResponse):
         r"""Sets the items of this ListAutopilotUpgradeWorkFlowsResponse.
 
         :param items: The items of this ListAutopilotUpgradeWorkFlowsResponse.
-        :type items: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`
+        :type items: list[:class:`huaweicloudsdkcce.v3.UpgradeWorkFlow`]
         """
         self._items = items
 

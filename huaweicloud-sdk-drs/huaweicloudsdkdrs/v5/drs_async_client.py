@@ -1424,6 +1424,73 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def create_subscription_async(self, request):
+        r"""创建订阅任务
+
+        创建订阅任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSubscription
+        :type request: :class:`huaweicloudsdkdrs.v5.CreateSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.CreateSubscriptionResponse`
+        """
+        http_info = self._create_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_subscription_async_invoker(self, request):
+        http_info = self._create_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_subscription_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/subscription",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_column_infos_async(self, request):
         r"""删除对象的列信息（列映射、列过滤）
 
@@ -1719,6 +1786,73 @@ class DrsAsyncClient(Client):
             "resource_path": "/v5/{project_id}/backup-migration-jobs/{job_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteReplicationJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_subscription_async(self, request):
+        r"""删除订阅任务
+
+        删除订阅任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSubscription
+        :type request: :class:`huaweicloudsdkdrs.v5.DeleteSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.DeleteSubscriptionResponse`
+        """
+        http_info = self._delete_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_subscription_async_invoker(self, request):
+        http_info = self._delete_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_subscription_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/subscriptions/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubscriptionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2234,6 +2368,75 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def export_replay_report_async(self, request):
+        r"""导出流量回放任务SQL报告文件
+
+        导出流量回放任务SQL报告文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportReplayReport
+        :type request: :class:`huaweicloudsdkdrs.v5.ExportReplayReportRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ExportReplayReportResponse`
+        """
+        http_info = self._export_replay_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_replay_report_async_invoker(self, request):
+        http_info = self._export_replay_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_replay_report_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/export-replay-sql",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportReplayReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_batch_create_jobs_async(self, request):
         r"""批量导入任务
 
@@ -2597,6 +2800,79 @@ class DrsAsyncClient(Client):
         if 'db_names' in local_var_params:
             query_params.append(('db_names', local_var_params['db_names']))
             collection_formats['db_names'] = 'csv'
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_extra_columns_async(self, request):
+        r"""查询数据加工对象的附加列信息
+
+        查询数据加工对象的附加列信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExtraColumns
+        :type request: :class:`huaweicloudsdkdrs.v5.ListExtraColumnsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ListExtraColumnsResponse`
+        """
+        http_info = self._list_extra_columns_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_extra_columns_async_invoker(self, request):
+        http_info = self._list_extra_columns_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_extra_columns_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/extra-column-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExtraColumnsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'is_only_show_sent' in local_var_params:
+            query_params.append(('is_only_show_sent', local_var_params['is_only_show_sent']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -3386,6 +3662,77 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def list_support_links_async(self, request):
+        r"""查询可用链路信息
+
+        根据参数不同，可查询实时迁移、实时同步、实时灾备等可用链路信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSupportLinks
+        :type request: :class:`huaweicloudsdkdrs.v5.ListSupportLinksRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ListSupportLinksResponse`
+        """
+        http_info = self._list_support_links_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_support_links_async_invoker(self, request):
+        http_info = self._list_support_links_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_support_links_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/support-links",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportLinksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_tags_async(self, request):
         r"""查询项目标签
 
@@ -3802,6 +4149,144 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def pause_compare_jobs_async(self, request):
+        r"""暂停对比任务
+
+        暂停对比任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PauseCompareJobs
+        :type request: :class:`huaweicloudsdkdrs.v5.PauseCompareJobsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.PauseCompareJobsResponse`
+        """
+        http_info = self._pause_compare_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def pause_compare_jobs_async_invoker(self, request):
+        http_info = self._pause_compare_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_compare_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseCompareJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_compare_jobs_async(self, request):
+        r"""继续对比任务
+
+        继续对比任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestartCompareJobs
+        :type request: :class:`huaweicloudsdkdrs.v5.RestartCompareJobsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.RestartCompareJobsResponse`
+        """
+        http_info = self._restart_compare_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_compare_jobs_async_invoker(self, request):
+        http_info = self._restart_compare_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_compare_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartCompareJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_actions_async(self, request):
         r"""获取指定任务操作信息
 
@@ -3907,6 +4392,77 @@ class DrsAsyncClient(Client):
             path_params['agency_name'] = local_var_params['agency_name']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_child_num_async(self, request):
+        r"""查询子任务数量
+
+        根据ddm/gaussv5数据库的分片个数计算对应子任务数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowChildNum
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowChildNumRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowChildNumResponse`
+        """
+        http_info = self._show_child_num_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_child_num_async_invoker(self, request):
+        http_info = self._show_child_num_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_child_num_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/child-count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowChildNumResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'db_type' in local_var_params:
+            query_params.append(('db_type', local_var_params['db_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4188,6 +4744,79 @@ class DrsAsyncClient(Client):
             path_params['compare_job_id'] = local_var_params['compare_job_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_compare_users_detail_async(self, request):
+        r"""查询用户对比详情
+
+        查询用户对比详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCompareUsersDetail
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowCompareUsersDetailRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowCompareUsersDetailResponse`
+        """
+        http_info = self._show_compare_users_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_compare_users_detail_async_invoker(self, request):
+        http_info = self._show_compare_users_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_compare_users_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare/users/{compare_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompareUsersDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'compare_job_id' in local_var_params:
+            path_params['compare_job_id'] = local_var_params['compare_job_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -5787,6 +6416,75 @@ class DrsAsyncClient(Client):
 
         return http_info
 
+    def show_replay_report_export_status_async(self, request):
+        r"""查询流量回放任务的报告文件导出状态
+
+        查询流量回放任务的报告文件导出状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowReplayReportExportStatus
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowReplayReportExportStatusRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowReplayReportExportStatusResponse`
+        """
+        http_info = self._show_replay_report_export_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_replay_report_export_status_async_invoker(self, request):
+        http_info = self._show_replay_report_export_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_replay_report_export_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/sql-export-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReplayReportExportStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'file_type' in local_var_params:
+            query_params.append(('file_type', local_var_params['file_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_replay_results_async(self, request):
         r"""查询录制回放结果
 
@@ -5901,6 +6599,138 @@ class DrsAsyncClient(Client):
             "resource_path": "/v5/{project_id}/backup-migration-jobs/{job_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowReplicationJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_smn_topic_info_async(self, request):
+        r"""SMN主题查询
+
+        SMN主题查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSmnTopicInfo
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowSmnTopicInfoRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowSmnTopicInfoResponse`
+        """
+        http_info = self._show_smn_topic_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_smn_topic_info_async_invoker(self, request):
+        http_info = self._show_smn_topic_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_smn_topic_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/smn/topic-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmnTopicInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_subscription_detail_async(self, request):
+        r"""查询订阅任务详情
+
+        查询订阅任务详情，可以根据企业项目和任务ID查询各订阅任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSubscriptionDetail
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowSubscriptionDetailRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowSubscriptionDetailResponse`
+        """
+        http_info = self._show_subscription_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_subscription_detail_async_invoker(self, request):
+        http_info = self._show_subscription_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_subscription_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/subscriptions/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubscriptionDetailResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6939,6 +7769,75 @@ class DrsAsyncClient(Client):
             "resource_path": "/v5/{project_id}/jobs/{job_id}/start-position",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateStartPositionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_subscription_info_async(self, request):
+        r"""修改订阅任务的信息
+
+        修改订阅任务的信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSubscriptionInfo
+        :type request: :class:`huaweicloudsdkdrs.v5.UpdateSubscriptionInfoRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.UpdateSubscriptionInfoResponse`
+        """
+        http_info = self._update_subscription_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_subscription_info_async_invoker(self, request):
+        http_info = self._update_subscription_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_subscription_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/subscriptions/{job_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubscriptionInfoResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

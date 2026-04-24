@@ -1,0 +1,141 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpdateFullSpeedRecordConfigResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'result_code': 'str',
+        'result_desc': 'str'
+    }
+
+    attribute_map = {
+        'result_code': 'result_code',
+        'result_desc': 'result_desc'
+    }
+
+    def __init__(self, result_code=None, result_desc=None):
+        r"""UpdateFullSpeedRecordConfigResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result_code: 结果码
+        :type result_code: str
+        :param result_desc: 结果信息
+        :type result_desc: str
+        """
+        
+        super().__init__()
+
+        self._result_code = None
+        self._result_desc = None
+        self.discriminator = None
+
+        if result_code is not None:
+            self.result_code = result_code
+        if result_desc is not None:
+            self.result_desc = result_desc
+
+    @property
+    def result_code(self):
+        r"""Gets the result_code of this UpdateFullSpeedRecordConfigResponse.
+
+        结果码
+
+        :return: The result_code of this UpdateFullSpeedRecordConfigResponse.
+        :rtype: str
+        """
+        return self._result_code
+
+    @result_code.setter
+    def result_code(self, result_code):
+        r"""Sets the result_code of this UpdateFullSpeedRecordConfigResponse.
+
+        结果码
+
+        :param result_code: The result_code of this UpdateFullSpeedRecordConfigResponse.
+        :type result_code: str
+        """
+        self._result_code = result_code
+
+    @property
+    def result_desc(self):
+        r"""Gets the result_desc of this UpdateFullSpeedRecordConfigResponse.
+
+        结果信息
+
+        :return: The result_desc of this UpdateFullSpeedRecordConfigResponse.
+        :rtype: str
+        """
+        return self._result_desc
+
+    @result_desc.setter
+    def result_desc(self, result_desc):
+        r"""Sets the result_desc of this UpdateFullSpeedRecordConfigResponse.
+
+        结果信息
+
+        :param result_desc: The result_desc of this UpdateFullSpeedRecordConfigResponse.
+        :type result_desc: str
+        """
+        self._result_desc = result_desc
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("UpdateFullSpeedRecordConfigResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpdateFullSpeedRecordConfigResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

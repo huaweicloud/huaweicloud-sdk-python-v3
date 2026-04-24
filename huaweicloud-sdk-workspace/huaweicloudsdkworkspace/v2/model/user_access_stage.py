@@ -39,7 +39,7 @@ class UserAccessStage:
 
         The model defined in huaweicloud sdk
 
-        :param stage: 接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
+        :param stage: 接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接 MAIN_AUTH - 主认证 MFA_AUTH - 辅助认证 CLICK_ICON - 点击应用/桌面。
         :type stage: str
         :param duration: 花费时长，单位：ms。
         :type duration: int
@@ -85,7 +85,7 @@ class UserAccessStage:
     def stage(self):
         r"""Gets the stage of this UserAccessStage.
 
-        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
+        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接 MAIN_AUTH - 主认证 MFA_AUTH - 辅助认证 CLICK_ICON - 点击应用/桌面。
 
         :return: The stage of this UserAccessStage.
         :rtype: str
@@ -96,7 +96,7 @@ class UserAccessStage:
     def stage(self, stage):
         r"""Sets the stage of this UserAccessStage.
 
-        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接。
+        接入阶段 | LOGIN - 登录 PRECONNECT - 预连接 CONNECT - 正式连接 MAIN_AUTH - 主认证 MFA_AUTH - 辅助认证 CLICK_ICON - 点击应用/桌面。
 
         :param stage: The stage of this UserAccessStage.
         :type stage: str

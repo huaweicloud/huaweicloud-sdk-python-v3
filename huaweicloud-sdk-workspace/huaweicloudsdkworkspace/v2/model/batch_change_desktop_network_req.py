@@ -35,9 +35,9 @@ class BatchChangeDesktopNetworkReq:
 
         :param desktop_ids: 桌面id列表，最小为1，最大为100。
         :type desktop_ids: list[str]
-        :param vpc_id: 待切换VPC的ID。
+        :param vpc_id: 待切换VPC的ID。选填。如果要修改网络，该字段必传
         :type vpc_id: str
-        :param subnet_id: 待切换子网的ID。
+        :param subnet_id: 待切换子网的ID。选填。如果要修改网络，该字段必传
         :type subnet_id: str
         :param security_group_ids: 安全组ID列表。
         :type security_group_ids: list[str]
@@ -52,8 +52,10 @@ class BatchChangeDesktopNetworkReq:
         self.discriminator = None
 
         self.desktop_ids = desktop_ids
-        self.vpc_id = vpc_id
-        self.subnet_id = subnet_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if security_group_ids is not None:
             self.security_group_ids = security_group_ids
 
@@ -83,7 +85,7 @@ class BatchChangeDesktopNetworkReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this BatchChangeDesktopNetworkReq.
 
-        待切换VPC的ID。
+        待切换VPC的ID。选填。如果要修改网络，该字段必传
 
         :return: The vpc_id of this BatchChangeDesktopNetworkReq.
         :rtype: str
@@ -94,7 +96,7 @@ class BatchChangeDesktopNetworkReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this BatchChangeDesktopNetworkReq.
 
-        待切换VPC的ID。
+        待切换VPC的ID。选填。如果要修改网络，该字段必传
 
         :param vpc_id: The vpc_id of this BatchChangeDesktopNetworkReq.
         :type vpc_id: str
@@ -105,7 +107,7 @@ class BatchChangeDesktopNetworkReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this BatchChangeDesktopNetworkReq.
 
-        待切换子网的ID。
+        待切换子网的ID。选填。如果要修改网络，该字段必传
 
         :return: The subnet_id of this BatchChangeDesktopNetworkReq.
         :rtype: str
@@ -116,7 +118,7 @@ class BatchChangeDesktopNetworkReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this BatchChangeDesktopNetworkReq.
 
-        待切换子网的ID。
+        待切换子网的ID。选填。如果要修改网络，该字段必传
 
         :param subnet_id: The subnet_id of this BatchChangeDesktopNetworkReq.
         :type subnet_id: str

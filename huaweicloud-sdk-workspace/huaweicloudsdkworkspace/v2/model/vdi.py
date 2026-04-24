@@ -22,7 +22,8 @@ class Vdi:
         'disconnect_hibernate_enable': 'bool',
         'disconnect_hibernate_options': 'VdiDisconnectHibernateOptions',
         'no_operation_hibernate_enable': 'bool',
-        'no_operation_hibernate_options': 'VdiNoOperationHibernateOptions'
+        'no_operation_hibernate_options': 'VdiNoOperationHibernateOptions',
+        'ignore_power_status': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class Vdi:
         'disconnect_hibernate_enable': 'disconnect_hibernate_enable',
         'disconnect_hibernate_options': 'disconnect_hibernate_options',
         'no_operation_hibernate_enable': 'no_operation_hibernate_enable',
-        'no_operation_hibernate_options': 'no_operation_hibernate_options'
+        'no_operation_hibernate_options': 'no_operation_hibernate_options',
+        'ignore_power_status': 'ignore_power_status'
     }
 
-    def __init__(self, auto_lock_enable=None, auto_lock_options=None, disconnect_logout_enable=None, disconnect_logout_options=None, disconnect_hibernate_enable=None, disconnect_hibernate_options=None, no_operation_hibernate_enable=None, no_operation_hibernate_options=None):
+    def __init__(self, auto_lock_enable=None, auto_lock_options=None, disconnect_logout_enable=None, disconnect_logout_options=None, disconnect_hibernate_enable=None, disconnect_hibernate_options=None, no_operation_hibernate_enable=None, no_operation_hibernate_options=None, ignore_power_status=None):
         r"""Vdi
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class Vdi:
         :type no_operation_hibernate_enable: bool
         :param no_operation_hibernate_options: 
         :type no_operation_hibernate_options: :class:`huaweicloudsdkworkspace.v2.VdiNoOperationHibernateOptions`
+        :param ignore_power_status: 强制电源管理。
+        :type ignore_power_status: bool
         """
         
         
@@ -69,6 +73,7 @@ class Vdi:
         self._disconnect_hibernate_options = None
         self._no_operation_hibernate_enable = None
         self._no_operation_hibernate_options = None
+        self._ignore_power_status = None
         self.discriminator = None
 
         if auto_lock_enable is not None:
@@ -87,6 +92,8 @@ class Vdi:
             self.no_operation_hibernate_enable = no_operation_hibernate_enable
         if no_operation_hibernate_options is not None:
             self.no_operation_hibernate_options = no_operation_hibernate_options
+        if ignore_power_status is not None:
+            self.ignore_power_status = ignore_power_status
 
     @property
     def auto_lock_enable(self):
@@ -247,6 +254,28 @@ class Vdi:
         :type no_operation_hibernate_options: :class:`huaweicloudsdkworkspace.v2.VdiNoOperationHibernateOptions`
         """
         self._no_operation_hibernate_options = no_operation_hibernate_options
+
+    @property
+    def ignore_power_status(self):
+        r"""Gets the ignore_power_status of this Vdi.
+
+        强制电源管理。
+
+        :return: The ignore_power_status of this Vdi.
+        :rtype: bool
+        """
+        return self._ignore_power_status
+
+    @ignore_power_status.setter
+    def ignore_power_status(self, ignore_power_status):
+        r"""Sets the ignore_power_status of this Vdi.
+
+        强制电源管理。
+
+        :param ignore_power_status: The ignore_power_status of this Vdi.
+        :type ignore_power_status: bool
+        """
+        self._ignore_power_status = ignore_power_status
 
     def to_dict(self):
         result = {}

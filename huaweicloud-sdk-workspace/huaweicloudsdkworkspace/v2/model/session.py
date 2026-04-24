@@ -19,7 +19,8 @@ class Session:
         'self_help_console': 'bool',
         'disconnect_on_lock_flag': 'bool',
         'auto_lock_start_time': 'str',
-        'auto_lock_end_time': 'str'
+        'auto_lock_end_time': 'str',
+        'is_lock_screen_on_disconnect': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class Session:
         'self_help_console': 'self_help_console',
         'disconnect_on_lock_flag': 'disconnect_on_lock_flag',
         'auto_lock_start_time': 'auto_lock_start_time',
-        'auto_lock_end_time': 'auto_lock_end_time'
+        'auto_lock_end_time': 'auto_lock_end_time',
+        'is_lock_screen_on_disconnect': 'is_lock_screen_on_disconnect'
     }
 
-    def __init__(self, vdi=None, self_help_console=None, disconnect_on_lock_flag=None, auto_lock_start_time=None, auto_lock_end_time=None):
+    def __init__(self, vdi=None, self_help_console=None, disconnect_on_lock_flag=None, auto_lock_start_time=None, auto_lock_end_time=None, is_lock_screen_on_disconnect=None):
         r"""Session
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class Session:
         :type auto_lock_start_time: str
         :param auto_lock_end_time: 锁定生效时间，格式 hh:mm:ss。
         :type auto_lock_end_time: str
+        :param is_lock_screen_on_disconnect: 是否断连锁屏。
+        :type is_lock_screen_on_disconnect: bool
         """
         
         
@@ -54,6 +58,7 @@ class Session:
         self._disconnect_on_lock_flag = None
         self._auto_lock_start_time = None
         self._auto_lock_end_time = None
+        self._is_lock_screen_on_disconnect = None
         self.discriminator = None
 
         if vdi is not None:
@@ -66,6 +71,8 @@ class Session:
             self.auto_lock_start_time = auto_lock_start_time
         if auto_lock_end_time is not None:
             self.auto_lock_end_time = auto_lock_end_time
+        if is_lock_screen_on_disconnect is not None:
+            self.is_lock_screen_on_disconnect = is_lock_screen_on_disconnect
 
     @property
     def vdi(self):
@@ -172,6 +179,28 @@ class Session:
         :type auto_lock_end_time: str
         """
         self._auto_lock_end_time = auto_lock_end_time
+
+    @property
+    def is_lock_screen_on_disconnect(self):
+        r"""Gets the is_lock_screen_on_disconnect of this Session.
+
+        是否断连锁屏。
+
+        :return: The is_lock_screen_on_disconnect of this Session.
+        :rtype: bool
+        """
+        return self._is_lock_screen_on_disconnect
+
+    @is_lock_screen_on_disconnect.setter
+    def is_lock_screen_on_disconnect(self, is_lock_screen_on_disconnect):
+        r"""Sets the is_lock_screen_on_disconnect of this Session.
+
+        是否断连锁屏。
+
+        :param is_lock_screen_on_disconnect: The is_lock_screen_on_disconnect of this Session.
+        :type is_lock_screen_on_disconnect: bool
+        """
+        self._is_lock_screen_on_disconnect = is_lock_screen_on_disconnect
 
     def to_dict(self):
         result = {}

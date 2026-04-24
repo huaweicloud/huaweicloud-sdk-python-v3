@@ -17,16 +17,20 @@ class ListUserGroupsRequest:
     openapi_types = {
         'limit': 'str',
         'offset': 'str',
-        'keyword': 'str'
+        'keyword': 'str',
+        'domain': 'str',
+        'platform_type': 'list[str]'
     }
 
     attribute_map = {
         'limit': 'limit',
         'offset': 'offset',
-        'keyword': 'keyword'
+        'keyword': 'keyword',
+        'domain': 'domain',
+        'platform_type': 'platform_type'
     }
 
-    def __init__(self, limit=None, offset=None, keyword=None):
+    def __init__(self, limit=None, offset=None, keyword=None, domain=None, platform_type=None):
         r"""ListUserGroupsRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListUserGroupsRequest:
         :type offset: str
         :param keyword: 用来匹配用户组的搜索关键字。例如根据组名模糊查询。
         :type keyword: str
+        :param domain: 根据用户组的域名进行过滤。
+        :type domain: str
+        :param platform_type: 用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+        :type platform_type: list[str]
         """
         
         
@@ -44,6 +52,8 @@ class ListUserGroupsRequest:
         self._limit = None
         self._offset = None
         self._keyword = None
+        self._domain = None
+        self._platform_type = None
         self.discriminator = None
 
         if limit is not None:
@@ -52,6 +62,10 @@ class ListUserGroupsRequest:
             self.offset = offset
         if keyword is not None:
             self.keyword = keyword
+        if domain is not None:
+            self.domain = domain
+        if platform_type is not None:
+            self.platform_type = platform_type
 
     @property
     def limit(self):
@@ -118,6 +132,50 @@ class ListUserGroupsRequest:
         :type keyword: str
         """
         self._keyword = keyword
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ListUserGroupsRequest.
+
+        根据用户组的域名进行过滤。
+
+        :return: The domain of this ListUserGroupsRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ListUserGroupsRequest.
+
+        根据用户组的域名进行过滤。
+
+        :param domain: The domain of this ListUserGroupsRequest.
+        :type domain: str
+        """
+        self._domain = domain
+
+    @property
+    def platform_type(self):
+        r"""Gets the platform_type of this ListUserGroupsRequest.
+
+        用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+
+        :return: The platform_type of this ListUserGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._platform_type
+
+    @platform_type.setter
+    def platform_type(self, platform_type):
+        r"""Sets the platform_type of this ListUserGroupsRequest.
+
+        用户类型。 * AD： AD域用户 * LOCAL： 本地liteAs用户 * UOS： UOS域用户
+
+        :param platform_type: The platform_type of this ListUserGroupsRequest.
+        :type platform_type: list[str]
+        """
+        self._platform_type = platform_type
 
     def to_dict(self):
         result = {}

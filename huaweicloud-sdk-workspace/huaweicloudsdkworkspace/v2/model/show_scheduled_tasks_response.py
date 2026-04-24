@@ -22,6 +22,7 @@ class ShowScheduledTasksResponse(SdkResponse):
         'force_execute': 'bool',
         'scheduled_type': 'str',
         'life_cycle_type': 'str',
+        'life_cycle_exec_period': 'int',
         'day_interval': 'int',
         'week_list': 'str',
         'month_list': 'str',
@@ -46,6 +47,7 @@ class ShowScheduledTasksResponse(SdkResponse):
         'force_execute': 'force_execute',
         'scheduled_type': 'scheduled_type',
         'life_cycle_type': 'life_cycle_type',
+        'life_cycle_exec_period': 'life_cycle_exec_period',
         'day_interval': 'day_interval',
         'week_list': 'week_list',
         'month_list': 'month_list',
@@ -63,7 +65,7 @@ class ShowScheduledTasksResponse(SdkResponse):
         'wait_time': 'wait_time'
     }
 
-    def __init__(self, id=None, task_type=None, task_name=None, force_execute=None, scheduled_type=None, life_cycle_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, extra_params=None, apply_objects=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, time_zone=None, wait_time=None):
+    def __init__(self, id=None, task_type=None, task_name=None, force_execute=None, scheduled_type=None, life_cycle_type=None, life_cycle_exec_period=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, extra_params=None, apply_objects=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, time_zone=None, wait_time=None):
         r"""ShowScheduledTasksResponse
 
         The model defined in huaweicloud sdk
@@ -80,6 +82,8 @@ class ShowScheduledTasksResponse(SdkResponse):
         :type scheduled_type: str
         :param life_cycle_type: 触发场景类型。仅当scheduled_type为LIFE_CYCLE时，生效。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后。
         :type life_cycle_type: str
+        :param life_cycle_exec_period: 触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+        :type life_cycle_exec_period: int
         :param day_interval: 周期按天时：按x天间隔执行。
         :type day_interval: int
         :param week_list: 周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
@@ -120,6 +124,7 @@ class ShowScheduledTasksResponse(SdkResponse):
         self._force_execute = None
         self._scheduled_type = None
         self._life_cycle_type = None
+        self._life_cycle_exec_period = None
         self._day_interval = None
         self._week_list = None
         self._month_list = None
@@ -149,6 +154,8 @@ class ShowScheduledTasksResponse(SdkResponse):
             self.scheduled_type = scheduled_type
         if life_cycle_type is not None:
             self.life_cycle_type = life_cycle_type
+        if life_cycle_exec_period is not None:
+            self.life_cycle_exec_period = life_cycle_exec_period
         if day_interval is not None:
             self.day_interval = day_interval
         if week_list is not None:
@@ -311,6 +318,28 @@ class ShowScheduledTasksResponse(SdkResponse):
         :type life_cycle_type: str
         """
         self._life_cycle_type = life_cycle_type
+
+    @property
+    def life_cycle_exec_period(self):
+        r"""Gets the life_cycle_exec_period of this ShowScheduledTasksResponse.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :return: The life_cycle_exec_period of this ShowScheduledTasksResponse.
+        :rtype: int
+        """
+        return self._life_cycle_exec_period
+
+    @life_cycle_exec_period.setter
+    def life_cycle_exec_period(self, life_cycle_exec_period):
+        r"""Sets the life_cycle_exec_period of this ShowScheduledTasksResponse.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天），默认1440分钟（1天）。
+
+        :param life_cycle_exec_period: The life_cycle_exec_period of this ShowScheduledTasksResponse.
+        :type life_cycle_exec_period: int
+        """
+        self._life_cycle_exec_period = life_cycle_exec_period
 
     @property
     def day_interval(self):

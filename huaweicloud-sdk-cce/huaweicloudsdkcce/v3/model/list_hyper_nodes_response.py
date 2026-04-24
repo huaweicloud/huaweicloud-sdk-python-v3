@@ -16,47 +16,47 @@ class ListHyperNodesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'hyper_node_list': 'list[HyperNode]'
+        'body': 'list[HyperNode]'
     }
 
     attribute_map = {
-        'hyper_node_list': 'hyperNodeList'
+        'body': 'body'
     }
 
-    def __init__(self, hyper_node_list=None):
+    def __init__(self, body=None):
         r"""ListHyperNodesResponse
 
         The model defined in huaweicloud sdk
 
-        :param hyper_node_list: 
-        :type hyper_node_list: list[:class:`huaweicloudsdkcce.v3.HyperNode`]
+        :param body: 
+        :type body: list[:class:`huaweicloudsdkcce.v3.HyperNode`]
         """
         
         super().__init__()
 
-        self._hyper_node_list = None
+        self._body = None
         self.discriminator = None
 
-        if hyper_node_list is not None:
-            self.hyper_node_list = hyper_node_list
+        if body is not None:
+            self.body = body
 
     @property
-    def hyper_node_list(self):
-        r"""Gets the hyper_node_list of this ListHyperNodesResponse.
+    def body(self):
+        r"""Gets the body of this ListHyperNodesResponse.
 
-        :return: The hyper_node_list of this ListHyperNodesResponse.
+        :return: The body of this ListHyperNodesResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.HyperNode`]
         """
-        return self._hyper_node_list
+        return self._body
 
-    @hyper_node_list.setter
-    def hyper_node_list(self, hyper_node_list):
-        r"""Sets the hyper_node_list of this ListHyperNodesResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this ListHyperNodesResponse.
 
-        :param hyper_node_list: The hyper_node_list of this ListHyperNodesResponse.
-        :type hyper_node_list: list[:class:`huaweicloudsdkcce.v3.HyperNode`]
+        :param body: The body of this ListHyperNodesResponse.
+        :type body: list[:class:`huaweicloudsdkcce.v3.HyperNode`]
         """
-        self._hyper_node_list = hyper_node_list
+        self._body = body
 
     def to_dict(self):
         import warnings

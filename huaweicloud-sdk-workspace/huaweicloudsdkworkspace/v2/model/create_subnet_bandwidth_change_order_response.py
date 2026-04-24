@@ -16,29 +16,36 @@ class CreateSubnetBandwidthChangeOrderResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'order_id': 'str'
+        'order_id': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, order_id=None):
+    def __init__(self, order_id=None, job_id=None):
         r"""CreateSubnetBandwidthChangeOrderResponse
 
         The model defined in huaweicloud sdk
 
         :param order_id: 订单号，下单成功时返回订单ID。
         :type order_id: str
+        :param job_id: jobId。
+        :type job_id: str
         """
         
         super().__init__()
 
         self._order_id = None
+        self._job_id = None
         self.discriminator = None
 
         if order_id is not None:
             self.order_id = order_id
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def order_id(self):
@@ -61,6 +68,28 @@ class CreateSubnetBandwidthChangeOrderResponse(SdkResponse):
         :type order_id: str
         """
         self._order_id = order_id
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this CreateSubnetBandwidthChangeOrderResponse.
+
+        jobId。
+
+        :return: The job_id of this CreateSubnetBandwidthChangeOrderResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this CreateSubnetBandwidthChangeOrderResponse.
+
+        jobId。
+
+        :param job_id: The job_id of this CreateSubnetBandwidthChangeOrderResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         import warnings

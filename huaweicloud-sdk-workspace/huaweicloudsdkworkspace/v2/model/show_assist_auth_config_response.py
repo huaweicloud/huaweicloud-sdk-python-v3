@@ -16,29 +16,36 @@ class ShowAssistAuthConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'otp_config_info': 'OtpConfigInfo'
+        'otp_config_info': 'OtpConfigInfo',
+        'main_auth_config_id': 'str'
     }
 
     attribute_map = {
-        'otp_config_info': 'otp_config_info'
+        'otp_config_info': 'otp_config_info',
+        'main_auth_config_id': 'main_auth_config_id'
     }
 
-    def __init__(self, otp_config_info=None):
+    def __init__(self, otp_config_info=None, main_auth_config_id=None):
         r"""ShowAssistAuthConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param otp_config_info: 
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
+        :param main_auth_config_id: 主认证配置id
+        :type main_auth_config_id: str
         """
         
         super().__init__()
 
         self._otp_config_info = None
+        self._main_auth_config_id = None
         self.discriminator = None
 
         if otp_config_info is not None:
             self.otp_config_info = otp_config_info
+        if main_auth_config_id is not None:
+            self.main_auth_config_id = main_auth_config_id
 
     @property
     def otp_config_info(self):
@@ -57,6 +64,28 @@ class ShowAssistAuthConfigResponse(SdkResponse):
         :type otp_config_info: :class:`huaweicloudsdkworkspace.v2.OtpConfigInfo`
         """
         self._otp_config_info = otp_config_info
+
+    @property
+    def main_auth_config_id(self):
+        r"""Gets the main_auth_config_id of this ShowAssistAuthConfigResponse.
+
+        主认证配置id
+
+        :return: The main_auth_config_id of this ShowAssistAuthConfigResponse.
+        :rtype: str
+        """
+        return self._main_auth_config_id
+
+    @main_auth_config_id.setter
+    def main_auth_config_id(self, main_auth_config_id):
+        r"""Sets the main_auth_config_id of this ShowAssistAuthConfigResponse.
+
+        主认证配置id
+
+        :param main_auth_config_id: The main_auth_config_id of this ShowAssistAuthConfigResponse.
+        :type main_auth_config_id: str
+        """
+        self._main_auth_config_id = main_auth_config_id
 
     def to_dict(self):
         import warnings

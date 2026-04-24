@@ -4245,6 +4245,71 @@ class DdmClient(Client):
 
         return http_info
 
+    def rebuild_ddm_config(self, request):
+        r"""表数据重载
+
+        表数据重载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RebuildDdmConfig
+        :type request: :class:`huaweicloudsdkddm.v1.RebuildDdmConfigRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RebuildDdmConfigResponse`
+        """
+        http_info = self._rebuild_ddm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def rebuild_ddm_config_invoker(self, request):
+        http_info = self._rebuild_ddm_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rebuild_ddm_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/reload-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebuildDdmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_administrator(self, request):
         r"""DDM管理员账号密码管理
 
@@ -6671,6 +6736,140 @@ class DdmClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ddm_instance_name(self, request):
+        r"""修改实例名称
+
+        修改实例名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDdmInstanceName
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateDdmInstanceNameRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateDdmInstanceNameResponse`
+        """
+        http_info = self._update_ddm_instance_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ddm_instance_name_invoker(self, request):
+        http_info = self._update_ddm_instance_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ddm_instance_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDdmInstanceNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ddm_instance_security_group(self, request):
+        r"""修改实例安全组
+
+        修改实例安全组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDdmInstanceSecurityGroup
+        :type request: :class:`huaweicloudsdkddm.v1.UpdateDdmInstanceSecurityGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateDdmInstanceSecurityGroupResponse`
+        """
+        http_info = self._update_ddm_instance_security_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ddm_instance_security_group_invoker(self, request):
+        http_info = self._update_ddm_instance_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ddm_instance_security_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDdmInstanceSecurityGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

@@ -60,7 +60,9 @@ class DesktopDetailInfo:
         'process': 'int',
         'root_resource_id': 'str',
         'hour_package_info': 'HourPackageInfo',
-        'is_freeze': 'bool'
+        'is_freeze': 'bool',
+        'isolated': 'bool',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -109,10 +111,12 @@ class DesktopDetailInfo:
         'process': 'process',
         'root_resource_id': 'root_resource_id',
         'hour_package_info': 'hour_package_info',
-        'is_freeze': 'is_freeze'
+        'is_freeze': 'is_freeze',
+        'isolated': 'isolated',
+        'domain': 'domain'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None, isolated=None, domain=None):
         r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -137,7 +141,7 @@ class DesktopDetailInfo:
         :type user_group_list: list[str]
         :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。 - SHARED: 多用户桌面 - POOLED: 池桌面
         :type desktop_type: str
-        :param metadata: 桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        :param metadata: 桌面元数据。   - image_name 创建桌面的镜像名称。 - image_cloud_service_type 镜像云服务类型。 - image_resource_type 镜像资源类型。 - image_spec_code 镜像规格编码。 - image_bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
         :type metadata: dict(str, str)
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -209,6 +213,10 @@ class DesktopDetailInfo:
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
         :param is_freeze: 是否冻结
         :type is_freeze: bool
+        :param isolated: 动态池桌面隔离状态，false表示未隔离，true表示已隔离。
+        :type isolated: bool
+        :param domain: 桌面分配的域。
+        :type domain: str
         """
         
         
@@ -259,6 +267,8 @@ class DesktopDetailInfo:
         self._root_resource_id = None
         self._hour_package_info = None
         self._is_freeze = None
+        self._isolated = None
+        self._domain = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -353,6 +363,10 @@ class DesktopDetailInfo:
             self.hour_package_info = hour_package_info
         if is_freeze is not None:
             self.is_freeze = is_freeze
+        if isolated is not None:
+            self.isolated = isolated
+        if domain is not None:
+            self.domain = domain
 
     @property
     def desktop_id(self):
@@ -578,7 +592,7 @@ class DesktopDetailInfo:
     def metadata(self):
         r"""Gets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。   - image_name 创建桌面的镜像名称。 - image_cloud_service_type 镜像云服务类型。 - image_resource_type 镜像资源类型。 - image_spec_code 镜像规格编码。 - image_bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :return: The metadata of this DesktopDetailInfo.
         :rtype: dict(str, str)
@@ -589,7 +603,7 @@ class DesktopDetailInfo:
     def metadata(self, metadata):
         r"""Sets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。   - image_name 创建桌面的镜像名称。 - image_cloud_service_type 镜像云服务类型。 - image_resource_type 镜像资源类型。 - image_spec_code 镜像规格编码。 - image_bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :param metadata: The metadata of this DesktopDetailInfo.
         :type metadata: dict(str, str)
@@ -1349,6 +1363,50 @@ class DesktopDetailInfo:
         :type is_freeze: bool
         """
         self._is_freeze = is_freeze
+
+    @property
+    def isolated(self):
+        r"""Gets the isolated of this DesktopDetailInfo.
+
+        动态池桌面隔离状态，false表示未隔离，true表示已隔离。
+
+        :return: The isolated of this DesktopDetailInfo.
+        :rtype: bool
+        """
+        return self._isolated
+
+    @isolated.setter
+    def isolated(self, isolated):
+        r"""Sets the isolated of this DesktopDetailInfo.
+
+        动态池桌面隔离状态，false表示未隔离，true表示已隔离。
+
+        :param isolated: The isolated of this DesktopDetailInfo.
+        :type isolated: bool
+        """
+        self._isolated = isolated
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this DesktopDetailInfo.
+
+        桌面分配的域。
+
+        :return: The domain of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this DesktopDetailInfo.
+
+        桌面分配的域。
+
+        :param domain: The domain of this DesktopDetailInfo.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

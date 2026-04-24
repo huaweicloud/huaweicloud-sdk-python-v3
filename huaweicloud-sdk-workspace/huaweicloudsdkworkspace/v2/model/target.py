@@ -17,16 +17,18 @@ class Target:
     openapi_types = {
         'target_id': 'str',
         'target_name': 'str',
-        'target_type': 'str'
+        'target_type': 'str',
+        'target_domain': 'str'
     }
 
     attribute_map = {
         'target_id': 'target_id',
         'target_name': 'target_name',
-        'target_type': 'target_type'
+        'target_type': 'target_type',
+        'target_domain': 'target_domain'
     }
 
-    def __init__(self, target_id=None, target_name=None, target_type=None):
+    def __init__(self, target_id=None, target_name=None, target_type=None, target_domain=None):
         r"""Target
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class Target:
         :type target_name: str
         :param target_type: 对象类型。 - INSTANCE：表示桌面。   target_id：为桌面的SID。   target_name：为桌面name。 - USER：表示用户。   target_id：为用户ID。   target_name：为用户name。 - USERGROUP：表示用户组。   target_id：为用户组ID。   target_name：为用户组name。 - CLIENTIP：终端IP地址。   target_id：终端IP地址。   target_name：终端IP地址。 - OU：组织单元。   target_id：OUID。   target_name：OU名称。 - DESKTOPSPOOL：表示桌面池。   target_id：为桌面池的ID。   target_name：为桌面池name。 - ALL：表示所有桌面。   target_id：default-apply-all-targets。   target_name：All-Targets。 - DESKTOP_TAG：表示桌面标签。   target_id：标签的key|标签的value。   target_name：标签的key|标签的value。
         :type target_type: str
+        :param target_domain: 对象所在域。
+        :type target_domain: str
         """
         
         
@@ -44,6 +48,7 @@ class Target:
         self._target_id = None
         self._target_name = None
         self._target_type = None
+        self._target_domain = None
         self.discriminator = None
 
         if target_id is not None:
@@ -52,6 +57,8 @@ class Target:
             self.target_name = target_name
         if target_type is not None:
             self.target_type = target_type
+        if target_domain is not None:
+            self.target_domain = target_domain
 
     @property
     def target_id(self):
@@ -118,6 +125,28 @@ class Target:
         :type target_type: str
         """
         self._target_type = target_type
+
+    @property
+    def target_domain(self):
+        r"""Gets the target_domain of this Target.
+
+        对象所在域。
+
+        :return: The target_domain of this Target.
+        :rtype: str
+        """
+        return self._target_domain
+
+    @target_domain.setter
+    def target_domain(self, target_domain):
+        r"""Sets the target_domain of this Target.
+
+        对象所在域。
+
+        :param target_domain: The target_domain of this Target.
+        :type target_domain: str
+        """
+        self._target_domain = target_domain
 
     def to_dict(self):
         result = {}

@@ -1,3 +1,396 @@
+# 3.1.192 2026-04-24
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListFactorySearchBaselineInstances`
+    - `ListSearchFactoryEvents`
+    - `ListSearchFactoryBaselines`
+    - `CreateFactoryBaseline`
+    - `ListFactoryWorkspacesApproval`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceResult**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVifPeerDetections**
+    - changes of request param
+      - `- vif_peer_id`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `UpdateDdmInstanceName`, `UpdateDdmInstanceSecurityGroup`, `RebuildDdmConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateJob**
+    - changes of request param
+      - `+ nodes.type: enum value [MRSSparkPython]`
+  - **ShowJob**
+    - changes of response param
+      - `+ nodes.type: enum value [MRSSparkPython]`
+  - **UpdateJob**
+    - changes of request param
+      - `+ nodes.type: enum value [MRSSparkPython]`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ShowSubscriptionDetail`
+    - `DeleteSubscription`
+    - `ShowCompareUsersDetail`
+    - `ShowSmnTopicInfo`
+    - `ShowChildNum`
+    - `CreateSubscription`
+    - `UpdateSubscriptionInfo`
+    - `ShowReplayReportExportStatus`
+    - `ExportReplayReport`
+    - `ListSupportLinks`
+    - `ListExtraColumns`
+    - `PauseCompareJobs`
+    - `RestartCompareJobs`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateComparePolicy**
+    - changes of request param
+      - `+ compare_policy: enum value [normal,manyToOne]`
+  - **ShowObjectMapping**
+    - changes of response param
+      - `+ object_mapping_list.object_name`
+  - **ListJobs**
+    - changes of request param
+      - `+ sort_key: enum value [name,status,create_time,net_type,job_direction,pay_mode]`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListDNatInfo`, `BindDNat`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateAgency**
+    - changes of response param
+      - `* agency.duration: string -> object`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListLifeCycleTypeConfigurations`
+    - `ListScreenRecordsTrafficLimitConfig`
+    - `UpdateScreenRecordsTrafficLimitConfig`
+    - `ListSubscribeAiAssistantUsers`
+    - `SubscribeAiAssistant`
+    - `ShowAiAssistantUsageFrequency`
+    - `DownloadSpMetadata`
+    - `UpdateDcVnc`
+    - `ShowDomainsNew`
+    - `UpdateDomainNew`
+    - `CreateDomainNew`
+    - `CloseDomainNew`
+    - `SyncExternalUser`
+    - `UpdateFullSpeedRecordConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDesktopNamePolicy**
+    - changes of request param
+      - `+ prefix_truncation_enabled`
+  - **ShowScreenRecord**
+    - changes of response param
+      - `+ upload_type`
+      - `+ site_type`
+  - **ExportUsersNew**
+    - changes of request param
+      - `+ user_names`
+  - **ExportUserConnectionNew**
+    - changes of request param
+      - `+ domain`
+  - **CreateDesktopNamePolicy**
+    - changes of request param
+      - `+ prefix_truncation_enabled`
+  - **ListDesktopNamePolicy**
+    - changes of response param
+      - `+ desktop_name_policy_infos.prefix_truncation_enabled`
+  - **ShowDesktopPoolDetail**
+    - changes of response param
+      - `+ user_reset_policy`
+      - `+ image_resource_type`
+      - `+ isolation_num`
+      - `+ image_cloud_service_type`
+      - `+ domain`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **UpdateDesktopPool**
+    - changes of request param
+      - `+ user_reset_policy`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **CreateChangeOrder**
+    - changes of response param
+      - `+ job_id`
+  - **CreateSubnetBandwidthChangeOrder**
+    - changes of response param
+      - `+ job_id`
+  - **CreateResourcePackagesOrder**
+    - changes of request param
+      - `+ resource_packages.resource_package_name`
+      - `+ resource_packages.desktop_resource_spec_code`
+      - `+ resource_packages.effective_time`
+      - `+ resource_packages.is_auto_renew`
+      - `- resource_packages.cloud_service_type`
+      - `- resource_packages.resource_type`
+      - `- resource_packages.package_type`
+      - `- resource_packages.cpu`
+      - `- resource_packages.architecture`
+      - `- resource_packages.memory`
+      - `- resource_packages.domain_ids`
+      - `- resource_packages.description`
+      - `- resource_packages.resource_packages`
+      - `* resource_packages: list<DesktopResourcePackage> -> list<DesktopResourceItem>`
+    - changes of response param
+      - `+ job_id`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `+ scheduled_tasks.life_cycle_exec_period`
+  - **CreateScheduledTasks**
+    - changes of request param
+      - `+ life_cycle_exec_period`
+      - `- task_type: enum value [DELETE_BLACK_ECS]`
+  - **ShowScheduledTasks**
+    - changes of response param
+      - `+ life_cycle_exec_period`
+  - **UpdateScheduledTasks**
+    - changes of request param
+      - `+ apply_object_update_type`
+      - `+ life_cycle_exec_period`
+  - **ListUserGroups**
+    - changes of request param
+      - `+ domain`
+      - `+ platform_type`
+    - changes of response param
+      - `+ user_groups.platform_type: enum value [UOS]`
+  - **ListUsersOfGroup**
+    - changes of request param
+      - `* limit: string -> int32`
+      - `* offset: string -> int32`
+  - **ListTargetOfPolicyGroup**
+    - changes of response param
+      - `+ targets.target_domain`
+  - **ListScreenRecords**
+    - changes of response param
+      - `+ upload_type`
+      - `+ site_type`
+      - `+ screen_records.upload_type`
+      - `+ screen_records.site_type`
+  - **ListUsers**
+    - changes of request param
+      - `+ disabled`
+      - `+ platform_type`
+  - **ShowUserAccessStages**
+    - changes of response param
+      - `+ biz_type: enum value [SHARE_APP,VDI]`
+      - `+ stages.stage: enum value [MAIN_AUTH,MFA_AUTH,CLICK_ICON]`
+  - **ListUserEvents**
+    - changes of request param
+      - `+ domain`
+  - **CreateAgencies**
+    - changes of request param
+      - `+ scene: enum value [IMAGE_CREATION]`
+  - **CreateDesktopPool**
+    - changes of request param
+      - `+ user_reset_policy`
+      - `+ domain`
+      - `+ autoscale_policy.auto_isolation_enable`
+      - `+ autoscale_policy.auto_isolation_max_num`
+  - **ListDesktopPools**
+    - changes of response param
+      - `+ user_reset_policy`
+      - `+ image_resource_type`
+      - `+ isolation_num`
+      - `+ image_cloud_service_type`
+      - `+ domain`
+      - `+ desktop_pools.image_cloud_service_type`
+      - `+ desktop_pools.image_resource_type`
+      - `+ desktop_pools.user_reset_policy`
+      - `+ desktop_pools.isolation_num`
+      - `+ desktop_pools.domain`
+      - `+ desktop_pools.autoscale_policy.auto_isolation_enable`
+      - `+ desktop_pools.autoscale_policy.auto_isolation_max_num`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ domain`
+  - **CreateDesktopBatchOrder**
+    - changes of response param
+      - `+ orders.job_id`
+  - **CreateDesktopPoolChangeOrder**
+    - changes of response param
+      - `+ orders.job_id`
+  - **ShowAssistAuthConfig**
+    - changes of request param
+      - `+ main_auth_config_id`
+    - changes of response param
+      - `+ main_auth_config_id`
+  - **ListSiteConfigs**
+    - changes of response param
+      - `+ site_infos.network_config`
+  - **ListNatMappingConfigs**
+    - changes of response param
+      - `+ nat_vag_maps.assist_auth_enabled`
+  - **UpdateNatMappingConfigs**
+    - changes of request param
+      - `+ nat_vag_maps.assist_auth_enabled`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ site_configs.network_config.dc_vnc_ip`
+  - **ApplyWorkspace**
+    - changes of request param
+      - `+ ad_domains.cba_enabled`
+      - `+ ad_domains.certificate_id`
+  - **ListDesktopUsageMetric**
+    - changes of response param
+      - `+ items.resource_pool_name`
+      - `+ items.machine_sid`
+      - `+ items.latest_connect_username`
+  - **ListUserUsageMetric**
+    - changes of request param
+      - `+ domain`
+  - **ListPoolDesktopsDetail**
+    - changes of request param
+      - `+ isolated`
+      - `+ inconsistent_type: enum value [AUTO_ISOLATION]`
+    - changes of response param
+      - `+ pool_desktops.isolated`
+      - `+ pool_desktops.domain`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.isolated`
+      - `+ desktop.domain`
+  - **ListDesktopsDetail**
+    - changes of response param
+      - `+ desktops.isolated`
+      - `+ desktops.domain`
+  - **CreateDesktopOrder**
+    - changes of request param
+      - `+ hour_package_resources.create_desktops.domain`
+    - changes of response param
+      - `+ job_id`
+  - **CreateOrder**
+    - changes of request param
+      - `+ resources.create_desktops.domain`
+      - `+ resources.create_desktop_pool.user_reset_policy`
+      - `+ resources.create_desktop_pool.domain`
+      - `+ resources.create_desktop_pool.autoscale_policy.auto_isolation_enable`
+      - `+ resources.create_desktop_pool.autoscale_policy.auto_isolation_max_num`
+      - `+ resources.subscribe_user_sharer.users.user_phone`
+      - `+ resources.subscribe_user_sharer.users.ai_func`
+    - changes of response param
+      - `+ job_id`
+  - **ListPoliciesOfPolicyGroup**
+    - changes of response param
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **UpdatePoliciesOfPolicyGroup**
+    - changes of request param
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+    - changes of response param
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **ListOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.domain_control`
+      - `+ policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policies.session.is_lock_screen_on_disconnect`
+      - `+ policies.session.vdi.ignore_power_status`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `+ policy_groups.targets.target_domain`
+      - `+ policy_groups.policies.domain_control`
+      - `+ policy_groups.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_groups.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_groups.policies.session.vdi.ignore_power_status`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **ListPolicyDetailInfoById**
+    - changes of response param
+      - `+ policy_group.targets.target_domain`
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.domain_control`
+      - `+ policy_group.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_group.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_group.policies.session.vdi.ignore_power_status`
+  - **ListPolicyGroupInfo**
+    - changes of response param
+      - `+ policy_groups.targets.target_domain`
+      - `+ policy_groups.policies.domain_control`
+      - `+ policy_groups.policies.display.display_level: enum value [LEVEL6,LEVEL7,LEVEL8]`
+      - `+ policy_groups.policies.session.is_lock_screen_on_disconnect`
+      - `+ policy_groups.policies.session.vdi.ignore_power_status`
+
 # 3.1.191 2026-04-09
 
 ### HuaweiCloud SDK CloudDC

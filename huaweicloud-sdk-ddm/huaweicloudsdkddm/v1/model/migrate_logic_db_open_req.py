@@ -61,9 +61,9 @@ class MigrateLogicDbOpenReq:
             self.switch_route_begin_time = switch_route_begin_time
         if switch_route_end_time is not None:
             self.switch_route_end_time = switch_route_end_time
-        if new_shard_number is not None:
-            self.new_shard_number = new_shard_number
-        self.is_exclusive = is_exclusive
+        self.new_shard_number = new_shard_number
+        if is_exclusive is not None:
+            self.is_exclusive = is_exclusive
 
     @property
     def data_nodes(self):

@@ -18,7 +18,7 @@ class AgencyUpdateResult:
         'create_time': 'str',
         'description': 'str',
         'domain_id': 'str',
-        'duration': 'str',
+        'duration': 'object',
         'expire_time': 'str',
         'id': 'str',
         'name': 'str',
@@ -48,7 +48,7 @@ class AgencyUpdateResult:
         :param domain_id: 委托方账号ID。
         :type domain_id: str
         :param duration: 委托的期限。取值为\&quot;FOREVER\&quot;或“null”表示委托的期限为永久，取值为24表示委托的期限为一天，或为24小时。
-        :type duration: str
+        :type duration: object
         :param expire_time: 委托过期时间。“null”表示不过期。
         :type expire_time: str
         :param id: 委托ID。
@@ -155,7 +155,7 @@ class AgencyUpdateResult:
         委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为24表示委托的期限为一天，或为24小时。
 
         :return: The duration of this AgencyUpdateResult.
-        :rtype: str
+        :rtype: object
         """
         return self._duration
 
@@ -166,7 +166,7 @@ class AgencyUpdateResult:
         委托的期限。取值为\"FOREVER\"或“null”表示委托的期限为永久，取值为24表示委托的期限为一天，或为24小时。
 
         :param duration: The duration of this AgencyUpdateResult.
-        :type duration: str
+        :type duration: object
         """
         self._duration = duration
 

@@ -75,6 +75,7 @@ _ALLOWED_RESOURCE_PARAMTER_NAMES = (
     'encryption',
     'dispolicy',
     'object-lock',
+    'retention',
     'bucketStatus',
     'policystatus',
     'publicaccessblock',

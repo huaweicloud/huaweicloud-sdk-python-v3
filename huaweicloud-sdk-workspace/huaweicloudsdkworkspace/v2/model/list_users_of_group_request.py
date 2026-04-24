@@ -20,8 +20,8 @@ class ListUsersOfGroupRequest:
         'description': 'str',
         'active_type': 'str',
         'enterprise_project_id': 'str',
-        'limit': 'str',
-        'offset': 'str'
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -49,10 +49,10 @@ class ListUsersOfGroupRequest:
         :type active_type: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param limit: 用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
-        :type limit: str
+        :param limit: 用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大10000。
+        :type limit: int
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
-        :type offset: str
+        :type offset: int
         """
         
         
@@ -194,10 +194,10 @@ class ListUsersOfGroupRequest:
     def limit(self):
         r"""Gets the limit of this ListUsersOfGroupRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
+        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大10000。
 
         :return: The limit of this ListUsersOfGroupRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -205,10 +205,10 @@ class ListUsersOfGroupRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListUsersOfGroupRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
+        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大10000。
 
         :param limit: The limit of this ListUsersOfGroupRequest.
-        :type limit: str
+        :type limit: int
         """
         self._limit = limit
 
@@ -219,7 +219,7 @@ class ListUsersOfGroupRequest:
         用于分页查询，查询的起始记录序号，从0开始。
 
         :return: The offset of this ListUsersOfGroupRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -230,7 +230,7 @@ class ListUsersOfGroupRequest:
         用于分页查询，查询的起始记录序号，从0开始。
 
         :param offset: The offset of this ListUsersOfGroupRequest.
-        :type offset: str
+        :type offset: int
         """
         self._offset = offset
 

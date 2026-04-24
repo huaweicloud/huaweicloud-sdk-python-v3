@@ -1,0 +1,160 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CustomOauth2ProviderConfigInput:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+    sensitive_list.append('client_secret')
+
+    openapi_types = {
+        'client_id': 'str',
+        'client_secret': 'str',
+        'oauth2_discovery': 'Oauth2Discovery'
+    }
+
+    attribute_map = {
+        'client_id': 'client_id',
+        'client_secret': 'client_secret',
+        'oauth2_discovery': 'oauth2_discovery'
+    }
+
+    def __init__(self, client_id=None, client_secret=None, oauth2_discovery=None):
+        r"""CustomOauth2ProviderConfigInput
+
+        The model defined in huaweicloud sdk
+
+        :param client_id: Client ID for OAuth2 application.
+        :type client_id: str
+        :param client_secret: Client secret for OAuth2 application.
+        :type client_secret: str
+        :param oauth2_discovery: 
+        :type oauth2_discovery: :class:`huaweicloudsdkagentidentity.v1.Oauth2Discovery`
+        """
+        
+        
+
+        self._client_id = None
+        self._client_secret = None
+        self._oauth2_discovery = None
+        self.discriminator = None
+
+        self.client_id = client_id
+        self.client_secret = client_secret
+        self.oauth2_discovery = oauth2_discovery
+
+    @property
+    def client_id(self):
+        r"""Gets the client_id of this CustomOauth2ProviderConfigInput.
+
+        Client ID for OAuth2 application.
+
+        :return: The client_id of this CustomOauth2ProviderConfigInput.
+        :rtype: str
+        """
+        return self._client_id
+
+    @client_id.setter
+    def client_id(self, client_id):
+        r"""Sets the client_id of this CustomOauth2ProviderConfigInput.
+
+        Client ID for OAuth2 application.
+
+        :param client_id: The client_id of this CustomOauth2ProviderConfigInput.
+        :type client_id: str
+        """
+        self._client_id = client_id
+
+    @property
+    def client_secret(self):
+        r"""Gets the client_secret of this CustomOauth2ProviderConfigInput.
+
+        Client secret for OAuth2 application.
+
+        :return: The client_secret of this CustomOauth2ProviderConfigInput.
+        :rtype: str
+        """
+        return self._client_secret
+
+    @client_secret.setter
+    def client_secret(self, client_secret):
+        r"""Sets the client_secret of this CustomOauth2ProviderConfigInput.
+
+        Client secret for OAuth2 application.
+
+        :param client_secret: The client_secret of this CustomOauth2ProviderConfigInput.
+        :type client_secret: str
+        """
+        self._client_secret = client_secret
+
+    @property
+    def oauth2_discovery(self):
+        r"""Gets the oauth2_discovery of this CustomOauth2ProviderConfigInput.
+
+        :return: The oauth2_discovery of this CustomOauth2ProviderConfigInput.
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.Oauth2Discovery`
+        """
+        return self._oauth2_discovery
+
+    @oauth2_discovery.setter
+    def oauth2_discovery(self, oauth2_discovery):
+        r"""Sets the oauth2_discovery of this CustomOauth2ProviderConfigInput.
+
+        :param oauth2_discovery: The oauth2_discovery of this CustomOauth2ProviderConfigInput.
+        :type oauth2_discovery: :class:`huaweicloudsdkagentidentity.v1.Oauth2Discovery`
+        """
+        self._oauth2_discovery = oauth2_discovery
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CustomOauth2ProviderConfigInput):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

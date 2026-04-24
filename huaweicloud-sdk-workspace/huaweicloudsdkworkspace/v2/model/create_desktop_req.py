@@ -37,7 +37,8 @@ class CreateDesktopReq:
         'desktop_name_policy_id': 'str',
         'hour_package_product_id': 'str',
         'hour_package_offering_id': 'str',
-        'if_mount_old_desktop_disk': 'bool'
+        'if_mount_old_desktop_disk': 'bool',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class CreateDesktopReq:
         'desktop_name_policy_id': 'desktop_name_policy_id',
         'hour_package_product_id': 'hour_package_product_id',
         'hour_package_offering_id': 'hour_package_offering_id',
-        'if_mount_old_desktop_disk': 'if_mount_old_desktop_disk'
+        'if_mount_old_desktop_disk': 'if_mount_old_desktop_disk',
+        'domain': 'domain'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, buy_type=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, buy_type=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None, domain=None):
         r"""CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class CreateDesktopReq:
         :type hour_package_offering_id: str
         :param if_mount_old_desktop_disk: 是否在发放新桌面时，挂载旧桌面磁盘为数据盘
         :type if_mount_old_desktop_disk: bool
+        :param domain: 桌面分配的域。
+        :type domain: str
         """
         
         
@@ -144,6 +148,7 @@ class CreateDesktopReq:
         self._hour_package_product_id = None
         self._hour_package_offering_id = None
         self._if_mount_old_desktop_disk = None
+        self._domain = None
         self.discriminator = None
 
         self.desktop_type = desktop_type
@@ -187,6 +192,8 @@ class CreateDesktopReq:
             self.hour_package_offering_id = hour_package_offering_id
         if if_mount_old_desktop_disk is not None:
             self.if_mount_old_desktop_disk = if_mount_old_desktop_disk
+        if domain is not None:
+            self.domain = domain
 
     @property
     def desktop_type(self):
@@ -681,6 +688,28 @@ class CreateDesktopReq:
         :type if_mount_old_desktop_disk: bool
         """
         self._if_mount_old_desktop_disk = if_mount_old_desktop_disk
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this CreateDesktopReq.
+
+        桌面分配的域。
+
+        :return: The domain of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this CreateDesktopReq.
+
+        桌面分配的域。
+
+        :param domain: The domain of this CreateDesktopReq.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

@@ -15,6 +15,7 @@ class DbObjectInfo:
     sensitive_list = []
 
     openapi_types = {
+        'object_name': 'str',
         'source_db_name': 'str',
         'source_schema_name': 'str',
         'source_table_name': 'str',
@@ -25,6 +26,7 @@ class DbObjectInfo:
     }
 
     attribute_map = {
+        'object_name': 'object_name',
         'source_db_name': 'source_db_name',
         'source_schema_name': 'source_schema_name',
         'source_table_name': 'source_table_name',
@@ -34,11 +36,13 @@ class DbObjectInfo:
         'has_column_info': 'has_column_info'
     }
 
-    def __init__(self, source_db_name=None, source_schema_name=None, source_table_name=None, target_db_name=None, target_schema_name=None, target_table_name=None, has_column_info=None):
+    def __init__(self, object_name=None, source_db_name=None, source_schema_name=None, source_table_name=None, target_db_name=None, target_schema_name=None, target_table_name=None, has_column_info=None):
         r"""DbObjectInfo
 
         The model defined in huaweicloud sdk
 
+        :param object_name: 对象名
+        :type object_name: str
         :param source_db_name: 源数据库库名。
         :type source_db_name: str
         :param source_schema_name: 源数据库模式名。
@@ -57,6 +61,7 @@ class DbObjectInfo:
         
         
 
+        self._object_name = None
         self._source_db_name = None
         self._source_schema_name = None
         self._source_table_name = None
@@ -66,6 +71,8 @@ class DbObjectInfo:
         self._has_column_info = None
         self.discriminator = None
 
+        if object_name is not None:
+            self.object_name = object_name
         if source_db_name is not None:
             self.source_db_name = source_db_name
         if source_schema_name is not None:
@@ -80,6 +87,28 @@ class DbObjectInfo:
             self.target_table_name = target_table_name
         if has_column_info is not None:
             self.has_column_info = has_column_info
+
+    @property
+    def object_name(self):
+        r"""Gets the object_name of this DbObjectInfo.
+
+        对象名
+
+        :return: The object_name of this DbObjectInfo.
+        :rtype: str
+        """
+        return self._object_name
+
+    @object_name.setter
+    def object_name(self, object_name):
+        r"""Sets the object_name of this DbObjectInfo.
+
+        对象名
+
+        :param object_name: The object_name of this DbObjectInfo.
+        :type object_name: str
+        """
+        self._object_name = object_name
 
     @property
     def source_db_name(self):

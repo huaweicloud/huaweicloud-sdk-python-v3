@@ -34,13 +34,13 @@ class ListRunStateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param stop_num: 停止个数。
+        :param stop_num: 已关机个数。
         :type stop_num: int
         :param active_num: 运行中个数。
         :type active_num: int
         :param error_num: 故障个数。
         :type error_num: int
-        :param hibernated_num: 休眠个数。
+        :param hibernated_num: 已休眠个数。
         :type hibernated_num: int
         """
         
@@ -65,7 +65,7 @@ class ListRunStateResponse(SdkResponse):
     def stop_num(self):
         r"""Gets the stop_num of this ListRunStateResponse.
 
-        停止个数。
+        已关机个数。
 
         :return: The stop_num of this ListRunStateResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ListRunStateResponse(SdkResponse):
     def stop_num(self, stop_num):
         r"""Sets the stop_num of this ListRunStateResponse.
 
-        停止个数。
+        已关机个数。
 
         :param stop_num: The stop_num of this ListRunStateResponse.
         :type stop_num: int
@@ -131,7 +131,7 @@ class ListRunStateResponse(SdkResponse):
     def hibernated_num(self):
         r"""Gets the hibernated_num of this ListRunStateResponse.
 
-        休眠个数。
+        已休眠个数。
 
         :return: The hibernated_num of this ListRunStateResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class ListRunStateResponse(SdkResponse):
     def hibernated_num(self, hibernated_num):
         r"""Sets the hibernated_num of this ListRunStateResponse.
 
-        休眠个数。
+        已休眠个数。
 
         :param hibernated_num: The hibernated_num of this ListRunStateResponse.
         :type hibernated_num: int

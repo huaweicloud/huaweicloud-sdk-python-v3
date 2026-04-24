@@ -93,10 +93,8 @@ class CdmCreateClusterReqCluster:
             self.extended_properties = extended_properties
         if schedule_off_time is not None:
             self.schedule_off_time = schedule_off_time
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
-        if name is not None:
-            self.name = name
+        self.vpc_id = vpc_id
+        self.name = name
         if sys_tags is not None:
             self.sys_tags = sys_tags
         if is_auto_off is not None:

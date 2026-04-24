@@ -35,15 +35,15 @@ class DesktopLoginStatisticsRsp:
 
         The model defined in huaweicloud sdk
 
-        :param in_use_num: 使用中。
+        :param in_use_num: 使用中个数。
         :type in_use_num: int
-        :param unregistered_num: 未注册数目。
+        :param unregistered_num: 未注册个数。
         :type unregistered_num: int
-        :param unable_to_connect_num: 未注册数目。
+        :param unable_to_connect_num: 无法连接个数。
         :type unable_to_connect_num: int
-        :param ready_num: 空闲数目。
+        :param ready_num: 就绪个数。
         :type ready_num: int
-        :param disconnected_num: 断开连接数目。
+        :param disconnected_num: 断开连接个数。
         :type disconnected_num: int
         """
         
@@ -67,7 +67,7 @@ class DesktopLoginStatisticsRsp:
     def in_use_num(self):
         r"""Gets the in_use_num of this DesktopLoginStatisticsRsp.
 
-        使用中。
+        使用中个数。
 
         :return: The in_use_num of this DesktopLoginStatisticsRsp.
         :rtype: int
@@ -78,7 +78,7 @@ class DesktopLoginStatisticsRsp:
     def in_use_num(self, in_use_num):
         r"""Sets the in_use_num of this DesktopLoginStatisticsRsp.
 
-        使用中。
+        使用中个数。
 
         :param in_use_num: The in_use_num of this DesktopLoginStatisticsRsp.
         :type in_use_num: int
@@ -89,7 +89,7 @@ class DesktopLoginStatisticsRsp:
     def unregistered_num(self):
         r"""Gets the unregistered_num of this DesktopLoginStatisticsRsp.
 
-        未注册数目。
+        未注册个数。
 
         :return: The unregistered_num of this DesktopLoginStatisticsRsp.
         :rtype: int
@@ -100,7 +100,7 @@ class DesktopLoginStatisticsRsp:
     def unregistered_num(self, unregistered_num):
         r"""Sets the unregistered_num of this DesktopLoginStatisticsRsp.
 
-        未注册数目。
+        未注册个数。
 
         :param unregistered_num: The unregistered_num of this DesktopLoginStatisticsRsp.
         :type unregistered_num: int
@@ -111,7 +111,7 @@ class DesktopLoginStatisticsRsp:
     def unable_to_connect_num(self):
         r"""Gets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
 
-        未注册数目。
+        无法连接个数。
 
         :return: The unable_to_connect_num of this DesktopLoginStatisticsRsp.
         :rtype: int
@@ -122,7 +122,7 @@ class DesktopLoginStatisticsRsp:
     def unable_to_connect_num(self, unable_to_connect_num):
         r"""Sets the unable_to_connect_num of this DesktopLoginStatisticsRsp.
 
-        未注册数目。
+        无法连接个数。
 
         :param unable_to_connect_num: The unable_to_connect_num of this DesktopLoginStatisticsRsp.
         :type unable_to_connect_num: int
@@ -133,7 +133,7 @@ class DesktopLoginStatisticsRsp:
     def ready_num(self):
         r"""Gets the ready_num of this DesktopLoginStatisticsRsp.
 
-        空闲数目。
+        就绪个数。
 
         :return: The ready_num of this DesktopLoginStatisticsRsp.
         :rtype: int
@@ -144,7 +144,7 @@ class DesktopLoginStatisticsRsp:
     def ready_num(self, ready_num):
         r"""Sets the ready_num of this DesktopLoginStatisticsRsp.
 
-        空闲数目。
+        就绪个数。
 
         :param ready_num: The ready_num of this DesktopLoginStatisticsRsp.
         :type ready_num: int
@@ -155,7 +155,7 @@ class DesktopLoginStatisticsRsp:
     def disconnected_num(self):
         r"""Gets the disconnected_num of this DesktopLoginStatisticsRsp.
 
-        断开连接数目。
+        断开连接个数。
 
         :return: The disconnected_num of this DesktopLoginStatisticsRsp.
         :rtype: int
@@ -166,7 +166,7 @@ class DesktopLoginStatisticsRsp:
     def disconnected_num(self, disconnected_num):
         r"""Sets the disconnected_num of this DesktopLoginStatisticsRsp.
 
-        断开连接数目。
+        断开连接个数。
 
         :param disconnected_num: The disconnected_num of this DesktopLoginStatisticsRsp.
         :type disconnected_num: int

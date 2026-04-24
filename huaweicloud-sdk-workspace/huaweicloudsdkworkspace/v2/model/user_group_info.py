@@ -63,7 +63,7 @@ class UserGroupInfo:
         :type parent: :class:`huaweicloudsdkworkspace.v2.UserGroupInfo`
         :param realm_id: 用户组域Id。
         :type realm_id: str
-        :param platform_type: 用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
+        :param platform_type: 用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组 * UOS： UOS域用户组
         :type platform_type: str
         :param group_dn: 用户组专有名。
         :type group_dn: str
@@ -270,7 +270,7 @@ class UserGroupInfo:
     def platform_type(self):
         r"""Gets the platform_type of this UserGroupInfo.
 
-        用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
+        用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组 * UOS： UOS域用户组
 
         :return: The platform_type of this UserGroupInfo.
         :rtype: str
@@ -281,7 +281,7 @@ class UserGroupInfo:
     def platform_type(self, platform_type):
         r"""Sets the platform_type of this UserGroupInfo.
 
-        用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
+        用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组 * UOS： UOS域用户组
 
         :param platform_type: The platform_type of this UserGroupInfo.
         :type platform_type: str

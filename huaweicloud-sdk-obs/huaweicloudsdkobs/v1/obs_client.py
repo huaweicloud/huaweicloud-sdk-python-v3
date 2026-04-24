@@ -460,6 +460,78 @@ class ObsClient(Client):
 
         return http_info
 
+    def get_bucket_object_lock(self, request):
+        r"""Obtaining the Default WORM Policy of a Bucket
+
+        This operation returns the default WORM policy of a bucket. To perform this operation, you must have the GetBucketObjectLockConfiguration permission. By default, only the bucket owner can perform this operation. The bucket owner can grant the permission to other users by configuring the bucket policy or user policy.
+        NOTE: If you have never configured the default bucket-level retention policy after you enable WORM for a bucket, you can still use this API to check whether WORM is enabled.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetBucketObjectLock
+        :type request: :class:`huaweicloudsdkobs.v1.GetBucketObjectLockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.GetBucketObjectLockResponse`
+        """
+        http_info = self._get_bucket_object_lock_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_bucket_object_lock_invoker(self, request):
+        http_info = self._get_bucket_object_lock_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_bucket_object_lock_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetBucketObjectLockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'object_lock' in local_var_params:
+            query_params.append(('object-lock', local_var_params['object_lock']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_bucket_policy_public_status(self, request):
         r"""Obtaining the Public Access Status of a Bucket Policy
 
@@ -1093,6 +1165,77 @@ class ObsClient(Client):
             cname = local_var_params['bucket_name']
         if 'public_access_block' in local_var_params:
             query_params.append(('publicAccessBlock', local_var_params['public_access_block']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_bucket_versioning(self, request):
+        r"""Configuring Versioning for a Bucket
+
+        With versioning enabled, you can save and retrieve each object version and recover data from unintended actions or application failures. Versioning can also be used for data retention and archive.By default, versioning is not enabled for a bucket.This operation enables or suspends versioning for a bucket.When versioning is enabled for a bucket:+ OBS creates a unique version ID for each object you upload. Namesake objects are not overwritten and are distinguished by their own version IDs.+ You can specify a version ID to download a specific object. If no version ID is specified, the latest object is downloaded by default.+ You can specify a version ID to delete a specific object. If no version ID is specified, deleting the object only attaches a delete marker with a unique version ID to the object and the object is not really deleted.+ When you list objects, objects of the latest versions are returned by default. You can also list all versions of objects.+ Except delete markers and object metadata, storage of each object version is charged.When versioning is suspended for a bucket:+ Object versions generated before are still kept.+ OBS creates a version ID **null** for each object you upload. Such an object will be overwritten by a new object with the same name.+ You can specify a version ID to download a specific object. If no version ID is specified, the latest object is downloaded by default.+ You can specify a version ID to delete a specific object. If no version ID is specified, the delete operation creates a delete marker with a version ID **null** and the object with version ID **null** is physically deleted.+ Except delete markers and object metadata, storage of each object version is charged.Only the bucket owner can configure versioning for the bucket.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetBucketVersioning
+        :type request: :class:`huaweicloudsdkobs.v1.SetBucketVersioningRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetBucketVersioningResponse`
+        """
+        http_info = self._set_bucket_versioning_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_bucket_versioning_invoker(self, request):
+        http_info = self._set_bucket_versioning_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_bucket_versioning_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBucketVersioningResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'versioning' in local_var_params:
+            query_params.append(('versioning', local_var_params['versioning']))
 
         header_params = {}
         if 'date' in local_var_params:
@@ -2511,6 +2654,84 @@ class ObsClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["x-obs-id-2", "x-obs-request-id", "Connection", "Content-Length", "Date", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/xml'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_object_lock(self, request):
+        r"""Configuring WORM Retention for an Object
+
+        This operation configures or updates the retention period for objects uploaded to a bucket with WORM enabled. 1. If you do not configure a retention period or apply the default bucket-level protection rule to the object when you upload an object, you can perform this operation to configure a retention period for the object. 2. If you already configure a retention period or apply the default bucket-level protection rule to the object when you upload an object, you can perform this operation to prolong the retention period for the object. 3. The retention period of an object can only be modified, but not deleted.
+        NOTE: To configure or update the retention period of an object, you must have the PutObjectRetention permission.
+        Versioning OBS automatically enables versioning when you enable WORM for a bucket. In such case, the object you uploaded to the bucket will be assigned a version ID. An object-level WORM policy is applied to the current object version by default, but you can specify a version ID to make the policy applied to a specific object version. The WORM configuration does not apply to a delete marker with a unique version ID.
+        Multipart Upload Before a multipart upload is complete, the default bucket-level WORM policy is not automatically applied to the object parts uploaded. Besides, you cannot configure an object-level WORM policy using a header when you upload a part or assemble the object parts, or for a part that is already uploaded to the bucket. You can call this API to configure a WORM retention policy for the new object after the object parts are assembled.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetObjectLock
+        :type request: :class:`huaweicloudsdkobs.v1.SetObjectLockRequest`
+        :rtype: :class:`huaweicloudsdkobs.v1.SetObjectLockResponse`
+        """
+        http_info = self._set_object_lock_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_object_lock_invoker(self, request):
+        http_info = self._set_object_lock_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_object_lock_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/{object_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetObjectLockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'object_key' in local_var_params:
+            path_params['object_key'] = local_var_params['object_key']
+
+        query_params = []
+        if 'bucket_name' in local_var_params:
+            cname = local_var_params['bucket_name']
+        if 'retention' in local_var_params:
+            query_params.append(('retention', local_var_params['retention']))
+        if 'version_id' in local_var_params:
+            query_params.append(('versionId', local_var_params['version_id']))
+
+        header_params = {}
+        if 'date' in local_var_params:
+            header_params['Date'] = local_var_params['date']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["x-obs-id-2", "x-obs-request-id", "ETag", "Connection", "Content-Length", "Date", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/xml'])

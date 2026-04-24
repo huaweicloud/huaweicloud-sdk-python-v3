@@ -69,7 +69,7 @@ class ListJobsRequest:
         :type offset: int
         :param limit: 查询返回记录的数量限制。
         :type limit: int
-        :param sort_key: 返回结果按该关键字排序，默认为“create_time”。
+        :param sort_key: 返回结果按该关键字排序，默认为“create_time”。 当前支持排序的关键字： - name - status - create_time - net_type - job_direction - pay_mode
         :type sort_key: str
         :param sort_dir: 降序或升序（分别对应desc和asc，默认为“desc”）。
         :type sort_dir: str
@@ -324,7 +324,7 @@ class ListJobsRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListJobsRequest.
 
-        返回结果按该关键字排序，默认为“create_time”。
+        返回结果按该关键字排序，默认为“create_time”。 当前支持排序的关键字： - name - status - create_time - net_type - job_direction - pay_mode
 
         :return: The sort_key of this ListJobsRequest.
         :rtype: str
@@ -335,7 +335,7 @@ class ListJobsRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListJobsRequest.
 
-        返回结果按该关键字排序，默认为“create_time”。
+        返回结果按该关键字排序，默认为“create_time”。 当前支持排序的关键字： - name - status - create_time - net_type - job_direction - pay_mode
 
         :param sort_key: The sort_key of this ListJobsRequest.
         :type sort_key: str

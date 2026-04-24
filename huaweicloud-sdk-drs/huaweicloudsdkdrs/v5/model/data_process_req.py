@@ -36,8 +36,7 @@ class DataProcessReq:
         self._data_process_info = None
         self.discriminator = None
 
-        if data_process_info is not None:
-            self.data_process_info = data_process_info
+        self.data_process_info = data_process_info
 
     @property
     def data_process_info(self):

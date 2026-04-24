@@ -23,6 +23,7 @@ class ListUserUsageMetricRequest:
         'enterprise_project_id': 'str',
         'sort_field': 'str',
         'sort_type': 'str',
+        'domain': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -36,11 +37,12 @@ class ListUserUsageMetricRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'sort_field': 'sort_field',
         'sort_type': 'sort_type',
+        'domain': 'domain',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, start_time=None, end_time=None, username=None, usage_min_hours=None, usage_max_hours=None, enterprise_project_id=None, sort_field=None, sort_type=None, offset=None, limit=None):
+    def __init__(self, start_time=None, end_time=None, username=None, usage_min_hours=None, usage_max_hours=None, enterprise_project_id=None, sort_field=None, sort_type=None, domain=None, offset=None, limit=None):
         r"""ListUserUsageMetricRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListUserUsageMetricRequest:
         :type sort_field: str
         :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
         :type sort_type: str
+        :param domain: 域名
+        :type domain: str
         :param offset: 查询的偏移量,默认值0。
         :type offset: int
         :param limit: limit范围[1-100],默认值0。
@@ -77,6 +81,7 @@ class ListUserUsageMetricRequest:
         self._enterprise_project_id = None
         self._sort_field = None
         self._sort_type = None
+        self._domain = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -95,6 +100,8 @@ class ListUserUsageMetricRequest:
             self.sort_field = sort_field
         if sort_type is not None:
             self.sort_type = sort_type
+        if domain is not None:
+            self.domain = domain
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -275,6 +282,28 @@ class ListUserUsageMetricRequest:
         :type sort_type: str
         """
         self._sort_type = sort_type
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ListUserUsageMetricRequest.
+
+        域名
+
+        :return: The domain of this ListUserUsageMetricRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ListUserUsageMetricRequest.
+
+        域名
+
+        :param domain: The domain of this ListUserUsageMetricRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def offset(self):

@@ -1,0 +1,141 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ListFactoryWorkspacesApprovalResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'job_apply_search_list': 'list[ListFactoryWorkspacesApprovalRespJobApplySearchList]',
+        'total': 'int'
+    }
+
+    attribute_map = {
+        'job_apply_search_list': 'job_apply_search_list',
+        'total': 'total'
+    }
+
+    def __init__(self, job_apply_search_list=None, total=None):
+        r"""ListFactoryWorkspacesApprovalResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_apply_search_list: 审批详细信息。
+        :type job_apply_search_list: list[:class:`huaweicloudsdkdataartsstudio.v1.ListFactoryWorkspacesApprovalRespJobApplySearchList`]
+        :param total: 审批总数量。
+        :type total: int
+        """
+        
+        super().__init__()
+
+        self._job_apply_search_list = None
+        self._total = None
+        self.discriminator = None
+
+        if job_apply_search_list is not None:
+            self.job_apply_search_list = job_apply_search_list
+        if total is not None:
+            self.total = total
+
+    @property
+    def job_apply_search_list(self):
+        r"""Gets the job_apply_search_list of this ListFactoryWorkspacesApprovalResponse.
+
+        审批详细信息。
+
+        :return: The job_apply_search_list of this ListFactoryWorkspacesApprovalResponse.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.ListFactoryWorkspacesApprovalRespJobApplySearchList`]
+        """
+        return self._job_apply_search_list
+
+    @job_apply_search_list.setter
+    def job_apply_search_list(self, job_apply_search_list):
+        r"""Sets the job_apply_search_list of this ListFactoryWorkspacesApprovalResponse.
+
+        审批详细信息。
+
+        :param job_apply_search_list: The job_apply_search_list of this ListFactoryWorkspacesApprovalResponse.
+        :type job_apply_search_list: list[:class:`huaweicloudsdkdataartsstudio.v1.ListFactoryWorkspacesApprovalRespJobApplySearchList`]
+        """
+        self._job_apply_search_list = job_apply_search_list
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListFactoryWorkspacesApprovalResponse.
+
+        审批总数量。
+
+        :return: The total of this ListFactoryWorkspacesApprovalResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListFactoryWorkspacesApprovalResponse.
+
+        审批总数量。
+
+        :param total: The total of this ListFactoryWorkspacesApprovalResponse.
+        :type total: int
+        """
+        self._total = total
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("ListFactoryWorkspacesApprovalResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListFactoryWorkspacesApprovalResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

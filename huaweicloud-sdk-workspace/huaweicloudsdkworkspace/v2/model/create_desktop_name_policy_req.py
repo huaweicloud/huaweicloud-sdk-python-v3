@@ -20,7 +20,8 @@ class CreateDesktopNamePolicyReq:
         'digit_number': 'int',
         'start_number': 'int',
         'single_domain_user_inc': 'int',
-        'is_default_policy': 'bool'
+        'is_default_policy': 'bool',
+        'prefix_truncation_enabled': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateDesktopNamePolicyReq:
         'digit_number': 'digit_number',
         'start_number': 'start_number',
         'single_domain_user_inc': 'single_domain_user_inc',
-        'is_default_policy': 'is_default_policy'
+        'is_default_policy': 'is_default_policy',
+        'prefix_truncation_enabled': 'prefix_truncation_enabled'
     }
 
-    def __init__(self, policy_name=None, name_prefix=None, digit_number=None, start_number=None, single_domain_user_inc=None, is_default_policy=None):
+    def __init__(self, policy_name=None, name_prefix=None, digit_number=None, start_number=None, single_domain_user_inc=None, is_default_policy=None, prefix_truncation_enabled=None):
         r"""CreateDesktopNamePolicyReq
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class CreateDesktopNamePolicyReq:
         :type single_domain_user_inc: int
         :param is_default_policy: 是否为默认策略，true默认策略。
         :type is_default_policy: bool
+        :param prefix_truncation_enabled: 当名称前缀加数字长度生成的桌面名称长度超15位时，是否截断名称前缀部分。
+        :type prefix_truncation_enabled: bool
         """
         
         
@@ -59,6 +63,7 @@ class CreateDesktopNamePolicyReq:
         self._start_number = None
         self._single_domain_user_inc = None
         self._is_default_policy = None
+        self._prefix_truncation_enabled = None
         self.discriminator = None
 
         self.policy_name = policy_name
@@ -68,6 +73,8 @@ class CreateDesktopNamePolicyReq:
         self.single_domain_user_inc = single_domain_user_inc
         if is_default_policy is not None:
             self.is_default_policy = is_default_policy
+        if prefix_truncation_enabled is not None:
+            self.prefix_truncation_enabled = prefix_truncation_enabled
 
     @property
     def policy_name(self):
@@ -200,6 +207,28 @@ class CreateDesktopNamePolicyReq:
         :type is_default_policy: bool
         """
         self._is_default_policy = is_default_policy
+
+    @property
+    def prefix_truncation_enabled(self):
+        r"""Gets the prefix_truncation_enabled of this CreateDesktopNamePolicyReq.
+
+        当名称前缀加数字长度生成的桌面名称长度超15位时，是否截断名称前缀部分。
+
+        :return: The prefix_truncation_enabled of this CreateDesktopNamePolicyReq.
+        :rtype: bool
+        """
+        return self._prefix_truncation_enabled
+
+    @prefix_truncation_enabled.setter
+    def prefix_truncation_enabled(self, prefix_truncation_enabled):
+        r"""Sets the prefix_truncation_enabled of this CreateDesktopNamePolicyReq.
+
+        当名称前缀加数字长度生成的桌面名称长度超15位时，是否截断名称前缀部分。
+
+        :param prefix_truncation_enabled: The prefix_truncation_enabled of this CreateDesktopNamePolicyReq.
+        :type prefix_truncation_enabled: bool
+        """
+        self._prefix_truncation_enabled = prefix_truncation_enabled
 
     def to_dict(self):
         result = {}

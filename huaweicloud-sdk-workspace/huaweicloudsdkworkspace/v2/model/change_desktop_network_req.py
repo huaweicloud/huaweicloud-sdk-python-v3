@@ -33,9 +33,9 @@ class ChangeDesktopNetworkReq:
 
         The model defined in huaweicloud sdk
 
-        :param vpc_id: 待切换VPC的ID。
+        :param vpc_id: 待切换VPC的ID。选填。如果要修改网络，该字段必传
         :type vpc_id: str
-        :param subnet_id: 待切换子网的ID。
+        :param subnet_id: 待切换子网的ID。选填。如果要修改网络，该字段必传
         :type subnet_id: str
         :param private_ip: 指定私有IP地址。
         :type private_ip: str
@@ -51,8 +51,10 @@ class ChangeDesktopNetworkReq:
         self._security_group_ids = None
         self.discriminator = None
 
-        self.vpc_id = vpc_id
-        self.subnet_id = subnet_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if private_ip is not None:
             self.private_ip = private_ip
         self.security_group_ids = security_group_ids
@@ -61,7 +63,7 @@ class ChangeDesktopNetworkReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this ChangeDesktopNetworkReq.
 
-        待切换VPC的ID。
+        待切换VPC的ID。选填。如果要修改网络，该字段必传
 
         :return: The vpc_id of this ChangeDesktopNetworkReq.
         :rtype: str
@@ -72,7 +74,7 @@ class ChangeDesktopNetworkReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ChangeDesktopNetworkReq.
 
-        待切换VPC的ID。
+        待切换VPC的ID。选填。如果要修改网络，该字段必传
 
         :param vpc_id: The vpc_id of this ChangeDesktopNetworkReq.
         :type vpc_id: str
@@ -83,7 +85,7 @@ class ChangeDesktopNetworkReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this ChangeDesktopNetworkReq.
 
-        待切换子网的ID。
+        待切换子网的ID。选填。如果要修改网络，该字段必传
 
         :return: The subnet_id of this ChangeDesktopNetworkReq.
         :rtype: str
@@ -94,7 +96,7 @@ class ChangeDesktopNetworkReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ChangeDesktopNetworkReq.
 
-        待切换子网的ID。
+        待切换子网的ID。选填。如果要修改网络，该字段必传
 
         :param subnet_id: The subnet_id of this ChangeDesktopNetworkReq.
         :type subnet_id: str

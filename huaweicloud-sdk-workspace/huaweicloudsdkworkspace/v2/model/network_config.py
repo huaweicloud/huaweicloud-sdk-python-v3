@@ -20,7 +20,8 @@ class NetworkConfig:
         'subnet_ids': 'list[str]',
         'management_subnet_cidr': 'str',
         'management_node_subnet_id': 'str',
-        'vpc_config_infos': 'list[VpcConfigInfo]'
+        'vpc_config_infos': 'list[VpcConfigInfo]',
+        'dc_vnc_ip': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class NetworkConfig:
         'subnet_ids': 'subnet_ids',
         'management_subnet_cidr': 'management_subnet_cidr',
         'management_node_subnet_id': 'management_node_subnet_id',
-        'vpc_config_infos': 'vpc_config_infos'
+        'vpc_config_infos': 'vpc_config_infos',
+        'dc_vnc_ip': 'dc_vnc_ip'
     }
 
-    def __init__(self, vpc_id=None, vpc_name=None, subnet_ids=None, management_subnet_cidr=None, management_node_subnet_id=None, vpc_config_infos=None):
+    def __init__(self, vpc_id=None, vpc_name=None, subnet_ids=None, management_subnet_cidr=None, management_node_subnet_id=None, vpc_config_infos=None, dc_vnc_ip=None):
         r"""NetworkConfig
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class NetworkConfig:
         :type management_node_subnet_id: str
         :param vpc_config_infos: VPC配置信息列表。
         :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
+        :param dc_vnc_ip: 自定义的专线VNC地址。
+        :type dc_vnc_ip: str
         """
         
         
@@ -59,6 +63,7 @@ class NetworkConfig:
         self._management_subnet_cidr = None
         self._management_node_subnet_id = None
         self._vpc_config_infos = None
+        self._dc_vnc_ip = None
         self.discriminator = None
 
         if vpc_id is not None:
@@ -73,6 +78,8 @@ class NetworkConfig:
             self.management_node_subnet_id = management_node_subnet_id
         if vpc_config_infos is not None:
             self.vpc_config_infos = vpc_config_infos
+        if dc_vnc_ip is not None:
+            self.dc_vnc_ip = dc_vnc_ip
 
     @property
     def vpc_id(self):
@@ -205,6 +212,28 @@ class NetworkConfig:
         :type vpc_config_infos: list[:class:`huaweicloudsdkworkspace.v2.VpcConfigInfo`]
         """
         self._vpc_config_infos = vpc_config_infos
+
+    @property
+    def dc_vnc_ip(self):
+        r"""Gets the dc_vnc_ip of this NetworkConfig.
+
+        自定义的专线VNC地址。
+
+        :return: The dc_vnc_ip of this NetworkConfig.
+        :rtype: str
+        """
+        return self._dc_vnc_ip
+
+    @dc_vnc_ip.setter
+    def dc_vnc_ip(self, dc_vnc_ip):
+        r"""Sets the dc_vnc_ip of this NetworkConfig.
+
+        自定义的专线VNC地址。
+
+        :param dc_vnc_ip: The dc_vnc_ip of this NetworkConfig.
+        :type dc_vnc_ip: str
+        """
+        self._dc_vnc_ip = dc_vnc_ip
 
     def to_dict(self):
         result = {}

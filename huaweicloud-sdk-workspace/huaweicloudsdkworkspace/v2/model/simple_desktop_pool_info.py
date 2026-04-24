@@ -33,19 +33,24 @@ class SimpleDesktopPoolInfo:
         'image_os_version': 'str',
         'image_os_platform': 'str',
         'image_product_code': 'str',
+        'image_cloud_service_type': 'str',
+        'image_resource_type': 'str',
         'root_volume': 'VolumeInfo',
         'data_volumes': 'list[VolumeInfo]',
         'security_groups': 'list[SecurityGroupInfo]',
         'disconnected_retention_period': 'int',
         'enable_autoscale': 'bool',
         'autoscale_policy': 'AutoscalePolicy',
+        'user_reset_policy': 'UserResetPolicy',
         'status': 'str',
         'enterprise_project_id': 'str',
         'in_maintenance_mode': 'bool',
         'desktop_name_policy_id': 'str',
         'tags': 'list[Tag]',
         'ou_name': 'str',
-        'vpc_id': 'str'
+        'vpc_id': 'str',
+        'isolation_num': 'int',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -67,22 +72,27 @@ class SimpleDesktopPoolInfo:
         'image_os_version': 'image_os_version',
         'image_os_platform': 'image_os_platform',
         'image_product_code': 'image_product_code',
+        'image_cloud_service_type': 'image_cloud_service_type',
+        'image_resource_type': 'image_resource_type',
         'root_volume': 'root_volume',
         'data_volumes': 'data_volumes',
         'security_groups': 'security_groups',
         'disconnected_retention_period': 'disconnected_retention_period',
         'enable_autoscale': 'enable_autoscale',
         'autoscale_policy': 'autoscale_policy',
+        'user_reset_policy': 'user_reset_policy',
         'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
         'in_maintenance_mode': 'in_maintenance_mode',
         'desktop_name_policy_id': 'desktop_name_policy_id',
         'tags': 'tags',
         'ou_name': 'ou_name',
-        'vpc_id': 'vpc_id'
+        'vpc_id': 'vpc_id',
+        'isolation_num': 'isolation_num',
+        'domain': 'domain'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, availability_zone=None, subnet_id=None, subnet_ids=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None, tags=None, ou_name=None, vpc_id=None):
+    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, availability_zone=None, subnet_id=None, subnet_ids=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, image_cloud_service_type=None, image_resource_type=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, user_reset_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None, tags=None, ou_name=None, vpc_id=None, isolation_num=None, domain=None):
         r"""SimpleDesktopPoolInfo
 
         The model defined in huaweicloud sdk
@@ -123,6 +133,10 @@ class SimpleDesktopPoolInfo:
         :type image_os_platform: str
         :param image_product_code: 镜像的productCode（specCode）。
         :type image_product_code: str
+        :param image_cloud_service_type: 镜像的cloudServiceType
+        :type image_cloud_service_type: str
+        :param image_resource_type: 镜像的resourceType。
+        :type image_resource_type: str
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeInfo`
         :param data_volumes: 数据盘列表。
@@ -135,6 +149,8 @@ class SimpleDesktopPoolInfo:
         :type enable_autoscale: bool
         :param autoscale_policy: 
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
+        :param user_reset_policy: 
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
         :param status: 桌面池状态。 - STEADY：稳态 - TEMPORARY：临时态 - EXIST_FROZEN：存在冻结桌面 - UNKNOWN：未知态
         :type status: str
         :param enterprise_project_id: 企业项目ID。
@@ -149,6 +165,10 @@ class SimpleDesktopPoolInfo:
         :type ou_name: str
         :param vpc_id: VPC ID。
         :type vpc_id: str
+        :param isolation_num: 统计无法连接桌面数量。适用于桌面池详情查询。
+        :type isolation_num: int
+        :param domain: 桌面池分配的域。
+        :type domain: str
         """
         
         
@@ -171,12 +191,15 @@ class SimpleDesktopPoolInfo:
         self._image_os_version = None
         self._image_os_platform = None
         self._image_product_code = None
+        self._image_cloud_service_type = None
+        self._image_resource_type = None
         self._root_volume = None
         self._data_volumes = None
         self._security_groups = None
         self._disconnected_retention_period = None
         self._enable_autoscale = None
         self._autoscale_policy = None
+        self._user_reset_policy = None
         self._status = None
         self._enterprise_project_id = None
         self._in_maintenance_mode = None
@@ -184,6 +207,8 @@ class SimpleDesktopPoolInfo:
         self._tags = None
         self._ou_name = None
         self._vpc_id = None
+        self._isolation_num = None
+        self._domain = None
         self.discriminator = None
 
         if id is not None:
@@ -222,6 +247,10 @@ class SimpleDesktopPoolInfo:
             self.image_os_platform = image_os_platform
         if image_product_code is not None:
             self.image_product_code = image_product_code
+        if image_cloud_service_type is not None:
+            self.image_cloud_service_type = image_cloud_service_type
+        if image_resource_type is not None:
+            self.image_resource_type = image_resource_type
         if root_volume is not None:
             self.root_volume = root_volume
         if data_volumes is not None:
@@ -234,6 +263,8 @@ class SimpleDesktopPoolInfo:
             self.enable_autoscale = enable_autoscale
         if autoscale_policy is not None:
             self.autoscale_policy = autoscale_policy
+        if user_reset_policy is not None:
+            self.user_reset_policy = user_reset_policy
         if status is not None:
             self.status = status
         if enterprise_project_id is not None:
@@ -248,6 +279,10 @@ class SimpleDesktopPoolInfo:
             self.ou_name = ou_name
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if isolation_num is not None:
+            self.isolation_num = isolation_num
+        if domain is not None:
+            self.domain = domain
 
     @property
     def id(self):
@@ -642,6 +677,50 @@ class SimpleDesktopPoolInfo:
         self._image_product_code = image_product_code
 
     @property
+    def image_cloud_service_type(self):
+        r"""Gets the image_cloud_service_type of this SimpleDesktopPoolInfo.
+
+        镜像的cloudServiceType
+
+        :return: The image_cloud_service_type of this SimpleDesktopPoolInfo.
+        :rtype: str
+        """
+        return self._image_cloud_service_type
+
+    @image_cloud_service_type.setter
+    def image_cloud_service_type(self, image_cloud_service_type):
+        r"""Sets the image_cloud_service_type of this SimpleDesktopPoolInfo.
+
+        镜像的cloudServiceType
+
+        :param image_cloud_service_type: The image_cloud_service_type of this SimpleDesktopPoolInfo.
+        :type image_cloud_service_type: str
+        """
+        self._image_cloud_service_type = image_cloud_service_type
+
+    @property
+    def image_resource_type(self):
+        r"""Gets the image_resource_type of this SimpleDesktopPoolInfo.
+
+        镜像的resourceType。
+
+        :return: The image_resource_type of this SimpleDesktopPoolInfo.
+        :rtype: str
+        """
+        return self._image_resource_type
+
+    @image_resource_type.setter
+    def image_resource_type(self, image_resource_type):
+        r"""Sets the image_resource_type of this SimpleDesktopPoolInfo.
+
+        镜像的resourceType。
+
+        :param image_resource_type: The image_resource_type of this SimpleDesktopPoolInfo.
+        :type image_resource_type: str
+        """
+        self._image_resource_type = image_resource_type
+
+    @property
     def root_volume(self):
         r"""Gets the root_volume of this SimpleDesktopPoolInfo.
 
@@ -764,6 +843,24 @@ class SimpleDesktopPoolInfo:
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
         """
         self._autoscale_policy = autoscale_policy
+
+    @property
+    def user_reset_policy(self):
+        r"""Gets the user_reset_policy of this SimpleDesktopPoolInfo.
+
+        :return: The user_reset_policy of this SimpleDesktopPoolInfo.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        return self._user_reset_policy
+
+    @user_reset_policy.setter
+    def user_reset_policy(self, user_reset_policy):
+        r"""Sets the user_reset_policy of this SimpleDesktopPoolInfo.
+
+        :param user_reset_policy: The user_reset_policy of this SimpleDesktopPoolInfo.
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        self._user_reset_policy = user_reset_policy
 
     @property
     def status(self):
@@ -918,6 +1015,50 @@ class SimpleDesktopPoolInfo:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def isolation_num(self):
+        r"""Gets the isolation_num of this SimpleDesktopPoolInfo.
+
+        统计无法连接桌面数量。适用于桌面池详情查询。
+
+        :return: The isolation_num of this SimpleDesktopPoolInfo.
+        :rtype: int
+        """
+        return self._isolation_num
+
+    @isolation_num.setter
+    def isolation_num(self, isolation_num):
+        r"""Sets the isolation_num of this SimpleDesktopPoolInfo.
+
+        统计无法连接桌面数量。适用于桌面池详情查询。
+
+        :param isolation_num: The isolation_num of this SimpleDesktopPoolInfo.
+        :type isolation_num: int
+        """
+        self._isolation_num = isolation_num
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this SimpleDesktopPoolInfo.
+
+        桌面池分配的域。
+
+        :return: The domain of this SimpleDesktopPoolInfo.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this SimpleDesktopPoolInfo.
+
+        桌面池分配的域。
+
+        :param domain: The domain of this SimpleDesktopPoolInfo.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

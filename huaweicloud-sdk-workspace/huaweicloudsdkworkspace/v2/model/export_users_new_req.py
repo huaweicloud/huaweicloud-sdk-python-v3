@@ -16,6 +16,7 @@ class ExportUsersNewReq:
 
     openapi_types = {
         'user_name': 'str',
+        'user_names': 'list[str]',
         'description': 'str',
         'active_type': 'str',
         'language': 'str',
@@ -24,19 +25,22 @@ class ExportUsersNewReq:
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_names': 'user_names',
         'description': 'description',
         'active_type': 'active_type',
         'language': 'language',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, user_name=None, description=None, active_type=None, language=None, enterprise_project_id=None):
+    def __init__(self, user_name=None, user_names=None, description=None, active_type=None, language=None, enterprise_project_id=None):
         r"""ExportUsersNewReq
 
         The model defined in huaweicloud sdk
 
         :param user_name: 桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。支持模糊查询导出。
         :type user_name: str
+        :param user_names: 桌面用户名列表
+        :type user_names: list[str]
         :param description: 描述，支持模糊查询导出。
         :type description: str
         :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
@@ -50,6 +54,7 @@ class ExportUsersNewReq:
         
 
         self._user_name = None
+        self._user_names = None
         self._description = None
         self._active_type = None
         self._language = None
@@ -58,6 +63,8 @@ class ExportUsersNewReq:
 
         if user_name is not None:
             self.user_name = user_name
+        if user_names is not None:
+            self.user_names = user_names
         if description is not None:
             self.description = description
         if active_type is not None:
@@ -88,6 +95,28 @@ class ExportUsersNewReq:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_names(self):
+        r"""Gets the user_names of this ExportUsersNewReq.
+
+        桌面用户名列表
+
+        :return: The user_names of this ExportUsersNewReq.
+        :rtype: list[str]
+        """
+        return self._user_names
+
+    @user_names.setter
+    def user_names(self, user_names):
+        r"""Sets the user_names of this ExportUsersNewReq.
+
+        桌面用户名列表
+
+        :param user_names: The user_names of this ExportUsersNewReq.
+        :type user_names: list[str]
+        """
+        self._user_names = user_names
 
     @property
     def description(self):

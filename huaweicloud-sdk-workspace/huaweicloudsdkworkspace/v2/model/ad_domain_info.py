@@ -59,7 +59,8 @@ class AdDomainInfo:
         self.domain_type = domain_type
         self.domain_admin_account = domain_admin_account
         self.domain_password = domain_password
-        self.cba_enabled = cba_enabled
+        if cba_enabled is not None:
+            self.cba_enabled = cba_enabled
         if certificate_id is not None:
             self.certificate_id = certificate_id
 

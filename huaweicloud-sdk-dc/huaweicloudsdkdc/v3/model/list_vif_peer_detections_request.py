@@ -20,8 +20,7 @@ class ListVifPeerDetectionsRequest:
         'sort_key': 'str',
         'sort_dir': 'list[str]',
         'offset': 'int',
-        'page_reverse': 'bool',
-        'vif_peer_id': 'str'
+        'page_reverse': 'bool'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class ListVifPeerDetectionsRequest:
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'offset': 'offset',
-        'page_reverse': 'page_reverse',
-        'vif_peer_id': 'vif_peer_id'
+        'page_reverse': 'page_reverse'
     }
 
-    def __init__(self, marker=None, limit=None, sort_key=None, sort_dir=None, offset=None, page_reverse=None, vif_peer_id=None):
+    def __init__(self, marker=None, limit=None, sort_key=None, sort_dir=None, offset=None, page_reverse=None):
         r"""ListVifPeerDetectionsRequest
 
         The model defined in huaweicloud sdk
@@ -51,8 +49,6 @@ class ListVifPeerDetectionsRequest:
         :type offset: int
         :param page_reverse: 分页参数
         :type page_reverse: bool
-        :param vif_peer_id: 虚拟接口对等体ID
-        :type vif_peer_id: str
         """
         
         
@@ -63,7 +59,6 @@ class ListVifPeerDetectionsRequest:
         self._sort_dir = None
         self._offset = None
         self._page_reverse = None
-        self._vif_peer_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -78,7 +73,6 @@ class ListVifPeerDetectionsRequest:
             self.offset = offset
         if page_reverse is not None:
             self.page_reverse = page_reverse
-        self.vif_peer_id = vif_peer_id
 
     @property
     def marker(self):
@@ -211,28 +205,6 @@ class ListVifPeerDetectionsRequest:
         :type page_reverse: bool
         """
         self._page_reverse = page_reverse
-
-    @property
-    def vif_peer_id(self):
-        r"""Gets the vif_peer_id of this ListVifPeerDetectionsRequest.
-
-        虚拟接口对等体ID
-
-        :return: The vif_peer_id of this ListVifPeerDetectionsRequest.
-        :rtype: str
-        """
-        return self._vif_peer_id
-
-    @vif_peer_id.setter
-    def vif_peer_id(self, vif_peer_id):
-        r"""Sets the vif_peer_id of this ListVifPeerDetectionsRequest.
-
-        虚拟接口对等体ID
-
-        :param vif_peer_id: The vif_peer_id of this ListVifPeerDetectionsRequest.
-        :type vif_peer_id: str
-        """
-        self._vif_peer_id = vif_peer_id
 
     def to_dict(self):
         result = {}

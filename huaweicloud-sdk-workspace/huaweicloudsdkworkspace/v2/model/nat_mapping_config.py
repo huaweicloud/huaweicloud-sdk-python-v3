@@ -23,6 +23,7 @@ class NatMappingConfig:
         'vag_port': 'str',
         'access_filter_type': 'int',
         'enterprise_project_id': 'str',
+        'assist_auth_enabled': 'bool',
         'tags': 'list[Tag]'
     }
 
@@ -35,10 +36,11 @@ class NatMappingConfig:
         'vag_port': 'vag_port',
         'access_filter_type': 'access_filter_type',
         'enterprise_project_id': 'enterprise_project_id',
+        'assist_auth_enabled': 'assist_auth_enabled',
         'tags': 'tags'
     }
 
-    def __init__(self, nat_map_type=None, nat_map_value=None, nat_ip=None, nat_port=None, vag_ip=None, vag_port=None, access_filter_type=None, enterprise_project_id=None, tags=None):
+    def __init__(self, nat_map_type=None, nat_map_value=None, nat_ip=None, nat_port=None, vag_ip=None, vag_port=None, access_filter_type=None, enterprise_project_id=None, assist_auth_enabled=None, tags=None):
         r"""NatMappingConfig
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class NatMappingConfig:
         :type access_filter_type: int
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param assist_auth_enabled: 地址映射的辅助认证的开关
+        :type assist_auth_enabled: bool
         :param tags: 标签对象。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         """
@@ -73,6 +77,7 @@ class NatMappingConfig:
         self._vag_port = None
         self._access_filter_type = None
         self._enterprise_project_id = None
+        self._assist_auth_enabled = None
         self._tags = None
         self.discriminator = None
 
@@ -92,6 +97,8 @@ class NatMappingConfig:
             self.access_filter_type = access_filter_type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if assist_auth_enabled is not None:
+            self.assist_auth_enabled = assist_auth_enabled
         if tags is not None:
             self.tags = tags
 
@@ -270,6 +277,28 @@ class NatMappingConfig:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def assist_auth_enabled(self):
+        r"""Gets the assist_auth_enabled of this NatMappingConfig.
+
+        地址映射的辅助认证的开关
+
+        :return: The assist_auth_enabled of this NatMappingConfig.
+        :rtype: bool
+        """
+        return self._assist_auth_enabled
+
+    @assist_auth_enabled.setter
+    def assist_auth_enabled(self, assist_auth_enabled):
+        r"""Sets the assist_auth_enabled of this NatMappingConfig.
+
+        地址映射的辅助认证的开关
+
+        :param assist_auth_enabled: The assist_auth_enabled of this NatMappingConfig.
+        :type assist_auth_enabled: bool
+        """
+        self._assist_auth_enabled = assist_auth_enabled
 
     @property
     def tags(self):

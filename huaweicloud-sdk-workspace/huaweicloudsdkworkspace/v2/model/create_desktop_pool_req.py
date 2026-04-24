@@ -36,7 +36,9 @@ class CreateDesktopPoolReq:
         'disconnected_retention_period': 'int',
         'enable_autoscale': 'bool',
         'autoscale_policy': 'AutoscalePolicy',
-        'desktop_name_policy_id': 'str'
+        'user_reset_policy': 'UserResetPolicy',
+        'desktop_name_policy_id': 'str',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -61,15 +63,17 @@ class CreateDesktopPoolReq:
         'disconnected_retention_period': 'disconnected_retention_period',
         'enable_autoscale': 'enable_autoscale',
         'autoscale_policy': 'autoscale_policy',
-        'desktop_name_policy_id': 'desktop_name_policy_id'
+        'user_reset_policy': 'user_reset_policy',
+        'desktop_name_policy_id': 'desktop_name_policy_id',
+        'domain': 'domain'
     }
 
-    def __init__(self, name=None, type=None, size=None, description=None, availability_zone=None, product_id=None, flavor_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, authorized_objects=None, ou_name=None, tags=None, enterprise_project_id=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, desktop_name_policy_id=None):
+    def __init__(self, name=None, type=None, size=None, description=None, availability_zone=None, product_id=None, flavor_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, authorized_objects=None, ou_name=None, tags=None, enterprise_project_id=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, user_reset_policy=None, desktop_name_policy_id=None, domain=None):
         r"""CreateDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
-        :param name: 桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        :param name: 桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
         :type name: str
         :param type: 桌面池类型，DYNAMIC：动态池，STATIC：静态池。
         :type type: str
@@ -111,8 +115,12 @@ class CreateDesktopPoolReq:
         :type enable_autoscale: bool
         :param autoscale_policy: 
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
+        :param user_reset_policy: 
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
         :type desktop_name_policy_id: str
+        :param domain: 桌面分配的域。
+        :type domain: str
         """
         
         
@@ -138,7 +146,9 @@ class CreateDesktopPoolReq:
         self._disconnected_retention_period = None
         self._enable_autoscale = None
         self._autoscale_policy = None
+        self._user_reset_policy = None
         self._desktop_name_policy_id = None
+        self._domain = None
         self.discriminator = None
 
         self.name = name
@@ -175,14 +185,18 @@ class CreateDesktopPoolReq:
             self.enable_autoscale = enable_autoscale
         if autoscale_policy is not None:
             self.autoscale_policy = autoscale_policy
+        if user_reset_policy is not None:
+            self.user_reset_policy = user_reset_policy
         if desktop_name_policy_id is not None:
             self.desktop_name_policy_id = desktop_name_policy_id
+        if domain is not None:
+            self.domain = domain
 
     @property
     def name(self):
         r"""Gets the name of this CreateDesktopPoolReq.
 
-        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
 
         :return: The name of this CreateDesktopPoolReq.
         :rtype: str
@@ -193,7 +207,7 @@ class CreateDesktopPoolReq:
     def name(self, name):
         r"""Sets the name of this CreateDesktopPoolReq.
 
-        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~255。
+        桌面池名称，桌面池名称必须保证唯一。桌面名称只允许输入中文、大写字母、小写字母、数字、中划线，长度范围为1~64。
 
         :param name: The name of this CreateDesktopPoolReq.
         :type name: str
@@ -633,6 +647,24 @@ class CreateDesktopPoolReq:
         self._autoscale_policy = autoscale_policy
 
     @property
+    def user_reset_policy(self):
+        r"""Gets the user_reset_policy of this CreateDesktopPoolReq.
+
+        :return: The user_reset_policy of this CreateDesktopPoolReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        return self._user_reset_policy
+
+    @user_reset_policy.setter
+    def user_reset_policy(self, user_reset_policy):
+        r"""Sets the user_reset_policy of this CreateDesktopPoolReq.
+
+        :param user_reset_policy: The user_reset_policy of this CreateDesktopPoolReq.
+        :type user_reset_policy: :class:`huaweicloudsdkworkspace.v2.UserResetPolicy`
+        """
+        self._user_reset_policy = user_reset_policy
+
+    @property
     def desktop_name_policy_id(self):
         r"""Gets the desktop_name_policy_id of this CreateDesktopPoolReq.
 
@@ -653,6 +685,28 @@ class CreateDesktopPoolReq:
         :type desktop_name_policy_id: str
         """
         self._desktop_name_policy_id = desktop_name_policy_id
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this CreateDesktopPoolReq.
+
+        桌面分配的域。
+
+        :return: The domain of this CreateDesktopPoolReq.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this CreateDesktopPoolReq.
+
+        桌面分配的域。
+
+        :param domain: The domain of this CreateDesktopPoolReq.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

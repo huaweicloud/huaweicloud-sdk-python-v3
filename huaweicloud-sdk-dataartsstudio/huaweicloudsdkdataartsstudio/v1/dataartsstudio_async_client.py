@@ -3791,6 +3791,77 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def create_factory_baseline_async(self, request):
+        r"""创建基线任务
+
+        创建基线任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFactoryBaseline
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryBaselineRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryBaselineResponse`
+        """
+        http_info = self._create_factory_baseline_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_factory_baseline_async_invoker(self, request):
+        http_info = self._create_factory_baseline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_factory_baseline_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/aiops/{instance_id}/baseline",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFactoryBaselineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_factory_env_async(self, request):
         r"""创建环境变量
 
@@ -12766,6 +12837,99 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_factory_search_baseline_instances_async(self, request):
+        r"""查询基线实例列表
+
+        查询基线实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactorySearchBaselineInstances
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactorySearchBaselineInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactorySearchBaselineInstancesResponse`
+        """
+        http_info = self._list_factory_search_baseline_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_search_baseline_instances_async_invoker(self, request):
+        http_info = self._list_factory_search_baseline_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_search_baseline_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/aiops/{instance_id}/baselineinstance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactorySearchBaselineInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'baseline_name' in local_var_params:
+            query_params.append(('baseline_name', local_var_params['baseline_name']))
+        if 'owner_name' in local_var_params:
+            query_params.append(('owner_name', local_var_params['owner_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'priority' in local_var_params:
+            query_params.append(('priority', local_var_params['priority']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'finish_status' in local_var_params:
+            query_params.append(('finish_status', local_var_params['finish_status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_factory_task_completion_async(self, request):
         r"""查询任务完成情况
 
@@ -13634,6 +13798,182 @@ class DataArtsStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_search_factory_baselines_async(self, request):
+        r"""查询基线任务列表
+
+        查询基线任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSearchFactoryBaselines
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSearchFactoryBaselinesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSearchFactoryBaselinesResponse`
+        """
+        http_info = self._list_search_factory_baselines_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_search_factory_baselines_async_invoker(self, request):
+        http_info = self._list_search_factory_baselines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_search_factory_baselines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/aiops/{instance_id}/baseline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSearchFactoryBaselinesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'owner_name' in local_var_params:
+            query_params.append(('owner_name', local_var_params['owner_name']))
+        if 'priority' in local_var_params:
+            query_params.append(('priority', local_var_params['priority']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'enable' in local_var_params:
+            query_params.append(('enable', local_var_params['enable']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_search_factory_events_async(self, request):
+        r"""查询事件列表
+
+        查询事件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSearchFactoryEvents
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSearchFactoryEventsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSearchFactoryEventsResponse`
+        """
+        http_info = self._list_search_factory_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_search_factory_events_async_invoker(self, request):
+        http_info = self._list_search_factory_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_search_factory_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/aiops/{instance_id}/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSearchFactoryEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
+        if 'owner_name' in local_var_params:
+            query_params.append(('owner_name', local_var_params['owner_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
 
@@ -21282,6 +21622,10 @@ class DataArtsStudioAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -27789,6 +28133,95 @@ class DataArtsStudioAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_workspaces_approval_async(self, request):
+        r"""查询审批中心列表
+
+        查询审批中心列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFactoryWorkspacesApproval
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryWorkspacesApprovalRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryWorkspacesApprovalResponse`
+        """
+        http_info = self._list_factory_workspaces_approval_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_workspaces_approval_async_invoker(self, request):
+        http_info = self._list_factory_workspaces_approval_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_factory_workspaces_approval_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/workspaces/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryWorkspacesApprovalResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'apply_id' in local_var_params:
+            query_params.append(('apply_id', local_var_params['apply_id']))
+        if 'approver_name' in local_var_params:
+            query_params.append(('approver_name', local_var_params['approver_name']))
+        if 'create_user' in local_var_params:
+            query_params.append(('create_user', local_var_params['create_user']))
+        if 'object_name' in local_var_params:
+            query_params.append(('object_name', local_var_params['object_name']))
+        if 'object_type' in local_var_params:
+            query_params.append(('object_type', local_var_params['object_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

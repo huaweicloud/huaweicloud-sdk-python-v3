@@ -57,7 +57,7 @@ class PoliciesDisplay:
 
         The model defined in huaweicloud sdk
 
-        :param display_level: 显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
+        :param display_level: 显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。 LEVEL6：表示画质优先。 LEVEL7：表示流畅优先。 LEVEL8：表示自定义。
         :type display_level: str
         :param options: 
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptions`
@@ -148,7 +148,7 @@ class PoliciesDisplay:
     def display_level(self):
         r"""Gets the display_level of this PoliciesDisplay.
 
-        显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
+        显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。 LEVEL6：表示画质优先。 LEVEL7：表示流畅优先。 LEVEL8：表示自定义。
 
         :return: The display_level of this PoliciesDisplay.
         :rtype: str
@@ -159,7 +159,7 @@ class PoliciesDisplay:
     def display_level(self, display_level):
         r"""Sets the display_level of this PoliciesDisplay.
 
-        显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
+        显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。 LEVEL6：表示画质优先。 LEVEL7：表示流畅优先。 LEVEL8：表示自定义。
 
         :param display_level: The display_level of this PoliciesDisplay.
         :type display_level: str

@@ -24,7 +24,8 @@ class ExportUserConnectionNewRequest:
         'min_e2e_rtt': 'int',
         'max_e2e_rtt': 'int',
         'enterprise_project_id': 'str',
-        'public_ip': 'str'
+        'public_ip': 'str',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ExportUserConnectionNewRequest:
         'min_e2e_rtt': 'min_e2e_rtt',
         'max_e2e_rtt': 'max_e2e_rtt',
         'enterprise_project_id': 'enterprise_project_id',
-        'public_ip': 'public_ip'
+        'public_ip': 'public_ip',
+        'domain': 'domain'
     }
 
-    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, language=None, min_e2e_rtt=None, max_e2e_rtt=None, enterprise_project_id=None, public_ip=None):
+    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, language=None, min_e2e_rtt=None, max_e2e_rtt=None, enterprise_project_id=None, public_ip=None, domain=None):
         r"""ExportUserConnectionNewRequest
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ExportUserConnectionNewRequest:
         :type enterprise_project_id: str
         :param public_ip: 客户端出口IP。
         :type public_ip: str
+        :param domain: 域名
+        :type domain: str
         """
         
         
@@ -79,6 +83,7 @@ class ExportUserConnectionNewRequest:
         self._max_e2e_rtt = None
         self._enterprise_project_id = None
         self._public_ip = None
+        self._domain = None
         self.discriminator = None
 
         if start_time is not None:
@@ -101,6 +106,8 @@ class ExportUserConnectionNewRequest:
             self.enterprise_project_id = enterprise_project_id
         if public_ip is not None:
             self.public_ip = public_ip
+        if domain is not None:
+            self.domain = domain
 
     @property
     def start_time(self):
@@ -321,6 +328,28 @@ class ExportUserConnectionNewRequest:
         :type public_ip: str
         """
         self._public_ip = public_ip
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ExportUserConnectionNewRequest.
+
+        域名
+
+        :return: The domain of this ExportUserConnectionNewRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ExportUserConnectionNewRequest.
+
+        域名
+
+        :param domain: The domain of this ExportUserConnectionNewRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

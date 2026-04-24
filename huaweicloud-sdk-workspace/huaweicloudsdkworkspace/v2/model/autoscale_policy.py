@@ -20,7 +20,9 @@ class AutoscalePolicy:
         'min_idle': 'int',
         'once_auto_created': 'int',
         'min_retention': 'int',
-        'idle_retention_duration': 'int'
+        'idle_retention_duration': 'int',
+        'auto_isolation_enable': 'bool',
+        'auto_isolation_max_num': 'int'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class AutoscalePolicy:
         'min_idle': 'min_idle',
         'once_auto_created': 'once_auto_created',
         'min_retention': 'min_retention',
-        'idle_retention_duration': 'idle_retention_duration'
+        'idle_retention_duration': 'idle_retention_duration',
+        'auto_isolation_enable': 'auto_isolation_enable',
+        'auto_isolation_max_num': 'auto_isolation_max_num'
     }
 
-    def __init__(self, autoscale_type=None, max_auto_created=None, min_idle=None, once_auto_created=None, min_retention=None, idle_retention_duration=None):
+    def __init__(self, autoscale_type=None, max_auto_created=None, min_idle=None, once_auto_created=None, min_retention=None, idle_retention_duration=None, auto_isolation_enable=None, auto_isolation_max_num=None):
         r"""AutoscalePolicy
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class AutoscalePolicy:
         :type min_retention: int
         :param idle_retention_duration: 空闲桌面保留时长（分钟）。
         :type idle_retention_duration: int
+        :param auto_isolation_enable: 自动故障隔离开关。
+        :type auto_isolation_enable: bool
+        :param auto_isolation_max_num: 自动隔离桌面数量上限，默认上限1000。
+        :type auto_isolation_max_num: int
         """
         
         
@@ -59,6 +67,8 @@ class AutoscalePolicy:
         self._once_auto_created = None
         self._min_retention = None
         self._idle_retention_duration = None
+        self._auto_isolation_enable = None
+        self._auto_isolation_max_num = None
         self.discriminator = None
 
         if autoscale_type is not None:
@@ -73,6 +83,10 @@ class AutoscalePolicy:
             self.min_retention = min_retention
         if idle_retention_duration is not None:
             self.idle_retention_duration = idle_retention_duration
+        if auto_isolation_enable is not None:
+            self.auto_isolation_enable = auto_isolation_enable
+        if auto_isolation_max_num is not None:
+            self.auto_isolation_max_num = auto_isolation_max_num
 
     @property
     def autoscale_type(self):
@@ -205,6 +219,50 @@ class AutoscalePolicy:
         :type idle_retention_duration: int
         """
         self._idle_retention_duration = idle_retention_duration
+
+    @property
+    def auto_isolation_enable(self):
+        r"""Gets the auto_isolation_enable of this AutoscalePolicy.
+
+        自动故障隔离开关。
+
+        :return: The auto_isolation_enable of this AutoscalePolicy.
+        :rtype: bool
+        """
+        return self._auto_isolation_enable
+
+    @auto_isolation_enable.setter
+    def auto_isolation_enable(self, auto_isolation_enable):
+        r"""Sets the auto_isolation_enable of this AutoscalePolicy.
+
+        自动故障隔离开关。
+
+        :param auto_isolation_enable: The auto_isolation_enable of this AutoscalePolicy.
+        :type auto_isolation_enable: bool
+        """
+        self._auto_isolation_enable = auto_isolation_enable
+
+    @property
+    def auto_isolation_max_num(self):
+        r"""Gets the auto_isolation_max_num of this AutoscalePolicy.
+
+        自动隔离桌面数量上限，默认上限1000。
+
+        :return: The auto_isolation_max_num of this AutoscalePolicy.
+        :rtype: int
+        """
+        return self._auto_isolation_max_num
+
+    @auto_isolation_max_num.setter
+    def auto_isolation_max_num(self, auto_isolation_max_num):
+        r"""Sets the auto_isolation_max_num of this AutoscalePolicy.
+
+        自动隔离桌面数量上限，默认上限1000。
+
+        :param auto_isolation_max_num: The auto_isolation_max_num of this AutoscalePolicy.
+        :type auto_isolation_max_num: int
+        """
+        self._auto_isolation_max_num = auto_isolation_max_num
 
     def to_dict(self):
         result = {}

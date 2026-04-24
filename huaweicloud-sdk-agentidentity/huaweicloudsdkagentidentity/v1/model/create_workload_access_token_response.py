@@ -1,0 +1,141 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CreateWorkloadAccessTokenResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'workload_access_token': 'str',
+        'expiration': 'datetime'
+    }
+
+    attribute_map = {
+        'workload_access_token': 'workload_access_token',
+        'expiration': 'expiration'
+    }
+
+    def __init__(self, workload_access_token=None, expiration=None):
+        r"""CreateWorkloadAccessTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param workload_access_token: An opaque token representing the identity of both the workload and the user (or just the workload if not acting on behalf of a user)
+        :type workload_access_token: str
+        :param expiration: The date and time on which the workload access token expire.
+        :type expiration: datetime
+        """
+        
+        super().__init__()
+
+        self._workload_access_token = None
+        self._expiration = None
+        self.discriminator = None
+
+        if workload_access_token is not None:
+            self.workload_access_token = workload_access_token
+        if expiration is not None:
+            self.expiration = expiration
+
+    @property
+    def workload_access_token(self):
+        r"""Gets the workload_access_token of this CreateWorkloadAccessTokenResponse.
+
+        An opaque token representing the identity of both the workload and the user (or just the workload if not acting on behalf of a user)
+
+        :return: The workload_access_token of this CreateWorkloadAccessTokenResponse.
+        :rtype: str
+        """
+        return self._workload_access_token
+
+    @workload_access_token.setter
+    def workload_access_token(self, workload_access_token):
+        r"""Sets the workload_access_token of this CreateWorkloadAccessTokenResponse.
+
+        An opaque token representing the identity of both the workload and the user (or just the workload if not acting on behalf of a user)
+
+        :param workload_access_token: The workload_access_token of this CreateWorkloadAccessTokenResponse.
+        :type workload_access_token: str
+        """
+        self._workload_access_token = workload_access_token
+
+    @property
+    def expiration(self):
+        r"""Gets the expiration of this CreateWorkloadAccessTokenResponse.
+
+        The date and time on which the workload access token expire.
+
+        :return: The expiration of this CreateWorkloadAccessTokenResponse.
+        :rtype: datetime
+        """
+        return self._expiration
+
+    @expiration.setter
+    def expiration(self, expiration):
+        r"""Sets the expiration of this CreateWorkloadAccessTokenResponse.
+
+        The date and time on which the workload access token expire.
+
+        :param expiration: The expiration of this CreateWorkloadAccessTokenResponse.
+        :type expiration: datetime
+        """
+        self._expiration = expiration
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("CreateWorkloadAccessTokenResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateWorkloadAccessTokenResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

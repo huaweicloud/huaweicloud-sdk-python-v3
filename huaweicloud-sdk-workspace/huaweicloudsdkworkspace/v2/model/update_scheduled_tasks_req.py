@@ -33,10 +33,12 @@ class UpdateScheduledTasksReq:
         'description': 'str',
         'enable': 'bool',
         'extra_params': 'str',
+        'apply_object_update_type': 'str',
         'apply_objects': 'list[ApplyObject]',
         'priority': 'int',
         'is_gray': 'bool',
-        'wait_time': 'int'
+        'wait_time': 'int',
+        'life_cycle_exec_period': 'int'
     }
 
     attribute_map = {
@@ -58,13 +60,15 @@ class UpdateScheduledTasksReq:
         'description': 'description',
         'enable': 'enable',
         'extra_params': 'extra_params',
+        'apply_object_update_type': 'apply_object_update_type',
         'apply_objects': 'apply_objects',
         'priority': 'priority',
         'is_gray': 'is_gray',
-        'wait_time': 'wait_time'
+        'wait_time': 'wait_time',
+        'life_cycle_exec_period': 'life_cycle_exec_period'
     }
 
-    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_name=None, force_execute=None, description=None, enable=None, extra_params=None, apply_objects=None, priority=None, is_gray=None, wait_time=None):
+    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_name=None, force_execute=None, description=None, enable=None, extra_params=None, apply_object_update_type=None, apply_objects=None, priority=None, is_gray=None, wait_time=None, life_cycle_exec_period=None):
         r"""UpdateScheduledTasksReq
 
         The model defined in huaweicloud sdk
@@ -105,6 +109,8 @@ class UpdateScheduledTasksReq:
         :type enable: bool
         :param extra_params: 扩展参数，json格式。
         :type extra_params: str
+        :param apply_object_update_type: 应用对象更新类型，FULL_COVERAGE：全量覆盖；CLEAR_ALL：清空所有。
+        :type apply_object_update_type: str
         :param apply_objects: 定时任务应用的对象列表。
         :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObject`]
         :param priority: 优先级。触发式任务使用。
@@ -113,6 +119,8 @@ class UpdateScheduledTasksReq:
         :type is_gray: bool
         :param wait_time: 触发式任务触发后，等待时长。
         :type wait_time: int
+        :param life_cycle_exec_period: 触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天）。
+        :type life_cycle_exec_period: int
         """
         
         
@@ -135,10 +143,12 @@ class UpdateScheduledTasksReq:
         self._description = None
         self._enable = None
         self._extra_params = None
+        self._apply_object_update_type = None
         self._apply_objects = None
         self._priority = None
         self._is_gray = None
         self._wait_time = None
+        self._life_cycle_exec_period = None
         self.discriminator = None
 
         if scheduled_type is not None:
@@ -177,6 +187,8 @@ class UpdateScheduledTasksReq:
             self.enable = enable
         if extra_params is not None:
             self.extra_params = extra_params
+        if apply_object_update_type is not None:
+            self.apply_object_update_type = apply_object_update_type
         if apply_objects is not None:
             self.apply_objects = apply_objects
         if priority is not None:
@@ -185,6 +197,8 @@ class UpdateScheduledTasksReq:
             self.is_gray = is_gray
         if wait_time is not None:
             self.wait_time = wait_time
+        if life_cycle_exec_period is not None:
+            self.life_cycle_exec_period = life_cycle_exec_period
 
     @property
     def scheduled_type(self):
@@ -583,6 +597,28 @@ class UpdateScheduledTasksReq:
         self._extra_params = extra_params
 
     @property
+    def apply_object_update_type(self):
+        r"""Gets the apply_object_update_type of this UpdateScheduledTasksReq.
+
+        应用对象更新类型，FULL_COVERAGE：全量覆盖；CLEAR_ALL：清空所有。
+
+        :return: The apply_object_update_type of this UpdateScheduledTasksReq.
+        :rtype: str
+        """
+        return self._apply_object_update_type
+
+    @apply_object_update_type.setter
+    def apply_object_update_type(self, apply_object_update_type):
+        r"""Sets the apply_object_update_type of this UpdateScheduledTasksReq.
+
+        应用对象更新类型，FULL_COVERAGE：全量覆盖；CLEAR_ALL：清空所有。
+
+        :param apply_object_update_type: The apply_object_update_type of this UpdateScheduledTasksReq.
+        :type apply_object_update_type: str
+        """
+        self._apply_object_update_type = apply_object_update_type
+
+    @property
     def apply_objects(self):
         r"""Gets the apply_objects of this UpdateScheduledTasksReq.
 
@@ -669,6 +705,28 @@ class UpdateScheduledTasksReq:
         :type wait_time: int
         """
         self._wait_time = wait_time
+
+    @property
+    def life_cycle_exec_period(self):
+        r"""Gets the life_cycle_exec_period of this UpdateScheduledTasksReq.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天）。
+
+        :return: The life_cycle_exec_period of this UpdateScheduledTasksReq.
+        :rtype: int
+        """
+        return self._life_cycle_exec_period
+
+    @life_cycle_exec_period.setter
+    def life_cycle_exec_period(self, life_cycle_exec_period):
+        r"""Sets the life_cycle_exec_period of this UpdateScheduledTasksReq.
+
+        触发式任务执行周期，单位分钟。最小1分钟，最大10080分钟（7天）。
+
+        :param life_cycle_exec_period: The life_cycle_exec_period of this UpdateScheduledTasksReq.
+        :type life_cycle_exec_period: int
+        """
+        self._life_cycle_exec_period = life_cycle_exec_period
 
     def to_dict(self):
         result = {}
