@@ -18,6 +18,7 @@ class ListPipelineRunsQuery:
         'status': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
+        'update_time': 'str',
         'offset': 'int',
         'limit': 'int',
         'sort_key': 'str',
@@ -28,13 +29,14 @@ class ListPipelineRunsQuery:
         'status': 'status',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'update_time': 'update_time',
         'offset': 'offset',
         'limit': 'limit',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, status=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None):
+    def __init__(self, status=None, start_time=None, end_time=None, update_time=None, offset=None, limit=None, sort_key=None, sort_dir=None):
         r"""ListPipelineRunsQuery
 
         The model defined in huaweicloud sdk
@@ -45,11 +47,13 @@ class ListPipelineRunsQuery:
         :type start_time: str
         :param end_time: **参数解释**： 流水线结束时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
         :type end_time: str
+        :param update_time: **参数解释**： 流水线状态更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
+        :type update_time: str
         :param offset: **参数解释**： 起始偏移。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
         :type offset: int
         :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
         :type limit: int
-        :param sort_key: **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \&quot;start_time\&quot; - 流水线开始时间。 **默认取值**： 不涉及。 
+        :param sort_key: **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \&quot;start_time\&quot; - 流水线开始时间。 \&quot;update_time\&quot; - 流水线更新时间。 **默认取值**： 不涉及。 
         :type sort_key: str
         :param sort_dir: **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
         :type sort_dir: str
@@ -60,6 +64,7 @@ class ListPipelineRunsQuery:
         self._status = None
         self._start_time = None
         self._end_time = None
+        self._update_time = None
         self._offset = None
         self._limit = None
         self._sort_key = None
@@ -72,6 +77,8 @@ class ListPipelineRunsQuery:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if update_time is not None:
+            self.update_time = update_time
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -148,6 +155,28 @@ class ListPipelineRunsQuery:
         self._end_time = end_time
 
     @property
+    def update_time(self):
+        r"""Gets the update_time of this ListPipelineRunsQuery.
+
+        **参数解释**： 流水线状态更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
+
+        :return: The update_time of this ListPipelineRunsQuery.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ListPipelineRunsQuery.
+
+        **参数解释**： 流水线状态更新时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
+
+        :param update_time: The update_time of this ListPipelineRunsQuery.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
     def offset(self):
         r"""Gets the offset of this ListPipelineRunsQuery.
 
@@ -195,7 +224,7 @@ class ListPipelineRunsQuery:
     def sort_key(self):
         r"""Gets the sort_key of this ListPipelineRunsQuery.
 
-        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 **默认取值**： 不涉及。 
+        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 \"update_time\" - 流水线更新时间。 **默认取值**： 不涉及。 
 
         :return: The sort_key of this ListPipelineRunsQuery.
         :rtype: str
@@ -206,7 +235,7 @@ class ListPipelineRunsQuery:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPipelineRunsQuery.
 
-        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 **默认取值**： 不涉及。 
+        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 \"update_time\" - 流水线更新时间。 **默认取值**： 不涉及。 
 
         :param sort_key: The sort_key of this ListPipelineRunsQuery.
         :type sort_key: str

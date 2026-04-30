@@ -16,166 +16,54 @@ class SwitchCpcsTokenResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'roles': 'list[str]',
-        'ak': 'SwitchTokenResponseAk',
-        'expired_at': 'str',
-        'issued_at': 'str',
-        'user': 'SwitchTokenResponseUser',
+        'token': 'SwitchTokenResponseToken',
         'x_cpcs_token': 'str'
     }
 
     attribute_map = {
-        'roles': 'roles',
-        'ak': 'ak',
-        'expired_at': 'expired_at',
-        'issued_at': 'issued_at',
-        'user': 'user',
+        'token': 'token',
         'x_cpcs_token': 'X-CPCS-Token'
     }
 
-    def __init__(self, roles=None, ak=None, expired_at=None, issued_at=None, user=None, x_cpcs_token=None):
+    def __init__(self, token=None, x_cpcs_token=None):
         r"""SwitchCpcsTokenResponse
 
         The model defined in huaweicloud sdk
 
-        :param roles: 角色列表
-        :type roles: list[str]
-        :param ak: 
-        :type ak: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseAk`
-        :param expired_at: 过期时间
-        :type expired_at: str
-        :param issued_at: 签发时间
-        :type issued_at: str
-        :param user: 
-        :type user: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseUser`
+        :param token: 
+        :type token: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseToken`
         :param x_cpcs_token: 
         :type x_cpcs_token: str
         """
         
         super().__init__()
 
-        self._roles = None
-        self._ak = None
-        self._expired_at = None
-        self._issued_at = None
-        self._user = None
+        self._token = None
         self._x_cpcs_token = None
         self.discriminator = None
 
-        if roles is not None:
-            self.roles = roles
-        if ak is not None:
-            self.ak = ak
-        if expired_at is not None:
-            self.expired_at = expired_at
-        if issued_at is not None:
-            self.issued_at = issued_at
-        if user is not None:
-            self.user = user
+        if token is not None:
+            self.token = token
         if x_cpcs_token is not None:
             self.x_cpcs_token = x_cpcs_token
 
     @property
-    def roles(self):
-        r"""Gets the roles of this SwitchCpcsTokenResponse.
+    def token(self):
+        r"""Gets the token of this SwitchCpcsTokenResponse.
 
-        角色列表
-
-        :return: The roles of this SwitchCpcsTokenResponse.
-        :rtype: list[str]
+        :return: The token of this SwitchCpcsTokenResponse.
+        :rtype: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseToken`
         """
-        return self._roles
+        return self._token
 
-    @roles.setter
-    def roles(self, roles):
-        r"""Sets the roles of this SwitchCpcsTokenResponse.
+    @token.setter
+    def token(self, token):
+        r"""Sets the token of this SwitchCpcsTokenResponse.
 
-        角色列表
-
-        :param roles: The roles of this SwitchCpcsTokenResponse.
-        :type roles: list[str]
+        :param token: The token of this SwitchCpcsTokenResponse.
+        :type token: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseToken`
         """
-        self._roles = roles
-
-    @property
-    def ak(self):
-        r"""Gets the ak of this SwitchCpcsTokenResponse.
-
-        :return: The ak of this SwitchCpcsTokenResponse.
-        :rtype: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseAk`
-        """
-        return self._ak
-
-    @ak.setter
-    def ak(self, ak):
-        r"""Sets the ak of this SwitchCpcsTokenResponse.
-
-        :param ak: The ak of this SwitchCpcsTokenResponse.
-        :type ak: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseAk`
-        """
-        self._ak = ak
-
-    @property
-    def expired_at(self):
-        r"""Gets the expired_at of this SwitchCpcsTokenResponse.
-
-        过期时间
-
-        :return: The expired_at of this SwitchCpcsTokenResponse.
-        :rtype: str
-        """
-        return self._expired_at
-
-    @expired_at.setter
-    def expired_at(self, expired_at):
-        r"""Sets the expired_at of this SwitchCpcsTokenResponse.
-
-        过期时间
-
-        :param expired_at: The expired_at of this SwitchCpcsTokenResponse.
-        :type expired_at: str
-        """
-        self._expired_at = expired_at
-
-    @property
-    def issued_at(self):
-        r"""Gets the issued_at of this SwitchCpcsTokenResponse.
-
-        签发时间
-
-        :return: The issued_at of this SwitchCpcsTokenResponse.
-        :rtype: str
-        """
-        return self._issued_at
-
-    @issued_at.setter
-    def issued_at(self, issued_at):
-        r"""Sets the issued_at of this SwitchCpcsTokenResponse.
-
-        签发时间
-
-        :param issued_at: The issued_at of this SwitchCpcsTokenResponse.
-        :type issued_at: str
-        """
-        self._issued_at = issued_at
-
-    @property
-    def user(self):
-        r"""Gets the user of this SwitchCpcsTokenResponse.
-
-        :return: The user of this SwitchCpcsTokenResponse.
-        :rtype: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseUser`
-        """
-        return self._user
-
-    @user.setter
-    def user(self, user):
-        r"""Sets the user of this SwitchCpcsTokenResponse.
-
-        :param user: The user of this SwitchCpcsTokenResponse.
-        :type user: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseUser`
-        """
-        self._user = user
+        self._token = token
 
     @property
     def x_cpcs_token(self):

@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SwitchTokenResponseUserDomain:
+class SwitchTokenResponseTokenRoles:
 
     """
     Attributes:
@@ -16,7 +16,7 @@ class SwitchTokenResponseUserDomain:
 
     openapi_types = {
         'name': 'str',
-        'id': 'str'
+        'id': 'int'
     }
 
     attribute_map = {
@@ -25,14 +25,14 @@ class SwitchTokenResponseUserDomain:
     }
 
     def __init__(self, name=None, id=None):
-        r"""SwitchTokenResponseUserDomain
+        r"""SwitchTokenResponseTokenRoles
 
         The model defined in huaweicloud sdk
 
-        :param name: 主账号名称
+        :param name: 角色名称
         :type name: str
-        :param id: 主账号id
-        :type id: str
+        :param id: 角色ID
+        :type id: int
         """
         
         
@@ -48,45 +48,45 @@ class SwitchTokenResponseUserDomain:
 
     @property
     def name(self):
-        r"""Gets the name of this SwitchTokenResponseUserDomain.
+        r"""Gets the name of this SwitchTokenResponseTokenRoles.
 
-        主账号名称
+        角色名称
 
-        :return: The name of this SwitchTokenResponseUserDomain.
+        :return: The name of this SwitchTokenResponseTokenRoles.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this SwitchTokenResponseUserDomain.
+        r"""Sets the name of this SwitchTokenResponseTokenRoles.
 
-        主账号名称
+        角色名称
 
-        :param name: The name of this SwitchTokenResponseUserDomain.
+        :param name: The name of this SwitchTokenResponseTokenRoles.
         :type name: str
         """
         self._name = name
 
     @property
     def id(self):
-        r"""Gets the id of this SwitchTokenResponseUserDomain.
+        r"""Gets the id of this SwitchTokenResponseTokenRoles.
 
-        主账号id
+        角色ID
 
-        :return: The id of this SwitchTokenResponseUserDomain.
-        :rtype: str
+        :return: The id of this SwitchTokenResponseTokenRoles.
+        :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        r"""Sets the id of this SwitchTokenResponseUserDomain.
+        r"""Sets the id of this SwitchTokenResponseTokenRoles.
 
-        主账号id
+        角色ID
 
-        :param id: The id of this SwitchTokenResponseUserDomain.
-        :type id: str
+        :param id: The id of this SwitchTokenResponseTokenRoles.
+        :type id: int
         """
         self._id = id
 
@@ -127,7 +127,7 @@ class SwitchTokenResponseUserDomain:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SwitchTokenResponseUserDomain):
+        if not isinstance(other, SwitchTokenResponseTokenRoles):
             return False
 
         return self.__dict__ == other.__dict__

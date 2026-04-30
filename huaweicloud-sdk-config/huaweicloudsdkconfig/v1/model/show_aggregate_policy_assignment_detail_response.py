@@ -16,6 +16,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'aggregator_name': 'str',
         'policy_assignment_type': 'str',
         'id': 'str',
         'name': 'str',
@@ -36,6 +37,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     }
 
     attribute_map = {
+        'aggregator_name': 'aggregator_name',
         'policy_assignment_type': 'policy_assignment_type',
         'id': 'id',
         'name': 'name',
@@ -55,12 +57,14 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         'target_id': 'target_id'
     }
 
-    def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, policy_filter_v2=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
+    def __init__(self, aggregator_name=None, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, policy_filter_v2=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, tags=None, created_by=None, target_type=None, target_id=None):
         r"""ShowAggregatePolicyAssignmentDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param policy_assignment_type: 规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+        :param aggregator_name: 聚合器规则的聚合器名称
+        :type aggregator_name: str
+        :param policy_assignment_type: 规则所有方
         :type policy_assignment_type: str
         :param id: 规则ID
         :type id: str
@@ -72,7 +76,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
         :param policy_filter_v2: 
         :type policy_filter_v2: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinitionV2`
-        :param period: 触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+        :param period: 触发周期
         :type period: str
         :param state: 规则状态
         :type state: str
@@ -86,18 +90,19 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         :type custom_policy: :class:`huaweicloudsdkconfig.v1.CustomPolicy`
         :param parameters: 规则参数
         :type parameters: dict(str, PolicyParameterValue)
-        :param tags: 
+        :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         :param created_by: 规则的创建者
         :type created_by: str
         :param target_type: 合规规则修正方式。
         :type target_type: str
-        :param target_id: 修正执行的目标id。
+        :param target_id: 修正执行的目标urn。
         :type target_id: str
         """
         
         super().__init__()
 
+        self._aggregator_name = None
         self._policy_assignment_type = None
         self._id = None
         self._name = None
@@ -117,6 +122,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
         self._target_id = None
         self.discriminator = None
 
+        if aggregator_name is not None:
+            self.aggregator_name = aggregator_name
         if policy_assignment_type is not None:
             self.policy_assignment_type = policy_assignment_type
         if id is not None:
@@ -153,10 +160,32 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
             self.target_id = target_id
 
     @property
+    def aggregator_name(self):
+        r"""Gets the aggregator_name of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        聚合器规则的聚合器名称
+
+        :return: The aggregator_name of this ShowAggregatePolicyAssignmentDetailResponse.
+        :rtype: str
+        """
+        return self._aggregator_name
+
+    @aggregator_name.setter
+    def aggregator_name(self, aggregator_name):
+        r"""Sets the aggregator_name of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        聚合器规则的聚合器名称
+
+        :param aggregator_name: The aggregator_name of this ShowAggregatePolicyAssignmentDetailResponse.
+        :type aggregator_name: str
+        """
+        self._aggregator_name = aggregator_name
+
+    @property
     def policy_assignment_type(self):
         r"""Gets the policy_assignment_type of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+        规则所有方
 
         :return: The policy_assignment_type of this ShowAggregatePolicyAssignmentDetailResponse.
         :rtype: str
@@ -167,7 +196,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def policy_assignment_type(self, policy_assignment_type):
         r"""Sets the policy_assignment_type of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
+        规则所有方
 
         :param policy_assignment_type: The policy_assignment_type of this ShowAggregatePolicyAssignmentDetailResponse.
         :type policy_assignment_type: str
@@ -280,7 +309,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def period(self):
         r"""Gets the period of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+        触发周期
 
         :return: The period of this ShowAggregatePolicyAssignmentDetailResponse.
         :rtype: str
@@ -291,7 +320,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def period(self, period):
         r"""Sets the period of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+        触发周期
 
         :param period: The period of this ShowAggregatePolicyAssignmentDetailResponse.
         :type period: str
@@ -430,6 +459,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def tags(self):
         r"""Gets the tags of this ShowAggregatePolicyAssignmentDetailResponse.
 
+        标签列表
+
         :return: The tags of this ShowAggregatePolicyAssignmentDetailResponse.
         :rtype: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
         """
@@ -438,6 +469,8 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this ShowAggregatePolicyAssignmentDetailResponse.
+
+        标签列表
 
         :param tags: The tags of this ShowAggregatePolicyAssignmentDetailResponse.
         :type tags: list[:class:`huaweicloudsdkconfig.v1.ResourceTag`]
@@ -492,7 +525,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def target_id(self):
         r"""Gets the target_id of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        修正执行的目标id。
+        修正执行的目标urn。
 
         :return: The target_id of this ShowAggregatePolicyAssignmentDetailResponse.
         :rtype: str
@@ -503,7 +536,7 @@ class ShowAggregatePolicyAssignmentDetailResponse(SdkResponse):
     def target_id(self, target_id):
         r"""Sets the target_id of this ShowAggregatePolicyAssignmentDetailResponse.
 
-        修正执行的目标id。
+        修正执行的目标urn。
 
         :param target_id: The target_id of this ShowAggregatePolicyAssignmentDetailResponse.
         :type target_id: str

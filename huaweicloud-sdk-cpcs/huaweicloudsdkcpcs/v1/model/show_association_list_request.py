@@ -17,8 +17,8 @@ class ShowAssociationListRequest:
     openapi_types = {
         'cluster_id': 'str',
         'app_id': 'str',
-        'page_size': 'int',
-        'page_num': 'int',
+        'limit': 'int',
+        'offset': 'int',
         'sort_key': 'str',
         'sort_dir': 'str'
     }
@@ -26,13 +26,13 @@ class ShowAssociationListRequest:
     attribute_map = {
         'cluster_id': 'cluster_id',
         'app_id': 'app_id',
-        'page_size': 'page_size',
-        'page_num': 'page_num',
+        'limit': 'limit',
+        'offset': 'offset',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, cluster_id=None, app_id=None, page_size=None, page_num=None, sort_key=None, sort_dir=None):
+    def __init__(self, cluster_id=None, app_id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
         r"""ShowAssociationListRequest
 
         The model defined in huaweicloud sdk
@@ -41,10 +41,10 @@ class ShowAssociationListRequest:
         :type cluster_id: str
         :param app_id: 应用ID
         :type app_id: str
-        :param page_size: 指定查询返回记录条数，默认值10
-        :type page_size: int
-        :param page_num: 索引位置，从page_num指定的下一条数据开始查询默认值为0
-        :type page_num: int
+        :param limit: 指定查询返回记录条数，默认值10
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询默认值为0
+        :type offset: int
         :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 应用的创建时间（默认）
         :type sort_key: str
         :param sort_dir: 排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
@@ -55,8 +55,8 @@ class ShowAssociationListRequest:
 
         self._cluster_id = None
         self._app_id = None
-        self._page_size = None
-        self._page_num = None
+        self._limit = None
+        self._offset = None
         self._sort_key = None
         self._sort_dir = None
         self.discriminator = None
@@ -65,10 +65,10 @@ class ShowAssociationListRequest:
             self.cluster_id = cluster_id
         if app_id is not None:
             self.app_id = app_id
-        if page_size is not None:
-            self.page_size = page_size
-        if page_num is not None:
-            self.page_num = page_num
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -119,48 +119,48 @@ class ShowAssociationListRequest:
         self._app_id = app_id
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ShowAssociationListRequest.
+    def limit(self):
+        r"""Gets the limit of this ShowAssociationListRequest.
 
         指定查询返回记录条数，默认值10
 
-        :return: The page_size of this ShowAssociationListRequest.
+        :return: The limit of this ShowAssociationListRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ShowAssociationListRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowAssociationListRequest.
 
         指定查询返回记录条数，默认值10
 
-        :param page_size: The page_size of this ShowAssociationListRequest.
-        :type page_size: int
+        :param limit: The limit of this ShowAssociationListRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ShowAssociationListRequest.
+    def offset(self):
+        r"""Gets the offset of this ShowAssociationListRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :return: The page_num of this ShowAssociationListRequest.
+        :return: The offset of this ShowAssociationListRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ShowAssociationListRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowAssociationListRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :param page_num: The page_num of this ShowAssociationListRequest.
-        :type page_num: int
+        :param offset: The offset of this ShowAssociationListRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def sort_key(self):

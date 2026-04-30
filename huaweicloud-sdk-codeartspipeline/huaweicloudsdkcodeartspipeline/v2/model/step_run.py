@@ -29,7 +29,8 @@ class StepRun:
         'status': 'str',
         'message': 'str',
         'start_time': 'int',
-        'end_time': 'int'
+        'end_time': 'int',
+        'daily_build_number': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class StepRun:
         'status': 'status',
         'message': 'message',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'daily_build_number': 'daily_build_number'
     }
 
-    def __init__(self, name=None, task=None, business_type=None, inputs=None, sequence=None, official_task_version=None, identifier=None, multi_step_editable=None, id=None, endpoint_ids=None, last_dispatch_id=None, status=None, message=None, start_time=None, end_time=None):
+    def __init__(self, name=None, task=None, business_type=None, inputs=None, sequence=None, official_task_version=None, identifier=None, multi_step_editable=None, id=None, endpoint_ids=None, last_dispatch_id=None, status=None, message=None, start_time=None, end_time=None, daily_build_number=None):
         r"""StepRun
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class StepRun:
         :type start_time: int
         :param end_time: **参数解释**： 步骤结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
+        :param daily_build_number: **参数解释**： 构建编号。 **取值范围**： 不涉及。 
+        :type daily_build_number: str
         """
         
         
@@ -104,6 +108,7 @@ class StepRun:
         self._message = None
         self._start_time = None
         self._end_time = None
+        self._daily_build_number = None
         self.discriminator = None
 
         if name is not None:
@@ -136,6 +141,8 @@ class StepRun:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if daily_build_number is not None:
+            self.daily_build_number = daily_build_number
 
     @property
     def name(self):
@@ -466,6 +473,28 @@ class StepRun:
         :type end_time: int
         """
         self._end_time = end_time
+
+    @property
+    def daily_build_number(self):
+        r"""Gets the daily_build_number of this StepRun.
+
+        **参数解释**： 构建编号。 **取值范围**： 不涉及。 
+
+        :return: The daily_build_number of this StepRun.
+        :rtype: str
+        """
+        return self._daily_build_number
+
+    @daily_build_number.setter
+    def daily_build_number(self, daily_build_number):
+        r"""Sets the daily_build_number of this StepRun.
+
+        **参数解释**： 构建编号。 **取值范围**： 不涉及。 
+
+        :param daily_build_number: The daily_build_number of this StepRun.
+        :type daily_build_number: str
+        """
+        self._daily_build_number = daily_build_number
 
     def to_dict(self):
         result = {}

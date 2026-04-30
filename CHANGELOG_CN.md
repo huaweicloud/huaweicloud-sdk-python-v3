@@ -1,3 +1,213 @@
+# 3.1.193 2026-04-30
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AutoRenewalResources**
+    - 请求参数变更
+      - `+ period_type`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AutoRenewalResources**
+    - 请求参数变更
+      - `+ period_type`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPipelineRuns**
+    - 请求参数变更
+      - `+ update_time`
+  - **ShowStepOutputs**
+    - 响应参数变更
+      - `* step_outputs.output_result.value: string -> object`
+  - **ShowPipelineRunDetail**
+    - 响应参数变更
+      - `+ sources.params.build_params.virtual_merge_branch`
+      - `+ sources.params.build_params.virtual_merge_commitId`
+      - `+ stages.pre.daily_build_number`
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAggregatePolicyAssignmentDetail**
+    - 响应参数变更
+      - `+ aggregator_name`
+
+### HuaweiCloud SDK CPCS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowClusterAccessKeyList**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **SwitchCpcsToken**
+    - 请求参数变更
+      - `+ app_id`
+      - `- auth`
+      - `- scope`
+    - 响应参数变更
+      - `+ token`
+      - `- roles`
+      - `- ak`
+      - `- expired_at`
+      - `- issued_at`
+      - `- user`
+  - **ShowAuditLog**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+    - 响应参数变更
+      - `+ audit_records.status`
+      - `+ audit_records.failure_message`
+      - `+ audit_records.verification`
+      - `- audit_records.operate_status`
+      - `- audit_records.operate_message`
+      - `- audit_records.audit_status`
+  - **ShowResourceDetailCertificate**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowResourceDetailAccessKey**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ListCcspTenantImages**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowCcspInstanceInfo**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowCcspClusterList**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAssociationList**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAppAccessKeyList**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAppList**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowChildNum**
+    - 请求参数变更
+      - `+ db_type: enum value [ddm]`
+      - `+ db_type: enum value [ ddm]`
+  - **ListDbObjects**
+    - 响应参数变更
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDbObjectCollectionStatus**
+    - 响应参数变更
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDbObjectsList**
+    - 响应参数变更
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDataProgress**
+    - 响应参数变更
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **UpdateDataProgress**
+    - 请求参数变更
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **CheckDataFilter**
+    - 请求参数变更
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **ExecuteJobAction**
+    - 请求参数变更
+      - `+ job.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- job.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **BatchExecuteJobActions**
+    - 请求参数变更
+      - `+ jobs.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- jobs.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetAuditlogPolicy**
+    - 请求参数变更
+      - `+ databases`
+
 # 3.1.192 2026-04-24
 
 ### HuaweiCloud SDK DataArtsStudio

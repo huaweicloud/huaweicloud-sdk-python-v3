@@ -51,10 +51,8 @@ class PeriodChargeInfoOption:
         self._is_auto_pay = None
         self.discriminator = None
 
-        if period_type is not None:
-            self.period_type = period_type
-        if period_num is not None:
-            self.period_num = period_num
+        self.period_type = period_type
+        self.period_num = period_num
         if is_auto_renew is not None:
             self.is_auto_renew = is_auto_renew
         if is_auto_pay is not None:

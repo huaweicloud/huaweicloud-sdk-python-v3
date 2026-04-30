@@ -1204,10 +1204,10 @@ class CpcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'image_name' in local_var_params:
             query_params.append(('image_name', local_var_params['image_name']))
         if 'service_type' in local_var_params:
@@ -1413,10 +1413,10 @@ class CpcsClient(Client):
             path_params['app_id'] = local_var_params['app_id']
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'key_name' in local_var_params:
             query_params.append(('key_name', local_var_params['key_name']))
         if 'sort_key' in local_var_params:
@@ -1486,10 +1486,10 @@ class CpcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
         if 'vpc_name' in local_var_params:
@@ -1565,10 +1565,10 @@ class CpcsClient(Client):
             query_params.append(('cluster_id', local_var_params['cluster_id']))
         if 'app_id' in local_var_params:
             query_params.append(('app_id', local_var_params['app_id']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
@@ -1636,10 +1636,10 @@ class CpcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -1835,10 +1835,10 @@ class CpcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'service_type' in local_var_params:
@@ -1910,12 +1910,12 @@ class CpcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
@@ -1991,10 +1991,10 @@ class CpcsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
         if 'sort_key' in local_var_params:
@@ -2140,10 +2140,10 @@ class CpcsClient(Client):
             query_params.append(('algorithm_type', local_var_params['algorithm_type']))
         if 'certificate_type' in local_var_params:
             query_params.append(('certificate_type', local_var_params['certificate_type']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
@@ -2221,10 +2221,10 @@ class CpcsClient(Client):
             query_params.append(('algorithm_type', local_var_params['algorithm_type']))
         if 'certificate_type' in local_var_params:
             query_params.append(('certificate_type', local_var_params['certificate_type']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page_size', local_var_params['page_size']))
-        if 'page_num' in local_var_params:
-            query_params.append(('page_num', local_var_params['page_num']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
@@ -2488,7 +2488,7 @@ class CpcsClient(Client):
     def show_statistic_resource(self, request):
         r"""获取资源总量统计信息
 
-        获取CPCS中\\资源总量统计信息
+        获取CPCS中资源总量统计信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 

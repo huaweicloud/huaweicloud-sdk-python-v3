@@ -16,8 +16,8 @@ class ShowAppAccessKeyListRequest:
 
     openapi_types = {
         'app_id': 'str',
-        'page_size': 'int',
-        'page_num': 'int',
+        'limit': 'int',
+        'offset': 'int',
         'key_name': 'str',
         'sort_key': 'str',
         'sort_dir': 'str'
@@ -25,24 +25,24 @@ class ShowAppAccessKeyListRequest:
 
     attribute_map = {
         'app_id': 'app_id',
-        'page_size': 'page_size',
-        'page_num': 'page_num',
+        'limit': 'limit',
+        'offset': 'offset',
         'key_name': 'key_name',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, app_id=None, page_size=None, page_num=None, key_name=None, sort_key=None, sort_dir=None):
+    def __init__(self, app_id=None, limit=None, offset=None, key_name=None, sort_key=None, sort_dir=None):
         r"""ShowAppAccessKeyListRequest
 
         The model defined in huaweicloud sdk
 
         :param app_id: 应用ID
         :type app_id: str
-        :param page_size: 指定查询返回记录条数，默认值10
-        :type page_size: int
-        :param page_num: 索引位置，从page_num指定的下一条数据开始查询默认值为0
-        :type page_num: int
+        :param limit: 指定查询返回记录条数，默认值10
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询默认值为0
+        :type offset: int
         :param key_name: 访问密钥名称
         :type key_name: str
         :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 应用的创建时间（默认）
@@ -54,18 +54,18 @@ class ShowAppAccessKeyListRequest:
         
 
         self._app_id = None
-        self._page_size = None
-        self._page_num = None
+        self._limit = None
+        self._offset = None
         self._key_name = None
         self._sort_key = None
         self._sort_dir = None
         self.discriminator = None
 
         self.app_id = app_id
-        if page_size is not None:
-            self.page_size = page_size
-        if page_num is not None:
-            self.page_num = page_num
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if key_name is not None:
             self.key_name = key_name
         if sort_key is not None:
@@ -96,48 +96,48 @@ class ShowAppAccessKeyListRequest:
         self._app_id = app_id
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ShowAppAccessKeyListRequest.
+    def limit(self):
+        r"""Gets the limit of this ShowAppAccessKeyListRequest.
 
         指定查询返回记录条数，默认值10
 
-        :return: The page_size of this ShowAppAccessKeyListRequest.
+        :return: The limit of this ShowAppAccessKeyListRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ShowAppAccessKeyListRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowAppAccessKeyListRequest.
 
         指定查询返回记录条数，默认值10
 
-        :param page_size: The page_size of this ShowAppAccessKeyListRequest.
-        :type page_size: int
+        :param limit: The limit of this ShowAppAccessKeyListRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ShowAppAccessKeyListRequest.
+    def offset(self):
+        r"""Gets the offset of this ShowAppAccessKeyListRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :return: The page_num of this ShowAppAccessKeyListRequest.
+        :return: The offset of this ShowAppAccessKeyListRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ShowAppAccessKeyListRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowAppAccessKeyListRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :param page_num: The page_num of this ShowAppAccessKeyListRequest.
-        :type page_num: int
+        :param offset: The offset of this ShowAppAccessKeyListRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def key_name(self):

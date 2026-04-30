@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SwitchTokenResponseAk:
+class SwitchTokenResponseTokenUser:
 
     """
     Attributes:
@@ -15,109 +15,105 @@ class SwitchTokenResponseAk:
     sensitive_list = []
 
     openapi_types = {
+        'domain': 'SwitchTokenResponseTokenUserDomain',
         'name': 'str',
-        'id': 'str',
-        'status': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
+        'domain': 'domain',
         'name': 'name',
-        'id': 'id',
-        'status': 'status'
+        'id': 'id'
     }
 
-    def __init__(self, name=None, id=None, status=None):
-        r"""SwitchTokenResponseAk
+    def __init__(self, domain=None, name=None, id=None):
+        r"""SwitchTokenResponseTokenUser
 
         The model defined in huaweicloud sdk
 
-        :param name: ak名称
+        :param domain: 
+        :type domain: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseTokenUserDomain`
+        :param name: 用户名称
         :type name: str
-        :param id: ak id
+        :param id: 用户ID
         :type id: str
-        :param status: ak状态
-        :type status: str
         """
         
         
 
+        self._domain = None
         self._name = None
         self._id = None
-        self._status = None
         self.discriminator = None
 
+        if domain is not None:
+            self.domain = domain
         if name is not None:
             self.name = name
         if id is not None:
             self.id = id
-        if status is not None:
-            self.status = status
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this SwitchTokenResponseTokenUser.
+
+        :return: The domain of this SwitchTokenResponseTokenUser.
+        :rtype: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseTokenUserDomain`
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this SwitchTokenResponseTokenUser.
+
+        :param domain: The domain of this SwitchTokenResponseTokenUser.
+        :type domain: :class:`huaweicloudsdkcpcs.v1.SwitchTokenResponseTokenUserDomain`
+        """
+        self._domain = domain
 
     @property
     def name(self):
-        r"""Gets the name of this SwitchTokenResponseAk.
+        r"""Gets the name of this SwitchTokenResponseTokenUser.
 
-        ak名称
+        用户名称
 
-        :return: The name of this SwitchTokenResponseAk.
+        :return: The name of this SwitchTokenResponseTokenUser.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this SwitchTokenResponseAk.
+        r"""Sets the name of this SwitchTokenResponseTokenUser.
 
-        ak名称
+        用户名称
 
-        :param name: The name of this SwitchTokenResponseAk.
+        :param name: The name of this SwitchTokenResponseTokenUser.
         :type name: str
         """
         self._name = name
 
     @property
     def id(self):
-        r"""Gets the id of this SwitchTokenResponseAk.
+        r"""Gets the id of this SwitchTokenResponseTokenUser.
 
-        ak id
+        用户ID
 
-        :return: The id of this SwitchTokenResponseAk.
+        :return: The id of this SwitchTokenResponseTokenUser.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        r"""Sets the id of this SwitchTokenResponseAk.
+        r"""Sets the id of this SwitchTokenResponseTokenUser.
 
-        ak id
+        用户ID
 
-        :param id: The id of this SwitchTokenResponseAk.
+        :param id: The id of this SwitchTokenResponseTokenUser.
         :type id: str
         """
         self._id = id
-
-    @property
-    def status(self):
-        r"""Gets the status of this SwitchTokenResponseAk.
-
-        ak状态
-
-        :return: The status of this SwitchTokenResponseAk.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this SwitchTokenResponseAk.
-
-        ak状态
-
-        :param status: The status of this SwitchTokenResponseAk.
-        :type status: str
-        """
-        self._status = status
 
     def to_dict(self):
         result = {}
@@ -156,7 +152,7 @@ class SwitchTokenResponseAk:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SwitchTokenResponseAk):
+        if not isinstance(other, SwitchTokenResponseTokenUser):
             return False
 
         return self.__dict__ == other.__dict__

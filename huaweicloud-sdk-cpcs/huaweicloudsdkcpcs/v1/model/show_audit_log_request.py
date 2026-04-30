@@ -15,28 +15,28 @@ class ShowAuditLogRequest:
     sensitive_list = []
 
     openapi_types = {
-        'page_size': 'int',
-        'page_num': 'int',
+        'limit': 'int',
+        'offset': 'int',
         'start_time': 'int',
         'end_time': 'int'
     }
 
     attribute_map = {
-        'page_size': 'page_size',
-        'page_num': 'page_num',
+        'limit': 'limit',
+        'offset': 'offset',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, page_size=None, page_num=None, start_time=None, end_time=None):
+    def __init__(self, limit=None, offset=None, start_time=None, end_time=None):
         r"""ShowAuditLogRequest
 
         The model defined in huaweicloud sdk
 
-        :param page_size: 指定查询返回记录条数，默认值10
-        :type page_size: int
-        :param page_num: 索引位置，从page_num指定的下一条数据开始查询默认值为0
-        :type page_num: int
+        :param limit: 指定查询返回记录条数，默认值10
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询默认值为0
+        :type offset: int
         :param start_time: 开始时间
         :type start_time: int
         :param end_time: 结束时间
@@ -45,64 +45,64 @@ class ShowAuditLogRequest:
         
         
 
-        self._page_size = None
-        self._page_num = None
+        self._limit = None
+        self._offset = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
 
-        if page_size is not None:
-            self.page_size = page_size
-        if page_num is not None:
-            self.page_num = page_num
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ShowAuditLogRequest.
+    def limit(self):
+        r"""Gets the limit of this ShowAuditLogRequest.
 
         指定查询返回记录条数，默认值10
 
-        :return: The page_size of this ShowAuditLogRequest.
+        :return: The limit of this ShowAuditLogRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ShowAuditLogRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowAuditLogRequest.
 
         指定查询返回记录条数，默认值10
 
-        :param page_size: The page_size of this ShowAuditLogRequest.
-        :type page_size: int
+        :param limit: The limit of this ShowAuditLogRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ShowAuditLogRequest.
+    def offset(self):
+        r"""Gets the offset of this ShowAuditLogRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :return: The page_num of this ShowAuditLogRequest.
+        :return: The offset of this ShowAuditLogRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ShowAuditLogRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowAuditLogRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :param page_num: The page_num of this ShowAuditLogRequest.
-        :type page_num: int
+        :param offset: The offset of this ShowAuditLogRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def start_time(self):

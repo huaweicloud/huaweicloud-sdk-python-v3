@@ -15,8 +15,8 @@ class ListCcspTenantImagesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'page_size': 'int',
-        'page_num': 'int',
+        'limit': 'int',
+        'offset': 'int',
         'image_name': 'str',
         'service_type': 'str',
         'sort_key': 'str',
@@ -24,23 +24,23 @@ class ListCcspTenantImagesRequest:
     }
 
     attribute_map = {
-        'page_size': 'page_size',
-        'page_num': 'page_num',
+        'limit': 'limit',
+        'offset': 'offset',
         'image_name': 'image_name',
         'service_type': 'service_type',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, page_size=None, page_num=None, image_name=None, service_type=None, sort_key=None, sort_dir=None):
+    def __init__(self, limit=None, offset=None, image_name=None, service_type=None, sort_key=None, sort_dir=None):
         r"""ListCcspTenantImagesRequest
 
         The model defined in huaweicloud sdk
 
-        :param page_size: 指定查询返回记录条数，默认值10
-        :type page_size: int
-        :param page_num: 索引位置，从page_num指定的下一条数据开始查询默认值为0
-        :type page_num: int
+        :param limit: 指定查询返回记录条数，默认值10
+        :type limit: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询默认值为0
+        :type offset: int
         :param image_name: 镜像名称
         :type image_name: str
         :param service_type: 镜像所属的服务类型： - **ENCRYPT_DECRYPT** : 加解密服务； - **SIGN_VERIFY** : 签名验签服务； - **KMS** : 密钥管理服务； - **TIMESTAMP** : 时间戳服务； - **COLLA_SIGN** : 协同签名服务； - **OTP** : 动态令牌服务； - **DB_ENCRYPT** : 数据库加密服务； - **FILE_ENCRYPT** : 文件加密服务 - **TIMESTAMP** : 时间戳服务； - **DIGIT_SEAL** : 电子签章服务； - **SSL_VPN** : ssl vpn服务；
@@ -53,18 +53,18 @@ class ListCcspTenantImagesRequest:
         
         
 
-        self._page_size = None
-        self._page_num = None
+        self._limit = None
+        self._offset = None
         self._image_name = None
         self._service_type = None
         self._sort_key = None
         self._sort_dir = None
         self.discriminator = None
 
-        if page_size is not None:
-            self.page_size = page_size
-        if page_num is not None:
-            self.page_num = page_num
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if image_name is not None:
             self.image_name = image_name
         if service_type is not None:
@@ -75,48 +75,48 @@ class ListCcspTenantImagesRequest:
             self.sort_dir = sort_dir
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ListCcspTenantImagesRequest.
+    def limit(self):
+        r"""Gets the limit of this ListCcspTenantImagesRequest.
 
         指定查询返回记录条数，默认值10
 
-        :return: The page_size of this ListCcspTenantImagesRequest.
+        :return: The limit of this ListCcspTenantImagesRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ListCcspTenantImagesRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListCcspTenantImagesRequest.
 
         指定查询返回记录条数，默认值10
 
-        :param page_size: The page_size of this ListCcspTenantImagesRequest.
-        :type page_size: int
+        :param limit: The limit of this ListCcspTenantImagesRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ListCcspTenantImagesRequest.
+    def offset(self):
+        r"""Gets the offset of this ListCcspTenantImagesRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :return: The page_num of this ListCcspTenantImagesRequest.
+        :return: The offset of this ListCcspTenantImagesRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ListCcspTenantImagesRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListCcspTenantImagesRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :param page_num: The page_num of this ListCcspTenantImagesRequest.
-        :type page_num: int
+        :param offset: The offset of this ListCcspTenantImagesRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def image_name(self):

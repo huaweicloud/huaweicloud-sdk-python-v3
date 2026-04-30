@@ -27,7 +27,9 @@ class RunPipelineSourceParamsBuildParams:
         'codehub_id': 'str',
         'source_codehub_id': 'str',
         'source_codehub_url': 'str',
-        'source_codehub_http_url': 'str'
+        'source_codehub_http_url': 'str',
+        'virtual_merge_branch': 'str',
+        'virtual_merge_commit_id': 'str'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class RunPipelineSourceParamsBuildParams:
         'codehub_id': 'codehub_id',
         'source_codehub_id': 'source_codehub_id',
         'source_codehub_url': 'source_codehub_url',
-        'source_codehub_http_url': 'source_codehub_http_url'
+        'source_codehub_http_url': 'source_codehub_http_url',
+        'virtual_merge_branch': 'virtual_merge_branch',
+        'virtual_merge_commit_id': 'virtual_merge_commitId'
     }
 
-    def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None):
+    def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None, virtual_merge_branch=None, virtual_merge_commit_id=None):
         r"""RunPipelineSourceParamsBuildParams
 
         The model defined in huaweicloud sdk
@@ -77,6 +81,10 @@ class RunPipelineSourceParamsBuildParams:
         :type source_codehub_url: str
         :param source_codehub_http_url: **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
         :type source_codehub_http_url: str
+        :param virtual_merge_branch: **参数解释**： 预合并分支。 **取值范围**： 不涉及。 
+        :type virtual_merge_branch: str
+        :param virtual_merge_commit_id: **参数解释**： 预合并提交ID。 **取值范围**： 不涉及。 
+        :type virtual_merge_commit_id: str
         """
         
         
@@ -94,6 +102,8 @@ class RunPipelineSourceParamsBuildParams:
         self._source_codehub_id = None
         self._source_codehub_url = None
         self._source_codehub_http_url = None
+        self._virtual_merge_branch = None
+        self._virtual_merge_commit_id = None
         self.discriminator = None
 
         if action is not None:
@@ -122,6 +132,10 @@ class RunPipelineSourceParamsBuildParams:
             self.source_codehub_url = source_codehub_url
         if source_codehub_http_url is not None:
             self.source_codehub_http_url = source_codehub_http_url
+        if virtual_merge_branch is not None:
+            self.virtual_merge_branch = virtual_merge_branch
+        if virtual_merge_commit_id is not None:
+            self.virtual_merge_commit_id = virtual_merge_commit_id
 
     @property
     def action(self):
@@ -408,6 +422,50 @@ class RunPipelineSourceParamsBuildParams:
         :type source_codehub_http_url: str
         """
         self._source_codehub_http_url = source_codehub_http_url
+
+    @property
+    def virtual_merge_branch(self):
+        r"""Gets the virtual_merge_branch of this RunPipelineSourceParamsBuildParams.
+
+        **参数解释**： 预合并分支。 **取值范围**： 不涉及。 
+
+        :return: The virtual_merge_branch of this RunPipelineSourceParamsBuildParams.
+        :rtype: str
+        """
+        return self._virtual_merge_branch
+
+    @virtual_merge_branch.setter
+    def virtual_merge_branch(self, virtual_merge_branch):
+        r"""Sets the virtual_merge_branch of this RunPipelineSourceParamsBuildParams.
+
+        **参数解释**： 预合并分支。 **取值范围**： 不涉及。 
+
+        :param virtual_merge_branch: The virtual_merge_branch of this RunPipelineSourceParamsBuildParams.
+        :type virtual_merge_branch: str
+        """
+        self._virtual_merge_branch = virtual_merge_branch
+
+    @property
+    def virtual_merge_commit_id(self):
+        r"""Gets the virtual_merge_commit_id of this RunPipelineSourceParamsBuildParams.
+
+        **参数解释**： 预合并提交ID。 **取值范围**： 不涉及。 
+
+        :return: The virtual_merge_commit_id of this RunPipelineSourceParamsBuildParams.
+        :rtype: str
+        """
+        return self._virtual_merge_commit_id
+
+    @virtual_merge_commit_id.setter
+    def virtual_merge_commit_id(self, virtual_merge_commit_id):
+        r"""Sets the virtual_merge_commit_id of this RunPipelineSourceParamsBuildParams.
+
+        **参数解释**： 预合并提交ID。 **取值范围**： 不涉及。 
+
+        :param virtual_merge_commit_id: The virtual_merge_commit_id of this RunPipelineSourceParamsBuildParams.
+        :type virtual_merge_commit_id: str
+        """
+        self._virtual_merge_commit_id = virtual_merge_commit_id
 
     def to_dict(self):
         result = {}

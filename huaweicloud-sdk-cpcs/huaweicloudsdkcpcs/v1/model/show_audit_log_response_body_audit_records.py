@@ -21,9 +21,9 @@ class ShowAuditLogResponseBodyAuditRecords:
         'cluster_type': 'str',
         'operation': 'str',
         'time': 'int',
-        'operate_status': 'int',
-        'operate_message': 'str',
-        'audit_status': 'int'
+        'status': 'str',
+        'failure_message': 'str',
+        'verification': 'str'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class ShowAuditLogResponseBodyAuditRecords:
         'cluster_type': 'cluster_type',
         'operation': 'operation',
         'time': 'time',
-        'operate_status': 'operate_status',
-        'operate_message': 'operate_message',
-        'audit_status': 'audit_status'
+        'status': 'status',
+        'failure_message': 'failure_message',
+        'verification': 'verification'
     }
 
-    def __init__(self, id=None, tenant_id=None, cluster_id=None, cluster_type=None, operation=None, time=None, operate_status=None, operate_message=None, audit_status=None):
+    def __init__(self, id=None, tenant_id=None, cluster_id=None, cluster_type=None, operation=None, time=None, status=None, failure_message=None, verification=None):
         r"""ShowAuditLogResponseBodyAuditRecords
 
         The model defined in huaweicloud sdk
@@ -55,12 +55,12 @@ class ShowAuditLogResponseBodyAuditRecords:
         :type operation: str
         :param time: 时间
         :type time: int
-        :param operate_status: 操作状态
-        :type operate_status: int
-        :param operate_message: 操作结果消息
-        :type operate_message: str
-        :param audit_status: 审计状态
-        :type audit_status: int
+        :param status: 操作状态
+        :type status: str
+        :param failure_message: 操作失败消息
+        :type failure_message: str
+        :param verification: 操作验证信息
+        :type verification: str
         """
         
         
@@ -71,9 +71,9 @@ class ShowAuditLogResponseBodyAuditRecords:
         self._cluster_type = None
         self._operation = None
         self._time = None
-        self._operate_status = None
-        self._operate_message = None
-        self._audit_status = None
+        self._status = None
+        self._failure_message = None
+        self._verification = None
         self.discriminator = None
 
         if id is not None:
@@ -88,12 +88,12 @@ class ShowAuditLogResponseBodyAuditRecords:
             self.operation = operation
         if time is not None:
             self.time = time
-        if operate_status is not None:
-            self.operate_status = operate_status
-        if operate_message is not None:
-            self.operate_message = operate_message
-        if audit_status is not None:
-            self.audit_status = audit_status
+        if status is not None:
+            self.status = status
+        if failure_message is not None:
+            self.failure_message = failure_message
+        if verification is not None:
+            self.verification = verification
 
     @property
     def id(self):
@@ -228,70 +228,70 @@ class ShowAuditLogResponseBodyAuditRecords:
         self._time = time
 
     @property
-    def operate_status(self):
-        r"""Gets the operate_status of this ShowAuditLogResponseBodyAuditRecords.
+    def status(self):
+        r"""Gets the status of this ShowAuditLogResponseBodyAuditRecords.
 
         操作状态
 
-        :return: The operate_status of this ShowAuditLogResponseBodyAuditRecords.
-        :rtype: int
-        """
-        return self._operate_status
-
-    @operate_status.setter
-    def operate_status(self, operate_status):
-        r"""Sets the operate_status of this ShowAuditLogResponseBodyAuditRecords.
-
-        操作状态
-
-        :param operate_status: The operate_status of this ShowAuditLogResponseBodyAuditRecords.
-        :type operate_status: int
-        """
-        self._operate_status = operate_status
-
-    @property
-    def operate_message(self):
-        r"""Gets the operate_message of this ShowAuditLogResponseBodyAuditRecords.
-
-        操作结果消息
-
-        :return: The operate_message of this ShowAuditLogResponseBodyAuditRecords.
+        :return: The status of this ShowAuditLogResponseBodyAuditRecords.
         :rtype: str
         """
-        return self._operate_message
+        return self._status
 
-    @operate_message.setter
-    def operate_message(self, operate_message):
-        r"""Sets the operate_message of this ShowAuditLogResponseBodyAuditRecords.
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ShowAuditLogResponseBodyAuditRecords.
 
-        操作结果消息
+        操作状态
 
-        :param operate_message: The operate_message of this ShowAuditLogResponseBodyAuditRecords.
-        :type operate_message: str
+        :param status: The status of this ShowAuditLogResponseBodyAuditRecords.
+        :type status: str
         """
-        self._operate_message = operate_message
+        self._status = status
 
     @property
-    def audit_status(self):
-        r"""Gets the audit_status of this ShowAuditLogResponseBodyAuditRecords.
+    def failure_message(self):
+        r"""Gets the failure_message of this ShowAuditLogResponseBodyAuditRecords.
 
-        审计状态
+        操作失败消息
 
-        :return: The audit_status of this ShowAuditLogResponseBodyAuditRecords.
-        :rtype: int
+        :return: The failure_message of this ShowAuditLogResponseBodyAuditRecords.
+        :rtype: str
         """
-        return self._audit_status
+        return self._failure_message
 
-    @audit_status.setter
-    def audit_status(self, audit_status):
-        r"""Sets the audit_status of this ShowAuditLogResponseBodyAuditRecords.
+    @failure_message.setter
+    def failure_message(self, failure_message):
+        r"""Sets the failure_message of this ShowAuditLogResponseBodyAuditRecords.
 
-        审计状态
+        操作失败消息
 
-        :param audit_status: The audit_status of this ShowAuditLogResponseBodyAuditRecords.
-        :type audit_status: int
+        :param failure_message: The failure_message of this ShowAuditLogResponseBodyAuditRecords.
+        :type failure_message: str
         """
-        self._audit_status = audit_status
+        self._failure_message = failure_message
+
+    @property
+    def verification(self):
+        r"""Gets the verification of this ShowAuditLogResponseBodyAuditRecords.
+
+        操作验证信息
+
+        :return: The verification of this ShowAuditLogResponseBodyAuditRecords.
+        :rtype: str
+        """
+        return self._verification
+
+    @verification.setter
+    def verification(self, verification):
+        r"""Sets the verification of this ShowAuditLogResponseBodyAuditRecords.
+
+        操作验证信息
+
+        :param verification: The verification of this ShowAuditLogResponseBodyAuditRecords.
+        :type verification: str
+        """
+        self._verification = verification
 
     def to_dict(self):
         result = {}

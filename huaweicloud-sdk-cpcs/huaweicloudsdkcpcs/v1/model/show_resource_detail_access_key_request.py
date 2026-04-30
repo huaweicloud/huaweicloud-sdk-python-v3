@@ -20,8 +20,8 @@ class ShowResourceDetailAccessKeyRequest:
         'service_type': 'str',
         'algorithm_type': 'str',
         'certificate_type': 'str',
-        'page_size': 'int',
-        'page_num': 'int',
+        'limit': 'int',
+        'offset': 'int',
         '_from': 'int',
         'to': 'str'
     }
@@ -32,13 +32,13 @@ class ShowResourceDetailAccessKeyRequest:
         'service_type': 'service_type',
         'algorithm_type': 'algorithm_type',
         'certificate_type': 'certificate_type',
-        'page_size': 'page_size',
-        'page_num': 'page_num',
+        'limit': 'limit',
+        'offset': 'offset',
         '_from': 'from',
         'to': 'to'
     }
 
-    def __init__(self, cluster_id=None, app_id=None, service_type=None, algorithm_type=None, certificate_type=None, page_size=None, page_num=None, _from=None, to=None):
+    def __init__(self, cluster_id=None, app_id=None, service_type=None, algorithm_type=None, certificate_type=None, limit=None, offset=None, _from=None, to=None):
         r"""ShowResourceDetailAccessKeyRequest
 
         The model defined in huaweicloud sdk
@@ -53,10 +53,10 @@ class ShowResourceDetailAccessKeyRequest:
         :type algorithm_type: str
         :param certificate_type: 证书类型，默认空字符串，0：根证书，1：业务证书
         :type certificate_type: str
-        :param page_size: 页面大小，不超过1500
-        :type page_size: int
-        :param page_num: 页数，默认1
-        :type page_num: int
+        :param limit: 页面大小，不超过1500
+        :type limit: int
+        :param offset: 页数，默认1
+        :type offset: int
         :param _from: 查询起始时间戳，毫秒级时间戳，默认为0，默认从三天前查询
         :type _from: int
         :param to: 查询终止时间戳，毫秒级时间戳，默认为0，默认查询到当前时间
@@ -70,8 +70,8 @@ class ShowResourceDetailAccessKeyRequest:
         self._service_type = None
         self._algorithm_type = None
         self._certificate_type = None
-        self._page_size = None
-        self._page_num = None
+        self._limit = None
+        self._offset = None
         self.__from = None
         self._to = None
         self.discriminator = None
@@ -86,10 +86,10 @@ class ShowResourceDetailAccessKeyRequest:
             self.algorithm_type = algorithm_type
         if certificate_type is not None:
             self.certificate_type = certificate_type
-        if page_size is not None:
-            self.page_size = page_size
-        if page_num is not None:
-            self.page_num = page_num
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if _from is not None:
             self._from = _from
         if to is not None:
@@ -206,48 +206,48 @@ class ShowResourceDetailAccessKeyRequest:
         self._certificate_type = certificate_type
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ShowResourceDetailAccessKeyRequest.
+    def limit(self):
+        r"""Gets the limit of this ShowResourceDetailAccessKeyRequest.
 
         页面大小，不超过1500
 
-        :return: The page_size of this ShowResourceDetailAccessKeyRequest.
+        :return: The limit of this ShowResourceDetailAccessKeyRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ShowResourceDetailAccessKeyRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowResourceDetailAccessKeyRequest.
 
         页面大小，不超过1500
 
-        :param page_size: The page_size of this ShowResourceDetailAccessKeyRequest.
-        :type page_size: int
+        :param limit: The limit of this ShowResourceDetailAccessKeyRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ShowResourceDetailAccessKeyRequest.
+    def offset(self):
+        r"""Gets the offset of this ShowResourceDetailAccessKeyRequest.
 
         页数，默认1
 
-        :return: The page_num of this ShowResourceDetailAccessKeyRequest.
+        :return: The offset of this ShowResourceDetailAccessKeyRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ShowResourceDetailAccessKeyRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowResourceDetailAccessKeyRequest.
 
         页数，默认1
 
-        :param page_num: The page_num of this ShowResourceDetailAccessKeyRequest.
-        :type page_num: int
+        :param offset: The offset of this ShowResourceDetailAccessKeyRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def _from(self):

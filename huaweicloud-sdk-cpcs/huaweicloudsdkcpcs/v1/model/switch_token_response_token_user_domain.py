@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AuthObjectScopeCluster:
+class SwitchTokenResponseTokenUserDomain:
 
     """
     Attributes:
@@ -15,80 +15,80 @@ class AuthObjectScopeCluster:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'id': 'id'
     }
 
-    def __init__(self, id=None, name=None):
-        r"""AuthObjectScopeCluster
+    def __init__(self, name=None, id=None):
+        r"""SwitchTokenResponseTokenUserDomain
 
         The model defined in huaweicloud sdk
 
-        :param id: 集群id
-        :type id: str
-        :param name: 集群名称
+        :param name: 主账号名称
         :type name: str
+        :param id: 主账号ID
+        :type id: str
         """
         
         
 
-        self._id = None
         self._name = None
+        self._id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
         if name is not None:
             self.name = name
-
-    @property
-    def id(self):
-        r"""Gets the id of this AuthObjectScopeCluster.
-
-        集群id
-
-        :return: The id of this AuthObjectScopeCluster.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this AuthObjectScopeCluster.
-
-        集群id
-
-        :param id: The id of this AuthObjectScopeCluster.
-        :type id: str
-        """
-        self._id = id
+        if id is not None:
+            self.id = id
 
     @property
     def name(self):
-        r"""Gets the name of this AuthObjectScopeCluster.
+        r"""Gets the name of this SwitchTokenResponseTokenUserDomain.
 
-        集群名称
+        主账号名称
 
-        :return: The name of this AuthObjectScopeCluster.
+        :return: The name of this SwitchTokenResponseTokenUserDomain.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this AuthObjectScopeCluster.
+        r"""Sets the name of this SwitchTokenResponseTokenUserDomain.
 
-        集群名称
+        主账号名称
 
-        :param name: The name of this AuthObjectScopeCluster.
+        :param name: The name of this SwitchTokenResponseTokenUserDomain.
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        r"""Gets the id of this SwitchTokenResponseTokenUserDomain.
+
+        主账号ID
+
+        :return: The id of this SwitchTokenResponseTokenUserDomain.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this SwitchTokenResponseTokenUserDomain.
+
+        主账号ID
+
+        :param id: The id of this SwitchTokenResponseTokenUserDomain.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         result = {}
@@ -127,7 +127,7 @@ class AuthObjectScopeCluster:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthObjectScopeCluster):
+        if not isinstance(other, SwitchTokenResponseTokenUserDomain):
             return False
 
         return self.__dict__ == other.__dict__

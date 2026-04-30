@@ -17,26 +17,30 @@ class SetAuditlogPolicyRequestBody:
     openapi_types = {
         'keep_days': 'int',
         'reserve_auditlogs': 'bool',
-        'audit_types': 'list[str]'
+        'audit_types': 'list[str]',
+        'databases': 'list[str]'
     }
 
     attribute_map = {
         'keep_days': 'keep_days',
         'reserve_auditlogs': 'reserve_auditlogs',
-        'audit_types': 'audit_types'
+        'audit_types': 'audit_types',
+        'databases': 'databases'
     }
 
-    def __init__(self, keep_days=None, reserve_auditlogs=None, audit_types=None):
+    def __init__(self, keep_days=None, reserve_auditlogs=None, audit_types=None, databases=None):
         r"""SetAuditlogPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param keep_days: 审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
+        :param keep_days: 审计日志保存天数，取值范围0~3660。0表示关闭审计日志策略。
         :type keep_days: int
         :param reserve_auditlogs: 仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
         :type reserve_auditlogs: bool
-        :param audit_types: 审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+        :param audit_types: 审计记录的操作类型，动态范围。空表示不过滤任何操作类型。该参数仅针对RDS for MySQL实例。
         :type audit_types: list[str]
+        :param databases: 仅打开审计日志策略时有效。内容为打开审计日志时需自动安装pg_audit插件的数据库名称。空表示不自动安装。该参数仅针对RDS for PostgreSQL实例。
+        :type databases: list[str]
         """
         
         
@@ -44,6 +48,7 @@ class SetAuditlogPolicyRequestBody:
         self._keep_days = None
         self._reserve_auditlogs = None
         self._audit_types = None
+        self._databases = None
         self.discriminator = None
 
         self.keep_days = keep_days
@@ -51,12 +56,14 @@ class SetAuditlogPolicyRequestBody:
             self.reserve_auditlogs = reserve_auditlogs
         if audit_types is not None:
             self.audit_types = audit_types
+        if databases is not None:
+            self.databases = databases
 
     @property
     def keep_days(self):
         r"""Gets the keep_days of this SetAuditlogPolicyRequestBody.
 
-        审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
+        审计日志保存天数，取值范围0~3660。0表示关闭审计日志策略。
 
         :return: The keep_days of this SetAuditlogPolicyRequestBody.
         :rtype: int
@@ -67,7 +74,7 @@ class SetAuditlogPolicyRequestBody:
     def keep_days(self, keep_days):
         r"""Sets the keep_days of this SetAuditlogPolicyRequestBody.
 
-        审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
+        审计日志保存天数，取值范围0~3660。0表示关闭审计日志策略。
 
         :param keep_days: The keep_days of this SetAuditlogPolicyRequestBody.
         :type keep_days: int
@@ -100,7 +107,7 @@ class SetAuditlogPolicyRequestBody:
     def audit_types(self):
         r"""Gets the audit_types of this SetAuditlogPolicyRequestBody.
 
-        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。该参数仅针对RDS for MySQL实例。
 
         :return: The audit_types of this SetAuditlogPolicyRequestBody.
         :rtype: list[str]
@@ -111,12 +118,34 @@ class SetAuditlogPolicyRequestBody:
     def audit_types(self, audit_types):
         r"""Sets the audit_types of this SetAuditlogPolicyRequestBody.
 
-        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。
+        审计记录的操作类型，动态范围。空表示不过滤任何操作类型。该参数仅针对RDS for MySQL实例。
 
         :param audit_types: The audit_types of this SetAuditlogPolicyRequestBody.
         :type audit_types: list[str]
         """
         self._audit_types = audit_types
+
+    @property
+    def databases(self):
+        r"""Gets the databases of this SetAuditlogPolicyRequestBody.
+
+        仅打开审计日志策略时有效。内容为打开审计日志时需自动安装pg_audit插件的数据库名称。空表示不自动安装。该参数仅针对RDS for PostgreSQL实例。
+
+        :return: The databases of this SetAuditlogPolicyRequestBody.
+        :rtype: list[str]
+        """
+        return self._databases
+
+    @databases.setter
+    def databases(self, databases):
+        r"""Sets the databases of this SetAuditlogPolicyRequestBody.
+
+        仅打开审计日志策略时有效。内容为打开审计日志时需自动安装pg_audit插件的数据库名称。空表示不自动安装。该参数仅针对RDS for PostgreSQL实例。
+
+        :param databases: The databases of this SetAuditlogPolicyRequestBody.
+        :type databases: list[str]
+        """
+        self._databases = databases
 
     def to_dict(self):
         result = {}

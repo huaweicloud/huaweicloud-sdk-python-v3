@@ -1,3 +1,213 @@
+# 3.1.193 2026-04-30
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AutoRenewalResources**
+    - changes of request param
+      - `+ period_type`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AutoRenewalResources**
+    - changes of request param
+      - `+ period_type`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPipelineRuns**
+    - changes of request param
+      - `+ update_time`
+  - **ShowStepOutputs**
+    - changes of response param
+      - `* step_outputs.output_result.value: string -> object`
+  - **ShowPipelineRunDetail**
+    - changes of response param
+      - `+ sources.params.build_params.virtual_merge_branch`
+      - `+ sources.params.build_params.virtual_merge_commitId`
+      - `+ stages.pre.daily_build_number`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAggregatePolicyAssignmentDetail**
+    - changes of response param
+      - `+ aggregator_name`
+
+### HuaweiCloud SDK CPCS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowClusterAccessKeyList**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **SwitchCpcsToken**
+    - changes of request param
+      - `+ app_id`
+      - `- auth`
+      - `- scope`
+    - changes of response param
+      - `+ token`
+      - `- roles`
+      - `- ak`
+      - `- expired_at`
+      - `- issued_at`
+      - `- user`
+  - **ShowAuditLog**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+    - changes of response param
+      - `+ audit_records.status`
+      - `+ audit_records.failure_message`
+      - `+ audit_records.verification`
+      - `- audit_records.operate_status`
+      - `- audit_records.operate_message`
+      - `- audit_records.audit_status`
+  - **ShowResourceDetailCertificate**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowResourceDetailAccessKey**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ListCcspTenantImages**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowCcspInstanceInfo**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowCcspClusterList**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAssociationList**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAppAccessKeyList**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+  - **ShowAppList**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+      - `- page_size`
+      - `- page_num`
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowChildNum**
+    - changes of request param
+      - `+ db_type: enum value [ddm]`
+      - `+ db_type: enum value [ ddm]`
+  - **ListDbObjects**
+    - changes of response param
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDbObjectCollectionStatus**
+    - changes of response param
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDbObjectsList**
+    - changes of response param
+      - `+ status: enum value [failed,pending]`
+      - `- status: enum value [ failed, pending]`
+  - **ShowDataProgress**
+    - changes of response param
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **UpdateDataProgress**
+    - changes of request param
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **CheckDataFilter**
+    - changes of request param
+      - `+ data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **ExecuteJobAction**
+    - changes of request param
+      - `+ job.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- job.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+  - **BatchExecuteJobActions**
+    - changes of request param
+      - `+ jobs.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [configConditionalFilter]`
+      - `- jobs.action_params.compare_task_param.data_process_info.filter_conditions.filtering_type: enum value [ configConditionalFilter]`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetAuditlogPolicy**
+    - changes of request param
+      - `+ databases`
+
 # 3.1.192 2026-04-24
 
 ### HuaweiCloud SDK DataArtsStudio

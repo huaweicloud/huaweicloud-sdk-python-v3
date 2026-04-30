@@ -16,7 +16,7 @@ class OutputRespOutputResult:
 
     openapi_types = {
         'key': 'str',
-        'value': 'str'
+        'value': 'object'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class OutputRespOutputResult:
         :param key: **参数解释**： 步骤输出key值。 **取值范围**： 不涉及。 
         :type key: str
         :param value: **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
-        :type value: str
+        :type value: object
         """
         
         
@@ -75,7 +75,7 @@ class OutputRespOutputResult:
         **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
 
         :return: The value of this OutputRespOutputResult.
-        :rtype: str
+        :rtype: object
         """
         return self._value
 
@@ -86,7 +86,7 @@ class OutputRespOutputResult:
         **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
 
         :param value: The value of this OutputRespOutputResult.
-        :type value: str
+        :type value: object
         """
         self._value = value
 

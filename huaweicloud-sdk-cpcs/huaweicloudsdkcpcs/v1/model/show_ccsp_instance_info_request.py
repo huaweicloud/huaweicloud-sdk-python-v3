@@ -15,9 +15,9 @@ class ShowCcspInstanceInfoRequest:
     sensitive_list = []
 
     openapi_types = {
-        'page_size': 'int',
+        'limit': 'int',
         'name': 'str',
-        'page_num': 'int',
+        'offset': 'int',
         'sort_key': 'str',
         'sort_dir': 'str',
         'cluster_id': 'str',
@@ -26,9 +26,9 @@ class ShowCcspInstanceInfoRequest:
     }
 
     attribute_map = {
-        'page_size': 'page_size',
+        'limit': 'limit',
         'name': 'name',
-        'page_num': 'page_num',
+        'offset': 'offset',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'cluster_id': 'cluster_id',
@@ -36,17 +36,17 @@ class ShowCcspInstanceInfoRequest:
         'is_normal': 'is_normal'
     }
 
-    def __init__(self, page_size=None, name=None, page_num=None, sort_key=None, sort_dir=None, cluster_id=None, status=None, is_normal=None):
+    def __init__(self, limit=None, name=None, offset=None, sort_key=None, sort_dir=None, cluster_id=None, status=None, is_normal=None):
         r"""ShowCcspInstanceInfoRequest
 
         The model defined in huaweicloud sdk
 
-        :param page_size: 指定查询返回记录条数，默认值10
-        :type page_size: int
+        :param limit: 指定查询返回记录条数，默认值10
+        :type limit: int
         :param name: 实例名称
         :type name: str
-        :param page_num: 索引位置，从page_num指定的下一条数据开始查询默认值为0
-        :type page_num: int
+        :param offset: 索引位置，从offset指定的下一条数据开始查询默认值为0
+        :type offset: int
         :param sort_key: 排序属性，目前支持以下属性： - **create_time** : 实例创建时间（默认）
         :type sort_key: str
         :param sort_dir: 排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
@@ -61,9 +61,9 @@ class ShowCcspInstanceInfoRequest:
         
         
 
-        self._page_size = None
+        self._limit = None
         self._name = None
-        self._page_num = None
+        self._offset = None
         self._sort_key = None
         self._sort_dir = None
         self._cluster_id = None
@@ -71,12 +71,12 @@ class ShowCcspInstanceInfoRequest:
         self._is_normal = None
         self.discriminator = None
 
-        if page_size is not None:
-            self.page_size = page_size
+        if limit is not None:
+            self.limit = limit
         if name is not None:
             self.name = name
-        if page_num is not None:
-            self.page_num = page_num
+        if offset is not None:
+            self.offset = offset
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -89,26 +89,26 @@ class ShowCcspInstanceInfoRequest:
             self.is_normal = is_normal
 
     @property
-    def page_size(self):
-        r"""Gets the page_size of this ShowCcspInstanceInfoRequest.
+    def limit(self):
+        r"""Gets the limit of this ShowCcspInstanceInfoRequest.
 
         指定查询返回记录条数，默认值10
 
-        :return: The page_size of this ShowCcspInstanceInfoRequest.
+        :return: The limit of this ShowCcspInstanceInfoRequest.
         :rtype: int
         """
-        return self._page_size
+        return self._limit
 
-    @page_size.setter
-    def page_size(self, page_size):
-        r"""Sets the page_size of this ShowCcspInstanceInfoRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowCcspInstanceInfoRequest.
 
         指定查询返回记录条数，默认值10
 
-        :param page_size: The page_size of this ShowCcspInstanceInfoRequest.
-        :type page_size: int
+        :param limit: The limit of this ShowCcspInstanceInfoRequest.
+        :type limit: int
         """
-        self._page_size = page_size
+        self._limit = limit
 
     @property
     def name(self):
@@ -133,26 +133,26 @@ class ShowCcspInstanceInfoRequest:
         self._name = name
 
     @property
-    def page_num(self):
-        r"""Gets the page_num of this ShowCcspInstanceInfoRequest.
+    def offset(self):
+        r"""Gets the offset of this ShowCcspInstanceInfoRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :return: The page_num of this ShowCcspInstanceInfoRequest.
+        :return: The offset of this ShowCcspInstanceInfoRequest.
         :rtype: int
         """
-        return self._page_num
+        return self._offset
 
-    @page_num.setter
-    def page_num(self, page_num):
-        r"""Sets the page_num of this ShowCcspInstanceInfoRequest.
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowCcspInstanceInfoRequest.
 
-        索引位置，从page_num指定的下一条数据开始查询默认值为0
+        索引位置，从offset指定的下一条数据开始查询默认值为0
 
-        :param page_num: The page_num of this ShowCcspInstanceInfoRequest.
-        :type page_num: int
+        :param offset: The offset of this ShowCcspInstanceInfoRequest.
+        :type offset: int
         """
-        self._page_num = page_num
+        self._offset = offset
 
     @property
     def sort_key(self):

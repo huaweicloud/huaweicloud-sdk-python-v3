@@ -15,72 +15,47 @@ class AuthObject:
     sensitive_list = []
 
     openapi_types = {
-        'auth': 'AuthObjectAuth',
-        'scope': 'AuthObjectScope'
+        'app_id': 'str'
     }
 
     attribute_map = {
-        'auth': 'auth',
-        'scope': 'scope'
+        'app_id': 'app_id'
     }
 
-    def __init__(self, auth=None, scope=None):
+    def __init__(self, app_id=None):
         r"""AuthObject
 
         The model defined in huaweicloud sdk
 
-        :param auth: 
-        :type auth: :class:`huaweicloudsdkcpcs.v1.AuthObjectAuth`
-        :param scope: 
-        :type scope: :class:`huaweicloudsdkcpcs.v1.AuthObjectScope`
+        :param app_id: 
+        :type app_id: str
         """
         
         
 
-        self._auth = None
-        self._scope = None
+        self._app_id = None
         self.discriminator = None
 
-        if auth is not None:
-            self.auth = auth
-        if scope is not None:
-            self.scope = scope
+        if app_id is not None:
+            self.app_id = app_id
 
     @property
-    def auth(self):
-        r"""Gets the auth of this AuthObject.
+    def app_id(self):
+        r"""Gets the app_id of this AuthObject.
 
-        :return: The auth of this AuthObject.
-        :rtype: :class:`huaweicloudsdkcpcs.v1.AuthObjectAuth`
+        :return: The app_id of this AuthObject.
+        :rtype: str
         """
-        return self._auth
+        return self._app_id
 
-    @auth.setter
-    def auth(self, auth):
-        r"""Sets the auth of this AuthObject.
+    @app_id.setter
+    def app_id(self, app_id):
+        r"""Sets the app_id of this AuthObject.
 
-        :param auth: The auth of this AuthObject.
-        :type auth: :class:`huaweicloudsdkcpcs.v1.AuthObjectAuth`
+        :param app_id: The app_id of this AuthObject.
+        :type app_id: str
         """
-        self._auth = auth
-
-    @property
-    def scope(self):
-        r"""Gets the scope of this AuthObject.
-
-        :return: The scope of this AuthObject.
-        :rtype: :class:`huaweicloudsdkcpcs.v1.AuthObjectScope`
-        """
-        return self._scope
-
-    @scope.setter
-    def scope(self, scope):
-        r"""Sets the scope of this AuthObject.
-
-        :param scope: The scope of this AuthObject.
-        :type scope: :class:`huaweicloudsdkcpcs.v1.AuthObjectScope`
-        """
-        self._scope = scope
+        self._app_id = app_id
 
     def to_dict(self):
         result = {}
