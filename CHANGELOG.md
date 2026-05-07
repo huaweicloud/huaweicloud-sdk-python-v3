@@ -1,3 +1,109 @@
+# 3.1.194 2026-05-07
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPipelineRunDetail**
+    - changes of response param
+      - `+ sources.params.build_params.virtual_merge_commit_id`
+      - `- sources.params.build_params.virtual_merge_commitId`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListUpgradePaths`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListAiComponentDetail`
+    - `ListAiComponentStatistics`
+    - `ListCommonHost`
+    - `BatchUpdateClusterResource`
+    - `ListCustomRuleConfigDetail`
+    - `ResumePauseCustomRuleConfig`
+    - `ListCustomRuleConfigs`
+    - `UpdateCustomRuleConfig`
+    - `CreateCustomRuleConfig`
+    - `DeleteCustomRuleConfig`
+    - `ListRelatedEvents`
+    - `ListAgentStatus`
+    - `BatchUpdateHostResource`
+    - `ListSecurityReport`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportVuls**
+    - changes of request param
+      - `+ node_type`
+  - **ListVulHostHosts**
+    - changes of request param
+      - `+ node_type`
+    - changes of response param
+      - `+ data_list.node_type`
+  - **ListAgentDaemonsetInfo**
+    - changes of response param
+      - `+ data_list.resource_info`
+  - **ShowAgentDaemonsetDetailInfo**
+    - changes of response param
+      - `+ resource_info`
+  - **UpdateAgentDaemonset**
+    - changes of request param
+      - `+ resource_info`
+  - **CreateAgentDaemonset**
+    - changes of request param
+      - `+ resource_info`
+  - **ListHostStatus**
+    - changes of response param
+      - `+ data_list.container_type`
+      - `+ data_list.ransom_protection_status`
+      - `+ data_list.wtp_protect_status`
+      - `+ data_list.two_factor_auth`
+      - `+ data_list.data_center_tag`
+      - `+ data_list.service_provider_name`
+      - `+ data_list.node_runtime_info`
+      - `+ data_list.mode`
+      - `+ data_list.cpu_limit`
+      - `+ data_list.mem_limit`
+  - **ListVulHosts**
+    - changes of request param
+      - `+ node_type`
+    - changes of response param
+      - `+ data_list.node_type`
+  - **ListVulRepairFailedDetail**
+    - changes of response param
+      - `+ data_list.reason_description`
+  - **ListClusterProtectionDefaultPolicy**
+    - changes of response param
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListClusterProtectionPolicyDetail**
+    - changes of response param
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListClusterProtectionPolicy**
+    - changes of response param
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListVulnerabilities**
+    - changes of request param
+      - `+ node_type`
+  - **ListAntiVirusPolicy**
+    - changes of request param
+      - `+ scan_type`
+
 # 3.1.193 2026-04-30
 
 ### HuaweiCloud SDK BSS

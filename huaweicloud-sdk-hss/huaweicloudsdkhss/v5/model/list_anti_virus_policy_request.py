@@ -18,29 +18,33 @@ class ListAntiVirusPolicyRequest:
         'enterprise_project_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'policy_name': 'str'
+        'policy_name': 'str',
+        'scan_type': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'offset': 'offset',
         'limit': 'limit',
-        'policy_name': 'policy_name'
+        'policy_name': 'policy_name',
+        'scan_type': 'scan_type'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, policy_name=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, policy_name=None, scan_type=None):
         r"""ListAntiVirusPolicyRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param policy_name: 策略名称
         :type policy_name: str
+        :param scan_type: **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+        :type scan_type: str
         """
         
         
@@ -49,6 +53,7 @@ class ListAntiVirusPolicyRequest:
         self._offset = None
         self._limit = None
         self._policy_name = None
+        self._scan_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -57,6 +62,8 @@ class ListAntiVirusPolicyRequest:
         self.limit = limit
         if policy_name is not None:
             self.policy_name = policy_name
+        if scan_type is not None:
+            self.scan_type = scan_type
 
     @property
     def enterprise_project_id(self):
@@ -84,7 +91,7 @@ class ListAntiVirusPolicyRequest:
     def offset(self):
         r"""Gets the offset of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :return: The offset of this ListAntiVirusPolicyRequest.
         :rtype: int
@@ -95,7 +102,7 @@ class ListAntiVirusPolicyRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListAntiVirusPolicyRequest.
         :type offset: int
@@ -106,7 +113,7 @@ class ListAntiVirusPolicyRequest:
     def limit(self):
         r"""Gets the limit of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAntiVirusPolicyRequest.
         :rtype: int
@@ -117,7 +124,7 @@ class ListAntiVirusPolicyRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAntiVirusPolicyRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAntiVirusPolicyRequest.
         :type limit: int
@@ -145,6 +152,28 @@ class ListAntiVirusPolicyRequest:
         :type policy_name: str
         """
         self._policy_name = policy_name
+
+    @property
+    def scan_type(self):
+        r"""Gets the scan_type of this ListAntiVirusPolicyRequest.
+
+        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+
+        :return: The scan_type of this ListAntiVirusPolicyRequest.
+        :rtype: str
+        """
+        return self._scan_type
+
+    @scan_type.setter
+    def scan_type(self, scan_type):
+        r"""Sets the scan_type of this ListAntiVirusPolicyRequest.
+
+        **参数解释**: 任务类型 **约束限制**: 不涉及 **取值范围**: - quick ：快速扫描 - full：全盘扫描 - custom : 自定义扫描 **默认取值**: 不涉及 
+
+        :param scan_type: The scan_type of this ListAntiVirusPolicyRequest.
+        :type scan_type: str
+        """
+        self._scan_type = scan_type
 
     def to_dict(self):
         result = {}

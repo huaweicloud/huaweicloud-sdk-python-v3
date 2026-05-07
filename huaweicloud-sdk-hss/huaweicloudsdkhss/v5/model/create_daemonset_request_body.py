@@ -18,17 +18,19 @@ class CreateDaemonsetRequestBody:
         'cluster_name': 'str',
         'auto_upgrade': 'bool',
         'runtime_info': 'list[RuntimeRequestBody]',
-        'schedule_info': 'CreateDaemonsetRequestBodyScheduleInfo'
+        'schedule_info': 'CreateDaemonsetRequestBodyScheduleInfo',
+        'resource_info': 'CreateDaemonsetRequestBodyResourceInfo'
     }
 
     attribute_map = {
         'cluster_name': 'cluster_name',
         'auto_upgrade': 'auto_upgrade',
         'runtime_info': 'runtime_info',
-        'schedule_info': 'schedule_info'
+        'schedule_info': 'schedule_info',
+        'resource_info': 'resource_info'
     }
 
-    def __init__(self, cluster_name=None, auto_upgrade=None, runtime_info=None, schedule_info=None):
+    def __init__(self, cluster_name=None, auto_upgrade=None, runtime_info=None, schedule_info=None, resource_info=None):
         r"""CreateDaemonsetRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class CreateDaemonsetRequestBody:
         :type runtime_info: list[:class:`huaweicloudsdkhss.v5.RuntimeRequestBody`]
         :param schedule_info: 
         :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
+        :param resource_info: 
+        :type resource_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
         """
         
         
@@ -49,6 +53,7 @@ class CreateDaemonsetRequestBody:
         self._auto_upgrade = None
         self._runtime_info = None
         self._schedule_info = None
+        self._resource_info = None
         self.discriminator = None
 
         if cluster_name is not None:
@@ -59,6 +64,8 @@ class CreateDaemonsetRequestBody:
             self.runtime_info = runtime_info
         if schedule_info is not None:
             self.schedule_info = schedule_info
+        if resource_info is not None:
+            self.resource_info = resource_info
 
     @property
     def cluster_name(self):
@@ -143,6 +150,24 @@ class CreateDaemonsetRequestBody:
         :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
         """
         self._schedule_info = schedule_info
+
+    @property
+    def resource_info(self):
+        r"""Gets the resource_info of this CreateDaemonsetRequestBody.
+
+        :return: The resource_info of this CreateDaemonsetRequestBody.
+        :rtype: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
+        """
+        return self._resource_info
+
+    @resource_info.setter
+    def resource_info(self, resource_info):
+        r"""Sets the resource_info of this CreateDaemonsetRequestBody.
+
+        :param resource_info: The resource_info of this CreateDaemonsetRequestBody.
+        :type resource_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
+        """
+        self._resource_info = resource_info
 
     def to_dict(self):
         result = {}

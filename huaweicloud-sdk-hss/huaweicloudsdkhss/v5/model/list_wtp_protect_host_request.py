@@ -71,7 +71,7 @@ class ListWtpProtectHostRequest:
         :type group_name: str
         :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
         :type asset_value: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
@@ -317,7 +317,7 @@ class ListWtpProtectHostRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListWtpProtectHostRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
 
         :return: The asset_value of this ListWtpProtectHostRequest.
         :rtype: str
@@ -328,7 +328,7 @@ class ListWtpProtectHostRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListWtpProtectHostRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产 **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListWtpProtectHostRequest.
         :type asset_value: str

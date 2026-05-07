@@ -1,3 +1,109 @@
+# 3.1.194 2026-05-07
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPipelineRunDetail**
+    - 响应参数变更
+      - `+ sources.params.build_params.virtual_merge_commit_id`
+      - `- sources.params.build_params.virtual_merge_commitId`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListUpgradePaths`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListAiComponentDetail`
+    - `ListAiComponentStatistics`
+    - `ListCommonHost`
+    - `BatchUpdateClusterResource`
+    - `ListCustomRuleConfigDetail`
+    - `ResumePauseCustomRuleConfig`
+    - `ListCustomRuleConfigs`
+    - `UpdateCustomRuleConfig`
+    - `CreateCustomRuleConfig`
+    - `DeleteCustomRuleConfig`
+    - `ListRelatedEvents`
+    - `ListAgentStatus`
+    - `BatchUpdateHostResource`
+    - `ListSecurityReport`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportVuls**
+    - 请求参数变更
+      - `+ node_type`
+  - **ListVulHostHosts**
+    - 请求参数变更
+      - `+ node_type`
+    - 响应参数变更
+      - `+ data_list.node_type`
+  - **ListAgentDaemonsetInfo**
+    - 响应参数变更
+      - `+ data_list.resource_info`
+  - **ShowAgentDaemonsetDetailInfo**
+    - 响应参数变更
+      - `+ resource_info`
+  - **UpdateAgentDaemonset**
+    - 请求参数变更
+      - `+ resource_info`
+  - **CreateAgentDaemonset**
+    - 请求参数变更
+      - `+ resource_info`
+  - **ListHostStatus**
+    - 响应参数变更
+      - `+ data_list.container_type`
+      - `+ data_list.ransom_protection_status`
+      - `+ data_list.wtp_protect_status`
+      - `+ data_list.two_factor_auth`
+      - `+ data_list.data_center_tag`
+      - `+ data_list.service_provider_name`
+      - `+ data_list.node_runtime_info`
+      - `+ data_list.mode`
+      - `+ data_list.cpu_limit`
+      - `+ data_list.mem_limit`
+  - **ListVulHosts**
+    - 请求参数变更
+      - `+ node_type`
+    - 响应参数变更
+      - `+ data_list.node_type`
+  - **ListVulRepairFailedDetail**
+    - 响应参数变更
+      - `+ data_list.reason_description`
+  - **ListClusterProtectionDefaultPolicy**
+    - 响应参数变更
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListClusterProtectionPolicyDetail**
+    - 响应参数变更
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListClusterProtectionPolicy**
+    - 响应参数变更
+      - `* data_list.resources.labels: string -> list<string>`
+  - **ListVulnerabilities**
+    - 请求参数变更
+      - `+ node_type`
+  - **ListAntiVirusPolicy**
+    - 请求参数变更
+      - `+ scan_type`
+
 # 3.1.193 2026-04-30
 
 ### HuaweiCloud SDK BSS

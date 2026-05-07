@@ -87,7 +87,7 @@ class AppWhitelistEventResponseInfo:
         :type event_type: int
         :param event_name: 事件名称   - \&quot;white list alert malicious process\&quot;   - \&quot;white list alert suspicious process\&quot;
         :type event_name: str
-        :param severity: **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
@@ -313,7 +313,7 @@ class AppWhitelistEventResponseInfo:
     def severity(self):
         r"""Gets the severity of this AppWhitelistEventResponseInfo.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :return: The severity of this AppWhitelistEventResponseInfo.
         :rtype: str
@@ -324,7 +324,7 @@ class AppWhitelistEventResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this AppWhitelistEventResponseInfo.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :param severity: The severity of this AppWhitelistEventResponseInfo.
         :type severity: str

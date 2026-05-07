@@ -27,7 +27,8 @@ class ListVulnerabilitiesRequest:
         'label_list': 'str',
         'status': 'str',
         'asset_value': 'str',
-        'group_name': 'str'
+        'group_name': 'str',
+        'node_type': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ListVulnerabilitiesRequest:
         'label_list': 'label_list',
         'status': 'status',
         'asset_value': 'asset_value',
-        'group_name': 'group_name'
+        'group_name': 'group_name',
+        'node_type': 'node_type'
     }
 
-    def __init__(self, enterprise_project_id=None, type=None, vul_id=None, vul_name=None, limit=None, offset=None, repair_priority=None, handle_status=None, cve_id=None, label_list=None, status=None, asset_value=None, group_name=None):
+    def __init__(self, enterprise_project_id=None, type=None, vul_id=None, vul_name=None, limit=None, offset=None, repair_priority=None, handle_status=None, cve_id=None, label_list=None, status=None, asset_value=None, group_name=None, node_type=None):
         r"""ListVulnerabilitiesRequest
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class ListVulnerabilitiesRequest:
         :type asset_value: str
         :param group_name: **参数解释**: 存在漏洞主机的所属服务器组 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type group_name: str
+        :param node_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+        :type node_type: str
         """
         
         
@@ -94,6 +98,7 @@ class ListVulnerabilitiesRequest:
         self._status = None
         self._asset_value = None
         self._group_name = None
+        self._node_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -122,6 +127,8 @@ class ListVulnerabilitiesRequest:
             self.asset_value = asset_value
         if group_name is not None:
             self.group_name = group_name
+        if node_type is not None:
+            self.node_type = node_type
 
     @property
     def enterprise_project_id(self):
@@ -408,6 +415,28 @@ class ListVulnerabilitiesRequest:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def node_type(self):
+        r"""Gets the node_type of this ListVulnerabilitiesRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :return: The node_type of this ListVulnerabilitiesRequest.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        r"""Sets the node_type of this ListVulnerabilitiesRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :param node_type: The node_type of this ListVulnerabilitiesRequest.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     def to_dict(self):
         result = {}

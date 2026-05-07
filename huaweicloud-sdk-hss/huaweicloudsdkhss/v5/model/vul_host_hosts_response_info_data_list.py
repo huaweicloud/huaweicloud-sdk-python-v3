@@ -31,7 +31,8 @@ class VulHostHostsResponseInfoDataList:
         'version': 'str',
         'handle_status': 'str',
         'vul_num_with_repair_priority_list': 'list[VulHostHostsResponseInfoVulNumWithRepairPriorityList]',
-        'vul_ids_info': 'VulHostHostsResponseInfoVulIdsInfo'
+        'vul_ids_info': 'VulHostHostsResponseInfoVulIdsInfo',
+        'node_type': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class VulHostHostsResponseInfoDataList:
         'version': 'version',
         'handle_status': 'handle_status',
         'vul_num_with_repair_priority_list': 'vul_num_with_repair_priority_list',
-        'vul_ids_info': 'vul_ids_info'
+        'vul_ids_info': 'vul_ids_info',
+        'node_type': 'node_type'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, scan_time=None, severity_level=None, score=None, version=None, handle_status=None, vul_num_with_repair_priority_list=None, vul_ids_info=None):
+    def __init__(self, host_id=None, agent_id=None, host_name=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, scan_time=None, severity_level=None, score=None, version=None, handle_status=None, vul_num_with_repair_priority_list=None, vul_ids_info=None, node_type=None):
         r"""VulHostHostsResponseInfoDataList
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class VulHostHostsResponseInfoDataList:
         :type vul_num_with_repair_priority_list: list[:class:`huaweicloudsdkhss.v5.VulHostHostsResponseInfoVulNumWithRepairPriorityList`]
         :param vul_ids_info: 
         :type vul_ids_info: :class:`huaweicloudsdkhss.v5.VulHostHostsResponseInfoVulIdsInfo`
+        :param node_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+        :type node_type: str
         """
         
         
@@ -114,6 +118,7 @@ class VulHostHostsResponseInfoDataList:
         self._handle_status = None
         self._vul_num_with_repair_priority_list = None
         self._vul_ids_info = None
+        self._node_type = None
         self.discriminator = None
 
         if host_id is not None:
@@ -150,6 +155,8 @@ class VulHostHostsResponseInfoDataList:
             self.vul_num_with_repair_priority_list = vul_num_with_repair_priority_list
         if vul_ids_info is not None:
             self.vul_ids_info = vul_ids_info
+        if node_type is not None:
+            self.node_type = node_type
 
     @property
     def host_id(self):
@@ -520,6 +527,28 @@ class VulHostHostsResponseInfoDataList:
         :type vul_ids_info: :class:`huaweicloudsdkhss.v5.VulHostHostsResponseInfoVulIdsInfo`
         """
         self._vul_ids_info = vul_ids_info
+
+    @property
+    def node_type(self):
+        r"""Gets the node_type of this VulHostHostsResponseInfoDataList.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+
+        :return: The node_type of this VulHostHostsResponseInfoDataList.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        r"""Sets the node_type of this VulHostHostsResponseInfoDataList.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+
+        :param node_type: The node_type of this VulHostHostsResponseInfoDataList.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     def to_dict(self):
         result = {}

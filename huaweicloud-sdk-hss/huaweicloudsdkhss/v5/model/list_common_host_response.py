@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowWindosVulDetailResponse(SdkResponse):
+class ListCommonHostResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,7 +17,7 @@ class ShowWindosVulDetailResponse(SdkResponse):
 
     openapi_types = {
         'total_num': 'int',
-        'data_list': 'list[WindowsVulDetailInfo]'
+        'data_list': 'list[CommonHostResponseInfo]'
     }
 
     attribute_map = {
@@ -26,14 +26,14 @@ class ShowWindosVulDetailResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        r"""ShowWindosVulDetailResponse
+        r"""ListCommonHostResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_num: **参数解释**: 数据总条数 **取值范围**: 最小值0，最大值2147483647 
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: **参数解释**: 软件漏洞cve列表 **取值范围**: 不涉及 
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.WindowsVulDetailInfo`]
+        :param data_list: 列表
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.CommonHostResponseInfo`]
         """
         
         super().__init__()
@@ -49,51 +49,51 @@ class ShowWindosVulDetailResponse(SdkResponse):
 
     @property
     def total_num(self):
-        r"""Gets the total_num of this ShowWindosVulDetailResponse.
+        r"""Gets the total_num of this ListCommonHostResponse.
 
-        **参数解释**: 数据总条数 **取值范围**: 最小值0，最大值2147483647 
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
-        :return: The total_num of this ShowWindosVulDetailResponse.
+        :return: The total_num of this ListCommonHostResponse.
         :rtype: int
         """
         return self._total_num
 
     @total_num.setter
     def total_num(self, total_num):
-        r"""Sets the total_num of this ShowWindosVulDetailResponse.
+        r"""Sets the total_num of this ListCommonHostResponse.
 
-        **参数解释**: 数据总条数 **取值范围**: 最小值0，最大值2147483647 
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
-        :param total_num: The total_num of this ShowWindosVulDetailResponse.
+        :param total_num: The total_num of this ListCommonHostResponse.
         :type total_num: int
         """
         self._total_num = total_num
 
     @property
     def data_list(self):
-        r"""Gets the data_list of this ShowWindosVulDetailResponse.
+        r"""Gets the data_list of this ListCommonHostResponse.
 
-        **参数解释**: 软件漏洞cve列表 **取值范围**: 不涉及 
+        列表
 
-        :return: The data_list of this ShowWindosVulDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.WindowsVulDetailInfo`]
+        :return: The data_list of this ListCommonHostResponse.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.CommonHostResponseInfo`]
         """
         return self._data_list
 
     @data_list.setter
     def data_list(self, data_list):
-        r"""Sets the data_list of this ShowWindosVulDetailResponse.
+        r"""Sets the data_list of this ListCommonHostResponse.
 
-        **参数解释**: 软件漏洞cve列表 **取值范围**: 不涉及 
+        列表
 
-        :param data_list: The data_list of this ShowWindosVulDetailResponse.
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.WindowsVulDetailInfo`]
+        :param data_list: The data_list of this ListCommonHostResponse.
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.CommonHostResponseInfo`]
         """
         self._data_list = data_list
 
     def to_dict(self):
         import warnings
-        warnings.warn("ShowWindosVulDetailResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("ListCommonHostResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -131,7 +131,7 @@ class ShowWindosVulDetailResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowWindosVulDetailResponse):
+        if not isinstance(other, ListCommonHostResponse):
             return False
 
         return self.__dict__ == other.__dict__

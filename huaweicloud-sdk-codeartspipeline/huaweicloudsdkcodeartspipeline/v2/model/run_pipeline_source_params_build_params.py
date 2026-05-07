@@ -47,7 +47,7 @@ class RunPipelineSourceParamsBuildParams:
         'source_codehub_url': 'source_codehub_url',
         'source_codehub_http_url': 'source_codehub_http_url',
         'virtual_merge_branch': 'virtual_merge_branch',
-        'virtual_merge_commit_id': 'virtual_merge_commitId'
+        'virtual_merge_commit_id': 'virtual_merge_commit_id'
     }
 
     def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None, virtual_merge_branch=None, virtual_merge_commit_id=None):

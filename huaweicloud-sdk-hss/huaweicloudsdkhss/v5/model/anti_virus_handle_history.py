@@ -55,13 +55,13 @@ class AntiVirusHandleHistory:
 
         The model defined in huaweicloud sdk
 
-        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        :param result_id: 病毒查杀结果ID
         :type result_id: str
         :param malware_type: **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
         :type malware_type: str
         :param malware_name: **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
         :type malware_name: str
-        :param severity: **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
@@ -141,7 +141,7 @@ class AntiVirusHandleHistory:
     def result_id(self):
         r"""Gets the result_id of this AntiVirusHandleHistory.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :return: The result_id of this AntiVirusHandleHistory.
         :rtype: str
@@ -152,7 +152,7 @@ class AntiVirusHandleHistory:
     def result_id(self, result_id):
         r"""Sets the result_id of this AntiVirusHandleHistory.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :param result_id: The result_id of this AntiVirusHandleHistory.
         :type result_id: str
@@ -207,7 +207,7 @@ class AntiVirusHandleHistory:
     def severity(self):
         r"""Gets the severity of this AntiVirusHandleHistory.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :return: The severity of this AntiVirusHandleHistory.
         :rtype: str
@@ -218,7 +218,7 @@ class AntiVirusHandleHistory:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusHandleHistory.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :param severity: The severity of this AntiVirusHandleHistory.
         :type severity: str

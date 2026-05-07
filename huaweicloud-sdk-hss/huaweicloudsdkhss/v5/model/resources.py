@@ -18,7 +18,7 @@ class Resources:
         'cluster_id': 'str',
         'cluster_name': 'str',
         'images': 'str',
-        'labels': 'str',
+        'labels': 'list[str]',
         'namespace': 'str'
     }
 
@@ -41,8 +41,8 @@ class Resources:
         :type cluster_name: str
         :param images: **参数解释**： 镜像 **取值范围**： 不涉及 
         :type images: str
-        :param labels: **参数解释**： 标签 **取值范围**： 不涉及 
-        :type labels: str
+        :param labels: **参数解释**： 标签列表 **取值范围**： 不涉及 
+        :type labels: list[str]
         :param namespace: **参数解释**： 命名空间 **取值范围**： 不涉及 
         :type namespace: str
         """
@@ -137,10 +137,10 @@ class Resources:
     def labels(self):
         r"""Gets the labels of this Resources.
 
-        **参数解释**： 标签 **取值范围**： 不涉及 
+        **参数解释**： 标签列表 **取值范围**： 不涉及 
 
         :return: The labels of this Resources.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._labels
 
@@ -148,10 +148,10 @@ class Resources:
     def labels(self, labels):
         r"""Sets the labels of this Resources.
 
-        **参数解释**： 标签 **取值范围**： 不涉及 
+        **参数解释**： 标签列表 **取值范围**： 不涉及 
 
         :param labels: The labels of this Resources.
-        :type labels: str
+        :type labels: list[str]
         """
         self._labels = labels
 

@@ -109,6 +109,7 @@ from huaweicloudsdklive.v1.model.delete_watermark_template_response import Delet
 from huaweicloudsdklive.v1.model.domain_https_cert_info import DomainHttpsCertInfo
 from huaweicloudsdklive.v1.model.domain_ipv6_switch_req import DomainIpv6SwitchReq
 from huaweicloudsdklive.v1.model.domain_mapping import DomainMapping
+from huaweicloudsdklive.v1.model.domain_stream_backup_info import DomainStreamBackupInfo
 from huaweicloudsdklive.v1.model.encoder_settings_expand import EncoderSettingsExpand
 from huaweicloudsdklive.v1.model.encoder_settings_expand_audio_descriptions import EncoderSettingsExpandAudioDescriptions
 from huaweicloudsdklive.v1.model.encryption import Encryption
@@ -189,6 +190,8 @@ from huaweicloudsdklive.v1.model.log_info import LogInfo
 from huaweicloudsdklive.v1.model.mp4_record_config import MP4RecordConfig
 from huaweicloudsdklive.v1.model.manifest_selection import ManifestSelection
 from huaweicloudsdklive.v1.model.modify_delay_config import ModifyDelayConfig
+from huaweicloudsdklive.v1.model.modify_domain_stream_backup_request import ModifyDomainStreamBackupRequest
+from huaweicloudsdklive.v1.model.modify_domain_stream_backup_response import ModifyDomainStreamBackupResponse
 from huaweicloudsdklive.v1.model.modify_flow_output_request import ModifyFlowOutputRequest
 from huaweicloudsdklive.v1.model.modify_flow_output_response import ModifyFlowOutputResponse
 from huaweicloudsdklive.v1.model.modify_flow_sources_request import ModifyFlowSourcesRequest
@@ -265,6 +268,8 @@ from huaweicloudsdklive.v1.model.show_domain_key_chain_request import ShowDomain
 from huaweicloudsdklive.v1.model.show_domain_key_chain_response import ShowDomainKeyChainResponse
 from huaweicloudsdklive.v1.model.show_domain_request import ShowDomainRequest
 from huaweicloudsdklive.v1.model.show_domain_response import ShowDomainResponse
+from huaweicloudsdklive.v1.model.show_domain_stream_backup_request import ShowDomainStreamBackupRequest
+from huaweicloudsdklive.v1.model.show_domain_stream_backup_response import ShowDomainStreamBackupResponse
 from huaweicloudsdklive.v1.model.show_domain_verification_request import ShowDomainVerificationRequest
 from huaweicloudsdklive.v1.model.show_domain_verification_response import ShowDomainVerificationResponse
 from huaweicloudsdklive.v1.model.show_flow_detail_request import ShowFlowDetailRequest

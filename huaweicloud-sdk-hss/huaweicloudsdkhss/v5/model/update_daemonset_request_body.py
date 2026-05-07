@@ -23,7 +23,8 @@ class UpdateDaemonsetRequestBody:
         'invoked_service': 'str',
         'charging_mode': 'str',
         'cce_protection_type': 'str',
-        'prefer_packet_cycle': 'bool'
+        'prefer_packet_cycle': 'bool',
+        'resource_info': 'CreateDaemonsetRequestBodyResourceInfo'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class UpdateDaemonsetRequestBody:
         'invoked_service': 'invoked_service',
         'charging_mode': 'charging_mode',
         'cce_protection_type': 'cce_protection_type',
-        'prefer_packet_cycle': 'prefer_packet_cycle'
+        'prefer_packet_cycle': 'prefer_packet_cycle',
+        'resource_info': 'resource_info'
     }
 
-    def __init__(self, agent_version=None, cluster_name=None, auto_upgrade=None, runtime_info=None, schedule_info=None, invoked_service=None, charging_mode=None, cce_protection_type=None, prefer_packet_cycle=None):
+    def __init__(self, agent_version=None, cluster_name=None, auto_upgrade=None, runtime_info=None, schedule_info=None, invoked_service=None, charging_mode=None, cce_protection_type=None, prefer_packet_cycle=None, resource_info=None):
         r"""UpdateDaemonsetRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class UpdateDaemonsetRequestBody:
         :type cce_protection_type: str
         :param prefer_packet_cycle: 优先使用包周期配额，cce集成防护调用场景使用，默认false
         :type prefer_packet_cycle: bool
+        :param resource_info: 
+        :type resource_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
         """
         
         
@@ -74,6 +78,7 @@ class UpdateDaemonsetRequestBody:
         self._charging_mode = None
         self._cce_protection_type = None
         self._prefer_packet_cycle = None
+        self._resource_info = None
         self.discriminator = None
 
         if agent_version is not None:
@@ -94,6 +99,8 @@ class UpdateDaemonsetRequestBody:
             self.cce_protection_type = cce_protection_type
         if prefer_packet_cycle is not None:
             self.prefer_packet_cycle = prefer_packet_cycle
+        if resource_info is not None:
+            self.resource_info = resource_info
 
     @property
     def agent_version(self):
@@ -288,6 +295,24 @@ class UpdateDaemonsetRequestBody:
         :type prefer_packet_cycle: bool
         """
         self._prefer_packet_cycle = prefer_packet_cycle
+
+    @property
+    def resource_info(self):
+        r"""Gets the resource_info of this UpdateDaemonsetRequestBody.
+
+        :return: The resource_info of this UpdateDaemonsetRequestBody.
+        :rtype: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
+        """
+        return self._resource_info
+
+    @resource_info.setter
+    def resource_info(self, resource_info):
+        r"""Sets the resource_info of this UpdateDaemonsetRequestBody.
+
+        :param resource_info: The resource_info of this UpdateDaemonsetRequestBody.
+        :type resource_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyResourceInfo`
+        """
+        self._resource_info = resource_info
 
     def to_dict(self):
         result = {}

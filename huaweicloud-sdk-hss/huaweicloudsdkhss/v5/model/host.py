@@ -66,7 +66,17 @@ class Host:
         'vpc_id': 'str',
         'common_login_area_codes': 'list[int]',
         'cluster_name': 'str',
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'container_type': 'int',
+        'ransom_protection_status': 'str',
+        'wtp_protect_status': 'str',
+        'two_factor_auth': 'bool',
+        'data_center_tag': 'str',
+        'service_provider_name': 'str',
+        'node_runtime_info': 'list[RuntimeServiceInfo]',
+        'mode': 'str',
+        'cpu_limit': 'str',
+        'mem_limit': 'str'
     }
 
     attribute_map = {
@@ -121,10 +131,20 @@ class Host:
         'vpc_id': 'vpc_id',
         'common_login_area_codes': 'common_login_area_codes',
         'cluster_name': 'cluster_name',
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'container_type': 'container_type',
+        'ransom_protection_status': 'ransom_protection_status',
+        'wtp_protect_status': 'wtp_protect_status',
+        'two_factor_auth': 'two_factor_auth',
+        'data_center_tag': 'data_center_tag',
+        'service_provider_name': 'service_provider_name',
+        'node_runtime_info': 'node_runtime_info',
+        'mode': 'mode',
+        'cpu_limit': 'cpu_limit',
+        'mem_limit': 'mem_limit'
     }
 
-    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, os_name=None, os_version=None, kernel_version=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, expire_time=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None, protect_interrupt=None, protect_degradation=None, host_sources=None, interrupt_reason=None, degradation_reason=None, key_name=None, auto_open_version=None, install_progress=None, vpc_id=None, common_login_area_codes=None, cluster_name=None, cluster_id=None):
+    def __init__(self, host_name=None, host_id=None, agent_id=None, private_ip=None, public_ip=None, enterprise_project_id=None, enterprise_project_name=None, os_name=None, os_version=None, kernel_version=None, host_status=None, agent_status=None, install_result_code=None, version=None, protect_status=None, os_image=None, os_type=None, os_bit=None, detect_result=None, expire_time=None, charging_mode=None, resource_id=None, outside_host=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, asset=None, vulnerability=None, baseline=None, intrusion=None, asset_value=None, labels=None, agent_create_time=None, agent_update_time=None, agent_version=None, upgrade_status=None, upgrade_result_code=None, upgradable=None, open_time=None, protect_interrupt=None, protect_degradation=None, host_sources=None, interrupt_reason=None, degradation_reason=None, key_name=None, auto_open_version=None, install_progress=None, vpc_id=None, common_login_area_codes=None, cluster_name=None, cluster_id=None, container_type=None, ransom_protection_status=None, wtp_protect_status=None, two_factor_auth=None, data_center_tag=None, service_provider_name=None, node_runtime_info=None, mode=None, cpu_limit=None, mem_limit=None):
         r"""Host
 
         The model defined in huaweicloud sdk
@@ -233,6 +253,26 @@ class Host:
         :type cluster_name: str
         :param cluster_id: **参数解释**： 集群id **取值范围**： 字符长度1-128位
         :type cluster_id: str
+        :param container_type: 是否存在容器环境。   -0: 否   -1: 是 
+        :type container_type: int
+        :param ransom_protection_status: **参数解释**：  勒索病毒防护状态  **取值范围**：    - closed ：未开启。    - opened ：防护中。    - opening ：开启中。    - closing ：关闭中。    - protect_failed：防护失败。    - protect_degraded：防护降级。 
+        :type ransom_protection_status: str
+        :param wtp_protect_status: **参数解释**： 网页防篡改防护状态 **取值范围**：   - closed：未开启   - opened：防护中   - opening：开启中   - closing：关闭中   - open_failed：防护失败   - partial_protection：部分防护   - protection_pause：防护暂停 
+        :type wtp_protect_status: str
+        :param two_factor_auth: **参数解释**： 双因子认证是否开启 **取值范围**：   - true：是。   - false：否。 
+        :type two_factor_auth: bool
+        :param data_center_tag: **参数解释** 数据中心标识 **取值范围**   字符长度0-128 
+        :type data_center_tag: str
+        :param service_provider_name: **参数解释** 服务商名称 **取值范围**   字符长度0-128 
+        :type service_provider_name: str
+        :param node_runtime_info: 节点运行时信息，incluster请求参数不为空时返回该字段
+        :type node_runtime_info: list[:class:`huaweicloudsdkhss.v5.RuntimeServiceInfo`]
+        :param mode: **参数解释** 资源限制类型：默认规则or自定义or自适应 **取值范围** 取值0-32 
+        :type mode: str
+        :param cpu_limit: **参数解释** cpu最大值 **取值范围** 字符长度0-32位 
+        :type cpu_limit: str
+        :param mem_limit: **参数解释** 内存最大值 **取值范围** 字符长度0-32位
+        :type mem_limit: str
         """
         
         
@@ -289,6 +329,16 @@ class Host:
         self._common_login_area_codes = None
         self._cluster_name = None
         self._cluster_id = None
+        self._container_type = None
+        self._ransom_protection_status = None
+        self._wtp_protect_status = None
+        self._two_factor_auth = None
+        self._data_center_tag = None
+        self._service_provider_name = None
+        self._node_runtime_info = None
+        self._mode = None
+        self._cpu_limit = None
+        self._mem_limit = None
         self.discriminator = None
 
         if host_name is not None:
@@ -395,6 +445,26 @@ class Host:
             self.cluster_name = cluster_name
         if cluster_id is not None:
             self.cluster_id = cluster_id
+        if container_type is not None:
+            self.container_type = container_type
+        if ransom_protection_status is not None:
+            self.ransom_protection_status = ransom_protection_status
+        if wtp_protect_status is not None:
+            self.wtp_protect_status = wtp_protect_status
+        if two_factor_auth is not None:
+            self.two_factor_auth = two_factor_auth
+        if data_center_tag is not None:
+            self.data_center_tag = data_center_tag
+        if service_provider_name is not None:
+            self.service_provider_name = service_provider_name
+        if node_runtime_info is not None:
+            self.node_runtime_info = node_runtime_info
+        if mode is not None:
+            self.mode = mode
+        if cpu_limit is not None:
+            self.cpu_limit = cpu_limit
+        if mem_limit is not None:
+            self.mem_limit = mem_limit
 
     @property
     def host_name(self):
@@ -1539,6 +1609,226 @@ class Host:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def container_type(self):
+        r"""Gets the container_type of this Host.
+
+        是否存在容器环境。   -0: 否   -1: 是 
+
+        :return: The container_type of this Host.
+        :rtype: int
+        """
+        return self._container_type
+
+    @container_type.setter
+    def container_type(self, container_type):
+        r"""Sets the container_type of this Host.
+
+        是否存在容器环境。   -0: 否   -1: 是 
+
+        :param container_type: The container_type of this Host.
+        :type container_type: int
+        """
+        self._container_type = container_type
+
+    @property
+    def ransom_protection_status(self):
+        r"""Gets the ransom_protection_status of this Host.
+
+        **参数解释**：  勒索病毒防护状态  **取值范围**：    - closed ：未开启。    - opened ：防护中。    - opening ：开启中。    - closing ：关闭中。    - protect_failed：防护失败。    - protect_degraded：防护降级。 
+
+        :return: The ransom_protection_status of this Host.
+        :rtype: str
+        """
+        return self._ransom_protection_status
+
+    @ransom_protection_status.setter
+    def ransom_protection_status(self, ransom_protection_status):
+        r"""Sets the ransom_protection_status of this Host.
+
+        **参数解释**：  勒索病毒防护状态  **取值范围**：    - closed ：未开启。    - opened ：防护中。    - opening ：开启中。    - closing ：关闭中。    - protect_failed：防护失败。    - protect_degraded：防护降级。 
+
+        :param ransom_protection_status: The ransom_protection_status of this Host.
+        :type ransom_protection_status: str
+        """
+        self._ransom_protection_status = ransom_protection_status
+
+    @property
+    def wtp_protect_status(self):
+        r"""Gets the wtp_protect_status of this Host.
+
+        **参数解释**： 网页防篡改防护状态 **取值范围**：   - closed：未开启   - opened：防护中   - opening：开启中   - closing：关闭中   - open_failed：防护失败   - partial_protection：部分防护   - protection_pause：防护暂停 
+
+        :return: The wtp_protect_status of this Host.
+        :rtype: str
+        """
+        return self._wtp_protect_status
+
+    @wtp_protect_status.setter
+    def wtp_protect_status(self, wtp_protect_status):
+        r"""Sets the wtp_protect_status of this Host.
+
+        **参数解释**： 网页防篡改防护状态 **取值范围**：   - closed：未开启   - opened：防护中   - opening：开启中   - closing：关闭中   - open_failed：防护失败   - partial_protection：部分防护   - protection_pause：防护暂停 
+
+        :param wtp_protect_status: The wtp_protect_status of this Host.
+        :type wtp_protect_status: str
+        """
+        self._wtp_protect_status = wtp_protect_status
+
+    @property
+    def two_factor_auth(self):
+        r"""Gets the two_factor_auth of this Host.
+
+        **参数解释**： 双因子认证是否开启 **取值范围**：   - true：是。   - false：否。 
+
+        :return: The two_factor_auth of this Host.
+        :rtype: bool
+        """
+        return self._two_factor_auth
+
+    @two_factor_auth.setter
+    def two_factor_auth(self, two_factor_auth):
+        r"""Sets the two_factor_auth of this Host.
+
+        **参数解释**： 双因子认证是否开启 **取值范围**：   - true：是。   - false：否。 
+
+        :param two_factor_auth: The two_factor_auth of this Host.
+        :type two_factor_auth: bool
+        """
+        self._two_factor_auth = two_factor_auth
+
+    @property
+    def data_center_tag(self):
+        r"""Gets the data_center_tag of this Host.
+
+        **参数解释** 数据中心标识 **取值范围**   字符长度0-128 
+
+        :return: The data_center_tag of this Host.
+        :rtype: str
+        """
+        return self._data_center_tag
+
+    @data_center_tag.setter
+    def data_center_tag(self, data_center_tag):
+        r"""Sets the data_center_tag of this Host.
+
+        **参数解释** 数据中心标识 **取值范围**   字符长度0-128 
+
+        :param data_center_tag: The data_center_tag of this Host.
+        :type data_center_tag: str
+        """
+        self._data_center_tag = data_center_tag
+
+    @property
+    def service_provider_name(self):
+        r"""Gets the service_provider_name of this Host.
+
+        **参数解释** 服务商名称 **取值范围**   字符长度0-128 
+
+        :return: The service_provider_name of this Host.
+        :rtype: str
+        """
+        return self._service_provider_name
+
+    @service_provider_name.setter
+    def service_provider_name(self, service_provider_name):
+        r"""Sets the service_provider_name of this Host.
+
+        **参数解释** 服务商名称 **取值范围**   字符长度0-128 
+
+        :param service_provider_name: The service_provider_name of this Host.
+        :type service_provider_name: str
+        """
+        self._service_provider_name = service_provider_name
+
+    @property
+    def node_runtime_info(self):
+        r"""Gets the node_runtime_info of this Host.
+
+        节点运行时信息，incluster请求参数不为空时返回该字段
+
+        :return: The node_runtime_info of this Host.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.RuntimeServiceInfo`]
+        """
+        return self._node_runtime_info
+
+    @node_runtime_info.setter
+    def node_runtime_info(self, node_runtime_info):
+        r"""Sets the node_runtime_info of this Host.
+
+        节点运行时信息，incluster请求参数不为空时返回该字段
+
+        :param node_runtime_info: The node_runtime_info of this Host.
+        :type node_runtime_info: list[:class:`huaweicloudsdkhss.v5.RuntimeServiceInfo`]
+        """
+        self._node_runtime_info = node_runtime_info
+
+    @property
+    def mode(self):
+        r"""Gets the mode of this Host.
+
+        **参数解释** 资源限制类型：默认规则or自定义or自适应 **取值范围** 取值0-32 
+
+        :return: The mode of this Host.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this Host.
+
+        **参数解释** 资源限制类型：默认规则or自定义or自适应 **取值范围** 取值0-32 
+
+        :param mode: The mode of this Host.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def cpu_limit(self):
+        r"""Gets the cpu_limit of this Host.
+
+        **参数解释** cpu最大值 **取值范围** 字符长度0-32位 
+
+        :return: The cpu_limit of this Host.
+        :rtype: str
+        """
+        return self._cpu_limit
+
+    @cpu_limit.setter
+    def cpu_limit(self, cpu_limit):
+        r"""Sets the cpu_limit of this Host.
+
+        **参数解释** cpu最大值 **取值范围** 字符长度0-32位 
+
+        :param cpu_limit: The cpu_limit of this Host.
+        :type cpu_limit: str
+        """
+        self._cpu_limit = cpu_limit
+
+    @property
+    def mem_limit(self):
+        r"""Gets the mem_limit of this Host.
+
+        **参数解释** 内存最大值 **取值范围** 字符长度0-32位
+
+        :return: The mem_limit of this Host.
+        :rtype: str
+        """
+        return self._mem_limit
+
+    @mem_limit.setter
+    def mem_limit(self, mem_limit):
+        r"""Sets the mem_limit of this Host.
+
+        **参数解释** 内存最大值 **取值范围** 字符长度0-32位
+
+        :param mem_limit: The mem_limit of this Host.
+        :type mem_limit: str
+        """
+        self._mem_limit = mem_limit
 
     def to_dict(self):
         result = {}

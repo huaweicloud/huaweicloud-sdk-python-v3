@@ -57,7 +57,7 @@ class AntiVirusResultResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        :param result_id: 病毒查杀结果ID
         :type result_id: str
         :param malware_type: **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
         :type malware_type: str
@@ -148,7 +148,7 @@ class AntiVirusResultResponseInfo:
     def result_id(self):
         r"""Gets the result_id of this AntiVirusResultResponseInfo.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :return: The result_id of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class AntiVirusResultResponseInfo:
     def result_id(self, result_id):
         r"""Sets the result_id of this AntiVirusResultResponseInfo.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :param result_id: The result_id of this AntiVirusResultResponseInfo.
         :type result_id: str

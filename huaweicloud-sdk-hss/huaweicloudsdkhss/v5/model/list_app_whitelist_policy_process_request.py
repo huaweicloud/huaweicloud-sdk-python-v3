@@ -53,7 +53,7 @@ class ListAppWhitelistPolicyProcessRequest:
         :type enterprise_project_id: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param policy_id: **参数解释**： 策略ID **约束限制**： 必填 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及 
         :type policy_id: str
@@ -160,7 +160,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def limit(self):
         r"""Gets the limit of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAppWhitelistPolicyProcessRequest.
         :rtype: int
@@ -171,7 +171,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAppWhitelistPolicyProcessRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAppWhitelistPolicyProcessRequest.
         :type limit: int

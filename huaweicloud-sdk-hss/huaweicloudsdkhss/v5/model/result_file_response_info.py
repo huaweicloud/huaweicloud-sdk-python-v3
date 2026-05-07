@@ -49,7 +49,7 @@ class ResultFileResponseInfo:
         :type file_owner: str
         :param file_attr: **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
         :type file_attr: str
-        :param file_ctime: **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
+        :param file_ctime: 文件创建时间
         :type file_ctime: int
         :param file_mtime: **参数解释**： 文件更新时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type file_mtime: int
@@ -195,7 +195,7 @@ class ResultFileResponseInfo:
     def file_ctime(self):
         r"""Gets the file_ctime of this ResultFileResponseInfo.
 
-        **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
+        文件创建时间
 
         :return: The file_ctime of this ResultFileResponseInfo.
         :rtype: int
@@ -206,7 +206,7 @@ class ResultFileResponseInfo:
     def file_ctime(self, file_ctime):
         r"""Sets the file_ctime of this ResultFileResponseInfo.
 
-        **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
+        文件创建时间
 
         :param file_ctime: The file_ctime of this ResultFileResponseInfo.
         :type file_ctime: int

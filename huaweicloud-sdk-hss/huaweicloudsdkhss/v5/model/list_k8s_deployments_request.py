@@ -47,7 +47,7 @@ class ListK8sDeploymentsRequest:
         :type namespace_name: str
         :param cluster_name: 所属集群名称
         :type cluster_name: str
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         """
         
@@ -187,7 +187,7 @@ class ListK8sDeploymentsRequest:
     def limit(self):
         r"""Gets the limit of this ListK8sDeploymentsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListK8sDeploymentsRequest.
         :rtype: int
@@ -198,7 +198,7 @@ class ListK8sDeploymentsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListK8sDeploymentsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListK8sDeploymentsRequest.
         :type limit: int

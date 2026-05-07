@@ -67,7 +67,7 @@ class AppWhitelistPolicyHostResponseInfo:
         :type event_num: int
         :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
-        :param learning_status: **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        :param learning_status: **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
         :type learning_status: str
         :param apply_status: **参数解释**： 是否应用 **取值范围**: - true：是 - false：否 
         :type apply_status: bool
@@ -303,7 +303,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def learning_status(self):
         r"""Gets the learning_status of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
 
         :return: The learning_status of this AppWhitelistPolicyHostResponseInfo.
         :rtype: str
@@ -314,7 +314,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def learning_status(self, learning_status):
         r"""Sets the learning_status of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
 
         :param learning_status: The learning_status of this AppWhitelistPolicyHostResponseInfo.
         :type learning_status: str

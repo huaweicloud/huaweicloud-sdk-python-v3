@@ -63,7 +63,7 @@ class ListRansomwareProtectionNodesRequest:
         :type enterprise_project_id: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param host_name: 服务器名称
         :type host_name: str
@@ -197,7 +197,7 @@ class ListRansomwareProtectionNodesRequest:
     def limit(self):
         r"""Gets the limit of this ListRansomwareProtectionNodesRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListRansomwareProtectionNodesRequest.
         :rtype: int
@@ -208,7 +208,7 @@ class ListRansomwareProtectionNodesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListRansomwareProtectionNodesRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListRansomwareProtectionNodesRequest.
         :type limit: int

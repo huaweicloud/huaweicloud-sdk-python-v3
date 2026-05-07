@@ -43,7 +43,7 @@ class CreateWebTamperProtectionConfigRequestBody:
 
         :param type: **参数解释**: 网页防篡改的类型 **约束限制**: 不涉及 **取值范围**: - container_wtp：容器网页防篡改  **默认取值**: 不涉及 
         :type type: str
-        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
+        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
         :type protect_mode: str
         :param monitor_process: **参数解释**: 是否对篡改行为进行进程监控 **约束限制**: 不涉及 **取值范围**: - true：监控篡改进程 - false：不监控篡改进程  **默认取值**: true 
         :type monitor_process: bool
@@ -113,7 +113,7 @@ class CreateWebTamperProtectionConfigRequestBody:
     def protect_mode(self):
         r"""Gets the protect_mode of this CreateWebTamperProtectionConfigRequestBody.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
 
         :return: The protect_mode of this CreateWebTamperProtectionConfigRequestBody.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateWebTamperProtectionConfigRequestBody:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this CreateWebTamperProtectionConfigRequestBody.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式  **默认取值**: alarm 
+        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - alarm：告警模式 - block：拦截模式 **默认取值**: alarm 
 
         :param protect_mode: The protect_mode of this CreateWebTamperProtectionConfigRequestBody.
         :type protect_mode: str

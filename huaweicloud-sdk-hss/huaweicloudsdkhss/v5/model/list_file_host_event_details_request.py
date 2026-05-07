@@ -57,7 +57,7 @@ class ListFileHostEventDetailsRequest:
         :type host_id: str
         :param file_name: 文件名称
         :type file_name: str
-        :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
+        :param file_path: 文件路径
         :type file_path: str
         :param change_type: 变更类型，包含如下:   - \&quot;all\&quot; : 全部   - \&quot;registry\&quot; : 注册表   - \&quot;file\&quot; : 文件
         :type change_type: str
@@ -67,7 +67,7 @@ class ListFileHostEventDetailsRequest:
         :type status: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         """
         
@@ -220,7 +220,7 @@ class ListFileHostEventDetailsRequest:
     def file_path(self):
         r"""Gets the file_path of this ListFileHostEventDetailsRequest.
 
-        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
+        文件路径
 
         :return: The file_path of this ListFileHostEventDetailsRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ListFileHostEventDetailsRequest:
     def file_path(self, file_path):
         r"""Sets the file_path of this ListFileHostEventDetailsRequest.
 
-        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
+        文件路径
 
         :param file_path: The file_path of this ListFileHostEventDetailsRequest.
         :type file_path: str
@@ -330,7 +330,7 @@ class ListFileHostEventDetailsRequest:
     def limit(self):
         r"""Gets the limit of this ListFileHostEventDetailsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListFileHostEventDetailsRequest.
         :rtype: int
@@ -341,7 +341,7 @@ class ListFileHostEventDetailsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListFileHostEventDetailsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListFileHostEventDetailsRequest.
         :type limit: int

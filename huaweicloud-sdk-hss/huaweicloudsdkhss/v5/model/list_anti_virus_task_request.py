@@ -55,9 +55,9 @@ class ListAntiVirusTaskRequest:
         :type enterprise_project_id: str
         :param task_name: **参数解释**: 任务名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type task_name: str
-        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param last_days: **参数解释**: 查询时间范围天数 **约束限制**: 与begin_time、end_time互斥，不可同时传参，优先按last_days筛选 **取值范围**: 最小值1，最大值90（支持查询近90天内任务） **默认取值**: 不涉及 
         :type last_days: int
@@ -168,7 +168,7 @@ class ListAntiVirusTaskRequest:
     def offset(self):
         r"""Gets the offset of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :return: The offset of this ListAntiVirusTaskRequest.
         :rtype: int
@@ -179,7 +179,7 @@ class ListAntiVirusTaskRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListAntiVirusTaskRequest.
         :type offset: int
@@ -190,7 +190,7 @@ class ListAntiVirusTaskRequest:
     def limit(self):
         r"""Gets the limit of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAntiVirusTaskRequest.
         :rtype: int
@@ -201,7 +201,7 @@ class ListAntiVirusTaskRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAntiVirusTaskRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAntiVirusTaskRequest.
         :type limit: int

@@ -55,7 +55,7 @@ class ListSystemUserWhiteListRequest:
         :type system_user_name: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         """
         
@@ -244,7 +244,7 @@ class ListSystemUserWhiteListRequest:
     def limit(self):
         r"""Gets the limit of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListSystemUserWhiteListRequest.
         :rtype: int
@@ -255,7 +255,7 @@ class ListSystemUserWhiteListRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListSystemUserWhiteListRequest.
         :type limit: int

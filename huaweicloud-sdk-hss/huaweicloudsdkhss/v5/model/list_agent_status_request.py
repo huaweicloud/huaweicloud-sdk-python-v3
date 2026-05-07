@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowWindosVulDetailRequest:
+class ListAgentStatusRequest:
 
     """
     Attributes:
@@ -18,22 +18,22 @@ class ShowWindosVulDetailRequest:
         'enterprise_project_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'vul_id': 'str',
-        'cve_id': 'str',
-        'handle_status': 'str'
+        'agent_id': 'str',
+        'agent_status': 'str',
+        'abnormal_reason': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset',
-        'vul_id': 'vul_id',
-        'cve_id': 'cve_id',
-        'handle_status': 'handle_status'
+        'agent_id': 'agent_id',
+        'agent_status': 'agent_status',
+        'abnormal_reason': 'abnormal_reason'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, vul_id=None, cve_id=None, handle_status=None):
-        r"""ShowWindosVulDetailRequest
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, agent_id=None, agent_status=None, abnormal_reason=None):
+        r"""ListAgentStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,12 +43,12 @@ class ShowWindosVulDetailRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param vul_id: **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
-        :type vul_id: str
-        :param cve_id: **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-        :type cve_id: str
-        :param handle_status: **参数解释**: 漏洞处置状态 **约束限制**: 不涉及 **取值范围**: - handled : 已处理 - unhandled : 未处理  **默认取值**: 不涉及 
-        :type handle_status: str
+        :param agent_id: **参数解释**: Agent的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :type agent_id: str
+        :param agent_status: **参数解释**： agent状态 **约束限制**: 不涉及 **取值范围**: -not_installed：未安装 -online：在线 -offline：离线 -install_failed：安装失败 -installing：安装中  **默认取值**: 不涉及 
+        :type agent_status: str
+        :param abnormal_reason: **参数解释**: 异常原因 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        :type abnormal_reason: str
         """
         
         
@@ -56,9 +56,9 @@ class ShowWindosVulDetailRequest:
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
-        self._vul_id = None
-        self._cve_id = None
-        self._handle_status = None
+        self._agent_id = None
+        self._agent_status = None
+        self._abnormal_reason = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -67,143 +67,143 @@ class ShowWindosVulDetailRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        self.vul_id = vul_id
-        if cve_id is not None:
-            self.cve_id = cve_id
-        if handle_status is not None:
-            self.handle_status = handle_status
+        self.agent_id = agent_id
+        if agent_status is not None:
+            self.agent_status = agent_status
+        if abnormal_reason is not None:
+            self.abnormal_reason = abnormal_reason
 
     @property
     def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ShowWindosVulDetailRequest.
+        r"""Gets the enterprise_project_id of this ListAgentStatusRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :return: The enterprise_project_id of this ShowWindosVulDetailRequest.
+        :return: The enterprise_project_id of this ListAgentStatusRequest.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ShowWindosVulDetailRequest.
+        r"""Sets the enterprise_project_id of this ListAgentStatusRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :param enterprise_project_id: The enterprise_project_id of this ShowWindosVulDetailRequest.
+        :param enterprise_project_id: The enterprise_project_id of this ListAgentStatusRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):
-        r"""Gets the limit of this ShowWindosVulDetailRequest.
+        r"""Gets the limit of this ListAgentStatusRequest.
 
         **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
-        :return: The limit of this ShowWindosVulDetailRequest.
+        :return: The limit of this ListAgentStatusRequest.
         :rtype: int
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        r"""Sets the limit of this ShowWindosVulDetailRequest.
+        r"""Sets the limit of this ListAgentStatusRequest.
 
         **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
-        :param limit: The limit of this ShowWindosVulDetailRequest.
+        :param limit: The limit of this ListAgentStatusRequest.
         :type limit: int
         """
         self._limit = limit
 
     @property
     def offset(self):
-        r"""Gets the offset of this ShowWindosVulDetailRequest.
+        r"""Gets the offset of this ListAgentStatusRequest.
 
         **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
-        :return: The offset of this ShowWindosVulDetailRequest.
+        :return: The offset of this ListAgentStatusRequest.
         :rtype: int
         """
         return self._offset
 
     @offset.setter
     def offset(self, offset):
-        r"""Sets the offset of this ShowWindosVulDetailRequest.
+        r"""Sets the offset of this ListAgentStatusRequest.
 
         **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
-        :param offset: The offset of this ShowWindosVulDetailRequest.
+        :param offset: The offset of this ListAgentStatusRequest.
         :type offset: int
         """
         self._offset = offset
 
     @property
-    def vul_id(self):
-        r"""Gets the vul_id of this ShowWindosVulDetailRequest.
+    def agent_id(self):
+        r"""Gets the agent_id of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        **参数解释**: Agent的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
-        :return: The vul_id of this ShowWindosVulDetailRequest.
+        :return: The agent_id of this ListAgentStatusRequest.
         :rtype: str
         """
-        return self._vul_id
+        return self._agent_id
 
-    @vul_id.setter
-    def vul_id(self, vul_id):
-        r"""Sets the vul_id of this ShowWindosVulDetailRequest.
+    @agent_id.setter
+    def agent_id(self, agent_id):
+        r"""Sets the agent_id of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        **参数解释**: Agent的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
-        :param vul_id: The vul_id of this ShowWindosVulDetailRequest.
-        :type vul_id: str
+        :param agent_id: The agent_id of this ListAgentStatusRequest.
+        :type agent_id: str
         """
-        self._vul_id = vul_id
+        self._agent_id = agent_id
 
     @property
-    def cve_id(self):
-        r"""Gets the cve_id of this ShowWindosVulDetailRequest.
+    def agent_status(self):
+        r"""Gets the agent_status of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**： agent状态 **约束限制**: 不涉及 **取值范围**: -not_installed：未安装 -online：在线 -offline：离线 -install_failed：安装失败 -installing：安装中  **默认取值**: 不涉及 
 
-        :return: The cve_id of this ShowWindosVulDetailRequest.
+        :return: The agent_status of this ListAgentStatusRequest.
         :rtype: str
         """
-        return self._cve_id
+        return self._agent_status
 
-    @cve_id.setter
-    def cve_id(self, cve_id):
-        r"""Sets the cve_id of this ShowWindosVulDetailRequest.
+    @agent_status.setter
+    def agent_status(self, agent_status):
+        r"""Sets the agent_status of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞cve编号 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        **参数解释**： agent状态 **约束限制**: 不涉及 **取值范围**: -not_installed：未安装 -online：在线 -offline：离线 -install_failed：安装失败 -installing：安装中  **默认取值**: 不涉及 
 
-        :param cve_id: The cve_id of this ShowWindosVulDetailRequest.
-        :type cve_id: str
+        :param agent_status: The agent_status of this ListAgentStatusRequest.
+        :type agent_status: str
         """
-        self._cve_id = cve_id
+        self._agent_status = agent_status
 
     @property
-    def handle_status(self):
-        r"""Gets the handle_status of this ShowWindosVulDetailRequest.
+    def abnormal_reason(self):
+        r"""Gets the abnormal_reason of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞处置状态 **约束限制**: 不涉及 **取值范围**: - handled : 已处理 - unhandled : 未处理  **默认取值**: 不涉及 
+        **参数解释**: 异常原因 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
 
-        :return: The handle_status of this ShowWindosVulDetailRequest.
+        :return: The abnormal_reason of this ListAgentStatusRequest.
         :rtype: str
         """
-        return self._handle_status
+        return self._abnormal_reason
 
-    @handle_status.setter
-    def handle_status(self, handle_status):
-        r"""Sets the handle_status of this ShowWindosVulDetailRequest.
+    @abnormal_reason.setter
+    def abnormal_reason(self, abnormal_reason):
+        r"""Sets the abnormal_reason of this ListAgentStatusRequest.
 
-        **参数解释**: 漏洞处置状态 **约束限制**: 不涉及 **取值范围**: - handled : 已处理 - unhandled : 未处理  **默认取值**: 不涉及 
+        **参数解释**: 异常原因 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
 
-        :param handle_status: The handle_status of this ShowWindosVulDetailRequest.
-        :type handle_status: str
+        :param abnormal_reason: The abnormal_reason of this ListAgentStatusRequest.
+        :type abnormal_reason: str
         """
-        self._handle_status = handle_status
+        self._abnormal_reason = abnormal_reason
 
     def to_dict(self):
         result = {}
@@ -242,7 +242,7 @@ class ShowWindosVulDetailRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowWindosVulDetailRequest):
+        if not isinstance(other, ListAgentStatusRequest):
             return False
 
         return self.__dict__ == other.__dict__

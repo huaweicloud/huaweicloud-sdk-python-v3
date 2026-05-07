@@ -34,7 +34,8 @@ class ListVulHostsRequest:
         'is_container': 'bool',
         'container_name': 'str',
         'min_scan_time': 'int',
-        'max_scan_time': 'int'
+        'max_scan_time': 'int',
+        'node_type': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class ListVulHostsRequest:
         'is_container': 'is_container',
         'container_name': 'container_name',
         'min_scan_time': 'min_scan_time',
-        'max_scan_time': 'max_scan_time'
+        'max_scan_time': 'max_scan_time',
+        'node_type': 'node_type'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_name=None, host_ip=None, vul_id=None, type=None, status=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None, cluster_name=None, cluster_id=None, is_container=None, container_name=None, min_scan_time=None, max_scan_time=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_name=None, host_ip=None, vul_id=None, type=None, status=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None, cluster_name=None, cluster_id=None, is_container=None, container_name=None, min_scan_time=None, max_scan_time=None, node_type=None):
         r"""ListVulHostsRequest
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class ListVulHostsRequest:
         :type min_scan_time: int
         :param max_scan_time: **参数解释**： 扫描任务开始时间的最大值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
         :type max_scan_time: int
+        :param node_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+        :type node_type: str
         """
         
         
@@ -129,6 +133,7 @@ class ListVulHostsRequest:
         self._container_name = None
         self._min_scan_time = None
         self._max_scan_time = None
+        self._node_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -169,6 +174,8 @@ class ListVulHostsRequest:
             self.min_scan_time = min_scan_time
         if max_scan_time is not None:
             self.max_scan_time = max_scan_time
+        if node_type is not None:
+            self.node_type = node_type
 
     @property
     def enterprise_project_id(self):
@@ -609,6 +616,28 @@ class ListVulHostsRequest:
         :type max_scan_time: int
         """
         self._max_scan_time = max_scan_time
+
+    @property
+    def node_type(self):
+        r"""Gets the node_type of this ListVulHostsRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :return: The node_type of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        r"""Sets the node_type of this ListVulHostsRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :param node_type: The node_type of this ListVulHostsRequest.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     def to_dict(self):
         result = {}

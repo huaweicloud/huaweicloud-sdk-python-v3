@@ -53,7 +53,7 @@ class UserResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **取值范围**: 字符长度1-64位 
         :type agent_id: str
         :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
@@ -134,7 +134,7 @@ class UserResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this UserResponseInfo.
 
-        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **取值范围**: 字符长度1-64位 
 
         :return: The agent_id of this UserResponseInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class UserResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this UserResponseInfo.
 
-        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **取值范围**: 字符长度1-64位 
 
         :param agent_id: The agent_id of this UserResponseInfo.
         :type agent_id: str

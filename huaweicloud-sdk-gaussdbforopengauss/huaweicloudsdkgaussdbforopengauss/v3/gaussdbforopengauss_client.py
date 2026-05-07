@@ -8772,6 +8772,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_upgrade_paths(self, request):
+        r"""查询引擎的升级路径
+
+        查询引擎的升级路径
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListUpgradePaths
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListUpgradePathsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListUpgradePathsResponse`
+        """
+        http_info = self._list_upgrade_paths_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_upgrade_paths_invoker(self, request):
+        http_info = self._list_upgrade_paths_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_upgrade_paths_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/upgrade-paths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpgradePathsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'source_version' in local_var_params:
+            query_params.append(('source_version', local_var_params['source_version']))
+        if 'target_version' in local_var_params:
+            query_params.append(('target_version', local_var_params['target_version']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_wait_event(self, request):
         r"""查询等待事件列表
 

@@ -105,7 +105,8 @@ class CreateOttChannelInfoReq:
         if encoder_settings is not None:
             self.encoder_settings = encoder_settings
         self.record_settings = record_settings
-        self.endpoints = endpoints
+        if endpoints is not None:
+            self.endpoints = endpoints
         if encoder_settings_expand is not None:
             self.encoder_settings_expand = encoder_settings_expand
 

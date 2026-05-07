@@ -27,7 +27,8 @@ class ListVulHostHostsRequest:
         'handle_status': 'str',
         'status': 'str',
         'cluster_id': 'str',
-        'host_id_list': 'str'
+        'host_id_list': 'str',
+        'node_type': 'str'
     }
 
     attribute_map = {
@@ -43,17 +44,18 @@ class ListVulHostHostsRequest:
         'handle_status': 'handle_status',
         'status': 'status',
         'cluster_id': 'cluster_id',
-        'host_id_list': 'host_id_list'
+        'host_id_list': 'host_id_list',
+        'node_type': 'node_type'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, asset_value=None, group_name=None, host_name=None, public_ip=None, private_ip=None, severity_level=None, handle_status=None, status=None, cluster_id=None, host_id_list=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, asset_value=None, group_name=None, host_name=None, public_ip=None, private_ip=None, severity_level=None, handle_status=None, status=None, cluster_id=None, host_id_list=None, node_type=None):
         r"""ListVulHostHostsRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
@@ -77,6 +79,8 @@ class ListVulHostHostsRequest:
         :type cluster_id: str
         :param host_id_list: **参数解释**: 主机id列表，多个主机id用英文逗号分隔 **约束限制**: 不涉及 **取值范围**: 字符长度0-1850位 **默认取值**: 不涉及 
         :type host_id_list: str
+        :param node_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+        :type node_type: str
         """
         
         
@@ -94,6 +98,7 @@ class ListVulHostHostsRequest:
         self._status = None
         self._cluster_id = None
         self._host_id_list = None
+        self._node_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -120,6 +125,8 @@ class ListVulHostHostsRequest:
             self.cluster_id = cluster_id
         if host_id_list is not None:
             self.host_id_list = host_id_list
+        if node_type is not None:
+            self.node_type = node_type
 
     @property
     def enterprise_project_id(self):
@@ -147,7 +154,7 @@ class ListVulHostHostsRequest:
     def limit(self):
         r"""Gets the limit of this ListVulHostHostsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListVulHostHostsRequest.
         :rtype: int
@@ -158,7 +165,7 @@ class ListVulHostHostsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListVulHostHostsRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListVulHostHostsRequest.
         :type limit: int
@@ -406,6 +413,28 @@ class ListVulHostHostsRequest:
         :type host_id_list: str
         """
         self._host_id_list = host_id_list
+
+    @property
+    def node_type(self):
+        r"""Gets the node_type of this ListVulHostHostsRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :return: The node_type of this ListVulHostHostsRequest.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        r"""Sets the node_type of this ListVulHostHostsRequest.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及 
+
+        :param node_type: The node_type of this ListVulHostHostsRequest.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     def to_dict(self):
         result = {}

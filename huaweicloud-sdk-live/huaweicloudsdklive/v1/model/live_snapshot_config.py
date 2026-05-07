@@ -20,6 +20,7 @@ class LiveSnapshotConfig:
         'auth_key': 'str',
         'time_interval': 'int',
         'object_write_mode': 'int',
+        'snapshot_mode': 'str',
         'obs_location': 'ObsFileAddr',
         'call_back_enable': 'str',
         'call_back_url': 'str',
@@ -34,6 +35,7 @@ class LiveSnapshotConfig:
         'auth_key': 'auth_key',
         'time_interval': 'time_interval',
         'object_write_mode': 'object_write_mode',
+        'snapshot_mode': 'snapshot_mode',
         'obs_location': 'obs_location',
         'call_back_enable': 'call_back_enable',
         'call_back_url': 'call_back_url',
@@ -42,7 +44,7 @@ class LiveSnapshotConfig:
         'image_access_domain': 'image_access_domain'
     }
 
-    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_object_format=None, image_access_protocol=None, image_access_domain=None):
+    def __init__(self, domain=None, app_name=None, auth_key=None, time_interval=None, object_write_mode=None, snapshot_mode=None, obs_location=None, call_back_enable=None, call_back_url=None, image_object_format=None, image_access_protocol=None, image_access_domain=None):
         r"""LiveSnapshotConfig
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class LiveSnapshotConfig:
         :type time_interval: int
         :param object_write_mode: 在OBS桶存储截图的方式：  - 0：实时截图，以时间戳命名截图文件，保存所有截图文件到OBS桶。例：snapshot/{domain}/{app_name}/{stream_name}/{UnixTimestamp}.jpg  - 1：覆盖截图，只保存最新的截图文件，新的截图会覆盖原来的截图文件。例：snapshot/{domain}/{app_name}/{stream_name}.jpg
         :type object_write_mode: int
+        :param snapshot_mode: **参数解释**： 截图模式 **约束限制**： 不涉及 **取值范围**：   - keyframe：I帧截图只选取、保存符合要求的I帧。   - nokeyframe：非I帧截图只选取、保存符合要求的非I帧。   - random：随机截图交替选取、保存符合要求的I帧及非I帧。 **默认取值**： keyframe 
+        :type snapshot_mode: str
         :param obs_location: 
         :type obs_location: :class:`huaweicloudsdklive.v1.ObsFileAddr`
         :param call_back_enable: 是否启用回调通知 - on：启用。 - off：不启用。
@@ -78,6 +82,7 @@ class LiveSnapshotConfig:
         self._auth_key = None
         self._time_interval = None
         self._object_write_mode = None
+        self._snapshot_mode = None
         self._obs_location = None
         self._call_back_enable = None
         self._call_back_url = None
@@ -92,6 +97,8 @@ class LiveSnapshotConfig:
             self.auth_key = auth_key
         self.time_interval = time_interval
         self.object_write_mode = object_write_mode
+        if snapshot_mode is not None:
+            self.snapshot_mode = snapshot_mode
         self.obs_location = obs_location
         if call_back_enable is not None:
             self.call_back_enable = call_back_enable
@@ -213,6 +220,28 @@ class LiveSnapshotConfig:
         :type object_write_mode: int
         """
         self._object_write_mode = object_write_mode
+
+    @property
+    def snapshot_mode(self):
+        r"""Gets the snapshot_mode of this LiveSnapshotConfig.
+
+        **参数解释**： 截图模式 **约束限制**： 不涉及 **取值范围**：   - keyframe：I帧截图只选取、保存符合要求的I帧。   - nokeyframe：非I帧截图只选取、保存符合要求的非I帧。   - random：随机截图交替选取、保存符合要求的I帧及非I帧。 **默认取值**： keyframe 
+
+        :return: The snapshot_mode of this LiveSnapshotConfig.
+        :rtype: str
+        """
+        return self._snapshot_mode
+
+    @snapshot_mode.setter
+    def snapshot_mode(self, snapshot_mode):
+        r"""Sets the snapshot_mode of this LiveSnapshotConfig.
+
+        **参数解释**： 截图模式 **约束限制**： 不涉及 **取值范围**：   - keyframe：I帧截图只选取、保存符合要求的I帧。   - nokeyframe：非I帧截图只选取、保存符合要求的非I帧。   - random：随机截图交替选取、保存符合要求的I帧及非I帧。 **默认取值**： keyframe 
+
+        :param snapshot_mode: The snapshot_mode of this LiveSnapshotConfig.
+        :type snapshot_mode: str
+        """
+        self._snapshot_mode = snapshot_mode
 
     @property
     def obs_location(self):

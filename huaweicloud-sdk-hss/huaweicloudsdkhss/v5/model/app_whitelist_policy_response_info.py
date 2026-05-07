@@ -71,7 +71,7 @@ class AppWhitelistPolicyResponseInfo:
         :type policy_name: str
         :param policy_type: **参数解释**： 进程白名单策略类型 **取值范围**: - block：日常运营模式 
         :type policy_type: str
-        :param learning_status: **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        :param learning_status: **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
         :type learning_status: str
         :param learning_days: **参数解释**: 策略学习天数 **取值范围**: 最小值3，最大值30 
         :type learning_days: int
@@ -242,7 +242,7 @@ class AppWhitelistPolicyResponseInfo:
     def learning_status(self):
         r"""Gets the learning_status of this AppWhitelistPolicyResponseInfo.
 
-        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
 
         :return: The learning_status of this AppWhitelistPolicyResponseInfo.
         :rtype: str
@@ -253,7 +253,7 @@ class AppWhitelistPolicyResponseInfo:
     def learning_status(self, learning_status):
         r"""Sets the learning_status of this AppWhitelistPolicyResponseInfo.
 
-        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
+        **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常 **默认取值**: 不涉及 
 
         :param learning_status: The learning_status of this AppWhitelistPolicyResponseInfo.
         :type learning_status: str

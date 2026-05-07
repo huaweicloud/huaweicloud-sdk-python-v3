@@ -17,6 +17,7 @@ class VulRepairFailedDetailInfo:
     openapi_types = {
         'software': 'str',
         'reason': 'str',
+        'reason_description': 'str',
         'reason_describtion': 'str',
         'reason_solution': 'str'
     }
@@ -24,11 +25,12 @@ class VulRepairFailedDetailInfo:
     attribute_map = {
         'software': 'software',
         'reason': 'reason',
+        'reason_description': 'reason_description',
         'reason_describtion': 'reason_describtion',
         'reason_solution': 'reason_solution'
     }
 
-    def __init__(self, software=None, reason=None, reason_describtion=None, reason_solution=None):
+    def __init__(self, software=None, reason=None, reason_description=None, reason_describtion=None, reason_solution=None):
         r"""VulRepairFailedDetailInfo
 
         The model defined in huaweicloud sdk
@@ -37,7 +39,9 @@ class VulRepairFailedDetailInfo:
         :type software: str
         :param reason: **参数解释**: 漏洞修复失败原因详情 **取值范围**: 字符长度0-65535位 
         :type reason: str
-        :param reason_describtion: **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+        :param reason_description: **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+        :type reason_description: str
+        :param reason_describtion: **参数解释**: 漏洞修复失败原因解释说明，已废弃 **取值范围**: 字符长度0-256位 
         :type reason_describtion: str
         :param reason_solution: **参数解释**: 解决方式说明 **取值范围**: 字符长度0-65535位 
         :type reason_solution: str
@@ -47,6 +51,7 @@ class VulRepairFailedDetailInfo:
 
         self._software = None
         self._reason = None
+        self._reason_description = None
         self._reason_describtion = None
         self._reason_solution = None
         self.discriminator = None
@@ -55,6 +60,8 @@ class VulRepairFailedDetailInfo:
             self.software = software
         if reason is not None:
             self.reason = reason
+        if reason_description is not None:
+            self.reason_description = reason_description
         if reason_describtion is not None:
             self.reason_describtion = reason_describtion
         if reason_solution is not None:
@@ -105,10 +112,32 @@ class VulRepairFailedDetailInfo:
         self._reason = reason
 
     @property
+    def reason_description(self):
+        r"""Gets the reason_description of this VulRepairFailedDetailInfo.
+
+        **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+
+        :return: The reason_description of this VulRepairFailedDetailInfo.
+        :rtype: str
+        """
+        return self._reason_description
+
+    @reason_description.setter
+    def reason_description(self, reason_description):
+        r"""Sets the reason_description of this VulRepairFailedDetailInfo.
+
+        **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+
+        :param reason_description: The reason_description of this VulRepairFailedDetailInfo.
+        :type reason_description: str
+        """
+        self._reason_description = reason_description
+
+    @property
     def reason_describtion(self):
         r"""Gets the reason_describtion of this VulRepairFailedDetailInfo.
 
-        **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+        **参数解释**: 漏洞修复失败原因解释说明，已废弃 **取值范围**: 字符长度0-256位 
 
         :return: The reason_describtion of this VulRepairFailedDetailInfo.
         :rtype: str
@@ -119,7 +148,7 @@ class VulRepairFailedDetailInfo:
     def reason_describtion(self, reason_describtion):
         r"""Sets the reason_describtion of this VulRepairFailedDetailInfo.
 
-        **参数解释**: 漏洞修复失败原因解释说明 **取值范围**: 字符长度0-256位 
+        **参数解释**: 漏洞修复失败原因解释说明，已废弃 **取值范围**: 字符长度0-256位 
 
         :param reason_describtion: The reason_describtion of this VulRepairFailedDetailInfo.
         :type reason_describtion: str

@@ -49,7 +49,7 @@ class ListPortStatisticsRequest:
         :type enterprise_project_id: str
         :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: 不涉及 
         :type category: str
-        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
         :type sort_dir: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -150,7 +150,7 @@ class ListPortStatisticsRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPortStatisticsRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
 
         :return: The sort_dir of this ListPortStatisticsRequest.
         :rtype: str
@@ -161,7 +161,7 @@ class ListPortStatisticsRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPortStatisticsRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
 
         :param sort_dir: The sort_dir of this ListPortStatisticsRequest.
         :type sort_dir: str

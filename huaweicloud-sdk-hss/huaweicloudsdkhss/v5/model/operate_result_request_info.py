@@ -41,7 +41,7 @@ class OperateResultRequestInfo:
 
         :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        :param result_id: 病毒查杀结果ID
         :type result_id: str
         :param event_type: **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0&#x3D;文件病毒事件、1&#x3D;内存病毒事件...，详见产品错误码/枚举文档） 
         :type event_type: int
@@ -101,7 +101,7 @@ class OperateResultRequestInfo:
     def result_id(self):
         r"""Gets the result_id of this OperateResultRequestInfo.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :return: The result_id of this OperateResultRequestInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class OperateResultRequestInfo:
     def result_id(self, result_id):
         r"""Sets the result_id of this OperateResultRequestInfo.
 
-        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
+        病毒查杀结果ID
 
         :param result_id: The result_id of this OperateResultRequestInfo.
         :type result_id: str

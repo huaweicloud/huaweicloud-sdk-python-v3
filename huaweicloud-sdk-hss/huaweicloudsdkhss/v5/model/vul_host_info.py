@@ -45,7 +45,8 @@ class VulHostInfo:
         'backup_name': 'str',
         'agent_status': 'str',
         'disabled_operate_types': 'list[HostVulInfoDisabledOperateTypes]',
-        'repair_priority': 'str'
+        'repair_priority': 'str',
+        'node_type': 'str'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class VulHostInfo:
         'backup_name': 'backup_name',
         'agent_status': 'agent_status',
         'disabled_operate_types': 'disabled_operate_types',
-        'repair_priority': 'repair_priority'
+        'repair_priority': 'repair_priority',
+        'node_type': 'node_type'
     }
 
-    def __init__(self, host_id=None, agent_id=None, repair_necessity=None, severity_level=None, host_name=None, host_ip=None, cve_num=None, cve_id_list=None, status=None, remark=None, repair_cmd=None, version=None, app_path=None, is_affect_business=None, asset_value=None, private_ip=None, group_name=None, group_id=None, os_type=None, os_name=None, os_version=None, os_kernel=None, host_status=None, first_scan_time=None, scan_time=None, failed_reason=None, support_restore=None, backup_name=None, agent_status=None, disabled_operate_types=None, repair_priority=None):
+    def __init__(self, host_id=None, agent_id=None, repair_necessity=None, severity_level=None, host_name=None, host_ip=None, cve_num=None, cve_id_list=None, status=None, remark=None, repair_cmd=None, version=None, app_path=None, is_affect_business=None, asset_value=None, private_ip=None, group_name=None, group_id=None, os_type=None, os_name=None, os_version=None, os_kernel=None, host_status=None, first_scan_time=None, scan_time=None, failed_reason=None, support_restore=None, backup_name=None, agent_status=None, disabled_operate_types=None, repair_priority=None, node_type=None):
         r"""VulHostInfo
 
         The model defined in huaweicloud sdk
@@ -149,6 +151,8 @@ class VulHostInfo:
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
         :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
         :type repair_priority: str
+        :param node_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+        :type node_type: str
         """
         
         
@@ -184,6 +188,7 @@ class VulHostInfo:
         self._agent_status = None
         self._disabled_operate_types = None
         self._repair_priority = None
+        self._node_type = None
         self.discriminator = None
 
         if host_id is not None:
@@ -248,6 +253,8 @@ class VulHostInfo:
             self.disabled_operate_types = disabled_operate_types
         if repair_priority is not None:
             self.repair_priority = repair_priority
+        if node_type is not None:
+            self.node_type = node_type
 
     @property
     def host_id(self):
@@ -930,6 +937,28 @@ class VulHostInfo:
         :type repair_priority: str
         """
         self._repair_priority = repair_priority
+
+    @property
+    def node_type(self):
+        r"""Gets the node_type of this VulHostInfo.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+
+        :return: The node_type of this VulHostInfo.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        r"""Sets the node_type of this VulHostInfo.
+
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - cce：cce节点 - not_cce：非cce节点 字符长度0-256位 **默认取值**: 不涉及
+
+        :param node_type: The node_type of this VulHostInfo.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     def to_dict(self):
         result = {}

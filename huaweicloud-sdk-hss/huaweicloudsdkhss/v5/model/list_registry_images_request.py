@@ -81,7 +81,7 @@ class ListRegistryImagesRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param namespace: **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。  **默认取值**: 不涉及 
+        :param namespace: **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
         :type namespace: str
         :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type image_name: str
@@ -91,11 +91,11 @@ class ListRegistryImagesRequest:
         :type registry_name: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param image_type: **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。  **默认取值**: 不涉及 
+        :param image_type: **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。 **默认取值**: 不涉及 
         :type image_type: str
         :param sort_key: **参数解释**: 可排序字段 **约束限制**: 不涉及 **取值范围**: - latest_scan_time：最近扫描时间。  **默认取值**: 不涉及 
         :type sort_key: str
-        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
         :type sort_dir: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值1-200 **默认取值**: 10 
         :type limit: int
@@ -247,7 +247,7 @@ class ListRegistryImagesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListRegistryImagesRequest.
 
-        **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。  **默认取值**: 不涉及 
+        **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :return: The namespace of this ListRegistryImagesRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListRegistryImagesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListRegistryImagesRequest.
 
-        **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。  **默认取值**: 不涉及 
+        **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :param namespace: The namespace of this ListRegistryImagesRequest.
         :type namespace: str
@@ -357,7 +357,7 @@ class ListRegistryImagesRequest:
     def image_type(self):
         r"""Gets the image_type of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。  **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。 **默认取值**: 不涉及 
 
         :return: The image_type of this ListRegistryImagesRequest.
         :rtype: str
@@ -368,7 +368,7 @@ class ListRegistryImagesRequest:
     def image_type(self, image_type):
         r"""Sets the image_type of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。  **默认取值**: 不涉及 
+        **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。 **默认取值**: 不涉及 
 
         :param image_type: The image_type of this ListRegistryImagesRequest.
         :type image_type: str
@@ -401,7 +401,7 @@ class ListRegistryImagesRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListRegistryImagesRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
 
         :return: The sort_dir of this ListRegistryImagesRequest.
         :rtype: str
@@ -412,7 +412,7 @@ class ListRegistryImagesRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListRegistryImagesRequest.
 
-        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
 
         :param sort_dir: The sort_dir of this ListRegistryImagesRequest.
         :type sort_dir: str

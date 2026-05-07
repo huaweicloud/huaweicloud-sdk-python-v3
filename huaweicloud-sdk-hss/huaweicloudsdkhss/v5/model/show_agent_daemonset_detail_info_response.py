@@ -22,7 +22,8 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
         'cluster_status': 'str',
         'ds_info': 'DaemonsetYamlResponseInfoDsInfo',
         'installed_status': 'str',
-        'schedule_info': 'CreateDaemonsetRequestBodyScheduleInfo'
+        'schedule_info': 'CreateDaemonsetRequestBodyScheduleInfo',
+        'resource_info': 'DaemonsetYamlResponseInfoResourceInfo'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
         'cluster_status': 'cluster_status',
         'ds_info': 'ds_info',
         'installed_status': 'installed_status',
-        'schedule_info': 'schedule_info'
+        'schedule_info': 'schedule_info',
+        'resource_info': 'resource_info'
     }
 
-    def __init__(self, yaml_content=None, node_num=None, runtime_info=None, cluster_status=None, ds_info=None, installed_status=None, schedule_info=None):
+    def __init__(self, yaml_content=None, node_num=None, runtime_info=None, cluster_status=None, ds_info=None, installed_status=None, schedule_info=None, resource_info=None):
         r"""ShowAgentDaemonsetDetailInfoResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
         :type installed_status: str
         :param schedule_info: 
         :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
+        :param resource_info: 
+        :type resource_info: :class:`huaweicloudsdkhss.v5.DaemonsetYamlResponseInfoResourceInfo`
         """
         
         super().__init__()
@@ -65,6 +69,7 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
         self._ds_info = None
         self._installed_status = None
         self._schedule_info = None
+        self._resource_info = None
         self.discriminator = None
 
         if yaml_content is not None:
@@ -81,6 +86,8 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
             self.installed_status = installed_status
         if schedule_info is not None:
             self.schedule_info = schedule_info
+        if resource_info is not None:
+            self.resource_info = resource_info
 
     @property
     def yaml_content(self):
@@ -227,6 +234,24 @@ class ShowAgentDaemonsetDetailInfoResponse(SdkResponse):
         :type schedule_info: :class:`huaweicloudsdkhss.v5.CreateDaemonsetRequestBodyScheduleInfo`
         """
         self._schedule_info = schedule_info
+
+    @property
+    def resource_info(self):
+        r"""Gets the resource_info of this ShowAgentDaemonsetDetailInfoResponse.
+
+        :return: The resource_info of this ShowAgentDaemonsetDetailInfoResponse.
+        :rtype: :class:`huaweicloudsdkhss.v5.DaemonsetYamlResponseInfoResourceInfo`
+        """
+        return self._resource_info
+
+    @resource_info.setter
+    def resource_info(self, resource_info):
+        r"""Sets the resource_info of this ShowAgentDaemonsetDetailInfoResponse.
+
+        :param resource_info: The resource_info of this ShowAgentDaemonsetDetailInfoResponse.
+        :type resource_info: :class:`huaweicloudsdkhss.v5.DaemonsetYamlResponseInfoResourceInfo`
+        """
+        self._resource_info = resource_info
 
     def to_dict(self):
         import warnings

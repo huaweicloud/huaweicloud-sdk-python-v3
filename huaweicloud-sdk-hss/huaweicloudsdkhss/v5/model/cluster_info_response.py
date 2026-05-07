@@ -30,7 +30,8 @@ class ClusterInfoResponse:
         'failed_message': 'str',
         'cluster_log_status': 'str',
         'invoked_service': 'str',
-        'registry_info': 'ClusterInfoResponseRegistryInfo'
+        'registry_info': 'ClusterInfoResponseRegistryInfo',
+        'resource_info': 'ClusterInfoResponseResourceInfo'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ClusterInfoResponse:
         'failed_message': 'failed_message',
         'cluster_log_status': 'cluster_log_status',
         'invoked_service': 'invoked_service',
-        'registry_info': 'registry_info'
+        'registry_info': 'registry_info',
+        'resource_info': 'resource_info'
     }
 
-    def __init__(self, latest_version=None, agent_version=None, cluster_name=None, cluster_id=None, namespace=None, cluster_type=None, node_num=None, ds_info=None, cluster_status=None, installed_status=None, access_status=None, combined_status=None, failed_message=None, cluster_log_status=None, invoked_service=None, registry_info=None):
+    def __init__(self, latest_version=None, agent_version=None, cluster_name=None, cluster_id=None, namespace=None, cluster_type=None, node_num=None, ds_info=None, cluster_status=None, installed_status=None, access_status=None, combined_status=None, failed_message=None, cluster_log_status=None, invoked_service=None, registry_info=None, resource_info=None):
         r"""ClusterInfoResponse
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class ClusterInfoResponse:
         :type invoked_service: str
         :param registry_info: 
         :type registry_info: :class:`huaweicloudsdkhss.v5.ClusterInfoResponseRegistryInfo`
+        :param resource_info: 
+        :type resource_info: :class:`huaweicloudsdkhss.v5.ClusterInfoResponseResourceInfo`
         """
         
         
@@ -109,6 +113,7 @@ class ClusterInfoResponse:
         self._cluster_log_status = None
         self._invoked_service = None
         self._registry_info = None
+        self._resource_info = None
         self.discriminator = None
 
         if latest_version is not None:
@@ -143,6 +148,8 @@ class ClusterInfoResponse:
             self.invoked_service = invoked_service
         if registry_info is not None:
             self.registry_info = registry_info
+        if resource_info is not None:
+            self.resource_info = resource_info
 
     @property
     def latest_version(self):
@@ -487,6 +494,24 @@ class ClusterInfoResponse:
         :type registry_info: :class:`huaweicloudsdkhss.v5.ClusterInfoResponseRegistryInfo`
         """
         self._registry_info = registry_info
+
+    @property
+    def resource_info(self):
+        r"""Gets the resource_info of this ClusterInfoResponse.
+
+        :return: The resource_info of this ClusterInfoResponse.
+        :rtype: :class:`huaweicloudsdkhss.v5.ClusterInfoResponseResourceInfo`
+        """
+        return self._resource_info
+
+    @resource_info.setter
+    def resource_info(self, resource_info):
+        r"""Sets the resource_info of this ClusterInfoResponse.
+
+        :param resource_info: The resource_info of this ClusterInfoResponse.
+        :type resource_info: :class:`huaweicloudsdkhss.v5.ClusterInfoResponseResourceInfo`
+        """
+        self._resource_info = resource_info
 
     def to_dict(self):
         result = {}

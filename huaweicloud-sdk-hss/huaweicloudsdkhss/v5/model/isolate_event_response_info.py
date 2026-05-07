@@ -131,7 +131,7 @@ class IsolateEventResponseInfo:
         :type event_type: int
         :param event_name: **参数解释**： 事件名称 **取值范围**： 字符长度1-256位 
         :type event_name: str
-        :param severity: **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        :param severity: 威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
         :type severity: str
         :param container_name: **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
         :type container_name: str
@@ -467,7 +467,7 @@ class IsolateEventResponseInfo:
     def severity(self):
         r"""Gets the severity of this IsolateEventResponseInfo.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :return: The severity of this IsolateEventResponseInfo.
         :rtype: str
@@ -478,7 +478,7 @@ class IsolateEventResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this IsolateEventResponseInfo.
 
-        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
+        威胁等级，包含如下:   - Security：安全   - Low: 低危   - Medium: 中危   - High: 高危   - Critical: 危急
 
         :param severity: The severity of this IsolateEventResponseInfo.
         :type severity: str

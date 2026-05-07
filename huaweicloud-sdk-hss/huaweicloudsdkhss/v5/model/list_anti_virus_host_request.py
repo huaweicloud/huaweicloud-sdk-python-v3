@@ -51,11 +51,11 @@ class ListAntiVirusHostRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
         :type offset: int
-        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -138,7 +138,7 @@ class ListAntiVirusHostRequest:
     def offset(self):
         r"""Gets the offset of this ListAntiVirusHostRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :return: The offset of this ListAntiVirusHostRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListAntiVirusHostRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAntiVirusHostRequest.
 
-        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 必填 **取值范围**: 最小值0，最大值2000000 **默认取值**: 0 
 
         :param offset: The offset of this ListAntiVirusHostRequest.
         :type offset: int
@@ -160,7 +160,7 @@ class ListAntiVirusHostRequest:
     def limit(self):
         r"""Gets the limit of this ListAntiVirusHostRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListAntiVirusHostRequest.
         :rtype: int
@@ -171,7 +171,7 @@ class ListAntiVirusHostRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAntiVirusHostRequest.
 
-        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        **参数解释**: 每页显示个数 **约束限制**: 必填 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListAntiVirusHostRequest.
         :type limit: int
@@ -182,7 +182,7 @@ class ListAntiVirusHostRequest:
     def host_id(self):
         r"""Gets the host_id of this ListAntiVirusHostRequest.
 
-        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListAntiVirusHostRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ListAntiVirusHostRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListAntiVirusHostRequest.
 
-        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListAntiVirusHostRequest.
         :type host_id: str

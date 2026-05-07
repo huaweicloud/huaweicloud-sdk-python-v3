@@ -139,7 +139,7 @@ class ProcessEventResourceResponseInfo:
         :type namespace: str
         :param cluster_id: 集群ID
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**: 集群名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type cluster_name: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
@@ -825,7 +825,7 @@ class ProcessEventResourceResponseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this ProcessEventResourceResponseInfo.
 
-        集群名称
+        **参数解释**: 集群名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The cluster_name of this ProcessEventResourceResponseInfo.
         :rtype: str
@@ -836,7 +836,7 @@ class ProcessEventResourceResponseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ProcessEventResourceResponseInfo.
 
-        集群名称
+        **参数解释**: 集群名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param cluster_name: The cluster_name of this ProcessEventResourceResponseInfo.
         :type cluster_name: str

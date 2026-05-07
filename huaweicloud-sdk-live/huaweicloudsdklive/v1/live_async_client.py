@@ -3464,6 +3464,71 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def modify_domain_stream_backup_async(self, request):
+        r"""设置域名主备流功能开关
+
+        设置域名主备流功能开关，可支持同一路流推多个，按照先后顺序定优先级，客户可进行流优先级切换
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyDomainStreamBackup
+        :type request: :class:`huaweicloudsdklive.v1.ModifyDomainStreamBackupRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ModifyDomainStreamBackupResponse`
+        """
+        http_info = self._modify_domain_stream_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_domain_stream_backup_async_invoker(self, request):
+        http_info = self._modify_domain_stream_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_domain_stream_backup_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/stream-backup",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyDomainStreamBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_flow_output_async(self, request):
         r"""更新转推输出
 
@@ -4034,6 +4099,71 @@ class LiveAsyncClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_stream_backup_async(self, request):
+        r"""查询域名主备流功能开关
+
+        查询域名主备流功能开关，可支持同一路流推多个，按照先后顺序定优先级，客户可进行流优先级切换
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainStreamBackup
+        :type request: :class:`huaweicloudsdklive.v1.ShowDomainStreamBackupRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowDomainStreamBackupResponse`
+        """
+        http_info = self._show_domain_stream_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_stream_backup_async_invoker(self, request):
+        http_info = self._show_domain_stream_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_stream_backup_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/stream-backup",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainStreamBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
 
         header_params = {}
 
