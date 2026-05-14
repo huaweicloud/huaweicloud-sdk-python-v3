@@ -25,7 +25,9 @@ class SrcNodeReq:
         'app_id': 'str',
         'bucket': 'str',
         'object_key': 'list[str]',
-        'list_file': 'ListFile'
+        'list_file': 'ListFile',
+        'crypto_type': 'str',
+        'kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class SrcNodeReq:
         'app_id': 'app_id',
         'bucket': 'bucket',
         'object_key': 'object_key',
-        'list_file': 'list_file'
+        'list_file': 'list_file',
+        'crypto_type': 'crypto_type',
+        'kms_key_id': 'kms_key_id'
     }
 
-    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, connection_string=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
+    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, connection_string=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None, crypto_type=None, kms_key_id=None):
         r"""SrcNodeReq
 
         The model defined in huaweicloud sdk
@@ -69,6 +73,10 @@ class SrcNodeReq:
         :type object_key: list[str]
         :param list_file: 
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
+        :param crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type crypto_type: str
+        :param kms_key_id: KMS密钥ID，36个字符
+        :type kms_key_id: str
         """
         
         
@@ -84,6 +92,8 @@ class SrcNodeReq:
         self._bucket = None
         self._object_key = None
         self._list_file = None
+        self._crypto_type = None
+        self._kms_key_id = None
         self.discriminator = None
 
         if cloud_type is not None:
@@ -108,6 +118,10 @@ class SrcNodeReq:
             self.object_key = object_key
         if list_file is not None:
             self.list_file = list_file
+        if crypto_type is not None:
+            self.crypto_type = crypto_type
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
 
     @property
     def cloud_type(self):
@@ -346,6 +360,50 @@ class SrcNodeReq:
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`
         """
         self._list_file = list_file
+
+    @property
+    def crypto_type(self):
+        r"""Gets the crypto_type of this SrcNodeReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The crypto_type of this SrcNodeReq.
+        :rtype: str
+        """
+        return self._crypto_type
+
+    @crypto_type.setter
+    def crypto_type(self, crypto_type):
+        r"""Sets the crypto_type of this SrcNodeReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param crypto_type: The crypto_type of this SrcNodeReq.
+        :type crypto_type: str
+        """
+        self._crypto_type = crypto_type
+
+    @property
+    def kms_key_id(self):
+        r"""Gets the kms_key_id of this SrcNodeReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The kms_key_id of this SrcNodeReq.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        r"""Sets the kms_key_id of this SrcNodeReq.
+
+        KMS密钥ID，36个字符
+
+        :param kms_key_id: The kms_key_id of this SrcNodeReq.
+        :type kms_key_id: str
+        """
+        self._kms_key_id = kms_key_id
 
     def to_dict(self):
         result = {}

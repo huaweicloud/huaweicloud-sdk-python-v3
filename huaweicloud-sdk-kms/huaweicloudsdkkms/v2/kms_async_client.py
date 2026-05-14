@@ -1615,6 +1615,71 @@ class KmsAsyncClient(Client):
 
         return http_info
 
+    def derive_shared_secret_async(self, request):
+        r"""派生共享密钥
+
+        功能介绍：派生共享密钥
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeriveSharedSecret
+        :type request: :class:`huaweicloudsdkkms.v2.DeriveSharedSecretRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeriveSharedSecretResponse`
+        """
+        http_info = self._derive_shared_secret_http_info(request)
+        return self._call_api(**http_info)
+
+    def derive_shared_secret_async_invoker(self, request):
+        http_info = self._derive_shared_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _derive_shared_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/derive-shared-secret",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeriveSharedSecretResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disable_key_async(self, request):
         r"""禁用密钥
 
@@ -2849,6 +2914,73 @@ class KmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def re_encrypt_async(self, request):
+        r"""重加密
+
+        将密文使用源密钥解密后，再使用指定的新密钥加密。
+        能将CreateDatekey，CreateDatakeyWithoutPlainText,EncryptDatakey加密的数据密钥密文重新加密成新的数据密钥密文。
+        能将EncryptData加密的密文重新加密成新的密文。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ReEncrypt
+        :type request: :class:`huaweicloudsdkkms.v2.ReEncryptRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ReEncryptResponse`
+        """
+        http_info = self._re_encrypt_http_info(request)
+        return self._call_api(**http_info)
+
+    def re_encrypt_async_invoker(self, request):
+        http_info = self._re_encrypt_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _re_encrypt_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/re-encrypt",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReEncryptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

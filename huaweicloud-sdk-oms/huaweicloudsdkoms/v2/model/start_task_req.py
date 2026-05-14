@@ -18,12 +18,18 @@ class StartTaskReq:
         'src_ak': 'str',
         'src_sk': 'str',
         'connection_string': 'str',
+        'src_crypto_type': 'str',
+        'src_kms_key_id': 'str',
         'json_auth_file': 'str',
         'src_security_token': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
+        'dst_crypto_type': 'str',
+        'dst_kms_key_id': 'str',
         'dst_security_token': 'str',
         'source_cdn_authentication_key': 'str',
+        'source_cdn_crypto_type': 'str',
+        'source_cdn_kms_key_id': 'str',
         'migrate_failed_object': 'bool'
     }
 
@@ -31,16 +37,22 @@ class StartTaskReq:
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
         'connection_string': 'connection_string',
+        'src_crypto_type': 'src_crypto_type',
+        'src_kms_key_id': 'src_kms_key_id',
         'json_auth_file': 'json_auth_file',
         'src_security_token': 'src_security_token',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
+        'dst_crypto_type': 'dst_crypto_type',
+        'dst_kms_key_id': 'dst_kms_key_id',
         'dst_security_token': 'dst_security_token',
         'source_cdn_authentication_key': 'source_cdn_authentication_key',
+        'source_cdn_crypto_type': 'source_cdn_crypto_type',
+        'source_cdn_kms_key_id': 'source_cdn_kms_key_id',
         'migrate_failed_object': 'migrate_failed_object'
     }
 
-    def __init__(self, src_ak=None, src_sk=None, connection_string=None, json_auth_file=None, src_security_token=None, dst_ak=None, dst_sk=None, dst_security_token=None, source_cdn_authentication_key=None, migrate_failed_object=None):
+    def __init__(self, src_ak=None, src_sk=None, connection_string=None, src_crypto_type=None, src_kms_key_id=None, json_auth_file=None, src_security_token=None, dst_ak=None, dst_sk=None, dst_crypto_type=None, dst_kms_key_id=None, dst_security_token=None, source_cdn_authentication_key=None, source_cdn_crypto_type=None, source_cdn_kms_key_id=None, migrate_failed_object=None):
         r"""StartTaskReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +63,10 @@ class StartTaskReq:
         :type src_sk: str
         :param connection_string: 连接字符串，用于微软云Blob鉴权
         :type connection_string: str
+        :param src_crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type src_crypto_type: str
+        :param src_kms_key_id: KMS密钥ID，36个字符
+        :type src_kms_key_id: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param src_security_token: 源端节点临时Token
@@ -59,10 +75,18 @@ class StartTaskReq:
         :type dst_ak: str
         :param dst_sk: 目的端节点SK（最大长度100个字符）。
         :type dst_sk: str
+        :param dst_crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type dst_crypto_type: str
+        :param dst_kms_key_id: KMS密钥ID，36个字符
+        :type dst_kms_key_id: str
         :param dst_security_token: 目标端节点临时Token
         :type dst_security_token: str
         :param source_cdn_authentication_key: CDN鉴权密钥。
         :type source_cdn_authentication_key: str
+        :param source_cdn_crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type source_cdn_crypto_type: str
+        :param source_cdn_kms_key_id: KMS密钥ID，36个字符
+        :type source_cdn_kms_key_id: str
         :param migrate_failed_object: 迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
         :type migrate_failed_object: bool
         """
@@ -72,12 +96,18 @@ class StartTaskReq:
         self._src_ak = None
         self._src_sk = None
         self._connection_string = None
+        self._src_crypto_type = None
+        self._src_kms_key_id = None
         self._json_auth_file = None
         self._src_security_token = None
         self._dst_ak = None
         self._dst_sk = None
+        self._dst_crypto_type = None
+        self._dst_kms_key_id = None
         self._dst_security_token = None
         self._source_cdn_authentication_key = None
+        self._source_cdn_crypto_type = None
+        self._source_cdn_kms_key_id = None
         self._migrate_failed_object = None
         self.discriminator = None
 
@@ -87,16 +117,28 @@ class StartTaskReq:
             self.src_sk = src_sk
         if connection_string is not None:
             self.connection_string = connection_string
+        if src_crypto_type is not None:
+            self.src_crypto_type = src_crypto_type
+        if src_kms_key_id is not None:
+            self.src_kms_key_id = src_kms_key_id
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         if src_security_token is not None:
             self.src_security_token = src_security_token
         self.dst_ak = dst_ak
         self.dst_sk = dst_sk
+        if dst_crypto_type is not None:
+            self.dst_crypto_type = dst_crypto_type
+        if dst_kms_key_id is not None:
+            self.dst_kms_key_id = dst_kms_key_id
         if dst_security_token is not None:
             self.dst_security_token = dst_security_token
         if source_cdn_authentication_key is not None:
             self.source_cdn_authentication_key = source_cdn_authentication_key
+        if source_cdn_crypto_type is not None:
+            self.source_cdn_crypto_type = source_cdn_crypto_type
+        if source_cdn_kms_key_id is not None:
+            self.source_cdn_kms_key_id = source_cdn_kms_key_id
         if migrate_failed_object is not None:
             self.migrate_failed_object = migrate_failed_object
 
@@ -165,6 +207,50 @@ class StartTaskReq:
         :type connection_string: str
         """
         self._connection_string = connection_string
+
+    @property
+    def src_crypto_type(self):
+        r"""Gets the src_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The src_crypto_type of this StartTaskReq.
+        :rtype: str
+        """
+        return self._src_crypto_type
+
+    @src_crypto_type.setter
+    def src_crypto_type(self, src_crypto_type):
+        r"""Sets the src_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param src_crypto_type: The src_crypto_type of this StartTaskReq.
+        :type src_crypto_type: str
+        """
+        self._src_crypto_type = src_crypto_type
+
+    @property
+    def src_kms_key_id(self):
+        r"""Gets the src_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The src_kms_key_id of this StartTaskReq.
+        :rtype: str
+        """
+        return self._src_kms_key_id
+
+    @src_kms_key_id.setter
+    def src_kms_key_id(self, src_kms_key_id):
+        r"""Sets the src_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :param src_kms_key_id: The src_kms_key_id of this StartTaskReq.
+        :type src_kms_key_id: str
+        """
+        self._src_kms_key_id = src_kms_key_id
 
     @property
     def json_auth_file(self):
@@ -255,6 +341,50 @@ class StartTaskReq:
         self._dst_sk = dst_sk
 
     @property
+    def dst_crypto_type(self):
+        r"""Gets the dst_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The dst_crypto_type of this StartTaskReq.
+        :rtype: str
+        """
+        return self._dst_crypto_type
+
+    @dst_crypto_type.setter
+    def dst_crypto_type(self, dst_crypto_type):
+        r"""Sets the dst_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param dst_crypto_type: The dst_crypto_type of this StartTaskReq.
+        :type dst_crypto_type: str
+        """
+        self._dst_crypto_type = dst_crypto_type
+
+    @property
+    def dst_kms_key_id(self):
+        r"""Gets the dst_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The dst_kms_key_id of this StartTaskReq.
+        :rtype: str
+        """
+        return self._dst_kms_key_id
+
+    @dst_kms_key_id.setter
+    def dst_kms_key_id(self, dst_kms_key_id):
+        r"""Sets the dst_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :param dst_kms_key_id: The dst_kms_key_id of this StartTaskReq.
+        :type dst_kms_key_id: str
+        """
+        self._dst_kms_key_id = dst_kms_key_id
+
+    @property
     def dst_security_token(self):
         r"""Gets the dst_security_token of this StartTaskReq.
 
@@ -297,6 +427,50 @@ class StartTaskReq:
         :type source_cdn_authentication_key: str
         """
         self._source_cdn_authentication_key = source_cdn_authentication_key
+
+    @property
+    def source_cdn_crypto_type(self):
+        r"""Gets the source_cdn_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The source_cdn_crypto_type of this StartTaskReq.
+        :rtype: str
+        """
+        return self._source_cdn_crypto_type
+
+    @source_cdn_crypto_type.setter
+    def source_cdn_crypto_type(self, source_cdn_crypto_type):
+        r"""Sets the source_cdn_crypto_type of this StartTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param source_cdn_crypto_type: The source_cdn_crypto_type of this StartTaskReq.
+        :type source_cdn_crypto_type: str
+        """
+        self._source_cdn_crypto_type = source_cdn_crypto_type
+
+    @property
+    def source_cdn_kms_key_id(self):
+        r"""Gets the source_cdn_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The source_cdn_kms_key_id of this StartTaskReq.
+        :rtype: str
+        """
+        return self._source_cdn_kms_key_id
+
+    @source_cdn_kms_key_id.setter
+    def source_cdn_kms_key_id(self, source_cdn_kms_key_id):
+        r"""Sets the source_cdn_kms_key_id of this StartTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :param source_cdn_kms_key_id: The source_cdn_kms_key_id of this StartTaskReq.
+        :type source_cdn_kms_key_id: str
+        """
+        self._source_cdn_kms_key_id = source_cdn_kms_key_id
 
     @property
     def migrate_failed_object(self):

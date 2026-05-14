@@ -43,8 +43,7 @@ class ModifyElbVipOpenReq:
 
         if group_id is not None:
             self.group_id = group_id
-        if new_ip is not None:
-            self.new_ip = new_ip
+        self.new_ip = new_ip
 
     @property
     def group_id(self):

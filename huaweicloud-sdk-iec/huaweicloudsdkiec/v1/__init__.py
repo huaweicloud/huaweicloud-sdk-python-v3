@@ -21,6 +21,10 @@ from huaweicloudsdkiec.v1.model.bandwidth_config import BandwidthConfig
 from huaweicloudsdkiec.v1.model.bandwidth_config_instance import BandwidthConfigInstance
 from huaweicloudsdkiec.v1.model.bandwidth_type_option import BandwidthTypeOption
 from huaweicloudsdkiec.v1.model.base_id import BaseId
+from huaweicloudsdkiec.v1.model.batch_list_metric_data_request import BatchListMetricDataRequest
+from huaweicloudsdkiec.v1.model.batch_list_metric_data_request_body import BatchListMetricDataRequestBody
+from huaweicloudsdkiec.v1.model.batch_list_metric_data_response import BatchListMetricDataResponse
+from huaweicloudsdkiec.v1.model.batch_metric_data import BatchMetricData
 from huaweicloudsdkiec.v1.model.batch_reboot import BatchReboot
 from huaweicloudsdkiec.v1.model.batch_reboot_instance_request import BatchRebootInstanceRequest
 from huaweicloudsdkiec.v1.model.batch_reboot_instance_request_body import BatchRebootInstanceRequestBody
@@ -94,6 +98,7 @@ from huaweicloudsdkiec.v1.model.create_vpc_request import CreateVpcRequest
 from huaweicloudsdkiec.v1.model.create_vpc_request_body import CreateVpcRequestBody
 from huaweicloudsdkiec.v1.model.create_vpc_response import CreateVpcResponse
 from huaweicloudsdkiec.v1.model.data_volume import DataVolume
+from huaweicloudsdkiec.v1.model.datapoint_for_batch_metric import DatapointForBatchMetric
 from huaweicloudsdkiec.v1.model.delete_bandwidth_request import DeleteBandwidthRequest
 from huaweicloudsdkiec.v1.model.delete_bandwidth_response import DeleteBandwidthResponse
 from huaweicloudsdkiec.v1.model.delete_deployment_request import DeleteDeploymentRequest
@@ -216,6 +221,8 @@ from huaweicloudsdkiec.v1.model.list_volume_response import ListVolumeResponse
 from huaweicloudsdkiec.v1.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkiec.v1.model.list_vpcs_response import ListVpcsResponse
 from huaweicloudsdkiec.v1.model.location import Location
+from huaweicloudsdkiec.v1.model.metric_info import MetricInfo
+from huaweicloudsdkiec.v1.model.metrics_dimension import MetricsDimension
 from huaweicloudsdkiec.v1.model.net_config import NetConfig
 from huaweicloudsdkiec.v1.model.net_config_instance import NetConfigInstance
 from huaweicloudsdkiec.v1.model.nic_id import NicId

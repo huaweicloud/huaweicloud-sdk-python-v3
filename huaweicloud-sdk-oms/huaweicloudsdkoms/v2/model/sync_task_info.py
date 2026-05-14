@@ -25,7 +25,6 @@ class SyncTaskInfo:
         'dst_region': 'str',
         'description': 'str',
         'status': 'str',
-        'enable_kms': 'bool',
         'enable_metadata_migration': 'bool',
         'enable_restore': 'bool',
         'app_id': 'str',
@@ -46,7 +45,6 @@ class SyncTaskInfo:
         'dst_region': 'dst_region',
         'description': 'description',
         'status': 'status',
-        'enable_kms': 'enable_kms',
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_restore': 'enable_restore',
         'app_id': 'app_id',
@@ -56,7 +54,7 @@ class SyncTaskInfo:
         'consistency_check': 'consistency_check'
     }
 
-    def __init__(self, sync_task_id=None, src_cloud_type=None, src_region=None, src_bucket=None, create_time=None, last_start_time=None, dst_bucket=None, dst_region=None, description=None, status=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, app_id=None, source_cdn=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None):
+    def __init__(self, sync_task_id=None, src_cloud_type=None, src_region=None, src_bucket=None, create_time=None, last_start_time=None, dst_bucket=None, dst_region=None, description=None, status=None, enable_metadata_migration=None, enable_restore=None, app_id=None, source_cdn=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None):
         r"""SyncTaskInfo
 
         The model defined in huaweicloud sdk
@@ -81,8 +79,6 @@ class SyncTaskInfo:
         :type description: str
         :param status: 同步任务状态 SYNCHRONIZING：同步中 STOPPED：已停止
         :type status: str
-        :param enable_kms: 是否开启KMS加密，默认不开启。
-        :type enable_kms: bool
         :param enable_metadata_migration: 是否启用元数据迁移，默认否。不启用时，为保证迁移任务正常运行，仍将为您迁移ContentType元数据。
         :type enable_metadata_migration: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
@@ -111,7 +107,6 @@ class SyncTaskInfo:
         self._dst_region = None
         self._description = None
         self._status = None
-        self._enable_kms = None
         self._enable_metadata_migration = None
         self._enable_restore = None
         self._app_id = None
@@ -141,8 +136,6 @@ class SyncTaskInfo:
             self.description = description
         if status is not None:
             self.status = status
-        if enable_kms is not None:
-            self.enable_kms = enable_kms
         if enable_metadata_migration is not None:
             self.enable_metadata_migration = enable_metadata_migration
         if enable_restore is not None:
@@ -377,28 +370,6 @@ class SyncTaskInfo:
         :type status: str
         """
         self._status = status
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this SyncTaskInfo.
-
-        是否开启KMS加密，默认不开启。
-
-        :return: The enable_kms of this SyncTaskInfo.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this SyncTaskInfo.
-
-        是否开启KMS加密，默认不开启。
-
-        :param enable_kms: The enable_kms of this SyncTaskInfo.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def enable_metadata_migration(self):

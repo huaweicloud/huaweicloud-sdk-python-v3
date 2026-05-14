@@ -50,8 +50,7 @@ class ParaGroupUpdate:
             self.name = name
         if description is not None:
             self.description = description
-        if values is not None:
-            self.values = values
+        self.values = values
 
     @property
     def name(self):

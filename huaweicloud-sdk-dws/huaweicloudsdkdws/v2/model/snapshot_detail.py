@@ -123,11 +123,11 @@ class SnapshotDetail:
         :type db_user: str
         :param progress: **参数解释**： 快照进度。 **取值范围**： 不涉及。
         :type progress: str
-        :param backup_key: **参数解释**： 快照BakcupKey。 **取值范围**： 不涉及。
+        :param backup_key: **参数解释**： 快照的key，在其它快照中会用到。 **取值范围**： 不涉及。
         :type backup_key: str
-        :param prior_backup_key: **参数解释**： 增量快照，使用的前一个快照BakcupKey。 **取值范围**： 不涉及。
+        :param prior_backup_key: **参数解释**： 增量快照，使用的前一个快照backup_key。 **取值范围**： 不涉及。
         :type prior_backup_key: str
-        :param base_backup_key: **参数解释**： 对应全量快照BakcupKey。 **取值范围**： 不涉及。
+        :param base_backup_key: **参数解释**： 对应全量快照backup_key。 **取值范围**： 不涉及。
         :type base_backup_key: str
         :param backup_device: **参数解释**： 备份介质。 **取值范围**： NBU、OBS。
         :type backup_device: str
@@ -621,7 +621,7 @@ class SnapshotDetail:
     def backup_key(self):
         r"""Gets the backup_key of this SnapshotDetail.
 
-        **参数解释**： 快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 快照的key，在其它快照中会用到。 **取值范围**： 不涉及。
 
         :return: The backup_key of this SnapshotDetail.
         :rtype: str
@@ -632,7 +632,7 @@ class SnapshotDetail:
     def backup_key(self, backup_key):
         r"""Sets the backup_key of this SnapshotDetail.
 
-        **参数解释**： 快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 快照的key，在其它快照中会用到。 **取值范围**： 不涉及。
 
         :param backup_key: The backup_key of this SnapshotDetail.
         :type backup_key: str
@@ -643,7 +643,7 @@ class SnapshotDetail:
     def prior_backup_key(self):
         r"""Gets the prior_backup_key of this SnapshotDetail.
 
-        **参数解释**： 增量快照，使用的前一个快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 增量快照，使用的前一个快照backup_key。 **取值范围**： 不涉及。
 
         :return: The prior_backup_key of this SnapshotDetail.
         :rtype: str
@@ -654,7 +654,7 @@ class SnapshotDetail:
     def prior_backup_key(self, prior_backup_key):
         r"""Sets the prior_backup_key of this SnapshotDetail.
 
-        **参数解释**： 增量快照，使用的前一个快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 增量快照，使用的前一个快照backup_key。 **取值范围**： 不涉及。
 
         :param prior_backup_key: The prior_backup_key of this SnapshotDetail.
         :type prior_backup_key: str
@@ -665,7 +665,7 @@ class SnapshotDetail:
     def base_backup_key(self):
         r"""Gets the base_backup_key of this SnapshotDetail.
 
-        **参数解释**： 对应全量快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 对应全量快照backup_key。 **取值范围**： 不涉及。
 
         :return: The base_backup_key of this SnapshotDetail.
         :rtype: str
@@ -676,7 +676,7 @@ class SnapshotDetail:
     def base_backup_key(self, base_backup_key):
         r"""Sets the base_backup_key of this SnapshotDetail.
 
-        **参数解释**： 对应全量快照BakcupKey。 **取值范围**： 不涉及。
+        **参数解释**： 对应全量快照backup_key。 **取值范围**： 不涉及。
 
         :param base_backup_key: The base_backup_key of this SnapshotDetail.
         :type base_backup_key: str

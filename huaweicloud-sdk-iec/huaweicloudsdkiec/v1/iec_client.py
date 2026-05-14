@@ -5895,6 +5895,71 @@ class IecClient(Client):
 
         return http_info
 
+    def batch_list_metric_data(self, request):
+        r"""批量查询监控数据
+
+        批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持500指标的批量查询。接口会按预估点数3000自适应查询起始时间，规则为\&quot;指标数量*(to-from)/监控周期&lt;&#x3D;3000\&quot;，若超出阈值，会自动调整from以满足规则。比如原始数据按1min点周期预估，查询500指标超过6min范围的数据，查询起始时间会自动调整from&#x3D;to-6min。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListMetricData
+        :type request: :class:`huaweicloudsdkiec.v1.BatchListMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkiec.v1.BatchListMetricDataResponse`
+        """
+        http_info = self._batch_list_metric_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_list_metric_data_invoker(self, request):
+        http_info = self._batch_list_metric_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_list_metric_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/batch-query-metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListMetricDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def attach_vip_bandwidth(self, request):
         r"""端口绑定带宽
 

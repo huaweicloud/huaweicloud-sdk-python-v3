@@ -125,9 +125,9 @@ class Snapshots:
         :type progress: str
         :param backup_key: **参数解释**： 备份产生的Key。 **取值范围**： 不涉及。
         :type backup_key: str
-        :param prior_backup_key: **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+        :param prior_backup_key: **参数解释**： 增量快照使用前一个快照的backup_key。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
         :type prior_backup_key: str
-        :param base_backup_key: **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+        :param base_backup_key: **参数解释**： 对应全量快照的backup_key。 **取值范围**： 不涉及。
         :type base_backup_key: str
         :param backup_device: **参数解释**： 备份介质。 **取值范围**： 不涉及。
         :type backup_device: str
@@ -643,7 +643,7 @@ class Snapshots:
     def prior_backup_key(self):
         r"""Gets the prior_backup_key of this Snapshots.
 
-        **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+        **参数解释**： 增量快照使用前一个快照的backup_key。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
 
         :return: The prior_backup_key of this Snapshots.
         :rtype: str
@@ -654,7 +654,7 @@ class Snapshots:
     def prior_backup_key(self, prior_backup_key):
         r"""Sets the prior_backup_key of this Snapshots.
 
-        **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+        **参数解释**： 增量快照使用前一个快照的backup_key。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
 
         :param prior_backup_key: The prior_backup_key of this Snapshots.
         :type prior_backup_key: str
@@ -665,7 +665,7 @@ class Snapshots:
     def base_backup_key(self):
         r"""Gets the base_backup_key of this Snapshots.
 
-        **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+        **参数解释**： 对应全量快照的backup_key。 **取值范围**： 不涉及。
 
         :return: The base_backup_key of this Snapshots.
         :rtype: str
@@ -676,7 +676,7 @@ class Snapshots:
     def base_backup_key(self, base_backup_key):
         r"""Sets the base_backup_key of this Snapshots.
 
-        **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+        **参数解释**： 对应全量快照的backup_key。 **取值范围**： 不涉及。
 
         :param base_backup_key: The base_backup_key of this Snapshots.
         :type base_backup_key: str

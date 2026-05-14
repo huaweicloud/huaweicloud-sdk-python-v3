@@ -144,7 +144,6 @@ from huaweicloudsdkddm.v1.model.get_users_listdatabase import GetUsersListdataba
 from huaweicloudsdkddm.v1.model.get_users_listdatabase_v3 import GetUsersListdatabaseV3
 from huaweicloudsdkddm.v1.model.group_info import GroupInfo
 from huaweicloudsdkddm.v1.model.group_node_info import GroupNodeInfo
-from huaweicloudsdkddm.v1.model.iam_account import IamAccount
 from huaweicloudsdkddm.v1.model.instance import Instance
 from huaweicloudsdkddm.v1.model.instance_detail import InstanceDetail
 from huaweicloudsdkddm.v1.model.ip_group_item import IpGroupItem
@@ -347,6 +346,8 @@ from huaweicloudsdkddm.v1.model.task_logs_vo import TaskLogsVO
 from huaweicloudsdkddm.v1.model.tmlog_info import TmlogInfo
 from huaweicloudsdkddm.v1.model.unbind_eip_request import UnbindEipRequest
 from huaweicloudsdkddm.v1.model.unbind_eip_response import UnbindEipResponse
+from huaweicloudsdkddm.v1.model.unbind_logic_db_request import UnbindLogicDbRequest
+from huaweicloudsdkddm.v1.model.unbind_logic_db_response import UnbindLogicDbResponse
 from huaweicloudsdkddm.v1.model.update_database_info_request import UpdateDatabaseInfoRequest
 from huaweicloudsdkddm.v1.model.update_database_info_response import UpdateDatabaseInfoResponse
 from huaweicloudsdkddm.v1.model.update_ddm_instance_name_request import UpdateDdmInstanceNameRequest

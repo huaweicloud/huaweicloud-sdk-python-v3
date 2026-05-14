@@ -75,7 +75,7 @@ class ClusterCheckBody:
         :type num_node: int
         :param security_group_id: **参数解释**： 安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
-        :param datastore_version: **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param datastore_version: **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
         :type datastore_version: str
         :param vpc_id: **参数解释**： 集群虚拟私有云ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_id: str
@@ -280,7 +280,7 @@ class ClusterCheckBody:
     def datastore_version(self):
         r"""Gets the datastore_version of this ClusterCheckBody.
 
-        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
 
         :return: The datastore_version of this ClusterCheckBody.
         :rtype: str
@@ -291,7 +291,7 @@ class ClusterCheckBody:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ClusterCheckBody.
 
-        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
 
         :param datastore_version: The datastore_version of this ClusterCheckBody.
         :type datastore_version: str

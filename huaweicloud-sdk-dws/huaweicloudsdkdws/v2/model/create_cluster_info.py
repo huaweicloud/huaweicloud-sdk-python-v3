@@ -53,7 +53,7 @@ class CreateClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param node_type: **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
+        :param node_type: **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](https://support.huaweicloud.com/productdesc-dws/dws_01_00018.html)。
         :type node_type: str
         :param number_of_node: **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
         :type number_of_node: int
@@ -126,7 +126,7 @@ class CreateClusterInfo:
     def node_type(self):
         r"""Gets the node_type of this CreateClusterInfo.
 
-        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
+        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](https://support.huaweicloud.com/productdesc-dws/dws_01_00018.html)。
 
         :return: The node_type of this CreateClusterInfo.
         :rtype: str
@@ -137,7 +137,7 @@ class CreateClusterInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this CreateClusterInfo.
 
-        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
+        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](https://support.huaweicloud.com/productdesc-dws/dws_01_00018.html)。
 
         :param node_type: The node_type of this CreateClusterInfo.
         :type node_type: str

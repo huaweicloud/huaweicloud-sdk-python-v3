@@ -2320,8 +2320,8 @@ class DwsAsyncClient(Client):
     def delete_cluster_async(self, request):
         r"""删除集群
 
-        删除集群v2接口。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
-        删除集群建议优先使用“删除DWS集群”接口，覆盖此接口所有参数及功能。
+        删除集群（旧接口）。集群删除后将释放此集群的所有资源，包括客户数据。为了安全起见，请在删除集群前为这个集群创建快照。
+        删除集群建议优先使用另一个新接口，覆盖此接口所有参数及功能。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13089,6 +13089,75 @@ class DwsAsyncClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_queue_base_info_async(self, request):
+        r"""更新资源池基础信息
+
+        更新资源池基础信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQueueBaseInfo
+        :type request: :class:`huaweicloudsdkdws.v2.UpdateQueueBaseInfoRequest`
+        :rtype: :class:`huaweicloudsdkdws.v2.UpdateQueueBaseInfoResponse`
+        """
+        http_info = self._update_queue_base_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_queue_base_info_async_invoker(self, request):
+        http_info = self._update_queue_base_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_base_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueueBaseInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
 

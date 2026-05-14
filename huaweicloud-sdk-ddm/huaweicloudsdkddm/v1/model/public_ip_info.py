@@ -21,7 +21,8 @@ class PublicIpInfo:
         'private_ip': 'str',
         'binding_entity_id': 'str',
         'binding_entity_name': 'str',
-        'binding_entity_type': 'str'
+        'binding_entity_type': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PublicIpInfo:
         'private_ip': 'private_ip',
         'binding_entity_id': 'binding_entity_id',
         'binding_entity_name': 'binding_entity_name',
-        'binding_entity_type': 'binding_entity_type'
+        'binding_entity_type': 'binding_entity_type',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, id=None, type=None, public_ip=None, private_ip=None, binding_entity_id=None, binding_entity_name=None, binding_entity_type=None):
+    def __init__(self, id=None, type=None, public_ip=None, private_ip=None, binding_entity_id=None, binding_entity_name=None, binding_entity_type=None, group_id=None):
         r"""PublicIpInfo
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class PublicIpInfo:
         :type binding_entity_name: str
         :param binding_entity_type: 绑定弹性公网IP的实体类型（目前只支持绑定node）。
         :type binding_entity_type: str
+        :param group_id: 绑定弹性公网IP的组ID。
+        :type group_id: str
         """
         
         
@@ -64,6 +68,7 @@ class PublicIpInfo:
         self._binding_entity_id = None
         self._binding_entity_name = None
         self._binding_entity_type = None
+        self._group_id = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class PublicIpInfo:
             self.binding_entity_name = binding_entity_name
         if binding_entity_type is not None:
             self.binding_entity_type = binding_entity_type
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def id(self):
@@ -234,6 +241,28 @@ class PublicIpInfo:
         :type binding_entity_type: str
         """
         self._binding_entity_type = binding_entity_type
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this PublicIpInfo.
+
+        绑定弹性公网IP的组ID。
+
+        :return: The group_id of this PublicIpInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this PublicIpInfo.
+
+        绑定弹性公网IP的组ID。
+
+        :param group_id: The group_id of this PublicIpInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         result = {}

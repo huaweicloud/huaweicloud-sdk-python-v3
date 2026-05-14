@@ -24,7 +24,6 @@ class TaskGroupResp:
         'enable_metadata_migration': 'bool',
         'enable_failed_object_recording': 'bool',
         'enable_restore': 'bool',
-        'enable_kms': 'bool',
         'task_type': 'str',
         'bandwidth_policy': 'list[BandwidthPolicyDto]',
         'smn_config': 'SmnInfo',
@@ -65,7 +64,6 @@ class TaskGroupResp:
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_failed_object_recording': 'enable_failed_object_recording',
         'enable_restore': 'enable_restore',
-        'enable_kms': 'enable_kms',
         'task_type': 'task_type',
         'bandwidth_policy': 'bandwidth_policy',
         'smn_config': 'smn_config',
@@ -96,7 +94,7 @@ class TaskGroupResp:
         'enable_requester_pays': 'enable_requester_pays'
     }
 
-    def __init__(self, group_id=None, status=None, error_reason=None, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, enable_kms=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, migrate_speed=None, total_time=None, start_time=None, total_task_num=None, create_task_num=None, failed_task_num=None, complete_task_num=None, paused_task_num=None, executing_task_num=None, waiting_task_num=None, total_num=None, create_complete_num=None, success_num=None, fail_num=None, skip_num=None, total_size=None, create_complete_size=None, complete_size=None, failed_object_record=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, group_id=None, status=None, error_reason=None, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, migrate_speed=None, total_time=None, start_time=None, total_task_num=None, create_task_num=None, failed_task_num=None, complete_task_num=None, paused_task_num=None, executing_task_num=None, waiting_task_num=None, total_num=None, create_complete_num=None, success_num=None, fail_num=None, skip_num=None, total_size=None, create_complete_size=None, complete_size=None, failed_object_record=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
         r"""TaskGroupResp
 
         The model defined in huaweicloud sdk
@@ -119,8 +117,6 @@ class TaskGroupResp:
         :type enable_failed_object_recording: bool
         :param enable_restore: 是否自动解冻归档数据，（由于对象存储解冻需要源端存储等待一定时间，开启自动解冻会对迁移速度有较大影响，建议先完成归档存储数据解冻后再启动迁移）。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移；关闭后，如果遇到归档类型的对象直接跳过相应对象，系统默认对象迁移失败并记录相关信息到失败对象列表中。
         :type enable_restore: bool
-        :param enable_kms: 存储入OBS时是否使用KMS加密。
-        :type enable_kms: bool
         :param task_type: 任务类型，默认为PREFIX。 LIST：对象列表迁移 URL_LIST：URL列表迁移， PREFIX：对象前缀迁移
         :type task_type: str
         :param bandwidth_policy: 配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
@@ -190,7 +186,6 @@ class TaskGroupResp:
         self._enable_metadata_migration = None
         self._enable_failed_object_recording = None
         self._enable_restore = None
-        self._enable_kms = None
         self._task_type = None
         self._bandwidth_policy = None
         self._smn_config = None
@@ -239,8 +234,6 @@ class TaskGroupResp:
             self.enable_failed_object_recording = enable_failed_object_recording
         if enable_restore is not None:
             self.enable_restore = enable_restore
-        if enable_kms is not None:
-            self.enable_kms = enable_kms
         if task_type is not None:
             self.task_type = task_type
         if bandwidth_policy is not None:
@@ -483,28 +476,6 @@ class TaskGroupResp:
         :type enable_restore: bool
         """
         self._enable_restore = enable_restore
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this TaskGroupResp.
-
-        存储入OBS时是否使用KMS加密。
-
-        :return: The enable_kms of this TaskGroupResp.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this TaskGroupResp.
-
-        存储入OBS时是否使用KMS加密。
-
-        :param enable_kms: The enable_kms of this TaskGroupResp.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def task_type(self):

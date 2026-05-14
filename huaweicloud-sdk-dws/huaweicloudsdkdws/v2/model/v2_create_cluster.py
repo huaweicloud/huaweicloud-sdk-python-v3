@@ -95,7 +95,7 @@ class V2CreateCluster:
         :type security_group_id: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param datastore_version: **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param datastore_version: **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
         :type datastore_version: str
         :param master_key_id: **参数解释**： KMS密钥ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type master_key_id: str
@@ -476,7 +476,7 @@ class V2CreateCluster:
     def datastore_version(self):
         r"""Gets the datastore_version of this V2CreateCluster.
 
-        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
 
         :return: The datastore_version of this V2CreateCluster.
         :rtype: str
@@ -487,7 +487,7 @@ class V2CreateCluster:
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this V2CreateCluster.
 
-        **参数解释**： 集群版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 集群版本。选择的版本必须是该规格支持的版本。 **约束限制**： 不涉及。 **取值范围**： 支持的版本范围可以通过 [查询规格信息](ListNodeTypes.xml) 接口查询规格支持的版本进而确定。 **默认取值**： 不涉及。
 
         :param datastore_version: The datastore_version of this V2CreateCluster.
         :type datastore_version: str

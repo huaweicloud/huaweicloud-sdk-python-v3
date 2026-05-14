@@ -16,22 +16,26 @@ class CreateGroupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
         'job_id': 'str',
         'group_id': 'str',
         'order_id': 'str'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'job_id': 'job_id',
         'group_id': 'group_id',
         'order_id': 'order_id'
     }
 
-    def __init__(self, job_id=None, group_id=None, order_id=None):
+    def __init__(self, instance_id=None, job_id=None, group_id=None, order_id=None):
         r"""CreateGroupResponse
 
         The model defined in huaweicloud sdk
 
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
         :param job_id: 任务ID，仅创建按需实例时会返回该参数。
         :type job_id: str
         :param group_id: 组ID，仅创建按需实例时会返回该参数。
@@ -42,17 +46,42 @@ class CreateGroupResponse(SdkResponse):
         
         super().__init__()
 
+        self._instance_id = None
         self._job_id = None
         self._group_id = None
         self._order_id = None
         self.discriminator = None
 
+        if instance_id is not None:
+            self.instance_id = instance_id
         if job_id is not None:
             self.job_id = job_id
         if group_id is not None:
             self.group_id = group_id
         if order_id is not None:
             self.order_id = order_id
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this CreateGroupResponse.
+
+        DDM实例ID。
+
+        :return: The instance_id of this CreateGroupResponse.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this CreateGroupResponse.
+
+        DDM实例ID。
+
+        :param instance_id: The instance_id of this CreateGroupResponse.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def job_id(self):

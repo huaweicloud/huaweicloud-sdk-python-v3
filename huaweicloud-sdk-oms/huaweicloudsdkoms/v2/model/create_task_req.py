@@ -18,7 +18,6 @@ class CreateTaskReq:
         'task_type': 'str',
         'src_node': 'SrcNodeReq',
         'dst_node': 'DstNodeReq',
-        'enable_kms': 'bool',
         'description': 'str',
         'migrate_since': 'int',
         'bandwidth_policy': 'list[BandwidthPolicyDto]',
@@ -38,7 +37,6 @@ class CreateTaskReq:
         'task_type': 'task_type',
         'src_node': 'src_node',
         'dst_node': 'dst_node',
-        'enable_kms': 'enable_kms',
         'description': 'description',
         'migrate_since': 'migrate_since',
         'bandwidth_policy': 'bandwidth_policy',
@@ -54,7 +52,7 @@ class CreateTaskReq:
         'task_priority': 'task_priority'
     }
 
-    def __init__(self, task_type=None, src_node=None, dst_node=None, enable_kms=None, description=None, migrate_since=None, bandwidth_policy=None, source_cdn=None, smn_config=None, enable_metadata_migration=None, enable_restore=None, enable_failed_object_recording=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
+    def __init__(self, task_type=None, src_node=None, dst_node=None, description=None, migrate_since=None, bandwidth_policy=None, source_cdn=None, smn_config=None, enable_metadata_migration=None, enable_restore=None, enable_failed_object_recording=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
         r"""CreateTaskReq
 
         The model defined in huaweicloud sdk
@@ -65,8 +63,6 @@ class CreateTaskReq:
         :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
         :param dst_node: 
         :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeReq`
-        :param enable_kms: 是否开启KMS加密，默认不开启。
-        :type enable_kms: bool
         :param description: 任务描述，不能超过255个字符，且不能包含^&lt;&gt;&amp;\&quot;&#39;等特殊字符。
         :type description: str
         :param migrate_since: 以时间戳方式表示的迁移指定时间（单位：秒），表示仅迁移在指定时间之后修改的源端待迁移对象。默认不设置迁移指定时间。
@@ -100,7 +96,6 @@ class CreateTaskReq:
         self._task_type = None
         self._src_node = None
         self._dst_node = None
-        self._enable_kms = None
         self._description = None
         self._migrate_since = None
         self._bandwidth_policy = None
@@ -120,8 +115,6 @@ class CreateTaskReq:
             self.task_type = task_type
         self.src_node = src_node
         self.dst_node = dst_node
-        if enable_kms is not None:
-            self.enable_kms = enable_kms
         if description is not None:
             self.description = description
         if migrate_since is not None:
@@ -206,28 +199,6 @@ class CreateTaskReq:
         :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeReq`
         """
         self._dst_node = dst_node
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this CreateTaskReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :return: The enable_kms of this CreateTaskReq.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this CreateTaskReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :param enable_kms: The enable_kms of this CreateTaskReq.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def description(self):

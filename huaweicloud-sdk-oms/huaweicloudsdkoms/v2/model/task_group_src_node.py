@@ -18,6 +18,8 @@ class TaskGroupSrcNode:
         'ak': 'str',
         'sk': 'str',
         'connection_string': 'str',
+        'crypto_type': 'str',
+        'kms_key_id': 'str',
         'json_auth_file': 'str',
         'app_id': 'str',
         'region': 'str',
@@ -31,6 +33,8 @@ class TaskGroupSrcNode:
         'ak': 'ak',
         'sk': 'sk',
         'connection_string': 'connection_string',
+        'crypto_type': 'crypto_type',
+        'kms_key_id': 'kms_key_id',
         'json_auth_file': 'json_auth_file',
         'app_id': 'app_id',
         'region': 'region',
@@ -40,7 +44,7 @@ class TaskGroupSrcNode:
         'list_file': 'list_file'
     }
 
-    def __init__(self, ak=None, sk=None, connection_string=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
+    def __init__(self, ak=None, sk=None, connection_string=None, crypto_type=None, kms_key_id=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
         r"""TaskGroupSrcNode
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class TaskGroupSrcNode:
         :type sk: str
         :param connection_string: 连接字符串，用于微软云Blob鉴权
         :type connection_string: str
+        :param crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type crypto_type: str
+        :param kms_key_id: KMS密钥ID，36个字符
+        :type kms_key_id: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param app_id: 腾讯云APPID，当源端为腾讯云时，需要填写此参数，您可以在腾讯云控制台账号信息页面获取。
@@ -72,6 +80,8 @@ class TaskGroupSrcNode:
         self._ak = None
         self._sk = None
         self._connection_string = None
+        self._crypto_type = None
+        self._kms_key_id = None
         self._json_auth_file = None
         self._app_id = None
         self._region = None
@@ -87,6 +97,10 @@ class TaskGroupSrcNode:
             self.sk = sk
         if connection_string is not None:
             self.connection_string = connection_string
+        if crypto_type is not None:
+            self.crypto_type = crypto_type
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         if app_id is not None:
@@ -167,6 +181,50 @@ class TaskGroupSrcNode:
         :type connection_string: str
         """
         self._connection_string = connection_string
+
+    @property
+    def crypto_type(self):
+        r"""Gets the crypto_type of this TaskGroupSrcNode.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The crypto_type of this TaskGroupSrcNode.
+        :rtype: str
+        """
+        return self._crypto_type
+
+    @crypto_type.setter
+    def crypto_type(self, crypto_type):
+        r"""Sets the crypto_type of this TaskGroupSrcNode.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param crypto_type: The crypto_type of this TaskGroupSrcNode.
+        :type crypto_type: str
+        """
+        self._crypto_type = crypto_type
+
+    @property
+    def kms_key_id(self):
+        r"""Gets the kms_key_id of this TaskGroupSrcNode.
+
+        KMS密钥ID，36个字符
+
+        :return: The kms_key_id of this TaskGroupSrcNode.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        r"""Sets the kms_key_id of this TaskGroupSrcNode.
+
+        KMS密钥ID，36个字符
+
+        :param kms_key_id: The kms_key_id of this TaskGroupSrcNode.
+        :type kms_key_id: str
+        """
+        self._kms_key_id = kms_key_id
 
     @property
     def json_auth_file(self):

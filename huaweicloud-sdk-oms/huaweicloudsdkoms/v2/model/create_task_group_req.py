@@ -21,7 +21,6 @@ class CreateTaskGroupReq:
         'enable_metadata_migration': 'bool',
         'enable_failed_object_recording': 'bool',
         'enable_restore': 'bool',
-        'enable_kms': 'bool',
         'task_type': 'str',
         'bandwidth_policy': 'list[BandwidthPolicyDto]',
         'smn_config': 'SmnConfig',
@@ -40,7 +39,6 @@ class CreateTaskGroupReq:
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_failed_object_recording': 'enable_failed_object_recording',
         'enable_restore': 'enable_restore',
-        'enable_kms': 'enable_kms',
         'task_type': 'task_type',
         'bandwidth_policy': 'bandwidth_policy',
         'smn_config': 'smn_config',
@@ -52,7 +50,7 @@ class CreateTaskGroupReq:
         'enable_requester_pays': 'enable_requester_pays'
     }
 
-    def __init__(self, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, enable_kms=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
         r"""CreateTaskGroupReq
 
         The model defined in huaweicloud sdk
@@ -69,8 +67,6 @@ class CreateTaskGroupReq:
         :type enable_failed_object_recording: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
         :type enable_restore: bool
-        :param enable_kms: 是否开启KMS加密，默认不开启。
-        :type enable_kms: bool
         :param task_type: 任务类型，默认为PREFIX。 LIST：对象列表迁移 URL_LIST：URL列表迁移， PREFIX：对象前缀迁移
         :type task_type: str
         :param bandwidth_policy: 配置流量控制策略。数组中一个元素对应一个时段的最大带宽，最多允许5个时段，且时段不能重叠。
@@ -99,7 +95,6 @@ class CreateTaskGroupReq:
         self._enable_metadata_migration = None
         self._enable_failed_object_recording = None
         self._enable_restore = None
-        self._enable_kms = None
         self._task_type = None
         self._bandwidth_policy = None
         self._smn_config = None
@@ -121,7 +116,6 @@ class CreateTaskGroupReq:
             self.enable_failed_object_recording = enable_failed_object_recording
         if enable_restore is not None:
             self.enable_restore = enable_restore
-        self.enable_kms = enable_kms
         if task_type is not None:
             self.task_type = task_type
         if bandwidth_policy is not None:
@@ -264,28 +258,6 @@ class CreateTaskGroupReq:
         :type enable_restore: bool
         """
         self._enable_restore = enable_restore
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this CreateTaskGroupReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :return: The enable_kms of this CreateTaskGroupReq.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this CreateTaskGroupReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :param enable_kms: The enable_kms of this CreateTaskGroupReq.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def task_type(self):

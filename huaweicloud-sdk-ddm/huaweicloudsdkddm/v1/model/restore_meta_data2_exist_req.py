@@ -41,10 +41,8 @@ class RestoreMetaData2ExistReq:
         self._target = None
         self.discriminator = None
 
-        if source is not None:
-            self.source = source
-        if target is not None:
-            self.target = target
+        self.source = source
+        self.target = target
 
     @property
     def source(self):

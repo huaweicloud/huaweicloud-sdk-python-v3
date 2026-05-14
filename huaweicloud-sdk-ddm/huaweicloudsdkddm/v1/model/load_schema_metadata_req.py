@@ -18,19 +18,17 @@ class LoadSchemaMetadataReq:
         'compressed_databases_info': 'str',
         'dn_instance': 'list[DNInstance]',
         'instance_id': 'str',
-        'project_id': 'str',
-        'iam_account': 'IamAccount'
+        'project_id': 'str'
     }
 
     attribute_map = {
         'compressed_databases_info': 'compressed_databases_info',
         'dn_instance': 'dn_instance',
         'instance_id': 'instance_id',
-        'project_id': 'project_id',
-        'iam_account': 'iam_account'
+        'project_id': 'project_id'
     }
 
-    def __init__(self, compressed_databases_info=None, dn_instance=None, instance_id=None, project_id=None, iam_account=None):
+    def __init__(self, compressed_databases_info=None, dn_instance=None, instance_id=None, project_id=None):
         r"""LoadSchemaMetadataReq
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class LoadSchemaMetadataReq:
         :type instance_id: str
         :param project_id: 项目id。
         :type project_id: str
-        :param iam_account: 
-        :type iam_account: :class:`huaweicloudsdkddm.v1.IamAccount`
         """
         
         
@@ -53,7 +49,6 @@ class LoadSchemaMetadataReq:
         self._dn_instance = None
         self._instance_id = None
         self._project_id = None
-        self._iam_account = None
         self.discriminator = None
 
         if compressed_databases_info is not None:
@@ -64,8 +59,6 @@ class LoadSchemaMetadataReq:
             self.instance_id = instance_id
         if project_id is not None:
             self.project_id = project_id
-        if iam_account is not None:
-            self.iam_account = iam_account
 
     @property
     def compressed_databases_info(self):
@@ -154,24 +147,6 @@ class LoadSchemaMetadataReq:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def iam_account(self):
-        r"""Gets the iam_account of this LoadSchemaMetadataReq.
-
-        :return: The iam_account of this LoadSchemaMetadataReq.
-        :rtype: :class:`huaweicloudsdkddm.v1.IamAccount`
-        """
-        return self._iam_account
-
-    @iam_account.setter
-    def iam_account(self, iam_account):
-        r"""Sets the iam_account of this LoadSchemaMetadataReq.
-
-        :param iam_account: The iam_account of this LoadSchemaMetadataReq.
-        :type iam_account: :class:`huaweicloudsdkddm.v1.IamAccount`
-        """
-        self._iam_account = iam_account
 
     def to_dict(self):
         result = {}

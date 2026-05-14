@@ -16,29 +16,36 @@ class ModifySubtitleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'asset_id': 'str'
+        'asset_id': 'str',
+        'thumbnail_task_id': 'str'
     }
 
     attribute_map = {
-        'asset_id': 'asset_id'
+        'asset_id': 'asset_id',
+        'thumbnail_task_id': 'thumbnail_task_id'
     }
 
-    def __init__(self, asset_id=None):
+    def __init__(self, asset_id=None, thumbnail_task_id=None):
         r"""ModifySubtitleResponse
 
         The model defined in huaweicloud sdk
 
         :param asset_id: 媒资ID。
         :type asset_id: str
+        :param thumbnail_task_id: 截图任务id，仅支持多截图场景会返回。
+        :type thumbnail_task_id: str
         """
         
         super().__init__()
 
         self._asset_id = None
+        self._thumbnail_task_id = None
         self.discriminator = None
 
         if asset_id is not None:
             self.asset_id = asset_id
+        if thumbnail_task_id is not None:
+            self.thumbnail_task_id = thumbnail_task_id
 
     @property
     def asset_id(self):
@@ -61,6 +68,28 @@ class ModifySubtitleResponse(SdkResponse):
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def thumbnail_task_id(self):
+        r"""Gets the thumbnail_task_id of this ModifySubtitleResponse.
+
+        截图任务id，仅支持多截图场景会返回。
+
+        :return: The thumbnail_task_id of this ModifySubtitleResponse.
+        :rtype: str
+        """
+        return self._thumbnail_task_id
+
+    @thumbnail_task_id.setter
+    def thumbnail_task_id(self, thumbnail_task_id):
+        r"""Sets the thumbnail_task_id of this ModifySubtitleResponse.
+
+        截图任务id，仅支持多截图场景会返回。
+
+        :param thumbnail_task_id: The thumbnail_task_id of this ModifySubtitleResponse.
+        :type thumbnail_task_id: str
+        """
+        self._thumbnail_task_id = thumbnail_task_id
 
     def to_dict(self):
         import warnings

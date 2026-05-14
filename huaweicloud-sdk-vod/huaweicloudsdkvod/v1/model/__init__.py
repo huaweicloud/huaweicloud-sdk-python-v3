@@ -37,6 +37,9 @@ from huaweicloudsdkvod.v1.model.create_asset_by_file_upload_request import Creat
 from huaweicloudsdkvod.v1.model.create_asset_by_file_upload_response import CreateAssetByFileUploadResponse
 from huaweicloudsdkvod.v1.model.create_asset_category_request import CreateAssetCategoryRequest
 from huaweicloudsdkvod.v1.model.create_asset_category_response import CreateAssetCategoryResponse
+from huaweicloudsdkvod.v1.model.create_asset_edit_task_req import CreateAssetEditTaskReq
+from huaweicloudsdkvod.v1.model.create_asset_edit_task_request import CreateAssetEditTaskRequest
+from huaweicloudsdkvod.v1.model.create_asset_edit_task_response import CreateAssetEditTaskResponse
 from huaweicloudsdkvod.v1.model.create_asset_process_task_request import CreateAssetProcessTaskRequest
 from huaweicloudsdkvod.v1.model.create_asset_process_task_response import CreateAssetProcessTaskResponse
 from huaweicloudsdkvod.v1.model.create_asset_review_task_request import CreateAssetReviewTaskRequest
@@ -78,6 +81,8 @@ from huaweicloudsdkvod.v1.model.create_watermark_template_request import CreateW
 from huaweicloudsdkvod.v1.model.create_watermark_template_response import CreateWatermarkTemplateResponse
 from huaweicloudsdkvod.v1.model.delete_asset_category_request import DeleteAssetCategoryRequest
 from huaweicloudsdkvod.v1.model.delete_asset_category_response import DeleteAssetCategoryResponse
+from huaweicloudsdkvod.v1.model.delete_asset_edit_task_request import DeleteAssetEditTaskRequest
+from huaweicloudsdkvod.v1.model.delete_asset_edit_task_response import DeleteAssetEditTaskResponse
 from huaweicloudsdkvod.v1.model.delete_assets_request import DeleteAssetsRequest
 from huaweicloudsdkvod.v1.model.delete_assets_response import DeleteAssetsResponse
 from huaweicloudsdkvod.v1.model.delete_dy_asset_request import DeleteDyAssetRequest
@@ -98,9 +103,11 @@ from huaweicloudsdkvod.v1.model.delete_transcode_template_request import DeleteT
 from huaweicloudsdkvod.v1.model.delete_transcode_template_response import DeleteTranscodeTemplateResponse
 from huaweicloudsdkvod.v1.model.delete_watermark_template_request import DeleteWatermarkTemplateRequest
 from huaweicloudsdkvod.v1.model.delete_watermark_template_response import DeleteWatermarkTemplateResponse
+from huaweicloudsdkvod.v1.model.edit_input import EditInput
 from huaweicloudsdkvod.v1.model.edit_media_task import EditMediaTask
 from huaweicloudsdkvod.v1.model.edit_media_task_input import EditMediaTaskInput
 from huaweicloudsdkvod.v1.model.editing_setting import EditingSetting
+from huaweicloudsdkvod.v1.model.editing_task_info import EditingTaskInfo
 from huaweicloudsdkvod.v1.model.extract_audio_task_req import ExtractAudioTaskReq
 from huaweicloudsdkvod.v1.model.file_addr import FileAddr
 from huaweicloudsdkvod.v1.model.image_sprite_task import ImageSpriteTask
@@ -110,6 +117,8 @@ from huaweicloudsdkvod.v1.model.list_asset_category_request import ListAssetCate
 from huaweicloudsdkvod.v1.model.list_asset_category_response import ListAssetCategoryResponse
 from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_request import ListAssetDailySummaryLogRequest
 from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_response import ListAssetDailySummaryLogResponse
+from huaweicloudsdkvod.v1.model.list_asset_edit_task_request import ListAssetEditTaskRequest
+from huaweicloudsdkvod.v1.model.list_asset_edit_task_response import ListAssetEditTaskResponse
 from huaweicloudsdkvod.v1.model.list_asset_list_request import ListAssetListRequest
 from huaweicloudsdkvod.v1.model.list_asset_list_response import ListAssetListResponse
 from huaweicloudsdkvod.v1.model.list_asset_task_info_request import ListAssetTaskInfoRequest
@@ -274,6 +283,7 @@ from huaweicloudsdkvod.v1.model.video_info import VideoInfo
 from huaweicloudsdkvod.v1.model.video_process import VideoProcess
 from huaweicloudsdkvod.v1.model.video_template_info import VideoTemplateInfo
 from huaweicloudsdkvod.v1.model.video_type_ref import VideoTypeRef
+from huaweicloudsdkvod.v1.model.vod_editing_setting import VodEditingSetting
 from huaweicloudsdkvod.v1.model.vod_retrieval_data import VodRetrievalData
 from huaweicloudsdkvod.v1.model.vod_sample_data import VodSampleData
 from huaweicloudsdkvod.v1.model.watermark_request import WatermarkRequest

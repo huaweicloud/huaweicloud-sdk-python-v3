@@ -20,13 +20,16 @@ class CreateSyncTaskReq:
         'src_bucket': 'str',
         'src_ak': 'str',
         'src_sk': 'str',
+        'src_crypto_type': 'str',
+        'src_kms_key_id': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
+        'dst_crypto_type': 'str',
+        'dst_kms_key_id': 'str',
         'dst_region': 'str',
         'dst_bucket': 'str',
         'description': 'str',
         'enable_metadata_migration': 'bool',
-        'enable_kms': 'bool',
         'enable_restore': 'bool',
         'dst_storage_policy': 'str',
         'app_id': 'str',
@@ -40,13 +43,16 @@ class CreateSyncTaskReq:
         'src_bucket': 'src_bucket',
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
+        'src_crypto_type': 'src_crypto_type',
+        'src_kms_key_id': 'src_kms_key_id',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
+        'dst_crypto_type': 'dst_crypto_type',
+        'dst_kms_key_id': 'dst_kms_key_id',
         'dst_region': 'dst_region',
         'dst_bucket': 'dst_bucket',
         'description': 'description',
         'enable_metadata_migration': 'enable_metadata_migration',
-        'enable_kms': 'enable_kms',
         'enable_restore': 'enable_restore',
         'dst_storage_policy': 'dst_storage_policy',
         'app_id': 'app_id',
@@ -54,7 +60,7 @@ class CreateSyncTaskReq:
         'consistency_check': 'consistency_check'
     }
 
-    def __init__(self, src_cloud_type=None, src_region=None, src_bucket=None, src_ak=None, src_sk=None, dst_ak=None, dst_sk=None, dst_region=None, dst_bucket=None, description=None, enable_metadata_migration=None, enable_kms=None, enable_restore=None, dst_storage_policy=None, app_id=None, source_cdn=None, consistency_check=None):
+    def __init__(self, src_cloud_type=None, src_region=None, src_bucket=None, src_ak=None, src_sk=None, src_crypto_type=None, src_kms_key_id=None, dst_ak=None, dst_sk=None, dst_crypto_type=None, dst_kms_key_id=None, dst_region=None, dst_bucket=None, description=None, enable_metadata_migration=None, enable_restore=None, dst_storage_policy=None, app_id=None, source_cdn=None, consistency_check=None):
         r"""CreateSyncTaskReq
 
         The model defined in huaweicloud sdk
@@ -69,10 +75,18 @@ class CreateSyncTaskReq:
         :type src_ak: str
         :param src_sk: 源端桶的SK（最大长度100个字符）。
         :type src_sk: str
+        :param src_crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type src_crypto_type: str
+        :param src_kms_key_id: KMS密钥ID，36个字符
+        :type src_kms_key_id: str
         :param dst_ak: 目的端桶的AK（最大长度100个字符）。
         :type dst_ak: str
         :param dst_sk: 目的端桶的SK（最大长度100个字符）。
         :type dst_sk: str
+        :param dst_crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type dst_crypto_type: str
+        :param dst_kms_key_id: KMS密钥ID，36个字符
+        :type dst_kms_key_id: str
         :param dst_region: 目的端region
         :type dst_region: str
         :param dst_bucket: 目的端桶名
@@ -81,8 +95,6 @@ class CreateSyncTaskReq:
         :type description: str
         :param enable_metadata_migration: 是否启用元数据迁移，默认否。不启用时，为保证迁移任务正常运行，仍将为您迁移ContentType元数据。
         :type enable_metadata_migration: bool
-        :param enable_kms: 是否开启KMS加密，默认不开启。
-        :type enable_kms: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。  开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
         :type enable_restore: bool
         :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
@@ -102,13 +114,16 @@ class CreateSyncTaskReq:
         self._src_bucket = None
         self._src_ak = None
         self._src_sk = None
+        self._src_crypto_type = None
+        self._src_kms_key_id = None
         self._dst_ak = None
         self._dst_sk = None
+        self._dst_crypto_type = None
+        self._dst_kms_key_id = None
         self._dst_region = None
         self._dst_bucket = None
         self._description = None
         self._enable_metadata_migration = None
-        self._enable_kms = None
         self._enable_restore = None
         self._dst_storage_policy = None
         self._app_id = None
@@ -122,16 +137,22 @@ class CreateSyncTaskReq:
         self.src_bucket = src_bucket
         self.src_ak = src_ak
         self.src_sk = src_sk
+        if src_crypto_type is not None:
+            self.src_crypto_type = src_crypto_type
+        if src_kms_key_id is not None:
+            self.src_kms_key_id = src_kms_key_id
         self.dst_ak = dst_ak
         self.dst_sk = dst_sk
+        if dst_crypto_type is not None:
+            self.dst_crypto_type = dst_crypto_type
+        if dst_kms_key_id is not None:
+            self.dst_kms_key_id = dst_kms_key_id
         self.dst_region = dst_region
         self.dst_bucket = dst_bucket
         if description is not None:
             self.description = description
         if enable_metadata_migration is not None:
             self.enable_metadata_migration = enable_metadata_migration
-        if enable_kms is not None:
-            self.enable_kms = enable_kms
         if enable_restore is not None:
             self.enable_restore = enable_restore
         if dst_storage_policy is not None:
@@ -254,6 +275,50 @@ class CreateSyncTaskReq:
         self._src_sk = src_sk
 
     @property
+    def src_crypto_type(self):
+        r"""Gets the src_crypto_type of this CreateSyncTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The src_crypto_type of this CreateSyncTaskReq.
+        :rtype: str
+        """
+        return self._src_crypto_type
+
+    @src_crypto_type.setter
+    def src_crypto_type(self, src_crypto_type):
+        r"""Sets the src_crypto_type of this CreateSyncTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param src_crypto_type: The src_crypto_type of this CreateSyncTaskReq.
+        :type src_crypto_type: str
+        """
+        self._src_crypto_type = src_crypto_type
+
+    @property
+    def src_kms_key_id(self):
+        r"""Gets the src_kms_key_id of this CreateSyncTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The src_kms_key_id of this CreateSyncTaskReq.
+        :rtype: str
+        """
+        return self._src_kms_key_id
+
+    @src_kms_key_id.setter
+    def src_kms_key_id(self, src_kms_key_id):
+        r"""Sets the src_kms_key_id of this CreateSyncTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :param src_kms_key_id: The src_kms_key_id of this CreateSyncTaskReq.
+        :type src_kms_key_id: str
+        """
+        self._src_kms_key_id = src_kms_key_id
+
+    @property
     def dst_ak(self):
         r"""Gets the dst_ak of this CreateSyncTaskReq.
 
@@ -296,6 +361,50 @@ class CreateSyncTaskReq:
         :type dst_sk: str
         """
         self._dst_sk = dst_sk
+
+    @property
+    def dst_crypto_type(self):
+        r"""Gets the dst_crypto_type of this CreateSyncTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The dst_crypto_type of this CreateSyncTaskReq.
+        :rtype: str
+        """
+        return self._dst_crypto_type
+
+    @dst_crypto_type.setter
+    def dst_crypto_type(self, dst_crypto_type):
+        r"""Sets the dst_crypto_type of this CreateSyncTaskReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param dst_crypto_type: The dst_crypto_type of this CreateSyncTaskReq.
+        :type dst_crypto_type: str
+        """
+        self._dst_crypto_type = dst_crypto_type
+
+    @property
+    def dst_kms_key_id(self):
+        r"""Gets the dst_kms_key_id of this CreateSyncTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The dst_kms_key_id of this CreateSyncTaskReq.
+        :rtype: str
+        """
+        return self._dst_kms_key_id
+
+    @dst_kms_key_id.setter
+    def dst_kms_key_id(self, dst_kms_key_id):
+        r"""Sets the dst_kms_key_id of this CreateSyncTaskReq.
+
+        KMS密钥ID，36个字符
+
+        :param dst_kms_key_id: The dst_kms_key_id of this CreateSyncTaskReq.
+        :type dst_kms_key_id: str
+        """
+        self._dst_kms_key_id = dst_kms_key_id
 
     @property
     def dst_region(self):
@@ -384,28 +493,6 @@ class CreateSyncTaskReq:
         :type enable_metadata_migration: bool
         """
         self._enable_metadata_migration = enable_metadata_migration
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this CreateSyncTaskReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :return: The enable_kms of this CreateSyncTaskReq.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this CreateSyncTaskReq.
-
-        是否开启KMS加密，默认不开启。
-
-        :param enable_kms: The enable_kms of this CreateSyncTaskReq.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def enable_restore(self):

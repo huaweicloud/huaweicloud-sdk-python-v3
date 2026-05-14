@@ -1,3 +1,186 @@
+# 3.1.195 2026-05-14
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `UnbindLogicDb`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeStrategy**
+    - changes of request param
+      - `- iam_account`
+  - **DeleteGroup**
+    - changes of response param
+      - `+ order_id`
+  - **UploadSchemaMetadata**
+    - changes of request param
+      - `- iam_account`
+  - **ShowPublicIp**
+    - changes of response param
+      - `+ public_ip_list.group_id`
+  - **CreateGroup**
+    - changes of response param
+      - `+ instance_id`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `UpdateQueueBaseInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IEC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchListMetricData`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ReEncrypt`, `DeriveSharedSecret`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartTask**
+    - changes of request param
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **ShowSyncTask**
+    - changes of response param
+      - `- enable_kms`
+  - **StartSyncTask**
+    - changes of request param
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **StartTaskGroup**
+    - changes of request param
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **RetryTaskGroup**
+    - changes of request param
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **ShowCdnInfo**
+    - changes of request param
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+  - **ShowTask**
+    - changes of response param
+      - `- enable_kms`
+  - **CreateSyncTask**
+    - changes of request param
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `- enable_kms`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+  - **ListSyncTasks**
+    - changes of response param
+      - `- tasks.enable_kms`
+  - **ShowTaskGroup**
+    - changes of response param
+      - `- enable_kms`
+  - **CreateTask**
+    - changes of request param
+      - `- enable_kms`
+      - `+ dst_node.crypto_type`
+      - `+ dst_node.kms_key_id`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+      - `+ src_node.crypto_type`
+      - `+ src_node.kms_key_id`
+  - **ListTasks**
+    - changes of response param
+      - `- enable_kms`
+      - `- tasks.enable_kms`
+  - **CreateTaskGroup**
+    - changes of request param
+      - `- enable_kms`
+      - `+ dst_node.crypto_type`
+      - `+ dst_node.kms_key_id`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+      - `+ src_node.crypto_type`
+      - `+ src_node.kms_key_id`
+  - **ListTaskGroup**
+    - changes of response param
+      - `- enable_kms`
+      - `- taskgroups.enable_kms`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of request param
+      - `+ enable_intranet_access`
+      - `+ obs_enc_kms_key_id`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListAssetEditTask`, `CreateAssetEditTask`, `DeleteAssetEditTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAssetProcessTask**
+    - changes of response param
+      - `+ thumbnail_task_id`
+  - **ModifySubtitle**
+    - changes of response param
+      - `+ thumbnail_task_id`
+
 # 3.1.194 2026-05-07
 
 ### HuaweiCloud SDK CodeArtsPipeline

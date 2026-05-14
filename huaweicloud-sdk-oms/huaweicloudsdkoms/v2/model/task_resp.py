@@ -20,7 +20,6 @@ class TaskResp:
         'description': 'str',
         'dst_node': 'DstNodeResp',
         'enable_failed_object_recording': 'bool',
-        'enable_kms': 'bool',
         'enable_metadata_migration': 'bool',
         'enable_restore': 'bool',
         'error_reason': 'ErrorReasonResp',
@@ -62,7 +61,6 @@ class TaskResp:
         'description': 'description',
         'dst_node': 'dst_node',
         'enable_failed_object_recording': 'enable_failed_object_recording',
-        'enable_kms': 'enable_kms',
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_restore': 'enable_restore',
         'error_reason': 'error_reason',
@@ -98,7 +96,7 @@ class TaskResp:
         'task_priority': 'task_priority'
     }
 
-    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
+    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_metadata_migration=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None, task_priority=None):
         r"""TaskResp
 
         The model defined in huaweicloud sdk
@@ -113,8 +111,6 @@ class TaskResp:
         :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeResp`
         :param enable_failed_object_recording: 是否记录失败对象。开启后，如果有迁移失败对象，会在目的端存储失败对象信息。
         :type enable_failed_object_recording: bool
-        :param enable_kms: 存储入OBS时是否使用KMS加密。
-        :type enable_kms: bool
         :param enable_metadata_migration: 是否启用元数据迁移，默认否。不启用时，为保证迁移任务正常运行，仍将为您迁移ContentType元数据。
         :type enable_metadata_migration: bool
         :param enable_restore: 是否自动解冻归档数据，（由于对象存储解冻需要源端存储等待一定时间，开启自动解冻会对迁移速度有较大影响，建议先完成归档存储数据解冻后再启动迁移）。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移；关闭后，如果遇到归档类型的对象直接跳过相应对象，系统默认对象迁移失败并记录相关信息到失败对象列表中。
@@ -190,7 +186,6 @@ class TaskResp:
         self._description = None
         self._dst_node = None
         self._enable_failed_object_recording = None
-        self._enable_kms = None
         self._enable_metadata_migration = None
         self._enable_restore = None
         self._error_reason = None
@@ -236,8 +231,6 @@ class TaskResp:
             self.dst_node = dst_node
         if enable_failed_object_recording is not None:
             self.enable_failed_object_recording = enable_failed_object_recording
-        if enable_kms is not None:
-            self.enable_kms = enable_kms
         if enable_metadata_migration is not None:
             self.enable_metadata_migration = enable_metadata_migration
         if enable_restore is not None:
@@ -410,28 +403,6 @@ class TaskResp:
         :type enable_failed_object_recording: bool
         """
         self._enable_failed_object_recording = enable_failed_object_recording
-
-    @property
-    def enable_kms(self):
-        r"""Gets the enable_kms of this TaskResp.
-
-        存储入OBS时是否使用KMS加密。
-
-        :return: The enable_kms of this TaskResp.
-        :rtype: bool
-        """
-        return self._enable_kms
-
-    @enable_kms.setter
-    def enable_kms(self, enable_kms):
-        r"""Sets the enable_kms of this TaskResp.
-
-        存储入OBS时是否使用KMS加密。
-
-        :param enable_kms: The enable_kms of this TaskResp.
-        :type enable_kms: bool
-        """
-        self._enable_kms = enable_kms
 
     @property
     def enable_metadata_migration(self):

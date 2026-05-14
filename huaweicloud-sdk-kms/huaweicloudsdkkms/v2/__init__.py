@@ -71,6 +71,9 @@ from huaweicloudsdkkms.v2.model.delete_key_store_request import DeleteKeyStoreRe
 from huaweicloudsdkkms.v2.model.delete_key_store_response import DeleteKeyStoreResponse
 from huaweicloudsdkkms.v2.model.delete_tag_request import DeleteTagRequest
 from huaweicloudsdkkms.v2.model.delete_tag_response import DeleteTagResponse
+from huaweicloudsdkkms.v2.model.derive_shared_secret_request import DeriveSharedSecretRequest
+from huaweicloudsdkkms.v2.model.derive_shared_secret_request_body import DeriveSharedSecretRequestBody
+from huaweicloudsdkkms.v2.model.derive_shared_secret_response import DeriveSharedSecretResponse
 from huaweicloudsdkkms.v2.model.disable_key_request import DisableKeyRequest
 from huaweicloudsdkkms.v2.model.disable_key_response import DisableKeyResponse
 from huaweicloudsdkkms.v2.model.disable_key_rotation_request import DisableKeyRotationRequest
@@ -132,6 +135,10 @@ from huaweicloudsdkkms.v2.model.list_support_regions_response import ListSupport
 from huaweicloudsdkkms.v2.model.operate_key_request_body import OperateKeyRequestBody
 from huaweicloudsdkkms.v2.model.page_info import PageInfo
 from huaweicloudsdkkms.v2.model.quotas import Quotas
+from huaweicloudsdkkms.v2.model.re_encrypt_request import ReEncryptRequest
+from huaweicloudsdkkms.v2.model.re_encrypt_request_body import ReEncryptRequestBody
+from huaweicloudsdkkms.v2.model.re_encrypt_response import ReEncryptResponse
+from huaweicloudsdkkms.v2.model.recipient import Recipient
 from huaweicloudsdkkms.v2.model.replicate_key_request import ReplicateKeyRequest
 from huaweicloudsdkkms.v2.model.replicate_key_request_body import ReplicateKeyRequestBody
 from huaweicloudsdkkms.v2.model.replicate_key_response import ReplicateKeyResponse

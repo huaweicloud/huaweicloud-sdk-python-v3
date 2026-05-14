@@ -1,3 +1,186 @@
+# 3.1.195 2026-05-14
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UnbindLogicDb`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeStrategy**
+    - 请求参数变更
+      - `- iam_account`
+  - **DeleteGroup**
+    - 响应参数变更
+      - `+ order_id`
+  - **UploadSchemaMetadata**
+    - 请求参数变更
+      - `- iam_account`
+  - **ShowPublicIp**
+    - 响应参数变更
+      - `+ public_ip_list.group_id`
+  - **CreateGroup**
+    - 响应参数变更
+      - `+ instance_id`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UpdateQueueBaseInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IEC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`BatchListMetricData`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ReEncrypt`、`DeriveSharedSecret`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartTask**
+    - 请求参数变更
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **ShowSyncTask**
+    - 响应参数变更
+      - `- enable_kms`
+  - **StartSyncTask**
+    - 请求参数变更
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **StartTaskGroup**
+    - 请求参数变更
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **RetryTaskGroup**
+    - 请求参数变更
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `+ source_cdn_crypto_type`
+      - `+ source_cdn_kms_key_id`
+  - **ShowCdnInfo**
+    - 请求参数变更
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+  - **ShowTask**
+    - 响应参数变更
+      - `- enable_kms`
+  - **CreateSyncTask**
+    - 请求参数变更
+      - `+ src_crypto_type`
+      - `+ src_kms_key_id`
+      - `+ dst_crypto_type`
+      - `+ dst_kms_key_id`
+      - `- enable_kms`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+  - **ListSyncTasks**
+    - 响应参数变更
+      - `- tasks.enable_kms`
+  - **ShowTaskGroup**
+    - 响应参数变更
+      - `- enable_kms`
+  - **CreateTask**
+    - 请求参数变更
+      - `- enable_kms`
+      - `+ dst_node.crypto_type`
+      - `+ dst_node.kms_key_id`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+      - `+ src_node.crypto_type`
+      - `+ src_node.kms_key_id`
+  - **ListTasks**
+    - 响应参数变更
+      - `- enable_kms`
+      - `- tasks.enable_kms`
+  - **CreateTaskGroup**
+    - 请求参数变更
+      - `- enable_kms`
+      - `+ dst_node.crypto_type`
+      - `+ dst_node.kms_key_id`
+      - `+ source_cdn.crypto_type`
+      - `+ source_cdn.kms_key_id`
+      - `+ src_node.crypto_type`
+      - `+ src_node.kms_key_id`
+  - **ListTaskGroup**
+    - 响应参数变更
+      - `- enable_kms`
+      - `- taskgroups.enable_kms`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ enable_intranet_access`
+      - `+ obs_enc_kms_key_id`
+
+### HuaweiCloud SDK VOD
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListAssetEditTask`、`CreateAssetEditTask`、`DeleteAssetEditTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAssetProcessTask**
+    - 响应参数变更
+      - `+ thumbnail_task_id`
+  - **ModifySubtitle**
+    - 响应参数变更
+      - `+ thumbnail_task_id`
+
 # 3.1.194 2026-05-07
 
 ### HuaweiCloud SDK CodeArtsPipeline

@@ -41,10 +41,8 @@ class BindEipOpenRequest:
         self._public_ip_id = None
         self.discriminator = None
 
-        if public_ip is not None:
-            self.public_ip = public_ip
-        if public_ip_id is not None:
-            self.public_ip_id = public_ip_id
+        self.public_ip = public_ip
+        self.public_ip_id = public_ip_id
 
     @property
     def public_ip(self):

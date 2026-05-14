@@ -15,7 +15,6 @@ class MigrateRouteSwitchReqVO:
     sensitive_list = []
 
     openapi_types = {
-        'iam_account': 'IamAccount',
         'project_id': 'str',
         'instance_id': 'str',
         'task_id': 'str',
@@ -26,7 +25,6 @@ class MigrateRouteSwitchReqVO:
     }
 
     attribute_map = {
-        'iam_account': 'iam_account',
         'project_id': 'project_id',
         'instance_id': 'instance_id',
         'task_id': 'task_id',
@@ -36,13 +34,11 @@ class MigrateRouteSwitchReqVO:
         'logic_db_name': 'logic_db_name'
     }
 
-    def __init__(self, iam_account=None, project_id=None, instance_id=None, task_id=None, switch_route_begin_time=None, switch_route_end_time=None, is_open_api=None, logic_db_name=None):
+    def __init__(self, project_id=None, instance_id=None, task_id=None, switch_route_begin_time=None, switch_route_end_time=None, is_open_api=None, logic_db_name=None):
         r"""MigrateRouteSwitchReqVO
 
         The model defined in huaweicloud sdk
 
-        :param iam_account: 
-        :type iam_account: :class:`huaweicloudsdkddm.v1.IamAccount`
         :param project_id: 项目id。
         :type project_id: str
         :param instance_id: 实例id。
@@ -61,7 +57,6 @@ class MigrateRouteSwitchReqVO:
         
         
 
-        self._iam_account = None
         self._project_id = None
         self._instance_id = None
         self._task_id = None
@@ -71,8 +66,6 @@ class MigrateRouteSwitchReqVO:
         self._logic_db_name = None
         self.discriminator = None
 
-        if iam_account is not None:
-            self.iam_account = iam_account
         if project_id is not None:
             self.project_id = project_id
         if instance_id is not None:
@@ -87,24 +80,6 @@ class MigrateRouteSwitchReqVO:
             self.is_open_api = is_open_api
         if logic_db_name is not None:
             self.logic_db_name = logic_db_name
-
-    @property
-    def iam_account(self):
-        r"""Gets the iam_account of this MigrateRouteSwitchReqVO.
-
-        :return: The iam_account of this MigrateRouteSwitchReqVO.
-        :rtype: :class:`huaweicloudsdkddm.v1.IamAccount`
-        """
-        return self._iam_account
-
-    @iam_account.setter
-    def iam_account(self, iam_account):
-        r"""Sets the iam_account of this MigrateRouteSwitchReqVO.
-
-        :param iam_account: The iam_account of this MigrateRouteSwitchReqVO.
-        :type iam_account: :class:`huaweicloudsdkddm.v1.IamAccount`
-        """
-        self._iam_account = iam_account
 
     @property
     def project_id(self):

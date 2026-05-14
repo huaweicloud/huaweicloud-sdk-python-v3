@@ -20,7 +20,9 @@ class DstNodeReq:
         'security_token': 'str',
         'bucket': 'str',
         'save_prefix': 'str',
-        'region': 'str'
+        'region': 'str',
+        'crypto_type': 'str',
+        'kms_key_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class DstNodeReq:
         'security_token': 'security_token',
         'bucket': 'bucket',
         'save_prefix': 'save_prefix',
-        'region': 'region'
+        'region': 'region',
+        'crypto_type': 'crypto_type',
+        'kms_key_id': 'kms_key_id'
     }
 
-    def __init__(self, ak=None, sk=None, security_token=None, bucket=None, save_prefix=None, region=None):
+    def __init__(self, ak=None, sk=None, security_token=None, bucket=None, save_prefix=None, region=None, crypto_type=None, kms_key_id=None):
         r"""DstNodeReq
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class DstNodeReq:
         :type save_prefix: str
         :param region: 目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
         :type region: str
+        :param crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type crypto_type: str
+        :param kms_key_id: KMS密钥ID，36个字符
+        :type kms_key_id: str
         """
         
         
@@ -59,6 +67,8 @@ class DstNodeReq:
         self._bucket = None
         self._save_prefix = None
         self._region = None
+        self._crypto_type = None
+        self._kms_key_id = None
         self.discriminator = None
 
         self.ak = ak
@@ -69,6 +79,10 @@ class DstNodeReq:
         if save_prefix is not None:
             self.save_prefix = save_prefix
         self.region = region
+        if crypto_type is not None:
+            self.crypto_type = crypto_type
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
 
     @property
     def ak(self):
@@ -201,6 +215,50 @@ class DstNodeReq:
         :type region: str
         """
         self._region = region
+
+    @property
+    def crypto_type(self):
+        r"""Gets the crypto_type of this DstNodeReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The crypto_type of this DstNodeReq.
+        :rtype: str
+        """
+        return self._crypto_type
+
+    @crypto_type.setter
+    def crypto_type(self, crypto_type):
+        r"""Sets the crypto_type of this DstNodeReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param crypto_type: The crypto_type of this DstNodeReq.
+        :type crypto_type: str
+        """
+        self._crypto_type = crypto_type
+
+    @property
+    def kms_key_id(self):
+        r"""Gets the kms_key_id of this DstNodeReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The kms_key_id of this DstNodeReq.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        r"""Sets the kms_key_id of this DstNodeReq.
+
+        KMS密钥ID，36个字符
+
+        :param kms_key_id: The kms_key_id of this DstNodeReq.
+        :type kms_key_id: str
+        """
+        self._kms_key_id = kms_key_id
 
     def to_dict(self):
         result = {}

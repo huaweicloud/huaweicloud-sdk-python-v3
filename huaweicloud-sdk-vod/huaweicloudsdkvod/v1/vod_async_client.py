@@ -494,6 +494,71 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def create_asset_edit_task_async(self, request):
+        r"""创建编辑任务
+
+        创建编辑任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAssetEditTask
+        :type request: :class:`huaweicloudsdkvod.v1.CreateAssetEditTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetEditTaskResponse`
+        """
+        http_info = self._create_asset_edit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_asset_edit_task_async_invoker(self, request):
+        http_info = self._create_asset_edit_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_asset_edit_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset/editing/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetEditTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_asset_process_task_async(self, request):
         r"""媒资处理
 
@@ -1546,6 +1611,71 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def delete_asset_edit_task_async(self, request):
+        r"""取消编辑任务
+
+        取消编辑任务，仅支持取消等待中的任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAssetEditTask
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetEditTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetEditTaskResponse`
+        """
+        http_info = self._delete_asset_edit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_asset_edit_task_async_invoker(self, request):
+        http_info = self._delete_asset_edit_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_asset_edit_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset/editing/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetEditTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_assets_async(self, request):
         r"""删除媒资
 
@@ -2189,6 +2319,75 @@ class VodAsyncClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_asset_edit_task_async(self, request):
+        r"""查询编辑任务
+
+        查询编辑任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAssetEditTask
+        :type request: :class:`huaweicloudsdkvod.v1.ListAssetEditTaskRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListAssetEditTaskResponse`
+        """
+        http_info = self._list_asset_edit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asset_edit_task_async_invoker(self, request):
+        http_info = self._list_asset_edit_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_asset_edit_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset/editing/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetEditTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:

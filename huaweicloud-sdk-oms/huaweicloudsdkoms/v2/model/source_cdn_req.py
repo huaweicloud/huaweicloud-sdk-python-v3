@@ -18,17 +18,21 @@ class SourceCdnReq:
         'authentication_key': 'str',
         'authentication_type': 'str',
         'domain': 'str',
-        'protocol': 'str'
+        'protocol': 'str',
+        'crypto_type': 'str',
+        'kms_key_id': 'str'
     }
 
     attribute_map = {
         'authentication_key': 'authentication_key',
         'authentication_type': 'authentication_type',
         'domain': 'domain',
-        'protocol': 'protocol'
+        'protocol': 'protocol',
+        'crypto_type': 'crypto_type',
+        'kms_key_id': 'kms_key_id'
     }
 
-    def __init__(self, authentication_key=None, authentication_type=None, domain=None, protocol=None):
+    def __init__(self, authentication_key=None, authentication_type=None, domain=None, protocol=None, crypto_type=None, kms_key_id=None):
         r"""SourceCdnReq
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class SourceCdnReq:
         :type domain: str
         :param protocol: 协议类型，支持http和https协议。
         :type protocol: str
+        :param crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type crypto_type: str
+        :param kms_key_id: KMS密钥ID，36个字符
+        :type kms_key_id: str
         """
         
         
@@ -49,6 +57,8 @@ class SourceCdnReq:
         self._authentication_type = None
         self._domain = None
         self._protocol = None
+        self._crypto_type = None
+        self._kms_key_id = None
         self.discriminator = None
 
         if authentication_key is not None:
@@ -56,6 +66,10 @@ class SourceCdnReq:
         self.authentication_type = authentication_type
         self.domain = domain
         self.protocol = protocol
+        if crypto_type is not None:
+            self.crypto_type = crypto_type
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
 
     @property
     def authentication_key(self):
@@ -144,6 +158,50 @@ class SourceCdnReq:
         :type protocol: str
         """
         self._protocol = protocol
+
+    @property
+    def crypto_type(self):
+        r"""Gets the crypto_type of this SourceCdnReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The crypto_type of this SourceCdnReq.
+        :rtype: str
+        """
+        return self._crypto_type
+
+    @crypto_type.setter
+    def crypto_type(self, crypto_type):
+        r"""Sets the crypto_type of this SourceCdnReq.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param crypto_type: The crypto_type of this SourceCdnReq.
+        :type crypto_type: str
+        """
+        self._crypto_type = crypto_type
+
+    @property
+    def kms_key_id(self):
+        r"""Gets the kms_key_id of this SourceCdnReq.
+
+        KMS密钥ID，36个字符
+
+        :return: The kms_key_id of this SourceCdnReq.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        r"""Sets the kms_key_id of this SourceCdnReq.
+
+        KMS密钥ID，36个字符
+
+        :param kms_key_id: The kms_key_id of this SourceCdnReq.
+        :type kms_key_id: str
+        """
+        self._kms_key_id = kms_key_id
 
     def to_dict(self):
         result = {}

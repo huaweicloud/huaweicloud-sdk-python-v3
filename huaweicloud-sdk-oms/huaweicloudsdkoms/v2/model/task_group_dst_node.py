@@ -17,6 +17,8 @@ class TaskGroupDstNode:
     openapi_types = {
         'ak': 'str',
         'sk': 'str',
+        'crypto_type': 'str',
+        'kms_key_id': 'str',
         'region': 'str',
         'bucket': 'str',
         'cloud_type': 'str',
@@ -26,13 +28,15 @@ class TaskGroupDstNode:
     attribute_map = {
         'ak': 'ak',
         'sk': 'sk',
+        'crypto_type': 'crypto_type',
+        'kms_key_id': 'kms_key_id',
         'region': 'region',
         'bucket': 'bucket',
         'cloud_type': 'cloud_type',
         'save_prefix': 'save_prefix'
     }
 
-    def __init__(self, ak=None, sk=None, region=None, bucket=None, cloud_type=None, save_prefix=None):
+    def __init__(self, ak=None, sk=None, crypto_type=None, kms_key_id=None, region=None, bucket=None, cloud_type=None, save_prefix=None):
         r"""TaskGroupDstNode
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class TaskGroupDstNode:
         :type ak: str
         :param sk: 目的端桶的SK（最大长度100个字符）。
         :type sk: str
+        :param crypto_type: 加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+        :type crypto_type: str
+        :param kms_key_id: KMS密钥ID，36个字符
+        :type kms_key_id: str
         :param region: 目的端桶所处的区域。  请与Endpoint对应的区域保持一致。
         :type region: str
         :param bucket: 目的端的桶名称
@@ -55,6 +63,8 @@ class TaskGroupDstNode:
 
         self._ak = None
         self._sk = None
+        self._crypto_type = None
+        self._kms_key_id = None
         self._region = None
         self._bucket = None
         self._cloud_type = None
@@ -63,6 +73,10 @@ class TaskGroupDstNode:
 
         self.ak = ak
         self.sk = sk
+        if crypto_type is not None:
+            self.crypto_type = crypto_type
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
         self.region = region
         self.bucket = bucket
         if cloud_type is not None:
@@ -113,6 +127,50 @@ class TaskGroupDstNode:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def crypto_type(self):
+        r"""Gets the crypto_type of this TaskGroupDstNode.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :return: The crypto_type of this TaskGroupDstNode.
+        :rtype: str
+        """
+        return self._crypto_type
+
+    @crypto_type.setter
+    def crypto_type(self, crypto_type):
+        r"""Sets the crypto_type of this TaskGroupDstNode.
+
+        加解密类型，默认为DEFAULT，可选类型为DEFAULT、KMS
+
+        :param crypto_type: The crypto_type of this TaskGroupDstNode.
+        :type crypto_type: str
+        """
+        self._crypto_type = crypto_type
+
+    @property
+    def kms_key_id(self):
+        r"""Gets the kms_key_id of this TaskGroupDstNode.
+
+        KMS密钥ID，36个字符
+
+        :return: The kms_key_id of this TaskGroupDstNode.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        r"""Sets the kms_key_id of this TaskGroupDstNode.
+
+        KMS密钥ID，36个字符
+
+        :param kms_key_id: The kms_key_id of this TaskGroupDstNode.
+        :type kms_key_id: str
+        """
+        self._kms_key_id = kms_key_id
 
     @property
     def region(self):
