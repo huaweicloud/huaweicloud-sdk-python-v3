@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListDnsIpResponseBody:
+class RestoreMetaDataTarget:
 
     """
     Attributes:
@@ -15,51 +15,78 @@ class ListDnsIpResponseBody:
     sensitive_list = []
 
     openapi_types = {
-        'ips': 'list[DnsIpResponse]'
+        'data_nodes': 'list[str]',
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'ips': 'ips'
+        'data_nodes': 'data_nodes',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, ips=None):
-        r"""ListDnsIpResponseBody
+    def __init__(self, data_nodes=None, instance_id=None):
+        r"""RestoreMetaDataTarget
 
         The model defined in huaweicloud sdk
 
-        :param ips: 负载均衡器dns ip信息列表。
-        :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
+        :param data_nodes: metadata恢复目标dn。
+        :type data_nodes: list[str]
+        :param instance_id: 实例id。
+        :type instance_id: str
         """
         
         
 
-        self._ips = None
+        self._data_nodes = None
+        self._instance_id = None
         self.discriminator = None
 
-        if ips is not None:
-            self.ips = ips
+        self.data_nodes = data_nodes
+        self.instance_id = instance_id
 
     @property
-    def ips(self):
-        r"""Gets the ips of this ListDnsIpResponseBody.
+    def data_nodes(self):
+        r"""Gets the data_nodes of this RestoreMetaDataTarget.
 
-        负载均衡器dns ip信息列表。
+        metadata恢复目标dn。
 
-        :return: The ips of this ListDnsIpResponseBody.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
+        :return: The data_nodes of this RestoreMetaDataTarget.
+        :rtype: list[str]
         """
-        return self._ips
+        return self._data_nodes
 
-    @ips.setter
-    def ips(self, ips):
-        r"""Sets the ips of this ListDnsIpResponseBody.
+    @data_nodes.setter
+    def data_nodes(self, data_nodes):
+        r"""Sets the data_nodes of this RestoreMetaDataTarget.
 
-        负载均衡器dns ip信息列表。
+        metadata恢复目标dn。
 
-        :param ips: The ips of this ListDnsIpResponseBody.
-        :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
+        :param data_nodes: The data_nodes of this RestoreMetaDataTarget.
+        :type data_nodes: list[str]
         """
-        self._ips = ips
+        self._data_nodes = data_nodes
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this RestoreMetaDataTarget.
+
+        实例id。
+
+        :return: The instance_id of this RestoreMetaDataTarget.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this RestoreMetaDataTarget.
+
+        实例id。
+
+        :param instance_id: The instance_id of this RestoreMetaDataTarget.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         result = {}
@@ -98,7 +125,7 @@ class ListDnsIpResponseBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListDnsIpResponseBody):
+        if not isinstance(other, RestoreMetaDataTarget):
             return False
 
         return self.__dict__ == other.__dict__

@@ -41,10 +41,8 @@ class DataNodeRelation:
         self._target_instance_id = None
         self.discriminator = None
 
-        if source_instance_id is not None:
-            self.source_instance_id = source_instance_id
-        if target_instance_id is not None:
-            self.target_instance_id = target_instance_id
+        self.source_instance_id = source_instance_id
+        self.target_instance_id = target_instance_id
 
     @property
     def source_instance_id(self):

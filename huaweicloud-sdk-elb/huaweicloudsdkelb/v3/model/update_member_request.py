@@ -31,7 +31,7 @@ class UpdateMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param member_id: **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param member_id: **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
         :param pool_id: **参数解释**：后端服务器组ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
@@ -55,7 +55,7 @@ class UpdateMemberRequest:
     def member_id(self):
         r"""Gets the member_id of this UpdateMemberRequest.
 
-        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The member_id of this UpdateMemberRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateMemberRequest:
     def member_id(self, member_id):
         r"""Sets the member_id of this UpdateMemberRequest.
 
-        **参数解释**：后端服务器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。member ID可以通过[查询后端服务器列表](ListMembers.xml)获取。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param member_id: The member_id of this UpdateMemberRequest.
         :type member_id: str

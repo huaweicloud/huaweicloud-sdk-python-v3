@@ -16,35 +16,49 @@ class ListDomainIPsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'ips': 'list[DnsIpResponse]'
+        'ips': 'list[DnsIpResponse]',
+        'page_info': 'PageInfo',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'ips': 'ips'
+        'ips': 'ips',
+        'page_info': 'page_info',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, ips=None):
+    def __init__(self, ips=None, page_info=None, request_id=None):
         r"""ListDomainIPsResponse
 
         The model defined in huaweicloud sdk
 
-        :param ips: 负载均衡器dns ip信息列表。
+        :param ips: 负载均衡器IP地址的域名解析配置列表。
         :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+        :type request_id: str
         """
         
         super().__init__()
 
         self._ips = None
+        self._page_info = None
+        self._request_id = None
         self.discriminator = None
 
         if ips is not None:
             self.ips = ips
+        if page_info is not None:
+            self.page_info = page_info
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def ips(self):
         r"""Gets the ips of this ListDomainIPsResponse.
 
-        负载均衡器dns ip信息列表。
+        负载均衡器IP地址的域名解析配置列表。
 
         :return: The ips of this ListDomainIPsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
@@ -55,12 +69,52 @@ class ListDomainIPsResponse(SdkResponse):
     def ips(self, ips):
         r"""Sets the ips of this ListDomainIPsResponse.
 
-        负载均衡器dns ip信息列表。
+        负载均衡器IP地址的域名解析配置列表。
 
         :param ips: The ips of this ListDomainIPsResponse.
         :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
         """
         self._ips = ips
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListDomainIPsResponse.
+
+        :return: The page_info of this ListDomainIPsResponse.
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListDomainIPsResponse.
+
+        :param page_info: The page_info of this ListDomainIPsResponse.
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        """
+        self._page_info = page_info
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this ListDomainIPsResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :return: The request_id of this ListDomainIPsResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this ListDomainIPsResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :param request_id: The request_id of this ListDomainIPsResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         import warnings

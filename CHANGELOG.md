@@ -1,3 +1,98 @@
+# 3.1.196 2026-05-21
+
+### HuaweiCloud SDK DGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJob**
+    - changes of request param
+      - `+ getJobSubmitVersion`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteLoadbalancers**
+    - changes of response param
+      - `+ request_id`
+  - **BatchDeleteCertificates**
+    - changes of response param
+      - `+ request_id`
+  - **BatchDeletePools**
+    - changes of response param
+      - `+ request_id`
+  - **BatchEnableDomainIPs**
+    - changes of response param
+      - `+ request_id`
+      - `- ips`
+      - `+ ips.enable`
+      - `+ ips.ip_address`
+      - `+ ips.type`
+      - `+ ips.domain_name`
+      - `+ ips.created_at`
+      - `+ ips.updated_at`
+      - `- ips.ips`
+      - `* ips: list<ListDnsIpResponseBody> -> list<DnsIpResponse>`
+  - **BatchDisableDomainIPs**
+    - changes of response param
+      - `+ request_id`
+      - `- ips`
+      - `+ ips.enable`
+      - `+ ips.ip_address`
+      - `+ ips.type`
+      - `+ ips.domain_name`
+      - `+ ips.created_at`
+      - `+ ips.updated_at`
+      - `- ips.ips`
+      - `* ips: list<ListDnsIpResponseBody> -> list<DnsIpResponse>`
+  - **ListDomainIPs**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+      - `+ page_reverse`
+    - changes of response param
+      - `+ page_info`
+      - `+ request_id`
+      - `- ips.id`
+  - **UpdateUserDefinedDomainConfig**
+    - changes of response param
+      - `+ request_id`
+      - `+ loadbalancer.id`
+      - `- loadbalancer.public_dns_zone_id`
+      - `- loadbalancer.private_dns_zone_id`
+  - **UpdateSystemDefaultDomainConfig**
+    - changes of response param
+      - `+ request_id`
+      - `+ loadbalancer.id`
+      - `- loadbalancer.public_dns_zone_id`
+      - `- loadbalancer.private_dns_zone_id`
+  - **ListAllL7Rules**
+    - changes of request param
+      - `+ l7policy_id`
+  - **ListMasterSlavePools**
+    - changes of request param
+      - `+ public_border_group`
+    - changes of response param
+      - `+ pools.public_border_group`
+  - **CreateMasterSlavePool**
+    - changes of request param
+      - `+ pool.public_border_group`
+    - changes of response param
+      - `+ pool.public_border_group`
+  - **ShowMasterSlavePool**
+    - changes of response param
+      - `+ pool.public_border_group`
+
 # 3.1.195 2026-05-14
 
 ### HuaweiCloud SDK DDM

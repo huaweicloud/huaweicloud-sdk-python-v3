@@ -16,19 +16,15 @@ class LoadSchemaMetadataReq:
 
     openapi_types = {
         'compressed_databases_info': 'str',
-        'dn_instance': 'list[DNInstance]',
-        'instance_id': 'str',
-        'project_id': 'str'
+        'dn_instance': 'list[DNInstance]'
     }
 
     attribute_map = {
         'compressed_databases_info': 'compressed_databases_info',
-        'dn_instance': 'dn_instance',
-        'instance_id': 'instance_id',
-        'project_id': 'project_id'
+        'dn_instance': 'dn_instance'
     }
 
-    def __init__(self, compressed_databases_info=None, dn_instance=None, instance_id=None, project_id=None):
+    def __init__(self, compressed_databases_info=None, dn_instance=None):
         r"""LoadSchemaMetadataReq
 
         The model defined in huaweicloud sdk
@@ -37,28 +33,16 @@ class LoadSchemaMetadataReq:
         :type compressed_databases_info: str
         :param dn_instance: 关联的后端DN信息。
         :type dn_instance: list[:class:`huaweicloudsdkddm.v1.DNInstance`]
-        :param instance_id: 实例id。
-        :type instance_id: str
-        :param project_id: 项目id。
-        :type project_id: str
         """
         
         
 
         self._compressed_databases_info = None
         self._dn_instance = None
-        self._instance_id = None
-        self._project_id = None
         self.discriminator = None
 
-        if compressed_databases_info is not None:
-            self.compressed_databases_info = compressed_databases_info
-        if dn_instance is not None:
-            self.dn_instance = dn_instance
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if project_id is not None:
-            self.project_id = project_id
+        self.compressed_databases_info = compressed_databases_info
+        self.dn_instance = dn_instance
 
     @property
     def compressed_databases_info(self):
@@ -103,50 +87,6 @@ class LoadSchemaMetadataReq:
         :type dn_instance: list[:class:`huaweicloudsdkddm.v1.DNInstance`]
         """
         self._dn_instance = dn_instance
-
-    @property
-    def instance_id(self):
-        r"""Gets the instance_id of this LoadSchemaMetadataReq.
-
-        实例id。
-
-        :return: The instance_id of this LoadSchemaMetadataReq.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this LoadSchemaMetadataReq.
-
-        实例id。
-
-        :param instance_id: The instance_id of this LoadSchemaMetadataReq.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def project_id(self):
-        r"""Gets the project_id of this LoadSchemaMetadataReq.
-
-        项目id。
-
-        :return: The project_id of this LoadSchemaMetadataReq.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        r"""Sets the project_id of this LoadSchemaMetadataReq.
-
-        项目id。
-
-        :param project_id: The project_id of this LoadSchemaMetadataReq.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     def to_dict(self):
         result = {}

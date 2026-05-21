@@ -73,7 +73,7 @@ class MasterSlaveHealthMonitor:
         :type name: str
         :param timeout: **参数解释**：一次健康检查请求的超时时间。  **取值范围**：不涉及
         :type timeout: int
-        :param type: **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。
+        :param type: **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。UDP_CONNECT即UDP协议。
         :type type: str
         :param url_path: **参数解释**：健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  **取值范围**：支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&amp;）以及扩展字符集_;~!()*[]@$^:&#39;,+
         :type url_path: str
@@ -356,7 +356,7 @@ class MasterSlaveHealthMonitor:
     def type(self):
         r"""Gets the type of this MasterSlaveHealthMonitor.
 
-        **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。
+        **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。UDP_CONNECT即UDP协议。
 
         :return: The type of this MasterSlaveHealthMonitor.
         :rtype: str
@@ -367,7 +367,7 @@ class MasterSlaveHealthMonitor:
     def type(self, type):
         r"""Sets the type of this MasterSlaveHealthMonitor.
 
-        **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。
+        **参数解释**：健康检查请求协议。  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS。UDP_CONNECT即UDP协议。
 
         :param type: The type of this MasterSlaveHealthMonitor.
         :type type: str

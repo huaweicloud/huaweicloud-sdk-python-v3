@@ -29,7 +29,7 @@ class UpdateCertificateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param certificate_id: 证书ID。
+        :param certificate_id: **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type certificate_id: str
         :param body: Body of the UpdateCertificateRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequestBody`
@@ -49,7 +49,7 @@ class UpdateCertificateRequest:
     def certificate_id(self):
         r"""Gets the certificate_id of this UpdateCertificateRequest.
 
-        证书ID。
+        **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The certificate_id of this UpdateCertificateRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateCertificateRequest:
     def certificate_id(self, certificate_id):
         r"""Sets the certificate_id of this UpdateCertificateRequest.
 
-        证书ID。
+        **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param certificate_id: The certificate_id of this UpdateCertificateRequest.
         :type certificate_id: str

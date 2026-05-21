@@ -235,7 +235,6 @@ from huaweicloudsdkelb.v3.model.list_availability_zones_request import ListAvail
 from huaweicloudsdkelb.v3.model.list_availability_zones_response import ListAvailabilityZonesResponse
 from huaweicloudsdkelb.v3.model.list_certificates_request import ListCertificatesRequest
 from huaweicloudsdkelb.v3.model.list_certificates_response import ListCertificatesResponse
-from huaweicloudsdkelb.v3.model.list_dns_ip_response_body import ListDnsIpResponseBody
 from huaweicloudsdkelb.v3.model.list_domain_i_ps_request import ListDomainIPsRequest
 from huaweicloudsdkelb.v3.model.list_domain_i_ps_response import ListDomainIPsResponse
 from huaweicloudsdkelb.v3.model.list_feature_configs_request import ListFeatureConfigsRequest

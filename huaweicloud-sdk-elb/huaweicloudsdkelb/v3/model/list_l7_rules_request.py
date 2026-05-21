@@ -73,7 +73,7 @@ class ListL7RulesRequest:
         :type value: list[str]
         :param key: **参数解释**：匹配内容的键值，用于标识规则。 支持多值查询，查询条件格式：*key&#x3D;xxx&amp;key&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type key: list[str]
-        :param type: **参数解释**：匹配类别，可以为HOST_NAME，PATH。 支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param type: **参数解释**：匹配类别。 支持多值查询，查询条件格式：*type&#x3D;xxx&amp;type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - HOST_NAME：匹配域名。 - PATH：匹配请求路径。  **默认取值**：不涉及
         :type type: list[str]
         :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： - 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:l7rules:list权限。 - 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: list[str]
@@ -368,7 +368,7 @@ class ListL7RulesRequest:
     def type(self):
         r"""Gets the type of this ListL7RulesRequest.
 
-        **参数解释**：匹配类别，可以为HOST_NAME，PATH。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：匹配类别。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - HOST_NAME：匹配域名。 - PATH：匹配请求路径。  **默认取值**：不涉及
 
         :return: The type of this ListL7RulesRequest.
         :rtype: list[str]
@@ -379,7 +379,7 @@ class ListL7RulesRequest:
     def type(self, type):
         r"""Sets the type of this ListL7RulesRequest.
 
-        **参数解释**：匹配类别，可以为HOST_NAME，PATH。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：匹配类别。 支持多值查询，查询条件格式：*type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - HOST_NAME：匹配域名。 - PATH：匹配请求路径。  **默认取值**：不涉及
 
         :param type: The type of this ListL7RulesRequest.
         :type type: list[str]

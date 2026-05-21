@@ -573,9 +573,9 @@ class ElbClient(Client):
         return http_info
 
     def batch_disable_domain_i_ps(self, request):
-        r"""批量将IP地址从LB实例域名解析中移除
+        r"""批量将IP地址从ELB实例域名解析中移除
 
-        批量将IP地址从LB实例域名解析中移除。
+        批量将IP地址从ELB实例域名解析中移除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -640,9 +640,9 @@ class ElbClient(Client):
         return http_info
 
     def batch_enable_domain_i_ps(self, request):
-        r"""批量将IP地址加入LB实例域名解析中
+        r"""批量将IP地址加入ELB实例域名解析中
 
-        批量将IP地址加入LB实例域名解析中。
+        批量将IP地址加入ELB实例域名解析中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1579,7 +1579,7 @@ class ElbClient(Client):
     def create_listener(self, request):
         r"""创建监听器
 
-        创建监听器。支持通过该接口创建独享型及共享型LB实例下的监听器。
+        创建监听器。支持通过该接口创建独享型及共享型ELB实例下的监听器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3238,6 +3238,9 @@ class ElbClient(Client):
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'multi'
+        if 'l7policy_id' in local_var_params:
+            query_params.append(('l7policy_id', local_var_params['l7policy_id']))
+            collection_formats['l7policy_id'] = 'multi'
 
         header_params = {}
 
@@ -3554,10 +3557,10 @@ class ElbClient(Client):
         return http_info
 
     def list_domain_i_ps(self, request):
-        r"""查询负载均衡器ip的域名配置信息
+        r"""查询负载均衡器IP地址的域名解析配置
 
-        查询负载均衡器ip的域名配置信息，即负载均衡器的ip是否加入了域名解析。
-        注意：当负载均衡器的公网域名和私网域名都没有打开时，该接口返回空列表。
+        查询负载均衡器所有IP的域名解析配置信息，即负载均衡器的IP是否加入了域名解析，以及对应的域名。
+        注意：只返回启用的域名类型对应的配置。若只开启公网域名解析，则只返回该负载均衡器的公网IP的域名解析配置；若负载均衡器的公网域名解析和私网域名解析都没有开启，则该返回空列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3592,6 +3595,12 @@ class ElbClient(Client):
             path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
 
         header_params = {}
 
@@ -4842,6 +4851,9 @@ class ElbClient(Client):
             collection_formats['type'] = 'csv'
         if 'connection_drain' in local_var_params:
             query_params.append(('connection_drain', local_var_params['connection_drain']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
+            collection_formats['public_border_group'] = 'csv'
 
         header_params = {}
 
@@ -7812,9 +7824,9 @@ class ElbClient(Client):
         return http_info
 
     def update_system_default_domain_config(self, request):
-        r"""配置负载均衡器系统默认域名化
+        r"""配置系统默认的负载均衡器域名解析
 
-        配置负载均衡器系统默认域名化。
+        配置系统默认的负载均衡器域名解析。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7879,9 +7891,9 @@ class ElbClient(Client):
         return http_info
 
     def update_user_defined_domain_config(self, request):
-        r"""配置负载均衡器用户自定义域名化
+        r"""自定义配置负载均衡器域名解析
 
-        配置负载均衡器用户自定义域名化。
+        自定义配置负载均衡器域名解析。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

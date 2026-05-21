@@ -33,7 +33,7 @@ class LoadBalancerStatusHealthMonitor:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
+        :param type: **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。UDP_CONNECT即UDP协议。
         :type type: str
         :param id: **参数解释**：健康检查器ID。  **取值范围**：不涉及
         :type id: str
@@ -64,7 +64,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self):
         r"""Gets the type of this LoadBalancerStatusHealthMonitor.
 
-        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
+        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。UDP_CONNECT即UDP协议。
 
         :return: The type of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -75,7 +75,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self, type):
         r"""Sets the type of this LoadBalancerStatusHealthMonitor.
 
-        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。
+        **参数解释**：健康检查器协议类型。  **取值范围**：TCP、UDP_CONNECT、HTTP。UDP_CONNECT即UDP协议。
 
         :param type: The type of this LoadBalancerStatusHealthMonitor.
         :type type: str

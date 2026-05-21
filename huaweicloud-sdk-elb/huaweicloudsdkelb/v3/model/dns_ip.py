@@ -27,7 +27,7 @@ class DnsIp:
 
         The model defined in huaweicloud sdk
 
-        :param ip_address: **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+        :param ip_address: **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
         :type ip_address: str
         """
         
@@ -43,7 +43,7 @@ class DnsIp:
     def ip_address(self):
         r"""Gets the ip_address of this DnsIp.
 
-        **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ip_address of this DnsIp.
         :rtype: str
@@ -54,7 +54,7 @@ class DnsIp:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this DnsIp.
 
-        **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ip_address: The ip_address of this DnsIp.
         :type ip_address: str

@@ -27,7 +27,7 @@ class ShowSecurityPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param security_policy_id: 自定义安全策略ID。
+        :param security_policy_id: **参数解释**：自定义安全策略的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type security_policy_id: str
         """
         
@@ -42,7 +42,7 @@ class ShowSecurityPolicyRequest:
     def security_policy_id(self):
         r"""Gets the security_policy_id of this ShowSecurityPolicyRequest.
 
-        自定义安全策略ID。
+        **参数解释**：自定义安全策略的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The security_policy_id of this ShowSecurityPolicyRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowSecurityPolicyRequest:
     def security_policy_id(self, security_policy_id):
         r"""Sets the security_policy_id of this ShowSecurityPolicyRequest.
 
-        自定义安全策略ID。
+        **参数解释**：自定义安全策略的ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param security_policy_id: The security_policy_id of this ShowSecurityPolicyRequest.
         :type security_policy_id: str

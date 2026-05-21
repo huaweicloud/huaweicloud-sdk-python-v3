@@ -34,7 +34,8 @@ class MasterSlavePool:
         'healthmonitor': 'MasterSlaveHealthMonitor',
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
-        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class MasterSlavePool:
         'healthmonitor': 'healthmonitor',
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
-        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, description=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, created_at=None, updated_at=None, vpc_id=None, type=None, enterprise_project_id=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None):
+    def __init__(self, description=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, created_at=None, updated_at=None, vpc_id=None, type=None, enterprise_project_id=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None, public_border_group=None):
         r"""MasterSlavePool
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class MasterSlavePool:
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         :param quic_cid_hash_strategy: 
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        :param public_border_group: **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+        :type public_border_group: str
         """
         
         
@@ -129,6 +133,7 @@ class MasterSlavePool:
         self._any_port_enable = None
         self._connection_drain = None
         self._quic_cid_hash_strategy = None
+        self._public_border_group = None
         self.discriminator = None
 
         self.description = description
@@ -154,6 +159,8 @@ class MasterSlavePool:
             self.connection_drain = connection_drain
         if quic_cid_hash_strategy is not None:
             self.quic_cid_hash_strategy = quic_cid_hash_strategy
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def description(self):
@@ -578,6 +585,28 @@ class MasterSlavePool:
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         self._quic_cid_hash_strategy = quic_cid_hash_strategy
+
+    @property
+    def public_border_group(self):
+        r"""Gets the public_border_group of this MasterSlavePool.
+
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+
+        :return: The public_border_group of this MasterSlavePool.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        r"""Sets the public_border_group of this MasterSlavePool.
+
+        **参数解释**：公网边界组。  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  [不支持该字段，请勿使用。](tag:hws_eu,hws_eu_wb,hws_test,fcs,dt,hcso_dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,g42,hk_g42)
+
+        :param public_border_group: The public_border_group of this MasterSlavePool.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         result = {}

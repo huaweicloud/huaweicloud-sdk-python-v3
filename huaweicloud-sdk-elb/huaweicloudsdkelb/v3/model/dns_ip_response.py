@@ -15,7 +15,6 @@ class DnsIpResponse:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'enable': 'bool',
         'ip_address': 'str',
         'type': 'str',
@@ -25,7 +24,6 @@ class DnsIpResponse:
     }
 
     attribute_map = {
-        'id': 'id',
         'enable': 'enable',
         'ip_address': 'ip_address',
         'type': 'type',
@@ -34,30 +32,27 @@ class DnsIpResponse:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, enable=None, ip_address=None, type=None, domain_name=None, created_at=None, updated_at=None):
+    def __init__(self, enable=None, ip_address=None, type=None, domain_name=None, created_at=None, updated_at=None):
         r"""DnsIpResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: dns ip信息的ID。
-        :type id: str
-        :param enable: **参数解释**：ip是否加入了域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        :param enable: **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
         :type enable: bool
-        :param ip_address: **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。
+        :param ip_address: **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。
         :type ip_address: str
-        :param type: **参数解释**：地址类型。  **取值范围**： vip：私网ip。 eip：公网ip。
+        :param type: **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
         :type type: str
-        :param domain_name: **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
+        :param domain_name: **参数解释**：当前IP地址关联的负载均衡实例域名。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。
         :type domain_name: str
-        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :param created_at: **参数解释**：创建时间。  **取值范围**：不涉及
         :type created_at: str
-        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
+        :param updated_at: **参数解释**：更新时间。  **取值范围**：不涉及
         :type updated_at: str
         """
         
         
 
-        self._id = None
         self._enable = None
         self._ip_address = None
         self._type = None
@@ -66,8 +61,6 @@ class DnsIpResponse:
         self._updated_at = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
         if enable is not None:
             self.enable = enable
         if ip_address is not None:
@@ -82,32 +75,10 @@ class DnsIpResponse:
             self.updated_at = updated_at
 
     @property
-    def id(self):
-        r"""Gets the id of this DnsIpResponse.
-
-        dns ip信息的ID。
-
-        :return: The id of this DnsIpResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this DnsIpResponse.
-
-        dns ip信息的ID。
-
-        :param id: The id of this DnsIpResponse.
-        :type id: str
-        """
-        self._id = id
-
-    @property
     def enable(self):
         r"""Gets the enable of this DnsIpResponse.
 
-        **参数解释**：ip是否加入了域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
 
         :return: The enable of this DnsIpResponse.
         :rtype: bool
@@ -118,7 +89,7 @@ class DnsIpResponse:
     def enable(self, enable):
         r"""Sets the enable of this DnsIpResponse.
 
-        **参数解释**：ip是否加入了域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
 
         :param enable: The enable of this DnsIpResponse.
         :type enable: bool
@@ -129,7 +100,7 @@ class DnsIpResponse:
     def ip_address(self):
         r"""Gets the ip_address of this DnsIpResponse.
 
-        **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。
+        **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。
 
         :return: The ip_address of this DnsIpResponse.
         :rtype: str
@@ -140,7 +111,7 @@ class DnsIpResponse:
     def ip_address(self, ip_address):
         r"""Sets the ip_address of this DnsIpResponse.
 
-        **参数解释**：ip地址。可以是ipv4地址也可以是ipv6地址。  **约束限制**：必须是负载均衡器的私网地址或者公网地址。
+        **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。
 
         :param ip_address: The ip_address of this DnsIpResponse.
         :type ip_address: str
@@ -151,7 +122,7 @@ class DnsIpResponse:
     def type(self):
         r"""Gets the type of this DnsIpResponse.
 
-        **参数解释**：地址类型。  **取值范围**： vip：私网ip。 eip：公网ip。
+        **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
 
         :return: The type of this DnsIpResponse.
         :rtype: str
@@ -162,7 +133,7 @@ class DnsIpResponse:
     def type(self, type):
         r"""Sets the type of this DnsIpResponse.
 
-        **参数解释**：地址类型。  **取值范围**： vip：私网ip。 eip：公网ip。
+        **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
 
         :param type: The type of this DnsIpResponse.
         :type type: str
@@ -173,7 +144,7 @@ class DnsIpResponse:
     def domain_name(self):
         r"""Gets the domain_name of this DnsIpResponse.
 
-        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
+        **参数解释**：当前IP地址关联的负载均衡实例域名。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。
 
         :return: The domain_name of this DnsIpResponse.
         :rtype: str
@@ -184,7 +155,7 @@ class DnsIpResponse:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this DnsIpResponse.
 
-        **参数解释**：ip对应的域名。  **约束限制**： - 如果ip为私网类型，则这里为负载均衡实例的私网域名。 - 如果ip为公网类型，则这里为负载均衡实例的公网域名。
+        **参数解释**：当前IP地址关联的负载均衡实例域名。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。
 
         :param domain_name: The domain_name of this DnsIpResponse.
         :type domain_name: str
@@ -195,7 +166,7 @@ class DnsIpResponse:
     def created_at(self):
         r"""Gets the created_at of this DnsIpResponse.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：创建时间。  **取值范围**：不涉及
 
         :return: The created_at of this DnsIpResponse.
         :rtype: str
@@ -206,7 +177,7 @@ class DnsIpResponse:
     def created_at(self, created_at):
         r"""Sets the created_at of this DnsIpResponse.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：创建时间。  **取值范围**：不涉及
 
         :param created_at: The created_at of this DnsIpResponse.
         :type created_at: str
@@ -217,7 +188,7 @@ class DnsIpResponse:
     def updated_at(self):
         r"""Gets the updated_at of this DnsIpResponse.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：更新时间。  **取值范围**：不涉及
 
         :return: The updated_at of this DnsIpResponse.
         :rtype: str
@@ -228,7 +199,7 @@ class DnsIpResponse:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this DnsIpResponse.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。
+        **参数解释**：更新时间。  **取值范围**：不涉及
 
         :param updated_at: The updated_at of this DnsIpResponse.
         :type updated_at: str

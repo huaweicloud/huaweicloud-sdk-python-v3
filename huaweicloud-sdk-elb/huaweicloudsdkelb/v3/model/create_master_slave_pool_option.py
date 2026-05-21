@@ -31,7 +31,8 @@ class CreateMasterSlavePoolOption:
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
         'quic_cid_hash_strategy': 'QuicCidHashStrategy',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateMasterSlavePoolOption:
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
         'quic_cid_hash_strategy': 'quic_cid_hash_strategy',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None, enterprise_project_id=None):
+    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None, enterprise_project_id=None, public_border_group=None):
         r"""CreateMasterSlavePoolOption
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class CreateMasterSlavePoolOption:
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id&#x3D;\&quot;0\&quot;。  **约束限制**：不能传入空字符串\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\&quot;0\&quot;  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
+        :param public_border_group: **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+        :type public_border_group: str
         """
         
         
@@ -114,6 +118,7 @@ class CreateMasterSlavePoolOption:
         self._connection_drain = None
         self._quic_cid_hash_strategy = None
         self._enterprise_project_id = None
+        self._public_border_group = None
         self.discriminator = None
 
         if description is not None:
@@ -145,6 +150,8 @@ class CreateMasterSlavePoolOption:
             self.quic_cid_hash_strategy = quic_cid_hash_strategy
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def description(self):
@@ -503,6 +510,28 @@ class CreateMasterSlavePoolOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def public_border_group(self):
+        r"""Gets the public_border_group of this CreateMasterSlavePoolOption.
+
+        **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+
+        :return: The public_border_group of this CreateMasterSlavePoolOption.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        r"""Sets the public_border_group of this CreateMasterSlavePoolOption.
+
+        **参数解释**：公网边界组。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+
+        :param public_border_group: The public_border_group of this CreateMasterSlavePoolOption.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         result = {}

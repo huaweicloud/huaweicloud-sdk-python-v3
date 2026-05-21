@@ -15,46 +15,46 @@ class DnsConfigResponseBody:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'vip_address': 'str',
         'ipv6_vip_address': 'str',
         'eips': 'list[EipInfo]',
         'global_eips': 'list[GlobalEipInfo]',
         'public_domain_name_enable': 'bool',
         'public_dns_zone_name': 'str',
-        'public_dns_zone_id': 'str',
         'public_domain_name': 'str',
         'public_dns_record_set_ttl': 'int',
         'private_domain_name_enable': 'bool',
         'private_dns_zone_name': 'str',
-        'private_dns_zone_id': 'str',
         'private_domain_name': 'str',
         'private_dns_zone_type': 'str',
         'private_dns_record_set_ttl': 'int'
     }
 
     attribute_map = {
+        'id': 'id',
         'vip_address': 'vip_address',
         'ipv6_vip_address': 'ipv6_vip_address',
         'eips': 'eips',
         'global_eips': 'global_eips',
         'public_domain_name_enable': 'public_domain_name_enable',
         'public_dns_zone_name': 'public_dns_zone_name',
-        'public_dns_zone_id': 'public_dns_zone_id',
         'public_domain_name': 'public_domain_name',
         'public_dns_record_set_ttl': 'public_dns_record_set_ttl',
         'private_domain_name_enable': 'private_domain_name_enable',
         'private_dns_zone_name': 'private_dns_zone_name',
-        'private_dns_zone_id': 'private_dns_zone_id',
         'private_domain_name': 'private_domain_name',
         'private_dns_zone_type': 'private_dns_zone_type',
         'private_dns_record_set_ttl': 'private_dns_record_set_ttl'
     }
 
-    def __init__(self, vip_address=None, ipv6_vip_address=None, eips=None, global_eips=None, public_domain_name_enable=None, public_dns_zone_name=None, public_dns_zone_id=None, public_domain_name=None, public_dns_record_set_ttl=None, private_domain_name_enable=None, private_dns_zone_name=None, private_dns_zone_id=None, private_domain_name=None, private_dns_zone_type=None, private_dns_record_set_ttl=None):
+    def __init__(self, id=None, vip_address=None, ipv6_vip_address=None, eips=None, global_eips=None, public_domain_name_enable=None, public_dns_zone_name=None, public_domain_name=None, public_dns_record_set_ttl=None, private_domain_name_enable=None, private_dns_zone_name=None, private_domain_name=None, private_dns_zone_type=None, private_dns_record_set_ttl=None):
         r"""DnsConfigResponseBody
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释**：自定义域名解析配置ID。
+        :type id: str
         :param vip_address: **参数解释**：负载均衡器的IPv4虚拟IP地址。
         :type vip_address: str
         :param ipv6_vip_address: **参数解释**：双栈类型负载均衡器的IPv6地址。  **约束限制**：[不支持IPv6，请勿使用。](tag:dt)
@@ -67,8 +67,6 @@ class DnsConfigResponseBody:
         :type public_domain_name_enable: bool
         :param public_dns_zone_name: **参数解释**：公网域名所使用的zone名称。 **约束限制**：   公网域名只能使用公网类型的zone。   当配置公网域名开关打开时，该字段不能置空。   所填的公网zone必须在云解析服务已注册过。
         :type public_dns_zone_name: str
-        :param public_dns_zone_id: **参数解释**：   公网域名所使用的zone对应的id。   根据传入的公网zone 名称查询得出。
-        :type public_dns_zone_id: str
         :param public_domain_name: **参数解释**：   负载均衡实例的公网域名。 **约束限制**：   根据负载均衡实例id，局点id和zone信息以如下格式生成：   {lb_id}.elb.{region_id}.{zone_name}
         :type public_domain_name: str
         :param public_dns_record_set_ttl: 参数解释:   公网解析记录集超时时间。   解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。   如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。 **取值范围**：   1-2147483647 **默认取值**：   300
@@ -77,8 +75,6 @@ class DnsConfigResponseBody:
         :type private_domain_name_enable: bool
         :param private_dns_zone_name: **参数解释**：   私网域名所使用的zone的名称。 **约束限制**：   私网域名既能使用公网zone，也能使用私网zone，zone的类型在private_dns_zone_type字段中指定。   当配置私网域名开关打开时，该字段不能置空。   所填的私网zone必须在云解析服务已注册过。
         :type private_dns_zone_name: str
-        :param private_dns_zone_id: **参数解释**：   私网域名所使用的zone对应的id。 **约束限制**：   根据传入的私网zone 名称查询得出。
-        :type private_dns_zone_id: str
         :param private_domain_name: **参数解释**：负载均衡实例的私网域名。 **约束限制**：   根据负载均衡实例id，局点id和zone信息以如下格式生成：   {lb_id}-internal.elb.{region_id}.{zone_name}
         :type private_domain_name: str
         :param private_dns_zone_type: **参数解释**：私网域名所使用的zone的类型。 **约束限制**：不涉及 **取值范围**：private public **默认取值**：private
@@ -89,23 +85,24 @@ class DnsConfigResponseBody:
         
         
 
+        self._id = None
         self._vip_address = None
         self._ipv6_vip_address = None
         self._eips = None
         self._global_eips = None
         self._public_domain_name_enable = None
         self._public_dns_zone_name = None
-        self._public_dns_zone_id = None
         self._public_domain_name = None
         self._public_dns_record_set_ttl = None
         self._private_domain_name_enable = None
         self._private_dns_zone_name = None
-        self._private_dns_zone_id = None
         self._private_domain_name = None
         self._private_dns_zone_type = None
         self._private_dns_record_set_ttl = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if vip_address is not None:
             self.vip_address = vip_address
         if ipv6_vip_address is not None:
@@ -118,8 +115,6 @@ class DnsConfigResponseBody:
             self.public_domain_name_enable = public_domain_name_enable
         if public_dns_zone_name is not None:
             self.public_dns_zone_name = public_dns_zone_name
-        if public_dns_zone_id is not None:
-            self.public_dns_zone_id = public_dns_zone_id
         if public_domain_name is not None:
             self.public_domain_name = public_domain_name
         if public_dns_record_set_ttl is not None:
@@ -128,14 +123,34 @@ class DnsConfigResponseBody:
             self.private_domain_name_enable = private_domain_name_enable
         if private_dns_zone_name is not None:
             self.private_dns_zone_name = private_dns_zone_name
-        if private_dns_zone_id is not None:
-            self.private_dns_zone_id = private_dns_zone_id
         if private_domain_name is not None:
             self.private_domain_name = private_domain_name
         if private_dns_zone_type is not None:
             self.private_dns_zone_type = private_dns_zone_type
         if private_dns_record_set_ttl is not None:
             self.private_dns_record_set_ttl = private_dns_record_set_ttl
+
+    @property
+    def id(self):
+        r"""Gets the id of this DnsConfigResponseBody.
+
+        **参数解释**：自定义域名解析配置ID。
+
+        :return: The id of this DnsConfigResponseBody.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this DnsConfigResponseBody.
+
+        **参数解释**：自定义域名解析配置ID。
+
+        :param id: The id of this DnsConfigResponseBody.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def vip_address(self):
@@ -270,28 +285,6 @@ class DnsConfigResponseBody:
         self._public_dns_zone_name = public_dns_zone_name
 
     @property
-    def public_dns_zone_id(self):
-        r"""Gets the public_dns_zone_id of this DnsConfigResponseBody.
-
-        **参数解释**：   公网域名所使用的zone对应的id。   根据传入的公网zone 名称查询得出。
-
-        :return: The public_dns_zone_id of this DnsConfigResponseBody.
-        :rtype: str
-        """
-        return self._public_dns_zone_id
-
-    @public_dns_zone_id.setter
-    def public_dns_zone_id(self, public_dns_zone_id):
-        r"""Sets the public_dns_zone_id of this DnsConfigResponseBody.
-
-        **参数解释**：   公网域名所使用的zone对应的id。   根据传入的公网zone 名称查询得出。
-
-        :param public_dns_zone_id: The public_dns_zone_id of this DnsConfigResponseBody.
-        :type public_dns_zone_id: str
-        """
-        self._public_dns_zone_id = public_dns_zone_id
-
-    @property
     def public_domain_name(self):
         r"""Gets the public_domain_name of this DnsConfigResponseBody.
 
@@ -378,28 +371,6 @@ class DnsConfigResponseBody:
         :type private_dns_zone_name: str
         """
         self._private_dns_zone_name = private_dns_zone_name
-
-    @property
-    def private_dns_zone_id(self):
-        r"""Gets the private_dns_zone_id of this DnsConfigResponseBody.
-
-        **参数解释**：   私网域名所使用的zone对应的id。 **约束限制**：   根据传入的私网zone 名称查询得出。
-
-        :return: The private_dns_zone_id of this DnsConfigResponseBody.
-        :rtype: str
-        """
-        return self._private_dns_zone_id
-
-    @private_dns_zone_id.setter
-    def private_dns_zone_id(self, private_dns_zone_id):
-        r"""Sets the private_dns_zone_id of this DnsConfigResponseBody.
-
-        **参数解释**：   私网域名所使用的zone对应的id。 **约束限制**：   根据传入的私网zone 名称查询得出。
-
-        :param private_dns_zone_id: The private_dns_zone_id of this DnsConfigResponseBody.
-        :type private_dns_zone_id: str
-        """
-        self._private_dns_zone_id = private_dns_zone_id
 
     @property
     def private_domain_name(self):

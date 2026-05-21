@@ -23,7 +23,7 @@ class JobItem:
         'process': 'str',
         'instance_name': 'str',
         'instance_id': 'str',
-        'jobs': 'list[str]',
+        'operations': 'list[str]',
         'database_name': 'str',
         'fail_reason': 'str'
     }
@@ -37,12 +37,12 @@ class JobItem:
         'process': 'process',
         'instance_name': 'instance_name',
         'instance_id': 'instance_id',
-        'jobs': 'jobs',
+        'operations': 'operations',
         'database_name': 'database_name',
         'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, id=None, name=None, status=None, created_time=None, end_time=None, process=None, instance_name=None, instance_id=None, jobs=None, database_name=None, fail_reason=None):
+    def __init__(self, id=None, name=None, status=None, created_time=None, end_time=None, process=None, instance_name=None, instance_id=None, operations=None, database_name=None, fail_reason=None):
         r"""JobItem
 
         The model defined in huaweicloud sdk
@@ -63,8 +63,8 @@ class JobItem:
         :type instance_name: str
         :param instance_id: 实例id。
         :type instance_id: str
-        :param jobs: 操作。
-        :type jobs: list[str]
+        :param operations: 操作。
+        :type operations: list[str]
         :param database_name: 逻辑库名称。
         :type database_name: str
         :param fail_reason: 失败原因。
@@ -81,7 +81,7 @@ class JobItem:
         self._process = None
         self._instance_name = None
         self._instance_id = None
-        self._jobs = None
+        self._operations = None
         self._database_name = None
         self._fail_reason = None
         self.discriminator = None
@@ -102,8 +102,8 @@ class JobItem:
             self.instance_name = instance_name
         if instance_id is not None:
             self.instance_id = instance_id
-        if jobs is not None:
-            self.jobs = jobs
+        if operations is not None:
+            self.operations = operations
         if database_name is not None:
             self.database_name = database_name
         if fail_reason is not None:
@@ -286,26 +286,26 @@ class JobItem:
         self._instance_id = instance_id
 
     @property
-    def jobs(self):
-        r"""Gets the jobs of this JobItem.
+    def operations(self):
+        r"""Gets the operations of this JobItem.
 
         操作。
 
-        :return: The jobs of this JobItem.
+        :return: The operations of this JobItem.
         :rtype: list[str]
         """
-        return self._jobs
+        return self._operations
 
-    @jobs.setter
-    def jobs(self, jobs):
-        r"""Sets the jobs of this JobItem.
+    @operations.setter
+    def operations(self, operations):
+        r"""Sets the operations of this JobItem.
 
         操作。
 
-        :param jobs: The jobs of this JobItem.
-        :type jobs: list[str]
+        :param operations: The operations of this JobItem.
+        :type operations: list[str]
         """
-        self._jobs = jobs
+        self._operations = operations
 
     @property
     def database_name(self):

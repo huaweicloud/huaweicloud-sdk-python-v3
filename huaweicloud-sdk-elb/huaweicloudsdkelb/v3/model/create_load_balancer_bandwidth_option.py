@@ -37,7 +37,7 @@ class CreateLoadBalancerBandwidthOption:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**：带宽名称。  **约束限制**： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
+        :param name: **参数解释**：带宽名称。  **约束限制**：  - 如果选用的是独享带宽，share_type是PER，该字段是必选。 - 如果使用的是共享带宽，参数bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
         :type name: str
         :param size: **参数解释**：带宽大小。  **约束限制**： - 当id字段为null时，size是必须的。 - 调整带宽时的最小单位会根据带宽范围不同存在差异。   + 小于等于300Mbit/s: 默认最小单位为1Mbit/s。   + 300Mbit/s~1000Mbit/s: 默认最小单位为50Mbit/s。   + 大于1000Mbit/s: 默认最小单位为500Mbit/s。  **取值范围**：默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。  **默认取值**：不涉及
         :type size: int
@@ -78,7 +78,7 @@ class CreateLoadBalancerBandwidthOption:
     def name(self):
         r"""Gets the name of this CreateLoadBalancerBandwidthOption.
 
-        **参数解释**：带宽名称。  **约束限制**： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
+        **参数解释**：带宽名称。  **约束限制**：  - 如果选用的是独享带宽，share_type是PER，该字段是必选。 - 如果使用的是共享带宽，参数bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
 
         :return: The name of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateLoadBalancerBandwidthOption:
     def name(self, name):
         r"""Sets the name of this CreateLoadBalancerBandwidthOption.
 
-        **参数解释**：带宽名称。  **约束限制**： - 如果share_type是PER，该字段是必选。 - 如果bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
+        **参数解释**：带宽名称。  **约束限制**：  - 如果选用的是独享带宽，share_type是PER，该字段是必选。 - 如果使用的是共享带宽，参数bandwidth对象的id有值，该字段被忽略。  **取值范围**：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  **默认取值**：不涉及
 
         :param name: The name of this CreateLoadBalancerBandwidthOption.
         :type name: str

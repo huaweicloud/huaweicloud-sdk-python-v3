@@ -33,7 +33,8 @@ class ListMasterSlavePoolsRequest:
         'member_instance_id': 'list[str]',
         'vpc_id': 'list[str]',
         'type': 'list[str]',
-        'connection_drain': 'bool'
+        'connection_drain': 'bool',
+        'public_border_group': 'list[str]'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class ListMasterSlavePoolsRequest:
         'member_instance_id': 'member_instance_id',
         'vpc_id': 'vpc_id',
         'type': 'type',
-        'connection_drain': 'connection_drain'
+        'connection_drain': 'connection_drain',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, connection_drain=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, connection_drain=None, public_border_group=None):
         r"""ListMasterSlavePoolsRequest
 
         The model defined in huaweicloud sdk
@@ -101,6 +103,8 @@ class ListMasterSlavePoolsRequest:
         :type type: list[str]
         :param connection_drain: **参数解释**：查询是否开启延迟注销的功能，查询条件格式：*connection_drain&#x3D;true或者*connection_drain&#x3D;false  **约束限制**：不涉及  **取值范围**：true 开启，false 不开启。  **默认取值**：不涉及
         :type connection_drain: bool
+        :param public_border_group: **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group&#x3D;xxx&amp;public_border_group&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+        :type public_border_group: list[str]
         """
         
         
@@ -124,6 +128,7 @@ class ListMasterSlavePoolsRequest:
         self._vpc_id = None
         self._type = None
         self._connection_drain = None
+        self._public_border_group = None
         self.discriminator = None
 
         if marker is not None:
@@ -164,6 +169,8 @@ class ListMasterSlavePoolsRequest:
             self.type = type
         if connection_drain is not None:
             self.connection_drain = connection_drain
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def marker(self):
@@ -582,6 +589,28 @@ class ListMasterSlavePoolsRequest:
         :type connection_drain: bool
         """
         self._connection_drain = connection_drain
+
+    @property
+    def public_border_group(self):
+        r"""Gets the public_border_group of this ListMasterSlavePoolsRequest.
+
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+
+        :return: The public_border_group of this ListMasterSlavePoolsRequest.
+        :rtype: list[str]
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        r"""Sets the public_border_group of this ListMasterSlavePoolsRequest.
+
+        **参数解释**：公网边界组。 支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。  **约束限制**：不涉及  **取值范围**： - center：表示中心站点的公网边界组 - 边缘站点名称：表示边缘站点的公网边界组  **默认取值**：不涉及
+
+        :param public_border_group: The public_border_group of this ListMasterSlavePoolsRequest.
+        :type public_border_group: list[str]
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         result = {}

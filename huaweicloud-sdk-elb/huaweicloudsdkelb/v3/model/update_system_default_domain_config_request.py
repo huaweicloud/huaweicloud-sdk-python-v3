@@ -29,7 +29,7 @@ class UpdateSystemDefaultDomainConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_id: 负载均衡器ID。
+        :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
         :param body: Body of the UpdateSystemDefaultDomainConfigRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateSystemDefaultDomainConfigRequestBody`
@@ -49,7 +49,7 @@ class UpdateSystemDefaultDomainConfigRequest:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this UpdateSystemDefaultDomainConfigRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The loadbalancer_id of this UpdateSystemDefaultDomainConfigRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateSystemDefaultDomainConfigRequest:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this UpdateSystemDefaultDomainConfigRequest.
 
-        负载均衡器ID。
+        **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param loadbalancer_id: The loadbalancer_id of this UpdateSystemDefaultDomainConfigRequest.
         :type loadbalancer_id: str

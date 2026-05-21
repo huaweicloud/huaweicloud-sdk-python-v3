@@ -27,6 +27,7 @@ from huaweicloudsdkddm.v1.model.change_database_version_request import ChangeDat
 from huaweicloudsdkddm.v1.model.change_database_version_response import ChangeDatabaseVersionResponse
 from huaweicloudsdkddm.v1.model.change_strategy_request import ChangeStrategyRequest
 from huaweicloudsdkddm.v1.model.change_strategy_response import ChangeStrategyResponse
+from huaweicloudsdkddm.v1.model.charge_info import ChargeInfo
 from huaweicloudsdkddm.v1.model.check_data_node_connection_request import CheckDataNodeConnectionRequest
 from huaweicloudsdkddm.v1.model.check_data_node_connection_response import CheckDataNodeConnectionResponse
 from huaweicloudsdkddm.v1.model.check_migrate_logic_db_request import CheckMigrateLogicDbRequest
@@ -270,6 +271,8 @@ from huaweicloudsdkddm.v1.model.restore2_exist_request import Restore2ExistReque
 from huaweicloudsdkddm.v1.model.restore2_exist_response import Restore2ExistResponse
 from huaweicloudsdkddm.v1.model.restore_inst2_exist_req import RestoreInst2ExistReq
 from huaweicloudsdkddm.v1.model.restore_meta_data2_exist_req import RestoreMetaData2ExistReq
+from huaweicloudsdkddm.v1.model.restore_meta_data_source import RestoreMetaDataSource
+from huaweicloudsdkddm.v1.model.restore_meta_data_target import RestoreMetaDataTarget
 from huaweicloudsdkddm.v1.model.restore_metadata_request import RestoreMetadataRequest
 from huaweicloudsdkddm.v1.model.restore_metadata_response import RestoreMetadataResponse
 from huaweicloudsdkddm.v1.model.restore_time_interval import RestoreTimeInterval

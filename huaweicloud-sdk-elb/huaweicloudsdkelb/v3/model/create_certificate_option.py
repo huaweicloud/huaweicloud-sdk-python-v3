@@ -57,7 +57,7 @@ class CreateCertificateOption:
 
         :param admin_state_up: **参数解释**：证书的管理状态。该字段当前无用，设置为true或者false都不影响证书使用。  **约束限制**：不涉及  **取值范围**： - true：表示证书可用。 - false：表示证书不可用。  **默认取值**：true
         :type admin_state_up: bool
-        :param certificate: **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        :param certificate: **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
         :type certificate: str
         :param description: **参数解释**：证书的描述。  **约束限制**：不涉及  **取值范围**：0-255个字符。  **默认取值**：不涉及
         :type description: str
@@ -73,7 +73,7 @@ class CreateCertificateOption:
         :type type: str
         :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id&#x3D;\&quot;0\&quot;。  **约束限制**：不能传入空字符串\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\&quot;0\&quot;  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type enterprise_project_id: str
-        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
         :type enc_certificate: str
         :param enc_private_key: **参数解释**：服务器SM双证书的私钥。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式，最大长度8192个字符。  **默认取值**：不涉及
         :type enc_private_key: str
@@ -163,7 +163,7 @@ class CreateCertificateOption:
     def certificate(self):
         r"""Gets the certificate of this CreateCertificateOption.
 
-        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
 
         :return: The certificate of this CreateCertificateOption.
         :rtype: str
@@ -174,7 +174,7 @@ class CreateCertificateOption:
     def certificate(self, certificate):
         r"""Sets the certificate of this CreateCertificateOption.
 
-        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
 
         :param certificate: The certificate of this CreateCertificateOption.
         :type certificate: str
@@ -339,7 +339,7 @@ class CreateCertificateOption:
     def enc_certificate(self):
         r"""Gets the enc_certificate of this CreateCertificateOption.
 
-        **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
 
         :return: The enc_certificate of this CreateCertificateOption.
         :rtype: str
@@ -350,7 +350,7 @@ class CreateCertificateOption:
     def enc_certificate(self, enc_certificate):
         r"""Sets the enc_certificate of this CreateCertificateOption.
 
-        **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        **参数解释**：服务器SM双证书的证书内容。支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
 
         :param enc_certificate: The enc_certificate of this CreateCertificateOption.
         :type enc_certificate: str

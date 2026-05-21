@@ -47,7 +47,7 @@ class UpdateCertificateOption:
 
         The model defined in huaweicloud sdk
 
-        :param certificate: **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        :param certificate: **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
         :type certificate: str
         :param description: **参数解释**：证书的描述。  **约束限制**：不涉及  **取值范围**：0-255个字符。  **默认取值**：不涉及
         :type description: str
@@ -57,7 +57,7 @@ class UpdateCertificateOption:
         :type private_key: str
         :param domain: **参数解释**：服务器证书所签域名。  **约束限制**：该字段仅type为server时有效（其他类型证书，字段可传入，但不会生效）。  **取值范围**：总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分隔，不超过100个域名。 - 普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分隔，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com。 - 泛域名：在普通域名的基础上仅允许首字母为\&quot;\\*\&quot;。例：\\*.test.com。  **默认取值**：不涉及
         :type domain: str
-        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
         :type enc_certificate: str
         :param enc_private_key: **参数解释**：服务器SM双证书的私钥。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式，最大长度8192个字符。  **默认取值**：不涉及
         :type enc_private_key: str
@@ -113,7 +113,7 @@ class UpdateCertificateOption:
     def certificate(self):
         r"""Gets the certificate of this UpdateCertificateOption.
 
-        **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
 
         :return: The certificate of this UpdateCertificateOption.
         :rtype: str
@@ -124,7 +124,7 @@ class UpdateCertificateOption:
     def certificate(self, certificate):
         r"""Sets the certificate of this UpdateCertificateOption.
 
-        **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度65536个字符。  **默认取值**：不涉及
+        **参数解释**：证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：不涉及  **取值范围**：PEM编码格式，最大长度20000个字符。  **默认取值**：不涉及
 
         :param certificate: The certificate of this UpdateCertificateOption.
         :type certificate: str
@@ -223,7 +223,7 @@ class UpdateCertificateOption:
     def enc_certificate(self):
         r"""Gets the enc_certificate of this UpdateCertificateOption.
 
-        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
 
         :return: The enc_certificate of this UpdateCertificateOption.
         :rtype: str
@@ -234,7 +234,7 @@ class UpdateCertificateOption:
     def enc_certificate(self, enc_certificate):
         r"""Sets the enc_certificate of this UpdateCertificateOption.
 
-        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度65536字符。  **默认取值**：不涉及
+        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **约束限制**：仅当type为server_sm时，才支持传入。  **取值范围**：PEM编码格式。最大长度20000字符。  **默认取值**：不涉及
 
         :param enc_certificate: The enc_certificate of this UpdateCertificateOption.
         :type enc_certificate: str

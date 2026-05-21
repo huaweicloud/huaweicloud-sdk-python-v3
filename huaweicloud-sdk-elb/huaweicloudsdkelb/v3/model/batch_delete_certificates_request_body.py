@@ -36,7 +36,8 @@ class BatchDeleteCertificatesRequestBody:
         self._certificates = None
         self.discriminator = None
 
-        self.certificates = certificates
+        if certificates is not None:
+            self.certificates = certificates
 
     @property
     def certificates(self):

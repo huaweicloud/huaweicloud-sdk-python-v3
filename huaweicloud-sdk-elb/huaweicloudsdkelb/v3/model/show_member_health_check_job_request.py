@@ -27,7 +27,7 @@ class ShowMemberHealthCheckJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: **参数解释**：创建后端服务器检测任务的接口返回的job_id。
+        :param job_id: **参数解释**：创建后端服务器检测任务的接口返回的job_id。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type job_id: str
         """
         
@@ -42,7 +42,7 @@ class ShowMemberHealthCheckJobRequest:
     def job_id(self):
         r"""Gets the job_id of this ShowMemberHealthCheckJobRequest.
 
-        **参数解释**：创建后端服务器检测任务的接口返回的job_id。
+        **参数解释**：创建后端服务器检测任务的接口返回的job_id。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The job_id of this ShowMemberHealthCheckJobRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowMemberHealthCheckJobRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ShowMemberHealthCheckJobRequest.
 
-        **参数解释**：创建后端服务器检测任务的接口返回的job_id。
+        **参数解释**：创建后端服务器检测任务的接口返回的job_id。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param job_id: The job_id of this ShowMemberHealthCheckJobRequest.
         :type job_id: str

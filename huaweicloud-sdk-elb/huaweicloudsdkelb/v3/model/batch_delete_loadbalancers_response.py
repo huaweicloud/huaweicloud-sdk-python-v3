@@ -16,20 +16,24 @@ class BatchDeleteLoadbalancersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
         'job_id': 'str',
         'loadbalancer_ids': 'list[str]'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
         'job_id': 'job_id',
         'loadbalancer_ids': 'loadbalancer_ids'
     }
 
-    def __init__(self, job_id=None, loadbalancer_ids=None):
+    def __init__(self, request_id=None, job_id=None, loadbalancer_ids=None):
         r"""BatchDeleteLoadbalancersResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+        :type request_id: str
         :param job_id: 批量删除任务id
         :type job_id: str
         :param loadbalancer_ids: 待删除的负载均衡器id列表。
@@ -38,14 +42,39 @@ class BatchDeleteLoadbalancersResponse(SdkResponse):
         
         super().__init__()
 
+        self._request_id = None
         self._job_id = None
         self._loadbalancer_ids = None
         self.discriminator = None
 
+        if request_id is not None:
+            self.request_id = request_id
         if job_id is not None:
             self.job_id = job_id
         if loadbalancer_ids is not None:
             self.loadbalancer_ids = loadbalancer_ids
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this BatchDeleteLoadbalancersResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :return: The request_id of this BatchDeleteLoadbalancersResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this BatchDeleteLoadbalancersResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :param request_id: The request_id of this BatchDeleteLoadbalancersResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def job_id(self):

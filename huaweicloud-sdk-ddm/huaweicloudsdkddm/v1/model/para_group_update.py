@@ -17,7 +17,7 @@ class ParaGroupUpdate:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'values': 'object'
+        'values': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -31,12 +31,12 @@ class ParaGroupUpdate:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称。
+        :param name: **参数解释**：  参数组名称。  **约束限制**：  不涉及。  **取值范围**：  在1到64个字符之间，区分大小写，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。。  **默认取值**：  不涉及。
         :type name: str
-        :param description: 描述。
+        :param description: **参数解释**：  参数组描述。  **约束限制**：  不涉及。  **取值范围**：  不能超过256位，且不能包含回车和特殊字符 ! &lt; \&quot; &#x3D; &#39; &gt; &amp;。  **默认取值**：  不涉及。
         :type description: str
-        :param values: 参数值。
-        :type values: object
+        :param values: **参数解释**：  修改的值。  **约束限制**：  不涉及  **取值范围**：  长度为1-64的a-z、A-Z、0-9、.、_ 和 -的字符。  **默认取值**：  不涉及。
+        :type values: dict(str, str)
         """
         
         
@@ -56,7 +56,7 @@ class ParaGroupUpdate:
     def name(self):
         r"""Gets the name of this ParaGroupUpdate.
 
-        名称。
+        **参数解释**：  参数组名称。  **约束限制**：  不涉及。  **取值范围**：  在1到64个字符之间，区分大小写，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。。  **默认取值**：  不涉及。
 
         :return: The name of this ParaGroupUpdate.
         :rtype: str
@@ -67,7 +67,7 @@ class ParaGroupUpdate:
     def name(self, name):
         r"""Sets the name of this ParaGroupUpdate.
 
-        名称。
+        **参数解释**：  参数组名称。  **约束限制**：  不涉及。  **取值范围**：  在1到64个字符之间，区分大小写，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。。  **默认取值**：  不涉及。
 
         :param name: The name of this ParaGroupUpdate.
         :type name: str
@@ -78,7 +78,7 @@ class ParaGroupUpdate:
     def description(self):
         r"""Gets the description of this ParaGroupUpdate.
 
-        描述。
+        **参数解释**：  参数组描述。  **约束限制**：  不涉及。  **取值范围**：  不能超过256位，且不能包含回车和特殊字符 ! < \" = ' > &。  **默认取值**：  不涉及。
 
         :return: The description of this ParaGroupUpdate.
         :rtype: str
@@ -89,7 +89,7 @@ class ParaGroupUpdate:
     def description(self, description):
         r"""Sets the description of this ParaGroupUpdate.
 
-        描述。
+        **参数解释**：  参数组描述。  **约束限制**：  不涉及。  **取值范围**：  不能超过256位，且不能包含回车和特殊字符 ! < \" = ' > &。  **默认取值**：  不涉及。
 
         :param description: The description of this ParaGroupUpdate.
         :type description: str
@@ -100,10 +100,10 @@ class ParaGroupUpdate:
     def values(self):
         r"""Gets the values of this ParaGroupUpdate.
 
-        参数值。
+        **参数解释**：  修改的值。  **约束限制**：  不涉及  **取值范围**：  长度为1-64的a-z、A-Z、0-9、.、_ 和 -的字符。  **默认取值**：  不涉及。
 
         :return: The values of this ParaGroupUpdate.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._values
 
@@ -111,10 +111,10 @@ class ParaGroupUpdate:
     def values(self, values):
         r"""Sets the values of this ParaGroupUpdate.
 
-        参数值。
+        **参数解释**：  修改的值。  **约束限制**：  不涉及  **取值范围**：  长度为1-64的a-z、A-Z、0-9、.、_ 和 -的字符。  **默认取值**：  不涉及。
 
         :param values: The values of this ParaGroupUpdate.
-        :type values: object
+        :type values: dict(str, str)
         """
         self._values = values
 

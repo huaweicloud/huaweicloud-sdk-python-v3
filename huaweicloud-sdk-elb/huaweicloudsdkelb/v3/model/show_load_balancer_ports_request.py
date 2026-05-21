@@ -39,7 +39,7 @@ class ShowLoadBalancerPortsRequest:
 
         :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
-        :param port_id: **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id&#x3D;xxx&amp;port_id&#x3D;xxx*。
+        :param port_id: **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id&#x3D;xxx&amp;port_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type port_id: list[str]
         :param ip_address: **参数解释**：负载均衡器占用的私有IPv4地址。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及  支持多值查询，查询条件格式：*ip_address&#x3D;xxx&amp;ip_address&#x3D;xxx*。
         :type ip_address: list[str]
@@ -99,7 +99,7 @@ class ShowLoadBalancerPortsRequest:
     def port_id(self):
         r"""Gets the port_id of this ShowLoadBalancerPortsRequest.
 
-        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
+        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The port_id of this ShowLoadBalancerPortsRequest.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class ShowLoadBalancerPortsRequest:
     def port_id(self, port_id):
         r"""Sets the port_id of this ShowLoadBalancerPortsRequest.
 
-        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。
+        **参数解释**：负载均衡器占用的端口ID。  支持多值查询，查询条件格式：*port_id=xxx&port_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param port_id: The port_id of this ShowLoadBalancerPortsRequest.
         :type port_id: list[str]

@@ -7580,7 +7580,7 @@ class DdmClient(Client):
     def _check_data_node_connection_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v3/{project_id}/instance/{instance_id}/rds/connection",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/rds/connection",
             "request_type": request.__class__.__name__,
             "response_type": "CheckDataNodeConnectionResponse"
             }

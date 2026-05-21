@@ -15,58 +15,28 @@ class ReduceNodeOpenRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
         'node_ids': 'list[str]'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
         'node_ids': 'node_ids'
     }
 
-    def __init__(self, instance_id=None, node_ids=None):
+    def __init__(self, node_ids=None):
         r"""ReduceNodeOpenRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例id。
-        :type instance_id: str
         :param node_ids: 节点id列表。
         :type node_ids: list[str]
         """
         
         
 
-        self._instance_id = None
         self._node_ids = None
         self.discriminator = None
 
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if node_ids is not None:
-            self.node_ids = node_ids
-
-    @property
-    def instance_id(self):
-        r"""Gets the instance_id of this ReduceNodeOpenRequest.
-
-        实例id。
-
-        :return: The instance_id of this ReduceNodeOpenRequest.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this ReduceNodeOpenRequest.
-
-        实例id。
-
-        :param instance_id: The instance_id of this ReduceNodeOpenRequest.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
+        self.node_ids = node_ids
 
     @property
     def node_ids(self):

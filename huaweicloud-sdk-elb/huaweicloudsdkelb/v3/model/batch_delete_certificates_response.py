@@ -16,29 +16,58 @@ class BatchDeleteCertificatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
         'certificates': 'list[BatchDeleteCertificatesResp]'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
         'certificates': 'certificates'
     }
 
-    def __init__(self, certificates=None):
+    def __init__(self, request_id=None, certificates=None):
         r"""BatchDeleteCertificatesResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+        :type request_id: str
         :param certificates: 证书批量删除后的响应结果。
         :type certificates: list[:class:`huaweicloudsdkelb.v3.BatchDeleteCertificatesResp`]
         """
         
         super().__init__()
 
+        self._request_id = None
         self._certificates = None
         self.discriminator = None
 
+        if request_id is not None:
+            self.request_id = request_id
         if certificates is not None:
             self.certificates = certificates
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this BatchDeleteCertificatesResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :return: The request_id of this BatchDeleteCertificatesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this BatchDeleteCertificatesResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :param request_id: The request_id of this BatchDeleteCertificatesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def certificates(self):

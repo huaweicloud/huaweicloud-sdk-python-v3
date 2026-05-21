@@ -27,7 +27,7 @@ class DeleteCertificateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param certificate_id: 证书ID。
+        :param certificate_id: **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type certificate_id: str
         """
         
@@ -42,7 +42,7 @@ class DeleteCertificateRequest:
     def certificate_id(self):
         r"""Gets the certificate_id of this DeleteCertificateRequest.
 
-        证书ID。
+        **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The certificate_id of this DeleteCertificateRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteCertificateRequest:
     def certificate_id(self, certificate_id):
         r"""Sets the certificate_id of this DeleteCertificateRequest.
 
-        证书ID。
+        **参数解释**：证书ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
         :type certificate_id: str

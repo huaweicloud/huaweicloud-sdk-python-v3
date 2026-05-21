@@ -29,7 +29,7 @@ class UpdateListenerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param listener_id: 监听器ID。
+        :param listener_id: **参数解释**：监听器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_id: str
         :param body: Body of the UpdateListenerRequest
         :type body: :class:`huaweicloudsdkelb.v3.UpdateListenerRequestBody`
@@ -49,7 +49,7 @@ class UpdateListenerRequest:
     def listener_id(self):
         r"""Gets the listener_id of this UpdateListenerRequest.
 
-        监听器ID。
+        **参数解释**：监听器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_id of this UpdateListenerRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateListenerRequest:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this UpdateListenerRequest.
 
-        监听器ID。
+        **参数解释**：监听器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_id: The listener_id of this UpdateListenerRequest.
         :type listener_id: str

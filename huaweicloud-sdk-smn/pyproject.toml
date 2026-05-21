@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdksmn"
-version = "3.1.195"
+version = "3.1.196"
 description = "SMN"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.195"
+    "huaweicloudsdkcore>=3.1.196"
 ]
 
 [project.urls]

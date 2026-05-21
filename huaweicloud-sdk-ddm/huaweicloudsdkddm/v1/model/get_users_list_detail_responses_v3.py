@@ -22,7 +22,8 @@ class GetUsersListDetailResponsesV3:
         'password_last_changed': 'str',
         'description': 'str',
         'created': 'str',
-        'databases': 'list[GetUsersListdatabaseV3]'
+        'databases': 'list[GetUsersListdatabaseV3]',
+        'expiration_time': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class GetUsersListDetailResponsesV3:
         'password_last_changed': 'password_last_changed',
         'description': 'description',
         'created': 'created',
-        'databases': 'databases'
+        'databases': 'databases',
+        'expiration_time': 'expiration_time'
     }
 
-    def __init__(self, name=None, status=None, base_authority=None, password_lifetime=None, password_last_changed=None, description=None, created=None, databases=None):
+    def __init__(self, name=None, status=None, base_authority=None, password_lifetime=None, password_last_changed=None, description=None, created=None, databases=None, expiration_time=None):
         r"""GetUsersListDetailResponsesV3
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class GetUsersListDetailResponsesV3:
         :type created: str
         :param databases: **参数解释**：  关联的逻辑库集合。账号只对已关联的逻辑库有访问权限。  **取值范围**：  不涉及。
         :type databases: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabaseV3`]
+        :param expiration_time: **参数解释**：  DDM实例账号的创建时间。  格式为yyyy-mm-ddThh:mm:ssZ。其中，T指定某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **取值范围**：  不涉及。
+        :type expiration_time: str
         """
         
         
@@ -69,6 +73,7 @@ class GetUsersListDetailResponsesV3:
         self._description = None
         self._created = None
         self._databases = None
+        self._expiration_time = None
         self.discriminator = None
 
         self.name = name
@@ -81,6 +86,8 @@ class GetUsersListDetailResponsesV3:
         self.description = description
         self.created = created
         self.databases = databases
+        if expiration_time is not None:
+            self.expiration_time = expiration_time
 
     @property
     def name(self):
@@ -257,6 +264,28 @@ class GetUsersListDetailResponsesV3:
         :type databases: list[:class:`huaweicloudsdkddm.v1.GetUsersListdatabaseV3`]
         """
         self._databases = databases
+
+    @property
+    def expiration_time(self):
+        r"""Gets the expiration_time of this GetUsersListDetailResponsesV3.
+
+        **参数解释**：  DDM实例账号的创建时间。  格式为yyyy-mm-ddThh:mm:ssZ。其中，T指定某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **取值范围**：  不涉及。
+
+        :return: The expiration_time of this GetUsersListDetailResponsesV3.
+        :rtype: str
+        """
+        return self._expiration_time
+
+    @expiration_time.setter
+    def expiration_time(self, expiration_time):
+        r"""Sets the expiration_time of this GetUsersListDetailResponsesV3.
+
+        **参数解释**：  DDM实例账号的创建时间。  格式为yyyy-mm-ddThh:mm:ssZ。其中，T指定某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **取值范围**：  不涉及。
+
+        :param expiration_time: The expiration_time of this GetUsersListDetailResponsesV3.
+        :type expiration_time: str
+        """
+        self._expiration_time = expiration_time
 
     def to_dict(self):
         result = {}

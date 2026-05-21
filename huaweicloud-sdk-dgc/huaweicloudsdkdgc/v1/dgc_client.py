@@ -1439,6 +1439,8 @@ class DgcClient(Client):
             query_params.append(('version', local_var_params['version']))
         if 'dependencies' in local_var_params:
             query_params.append(('dependencies', local_var_params['dependencies']))
+        if 'get_job_submit_version' in local_var_params:
+            query_params.append(('getJobSubmitVersion', local_var_params['get_job_submit_version']))
 
         header_params = {}
         if 'workspace' in local_var_params:

@@ -41,17 +41,17 @@ class ShowLoadBalancerTopologyRequest:
 
         :param loadbalancer_id: **参数解释**：负载均衡器ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: str
-        :param listener_id: 监听器的ID。  支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。
+        :param listener_id: **参数解释**：监听器的ID。  支持多值查询，查询条件格式：*listener_id&#x3D;xxx&amp;listener_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_id: str
-        :param pool_id: 后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id&#x3D;xxx&amp;pool_id&#x3D;xxx*。
+        :param pool_id: **参数解释**：后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id&#x3D;xxx&amp;pool_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_id: str
-        :param listener_name: 监听器的名称。  支持多值查询，查询条件格式：*listener_name&#x3D;xxx&amp;listener_name&#x3D;xxx*。
+        :param listener_name: **参数解释**：监听器的名称。  支持多值查询，查询条件格式：*listener_name&#x3D;xxx&amp;listener_name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_name: str
-        :param listener_protocol: 监听器的协议。  支持多值查询，查询条件格式：*listener_protocol&#x3D;xxx&amp;listener_protocol&#x3D;xxx*。
+        :param listener_protocol: **参数解释**：监听器的协议。  支持多值查询，查询条件格式：*listener_protocol&#x3D;xxx&amp;listener_protocol&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_protocol: str
-        :param listener_protocol_port: 监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port&#x3D;xxx&amp;listener_protocol_port&#x3D;xxx*。
+        :param listener_protocol_port: **参数解释**：监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port&#x3D;xxx&amp;listener_protocol_port&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type listener_protocol_port: int
-        :param pool_name: 后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name&#x3D;xxx&amp;pool_name&#x3D;xxx*。
+        :param pool_name: **参数解释**：后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name&#x3D;xxx&amp;pool_name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type pool_name: str
         """
         
@@ -106,7 +106,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_id(self):
         r"""Gets the listener_id of this ShowLoadBalancerTopologyRequest.
 
-        监听器的ID。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
+        **参数解释**：监听器的ID。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_id of this ShowLoadBalancerTopologyRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_id(self, listener_id):
         r"""Sets the listener_id of this ShowLoadBalancerTopologyRequest.
 
-        监听器的ID。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
+        **参数解释**：监听器的ID。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_id: The listener_id of this ShowLoadBalancerTopologyRequest.
         :type listener_id: str
@@ -128,7 +128,7 @@ class ShowLoadBalancerTopologyRequest:
     def pool_id(self):
         r"""Gets the pool_id of this ShowLoadBalancerTopologyRequest.
 
-        后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
+        **参数解释**：后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_id of this ShowLoadBalancerTopologyRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class ShowLoadBalancerTopologyRequest:
     def pool_id(self, pool_id):
         r"""Sets the pool_id of this ShowLoadBalancerTopologyRequest.
 
-        后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
+        **参数解释**：后端服务器组的ID。  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_id: The pool_id of this ShowLoadBalancerTopologyRequest.
         :type pool_id: str
@@ -150,7 +150,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_name(self):
         r"""Gets the listener_name of this ShowLoadBalancerTopologyRequest.
 
-        监听器的名称。  支持多值查询，查询条件格式：*listener_name=xxx&listener_name=xxx*。
+        **参数解释**：监听器的名称。  支持多值查询，查询条件格式：*listener_name=xxx&listener_name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_name of this ShowLoadBalancerTopologyRequest.
         :rtype: str
@@ -161,7 +161,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_name(self, listener_name):
         r"""Sets the listener_name of this ShowLoadBalancerTopologyRequest.
 
-        监听器的名称。  支持多值查询，查询条件格式：*listener_name=xxx&listener_name=xxx*。
+        **参数解释**：监听器的名称。  支持多值查询，查询条件格式：*listener_name=xxx&listener_name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_name: The listener_name of this ShowLoadBalancerTopologyRequest.
         :type listener_name: str
@@ -172,7 +172,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_protocol(self):
         r"""Gets the listener_protocol of this ShowLoadBalancerTopologyRequest.
 
-        监听器的协议。  支持多值查询，查询条件格式：*listener_protocol=xxx&listener_protocol=xxx*。
+        **参数解释**：监听器的协议。  支持多值查询，查询条件格式：*listener_protocol=xxx&listener_protocol=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_protocol of this ShowLoadBalancerTopologyRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_protocol(self, listener_protocol):
         r"""Sets the listener_protocol of this ShowLoadBalancerTopologyRequest.
 
-        监听器的协议。  支持多值查询，查询条件格式：*listener_protocol=xxx&listener_protocol=xxx*。
+        **参数解释**：监听器的协议。  支持多值查询，查询条件格式：*listener_protocol=xxx&listener_protocol=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_protocol: The listener_protocol of this ShowLoadBalancerTopologyRequest.
         :type listener_protocol: str
@@ -194,7 +194,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_protocol_port(self):
         r"""Gets the listener_protocol_port of this ShowLoadBalancerTopologyRequest.
 
-        监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port=xxx&listener_protocol_port=xxx*。
+        **参数解释**：监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port=xxx&listener_protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The listener_protocol_port of this ShowLoadBalancerTopologyRequest.
         :rtype: int
@@ -205,7 +205,7 @@ class ShowLoadBalancerTopologyRequest:
     def listener_protocol_port(self, listener_protocol_port):
         r"""Sets the listener_protocol_port of this ShowLoadBalancerTopologyRequest.
 
-        监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port=xxx&listener_protocol_port=xxx*。
+        **参数解释**：监听器的监听端口。  支持多值查询，查询条件格式：*listener_protocol_port=xxx&listener_protocol_port=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param listener_protocol_port: The listener_protocol_port of this ShowLoadBalancerTopologyRequest.
         :type listener_protocol_port: int
@@ -216,7 +216,7 @@ class ShowLoadBalancerTopologyRequest:
     def pool_name(self):
         r"""Gets the pool_name of this ShowLoadBalancerTopologyRequest.
 
-        后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name=xxx&pool_name=xxx*。
+        **参数解释**：后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name=xxx&pool_name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The pool_name of this ShowLoadBalancerTopologyRequest.
         :rtype: str
@@ -227,7 +227,7 @@ class ShowLoadBalancerTopologyRequest:
     def pool_name(self, pool_name):
         r"""Sets the pool_name of this ShowLoadBalancerTopologyRequest.
 
-        后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name=xxx&pool_name=xxx*。
+        **参数解释**：后端服务器组的名称。  支持多值查询，查询条件格式：*pool_name=xxx&pool_name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param pool_name: The pool_name of this ShowLoadBalancerTopologyRequest.
         :type pool_name: str

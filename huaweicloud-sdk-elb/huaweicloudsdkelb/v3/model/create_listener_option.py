@@ -137,7 +137,7 @@ class CreateListenerOption:
         :type member_timeout: int
         :param ipgroup: 
         :type ipgroup: :class:`huaweicloudsdkelb.v3.CreateListenerIpGroupOption`
-        :param transparent_client_ip_enable: **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
+        :param transparent_client_ip_enable: **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
         :type transparent_client_ip_enable: bool
         :param proxy_protocol_enable: **参数解释**：是否开启proxy_protocol。  **约束限制**：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：不涉及  **默认取值**：不涉及
         :type proxy_protocol_enable: bool
@@ -748,7 +748,7 @@ class CreateListenerOption:
     def transparent_client_ip_enable(self):
         r"""Gets the transparent_client_ip_enable of this CreateListenerOption.
 
-        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
+        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
 
         :return: The transparent_client_ip_enable of this CreateListenerOption.
         :rtype: bool
@@ -759,7 +759,7 @@ class CreateListenerOption:
     def transparent_client_ip_enable(self, transparent_client_ip_enable):
         r"""Sets the transparent_client_ip_enable of this CreateListenerOption.
 
-        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
+        **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [**约束限制**： - 仅作用于共享型LB的TCP/UDP监听器。 - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**：只设支持置为true，不传默认为true。  **取值范围**：不涉及](tag:hws_eu,hcso_dt)  **默认取值**：不涉及
 
         :param transparent_client_ip_enable: The transparent_client_ip_enable of this CreateListenerOption.
         :type transparent_client_ip_enable: bool

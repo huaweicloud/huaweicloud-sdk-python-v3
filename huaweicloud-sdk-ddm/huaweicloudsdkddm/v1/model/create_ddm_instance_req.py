@@ -28,7 +28,7 @@ class CreateDdmInstanceReq:
         'time_zone': 'str',
         'admin_user_name': 'str',
         'admin_user_password': 'str',
-        'charge_info': 'object'
+        'charge_info': 'ChargeInfo'
     }
 
     attribute_map = {
@@ -79,8 +79,8 @@ class CreateDdmInstanceReq:
         :type admin_user_name: str
         :param admin_user_password: 密码。
         :type admin_user_password: str
-        :param charge_info: 付费信息。
-        :type charge_info: object
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkddm.v1.ChargeInfo`
         """
         
         
@@ -101,22 +101,14 @@ class CreateDdmInstanceReq:
         self._charge_info = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if available_zones is not None:
-            self.available_zones = available_zones
-        if node_num is not None:
-            self.node_num = node_num
-        if engine_version is not None:
-            self.engine_version = engine_version
-        if flavor_ref is not None:
-            self.flavor_ref = flavor_ref
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
-        if security_group_id is not None:
-            self.security_group_id = security_group_id
+        self.name = name
+        self.available_zones = available_zones
+        self.node_num = node_num
+        self.engine_version = engine_version
+        self.flavor_ref = flavor_ref
+        self.vpc_id = vpc_id
+        self.subnet_id = subnet_id
+        self.security_group_id = security_group_id
         if param_group_id is not None:
             self.param_group_id = param_group_id
         if enterprise_project_id is not None:
@@ -420,10 +412,8 @@ class CreateDdmInstanceReq:
     def charge_info(self):
         r"""Gets the charge_info of this CreateDdmInstanceReq.
 
-        付费信息。
-
         :return: The charge_info of this CreateDdmInstanceReq.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkddm.v1.ChargeInfo`
         """
         return self._charge_info
 
@@ -431,10 +421,8 @@ class CreateDdmInstanceReq:
     def charge_info(self, charge_info):
         r"""Sets the charge_info of this CreateDdmInstanceReq.
 
-        付费信息。
-
         :param charge_info: The charge_info of this CreateDdmInstanceReq.
-        :type charge_info: object
+        :type charge_info: :class:`huaweicloudsdkddm.v1.ChargeInfo`
         """
         self._charge_info = charge_info
 

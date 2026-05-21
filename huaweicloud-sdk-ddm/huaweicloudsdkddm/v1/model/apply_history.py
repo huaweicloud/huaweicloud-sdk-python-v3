@@ -19,7 +19,7 @@ class ApplyHistory:
         'target_name': 'str',
         'apply_result': 'str',
         'applied_at': 'datetime',
-        'error_code': 'str'
+        'error_message': 'str'
     }
 
     attribute_map = {
@@ -27,10 +27,10 @@ class ApplyHistory:
         'target_name': 'target_name',
         'apply_result': 'apply_result',
         'applied_at': 'applied_at',
-        'error_code': 'error_code'
+        'error_message': 'error_message'
     }
 
-    def __init__(self, target_id=None, target_name=None, apply_result=None, applied_at=None, error_code=None):
+    def __init__(self, target_id=None, target_name=None, apply_result=None, applied_at=None, error_message=None):
         r"""ApplyHistory
 
         The model defined in huaweicloud sdk
@@ -43,8 +43,8 @@ class ApplyHistory:
         :type apply_result: str
         :param applied_at: **参数解释**：  应用日期。  **参数范围**：  不涉及。
         :type applied_at: datetime
-        :param error_code: **参数解释**：  错误码。  **参数范围**：  不涉及。
-        :type error_code: str
+        :param error_message: **参数解释**：  实例应用参数组的报错信息，若实例应用参数组成功则返回空。  **取值范围**：  不涉及。
+        :type error_message: str
         """
         
         
@@ -53,7 +53,7 @@ class ApplyHistory:
         self._target_name = None
         self._apply_result = None
         self._applied_at = None
-        self._error_code = None
+        self._error_message = None
         self.discriminator = None
 
         if target_id is not None:
@@ -64,8 +64,8 @@ class ApplyHistory:
             self.apply_result = apply_result
         if applied_at is not None:
             self.applied_at = applied_at
-        if error_code is not None:
-            self.error_code = error_code
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def target_id(self):
@@ -156,26 +156,26 @@ class ApplyHistory:
         self._applied_at = applied_at
 
     @property
-    def error_code(self):
-        r"""Gets the error_code of this ApplyHistory.
+    def error_message(self):
+        r"""Gets the error_message of this ApplyHistory.
 
-        **参数解释**：  错误码。  **参数范围**：  不涉及。
+        **参数解释**：  实例应用参数组的报错信息，若实例应用参数组成功则返回空。  **取值范围**：  不涉及。
 
-        :return: The error_code of this ApplyHistory.
+        :return: The error_message of this ApplyHistory.
         :rtype: str
         """
-        return self._error_code
+        return self._error_message
 
-    @error_code.setter
-    def error_code(self, error_code):
-        r"""Sets the error_code of this ApplyHistory.
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this ApplyHistory.
 
-        **参数解释**：  错误码。  **参数范围**：  不涉及。
+        **参数解释**：  实例应用参数组的报错信息，若实例应用参数组成功则返回空。  **取值范围**：  不涉及。
 
-        :param error_code: The error_code of this ApplyHistory.
-        :type error_code: str
+        :param error_message: The error_message of this ApplyHistory.
+        :type error_message: str
         """
-        self._error_code = error_code
+        self._error_message = error_message
 
     def to_dict(self):
         result = {}

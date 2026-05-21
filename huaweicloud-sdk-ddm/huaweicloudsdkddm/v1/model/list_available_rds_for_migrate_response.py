@@ -16,29 +16,50 @@ class ListAvailableRdsForMigrateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data_nodes': 'list[AvailableDnInstance]'
+        'data_nodes': 'list[AvailableDnInstance]',
+        'offset': 'int',
+        'limit': 'int',
+        'total': 'int'
     }
 
     attribute_map = {
-        'data_nodes': 'data_nodes'
+        'data_nodes': 'data_nodes',
+        'offset': 'offset',
+        'limit': 'limit',
+        'total': 'total'
     }
 
-    def __init__(self, data_nodes=None):
+    def __init__(self, data_nodes=None, offset=None, limit=None, total=None):
         r"""ListAvailableRdsForMigrateResponse
 
         The model defined in huaweicloud sdk
 
         :param data_nodes: 可用后端DN信息。
         :type data_nodes: list[:class:`huaweicloudsdkddm.v1.AvailableDnInstance`]
+        :param offset: **参数解释**：  分页参数: 起始值。  **参数范围**：   大于等于0。
+        :type offset: int
+        :param limit: **参数解释**：  分页参数: 每页记录数。  **参数范围**：  大于0且小于等于128。
+        :type limit: int
+        :param total: **参数解释**：  总记录数。  **参数范围**：  不涉及。
+        :type total: int
         """
         
         super().__init__()
 
         self._data_nodes = None
+        self._offset = None
+        self._limit = None
+        self._total = None
         self.discriminator = None
 
         if data_nodes is not None:
             self.data_nodes = data_nodes
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if total is not None:
+            self.total = total
 
     @property
     def data_nodes(self):
@@ -61,6 +82,72 @@ class ListAvailableRdsForMigrateResponse(SdkResponse):
         :type data_nodes: list[:class:`huaweicloudsdkddm.v1.AvailableDnInstance`]
         """
         self._data_nodes = data_nodes
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  分页参数: 起始值。  **参数范围**：   大于等于0。
+
+        :return: The offset of this ListAvailableRdsForMigrateResponse.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  分页参数: 起始值。  **参数范围**：   大于等于0。
+
+        :param offset: The offset of this ListAvailableRdsForMigrateResponse.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  分页参数: 每页记录数。  **参数范围**：  大于0且小于等于128。
+
+        :return: The limit of this ListAvailableRdsForMigrateResponse.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  分页参数: 每页记录数。  **参数范围**：  大于0且小于等于128。
+
+        :param limit: The limit of this ListAvailableRdsForMigrateResponse.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  总记录数。  **参数范围**：  不涉及。
+
+        :return: The total of this ListAvailableRdsForMigrateResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListAvailableRdsForMigrateResponse.
+
+        **参数解释**：  总记录数。  **参数范围**：  不涉及。
+
+        :param total: The total of this ListAvailableRdsForMigrateResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

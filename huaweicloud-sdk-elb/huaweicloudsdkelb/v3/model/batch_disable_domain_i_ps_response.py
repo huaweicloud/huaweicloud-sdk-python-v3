@@ -16,38 +16,45 @@ class BatchDisableDomainIPsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'ips': 'list[ListDnsIpResponseBody]'
+        'ips': 'list[DnsIpResponse]',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'ips': 'ips'
+        'ips': 'ips',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, ips=None):
+    def __init__(self, ips=None, request_id=None):
         r"""BatchDisableDomainIPsResponse
 
         The model defined in huaweicloud sdk
 
-        :param ips: **参数解释**：返回的负载均衡器的dns ip信息。  **约束限制**：如果负载均衡器的公网域名和私网域名开关都没有打开，则列表为空。  **取值范围**：不涉及  **默认取值**：不涉及
-        :type ips: list[:class:`huaweicloudsdkelb.v3.ListDnsIpResponseBody`]
+        :param ips: **参数解释**：负载均衡器域名解析的IP地址列表。  **约束限制**：如果负载均衡器的公网域名和私网域名域名解析开关都没有打开，则为空列表。  **取值范围**：不涉及  **默认取值**：不涉及
+        :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+        :type request_id: str
         """
         
         super().__init__()
 
         self._ips = None
+        self._request_id = None
         self.discriminator = None
 
         if ips is not None:
             self.ips = ips
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def ips(self):
         r"""Gets the ips of this BatchDisableDomainIPsResponse.
 
-        **参数解释**：返回的负载均衡器的dns ip信息。  **约束限制**：如果负载均衡器的公网域名和私网域名开关都没有打开，则列表为空。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：负载均衡器域名解析的IP地址列表。  **约束限制**：如果负载均衡器的公网域名和私网域名域名解析开关都没有打开，则为空列表。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ips of this BatchDisableDomainIPsResponse.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.ListDnsIpResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
         """
         return self._ips
 
@@ -55,12 +62,34 @@ class BatchDisableDomainIPsResponse(SdkResponse):
     def ips(self, ips):
         r"""Sets the ips of this BatchDisableDomainIPsResponse.
 
-        **参数解释**：返回的负载均衡器的dns ip信息。  **约束限制**：如果负载均衡器的公网域名和私网域名开关都没有打开，则列表为空。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：负载均衡器域名解析的IP地址列表。  **约束限制**：如果负载均衡器的公网域名和私网域名域名解析开关都没有打开，则为空列表。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ips: The ips of this BatchDisableDomainIPsResponse.
-        :type ips: list[:class:`huaweicloudsdkelb.v3.ListDnsIpResponseBody`]
+        :type ips: list[:class:`huaweicloudsdkelb.v3.DnsIpResponse`]
         """
         self._ips = ips
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this BatchDisableDomainIPsResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :return: The request_id of this BatchDisableDomainIPsResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this BatchDisableDomainIPsResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :param request_id: The request_id of this BatchDisableDomainIPsResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         import warnings

@@ -71,7 +71,7 @@ class CertificateInfo:
 
         :param admin_state_up: **参数解释**：证书的管理状态。该字段当前无用，设置为true或者false都不影响证书使用。  **取值范围**： - true：表示证书可用。 - false：表示证书不可用。
         :type admin_state_up: bool
-        :param certificate: **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度65536个字符。
+        :param certificate: **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度20000个字符。
         :type certificate: str
         :param description: **参数解释**：证书的描述。  **取值范围**：0-255个字符。
         :type description: str
@@ -93,7 +93,7 @@ class CertificateInfo:
         :type expire_time: str
         :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **取值范围**：长度为32个字符，由小写字母和数字组成。
         :type project_id: str
-        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度65536字符。
+        :param enc_certificate: **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度20000字符。
         :type enc_certificate: str
         :param enc_private_key: **参数解释**：服务器SM双证书的私钥。  **取值范围**：PEM编码格式，最大长度8192个字符。
         :type enc_private_key: str
@@ -200,7 +200,7 @@ class CertificateInfo:
     def certificate(self):
         r"""Gets the certificate of this CertificateInfo.
 
-        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度65536个字符。
+        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度20000个字符。
 
         :return: The certificate of this CertificateInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class CertificateInfo:
     def certificate(self, certificate):
         r"""Sets the certificate of this CertificateInfo.
 
-        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度65536个字符。
+        **参数解释**：证书内容。支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式，最大长度20000个字符。
 
         :param certificate: The certificate of this CertificateInfo.
         :type certificate: str
@@ -442,7 +442,7 @@ class CertificateInfo:
     def enc_certificate(self):
         r"""Gets the enc_certificate of this CertificateInfo.
 
-        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度65536字符。
+        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度20000字符。
 
         :return: The enc_certificate of this CertificateInfo.
         :rtype: str
@@ -453,7 +453,7 @@ class CertificateInfo:
     def enc_certificate(self, enc_certificate):
         r"""Sets the enc_certificate of this CertificateInfo.
 
-        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度65536字符。
+        **参数解释**：服务器SM双证书的证书内容。 支持最大11层证书链(含证书和证书链)。  **取值范围**：PEM编码格式。最大长度20000字符。
 
         :param enc_certificate: The enc_certificate of this CertificateInfo.
         :type enc_certificate: str

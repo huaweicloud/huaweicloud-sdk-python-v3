@@ -18,6 +18,7 @@ class CreateGroupRequestBody:
         'name': 'str',
         'type': 'str',
         'flavor_id': 'str',
+        'flavor_ref': 'str',
         'nodes': 'list[NodeInfo]'
     }
 
@@ -25,10 +26,11 @@ class CreateGroupRequestBody:
         'name': 'name',
         'type': 'type',
         'flavor_id': 'flavor_id',
+        'flavor_ref': 'flavor_ref',
         'nodes': 'nodes'
     }
 
-    def __init__(self, name=None, type=None, flavor_id=None, nodes=None):
+    def __init__(self, name=None, type=None, flavor_id=None, flavor_ref=None, nodes=None):
         r"""CreateGroupRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,8 +39,10 @@ class CreateGroupRequestBody:
         :type name: str
         :param type: 组类型，type：rw读写、r只读
         :type type: str
-        :param flavor_id: 节点规格ID。
+        :param flavor_id: 节点规格ID（规格ID和规格码必须传一个）。
         :type flavor_id: str
+        :param flavor_ref: 节点规格码（规格ID和规格码必须传一个）。
+        :type flavor_ref: str
         :param nodes: 节点信息列表
         :type nodes: list[:class:`huaweicloudsdkddm.v1.NodeInfo`]
         """
@@ -48,12 +52,16 @@ class CreateGroupRequestBody:
         self._name = None
         self._type = None
         self._flavor_id = None
+        self._flavor_ref = None
         self._nodes = None
         self.discriminator = None
 
         self.name = name
         self.type = type
-        self.flavor_id = flavor_id
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
+        if flavor_ref is not None:
+            self.flavor_ref = flavor_ref
         self.nodes = nodes
 
     @property
@@ -104,7 +112,7 @@ class CreateGroupRequestBody:
     def flavor_id(self):
         r"""Gets the flavor_id of this CreateGroupRequestBody.
 
-        节点规格ID。
+        节点规格ID（规格ID和规格码必须传一个）。
 
         :return: The flavor_id of this CreateGroupRequestBody.
         :rtype: str
@@ -115,12 +123,34 @@ class CreateGroupRequestBody:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this CreateGroupRequestBody.
 
-        节点规格ID。
+        节点规格ID（规格ID和规格码必须传一个）。
 
         :param flavor_id: The flavor_id of this CreateGroupRequestBody.
         :type flavor_id: str
         """
         self._flavor_id = flavor_id
+
+    @property
+    def flavor_ref(self):
+        r"""Gets the flavor_ref of this CreateGroupRequestBody.
+
+        节点规格码（规格ID和规格码必须传一个）。
+
+        :return: The flavor_ref of this CreateGroupRequestBody.
+        :rtype: str
+        """
+        return self._flavor_ref
+
+    @flavor_ref.setter
+    def flavor_ref(self, flavor_ref):
+        r"""Sets the flavor_ref of this CreateGroupRequestBody.
+
+        节点规格码（规格ID和规格码必须传一个）。
+
+        :param flavor_ref: The flavor_ref of this CreateGroupRequestBody.
+        :type flavor_ref: str
+        """
+        self._flavor_ref = flavor_ref
 
     @property
     def nodes(self):

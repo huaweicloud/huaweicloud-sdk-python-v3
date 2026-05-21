@@ -46,12 +46,9 @@ class RestoreInst2ExistReq:
         self._data_node_relations = None
         self.discriminator = None
 
-        if source is not None:
-            self.source = source
-        if target is not None:
-            self.target = target
-        if data_node_relations is not None:
-            self.data_node_relations = data_node_relations
+        self.source = source
+        self.target = target
+        self.data_node_relations = data_node_relations
 
     @property
     def source(self):

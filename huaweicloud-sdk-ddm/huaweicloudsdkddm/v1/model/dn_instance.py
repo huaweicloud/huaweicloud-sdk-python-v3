@@ -46,12 +46,9 @@ class DNInstance:
         self._admin_password = None
         self.discriminator = None
 
-        if dn_instance_id is not None:
-            self.dn_instance_id = dn_instance_id
-        if admin_user is not None:
-            self.admin_user = admin_user
-        if admin_password is not None:
-            self.admin_password = admin_password
+        self.dn_instance_id = dn_instance_id
+        self.admin_user = admin_user
+        self.admin_password = admin_password
 
     @property
     def dn_instance_id(self):

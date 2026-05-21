@@ -1,3 +1,98 @@
+# 3.1.196 2026-05-21
+
+### HuaweiCloud SDK DGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 请求参数变更
+      - `+ getJobSubmitVersion`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchDeleteLoadbalancers**
+    - 响应参数变更
+      - `+ request_id`
+  - **BatchDeleteCertificates**
+    - 响应参数变更
+      - `+ request_id`
+  - **BatchDeletePools**
+    - 响应参数变更
+      - `+ request_id`
+  - **BatchEnableDomainIPs**
+    - 响应参数变更
+      - `+ request_id`
+      - `- ips`
+      - `+ ips.enable`
+      - `+ ips.ip_address`
+      - `+ ips.type`
+      - `+ ips.domain_name`
+      - `+ ips.created_at`
+      - `+ ips.updated_at`
+      - `- ips.ips`
+      - `* ips: list<ListDnsIpResponseBody> -> list<DnsIpResponse>`
+  - **BatchDisableDomainIPs**
+    - 响应参数变更
+      - `+ request_id`
+      - `- ips`
+      - `+ ips.enable`
+      - `+ ips.ip_address`
+      - `+ ips.type`
+      - `+ ips.domain_name`
+      - `+ ips.created_at`
+      - `+ ips.updated_at`
+      - `- ips.ips`
+      - `* ips: list<ListDnsIpResponseBody> -> list<DnsIpResponse>`
+  - **ListDomainIPs**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+      - `+ page_reverse`
+    - 响应参数变更
+      - `+ page_info`
+      - `+ request_id`
+      - `- ips.id`
+  - **UpdateUserDefinedDomainConfig**
+    - 响应参数变更
+      - `+ request_id`
+      - `+ loadbalancer.id`
+      - `- loadbalancer.public_dns_zone_id`
+      - `- loadbalancer.private_dns_zone_id`
+  - **UpdateSystemDefaultDomainConfig**
+    - 响应参数变更
+      - `+ request_id`
+      - `+ loadbalancer.id`
+      - `- loadbalancer.public_dns_zone_id`
+      - `- loadbalancer.private_dns_zone_id`
+  - **ListAllL7Rules**
+    - 请求参数变更
+      - `+ l7policy_id`
+  - **ListMasterSlavePools**
+    - 请求参数变更
+      - `+ public_border_group`
+    - 响应参数变更
+      - `+ pools.public_border_group`
+  - **CreateMasterSlavePool**
+    - 请求参数变更
+      - `+ pool.public_border_group`
+    - 响应参数变更
+      - `+ pool.public_border_group`
+  - **ShowMasterSlavePool**
+    - 响应参数变更
+      - `+ pool.public_border_group`
+
 # 3.1.195 2026-05-14
 
 ### HuaweiCloud SDK DDM

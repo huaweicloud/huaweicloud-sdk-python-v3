@@ -18,17 +18,19 @@ class ShowJobRequest:
         'workspace': 'str',
         'job_name': 'str',
         'version': 'int',
-        'dependencies': 'bool'
+        'dependencies': 'bool',
+        'get_job_submit_version': 'bool'
     }
 
     attribute_map = {
         'workspace': 'workspace',
         'job_name': 'job_name',
         'version': 'version',
-        'dependencies': 'dependencies'
+        'dependencies': 'dependencies',
+        'get_job_submit_version': 'getJobSubmitVersion'
     }
 
-    def __init__(self, workspace=None, job_name=None, version=None, dependencies=None):
+    def __init__(self, workspace=None, job_name=None, version=None, dependencies=None, get_job_submit_version=None):
         r"""ShowJobRequest
 
         The model defined in huaweicloud sdk
@@ -37,10 +39,12 @@ class ShowJobRequest:
         :type workspace: str
         :param job_name: 作业名称.
         :type job_name: str
-        :param version: 作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+        :param version: 作业版本号，若传入版本号，则查询指定提交版本号的作业。
         :type version: int
         :param dependencies: 返回下游依赖当前作业的作业，只返回第一层。
         :type dependencies: bool
+        :param get_job_submit_version: 该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+        :type get_job_submit_version: bool
         """
         
         
@@ -49,6 +53,7 @@ class ShowJobRequest:
         self._job_name = None
         self._version = None
         self._dependencies = None
+        self._get_job_submit_version = None
         self.discriminator = None
 
         if workspace is not None:
@@ -58,6 +63,8 @@ class ShowJobRequest:
             self.version = version
         if dependencies is not None:
             self.dependencies = dependencies
+        if get_job_submit_version is not None:
+            self.get_job_submit_version = get_job_submit_version
 
     @property
     def workspace(self):
@@ -107,7 +114,7 @@ class ShowJobRequest:
     def version(self):
         r"""Gets the version of this ShowJobRequest.
 
-        作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+        作业版本号，若传入版本号，则查询指定提交版本号的作业。
 
         :return: The version of this ShowJobRequest.
         :rtype: int
@@ -118,7 +125,7 @@ class ShowJobRequest:
     def version(self, version):
         r"""Sets the version of this ShowJobRequest.
 
-        作业版本号，若传入版本号，则查询指定版本号的作业；若不传入，则查询最新的版本作业.
+        作业版本号，若传入版本号，则查询指定提交版本号的作业。
 
         :param version: The version of this ShowJobRequest.
         :type version: int
@@ -146,6 +153,28 @@ class ShowJobRequest:
         :type dependencies: bool
         """
         self._dependencies = dependencies
+
+    @property
+    def get_job_submit_version(self):
+        r"""Gets the get_job_submit_version of this ShowJobRequest.
+
+        该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+
+        :return: The get_job_submit_version of this ShowJobRequest.
+        :rtype: bool
+        """
+        return self._get_job_submit_version
+
+    @get_job_submit_version.setter
+    def get_job_submit_version(self, get_job_submit_version):
+        r"""Sets the get_job_submit_version of this ShowJobRequest.
+
+        该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+
+        :param get_job_submit_version: The get_job_submit_version of this ShowJobRequest.
+        :type get_job_submit_version: bool
+        """
+        self._get_job_submit_version = get_job_submit_version
 
     def to_dict(self):
         result = {}

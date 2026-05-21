@@ -16,29 +16,36 @@ class UpdateSystemDefaultDomainConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancer': 'DnsConfigResponseBody'
+        'loadbalancer': 'DnsConfigResponseBody',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'loadbalancer': 'loadbalancer'
+        'loadbalancer': 'loadbalancer',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, loadbalancer=None):
+    def __init__(self, loadbalancer=None, request_id=None):
         r"""UpdateSystemDefaultDomainConfigResponse
 
         The model defined in huaweicloud sdk
 
         :param loadbalancer: 
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.DnsConfigResponseBody`
+        :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+        :type request_id: str
         """
         
         super().__init__()
 
         self._loadbalancer = None
+        self._request_id = None
         self.discriminator = None
 
         if loadbalancer is not None:
             self.loadbalancer = loadbalancer
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def loadbalancer(self):
@@ -57,6 +64,28 @@ class UpdateSystemDefaultDomainConfigResponse(SdkResponse):
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.DnsConfigResponseBody`
         """
         self._loadbalancer = loadbalancer
+
+    @property
+    def request_id(self):
+        r"""Gets the request_id of this UpdateSystemDefaultDomainConfigResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :return: The request_id of this UpdateSystemDefaultDomainConfigResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this UpdateSystemDefaultDomainConfigResponse.
+
+        **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
+
+        :param request_id: The request_id of this UpdateSystemDefaultDomainConfigResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         import warnings
