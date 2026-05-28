@@ -1922,7 +1922,7 @@ class DwsClient(Client):
     def create_logical_cluster(self, request):
         r"""创建逻辑集群
 
-        创建逻辑集群。
+        使用弹性池的节点，创建逻辑集群，此接口已经不再演进，后续版本中可能会下线，新版本中此接口对应功能已经下线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5486,6 +5486,8 @@ class DwsClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'logical_cluster_name' in local_var_params:
+            query_params.append(('logical_cluster_name', local_var_params['logical_cluster_name']))
 
         header_params = {}
 
@@ -11561,7 +11563,7 @@ class DwsClient(Client):
     def shrink_logical_cluster(self, request):
         r"""逻辑集群缩容
 
-        逻辑集群缩容，支持从弹性池缩容。
+        逻辑集群缩容，支持从逻辑集群中缩容、从弹性池中缩容。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12919,6 +12921,7 @@ class DwsClient(Client):
         编辑修改逻辑集群。接口根据提交的请求体判断当前操作是逻辑集群缩容或者扩容。
         场景一：原始的逻辑集群有6个节点（两个环），提交请求时的请求体只有1个环，此时为逻辑集群缩容。
         场景二：原始的逻辑集群有6个节点（两个环），提交请求时的请求体中有3个环，此时为逻辑集群扩容。
+        此接口已经不再演进，后续版本中可能会下线，新版本中此接口对应功能已经下线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -18,16 +18,18 @@ class ShowResizePreparationResponse(SdkResponse):
     openapi_types = {
         'status': 'str',
         'is_support': 'bool',
-        'progress': 'str'
+        'progress': 'str',
+        'instance_ids': 'list[str]'
     }
 
     attribute_map = {
         'status': 'status',
         'is_support': 'is_support',
-        'progress': 'progress'
+        'progress': 'progress',
+        'instance_ids': 'instance_ids'
     }
 
-    def __init__(self, status=None, is_support=None, progress=None):
+    def __init__(self, status=None, is_support=None, progress=None, instance_ids=None):
         r"""ShowResizePreparationResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ShowResizePreparationResponse(SdkResponse):
         :type is_support: bool
         :param progress: **参数解释**： 扩容准备进度。 **取值范围**： 不涉及
         :type progress: str
+        :param instance_ids: **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+        :type instance_ids: list[str]
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ShowResizePreparationResponse(SdkResponse):
         self._status = None
         self._is_support = None
         self._progress = None
+        self._instance_ids = None
         self.discriminator = None
 
         if status is not None:
@@ -53,6 +58,8 @@ class ShowResizePreparationResponse(SdkResponse):
             self.is_support = is_support
         if progress is not None:
             self.progress = progress
+        if instance_ids is not None:
+            self.instance_ids = instance_ids
 
     @property
     def status(self):
@@ -119,6 +126,28 @@ class ShowResizePreparationResponse(SdkResponse):
         :type progress: str
         """
         self._progress = progress
+
+    @property
+    def instance_ids(self):
+        r"""Gets the instance_ids of this ShowResizePreparationResponse.
+
+        **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+
+        :return: The instance_ids of this ShowResizePreparationResponse.
+        :rtype: list[str]
+        """
+        return self._instance_ids
+
+    @instance_ids.setter
+    def instance_ids(self, instance_ids):
+        r"""Sets the instance_ids of this ShowResizePreparationResponse.
+
+        **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+
+        :param instance_ids: The instance_ids of this ShowResizePreparationResponse.
+        :type instance_ids: list[str]
+        """
+        self._instance_ids = instance_ids
 
     def to_dict(self):
         import warnings

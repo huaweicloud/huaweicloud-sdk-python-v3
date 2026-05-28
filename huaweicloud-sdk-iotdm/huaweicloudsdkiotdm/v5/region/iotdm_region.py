@@ -26,6 +26,8 @@ class IoTDMRegion:
                         "https://iotda-mgmt.me-east-1.myhuaweicloud.com")
     LA_SOUTH_2 = Region("la-south-2",
                         "https://iotda-mgmt.la-south-2.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://iotda-mgmt.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -38,6 +40,7 @@ class IoTDMRegion:
         "af-south-1": AF_SOUTH_1,
         "me-east-1": ME_EAST_1,
         "la-south-2": LA_SOUTH_2,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

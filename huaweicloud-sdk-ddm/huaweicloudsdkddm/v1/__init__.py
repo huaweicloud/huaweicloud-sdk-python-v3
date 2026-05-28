@@ -270,6 +270,8 @@ from huaweicloudsdkddm.v1.model.restart_node_response import RestartNodeResponse
 from huaweicloudsdkddm.v1.model.restore2_exist_request import Restore2ExistRequest
 from huaweicloudsdkddm.v1.model.restore2_exist_response import Restore2ExistResponse
 from huaweicloudsdkddm.v1.model.restore_inst2_exist_req import RestoreInst2ExistReq
+from huaweicloudsdkddm.v1.model.restore_inst_source import RestoreInstSource
+from huaweicloudsdkddm.v1.model.restore_inst_target import RestoreInstTarget
 from huaweicloudsdkddm.v1.model.restore_meta_data2_exist_req import RestoreMetaData2ExistReq
 from huaweicloudsdkddm.v1.model.restore_meta_data_source import RestoreMetaDataSource
 from huaweicloudsdkddm.v1.model.restore_meta_data_target import RestoreMetaDataTarget

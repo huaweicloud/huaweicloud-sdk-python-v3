@@ -163,6 +163,71 @@ class OmsAsyncClient(Client):
 
         return http_info
 
+    def check_url_source_list_file_format_async(self, request):
+        r"""检查url来源列表文件格式
+
+        检查url来源列表文件格式是否有效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckUrlSourceListFileFormat
+        :type request: :class:`huaweicloudsdkoms.v2.CheckUrlSourceListFileFormatRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.CheckUrlSourceListFileFormatResponse`
+        """
+        http_info = self._check_url_source_list_file_format_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_url_source_list_file_format_async_invoker(self, request):
+        http_info = self._check_url_source_list_file_format_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_url_source_list_file_format_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/objectstorage/buckets/url-source-list-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckUrlSourceListFileFormatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sync_events_async(self, request):
         r"""创建同步事件
 
@@ -876,6 +941,8 @@ class OmsAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
 
         header_params = {}
 
@@ -1558,7 +1625,7 @@ class OmsAsyncClient(Client):
     def start_sync_task_async(self, request):
         r"""启动同步任务
 
-        同步任务停止后，调用该接口以启动同步任务(目前只支持华北-北京四、华东-上海一地区)。
+        同步任务停止后，调用该接口以启动同步任务(目前只支持华北-北京四、华东-上海一和西南-贵阳一地区)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1759,7 +1826,7 @@ class OmsAsyncClient(Client):
     def stop_sync_task_async(self, request):
         r"""暂停同步任务
 
-        当同步任务处于同步中时，调用该接口停止任务(目前只支持华北-北京四、华东-上海一地区)。
+        当同步任务处于同步中时，调用该接口停止任务(目前只支持华北-北京四、华东-上海一和西南-贵阳一地区)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

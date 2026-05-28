@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UnlockTargetEcsResponse(SdkResponse):
+class CheckUrlSourceListFileFormatResponse(SdkResponse):
 
     """
     Attributes:
@@ -16,55 +16,24 @@ class UnlockTargetEcsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
-        r"""UnlockTargetEcsResponse
+    def __init__(self):
+        r"""CheckUrlSourceListFileFormatResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 解锁指定任务的目的端服务器成功
-        :type body: str
         """
         
         super().__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this UnlockTargetEcsResponse.
-
-        解锁指定任务的目的端服务器成功
-
-        :return: The body of this UnlockTargetEcsResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UnlockTargetEcsResponse.
-
-        解锁指定任务的目的端服务器成功
-
-        :param body: The body of this UnlockTargetEcsResponse.
-        :type body: str
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings
-        warnings.warn("UnlockTargetEcsResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("CheckUrlSourceListFileFormatResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -102,7 +71,7 @@ class UnlockTargetEcsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnlockTargetEcsResponse):
+        if not isinstance(other, CheckUrlSourceListFileFormatResponse):
             return False
 
         return self.__dict__ == other.__dict__

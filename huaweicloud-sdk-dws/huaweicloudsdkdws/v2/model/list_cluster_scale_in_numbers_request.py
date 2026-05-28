@@ -15,28 +15,35 @@ class ListClusterScaleInNumbersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'logical_cluster_name': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'logical_cluster_name': 'logical_cluster_name'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, logical_cluster_name=None):
         r"""ListClusterScaleInNumbersRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： 36位UUID。 **默认取值**： 不涉及。
         :type cluster_id: str
+        :param logical_cluster_name: **参数解释**： 逻辑集群名，填写该参数，表示获取逻辑集群合适的缩容节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type logical_cluster_name: str
         """
         
         
 
         self._cluster_id = None
+        self._logical_cluster_name = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
 
     @property
     def cluster_id(self):
@@ -59,6 +66,28 @@ class ListClusterScaleInNumbersRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def logical_cluster_name(self):
+        r"""Gets the logical_cluster_name of this ListClusterScaleInNumbersRequest.
+
+        **参数解释**： 逻辑集群名，填写该参数，表示获取逻辑集群合适的缩容节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The logical_cluster_name of this ListClusterScaleInNumbersRequest.
+        :rtype: str
+        """
+        return self._logical_cluster_name
+
+    @logical_cluster_name.setter
+    def logical_cluster_name(self, logical_cluster_name):
+        r"""Sets the logical_cluster_name of this ListClusterScaleInNumbersRequest.
+
+        **参数解释**： 逻辑集群名，填写该参数，表示获取逻辑集群合适的缩容节点个数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param logical_cluster_name: The logical_cluster_name of this ListClusterScaleInNumbersRequest.
+        :type logical_cluster_name: str
+        """
+        self._logical_cluster_name = logical_cluster_name
 
     def to_dict(self):
         result = {}

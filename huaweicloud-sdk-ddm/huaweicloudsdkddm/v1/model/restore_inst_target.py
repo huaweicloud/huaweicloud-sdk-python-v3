@@ -1,10 +1,9 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowSha256Response(SdkResponse):
+class RestoreInstTarget:
 
     """
     Attributes:
@@ -16,56 +15,52 @@ class ShowSha256Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'value': 'str'
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'value': 'value'
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, value=None):
-        r"""ShowSha256Response
+    def __init__(self, instance_id=None):
+        r"""RestoreInstTarget
 
         The model defined in huaweicloud sdk
 
-        :param value: Sha256值
-        :type value: str
+        :param instance_id: 实例id。
+        :type instance_id: str
         """
         
-        super().__init__()
+        
 
-        self._value = None
+        self._instance_id = None
         self.discriminator = None
 
-        if value is not None:
-            self.value = value
+        self.instance_id = instance_id
 
     @property
-    def value(self):
-        r"""Gets the value of this ShowSha256Response.
+    def instance_id(self):
+        r"""Gets the instance_id of this RestoreInstTarget.
 
-        Sha256值
+        实例id。
 
-        :return: The value of this ShowSha256Response.
+        :return: The instance_id of this RestoreInstTarget.
         :rtype: str
         """
-        return self._value
+        return self._instance_id
 
-    @value.setter
-    def value(self, value):
-        r"""Sets the value of this ShowSha256Response.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this RestoreInstTarget.
 
-        Sha256值
+        实例id。
 
-        :param value: The value of this ShowSha256Response.
-        :type value: str
+        :param instance_id: The instance_id of this RestoreInstTarget.
+        :type instance_id: str
         """
-        self._value = value
+        self._instance_id = instance_id
 
     def to_dict(self):
-        import warnings
-        warnings.warn("ShowSha256Response.to_dict() is deprecated and no longer maintained, "
-                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
         for attr, _ in self.openapi_types.items():
@@ -102,7 +97,7 @@ class ShowSha256Response(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowSha256Response):
+        if not isinstance(other, RestoreInstTarget):
             return False
 
         return self.__dict__ == other.__dict__

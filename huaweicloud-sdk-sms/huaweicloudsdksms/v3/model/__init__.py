@@ -7,8 +7,6 @@ from huaweicloudsdksms.v3.model.batch_consistency_req import BatchConsistencyReq
 from huaweicloudsdksms.v3.model.batch_get_consistency_result_req import BatchGetConsistencyResultReq
 from huaweicloudsdksms.v3.model.btrfs_file_system import BtrfsFileSystem
 from huaweicloudsdksms.v3.model.btrfs_subvolumn import BtrfsSubvolumn
-from huaweicloudsdksms.v3.model.check_net_acl_request import CheckNetAclRequest
-from huaweicloudsdksms.v3.model.check_net_acl_response import CheckNetAclResponse
 from huaweicloudsdksms.v3.model.clone_server import CloneServer
 from huaweicloudsdksms.v3.model.clone_server_brief import CloneServerBrief
 from huaweicloudsdksms.v3.model.collect_log_request import CollectLogRequest
@@ -111,8 +109,6 @@ from huaweicloudsdksms.v3.model.show_privacy_agreements_request import ShowPriva
 from huaweicloudsdksms.v3.model.show_privacy_agreements_response import ShowPrivacyAgreementsResponse
 from huaweicloudsdksms.v3.model.show_server_request import ShowServerRequest
 from huaweicloudsdksms.v3.model.show_server_response import ShowServerResponse
-from huaweicloudsdksms.v3.model.show_sha256_request import ShowSha256Request
-from huaweicloudsdksms.v3.model.show_sha256_response import ShowSha256Response
 from huaweicloudsdksms.v3.model.show_target_password_request import ShowTargetPasswordRequest
 from huaweicloudsdksms.v3.model.show_target_password_response import ShowTargetPasswordResponse
 from huaweicloudsdksms.v3.model.show_task_request import ShowTaskRequest
@@ -143,8 +139,6 @@ from huaweicloudsdksms.v3.model.tasks_response_body import TasksResponseBody
 from huaweicloudsdksms.v3.model.template_disk import TemplateDisk
 from huaweicloudsdksms.v3.model.template_request import TemplateRequest
 from huaweicloudsdksms.v3.model.template_response_body import TemplateResponseBody
-from huaweicloudsdksms.v3.model.unlock_target_ecs_request import UnlockTargetEcsRequest
-from huaweicloudsdksms.v3.model.unlock_target_ecs_response import UnlockTargetEcsResponse
 from huaweicloudsdksms.v3.model.update_command_result_request import UpdateCommandResultRequest
 from huaweicloudsdksms.v3.model.update_command_result_response import UpdateCommandResultResponse
 from huaweicloudsdksms.v3.model.update_consistency_result_request import UpdateConsistencyResultRequest

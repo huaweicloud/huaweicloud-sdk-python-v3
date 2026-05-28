@@ -41,7 +41,8 @@ class ListInstancesResult:
         'lb_ip_address': 'str',
         'lb_port': 'str',
         'availability_zone': 'str',
-        'dual_active_info': 'DualActiveInfo'
+        'dual_active_info': 'DualActiveInfo',
+        'ssl': 'str'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class ListInstancesResult:
         'lb_ip_address': 'lb_ip_address',
         'lb_port': 'lb_port',
         'availability_zone': 'availability_zone',
-        'dual_active_info': 'dual_active_info'
+        'dual_active_info': 'dual_active_info',
+        'ssl': 'ssl'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None, dual_active_info=None):
+    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None, dual_active_info=None, ssl=None):
         r"""ListInstancesResult
 
         The model defined in huaweicloud sdk
@@ -133,6 +135,8 @@ class ListInstancesResult:
         :type availability_zone: str
         :param dual_active_info: 
         :type dual_active_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
+        :param ssl: 参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+        :type ssl: str
         """
         
         
@@ -164,6 +168,7 @@ class ListInstancesResult:
         self._lb_port = None
         self._availability_zone = None
         self._dual_active_info = None
+        self._ssl = None
         self.discriminator = None
 
         self.id = id
@@ -199,6 +204,7 @@ class ListInstancesResult:
             self.availability_zone = availability_zone
         if dual_active_info is not None:
             self.dual_active_info = dual_active_info
+        self.ssl = ssl
 
     @property
     def id(self):
@@ -781,6 +787,28 @@ class ListInstancesResult:
         :type dual_active_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
         """
         self._dual_active_info = dual_active_info
+
+    @property
+    def ssl(self):
+        r"""Gets the ssl of this ListInstancesResult.
+
+        参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+
+        :return: The ssl of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._ssl
+
+    @ssl.setter
+    def ssl(self, ssl):
+        r"""Sets the ssl of this ListInstancesResult.
+
+        参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+
+        :param ssl: The ssl of this ListInstancesResult.
+        :type ssl: str
+        """
+        self._ssl = ssl
 
     def to_dict(self):
         result = {}

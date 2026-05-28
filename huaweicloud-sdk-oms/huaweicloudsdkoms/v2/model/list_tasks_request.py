@@ -18,17 +18,19 @@ class ListTasksRequest:
         'group_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'status': 'int'
+        'status': 'int',
+        'task_name': 'str'
     }
 
     attribute_map = {
         'group_id': 'group_id',
         'limit': 'limit',
         'offset': 'offset',
-        'status': 'status'
+        'status': 'status',
+        'task_name': 'task_name'
     }
 
-    def __init__(self, group_id=None, limit=None, offset=None, status=None):
+    def __init__(self, group_id=None, limit=None, offset=None, status=None, task_name=None):
         r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListTasksRequest:
         :type offset: int
         :param status: 迁移任务状态（无该参数时代表查询所有状态的任务）： 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7: 暂停中
         :type status: int
+        :param task_name: 任务名称，支持模糊查询。 1.长度限制0~255 2.不支持特殊字符
+        :type task_name: str
         """
         
         
@@ -49,6 +53,7 @@ class ListTasksRequest:
         self._limit = None
         self._offset = None
         self._status = None
+        self._task_name = None
         self.discriminator = None
 
         if group_id is not None:
@@ -59,6 +64,8 @@ class ListTasksRequest:
             self.offset = offset
         if status is not None:
             self.status = status
+        if task_name is not None:
+            self.task_name = task_name
 
     @property
     def group_id(self):
@@ -147,6 +154,28 @@ class ListTasksRequest:
         :type status: int
         """
         self._status = status
+
+    @property
+    def task_name(self):
+        r"""Gets the task_name of this ListTasksRequest.
+
+        任务名称，支持模糊查询。 1.长度限制0~255 2.不支持特殊字符
+
+        :return: The task_name of this ListTasksRequest.
+        :rtype: str
+        """
+        return self._task_name
+
+    @task_name.setter
+    def task_name(self, task_name):
+        r"""Sets the task_name of this ListTasksRequest.
+
+        任务名称，支持模糊查询。 1.长度限制0~255 2.不支持特殊字符
+
+        :param task_name: The task_name of this ListTasksRequest.
+        :type task_name: str
+        """
+        self._task_name = task_name
 
     def to_dict(self):
         result = {}

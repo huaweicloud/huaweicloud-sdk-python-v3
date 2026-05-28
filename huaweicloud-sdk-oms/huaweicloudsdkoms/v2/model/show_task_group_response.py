@@ -52,6 +52,7 @@ class ShowTaskGroupResponse(SdkResponse):
         'object_overwrite_mode': 'str',
         'dst_storage_policy': 'str',
         'consistency_check': 'str',
+        'obs_system': 'str',
         'enable_requester_pays': 'bool'
     }
 
@@ -92,10 +93,11 @@ class ShowTaskGroupResponse(SdkResponse):
         'object_overwrite_mode': 'object_overwrite_mode',
         'dst_storage_policy': 'dst_storage_policy',
         'consistency_check': 'consistency_check',
+        'obs_system': 'obs_system',
         'enable_requester_pays': 'enable_requester_pays'
     }
 
-    def __init__(self, group_id=None, status=None, error_reason=None, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, migrate_speed=None, total_time=None, start_time=None, total_task_num=None, create_task_num=None, failed_task_num=None, complete_task_num=None, paused_task_num=None, executing_task_num=None, waiting_task_num=None, total_num=None, create_complete_num=None, success_num=None, fail_num=None, skip_num=None, total_size=None, create_complete_size=None, complete_size=None, failed_object_record=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, enable_requester_pays=None):
+    def __init__(self, group_id=None, status=None, error_reason=None, src_node=None, description=None, dst_node=None, enable_metadata_migration=None, enable_failed_object_recording=None, enable_restore=None, task_type=None, bandwidth_policy=None, smn_config=None, source_cdn=None, migrate_since=None, migrate_speed=None, total_time=None, start_time=None, total_task_num=None, create_task_num=None, failed_task_num=None, complete_task_num=None, paused_task_num=None, executing_task_num=None, waiting_task_num=None, total_num=None, create_complete_num=None, success_num=None, fail_num=None, skip_num=None, total_size=None, create_complete_size=None, complete_size=None, failed_object_record=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None, obs_system=None, enable_requester_pays=None):
         r"""ShowTaskGroupResponse
 
         The model defined in huaweicloud sdk
@@ -172,6 +174,8 @@ class ShowTaskGroupResponse(SdkResponse):
         :type dst_storage_policy: str
         :param consistency_check: 一致性校验方式，用于迁移前/后校验对象是否一致，所有校验方式需满足源端/目的端对象的加密状态一致，具体校验方式和校验结果可通过对象列表查看。默认size_last_modified。 size_last_modified：默认配置。迁移前后，通过对比源端和目的端对象大小+最后修改时间，判断对象是否已存在或迁移后数据是否完整。源端与目的端同名对象大小相同，且目的端对象的最后修改时间不早于源端对象的最后修改时间，则代表该对象已存在/迁移成功。 crc64：目前仅支持华为/阿里/腾讯。迁移前后，通过对比源端和目的端对象元数据中CRC64值是否相同，判断对象是否已存在/迁移完成。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用大小/最后修改时间校验方式来校验。 no_check：目前仅支持HTTP/HTTPS数据源。当源端对象无法通过标准http协议中content-length字段获取数据大小时，默认数据下载成功即迁移成功，不对数据做额外校验，且迁移时源端对象默认覆盖目的端同名对象。当源端对象能正常通过标准http协议中content-length字段获取数据大小时，则采用大小/最后修改时间校验方式来校验。
         :type consistency_check: str
+        :param obs_system: OBS系统类型 BUCKET：一般桶 PFS：并行文件系统
+        :type obs_system: str
         :param enable_requester_pays: 是否开启请求者付款，在启用后，请求者支付请求和数据传输费用。
         :type enable_requester_pays: bool
         """
@@ -214,6 +218,7 @@ class ShowTaskGroupResponse(SdkResponse):
         self._object_overwrite_mode = None
         self._dst_storage_policy = None
         self._consistency_check = None
+        self._obs_system = None
         self._enable_requester_pays = None
         self.discriminator = None
 
@@ -289,6 +294,8 @@ class ShowTaskGroupResponse(SdkResponse):
             self.dst_storage_policy = dst_storage_policy
         if consistency_check is not None:
             self.consistency_check = consistency_check
+        if obs_system is not None:
+            self.obs_system = obs_system
         if enable_requester_pays is not None:
             self.enable_requester_pays = enable_requester_pays
 
@@ -1059,6 +1066,28 @@ class ShowTaskGroupResponse(SdkResponse):
         :type consistency_check: str
         """
         self._consistency_check = consistency_check
+
+    @property
+    def obs_system(self):
+        r"""Gets the obs_system of this ShowTaskGroupResponse.
+
+        OBS系统类型 BUCKET：一般桶 PFS：并行文件系统
+
+        :return: The obs_system of this ShowTaskGroupResponse.
+        :rtype: str
+        """
+        return self._obs_system
+
+    @obs_system.setter
+    def obs_system(self, obs_system):
+        r"""Sets the obs_system of this ShowTaskGroupResponse.
+
+        OBS系统类型 BUCKET：一般桶 PFS：并行文件系统
+
+        :param obs_system: The obs_system of this ShowTaskGroupResponse.
+        :type obs_system: str
+        """
+        self._obs_system = obs_system
 
     @property
     def enable_requester_pays(self):

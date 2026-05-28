@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UnlockTargetEcsRequest:
+class RestoreInstSource:
 
     """
     Attributes:
@@ -15,50 +15,50 @@ class UnlockTargetEcsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'restore_time': 'float'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'restore_time': 'restore_time'
     }
 
-    def __init__(self, task_id=None):
-        r"""UnlockTargetEcsRequest
+    def __init__(self, restore_time=None):
+        r"""RestoreInstSource
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 指定任务的ID
-        :type task_id: str
+        :param restore_time: 恢复时间。
+        :type restore_time: float
         """
         
         
 
-        self._task_id = None
+        self._restore_time = None
         self.discriminator = None
 
-        self.task_id = task_id
+        self.restore_time = restore_time
 
     @property
-    def task_id(self):
-        r"""Gets the task_id of this UnlockTargetEcsRequest.
+    def restore_time(self):
+        r"""Gets the restore_time of this RestoreInstSource.
 
-        指定任务的ID
+        恢复时间。
 
-        :return: The task_id of this UnlockTargetEcsRequest.
-        :rtype: str
+        :return: The restore_time of this RestoreInstSource.
+        :rtype: float
         """
-        return self._task_id
+        return self._restore_time
 
-    @task_id.setter
-    def task_id(self, task_id):
-        r"""Sets the task_id of this UnlockTargetEcsRequest.
+    @restore_time.setter
+    def restore_time(self, restore_time):
+        r"""Sets the restore_time of this RestoreInstSource.
 
-        指定任务的ID
+        恢复时间。
 
-        :param task_id: The task_id of this UnlockTargetEcsRequest.
-        :type task_id: str
+        :param restore_time: The restore_time of this RestoreInstSource.
+        :type restore_time: float
         """
-        self._task_id = task_id
+        self._restore_time = restore_time
 
     def to_dict(self):
         result = {}
@@ -97,7 +97,7 @@ class UnlockTargetEcsRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnlockTargetEcsRequest):
+        if not isinstance(other, RestoreInstSource):
             return False
 
         return self.__dict__ == other.__dict__

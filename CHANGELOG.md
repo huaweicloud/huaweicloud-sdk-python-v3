@@ -1,3 +1,94 @@
+# 3.1.197 2026-05-28
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **Restore2Exist**
+    - changes of request param
+      - `+ source.restore_time`
+      - `* source: object -> object<RestoreInstSource>`
+      - `+ target.instance_id`
+      - `* target: object -> object<RestoreInstTarget>`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListClusterScaleInNumbers**
+    - changes of request param
+      - `+ logical_cluster_name`
+  - **ShowResizePreparation**
+    - changes of response param
+      - `+ instance_ids`
+  - **CreateLogicalClusterPlan**
+    - changes of request param
+      - `* start_time: string -> int64`
+      - `* end_time: string -> int64`
+  - **ShrinkLogicalCluster**
+    - changes of request param
+      - `+ shrink_node_num`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.ssl`
+
+### HuaweiCloud SDK OMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `CheckUrlSourceListFileFormat`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTask**
+    - changes of response param
+      - `+ obs_system`
+  - **ShowTaskGroup**
+    - changes of response param
+      - `+ obs_system`
+  - **ListTasks**
+    - changes of request param
+      - `+ task_name`
+    - changes of response param
+      - `+ obs_system`
+      - `+ tasks.obs_system`
+  - **ListTaskGroup**
+    - changes of response param
+      - `+ obs_system`
+      - `+ taskgroups.obs_system`
+
+### HuaweiCloud SDK SMS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `UnlockTargetEcs`, `CheckNetAcl`, `ShowSha256`
+
 # 3.1.196 2026-05-21
 
 ### HuaweiCloud SDK DGC

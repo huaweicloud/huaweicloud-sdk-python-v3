@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowSha256Request:
+class CheckUrlSourceListFileFormatRequest:
 
     """
     Attributes:
@@ -15,50 +15,47 @@ class ShowSha256Request:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str'
+        'body': 'CheckUrlSourceListFileFormatReq'
     }
 
     attribute_map = {
-        'key': 'key'
+        'body': 'body'
     }
 
-    def __init__(self, key=None):
-        r"""ShowSha256Request
+    def __init__(self, body=None):
+        r"""CheckUrlSourceListFileFormatRequest
 
         The model defined in huaweicloud sdk
 
-        :param key: 关键字，加密字段值为uuid。
-        :type key: str
+        :param body: Body of the CheckUrlSourceListFileFormatRequest
+        :type body: :class:`huaweicloudsdkoms.v2.CheckUrlSourceListFileFormatReq`
         """
         
         
 
-        self._key = None
+        self._body = None
         self.discriminator = None
 
-        self.key = key
+        if body is not None:
+            self.body = body
 
     @property
-    def key(self):
-        r"""Gets the key of this ShowSha256Request.
+    def body(self):
+        r"""Gets the body of this CheckUrlSourceListFileFormatRequest.
 
-        关键字，加密字段值为uuid。
-
-        :return: The key of this ShowSha256Request.
-        :rtype: str
+        :return: The body of this CheckUrlSourceListFileFormatRequest.
+        :rtype: :class:`huaweicloudsdkoms.v2.CheckUrlSourceListFileFormatReq`
         """
-        return self._key
+        return self._body
 
-    @key.setter
-    def key(self, key):
-        r"""Sets the key of this ShowSha256Request.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this CheckUrlSourceListFileFormatRequest.
 
-        关键字，加密字段值为uuid。
-
-        :param key: The key of this ShowSha256Request.
-        :type key: str
+        :param body: The body of this CheckUrlSourceListFileFormatRequest.
+        :type body: :class:`huaweicloudsdkoms.v2.CheckUrlSourceListFileFormatReq`
         """
-        self._key = key
+        self._body = body
 
     def to_dict(self):
         result = {}
@@ -97,7 +94,7 @@ class ShowSha256Request:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowSha256Request):
+        if not isinstance(other, CheckUrlSourceListFileFormatRequest):
             return False
 
         return self.__dict__ == other.__dict__

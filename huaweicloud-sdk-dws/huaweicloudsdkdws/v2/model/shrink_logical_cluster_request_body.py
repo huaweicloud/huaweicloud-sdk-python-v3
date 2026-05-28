@@ -17,26 +17,30 @@ class ShrinkLogicalClusterRequestBody:
     openapi_types = {
         'cluster_rings': 'list[ClusterRing]',
         'parallel_jobs': 'int',
-        'mode': 'str'
+        'mode': 'str',
+        'shrink_node_num': 'int'
     }
 
     attribute_map = {
         'cluster_rings': 'cluster_rings',
         'parallel_jobs': 'parallel_jobs',
-        'mode': 'mode'
+        'mode': 'mode',
+        'shrink_node_num': 'shrink_node_num'
     }
 
-    def __init__(self, cluster_rings=None, parallel_jobs=None, mode=None):
+    def __init__(self, cluster_rings=None, parallel_jobs=None, mode=None, shrink_node_num=None):
         r"""ShrinkLogicalClusterRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param cluster_rings: **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        :param cluster_rings: **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
         :param parallel_jobs: **参数解释**： 重分布并发配置数。  **约束限制**：  不涉及。 **取值范围**：  1~200。 **默认取值**：  4。
         :type parallel_jobs: int
         :param mode: **参数解释**：  缩容模式。 **约束限制**：  不涉及。 **取值范围**：  read-only：离线模式 insert：在线模式 **默认取值**：  insert
         :type mode: str
+        :param shrink_node_num: **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        :type shrink_node_num: int
         """
         
         
@@ -44,19 +48,23 @@ class ShrinkLogicalClusterRequestBody:
         self._cluster_rings = None
         self._parallel_jobs = None
         self._mode = None
+        self._shrink_node_num = None
         self.discriminator = None
 
-        self.cluster_rings = cluster_rings
+        if cluster_rings is not None:
+            self.cluster_rings = cluster_rings
         if parallel_jobs is not None:
             self.parallel_jobs = parallel_jobs
         if mode is not None:
             self.mode = mode
+        if shrink_node_num is not None:
+            self.shrink_node_num = shrink_node_num
 
     @property
     def cluster_rings(self):
         r"""Gets the cluster_rings of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
 
         :return: The cluster_rings of this ShrinkLogicalClusterRequestBody.
         :rtype: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -67,7 +75,7 @@ class ShrinkLogicalClusterRequestBody:
     def cluster_rings(self, cluster_rings):
         r"""Sets the cluster_rings of this ShrinkLogicalClusterRequestBody.
 
-        **参数解释**： 缩容主机环信息。  **约束限制**：  不涉及。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+        **参数解释**： 缩容主机环信息。  **约束限制**：  与shrink_node_num缩容节点个数两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
 
         :param cluster_rings: The cluster_rings of this ShrinkLogicalClusterRequestBody.
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
@@ -117,6 +125,28 @@ class ShrinkLogicalClusterRequestBody:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def shrink_node_num(self):
+        r"""Gets the shrink_node_num of this ShrinkLogicalClusterRequestBody.
+
+        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+
+        :return: The shrink_node_num of this ShrinkLogicalClusterRequestBody.
+        :rtype: int
+        """
+        return self._shrink_node_num
+
+    @shrink_node_num.setter
+    def shrink_node_num(self, shrink_node_num):
+        r"""Sets the shrink_node_num of this ShrinkLogicalClusterRequestBody.
+
+        **参数解释**： 缩容节点个数。 **约束限制**：  与cluster_rings缩容主机环信息两个参数任选其一，两者都存在，优先取cluster_rings缩容主机环信息参数。 **取值范围**：  不涉及。 **默认取值**：  不涉及。
+
+        :param shrink_node_num: The shrink_node_num of this ShrinkLogicalClusterRequestBody.
+        :type shrink_node_num: int
+        """
+        self._shrink_node_num = shrink_node_num
 
     def to_dict(self):
         result = {}
