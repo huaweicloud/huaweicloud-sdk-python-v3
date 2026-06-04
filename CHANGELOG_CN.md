@@ -1,3 +1,206 @@
+# 3.1.198 2026-06-04
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.https_tls_version`
+      - `+ configs.error_code_redirect_rules.execution_mode`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.https_tls_version`
+      - `+ configs.error_code_redirect_rules.execution_mode`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSubject**
+    - 请求参数变更
+      - `+ name_ch`
+      - `+ name_en`
+      - `+ description`
+      - `+ qualified_name`
+      - `+ guid`
+      - `+ code`
+      - `+ alias`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_owner`
+      - `+ data_owner_list`
+      - `+ data_department`
+      - `+ path`
+      - `+ level`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ parent_id`
+      - `+ swap_order_id`
+      - `+ id`
+      - `+ qualified_id`
+      - `+ from_public`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ children_num`
+      - `+ self_defined_fields`
+      - `- entity`
+      - `* body: object<CatalogParamsVO> -> object<CatalogVO>`
+  - **CreateSubject**
+    - 请求参数变更
+      - `+ name_ch`
+      - `+ name_en`
+      - `+ description`
+      - `+ qualified_name`
+      - `+ guid`
+      - `+ code`
+      - `+ alias`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_owner`
+      - `+ data_owner_list`
+      - `+ data_department`
+      - `+ path`
+      - `+ level`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ parent_id`
+      - `+ swap_order_id`
+      - `+ id`
+      - `+ qualified_id`
+      - `+ from_public`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ children_num`
+      - `+ self_defined_fields`
+      - `- entity`
+      - `* body: object<CatalogParamsVO> -> object<CatalogVO>`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAvalibleRds**
+    - 响应参数变更
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+  - **ShowAvalibleDdms**
+    - 响应参数变更
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`BindPublicGateway`、`UnbindPublicGateway`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.groups.nodes.nat_gateway_id`
+      - `+ instances.groups.nodes.external_service_port`
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowAgencyCredential`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteDatabase**
+    - 请求参数变更
+      - `+ is_async`
+  - **UpdateDatabase**
+    - 请求参数变更
+      - `+ external_database_id`
+      - `+ data_statistic_enable`
+      - `+ connection_name`
+      - `+ database_type`
+  - **CreateDatabase**
+    - 请求参数变更
+      - `+ external_database_id`
+      - `+ data_statistic_enable`
+      - `+ connection_name`
+      - `+ database_type`
+  - **ListDatabases**
+    - 请求参数变更
+      - `+ external_database_id`
+      - `+ deleted`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ table_format`
+      - `+ data_statistic_enable`
+      - `+ create_open_table_format_input`
+      - `+ table_type: enum value [DICTIONARY_TABLE,LAKE_TABLE]`
+      - `* body: object<TableInput> -> object<CreateTableInput>`
+  - **ListTables**
+    - 请求参数变更
+      - `+ table_format`
+      - `+ deleted`
+      - `+ include_fields`
+      - `+ table_type: enum value [DICTIONARY_TABLE,LAKE_TABLE]`
+  - **DeleteTable**
+    - 请求参数变更
+      - `+ is_async`
+  - **ShowTable**
+    - 请求参数变更
+      - `+ version_id`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UpdateAuthConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SendEmail**
+    - 请求参数变更
+      - `+ phone_template_id`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ ou_name`
+  - **CreateDesktopOrder**
+    - 请求参数变更
+      - `+ hour_package_resources.create_desktops.ou_name`
+  - **ShowAuthConfig**
+    - 响应参数变更
+      - `+ sms_login_enabled`
+  - **UpdateAuthMethodConfig**
+    - 请求参数变更
+      - `+ sms_login_enabled`
+  - **ValidateConfig**
+    - 请求参数变更
+      - `+ sms_login_enabled`
+  - **CreateOrder**
+    - 请求参数变更
+      - `+ resources.create_desktops.ou_name`
+      - `- resources.subscribe_user_sharer.users.user_phone`
+      - `- resources.subscribe_user_sharer.users.ai_func`
+
 # 3.1.197 2026-05-28
 
 ### HuaweiCloud SDK DDM

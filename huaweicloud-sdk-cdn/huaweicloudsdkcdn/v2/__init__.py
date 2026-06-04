@@ -125,6 +125,7 @@ from huaweicloudsdkcdn.v2.model.http_get_body import HttpGetBody
 from huaweicloudsdkcdn.v2.model.http_put_body import HttpPutBody
 from huaweicloudsdkcdn.v2.model.http_response_header import HttpResponseHeader
 from huaweicloudsdkcdn.v2.model.https_detail import HttpsDetail
+from huaweicloudsdkcdn.v2.model.https_tls_version import HttpsTlsVersion
 from huaweicloudsdkcdn.v2.model.inherit_config import InheritConfig
 from huaweicloudsdkcdn.v2.model.inherit_config_query import InheritConfigQuery
 from huaweicloudsdkcdn.v2.model.ip_filter import IpFilter

@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CatalogEntityVO:
+class ArrowSchema:
 
     """
     Attributes:
@@ -15,75 +15,79 @@ class CatalogEntityVO:
     sensitive_list = []
 
     openapi_types = {
-        'type_name': 'str',
-        'attributes': 'CatalogAttributeVO'
+        'fields': 'list[ArrowField]',
+        'metadata': 'dict(str, str)'
     }
 
     attribute_map = {
-        'type_name': 'typeName',
-        'attributes': 'attributes'
+        'fields': 'fields',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, type_name=None, attributes=None):
-        r"""CatalogEntityVO
+    def __init__(self, fields=None, metadata=None):
+        r"""ArrowSchema
 
         The model defined in huaweicloud sdk
 
-        :param type_name: 类型名称，填写“BusinessCatalog”即可（业务分层）。
-        :type type_name: str
-        :param attributes: 
-        :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
+        :param fields: Arrow字段列表，定义表的所有列及其类型信息。
+        :type fields: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
+        :param metadata: Schema的元数据信息，key-value形式的附加信息。
+        :type metadata: dict(str, str)
         """
         
         
 
-        self._type_name = None
-        self._attributes = None
+        self._fields = None
+        self._metadata = None
         self.discriminator = None
 
-        if type_name is not None:
-            self.type_name = type_name
-        self.attributes = attributes
+        self.fields = fields
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
-    def type_name(self):
-        r"""Gets the type_name of this CatalogEntityVO.
+    def fields(self):
+        r"""Gets the fields of this ArrowSchema.
 
-        类型名称，填写“BusinessCatalog”即可（业务分层）。
+        Arrow字段列表，定义表的所有列及其类型信息。
 
-        :return: The type_name of this CatalogEntityVO.
-        :rtype: str
+        :return: The fields of this ArrowSchema.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
         """
-        return self._type_name
+        return self._fields
 
-    @type_name.setter
-    def type_name(self, type_name):
-        r"""Sets the type_name of this CatalogEntityVO.
+    @fields.setter
+    def fields(self, fields):
+        r"""Sets the fields of this ArrowSchema.
 
-        类型名称，填写“BusinessCatalog”即可（业务分层）。
+        Arrow字段列表，定义表的所有列及其类型信息。
 
-        :param type_name: The type_name of this CatalogEntityVO.
-        :type type_name: str
+        :param fields: The fields of this ArrowSchema.
+        :type fields: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
         """
-        self._type_name = type_name
+        self._fields = fields
 
     @property
-    def attributes(self):
-        r"""Gets the attributes of this CatalogEntityVO.
+    def metadata(self):
+        r"""Gets the metadata of this ArrowSchema.
 
-        :return: The attributes of this CatalogEntityVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
+        Schema的元数据信息，key-value形式的附加信息。
+
+        :return: The metadata of this ArrowSchema.
+        :rtype: dict(str, str)
         """
-        return self._attributes
+        return self._metadata
 
-    @attributes.setter
-    def attributes(self, attributes):
-        r"""Sets the attributes of this CatalogEntityVO.
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this ArrowSchema.
 
-        :param attributes: The attributes of this CatalogEntityVO.
-        :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
+        Schema的元数据信息，key-value形式的附加信息。
+
+        :param metadata: The metadata of this ArrowSchema.
+        :type metadata: dict(str, str)
         """
-        self._attributes = attributes
+        self._metadata = metadata
 
     def to_dict(self):
         result = {}
@@ -122,7 +126,7 @@ class CatalogEntityVO:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CatalogEntityVO):
+        if not isinstance(other, ArrowSchema):
             return False
 
         return self.__dict__ == other.__dict__

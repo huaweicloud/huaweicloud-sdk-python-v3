@@ -1,3 +1,206 @@
+# 3.1.198 2026-06-04
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.https_tls_version`
+      - `+ configs.error_code_redirect_rules.execution_mode`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.https_tls_version`
+      - `+ configs.error_code_redirect_rules.execution_mode`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSubject**
+    - changes of request param
+      - `+ name_ch`
+      - `+ name_en`
+      - `+ description`
+      - `+ qualified_name`
+      - `+ guid`
+      - `+ code`
+      - `+ alias`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_owner`
+      - `+ data_owner_list`
+      - `+ data_department`
+      - `+ path`
+      - `+ level`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ parent_id`
+      - `+ swap_order_id`
+      - `+ id`
+      - `+ qualified_id`
+      - `+ from_public`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ children_num`
+      - `+ self_defined_fields`
+      - `- entity`
+      - `* body: object<CatalogParamsVO> -> object<CatalogVO>`
+  - **CreateSubject**
+    - changes of request param
+      - `+ name_ch`
+      - `+ name_en`
+      - `+ description`
+      - `+ qualified_name`
+      - `+ guid`
+      - `+ code`
+      - `+ alias`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_owner`
+      - `+ data_owner_list`
+      - `+ data_department`
+      - `+ path`
+      - `+ level`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ parent_id`
+      - `+ swap_order_id`
+      - `+ id`
+      - `+ qualified_id`
+      - `+ from_public`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ children_num`
+      - `+ self_defined_fields`
+      - `- entity`
+      - `* body: object<CatalogParamsVO> -> object<CatalogVO>`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAvalibleRds**
+    - changes of response param
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+  - **ShowAvalibleDdms**
+    - changes of response param
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `BindPublicGateway`, `UnbindPublicGateway`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.groups.nodes.nat_gateway_id`
+      - `+ instances.groups.nodes.external_service_port`
+
+### HuaweiCloud SDK LakeFormation
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ShowAgencyCredential`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteDatabase**
+    - changes of request param
+      - `+ is_async`
+  - **UpdateDatabase**
+    - changes of request param
+      - `+ external_database_id`
+      - `+ data_statistic_enable`
+      - `+ connection_name`
+      - `+ database_type`
+  - **CreateDatabase**
+    - changes of request param
+      - `+ external_database_id`
+      - `+ data_statistic_enable`
+      - `+ connection_name`
+      - `+ database_type`
+  - **ListDatabases**
+    - changes of request param
+      - `+ external_database_id`
+      - `+ deleted`
+  - **CreateTable**
+    - changes of request param
+      - `+ table_format`
+      - `+ data_statistic_enable`
+      - `+ create_open_table_format_input`
+      - `+ table_type: enum value [DICTIONARY_TABLE,LAKE_TABLE]`
+      - `* body: object<TableInput> -> object<CreateTableInput>`
+  - **ListTables**
+    - changes of request param
+      - `+ table_format`
+      - `+ deleted`
+      - `+ include_fields`
+      - `+ table_type: enum value [DICTIONARY_TABLE,LAKE_TABLE]`
+  - **DeleteTable**
+    - changes of request param
+      - `+ is_async`
+  - **ShowTable**
+    - changes of request param
+      - `+ version_id`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `UpdateAuthConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **SendEmail**
+    - changes of request param
+      - `+ phone_template_id`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ ou_name`
+  - **CreateDesktopOrder**
+    - changes of request param
+      - `+ hour_package_resources.create_desktops.ou_name`
+  - **ShowAuthConfig**
+    - changes of response param
+      - `+ sms_login_enabled`
+  - **UpdateAuthMethodConfig**
+    - changes of request param
+      - `+ sms_login_enabled`
+  - **ValidateConfig**
+    - changes of request param
+      - `+ sms_login_enabled`
+  - **CreateOrder**
+    - changes of request param
+      - `+ resources.create_desktops.ou_name`
+      - `- resources.subscribe_user_sharer.users.user_phone`
+      - `- resources.subscribe_user_sharer.users.ai_func`
+
 # 3.1.197 2026-05-28
 
 ### HuaweiCloud SDK DDM

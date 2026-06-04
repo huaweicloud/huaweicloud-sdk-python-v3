@@ -35,13 +35,13 @@ class UpdateTableRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例Id
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type catalog_name: str
-        :param database_name: 数据库名字
+        :param database_name: 数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
         :type database_name: str
-        :param table_name: 表名称
+        :param table_name: 表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
         :type table_name: str
         :param body: Body of the UpdateTableRequest
         :type body: :class:`huaweicloudsdklakeformation.v1.AlterTableInput`
@@ -67,7 +67,7 @@ class UpdateTableRequest:
     def instance_id(self):
         r"""Gets the instance_id of this UpdateTableRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this UpdateTableRequest.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateTableRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this UpdateTableRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this UpdateTableRequest.
         :type instance_id: str
@@ -89,7 +89,7 @@ class UpdateTableRequest:
     def catalog_name(self):
         r"""Gets the catalog_name of this UpdateTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The catalog_name of this UpdateTableRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class UpdateTableRequest:
     def catalog_name(self, catalog_name):
         r"""Sets the catalog_name of this UpdateTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param catalog_name: The catalog_name of this UpdateTableRequest.
         :type catalog_name: str
@@ -111,7 +111,7 @@ class UpdateTableRequest:
     def database_name(self):
         r"""Gets the database_name of this UpdateTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :return: The database_name of this UpdateTableRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class UpdateTableRequest:
     def database_name(self, database_name):
         r"""Sets the database_name of this UpdateTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :param database_name: The database_name of this UpdateTableRequest.
         :type database_name: str
@@ -133,7 +133,7 @@ class UpdateTableRequest:
     def table_name(self):
         r"""Gets the table_name of this UpdateTableRequest.
 
-        表名称
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
 
         :return: The table_name of this UpdateTableRequest.
         :rtype: str
@@ -144,7 +144,7 @@ class UpdateTableRequest:
     def table_name(self, table_name):
         r"""Sets the table_name of this UpdateTableRequest.
 
-        表名称
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
 
         :param table_name: The table_name of this UpdateTableRequest.
         :type table_name: str

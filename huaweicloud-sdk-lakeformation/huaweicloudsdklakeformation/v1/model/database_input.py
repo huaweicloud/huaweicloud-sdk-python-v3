@@ -16,6 +16,7 @@ class DatabaseInput:
 
     openapi_types = {
         'database_name': 'str',
+        'external_database_id': 'str',
         'owner': 'str',
         'owner_type': 'str',
         'owner_auth_source_type': 'str',
@@ -23,11 +24,15 @@ class DatabaseInput:
         'location': 'str',
         'parameters': 'dict(str, str)',
         'table_location_list': 'list[str]',
-        'function_location_list': 'list[str]'
+        'function_location_list': 'list[str]',
+        'data_statistic_enable': 'bool',
+        'connection_name': 'str',
+        'database_type': 'str'
     }
 
     attribute_map = {
         'database_name': 'database_name',
+        'external_database_id': 'external_database_id',
         'owner': 'owner',
         'owner_type': 'owner_type',
         'owner_auth_source_type': 'owner_auth_source_type',
@@ -35,37 +40,49 @@ class DatabaseInput:
         'location': 'location',
         'parameters': 'parameters',
         'table_location_list': 'table_location_list',
-        'function_location_list': 'function_location_list'
+        'function_location_list': 'function_location_list',
+        'data_statistic_enable': 'data_statistic_enable',
+        'connection_name': 'connection_name',
+        'database_type': 'database_type'
     }
 
-    def __init__(self, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
+    def __init__(self, database_name=None, external_database_id=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None, data_statistic_enable=None, connection_name=None, database_type=None):
         r"""DatabaseInput
 
         The model defined in huaweicloud sdk
 
-        :param database_name: 数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
+        :param database_name: 数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
         :type database_name: str
+        :param external_database_id: 用户端数据库id，创建时指定，不可修改。
+        :type external_database_id: str
         :param owner: 数据库所有者。长度为0~128个字符。
         :type owner: str
-        :param owner_type: 所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :param owner_type: 所有者类型：USER-用户、GROUP-组、ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
         :type owner_type: str
-        :param owner_auth_source_type: 所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :param owner_auth_source_type: 所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
         :type owner_auth_source_type: str
         :param description: 数据库描述信息。由用户创建数据库时输入，最大长度为4000个字符。
         :type description: str
-        :param location: 数据库路径地址。例如obs://location/uri/
+        :param location: 数据库路径地址。例如obs://location/uri/。
         :type location: str
-        :param parameters: 标签信息
+        :param parameters: 标签信息。
         :type parameters: dict(str, str)
-        :param table_location_list: 表路径列表
+        :param table_location_list: 表路径列表。
         :type table_location_list: list[str]
-        :param function_location_list: 函数路径列表
+        :param function_location_list: 函数路径列表。
         :type function_location_list: list[str]
+        :param data_statistic_enable: 数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关
+        :type data_statistic_enable: bool
+        :param connection_name: 连接名称
+        :type connection_name: str
+        :param database_type: 数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+        :type database_type: str
         """
         
         
 
         self._database_name = None
+        self._external_database_id = None
         self._owner = None
         self._owner_type = None
         self._owner_auth_source_type = None
@@ -74,9 +91,14 @@ class DatabaseInput:
         self._parameters = None
         self._table_location_list = None
         self._function_location_list = None
+        self._data_statistic_enable = None
+        self._connection_name = None
+        self._database_type = None
         self.discriminator = None
 
         self.database_name = database_name
+        if external_database_id is not None:
+            self.external_database_id = external_database_id
         if owner is not None:
             self.owner = owner
         if owner_type is not None:
@@ -93,12 +115,18 @@ class DatabaseInput:
             self.table_location_list = table_location_list
         if function_location_list is not None:
             self.function_location_list = function_location_list
+        if data_statistic_enable is not None:
+            self.data_statistic_enable = data_statistic_enable
+        if connection_name is not None:
+            self.connection_name = connection_name
+        if database_type is not None:
+            self.database_type = database_type
 
     @property
     def database_name(self):
         r"""Gets the database_name of this DatabaseInput.
 
-        数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :return: The database_name of this DatabaseInput.
         :rtype: str
@@ -109,12 +137,34 @@ class DatabaseInput:
     def database_name(self, database_name):
         r"""Sets the database_name of this DatabaseInput.
 
-        数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :param database_name: The database_name of this DatabaseInput.
         :type database_name: str
         """
         self._database_name = database_name
+
+    @property
+    def external_database_id(self):
+        r"""Gets the external_database_id of this DatabaseInput.
+
+        用户端数据库id，创建时指定，不可修改。
+
+        :return: The external_database_id of this DatabaseInput.
+        :rtype: str
+        """
+        return self._external_database_id
+
+    @external_database_id.setter
+    def external_database_id(self, external_database_id):
+        r"""Sets the external_database_id of this DatabaseInput.
+
+        用户端数据库id，创建时指定，不可修改。
+
+        :param external_database_id: The external_database_id of this DatabaseInput.
+        :type external_database_id: str
+        """
+        self._external_database_id = external_database_id
 
     @property
     def owner(self):
@@ -142,7 +192,7 @@ class DatabaseInput:
     def owner_type(self):
         r"""Gets the owner_type of this DatabaseInput.
 
-        所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        所有者类型：USER-用户、GROUP-组、ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :return: The owner_type of this DatabaseInput.
         :rtype: str
@@ -153,7 +203,7 @@ class DatabaseInput:
     def owner_type(self, owner_type):
         r"""Sets the owner_type of this DatabaseInput.
 
-        所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        所有者类型：USER-用户、GROUP-组、ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :param owner_type: The owner_type of this DatabaseInput.
         :type owner_type: str
@@ -164,7 +214,7 @@ class DatabaseInput:
     def owner_auth_source_type(self):
         r"""Gets the owner_auth_source_type of this DatabaseInput.
 
-        所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :return: The owner_auth_source_type of this DatabaseInput.
         :rtype: str
@@ -175,7 +225,7 @@ class DatabaseInput:
     def owner_auth_source_type(self, owner_auth_source_type):
         r"""Sets the owner_auth_source_type of this DatabaseInput.
 
-        所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        所有者来源：IAM-云用户、SAML-联邦、LDAP-ld用户、LOCAL-本地用户、AGENTTENANT-委托、OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :param owner_auth_source_type: The owner_auth_source_type of this DatabaseInput.
         :type owner_auth_source_type: str
@@ -208,7 +258,7 @@ class DatabaseInput:
     def location(self):
         r"""Gets the location of this DatabaseInput.
 
-        数据库路径地址。例如obs://location/uri/
+        数据库路径地址。例如obs://location/uri/。
 
         :return: The location of this DatabaseInput.
         :rtype: str
@@ -219,7 +269,7 @@ class DatabaseInput:
     def location(self, location):
         r"""Sets the location of this DatabaseInput.
 
-        数据库路径地址。例如obs://location/uri/
+        数据库路径地址。例如obs://location/uri/。
 
         :param location: The location of this DatabaseInput.
         :type location: str
@@ -230,7 +280,7 @@ class DatabaseInput:
     def parameters(self):
         r"""Gets the parameters of this DatabaseInput.
 
-        标签信息
+        标签信息。
 
         :return: The parameters of this DatabaseInput.
         :rtype: dict(str, str)
@@ -241,7 +291,7 @@ class DatabaseInput:
     def parameters(self, parameters):
         r"""Sets the parameters of this DatabaseInput.
 
-        标签信息
+        标签信息。
 
         :param parameters: The parameters of this DatabaseInput.
         :type parameters: dict(str, str)
@@ -252,7 +302,7 @@ class DatabaseInput:
     def table_location_list(self):
         r"""Gets the table_location_list of this DatabaseInput.
 
-        表路径列表
+        表路径列表。
 
         :return: The table_location_list of this DatabaseInput.
         :rtype: list[str]
@@ -263,7 +313,7 @@ class DatabaseInput:
     def table_location_list(self, table_location_list):
         r"""Sets the table_location_list of this DatabaseInput.
 
-        表路径列表
+        表路径列表。
 
         :param table_location_list: The table_location_list of this DatabaseInput.
         :type table_location_list: list[str]
@@ -274,7 +324,7 @@ class DatabaseInput:
     def function_location_list(self):
         r"""Gets the function_location_list of this DatabaseInput.
 
-        函数路径列表
+        函数路径列表。
 
         :return: The function_location_list of this DatabaseInput.
         :rtype: list[str]
@@ -285,12 +335,78 @@ class DatabaseInput:
     def function_location_list(self, function_location_list):
         r"""Sets the function_location_list of this DatabaseInput.
 
-        函数路径列表
+        函数路径列表。
 
         :param function_location_list: The function_location_list of this DatabaseInput.
         :type function_location_list: list[str]
         """
         self._function_location_list = function_location_list
+
+    @property
+    def data_statistic_enable(self):
+        r"""Gets the data_statistic_enable of this DatabaseInput.
+
+        数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关
+
+        :return: The data_statistic_enable of this DatabaseInput.
+        :rtype: bool
+        """
+        return self._data_statistic_enable
+
+    @data_statistic_enable.setter
+    def data_statistic_enable(self, data_statistic_enable):
+        r"""Sets the data_statistic_enable of this DatabaseInput.
+
+        数据概况统计开关。默认状态为关，若要开启database下table的数据概况统计，需要先打开database的数据概况开关
+
+        :param data_statistic_enable: The data_statistic_enable of this DatabaseInput.
+        :type data_statistic_enable: bool
+        """
+        self._data_statistic_enable = data_statistic_enable
+
+    @property
+    def connection_name(self):
+        r"""Gets the connection_name of this DatabaseInput.
+
+        连接名称
+
+        :return: The connection_name of this DatabaseInput.
+        :rtype: str
+        """
+        return self._connection_name
+
+    @connection_name.setter
+    def connection_name(self, connection_name):
+        r"""Sets the connection_name of this DatabaseInput.
+
+        连接名称
+
+        :param connection_name: The connection_name of this DatabaseInput.
+        :type connection_name: str
+        """
+        self._connection_name = connection_name
+
+    @property
+    def database_type(self):
+        r"""Gets the database_type of this DatabaseInput.
+
+        数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+
+        :return: The database_type of this DatabaseInput.
+        :rtype: str
+        """
+        return self._database_type
+
+    @database_type.setter
+    def database_type(self, database_type):
+        r"""Sets the database_type of this DatabaseInput.
+
+        数据库类型：MANAGED_DATABASE内置数据库、FOREIGN_DATABASE外置数据库。
+
+        :param database_type: The database_type of this DatabaseInput.
+        :type database_type: str
+        """
+        self._database_type = database_type
 
     def to_dict(self):
         result = {}

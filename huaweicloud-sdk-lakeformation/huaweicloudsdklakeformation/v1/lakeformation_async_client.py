@@ -1133,6 +1133,71 @@ class LakeFormationAsyncClient(Client):
 
         return http_info
 
+    def show_agency_credential_async(self, request):
+        r"""查询委托凭据
+
+        查询委托凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAgencyCredential
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgencyCredentialRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgencyCredentialResponse`
+        """
+        http_info = self._show_agency_credential_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_credential_async_invoker(self, request):
+        http_info = self._show_agency_credential_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_agency_credential_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/agency/credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyCredentialResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'agency_type' in local_var_params:
+            query_params.append(('agency_type', local_var_params['agency_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_catalog_async(self, request):
         r"""创建catalog
 
@@ -1608,7 +1673,7 @@ class LakeFormationAsyncClient(Client):
     def create_database_async(self, request):
         r"""创建数据库
 
-        创建数据库
+        创建数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1678,8 +1743,8 @@ class LakeFormationAsyncClient(Client):
         r"""删除数据库
 
         删除指定数据库，catalog的默认数据库不允许删除。
-        cascade: 指定为true时，删除数据库下的表；指定为false时，只能删除空的数据库
-        delete_data: 指定为true时，级联删除会将表的数据放入回收站；指定为false时，不删除表数据
+        cascade: 指定为true时，删除数据库下的表；指定为false时，只能删除空的数据库。
+        delete_data: 指定为true时，级联删除会将表的数据放入回收站；指定为false时，不删除表数据。
         删除数据库后不支持恢复数据库下的事务表。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1723,6 +1788,8 @@ class LakeFormationAsyncClient(Client):
             query_params.append(('delete_data', local_var_params['delete_data']))
         if 'cascade' in local_var_params:
             query_params.append(('cascade', local_var_params['cascade']))
+        if 'is_async' in local_var_params:
+            query_params.append(('is_async', local_var_params['is_async']))
 
         header_params = {}
 
@@ -1822,7 +1889,7 @@ class LakeFormationAsyncClient(Client):
     def list_databases_async(self, request):
         r"""列举数据库信息
 
-        列举数据库信息
+        列举数据库信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1867,6 +1934,10 @@ class LakeFormationAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'reverse_page' in local_var_params:
             query_params.append(('reverse_page', local_var_params['reverse_page']))
+        if 'external_database_id' in local_var_params:
+            query_params.append(('external_database_id', local_var_params['external_database_id']))
+        if 'deleted' in local_var_params:
+            query_params.append(('deleted', local_var_params['deleted']))
 
         header_params = {}
 
@@ -1897,7 +1968,7 @@ class LakeFormationAsyncClient(Client):
     def show_database_async(self, request):
         r"""获取数据库
 
-        获取数据库
+        获取数据库。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5448,7 +5519,7 @@ class LakeFormationAsyncClient(Client):
     def create_table_async(self, request):
         r"""创建表
 
-        创建表操作
+        创建表操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5590,7 +5661,7 @@ class LakeFormationAsyncClient(Client):
     def delete_table_async(self, request):
         r"""删除表
 
-        删除表及表下的分区
+        删除表及表下的分区。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5633,6 +5704,8 @@ class LakeFormationAsyncClient(Client):
         query_params = []
         if 'delete_data' in local_var_params:
             query_params.append(('delete_data', local_var_params['delete_data']))
+        if 'is_async' in local_var_params:
+            query_params.append(('is_async', local_var_params['is_async']))
 
         header_params = {}
 
@@ -5642,7 +5715,7 @@ class LakeFormationAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -5816,9 +5889,9 @@ class LakeFormationAsyncClient(Client):
     def list_tables_async(self, request):
         r"""根据条件分页列举表信息
 
-        返回数据库下符合查询条件的表的元数据信息，不支持事务操作
-        当表名通配符或表类型不为空时，优先根据表名和类型筛选过滤
-        当表名通配符或表类型为空时，再根据属性筛选过滤
+        返回数据库下符合查询条件的表的元数据信息，不支持事务操作。
+        当表名通配符或表类型不为空时，优先根据表名和类型筛选过滤。
+        当表名通配符或表类型为空时，再根据属性筛选过滤。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5859,6 +5932,8 @@ class LakeFormationAsyncClient(Client):
         query_params = []
         if 'table_name_pattern' in local_var_params:
             query_params.append(('table_name_pattern', local_var_params['table_name_pattern']))
+        if 'table_format' in local_var_params:
+            query_params.append(('table_format', local_var_params['table_format']))
         if 'table_type' in local_var_params:
             query_params.append(('table_type', local_var_params['table_type']))
         if 'filter' in local_var_params:
@@ -5869,6 +5944,10 @@ class LakeFormationAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'reverse_page' in local_var_params:
             query_params.append(('reverse_page', local_var_params['reverse_page']))
+        if 'deleted' in local_var_params:
+            query_params.append(('deleted', local_var_params['deleted']))
+        if 'include_fields' in local_var_params:
+            query_params.append(('include_fields', local_var_params['include_fields']))
 
         header_params = {}
 
@@ -5970,7 +6049,7 @@ class LakeFormationAsyncClient(Client):
     def show_table_async(self, request):
         r"""获取表信息
 
-        获取表信息
+        获取表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6011,6 +6090,8 @@ class LakeFormationAsyncClient(Client):
             path_params['table_name'] = local_var_params['table_name']
 
         query_params = []
+        if 'version_id' in local_var_params:
+            query_params.append(('version_id', local_var_params['version_id']))
 
         header_params = {}
 
@@ -6041,7 +6122,7 @@ class LakeFormationAsyncClient(Client):
     def update_table_async(self, request):
         r"""修改表信息
 
-        修改表信息
+        修改表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

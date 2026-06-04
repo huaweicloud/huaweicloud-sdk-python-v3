@@ -1,9 +1,10 @@
 # coding: utf-8
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CatalogAttributeVOParent:
+class UpdateInstanceAliasResponse(SdkResponse):
 
     """
     Attributes:
@@ -15,53 +16,56 @@ class CatalogAttributeVOParent:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'resp': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        'resp': 'resp'
     }
 
-    def __init__(self, id=None):
-        r"""CatalogAttributeVOParent
+    def __init__(self, resp=None):
+        r"""UpdateInstanceAliasResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 父节点ID。
-        :type id: str
+        :param resp: 操作结果。
+        :type resp: str
         """
         
-        
+        super().__init__()
 
-        self._id = None
+        self._resp = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if resp is not None:
+            self.resp = resp
 
     @property
-    def id(self):
-        r"""Gets the id of this CatalogAttributeVOParent.
+    def resp(self):
+        r"""Gets the resp of this UpdateInstanceAliasResponse.
 
-        父节点ID。
+        操作结果。
 
-        :return: The id of this CatalogAttributeVOParent.
+        :return: The resp of this UpdateInstanceAliasResponse.
         :rtype: str
         """
-        return self._id
+        return self._resp
 
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this CatalogAttributeVOParent.
+    @resp.setter
+    def resp(self, resp):
+        r"""Sets the resp of this UpdateInstanceAliasResponse.
 
-        父节点ID。
+        操作结果。
 
-        :param id: The id of this CatalogAttributeVOParent.
-        :type id: str
+        :param resp: The resp of this UpdateInstanceAliasResponse.
+        :type resp: str
         """
-        self._id = id
+        self._resp = resp
 
     def to_dict(self):
+        import warnings
+        warnings.warn("UpdateInstanceAliasResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
         for attr, _ in self.openapi_types.items():
@@ -98,7 +102,7 @@ class CatalogAttributeVOParent:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CatalogAttributeVOParent):
+        if not isinstance(other, UpdateInstanceAliasResponse):
             return False
 
         return self.__dict__ == other.__dict__

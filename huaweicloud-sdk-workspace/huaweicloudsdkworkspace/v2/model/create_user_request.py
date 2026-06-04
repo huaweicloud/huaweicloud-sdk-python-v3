@@ -59,7 +59,7 @@ class CreateUserRequest:
         :type user_email: str
         :param account_expires: 账户过期时间，0表示永远不过期。时间格式：yyyy-MM-ddTHH:mm:ssZ或yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type account_expires: str
-        :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活。创建后，用户自行激活。需填写用户名、邮箱或手机号，创建后将发送用户登录信息（接入地址、企业ID、用户名、密码）至邮箱或手机号短信。 * ADMIN_ACTIVATE： 管理员激活。对接AD域场景，只需要配置用户名，用户名与AD服务器上已创建的用户名保持一致；未对接AD域场景，需填写用户名、密码，请妥善保管您为用户设置的密码。
         :type active_type: str
         :param user_phone: 用户手机号。
         :type user_phone: str
@@ -199,7 +199,7 @@ class CreateUserRequest:
     def active_type(self):
         r"""Gets the active_type of this CreateUserRequest.
 
-        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活。创建后，用户自行激活。需填写用户名、邮箱或手机号，创建后将发送用户登录信息（接入地址、企业ID、用户名、密码）至邮箱或手机号短信。 * ADMIN_ACTIVATE： 管理员激活。对接AD域场景，只需要配置用户名，用户名与AD服务器上已创建的用户名保持一致；未对接AD域场景，需填写用户名、密码，请妥善保管您为用户设置的密码。
 
         :return: The active_type of this CreateUserRequest.
         :rtype: str
@@ -210,7 +210,7 @@ class CreateUserRequest:
     def active_type(self, active_type):
         r"""Sets the active_type of this CreateUserRequest.
 
-        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
+        激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活。创建后，用户自行激活。需填写用户名、邮箱或手机号，创建后将发送用户登录信息（接入地址、企业ID、用户名、密码）至邮箱或手机号短信。 * ADMIN_ACTIVATE： 管理员激活。对接AD域场景，只需要配置用户名，用户名与AD服务器上已创建的用户名保持一致；未对接AD域场景，需填写用户名、密码，请妥善保管您为用户设置的密码。
 
         :param active_type: The active_type of this CreateUserRequest.
         :type active_type: str

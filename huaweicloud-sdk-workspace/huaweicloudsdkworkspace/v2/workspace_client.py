@@ -3607,6 +3607,73 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def update_auth_config(self, request):
+        r"""增量更新认证配置
+
+        增量更新指定认证配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAuthConfig
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAuthConfigRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAuthConfigResponse`
+        """
+        http_info = self._update_auth_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_auth_config_invoker(self, request):
+        http_info = self._update_auth_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_auth_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/auth-configs/{auth_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuthConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'auth_config_id' in local_var_params:
+            path_params['auth_config_id'] = local_var_params['auth_config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_auth_method_config(self, request):
         r"""更新认证策略配置
 
@@ -16746,31 +16813,31 @@ class WorkspaceClient(Client):
 
         return http_info
 
-    def update_full_speed_record_config(self, request):
+    def update_screen_records(self, request):
         r"""更新录屏全速上传详情
 
         更新录屏全速上传详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for UpdateFullSpeedRecordConfig
-        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateFullSpeedRecordConfigRequest`
-        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateFullSpeedRecordConfigResponse`
+        :param request: Request instance for UpdateScreenRecords
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsResponse`
         """
-        http_info = self._update_full_speed_record_config_http_info(request)
+        http_info = self._update_screen_records_http_info(request)
         return self._call_api(**http_info)
 
-    def update_full_speed_record_config_invoker(self, request):
-        http_info = self._update_full_speed_record_config_http_info(request)
+    def update_screen_records_invoker(self, request):
+        http_info = self._update_screen_records_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _update_full_speed_record_config_http_info(cls, request):
+    def _update_screen_records_http_info(cls, request):
         http_info = {
             "method": "PUT",
             "resource_path": "/v2/{project_id}/screen-records/{record_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateFullSpeedRecordConfigResponse"
+            "response_type": "UpdateScreenRecordsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

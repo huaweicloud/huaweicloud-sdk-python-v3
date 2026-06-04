@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateFullSpeedRecordConfigRequest:
+class CreateLanceTableInput:
 
     """
     Attributes:
@@ -15,75 +15,47 @@ class UpdateFullSpeedRecordConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'record_id': 'str',
-        'body': 'UpdateScreenRecordsRequestBody'
+        'schema': 'ArrowSchema'
     }
 
     attribute_map = {
-        'record_id': 'record_id',
-        'body': 'body'
+        'schema': 'schema'
     }
 
-    def __init__(self, record_id=None, body=None):
-        r"""UpdateFullSpeedRecordConfigRequest
+    def __init__(self, schema=None):
+        r"""CreateLanceTableInput
 
         The model defined in huaweicloud sdk
 
-        :param record_id: 录屏记录UUID。
-        :type record_id: str
-        :param body: Body of the UpdateFullSpeedRecordConfigRequest
-        :type body: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsRequestBody`
+        :param schema: 
+        :type schema: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
         """
         
         
 
-        self._record_id = None
-        self._body = None
+        self._schema = None
         self.discriminator = None
 
-        self.record_id = record_id
-        if body is not None:
-            self.body = body
+        if schema is not None:
+            self.schema = schema
 
     @property
-    def record_id(self):
-        r"""Gets the record_id of this UpdateFullSpeedRecordConfigRequest.
+    def schema(self):
+        r"""Gets the schema of this CreateLanceTableInput.
 
-        录屏记录UUID。
-
-        :return: The record_id of this UpdateFullSpeedRecordConfigRequest.
-        :rtype: str
+        :return: The schema of this CreateLanceTableInput.
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
         """
-        return self._record_id
+        return self._schema
 
-    @record_id.setter
-    def record_id(self, record_id):
-        r"""Sets the record_id of this UpdateFullSpeedRecordConfigRequest.
+    @schema.setter
+    def schema(self, schema):
+        r"""Sets the schema of this CreateLanceTableInput.
 
-        录屏记录UUID。
-
-        :param record_id: The record_id of this UpdateFullSpeedRecordConfigRequest.
-        :type record_id: str
+        :param schema: The schema of this CreateLanceTableInput.
+        :type schema: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
         """
-        self._record_id = record_id
-
-    @property
-    def body(self):
-        r"""Gets the body of this UpdateFullSpeedRecordConfigRequest.
-
-        :return: The body of this UpdateFullSpeedRecordConfigRequest.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsRequestBody`
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateFullSpeedRecordConfigRequest.
-
-        :param body: The body of this UpdateFullSpeedRecordConfigRequest.
-        :type body: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsRequestBody`
-        """
-        self._body = body
+        self._schema = schema
 
     def to_dict(self):
         result = {}
@@ -122,7 +94,7 @@ class UpdateFullSpeedRecordConfigRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateFullSpeedRecordConfigRequest):
+        if not isinstance(other, CreateLanceTableInput):
             return False
 
         return self.__dict__ == other.__dict__

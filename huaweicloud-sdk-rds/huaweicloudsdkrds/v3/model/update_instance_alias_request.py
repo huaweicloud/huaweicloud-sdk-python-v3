@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdatePostgresqlInstanceAliasRequest:
+class UpdateInstanceAliasRequest:
 
     """
     Attributes:
@@ -27,7 +27,7 @@ class UpdatePostgresqlInstanceAliasRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        r"""UpdatePostgresqlInstanceAliasRequest
+        r"""UpdateInstanceAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -35,7 +35,7 @@ class UpdatePostgresqlInstanceAliasRequest:
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param body: Body of the UpdatePostgresqlInstanceAliasRequest
+        :param body: Body of the UpdateInstanceAliasRequest
         :type body: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`
         """
         
@@ -54,62 +54,62 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @property
     def x_language(self):
-        r"""Gets the x_language of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the x_language of this UpdateInstanceAliasRequest.
 
         语言
 
-        :return: The x_language of this UpdatePostgresqlInstanceAliasRequest.
+        :return: The x_language of this UpdateInstanceAliasRequest.
         :rtype: str
         """
         return self._x_language
 
     @x_language.setter
     def x_language(self, x_language):
-        r"""Sets the x_language of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the x_language of this UpdateInstanceAliasRequest.
 
         语言
 
-        :param x_language: The x_language of this UpdatePostgresqlInstanceAliasRequest.
+        :param x_language: The x_language of this UpdateInstanceAliasRequest.
         :type x_language: str
         """
         self._x_language = x_language
 
     @property
     def instance_id(self):
-        r"""Gets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the instance_id of this UpdateInstanceAliasRequest.
 
         实例ID。
 
-        :return: The instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        :return: The instance_id of this UpdateInstanceAliasRequest.
         :rtype: str
         """
         return self._instance_id
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        r"""Sets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the instance_id of this UpdateInstanceAliasRequest.
 
         实例ID。
 
-        :param instance_id: The instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        :param instance_id: The instance_id of this UpdateInstanceAliasRequest.
         :type instance_id: str
         """
         self._instance_id = instance_id
 
     @property
     def body(self):
-        r"""Gets the body of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the body of this UpdateInstanceAliasRequest.
 
-        :return: The body of this UpdatePostgresqlInstanceAliasRequest.
+        :return: The body of this UpdateInstanceAliasRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        r"""Sets the body of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the body of this UpdateInstanceAliasRequest.
 
-        :param body: The body of this UpdatePostgresqlInstanceAliasRequest.
+        :param body: The body of this UpdateInstanceAliasRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`
         """
         self._body = body
@@ -151,7 +151,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdatePostgresqlInstanceAliasRequest):
+        if not isinstance(other, UpdateInstanceAliasRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -91,24 +91,16 @@ class UpdateUosDomainInfo:
         self._openapi_ca_cert_id = None
         self.discriminator = None
 
-        if username is not None:
-            self.username = username
-        if user_password is not None:
-            self.user_password = user_password
-        if main_dc_address is not None:
-            self.main_dc_address = main_dc_address
-        if open_interface_address is not None:
-            self.open_interface_address = open_interface_address
+        self.username = username
+        self.user_password = user_password
+        self.main_dc_address = main_dc_address
+        self.open_interface_address = open_interface_address
         if open_interface_domain_name is not None:
             self.open_interface_domain_name = open_interface_domain_name
-        if internal_service_address is not None:
-            self.internal_service_address = internal_service_address
-        if app_cert is not None:
-            self.app_cert = app_cert
-        if app_cert_key is not None:
-            self.app_cert_key = app_cert_key
-        if openapi_ca_cert is not None:
-            self.openapi_ca_cert = openapi_ca_cert
+        self.internal_service_address = internal_service_address
+        self.app_cert = app_cert
+        self.app_cert_key = app_cert_key
+        self.openapi_ca_cert = openapi_ca_cert
         if id is not None:
             self.id = id
         if app_cert_id is not None:

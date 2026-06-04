@@ -15,29 +15,36 @@ class ResendEmailReq:
     sensitive_list = []
 
     openapi_types = {
-        'template_id': 'str'
+        'template_id': 'str',
+        'phone_template_id': 'str'
     }
 
     attribute_map = {
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'phone_template_id': 'phone_template_id'
     }
 
-    def __init__(self, template_id=None):
+    def __init__(self, template_id=None, phone_template_id=None):
         r"""ResendEmailReq
 
         The model defined in huaweicloud sdk
 
         :param template_id: 邮件模板ID。
         :type template_id: str
+        :param phone_template_id: 短信模板ID。
+        :type phone_template_id: str
         """
         
         
 
         self._template_id = None
+        self._phone_template_id = None
         self.discriminator = None
 
         if template_id is not None:
             self.template_id = template_id
+        if phone_template_id is not None:
+            self.phone_template_id = phone_template_id
 
     @property
     def template_id(self):
@@ -60,6 +67,28 @@ class ResendEmailReq:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def phone_template_id(self):
+        r"""Gets the phone_template_id of this ResendEmailReq.
+
+        短信模板ID。
+
+        :return: The phone_template_id of this ResendEmailReq.
+        :rtype: str
+        """
+        return self._phone_template_id
+
+    @phone_template_id.setter
+    def phone_template_id(self, phone_template_id):
+        r"""Sets the phone_template_id of this ResendEmailReq.
+
+        短信模板ID。
+
+        :param phone_template_id: The phone_template_id of this ResendEmailReq.
+        :type phone_template_id: str
+        """
+        self._phone_template_id = phone_template_id
 
     def to_dict(self):
         result = {}

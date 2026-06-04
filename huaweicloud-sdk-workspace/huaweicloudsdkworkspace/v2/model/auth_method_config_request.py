@@ -21,7 +21,8 @@ class AuthMethodConfigRequest:
         'radius_gateway_config': 'RadiusGatewayConfig',
         'third_party_auth_config': 'ThirdPartyAuthConfig',
         'emergency_login_mode': 'str',
-        'saml2_auth_config': 'Saml2AuthConfig'
+        'saml2_auth_config': 'Saml2AuthConfig',
+        'sms_login_enabled': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class AuthMethodConfigRequest:
         'radius_gateway_config': 'radius_gateway_config',
         'third_party_auth_config': 'third_party_auth_config',
         'emergency_login_mode': 'emergency_login_mode',
-        'saml2_auth_config': 'saml2_auth_config'
+        'saml2_auth_config': 'saml2_auth_config',
+        'sms_login_enabled': 'sms_login_enabled'
     }
 
-    def __init__(self, id=None, is_multi_domain_authenticate_enabled=None, auth_type=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None):
+    def __init__(self, id=None, is_multi_domain_authenticate_enabled=None, auth_type=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None, sms_login_enabled=None):
         r"""AuthMethodConfigRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class AuthMethodConfigRequest:
         :type emergency_login_mode: str
         :param saml2_auth_config: 
         :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
+        :param sms_login_enabled: 短信验证码登录开关。
+        :type sms_login_enabled: bool
         """
         
         
@@ -64,6 +68,7 @@ class AuthMethodConfigRequest:
         self._third_party_auth_config = None
         self._emergency_login_mode = None
         self._saml2_auth_config = None
+        self._sms_login_enabled = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class AuthMethodConfigRequest:
             self.emergency_login_mode = emergency_login_mode
         if saml2_auth_config is not None:
             self.saml2_auth_config = saml2_auth_config
+        if sms_login_enabled is not None:
+            self.sms_login_enabled = sms_login_enabled
 
     @property
     def id(self):
@@ -218,6 +225,28 @@ class AuthMethodConfigRequest:
         :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
         """
         self._saml2_auth_config = saml2_auth_config
+
+    @property
+    def sms_login_enabled(self):
+        r"""Gets the sms_login_enabled of this AuthMethodConfigRequest.
+
+        短信验证码登录开关。
+
+        :return: The sms_login_enabled of this AuthMethodConfigRequest.
+        :rtype: bool
+        """
+        return self._sms_login_enabled
+
+    @sms_login_enabled.setter
+    def sms_login_enabled(self, sms_login_enabled):
+        r"""Sets the sms_login_enabled of this AuthMethodConfigRequest.
+
+        短信验证码登录开关。
+
+        :param sms_login_enabled: The sms_login_enabled of this AuthMethodConfigRequest.
+        :type sms_login_enabled: bool
+        """
+        self._sms_login_enabled = sms_login_enabled
 
     def to_dict(self):
         result = {}

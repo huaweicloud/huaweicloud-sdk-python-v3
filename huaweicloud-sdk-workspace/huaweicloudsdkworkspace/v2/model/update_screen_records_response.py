@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
+class UpdateScreenRecordsResponse(SdkResponse):
 
     """
     Attributes:
@@ -16,55 +16,84 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resp': 'str'
+        'result_code': 'str',
+        'result_desc': 'str'
     }
 
     attribute_map = {
-        'resp': 'resp'
+        'result_code': 'result_code',
+        'result_desc': 'result_desc'
     }
 
-    def __init__(self, resp=None):
-        r"""UpdatePostgresqlInstanceAliasResponse
+    def __init__(self, result_code=None, result_desc=None):
+        r"""UpdateScreenRecordsResponse
 
         The model defined in huaweicloud sdk
 
-        :param resp: 操作结果。
-        :type resp: str
+        :param result_code: 结果码
+        :type result_code: str
+        :param result_desc: 结果信息
+        :type result_desc: str
         """
         
         super().__init__()
 
-        self._resp = None
+        self._result_code = None
+        self._result_desc = None
         self.discriminator = None
 
-        if resp is not None:
-            self.resp = resp
+        if result_code is not None:
+            self.result_code = result_code
+        if result_desc is not None:
+            self.result_desc = result_desc
 
     @property
-    def resp(self):
-        r"""Gets the resp of this UpdatePostgresqlInstanceAliasResponse.
+    def result_code(self):
+        r"""Gets the result_code of this UpdateScreenRecordsResponse.
 
-        操作结果。
+        结果码
 
-        :return: The resp of this UpdatePostgresqlInstanceAliasResponse.
+        :return: The result_code of this UpdateScreenRecordsResponse.
         :rtype: str
         """
-        return self._resp
+        return self._result_code
 
-    @resp.setter
-    def resp(self, resp):
-        r"""Sets the resp of this UpdatePostgresqlInstanceAliasResponse.
+    @result_code.setter
+    def result_code(self, result_code):
+        r"""Sets the result_code of this UpdateScreenRecordsResponse.
 
-        操作结果。
+        结果码
 
-        :param resp: The resp of this UpdatePostgresqlInstanceAliasResponse.
-        :type resp: str
+        :param result_code: The result_code of this UpdateScreenRecordsResponse.
+        :type result_code: str
         """
-        self._resp = resp
+        self._result_code = result_code
+
+    @property
+    def result_desc(self):
+        r"""Gets the result_desc of this UpdateScreenRecordsResponse.
+
+        结果信息
+
+        :return: The result_desc of this UpdateScreenRecordsResponse.
+        :rtype: str
+        """
+        return self._result_desc
+
+    @result_desc.setter
+    def result_desc(self, result_desc):
+        r"""Sets the result_desc of this UpdateScreenRecordsResponse.
+
+        结果信息
+
+        :param result_desc: The result_desc of this UpdateScreenRecordsResponse.
+        :type result_desc: str
+        """
+        self._result_desc = result_desc
 
     def to_dict(self):
         import warnings
-        warnings.warn("UpdatePostgresqlInstanceAliasResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("UpdateScreenRecordsResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -102,7 +131,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdatePostgresqlInstanceAliasResponse):
+        if not isinstance(other, UpdateScreenRecordsResponse):
             return False
 
         return self.__dict__ == other.__dict__

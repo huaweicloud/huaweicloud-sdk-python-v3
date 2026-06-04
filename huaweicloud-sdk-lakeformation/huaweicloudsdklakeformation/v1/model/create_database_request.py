@@ -31,9 +31,9 @@ class CreateDatabaseRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例Id
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
         :type catalog_name: str
         :param body: Body of the CreateDatabaseRequest
         :type body: :class:`huaweicloudsdklakeformation.v1.DatabaseInput`
@@ -55,7 +55,7 @@ class CreateDatabaseRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateDatabaseRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this CreateDatabaseRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateDatabaseRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateDatabaseRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this CreateDatabaseRequest.
         :type instance_id: str
@@ -77,7 +77,7 @@ class CreateDatabaseRequest:
     def catalog_name(self):
         r"""Gets the catalog_name of this CreateDatabaseRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
 
         :return: The catalog_name of this CreateDatabaseRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateDatabaseRequest:
     def catalog_name(self, catalog_name):
         r"""Sets the catalog_name of this CreateDatabaseRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
 
         :param catalog_name: The catalog_name of this CreateDatabaseRequest.
         :type catalog_name: str

@@ -12070,6 +12070,75 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def update_instance_alias_async(self, request):
+        r"""修改实例备注信息
+
+        修改指定数据库实例的备注信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateInstanceAlias
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceAliasRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceAliasResponse`
+        """
+        http_info = self._update_instance_alias_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instance_alias_async_invoker(self, request):
+        http_info = self._update_instance_alias_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_alias_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/alias",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_instance_configuration_async(self, request):
         r"""修改指定实例的参数
 
@@ -12302,75 +12371,6 @@ class RdsAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/port",
             "request_type": request.__class__.__name__,
             "response_type": "UpdatePortResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_postgresql_instance_alias_async(self, request):
-        r"""修改实例备注信息
-
-        修改指定数据库实例的备注信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdatePostgresqlInstanceAlias
-        :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasRequest`
-        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasResponse`
-        """
-        http_info = self._update_postgresql_instance_alias_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_postgresql_instance_alias_async_invoker(self, request):
-        http_info = self._update_postgresql_instance_alias_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_postgresql_instance_alias_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v3/{project_id}/instances/{instance_id}/alias",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdatePostgresqlInstanceAliasResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

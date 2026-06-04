@@ -18,29 +18,33 @@ class ShowTableRequest:
         'instance_id': 'str',
         'catalog_name': 'str',
         'database_name': 'str',
-        'table_name': 'str'
+        'table_name': 'str',
+        'version_id': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'catalog_name': 'catalog_name',
         'database_name': 'database_name',
-        'table_name': 'table_name'
+        'table_name': 'table_name',
+        'version_id': 'version_id'
     }
 
-    def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None):
+    def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, version_id=None):
         r"""ShowTableRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type catalog_name: str
-        :param database_name: 数据库名字
+        :param database_name: 数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
         :type database_name: str
-        :param table_name: 表名称
+        :param table_name: 表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
         :type table_name: str
+        :param version_id: 版本ID，默认为最新版本
+        :type version_id: str
         """
         
         
@@ -49,18 +53,21 @@ class ShowTableRequest:
         self._catalog_name = None
         self._database_name = None
         self._table_name = None
+        self._version_id = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.catalog_name = catalog_name
         self.database_name = database_name
         self.table_name = table_name
+        if version_id is not None:
+            self.version_id = version_id
 
     @property
     def instance_id(self):
         r"""Gets the instance_id of this ShowTableRequest.
 
-        实例ID
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this ShowTableRequest.
         :rtype: str
@@ -71,7 +78,7 @@ class ShowTableRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowTableRequest.
 
-        实例ID
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this ShowTableRequest.
         :type instance_id: str
@@ -82,7 +89,7 @@ class ShowTableRequest:
     def catalog_name(self):
         r"""Gets the catalog_name of this ShowTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The catalog_name of this ShowTableRequest.
         :rtype: str
@@ -93,7 +100,7 @@ class ShowTableRequest:
     def catalog_name(self, catalog_name):
         r"""Sets the catalog_name of this ShowTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param catalog_name: The catalog_name of this ShowTableRequest.
         :type catalog_name: str
@@ -104,7 +111,7 @@ class ShowTableRequest:
     def database_name(self):
         r"""Gets the database_name of this ShowTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :return: The database_name of this ShowTableRequest.
         :rtype: str
@@ -115,7 +122,7 @@ class ShowTableRequest:
     def database_name(self, database_name):
         r"""Sets the database_name of this ShowTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :param database_name: The database_name of this ShowTableRequest.
         :type database_name: str
@@ -126,7 +133,7 @@ class ShowTableRequest:
     def table_name(self):
         r"""Gets the table_name of this ShowTableRequest.
 
-        表名称
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
 
         :return: The table_name of this ShowTableRequest.
         :rtype: str
@@ -137,12 +144,34 @@ class ShowTableRequest:
     def table_name(self, table_name):
         r"""Sets the table_name of this ShowTableRequest.
 
-        表名称
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
 
         :param table_name: The table_name of this ShowTableRequest.
         :type table_name: str
         """
         self._table_name = table_name
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this ShowTableRequest.
+
+        版本ID，默认为最新版本
+
+        :return: The version_id of this ShowTableRequest.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this ShowTableRequest.
+
+        版本ID，默认为最新版本
+
+        :param version_id: The version_id of this ShowTableRequest.
+        :type version_id: str
+        """
+        self._version_id = version_id
 
     def to_dict(self):
         result = {}

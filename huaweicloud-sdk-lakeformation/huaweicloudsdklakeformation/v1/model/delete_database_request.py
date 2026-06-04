@@ -19,7 +19,8 @@ class DeleteDatabaseRequest:
         'catalog_name': 'str',
         'database_name': 'str',
         'delete_data': 'bool',
-        'cascade': 'bool'
+        'cascade': 'bool',
+        'is_async': 'bool'
     }
 
     attribute_map = {
@@ -27,24 +28,27 @@ class DeleteDatabaseRequest:
         'catalog_name': 'catalog_name',
         'database_name': 'database_name',
         'delete_data': 'delete_data',
-        'cascade': 'cascade'
+        'cascade': 'cascade',
+        'is_async': 'is_async'
     }
 
-    def __init__(self, instance_id=None, catalog_name=None, database_name=None, delete_data=None, cascade=None):
+    def __init__(self, instance_id=None, catalog_name=None, database_name=None, delete_data=None, cascade=None, is_async=None):
         r"""DeleteDatabaseRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例Id
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
         :type catalog_name: str
-        :param database_name: 数据库名
+        :param database_name: 数据库名称。只能包含中文、字母、数字、下划线、中划线,且长度为1~128个字符。
         :type database_name: str
-        :param delete_data: 是否删除数据库路径下的数据
+        :param delete_data: 是否删除数据库路径下的数据,该参数只针对内表生效,外表不会删除数据。默认为false。
         :type delete_data: bool
-        :param cascade: 是否级联删除数据库下的表、分区以及函数
+        :param cascade: 是否级联删除数据库下的表、分区以及函数。默认为false。
         :type cascade: bool
+        :param is_async: 是否异步删除,默认为false。
+        :type is_async: bool
         """
         
         
@@ -54,6 +58,7 @@ class DeleteDatabaseRequest:
         self._database_name = None
         self._delete_data = None
         self._cascade = None
+        self._is_async = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -63,12 +68,14 @@ class DeleteDatabaseRequest:
             self.delete_data = delete_data
         if cascade is not None:
             self.cascade = cascade
+        if is_async is not None:
+            self.is_async = is_async
 
     @property
     def instance_id(self):
         r"""Gets the instance_id of this DeleteDatabaseRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this DeleteDatabaseRequest.
         :rtype: str
@@ -79,7 +86,7 @@ class DeleteDatabaseRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this DeleteDatabaseRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如:2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this DeleteDatabaseRequest.
         :type instance_id: str
@@ -90,7 +97,7 @@ class DeleteDatabaseRequest:
     def catalog_name(self):
         r"""Gets the catalog_name of this DeleteDatabaseRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
 
         :return: The catalog_name of this DeleteDatabaseRequest.
         :rtype: str
@@ -101,7 +108,7 @@ class DeleteDatabaseRequest:
     def catalog_name(self, catalog_name):
         r"""Sets the catalog_name of this DeleteDatabaseRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线,且长度为1~256个字符。
 
         :param catalog_name: The catalog_name of this DeleteDatabaseRequest.
         :type catalog_name: str
@@ -112,7 +119,7 @@ class DeleteDatabaseRequest:
     def database_name(self):
         r"""Gets the database_name of this DeleteDatabaseRequest.
 
-        数据库名
+        数据库名称。只能包含中文、字母、数字、下划线、中划线,且长度为1~128个字符。
 
         :return: The database_name of this DeleteDatabaseRequest.
         :rtype: str
@@ -123,7 +130,7 @@ class DeleteDatabaseRequest:
     def database_name(self, database_name):
         r"""Sets the database_name of this DeleteDatabaseRequest.
 
-        数据库名
+        数据库名称。只能包含中文、字母、数字、下划线、中划线,且长度为1~128个字符。
 
         :param database_name: The database_name of this DeleteDatabaseRequest.
         :type database_name: str
@@ -134,7 +141,7 @@ class DeleteDatabaseRequest:
     def delete_data(self):
         r"""Gets the delete_data of this DeleteDatabaseRequest.
 
-        是否删除数据库路径下的数据
+        是否删除数据库路径下的数据,该参数只针对内表生效,外表不会删除数据。默认为false。
 
         :return: The delete_data of this DeleteDatabaseRequest.
         :rtype: bool
@@ -145,7 +152,7 @@ class DeleteDatabaseRequest:
     def delete_data(self, delete_data):
         r"""Sets the delete_data of this DeleteDatabaseRequest.
 
-        是否删除数据库路径下的数据
+        是否删除数据库路径下的数据,该参数只针对内表生效,外表不会删除数据。默认为false。
 
         :param delete_data: The delete_data of this DeleteDatabaseRequest.
         :type delete_data: bool
@@ -156,7 +163,7 @@ class DeleteDatabaseRequest:
     def cascade(self):
         r"""Gets the cascade of this DeleteDatabaseRequest.
 
-        是否级联删除数据库下的表、分区以及函数
+        是否级联删除数据库下的表、分区以及函数。默认为false。
 
         :return: The cascade of this DeleteDatabaseRequest.
         :rtype: bool
@@ -167,12 +174,34 @@ class DeleteDatabaseRequest:
     def cascade(self, cascade):
         r"""Sets the cascade of this DeleteDatabaseRequest.
 
-        是否级联删除数据库下的表、分区以及函数
+        是否级联删除数据库下的表、分区以及函数。默认为false。
 
         :param cascade: The cascade of this DeleteDatabaseRequest.
         :type cascade: bool
         """
         self._cascade = cascade
+
+    @property
+    def is_async(self):
+        r"""Gets the is_async of this DeleteDatabaseRequest.
+
+        是否异步删除,默认为false。
+
+        :return: The is_async of this DeleteDatabaseRequest.
+        :rtype: bool
+        """
+        return self._is_async
+
+    @is_async.setter
+    def is_async(self, is_async):
+        r"""Sets the is_async of this DeleteDatabaseRequest.
+
+        是否异步删除,默认为false。
+
+        :param is_async: The is_async of this DeleteDatabaseRequest.
+        :type is_async: bool
+        """
+        self._is_async = is_async
 
     def to_dict(self):
         result = {}

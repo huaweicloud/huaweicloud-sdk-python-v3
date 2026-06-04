@@ -23,6 +23,7 @@ class ShowAuthConfigResponse(SdkResponse):
         'radius_gateway_config': 'RadiusGatewayConfigInfo',
         'third_party_auth_config': 'list[ThirdPartyAuthConfig]',
         'emergency_login_mode': 'str',
+        'sms_login_enabled': 'bool',
         'saml2_auth_config': 'Saml2AuthConfig'
     }
 
@@ -34,10 +35,11 @@ class ShowAuthConfigResponse(SdkResponse):
         'radius_gateway_config': 'radius_gateway_config',
         'third_party_auth_config': 'third_party_auth_config',
         'emergency_login_mode': 'emergency_login_mode',
+        'sms_login_enabled': 'sms_login_enabled',
         'saml2_auth_config': 'saml2_auth_config'
     }
 
-    def __init__(self, id=None, auth_type=None, enable=None, is_multi_domain_authenticate_enabled=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None):
+    def __init__(self, id=None, auth_type=None, enable=None, is_multi_domain_authenticate_enabled=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, sms_login_enabled=None, saml2_auth_config=None):
         r"""ShowAuthConfigResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +58,8 @@ class ShowAuthConfigResponse(SdkResponse):
         :type third_party_auth_config: list[:class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`]
         :param emergency_login_mode: 应急登录模式。
         :type emergency_login_mode: str
+        :param sms_login_enabled: 短信验证码登录开关。
+        :type sms_login_enabled: bool
         :param saml2_auth_config: 
         :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
         """
@@ -69,6 +73,7 @@ class ShowAuthConfigResponse(SdkResponse):
         self._radius_gateway_config = None
         self._third_party_auth_config = None
         self._emergency_login_mode = None
+        self._sms_login_enabled = None
         self._saml2_auth_config = None
         self.discriminator = None
 
@@ -86,6 +91,8 @@ class ShowAuthConfigResponse(SdkResponse):
             self.third_party_auth_config = third_party_auth_config
         if emergency_login_mode is not None:
             self.emergency_login_mode = emergency_login_mode
+        if sms_login_enabled is not None:
+            self.sms_login_enabled = sms_login_enabled
         if saml2_auth_config is not None:
             self.saml2_auth_config = saml2_auth_config
 
@@ -238,6 +245,28 @@ class ShowAuthConfigResponse(SdkResponse):
         :type emergency_login_mode: str
         """
         self._emergency_login_mode = emergency_login_mode
+
+    @property
+    def sms_login_enabled(self):
+        r"""Gets the sms_login_enabled of this ShowAuthConfigResponse.
+
+        短信验证码登录开关。
+
+        :return: The sms_login_enabled of this ShowAuthConfigResponse.
+        :rtype: bool
+        """
+        return self._sms_login_enabled
+
+    @sms_login_enabled.setter
+    def sms_login_enabled(self, sms_login_enabled):
+        r"""Sets the sms_login_enabled of this ShowAuthConfigResponse.
+
+        短信验证码登录开关。
+
+        :param sms_login_enabled: The sms_login_enabled of this ShowAuthConfigResponse.
+        :type sms_login_enabled: bool
+        """
+        self._sms_login_enabled = sms_login_enabled
 
     @property
     def saml2_auth_config(self):

@@ -22,7 +22,9 @@ class NodeItem:
         'private_ip': 'str',
         'public_ip': 'str',
         'spec_code': 'str',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'nat_gateway_id': 'str',
+        'external_service_port': 'int'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class NodeItem:
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
         'spec_code': 'spec_code',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'nat_gateway_id': 'nat_gateway_id',
+        'external_service_port': 'external_service_port'
     }
 
-    def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None):
+    def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None, nat_gateway_id=None, external_service_port=None):
         r"""NodeItem
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class NodeItem:
         :type spec_code: str
         :param availability_zone: 可用区。
         :type availability_zone: str
+        :param nat_gateway_id: **参数解释：** 公网NAT网关实例的ID。可以调用“查询公网NAT网关列表”接口获取。 **取值范围：** 不涉及。
+        :type nat_gateway_id: str
+        :param external_service_port: **参数解释：** 弹性公网IP对外提供服务的端口号。 **取值范围：** 1~65535。
+        :type external_service_port: int
         """
         
         
@@ -69,6 +77,8 @@ class NodeItem:
         self._public_ip = None
         self._spec_code = None
         self._availability_zone = None
+        self._nat_gateway_id = None
+        self._external_service_port = None
         self.discriminator = None
 
         self.id = id
@@ -79,6 +89,10 @@ class NodeItem:
         self.public_ip = public_ip
         self.spec_code = spec_code
         self.availability_zone = availability_zone
+        if nat_gateway_id is not None:
+            self.nat_gateway_id = nat_gateway_id
+        if external_service_port is not None:
+            self.external_service_port = external_service_port
 
     @property
     def id(self):
@@ -255,6 +269,50 @@ class NodeItem:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def nat_gateway_id(self):
+        r"""Gets the nat_gateway_id of this NodeItem.
+
+        **参数解释：** 公网NAT网关实例的ID。可以调用“查询公网NAT网关列表”接口获取。 **取值范围：** 不涉及。
+
+        :return: The nat_gateway_id of this NodeItem.
+        :rtype: str
+        """
+        return self._nat_gateway_id
+
+    @nat_gateway_id.setter
+    def nat_gateway_id(self, nat_gateway_id):
+        r"""Sets the nat_gateway_id of this NodeItem.
+
+        **参数解释：** 公网NAT网关实例的ID。可以调用“查询公网NAT网关列表”接口获取。 **取值范围：** 不涉及。
+
+        :param nat_gateway_id: The nat_gateway_id of this NodeItem.
+        :type nat_gateway_id: str
+        """
+        self._nat_gateway_id = nat_gateway_id
+
+    @property
+    def external_service_port(self):
+        r"""Gets the external_service_port of this NodeItem.
+
+        **参数解释：** 弹性公网IP对外提供服务的端口号。 **取值范围：** 1~65535。
+
+        :return: The external_service_port of this NodeItem.
+        :rtype: int
+        """
+        return self._external_service_port
+
+    @external_service_port.setter
+    def external_service_port(self, external_service_port):
+        r"""Sets the external_service_port of this NodeItem.
+
+        **参数解释：** 弹性公网IP对外提供服务的端口号。 **取值范围：** 1~65535。
+
+        :param external_service_port: The external_service_port of this NodeItem.
+        :type external_service_port: int
+        """
+        self._external_service_port = external_service_port
 
     def to_dict(self):
         result = {}

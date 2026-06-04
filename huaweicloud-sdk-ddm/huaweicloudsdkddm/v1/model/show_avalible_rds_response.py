@@ -16,29 +16,50 @@ class ShowAvalibleRdsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'target_data_nodes': 'list[TargetDn4Restore]'
+        'target_data_nodes': 'list[TargetDn4Restore]',
+        'offset': 'int',
+        'limit': 'int',
+        'total': 'int'
     }
 
     attribute_map = {
-        'target_data_nodes': 'target_data_nodes'
+        'target_data_nodes': 'target_data_nodes',
+        'offset': 'offset',
+        'limit': 'limit',
+        'total': 'total'
     }
 
-    def __init__(self, target_data_nodes=None):
+    def __init__(self, target_data_nodes=None, offset=None, limit=None, total=None):
         r"""ShowAvalibleRdsResponse
 
         The model defined in huaweicloud sdk
 
         :param target_data_nodes: 可用目标DN。
         :type target_data_nodes: list[:class:`huaweicloudsdkddm.v1.TargetDn4Restore`]
+        :param offset: **参数解释**：  分页参数: 起始值。  **取值范围**：   大于等于0。
+        :type offset: int
+        :param limit: **参数解释**：  分页参数: 每页记录数。  **取值范围**：  大于0且小于等于128。
+        :type limit: int
+        :param total: **参数解释**：  总记录数。  **取值范围**：  不涉及。
+        :type total: int
         """
         
         super().__init__()
 
         self._target_data_nodes = None
+        self._offset = None
+        self._limit = None
+        self._total = None
         self.discriminator = None
 
         if target_data_nodes is not None:
             self.target_data_nodes = target_data_nodes
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if total is not None:
+            self.total = total
 
     @property
     def target_data_nodes(self):
@@ -61,6 +82,72 @@ class ShowAvalibleRdsResponse(SdkResponse):
         :type target_data_nodes: list[:class:`huaweicloudsdkddm.v1.TargetDn4Restore`]
         """
         self._target_data_nodes = target_data_nodes
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  分页参数: 起始值。  **取值范围**：   大于等于0。
+
+        :return: The offset of this ShowAvalibleRdsResponse.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  分页参数: 起始值。  **取值范围**：   大于等于0。
+
+        :param offset: The offset of this ShowAvalibleRdsResponse.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  分页参数: 每页记录数。  **取值范围**：  大于0且小于等于128。
+
+        :return: The limit of this ShowAvalibleRdsResponse.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  分页参数: 每页记录数。  **取值范围**：  大于0且小于等于128。
+
+        :param limit: The limit of this ShowAvalibleRdsResponse.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def total(self):
+        r"""Gets the total of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  总记录数。  **取值范围**：  不涉及。
+
+        :return: The total of this ShowAvalibleRdsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ShowAvalibleRdsResponse.
+
+        **参数解释**：  总记录数。  **取值范围**：  不涉及。
+
+        :param total: The total of this ShowAvalibleRdsResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

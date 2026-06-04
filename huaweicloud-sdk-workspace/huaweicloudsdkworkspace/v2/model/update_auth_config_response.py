@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateFullSpeedRecordConfigResponse(SdkResponse):
+class UpdateAuthConfigResponse(SdkResponse):
 
     """
     Attributes:
@@ -16,84 +16,84 @@ class UpdateFullSpeedRecordConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result_code': 'str',
-        'result_desc': 'str'
+        'auth_config_id': 'str',
+        'sms_login_enabled': 'bool'
     }
 
     attribute_map = {
-        'result_code': 'result_code',
-        'result_desc': 'result_desc'
+        'auth_config_id': 'auth_config_id',
+        'sms_login_enabled': 'sms_login_enabled'
     }
 
-    def __init__(self, result_code=None, result_desc=None):
-        r"""UpdateFullSpeedRecordConfigResponse
+    def __init__(self, auth_config_id=None, sms_login_enabled=None):
+        r"""UpdateAuthConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param result_code: 结果码
-        :type result_code: str
-        :param result_desc: 结果信息
-        :type result_desc: str
+        :param auth_config_id: 认证配置ID。
+        :type auth_config_id: str
+        :param sms_login_enabled: 是否开启短信登录。
+        :type sms_login_enabled: bool
         """
         
         super().__init__()
 
-        self._result_code = None
-        self._result_desc = None
+        self._auth_config_id = None
+        self._sms_login_enabled = None
         self.discriminator = None
 
-        if result_code is not None:
-            self.result_code = result_code
-        if result_desc is not None:
-            self.result_desc = result_desc
+        if auth_config_id is not None:
+            self.auth_config_id = auth_config_id
+        if sms_login_enabled is not None:
+            self.sms_login_enabled = sms_login_enabled
 
     @property
-    def result_code(self):
-        r"""Gets the result_code of this UpdateFullSpeedRecordConfigResponse.
+    def auth_config_id(self):
+        r"""Gets the auth_config_id of this UpdateAuthConfigResponse.
 
-        结果码
+        认证配置ID。
 
-        :return: The result_code of this UpdateFullSpeedRecordConfigResponse.
+        :return: The auth_config_id of this UpdateAuthConfigResponse.
         :rtype: str
         """
-        return self._result_code
+        return self._auth_config_id
 
-    @result_code.setter
-    def result_code(self, result_code):
-        r"""Sets the result_code of this UpdateFullSpeedRecordConfigResponse.
+    @auth_config_id.setter
+    def auth_config_id(self, auth_config_id):
+        r"""Sets the auth_config_id of this UpdateAuthConfigResponse.
 
-        结果码
+        认证配置ID。
 
-        :param result_code: The result_code of this UpdateFullSpeedRecordConfigResponse.
-        :type result_code: str
+        :param auth_config_id: The auth_config_id of this UpdateAuthConfigResponse.
+        :type auth_config_id: str
         """
-        self._result_code = result_code
+        self._auth_config_id = auth_config_id
 
     @property
-    def result_desc(self):
-        r"""Gets the result_desc of this UpdateFullSpeedRecordConfigResponse.
+    def sms_login_enabled(self):
+        r"""Gets the sms_login_enabled of this UpdateAuthConfigResponse.
 
-        结果信息
+        是否开启短信登录。
 
-        :return: The result_desc of this UpdateFullSpeedRecordConfigResponse.
-        :rtype: str
+        :return: The sms_login_enabled of this UpdateAuthConfigResponse.
+        :rtype: bool
         """
-        return self._result_desc
+        return self._sms_login_enabled
 
-    @result_desc.setter
-    def result_desc(self, result_desc):
-        r"""Sets the result_desc of this UpdateFullSpeedRecordConfigResponse.
+    @sms_login_enabled.setter
+    def sms_login_enabled(self, sms_login_enabled):
+        r"""Sets the sms_login_enabled of this UpdateAuthConfigResponse.
 
-        结果信息
+        是否开启短信登录。
 
-        :param result_desc: The result_desc of this UpdateFullSpeedRecordConfigResponse.
-        :type result_desc: str
+        :param sms_login_enabled: The sms_login_enabled of this UpdateAuthConfigResponse.
+        :type sms_login_enabled: bool
         """
-        self._result_desc = result_desc
+        self._sms_login_enabled = sms_login_enabled
 
     def to_dict(self):
         import warnings
-        warnings.warn("UpdateFullSpeedRecordConfigResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("UpdateAuthConfigResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -131,7 +131,7 @@ class UpdateFullSpeedRecordConfigResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateFullSpeedRecordConfigResponse):
+        if not isinstance(other, UpdateAuthConfigResponse):
             return False
 
         return self.__dict__ == other.__dict__

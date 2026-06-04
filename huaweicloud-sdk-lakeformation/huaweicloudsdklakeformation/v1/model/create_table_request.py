@@ -18,7 +18,7 @@ class CreateTableRequest:
         'instance_id': 'str',
         'catalog_name': 'str',
         'database_name': 'str',
-        'body': 'TableInput'
+        'body': 'CreateTableInput'
     }
 
     attribute_map = {
@@ -33,14 +33,14 @@ class CreateTableRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例Id
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type catalog_name: str
-        :param database_name: 数据库名字
+        :param database_name: 数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
         :type database_name: str
         :param body: Body of the CreateTableRequest
-        :type body: :class:`huaweicloudsdklakeformation.v1.TableInput`
+        :type body: :class:`huaweicloudsdklakeformation.v1.CreateTableInput`
         """
         
         
@@ -61,7 +61,7 @@ class CreateTableRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateTableRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this CreateTableRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class CreateTableRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateTableRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this CreateTableRequest.
         :type instance_id: str
@@ -83,7 +83,7 @@ class CreateTableRequest:
     def catalog_name(self):
         r"""Gets the catalog_name of this CreateTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The catalog_name of this CreateTableRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateTableRequest:
     def catalog_name(self, catalog_name):
         r"""Sets the catalog_name of this CreateTableRequest.
 
-        catalog名字
+        catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param catalog_name: The catalog_name of this CreateTableRequest.
         :type catalog_name: str
@@ -105,7 +105,7 @@ class CreateTableRequest:
     def database_name(self):
         r"""Gets the database_name of this CreateTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :return: The database_name of this CreateTableRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateTableRequest:
     def database_name(self, database_name):
         r"""Sets the database_name of this CreateTableRequest.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。
 
         :param database_name: The database_name of this CreateTableRequest.
         :type database_name: str
@@ -128,7 +128,7 @@ class CreateTableRequest:
         r"""Gets the body of this CreateTableRequest.
 
         :return: The body of this CreateTableRequest.
-        :rtype: :class:`huaweicloudsdklakeformation.v1.TableInput`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreateTableInput`
         """
         return self._body
 
@@ -137,7 +137,7 @@ class CreateTableRequest:
         r"""Sets the body of this CreateTableRequest.
 
         :param body: The body of this CreateTableRequest.
-        :type body: :class:`huaweicloudsdklakeformation.v1.TableInput`
+        :type body: :class:`huaweicloudsdklakeformation.v1.CreateTableInput`
         """
         self._body = body
 

@@ -51,7 +51,8 @@ class Configs:
         'request_url_rewrite': 'list[RequestUrlRewrite]',
         'browser_cache_rules': 'list[BrowserCacheRules]',
         'access_area_filter': 'list[AccessAreaFilter]',
-        'client_cert': 'ClientCert'
+        'client_cert': 'ClientCert',
+        'https_tls_version': 'HttpsTlsVersion'
     }
 
     attribute_map = {
@@ -91,10 +92,11 @@ class Configs:
         'request_url_rewrite': 'request_url_rewrite',
         'browser_cache_rules': 'browser_cache_rules',
         'access_area_filter': 'access_area_filter',
-        'client_cert': 'client_cert'
+        'client_cert': 'client_cert',
+        'https_tls_version': 'https_tls_version'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None):
         r"""Configs
 
         The model defined in huaweicloud sdk
@@ -173,6 +175,8 @@ class Configs:
         :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
         :param client_cert: 
         :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`
+        :param https_tls_version: 
+        :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
         """
         
         
@@ -214,6 +218,7 @@ class Configs:
         self._browser_cache_rules = None
         self._access_area_filter = None
         self._client_cert = None
+        self._https_tls_version = None
         self.discriminator = None
 
         if business_type is not None:
@@ -290,6 +295,8 @@ class Configs:
             self.access_area_filter = access_area_filter
         if client_cert is not None:
             self.client_cert = client_cert
+        if https_tls_version is not None:
+            self.https_tls_version = https_tls_version
 
     @property
     def business_type(self):
@@ -1036,6 +1043,24 @@ class Configs:
         :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`
         """
         self._client_cert = client_cert
+
+    @property
+    def https_tls_version(self):
+        r"""Gets the https_tls_version of this Configs.
+
+        :return: The https_tls_version of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
+        """
+        return self._https_tls_version
+
+    @https_tls_version.setter
+    def https_tls_version(self, https_tls_version):
+        r"""Sets the https_tls_version of this Configs.
+
+        :param https_tls_version: The https_tls_version of this Configs.
+        :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
+        """
+        self._https_tls_version = https_tls_version
 
     def to_dict(self):
         result = {}

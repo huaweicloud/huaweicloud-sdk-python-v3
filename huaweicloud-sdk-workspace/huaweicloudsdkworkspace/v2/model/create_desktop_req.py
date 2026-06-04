@@ -31,6 +31,7 @@ class CreateDesktopReq:
         'size': 'int',
         'email_notification': 'bool',
         'enterprise_project_id': 'str',
+        'ou_name': 'str',
         'tags': 'list[Tag]',
         'apply_shared_vpc_dedicated_param': 'ApplySharedVpcDedicatedParam',
         'eip': 'Eip',
@@ -58,6 +59,7 @@ class CreateDesktopReq:
         'size': 'size',
         'email_notification': 'email_notification',
         'enterprise_project_id': 'enterprise_project_id',
+        'ou_name': 'ou_name',
         'tags': 'tags',
         'apply_shared_vpc_dedicated_param': 'apply_shared_vpc_dedicated_param',
         'eip': 'eip',
@@ -68,7 +70,7 @@ class CreateDesktopReq:
         'domain': 'domain'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, buy_type=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None, domain=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, buy_type=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, ou_name=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None, domain=None):
         r"""CreateDesktopReq
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class CreateDesktopReq:
         :type email_notification: bool
         :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
+        :param ou_name: OU名称，在对接AD时使用，需提前在AD中创建OU。
+        :type ou_name: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param apply_shared_vpc_dedicated_param: 
@@ -141,6 +145,7 @@ class CreateDesktopReq:
         self._size = None
         self._email_notification = None
         self._enterprise_project_id = None
+        self._ou_name = None
         self._tags = None
         self._apply_shared_vpc_dedicated_param = None
         self._eip = None
@@ -178,6 +183,8 @@ class CreateDesktopReq:
             self.email_notification = email_notification
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if ou_name is not None:
+            self.ou_name = ou_name
         if tags is not None:
             self.tags = tags
         if apply_shared_vpc_dedicated_param is not None:
@@ -542,6 +549,28 @@ class CreateDesktopReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def ou_name(self):
+        r"""Gets the ou_name of this CreateDesktopReq.
+
+        OU名称，在对接AD时使用，需提前在AD中创建OU。
+
+        :return: The ou_name of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._ou_name
+
+    @ou_name.setter
+    def ou_name(self, ou_name):
+        r"""Sets the ou_name of this CreateDesktopReq.
+
+        OU名称，在对接AD时使用，需提前在AD中创建OU。
+
+        :param ou_name: The ou_name of this CreateDesktopReq.
+        :type ou_name: str
+        """
+        self._ou_name = ou_name
 
     @property
     def tags(self):

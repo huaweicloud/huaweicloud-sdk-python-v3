@@ -17,7 +17,7 @@ class ListSubscribeAiAssistantUsersResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'users': 'list[SubscribeUserInfo]',
+        'users': 'list[SubscribeUserBasicInfo]',
         'usergroups': 'list[SubscribeUserGroupInfo]',
         'project': 'SubscribeAiAssistantListResponseProject'
     }
@@ -37,7 +37,7 @@ class ListSubscribeAiAssistantUsersResponse(SdkResponse):
         :param total_count: 订阅用户总数。
         :type total_count: int
         :param users: 订阅用户列表。
-        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
+        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserBasicInfo`]
         :param usergroups: 订阅用户组列表。
         :type usergroups: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserGroupInfo`]
         :param project: 
@@ -90,7 +90,7 @@ class ListSubscribeAiAssistantUsersResponse(SdkResponse):
         订阅用户列表。
 
         :return: The users of this ListSubscribeAiAssistantUsersResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserBasicInfo`]
         """
         return self._users
 
@@ -101,7 +101,7 @@ class ListSubscribeAiAssistantUsersResponse(SdkResponse):
         订阅用户列表。
 
         :param users: The users of this ListSubscribeAiAssistantUsersResponse.
-        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserInfo`]
+        :type users: list[:class:`huaweicloudsdkworkspace.v2.SubscribeUserBasicInfo`]
         """
         self._users = users
 
