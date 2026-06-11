@@ -31,11 +31,11 @@ class ShowDisasterRecoverySettingsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
-        :param offset: 索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        :param offset: **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0。
         :type offset: int
-        :param limit: 查询实例个数上限值。 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
+        :param limit: **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~50。 **默认取值：** 50。不传该参数时，默认查询前50条信息。
         :type limit: int
         """
         
@@ -57,7 +57,7 @@ class ShowDisasterRecoverySettingsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowDisasterRecoverySettingsRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this ShowDisasterRecoverySettingsRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowDisasterRecoverySettingsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowDisasterRecoverySettingsRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this ShowDisasterRecoverySettingsRequest.
         :type instance_id: str
@@ -79,7 +79,7 @@ class ShowDisasterRecoverySettingsRequest:
     def offset(self):
         r"""Gets the offset of this ShowDisasterRecoverySettingsRequest.
 
-        索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0。
 
         :return: The offset of this ShowDisasterRecoverySettingsRequest.
         :rtype: int
@@ -90,7 +90,7 @@ class ShowDisasterRecoverySettingsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowDisasterRecoverySettingsRequest.
 
-        索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0。
 
         :param offset: The offset of this ShowDisasterRecoverySettingsRequest.
         :type offset: int
@@ -101,7 +101,7 @@ class ShowDisasterRecoverySettingsRequest:
     def limit(self):
         r"""Gets the limit of this ShowDisasterRecoverySettingsRequest.
 
-        查询实例个数上限值。 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~50。 **默认取值：** 50。不传该参数时，默认查询前50条信息。
 
         :return: The limit of this ShowDisasterRecoverySettingsRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ShowDisasterRecoverySettingsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowDisasterRecoverySettingsRequest.
 
-        查询实例个数上限值。 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~50。 **默认取值：** 50。不传该参数时，默认查询前50条信息。
 
         :param limit: The limit of this ShowDisasterRecoverySettingsRequest.
         :type limit: int

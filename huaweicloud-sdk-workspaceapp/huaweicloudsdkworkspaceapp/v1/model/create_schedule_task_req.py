@@ -15,7 +15,7 @@ class CreateScheduleTaskReq:
     sensitive_list = []
 
     openapi_types = {
-        'scheduled_type': 'ScheduledTypeEnum',
+        'scheduled_type': 'str',
         'day_interval': 'int',
         'week_list': 'str',
         'month_list': 'str',
@@ -23,12 +23,7 @@ class CreateScheduleTaskReq:
         'time_zone': 'str',
         'scheduled_date': 'str',
         'scheduled_time': 'str',
-        'expire_time': 'datetime',
-        'task_name': 'str',
-        'task_type': 'ScheduleTaskTypeEnum',
-        'schedule_task_policy': 'ScheduleTaskPolicy',
-        'description': 'str',
-        'target_infos': 'list[TargetInfo]'
+        'expire_time': 'datetime'
     }
 
     attribute_map = {
@@ -40,21 +35,16 @@ class CreateScheduleTaskReq:
         'time_zone': 'time_zone',
         'scheduled_date': 'scheduled_date',
         'scheduled_time': 'scheduled_time',
-        'expire_time': 'expire_time',
-        'task_name': 'task_name',
-        'task_type': 'task_type',
-        'schedule_task_policy': 'schedule_task_policy',
-        'description': 'description',
-        'target_infos': 'target_infos'
+        'expire_time': 'expire_time'
     }
 
-    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None, task_name=None, task_type=None, schedule_task_policy=None, description=None, target_infos=None):
+    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None):
         r"""CreateScheduleTaskReq
 
         The model defined in huaweicloud sdk
 
-        :param scheduled_type: 
-        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :param scheduled_type: 执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。
+        :type scheduled_type: str
         :param day_interval: 周期按天时：按x天间隔执行。
         :type day_interval: int
         :param week_list: 周期按周时：取值1~7，英文逗号分隔，如1,2,7。
@@ -71,16 +61,6 @@ class CreateScheduleTaskReq:
         :type scheduled_time: str
         :param expire_time: 到期时间。
         :type expire_time: datetime
-        :param task_name: 任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
-        :type task_name: str
-        :param task_type: 
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
-        :param schedule_task_policy: 
-        :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
-        :param description: 任务描述。
-        :type description: str
-        :param target_infos: 定时任务对象列表。
-        :type target_infos: list[:class:`huaweicloudsdkworkspaceapp.v1.TargetInfo`]
         """
         
         
@@ -94,11 +74,6 @@ class CreateScheduleTaskReq:
         self._scheduled_date = None
         self._scheduled_time = None
         self._expire_time = None
-        self._task_name = None
-        self._task_type = None
-        self._schedule_task_policy = None
-        self._description = None
-        self._target_infos = None
         self.discriminator = None
 
         if scheduled_type is not None:
@@ -119,23 +94,15 @@ class CreateScheduleTaskReq:
             self.scheduled_time = scheduled_time
         if expire_time is not None:
             self.expire_time = expire_time
-        if task_name is not None:
-            self.task_name = task_name
-        if task_type is not None:
-            self.task_type = task_type
-        if schedule_task_policy is not None:
-            self.schedule_task_policy = schedule_task_policy
-        if description is not None:
-            self.description = description
-        if target_infos is not None:
-            self.target_infos = target_infos
 
     @property
     def scheduled_type(self):
         r"""Gets the scheduled_type of this CreateScheduleTaskReq.
 
+        执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。
+
         :return: The scheduled_type of this CreateScheduleTaskReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :rtype: str
         """
         return self._scheduled_type
 
@@ -143,8 +110,10 @@ class CreateScheduleTaskReq:
     def scheduled_type(self, scheduled_type):
         r"""Sets the scheduled_type of this CreateScheduleTaskReq.
 
+        执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。
+
         :param scheduled_type: The scheduled_type of this CreateScheduleTaskReq.
-        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :type scheduled_type: str
         """
         self._scheduled_type = scheduled_type
 
@@ -323,108 +292,6 @@ class CreateScheduleTaskReq:
         :type expire_time: datetime
         """
         self._expire_time = expire_time
-
-    @property
-    def task_name(self):
-        r"""Gets the task_name of this CreateScheduleTaskReq.
-
-        任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
-
-        :return: The task_name of this CreateScheduleTaskReq.
-        :rtype: str
-        """
-        return self._task_name
-
-    @task_name.setter
-    def task_name(self, task_name):
-        r"""Sets the task_name of this CreateScheduleTaskReq.
-
-        任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
-
-        :param task_name: The task_name of this CreateScheduleTaskReq.
-        :type task_name: str
-        """
-        self._task_name = task_name
-
-    @property
-    def task_type(self):
-        r"""Gets the task_type of this CreateScheduleTaskReq.
-
-        :return: The task_type of this CreateScheduleTaskReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
-        """
-        return self._task_type
-
-    @task_type.setter
-    def task_type(self, task_type):
-        r"""Sets the task_type of this CreateScheduleTaskReq.
-
-        :param task_type: The task_type of this CreateScheduleTaskReq.
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
-        """
-        self._task_type = task_type
-
-    @property
-    def schedule_task_policy(self):
-        r"""Gets the schedule_task_policy of this CreateScheduleTaskReq.
-
-        :return: The schedule_task_policy of this CreateScheduleTaskReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
-        """
-        return self._schedule_task_policy
-
-    @schedule_task_policy.setter
-    def schedule_task_policy(self, schedule_task_policy):
-        r"""Sets the schedule_task_policy of this CreateScheduleTaskReq.
-
-        :param schedule_task_policy: The schedule_task_policy of this CreateScheduleTaskReq.
-        :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
-        """
-        self._schedule_task_policy = schedule_task_policy
-
-    @property
-    def description(self):
-        r"""Gets the description of this CreateScheduleTaskReq.
-
-        任务描述。
-
-        :return: The description of this CreateScheduleTaskReq.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        r"""Sets the description of this CreateScheduleTaskReq.
-
-        任务描述。
-
-        :param description: The description of this CreateScheduleTaskReq.
-        :type description: str
-        """
-        self._description = description
-
-    @property
-    def target_infos(self):
-        r"""Gets the target_infos of this CreateScheduleTaskReq.
-
-        定时任务对象列表。
-
-        :return: The target_infos of this CreateScheduleTaskReq.
-        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.TargetInfo`]
-        """
-        return self._target_infos
-
-    @target_infos.setter
-    def target_infos(self, target_infos):
-        r"""Sets the target_infos of this CreateScheduleTaskReq.
-
-        定时任务对象列表。
-
-        :param target_infos: The target_infos of this CreateScheduleTaskReq.
-        :type target_infos: list[:class:`huaweicloudsdkworkspaceapp.v1.TargetInfo`]
-        """
-        self._target_infos = target_infos
 
     def to_dict(self):
         result = {}

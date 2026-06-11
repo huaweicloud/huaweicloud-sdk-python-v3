@@ -17,6 +17,7 @@ class ListTopSqlsRequest:
     openapi_types = {
         'instance_id': 'str',
         'x_language': 'str',
+        'offset': 'int',
         'sort_key': 'str',
         'limit': 'int',
         'statement': 'str',
@@ -26,13 +27,14 @@ class ListTopSqlsRequest:
     attribute_map = {
         'instance_id': 'instance_id',
         'x_language': 'X-Language',
+        'offset': 'offset',
         'sort_key': 'sort_key',
         'limit': 'limit',
         'statement': 'statement',
         'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, instance_id=None, x_language=None, sort_key=None, limit=None, statement=None, sort_dir=None):
+    def __init__(self, instance_id=None, x_language=None, offset=None, sort_key=None, limit=None, statement=None, sort_dir=None):
         r"""ListTopSqlsRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListTopSqlsRequest:
         :type instance_id: str
         :param x_language: 语言。
         :type x_language: str
+        :param offset: 
+        :type offset: int
         :param sort_key: 排序字段: avg_cpu_time:平均CPU耗时 total_cpu_time：总CPU耗时 total_duration_time：总执行时间 avg_duration_time：平均执行时间 total_rows：总行数 avg_rows：平均行数 total_logical_reads：总逻辑读 avg_logical_reads：平均逻辑读
         :type sort_key: str
         :param limit: TOP 数量，最大支持15个。
@@ -55,6 +59,7 @@ class ListTopSqlsRequest:
 
         self._instance_id = None
         self._x_language = None
+        self._offset = None
         self._sort_key = None
         self._limit = None
         self._statement = None
@@ -64,6 +69,8 @@ class ListTopSqlsRequest:
         self.instance_id = instance_id
         if x_language is not None:
             self.x_language = x_language
+        if offset is not None:
+            self.offset = offset
         if sort_key is not None:
             self.sort_key = sort_key
         if limit is not None:
@@ -116,6 +123,24 @@ class ListTopSqlsRequest:
         :type x_language: str
         """
         self._x_language = x_language
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListTopSqlsRequest.
+
+        :return: The offset of this ListTopSqlsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListTopSqlsRequest.
+
+        :param offset: The offset of this ListTopSqlsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     @property
     def sort_key(self):

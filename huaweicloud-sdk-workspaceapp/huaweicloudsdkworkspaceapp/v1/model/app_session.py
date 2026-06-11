@@ -109,7 +109,7 @@ class AppSession:
         :type machine_sid: str
         :param machine_name: 服务器名称。
         :type machine_name: str
-        :param session_state: 会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
+        :param session_state: 会话状态： - Active：运行中  - Disconnected：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
         :type session_state: str
         :param app_name: 会话中的应用名称。
         :type app_name: str
@@ -540,7 +540,7 @@ class AppSession:
     def session_state(self):
         r"""Gets the session_state of this AppSession.
 
-        会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
+        会话状态： - Active：运行中  - Disconnected：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
 
         :return: The session_state of this AppSession.
         :rtype: str
@@ -551,7 +551,7 @@ class AppSession:
     def session_state(self, session_state):
         r"""Sets the session_state of this AppSession.
 
-        会话状态： - Active：运行中  - Disconnecte：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
+        会话状态： - Active：运行中  - Disconnected：断开连接 - AppcInit：初始化 - SignedOut：已注销 - InitFail：初始化失败
 
         :param session_state: The session_state of this AppSession.
         :type session_state: str

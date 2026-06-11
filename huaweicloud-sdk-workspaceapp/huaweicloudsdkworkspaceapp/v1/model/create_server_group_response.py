@@ -42,7 +42,7 @@ class CreateServerGroupResponse(SdkResponse):
         'app_server_count': 'int',
         'app_group_count': 'int',
         'image_name': 'str',
-        'product_info': 'ProductInfo',
+        'product_info': 'ServerProductInfo',
         'subnet_name': 'str',
         'scaling_policy': 'ScalingPolicy',
         'tags': 'list[TmsTag]',
@@ -141,7 +141,7 @@ class CreateServerGroupResponse(SdkResponse):
         :param image_name: 镜像名称。
         :type image_name: str
         :param product_info: 
-        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         :param subnet_name: 子网名称。
         :type subnet_name: str
         :param scaling_policy: 
@@ -807,7 +807,7 @@ class CreateServerGroupResponse(SdkResponse):
         r"""Gets the product_info of this CreateServerGroupResponse.
 
         :return: The product_info of this CreateServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         """
         return self._product_info
 
@@ -816,7 +816,7 @@ class CreateServerGroupResponse(SdkResponse):
         r"""Sets the product_info of this CreateServerGroupResponse.
 
         :param product_info: The product_info of this CreateServerGroupResponse.
-        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         """
         self._product_info = product_info
 

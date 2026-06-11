@@ -27,7 +27,7 @@ class BucketNameReq:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）
+        :param bucket_name: 桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）。
         :type bucket_name: str
         """
         
@@ -43,7 +43,7 @@ class BucketNameReq:
     def bucket_name(self):
         r"""Gets the bucket_name of this BucketNameReq.
 
-        桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）
+        桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）。
 
         :return: The bucket_name of this BucketNameReq.
         :rtype: str
@@ -54,7 +54,7 @@ class BucketNameReq:
     def bucket_name(self, bucket_name):
         r"""Sets the bucket_name of this BucketNameReq.
 
-        桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）
+        桶名称,名称需满足如下规则: 3～63个字符，数字或字母开头，支持小写字母、数字、“-”、“.”。 禁止使用IP地址。 禁止以“-”或“.”开头及结尾。 禁止两个“.”相邻（如：“my..bucket”）。 禁止“.”和“-”相邻（如：“my-.bucket”和“my.-bucket”）。
 
         :param bucket_name: The bucket_name of this BucketNameReq.
         :type bucket_name: str

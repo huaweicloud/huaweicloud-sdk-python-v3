@@ -24,7 +24,7 @@ from huaweicloudsdklakeformation.v1.model.alter_table_input import AlterTableInp
 from huaweicloudsdklakeformation.v1.model.apply_for_access_request import ApplyForAccessRequest
 from huaweicloudsdklakeformation.v1.model.apply_for_access_response import ApplyForAccessResponse
 from huaweicloudsdklakeformation.v1.model.arrow_field import ArrowField
-from huaweicloudsdklakeformation.v1.model.arrow_schema import ArrowSchema
+from huaweicloudsdklakeformation.v1.model.arrow_type import ArrowType
 from huaweicloudsdklakeformation.v1.model.associate_principals_request import AssociatePrincipalsRequest
 from huaweicloudsdklakeformation.v1.model.associate_principals_response import AssociatePrincipalsResponse
 from huaweicloudsdklakeformation.v1.model.associate_roles_request import AssociateRolesRequest
@@ -148,6 +148,7 @@ from huaweicloudsdklakeformation.v1.model.identity_input import IdentityInput
 from huaweicloudsdklakeformation.v1.model.lake_cat_configuration import LakeCatConfiguration
 from huaweicloudsdklakeformation.v1.model.lake_formation_instance import LakeFormationInstance
 from huaweicloudsdklakeformation.v1.model.lake_formation_policy import LakeFormationPolicy
+from huaweicloudsdklakeformation.v1.model.lance_schema import LanceSchema
 from huaweicloudsdklakeformation.v1.model.list_access_client_infos_request import ListAccessClientInfosRequest
 from huaweicloudsdklakeformation.v1.model.list_access_client_infos_response import ListAccessClientInfosResponse
 from huaweicloudsdklakeformation.v1.model.list_access_infos_request import ListAccessInfosRequest
@@ -292,7 +293,6 @@ from huaweicloudsdklakeformation.v1.model.table_column_statistics import TableCo
 from huaweicloudsdklakeformation.v1.model.table_column_statistics_description import TableColumnStatisticsDescription
 from huaweicloudsdklakeformation.v1.model.table_constraints_input import TableConstraintsInput
 from huaweicloudsdklakeformation.v1.model.table_info import TableInfo
-from huaweicloudsdklakeformation.v1.model.table_input import TableInput
 from huaweicloudsdklakeformation.v1.model.table_meta import TableMeta
 from huaweicloudsdklakeformation.v1.model.tenant_agreement import TenantAgreement
 from huaweicloudsdklakeformation.v1.model.tenant_agreement_body import TenantAgreementBody
@@ -322,6 +322,7 @@ from huaweicloudsdklakeformation.v1.model.update_role_request import UpdateRoleR
 from huaweicloudsdklakeformation.v1.model.update_role_response import UpdateRoleResponse
 from huaweicloudsdklakeformation.v1.model.update_roles_request import UpdateRolesRequest
 from huaweicloudsdklakeformation.v1.model.update_roles_response import UpdateRolesResponse
+from huaweicloudsdklakeformation.v1.model.update_table_input import UpdateTableInput
 from huaweicloudsdklakeformation.v1.model.update_table_request import UpdateTableRequest
 from huaweicloudsdklakeformation.v1.model.update_table_response import UpdateTableResponse
 from huaweicloudsdklakeformation.v1.model.user import User

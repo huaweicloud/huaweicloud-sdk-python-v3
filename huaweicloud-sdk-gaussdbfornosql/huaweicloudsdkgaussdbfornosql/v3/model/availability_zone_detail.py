@@ -29,9 +29,9 @@ class AvailabilityZoneDetail:
 
         The model defined in huaweicloud sdk
 
-        :param primary_availability_zone: 主可用区，应为单可用区且和备可用区不同
+        :param primary_availability_zone: **参数解释：** 主可用区，应为单可用区且和备可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type primary_availability_zone: str
-        :param secondary_availability_zone: 备可用区，应为单可用区且和主可用区不同
+        :param secondary_availability_zone: **参数解释：** 备可用区，应为单可用区且和主可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type secondary_availability_zone: str
         """
         
@@ -48,7 +48,7 @@ class AvailabilityZoneDetail:
     def primary_availability_zone(self):
         r"""Gets the primary_availability_zone of this AvailabilityZoneDetail.
 
-        主可用区，应为单可用区且和备可用区不同
+        **参数解释：** 主可用区，应为单可用区且和备可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The primary_availability_zone of this AvailabilityZoneDetail.
         :rtype: str
@@ -59,7 +59,7 @@ class AvailabilityZoneDetail:
     def primary_availability_zone(self, primary_availability_zone):
         r"""Sets the primary_availability_zone of this AvailabilityZoneDetail.
 
-        主可用区，应为单可用区且和备可用区不同
+        **参数解释：** 主可用区，应为单可用区且和备可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param primary_availability_zone: The primary_availability_zone of this AvailabilityZoneDetail.
         :type primary_availability_zone: str
@@ -70,7 +70,7 @@ class AvailabilityZoneDetail:
     def secondary_availability_zone(self):
         r"""Gets the secondary_availability_zone of this AvailabilityZoneDetail.
 
-        备可用区，应为单可用区且和主可用区不同
+        **参数解释：** 备可用区，应为单可用区且和主可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The secondary_availability_zone of this AvailabilityZoneDetail.
         :rtype: str
@@ -81,7 +81,7 @@ class AvailabilityZoneDetail:
     def secondary_availability_zone(self, secondary_availability_zone):
         r"""Sets the secondary_availability_zone of this AvailabilityZoneDetail.
 
-        备可用区，应为单可用区且和主可用区不同
+        **参数解释：** 备可用区，应为单可用区且和主可用区不同。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param secondary_availability_zone: The secondary_availability_zone of this AvailabilityZoneDetail.
         :type secondary_availability_zone: str

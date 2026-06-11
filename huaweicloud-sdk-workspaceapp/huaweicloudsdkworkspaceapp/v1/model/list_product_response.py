@@ -18,7 +18,7 @@ class ListProductResponse(SdkResponse):
     openapi_types = {
         'availability_zone': 'str',
         'os_type': 'str',
-        'products': 'list[ProductInfo]'
+        'products': 'list[ProductDetailInfo]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ListProductResponse(SdkResponse):
         :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
         :type os_type: str
         :param products: 产品列表。
-        :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
+        :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductDetailInfo`]
         """
         
         super().__init__()
@@ -105,7 +105,7 @@ class ListProductResponse(SdkResponse):
         产品列表。
 
         :return: The products of this ListProductResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductDetailInfo`]
         """
         return self._products
 
@@ -116,7 +116,7 @@ class ListProductResponse(SdkResponse):
         产品列表。
 
         :param products: The products of this ListProductResponse.
-        :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
+        :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductDetailInfo`]
         """
         self._products = products
 

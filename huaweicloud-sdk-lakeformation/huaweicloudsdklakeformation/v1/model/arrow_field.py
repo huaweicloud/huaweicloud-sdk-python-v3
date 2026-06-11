@@ -16,44 +16,52 @@ class ArrowField:
 
     openapi_types = {
         'name': 'str',
+        'type': 'ArrowType',
         'nullable': 'bool',
-        'type': 'str',
+        'metadata': 'dict(str, str)',
         'children': 'list[ArrowField]'
     }
 
     attribute_map = {
         'name': 'name',
-        'nullable': 'nullable',
         'type': 'type',
+        'nullable': 'nullable',
+        'metadata': 'metadata',
         'children': 'children'
     }
 
-    def __init__(self, name=None, nullable=None, type=None, children=None):
+    def __init__(self, name=None, type=None, nullable=None, metadata=None, children=None):
         r"""ArrowField
 
         The model defined in huaweicloud sdk
 
         :param name: 字段名称。
         :type name: str
-        :param nullable: 字段是否可为空。
+        :param type: 
+        :type type: :class:`huaweicloudsdklakeformation.v1.ArrowType`
+        :param nullable: 字段是否允许为null。
         :type nullable: bool
-        :param type: 字段类型。
-        :type type: str
-        :param children: 子字段列表（用于嵌套类型）。
+        :param metadata: 字段的元数据信息。
+        :type metadata: dict(str, str)
+        :param children: 
         :type children: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
         """
         
         
 
         self._name = None
-        self._nullable = None
         self._type = None
+        self._nullable = None
+        self._metadata = None
         self._children = None
         self.discriminator = None
 
         self.name = name
-        self.nullable = nullable
         self.type = type
+        if nullable is not None:
+            self.nullable = nullable
+        if metadata is not None:
+            self.metadata = metadata
         if children is not None:
             self.children = children
 
@@ -80,10 +88,28 @@ class ArrowField:
         self._name = name
 
     @property
+    def type(self):
+        r"""Gets the type of this ArrowField.
+
+        :return: The type of this ArrowField.
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ArrowType`
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ArrowField.
+
+        :param type: The type of this ArrowField.
+        :type type: :class:`huaweicloudsdklakeformation.v1.ArrowType`
+        """
+        self._type = type
+
+    @property
     def nullable(self):
         r"""Gets the nullable of this ArrowField.
 
-        字段是否可为空。
+        字段是否允许为null。
 
         :return: The nullable of this ArrowField.
         :rtype: bool
@@ -94,7 +120,7 @@ class ArrowField:
     def nullable(self, nullable):
         r"""Sets the nullable of this ArrowField.
 
-        字段是否可为空。
+        字段是否允许为null。
 
         :param nullable: The nullable of this ArrowField.
         :type nullable: bool
@@ -102,32 +128,30 @@ class ArrowField:
         self._nullable = nullable
 
     @property
-    def type(self):
-        r"""Gets the type of this ArrowField.
+    def metadata(self):
+        r"""Gets the metadata of this ArrowField.
 
-        字段类型。
+        字段的元数据信息。
 
-        :return: The type of this ArrowField.
-        :rtype: str
+        :return: The metadata of this ArrowField.
+        :rtype: dict(str, str)
         """
-        return self._type
+        return self._metadata
 
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ArrowField.
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this ArrowField.
 
-        字段类型。
+        字段的元数据信息。
 
-        :param type: The type of this ArrowField.
-        :type type: str
+        :param metadata: The metadata of this ArrowField.
+        :type metadata: dict(str, str)
         """
-        self._type = type
+        self._metadata = metadata
 
     @property
     def children(self):
         r"""Gets the children of this ArrowField.
-
-        子字段列表（用于嵌套类型）。
 
         :return: The children of this ArrowField.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
@@ -137,8 +161,6 @@ class ArrowField:
     @children.setter
     def children(self, children):
         r"""Sets the children of this ArrowField.
-
-        子字段列表（用于嵌套类型）。
 
         :param children: The children of this ArrowField.
         :type children: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]

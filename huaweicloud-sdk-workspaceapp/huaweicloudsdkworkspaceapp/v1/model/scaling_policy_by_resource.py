@@ -33,9 +33,9 @@ class ScalingPolicyByResource:
 
         :param cpu_usage_threshold: 分组的总cpu使用率(达到阈值后扩容)。
         :type cpu_usage_threshold: int
-        :param mem_usage_threshold: 分组的总mem使用率(达到改阈值后扩容)。
+        :param mem_usage_threshold: 分组的总mem使用率(达到该阈值后扩容)。
         :type mem_usage_threshold: int
-        :param gpu_usage_threshold: 分组的总显存使用率(达到改阈值后扩容)。
+        :param gpu_usage_threshold: 分组的总显存使用率(达到该阈值后扩容)。
         :type gpu_usage_threshold: int
         """
         
@@ -79,7 +79,7 @@ class ScalingPolicyByResource:
     def mem_usage_threshold(self):
         r"""Gets the mem_usage_threshold of this ScalingPolicyByResource.
 
-        分组的总mem使用率(达到改阈值后扩容)。
+        分组的总mem使用率(达到该阈值后扩容)。
 
         :return: The mem_usage_threshold of this ScalingPolicyByResource.
         :rtype: int
@@ -90,7 +90,7 @@ class ScalingPolicyByResource:
     def mem_usage_threshold(self, mem_usage_threshold):
         r"""Sets the mem_usage_threshold of this ScalingPolicyByResource.
 
-        分组的总mem使用率(达到改阈值后扩容)。
+        分组的总mem使用率(达到该阈值后扩容)。
 
         :param mem_usage_threshold: The mem_usage_threshold of this ScalingPolicyByResource.
         :type mem_usage_threshold: int
@@ -101,7 +101,7 @@ class ScalingPolicyByResource:
     def gpu_usage_threshold(self):
         r"""Gets the gpu_usage_threshold of this ScalingPolicyByResource.
 
-        分组的总显存使用率(达到改阈值后扩容)。
+        分组的总显存使用率(达到该阈值后扩容)。
 
         :return: The gpu_usage_threshold of this ScalingPolicyByResource.
         :rtype: int
@@ -112,7 +112,7 @@ class ScalingPolicyByResource:
     def gpu_usage_threshold(self, gpu_usage_threshold):
         r"""Sets the gpu_usage_threshold of this ScalingPolicyByResource.
 
-        分组的总显存使用率(达到改阈值后扩容)。
+        分组的总显存使用率(达到该阈值后扩容)。
 
         :param gpu_usage_threshold: The gpu_usage_threshold of this ScalingPolicyByResource.
         :type gpu_usage_threshold: int

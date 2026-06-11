@@ -29,9 +29,9 @@ class RecoveryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param bucket_name: 参数解释： &#39;备份文件所在OBS bucket。&#39; 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        :param bucket_name: **参数解释：** &#39;备份文件所在OBS bucket。&#39; **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type bucket_name: str
-        :param files: 参数解释： &#39;备份文件名。&#39; 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        :param files: **参数解释：** &#39;备份文件名。&#39; **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type files: list[str]
         """
         
@@ -48,7 +48,7 @@ class RecoveryInfo:
     def bucket_name(self):
         r"""Gets the bucket_name of this RecoveryInfo.
 
-        参数解释： '备份文件所在OBS bucket。' 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** '备份文件所在OBS bucket。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The bucket_name of this RecoveryInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class RecoveryInfo:
     def bucket_name(self, bucket_name):
         r"""Sets the bucket_name of this RecoveryInfo.
 
-        参数解释： '备份文件所在OBS bucket。' 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** '备份文件所在OBS bucket。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param bucket_name: The bucket_name of this RecoveryInfo.
         :type bucket_name: str
@@ -70,7 +70,7 @@ class RecoveryInfo:
     def files(self):
         r"""Gets the files of this RecoveryInfo.
 
-        参数解释： '备份文件名。' 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** '备份文件名。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The files of this RecoveryInfo.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class RecoveryInfo:
     def files(self, files):
         r"""Sets the files of this RecoveryInfo.
 
-        参数解释： '备份文件名。' 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** '备份文件名。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param files: The files of this RecoveryInfo.
         :type files: list[str]

@@ -15,7 +15,7 @@ class CreateLanceTableInput:
     sensitive_list = []
 
     openapi_types = {
-        'schema': 'ArrowSchema'
+        'schema': 'LanceSchema'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class CreateLanceTableInput:
         The model defined in huaweicloud sdk
 
         :param schema: 
-        :type schema: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
+        :type schema: :class:`huaweicloudsdklakeformation.v1.LanceSchema`
         """
         
         
@@ -44,7 +44,7 @@ class CreateLanceTableInput:
         r"""Gets the schema of this CreateLanceTableInput.
 
         :return: The schema of this CreateLanceTableInput.
-        :rtype: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.LanceSchema`
         """
         return self._schema
 
@@ -53,7 +53,7 @@ class CreateLanceTableInput:
         r"""Sets the schema of this CreateLanceTableInput.
 
         :param schema: The schema of this CreateLanceTableInput.
-        :type schema: :class:`huaweicloudsdklakeformation.v1.ArrowSchema`
+        :type schema: :class:`huaweicloudsdklakeformation.v1.LanceSchema`
         """
         self._schema = schema
 

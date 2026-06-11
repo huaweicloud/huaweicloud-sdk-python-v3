@@ -17,7 +17,7 @@ class UpdateSubjectNewRequest:
     openapi_types = {
         'workspace': 'str',
         'x_project_id': 'str',
-        'body': 'SubjectParamsVO'
+        'body': 'CatalogVO'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class UpdateSubjectNewRequest:
         :param x_project_id: 项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
         :type x_project_id: str
         :param body: Body of the UpdateSubjectNewRequest
-        :type body: :class:`huaweicloudsdkdataartsstudio.v1.SubjectParamsVO`
+        :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`
         """
         
         
@@ -101,7 +101,7 @@ class UpdateSubjectNewRequest:
         r"""Gets the body of this UpdateSubjectNewRequest.
 
         :return: The body of this UpdateSubjectNewRequest.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SubjectParamsVO`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`
         """
         return self._body
 
@@ -110,7 +110,7 @@ class UpdateSubjectNewRequest:
         r"""Sets the body of this UpdateSubjectNewRequest.
 
         :param body: The body of this UpdateSubjectNewRequest.
-        :type body: :class:`huaweicloudsdkdataartsstudio.v1.SubjectParamsVO`
+        :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`
         """
         self._body = body
 

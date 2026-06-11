@@ -45,7 +45,7 @@ class AccountInfo:
         :type account: str
         :param account_type: 
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
-        :param domain: 域名城。
+        :param domain: 域名称。
         :type domain: str
         :param email: 邮箱。
         :type email: str
@@ -145,7 +145,7 @@ class AccountInfo:
     def domain(self):
         r"""Gets the domain of this AccountInfo.
 
-        域名城。
+        域名称。
 
         :return: The domain of this AccountInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class AccountInfo:
     def domain(self, domain):
         r"""Sets the domain of this AccountInfo.
 
-        域名城。
+        域名称。
 
         :param domain: The domain of this AccountInfo.
         :type domain: str

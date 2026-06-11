@@ -17,7 +17,7 @@ class ListSubJobsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'items': 'list[ImageJobDetailInfo]'
+        'items': 'list[SubJobDetailInfo]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListSubJobsResponse(SdkResponse):
         :param count: 总数。
         :type count: int
         :param items: 任务明细信息列表，返回列表条目数量上限为分页的最大上限值。
-        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailInfo`]
+        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobDetailInfo`]
         """
         
         super().__init__()
@@ -76,7 +76,7 @@ class ListSubJobsResponse(SdkResponse):
         任务明细信息列表，返回列表条目数量上限为分页的最大上限值。
 
         :return: The items of this ListSubJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailInfo`]
+        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobDetailInfo`]
         """
         return self._items
 
@@ -87,7 +87,7 @@ class ListSubJobsResponse(SdkResponse):
         任务明细信息列表，返回列表条目数量上限为分页的最大上限值。
 
         :param items: The items of this ListSubJobsResponse.
-        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailInfo`]
+        :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.SubJobDetailInfo`]
         """
         self._items = items
 

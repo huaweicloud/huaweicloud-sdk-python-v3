@@ -30,7 +30,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param max_session: 单台服务器最大的链接会话数。
+        :param max_session: 单台服务器最大的连接会话数。
         :type max_session: int
         :param max_group_count: 该租户可创建的最多服务器组数量。
         :type max_group_count: int
@@ -51,7 +51,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
     def max_session(self):
         r"""Gets the max_session of this ShowServerGroupRestrictResponse.
 
-        单台服务器最大的链接会话数。
+        单台服务器最大的连接会话数。
 
         :return: The max_session of this ShowServerGroupRestrictResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ShowServerGroupRestrictResponse(SdkResponse):
     def max_session(self, max_session):
         r"""Sets the max_session of this ShowServerGroupRestrictResponse.
 
-        单台服务器最大的链接会话数。
+        单台服务器最大的连接会话数。
 
         :param max_session: The max_session of this ShowServerGroupRestrictResponse.
         :type max_session: int

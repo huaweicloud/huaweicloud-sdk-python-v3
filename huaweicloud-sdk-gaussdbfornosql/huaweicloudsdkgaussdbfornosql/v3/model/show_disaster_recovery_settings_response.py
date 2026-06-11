@@ -16,7 +16,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'disaster_recovery_settings': 'list[SwitchoverRatioInfo]',
+        'disaster_recovery_settings': 'list[QuerySwitchoverRatioInfo]',
         'total_count': 'int'
     }
 
@@ -30,9 +30,9 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery_settings: 容灾切换的故障节点比例列表。
-        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
-        :param total_count: 总记录数。
+        :param disaster_recovery_settings: **参数解释：** 容灾切换的故障节点比例列表。 **取值范围：** 不涉及。
+        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.QuerySwitchoverRatioInfo`]
+        :param total_count: **参数解释：** 参数修改历史记录总条数。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -51,10 +51,10 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     def disaster_recovery_settings(self):
         r"""Gets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
 
-        容灾切换的故障节点比例列表。
+        **参数解释：** 容灾切换的故障节点比例列表。 **取值范围：** 不涉及。
 
         :return: The disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.QuerySwitchoverRatioInfo`]
         """
         return self._disaster_recovery_settings
 
@@ -62,10 +62,10 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     def disaster_recovery_settings(self, disaster_recovery_settings):
         r"""Sets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
 
-        容灾切换的故障节点比例列表。
+        **参数解释：** 容灾切换的故障节点比例列表。 **取值范围：** 不涉及。
 
         :param disaster_recovery_settings: The disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
-        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
+        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.QuerySwitchoverRatioInfo`]
         """
         self._disaster_recovery_settings = disaster_recovery_settings
 
@@ -73,7 +73,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ShowDisasterRecoverySettingsResponse.
 
-        总记录数。
+        **参数解释：** 参数修改历史记录总条数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ShowDisasterRecoverySettingsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ShowDisasterRecoverySettingsResponse.
 
-        总记录数。
+        **参数解释：** 参数修改历史记录总条数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ShowDisasterRecoverySettingsResponse.
         :type total_count: int

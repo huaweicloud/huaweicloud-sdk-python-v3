@@ -29,6 +29,7 @@ class Policies:
         'user_profile': 'PoliciesUserProfile',
         'url_redirection': 'PoliciesUrlRedirection',
         'folder_redirection': 'PoliciesFolderRedirection',
+        'folder_redirection_v2': 'PoliciesFolderRedirectionV2',
         'user_profile_management': 'PoliciesUserProfileManagement'
     }
 
@@ -47,10 +48,11 @@ class Policies:
         'user_profile': 'user_profile',
         'url_redirection': 'url_redirection',
         'folder_redirection': 'folder_redirection',
+        'folder_redirection_v2': 'folder_redirection_v2',
         'user_profile_management': 'user_profile_management'
     }
 
-    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None, cloud_storage=None, user_profile=None, url_redirection=None, folder_redirection=None, user_profile_management=None):
+    def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None, cloud_storage=None, user_profile=None, url_redirection=None, folder_redirection=None, folder_redirection_v2=None, user_profile_management=None):
         r"""Policies
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class Policies:
         :type url_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUrlRedirection`
         :param folder_redirection: 
         :type folder_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirection`
+        :param folder_redirection_v2: 
+        :type folder_redirection_v2: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirectionV2`
         :param user_profile_management: 
         :type user_profile_management: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesUserProfileManagement`
         """
@@ -103,6 +107,7 @@ class Policies:
         self._user_profile = None
         self._url_redirection = None
         self._folder_redirection = None
+        self._folder_redirection_v2 = None
         self._user_profile_management = None
         self.discriminator = None
 
@@ -134,6 +139,8 @@ class Policies:
             self.url_redirection = url_redirection
         if folder_redirection is not None:
             self.folder_redirection = folder_redirection
+        if folder_redirection_v2 is not None:
+            self.folder_redirection_v2 = folder_redirection_v2
         if user_profile_management is not None:
             self.user_profile_management = user_profile_management
 
@@ -388,6 +395,24 @@ class Policies:
         :type folder_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirection`
         """
         self._folder_redirection = folder_redirection
+
+    @property
+    def folder_redirection_v2(self):
+        r"""Gets the folder_redirection_v2 of this Policies.
+
+        :return: The folder_redirection_v2 of this Policies.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirectionV2`
+        """
+        return self._folder_redirection_v2
+
+    @folder_redirection_v2.setter
+    def folder_redirection_v2(self, folder_redirection_v2):
+        r"""Sets the folder_redirection_v2 of this Policies.
+
+        :param folder_redirection_v2: The folder_redirection_v2 of this Policies.
+        :type folder_redirection_v2: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFolderRedirectionV2`
+        """
+        self._folder_redirection_v2 = folder_redirection_v2
 
     @property
     def user_profile_management(self):

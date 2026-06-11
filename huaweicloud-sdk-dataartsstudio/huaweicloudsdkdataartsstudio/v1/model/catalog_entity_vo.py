@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SwitchoverRatioInfo:
+class CatalogEntityVO:
 
     """
     Attributes:
@@ -15,79 +15,75 @@ class SwitchoverRatioInfo:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
-        'switchover_ratio': 'int'
+        'type_name': 'str',
+        'attributes': 'CatalogAttributeVO'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
-        'switchover_ratio': 'switchover_ratio'
+        'type_name': 'typeName',
+        'attributes': 'attributes'
     }
 
-    def __init__(self, instance_id=None, switchover_ratio=None):
-        r"""SwitchoverRatioInfo
+    def __init__(self, type_name=None, attributes=None):
+        r"""CatalogEntityVO
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
-        :type instance_id: str
-        :param switchover_ratio: 容灾切换的故障节点比例，下限是50，步长是10，最大是100，默认为100。
-        :type switchover_ratio: int
+        :param type_name: 类型名称，填写“BusinessCatalog”即可（业务分层）。
+        :type type_name: str
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
         """
         
         
 
-        self._instance_id = None
-        self._switchover_ratio = None
+        self._type_name = None
+        self._attributes = None
         self.discriminator = None
 
-        self.instance_id = instance_id
-        if switchover_ratio is not None:
-            self.switchover_ratio = switchover_ratio
+        if type_name is not None:
+            self.type_name = type_name
+        self.attributes = attributes
 
     @property
-    def instance_id(self):
-        r"""Gets the instance_id of this SwitchoverRatioInfo.
+    def type_name(self):
+        r"""Gets the type_name of this CatalogEntityVO.
 
-        实例ID。
+        类型名称，填写“BusinessCatalog”即可（业务分层）。
 
-        :return: The instance_id of this SwitchoverRatioInfo.
+        :return: The type_name of this CatalogEntityVO.
         :rtype: str
         """
-        return self._instance_id
+        return self._type_name
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this SwitchoverRatioInfo.
+    @type_name.setter
+    def type_name(self, type_name):
+        r"""Sets the type_name of this CatalogEntityVO.
 
-        实例ID。
+        类型名称，填写“BusinessCatalog”即可（业务分层）。
 
-        :param instance_id: The instance_id of this SwitchoverRatioInfo.
-        :type instance_id: str
+        :param type_name: The type_name of this CatalogEntityVO.
+        :type type_name: str
         """
-        self._instance_id = instance_id
+        self._type_name = type_name
 
     @property
-    def switchover_ratio(self):
-        r"""Gets the switchover_ratio of this SwitchoverRatioInfo.
+    def attributes(self):
+        r"""Gets the attributes of this CatalogEntityVO.
 
-        容灾切换的故障节点比例，下限是50，步长是10，最大是100，默认为100。
-
-        :return: The switchover_ratio of this SwitchoverRatioInfo.
-        :rtype: int
+        :return: The attributes of this CatalogEntityVO.
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
         """
-        return self._switchover_ratio
+        return self._attributes
 
-    @switchover_ratio.setter
-    def switchover_ratio(self, switchover_ratio):
-        r"""Sets the switchover_ratio of this SwitchoverRatioInfo.
+    @attributes.setter
+    def attributes(self, attributes):
+        r"""Sets the attributes of this CatalogEntityVO.
 
-        容灾切换的故障节点比例，下限是50，步长是10，最大是100，默认为100。
-
-        :param switchover_ratio: The switchover_ratio of this SwitchoverRatioInfo.
-        :type switchover_ratio: int
+        :param attributes: The attributes of this CatalogEntityVO.
+        :type attributes: :class:`huaweicloudsdkdataartsstudio.v1.CatalogAttributeVO`
         """
-        self._switchover_ratio = switchover_ratio
+        self._attributes = attributes
 
     def to_dict(self):
         result = {}
@@ -126,7 +122,7 @@ class SwitchoverRatioInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SwitchoverRatioInfo):
+        if not isinstance(other, CatalogEntityVO):
             return False
 
         return self.__dict__ == other.__dict__

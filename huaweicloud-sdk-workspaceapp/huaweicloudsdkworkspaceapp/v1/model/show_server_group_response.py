@@ -42,7 +42,7 @@ class ShowServerGroupResponse(SdkResponse):
         'app_server_count': 'int',
         'app_group_count': 'int',
         'image_name': 'str',
-        'product_info': 'ProductInfo',
+        'product_info': 'ServerProductInfo',
         'subnet_name': 'str',
         'scaling_policy': 'ScalingPolicy',
         'tags': 'list[TmsTag]',
@@ -50,7 +50,7 @@ class ShowServerGroupResponse(SdkResponse):
         'flavors': 'list[Flavor]',
         'project_name': 'str',
         'image_min_disk': 'int',
-        'route_policy': 'RoutePolicy',
+        'route_policy': 'RoutePolicyDetail',
         'image_product_id': 'str',
         'image_type': 'str',
         'ip_virtual': 'IpVirtual'
@@ -155,7 +155,7 @@ class ShowServerGroupResponse(SdkResponse):
         :param image_name: 镜像名称。
         :type image_name: str
         :param product_info: 
-        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         :param subnet_name: 子网名称。
         :type subnet_name: str
         :param scaling_policy: 
@@ -171,7 +171,7 @@ class ShowServerGroupResponse(SdkResponse):
         :param image_min_disk: 镜像运行的最小内存，单位为MB，默认设置为0。
         :type image_min_disk: int
         :param route_policy: 
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         :param image_product_id: 镜像的产品id。
         :type image_product_id: str
         :param image_type: 镜像类型： - gold：云市场镜像 - private：私有镜像
@@ -856,7 +856,7 @@ class ShowServerGroupResponse(SdkResponse):
         r"""Gets the product_info of this ShowServerGroupResponse.
 
         :return: The product_info of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         """
         return self._product_info
 
@@ -865,7 +865,7 @@ class ShowServerGroupResponse(SdkResponse):
         r"""Sets the product_info of this ShowServerGroupResponse.
 
         :param product_info: The product_info of this ShowServerGroupResponse.
-        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
+        :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ServerProductInfo`
         """
         self._product_info = product_info
 
@@ -1024,7 +1024,7 @@ class ShowServerGroupResponse(SdkResponse):
         r"""Gets the route_policy of this ShowServerGroupResponse.
 
         :return: The route_policy of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         return self._route_policy
 
@@ -1033,7 +1033,7 @@ class ShowServerGroupResponse(SdkResponse):
         r"""Sets the route_policy of this ShowServerGroupResponse.
 
         :param route_policy: The route_policy of this ShowServerGroupResponse.
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         self._route_policy = route_policy
 

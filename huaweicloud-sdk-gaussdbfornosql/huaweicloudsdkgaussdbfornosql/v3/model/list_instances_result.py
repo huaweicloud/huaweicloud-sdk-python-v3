@@ -38,11 +38,15 @@ class ListInstancesResult:
         'dedicated_resource_id': 'str',
         'time_zone': 'str',
         'actions': 'list[str]',
+        'disk_encryption_id': 'str',
         'lb_ip_address': 'str',
         'lb_port': 'str',
         'availability_zone': 'str',
+        'dr_instance_id': 'str',
         'dual_active_info': 'DualActiveInfo',
-        'ssl': 'str'
+        'ccm_cert_info': 'CertInfoOption',
+        'ssl': 'str',
+        'backup_space_usage': 'BackupSpaceUsage'
     }
 
     attribute_map = {
@@ -69,74 +73,86 @@ class ListInstancesResult:
         'dedicated_resource_id': 'dedicated_resource_id',
         'time_zone': 'time_zone',
         'actions': 'actions',
+        'disk_encryption_id': 'disk_encryption_id',
         'lb_ip_address': 'lb_ip_address',
         'lb_port': 'lb_port',
         'availability_zone': 'availability_zone',
+        'dr_instance_id': 'dr_instance_id',
         'dual_active_info': 'dual_active_info',
-        'ssl': 'ssl'
+        'ccm_cert_info': 'ccm_cert_info',
+        'ssl': 'ssl',
+        'backup_space_usage': 'backup_space_usage'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None, availability_zone=None, dual_active_info=None, ssl=None):
+    def __init__(self, id=None, name=None, status=None, port=None, region=None, datastore=None, mode=None, product_type=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, disk_encryption_id=None, lb_ip_address=None, lb_port=None, availability_zone=None, dr_instance_id=None, dual_active_info=None, ccm_cert_info=None, ssl=None, backup_space_usage=None):
         r"""ListInstancesResult
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID。
+        :param id: **参数解释：** 实例ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 实例名称。
+        :param name: **参数解释：** 实例名称。 **取值范围：** 不涉及。
         :type name: str
-        :param status: 实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
+        :param status: **参数解释：** 实例状态。 **取值范围：** - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
         :type status: str
-        :param port: 数据库端口。
+        :param port: **参数解释：** 数据库端口。 **取值范围：** 不涉及。
         :type port: str
-        :param region: 实例所在区域。
+        :param region: **参数解释：** 实例所在区域。 **取值范围：** 不涉及。
         :type region: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
-        :param mode: 实例类型。与请求参数相同。
+        :param mode: **参数解释：** 实例类型。 **取值范围：** 与请求参数相同。
         :type mode: str
-        :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        :param product_type: **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
         :type product_type: str
-        :param engine: 存储引擎。取值为“rocksDB”。
+        :param engine: **参数解释：** 存储引擎。 **取值范围：** 取值为“rocksDB”。
         :type engine: str
-        :param created: 实例创建时间。
+        :param created: **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
         :type created: str
-        :param updated: 实例操作最新变更的时间。
+        :param updated: **参数解释：** 实例操作最新变更的时间。 **取值范围：** 不涉及。
         :type updated: str
-        :param db_user_name: 默认用户名。取值为“rwuser”。
+        :param db_user_name: **参数解释：** 默认用户名。 **取值范围：** 取值为“rwuser”。
         :type db_user_name: str
-        :param vpc_id: 虚拟私有云ID。
+        :param vpc_id: **参数解释：** 虚拟私有云ID。 **取值范围：** 不涉及。
         :type vpc_id: str
-        :param subnet_id: 子网ID。
+        :param subnet_id: **参数解释：** 子网ID。 **取值范围：** GeminiDB Cassandra 实例使用多个子网的场景，请参见表 ListInstancesNodeResult字段数据结构说明中的“subnet_id”。
         :type subnet_id: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: **参数解释：** 安全组ID。 **取值范围：** 不涉及。
         :type security_group_id: str
         :param backup_strategy: 
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
-        :param pay_mode: 计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
+        :param pay_mode: **参数解释：** 计费方式。 **取值范围：** - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
         :type pay_mode: str
-        :param maintenance_window: 系统可维护时间窗。
+        :param maintenance_window: **参数解释：** 系统可维护时间窗。 **取值范围：** 不涉及。
         :type maintenance_window: str
-        :param groups: 组信息。
+        :param groups: **参数解释：** 组信息。 **取值范围：** 不涉及。
         :type groups: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
-        :param enterprise_project_id: 企业项目ID。取值为“0”，表示为default企业项目。
+        :param enterprise_project_id: **参数解释：** 企业项目ID。 **取值范围：** 取值为“0”，表示为default企业项目。
         :type enterprise_project_id: str
-        :param dedicated_resource_id: 专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+        :param dedicated_resource_id: **参数解释：** 专属资源ID。只有数据库实例属于专属资源池才会返回该参数。 **取值范围：** 不涉及。
         :type dedicated_resource_id: str
-        :param time_zone: 时区。
+        :param time_zone: **参数解释：** 时区。 **取值范围：** 不涉及。
         :type time_zone: str
-        :param actions: 实例正在执行的动作。
+        :param actions: **参数解释：** 实例正在执行的动作。 **取值范围：** 不涉及。
         :type actions: list[str]
-        :param lb_ip_address: 负载均衡ip，只有存在负载均衡ip，才会返回该参数。
+        :param disk_encryption_id: **参数解释：** 磁盘加密时的密钥ID。 **取值范围：** 不涉及。
+        :type disk_encryption_id: str
+        :param lb_ip_address: **参数解释：** 负载均衡ip。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
         :type lb_ip_address: str
-        :param lb_port: 负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+        :param lb_port: **参数解释：** 负载均衡端口。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
         :type lb_port: str
-        :param availability_zone: 实例可用区。
+        :param availability_zone: **参数解释：** 实例可用区。 **取值范围：** 不涉及。
         :type availability_zone: str
+        :param dr_instance_id: **参数解释：** 容灾实例ID。 **取值范围：** 不涉及。
+        :type dr_instance_id: str
         :param dual_active_info: 
         :type dual_active_info: :class:`huaweicloudsdkgaussdbfornosql.v3.DualActiveInfo`
-        :param ssl: 参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+        :param ccm_cert_info: 
+        :type ccm_cert_info: :class:`huaweicloudsdkgaussdbfornosql.v3.CertInfoOption`
+        :param ssl: **参数解释：** SSL安全连接启用情况。 **取值范围：** - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
         :type ssl: str
+        :param backup_space_usage: 
+        :type backup_space_usage: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupSpaceUsage`
         """
         
         
@@ -164,11 +180,15 @@ class ListInstancesResult:
         self._dedicated_resource_id = None
         self._time_zone = None
         self._actions = None
+        self._disk_encryption_id = None
         self._lb_ip_address = None
         self._lb_port = None
         self._availability_zone = None
+        self._dr_instance_id = None
         self._dual_active_info = None
+        self._ccm_cert_info = None
         self._ssl = None
+        self._backup_space_usage = None
         self.discriminator = None
 
         self.id = id
@@ -196,21 +216,28 @@ class ListInstancesResult:
             self.dedicated_resource_id = dedicated_resource_id
         self.time_zone = time_zone
         self.actions = actions
+        self.disk_encryption_id = disk_encryption_id
         if lb_ip_address is not None:
             self.lb_ip_address = lb_ip_address
         if lb_port is not None:
             self.lb_port = lb_port
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if dr_instance_id is not None:
+            self.dr_instance_id = dr_instance_id
         if dual_active_info is not None:
             self.dual_active_info = dual_active_info
+        if ccm_cert_info is not None:
+            self.ccm_cert_info = ccm_cert_info
         self.ssl = ssl
+        if backup_space_usage is not None:
+            self.backup_space_usage = backup_space_usage
 
     @property
     def id(self):
         r"""Gets the id of this ListInstancesResult.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :return: The id of this ListInstancesResult.
         :rtype: str
@@ -221,7 +248,7 @@ class ListInstancesResult:
     def id(self, id):
         r"""Sets the id of this ListInstancesResult.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :param id: The id of this ListInstancesResult.
         :type id: str
@@ -232,7 +259,7 @@ class ListInstancesResult:
     def name(self):
         r"""Gets the name of this ListInstancesResult.
 
-        实例名称。
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :return: The name of this ListInstancesResult.
         :rtype: str
@@ -243,7 +270,7 @@ class ListInstancesResult:
     def name(self, name):
         r"""Sets the name of this ListInstancesResult.
 
-        实例名称。
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :param name: The name of this ListInstancesResult.
         :type name: str
@@ -254,7 +281,7 @@ class ListInstancesResult:
     def status(self):
         r"""Gets the status of this ListInstancesResult.
 
-        实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
+        **参数解释：** 实例状态。 **取值范围：** - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
         :return: The status of this ListInstancesResult.
         :rtype: str
@@ -265,7 +292,7 @@ class ListInstancesResult:
     def status(self, status):
         r"""Sets the status of this ListInstancesResult.
 
-        实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
+        **参数解释：** 实例状态。 **取值范围：** - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点个数失败。
 
         :param status: The status of this ListInstancesResult.
         :type status: str
@@ -276,7 +303,7 @@ class ListInstancesResult:
     def port(self):
         r"""Gets the port of this ListInstancesResult.
 
-        数据库端口。
+        **参数解释：** 数据库端口。 **取值范围：** 不涉及。
 
         :return: The port of this ListInstancesResult.
         :rtype: str
@@ -287,7 +314,7 @@ class ListInstancesResult:
     def port(self, port):
         r"""Sets the port of this ListInstancesResult.
 
-        数据库端口。
+        **参数解释：** 数据库端口。 **取值范围：** 不涉及。
 
         :param port: The port of this ListInstancesResult.
         :type port: str
@@ -298,7 +325,7 @@ class ListInstancesResult:
     def region(self):
         r"""Gets the region of this ListInstancesResult.
 
-        实例所在区域。
+        **参数解释：** 实例所在区域。 **取值范围：** 不涉及。
 
         :return: The region of this ListInstancesResult.
         :rtype: str
@@ -309,7 +336,7 @@ class ListInstancesResult:
     def region(self, region):
         r"""Sets the region of this ListInstancesResult.
 
-        实例所在区域。
+        **参数解释：** 实例所在区域。 **取值范围：** 不涉及。
 
         :param region: The region of this ListInstancesResult.
         :type region: str
@@ -338,7 +365,7 @@ class ListInstancesResult:
     def mode(self):
         r"""Gets the mode of this ListInstancesResult.
 
-        实例类型。与请求参数相同。
+        **参数解释：** 实例类型。 **取值范围：** 与请求参数相同。
 
         :return: The mode of this ListInstancesResult.
         :rtype: str
@@ -349,7 +376,7 @@ class ListInstancesResult:
     def mode(self, mode):
         r"""Sets the mode of this ListInstancesResult.
 
-        实例类型。与请求参数相同。
+        **参数解释：** 实例类型。 **取值范围：** 与请求参数相同。
 
         :param mode: The mode of this ListInstancesResult.
         :type mode: str
@@ -360,7 +387,7 @@ class ListInstancesResult:
     def product_type(self):
         r"""Gets the product_type of this ListInstancesResult.
 
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
         :return: The product_type of this ListInstancesResult.
         :rtype: str
@@ -371,7 +398,7 @@ class ListInstancesResult:
     def product_type(self, product_type):
         r"""Sets the product_type of this ListInstancesResult.
 
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
         :param product_type: The product_type of this ListInstancesResult.
         :type product_type: str
@@ -382,7 +409,7 @@ class ListInstancesResult:
     def engine(self):
         r"""Gets the engine of this ListInstancesResult.
 
-        存储引擎。取值为“rocksDB”。
+        **参数解释：** 存储引擎。 **取值范围：** 取值为“rocksDB”。
 
         :return: The engine of this ListInstancesResult.
         :rtype: str
@@ -393,7 +420,7 @@ class ListInstancesResult:
     def engine(self, engine):
         r"""Sets the engine of this ListInstancesResult.
 
-        存储引擎。取值为“rocksDB”。
+        **参数解释：** 存储引擎。 **取值范围：** 取值为“rocksDB”。
 
         :param engine: The engine of this ListInstancesResult.
         :type engine: str
@@ -404,7 +431,7 @@ class ListInstancesResult:
     def created(self):
         r"""Gets the created of this ListInstancesResult.
 
-        实例创建时间。
+        **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
 
         :return: The created of this ListInstancesResult.
         :rtype: str
@@ -415,7 +442,7 @@ class ListInstancesResult:
     def created(self, created):
         r"""Sets the created of this ListInstancesResult.
 
-        实例创建时间。
+        **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
 
         :param created: The created of this ListInstancesResult.
         :type created: str
@@ -426,7 +453,7 @@ class ListInstancesResult:
     def updated(self):
         r"""Gets the updated of this ListInstancesResult.
 
-        实例操作最新变更的时间。
+        **参数解释：** 实例操作最新变更的时间。 **取值范围：** 不涉及。
 
         :return: The updated of this ListInstancesResult.
         :rtype: str
@@ -437,7 +464,7 @@ class ListInstancesResult:
     def updated(self, updated):
         r"""Sets the updated of this ListInstancesResult.
 
-        实例操作最新变更的时间。
+        **参数解释：** 实例操作最新变更的时间。 **取值范围：** 不涉及。
 
         :param updated: The updated of this ListInstancesResult.
         :type updated: str
@@ -448,7 +475,7 @@ class ListInstancesResult:
     def db_user_name(self):
         r"""Gets the db_user_name of this ListInstancesResult.
 
-        默认用户名。取值为“rwuser”。
+        **参数解释：** 默认用户名。 **取值范围：** 取值为“rwuser”。
 
         :return: The db_user_name of this ListInstancesResult.
         :rtype: str
@@ -459,7 +486,7 @@ class ListInstancesResult:
     def db_user_name(self, db_user_name):
         r"""Sets the db_user_name of this ListInstancesResult.
 
-        默认用户名。取值为“rwuser”。
+        **参数解释：** 默认用户名。 **取值范围：** 取值为“rwuser”。
 
         :param db_user_name: The db_user_name of this ListInstancesResult.
         :type db_user_name: str
@@ -470,7 +497,7 @@ class ListInstancesResult:
     def vpc_id(self):
         r"""Gets the vpc_id of this ListInstancesResult.
 
-        虚拟私有云ID。
+        **参数解释：** 虚拟私有云ID。 **取值范围：** 不涉及。
 
         :return: The vpc_id of this ListInstancesResult.
         :rtype: str
@@ -481,7 +508,7 @@ class ListInstancesResult:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ListInstancesResult.
 
-        虚拟私有云ID。
+        **参数解释：** 虚拟私有云ID。 **取值范围：** 不涉及。
 
         :param vpc_id: The vpc_id of this ListInstancesResult.
         :type vpc_id: str
@@ -492,7 +519,7 @@ class ListInstancesResult:
     def subnet_id(self):
         r"""Gets the subnet_id of this ListInstancesResult.
 
-        子网ID。
+        **参数解释：** 子网ID。 **取值范围：** GeminiDB Cassandra 实例使用多个子网的场景，请参见表 ListInstancesNodeResult字段数据结构说明中的“subnet_id”。
 
         :return: The subnet_id of this ListInstancesResult.
         :rtype: str
@@ -503,7 +530,7 @@ class ListInstancesResult:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ListInstancesResult.
 
-        子网ID。
+        **参数解释：** 子网ID。 **取值范围：** GeminiDB Cassandra 实例使用多个子网的场景，请参见表 ListInstancesNodeResult字段数据结构说明中的“subnet_id”。
 
         :param subnet_id: The subnet_id of this ListInstancesResult.
         :type subnet_id: str
@@ -514,7 +541,7 @@ class ListInstancesResult:
     def security_group_id(self):
         r"""Gets the security_group_id of this ListInstancesResult.
 
-        安全组ID。
+        **参数解释：** 安全组ID。 **取值范围：** 不涉及。
 
         :return: The security_group_id of this ListInstancesResult.
         :rtype: str
@@ -525,7 +552,7 @@ class ListInstancesResult:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ListInstancesResult.
 
-        安全组ID。
+        **参数解释：** 安全组ID。 **取值范围：** 不涉及。
 
         :param security_group_id: The security_group_id of this ListInstancesResult.
         :type security_group_id: str
@@ -554,7 +581,7 @@ class ListInstancesResult:
     def pay_mode(self):
         r"""Gets the pay_mode of this ListInstancesResult.
 
-        计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
+        **参数解释：** 计费方式。 **取值范围：** - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
         :return: The pay_mode of this ListInstancesResult.
         :rtype: str
@@ -565,7 +592,7 @@ class ListInstancesResult:
     def pay_mode(self, pay_mode):
         r"""Sets the pay_mode of this ListInstancesResult.
 
-        计费方式。 - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
+        **参数解释：** 计费方式。 **取值范围：** - 取值为“0”，表示按需计费。 - 取值为“1”，表示包年/包月计费。
 
         :param pay_mode: The pay_mode of this ListInstancesResult.
         :type pay_mode: str
@@ -576,7 +603,7 @@ class ListInstancesResult:
     def maintenance_window(self):
         r"""Gets the maintenance_window of this ListInstancesResult.
 
-        系统可维护时间窗。
+        **参数解释：** 系统可维护时间窗。 **取值范围：** 不涉及。
 
         :return: The maintenance_window of this ListInstancesResult.
         :rtype: str
@@ -587,7 +614,7 @@ class ListInstancesResult:
     def maintenance_window(self, maintenance_window):
         r"""Sets the maintenance_window of this ListInstancesResult.
 
-        系统可维护时间窗。
+        **参数解释：** 系统可维护时间窗。 **取值范围：** 不涉及。
 
         :param maintenance_window: The maintenance_window of this ListInstancesResult.
         :type maintenance_window: str
@@ -598,7 +625,7 @@ class ListInstancesResult:
     def groups(self):
         r"""Gets the groups of this ListInstancesResult.
 
-        组信息。
+        **参数解释：** 组信息。 **取值范围：** 不涉及。
 
         :return: The groups of this ListInstancesResult.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
@@ -609,7 +636,7 @@ class ListInstancesResult:
     def groups(self, groups):
         r"""Sets the groups of this ListInstancesResult.
 
-        组信息。
+        **参数解释：** 组信息。 **取值范围：** 不涉及。
 
         :param groups: The groups of this ListInstancesResult.
         :type groups: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesGroupResult`]
@@ -620,7 +647,7 @@ class ListInstancesResult:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListInstancesResult.
 
-        企业项目ID。取值为“0”，表示为default企业项目。
+        **参数解释：** 企业项目ID。 **取值范围：** 取值为“0”，表示为default企业项目。
 
         :return: The enterprise_project_id of this ListInstancesResult.
         :rtype: str
@@ -631,7 +658,7 @@ class ListInstancesResult:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListInstancesResult.
 
-        企业项目ID。取值为“0”，表示为default企业项目。
+        **参数解释：** 企业项目ID。 **取值范围：** 取值为“0”，表示为default企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstancesResult.
         :type enterprise_project_id: str
@@ -642,7 +669,7 @@ class ListInstancesResult:
     def dedicated_resource_id(self):
         r"""Gets the dedicated_resource_id of this ListInstancesResult.
 
-        专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+        **参数解释：** 专属资源ID。只有数据库实例属于专属资源池才会返回该参数。 **取值范围：** 不涉及。
 
         :return: The dedicated_resource_id of this ListInstancesResult.
         :rtype: str
@@ -653,7 +680,7 @@ class ListInstancesResult:
     def dedicated_resource_id(self, dedicated_resource_id):
         r"""Sets the dedicated_resource_id of this ListInstancesResult.
 
-        专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+        **参数解释：** 专属资源ID。只有数据库实例属于专属资源池才会返回该参数。 **取值范围：** 不涉及。
 
         :param dedicated_resource_id: The dedicated_resource_id of this ListInstancesResult.
         :type dedicated_resource_id: str
@@ -664,7 +691,7 @@ class ListInstancesResult:
     def time_zone(self):
         r"""Gets the time_zone of this ListInstancesResult.
 
-        时区。
+        **参数解释：** 时区。 **取值范围：** 不涉及。
 
         :return: The time_zone of this ListInstancesResult.
         :rtype: str
@@ -675,7 +702,7 @@ class ListInstancesResult:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this ListInstancesResult.
 
-        时区。
+        **参数解释：** 时区。 **取值范围：** 不涉及。
 
         :param time_zone: The time_zone of this ListInstancesResult.
         :type time_zone: str
@@ -686,7 +713,7 @@ class ListInstancesResult:
     def actions(self):
         r"""Gets the actions of this ListInstancesResult.
 
-        实例正在执行的动作。
+        **参数解释：** 实例正在执行的动作。 **取值范围：** 不涉及。
 
         :return: The actions of this ListInstancesResult.
         :rtype: list[str]
@@ -697,7 +724,7 @@ class ListInstancesResult:
     def actions(self, actions):
         r"""Sets the actions of this ListInstancesResult.
 
-        实例正在执行的动作。
+        **参数解释：** 实例正在执行的动作。 **取值范围：** 不涉及。
 
         :param actions: The actions of this ListInstancesResult.
         :type actions: list[str]
@@ -705,10 +732,32 @@ class ListInstancesResult:
         self._actions = actions
 
     @property
+    def disk_encryption_id(self):
+        r"""Gets the disk_encryption_id of this ListInstancesResult.
+
+        **参数解释：** 磁盘加密时的密钥ID。 **取值范围：** 不涉及。
+
+        :return: The disk_encryption_id of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._disk_encryption_id
+
+    @disk_encryption_id.setter
+    def disk_encryption_id(self, disk_encryption_id):
+        r"""Sets the disk_encryption_id of this ListInstancesResult.
+
+        **参数解释：** 磁盘加密时的密钥ID。 **取值范围：** 不涉及。
+
+        :param disk_encryption_id: The disk_encryption_id of this ListInstancesResult.
+        :type disk_encryption_id: str
+        """
+        self._disk_encryption_id = disk_encryption_id
+
+    @property
     def lb_ip_address(self):
         r"""Gets the lb_ip_address of this ListInstancesResult.
 
-        负载均衡ip，只有存在负载均衡ip，才会返回该参数。
+        **参数解释：** 负载均衡ip。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
 
         :return: The lb_ip_address of this ListInstancesResult.
         :rtype: str
@@ -719,7 +768,7 @@ class ListInstancesResult:
     def lb_ip_address(self, lb_ip_address):
         r"""Sets the lb_ip_address of this ListInstancesResult.
 
-        负载均衡ip，只有存在负载均衡ip，才会返回该参数。
+        **参数解释：** 负载均衡ip。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
 
         :param lb_ip_address: The lb_ip_address of this ListInstancesResult.
         :type lb_ip_address: str
@@ -730,7 +779,7 @@ class ListInstancesResult:
     def lb_port(self):
         r"""Gets the lb_port of this ListInstancesResult.
 
-        负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+        **参数解释：** 负载均衡端口。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
 
         :return: The lb_port of this ListInstancesResult.
         :rtype: str
@@ -741,7 +790,7 @@ class ListInstancesResult:
     def lb_port(self, lb_port):
         r"""Sets the lb_port of this ListInstancesResult.
 
-        负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+        **参数解释：** 负载均衡端口。 **取值范围：** 只有存在负载均衡ip，才会返回该参数。
 
         :param lb_port: The lb_port of this ListInstancesResult.
         :type lb_port: str
@@ -752,7 +801,7 @@ class ListInstancesResult:
     def availability_zone(self):
         r"""Gets the availability_zone of this ListInstancesResult.
 
-        实例可用区。
+        **参数解释：** 实例可用区。 **取值范围：** 不涉及。
 
         :return: The availability_zone of this ListInstancesResult.
         :rtype: str
@@ -763,12 +812,34 @@ class ListInstancesResult:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ListInstancesResult.
 
-        实例可用区。
+        **参数解释：** 实例可用区。 **取值范围：** 不涉及。
 
         :param availability_zone: The availability_zone of this ListInstancesResult.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def dr_instance_id(self):
+        r"""Gets the dr_instance_id of this ListInstancesResult.
+
+        **参数解释：** 容灾实例ID。 **取值范围：** 不涉及。
+
+        :return: The dr_instance_id of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._dr_instance_id
+
+    @dr_instance_id.setter
+    def dr_instance_id(self, dr_instance_id):
+        r"""Sets the dr_instance_id of this ListInstancesResult.
+
+        **参数解释：** 容灾实例ID。 **取值范围：** 不涉及。
+
+        :param dr_instance_id: The dr_instance_id of this ListInstancesResult.
+        :type dr_instance_id: str
+        """
+        self._dr_instance_id = dr_instance_id
 
     @property
     def dual_active_info(self):
@@ -789,10 +860,28 @@ class ListInstancesResult:
         self._dual_active_info = dual_active_info
 
     @property
+    def ccm_cert_info(self):
+        r"""Gets the ccm_cert_info of this ListInstancesResult.
+
+        :return: The ccm_cert_info of this ListInstancesResult.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CertInfoOption`
+        """
+        return self._ccm_cert_info
+
+    @ccm_cert_info.setter
+    def ccm_cert_info(self, ccm_cert_info):
+        r"""Sets the ccm_cert_info of this ListInstancesResult.
+
+        :param ccm_cert_info: The ccm_cert_info of this ListInstancesResult.
+        :type ccm_cert_info: :class:`huaweicloudsdkgaussdbfornosql.v3.CertInfoOption`
+        """
+        self._ccm_cert_info = ccm_cert_info
+
+    @property
     def ssl(self):
         r"""Gets the ssl of this ListInstancesResult.
 
-        参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+        **参数解释：** SSL安全连接启用情况。 **取值范围：** - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
 
         :return: The ssl of this ListInstancesResult.
         :rtype: str
@@ -803,12 +892,30 @@ class ListInstancesResult:
     def ssl(self, ssl):
         r"""Sets the ssl of this ListInstancesResult.
 
-        参数解释： SSL安全连接启用情况。 取值范围： - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
+        **参数解释：** SSL安全连接启用情况。 **取值范围：** - 取值为“0”表示未启用。 - 取值为“1”表示已启用。
 
         :param ssl: The ssl of this ListInstancesResult.
         :type ssl: str
         """
         self._ssl = ssl
+
+    @property
+    def backup_space_usage(self):
+        r"""Gets the backup_space_usage of this ListInstancesResult.
+
+        :return: The backup_space_usage of this ListInstancesResult.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupSpaceUsage`
+        """
+        return self._backup_space_usage
+
+    @backup_space_usage.setter
+    def backup_space_usage(self, backup_space_usage):
+        r"""Sets the backup_space_usage of this ListInstancesResult.
+
+        :param backup_space_usage: The backup_space_usage of this ListInstancesResult.
+        :type backup_space_usage: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupSpaceUsage`
+        """
+        self._backup_space_usage = backup_space_usage
 
     def to_dict(self):
         result = {}

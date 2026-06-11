@@ -35,7 +35,7 @@ class ImageAccountInfo:
         :type account: str
         :param account_type: 用户类型： * &#x60;USER&#x60; - 用户 * &#x60;USER_GROUP&#x60; - 用户组
         :type account_type: str
-        :param domain: 域名城。
+        :param domain: 域名称。
         :type domain: str
         """
         
@@ -99,7 +99,7 @@ class ImageAccountInfo:
     def domain(self):
         r"""Gets the domain of this ImageAccountInfo.
 
-        域名城。
+        域名称。
 
         :return: The domain of this ImageAccountInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class ImageAccountInfo:
     def domain(self, domain):
         r"""Sets the domain of this ImageAccountInfo.
 
-        域名城。
+        域名称。
 
         :param domain: The domain of this ImageAccountInfo.
         :type domain: str

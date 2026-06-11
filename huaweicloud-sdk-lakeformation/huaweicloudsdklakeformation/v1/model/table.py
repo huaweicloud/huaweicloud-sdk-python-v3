@@ -28,6 +28,7 @@ class Table:
         'partition_keys': 'list[Column]',
         'retention': 'int',
         'storage_descriptor': 'StorageDescriptor',
+        'table_format': 'str',
         'table_type': 'str',
         'comments': 'str',
         'view_expanded_text': 'str',
@@ -48,13 +49,14 @@ class Table:
         'partition_keys': 'partition_keys',
         'retention': 'retention',
         'storage_descriptor': 'storage_descriptor',
+        'table_format': 'table_format',
         'table_type': 'table_type',
         'comments': 'comments',
         'view_expanded_text': 'view_expanded_text',
         'view_original_text': 'view_original_text'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, table_name=None, create_time=None, last_access_time=None, update_time=None, last_analyzed_time=None, owner=None, owner_type=None, parameters=None, partition_keys=None, retention=None, storage_descriptor=None, table_type=None, comments=None, view_expanded_text=None, view_original_text=None):
+    def __init__(self, catalog_name=None, database_name=None, table_name=None, create_time=None, last_access_time=None, update_time=None, last_analyzed_time=None, owner=None, owner_type=None, parameters=None, partition_keys=None, retention=None, storage_descriptor=None, table_format=None, table_type=None, comments=None, view_expanded_text=None, view_original_text=None):
         r"""Table
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class Table:
         :type retention: int
         :param storage_descriptor: 
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
+        :param table_format: 表格式,支持HIVE,ICEBERG,LANCE
+        :type table_format: str
         :param table_type: 表类型
         :type table_type: str
         :param comments: 表描述信息
@@ -110,6 +114,7 @@ class Table:
         self._partition_keys = None
         self._retention = None
         self._storage_descriptor = None
+        self._table_format = None
         self._table_type = None
         self._comments = None
         self._view_expanded_text = None
@@ -131,6 +136,8 @@ class Table:
         self.partition_keys = partition_keys
         self.retention = retention
         self.storage_descriptor = storage_descriptor
+        if table_format is not None:
+            self.table_format = table_format
         self.table_type = table_type
         if comments is not None:
             self.comments = comments
@@ -418,6 +425,28 @@ class Table:
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
         """
         self._storage_descriptor = storage_descriptor
+
+    @property
+    def table_format(self):
+        r"""Gets the table_format of this Table.
+
+        表格式,支持HIVE,ICEBERG,LANCE
+
+        :return: The table_format of this Table.
+        :rtype: str
+        """
+        return self._table_format
+
+    @table_format.setter
+    def table_format(self, table_format):
+        r"""Sets the table_format of this Table.
+
+        表格式,支持HIVE,ICEBERG,LANCE
+
+        :param table_format: The table_format of this Table.
+        :type table_format: str
+        """
+        self._table_format = table_format
 
     @property
     def table_type(self):

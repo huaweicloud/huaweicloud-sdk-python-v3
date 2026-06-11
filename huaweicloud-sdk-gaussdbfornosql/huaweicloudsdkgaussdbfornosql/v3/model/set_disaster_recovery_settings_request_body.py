@@ -15,7 +15,7 @@ class SetDisasterRecoverySettingsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'disaster_recovery_settings': 'list[SwitchoverRatioInfo]'
+        'disaster_recovery_settings': 'list[SetSwitchoverRatioInfo]'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class SetDisasterRecoverySettingsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param disaster_recovery_settings: 容灾切换的故障节点比例列表。
-        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
+        :param disaster_recovery_settings: **参数解释：** 容灾切换的故障节点比例列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetSwitchoverRatioInfo`]
         """
         
         
@@ -43,10 +43,10 @@ class SetDisasterRecoverySettingsRequestBody:
     def disaster_recovery_settings(self):
         r"""Gets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
 
-        容灾切换的故障节点比例列表。
+        **参数解释：** 容灾切换的故障节点比例列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
-        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetSwitchoverRatioInfo`]
         """
         return self._disaster_recovery_settings
 
@@ -54,10 +54,10 @@ class SetDisasterRecoverySettingsRequestBody:
     def disaster_recovery_settings(self, disaster_recovery_settings):
         r"""Sets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
 
-        容灾切换的故障节点比例列表。
+        **参数解释：** 容灾切换的故障节点比例列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param disaster_recovery_settings: The disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
-        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SwitchoverRatioInfo`]
+        :type disaster_recovery_settings: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetSwitchoverRatioInfo`]
         """
         self._disaster_recovery_settings = disaster_recovery_settings
 

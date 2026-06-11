@@ -69,7 +69,7 @@ class Authorization:
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
         :param platform_type: 
         :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
-        :param domain: 域名城。
+        :param domain: 域名称。
         :type domain: str
         :param create_at: 发布时间。
         :type create_at: datetime
@@ -328,7 +328,7 @@ class Authorization:
     def domain(self):
         r"""Gets the domain of this Authorization.
 
-        域名城。
+        域名称。
 
         :return: The domain of this Authorization.
         :rtype: str
@@ -339,7 +339,7 @@ class Authorization:
     def domain(self, domain):
         r"""Sets the domain of this Authorization.
 
-        域名城。
+        域名称。
 
         :param domain: The domain of this Authorization.
         :type domain: str

@@ -21,7 +21,7 @@ class CreateServerGroupReq:
         'image_type': 'ImageTypeEnum',
         'os_type': 'OsTypeEnum',
         'description': 'str',
-        'route_policy': 'RoutePolicy',
+        'route_policy': 'RoutePolicyDetail',
         'product_id': 'str',
         'flavor_id': 'str',
         'vpc_id': 'str',
@@ -88,7 +88,7 @@ class CreateServerGroupReq:
         :param description: 服务器组描述。
         :type description: str
         :param route_policy: 
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         :param product_id: 产品ID。 &gt; - 获取方式详见产品套餐管理ListProduct：\&quot;GET  /v1/{project_id}/product\&quot;。
         :type product_id: str
         :param flavor_id: 规格ID。
@@ -105,7 +105,7 @@ class CreateServerGroupReq:
         :type ou_name: str
         :param cluster_id: 云服务器系统盘对应的存储池的ID。
         :type cluster_id: str
-        :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
+        :param availability_zone: 可用分区。 &gt; - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区，如果不存在中心站点，则必须指定availability_zone。 &gt; - 获取方式详见可用区管理ListAvailabilityZone：\&quot;GET  /v1/{project_id}/availability-zone\&quot;。
         :type availability_zone: str
         :param ip_virtual: 
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
@@ -327,7 +327,7 @@ class CreateServerGroupReq:
         r"""Gets the route_policy of this CreateServerGroupReq.
 
         :return: The route_policy of this CreateServerGroupReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         return self._route_policy
 
@@ -336,7 +336,7 @@ class CreateServerGroupReq:
         r"""Sets the route_policy of this CreateServerGroupReq.
 
         :param route_policy: The route_policy of this CreateServerGroupReq.
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         self._route_policy = route_policy
 
@@ -516,7 +516,7 @@ class CreateServerGroupReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateServerGroupReq.
 
-        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区，如果不存在中心站点，则必须指定availability_zone。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
         :return: The availability_zone of this CreateServerGroupReq.
         :rtype: str
@@ -527,7 +527,7 @@ class CreateServerGroupReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateServerGroupReq.
 
-        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
+        可用分区。 > - 将服务创建到指定的可用分区，如果不指定则使用系统随机的可用分区，如果不存在中心站点，则必须指定availability_zone。 > - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
         :param availability_zone: The availability_zone of this CreateServerGroupReq.
         :type availability_zone: str

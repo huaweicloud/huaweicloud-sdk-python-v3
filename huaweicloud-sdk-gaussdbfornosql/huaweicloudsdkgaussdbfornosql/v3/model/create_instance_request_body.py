@@ -26,6 +26,7 @@ class CreateInstanceRequestBody:
         'mode': 'str',
         'product_type': 'str',
         'flavor': 'list[CreateInstanceFlavorOption]',
+        'disk_encryption_id': 'str',
         'configuration_id': 'str',
         'backup_strategy': 'BackupStrategyOption',
         'enterprise_project_id': 'str',
@@ -34,7 +35,8 @@ class CreateInstanceRequestBody:
         'charge_info': 'ChargeInfoOption',
         'restore_info': 'RestoreInfo',
         'port': 'str',
-        'availability_zone_detail': 'AvailabilityZoneDetail'
+        'availability_zone_detail': 'AvailabilityZoneDetail',
+        'lb_access_control_settings': 'LbAccessControlSettings'
     }
 
     attribute_map = {
@@ -49,6 +51,7 @@ class CreateInstanceRequestBody:
         'mode': 'mode',
         'product_type': 'product_type',
         'flavor': 'flavor',
+        'disk_encryption_id': 'disk_encryption_id',
         'configuration_id': 'configuration_id',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
@@ -57,54 +60,59 @@ class CreateInstanceRequestBody:
         'charge_info': 'charge_info',
         'restore_info': 'restore_info',
         'port': 'port',
-        'availability_zone_detail': 'availability_zone_detail'
+        'availability_zone_detail': 'availability_zone_detail',
+        'lb_access_control_settings': 'lb_access_control_settings'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, disk_encryption_id=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None, lb_access_control_settings=None):
         r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        :param name: **参数解释：** 实例名称，允许和已有名称重复。 **约束限制：** 区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。 **取值范围：** 长度为4~64位，必须以字母开头（A~Z或a~z）。 **默认取值：** 不涉及。
         :type name: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
-        :param region: - 区域ID - 取值：非空。
+        :param region: **参数解释：** 区域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 非空。
         :type region: str
-        :param availability_zone: 可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
+        :param availability_zone: **参数解释：** 可用区ID。 **约束限制：** 不涉及。 **取值范围：** 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。 **默认取值：** 不涉及。
         :type availability_zone: str
-        :param vpc_id: 虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
+        :param vpc_id: **参数解释：** 虚拟私有云ID。 **约束限制：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type vpc_id: str
-        :param subnet_id: 子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
+        :param subnet_id: **参数解释：** 子网的网络ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。 **默认取值：** 不涉及。
         :type subnet_id: str
-        :param security_group_id: 安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
+        :param security_group_id: **参数解释：** 安全组ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。 **默认取值：** 不涉及。
         :type security_group_id: str
-        :param password: 数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :param password: **参数解释：** 数据库密码。 **约束限制：** 不涉及。 **取值范围：** 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。 **默认取值：** 不涉及。
         :type password: str
-        :param mode: 实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
+        :param mode: **参数解释：** 实例类型。 **约束限制：** 不涉及。 **取值范围：**   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群增强类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Influx支持经典部署模式集群增强类型，取值为“EnhancedCluster”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。   -  GeminiDB兼容DynamoDB支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB兼容DynamoDB支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB HBase支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB HBase支持云原生部署模式集群类型，取值“CloudNativeCluster”。 **默认取值：** 不涉及。
         :type mode: str
-        :param product_type: 产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        :param product_type: **参数解释：** 产品类型。 **约束限制：** 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。 **取值范围：** - Capacity 容量型 **默认取值：** 不涉及。
         :type product_type: str
-        :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
+        :param flavor: **参数解释：** 实例规格详情。 **约束限制：** 获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
-        :param configuration_id: 参数模板ID。
+        :param disk_encryption_id: **参数解释：** 磁盘加密时的密钥ID，创建实例时不传该参数，表示不进行磁盘加密。 **约束限制：** 备份恢复新实例时不支持指定该参数，如果原实例使用了磁盘加密，新实例复用原实例加密的密钥ID。 该参数仅GeminiDB influx 云原生部署模式集群增强版实例类型、GeminiDB Cassandra经典部署模式实例类型、GeminiDB兼容DynamoDB实例类型支持。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type disk_encryption_id: str
+        :param configuration_id: **参数解释：** &#39;参数模板ID。&#39; **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type configuration_id: str
         :param backup_strategy: 
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
-        :param enterprise_project_id: 企业项目ID。
+        :param enterprise_project_id: **参数解释：** &#39;企业项目ID。&#39; **约束限制：**   -对于未开通企业多项目服务的用户，不传该参数。   -对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type enterprise_project_id: str
-        :param dedicated_resource_id: 专属资源ID，只有开通专属资源池后才可以下发此参数。
+        :param dedicated_resource_id: **参数解释：** &#39;专属资源ID。&#39; **约束限制：** 只有开通专属资源池后才可以下发此参数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type dedicated_resource_id: str
-        :param ssl_option: SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
+        :param ssl_option: **参数解释：** SSL开关选项。 **约束限制：** 不涉及。 **取值范围：** - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。 **默认取值：** 不涉及。
         :type ssl_option: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         :param restore_info: 
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
-        :param port: 数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        :param port: **参数解释：** 数据库访问端口号。 **约束限制：** 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。  不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。  如果该实例计划用于搭建双活容灾场景，请配置为8635端口。 **取值范围：** 取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 **默认取值：** 6379。
         :type port: str
         :param availability_zone_detail: 
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
+        :param lb_access_control_settings: 
+        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
         """
         
         
@@ -120,6 +128,7 @@ class CreateInstanceRequestBody:
         self._mode = None
         self._product_type = None
         self._flavor = None
+        self._disk_encryption_id = None
         self._configuration_id = None
         self._backup_strategy = None
         self._enterprise_project_id = None
@@ -129,6 +138,7 @@ class CreateInstanceRequestBody:
         self._restore_info = None
         self._port = None
         self._availability_zone_detail = None
+        self._lb_access_control_settings = None
         self.discriminator = None
 
         self.name = name
@@ -143,6 +153,8 @@ class CreateInstanceRequestBody:
         if product_type is not None:
             self.product_type = product_type
         self.flavor = flavor
+        if disk_encryption_id is not None:
+            self.disk_encryption_id = disk_encryption_id
         if configuration_id is not None:
             self.configuration_id = configuration_id
         if backup_strategy is not None:
@@ -161,12 +173,14 @@ class CreateInstanceRequestBody:
             self.port = port
         if availability_zone_detail is not None:
             self.availability_zone_detail = availability_zone_detail
+        if lb_access_control_settings is not None:
+            self.lb_access_control_settings = lb_access_control_settings
 
     @property
     def name(self):
         r"""Gets the name of this CreateInstanceRequestBody.
 
-        实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        **参数解释：** 实例名称，允许和已有名称重复。 **约束限制：** 区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。 **取值范围：** 长度为4~64位，必须以字母开头（A~Z或a~z）。 **默认取值：** 不涉及。
 
         :return: The name of this CreateInstanceRequestBody.
         :rtype: str
@@ -177,7 +191,7 @@ class CreateInstanceRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateInstanceRequestBody.
 
-        实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        **参数解释：** 实例名称，允许和已有名称重复。 **约束限制：** 区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。 **取值范围：** 长度为4~64位，必须以字母开头（A~Z或a~z）。 **默认取值：** 不涉及。
 
         :param name: The name of this CreateInstanceRequestBody.
         :type name: str
@@ -206,7 +220,7 @@ class CreateInstanceRequestBody:
     def region(self):
         r"""Gets the region of this CreateInstanceRequestBody.
 
-        - 区域ID - 取值：非空。
+        **参数解释：** 区域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 非空。
 
         :return: The region of this CreateInstanceRequestBody.
         :rtype: str
@@ -217,7 +231,7 @@ class CreateInstanceRequestBody:
     def region(self, region):
         r"""Sets the region of this CreateInstanceRequestBody.
 
-        - 区域ID - 取值：非空。
+        **参数解释：** 区域ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 非空。
 
         :param region: The region of this CreateInstanceRequestBody.
         :type region: str
@@ -228,7 +242,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
+        **参数解释：** 可用区ID。 **约束限制：** 不涉及。 **取值范围：** 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。 **默认取值：** 不涉及。
 
         :return: The availability_zone of this CreateInstanceRequestBody.
         :rtype: str
@@ -239,7 +253,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
+        **参数解释：** 可用区ID。 **约束限制：** 不涉及。 **取值范围：** 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。 **默认取值：** 不涉及。
 
         :param availability_zone: The availability_zone of this CreateInstanceRequestBody.
         :type availability_zone: str
@@ -250,7 +264,7 @@ class CreateInstanceRequestBody:
     def vpc_id(self):
         r"""Gets the vpc_id of this CreateInstanceRequestBody.
 
-        虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
+        **参数解释：** 虚拟私有云ID。 **约束限制：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The vpc_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -261,7 +275,7 @@ class CreateInstanceRequestBody:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this CreateInstanceRequestBody.
 
-        虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
+        **参数解释：** 虚拟私有云ID。 **约束限制：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param vpc_id: The vpc_id of this CreateInstanceRequestBody.
         :type vpc_id: str
@@ -272,7 +286,7 @@ class CreateInstanceRequestBody:
     def subnet_id(self):
         r"""Gets the subnet_id of this CreateInstanceRequestBody.
 
-        子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
+        **参数解释：** 子网的网络ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。 **默认取值：** 不涉及。
 
         :return: The subnet_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -283,7 +297,7 @@ class CreateInstanceRequestBody:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this CreateInstanceRequestBody.
 
-        子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
+        **参数解释：** 子网的网络ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。 **默认取值：** 不涉及。
 
         :param subnet_id: The subnet_id of this CreateInstanceRequestBody.
         :type subnet_id: str
@@ -294,7 +308,7 @@ class CreateInstanceRequestBody:
     def security_group_id(self):
         r"""Gets the security_group_id of this CreateInstanceRequestBody.
 
-        安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
+        **参数解释：** 安全组ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。 **默认取值：** 不涉及。
 
         :return: The security_group_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -305,7 +319,7 @@ class CreateInstanceRequestBody:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this CreateInstanceRequestBody.
 
-        安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
+        **参数解释：** 安全组ID。 **约束限制：** 不涉及。 **取值范围：**  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。 **默认取值：** 不涉及。
 
         :param security_group_id: The security_group_id of this CreateInstanceRequestBody.
         :type security_group_id: str
@@ -316,7 +330,7 @@ class CreateInstanceRequestBody:
     def password(self):
         r"""Gets the password of this CreateInstanceRequestBody.
 
-        数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        **参数解释：** 数据库密码。 **约束限制：** 不涉及。 **取值范围：** 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。 **默认取值：** 不涉及。
 
         :return: The password of this CreateInstanceRequestBody.
         :rtype: str
@@ -327,7 +341,7 @@ class CreateInstanceRequestBody:
     def password(self, password):
         r"""Sets the password of this CreateInstanceRequestBody.
 
-        数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        **参数解释：** 数据库密码。 **约束限制：** 不涉及。 **取值范围：** 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。 **默认取值：** 不涉及。
 
         :param password: The password of this CreateInstanceRequestBody.
         :type password: str
@@ -338,7 +352,7 @@ class CreateInstanceRequestBody:
     def mode(self):
         r"""Gets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
+        **参数解释：** 实例类型。 **约束限制：** 不涉及。 **取值范围：**   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群增强类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Influx支持经典部署模式集群增强类型，取值为“EnhancedCluster”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。   -  GeminiDB兼容DynamoDB支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB兼容DynamoDB支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB HBase支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB HBase支持云原生部署模式集群类型，取值“CloudNativeCluster”。 **默认取值：** 不涉及。
 
         :return: The mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -349,7 +363,7 @@ class CreateInstanceRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
+        **参数解释：** 实例类型。 **约束限制：** 不涉及。 **取值范围：**   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群增强类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Influx支持经典部署模式集群增强类型，取值为“EnhancedCluster”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。   -  GeminiDB兼容DynamoDB支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB兼容DynamoDB支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB HBase支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB HBase支持云原生部署模式集群类型，取值“CloudNativeCluster”。 **默认取值：** 不涉及。
 
         :param mode: The mode of this CreateInstanceRequestBody.
         :type mode: str
@@ -360,7 +374,7 @@ class CreateInstanceRequestBody:
     def product_type(self):
         r"""Gets the product_type of this CreateInstanceRequestBody.
 
-        产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        **参数解释：** 产品类型。 **约束限制：** 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。 **取值范围：** - Capacity 容量型 **默认取值：** 不涉及。
 
         :return: The product_type of this CreateInstanceRequestBody.
         :rtype: str
@@ -371,7 +385,7 @@ class CreateInstanceRequestBody:
     def product_type(self, product_type):
         r"""Sets the product_type of this CreateInstanceRequestBody.
 
-        产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        **参数解释：** 产品类型。 **约束限制：** 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。 **取值范围：** - Capacity 容量型 **默认取值：** 不涉及。
 
         :param product_type: The product_type of this CreateInstanceRequestBody.
         :type product_type: str
@@ -382,7 +396,7 @@ class CreateInstanceRequestBody:
     def flavor(self):
         r"""Gets the flavor of this CreateInstanceRequestBody.
 
-        实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
+        **参数解释：** 实例规格详情。 **约束限制：** 获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The flavor of this CreateInstanceRequestBody.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
@@ -393,7 +407,7 @@ class CreateInstanceRequestBody:
     def flavor(self, flavor):
         r"""Sets the flavor of this CreateInstanceRequestBody.
 
-        实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
+        **参数解释：** 实例规格详情。 **约束限制：** 获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param flavor: The flavor of this CreateInstanceRequestBody.
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
@@ -401,10 +415,32 @@ class CreateInstanceRequestBody:
         self._flavor = flavor
 
     @property
+    def disk_encryption_id(self):
+        r"""Gets the disk_encryption_id of this CreateInstanceRequestBody.
+
+        **参数解释：** 磁盘加密时的密钥ID，创建实例时不传该参数，表示不进行磁盘加密。 **约束限制：** 备份恢复新实例时不支持指定该参数，如果原实例使用了磁盘加密，新实例复用原实例加密的密钥ID。 该参数仅GeminiDB influx 云原生部署模式集群增强版实例类型、GeminiDB Cassandra经典部署模式实例类型、GeminiDB兼容DynamoDB实例类型支持。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The disk_encryption_id of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._disk_encryption_id
+
+    @disk_encryption_id.setter
+    def disk_encryption_id(self, disk_encryption_id):
+        r"""Sets the disk_encryption_id of this CreateInstanceRequestBody.
+
+        **参数解释：** 磁盘加密时的密钥ID，创建实例时不传该参数，表示不进行磁盘加密。 **约束限制：** 备份恢复新实例时不支持指定该参数，如果原实例使用了磁盘加密，新实例复用原实例加密的密钥ID。 该参数仅GeminiDB influx 云原生部署模式集群增强版实例类型、GeminiDB Cassandra经典部署模式实例类型、GeminiDB兼容DynamoDB实例类型支持。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param disk_encryption_id: The disk_encryption_id of this CreateInstanceRequestBody.
+        :type disk_encryption_id: str
+        """
+        self._disk_encryption_id = disk_encryption_id
+
+    @property
     def configuration_id(self):
         r"""Gets the configuration_id of this CreateInstanceRequestBody.
 
-        参数模板ID。
+        **参数解释：** '参数模板ID。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The configuration_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -415,7 +451,7 @@ class CreateInstanceRequestBody:
     def configuration_id(self, configuration_id):
         r"""Sets the configuration_id of this CreateInstanceRequestBody.
 
-        参数模板ID。
+        **参数解释：** '参数模板ID。' **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param configuration_id: The configuration_id of this CreateInstanceRequestBody.
         :type configuration_id: str
@@ -444,7 +480,7 @@ class CreateInstanceRequestBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateInstanceRequestBody.
 
-        企业项目ID。
+        **参数解释：** '企业项目ID。' **约束限制：**   -对于未开通企业多项目服务的用户，不传该参数。   -对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The enterprise_project_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -455,7 +491,7 @@ class CreateInstanceRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateInstanceRequestBody.
 
-        企业项目ID。
+        **参数解释：** '企业项目ID。' **约束限制：**   -对于未开通企业多项目服务的用户，不传该参数。   -对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceRequestBody.
         :type enterprise_project_id: str
@@ -466,7 +502,7 @@ class CreateInstanceRequestBody:
     def dedicated_resource_id(self):
         r"""Gets the dedicated_resource_id of this CreateInstanceRequestBody.
 
-        专属资源ID，只有开通专属资源池后才可以下发此参数。
+        **参数解释：** '专属资源ID。' **约束限制：** 只有开通专属资源池后才可以下发此参数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The dedicated_resource_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -477,7 +513,7 @@ class CreateInstanceRequestBody:
     def dedicated_resource_id(self, dedicated_resource_id):
         r"""Sets the dedicated_resource_id of this CreateInstanceRequestBody.
 
-        专属资源ID，只有开通专属资源池后才可以下发此参数。
+        **参数解释：** '专属资源ID。' **约束限制：** 只有开通专属资源池后才可以下发此参数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param dedicated_resource_id: The dedicated_resource_id of this CreateInstanceRequestBody.
         :type dedicated_resource_id: str
@@ -488,7 +524,7 @@ class CreateInstanceRequestBody:
     def ssl_option(self):
         r"""Gets the ssl_option of this CreateInstanceRequestBody.
 
-        SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
+        **参数解释：** SSL开关选项。 **约束限制：** 不涉及。 **取值范围：** - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。 **默认取值：** 不涉及。
 
         :return: The ssl_option of this CreateInstanceRequestBody.
         :rtype: str
@@ -499,7 +535,7 @@ class CreateInstanceRequestBody:
     def ssl_option(self, ssl_option):
         r"""Sets the ssl_option of this CreateInstanceRequestBody.
 
-        SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
+        **参数解释：** SSL开关选项。 **约束限制：** 不涉及。 **取值范围：** - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。 **默认取值：** 不涉及。
 
         :param ssl_option: The ssl_option of this CreateInstanceRequestBody.
         :type ssl_option: str
@@ -546,7 +582,7 @@ class CreateInstanceRequestBody:
     def port(self):
         r"""Gets the port of this CreateInstanceRequestBody.
 
-        数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        **参数解释：** 数据库访问端口号。 **约束限制：** 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。  不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。  如果该实例计划用于搭建双活容灾场景，请配置为8635端口。 **取值范围：** 取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 **默认取值：** 6379。
 
         :return: The port of this CreateInstanceRequestBody.
         :rtype: str
@@ -557,7 +593,7 @@ class CreateInstanceRequestBody:
     def port(self, port):
         r"""Sets the port of this CreateInstanceRequestBody.
 
-        数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        **参数解释：** 数据库访问端口号。 **约束限制：** 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。  不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。  如果该实例计划用于搭建双活容灾场景，请配置为8635端口。 **取值范围：** 取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 **默认取值：** 6379。
 
         :param port: The port of this CreateInstanceRequestBody.
         :type port: str
@@ -581,6 +617,24 @@ class CreateInstanceRequestBody:
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
         """
         self._availability_zone_detail = availability_zone_detail
+
+    @property
+    def lb_access_control_settings(self):
+        r"""Gets the lb_access_control_settings of this CreateInstanceRequestBody.
+
+        :return: The lb_access_control_settings of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
+        """
+        return self._lb_access_control_settings
+
+    @lb_access_control_settings.setter
+    def lb_access_control_settings(self, lb_access_control_settings):
+        r"""Sets the lb_access_control_settings of this CreateInstanceRequestBody.
+
+        :param lb_access_control_settings: The lb_access_control_settings of this CreateInstanceRequestBody.
+        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
+        """
+        self._lb_access_control_settings = lb_access_control_settings
 
     def to_dict(self):
         result = {}

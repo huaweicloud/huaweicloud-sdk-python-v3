@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ArrowSchema:
+class ShowAvailableBuildDrInstanceRequest:
 
     """
     Attributes:
@@ -15,79 +15,79 @@ class ArrowSchema:
     sensitive_list = []
 
     openapi_types = {
-        'fields': 'list[ArrowField]',
-        'metadata': 'dict(str, str)'
+        'type': 'str',
+        'x_language': 'str'
     }
 
     attribute_map = {
-        'fields': 'fields',
-        'metadata': 'metadata'
+        'type': 'type',
+        'x_language': 'X-Language'
     }
 
-    def __init__(self, fields=None, metadata=None):
-        r"""ArrowSchema
+    def __init__(self, type=None, x_language=None):
+        r"""ShowAvailableBuildDrInstanceRequest
 
         The model defined in huaweicloud sdk
 
-        :param fields: Arrow字段列表，定义表的所有列及其类型信息。
-        :type fields: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
-        :param metadata: Schema的元数据信息，key-value形式的附加信息。
-        :type metadata: dict(str, str)
+        :param type: 要查询的实例类型 master：主实例。 slave：灾备实例。
+        :type type: str
+        :param x_language: 语言。默认en-us。
+        :type x_language: str
         """
         
         
 
-        self._fields = None
-        self._metadata = None
+        self._type = None
+        self._x_language = None
         self.discriminator = None
 
-        self.fields = fields
-        if metadata is not None:
-            self.metadata = metadata
+        self.type = type
+        if x_language is not None:
+            self.x_language = x_language
 
     @property
-    def fields(self):
-        r"""Gets the fields of this ArrowSchema.
+    def type(self):
+        r"""Gets the type of this ShowAvailableBuildDrInstanceRequest.
 
-        Arrow字段列表，定义表的所有列及其类型信息。
+        要查询的实例类型 master：主实例。 slave：灾备实例。
 
-        :return: The fields of this ArrowSchema.
-        :rtype: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
+        :return: The type of this ShowAvailableBuildDrInstanceRequest.
+        :rtype: str
         """
-        return self._fields
+        return self._type
 
-    @fields.setter
-    def fields(self, fields):
-        r"""Sets the fields of this ArrowSchema.
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ShowAvailableBuildDrInstanceRequest.
 
-        Arrow字段列表，定义表的所有列及其类型信息。
+        要查询的实例类型 master：主实例。 slave：灾备实例。
 
-        :param fields: The fields of this ArrowSchema.
-        :type fields: list[:class:`huaweicloudsdklakeformation.v1.ArrowField`]
+        :param type: The type of this ShowAvailableBuildDrInstanceRequest.
+        :type type: str
         """
-        self._fields = fields
+        self._type = type
 
     @property
-    def metadata(self):
-        r"""Gets the metadata of this ArrowSchema.
+    def x_language(self):
+        r"""Gets the x_language of this ShowAvailableBuildDrInstanceRequest.
 
-        Schema的元数据信息，key-value形式的附加信息。
+        语言。默认en-us。
 
-        :return: The metadata of this ArrowSchema.
-        :rtype: dict(str, str)
+        :return: The x_language of this ShowAvailableBuildDrInstanceRequest.
+        :rtype: str
         """
-        return self._metadata
+        return self._x_language
 
-    @metadata.setter
-    def metadata(self, metadata):
-        r"""Sets the metadata of this ArrowSchema.
+    @x_language.setter
+    def x_language(self, x_language):
+        r"""Sets the x_language of this ShowAvailableBuildDrInstanceRequest.
 
-        Schema的元数据信息，key-value形式的附加信息。
+        语言。默认en-us。
 
-        :param metadata: The metadata of this ArrowSchema.
-        :type metadata: dict(str, str)
+        :param x_language: The x_language of this ShowAvailableBuildDrInstanceRequest.
+        :type x_language: str
         """
-        self._metadata = metadata
+        self._x_language = x_language
 
     def to_dict(self):
         result = {}
@@ -126,7 +126,7 @@ class ArrowSchema:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ArrowSchema):
+        if not isinstance(other, ShowAvailableBuildDrInstanceRequest):
             return False
 
         return self.__dict__ == other.__dict__

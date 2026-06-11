@@ -166,7 +166,7 @@ class WorkspaceAppClient(Client):
     def bind_app_warehouse_bucket(self, request):
         r"""添加用户应用仓库桶及桶授权
 
-        添加用户应用仓库桶及桶授权。
+        添加用户应用仓库桶及桶授权，用于租户自定义桶。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1498,6 +1498,75 @@ class WorkspaceAppClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_app_icon_raw(self, request):
+        r"""修改自定义应用图标
+
+        修改自定义应用图标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadAppIconRaw
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRawRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRawResponse`
+        """
+        http_info = self._upload_app_icon_raw_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_app_icon_raw_invoker(self, request):
+        http_info = self._upload_app_icon_raw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_app_icon_raw_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}/raw-icon",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAppIconRawResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_group_id' in local_var_params:
+            path_params['app_group_id'] = local_var_params['app_group_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['apig-auth-iam-used-authn5']
 
@@ -2915,7 +2984,7 @@ class WorkspaceAppClient(Client):
     def change_cluster(self, request):
         r"""切换文件夹归属集群
 
-        切换文件夹归属集群，文件系统在切换
+        切换文件夹归属集群，该操作需要sfs先操作文件系统切换后调用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3047,7 +3116,7 @@ class WorkspaceAppClient(Client):
     def create_user_folder_assignment(self, request):
         r"""创建个人文件夹
 
-        创建个人文件夹，已存在对应目录时，仅更新策略不会重复创建目录。
+        创建个人文件夹并创建对应文件系统，已存在对应目录时，仅更新策略不会重复创建目录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3114,7 +3183,7 @@ class WorkspaceAppClient(Client):
     def delete_cloud_storage(self, request):
         r"""删除云存储
 
-        删除共享存储，只会解除NAS与项目配置之间的关联关系。
+        删除共享存储，只会解除NAS与项目配置之间的关联关系
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3179,7 +3248,7 @@ class WorkspaceAppClient(Client):
     def delete_cloud_storage_attachment(self, request):
         r"""删除个人文件夹
 
-        删除个人存储目录，个人目录中的数据也将永久删除且无法恢复。
+        删除个人存储目录，对应文件系统也将删除，个人目录中的数据也将永久删除且无法恢复。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3537,7 +3606,7 @@ class WorkspaceAppClient(Client):
     def reset_user_profile(self, request):
         r"""重置userprofile
 
-        重置userprofile，初始化或重置并备份userprofile。
+        重置userprofile，初始化或重置并备份userprofile，输入ori_name时将ori_name备份重置到AppData目录，不输入时为初始化重置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3667,7 +3736,7 @@ class WorkspaceAppClient(Client):
     def transfer_file(self, request):
         r"""文件流转
 
-        云存储文件流转与分享
+        云存储文件流转与分享，根据不同的transfer_type实现个人文件上传到共享文件夹，从共享文件夹拉取文件到个人文件夹。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3732,7 +3801,7 @@ class WorkspaceAppClient(Client):
     def transfer_file_pre(self, request):
         r"""文件预流转
 
-        文件预流转，在接收方接收文件前返回可用的文件路径
+        文件预流转，在接收方接收文件前返回可用的文件路径，如果接收方不存在当前获取文件的同名文件，则不修改返回，否则返回新的可用的文件名。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3797,7 +3866,7 @@ class WorkspaceAppClient(Client):
     def update_cloud_user_folder_assignment(self, request):
         r"""修改个人文件夹
 
-        创建个人文件夹。
+        修改个人文件夹。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -11642,7 +11711,7 @@ class WorkspaceAppClient(Client):
     def update_non_migration_users(self, request):
         r"""修改热点会话不迁移用户
 
-        修改热点会话不迁移用户, 在对热点绘画迁移用户新增时如已存在该用户，则进行覆盖添加，在删除用户时如果不存在用户，则进行忽略。
+        修改热点会话不迁移用户, 在对热点会话迁移用户新增时如已存在该用户，则进行覆盖添加，在删除用户时如果不存在用户，则进行忽略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

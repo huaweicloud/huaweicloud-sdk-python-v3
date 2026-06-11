@@ -28,7 +28,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param maintenance_window: 参数解释： 实例的可维护时间窗。
+        :param maintenance_window: **参数解释：** 实例的可维护时间窗。
         :type maintenance_window: str
         """
         
@@ -44,7 +44,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
     def maintenance_window(self):
         r"""Gets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
 
-        参数解释： 实例的可维护时间窗。
+        **参数解释：** 实例的可维护时间窗。
 
         :return: The maintenance_window of this ListInstanceMaintenanceWindowResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
     def maintenance_window(self, maintenance_window):
         r"""Sets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
 
-        参数解释： 实例的可维护时间窗。
+        **参数解释：** 实例的可维护时间窗。
 
         :param maintenance_window: The maintenance_window of this ListInstanceMaintenanceWindowResponse.
         :type maintenance_window: str

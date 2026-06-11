@@ -1,3 +1,391 @@
+# 3.1.199 2026-06-11
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SearchSubject**
+    - 响应参数变更
+      - `+ data.value.records.permission`
+      - `+ data.value.records.relations`
+      - `- data.value.records.from_public`
+      - `* data.value.records.parent_id: string -> int64`
+      - `* data.value.records.swap_order_id: string -> int64`
+  - **UpdateSubject**
+    - 请求参数变更
+      - `+ entity`
+      - `- name_ch`
+      - `- name_en`
+      - `- description`
+      - `- qualified_name`
+      - `- guid`
+      - `- code`
+      - `- alias`
+      - `- status`
+      - `- new_biz`
+      - `- data_owner`
+      - `- data_owner_list`
+      - `- data_department`
+      - `- path`
+      - `- level`
+      - `- ordinal`
+      - `- owner`
+      - `- parent_id`
+      - `- swap_order_id`
+      - `- id`
+      - `- qualified_id`
+      - `- from_public`
+      - `- create_by`
+      - `- update_by`
+      - `- children_num`
+      - `- self_defined_fields`
+      - `* body: object<CatalogVO> -> object<CatalogParamsVO>`
+    - 响应参数变更
+      - `+ data.value.permission`
+      - `+ data.value.relations`
+      - `- data.value.from_public`
+      - `* data.value.parent_id: string -> int64`
+      - `* data.value.swap_order_id: string -> int64`
+  - **CreateSubject**
+    - 请求参数变更
+      - `+ entity`
+      - `- name_ch`
+      - `- name_en`
+      - `- description`
+      - `- qualified_name`
+      - `- guid`
+      - `- code`
+      - `- alias`
+      - `- status`
+      - `- new_biz`
+      - `- data_owner`
+      - `- data_owner_list`
+      - `- data_department`
+      - `- path`
+      - `- level`
+      - `- ordinal`
+      - `- owner`
+      - `- parent_id`
+      - `- swap_order_id`
+      - `- id`
+      - `- qualified_id`
+      - `- from_public`
+      - `- create_by`
+      - `- update_by`
+      - `- children_num`
+      - `- self_defined_fields`
+      - `* body: object<CatalogVO> -> object<CatalogParamsVO>`
+    - 响应参数变更
+      - `+ data.value.permission`
+      - `+ data.value.relations`
+      - `- data.value.from_public`
+      - `* data.value.parent_id: string -> int64`
+      - `* data.value.swap_order_id: string -> int64`
+  - **SearchSubjectNew**
+    - 响应参数变更
+      - `+ data.value.records.permission`
+      - `+ data.value.records.relations`
+      - `- data.value.records.from_public`
+      - `* data.value.records.parent_id: string -> int64`
+      - `* data.value.records.swap_order_id: string -> int64`
+  - **UpdateSubjectNew**
+    - 请求参数变更
+      - `+ code`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_department`
+      - `+ path`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ swap_order_id`
+      - `+ qualified_id`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ relations`
+      - `* parent_id: string -> int64`
+      - `* body: object<SubjectParamsVO> -> object<CatalogVO>`
+    - 响应参数变更
+      - `+ data.value.permission`
+      - `+ data.value.relations`
+      - `- data.value.from_public`
+      - `* data.value.parent_id: string -> int64`
+      - `* data.value.swap_order_id: string -> int64`
+  - **CreateSubjectNew**
+    - 请求参数变更
+      - `+ code`
+      - `+ status`
+      - `+ new_biz`
+      - `+ data_department`
+      - `+ path`
+      - `+ ordinal`
+      - `+ owner`
+      - `+ swap_order_id`
+      - `+ qualified_id`
+      - `+ create_by`
+      - `+ update_by`
+      - `+ relations`
+      - `* parent_id: string -> int64`
+      - `* body: object<SubjectParamsVO> -> object<CatalogVO>`
+    - 响应参数变更
+      - `+ data.value.permission`
+      - `+ data.value.relations`
+      - `- data.value.from_public`
+      - `* data.value.parent_id: string -> int64`
+      - `* data.value.swap_order_id: string -> int64`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`BatchDeleteShards`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddReadonlyNode**
+    - 请求参数变更
+      - `+ group_id`
+      - `+ availability_zone`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDisasterRecoverySettings**
+    - 响应参数变更
+      - `+ disaster_recovery_settings.sync_delay`
+      - `* disaster_recovery_settings: list<SwitchoverRatioInfo> -> list<QuerySwitchoverRatioInfo>`
+  - **SetDisasterRecoverySettings**
+    - 请求参数变更
+      - `+ disaster_recovery_settings.sync_delay`
+      - `* disaster_recovery_settings: list<SwitchoverRatioInfo> -> list<SetSwitchoverRatioInfo>`
+  - **ListRecycleInstances**
+    - 响应参数变更
+      - `+ instances.data_store`
+      - `+ instances.charge_type`
+      - `- instances.datastore`
+      - `- instances.charge_mode`
+  - **CreateInstance**
+    - 请求参数变更
+      - `+ disk_encryption_id`
+      - `+ lb_access_control_settings`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.disk_encryption_id`
+      - `+ instances.dr_instance_id`
+      - `+ instances.ccm_cert_info`
+      - `+ instances.backup_space_usage`
+      - `+ instances.dual_active_info.destination_instance_name`
+      - `+ instances.dual_active_info.destination_instance_node_num`
+      - `+ instances.dual_active_info.destination_instance_spec_code`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClusterProtectionItem**
+    - 响应参数变更
+      - `+ clusters.cluster_type`
+  - **HandleAntiVirusResult**
+    - 请求参数变更
+      - `+ event_white_rules.scope`
+      - `+ event_white_rules.agent_ids`
+      - `+ event_white_rules.instance_ids`
+  - **ListQuotasDetail**
+    - 请求参数变更
+      - `+ host_id_list`
+  - **ChangeEvent**
+    - 请求参数变更
+      - `+ event_white_rule_list.scope`
+      - `+ event_white_rule_list.agent_ids`
+      - `+ event_white_rule_list.instance_ids`
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTablesByName**
+    - 响应参数变更
+      - `+ table_format`
+  - **ShowTable**
+    - 响应参数变更
+      - `+ table_format`
+  - **UpdateTable**
+    - 请求参数变更
+      - `+ version_id`
+      - `+ is_async`
+      - `+ table.table_format`
+      - `+ table.external_table_id`
+      - `+ table.data_statistic_enable`
+      - `+ table.version_id`
+      - `+ table.table_type: enum value [DICTIONARY_TABLE,LAKE_TABLE]`
+      - `* table: object<TableInput> -> object<UpdateTableInput>`
+    - 响应参数变更
+      - `+ table_format`
+  - **ListTables**
+    - 响应参数变更
+      - `+ table_format`
+      - `+ tables.table_format`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ create_open_table_format_input.create_lance_table_input.schema.fields.metadata`
+      - `* create_open_table_format_input.create_lance_table_input.schema.fields.type: string -> object<ArrowType>`
+      - `* create_open_table_format_input.create_lance_table_input.schema: object<ArrowSchema> -> object<LanceSchema>`
+    - 响应参数变更
+      - `+ table_format`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowMsdtcLocalHost`
+    - `ShowTopObjects`
+    - `CreateDrsJobTask`
+    - `ShowDrsJobName`
+    - `ShowHotClodSeparationStatus`
+    - `ShowAvailableBuildDrInstance`
+    - `ListHistorySessions`
+    - `ListHistoryTopSqls`
+    - `ListHistoryWaitEvents`
+    - `ShowHistorySessionAnalyseDownloadInfo`
+    - `UploadHistorySessionAnalyase`
+    - `RotateAuditLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTopSqls**
+    - 请求参数变更
+      - `+ offset`
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`UploadAppIconRaw`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AuthorizeObs**
+    - 响应参数变更
+      - `- roam_actions`
+      - `- actions`
+      - `- policy_statement_id`
+      - `+ policy.statement.effect`
+      - `+ policy.statement.action`
+      - `+ policy.statement.resource`
+      - `- policy.statement.policy_statement_id`
+      - `- policy.statement.actions`
+      - `- policy.statement.roam_actions`
+  - **ListSubJobs**
+    - 响应参数变更
+      - `+ items.error_code`
+      - `+ items.error_message`
+      - `- items.job_execute_info`
+      - `+ items.job_type: enum value [UPDATE_FREEZE_STATUS,REINSTALL_OS,CHANGE_SERVER_IMAGE,REJOIN_DOMAIN,MIGRATE_SERVER,UPGRADE_ACCESS_AGENT,UPDATE_SERVER_TSVI,SCHEDULED_TASK,COLLECT_HDA_LOG,COLLECT_APS_LOG,CREATE_SERVER_SNAPSHOT,DELETE_SERVER_SNAPSHOT,RESTORE_SERVER_SNAPSHOT,BATCH_INSTALL_APP,INSTALL_CES_AGENT,UNINSTALL_CES_AGENT]`
+      - `+ items.job_resource_info.cloud_service_type`
+      - `+ items.job_resource_info.resource_type`
+      - `+ items.job_resource_info.resource_spec_code`
+      - `+ items.job_resource_info.spec_type`
+      - `+ items.job_resource_info.spec_size`
+      - `+ items.job_resource_info.measure`
+      - `+ items.job_resource_info.processed_time`
+      - `+ items.job_resource_info.is_main_resource`
+      - `+ items.job_resource_info.main_resources`
+      - `+ items.job_resource_info.extend_params`
+      - `+ items.job_resource_info.old_resource_id`
+      - `+ items.job_resource_info.old_cloud_service_type`
+      - `+ items.job_resource_info.old_resource_type`
+      - `* items.job_resource_info: object<ImageJobResourceInfo> -> object<JobResourceInfo>`
+      - `* items: list<ImageJobDetailInfo> -> list<SubJobDetailInfo>`
+  - **ShowServer**
+    - 响应参数变更
+      - `- product_info.series_type`
+      - `* product_info: object<ProductInfo> -> object<ServerProductInfo>`
+  - **UpdateServerGroup**
+    - 请求参数变更
+      - `+ route_policy.gpu_threshold`
+      - `* route_policy: object<RoutePolicy> -> object<RoutePolicyDetail>`
+  - **ShowServerGroup**
+    - 响应参数变更
+      - `- product_info.series_type`
+      - `* product_info: object<ProductInfo> -> object<ServerProductInfo>`
+      - `+ route_policy.gpu_threshold`
+      - `* route_policy: object<RoutePolicy> -> object<RoutePolicyDetail>`
+  - **ListImageJobs**
+    - 响应参数变更
+      - `+ items.job_type: enum value [BUILD_IMAGE,GENERATE_IMAGE,DELETE_IMAGE_BUILD_SERVER,DELETE_IMAGE]`
+  - **ShowImageJob**
+    - 响应参数变更
+      - `+ job_type: enum value [BUILD_IMAGE,GENERATE_IMAGE,DELETE_IMAGE_BUILD_SERVER,DELETE_IMAGE]`
+  - **ListImageSubJobs**
+    - 响应参数变更
+      - `+ items.job_type: enum value [BUILD_IMAGE,GENERATE_IMAGE,DELETE_IMAGE_BUILD_SERVER,DELETE_IMAGE]`
+  - **ListServers**
+    - 响应参数变更
+      - `- items.product_info.series_type`
+      - `* items.product_info: object<ProductInfo> -> object<ServerProductInfo>`
+  - **CreateServerGroup**
+    - 请求参数变更
+      - `+ route_policy.gpu_threshold`
+      - `* route_policy: object<RoutePolicy> -> object<RoutePolicyDetail>`
+    - 响应参数变更
+      - `- product_info.series_type`
+      - `* product_info: object<ProductInfo> -> object<ServerProductInfo>`
+  - **ListServerGroups**
+    - 响应参数变更
+      - `- items.product_info.series_type`
+      - `* items.product_info: object<ProductInfo> -> object<ServerProductInfo>`
+  - **ShowOriginalPolicyInfo**
+    - 响应参数变更
+      - `+ policies.folder_redirection_v2`
+  - **ListPolicyOfPolicyGroup**
+    - 响应参数变更
+      - `+ policies.folder_redirection_v2`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ items.policies.folder_redirection_v2`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.folder_redirection_v2`
+  - **ShowPolicyGroup**
+    - 响应参数变更
+      - `+ policy_group.policies.folder_redirection_v2`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.policies.folder_redirection_v2`
+  - **ListPolicyGroupDetailInfo**
+    - 响应参数变更
+      - `+ items.policies.folder_redirection_v2`
+  - **CreatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.folder_redirection_v2`
+  - **UpdatePolicyTemplate**
+    - 请求参数变更
+      - `+ policy_group.policies.folder_redirection_v2`
+
 # 3.1.198 2026-06-04
 
 ### HuaweiCloud SDK CDN

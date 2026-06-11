@@ -17,7 +17,7 @@ class UpdateServerGroupReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'route_policy': 'RoutePolicy',
+        'route_policy': 'RoutePolicyDetail',
         'storage_mount_policy': 'StorageFolderMountType',
         'image_id': 'str',
         'image_product_id': 'str',
@@ -54,7 +54,7 @@ class UpdateServerGroupReq:
         :param description: 服务器组描述。
         :type description: str
         :param route_policy: 
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         :param storage_mount_policy: 
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         :param image_id: 服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
@@ -165,7 +165,7 @@ class UpdateServerGroupReq:
         r"""Gets the route_policy of this UpdateServerGroupReq.
 
         :return: The route_policy of this UpdateServerGroupReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         return self._route_policy
 
@@ -174,7 +174,7 @@ class UpdateServerGroupReq:
         r"""Sets the route_policy of this UpdateServerGroupReq.
 
         :param route_policy: The route_policy of this UpdateServerGroupReq.
-        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicyDetail`
         """
         self._route_policy = route_policy
 

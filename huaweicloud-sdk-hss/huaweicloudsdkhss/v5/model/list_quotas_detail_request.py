@@ -22,6 +22,7 @@ class ListQuotasDetailRequest:
         'quota_status': 'str',
         'used_status': 'str',
         'host_name': 'str',
+        'host_id_list': 'list[str]',
         'resource_id': 'str',
         'charging_mode': 'str',
         'limit': 'int',
@@ -36,13 +37,14 @@ class ListQuotasDetailRequest:
         'quota_status': 'quota_status',
         'used_status': 'used_status',
         'host_name': 'host_name',
+        'host_id_list': 'host_id_list',
         'resource_id': 'resource_id',
         'charging_mode': 'charging_mode',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, version=None, category=None, quota_status=None, used_status=None, host_name=None, resource_id=None, charging_mode=None, limit=None, offset=None):
+    def __init__(self, region=None, enterprise_project_id=None, version=None, category=None, quota_status=None, used_status=None, host_name=None, host_id_list=None, resource_id=None, charging_mode=None, limit=None, offset=None):
         r"""ListQuotasDetailRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListQuotasDetailRequest:
         :type used_status: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
+        :param host_id_list: **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-64位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+        :type host_id_list: list[str]
         :param resource_id: **参数解释** : HSS配额的资源ID **约束限制** : 不涉及 **取值范围** : 字符长度1-128位 **默认取值** : 不涉及 
         :type resource_id: str
         :param charging_mode: **参数解释**： 收费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle ：包年/包月。 - on_demand ：按需。 **默认取值**: 不涉及
@@ -80,6 +84,7 @@ class ListQuotasDetailRequest:
         self._quota_status = None
         self._used_status = None
         self._host_name = None
+        self._host_id_list = None
         self._resource_id = None
         self._charging_mode = None
         self._limit = None
@@ -100,6 +105,8 @@ class ListQuotasDetailRequest:
             self.used_status = used_status
         if host_name is not None:
             self.host_name = host_name
+        if host_id_list is not None:
+            self.host_id_list = host_id_list
         if resource_id is not None:
             self.resource_id = resource_id
         if charging_mode is not None:
@@ -262,6 +269,28 @@ class ListQuotasDetailRequest:
         :type host_name: str
         """
         self._host_name = host_name
+
+    @property
+    def host_id_list(self):
+        r"""Gets the host_id_list of this ListQuotasDetailRequest.
+
+        **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-64位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :return: The host_id_list of this ListQuotasDetailRequest.
+        :rtype: list[str]
+        """
+        return self._host_id_list
+
+    @host_id_list.setter
+    def host_id_list(self, host_id_list):
+        r"""Sets the host_id_list of this ListQuotasDetailRequest.
+
+        **参数解释**: 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 单个服务器ID字符长度1-64位 批量查询服务器ID个数1-100个 采用逗号分割 **默认取值**: 不涉及
+
+        :param host_id_list: The host_id_list of this ListQuotasDetailRequest.
+        :type host_id_list: list[str]
+        """
+        self._host_id_list = host_id_list
 
     @property
     def resource_id(self):

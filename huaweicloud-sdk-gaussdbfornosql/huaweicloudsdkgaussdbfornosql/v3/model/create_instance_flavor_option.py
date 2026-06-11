@@ -33,13 +33,13 @@ class CreateInstanceFlavorOption:
 
         The model defined in huaweicloud sdk
 
-        :param num: 节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
+        :param num: **参数解释：** 节点数量。 **约束限制：** 不涉及。 **取值范围：** - GeminiDB Cassandra实例的节点数量可取3~60。 - GeminiDB Mongo 4.0版本副本集实例的节点数量为3。 - GeminiDB Influx集群实例的节点数量可取3~16。 - GeminiDB Influx单节点实例的节点数量可取1。 - GeminiDB Redis实例的节点数量可取3~12。 **默认取值：** 不涉及。
         :type num: str
-        :param storage: 磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
+        :param storage: **参数解释：** 磁盘类型。 **约束限制：** 不涉及。 **取值范围：** 取值为“ULTRAHIGH”，表示SSD盘。 **默认取值：** 不涉及。
         :type storage: str
-        :param size: 磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
+        :param size: **参数解释：** 磁盘大小。必须为整数，单位为GB。 **约束限制：** GeminiDB Cassandra，GeminiDB Mongo，GeminiDB Influx的最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关。GeminiDB Redis的最大和最小磁盘容量与节点数和实例的性能规格有关。 **取值范围：** - GeminiDB Cassandra请参见数据库实例规格。 - GeminiDB Mongo请参见数据库实例规格。 - GeminiDB Influx请参见数据库实例规格。 - GeminiDB Redis请参见数据库实例规格。 **默认取值：** 不涉及。
         :type size: str
-        :param spec_code: 资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
+        :param spec_code: -| **参数解释：** 资源规格编码。 **约束限制：** 不涉及。 **取值范围：** 获取方法请参见查询数据库规格 - QueryingInstanceSpecifications中响应参数“spec_code”的值。 **默认取值：** 不涉及。
         :type spec_code: str
         """
         
@@ -60,7 +60,7 @@ class CreateInstanceFlavorOption:
     def num(self):
         r"""Gets the num of this CreateInstanceFlavorOption.
 
-        节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
+        **参数解释：** 节点数量。 **约束限制：** 不涉及。 **取值范围：** - GeminiDB Cassandra实例的节点数量可取3~60。 - GeminiDB Mongo 4.0版本副本集实例的节点数量为3。 - GeminiDB Influx集群实例的节点数量可取3~16。 - GeminiDB Influx单节点实例的节点数量可取1。 - GeminiDB Redis实例的节点数量可取3~12。 **默认取值：** 不涉及。
 
         :return: The num of this CreateInstanceFlavorOption.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateInstanceFlavorOption:
     def num(self, num):
         r"""Sets the num of this CreateInstanceFlavorOption.
 
-        节点数量。   - GeminiDB Cassandra实例的节点数量可取3~12。   - GeminiDB Mongo4.0版本副本集实例的节点数量可取3。   - GeminiDB Influx实例的节点数量可取3~16。
+        **参数解释：** 节点数量。 **约束限制：** 不涉及。 **取值范围：** - GeminiDB Cassandra实例的节点数量可取3~60。 - GeminiDB Mongo 4.0版本副本集实例的节点数量为3。 - GeminiDB Influx集群实例的节点数量可取3~16。 - GeminiDB Influx单节点实例的节点数量可取1。 - GeminiDB Redis实例的节点数量可取3~12。 **默认取值：** 不涉及。
 
         :param num: The num of this CreateInstanceFlavorOption.
         :type num: str
@@ -82,7 +82,7 @@ class CreateInstanceFlavorOption:
     def storage(self):
         r"""Gets the storage of this CreateInstanceFlavorOption.
 
-        磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
+        **参数解释：** 磁盘类型。 **约束限制：** 不涉及。 **取值范围：** 取值为“ULTRAHIGH”，表示SSD盘。 **默认取值：** 不涉及。
 
         :return: The storage of this CreateInstanceFlavorOption.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateInstanceFlavorOption:
     def storage(self, storage):
         r"""Sets the storage of this CreateInstanceFlavorOption.
 
-        磁盘类型。 取值为“ULTRAHIGH”，表示SSD盘。
+        **参数解释：** 磁盘类型。 **约束限制：** 不涉及。 **取值范围：** 取值为“ULTRAHIGH”，表示SSD盘。 **默认取值：** 不涉及。
 
         :param storage: The storage of this CreateInstanceFlavorOption.
         :type storage: str
@@ -104,7 +104,7 @@ class CreateInstanceFlavorOption:
     def size(self):
         r"""Gets the size of this CreateInstanceFlavorOption.
 
-        磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
+        **参数解释：** 磁盘大小。必须为整数，单位为GB。 **约束限制：** GeminiDB Cassandra，GeminiDB Mongo，GeminiDB Influx的最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关。GeminiDB Redis的最大和最小磁盘容量与节点数和实例的性能规格有关。 **取值范围：** - GeminiDB Cassandra请参见数据库实例规格。 - GeminiDB Mongo请参见数据库实例规格。 - GeminiDB Influx请参见数据库实例规格。 - GeminiDB Redis请参见数据库实例规格。 **默认取值：** 不涉及。
 
         :return: The size of this CreateInstanceFlavorOption.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateInstanceFlavorOption:
     def size(self, size):
         r"""Sets the size of this CreateInstanceFlavorOption.
 
-        磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
+        **参数解释：** 磁盘大小。必须为整数，单位为GB。 **约束限制：** GeminiDB Cassandra，GeminiDB Mongo，GeminiDB Influx的最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关。GeminiDB Redis的最大和最小磁盘容量与节点数和实例的性能规格有关。 **取值范围：** - GeminiDB Cassandra请参见数据库实例规格。 - GeminiDB Mongo请参见数据库实例规格。 - GeminiDB Influx请参见数据库实例规格。 - GeminiDB Redis请参见数据库实例规格。 **默认取值：** 不涉及。
 
         :param size: The size of this CreateInstanceFlavorOption.
         :type size: str
@@ -126,7 +126,7 @@ class CreateInstanceFlavorOption:
     def spec_code(self):
         r"""Gets the spec_code of this CreateInstanceFlavorOption.
 
-        资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
+        -| **参数解释：** 资源规格编码。 **约束限制：** 不涉及。 **取值范围：** 获取方法请参见查询数据库规格 - QueryingInstanceSpecifications中响应参数“spec_code”的值。 **默认取值：** 不涉及。
 
         :return: The spec_code of this CreateInstanceFlavorOption.
         :rtype: str
@@ -137,7 +137,7 @@ class CreateInstanceFlavorOption:
     def spec_code(self, spec_code):
         r"""Sets the spec_code of this CreateInstanceFlavorOption.
 
-        资源规格编码。获取方法请参见查询所有实例规格信息中响应参数“spec_code”的值。
+        -| **参数解释：** 资源规格编码。 **约束限制：** 不涉及。 **取值范围：** 获取方法请参见查询数据库规格 - QueryingInstanceSpecifications中响应参数“spec_code”的值。 **默认取值：** 不涉及。
 
         :param spec_code: The spec_code of this CreateInstanceFlavorOption.
         :type spec_code: str

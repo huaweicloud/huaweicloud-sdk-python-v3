@@ -1485,6 +1485,7 @@ from huaweicloudsdkhss.v5.model.scan_period_date import ScanPeriodDate
 from huaweicloudsdkhss.v5.model.scan_progress import ScanProgress
 from huaweicloudsdkhss.v5.model.scan_time import ScanTime
 from huaweicloudsdkhss.v5.model.scan_type import ScanType
+from huaweicloudsdkhss.v5.model.scope import Scope
 from huaweicloudsdkhss.v5.model.security_check_cluster_reports import SecurityCheckClusterReports
 from huaweicloudsdkhss.v5.model.security_check_config_request_info import SecurityCheckConfigRequestInfo
 from huaweicloudsdkhss.v5.model.security_check_host_info import SecurityCheckHostInfo

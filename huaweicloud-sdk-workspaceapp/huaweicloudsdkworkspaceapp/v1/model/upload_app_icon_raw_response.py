@@ -1,0 +1,655 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UploadAppIconRawResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'version': 'str',
+        'command_param': 'str',
+        'execute_path': 'str',
+        'work_path': 'str',
+        'icon_path': 'str',
+        'icon_index': 'int',
+        'description': 'str',
+        'app_group_id': 'str',
+        'state': 'AppStateEnum',
+        'tenant_id': 'str',
+        'publish_at': 'datetime',
+        'source_type': 'int',
+        'publisher': 'str',
+        'icon_url': 'str',
+        'publishable': 'bool',
+        'sandbox_enable': 'bool',
+        'is_pre_boot': 'bool',
+        'app_extended_info': 'AppExtendedInfo'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'version': 'version',
+        'command_param': 'command_param',
+        'execute_path': 'execute_path',
+        'work_path': 'work_path',
+        'icon_path': 'icon_path',
+        'icon_index': 'icon_index',
+        'description': 'description',
+        'app_group_id': 'app_group_id',
+        'state': 'state',
+        'tenant_id': 'tenant_id',
+        'publish_at': 'publish_at',
+        'source_type': 'source_type',
+        'publisher': 'publisher',
+        'icon_url': 'icon_url',
+        'publishable': 'publishable',
+        'sandbox_enable': 'sandbox_enable',
+        'is_pre_boot': 'is_pre_boot',
+        'app_extended_info': 'app_extended_info'
+    }
+
+    def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, is_pre_boot=None, app_extended_info=None):
+        r"""UploadAppIconRawResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用ID。
+        :type id: str
+        :param name: 应用名称。
+        :type name: str
+        :param version: 应用版本号。
+        :type version: str
+        :param command_param: 启动命令行参数。
+        :type command_param: str
+        :param execute_path: 执行路径。
+        :type execute_path: str
+        :param work_path: 应用工作目录。
+        :type work_path: str
+        :param icon_path: 应用图标的路径。
+        :type icon_path: str
+        :param icon_index: 应用图标的索引。
+        :type icon_index: int
+        :param description: 应用描述。
+        :type description: str
+        :param app_group_id: 应用组标识Id。
+        :type app_group_id: str
+        :param state: 
+        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        :param tenant_id: 所在的租户ID。
+        :type tenant_id: str
+        :param publish_at: 发布时间。
+        :type publish_at: datetime
+        :param source_type: 应用类型： - &#39;1&#39;:系统内置应用 - &#39;2&#39;:镜像应用 - &#39;3&#39;:自定义应用
+        :type source_type: int
+        :param publisher: 应用发布者。
+        :type publisher: str
+        :param icon_url: 图标url。
+        :type icon_url: str
+        :param publishable: 是否可发布应用： - true: 可发布。 - false: 不可发布。
+        :type publishable: bool
+        :param sandbox_enable: 是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
+        :type sandbox_enable: bool
+        :param is_pre_boot: 是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+        :type is_pre_boot: bool
+        :param app_extended_info: 
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        
+        super().__init__()
+
+        self._id = None
+        self._name = None
+        self._version = None
+        self._command_param = None
+        self._execute_path = None
+        self._work_path = None
+        self._icon_path = None
+        self._icon_index = None
+        self._description = None
+        self._app_group_id = None
+        self._state = None
+        self._tenant_id = None
+        self._publish_at = None
+        self._source_type = None
+        self._publisher = None
+        self._icon_url = None
+        self._publishable = None
+        self._sandbox_enable = None
+        self._is_pre_boot = None
+        self._app_extended_info = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if version is not None:
+            self.version = version
+        if command_param is not None:
+            self.command_param = command_param
+        if execute_path is not None:
+            self.execute_path = execute_path
+        if work_path is not None:
+            self.work_path = work_path
+        if icon_path is not None:
+            self.icon_path = icon_path
+        if icon_index is not None:
+            self.icon_index = icon_index
+        if description is not None:
+            self.description = description
+        if app_group_id is not None:
+            self.app_group_id = app_group_id
+        if state is not None:
+            self.state = state
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
+        if publish_at is not None:
+            self.publish_at = publish_at
+        if source_type is not None:
+            self.source_type = source_type
+        if publisher is not None:
+            self.publisher = publisher
+        if icon_url is not None:
+            self.icon_url = icon_url
+        if publishable is not None:
+            self.publishable = publishable
+        if sandbox_enable is not None:
+            self.sandbox_enable = sandbox_enable
+        if is_pre_boot is not None:
+            self.is_pre_boot = is_pre_boot
+        if app_extended_info is not None:
+            self.app_extended_info = app_extended_info
+
+    @property
+    def id(self):
+        r"""Gets the id of this UploadAppIconRawResponse.
+
+        应用ID。
+
+        :return: The id of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this UploadAppIconRawResponse.
+
+        应用ID。
+
+        :param id: The id of this UploadAppIconRawResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        r"""Gets the name of this UploadAppIconRawResponse.
+
+        应用名称。
+
+        :return: The name of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this UploadAppIconRawResponse.
+
+        应用名称。
+
+        :param name: The name of this UploadAppIconRawResponse.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def version(self):
+        r"""Gets the version of this UploadAppIconRawResponse.
+
+        应用版本号。
+
+        :return: The version of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this UploadAppIconRawResponse.
+
+        应用版本号。
+
+        :param version: The version of this UploadAppIconRawResponse.
+        :type version: str
+        """
+        self._version = version
+
+    @property
+    def command_param(self):
+        r"""Gets the command_param of this UploadAppIconRawResponse.
+
+        启动命令行参数。
+
+        :return: The command_param of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._command_param
+
+    @command_param.setter
+    def command_param(self, command_param):
+        r"""Sets the command_param of this UploadAppIconRawResponse.
+
+        启动命令行参数。
+
+        :param command_param: The command_param of this UploadAppIconRawResponse.
+        :type command_param: str
+        """
+        self._command_param = command_param
+
+    @property
+    def execute_path(self):
+        r"""Gets the execute_path of this UploadAppIconRawResponse.
+
+        执行路径。
+
+        :return: The execute_path of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._execute_path
+
+    @execute_path.setter
+    def execute_path(self, execute_path):
+        r"""Sets the execute_path of this UploadAppIconRawResponse.
+
+        执行路径。
+
+        :param execute_path: The execute_path of this UploadAppIconRawResponse.
+        :type execute_path: str
+        """
+        self._execute_path = execute_path
+
+    @property
+    def work_path(self):
+        r"""Gets the work_path of this UploadAppIconRawResponse.
+
+        应用工作目录。
+
+        :return: The work_path of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._work_path
+
+    @work_path.setter
+    def work_path(self, work_path):
+        r"""Sets the work_path of this UploadAppIconRawResponse.
+
+        应用工作目录。
+
+        :param work_path: The work_path of this UploadAppIconRawResponse.
+        :type work_path: str
+        """
+        self._work_path = work_path
+
+    @property
+    def icon_path(self):
+        r"""Gets the icon_path of this UploadAppIconRawResponse.
+
+        应用图标的路径。
+
+        :return: The icon_path of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._icon_path
+
+    @icon_path.setter
+    def icon_path(self, icon_path):
+        r"""Sets the icon_path of this UploadAppIconRawResponse.
+
+        应用图标的路径。
+
+        :param icon_path: The icon_path of this UploadAppIconRawResponse.
+        :type icon_path: str
+        """
+        self._icon_path = icon_path
+
+    @property
+    def icon_index(self):
+        r"""Gets the icon_index of this UploadAppIconRawResponse.
+
+        应用图标的索引。
+
+        :return: The icon_index of this UploadAppIconRawResponse.
+        :rtype: int
+        """
+        return self._icon_index
+
+    @icon_index.setter
+    def icon_index(self, icon_index):
+        r"""Sets the icon_index of this UploadAppIconRawResponse.
+
+        应用图标的索引。
+
+        :param icon_index: The icon_index of this UploadAppIconRawResponse.
+        :type icon_index: int
+        """
+        self._icon_index = icon_index
+
+    @property
+    def description(self):
+        r"""Gets the description of this UploadAppIconRawResponse.
+
+        应用描述。
+
+        :return: The description of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this UploadAppIconRawResponse.
+
+        应用描述。
+
+        :param description: The description of this UploadAppIconRawResponse.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def app_group_id(self):
+        r"""Gets the app_group_id of this UploadAppIconRawResponse.
+
+        应用组标识Id。
+
+        :return: The app_group_id of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._app_group_id
+
+    @app_group_id.setter
+    def app_group_id(self, app_group_id):
+        r"""Sets the app_group_id of this UploadAppIconRawResponse.
+
+        应用组标识Id。
+
+        :param app_group_id: The app_group_id of this UploadAppIconRawResponse.
+        :type app_group_id: str
+        """
+        self._app_group_id = app_group_id
+
+    @property
+    def state(self):
+        r"""Gets the state of this UploadAppIconRawResponse.
+
+        :return: The state of this UploadAppIconRawResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        r"""Sets the state of this UploadAppIconRawResponse.
+
+        :param state: The state of this UploadAppIconRawResponse.
+        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        """
+        self._state = state
+
+    @property
+    def tenant_id(self):
+        r"""Gets the tenant_id of this UploadAppIconRawResponse.
+
+        所在的租户ID。
+
+        :return: The tenant_id of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        r"""Sets the tenant_id of this UploadAppIconRawResponse.
+
+        所在的租户ID。
+
+        :param tenant_id: The tenant_id of this UploadAppIconRawResponse.
+        :type tenant_id: str
+        """
+        self._tenant_id = tenant_id
+
+    @property
+    def publish_at(self):
+        r"""Gets the publish_at of this UploadAppIconRawResponse.
+
+        发布时间。
+
+        :return: The publish_at of this UploadAppIconRawResponse.
+        :rtype: datetime
+        """
+        return self._publish_at
+
+    @publish_at.setter
+    def publish_at(self, publish_at):
+        r"""Sets the publish_at of this UploadAppIconRawResponse.
+
+        发布时间。
+
+        :param publish_at: The publish_at of this UploadAppIconRawResponse.
+        :type publish_at: datetime
+        """
+        self._publish_at = publish_at
+
+    @property
+    def source_type(self):
+        r"""Gets the source_type of this UploadAppIconRawResponse.
+
+        应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
+
+        :return: The source_type of this UploadAppIconRawResponse.
+        :rtype: int
+        """
+        return self._source_type
+
+    @source_type.setter
+    def source_type(self, source_type):
+        r"""Sets the source_type of this UploadAppIconRawResponse.
+
+        应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
+
+        :param source_type: The source_type of this UploadAppIconRawResponse.
+        :type source_type: int
+        """
+        self._source_type = source_type
+
+    @property
+    def publisher(self):
+        r"""Gets the publisher of this UploadAppIconRawResponse.
+
+        应用发布者。
+
+        :return: The publisher of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._publisher
+
+    @publisher.setter
+    def publisher(self, publisher):
+        r"""Sets the publisher of this UploadAppIconRawResponse.
+
+        应用发布者。
+
+        :param publisher: The publisher of this UploadAppIconRawResponse.
+        :type publisher: str
+        """
+        self._publisher = publisher
+
+    @property
+    def icon_url(self):
+        r"""Gets the icon_url of this UploadAppIconRawResponse.
+
+        图标url。
+
+        :return: The icon_url of this UploadAppIconRawResponse.
+        :rtype: str
+        """
+        return self._icon_url
+
+    @icon_url.setter
+    def icon_url(self, icon_url):
+        r"""Sets the icon_url of this UploadAppIconRawResponse.
+
+        图标url。
+
+        :param icon_url: The icon_url of this UploadAppIconRawResponse.
+        :type icon_url: str
+        """
+        self._icon_url = icon_url
+
+    @property
+    def publishable(self):
+        r"""Gets the publishable of this UploadAppIconRawResponse.
+
+        是否可发布应用： - true: 可发布。 - false: 不可发布。
+
+        :return: The publishable of this UploadAppIconRawResponse.
+        :rtype: bool
+        """
+        return self._publishable
+
+    @publishable.setter
+    def publishable(self, publishable):
+        r"""Sets the publishable of this UploadAppIconRawResponse.
+
+        是否可发布应用： - true: 可发布。 - false: 不可发布。
+
+        :param publishable: The publishable of this UploadAppIconRawResponse.
+        :type publishable: bool
+        """
+        self._publishable = publishable
+
+    @property
+    def sandbox_enable(self):
+        r"""Gets the sandbox_enable of this UploadAppIconRawResponse.
+
+        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
+
+        :return: The sandbox_enable of this UploadAppIconRawResponse.
+        :rtype: bool
+        """
+        return self._sandbox_enable
+
+    @sandbox_enable.setter
+    def sandbox_enable(self, sandbox_enable):
+        r"""Sets the sandbox_enable of this UploadAppIconRawResponse.
+
+        是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
+
+        :param sandbox_enable: The sandbox_enable of this UploadAppIconRawResponse.
+        :type sandbox_enable: bool
+        """
+        self._sandbox_enable = sandbox_enable
+
+    @property
+    def is_pre_boot(self):
+        r"""Gets the is_pre_boot of this UploadAppIconRawResponse.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :return: The is_pre_boot of this UploadAppIconRawResponse.
+        :rtype: bool
+        """
+        return self._is_pre_boot
+
+    @is_pre_boot.setter
+    def is_pre_boot(self, is_pre_boot):
+        r"""Sets the is_pre_boot of this UploadAppIconRawResponse.
+
+        是否开启应用预开，取值为： - false: 表示关闭应用预开。 - true: 表示开启应用预开。
+
+        :param is_pre_boot: The is_pre_boot of this UploadAppIconRawResponse.
+        :type is_pre_boot: bool
+        """
+        self._is_pre_boot = is_pre_boot
+
+    @property
+    def app_extended_info(self):
+        r"""Gets the app_extended_info of this UploadAppIconRawResponse.
+
+        :return: The app_extended_info of this UploadAppIconRawResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        return self._app_extended_info
+
+    @app_extended_info.setter
+    def app_extended_info(self, app_extended_info):
+        r"""Sets the app_extended_info of this UploadAppIconRawResponse.
+
+        :param app_extended_info: The app_extended_info of this UploadAppIconRawResponse.
+        :type app_extended_info: :class:`huaweicloudsdkworkspaceapp.v1.AppExtendedInfo`
+        """
+        self._app_extended_info = app_extended_info
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("UploadAppIconRawResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UploadAppIconRawResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

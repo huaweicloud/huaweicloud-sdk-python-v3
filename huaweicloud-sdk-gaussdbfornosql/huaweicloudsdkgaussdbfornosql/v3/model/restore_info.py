@@ -31,11 +31,11 @@ class RestoreInfo:
 
         The model defined in huaweicloud sdk
 
-        :param backup_id: 备份文件ID。  用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        :param backup_id: **参数解释：** 全量备份文件ID。 **约束限制：** 用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type backup_id: str
-        :param source_instance_id: 数据恢复参考的指定实例的ID。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        :param source_instance_id: **参数解释：** 数据恢复参考的指定实例的ID。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type source_instance_id: str
-        :param restore_time: 数据恢复的指定的时间点。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。取值为UTC 13位毫秒数，可通过[查询实例可恢复的时间段]接口进行查询。
+        :param restore_time: **参数解释：** 数据恢复的指定的时间点。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 取值为UTC 13位毫秒数，可通过查询实例可恢复的时间段 - QueryingtheTimeWindowWhenaBackupCanBeRestored接口进行查询。 **默认取值：** 不涉及。
         :type restore_time: int
         """
         
@@ -57,7 +57,7 @@ class RestoreInfo:
     def backup_id(self):
         r"""Gets the backup_id of this RestoreInfo.
 
-        备份文件ID。  用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        **参数解释：** 全量备份文件ID。 **约束限制：** 用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The backup_id of this RestoreInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class RestoreInfo:
     def backup_id(self, backup_id):
         r"""Sets the backup_id of this RestoreInfo.
 
-        备份文件ID。  用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        **参数解释：** 全量备份文件ID。 **约束限制：** 用于根据指定备份恢复数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param backup_id: The backup_id of this RestoreInfo.
         :type backup_id: str
@@ -79,7 +79,7 @@ class RestoreInfo:
     def source_instance_id(self):
         r"""Gets the source_instance_id of this RestoreInfo.
 
-        数据恢复参考的指定实例的ID。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        **参数解释：** 数据恢复参考的指定实例的ID。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The source_instance_id of this RestoreInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class RestoreInfo:
     def source_instance_id(self, source_instance_id):
         r"""Sets the source_instance_id of this RestoreInfo.
 
-        数据恢复参考的指定实例的ID。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。
+        **参数解释：** 数据恢复参考的指定实例的ID。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param source_instance_id: The source_instance_id of this RestoreInfo.
         :type source_instance_id: str
@@ -101,7 +101,7 @@ class RestoreInfo:
     def restore_time(self):
         r"""Gets the restore_time of this RestoreInfo.
 
-        数据恢复的指定的时间点。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。取值为UTC 13位毫秒数，可通过[查询实例可恢复的时间段]接口进行查询。
+        **参数解释：** 数据恢复的指定的时间点。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 取值为UTC 13位毫秒数，可通过查询实例可恢复的时间段 - QueryingtheTimeWindowWhenaBackupCanBeRestored接口进行查询。 **默认取值：** 不涉及。
 
         :return: The restore_time of this RestoreInfo.
         :rtype: int
@@ -112,7 +112,7 @@ class RestoreInfo:
     def restore_time(self, restore_time):
         r"""Sets the restore_time of this RestoreInfo.
 
-        数据恢复的指定的时间点。  用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。取值为UTC 13位毫秒数，可通过[查询实例可恢复的时间段]接口进行查询。
+        **参数解释：** 数据恢复的指定的时间点。 **约束限制：** 用于恢复指定实例的指定时间点的数据到一个新创建的实例的场景，此场景下该字段取值不能为空。 **取值范围：** 取值为UTC 13位毫秒数，可通过查询实例可恢复的时间段 - QueryingtheTimeWindowWhenaBackupCanBeRestored接口进行查询。 **默认取值：** 不涉及。
 
         :param restore_time: The restore_time of this RestoreInfo.
         :type restore_time: int

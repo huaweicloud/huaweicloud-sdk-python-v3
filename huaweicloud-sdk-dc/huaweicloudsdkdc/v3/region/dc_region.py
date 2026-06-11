@@ -54,6 +54,16 @@ class DcRegion:
                         "https://dcaas.eu-west-101.myhuaweicloud.com")
     EU_WEST_0 = Region("eu-west-0",
                         "https://dcaas.eu-west-0.myhuaweicloud.com")
+    CN_NORTH_11 = Region("cn-north-11",
+                        "https://dcaas.cn-north-11.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://dcaas.cn-southwest-3.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://dcaas.cn-east-4.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://dcaas.cn-north-12.myhuaweicloud.com")
+    CN_EAST_5 = Region("cn-east-5",
+                        "https://dcaas.cn-east-5.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -80,6 +90,11 @@ class DcRegion:
         "my-kualalumpur-1": MY_KUALALUMPUR_1,
         "eu-west-101": EU_WEST_101,
         "eu-west-0": EU_WEST_0,
+        "cn-north-11": CN_NORTH_11,
+        "cn-southwest-3": CN_SOUTHWEST_3,
+        "cn-east-4": CN_EAST_4,
+        "cn-north-12": CN_NORTH_12,
+        "cn-east-5": CN_EAST_5,
     }
 
     @classmethod

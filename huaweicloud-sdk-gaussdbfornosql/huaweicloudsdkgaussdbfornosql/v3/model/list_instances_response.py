@@ -30,9 +30,9 @@ class ListInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例信息。
+        :param instances: **参数解释：** 实例信息。 **取值范围：** 不涉及。
         :type instances: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesResult`]
-        :param total_count: 总记录数。
+        :param total_count: **参数解释：** 总记录数。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -51,7 +51,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListInstancesResponse.
 
-        实例信息。
+        **参数解释：** 实例信息。 **取值范围：** 不涉及。
 
         :return: The instances of this ListInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesResult`]
@@ -62,7 +62,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListInstancesResponse.
 
-        实例信息。
+        **参数解释：** 实例信息。 **取值范围：** 不涉及。
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesResult`]
@@ -73,7 +73,7 @@ class ListInstancesResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListInstancesResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ListInstancesResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListInstancesResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListInstancesResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ListInstancesResponse.
         :type total_count: int

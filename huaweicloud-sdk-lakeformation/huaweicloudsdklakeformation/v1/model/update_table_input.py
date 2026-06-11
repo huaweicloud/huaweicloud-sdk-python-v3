@@ -1,0 +1,626 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpdateTableInput:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'table_name': 'str',
+        'table_format': 'str',
+        'table_type': 'str',
+        'owner': 'str',
+        'owner_type': 'str',
+        'create_time': 'datetime',
+        'last_access_time': 'datetime',
+        'last_analyzed_time': 'datetime',
+        'partition_keys': 'list[Column]',
+        'retention': 'int',
+        'storage_descriptor': 'StorageDescriptor',
+        'parameters': 'dict(str, str)',
+        'comments': 'str',
+        'view_expanded_text': 'str',
+        'view_original_text': 'str',
+        'ignore_obs_checked': 'bool',
+        'external_table_id': 'str',
+        'data_statistic_enable': 'bool',
+        'version_id': 'str'
+    }
+
+    attribute_map = {
+        'table_name': 'table_name',
+        'table_format': 'table_format',
+        'table_type': 'table_type',
+        'owner': 'owner',
+        'owner_type': 'owner_type',
+        'create_time': 'create_time',
+        'last_access_time': 'last_access_time',
+        'last_analyzed_time': 'last_analyzed_time',
+        'partition_keys': 'partition_keys',
+        'retention': 'retention',
+        'storage_descriptor': 'storage_descriptor',
+        'parameters': 'parameters',
+        'comments': 'comments',
+        'view_expanded_text': 'view_expanded_text',
+        'view_original_text': 'view_original_text',
+        'ignore_obs_checked': 'ignore_obs_checked',
+        'external_table_id': 'external_table_id',
+        'data_statistic_enable': 'data_statistic_enable',
+        'version_id': 'version_id'
+    }
+
+    def __init__(self, table_name=None, table_format=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None, ignore_obs_checked=None, external_table_id=None, data_statistic_enable=None, version_id=None):
+        r"""UpdateTableInput
+
+        The model defined in huaweicloud sdk
+
+        :param table_name: 表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
+        :type table_name: str
+        :param table_format: 表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+        :type table_format: str
+        :param table_type: 表类型：MANAGED_TABLE-内表、EXTERNAL_TABLE-外表、VIRTUAL_VIEW-视图、MATERIALIZED_VIEW-物化视图、DICTIONARY_TABLE字典表，LAKE_TABLE内表。
+        :type table_type: str
+        :param owner: 表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
+        :type owner: str
+        :param owner_type: 所有者类型：USER-用户、GROUP-组、ROLE-角色。
+        :type owner_type: str
+        :param create_time: 表创建时间。
+        :type create_time: datetime
+        :param last_access_time: 最近一次访问时间。
+        :type last_access_time: datetime
+        :param last_analyzed_time: 最近一次分析统计时间。
+        :type last_analyzed_time: datetime
+        :param partition_keys: 分区列的信息。
+        :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        :param retention: 表保留时间。
+        :type retention: int
+        :param storage_descriptor: 
+        :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
+        :param parameters: 表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 10000 个字节
+        :type parameters: dict(str, str)
+        :param comments: 表描述信息。由用户创建表时输入，最大长度为4000个字符。
+        :type comments: str
+        :param view_expanded_text: 如果表是视图，则为视图的扩展文本。
+        :type view_expanded_text: str
+        :param view_original_text: 如果表是视图，则为视图的原始文本。
+        :type view_original_text: str
+        :param ignore_obs_checked: 是否忽略内表建表时对Obs路径的限制。
+        :type ignore_obs_checked: bool
+        :param external_table_id: 用户端表id，创建时指定，不可修改。
+        :type external_table_id: str
+        :param data_statistic_enable: 数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态。例如：table与所属database开关同时打开，则数据概况统计开启。否则关闭
+        :type data_statistic_enable: bool
+        :param version_id: 版本ID，可在修改时传入，默认为最新版本
+        :type version_id: str
+        """
+        
+        
+
+        self._table_name = None
+        self._table_format = None
+        self._table_type = None
+        self._owner = None
+        self._owner_type = None
+        self._create_time = None
+        self._last_access_time = None
+        self._last_analyzed_time = None
+        self._partition_keys = None
+        self._retention = None
+        self._storage_descriptor = None
+        self._parameters = None
+        self._comments = None
+        self._view_expanded_text = None
+        self._view_original_text = None
+        self._ignore_obs_checked = None
+        self._external_table_id = None
+        self._data_statistic_enable = None
+        self._version_id = None
+        self.discriminator = None
+
+        if table_name is not None:
+            self.table_name = table_name
+        if table_format is not None:
+            self.table_format = table_format
+        if table_type is not None:
+            self.table_type = table_type
+        if owner is not None:
+            self.owner = owner
+        if owner_type is not None:
+            self.owner_type = owner_type
+        if create_time is not None:
+            self.create_time = create_time
+        if last_access_time is not None:
+            self.last_access_time = last_access_time
+        if last_analyzed_time is not None:
+            self.last_analyzed_time = last_analyzed_time
+        if partition_keys is not None:
+            self.partition_keys = partition_keys
+        if retention is not None:
+            self.retention = retention
+        if storage_descriptor is not None:
+            self.storage_descriptor = storage_descriptor
+        if parameters is not None:
+            self.parameters = parameters
+        if comments is not None:
+            self.comments = comments
+        if view_expanded_text is not None:
+            self.view_expanded_text = view_expanded_text
+        if view_original_text is not None:
+            self.view_original_text = view_original_text
+        if ignore_obs_checked is not None:
+            self.ignore_obs_checked = ignore_obs_checked
+        if external_table_id is not None:
+            self.external_table_id = external_table_id
+        if data_statistic_enable is not None:
+            self.data_statistic_enable = data_statistic_enable
+        if version_id is not None:
+            self.version_id = version_id
+
+    @property
+    def table_name(self):
+        r"""Gets the table_name of this UpdateTableInput.
+
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
+
+        :return: The table_name of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._table_name
+
+    @table_name.setter
+    def table_name(self, table_name):
+        r"""Sets the table_name of this UpdateTableInput.
+
+        表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
+
+        :param table_name: The table_name of this UpdateTableInput.
+        :type table_name: str
+        """
+        self._table_name = table_name
+
+    @property
+    def table_format(self):
+        r"""Gets the table_format of this UpdateTableInput.
+
+        表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+
+        :return: The table_format of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._table_format
+
+    @table_format.setter
+    def table_format(self, table_format):
+        r"""Sets the table_format of this UpdateTableInput.
+
+        表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+
+        :param table_format: The table_format of this UpdateTableInput.
+        :type table_format: str
+        """
+        self._table_format = table_format
+
+    @property
+    def table_type(self):
+        r"""Gets the table_type of this UpdateTableInput.
+
+        表类型：MANAGED_TABLE-内表、EXTERNAL_TABLE-外表、VIRTUAL_VIEW-视图、MATERIALIZED_VIEW-物化视图、DICTIONARY_TABLE字典表，LAKE_TABLE内表。
+
+        :return: The table_type of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._table_type
+
+    @table_type.setter
+    def table_type(self, table_type):
+        r"""Sets the table_type of this UpdateTableInput.
+
+        表类型：MANAGED_TABLE-内表、EXTERNAL_TABLE-外表、VIRTUAL_VIEW-视图、MATERIALIZED_VIEW-物化视图、DICTIONARY_TABLE字典表，LAKE_TABLE内表。
+
+        :param table_type: The table_type of this UpdateTableInput.
+        :type table_type: str
+        """
+        self._table_type = table_type
+
+    @property
+    def owner(self):
+        r"""Gets the owner of this UpdateTableInput.
+
+        表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
+
+        :return: The owner of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        r"""Sets the owner of this UpdateTableInput.
+
+        表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
+
+        :param owner: The owner of this UpdateTableInput.
+        :type owner: str
+        """
+        self._owner = owner
+
+    @property
+    def owner_type(self):
+        r"""Gets the owner_type of this UpdateTableInput.
+
+        所有者类型：USER-用户、GROUP-组、ROLE-角色。
+
+        :return: The owner_type of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._owner_type
+
+    @owner_type.setter
+    def owner_type(self, owner_type):
+        r"""Sets the owner_type of this UpdateTableInput.
+
+        所有者类型：USER-用户、GROUP-组、ROLE-角色。
+
+        :param owner_type: The owner_type of this UpdateTableInput.
+        :type owner_type: str
+        """
+        self._owner_type = owner_type
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this UpdateTableInput.
+
+        表创建时间。
+
+        :return: The create_time of this UpdateTableInput.
+        :rtype: datetime
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this UpdateTableInput.
+
+        表创建时间。
+
+        :param create_time: The create_time of this UpdateTableInput.
+        :type create_time: datetime
+        """
+        self._create_time = create_time
+
+    @property
+    def last_access_time(self):
+        r"""Gets the last_access_time of this UpdateTableInput.
+
+        最近一次访问时间。
+
+        :return: The last_access_time of this UpdateTableInput.
+        :rtype: datetime
+        """
+        return self._last_access_time
+
+    @last_access_time.setter
+    def last_access_time(self, last_access_time):
+        r"""Sets the last_access_time of this UpdateTableInput.
+
+        最近一次访问时间。
+
+        :param last_access_time: The last_access_time of this UpdateTableInput.
+        :type last_access_time: datetime
+        """
+        self._last_access_time = last_access_time
+
+    @property
+    def last_analyzed_time(self):
+        r"""Gets the last_analyzed_time of this UpdateTableInput.
+
+        最近一次分析统计时间。
+
+        :return: The last_analyzed_time of this UpdateTableInput.
+        :rtype: datetime
+        """
+        return self._last_analyzed_time
+
+    @last_analyzed_time.setter
+    def last_analyzed_time(self, last_analyzed_time):
+        r"""Sets the last_analyzed_time of this UpdateTableInput.
+
+        最近一次分析统计时间。
+
+        :param last_analyzed_time: The last_analyzed_time of this UpdateTableInput.
+        :type last_analyzed_time: datetime
+        """
+        self._last_analyzed_time = last_analyzed_time
+
+    @property
+    def partition_keys(self):
+        r"""Gets the partition_keys of this UpdateTableInput.
+
+        分区列的信息。
+
+        :return: The partition_keys of this UpdateTableInput.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        return self._partition_keys
+
+    @partition_keys.setter
+    def partition_keys(self, partition_keys):
+        r"""Sets the partition_keys of this UpdateTableInput.
+
+        分区列的信息。
+
+        :param partition_keys: The partition_keys of this UpdateTableInput.
+        :type partition_keys: list[:class:`huaweicloudsdklakeformation.v1.Column`]
+        """
+        self._partition_keys = partition_keys
+
+    @property
+    def retention(self):
+        r"""Gets the retention of this UpdateTableInput.
+
+        表保留时间。
+
+        :return: The retention of this UpdateTableInput.
+        :rtype: int
+        """
+        return self._retention
+
+    @retention.setter
+    def retention(self, retention):
+        r"""Sets the retention of this UpdateTableInput.
+
+        表保留时间。
+
+        :param retention: The retention of this UpdateTableInput.
+        :type retention: int
+        """
+        self._retention = retention
+
+    @property
+    def storage_descriptor(self):
+        r"""Gets the storage_descriptor of this UpdateTableInput.
+
+        :return: The storage_descriptor of this UpdateTableInput.
+        :rtype: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
+        """
+        return self._storage_descriptor
+
+    @storage_descriptor.setter
+    def storage_descriptor(self, storage_descriptor):
+        r"""Sets the storage_descriptor of this UpdateTableInput.
+
+        :param storage_descriptor: The storage_descriptor of this UpdateTableInput.
+        :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
+        """
+        self._storage_descriptor = storage_descriptor
+
+    @property
+    def parameters(self):
+        r"""Gets the parameters of this UpdateTableInput.
+
+        表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 10000 个字节
+
+        :return: The parameters of this UpdateTableInput.
+        :rtype: dict(str, str)
+        """
+        return self._parameters
+
+    @parameters.setter
+    def parameters(self, parameters):
+        r"""Sets the parameters of this UpdateTableInput.
+
+        表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 10000 个字节
+
+        :param parameters: The parameters of this UpdateTableInput.
+        :type parameters: dict(str, str)
+        """
+        self._parameters = parameters
+
+    @property
+    def comments(self):
+        r"""Gets the comments of this UpdateTableInput.
+
+        表描述信息。由用户创建表时输入，最大长度为4000个字符。
+
+        :return: The comments of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._comments
+
+    @comments.setter
+    def comments(self, comments):
+        r"""Sets the comments of this UpdateTableInput.
+
+        表描述信息。由用户创建表时输入，最大长度为4000个字符。
+
+        :param comments: The comments of this UpdateTableInput.
+        :type comments: str
+        """
+        self._comments = comments
+
+    @property
+    def view_expanded_text(self):
+        r"""Gets the view_expanded_text of this UpdateTableInput.
+
+        如果表是视图，则为视图的扩展文本。
+
+        :return: The view_expanded_text of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._view_expanded_text
+
+    @view_expanded_text.setter
+    def view_expanded_text(self, view_expanded_text):
+        r"""Sets the view_expanded_text of this UpdateTableInput.
+
+        如果表是视图，则为视图的扩展文本。
+
+        :param view_expanded_text: The view_expanded_text of this UpdateTableInput.
+        :type view_expanded_text: str
+        """
+        self._view_expanded_text = view_expanded_text
+
+    @property
+    def view_original_text(self):
+        r"""Gets the view_original_text of this UpdateTableInput.
+
+        如果表是视图，则为视图的原始文本。
+
+        :return: The view_original_text of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._view_original_text
+
+    @view_original_text.setter
+    def view_original_text(self, view_original_text):
+        r"""Sets the view_original_text of this UpdateTableInput.
+
+        如果表是视图，则为视图的原始文本。
+
+        :param view_original_text: The view_original_text of this UpdateTableInput.
+        :type view_original_text: str
+        """
+        self._view_original_text = view_original_text
+
+    @property
+    def ignore_obs_checked(self):
+        r"""Gets the ignore_obs_checked of this UpdateTableInput.
+
+        是否忽略内表建表时对Obs路径的限制。
+
+        :return: The ignore_obs_checked of this UpdateTableInput.
+        :rtype: bool
+        """
+        return self._ignore_obs_checked
+
+    @ignore_obs_checked.setter
+    def ignore_obs_checked(self, ignore_obs_checked):
+        r"""Sets the ignore_obs_checked of this UpdateTableInput.
+
+        是否忽略内表建表时对Obs路径的限制。
+
+        :param ignore_obs_checked: The ignore_obs_checked of this UpdateTableInput.
+        :type ignore_obs_checked: bool
+        """
+        self._ignore_obs_checked = ignore_obs_checked
+
+    @property
+    def external_table_id(self):
+        r"""Gets the external_table_id of this UpdateTableInput.
+
+        用户端表id，创建时指定，不可修改。
+
+        :return: The external_table_id of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._external_table_id
+
+    @external_table_id.setter
+    def external_table_id(self, external_table_id):
+        r"""Sets the external_table_id of this UpdateTableInput.
+
+        用户端表id，创建时指定，不可修改。
+
+        :param external_table_id: The external_table_id of this UpdateTableInput.
+        :type external_table_id: str
+        """
+        self._external_table_id = external_table_id
+
+    @property
+    def data_statistic_enable(self):
+        r"""Gets the data_statistic_enable of this UpdateTableInput.
+
+        数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态。例如：table与所属database开关同时打开，则数据概况统计开启。否则关闭
+
+        :return: The data_statistic_enable of this UpdateTableInput.
+        :rtype: bool
+        """
+        return self._data_statistic_enable
+
+    @data_statistic_enable.setter
+    def data_statistic_enable(self, data_statistic_enable):
+        r"""Sets the data_statistic_enable of this UpdateTableInput.
+
+        数据概况统计开关。默认状态为开，修改table开关状态后，还需检查所属database的开关状态。例如：table与所属database开关同时打开，则数据概况统计开启。否则关闭
+
+        :param data_statistic_enable: The data_statistic_enable of this UpdateTableInput.
+        :type data_statistic_enable: bool
+        """
+        self._data_statistic_enable = data_statistic_enable
+
+    @property
+    def version_id(self):
+        r"""Gets the version_id of this UpdateTableInput.
+
+        版本ID，可在修改时传入，默认为最新版本
+
+        :return: The version_id of this UpdateTableInput.
+        :rtype: str
+        """
+        return self._version_id
+
+    @version_id.setter
+    def version_id(self, version_id):
+        r"""Sets the version_id of this UpdateTableInput.
+
+        版本ID，可在修改时传入，默认为最新版本
+
+        :param version_id: The version_id of this UpdateTableInput.
+        :type version_id: str
+        """
+        self._version_id = version_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpdateTableInput):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

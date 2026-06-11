@@ -18,17 +18,23 @@ class EventWhiteRuleListRequestInfo:
         'event_type': 'int',
         'field_key': 'str',
         'field_value': 'str',
-        'judge_type': 'str'
+        'judge_type': 'str',
+        'scope': 'bool',
+        'agent_ids': 'list[str]',
+        'instance_ids': 'list[str]'
     }
 
     attribute_map = {
         'event_type': 'event_type',
         'field_key': 'field_key',
         'field_value': 'field_value',
-        'judge_type': 'judge_type'
+        'judge_type': 'judge_type',
+        'scope': 'scope',
+        'agent_ids': 'agent_ids',
+        'instance_ids': 'instance_ids'
     }
 
-    def __init__(self, event_type=None, field_key=None, field_value=None, judge_type=None):
+    def __init__(self, event_type=None, field_key=None, field_value=None, judge_type=None, scope=None, agent_ids=None, instance_ids=None):
         r"""EventWhiteRuleListRequestInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +47,12 @@ class EventWhiteRuleListRequestInfo:
         :type field_value: str
         :param judge_type: **参数解释**： 通配符 **取值范围**: - equal：相等。 - contain：包含。 
         :type judge_type: str
+        :param scope: **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+        :type scope: bool
+        :param agent_ids: **参数解释**: agent列表 **约束限制**: 不涉及 **取值范围**: 1-1000个agentID **默认取值**: 不涉及 
+        :type agent_ids: list[str]
+        :param instance_ids: **参数解释**: 实例ID列表 **约束限制**: 当需要为serverless配置规则时，传入此字段 **取值范围**: 1-1000个实例ID 
+        :type instance_ids: list[str]
         """
         
         
@@ -49,12 +61,21 @@ class EventWhiteRuleListRequestInfo:
         self._field_key = None
         self._field_value = None
         self._judge_type = None
+        self._scope = None
+        self._agent_ids = None
+        self._instance_ids = None
         self.discriminator = None
 
         self.event_type = event_type
         self.field_key = field_key
         self.field_value = field_value
         self.judge_type = judge_type
+        if scope is not None:
+            self.scope = scope
+        if agent_ids is not None:
+            self.agent_ids = agent_ids
+        if instance_ids is not None:
+            self.instance_ids = instance_ids
 
     @property
     def event_type(self):
@@ -143,6 +164,72 @@ class EventWhiteRuleListRequestInfo:
         :type judge_type: str
         """
         self._judge_type = judge_type
+
+    @property
+    def scope(self):
+        r"""Gets the scope of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+
+        :return: The scope of this EventWhiteRuleListRequestInfo.
+        :rtype: bool
+        """
+        return self._scope
+
+    @scope.setter
+    def scope(self, scope):
+        r"""Sets the scope of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: 是否选择所有主机 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否 **默认取值**: false 
+
+        :param scope: The scope of this EventWhiteRuleListRequestInfo.
+        :type scope: bool
+        """
+        self._scope = scope
+
+    @property
+    def agent_ids(self):
+        r"""Gets the agent_ids of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: agent列表 **约束限制**: 不涉及 **取值范围**: 1-1000个agentID **默认取值**: 不涉及 
+
+        :return: The agent_ids of this EventWhiteRuleListRequestInfo.
+        :rtype: list[str]
+        """
+        return self._agent_ids
+
+    @agent_ids.setter
+    def agent_ids(self, agent_ids):
+        r"""Sets the agent_ids of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: agent列表 **约束限制**: 不涉及 **取值范围**: 1-1000个agentID **默认取值**: 不涉及 
+
+        :param agent_ids: The agent_ids of this EventWhiteRuleListRequestInfo.
+        :type agent_ids: list[str]
+        """
+        self._agent_ids = agent_ids
+
+    @property
+    def instance_ids(self):
+        r"""Gets the instance_ids of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: 实例ID列表 **约束限制**: 当需要为serverless配置规则时，传入此字段 **取值范围**: 1-1000个实例ID 
+
+        :return: The instance_ids of this EventWhiteRuleListRequestInfo.
+        :rtype: list[str]
+        """
+        return self._instance_ids
+
+    @instance_ids.setter
+    def instance_ids(self, instance_ids):
+        r"""Sets the instance_ids of this EventWhiteRuleListRequestInfo.
+
+        **参数解释**: 实例ID列表 **约束限制**: 当需要为serverless配置规则时，传入此字段 **取值范围**: 1-1000个实例ID 
+
+        :param instance_ids: The instance_ids of this EventWhiteRuleListRequestInfo.
+        :type instance_ids: list[str]
+        """
+        self._instance_ids = instance_ids
 
     def to_dict(self):
         result = {}

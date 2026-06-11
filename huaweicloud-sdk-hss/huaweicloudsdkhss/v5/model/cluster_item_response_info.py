@@ -19,6 +19,7 @@ class ClusterItemResponseInfo:
         'cluster_name': 'str',
         'cluster_ns': 'list[str]',
         'cluster_labels': 'list[str]',
+        'cluster_type': 'str',
         'protect_status': 'str'
     }
 
@@ -27,10 +28,11 @@ class ClusterItemResponseInfo:
         'cluster_name': 'cluster_name',
         'cluster_ns': 'cluster_ns',
         'cluster_labels': 'cluster_labels',
+        'cluster_type': 'cluster_type',
         'protect_status': 'protect_status'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, cluster_ns=None, cluster_labels=None, protect_status=None):
+    def __init__(self, cluster_id=None, cluster_name=None, cluster_ns=None, cluster_labels=None, cluster_type=None, protect_status=None):
         r"""ClusterItemResponseInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ClusterItemResponseInfo:
         :type cluster_ns: list[str]
         :param cluster_labels: 集群标签
         :type cluster_labels: list[str]
+        :param cluster_type: **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
+        :type cluster_type: str
         :param protect_status: **参数解释**： 集群防护状态 **取值范围**: - unprotected：未受保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 - installing：正在安装。 
         :type protect_status: str
         """
@@ -53,6 +57,7 @@ class ClusterItemResponseInfo:
         self._cluster_name = None
         self._cluster_ns = None
         self._cluster_labels = None
+        self._cluster_type = None
         self._protect_status = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class ClusterItemResponseInfo:
             self.cluster_ns = cluster_ns
         if cluster_labels is not None:
             self.cluster_labels = cluster_labels
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
         if protect_status is not None:
             self.protect_status = protect_status
 
@@ -154,6 +161,28 @@ class ClusterItemResponseInfo:
         :type cluster_labels: list[str]
         """
         self._cluster_labels = cluster_labels
+
+    @property
+    def cluster_type(self):
+        r"""Gets the cluster_type of this ClusterItemResponseInfo.
+
+        **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
+
+        :return: The cluster_type of this ClusterItemResponseInfo.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        r"""Sets the cluster_type of this ClusterItemResponseInfo.
+
+        **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
+
+        :param cluster_type: The cluster_type of this ClusterItemResponseInfo.
+        :type cluster_type: str
+        """
+        self._cluster_type = cluster_type
 
     @property
     def protect_status(self):

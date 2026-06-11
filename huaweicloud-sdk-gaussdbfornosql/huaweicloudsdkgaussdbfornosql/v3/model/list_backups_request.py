@@ -43,23 +43,23 @@ class ListBackupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 参数解释： 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
-        :param datastore_type: 参数解释： 数据库类型。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值：  - cassandra  - redis  - mongodb  - influxdb
+        :param datastore_type: **参数解释：** 数据库类型。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：**  - cassandra  - redis  - mongodb  - influxdb
         :type datastore_type: str
         :param backup_id: 备份ID。
         :type backup_id: str
-        :param backup_type: 参数解释： 备份类型，大小写敏感。 约束限制： 不涉及。 取值范围：  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 默认取值： 不涉及。
+        :param backup_type: **参数解释：** 备份类型，大小写敏感。 **约束限制：** 不涉及。 **取值范围：**  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 **默认取值：** 不涉及。
         :type backup_type: str
-        :param type: 参数解释： 备份策略类型。 约束限制： 不涉及。 取值范围：  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 默认取值：  Instance。
+        :param type: **参数解释：** 备份策略类型。 **约束限制：** 不涉及。 **取值范围：**  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 **默认取值：**  Instance。
         :type type: str
-        :param limit: 参数解释： 查询备份个数上限值。 约束限制： 不涉及。 取值范围： 1~100。 默认取值： 不传该参数时，默认查询前100条实例信息。
+        :param limit: **参数解释：** 查询备份个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 不传该参数时，默认查询前100条实例信息。
         :type limit: int
-        :param offset: 参数解释： 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 约束限制： 取值大于或等于0。 取值范围： 取值大于或等于0。 默认取值： 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
+        :param offset: **参数解释：** 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 **约束限制：** 取值大于或等于0。 **取值范围：** 取值大于或等于0。 **默认取值：** 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
         :type offset: int
-        :param begin_time: 参数解释： 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “end_time”有值时，“begin_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        :param begin_time: **参数解释：** 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “end_time”有值时，“begin_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
         :type begin_time: str
-        :param end_time: 参数解释： 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “begin_time”有值时，“end_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        :param end_time: **参数解释：** 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “begin_time”有值时，“end_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
         :type end_time: str
         """
         
@@ -99,7 +99,7 @@ class ListBackupsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListBackupsRequest.
 
-        参数解释： 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this ListBackupsRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListBackupsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListBackupsRequest.
 
-        参数解释： 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值： 不涉及。
+        **参数解释：** 实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this ListBackupsRequest.
         :type instance_id: str
@@ -121,7 +121,7 @@ class ListBackupsRequest:
     def datastore_type(self):
         r"""Gets the datastore_type of this ListBackupsRequest.
 
-        参数解释： 数据库类型。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值：  - cassandra  - redis  - mongodb  - influxdb
+        **参数解释：** 数据库类型。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：**  - cassandra  - redis  - mongodb  - influxdb
 
         :return: The datastore_type of this ListBackupsRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListBackupsRequest:
     def datastore_type(self, datastore_type):
         r"""Sets the datastore_type of this ListBackupsRequest.
 
-        参数解释： 数据库类型。 约束限制： 不涉及。 取值范围： 不涉及。 默认取值：  - cassandra  - redis  - mongodb  - influxdb
+        **参数解释：** 数据库类型。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：**  - cassandra  - redis  - mongodb  - influxdb
 
         :param datastore_type: The datastore_type of this ListBackupsRequest.
         :type datastore_type: str
@@ -165,7 +165,7 @@ class ListBackupsRequest:
     def backup_type(self):
         r"""Gets the backup_type of this ListBackupsRequest.
 
-        参数解释： 备份类型，大小写敏感。 约束限制： 不涉及。 取值范围：  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 默认取值： 不涉及。
+        **参数解释：** 备份类型，大小写敏感。 **约束限制：** 不涉及。 **取值范围：**  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 **默认取值：** 不涉及。
 
         :return: The backup_type of this ListBackupsRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ListBackupsRequest:
     def backup_type(self, backup_type):
         r"""Sets the backup_type of this ListBackupsRequest.
 
-        参数解释： 备份类型，大小写敏感。 约束限制： 不涉及。 取值范围：  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 默认取值： 不涉及。
+        **参数解释：** 备份类型，大小写敏感。 **约束限制：** 不涉及。 **取值范围：**  - 取值为“Auto”，表示自动全量备份。  - 取值为“Manual”，表示手动全量备份。  - 当该字段未传入值时，默认只查询所有的全量备份(包含库表级)，包括自动全备备份和手动全量备份。 **默认取值：** 不涉及。
 
         :param backup_type: The backup_type of this ListBackupsRequest.
         :type backup_type: str
@@ -187,7 +187,7 @@ class ListBackupsRequest:
     def type(self):
         r"""Gets the type of this ListBackupsRequest.
 
-        参数解释： 备份策略类型。 约束限制： 不涉及。 取值范围：  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 默认取值：  Instance。
+        **参数解释：** 备份策略类型。 **约束限制：** 不涉及。 **取值范围：**  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 **默认取值：**  Instance。
 
         :return: The type of this ListBackupsRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ListBackupsRequest:
     def type(self, type):
         r"""Sets the type of this ListBackupsRequest.
 
-        参数解释： 备份策略类型。 约束限制： 不涉及。 取值范围：  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 默认取值：  Instance。
+        **参数解释：** 备份策略类型。 **约束限制：** 不涉及。 **取值范围：**  - Instance 表示查询实例级备份。  - DatabaseTable 表示查询库表级备份。 **默认取值：**  Instance。
 
         :param type: The type of this ListBackupsRequest.
         :type type: str
@@ -209,7 +209,7 @@ class ListBackupsRequest:
     def limit(self):
         r"""Gets the limit of this ListBackupsRequest.
 
-        参数解释： 查询备份个数上限值。 约束限制： 不涉及。 取值范围： 1~100。 默认取值： 不传该参数时，默认查询前100条实例信息。
+        **参数解释：** 查询备份个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 不传该参数时，默认查询前100条实例信息。
 
         :return: The limit of this ListBackupsRequest.
         :rtype: int
@@ -220,7 +220,7 @@ class ListBackupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListBackupsRequest.
 
-        参数解释： 查询备份个数上限值。 约束限制： 不涉及。 取值范围： 1~100。 默认取值： 不传该参数时，默认查询前100条实例信息。
+        **参数解释：** 查询备份个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListBackupsRequest.
         :type limit: int
@@ -231,7 +231,7 @@ class ListBackupsRequest:
     def offset(self):
         r"""Gets the offset of this ListBackupsRequest.
 
-        参数解释： 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 约束限制： 取值大于或等于0。 取值范围： 取值大于或等于0。 默认取值： 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
+        **参数解释：** 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 **约束限制：** 取值大于或等于0。 **取值范围：** 取值大于或等于0。 **默认取值：** 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
 
         :return: The offset of this ListBackupsRequest.
         :rtype: int
@@ -242,7 +242,7 @@ class ListBackupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListBackupsRequest.
 
-        参数解释： 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 约束限制： 取值大于或等于0。 取值范围： 取值大于或等于0。 默认取值： 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
+        **参数解释：** 索引位置偏移量，表示从指定project ID下最新的备份创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的备份信息。 **约束限制：** 取值大于或等于0。 **取值范围：** 取值大于或等于0。 **默认取值：** 不传该参数时，查询偏移量默认为0，表示从最新的备份创建时间对应的备份开始查询。
 
         :param offset: The offset of this ListBackupsRequest.
         :type offset: int
@@ -253,7 +253,7 @@ class ListBackupsRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListBackupsRequest.
 
-        参数解释： 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “end_time”有值时，“begin_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        **参数解释：** 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “end_time”有值时，“begin_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
 
         :return: The begin_time of this ListBackupsRequest.
         :rtype: str
@@ -264,7 +264,7 @@ class ListBackupsRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListBackupsRequest.
 
-        参数解释： 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “end_time”有值时，“begin_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        **参数解释：** 查询备份开始的时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “end_time”有值时，“begin_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
 
         :param begin_time: The begin_time of this ListBackupsRequest.
         :type begin_time: str
@@ -275,7 +275,7 @@ class ListBackupsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListBackupsRequest.
 
-        参数解释： 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “begin_time”有值时，“end_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        **参数解释：** 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “begin_time”有值时，“end_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
 
         :return: The end_time of this ListBackupsRequest.
         :rtype: str
@@ -286,7 +286,7 @@ class ListBackupsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListBackupsRequest.
 
-        参数解释： 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 约束限制： - “begin_time”有值时，“end_time”必选。 取值范围： 不涉及。 默认取值： 默认为空。
+        **参数解释：** 查询备份开始的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。 **约束限制：** - “begin_time”有值时，“end_time”必选。 **取值范围：** 不涉及。 **默认取值：** 默认为空。
 
         :param end_time: The end_time of this ListBackupsRequest.
         :type end_time: str

@@ -19,8 +19,8 @@ class RecycleInstance:
         'name': 'str',
         'mode': 'str',
         'product_type': 'str',
-        'datastore': 'RecycleDatastore',
-        'charge_mode': 'str',
+        'data_store': 'RecycleDatastore',
+        'charge_type': 'str',
         'enterprise_project_id': 'str',
         'backup_id': 'str',
         'created_at': 'str',
@@ -33,8 +33,8 @@ class RecycleInstance:
         'name': 'name',
         'mode': 'mode',
         'product_type': 'product_type',
-        'datastore': 'datastore',
-        'charge_mode': 'charge_mode',
+        'data_store': 'data_store',
+        'charge_type': 'charge_type',
         'enterprise_project_id': 'enterprise_project_id',
         'backup_id': 'backup_id',
         'created_at': 'created_at',
@@ -42,32 +42,32 @@ class RecycleInstance:
         'retained_until': 'retained_until'
     }
 
-    def __init__(self, id=None, name=None, mode=None, product_type=None, datastore=None, charge_mode=None, enterprise_project_id=None, backup_id=None, created_at=None, deleted_at=None, retained_until=None):
+    def __init__(self, id=None, name=None, mode=None, product_type=None, data_store=None, charge_type=None, enterprise_project_id=None, backup_id=None, created_at=None, deleted_at=None, retained_until=None):
         r"""RecycleInstance
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例ID。
+        :param id: **参数解释：** 实例ID。 **取值范围：** 不涉及。
         :type id: str
-        :param name: 实例名称。
+        :param name: **参数解释：** 实例名称。 **取值范围：** 不涉及。
         :type name: str
-        :param mode: 实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        :param mode: **参数解释：** 实例类型。 **取值范围：** - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。 - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。 - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
         :type mode: str
-        :param product_type: 产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        :param product_type: **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
         :type product_type: str
-        :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
-        :param charge_mode: 计费方式。 计费方式。   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
-        :type charge_mode: str
-        :param enterprise_project_id: 企业项目ID，取值为“0”，表示为default企业项目
+        :param data_store: 
+        :type data_store: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
+        :param charge_type: **参数解释：** 计费方式。 **取值范围：** - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。
+        :type charge_type: str
+        :param enterprise_project_id: **参数解释：** 企业项目ID，取值为“0”，表示为default企业项目 **取值范围：** 不涉及。
         :type enterprise_project_id: str
-        :param backup_id: 备份ID。
+        :param backup_id: **参数解释：** 备份ID。 **取值范围：** 不涉及。
         :type backup_id: str
-        :param created_at: 实例创建时间。
+        :param created_at: **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
         :type created_at: str
-        :param deleted_at: 实例删除时间。
+        :param deleted_at: **参数解释：** 实例删除时间。 **取值范围：** 不涉及。
         :type deleted_at: str
-        :param retained_until: 回收备份保留截止时间。
+        :param retained_until: **参数解释：** 回收备份保留截止时间。 **取值范围：** 不涉及。
         :type retained_until: str
         """
         
@@ -77,8 +77,8 @@ class RecycleInstance:
         self._name = None
         self._mode = None
         self._product_type = None
-        self._datastore = None
-        self._charge_mode = None
+        self._data_store = None
+        self._charge_type = None
         self._enterprise_project_id = None
         self._backup_id = None
         self._created_at = None
@@ -94,10 +94,10 @@ class RecycleInstance:
             self.mode = mode
         if product_type is not None:
             self.product_type = product_type
-        if datastore is not None:
-            self.datastore = datastore
-        if charge_mode is not None:
-            self.charge_mode = charge_mode
+        if data_store is not None:
+            self.data_store = data_store
+        if charge_type is not None:
+            self.charge_type = charge_type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if backup_id is not None:
@@ -113,7 +113,7 @@ class RecycleInstance:
     def id(self):
         r"""Gets the id of this RecycleInstance.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :return: The id of this RecycleInstance.
         :rtype: str
@@ -124,7 +124,7 @@ class RecycleInstance:
     def id(self, id):
         r"""Sets the id of this RecycleInstance.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :param id: The id of this RecycleInstance.
         :type id: str
@@ -135,7 +135,7 @@ class RecycleInstance:
     def name(self):
         r"""Gets the name of this RecycleInstance.
 
-        实例名称。
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :return: The name of this RecycleInstance.
         :rtype: str
@@ -146,7 +146,7 @@ class RecycleInstance:
     def name(self, name):
         r"""Sets the name of this RecycleInstance.
 
-        实例名称。
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :param name: The name of this RecycleInstance.
         :type name: str
@@ -157,7 +157,7 @@ class RecycleInstance:
     def mode(self):
         r"""Gets the mode of this RecycleInstance.
 
-        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        **参数解释：** 实例类型。 **取值范围：** - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。 - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。 - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :return: The mode of this RecycleInstance.
         :rtype: str
@@ -168,7 +168,7 @@ class RecycleInstance:
     def mode(self, mode):
         r"""Sets the mode of this RecycleInstance.
 
-        实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        **参数解释：** 实例类型。 **取值范围：** - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。 - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。 - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。 - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。 - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。 - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :param mode: The mode of this RecycleInstance.
         :type mode: str
@@ -179,7 +179,7 @@ class RecycleInstance:
     def product_type(self):
         r"""Gets the product_type of this RecycleInstance.
 
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
         :return: The product_type of this RecycleInstance.
         :rtype: str
@@ -190,7 +190,7 @@ class RecycleInstance:
     def product_type(self, product_type):
         r"""Sets the product_type of this RecycleInstance.
 
-        产品类型。 GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
+        **参数解释：** 产品类型。 **取值范围：** GeminiDB Redis云原生部署模式集群涉及此字段，取值：   -  Standard 标准型   -  Capacity 容量型
 
         :param product_type: The product_type of this RecycleInstance.
         :type product_type: str
@@ -198,50 +198,50 @@ class RecycleInstance:
         self._product_type = product_type
 
     @property
-    def datastore(self):
-        r"""Gets the datastore of this RecycleInstance.
+    def data_store(self):
+        r"""Gets the data_store of this RecycleInstance.
 
-        :return: The datastore of this RecycleInstance.
+        :return: The data_store of this RecycleInstance.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
         """
-        return self._datastore
+        return self._data_store
 
-    @datastore.setter
-    def datastore(self, datastore):
-        r"""Sets the datastore of this RecycleInstance.
+    @data_store.setter
+    def data_store(self, data_store):
+        r"""Sets the data_store of this RecycleInstance.
 
-        :param datastore: The datastore of this RecycleInstance.
-        :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
+        :param data_store: The data_store of this RecycleInstance.
+        :type data_store: :class:`huaweicloudsdkgaussdbfornosql.v3.RecycleDatastore`
         """
-        self._datastore = datastore
+        self._data_store = data_store
 
     @property
-    def charge_mode(self):
-        r"""Gets the charge_mode of this RecycleInstance.
+    def charge_type(self):
+        r"""Gets the charge_type of this RecycleInstance.
 
-        计费方式。 计费方式。   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
+        **参数解释：** 计费方式。 **取值范围：** - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。
 
-        :return: The charge_mode of this RecycleInstance.
+        :return: The charge_type of this RecycleInstance.
         :rtype: str
         """
-        return self._charge_mode
+        return self._charge_type
 
-    @charge_mode.setter
-    def charge_mode(self, charge_mode):
-        r"""Sets the charge_mode of this RecycleInstance.
+    @charge_type.setter
+    def charge_type(self, charge_type):
+        r"""Sets the charge_type of this RecycleInstance.
 
-        计费方式。 计费方式。   - prePaid：预付费，即包年/包月。   - postPaid：后付费，即按需付费。
+        **参数解释：** 计费方式。 **取值范围：** - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。
 
-        :param charge_mode: The charge_mode of this RecycleInstance.
-        :type charge_mode: str
+        :param charge_type: The charge_type of this RecycleInstance.
+        :type charge_type: str
         """
-        self._charge_mode = charge_mode
+        self._charge_type = charge_type
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this RecycleInstance.
 
-        企业项目ID，取值为“0”，表示为default企业项目
+        **参数解释：** 企业项目ID，取值为“0”，表示为default企业项目 **取值范围：** 不涉及。
 
         :return: The enterprise_project_id of this RecycleInstance.
         :rtype: str
@@ -252,7 +252,7 @@ class RecycleInstance:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this RecycleInstance.
 
-        企业项目ID，取值为“0”，表示为default企业项目
+        **参数解释：** 企业项目ID，取值为“0”，表示为default企业项目 **取值范围：** 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this RecycleInstance.
         :type enterprise_project_id: str
@@ -263,7 +263,7 @@ class RecycleInstance:
     def backup_id(self):
         r"""Gets the backup_id of this RecycleInstance.
 
-        备份ID。
+        **参数解释：** 备份ID。 **取值范围：** 不涉及。
 
         :return: The backup_id of this RecycleInstance.
         :rtype: str
@@ -274,7 +274,7 @@ class RecycleInstance:
     def backup_id(self, backup_id):
         r"""Sets the backup_id of this RecycleInstance.
 
-        备份ID。
+        **参数解释：** 备份ID。 **取值范围：** 不涉及。
 
         :param backup_id: The backup_id of this RecycleInstance.
         :type backup_id: str
@@ -285,7 +285,7 @@ class RecycleInstance:
     def created_at(self):
         r"""Gets the created_at of this RecycleInstance.
 
-        实例创建时间。
+        **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
 
         :return: The created_at of this RecycleInstance.
         :rtype: str
@@ -296,7 +296,7 @@ class RecycleInstance:
     def created_at(self, created_at):
         r"""Sets the created_at of this RecycleInstance.
 
-        实例创建时间。
+        **参数解释：** 实例创建时间。 **取值范围：** 不涉及。
 
         :param created_at: The created_at of this RecycleInstance.
         :type created_at: str
@@ -307,7 +307,7 @@ class RecycleInstance:
     def deleted_at(self):
         r"""Gets the deleted_at of this RecycleInstance.
 
-        实例删除时间。
+        **参数解释：** 实例删除时间。 **取值范围：** 不涉及。
 
         :return: The deleted_at of this RecycleInstance.
         :rtype: str
@@ -318,7 +318,7 @@ class RecycleInstance:
     def deleted_at(self, deleted_at):
         r"""Sets the deleted_at of this RecycleInstance.
 
-        实例删除时间。
+        **参数解释：** 实例删除时间。 **取值范围：** 不涉及。
 
         :param deleted_at: The deleted_at of this RecycleInstance.
         :type deleted_at: str
@@ -329,7 +329,7 @@ class RecycleInstance:
     def retained_until(self):
         r"""Gets the retained_until of this RecycleInstance.
 
-        回收备份保留截止时间。
+        **参数解释：** 回收备份保留截止时间。 **取值范围：** 不涉及。
 
         :return: The retained_until of this RecycleInstance.
         :rtype: str
@@ -340,7 +340,7 @@ class RecycleInstance:
     def retained_until(self, retained_until):
         r"""Sets the retained_until of this RecycleInstance.
 
-        回收备份保留截止时间。
+        **参数解释：** 回收备份保留截止时间。 **取值范围：** 不涉及。
 
         :param retained_until: The retained_until of this RecycleInstance.
         :type retained_until: str

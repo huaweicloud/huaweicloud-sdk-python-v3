@@ -58,6 +58,8 @@ class GaussDBforNoSQLRegion:
                         "https://gaussdb-nosql.eu-west-101.myhuaweicloud.eu")
     CN_NORTH_11 = Region("cn-north-11",
                         "https://gaussdb-nosql.cn-north-11.myhuaweicloud.com")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://gaussdb-nosql.ru-moscow-1.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -86,6 +88,7 @@ class GaussDBforNoSQLRegion:
         "cn-north-9": CN_NORTH_9,
         "eu-west-101": EU_WEST_101,
         "cn-north-11": CN_NORTH_11,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ProductInfo:
+class ServerProductInfo:
 
     """
     Attributes:
@@ -38,7 +38,6 @@ class ProductInfo:
         'sub_product_list': 'list[str]',
         'domain_ids': 'list[str]',
         'package_type': 'str',
-        'series_type': 'str',
         'expire_time': 'datetime',
         'support_gpu_type': 'str'
     }
@@ -67,13 +66,12 @@ class ProductInfo:
         'sub_product_list': 'sub_product_list',
         'domain_ids': 'domain_ids',
         'package_type': 'package_type',
-        'series_type': 'series_type',
         'expire_time': 'expire_time',
         'support_gpu_type': 'support_gpu_type'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, sessions=None, status=None, cond_operation_az=None, sub_product_list=None, domain_ids=None, package_type=None, series_type=None, expire_time=None, support_gpu_type=None):
-        r"""ProductInfo
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, sessions=None, status=None, cond_operation_az=None, sub_product_list=None, domain_ids=None, package_type=None, expire_time=None, support_gpu_type=None):
+        r"""ServerProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +79,7 @@ class ProductInfo:
         :type product_id: str
         :param flavor_id: 规格ID。
         :type flavor_id: str
-        :param type: 产品类型。 - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
+        :param type: 产品类型： - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
         :type type: str
         :param architecture: 产品架构，当前仅支持x86。 - x86 - arm
         :type architecture: str
@@ -89,11 +87,11 @@ class ProductInfo:
         :type cpu: str
         :param cpu_desc: CPU描述。
         :type cpu_desc: str
-        :param memory: 内存大小，单位兆：MB。
+        :param memory: 内存大小，单位兆：M。
         :type memory: str
         :param is_gpu: 是否是GPU类型的规格。
         :type is_gpu: bool
-        :param system_disk_type: 系统盘类型。
+        :param system_disk_type: 系统盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
         :type system_disk_type: str
         :param system_disk_size: 系统盘大小。
         :type system_disk_size: str
@@ -105,9 +103,9 @@ class ProductInfo:
         :type charge_mode: str
         :param contain_data_disk: 套餐计费是否包含了数据盘。
         :type contain_data_disk: bool
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
         :type resource_type: str
-        :param cloud_service_type: 云服务类型。
+        :param cloud_service_type: 云服务类型： - hws.service.type.vdi - hws.service.type.marketplace
         :type cloud_service_type: str
         :param volume_product_type: 磁盘产品类型： - workspace
         :type volume_product_type: str
@@ -115,7 +113,7 @@ class ProductInfo:
         :type sessions: int
         :param status: 产品套餐在销售模式下的状态，取值自ECS的cond:operation:status。 不配置时等同于normal在售状态。 * &#x60;normal&#x60; - 正常商用 * &#x60;abandon&#x60; - 下线（即不显示） * &#x60;sellout&#x60; - 售罄 * &#x60;obt&#x60; - 公测 * &#x60;obt_sellout&#x60; - 公测售罄 * &#x60;promotion&#x60; - 推荐(等同normal，也是商用)
         :type status: str
-        :param cond_operation_az: 产品套餐在可用区的状态，配套status使用。 &gt; - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 &gt; - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 &gt; - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： &gt;   - “status”设置为：“abandon” 。 &gt;   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。  &gt; -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
+        :param cond_operation_az: 产品套餐在可用区的状态，配套status使用。 &gt; - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 &gt; - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 &gt; - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： &gt;   - “status”设置为：“abandon” 。 &gt;   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。 &gt; -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
         :type cond_operation_az: str
         :param sub_product_list: 专属主机的子产品。
         :type sub_product_list: list[str]
@@ -123,11 +121,9 @@ class ProductInfo:
         :type domain_ids: list[str]
         :param package_type: 套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
         :type package_type: str
-        :param series_type: 系列类型： - d7 - c7
-        :type series_type: str
-        :param expire_time: 产品套餐过期时间,产品将在该时间点后逐步下架。
+        :param expire_time: 产品套餐过期时间，产品将在该时间点后逐步下架。
         :type expire_time: datetime
-        :param support_gpu_type: 产品套餐支持的GPU类型。
+        :param support_gpu_type: 产品套餐支持的GPU类型： - A30 - A40 - A100 - RTX5000
         :type support_gpu_type: str
         """
         
@@ -156,7 +152,6 @@ class ProductInfo:
         self._sub_product_list = None
         self._domain_ids = None
         self._package_type = None
-        self._series_type = None
         self._expire_time = None
         self._support_gpu_type = None
         self.discriminator = None
@@ -207,8 +202,6 @@ class ProductInfo:
             self.domain_ids = domain_ids
         if package_type is not None:
             self.package_type = package_type
-        if series_type is not None:
-            self.series_type = series_type
         if expire_time is not None:
             self.expire_time = expire_time
         if support_gpu_type is not None:
@@ -216,572 +209,550 @@ class ProductInfo:
 
     @property
     def product_id(self):
-        r"""Gets the product_id of this ProductInfo.
+        r"""Gets the product_id of this ServerProductInfo.
 
         产品id。
 
-        :return: The product_id of this ProductInfo.
+        :return: The product_id of this ServerProductInfo.
         :rtype: str
         """
         return self._product_id
 
     @product_id.setter
     def product_id(self, product_id):
-        r"""Sets the product_id of this ProductInfo.
+        r"""Sets the product_id of this ServerProductInfo.
 
         产品id。
 
-        :param product_id: The product_id of this ProductInfo.
+        :param product_id: The product_id of this ServerProductInfo.
         :type product_id: str
         """
         self._product_id = product_id
 
     @property
     def flavor_id(self):
-        r"""Gets the flavor_id of this ProductInfo.
+        r"""Gets the flavor_id of this ServerProductInfo.
 
         规格ID。
 
-        :return: The flavor_id of this ProductInfo.
+        :return: The flavor_id of this ServerProductInfo.
         :rtype: str
         """
         return self._flavor_id
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        r"""Sets the flavor_id of this ProductInfo.
+        r"""Sets the flavor_id of this ServerProductInfo.
 
         规格ID。
 
-        :param flavor_id: The flavor_id of this ProductInfo.
+        :param flavor_id: The flavor_id of this ServerProductInfo.
         :type flavor_id: str
         """
         self._flavor_id = flavor_id
 
     @property
     def type(self):
-        r"""Gets the type of this ProductInfo.
+        r"""Gets the type of this ServerProductInfo.
 
-        产品类型。 - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
+        产品类型： - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
 
-        :return: The type of this ProductInfo.
+        :return: The type of this ServerProductInfo.
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        r"""Sets the type of this ProductInfo.
+        r"""Sets the type of this ServerProductInfo.
 
-        产品类型。 - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
+        产品类型： - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。 - ADVANCED：表示产品高级套餐，套餐镜像中包括了一些商业软件。
 
-        :param type: The type of this ProductInfo.
+        :param type: The type of this ServerProductInfo.
         :type type: str
         """
         self._type = type
 
     @property
     def architecture(self):
-        r"""Gets the architecture of this ProductInfo.
+        r"""Gets the architecture of this ServerProductInfo.
 
         产品架构，当前仅支持x86。 - x86 - arm
 
-        :return: The architecture of this ProductInfo.
+        :return: The architecture of this ServerProductInfo.
         :rtype: str
         """
         return self._architecture
 
     @architecture.setter
     def architecture(self, architecture):
-        r"""Sets the architecture of this ProductInfo.
+        r"""Sets the architecture of this ServerProductInfo.
 
         产品架构，当前仅支持x86。 - x86 - arm
 
-        :param architecture: The architecture of this ProductInfo.
+        :param architecture: The architecture of this ServerProductInfo.
         :type architecture: str
         """
         self._architecture = architecture
 
     @property
     def cpu(self):
-        r"""Gets the cpu of this ProductInfo.
+        r"""Gets the cpu of this ServerProductInfo.
 
         CPU。
 
-        :return: The cpu of this ProductInfo.
+        :return: The cpu of this ServerProductInfo.
         :rtype: str
         """
         return self._cpu
 
     @cpu.setter
     def cpu(self, cpu):
-        r"""Sets the cpu of this ProductInfo.
+        r"""Sets the cpu of this ServerProductInfo.
 
         CPU。
 
-        :param cpu: The cpu of this ProductInfo.
+        :param cpu: The cpu of this ServerProductInfo.
         :type cpu: str
         """
         self._cpu = cpu
 
     @property
     def cpu_desc(self):
-        r"""Gets the cpu_desc of this ProductInfo.
+        r"""Gets the cpu_desc of this ServerProductInfo.
 
         CPU描述。
 
-        :return: The cpu_desc of this ProductInfo.
+        :return: The cpu_desc of this ServerProductInfo.
         :rtype: str
         """
         return self._cpu_desc
 
     @cpu_desc.setter
     def cpu_desc(self, cpu_desc):
-        r"""Sets the cpu_desc of this ProductInfo.
+        r"""Sets the cpu_desc of this ServerProductInfo.
 
         CPU描述。
 
-        :param cpu_desc: The cpu_desc of this ProductInfo.
+        :param cpu_desc: The cpu_desc of this ServerProductInfo.
         :type cpu_desc: str
         """
         self._cpu_desc = cpu_desc
 
     @property
     def memory(self):
-        r"""Gets the memory of this ProductInfo.
+        r"""Gets the memory of this ServerProductInfo.
 
-        内存大小，单位兆：MB。
+        内存大小，单位兆：M。
 
-        :return: The memory of this ProductInfo.
+        :return: The memory of this ServerProductInfo.
         :rtype: str
         """
         return self._memory
 
     @memory.setter
     def memory(self, memory):
-        r"""Sets the memory of this ProductInfo.
+        r"""Sets the memory of this ServerProductInfo.
 
-        内存大小，单位兆：MB。
+        内存大小，单位兆：M。
 
-        :param memory: The memory of this ProductInfo.
+        :param memory: The memory of this ServerProductInfo.
         :type memory: str
         """
         self._memory = memory
 
     @property
     def is_gpu(self):
-        r"""Gets the is_gpu of this ProductInfo.
+        r"""Gets the is_gpu of this ServerProductInfo.
 
         是否是GPU类型的规格。
 
-        :return: The is_gpu of this ProductInfo.
+        :return: The is_gpu of this ServerProductInfo.
         :rtype: bool
         """
         return self._is_gpu
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        r"""Sets the is_gpu of this ProductInfo.
+        r"""Sets the is_gpu of this ServerProductInfo.
 
         是否是GPU类型的规格。
 
-        :param is_gpu: The is_gpu of this ProductInfo.
+        :param is_gpu: The is_gpu of this ServerProductInfo.
         :type is_gpu: bool
         """
         self._is_gpu = is_gpu
 
     @property
     def system_disk_type(self):
-        r"""Gets the system_disk_type of this ProductInfo.
+        r"""Gets the system_disk_type of this ServerProductInfo.
 
-        系统盘类型。
+        系统盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
 
-        :return: The system_disk_type of this ProductInfo.
+        :return: The system_disk_type of this ServerProductInfo.
         :rtype: str
         """
         return self._system_disk_type
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        r"""Sets the system_disk_type of this ProductInfo.
+        r"""Sets the system_disk_type of this ServerProductInfo.
 
-        系统盘类型。
+        系统盘类型： - SSD：超高IO磁盘 - SAS：高IO磁盘
 
-        :param system_disk_type: The system_disk_type of this ProductInfo.
+        :param system_disk_type: The system_disk_type of this ServerProductInfo.
         :type system_disk_type: str
         """
         self._system_disk_type = system_disk_type
 
     @property
     def system_disk_size(self):
-        r"""Gets the system_disk_size of this ProductInfo.
+        r"""Gets the system_disk_size of this ServerProductInfo.
 
         系统盘大小。
 
-        :return: The system_disk_size of this ProductInfo.
+        :return: The system_disk_size of this ServerProductInfo.
         :rtype: str
         """
         return self._system_disk_size
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        r"""Sets the system_disk_size of this ProductInfo.
+        r"""Sets the system_disk_size of this ServerProductInfo.
 
         系统盘大小。
 
-        :param system_disk_size: The system_disk_size of this ProductInfo.
+        :param system_disk_size: The system_disk_size of this ServerProductInfo.
         :type system_disk_size: str
         """
         self._system_disk_size = system_disk_size
 
     @property
     def gpu_desc(self):
-        r"""Gets the gpu_desc of this ProductInfo.
+        r"""Gets the gpu_desc of this ServerProductInfo.
 
         GPU描述。
 
-        :return: The gpu_desc of this ProductInfo.
+        :return: The gpu_desc of this ServerProductInfo.
         :rtype: str
         """
         return self._gpu_desc
 
     @gpu_desc.setter
     def gpu_desc(self, gpu_desc):
-        r"""Sets the gpu_desc of this ProductInfo.
+        r"""Sets the gpu_desc of this ServerProductInfo.
 
         GPU描述。
 
-        :param gpu_desc: The gpu_desc of this ProductInfo.
+        :param gpu_desc: The gpu_desc of this ServerProductInfo.
         :type gpu_desc: str
         """
         self._gpu_desc = gpu_desc
 
     @property
     def descriptions(self):
-        r"""Gets the descriptions of this ProductInfo.
+        r"""Gets the descriptions of this ServerProductInfo.
 
         产品描述。
 
-        :return: The descriptions of this ProductInfo.
+        :return: The descriptions of this ServerProductInfo.
         :rtype: str
         """
         return self._descriptions
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        r"""Sets the descriptions of this ProductInfo.
+        r"""Sets the descriptions of this ServerProductInfo.
 
         产品描述。
 
-        :param descriptions: The descriptions of this ProductInfo.
+        :param descriptions: The descriptions of this ServerProductInfo.
         :type descriptions: str
         """
         self._descriptions = descriptions
 
     @property
     def charge_mode(self):
-        r"""Gets the charge_mode of this ProductInfo.
+        r"""Gets the charge_mode of this ServerProductInfo.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
-        :return: The charge_mode of this ProductInfo.
+        :return: The charge_mode of this ServerProductInfo.
         :rtype: str
         """
         return self._charge_mode
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        r"""Sets the charge_mode of this ProductInfo.
+        r"""Sets the charge_mode of this ServerProductInfo.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
-        :param charge_mode: The charge_mode of this ProductInfo.
+        :param charge_mode: The charge_mode of this ServerProductInfo.
         :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
     @property
     def contain_data_disk(self):
-        r"""Gets the contain_data_disk of this ProductInfo.
+        r"""Gets the contain_data_disk of this ServerProductInfo.
 
         套餐计费是否包含了数据盘。
 
-        :return: The contain_data_disk of this ProductInfo.
+        :return: The contain_data_disk of this ServerProductInfo.
         :rtype: bool
         """
         return self._contain_data_disk
 
     @contain_data_disk.setter
     def contain_data_disk(self, contain_data_disk):
-        r"""Sets the contain_data_disk of this ProductInfo.
+        r"""Sets the contain_data_disk of this ServerProductInfo.
 
         套餐计费是否包含了数据盘。
 
-        :param contain_data_disk: The contain_data_disk of this ProductInfo.
+        :param contain_data_disk: The contain_data_disk of this ServerProductInfo.
         :type contain_data_disk: bool
         """
         self._contain_data_disk = contain_data_disk
 
     @property
     def resource_type(self):
-        r"""Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ServerProductInfo.
 
-        资源类型。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
-        :return: The resource_type of this ProductInfo.
+        :return: The resource_type of this ServerProductInfo.
         :rtype: str
         """
         return self._resource_type
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        r"""Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ServerProductInfo.
 
-        资源类型。
+        资源类型: -hws.resource.type.workspace.volume： 云办公桌面磁盘 -hws.resource.type.workspace.desktop： 云办公桌面 -hws.resource.type.workspace.appstream： 云应用 -hws.resource.type.workspace.appstreamsession： 云应用多会话
 
-        :param resource_type: The resource_type of this ProductInfo.
+        :param resource_type: The resource_type of this ServerProductInfo.
         :type resource_type: str
         """
         self._resource_type = resource_type
 
     @property
     def cloud_service_type(self):
-        r"""Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ServerProductInfo.
 
-        云服务类型。
+        云服务类型： - hws.service.type.vdi - hws.service.type.marketplace
 
-        :return: The cloud_service_type of this ProductInfo.
+        :return: The cloud_service_type of this ServerProductInfo.
         :rtype: str
         """
         return self._cloud_service_type
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        r"""Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ServerProductInfo.
 
-        云服务类型。
+        云服务类型： - hws.service.type.vdi - hws.service.type.marketplace
 
-        :param cloud_service_type: The cloud_service_type of this ProductInfo.
+        :param cloud_service_type: The cloud_service_type of this ServerProductInfo.
         :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
     @property
     def volume_product_type(self):
-        r"""Gets the volume_product_type of this ProductInfo.
+        r"""Gets the volume_product_type of this ServerProductInfo.
 
         磁盘产品类型： - workspace
 
-        :return: The volume_product_type of this ProductInfo.
+        :return: The volume_product_type of this ServerProductInfo.
         :rtype: str
         """
         return self._volume_product_type
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        r"""Sets the volume_product_type of this ProductInfo.
+        r"""Sets the volume_product_type of this ServerProductInfo.
 
         磁盘产品类型： - workspace
 
-        :param volume_product_type: The volume_product_type of this ProductInfo.
+        :param volume_product_type: The volume_product_type of this ServerProductInfo.
         :type volume_product_type: str
         """
         self._volume_product_type = volume_product_type
 
     @property
     def sessions(self):
-        r"""Gets the sessions of this ProductInfo.
+        r"""Gets the sessions of this ServerProductInfo.
 
         套餐默认支持的最大会话数。
 
-        :return: The sessions of this ProductInfo.
+        :return: The sessions of this ServerProductInfo.
         :rtype: int
         """
         return self._sessions
 
     @sessions.setter
     def sessions(self, sessions):
-        r"""Sets the sessions of this ProductInfo.
+        r"""Sets the sessions of this ServerProductInfo.
 
         套餐默认支持的最大会话数。
 
-        :param sessions: The sessions of this ProductInfo.
+        :param sessions: The sessions of this ServerProductInfo.
         :type sessions: int
         """
         self._sessions = sessions
 
     @property
     def status(self):
-        r"""Gets the status of this ProductInfo.
+        r"""Gets the status of this ServerProductInfo.
 
         产品套餐在销售模式下的状态，取值自ECS的cond:operation:status。 不配置时等同于normal在售状态。 * `normal` - 正常商用 * `abandon` - 下线（即不显示） * `sellout` - 售罄 * `obt` - 公测 * `obt_sellout` - 公测售罄 * `promotion` - 推荐(等同normal，也是商用)
 
-        :return: The status of this ProductInfo.
+        :return: The status of this ServerProductInfo.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        r"""Sets the status of this ProductInfo.
+        r"""Sets the status of this ServerProductInfo.
 
         产品套餐在销售模式下的状态，取值自ECS的cond:operation:status。 不配置时等同于normal在售状态。 * `normal` - 正常商用 * `abandon` - 下线（即不显示） * `sellout` - 售罄 * `obt` - 公测 * `obt_sellout` - 公测售罄 * `promotion` - 推荐(等同normal，也是商用)
 
-        :param status: The status of this ProductInfo.
+        :param status: The status of this ServerProductInfo.
         :type status: str
         """
         self._status = status
 
     @property
     def cond_operation_az(self):
-        r"""Gets the cond_operation_az of this ProductInfo.
+        r"""Gets the cond_operation_az of this ServerProductInfo.
 
-        产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。  > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
+        产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。 > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
 
-        :return: The cond_operation_az of this ProductInfo.
+        :return: The cond_operation_az of this ServerProductInfo.
         :rtype: str
         """
         return self._cond_operation_az
 
     @cond_operation_az.setter
     def cond_operation_az(self, cond_operation_az):
-        r"""Sets the cond_operation_az of this ProductInfo.
+        r"""Sets the cond_operation_az of this ServerProductInfo.
 
-        产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。  > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
+        产品套餐在可用区的状态，配套status使用。 > - 此参数是AZ级配置，优选取此参数的值，某个AZ没有在此参数中配置时默认使用status参数的取值。 > - 配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。 > - 例如：套餐在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为： >   - “status”设置为：“abandon” 。 >   - “cond_operation_az”设置为：“az0(normal), az1(sellout), az2(obt), az3(normal)”。 > -  说明：如果flavor在某个AZ下的状态与status配置状态不同，必须配置该参数。
 
-        :param cond_operation_az: The cond_operation_az of this ProductInfo.
+        :param cond_operation_az: The cond_operation_az of this ServerProductInfo.
         :type cond_operation_az: str
         """
         self._cond_operation_az = cond_operation_az
 
     @property
     def sub_product_list(self):
-        r"""Gets the sub_product_list of this ProductInfo.
+        r"""Gets the sub_product_list of this ServerProductInfo.
 
         专属主机的子产品。
 
-        :return: The sub_product_list of this ProductInfo.
+        :return: The sub_product_list of this ServerProductInfo.
         :rtype: list[str]
         """
         return self._sub_product_list
 
     @sub_product_list.setter
     def sub_product_list(self, sub_product_list):
-        r"""Sets the sub_product_list of this ProductInfo.
+        r"""Sets the sub_product_list of this ServerProductInfo.
 
         专属主机的子产品。
 
-        :param sub_product_list: The sub_product_list of this ProductInfo.
+        :param sub_product_list: The sub_product_list of this ServerProductInfo.
         :type sub_product_list: list[str]
         """
         self._sub_product_list = sub_product_list
 
     @property
     def domain_ids(self):
-        r"""Gets the domain_ids of this ProductInfo.
+        r"""Gets the domain_ids of this ServerProductInfo.
 
         产品属于专有的domainId。
 
-        :return: The domain_ids of this ProductInfo.
+        :return: The domain_ids of this ServerProductInfo.
         :rtype: list[str]
         """
         return self._domain_ids
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        r"""Sets the domain_ids of this ProductInfo.
+        r"""Sets the domain_ids of this ServerProductInfo.
 
         产品属于专有的domainId。
 
-        :param domain_ids: The domain_ids of this ProductInfo.
+        :param domain_ids: The domain_ids of this ServerProductInfo.
         :type domain_ids: list[str]
         """
         self._domain_ids = domain_ids
 
     @property
     def package_type(self):
-        r"""Gets the package_type of this ProductInfo.
+        r"""Gets the package_type of this ServerProductInfo.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
-        :return: The package_type of this ProductInfo.
+        :return: The package_type of this ServerProductInfo.
         :rtype: str
         """
         return self._package_type
 
     @package_type.setter
     def package_type(self, package_type):
-        r"""Sets the package_type of this ProductInfo.
+        r"""Sets the package_type of this ServerProductInfo.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
-        :param package_type: The package_type of this ProductInfo.
+        :param package_type: The package_type of this ServerProductInfo.
         :type package_type: str
         """
         self._package_type = package_type
 
     @property
-    def series_type(self):
-        r"""Gets the series_type of this ProductInfo.
-
-        系列类型： - d7 - c7
-
-        :return: The series_type of this ProductInfo.
-        :rtype: str
-        """
-        return self._series_type
-
-    @series_type.setter
-    def series_type(self, series_type):
-        r"""Sets the series_type of this ProductInfo.
-
-        系列类型： - d7 - c7
-
-        :param series_type: The series_type of this ProductInfo.
-        :type series_type: str
-        """
-        self._series_type = series_type
-
-    @property
     def expire_time(self):
-        r"""Gets the expire_time of this ProductInfo.
+        r"""Gets the expire_time of this ServerProductInfo.
 
-        产品套餐过期时间,产品将在该时间点后逐步下架。
+        产品套餐过期时间，产品将在该时间点后逐步下架。
 
-        :return: The expire_time of this ProductInfo.
+        :return: The expire_time of this ServerProductInfo.
         :rtype: datetime
         """
         return self._expire_time
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        r"""Sets the expire_time of this ProductInfo.
+        r"""Sets the expire_time of this ServerProductInfo.
 
-        产品套餐过期时间,产品将在该时间点后逐步下架。
+        产品套餐过期时间，产品将在该时间点后逐步下架。
 
-        :param expire_time: The expire_time of this ProductInfo.
+        :param expire_time: The expire_time of this ServerProductInfo.
         :type expire_time: datetime
         """
         self._expire_time = expire_time
 
     @property
     def support_gpu_type(self):
-        r"""Gets the support_gpu_type of this ProductInfo.
+        r"""Gets the support_gpu_type of this ServerProductInfo.
 
-        产品套餐支持的GPU类型。
+        产品套餐支持的GPU类型： - A30 - A40 - A100 - RTX5000
 
-        :return: The support_gpu_type of this ProductInfo.
+        :return: The support_gpu_type of this ServerProductInfo.
         :rtype: str
         """
         return self._support_gpu_type
 
     @support_gpu_type.setter
     def support_gpu_type(self, support_gpu_type):
-        r"""Sets the support_gpu_type of this ProductInfo.
+        r"""Sets the support_gpu_type of this ServerProductInfo.
 
-        产品套餐支持的GPU类型。
+        产品套餐支持的GPU类型： - A30 - A40 - A100 - RTX5000
 
-        :param support_gpu_type: The support_gpu_type of this ProductInfo.
+        :param support_gpu_type: The support_gpu_type of this ServerProductInfo.
         :type support_gpu_type: str
         """
         self._support_gpu_type = support_gpu_type
@@ -823,7 +794,7 @@ class ProductInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ProductInfo):
+        if not isinstance(other, ServerProductInfo):
             return False
 
         return self.__dict__ == other.__dict__

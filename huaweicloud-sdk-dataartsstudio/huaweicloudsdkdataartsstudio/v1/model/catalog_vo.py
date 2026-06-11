@@ -23,6 +23,7 @@ class CatalogVO:
         'code': 'str',
         'alias': 'str',
         'status': 'BizStatusEnum',
+        'permission': 'int',
         'new_biz': 'BizVersionManageVO',
         'data_owner': 'str',
         'data_owner_list': 'str',
@@ -31,18 +32,18 @@ class CatalogVO:
         'level': 'int',
         'ordinal': 'int',
         'owner': 'str',
-        'parent_id': 'str',
-        'swap_order_id': 'str',
+        'parent_id': 'int',
+        'swap_order_id': 'int',
         'id': 'str',
         'qualified_id': 'str',
-        'from_public': 'bool',
         'create_by': 'str',
         'update_by': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'children_num': 'int',
         'children': 'list[CatalogVO]',
-        'self_defined_fields': 'list[SelfDefinedFieldVO]'
+        'self_defined_fields': 'list[SelfDefinedFieldVO]',
+        'relations': 'list[RelationVO]'
     }
 
     attribute_map = {
@@ -54,6 +55,7 @@ class CatalogVO:
         'code': 'code',
         'alias': 'alias',
         'status': 'status',
+        'permission': 'permission',
         'new_biz': 'new_biz',
         'data_owner': 'data_owner',
         'data_owner_list': 'data_owner_list',
@@ -66,17 +68,17 @@ class CatalogVO:
         'swap_order_id': 'swap_order_id',
         'id': 'id',
         'qualified_id': 'qualified_id',
-        'from_public': 'from_public',
         'create_by': 'create_by',
         'update_by': 'update_by',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'children_num': 'children_num',
         'children': 'children',
-        'self_defined_fields': 'self_defined_fields'
+        'self_defined_fields': 'self_defined_fields',
+        'relations': 'relations'
     }
 
-    def __init__(self, name_ch=None, name_en=None, description=None, qualified_name=None, guid=None, code=None, alias=None, status=None, new_biz=None, data_owner=None, data_owner_list=None, data_department=None, path=None, level=None, ordinal=None, owner=None, parent_id=None, swap_order_id=None, id=None, qualified_id=None, from_public=None, create_by=None, update_by=None, create_time=None, update_time=None, children_num=None, children=None, self_defined_fields=None):
+    def __init__(self, name_ch=None, name_en=None, description=None, qualified_name=None, guid=None, code=None, alias=None, status=None, permission=None, new_biz=None, data_owner=None, data_owner_list=None, data_department=None, path=None, level=None, ordinal=None, owner=None, parent_id=None, swap_order_id=None, id=None, qualified_id=None, create_by=None, update_by=None, create_time=None, update_time=None, children_num=None, children=None, self_defined_fields=None, relations=None):
         r"""CatalogVO
 
         The model defined in huaweicloud sdk
@@ -87,7 +89,7 @@ class CatalogVO:
         :type name_en: str
         :param description: 描述信息。
         :type description: str
-        :param qualified_name: 扩展名。
+        :param qualified_name: 对象标识。
         :type qualified_name: str
         :param guid: guid，自动生成。
         :type guid: str
@@ -97,9 +99,11 @@ class CatalogVO:
         :type alias: str
         :param status: 
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param permission: 
+        :type permission: int
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
-        :param data_owner: 数据所有者。
+        :param data_owner: 数据owner。
         :type data_owner: str
         :param data_owner_list: 数据所有者集合。
         :type data_owner_list: str
@@ -111,23 +115,21 @@ class CatalogVO:
         :type level: int
         :param ordinal: 序号。
         :type ordinal: int
-        :param owner: 责任人。
+        :param owner: 责任人
         :type owner: str
         :param parent_id: 父目录ID，木有则为根目录，ID字符串。
-        :type parent_id: str
+        :type parent_id: int
         :param swap_order_id: 同层排序，目标节点的ID，ID字符串。
-        :type swap_order_id: str
+        :type swap_order_id: int
         :param id: 主题ID，ID字符串。
         :type id: str
-        :param qualified_id: 认证ID，自动生成。
+        :param qualified_id: 认证ID，自动生成
         :type qualified_id: str
-        :param from_public: 是否来自公共层。
-        :type from_public: bool
-        :param create_by: 创建人。
+        :param create_by: 创建人
         :type create_by: str
-        :param update_by: 更新人。
+        :param update_by: 更新人
         :type update_by: str
-        :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        :param create_time: 创建时间
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type update_time: datetime
@@ -137,6 +139,8 @@ class CatalogVO:
         :type children: list[:class:`huaweicloudsdkdataartsstudio.v1.CatalogVO`]
         :param self_defined_fields: 属性自定义项。
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
+        :param relations: 关系
+        :type relations: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
         """
         
         
@@ -149,6 +153,7 @@ class CatalogVO:
         self._code = None
         self._alias = None
         self._status = None
+        self._permission = None
         self._new_biz = None
         self._data_owner = None
         self._data_owner_list = None
@@ -161,7 +166,6 @@ class CatalogVO:
         self._swap_order_id = None
         self._id = None
         self._qualified_id = None
-        self._from_public = None
         self._create_by = None
         self._update_by = None
         self._create_time = None
@@ -169,10 +173,10 @@ class CatalogVO:
         self._children_num = None
         self._children = None
         self._self_defined_fields = None
+        self._relations = None
         self.discriminator = None
 
-        if name_ch is not None:
-            self.name_ch = name_ch
+        self.name_ch = name_ch
         if name_en is not None:
             self.name_en = name_en
         if description is not None:
@@ -187,18 +191,18 @@ class CatalogVO:
             self.alias = alias
         if status is not None:
             self.status = status
+        if permission is not None:
+            self.permission = permission
         if new_biz is not None:
             self.new_biz = new_biz
         if data_owner is not None:
             self.data_owner = data_owner
-        if data_owner_list is not None:
-            self.data_owner_list = data_owner_list
+        self.data_owner_list = data_owner_list
         if data_department is not None:
             self.data_department = data_department
         if path is not None:
             self.path = path
-        if level is not None:
-            self.level = level
+        self.level = level
         if ordinal is not None:
             self.ordinal = ordinal
         if owner is not None:
@@ -211,8 +215,6 @@ class CatalogVO:
             self.id = id
         if qualified_id is not None:
             self.qualified_id = qualified_id
-        if from_public is not None:
-            self.from_public = from_public
         if create_by is not None:
             self.create_by = create_by
         if update_by is not None:
@@ -227,6 +229,8 @@ class CatalogVO:
             self.children = children
         if self_defined_fields is not None:
             self.self_defined_fields = self_defined_fields
+        if relations is not None:
+            self.relations = relations
 
     @property
     def name_ch(self):
@@ -298,7 +302,7 @@ class CatalogVO:
     def qualified_name(self):
         r"""Gets the qualified_name of this CatalogVO.
 
-        扩展名。
+        对象标识。
 
         :return: The qualified_name of this CatalogVO.
         :rtype: str
@@ -309,7 +313,7 @@ class CatalogVO:
     def qualified_name(self, qualified_name):
         r"""Sets the qualified_name of this CatalogVO.
 
-        扩展名。
+        对象标识。
 
         :param qualified_name: The qualified_name of this CatalogVO.
         :type qualified_name: str
@@ -401,6 +405,24 @@ class CatalogVO:
         self._status = status
 
     @property
+    def permission(self):
+        r"""Gets the permission of this CatalogVO.
+
+        :return: The permission of this CatalogVO.
+        :rtype: int
+        """
+        return self._permission
+
+    @permission.setter
+    def permission(self, permission):
+        r"""Sets the permission of this CatalogVO.
+
+        :param permission: The permission of this CatalogVO.
+        :type permission: int
+        """
+        self._permission = permission
+
+    @property
     def new_biz(self):
         r"""Gets the new_biz of this CatalogVO.
 
@@ -422,7 +444,7 @@ class CatalogVO:
     def data_owner(self):
         r"""Gets the data_owner of this CatalogVO.
 
-        数据所有者。
+        数据owner。
 
         :return: The data_owner of this CatalogVO.
         :rtype: str
@@ -433,7 +455,7 @@ class CatalogVO:
     def data_owner(self, data_owner):
         r"""Sets the data_owner of this CatalogVO.
 
-        数据所有者。
+        数据owner。
 
         :param data_owner: The data_owner of this CatalogVO.
         :type data_owner: str
@@ -554,7 +576,7 @@ class CatalogVO:
     def owner(self):
         r"""Gets the owner of this CatalogVO.
 
-        责任人。
+        责任人
 
         :return: The owner of this CatalogVO.
         :rtype: str
@@ -565,7 +587,7 @@ class CatalogVO:
     def owner(self, owner):
         r"""Sets the owner of this CatalogVO.
 
-        责任人。
+        责任人
 
         :param owner: The owner of this CatalogVO.
         :type owner: str
@@ -579,7 +601,7 @@ class CatalogVO:
         父目录ID，木有则为根目录，ID字符串。
 
         :return: The parent_id of this CatalogVO.
-        :rtype: str
+        :rtype: int
         """
         return self._parent_id
 
@@ -590,7 +612,7 @@ class CatalogVO:
         父目录ID，木有则为根目录，ID字符串。
 
         :param parent_id: The parent_id of this CatalogVO.
-        :type parent_id: str
+        :type parent_id: int
         """
         self._parent_id = parent_id
 
@@ -601,7 +623,7 @@ class CatalogVO:
         同层排序，目标节点的ID，ID字符串。
 
         :return: The swap_order_id of this CatalogVO.
-        :rtype: str
+        :rtype: int
         """
         return self._swap_order_id
 
@@ -612,7 +634,7 @@ class CatalogVO:
         同层排序，目标节点的ID，ID字符串。
 
         :param swap_order_id: The swap_order_id of this CatalogVO.
-        :type swap_order_id: str
+        :type swap_order_id: int
         """
         self._swap_order_id = swap_order_id
 
@@ -642,7 +664,7 @@ class CatalogVO:
     def qualified_id(self):
         r"""Gets the qualified_id of this CatalogVO.
 
-        认证ID，自动生成。
+        认证ID，自动生成
 
         :return: The qualified_id of this CatalogVO.
         :rtype: str
@@ -653,7 +675,7 @@ class CatalogVO:
     def qualified_id(self, qualified_id):
         r"""Sets the qualified_id of this CatalogVO.
 
-        认证ID，自动生成。
+        认证ID，自动生成
 
         :param qualified_id: The qualified_id of this CatalogVO.
         :type qualified_id: str
@@ -661,32 +683,10 @@ class CatalogVO:
         self._qualified_id = qualified_id
 
     @property
-    def from_public(self):
-        r"""Gets the from_public of this CatalogVO.
-
-        是否来自公共层。
-
-        :return: The from_public of this CatalogVO.
-        :rtype: bool
-        """
-        return self._from_public
-
-    @from_public.setter
-    def from_public(self, from_public):
-        r"""Sets the from_public of this CatalogVO.
-
-        是否来自公共层。
-
-        :param from_public: The from_public of this CatalogVO.
-        :type from_public: bool
-        """
-        self._from_public = from_public
-
-    @property
     def create_by(self):
         r"""Gets the create_by of this CatalogVO.
 
-        创建人。
+        创建人
 
         :return: The create_by of this CatalogVO.
         :rtype: str
@@ -697,7 +697,7 @@ class CatalogVO:
     def create_by(self, create_by):
         r"""Sets the create_by of this CatalogVO.
 
-        创建人。
+        创建人
 
         :param create_by: The create_by of this CatalogVO.
         :type create_by: str
@@ -708,7 +708,7 @@ class CatalogVO:
     def update_by(self):
         r"""Gets the update_by of this CatalogVO.
 
-        更新人。
+        更新人
 
         :return: The update_by of this CatalogVO.
         :rtype: str
@@ -719,7 +719,7 @@ class CatalogVO:
     def update_by(self, update_by):
         r"""Sets the update_by of this CatalogVO.
 
-        更新人。
+        更新人
 
         :param update_by: The update_by of this CatalogVO.
         :type update_by: str
@@ -730,7 +730,7 @@ class CatalogVO:
     def create_time(self):
         r"""Gets the create_time of this CatalogVO.
 
-        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间
 
         :return: The create_time of this CatalogVO.
         :rtype: datetime
@@ -741,7 +741,7 @@ class CatalogVO:
     def create_time(self, create_time):
         r"""Sets the create_time of this CatalogVO.
 
-        创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
+        创建时间
 
         :param create_time: The create_time of this CatalogVO.
         :type create_time: datetime
@@ -835,6 +835,28 @@ class CatalogVO:
         :type self_defined_fields: list[:class:`huaweicloudsdkdataartsstudio.v1.SelfDefinedFieldVO`]
         """
         self._self_defined_fields = self_defined_fields
+
+    @property
+    def relations(self):
+        r"""Gets the relations of this CatalogVO.
+
+        关系
+
+        :return: The relations of this CatalogVO.
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
+        """
+        return self._relations
+
+    @relations.setter
+    def relations(self, relations):
+        r"""Sets the relations of this CatalogVO.
+
+        关系
+
+        :param relations: The relations of this CatalogVO.
+        :type relations: list[:class:`huaweicloudsdkdataartsstudio.v1.RelationVO`]
+        """
+        self._relations = relations
 
     def to_dict(self):
         result = {}

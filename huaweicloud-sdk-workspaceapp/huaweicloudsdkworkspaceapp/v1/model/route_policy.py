@@ -31,7 +31,7 @@ class RoutePolicy:
 
         The model defined in huaweicloud sdk
 
-        :param max_session: 单台服务器最大的链接会话数。
+        :param max_session: 单台服务器最大的连接会话数。
         :type max_session: int
         :param cpu_threshold: cpu使用率阈值，单位为%。
         :type cpu_threshold: int
@@ -57,7 +57,7 @@ class RoutePolicy:
     def max_session(self):
         r"""Gets the max_session of this RoutePolicy.
 
-        单台服务器最大的链接会话数。
+        单台服务器最大的连接会话数。
 
         :return: The max_session of this RoutePolicy.
         :rtype: int
@@ -68,7 +68,7 @@ class RoutePolicy:
     def max_session(self, max_session):
         r"""Sets the max_session of this RoutePolicy.
 
-        单台服务器最大的链接会话数。
+        单台服务器最大的连接会话数。
 
         :param max_session: The max_session of this RoutePolicy.
         :type max_session: int
