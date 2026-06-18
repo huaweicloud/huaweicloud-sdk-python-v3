@@ -43,23 +43,23 @@ class ShowMergeRequestCommentsByLineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
         :param merge_request_iid: **参数解释：**  合并请求 iid。
         :type merge_request_iid: int
-        :param line: 
+        :param line: **参数解释：** 获取特定行的检视意见列表(新增、不变行使用右侧行号；删除行使用左侧行号)。
         :type line: int
-        :param with_commit_comments: 
+        :param with_commit_comments: **参数解释：** 是否返回在代码页签下加的评论。 **取值范围：** - true，补充代码页签下的评论并返回。 - false，不处理。
         :type with_commit_comments: bool
         :param path: **参数解释：** 文件路径。 **取值范围：** 字符串长度不少于1，不超过100000。
         :type path: str
-        :param view: 
+        :param view: **参数解释：** 是否只返回基础信息。 **取值范围：** - basic，返回基础信息(建议)。 - sample，额外返回代码片段等信息。
         :type view: str
-        :param base_sha: 合并请求中原分支与目标分支的共同基准点
+        :param base_sha: **参数解释：** 合并请求中原分支与目标分支的共同基准点。 **取值范围：** 长度为40的sha1字符串。
         :type base_sha: str
-        :param start_sha: 合并请求中，从共同基准点开始到原分支方向的第一个提交点
+        :param start_sha: **参数解释：** 合并请求中，从共同基准点开始到原分支方向的第一个提交点。 **取值范围：** 长度为40的sha1字符串。
         :type start_sha: str
-        :param head_sha: 合并请求中原分支指向的提交点
+        :param head_sha: **参数解释：** 合并请求中原分支指向的提交点。 **取值范围：** 长度为40的sha1字符串。
         :type head_sha: str
         """
         
@@ -97,7 +97,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def repository_id(self):
         r"""Gets the repository_id of this ShowMergeRequestCommentsByLineRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ShowMergeRequestCommentsByLineRequest.
         :rtype: int
@@ -108,7 +108,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ShowMergeRequestCommentsByLineRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ShowMergeRequestCommentsByLineRequest.
         :type repository_id: int
@@ -141,6 +141,8 @@ class ShowMergeRequestCommentsByLineRequest:
     def line(self):
         r"""Gets the line of this ShowMergeRequestCommentsByLineRequest.
 
+        **参数解释：** 获取特定行的检视意见列表(新增、不变行使用右侧行号；删除行使用左侧行号)。
+
         :return: The line of this ShowMergeRequestCommentsByLineRequest.
         :rtype: int
         """
@@ -149,6 +151,8 @@ class ShowMergeRequestCommentsByLineRequest:
     @line.setter
     def line(self, line):
         r"""Sets the line of this ShowMergeRequestCommentsByLineRequest.
+
+        **参数解释：** 获取特定行的检视意见列表(新增、不变行使用右侧行号；删除行使用左侧行号)。
 
         :param line: The line of this ShowMergeRequestCommentsByLineRequest.
         :type line: int
@@ -159,6 +163,8 @@ class ShowMergeRequestCommentsByLineRequest:
     def with_commit_comments(self):
         r"""Gets the with_commit_comments of this ShowMergeRequestCommentsByLineRequest.
 
+        **参数解释：** 是否返回在代码页签下加的评论。 **取值范围：** - true，补充代码页签下的评论并返回。 - false，不处理。
+
         :return: The with_commit_comments of this ShowMergeRequestCommentsByLineRequest.
         :rtype: bool
         """
@@ -167,6 +173,8 @@ class ShowMergeRequestCommentsByLineRequest:
     @with_commit_comments.setter
     def with_commit_comments(self, with_commit_comments):
         r"""Sets the with_commit_comments of this ShowMergeRequestCommentsByLineRequest.
+
+        **参数解释：** 是否返回在代码页签下加的评论。 **取值范围：** - true，补充代码页签下的评论并返回。 - false，不处理。
 
         :param with_commit_comments: The with_commit_comments of this ShowMergeRequestCommentsByLineRequest.
         :type with_commit_comments: bool
@@ -199,6 +207,8 @@ class ShowMergeRequestCommentsByLineRequest:
     def view(self):
         r"""Gets the view of this ShowMergeRequestCommentsByLineRequest.
 
+        **参数解释：** 是否只返回基础信息。 **取值范围：** - basic，返回基础信息(建议)。 - sample，额外返回代码片段等信息。
+
         :return: The view of this ShowMergeRequestCommentsByLineRequest.
         :rtype: str
         """
@@ -207,6 +217,8 @@ class ShowMergeRequestCommentsByLineRequest:
     @view.setter
     def view(self, view):
         r"""Sets the view of this ShowMergeRequestCommentsByLineRequest.
+
+        **参数解释：** 是否只返回基础信息。 **取值范围：** - basic，返回基础信息(建议)。 - sample，额外返回代码片段等信息。
 
         :param view: The view of this ShowMergeRequestCommentsByLineRequest.
         :type view: str
@@ -217,7 +229,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def base_sha(self):
         r"""Gets the base_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中原分支与目标分支的共同基准点
+        **参数解释：** 合并请求中原分支与目标分支的共同基准点。 **取值范围：** 长度为40的sha1字符串。
 
         :return: The base_sha of this ShowMergeRequestCommentsByLineRequest.
         :rtype: str
@@ -228,7 +240,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def base_sha(self, base_sha):
         r"""Sets the base_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中原分支与目标分支的共同基准点
+        **参数解释：** 合并请求中原分支与目标分支的共同基准点。 **取值范围：** 长度为40的sha1字符串。
 
         :param base_sha: The base_sha of this ShowMergeRequestCommentsByLineRequest.
         :type base_sha: str
@@ -239,7 +251,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def start_sha(self):
         r"""Gets the start_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中，从共同基准点开始到原分支方向的第一个提交点
+        **参数解释：** 合并请求中，从共同基准点开始到原分支方向的第一个提交点。 **取值范围：** 长度为40的sha1字符串。
 
         :return: The start_sha of this ShowMergeRequestCommentsByLineRequest.
         :rtype: str
@@ -250,7 +262,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def start_sha(self, start_sha):
         r"""Sets the start_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中，从共同基准点开始到原分支方向的第一个提交点
+        **参数解释：** 合并请求中，从共同基准点开始到原分支方向的第一个提交点。 **取值范围：** 长度为40的sha1字符串。
 
         :param start_sha: The start_sha of this ShowMergeRequestCommentsByLineRequest.
         :type start_sha: str
@@ -261,7 +273,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def head_sha(self):
         r"""Gets the head_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中原分支指向的提交点
+        **参数解释：** 合并请求中原分支指向的提交点。 **取值范围：** 长度为40的sha1字符串。
 
         :return: The head_sha of this ShowMergeRequestCommentsByLineRequest.
         :rtype: str
@@ -272,7 +284,7 @@ class ShowMergeRequestCommentsByLineRequest:
     def head_sha(self, head_sha):
         r"""Sets the head_sha of this ShowMergeRequestCommentsByLineRequest.
 
-        合并请求中原分支指向的提交点
+        **参数解释：** 合并请求中原分支指向的提交点。 **取值范围：** 长度为40的sha1字符串。
 
         :param head_sha: The head_sha of this ShowMergeRequestCommentsByLineRequest.
         :type head_sha: str

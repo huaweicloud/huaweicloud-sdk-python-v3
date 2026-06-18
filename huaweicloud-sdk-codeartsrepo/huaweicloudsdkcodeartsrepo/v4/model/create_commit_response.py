@@ -41,6 +41,7 @@ class CreateCommitResponse(SdkResponse):
         'nick_name': 'str',
         'tenant_name': 'str',
         'user_name': 'str',
+        'author_id': 'int',
         'stats': 'CommitStatsDto',
         'status': 'str',
         'last_pipeline': 'PipelineBasicDto',
@@ -75,6 +76,7 @@ class CreateCommitResponse(SdkResponse):
         'nick_name': 'nick_name',
         'tenant_name': 'tenant_name',
         'user_name': 'user_name',
+        'author_id': 'author_id',
         'stats': 'stats',
         'status': 'status',
         'last_pipeline': 'last_pipeline',
@@ -83,7 +85,7 @@ class CreateCommitResponse(SdkResponse):
         'code_changes': 'code_changes'
     }
 
-    def __init__(self, id=None, message=None, parent_ids=None, authored_date=None, author_name=None, author_email=None, committed_date=None, committer_name=None, committer_email=None, open_gpg_verified=None, verification_status=None, gpg_primary_key_id=None, name=None, gpg_nick_name=None, gpg_tenant_name=None, gpg_user_name=None, short_id=None, created_at=None, title=None, author_avatar_url=None, committer_avatar_url=None, relate_url=None, nick_name=None, tenant_name=None, user_name=None, stats=None, status=None, last_pipeline=None, project_id=None, merge_request=None, code_changes=None):
+    def __init__(self, id=None, message=None, parent_ids=None, authored_date=None, author_name=None, author_email=None, committed_date=None, committer_name=None, committer_email=None, open_gpg_verified=None, verification_status=None, gpg_primary_key_id=None, name=None, gpg_nick_name=None, gpg_tenant_name=None, gpg_user_name=None, short_id=None, created_at=None, title=None, author_avatar_url=None, committer_avatar_url=None, relate_url=None, nick_name=None, tenant_name=None, user_name=None, author_id=None, stats=None, status=None, last_pipeline=None, project_id=None, merge_request=None, code_changes=None):
         r"""CreateCommitResponse
 
         The model defined in huaweicloud sdk
@@ -138,6 +140,8 @@ class CreateCommitResponse(SdkResponse):
         :type tenant_name: str
         :param user_name: 用户名
         :type user_name: str
+        :param author_id: 作者id
+        :type author_id: int
         :param stats: 
         :type stats: :class:`huaweicloudsdkcodeartsrepo.v4.CommitStatsDto`
         :param status: 流水线状态，pending为排队，running为运行中，success为成功，failed为失败，canceled为取消，skipped为跳过，timedout为超时
@@ -179,6 +183,7 @@ class CreateCommitResponse(SdkResponse):
         self._nick_name = None
         self._tenant_name = None
         self._user_name = None
+        self._author_id = None
         self._stats = None
         self._status = None
         self._last_pipeline = None
@@ -237,6 +242,8 @@ class CreateCommitResponse(SdkResponse):
             self.tenant_name = tenant_name
         if user_name is not None:
             self.user_name = user_name
+        if author_id is not None:
+            self.author_id = author_id
         if stats is not None:
             self.stats = stats
         if status is not None:
@@ -799,6 +806,28 @@ class CreateCommitResponse(SdkResponse):
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def author_id(self):
+        r"""Gets the author_id of this CreateCommitResponse.
+
+        作者id
+
+        :return: The author_id of this CreateCommitResponse.
+        :rtype: int
+        """
+        return self._author_id
+
+    @author_id.setter
+    def author_id(self, author_id):
+        r"""Sets the author_id of this CreateCommitResponse.
+
+        作者id
+
+        :param author_id: The author_id of this CreateCommitResponse.
+        :type author_id: int
+        """
+        self._author_id = author_id
 
     @property
     def stats(self):

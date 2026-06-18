@@ -3335,6 +3335,8 @@ class RgcClient(Client):
         query_params = []
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
+        if 'account_id' in local_var_params:
+            query_params.append(('account_id', local_var_params['account_id']))
 
         header_params = {}
 

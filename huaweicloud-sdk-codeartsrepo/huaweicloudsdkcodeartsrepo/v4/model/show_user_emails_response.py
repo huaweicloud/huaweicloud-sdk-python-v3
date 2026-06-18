@@ -23,7 +23,8 @@ class ShowUserEmailsResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'last_activity_on': 'str',
-        'commit_email': 'str'
+        'commit_email': 'str',
+        'is_default': 'bool'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ShowUserEmailsResponse(SdkResponse):
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'last_activity_on': 'last_activity_on',
-        'commit_email': 'commit_email'
+        'commit_email': 'commit_email',
+        'is_default': 'is_default'
     }
 
-    def __init__(self, id=None, name=None, username=None, state=None, created_at=None, updated_at=None, last_activity_on=None, commit_email=None):
+    def __init__(self, id=None, name=None, username=None, state=None, created_at=None, updated_at=None, last_activity_on=None, commit_email=None, is_default=None):
         r"""ShowUserEmailsResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ShowUserEmailsResponse(SdkResponse):
         :type last_activity_on: str
         :param commit_email: **参数解释：** 提交邮箱。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type commit_email: str
+        :param is_default: **参数解释：** 是否为默认邮箱。
+        :type is_default: bool
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ShowUserEmailsResponse(SdkResponse):
         self._updated_at = None
         self._last_activity_on = None
         self._commit_email = None
+        self._is_default = None
         self.discriminator = None
 
         if id is not None:
@@ -88,6 +93,8 @@ class ShowUserEmailsResponse(SdkResponse):
             self.last_activity_on = last_activity_on
         if commit_email is not None:
             self.commit_email = commit_email
+        if is_default is not None:
+            self.is_default = is_default
 
     @property
     def id(self):
@@ -264,6 +271,28 @@ class ShowUserEmailsResponse(SdkResponse):
         :type commit_email: str
         """
         self._commit_email = commit_email
+
+    @property
+    def is_default(self):
+        r"""Gets the is_default of this ShowUserEmailsResponse.
+
+        **参数解释：** 是否为默认邮箱。
+
+        :return: The is_default of this ShowUserEmailsResponse.
+        :rtype: bool
+        """
+        return self._is_default
+
+    @is_default.setter
+    def is_default(self, is_default):
+        r"""Sets the is_default of this ShowUserEmailsResponse.
+
+        **参数解释：** 是否为默认邮箱。
+
+        :param is_default: The is_default of this ShowUserEmailsResponse.
+        :type is_default: bool
+        """
+        self._is_default = is_default
 
     def to_dict(self):
         import warnings

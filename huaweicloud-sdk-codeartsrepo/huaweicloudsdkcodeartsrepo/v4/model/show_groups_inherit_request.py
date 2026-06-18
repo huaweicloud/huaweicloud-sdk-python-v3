@@ -29,7 +29,7 @@ class ShowGroupsInheritRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param setting_type: **参数解释：** 必填项，设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
         :type setting_type: str
@@ -48,7 +48,7 @@ class ShowGroupsInheritRequest:
     def group_id(self):
         r"""Gets the group_id of this ShowGroupsInheritRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this ShowGroupsInheritRequest.
         :rtype: int
@@ -59,7 +59,7 @@ class ShowGroupsInheritRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowGroupsInheritRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this ShowGroupsInheritRequest.
         :type group_id: int

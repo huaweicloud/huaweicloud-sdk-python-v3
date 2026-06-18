@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class MergeRequestVoteReviewerDto:
+class MergeRequestApprovalUserDto:
 
     """
     Attributes:
@@ -28,7 +28,7 @@ class MergeRequestVoteReviewerDto:
         'nick_name': 'str',
         'tenant_name': 'str',
         'error_message': 'str',
-        'is_committer': 'bool'
+        'has_permission': 'bool'
     }
 
     attribute_map = {
@@ -45,11 +45,11 @@ class MergeRequestVoteReviewerDto:
         'nick_name': 'nick_name',
         'tenant_name': 'tenant_name',
         'error_message': 'error_message',
-        'is_committer': 'is_committer'
+        'has_permission': 'has_permission'
     }
 
-    def __init__(self, id=None, name=None, username=None, state=None, service_license_status=None, avatar_url=None, avatar_path=None, email=None, name_cn=None, web_url=None, nick_name=None, tenant_name=None, error_message=None, is_committer=None):
-        r"""MergeRequestVoteReviewerDto
+    def __init__(self, id=None, name=None, username=None, state=None, service_license_status=None, avatar_url=None, avatar_path=None, email=None, name_cn=None, web_url=None, nick_name=None, tenant_name=None, error_message=None, has_permission=None):
+        r"""MergeRequestApprovalUserDto
 
         The model defined in huaweicloud sdk
 
@@ -79,8 +79,8 @@ class MergeRequestVoteReviewerDto:
         :type tenant_name: str
         :param error_message: **参数解释：** 部分查询接口校验到传参里的用户权限不足或不存在时，返回该用户但该字段不为空用于提示。
         :type error_message: str
-        :param is_committer: **参数解释：** 是否为committer。
-        :type is_committer: bool
+        :param has_permission: **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。           
+        :type has_permission: bool
         """
         
         
@@ -98,7 +98,7 @@ class MergeRequestVoteReviewerDto:
         self._nick_name = None
         self._tenant_name = None
         self._error_message = None
-        self._is_committer = None
+        self._has_permission = None
         self.discriminator = None
 
         if id is not None:
@@ -127,316 +127,316 @@ class MergeRequestVoteReviewerDto:
             self.tenant_name = tenant_name
         if error_message is not None:
             self.error_message = error_message
-        if is_committer is not None:
-            self.is_committer = is_committer
+        if has_permission is not None:
+            self.has_permission = has_permission
 
     @property
     def id(self):
-        r"""Gets the id of this MergeRequestVoteReviewerDto.
+        r"""Gets the id of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户id。
 
-        :return: The id of this MergeRequestVoteReviewerDto.
+        :return: The id of this MergeRequestApprovalUserDto.
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        r"""Sets the id of this MergeRequestVoteReviewerDto.
+        r"""Sets the id of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户id。
 
-        :param id: The id of this MergeRequestVoteReviewerDto.
+        :param id: The id of this MergeRequestApprovalUserDto.
         :type id: int
         """
         self._id = id
 
     @property
     def name(self):
-        r"""Gets the name of this MergeRequestVoteReviewerDto.
+        r"""Gets the name of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户名称。
 
-        :return: The name of this MergeRequestVoteReviewerDto.
+        :return: The name of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        r"""Sets the name of this MergeRequestVoteReviewerDto.
+        r"""Sets the name of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户名称。
 
-        :param name: The name of this MergeRequestVoteReviewerDto.
+        :param name: The name of this MergeRequestApprovalUserDto.
         :type name: str
         """
         self._name = name
 
     @property
     def username(self):
-        r"""Gets the username of this MergeRequestVoteReviewerDto.
+        r"""Gets the username of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户名。
 
-        :return: The username of this MergeRequestVoteReviewerDto.
+        :return: The username of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        r"""Sets the username of this MergeRequestVoteReviewerDto.
+        r"""Sets the username of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户名。
 
-        :param username: The username of this MergeRequestVoteReviewerDto.
+        :param username: The username of this MergeRequestApprovalUserDto.
         :type username: str
         """
         self._username = username
 
     @property
     def state(self):
-        r"""Gets the state of this MergeRequestVoteReviewerDto.
+        r"""Gets the state of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户状态。 **取值范围：** - active: 可用账户。 - blocked: 被锁定用户。 - error: 未查询到该用户。
 
-        :return: The state of this MergeRequestVoteReviewerDto.
+        :return: The state of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        r"""Sets the state of this MergeRequestVoteReviewerDto.
+        r"""Sets the state of this MergeRequestApprovalUserDto.
 
         **参数解释：** 用户状态。 **取值范围：** - active: 可用账户。 - blocked: 被锁定用户。 - error: 未查询到该用户。
 
-        :param state: The state of this MergeRequestVoteReviewerDto.
+        :param state: The state of this MergeRequestApprovalUserDto.
         :type state: str
         """
         self._state = state
 
     @property
     def service_license_status(self):
-        r"""Gets the service_license_status of this MergeRequestVoteReviewerDto.
+        r"""Gets the service_license_status of this MergeRequestApprovalUserDto.
 
         服务级权限状态 0：停用 1：启用
 
-        :return: The service_license_status of this MergeRequestVoteReviewerDto.
+        :return: The service_license_status of this MergeRequestApprovalUserDto.
         :rtype: int
         """
         return self._service_license_status
 
     @service_license_status.setter
     def service_license_status(self, service_license_status):
-        r"""Sets the service_license_status of this MergeRequestVoteReviewerDto.
+        r"""Sets the service_license_status of this MergeRequestApprovalUserDto.
 
         服务级权限状态 0：停用 1：启用
 
-        :param service_license_status: The service_license_status of this MergeRequestVoteReviewerDto.
+        :param service_license_status: The service_license_status of this MergeRequestApprovalUserDto.
         :type service_license_status: int
         """
         self._service_license_status = service_license_status
 
     @property
     def avatar_url(self):
-        r"""Gets the avatar_url of this MergeRequestVoteReviewerDto.
+        r"""Gets the avatar_url of this MergeRequestApprovalUserDto.
 
         用户头像url
 
-        :return: The avatar_url of this MergeRequestVoteReviewerDto.
+        :return: The avatar_url of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._avatar_url
 
     @avatar_url.setter
     def avatar_url(self, avatar_url):
-        r"""Sets the avatar_url of this MergeRequestVoteReviewerDto.
+        r"""Sets the avatar_url of this MergeRequestApprovalUserDto.
 
         用户头像url
 
-        :param avatar_url: The avatar_url of this MergeRequestVoteReviewerDto.
+        :param avatar_url: The avatar_url of this MergeRequestApprovalUserDto.
         :type avatar_url: str
         """
         self._avatar_url = avatar_url
 
     @property
     def avatar_path(self):
-        r"""Gets the avatar_path of this MergeRequestVoteReviewerDto.
+        r"""Gets the avatar_path of this MergeRequestApprovalUserDto.
 
         用户头像路径
 
-        :return: The avatar_path of this MergeRequestVoteReviewerDto.
+        :return: The avatar_path of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._avatar_path
 
     @avatar_path.setter
     def avatar_path(self, avatar_path):
-        r"""Sets the avatar_path of this MergeRequestVoteReviewerDto.
+        r"""Sets the avatar_path of this MergeRequestApprovalUserDto.
 
         用户头像路径
 
-        :param avatar_path: The avatar_path of this MergeRequestVoteReviewerDto.
+        :param avatar_path: The avatar_path of this MergeRequestApprovalUserDto.
         :type avatar_path: str
         """
         self._avatar_path = avatar_path
 
     @property
     def email(self):
-        r"""Gets the email of this MergeRequestVoteReviewerDto.
+        r"""Gets the email of this MergeRequestApprovalUserDto.
 
         用户邮箱
 
-        :return: The email of this MergeRequestVoteReviewerDto.
+        :return: The email of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        r"""Sets the email of this MergeRequestVoteReviewerDto.
+        r"""Sets the email of this MergeRequestApprovalUserDto.
 
         用户邮箱
 
-        :param email: The email of this MergeRequestVoteReviewerDto.
+        :param email: The email of this MergeRequestApprovalUserDto.
         :type email: str
         """
         self._email = email
 
     @property
     def name_cn(self):
-        r"""Gets the name_cn of this MergeRequestVoteReviewerDto.
+        r"""Gets the name_cn of this MergeRequestApprovalUserDto.
 
         用户中文名称
 
-        :return: The name_cn of this MergeRequestVoteReviewerDto.
+        :return: The name_cn of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._name_cn
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        r"""Sets the name_cn of this MergeRequestVoteReviewerDto.
+        r"""Sets the name_cn of this MergeRequestApprovalUserDto.
 
         用户中文名称
 
-        :param name_cn: The name_cn of this MergeRequestVoteReviewerDto.
+        :param name_cn: The name_cn of this MergeRequestApprovalUserDto.
         :type name_cn: str
         """
         self._name_cn = name_cn
 
     @property
     def web_url(self):
-        r"""Gets the web_url of this MergeRequestVoteReviewerDto.
+        r"""Gets the web_url of this MergeRequestApprovalUserDto.
 
         用户个人首页
 
-        :return: The web_url of this MergeRequestVoteReviewerDto.
+        :return: The web_url of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._web_url
 
     @web_url.setter
     def web_url(self, web_url):
-        r"""Sets the web_url of this MergeRequestVoteReviewerDto.
+        r"""Sets the web_url of this MergeRequestApprovalUserDto.
 
         用户个人首页
 
-        :param web_url: The web_url of this MergeRequestVoteReviewerDto.
+        :param web_url: The web_url of this MergeRequestApprovalUserDto.
         :type web_url: str
         """
         self._web_url = web_url
 
     @property
     def nick_name(self):
-        r"""Gets the nick_name of this MergeRequestVoteReviewerDto.
+        r"""Gets the nick_name of this MergeRequestApprovalUserDto.
 
         用户昵称
 
-        :return: The nick_name of this MergeRequestVoteReviewerDto.
+        :return: The nick_name of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._nick_name
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        r"""Sets the nick_name of this MergeRequestVoteReviewerDto.
+        r"""Sets the nick_name of this MergeRequestApprovalUserDto.
 
         用户昵称
 
-        :param nick_name: The nick_name of this MergeRequestVoteReviewerDto.
+        :param nick_name: The nick_name of this MergeRequestApprovalUserDto.
         :type nick_name: str
         """
         self._nick_name = nick_name
 
     @property
     def tenant_name(self):
-        r"""Gets the tenant_name of this MergeRequestVoteReviewerDto.
+        r"""Gets the tenant_name of this MergeRequestApprovalUserDto.
 
         租户名称
 
-        :return: The tenant_name of this MergeRequestVoteReviewerDto.
+        :return: The tenant_name of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._tenant_name
 
     @tenant_name.setter
     def tenant_name(self, tenant_name):
-        r"""Sets the tenant_name of this MergeRequestVoteReviewerDto.
+        r"""Sets the tenant_name of this MergeRequestApprovalUserDto.
 
         租户名称
 
-        :param tenant_name: The tenant_name of this MergeRequestVoteReviewerDto.
+        :param tenant_name: The tenant_name of this MergeRequestApprovalUserDto.
         :type tenant_name: str
         """
         self._tenant_name = tenant_name
 
     @property
     def error_message(self):
-        r"""Gets the error_message of this MergeRequestVoteReviewerDto.
+        r"""Gets the error_message of this MergeRequestApprovalUserDto.
 
         **参数解释：** 部分查询接口校验到传参里的用户权限不足或不存在时，返回该用户但该字段不为空用于提示。
 
-        :return: The error_message of this MergeRequestVoteReviewerDto.
+        :return: The error_message of this MergeRequestApprovalUserDto.
         :rtype: str
         """
         return self._error_message
 
     @error_message.setter
     def error_message(self, error_message):
-        r"""Sets the error_message of this MergeRequestVoteReviewerDto.
+        r"""Sets the error_message of this MergeRequestApprovalUserDto.
 
         **参数解释：** 部分查询接口校验到传参里的用户权限不足或不存在时，返回该用户但该字段不为空用于提示。
 
-        :param error_message: The error_message of this MergeRequestVoteReviewerDto.
+        :param error_message: The error_message of this MergeRequestApprovalUserDto.
         :type error_message: str
         """
         self._error_message = error_message
 
     @property
-    def is_committer(self):
-        r"""Gets the is_committer of this MergeRequestVoteReviewerDto.
+    def has_permission(self):
+        r"""Gets the has_permission of this MergeRequestApprovalUserDto.
 
-        **参数解释：** 是否为committer。
+        **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。           
 
-        :return: The is_committer of this MergeRequestVoteReviewerDto.
+        :return: The has_permission of this MergeRequestApprovalUserDto.
         :rtype: bool
         """
-        return self._is_committer
+        return self._has_permission
 
-    @is_committer.setter
-    def is_committer(self, is_committer):
-        r"""Sets the is_committer of this MergeRequestVoteReviewerDto.
+    @has_permission.setter
+    def has_permission(self, has_permission):
+        r"""Sets the has_permission of this MergeRequestApprovalUserDto.
 
-        **参数解释：** 是否为committer。
+        **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。           
 
-        :param is_committer: The is_committer of this MergeRequestVoteReviewerDto.
-        :type is_committer: bool
+        :param has_permission: The has_permission of this MergeRequestApprovalUserDto.
+        :type has_permission: bool
         """
-        self._is_committer = is_committer
+        self._has_permission = has_permission
 
     def to_dict(self):
         result = {}
@@ -475,7 +475,7 @@ class MergeRequestVoteReviewerDto:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MergeRequestVoteReviewerDto):
+        if not isinstance(other, MergeRequestApprovalUserDto):
             return False
 
         return self.__dict__ == other.__dict__

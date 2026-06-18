@@ -17,7 +17,6 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
 
     openapi_types = {
         'id': 'int',
-        'repository_id': 'int',
         'description': 'str',
         'created_at': 'str',
         'updated_at': 'str',
@@ -26,12 +25,13 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         'is_default': 'bool',
         'is_wip': 'bool',
         'auto_extract_mr_title': 'int',
-        'creator': 'UserBasicDto'
+        'creator': 'UserBasicDto',
+        'repository_id': 'int',
+        '_from': 'MergeRequestTemplateFromDto'
     }
 
     attribute_map = {
         'id': 'id',
-        'repository_id': 'repository_id',
         'description': 'description',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
@@ -40,18 +40,18 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         'is_default': 'is_default',
         'is_wip': 'is_wip',
         'auto_extract_mr_title': 'auto_extract_mr_title',
-        'creator': 'creator'
+        'creator': 'creator',
+        'repository_id': 'repository_id',
+        '_from': 'from'
     }
 
-    def __init__(self, id=None, repository_id=None, description=None, created_at=None, updated_at=None, template_name=None, merge_request_title=None, is_default=None, is_wip=None, auto_extract_mr_title=None, creator=None):
+    def __init__(self, id=None, description=None, created_at=None, updated_at=None, template_name=None, merge_request_title=None, is_default=None, is_wip=None, auto_extract_mr_title=None, creator=None, repository_id=None, _from=None):
         r"""ShowMergeRequestTemplateResponse
 
         The model defined in huaweicloud sdk
 
         :param id: **参数解释：** 合并请求模板主键id
         :type id: int
-        :param repository_id: **参数解释：** 仓库id。
-        :type repository_id: int
         :param description: **参数解释：** 描述
         :type description: str
         :param created_at: **参数解释：** 创建时间。
@@ -70,12 +70,15 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         :type auto_extract_mr_title: int
         :param creator: 
         :type creator: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
+        :param repository_id: **参数解释：** 仓库id。
+        :type repository_id: int
+        :param _from: 
+        :type _from: :class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestTemplateFromDto`
         """
         
         super().__init__()
 
         self._id = None
-        self._repository_id = None
         self._description = None
         self._created_at = None
         self._updated_at = None
@@ -85,12 +88,12 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         self._is_wip = None
         self._auto_extract_mr_title = None
         self._creator = None
+        self._repository_id = None
+        self.__from = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if repository_id is not None:
-            self.repository_id = repository_id
         if description is not None:
             self.description = description
         if created_at is not None:
@@ -109,6 +112,10 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
             self.auto_extract_mr_title = auto_extract_mr_title
         if creator is not None:
             self.creator = creator
+        if repository_id is not None:
+            self.repository_id = repository_id
+        if _from is not None:
+            self._from = _from
 
     @property
     def id(self):
@@ -131,28 +138,6 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         :type id: int
         """
         self._id = id
-
-    @property
-    def repository_id(self):
-        r"""Gets the repository_id of this ShowMergeRequestTemplateResponse.
-
-        **参数解释：** 仓库id。
-
-        :return: The repository_id of this ShowMergeRequestTemplateResponse.
-        :rtype: int
-        """
-        return self._repository_id
-
-    @repository_id.setter
-    def repository_id(self, repository_id):
-        r"""Sets the repository_id of this ShowMergeRequestTemplateResponse.
-
-        **参数解释：** 仓库id。
-
-        :param repository_id: The repository_id of this ShowMergeRequestTemplateResponse.
-        :type repository_id: int
-        """
-        self._repository_id = repository_id
 
     @property
     def description(self):
@@ -347,6 +332,46 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
         :type creator: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
         """
         self._creator = creator
+
+    @property
+    def repository_id(self):
+        r"""Gets the repository_id of this ShowMergeRequestTemplateResponse.
+
+        **参数解释：** 仓库id。
+
+        :return: The repository_id of this ShowMergeRequestTemplateResponse.
+        :rtype: int
+        """
+        return self._repository_id
+
+    @repository_id.setter
+    def repository_id(self, repository_id):
+        r"""Sets the repository_id of this ShowMergeRequestTemplateResponse.
+
+        **参数解释：** 仓库id。
+
+        :param repository_id: The repository_id of this ShowMergeRequestTemplateResponse.
+        :type repository_id: int
+        """
+        self._repository_id = repository_id
+
+    @property
+    def _from(self):
+        r"""Gets the _from of this ShowMergeRequestTemplateResponse.
+
+        :return: The _from of this ShowMergeRequestTemplateResponse.
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestTemplateFromDto`
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        r"""Sets the _from of this ShowMergeRequestTemplateResponse.
+
+        :param _from: The _from of this ShowMergeRequestTemplateResponse.
+        :type _from: :class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestTemplateFromDto`
+        """
+        self.__from = _from
 
     def to_dict(self):
         import warnings

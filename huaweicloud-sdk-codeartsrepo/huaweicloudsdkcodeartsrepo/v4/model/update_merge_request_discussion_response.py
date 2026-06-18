@@ -19,7 +19,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         'id': 'int',
         'type': 'str',
         'body': 'str',
-        'attachment': 'str',
         'author': 'UserBasicDto',
         'created_at': 'str',
         'updated_at': 'str',
@@ -50,6 +49,7 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         'position': 'PositionDto',
         'resolved': 'bool',
         'is_outdated': 'bool',
+        'from_robot': 'bool',
         'moderation_result': 'bool',
         'moderation_time': 'int',
         'moderation_status': 'int'
@@ -59,7 +59,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         'id': 'id',
         'type': 'type',
         'body': 'body',
-        'attachment': 'attachment',
         'author': 'author',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
@@ -90,12 +89,13 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         'position': 'position',
         'resolved': 'resolved',
         'is_outdated': 'is_outdated',
+        'from_robot': 'from_robot',
         'moderation_result': 'moderation_result',
         'moderation_time': 'moderation_time',
         'moderation_status': 'moderation_status'
     }
 
-    def __init__(self, id=None, type=None, body=None, attachment=None, author=None, created_at=None, updated_at=None, system=None, noteable_id=None, noteable_type=None, commit_id=None, resolvable=None, is_reply=None, resolved_by=None, noteable_iid=None, discussion_id=None, repository=None, diff_file=None, diff=None, archived=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, file_path=None, line=None, assignee=None, proposer=None, position=None, resolved=None, is_outdated=None, moderation_result=None, moderation_time=None, moderation_status=None):
+    def __init__(self, id=None, type=None, body=None, author=None, created_at=None, updated_at=None, system=None, noteable_id=None, noteable_type=None, commit_id=None, resolvable=None, is_reply=None, resolved_by=None, noteable_iid=None, discussion_id=None, repository=None, diff_file=None, diff=None, archived=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, file_path=None, line=None, assignee=None, proposer=None, position=None, resolved=None, is_outdated=None, from_robot=None, moderation_result=None, moderation_time=None, moderation_status=None):
         r"""UpdateMergeRequestDiscussionResponse
 
         The model defined in huaweicloud sdk
@@ -106,8 +106,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         :type type: str
         :param body: **参数解释：** 评论内容。
         :type body: str
-        :param attachment: **参数解释：** 附件(弃用)。
-        :type attachment: str
         :param author: 
         :type author: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
         :param created_at: **参数解释：** 创建时间。
@@ -120,7 +118,7 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         :type noteable_id: int
         :param noteable_type: **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
         :type noteable_type: str
-        :param commit_id: **参数解释：** 提交记录id。
+        :param commit_id: **参数解释：** 提交记录id(源自合并请求下的评论commit_id为null，源自commit的评论才有值)。 **约束限制：** 不涉及。 **取值范围：** 长度为40的sha1字符串。 **默认取值：** 不涉及。
         :type commit_id: str
         :param resolvable: **参数解释：** 是否需要解决。
         :type resolvable: bool
@@ -168,6 +166,8 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         :type resolved: bool
         :param is_outdated: **参数解释：** 是否已过期。
         :type is_outdated: bool
+        :param from_robot: **参数解释：** 是否为AI工具提供的。
+        :type from_robot: bool
         :param moderation_result: **参数解释：** 内容审核结果。
         :type moderation_result: bool
         :param moderation_time: **参数解释：** 内容审核时间。
@@ -181,7 +181,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         self._id = None
         self._type = None
         self._body = None
-        self._attachment = None
         self._author = None
         self._created_at = None
         self._updated_at = None
@@ -212,6 +211,7 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         self._position = None
         self._resolved = None
         self._is_outdated = None
+        self._from_robot = None
         self._moderation_result = None
         self._moderation_time = None
         self._moderation_status = None
@@ -223,8 +223,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
             self.type = type
         if body is not None:
             self.body = body
-        if attachment is not None:
-            self.attachment = attachment
         if author is not None:
             self.author = author
         if created_at is not None:
@@ -285,6 +283,8 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
             self.resolved = resolved
         if is_outdated is not None:
             self.is_outdated = is_outdated
+        if from_robot is not None:
+            self.from_robot = from_robot
         if moderation_result is not None:
             self.moderation_result = moderation_result
         if moderation_time is not None:
@@ -357,28 +357,6 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         :type body: str
         """
         self._body = body
-
-    @property
-    def attachment(self):
-        r"""Gets the attachment of this UpdateMergeRequestDiscussionResponse.
-
-        **参数解释：** 附件(弃用)。
-
-        :return: The attachment of this UpdateMergeRequestDiscussionResponse.
-        :rtype: str
-        """
-        return self._attachment
-
-    @attachment.setter
-    def attachment(self, attachment):
-        r"""Sets the attachment of this UpdateMergeRequestDiscussionResponse.
-
-        **参数解释：** 附件(弃用)。
-
-        :param attachment: The attachment of this UpdateMergeRequestDiscussionResponse.
-        :type attachment: str
-        """
-        self._attachment = attachment
 
     @property
     def author(self):
@@ -512,7 +490,7 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
     def commit_id(self):
         r"""Gets the commit_id of this UpdateMergeRequestDiscussionResponse.
 
-        **参数解释：** 提交记录id。
+        **参数解释：** 提交记录id(源自合并请求下的评论commit_id为null，源自commit的评论才有值)。 **约束限制：** 不涉及。 **取值范围：** 长度为40的sha1字符串。 **默认取值：** 不涉及。
 
         :return: The commit_id of this UpdateMergeRequestDiscussionResponse.
         :rtype: str
@@ -523,7 +501,7 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
     def commit_id(self, commit_id):
         r"""Sets the commit_id of this UpdateMergeRequestDiscussionResponse.
 
-        **参数解释：** 提交记录id。
+        **参数解释：** 提交记录id(源自合并请求下的评论commit_id为null，源自commit的评论才有值)。 **约束限制：** 不涉及。 **取值范围：** 长度为40的sha1字符串。 **默认取值：** 不涉及。
 
         :param commit_id: The commit_id of this UpdateMergeRequestDiscussionResponse.
         :type commit_id: str
@@ -1019,6 +997,28 @@ class UpdateMergeRequestDiscussionResponse(SdkResponse):
         :type is_outdated: bool
         """
         self._is_outdated = is_outdated
+
+    @property
+    def from_robot(self):
+        r"""Gets the from_robot of this UpdateMergeRequestDiscussionResponse.
+
+        **参数解释：** 是否为AI工具提供的。
+
+        :return: The from_robot of this UpdateMergeRequestDiscussionResponse.
+        :rtype: bool
+        """
+        return self._from_robot
+
+    @from_robot.setter
+    def from_robot(self, from_robot):
+        r"""Sets the from_robot of this UpdateMergeRequestDiscussionResponse.
+
+        **参数解释：** 是否为AI工具提供的。
+
+        :param from_robot: The from_robot of this UpdateMergeRequestDiscussionResponse.
+        :type from_robot: bool
+        """
+        self._from_robot = from_robot
 
     @property
     def moderation_result(self):

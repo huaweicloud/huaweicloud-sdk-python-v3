@@ -22,8 +22,8 @@ class SubgroupAndProjectBaseDto:
         'full_name': 'str',
         'full_path': 'str',
         'created_at': 'str',
-        'updated_at_timestamp': 'str',
-        'star_time': 'str',
+        'updated_at_timestamp': 'int',
+        'star_time': 'int',
         'starred': 'bool',
         'develop_mode': 'str',
         'id': 'int',
@@ -130,9 +130,9 @@ class SubgroupAndProjectBaseDto:
         :param created_at: **参数解释：** 创建时间。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type created_at: str
         :param updated_at_timestamp: **参数解释：** 更新时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
-        :type updated_at_timestamp: str
+        :type updated_at_timestamp: int
         :param star_time: **参数解释：** 开始时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
-        :type star_time: str
+        :type star_time: int
         :param starred: **参数解释：** 是否收藏。
         :type starred: bool
         :param develop_mode: **参数解释：** 开发模式，cr,\&quot;normal\&quot;。 **取值范围：** 字符串长度不少于1，不超过1000。
@@ -508,7 +508,7 @@ class SubgroupAndProjectBaseDto:
         **参数解释：** 更新时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :return: The updated_at_timestamp of this SubgroupAndProjectBaseDto.
-        :rtype: str
+        :rtype: int
         """
         return self._updated_at_timestamp
 
@@ -519,7 +519,7 @@ class SubgroupAndProjectBaseDto:
         **参数解释：** 更新时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :param updated_at_timestamp: The updated_at_timestamp of this SubgroupAndProjectBaseDto.
-        :type updated_at_timestamp: str
+        :type updated_at_timestamp: int
         """
         self._updated_at_timestamp = updated_at_timestamp
 
@@ -530,7 +530,7 @@ class SubgroupAndProjectBaseDto:
         **参数解释：** 开始时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :return: The star_time of this SubgroupAndProjectBaseDto.
-        :rtype: str
+        :rtype: int
         """
         return self._star_time
 
@@ -541,7 +541,7 @@ class SubgroupAndProjectBaseDto:
         **参数解释：** 开始时间戳。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :param star_time: The star_time of this SubgroupAndProjectBaseDto.
-        :type star_time: str
+        :type star_time: int
         """
         self._star_time = star_time
 

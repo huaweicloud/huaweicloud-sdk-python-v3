@@ -18,6 +18,7 @@ class WebhookParamsDto:
         'url': 'str',
         'push_events': 'bool',
         'push_events_branch_regex_filter': 'str',
+        'note_plain_text_filter': 'list[str]',
         'tag_push_events': 'bool',
         'merge_requests_events': 'bool',
         'note_events': 'bool',
@@ -31,6 +32,7 @@ class WebhookParamsDto:
         'url': 'url',
         'push_events': 'push_events',
         'push_events_branch_regex_filter': 'push_events_branch_regex_filter',
+        'note_plain_text_filter': 'note_plain_text_filter',
         'tag_push_events': 'tag_push_events',
         'merge_requests_events': 'merge_requests_events',
         'note_events': 'note_events',
@@ -40,7 +42,7 @@ class WebhookParamsDto:
         'description': 'description'
     }
 
-    def __init__(self, url=None, push_events=None, push_events_branch_regex_filter=None, tag_push_events=None, merge_requests_events=None, note_events=None, token=None, token_type=None, name=None, description=None):
+    def __init__(self, url=None, push_events=None, push_events_branch_regex_filter=None, note_plain_text_filter=None, tag_push_events=None, merge_requests_events=None, note_events=None, token=None, token_type=None, name=None, description=None):
         r"""WebhookParamsDto
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class WebhookParamsDto:
         :type push_events: bool
         :param push_events_branch_regex_filter: **参数解释：** 推送事件分支过滤正则规则。 **取值范围：** 字符串长度不少于0，不超过500。                
         :type push_events_branch_regex_filter: str
+        :param note_plain_text_filter: **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+        :type note_plain_text_filter: list[str]
         :param tag_push_events: **参数解释：** 是否启用Tag推送事件。
         :type tag_push_events: bool
         :param merge_requests_events: **参数解释：** 是否启用合并请求事件。
@@ -72,6 +76,7 @@ class WebhookParamsDto:
         self._url = None
         self._push_events = None
         self._push_events_branch_regex_filter = None
+        self._note_plain_text_filter = None
         self._tag_push_events = None
         self._merge_requests_events = None
         self._note_events = None
@@ -87,6 +92,8 @@ class WebhookParamsDto:
             self.push_events = push_events
         if push_events_branch_regex_filter is not None:
             self.push_events_branch_regex_filter = push_events_branch_regex_filter
+        if note_plain_text_filter is not None:
+            self.note_plain_text_filter = note_plain_text_filter
         if tag_push_events is not None:
             self.tag_push_events = tag_push_events
         if merge_requests_events is not None:
@@ -167,6 +174,28 @@ class WebhookParamsDto:
         :type push_events_branch_regex_filter: str
         """
         self._push_events_branch_regex_filter = push_events_branch_regex_filter
+
+    @property
+    def note_plain_text_filter(self):
+        r"""Gets the note_plain_text_filter of this WebhookParamsDto.
+
+        **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+
+        :return: The note_plain_text_filter of this WebhookParamsDto.
+        :rtype: list[str]
+        """
+        return self._note_plain_text_filter
+
+    @note_plain_text_filter.setter
+    def note_plain_text_filter(self, note_plain_text_filter):
+        r"""Sets the note_plain_text_filter of this WebhookParamsDto.
+
+        **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+
+        :param note_plain_text_filter: The note_plain_text_filter of this WebhookParamsDto.
+        :type note_plain_text_filter: list[str]
+        """
+        self._note_plain_text_filter = note_plain_text_filter
 
     @property
     def tag_push_events(self):

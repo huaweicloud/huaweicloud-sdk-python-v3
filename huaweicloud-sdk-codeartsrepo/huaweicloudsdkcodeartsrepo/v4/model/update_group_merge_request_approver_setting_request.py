@@ -31,7 +31,7 @@ class UpdateGroupMergeRequestApproverSettingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param setting_id: **参数解释：** 合并请求审核设置id。
         :type setting_id: int
@@ -55,7 +55,7 @@ class UpdateGroupMergeRequestApproverSettingRequest:
     def group_id(self):
         r"""Gets the group_id of this UpdateGroupMergeRequestApproverSettingRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this UpdateGroupMergeRequestApproverSettingRequest.
         :rtype: int
@@ -66,7 +66,7 @@ class UpdateGroupMergeRequestApproverSettingRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateGroupMergeRequestApproverSettingRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this UpdateGroupMergeRequestApproverSettingRequest.
         :type group_id: int

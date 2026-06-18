@@ -36,8 +36,7 @@ class UpdateHttpsPasswordSetting:
         self._https_clone_iam_auth = None
         self.discriminator = None
 
-        if https_clone_iam_auth is not None:
-            self.https_clone_iam_auth = https_clone_iam_auth
+        self.https_clone_iam_auth = https_clone_iam_auth
 
     @property
     def https_clone_iam_auth(self):

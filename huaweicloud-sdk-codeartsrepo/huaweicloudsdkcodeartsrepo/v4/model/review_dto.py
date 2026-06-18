@@ -131,13 +131,13 @@ class ReviewDto:
         :type moderation_time: int
         :param moderation_status: **参数解释：** 内容审核状态。
         :type moderation_status: int
-        :param merge_request_id: **参数解释：** 合并请求id(noteable_type&#x3D;MergRequest时返回)。
+        :param merge_request_id: **参数解释：** 合并请求id(noteable_type&#x3D;MergeRequest时返回)。
         :type merge_request_id: int
-        :param merge_request_iid: **参数解释：** 合并请求iid(noteable_type&#x3D;MergRequest时返回)。
+        :param merge_request_iid: **参数解释：** 合并请求iid(noteable_type&#x3D;MergeRequest时返回)。
         :type merge_request_iid: int
-        :param merge_request_title: **参数解释：** 合并请求标题(noteable_type&#x3D;MergRequest时返回)。
+        :param merge_request_title: **参数解释：** 合并请求标题(noteable_type&#x3D;MergeRequest时返回)。
         :type merge_request_title: str
-        :param merge_request_state: **参数解释：** 合并请求状态(noteable_type&#x3D;MergRequest时返回)。
+        :param merge_request_state: **参数解释：** 合并请求状态(noteable_type&#x3D;MergeRequest时返回)。
         :type merge_request_state: str
         :param commit_id: **参数解释：** commit id(noteable_type&#x3D;Commit时返回)。
         :type commit_id: str
@@ -747,7 +747,7 @@ class ReviewDto:
     def merge_request_id(self):
         r"""Gets the merge_request_id of this ReviewDto.
 
-        **参数解释：** 合并请求id(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求id(noteable_type=MergeRequest时返回)。
 
         :return: The merge_request_id of this ReviewDto.
         :rtype: int
@@ -758,7 +758,7 @@ class ReviewDto:
     def merge_request_id(self, merge_request_id):
         r"""Sets the merge_request_id of this ReviewDto.
 
-        **参数解释：** 合并请求id(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求id(noteable_type=MergeRequest时返回)。
 
         :param merge_request_id: The merge_request_id of this ReviewDto.
         :type merge_request_id: int
@@ -769,7 +769,7 @@ class ReviewDto:
     def merge_request_iid(self):
         r"""Gets the merge_request_iid of this ReviewDto.
 
-        **参数解释：** 合并请求iid(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求iid(noteable_type=MergeRequest时返回)。
 
         :return: The merge_request_iid of this ReviewDto.
         :rtype: int
@@ -780,7 +780,7 @@ class ReviewDto:
     def merge_request_iid(self, merge_request_iid):
         r"""Sets the merge_request_iid of this ReviewDto.
 
-        **参数解释：** 合并请求iid(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求iid(noteable_type=MergeRequest时返回)。
 
         :param merge_request_iid: The merge_request_iid of this ReviewDto.
         :type merge_request_iid: int
@@ -791,7 +791,7 @@ class ReviewDto:
     def merge_request_title(self):
         r"""Gets the merge_request_title of this ReviewDto.
 
-        **参数解释：** 合并请求标题(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求标题(noteable_type=MergeRequest时返回)。
 
         :return: The merge_request_title of this ReviewDto.
         :rtype: str
@@ -802,7 +802,7 @@ class ReviewDto:
     def merge_request_title(self, merge_request_title):
         r"""Sets the merge_request_title of this ReviewDto.
 
-        **参数解释：** 合并请求标题(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求标题(noteable_type=MergeRequest时返回)。
 
         :param merge_request_title: The merge_request_title of this ReviewDto.
         :type merge_request_title: str
@@ -813,7 +813,7 @@ class ReviewDto:
     def merge_request_state(self):
         r"""Gets the merge_request_state of this ReviewDto.
 
-        **参数解释：** 合并请求状态(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求状态(noteable_type=MergeRequest时返回)。
 
         :return: The merge_request_state of this ReviewDto.
         :rtype: str
@@ -824,7 +824,7 @@ class ReviewDto:
     def merge_request_state(self, merge_request_state):
         r"""Sets the merge_request_state of this ReviewDto.
 
-        **参数解释：** 合并请求状态(noteable_type=MergRequest时返回)。
+        **参数解释：** 合并请求状态(noteable_type=MergeRequest时返回)。
 
         :param merge_request_state: The merge_request_state of this ReviewDto.
         :type merge_request_state: str

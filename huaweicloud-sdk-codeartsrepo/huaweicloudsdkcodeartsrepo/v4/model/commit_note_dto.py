@@ -23,7 +23,6 @@ class CommitNoteDto:
         'body': 'str',
         'diff_file': 'str',
         'diff': 'str',
-        'attachment': 'str',
         'author': 'UserBasicDto',
         'created_at': 'str',
         'updated_at': 'str',
@@ -47,6 +46,7 @@ class CommitNoteDto:
         'assignee': 'UserBasicDto',
         'proposer': 'UserBasicDto',
         'is_reply': 'bool',
+        'from_robot': 'bool',
         'moderation_result': 'bool',
         'moderation_time': 'int',
         'moderation_status': 'int'
@@ -61,7 +61,6 @@ class CommitNoteDto:
         'body': 'body',
         'diff_file': 'diff_file',
         'diff': 'diff',
-        'attachment': 'attachment',
         'author': 'author',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
@@ -85,12 +84,13 @@ class CommitNoteDto:
         'assignee': 'assignee',
         'proposer': 'proposer',
         'is_reply': 'is_reply',
+        'from_robot': 'from_robot',
         'moderation_result': 'moderation_result',
         'moderation_time': 'moderation_time',
         'moderation_status': 'moderation_status'
     }
 
-    def __init__(self, id=None, noteable_type=None, commit_id=None, discussion_id=None, type=None, body=None, diff_file=None, diff=None, attachment=None, author=None, created_at=None, updated_at=None, system=None, noteable_id=None, position=None, resolvable=None, resolved=None, resolved_by=None, archived=None, noteable_iid=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, file_path=None, line=None, assignee=None, proposer=None, is_reply=None, moderation_result=None, moderation_time=None, moderation_status=None):
+    def __init__(self, id=None, noteable_type=None, commit_id=None, discussion_id=None, type=None, body=None, diff_file=None, diff=None, author=None, created_at=None, updated_at=None, system=None, noteable_id=None, position=None, resolvable=None, resolved=None, resolved_by=None, archived=None, noteable_iid=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, file_path=None, line=None, assignee=None, proposer=None, is_reply=None, from_robot=None, moderation_result=None, moderation_time=None, moderation_status=None):
         r"""CommitNoteDto
 
         The model defined in huaweicloud sdk
@@ -111,8 +111,6 @@ class CommitNoteDto:
         :type diff_file: str
         :param diff: **参数解释：** 关联代码行的代码片段。
         :type diff: str
-        :param attachment: **参数解释：** 附件(弃用)。
-        :type attachment: str
         :param author: 
         :type author: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
         :param created_at: **参数解释：** 创建时间。
@@ -159,6 +157,8 @@ class CommitNoteDto:
         :type proposer: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
         :param is_reply: **参数解释：** 是否为回复。
         :type is_reply: bool
+        :param from_robot: **参数解释：** 是否为AI工具提供的。
+        :type from_robot: bool
         :param moderation_result: **参数解释：** 内容审核结果。
         :type moderation_result: bool
         :param moderation_time: **参数解释：** 内容审核时间。
@@ -177,7 +177,6 @@ class CommitNoteDto:
         self._body = None
         self._diff_file = None
         self._diff = None
-        self._attachment = None
         self._author = None
         self._created_at = None
         self._updated_at = None
@@ -201,6 +200,7 @@ class CommitNoteDto:
         self._assignee = None
         self._proposer = None
         self._is_reply = None
+        self._from_robot = None
         self._moderation_result = None
         self._moderation_time = None
         self._moderation_status = None
@@ -222,8 +222,6 @@ class CommitNoteDto:
             self.diff_file = diff_file
         if diff is not None:
             self.diff = diff
-        if attachment is not None:
-            self.attachment = attachment
         if author is not None:
             self.author = author
         if created_at is not None:
@@ -270,6 +268,8 @@ class CommitNoteDto:
             self.proposer = proposer
         if is_reply is not None:
             self.is_reply = is_reply
+        if from_robot is not None:
+            self.from_robot = from_robot
         if moderation_result is not None:
             self.moderation_result = moderation_result
         if moderation_time is not None:
@@ -452,28 +452,6 @@ class CommitNoteDto:
         :type diff: str
         """
         self._diff = diff
-
-    @property
-    def attachment(self):
-        r"""Gets the attachment of this CommitNoteDto.
-
-        **参数解释：** 附件(弃用)。
-
-        :return: The attachment of this CommitNoteDto.
-        :rtype: str
-        """
-        return self._attachment
-
-    @attachment.setter
-    def attachment(self, attachment):
-        r"""Sets the attachment of this CommitNoteDto.
-
-        **参数解释：** 附件(弃用)。
-
-        :param attachment: The attachment of this CommitNoteDto.
-        :type attachment: str
-        """
-        self._attachment = attachment
 
     @property
     def author(self):
@@ -960,6 +938,28 @@ class CommitNoteDto:
         :type is_reply: bool
         """
         self._is_reply = is_reply
+
+    @property
+    def from_robot(self):
+        r"""Gets the from_robot of this CommitNoteDto.
+
+        **参数解释：** 是否为AI工具提供的。
+
+        :return: The from_robot of this CommitNoteDto.
+        :rtype: bool
+        """
+        return self._from_robot
+
+    @from_robot.setter
+    def from_robot(self, from_robot):
+        r"""Sets the from_robot of this CommitNoteDto.
+
+        **参数解释：** 是否为AI工具提供的。
+
+        :param from_robot: The from_robot of this CommitNoteDto.
+        :type from_robot: bool
+        """
+        self._from_robot = from_robot
 
     @property
     def moderation_result(self):

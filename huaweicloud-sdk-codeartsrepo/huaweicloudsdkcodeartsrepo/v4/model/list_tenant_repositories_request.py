@@ -23,6 +23,7 @@ class ListTenantRepositoriesRequest:
         'created_before': 'datetime',
         'sort': 'str',
         'sort_field': 'str',
+        'locked': 'bool',
         'offset': 'int',
         'limit': 'int'
     }
@@ -36,11 +37,12 @@ class ListTenantRepositoriesRequest:
         'created_before': 'created_before',
         'sort': 'sort',
         'sort_field': 'sort_field',
+        'locked': 'locked',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, repository_name=None, member_number=None, status=None, owner=None, created_after=None, created_before=None, sort=None, sort_field=None, offset=None, limit=None):
+    def __init__(self, repository_name=None, member_number=None, status=None, owner=None, created_after=None, created_before=None, sort=None, sort_field=None, locked=None, offset=None, limit=None):
         r"""ListTenantRepositoriesRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListTenantRepositoriesRequest:
         :type sort: str
         :param sort_field: **参数解释：** 用作排序的字段。 - owner，仓库所有者。 - capacity，使用空间。 - status，状态。 - create_time，创建时间。 - member_number，成员数量。 - repository_name，仓库名称。
         :type sort_field: str
+        :param locked: **参数解释：** 是否锁定。 **约束限制：** 不传是查询全部数据 **取值范围：** - true，锁定的仓库。 - false，未锁定的仓库。
+        :type locked: bool
         :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
         :param limit: **参数解释：** 返回数量。
@@ -77,6 +81,7 @@ class ListTenantRepositoriesRequest:
         self._created_before = None
         self._sort = None
         self._sort_field = None
+        self._locked = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -97,6 +102,8 @@ class ListTenantRepositoriesRequest:
             self.sort = sort
         if sort_field is not None:
             self.sort_field = sort_field
+        if locked is not None:
+            self.locked = locked
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -277,6 +284,28 @@ class ListTenantRepositoriesRequest:
         :type sort_field: str
         """
         self._sort_field = sort_field
+
+    @property
+    def locked(self):
+        r"""Gets the locked of this ListTenantRepositoriesRequest.
+
+        **参数解释：** 是否锁定。 **约束限制：** 不传是查询全部数据 **取值范围：** - true，锁定的仓库。 - false，未锁定的仓库。
+
+        :return: The locked of this ListTenantRepositoriesRequest.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        r"""Sets the locked of this ListTenantRepositoriesRequest.
+
+        **参数解释：** 是否锁定。 **约束限制：** 不传是查询全部数据 **取值范围：** - true，锁定的仓库。 - false，未锁定的仓库。
+
+        :param locked: The locked of this ListTenantRepositoriesRequest.
+        :type locked: bool
+        """
+        self._locked = locked
 
     @property
     def offset(self):

@@ -27,8 +27,12 @@ class ImportMergeRequestResponse(SdkResponse):
         'source_branch': 'str',
         'target_branch': 'str',
         'is_source_branch_protected': 'bool',
+        'is_source_branch_default': 'bool',
         'devcloud_source_branch': 'str',
+        'upvotes': 'int',
+        'downvotes': 'int',
         'author': 'UserBasicExternalDto',
+        'assignee': 'UserBasicExternalDto',
         'source_repository_id': 'int',
         'target_repository_id': 'int',
         'source_project_id': 'str',
@@ -46,6 +50,7 @@ class ImportMergeRequestResponse(SdkResponse):
         'closed_by': 'UserBasicExternalDto',
         'closed_at': 'str',
         'user_notes_count': 'int',
+        'should_remove_source_branch': 'bool',
         'force_remove_source_branch': 'bool',
         'web_url': 'str',
         'merge_request_diff': 'MergeRequestDiffExternalDto',
@@ -62,10 +67,12 @@ class ImportMergeRequestResponse(SdkResponse):
         'moderation_time': 'int',
         'moderation_status': 'int',
         'is_use_temp_branch': 'bool',
+        'only_assignee_can_merge': 'bool',
         'review_mode': 'str',
         'squash': 'bool',
         'approval_merge_request_approvers': 'list[ApprovalUserDto]',
         'approval_merge_request_reviewers': 'list[ApprovalUserDto]',
+        'topic': 'str',
         'source_repository': 'ProjectSimpleDto',
         'target_repository': 'ProjectSimpleDto',
         'is_source_branch_exist': 'bool',
@@ -89,8 +96,12 @@ class ImportMergeRequestResponse(SdkResponse):
         'source_branch': 'source_branch',
         'target_branch': 'target_branch',
         'is_source_branch_protected': 'is_source_branch_protected',
+        'is_source_branch_default': 'is_source_branch_default',
         'devcloud_source_branch': 'devcloud_source_branch',
+        'upvotes': 'upvotes',
+        'downvotes': 'downvotes',
         'author': 'author',
+        'assignee': 'assignee',
         'source_repository_id': 'source_repository_id',
         'target_repository_id': 'target_repository_id',
         'source_project_id': 'source_project_id',
@@ -108,6 +119,7 @@ class ImportMergeRequestResponse(SdkResponse):
         'closed_by': 'closed_by',
         'closed_at': 'closed_at',
         'user_notes_count': 'user_notes_count',
+        'should_remove_source_branch': 'should_remove_source_branch',
         'force_remove_source_branch': 'force_remove_source_branch',
         'web_url': 'web_url',
         'merge_request_diff': 'merge_request_diff',
@@ -124,10 +136,12 @@ class ImportMergeRequestResponse(SdkResponse):
         'moderation_time': 'moderation_time',
         'moderation_status': 'moderation_status',
         'is_use_temp_branch': 'is_use_temp_branch',
+        'only_assignee_can_merge': 'only_assignee_can_merge',
         'review_mode': 'review_mode',
         'squash': 'squash',
         'approval_merge_request_approvers': 'approval_merge_request_approvers',
         'approval_merge_request_reviewers': 'approval_merge_request_reviewers',
+        'topic': 'topic',
         'source_repository': 'source_repository',
         'target_repository': 'target_repository',
         'is_source_branch_exist': 'is_source_branch_exist',
@@ -139,7 +153,7 @@ class ImportMergeRequestResponse(SdkResponse):
         'rebase_in_progress': 'rebase_in_progress'
     }
 
-    def __init__(self, id=None, iid=None, repository_id=None, title=None, description=None, state=None, created_at=None, updated_at=None, source_branch=None, target_branch=None, is_source_branch_protected=None, devcloud_source_branch=None, author=None, source_repository_id=None, target_repository_id=None, source_project_id=None, target_project_id=None, labels=None, work_in_progress=None, milestone=None, merge_when_build_succeeds=None, merge_status=None, sha=None, merge_commit_sha=None, subscribed=None, merged_by=None, merged_at=None, closed_by=None, closed_at=None, user_notes_count=None, force_remove_source_branch=None, web_url=None, merge_request_diff=None, merge_request_reviewers_count=None, merge_request_review_count=None, merge_request_reviewer_list=None, merge_request_assignee_list=None, notes=None, codecheck_state=None, codecheck_defect_count=None, merge_request_related_work_items=None, diverged_commits_count=None, moderation_result=None, moderation_time=None, moderation_status=None, is_use_temp_branch=None, review_mode=None, squash=None, approval_merge_request_approvers=None, approval_merge_request_reviewers=None, source_repository=None, target_repository=None, is_source_branch_exist=None, merge_request_type=None, squash_commit_message=None, auto_merge=None, merge_error=None, json_merge_error=None, rebase_in_progress=None):
+    def __init__(self, id=None, iid=None, repository_id=None, title=None, description=None, state=None, created_at=None, updated_at=None, source_branch=None, target_branch=None, is_source_branch_protected=None, is_source_branch_default=None, devcloud_source_branch=None, upvotes=None, downvotes=None, author=None, assignee=None, source_repository_id=None, target_repository_id=None, source_project_id=None, target_project_id=None, labels=None, work_in_progress=None, milestone=None, merge_when_build_succeeds=None, merge_status=None, sha=None, merge_commit_sha=None, subscribed=None, merged_by=None, merged_at=None, closed_by=None, closed_at=None, user_notes_count=None, should_remove_source_branch=None, force_remove_source_branch=None, web_url=None, merge_request_diff=None, merge_request_reviewers_count=None, merge_request_review_count=None, merge_request_reviewer_list=None, merge_request_assignee_list=None, notes=None, codecheck_state=None, codecheck_defect_count=None, merge_request_related_work_items=None, diverged_commits_count=None, moderation_result=None, moderation_time=None, moderation_status=None, is_use_temp_branch=None, only_assignee_can_merge=None, review_mode=None, squash=None, approval_merge_request_approvers=None, approval_merge_request_reviewers=None, topic=None, source_repository=None, target_repository=None, is_source_branch_exist=None, merge_request_type=None, squash_commit_message=None, auto_merge=None, merge_error=None, json_merge_error=None, rebase_in_progress=None):
         r"""ImportMergeRequestResponse
 
         The model defined in huaweicloud sdk
@@ -166,10 +180,18 @@ class ImportMergeRequestResponse(SdkResponse):
         :type target_branch: str
         :param is_source_branch_protected: 源分支是否为保护分支
         :type is_source_branch_protected: bool
+        :param is_source_branch_default: 源分支是否为默认分支
+        :type is_source_branch_default: bool
         :param devcloud_source_branch: 源分支
         :type devcloud_source_branch: str
+        :param upvotes: MR点赞数
+        :type upvotes: int
+        :param downvotes: MR倒赞数
+        :type downvotes: int
         :param author: 
         :type author: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicExternalDto`
+        :param assignee: 
+        :type assignee: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicExternalDto`
         :param source_repository_id: 源仓库id
         :type source_repository_id: int
         :param target_repository_id: 目标仓库id
@@ -204,6 +226,8 @@ class ImportMergeRequestResponse(SdkResponse):
         :type closed_at: str
         :param user_notes_count: 检视意见数量
         :type user_notes_count: int
+        :param should_remove_source_branch: 是否需要删除源分支
+        :type should_remove_source_branch: bool
         :param force_remove_source_branch: 合入后删除源分支
         :type force_remove_source_branch: bool
         :param web_url: 主页url
@@ -236,6 +260,8 @@ class ImportMergeRequestResponse(SdkResponse):
         :type moderation_status: int
         :param is_use_temp_branch: 是否使用临时分支
         :type is_use_temp_branch: bool
+        :param only_assignee_can_merge: 只有合并人允许合入
+        :type only_assignee_can_merge: bool
         :param review_mode: 检视模式
         :type review_mode: str
         :param squash: squash合入
@@ -244,6 +270,8 @@ class ImportMergeRequestResponse(SdkResponse):
         :type approval_merge_request_approvers: list[:class:`huaweicloudsdkcodeartsrepo.v4.ApprovalUserDto`]
         :param approval_merge_request_reviewers: 审核模式检视人
         :type approval_merge_request_reviewers: list[:class:`huaweicloudsdkcodeartsrepo.v4.ApprovalUserDto`]
+        :param topic: MR主题
+        :type topic: str
         :param source_repository: 
         :type source_repository: :class:`huaweicloudsdkcodeartsrepo.v4.ProjectSimpleDto`
         :param target_repository: 
@@ -277,8 +305,12 @@ class ImportMergeRequestResponse(SdkResponse):
         self._source_branch = None
         self._target_branch = None
         self._is_source_branch_protected = None
+        self._is_source_branch_default = None
         self._devcloud_source_branch = None
+        self._upvotes = None
+        self._downvotes = None
         self._author = None
+        self._assignee = None
         self._source_repository_id = None
         self._target_repository_id = None
         self._source_project_id = None
@@ -296,6 +328,7 @@ class ImportMergeRequestResponse(SdkResponse):
         self._closed_by = None
         self._closed_at = None
         self._user_notes_count = None
+        self._should_remove_source_branch = None
         self._force_remove_source_branch = None
         self._web_url = None
         self._merge_request_diff = None
@@ -312,10 +345,12 @@ class ImportMergeRequestResponse(SdkResponse):
         self._moderation_time = None
         self._moderation_status = None
         self._is_use_temp_branch = None
+        self._only_assignee_can_merge = None
         self._review_mode = None
         self._squash = None
         self._approval_merge_request_approvers = None
         self._approval_merge_request_reviewers = None
+        self._topic = None
         self._source_repository = None
         self._target_repository = None
         self._is_source_branch_exist = None
@@ -349,10 +384,18 @@ class ImportMergeRequestResponse(SdkResponse):
             self.target_branch = target_branch
         if is_source_branch_protected is not None:
             self.is_source_branch_protected = is_source_branch_protected
+        if is_source_branch_default is not None:
+            self.is_source_branch_default = is_source_branch_default
         if devcloud_source_branch is not None:
             self.devcloud_source_branch = devcloud_source_branch
+        if upvotes is not None:
+            self.upvotes = upvotes
+        if downvotes is not None:
+            self.downvotes = downvotes
         if author is not None:
             self.author = author
+        if assignee is not None:
+            self.assignee = assignee
         if source_repository_id is not None:
             self.source_repository_id = source_repository_id
         if target_repository_id is not None:
@@ -387,6 +430,8 @@ class ImportMergeRequestResponse(SdkResponse):
             self.closed_at = closed_at
         if user_notes_count is not None:
             self.user_notes_count = user_notes_count
+        if should_remove_source_branch is not None:
+            self.should_remove_source_branch = should_remove_source_branch
         if force_remove_source_branch is not None:
             self.force_remove_source_branch = force_remove_source_branch
         if web_url is not None:
@@ -419,6 +464,8 @@ class ImportMergeRequestResponse(SdkResponse):
             self.moderation_status = moderation_status
         if is_use_temp_branch is not None:
             self.is_use_temp_branch = is_use_temp_branch
+        if only_assignee_can_merge is not None:
+            self.only_assignee_can_merge = only_assignee_can_merge
         if review_mode is not None:
             self.review_mode = review_mode
         if squash is not None:
@@ -427,6 +474,8 @@ class ImportMergeRequestResponse(SdkResponse):
             self.approval_merge_request_approvers = approval_merge_request_approvers
         if approval_merge_request_reviewers is not None:
             self.approval_merge_request_reviewers = approval_merge_request_reviewers
+        if topic is not None:
+            self.topic = topic
         if source_repository is not None:
             self.source_repository = source_repository
         if target_repository is not None:
@@ -689,6 +738,28 @@ class ImportMergeRequestResponse(SdkResponse):
         self._is_source_branch_protected = is_source_branch_protected
 
     @property
+    def is_source_branch_default(self):
+        r"""Gets the is_source_branch_default of this ImportMergeRequestResponse.
+
+        源分支是否为默认分支
+
+        :return: The is_source_branch_default of this ImportMergeRequestResponse.
+        :rtype: bool
+        """
+        return self._is_source_branch_default
+
+    @is_source_branch_default.setter
+    def is_source_branch_default(self, is_source_branch_default):
+        r"""Sets the is_source_branch_default of this ImportMergeRequestResponse.
+
+        源分支是否为默认分支
+
+        :param is_source_branch_default: The is_source_branch_default of this ImportMergeRequestResponse.
+        :type is_source_branch_default: bool
+        """
+        self._is_source_branch_default = is_source_branch_default
+
+    @property
     def devcloud_source_branch(self):
         r"""Gets the devcloud_source_branch of this ImportMergeRequestResponse.
 
@@ -711,6 +782,50 @@ class ImportMergeRequestResponse(SdkResponse):
         self._devcloud_source_branch = devcloud_source_branch
 
     @property
+    def upvotes(self):
+        r"""Gets the upvotes of this ImportMergeRequestResponse.
+
+        MR点赞数
+
+        :return: The upvotes of this ImportMergeRequestResponse.
+        :rtype: int
+        """
+        return self._upvotes
+
+    @upvotes.setter
+    def upvotes(self, upvotes):
+        r"""Sets the upvotes of this ImportMergeRequestResponse.
+
+        MR点赞数
+
+        :param upvotes: The upvotes of this ImportMergeRequestResponse.
+        :type upvotes: int
+        """
+        self._upvotes = upvotes
+
+    @property
+    def downvotes(self):
+        r"""Gets the downvotes of this ImportMergeRequestResponse.
+
+        MR倒赞数
+
+        :return: The downvotes of this ImportMergeRequestResponse.
+        :rtype: int
+        """
+        return self._downvotes
+
+    @downvotes.setter
+    def downvotes(self, downvotes):
+        r"""Sets the downvotes of this ImportMergeRequestResponse.
+
+        MR倒赞数
+
+        :param downvotes: The downvotes of this ImportMergeRequestResponse.
+        :type downvotes: int
+        """
+        self._downvotes = downvotes
+
+    @property
     def author(self):
         r"""Gets the author of this ImportMergeRequestResponse.
 
@@ -727,6 +842,24 @@ class ImportMergeRequestResponse(SdkResponse):
         :type author: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicExternalDto`
         """
         self._author = author
+
+    @property
+    def assignee(self):
+        r"""Gets the assignee of this ImportMergeRequestResponse.
+
+        :return: The assignee of this ImportMergeRequestResponse.
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicExternalDto`
+        """
+        return self._assignee
+
+    @assignee.setter
+    def assignee(self, assignee):
+        r"""Sets the assignee of this ImportMergeRequestResponse.
+
+        :param assignee: The assignee of this ImportMergeRequestResponse.
+        :type assignee: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicExternalDto`
+        """
+        self._assignee = assignee
 
     @property
     def source_repository_id(self):
@@ -1091,6 +1224,28 @@ class ImportMergeRequestResponse(SdkResponse):
         self._user_notes_count = user_notes_count
 
     @property
+    def should_remove_source_branch(self):
+        r"""Gets the should_remove_source_branch of this ImportMergeRequestResponse.
+
+        是否需要删除源分支
+
+        :return: The should_remove_source_branch of this ImportMergeRequestResponse.
+        :rtype: bool
+        """
+        return self._should_remove_source_branch
+
+    @should_remove_source_branch.setter
+    def should_remove_source_branch(self, should_remove_source_branch):
+        r"""Sets the should_remove_source_branch of this ImportMergeRequestResponse.
+
+        是否需要删除源分支
+
+        :param should_remove_source_branch: The should_remove_source_branch of this ImportMergeRequestResponse.
+        :type should_remove_source_branch: bool
+        """
+        self._should_remove_source_branch = should_remove_source_branch
+
+    @property
     def force_remove_source_branch(self):
         r"""Gets the force_remove_source_branch of this ImportMergeRequestResponse.
 
@@ -1439,6 +1594,28 @@ class ImportMergeRequestResponse(SdkResponse):
         self._is_use_temp_branch = is_use_temp_branch
 
     @property
+    def only_assignee_can_merge(self):
+        r"""Gets the only_assignee_can_merge of this ImportMergeRequestResponse.
+
+        只有合并人允许合入
+
+        :return: The only_assignee_can_merge of this ImportMergeRequestResponse.
+        :rtype: bool
+        """
+        return self._only_assignee_can_merge
+
+    @only_assignee_can_merge.setter
+    def only_assignee_can_merge(self, only_assignee_can_merge):
+        r"""Sets the only_assignee_can_merge of this ImportMergeRequestResponse.
+
+        只有合并人允许合入
+
+        :param only_assignee_can_merge: The only_assignee_can_merge of this ImportMergeRequestResponse.
+        :type only_assignee_can_merge: bool
+        """
+        self._only_assignee_can_merge = only_assignee_can_merge
+
+    @property
     def review_mode(self):
         r"""Gets the review_mode of this ImportMergeRequestResponse.
 
@@ -1525,6 +1702,28 @@ class ImportMergeRequestResponse(SdkResponse):
         :type approval_merge_request_reviewers: list[:class:`huaweicloudsdkcodeartsrepo.v4.ApprovalUserDto`]
         """
         self._approval_merge_request_reviewers = approval_merge_request_reviewers
+
+    @property
+    def topic(self):
+        r"""Gets the topic of this ImportMergeRequestResponse.
+
+        MR主题
+
+        :return: The topic of this ImportMergeRequestResponse.
+        :rtype: str
+        """
+        return self._topic
+
+    @topic.setter
+    def topic(self, topic):
+        r"""Sets the topic of this ImportMergeRequestResponse.
+
+        MR主题
+
+        :param topic: The topic of this ImportMergeRequestResponse.
+        :type topic: str
+        """
+        self._topic = topic
 
     @property
     def source_repository(self):

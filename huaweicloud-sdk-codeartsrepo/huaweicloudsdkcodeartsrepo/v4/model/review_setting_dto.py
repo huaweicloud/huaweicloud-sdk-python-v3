@@ -1,0 +1,311 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ReviewSettingDto:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'categories_and_modules_enabled': 'bool',
+        'secondary_category_enabled': 'bool',
+        'primary_categories': 'list[CategoryDto]',
+        'review_default_categories': 'list[str]',
+        'review_customized_categories': 'list[str]',
+        'review_modules': 'list[str]',
+        'secondary_category_type': 'str',
+        'secondary_categories': 'list[CategoryDto]'
+    }
+
+    attribute_map = {
+        'categories_and_modules_enabled': 'categories_and_modules_enabled',
+        'secondary_category_enabled': 'secondary_category_enabled',
+        'primary_categories': 'primary_categories',
+        'review_default_categories': 'review_default_categories',
+        'review_customized_categories': 'review_customized_categories',
+        'review_modules': 'review_modules',
+        'secondary_category_type': 'secondary_category_type',
+        'secondary_categories': 'secondary_categories'
+    }
+
+    def __init__(self, categories_and_modules_enabled=None, secondary_category_enabled=None, primary_categories=None, review_default_categories=None, review_customized_categories=None, review_modules=None, secondary_category_type=None, secondary_categories=None):
+        r"""ReviewSettingDto
+
+        The model defined in huaweicloud sdk
+
+        :param categories_and_modules_enabled: **参数解释：** 是否启用启用检视意见分类与模块。
+        :type categories_and_modules_enabled: bool
+        :param secondary_category_enabled: **参数解释：** 是否启用系统预置检视意见分类。
+        :type secondary_category_enabled: bool
+        :param primary_categories: **参数解释：** 检视意见分类(已勾选)。
+        :type primary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        :param review_default_categories: **参数解释：** 检视意见分类的key(已勾选)。
+        :type review_default_categories: list[str]
+        :param review_customized_categories: **参数解释：** 自定义分类。
+        :type review_customized_categories: list[str]
+        :param review_modules: **参数解释：** 检视意见模块。
+        :type review_modules: list[str]
+        :param secondary_category_type: **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认&#39;HiCode&#39;)。
+        :type secondary_category_type: str
+        :param secondary_categories: **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+        :type secondary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        
+        
+
+        self._categories_and_modules_enabled = None
+        self._secondary_category_enabled = None
+        self._primary_categories = None
+        self._review_default_categories = None
+        self._review_customized_categories = None
+        self._review_modules = None
+        self._secondary_category_type = None
+        self._secondary_categories = None
+        self.discriminator = None
+
+        if categories_and_modules_enabled is not None:
+            self.categories_and_modules_enabled = categories_and_modules_enabled
+        if secondary_category_enabled is not None:
+            self.secondary_category_enabled = secondary_category_enabled
+        if primary_categories is not None:
+            self.primary_categories = primary_categories
+        if review_default_categories is not None:
+            self.review_default_categories = review_default_categories
+        if review_customized_categories is not None:
+            self.review_customized_categories = review_customized_categories
+        if review_modules is not None:
+            self.review_modules = review_modules
+        if secondary_category_type is not None:
+            self.secondary_category_type = secondary_category_type
+        if secondary_categories is not None:
+            self.secondary_categories = secondary_categories
+
+    @property
+    def categories_and_modules_enabled(self):
+        r"""Gets the categories_and_modules_enabled of this ReviewSettingDto.
+
+        **参数解释：** 是否启用启用检视意见分类与模块。
+
+        :return: The categories_and_modules_enabled of this ReviewSettingDto.
+        :rtype: bool
+        """
+        return self._categories_and_modules_enabled
+
+    @categories_and_modules_enabled.setter
+    def categories_and_modules_enabled(self, categories_and_modules_enabled):
+        r"""Sets the categories_and_modules_enabled of this ReviewSettingDto.
+
+        **参数解释：** 是否启用启用检视意见分类与模块。
+
+        :param categories_and_modules_enabled: The categories_and_modules_enabled of this ReviewSettingDto.
+        :type categories_and_modules_enabled: bool
+        """
+        self._categories_and_modules_enabled = categories_and_modules_enabled
+
+    @property
+    def secondary_category_enabled(self):
+        r"""Gets the secondary_category_enabled of this ReviewSettingDto.
+
+        **参数解释：** 是否启用系统预置检视意见分类。
+
+        :return: The secondary_category_enabled of this ReviewSettingDto.
+        :rtype: bool
+        """
+        return self._secondary_category_enabled
+
+    @secondary_category_enabled.setter
+    def secondary_category_enabled(self, secondary_category_enabled):
+        r"""Sets the secondary_category_enabled of this ReviewSettingDto.
+
+        **参数解释：** 是否启用系统预置检视意见分类。
+
+        :param secondary_category_enabled: The secondary_category_enabled of this ReviewSettingDto.
+        :type secondary_category_enabled: bool
+        """
+        self._secondary_category_enabled = secondary_category_enabled
+
+    @property
+    def primary_categories(self):
+        r"""Gets the primary_categories of this ReviewSettingDto.
+
+        **参数解释：** 检视意见分类(已勾选)。
+
+        :return: The primary_categories of this ReviewSettingDto.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        return self._primary_categories
+
+    @primary_categories.setter
+    def primary_categories(self, primary_categories):
+        r"""Sets the primary_categories of this ReviewSettingDto.
+
+        **参数解释：** 检视意见分类(已勾选)。
+
+        :param primary_categories: The primary_categories of this ReviewSettingDto.
+        :type primary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        self._primary_categories = primary_categories
+
+    @property
+    def review_default_categories(self):
+        r"""Gets the review_default_categories of this ReviewSettingDto.
+
+        **参数解释：** 检视意见分类的key(已勾选)。
+
+        :return: The review_default_categories of this ReviewSettingDto.
+        :rtype: list[str]
+        """
+        return self._review_default_categories
+
+    @review_default_categories.setter
+    def review_default_categories(self, review_default_categories):
+        r"""Sets the review_default_categories of this ReviewSettingDto.
+
+        **参数解释：** 检视意见分类的key(已勾选)。
+
+        :param review_default_categories: The review_default_categories of this ReviewSettingDto.
+        :type review_default_categories: list[str]
+        """
+        self._review_default_categories = review_default_categories
+
+    @property
+    def review_customized_categories(self):
+        r"""Gets the review_customized_categories of this ReviewSettingDto.
+
+        **参数解释：** 自定义分类。
+
+        :return: The review_customized_categories of this ReviewSettingDto.
+        :rtype: list[str]
+        """
+        return self._review_customized_categories
+
+    @review_customized_categories.setter
+    def review_customized_categories(self, review_customized_categories):
+        r"""Sets the review_customized_categories of this ReviewSettingDto.
+
+        **参数解释：** 自定义分类。
+
+        :param review_customized_categories: The review_customized_categories of this ReviewSettingDto.
+        :type review_customized_categories: list[str]
+        """
+        self._review_customized_categories = review_customized_categories
+
+    @property
+    def review_modules(self):
+        r"""Gets the review_modules of this ReviewSettingDto.
+
+        **参数解释：** 检视意见模块。
+
+        :return: The review_modules of this ReviewSettingDto.
+        :rtype: list[str]
+        """
+        return self._review_modules
+
+    @review_modules.setter
+    def review_modules(self, review_modules):
+        r"""Sets the review_modules of this ReviewSettingDto.
+
+        **参数解释：** 检视意见模块。
+
+        :param review_modules: The review_modules of this ReviewSettingDto.
+        :type review_modules: list[str]
+        """
+        self._review_modules = review_modules
+
+    @property
+    def secondary_category_type(self):
+        r"""Gets the secondary_category_type of this ReviewSettingDto.
+
+        **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认'HiCode')。
+
+        :return: The secondary_category_type of this ReviewSettingDto.
+        :rtype: str
+        """
+        return self._secondary_category_type
+
+    @secondary_category_type.setter
+    def secondary_category_type(self, secondary_category_type):
+        r"""Sets the secondary_category_type of this ReviewSettingDto.
+
+        **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认'HiCode')。
+
+        :param secondary_category_type: The secondary_category_type of this ReviewSettingDto.
+        :type secondary_category_type: str
+        """
+        self._secondary_category_type = secondary_category_type
+
+    @property
+    def secondary_categories(self):
+        r"""Gets the secondary_categories of this ReviewSettingDto.
+
+        **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+
+        :return: The secondary_categories of this ReviewSettingDto.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        return self._secondary_categories
+
+    @secondary_categories.setter
+    def secondary_categories(self, secondary_categories):
+        r"""Sets the secondary_categories of this ReviewSettingDto.
+
+        **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+
+        :param secondary_categories: The secondary_categories of this ReviewSettingDto.
+        :type secondary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        self._secondary_categories = secondary_categories
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ReviewSettingDto):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

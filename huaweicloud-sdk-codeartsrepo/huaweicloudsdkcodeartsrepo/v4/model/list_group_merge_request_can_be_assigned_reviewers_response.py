@@ -29,7 +29,7 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
         'nick_name': 'str',
         'tenant_name': 'str',
         'error_message': 'str',
-        'is_committer': 'bool'
+        'x_total': 'str'
     }
 
     attribute_map = {
@@ -46,10 +46,10 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
         'nick_name': 'nick_name',
         'tenant_name': 'tenant_name',
         'error_message': 'error_message',
-        'is_committer': 'is_committer'
+        'x_total': 'X-Total'
     }
 
-    def __init__(self, id=None, name=None, username=None, state=None, service_license_status=None, avatar_url=None, avatar_path=None, email=None, name_cn=None, web_url=None, nick_name=None, tenant_name=None, error_message=None, is_committer=None):
+    def __init__(self, id=None, name=None, username=None, state=None, service_license_status=None, avatar_url=None, avatar_path=None, email=None, name_cn=None, web_url=None, nick_name=None, tenant_name=None, error_message=None, x_total=None):
         r"""ListGroupMergeRequestCanBeAssignedReviewersResponse
 
         The model defined in huaweicloud sdk
@@ -80,8 +80,8 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
         :type tenant_name: str
         :param error_message: **参数解释：** 部分查询接口校验到传参里的用户权限不足或不存在时，返回该用户但该字段不为空用于提示。
         :type error_message: str
-        :param is_committer: **参数解释：** 是否为committer。
-        :type is_committer: bool
+        :param x_total: 
+        :type x_total: str
         """
         
         super().__init__()
@@ -99,7 +99,7 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
         self._nick_name = None
         self._tenant_name = None
         self._error_message = None
-        self._is_committer = None
+        self._x_total = None
         self.discriminator = None
 
         if id is not None:
@@ -128,8 +128,8 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
             self.tenant_name = tenant_name
         if error_message is not None:
             self.error_message = error_message
-        if is_committer is not None:
-            self.is_committer = is_committer
+        if x_total is not None:
+            self.x_total = x_total
 
     @property
     def id(self):
@@ -418,26 +418,22 @@ class ListGroupMergeRequestCanBeAssignedReviewersResponse(SdkResponse):
         self._error_message = error_message
 
     @property
-    def is_committer(self):
-        r"""Gets the is_committer of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
+    def x_total(self):
+        r"""Gets the x_total of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
 
-        **参数解释：** 是否为committer。
-
-        :return: The is_committer of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
-        :rtype: bool
+        :return: The x_total of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
+        :rtype: str
         """
-        return self._is_committer
+        return self._x_total
 
-    @is_committer.setter
-    def is_committer(self, is_committer):
-        r"""Sets the is_committer of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
+    @x_total.setter
+    def x_total(self, x_total):
+        r"""Sets the x_total of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
 
-        **参数解释：** 是否为committer。
-
-        :param is_committer: The is_committer of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
-        :type is_committer: bool
+        :param x_total: The x_total of this ListGroupMergeRequestCanBeAssignedReviewersResponse.
+        :type x_total: str
         """
-        self._is_committer = is_committer
+        self._x_total = x_total
 
     def to_dict(self):
         import warnings

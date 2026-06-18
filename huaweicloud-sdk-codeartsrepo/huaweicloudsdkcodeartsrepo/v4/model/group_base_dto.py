@@ -46,7 +46,8 @@ class GroupBaseDto:
         'created_at': 'str',
         'sub_group_count': 'int',
         'last_owner': 'bool',
-        'starred': 'bool'
+        'starred': 'bool',
+        'roles': 'list[MultipleRoleDto]'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class GroupBaseDto:
         'created_at': 'created_at',
         'sub_group_count': 'sub_group_count',
         'last_owner': 'last_owner',
-        'starred': 'starred'
+        'starred': 'starred',
+        'roles': 'roles'
     }
 
-    def __init__(self, project_id=None, project_name=None, ancestor_ids=None, ancestor_names=None, develop_mode=None, id=None, name=None, path=None, group_level=None, description=None, subgroup_count=None, project_count=None, group_role=None, group_members_count=None, descendant_type=None, visibility_level=None, visibility=None, is_project_admin=None, is_group_creator=None, is_repo_creator=None, lfs_enabled=None, full_name=None, full_path=None, item_type=None, parent_id=None, my_role=None, members=None, web_url=None, created_at=None, sub_group_count=None, last_owner=None, starred=None):
+    def __init__(self, project_id=None, project_name=None, ancestor_ids=None, ancestor_names=None, develop_mode=None, id=None, name=None, path=None, group_level=None, description=None, subgroup_count=None, project_count=None, group_role=None, group_members_count=None, descendant_type=None, visibility_level=None, visibility=None, is_project_admin=None, is_group_creator=None, is_repo_creator=None, lfs_enabled=None, full_name=None, full_path=None, item_type=None, parent_id=None, my_role=None, members=None, web_url=None, created_at=None, sub_group_count=None, last_owner=None, starred=None, roles=None):
         r"""GroupBaseDto
 
         The model defined in huaweicloud sdk
@@ -153,6 +155,8 @@ class GroupBaseDto:
         :type last_owner: bool
         :param starred: **参数解释：** 是否关注。
         :type starred: bool
+        :param roles: **参数解释：** 角色列表。
+        :type roles: list[:class:`huaweicloudsdkcodeartsrepo.v4.MultipleRoleDto`]
         """
         
         
@@ -189,6 +193,7 @@ class GroupBaseDto:
         self._sub_group_count = None
         self._last_owner = None
         self._starred = None
+        self._roles = None
         self.discriminator = None
 
         if project_id is not None:
@@ -255,6 +260,8 @@ class GroupBaseDto:
             self.last_owner = last_owner
         if starred is not None:
             self.starred = starred
+        if roles is not None:
+            self.roles = roles
 
     @property
     def project_id(self):
@@ -955,6 +962,28 @@ class GroupBaseDto:
         :type starred: bool
         """
         self._starred = starred
+
+    @property
+    def roles(self):
+        r"""Gets the roles of this GroupBaseDto.
+
+        **参数解释：** 角色列表。
+
+        :return: The roles of this GroupBaseDto.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.MultipleRoleDto`]
+        """
+        return self._roles
+
+    @roles.setter
+    def roles(self, roles):
+        r"""Sets the roles of this GroupBaseDto.
+
+        **参数解释：** 角色列表。
+
+        :param roles: The roles of this GroupBaseDto.
+        :type roles: list[:class:`huaweicloudsdkcodeartsrepo.v4.MultipleRoleDto`]
+        """
+        self._roles = roles
 
     def to_dict(self):
         result = {}

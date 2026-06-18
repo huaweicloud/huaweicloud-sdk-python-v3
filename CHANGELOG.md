@@ -1,3 +1,600 @@
+# 3.1.200 2026-06-18
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListSwitchConfigInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRepository**
+    - changes of request param
+      - `+ group_id`
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the following APIs:
+    - `ListProjectMergeRequests`
+    - `ListGroupProtectedBranches`
+    - `ListManagementUsers`
+    - `UpdateGroupResourcePermissions`
+    - `ShowRepoStatisticsSummary`
+    - `ShowRepoLastStatistics`
+    - `TransferRepository`
+    - `ListRepositoryNavigationReferences`
+    - `ShowRepositoryNavigationOutline`
+    - `RebuildRepositoryNavigation`
+    - `ShowRepositoryNavigationSchema`
+    - `ShowRepositoryNavigationLanguage`
+    - `ShowTenantDevelopMode`
+    - `ShowTenantRepoEncryptionSetting`
+    - `UpdateTenantRepoEncryptionSetting`
+    - `ListTenantCmks`
+    - `ListTenantEncryptedRepositories`
+    - `ShowTenantKmsGrant`
+    - `CreateTenantKmsGrant`
+    - `ShowProjectTenantSettings`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCommitAssociatedRefs**
+    - changes of request param
+      - `+ type`
+  - **ListFiles**
+    - changes of request param
+      - `+ search`
+  - **ListManageableGroups**
+    - changes of response param
+      - `+ full_path`
+      - `+ path`
+      - `+ visibility`
+  - **ListProjectWebhooks**
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddProjectWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowProjectWebhook**
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateProjectWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ListRepositoryWebhooks**
+    - changes of request param
+      - `+ include_system`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddRepositoryWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowRepositoryWebhook**
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateRepositoryWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **CreateReviewSetting**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- repository_id`
+  - **ShowReviewSetting**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- repository_id`
+  - **ListGroupMergeRequestValidAssignedCandidates**
+    - changes of response param
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListProjectMergeRequestCanBeAssignedUsers**
+    - changes of response param
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListGroupMergeRequestCanBeAssignedReviewers**
+    - changes of response param
+      - `- is_committer`
+  - **ListProjectMergeRequestCanBeAssignedReviewers**
+    - changes of response param
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListMergeRequestValidAssignedCandidates**
+    - changes of request param
+      - `+ target_repository_id`
+      - `- target_project_id`
+      - `- mode`
+      - `* target_branch: optional -> required`
+  - **ShowUserEmails**
+    - changes of response param
+      - `+ is_default`
+  - **UpdateUserEmails**
+    - changes of response param
+      - `+ is_default`
+  - **ListImpersonationTokens**
+    - changes of request param
+      - `- group_id`
+  - **ShowRepositoryInheritSettingSource**
+    - changes of request param
+      - `* name: optional -> required`
+      - `+ name: enum value [merge_requests]`
+  - **ListTenantRepositories**
+    - changes of request param
+      - `+ locked`
+    - changes of response param
+      - `+ locked`
+  - **ListGroupWebhooks**
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddGroupWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+      - `* body: object<WebhookParamsDto> -> object<WebhookParamsRequestDto>`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowGroupWebhook**
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateGroupWebhook**
+    - changes of request param
+      - `+ note_plain_text_filter`
+      - `* body: object<WebhookParamsDto> -> object<WebhookParamsRequestDto>`
+    - changes of response param
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ListMergeRequestSystemNotes**
+    - changes of response param
+      - `+ from_robot`
+      - `- attachment`
+  - **CreateMergeRequestDiscussionResponse**
+    - changes of response param
+      - `+ from_robot`
+      - `- attachment`
+  - **ShowMergeRequestDetail**
+    - changes of response param
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **UpdateMergeRequest**
+    - changes of response param
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **MergeMergeRequest**
+    - changes of response param
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **CreateMergeRequest**
+    - changes of response param
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **ListPersonalMergeRequests**
+    - changes of request param
+      - `+ view: enum value [view_for_list]`
+      - `+ wip: enum value [yes,no]`
+      - `+ wip: enum value [true,false]`
+  - **ShowCommitDiffMetadata**
+    - changes of response param
+      - `+ blob_id`
+  - **ImportMergeRequest**
+    - changes of response param
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **ShowMergeRequestSetting**
+    - changes of response param
+      - `+ has_evaluation_permission`
+  - **UpdateMergeRequestSetting**
+    - changes of response param
+      - `+ has_evaluation_permission`
+  - **ListMergeRequestTemplates**
+    - changes of response param
+      - `+ from`
+  - **CreateMergeRequestTemplate**
+    - changes of response param
+      - `+ from`
+  - **ShowMergeRequestTemplate**
+    - changes of response param
+      - `+ from`
+  - **UpdateMergeRequestTemplate**
+    - changes of response param
+      - `+ from`
+  - **ListMergeRequestApprovers**
+    - changes of request param
+      - `* target_branch: optional -> required`
+      - `* source_branch: optional -> required`
+    - changes of response param
+      - `+ error_message`
+      - `+ tenant_name`
+      - `+ has_permission`
+      - `+ avatar_path`
+      - `+ avatar_url`
+      - `+ web_url`
+      - `+ nick_name`
+      - `+ name`
+      - `+ service_license_status`
+      - `+ id`
+      - `+ state`
+      - `+ name_cn`
+      - `+ email`
+      - `+ username`
+      - `+ required_approvers_list.has_permission`
+      - `* required_approvers_list: list<UserBasicDto> -> list<MergeRequestApprovalUserDto>`
+  - **ListMergeRequestReviewers**
+    - changes of request param
+      - `* target_branch: optional -> required`
+      - `* source_branch: optional -> required`
+    - changes of response param
+      - `+ error_message`
+      - `+ tenant_name`
+      - `+ has_permission`
+      - `+ avatar_path`
+      - `+ avatar_url`
+      - `+ web_url`
+      - `+ nick_name`
+      - `+ name`
+      - `+ service_license_status`
+      - `+ id`
+      - `+ state`
+      - `+ name_cn`
+      - `+ email`
+      - `+ username`
+      - `+ required_reviewers_list.has_permission`
+      - `* required_reviewers_list: list<UserBasicDto> -> list<MergeRequestApprovalUserDto>`
+  - **ShowGroupReviewSettings**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **UpdateGroupReviewSettings**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **ShowProjectReviewSettings**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **UpdateProjectReviewSettings**
+    - changes of response param
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **ListGroupMergeRequestTemplates**
+    - changes of response param
+      - `- repository_id`
+  - **CreateGroupMergeRequestTemplate**
+    - changes of response param
+      - `- repository_id`
+  - **UpdateGroupMergeRequestTemplate**
+    - changes of response param
+      - `- repository_id`
+  - **ListProjectMergeRequestTemplates**
+    - changes of response param
+      - `- repository_id`
+  - **CreateProjectMergeRequestTemplate**
+    - changes of response param
+      - `- repository_id`
+  - **UpdateProjectMergeRequestTemplate**
+    - changes of response param
+      - `- repository_id`
+  - **ListGroups**
+    - changes of response param
+      - `+ roles`
+  - **ListProjectSubgroupsAndRepositories**
+    - changes of response param
+      - `* updated_at_timestamp: string -> int64`
+      - `* star_time: string -> int64`
+  - **ListGroupSubgroupsAndRepositories**
+    - changes of response param
+      - `* updated_at_timestamp: string -> int64`
+      - `* star_time: string -> int64`
+  - **ShowRepositoryInheritSetting**
+    - changes of response param
+      - `+ name: enum value [mr_branch_policies,reviews]`
+  - **UpdateRepositoryInheritSetting**
+    - changes of request param
+      - `+ data.name: enum value [mr_branch_policies,reviews]`
+    - changes of response param
+      - `+ name: enum value [mr_branch_policies,reviews]`
+  - **ShowRepositoryGeneralPolicy**
+    - changes of response param
+      - `+ repo_encryption_enabled`
+      - `+ repo_encryption_status`
+  - **UpdateRepositoryGeneralPolicy**
+    - changes of request param
+      - `+ repo_encryption_enabled`
+    - changes of response param
+      - `+ repo_encryption_enabled`
+      - `+ repo_encryption_status`
+  - **ListCommits**
+    - changes of response param
+      - `+ commits.author_id`
+  - **CreateBranch**
+    - changes of response param
+      - `+ commit.author_id`
+  - **CreateTag**
+    - changes of response param
+      - `+ commit.author_id`
+  - **ShowTag**
+    - changes of response param
+      - `+ commit.author_id`
+  - **ShowBranch**
+    - changes of response param
+      - `+ commit.author_id`
+  - **ShowRefCompare**
+    - changes of response param
+      - `+ commit.author_id`
+  - **ShowMergeRequestDiscussion**
+    - changes of response param
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ListMergeRequestDiscussions**
+    - changes of response param
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **CreateMergeRequestDiscussion**
+    - changes of response param
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ListCommitDiscussions**
+    - changes of response param
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ShowCommit**
+    - changes of response param
+      - `+ author_id`
+  - **CreateCommit**
+    - changes of response param
+      - `+ author_id`
+  - **ShowMergeRequestCommentsByLine**
+    - changes of response param
+      - `+ review_categories_cn`
+      - `+ notes`
+      - `+ review_categories_en`
+      - `+ review_modules`
+      - `+ b_mode`
+      - `+ severity_cn`
+      - `+ severity_en`
+      - `+ archived`
+      - `+ review_categories`
+      - `+ added_lines`
+      - `+ removed_lines`
+      - `+ repository_id`
+      - `+ id`
+      - `+ merge_request_version_params`
+      - `+ resolved`
+      - `+ severity`
+      - `+ individual_note`
+      - `+ deleted_file`
+      - `+ proposer`
+      - `+ new_file`
+      - `+ a_mode`
+      - `+ noteable_type`
+      - `+ repository_full_path`
+      - `+ assignee`
+      - `+ commit_id`
+      - `+ diff_file`
+      - `* new.discussions: list<MergeRequestBasicDiscussionDto> -> list<MergeRequestDiscussionDto>`
+  - **ShowCommitCommentsByLine**
+    - changes of response param
+      - `+ review_categories_cn`
+      - `+ notes`
+      - `+ review_categories_en`
+      - `+ review_modules`
+      - `+ b_mode`
+      - `+ severity_cn`
+      - `+ severity_en`
+      - `+ archived`
+      - `+ review_categories`
+      - `+ added_lines`
+      - `+ removed_lines`
+      - `+ repository_id`
+      - `+ id`
+      - `+ merge_request_version_params`
+      - `+ resolved`
+      - `+ severity`
+      - `+ individual_note`
+      - `+ deleted_file`
+      - `+ proposer`
+      - `+ new_file`
+      - `+ a_mode`
+      - `+ noteable_type`
+      - `+ repository_full_path`
+      - `+ assignee`
+      - `+ commit_id`
+      - `+ diff_file`
+      - `* new.discussions: list<MergeRequestBasicDiscussionDto> -> list<MergeRequestDiscussionDto>`
+  - **UpdateRepositoryResourcePermissions**
+    - changes of response param
+      - `+ message`
+      - `* status: string -> int32`
+  - **ShowRepository**
+    - changes of response param
+      - `+ encryption_status`
+      - `+ repo_encryption_enabled`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateInstance**
+    - changes of request param
+      - `* backup_strategy.keep_days: string -> int32`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.groups.volume.gift_size`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `BatchResizeFlavor`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RGC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTemplateDeployParams**
+    - changes of request param
+      - `+ account_id`
+
+### HuaweiCloud SDK STS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `AssumeAgencyWithSAML`, `AssumeAgencyWithOIDC`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - changes of response param
+      - `* sub_tasks.job_id: int32 -> string`
+
 # 3.1.199 2026-06-11
 
 ### HuaweiCloud SDK DataArtsStudio

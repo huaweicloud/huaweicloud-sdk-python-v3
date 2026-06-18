@@ -213,6 +213,8 @@ class CodeArtsRepoClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -2676,6 +2678,8 @@ class CodeArtsRepoClient(Client):
         query_params = []
         if 'ref_name' in local_var_params:
             query_params.append(('ref_name', local_var_params['ref_name']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -3723,6 +3727,79 @@ class CodeArtsRepoClient(Client):
         query_params = []
         if 'scope' in local_var_params:
             query_params.append(('scope', local_var_params['scope']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group_protected_branches(self, request):
+        r"""获取代码组下保护分支列表
+
+        获取代码组下保护分支列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListGroupProtectedBranches
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListGroupProtectedBranchesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListGroupProtectedBranchesResponse`
+        """
+        http_info = self._list_group_protected_branches_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_protected_branches_invoker(self, request):
+        http_info = self._list_group_protected_branches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_group_protected_branches_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/protected-branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'user_actions' in local_var_params:
+            query_params.append(('user_actions', local_var_params['user_actions']))
 
         header_params = {}
 
@@ -4884,6 +4961,75 @@ class CodeArtsRepoClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'search' in local_var_params:
             query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_management_users(self, request):
+        r"""获取仓库下有审批权限成员
+
+        获取仓库下有审批权限成员（审批用户是否可以进入该仓库）
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListManagementUsers
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListManagementUsersRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListManagementUsersResponse`
+        """
+        http_info = self._list_management_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_management_users_invoker(self, request):
+        http_info = self._list_management_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_management_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/management-members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListManagementUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -6466,7 +6612,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6537,7 +6683,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6606,7 +6752,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6675,7 +6821,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6746,7 +6892,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6815,7 +6961,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -6886,7 +7032,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7046,7 +7192,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7125,7 +7271,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7198,7 +7344,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7271,7 +7417,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7342,7 +7488,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7413,7 +7559,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7565,7 +7711,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7584,9 +7730,9 @@ class CodeArtsRepoClient(Client):
         return http_info
 
     def list_merge_request_valid_assigned_candidates(self, request):
-        r"""获取可选的合并请求检视人
+        r"""获取仓库审核人或合并人
 
-        获取可选的合并请求检视人
+        获取仓库审核人或合并人
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7633,12 +7779,10 @@ class CodeArtsRepoClient(Client):
             query_params.append(('search', local_var_params['search']))
         if 'search_by_name_list' in local_var_params:
             query_params.append(('search_by_name_list', local_var_params['search_by_name_list']))
-        if 'target_project_id' in local_var_params:
-            query_params.append(('target_project_id', local_var_params['target_project_id']))
+        if 'target_repository_id' in local_var_params:
+            query_params.append(('target_repository_id', local_var_params['target_repository_id']))
         if 'view' in local_var_params:
             query_params.append(('view', local_var_params['view']))
-        if 'mode' in local_var_params:
-            query_params.append(('mode', local_var_params['mode']))
         if 'only_developers' in local_var_params:
             query_params.append(('only_developers', local_var_params['only_developers']))
 
@@ -7650,7 +7794,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7721,7 +7865,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7826,7 +7970,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7895,7 +8039,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7916,7 +8060,7 @@ class CodeArtsRepoClient(Client):
     def list_project_merge_request_can_be_assigned_reviewers(self, request):
         r"""获取项目检视人
 
-        获取代码组检视人
+        获取项目检视人
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7964,7 +8108,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7985,7 +8129,7 @@ class CodeArtsRepoClient(Client):
     def list_project_merge_request_can_be_assigned_users(self, request):
         r"""获取项目审核人或合并人
 
-        获取代码组审核人或合并人
+        获取项目审核人或合并人
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8033,7 +8177,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -8104,7 +8248,98 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_merge_requests(self, request):
+        r"""获取项目MR列表
+
+        获取项目MR列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectMergeRequests
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListProjectMergeRequestsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListProjectMergeRequestsResponse`
+        """
+        http_info = self._list_project_merge_requests_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_merge_requests_invoker(self, request):
+        http_info = self._list_project_merge_requests_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_merge_requests_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/merge-requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectMergeRequestsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'author_id' in local_var_params:
+            query_params.append(('author_id', local_var_params['author_id']))
+        if 'source_branch' in local_var_params:
+            query_params.append(('source_branch', local_var_params['source_branch']))
+        if 'target_branch' in local_var_params:
+            query_params.append(('target_branch', local_var_params['target_branch']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'source_repository_id' in local_var_params:
+            query_params.append(('source_repository_id', local_var_params['source_repository_id']))
+        if 'only_count' in local_var_params:
+            query_params.append(('only_count', local_var_params['only_count']))
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+        if 'topic' in local_var_params:
+            query_params.append(('topic', local_var_params['topic']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -8193,7 +8428,7 @@ class CodeArtsRepoClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -10537,6 +10772,75 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
+    def update_group_resource_permissions(self, request):
+        r"""更新代码组权限矩阵配置
+
+        更新代码组权限矩阵配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateGroupResourcePermissions
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.UpdateGroupResourcePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.UpdateGroupResourcePermissionsResponse`
+        """
+        http_info = self._update_group_resource_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_group_resource_permissions_invoker(self, request):
+        http_info = self._update_group_resource_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_group_resource_permissions_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/groups/{group_id}/permissions/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupResourcePermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_repository_permission_inherit_enabled(self, request):
         r"""更新仓库权限继承配置
 
@@ -11291,9 +11595,12 @@ class CodeArtsRepoClient(Client):
         return http_info
 
     def show_resource_permissions(self, request):
-        r"""获取资源点对应的角色和权限
+        r"""获取代码组中指定权限资源下的权限矩阵
 
-        获取资源点对应的角色和权限
+        获取代码组中指定权限资源下的权限矩阵。
+        说明：
+        (a) 权限资源：CodeArtsRepo中需要鉴权的对象。代码组层级的权限资源有：代码组、仓库、代码、成员、Tag、合并请求&amp;变更请求、标签。&lt;动作 + 权限资源&gt; 就构成权限点，如：新建仓库、下载代码、添加成员等。权限点是CodeArtsRepo鉴权的基本单位。
+        (b) 权限矩阵：记录了角色和权限点之间的关联关系，即记录了角色有哪些权限，没有哪些权限。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12786,79 +13093,6 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
-    def list_refs_list(self, request):
-        r"""查看分支/tag列表
-
-        查看分支/tag列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListRefsList
-        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListRefsListRequest`
-        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListRefsListResponse`
-        """
-        http_info = self._list_refs_list_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_refs_list_invoker(self, request):
-        http_info = self._list_refs_list_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _list_refs_list_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/refs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRefsListResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def batch_delete_branch(self, request):
         r"""批量删除分支
 
@@ -13256,6 +13490,79 @@ class CodeArtsRepoClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_refs_list(self, request):
+        r"""查看分支/tag列表
+
+        查看分支/tag列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRefsList
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListRefsListRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListRefsListResponse`
+        """
+        http_info = self._list_refs_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_refs_list_invoker(self, request):
+        http_info = self._list_refs_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_refs_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/refs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRefsListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -15253,6 +15560,85 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
+    def list_repository_navigation_references(self, request):
+        r"""获取代码导航引用关系
+
+        获取代码导航引用关系
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRepositoryNavigationReferences
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListRepositoryNavigationReferencesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListRepositoryNavigationReferencesResponse`
+        """
+        http_info = self._list_repository_navigation_references_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repository_navigation_references_invoker(self, request):
+        http_info = self._list_repository_navigation_references_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_repository_navigation_references_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/nav/references",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryNavigationReferencesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'revision' in local_var_params:
+            query_params.append(('revision', local_var_params['revision']))
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
+        if 'symbol' in local_var_params:
+            query_params.append(('symbol', local_var_params['symbol']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'blob' in local_var_params:
+            query_params.append(('blob', local_var_params['blob']))
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_repository_templates(self, request):
         r"""模板仓列表
 
@@ -15543,6 +15929,71 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
+    def rebuild_repository_navigation(self, request):
+        r"""触发代码导航任务
+
+        触发代码导航任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RebuildRepositoryNavigation
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.RebuildRepositoryNavigationRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.RebuildRepositoryNavigationResponse`
+        """
+        http_info = self._rebuild_repository_navigation_http_info(request)
+        return self._call_api(**http_info)
+
+    def rebuild_repository_navigation_invoker(self, request):
+        http_info = self._rebuild_repository_navigation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rebuild_repository_navigation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/repository/nav/build",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebuildRepositoryNavigationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def remove_deploy_key(self, request):
         r"""删除仓库部署密钥
 
@@ -15613,7 +16064,7 @@ class CodeArtsRepoClient(Client):
     def remove_deploy_key_from_submodules(self, request):
         r"""删除子仓库部署密钥
 
-        将该该仓库的部署密钥从子模组中删除
+        将该仓库的部署密钥从子模组中删除
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16235,6 +16686,138 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
+    def show_repo_last_statistics(self, request):
+        r"""获取仓库最近的提交统计信息
+
+        获取仓库最近的提交统计信息，其中按人员统计记录最多统计按创建时间降序的前100条数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRepoLastStatistics
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepoLastStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepoLastStatisticsResponse`
+        """
+        http_info = self._show_repo_last_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repo_last_statistics_invoker(self, request):
+        http_info = self._show_repo_last_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repo_last_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/stats/last-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepoLastStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'branch_name' in local_var_params:
+            query_params.append(('branch_name', local_var_params['branch_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repo_statistics_summary(self, request):
+        r"""获取仓库统计信息概览
+
+        获取仓库统计信息概览，包括仓库大小，分支数量，提交数量等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRepoStatisticsSummary
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepoStatisticsSummaryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepoStatisticsSummaryResponse`
+        """
+        http_info = self._show_repo_statistics_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repo_statistics_summary_invoker(self, request):
+        http_info = self._show_repo_statistics_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repo_statistics_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/stats/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepoStatisticsSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_repository(self, request):
         r"""获取仓库详情
 
@@ -16535,6 +17118,211 @@ class CodeArtsRepoClient(Client):
         query_params = []
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_navigation_language(self, request):
+        r"""获取代码导航功能的语言信息
+
+        获取代码导航功能的语言信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRepositoryNavigationLanguage
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationLanguageRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationLanguageResponse`
+        """
+        http_info = self._show_repository_navigation_language_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_navigation_language_invoker(self, request):
+        http_info = self._show_repository_navigation_language_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repository_navigation_language_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/nav/language",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryNavigationLanguageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_navigation_outline(self, request):
+        r"""获取代码导航大纲
+
+        获取代码导航大纲
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRepositoryNavigationOutline
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationOutlineRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationOutlineResponse`
+        """
+        http_info = self._show_repository_navigation_outline_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_navigation_outline_invoker(self, request):
+        http_info = self._show_repository_navigation_outline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repository_navigation_outline_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/nav/outline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryNavigationOutlineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'revision' in local_var_params:
+            query_params.append(('revision', local_var_params['revision']))
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'blob' in local_var_params:
+            query_params.append(('blob', local_var_params['blob']))
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_navigation_schema(self, request):
+        r"""获取代码导航功能的模式信息
+
+        获取代码导航功能的模式信息，包括最近索引创建时间，做大统计的文件数量信息等
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRepositoryNavigationSchema
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationSchemaRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowRepositoryNavigationSchemaResponse`
+        """
+        http_info = self._show_repository_navigation_schema_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_navigation_schema_invoker(self, request):
+        http_info = self._show_repository_navigation_schema_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repository_navigation_schema_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/nav/schema",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryNavigationSchemaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -17006,6 +17794,73 @@ class CodeArtsRepoClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def transfer_repository(self, request):
+        r"""转移仓库
+
+        将仓库转移到其他代码组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for TransferRepository
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.TransferRepositoryRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.TransferRepositoryResponse`
+        """
+        http_info = self._transfer_repository_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_repository_invoker(self, request):
+        http_info = self._transfer_repository_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _transfer_repository_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferRepositoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -17768,6 +18623,71 @@ class CodeArtsRepoClient(Client):
 
         return http_info
 
+    def create_tenant_kms_grant(self, request):
+        r"""创建当前租户委托给Repo的KMS授权
+
+        创建当前租户委托给Repo的KMS授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTenantKmsGrant
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.CreateTenantKmsGrantRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.CreateTenantKmsGrantResponse`
+        """
+        http_info = self._create_tenant_kms_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tenant_kms_grant_invoker(self, request):
+        http_info = self._create_tenant_kms_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tenant_kms_grant_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/kms-grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTenantKmsGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_tenant_trusted_ip_address(self, request):
         r"""删除租户ip白名单
 
@@ -17836,7 +18756,7 @@ class CodeArtsRepoClient(Client):
     def export_tenant_repositories(self, request):
         r"""租户仓库列表
 
-        租户下所有占用资源的仓库列表
+        租户下所有占用资源的仓库列表，最多只能导出2万条记录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17877,6 +18797,148 @@ class CodeArtsRepoClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_cmks(self, request):
+        r"""获取当前租户的在KMS托管的主密钥CMK列表
+
+        获取当前租户的在KMS托管的主密钥CMK列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTenantCmks
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListTenantCmksRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListTenantCmksResponse`
+        """
+        http_info = self._list_tenant_cmks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_cmks_invoker(self, request):
+        http_info = self._list_tenant_cmks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tenant_cmks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/cmks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantCmksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_encrypted_repositories(self, request):
+        r"""获取当前租户已加密的仓库列表
+
+        获取当前租户已加密的仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTenantEncryptedRepositories
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ListTenantEncryptedRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ListTenantEncryptedRepositoriesResponse`
+        """
+        http_info = self._list_tenant_encrypted_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_encrypted_repositories_invoker(self, request):
+        http_info = self._list_tenant_encrypted_repositories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tenant_encrypted_repositories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantEncryptedRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -17950,6 +19012,8 @@ class CodeArtsRepoClient(Client):
             query_params.append(('sort', local_var_params['sort']))
         if 'sort_field' in local_var_params:
             query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'locked' in local_var_params:
+            query_params.append(('locked', local_var_params['locked']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -18031,6 +19095,331 @@ class CodeArtsRepoClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_tenant_settings(self, request):
+        r"""获取租户设置
+
+        获取租户设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProjectTenantSettings
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowProjectTenantSettingsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowProjectTenantSettingsResponse`
+        """
+        http_info = self._show_project_tenant_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_tenant_settings_invoker(self, request):
+        http_info = self._show_project_tenant_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_tenant_settings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenant/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectTenantSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_develop_mode(self, request):
+        r"""查看当前租户的开发模式
+
+        查看当前租户的开发模式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantDevelopMode
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantDevelopModeRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantDevelopModeResponse`
+        """
+        http_info = self._show_tenant_develop_mode_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_develop_mode_invoker(self, request):
+        http_info = self._show_tenant_develop_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_develop_mode_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenant/develop-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantDevelopModeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_kms_grant(self, request):
+        r"""获取当前租户委托授权KMS状态
+
+        获取当前租户委托授权KMS状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantKmsGrant
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantKmsGrantRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantKmsGrantResponse`
+        """
+        http_info = self._show_tenant_kms_grant_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_kms_grant_invoker(self, request):
+        http_info = self._show_tenant_kms_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_kms_grant_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/kms-grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantKmsGrantResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_repo_encryption_setting(self, request):
+        r"""获取当前租户的仓库加密配置
+
+        获取当前租户的仓库加密配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantRepoEncryptionSetting
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantRepoEncryptionSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ShowTenantRepoEncryptionSettingResponse`
+        """
+        http_info = self._show_tenant_repo_encryption_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_repo_encryption_setting_invoker(self, request):
+        http_info = self._show_tenant_repo_encryption_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_repo_encryption_setting_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantRepoEncryptionSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_tenant_repo_encryption_setting(self, request):
+        r"""修改当前租户的仓库加密配置
+
+        修改当前租户的仓库加密配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTenantRepoEncryptionSetting
+        :type request: :class:`huaweicloudsdkcodeartsrepo.v4.UpdateTenantRepoEncryptionSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.UpdateTenantRepoEncryptionSettingResponse`
+        """
+        http_info = self._update_tenant_repo_encryption_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_tenant_repo_encryption_setting_invoker(self, request):
+        http_info = self._update_tenant_repo_encryption_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_tenant_repo_encryption_setting_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/tenants/{tenant_id}/repo-encryption/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTenantRepoEncryptionSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'tenant_id' in local_var_params:
+            path_params['tenant_id'] = local_var_params['tenant_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -19026,8 +20415,6 @@ class CodeArtsRepoClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
         if 'state' in local_var_params:
@@ -20132,6 +21519,8 @@ class CodeArtsRepoClient(Client):
             path_params['repository_id'] = local_var_params['repository_id']
 
         query_params = []
+        if 'include_system' in local_var_params:
+            query_params.append(('include_system', local_var_params['include_system']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:

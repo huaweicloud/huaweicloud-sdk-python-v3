@@ -17,6 +17,7 @@ class ListFilesRequest:
     openapi_types = {
         'repository_id': 'int',
         'ref_name': 'str',
+        'search': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -24,19 +25,22 @@ class ListFilesRequest:
     attribute_map = {
         'repository_id': 'repository_id',
         'ref_name': 'ref_name',
+        'search': 'search',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, repository_id=None, ref_name=None, offset=None, limit=None):
+    def __init__(self, repository_id=None, ref_name=None, search=None, offset=None, limit=None):
         r"""ListFilesRequest
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
         :param ref_name: **参数解释：** 分支或者tag名称。 **约束限制：** 不支持以 - . refs/heads/ refs/remotes/ 开头，不支持空格 [ \\ &lt; ~ ^ : ? * ! ( ) &#39; \&quot; | 等特殊字符，不支持以. / .lock结尾。 **取值范围：** 字符串长度不少于1，不超过200。 **默认取值：** 仓库默认分支。
         :type ref_name: str
+        :param search: **参数解释：** 文件名、文件路径 **取值范围：** 不涉及。
+        :type search: str
         :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
         :param limit: **参数解释：** 返回数量。
@@ -47,6 +51,7 @@ class ListFilesRequest:
 
         self._repository_id = None
         self._ref_name = None
+        self._search = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -54,6 +59,8 @@ class ListFilesRequest:
         self.repository_id = repository_id
         if ref_name is not None:
             self.ref_name = ref_name
+        if search is not None:
+            self.search = search
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -63,7 +70,7 @@ class ListFilesRequest:
     def repository_id(self):
         r"""Gets the repository_id of this ListFilesRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ListFilesRequest.
         :rtype: int
@@ -74,7 +81,7 @@ class ListFilesRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ListFilesRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ListFilesRequest.
         :type repository_id: int
@@ -102,6 +109,28 @@ class ListFilesRequest:
         :type ref_name: str
         """
         self._ref_name = ref_name
+
+    @property
+    def search(self):
+        r"""Gets the search of this ListFilesRequest.
+
+        **参数解释：** 文件名、文件路径 **取值范围：** 不涉及。
+
+        :return: The search of this ListFilesRequest.
+        :rtype: str
+        """
+        return self._search
+
+    @search.setter
+    def search(self, search):
+        r"""Sets the search of this ListFilesRequest.
+
+        **参数解释：** 文件名、文件路径 **取值范围：** 不涉及。
+
+        :param search: The search of this ListFilesRequest.
+        :type search: str
+        """
+        self._search = search
 
     @property
     def offset(self):

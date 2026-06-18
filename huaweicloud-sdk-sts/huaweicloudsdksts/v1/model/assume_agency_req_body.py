@@ -47,27 +47,27 @@ class AssumeAgencyReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param duration_seconds: 获得的临时安全凭证的有效时间（单位秒）。请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。
+        :param duration_seconds: **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
         :type duration_seconds: int
-        :param external_id: 外部ID，防止混淆代理人问题。
+        :param external_id: **参数解释**： 外部ID，防止混淆代理人问题。  **约束限制**： 长度范围为[2,1224]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type external_id: str
-        :param policy: 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。
+        :param policy: **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type policy: str
-        :param policy_ids: 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。
+        :param policy_ids: **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type policy_ids: list[str]
-        :param agency_urn: 目标委托的URN。
+        :param agency_urn: **参数解释**： 目标委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type agency_urn: str
-        :param agency_session_name: 委托会话的会话名。
+        :param agency_session_name: **参数解释**： 委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type agency_session_name: str
-        :param serial_number: 调用者绑定的MFA设备的序列号。
+        :param serial_number: **参数解释**： 调用者绑定的MFA设备的序列号。  **约束限制**： 长度范围为[9,256]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type serial_number: str
-        :param token_code: 调用者绑定的MFA设备上的6位数字码。
+        :param token_code: **参数解释**： 调用者绑定的MFA设备上的6位数字码。  **约束限制**： 长度范围为[6,6]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type token_code: str
-        :param source_identity: 调用链里最初调用者所声明的身份。
+        :param source_identity: **参数解释**： 调用链里最初调用者所声明的身份。  **约束限制**： 长度范围为[2,64]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type source_identity: str
-        :param tags: 自定义标签列表。
+        :param tags: **参数解释**： 自定义标签列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type tags: list[:class:`huaweicloudsdksts.v1.TagDto`]
-        :param transitive_tag_keys: 随着临时安全凭证调用链持续透传的标签键列表。
+        :param transitive_tag_keys: **参数解释**： 随着临时安全凭证调用链持续透传的标签键列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type transitive_tag_keys: list[str]
         """
         
@@ -111,7 +111,7 @@ class AssumeAgencyReqBody:
     def duration_seconds(self):
         r"""Gets the duration_seconds of this AssumeAgencyReqBody.
 
-        获得的临时安全凭证的有效时间（单位秒）。请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。
+        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
 
         :return: The duration_seconds of this AssumeAgencyReqBody.
         :rtype: int
@@ -122,7 +122,7 @@ class AssumeAgencyReqBody:
     def duration_seconds(self, duration_seconds):
         r"""Sets the duration_seconds of this AssumeAgencyReqBody.
 
-        获得的临时安全凭证的有效时间（单位秒）。请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。
+        **参数解释**： 获得的临时安全凭证的有效时间（单位：秒）。  **约束限制**： 请注意，该时间需要小于委托本身设置的最大会话持续时间，同时在携带X-Security-Token的Header头时该时间不能超过3600秒。  **取值范围**： 取值范围为[900,43200]。  **默认取值**： 默认值为3600。 
 
         :param duration_seconds: The duration_seconds of this AssumeAgencyReqBody.
         :type duration_seconds: int
@@ -133,7 +133,7 @@ class AssumeAgencyReqBody:
     def external_id(self):
         r"""Gets the external_id of this AssumeAgencyReqBody.
 
-        外部ID，防止混淆代理人问题。
+        **参数解释**： 外部ID，防止混淆代理人问题。  **约束限制**： 长度范围为[2,1224]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The external_id of this AssumeAgencyReqBody.
         :rtype: str
@@ -144,7 +144,7 @@ class AssumeAgencyReqBody:
     def external_id(self, external_id):
         r"""Sets the external_id of this AssumeAgencyReqBody.
 
-        外部ID，防止混淆代理人问题。
+        **参数解释**： 外部ID，防止混淆代理人问题。  **约束限制**： 长度范围为[2,1224]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param external_id: The external_id of this AssumeAgencyReqBody.
         :type external_id: str
@@ -155,7 +155,7 @@ class AssumeAgencyReqBody:
     def policy(self):
         r"""Gets the policy of this AssumeAgencyReqBody.
 
-        自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。
+        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The policy of this AssumeAgencyReqBody.
         :rtype: str
@@ -166,7 +166,7 @@ class AssumeAgencyReqBody:
     def policy(self, policy):
         r"""Sets the policy of this AssumeAgencyReqBody.
 
-        自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。
+        **参数解释**： 自定义策略，限制本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。  **约束限制**： 本次会话获得的临时安全凭证的权限范围不会超过该自定义策略指定的权限。 长度范围为[2,2048]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param policy: The policy of this AssumeAgencyReqBody.
         :type policy: str
@@ -177,7 +177,7 @@ class AssumeAgencyReqBody:
     def policy_ids(self):
         r"""Gets the policy_ids of this AssumeAgencyReqBody.
 
-        预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The policy_ids of this AssumeAgencyReqBody.
         :rtype: list[str]
@@ -188,7 +188,7 @@ class AssumeAgencyReqBody:
     def policy_ids(self, policy_ids):
         r"""Sets the policy_ids of this AssumeAgencyReqBody.
 
-        预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。
+        **参数解释**： 预置策略列表，限制本次会话获得的临时安全凭证的权限范围不会超过该预置策略指定的权限。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param policy_ids: The policy_ids of this AssumeAgencyReqBody.
         :type policy_ids: list[str]
@@ -199,7 +199,7 @@ class AssumeAgencyReqBody:
     def agency_urn(self):
         r"""Gets the agency_urn of this AssumeAgencyReqBody.
 
-        目标委托的URN。
+        **参数解释**： 目标委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The agency_urn of this AssumeAgencyReqBody.
         :rtype: str
@@ -210,7 +210,7 @@ class AssumeAgencyReqBody:
     def agency_urn(self, agency_urn):
         r"""Sets the agency_urn of this AssumeAgencyReqBody.
 
-        目标委托的URN。
+        **参数解释**： 目标委托的URN。  **约束限制**： 长度范围为[0,1500]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param agency_urn: The agency_urn of this AssumeAgencyReqBody.
         :type agency_urn: str
@@ -221,7 +221,7 @@ class AssumeAgencyReqBody:
     def agency_session_name(self):
         r"""Gets the agency_session_name of this AssumeAgencyReqBody.
 
-        委托会话的会话名。
+        **参数解释**： 委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The agency_session_name of this AssumeAgencyReqBody.
         :rtype: str
@@ -232,7 +232,7 @@ class AssumeAgencyReqBody:
     def agency_session_name(self, agency_session_name):
         r"""Sets the agency_session_name of this AssumeAgencyReqBody.
 
-        委托会话的会话名。
+        **参数解释**： 委托会话的会话名。  **约束限制**： 长度范围为[2,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param agency_session_name: The agency_session_name of this AssumeAgencyReqBody.
         :type agency_session_name: str
@@ -243,7 +243,7 @@ class AssumeAgencyReqBody:
     def serial_number(self):
         r"""Gets the serial_number of this AssumeAgencyReqBody.
 
-        调用者绑定的MFA设备的序列号。
+        **参数解释**： 调用者绑定的MFA设备的序列号。  **约束限制**： 长度范围为[9,256]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The serial_number of this AssumeAgencyReqBody.
         :rtype: str
@@ -254,7 +254,7 @@ class AssumeAgencyReqBody:
     def serial_number(self, serial_number):
         r"""Sets the serial_number of this AssumeAgencyReqBody.
 
-        调用者绑定的MFA设备的序列号。
+        **参数解释**： 调用者绑定的MFA设备的序列号。  **约束限制**： 长度范围为[9,256]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param serial_number: The serial_number of this AssumeAgencyReqBody.
         :type serial_number: str
@@ -265,7 +265,7 @@ class AssumeAgencyReqBody:
     def token_code(self):
         r"""Gets the token_code of this AssumeAgencyReqBody.
 
-        调用者绑定的MFA设备上的6位数字码。
+        **参数解释**： 调用者绑定的MFA设备上的6位数字码。  **约束限制**： 长度范围为[6,6]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The token_code of this AssumeAgencyReqBody.
         :rtype: str
@@ -276,7 +276,7 @@ class AssumeAgencyReqBody:
     def token_code(self, token_code):
         r"""Sets the token_code of this AssumeAgencyReqBody.
 
-        调用者绑定的MFA设备上的6位数字码。
+        **参数解释**： 调用者绑定的MFA设备上的6位数字码。  **约束限制**： 长度范围为[6,6]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param token_code: The token_code of this AssumeAgencyReqBody.
         :type token_code: str
@@ -287,7 +287,7 @@ class AssumeAgencyReqBody:
     def source_identity(self):
         r"""Gets the source_identity of this AssumeAgencyReqBody.
 
-        调用链里最初调用者所声明的身份。
+        **参数解释**： 调用链里最初调用者所声明的身份。  **约束限制**： 长度范围为[2,64]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The source_identity of this AssumeAgencyReqBody.
         :rtype: str
@@ -298,7 +298,7 @@ class AssumeAgencyReqBody:
     def source_identity(self, source_identity):
         r"""Sets the source_identity of this AssumeAgencyReqBody.
 
-        调用链里最初调用者所声明的身份。
+        **参数解释**： 调用链里最初调用者所声明的身份。  **约束限制**： 长度范围为[2,64]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param source_identity: The source_identity of this AssumeAgencyReqBody.
         :type source_identity: str
@@ -309,7 +309,7 @@ class AssumeAgencyReqBody:
     def tags(self):
         r"""Gets the tags of this AssumeAgencyReqBody.
 
-        自定义标签列表。
+        **参数解释**： 自定义标签列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The tags of this AssumeAgencyReqBody.
         :rtype: list[:class:`huaweicloudsdksts.v1.TagDto`]
@@ -320,7 +320,7 @@ class AssumeAgencyReqBody:
     def tags(self, tags):
         r"""Sets the tags of this AssumeAgencyReqBody.
 
-        自定义标签列表。
+        **参数解释**： 自定义标签列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param tags: The tags of this AssumeAgencyReqBody.
         :type tags: list[:class:`huaweicloudsdksts.v1.TagDto`]
@@ -331,7 +331,7 @@ class AssumeAgencyReqBody:
     def transitive_tag_keys(self):
         r"""Gets the transitive_tag_keys of this AssumeAgencyReqBody.
 
-        随着临时安全凭证调用链持续透传的标签键列表。
+        **参数解释**： 随着临时安全凭证调用链持续透传的标签键列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The transitive_tag_keys of this AssumeAgencyReqBody.
         :rtype: list[str]
@@ -342,7 +342,7 @@ class AssumeAgencyReqBody:
     def transitive_tag_keys(self, transitive_tag_keys):
         r"""Sets the transitive_tag_keys of this AssumeAgencyReqBody.
 
-        随着临时安全凭证调用链持续透传的标签键列表。
+        **参数解释**： 随着临时安全凭证调用链持续透传的标签键列表。  **约束限制**： 不涉及。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param transitive_tag_keys: The transitive_tag_keys of this AssumeAgencyReqBody.
         :type transitive_tag_keys: list[str]

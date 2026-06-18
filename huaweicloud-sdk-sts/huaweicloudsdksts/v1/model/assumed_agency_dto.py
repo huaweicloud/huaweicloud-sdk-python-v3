@@ -29,9 +29,9 @@ class AssumedAgencyDto:
 
         The model defined in huaweicloud sdk
 
-        :param urn: 目标委托的URN。
+        :param urn: **参数解释**： 委托会话或信任委托会话的URN。  **取值范围**： 不涉及。 
         :type urn: str
-        :param id: 目标委托的唯一标志，包含了委托ID和委托会话名称信息。
+        :param id: **参数解释**： 委托会话或信任委托会话的唯一标识，包含了委托ID和委托会话名称信息。  **取值范围**： 不涉及。 
         :type id: str
         """
         
@@ -48,7 +48,7 @@ class AssumedAgencyDto:
     def urn(self):
         r"""Gets the urn of this AssumedAgencyDto.
 
-        目标委托的URN。
+        **参数解释**： 委托会话或信任委托会话的URN。  **取值范围**： 不涉及。 
 
         :return: The urn of this AssumedAgencyDto.
         :rtype: str
@@ -59,7 +59,7 @@ class AssumedAgencyDto:
     def urn(self, urn):
         r"""Sets the urn of this AssumedAgencyDto.
 
-        目标委托的URN。
+        **参数解释**： 委托会话或信任委托会话的URN。  **取值范围**： 不涉及。 
 
         :param urn: The urn of this AssumedAgencyDto.
         :type urn: str
@@ -70,7 +70,7 @@ class AssumedAgencyDto:
     def id(self):
         r"""Gets the id of this AssumedAgencyDto.
 
-        目标委托的唯一标志，包含了委托ID和委托会话名称信息。
+        **参数解释**： 委托会话或信任委托会话的唯一标识，包含了委托ID和委托会话名称信息。  **取值范围**： 不涉及。 
 
         :return: The id of this AssumedAgencyDto.
         :rtype: str
@@ -81,7 +81,7 @@ class AssumedAgencyDto:
     def id(self, id):
         r"""Sets the id of this AssumedAgencyDto.
 
-        目标委托的唯一标志，包含了委托ID和委托会话名称信息。
+        **参数解释**： 委托会话或信任委托会话的唯一标识，包含了委托ID和委托会话名称信息。  **取值范围**： 不涉及。 
 
         :param id: The id of this AssumedAgencyDto.
         :type id: str

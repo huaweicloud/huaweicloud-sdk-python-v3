@@ -33,7 +33,7 @@ class ListGroupMergeRequestTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param template_name: **参数解释：** 搜索的模板名称 **取值范围：** 字符串长度不少于1，不超过100000。
         :type template_name: str
@@ -63,7 +63,7 @@ class ListGroupMergeRequestTemplatesRequest:
     def group_id(self):
         r"""Gets the group_id of this ListGroupMergeRequestTemplatesRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this ListGroupMergeRequestTemplatesRequest.
         :rtype: int
@@ -74,7 +74,7 @@ class ListGroupMergeRequestTemplatesRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListGroupMergeRequestTemplatesRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this ListGroupMergeRequestTemplatesRequest.
         :type group_id: int

@@ -43,7 +43,7 @@ class PermissionDto:
         :type role_name: str
         :param role_name_cn: **参数解释：** 角色中文名称。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type role_name_cn: str
-        :param resource_permissions: **参数解释：** 资源权限对象。
+        :param resource_permissions: **参数解释：** 资源权限对象。记录权限点的ID、名称、以及角色是否有该权限点权限等。
         :type resource_permissions: dict(str, ResourcePermissionDto)
         """
         
@@ -159,7 +159,7 @@ class PermissionDto:
     def resource_permissions(self):
         r"""Gets the resource_permissions of this PermissionDto.
 
-        **参数解释：** 资源权限对象。
+        **参数解释：** 资源权限对象。记录权限点的ID、名称、以及角色是否有该权限点权限等。
 
         :return: The resource_permissions of this PermissionDto.
         :rtype: dict(str, ResourcePermissionDto)
@@ -170,7 +170,7 @@ class PermissionDto:
     def resource_permissions(self, resource_permissions):
         r"""Sets the resource_permissions of this PermissionDto.
 
-        **参数解释：** 资源权限对象。
+        **参数解释：** 资源权限对象。记录权限点的ID、名称、以及角色是否有该权限点权限等。
 
         :param resource_permissions: The resource_permissions of this PermissionDto.
         :type resource_permissions: dict(str, ResourcePermissionDto)

@@ -21,7 +21,9 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
         'branch_name_regex': 'str',
         'tag_name_regex': 'str',
         'forbidden_developer_create_branch': 'bool',
-        'create_branch_whitelist_users': 'list[PushRuleDevelopersDto]'
+        'create_branch_whitelist_users': 'list[PushRuleDevelopersDto]',
+        'repo_encryption_enabled': 'bool',
+        'repo_encryption_status': 'ProjectEncryptionStatusBriefDto'
     }
 
     attribute_map = {
@@ -30,10 +32,12 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
         'branch_name_regex': 'branch_name_regex',
         'tag_name_regex': 'tag_name_regex',
         'forbidden_developer_create_branch': 'forbidden_developer_create_branch',
-        'create_branch_whitelist_users': 'create_branch_whitelist_users'
+        'create_branch_whitelist_users': 'create_branch_whitelist_users',
+        'repo_encryption_enabled': 'repo_encryption_enabled',
+        'repo_encryption_status': 'repo_encryption_status'
     }
 
-    def __init__(self, disable_fork=None, generate_pre_merge_ref=None, branch_name_regex=None, tag_name_regex=None, forbidden_developer_create_branch=None, create_branch_whitelist_users=None):
+    def __init__(self, disable_fork=None, generate_pre_merge_ref=None, branch_name_regex=None, tag_name_regex=None, forbidden_developer_create_branch=None, create_branch_whitelist_users=None, repo_encryption_enabled=None, repo_encryption_status=None):
         r"""ShowRepositoryGeneralPolicyResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +54,10 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
         :type forbidden_developer_create_branch: bool
         :param create_branch_whitelist_users: **参数解释：** 开发人员创建分支权限白名单。
         :type create_branch_whitelist_users: list[:class:`huaweicloudsdkcodeartsrepo.v4.PushRuleDevelopersDto`]
+        :param repo_encryption_enabled: **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+        :type repo_encryption_enabled: bool
+        :param repo_encryption_status: 
+        :type repo_encryption_status: :class:`huaweicloudsdkcodeartsrepo.v4.ProjectEncryptionStatusBriefDto`
         """
         
         super().__init__()
@@ -60,6 +68,8 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
         self._tag_name_regex = None
         self._forbidden_developer_create_branch = None
         self._create_branch_whitelist_users = None
+        self._repo_encryption_enabled = None
+        self._repo_encryption_status = None
         self.discriminator = None
 
         if disable_fork is not None:
@@ -74,6 +84,10 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
             self.forbidden_developer_create_branch = forbidden_developer_create_branch
         if create_branch_whitelist_users is not None:
             self.create_branch_whitelist_users = create_branch_whitelist_users
+        if repo_encryption_enabled is not None:
+            self.repo_encryption_enabled = repo_encryption_enabled
+        if repo_encryption_status is not None:
+            self.repo_encryption_status = repo_encryption_status
 
     @property
     def disable_fork(self):
@@ -206,6 +220,46 @@ class ShowRepositoryGeneralPolicyResponse(SdkResponse):
         :type create_branch_whitelist_users: list[:class:`huaweicloudsdkcodeartsrepo.v4.PushRuleDevelopersDto`]
         """
         self._create_branch_whitelist_users = create_branch_whitelist_users
+
+    @property
+    def repo_encryption_enabled(self):
+        r"""Gets the repo_encryption_enabled of this ShowRepositoryGeneralPolicyResponse.
+
+        **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+
+        :return: The repo_encryption_enabled of this ShowRepositoryGeneralPolicyResponse.
+        :rtype: bool
+        """
+        return self._repo_encryption_enabled
+
+    @repo_encryption_enabled.setter
+    def repo_encryption_enabled(self, repo_encryption_enabled):
+        r"""Sets the repo_encryption_enabled of this ShowRepositoryGeneralPolicyResponse.
+
+        **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+
+        :param repo_encryption_enabled: The repo_encryption_enabled of this ShowRepositoryGeneralPolicyResponse.
+        :type repo_encryption_enabled: bool
+        """
+        self._repo_encryption_enabled = repo_encryption_enabled
+
+    @property
+    def repo_encryption_status(self):
+        r"""Gets the repo_encryption_status of this ShowRepositoryGeneralPolicyResponse.
+
+        :return: The repo_encryption_status of this ShowRepositoryGeneralPolicyResponse.
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.ProjectEncryptionStatusBriefDto`
+        """
+        return self._repo_encryption_status
+
+    @repo_encryption_status.setter
+    def repo_encryption_status(self, repo_encryption_status):
+        r"""Sets the repo_encryption_status of this ShowRepositoryGeneralPolicyResponse.
+
+        :param repo_encryption_status: The repo_encryption_status of this ShowRepositoryGeneralPolicyResponse.
+        :type repo_encryption_status: :class:`huaweicloudsdkcodeartsrepo.v4.ProjectEncryptionStatusBriefDto`
+        """
+        self._repo_encryption_status = repo_encryption_status
 
     def to_dict(self):
         import warnings

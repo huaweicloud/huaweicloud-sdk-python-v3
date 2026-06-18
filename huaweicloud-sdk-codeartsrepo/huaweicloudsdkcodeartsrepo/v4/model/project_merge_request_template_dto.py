@@ -16,7 +16,6 @@ class ProjectMergeRequestTemplateDto:
 
     openapi_types = {
         'id': 'int',
-        'repository_id': 'int',
         'description': 'str',
         'created_at': 'str',
         'updated_at': 'str',
@@ -31,7 +30,6 @@ class ProjectMergeRequestTemplateDto:
 
     attribute_map = {
         'id': 'id',
-        'repository_id': 'repository_id',
         'description': 'description',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
@@ -44,15 +42,13 @@ class ProjectMergeRequestTemplateDto:
         'project_id': 'project_id'
     }
 
-    def __init__(self, id=None, repository_id=None, description=None, created_at=None, updated_at=None, template_name=None, merge_request_title=None, is_default=None, is_wip=None, auto_extract_mr_title=None, creator=None, project_id=None):
+    def __init__(self, id=None, description=None, created_at=None, updated_at=None, template_name=None, merge_request_title=None, is_default=None, is_wip=None, auto_extract_mr_title=None, creator=None, project_id=None):
         r"""ProjectMergeRequestTemplateDto
 
         The model defined in huaweicloud sdk
 
         :param id: **参数解释：** 合并请求模板主键id
         :type id: int
-        :param repository_id: **参数解释：** 仓库id
-        :type repository_id: int
         :param description: **参数解释：** 描述
         :type description: str
         :param created_at: **参数解释：** 创建时间。
@@ -78,7 +74,6 @@ class ProjectMergeRequestTemplateDto:
         
 
         self._id = None
-        self._repository_id = None
         self._description = None
         self._created_at = None
         self._updated_at = None
@@ -93,8 +88,6 @@ class ProjectMergeRequestTemplateDto:
 
         if id is not None:
             self.id = id
-        if repository_id is not None:
-            self.repository_id = repository_id
         if description is not None:
             self.description = description
         if created_at is not None:
@@ -137,28 +130,6 @@ class ProjectMergeRequestTemplateDto:
         :type id: int
         """
         self._id = id
-
-    @property
-    def repository_id(self):
-        r"""Gets the repository_id of this ProjectMergeRequestTemplateDto.
-
-        **参数解释：** 仓库id
-
-        :return: The repository_id of this ProjectMergeRequestTemplateDto.
-        :rtype: int
-        """
-        return self._repository_id
-
-    @repository_id.setter
-    def repository_id(self, repository_id):
-        r"""Sets the repository_id of this ProjectMergeRequestTemplateDto.
-
-        **参数解释：** 仓库id
-
-        :param repository_id: The repository_id of this ProjectMergeRequestTemplateDto.
-        :type repository_id: int
-        """
-        self._repository_id = repository_id
 
     @property
     def description(self):

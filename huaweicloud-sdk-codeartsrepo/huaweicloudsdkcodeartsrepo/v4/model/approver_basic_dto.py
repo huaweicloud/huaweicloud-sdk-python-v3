@@ -25,7 +25,8 @@ class ApproverBasicDto:
         'avatar_url': 'str',
         'nick_name': 'str',
         'tenant_name': 'str',
-        'approver_comment': 'str'
+        'approver_comment': 'str',
+        'has_permission': 'bool'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ApproverBasicDto:
         'avatar_url': 'avatar_url',
         'nick_name': 'nick_name',
         'tenant_name': 'tenant_name',
-        'approver_comment': 'approver_comment'
+        'approver_comment': 'approver_comment',
+        'has_permission': 'has_permission'
     }
 
-    def __init__(self, id=None, name=None, username=None, name_cn=None, email=None, state=None, updated_at=None, avatar_url=None, nick_name=None, tenant_name=None, approver_comment=None):
+    def __init__(self, id=None, name=None, username=None, name_cn=None, email=None, state=None, updated_at=None, avatar_url=None, nick_name=None, tenant_name=None, approver_comment=None, has_permission=None):
         r"""ApproverBasicDto
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ApproverBasicDto:
         :type tenant_name: str
         :param approver_comment: **参数解释：** 审核备注。 **取值范围：** 不涉及。
         :type approver_comment: str
+        :param has_permission: **参数解释：** 是否有相关权限。
+        :type has_permission: bool
         """
         
         
@@ -84,6 +88,7 @@ class ApproverBasicDto:
         self._nick_name = None
         self._tenant_name = None
         self._approver_comment = None
+        self._has_permission = None
         self.discriminator = None
 
         if id is not None:
@@ -108,6 +113,8 @@ class ApproverBasicDto:
             self.tenant_name = tenant_name
         if approver_comment is not None:
             self.approver_comment = approver_comment
+        if has_permission is not None:
+            self.has_permission = has_permission
 
     @property
     def id(self):
@@ -350,6 +357,28 @@ class ApproverBasicDto:
         :type approver_comment: str
         """
         self._approver_comment = approver_comment
+
+    @property
+    def has_permission(self):
+        r"""Gets the has_permission of this ApproverBasicDto.
+
+        **参数解释：** 是否有相关权限。
+
+        :return: The has_permission of this ApproverBasicDto.
+        :rtype: bool
+        """
+        return self._has_permission
+
+    @has_permission.setter
+    def has_permission(self, has_permission):
+        r"""Sets the has_permission of this ApproverBasicDto.
+
+        **参数解释：** 是否有相关权限。
+
+        :param has_permission: The has_permission of this ApproverBasicDto.
+        :type has_permission: bool
+        """
+        self._has_permission = has_permission
 
     def to_dict(self):
         result = {}

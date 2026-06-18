@@ -47,7 +47,9 @@ class RepositoryBasicDto:
         'owner': 'RepositoryUserBasicDto',
         'creator': 'RepositoryUserBasicDto',
         'creator_id': 'int',
-        'forked_from_repository': 'RepositorySimpleDto'
+        'forked_from_repository': 'RepositorySimpleDto',
+        'encryption_status': 'str',
+        'repo_encryption_enabled': 'bool'
     }
 
     attribute_map = {
@@ -83,10 +85,12 @@ class RepositoryBasicDto:
         'owner': 'owner',
         'creator': 'creator',
         'creator_id': 'creator_id',
-        'forked_from_repository': 'forked_from_repository'
+        'forked_from_repository': 'forked_from_repository',
+        'encryption_status': 'encryption_status',
+        'repo_encryption_enabled': 'repo_encryption_enabled'
     }
 
-    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None, default_branch=None, avatar_url=None, star_count=None, forks_count=None, open_issues_count=None, open_merge_requests_count=None, last_activity_at=None, namespace=None, empty_repo=None, starred=None, visibility=None, security_tag=None, security=None, network_type=None, owner=None, creator=None, creator_id=None, forked_from_repository=None):
+    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None, default_branch=None, avatar_url=None, star_count=None, forks_count=None, open_issues_count=None, open_merge_requests_count=None, last_activity_at=None, namespace=None, empty_repo=None, starred=None, visibility=None, security_tag=None, security=None, network_type=None, owner=None, creator=None, creator_id=None, forked_from_repository=None, encryption_status=None, repo_encryption_enabled=None):
         r"""RepositoryBasicDto
 
         The model defined in huaweicloud sdk
@@ -157,6 +161,10 @@ class RepositoryBasicDto:
         :type creator_id: int
         :param forked_from_repository: 
         :type forked_from_repository: :class:`huaweicloudsdkcodeartsrepo.v4.RepositorySimpleDto`
+        :param encryption_status: **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+        :type encryption_status: str
+        :param repo_encryption_enabled: **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+        :type repo_encryption_enabled: bool
         """
         
         
@@ -194,6 +202,8 @@ class RepositoryBasicDto:
         self._creator = None
         self._creator_id = None
         self._forked_from_repository = None
+        self._encryption_status = None
+        self._repo_encryption_enabled = None
         self.discriminator = None
 
         if id is not None:
@@ -262,6 +272,10 @@ class RepositoryBasicDto:
             self.creator_id = creator_id
         if forked_from_repository is not None:
             self.forked_from_repository = forked_from_repository
+        if encryption_status is not None:
+            self.encryption_status = encryption_status
+        if repo_encryption_enabled is not None:
+            self.repo_encryption_enabled = repo_encryption_enabled
 
     @property
     def id(self):
@@ -972,6 +986,50 @@ class RepositoryBasicDto:
         :type forked_from_repository: :class:`huaweicloudsdkcodeartsrepo.v4.RepositorySimpleDto`
         """
         self._forked_from_repository = forked_from_repository
+
+    @property
+    def encryption_status(self):
+        r"""Gets the encryption_status of this RepositoryBasicDto.
+
+        **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+
+        :return: The encryption_status of this RepositoryBasicDto.
+        :rtype: str
+        """
+        return self._encryption_status
+
+    @encryption_status.setter
+    def encryption_status(self, encryption_status):
+        r"""Sets the encryption_status of this RepositoryBasicDto.
+
+        **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+
+        :param encryption_status: The encryption_status of this RepositoryBasicDto.
+        :type encryption_status: str
+        """
+        self._encryption_status = encryption_status
+
+    @property
+    def repo_encryption_enabled(self):
+        r"""Gets the repo_encryption_enabled of this RepositoryBasicDto.
+
+        **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+
+        :return: The repo_encryption_enabled of this RepositoryBasicDto.
+        :rtype: bool
+        """
+        return self._repo_encryption_enabled
+
+    @repo_encryption_enabled.setter
+    def repo_encryption_enabled(self, repo_encryption_enabled):
+        r"""Sets the repo_encryption_enabled of this RepositoryBasicDto.
+
+        **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+
+        :param repo_encryption_enabled: The repo_encryption_enabled of this RepositoryBasicDto.
+        :type repo_encryption_enabled: bool
+        """
+        self._repo_encryption_enabled = repo_encryption_enabled
 
     def to_dict(self):
         result = {}

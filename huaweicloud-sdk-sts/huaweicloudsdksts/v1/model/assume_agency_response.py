@@ -32,7 +32,7 @@ class AssumeAgencyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param source_identity: 调用链里最初调用者所声明的身份。
+        :param source_identity: **参数解释**： 调用链里最初调用者所声明的身份。  **取值范围**： 不涉及。 
         :type source_identity: str
         :param assumed_agency: 
         :type assumed_agency: :class:`huaweicloudsdksts.v1.AssumedAgencyDto`
@@ -58,7 +58,7 @@ class AssumeAgencyResponse(SdkResponse):
     def source_identity(self):
         r"""Gets the source_identity of this AssumeAgencyResponse.
 
-        调用链里最初调用者所声明的身份。
+        **参数解释**： 调用链里最初调用者所声明的身份。  **取值范围**： 不涉及。 
 
         :return: The source_identity of this AssumeAgencyResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class AssumeAgencyResponse(SdkResponse):
     def source_identity(self, source_identity):
         r"""Sets the source_identity of this AssumeAgencyResponse.
 
-        调用链里最初调用者所声明的身份。
+        **参数解释**： 调用链里最初调用者所声明的身份。  **取值范围**： 不涉及。 
 
         :param source_identity: The source_identity of this AssumeAgencyResponse.
         :type source_identity: str

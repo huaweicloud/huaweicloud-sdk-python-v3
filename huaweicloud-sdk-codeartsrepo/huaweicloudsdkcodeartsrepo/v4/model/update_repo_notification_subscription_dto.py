@@ -37,11 +37,11 @@ class UpdateRepoNotificationSubscriptionDto:
 
         :param enabled: **参数解释：** 开启通知。
         :type enabled: bool
-        :param config_source: **参数解释：** 配资源。
+        :param config_source: **参数解释：** 配置源。
         :type config_source: str
         :param webhook_config: 
         :type webhook_config: :class:`huaweicloudsdkcodeartsrepo.v4.UpdateRepoWebHookSubscriptionDto`
-        :param waring_repo_usage_rate: **参数解释：** 仓库使用量告警阀值（百分比）。
+        :param waring_repo_usage_rate: **参数解释：** 仓库使用量告警阈值（百分比）。
         :type waring_repo_usage_rate: int
         :param subscript_events: **参数解释：** 通知事件。
         :type subscript_events: list[:class:`huaweicloudsdkcodeartsrepo.v4.RepoSubscriptionEventDto`]
@@ -93,7 +93,7 @@ class UpdateRepoNotificationSubscriptionDto:
     def config_source(self):
         r"""Gets the config_source of this UpdateRepoNotificationSubscriptionDto.
 
-        **参数解释：** 配资源。
+        **参数解释：** 配置源。
 
         :return: The config_source of this UpdateRepoNotificationSubscriptionDto.
         :rtype: str
@@ -104,7 +104,7 @@ class UpdateRepoNotificationSubscriptionDto:
     def config_source(self, config_source):
         r"""Sets the config_source of this UpdateRepoNotificationSubscriptionDto.
 
-        **参数解释：** 配资源。
+        **参数解释：** 配置源。
 
         :param config_source: The config_source of this UpdateRepoNotificationSubscriptionDto.
         :type config_source: str
@@ -133,7 +133,7 @@ class UpdateRepoNotificationSubscriptionDto:
     def waring_repo_usage_rate(self):
         r"""Gets the waring_repo_usage_rate of this UpdateRepoNotificationSubscriptionDto.
 
-        **参数解释：** 仓库使用量告警阀值（百分比）。
+        **参数解释：** 仓库使用量告警阈值（百分比）。
 
         :return: The waring_repo_usage_rate of this UpdateRepoNotificationSubscriptionDto.
         :rtype: int
@@ -144,7 +144,7 @@ class UpdateRepoNotificationSubscriptionDto:
     def waring_repo_usage_rate(self, waring_repo_usage_rate):
         r"""Sets the waring_repo_usage_rate of this UpdateRepoNotificationSubscriptionDto.
 
-        **参数解释：** 仓库使用量告警阀值（百分比）。
+        **参数解释：** 仓库使用量告警阈值（百分比）。
 
         :param waring_repo_usage_rate: The waring_repo_usage_rate of this UpdateRepoNotificationSubscriptionDto.
         :type waring_repo_usage_rate: int

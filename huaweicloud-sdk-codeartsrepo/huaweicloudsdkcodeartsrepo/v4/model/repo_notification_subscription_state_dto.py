@@ -29,7 +29,7 @@ class RepoNotificationSubscriptionStateDto:
 
         The model defined in huaweicloud sdk
 
-        :param config_source: **参数解释：** 配资源。
+        :param config_source: **参数解释：** 配置源。
         :type config_source: str
         :param enabled: **参数解释：** 开启通知。
         :type enabled: bool
@@ -50,7 +50,7 @@ class RepoNotificationSubscriptionStateDto:
     def config_source(self):
         r"""Gets the config_source of this RepoNotificationSubscriptionStateDto.
 
-        **参数解释：** 配资源。
+        **参数解释：** 配置源。
 
         :return: The config_source of this RepoNotificationSubscriptionStateDto.
         :rtype: str
@@ -61,7 +61,7 @@ class RepoNotificationSubscriptionStateDto:
     def config_source(self, config_source):
         r"""Sets the config_source of this RepoNotificationSubscriptionStateDto.
 
-        **参数解释：** 配资源。
+        **参数解释：** 配置源。
 
         :param config_source: The config_source of this RepoNotificationSubscriptionStateDto.
         :type config_source: str

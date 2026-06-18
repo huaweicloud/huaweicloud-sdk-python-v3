@@ -23,7 +23,8 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
         'updated_at': 'str',
         'content': 'str',
         'user': 'UserBasicDto',
-        'custom_evaluations': 'list[CustomEvaluationDto]'
+        'custom_evaluations': 'list[CustomEvaluationDto]',
+        'x_total': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
         'updated_at': 'updated_at',
         'content': 'content',
         'user': 'user',
-        'custom_evaluations': 'custom_evaluations'
+        'custom_evaluations': 'custom_evaluations',
+        'x_total': 'X-Total'
     }
 
-    def __init__(self, id=None, merge_request_id=None, level=None, created_at=None, updated_at=None, content=None, user=None, custom_evaluations=None):
+    def __init__(self, id=None, merge_request_id=None, level=None, created_at=None, updated_at=None, content=None, user=None, custom_evaluations=None, x_total=None):
         r"""ListMergeRequestEvaluationsResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
         :type user: :class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`
         :param custom_evaluations: 自定义评价
         :type custom_evaluations: list[:class:`huaweicloudsdkcodeartsrepo.v4.CustomEvaluationDto`]
+        :param x_total: 
+        :type x_total: str
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
         self._content = None
         self._user = None
         self._custom_evaluations = None
+        self._x_total = None
         self.discriminator = None
 
         if id is not None:
@@ -88,6 +93,8 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
             self.user = user
         if custom_evaluations is not None:
             self.custom_evaluations = custom_evaluations
+        if x_total is not None:
+            self.x_total = x_total
 
     @property
     def id(self):
@@ -260,6 +267,24 @@ class ListMergeRequestEvaluationsResponse(SdkResponse):
         :type custom_evaluations: list[:class:`huaweicloudsdkcodeartsrepo.v4.CustomEvaluationDto`]
         """
         self._custom_evaluations = custom_evaluations
+
+    @property
+    def x_total(self):
+        r"""Gets the x_total of this ListMergeRequestEvaluationsResponse.
+
+        :return: The x_total of this ListMergeRequestEvaluationsResponse.
+        :rtype: str
+        """
+        return self._x_total
+
+    @x_total.setter
+    def x_total(self, x_total):
+        r"""Sets the x_total of this ListMergeRequestEvaluationsResponse.
+
+        :param x_total: The x_total of this ListMergeRequestEvaluationsResponse.
+        :type x_total: str
+        """
+        self._x_total = x_total
 
     def to_dict(self):
         import warnings

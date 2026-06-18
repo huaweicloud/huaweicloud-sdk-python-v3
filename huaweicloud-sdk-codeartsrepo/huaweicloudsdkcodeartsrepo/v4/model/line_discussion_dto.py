@@ -15,7 +15,7 @@ class LineDiscussionDto:
     sensitive_list = []
 
     openapi_types = {
-        'discussions': 'list[MergeRequestBasicDiscussionDto]',
+        'discussions': 'list[MergeRequestDiscussionDto]',
         'line': 'int',
         'type': 'str'
     }
@@ -32,7 +32,7 @@ class LineDiscussionDto:
         The model defined in huaweicloud sdk
 
         :param discussions: **参数解释：** 位于某一侧某行的检视意见集合。
-        :type discussions: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestBasicDiscussionDto`]
+        :type discussions: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestDiscussionDto`]
         :param line: **参数解释：** 所在的行号。
         :type line: int
         :param type: **参数解释：** 所在的行的类型。 **取值范围：** old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
@@ -60,7 +60,7 @@ class LineDiscussionDto:
         **参数解释：** 位于某一侧某行的检视意见集合。
 
         :return: The discussions of this LineDiscussionDto.
-        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestBasicDiscussionDto`]
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestDiscussionDto`]
         """
         return self._discussions
 
@@ -71,7 +71,7 @@ class LineDiscussionDto:
         **参数解释：** 位于某一侧某行的检视意见集合。
 
         :param discussions: The discussions of this LineDiscussionDto.
-        :type discussions: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestBasicDiscussionDto`]
+        :type discussions: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestDiscussionDto`]
         """
         self._discussions = discussions
 

@@ -1,3 +1,600 @@
+# 3.1.200 2026-06-18
+
+### HuaweiCloud SDK CBH
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListSwitchConfigInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRepository**
+    - 请求参数变更
+      - `+ group_id`
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 支持以下接口：
+    - `ListProjectMergeRequests`
+    - `ListGroupProtectedBranches`
+    - `ListManagementUsers`
+    - `UpdateGroupResourcePermissions`
+    - `ShowRepoStatisticsSummary`
+    - `ShowRepoLastStatistics`
+    - `TransferRepository`
+    - `ListRepositoryNavigationReferences`
+    - `ShowRepositoryNavigationOutline`
+    - `RebuildRepositoryNavigation`
+    - `ShowRepositoryNavigationSchema`
+    - `ShowRepositoryNavigationLanguage`
+    - `ShowTenantDevelopMode`
+    - `ShowTenantRepoEncryptionSetting`
+    - `UpdateTenantRepoEncryptionSetting`
+    - `ListTenantCmks`
+    - `ListTenantEncryptedRepositories`
+    - `ShowTenantKmsGrant`
+    - `CreateTenantKmsGrant`
+    - `ShowProjectTenantSettings`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCommitAssociatedRefs**
+    - 请求参数变更
+      - `+ type`
+  - **ListFiles**
+    - 请求参数变更
+      - `+ search`
+  - **ListManageableGroups**
+    - 响应参数变更
+      - `+ full_path`
+      - `+ path`
+      - `+ visibility`
+  - **ListProjectWebhooks**
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddProjectWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowProjectWebhook**
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateProjectWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ListRepositoryWebhooks**
+    - 请求参数变更
+      - `+ include_system`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddRepositoryWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowRepositoryWebhook**
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateRepositoryWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **CreateReviewSetting**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- repository_id`
+  - **ShowReviewSetting**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- repository_id`
+  - **ListGroupMergeRequestValidAssignedCandidates**
+    - 响应参数变更
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListProjectMergeRequestCanBeAssignedUsers**
+    - 响应参数变更
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListGroupMergeRequestCanBeAssignedReviewers**
+    - 响应参数变更
+      - `- is_committer`
+  - **ListProjectMergeRequestCanBeAssignedReviewers**
+    - 响应参数变更
+      - `- is_committer`
+      - `* : list<MergeRequestVoteReviewerDto> -> list<UserBasicDto>`
+  - **ListMergeRequestValidAssignedCandidates**
+    - 请求参数变更
+      - `+ target_repository_id`
+      - `- target_project_id`
+      - `- mode`
+      - `* target_branch: optional -> required`
+  - **ShowUserEmails**
+    - 响应参数变更
+      - `+ is_default`
+  - **UpdateUserEmails**
+    - 响应参数变更
+      - `+ is_default`
+  - **ListImpersonationTokens**
+    - 请求参数变更
+      - `- group_id`
+  - **ShowRepositoryInheritSettingSource**
+    - 请求参数变更
+      - `* name: optional -> required`
+      - `+ name: enum value [merge_requests]`
+  - **ListTenantRepositories**
+    - 请求参数变更
+      - `+ locked`
+    - 响应参数变更
+      - `+ locked`
+  - **ListGroupWebhooks**
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **AddGroupWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+      - `* body: object<WebhookParamsDto> -> object<WebhookParamsRequestDto>`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ShowGroupWebhook**
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **UpdateGroupWebhook**
+    - 请求参数变更
+      - `+ note_plain_text_filter`
+      - `* body: object<WebhookParamsDto> -> object<WebhookParamsRequestDto>`
+    - 响应参数变更
+      - `+ project_cfgs`
+      - `+ event_cfgs`
+      - `+ branch_cfgs`
+      - `+ service`
+      - `+ note_plain_text_filter`
+  - **ListMergeRequestSystemNotes**
+    - 响应参数变更
+      - `+ from_robot`
+      - `- attachment`
+  - **CreateMergeRequestDiscussionResponse**
+    - 响应参数变更
+      - `+ from_robot`
+      - `- attachment`
+  - **ShowMergeRequestDetail**
+    - 响应参数变更
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **UpdateMergeRequest**
+    - 响应参数变更
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **MergeMergeRequest**
+    - 响应参数变更
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **CreateMergeRequest**
+    - 响应参数变更
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **ListPersonalMergeRequests**
+    - 请求参数变更
+      - `+ view: enum value [view_for_list]`
+      - `+ wip: enum value [yes,no]`
+      - `+ wip: enum value [true,false]`
+  - **ShowCommitDiffMetadata**
+    - 响应参数变更
+      - `+ blob_id`
+  - **ImportMergeRequest**
+    - 响应参数变更
+      - `+ upvotes`
+      - `+ downvotes`
+      - `+ should_remove_source_branch`
+      - `+ topic`
+      - `+ assignee`
+      - `+ only_assignee_can_merge`
+      - `+ is_source_branch_default`
+      - `+ author.has_permission`
+  - **ShowMergeRequestSetting**
+    - 响应参数变更
+      - `+ has_evaluation_permission`
+  - **UpdateMergeRequestSetting**
+    - 响应参数变更
+      - `+ has_evaluation_permission`
+  - **ListMergeRequestTemplates**
+    - 响应参数变更
+      - `+ from`
+  - **CreateMergeRequestTemplate**
+    - 响应参数变更
+      - `+ from`
+  - **ShowMergeRequestTemplate**
+    - 响应参数变更
+      - `+ from`
+  - **UpdateMergeRequestTemplate**
+    - 响应参数变更
+      - `+ from`
+  - **ListMergeRequestApprovers**
+    - 请求参数变更
+      - `* target_branch: optional -> required`
+      - `* source_branch: optional -> required`
+    - 响应参数变更
+      - `+ error_message`
+      - `+ tenant_name`
+      - `+ has_permission`
+      - `+ avatar_path`
+      - `+ avatar_url`
+      - `+ web_url`
+      - `+ nick_name`
+      - `+ name`
+      - `+ service_license_status`
+      - `+ id`
+      - `+ state`
+      - `+ name_cn`
+      - `+ email`
+      - `+ username`
+      - `+ required_approvers_list.has_permission`
+      - `* required_approvers_list: list<UserBasicDto> -> list<MergeRequestApprovalUserDto>`
+  - **ListMergeRequestReviewers**
+    - 请求参数变更
+      - `* target_branch: optional -> required`
+      - `* source_branch: optional -> required`
+    - 响应参数变更
+      - `+ error_message`
+      - `+ tenant_name`
+      - `+ has_permission`
+      - `+ avatar_path`
+      - `+ avatar_url`
+      - `+ web_url`
+      - `+ nick_name`
+      - `+ name`
+      - `+ service_license_status`
+      - `+ id`
+      - `+ state`
+      - `+ name_cn`
+      - `+ email`
+      - `+ username`
+      - `+ required_reviewers_list.has_permission`
+      - `* required_reviewers_list: list<UserBasicDto> -> list<MergeRequestApprovalUserDto>`
+  - **ShowGroupReviewSettings**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **UpdateGroupReviewSettings**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **ShowProjectReviewSettings**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **UpdateProjectReviewSettings**
+    - 响应参数变更
+      - `+ secondary_category_type`
+      - `+ secondary_categories`
+      - `- hicode_default_categories`
+      - `- repository_id`
+      - `- note_required_attributes`
+      - `- codehub_default_categories`
+  - **ListGroupMergeRequestTemplates**
+    - 响应参数变更
+      - `- repository_id`
+  - **CreateGroupMergeRequestTemplate**
+    - 响应参数变更
+      - `- repository_id`
+  - **UpdateGroupMergeRequestTemplate**
+    - 响应参数变更
+      - `- repository_id`
+  - **ListProjectMergeRequestTemplates**
+    - 响应参数变更
+      - `- repository_id`
+  - **CreateProjectMergeRequestTemplate**
+    - 响应参数变更
+      - `- repository_id`
+  - **UpdateProjectMergeRequestTemplate**
+    - 响应参数变更
+      - `- repository_id`
+  - **ListGroups**
+    - 响应参数变更
+      - `+ roles`
+  - **ListProjectSubgroupsAndRepositories**
+    - 响应参数变更
+      - `* updated_at_timestamp: string -> int64`
+      - `* star_time: string -> int64`
+  - **ListGroupSubgroupsAndRepositories**
+    - 响应参数变更
+      - `* updated_at_timestamp: string -> int64`
+      - `* star_time: string -> int64`
+  - **ShowRepositoryInheritSetting**
+    - 响应参数变更
+      - `+ name: enum value [mr_branch_policies,reviews]`
+  - **UpdateRepositoryInheritSetting**
+    - 请求参数变更
+      - `+ data.name: enum value [mr_branch_policies,reviews]`
+    - 响应参数变更
+      - `+ name: enum value [mr_branch_policies,reviews]`
+  - **ShowRepositoryGeneralPolicy**
+    - 响应参数变更
+      - `+ repo_encryption_enabled`
+      - `+ repo_encryption_status`
+  - **UpdateRepositoryGeneralPolicy**
+    - 请求参数变更
+      - `+ repo_encryption_enabled`
+    - 响应参数变更
+      - `+ repo_encryption_enabled`
+      - `+ repo_encryption_status`
+  - **ListCommits**
+    - 响应参数变更
+      - `+ commits.author_id`
+  - **CreateBranch**
+    - 响应参数变更
+      - `+ commit.author_id`
+  - **CreateTag**
+    - 响应参数变更
+      - `+ commit.author_id`
+  - **ShowTag**
+    - 响应参数变更
+      - `+ commit.author_id`
+  - **ShowBranch**
+    - 响应参数变更
+      - `+ commit.author_id`
+  - **ShowRefCompare**
+    - 响应参数变更
+      - `+ commit.author_id`
+  - **ShowMergeRequestDiscussion**
+    - 响应参数变更
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ListMergeRequestDiscussions**
+    - 响应参数变更
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **CreateMergeRequestDiscussion**
+    - 响应参数变更
+      - `+ from_robot`
+      - `- attachment`
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ListCommitDiscussions**
+    - 响应参数变更
+      - `+ notes.from_robot`
+      - `- notes.attachment`
+  - **ShowCommit**
+    - 响应参数变更
+      - `+ author_id`
+  - **CreateCommit**
+    - 响应参数变更
+      - `+ author_id`
+  - **ShowMergeRequestCommentsByLine**
+    - 响应参数变更
+      - `+ review_categories_cn`
+      - `+ notes`
+      - `+ review_categories_en`
+      - `+ review_modules`
+      - `+ b_mode`
+      - `+ severity_cn`
+      - `+ severity_en`
+      - `+ archived`
+      - `+ review_categories`
+      - `+ added_lines`
+      - `+ removed_lines`
+      - `+ repository_id`
+      - `+ id`
+      - `+ merge_request_version_params`
+      - `+ resolved`
+      - `+ severity`
+      - `+ individual_note`
+      - `+ deleted_file`
+      - `+ proposer`
+      - `+ new_file`
+      - `+ a_mode`
+      - `+ noteable_type`
+      - `+ repository_full_path`
+      - `+ assignee`
+      - `+ commit_id`
+      - `+ diff_file`
+      - `* new.discussions: list<MergeRequestBasicDiscussionDto> -> list<MergeRequestDiscussionDto>`
+  - **ShowCommitCommentsByLine**
+    - 响应参数变更
+      - `+ review_categories_cn`
+      - `+ notes`
+      - `+ review_categories_en`
+      - `+ review_modules`
+      - `+ b_mode`
+      - `+ severity_cn`
+      - `+ severity_en`
+      - `+ archived`
+      - `+ review_categories`
+      - `+ added_lines`
+      - `+ removed_lines`
+      - `+ repository_id`
+      - `+ id`
+      - `+ merge_request_version_params`
+      - `+ resolved`
+      - `+ severity`
+      - `+ individual_note`
+      - `+ deleted_file`
+      - `+ proposer`
+      - `+ new_file`
+      - `+ a_mode`
+      - `+ noteable_type`
+      - `+ repository_full_path`
+      - `+ assignee`
+      - `+ commit_id`
+      - `+ diff_file`
+      - `* new.discussions: list<MergeRequestBasicDiscussionDto> -> list<MergeRequestDiscussionDto>`
+  - **UpdateRepositoryResourcePermissions**
+    - 响应参数变更
+      - `+ message`
+      - `* status: string -> int32`
+  - **ShowRepository**
+    - 响应参数变更
+      - `+ encryption_status`
+      - `+ repo_encryption_enabled`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateInstance**
+    - 请求参数变更
+      - `* backup_strategy.keep_days: string -> int32`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.groups.volume.gift_size`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`BatchResizeFlavor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RGC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTemplateDeployParams**
+    - 请求参数变更
+      - `+ account_id`
+
+### HuaweiCloud SDK STS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`AssumeAgencyWithSAML`、`AssumeAgencyWithOIDC`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - 响应参数变更
+      - `* sub_tasks.job_id: int32 -> string`
+
 # 3.1.199 2026-06-11
 
 ### HuaweiCloud SDK DataArtsStudio

@@ -22,7 +22,8 @@ class UserBasicExternalDto:
         'avatar_url': 'str',
         'web_url': 'str',
         'nick_name': 'str',
-        'tenant_name': 'str'
+        'tenant_name': 'str',
+        'has_permission': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UserBasicExternalDto:
         'avatar_url': 'avatar_url',
         'web_url': 'web_url',
         'nick_name': 'nick_name',
-        'tenant_name': 'tenant_name'
+        'tenant_name': 'tenant_name',
+        'has_permission': 'has_permission'
     }
 
-    def __init__(self, id=None, name=None, username=None, state=None, avatar_url=None, web_url=None, nick_name=None, tenant_name=None):
+    def __init__(self, id=None, name=None, username=None, state=None, avatar_url=None, web_url=None, nick_name=None, tenant_name=None, has_permission=None):
         r"""UserBasicExternalDto
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class UserBasicExternalDto:
         :type nick_name: str
         :param tenant_name: 租户名称
         :type tenant_name: str
+        :param has_permission: **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。
+        :type has_permission: bool
         """
         
         
@@ -69,6 +73,7 @@ class UserBasicExternalDto:
         self._web_url = None
         self._nick_name = None
         self._tenant_name = None
+        self._has_permission = None
         self.discriminator = None
 
         if id is not None:
@@ -87,6 +92,8 @@ class UserBasicExternalDto:
             self.nick_name = nick_name
         if tenant_name is not None:
             self.tenant_name = tenant_name
+        if has_permission is not None:
+            self.has_permission = has_permission
 
     @property
     def id(self):
@@ -263,6 +270,28 @@ class UserBasicExternalDto:
         :type tenant_name: str
         """
         self._tenant_name = tenant_name
+
+    @property
+    def has_permission(self):
+        r"""Gets the has_permission of this UserBasicExternalDto.
+
+        **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。
+
+        :return: The has_permission of this UserBasicExternalDto.
+        :rtype: bool
+        """
+        return self._has_permission
+
+    @has_permission.setter
+    def has_permission(self, has_permission):
+        r"""Sets the has_permission of this UserBasicExternalDto.
+
+        **参数解释：** 是否有相关权限。 **取值范围：** true：有权限。 false：没权限。
+
+        :param has_permission: The has_permission of this UserBasicExternalDto.
+        :type has_permission: bool
+        """
+        self._has_permission = has_permission
 
     def to_dict(self):
         result = {}

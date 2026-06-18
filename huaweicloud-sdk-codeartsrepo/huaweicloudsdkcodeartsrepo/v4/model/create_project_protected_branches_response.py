@@ -32,11 +32,11 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 保护分支唯一标识。
+        :param id: **参数解释：** 保护分支唯一标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: int
-        :param name: **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。
+        :param name: **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。 **约束限制：** 不涉及 **默认取值：** 不涉及
         :type name: str
-        :param actions: **参数解释：** 事件列表。
+        :param actions: **参数解释：** 事件列表。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type actions: list[:class:`huaweicloudsdkcodeartsrepo.v4.ProjectProtectedActionResultApiDto`]
         """
         
@@ -58,7 +58,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 保护分支唯一标识。
+        **参数解释：** 保护分支唯一标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The id of this CreateProjectProtectedBranchesResponse.
         :rtype: int
@@ -69,7 +69,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 保护分支唯一标识。
+        **参数解释：** 保护分支唯一标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param id: The id of this CreateProjectProtectedBranchesResponse.
         :type id: int
@@ -80,7 +80,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。 **约束限制：** 不涉及 **默认取值：** 不涉及
 
         :return: The name of this CreateProjectProtectedBranchesResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 保护分支名称 **取值范围：** 字符串长度不少于1，不超过1000。 **约束限制：** 不涉及 **默认取值：** 不涉及
 
         :param name: The name of this CreateProjectProtectedBranchesResponse.
         :type name: str
@@ -102,7 +102,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def actions(self):
         r"""Gets the actions of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 事件列表。
+        **参数解释：** 事件列表。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The actions of this CreateProjectProtectedBranchesResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.ProjectProtectedActionResultApiDto`]
@@ -113,7 +113,7 @@ class CreateProjectProtectedBranchesResponse(SdkResponse):
     def actions(self, actions):
         r"""Sets the actions of this CreateProjectProtectedBranchesResponse.
 
-        **参数解释：** 事件列表。
+        **参数解释：** 事件列表。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param actions: The actions of this CreateProjectProtectedBranchesResponse.
         :type actions: list[:class:`huaweicloudsdkcodeartsrepo.v4.ProjectProtectedActionResultApiDto`]

@@ -29,9 +29,9 @@ class ShowRepositoryInheritSettingSourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
-        :param name: **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支。 - protected_tags，保护Tag。 **默认取值：** 不涉及。
+        :param name: **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches：保护分支。 - protected_tags：保护Tag。 - merge_requests：合并请求。 **默认取值：** 不涉及。
         :type name: str
         """
         
@@ -42,14 +42,13 @@ class ShowRepositoryInheritSettingSourceRequest:
         self.discriminator = None
 
         self.repository_id = repository_id
-        if name is not None:
-            self.name = name
+        self.name = name
 
     @property
     def repository_id(self):
         r"""Gets the repository_id of this ShowRepositoryInheritSettingSourceRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ShowRepositoryInheritSettingSourceRequest.
         :rtype: int
@@ -60,7 +59,7 @@ class ShowRepositoryInheritSettingSourceRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ShowRepositoryInheritSettingSourceRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ShowRepositoryInheritSettingSourceRequest.
         :type repository_id: int
@@ -71,7 +70,7 @@ class ShowRepositoryInheritSettingSourceRequest:
     def name(self):
         r"""Gets the name of this ShowRepositoryInheritSettingSourceRequest.
 
-        **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支。 - protected_tags，保护Tag。 **默认取值：** 不涉及。
+        **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches：保护分支。 - protected_tags：保护Tag。 - merge_requests：合并请求。 **默认取值：** 不涉及。
 
         :return: The name of this ShowRepositoryInheritSettingSourceRequest.
         :rtype: str
@@ -82,7 +81,7 @@ class ShowRepositoryInheritSettingSourceRequest:
     def name(self, name):
         r"""Sets the name of this ShowRepositoryInheritSettingSourceRequest.
 
-        **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支。 - protected_tags，保护Tag。 **默认取值：** 不涉及。
+        **参数解释：** 设置名称。 **约束限制：** 不涉及。 **取值范围：** - protected_branches：保护分支。 - protected_tags：保护Tag。 - merge_requests：合并请求。 **默认取值：** 不涉及。
 
         :param name: The name of this ShowRepositoryInheritSettingSourceRequest.
         :type name: str

@@ -22,7 +22,8 @@ class ShowReviewSettingResponse(SdkResponse):
         'review_default_categories': 'list[str]',
         'review_customized_categories': 'list[str]',
         'review_modules': 'list[str]',
-        'repository_id': 'int',
+        'secondary_category_type': 'str',
+        'secondary_categories': 'list[CategoryDto]',
         'note_required_attributes': 'list[RequiredAttributeDto]',
         'codehub_default_categories': 'list[CategoryDto]',
         'hicode_default_categories': 'list[CategoryDto]'
@@ -35,13 +36,14 @@ class ShowReviewSettingResponse(SdkResponse):
         'review_default_categories': 'review_default_categories',
         'review_customized_categories': 'review_customized_categories',
         'review_modules': 'review_modules',
-        'repository_id': 'repository_id',
+        'secondary_category_type': 'secondary_category_type',
+        'secondary_categories': 'secondary_categories',
         'note_required_attributes': 'note_required_attributes',
         'codehub_default_categories': 'codehub_default_categories',
         'hicode_default_categories': 'hicode_default_categories'
     }
 
-    def __init__(self, categories_and_modules_enabled=None, secondary_category_enabled=None, primary_categories=None, review_default_categories=None, review_customized_categories=None, review_modules=None, repository_id=None, note_required_attributes=None, codehub_default_categories=None, hicode_default_categories=None):
+    def __init__(self, categories_and_modules_enabled=None, secondary_category_enabled=None, primary_categories=None, review_default_categories=None, review_customized_categories=None, review_modules=None, secondary_category_type=None, secondary_categories=None, note_required_attributes=None, codehub_default_categories=None, hicode_default_categories=None):
         r"""ShowReviewSettingResponse
 
         The model defined in huaweicloud sdk
@@ -58,13 +60,15 @@ class ShowReviewSettingResponse(SdkResponse):
         :type review_customized_categories: list[str]
         :param review_modules: **参数解释：** 检视意见模块。
         :type review_modules: list[str]
-        :param repository_id: **参数解释：** 仓库id。
-        :type repository_id: int
-        :param note_required_attributes: **参数解释：** 检视意见必填项。
+        :param secondary_category_type: **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认&#39;HiCode&#39;)。
+        :type secondary_category_type: str
+        :param secondary_categories: **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+        :type secondary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        :param note_required_attributes: **参数解释：** 检视意见必填项(post接口不更新必填项时不返回)。
         :type note_required_attributes: list[:class:`huaweicloudsdkcodeartsrepo.v4.RequiredAttributeDto`]
-        :param codehub_default_categories: **参数解释：** 检视意见分类(所有可勾选的，需传参with_default_review_categories: true才返回)。
+        :param codehub_default_categories: **参数解释：** 检视意见分类(可勾选的，需get接口传参with_default_review_categories: true才返回)。
         :type codehub_default_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
-        :param hicode_default_categories: **参数解释：** 系统预置检视意见分类(需传参with_default_review_categories: true才返回)。
+        :param hicode_default_categories: **参数解释：** 系统预置检视意见分类(需get接口传参with_default_review_categories: true才返回)。
         :type hicode_default_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
         """
         
@@ -76,7 +80,8 @@ class ShowReviewSettingResponse(SdkResponse):
         self._review_default_categories = None
         self._review_customized_categories = None
         self._review_modules = None
-        self._repository_id = None
+        self._secondary_category_type = None
+        self._secondary_categories = None
         self._note_required_attributes = None
         self._codehub_default_categories = None
         self._hicode_default_categories = None
@@ -94,8 +99,10 @@ class ShowReviewSettingResponse(SdkResponse):
             self.review_customized_categories = review_customized_categories
         if review_modules is not None:
             self.review_modules = review_modules
-        if repository_id is not None:
-            self.repository_id = repository_id
+        if secondary_category_type is not None:
+            self.secondary_category_type = secondary_category_type
+        if secondary_categories is not None:
+            self.secondary_categories = secondary_categories
         if note_required_attributes is not None:
             self.note_required_attributes = note_required_attributes
         if codehub_default_categories is not None:
@@ -236,32 +243,54 @@ class ShowReviewSettingResponse(SdkResponse):
         self._review_modules = review_modules
 
     @property
-    def repository_id(self):
-        r"""Gets the repository_id of this ShowReviewSettingResponse.
+    def secondary_category_type(self):
+        r"""Gets the secondary_category_type of this ShowReviewSettingResponse.
 
-        **参数解释：** 仓库id。
+        **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认'HiCode')。
 
-        :return: The repository_id of this ShowReviewSettingResponse.
-        :rtype: int
+        :return: The secondary_category_type of this ShowReviewSettingResponse.
+        :rtype: str
         """
-        return self._repository_id
+        return self._secondary_category_type
 
-    @repository_id.setter
-    def repository_id(self, repository_id):
-        r"""Sets the repository_id of this ShowReviewSettingResponse.
+    @secondary_category_type.setter
+    def secondary_category_type(self, secondary_category_type):
+        r"""Sets the secondary_category_type of this ShowReviewSettingResponse.
 
-        **参数解释：** 仓库id。
+        **参数解释：** 系统预置检视意见分类类型(启用系统预置检视意见分类时返回，默认'HiCode')。
 
-        :param repository_id: The repository_id of this ShowReviewSettingResponse.
-        :type repository_id: int
+        :param secondary_category_type: The secondary_category_type of this ShowReviewSettingResponse.
+        :type secondary_category_type: str
         """
-        self._repository_id = repository_id
+        self._secondary_category_type = secondary_category_type
+
+    @property
+    def secondary_categories(self):
+        r"""Gets the secondary_categories of this ShowReviewSettingResponse.
+
+        **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+
+        :return: The secondary_categories of this ShowReviewSettingResponse.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        return self._secondary_categories
+
+    @secondary_categories.setter
+    def secondary_categories(self, secondary_categories):
+        r"""Sets the secondary_categories of this ShowReviewSettingResponse.
+
+        **参数解释：** 系统预置检视意见分类详情(启用系统预置检视意见分类时返回)。
+
+        :param secondary_categories: The secondary_categories of this ShowReviewSettingResponse.
+        :type secondary_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
+        """
+        self._secondary_categories = secondary_categories
 
     @property
     def note_required_attributes(self):
         r"""Gets the note_required_attributes of this ShowReviewSettingResponse.
 
-        **参数解释：** 检视意见必填项。
+        **参数解释：** 检视意见必填项(post接口不更新必填项时不返回)。
 
         :return: The note_required_attributes of this ShowReviewSettingResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.RequiredAttributeDto`]
@@ -272,7 +301,7 @@ class ShowReviewSettingResponse(SdkResponse):
     def note_required_attributes(self, note_required_attributes):
         r"""Sets the note_required_attributes of this ShowReviewSettingResponse.
 
-        **参数解释：** 检视意见必填项。
+        **参数解释：** 检视意见必填项(post接口不更新必填项时不返回)。
 
         :param note_required_attributes: The note_required_attributes of this ShowReviewSettingResponse.
         :type note_required_attributes: list[:class:`huaweicloudsdkcodeartsrepo.v4.RequiredAttributeDto`]
@@ -283,7 +312,7 @@ class ShowReviewSettingResponse(SdkResponse):
     def codehub_default_categories(self):
         r"""Gets the codehub_default_categories of this ShowReviewSettingResponse.
 
-        **参数解释：** 检视意见分类(所有可勾选的，需传参with_default_review_categories: true才返回)。
+        **参数解释：** 检视意见分类(可勾选的，需get接口传参with_default_review_categories: true才返回)。
 
         :return: The codehub_default_categories of this ShowReviewSettingResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
@@ -294,7 +323,7 @@ class ShowReviewSettingResponse(SdkResponse):
     def codehub_default_categories(self, codehub_default_categories):
         r"""Sets the codehub_default_categories of this ShowReviewSettingResponse.
 
-        **参数解释：** 检视意见分类(所有可勾选的，需传参with_default_review_categories: true才返回)。
+        **参数解释：** 检视意见分类(可勾选的，需get接口传参with_default_review_categories: true才返回)。
 
         :param codehub_default_categories: The codehub_default_categories of this ShowReviewSettingResponse.
         :type codehub_default_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
@@ -305,7 +334,7 @@ class ShowReviewSettingResponse(SdkResponse):
     def hicode_default_categories(self):
         r"""Gets the hicode_default_categories of this ShowReviewSettingResponse.
 
-        **参数解释：** 系统预置检视意见分类(需传参with_default_review_categories: true才返回)。
+        **参数解释：** 系统预置检视意见分类(需get接口传参with_default_review_categories: true才返回)。
 
         :return: The hicode_default_categories of this ShowReviewSettingResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]
@@ -316,7 +345,7 @@ class ShowReviewSettingResponse(SdkResponse):
     def hicode_default_categories(self, hicode_default_categories):
         r"""Sets the hicode_default_categories of this ShowReviewSettingResponse.
 
-        **参数解释：** 系统预置检视意见分类(需传参with_default_review_categories: true才返回)。
+        **参数解释：** 系统预置检视意见分类(需get接口传参with_default_review_categories: true才返回)。
 
         :param hicode_default_categories: The hicode_default_categories of this ShowReviewSettingResponse.
         :type hicode_default_categories: list[:class:`huaweicloudsdkcodeartsrepo.v4.CategoryDto`]

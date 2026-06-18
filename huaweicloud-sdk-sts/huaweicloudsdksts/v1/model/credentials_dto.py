@@ -33,13 +33,13 @@ class CredentialsDto:
 
         The model defined in huaweicloud sdk
 
-        :param access_key_id: 临时安全凭证的AK。
+        :param access_key_id: **参数解释**： 临时安全凭证的AK。  **取值范围**： 不涉及。 
         :type access_key_id: str
-        :param expiration: 临时安全凭证的失效时间。
+        :param expiration: **参数解释**： 临时安全凭证的失效时间。  **取值范围**： 不涉及。 
         :type expiration: datetime
-        :param secret_access_key: 临时安全凭证的SK。
+        :param secret_access_key: **参数解释**： 临时安全凭证的SK。  **取值范围**： 不涉及。 
         :type secret_access_key: str
-        :param security_token: 临时安全凭证的security_token。
+        :param security_token: **参数解释**： 临时安全凭证的security_token。  **取值范围**： 不涉及。 
         :type security_token: str
         """
         
@@ -60,7 +60,7 @@ class CredentialsDto:
     def access_key_id(self):
         r"""Gets the access_key_id of this CredentialsDto.
 
-        临时安全凭证的AK。
+        **参数解释**： 临时安全凭证的AK。  **取值范围**： 不涉及。 
 
         :return: The access_key_id of this CredentialsDto.
         :rtype: str
@@ -71,7 +71,7 @@ class CredentialsDto:
     def access_key_id(self, access_key_id):
         r"""Sets the access_key_id of this CredentialsDto.
 
-        临时安全凭证的AK。
+        **参数解释**： 临时安全凭证的AK。  **取值范围**： 不涉及。 
 
         :param access_key_id: The access_key_id of this CredentialsDto.
         :type access_key_id: str
@@ -82,7 +82,7 @@ class CredentialsDto:
     def expiration(self):
         r"""Gets the expiration of this CredentialsDto.
 
-        临时安全凭证的失效时间。
+        **参数解释**： 临时安全凭证的失效时间。  **取值范围**： 不涉及。 
 
         :return: The expiration of this CredentialsDto.
         :rtype: datetime
@@ -93,7 +93,7 @@ class CredentialsDto:
     def expiration(self, expiration):
         r"""Sets the expiration of this CredentialsDto.
 
-        临时安全凭证的失效时间。
+        **参数解释**： 临时安全凭证的失效时间。  **取值范围**： 不涉及。 
 
         :param expiration: The expiration of this CredentialsDto.
         :type expiration: datetime
@@ -104,7 +104,7 @@ class CredentialsDto:
     def secret_access_key(self):
         r"""Gets the secret_access_key of this CredentialsDto.
 
-        临时安全凭证的SK。
+        **参数解释**： 临时安全凭证的SK。  **取值范围**： 不涉及。 
 
         :return: The secret_access_key of this CredentialsDto.
         :rtype: str
@@ -115,7 +115,7 @@ class CredentialsDto:
     def secret_access_key(self, secret_access_key):
         r"""Sets the secret_access_key of this CredentialsDto.
 
-        临时安全凭证的SK。
+        **参数解释**： 临时安全凭证的SK。  **取值范围**： 不涉及。 
 
         :param secret_access_key: The secret_access_key of this CredentialsDto.
         :type secret_access_key: str
@@ -126,7 +126,7 @@ class CredentialsDto:
     def security_token(self):
         r"""Gets the security_token of this CredentialsDto.
 
-        临时安全凭证的security_token。
+        **参数解释**： 临时安全凭证的security_token。  **取值范围**： 不涉及。 
 
         :return: The security_token of this CredentialsDto.
         :rtype: str
@@ -137,7 +137,7 @@ class CredentialsDto:
     def security_token(self, security_token):
         r"""Sets the security_token of this CredentialsDto.
 
-        临时安全凭证的security_token。
+        **参数解释**： 临时安全凭证的security_token。  **取值范围**： 不涉及。 
 
         :param security_token: The security_token of this CredentialsDto.
         :type security_token: str

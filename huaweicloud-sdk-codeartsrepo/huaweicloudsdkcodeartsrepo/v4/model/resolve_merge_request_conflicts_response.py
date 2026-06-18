@@ -28,7 +28,7 @@ class ResolveMergeRequestConflictsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param message: **参数解释：** prompt property name already exists    
+        :param message: **参数解释：** 解决冲突结果信息    
         :type message: str
         """
         
@@ -44,7 +44,7 @@ class ResolveMergeRequestConflictsResponse(SdkResponse):
     def message(self):
         r"""Gets the message of this ResolveMergeRequestConflictsResponse.
 
-        **参数解释：** prompt property name already exists    
+        **参数解释：** 解决冲突结果信息    
 
         :return: The message of this ResolveMergeRequestConflictsResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ResolveMergeRequestConflictsResponse(SdkResponse):
     def message(self, message):
         r"""Sets the message of this ResolveMergeRequestConflictsResponse.
 
-        **参数解释：** prompt property name already exists    
+        **参数解释：** 解决冲突结果信息    
 
         :param message: The message of this ResolveMergeRequestConflictsResponse.
         :type message: str

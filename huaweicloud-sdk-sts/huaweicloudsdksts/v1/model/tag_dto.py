@@ -29,9 +29,9 @@ class TagDto:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。
+        :param key: **参数解释**： 标签键。  **约束限制**： 长度范围为[1,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type key: str
-        :param value: 标签值，取值可以为空字符串，不可以为null。
+        :param value: **参数解释**： 标签值。  **约束限制**： 长度范围为[0,255]。  **取值范围**： 取值可以为空字符串，不可以为null。  **默认取值**： 不涉及。 
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class TagDto:
     def key(self):
         r"""Gets the key of this TagDto.
 
-        标签键。
+        **参数解释**： 标签键。  **约束限制**： 长度范围为[1,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The key of this TagDto.
         :rtype: str
@@ -59,7 +59,7 @@ class TagDto:
     def key(self, key):
         r"""Sets the key of this TagDto.
 
-        标签键。
+        **参数解释**： 标签键。  **约束限制**： 长度范围为[1,128]。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param key: The key of this TagDto.
         :type key: str
@@ -70,7 +70,7 @@ class TagDto:
     def value(self):
         r"""Gets the value of this TagDto.
 
-        标签值，取值可以为空字符串，不可以为null。
+        **参数解释**： 标签值。  **约束限制**： 长度范围为[0,255]。  **取值范围**： 取值可以为空字符串，不可以为null。  **默认取值**： 不涉及。 
 
         :return: The value of this TagDto.
         :rtype: str
@@ -81,7 +81,7 @@ class TagDto:
     def value(self, value):
         r"""Sets the value of this TagDto.
 
-        标签值，取值可以为空字符串，不可以为null。
+        **参数解释**： 标签值。  **约束限制**： 长度范围为[0,255]。  **取值范围**： 取值可以为空字符串，不可以为null。  **默认取值**： 不涉及。 
 
         :param value: The value of this TagDto.
         :type value: str

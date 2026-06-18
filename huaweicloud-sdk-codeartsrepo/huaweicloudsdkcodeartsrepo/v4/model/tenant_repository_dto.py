@@ -24,7 +24,8 @@ class TenantRepositoryDto:
         'repository_id': 'int',
         'repository_name': 'str',
         'project_name': 'str',
-        'project_id': 'str'
+        'project_id': 'str',
+        'locked': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class TenantRepositoryDto:
         'repository_id': 'repository_id',
         'repository_name': 'repository_name',
         'project_name': 'project_name',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'locked': 'locked'
     }
 
-    def __init__(self, owner=None, capacity=None, status=None, moderation_result=None, create_time=None, member_number=None, repository_id=None, repository_name=None, project_name=None, project_id=None):
+    def __init__(self, owner=None, capacity=None, status=None, moderation_result=None, create_time=None, member_number=None, repository_id=None, repository_name=None, project_name=None, project_id=None, locked=None):
         r"""TenantRepositoryDto
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class TenantRepositoryDto:
         :type project_name: str
         :param project_id: **参数解释：** 项目Id。 **取值范围：** 不涉及。
         :type project_id: str
+        :param locked: **参数解释：** 是否锁定。 **取值范围：** - true，是。 - false，否。
+        :type locked: bool
         """
         
         
@@ -79,6 +83,7 @@ class TenantRepositoryDto:
         self._repository_name = None
         self._project_name = None
         self._project_id = None
+        self._locked = None
         self.discriminator = None
 
         if owner is not None:
@@ -101,6 +106,8 @@ class TenantRepositoryDto:
             self.project_name = project_name
         if project_id is not None:
             self.project_id = project_id
+        if locked is not None:
+            self.locked = locked
 
     @property
     def owner(self):
@@ -321,6 +328,28 @@ class TenantRepositoryDto:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def locked(self):
+        r"""Gets the locked of this TenantRepositoryDto.
+
+        **参数解释：** 是否锁定。 **取值范围：** - true，是。 - false，否。
+
+        :return: The locked of this TenantRepositoryDto.
+        :rtype: bool
+        """
+        return self._locked
+
+    @locked.setter
+    def locked(self, locked):
+        r"""Sets the locked of this TenantRepositoryDto.
+
+        **参数解释：** 是否锁定。 **取值范围：** - true，是。 - false，否。
+
+        :param locked: The locked of this TenantRepositoryDto.
+        :type locked: bool
+        """
+        self._locked = locked
 
     def to_dict(self):
         result = {}

@@ -44,7 +44,8 @@ class ShowMergeRequestSettingResponse(SdkResponse):
         'merge_method': 'str',
         'only_allow_merge_if_vote_bigger_than': 'int',
         'only_assignee_can_merge': 'bool',
-        'repository_id': 'int'
+        'repository_id': 'int',
+        'has_evaluation_permission': 'bool'
     }
 
     attribute_map = {
@@ -76,10 +77,11 @@ class ShowMergeRequestSettingResponse(SdkResponse):
         'merge_method': 'merge_method',
         'only_allow_merge_if_vote_bigger_than': 'only_allow_merge_if_vote_bigger_than',
         'only_assignee_can_merge': 'only_assignee_can_merge',
-        'repository_id': 'repository_id'
+        'repository_id': 'repository_id',
+        'has_evaluation_permission': 'has_evaluation_permission'
     }
 
-    def __init__(self, id=None, disable_merge_by_self=None, disable_approve_by_self=None, disable_review_by_self=None, created_at=None, updated_at=None, can_force_merge=None, disable_squash_merge=None, must_relate_issue=None, need_relate_issue_branches=None, need_all_issues_check_passed=None, review_mode=None, add_notes_after_merged=None, merged_commit_author=None, evaluation_role=None, evaluation_merge_gate=None, mark_auto_merged_mr_as_closed=None, delete_source_branch_when_merged=None, auto_squash_merge=None, squash_merge_with_no_merge_commit=None, only_allow_one_issue_check_passed=None, enable_custom_evaluation=None, evaluation_types=None, can_reopen=None, only_allow_merge_if_all_discussions_are_resolved=None, merge_method=None, only_allow_merge_if_vote_bigger_than=None, only_assignee_can_merge=None, repository_id=None):
+    def __init__(self, id=None, disable_merge_by_self=None, disable_approve_by_self=None, disable_review_by_self=None, created_at=None, updated_at=None, can_force_merge=None, disable_squash_merge=None, must_relate_issue=None, need_relate_issue_branches=None, need_all_issues_check_passed=None, review_mode=None, add_notes_after_merged=None, merged_commit_author=None, evaluation_role=None, evaluation_merge_gate=None, mark_auto_merged_mr_as_closed=None, delete_source_branch_when_merged=None, auto_squash_merge=None, squash_merge_with_no_merge_commit=None, only_allow_one_issue_check_passed=None, enable_custom_evaluation=None, evaluation_types=None, can_reopen=None, only_allow_merge_if_all_discussions_are_resolved=None, merge_method=None, only_allow_merge_if_vote_bigger_than=None, only_assignee_can_merge=None, repository_id=None, has_evaluation_permission=None):
         r"""ShowMergeRequestSettingResponse
 
         The model defined in huaweicloud sdk
@@ -142,6 +144,8 @@ class ShowMergeRequestSettingResponse(SdkResponse):
         :type only_assignee_can_merge: bool
         :param repository_id: **参数解释：** 仓库id。
         :type repository_id: int
+        :param has_evaluation_permission: **参数解释：** 调用者是否有星级评价权限。
+        :type has_evaluation_permission: bool
         """
         
         super().__init__()
@@ -175,6 +179,7 @@ class ShowMergeRequestSettingResponse(SdkResponse):
         self._only_allow_merge_if_vote_bigger_than = None
         self._only_assignee_can_merge = None
         self._repository_id = None
+        self._has_evaluation_permission = None
         self.discriminator = None
 
         if id is not None:
@@ -235,6 +240,8 @@ class ShowMergeRequestSettingResponse(SdkResponse):
             self.only_assignee_can_merge = only_assignee_can_merge
         if repository_id is not None:
             self.repository_id = repository_id
+        if has_evaluation_permission is not None:
+            self.has_evaluation_permission = has_evaluation_permission
 
     @property
     def id(self):
@@ -873,6 +880,28 @@ class ShowMergeRequestSettingResponse(SdkResponse):
         :type repository_id: int
         """
         self._repository_id = repository_id
+
+    @property
+    def has_evaluation_permission(self):
+        r"""Gets the has_evaluation_permission of this ShowMergeRequestSettingResponse.
+
+        **参数解释：** 调用者是否有星级评价权限。
+
+        :return: The has_evaluation_permission of this ShowMergeRequestSettingResponse.
+        :rtype: bool
+        """
+        return self._has_evaluation_permission
+
+    @has_evaluation_permission.setter
+    def has_evaluation_permission(self, has_evaluation_permission):
+        r"""Sets the has_evaluation_permission of this ShowMergeRequestSettingResponse.
+
+        **参数解释：** 调用者是否有星级评价权限。
+
+        :param has_evaluation_permission: The has_evaluation_permission of this ShowMergeRequestSettingResponse.
+        :type has_evaluation_permission: bool
+        """
+        self._has_evaluation_permission = has_evaluation_permission
 
     def to_dict(self):
         import warnings

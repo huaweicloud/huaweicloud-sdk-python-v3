@@ -16,38 +16,45 @@ class UpdateRepositoryResourcePermissionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'status': 'int',
+        'message': 'str'
     }
 
     attribute_map = {
-        'status': 'status'
+        'status': 'status',
+        'message': 'message'
     }
 
-    def __init__(self, status=None):
+    def __init__(self, status=None, message=None):
         r"""UpdateRepositoryResourcePermissionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
-        :type status: str
+        :param status: 返回状态码
+        :type status: int
+        :param message: 返回信息
+        :type message: str
         """
         
         super().__init__()
 
         self._status = None
+        self._message = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
+        if message is not None:
+            self.message = message
 
     @property
     def status(self):
         r"""Gets the status of this UpdateRepositoryResourcePermissionsResponse.
 
-        **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
+        返回状态码
 
         :return: The status of this UpdateRepositoryResourcePermissionsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -55,12 +62,34 @@ class UpdateRepositoryResourcePermissionsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateRepositoryResourcePermissionsResponse.
 
-        **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
+        返回状态码
 
         :param status: The status of this UpdateRepositoryResourcePermissionsResponse.
-        :type status: str
+        :type status: int
         """
         self._status = status
+
+    @property
+    def message(self):
+        r"""Gets the message of this UpdateRepositoryResourcePermissionsResponse.
+
+        返回信息
+
+        :return: The message of this UpdateRepositoryResourcePermissionsResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this UpdateRepositoryResourcePermissionsResponse.
+
+        返回信息
+
+        :param message: The message of this UpdateRepositoryResourcePermissionsResponse.
+        :type message: str
+        """
+        self._message = message
 
     def to_dict(self):
         import warnings

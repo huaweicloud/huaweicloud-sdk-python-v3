@@ -30,7 +30,7 @@ class AssumeAgencyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_security_token: 通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头，取值为临时安全凭证的security_token字段。
+        :param x_security_token: **参数解释**： 临时安全凭证的security_token字段。  **约束限制**： 通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
         :type x_security_token: str
         :param body: Body of the AssumeAgencyRequest
         :type body: :class:`huaweicloudsdksts.v1.AssumeAgencyReqBody`
@@ -51,7 +51,7 @@ class AssumeAgencyRequest:
     def x_security_token(self):
         r"""Gets the x_security_token of this AssumeAgencyRequest.
 
-        通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头，取值为临时安全凭证的security_token字段。
+        **参数解释**： 临时安全凭证的security_token字段。  **约束限制**： 通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :return: The x_security_token of this AssumeAgencyRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class AssumeAgencyRequest:
     def x_security_token(self, x_security_token):
         r"""Sets the x_security_token of this AssumeAgencyRequest.
 
-        通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头，取值为临时安全凭证的security_token字段。
+        **参数解释**： 临时安全凭证的security_token字段。  **约束限制**： 通过临时安全凭证调用接口时，需要提供“X-Security-Token”Http头。  **取值范围**： 不涉及。  **默认取值**： 不涉及。 
 
         :param x_security_token: The x_security_token of this AssumeAgencyRequest.
         :type x_security_token: str

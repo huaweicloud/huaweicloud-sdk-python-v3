@@ -33,9 +33,9 @@ class ShowResourcePermissionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
-        :param resource_id: **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id
+        :param resource_id: **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id **默认取值：** 不涉及。
         :type resource_id: int
         :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
@@ -62,7 +62,7 @@ class ShowResourcePermissionsRequest:
     def group_id(self):
         r"""Gets the group_id of this ShowResourcePermissionsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this ShowResourcePermissionsRequest.
         :rtype: int
@@ -73,7 +73,7 @@ class ShowResourcePermissionsRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowResourcePermissionsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this ShowResourcePermissionsRequest.
         :type group_id: int
@@ -84,7 +84,7 @@ class ShowResourcePermissionsRequest:
     def resource_id(self):
         r"""Gets the resource_id of this ShowResourcePermissionsRequest.
 
-        **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id
+        **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id **默认取值：** 不涉及。
 
         :return: The resource_id of this ShowResourcePermissionsRequest.
         :rtype: int
@@ -95,7 +95,7 @@ class ShowResourcePermissionsRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ShowResourcePermissionsRequest.
 
-        **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id
+        **参数解释：** 资源Id，通过获取代码组权限资源点列表获取的数据中的Id **默认取值：** 不涉及。
 
         :param resource_id: The resource_id of this ShowResourcePermissionsRequest.
         :type resource_id: int

@@ -16,29 +16,36 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[RepositoryMergeRequestTemplateDto]'
+        'body': 'list[RepositoryMergeRequestTemplateDto]',
+        'x_total': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'body': 'body',
+        'x_total': 'X-Total'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, body=None, x_total=None):
         r"""ListMergeRequestTemplatesResponse
 
         The model defined in huaweicloud sdk
 
         :param body: 
         :type body: list[:class:`huaweicloudsdkcodeartsrepo.v4.RepositoryMergeRequestTemplateDto`]
+        :param x_total: 
+        :type x_total: str
         """
         
         super().__init__()
 
         self._body = None
+        self._x_total = None
         self.discriminator = None
 
         if body is not None:
             self.body = body
+        if x_total is not None:
+            self.x_total = x_total
 
     @property
     def body(self):
@@ -57,6 +64,24 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
         :type body: list[:class:`huaweicloudsdkcodeartsrepo.v4.RepositoryMergeRequestTemplateDto`]
         """
         self._body = body
+
+    @property
+    def x_total(self):
+        r"""Gets the x_total of this ListMergeRequestTemplatesResponse.
+
+        :return: The x_total of this ListMergeRequestTemplatesResponse.
+        :rtype: str
+        """
+        return self._x_total
+
+    @x_total.setter
+    def x_total(self, x_total):
+        r"""Sets the x_total of this ListMergeRequestTemplatesResponse.
+
+        :param x_total: The x_total of this ListMergeRequestTemplatesResponse.
+        :type x_total: str
+        """
+        self._x_total = x_total
 
     def to_dict(self):
         import warnings

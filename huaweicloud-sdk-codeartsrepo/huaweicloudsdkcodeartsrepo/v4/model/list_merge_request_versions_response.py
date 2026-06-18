@@ -23,7 +23,8 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         'created_at': 'str',
         'merge_request_id': 'int',
         'state': 'str',
-        'real_size': 'str'
+        'real_size': 'str',
+        'x_total': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         'created_at': 'created_at',
         'merge_request_id': 'merge_request_id',
         'state': 'state',
-        'real_size': 'real_size'
+        'real_size': 'real_size',
+        'x_total': 'X-Total'
     }
 
-    def __init__(self, id=None, head_commit_sha=None, base_commit_sha=None, start_commit_sha=None, created_at=None, merge_request_id=None, state=None, real_size=None):
+    def __init__(self, id=None, head_commit_sha=None, base_commit_sha=None, start_commit_sha=None, created_at=None, merge_request_id=None, state=None, real_size=None, x_total=None):
         r"""ListMergeRequestVersionsResponse
 
         The model defined in huaweicloud sdk
@@ -48,7 +50,7 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         :type head_commit_sha: str
         :param base_commit_sha: **参数解释：** base commit节点。
         :type base_commit_sha: str
-        :param start_commit_sha: **参数解释：** tart commit节点。
+        :param start_commit_sha: **参数解释：** start commit节点。
         :type start_commit_sha: str
         :param created_at: **参数解释：** 创建时间。 
         :type created_at: str
@@ -58,6 +60,8 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         :type state: str
         :param real_size: **参数解释：** diff大小。
         :type real_size: str
+        :param x_total: 
+        :type x_total: str
         """
         
         super().__init__()
@@ -70,6 +74,7 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         self._merge_request_id = None
         self._state = None
         self._real_size = None
+        self._x_total = None
         self.discriminator = None
 
         if id is not None:
@@ -88,6 +93,8 @@ class ListMergeRequestVersionsResponse(SdkResponse):
             self.state = state
         if real_size is not None:
             self.real_size = real_size
+        if x_total is not None:
+            self.x_total = x_total
 
     @property
     def id(self):
@@ -159,7 +166,7 @@ class ListMergeRequestVersionsResponse(SdkResponse):
     def start_commit_sha(self):
         r"""Gets the start_commit_sha of this ListMergeRequestVersionsResponse.
 
-        **参数解释：** tart commit节点。
+        **参数解释：** start commit节点。
 
         :return: The start_commit_sha of this ListMergeRequestVersionsResponse.
         :rtype: str
@@ -170,7 +177,7 @@ class ListMergeRequestVersionsResponse(SdkResponse):
     def start_commit_sha(self, start_commit_sha):
         r"""Sets the start_commit_sha of this ListMergeRequestVersionsResponse.
 
-        **参数解释：** tart commit节点。
+        **参数解释：** start commit节点。
 
         :param start_commit_sha: The start_commit_sha of this ListMergeRequestVersionsResponse.
         :type start_commit_sha: str
@@ -264,6 +271,24 @@ class ListMergeRequestVersionsResponse(SdkResponse):
         :type real_size: str
         """
         self._real_size = real_size
+
+    @property
+    def x_total(self):
+        r"""Gets the x_total of this ListMergeRequestVersionsResponse.
+
+        :return: The x_total of this ListMergeRequestVersionsResponse.
+        :rtype: str
+        """
+        return self._x_total
+
+    @x_total.setter
+    def x_total(self, x_total):
+        r"""Sets the x_total of this ListMergeRequestVersionsResponse.
+
+        :param x_total: The x_total of this ListMergeRequestVersionsResponse.
+        :type x_total: str
+        """
+        self._x_total = x_total
 
     def to_dict(self):
         import warnings

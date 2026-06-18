@@ -22,7 +22,8 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
         'removed_lines': 'int',
         'change_file_count': 'int',
         'change_line_count': 'int',
-        'too_large': 'bool'
+        'too_large': 'bool',
+        'blob_id': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
         'removed_lines': 'removed_lines',
         'change_file_count': 'change_file_count',
         'change_line_count': 'change_line_count',
-        'too_large': 'too_large'
+        'too_large': 'too_large',
+        'blob_id': 'blob_id'
     }
 
-    def __init__(self, diffs=None, diff_refs=None, added_lines=None, removed_lines=None, change_file_count=None, change_line_count=None, too_large=None):
+    def __init__(self, diffs=None, diff_refs=None, added_lines=None, removed_lines=None, change_file_count=None, change_line_count=None, too_large=None, blob_id=None):
         r"""ShowCommitDiffMetadataResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +56,8 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
         :type change_line_count: int
         :param too_large: **参数解释：** 是否为大文件。 **取值范围：** - true，大文件。 - false，非大文件
         :type too_large: bool
+        :param blob_id: **参数解释：** blob文件ID。 **约束限制：** 不涉及。    
+        :type blob_id: str
         """
         
         super().__init__()
@@ -65,6 +69,7 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
         self._change_file_count = None
         self._change_line_count = None
         self._too_large = None
+        self._blob_id = None
         self.discriminator = None
 
         if diffs is not None:
@@ -81,6 +86,8 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
             self.change_line_count = change_line_count
         if too_large is not None:
             self.too_large = too_large
+        if blob_id is not None:
+            self.blob_id = blob_id
 
     @property
     def diffs(self):
@@ -231,6 +238,28 @@ class ShowCommitDiffMetadataResponse(SdkResponse):
         :type too_large: bool
         """
         self._too_large = too_large
+
+    @property
+    def blob_id(self):
+        r"""Gets the blob_id of this ShowCommitDiffMetadataResponse.
+
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。    
+
+        :return: The blob_id of this ShowCommitDiffMetadataResponse.
+        :rtype: str
+        """
+        return self._blob_id
+
+    @blob_id.setter
+    def blob_id(self, blob_id):
+        r"""Sets the blob_id of this ShowCommitDiffMetadataResponse.
+
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。    
+
+        :param blob_id: The blob_id of this ShowCommitDiffMetadataResponse.
+        :type blob_id: str
+        """
+        self._blob_id = blob_id
 
     def to_dict(self):
         import warnings

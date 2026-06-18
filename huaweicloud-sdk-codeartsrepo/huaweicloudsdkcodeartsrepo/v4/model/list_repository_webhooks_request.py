@@ -16,23 +16,27 @@ class ListRepositoryWebhooksRequest:
 
     openapi_types = {
         'repository_id': 'int',
+        'include_system': 'bool',
         'offset': 'int',
         'limit': 'int'
     }
 
     attribute_map = {
         'repository_id': 'repository_id',
+        'include_system': 'include_system',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, repository_id=None, offset=None, limit=None):
+    def __init__(self, repository_id=None, include_system=None, offset=None, limit=None):
         r"""ListRepositoryWebhooksRequest
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
+        :param include_system: **参数解释：** 是否包含系统webhook **取值范围：** - true，包含。 - false，不包含。
+        :type include_system: bool
         :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
         :param limit: **参数解释：** 返回数量。
@@ -42,11 +46,14 @@ class ListRepositoryWebhooksRequest:
         
 
         self._repository_id = None
+        self._include_system = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.repository_id = repository_id
+        if include_system is not None:
+            self.include_system = include_system
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -56,7 +63,7 @@ class ListRepositoryWebhooksRequest:
     def repository_id(self):
         r"""Gets the repository_id of this ListRepositoryWebhooksRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ListRepositoryWebhooksRequest.
         :rtype: int
@@ -67,12 +74,34 @@ class ListRepositoryWebhooksRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ListRepositoryWebhooksRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ListRepositoryWebhooksRequest.
         :type repository_id: int
         """
         self._repository_id = repository_id
+
+    @property
+    def include_system(self):
+        r"""Gets the include_system of this ListRepositoryWebhooksRequest.
+
+        **参数解释：** 是否包含系统webhook **取值范围：** - true，包含。 - false，不包含。
+
+        :return: The include_system of this ListRepositoryWebhooksRequest.
+        :rtype: bool
+        """
+        return self._include_system
+
+    @include_system.setter
+    def include_system(self, include_system):
+        r"""Sets the include_system of this ListRepositoryWebhooksRequest.
+
+        **参数解释：** 是否包含系统webhook **取值范围：** - true，包含。 - false，不包含。
+
+        :param include_system: The include_system of this ListRepositoryWebhooksRequest.
+        :type include_system: bool
+        """
+        self._include_system = include_system
 
     @property
     def offset(self):

@@ -17,7 +17,7 @@ class UpdateGroupWebhookRequest:
     openapi_types = {
         'group_id': 'int',
         'hook_id': 'int',
-        'body': 'WebhookParamsDto'
+        'body': 'WebhookParamsRequestDto'
     }
 
     attribute_map = {
@@ -31,12 +31,12 @@ class UpdateGroupWebhookRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param hook_id: **参数解释：**  Webhook id。
         :type hook_id: int
         :param body: Body of the UpdateGroupWebhookRequest
-        :type body: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsDto`
+        :type body: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsRequestDto`
         """
         
         
@@ -55,7 +55,7 @@ class UpdateGroupWebhookRequest:
     def group_id(self):
         r"""Gets the group_id of this UpdateGroupWebhookRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this UpdateGroupWebhookRequest.
         :rtype: int
@@ -66,7 +66,7 @@ class UpdateGroupWebhookRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateGroupWebhookRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this UpdateGroupWebhookRequest.
         :type group_id: int
@@ -100,7 +100,7 @@ class UpdateGroupWebhookRequest:
         r"""Gets the body of this UpdateGroupWebhookRequest.
 
         :return: The body of this UpdateGroupWebhookRequest.
-        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsDto`
+        :rtype: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsRequestDto`
         """
         return self._body
 
@@ -109,7 +109,7 @@ class UpdateGroupWebhookRequest:
         r"""Sets the body of this UpdateGroupWebhookRequest.
 
         :param body: The body of this UpdateGroupWebhookRequest.
-        :type body: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsDto`
+        :type body: :class:`huaweicloudsdkcodeartsrepo.v4.WebhookParamsRequestDto`
         """
         self._body = body
 

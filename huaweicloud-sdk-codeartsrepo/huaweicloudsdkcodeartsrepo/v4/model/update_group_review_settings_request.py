@@ -29,7 +29,7 @@ class UpdateGroupReviewSettingsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param body: Body of the UpdateGroupReviewSettingsRequest
         :type body: :class:`huaweicloudsdkcodeartsrepo.v4.ReviewSettingParamDto`
@@ -49,7 +49,7 @@ class UpdateGroupReviewSettingsRequest:
     def group_id(self):
         r"""Gets the group_id of this UpdateGroupReviewSettingsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this UpdateGroupReviewSettingsRequest.
         :rtype: int
@@ -60,7 +60,7 @@ class UpdateGroupReviewSettingsRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateGroupReviewSettingsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this UpdateGroupReviewSettingsRequest.
         :type group_id: int

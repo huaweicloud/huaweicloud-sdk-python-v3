@@ -36,7 +36,7 @@ class CreateCherryPickMergeRequestResponse(SdkResponse):
         :type state: str
         :param title: CherryPick标题
         :type title: str
-        :param cherry_pick_branch_name: CherryPick临时分支名名称
+        :param cherry_pick_branch_name: CherryPick临时分支名称
         :type cherry_pick_branch_name: str
         """
         
@@ -102,7 +102,7 @@ class CreateCherryPickMergeRequestResponse(SdkResponse):
     def cherry_pick_branch_name(self):
         r"""Gets the cherry_pick_branch_name of this CreateCherryPickMergeRequestResponse.
 
-        CherryPick临时分支名名称
+        CherryPick临时分支名称
 
         :return: The cherry_pick_branch_name of this CreateCherryPickMergeRequestResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class CreateCherryPickMergeRequestResponse(SdkResponse):
     def cherry_pick_branch_name(self, cherry_pick_branch_name):
         r"""Sets the cherry_pick_branch_name of this CreateCherryPickMergeRequestResponse.
 
-        CherryPick临时分支名名称
+        CherryPick临时分支名称
 
         :param cherry_pick_branch_name: The cherry_pick_branch_name of this CreateCherryPickMergeRequestResponse.
         :type cherry_pick_branch_name: str

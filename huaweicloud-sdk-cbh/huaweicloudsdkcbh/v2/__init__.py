@@ -43,6 +43,8 @@ from huaweicloudsdkcbh.v2.model.list_instances_request import ListInstancesReque
 from huaweicloudsdkcbh.v2.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkcbh.v2.model.list_specifications_request import ListSpecificationsRequest
 from huaweicloudsdkcbh.v2.model.list_specifications_response import ListSpecificationsResponse
+from huaweicloudsdkcbh.v2.model.list_switch_config_info_request import ListSwitchConfigInfoRequest
+from huaweicloudsdkcbh.v2.model.list_switch_config_info_response import ListSwitchConfigInfoResponse
 from huaweicloudsdkcbh.v2.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkcbh.v2.model.list_tags_response import ListTagsResponse
 from huaweicloudsdkcbh.v2.model.login_instance_admin_request import LoginInstanceAdminRequest

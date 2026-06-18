@@ -71,8 +71,7 @@ class CreateMergeRequestNoteDto:
         self._position = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        self.body = body
         if severity is not None:
             self.severity = severity
         if assignee_id is not None:

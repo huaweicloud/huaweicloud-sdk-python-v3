@@ -33,7 +33,7 @@ class ListGroupUserGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param search: **参数解释：** 组织下用户组id。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type search: str
@@ -63,7 +63,7 @@ class ListGroupUserGroupsRequest:
     def group_id(self):
         r"""Gets the group_id of this ListGroupUserGroupsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this ListGroupUserGroupsRequest.
         :rtype: int
@@ -74,7 +74,7 @@ class ListGroupUserGroupsRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListGroupUserGroupsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this ListGroupUserGroupsRequest.
         :type group_id: int

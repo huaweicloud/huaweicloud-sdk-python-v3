@@ -18,22 +18,24 @@ class ListCommitAssociatedRefsRequest:
         'repository_id': 'int',
         'sha': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
         'repository_id': 'repository_id',
         'sha': 'sha',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'type': 'type'
     }
 
-    def __init__(self, repository_id=None, sha=None, offset=None, limit=None):
+    def __init__(self, repository_id=None, sha=None, offset=None, limit=None, type=None):
         r"""ListCommitAssociatedRefsRequest
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
         :param sha: **参数解释：** 提交ID。
         :type sha: str
@@ -41,6 +43,8 @@ class ListCommitAssociatedRefsRequest:
         :type offset: int
         :param limit: **参数解释：** 返回数量。
         :type limit: int
+        :param type: **参数解释：** 分支或者tag。 **取值范围：** 只能为branch或者tag。 **约束限制：** 只能为branch或者tag。
+        :type type: str
         """
         
         
@@ -49,6 +53,7 @@ class ListCommitAssociatedRefsRequest:
         self._sha = None
         self._offset = None
         self._limit = None
+        self._type = None
         self.discriminator = None
 
         self.repository_id = repository_id
@@ -57,12 +62,13 @@ class ListCommitAssociatedRefsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        self.type = type
 
     @property
     def repository_id(self):
         r"""Gets the repository_id of this ListCommitAssociatedRefsRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ListCommitAssociatedRefsRequest.
         :rtype: int
@@ -73,7 +79,7 @@ class ListCommitAssociatedRefsRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ListCommitAssociatedRefsRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ListCommitAssociatedRefsRequest.
         :type repository_id: int
@@ -145,6 +151,28 @@ class ListCommitAssociatedRefsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListCommitAssociatedRefsRequest.
+
+        **参数解释：** 分支或者tag。 **取值范围：** 只能为branch或者tag。 **约束限制：** 只能为branch或者tag。
+
+        :return: The type of this ListCommitAssociatedRefsRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListCommitAssociatedRefsRequest.
+
+        **参数解释：** 分支或者tag。 **取值范围：** 只能为branch或者tag。 **约束限制：** 只能为branch或者tag。
+
+        :param type: The type of this ListCommitAssociatedRefsRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

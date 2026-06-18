@@ -16,39 +16,46 @@ class Volume:
 
     openapi_types = {
         'size': 'str',
-        'used': 'str'
+        'used': 'str',
+        'gift_size': 'str'
     }
 
     attribute_map = {
         'size': 'size',
-        'used': 'used'
+        'used': 'used',
+        'gift_size': 'gift_size'
     }
 
-    def __init__(self, size=None, used=None):
+    def __init__(self, size=None, used=None, gift_size=None):
         r"""Volume
 
         The model defined in huaweicloud sdk
 
-        :param size: 磁盘大小。单位：GB。
+        :param size: 参数解释： 磁盘大小。单位：GB。 取值范围： 不涉及。
         :type size: str
-        :param used: 磁盘使用量。单位：GB。
+        :param used: 参数解释： 磁盘使用量。单位：GB。 取值范围： 不涉及。
         :type used: str
+        :param gift_size: 参数解释： 赠送的磁盘大小。单位：GB。 取值范围： 不涉及。
+        :type gift_size: str
         """
         
         
 
         self._size = None
         self._used = None
+        self._gift_size = None
         self.discriminator = None
 
         self.size = size
         self.used = used
+        if gift_size is not None:
+            self.gift_size = gift_size
 
     @property
     def size(self):
         r"""Gets the size of this Volume.
 
-        磁盘大小。单位：GB。
+        参数解释： 磁盘大小。单位：GB。 取值范围： 不涉及。
 
         :return: The size of this Volume.
         :rtype: str
@@ -59,7 +66,7 @@ class Volume:
     def size(self, size):
         r"""Sets the size of this Volume.
 
-        磁盘大小。单位：GB。
+        参数解释： 磁盘大小。单位：GB。 取值范围： 不涉及。
 
         :param size: The size of this Volume.
         :type size: str
@@ -70,7 +77,7 @@ class Volume:
     def used(self):
         r"""Gets the used of this Volume.
 
-        磁盘使用量。单位：GB。
+        参数解释： 磁盘使用量。单位：GB。 取值范围： 不涉及。
 
         :return: The used of this Volume.
         :rtype: str
@@ -81,12 +88,34 @@ class Volume:
     def used(self, used):
         r"""Sets the used of this Volume.
 
-        磁盘使用量。单位：GB。
+        参数解释： 磁盘使用量。单位：GB。 取值范围： 不涉及。
 
         :param used: The used of this Volume.
         :type used: str
         """
         self._used = used
+
+    @property
+    def gift_size(self):
+        r"""Gets the gift_size of this Volume.
+
+        参数解释： 赠送的磁盘大小。单位：GB。 取值范围： 不涉及。
+
+        :return: The gift_size of this Volume.
+        :rtype: str
+        """
+        return self._gift_size
+
+    @gift_size.setter
+    def gift_size(self, gift_size):
+        r"""Sets the gift_size of this Volume.
+
+        参数解释： 赠送的磁盘大小。单位：GB。 取值范围： 不涉及。
+
+        :param gift_size: The gift_size of this Volume.
+        :type gift_size: str
+        """
+        self._gift_size = gift_size
 
     def to_dict(self):
         result = {}

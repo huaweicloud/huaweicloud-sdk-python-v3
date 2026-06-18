@@ -15,7 +15,6 @@ class ListImpersonationTokensRequest:
     sensitive_list = []
 
     openapi_types = {
-        'group_id': 'int',
         'state': 'str',
         'search': 'str',
         'offset': 'int',
@@ -23,20 +22,17 @@ class ListImpersonationTokensRequest:
     }
 
     attribute_map = {
-        'group_id': 'group_id',
         'state': 'state',
         'search': 'search',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, group_id=None, state=None, search=None, offset=None, limit=None):
+    def __init__(self, state=None, search=None, offset=None, limit=None):
         r"""ListImpersonationTokensRequest
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
-        :type group_id: int
         :param state: **参数解释：** 状态 all 所有状态 active 活跃，未过期 inactive 非活跃，失效的。
         :type state: str
         :param search: **参数解释：** 检索内容
@@ -49,14 +45,12 @@ class ListImpersonationTokensRequest:
         
         
 
-        self._group_id = None
         self._state = None
         self._search = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
-        self.group_id = group_id
         if state is not None:
             self.state = state
         if search is not None:
@@ -65,28 +59,6 @@ class ListImpersonationTokensRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-
-    @property
-    def group_id(self):
-        r"""Gets the group_id of this ListImpersonationTokensRequest.
-
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
-
-        :return: The group_id of this ListImpersonationTokensRequest.
-        :rtype: int
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        r"""Sets the group_id of this ListImpersonationTokensRequest.
-
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
-
-        :param group_id: The group_id of this ListImpersonationTokensRequest.
-        :type group_id: int
-        """
-        self._group_id = group_id
 
     @property
     def state(self):

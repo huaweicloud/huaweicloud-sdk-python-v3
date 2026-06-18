@@ -45,9 +45,9 @@ class ResourcePermissionDto:
         :type display_name: str
         :param display_name_cn: **参数解释：** 操作中文名称。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type display_name_cn: str
-        :param enabled: **参数解释：** 是否开启。
+        :param enabled: **参数解释：** 角色是否有该权限点的权限。 **取值范围：** true, false。
         :type enabled: bool
-        :param editable: **参数解释：** 是否编辑。
+        :param editable: **参数解释：** 角色在该权限点的权限是否可编辑。 **取值范围：** true, false。
         :type editable: bool
         """
         
@@ -166,7 +166,7 @@ class ResourcePermissionDto:
     def enabled(self):
         r"""Gets the enabled of this ResourcePermissionDto.
 
-        **参数解释：** 是否开启。
+        **参数解释：** 角色是否有该权限点的权限。 **取值范围：** true, false。
 
         :return: The enabled of this ResourcePermissionDto.
         :rtype: bool
@@ -177,7 +177,7 @@ class ResourcePermissionDto:
     def enabled(self, enabled):
         r"""Sets the enabled of this ResourcePermissionDto.
 
-        **参数解释：** 是否开启。
+        **参数解释：** 角色是否有该权限点的权限。 **取值范围：** true, false。
 
         :param enabled: The enabled of this ResourcePermissionDto.
         :type enabled: bool
@@ -188,7 +188,7 @@ class ResourcePermissionDto:
     def editable(self):
         r"""Gets the editable of this ResourcePermissionDto.
 
-        **参数解释：** 是否编辑。
+        **参数解释：** 角色在该权限点的权限是否可编辑。 **取值范围：** true, false。
 
         :return: The editable of this ResourcePermissionDto.
         :rtype: bool
@@ -199,7 +199,7 @@ class ResourcePermissionDto:
     def editable(self, editable):
         r"""Sets the editable of this ResourcePermissionDto.
 
-        **参数解释：** 是否编辑。
+        **参数解释：** 角色在该权限点的权限是否可编辑。 **取值范围：** true, false。
 
         :param editable: The editable of this ResourcePermissionDto.
         :type editable: bool

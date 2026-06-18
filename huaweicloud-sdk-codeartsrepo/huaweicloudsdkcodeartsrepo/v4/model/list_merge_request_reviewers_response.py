@@ -16,8 +16,8 @@ class ListMergeRequestReviewersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'required_reviewers_list': 'list[UserBasicDto]',
-        'optional_reviewers_list': 'list[UserBasicDto]',
+        'required_reviewers_list': 'list[MergeRequestApprovalUserDto]',
+        'optional_reviewers_list': 'list[MergeRequestApprovalUserDto]',
         'x_total': 'str'
     }
 
@@ -33,9 +33,9 @@ class ListMergeRequestReviewersResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param required_reviewers_list: **参数解释：** 必选检视人列表。 **取值范围：** 不涉及。
-        :type required_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :type required_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         :param optional_reviewers_list: **参数解释：** 可选检视人列表。 **取值范围：** 不涉及。
-        :type optional_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :type optional_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         :param x_total: 
         :type x_total: str
         """
@@ -61,7 +61,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
         **参数解释：** 必选检视人列表。 **取值范围：** 不涉及。
 
         :return: The required_reviewers_list of this ListMergeRequestReviewersResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         """
         return self._required_reviewers_list
 
@@ -72,7 +72,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
         **参数解释：** 必选检视人列表。 **取值范围：** 不涉及。
 
         :param required_reviewers_list: The required_reviewers_list of this ListMergeRequestReviewersResponse.
-        :type required_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :type required_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         """
         self._required_reviewers_list = required_reviewers_list
 
@@ -83,7 +83,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
         **参数解释：** 可选检视人列表。 **取值范围：** 不涉及。
 
         :return: The optional_reviewers_list of this ListMergeRequestReviewersResponse.
-        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         """
         return self._optional_reviewers_list
 
@@ -94,7 +94,7 @@ class ListMergeRequestReviewersResponse(SdkResponse):
         **参数解释：** 可选检视人列表。 **取值范围：** 不涉及。
 
         :param optional_reviewers_list: The optional_reviewers_list of this ListMergeRequestReviewersResponse.
-        :type optional_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.UserBasicDto`]
+        :type optional_reviewers_list: list[:class:`huaweicloudsdkcodeartsrepo.v4.MergeRequestApprovalUserDto`]
         """
         self._optional_reviewers_list = optional_reviewers_list
 

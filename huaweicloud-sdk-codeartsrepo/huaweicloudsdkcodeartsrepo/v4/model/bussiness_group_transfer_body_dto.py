@@ -36,8 +36,7 @@ class BussinessGroupTransferBodyDto:
         self._owner_id = None
         self.discriminator = None
 
-        if owner_id is not None:
-            self.owner_id = owner_id
+        self.owner_id = owner_id
 
     @property
     def owner_id(self):

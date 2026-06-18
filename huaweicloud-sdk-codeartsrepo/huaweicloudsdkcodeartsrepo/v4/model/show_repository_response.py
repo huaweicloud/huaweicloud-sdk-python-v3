@@ -49,6 +49,8 @@ class ShowRepositoryResponse(SdkResponse):
         'creator': 'RepositoryUserBasicDto',
         'creator_id': 'int',
         'forked_from_repository': 'RepositorySimpleDto',
+        'encryption_status': 'str',
+        'repo_encryption_enabled': 'bool',
         'uuid': 'str',
         'ancestor_ids': 'list[int]',
         'ancestor_names': 'list[str]',
@@ -104,6 +106,8 @@ class ShowRepositoryResponse(SdkResponse):
         'creator': 'creator',
         'creator_id': 'creator_id',
         'forked_from_repository': 'forked_from_repository',
+        'encryption_status': 'encryption_status',
+        'repo_encryption_enabled': 'repo_encryption_enabled',
         'uuid': 'uuid',
         'ancestor_ids': 'ancestor_ids',
         'ancestor_names': 'ancestor_names',
@@ -125,7 +129,7 @@ class ShowRepositoryResponse(SdkResponse):
         'member_count': 'member_count'
     }
 
-    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None, default_branch=None, avatar_url=None, star_count=None, forks_count=None, open_issues_count=None, open_merge_requests_count=None, last_activity_at=None, namespace=None, empty_repo=None, starred=None, visibility=None, security_tag=None, security=None, network_type=None, owner=None, creator=None, creator_id=None, forked_from_repository=None, uuid=None, ancestor_ids=None, ancestor_names=None, import_status=None, import_url=None, import_error=None, repo_type=None, only_allow_merge_if_pipeline_succeeds=None, request_access_enabled=None, only_allow_merge_if_all_discussions_are_resolved=None, merge_method=None, fork_network_repositories=None, permissions=None, repository_type=None, statistics=None, branch_count=None, tag_count=None, label_count=None, member_count=None):
+    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None, default_branch=None, avatar_url=None, star_count=None, forks_count=None, open_issues_count=None, open_merge_requests_count=None, last_activity_at=None, namespace=None, empty_repo=None, starred=None, visibility=None, security_tag=None, security=None, network_type=None, owner=None, creator=None, creator_id=None, forked_from_repository=None, encryption_status=None, repo_encryption_enabled=None, uuid=None, ancestor_ids=None, ancestor_names=None, import_status=None, import_url=None, import_error=None, repo_type=None, only_allow_merge_if_pipeline_succeeds=None, request_access_enabled=None, only_allow_merge_if_all_discussions_are_resolved=None, merge_method=None, fork_network_repositories=None, permissions=None, repository_type=None, statistics=None, branch_count=None, tag_count=None, label_count=None, member_count=None):
         r"""ShowRepositoryResponse
 
         The model defined in huaweicloud sdk
@@ -196,6 +200,10 @@ class ShowRepositoryResponse(SdkResponse):
         :type creator_id: int
         :param forked_from_repository: 
         :type forked_from_repository: :class:`huaweicloudsdkcodeartsrepo.v4.RepositorySimpleDto`
+        :param encryption_status: **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+        :type encryption_status: str
+        :param repo_encryption_enabled: **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+        :type repo_encryption_enabled: bool
         :param uuid: **参数解释：** 仓库唯一标识符。 **约束限制：** 不涉及。
         :type uuid: str
         :param ancestor_ids: **参数解释：** 祖先仓库ID列表。 **约束限制：** 不涉及。
@@ -271,6 +279,8 @@ class ShowRepositoryResponse(SdkResponse):
         self._creator = None
         self._creator_id = None
         self._forked_from_repository = None
+        self._encryption_status = None
+        self._repo_encryption_enabled = None
         self._uuid = None
         self._ancestor_ids = None
         self._ancestor_names = None
@@ -358,6 +368,10 @@ class ShowRepositoryResponse(SdkResponse):
             self.creator_id = creator_id
         if forked_from_repository is not None:
             self.forked_from_repository = forked_from_repository
+        if encryption_status is not None:
+            self.encryption_status = encryption_status
+        if repo_encryption_enabled is not None:
+            self.repo_encryption_enabled = repo_encryption_enabled
         if uuid is not None:
             self.uuid = uuid
         if ancestor_ids is not None:
@@ -1106,6 +1120,50 @@ class ShowRepositoryResponse(SdkResponse):
         :type forked_from_repository: :class:`huaweicloudsdkcodeartsrepo.v4.RepositorySimpleDto`
         """
         self._forked_from_repository = forked_from_repository
+
+    @property
+    def encryption_status(self):
+        r"""Gets the encryption_status of this ShowRepositoryResponse.
+
+        **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+
+        :return: The encryption_status of this ShowRepositoryResponse.
+        :rtype: str
+        """
+        return self._encryption_status
+
+    @encryption_status.setter
+    def encryption_status(self, encryption_status):
+        r"""Sets the encryption_status of this ShowRepositoryResponse.
+
+        **参数解释：** 仓库加密状态 **取值范围：** - encrypting，加密中。 - encrypted，已加密。 - decrypting，解密中。 - decrypted，已解密。 **默认取值：** 不涉及。
+
+        :param encryption_status: The encryption_status of this ShowRepositoryResponse.
+        :type encryption_status: str
+        """
+        self._encryption_status = encryption_status
+
+    @property
+    def repo_encryption_enabled(self):
+        r"""Gets the repo_encryption_enabled of this ShowRepositoryResponse.
+
+        **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+
+        :return: The repo_encryption_enabled of this ShowRepositoryResponse.
+        :rtype: bool
+        """
+        return self._repo_encryption_enabled
+
+    @repo_encryption_enabled.setter
+    def repo_encryption_enabled(self, repo_encryption_enabled):
+        r"""Sets the repo_encryption_enabled of this ShowRepositoryResponse.
+
+        **参数解释：** 是否开启仓库加密 **取值范围：** - true，已开启加密。 - false，未开启加密。
+
+        :param repo_encryption_enabled: The repo_encryption_enabled of this ShowRepositoryResponse.
+        :type repo_encryption_enabled: bool
+        """
+        self._repo_encryption_enabled = repo_encryption_enabled
 
     @property
     def uuid(self):

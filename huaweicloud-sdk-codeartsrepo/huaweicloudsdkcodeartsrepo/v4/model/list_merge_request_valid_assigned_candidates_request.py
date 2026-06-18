@@ -22,9 +22,8 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         'limit': 'int',
         'search': 'str',
         'search_by_name_list': 'str',
-        'target_project_id': 'str',
+        'target_repository_id': 'str',
         'view': 'str',
-        'mode': 'str',
         'only_developers': 'bool'
     }
 
@@ -36,18 +35,17 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         'limit': 'limit',
         'search': 'search',
         'search_by_name_list': 'search_by_name_list',
-        'target_project_id': 'target_project_id',
+        'target_repository_id': 'target_repository_id',
         'view': 'view',
-        'mode': 'mode',
         'only_developers': 'only_developers'
     }
 
-    def __init__(self, repository_id=None, target_branch=None, merge_request_iid=None, offset=None, limit=None, search=None, search_by_name_list=None, target_project_id=None, view=None, mode=None, only_developers=None):
+    def __init__(self, repository_id=None, target_branch=None, merge_request_iid=None, offset=None, limit=None, search=None, search_by_name_list=None, target_repository_id=None, view=None, only_developers=None):
         r"""ListMergeRequestValidAssignedCandidatesRequest
 
         The model defined in huaweicloud sdk
 
-        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
         :type repository_id: int
         :param target_branch: **参数解释：** 目标分支。创建MR时，代码将要合入的分支。
         :type target_branch: str
@@ -59,15 +57,13 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         :type limit: int
         :param search: **参数解释：** 查询关键字，可模糊匹配用户名称、用户昵称、租户名称。
         :type search: str
-        :param search_by_name_list: **参数解释：** Search user list by name list。
+        :param search_by_name_list: **参数解释：** 批量匹配用户，一次可传多个用户的用户名和昵称，用\&quot;, \&quot;分隔，最多50个。示例：\&quot;zhangsan, lisi, wangwu\&quot;
         :type search_by_name_list: str
-        :param target_project_id: **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[[查询项目列表](https://support.huaweicloud.com/eu/api-projectman/ListProjectsV4.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
-        :type target_project_id: str
-        :param view: **参数解释：** The type of assignee, merge user or approver
+        :param target_repository_id: **参数解释：** 目标仓库id。创建MR时，代码将要合入的仓库。
+        :type target_repository_id: str
+        :param view: **参数解释：** approver: 获取审核人 assingee: 获取合并人
         :type view: str
-        :param mode: **参数解释：** The type of assignee, merge user or approver
-        :type mode: str
-        :param only_developers: **参数解释：** The type of memeber, developer
+        :param only_developers: **参数解释：** true: 仅返回开发者。
         :type only_developers: bool
         """
         
@@ -80,15 +76,13 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         self._limit = None
         self._search = None
         self._search_by_name_list = None
-        self._target_project_id = None
+        self._target_repository_id = None
         self._view = None
-        self._mode = None
         self._only_developers = None
         self.discriminator = None
 
         self.repository_id = repository_id
-        if target_branch is not None:
-            self.target_branch = target_branch
+        self.target_branch = target_branch
         if merge_request_iid is not None:
             self.merge_request_iid = merge_request_iid
         if offset is not None:
@@ -99,12 +93,10 @@ class ListMergeRequestValidAssignedCandidatesRequest:
             self.search = search
         if search_by_name_list is not None:
             self.search_by_name_list = search_by_name_list
-        if target_project_id is not None:
-            self.target_project_id = target_project_id
+        if target_repository_id is not None:
+            self.target_repository_id = target_repository_id
         if view is not None:
             self.view = view
-        if mode is not None:
-            self.mode = mode
         if only_developers is not None:
             self.only_developers = only_developers
 
@@ -112,7 +104,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def repository_id(self):
         r"""Gets the repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
         :rtype: int
@@ -123,7 +115,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
+        **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[[查询用户所有仓库](https://support.huaweicloud.com/intl/zh-cn/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk_ch)[[查询用户所有仓库](https://support.huaweicloud.com/eu/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。 **默认取值：** 不涉及。
 
         :param repository_id: The repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
         :type repository_id: int
@@ -244,7 +236,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def search_by_name_list(self):
         r"""Gets the search_by_name_list of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** Search user list by name list。
+        **参数解释：** 批量匹配用户，一次可传多个用户的用户名和昵称，用\", \"分隔，最多50个。示例：\"zhangsan, lisi, wangwu\"
 
         :return: The search_by_name_list of this ListMergeRequestValidAssignedCandidatesRequest.
         :rtype: str
@@ -255,7 +247,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def search_by_name_list(self, search_by_name_list):
         r"""Sets the search_by_name_list of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** Search user list by name list。
+        **参数解释：** 批量匹配用户，一次可传多个用户的用户名和昵称，用\", \"分隔，最多50个。示例：\"zhangsan, lisi, wangwu\"
 
         :param search_by_name_list: The search_by_name_list of this ListMergeRequestValidAssignedCandidatesRequest.
         :type search_by_name_list: str
@@ -263,32 +255,32 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         self._search_by_name_list = search_by_name_list
 
     @property
-    def target_project_id(self):
-        r"""Gets the target_project_id of this ListMergeRequestValidAssignedCandidatesRequest.
+    def target_repository_id(self):
+        r"""Gets the target_repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[[查询项目列表](https://support.huaweicloud.com/eu/api-projectman/ListProjectsV4.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
+        **参数解释：** 目标仓库id。创建MR时，代码将要合入的仓库。
 
-        :return: The target_project_id of this ListMergeRequestValidAssignedCandidatesRequest.
+        :return: The target_repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
         :rtype: str
         """
-        return self._target_project_id
+        return self._target_repository_id
 
-    @target_project_id.setter
-    def target_project_id(self, target_project_id):
-        r"""Sets the target_project_id of this ListMergeRequestValidAssignedCandidatesRequest.
+    @target_repository_id.setter
+    def target_repository_id(self, target_repository_id):
+        r"""Sets the target_repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** 项目的32位uuid，项目唯一标识，通过[[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)](tag:hws)[[查询项目列表](https://support.huaweicloud.com/intl/en-us/api-projectman/ListProjectsV4.html)](tag:hws_hk)[[查询项目列表](https://support.huaweicloud.com/eu/api-projectman/ListProjectsV4.html)](tag:hws_eu)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **取值范围：** 字符串长度32。
+        **参数解释：** 目标仓库id。创建MR时，代码将要合入的仓库。
 
-        :param target_project_id: The target_project_id of this ListMergeRequestValidAssignedCandidatesRequest.
-        :type target_project_id: str
+        :param target_repository_id: The target_repository_id of this ListMergeRequestValidAssignedCandidatesRequest.
+        :type target_repository_id: str
         """
-        self._target_project_id = target_project_id
+        self._target_repository_id = target_repository_id
 
     @property
     def view(self):
         r"""Gets the view of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** The type of assignee, merge user or approver
+        **参数解释：** approver: 获取审核人 assingee: 获取合并人
 
         :return: The view of this ListMergeRequestValidAssignedCandidatesRequest.
         :rtype: str
@@ -299,7 +291,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def view(self, view):
         r"""Sets the view of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** The type of assignee, merge user or approver
+        **参数解释：** approver: 获取审核人 assingee: 获取合并人
 
         :param view: The view of this ListMergeRequestValidAssignedCandidatesRequest.
         :type view: str
@@ -307,32 +299,10 @@ class ListMergeRequestValidAssignedCandidatesRequest:
         self._view = view
 
     @property
-    def mode(self):
-        r"""Gets the mode of this ListMergeRequestValidAssignedCandidatesRequest.
-
-        **参数解释：** The type of assignee, merge user or approver
-
-        :return: The mode of this ListMergeRequestValidAssignedCandidatesRequest.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        r"""Sets the mode of this ListMergeRequestValidAssignedCandidatesRequest.
-
-        **参数解释：** The type of assignee, merge user or approver
-
-        :param mode: The mode of this ListMergeRequestValidAssignedCandidatesRequest.
-        :type mode: str
-        """
-        self._mode = mode
-
-    @property
     def only_developers(self):
         r"""Gets the only_developers of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** The type of memeber, developer
+        **参数解释：** true: 仅返回开发者。
 
         :return: The only_developers of this ListMergeRequestValidAssignedCandidatesRequest.
         :rtype: bool
@@ -343,7 +313,7 @@ class ListMergeRequestValidAssignedCandidatesRequest:
     def only_developers(self, only_developers):
         r"""Sets the only_developers of this ListMergeRequestValidAssignedCandidatesRequest.
 
-        **参数解释：** The type of memeber, developer
+        **参数解释：** true: 仅返回开发者。
 
         :param only_developers: The only_developers of this ListMergeRequestValidAssignedCandidatesRequest.
         :type only_developers: bool

@@ -19,6 +19,7 @@ class AddGroupWebhookResponse(SdkResponse):
         'url': 'str',
         'push_events': 'bool',
         'push_events_branch_regex_filter': 'str',
+        'note_plain_text_filter': 'list[str]',
         'tag_push_events': 'bool',
         'merge_requests_events': 'bool',
         'note_events': 'bool',
@@ -26,15 +27,20 @@ class AddGroupWebhookResponse(SdkResponse):
         'token_type': 'str',
         'name': 'str',
         'description': 'str',
+        'event_cfgs': 'list[WebHookEventCfgDto]',
+        'project_cfgs': 'list[WebHookBranchCfgDto]',
+        'branch_cfgs': 'list[WebHookBranchCfgDto]',
         'id': 'int',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'service': 'str'
     }
 
     attribute_map = {
         'url': 'url',
         'push_events': 'push_events',
         'push_events_branch_regex_filter': 'push_events_branch_regex_filter',
+        'note_plain_text_filter': 'note_plain_text_filter',
         'tag_push_events': 'tag_push_events',
         'merge_requests_events': 'merge_requests_events',
         'note_events': 'note_events',
@@ -42,12 +48,16 @@ class AddGroupWebhookResponse(SdkResponse):
         'token_type': 'token_type',
         'name': 'name',
         'description': 'description',
+        'event_cfgs': 'event_cfgs',
+        'project_cfgs': 'project_cfgs',
+        'branch_cfgs': 'branch_cfgs',
         'id': 'id',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'service': 'service'
     }
 
-    def __init__(self, url=None, push_events=None, push_events_branch_regex_filter=None, tag_push_events=None, merge_requests_events=None, note_events=None, token=None, token_type=None, name=None, description=None, id=None, created_at=None, updated_at=None):
+    def __init__(self, url=None, push_events=None, push_events_branch_regex_filter=None, note_plain_text_filter=None, tag_push_events=None, merge_requests_events=None, note_events=None, token=None, token_type=None, name=None, description=None, event_cfgs=None, project_cfgs=None, branch_cfgs=None, id=None, created_at=None, updated_at=None, service=None):
         r"""AddGroupWebhookResponse
 
         The model defined in huaweicloud sdk
@@ -58,6 +68,8 @@ class AddGroupWebhookResponse(SdkResponse):
         :type push_events: bool
         :param push_events_branch_regex_filter: **参数解释：** 推送事件分支过滤正则规则。 **取值范围：** 字符串长度不少于0，不超过500。                
         :type push_events_branch_regex_filter: str
+        :param note_plain_text_filter: **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+        :type note_plain_text_filter: list[str]
         :param tag_push_events: **参数解释：** 是否启用Tag推送事件。
         :type tag_push_events: bool
         :param merge_requests_events: **参数解释：** 是否启用合并请求事件。
@@ -72,12 +84,20 @@ class AddGroupWebhookResponse(SdkResponse):
         :type name: str
         :param description: **参数解释：** 描述。 **取值范围：** 字符串长度不少于0，不超过200。
         :type description: str
+        :param event_cfgs: **参数解释：** 预留字段，事件触发设置，可为空。
+        :type event_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookEventCfgDto`]
+        :param project_cfgs: **参数解释：** 预留字段，仓库分支规则设置，可为空。
+        :type project_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
+        :param branch_cfgs: 
+        :type branch_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
         :param id: **参数解释：** Webhook id。
         :type id: int
         :param created_at: **参数解释：** 创建时间。 **参数解释：** yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSXXX
         :type created_at: str
         :param updated_at: **参数解释：** 更新时间。 **参数解释：** yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSXXX
         :type updated_at: str
+        :param service: **参数解释：** 内部服务名称。
+        :type service: str
         """
         
         super().__init__()
@@ -85,6 +105,7 @@ class AddGroupWebhookResponse(SdkResponse):
         self._url = None
         self._push_events = None
         self._push_events_branch_regex_filter = None
+        self._note_plain_text_filter = None
         self._tag_push_events = None
         self._merge_requests_events = None
         self._note_events = None
@@ -92,9 +113,13 @@ class AddGroupWebhookResponse(SdkResponse):
         self._token_type = None
         self._name = None
         self._description = None
+        self._event_cfgs = None
+        self._project_cfgs = None
+        self._branch_cfgs = None
         self._id = None
         self._created_at = None
         self._updated_at = None
+        self._service = None
         self.discriminator = None
 
         if url is not None:
@@ -103,6 +128,8 @@ class AddGroupWebhookResponse(SdkResponse):
             self.push_events = push_events
         if push_events_branch_regex_filter is not None:
             self.push_events_branch_regex_filter = push_events_branch_regex_filter
+        if note_plain_text_filter is not None:
+            self.note_plain_text_filter = note_plain_text_filter
         if tag_push_events is not None:
             self.tag_push_events = tag_push_events
         if merge_requests_events is not None:
@@ -117,12 +144,20 @@ class AddGroupWebhookResponse(SdkResponse):
             self.name = name
         if description is not None:
             self.description = description
+        if event_cfgs is not None:
+            self.event_cfgs = event_cfgs
+        if project_cfgs is not None:
+            self.project_cfgs = project_cfgs
+        if branch_cfgs is not None:
+            self.branch_cfgs = branch_cfgs
         if id is not None:
             self.id = id
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if service is not None:
+            self.service = service
 
     @property
     def url(self):
@@ -189,6 +224,28 @@ class AddGroupWebhookResponse(SdkResponse):
         :type push_events_branch_regex_filter: str
         """
         self._push_events_branch_regex_filter = push_events_branch_regex_filter
+
+    @property
+    def note_plain_text_filter(self):
+        r"""Gets the note_plain_text_filter of this AddGroupWebhookResponse.
+
+        **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+
+        :return: The note_plain_text_filter of this AddGroupWebhookResponse.
+        :rtype: list[str]
+        """
+        return self._note_plain_text_filter
+
+    @note_plain_text_filter.setter
+    def note_plain_text_filter(self, note_plain_text_filter):
+        r"""Sets the note_plain_text_filter of this AddGroupWebhookResponse.
+
+        **参数解释：** 评论事件文本过滤规则。 **取值范围：** 字符串长度不少于0，不超过50，不能超过10个。  
+
+        :param note_plain_text_filter: The note_plain_text_filter of this AddGroupWebhookResponse.
+        :type note_plain_text_filter: list[str]
+        """
+        self._note_plain_text_filter = note_plain_text_filter
 
     @property
     def tag_push_events(self):
@@ -345,6 +402,68 @@ class AddGroupWebhookResponse(SdkResponse):
         self._description = description
 
     @property
+    def event_cfgs(self):
+        r"""Gets the event_cfgs of this AddGroupWebhookResponse.
+
+        **参数解释：** 预留字段，事件触发设置，可为空。
+
+        :return: The event_cfgs of this AddGroupWebhookResponse.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookEventCfgDto`]
+        """
+        return self._event_cfgs
+
+    @event_cfgs.setter
+    def event_cfgs(self, event_cfgs):
+        r"""Sets the event_cfgs of this AddGroupWebhookResponse.
+
+        **参数解释：** 预留字段，事件触发设置，可为空。
+
+        :param event_cfgs: The event_cfgs of this AddGroupWebhookResponse.
+        :type event_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookEventCfgDto`]
+        """
+        self._event_cfgs = event_cfgs
+
+    @property
+    def project_cfgs(self):
+        r"""Gets the project_cfgs of this AddGroupWebhookResponse.
+
+        **参数解释：** 预留字段，仓库分支规则设置，可为空。
+
+        :return: The project_cfgs of this AddGroupWebhookResponse.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
+        """
+        return self._project_cfgs
+
+    @project_cfgs.setter
+    def project_cfgs(self, project_cfgs):
+        r"""Sets the project_cfgs of this AddGroupWebhookResponse.
+
+        **参数解释：** 预留字段，仓库分支规则设置，可为空。
+
+        :param project_cfgs: The project_cfgs of this AddGroupWebhookResponse.
+        :type project_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
+        """
+        self._project_cfgs = project_cfgs
+
+    @property
+    def branch_cfgs(self):
+        r"""Gets the branch_cfgs of this AddGroupWebhookResponse.
+
+        :return: The branch_cfgs of this AddGroupWebhookResponse.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
+        """
+        return self._branch_cfgs
+
+    @branch_cfgs.setter
+    def branch_cfgs(self, branch_cfgs):
+        r"""Sets the branch_cfgs of this AddGroupWebhookResponse.
+
+        :param branch_cfgs: The branch_cfgs of this AddGroupWebhookResponse.
+        :type branch_cfgs: list[:class:`huaweicloudsdkcodeartsrepo.v4.WebHookBranchCfgDto`]
+        """
+        self._branch_cfgs = branch_cfgs
+
+    @property
     def id(self):
         r"""Gets the id of this AddGroupWebhookResponse.
 
@@ -409,6 +528,28 @@ class AddGroupWebhookResponse(SdkResponse):
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def service(self):
+        r"""Gets the service of this AddGroupWebhookResponse.
+
+        **参数解释：** 内部服务名称。
+
+        :return: The service of this AddGroupWebhookResponse.
+        :rtype: str
+        """
+        return self._service
+
+    @service.setter
+    def service(self, service):
+        r"""Sets the service of this AddGroupWebhookResponse.
+
+        **参数解释：** 内部服务名称。
+
+        :param service: The service of this AddGroupWebhookResponse.
+        :type service: str
+        """
+        self._service = service
 
     def to_dict(self):
         import warnings

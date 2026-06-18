@@ -29,7 +29,7 @@ class RepositoryInheritSettingDto:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
+        :param name: **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - mr_branch_policies，分支策略设置。 - reviews，检视意见设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
         :type name: str
         :param inherit_mod: **参数解释：** 继承设置。 **取值范围：** - inherit，继承上级配置。 - custom，使用当前仓库配置。 - force_inherit，强制继承上级配置。
         :type inherit_mod: str
@@ -50,7 +50,7 @@ class RepositoryInheritSettingDto:
     def name(self):
         r"""Gets the name of this RepositoryInheritSettingDto.
 
-        **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
+        **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - mr_branch_policies，分支策略设置。 - reviews，检视意见设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
 
         :return: The name of this RepositoryInheritSettingDto.
         :rtype: str
@@ -61,7 +61,7 @@ class RepositoryInheritSettingDto:
     def name(self, name):
         r"""Sets the name of this RepositoryInheritSettingDto.
 
-        **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
+        **参数解释：** 设置源类型。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - mr_branch_policies，分支策略设置。 - reviews，检视意见设置。 - e2e_settings，E2E设置。 - watermark，水印设置。
 
         :param name: The name of this RepositoryInheritSettingDto.
         :type name: str

@@ -16,15 +16,17 @@ class ShowTemplateDeployParamsRequest:
 
     openapi_types = {
         'template_name': 'str',
-        'version': 'str'
+        'version': 'str',
+        'account_id': 'str'
     }
 
     attribute_map = {
         'template_name': 'template_name',
-        'version': 'version'
+        'version': 'version',
+        'account_id': 'account_id'
     }
 
-    def __init__(self, template_name=None, version=None):
+    def __init__(self, template_name=None, version=None, account_id=None):
         r"""ShowTemplateDeployParamsRequest
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class ShowTemplateDeployParamsRequest:
         :type template_name: str
         :param version: 模板版本。
         :type version: str
+        :param account_id: 纳管账号ID。
+        :type account_id: str
         """
         
         
 
         self._template_name = None
         self._version = None
+        self._account_id = None
         self.discriminator = None
 
         self.template_name = template_name
         self.version = version
+        if account_id is not None:
+            self.account_id = account_id
 
     @property
     def template_name(self):
@@ -87,6 +94,28 @@ class ShowTemplateDeployParamsRequest:
         :type version: str
         """
         self._version = version
+
+    @property
+    def account_id(self):
+        r"""Gets the account_id of this ShowTemplateDeployParamsRequest.
+
+        纳管账号ID。
+
+        :return: The account_id of this ShowTemplateDeployParamsRequest.
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        r"""Sets the account_id of this ShowTemplateDeployParamsRequest.
+
+        纳管账号ID。
+
+        :param account_id: The account_id of this ShowTemplateDeployParamsRequest.
+        :type account_id: str
+        """
+        self._account_id = account_id
 
     def to_dict(self):
         result = {}

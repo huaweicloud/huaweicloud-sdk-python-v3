@@ -20,7 +20,8 @@ class GeneralPolicyBodyDto:
         'branch_name_regex': 'str',
         'tag_name_regex': 'str',
         'forbidden_developer_create_branch': 'bool',
-        'create_branch_whitelist_user_ids': 'str'
+        'create_branch_whitelist_user_ids': 'str',
+        'repo_encryption_enabled': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class GeneralPolicyBodyDto:
         'branch_name_regex': 'branch_name_regex',
         'tag_name_regex': 'tag_name_regex',
         'forbidden_developer_create_branch': 'forbidden_developer_create_branch',
-        'create_branch_whitelist_user_ids': 'create_branch_whitelist_user_ids'
+        'create_branch_whitelist_user_ids': 'create_branch_whitelist_user_ids',
+        'repo_encryption_enabled': 'repo_encryption_enabled'
     }
 
-    def __init__(self, disable_fork=None, generate_pre_merge_ref=None, branch_name_regex=None, tag_name_regex=None, forbidden_developer_create_branch=None, create_branch_whitelist_user_ids=None):
+    def __init__(self, disable_fork=None, generate_pre_merge_ref=None, branch_name_regex=None, tag_name_regex=None, forbidden_developer_create_branch=None, create_branch_whitelist_user_ids=None, repo_encryption_enabled=None):
         r"""GeneralPolicyBodyDto
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class GeneralPolicyBodyDto:
         :type forbidden_developer_create_branch: bool
         :param create_branch_whitelist_user_ids: **参数解释：** 开发人员创建分支权限例外白名单。多个用户ID使用逗号分隔。
         :type create_branch_whitelist_user_ids: str
+        :param repo_encryption_enabled: **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+        :type repo_encryption_enabled: bool
         """
         
         
@@ -59,6 +63,7 @@ class GeneralPolicyBodyDto:
         self._tag_name_regex = None
         self._forbidden_developer_create_branch = None
         self._create_branch_whitelist_user_ids = None
+        self._repo_encryption_enabled = None
         self.discriminator = None
 
         if disable_fork is not None:
@@ -73,6 +78,8 @@ class GeneralPolicyBodyDto:
             self.forbidden_developer_create_branch = forbidden_developer_create_branch
         if create_branch_whitelist_user_ids is not None:
             self.create_branch_whitelist_user_ids = create_branch_whitelist_user_ids
+        if repo_encryption_enabled is not None:
+            self.repo_encryption_enabled = repo_encryption_enabled
 
     @property
     def disable_fork(self):
@@ -205,6 +212,28 @@ class GeneralPolicyBodyDto:
         :type create_branch_whitelist_user_ids: str
         """
         self._create_branch_whitelist_user_ids = create_branch_whitelist_user_ids
+
+    @property
+    def repo_encryption_enabled(self):
+        r"""Gets the repo_encryption_enabled of this GeneralPolicyBodyDto.
+
+        **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+
+        :return: The repo_encryption_enabled of this GeneralPolicyBodyDto.
+        :rtype: bool
+        """
+        return self._repo_encryption_enabled
+
+    @repo_encryption_enabled.setter
+    def repo_encryption_enabled(self, repo_encryption_enabled):
+        r"""Sets the repo_encryption_enabled of this GeneralPolicyBodyDto.
+
+        **参数解释：** 是否开启仓库加密。 **约束限制：** 不涉及。 **取值范围：** - true，开启仓库加密。 - false，关闭仓库加密。
+
+        :param repo_encryption_enabled: The repo_encryption_enabled of this GeneralPolicyBodyDto.
+        :type repo_encryption_enabled: bool
+        """
+        self._repo_encryption_enabled = repo_encryption_enabled
 
     def to_dict(self):
         result = {}

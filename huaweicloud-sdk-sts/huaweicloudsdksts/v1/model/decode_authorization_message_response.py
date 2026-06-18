@@ -28,7 +28,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param decoded_message: 鉴权失败原因的明文。
+        :param decoded_message: **参数解释**： 鉴权失败原因的明文。  **取值范围**： 不涉及。 
         :type decoded_message: str
         """
         
@@ -44,7 +44,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
     def decoded_message(self):
         r"""Gets the decoded_message of this DecodeAuthorizationMessageResponse.
 
-        鉴权失败原因的明文。
+        **参数解释**： 鉴权失败原因的明文。  **取值范围**： 不涉及。 
 
         :return: The decoded_message of this DecodeAuthorizationMessageResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
     def decoded_message(self, decoded_message):
         r"""Sets the decoded_message of this DecodeAuthorizationMessageResponse.
 
-        鉴权失败原因的明文。
+        **参数解释**： 鉴权失败原因的明文。  **取值范围**： 不涉及。 
 
         :param decoded_message: The decoded_message of this DecodeAuthorizationMessageResponse.
         :type decoded_message: str

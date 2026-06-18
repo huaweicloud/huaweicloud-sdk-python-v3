@@ -41,15 +41,15 @@ class StatisticEventsDto:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 统计ID。
+        :param id: **参数解释：** 统计ID。 **默认取值：** 不涉及。
         :type id: int
-        :param user_id: **参数解释：** 用户ID。
+        :param user_id: **参数解释：** 用户ID。 **默认取值：** 不涉及。
         :type user_id: int
-        :param project_id: **参数解释：** 仓库ID。
+        :param project_id: **参数解释：** 仓库ID。 **默认取值：** 不涉及。
         :type project_id: int
-        :param branch: **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节
+        :param branch: **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节 **默认取值：** 不涉及。
         :type branch: str
-        :param status: **参数解释：** 统计状态。
+        :param status: **参数解释：** 统计状态。 **默认取值：** 0
         :type status: str
         :param stat_date: **参数解释：** 统计时间。
         :type stat_date: str
@@ -92,7 +92,7 @@ class StatisticEventsDto:
     def id(self):
         r"""Gets the id of this StatisticEventsDto.
 
-        **参数解释：** 统计ID。
+        **参数解释：** 统计ID。 **默认取值：** 不涉及。
 
         :return: The id of this StatisticEventsDto.
         :rtype: int
@@ -103,7 +103,7 @@ class StatisticEventsDto:
     def id(self, id):
         r"""Sets the id of this StatisticEventsDto.
 
-        **参数解释：** 统计ID。
+        **参数解释：** 统计ID。 **默认取值：** 不涉及。
 
         :param id: The id of this StatisticEventsDto.
         :type id: int
@@ -114,7 +114,7 @@ class StatisticEventsDto:
     def user_id(self):
         r"""Gets the user_id of this StatisticEventsDto.
 
-        **参数解释：** 用户ID。
+        **参数解释：** 用户ID。 **默认取值：** 不涉及。
 
         :return: The user_id of this StatisticEventsDto.
         :rtype: int
@@ -125,7 +125,7 @@ class StatisticEventsDto:
     def user_id(self, user_id):
         r"""Sets the user_id of this StatisticEventsDto.
 
-        **参数解释：** 用户ID。
+        **参数解释：** 用户ID。 **默认取值：** 不涉及。
 
         :param user_id: The user_id of this StatisticEventsDto.
         :type user_id: int
@@ -136,7 +136,7 @@ class StatisticEventsDto:
     def project_id(self):
         r"""Gets the project_id of this StatisticEventsDto.
 
-        **参数解释：** 仓库ID。
+        **参数解释：** 仓库ID。 **默认取值：** 不涉及。
 
         :return: The project_id of this StatisticEventsDto.
         :rtype: int
@@ -147,7 +147,7 @@ class StatisticEventsDto:
     def project_id(self, project_id):
         r"""Sets the project_id of this StatisticEventsDto.
 
-        **参数解释：** 仓库ID。
+        **参数解释：** 仓库ID。 **默认取值：** 不涉及。
 
         :param project_id: The project_id of this StatisticEventsDto.
         :type project_id: int
@@ -158,7 +158,7 @@ class StatisticEventsDto:
     def branch(self):
         r"""Gets the branch of this StatisticEventsDto.
 
-        **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节
+        **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节 **默认取值：** 不涉及。
 
         :return: The branch of this StatisticEventsDto.
         :rtype: str
@@ -169,7 +169,7 @@ class StatisticEventsDto:
     def branch(self, branch):
         r"""Sets the branch of this StatisticEventsDto.
 
-        **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节
+        **参数解释：** 分支名。 **取值范围：** 最小1个字节，最大200字节 **默认取值：** 不涉及。
 
         :param branch: The branch of this StatisticEventsDto.
         :type branch: str
@@ -180,7 +180,7 @@ class StatisticEventsDto:
     def status(self):
         r"""Gets the status of this StatisticEventsDto.
 
-        **参数解释：** 统计状态。
+        **参数解释：** 统计状态。 **默认取值：** 0
 
         :return: The status of this StatisticEventsDto.
         :rtype: str
@@ -191,7 +191,7 @@ class StatisticEventsDto:
     def status(self, status):
         r"""Sets the status of this StatisticEventsDto.
 
-        **参数解释：** 统计状态。
+        **参数解释：** 统计状态。 **默认取值：** 0
 
         :param status: The status of this StatisticEventsDto.
         :type status: str

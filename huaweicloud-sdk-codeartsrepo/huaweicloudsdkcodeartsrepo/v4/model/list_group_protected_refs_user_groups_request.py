@@ -33,7 +33,7 @@ class ListGroupProtectedRefsUserGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
         :type group_id: int
         :param offset: **参数解释：** 偏移量，从0开始。
         :type offset: int
@@ -63,7 +63,7 @@ class ListGroupProtectedRefsUserGroupsRequest:
     def group_id(self):
         r"""Gets the group_id of this ListGroupProtectedRefsUserGroupsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :return: The group_id of this ListGroupProtectedRefsUserGroupsRequest.
         :rtype: int
@@ -74,7 +74,7 @@ class ListGroupProtectedRefsUserGroupsRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListGroupProtectedRefsUserGroupsRequest.
 
-        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
+        **参数解释：** 代码组id，代码组首页，Group ID后的数字Id **默认取值：** 不涉及。
 
         :param group_id: The group_id of this ListGroupProtectedRefsUserGroupsRequest.
         :type group_id: int

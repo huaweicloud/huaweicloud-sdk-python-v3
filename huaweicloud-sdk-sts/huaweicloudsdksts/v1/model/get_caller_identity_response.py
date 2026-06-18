@@ -32,11 +32,11 @@ class GetCallerIdentityResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 账号ID。
+        :param account_id: **参数解释**： 账号ID。  **取值范围**： 不涉及。 
         :type account_id: str
-        :param principal_urn: 主体URN。
+        :param principal_urn: **参数解释**： 主体URN。  **取值范围**： 不涉及。 
         :type principal_urn: str
-        :param principal_id: 主体ID。
+        :param principal_id: **参数解释**： 主体ID。  **取值范围**： 不涉及。 
         :type principal_id: str
         """
         
@@ -58,7 +58,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def account_id(self):
         r"""Gets the account_id of this GetCallerIdentityResponse.
 
-        账号ID。
+        **参数解释**： 账号ID。  **取值范围**： 不涉及。 
 
         :return: The account_id of this GetCallerIdentityResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def account_id(self, account_id):
         r"""Sets the account_id of this GetCallerIdentityResponse.
 
-        账号ID。
+        **参数解释**： 账号ID。  **取值范围**： 不涉及。 
 
         :param account_id: The account_id of this GetCallerIdentityResponse.
         :type account_id: str
@@ -80,7 +80,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def principal_urn(self):
         r"""Gets the principal_urn of this GetCallerIdentityResponse.
 
-        主体URN。
+        **参数解释**： 主体URN。  **取值范围**： 不涉及。 
 
         :return: The principal_urn of this GetCallerIdentityResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def principal_urn(self, principal_urn):
         r"""Sets the principal_urn of this GetCallerIdentityResponse.
 
-        主体URN。
+        **参数解释**： 主体URN。  **取值范围**： 不涉及。 
 
         :param principal_urn: The principal_urn of this GetCallerIdentityResponse.
         :type principal_urn: str
@@ -102,7 +102,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def principal_id(self):
         r"""Gets the principal_id of this GetCallerIdentityResponse.
 
-        主体ID。
+        **参数解释**： 主体ID。  **取值范围**： 不涉及。 
 
         :return: The principal_id of this GetCallerIdentityResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class GetCallerIdentityResponse(SdkResponse):
     def principal_id(self, principal_id):
         r"""Sets the principal_id of this GetCallerIdentityResponse.
 
-        主体ID。
+        **参数解释**： 主体ID。  **取值范围**： 不涉及。 
 
         :param principal_id: The principal_id of this GetCallerIdentityResponse.
         :type principal_id: str

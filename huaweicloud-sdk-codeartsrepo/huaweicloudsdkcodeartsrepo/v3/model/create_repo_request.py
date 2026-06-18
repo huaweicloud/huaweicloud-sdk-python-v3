@@ -18,6 +18,7 @@ class CreateRepoRequest:
         'import_members': 'int',
         'name': 'str',
         'project_uuid': 'str',
+        'group_id': 'int',
         'template_id': 'str',
         'visibility_level': 'int',
         'import_url': 'str',
@@ -32,6 +33,7 @@ class CreateRepoRequest:
         'import_members': 'import_members',
         'name': 'name',
         'project_uuid': 'project_uuid',
+        'group_id': 'group_id',
         'template_id': 'template_id',
         'visibility_level': 'visibility_level',
         'import_url': 'import_url',
@@ -42,7 +44,7 @@ class CreateRepoRequest:
         'caller': 'caller'
     }
 
-    def __init__(self, import_members=None, name=None, project_uuid=None, template_id=None, visibility_level=None, import_url=None, description=None, gitignore_id=None, license_id=None, enable_readme=None, caller=None):
+    def __init__(self, import_members=None, name=None, project_uuid=None, group_id=None, template_id=None, visibility_level=None, import_url=None, description=None, gitignore_id=None, license_id=None, enable_readme=None, caller=None):
         r"""CreateRepoRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CreateRepoRequest:
         :type name: str
         :param project_uuid: 指定项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
         :type project_uuid: str
+        :param group_id: 代码组id，代码组首页，Group ID后的数字Id
+        :type group_id: int
         :param template_id: 复制模板的ID
         :type template_id: str
         :param visibility_level: 仓库状态，取值范围：0-&gt;私有，20-&gt;公开只读
@@ -76,6 +80,7 @@ class CreateRepoRequest:
         self._import_members = None
         self._name = None
         self._project_uuid = None
+        self._group_id = None
         self._template_id = None
         self._visibility_level = None
         self._import_url = None
@@ -90,6 +95,8 @@ class CreateRepoRequest:
             self.import_members = import_members
         self.name = name
         self.project_uuid = project_uuid
+        if group_id is not None:
+            self.group_id = group_id
         if template_id is not None:
             self.template_id = template_id
         if visibility_level is not None:
@@ -172,6 +179,28 @@ class CreateRepoRequest:
         :type project_uuid: str
         """
         self._project_uuid = project_uuid
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this CreateRepoRequest.
+
+        代码组id，代码组首页，Group ID后的数字Id
+
+        :return: The group_id of this CreateRepoRequest.
+        :rtype: int
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this CreateRepoRequest.
+
+        代码组id，代码组首页，Group ID后的数字Id
+
+        :param group_id: The group_id of this CreateRepoRequest.
+        :type group_id: int
+        """
+        self._group_id = group_id
 
     @property
     def template_id(self):

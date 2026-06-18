@@ -36,8 +36,7 @@ class UpdateWatermarkDto:
         self._watermark = None
         self.discriminator = None
 
-        if watermark is not None:
-            self.watermark = watermark
+        self.watermark = watermark
 
     @property
     def watermark(self):
