@@ -17,15 +17,17 @@ class ListImmediateJobsResponse(SdkResponse):
 
     openapi_types = {
         'jobs': 'list[TaskDetailInfo]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'action_names': 'list[str]'
     }
 
     attribute_map = {
         'jobs': 'jobs',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'action_names': 'action_names'
     }
 
-    def __init__(self, jobs=None, total_count=None):
+    def __init__(self, jobs=None, total_count=None, action_names=None):
         r"""ListImmediateJobsResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListImmediateJobsResponse(SdkResponse):
         :type jobs: list[:class:`huaweicloudsdkgaussdb.v3.TaskDetailInfo`]
         :param total_count: 任务总数。
         :type total_count: int
+        :param action_names: **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
+        :type action_names: list[str]
         """
         
         super().__init__()
 
         self._jobs = None
         self._total_count = None
+        self._action_names = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
         if total_count is not None:
             self.total_count = total_count
+        if action_names is not None:
+            self.action_names = action_names
 
     @property
     def jobs(self):
@@ -90,6 +97,28 @@ class ListImmediateJobsResponse(SdkResponse):
         :type total_count: int
         """
         self._total_count = total_count
+
+    @property
+    def action_names(self):
+        r"""Gets the action_names of this ListImmediateJobsResponse.
+
+        **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
+
+        :return: The action_names of this ListImmediateJobsResponse.
+        :rtype: list[str]
+        """
+        return self._action_names
+
+    @action_names.setter
+    def action_names(self, action_names):
+        r"""Sets the action_names of this ListImmediateJobsResponse.
+
+        **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
+
+        :param action_names: The action_names of this ListImmediateJobsResponse.
+        :type action_names: list[str]
+        """
+        self._action_names = action_names
 
     def to_dict(self):
         import warnings

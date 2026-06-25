@@ -21,6 +21,7 @@ class UpdateAutoScalingPolicyRequestBody:
         'enlarge_threshold': 'int',
         'max_flavor': 'str',
         'reduce_enabled': 'bool',
+        'reduce_threshold': 'int',
         'max_read_only_count': 'int',
         'read_only_weight': 'int',
         'scaling_strategy': 'ScalingStrategyReqInfo'
@@ -33,12 +34,13 @@ class UpdateAutoScalingPolicyRequestBody:
         'enlarge_threshold': 'enlarge_threshold',
         'max_flavor': 'max_flavor',
         'reduce_enabled': 'reduce_enabled',
+        'reduce_threshold': 'reduce_threshold',
         'max_read_only_count': 'max_read_only_count',
         'read_only_weight': 'read_only_weight',
         'scaling_strategy': 'scaling_strategy'
     }
 
-    def __init__(self, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, max_read_only_count=None, read_only_weight=None, scaling_strategy=None):
+    def __init__(self, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, reduce_threshold=None, max_read_only_count=None, read_only_weight=None, scaling_strategy=None):
         r"""UpdateAutoScalingPolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class UpdateAutoScalingPolicyRequestBody:
         :type max_flavor: str
         :param reduce_enabled: 是否开启自动回缩。开启自动变配时必填。 - true：是。 - false：否。
         :type reduce_enabled: bool
+        :param reduce_threshold: **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **约束限制**：  不涉及。  **取值范围**：  10-30。  **默认取值**：  不涉及。
+        :type reduce_threshold: int
         :param max_read_only_count: 只读节点数量上限。开启增删只读节点时必填。
         :type max_read_only_count: int
         :param read_only_weight: 只读节点读写分离权重。开启增删只读节点时必填。
@@ -71,6 +75,7 @@ class UpdateAutoScalingPolicyRequestBody:
         self._enlarge_threshold = None
         self._max_flavor = None
         self._reduce_enabled = None
+        self._reduce_threshold = None
         self._max_read_only_count = None
         self._read_only_weight = None
         self._scaling_strategy = None
@@ -87,6 +92,8 @@ class UpdateAutoScalingPolicyRequestBody:
             self.max_flavor = max_flavor
         if reduce_enabled is not None:
             self.reduce_enabled = reduce_enabled
+        if reduce_threshold is not None:
+            self.reduce_threshold = reduce_threshold
         if max_read_only_count is not None:
             self.max_read_only_count = max_read_only_count
         if read_only_weight is not None:
@@ -224,6 +231,28 @@ class UpdateAutoScalingPolicyRequestBody:
         :type reduce_enabled: bool
         """
         self._reduce_enabled = reduce_enabled
+
+    @property
+    def reduce_threshold(self):
+        r"""Gets the reduce_threshold of this UpdateAutoScalingPolicyRequestBody.
+
+        **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **约束限制**：  不涉及。  **取值范围**：  10-30。  **默认取值**：  不涉及。
+
+        :return: The reduce_threshold of this UpdateAutoScalingPolicyRequestBody.
+        :rtype: int
+        """
+        return self._reduce_threshold
+
+    @reduce_threshold.setter
+    def reduce_threshold(self, reduce_threshold):
+        r"""Sets the reduce_threshold of this UpdateAutoScalingPolicyRequestBody.
+
+        **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **约束限制**：  不涉及。  **取值范围**：  10-30。  **默认取值**：  不涉及。
+
+        :param reduce_threshold: The reduce_threshold of this UpdateAutoScalingPolicyRequestBody.
+        :type reduce_threshold: int
+        """
+        self._reduce_threshold = reduce_threshold
 
     @property
     def max_read_only_count(self):

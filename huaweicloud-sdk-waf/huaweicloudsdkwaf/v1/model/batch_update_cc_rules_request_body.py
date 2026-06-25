@@ -30,7 +30,9 @@ class BatchUpdateCcRulesRequestBody:
         'domain_aggregation': 'bool',
         'region_aggregation': 'bool',
         'description': 'str',
-        'policy_rule_ids': 'list[BatchUpdateCcRulesRequestBodyPolicyRuleIds]'
+        'policy_rule_ids': 'list[BatchUpdateCcRulesRequestBodyPolicyRuleIds]',
+        'priority': 'int',
+        'cc_priority': 'int'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class BatchUpdateCcRulesRequestBody:
         'domain_aggregation': 'domain_aggregation',
         'region_aggregation': 'region_aggregation',
         'description': 'description',
-        'policy_rule_ids': 'policy_rule_ids'
+        'policy_rule_ids': 'policy_rule_ids',
+        'priority': 'priority',
+        'cc_priority': 'cc_priority'
     }
 
-    def __init__(self, name=None, mode=None, url=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, policy_rule_ids=None):
+    def __init__(self, name=None, mode=None, url=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, policy_rule_ids=None, priority=None, cc_priority=None):
         r"""BatchUpdateCcRulesRequestBody
 
         The model defined in huaweicloud sdk
@@ -89,6 +93,10 @@ class BatchUpdateCcRulesRequestBody:
         :type description: str
         :param policy_rule_ids: **参数解释：** 策略和规则id数组，关联防护策略与对应的规则集合 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateCcRulesRequestBodyPolicyRuleIds`]
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+        :type priority: int
+        :param cc_priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+        :type cc_priority: int
         """
         
         
@@ -109,6 +117,8 @@ class BatchUpdateCcRulesRequestBody:
         self._region_aggregation = None
         self._description = None
         self._policy_rule_ids = None
+        self._priority = None
+        self._cc_priority = None
         self.discriminator = None
 
         if name is not None:
@@ -136,6 +146,10 @@ class BatchUpdateCcRulesRequestBody:
         if description is not None:
             self.description = description
         self.policy_rule_ids = policy_rule_ids
+        if priority is not None:
+            self.priority = priority
+        if cc_priority is not None:
+            self.cc_priority = cc_priority
 
     @property
     def name(self):
@@ -480,6 +494,50 @@ class BatchUpdateCcRulesRequestBody:
         :type policy_rule_ids: list[:class:`huaweicloudsdkwaf.v1.BatchUpdateCcRulesRequestBodyPolicyRuleIds`]
         """
         self._policy_rule_ids = policy_rule_ids
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this BatchUpdateCcRulesRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :return: The priority of this BatchUpdateCcRulesRequestBody.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this BatchUpdateCcRulesRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :param priority: The priority of this BatchUpdateCcRulesRequestBody.
+        :type priority: int
+        """
+        self._priority = priority
+
+    @property
+    def cc_priority(self):
+        r"""Gets the cc_priority of this BatchUpdateCcRulesRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :return: The cc_priority of this BatchUpdateCcRulesRequestBody.
+        :rtype: int
+        """
+        return self._cc_priority
+
+    @cc_priority.setter
+    def cc_priority(self, cc_priority):
+        r"""Sets the cc_priority of this BatchUpdateCcRulesRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :param cc_priority: The cc_priority of this BatchUpdateCcRulesRequestBody.
+        :type cc_priority: int
+        """
+        self._cc_priority = cc_priority
 
     def to_dict(self):
         result = {}

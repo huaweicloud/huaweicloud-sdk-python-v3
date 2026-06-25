@@ -39,7 +39,9 @@ class CreateCcRuleResponse(SdkResponse):
         'unaggregation': 'bool',
         'aging_time': 'int',
         'producer': 'int',
-        'timestamp': 'int'
+        'timestamp': 'int',
+        'priority': 'int',
+        'cc_priority': 'int'
     }
 
     attribute_map = {
@@ -66,10 +68,12 @@ class CreateCcRuleResponse(SdkResponse):
         'unaggregation': 'unaggregation',
         'aging_time': 'aging_time',
         'producer': 'producer',
-        'timestamp': 'timestamp'
+        'timestamp': 'timestamp',
+        'priority': 'priority',
+        'cc_priority': 'cc_priority'
     }
 
-    def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
+    def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None, priority=None, cc_priority=None):
         r"""CreateCcRuleResponse
 
         The model defined in huaweicloud sdk
@@ -122,6 +126,10 @@ class CreateCcRuleResponse(SdkResponse):
         :type producer: int
         :param timestamp: 创建规则时间戳
         :type timestamp: int
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+        :type priority: int
+        :param cc_priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+        :type cc_priority: int
         """
         
         super().__init__()
@@ -150,6 +158,8 @@ class CreateCcRuleResponse(SdkResponse):
         self._aging_time = None
         self._producer = None
         self._timestamp = None
+        self._priority = None
+        self._cc_priority = None
         self.discriminator = None
 
         if name is not None:
@@ -200,6 +210,10 @@ class CreateCcRuleResponse(SdkResponse):
             self.producer = producer
         if timestamp is not None:
             self.timestamp = timestamp
+        if priority is not None:
+            self.priority = priority
+        if cc_priority is not None:
+            self.cc_priority = cc_priority
 
     @property
     def name(self):
@@ -720,6 +734,50 @@ class CreateCcRuleResponse(SdkResponse):
         :type timestamp: int
         """
         self._timestamp = timestamp
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this CreateCcRuleResponse.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :return: The priority of this CreateCcRuleResponse.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this CreateCcRuleResponse.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :param priority: The priority of this CreateCcRuleResponse.
+        :type priority: int
+        """
+        self._priority = priority
+
+    @property
+    def cc_priority(self):
+        r"""Gets the cc_priority of this CreateCcRuleResponse.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :return: The cc_priority of this CreateCcRuleResponse.
+        :rtype: int
+        """
+        return self._cc_priority
+
+    @cc_priority.setter
+    def cc_priority(self, cc_priority):
+        r"""Sets the cc_priority of this CreateCcRuleResponse.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :param cc_priority: The cc_priority of this CreateCcRuleResponse.
+        :type cc_priority: int
+        """
+        self._cc_priority = cc_priority
 
     def to_dict(self):
         import warnings

@@ -36,7 +36,8 @@ class EnclaveOptions:
         self._enabled = None
         self.discriminator = None
 
-        self.enabled = enabled
+        if enabled is not None:
+            self.enabled = enabled
 
     @property
     def enabled(self):

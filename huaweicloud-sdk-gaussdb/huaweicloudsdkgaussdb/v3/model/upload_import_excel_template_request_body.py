@@ -19,6 +19,7 @@ class UploadImportExcelTemplateRequestBody:
         'file': 'file',
         'is_instance_level': 'str',
         'selected_dbs': 'str',
+        'database_scope': 'str',
         'is_support_regexp': 'str'
     }
 
@@ -27,10 +28,11 @@ class UploadImportExcelTemplateRequestBody:
         'file': 'file',
         'is_instance_level': 'is_instance_level',
         'selected_dbs': 'selected_dbs',
+        'database_scope': 'database_scope',
         'is_support_regexp': 'is_support_regexp'
     }
 
-    def __init__(self, template_type=None, file=None, is_instance_level=None, selected_dbs=None, is_support_regexp=None):
+    def __init__(self, template_type=None, file=None, is_instance_level=None, selected_dbs=None, database_scope=None, is_support_regexp=None):
         r"""UploadImportExcelTemplateRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UploadImportExcelTemplateRequestBody:
         :type is_instance_level: str
         :param selected_dbs: **参数解释**：  用户选中的数据库名，用英文\&quot;,\&quot;隔开。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
         :type selected_dbs: str
+        :param database_scope: **参数解释**：  数据库同步范围。  **约束限制**：  必须选择实例级同步。  **取值范围**：  - true：所有库。 - false：部分库。  **默认取值**：  部分库。
+        :type database_scope: str
         :param is_support_regexp: **参数解释**：  是否支持标配符。  **约束限制**：  不涉及。  **取值范围**：  - true: 支持标配符。 - false: 不支持标配符。  **默认取值**：  不涉及。
         :type is_support_regexp: str
         """
@@ -53,6 +57,7 @@ class UploadImportExcelTemplateRequestBody:
         self._file = None
         self._is_instance_level = None
         self._selected_dbs = None
+        self._database_scope = None
         self._is_support_regexp = None
         self.discriminator = None
 
@@ -61,6 +66,8 @@ class UploadImportExcelTemplateRequestBody:
         if is_instance_level is not None:
             self.is_instance_level = is_instance_level
         self.selected_dbs = selected_dbs
+        if database_scope is not None:
+            self.database_scope = database_scope
         if is_support_regexp is not None:
             self.is_support_regexp = is_support_regexp
 
@@ -151,6 +158,28 @@ class UploadImportExcelTemplateRequestBody:
         :type selected_dbs: str
         """
         self._selected_dbs = selected_dbs
+
+    @property
+    def database_scope(self):
+        r"""Gets the database_scope of this UploadImportExcelTemplateRequestBody.
+
+        **参数解释**：  数据库同步范围。  **约束限制**：  必须选择实例级同步。  **取值范围**：  - true：所有库。 - false：部分库。  **默认取值**：  部分库。
+
+        :return: The database_scope of this UploadImportExcelTemplateRequestBody.
+        :rtype: str
+        """
+        return self._database_scope
+
+    @database_scope.setter
+    def database_scope(self, database_scope):
+        r"""Sets the database_scope of this UploadImportExcelTemplateRequestBody.
+
+        **参数解释**：  数据库同步范围。  **约束限制**：  必须选择实例级同步。  **取值范围**：  - true：所有库。 - false：部分库。  **默认取值**：  部分库。
+
+        :param database_scope: The database_scope of this UploadImportExcelTemplateRequestBody.
+        :type database_scope: str
+        """
+        self._database_scope = database_scope
 
     @property
     def is_support_regexp(self):

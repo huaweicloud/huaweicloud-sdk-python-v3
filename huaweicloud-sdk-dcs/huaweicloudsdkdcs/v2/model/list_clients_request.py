@@ -67,7 +67,8 @@ class ListClientsRequest:
         self.discriminator = None
 
         self.instance_id = instance_id
-        self.node_id = node_id
+        if node_id is not None:
+            self.node_id = node_id
         if offset is not None:
             self.offset = offset
         if limit is not None:

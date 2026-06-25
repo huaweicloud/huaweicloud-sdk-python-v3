@@ -17,16 +17,18 @@ class MysqlCreateReadonlyNodeRequest:
     openapi_types = {
         'priorities': 'list[int]',
         'is_auto_pay': 'str',
+        'charge_mode': 'str',
         'availability_zones': 'list[str]'
     }
 
     attribute_map = {
         'priorities': 'priorities',
         'is_auto_pay': 'is_auto_pay',
+        'charge_mode': 'charge_mode',
         'availability_zones': 'availability_zones'
     }
 
-    def __init__(self, priorities=None, is_auto_pay=None, availability_zones=None):
+    def __init__(self, priorities=None, is_auto_pay=None, charge_mode=None, availability_zones=None):
         r"""MysqlCreateReadonlyNodeRequest
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class MysqlCreateReadonlyNodeRequest:
         :type priorities: list[int]
         :param is_auto_pay: 创建包周期时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。  - true，为自动支付，默认该方式。 - false，为手动支付。
         :type is_auto_pay: str
+        :param charge_mode: **参数解释**：     计费模式。  **约束限制**：  仅当实例为包年/包月实例时生效。  **取值范围**：  - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。  **默认取值**：  prePaid。
+        :type charge_mode: str
         :param availability_zones: 可用区。可指定可用区创建只读节点，不传该参数时默认为自动选择可用区。  调用[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)获取，其中az_status中的key为availability_zone。  注：指定可用区创建只读节点，可能由于资源不足创建失败。
         :type availability_zones: list[str]
         """
@@ -43,12 +47,15 @@ class MysqlCreateReadonlyNodeRequest:
 
         self._priorities = None
         self._is_auto_pay = None
+        self._charge_mode = None
         self._availability_zones = None
         self.discriminator = None
 
         self.priorities = priorities
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if charge_mode is not None:
+            self.charge_mode = charge_mode
         if availability_zones is not None:
             self.availability_zones = availability_zones
 
@@ -95,6 +102,28 @@ class MysqlCreateReadonlyNodeRequest:
         :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def charge_mode(self):
+        r"""Gets the charge_mode of this MysqlCreateReadonlyNodeRequest.
+
+        **参数解释**：     计费模式。  **约束限制**：  仅当实例为包年/包月实例时生效。  **取值范围**：  - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。  **默认取值**：  prePaid。
+
+        :return: The charge_mode of this MysqlCreateReadonlyNodeRequest.
+        :rtype: str
+        """
+        return self._charge_mode
+
+    @charge_mode.setter
+    def charge_mode(self, charge_mode):
+        r"""Sets the charge_mode of this MysqlCreateReadonlyNodeRequest.
+
+        **参数解释**：     计费模式。  **约束限制**：  仅当实例为包年/包月实例时生效。  **取值范围**：  - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。  **默认取值**：  prePaid。
+
+        :param charge_mode: The charge_mode of this MysqlCreateReadonlyNodeRequest.
+        :type charge_mode: str
+        """
+        self._charge_mode = charge_mode
 
     @property
     def availability_zones(self):

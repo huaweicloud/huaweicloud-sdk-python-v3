@@ -17625,6 +17625,8 @@ class GaussDBAsyncClient(Client):
             form_params['is_instance_level'] = local_var_params['is_instance_level']
         if 'selected_dbs' in local_var_params:
             form_params['selected_dbs'] = local_var_params['selected_dbs']
+        if 'database_scope' in local_var_params:
+            form_params['database_scope'] = local_var_params['database_scope']
         if 'is_support_regexp' in local_var_params:
             form_params['is_support_regexp'] = local_var_params['is_support_regexp']
 

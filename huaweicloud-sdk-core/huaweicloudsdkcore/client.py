@@ -652,6 +652,8 @@ class Client:
                 class_attr = re.sub(r'\W+', '_', data).upper()
                 if hasattr(klass, class_attr):
                     return getattr(klass, class_attr)
+                if class_attr.isdecimal() and hasattr(klass, ("_%s" % class_attr)):
+                    return getattr(klass, ("_%s" % class_attr))
                 if hasattr(klass, "IS_ENUM"):
                     warnings.warn(f"{klass.__name__} value is not in allowable enum values",
                                   category=warning.TypeConversionWarning)

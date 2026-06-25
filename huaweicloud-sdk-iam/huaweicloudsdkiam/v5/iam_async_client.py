@@ -1950,6 +1950,550 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def add_client_id_to_oidc_provider_v5_async(self, request):
+        r"""向指定OIDC提供商添加客户端 ID
+
+        该接口可以用于向指定 IAM OIDC 提供商已注册的客户端 ID 列表中添加一个新的客户端 ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddClientIDToOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.AddClientIDToOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.AddClientIDToOIDCProviderV5Response`
+        """
+        http_info = self._add_client_id_to_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_client_id_to_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._add_client_id_to_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_client_id_to_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/oidc-providers/{provider_id}/add-client-id",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddClientIDToOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_oidc_provider_v5_async(self, request):
+        r"""创建OIDC提供商
+
+        该接口可以用于创建一个支持 OpenID Connect (OIDC) 的身份提供商 (IdP)。
+        您通过此操作创建的 OIDC 提供商可用作信任委托的信任策略中的主体 (Principal)，用于在华为云和 OIDC 提供商之间建立信任关系。
+        您可以直接使用您的身份提供商去创建新的信任委托，要了解更多信息，请参阅 IAM 用户指南中的**身份提供商**章节。
+        
+        当您创建 IAM OIDC 提供商时，您需要指定以下内容：
+        - 要信任的 OIDC 身份提供商的 URL。
+        - 客户端 ID 列表（也称为受众 Audiences），用于识别允许使用该 OIDC 提供商进行身份验证的应用程序。
+        - 附加到指定 IAM OIDC 提供商的标签列表。
+        - OIDC 身份提供商使用的一个或多个服务器证书的指纹列表。
+        
+        **注意：**
+        IAM 使用我们的信任根证书颁发机构 (CAs) 库来验证 JSON Web Key Set (JWKS) 端点的 TLS 证书，从而确保与 OIDC 身份提供商 (IdPs) 的通信安全。如果您的 OIDC IdP 依赖于不是由这些受信任 CA 之一签名的证书，那么我们才会使用 IdP 配置中设置的指纹来确保通信安全。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.CreateOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.CreateOIDCProviderV5Response`
+        """
+        http_info = self._create_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._create_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/oidc-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_oidc_provider_v5_async(self, request):
+        r"""删除指定OIDC提供商
+
+        该接口可以用于删除 IAM 中的一个 OpenID Connect (OIDC) 的身份提供商 (IdP)。IAM 在删除 OIDC 提供商时不会更新在信任策略中引用该提供商作为主体的任何信任委托，删除之后任何尝试切换代入引用已删除提供商的信任委托的操作都将失败。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.DeleteOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.DeleteOIDCProviderV5Response`
+        """
+        http_info = self._delete_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._delete_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/oidc-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_oidc_providers_v5_async(self, request):
+        r"""查询所有OIDC提供商
+
+        该接口可以用于查询所有 OpenID Connect (OIDC) 的身份提供商 (IdP) 列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOIDCProvidersV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListOIDCProvidersV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListOIDCProvidersV5Response`
+        """
+        http_info = self._list_oidc_providers_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_oidc_providers_v5_async_invoker(self, request):
+        http_info = self._list_oidc_providers_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_oidc_providers_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/oidc-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOIDCProvidersV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_client_id_from_oidc_provider_v5_async(self, request):
+        r"""移除指定OIDC提供商中指定的客户端ID
+
+        该接口可以用于移除指定 IAM OIDC 提供商客户端 ID 列表中指定的客户端 ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveClientIDFromOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.RemoveClientIDFromOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.RemoveClientIDFromOIDCProviderV5Response`
+        """
+        http_info = self._remove_client_id_from_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_client_id_from_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._remove_client_id_from_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_client_id_from_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/oidc-providers/{provider_id}/remove-client-id",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveClientIDFromOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_oidc_provider_v5_async(self, request):
+        r"""查询指定OIDC提供商
+
+        该接口可以用于查询 OpenID Connect (OIDC) 的身份提供商 (IdP) 详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.ShowOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ShowOIDCProviderV5Response`
+        """
+        http_info = self._show_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._show_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/oidc-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_oidc_provider_thumbprint_v5_async(self, request):
+        r"""替换OIDC提供商指纹列表
+
+        该接口可以用一个新的指纹列表替换与 OIDC 提供商关联的现有指纹列表。通常，您仅在身份提供商证书更改时才需要更新指纹，这种情况一般很少发生。但是，如果提供商的证书发生了变化，而您又没有更新指纹，那么任何尝试切换代入与该 OIDC 提供商相关的 信任委托都将失败。
+        
+        **注意：**
+        IAM 使用自己的信任根证书颁发机构 (CAs) 库来验证 JSON Web Key Set (JWKS) 端点的 TLS 证书，从而确保与 OIDC 身份提供商 (IdPs) 的通信安全。如果您的 OIDC IdP 依赖于不是由这些受信任 CA 之一签名的证书，那么我们才会使用 IdP 配置中设置的指纹来确保通信安全。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOIDCProviderThumbprintV5
+        :type request: :class:`huaweicloudsdkiam.v5.UpdateOIDCProviderThumbprintV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.UpdateOIDCProviderThumbprintV5Response`
+        """
+        http_info = self._update_oidc_provider_thumbprint_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_oidc_provider_thumbprint_v5_async_invoker(self, request):
+        http_info = self._update_oidc_provider_thumbprint_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_oidc_provider_thumbprint_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/oidc-providers/{provider_id}/thumbprint",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOIDCProviderThumbprintV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_oidc_provider_v5_async(self, request):
+        r"""修改指定OIDC提供商描述
+
+        该接口可以用于修改 IAM 中的一个 OpenID Connect (OIDC) 的身份提供商 (IdP)的描述字段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOIDCProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.UpdateOIDCProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.UpdateOIDCProviderV5Response`
+        """
+        http_info = self._update_oidc_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_oidc_provider_v5_async_invoker(self, request):
+        http_info = self._update_oidc_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_oidc_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/oidc-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOIDCProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_policy_v5_async(self, request):
         r"""创建自定义身份策略
 
@@ -3432,6 +3976,339 @@ class IamAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_saml_provider_v5_async(self, request):
+        r"""创建SAML提供商
+
+        该接口可以用于创建一个支持 SAML 2.0 的身份提供商 (IdP)。
+        
+        您通过此操作创建的 SAML 提供商可用作信任委托的信任策略中的主体 (Principal)，用于在华为云和 SAML 提供商之间建立信任关系。 该信任策略可以允许使用 SAML IdP 登录的联邦用户切换至该信任委托，您可以创建使用 Web 单点登录 (SSO) 到 华为云控制台的 IAM 信任委托，或者支持对华为云进行 API 访问的 IAM 信任委托。
+        
+        当您创建 SAML 提供商时，您需要上传从 IdP 获得的 SAML 元数据文档。该文档包含颁发者的名称、过期信息以及可用于验证 IdP 发送的 SAML 身份验证响应（断言）的密钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSAMLProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.CreateSAMLProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.CreateSAMLProviderV5Response`
+        """
+        http_info = self._create_saml_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_saml_provider_v5_async_invoker(self, request):
+        http_info = self._create_saml_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_saml_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/saml-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSAMLProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_saml_provider_v5_async(self, request):
+        r"""删除指定SAML提供商
+
+        该接口可以用于删除 IAM 中的一个 SAML 2.0 的身份提供商 (IdP)。IAM 在删除 SAML 提供商时不会更新在信任策略中引用该提供商作为主体的任何信任委托，删除之后任何尝试切换代入引用已删除提供商的信任委托的操作都将失败。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSAMLProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.DeleteSAMLProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.DeleteSAMLProviderV5Response`
+        """
+        http_info = self._delete_saml_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_saml_provider_v5_async_invoker(self, request):
+        http_info = self._delete_saml_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_saml_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/saml-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSAMLProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_saml_providers_v5_async(self, request):
+        r"""查询所有SAML提供商
+
+        该接口可以用于查询所有 SAML 2.0 的身份提供商 (IdP) 列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSAMLProvidersV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListSAMLProvidersV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListSAMLProvidersV5Response`
+        """
+        http_info = self._list_saml_providers_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_saml_providers_v5_async_invoker(self, request):
+        http_info = self._list_saml_providers_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_saml_providers_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/saml-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSAMLProvidersV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_saml_provider_v5_async(self, request):
+        r"""查询指定SAML提供商
+
+        该接口可以用于查询 SAML 2.0 的身份提供商 (IdP) 详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSAMLProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.ShowSAMLProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ShowSAMLProviderV5Response`
+        """
+        http_info = self._show_saml_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_saml_provider_v5_async_invoker(self, request):
+        http_info = self._show_saml_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_saml_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/saml-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSAMLProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_saml_provider_v5_async(self, request):
+        r"""更新指定SAML提供商
+
+        该接口可以用于更新现有 SAML 提供商的元数据文档、SAML 加密设置以及私钥。要轮换私钥，请在单独的请求中先添加新的私钥，然后移除旧的私钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSAMLProviderV5
+        :type request: :class:`huaweicloudsdkiam.v5.UpdateSAMLProviderV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.UpdateSAMLProviderV5Response`
+        """
+        http_info = self._update_saml_provider_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_saml_provider_v5_async_invoker(self, request):
+        http_info = self._update_saml_provider_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_saml_provider_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/saml-providers/{provider_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSAMLProviderV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'provider_id' in local_var_params:
+            path_params['provider_id'] = local_var_params['provider_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

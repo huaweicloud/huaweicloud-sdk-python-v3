@@ -35,7 +35,7 @@ class OrderLineItemV3:
 
         :param order_line_item_ids: 可使用相同折扣的订单项合并后的订单项ID列表。 相同产品、相同规格（对于线性产品）、相同最终价格（例如，严选产品改价）的订单项将进行合并。
         :type order_line_item_ids: list[str]
-        :param discount_mode: 订单可用折扣的模式 。 0：折扣1：一口价2：满减
+        :param discount_mode: 订单可用折扣的模式。 0：折扣 1：一口价 2：满减
         :type discount_mode: int
         :param discount_amount: 订单可用的折扣金额（即减免金额）。
         :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
@@ -82,7 +82,7 @@ class OrderLineItemV3:
     def discount_mode(self):
         r"""Gets the discount_mode of this OrderLineItemV3.
 
-        订单可用折扣的模式 。 0：折扣1：一口价2：满减
+        订单可用折扣的模式。 0：折扣 1：一口价 2：满减
 
         :return: The discount_mode of this OrderLineItemV3.
         :rtype: int
@@ -93,7 +93,7 @@ class OrderLineItemV3:
     def discount_mode(self, discount_mode):
         r"""Sets the discount_mode of this OrderLineItemV3.
 
-        订单可用折扣的模式 。 0：折扣1：一口价2：满减
+        订单可用折扣的模式。 0：折扣 1：一口价 2：满减
 
         :param discount_mode: The discount_mode of this OrderLineItemV3.
         :type discount_mode: int

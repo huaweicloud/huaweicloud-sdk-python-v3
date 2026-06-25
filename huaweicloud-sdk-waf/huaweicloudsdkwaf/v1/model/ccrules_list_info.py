@@ -17,6 +17,7 @@ class CcrulesListInfo:
     openapi_types = {
         'policyname': 'str',
         'priority': 'int',
+        'cc_priority': 'int',
         'name': 'str',
         'id': 'str',
         'policyid': 'str',
@@ -46,6 +47,7 @@ class CcrulesListInfo:
     attribute_map = {
         'policyname': 'policyname',
         'priority': 'priority',
+        'cc_priority': 'cc_priority',
         'name': 'name',
         'id': 'id',
         'policyid': 'policyid',
@@ -72,15 +74,17 @@ class CcrulesListInfo:
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, policyname=None, priority=None, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
+    def __init__(self, policyname=None, priority=None, cc_priority=None, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
         r"""CcrulesListInfo
 
         The model defined in huaweicloud sdk
 
         :param policyname: **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyname: str
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
         :type priority: int
+        :param cc_priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+        :type cc_priority: int
         :param name: 规则名称
         :type name: str
         :param id: Rule ID.
@@ -135,6 +139,7 @@ class CcrulesListInfo:
 
         self._policyname = None
         self._priority = None
+        self._cc_priority = None
         self._name = None
         self._id = None
         self._policyid = None
@@ -165,6 +170,8 @@ class CcrulesListInfo:
             self.policyname = policyname
         if priority is not None:
             self.priority = priority
+        if cc_priority is not None:
+            self.cc_priority = cc_priority
         if name is not None:
             self.name = name
         if id is not None:
@@ -240,7 +247,7 @@ class CcrulesListInfo:
     def priority(self):
         r"""Gets the priority of this CcrulesListInfo.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
 
         :return: The priority of this CcrulesListInfo.
         :rtype: int
@@ -251,12 +258,34 @@ class CcrulesListInfo:
     def priority(self, priority):
         r"""Sets the priority of this CcrulesListInfo.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
 
         :param priority: The priority of this CcrulesListInfo.
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def cc_priority(self):
+        r"""Gets the cc_priority of this CcrulesListInfo.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :return: The cc_priority of this CcrulesListInfo.
+        :rtype: int
+        """
+        return self._cc_priority
+
+    @cc_priority.setter
+    def cc_priority(self, cc_priority):
+        r"""Sets the cc_priority of this CcrulesListInfo.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :param cc_priority: The cc_priority of this CcrulesListInfo.
+        :type cc_priority: int
+        """
+        self._cc_priority = cc_priority
 
     @property
     def name(self):

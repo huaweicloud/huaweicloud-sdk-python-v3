@@ -6372,6 +6372,71 @@ class BssClient(Client):
 
         return http_info
 
+    def update_period_to_on_demand_instantly(self, request):
+        r"""设置包年/包月资源即时转按需
+
+        功能描述：客户在自建平台完成包年/包月资源即时转为按需资源计费
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePeriodToOnDemandInstantly
+        :type request: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandInstantlyRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandInstantlyResponse`
+        """
+        http_info = self._update_period_to_on_demand_instantly_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_period_to_on_demand_instantly_invoker(self, request):
+        http_info = self._update_period_to_on_demand_instantly_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_period_to_on_demand_instantly_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/to-on-demand/instantly",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePeriodToOnDemandInstantlyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def _call_api(self, **kwargs):
         try:
             return self.do_http_request(**kwargs)

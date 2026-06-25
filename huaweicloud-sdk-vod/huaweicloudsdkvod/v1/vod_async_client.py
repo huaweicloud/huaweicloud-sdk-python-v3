@@ -5255,6 +5255,136 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def show_https_config_async(self, request):
+        r"""查询https配置
+
+        查询证书配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHttpsConfig
+        :type request: :class:`huaweicloudsdkvod.v1.ShowHttpsConfigRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ShowHttpsConfigResponse`
+        """
+        http_info = self._show_https_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_https_config_async_invoker(self, request):
+        http_info = self._show_https_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_https_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/domain/https",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHttpsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_https_config_async(self, request):
+        r"""配置https
+
+        点播提供给域名配置https证书的接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHttpsConfig
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateHttpsConfigRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateHttpsConfigResponse`
+        """
+        http_info = self._update_https_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_https_config_async_invoker(self, request):
+        http_info = self._update_https_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_https_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/domain/https",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHttpsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_take_over_task_async(self, request):
         r"""查询托管任务
 

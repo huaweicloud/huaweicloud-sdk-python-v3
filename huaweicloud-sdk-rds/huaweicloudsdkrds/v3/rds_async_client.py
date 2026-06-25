@@ -4541,6 +4541,85 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_instance_backup_summary_async(self, request):
+        r"""获取实例备份概览列表
+
+        获取实例备份概览列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceBackupSummary
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstanceBackupSummaryRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstanceBackupSummaryResponse`
+        """
+        http_info = self._list_instance_backup_summary_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_backup_summary_async_invoker(self, request):
+        http_info = self._list_instance_backup_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_backup_summary_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/backups/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceBackupSummaryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'order_rule' in local_var_params:
+            query_params.append(('order_rule', local_var_params['order_rule']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_diagnosis_async(self, request):
         r"""获取诊断后的实例数量
 
@@ -7093,6 +7172,71 @@ class RdsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sparse_backup_policy_async(self, request):
+        r"""查询稀疏备份策略
+
+        查询稀疏备份策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSparseBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ListSparseBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSparseBackupPolicyResponse`
+        """
+        http_info = self._list_sparse_backup_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sparse_backup_policy_async_invoker(self, request):
+        http_info = self._list_sparse_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sparse_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/sparse-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSparseBackupPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -9848,6 +9992,73 @@ class RdsAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_backup_usage_async(self, request):
+        r"""查询备份用量总览
+
+        查询备份用量总览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBackupUsage
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupUsageRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupUsageResponse`
+        """
+        http_info = self._show_backup_usage_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_backup_usage_async_invoker(self, request):
+        http_info = self._show_backup_usage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_backup_usage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/backup-usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupUsageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -13114,6 +13325,73 @@ class RdsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sparse_backup_policy_async(self, request):
+        r"""修改实例稀疏备份策略
+
+        修改实例稀疏备份策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSparseBackupPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateSparseBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateSparseBackupPolicyResponse`
+        """
+        http_info = self._update_sparse_backup_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sparse_backup_policy_async_invoker(self, request):
+        http_info = self._update_sparse_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sparse_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/sparse-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSparseBackupPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

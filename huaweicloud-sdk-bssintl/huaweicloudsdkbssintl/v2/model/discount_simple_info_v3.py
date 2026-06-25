@@ -31,7 +31,7 @@ class DiscountSimpleInfoV3:
 
         :param id: 折扣ID。
         :type id: str
-        :param type: 折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        :param type: 折扣类型。取值为 0：促销折扣 2：商务优惠 3：合作伙伴授予折扣 609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
         :type type: int
         """
         
@@ -70,7 +70,7 @@ class DiscountSimpleInfoV3:
     def type(self):
         r"""Gets the type of this DiscountSimpleInfoV3.
 
-        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        折扣类型。取值为 0：促销折扣 2：商务优惠 3：合作伙伴授予折扣 609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
         :return: The type of this DiscountSimpleInfoV3.
         :rtype: int
@@ -81,7 +81,7 @@ class DiscountSimpleInfoV3:
     def type(self, type):
         r"""Sets the type of this DiscountSimpleInfoV3.
 
-        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        折扣类型。取值为 0：促销折扣 2：商务优惠 3：合作伙伴授予折扣 609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
         :param type: The type of this DiscountSimpleInfoV3.
         :type type: int

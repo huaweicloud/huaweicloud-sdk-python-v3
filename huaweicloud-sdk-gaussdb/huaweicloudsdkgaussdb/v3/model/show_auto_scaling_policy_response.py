@@ -25,6 +25,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         'enlarge_threshold': 'int',
         'max_flavor': 'str',
         'reduce_enabled': 'bool',
+        'reduce_threshold': 'int',
         'min_flavor': 'str',
         'silence_start_at': 'str',
         'scaling_strategy': 'ScalingStrategyInfo',
@@ -43,6 +44,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         'enlarge_threshold': 'enlarge_threshold',
         'max_flavor': 'max_flavor',
         'reduce_enabled': 'reduce_enabled',
+        'reduce_threshold': 'reduce_threshold',
         'min_flavor': 'min_flavor',
         'silence_start_at': 'silence_start_at',
         'scaling_strategy': 'scaling_strategy',
@@ -51,7 +53,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         'read_only_weight': 'read_only_weight'
     }
 
-    def __init__(self, id=None, instance_id=None, instance_name=None, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, min_flavor=None, silence_start_at=None, scaling_strategy=None, max_read_only_count=None, min_read_only_count=None, read_only_weight=None):
+    def __init__(self, id=None, instance_id=None, instance_name=None, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, reduce_threshold=None, min_flavor=None, silence_start_at=None, scaling_strategy=None, max_read_only_count=None, min_read_only_count=None, read_only_weight=None):
         r"""ShowAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         :type max_flavor: str
         :param reduce_enabled: 自动回缩开关状态。  取值：  - true：已开启 - false：已关闭
         :type reduce_enabled: bool
+        :param reduce_threshold: **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **取值范围**：  10-30。 
+        :type reduce_threshold: int
         :param min_flavor: 缩容规格下限。
         :type min_flavor: str
         :param silence_start_at: 静默期开始时间（上一次变更结束时间）。  格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -99,6 +103,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         self._enlarge_threshold = None
         self._max_flavor = None
         self._reduce_enabled = None
+        self._reduce_threshold = None
         self._min_flavor = None
         self._silence_start_at = None
         self._scaling_strategy = None
@@ -125,6 +130,8 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
             self.max_flavor = max_flavor
         if reduce_enabled is not None:
             self.reduce_enabled = reduce_enabled
+        if reduce_threshold is not None:
+            self.reduce_threshold = reduce_threshold
         if min_flavor is not None:
             self.min_flavor = min_flavor
         if silence_start_at is not None:
@@ -335,6 +342,28 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
         :type reduce_enabled: bool
         """
         self._reduce_enabled = reduce_enabled
+
+    @property
+    def reduce_threshold(self):
+        r"""Gets the reduce_threshold of this ShowAutoScalingPolicyResponse.
+
+        **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **取值范围**：  10-30。 
+
+        :return: The reduce_threshold of this ShowAutoScalingPolicyResponse.
+        :rtype: int
+        """
+        return self._reduce_threshold
+
+    @reduce_threshold.setter
+    def reduce_threshold(self, reduce_threshold):
+        r"""Sets the reduce_threshold of this ShowAutoScalingPolicyResponse.
+
+        **参数解释**：  自动回缩的CPU平均使用率阈值（百分比数值）。  **取值范围**：  10-30。 
+
+        :param reduce_threshold: The reduce_threshold of this ShowAutoScalingPolicyResponse.
+        :type reduce_threshold: int
+        """
+        self._reduce_threshold = reduce_threshold
 
     @property
     def min_flavor(self):

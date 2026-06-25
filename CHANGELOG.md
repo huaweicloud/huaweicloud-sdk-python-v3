@@ -1,3 +1,165 @@
+# 3.1.201 2026-06-25
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `UpdatePeriodToOnDemandInstantly`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchAddServerNics**
+    - changes of request param
+      - `+ nics.efi_enable`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.nics.efi_enable`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateGaussMySqlReadonlyNode**
+    - changes of request param
+      - `+ charge_mode`
+  - **ListStarrocksInstanceInfo**
+    - changes of response param
+      - `+ instances.users_sync_switch_on`
+  - **ListImmediateJobs**
+    - changes of response param
+      - `+ action_names`
+      - `- jobs.action_names`
+  - **ShowAutoScalingPolicy**
+    - changes of response param
+      - `+ reduce_threshold`
+  - **UpdateAutoScalingPolicy**
+    - changes of request param
+      - `+ reduce_threshold`
+  - **UploadImportExcelTemplate**
+    - changes of request param
+      - `+ database_scope`
+  - **ShowGaussMySqlBackupList**
+    - changes of response param
+      - `* backups.size: int64 -> double`
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowFinding**
+    - changes of response param
+      - `+ finding.finding_details.unused_permission_details.actions.role_sources`
+      - `+ finding.finding_details.unused_permission_details.actions.identity_policy_sources`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowBackupUsage`, `ListInstanceBackupSummary`, `ListSparseBackupPolicy`, `UpdateSparseBackupPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGlobalFeatureGates**
+    - changes of response param
+      - `+ enableIntranetAccessSwitch`
+  - **ListInstanceReplicationPolicyExecSubTasks**
+    - changes of response param
+      - `* sub_tasks.job_id: int32 -> string`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowHttpsConfig`, `UpdateHttpsConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCcRule**
+    - changes of response param
+      - `+ cc_priority`
+      - `+ priority`
+  - **UpdateCcRule**
+    - changes of request param
+      - `+ priority`
+      - `+ cc_priority`
+    - changes of response param
+      - `+ cc_priority`
+      - `+ priority`
+  - **DeleteCcRule**
+    - changes of response param
+      - `+ cc_priority`
+      - `+ priority`
+  - **BatchUpdateCcRules**
+    - changes of request param
+      - `+ priority`
+      - `+ cc_priority`
+  - **CreateCcRule**
+    - changes of request param
+      - `+ priority`
+      - `+ cc_priority`
+    - changes of response param
+      - `+ cc_priority`
+      - `+ priority`
+  - **ListCcRules**
+    - changes of response param
+      - `+ items.cc_priority`
+  - **BatchCreateCcRule**
+    - changes of request param
+      - `+ priority`
+      - `+ cc_priority`
+    - changes of response param
+      - `+ cc_priority`
+      - `+ priority`
+  - **ListCcPolicyRules**
+    - changes of response param
+      - `+ items.cc_priority`
+
 # 3.1.200 2026-06-18
 
 ### HuaweiCloud SDK CBH

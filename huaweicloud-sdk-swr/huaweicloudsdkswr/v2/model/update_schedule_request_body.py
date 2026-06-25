@@ -42,7 +42,8 @@ class UpdateScheduleRequestBody:
         self.discriminator = None
 
         self.schedule = schedule
-        self.parameters = parameters
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def schedule(self):

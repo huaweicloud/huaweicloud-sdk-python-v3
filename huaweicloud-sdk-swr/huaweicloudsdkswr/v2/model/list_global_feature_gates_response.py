@@ -18,16 +18,18 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
     openapi_types = {
         'enable_user_def_obs': 'bool',
         'enable_enterprise': 'bool',
-        'cer_available': 'bool'
+        'cer_available': 'bool',
+        'enable_intranet_access_switch': 'bool'
     }
 
     attribute_map = {
         'enable_user_def_obs': 'enableUserDefObs',
         'enable_enterprise': 'enableEnterprise',
-        'cer_available': 'cerAvailable'
+        'cer_available': 'cerAvailable',
+        'enable_intranet_access_switch': 'enableIntranetAccessSwitch'
     }
 
-    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None):
+    def __init__(self, enable_user_def_obs=None, enable_enterprise=None, cer_available=None, enable_intranet_access_switch=None):
         r"""ListGlobalFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type enable_enterprise: bool
         :param cer_available: 是否支持SWR企业版功能
         :type cer_available: bool
+        :param enable_intranet_access_switch: 是否展示创建内网访问的开关按钮
+        :type enable_intranet_access_switch: bool
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         self._enable_user_def_obs = None
         self._enable_enterprise = None
         self._cer_available = None
+        self._enable_intranet_access_switch = None
         self.discriminator = None
 
         if enable_user_def_obs is not None:
@@ -53,6 +58,8 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
             self.enable_enterprise = enable_enterprise
         if cer_available is not None:
             self.cer_available = cer_available
+        if enable_intranet_access_switch is not None:
+            self.enable_intranet_access_switch = enable_intranet_access_switch
 
     @property
     def enable_user_def_obs(self):
@@ -119,6 +126,28 @@ class ListGlobalFeatureGatesResponse(SdkResponse):
         :type cer_available: bool
         """
         self._cer_available = cer_available
+
+    @property
+    def enable_intranet_access_switch(self):
+        r"""Gets the enable_intranet_access_switch of this ListGlobalFeatureGatesResponse.
+
+        是否展示创建内网访问的开关按钮
+
+        :return: The enable_intranet_access_switch of this ListGlobalFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_intranet_access_switch
+
+    @enable_intranet_access_switch.setter
+    def enable_intranet_access_switch(self, enable_intranet_access_switch):
+        r"""Sets the enable_intranet_access_switch of this ListGlobalFeatureGatesResponse.
+
+        是否展示创建内网访问的开关按钮
+
+        :param enable_intranet_access_switch: The enable_intranet_access_switch of this ListGlobalFeatureGatesResponse.
+        :type enable_intranet_access_switch: bool
+        """
+        self._enable_intranet_access_switch = enable_intranet_access_switch
 
     def to_dict(self):
         import warnings

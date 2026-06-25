@@ -27,6 +27,7 @@ from huaweicloudsdkvod.v1.model.check_md5_duplication_request import CheckMd5Dup
 from huaweicloudsdkvod.v1.model.check_md5_duplication_response import CheckMd5DuplicationResponse
 from huaweicloudsdkvod.v1.model.common import Common
 from huaweicloudsdkvod.v1.model.common_info import CommonInfo
+from huaweicloudsdkvod.v1.model.config_cdn_https_req import ConfigCdnHttpsReq
 from huaweicloudsdkvod.v1.model.confirm_asset_upload_req import ConfirmAssetUploadReq
 from huaweicloudsdkvod.v1.model.confirm_asset_upload_request import ConfirmAssetUploadRequest
 from huaweicloudsdkvod.v1.model.confirm_asset_upload_response import ConfirmAssetUploadResponse
@@ -203,6 +204,8 @@ from huaweicloudsdkvod.v1.model.show_asset_temp_authority_request import ShowAss
 from huaweicloudsdkvod.v1.model.show_asset_temp_authority_response import ShowAssetTempAuthorityResponse
 from huaweicloudsdkvod.v1.model.show_cdn_statistics_request import ShowCdnStatisticsRequest
 from huaweicloudsdkvod.v1.model.show_cdn_statistics_response import ShowCdnStatisticsResponse
+from huaweicloudsdkvod.v1.model.show_https_config_request import ShowHttpsConfigRequest
+from huaweicloudsdkvod.v1.model.show_https_config_response import ShowHttpsConfigResponse
 from huaweicloudsdkvod.v1.model.show_object_meta_data_request import ShowObjectMetaDataRequest
 from huaweicloudsdkvod.v1.model.show_object_meta_data_response import ShowObjectMetaDataResponse
 from huaweicloudsdkvod.v1.model.show_preheating_asset_request import ShowPreheatingAssetRequest
@@ -259,6 +262,8 @@ from huaweicloudsdkvod.v1.model.update_category_req import UpdateCategoryReq
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_req import UpdateCoverByThumbnailReq
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_request import UpdateCoverByThumbnailRequest
 from huaweicloudsdkvod.v1.model.update_cover_by_thumbnail_response import UpdateCoverByThumbnailResponse
+from huaweicloudsdkvod.v1.model.update_https_config_request import UpdateHttpsConfigRequest
+from huaweicloudsdkvod.v1.model.update_https_config_response import UpdateHttpsConfigResponse
 from huaweicloudsdkvod.v1.model.update_storage_mode_req import UpdateStorageModeReq
 from huaweicloudsdkvod.v1.model.update_storage_mode_request import UpdateStorageModeRequest
 from huaweicloudsdkvod.v1.model.update_storage_mode_response import UpdateStorageModeResponse

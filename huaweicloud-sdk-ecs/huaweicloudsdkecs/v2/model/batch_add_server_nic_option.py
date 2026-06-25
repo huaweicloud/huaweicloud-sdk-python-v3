@@ -20,7 +20,8 @@ class BatchAddServerNicOption:
         'security_groups': 'list[ServerNicSecurityGroup]',
         'ip_address': 'str',
         'ipv6_enable': 'bool',
-        'ipv6_bandwidth': 'Ipv6Bandwidth'
+        'ipv6_bandwidth': 'Ipv6Bandwidth',
+        'efi_enable': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class BatchAddServerNicOption:
         'security_groups': 'security_groups',
         'ip_address': 'ip_address',
         'ipv6_enable': 'ipv6_enable',
-        'ipv6_bandwidth': 'ipv6_bandwidth'
+        'ipv6_bandwidth': 'ipv6_bandwidth',
+        'efi_enable': 'efi_enable'
     }
 
-    def __init__(self, subnet_id=None, port_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
+    def __init__(self, subnet_id=None, port_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, efi_enable=None):
         r"""BatchAddServerNicOption
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class BatchAddServerNicOption:
         :type ipv6_enable: bool
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
+        :param efi_enable: 使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+        :type efi_enable: bool
         """
         
         
@@ -59,6 +63,7 @@ class BatchAddServerNicOption:
         self._ip_address = None
         self._ipv6_enable = None
         self._ipv6_bandwidth = None
+        self._efi_enable = None
         self.discriminator = None
 
         if subnet_id is not None:
@@ -73,6 +78,8 @@ class BatchAddServerNicOption:
             self.ipv6_enable = ipv6_enable
         if ipv6_bandwidth is not None:
             self.ipv6_bandwidth = ipv6_bandwidth
+        if efi_enable is not None:
+            self.efi_enable = efi_enable
 
     @property
     def subnet_id(self):
@@ -201,6 +208,28 @@ class BatchAddServerNicOption:
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
+
+    @property
+    def efi_enable(self):
+        r"""Gets the efi_enable of this BatchAddServerNicOption.
+
+        使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+
+        :return: The efi_enable of this BatchAddServerNicOption.
+        :rtype: bool
+        """
+        return self._efi_enable
+
+    @efi_enable.setter
+    def efi_enable(self, efi_enable):
+        r"""Sets the efi_enable of this BatchAddServerNicOption.
+
+        使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+
+        :param efi_enable: The efi_enable of this BatchAddServerNicOption.
+        :type efi_enable: bool
+        """
+        self._efi_enable = efi_enable
 
     def to_dict(self):
         result = {}

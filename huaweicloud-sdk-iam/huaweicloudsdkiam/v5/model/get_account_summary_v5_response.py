@@ -29,7 +29,11 @@ class GetAccountSummaryV5Response(SdkResponse):
         'users_quota': 'int',
         'groups': 'int',
         'groups_quota': 'int',
-        'root_user_mfa_enabled': 'int'
+        'root_user_mfa_enabled': 'int',
+        'oidc_provider': 'int',
+        'oidc_provider_quota': 'int',
+        'saml_provider': 'int',
+        'saml_provider_quota': 'int'
     }
 
     attribute_map = {
@@ -46,10 +50,14 @@ class GetAccountSummaryV5Response(SdkResponse):
         'users_quota': 'users_quota',
         'groups': 'groups',
         'groups_quota': 'groups_quota',
-        'root_user_mfa_enabled': 'root_user_mfa_enabled'
+        'root_user_mfa_enabled': 'root_user_mfa_enabled',
+        'oidc_provider': 'oidc_provider',
+        'oidc_provider_quota': 'oidc_provider_quota',
+        'saml_provider': 'saml_provider',
+        'saml_provider_quota': 'saml_provider_quota'
     }
 
-    def __init__(self, attached_policies_per_agency_quota=None, attached_policies_per_group_quota=None, attached_policies_per_user_quota=None, policies_quota=None, policy_size_quota=None, versions_per_policy_quota=None, policies=None, agencies=None, agencies_quota=None, users=None, users_quota=None, groups=None, groups_quota=None, root_user_mfa_enabled=None):
+    def __init__(self, attached_policies_per_agency_quota=None, attached_policies_per_group_quota=None, attached_policies_per_user_quota=None, policies_quota=None, policy_size_quota=None, versions_per_policy_quota=None, policies=None, agencies=None, agencies_quota=None, users=None, users_quota=None, groups=None, groups_quota=None, root_user_mfa_enabled=None, oidc_provider=None, oidc_provider_quota=None, saml_provider=None, saml_provider_quota=None):
         r"""GetAccountSummaryV5Response
 
         The model defined in huaweicloud sdk
@@ -82,6 +90,14 @@ class GetAccountSummaryV5Response(SdkResponse):
         :type groups_quota: int
         :param root_user_mfa_enabled: 根用户绑定的已启用MFA的数量。
         :type root_user_mfa_enabled: int
+        :param oidc_provider: 此账号当前创建的OIDC身份提供商数量。
+        :type oidc_provider: int
+        :param oidc_provider_quota: 此账号当前创建的OIDC身份提供商数量上限。
+        :type oidc_provider_quota: int
+        :param saml_provider: 此账号当前创建的SAML身份提供商数量。
+        :type saml_provider: int
+        :param saml_provider_quota: 此账号当前创建的SAML身份提供商数量上限。
+        :type saml_provider_quota: int
         """
         
         super().__init__()
@@ -100,6 +116,10 @@ class GetAccountSummaryV5Response(SdkResponse):
         self._groups = None
         self._groups_quota = None
         self._root_user_mfa_enabled = None
+        self._oidc_provider = None
+        self._oidc_provider_quota = None
+        self._saml_provider = None
+        self._saml_provider_quota = None
         self.discriminator = None
 
         if attached_policies_per_agency_quota is not None:
@@ -130,6 +150,14 @@ class GetAccountSummaryV5Response(SdkResponse):
             self.groups_quota = groups_quota
         if root_user_mfa_enabled is not None:
             self.root_user_mfa_enabled = root_user_mfa_enabled
+        if oidc_provider is not None:
+            self.oidc_provider = oidc_provider
+        if oidc_provider_quota is not None:
+            self.oidc_provider_quota = oidc_provider_quota
+        if saml_provider is not None:
+            self.saml_provider = saml_provider
+        if saml_provider_quota is not None:
+            self.saml_provider_quota = saml_provider_quota
 
     @property
     def attached_policies_per_agency_quota(self):
@@ -438,6 +466,94 @@ class GetAccountSummaryV5Response(SdkResponse):
         :type root_user_mfa_enabled: int
         """
         self._root_user_mfa_enabled = root_user_mfa_enabled
+
+    @property
+    def oidc_provider(self):
+        r"""Gets the oidc_provider of this GetAccountSummaryV5Response.
+
+        此账号当前创建的OIDC身份提供商数量。
+
+        :return: The oidc_provider of this GetAccountSummaryV5Response.
+        :rtype: int
+        """
+        return self._oidc_provider
+
+    @oidc_provider.setter
+    def oidc_provider(self, oidc_provider):
+        r"""Sets the oidc_provider of this GetAccountSummaryV5Response.
+
+        此账号当前创建的OIDC身份提供商数量。
+
+        :param oidc_provider: The oidc_provider of this GetAccountSummaryV5Response.
+        :type oidc_provider: int
+        """
+        self._oidc_provider = oidc_provider
+
+    @property
+    def oidc_provider_quota(self):
+        r"""Gets the oidc_provider_quota of this GetAccountSummaryV5Response.
+
+        此账号当前创建的OIDC身份提供商数量上限。
+
+        :return: The oidc_provider_quota of this GetAccountSummaryV5Response.
+        :rtype: int
+        """
+        return self._oidc_provider_quota
+
+    @oidc_provider_quota.setter
+    def oidc_provider_quota(self, oidc_provider_quota):
+        r"""Sets the oidc_provider_quota of this GetAccountSummaryV5Response.
+
+        此账号当前创建的OIDC身份提供商数量上限。
+
+        :param oidc_provider_quota: The oidc_provider_quota of this GetAccountSummaryV5Response.
+        :type oidc_provider_quota: int
+        """
+        self._oidc_provider_quota = oidc_provider_quota
+
+    @property
+    def saml_provider(self):
+        r"""Gets the saml_provider of this GetAccountSummaryV5Response.
+
+        此账号当前创建的SAML身份提供商数量。
+
+        :return: The saml_provider of this GetAccountSummaryV5Response.
+        :rtype: int
+        """
+        return self._saml_provider
+
+    @saml_provider.setter
+    def saml_provider(self, saml_provider):
+        r"""Sets the saml_provider of this GetAccountSummaryV5Response.
+
+        此账号当前创建的SAML身份提供商数量。
+
+        :param saml_provider: The saml_provider of this GetAccountSummaryV5Response.
+        :type saml_provider: int
+        """
+        self._saml_provider = saml_provider
+
+    @property
+    def saml_provider_quota(self):
+        r"""Gets the saml_provider_quota of this GetAccountSummaryV5Response.
+
+        此账号当前创建的SAML身份提供商数量上限。
+
+        :return: The saml_provider_quota of this GetAccountSummaryV5Response.
+        :rtype: int
+        """
+        return self._saml_provider_quota
+
+    @saml_provider_quota.setter
+    def saml_provider_quota(self, saml_provider_quota):
+        r"""Sets the saml_provider_quota of this GetAccountSummaryV5Response.
+
+        此账号当前创建的SAML身份提供商数量上限。
+
+        :param saml_provider_quota: The saml_provider_quota of this GetAccountSummaryV5Response.
+        :type saml_provider_quota: int
+        """
+        self._saml_provider_quota = saml_provider_quota
 
     def to_dict(self):
         import warnings

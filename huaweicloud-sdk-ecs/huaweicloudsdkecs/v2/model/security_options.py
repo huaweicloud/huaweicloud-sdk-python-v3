@@ -41,8 +41,10 @@ class SecurityOptions:
         self._tpm_enabled = None
         self.discriminator = None
 
-        self.secure_boot_enabled = secure_boot_enabled
-        self.tpm_enabled = tpm_enabled
+        if secure_boot_enabled is not None:
+            self.secure_boot_enabled = secure_boot_enabled
+        if tpm_enabled is not None:
+            self.tpm_enabled = tpm_enabled
 
     @property
     def secure_boot_enabled(self):

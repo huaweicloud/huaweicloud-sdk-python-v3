@@ -40,6 +40,7 @@ class StarRocksInstanceInfoInstances:
         'param_group': 'str',
         'actions': 'list[QueryAction]',
         'create_fail_error_code': 'str',
+        'users_sync_switch_on': 'bool',
         'groups': 'list[StarRocksInstanceInfoGroups]',
         'ops_window': 'StarRocksInstanceInfoOpsWindow',
         'tags_info': 'StarRocksInstanceInfoTagsInfo',
@@ -85,6 +86,7 @@ class StarRocksInstanceInfoInstances:
         'param_group': 'param_group',
         'actions': 'actions',
         'create_fail_error_code': 'create_fail_error_code',
+        'users_sync_switch_on': 'users_sync_switch_on',
         'groups': 'groups',
         'ops_window': 'ops_window',
         'tags_info': 'tags_info',
@@ -104,7 +106,7 @@ class StarRocksInstanceInfoInstances:
         'pay_model': 'pay_model'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, public_ip=None, data_vip=None, can_enable_public_access=None, current_backup_node_id=None, cluster_mode=None, status=None, is_frozen=None, frozen_time=None, db_user=None, bak_period=None, bak_keep_day=None, bak_expected_start_time=None, data_store_version_id=None, data_store_version=None, data_store_type=None, create_at=None, update_at=None, delete_at=None, db_port=None, param_group=None, actions=None, create_fail_error_code=None, groups=None, ops_window=None, tags_info=None, time_zone=None, backup_used_space=None, az_mode=None, enterprise_project_id=None, port_info=None, fe_node_volume_code=None, be_node_volume_code=None, fe_node_volume_size=None, be_node_volume_size=None, support_data_replication=None, new_version_available=None, ssl_option=None, dedicated_resource_id=None, pay_model=None):
+    def __init__(self, id=None, name=None, project_id=None, public_ip=None, data_vip=None, can_enable_public_access=None, current_backup_node_id=None, cluster_mode=None, status=None, is_frozen=None, frozen_time=None, db_user=None, bak_period=None, bak_keep_day=None, bak_expected_start_time=None, data_store_version_id=None, data_store_version=None, data_store_type=None, create_at=None, update_at=None, delete_at=None, db_port=None, param_group=None, actions=None, create_fail_error_code=None, users_sync_switch_on=None, groups=None, ops_window=None, tags_info=None, time_zone=None, backup_used_space=None, az_mode=None, enterprise_project_id=None, port_info=None, fe_node_volume_code=None, be_node_volume_code=None, fe_node_volume_size=None, be_node_volume_size=None, support_data_replication=None, new_version_available=None, ssl_option=None, dedicated_resource_id=None, pay_model=None):
         r"""StarRocksInstanceInfoInstances
 
         The model defined in huaweicloud sdk
@@ -159,6 +161,8 @@ class StarRocksInstanceInfoInstances:
         :type actions: list[:class:`huaweicloudsdkgaussdb.v3.QueryAction`]
         :param create_fail_error_code: 实例创建失败错误码。
         :type create_fail_error_code: str
+        :param users_sync_switch_on: **参数解释**：  账号同步开关状态。  **取值范围**：  - true：开启。 - false：关闭。
+        :type users_sync_switch_on: bool
         :param groups: 实例分组。
         :type groups: list[:class:`huaweicloudsdkgaussdb.v3.StarRocksInstanceInfoGroups`]
         :param ops_window: 
@@ -222,6 +226,7 @@ class StarRocksInstanceInfoInstances:
         self._param_group = None
         self._actions = None
         self._create_fail_error_code = None
+        self._users_sync_switch_on = None
         self._groups = None
         self._ops_window = None
         self._tags_info = None
@@ -291,6 +296,8 @@ class StarRocksInstanceInfoInstances:
             self.actions = actions
         if create_fail_error_code is not None:
             self.create_fail_error_code = create_fail_error_code
+        if users_sync_switch_on is not None:
+            self.users_sync_switch_on = users_sync_switch_on
         if groups is not None:
             self.groups = groups
         if ops_window is not None:
@@ -875,6 +882,28 @@ class StarRocksInstanceInfoInstances:
         :type create_fail_error_code: str
         """
         self._create_fail_error_code = create_fail_error_code
+
+    @property
+    def users_sync_switch_on(self):
+        r"""Gets the users_sync_switch_on of this StarRocksInstanceInfoInstances.
+
+        **参数解释**：  账号同步开关状态。  **取值范围**：  - true：开启。 - false：关闭。
+
+        :return: The users_sync_switch_on of this StarRocksInstanceInfoInstances.
+        :rtype: bool
+        """
+        return self._users_sync_switch_on
+
+    @users_sync_switch_on.setter
+    def users_sync_switch_on(self, users_sync_switch_on):
+        r"""Sets the users_sync_switch_on of this StarRocksInstanceInfoInstances.
+
+        **参数解释**：  账号同步开关状态。  **取值范围**：  - true：开启。 - false：关闭。
+
+        :param users_sync_switch_on: The users_sync_switch_on of this StarRocksInstanceInfoInstances.
+        :type users_sync_switch_on: bool
+        """
+        self._users_sync_switch_on = users_sync_switch_on
 
     @property
     def groups(self):

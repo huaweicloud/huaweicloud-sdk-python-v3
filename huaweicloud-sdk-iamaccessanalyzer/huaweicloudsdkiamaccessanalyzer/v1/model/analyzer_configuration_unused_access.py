@@ -41,8 +41,7 @@ class AnalyzerConfigurationUnusedAccess:
         self._unused_analysis_rule = None
         self.discriminator = None
 
-        if unused_access_age is not None:
-            self.unused_access_age = unused_access_age
+        self.unused_access_age = unused_access_age
         if unused_analysis_rule is not None:
             self.unused_analysis_rule = unused_analysis_rule
 

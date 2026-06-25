@@ -37,7 +37,7 @@ class DiscountInfoV3:
         :type discount_id: str
         :param discount_value: 折扣率或者满减值，如果折扣模式是一口价，这个值为空。
         :type discount_value: str
-        :param discount_type: 折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        :param discount_type: 折扣类型，取值为 0：促销折扣；1：合同折扣；2：商务优惠；3：合作伙伴授予折扣；609：订单调价折扣
         :type discount_type: int
         :param orders: 可使用折扣的订单列表。 具体请参见表3。
         :type orders: list[:class:`huaweicloudsdkbssintl.v2.OrderV3`]
@@ -104,7 +104,7 @@ class DiscountInfoV3:
     def discount_type(self):
         r"""Gets the discount_type of this DiscountInfoV3.
 
-        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        折扣类型，取值为 0：促销折扣；1：合同折扣；2：商务优惠；3：合作伙伴授予折扣；609：订单调价折扣
 
         :return: The discount_type of this DiscountInfoV3.
         :rtype: int
@@ -115,7 +115,7 @@ class DiscountInfoV3:
     def discount_type(self, discount_type):
         r"""Sets the discount_type of this DiscountInfoV3.
 
-        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        折扣类型，取值为 0：促销折扣；1：合同折扣；2：商务优惠；3：合作伙伴授予折扣；609：订单调价折扣
 
         :param discount_type: The discount_type of this DiscountInfoV3.
         :type discount_type: int

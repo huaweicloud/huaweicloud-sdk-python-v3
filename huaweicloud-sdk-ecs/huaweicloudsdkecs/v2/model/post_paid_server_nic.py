@@ -20,7 +20,8 @@ class PostPaidServerNic:
         'ip_address': 'str',
         'ipv6_enable': 'bool',
         'ipv6_bandwidth': 'PostPaidServerIpv6Bandwidth',
-        'allowed_address_pairs': 'list[CreateServerNicAllowedAddressPairs]'
+        'allowed_address_pairs': 'list[CreateServerNicAllowedAddressPairs]',
+        'efi_enable': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PostPaidServerNic:
         'ip_address': 'ip_address',
         'ipv6_enable': 'ipv6_enable',
         'ipv6_bandwidth': 'ipv6_bandwidth',
-        'allowed_address_pairs': 'allowed_address_pairs'
+        'allowed_address_pairs': 'allowed_address_pairs',
+        'efi_enable': 'efi_enable'
     }
 
-    def __init__(self, subnet_id=None, port_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
+    def __init__(self, subnet_id=None, port_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None, efi_enable=None):
         r"""PostPaidServerNic
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class PostPaidServerNic:
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
         :param allowed_address_pairs: IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
         :type allowed_address_pairs: list[:class:`huaweicloudsdkecs.v2.CreateServerNicAllowedAddressPairs`]
+        :param efi_enable: 使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+        :type efi_enable: bool
         """
         
         
@@ -59,6 +63,7 @@ class PostPaidServerNic:
         self._ipv6_enable = None
         self._ipv6_bandwidth = None
         self._allowed_address_pairs = None
+        self._efi_enable = None
         self.discriminator = None
 
         if subnet_id is not None:
@@ -73,6 +78,8 @@ class PostPaidServerNic:
             self.ipv6_bandwidth = ipv6_bandwidth
         if allowed_address_pairs is not None:
             self.allowed_address_pairs = allowed_address_pairs
+        if efi_enable is not None:
+            self.efi_enable = efi_enable
 
     @property
     def subnet_id(self):
@@ -201,6 +208,28 @@ class PostPaidServerNic:
         :type allowed_address_pairs: list[:class:`huaweicloudsdkecs.v2.CreateServerNicAllowedAddressPairs`]
         """
         self._allowed_address_pairs = allowed_address_pairs
+
+    @property
+    def efi_enable(self):
+        r"""Gets the efi_enable of this PostPaidServerNic.
+
+        使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+
+        :return: The efi_enable of this PostPaidServerNic.
+        :rtype: bool
+        """
+        return self._efi_enable
+
+    @efi_enable.setter
+    def efi_enable(self, efi_enable):
+        r"""Sets the efi_enable of this PostPaidServerNic.
+
+        使能网卡的vRoCE能力，只支持从网卡，主网卡不支持。
+
+        :param efi_enable: The efi_enable of this PostPaidServerNic.
+        :type efi_enable: bool
+        """
+        self._efi_enable = efi_enable
 
     def to_dict(self):
         result = {}

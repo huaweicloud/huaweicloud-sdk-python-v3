@@ -26,8 +26,7 @@ class TaskDetailInfo:
         'created_time': 'str',
         'ended_time': 'str',
         'fail_reason': 'str',
-        'show_detail': 'bool',
-        'action_names': 'list[str]'
+        'show_detail': 'bool'
     }
 
     attribute_map = {
@@ -42,11 +41,10 @@ class TaskDetailInfo:
         'created_time': 'created_time',
         'ended_time': 'ended_time',
         'fail_reason': 'fail_reason',
-        'show_detail': 'show_detail',
-        'action_names': 'action_names'
+        'show_detail': 'show_detail'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, instance_status=None, job_id=None, order_id=None, job_name=None, status=None, process=None, created_time=None, ended_time=None, fail_reason=None, show_detail=None, action_names=None):
+    def __init__(self, instance_id=None, instance_name=None, instance_status=None, job_id=None, order_id=None, job_name=None, status=None, process=None, created_time=None, ended_time=None, fail_reason=None, show_detail=None):
         r"""TaskDetailInfo
 
         The model defined in huaweicloud sdk
@@ -75,8 +73,6 @@ class TaskDetailInfo:
         :type fail_reason: str
         :param show_detail: **参数解释**：  是否支持通过[获取异步任务详情](https://support.huaweicloud.com/api-taurusdb/ShowTaskDetails.html)接口获取任务详情。  **取值范围**：  - true：是。 - false：否。
         :type show_detail: bool
-        :param action_names: **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
-        :type action_names: list[str]
         """
         
         
@@ -93,7 +89,6 @@ class TaskDetailInfo:
         self._ended_time = None
         self._fail_reason = None
         self._show_detail = None
-        self._action_names = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -120,8 +115,6 @@ class TaskDetailInfo:
             self.fail_reason = fail_reason
         if show_detail is not None:
             self.show_detail = show_detail
-        if action_names is not None:
-            self.action_names = action_names
 
     @property
     def instance_id(self):
@@ -386,28 +379,6 @@ class TaskDetailInfo:
         :type show_detail: bool
         """
         self._show_detail = show_detail
-
-    @property
-    def action_names(self):
-        r"""Gets the action_names of this TaskDetailInfo.
-
-        **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
-
-        :return: The action_names of this TaskDetailInfo.
-        :rtype: list[str]
-        """
-        return self._action_names
-
-    @action_names.setter
-    def action_names(self, action_names):
-        r"""Sets the action_names of this TaskDetailInfo.
-
-        **参数解释**：  支持筛选的任务名称。  **取值范围**：  不涉及。
-
-        :param action_names: The action_names of this TaskDetailInfo.
-        :type action_names: list[str]
-        """
-        self._action_names = action_names
 
     def to_dict(self):
         result = {}

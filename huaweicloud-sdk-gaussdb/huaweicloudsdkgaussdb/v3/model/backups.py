@@ -22,7 +22,7 @@ class Backups:
         'status': 'str',
         'take_up_time': 'int',
         'type': 'str',
-        'size': 'int',
+        'size': 'float',
         'datastore': 'MysqlDatastoreInBackup',
         'instance_id': 'str',
         'instance_name': 'str',
@@ -66,7 +66,7 @@ class Backups:
         :param type: 备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
         :type type: str
         :param size: 备份大小（单位：MB）。
-        :type size: int
+        :type size: float
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
         :param instance_id: 实例ID，严格匹配UUID规则。
@@ -284,7 +284,7 @@ class Backups:
         备份大小（单位：MB）。
 
         :return: The size of this Backups.
-        :rtype: int
+        :rtype: float
         """
         return self._size
 
@@ -295,7 +295,7 @@ class Backups:
         备份大小（单位：MB）。
 
         :param size: The size of this Backups.
-        :type size: int
+        :type size: float
         """
         self._size = size
 

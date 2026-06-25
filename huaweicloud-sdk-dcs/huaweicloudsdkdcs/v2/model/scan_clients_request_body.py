@@ -41,7 +41,8 @@ class ScanClientsRequestBody:
         self._clean_cache = None
         self.discriminator = None
 
-        self.node_id = node_id
+        if node_id is not None:
+            self.node_id = node_id
         if clean_cache is not None:
             self.clean_cache = clean_cache
 

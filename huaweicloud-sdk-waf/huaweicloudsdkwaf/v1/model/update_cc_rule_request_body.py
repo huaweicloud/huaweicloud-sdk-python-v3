@@ -29,7 +29,9 @@ class UpdateCcRuleRequestBody:
         'lock_time': 'int',
         'domain_aggregation': 'bool',
         'region_aggregation': 'bool',
-        'description': 'str'
+        'description': 'str',
+        'priority': 'int',
+        'cc_priority': 'int'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class UpdateCcRuleRequestBody:
         'lock_time': 'lock_time',
         'domain_aggregation': 'domain_aggregation',
         'region_aggregation': 'region_aggregation',
-        'description': 'description'
+        'description': 'description',
+        'priority': 'priority',
+        'cc_priority': 'cc_priority'
     }
 
-    def __init__(self, name=None, mode=None, url=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None):
+    def __init__(self, name=None, mode=None, url=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, priority=None, cc_priority=None):
         r"""UpdateCcRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -85,6 +89,10 @@ class UpdateCcRuleRequestBody:
         :type region_aggregation: bool
         :param description: 规则描述
         :type description: str
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+        :type priority: int
+        :param cc_priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+        :type cc_priority: int
         """
         
         
@@ -104,6 +112,8 @@ class UpdateCcRuleRequestBody:
         self._domain_aggregation = None
         self._region_aggregation = None
         self._description = None
+        self._priority = None
+        self._cc_priority = None
         self.discriminator = None
 
         if name is not None:
@@ -130,6 +140,10 @@ class UpdateCcRuleRequestBody:
             self.region_aggregation = region_aggregation
         if description is not None:
             self.description = description
+        if priority is not None:
+            self.priority = priority
+        if cc_priority is not None:
+            self.cc_priority = cc_priority
 
     @property
     def name(self):
@@ -452,6 +466,50 @@ class UpdateCcRuleRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this UpdateCcRuleRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :return: The priority of this UpdateCcRuleRequestBody.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this UpdateCcRuleRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。 本字段仅在边缘安全场景生效
+
+        :param priority: The priority of this UpdateCcRuleRequestBody.
+        :type priority: int
+        """
+        self._priority = priority
+
+    @property
+    def cc_priority(self):
+        r"""Gets the cc_priority of this UpdateCcRuleRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :return: The cc_priority of this UpdateCcRuleRequestBody.
+        :rtype: int
+        """
+        return self._cc_priority
+
+    @cc_priority.setter
+    def cc_priority(self, cc_priority):
+        r"""Sets the cc_priority of this UpdateCcRuleRequestBody.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。 本字段仅在非边缘安全场景生效
+
+        :param cc_priority: The cc_priority of this UpdateCcRuleRequestBody.
+        :type cc_priority: int
+        """
+        self._cc_priority = cc_priority
 
     def to_dict(self):
         result = {}
