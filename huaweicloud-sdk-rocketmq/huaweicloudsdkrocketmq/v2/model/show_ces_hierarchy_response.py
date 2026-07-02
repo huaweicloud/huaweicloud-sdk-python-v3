@@ -18,7 +18,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     openapi_types = {
         'dimensions': 'list[ShowCeshierarchyRespDimensions]',
         'instance_ids': 'list[ShowCesHierarchyRespInstanceIds]',
-        'nodes': 'list[ShowCesHierarchyRespNodes]',
+        'nodes': 'list[ShowCeshierarchyRespNodes]',
         'topics': 'list[ShowCeshierarchyRespTopics]',
         'dlq': 'list[ShowCeshierarchyRespDlq]',
         'groups': 'list[ShowCeshierarchyRespGroups]'
@@ -43,7 +43,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         :param instance_ids: **参数解释**： 实例信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_ids: list[:class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyRespInstanceIds`]
         :param nodes: **参数解释**： 节点信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyRespNodes`]
+        :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.ShowCeshierarchyRespNodes`]
         :param topics: **参数解释**： 队列信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topics: list[:class:`huaweicloudsdkrocketmq.v2.ShowCeshierarchyRespTopics`]
         :param dlq: **参数解释**： 死信队列。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
@@ -126,7 +126,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         **参数解释**： 节点信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The nodes of this ShowCesHierarchyResponse.
-        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyRespNodes`]
+        :rtype: list[:class:`huaweicloudsdkrocketmq.v2.ShowCeshierarchyRespNodes`]
         """
         return self._nodes
 
@@ -137,7 +137,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         **参数解释**： 节点信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param nodes: The nodes of this ShowCesHierarchyResponse.
-        :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.ShowCesHierarchyRespNodes`]
+        :type nodes: list[:class:`huaweicloudsdkrocketmq.v2.ShowCeshierarchyRespNodes`]
         """
         self._nodes = nodes
 

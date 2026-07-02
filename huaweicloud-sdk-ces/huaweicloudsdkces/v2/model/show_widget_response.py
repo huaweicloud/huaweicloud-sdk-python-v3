@@ -62,7 +62,7 @@ class ShowWidgetResponse(SdkResponse):
         :type threshold: float
         :param threshold_enabled: **参数解释** 阈值是否展示 **取值范围** - true:展示 - false:不展示 
         :type threshold_enabled: bool
-        :param view: **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
+        :param view: **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 - gauge:仪表盘 - stat:数字 
         :type view: str
         :param metric_display_mode: **参数解释** 指标展示类型 **取值范围** - single:单指标展示 - multiple:多指标展示 
         :type metric_display_mode: str
@@ -253,7 +253,7 @@ class ShowWidgetResponse(SdkResponse):
     def view(self):
         r"""Gets the view of this ShowWidgetResponse.
 
-        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
+        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 - gauge:仪表盘 - stat:数字 
 
         :return: The view of this ShowWidgetResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class ShowWidgetResponse(SdkResponse):
     def view(self, view):
         r"""Sets the view of this ShowWidgetResponse.
 
-        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 
+        **参数解释** 监控视图图表类型 **取值范围** - bar:条形图 - line:折线图 - bar_chart:柱状图 - table:表格 - circular_bar:环形柱状图 - area_chart:面积图 - gauge:仪表盘 - stat:数字 
 
         :param view: The view of this ShowWidgetResponse.
         :type view: str

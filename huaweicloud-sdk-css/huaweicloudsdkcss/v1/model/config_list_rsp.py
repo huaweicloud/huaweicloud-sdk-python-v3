@@ -21,7 +21,8 @@ class ConfigListRsp:
         'status': 'str',
         'finished_at': 'str',
         'modify_delete_reset': 'str',
-        'failed_msg': 'str'
+        'failed_msg': 'str',
+        'inst_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ConfigListRsp:
         'status': 'status',
         'finished_at': 'finishedAt',
         'modify_delete_reset': 'modifyDeleteReset',
-        'failed_msg': 'failedMsg'
+        'failed_msg': 'failedMsg',
+        'inst_type': 'instType'
     }
 
-    def __init__(self, id=None, cluster_id=None, create_at=None, status=None, finished_at=None, modify_delete_reset=None, failed_msg=None):
+    def __init__(self, id=None, cluster_id=None, create_at=None, status=None, finished_at=None, modify_delete_reset=None, failed_msg=None, inst_type=None):
         r"""ConfigListRsp
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ConfigListRsp:
         :type modify_delete_reset: str
         :param failed_msg: 返回错误信息。当状态为success时该参数为null。
         :type failed_msg: str
+        :param inst_type: **参数解释**： 节点类型。 **取值范围**： 不涉及
+        :type inst_type: str
         """
         
         
@@ -64,6 +68,7 @@ class ConfigListRsp:
         self._finished_at = None
         self._modify_delete_reset = None
         self._failed_msg = None
+        self._inst_type = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class ConfigListRsp:
             self.modify_delete_reset = modify_delete_reset
         if failed_msg is not None:
             self.failed_msg = failed_msg
+        if inst_type is not None:
+            self.inst_type = inst_type
 
     @property
     def id(self):
@@ -234,6 +241,28 @@ class ConfigListRsp:
         :type failed_msg: str
         """
         self._failed_msg = failed_msg
+
+    @property
+    def inst_type(self):
+        r"""Gets the inst_type of this ConfigListRsp.
+
+        **参数解释**： 节点类型。 **取值范围**： 不涉及
+
+        :return: The inst_type of this ConfigListRsp.
+        :rtype: str
+        """
+        return self._inst_type
+
+    @inst_type.setter
+    def inst_type(self, inst_type):
+        r"""Sets the inst_type of this ConfigListRsp.
+
+        **参数解释**： 节点类型。 **取值范围**： 不涉及
+
+        :param inst_type: The inst_type of this ConfigListRsp.
+        :type inst_type: str
+        """
+        self._inst_type = inst_type
 
     def to_dict(self):
         result = {}

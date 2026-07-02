@@ -15,20 +15,24 @@ class ListenerIpGroup:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
         'ipgroup_id': 'str',
         'enable_ipgroup': 'bool'
     }
 
     attribute_map = {
+        'type': 'type',
         'ipgroup_id': 'ipgroup_id',
         'enable_ipgroup': 'enable_ipgroup'
     }
 
-    def __init__(self, ipgroup_id=None, enable_ipgroup=None):
+    def __init__(self, type=None, ipgroup_id=None, enable_ipgroup=None):
         r"""ListenerIpGroup
 
         The model defined in huaweicloud sdk
 
+        :param type: **参数解释**： 访问控制组的类型。 **取值范围**： - white:白名单，只允许指定IP访问。 - black:黑名单，不允许指定IP访问。
+        :type type: str
         :param ipgroup_id: 监听器关联的访问控制组的ID。创建时必选，更新时非必选。
         :type ipgroup_id: str
         :param enable_ipgroup: 访问控制组的状态。
@@ -37,14 +41,39 @@ class ListenerIpGroup:
         
         
 
+        self._type = None
         self._ipgroup_id = None
         self._enable_ipgroup = None
         self.discriminator = None
 
+        if type is not None:
+            self.type = type
         if ipgroup_id is not None:
             self.ipgroup_id = ipgroup_id
         if enable_ipgroup is not None:
             self.enable_ipgroup = enable_ipgroup
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListenerIpGroup.
+
+        **参数解释**： 访问控制组的类型。 **取值范围**： - white:白名单，只允许指定IP访问。 - black:黑名单，不允许指定IP访问。
+
+        :return: The type of this ListenerIpGroup.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListenerIpGroup.
+
+        **参数解释**： 访问控制组的类型。 **取值范围**： - white:白名单，只允许指定IP访问。 - black:黑名单，不允许指定IP访问。
+
+        :param type: The type of this ListenerIpGroup.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def ipgroup_id(self):

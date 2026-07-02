@@ -26,6 +26,7 @@ class CreateVpnConnectionRequestBodyContent:
         'tunnel_peer_address': 'str',
         'enable_nqa': 'bool',
         'enable_hub': 'bool',
+        'enable_health_check': 'bool',
         'psk': 'str',
         'policy_rules': 'list[PolicyRule]',
         'ikepolicy': 'IkePolicy',
@@ -47,6 +48,7 @@ class CreateVpnConnectionRequestBodyContent:
         'tunnel_peer_address': 'tunnel_peer_address',
         'enable_nqa': 'enable_nqa',
         'enable_hub': 'enable_hub',
+        'enable_health_check': 'enable_health_check',
         'psk': 'psk',
         'policy_rules': 'policy_rules',
         'ikepolicy': 'ikepolicy',
@@ -57,7 +59,7 @@ class CreateVpnConnectionRequestBodyContent:
         'policy_rules_v6': 'policy_rules_v6'
     }
 
-    def __init__(self, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
+    def __init__(self, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, enable_health_check=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
         r"""CreateVpnConnectionRequestBodyContent
 
         The model defined in huaweicloud sdk
@@ -82,6 +84,8 @@ class CreateVpnConnectionRequestBodyContent:
         :type enable_nqa: bool
         :param enable_hub: 开启分支互联
         :type enable_hub: bool
+        :param enable_health_check: 开启健康检查
+        :type enable_health_check: bool
         :param psk: 预共享密钥，只能包含大写字母、小写字母、数字和特殊字符(~!@#$%^()-_+&#x3D;{ },./:;)且至少包含四种字符的三种
         :type psk: str
         :param policy_rules: 策略模式的策略规则组
@@ -112,6 +116,7 @@ class CreateVpnConnectionRequestBodyContent:
         self._tunnel_peer_address = None
         self._enable_nqa = None
         self._enable_hub = None
+        self._enable_health_check = None
         self._psk = None
         self._policy_rules = None
         self._ikepolicy = None
@@ -139,6 +144,8 @@ class CreateVpnConnectionRequestBodyContent:
             self.enable_nqa = enable_nqa
         if enable_hub is not None:
             self.enable_hub = enable_hub
+        if enable_health_check is not None:
+            self.enable_health_check = enable_health_check
         if psk is not None:
             self.psk = psk
         if policy_rules is not None:
@@ -375,6 +382,28 @@ class CreateVpnConnectionRequestBodyContent:
         :type enable_hub: bool
         """
         self._enable_hub = enable_hub
+
+    @property
+    def enable_health_check(self):
+        r"""Gets the enable_health_check of this CreateVpnConnectionRequestBodyContent.
+
+        开启健康检查
+
+        :return: The enable_health_check of this CreateVpnConnectionRequestBodyContent.
+        :rtype: bool
+        """
+        return self._enable_health_check
+
+    @enable_health_check.setter
+    def enable_health_check(self, enable_health_check):
+        r"""Sets the enable_health_check of this CreateVpnConnectionRequestBodyContent.
+
+        开启健康检查
+
+        :param enable_health_check: The enable_health_check of this CreateVpnConnectionRequestBodyContent.
+        :type enable_health_check: bool
+        """
+        self._enable_health_check = enable_health_check
 
     @property
     def psk(self):

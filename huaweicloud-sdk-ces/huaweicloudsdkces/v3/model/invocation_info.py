@@ -65,7 +65,7 @@ class InvocationInfo:
         :type intranet_ips: list[str]
         :param elastic_ips: **参数解释**: 弹性公网ip列表 
         :type elastic_ips: list[str]
-        :param invocation_type: **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
+        :param invocation_type: **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
         :type invocation_type: str
         :param invocation_status: **参数解释**: 任务状态 **取值范围**: - PENDING：待执行 - RUNNING：运行中 - TIMEOUT：超时 - FAILED：失败 - SUCCEEDED：成功 - CANCELED：取消 - ROLLBACKED：已回退 
         :type invocation_status: str
@@ -266,7 +266,7 @@ class InvocationInfo:
     def invocation_type(self):
         r"""Gets the invocation_type of this InvocationInfo.
 
-        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
 
         :return: The invocation_type of this InvocationInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class InvocationInfo:
     def invocation_type(self, invocation_type):
         r"""Sets the invocation_type of this InvocationInfo.
 
-        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
+        **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 - SET_REMOTE_INSTALLER：设置远程安装主机 - REMOTE_INSTALL：执行远程安装 
 
         :param invocation_type: The invocation_type of this InvocationInfo.
         :type invocation_type: str

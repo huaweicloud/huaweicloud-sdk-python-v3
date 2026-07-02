@@ -30,9 +30,9 @@ class ShowMetricDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param datapoints: 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        :param datapoints: **参数解释**： 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期 
         :type datapoints: list[:class:`huaweicloudsdkces.v1.Datapoint`]
-        :param metric_name: 指标名称，例如弹性云服务器监控指标中的cpu_util。
+        :param metric_name: **参数解释**： 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围**： 不涉及 
         :type metric_name: str
         """
         
@@ -51,7 +51,7 @@ class ShowMetricDataResponse(SdkResponse):
     def datapoints(self):
         r"""Gets the datapoints of this ShowMetricDataResponse.
 
-        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        **参数解释**： 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期 
 
         :return: The datapoints of this ShowMetricDataResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.Datapoint`]
@@ -62,7 +62,7 @@ class ShowMetricDataResponse(SdkResponse):
     def datapoints(self, datapoints):
         r"""Sets the datapoints of this ShowMetricDataResponse.
 
-        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        **参数解释**： 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期 
 
         :param datapoints: The datapoints of this ShowMetricDataResponse.
         :type datapoints: list[:class:`huaweicloudsdkces.v1.Datapoint`]
@@ -73,7 +73,7 @@ class ShowMetricDataResponse(SdkResponse):
     def metric_name(self):
         r"""Gets the metric_name of this ShowMetricDataResponse.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util。
+        **参数解释**： 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围**： 不涉及 
 
         :return: The metric_name of this ShowMetricDataResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class ShowMetricDataResponse(SdkResponse):
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this ShowMetricDataResponse.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util。
+        **参数解释**： 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围**： 不涉及 
 
         :param metric_name: The metric_name of this ShowMetricDataResponse.
         :type metric_name: str

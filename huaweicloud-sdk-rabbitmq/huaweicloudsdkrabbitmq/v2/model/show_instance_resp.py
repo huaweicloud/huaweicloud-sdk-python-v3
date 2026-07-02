@@ -67,7 +67,9 @@ class ShowInstanceResp:
         'ipv6_connect_addresses': 'list[str]',
         'tags': 'list[TagEntity]',
         'service_type': 'str',
-        'storage_type': 'str'
+        'storage_type': 'str',
+        'disk_encrypted': 'bool',
+        'disk_encrypted_key': 'str'
     }
 
     attribute_map = {
@@ -123,10 +125,12 @@ class ShowInstanceResp:
         'ipv6_connect_addresses': 'ipv6_connect_addresses',
         'tags': 'tags',
         'service_type': 'service_type',
-        'storage_type': 'storage_type'
+        'storage_type': 'storage_type',
+        'disk_encrypted': 'disk_encrypted',
+        'disk_encrypted_key': 'disk_encrypted_key'
     }
 
-    def __init__(self, access_user=None, broker_num=None, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, dns_enable=None, connect_address=None, connect_domain_name=None, public_connect_address=None, public_connect_domain_name=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, management_connect_domain_name=None, public_management_connect_address=None, public_management_connect_domain_name=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None, service_type=None, storage_type=None):
+    def __init__(self, access_user=None, broker_num=None, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, dns_enable=None, connect_address=None, connect_domain_name=None, public_connect_address=None, public_connect_domain_name=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, management_connect_domain_name=None, public_management_connect_address=None, public_management_connect_domain_name=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, available_zone_names=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None, service_type=None, storage_type=None, disk_encrypted=None, disk_encrypted_key=None):
         r"""ShowInstanceResp
 
         The model defined in huaweicloud sdk
@@ -237,6 +241,10 @@ class ShowInstanceResp:
         :type service_type: str
         :param storage_type: **参数解释**： 存储类型。 **取值范围**： hec：存储类型。
         :type storage_type: str
+        :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
+        :type disk_encrypted: bool
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+        :type disk_encrypted_key: str
         """
         
         
@@ -294,6 +302,8 @@ class ShowInstanceResp:
         self._tags = None
         self._service_type = None
         self._storage_type = None
+        self._disk_encrypted = None
+        self._disk_encrypted_key = None
         self.discriminator = None
 
         if access_user is not None:
@@ -402,6 +412,10 @@ class ShowInstanceResp:
             self.service_type = service_type
         if storage_type is not None:
             self.storage_type = storage_type
+        if disk_encrypted is not None:
+            self.disk_encrypted = disk_encrypted
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
 
     @property
     def access_user(self):
@@ -1568,6 +1582,50 @@ class ShowInstanceResp:
         :type storage_type: str
         """
         self._storage_type = storage_type
+
+    @property
+    def disk_encrypted(self):
+        r"""Gets the disk_encrypted of this ShowInstanceResp.
+
+        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
+
+        :return: The disk_encrypted of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._disk_encrypted
+
+    @disk_encrypted.setter
+    def disk_encrypted(self, disk_encrypted):
+        r"""Sets the disk_encrypted of this ShowInstanceResp.
+
+        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
+
+        :param disk_encrypted: The disk_encrypted of this ShowInstanceResp.
+        :type disk_encrypted: bool
+        """
+        self._disk_encrypted = disk_encrypted
+
+    @property
+    def disk_encrypted_key(self):
+        r"""Gets the disk_encrypted_key of this ShowInstanceResp.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+
+        :return: The disk_encrypted_key of this ShowInstanceResp.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        r"""Sets the disk_encrypted_key of this ShowInstanceResp.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this ShowInstanceResp.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
 
     def to_dict(self):
         result = {}

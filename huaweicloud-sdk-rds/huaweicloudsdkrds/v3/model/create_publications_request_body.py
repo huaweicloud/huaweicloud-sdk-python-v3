@@ -17,9 +17,9 @@ class CreatePublicationsRequestBody:
     openapi_types = {
         'publication_name': 'str',
         'publication_database': 'str',
-        'is_create_snapshot_immediately': 'str',
+        'is_create_snapshot_immediately': 'bool',
         'subscription_options': 'SubscriptionOption',
-        'job_schedule': 'OperateUsedJobSchedule',
+        'job_schedule': 'OperateUsedJobScheduleCreate',
         'is_select_all_table': 'bool',
         'extend_tables': 'list[str]',
         'tables': 'list[PublicationTableInfoRequest]'
@@ -46,11 +46,11 @@ class CreatePublicationsRequestBody:
         :param publication_database: 发布数据库名。
         :type publication_database: str
         :param is_create_snapshot_immediately: 是否立即创建快照。
-        :type is_create_snapshot_immediately: str
+        :type is_create_snapshot_immediately: bool
         :param subscription_options: 
         :type subscription_options: :class:`huaweicloudsdkrds.v3.SubscriptionOption`
         :param job_schedule: 
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleCreate`
         :param is_select_all_table: 是否选择所有数据表。
         :type is_select_all_table: bool
         :param extend_tables: 全选所有表后需要去除的表。
@@ -134,7 +134,7 @@ class CreatePublicationsRequestBody:
         是否立即创建快照。
 
         :return: The is_create_snapshot_immediately of this CreatePublicationsRequestBody.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_create_snapshot_immediately
 
@@ -145,7 +145,7 @@ class CreatePublicationsRequestBody:
         是否立即创建快照。
 
         :param is_create_snapshot_immediately: The is_create_snapshot_immediately of this CreatePublicationsRequestBody.
-        :type is_create_snapshot_immediately: str
+        :type is_create_snapshot_immediately: bool
         """
         self._is_create_snapshot_immediately = is_create_snapshot_immediately
 
@@ -172,7 +172,7 @@ class CreatePublicationsRequestBody:
         r"""Gets the job_schedule of this CreatePublicationsRequestBody.
 
         :return: The job_schedule of this CreatePublicationsRequestBody.
-        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleCreate`
         """
         return self._job_schedule
 
@@ -181,7 +181,7 @@ class CreatePublicationsRequestBody:
         r"""Sets the job_schedule of this CreatePublicationsRequestBody.
 
         :param job_schedule: The job_schedule of this CreatePublicationsRequestBody.
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleCreate`
         """
         self._job_schedule = job_schedule
 

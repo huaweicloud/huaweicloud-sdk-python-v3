@@ -36,8 +36,7 @@ class UpdateStatisticsRequestBody:
         self._db_name = None
         self.discriminator = None
 
-        if db_name is not None:
-            self.db_name = db_name
+        self.db_name = db_name
 
     @property
     def db_name(self):

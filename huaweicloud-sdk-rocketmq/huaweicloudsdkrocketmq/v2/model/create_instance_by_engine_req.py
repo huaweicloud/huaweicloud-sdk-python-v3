@@ -30,6 +30,8 @@ class CreateInstanceByEngineReq:
         'enterprise_project_id': 'str',
         'enable_acl': 'bool',
         'ipv6_enable': 'bool',
+        'ipv6_broker_address': 'str',
+        'ipv6_namesrv_address': 'str',
         'proxy_enable': 'bool',
         'enable_publicip': 'bool',
         'disk_encrypted_enable': 'bool',
@@ -57,6 +59,8 @@ class CreateInstanceByEngineReq:
         'enterprise_project_id': 'enterprise_project_id',
         'enable_acl': 'enable_acl',
         'ipv6_enable': 'ipv6_enable',
+        'ipv6_broker_address': 'ipv6_broker_address',
+        'ipv6_namesrv_address': 'ipv6_namesrv_address',
         'proxy_enable': 'proxy_enable',
         'enable_publicip': 'enable_publicip',
         'disk_encrypted_enable': 'disk_encrypted_enable',
@@ -68,7 +72,7 @@ class CreateInstanceByEngineReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, enable_acl=None, ipv6_enable=None, proxy_enable=None, enable_publicip=None, disk_encrypted_enable=None, disk_encrypted_key=None, publicip_id=None, broker_num=None, arch_type=None, tls_mode=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, vpc_id=None, subnet_id=None, security_group_id=None, available_zones=None, product_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, enable_acl=None, ipv6_enable=None, ipv6_broker_address=None, ipv6_namesrv_address=None, proxy_enable=None, enable_publicip=None, disk_encrypted_enable=None, disk_encrypted_key=None, publicip_id=None, broker_num=None, arch_type=None, tls_mode=None, bss_param=None):
         r"""CreateInstanceByEngineReq
 
         The model defined in huaweicloud sdk
@@ -103,6 +107,10 @@ class CreateInstanceByEngineReq:
         :type enable_acl: bool
         :param ipv6_enable: **参数解释**： 是否支持IPv6。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **约束限制**： 不涉及。 **取值范围**： - true：支持 - false：不支持 **默认取值**： false。
         :type ipv6_enable: bool
+        :param ipv6_broker_address: **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_broker_address: str
+        :param ipv6_namesrv_address: **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_namesrv_address: str
         :param proxy_enable: **参数解释**： 是否开启Proxy功能。 **约束限制**： 不涉及。 **取值范围**： - true：支持 - false：不支持 **默认取值**： false。
         :type proxy_enable: bool
         :param enable_publicip: **参数解释**： 是否开启公网访问功能。默认不开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启 - false：不开启 **默认取值**： false。
@@ -140,6 +148,8 @@ class CreateInstanceByEngineReq:
         self._enterprise_project_id = None
         self._enable_acl = None
         self._ipv6_enable = None
+        self._ipv6_broker_address = None
+        self._ipv6_namesrv_address = None
         self._proxy_enable = None
         self._enable_publicip = None
         self._disk_encrypted_enable = None
@@ -171,6 +181,10 @@ class CreateInstanceByEngineReq:
             self.enable_acl = enable_acl
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if ipv6_broker_address is not None:
+            self.ipv6_broker_address = ipv6_broker_address
+        if ipv6_namesrv_address is not None:
+            self.ipv6_namesrv_address = ipv6_namesrv_address
         if proxy_enable is not None:
             self.proxy_enable = proxy_enable
         if enable_publicip is not None:
@@ -518,6 +532,50 @@ class CreateInstanceByEngineReq:
         :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_broker_address(self):
+        r"""Gets the ipv6_broker_address of this CreateInstanceByEngineReq.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_broker_address of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._ipv6_broker_address
+
+    @ipv6_broker_address.setter
+    def ipv6_broker_address(self, ipv6_broker_address):
+        r"""Sets the ipv6_broker_address of this CreateInstanceByEngineReq.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_broker_address: The ipv6_broker_address of this CreateInstanceByEngineReq.
+        :type ipv6_broker_address: str
+        """
+        self._ipv6_broker_address = ipv6_broker_address
+
+    @property
+    def ipv6_namesrv_address(self):
+        r"""Gets the ipv6_namesrv_address of this CreateInstanceByEngineReq.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_namesrv_address of this CreateInstanceByEngineReq.
+        :rtype: str
+        """
+        return self._ipv6_namesrv_address
+
+    @ipv6_namesrv_address.setter
+    def ipv6_namesrv_address(self, ipv6_namesrv_address):
+        r"""Sets the ipv6_namesrv_address of this CreateInstanceByEngineReq.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_namesrv_address: The ipv6_namesrv_address of this CreateInstanceByEngineReq.
+        :type ipv6_namesrv_address: str
+        """
+        self._ipv6_namesrv_address = ipv6_namesrv_address
 
     @property
     def proxy_enable(self):

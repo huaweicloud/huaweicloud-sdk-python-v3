@@ -39,7 +39,7 @@ class CreateDashboardRequestBody:
         :type enterprise_id: str
         :param dashboard_id: **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type dashboard_id: str
-        :param row_widget_num: **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        :param row_widget_num: **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** 枚举值： - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 - 4:代表每行4个监控视图 **默认取值** 不涉及 
         :type row_widget_num: int
         """
         
@@ -130,7 +130,7 @@ class CreateDashboardRequestBody:
     def row_widget_num(self):
         r"""Gets the row_widget_num of this CreateDashboardRequestBody.
 
-        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** 枚举值： - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 - 4:代表每行4个监控视图 **默认取值** 不涉及 
 
         :return: The row_widget_num of this CreateDashboardRequestBody.
         :rtype: int
@@ -141,7 +141,7 @@ class CreateDashboardRequestBody:
     def row_widget_num(self, row_widget_num):
         r"""Sets the row_widget_num of this CreateDashboardRequestBody.
 
-        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** 枚举值： - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 - 4:代表每行4个监控视图 **默认取值** 不涉及 
 
         :param row_widget_num: The row_widget_num of this CreateDashboardRequestBody.
         :type row_widget_num: int

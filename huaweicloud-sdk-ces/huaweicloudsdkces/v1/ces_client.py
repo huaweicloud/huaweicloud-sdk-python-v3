@@ -1017,6 +1017,9 @@ class CesClient(Client):
 
         查询系统当前可监控指标列表，可以指定指标命名空间、指标名称、维度、排序方式，起始记录和最大记录条数过滤查询结果。
         
+        须知：
+        云服务资源删除后，会保留3个小时的数据缓存，在3小时之内还能查到资源对应的监控指标，属于正常现象。
+        
         Please refer to HUAWEI cloud API Explorer for details.
 
         :param request: Request instance for ListMetrics
@@ -1048,22 +1051,24 @@ class CesClient(Client):
         path_params = {}
 
         query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
         if 'dim_0' in local_var_params:
             query_params.append(('dim.0', local_var_params['dim_0']))
         if 'dim_1' in local_var_params:
             query_params.append(('dim.1', local_var_params['dim_1']))
         if 'dim_2' in local_var_params:
             query_params.append(('dim.2', local_var_params['dim_2']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'metric_name' in local_var_params:
-            query_params.append(('metric_name', local_var_params['metric_name']))
-        if 'namespace' in local_var_params:
-            query_params.append(('namespace', local_var_params['namespace']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
+        if 'dim_3' in local_var_params:
+            query_params.append(('dim.3', local_var_params['dim_3']))
         if 'start' in local_var_params:
             query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 

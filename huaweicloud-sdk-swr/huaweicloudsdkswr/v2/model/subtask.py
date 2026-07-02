@@ -16,7 +16,7 @@ class Subtask:
 
     openapi_types = {
         'id': 'int',
-        'job_id': 'str',
+        'job_id': 'int',
         'namespace': 'str',
         'repository': 'str',
         'tag': 'str',
@@ -48,7 +48,7 @@ class Subtask:
         :param id: 子任务ID
         :type id: int
         :param job_id: 内部任务ID
-        :type job_id: str
+        :type job_id: int
         :param namespace: 命名空间名
         :type namespace: str
         :param repository: 制品仓库
@@ -121,7 +121,7 @@ class Subtask:
         内部任务ID
 
         :return: The job_id of this Subtask.
-        :rtype: str
+        :rtype: int
         """
         return self._job_id
 
@@ -132,7 +132,7 @@ class Subtask:
         内部任务ID
 
         :param job_id: The job_id of this Subtask.
-        :type job_id: str
+        :type job_id: int
         """
         self._job_id = job_id
 

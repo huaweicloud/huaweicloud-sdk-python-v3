@@ -30,7 +30,7 @@ class ListEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param events: 一条或者多条事件数据。
+        :param events: **参数解释** 一条或者多条事件数据 
         :type events: list[:class:`huaweicloudsdkces.v1.EventInfo`]
         :param meta_data: 
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
@@ -51,7 +51,7 @@ class ListEventsResponse(SdkResponse):
     def events(self):
         r"""Gets the events of this ListEventsResponse.
 
-        一条或者多条事件数据。
+        **参数解释** 一条或者多条事件数据 
 
         :return: The events of this ListEventsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.EventInfo`]
@@ -62,7 +62,7 @@ class ListEventsResponse(SdkResponse):
     def events(self, events):
         r"""Sets the events of this ListEventsResponse.
 
-        一条或者多条事件数据。
+        **参数解释** 一条或者多条事件数据 
 
         :param events: The events of this ListEventsResponse.
         :type events: list[:class:`huaweicloudsdkces.v1.EventInfo`]

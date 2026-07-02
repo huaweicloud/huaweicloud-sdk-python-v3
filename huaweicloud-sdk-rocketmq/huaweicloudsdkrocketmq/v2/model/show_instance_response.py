@@ -54,6 +54,8 @@ class ShowInstanceResponse(SdkResponse):
         'storage_type': 'str',
         'extend_times': 'int',
         'ipv6_enable': 'bool',
+        'ipv6_broker_address': 'str',
+        'ipv6_namesrv_address': 'str',
         'support_features': 'str',
         'disk_encrypted': 'bool',
         'ces_version': 'str',
@@ -127,6 +129,8 @@ class ShowInstanceResponse(SdkResponse):
         'storage_type': 'storage_type',
         'extend_times': 'extend_times',
         'ipv6_enable': 'ipv6_enable',
+        'ipv6_broker_address': 'ipv6_broker_address',
+        'ipv6_namesrv_address': 'ipv6_namesrv_address',
         'support_features': 'support_features',
         'disk_encrypted': 'disk_encrypted',
         'ces_version': 'ces_version',
@@ -161,7 +165,7 @@ class ShowInstanceResponse(SdkResponse):
         'auto_volume_expand_enable': 'auto_volume_expand_enable'
     }
 
-    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, public_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, quota_address=None, max_msg_process_tps=None, config_ssl_need_restart_process=None, tls_mode=None, arch_type=None, enable_elastic_tps=None, auto_volume_expand_enable=None):
+    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, ipv6_broker_address=None, ipv6_namesrv_address=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, public_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, quota_address=None, max_msg_process_tps=None, config_ssl_need_restart_process=None, tls_mode=None, arch_type=None, enable_elastic_tps=None, auto_volume_expand_enable=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -242,6 +246,10 @@ class ShowInstanceResponse(SdkResponse):
         :type extend_times: int
         :param ipv6_enable: **参数解释**： 是否开启IPv6。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type ipv6_enable: bool
+        :param ipv6_broker_address: **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_broker_address: str
+        :param ipv6_namesrv_address: **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_namesrv_address: str
         :param support_features: **参数解释**： 实例支持的特性功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type support_features: str
         :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
@@ -348,6 +356,8 @@ class ShowInstanceResponse(SdkResponse):
         self._storage_type = None
         self._extend_times = None
         self._ipv6_enable = None
+        self._ipv6_broker_address = None
+        self._ipv6_namesrv_address = None
         self._support_features = None
         self._disk_encrypted = None
         self._ces_version = None
@@ -458,6 +468,10 @@ class ShowInstanceResponse(SdkResponse):
             self.extend_times = extend_times
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if ipv6_broker_address is not None:
+            self.ipv6_broker_address = ipv6_broker_address
+        if ipv6_namesrv_address is not None:
+            self.ipv6_namesrv_address = ipv6_namesrv_address
         if support_features is not None:
             self.support_features = support_features
         if disk_encrypted is not None:
@@ -1358,6 +1372,50 @@ class ShowInstanceResponse(SdkResponse):
         :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_broker_address(self):
+        r"""Gets the ipv6_broker_address of this ShowInstanceResponse.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_broker_address of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._ipv6_broker_address
+
+    @ipv6_broker_address.setter
+    def ipv6_broker_address(self, ipv6_broker_address):
+        r"""Sets the ipv6_broker_address of this ShowInstanceResponse.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_broker_address: The ipv6_broker_address of this ShowInstanceResponse.
+        :type ipv6_broker_address: str
+        """
+        self._ipv6_broker_address = ipv6_broker_address
+
+    @property
+    def ipv6_namesrv_address(self):
+        r"""Gets the ipv6_namesrv_address of this ShowInstanceResponse.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_namesrv_address of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._ipv6_namesrv_address
+
+    @ipv6_namesrv_address.setter
+    def ipv6_namesrv_address(self, ipv6_namesrv_address):
+        r"""Sets the ipv6_namesrv_address of this ShowInstanceResponse.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_namesrv_address: The ipv6_namesrv_address of this ShowInstanceResponse.
+        :type ipv6_namesrv_address: str
+        """
+        self._ipv6_namesrv_address = ipv6_namesrv_address
 
     @property
     def support_features(self):

@@ -35,15 +35,15 @@ class BatchListMetricDataRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param metrics: 指标数据。数组长度最大500
+        :param metrics: **参数解释** 指标数据 **约束限制** 包含的指标数据对象个数为[1,500] 
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
         :param period: 
         :type period: :class:`huaweicloudsdkces.v1.BatchPeriod`
         :param filter: 
         :type filter: :class:`huaweicloudsdkces.v1.Filter`
-        :param _from: 
+        :param _from: **参数解释** 查询数据起始时间，UNIX时间戳，单位毫秒 **约束限制** 当period为1时，若(to- from) &gt;4*3600*1000，则from调整为 to - 4*3600*1000 当period为300时，若(to - from) &gt;24*3600*1000，则from调整为 to - 24*3600*1000 当period为1200时，若(to - from) &gt;3*24*3600*1000，则from调整为 to - 3*24*3600*1000 当period为3600时，若(to -from) &gt; 10*24*3600*1000，则from调整为 to -10*24*3600*1000 当period为14400时，若(to - from) &gt;30*24*3600*1000，则from调整为 to - 30*24*3600*1000 当period为86400时，若(to -from) &gt; 180*24*3600*1000，则from调整为 to - 180*24*3600*1000 **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
         :type _from: int
-        :param to: 
+        :param to: **参数解释** 查询数据截止时间，UNIX时间戳，单位毫秒 **约束限制** from 必须小于to **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
         :type to: int
         """
         
@@ -66,7 +66,7 @@ class BatchListMetricDataRequestBody:
     def metrics(self):
         r"""Gets the metrics of this BatchListMetricDataRequestBody.
 
-        指标数据。数组长度最大500
+        **参数解释** 指标数据 **约束限制** 包含的指标数据对象个数为[1,500] 
 
         :return: The metrics of this BatchListMetricDataRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
@@ -77,7 +77,7 @@ class BatchListMetricDataRequestBody:
     def metrics(self, metrics):
         r"""Sets the metrics of this BatchListMetricDataRequestBody.
 
-        指标数据。数组长度最大500
+        **参数解释** 指标数据 **约束限制** 包含的指标数据对象个数为[1,500] 
 
         :param metrics: The metrics of this BatchListMetricDataRequestBody.
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
@@ -124,6 +124,8 @@ class BatchListMetricDataRequestBody:
     def _from(self):
         r"""Gets the _from of this BatchListMetricDataRequestBody.
 
+        **参数解释** 查询数据起始时间，UNIX时间戳，单位毫秒 **约束限制** 当period为1时，若(to- from) >4*3600*1000，则from调整为 to - 4*3600*1000 当period为300时，若(to - from) >24*3600*1000，则from调整为 to - 24*3600*1000 当period为1200时，若(to - from) >3*24*3600*1000，则from调整为 to - 3*24*3600*1000 当period为3600时，若(to -from) > 10*24*3600*1000，则from调整为 to -10*24*3600*1000 当period为14400时，若(to - from) >30*24*3600*1000，则from调整为 to - 30*24*3600*1000 当period为86400时，若(to -from) > 180*24*3600*1000，则from调整为 to - 180*24*3600*1000 **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
+
         :return: The _from of this BatchListMetricDataRequestBody.
         :rtype: int
         """
@@ -132,6 +134,8 @@ class BatchListMetricDataRequestBody:
     @_from.setter
     def _from(self, _from):
         r"""Sets the _from of this BatchListMetricDataRequestBody.
+
+        **参数解释** 查询数据起始时间，UNIX时间戳，单位毫秒 **约束限制** 当period为1时，若(to- from) >4*3600*1000，则from调整为 to - 4*3600*1000 当period为300时，若(to - from) >24*3600*1000，则from调整为 to - 24*3600*1000 当period为1200时，若(to - from) >3*24*3600*1000，则from调整为 to - 3*24*3600*1000 当period为3600时，若(to -from) > 10*24*3600*1000，则from调整为 to -10*24*3600*1000 当period为14400时，若(to - from) >30*24*3600*1000，则from调整为 to - 30*24*3600*1000 当period为86400时，若(to -from) > 180*24*3600*1000，则from调整为 to - 180*24*3600*1000 **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
 
         :param _from: The _from of this BatchListMetricDataRequestBody.
         :type _from: int
@@ -142,6 +146,8 @@ class BatchListMetricDataRequestBody:
     def to(self):
         r"""Gets the to of this BatchListMetricDataRequestBody.
 
+        **参数解释** 查询数据截止时间，UNIX时间戳，单位毫秒 **约束限制** from 必须小于to **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
+
         :return: The to of this BatchListMetricDataRequestBody.
         :rtype: int
         """
@@ -150,6 +156,8 @@ class BatchListMetricDataRequestBody:
     @to.setter
     def to(self, to):
         r"""Sets the to of this BatchListMetricDataRequestBody.
+
+        **参数解释** 查询数据截止时间，UNIX时间戳，单位毫秒 **约束限制** from 必须小于to **取值范围** 毫秒级时间戳范围为[1111111111111,9999999999999] **默认取值** 不涉及 
 
         :param to: The to of this BatchListMetricDataRequestBody.
         :type to: int

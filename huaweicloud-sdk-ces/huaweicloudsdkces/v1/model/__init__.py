@@ -61,6 +61,7 @@ from huaweicloudsdkces.v1.model.event_info_detail_resp import EventInfoDetailRes
 from huaweicloudsdkces.v1.model.event_item_detail import EventItemDetail
 from huaweicloudsdkces.v1.model.filter import Filter
 from huaweicloudsdkces.v1.model.filter_resp import FilterResp
+from huaweicloudsdkces.v1.model.from_time_stamp_schema import FromTimeStampSchema
 from huaweicloudsdkces.v1.model.instance_statistics import InstanceStatistics
 from huaweicloudsdkces.v1.model.list_alarm_histories_request import ListAlarmHistoriesRequest
 from huaweicloudsdkces.v1.model.list_alarm_histories_response import ListAlarmHistoriesResponse
@@ -84,6 +85,7 @@ from huaweicloudsdkces.v1.model.metric_alarms_resp import MetricAlarmsResp
 from huaweicloudsdkces.v1.model.metric_info import MetricInfo
 from huaweicloudsdkces.v1.model.metric_info_list import MetricInfoList
 from huaweicloudsdkces.v1.model.metric_info_resp import MetricInfoResp
+from huaweicloudsdkces.v1.model.metric_list_meta_data_resp import MetricListMetaDataResp
 from huaweicloudsdkces.v1.model.metric_name import MetricName
 from huaweicloudsdkces.v1.model.metric_name_resp import MetricNameResp
 from huaweicloudsdkces.v1.model.metric_name_schema import MetricNameSchema
@@ -123,7 +125,7 @@ from huaweicloudsdkces.v1.model.suppress_duration_resp import SuppressDurationRe
 from huaweicloudsdkces.v1.model.tms_key import TMSKey
 from huaweicloudsdkces.v1.model.tms_value import TMSValue
 from huaweicloudsdkces.v1.model.template_item import TemplateItem
-from huaweicloudsdkces.v1.model.time_stamp_schema import TimeStampSchema
+from huaweicloudsdkces.v1.model.to_time_stamp_schema import ToTimeStampSchema
 from huaweicloudsdkces.v1.model.total_meta_data import TotalMetaData
 from huaweicloudsdkces.v1.model.update_alarm_action_request import UpdateAlarmActionRequest
 from huaweicloudsdkces.v1.model.update_alarm_action_request_body import UpdateAlarmActionRequestBody

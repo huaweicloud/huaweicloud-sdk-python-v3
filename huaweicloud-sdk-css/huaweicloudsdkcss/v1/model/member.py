@@ -15,6 +15,7 @@ class Member:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'address': 'str',
         'protocol_port': 'int',
@@ -23,6 +24,7 @@ class Member:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'address': 'address',
         'protocol_port': 'protocol_port',
@@ -30,11 +32,13 @@ class Member:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, name=None, address=None, protocol_port=None, operating_status=None, instance_id=None):
+    def __init__(self, id=None, name=None, address=None, protocol_port=None, operating_status=None, instance_id=None):
         r"""Member
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释**： 健康检查ID。 **取值范围**： 不涉及
+        :type id: str
         :param name: 后端服务器名称。
         :type name: str
         :param address: 后端服务器对应的IP地址。
@@ -49,6 +53,7 @@ class Member:
         
         
 
+        self._id = None
         self._name = None
         self._address = None
         self._protocol_port = None
@@ -56,6 +61,8 @@ class Member:
         self._instance_id = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         if address is not None:
@@ -66,6 +73,28 @@ class Member:
             self.operating_status = operating_status
         if instance_id is not None:
             self.instance_id = instance_id
+
+    @property
+    def id(self):
+        r"""Gets the id of this Member.
+
+        **参数解释**： 健康检查ID。 **取值范围**： 不涉及
+
+        :return: The id of this Member.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this Member.
+
+        **参数解释**： 健康检查ID。 **取值范围**： 不涉及
+
+        :param id: The id of this Member.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):

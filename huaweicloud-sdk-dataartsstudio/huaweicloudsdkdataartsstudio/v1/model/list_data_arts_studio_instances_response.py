@@ -18,16 +18,16 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
     openapi_types = {
         'billing_check': 'bool',
         'count': 'int',
-        'commodity_order_lists': 'list[ApigCommodityOrder]'
+        'commodity_orders': 'list[ApigCommodityOrder]'
     }
 
     attribute_map = {
         'billing_check': 'billing_check',
         'count': 'count',
-        'commodity_order_lists': 'commodity_order_lists'
+        'commodity_orders': 'commodity_orders'
     }
 
-    def __init__(self, billing_check=None, count=None, commodity_order_lists=None):
+    def __init__(self, billing_check=None, count=None, commodity_orders=None):
         r"""ListDataArtsStudioInstancesResponse
 
         The model defined in huaweicloud sdk
@@ -36,23 +36,23 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
         :type billing_check: bool
         :param count: 返回记录总数
         :type count: int
-        :param commodity_order_lists: 返回实例列表
-        :type commodity_order_lists: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigCommodityOrder`]
+        :param commodity_orders: 返回实例列表
+        :type commodity_orders: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigCommodityOrder`]
         """
         
         super().__init__()
 
         self._billing_check = None
         self._count = None
-        self._commodity_order_lists = None
+        self._commodity_orders = None
         self.discriminator = None
 
         if billing_check is not None:
             self.billing_check = billing_check
         if count is not None:
             self.count = count
-        if commodity_order_lists is not None:
-            self.commodity_order_lists = commodity_order_lists
+        if commodity_orders is not None:
+            self.commodity_orders = commodity_orders
 
     @property
     def billing_check(self):
@@ -99,26 +99,26 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
         self._count = count
 
     @property
-    def commodity_order_lists(self):
-        r"""Gets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
+    def commodity_orders(self):
+        r"""Gets the commodity_orders of this ListDataArtsStudioInstancesResponse.
 
         返回实例列表
 
-        :return: The commodity_order_lists of this ListDataArtsStudioInstancesResponse.
+        :return: The commodity_orders of this ListDataArtsStudioInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigCommodityOrder`]
         """
-        return self._commodity_order_lists
+        return self._commodity_orders
 
-    @commodity_order_lists.setter
-    def commodity_order_lists(self, commodity_order_lists):
-        r"""Sets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
+    @commodity_orders.setter
+    def commodity_orders(self, commodity_orders):
+        r"""Sets the commodity_orders of this ListDataArtsStudioInstancesResponse.
 
         返回实例列表
 
-        :param commodity_order_lists: The commodity_order_lists of this ListDataArtsStudioInstancesResponse.
-        :type commodity_order_lists: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigCommodityOrder`]
+        :param commodity_orders: The commodity_orders of this ListDataArtsStudioInstancesResponse.
+        :type commodity_orders: list[:class:`huaweicloudsdkdataartsstudio.v1.ApigCommodityOrder`]
         """
-        self._commodity_order_lists = commodity_order_lists
+        self._commodity_orders = commodity_orders
 
     def to_dict(self):
         import warnings

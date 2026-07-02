@@ -56,10 +56,8 @@ class PlainSslEnableRequest:
         self._sasl_enabled_mechanisms = None
         self.discriminator = None
 
-        if protocol is not None:
-            self.protocol = protocol
-        if enable is not None:
-            self.enable = enable
+        self.protocol = protocol
+        self.enable = enable
         if user_name is not None:
             self.user_name = user_name
         if pass_word is not None:

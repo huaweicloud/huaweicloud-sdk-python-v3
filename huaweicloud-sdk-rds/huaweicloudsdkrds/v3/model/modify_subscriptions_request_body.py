@@ -16,7 +16,7 @@ class ModifySubscriptionsRequestBody:
 
     openapi_types = {
         'subscription_ids': 'list[str]',
-        'job_schedule': 'OperateUsedJobSchedule'
+        'job_schedule': 'OperateUsedJobScheduleModify'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ModifySubscriptionsRequestBody:
         :param subscription_ids: 修改的订阅id列表。每次修改的订阅必须属于同一实例。
         :type subscription_ids: list[str]
         :param job_schedule: 
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModify`
         """
         
         
@@ -71,7 +71,7 @@ class ModifySubscriptionsRequestBody:
         r"""Gets the job_schedule of this ModifySubscriptionsRequestBody.
 
         :return: The job_schedule of this ModifySubscriptionsRequestBody.
-        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModify`
         """
         return self._job_schedule
 
@@ -80,7 +80,7 @@ class ModifySubscriptionsRequestBody:
         r"""Sets the job_schedule of this ModifySubscriptionsRequestBody.
 
         :param job_schedule: The job_schedule of this ModifySubscriptionsRequestBody.
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModify`
         """
         self._job_schedule = job_schedule
 

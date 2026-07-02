@@ -20,6 +20,7 @@ class ShowOneTopicResponse(SdkResponse):
         'total_read_queue_num': 'float',
         'total_write_queue_num': 'float',
         'permission': 'str',
+        'created_at': 'int',
         'brokers': 'list[TopicBrokers]',
         'message_type': 'str'
     }
@@ -29,11 +30,12 @@ class ShowOneTopicResponse(SdkResponse):
         'total_read_queue_num': 'total_read_queue_num',
         'total_write_queue_num': 'total_write_queue_num',
         'permission': 'permission',
+        'created_at': 'created_at',
         'brokers': 'brokers',
         'message_type': 'message_type'
     }
 
-    def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, brokers=None, message_type=None):
+    def __init__(self, name=None, total_read_queue_num=None, total_write_queue_num=None, permission=None, created_at=None, brokers=None, message_type=None):
         r"""ShowOneTopicResponse
 
         The model defined in huaweicloud sdk
@@ -46,6 +48,8 @@ class ShowOneTopicResponse(SdkResponse):
         :type total_write_queue_num: float
         :param permission: **参数解释**： 权限。 **约束限制**： 不涉及。 **取值范围**： - sub：拥有订阅权限。 - pub：拥有发布权限。 - all：拥有发布、订阅权限。       **默认取值**： 不涉及。
         :type permission: str
+        :param created_at: **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type created_at: int
         :param brokers: **参数解释**： 关联的代理。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type brokers: list[:class:`huaweicloudsdkrocketmq.v2.TopicBrokers`]
         :param message_type: **参数解释**： 消息类型（RocketMQ实例5.x版本才包含此参数）。 **约束限制**： 不涉及。 **取值范围**： - NORMAL：普通消息。 - FIFO：顺序消息。 - DELAY：定时消息。 - TRANSACTION：事务消息。 **默认取值**： 不涉及。
@@ -58,6 +62,7 @@ class ShowOneTopicResponse(SdkResponse):
         self._total_read_queue_num = None
         self._total_write_queue_num = None
         self._permission = None
+        self._created_at = None
         self._brokers = None
         self._message_type = None
         self.discriminator = None
@@ -70,6 +75,8 @@ class ShowOneTopicResponse(SdkResponse):
             self.total_write_queue_num = total_write_queue_num
         if permission is not None:
             self.permission = permission
+        if created_at is not None:
+            self.created_at = created_at
         if brokers is not None:
             self.brokers = brokers
         if message_type is not None:
@@ -162,6 +169,28 @@ class ShowOneTopicResponse(SdkResponse):
         :type permission: str
         """
         self._permission = permission
+
+    @property
+    def created_at(self):
+        r"""Gets the created_at of this ShowOneTopicResponse.
+
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The created_at of this ShowOneTopicResponse.
+        :rtype: int
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        r"""Sets the created_at of this ShowOneTopicResponse.
+
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param created_at: The created_at of this ShowOneTopicResponse.
+        :type created_at: int
+        """
+        self._created_at = created_at
 
     @property
     def brokers(self):

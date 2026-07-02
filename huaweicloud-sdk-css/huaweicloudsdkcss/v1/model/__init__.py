@@ -98,8 +98,6 @@ from huaweicloudsdkcss.v1.model.delete_clusters_tags_response import DeleteClust
 from huaweicloudsdkcss.v1.model.delete_conf_req import DeleteConfReq
 from huaweicloudsdkcss.v1.model.delete_conf_request import DeleteConfRequest
 from huaweicloudsdkcss.v1.model.delete_conf_response import DeleteConfResponse
-from huaweicloudsdkcss.v1.model.delete_config_request import DeleteConfigRequest
-from huaweicloudsdkcss.v1.model.delete_config_response import DeleteConfigResponse
 from huaweicloudsdkcss.v1.model.delete_ik_thesaurus_request import DeleteIkThesaurusRequest
 from huaweicloudsdkcss.v1.model.delete_ik_thesaurus_response import DeleteIkThesaurusResponse
 from huaweicloudsdkcss.v1.model.delete_snapshot_request import DeleteSnapshotRequest
@@ -274,9 +272,9 @@ from huaweicloudsdkcss.v1.model.start_public_whitelist_response import StartPubl
 from huaweicloudsdkcss.v1.model.start_target_cluster_connectivity_test_req import StartTargetClusterConnectivityTestReq
 from huaweicloudsdkcss.v1.model.start_target_cluster_connectivity_test_request import StartTargetClusterConnectivityTestRequest
 from huaweicloudsdkcss.v1.model.start_target_cluster_connectivity_test_response import StartTargetClusterConnectivityTestResponse
+from huaweicloudsdkcss.v1.model.start_vpcep_request import StartVpcepRequest
+from huaweicloudsdkcss.v1.model.start_vpcep_response import StartVpcepResponse
 from huaweicloudsdkcss.v1.model.start_vpecp_req import StartVpecpReq
-from huaweicloudsdkcss.v1.model.start_vpecp_request import StartVpecpRequest
-from huaweicloudsdkcss.v1.model.start_vpecp_response import StartVpecpResponse
 from huaweicloudsdkcss.v1.model.stop_hot_pipeline_request import StopHotPipelineRequest
 from huaweicloudsdkcss.v1.model.stop_hot_pipeline_request_body import StopHotPipelineRequestBody
 from huaweicloudsdkcss.v1.model.stop_hot_pipeline_response import StopHotPipelineResponse
@@ -292,8 +290,8 @@ from huaweicloudsdkcss.v1.model.stop_public_whitelist_request import StopPublicW
 from huaweicloudsdkcss.v1.model.stop_public_whitelist_response import StopPublicWhitelistResponse
 from huaweicloudsdkcss.v1.model.stop_snapshot_request import StopSnapshotRequest
 from huaweicloudsdkcss.v1.model.stop_snapshot_response import StopSnapshotResponse
-from huaweicloudsdkcss.v1.model.stop_vpecp_request import StopVpecpRequest
-from huaweicloudsdkcss.v1.model.stop_vpecp_response import StopVpecpResponse
+from huaweicloudsdkcss.v1.model.stop_vpcep_request import StopVpcepRequest
+from huaweicloudsdkcss.v1.model.stop_vpcep_response import StopVpcepResponse
 from huaweicloudsdkcss.v1.model.summary_info import SummaryInfo
 from huaweicloudsdkcss.v1.model.system_templates import SystemTemplates
 from huaweicloudsdkcss.v1.model.tag import Tag

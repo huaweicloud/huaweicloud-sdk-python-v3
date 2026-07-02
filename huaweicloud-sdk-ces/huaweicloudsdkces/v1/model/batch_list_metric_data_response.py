@@ -28,7 +28,7 @@ class BatchListMetricDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param metrics: 监控指标。
+        :param metrics: **参数解释** 监控指标响应体 
         :type metrics: list[:class:`huaweicloudsdkces.v1.BatchMetricData`]
         """
         
@@ -44,7 +44,7 @@ class BatchListMetricDataResponse(SdkResponse):
     def metrics(self):
         r"""Gets the metrics of this BatchListMetricDataResponse.
 
-        监控指标。
+        **参数解释** 监控指标响应体 
 
         :return: The metrics of this BatchListMetricDataResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.BatchMetricData`]
@@ -55,7 +55,7 @@ class BatchListMetricDataResponse(SdkResponse):
     def metrics(self, metrics):
         r"""Sets the metrics of this BatchListMetricDataResponse.
 
-        监控指标。
+        **参数解释** 监控指标响应体 
 
         :param metrics: The metrics of this BatchListMetricDataResponse.
         :type metrics: list[:class:`huaweicloudsdkces.v1.BatchMetricData`]

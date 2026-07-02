@@ -37,17 +37,17 @@ class EventInfo:
 
         The model defined in huaweicloud sdk
 
-        :param event_name: 事件名称。
+        :param event_name: **参数解释** 事件名称 **取值范围** 不涉及 
         :type event_name: str
-        :param event_type: 枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
+        :param event_type: **参数解释** 事件类型 **取值范围** 枚举值： - EVENT.SYS 系统事件 - EVENT.CUSTOM 自定义事件 
         :type event_type: str
-        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。 
+        :param sub_event_type: **参数解释** 事件子类型 **取值范围** 枚举值： - SUB_EVENT.OPS 运维事件 - SUB_EVENT.PLAN 计划事件 - SUB_EVENT.CUSTOM 自定义事件 
         :type sub_event_type: str
-        :param event_count: 选择查询的时间范围内，此事件发生的数量。
+        :param event_count: **参数解释** 选择查询的时间范围内，此事件发生的数量 **取值范围** 不涉及 
         :type event_count: int
-        :param latest_occur_time: 此事件最近一次发生的时间。
+        :param latest_occur_time: **参数解释** 此事件最近一次发生的时间 **取值范围** 不涉及 
         :type latest_occur_time: int
-        :param latest_event_source: 事件来源，如果是系统事件则值为各服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。；如果是自定义事件，则为用户自定义上报定义。
+        :param latest_event_source: **参数解释** 事件来源，如果是系统事件则值为各服务的命名空间。 各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。如果是自定义事件，则为用户自定义上报定义。 **取值范围** 不涉及 
         :type latest_event_source: str
         """
         
@@ -78,7 +78,7 @@ class EventInfo:
     def event_name(self):
         r"""Gets the event_name of this EventInfo.
 
-        事件名称。
+        **参数解释** 事件名称 **取值范围** 不涉及 
 
         :return: The event_name of this EventInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class EventInfo:
     def event_name(self, event_name):
         r"""Sets the event_name of this EventInfo.
 
-        事件名称。
+        **参数解释** 事件名称 **取值范围** 不涉及 
 
         :param event_name: The event_name of this EventInfo.
         :type event_name: str
@@ -100,7 +100,7 @@ class EventInfo:
     def event_type(self):
         r"""Gets the event_type of this EventInfo.
 
-        枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
+        **参数解释** 事件类型 **取值范围** 枚举值： - EVENT.SYS 系统事件 - EVENT.CUSTOM 自定义事件 
 
         :return: The event_type of this EventInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class EventInfo:
     def event_type(self, event_type):
         r"""Sets the event_type of this EventInfo.
 
-        枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
+        **参数解释** 事件类型 **取值范围** 枚举值： - EVENT.SYS 系统事件 - EVENT.CUSTOM 自定义事件 
 
         :param event_type: The event_type of this EventInfo.
         :type event_type: str
@@ -122,7 +122,7 @@ class EventInfo:
     def sub_event_type(self):
         r"""Gets the sub_event_type of this EventInfo.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。 
+        **参数解释** 事件子类型 **取值范围** 枚举值： - SUB_EVENT.OPS 运维事件 - SUB_EVENT.PLAN 计划事件 - SUB_EVENT.CUSTOM 自定义事件 
 
         :return: The sub_event_type of this EventInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class EventInfo:
     def sub_event_type(self, sub_event_type):
         r"""Sets the sub_event_type of this EventInfo.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。 
+        **参数解释** 事件子类型 **取值范围** 枚举值： - SUB_EVENT.OPS 运维事件 - SUB_EVENT.PLAN 计划事件 - SUB_EVENT.CUSTOM 自定义事件 
 
         :param sub_event_type: The sub_event_type of this EventInfo.
         :type sub_event_type: str
@@ -144,7 +144,7 @@ class EventInfo:
     def event_count(self):
         r"""Gets the event_count of this EventInfo.
 
-        选择查询的时间范围内，此事件发生的数量。
+        **参数解释** 选择查询的时间范围内，此事件发生的数量 **取值范围** 不涉及 
 
         :return: The event_count of this EventInfo.
         :rtype: int
@@ -155,7 +155,7 @@ class EventInfo:
     def event_count(self, event_count):
         r"""Sets the event_count of this EventInfo.
 
-        选择查询的时间范围内，此事件发生的数量。
+        **参数解释** 选择查询的时间范围内，此事件发生的数量 **取值范围** 不涉及 
 
         :param event_count: The event_count of this EventInfo.
         :type event_count: int
@@ -166,7 +166,7 @@ class EventInfo:
     def latest_occur_time(self):
         r"""Gets the latest_occur_time of this EventInfo.
 
-        此事件最近一次发生的时间。
+        **参数解释** 此事件最近一次发生的时间 **取值范围** 不涉及 
 
         :return: The latest_occur_time of this EventInfo.
         :rtype: int
@@ -177,7 +177,7 @@ class EventInfo:
     def latest_occur_time(self, latest_occur_time):
         r"""Sets the latest_occur_time of this EventInfo.
 
-        此事件最近一次发生的时间。
+        **参数解释** 此事件最近一次发生的时间 **取值范围** 不涉及 
 
         :param latest_occur_time: The latest_occur_time of this EventInfo.
         :type latest_occur_time: int
@@ -188,7 +188,7 @@ class EventInfo:
     def latest_event_source(self):
         r"""Gets the latest_event_source of this EventInfo.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。；如果是自定义事件，则为用户自定义上报定义。
+        **参数解释** 事件来源，如果是系统事件则值为各服务的命名空间。 各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。如果是自定义事件，则为用户自定义上报定义。 **取值范围** 不涉及 
 
         :return: The latest_event_source of this EventInfo.
         :rtype: str
@@ -199,7 +199,7 @@ class EventInfo:
     def latest_event_source(self, latest_event_source):
         r"""Sets the latest_event_source of this EventInfo.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。；如果是自定义事件，则为用户自定义上报定义。
+        **参数解释** 事件来源，如果是系统事件则值为各服务的命名空间。 各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。如果是自定义事件，则为用户自定义上报定义。 **取值范围** 不涉及 
 
         :param latest_event_source: The latest_event_source of this EventInfo.
         :type latest_event_source: str

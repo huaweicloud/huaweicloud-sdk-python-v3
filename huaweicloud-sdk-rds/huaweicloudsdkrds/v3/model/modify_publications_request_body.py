@@ -16,7 +16,7 @@ class ModifyPublicationsRequestBody:
 
     openapi_types = {
         'subscription_options': 'SubscriptionOption',
-        'job_schedule': 'OperateUsedJobSchedule',
+        'job_schedule': 'OperateUsedJobScheduleModifyPub',
         'is_select_all_table': 'bool',
         'extend_tables': 'list[str]',
         'tables': 'list[PublicationTableInfoRequest]'
@@ -38,7 +38,7 @@ class ModifyPublicationsRequestBody:
         :param subscription_options: 
         :type subscription_options: :class:`huaweicloudsdkrds.v3.SubscriptionOption`
         :param job_schedule: 
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModifyPub`
         :param is_select_all_table: 是否选择所有数据表。
         :type is_select_all_table: bool
         :param extend_tables: 全选所有表后需要去除的表。
@@ -90,7 +90,7 @@ class ModifyPublicationsRequestBody:
         r"""Gets the job_schedule of this ModifyPublicationsRequestBody.
 
         :return: The job_schedule of this ModifyPublicationsRequestBody.
-        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :rtype: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModifyPub`
         """
         return self._job_schedule
 
@@ -99,7 +99,7 @@ class ModifyPublicationsRequestBody:
         r"""Sets the job_schedule of this ModifyPublicationsRequestBody.
 
         :param job_schedule: The job_schedule of this ModifyPublicationsRequestBody.
-        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobSchedule`
+        :type job_schedule: :class:`huaweicloudsdkrds.v3.OperateUsedJobScheduleModifyPub`
         """
         self._job_schedule = job_schedule
 

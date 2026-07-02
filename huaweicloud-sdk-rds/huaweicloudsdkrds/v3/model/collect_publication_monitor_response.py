@@ -21,8 +21,7 @@ class CollectPublicationMonitorResponse(SdkResponse):
         'best_latency': 'int',
         'average_latency': 'int',
         'last_dist_sync': 'str',
-        'replicated_transactions': 'int',
-        'replication_rate_trans': 'float'
+        'replicated_transactions': 'int'
     }
 
     attribute_map = {
@@ -31,11 +30,10 @@ class CollectPublicationMonitorResponse(SdkResponse):
         'best_latency': 'best_latency',
         'average_latency': 'average_latency',
         'last_dist_sync': 'last_dist_sync',
-        'replicated_transactions': 'replicated_transactions',
-        'replication_rate_trans': 'replication_rate_trans'
+        'replicated_transactions': 'replicated_transactions'
     }
 
-    def __init__(self, status=None, worst_latency=None, best_latency=None, average_latency=None, last_dist_sync=None, replicated_transactions=None, replication_rate_trans=None):
+    def __init__(self, status=None, worst_latency=None, best_latency=None, average_latency=None, last_dist_sync=None, replicated_transactions=None):
         r"""CollectPublicationMonitorResponse
 
         The model defined in huaweicloud sdk
@@ -52,8 +50,6 @@ class CollectPublicationMonitorResponse(SdkResponse):
         :type last_dist_sync: str
         :param replicated_transactions: 等待传送到分发数据库的事务数。
         :type replicated_transactions: int
-        :param replication_rate_trans: 平均每秒传送到分发数据库的事务数。
-        :type replication_rate_trans: float
         """
         
         super().__init__()
@@ -64,7 +60,6 @@ class CollectPublicationMonitorResponse(SdkResponse):
         self._average_latency = None
         self._last_dist_sync = None
         self._replicated_transactions = None
-        self._replication_rate_trans = None
         self.discriminator = None
 
         if status is not None:
@@ -79,8 +74,6 @@ class CollectPublicationMonitorResponse(SdkResponse):
             self.last_dist_sync = last_dist_sync
         if replicated_transactions is not None:
             self.replicated_transactions = replicated_transactions
-        if replication_rate_trans is not None:
-            self.replication_rate_trans = replication_rate_trans
 
     @property
     def status(self):
@@ -213,28 +206,6 @@ class CollectPublicationMonitorResponse(SdkResponse):
         :type replicated_transactions: int
         """
         self._replicated_transactions = replicated_transactions
-
-    @property
-    def replication_rate_trans(self):
-        r"""Gets the replication_rate_trans of this CollectPublicationMonitorResponse.
-
-        平均每秒传送到分发数据库的事务数。
-
-        :return: The replication_rate_trans of this CollectPublicationMonitorResponse.
-        :rtype: float
-        """
-        return self._replication_rate_trans
-
-    @replication_rate_trans.setter
-    def replication_rate_trans(self, replication_rate_trans):
-        r"""Sets the replication_rate_trans of this CollectPublicationMonitorResponse.
-
-        平均每秒传送到分发数据库的事务数。
-
-        :param replication_rate_trans: The replication_rate_trans of this CollectPublicationMonitorResponse.
-        :type replication_rate_trans: float
-        """
-        self._replication_rate_trans = replication_rate_trans
 
     def to_dict(self):
         import warnings

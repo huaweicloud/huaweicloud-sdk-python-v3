@@ -19,6 +19,8 @@ class EsListenerResponse:
         'id': 'str',
         'name': 'str',
         'protocol_port': 'str',
+        'default_tls_container_ref': 'str',
+        'client_ca_tls_container_ref': 'str',
         'ipgroup': 'EsIpgroupResource'
     }
 
@@ -27,10 +29,12 @@ class EsListenerResponse:
         'id': 'id',
         'name': 'name',
         'protocol_port': 'protocol_port',
+        'default_tls_container_ref': 'default_tls_container_ref',
+        'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
         'ipgroup': 'ipgroup'
     }
 
-    def __init__(self, protocol=None, id=None, name=None, protocol_port=None, ipgroup=None):
+    def __init__(self, protocol=None, id=None, name=None, protocol_port=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, ipgroup=None):
         r"""EsListenerResponse
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class EsListenerResponse:
         :type name: str
         :param protocol_port: 监听器的前端监听端口。
         :type protocol_port: str
+        :param default_tls_container_ref: **参数解释**： 监听器使用的服务器证书ID。 **取值范围**： 不涉及。
+        :type default_tls_container_ref: str
+        :param client_ca_tls_container_ref: **参数解释**： 监听器使用的CA证书ID。 **取值范围**： 不涉及。
+        :type client_ca_tls_container_ref: str
         :param ipgroup: 
         :type ipgroup: :class:`huaweicloudsdkcss.v1.EsIpgroupResource`
         """
@@ -53,6 +61,8 @@ class EsListenerResponse:
         self._id = None
         self._name = None
         self._protocol_port = None
+        self._default_tls_container_ref = None
+        self._client_ca_tls_container_ref = None
         self._ipgroup = None
         self.discriminator = None
 
@@ -64,6 +74,10 @@ class EsListenerResponse:
             self.name = name
         if protocol_port is not None:
             self.protocol_port = protocol_port
+        if default_tls_container_ref is not None:
+            self.default_tls_container_ref = default_tls_container_ref
+        if client_ca_tls_container_ref is not None:
+            self.client_ca_tls_container_ref = client_ca_tls_container_ref
         if ipgroup is not None:
             self.ipgroup = ipgroup
 
@@ -154,6 +168,50 @@ class EsListenerResponse:
         :type protocol_port: str
         """
         self._protocol_port = protocol_port
+
+    @property
+    def default_tls_container_ref(self):
+        r"""Gets the default_tls_container_ref of this EsListenerResponse.
+
+        **参数解释**： 监听器使用的服务器证书ID。 **取值范围**： 不涉及。
+
+        :return: The default_tls_container_ref of this EsListenerResponse.
+        :rtype: str
+        """
+        return self._default_tls_container_ref
+
+    @default_tls_container_ref.setter
+    def default_tls_container_ref(self, default_tls_container_ref):
+        r"""Sets the default_tls_container_ref of this EsListenerResponse.
+
+        **参数解释**： 监听器使用的服务器证书ID。 **取值范围**： 不涉及。
+
+        :param default_tls_container_ref: The default_tls_container_ref of this EsListenerResponse.
+        :type default_tls_container_ref: str
+        """
+        self._default_tls_container_ref = default_tls_container_ref
+
+    @property
+    def client_ca_tls_container_ref(self):
+        r"""Gets the client_ca_tls_container_ref of this EsListenerResponse.
+
+        **参数解释**： 监听器使用的CA证书ID。 **取值范围**： 不涉及。
+
+        :return: The client_ca_tls_container_ref of this EsListenerResponse.
+        :rtype: str
+        """
+        return self._client_ca_tls_container_ref
+
+    @client_ca_tls_container_ref.setter
+    def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
+        r"""Sets the client_ca_tls_container_ref of this EsListenerResponse.
+
+        **参数解释**： 监听器使用的CA证书ID。 **取值范围**： 不涉及。
+
+        :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this EsListenerResponse.
+        :type client_ca_tls_container_ref: str
+        """
+        self._client_ca_tls_container_ref = client_ca_tls_container_ref
 
     @property
     def ipgroup(self):

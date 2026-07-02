@@ -18,8 +18,8 @@ class CertsRecordsDatastore:
         'id': 'str',
         'status': 'str',
         'file_location': 'str',
-        'file_name': 'bool',
-        'update_at': 'bool'
+        'file_name': 'str',
+        'update_at': 'str'
     }
 
     attribute_map = {
@@ -42,9 +42,9 @@ class CertsRecordsDatastore:
         :param file_location: 证书记录文件位置。
         :type file_location: str
         :param file_name: 证书记录文件名称。
-        :type file_name: bool
+        :type file_name: str
         :param update_at: 证书记录更新时间。
-        :type update_at: bool
+        :type update_at: str
         """
         
         
@@ -140,7 +140,7 @@ class CertsRecordsDatastore:
         证书记录文件名称。
 
         :return: The file_name of this CertsRecordsDatastore.
-        :rtype: bool
+        :rtype: str
         """
         return self._file_name
 
@@ -151,7 +151,7 @@ class CertsRecordsDatastore:
         证书记录文件名称。
 
         :param file_name: The file_name of this CertsRecordsDatastore.
-        :type file_name: bool
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -162,7 +162,7 @@ class CertsRecordsDatastore:
         证书记录更新时间。
 
         :return: The update_at of this CertsRecordsDatastore.
-        :rtype: bool
+        :rtype: str
         """
         return self._update_at
 
@@ -173,7 +173,7 @@ class CertsRecordsDatastore:
         证书记录更新时间。
 
         :param update_at: The update_at of this CertsRecordsDatastore.
-        :type update_at: bool
+        :type update_at: str
         """
         self._update_at = update_at
 

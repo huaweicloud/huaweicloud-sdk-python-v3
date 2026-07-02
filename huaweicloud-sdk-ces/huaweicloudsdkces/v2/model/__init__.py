@@ -139,6 +139,7 @@ from huaweicloudsdkces.v2.model.enterprise_project_id_and_tags import Enterprise
 from huaweicloudsdkces.v2.model.ep_resource_statistics import EpResourceStatistics
 from huaweicloudsdkces.v2.model.event_dimension_name import EventDimensionName
 from huaweicloudsdkces.v2.model.extend_info import ExtendInfo
+from huaweicloudsdkces.v2.model.extend_info_resp import ExtendInfoResp
 from huaweicloudsdkces.v2.model.extend_relation_id import ExtendRelationId
 from huaweicloudsdkces.v2.model.extra_info import ExtraInfo
 from huaweicloudsdkces.v2.model.extra_info_resp import ExtraInfoResp

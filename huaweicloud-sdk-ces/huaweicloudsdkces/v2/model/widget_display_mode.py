@@ -27,7 +27,7 @@ class WidgetDisplayMode:
 
         The model defined in huaweicloud sdk
 
-        :param row_widget_num: **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
+        :param row_widget_num: **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 - 4:代表每行4个视图 
         :type row_widget_num: int
         """
         
@@ -43,7 +43,7 @@ class WidgetDisplayMode:
     def row_widget_num(self):
         r"""Gets the row_widget_num of this WidgetDisplayMode.
 
-        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
+        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 - 4:代表每行4个视图 
 
         :return: The row_widget_num of this WidgetDisplayMode.
         :rtype: int
@@ -54,7 +54,7 @@ class WidgetDisplayMode:
     def row_widget_num(self, row_widget_num):
         r"""Sets the row_widget_num of this WidgetDisplayMode.
 
-        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 
+        **参数解释** 每行展示视图数量 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个视图 - 2:代表每行2个视图 - 3:代表每行3个视图 - 4:代表每行4个视图 
 
         :param row_widget_num: The row_widget_num of this WidgetDisplayMode.
         :type row_widget_num: int

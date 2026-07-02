@@ -21,7 +21,8 @@ class ShowGetConfDetailResponse(SdkResponse):
         'conf_content': 'str',
         'setting': 'Setting',
         'update_at': 'str',
-        'desc': 'str'
+        'desc': 'str',
+        'sensitive_words_shielding': 'bool'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ShowGetConfDetailResponse(SdkResponse):
         'conf_content': 'confContent',
         'setting': 'setting',
         'update_at': 'updateAt',
-        'desc': 'desc'
+        'desc': 'desc',
+        'sensitive_words_shielding': 'sensitiveWordsShielding'
     }
 
-    def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None, desc=None):
+    def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None, desc=None, sensitive_words_shielding=None):
         r"""ShowGetConfDetailResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ShowGetConfDetailResponse(SdkResponse):
         :type update_at: str
         :param desc: **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
         :type desc: str
+        :param sensitive_words_shielding: 是否隐藏敏感词
+        :type sensitive_words_shielding: bool
         """
         
         super().__init__()
@@ -60,6 +64,7 @@ class ShowGetConfDetailResponse(SdkResponse):
         self._setting = None
         self._update_at = None
         self._desc = None
+        self._sensitive_words_shielding = None
         self.discriminator = None
 
         if name is not None:
@@ -74,6 +79,8 @@ class ShowGetConfDetailResponse(SdkResponse):
             self.update_at = update_at
         if desc is not None:
             self.desc = desc
+        if sensitive_words_shielding is not None:
+            self.sensitive_words_shielding = sensitive_words_shielding
 
     @property
     def name(self):
@@ -202,6 +209,28 @@ class ShowGetConfDetailResponse(SdkResponse):
         :type desc: str
         """
         self._desc = desc
+
+    @property
+    def sensitive_words_shielding(self):
+        r"""Gets the sensitive_words_shielding of this ShowGetConfDetailResponse.
+
+        是否隐藏敏感词
+
+        :return: The sensitive_words_shielding of this ShowGetConfDetailResponse.
+        :rtype: bool
+        """
+        return self._sensitive_words_shielding
+
+    @sensitive_words_shielding.setter
+    def sensitive_words_shielding(self, sensitive_words_shielding):
+        r"""Sets the sensitive_words_shielding of this ShowGetConfDetailResponse.
+
+        是否隐藏敏感词
+
+        :param sensitive_words_shielding: The sensitive_words_shielding of this ShowGetConfDetailResponse.
+        :type sensitive_words_shielding: bool
+        """
+        self._sensitive_words_shielding = sensitive_words_shielding
 
     def to_dict(self):
         import warnings

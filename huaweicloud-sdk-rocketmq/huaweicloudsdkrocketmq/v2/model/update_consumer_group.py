@@ -19,7 +19,9 @@ class UpdateConsumerGroup:
         'broadcast': 'bool',
         'brokers': 'list[str]',
         'name': 'str',
-        'retry_max_time': 'int'
+        'retry_max_time': 'int',
+        'consume_orderly': 'bool',
+        'group_desc': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class UpdateConsumerGroup:
         'broadcast': 'broadcast',
         'brokers': 'brokers',
         'name': 'name',
-        'retry_max_time': 'retry_max_time'
+        'retry_max_time': 'retry_max_time',
+        'consume_orderly': 'consume_orderly',
+        'group_desc': 'group_desc'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, consume_orderly=None, group_desc=None):
         r"""UpdateConsumerGroup
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class UpdateConsumerGroup:
         :type name: str
         :param retry_max_time: **参数解释**： 最大重试次数。 **约束限制**： 不涉及。 **取值范围**： 1~16。 **默认取值**： 不涉及。
         :type retry_max_time: int
+        :param consume_orderly: **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
+        :type consume_orderly: bool
+        :param group_desc: **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
+        :type group_desc: str
         """
         
         
@@ -54,6 +62,8 @@ class UpdateConsumerGroup:
         self._brokers = None
         self._name = None
         self._retry_max_time = None
+        self._consume_orderly = None
+        self._group_desc = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -63,6 +73,10 @@ class UpdateConsumerGroup:
         if name is not None:
             self.name = name
         self.retry_max_time = retry_max_time
+        if consume_orderly is not None:
+            self.consume_orderly = consume_orderly
+        if group_desc is not None:
+            self.group_desc = group_desc
 
     @property
     def enabled(self):
@@ -173,6 +187,50 @@ class UpdateConsumerGroup:
         :type retry_max_time: int
         """
         self._retry_max_time = retry_max_time
+
+    @property
+    def consume_orderly(self):
+        r"""Gets the consume_orderly of this UpdateConsumerGroup.
+
+        **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
+
+        :return: The consume_orderly of this UpdateConsumerGroup.
+        :rtype: bool
+        """
+        return self._consume_orderly
+
+    @consume_orderly.setter
+    def consume_orderly(self, consume_orderly):
+        r"""Sets the consume_orderly of this UpdateConsumerGroup.
+
+        **参数解释**： 是否按顺序消费。 **约束限制**： 仅RocketMQ实例5.x版本需要填写此参数。[华为云Stack不支持此参数。](tag:hcs,hcs_oemout) **取值范围**： - true：顺序消费。 - false：不按顺序消费。 **默认取值**： 不涉及。
+
+        :param consume_orderly: The consume_orderly of this UpdateConsumerGroup.
+        :type consume_orderly: bool
+        """
+        self._consume_orderly = consume_orderly
+
+    @property
+    def group_desc(self):
+        r"""Gets the group_desc of this UpdateConsumerGroup.
+
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
+
+        :return: The group_desc of this UpdateConsumerGroup.
+        :rtype: str
+        """
+        return self._group_desc
+
+    @group_desc.setter
+    def group_desc(self, group_desc):
+        r"""Sets the group_desc of this UpdateConsumerGroup.
+
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 0~200。 **默认取值**： 不涉及。
+
+        :param group_desc: The group_desc of this UpdateConsumerGroup.
+        :type group_desc: str
+        """
+        self._group_desc = group_desc
 
     def to_dict(self):
         result = {}

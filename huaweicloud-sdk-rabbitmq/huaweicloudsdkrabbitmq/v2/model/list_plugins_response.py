@@ -16,29 +16,58 @@ class ListPluginsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'plugins_modifying': 'bool',
         'plugins': 'list[PluginEntity]'
     }
 
     attribute_map = {
+        'plugins_modifying': 'plugins_modifying',
         'plugins': 'plugins'
     }
 
-    def __init__(self, plugins=None):
+    def __init__(self, plugins_modifying=None, plugins=None):
         r"""ListPluginsResponse
 
         The model defined in huaweicloud sdk
 
+        :param plugins_modifying: 插件是否在变更中。
+        :type plugins_modifying: bool
         :param plugins: 插件信息列表。
         :type plugins: list[:class:`huaweicloudsdkrabbitmq.v2.PluginEntity`]
         """
         
         super().__init__()
 
+        self._plugins_modifying = None
         self._plugins = None
         self.discriminator = None
 
+        if plugins_modifying is not None:
+            self.plugins_modifying = plugins_modifying
         if plugins is not None:
             self.plugins = plugins
+
+    @property
+    def plugins_modifying(self):
+        r"""Gets the plugins_modifying of this ListPluginsResponse.
+
+        插件是否在变更中。
+
+        :return: The plugins_modifying of this ListPluginsResponse.
+        :rtype: bool
+        """
+        return self._plugins_modifying
+
+    @plugins_modifying.setter
+    def plugins_modifying(self, plugins_modifying):
+        r"""Sets the plugins_modifying of this ListPluginsResponse.
+
+        插件是否在变更中。
+
+        :param plugins_modifying: The plugins_modifying of this ListPluginsResponse.
+        :type plugins_modifying: bool
+        """
+        self._plugins_modifying = plugins_modifying
 
     @property
     def plugins(self):

@@ -20,6 +20,7 @@ class Job:
         'job_type': 'str',
         'status': 'str',
         'created_at': 'datetime',
+        'expected_time_seconds': 'int',
         'finished_at': 'datetime',
         'error_message': 'str',
         'sub_jobs': 'list[SubJob]'
@@ -31,12 +32,13 @@ class Job:
         'job_type': 'job_type',
         'status': 'status',
         'created_at': 'created_at',
+        'expected_time_seconds': 'expected_time_seconds',
         'finished_at': 'finished_at',
         'error_message': 'error_message',
         'sub_jobs': 'sub_jobs'
     }
 
-    def __init__(self, id=None, resource_id=None, job_type=None, status=None, created_at=None, finished_at=None, error_message=None, sub_jobs=None):
+    def __init__(self, id=None, resource_id=None, job_type=None, status=None, created_at=None, expected_time_seconds=None, finished_at=None, error_message=None, sub_jobs=None):
         r"""Job
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class Job:
         :type status: str
         :param created_at: 创建时间
         :type created_at: datetime
+        :param expected_time_seconds: 预计剩余执行时间，单位：s
+        :type expected_time_seconds: int
         :param finished_at: 完成时间
         :type finished_at: datetime
         :param error_message: 错误信息
@@ -66,6 +70,7 @@ class Job:
         self._job_type = None
         self._status = None
         self._created_at = None
+        self._expected_time_seconds = None
         self._finished_at = None
         self._error_message = None
         self._sub_jobs = None
@@ -81,6 +86,8 @@ class Job:
             self.status = status
         if created_at is not None:
             self.created_at = created_at
+        if expected_time_seconds is not None:
+            self.expected_time_seconds = expected_time_seconds
         if finished_at is not None:
             self.finished_at = finished_at
         if error_message is not None:
@@ -197,6 +204,28 @@ class Job:
         :type created_at: datetime
         """
         self._created_at = created_at
+
+    @property
+    def expected_time_seconds(self):
+        r"""Gets the expected_time_seconds of this Job.
+
+        预计剩余执行时间，单位：s
+
+        :return: The expected_time_seconds of this Job.
+        :rtype: int
+        """
+        return self._expected_time_seconds
+
+    @expected_time_seconds.setter
+    def expected_time_seconds(self, expected_time_seconds):
+        r"""Sets the expected_time_seconds of this Job.
+
+        预计剩余执行时间，单位：s
+
+        :param expected_time_seconds: The expected_time_seconds of this Job.
+        :type expected_time_seconds: int
+        """
+        self._expected_time_seconds = expected_time_seconds
 
     @property
     def finished_at(self):

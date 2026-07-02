@@ -18,7 +18,6 @@ class LoadBalancer:
         'id': 'str',
         'name': 'str',
         'guaranteed': 'str',
-        'billing_info': 'str',
         'description': 'str',
         'vpc_id': 'str',
         'provisioning_status': 'str',
@@ -33,7 +32,6 @@ class LoadBalancer:
         'id': 'id',
         'name': 'name',
         'guaranteed': 'guaranteed',
-        'billing_info': 'billing_info',
         'description': 'description',
         'vpc_id': 'vpc_id',
         'provisioning_status': 'provisioning_status',
@@ -44,7 +42,7 @@ class LoadBalancer:
         'publicips': 'publicips'
     }
 
-    def __init__(self, id=None, name=None, guaranteed=None, billing_info=None, description=None, vpc_id=None, provisioning_status=None, listeners=None, vip_address=None, vip_port_id=None, ipv6_vip_address=None, publicips=None):
+    def __init__(self, id=None, name=None, guaranteed=None, description=None, vpc_id=None, provisioning_status=None, listeners=None, vip_address=None, vip_port_id=None, ipv6_vip_address=None, publicips=None):
         r"""LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -55,8 +53,6 @@ class LoadBalancer:
         :type name: str
         :param guaranteed: 是否独享型负载均衡器。
         :type guaranteed: str
-        :param billing_info: 资源账单信息。
-        :type billing_info: str
         :param description: 描述信息。
         :type description: str
         :param vpc_id: 负载均衡器所属VPC ID，即虚拟私有云ID。
@@ -80,7 +76,6 @@ class LoadBalancer:
         self._id = None
         self._name = None
         self._guaranteed = None
-        self._billing_info = None
         self._description = None
         self._vpc_id = None
         self._provisioning_status = None
@@ -97,8 +92,6 @@ class LoadBalancer:
             self.name = name
         if guaranteed is not None:
             self.guaranteed = guaranteed
-        if billing_info is not None:
-            self.billing_info = billing_info
         if description is not None:
             self.description = description
         if vpc_id is not None:
@@ -181,28 +174,6 @@ class LoadBalancer:
         :type guaranteed: str
         """
         self._guaranteed = guaranteed
-
-    @property
-    def billing_info(self):
-        r"""Gets the billing_info of this LoadBalancer.
-
-        资源账单信息。
-
-        :return: The billing_info of this LoadBalancer.
-        :rtype: str
-        """
-        return self._billing_info
-
-    @billing_info.setter
-    def billing_info(self, billing_info):
-        r"""Sets the billing_info of this LoadBalancer.
-
-        资源账单信息。
-
-        :param billing_info: The billing_info of this LoadBalancer.
-        :type billing_info: str
-        """
-        self._billing_info = billing_info
 
     @property
     def description(self):

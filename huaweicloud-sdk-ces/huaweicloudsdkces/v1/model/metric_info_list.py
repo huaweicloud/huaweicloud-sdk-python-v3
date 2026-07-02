@@ -15,7 +15,7 @@ class MetricInfoList:
     sensitive_list = []
 
     openapi_types = {
-        'dimensions': 'list[MetricsDimension]',
+        'dimensions': 'list[MetricsDimensionResp]',
         'metric_name': 'str',
         'namespace': 'str',
         'unit': 'str'
@@ -33,13 +33,13 @@ class MetricInfoList:
 
         The model defined in huaweicloud sdk
 
-        :param dimensions: 指标维度
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
-        :param metric_name: 指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为96；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        :param dimensions: **参数解释** 指标维度 
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
+        :param metric_name: **参数解释** 指标名称 **取值范围** 不涉及 
         :type metric_name: str
-        :param namespace: 指标命名空间，例如弹性云服务器命名空间SYS.ECS；格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        :param namespace: **参数解释** 服务命名空间 **取值范围** 不涉及 
         :type namespace: str
-        :param unit: 指标单位。
+        :param unit: **参数解释** 指标单位 **取值范围** 不涉及 
         :type unit: str
         """
         
@@ -60,10 +60,10 @@ class MetricInfoList:
     def dimensions(self):
         r"""Gets the dimensions of this MetricInfoList.
 
-        指标维度
+        **参数解释** 指标维度 
 
         :return: The dimensions of this MetricInfoList.
-        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
         return self._dimensions
 
@@ -71,10 +71,10 @@ class MetricInfoList:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this MetricInfoList.
 
-        指标维度
+        **参数解释** 指标维度 
 
         :param dimensions: The dimensions of this MetricInfoList.
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
         self._dimensions = dimensions
 
@@ -82,7 +82,7 @@ class MetricInfoList:
     def metric_name(self):
         r"""Gets the metric_name of this MetricInfoList.
 
-        指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为96；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        **参数解释** 指标名称 **取值范围** 不涉及 
 
         :return: The metric_name of this MetricInfoList.
         :rtype: str
@@ -93,7 +93,7 @@ class MetricInfoList:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this MetricInfoList.
 
-        指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为96；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        **参数解释** 指标名称 **取值范围** 不涉及 
 
         :param metric_name: The metric_name of this MetricInfoList.
         :type metric_name: str
@@ -104,7 +104,7 @@ class MetricInfoList:
     def namespace(self):
         r"""Gets the namespace of this MetricInfoList.
 
-        指标命名空间，例如弹性云服务器命名空间SYS.ECS；格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        **参数解释** 服务命名空间 **取值范围** 不涉及 
 
         :return: The namespace of this MetricInfoList.
         :rtype: str
@@ -115,7 +115,7 @@ class MetricInfoList:
     def namespace(self, namespace):
         r"""Sets the namespace of this MetricInfoList.
 
-        指标命名空间，例如弹性云服务器命名空间SYS.ECS；格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        **参数解释** 服务命名空间 **取值范围** 不涉及 
 
         :param namespace: The namespace of this MetricInfoList.
         :type namespace: str
@@ -126,7 +126,7 @@ class MetricInfoList:
     def unit(self):
         r"""Gets the unit of this MetricInfoList.
 
-        指标单位。
+        **参数解释** 指标单位 **取值范围** 不涉及 
 
         :return: The unit of this MetricInfoList.
         :rtype: str
@@ -137,7 +137,7 @@ class MetricInfoList:
     def unit(self, unit):
         r"""Sets the unit of this MetricInfoList.
 
-        指标单位。
+        **参数解释** 指标单位 **取值范围** 不涉及 
 
         :param unit: The unit of this MetricInfoList.
         :type unit: str

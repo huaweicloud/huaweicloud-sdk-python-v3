@@ -43,8 +43,7 @@ class SmartConnectValidateEntity:
 
         if task is not None:
             self.task = task
-        if type is not None:
-            self.type = type
+        self.type = type
 
     @property
     def task(self):

@@ -71,8 +71,7 @@ class User:
         self._group_perms = None
         self.discriminator = None
 
-        if access_key is not None:
-            self.access_key = access_key
+        self.access_key = access_key
         self.secret_key = secret_key
         if white_remote_address is not None:
             self.white_remote_address = white_remote_address

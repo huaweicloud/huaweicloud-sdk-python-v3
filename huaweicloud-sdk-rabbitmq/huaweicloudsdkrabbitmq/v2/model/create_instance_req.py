@@ -36,6 +36,9 @@ class CreateInstanceReq:
         'ssl_enable': 'bool',
         'storage_spec_code': 'str',
         'enterprise_project_id': 'str',
+        'disk_encrypted_enable': 'bool',
+        'disk_encrypted_key': 'str',
+        'arch_type': 'str',
         'tags': 'list[TagEntity]',
         'bss_param': 'BssParam'
     }
@@ -62,11 +65,14 @@ class CreateInstanceReq:
         'ssl_enable': 'ssl_enable',
         'storage_spec_code': 'storage_spec_code',
         'enterprise_project_id': 'enterprise_project_id',
+        'disk_encrypted_enable': 'disk_encrypted_enable',
+        'disk_encrypted_key': 'disk_encrypted_key',
+        'arch_type': 'arch_type',
         'tags': 'tags',
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, disk_encrypted_enable=None, disk_encrypted_key=None, arch_type=None, tags=None, bss_param=None):
         r"""CreateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -113,6 +119,12 @@ class CreateInstanceReq:
         :type storage_spec_code: str
         :param enterprise_project_id: **参数解释**： 企业项目ID。 **约束限制**： 若为企业项目账号，该参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type enterprise_project_id: str
+        :param disk_encrypted_enable: **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+        :type disk_encrypted_enable: bool
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type disk_encrypted_key: str
+        :param arch_type: **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86：X86架构。 [- ARM：鲲鹏架构。](tag:hws_test,cmcc,ctc) **默认取值**： 不涉及。
+        :type arch_type: str
         :param tags: **参数解释**： 标签列表。 **约束限制**： 一个RabbitMQ实例最多添加20个标签。
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagEntity`]
         :param bss_param: 
@@ -142,6 +154,9 @@ class CreateInstanceReq:
         self._ssl_enable = None
         self._storage_spec_code = None
         self._enterprise_project_id = None
+        self._disk_encrypted_enable = None
+        self._disk_encrypted_key = None
+        self._arch_type = None
         self._tags = None
         self._bss_param = None
         self.discriminator = None
@@ -149,15 +164,14 @@ class CreateInstanceReq:
         self.name = name
         if description is not None:
             self.description = description
-        self.engine = engine
+        if engine is not None:
+            self.engine = engine
         self.engine_version = engine_version
         if enable_acl is not None:
             self.enable_acl = enable_acl
         self.storage_space = storage_space
-        if access_user is not None:
-            self.access_user = access_user
-        if password is not None:
-            self.password = password
+        self.access_user = access_user
+        self.password = password
         self.vpc_id = vpc_id
         self.security_group_id = security_group_id
         self.subnet_id = subnet_id
@@ -178,6 +192,12 @@ class CreateInstanceReq:
         self.storage_spec_code = storage_spec_code
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if disk_encrypted_enable is not None:
+            self.disk_encrypted_enable = disk_encrypted_enable
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
+        if arch_type is not None:
+            self.arch_type = arch_type
         if tags is not None:
             self.tags = tags
         if bss_param is not None:
@@ -644,6 +664,72 @@ class CreateInstanceReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def disk_encrypted_enable(self):
+        r"""Gets the disk_encrypted_enable of this CreateInstanceReq.
+
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+
+        :return: The disk_encrypted_enable of this CreateInstanceReq.
+        :rtype: bool
+        """
+        return self._disk_encrypted_enable
+
+    @disk_encrypted_enable.setter
+    def disk_encrypted_enable(self, disk_encrypted_enable):
+        r"""Sets the disk_encrypted_enable of this CreateInstanceReq.
+
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+
+        :param disk_encrypted_enable: The disk_encrypted_enable of this CreateInstanceReq.
+        :type disk_encrypted_enable: bool
+        """
+        self._disk_encrypted_enable = disk_encrypted_enable
+
+    @property
+    def disk_encrypted_key(self):
+        r"""Gets the disk_encrypted_key of this CreateInstanceReq.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The disk_encrypted_key of this CreateInstanceReq.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        r"""Sets the disk_encrypted_key of this CreateInstanceReq.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this CreateInstanceReq.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
+
+    @property
+    def arch_type(self):
+        r"""Gets the arch_type of this CreateInstanceReq.
+
+        **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86：X86架构。 [- ARM：鲲鹏架构。](tag:hws_test,cmcc,ctc) **默认取值**： 不涉及。
+
+        :return: The arch_type of this CreateInstanceReq.
+        :rtype: str
+        """
+        return self._arch_type
+
+    @arch_type.setter
+    def arch_type(self, arch_type):
+        r"""Sets the arch_type of this CreateInstanceReq.
+
+        **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86：X86架构。 [- ARM：鲲鹏架构。](tag:hws_test,cmcc,ctc) **默认取值**： 不涉及。
+
+        :param arch_type: The arch_type of this CreateInstanceReq.
+        :type arch_type: str
+        """
+        self._arch_type = arch_type
 
     @property
     def tags(self):

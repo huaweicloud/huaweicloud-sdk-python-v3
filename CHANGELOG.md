@@ -1,3 +1,437 @@
+# 3.1.202 2026-07-02
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListMetrics**
+    - changes of request param
+      - `+ dim.3`
+    - changes of response param
+      - `* meta_data: object<MetaData> -> object<MetricListMetaDataResp>`
+      - `* metrics.dimensions: list<MetricsDimension> -> list<MetricsDimensionResp>`
+  - **BatchListMetricData**
+    - changes of response param
+      - `* metrics.dimensions: list<MetricsDimension> -> list<MetricsDimensionResp>`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDashboardInfos**
+    - changes of response param
+      - `+ dashboards.widget_num`
+      - `+ dashboards.extend_info`
+      - `- dashboards.widgets_num`
+  - **ShowWidget**
+    - changes of response param
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **BatchUpdateNotificationMasks**
+    - changes of request param
+      - `+ relation_type: enum value [EVENT.SYS]`
+  - **UpdateNotificationMask**
+    - changes of request param
+      - `+ relation_type: enum value [EVENT.SYS]`
+  - **ListNotificationMasks**
+    - changes of request param
+      - `- alarm_ids`
+    - changes of response param
+      - `+ notification_masks.relation_type: enum value [EVENT.SYS]`
+  - **ListDashboardWidgets**
+    - changes of response param
+      - `+ widgets.view: enum value [gauge,stat]`
+      - `+ widgets.metrics.y_axis_position`
+      - `+ widgets.metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **CreateDashboardWidgets**
+    - changes of request param
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **BatchUpdateWidgets**
+    - changes of request param
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAgentInvocations**
+    - changes of response param
+      - `+ invocations.invocation_type: enum value [SET_REMOTE_INSTALLER,REMOTE_INSTALL]`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `DeleteConfig`
+  - **ListActions**
+    - changes of response param
+      - `+ totalSize`
+  - **ShowGetConfDetail**
+    - changes of response param
+      - `+ sensitiveWordsShielding`
+  - **ListCerts**
+    - changes of response param
+      - `* certsRecords.fileName: boolean -> string`
+      - `* certsRecords.updateAt: boolean -> string`
+  - **ListYmlsJob**
+    - changes of response param
+      - `+ configList.instType`
+  - **ListConfs**
+    - changes of response param
+      - `+ totalSize`
+      - `+ sensitiveWordsShielding`
+      - `+ confs.sensitiveWordsShielding`
+  - **ShowElbDetail**
+    - changes of response param
+      - `+ healthmonitors.id`
+      - `- loadBalancer.billing_info`
+      - `+ listener.ipgroup.type`
+  - **UpdateEsListener**
+    - changes of response param
+      - `+ listener.default_tls_container_ref`
+      - `+ listener.client_ca_tls_container_ref`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDataArtsStudioInstances**
+    - changes of response param
+      - `+ commodity_orders`
+      - `- commodity_order_lists`
+
+### HuaweiCloud SDK DLI
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRunFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **BatchStopFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **BatchDeleteFlinkJobs**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ImportFlinkJobSavepoint**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ExecuteFlinkJobSavepoint**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **CreateFlinkSqlJob**
+    - changes of request param
+      - `+ flink_log_config`
+  - **UpdateFlinkSqlJob**
+    - changes of request param
+      - `+ flink_log_config`
+  - **CreateFlinkJarJob**
+    - changes of request param
+      - `+ flink_log_config`
+  - **UpdateFlinkJarJob**
+    - changes of request param
+      - `+ flink_log_config`
+  - **DeleteFlinkJob**
+    - changes of response param
+      - `* is_success: boolean -> string`
+  - **ShowFlinkJob**
+    - changes of response param
+      - `+ job_detail.job_config.flink_log_config`
+  - **ListFlinkJobs**
+    - changes of response param
+      - `+ job_list.jobs.job_config.flink_log_config`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `SwitchGaussMySqlProxyAlt`
+    - `ShowDynamicServerlessPolicy`
+    - `UpdateDynamicServerlessPolicy`
+    - `DeleteDynamicServerlessPolicy`
+    - `CollectRealtimeSession`
+    - `ShowRealtimeSessionTaskStatus`
+    - `DownloadRealtimeSession`
+    - `BatchChangeInstanceSpecification`
+    - `ExecuteIntelligentKillSession`
+    - `ListIntelligentKillSessionHistory`
+    - `ShowIntelligentKillSessionStatistic`
+    - `ShowLockWaitSession`
+    - `CheckScheduleTaskExist`
+    - `CreateBackupResourcePackage`
+    - `ShowBackupResourcePackageFlavors`
+    - `ShowBackupVaultLock`
+    - `ModifyBackupVaultLock`
+    - `ListDdlLogs`
+    - `SetDdlLogPolicy`
+    - `DownloadDdlLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ShowKafkaLogTask`, `StartKafkaLogTask`, `StopKafkaLogTask`, `ResizeEngineInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyKafkaTopicQuota**
+    - changes of request param
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **CreateKafkaTopicQuota**
+    - changes of request param
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **DeleteKafkaTopicQuota**
+    - changes of request param
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **ShowKafkaTopicQuota**
+    - changes of response param
+      - `+ quotas.producer-byte-rate`
+      - `+ quotas.consumer-byte-rate`
+      - `- quotas.producer_byte_rate`
+      - `- quotas.consumer_byte_rate`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePostPaidInstanceByEngine**
+    - changes of request param
+      - `+ disk_encrypted_enable`
+      - `+ disk_encrypted_key`
+      - `+ arch_type`
+  - **ShowInstance**
+    - changes of response param
+      - `+ disk_encrypted`
+      - `+ disk_encrypted_key`
+  - **ListPlugins**
+    - changes of response param
+      - `+ plugins_modifying`
+  - **ShowRabbitMqTags**
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ShowRabbitMqProjectTags**
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ListInstancesDetails**
+    - changes of response param
+      - `+ disk_encrypted`
+      - `+ disk_encrypted_key`
+      - `+ instances.disk_encrypted`
+      - `+ instances.disk_encrypted_key`
+  - **ListEngineProducts**
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+      - `+ products.properties.engine_versions`
+  - **ShowEngineInstanceExtendProductInfo**
+    - changes of response param
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+      - `+ products.billing_code`
+      - `+ products.qingtian_incompatible`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CollectPublicationMonitor**
+    - changes of response param
+      - `- replication_rate_trans`
+  - **ListSqlStatistics**
+    - changes of response param
+      - `* list.canUse: double -> boolean`
+  - **ModifyPublication**
+    - changes of request param
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleModifyPub>`
+  - **BatchModifySubscription**
+    - changes of request param
+      - `+ job_schedule.schedule_type`
+      - `+ job_schedule.user_defined`
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleModify>`
+  - **CreatePublication**
+    - changes of request param
+      - `* is_create_snapshot_immediately: string -> boolean`
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleCreate>`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateConsumerGroup**
+    - changes of request param
+      - `+ consume_orderly`
+      - `+ group_desc`
+  - **ListConsumerGroupOfTopic**
+    - changes of response param
+      - `+ total`
+  - **ShowCesHierarchy**
+    - changes of response param
+      - `+ nodes.available_zone`
+  - **CreateInstanceByEngine**
+    - changes of request param
+      - `+ ipv6_broker_address`
+      - `+ ipv6_namesrv_address`
+  - **CreatePostPaidInstanceForRocketMq**
+    - changes of request param
+      - `+ ipv6_broker_address`
+      - `+ ipv6_namesrv_address`
+  - **ShowInstance**
+    - changes of response param
+      - `+ ipv6_namesrv_address`
+      - `+ ipv6_broker_address`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - changes of request param
+      - `+ groups`
+      - `- job_id`
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `+ groups.topic_subscription_count`
+  - **ListRocketInstanceTopics**
+    - changes of response param
+      - `+ created_at`
+      - `+ topics.created_at`
+  - **ShowOneTopic**
+    - changes of response param
+      - `+ created_at`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.disk_encrypted_key`
+      - `+ instances.ipv6_broker_address`
+      - `+ instances.ipv6_namesrv_address`
+  - **ShowConsumerConnections**
+    - changes of response param
+      - `+ clients.consume_type`
+  - **ShowConsumerConnectionsForRocketMq**
+    - changes of response param
+      - `+ clients.consume_type`
+  - **ListEngineProducts**
+    - changes of response param
+      - `+ products.properties.max_tps_per_broker`
+      - `+ products.properties.step_length`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - changes of response param
+      - `* sub_tasks.job_id: string -> int32`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ListVpnGatewayCertificates`, `ListConnectionIpsecSa`, `ListPeerConfigurationSupportedDevices`, `ExportVpnConnectionPeerConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListVpnGatewayJobs**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ jobs.expected_time_seconds`
+      - `+ jobs.status: enum value [running,init]`
+      - `+ jobs.sub_jobs.expected_time_seconds`
+      - `+ jobs.sub_jobs.job_type: enum value [migrate_network_1]`
+  - **ListP2cVpnGatewayJobs**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ jobs.expected_time_seconds`
+      - `+ jobs.status: enum value [running,init]`
+      - `+ jobs.sub_jobs.expected_time_seconds`
+      - `+ jobs.sub_jobs.job_type: enum value [migrate_network_1]`
+  - **CreateVpnConnection**
+    - changes of request param
+      - `+ vpn_connection.enable_health_check`
+    - changes of response param
+      - `+ vpn_connection.enable_health_check`
+  - **BatchCreateVpnConnection**
+    - changes of request param
+      - `+ vpn_connections.enable_health_check`
+    - changes of response param
+      - `+ vpn_connections.enable_health_check`
+
 # 3.1.201 2026-06-25
 
 ### HuaweiCloud SDK BSS

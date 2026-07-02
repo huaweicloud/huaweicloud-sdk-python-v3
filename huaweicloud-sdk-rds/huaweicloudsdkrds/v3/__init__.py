@@ -581,6 +581,9 @@ from huaweicloudsdkrds.v3.model.offsite_backup_instance import OffsiteBackupInst
 from huaweicloudsdkrds.v3.model.open_proxy_request import OpenProxyRequest
 from huaweicloudsdkrds.v3.model.operate_event_req import OperateEventReq
 from huaweicloudsdkrds.v3.model.operate_used_job_schedule import OperateUsedJobSchedule
+from huaweicloudsdkrds.v3.model.operate_used_job_schedule_create import OperateUsedJobScheduleCreate
+from huaweicloudsdkrds.v3.model.operate_used_job_schedule_modify import OperateUsedJobScheduleModify
+from huaweicloudsdkrds.v3.model.operate_used_job_schedule_modify_pub import OperateUsedJobScheduleModifyPub
 from huaweicloudsdkrds.v3.model.ops_window_request import OpsWindowRequest
 from huaweicloudsdkrds.v3.model.pack_log_info import PackLogInfo
 from huaweicloudsdkrds.v3.model.para_group_datastore import ParaGroupDatastore

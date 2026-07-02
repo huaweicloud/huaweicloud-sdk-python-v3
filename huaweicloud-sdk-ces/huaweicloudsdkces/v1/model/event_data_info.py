@@ -31,11 +31,11 @@ class EventDataInfo:
 
         The model defined in huaweicloud sdk
 
-        :param type: 事件类型，例如instance_host_info。
+        :param type: **参数解释**： 事件类型 **取值范围**： 不涉及 
         :type type: str
-        :param timestamp: 事件上报时间。
+        :param timestamp: **参数解释**： 上报时间，UNIX时间戳，单位毫秒 **取值范围**： 不涉及 
         :type timestamp: int
-        :param value: 主机配置信息。
+        :param value: **参数解释**： 主机配置信息 **取值范围**： 不涉及 
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class EventDataInfo:
     def type(self):
         r"""Gets the type of this EventDataInfo.
 
-        事件类型，例如instance_host_info。
+        **参数解释**： 事件类型 **取值范围**： 不涉及 
 
         :return: The type of this EventDataInfo.
         :rtype: str
@@ -65,7 +65,7 @@ class EventDataInfo:
     def type(self, type):
         r"""Sets the type of this EventDataInfo.
 
-        事件类型，例如instance_host_info。
+        **参数解释**： 事件类型 **取值范围**： 不涉及 
 
         :param type: The type of this EventDataInfo.
         :type type: str
@@ -76,7 +76,7 @@ class EventDataInfo:
     def timestamp(self):
         r"""Gets the timestamp of this EventDataInfo.
 
-        事件上报时间。
+        **参数解释**： 上报时间，UNIX时间戳，单位毫秒 **取值范围**： 不涉及 
 
         :return: The timestamp of this EventDataInfo.
         :rtype: int
@@ -87,7 +87,7 @@ class EventDataInfo:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this EventDataInfo.
 
-        事件上报时间。
+        **参数解释**： 上报时间，UNIX时间戳，单位毫秒 **取值范围**： 不涉及 
 
         :param timestamp: The timestamp of this EventDataInfo.
         :type timestamp: int
@@ -98,7 +98,7 @@ class EventDataInfo:
     def value(self):
         r"""Gets the value of this EventDataInfo.
 
-        主机配置信息。
+        **参数解释**： 主机配置信息 **取值范围**： 不涉及 
 
         :return: The value of this EventDataInfo.
         :rtype: str
@@ -109,7 +109,7 @@ class EventDataInfo:
     def value(self, value):
         r"""Sets the value of this EventDataInfo.
 
-        主机配置信息。
+        **参数解释**： 主机配置信息 **取值范围**： 不涉及 
 
         :param value: The value of this EventDataInfo.
         :type value: str

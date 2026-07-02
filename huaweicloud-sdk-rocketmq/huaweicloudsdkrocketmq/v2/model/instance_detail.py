@@ -55,6 +55,7 @@ class InstanceDetail:
         'ipv6_enable': 'bool',
         'support_features': 'str',
         'disk_encrypted': 'bool',
+        'disk_encrypted_key': 'str',
         'ces_version': 'str',
         'node_num': 'int',
         'new_spec_billing_enable': 'bool',
@@ -64,7 +65,9 @@ class InstanceDetail:
         'namesrv_address': 'str',
         'namesrv_domain_name': 'str',
         'broker_address': 'str',
+        'ipv6_broker_address': 'str',
         'public_namesrv_address': 'str',
+        'ipv6_namesrv_address': 'str',
         'public_namesrv_domain_name': 'str',
         'public_broker_address': 'str',
         'grpc_address': 'str',
@@ -126,6 +129,7 @@ class InstanceDetail:
         'ipv6_enable': 'ipv6_enable',
         'support_features': 'support_features',
         'disk_encrypted': 'disk_encrypted',
+        'disk_encrypted_key': 'disk_encrypted_key',
         'ces_version': 'ces_version',
         'node_num': 'node_num',
         'new_spec_billing_enable': 'new_spec_billing_enable',
@@ -135,7 +139,9 @@ class InstanceDetail:
         'namesrv_address': 'namesrv_address',
         'namesrv_domain_name': 'namesrv_domain_name',
         'broker_address': 'broker_address',
+        'ipv6_broker_address': 'ipv6_broker_address',
         'public_namesrv_address': 'public_namesrv_address',
+        'ipv6_namesrv_address': 'ipv6_namesrv_address',
         'public_namesrv_domain_name': 'public_namesrv_domain_name',
         'public_broker_address': 'public_broker_address',
         'grpc_address': 'grpc_address',
@@ -156,7 +162,7 @@ class InstanceDetail:
         'enable_elastic_tps': 'enable_elastic_tps'
     }
 
-    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, arch_type=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, public_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, quota_address=None, max_msg_process_tps=None, config_ssl_need_restart_process=None, tls_mode=None, enable_elastic_tps=None):
+    def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, arch_type=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, disk_encrypted_key=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, dns_enable=None, namesrv_address=None, namesrv_domain_name=None, broker_address=None, ipv6_broker_address=None, public_namesrv_address=None, ipv6_namesrv_address=None, public_namesrv_domain_name=None, public_broker_address=None, grpc_address=None, grpc_domain_name=None, public_grpc_address=None, public_grpc_domain_name=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None, produce_portion=None, consume_portion=None, dr_enable=None, quota_address=None, max_msg_process_tps=None, config_ssl_need_restart_process=None, tls_mode=None, enable_elastic_tps=None):
         r"""InstanceDetail
 
         The model defined in huaweicloud sdk
@@ -241,6 +247,8 @@ class InstanceDetail:
         :type support_features: str
         :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启。 - false：不开启。
         :type disk_encrypted: bool
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+        :type disk_encrypted_key: str
         :param ces_version: **参数解释**： 云监控版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type ces_version: str
         :param node_num: **参数解释**： 节点数。（仅RocketMQ 4.8.0版本会显示此字段） **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
@@ -259,8 +267,12 @@ class InstanceDetail:
         :type namesrv_domain_name: str
         :param broker_address: **参数解释**： 业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type broker_address: str
+        :param ipv6_broker_address: **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_broker_address: str
         :param public_namesrv_address: **参数解释**： 公网元数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_namesrv_address: str
+        :param ipv6_namesrv_address: **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type ipv6_namesrv_address: str
         :param public_namesrv_domain_name: **参数解释**： 公网元数据域名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type public_namesrv_domain_name: str
         :param public_broker_address: **参数解释**： 公网业务数据地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
@@ -341,6 +353,7 @@ class InstanceDetail:
         self._ipv6_enable = None
         self._support_features = None
         self._disk_encrypted = None
+        self._disk_encrypted_key = None
         self._ces_version = None
         self._node_num = None
         self._new_spec_billing_enable = None
@@ -350,7 +363,9 @@ class InstanceDetail:
         self._namesrv_address = None
         self._namesrv_domain_name = None
         self._broker_address = None
+        self._ipv6_broker_address = None
         self._public_namesrv_address = None
+        self._ipv6_namesrv_address = None
         self._public_namesrv_domain_name = None
         self._public_broker_address = None
         self._grpc_address = None
@@ -451,6 +466,8 @@ class InstanceDetail:
             self.support_features = support_features
         if disk_encrypted is not None:
             self.disk_encrypted = disk_encrypted
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
         if ces_version is not None:
             self.ces_version = ces_version
         if node_num is not None:
@@ -469,8 +486,12 @@ class InstanceDetail:
             self.namesrv_domain_name = namesrv_domain_name
         if broker_address is not None:
             self.broker_address = broker_address
+        if ipv6_broker_address is not None:
+            self.ipv6_broker_address = ipv6_broker_address
         if public_namesrv_address is not None:
             self.public_namesrv_address = public_namesrv_address
+        if ipv6_namesrv_address is not None:
+            self.ipv6_namesrv_address = ipv6_namesrv_address
         if public_namesrv_domain_name is not None:
             self.public_namesrv_domain_name = public_namesrv_domain_name
         if public_broker_address is not None:
@@ -1389,6 +1410,28 @@ class InstanceDetail:
         self._disk_encrypted = disk_encrypted
 
     @property
+    def disk_encrypted_key(self):
+        r"""Gets the disk_encrypted_key of this InstanceDetail.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+
+        :return: The disk_encrypted_key of this InstanceDetail.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        r"""Sets the disk_encrypted_key of this InstanceDetail.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this InstanceDetail.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
+
+    @property
     def ces_version(self):
         r"""Gets the ces_version of this InstanceDetail.
 
@@ -1587,6 +1630,28 @@ class InstanceDetail:
         self._broker_address = broker_address
 
     @property
+    def ipv6_broker_address(self):
+        r"""Gets the ipv6_broker_address of this InstanceDetail.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_broker_address of this InstanceDetail.
+        :rtype: str
+        """
+        return self._ipv6_broker_address
+
+    @ipv6_broker_address.setter
+    def ipv6_broker_address(self, ipv6_broker_address):
+        r"""Sets the ipv6_broker_address of this InstanceDetail.
+
+        **参数解释**： 业务数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_broker_address: The ipv6_broker_address of this InstanceDetail.
+        :type ipv6_broker_address: str
+        """
+        self._ipv6_broker_address = ipv6_broker_address
+
+    @property
     def public_namesrv_address(self):
         r"""Gets the public_namesrv_address of this InstanceDetail.
 
@@ -1607,6 +1672,28 @@ class InstanceDetail:
         :type public_namesrv_address: str
         """
         self._public_namesrv_address = public_namesrv_address
+
+    @property
+    def ipv6_namesrv_address(self):
+        r"""Gets the ipv6_namesrv_address of this InstanceDetail.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The ipv6_namesrv_address of this InstanceDetail.
+        :rtype: str
+        """
+        return self._ipv6_namesrv_address
+
+    @ipv6_namesrv_address.setter
+    def ipv6_namesrv_address(self, ipv6_namesrv_address):
+        r"""Sets the ipv6_namesrv_address of this InstanceDetail.
+
+        **参数解释**： 元数据IPv6的地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param ipv6_namesrv_address: The ipv6_namesrv_address of this InstanceDetail.
+        :type ipv6_namesrv_address: str
+        """
+        self._ipv6_namesrv_address = ipv6_namesrv_address
 
     @property
     def public_namesrv_domain_name(self):

@@ -16,29 +16,116 @@ class ShowRabbitMqProjectTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total': 'int',
+        'next_offset': 'int',
+        'previous_offset': 'int',
         'tags': 'list[TagMultyValueEntity]'
     }
 
     attribute_map = {
+        'total': 'total',
+        'next_offset': 'next_offset',
+        'previous_offset': 'previous_offset',
         'tags': 'tags'
     }
 
-    def __init__(self, tags=None):
+    def __init__(self, total=None, next_offset=None, previous_offset=None, tags=None):
         r"""ShowRabbitMqProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
+        :param total: **参数解释**： 查询结果总数。 **取值范围**： 不涉及。
+        :type total: int
+        :param next_offset: **参数解释**： 下一个偏移量。 **取值范围**： 不涉及。
+        :type next_offset: int
+        :param previous_offset: **参数解释**： 前一个偏移量。 **取值范围**： 不涉及。
+        :type previous_offset: int
         :param tags: **参数解释**： 标签列表。
         :type tags: list[:class:`huaweicloudsdkrabbitmq.v2.TagMultyValueEntity`]
         """
         
         super().__init__()
 
+        self._total = None
+        self._next_offset = None
+        self._previous_offset = None
         self._tags = None
         self.discriminator = None
 
+        if total is not None:
+            self.total = total
+        if next_offset is not None:
+            self.next_offset = next_offset
+        if previous_offset is not None:
+            self.previous_offset = previous_offset
         if tags is not None:
             self.tags = tags
+
+    @property
+    def total(self):
+        r"""Gets the total of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 查询结果总数。 **取值范围**： 不涉及。
+
+        :return: The total of this ShowRabbitMqProjectTagsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 查询结果总数。 **取值范围**： 不涉及。
+
+        :param total: The total of this ShowRabbitMqProjectTagsResponse.
+        :type total: int
+        """
+        self._total = total
+
+    @property
+    def next_offset(self):
+        r"""Gets the next_offset of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 下一个偏移量。 **取值范围**： 不涉及。
+
+        :return: The next_offset of this ShowRabbitMqProjectTagsResponse.
+        :rtype: int
+        """
+        return self._next_offset
+
+    @next_offset.setter
+    def next_offset(self, next_offset):
+        r"""Sets the next_offset of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 下一个偏移量。 **取值范围**： 不涉及。
+
+        :param next_offset: The next_offset of this ShowRabbitMqProjectTagsResponse.
+        :type next_offset: int
+        """
+        self._next_offset = next_offset
+
+    @property
+    def previous_offset(self):
+        r"""Gets the previous_offset of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 前一个偏移量。 **取值范围**： 不涉及。
+
+        :return: The previous_offset of this ShowRabbitMqProjectTagsResponse.
+        :rtype: int
+        """
+        return self._previous_offset
+
+    @previous_offset.setter
+    def previous_offset(self, previous_offset):
+        r"""Sets the previous_offset of this ShowRabbitMqProjectTagsResponse.
+
+        **参数解释**： 前一个偏移量。 **取值范围**： 不涉及。
+
+        :param previous_offset: The previous_offset of this ShowRabbitMqProjectTagsResponse.
+        :type previous_offset: int
+        """
+        self._previous_offset = previous_offset
 
     @property
     def tags(self):

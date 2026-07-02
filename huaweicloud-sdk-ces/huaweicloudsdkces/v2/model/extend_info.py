@@ -59,7 +59,7 @@ class ExtendInfo:
         :type _from: int
         :param to: **参数解释** 结束时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
         :type to: int
-        :param screen_color: **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
+        :param screen_color: **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度最长为100个字符 **默认取值** 不涉及 
         :type screen_color: str
         :param enable_screen_auto_play: **参数解释** 监控大屏是否自动切换 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
         :type enable_screen_auto_play: bool
@@ -245,7 +245,7 @@ class ExtendInfo:
     def screen_color(self):
         r"""Gets the screen_color of this ExtendInfo.
 
-        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
+        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度最长为100个字符 **默认取值** 不涉及 
 
         :return: The screen_color of this ExtendInfo.
         :rtype: str
@@ -256,7 +256,7 @@ class ExtendInfo:
     def screen_color(self, screen_color):
         r"""Sets the screen_color of this ExtendInfo.
 
-        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
+        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度最长为100个字符 **默认取值** 不涉及 
 
         :param screen_color: The screen_color of this ExtendInfo.
         :type screen_color: str

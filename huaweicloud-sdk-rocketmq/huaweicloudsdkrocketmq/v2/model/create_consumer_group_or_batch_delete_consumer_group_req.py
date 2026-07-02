@@ -15,7 +15,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str',
+        'groups': 'list[str]',
         'name': 'str',
         'brokers': 'list[str]',
         'broadcast': 'bool',
@@ -26,7 +26,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
     }
 
     attribute_map = {
-        'job_id': 'job_id',
+        'groups': 'groups',
         'name': 'name',
         'brokers': 'brokers',
         'broadcast': 'broadcast',
@@ -36,13 +36,13 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         'group_desc': 'group_desc'
     }
 
-    def __init__(self, job_id=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
+    def __init__(self, groups=None, name=None, brokers=None, broadcast=None, retry_max_time=None, enabled=None, consume_orderly=None, group_desc=None):
         r"""CreateConsumerGroupOrBatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
-        :param job_id: **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type job_id: str
+        :param groups: **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type groups: list[str]
         :param name: **参数解释**： 消费组名称。 **约束限制**： 只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。 当创建消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
         :param brokers: **参数解释**： 关联的代理列表。 **约束限制**： 仅RocketMQ实例4.8.0版本需要填写此参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
@@ -61,7 +61,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         
         
 
-        self._job_id = None
+        self._groups = None
         self._name = None
         self._brokers = None
         self._broadcast = None
@@ -71,8 +71,8 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
         self._group_desc = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
+        if groups is not None:
+            self.groups = groups
         if name is not None:
             self.name = name
         if brokers is not None:
@@ -89,26 +89,26 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupReq:
             self.group_desc = group_desc
 
     @property
-    def job_id(self):
-        r"""Gets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    def groups(self):
+        r"""Gets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :rtype: str
+        :return: The groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :rtype: list[str]
         """
-        return self._job_id
+        return self._groups
 
-    @job_id.setter
-    def job_id(self, job_id):
-        r"""Sets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+    @groups.setter
+    def groups(self, groups):
+        r"""Sets the groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
 
-        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param job_id: The job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
-        :type job_id: str
+        :param groups: The groups of this CreateConsumerGroupOrBatchDeleteConsumerGroupReq.
+        :type groups: list[str]
         """
-        self._job_id = job_id
+        self._groups = groups
 
     @property
     def name(self):

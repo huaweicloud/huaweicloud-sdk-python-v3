@@ -25,6 +25,7 @@ class ListEnginePropertiesEntity:
         'max_bandwidth_per_broker': 'str',
         'min_storage_per_node': 'str',
         'max_tps_per_broker': 'str',
+        'engine_versions': 'str',
         'product_alias': 'str'
     }
 
@@ -39,10 +40,11 @@ class ListEnginePropertiesEntity:
         'max_bandwidth_per_broker': 'max_bandwidth_per_broker',
         'min_storage_per_node': 'min_storage_per_node',
         'max_tps_per_broker': 'max_tps_per_broker',
+        'engine_versions': 'engine_versions',
         'product_alias': 'product_alias'
     }
 
-    def __init__(self, step_length=None, max_queue_per_broker=None, max_connection_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None, product_alias=None):
+    def __init__(self, step_length=None, max_queue_per_broker=None, max_connection_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None, engine_versions=None, product_alias=None):
         r"""ListEnginePropertiesEntity
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListEnginePropertiesEntity:
         :type min_storage_per_node: str
         :param max_tps_per_broker: **参数解释**： 每个Broker的最大TPS。 **取值范围**： 不涉及。
         :type max_tps_per_broker: str
+        :param engine_versions: **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
+        :type engine_versions: str
         :param product_alias: **参数解释**： product_id的别名。 **取值范围**： 不涉及。
         :type product_alias: str
         """
@@ -83,6 +87,7 @@ class ListEnginePropertiesEntity:
         self._max_bandwidth_per_broker = None
         self._min_storage_per_node = None
         self._max_tps_per_broker = None
+        self._engine_versions = None
         self._product_alias = None
         self.discriminator = None
 
@@ -106,6 +111,8 @@ class ListEnginePropertiesEntity:
             self.min_storage_per_node = min_storage_per_node
         if max_tps_per_broker is not None:
             self.max_tps_per_broker = max_tps_per_broker
+        if engine_versions is not None:
+            self.engine_versions = engine_versions
         if product_alias is not None:
             self.product_alias = product_alias
 
@@ -328,6 +335,28 @@ class ListEnginePropertiesEntity:
         :type max_tps_per_broker: str
         """
         self._max_tps_per_broker = max_tps_per_broker
+
+    @property
+    def engine_versions(self):
+        r"""Gets the engine_versions of this ListEnginePropertiesEntity.
+
+        **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
+
+        :return: The engine_versions of this ListEnginePropertiesEntity.
+        :rtype: str
+        """
+        return self._engine_versions
+
+    @engine_versions.setter
+    def engine_versions(self, engine_versions):
+        r"""Sets the engine_versions of this ListEnginePropertiesEntity.
+
+        **参数解释**： 消息引擎版本。 **取值范围**： 不涉及。
+
+        :param engine_versions: The engine_versions of this ListEnginePropertiesEntity.
+        :type engine_versions: str
+        """
+        self._engine_versions = engine_versions
 
     @property
     def product_alias(self):

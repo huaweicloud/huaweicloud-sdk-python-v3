@@ -31,7 +31,7 @@ class AddResourcesReq:
 
         :param resources: 当资源添加方式为手动创建、资源层级为子维度时，资源分组新增资源时只需传递新增的资源信息
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param product_resources: 当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
+        :param product_resources: [天翼云、移动云不支持该字段。](tag:ctc,cmcc)当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
         """
         
@@ -72,7 +72,7 @@ class AddResourcesReq:
     def product_resources(self):
         r"""Gets the product_resources of this AddResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
+        [天翼云、移动云不支持该字段。](tag:ctc,cmcc)当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
 
         :return: The product_resources of this AddResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -83,7 +83,7 @@ class AddResourcesReq:
     def product_resources(self, product_resources):
         r"""Sets the product_resources of this AddResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
+        [天翼云、移动云不支持该字段。](tag:ctc,cmcc)当资源添加方式为手动创建、资源层级为云产品时，资源分组新增资源时需要将已有资源信息和新增的资源信息一起传递
 
         :param product_resources: The product_resources of this AddResourcesReq.
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]

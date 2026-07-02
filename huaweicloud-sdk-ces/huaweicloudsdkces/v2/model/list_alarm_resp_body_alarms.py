@@ -63,17 +63,17 @@ class ListAlarmRespBodyAlarms:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
+        :param alarm_id: **参数解释**： 告警规则id。如 al16558829757444BVVxr999 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
         :type alarm_id: str
         :param name: **参数解释**： 告警规则名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
         :type name: str
         :param description: **参数解释**： 告警描述。     **取值范围**： 长度为[0,256]个字符。 
         :type description: str
-        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
         :type namespace: str
         :param policies: **参数解释**： 告警策略 **取值范围**： 最多包含100个策略。 
         :type policies: list[:class:`huaweicloudsdkces.v2.PolicyResp`]
-        :param resources: **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/en-us/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
+        :param resources: **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
@@ -169,7 +169,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
+        **参数解释**： 告警规则id。如 al16558829757444BVVxr999 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
 
         :return: The alarm_id of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -180,7 +180,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
+        **参数解释**： 告警规则id。如 al16558829757444BVVxr999 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
 
         :param alarm_id: The alarm_id of this ListAlarmRespBodyAlarms.
         :type alarm_id: str
@@ -235,7 +235,7 @@ class ListAlarmRespBodyAlarms:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
 
         :return: The namespace of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -246,7 +246,7 @@ class ListAlarmRespBodyAlarms:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
 
         :param namespace: The namespace of this ListAlarmRespBodyAlarms.
         :type namespace: str
@@ -279,7 +279,7 @@ class ListAlarmRespBodyAlarms:
     def resources(self):
         r"""Gets the resources of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/en-us/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
+        **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
 
         :return: The resources of this ListAlarmRespBodyAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
@@ -290,7 +290,7 @@ class ListAlarmRespBodyAlarms:
     def resources(self, resources):
         r"""Sets the resources of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/en-us/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
+        **参数解释**： 资源列表，关联资源需要使用[[查询告警规则资源列表](https://support.huaweicloud.com/api-ces/ListAlarmRuleResources.html)](tag:hc)[[查询告警规则资源列表](https://support.huaweicloud.com/intl/zh-cn/api-ces/ListAlarmRuleResources.html)](tag:hk)[[查询告警规则资源列表](https://support.huaweicloud.com/eu/en-us/api-ces/ListAlarmRuleResources.html)](tag:hws_eu)[[查询告警规则资源列表](ListAlarmRuleResources.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)获取。 **取值范围**： 最多支持3000个资源。 
 
         :param resources: The resources of this ListAlarmRespBodyAlarms.
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]

@@ -15,29 +15,43 @@ class ListP2cVpnGatewayJobsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_id': 'str'
+        'resource_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'resource_id': 'resource_id'
+        'resource_id': 'resource_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, resource_id=None):
+    def __init__(self, resource_id=None, limit=None, marker=None):
         r"""ListP2cVpnGatewayJobsRequest
 
         The model defined in huaweicloud sdk
 
         :param resource_id: 资源ID
         :type resource_id: str
+        :param limit: 分页查询时每页返回的记录数量
+        :type limit: int
+        :param marker: 上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
+        :type marker: str
         """
         
         
 
         self._resource_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if resource_id is not None:
             self.resource_id = resource_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def resource_id(self):
@@ -60,6 +74,50 @@ class ListP2cVpnGatewayJobsRequest:
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListP2cVpnGatewayJobsRequest.
+
+        分页查询时每页返回的记录数量
+
+        :return: The limit of this ListP2cVpnGatewayJobsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListP2cVpnGatewayJobsRequest.
+
+        分页查询时每页返回的记录数量
+
+        :param limit: The limit of this ListP2cVpnGatewayJobsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListP2cVpnGatewayJobsRequest.
+
+        上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
+
+        :return: The marker of this ListP2cVpnGatewayJobsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListP2cVpnGatewayJobsRequest.
+
+        上一页最后一条资源记录的创建时间，为空时为查询第一页。使用说明：必须与limit一起使用。
+
+        :param marker: The marker of this ListP2cVpnGatewayJobsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

@@ -55,7 +55,8 @@ class UpdateDashboardRequestBody:
             self.dashboard_name = dashboard_name
         if is_favorite is not None:
             self.is_favorite = is_favorite
-        self.row_widget_num = row_widget_num
+        if row_widget_num is not None:
+            self.row_widget_num = row_widget_num
         if extend_info is not None:
             self.extend_info = extend_info
 

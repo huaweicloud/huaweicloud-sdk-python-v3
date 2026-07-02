@@ -21,7 +21,7 @@ class Statistic:
         'calls': 'int',
         'query': 'str',
         'rows': 'int',
-        'can_use': 'float'
+        'can_use': 'bool'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class Statistic:
         :param rows: 扫描行数
         :type rows: int
         :param can_use: 是否可以执行sql限流
-        :type can_use: float
+        :type can_use: bool
         """
         
         
@@ -220,7 +220,7 @@ class Statistic:
         是否可以执行sql限流
 
         :return: The can_use of this Statistic.
-        :rtype: float
+        :rtype: bool
         """
         return self._can_use
 
@@ -231,7 +231,7 @@ class Statistic:
         是否可以执行sql限流
 
         :param can_use: The can_use of this Statistic.
-        :type can_use: float
+        :type can_use: bool
         """
         self._can_use = can_use
 

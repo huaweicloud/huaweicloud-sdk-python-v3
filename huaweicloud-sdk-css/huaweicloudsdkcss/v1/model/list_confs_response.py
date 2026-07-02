@@ -16,29 +16,36 @@ class ListConfsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'confs': 'list[Confs]'
+        'confs': 'list[Confs]',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'confs': 'confs'
+        'confs': 'confs',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, confs=None):
+    def __init__(self, confs=None, total_size=None):
         r"""ListConfsResponse
 
         The model defined in huaweicloud sdk
 
         :param confs: 配置文件列表。
         :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
+        :param total_size: 
+        :type total_size: int
         """
         
         super().__init__()
 
         self._confs = None
+        self._total_size = None
         self.discriminator = None
 
         if confs is not None:
             self.confs = confs
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
     def confs(self):
@@ -61,6 +68,24 @@ class ListConfsResponse(SdkResponse):
         :type confs: list[:class:`huaweicloudsdkcss.v1.Confs`]
         """
         self._confs = confs
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListConfsResponse.
+
+        :return: The total_size of this ListConfsResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListConfsResponse.
+
+        :param total_size: The total_size of this ListConfsResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         import warnings

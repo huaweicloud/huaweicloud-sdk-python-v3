@@ -1467,6 +1467,10 @@ class VpnClient(Client):
         query_params = []
         if 'resource_id' in local_var_params:
             query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -2637,6 +2641,201 @@ class VpnClient(Client):
 
         return http_info
 
+    def export_vpn_connection_peer_configuration(self, request):
+        r"""导出VPN连接配置
+
+        根据连接ID、设备厂商、型号、版本，导出指定VPN连接对应的配置文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportVpnConnectionPeerConfiguration
+        :type request: :class:`huaweicloudsdkvpn.v5.ExportVpnConnectionPeerConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ExportVpnConnectionPeerConfigurationResponse`
+        """
+        http_info = self._export_vpn_connection_peer_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_vpn_connection_peer_configuration_invoker(self, request):
+        http_info = self._export_vpn_connection_peer_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_vpn_connection_peer_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}/peer-configuration/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportVpnConnectionPeerConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_connection_id' in local_var_params:
+            path_params['vpn_connection_id'] = local_var_params['vpn_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_connection_ipsec_sa(self, request):
+        r"""查询VPN连接网段协商信息
+
+        根据连接ID，查询指定的VPN连接网段协商信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListConnectionIpsecSa
+        :type request: :class:`huaweicloudsdkvpn.v5.ListConnectionIpsecSaRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListConnectionIpsecSaResponse`
+        """
+        http_info = self._list_connection_ipsec_sa_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_connection_ipsec_sa_invoker(self, request):
+        http_info = self._list_connection_ipsec_sa_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_connection_ipsec_sa_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}/ipsec-sa",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionIpsecSaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpn_connection_id' in local_var_params:
+            path_params['vpn_connection_id'] = local_var_params['vpn_connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_peer_configuration_supported_devices(self, request):
+        r"""获取可导出VPN连接配置的设备
+
+        获取可导出VPN连接配置的设备厂商、型号、版本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPeerConfigurationSupportedDevices
+        :type request: :class:`huaweicloudsdkvpn.v5.ListPeerConfigurationSupportedDevicesRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListPeerConfigurationSupportedDevicesResponse`
+        """
+        http_info = self._list_peer_configuration_supported_devices_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_peer_configuration_supported_devices_invoker(self, request):
+        http_info = self._list_peer_configuration_supported_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_peer_configuration_supported_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/peer-configuration/supported-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPeerConfigurationSupportedDevicesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_vpn_connections(self, request):
         r"""查询VPN连接列表
 
@@ -3601,6 +3800,10 @@ class VpnClient(Client):
         query_params = []
         if 'resource_id' in local_var_params:
             query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -4016,6 +4219,75 @@ class VpnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_gateway_certificates(self, request):
+        r"""查询租户下的的所有VPN网关证书
+
+        查询租户下的所有VPN网关证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVpnGatewayCertificates
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnGatewayCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnGatewayCertificatesResponse`
+        """
+        http_info = self._list_vpn_gateway_certificates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_gateway_certificates_invoker(self, request):
+        http_info = self._list_vpn_gateway_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpn_gateway_certificates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateway-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnGatewayCertificatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'pre_expire_days' in local_var_params:
+            query_params.append(('pre_expire_days', local_var_params['pre_expire_days']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

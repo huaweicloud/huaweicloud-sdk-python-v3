@@ -16,29 +16,36 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'groups': 'list[str]'
+        'groups': 'list[str]',
+        'total': 'int'
     }
 
     attribute_map = {
-        'groups': 'groups'
+        'groups': 'groups',
+        'total': 'total'
     }
 
-    def __init__(self, groups=None):
+    def __init__(self, groups=None, total=None):
         r"""ListConsumerGroupOfTopicResponse
 
         The model defined in huaweicloud sdk
 
         :param groups: **参数解释**： 消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type groups: list[str]
+        :param total: **参数解释**： Topic总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type total: int
         """
         
         super().__init__()
 
         self._groups = None
+        self._total = None
         self.discriminator = None
 
         if groups is not None:
             self.groups = groups
+        if total is not None:
+            self.total = total
 
     @property
     def groups(self):
@@ -61,6 +68,28 @@ class ListConsumerGroupOfTopicResponse(SdkResponse):
         :type groups: list[str]
         """
         self._groups = groups
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListConsumerGroupOfTopicResponse.
+
+        **参数解释**： Topic总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The total of this ListConsumerGroupOfTopicResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListConsumerGroupOfTopicResponse.
+
+        **参数解释**： Topic总数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param total: The total of this ListConsumerGroupOfTopicResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

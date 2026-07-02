@@ -3599,6 +3599,75 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def resize_engine_instance_async(self, request):
+        r"""实例扩容
+
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeEngineInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceResponse`
+        """
+        http_info = self._resize_engine_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_engine_instance_async_invoker(self, request):
+        http_info = self._resize_engine_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_engine_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeEngineInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def resize_kafka_instance_async(self, request):
         r"""实例扩容
 
@@ -4874,6 +4943,73 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_kafka_log_task_async(self, request):
+        r"""查询日志任务
+
+        查询日志任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKafkaLogTask
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaLogTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaLogTaskResponse`
+        """
+        http_info = self._show_kafka_log_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kafka_log_task_async_invoker(self, request):
+        http_info = self._show_kafka_log_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kafka_log_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/logs/{log_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKafkaLogTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'log_type' in local_var_params:
+            path_params['log_type'] = local_var_params['log_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -6207,6 +6343,142 @@ class KafkaAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_kafka_log_task_async(self, request):
+        r"""开启日志任务
+
+        开启日志任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartKafkaLogTask
+        :type request: :class:`huaweicloudsdkkafka.v2.StartKafkaLogTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.StartKafkaLogTaskResponse`
+        """
+        http_info = self._start_kafka_log_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_kafka_log_task_async_invoker(self, request):
+        http_info = self._start_kafka_log_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_kafka_log_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/logs/{log_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartKafkaLogTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'log_type' in local_var_params:
+            path_params['log_type'] = local_var_params['log_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_kafka_log_task_async(self, request):
+        r"""停止日志任务
+
+        停止日志任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopKafkaLogTask
+        :type request: :class:`huaweicloudsdkkafka.v2.StopKafkaLogTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.StopKafkaLogTaskResponse`
+        """
+        http_info = self._stop_kafka_log_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_kafka_log_task_async_invoker(self, request):
+        http_info = self._stop_kafka_log_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_kafka_log_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/logs/{log_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopKafkaLogTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'log_type' in local_var_params:
+            path_params['log_type'] = local_var_params['log_type']
 
         query_params = []
 

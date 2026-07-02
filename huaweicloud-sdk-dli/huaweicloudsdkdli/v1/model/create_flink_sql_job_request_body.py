@@ -42,6 +42,7 @@ class CreateFlinkSqlJobRequestBody:
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'runtime_config': 'str',
+        'flink_log_config': 'str',
         'flink_version': 'str',
         'execution_agency_urn': 'str',
         'resource_config_version': 'str',
@@ -76,13 +77,14 @@ class CreateFlinkSqlJobRequestBody:
         'resume_checkpoint': 'resume_checkpoint',
         'resume_max_num': 'resume_max_num',
         'runtime_config': 'runtime_config',
+        'flink_log_config': 'flink_log_config',
         'flink_version': 'flink_version',
         'execution_agency_urn': 'execution_agency_urn',
         'resource_config_version': 'resource_config_version',
         'resource_config': 'resource_config'
     }
 
-    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, tags=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, flink_version=None, execution_agency_urn=None, resource_config_version=None, resource_config=None):
+    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, tags=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, flink_log_config=None, flink_version=None, execution_agency_urn=None, resource_config_version=None, resource_config=None):
         r"""CreateFlinkSqlJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -141,6 +143,8 @@ class CreateFlinkSqlJobRequestBody:
         :type resume_max_num: int
         :param runtime_config: Flink作业运行时自定义优化参数。
         :type runtime_config: str
+        :param flink_log_config: Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\&quot;root_logger_level\\\&quot;:\\\&quot;INFO\\\&quot;,\\\&quot;loggers_level_of_class\\\&quot;:{\\\&quot;org.apache.flink\\\&quot;:\\\&quot;WARN\\\&quot;,\\\&quot;org.apache.kafka.clients.consumer.KafkaConsumer\\\&quot;:\\\&quot;DEBUG\\\&quot;,\\\&quot;com.mycompany.job.MainFunction\\\&quot;:\\\&quot;TRACE\\\&quot;}}
+        :type flink_log_config: str
         :param flink_version: Flink版本。当前只支持1.10和1.12。
         :type flink_version: str
         :param execution_agency_urn: 授权给DLI的委托名。Flink1.15版本时支持配置该参数。
@@ -180,6 +184,7 @@ class CreateFlinkSqlJobRequestBody:
         self._resume_checkpoint = None
         self._resume_max_num = None
         self._runtime_config = None
+        self._flink_log_config = None
         self._flink_version = None
         self._execution_agency_urn = None
         self._resource_config_version = None
@@ -239,6 +244,8 @@ class CreateFlinkSqlJobRequestBody:
             self.resume_max_num = resume_max_num
         if runtime_config is not None:
             self.runtime_config = runtime_config
+        if flink_log_config is not None:
+            self.flink_log_config = flink_log_config
         if flink_version is not None:
             self.flink_version = flink_version
         if execution_agency_urn is not None:
@@ -841,6 +848,28 @@ class CreateFlinkSqlJobRequestBody:
         :type runtime_config: str
         """
         self._runtime_config = runtime_config
+
+    @property
+    def flink_log_config(self):
+        r"""Gets the flink_log_config of this CreateFlinkSqlJobRequestBody.
+
+        Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\"root_logger_level\\\":\\\"INFO\\\",\\\"loggers_level_of_class\\\":{\\\"org.apache.flink\\\":\\\"WARN\\\",\\\"org.apache.kafka.clients.consumer.KafkaConsumer\\\":\\\"DEBUG\\\",\\\"com.mycompany.job.MainFunction\\\":\\\"TRACE\\\"}}
+
+        :return: The flink_log_config of this CreateFlinkSqlJobRequestBody.
+        :rtype: str
+        """
+        return self._flink_log_config
+
+    @flink_log_config.setter
+    def flink_log_config(self, flink_log_config):
+        r"""Sets the flink_log_config of this CreateFlinkSqlJobRequestBody.
+
+        Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\"root_logger_level\\\":\\\"INFO\\\",\\\"loggers_level_of_class\\\":{\\\"org.apache.flink\\\":\\\"WARN\\\",\\\"org.apache.kafka.clients.consumer.KafkaConsumer\\\":\\\"DEBUG\\\",\\\"com.mycompany.job.MainFunction\\\":\\\"TRACE\\\"}}
+
+        :param flink_log_config: The flink_log_config of this CreateFlinkSqlJobRequestBody.
+        :type flink_log_config: str
+        """
+        self._flink_log_config = flink_log_config
 
     @property
     def flink_version(self):

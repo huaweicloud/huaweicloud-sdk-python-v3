@@ -17,6 +17,7 @@ class RabbitMQExtendProductInfoEntity:
     openapi_types = {
         'type': 'str',
         'product_id': 'str',
+        'billing_code': 'str',
         'ecs_flavor_id': 'str',
         'arch_types': 'list[str]',
         'charging_mode': 'list[str]',
@@ -24,12 +25,14 @@ class RabbitMQExtendProductInfoEntity:
         'properties': 'RabbitMQExtendProductPropertiesEntity',
         'available_zones': 'list[str]',
         'unavailable_zones': 'list[str]',
-        'support_features': 'list[RabbitMQProductSupportFeaturesEntity]'
+        'support_features': 'list[RabbitMQProductSupportFeaturesEntity]',
+        'qingtian_incompatible': 'bool'
     }
 
     attribute_map = {
         'type': 'type',
         'product_id': 'product_id',
+        'billing_code': 'billing_code',
         'ecs_flavor_id': 'ecs_flavor_id',
         'arch_types': 'arch_types',
         'charging_mode': 'charging_mode',
@@ -37,10 +40,11 @@ class RabbitMQExtendProductInfoEntity:
         'properties': 'properties',
         'available_zones': 'available_zones',
         'unavailable_zones': 'unavailable_zones',
-        'support_features': 'support_features'
+        'support_features': 'support_features',
+        'qingtian_incompatible': 'qingtian_incompatible'
     }
 
-    def __init__(self, type=None, product_id=None, ecs_flavor_id=None, arch_types=None, charging_mode=None, ios=None, properties=None, available_zones=None, unavailable_zones=None, support_features=None):
+    def __init__(self, type=None, product_id=None, billing_code=None, ecs_flavor_id=None, arch_types=None, charging_mode=None, ios=None, properties=None, available_zones=None, unavailable_zones=None, support_features=None, qingtian_incompatible=None):
         r"""RabbitMQExtendProductInfoEntity
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,8 @@ class RabbitMQExtendProductInfoEntity:
         :type type: str
         :param product_id: 产品ID。
         :type product_id: str
+        :param billing_code: 账单计费类型。
+        :type billing_code: str
         :param ecs_flavor_id: 该产品使用的ECS规格。
         :type ecs_flavor_id: str
         :param arch_types: 支持的CPU架构类型
@@ -65,12 +71,15 @@ class RabbitMQExtendProductInfoEntity:
         :type unavailable_zones: list[str]
         :param support_features: 支持的特性功能。
         :type support_features: list[:class:`huaweicloudsdkrabbitmq.v2.RabbitMQProductSupportFeaturesEntity`]
+        :param qingtian_incompatible: 是否兼容擎天。
+        :type qingtian_incompatible: bool
         """
         
         
 
         self._type = None
         self._product_id = None
+        self._billing_code = None
         self._ecs_flavor_id = None
         self._arch_types = None
         self._charging_mode = None
@@ -79,12 +88,15 @@ class RabbitMQExtendProductInfoEntity:
         self._available_zones = None
         self._unavailable_zones = None
         self._support_features = None
+        self._qingtian_incompatible = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
         if product_id is not None:
             self.product_id = product_id
+        if billing_code is not None:
+            self.billing_code = billing_code
         if ecs_flavor_id is not None:
             self.ecs_flavor_id = ecs_flavor_id
         if arch_types is not None:
@@ -101,6 +113,8 @@ class RabbitMQExtendProductInfoEntity:
             self.unavailable_zones = unavailable_zones
         if support_features is not None:
             self.support_features = support_features
+        if qingtian_incompatible is not None:
+            self.qingtian_incompatible = qingtian_incompatible
 
     @property
     def type(self):
@@ -145,6 +159,28 @@ class RabbitMQExtendProductInfoEntity:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def billing_code(self):
+        r"""Gets the billing_code of this RabbitMQExtendProductInfoEntity.
+
+        账单计费类型。
+
+        :return: The billing_code of this RabbitMQExtendProductInfoEntity.
+        :rtype: str
+        """
+        return self._billing_code
+
+    @billing_code.setter
+    def billing_code(self, billing_code):
+        r"""Sets the billing_code of this RabbitMQExtendProductInfoEntity.
+
+        账单计费类型。
+
+        :param billing_code: The billing_code of this RabbitMQExtendProductInfoEntity.
+        :type billing_code: str
+        """
+        self._billing_code = billing_code
 
     @property
     def ecs_flavor_id(self):
@@ -317,6 +353,28 @@ class RabbitMQExtendProductInfoEntity:
         :type support_features: list[:class:`huaweicloudsdkrabbitmq.v2.RabbitMQProductSupportFeaturesEntity`]
         """
         self._support_features = support_features
+
+    @property
+    def qingtian_incompatible(self):
+        r"""Gets the qingtian_incompatible of this RabbitMQExtendProductInfoEntity.
+
+        是否兼容擎天。
+
+        :return: The qingtian_incompatible of this RabbitMQExtendProductInfoEntity.
+        :rtype: bool
+        """
+        return self._qingtian_incompatible
+
+    @qingtian_incompatible.setter
+    def qingtian_incompatible(self, qingtian_incompatible):
+        r"""Sets the qingtian_incompatible of this RabbitMQExtendProductInfoEntity.
+
+        是否兼容擎天。
+
+        :param qingtian_incompatible: The qingtian_incompatible of this RabbitMQExtendProductInfoEntity.
+        :type qingtian_incompatible: bool
+        """
+        self._qingtian_incompatible = qingtian_incompatible
 
     def to_dict(self):
         result = {}

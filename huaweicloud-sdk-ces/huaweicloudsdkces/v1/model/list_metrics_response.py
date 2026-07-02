@@ -17,7 +17,7 @@ class ListMetricsResponse(SdkResponse):
 
     openapi_types = {
         'metrics': 'list[MetricInfoList]',
-        'meta_data': 'MetaData'
+        'meta_data': 'MetricListMetaDataResp'
     }
 
     attribute_map = {
@@ -30,10 +30,10 @@ class ListMetricsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param metrics: 指标信息列表
+        :param metrics: **参数解释** 指标信息列表 
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfoList`]
         :param meta_data: 
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetricListMetaDataResp`
         """
         
         super().__init__()
@@ -51,7 +51,7 @@ class ListMetricsResponse(SdkResponse):
     def metrics(self):
         r"""Gets the metrics of this ListMetricsResponse.
 
-        指标信息列表
+        **参数解释** 指标信息列表 
 
         :return: The metrics of this ListMetricsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.MetricInfoList`]
@@ -62,7 +62,7 @@ class ListMetricsResponse(SdkResponse):
     def metrics(self, metrics):
         r"""Sets the metrics of this ListMetricsResponse.
 
-        指标信息列表
+        **参数解释** 指标信息列表 
 
         :param metrics: The metrics of this ListMetricsResponse.
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfoList`]
@@ -74,7 +74,7 @@ class ListMetricsResponse(SdkResponse):
         r"""Gets the meta_data of this ListMetricsResponse.
 
         :return: The meta_data of this ListMetricsResponse.
-        :rtype: :class:`huaweicloudsdkces.v1.MetaData`
+        :rtype: :class:`huaweicloudsdkces.v1.MetricListMetaDataResp`
         """
         return self._meta_data
 
@@ -83,7 +83,7 @@ class ListMetricsResponse(SdkResponse):
         r"""Sets the meta_data of this ListMetricsResponse.
 
         :param meta_data: The meta_data of this ListMetricsResponse.
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetricListMetaDataResp`
         """
         self._meta_data = meta_data
 

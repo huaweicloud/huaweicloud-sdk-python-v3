@@ -3966,7 +3966,7 @@ class CssAsyncClient(Client):
 
         return http_info
 
-    def start_vpecp_async(self, request):
+    def start_vpcep_async(self, request):
         r"""开启终端节点服务
 
         该接口用于开启终端节点服务。
@@ -3974,23 +3974,23 @@ class CssAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for StartVpecp
-        :type request: :class:`huaweicloudsdkcss.v1.StartVpecpRequest`
-        :rtype: :class:`huaweicloudsdkcss.v1.StartVpecpResponse`
+        :param request: Request instance for StartVpcep
+        :type request: :class:`huaweicloudsdkcss.v1.StartVpcepRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.StartVpcepResponse`
         """
-        http_info = self._start_vpecp_http_info(request)
+        http_info = self._start_vpcep_http_info(request)
         return self._call_api(**http_info)
 
-    def start_vpecp_async_invoker(self, request):
-        http_info = self._start_vpecp_http_info(request)
+    def start_vpcep_async_invoker(self, request):
+        http_info = self._start_vpcep_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _start_vpecp_http_info(self, request):
+    def _start_vpcep_http_info(self, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/open",
             "request_type": request.__class__.__name__,
-            "response_type": "StartVpecpResponse"
+            "response_type": "StartVpcepResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4293,7 +4293,7 @@ class CssAsyncClient(Client):
 
         return http_info
 
-    def stop_vpecp_async(self, request):
+    def stop_vpcep_async(self, request):
         r"""关闭终端节点服务
 
         该接口用于关闭终端节点服务。
@@ -4301,23 +4301,23 @@ class CssAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for StopVpecp
-        :type request: :class:`huaweicloudsdkcss.v1.StopVpecpRequest`
-        :rtype: :class:`huaweicloudsdkcss.v1.StopVpecpResponse`
+        :param request: Request instance for StopVpcep
+        :type request: :class:`huaweicloudsdkcss.v1.StopVpcepRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.StopVpcepResponse`
         """
-        http_info = self._stop_vpecp_http_info(request)
+        http_info = self._stop_vpcep_http_info(request)
         return self._call_api(**http_info)
 
-    def stop_vpecp_async_invoker(self, request):
-        http_info = self._stop_vpecp_http_info(request)
+    def stop_vpcep_async_invoker(self, request):
+        http_info = self._stop_vpcep_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _stop_vpecp_http_info(self, request):
+    def _stop_vpcep_http_info(self, request):
         http_info = {
             "method": "PUT",
             "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/close",
             "request_type": request.__class__.__name__,
-            "response_type": "StopVpecpResponse"
+            "response_type": "StopVpcepResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6484,73 +6484,6 @@ class CssAsyncClient(Client):
             "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/delete",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteConfResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'cluster_id' in local_var_params:
-            path_params['cluster_id'] = local_var_params['cluster_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_config_async(self, request):
-        r"""删除配置文件V2
-
-        删除配置文件。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteConfig
-        :type request: :class:`huaweicloudsdkcss.v1.DeleteConfigRequest`
-        :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfigResponse`
-        """
-        http_info = self._delete_config_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_config_async_invoker(self, request):
-        http_info = self._delete_config_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_config_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/lgsconf/delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

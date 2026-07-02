@@ -18,6 +18,7 @@ class SubJob:
         'id': 'str',
         'job_type': 'str',
         'status': 'str',
+        'expected_time_seconds': 'int',
         'created_at': 'datetime',
         'finished_at': 'datetime',
         'error_message': 'str'
@@ -27,12 +28,13 @@ class SubJob:
         'id': 'id',
         'job_type': 'job_type',
         'status': 'status',
+        'expected_time_seconds': 'expected_time_seconds',
         'created_at': 'created_at',
         'finished_at': 'finished_at',
         'error_message': 'error_message'
     }
 
-    def __init__(self, id=None, job_type=None, status=None, created_at=None, finished_at=None, error_message=None):
+    def __init__(self, id=None, job_type=None, status=None, expected_time_seconds=None, created_at=None, finished_at=None, error_message=None):
         r"""SubJob
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class SubJob:
         :type job_type: str
         :param status: 任务状态
         :type status: str
+        :param expected_time_seconds: 预计剩余执行时间，单位：s
+        :type expected_time_seconds: int
         :param created_at: 创建时间
         :type created_at: datetime
         :param finished_at: 完成时间
@@ -56,6 +60,7 @@ class SubJob:
         self._id = None
         self._job_type = None
         self._status = None
+        self._expected_time_seconds = None
         self._created_at = None
         self._finished_at = None
         self._error_message = None
@@ -67,6 +72,8 @@ class SubJob:
             self.job_type = job_type
         if status is not None:
             self.status = status
+        if expected_time_seconds is not None:
+            self.expected_time_seconds = expected_time_seconds
         if created_at is not None:
             self.created_at = created_at
         if finished_at is not None:
@@ -139,6 +146,28 @@ class SubJob:
         :type status: str
         """
         self._status = status
+
+    @property
+    def expected_time_seconds(self):
+        r"""Gets the expected_time_seconds of this SubJob.
+
+        预计剩余执行时间，单位：s
+
+        :return: The expected_time_seconds of this SubJob.
+        :rtype: int
+        """
+        return self._expected_time_seconds
+
+    @expected_time_seconds.setter
+    def expected_time_seconds(self, expected_time_seconds):
+        r"""Sets the expected_time_seconds of this SubJob.
+
+        预计剩余执行时间，单位：s
+
+        :param expected_time_seconds: The expected_time_seconds of this SubJob.
+        :type expected_time_seconds: int
+        """
+        self._expected_time_seconds = expected_time_seconds
 
     @property
     def created_at(self):

@@ -367,7 +367,7 @@ class CssClient(Client):
         return http_info
 
     def delete_logstash_conf(self, request):
-        r"""删除配置文件
+        r"""删除配置文件V2
 
         删除配置文件。
         
@@ -434,7 +434,7 @@ class CssClient(Client):
         return http_info
 
     def delete_logstash_template(self, request):
-        r"""删除自定义模板
+        r"""删除自定义模板V2
 
         此接口用于删除自定义模板。
         

@@ -19,6 +19,7 @@ class ClientData:
         'version': 'str',
         'client_id': 'str',
         'client_addr': 'str',
+        'consume_type': 'str',
         'subscriptions': 'list[Subscription]'
     }
 
@@ -27,10 +28,11 @@ class ClientData:
         'version': 'version',
         'client_id': 'client_id',
         'client_addr': 'client_addr',
+        'consume_type': 'consume_type',
         'subscriptions': 'subscriptions'
     }
 
-    def __init__(self, language=None, version=None, client_id=None, client_addr=None, subscriptions=None):
+    def __init__(self, language=None, version=None, client_id=None, client_addr=None, consume_type=None, subscriptions=None):
         r"""ClientData
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ClientData:
         :type client_id: str
         :param client_addr: **参数解释**： 客户端地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type client_addr: str
+        :param consume_type: **参数解释**： 消费类型。 **约束限制**： 不涉及。 **取值范围**： - CONSUME_POP：POP消费模式 - CONSUME_PASSIVELY：推消费模式 - CONSUME_ACTIVELY：拉消费模式 **默认取值**： 不涉及。
+        :type consume_type: str
         :param subscriptions: **参数解释**： 订阅关系列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subscriptions: list[:class:`huaweicloudsdkrocketmq.v2.Subscription`]
         """
@@ -53,6 +57,7 @@ class ClientData:
         self._version = None
         self._client_id = None
         self._client_addr = None
+        self._consume_type = None
         self._subscriptions = None
         self.discriminator = None
 
@@ -64,6 +69,8 @@ class ClientData:
             self.client_id = client_id
         if client_addr is not None:
             self.client_addr = client_addr
+        if consume_type is not None:
+            self.consume_type = consume_type
         if subscriptions is not None:
             self.subscriptions = subscriptions
 
@@ -154,6 +161,28 @@ class ClientData:
         :type client_addr: str
         """
         self._client_addr = client_addr
+
+    @property
+    def consume_type(self):
+        r"""Gets the consume_type of this ClientData.
+
+        **参数解释**： 消费类型。 **约束限制**： 不涉及。 **取值范围**： - CONSUME_POP：POP消费模式 - CONSUME_PASSIVELY：推消费模式 - CONSUME_ACTIVELY：拉消费模式 **默认取值**： 不涉及。
+
+        :return: The consume_type of this ClientData.
+        :rtype: str
+        """
+        return self._consume_type
+
+    @consume_type.setter
+    def consume_type(self, consume_type):
+        r"""Sets the consume_type of this ClientData.
+
+        **参数解释**： 消费类型。 **约束限制**： 不涉及。 **取值范围**： - CONSUME_POP：POP消费模式 - CONSUME_PASSIVELY：推消费模式 - CONSUME_ACTIVELY：拉消费模式 **默认取值**： 不涉及。
+
+        :param consume_type: The consume_type of this ClientData.
+        :type consume_type: str
+        """
+        self._consume_type = consume_type
 
     @property
     def subscriptions(self):

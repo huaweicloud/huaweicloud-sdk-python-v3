@@ -24,6 +24,8 @@ class ProductEntityProperties:
         'max_storage_per_node': 'str',
         'product_alias': 'str',
         'max_tps_per_rcu': 'str',
+        'max_tps_per_broker': 'str',
+        'step_length': 'str',
         'engine_versions': 'str',
         'min_storage': 'str',
         'min_storage_per_node': 'str',
@@ -43,6 +45,8 @@ class ProductEntityProperties:
         'max_storage_per_node': 'max_storage_per_node',
         'product_alias': 'product_alias',
         'max_tps_per_rcu': 'max_tps_per_rcu',
+        'max_tps_per_broker': 'max_tps_per_broker',
+        'step_length': 'step_length',
         'engine_versions': 'engine_versions',
         'min_storage': 'min_storage',
         'min_storage_per_node': 'min_storage_per_node',
@@ -52,7 +56,7 @@ class ProductEntityProperties:
         'min_broker': 'min_broker'
     }
 
-    def __init__(self, max_topic=None, broker_num=None, core=None, max_consumer=None, rcu=None, max_storage=None, max_storage_per_node=None, product_alias=None, max_tps_per_rcu=None, engine_versions=None, min_storage=None, min_storage_per_node=None, max_broker=None, max_topic_per_broker=None, max_consumer_per_broker=None, min_broker=None):
+    def __init__(self, max_topic=None, broker_num=None, core=None, max_consumer=None, rcu=None, max_storage=None, max_storage_per_node=None, product_alias=None, max_tps_per_rcu=None, max_tps_per_broker=None, step_length=None, engine_versions=None, min_storage=None, min_storage_per_node=None, max_broker=None, max_topic_per_broker=None, max_consumer_per_broker=None, min_broker=None):
         r"""ProductEntityProperties
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class ProductEntityProperties:
         :type product_alias: str
         :param max_tps_per_rcu: **参数解释**： 单个rcu最大TPS。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type max_tps_per_rcu: str
+        :param max_tps_per_broker: **参数解释**： 单个broker最大TPS。 **约束限制**： 不涉及。
+        :type max_tps_per_broker: str
+        :param step_length: **参数解释**： 每次增加或减少的代理数量。 **约束限制**： 不涉及。
+        :type step_length: str
         :param engine_versions: **参数解释**： 消息引擎版本。  **约束限制**： 不涉及。  **取值范围**： [- 4.8.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,cmcc,ax,srg) [- 5.x](tag:hws,hws_eu,hws_hk,ctc,g42,hk_g42,tm,sbc,hk_sbc,hk_tm,dt,srg) **默认取值**： 不涉及。
         :type engine_versions: str
         :param min_storage: **参数解释**： 最小存储空间，单位为GB。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
@@ -102,6 +110,8 @@ class ProductEntityProperties:
         self._max_storage_per_node = None
         self._product_alias = None
         self._max_tps_per_rcu = None
+        self._max_tps_per_broker = None
+        self._step_length = None
         self._engine_versions = None
         self._min_storage = None
         self._min_storage_per_node = None
@@ -129,6 +139,10 @@ class ProductEntityProperties:
             self.product_alias = product_alias
         if max_tps_per_rcu is not None:
             self.max_tps_per_rcu = max_tps_per_rcu
+        if max_tps_per_broker is not None:
+            self.max_tps_per_broker = max_tps_per_broker
+        if step_length is not None:
+            self.step_length = step_length
         if engine_versions is not None:
             self.engine_versions = engine_versions
         if min_storage is not None:
@@ -341,6 +355,50 @@ class ProductEntityProperties:
         :type max_tps_per_rcu: str
         """
         self._max_tps_per_rcu = max_tps_per_rcu
+
+    @property
+    def max_tps_per_broker(self):
+        r"""Gets the max_tps_per_broker of this ProductEntityProperties.
+
+        **参数解释**： 单个broker最大TPS。 **约束限制**： 不涉及。
+
+        :return: The max_tps_per_broker of this ProductEntityProperties.
+        :rtype: str
+        """
+        return self._max_tps_per_broker
+
+    @max_tps_per_broker.setter
+    def max_tps_per_broker(self, max_tps_per_broker):
+        r"""Sets the max_tps_per_broker of this ProductEntityProperties.
+
+        **参数解释**： 单个broker最大TPS。 **约束限制**： 不涉及。
+
+        :param max_tps_per_broker: The max_tps_per_broker of this ProductEntityProperties.
+        :type max_tps_per_broker: str
+        """
+        self._max_tps_per_broker = max_tps_per_broker
+
+    @property
+    def step_length(self):
+        r"""Gets the step_length of this ProductEntityProperties.
+
+        **参数解释**： 每次增加或减少的代理数量。 **约束限制**： 不涉及。
+
+        :return: The step_length of this ProductEntityProperties.
+        :rtype: str
+        """
+        return self._step_length
+
+    @step_length.setter
+    def step_length(self, step_length):
+        r"""Sets the step_length of this ProductEntityProperties.
+
+        **参数解释**： 每次增加或减少的代理数量。 **约束限制**： 不涉及。
+
+        :param step_length: The step_length of this ProductEntityProperties.
+        :type step_length: str
+        """
+        self._step_length = step_length
 
     @property
     def engine_versions(self):

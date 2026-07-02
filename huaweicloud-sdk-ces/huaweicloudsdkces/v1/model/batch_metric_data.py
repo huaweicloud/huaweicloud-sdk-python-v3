@@ -19,7 +19,7 @@ class BatchMetricData:
         'datapoints': 'list[DatapointForBatchMetric]',
         'namespace': 'str',
         'metric_name': 'str',
-        'dimensions': 'list[MetricsDimension]'
+        'dimensions': 'list[MetricsDimensionResp]'
     }
 
     attribute_map = {
@@ -35,16 +35,16 @@ class BatchMetricData:
 
         The model defined in huaweicloud sdk
 
-        :param unit: 指标单位。
+        :param unit: **参数解释** 指标单位 **取值范围** 不涉及 
         :type unit: str
-        :param datapoints: 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        :param datapoints: **参数解释** 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期，最多返回3000个数据点（响应参数metrics属性对应对象datapoints属性累加最多返回3000个数据点） 
         :type datapoints: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
-        :param namespace: 指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        :param namespace: **参数解释** 服务命名空间 **取值范围** 不涉及 
         :type namespace: str
-        :param metric_name: 指标名称，例如弹性云服务器监控指标中的cpu_util；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        :param metric_name: **参数解释** 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围** 不涉及 
         :type metric_name: str
-        :param dimensions: 指标维度列表。
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :param dimensions: **参数解释** 服务维度列表 
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
         
         
@@ -69,7 +69,7 @@ class BatchMetricData:
     def unit(self):
         r"""Gets the unit of this BatchMetricData.
 
-        指标单位。
+        **参数解释** 指标单位 **取值范围** 不涉及 
 
         :return: The unit of this BatchMetricData.
         :rtype: str
@@ -80,7 +80,7 @@ class BatchMetricData:
     def unit(self, unit):
         r"""Sets the unit of this BatchMetricData.
 
-        指标单位。
+        **参数解释** 指标单位 **取值范围** 不涉及 
 
         :param unit: The unit of this BatchMetricData.
         :type unit: str
@@ -91,7 +91,7 @@ class BatchMetricData:
     def datapoints(self):
         r"""Gets the datapoints of this BatchMetricData.
 
-        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        **参数解释** 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期，最多返回3000个数据点（响应参数metrics属性对应对象datapoints属性累加最多返回3000个数据点） 
 
         :return: The datapoints of this BatchMetricData.
         :rtype: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
@@ -102,7 +102,7 @@ class BatchMetricData:
     def datapoints(self, datapoints):
         r"""Sets the datapoints of this BatchMetricData.
 
-        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        **参数解释** 指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期，最多返回3000个数据点（响应参数metrics属性对应对象datapoints属性累加最多返回3000个数据点） 
 
         :param datapoints: The datapoints of this BatchMetricData.
         :type datapoints: list[:class:`huaweicloudsdkces.v1.DatapointForBatchMetric`]
@@ -113,7 +113,7 @@ class BatchMetricData:
     def namespace(self):
         r"""Gets the namespace of this BatchMetricData.
 
-        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        **参数解释** 服务命名空间 **取值范围** 不涉及 
 
         :return: The namespace of this BatchMetricData.
         :rtype: str
@@ -124,7 +124,7 @@ class BatchMetricData:
     def namespace(self, namespace):
         r"""Sets the namespace of this BatchMetricData.
 
-        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。
+        **参数解释** 服务命名空间 **取值范围** 不涉及 
 
         :param namespace: The namespace of this BatchMetricData.
         :type namespace: str
@@ -135,7 +135,7 @@ class BatchMetricData:
     def metric_name(self):
         r"""Gets the metric_name of this BatchMetricData.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        **参数解释** 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围** 不涉及 
 
         :return: The metric_name of this BatchMetricData.
         :rtype: str
@@ -146,7 +146,7 @@ class BatchMetricData:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this BatchMetricData.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务资源的指标名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。
+        **参数解释** 指标名称，例如弹性云服务器监控指标中的cpu_util。 **取值范围** 不涉及 
 
         :param metric_name: The metric_name of this BatchMetricData.
         :type metric_name: str
@@ -157,10 +157,10 @@ class BatchMetricData:
     def dimensions(self):
         r"""Gets the dimensions of this BatchMetricData.
 
-        指标维度列表。
+        **参数解释** 服务维度列表 
 
         :return: The dimensions of this BatchMetricData.
-        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
         return self._dimensions
 
@@ -168,10 +168,10 @@ class BatchMetricData:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this BatchMetricData.
 
-        指标维度列表。
+        **参数解释** 服务维度列表 
 
         :param dimensions: The dimensions of this BatchMetricData.
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
         self._dimensions = dimensions
 

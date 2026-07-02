@@ -15,51 +15,51 @@ class BatchDeleteConsumerGroupReq:
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'groups': 'list[str]'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'groups': 'groups'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, groups=None):
         r"""BatchDeleteConsumerGroupReq
 
         The model defined in huaweicloud sdk
 
-        :param job_id: **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type job_id: str
+        :param groups: **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type groups: list[str]
         """
         
         
 
-        self._job_id = None
+        self._groups = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
+        if groups is not None:
+            self.groups = groups
 
     @property
-    def job_id(self):
-        r"""Gets the job_id of this BatchDeleteConsumerGroupReq.
+    def groups(self):
+        r"""Gets the groups of this BatchDeleteConsumerGroupReq.
 
-        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The job_id of this BatchDeleteConsumerGroupReq.
-        :rtype: str
+        :return: The groups of this BatchDeleteConsumerGroupReq.
+        :rtype: list[str]
         """
-        return self._job_id
+        return self._groups
 
-    @job_id.setter
-    def job_id(self, job_id):
-        r"""Sets the job_id of this BatchDeleteConsumerGroupReq.
+    @groups.setter
+    def groups(self, groups):
+        r"""Sets the groups of this BatchDeleteConsumerGroupReq.
 
-        **参数解释**： 待删除的消费组列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 需要删除的消费组名称列表。 **约束限制**： 当批量删除消费组时必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param job_id: The job_id of this BatchDeleteConsumerGroupReq.
-        :type job_id: str
+        :param groups: The groups of this BatchDeleteConsumerGroupReq.
+        :type groups: list[str]
         """
-        self._job_id = job_id
+        self._groups = groups
 
     def to_dict(self):
         result = {}

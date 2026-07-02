@@ -24,7 +24,8 @@ class ConsumerGroup:
         'created_at': 'int',
         'permissions': 'list[str]',
         'consume_orderly': 'bool',
-        'group_online': 'bool'
+        'group_online': 'bool',
+        'topic_subscription_count': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ConsumerGroup:
         'created_at': 'created_at',
         'permissions': 'permissions',
         'consume_orderly': 'consume_orderly',
-        'group_online': 'group_online'
+        'group_online': 'group_online',
+        'topic_subscription_count': 'topic_subscription_count'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None, group_online=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None, group_online=None, topic_subscription_count=None):
         r"""ConsumerGroup
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class ConsumerGroup:
         :type consume_orderly: bool
         :param group_online: **参数解释**： 消费组是否在线。 **约束限制**： 不涉及。 **取值范围**： - true：消费组在线。 - false：消费组不在线。 **默认取值**： 不涉及。
         :type group_online: bool
+        :param topic_subscription_count: **参数解释**： Topic订阅数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type topic_subscription_count: int
         """
         
         
@@ -79,6 +83,7 @@ class ConsumerGroup:
         self._permissions = None
         self._consume_orderly = None
         self._group_online = None
+        self._topic_subscription_count = None
         self.discriminator = None
 
         if enabled is not None:
@@ -101,6 +106,8 @@ class ConsumerGroup:
             self.consume_orderly = consume_orderly
         if group_online is not None:
             self.group_online = group_online
+        if topic_subscription_count is not None:
+            self.topic_subscription_count = topic_subscription_count
 
     @property
     def enabled(self):
@@ -321,6 +328,28 @@ class ConsumerGroup:
         :type group_online: bool
         """
         self._group_online = group_online
+
+    @property
+    def topic_subscription_count(self):
+        r"""Gets the topic_subscription_count of this ConsumerGroup.
+
+        **参数解释**： Topic订阅数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The topic_subscription_count of this ConsumerGroup.
+        :rtype: int
+        """
+        return self._topic_subscription_count
+
+    @topic_subscription_count.setter
+    def topic_subscription_count(self, topic_subscription_count):
+        r"""Sets the topic_subscription_count of this ConsumerGroup.
+
+        **参数解释**： Topic订阅数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param topic_subscription_count: The topic_subscription_count of this ConsumerGroup.
+        :type topic_subscription_count: int
+        """
+        self._topic_subscription_count = topic_subscription_count
 
     def to_dict(self):
         result = {}

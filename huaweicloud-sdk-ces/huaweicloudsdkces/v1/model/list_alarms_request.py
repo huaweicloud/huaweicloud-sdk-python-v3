@@ -39,7 +39,7 @@ class ListAlarmsRequest:
         :type limit: int
         :param order: **参数解释**： 用于标识结果排序方法，按创建时间排序。 **约束限制**： 不涉及 **取值范围**： 枚举值： - asc：升序 - desc：降序 **默认取值**： desc 
         :type order: str
-        :param enterprise_project_id: **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
+        :param enterprise_project_id: **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
         :type enterprise_project_id: str
         """
         
@@ -130,7 +130,7 @@ class ListAlarmsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAlarmsRequest.
 
-        **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
+        **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
 
         :return: The enterprise_project_id of this ListAlarmsRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListAlarmsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAlarmsRequest.
 
-        **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
+        **参数解释**： 企业项目ID，当查询所有企业项目时，配置为：all_granted_eps。 当需要查询某个企业项目时，配置为对应的企业项目ID，请参考获[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/zh-cn/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 **默认取值**： all_granted_eps 
 
         :param enterprise_project_id: The enterprise_project_id of this ListAlarmsRequest.
         :type enterprise_project_id: str

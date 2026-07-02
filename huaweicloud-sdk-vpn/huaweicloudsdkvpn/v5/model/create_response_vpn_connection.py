@@ -26,6 +26,7 @@ class CreateResponseVpnConnection:
         'tunnel_peer_address': 'str',
         'enable_nqa': 'bool',
         'enable_hub': 'bool',
+        'enable_health_check': 'bool',
         'policy_rules': 'list[PolicyRule]',
         'ikepolicy': 'IkePolicy',
         'ipsecpolicy': 'IpsecPolicy',
@@ -50,6 +51,7 @@ class CreateResponseVpnConnection:
         'tunnel_peer_address': 'tunnel_peer_address',
         'enable_nqa': 'enable_nqa',
         'enable_hub': 'enable_hub',
+        'enable_health_check': 'enable_health_check',
         'policy_rules': 'policy_rules',
         'ikepolicy': 'ikepolicy',
         'ipsecpolicy': 'ipsecpolicy',
@@ -62,7 +64,7 @@ class CreateResponseVpnConnection:
         'policy_rules_v6': 'policy_rules_v6'
     }
 
-    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
+    def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, enable_health_check=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
         r"""CreateResponseVpnConnection
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class CreateResponseVpnConnection:
         :type enable_nqa: bool
         :param enable_hub: 开启分支互联
         :type enable_hub: bool
+        :param enable_health_check: 开启健康检查
+        :type enable_health_check: bool
         :param policy_rules: 策略模式的策略规则组
         :type policy_rules: list[:class:`huaweicloudsdkvpn.v5.PolicyRule`]
         :param ikepolicy: 
@@ -124,6 +128,7 @@ class CreateResponseVpnConnection:
         self._tunnel_peer_address = None
         self._enable_nqa = None
         self._enable_hub = None
+        self._enable_health_check = None
         self._policy_rules = None
         self._ikepolicy = None
         self._ipsecpolicy = None
@@ -158,6 +163,8 @@ class CreateResponseVpnConnection:
             self.enable_nqa = enable_nqa
         if enable_hub is not None:
             self.enable_hub = enable_hub
+        if enable_health_check is not None:
+            self.enable_health_check = enable_health_check
         if policy_rules is not None:
             self.policy_rules = policy_rules
         if ikepolicy is not None:
@@ -420,6 +427,28 @@ class CreateResponseVpnConnection:
         :type enable_hub: bool
         """
         self._enable_hub = enable_hub
+
+    @property
+    def enable_health_check(self):
+        r"""Gets the enable_health_check of this CreateResponseVpnConnection.
+
+        开启健康检查
+
+        :return: The enable_health_check of this CreateResponseVpnConnection.
+        :rtype: bool
+        """
+        return self._enable_health_check
+
+    @enable_health_check.setter
+    def enable_health_check(self, enable_health_check):
+        r"""Sets the enable_health_check of this CreateResponseVpnConnection.
+
+        开启健康检查
+
+        :param enable_health_check: The enable_health_check of this CreateResponseVpnConnection.
+        :type enable_health_check: bool
+        """
+        self._enable_health_check = enable_health_check
 
     @property
     def policy_rules(self):

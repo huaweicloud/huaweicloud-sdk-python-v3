@@ -38,6 +38,7 @@ class FlinkJobConfig:
         'execution_agency_urn': 'str',
         'resume_checkpoint': 'bool',
         'runtime_config': 'str',
+        'flink_log_config': 'str',
         'graph_editor_enabled': 'bool',
         'graph_editor_data': 'str',
         'resume_max_num': 'int',
@@ -79,6 +80,7 @@ class FlinkJobConfig:
         'execution_agency_urn': 'execution_agency_urn',
         'resume_checkpoint': 'resume_checkpoint',
         'runtime_config': 'runtime_config',
+        'flink_log_config': 'flink_log_config',
         'graph_editor_enabled': 'graph_editor_enabled',
         'graph_editor_data': 'graph_editor_data',
         'resume_max_num': 'resume_max_num',
@@ -96,7 +98,7 @@ class FlinkJobConfig:
         'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, execution_agency_urn=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None, resource_config=None, resource_config_version=None):
+    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, execution_agency_urn=None, resume_checkpoint=None, runtime_config=None, flink_log_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None, resource_config=None, resource_config_version=None):
         r"""FlinkJobConfig
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class FlinkJobConfig:
         :type resume_checkpoint: bool
         :param runtime_config: 参数解释: Flink作业运行时自定义优化参数 示例: [{\\\&quot;key\\\&quot;:\\\&quot;high-availability\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;org.apache.flink.kubernetes.highavailability.KubernetesHaServicesFactory\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;kubernetes.jobmanager.replicas\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;2\\\&quot; },{ \\\&quot;key\\\&quot;:\\\&quot;high-availability.storageDir\\\&quot;,\\\&quot;value\\\&quot;:\\\&quot;obs://fz-test/test\\\&quot;}] 约束限制:  无 取值范围: 无 默认取值: 无
         :type runtime_config: str
+        :param flink_log_config: Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\&quot;root_logger_level\\\&quot;:\\\&quot;INFO\\\&quot;,\\\&quot;loggers_level_of_class\\\&quot;:{\\\&quot;org.apache.flink\\\&quot;:\\\&quot;WARN\\\&quot;,\\\&quot;org.apache.kafka.clients.consumer.KafkaConsumer\\\&quot;:\\\&quot;DEBUG\\\&quot;,\\\&quot;com.mycompany.job.MainFunction\\\&quot;:\\\&quot;TRACE\\\&quot;}}
+        :type flink_log_config: str
         :param graph_editor_enabled: 参数解释: 流图编辑开关 示例: false 约束限制:  无 取值范围: 无 默认取值: false
         :type graph_editor_enabled: bool
         :param graph_editor_data: 参数解释: 流图编辑数据 约束限制:  无 取值范围: 无 默认取值: 无
@@ -204,6 +208,7 @@ class FlinkJobConfig:
         self._execution_agency_urn = None
         self._resume_checkpoint = None
         self._runtime_config = None
+        self._flink_log_config = None
         self._graph_editor_enabled = None
         self._graph_editor_data = None
         self._resume_max_num = None
@@ -267,6 +272,8 @@ class FlinkJobConfig:
             self.resume_checkpoint = resume_checkpoint
         if runtime_config is not None:
             self.runtime_config = runtime_config
+        if flink_log_config is not None:
+            self.flink_log_config = flink_log_config
         if graph_editor_enabled is not None:
             self.graph_editor_enabled = graph_editor_enabled
         if graph_editor_data is not None:
@@ -803,6 +810,28 @@ class FlinkJobConfig:
         :type runtime_config: str
         """
         self._runtime_config = runtime_config
+
+    @property
+    def flink_log_config(self):
+        r"""Gets the flink_log_config of this FlinkJobConfig.
+
+        Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\"root_logger_level\\\":\\\"INFO\\\",\\\"loggers_level_of_class\\\":{\\\"org.apache.flink\\\":\\\"WARN\\\",\\\"org.apache.kafka.clients.consumer.KafkaConsumer\\\":\\\"DEBUG\\\",\\\"com.mycompany.job.MainFunction\\\":\\\"TRACE\\\"}}
+
+        :return: The flink_log_config of this FlinkJobConfig.
+        :rtype: str
+        """
+        return self._flink_log_config
+
+    @flink_log_config.setter
+    def flink_log_config(self, flink_log_config):
+        r"""Sets the flink_log_config of this FlinkJobConfig.
+
+        Flink作业日志级别配置（JSON格式）。 支持全局root_logger_level及类/包级别loggers_level_of_class精细化控制，可选值为：TRACE，DEBUG，INFO，WARN，ERROR。 例如：{\\\"root_logger_level\\\":\\\"INFO\\\",\\\"loggers_level_of_class\\\":{\\\"org.apache.flink\\\":\\\"WARN\\\",\\\"org.apache.kafka.clients.consumer.KafkaConsumer\\\":\\\"DEBUG\\\",\\\"com.mycompany.job.MainFunction\\\":\\\"TRACE\\\"}}
+
+        :param flink_log_config: The flink_log_config of this FlinkJobConfig.
+        :type flink_log_config: str
+        """
+        self._flink_log_config = flink_log_config
 
     @property
     def graph_editor_enabled(self):

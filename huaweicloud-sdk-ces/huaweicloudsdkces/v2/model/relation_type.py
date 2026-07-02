@@ -11,6 +11,7 @@ class RelationType:
     RESOURCE = "RESOURCE"
     RESOURCE_POLICY_NOTIFICATION = "RESOURCE_POLICY_NOTIFICATION"
     RESOURCE_POLICY_ALARM = "RESOURCE_POLICY_ALARM"
+    EVENT_SYS = "EVENT.SYS"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

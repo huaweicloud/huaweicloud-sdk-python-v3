@@ -16,29 +16,36 @@ class ListActionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'actions': 'list[Actions]'
+        'actions': 'list[Actions]',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'actions': 'actions'
+        'actions': 'actions',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, actions=None):
+    def __init__(self, actions=None, total_size=None):
         r"""ListActionsResponse
 
         The model defined in huaweicloud sdk
 
         :param actions: 操作记录列表。
         :type actions: list[:class:`huaweicloudsdkcss.v1.Actions`]
+        :param total_size: 操作记录总条数。
+        :type total_size: int
         """
         
         super().__init__()
 
         self._actions = None
+        self._total_size = None
         self.discriminator = None
 
         if actions is not None:
             self.actions = actions
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
     def actions(self):
@@ -61,6 +68,28 @@ class ListActionsResponse(SdkResponse):
         :type actions: list[:class:`huaweicloudsdkcss.v1.Actions`]
         """
         self._actions = actions
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListActionsResponse.
+
+        操作记录总条数。
+
+        :return: The total_size of this ListActionsResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListActionsResponse.
+
+        操作记录总条数。
+
+        :param total_size: The total_size of this ListActionsResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         import warnings

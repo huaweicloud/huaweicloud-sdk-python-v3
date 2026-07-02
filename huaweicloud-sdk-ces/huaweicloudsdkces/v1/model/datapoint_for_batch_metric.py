@@ -37,17 +37,17 @@ class DatapointForBatchMetric:
 
         The model defined in huaweicloud sdk
 
-        :param max: 聚合周期内指标数据的最大值。
+        :param max: **参数解释** 聚合周期内指标数据的最大值 **取值范围** 不涉及 
         :type max: float
-        :param min: 聚合周期内指标数据的最小值。
+        :param min: **参数解释** 聚合周期内指标数据的最小值 **取值范围** 不涉及 
         :type min: float
-        :param average: 聚合周期内指标数据的平均值。
+        :param average: **参数解释** 聚合周期内指标数据的平均值 **取值范围** 不涉及 
         :type average: float
-        :param sum: 聚合周期内指标数据的求和值。
+        :param sum: **参数解释** 聚合周期内指标数据的求和值 **取值范围** 不涉及 
         :type sum: float
-        :param variance: 聚合周期内指标数据的方差。
+        :param variance: **参数解释** 聚合周期内指标数据的方差 **取值范围** 不涉及 
         :type variance: float
-        :param timestamp: 指标采集时间，UNIX时间戳，单位毫秒。
+        :param timestamp: **参数解释** 指标采集时间，UNIX时间戳，单位毫秒 **取值范围** 不涉及 
         :type timestamp: int
         """
         
@@ -77,7 +77,7 @@ class DatapointForBatchMetric:
     def max(self):
         r"""Gets the max of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的最大值。
+        **参数解释** 聚合周期内指标数据的最大值 **取值范围** 不涉及 
 
         :return: The max of this DatapointForBatchMetric.
         :rtype: float
@@ -88,7 +88,7 @@ class DatapointForBatchMetric:
     def max(self, max):
         r"""Sets the max of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的最大值。
+        **参数解释** 聚合周期内指标数据的最大值 **取值范围** 不涉及 
 
         :param max: The max of this DatapointForBatchMetric.
         :type max: float
@@ -99,7 +99,7 @@ class DatapointForBatchMetric:
     def min(self):
         r"""Gets the min of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的最小值。
+        **参数解释** 聚合周期内指标数据的最小值 **取值范围** 不涉及 
 
         :return: The min of this DatapointForBatchMetric.
         :rtype: float
@@ -110,7 +110,7 @@ class DatapointForBatchMetric:
     def min(self, min):
         r"""Sets the min of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的最小值。
+        **参数解释** 聚合周期内指标数据的最小值 **取值范围** 不涉及 
 
         :param min: The min of this DatapointForBatchMetric.
         :type min: float
@@ -121,7 +121,7 @@ class DatapointForBatchMetric:
     def average(self):
         r"""Gets the average of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的平均值。
+        **参数解释** 聚合周期内指标数据的平均值 **取值范围** 不涉及 
 
         :return: The average of this DatapointForBatchMetric.
         :rtype: float
@@ -132,7 +132,7 @@ class DatapointForBatchMetric:
     def average(self, average):
         r"""Sets the average of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的平均值。
+        **参数解释** 聚合周期内指标数据的平均值 **取值范围** 不涉及 
 
         :param average: The average of this DatapointForBatchMetric.
         :type average: float
@@ -143,7 +143,7 @@ class DatapointForBatchMetric:
     def sum(self):
         r"""Gets the sum of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的求和值。
+        **参数解释** 聚合周期内指标数据的求和值 **取值范围** 不涉及 
 
         :return: The sum of this DatapointForBatchMetric.
         :rtype: float
@@ -154,7 +154,7 @@ class DatapointForBatchMetric:
     def sum(self, sum):
         r"""Sets the sum of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的求和值。
+        **参数解释** 聚合周期内指标数据的求和值 **取值范围** 不涉及 
 
         :param sum: The sum of this DatapointForBatchMetric.
         :type sum: float
@@ -165,7 +165,7 @@ class DatapointForBatchMetric:
     def variance(self):
         r"""Gets the variance of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的方差。
+        **参数解释** 聚合周期内指标数据的方差 **取值范围** 不涉及 
 
         :return: The variance of this DatapointForBatchMetric.
         :rtype: float
@@ -176,7 +176,7 @@ class DatapointForBatchMetric:
     def variance(self, variance):
         r"""Sets the variance of this DatapointForBatchMetric.
 
-        聚合周期内指标数据的方差。
+        **参数解释** 聚合周期内指标数据的方差 **取值范围** 不涉及 
 
         :param variance: The variance of this DatapointForBatchMetric.
         :type variance: float
@@ -187,7 +187,7 @@ class DatapointForBatchMetric:
     def timestamp(self):
         r"""Gets the timestamp of this DatapointForBatchMetric.
 
-        指标采集时间，UNIX时间戳，单位毫秒。
+        **参数解释** 指标采集时间，UNIX时间戳，单位毫秒 **取值范围** 不涉及 
 
         :return: The timestamp of this DatapointForBatchMetric.
         :rtype: int
@@ -198,7 +198,7 @@ class DatapointForBatchMetric:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this DatapointForBatchMetric.
 
-        指标采集时间，UNIX时间戳，单位毫秒。
+        **参数解释** 指标采集时间，UNIX时间戳，单位毫秒 **取值范围** 不涉及 
 
         :param timestamp: The timestamp of this DatapointForBatchMetric.
         :type timestamp: int

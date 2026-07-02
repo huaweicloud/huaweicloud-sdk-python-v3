@@ -28,7 +28,7 @@ class ShowEventDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param datapoints: 配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
+        :param datapoints: **参数解释**： 配置信息列表 **取值范围**： 不涉及 
         :type datapoints: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]
         """
         
@@ -44,7 +44,7 @@ class ShowEventDataResponse(SdkResponse):
     def datapoints(self):
         r"""Gets the datapoints of this ShowEventDataResponse.
 
-        配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
+        **参数解释**： 配置信息列表 **取值范围**： 不涉及 
 
         :return: The datapoints of this ShowEventDataResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]
@@ -55,7 +55,7 @@ class ShowEventDataResponse(SdkResponse):
     def datapoints(self, datapoints):
         r"""Sets the datapoints of this ShowEventDataResponse.
 
-        配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
+        **参数解释**： 配置信息列表 **取值范围**： 不涉及 
 
         :param datapoints: The datapoints of this ShowEventDataResponse.
         :type datapoints: list[:class:`huaweicloudsdkces.v1.EventDataInfo`]

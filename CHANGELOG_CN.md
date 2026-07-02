@@ -1,3 +1,437 @@
+# 3.1.202 2026-07-02
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListMetrics**
+    - 请求参数变更
+      - `+ dim.3`
+    - 响应参数变更
+      - `* meta_data: object<MetaData> -> object<MetricListMetaDataResp>`
+      - `* metrics.dimensions: list<MetricsDimension> -> list<MetricsDimensionResp>`
+  - **BatchListMetricData**
+    - 响应参数变更
+      - `* metrics.dimensions: list<MetricsDimension> -> list<MetricsDimensionResp>`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDashboardInfos**
+    - 响应参数变更
+      - `+ dashboards.widget_num`
+      - `+ dashboards.extend_info`
+      - `- dashboards.widgets_num`
+  - **ShowWidget**
+    - 响应参数变更
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **BatchUpdateNotificationMasks**
+    - 请求参数变更
+      - `+ relation_type: enum value [EVENT.SYS]`
+  - **UpdateNotificationMask**
+    - 请求参数变更
+      - `+ relation_type: enum value [EVENT.SYS]`
+  - **ListNotificationMasks**
+    - 请求参数变更
+      - `- alarm_ids`
+    - 响应参数变更
+      - `+ notification_masks.relation_type: enum value [EVENT.SYS]`
+  - **ListDashboardWidgets**
+    - 响应参数变更
+      - `+ widgets.view: enum value [gauge,stat]`
+      - `+ widgets.metrics.y_axis_position`
+      - `+ widgets.metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **CreateDashboardWidgets**
+    - 请求参数变更
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+  - **BatchUpdateWidgets**
+    - 请求参数变更
+      - `+ view: enum value [gauge,stat]`
+      - `+ metrics.y_axis_position`
+      - `+ metrics.dimensions.filter_type: enum value [resource_groups]`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAgentInvocations**
+    - 响应参数变更
+      - `+ invocations.invocation_type: enum value [SET_REMOTE_INSTALLER,REMOTE_INSTALL]`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`DeleteConfig`
+  - **ListActions**
+    - 响应参数变更
+      - `+ totalSize`
+  - **ShowGetConfDetail**
+    - 响应参数变更
+      - `+ sensitiveWordsShielding`
+  - **ListCerts**
+    - 响应参数变更
+      - `* certsRecords.fileName: boolean -> string`
+      - `* certsRecords.updateAt: boolean -> string`
+  - **ListYmlsJob**
+    - 响应参数变更
+      - `+ configList.instType`
+  - **ListConfs**
+    - 响应参数变更
+      - `+ totalSize`
+      - `+ sensitiveWordsShielding`
+      - `+ confs.sensitiveWordsShielding`
+  - **ShowElbDetail**
+    - 响应参数变更
+      - `+ healthmonitors.id`
+      - `- loadBalancer.billing_info`
+      - `+ listener.ipgroup.type`
+  - **UpdateEsListener**
+    - 响应参数变更
+      - `+ listener.default_tls_container_ref`
+      - `+ listener.client_ca_tls_container_ref`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDataArtsStudioInstances**
+    - 响应参数变更
+      - `+ commodity_orders`
+      - `- commodity_order_lists`
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchRunFlinkJobs**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **BatchStopFlinkJobs**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **BatchDeleteFlinkJobs**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **ImportFlinkJobSavepoint**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **ExecuteFlinkJobSavepoint**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **CreateFlinkSqlJob**
+    - 请求参数变更
+      - `+ flink_log_config`
+  - **UpdateFlinkSqlJob**
+    - 请求参数变更
+      - `+ flink_log_config`
+  - **CreateFlinkJarJob**
+    - 请求参数变更
+      - `+ flink_log_config`
+  - **UpdateFlinkJarJob**
+    - 请求参数变更
+      - `+ flink_log_config`
+  - **DeleteFlinkJob**
+    - 响应参数变更
+      - `* is_success: boolean -> string`
+  - **ShowFlinkJob**
+    - 响应参数变更
+      - `+ job_detail.job_config.flink_log_config`
+  - **ListFlinkJobs**
+    - 响应参数变更
+      - `+ job_list.jobs.job_config.flink_log_config`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `SwitchGaussMySqlProxyAlt`
+    - `ShowDynamicServerlessPolicy`
+    - `UpdateDynamicServerlessPolicy`
+    - `DeleteDynamicServerlessPolicy`
+    - `CollectRealtimeSession`
+    - `ShowRealtimeSessionTaskStatus`
+    - `DownloadRealtimeSession`
+    - `BatchChangeInstanceSpecification`
+    - `ExecuteIntelligentKillSession`
+    - `ListIntelligentKillSessionHistory`
+    - `ShowIntelligentKillSessionStatistic`
+    - `ShowLockWaitSession`
+    - `CheckScheduleTaskExist`
+    - `CreateBackupResourcePackage`
+    - `ShowBackupResourcePackageFlavors`
+    - `ShowBackupVaultLock`
+    - `ModifyBackupVaultLock`
+    - `ListDdlLogs`
+    - `SetDdlLogPolicy`
+    - `DownloadDdlLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowKafkaLogTask`、`StartKafkaLogTask`、`StopKafkaLogTask`、`ResizeEngineInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyKafkaTopicQuota**
+    - 请求参数变更
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **CreateKafkaTopicQuota**
+    - 请求参数变更
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **DeleteKafkaTopicQuota**
+    - 请求参数变更
+      - `+ producer-byte-rate`
+      - `+ consumer-byte-rate`
+      - `- producer_byte_rate`
+      - `- consumer_byte_rate`
+  - **ShowKafkaTopicQuota**
+    - 响应参数变更
+      - `+ quotas.producer-byte-rate`
+      - `+ quotas.consumer-byte-rate`
+      - `- quotas.producer_byte_rate`
+      - `- quotas.consumer_byte_rate`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePostPaidInstanceByEngine**
+    - 请求参数变更
+      - `+ disk_encrypted_enable`
+      - `+ disk_encrypted_key`
+      - `+ arch_type`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ disk_encrypted`
+      - `+ disk_encrypted_key`
+  - **ListPlugins**
+    - 响应参数变更
+      - `+ plugins_modifying`
+  - **ShowRabbitMqTags**
+    - 响应参数变更
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ShowRabbitMqProjectTags**
+    - 响应参数变更
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ disk_encrypted`
+      - `+ disk_encrypted_key`
+      - `+ instances.disk_encrypted`
+      - `+ instances.disk_encrypted_key`
+  - **ListEngineProducts**
+    - 响应参数变更
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+      - `+ products.properties.engine_versions`
+  - **ShowEngineInstanceExtendProductInfo**
+    - 响应参数变更
+      - `+ total`
+      - `+ previous_offset`
+      - `+ next_offset`
+      - `+ products.billing_code`
+      - `+ products.qingtian_incompatible`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CollectPublicationMonitor**
+    - 响应参数变更
+      - `- replication_rate_trans`
+  - **ListSqlStatistics**
+    - 响应参数变更
+      - `* list.canUse: double -> boolean`
+  - **ModifyPublication**
+    - 请求参数变更
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleModifyPub>`
+  - **BatchModifySubscription**
+    - 请求参数变更
+      - `+ job_schedule.schedule_type`
+      - `+ job_schedule.user_defined`
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleModify>`
+  - **CreatePublication**
+    - 请求参数变更
+      - `* is_create_snapshot_immediately: string -> boolean`
+      - `* job_schedule: object<OperateUsedJobSchedule> -> object<OperateUsedJobScheduleCreate>`
+
+### HuaweiCloud SDK RocketMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateConsumerGroup**
+    - 请求参数变更
+      - `+ consume_orderly`
+      - `+ group_desc`
+  - **ListConsumerGroupOfTopic**
+    - 响应参数变更
+      - `+ total`
+  - **ShowCesHierarchy**
+    - 响应参数变更
+      - `+ nodes.available_zone`
+  - **CreateInstanceByEngine**
+    - 请求参数变更
+      - `+ ipv6_broker_address`
+      - `+ ipv6_namesrv_address`
+  - **CreatePostPaidInstanceForRocketMq**
+    - 请求参数变更
+      - `+ ipv6_broker_address`
+      - `+ ipv6_namesrv_address`
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ ipv6_namesrv_address`
+      - `+ ipv6_broker_address`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - 请求参数变更
+      - `+ groups`
+      - `- job_id`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `+ groups.topic_subscription_count`
+  - **ListRocketInstanceTopics**
+    - 响应参数变更
+      - `+ created_at`
+      - `+ topics.created_at`
+  - **ShowOneTopic**
+    - 响应参数变更
+      - `+ created_at`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.disk_encrypted_key`
+      - `+ instances.ipv6_broker_address`
+      - `+ instances.ipv6_namesrv_address`
+  - **ShowConsumerConnections**
+    - 响应参数变更
+      - `+ clients.consume_type`
+  - **ShowConsumerConnectionsForRocketMq**
+    - 响应参数变更
+      - `+ clients.consume_type`
+  - **ListEngineProducts**
+    - 响应参数变更
+      - `+ products.properties.max_tps_per_broker`
+      - `+ products.properties.step_length`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceRetentionPolicyExecSubTasks**
+    - 响应参数变更
+      - `* sub_tasks.job_id: string -> int32`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ListVpnGatewayCertificates`、`ListConnectionIpsecSa`、`ListPeerConfigurationSupportedDevices`、`ExportVpnConnectionPeerConfiguration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVpnGatewayJobs**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ jobs.expected_time_seconds`
+      - `+ jobs.status: enum value [running,init]`
+      - `+ jobs.sub_jobs.expected_time_seconds`
+      - `+ jobs.sub_jobs.job_type: enum value [migrate_network_1]`
+  - **ListP2cVpnGatewayJobs**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+    - 响应参数变更
+      - `+ jobs.expected_time_seconds`
+      - `+ jobs.status: enum value [running,init]`
+      - `+ jobs.sub_jobs.expected_time_seconds`
+      - `+ jobs.sub_jobs.job_type: enum value [migrate_network_1]`
+  - **CreateVpnConnection**
+    - 请求参数变更
+      - `+ vpn_connection.enable_health_check`
+    - 响应参数变更
+      - `+ vpn_connection.enable_health_check`
+  - **BatchCreateVpnConnection**
+    - 请求参数变更
+      - `+ vpn_connections.enable_health_check`
+    - 响应参数变更
+      - `+ vpn_connections.enable_health_check`
+
 # 3.1.201 2026-06-25
 
 ### HuaweiCloud SDK BSS
