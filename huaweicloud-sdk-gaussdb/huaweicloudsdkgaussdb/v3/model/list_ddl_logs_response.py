@@ -18,18 +18,18 @@ class ListDdlLogsResponse(SdkResponse):
     openapi_types = {
         'ddl_logs': 'list[DdlLogInfo]',
         'total_count': 'int',
-        'keey_days': 'int',
+        'keep_days': 'int',
         'switch_status': 'str'
     }
 
     attribute_map = {
         'ddl_logs': 'ddl_logs',
         'total_count': 'total_count',
-        'keey_days': 'keey_days',
+        'keep_days': 'keep_days',
         'switch_status': 'switch_status'
     }
 
-    def __init__(self, ddl_logs=None, total_count=None, keey_days=None, switch_status=None):
+    def __init__(self, ddl_logs=None, total_count=None, keep_days=None, switch_status=None):
         r"""ListDdlLogsResponse
 
         The model defined in huaweicloud sdk
@@ -38,8 +38,8 @@ class ListDdlLogsResponse(SdkResponse):
         :type ddl_logs: list[:class:`huaweicloudsdkgaussdb.v3.DdlLogInfo`]
         :param total_count: **参数解释**：  总条数。  **取值范围**：  不涉及。 
         :type total_count: int
-        :param keey_days: **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
-        :type keey_days: int
+        :param keep_days: **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
+        :type keep_days: int
         :param switch_status: **参数解释**：  DDL日志下载开关状态。  **取值范围**：  - ON，开启。 - OFF，关闭。 
         :type switch_status: str
         """
@@ -48,7 +48,7 @@ class ListDdlLogsResponse(SdkResponse):
 
         self._ddl_logs = None
         self._total_count = None
-        self._keey_days = None
+        self._keep_days = None
         self._switch_status = None
         self.discriminator = None
 
@@ -56,8 +56,8 @@ class ListDdlLogsResponse(SdkResponse):
             self.ddl_logs = ddl_logs
         if total_count is not None:
             self.total_count = total_count
-        if keey_days is not None:
-            self.keey_days = keey_days
+        if keep_days is not None:
+            self.keep_days = keep_days
         if switch_status is not None:
             self.switch_status = switch_status
 
@@ -106,26 +106,26 @@ class ListDdlLogsResponse(SdkResponse):
         self._total_count = total_count
 
     @property
-    def keey_days(self):
-        r"""Gets the keey_days of this ListDdlLogsResponse.
+    def keep_days(self):
+        r"""Gets the keep_days of this ListDdlLogsResponse.
 
         **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
 
-        :return: The keey_days of this ListDdlLogsResponse.
+        :return: The keep_days of this ListDdlLogsResponse.
         :rtype: int
         """
-        return self._keey_days
+        return self._keep_days
 
-    @keey_days.setter
-    def keey_days(self, keey_days):
-        r"""Sets the keey_days of this ListDdlLogsResponse.
+    @keep_days.setter
+    def keep_days(self, keep_days):
+        r"""Sets the keep_days of this ListDdlLogsResponse.
 
         **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
 
-        :param keey_days: The keey_days of this ListDdlLogsResponse.
-        :type keey_days: int
+        :param keep_days: The keep_days of this ListDdlLogsResponse.
+        :type keep_days: int
         """
-        self._keey_days = keey_days
+        self._keep_days = keep_days
 
     @property
     def switch_status(self):

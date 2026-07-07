@@ -516,6 +516,73 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def batch_execute_events(self, request):
+        r"""操作EG事件中心通知事件
+
+        操作EG事件中心通知事件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchExecuteEvents
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchExecuteEventsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchExecuteEventsResponse`
+        """
+        http_info = self._batch_execute_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_execute_events_invoker(self, request):
+        http_info = self._batch_execute_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_execute_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/schedule-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchExecuteEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_set_backup_policy(self, request):
         r"""批量设置自动备份策略
 
@@ -5531,6 +5598,89 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_events(self, request):
+        r"""查询事件列表
+
+        查询事件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEvents
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEventsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEventsResponse`
+        """
+        http_info = self._list_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_events_invoker(self, request):
+        http_info = self._list_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/schedule-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_features(self, request):
         r"""查询实例特性列表
 
@@ -6612,13 +6762,15 @@ class GaussDBforopenGaussClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

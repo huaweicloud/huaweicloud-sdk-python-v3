@@ -16,138 +16,51 @@ class SetDdlLogPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'ddl_logs': 'list[DdlLogInfo]',
-        'total_count': 'int',
-        'keey_days': 'int',
-        'switch_status': 'str'
+        'workflow_id': 'str'
     }
 
     attribute_map = {
-        'ddl_logs': 'ddl_logs',
-        'total_count': 'total_count',
-        'keey_days': 'keey_days',
-        'switch_status': 'switch_status'
+        'workflow_id': 'workflow_id'
     }
 
-    def __init__(self, ddl_logs=None, total_count=None, keey_days=None, switch_status=None):
+    def __init__(self, workflow_id=None):
         r"""SetDdlLogPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param ddl_logs: **参数解释**：  DDL下载日志列表。  **取值范围**：  不涉及。 
-        :type ddl_logs: list[:class:`huaweicloudsdkgaussdb.v3.DdlLogInfo`]
-        :param total_count: **参数解释**：  总条数。  **取值范围**：  不涉及。 
-        :type total_count: int
-        :param keey_days: **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
-        :type keey_days: int
-        :param switch_status: **参数解释**：  DDL日志下载开关状态。  **取值范围**：  - ON，开启。 - OFF，关闭。 
-        :type switch_status: str
+        :param workflow_id: **参数解释**：  任务流ID。  **取值范围**：  不涉及。 
+        :type workflow_id: str
         """
         
         super().__init__()
 
-        self._ddl_logs = None
-        self._total_count = None
-        self._keey_days = None
-        self._switch_status = None
+        self._workflow_id = None
         self.discriminator = None
 
-        if ddl_logs is not None:
-            self.ddl_logs = ddl_logs
-        if total_count is not None:
-            self.total_count = total_count
-        if keey_days is not None:
-            self.keey_days = keey_days
-        if switch_status is not None:
-            self.switch_status = switch_status
+        if workflow_id is not None:
+            self.workflow_id = workflow_id
 
     @property
-    def ddl_logs(self):
-        r"""Gets the ddl_logs of this SetDdlLogPolicyResponse.
+    def workflow_id(self):
+        r"""Gets the workflow_id of this SetDdlLogPolicyResponse.
 
-        **参数解释**：  DDL下载日志列表。  **取值范围**：  不涉及。 
+        **参数解释**：  任务流ID。  **取值范围**：  不涉及。 
 
-        :return: The ddl_logs of this SetDdlLogPolicyResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DdlLogInfo`]
-        """
-        return self._ddl_logs
-
-    @ddl_logs.setter
-    def ddl_logs(self, ddl_logs):
-        r"""Sets the ddl_logs of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  DDL下载日志列表。  **取值范围**：  不涉及。 
-
-        :param ddl_logs: The ddl_logs of this SetDdlLogPolicyResponse.
-        :type ddl_logs: list[:class:`huaweicloudsdkgaussdb.v3.DdlLogInfo`]
-        """
-        self._ddl_logs = ddl_logs
-
-    @property
-    def total_count(self):
-        r"""Gets the total_count of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  总条数。  **取值范围**：  不涉及。 
-
-        :return: The total_count of this SetDdlLogPolicyResponse.
-        :rtype: int
-        """
-        return self._total_count
-
-    @total_count.setter
-    def total_count(self, total_count):
-        r"""Sets the total_count of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  总条数。  **取值范围**：  不涉及。 
-
-        :param total_count: The total_count of this SetDdlLogPolicyResponse.
-        :type total_count: int
-        """
-        self._total_count = total_count
-
-    @property
-    def keey_days(self):
-        r"""Gets the keey_days of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
-
-        :return: The keey_days of this SetDdlLogPolicyResponse.
-        :rtype: int
-        """
-        return self._keey_days
-
-    @keey_days.setter
-    def keey_days(self, keey_days):
-        r"""Sets the keey_days of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  日志保留天数。  **取值范围**：  不涉及。 
-
-        :param keey_days: The keey_days of this SetDdlLogPolicyResponse.
-        :type keey_days: int
-        """
-        self._keey_days = keey_days
-
-    @property
-    def switch_status(self):
-        r"""Gets the switch_status of this SetDdlLogPolicyResponse.
-
-        **参数解释**：  DDL日志下载开关状态。  **取值范围**：  - ON，开启。 - OFF，关闭。 
-
-        :return: The switch_status of this SetDdlLogPolicyResponse.
+        :return: The workflow_id of this SetDdlLogPolicyResponse.
         :rtype: str
         """
-        return self._switch_status
+        return self._workflow_id
 
-    @switch_status.setter
-    def switch_status(self, switch_status):
-        r"""Sets the switch_status of this SetDdlLogPolicyResponse.
+    @workflow_id.setter
+    def workflow_id(self, workflow_id):
+        r"""Sets the workflow_id of this SetDdlLogPolicyResponse.
 
-        **参数解释**：  DDL日志下载开关状态。  **取值范围**：  - ON，开启。 - OFF，关闭。 
+        **参数解释**：  任务流ID。  **取值范围**：  不涉及。 
 
-        :param switch_status: The switch_status of this SetDdlLogPolicyResponse.
-        :type switch_status: str
+        :param workflow_id: The workflow_id of this SetDdlLogPolicyResponse.
+        :type workflow_id: str
         """
-        self._switch_status = switch_status
+        self._workflow_id = workflow_id
 
     def to_dict(self):
         import warnings

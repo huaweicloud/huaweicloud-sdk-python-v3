@@ -15,56 +15,56 @@ class BackupResourcePackageFlavor:
     sensitive_list = []
 
     openapi_types = {
-        'spce_code': 'str',
+        'spec_code': 'str',
         'volume': 'str'
     }
 
     attribute_map = {
-        'spce_code': 'spce_code',
+        'spec_code': 'spec_code',
         'volume': 'volume'
     }
 
-    def __init__(self, spce_code=None, volume=None):
+    def __init__(self, spec_code=None, volume=None):
         r"""BackupResourcePackageFlavor
 
         The model defined in huaweicloud sdk
 
-        :param spce_code: **参数解释**：  备份资源包规格码。  **取值范围**：  不涉及。 
-        :type spce_code: str
+        :param spec_code: **参数解释**：  备份资源包规格码。  **取值范围**：  不涉及。 
+        :type spec_code: str
         :param volume: **参数解释**：  备份资源包规格。  **取值范围**：  不涉及。 
         :type volume: str
         """
         
         
 
-        self._spce_code = None
+        self._spec_code = None
         self._volume = None
         self.discriminator = None
 
-        self.spce_code = spce_code
+        self.spec_code = spec_code
         self.volume = volume
 
     @property
-    def spce_code(self):
-        r"""Gets the spce_code of this BackupResourcePackageFlavor.
+    def spec_code(self):
+        r"""Gets the spec_code of this BackupResourcePackageFlavor.
 
         **参数解释**：  备份资源包规格码。  **取值范围**：  不涉及。 
 
-        :return: The spce_code of this BackupResourcePackageFlavor.
+        :return: The spec_code of this BackupResourcePackageFlavor.
         :rtype: str
         """
-        return self._spce_code
+        return self._spec_code
 
-    @spce_code.setter
-    def spce_code(self, spce_code):
-        r"""Sets the spce_code of this BackupResourcePackageFlavor.
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        r"""Sets the spec_code of this BackupResourcePackageFlavor.
 
         **参数解释**：  备份资源包规格码。  **取值范围**：  不涉及。 
 
-        :param spce_code: The spce_code of this BackupResourcePackageFlavor.
-        :type spce_code: str
+        :param spec_code: The spec_code of this BackupResourcePackageFlavor.
+        :type spec_code: str
         """
-        self._spce_code = spce_code
+        self._spec_code = spec_code
 
     @property
     def volume(self):

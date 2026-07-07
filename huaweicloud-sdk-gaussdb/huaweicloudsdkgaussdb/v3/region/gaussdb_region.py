@@ -42,6 +42,8 @@ class GaussDBRegion:
                         "https://gaussdb-mysql.cn-east-5.myhuaweicloud.com")
     LA_NORTH_2 = Region("la-north-2",
                         "https://gaussdb-mysql.la-north-2.myhuaweicloud.com")
+    CN_SOUTHWEST_3 = Region("cn-southwest-3",
+                        "https://gaussdb-mysql.cn-southwest-3.myhuaweicloud.com")
     ME_EAST_1 = Region("me-east-1",
                         "https://gaussdbformysql.me-east-1.myhuaweicloud.com")
 
@@ -64,6 +66,7 @@ class GaussDBRegion:
         "cn-north-11": CN_NORTH_11,
         "cn-east-5": CN_EAST_5,
         "la-north-2": LA_NORTH_2,
+        "cn-southwest-3": CN_SOUTHWEST_3,
         "me-east-1": ME_EAST_1,
     }
 

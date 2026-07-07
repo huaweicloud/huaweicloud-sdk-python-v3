@@ -15,16 +15,16 @@ class ScheduledTaskV3:
     sensitive_list = []
 
     openapi_types = {
-        'create_time': 'datetime',
+        'create_time': 'int',
         'datastore_type': 'str',
-        'end_time': 'datetime',
+        'end_time': 'int',
         'instance_id': 'str',
         'instance_name': 'str',
         'instance_status': 'str',
         'project_id': 'str',
         'proxy_id': 'str',
         'proxy_name': 'str',
-        'start_time': 'datetime',
+        'start_time': 'int',
         'target_config': 'dict(str, str)',
         'task_id': 'str',
         'task_name': 'str',
@@ -56,11 +56,11 @@ class ScheduledTaskV3:
         The model defined in huaweicloud sdk
 
         :param create_time: **参数解释**：  任务创建时间。  **取值范围**： 不涉及。
-        :type create_time: datetime
+        :type create_time: int
         :param datastore_type: **参数解释**：  数据库类型。  **取值范围**： 目前只支持gaussdb-mysql。
         :type datastore_type: str
         :param end_time: **参数解释**：  任务结束时间。  **取值范围**： 不涉及。
-        :type end_time: datetime
+        :type end_time: int
         :param instance_id: **参数解释**：  任务绑定的实例ID。  **取值范围**： 不涉及。
         :type instance_id: str
         :param instance_name: **参数解释**：  任务绑定的实例名称。  **取值范围**： 不涉及。
@@ -74,7 +74,7 @@ class ScheduledTaskV3:
         :param proxy_name: **参数解释**：  任务使用的数据库代理名称。  **取值范围**： 不涉及。
         :type proxy_name: str
         :param start_time: **参数解释**：  任务开始时间。  **取值范围**： 不涉及。
-        :type start_time: datetime
+        :type start_time: int
         :param target_config: **参数解释**：  任务的目标端配置信息，以键值对形式存储。  **取值范围**： 不涉及。
         :type target_config: dict(str, str)
         :param task_id: **参数解释**：  任务ID，此参数是任务的唯一标识。  **取值范围**： 不涉及。
@@ -144,7 +144,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务创建时间。  **取值范围**： 不涉及。
 
         :return: The create_time of this ScheduledTaskV3.
-        :rtype: datetime
+        :rtype: int
         """
         return self._create_time
 
@@ -155,7 +155,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务创建时间。  **取值范围**： 不涉及。
 
         :param create_time: The create_time of this ScheduledTaskV3.
-        :type create_time: datetime
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -188,7 +188,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务结束时间。  **取值范围**： 不涉及。
 
         :return: The end_time of this ScheduledTaskV3.
-        :rtype: datetime
+        :rtype: int
         """
         return self._end_time
 
@@ -199,7 +199,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务结束时间。  **取值范围**： 不涉及。
 
         :param end_time: The end_time of this ScheduledTaskV3.
-        :type end_time: datetime
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -342,7 +342,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务开始时间。  **取值范围**： 不涉及。
 
         :return: The start_time of this ScheduledTaskV3.
-        :rtype: datetime
+        :rtype: int
         """
         return self._start_time
 
@@ -353,7 +353,7 @@ class ScheduledTaskV3:
         **参数解释**：  任务开始时间。  **取值范围**： 不涉及。
 
         :param start_time: The start_time of this ScheduledTaskV3.
-        :type start_time: datetime
+        :type start_time: int
         """
         self._start_time = start_time
 

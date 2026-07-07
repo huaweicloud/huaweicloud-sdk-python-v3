@@ -15,34 +15,41 @@ class SwitchGaussMySqlProxyAltRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'alt_enabled': 'str'
+        'alt_enabled': 'str',
+        'alt_for_readonly': 'str'
     }
 
     attribute_map = {
-        'alt_enabled': 'alt_enabled'
+        'alt_enabled': 'alt_enabled',
+        'alt_for_readonly': 'alt_for_readonly'
     }
 
-    def __init__(self, alt_enabled=None):
+    def __init__(self, alt_enabled=None, alt_for_readonly=None):
         r"""SwitchGaussMySqlProxyAltRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param alt_enabled: **参数解释**：  ALT开关状态。  **取值范围**： - on：开启。 - off：关闭。  **默认取值**： 不涉及。
+        :param alt_enabled: **参数解释**：  ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  不涉及。 
         :type alt_enabled: str
+        :param alt_for_readonly: **参数解释**：  只读ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  off。
+        :type alt_for_readonly: str
         """
         
         
 
         self._alt_enabled = None
+        self._alt_for_readonly = None
         self.discriminator = None
 
         self.alt_enabled = alt_enabled
+        if alt_for_readonly is not None:
+            self.alt_for_readonly = alt_for_readonly
 
     @property
     def alt_enabled(self):
         r"""Gets the alt_enabled of this SwitchGaussMySqlProxyAltRequestBody.
 
-        **参数解释**：  ALT开关状态。  **取值范围**： - on：开启。 - off：关闭。  **默认取值**： 不涉及。
+        **参数解释**：  ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  不涉及。 
 
         :return: The alt_enabled of this SwitchGaussMySqlProxyAltRequestBody.
         :rtype: str
@@ -53,12 +60,34 @@ class SwitchGaussMySqlProxyAltRequestBody:
     def alt_enabled(self, alt_enabled):
         r"""Sets the alt_enabled of this SwitchGaussMySqlProxyAltRequestBody.
 
-        **参数解释**：  ALT开关状态。  **取值范围**： - on：开启。 - off：关闭。  **默认取值**： 不涉及。
+        **参数解释**：  ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  不涉及。 
 
         :param alt_enabled: The alt_enabled of this SwitchGaussMySqlProxyAltRequestBody.
         :type alt_enabled: str
         """
         self._alt_enabled = alt_enabled
+
+    @property
+    def alt_for_readonly(self):
+        r"""Gets the alt_for_readonly of this SwitchGaussMySqlProxyAltRequestBody.
+
+        **参数解释**：  只读ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  off。
+
+        :return: The alt_for_readonly of this SwitchGaussMySqlProxyAltRequestBody.
+        :rtype: str
+        """
+        return self._alt_for_readonly
+
+    @alt_for_readonly.setter
+    def alt_for_readonly(self, alt_for_readonly):
+        r"""Sets the alt_for_readonly of this SwitchGaussMySqlProxyAltRequestBody.
+
+        **参数解释**：  只读ALT开关。  **约束限制**：  不涉及。  **取值范围**：  - on：开启。  - off：关闭。  **默认取值**：  off。
+
+        :param alt_for_readonly: The alt_for_readonly of this SwitchGaussMySqlProxyAltRequestBody.
+        :type alt_for_readonly: str
+        """
+        self._alt_for_readonly = alt_for_readonly
 
     def to_dict(self):
         result = {}

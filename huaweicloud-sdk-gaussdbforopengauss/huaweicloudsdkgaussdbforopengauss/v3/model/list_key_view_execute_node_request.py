@@ -16,15 +16,17 @@ class ListKeyViewExecuteNodeRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'body': 'object'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_language=None, instance_id=None):
+    def __init__(self, x_language=None, instance_id=None, body=None):
         r"""ListKeyViewExecuteNodeRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class ListKeyViewExecuteNodeRequest:
         :type x_language: str
         :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
+        :param body: Body of the ListKeyViewExecuteNodeRequest
+        :type body: object
         """
         
         
 
         self._x_language = None
         self._instance_id = None
+        self._body = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_language(self):
@@ -88,6 +95,24 @@ class ListKeyViewExecuteNodeRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this ListKeyViewExecuteNodeRequest.
+
+        :return: The body of this ListKeyViewExecuteNodeRequest.
+        :rtype: object
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this ListKeyViewExecuteNodeRequest.
+
+        :param body: The body of this ListKeyViewExecuteNodeRequest.
+        :type body: object
+        """
+        self._body = body
 
     def to_dict(self):
         result = {}

@@ -1,3 +1,66 @@
+# 3.1.203 2026-07-07
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `StartAnalysisSession`
+    - `ShowAnalysisSessionStatus`
+    - `ShowAnalysisSessionResult`
+    - `ShowDeadLockTopology`
+    - `ShowDeadLockAnalysisResult`
+    - `ParseDeadLock`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SwitchGaussMySqlProxyAlt**
+    - changes of request param
+      - `+ alt_for_readonly`
+  - **CheckScheduleTaskExist**
+    - changes of response param
+      - `* scheduled_tasks.create_time: date-time -> int64`
+      - `* scheduled_tasks.end_time: date-time -> int64`
+      - `* scheduled_tasks.start_time: date-time -> int64`
+  - **ShowBackupResourcePackageFlavors**
+    - changes of response param
+      - `+ flavors.spec_code`
+      - `- flavors.spce_code`
+  - **SetDdlLogPolicy**
+    - changes of response param
+      - `+ workflow_id`
+      - `- keey_days`
+      - `- total_count`
+      - `- switch_status`
+      - `- ddl_logs`
+  - **ListDdlLogs**
+    - changes of response param
+      - `+ keep_days`
+      - `- keey_days`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListEvents`, `BatchExecuteEvents`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.202 2026-07-02
 
 ### HuaweiCloud SDK CES

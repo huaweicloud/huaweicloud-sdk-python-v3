@@ -5035,6 +5035,73 @@ class DasClient(Client):
 
         return http_info
 
+    def parse_dead_lock(self, request):
+        r"""一键分析死锁日志
+
+        一键分析死锁日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ParseDeadLock
+        :type request: :class:`huaweicloudsdkdas.v3.ParseDeadLockRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ParseDeadLockResponse`
+        """
+        http_info = self._parse_dead_lock_http_info(request)
+        return self._call_api(**http_info)
+
+    def parse_dead_lock_invoker(self, request):
+        http_info = self._parse_dead_lock_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _parse_dead_lock_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/dead-lock-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ParseDeadLockResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def parse_sql_limit_rules(self, request):
         r"""根据原始SQL生成SQL限流关键字
 
@@ -5440,6 +5507,144 @@ class DasClient(Client):
 
         return http_info
 
+    def show_analysis_session_result(self, request):
+        r"""查询会话分析结果
+
+        查询会话分析结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAnalysisSessionResult
+        :type request: :class:`huaweicloudsdkdas.v3.ShowAnalysisSessionResultRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowAnalysisSessionResultResponse`
+        """
+        http_info = self._show_analysis_session_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_analysis_session_result_invoker(self, request):
+        http_info = self._show_analysis_session_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_analysis_session_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/session-analysis-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAnalysisSessionResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_analysis_session_status(self, request):
+        r"""查询会话分析状态
+
+        查询会话分析状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAnalysisSessionStatus
+        :type request: :class:`huaweicloudsdkdas.v3.ShowAnalysisSessionStatusRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowAnalysisSessionStatusResponse`
+        """
+        http_info = self._show_analysis_session_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_analysis_session_status_invoker(self, request):
+        http_info = self._show_analysis_session_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_analysis_session_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/session-analysis-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAnalysisSessionStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_credential(self, request):
         r"""查询AK/SK
 
@@ -5617,6 +5822,148 @@ class DasClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dead_lock_analysis_result(self, request):
+        r"""查询死锁日志分析结果
+
+        查询死锁日志分析结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDeadLockAnalysisResult
+        :type request: :class:`huaweicloudsdkdas.v3.ShowDeadLockAnalysisResultRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowDeadLockAnalysisResultResponse`
+        """
+        http_info = self._show_dead_lock_analysis_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dead_lock_analysis_result_invoker(self, request):
+        http_info = self._show_dead_lock_analysis_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dead_lock_analysis_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/dead-lock-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeadLockAnalysisResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'dead_lock_id' in local_var_params:
+            query_params.append(('dead_lock_id', local_var_params['dead_lock_id']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'transaction_id' in local_var_params:
+            query_params.append(('transaction_id', local_var_params['transaction_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dead_lock_topology(self, request):
+        r"""获取死锁拓扑图数据
+
+        获取死锁拓扑图数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDeadLockTopology
+        :type request: :class:`huaweicloudsdkdas.v3.ShowDeadLockTopologyRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowDeadLockTopologyResponse`
+        """
+        http_info = self._show_dead_lock_topology_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dead_lock_topology_invoker(self, request):
+        http_info = self._show_dead_lock_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dead_lock_topology_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/connections/{connection_id}/dead-lock-topology",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeadLockTopologyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+        if 'dead_lock_id' in local_var_params:
+            query_params.append(('dead_lock_id', local_var_params['dead_lock_id']))
+
+        header_params = {}
 
         form_params = {}
 
@@ -6870,6 +7217,75 @@ class DasClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_analysis_session(self, request):
+        r"""开始会话分析
+
+        开始会话分析
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StartAnalysisSession
+        :type request: :class:`huaweicloudsdkdas.v3.StartAnalysisSessionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.StartAnalysisSessionResponse`
+        """
+        http_info = self._start_analysis_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_analysis_session_invoker(self, request):
+        http_info = self._start_analysis_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_analysis_session_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/session-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAnalysisSessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
