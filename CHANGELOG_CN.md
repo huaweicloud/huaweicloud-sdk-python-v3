@@ -1,3 +1,202 @@
+# 3.1.204 2026-07-09
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListResourceSpecs`、`ShowRealNameAuthQrCode`、`ShowRealNameAuthStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListResourceSpecs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CBH
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSwitchConfigInfo**
+    - 响应参数变更
+      - `+ version_info`
+      - `+ switch_info`
+      - `- properties`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `RestartCluster`
+    - `StartAutoSetting`
+    - `UpdateFlavor`
+    - `ListSmnTopics`
+    - `UpdateExtendCluster`
+    - `CreateCluster`
+
+### HuaweiCloud SDK DBSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListDomainAllResource`
+    - `ShowDomainAllResourceCount`
+    - `ListAuditInstancesLast`
+    - `AddDatabaseSslKey`
+    - `ShowLogRetentionCommonSettings`
+    - `UpdateLogRetentionCommonSettings`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAuditInstancesNew**
+    - 响应参数变更
+      - `+ instances`
+      - `- servers`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ListGaussMySqlInstances`、`ShowGaussMySqlInstanceInfo`、`ListGaussMySqlInstanceDetailInfo`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteGeoipRule**
+    - 响应参数变更
+      - `+ geoTagList`
+  - **DeleteAntitamperRule**
+    - 响应参数变更
+      - `+ hostname`
+      - `+ description`
+      - `+ status`
+  - **UpdateAlertNoticeConfig**
+    - 请求参数变更
+      - `* nearly_expired_time: string -> int64`
+    - 响应参数变更
+      - `* nearly_expired_time: string -> int64`
+  - **DeleteAlertNoticeConfig**
+    - 响应参数变更
+      - `* nearly_expired_time: string -> int64`
+  - **ShowWebProtectionRule**
+    - 响应参数变更
+      - `+ effective_time`
+      - `+ update_time`
+  - **CreateAlertNoticeConfig**
+    - 响应参数变更
+      - `* nearly_expired_time: string -> int64`
+  - **DeleteIgnoreRule**
+    - 响应参数变更
+      - `+ domain`
+      - `- domains`
+  - **ShowPolicy**
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **UpdatePolicyProtectHost**
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **DeletePolicy**
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **CreateGeoipRule**
+    - 响应参数变更
+      - `+ geoTagList`
+  - **ListAntitamperRule**
+    - 响应参数变更
+      - `+ items.policyname`
+  - **DeleteCertificate**
+    - 响应参数变更
+      - `+ cert_type`
+      - `- bind_host`
+      - `- exp_status`
+      - `- content`
+      - `- key`
+  - **DeleteIpGroup**
+    - 响应参数变更
+      - `+ description`
+  - **ListNoticeConfigs**
+    - 响应参数变更
+      - `* items.nearly_expired_time: string -> int64`
+  - **CreateCloudWafPostPaidResource**
+    - 请求参数变更
+      - `+ postpaid_name`
+      - `+ extend_params`
+  - **BatchCreateGeoIpRule**
+    - 响应参数变更
+      - `+ geoTagList`
+  - **ListAntiTamperPolicyRules**
+    - 响应参数变更
+      - `+ items.policyname`
+  - **CopyPolicyById**
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **DeleteHost**
+    - 响应参数变更
+      - `+ region`
+  - **CreatePolicy**
+    - 响应参数变更
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **ListPolicy**
+    - 响应参数变更
+      - `+ items.options.precise`
+      - `+ items.options.followed_action`
+      - `+ items.options.anticrawler`
+  - **ListIpGroup**
+    - 响应参数变更
+      - `+ cloud_total`
+      - `- cloudTotal`
+
 # 3.1.203 2026-07-07
 
 ### HuaweiCloud SDK DAS

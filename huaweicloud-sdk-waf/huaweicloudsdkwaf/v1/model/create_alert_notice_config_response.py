@@ -26,7 +26,7 @@ class CreateAlertNoticeConfigResponse(SdkResponse):
         'threat': 'list[str]',
         'prefer_html': 'bool',
         'notice_class': 'str',
-        'nearly_expired_time': 'str',
+        'nearly_expired_time': 'int',
         'is_all_enterprise_project': 'bool',
         'enterprise_project_id': 'str',
         'update_time': 'int'
@@ -75,7 +75,7 @@ class CreateAlertNoticeConfigResponse(SdkResponse):
         :param notice_class: 通知类型
         :type notice_class: str
         :param nearly_expired_time: 提前通知天数
-        :type nearly_expired_time: str
+        :type nearly_expired_time: int
         :param is_all_enterprise_project: 是否是所有企业项目
         :type is_all_enterprise_project: bool
         :param enterprise_project_id: 企业项目ID
@@ -358,7 +358,7 @@ class CreateAlertNoticeConfigResponse(SdkResponse):
         提前通知天数
 
         :return: The nearly_expired_time of this CreateAlertNoticeConfigResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._nearly_expired_time
 
@@ -369,7 +369,7 @@ class CreateAlertNoticeConfigResponse(SdkResponse):
         提前通知天数
 
         :param nearly_expired_time: The nearly_expired_time of this CreateAlertNoticeConfigResponse.
-        :type nearly_expired_time: str
+        :type nearly_expired_time: int
         """
         self._nearly_expired_time = nearly_expired_time
 

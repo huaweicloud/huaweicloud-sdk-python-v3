@@ -16,64 +16,64 @@ class ListAuditInstancesNewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'servers': 'list[AuditInstanceListBean]',
+        'instances': 'list[ResponseAuditV2]',
         'total': 'int'
     }
 
     attribute_map = {
-        'servers': 'servers',
+        'instances': 'instances',
         'total': 'total'
     }
 
-    def __init__(self, servers=None, total=None):
+    def __init__(self, instances=None, total=None):
         r"""ListAuditInstancesNewResponse
 
         The model defined in huaweicloud sdk
 
-        :param servers: 实例信息列表
-        :type servers: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceListBean`]
-        :param total: 总数
+        :param instances: 实例列表
+        :type instances: list[:class:`huaweicloudsdkdbss.v1.ResponseAuditV2`]
+        :param total: 总记录数
         :type total: int
         """
         
         super().__init__()
 
-        self._servers = None
+        self._instances = None
         self._total = None
         self.discriminator = None
 
-        if servers is not None:
-            self.servers = servers
+        if instances is not None:
+            self.instances = instances
         if total is not None:
             self.total = total
 
     @property
-    def servers(self):
-        r"""Gets the servers of this ListAuditInstancesNewResponse.
+    def instances(self):
+        r"""Gets the instances of this ListAuditInstancesNewResponse.
 
-        实例信息列表
+        实例列表
 
-        :return: The servers of this ListAuditInstancesNewResponse.
-        :rtype: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceListBean`]
+        :return: The instances of this ListAuditInstancesNewResponse.
+        :rtype: list[:class:`huaweicloudsdkdbss.v1.ResponseAuditV2`]
         """
-        return self._servers
+        return self._instances
 
-    @servers.setter
-    def servers(self, servers):
-        r"""Sets the servers of this ListAuditInstancesNewResponse.
+    @instances.setter
+    def instances(self, instances):
+        r"""Sets the instances of this ListAuditInstancesNewResponse.
 
-        实例信息列表
+        实例列表
 
-        :param servers: The servers of this ListAuditInstancesNewResponse.
-        :type servers: list[:class:`huaweicloudsdkdbss.v1.AuditInstanceListBean`]
+        :param instances: The instances of this ListAuditInstancesNewResponse.
+        :type instances: list[:class:`huaweicloudsdkdbss.v1.ResponseAuditV2`]
         """
-        self._servers = servers
+        self._instances = instances
 
     @property
     def total(self):
         r"""Gets the total of this ListAuditInstancesNewResponse.
 
-        总数
+        总记录数
 
         :return: The total of this ListAuditInstancesNewResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListAuditInstancesNewResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListAuditInstancesNewResponse.
 
-        总数
+        总记录数
 
         :param total: The total of this ListAuditInstancesNewResponse.
         :type total: int

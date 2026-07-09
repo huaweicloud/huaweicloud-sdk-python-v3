@@ -90,6 +90,7 @@ from huaweicloudsdkcbh.v2.model.start_instance_request import StartInstanceReque
 from huaweicloudsdkcbh.v2.model.start_instance_response import StartInstanceResponse
 from huaweicloudsdkcbh.v2.model.stop_instance_request import StopInstanceRequest
 from huaweicloudsdkcbh.v2.model.stop_instance_response import StopInstanceResponse
+from huaweicloudsdkcbh.v2.model.switch_info import SwitchInfo
 from huaweicloudsdkcbh.v2.model.switch_instance_vpc_request import SwitchInstanceVpcRequest
 from huaweicloudsdkcbh.v2.model.switch_instance_vpc_response import SwitchInstanceVpcResponse
 from huaweicloudsdkcbh.v2.model.switch_virtual_private_cloud_request_body import SwitchVirtualPrivateCloudRequestBody
@@ -101,4 +102,5 @@ from huaweicloudsdkcbh.v2.model.update_instance_security_group_response import U
 from huaweicloudsdkcbh.v2.model.upgrade_cbh_request_body import UpgradeCbhRequestBody
 from huaweicloudsdkcbh.v2.model.upgrade_instance_request import UpgradeInstanceRequest
 from huaweicloudsdkcbh.v2.model.upgrade_instance_response import UpgradeInstanceResponse
+from huaweicloudsdkcbh.v2.model.version_info import VersionInfo
 

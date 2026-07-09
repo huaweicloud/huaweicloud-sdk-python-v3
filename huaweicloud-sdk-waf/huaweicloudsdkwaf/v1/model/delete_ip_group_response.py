@@ -21,7 +21,8 @@ class DeleteIpGroupResponse(SdkResponse):
         'ips': 'str',
         'ip_remarks': 'dict(str, str)',
         'size': 'int',
-        'rules': 'list[RuleInfo]'
+        'rules': 'list[RuleInfo]',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class DeleteIpGroupResponse(SdkResponse):
         'ips': 'ips',
         'ip_remarks': 'ip_remarks',
         'size': 'size',
-        'rules': 'rules'
+        'rules': 'rules',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, ips=None, ip_remarks=None, size=None, rules=None):
+    def __init__(self, id=None, name=None, ips=None, ip_remarks=None, size=None, rules=None, description=None):
         r"""DeleteIpGroupResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class DeleteIpGroupResponse(SdkResponse):
         :type size: int
         :param rules: ip地址组绑定的规则列表
         :type rules: list[:class:`huaweicloudsdkwaf.v1.RuleInfo`]
+        :param description: 描述
+        :type description: str
         """
         
         super().__init__()
@@ -60,6 +64,7 @@ class DeleteIpGroupResponse(SdkResponse):
         self._ip_remarks = None
         self._size = None
         self._rules = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -74,6 +79,8 @@ class DeleteIpGroupResponse(SdkResponse):
             self.size = size
         if rules is not None:
             self.rules = rules
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -206,6 +213,28 @@ class DeleteIpGroupResponse(SdkResponse):
         :type rules: list[:class:`huaweicloudsdkwaf.v1.RuleInfo`]
         """
         self._rules = rules
+
+    @property
+    def description(self):
+        r"""Gets the description of this DeleteIpGroupResponse.
+
+        描述
+
+        :return: The description of this DeleteIpGroupResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this DeleteIpGroupResponse.
+
+        描述
+
+        :param description: The description of this DeleteIpGroupResponse.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         import warnings

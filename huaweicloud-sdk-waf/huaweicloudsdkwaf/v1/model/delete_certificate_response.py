@@ -18,26 +18,20 @@ class DeleteCertificateResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'content': 'str',
-        'key': 'str',
         'expire_time': 'int',
-        'exp_status': 'int',
         'timestamp': 'int',
-        'bind_host': 'list[BindHost]'
+        'cert_type': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'content': 'content',
-        'key': 'key',
         'expire_time': 'expire_time',
-        'exp_status': 'exp_status',
         'timestamp': 'timestamp',
-        'bind_host': 'bind_host'
+        'cert_type': 'cert_type'
     }
 
-    def __init__(self, id=None, name=None, content=None, key=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
+    def __init__(self, id=None, name=None, expire_time=None, timestamp=None, cert_type=None):
         r"""DeleteCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -46,48 +40,33 @@ class DeleteCertificateResponse(SdkResponse):
         :type id: str
         :param name: 证书名
         :type name: str
-        :param content: 证书文件，PEM编码
-        :type content: str
-        :param key: 证书私钥，PEM编码
-        :type key: str
         :param expire_time: 证书过期时间戳
         :type expire_time: int
-        :param exp_status: **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
-        :type exp_status: int
         :param timestamp: 证书上传时间戳
         :type timestamp: int
-        :param bind_host: 证书关联的域名信息
-        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        :param cert_type: 证书类型
+        :type cert_type: str
         """
         
         super().__init__()
 
         self._id = None
         self._name = None
-        self._content = None
-        self._key = None
         self._expire_time = None
-        self._exp_status = None
         self._timestamp = None
-        self._bind_host = None
+        self._cert_type = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-        if content is not None:
-            self.content = content
-        if key is not None:
-            self.key = key
         if expire_time is not None:
             self.expire_time = expire_time
-        if exp_status is not None:
-            self.exp_status = exp_status
         if timestamp is not None:
             self.timestamp = timestamp
-        if bind_host is not None:
-            self.bind_host = bind_host
+        if cert_type is not None:
+            self.cert_type = cert_type
 
     @property
     def id(self):
@@ -134,50 +113,6 @@ class DeleteCertificateResponse(SdkResponse):
         self._name = name
 
     @property
-    def content(self):
-        r"""Gets the content of this DeleteCertificateResponse.
-
-        证书文件，PEM编码
-
-        :return: The content of this DeleteCertificateResponse.
-        :rtype: str
-        """
-        return self._content
-
-    @content.setter
-    def content(self, content):
-        r"""Sets the content of this DeleteCertificateResponse.
-
-        证书文件，PEM编码
-
-        :param content: The content of this DeleteCertificateResponse.
-        :type content: str
-        """
-        self._content = content
-
-    @property
-    def key(self):
-        r"""Gets the key of this DeleteCertificateResponse.
-
-        证书私钥，PEM编码
-
-        :return: The key of this DeleteCertificateResponse.
-        :rtype: str
-        """
-        return self._key
-
-    @key.setter
-    def key(self, key):
-        r"""Sets the key of this DeleteCertificateResponse.
-
-        证书私钥，PEM编码
-
-        :param key: The key of this DeleteCertificateResponse.
-        :type key: str
-        """
-        self._key = key
-
-    @property
     def expire_time(self):
         r"""Gets the expire_time of this DeleteCertificateResponse.
 
@@ -198,28 +133,6 @@ class DeleteCertificateResponse(SdkResponse):
         :type expire_time: int
         """
         self._expire_time = expire_time
-
-    @property
-    def exp_status(self):
-        r"""Gets the exp_status of this DeleteCertificateResponse.
-
-        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
-
-        :return: The exp_status of this DeleteCertificateResponse.
-        :rtype: int
-        """
-        return self._exp_status
-
-    @exp_status.setter
-    def exp_status(self, exp_status):
-        r"""Sets the exp_status of this DeleteCertificateResponse.
-
-        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
-
-        :param exp_status: The exp_status of this DeleteCertificateResponse.
-        :type exp_status: int
-        """
-        self._exp_status = exp_status
 
     @property
     def timestamp(self):
@@ -244,26 +157,26 @@ class DeleteCertificateResponse(SdkResponse):
         self._timestamp = timestamp
 
     @property
-    def bind_host(self):
-        r"""Gets the bind_host of this DeleteCertificateResponse.
+    def cert_type(self):
+        r"""Gets the cert_type of this DeleteCertificateResponse.
 
-        证书关联的域名信息
+        证书类型
 
-        :return: The bind_host of this DeleteCertificateResponse.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        :return: The cert_type of this DeleteCertificateResponse.
+        :rtype: str
         """
-        return self._bind_host
+        return self._cert_type
 
-    @bind_host.setter
-    def bind_host(self, bind_host):
-        r"""Sets the bind_host of this DeleteCertificateResponse.
+    @cert_type.setter
+    def cert_type(self, cert_type):
+        r"""Sets the cert_type of this DeleteCertificateResponse.
 
-        证书关联的域名信息
+        证书类型
 
-        :param bind_host: The bind_host of this DeleteCertificateResponse.
-        :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
+        :param cert_type: The cert_type of this DeleteCertificateResponse.
+        :type cert_type: str
         """
-        self._bind_host = bind_host
+        self._cert_type = cert_type
 
     def to_dict(self):
         import warnings

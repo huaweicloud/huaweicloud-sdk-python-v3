@@ -25,6 +25,7 @@ class PolicyOption:
         'webshell': 'bool',
         'cc': 'bool',
         'custom': 'bool',
+        'precise': 'bool',
         'whiteblackip': 'bool',
         'geoip': 'bool',
         'ignore': 'bool',
@@ -32,7 +33,9 @@ class PolicyOption:
         'antitamper': 'bool',
         'antileakage': 'bool',
         'bot_enable': 'bool',
-        'modulex_enabled': 'bool'
+        'modulex_enabled': 'bool',
+        'followed_action': 'bool',
+        'anticrawler': 'bool'
     }
 
     attribute_map = {
@@ -46,6 +49,7 @@ class PolicyOption:
         'webshell': 'webshell',
         'cc': 'cc',
         'custom': 'custom',
+        'precise': 'precise',
         'whiteblackip': 'whiteblackip',
         'geoip': 'geoip',
         'ignore': 'ignore',
@@ -53,10 +57,12 @@ class PolicyOption:
         'antitamper': 'antitamper',
         'antileakage': 'antileakage',
         'bot_enable': 'bot_enable',
-        'modulex_enabled': 'modulex_enabled'
+        'modulex_enabled': 'modulex_enabled',
+        'followed_action': 'followed_action',
+        'anticrawler': 'anticrawler'
     }
 
-    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None):
+    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, precise=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None, followed_action=None, anticrawler=None):
         r"""PolicyOption
 
         The model defined in huaweicloud sdk
@@ -81,6 +87,8 @@ class PolicyOption:
         :type cc: bool
         :param custom: 精准防护是否开启
         :type custom: bool
+        :param precise: 精准防护（旧版）是否开启
+        :type precise: bool
         :param whiteblackip: 黑白名单防护是否开启
         :type whiteblackip: bool
         :param geoip: 地理位置访问控制规则是否开启
@@ -97,6 +105,10 @@ class PolicyOption:
         :type bot_enable: bool
         :param modulex_enabled: modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
         :type modulex_enabled: bool
+        :param followed_action: 攻击惩罚规则是否开启
+        :type followed_action: bool
+        :param anticrawler: 反爬虫规则是否开启
+        :type anticrawler: bool
         """
         
         
@@ -111,6 +123,7 @@ class PolicyOption:
         self._webshell = None
         self._cc = None
         self._custom = None
+        self._precise = None
         self._whiteblackip = None
         self._geoip = None
         self._ignore = None
@@ -119,6 +132,8 @@ class PolicyOption:
         self._antileakage = None
         self._bot_enable = None
         self._modulex_enabled = None
+        self._followed_action = None
+        self._anticrawler = None
         self.discriminator = None
 
         if webattack is not None:
@@ -141,6 +156,8 @@ class PolicyOption:
             self.cc = cc
         if custom is not None:
             self.custom = custom
+        if precise is not None:
+            self.precise = precise
         if whiteblackip is not None:
             self.whiteblackip = whiteblackip
         if geoip is not None:
@@ -157,6 +174,10 @@ class PolicyOption:
             self.bot_enable = bot_enable
         if modulex_enabled is not None:
             self.modulex_enabled = modulex_enabled
+        if followed_action is not None:
+            self.followed_action = followed_action
+        if anticrawler is not None:
+            self.anticrawler = anticrawler
 
     @property
     def webattack(self):
@@ -379,6 +400,28 @@ class PolicyOption:
         self._custom = custom
 
     @property
+    def precise(self):
+        r"""Gets the precise of this PolicyOption.
+
+        精准防护（旧版）是否开启
+
+        :return: The precise of this PolicyOption.
+        :rtype: bool
+        """
+        return self._precise
+
+    @precise.setter
+    def precise(self, precise):
+        r"""Sets the precise of this PolicyOption.
+
+        精准防护（旧版）是否开启
+
+        :param precise: The precise of this PolicyOption.
+        :type precise: bool
+        """
+        self._precise = precise
+
+    @property
     def whiteblackip(self):
         r"""Gets the whiteblackip of this PolicyOption.
 
@@ -553,6 +596,50 @@ class PolicyOption:
         :type modulex_enabled: bool
         """
         self._modulex_enabled = modulex_enabled
+
+    @property
+    def followed_action(self):
+        r"""Gets the followed_action of this PolicyOption.
+
+        攻击惩罚规则是否开启
+
+        :return: The followed_action of this PolicyOption.
+        :rtype: bool
+        """
+        return self._followed_action
+
+    @followed_action.setter
+    def followed_action(self, followed_action):
+        r"""Sets the followed_action of this PolicyOption.
+
+        攻击惩罚规则是否开启
+
+        :param followed_action: The followed_action of this PolicyOption.
+        :type followed_action: bool
+        """
+        self._followed_action = followed_action
+
+    @property
+    def anticrawler(self):
+        r"""Gets the anticrawler of this PolicyOption.
+
+        反爬虫规则是否开启
+
+        :return: The anticrawler of this PolicyOption.
+        :rtype: bool
+        """
+        return self._anticrawler
+
+    @anticrawler.setter
+    def anticrawler(self, anticrawler):
+        r"""Sets the anticrawler of this PolicyOption.
+
+        反爬虫规则是否开启
+
+        :param anticrawler: The anticrawler of this PolicyOption.
+        :type anticrawler: bool
+        """
+        self._anticrawler = anticrawler
 
     def to_dict(self):
         result = {}

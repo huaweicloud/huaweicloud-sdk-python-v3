@@ -1,0 +1,135 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ResourceSpecsFilter:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'key': 'str',
+        'value': 'str'
+    }
+
+    attribute_map = {
+        'key': 'key',
+        'value': 'value'
+    }
+
+    def __init__(self, key=None, value=None):
+        r"""ResourceSpecsFilter
+
+        The model defined in huaweicloud sdk
+
+        :param key: |参数名称：过滤条件键| |参数的约束及描述：必填，仅支持RESOURCE_SPEC|
+        :type key: str
+        :param value: |参数名称：过滤条件值| |参数的约束及描述：必填，过滤条件值|
+        :type value: str
+        """
+        
+        
+
+        self._key = None
+        self._value = None
+        self.discriminator = None
+
+        self.key = key
+        self.value = value
+
+    @property
+    def key(self):
+        r"""Gets the key of this ResourceSpecsFilter.
+
+        |参数名称：过滤条件键| |参数的约束及描述：必填，仅支持RESOURCE_SPEC|
+
+        :return: The key of this ResourceSpecsFilter.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        r"""Sets the key of this ResourceSpecsFilter.
+
+        |参数名称：过滤条件键| |参数的约束及描述：必填，仅支持RESOURCE_SPEC|
+
+        :param key: The key of this ResourceSpecsFilter.
+        :type key: str
+        """
+        self._key = key
+
+    @property
+    def value(self):
+        r"""Gets the value of this ResourceSpecsFilter.
+
+        |参数名称：过滤条件值| |参数的约束及描述：必填，过滤条件值|
+
+        :return: The value of this ResourceSpecsFilter.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        r"""Sets the value of this ResourceSpecsFilter.
+
+        |参数名称：过滤条件值| |参数的约束及描述：必填，过滤条件值|
+
+        :param value: The value of this ResourceSpecsFilter.
+        :type value: str
+        """
+        self._value = value
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ResourceSpecsFilter):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

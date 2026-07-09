@@ -649,10 +649,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterResponse`
         """
+        warnings.warn("Method 'create_cluster_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_cluster_http_info(request)
         return self._call_api(**http_info)
 
     def create_cluster_async_invoker(self, request):
+        warnings.warn("Method 'create_cluster_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._create_cluster_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2169,7 +2171,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def list_smn_topics_async(self, request):
-        r"""获取智能运维告警可用的SMN主题
+        r"""获取可用的SMN主题
 
         该接口用于获取智能运维告警可用的SMN主题。
         
@@ -2180,10 +2182,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListSmnTopicsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListSmnTopicsResponse`
         """
+        warnings.warn("Method 'list_smn_topics_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_smn_topics_http_info(request)
         return self._call_api(**http_info)
 
     def list_smn_topics_async_invoker(self, request):
+        warnings.warn("Method 'list_smn_topics_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_smn_topics_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -2511,10 +2515,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RestartClusterResponse`
         """
+        warnings.warn("Method 'restart_cluster_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._restart_cluster_http_info(request)
         return self._call_api(**http_info)
 
     def restart_cluster_async_invoker(self, request):
+        warnings.warn("Method 'restart_cluster_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._restart_cluster_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -3623,7 +3629,7 @@ class CssAsyncClient(Client):
         return http_info
 
     def start_auto_setting_async(self, request):
-        r"""自动设置集群快照的基础配置（不推荐使用）
+        r"""自动设置集群快照的基础配置
 
         该接口用于自动设置集群快照的基础配置，包括配置OBS桶和IAM委托。
         
@@ -3643,10 +3649,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartAutoSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartAutoSettingResponse`
         """
+        warnings.warn("Method 'start_auto_setting_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_auto_setting_http_info(request)
         return self._call_api(**http_info)
 
     def start_auto_setting_async_invoker(self, request):
+        warnings.warn("Method 'start_auto_setting_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._start_auto_setting_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4713,10 +4721,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterResponse`
         """
+        warnings.warn("Method 'update_extend_cluster_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_extend_cluster_http_info(request)
         return self._call_api(**http_info)
 
     def update_extend_cluster_async_invoker(self, request):
+        warnings.warn("Method 'update_extend_cluster_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_extend_cluster_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4847,10 +4857,12 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateFlavorRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorResponse`
         """
+        warnings.warn("Method 'update_flavor_async' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_flavor_http_info(request)
         return self._call_api(**http_info)
 
     def update_flavor_async_invoker(self, request):
+        warnings.warn("Method 'update_flavor_async_invoker' of CssAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._update_flavor_http_info(request)
         return AsyncInvoker(self, http_info)
 

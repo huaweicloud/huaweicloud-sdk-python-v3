@@ -22,7 +22,9 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         'application_type': 'str',
         'protection_type': 'str',
         'description': 'str',
-        'create_time': 'int'
+        'create_time': 'int',
+        'update_time': 'int',
+        'effective_time': 'int'
     }
 
     attribute_map = {
@@ -32,10 +34,12 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         'application_type': 'application_type',
         'protection_type': 'protection_type',
         'description': 'description',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'update_time': 'update_time',
+        'effective_time': 'effective_time'
     }
 
-    def __init__(self, id=None, cve_number=None, risk_level=None, application_type=None, protection_type=None, description=None, create_time=None):
+    def __init__(self, id=None, cve_number=None, risk_level=None, application_type=None, protection_type=None, description=None, create_time=None, update_time=None, effective_time=None):
         r"""ShowWebProtectionRuleResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         :type description: str
         :param create_time: **参数解释：** 规则上线时间，Web防护规则正式启用的时间（时间戳格式） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type create_time: int
+        :param update_time: **参数解释：** 规则更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type update_time: int
+        :param effective_time: **参数解释：** 新增规则的生效时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type effective_time: int
         """
         
         super().__init__()
@@ -65,6 +73,8 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         self._protection_type = None
         self._description = None
         self._create_time = None
+        self._update_time = None
+        self._effective_time = None
         self.discriminator = None
 
         if id is not None:
@@ -81,6 +91,10 @@ class ShowWebProtectionRuleResponse(SdkResponse):
             self.description = description
         if create_time is not None:
             self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
+        if effective_time is not None:
+            self.effective_time = effective_time
 
     @property
     def id(self):
@@ -235,6 +249,50 @@ class ShowWebProtectionRuleResponse(SdkResponse):
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ShowWebProtectionRuleResponse.
+
+        **参数解释：** 规则更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The update_time of this ShowWebProtectionRuleResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ShowWebProtectionRuleResponse.
+
+        **参数解释：** 规则更新时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param update_time: The update_time of this ShowWebProtectionRuleResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
+
+    @property
+    def effective_time(self):
+        r"""Gets the effective_time of this ShowWebProtectionRuleResponse.
+
+        **参数解释：** 新增规则的生效时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The effective_time of this ShowWebProtectionRuleResponse.
+        :rtype: int
+        """
+        return self._effective_time
+
+    @effective_time.setter
+    def effective_time(self, effective_time):
+        r"""Sets the effective_time of this ShowWebProtectionRuleResponse.
+
+        **参数解释：** 新增规则的生效时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param effective_time: The effective_time of this ShowWebProtectionRuleResponse.
+        :type effective_time: int
+        """
+        self._effective_time = effective_time
 
     def to_dict(self):
         import warnings

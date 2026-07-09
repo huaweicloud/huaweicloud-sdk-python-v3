@@ -24,7 +24,8 @@ class CreateGeoipRuleResponse(SdkResponse):
         'status': 'int',
         'ip_type': 'str',
         'description': 'str',
-        'timestamp': 'int'
+        'timestamp': 'int',
+        'geo_tag_list': 'list[str]'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class CreateGeoipRuleResponse(SdkResponse):
         'status': 'status',
         'ip_type': 'ip_type',
         'description': 'description',
-        'timestamp': 'timestamp'
+        'timestamp': 'timestamp',
+        'geo_tag_list': 'geoTagList'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, geoip=None, white=None, status=None, ip_type=None, description=None, timestamp=None):
+    def __init__(self, id=None, name=None, policyid=None, geoip=None, white=None, status=None, ip_type=None, description=None, timestamp=None, geo_tag_list=None):
         r"""CreateGeoipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class CreateGeoipRuleResponse(SdkResponse):
         :type description: str
         :param timestamp: 创建规则时间戳
         :type timestamp: int
+        :param geo_tag_list: 地理位置
+        :type geo_tag_list: list[str]
         """
         
         super().__init__()
@@ -75,6 +79,7 @@ class CreateGeoipRuleResponse(SdkResponse):
         self._ip_type = None
         self._description = None
         self._timestamp = None
+        self._geo_tag_list = None
         self.discriminator = None
 
         if id is not None:
@@ -95,6 +100,8 @@ class CreateGeoipRuleResponse(SdkResponse):
             self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
+        if geo_tag_list is not None:
+            self.geo_tag_list = geo_tag_list
 
     @property
     def id(self):
@@ -293,6 +300,28 @@ class CreateGeoipRuleResponse(SdkResponse):
         :type timestamp: int
         """
         self._timestamp = timestamp
+
+    @property
+    def geo_tag_list(self):
+        r"""Gets the geo_tag_list of this CreateGeoipRuleResponse.
+
+        地理位置
+
+        :return: The geo_tag_list of this CreateGeoipRuleResponse.
+        :rtype: list[str]
+        """
+        return self._geo_tag_list
+
+    @geo_tag_list.setter
+    def geo_tag_list(self, geo_tag_list):
+        r"""Sets the geo_tag_list of this CreateGeoipRuleResponse.
+
+        地理位置
+
+        :param geo_tag_list: The geo_tag_list of this CreateGeoipRuleResponse.
+        :type geo_tag_list: list[str]
+        """
+        self._geo_tag_list = geo_tag_list
 
     def to_dict(self):
         import warnings

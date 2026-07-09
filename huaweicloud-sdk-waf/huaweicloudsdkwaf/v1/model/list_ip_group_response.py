@@ -24,7 +24,7 @@ class ListIpGroupResponse(SdkResponse):
     attribute_map = {
         'total': 'total',
         'items': 'items',
-        'cloud_total': 'cloudTotal'
+        'cloud_total': 'cloud_total'
     }
 
     def __init__(self, total=None, items=None, cloud_total=None):

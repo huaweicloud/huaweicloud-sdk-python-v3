@@ -31,6 +31,7 @@ from huaweicloudsdkbssintl.v2.model.change_enterprise_realname_auths_req import 
 from huaweicloudsdkbssintl.v2.model.check_subcustomer_user_req import CheckSubcustomerUserReq
 from huaweicloudsdkbssintl.v2.model.check_user_identity_request import CheckUserIdentityRequest
 from huaweicloudsdkbssintl.v2.model.check_user_identity_response import CheckUserIdentityResponse
+from huaweicloudsdkbssintl.v2.model.cloud_service_basic import CloudServiceBasic
 from huaweicloudsdkbssintl.v2.model.conversion import Conversion
 from huaweicloudsdkbssintl.v2.model.cost import Cost
 from huaweicloudsdkbssintl.v2.model.cost_data_by_dimension import CostDataByDimension
@@ -116,6 +117,8 @@ from huaweicloudsdkbssintl.v2.model.list_rate_on_period_detail_response import L
 from huaweicloudsdkbssintl.v2.model.list_renew_rate_on_period_req import ListRenewRateOnPeriodReq
 from huaweicloudsdkbssintl.v2.model.list_renew_rate_on_period_request import ListRenewRateOnPeriodRequest
 from huaweicloudsdkbssintl.v2.model.list_renew_rate_on_period_response import ListRenewRateOnPeriodResponse
+from huaweicloudsdkbssintl.v2.model.list_resource_specs_request import ListResourceSpecsRequest
+from huaweicloudsdkbssintl.v2.model.list_resource_specs_response import ListResourceSpecsResponse
 from huaweicloudsdkbssintl.v2.model.list_resource_types_request import ListResourceTypesRequest
 from huaweicloudsdkbssintl.v2.model.list_resource_types_response import ListResourceTypesResponse
 from huaweicloudsdkbssintl.v2.model.list_service_resources_request import ListServiceResourcesRequest
@@ -145,6 +148,7 @@ from huaweicloudsdkbssintl.v2.model.order_line_item_entity_v2 import OrderLineIt
 from huaweicloudsdkbssintl.v2.model.order_line_item_v3 import OrderLineItemV3
 from huaweicloudsdkbssintl.v2.model.order_refund_info_v2 import OrderRefundInfoV2
 from huaweicloudsdkbssintl.v2.model.order_v3 import OrderV3
+from huaweicloudsdkbssintl.v2.model.page_info import PageInfo
 from huaweicloudsdkbssintl.v2.model.pay_customer_order_v3_req import PayCustomerOrderV3Req
 from huaweicloudsdkbssintl.v2.model.pay_orders_request import PayOrdersRequest
 from huaweicloudsdkbssintl.v2.model.pay_orders_response import PayOrdersResponse
@@ -170,6 +174,8 @@ from huaweicloudsdkbssintl.v2.model.renewal_resources_response import RenewalRes
 from huaweicloudsdkbssintl.v2.model.res_fee_record_v2 import ResFeeRecordV2
 from huaweicloudsdkbssintl.v2.model.res_relation import ResRelation
 from huaweicloudsdkbssintl.v2.model.resource_basic_info import ResourceBasicInfo
+from huaweicloudsdkbssintl.v2.model.resource_specs_filter import ResourceSpecsFilter
+from huaweicloudsdkbssintl.v2.model.resource_specs_query_req import ResourceSpecsQueryReq
 from huaweicloudsdkbssintl.v2.model.resource_types import ResourceTypes
 from huaweicloudsdkbssintl.v2.model.send_verification_code_v2_req import SendVerificationCodeV2Req
 from huaweicloudsdkbssintl.v2.model.send_verification_message_code_request import SendVerificationMessageCodeRequest

@@ -23,7 +23,7 @@ class UpdateAlertNoticeConfigRequestBody:
         'times': 'int',
         'threat': 'list[str]',
         'notice_class': 'str',
-        'nearly_expired_time': 'str',
+        'nearly_expired_time': 'int',
         'is_all_enterprise_project': 'bool'
     }
 
@@ -62,7 +62,7 @@ class UpdateAlertNoticeConfigRequestBody:
         :param notice_class: 通知类型    - threat_alert_notice: 防护事件    - cert_alert_notice: 证书到期
         :type notice_class: str
         :param nearly_expired_time: 提前通知天数，通知类型为证书到期通知需要填写该参数
-        :type nearly_expired_time: str
+        :type nearly_expired_time: int
         :param is_all_enterprise_project: 是否是所有企业项目
         :type is_all_enterprise_project: bool
         """
@@ -282,7 +282,7 @@ class UpdateAlertNoticeConfigRequestBody:
         提前通知天数，通知类型为证书到期通知需要填写该参数
 
         :return: The nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._nearly_expired_time
 
@@ -293,7 +293,7 @@ class UpdateAlertNoticeConfigRequestBody:
         提前通知天数，通知类型为证书到期通知需要填写该参数
 
         :param nearly_expired_time: The nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
-        :type nearly_expired_time: str
+        :type nearly_expired_time: int
         """
         self._nearly_expired_time = nearly_expired_time
 

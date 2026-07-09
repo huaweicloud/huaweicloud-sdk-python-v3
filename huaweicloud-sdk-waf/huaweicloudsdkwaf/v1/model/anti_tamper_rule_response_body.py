@@ -21,7 +21,8 @@ class AntiTamperRuleResponseBody:
         'description': 'str',
         'status': 'int',
         'hostname': 'str',
-        'url': 'str'
+        'url': 'str',
+        'policyname': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class AntiTamperRuleResponseBody:
         'description': 'description',
         'status': 'status',
         'hostname': 'hostname',
-        'url': 'url'
+        'url': 'url',
+        'policyname': 'policyname'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, hostname=None, url=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, hostname=None, url=None, policyname=None):
         r"""AntiTamperRuleResponseBody
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class AntiTamperRuleResponseBody:
         :type hostname: str
         :param url: 防篡改的url
         :type url: str
+        :param policyname: 策略名称
+        :type policyname: str
         """
         
         
@@ -64,6 +68,7 @@ class AntiTamperRuleResponseBody:
         self._status = None
         self._hostname = None
         self._url = None
+        self._policyname = None
         self.discriminator = None
 
         if id is not None:
@@ -80,6 +85,8 @@ class AntiTamperRuleResponseBody:
             self.hostname = hostname
         if url is not None:
             self.url = url
+        if policyname is not None:
+            self.policyname = policyname
 
     @property
     def id(self):
@@ -234,6 +241,28 @@ class AntiTamperRuleResponseBody:
         :type url: str
         """
         self._url = url
+
+    @property
+    def policyname(self):
+        r"""Gets the policyname of this AntiTamperRuleResponseBody.
+
+        策略名称
+
+        :return: The policyname of this AntiTamperRuleResponseBody.
+        :rtype: str
+        """
+        return self._policyname
+
+    @policyname.setter
+    def policyname(self, policyname):
+        r"""Sets the policyname of this AntiTamperRuleResponseBody.
+
+        策略名称
+
+        :param policyname: The policyname of this AntiTamperRuleResponseBody.
+        :type policyname: str
+        """
+        self._policyname = policyname
 
     def to_dict(self):
         result = {}

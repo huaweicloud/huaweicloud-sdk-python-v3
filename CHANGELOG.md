@@ -1,3 +1,202 @@
+# 3.1.204 2026-07-09
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListResourceSpecs`, `ShowRealNameAuthQrCode`, `ShowRealNameAuthStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListResourceSpecs`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSwitchConfigInfo**
+    - changes of response param
+      - `+ version_info`
+      - `+ switch_info`
+      - `- properties`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `RestartCluster`
+    - `StartAutoSetting`
+    - `UpdateFlavor`
+    - `ListSmnTopics`
+    - `UpdateExtendCluster`
+    - `CreateCluster`
+
+### HuaweiCloud SDK DBSS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListDomainAllResource`
+    - `ShowDomainAllResourceCount`
+    - `ListAuditInstancesLast`
+    - `AddDatabaseSslKey`
+    - `ShowLogRetentionCommonSettings`
+    - `UpdateLogRetentionCommonSettings`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAuditInstancesNew**
+    - changes of response param
+      - `+ instances`
+      - `- servers`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the APIs `ListGaussMySqlInstances`, `ShowGaussMySqlInstanceInfo`, `ListGaussMySqlInstanceDetailInfo`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteGeoipRule**
+    - changes of response param
+      - `+ geoTagList`
+  - **DeleteAntitamperRule**
+    - changes of response param
+      - `+ hostname`
+      - `+ description`
+      - `+ status`
+  - **UpdateAlertNoticeConfig**
+    - changes of request param
+      - `* nearly_expired_time: string -> int64`
+    - changes of response param
+      - `* nearly_expired_time: string -> int64`
+  - **DeleteAlertNoticeConfig**
+    - changes of response param
+      - `* nearly_expired_time: string -> int64`
+  - **ShowWebProtectionRule**
+    - changes of response param
+      - `+ effective_time`
+      - `+ update_time`
+  - **CreateAlertNoticeConfig**
+    - changes of response param
+      - `* nearly_expired_time: string -> int64`
+  - **DeleteIgnoreRule**
+    - changes of response param
+      - `+ domain`
+      - `- domains`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **UpdatePolicyProtectHost**
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **DeletePolicy**
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **CreateGeoipRule**
+    - changes of response param
+      - `+ geoTagList`
+  - **ListAntitamperRule**
+    - changes of response param
+      - `+ items.policyname`
+  - **DeleteCertificate**
+    - changes of response param
+      - `+ cert_type`
+      - `- bind_host`
+      - `- exp_status`
+      - `- content`
+      - `- key`
+  - **DeleteIpGroup**
+    - changes of response param
+      - `+ description`
+  - **ListNoticeConfigs**
+    - changes of response param
+      - `* items.nearly_expired_time: string -> int64`
+  - **CreateCloudWafPostPaidResource**
+    - changes of request param
+      - `+ postpaid_name`
+      - `+ extend_params`
+  - **BatchCreateGeoIpRule**
+    - changes of response param
+      - `+ geoTagList`
+  - **ListAntiTamperPolicyRules**
+    - changes of response param
+      - `+ items.policyname`
+  - **CopyPolicyById**
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **DeleteHost**
+    - changes of response param
+      - `+ region`
+  - **CreatePolicy**
+    - changes of response param
+      - `+ options.precise`
+      - `+ options.followed_action`
+      - `+ options.anticrawler`
+  - **ListPolicy**
+    - changes of response param
+      - `+ items.options.precise`
+      - `+ items.options.followed_action`
+      - `+ items.options.anticrawler`
+  - **ListIpGroup**
+    - changes of response param
+      - `+ cloud_total`
+      - `- cloudTotal`
+
 # 3.1.203 2026-07-07
 
 ### HuaweiCloud SDK DAS

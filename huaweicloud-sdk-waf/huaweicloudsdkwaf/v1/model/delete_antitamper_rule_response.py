@@ -19,17 +19,23 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         'id': 'str',
         'policyid': 'str',
         'url': 'str',
-        'timestamp': 'int'
+        'timestamp': 'int',
+        'hostname': 'str',
+        'status': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'policyid': 'policyid',
         'url': 'url',
-        'timestamp': 'timestamp'
+        'timestamp': 'timestamp',
+        'hostname': 'hostname',
+        'status': 'status',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, timestamp=None):
+    def __init__(self, id=None, policyid=None, url=None, timestamp=None, hostname=None, status=None, description=None):
         r"""DeleteAntitamperRuleResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +48,12 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         :type url: str
         :param timestamp: 创建规则的时间戳
         :type timestamp: int
+        :param hostname: 防护域名
+        :type hostname: str
+        :param status: 规则状态
+        :type status: str
+        :param description: 规则描述
+        :type description: str
         """
         
         super().__init__()
@@ -50,6 +62,9 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         self._policyid = None
         self._url = None
         self._timestamp = None
+        self._hostname = None
+        self._status = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -60,6 +75,12 @@ class DeleteAntitamperRuleResponse(SdkResponse):
             self.url = url
         if timestamp is not None:
             self.timestamp = timestamp
+        if hostname is not None:
+            self.hostname = hostname
+        if status is not None:
+            self.status = status
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -148,6 +169,72 @@ class DeleteAntitamperRuleResponse(SdkResponse):
         :type timestamp: int
         """
         self._timestamp = timestamp
+
+    @property
+    def hostname(self):
+        r"""Gets the hostname of this DeleteAntitamperRuleResponse.
+
+        防护域名
+
+        :return: The hostname of this DeleteAntitamperRuleResponse.
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        r"""Sets the hostname of this DeleteAntitamperRuleResponse.
+
+        防护域名
+
+        :param hostname: The hostname of this DeleteAntitamperRuleResponse.
+        :type hostname: str
+        """
+        self._hostname = hostname
+
+    @property
+    def status(self):
+        r"""Gets the status of this DeleteAntitamperRuleResponse.
+
+        规则状态
+
+        :return: The status of this DeleteAntitamperRuleResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this DeleteAntitamperRuleResponse.
+
+        规则状态
+
+        :param status: The status of this DeleteAntitamperRuleResponse.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def description(self):
+        r"""Gets the description of this DeleteAntitamperRuleResponse.
+
+        规则描述
+
+        :return: The description of this DeleteAntitamperRuleResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this DeleteAntitamperRuleResponse.
+
+        规则描述
+
+        :param description: The description of this DeleteAntitamperRuleResponse.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         import warnings

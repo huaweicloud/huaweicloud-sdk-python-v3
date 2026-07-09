@@ -27,7 +27,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         'url_logic': 'str',
         'conditions': 'list[Condition]',
         'advanced': 'IgnoreAdvanced',
-        'domains': 'list[str]'
+        'domain': 'list[str]'
     }
 
     attribute_map = {
@@ -42,10 +42,10 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         'url_logic': 'url_logic',
         'conditions': 'conditions',
         'advanced': 'advanced',
-        'domains': 'domains'
+        'domain': 'domain'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domains=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domain=None):
         r"""DeleteIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
@@ -72,8 +72,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         :param advanced: 
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
-        :param domains: 防护域名或防护网站
-        :type domains: list[str]
+        :param domain: 防护域名或防护网站
+        :type domain: list[str]
         """
         
         super().__init__()
@@ -89,7 +89,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         self._url_logic = None
         self._conditions = None
         self._advanced = None
-        self._domains = None
+        self._domain = None
         self.discriminator = None
 
         if id is not None:
@@ -114,8 +114,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
             self.conditions = conditions
         if advanced is not None:
             self.advanced = advanced
-        if domains is not None:
-            self.domains = domains
+        if domain is not None:
+            self.domain = domain
 
     @property
     def id(self):
@@ -356,26 +356,26 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         self._advanced = advanced
 
     @property
-    def domains(self):
-        r"""Gets the domains of this DeleteIgnoreRuleResponse.
+    def domain(self):
+        r"""Gets the domain of this DeleteIgnoreRuleResponse.
 
         防护域名或防护网站
 
-        :return: The domains of this DeleteIgnoreRuleResponse.
+        :return: The domain of this DeleteIgnoreRuleResponse.
         :rtype: list[str]
         """
-        return self._domains
+        return self._domain
 
-    @domains.setter
-    def domains(self, domains):
-        r"""Sets the domains of this DeleteIgnoreRuleResponse.
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this DeleteIgnoreRuleResponse.
 
         防护域名或防护网站
 
-        :param domains: The domains of this DeleteIgnoreRuleResponse.
-        :type domains: list[str]
+        :param domain: The domain of this DeleteIgnoreRuleResponse.
+        :type domain: list[str]
         """
-        self._domains = domains
+        self._domain = domain
 
     def to_dict(self):
         import warnings

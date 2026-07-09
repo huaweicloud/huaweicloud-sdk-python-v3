@@ -4328,10 +4328,12 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoResponse`
         """
+        warnings.warn("Method 'list_gauss_my_sql_instance_detail_info_async' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_gauss_my_sql_instance_detail_info_http_info(request)
         return self._call_api(**http_info)
 
     def list_gauss_my_sql_instance_detail_info_async_invoker(self, request):
+        warnings.warn("Method 'list_gauss_my_sql_instance_detail_info_async_invoker' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_gauss_my_sql_instance_detail_info_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -4462,10 +4464,12 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesResponse`
         """
+        warnings.warn("Method 'list_gauss_my_sql_instances_async' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_gauss_my_sql_instances_http_info(request)
         return self._call_api(**http_info)
 
     def list_gauss_my_sql_instances_async_invoker(self, request):
+        warnings.warn("Method 'list_gauss_my_sql_instances_async_invoker' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_gauss_my_sql_instances_http_info(request)
         return AsyncInvoker(self, http_info)
 
@@ -8215,10 +8219,12 @@ class GaussDBAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoResponse`
         """
+        warnings.warn("Method 'show_gauss_my_sql_instance_info_async' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_gauss_my_sql_instance_info_http_info(request)
         return self._call_api(**http_info)
 
     def show_gauss_my_sql_instance_info_async_invoker(self, request):
+        warnings.warn("Method 'show_gauss_my_sql_instance_info_async_invoker' of GaussDBAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_gauss_my_sql_instance_info_http_info(request)
         return AsyncInvoker(self, http_info)
 

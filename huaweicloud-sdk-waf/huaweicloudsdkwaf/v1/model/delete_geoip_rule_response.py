@@ -20,6 +20,7 @@ class DeleteGeoipRuleResponse(SdkResponse):
         'name': 'str',
         'policyid': 'str',
         'geoip': 'str',
+        'geo_tag_list': 'list[str]',
         'white': 'int',
         'status': 'int',
         'description': 'str',
@@ -31,13 +32,14 @@ class DeleteGeoipRuleResponse(SdkResponse):
         'name': 'name',
         'policyid': 'policyid',
         'geoip': 'geoip',
+        'geo_tag_list': 'geoTagList',
         'white': 'white',
         'status': 'status',
         'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, geoip=None, white=None, status=None, description=None, timestamp=None):
+    def __init__(self, id=None, name=None, policyid=None, geoip=None, geo_tag_list=None, white=None, status=None, description=None, timestamp=None):
         r"""DeleteGeoipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class DeleteGeoipRuleResponse(SdkResponse):
         :type policyid: str
         :param geoip: 地理位置封禁区域
         :type geoip: str
+        :param geo_tag_list: 地理位置封禁区域
+        :type geo_tag_list: list[str]
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
         :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
@@ -66,6 +70,7 @@ class DeleteGeoipRuleResponse(SdkResponse):
         self._name = None
         self._policyid = None
         self._geoip = None
+        self._geo_tag_list = None
         self._white = None
         self._status = None
         self._description = None
@@ -80,6 +85,8 @@ class DeleteGeoipRuleResponse(SdkResponse):
             self.policyid = policyid
         if geoip is not None:
             self.geoip = geoip
+        if geo_tag_list is not None:
+            self.geo_tag_list = geo_tag_list
         if white is not None:
             self.white = white
         if status is not None:
@@ -176,6 +183,28 @@ class DeleteGeoipRuleResponse(SdkResponse):
         :type geoip: str
         """
         self._geoip = geoip
+
+    @property
+    def geo_tag_list(self):
+        r"""Gets the geo_tag_list of this DeleteGeoipRuleResponse.
+
+        地理位置封禁区域
+
+        :return: The geo_tag_list of this DeleteGeoipRuleResponse.
+        :rtype: list[str]
+        """
+        return self._geo_tag_list
+
+    @geo_tag_list.setter
+    def geo_tag_list(self, geo_tag_list):
+        r"""Sets the geo_tag_list of this DeleteGeoipRuleResponse.
+
+        地理位置封禁区域
+
+        :param geo_tag_list: The geo_tag_list of this DeleteGeoipRuleResponse.
+        :type geo_tag_list: list[str]
+        """
+        self._geo_tag_list = geo_tag_list
 
     @property
     def white(self):

@@ -65,7 +65,8 @@ class BatchCreateGeoIpRuleRequestBody:
             self.name = name
         self.geoip = geoip
         self.white = white
-        self.ip_type = ip_type
+        if ip_type is not None:
+            self.ip_type = ip_type
         if description is not None:
             self.description = description
         self.policy_ids = policy_ids

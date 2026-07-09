@@ -30,7 +30,8 @@ class DeleteHostResponse(SdkResponse):
         'access_status': 'int',
         'exclusive_ip': 'bool',
         'paid_type': 'str',
-        'web_tag': 'str'
+        'web_tag': 'str',
+        'region': 'str'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class DeleteHostResponse(SdkResponse):
         'access_status': 'access_status',
         'exclusive_ip': 'exclusive_ip',
         'paid_type': 'paid_type',
-        'web_tag': 'web_tag'
+        'web_tag': 'web_tag',
+        'region': 'region'
     }
 
-    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None):
+    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None, region=None):
         r"""DeleteHostResponse
 
         The model defined in huaweicloud sdk
@@ -86,6 +88,8 @@ class DeleteHostResponse(SdkResponse):
         :type paid_type: str
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
+        :param region: 华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
+        :type region: str
         """
         
         super().__init__()
@@ -105,6 +109,7 @@ class DeleteHostResponse(SdkResponse):
         self._exclusive_ip = None
         self._paid_type = None
         self._web_tag = None
+        self._region = None
         self.discriminator = None
 
         if id is not None:
@@ -137,6 +142,8 @@ class DeleteHostResponse(SdkResponse):
             self.paid_type = paid_type
         if web_tag is not None:
             self.web_tag = web_tag
+        if region is not None:
+            self.region = region
 
     @property
     def id(self):
@@ -463,6 +470,28 @@ class DeleteHostResponse(SdkResponse):
         :type web_tag: str
         """
         self._web_tag = web_tag
+
+    @property
+    def region(self):
+        r"""Gets the region of this DeleteHostResponse.
+
+        华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
+
+        :return: The region of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this DeleteHostResponse.
+
+        华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
+
+        :param region: The region of this DeleteHostResponse.
+        :type region: str
+        """
+        self._region = region
 
     def to_dict(self):
         import warnings

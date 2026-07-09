@@ -16,47 +16,72 @@ class ListSwitchConfigInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'properties': 'object'
+        'switch_info': 'SwitchInfo',
+        'version_info': 'VersionInfo'
     }
 
     attribute_map = {
-        'properties': 'properties'
+        'switch_info': 'switch_info',
+        'version_info': 'version_info'
     }
 
-    def __init__(self, properties=None):
+    def __init__(self, switch_info=None, version_info=None):
         r"""ListSwitchConfigInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param properties: 
-        :type properties: object
+        :param switch_info: 
+        :type switch_info: :class:`huaweicloudsdkcbh.v2.SwitchInfo`
+        :param version_info: 
+        :type version_info: :class:`huaweicloudsdkcbh.v2.VersionInfo`
         """
         
         super().__init__()
 
-        self._properties = None
+        self._switch_info = None
+        self._version_info = None
         self.discriminator = None
 
-        if properties is not None:
-            self.properties = properties
+        if switch_info is not None:
+            self.switch_info = switch_info
+        if version_info is not None:
+            self.version_info = version_info
 
     @property
-    def properties(self):
-        r"""Gets the properties of this ListSwitchConfigInfoResponse.
+    def switch_info(self):
+        r"""Gets the switch_info of this ListSwitchConfigInfoResponse.
 
-        :return: The properties of this ListSwitchConfigInfoResponse.
-        :rtype: object
+        :return: The switch_info of this ListSwitchConfigInfoResponse.
+        :rtype: :class:`huaweicloudsdkcbh.v2.SwitchInfo`
         """
-        return self._properties
+        return self._switch_info
 
-    @properties.setter
-    def properties(self, properties):
-        r"""Sets the properties of this ListSwitchConfigInfoResponse.
+    @switch_info.setter
+    def switch_info(self, switch_info):
+        r"""Sets the switch_info of this ListSwitchConfigInfoResponse.
 
-        :param properties: The properties of this ListSwitchConfigInfoResponse.
-        :type properties: object
+        :param switch_info: The switch_info of this ListSwitchConfigInfoResponse.
+        :type switch_info: :class:`huaweicloudsdkcbh.v2.SwitchInfo`
         """
-        self._properties = properties
+        self._switch_info = switch_info
+
+    @property
+    def version_info(self):
+        r"""Gets the version_info of this ListSwitchConfigInfoResponse.
+
+        :return: The version_info of this ListSwitchConfigInfoResponse.
+        :rtype: :class:`huaweicloudsdkcbh.v2.VersionInfo`
+        """
+        return self._version_info
+
+    @version_info.setter
+    def version_info(self, version_info):
+        r"""Sets the version_info of this ListSwitchConfigInfoResponse.
+
+        :param version_info: The version_info of this ListSwitchConfigInfoResponse.
+        :type version_info: :class:`huaweicloudsdkcbh.v2.VersionInfo`
+        """
+        self._version_info = version_info
 
     def to_dict(self):
         import warnings

@@ -238,6 +238,75 @@ class DbssClient(Client):
 
         return http_info
 
+    def add_database_ssl_key(self, request):
+        r"""上传/更新数据库私钥
+
+        上传/更新数据库私钥
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddDatabaseSslKey
+        :type request: :class:`huaweicloudsdkdbss.v1.AddDatabaseSslKeyRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.AddDatabaseSslKeyResponse`
+        """
+        http_info = self._add_database_ssl_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_database_ssl_key_invoker(self, request):
+        http_info = self._add_database_ssl_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_database_ssl_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/audit/{instance_id}/databases/{db_id}/sslkey",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDatabaseSslKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_id' in local_var_params:
+            path_params['db_id'] = local_var_params['db_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_rds_database(self, request):
         r"""添加RDS数据库[待下线]
 
@@ -3334,8 +3403,75 @@ class DbssClient(Client):
 
         return http_info
 
-    def list_audit_instances_new(self, request):
+    def list_audit_instances_last(self, request):
         r"""查询审计实例列表
+
+        查询审计实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAuditInstancesLast
+        :type request: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesLastRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesLastResponse`
+        """
+        http_info = self._list_audit_instances_last_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_audit_instances_last_invoker(self, request):
+        http_info = self._list_audit_instances_last_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_instances_last_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/audit/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditInstancesLastResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_audit_instances_new(self, request):
+        r"""查询审计实例列表[待下线]
 
         查询审计实例列表
         
@@ -4377,6 +4513,79 @@ class DbssClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_domain_all_resource(self, request):
+        r"""云脑链接器获取资源列表
+
+        云脑链接器获取资源列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDomainAllResource
+        :type request: :class:`huaweicloudsdkdbss.v1.ListDomainAllResourceRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ListDomainAllResourceResponse`
+        """
+        http_info = self._list_domain_all_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_all_resource_invoker(self, request):
+        http_info = self._list_domain_all_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_all_resource_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/{region_id}/{resource_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainAllResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -6390,6 +6599,75 @@ class DbssClient(Client):
 
         return http_info
 
+    def show_domain_all_resource_count(self, request):
+        r"""云脑链接器获取资源总量
+
+        云脑链接器获取资源总量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainAllResourceCount
+        :type request: :class:`huaweicloudsdkdbss.v1.ShowDomainAllResourceCountRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ShowDomainAllResourceCountResponse`
+        """
+        http_info = self._show_domain_all_resource_count_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_all_resource_count_invoker(self, request):
+        http_info = self._show_domain_all_resource_count_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_all_resource_count_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/{region_id}/{resource_type}/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainAllResourceCountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'region_id' in local_var_params:
+            path_params['region_id'] = local_var_params['region_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance_monitor_info(self, request):
         r"""获取实例监控数据
 
@@ -6491,6 +6769,71 @@ class DbssClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_log_retention_common_settings(self, request):
+        r"""获取审计实例日志保存时间配置
+
+        获取审计实例日志保存时间配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLogRetentionCommonSettings
+        :type request: :class:`huaweicloudsdkdbss.v1.ShowLogRetentionCommonSettingsRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.ShowLogRetentionCommonSettingsResponse`
+        """
+        http_info = self._show_log_retention_common_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_log_retention_common_settings_invoker(self, request):
+        http_info = self._show_log_retention_common_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_log_retention_common_settings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/audit/{instance_id}/settings/common-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogRetentionCommonSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -8141,6 +8484,73 @@ class DbssClient(Client):
             "resource_path": "/v1/{project_id}/db-om/{instance_id}/name",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateDbOmInstanceNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_log_retention_common_settings(self, request):
+        r"""设置审计实例日志保存时间配置
+
+        设置审计实例日志保存时间配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLogRetentionCommonSettings
+        :type request: :class:`huaweicloudsdkdbss.v1.UpdateLogRetentionCommonSettingsRequest`
+        :rtype: :class:`huaweicloudsdkdbss.v1.UpdateLogRetentionCommonSettingsResponse`
+        """
+        http_info = self._update_log_retention_common_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_log_retention_common_settings_invoker(self, request):
+        http_info = self._update_log_retention_common_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_log_retention_common_settings_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/audit/{instance_id}/settings/common-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogRetentionCommonSettingsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
