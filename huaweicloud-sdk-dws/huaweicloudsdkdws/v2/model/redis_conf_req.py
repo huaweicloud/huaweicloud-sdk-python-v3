@@ -29,7 +29,7 @@ class RedisConfReq:
 
         The model defined in huaweicloud sdk
 
-        :param redis_mode: **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： offLine：离线模式。 onLine：在线模式。 **默认取值**： offLine
+        :param redis_mode: **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： online或offLine：在线模式。 offline或offLine：离线模式。 **默认取值**： offLine
         :type redis_mode: str
         :param parallel_jobs: **参数解释**： 并行作业数量，默认4。 **约束限制**： 不涉及。 **取值范围**： 1~200 **默认取值**： 4
         :type parallel_jobs: int
@@ -48,7 +48,7 @@ class RedisConfReq:
     def redis_mode(self):
         r"""Gets the redis_mode of this RedisConfReq.
 
-        **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： offLine：离线模式。 onLine：在线模式。 **默认取值**： offLine
+        **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： online或offLine：在线模式。 offline或offLine：离线模式。 **默认取值**： offLine
 
         :return: The redis_mode of this RedisConfReq.
         :rtype: str
@@ -59,7 +59,7 @@ class RedisConfReq:
     def redis_mode(self, redis_mode):
         r"""Sets the redis_mode of this RedisConfReq.
 
-        **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： offLine：离线模式。 onLine：在线模式。 **默认取值**： offLine
+        **参数解释**： 重分布模式，不同模式对业务影响不同，修改建议联系运维人员评估后再决定。 **约束限制**： 必须是有效的dws集群ID。 **取值范围**： online或offLine：在线模式。 offline或offLine：离线模式。 **默认取值**： offLine
 
         :param redis_mode: The redis_mode of this RedisConfReq.
         :type redis_mode: str

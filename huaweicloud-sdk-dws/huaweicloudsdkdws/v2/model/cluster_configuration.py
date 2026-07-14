@@ -39,7 +39,7 @@ class ClusterConfiguration:
         :type id: str
         :param name: **参数解释**： 参数组名称。 **取值范围**： 不涉及。
         :type name: str
-        :param type: **参数解释**： 参数组类型。 **取值范围**： 当前只有以下两个参数组有效，其他参数组仅显示但无实际意义。 - parameterGroup：guc参数组。 - securityParameterGroup：安全设置参数组。
+        :param type: **参数解释**： 参数组类型。 **取值范围**： 当前只有hiddenParameterGroup、securityParameterGroup两个参数组有效，其他参数组仅显示但无法通过外部接口去修改。 - hiddenParameterGroup：隐藏参数组，对应参数修改页面的参数组。 - securityParameterGroup：安全设置参数组。 - parameterGroup：guc参数组。 - GUCConfig：GUC配置参数组。 - OBSConfig：OBS配置参数组。
         :type type: str
         :param status: **参数解释**： 集群参数状态。 **取值范围**： - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
         :type status: str
@@ -110,7 +110,7 @@ class ClusterConfiguration:
     def type(self):
         r"""Gets the type of this ClusterConfiguration.
 
-        **参数解释**： 参数组类型。 **取值范围**： 当前只有以下两个参数组有效，其他参数组仅显示但无实际意义。 - parameterGroup：guc参数组。 - securityParameterGroup：安全设置参数组。
+        **参数解释**： 参数组类型。 **取值范围**： 当前只有hiddenParameterGroup、securityParameterGroup两个参数组有效，其他参数组仅显示但无法通过外部接口去修改。 - hiddenParameterGroup：隐藏参数组，对应参数修改页面的参数组。 - securityParameterGroup：安全设置参数组。 - parameterGroup：guc参数组。 - GUCConfig：GUC配置参数组。 - OBSConfig：OBS配置参数组。
 
         :return: The type of this ClusterConfiguration.
         :rtype: str
@@ -121,7 +121,7 @@ class ClusterConfiguration:
     def type(self, type):
         r"""Sets the type of this ClusterConfiguration.
 
-        **参数解释**： 参数组类型。 **取值范围**： 当前只有以下两个参数组有效，其他参数组仅显示但无实际意义。 - parameterGroup：guc参数组。 - securityParameterGroup：安全设置参数组。
+        **参数解释**： 参数组类型。 **取值范围**： 当前只有hiddenParameterGroup、securityParameterGroup两个参数组有效，其他参数组仅显示但无法通过外部接口去修改。 - hiddenParameterGroup：隐藏参数组，对应参数修改页面的参数组。 - securityParameterGroup：安全设置参数组。 - parameterGroup：guc参数组。 - GUCConfig：GUC配置参数组。 - OBSConfig：OBS配置参数组。
 
         :param type: The type of this ClusterConfiguration.
         :type type: str

@@ -67,9 +67,9 @@ class DatabaseUserInfoReq:
         :type conn_limit: int
         :param replication: **参数解释**： 是否允许流复制。 **取值范围**： 不涉及。
         :type replication: bool
-        :param valid_begin: **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        :param valid_begin: **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
         :type valid_begin: str
-        :param valid_until: **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        :param valid_until: **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
         :type valid_until: str
         :param lock: **参数解释**： 是否锁定。 **取值范围**： 不涉及。
         :type lock: bool
@@ -318,7 +318,7 @@ class DatabaseUserInfoReq:
     def valid_begin(self):
         r"""Gets the valid_begin of this DatabaseUserInfoReq.
 
-        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The valid_begin of this DatabaseUserInfoReq.
         :rtype: str
@@ -329,7 +329,7 @@ class DatabaseUserInfoReq:
     def valid_begin(self, valid_begin):
         r"""Sets the valid_begin of this DatabaseUserInfoReq.
 
-        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        **参数解释**： 角色生效时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
 
         :param valid_begin: The valid_begin of this DatabaseUserInfoReq.
         :type valid_begin: str
@@ -340,7 +340,7 @@ class DatabaseUserInfoReq:
     def valid_until(self):
         r"""Gets the valid_until of this DatabaseUserInfoReq.
 
-        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The valid_until of this DatabaseUserInfoReq.
         :rtype: str
@@ -351,7 +351,7 @@ class DatabaseUserInfoReq:
     def valid_until(self, valid_until):
         r"""Sets the valid_until of this DatabaseUserInfoReq.
 
-        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ssZ。 **取值范围**： 不涉及。
+        **参数解释**： 角色过期时间。格式：yyyy-MM-ddTHH:mm:ss。 **取值范围**： 不涉及。
 
         :param valid_until: The valid_until of this DatabaseUserInfoReq.
         :type valid_until: str

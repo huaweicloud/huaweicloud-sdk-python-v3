@@ -532,6 +532,10 @@ class CbhClient(Client):
         query_params = []
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

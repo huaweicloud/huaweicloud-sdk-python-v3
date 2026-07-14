@@ -36,7 +36,7 @@ class EncryptClusterResponse(SdkResponse):
         :type error_code: str
         :param error_msg: **参数解释**： 错误信息。 **取值范围**： 不涉及。
         :type error_msg: str
-        :param job_id: **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： 不涉及。
+        :param job_id: **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： null表示该接口不返回异步任务信息，其它值为异步任务的ID。
         :type job_id: str
         """
         
@@ -102,7 +102,7 @@ class EncryptClusterResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this EncryptClusterResponse.
 
-        **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： 不涉及。
+        **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： null表示该接口不返回异步任务信息，其它值为异步任务的ID。
 
         :return: The job_id of this EncryptClusterResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class EncryptClusterResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this EncryptClusterResponse.
 
-        **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： 不涉及。
+        **参数解释**： 任务ID，可用于查询任务进度信息。 **取值范围**： null表示该接口不返回异步任务信息，其它值为异步任务的ID。
 
         :param job_id: The job_id of this EncryptClusterResponse.
         :type job_id: str

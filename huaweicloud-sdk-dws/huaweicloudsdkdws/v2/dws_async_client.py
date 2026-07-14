@@ -1323,7 +1323,7 @@ class DwsAsyncClient(Client):
     def create_alarm_sub_async(self, request):
         r"""创建告警订阅
 
-        创建告警订阅。
+        创建订阅告警。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7258,9 +7258,9 @@ class DwsAsyncClient(Client):
         return http_info
 
     def list_metrics_async(self, request):
-        r"""查询集群使用指标列表
+        r"""查询集群使用的指标列表
 
-        查询集群使用指标列表。
+        查询集群使用的指标列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

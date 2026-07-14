@@ -1,3 +1,46 @@
+# 3.1.205 2026-07-14
+
+### HuaweiCloud SDK CBH
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ListCbhInstance`
+
+### HuaweiCloud SDK CBH
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSnapshots**
+    - 响应参数变更
+      - `- snapshots.backup_key: enum value [20160823_035923]`
+  - **ListLogicalClusters**
+    - 响应参数变更
+      - `+ logical_clusters.node_list`
+
 # 3.1.204 2026-07-09
 
 ### HuaweiCloud SDK BSS

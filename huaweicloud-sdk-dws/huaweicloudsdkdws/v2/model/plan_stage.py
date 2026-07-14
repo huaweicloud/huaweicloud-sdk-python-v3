@@ -53,9 +53,9 @@ class PlanStage:
         :type stage_id: str
         :param stage_name: **参数解释**： 计划阶段名称。 **取值范围**： 不涉及。
         :type stage_name: str
-        :param start_time: **参数解释**： 计划开始时间。 **取值范围**： 不涉及。
+        :param start_time: **参数解释**： 计划开始时间。 **取值范围**： 仅时间部分，如00:00:00。
         :type start_time: str
-        :param end_time: **参数解释**： 计划结束时间。 **取值范围**： 不涉及。
+        :param end_time: **参数解释**： 计划结束时间。 **取值范围**： 仅时间部分，如00:00:00。
         :type end_time: str
         :param next_valid_time: **参数解释**： 下次校验时间。 **取值范围**： 不涉及。
         :type next_valid_time: str
@@ -204,7 +204,7 @@ class PlanStage:
     def start_time(self):
         r"""Gets the start_time of this PlanStage.
 
-        **参数解释**： 计划开始时间。 **取值范围**： 不涉及。
+        **参数解释**： 计划开始时间。 **取值范围**： 仅时间部分，如00:00:00。
 
         :return: The start_time of this PlanStage.
         :rtype: str
@@ -215,7 +215,7 @@ class PlanStage:
     def start_time(self, start_time):
         r"""Sets the start_time of this PlanStage.
 
-        **参数解释**： 计划开始时间。 **取值范围**： 不涉及。
+        **参数解释**： 计划开始时间。 **取值范围**： 仅时间部分，如00:00:00。
 
         :param start_time: The start_time of this PlanStage.
         :type start_time: str
@@ -226,7 +226,7 @@ class PlanStage:
     def end_time(self):
         r"""Gets the end_time of this PlanStage.
 
-        **参数解释**： 计划结束时间。 **取值范围**： 不涉及。
+        **参数解释**： 计划结束时间。 **取值范围**： 仅时间部分，如00:00:00。
 
         :return: The end_time of this PlanStage.
         :rtype: str
@@ -237,7 +237,7 @@ class PlanStage:
     def end_time(self, end_time):
         r"""Sets the end_time of this PlanStage.
 
-        **参数解释**： 计划结束时间。 **取值范围**： 不涉及。
+        **参数解释**： 计划结束时间。 **取值范围**： 仅时间部分，如00:00:00。
 
         :param end_time: The end_time of this PlanStage.
         :type end_time: str

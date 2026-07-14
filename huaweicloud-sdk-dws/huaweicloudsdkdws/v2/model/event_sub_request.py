@@ -55,7 +55,7 @@ class EventSubRequest:
         :type source_id: str
         :param category: **参数解释**： 事件类别。 **取值范围**： 支持management、monitor、security、system alarm。
         :type category: str
-        :param severity: **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
+        :param severity: **参数解释**： 事件级别。 **取值范围**： 支持normal、warning，可同时包含多值。
         :type severity: str
         :param tag: **参数解释**： 事件标签。 **取值范围**： 不涉及。
         :type tag: str
@@ -197,7 +197,7 @@ class EventSubRequest:
     def severity(self):
         r"""Gets the severity of this EventSubRequest.
 
-        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
+        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning，可同时包含多值。
 
         :return: The severity of this EventSubRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class EventSubRequest:
     def severity(self, severity):
         r"""Sets the severity of this EventSubRequest.
 
-        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning。
+        **参数解释**： 事件级别。 **取值范围**： 支持normal、warning，可同时包含多值。
 
         :param severity: The severity of this EventSubRequest.
         :type severity: str

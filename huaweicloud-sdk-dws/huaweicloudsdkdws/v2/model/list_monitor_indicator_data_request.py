@@ -47,11 +47,11 @@ class ListMonitorIndicatorDataRequest:
         :type function: str
         :param period: **参数解释**： 取值周期。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type period: str
-        :param indicator_name: **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param indicator_name: **参数解释**： 指标名称。查询性能监控指标接口返回值中的indicator_name。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type indicator_name: str
-        :param dim0: **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param dim0: **参数解释**： 第一层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dim0: str
-        :param dim1: **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param dim1: **参数解释**： 第二层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dim1: str
         """
         
@@ -169,7 +169,7 @@ class ListMonitorIndicatorDataRequest:
     def indicator_name(self):
         r"""Gets the indicator_name of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 指标名称。查询性能监控指标接口返回值中的indicator_name。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The indicator_name of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -180,7 +180,7 @@ class ListMonitorIndicatorDataRequest:
     def indicator_name(self, indicator_name):
         r"""Sets the indicator_name of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 指标名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 指标名称。查询性能监控指标接口返回值中的indicator_name。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param indicator_name: The indicator_name of this ListMonitorIndicatorDataRequest.
         :type indicator_name: str
@@ -191,7 +191,7 @@ class ListMonitorIndicatorDataRequest:
     def dim0(self):
         r"""Gets the dim0 of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 第一层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dim0 of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -202,7 +202,7 @@ class ListMonitorIndicatorDataRequest:
     def dim0(self, dim0):
         r"""Sets the dim0 of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 第一层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 第一层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param dim0: The dim0 of this ListMonitorIndicatorDataRequest.
         :type dim0: str
@@ -213,7 +213,7 @@ class ListMonitorIndicatorDataRequest:
     def dim1(self):
         r"""Gets the dim1 of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 第二层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The dim1 of this ListMonitorIndicatorDataRequest.
         :rtype: str
@@ -224,7 +224,7 @@ class ListMonitorIndicatorDataRequest:
     def dim1(self, dim1):
         r"""Sets the dim1 of this ListMonitorIndicatorDataRequest.
 
-        **参数解释**： 第二层级。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 第二层级。根据indicator_name传入不同参数，详见请求示例。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param dim1: The dim1 of this ListMonitorIndicatorDataRequest.
         :type dim1: str

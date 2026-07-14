@@ -49,11 +49,11 @@ class ListTablesStatisticRequest:
         :type offset: int
         :param limit: **参数解释**： 分页单页大小。 **约束限制**： 不涉及。 **取值范围**： 大于0。 **默认取值**： 不限制。
         :type limit: int
-        :param order_by: **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
+        :param order_by: **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为null或空字符串时表示按默认排序处理。 table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
         :type order_by: str
         :param sort_by: **参数解释**： 正序还是倒序排序，固定取值。 **约束限制**： 不涉及。 **取值范围**： ASC：正序。 DESC：倒序。 **默认取值**： 不涉及。
         :type sort_by: str
-        :param filter: **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
+        :param filter: **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为空字符串或null时表示不过滤。 db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
         :type filter: str
         :param value: **参数解释**： 过滤条件的值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type value: str
@@ -176,7 +176,7 @@ class ListTablesStatisticRequest:
     def order_by(self):
         r"""Gets the order_by of this ListTablesStatisticRequest.
 
-        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
+        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为null或空字符串时表示按默认排序处理。 table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
 
         :return: The order_by of this ListTablesStatisticRequest.
         :rtype: str
@@ -187,7 +187,7 @@ class ListTablesStatisticRequest:
     def order_by(self, order_by):
         r"""Sets the order_by of this ListTablesStatisticRequest.
 
-        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
+        **参数解释**： 排序字段，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为null或空字符串时表示按默认排序处理。 table_size：表大小。 rate：表倾斜率或脏页率。 **默认取值**： 不涉及。
 
         :param order_by: The order_by of this ListTablesStatisticRequest.
         :type order_by: str
@@ -220,7 +220,7 @@ class ListTablesStatisticRequest:
     def filter(self):
         r"""Gets the filter of this ListTablesStatisticRequest.
 
-        **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
+        **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为空字符串或null时表示不过滤。 db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
 
         :return: The filter of this ListTablesStatisticRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ListTablesStatisticRequest:
     def filter(self, filter):
         r"""Sets the filter of this ListTablesStatisticRequest.
 
-        **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
+        **参数解释**： 查询条件，固定取值。 **约束限制**： 不涉及。 **取值范围**： 值为空字符串或null时表示不过滤。 db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。 **默认取值**： 不涉及。
 
         :param filter: The filter of this ListTablesStatisticRequest.
         :type filter: str

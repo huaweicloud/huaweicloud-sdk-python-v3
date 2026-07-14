@@ -65,9 +65,9 @@ class ClusterElbInfo:
         :type tenant_id: str
         :param type: **参数解释**： 弹性负载均衡类型。 **取值范围**： Internal：独享型。 External：共享型。
         :type type: str
-        :param admin_state_up: **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
+        :param admin_state_up: **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： true：使用中 false：未使用
         :type admin_state_up: bool
-        :param bandwidth: **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
+        :param bandwidth: **参数解释**： 带宽信息。 **取值范围**： 大于等于0的非负整数。
         :type bandwidth: int
         :param vpc_id: **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
         :type vpc_id: str
@@ -296,7 +296,7 @@ class ClusterElbInfo:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ClusterElbInfo.
 
-        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
+        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： true：使用中 false：未使用
 
         :return: The admin_state_up of this ClusterElbInfo.
         :rtype: bool
@@ -307,7 +307,7 @@ class ClusterElbInfo:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ClusterElbInfo.
 
-        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： ACTIVE：使用中 PENDING_CREATE：创建中 ERROR：表示当前策略与同一监听器下的其他策略存在相同的规格配置。
+        **参数解释**： 弹性负载均衡的管理状态。 **取值范围**： true：使用中 false：未使用
 
         :param admin_state_up: The admin_state_up of this ClusterElbInfo.
         :type admin_state_up: bool
@@ -318,7 +318,7 @@ class ClusterElbInfo:
     def bandwidth(self):
         r"""Gets the bandwidth of this ClusterElbInfo.
 
-        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
+        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的非负整数。
 
         :return: The bandwidth of this ClusterElbInfo.
         :rtype: int
@@ -329,7 +329,7 @@ class ClusterElbInfo:
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this ClusterElbInfo.
 
-        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的正整数。
+        **参数解释**： 带宽信息。 **取值范围**： 大于等于0的非负整数。
 
         :param bandwidth: The bandwidth of this ClusterElbInfo.
         :type bandwidth: int

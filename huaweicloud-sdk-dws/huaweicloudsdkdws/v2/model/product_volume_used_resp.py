@@ -33,7 +33,7 @@ class ProductVolumeUsedResp:
 
         The model defined in huaweicloud sdk
 
-        :param volume_type: **参数解释**： 节点使用存储类型。 **取值范围**： HIGH：SAS盘； ULTRAHIGH：SSD云盘； COMMON：SATA盘； LOCAL_DISK：本地盘；
+        :param volume_type: **参数解释**： 节点使用存储类型。 **取值范围**： 不同接口中此字段返回格式可能有如下几种类型。 SAS、SSD、SATA、HIGH、ULTRAHIGH、COMMON、LOCAL_DISK
         :type volume_type: str
         :param volume_num: **参数解释**： 节点使用的磁盘数量信息。 **取值范围**： 不涉及。
         :type volume_num: int
@@ -64,7 +64,7 @@ class ProductVolumeUsedResp:
     def volume_type(self):
         r"""Gets the volume_type of this ProductVolumeUsedResp.
 
-        **参数解释**： 节点使用存储类型。 **取值范围**： HIGH：SAS盘； ULTRAHIGH：SSD云盘； COMMON：SATA盘； LOCAL_DISK：本地盘；
+        **参数解释**： 节点使用存储类型。 **取值范围**： 不同接口中此字段返回格式可能有如下几种类型。 SAS、SSD、SATA、HIGH、ULTRAHIGH、COMMON、LOCAL_DISK
 
         :return: The volume_type of this ProductVolumeUsedResp.
         :rtype: str
@@ -75,7 +75,7 @@ class ProductVolumeUsedResp:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this ProductVolumeUsedResp.
 
-        **参数解释**： 节点使用存储类型。 **取值范围**： HIGH：SAS盘； ULTRAHIGH：SSD云盘； COMMON：SATA盘； LOCAL_DISK：本地盘；
+        **参数解释**： 节点使用存储类型。 **取值范围**： 不同接口中此字段返回格式可能有如下几种类型。 SAS、SSD、SATA、HIGH、ULTRAHIGH、COMMON、LOCAL_DISK
 
         :param volume_type: The volume_type of this ProductVolumeUsedResp.
         :type volume_type: str

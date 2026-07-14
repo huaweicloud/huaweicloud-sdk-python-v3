@@ -129,7 +129,7 @@ class SnapshotDetail:
         :type prior_backup_key: str
         :param base_backup_key: **参数解释**： 对应全量快照backup_key。 **取值范围**： 不涉及。
         :type base_backup_key: str
-        :param backup_device: **参数解释**： 备份介质。 **取值范围**： NBU、OBS。
+        :param backup_device: **参数解释**： 备份介质。 **取值范围**： NBU、OBS、obs。
         :type backup_device: str
         :param total_backup_size: **参数解释**： 累计快照大小。 **取值范围**： 不涉及。
         :type total_backup_size: int
@@ -687,7 +687,7 @@ class SnapshotDetail:
     def backup_device(self):
         r"""Gets the backup_device of this SnapshotDetail.
 
-        **参数解释**： 备份介质。 **取值范围**： NBU、OBS。
+        **参数解释**： 备份介质。 **取值范围**： NBU、OBS、obs。
 
         :return: The backup_device of this SnapshotDetail.
         :rtype: str
@@ -698,7 +698,7 @@ class SnapshotDetail:
     def backup_device(self, backup_device):
         r"""Sets the backup_device of this SnapshotDetail.
 
-        **参数解释**： 备份介质。 **取值范围**： NBU、OBS。
+        **参数解释**： 备份介质。 **取值范围**： NBU、OBS、obs。
 
         :param backup_device: The backup_device of this SnapshotDetail.
         :type backup_device: str

@@ -93,7 +93,7 @@ class ClusterDetail:
         :type id: str
         :param name: **参数解释**： 集群名称。 **取值范围**： 不涉及。
         :type name: str
-        :param status: **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        :param status: **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - AVAILABLE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
         :type status: str
         :param version: **参数解释**： 数据仓库版本。 **取值范围**： 不涉及。
         :type version: str
@@ -278,7 +278,7 @@ class ClusterDetail:
     def status(self):
         r"""Gets the status of this ClusterDetail.
 
-        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - AVAILABLE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
         :return: The status of this ClusterDetail.
         :rtype: str
@@ -289,7 +289,7 @@ class ClusterDetail:
     def status(self, status):
         r"""Sets the status of this ClusterDetail.
 
-        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
+        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中 - AVAILABLE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
         :param status: The status of this ClusterDetail.
         :type status: str

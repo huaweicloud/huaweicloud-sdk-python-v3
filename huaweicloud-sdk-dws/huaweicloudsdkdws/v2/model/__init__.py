@@ -415,6 +415,7 @@ from huaweicloudsdkdws.v2.model.node_type_datastores import NodeTypeDatastores
 from huaweicloudsdkdws.v2.model.node_type_datastores_attachments import NodeTypeDatastoresAttachments
 from huaweicloudsdkdws.v2.model.node_type_elastic_volume_specs import NodeTypeElasticVolumeSpecs
 from huaweicloudsdkdws.v2.model.node_types import NodeTypes
+from huaweicloudsdkdws.v2.model.node_vo import NodeVo
 from huaweicloudsdkdws.v2.model.nodes import Nodes
 from huaweicloudsdkdws.v2.model.note_info import NoteInfo
 from huaweicloudsdkdws.v2.model.object_authority import ObjectAuthority

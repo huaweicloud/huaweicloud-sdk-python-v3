@@ -47,7 +47,7 @@ class LogicalClusterPlanActions:
         :type id: str
         :param type: **参数解释**： 类型。 **取值范围**： create：创建 delete：删除
         :type type: str
-        :param strategy: **参数解释**： 周期信息。Cron表达式：如\&quot;0 0 0 ? * 3\&quot;。 **取值范围**： 不涉及。
+        :param strategy: **参数解释**： 周期信息。Cron表达式：如\&quot;0 0 0 ? * 3\&quot;，或Unix毫秒时间戳。 **取值范围**： 不涉及。
         :type strategy: str
         :param status: **参数解释**： 任务状态。 **取值范围**： - running：运行中。 - waiting：等待中。 - deleted：已删除。 - finished：已完成。 - disabled：已禁用。 - failed：失败。
         :type status: str
@@ -173,7 +173,7 @@ class LogicalClusterPlanActions:
     def strategy(self):
         r"""Gets the strategy of this LogicalClusterPlanActions.
 
-        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"。 **取值范围**： 不涉及。
+        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"，或Unix毫秒时间戳。 **取值范围**： 不涉及。
 
         :return: The strategy of this LogicalClusterPlanActions.
         :rtype: str
@@ -184,7 +184,7 @@ class LogicalClusterPlanActions:
     def strategy(self, strategy):
         r"""Sets the strategy of this LogicalClusterPlanActions.
 
-        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"。 **取值范围**： 不涉及。
+        **参数解释**： 周期信息。Cron表达式：如\"0 0 0 ? * 3\"，或Unix毫秒时间戳。 **取值范围**： 不涉及。
 
         :param strategy: The strategy of this LogicalClusterPlanActions.
         :type strategy: str

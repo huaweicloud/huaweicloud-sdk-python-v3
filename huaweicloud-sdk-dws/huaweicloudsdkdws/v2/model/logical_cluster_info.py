@@ -27,7 +27,8 @@ class LogicalClusterInfo:
         'add_to_elastic': 'bool',
         'mode': 'str',
         'waiting_for_killing': 'int',
-        'cluster_type': 'str'
+        'cluster_type': 'str',
+        'node_list': 'list[NodeVo]'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class LogicalClusterInfo:
         'add_to_elastic': 'add_to_elastic',
         'mode': 'mode',
         'waiting_for_killing': 'waiting_for_killing',
-        'cluster_type': 'cluster_type'
+        'cluster_type': 'cluster_type',
+        'node_list': 'node_list'
     }
 
-    def __init__(self, logical_cluster_id=None, logical_cluster_name=None, cluster_rings=None, status=None, first_logical_cluster=None, action_info=None, edit_enable=None, restart_enable=None, delete_enable=None, add_to_elastic=None, mode=None, waiting_for_killing=None, cluster_type=None):
+    def __init__(self, logical_cluster_id=None, logical_cluster_name=None, cluster_rings=None, status=None, first_logical_cluster=None, action_info=None, edit_enable=None, restart_enable=None, delete_enable=None, add_to_elastic=None, mode=None, waiting_for_killing=None, cluster_type=None, node_list=None):
         r"""LogicalClusterInfo
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class LogicalClusterInfo:
         :type waiting_for_killing: int
         :param cluster_type: **参数解释**： 逻辑集群类型。 **取值范围**： - createFromPlan：计划弹性。 - createFromElastic：自动弹性。
         :type cluster_type: str
+        :param node_list: **参数解释**： 逻辑集群包含的节点信息列表。 **取值范围**： 不涉及。
+        :type node_list: list[:class:`huaweicloudsdkdws.v2.NodeVo`]
         """
         
         
@@ -94,6 +98,7 @@ class LogicalClusterInfo:
         self._mode = None
         self._waiting_for_killing = None
         self._cluster_type = None
+        self._node_list = None
         self.discriminator = None
 
         if logical_cluster_id is not None:
@@ -122,6 +127,8 @@ class LogicalClusterInfo:
             self.waiting_for_killing = waiting_for_killing
         if cluster_type is not None:
             self.cluster_type = cluster_type
+        if node_list is not None:
+            self.node_list = node_list
 
     @property
     def logical_cluster_id(self):
@@ -404,6 +411,28 @@ class LogicalClusterInfo:
         :type cluster_type: str
         """
         self._cluster_type = cluster_type
+
+    @property
+    def node_list(self):
+        r"""Gets the node_list of this LogicalClusterInfo.
+
+        **参数解释**： 逻辑集群包含的节点信息列表。 **取值范围**： 不涉及。
+
+        :return: The node_list of this LogicalClusterInfo.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.NodeVo`]
+        """
+        return self._node_list
+
+    @node_list.setter
+    def node_list(self, node_list):
+        r"""Sets the node_list of this LogicalClusterInfo.
+
+        **参数解释**： 逻辑集群包含的节点信息列表。 **取值范围**： 不涉及。
+
+        :param node_list: The node_list of this LogicalClusterInfo.
+        :type node_list: list[:class:`huaweicloudsdkdws.v2.NodeVo`]
+        """
+        self._node_list = node_list
 
     def to_dict(self):
         result = {}

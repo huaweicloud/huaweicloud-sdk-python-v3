@@ -47,7 +47,7 @@ class ClusterMetric:
         :type collect_rate: int
         :param collect_range: **参数解释**： 采集时间范围。 **取值范围**： 不涉及。
         :type collect_range: list[str]
-        :param create_time: **参数解释**： 创建时间。 **取值范围**： 不涉及。
+        :param create_time: **参数解释**： 创建时间。 **取值范围**： 毫秒时间戳格式的字符串。
         :type create_time: str
         """
         
@@ -188,7 +188,7 @@ class ClusterMetric:
     def create_time(self):
         r"""Gets the create_time of this ClusterMetric.
 
-        **参数解释**： 创建时间。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **取值范围**： 毫秒时间戳格式的字符串。
 
         :return: The create_time of this ClusterMetric.
         :rtype: str
@@ -199,7 +199,7 @@ class ClusterMetric:
     def create_time(self, create_time):
         r"""Sets the create_time of this ClusterMetric.
 
-        **参数解释**： 创建时间。 **取值范围**： 不涉及。
+        **参数解释**： 创建时间。 **取值范围**： 毫秒时间戳格式的字符串。
 
         :param create_time: The create_time of this ClusterMetric.
         :type create_time: str

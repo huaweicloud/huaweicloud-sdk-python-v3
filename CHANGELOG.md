@@ -1,3 +1,46 @@
+# 3.1.205 2026-07-14
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the API `ListCbhInstance`
+
+### HuaweiCloud SDK CBH
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSnapshots**
+    - changes of response param
+      - `- snapshots.backup_key: enum value [20160823_035923]`
+  - **ListLogicalClusters**
+    - changes of response param
+      - `+ logical_clusters.node_list`
+
 # 3.1.204 2026-07-09
 
 ### HuaweiCloud SDK BSS

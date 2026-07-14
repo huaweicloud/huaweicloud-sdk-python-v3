@@ -15,29 +15,43 @@ class ListInstancesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'int'
+        'instance_id': 'int',
+        'limit': 'str',
+        'offset': 'str'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None):
+    def __init__(self, instance_id=None, limit=None, offset=None):
         r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 云堡垒机实例ID。（非必传，需要查询单个实例详情时传入）
         :type instance_id: int
+        :param limit: 查询返回的记录数量上限，默认值 1000，即一次最多返回 1000 条实例记录。最小值为1，最大值为1000。
+        :type limit: str
+        :param offset: 查询的起始偏移量（索引位置），默认值 0，即从第 0 条记录开始查。最小值为0。
+        :type offset: str
         """
         
         
 
         self._instance_id = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if instance_id is not None:
             self.instance_id = instance_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def instance_id(self):
@@ -60,6 +74,50 @@ class ListInstancesRequest:
         :type instance_id: int
         """
         self._instance_id = instance_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListInstancesRequest.
+
+        查询返回的记录数量上限，默认值 1000，即一次最多返回 1000 条实例记录。最小值为1，最大值为1000。
+
+        :return: The limit of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListInstancesRequest.
+
+        查询返回的记录数量上限，默认值 1000，即一次最多返回 1000 条实例记录。最小值为1，最大值为1000。
+
+        :param limit: The limit of this ListInstancesRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListInstancesRequest.
+
+        查询的起始偏移量（索引位置），默认值 0，即从第 0 条记录开始查。最小值为0。
+
+        :return: The offset of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListInstancesRequest.
+
+        查询的起始偏移量（索引位置），默认值 0，即从第 0 条记录开始查。最小值为0。
+
+        :param offset: The offset of this ListInstancesRequest.
+        :type offset: str
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

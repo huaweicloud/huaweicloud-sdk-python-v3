@@ -386,10 +386,12 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceResponse`
         """
+        warnings.warn("Method 'list_cbh_instance_async' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_cbh_instance_http_info(request)
         return self._call_api(**http_info)
 
     def list_cbh_instance_async_invoker(self, request):
+        warnings.warn("Method 'list_cbh_instance_async_invoker' of CbhAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_cbh_instance_http_info(request)
         return AsyncInvoker(self, http_info)
 

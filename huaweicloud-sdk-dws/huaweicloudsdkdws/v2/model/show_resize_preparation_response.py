@@ -40,7 +40,7 @@ class ShowResizePreparationResponse(SdkResponse):
         :type is_support: bool
         :param progress: **参数解释**： 扩容准备进度。 **取值范围**： 不涉及
         :type progress: str
-        :param instance_ids: **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+        :param instance_ids: **参数解释**： 扩容准备的节点ID; **取值范围**： 不涉及
         :type instance_ids: list[str]
         """
         
@@ -131,7 +131,7 @@ class ShowResizePreparationResponse(SdkResponse):
     def instance_ids(self):
         r"""Gets the instance_ids of this ShowResizePreparationResponse.
 
-        **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+        **参数解释**： 扩容准备的节点ID; **取值范围**： 不涉及
 
         :return: The instance_ids of this ShowResizePreparationResponse.
         :rtype: list[str]
@@ -142,7 +142,7 @@ class ShowResizePreparationResponse(SdkResponse):
     def instance_ids(self, instance_ids):
         r"""Sets the instance_ids of this ShowResizePreparationResponse.
 
-        **参数解释**： 扩容准备的节点id; **取值范围**： 不涉及
+        **参数解释**： 扩容准备的节点ID; **取值范围**： 不涉及
 
         :param instance_ids: The instance_ids of this ShowResizePreparationResponse.
         :type instance_ids: list[str]

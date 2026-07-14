@@ -48,7 +48,7 @@ class ShowClusterEncryptInfoResponse(SdkResponse):
         :type master_key_name: str
         :param last_rotate_key_time: **参数解释**： 最后做密钥轮转的时间。 **取值范围**： 不涉及。
         :type last_rotate_key_time: str
-        :param crypt_algorithm: **参数解释**： 加密方式。 **取值范围**： 不涉及。
+        :param crypt_algorithm: **参数解释**： 加密方式。 **取值范围**： generalCipher：scc国际加密算法 SMCompatible：scc国密算法 SMCompatibleL4：加密卡加密
         :type crypt_algorithm: str
         """
         
@@ -189,7 +189,7 @@ class ShowClusterEncryptInfoResponse(SdkResponse):
     def crypt_algorithm(self):
         r"""Gets the crypt_algorithm of this ShowClusterEncryptInfoResponse.
 
-        **参数解释**： 加密方式。 **取值范围**： 不涉及。
+        **参数解释**： 加密方式。 **取值范围**： generalCipher：scc国际加密算法 SMCompatible：scc国密算法 SMCompatibleL4：加密卡加密
 
         :return: The crypt_algorithm of this ShowClusterEncryptInfoResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class ShowClusterEncryptInfoResponse(SdkResponse):
     def crypt_algorithm(self, crypt_algorithm):
         r"""Sets the crypt_algorithm of this ShowClusterEncryptInfoResponse.
 
-        **参数解释**： 加密方式。 **取值范围**： 不涉及。
+        **参数解释**： 加密方式。 **取值范围**： generalCipher：scc国际加密算法 SMCompatible：scc国密算法 SMCompatibleL4：加密卡加密
 
         :param crypt_algorithm: The crypt_algorithm of this ShowClusterEncryptInfoResponse.
         :type crypt_algorithm: str

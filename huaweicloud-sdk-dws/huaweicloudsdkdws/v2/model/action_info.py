@@ -39,7 +39,7 @@ class ActionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param action_name: **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
+        :param action_name: **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群 Grow：扩容逻辑集群
         :type action_name: str
         :param progress: **参数解释**： 操作进度，默认10。 **取值范围**： 0~100
         :type progress: int
@@ -85,7 +85,7 @@ class ActionInfo:
     def action_name(self):
         r"""Gets the action_name of this ActionInfo.
 
-        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
+        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群 Grow：扩容逻辑集群
 
         :return: The action_name of this ActionInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class ActionInfo:
     def action_name(self, action_name):
         r"""Sets the action_name of this ActionInfo.
 
-        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群
+        **参数解释**： 操作名称。 **取值范围**： Create：创建逻辑集群 Expand：扩容逻辑集群 Restart：重启逻辑集群 Delete：删除逻辑集群 Shrink：缩容逻辑集群 Grow：扩容逻辑集群
 
         :param action_name: The action_name of this ActionInfo.
         :type action_name: str
