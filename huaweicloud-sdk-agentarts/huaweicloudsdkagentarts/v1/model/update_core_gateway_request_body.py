@@ -16,7 +16,6 @@ class UpdateCoreGatewayRequestBody:
 
     openapi_types = {
         'description': 'str',
-        'authorizer_configuration': 'CoreGatewayAuthorizerConfiguration',
         'protocol_configuration': 'CoreGatewayUpdateProtocolConfiguration',
         'log_delivery_configuration': 'CoreGatewayLogDeliveryConfigurationRequestBody',
         'tags': 'list[CoreGatewayTag]'
@@ -24,21 +23,18 @@ class UpdateCoreGatewayRequestBody:
 
     attribute_map = {
         'description': 'description',
-        'authorizer_configuration': 'authorizer_configuration',
         'protocol_configuration': 'protocol_configuration',
         'log_delivery_configuration': 'log_delivery_configuration',
         'tags': 'tags'
     }
 
-    def __init__(self, description=None, authorizer_configuration=None, protocol_configuration=None, log_delivery_configuration=None, tags=None):
+    def __init__(self, description=None, protocol_configuration=None, log_delivery_configuration=None, tags=None):
         r"""UpdateCoreGatewayRequestBody
 
         The model defined in huaweicloud sdk
 
         :param description: 更新后的网关描述。
         :type description: str
-        :param authorizer_configuration: 
-        :type authorizer_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewayAuthorizerConfiguration`
         :param protocol_configuration: 
         :type protocol_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewayUpdateProtocolConfiguration`
         :param log_delivery_configuration: 
@@ -50,7 +46,6 @@ class UpdateCoreGatewayRequestBody:
         
 
         self._description = None
-        self._authorizer_configuration = None
         self._protocol_configuration = None
         self._log_delivery_configuration = None
         self._tags = None
@@ -58,8 +53,6 @@ class UpdateCoreGatewayRequestBody:
 
         if description is not None:
             self.description = description
-        if authorizer_configuration is not None:
-            self.authorizer_configuration = authorizer_configuration
         if protocol_configuration is not None:
             self.protocol_configuration = protocol_configuration
         if log_delivery_configuration is not None:
@@ -88,24 +81,6 @@ class UpdateCoreGatewayRequestBody:
         :type description: str
         """
         self._description = description
-
-    @property
-    def authorizer_configuration(self):
-        r"""Gets the authorizer_configuration of this UpdateCoreGatewayRequestBody.
-
-        :return: The authorizer_configuration of this UpdateCoreGatewayRequestBody.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.CoreGatewayAuthorizerConfiguration`
-        """
-        return self._authorizer_configuration
-
-    @authorizer_configuration.setter
-    def authorizer_configuration(self, authorizer_configuration):
-        r"""Sets the authorizer_configuration of this UpdateCoreGatewayRequestBody.
-
-        :param authorizer_configuration: The authorizer_configuration of this UpdateCoreGatewayRequestBody.
-        :type authorizer_configuration: :class:`huaweicloudsdkagentarts.v1.CoreGatewayAuthorizerConfiguration`
-        """
-        self._authorizer_configuration = authorizer_configuration
 
     @property
     def protocol_configuration(self):

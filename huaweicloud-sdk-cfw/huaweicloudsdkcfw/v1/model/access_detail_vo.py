@@ -15,6 +15,8 @@ class AccessDetailVO:
     sensitive_list = []
 
     openapi_types = {
+        'all_session_count': 'int',
+        'session_count': 'int',
         'dst_ip_count': 'int',
         'dst_port_count': 'int',
         'hit_count': 'int',
@@ -28,6 +30,8 @@ class AccessDetailVO:
     }
 
     attribute_map = {
+        'all_session_count': 'all_session_count',
+        'session_count': 'session_count',
         'dst_ip_count': 'dst_ip_count',
         'dst_port_count': 'dst_port_count',
         'hit_count': 'hit_count',
@@ -40,11 +44,15 @@ class AccessDetailVO:
         'src_ip_count': 'src_ip_count'
     }
 
-    def __init__(self, dst_ip_count=None, dst_port_count=None, hit_count=None, protocol_count=None, recent_end_time=None, recent_start_time=None, record_total=None, records=None, rule_hit_count=None, src_ip_count=None):
+    def __init__(self, all_session_count=None, session_count=None, dst_ip_count=None, dst_port_count=None, hit_count=None, protocol_count=None, recent_end_time=None, recent_start_time=None, record_total=None, records=None, rule_hit_count=None, src_ip_count=None):
         r"""AccessDetailVO
 
         The model defined in huaweicloud sdk
 
+        :param all_session_count: **参数解释**： 所有会话数 **取值范围**： 不涉及
+        :type all_session_count: int
+        :param session_count: **参数解释**： 会话数 **取值范围**： 不涉及
+        :type session_count: int
         :param dst_ip_count: **参数解释**： 目的IP数量 **取值范围**： 不涉及
         :type dst_ip_count: int
         :param dst_port_count: **参数解释**： 目的端口数量 **取值范围**： 不涉及
@@ -69,6 +77,8 @@ class AccessDetailVO:
         
         
 
+        self._all_session_count = None
+        self._session_count = None
         self._dst_ip_count = None
         self._dst_port_count = None
         self._hit_count = None
@@ -81,6 +91,10 @@ class AccessDetailVO:
         self._src_ip_count = None
         self.discriminator = None
 
+        if all_session_count is not None:
+            self.all_session_count = all_session_count
+        if session_count is not None:
+            self.session_count = session_count
         if dst_ip_count is not None:
             self.dst_ip_count = dst_ip_count
         if dst_port_count is not None:
@@ -101,6 +115,50 @@ class AccessDetailVO:
             self.rule_hit_count = rule_hit_count
         if src_ip_count is not None:
             self.src_ip_count = src_ip_count
+
+    @property
+    def all_session_count(self):
+        r"""Gets the all_session_count of this AccessDetailVO.
+
+        **参数解释**： 所有会话数 **取值范围**： 不涉及
+
+        :return: The all_session_count of this AccessDetailVO.
+        :rtype: int
+        """
+        return self._all_session_count
+
+    @all_session_count.setter
+    def all_session_count(self, all_session_count):
+        r"""Sets the all_session_count of this AccessDetailVO.
+
+        **参数解释**： 所有会话数 **取值范围**： 不涉及
+
+        :param all_session_count: The all_session_count of this AccessDetailVO.
+        :type all_session_count: int
+        """
+        self._all_session_count = all_session_count
+
+    @property
+    def session_count(self):
+        r"""Gets the session_count of this AccessDetailVO.
+
+        **参数解释**： 会话数 **取值范围**： 不涉及
+
+        :return: The session_count of this AccessDetailVO.
+        :rtype: int
+        """
+        return self._session_count
+
+    @session_count.setter
+    def session_count(self, session_count):
+        r"""Sets the session_count of this AccessDetailVO.
+
+        **参数解释**： 会话数 **取值范围**： 不涉及
+
+        :param session_count: The session_count of this AccessDetailVO.
+        :type session_count: int
+        """
+        self._session_count = session_count
 
     @property
     def dst_ip_count(self):

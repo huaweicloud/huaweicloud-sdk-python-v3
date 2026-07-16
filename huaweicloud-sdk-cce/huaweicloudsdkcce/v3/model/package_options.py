@@ -47,7 +47,7 @@ class PackageOptions:
         :type empty: bool
         :param schema: **参数解释**： 参数分类 **取值范围**： 不涉及
         :type schema: str
-        :param type: **参数解释**： 参数类型 **取值范围**： 不涉及
+        :param type: **参数解释**： 参数类型 **取值范围**： - str: 数据类型为字符串 - int: 数据类型为整型 - float: 数据类型为浮点型 - bool: 数据类型为布尔型
         :type type: str
         """
         
@@ -182,7 +182,7 @@ class PackageOptions:
     def type(self):
         r"""Gets the type of this PackageOptions.
 
-        **参数解释**： 参数类型 **取值范围**： 不涉及
+        **参数解释**： 参数类型 **取值范围**： - str: 数据类型为字符串 - int: 数据类型为整型 - float: 数据类型为浮点型 - bool: 数据类型为布尔型
 
         :return: The type of this PackageOptions.
         :rtype: str
@@ -193,7 +193,7 @@ class PackageOptions:
     def type(self, type):
         r"""Sets the type of this PackageOptions.
 
-        **参数解释**： 参数类型 **取值范围**： 不涉及
+        **参数解释**： 参数类型 **取值范围**： - str: 数据类型为字符串 - int: 数据类型为整型 - float: 数据类型为浮点型 - bool: 数据类型为布尔型
 
         :param type: The type of this PackageOptions.
         :type type: str

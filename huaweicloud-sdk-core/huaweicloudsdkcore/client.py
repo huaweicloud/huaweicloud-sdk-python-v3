@@ -510,8 +510,16 @@ class Client:
 
     def sync_response_handler(self, response, response_type, response_headers, progress_callback):
         concrete_response = self.deserialize(response, response_type, progress_callback)
+        if concrete_response is None:
+            if isinstance(response_type, str) and hasattr(self.model_package, response_type):
+                klass = getattr(self.model_package, response_type)
+                concrete_response = klass()
+            else:
+                concrete_response = SdkResponse()
+
         if isinstance(concrete_response, SdkResponse):
             concrete_response.status_code = response.status_code
+
         if response_headers:
             self._set_response_headers(concrete_response, response, response_headers)
 

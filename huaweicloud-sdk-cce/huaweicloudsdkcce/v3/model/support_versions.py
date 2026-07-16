@@ -31,7 +31,7 @@ class SupportVersions:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_type: 支持的集群类型
+        :param cluster_type: **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
         :type cluster_type: str
         :param cluster_version: 支持的集群版本（正则表达式）
         :type cluster_version: list[str]
@@ -55,7 +55,7 @@ class SupportVersions:
     def cluster_type(self):
         r"""Gets the cluster_type of this SupportVersions.
 
-        支持的集群类型
+        **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
 
         :return: The cluster_type of this SupportVersions.
         :rtype: str
@@ -66,7 +66,7 @@ class SupportVersions:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this SupportVersions.
 
-        支持的集群类型
+        **参数解释**： 支持的集群类型 **取值范围**： - VirtualMachine: CCE集群，控制节点架构为X86 - ARM64: 鲲鹏集群，控制节点架构为鲲鹏 **约束限制**： CCE Autopilot集群仅支持VirtualMachine类型
 
         :param cluster_type: The cluster_type of this SupportVersions.
         :type cluster_type: str

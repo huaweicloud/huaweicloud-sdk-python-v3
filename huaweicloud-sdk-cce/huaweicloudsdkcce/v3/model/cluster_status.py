@@ -25,7 +25,8 @@ class ClusterStatus:
         'lock_source': 'str',
         'lock_source_id': 'str',
         'delete_option': 'object',
-        'delete_status': 'object'
+        'delete_status': 'object',
+        'conditions': 'list[ClusterCondition]'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ClusterStatus:
         'lock_source': 'lockSource',
         'lock_source_id': 'lockSourceId',
         'delete_option': 'deleteOption',
-        'delete_status': 'deleteStatus'
+        'delete_status': 'deleteStatus',
+        'conditions': 'conditions'
     }
 
-    def __init__(self, phase=None, job_id=None, reason=None, message=None, endpoints=None, is_locked=None, lock_scene=None, lock_source=None, lock_source_id=None, delete_option=None, delete_status=None):
+    def __init__(self, phase=None, job_id=None, reason=None, message=None, endpoints=None, is_locked=None, lock_scene=None, lock_source=None, lock_source_id=None, delete_option=None, delete_status=None, conditions=None):
         r"""ClusterStatus
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ClusterStatus:
         :type delete_option: object
         :param delete_status: 删除状态信息（仅删除请求响应包含）
         :type delete_status: object
+        :param conditions: **参数解释**： 集群当前详细状态列表，详情参见Condition类型定义。 **约束限制**： 不涉及
+        :type conditions: list[:class:`huaweicloudsdkcce.v3.ClusterCondition`]
         """
         
         
@@ -84,6 +88,7 @@ class ClusterStatus:
         self._lock_source_id = None
         self._delete_option = None
         self._delete_status = None
+        self._conditions = None
         self.discriminator = None
 
         if phase is not None:
@@ -108,6 +113,8 @@ class ClusterStatus:
             self.delete_option = delete_option
         if delete_status is not None:
             self.delete_status = delete_status
+        if conditions is not None:
+            self.conditions = conditions
 
     @property
     def phase(self):
@@ -350,6 +357,28 @@ class ClusterStatus:
         :type delete_status: object
         """
         self._delete_status = delete_status
+
+    @property
+    def conditions(self):
+        r"""Gets the conditions of this ClusterStatus.
+
+        **参数解释**： 集群当前详细状态列表，详情参见Condition类型定义。 **约束限制**： 不涉及
+
+        :return: The conditions of this ClusterStatus.
+        :rtype: list[:class:`huaweicloudsdkcce.v3.ClusterCondition`]
+        """
+        return self._conditions
+
+    @conditions.setter
+    def conditions(self, conditions):
+        r"""Sets the conditions of this ClusterStatus.
+
+        **参数解释**： 集群当前详细状态列表，详情参见Condition类型定义。 **约束限制**： 不涉及
+
+        :param conditions: The conditions of this ClusterStatus.
+        :type conditions: list[:class:`huaweicloudsdkcce.v3.ClusterCondition`]
+        """
+        self._conditions = conditions
 
     def to_dict(self):
         result = {}

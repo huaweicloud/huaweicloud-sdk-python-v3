@@ -15,28 +15,42 @@ class ListNodesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, limit=None, marker=None):
         r"""ListNodesRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
+        :param limit: **参数解释**： 设置每页显示的数据条数。 **约束限制**： 不涉及 **取值范围**： 1到2000之间（含1和2000）的整数。 **默认取值**： 2000
+        :type limit: int
+        :param marker: **参数解释**： 通过资源uid进行分页查询,默认为查询第一页数据。marker&#x3D;{{uid}}表示查询该uid后的资源列表的信息(查询结果不包含该uid的资源)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 无
+        :type marker: str
         """
         
         
 
         self._cluster_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def cluster_id(self):
@@ -59,6 +73,50 @@ class ListNodesRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListNodesRequest.
+
+        **参数解释**： 设置每页显示的数据条数。 **约束限制**： 不涉及 **取值范围**： 1到2000之间（含1和2000）的整数。 **默认取值**： 2000
+
+        :return: The limit of this ListNodesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListNodesRequest.
+
+        **参数解释**： 设置每页显示的数据条数。 **约束限制**： 不涉及 **取值范围**： 1到2000之间（含1和2000）的整数。 **默认取值**： 2000
+
+        :param limit: The limit of this ListNodesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListNodesRequest.
+
+        **参数解释**： 通过资源uid进行分页查询,默认为查询第一页数据。marker={{uid}}表示查询该uid后的资源列表的信息(查询结果不包含该uid的资源)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 无
+
+        :return: The marker of this ListNodesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListNodesRequest.
+
+        **参数解释**： 通过资源uid进行分页查询,默认为查询第一页数据。marker={{uid}}表示查询该uid后的资源列表的信息(查询结果不包含该uid的资源)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 无
+
+        :param marker: The marker of this ListNodesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

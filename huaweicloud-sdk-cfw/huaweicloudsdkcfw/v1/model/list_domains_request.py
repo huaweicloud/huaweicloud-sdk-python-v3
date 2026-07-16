@@ -20,8 +20,7 @@ class ListDomainsRequest:
         'fw_instance_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'domain_name': 'str',
-        'object_id': 'str'
+        'domain_name': 'str'
     }
 
     attribute_map = {
@@ -30,11 +29,10 @@ class ListDomainsRequest:
         'fw_instance_id': 'fw_instance_id',
         'limit': 'limit',
         'offset': 'offset',
-        'domain_name': 'domain_name',
-        'object_id': 'object_Id'
+        'domain_name': 'domain_name'
     }
 
-    def __init__(self, domain_set_id=None, enterprise_project_id=None, fw_instance_id=None, limit=None, offset=None, domain_name=None, object_id=None):
+    def __init__(self, domain_set_id=None, enterprise_project_id=None, fw_instance_id=None, limit=None, offset=None, domain_name=None):
         r"""ListDomainsRequest
 
         The model defined in huaweicloud sdk
@@ -51,8 +49,6 @@ class ListDomainsRequest:
         :type offset: int
         :param domain_name: **参数解释**： 域名名称 **约束限制**： 域名格式，如www.example.com **取值范围**： 不涉及 **默认取值**： 不涉及
         :type domain_name: str
-        :param object_id: **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
-        :type object_id: str
         """
         
         
@@ -63,7 +59,6 @@ class ListDomainsRequest:
         self._limit = None
         self._offset = None
         self._domain_name = None
-        self._object_id = None
         self.discriminator = None
 
         self.domain_set_id = domain_set_id
@@ -74,8 +69,6 @@ class ListDomainsRequest:
         self.offset = offset
         if domain_name is not None:
             self.domain_name = domain_name
-        if object_id is not None:
-            self.object_id = object_id
 
     @property
     def domain_set_id(self):
@@ -208,28 +201,6 @@ class ListDomainsRequest:
         :type domain_name: str
         """
         self._domain_name = domain_name
-
-    @property
-    def object_id(self):
-        r"""Gets the object_id of this ListDomainsRequest.
-
-        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
-
-        :return: The object_id of this ListDomainsRequest.
-        :rtype: str
-        """
-        return self._object_id
-
-    @object_id.setter
-    def object_id(self, object_id):
-        r"""Sets the object_id of this ListDomainsRequest.
-
-        **参数解释**： 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得 **约束限制**： type为0时，object_id为互联网边界防护对象ID，type为1时，object_id为VPC边界防护对象ID。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。 **取值范围**： 不涉及 **默认取值**： 不涉及
-
-        :param object_id: The object_id of this ListDomainsRequest.
-        :type object_id: str
-        """
-        self._object_id = object_id
 
     def to_dict(self):
         result = {}

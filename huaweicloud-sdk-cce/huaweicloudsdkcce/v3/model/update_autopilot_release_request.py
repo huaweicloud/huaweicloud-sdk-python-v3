@@ -17,6 +17,7 @@ class UpdateAutopilotReleaseRequest:
     openapi_types = {
         'name': 'str',
         'namespace': 'str',
+        'show_resources': 'str',
         'cluster_id': 'str',
         'body': 'UpdateReleaseReqBody'
     }
@@ -24,11 +25,12 @@ class UpdateAutopilotReleaseRequest:
     attribute_map = {
         'name': 'name',
         'namespace': 'namespace',
+        'show_resources': 'show_resources',
         'cluster_id': 'cluster_id',
         'body': 'body'
     }
 
-    def __init__(self, name=None, namespace=None, cluster_id=None, body=None):
+    def __init__(self, name=None, namespace=None, show_resources=None, cluster_id=None, body=None):
         r"""UpdateAutopilotReleaseRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class UpdateAutopilotReleaseRequest:
         :type name: str
         :param namespace: 模板实例所在的命名空间
         :type namespace: str
+        :param show_resources: **参数解释：** 是否展示模板实例的资源信息。 **约束限制：** 不涉及 **取值范围：** 指定为“true”时展示模板实例的资源信息，不指定该参数时默认不展示。 **默认取值：** 无
+        :type show_resources: str
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param body: Body of the UpdateAutopilotReleaseRequest
@@ -47,12 +51,15 @@ class UpdateAutopilotReleaseRequest:
 
         self._name = None
         self._namespace = None
+        self._show_resources = None
         self._cluster_id = None
         self._body = None
         self.discriminator = None
 
         self.name = name
         self.namespace = namespace
+        if show_resources is not None:
+            self.show_resources = show_resources
         self.cluster_id = cluster_id
         if body is not None:
             self.body = body
@@ -100,6 +107,28 @@ class UpdateAutopilotReleaseRequest:
         :type namespace: str
         """
         self._namespace = namespace
+
+    @property
+    def show_resources(self):
+        r"""Gets the show_resources of this UpdateAutopilotReleaseRequest.
+
+        **参数解释：** 是否展示模板实例的资源信息。 **约束限制：** 不涉及 **取值范围：** 指定为“true”时展示模板实例的资源信息，不指定该参数时默认不展示。 **默认取值：** 无
+
+        :return: The show_resources of this UpdateAutopilotReleaseRequest.
+        :rtype: str
+        """
+        return self._show_resources
+
+    @show_resources.setter
+    def show_resources(self, show_resources):
+        r"""Sets the show_resources of this UpdateAutopilotReleaseRequest.
+
+        **参数解释：** 是否展示模板实例的资源信息。 **约束限制：** 不涉及 **取值范围：** 指定为“true”时展示模板实例的资源信息，不指定该参数时默认不展示。 **默认取值：** 无
+
+        :param show_resources: The show_resources of this UpdateAutopilotReleaseRequest.
+        :type show_resources: str
+        """
+        self._show_resources = show_resources
 
     @property
     def cluster_id(self):

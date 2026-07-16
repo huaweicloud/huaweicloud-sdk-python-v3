@@ -69,7 +69,7 @@ class ListAclRulesRequest:
         :type name: str
         :param direction: **参数解释**： 规则方向，用于指定规则是从云上至云下，还是云下至云上 **约束限制**： 当规则type&#x3D;0（互联网规则）或者type&#x3D; 2（nat规则）时方向值必填 **取值范围**： 0表示外到内（云下到云上），1表示内到外（云上到云下）， **默认取值**： 不涉及
         :type direction: int
-        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
         :type status: int
         :param action_type: **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
         :type action_type: int
@@ -262,7 +262,7 @@ class ListAclRulesRequest:
     def status(self):
         r"""Gets the status of this ListAclRulesRequest.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
 
         :return: The status of this ListAclRulesRequest.
         :rtype: int
@@ -273,7 +273,7 @@ class ListAclRulesRequest:
     def status(self, status):
         r"""Sets the status of this ListAclRulesRequest.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
 
         :param status: The status of this ListAclRulesRequest.
         :type status: int

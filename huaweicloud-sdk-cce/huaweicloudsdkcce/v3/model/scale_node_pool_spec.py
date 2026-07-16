@@ -33,7 +33,7 @@ class ScaleNodePoolSpec:
 
         :param desired_node_count: **参数解释**： 节点池的预期总数量。执行扩容操作时，需将当前节点数与扩容数量相加；执行缩容操作时，需从当前节点数中减去缩容数量。 **约束限制**： 必填参数，如果省略则默认值为0，会导致删除节点池伸缩组下的所有节点 **取值范围**： 0或正整数 **默认取值**： 0
         :type desired_node_count: int
-        :param scale_groups: **参数解释**： 要扩缩容的节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选伸缩组间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\&quot;default\&quot; **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param scale_groups: **参数解释**： 节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称，默认伸缩组名称为\&quot;default\&quot;，扩展伸缩组名称可通过extensionScaleGroups字段的元数据名称获取。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选(伸缩组的)可用区之间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\&quot;default\&quot; **取值范围**： 不涉及 **默认取值**： 不涉及
         :type scale_groups: list[str]
         :param options: 
         :type options: :class:`huaweicloudsdkcce.v3.ScaleNodePoolOptions`
@@ -77,7 +77,7 @@ class ScaleNodePoolSpec:
     def scale_groups(self):
         r"""Gets the scale_groups of this ScaleNodePoolSpec.
 
-        **参数解释**： 要扩缩容的节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选伸缩组间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称，默认伸缩组名称为\"default\"，扩展伸缩组名称可通过extensionScaleGroups字段的元数据名称获取。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选(伸缩组的)可用区之间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The scale_groups of this ScaleNodePoolSpec.
         :rtype: list[str]
@@ -88,7 +88,7 @@ class ScaleNodePoolSpec:
     def scale_groups(self, scale_groups):
         r"""Sets the scale_groups of this ScaleNodePoolSpec.
 
-        **参数解释**： 要扩缩容的节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选伸缩组间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点池中的伸缩组名称，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称，默认伸缩组名称为\"default\"，扩展伸缩组名称可通过extensionScaleGroups字段的元数据名称获取。扩容时可选择多个伸缩组，系统将按照尽量均分或随机策略在所选(伸缩组的)可用区之间分配扩容节点数，缩容时则仅能指定单个伸缩组进行操作。 **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param scale_groups: The scale_groups of this ScaleNodePoolSpec.
         :type scale_groups: list[str]

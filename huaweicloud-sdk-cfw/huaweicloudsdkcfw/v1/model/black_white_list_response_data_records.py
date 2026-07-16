@@ -22,8 +22,8 @@ class BlackWhiteListResponseDataRecords:
         'protocol': 'int',
         'port': 'str',
         'description': 'str',
-        'created_date': 'str',
-        'modified_date': 'str'
+        'created_date': 'int',
+        'modified_date': 'int'
     }
 
     attribute_map = {
@@ -58,9 +58,9 @@ class BlackWhiteListResponseDataRecords:
         :param description: 描述
         :type description: str
         :param created_date: |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
-        :type created_date: str
+        :type created_date: int
         :param modified_date: |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
-        :type modified_date: str
+        :type modified_date: int
         """
         
         
@@ -256,7 +256,7 @@ class BlackWhiteListResponseDataRecords:
         |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
 
         :return: The created_date of this BlackWhiteListResponseDataRecords.
-        :rtype: str
+        :rtype: int
         """
         return self._created_date
 
@@ -267,7 +267,7 @@ class BlackWhiteListResponseDataRecords:
         |- **参数解释**： 黑白名单创建时间。 **取值范围**： 不涉及 
 
         :param created_date: The created_date of this BlackWhiteListResponseDataRecords.
-        :type created_date: str
+        :type created_date: int
         """
         self._created_date = created_date
 
@@ -278,7 +278,7 @@ class BlackWhiteListResponseDataRecords:
         |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
 
         :return: The modified_date of this BlackWhiteListResponseDataRecords.
-        :rtype: str
+        :rtype: int
         """
         return self._modified_date
 
@@ -289,7 +289,7 @@ class BlackWhiteListResponseDataRecords:
         |- **参数解释**： 黑白名单修改时间。 **取值范围**： 不涉及 
 
         :param modified_date: The modified_date of this BlackWhiteListResponseDataRecords.
-        :type modified_date: str
+        :type modified_date: int
         """
         self._modified_date = modified_date
 

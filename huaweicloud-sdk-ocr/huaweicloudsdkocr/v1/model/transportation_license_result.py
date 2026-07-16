@@ -32,6 +32,7 @@ class TransportationLicenseResult:
         'assessed_technical_level': 'str',
         'image_location': 'list[list[int]]',
         'adjusted_image': 'str',
+        'is_temporary_certificate': 'bool',
         'confidence': 'object'
     }
 
@@ -53,10 +54,11 @@ class TransportationLicenseResult:
         'assessed_technical_level': 'assessed_technical_level',
         'image_location': 'image_location',
         'adjusted_image': 'adjusted_image',
+        'is_temporary_certificate': 'is_temporary_certificate',
         'confidence': 'confidence'
     }
 
-    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, expiry_date=None, review_expiry_date=None, assessed_technical_level=None, image_location=None, adjusted_image=None, confidence=None):
+    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, expiry_date=None, review_expiry_date=None, assessed_technical_level=None, image_location=None, adjusted_image=None, is_temporary_certificate=None, confidence=None):
         r"""TransportationLicenseResult
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class TransportationLicenseResult:
         :type image_location: list[list[int]]
         :param adjusted_image: 道路运输证图片的base64编码结果。仅在return_adjusted_image设置为true时返回该字段。 
         :type adjusted_image: str
+        :param is_temporary_certificate: 是否是待理证，取值范围包括： - true：是待理证 - false：非待理证 
+        :type is_temporary_certificate: bool
         :param confidence: 相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
         :type confidence: object
         """
@@ -118,6 +122,7 @@ class TransportationLicenseResult:
         self._assessed_technical_level = None
         self._image_location = None
         self._adjusted_image = None
+        self._is_temporary_certificate = None
         self._confidence = None
         self.discriminator = None
 
@@ -155,6 +160,8 @@ class TransportationLicenseResult:
             self.image_location = image_location
         if adjusted_image is not None:
             self.adjusted_image = adjusted_image
+        if is_temporary_certificate is not None:
+            self.is_temporary_certificate = is_temporary_certificate
         if confidence is not None:
             self.confidence = confidence
 
@@ -531,6 +538,28 @@ class TransportationLicenseResult:
         :type adjusted_image: str
         """
         self._adjusted_image = adjusted_image
+
+    @property
+    def is_temporary_certificate(self):
+        r"""Gets the is_temporary_certificate of this TransportationLicenseResult.
+
+        是否是待理证，取值范围包括： - true：是待理证 - false：非待理证 
+
+        :return: The is_temporary_certificate of this TransportationLicenseResult.
+        :rtype: bool
+        """
+        return self._is_temporary_certificate
+
+    @is_temporary_certificate.setter
+    def is_temporary_certificate(self, is_temporary_certificate):
+        r"""Sets the is_temporary_certificate of this TransportationLicenseResult.
+
+        是否是待理证，取值范围包括： - true：是待理证 - false：非待理证 
+
+        :param is_temporary_certificate: The is_temporary_certificate of this TransportationLicenseResult.
+        :type is_temporary_certificate: bool
+        """
+        self._is_temporary_certificate = is_temporary_certificate
 
     @property
     def confidence(self):

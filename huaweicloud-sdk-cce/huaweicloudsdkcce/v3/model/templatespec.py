@@ -39,7 +39,7 @@ class Templatespec:
 
         The model defined in huaweicloud sdk
 
-        :param type: 模板类型（helm，static）
+        :param type: **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
         :type type: str
         :param require: 是否为必安装插件
         :type require: bool
@@ -79,7 +79,7 @@ class Templatespec:
     def type(self):
         r"""Gets the type of this Templatespec.
 
-        模板类型（helm，static）
+        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
 
         :return: The type of this Templatespec.
         :rtype: str
@@ -90,7 +90,7 @@ class Templatespec:
     def type(self, type):
         r"""Sets the type of this Templatespec.
 
-        模板类型（helm，static）
+        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
 
         :param type: The type of this Templatespec.
         :type type: str

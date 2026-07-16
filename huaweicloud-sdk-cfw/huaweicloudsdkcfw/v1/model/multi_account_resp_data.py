@@ -16,15 +16,17 @@ class MultiAccountRespData:
 
     openapi_types = {
         'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'trust_service_status': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'trust_service_status': 'trust_service_status'
     }
 
-    def __init__(self, id=None, name=None):
+    def __init__(self, id=None, name=None, trust_service_status=None):
         r"""MultiAccountRespData
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class MultiAccountRespData:
         :type id: str
         :param name: **参数解释**： 防火墙名称 **取值范围**： 不涉及
         :type name: str
+        :param trust_service_status: **参数解释**： 云防火墙可信服务状态 **取值范围**： 1 已开启
+        :type trust_service_status: int
         """
         
         
 
         self._id = None
         self._name = None
+        self._trust_service_status = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
+        if trust_service_status is not None:
+            self.trust_service_status = trust_service_status
 
     @property
     def id(self):
@@ -89,6 +96,28 @@ class MultiAccountRespData:
         :type name: str
         """
         self._name = name
+
+    @property
+    def trust_service_status(self):
+        r"""Gets the trust_service_status of this MultiAccountRespData.
+
+        **参数解释**： 云防火墙可信服务状态 **取值范围**： 1 已开启
+
+        :return: The trust_service_status of this MultiAccountRespData.
+        :rtype: int
+        """
+        return self._trust_service_status
+
+    @trust_service_status.setter
+    def trust_service_status(self, trust_service_status):
+        r"""Sets the trust_service_status of this MultiAccountRespData.
+
+        **参数解释**： 云防火墙可信服务状态 **取值范围**： 1 已开启
+
+        :param trust_service_status: The trust_service_status of this MultiAccountRespData.
+        :type trust_service_status: int
+        """
+        self._trust_service_status = trust_service_status
 
     def to_dict(self):
         result = {}

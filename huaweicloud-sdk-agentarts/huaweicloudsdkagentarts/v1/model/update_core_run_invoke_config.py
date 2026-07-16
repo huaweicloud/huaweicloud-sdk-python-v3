@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpdateCoreRunInvokeConfig:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'port': 'int',
+        'protocol': 'str'
+    }
+
+    attribute_map = {
+        'port': 'port',
+        'protocol': 'protocol'
+    }
+
+    def __init__(self, port=None, protocol=None):
+        r"""UpdateCoreRunInvokeConfig
+
+        The model defined in huaweicloud sdk
+
+        :param port: **参数解释**: 智能体运行时监听的端口号，默认值8080。 **取值范围**: 1 - 65535 
+        :type port: int
+        :param protocol: **参数解释**: 智能体运行时支持的协议类型，默认值HTTP。 
+        :type protocol: str
+        """
+        
+        
+
+        self._port = None
+        self._protocol = None
+        self.discriminator = None
+
+        if port is not None:
+            self.port = port
+        if protocol is not None:
+            self.protocol = protocol
+
+    @property
+    def port(self):
+        r"""Gets the port of this UpdateCoreRunInvokeConfig.
+
+        **参数解释**: 智能体运行时监听的端口号，默认值8080。 **取值范围**: 1 - 65535 
+
+        :return: The port of this UpdateCoreRunInvokeConfig.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        r"""Sets the port of this UpdateCoreRunInvokeConfig.
+
+        **参数解释**: 智能体运行时监听的端口号，默认值8080。 **取值范围**: 1 - 65535 
+
+        :param port: The port of this UpdateCoreRunInvokeConfig.
+        :type port: int
+        """
+        self._port = port
+
+    @property
+    def protocol(self):
+        r"""Gets the protocol of this UpdateCoreRunInvokeConfig.
+
+        **参数解释**: 智能体运行时支持的协议类型，默认值HTTP。 
+
+        :return: The protocol of this UpdateCoreRunInvokeConfig.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        r"""Sets the protocol of this UpdateCoreRunInvokeConfig.
+
+        **参数解释**: 智能体运行时支持的协议类型，默认值HTTP。 
+
+        :param protocol: The protocol of this UpdateCoreRunInvokeConfig.
+        :type protocol: str
+        """
+        self._protocol = protocol
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpdateCoreRunInvokeConfig):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

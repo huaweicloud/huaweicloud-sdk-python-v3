@@ -88,7 +88,8 @@ class CreateReportProfileDto:
             self.statistic_period = statistic_period
         if status is not None:
             self.status = status
-        self.topic_urn = topic_urn
+        if topic_urn is not None:
+            self.topic_urn = topic_urn
         if subscription_type is not None:
             self.subscription_type = subscription_type
 

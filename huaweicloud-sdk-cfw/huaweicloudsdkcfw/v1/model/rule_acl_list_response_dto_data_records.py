@@ -83,7 +83,7 @@ class RuleAclListResponseDTODataRecords:
         :type direction: int
         :param action_type: **参数解释**： 规则动作类型，用于区分规则对流量的动作 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny）
         :type action_type: int
-        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示启用，1表示禁用
+        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示禁用，1表示启用
         :type status: int
         :param description: **参数解释**： 规则描述，用于描述规则的用途。 **取值范围**： 不涉及
         :type description: str
@@ -344,7 +344,7 @@ class RuleAclListResponseDTODataRecords:
     def status(self):
         r"""Gets the status of this RuleAclListResponseDTODataRecords.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示启用，1表示禁用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示禁用，1表示启用
 
         :return: The status of this RuleAclListResponseDTODataRecords.
         :rtype: int
@@ -355,7 +355,7 @@ class RuleAclListResponseDTODataRecords:
     def status(self, status):
         r"""Sets the status of this RuleAclListResponseDTODataRecords.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示启用，1表示禁用
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **取值范围**： 0表示禁用，1表示启用
 
         :param status: The status of this RuleAclListResponseDTODataRecords.
         :type status: int

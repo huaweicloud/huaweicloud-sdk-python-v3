@@ -63,16 +63,12 @@ class AdvancedIpsRuleDto:
 
         if action is not None:
             self.action = action
-        if ips_rule_id is not None:
-            self.ips_rule_id = ips_rule_id
-        if ips_rule_type is not None:
-            self.ips_rule_type = ips_rule_type
-        if object_id is not None:
-            self.object_id = object_id
+        self.ips_rule_id = ips_rule_id
+        self.ips_rule_type = ips_rule_type
+        self.object_id = object_id
         if param is not None:
             self.param = param
-        if status is not None:
-            self.status = status
+        self.status = status
 
     @property
     def action(self):

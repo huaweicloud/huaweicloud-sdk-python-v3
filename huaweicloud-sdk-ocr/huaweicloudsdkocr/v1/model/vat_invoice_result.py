@@ -51,6 +51,8 @@ class VatInvoiceResult:
         'item_list': 'list[ItemList]',
         'province': 'str',
         'city': 'str',
+        'total_pages': 'str',
+        'current_page': 'str',
         'confidence': 'object',
         'text_location': 'object',
         'belong_buyer_name': 'str',
@@ -109,6 +111,8 @@ class VatInvoiceResult:
         'item_list': 'item_list',
         'province': 'province',
         'city': 'city',
+        'total_pages': 'total_pages',
+        'current_page': 'current_page',
         'confidence': 'confidence',
         'text_location': 'text_location',
         'belong_buyer_name': 'belong_buyer_name',
@@ -130,7 +134,7 @@ class VatInvoiceResult:
         'passenger_travel_item_list': 'passenger_travel_item_list'
     }
 
-    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None, passenger_travel_item_list=None):
+    def __init__(self, title=None, type=None, invoice_tag=None, sum_amount=None, sum_tax=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, province=None, city=None, total_pages=None, current_page=None, confidence=None, text_location=None, belong_buyer_name=None, belong_seller_name=None, belong_vat_code=None, belong_number=None, belong_pages=None, belong_current_page=None, belong_remarks=None, belong_issue_date=None, sales_mark=None, belong_sum_amount=None, belong_sum_tax=None, belong_subtotal_amount=None, belong_subtotal_tax=None, belong_discount_amount=None, belong_discount_tax=None, belong_item_list=None, passenger_travel_item_list=None):
         r"""VatInvoiceResult
 
         The model defined in huaweicloud sdk
@@ -207,6 +211,10 @@ class VatInvoiceResult:
         :type province: str
         :param city: 市。 
         :type city: str
+        :param total_pages: 总页码。 
+        :type total_pages: str
+        :param current_page: 当前页码。 
+        :type current_page: str
         :param confidence: 各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
         :type confidence: object
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当\&quot;return_text_location\&quot;设置为“true”时才返回。 
@@ -285,6 +293,8 @@ class VatInvoiceResult:
         self._item_list = None
         self._province = None
         self._city = None
+        self._total_pages = None
+        self._current_page = None
         self._confidence = None
         self._text_location = None
         self._belong_buyer_name = None
@@ -378,6 +388,10 @@ class VatInvoiceResult:
             self.province = province
         if city is not None:
             self.city = city
+        if total_pages is not None:
+            self.total_pages = total_pages
+        if current_page is not None:
+            self.current_page = current_page
         if confidence is not None:
             self.confidence = confidence
         if text_location is not None:
@@ -1208,6 +1222,50 @@ class VatInvoiceResult:
         :type city: str
         """
         self._city = city
+
+    @property
+    def total_pages(self):
+        r"""Gets the total_pages of this VatInvoiceResult.
+
+        总页码。 
+
+        :return: The total_pages of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._total_pages
+
+    @total_pages.setter
+    def total_pages(self, total_pages):
+        r"""Sets the total_pages of this VatInvoiceResult.
+
+        总页码。 
+
+        :param total_pages: The total_pages of this VatInvoiceResult.
+        :type total_pages: str
+        """
+        self._total_pages = total_pages
+
+    @property
+    def current_page(self):
+        r"""Gets the current_page of this VatInvoiceResult.
+
+        当前页码。 
+
+        :return: The current_page of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._current_page
+
+    @current_page.setter
+    def current_page(self, current_page):
+        r"""Sets the current_page of this VatInvoiceResult.
+
+        当前页码。 
+
+        :param current_page: The current_page of this VatInvoiceResult.
+        :type current_page: str
+        """
+        self._current_page = current_page
 
     @property
     def confidence(self):

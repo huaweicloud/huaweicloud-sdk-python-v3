@@ -1,0 +1,166 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class PoolMonitorDataPoints:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'timestamp': 'int',
+        'unit': 'str',
+        'statistics': 'list[PoolMonitorStatistics]'
+    }
+
+    attribute_map = {
+        'timestamp': 'timestamp',
+        'unit': 'unit',
+        'statistics': 'statistics'
+    }
+
+    def __init__(self, timestamp=None, unit=None, statistics=None):
+        r"""PoolMonitorDataPoints
+
+        The model defined in huaweicloud sdk
+
+        :param timestamp: **参数解释**：指标数据时间戳，以毫秒为单位。 **取值范围**：不涉及。
+        :type timestamp: int
+        :param unit: **参数解释**：指标数据单位。 **取值范围**：可选值如下： - Percent：百分比。 - Megabytes：兆字节。
+        :type unit: str
+        :param statistics: **参数解释**：指标数据值。
+        :type statistics: list[:class:`huaweicloudsdkmodelarts.v1.PoolMonitorStatistics`]
+        """
+        
+        
+
+        self._timestamp = None
+        self._unit = None
+        self._statistics = None
+        self.discriminator = None
+
+        if timestamp is not None:
+            self.timestamp = timestamp
+        if unit is not None:
+            self.unit = unit
+        if statistics is not None:
+            self.statistics = statistics
+
+    @property
+    def timestamp(self):
+        r"""Gets the timestamp of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据时间戳，以毫秒为单位。 **取值范围**：不涉及。
+
+        :return: The timestamp of this PoolMonitorDataPoints.
+        :rtype: int
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        r"""Sets the timestamp of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据时间戳，以毫秒为单位。 **取值范围**：不涉及。
+
+        :param timestamp: The timestamp of this PoolMonitorDataPoints.
+        :type timestamp: int
+        """
+        self._timestamp = timestamp
+
+    @property
+    def unit(self):
+        r"""Gets the unit of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据单位。 **取值范围**：可选值如下： - Percent：百分比。 - Megabytes：兆字节。
+
+        :return: The unit of this PoolMonitorDataPoints.
+        :rtype: str
+        """
+        return self._unit
+
+    @unit.setter
+    def unit(self, unit):
+        r"""Sets the unit of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据单位。 **取值范围**：可选值如下： - Percent：百分比。 - Megabytes：兆字节。
+
+        :param unit: The unit of this PoolMonitorDataPoints.
+        :type unit: str
+        """
+        self._unit = unit
+
+    @property
+    def statistics(self):
+        r"""Gets the statistics of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据值。
+
+        :return: The statistics of this PoolMonitorDataPoints.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.PoolMonitorStatistics`]
+        """
+        return self._statistics
+
+    @statistics.setter
+    def statistics(self, statistics):
+        r"""Sets the statistics of this PoolMonitorDataPoints.
+
+        **参数解释**：指标数据值。
+
+        :param statistics: The statistics of this PoolMonitorDataPoints.
+        :type statistics: list[:class:`huaweicloudsdkmodelarts.v1.PoolMonitorStatistics`]
+        """
+        self._statistics = statistics
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, PoolMonitorDataPoints):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

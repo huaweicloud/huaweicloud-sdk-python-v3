@@ -18,6 +18,7 @@ class NodePoolStatus:
         'current_node': 'int',
         'creating_node': 'int',
         'deleting_node': 'int',
+        'active_node': 'int',
         'configuration_synced_node_count': 'int',
         'phase': 'str',
         'job_id': 'str',
@@ -29,6 +30,7 @@ class NodePoolStatus:
         'current_node': 'currentNode',
         'creating_node': 'creatingNode',
         'deleting_node': 'deletingNode',
+        'active_node': 'activeNode',
         'configuration_synced_node_count': 'configurationSyncedNodeCount',
         'phase': 'phase',
         'job_id': 'jobId',
@@ -36,7 +38,7 @@ class NodePoolStatus:
         'scale_group_statuses': 'scaleGroupStatuses'
     }
 
-    def __init__(self, current_node=None, creating_node=None, deleting_node=None, configuration_synced_node_count=None, phase=None, job_id=None, conditions=None, scale_group_statuses=None):
+    def __init__(self, current_node=None, creating_node=None, deleting_node=None, active_node=None, configuration_synced_node_count=None, phase=None, job_id=None, conditions=None, scale_group_statuses=None):
         r"""NodePoolStatus
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class NodePoolStatus:
         :type creating_node: int
         :param deleting_node: 当前节点池中删除中的节点数量。
         :type deleting_node: int
+        :param active_node: **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+        :type active_node: int
         :param configuration_synced_node_count: **参数解释** 当前节点池中已经同步了节点池配置参数的节点数量。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type configuration_synced_node_count: int
         :param phase: 节点池状态。 - 空值：可用（节点池当前节点数已达到预期，且无伸缩中的节点） - Synchronizing：伸缩中（节点池当前节点数未达到预期，且无伸缩中的节点） - Synchronized：伸缩等待中（节点池当前节点数未达到预期，或者存在伸缩中的节点） - SoldOut：节点池当前不可扩容（兼容字段，标记节点池资源售罄、资源配额不足等不可扩容状态） &gt; 上述节点池状态已废弃，仅兼容保留，不建议使用，替代感知方式如下： &gt; - 节点池扩缩状态：可通过currentNode/creatingNode/deletingNode节点状态统计信息，精确感知当前节点池扩缩状态。 &gt; - 节点池可扩容状态：可通过conditions感知节点池详细状态，其中\&quot;Scalable\&quot;可替代SoldOut语义。 - Deleting：删除中 - Error：错误 
@@ -64,6 +68,7 @@ class NodePoolStatus:
         self._current_node = None
         self._creating_node = None
         self._deleting_node = None
+        self._active_node = None
         self._configuration_synced_node_count = None
         self._phase = None
         self._job_id = None
@@ -77,6 +82,8 @@ class NodePoolStatus:
             self.creating_node = creating_node
         if deleting_node is not None:
             self.deleting_node = deleting_node
+        if active_node is not None:
+            self.active_node = active_node
         if configuration_synced_node_count is not None:
             self.configuration_synced_node_count = configuration_synced_node_count
         if phase is not None:
@@ -153,6 +160,28 @@ class NodePoolStatus:
         :type deleting_node: int
         """
         self._deleting_node = deleting_node
+
+    @property
+    def active_node(self):
+        r"""Gets the active_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+
+        :return: The active_node of this NodePoolStatus.
+        :rtype: int
+        """
+        return self._active_node
+
+    @active_node.setter
+    def active_node(self, active_node):
+        r"""Sets the active_node of this NodePoolStatus.
+
+        **参数解释**： 当前节点池中就绪的节点数量。 **取值范围**： 不涉及
+
+        :param active_node: The active_node of this NodePoolStatus.
+        :type active_node: int
+        """
+        self._active_node = active_node
 
     @property
     def configuration_synced_node_count(self):

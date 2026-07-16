@@ -16,7 +16,7 @@ class UpdateObjectConfigDescResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'str'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class UpdateObjectConfigDescResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param data: 成员id
-        :type data: object
+        :type data: str
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class UpdateObjectConfigDescResponse(SdkResponse):
         成员id
 
         :return: The data of this UpdateObjectConfigDescResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._data
 
@@ -58,7 +58,7 @@ class UpdateObjectConfigDescResponse(SdkResponse):
         成员id
 
         :param data: The data of this UpdateObjectConfigDescResponse.
-        :type data: object
+        :type data: str
         """
         self._data = data
 

@@ -36,6 +36,7 @@ from huaweicloudsdkcfw.v1.model.add_domains_request import AddDomainsRequest
 from huaweicloudsdkcfw.v1.model.add_domains_response import AddDomainsResponse
 from huaweicloudsdkcfw.v1.model.add_eip_alarm_whitelist_request import AddEipAlarmWhitelistRequest
 from huaweicloudsdkcfw.v1.model.add_eip_alarm_whitelist_request_body import AddEipAlarmWhitelistRequestBody
+from huaweicloudsdkcfw.v1.model.add_eip_alarm_whitelist_resp_data import AddEipAlarmWhitelistRespData
 from huaweicloudsdkcfw.v1.model.add_eip_alarm_whitelist_response import AddEipAlarmWhitelistResponse
 from huaweicloudsdkcfw.v1.model.add_log_config_request import AddLogConfigRequest
 from huaweicloudsdkcfw.v1.model.add_log_config_response import AddLogConfigResponse
@@ -197,6 +198,7 @@ from huaweicloudsdkcfw.v1.model.delete_capture_task_response import DeleteCaptur
 from huaweicloudsdkcfw.v1.model.delete_domain_dto import DeleteDomainDto
 from huaweicloudsdkcfw.v1.model.delete_domain_set_request import DeleteDomainSetRequest
 from huaweicloudsdkcfw.v1.model.delete_domain_set_response import DeleteDomainSetResponse
+from huaweicloudsdkcfw.v1.model.delete_domain_set_response_datas import DeleteDomainSetResponseDatas
 from huaweicloudsdkcfw.v1.model.delete_domains_request import DeleteDomainsRequest
 from huaweicloudsdkcfw.v1.model.delete_domains_response import DeleteDomainsResponse
 from huaweicloudsdkcfw.v1.model.delete_firewall_request import DeleteFirewallRequest
@@ -220,6 +222,7 @@ from huaweicloudsdkcfw.v1.model.delete_tag_response import DeleteTagResponse
 from huaweicloudsdkcfw.v1.model.delete_tags_dto import DeleteTagsDto
 from huaweicloudsdkcfw.v1.model.dns_servers_response_dto import DnsServersResponseDTO
 from huaweicloudsdkcfw.v1.model.domain_info import DomainInfo
+from huaweicloudsdkcfw.v1.model.domain_set_id import DomainSetId
 from huaweicloudsdkcfw.v1.model.domain_set_info_dto import DomainSetInfoDto
 from huaweicloudsdkcfw.v1.model.domain_set_response_data import DomainSetResponseData
 from huaweicloudsdkcfw.v1.model.domain_set_vo import DomainSetVo
@@ -433,7 +436,6 @@ from huaweicloudsdkcfw.v1.model.list_service_sets_request import ListServiceSets
 from huaweicloudsdkcfw.v1.model.list_service_sets_response import ListServiceSetsResponse
 from huaweicloudsdkcfw.v1.model.log_config_dto import LogConfigDto
 from huaweicloudsdkcfw.v1.model.log_vo import LogVO
-from huaweicloudsdkcfw.v1.model.mapstringstring import Mapstringstring
 from huaweicloudsdkcfw.v1.model.multi_account_resp_data import MultiAccountRespData
 from huaweicloudsdkcfw.v1.model.order_rule_acl_dto import OrderRuleAclDto
 from huaweicloudsdkcfw.v1.model.order_rule_id import OrderRuleId

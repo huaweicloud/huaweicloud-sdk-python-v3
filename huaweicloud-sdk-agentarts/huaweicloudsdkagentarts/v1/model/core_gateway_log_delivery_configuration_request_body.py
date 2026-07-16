@@ -15,42 +15,28 @@ class CoreGatewayLogDeliveryConfigurationRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'enabled': 'bool',
-        'log_group_id': 'str',
-        'log_stream_id': 'str'
+        'enabled': 'bool'
     }
 
     attribute_map = {
-        'enabled': 'enabled',
-        'log_group_id': 'log_group_id',
-        'log_stream_id': 'log_stream_id'
+        'enabled': 'enabled'
     }
 
-    def __init__(self, enabled=None, log_group_id=None, log_stream_id=None):
+    def __init__(self, enabled=None):
         r"""CoreGatewayLogDeliveryConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
         :param enabled: 是否启用日志上报。
         :type enabled: bool
-        :param log_group_id: LTS日志组ID。
-        :type log_group_id: str
-        :param log_stream_id: LTS日志流ID。
-        :type log_stream_id: str
         """
         
         
 
         self._enabled = None
-        self._log_group_id = None
-        self._log_stream_id = None
         self.discriminator = None
 
         self.enabled = enabled
-        if log_group_id is not None:
-            self.log_group_id = log_group_id
-        if log_stream_id is not None:
-            self.log_stream_id = log_stream_id
 
     @property
     def enabled(self):
@@ -73,50 +59,6 @@ class CoreGatewayLogDeliveryConfigurationRequestBody:
         :type enabled: bool
         """
         self._enabled = enabled
-
-    @property
-    def log_group_id(self):
-        r"""Gets the log_group_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-
-        LTS日志组ID。
-
-        :return: The log_group_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-        :rtype: str
-        """
-        return self._log_group_id
-
-    @log_group_id.setter
-    def log_group_id(self, log_group_id):
-        r"""Sets the log_group_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-
-        LTS日志组ID。
-
-        :param log_group_id: The log_group_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-        :type log_group_id: str
-        """
-        self._log_group_id = log_group_id
-
-    @property
-    def log_stream_id(self):
-        r"""Gets the log_stream_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-
-        LTS日志流ID。
-
-        :return: The log_stream_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-        :rtype: str
-        """
-        return self._log_stream_id
-
-    @log_stream_id.setter
-    def log_stream_id(self, log_stream_id):
-        r"""Sets the log_stream_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-
-        LTS日志流ID。
-
-        :param log_stream_id: The log_stream_id of this CoreGatewayLogDeliveryConfigurationRequestBody.
-        :type log_stream_id: str
-        """
-        self._log_stream_id = log_stream_id
 
     def to_dict(self):
         result = {}

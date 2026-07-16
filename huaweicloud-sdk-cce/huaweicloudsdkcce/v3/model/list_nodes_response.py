@@ -18,16 +18,18 @@ class ListNodesResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'items': 'list[Node]'
+        'items': 'list[Node]',
+        'page_info': 'NodePageInfo'
     }
 
     attribute_map = {
         'kind': 'kind',
         'api_version': 'apiVersion',
-        'items': 'items'
+        'items': 'items',
+        'page_info': 'pageInfo'
     }
 
-    def __init__(self, kind=None, api_version=None, items=None):
+    def __init__(self, kind=None, api_version=None, items=None, page_info=None):
         r"""ListNodesResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ListNodesResponse(SdkResponse):
         :type api_version: str
         :param items: **参数解释**： 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type items: list[:class:`huaweicloudsdkcce.v3.Node`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcce.v3.NodePageInfo`
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ListNodesResponse(SdkResponse):
         self._kind = None
         self._api_version = None
         self._items = None
+        self._page_info = None
         self.discriminator = None
 
         if kind is not None:
@@ -53,6 +58,8 @@ class ListNodesResponse(SdkResponse):
             self.api_version = api_version
         if items is not None:
             self.items = items
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def kind(self):
@@ -119,6 +126,24 @@ class ListNodesResponse(SdkResponse):
         :type items: list[:class:`huaweicloudsdkcce.v3.Node`]
         """
         self._items = items
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListNodesResponse.
+
+        :return: The page_info of this ListNodesResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodePageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListNodesResponse.
+
+        :param page_info: The page_info of this ListNodesResponse.
+        :type page_info: :class:`huaweicloudsdkcce.v3.NodePageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

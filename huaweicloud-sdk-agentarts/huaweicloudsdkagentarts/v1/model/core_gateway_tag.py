@@ -29,9 +29,9 @@ class CoreGatewayTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。
+        :param key: **参数解释：** 标签键。 **取值范围：** 最大长度128个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / &#x3D; + - @。 
         :type key: str
-        :param value: 标签值。
+        :param value: **参数解释：** 标签值。 **取值范围：** 最大长度255个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / &#x3D; + - @。 
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class CoreGatewayTag:
     def key(self):
         r"""Gets the key of this CoreGatewayTag.
 
-        标签键。
+        **参数解释：** 标签键。 **取值范围：** 最大长度128个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / = + - @。 
 
         :return: The key of this CoreGatewayTag.
         :rtype: str
@@ -59,7 +59,7 @@ class CoreGatewayTag:
     def key(self, key):
         r"""Sets the key of this CoreGatewayTag.
 
-        标签键。
+        **参数解释：** 标签键。 **取值范围：** 最大长度128个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / = + - @。 
 
         :param key: The key of this CoreGatewayTag.
         :type key: str
@@ -70,7 +70,7 @@ class CoreGatewayTag:
     def value(self):
         r"""Gets the value of this CoreGatewayTag.
 
-        标签值。
+        **参数解释：** 标签值。 **取值范围：** 最大长度255个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / = + - @。 
 
         :return: The value of this CoreGatewayTag.
         :rtype: str
@@ -81,7 +81,7 @@ class CoreGatewayTag:
     def value(self, value):
         r"""Sets the value of this CoreGatewayTag.
 
-        标签值。
+        **参数解释：** 标签值。 **取值范围：** 最大长度255个unicode字符，可用 UTF-8 格式表示的字母、数字和空格，以及以下字符：_ . : / = + - @。 
 
         :param value: The value of this CoreGatewayTag.
         :type value: str

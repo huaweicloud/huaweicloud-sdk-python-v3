@@ -37,7 +37,7 @@ class InstanceRequestSpec:
         :type version: str
         :param cluster_id: 集群id
         :type cluster_id: str
-        :param values: 插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
+        :param values: 插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/api-cce/cce_02_0366.html)。](tag:hws)[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0366.html)。](tag:hws_hk) 
         :type values: dict(str, object)
         :param addon_template_name: 待安装插件模板名称，如coredns
         :type addon_template_name: str
@@ -105,7 +105,7 @@ class InstanceRequestSpec:
     def values(self):
         r"""Gets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/api-cce/cce_02_0366.html)。](tag:hws)[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0366.html)。](tag:hws_hk) 
 
         :return: The values of this InstanceRequestSpec.
         :rtype: dict(str, object)
@@ -116,7 +116,7 @@ class InstanceRequestSpec:
     def values(self, values):
         r"""Sets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/api-cce/cce_02_0366.html)。](tag:hws)[安装参数请参考[插件实例字段说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0366.html)。](tag:hws_hk) 
 
         :param values: The values of this InstanceRequestSpec.
         :type values: dict(str, object)

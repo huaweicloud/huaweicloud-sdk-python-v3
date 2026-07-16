@@ -18,8 +18,8 @@ class IpRegionResponseBodyData:
         'region_id': 'str',
         'description_cn': 'str',
         'description_en': 'str',
-        'region_type': 'str',
-        'superior_region_id': 'int'
+        'region_type': 'int',
+        'superior_region_id': 'str'
     }
 
     attribute_map = {
@@ -42,9 +42,9 @@ class IpRegionResponseBodyData:
         :param description_en: **参数解释**： 区域英文描述，仅当区域为非中国区域时使用，可通过[地域信息表](cfw_02_0031.xml)获取。 **取值范围**： 不涉及 
         :type description_en: str
         :param region_type: **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
-        :type region_type: str
+        :type region_type: int
         :param superior_region_id: **参数解释**： 上级区域ID **取值范围**： 不涉及 
-        :type superior_region_id: int
+        :type superior_region_id: str
         """
         
         
@@ -140,7 +140,7 @@ class IpRegionResponseBodyData:
         **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
 
         :return: The region_type of this IpRegionResponseBodyData.
-        :rtype: str
+        :rtype: int
         """
         return self._region_type
 
@@ -151,7 +151,7 @@ class IpRegionResponseBodyData:
         **参数解释**： 区域类型 **取值范围**： - 0：国家 - 1：省份 - 2：大洲 
 
         :param region_type: The region_type of this IpRegionResponseBodyData.
-        :type region_type: str
+        :type region_type: int
         """
         self._region_type = region_type
 
@@ -162,7 +162,7 @@ class IpRegionResponseBodyData:
         **参数解释**： 上级区域ID **取值范围**： 不涉及 
 
         :return: The superior_region_id of this IpRegionResponseBodyData.
-        :rtype: int
+        :rtype: str
         """
         return self._superior_region_id
 
@@ -173,7 +173,7 @@ class IpRegionResponseBodyData:
         **参数解释**： 上级区域ID **取值范围**： 不涉及 
 
         :param superior_region_id: The superior_region_id of this IpRegionResponseBodyData.
-        :type superior_region_id: int
+        :type superior_region_id: str
         """
         self._superior_region_id = superior_region_id
 

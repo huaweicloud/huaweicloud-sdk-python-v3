@@ -47,7 +47,7 @@ class InstanceSpec:
         :type version: str
         :param addon_template_name: 插件模板名称，如coredns
         :type addon_template_name: str
-        :param addon_template_type: 插件模板类型
+        :param addon_template_type: **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
         :type addon_template_type: str
         :param addon_template_logo: 插件模板logo图片的地址
         :type addon_template_logo: str
@@ -152,7 +152,7 @@ class InstanceSpec:
     def addon_template_type(self):
         r"""Gets the addon_template_type of this InstanceSpec.
 
-        插件模板类型
+        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
 
         :return: The addon_template_type of this InstanceSpec.
         :rtype: str
@@ -163,7 +163,7 @@ class InstanceSpec:
     def addon_template_type(self, addon_template_type):
         r"""Sets the addon_template_type of this InstanceSpec.
 
-        插件模板类型
+        **参数解释：** 插件模板类型 **约束限制：** 不涉及 **取值范围：** - helm: 表示使用Helm包进行部署的模板类型 - static: 表示静态模板类型  **默认取值：** 不涉及
 
         :param addon_template_type: The addon_template_type of this InstanceSpec.
         :type addon_template_type: str

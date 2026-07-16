@@ -27,7 +27,7 @@ class DeleteCoreGatewayRequest:
 
         The model defined in huaweicloud sdk
 
-        :param gateway_id: 网关的唯一标识符。
+        :param gateway_id: **参数解释：** 网关ID，网关的唯一标识符。 **约束限制：** 长度固定为36字符，必须为UUID格式。 **取值范围：** 匹配标准的UUID格式（8-4-4-4-12的十六进制数字串，由连字符分隔），符合正则条件^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$。 **默认取值：** 不涉及。 
         :type gateway_id: str
         """
         
@@ -42,7 +42,7 @@ class DeleteCoreGatewayRequest:
     def gateway_id(self):
         r"""Gets the gateway_id of this DeleteCoreGatewayRequest.
 
-        网关的唯一标识符。
+        **参数解释：** 网关ID，网关的唯一标识符。 **约束限制：** 长度固定为36字符，必须为UUID格式。 **取值范围：** 匹配标准的UUID格式（8-4-4-4-12的十六进制数字串，由连字符分隔），符合正则条件^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$。 **默认取值：** 不涉及。 
 
         :return: The gateway_id of this DeleteCoreGatewayRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteCoreGatewayRequest:
     def gateway_id(self, gateway_id):
         r"""Sets the gateway_id of this DeleteCoreGatewayRequest.
 
-        网关的唯一标识符。
+        **参数解释：** 网关ID，网关的唯一标识符。 **约束限制：** 长度固定为36字符，必须为UUID格式。 **取值范围：** 匹配标准的UUID格式（8-4-4-4-12的十六进制数字串，由连字符分隔），符合正则条件^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$。 **默认取值：** 不涉及。 
 
         :param gateway_id: The gateway_id of this DeleteCoreGatewayRequest.
         :type gateway_id: str

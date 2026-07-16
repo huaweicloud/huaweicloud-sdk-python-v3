@@ -33,7 +33,7 @@ class ScaleNodePoolOptions:
 
         :param scalable_checking: 扩容状态检查策略: instant(同步检查), async(异步检查)。默认同步检查instant 
         :type scalable_checking: str
-        :param scale_policy: **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+        :param scale_policy: **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。   &gt; 在ECS资源充足情况下，多伸缩组AZ优先策略（AZBalance）扩容示例如下：初始节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 0。扩容10个节点时，az1分配0个，az2分配10个，最终节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 10。扩容20个节点时，az1分配5个，az2分配15个，最终节点数为flavor1-az1: 7（或8），flavor2-az1: 8（或7），flavor3-az2: 15。 - Random：随机策略，扩容节点池时，系统会从下发的规格scaleGroups列表中随机选择伸缩组扩容（优先会对各伸缩组平均分配）。  **默认取值**： Random 
         :type scale_policy: str
         :param billing_config_override: 
         :type billing_config_override: :class:`huaweicloudsdkcce.v3.ScaleUpBillingConfigOverride`
@@ -79,7 +79,7 @@ class ScaleNodePoolOptions:
     def scale_policy(self):
         r"""Gets the scale_policy of this ScaleNodePoolOptions.
 
-        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。   > 在ECS资源充足情况下，多伸缩组AZ优先策略（AZBalance）扩容示例如下：初始节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 0。扩容10个节点时，az1分配0个，az2分配10个，最终节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 10。扩容20个节点时，az1分配5个，az2分配15个，最终节点数为flavor1-az1: 7（或8），flavor2-az1: 8（或7），flavor3-az2: 15。 - Random：随机策略，扩容节点池时，系统会从下发的规格scaleGroups列表中随机选择伸缩组扩容（优先会对各伸缩组平均分配）。  **默认取值**： Random 
 
         :return: The scale_policy of this ScaleNodePoolOptions.
         :rtype: str
@@ -90,7 +90,7 @@ class ScaleNodePoolOptions:
     def scale_policy(self, scale_policy):
         r"""Sets the scale_policy of this ScaleNodePoolOptions.
 
-        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。   > 在ECS资源充足情况下，多伸缩组AZ优先策略（AZBalance）扩容示例如下：初始节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 0。扩容10个节点时，az1分配0个，az2分配10个，最终节点数为flavor1-az1: 5，flavor2-az1: 5，flavor3-az2: 10。扩容20个节点时，az1分配5个，az2分配15个，最终节点数为flavor1-az1: 7（或8），flavor2-az1: 8（或7），flavor3-az2: 15。 - Random：随机策略，扩容节点池时，系统会从下发的规格scaleGroups列表中随机选择伸缩组扩容（优先会对各伸缩组平均分配）。  **默认取值**： Random 
 
         :param scale_policy: The scale_policy of this ScaleNodePoolOptions.
         :type scale_policy: str

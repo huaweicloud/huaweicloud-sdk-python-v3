@@ -15,6 +15,7 @@ class AccessTopVO:
     sensitive_list = []
 
     openapi_types = {
+        'all_hit_rule_list': 'list[AccessTopMemberVO]',
         'deny_count': 'int',
         'deny_top_one_acl_id': 'str',
         'deny_top_one_acl_name': 'str',
@@ -36,6 +37,7 @@ class AccessTopVO:
     }
 
     attribute_map = {
+        'all_hit_rule_list': 'all_hit_rule_list',
         'deny_count': 'deny_count',
         'deny_top_one_acl_id': 'deny_top_one_acl_id',
         'deny_top_one_acl_name': 'deny_top_one_acl_name',
@@ -56,11 +58,13 @@ class AccessTopVO:
         'top_deny_rule_list': 'top_deny_rule_list'
     }
 
-    def __init__(self, deny_count=None, deny_top_one_acl_id=None, deny_top_one_acl_name=None, hit_count=None, in2out_deny_dst_ip_list=None, in2out_deny_dst_port_list=None, in2out_deny_dst_region_list=None, in2out_deny_src_ip_list=None, out2in_deny_dst_ip_list=None, out2in_deny_dst_port_list=None, out2in_deny_src_ip_list=None, out2in_deny_src_port_list=None, out2in_deny_src_region_list=None, permit_count=None, permit_top_one_acl_id=None, permit_top_one_acl_name=None, records=None, top_deny_rule_list=None):
+    def __init__(self, all_hit_rule_list=None, deny_count=None, deny_top_one_acl_id=None, deny_top_one_acl_name=None, hit_count=None, in2out_deny_dst_ip_list=None, in2out_deny_dst_port_list=None, in2out_deny_dst_region_list=None, in2out_deny_src_ip_list=None, out2in_deny_dst_ip_list=None, out2in_deny_dst_port_list=None, out2in_deny_src_ip_list=None, out2in_deny_src_port_list=None, out2in_deny_src_region_list=None, permit_count=None, permit_top_one_acl_id=None, permit_top_one_acl_name=None, records=None, top_deny_rule_list=None):
         r"""AccessTopVO
 
         The model defined in huaweicloud sdk
 
+        :param all_hit_rule_list: **参数解释**： 所有命中规则列表 **取值范围**： 不涉及
+        :type all_hit_rule_list: list[:class:`huaweicloudsdkcfw.v1.AccessTopMemberVO`]
         :param deny_count: **参数解释**： 阻断次数 **取值范围**： 不涉及
         :type deny_count: int
         :param deny_top_one_acl_id: **参数解释**： Top命中的阻断策略ID **取值范围**： 不涉及
@@ -101,6 +105,7 @@ class AccessTopVO:
         
         
 
+        self._all_hit_rule_list = None
         self._deny_count = None
         self._deny_top_one_acl_id = None
         self._deny_top_one_acl_name = None
@@ -121,6 +126,8 @@ class AccessTopVO:
         self._top_deny_rule_list = None
         self.discriminator = None
 
+        if all_hit_rule_list is not None:
+            self.all_hit_rule_list = all_hit_rule_list
         if deny_count is not None:
             self.deny_count = deny_count
         if deny_top_one_acl_id is not None:
@@ -157,6 +164,28 @@ class AccessTopVO:
             self.records = records
         if top_deny_rule_list is not None:
             self.top_deny_rule_list = top_deny_rule_list
+
+    @property
+    def all_hit_rule_list(self):
+        r"""Gets the all_hit_rule_list of this AccessTopVO.
+
+        **参数解释**： 所有命中规则列表 **取值范围**： 不涉及
+
+        :return: The all_hit_rule_list of this AccessTopVO.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.AccessTopMemberVO`]
+        """
+        return self._all_hit_rule_list
+
+    @all_hit_rule_list.setter
+    def all_hit_rule_list(self, all_hit_rule_list):
+        r"""Sets the all_hit_rule_list of this AccessTopVO.
+
+        **参数解释**： 所有命中规则列表 **取值范围**： 不涉及
+
+        :param all_hit_rule_list: The all_hit_rule_list of this AccessTopVO.
+        :type all_hit_rule_list: list[:class:`huaweicloudsdkcfw.v1.AccessTopMemberVO`]
+        """
+        self._all_hit_rule_list = all_hit_rule_list
 
     @property
     def deny_count(self):

@@ -41,10 +41,8 @@ class AntiVirusSwitchDto:
         self._object_id = None
         self.discriminator = None
 
-        if anti_virus_status is not None:
-            self.anti_virus_status = anti_virus_status
-        if object_id is not None:
-            self.object_id = object_id
+        self.anti_virus_status = anti_virus_status
+        self.object_id = object_id
 
     @property
     def anti_virus_status(self):

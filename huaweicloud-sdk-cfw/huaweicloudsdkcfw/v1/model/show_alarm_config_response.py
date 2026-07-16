@@ -16,36 +16,54 @@ class ShowAlarmConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'alarm_configs': 'list[AlarmConfig]',
-        'data': 'object'
+        'data': 'object',
+        'alarm_configs': 'list[AlarmConfig]'
     }
 
     attribute_map = {
-        'alarm_configs': 'alarm_configs',
-        'data': 'data'
+        'data': 'data',
+        'alarm_configs': 'alarm_configs'
     }
 
-    def __init__(self, alarm_configs=None, data=None):
+    def __init__(self, data=None, alarm_configs=None):
         r"""ShowAlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
-        :param alarm_configs: 告警配置列表
-        :type alarm_configs: list[:class:`huaweicloudsdkcfw.v1.AlarmConfig`]
         :param data: 
         :type data: object
+        :param alarm_configs: 告警配置列表
+        :type alarm_configs: list[:class:`huaweicloudsdkcfw.v1.AlarmConfig`]
         """
         
         super().__init__()
 
-        self._alarm_configs = None
         self._data = None
+        self._alarm_configs = None
         self.discriminator = None
 
-        if alarm_configs is not None:
-            self.alarm_configs = alarm_configs
         if data is not None:
             self.data = data
+        if alarm_configs is not None:
+            self.alarm_configs = alarm_configs
+
+    @property
+    def data(self):
+        r"""Gets the data of this ShowAlarmConfigResponse.
+
+        :return: The data of this ShowAlarmConfigResponse.
+        :rtype: object
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ShowAlarmConfigResponse.
+
+        :param data: The data of this ShowAlarmConfigResponse.
+        :type data: object
+        """
+        self._data = data
 
     @property
     def alarm_configs(self):
@@ -68,24 +86,6 @@ class ShowAlarmConfigResponse(SdkResponse):
         :type alarm_configs: list[:class:`huaweicloudsdkcfw.v1.AlarmConfig`]
         """
         self._alarm_configs = alarm_configs
-
-    @property
-    def data(self):
-        r"""Gets the data of this ShowAlarmConfigResponse.
-
-        :return: The data of this ShowAlarmConfigResponse.
-        :rtype: object
-        """
-        return self._data
-
-    @data.setter
-    def data(self, data):
-        r"""Sets the data of this ShowAlarmConfigResponse.
-
-        :param data: The data of this ShowAlarmConfigResponse.
-        :type data: object
-        """
-        self._data = data
 
     def to_dict(self):
         import warnings

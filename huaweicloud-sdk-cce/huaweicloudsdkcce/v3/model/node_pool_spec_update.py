@@ -20,6 +20,7 @@ class NodePoolSpecUpdate:
         'ignore_initial_node_count': 'bool',
         'autoscaling': 'NodePoolNodeAutoscaling',
         'node_management_update': 'NodeManagement',
+        'custom_security_groups': 'list[str]',
         'taint_policy_on_existing_nodes': 'str',
         'label_policy_on_existing_nodes': 'str',
         'user_tags_policy_on_existing_nodes': 'str',
@@ -32,13 +33,14 @@ class NodePoolSpecUpdate:
         'ignore_initial_node_count': 'ignoreInitialNodeCount',
         'autoscaling': 'autoscaling',
         'node_management_update': 'nodeManagementUpdate',
+        'custom_security_groups': 'customSecurityGroups',
         'taint_policy_on_existing_nodes': 'taintPolicyOnExistingNodes',
         'label_policy_on_existing_nodes': 'labelPolicyOnExistingNodes',
         'user_tags_policy_on_existing_nodes': 'userTagsPolicyOnExistingNodes',
         'extension_scale_groups': 'extensionScaleGroups'
     }
 
-    def __init__(self, node_template=None, initial_node_count=None, ignore_initial_node_count=None, autoscaling=None, node_management_update=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None, extension_scale_groups=None):
+    def __init__(self, node_template=None, initial_node_count=None, ignore_initial_node_count=None, autoscaling=None, node_management_update=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None, extension_scale_groups=None):
         r"""NodePoolSpecUpdate
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class NodePoolSpecUpdate:
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         :param node_management_update: 
         :type node_management_update: :class:`huaweicloudsdkcce.v3.NodeManagement`
+        :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
+        :type custom_security_groups: list[str]
         :param taint_policy_on_existing_nodes: **参数解释：** 是否同步K8S污点。 **约束限制**： 不涉及 **取值范围：** - 填写为refresh，K8S污点的改动将会被同步更新到存量节点上。 - 填写为ignore，节点池K8S污点将不会同步更新到存量节点上。  **默认取值：** 无
         :type taint_policy_on_existing_nodes: str
         :param label_policy_on_existing_nodes: **参数解释：** 是否同步K8S标签。 **约束限制**： 不涉及 **取值范围：** - 填写为refresh，K8S标签的改动将会被同步更新到存量节点上。 - 填写为ignore，K8S标签将不会同步更新到存量节点上。  **默认取值：** 无
@@ -70,6 +74,7 @@ class NodePoolSpecUpdate:
         self._ignore_initial_node_count = None
         self._autoscaling = None
         self._node_management_update = None
+        self._custom_security_groups = None
         self._taint_policy_on_existing_nodes = None
         self._label_policy_on_existing_nodes = None
         self._user_tags_policy_on_existing_nodes = None
@@ -85,6 +90,8 @@ class NodePoolSpecUpdate:
             self.autoscaling = autoscaling
         if node_management_update is not None:
             self.node_management_update = node_management_update
+        if custom_security_groups is not None:
+            self.custom_security_groups = custom_security_groups
         if taint_policy_on_existing_nodes is not None:
             self.taint_policy_on_existing_nodes = taint_policy_on_existing_nodes
         if label_policy_on_existing_nodes is not None:
@@ -191,6 +198,28 @@ class NodePoolSpecUpdate:
         :type node_management_update: :class:`huaweicloudsdkcce.v3.NodeManagement`
         """
         self._node_management_update = node_management_update
+
+    @property
+    def custom_security_groups(self):
+        r"""Gets the custom_security_groups of this NodePoolSpecUpdate.
+
+        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
+
+        :return: The custom_security_groups of this NodePoolSpecUpdate.
+        :rtype: list[str]
+        """
+        return self._custom_security_groups
+
+    @custom_security_groups.setter
+    def custom_security_groups(self, custom_security_groups):
+        r"""Sets the custom_security_groups of this NodePoolSpecUpdate.
+
+        节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
+
+        :param custom_security_groups: The custom_security_groups of this NodePoolSpecUpdate.
+        :type custom_security_groups: list[str]
+        """
+        self._custom_security_groups = custom_security_groups
 
     @property
     def taint_policy_on_existing_nodes(self):

@@ -4817,8 +4817,6 @@ class CfwClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'domain_name' in local_var_params:
             query_params.append(('domain_name', local_var_params['domain_name']))
-        if 'object_id' in local_var_params:
-            query_params.append(('object_Id', local_var_params['object_id']))
 
         header_params = {}
 

@@ -67,7 +67,7 @@ class AddRuleAclDtoRules:
         :type address_type: int
         :param action_type: **参数解释**： 规则动作类型，用于区分规则对流量的动作 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示允许通行（permit），1表示拒绝通行（deny） **默认取值**： 不涉及
         :type action_type: int
-        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        :param status: **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
         :type status: int
         :param applications: **参数解释**： 规则应用协议列表 **约束限制**： 不涉及 **取值范围**： 规则应用类型包括：“HTTP”，\&quot;HTTPS\&quot;，\&quot;TLS1\&quot;，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”，“BGP”等。 **默认取值**： 不涉及
         :type applications: list[str]
@@ -230,7 +230,7 @@ class AddRuleAclDtoRules:
     def status(self):
         r"""Gets the status of this AddRuleAclDtoRules.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
 
         :return: The status of this AddRuleAclDtoRules.
         :rtype: int
@@ -241,7 +241,7 @@ class AddRuleAclDtoRules:
     def status(self, status):
         r"""Sets the status of this AddRuleAclDtoRules.
 
-        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示启用，1表示禁用 **默认取值**： 不涉及
+        **参数解释**： 规则启用状态，用于区分规则是否启用 **约束限制**： 仅能使用数字0和1 **取值范围**： 0表示禁用，1表示启用 **默认取值**： 不涉及
 
         :param status: The status of this AddRuleAclDtoRules.
         :type status: int

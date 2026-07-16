@@ -176,6 +176,73 @@ class CceClient(Client):
 
         return http_info
 
+    def assume_agency_for_pod_identity(self, request):
+        r"""获取pod-identity关联相关委托凭据
+
+        该API用于通过ServiceAccount token来assume获取ServiceAccount所关联的pod-identity关联中绑定的IAM委托凭据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssumeAgencyForPodIdentity
+        :type request: :class:`huaweicloudsdkcce.v3.AssumeAgencyForPodIdentityRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.AssumeAgencyForPodIdentityResponse`
+        """
+        http_info = self._assume_agency_for_pod_identity_http_info(request)
+        return self._call_api(**http_info)
+
+    def assume_agency_for_pod_identity_invoker(self, request):
+        http_info = self._assume_agency_for_pod_identity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _assume_agency_for_pod_identity_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/assume-agency-for-pod-identity",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssumeAgencyForPodIdentityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def awake_cluster(self, request):
         r"""集群唤醒
 
@@ -220,6 +287,77 @@ class CceClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_change_node_to_period(self, request):
+        r"""按需节点转包年/包月
+
+        该API用于将节点从按需计费模式转成包周期计费模式。
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        &gt;按需节点池中的节点转成包年/包月时，需要将集群升级到v1.19.16-r40、v1.21.11-r0、v1.23.9-r0、v1.25.4-r0以及其他更高版本的集群。
+        &gt;当按需节点池中的节点转成包年/包月后，该节点不支持弹性缩容。
+        &gt;按需计费节点绑定的资源（弹性公网IP）可能不支持同步变更计费模式，详情请参见[弹性云服务器ECS按需转包年/包月说明](https://support.huaweicloud.com/price-ecs/ecs_billing_5002.html)。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchChangeNodeToPeriod
+        :type request: :class:`huaweicloudsdkcce.v3.BatchChangeNodeToPeriodRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.BatchChangeNodeToPeriodResponse`
+        """
+        http_info = self._batch_change_node_to_period_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_change_node_to_period_invoker(self, request):
+        http_info = self._batch_change_node_to_period_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_change_node_to_period_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/toperiod",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchChangeNodeToPeriodResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -1192,6 +1330,73 @@ class CceClient(Client):
 
         return http_info
 
+    def create_pod_identity_association(self, request):
+        r"""创建pod-identity关联
+
+        该API用于创建pod-identity关联，将容器集群serviceaccount与IAM委托绑定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePodIdentityAssociation
+        :type request: :class:`huaweicloudsdkcce.v3.CreatePodIdentityAssociationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreatePodIdentityAssociationResponse`
+        """
+        http_info = self._create_pod_identity_association_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pod_identity_association_invoker(self, request):
+        http_info = self._create_pod_identity_association_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_pod_identity_association_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/pod-identity-associations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePodIdentityAssociationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_post_check(self, request):
         r"""集群升级后确认
 
@@ -1929,6 +2134,73 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'nodepool_id' in local_var_params:
             path_params['nodepool_id'] = local_var_params['nodepool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_pod_identity_association(self, request):
+        r"""删除pod-identity关联
+
+        该API用于删除指定的pod-identity关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePodIdentityAssociation
+        :type request: :class:`huaweicloudsdkcce.v3.DeletePodIdentityAssociationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeletePodIdentityAssociationResponse`
+        """
+        http_info = self._delete_pod_identity_association_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pod_identity_association_invoker(self, request):
+        http_info = self._delete_pod_identity_association_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pod_identity_association_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/pod-identity-associations/{association_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePodIdentityAssociationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'association_id' in local_var_params:
+            path_params['association_id'] = local_var_params['association_id']
 
         query_params = []
 
@@ -3511,6 +3783,10 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -3563,6 +3839,71 @@ class CceClient(Client):
             "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/partitions",
             "request_type": request.__class__.__name__,
             "response_type": "ListPartitionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_pod_identity_associations(self, request):
+        r"""查询指定集群的pod-identity关联
+
+        该API用于获取集群下所有pod-identity关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPodIdentityAssociations
+        :type request: :class:`huaweicloudsdkcce.v3.ListPodIdentityAssociationsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListPodIdentityAssociationsResponse`
+        """
+        http_info = self._list_pod_identity_associations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pod_identity_associations_invoker(self, request):
+        http_info = self._list_pod_identity_associations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pod_identity_associations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/pod-identity-associations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPodIdentityAssociationsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4521,6 +4862,144 @@ class CceClient(Client):
         path_params = {}
         if 'id' in local_var_params:
             path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rotate_cluster_credentials(self, request):
+        r"""轮转用户的集群证书
+
+        该API用于轮转指定集群的证书
+        
+        &gt; 只支持1.19及以上集群版本
+        &gt; 操作完成后，用户集群组件的证书有效期会续期5年。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RotateClusterCredentials
+        :type request: :class:`huaweicloudsdkcce.v3.RotateClusterCredentialsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RotateClusterCredentialsResponse`
+        """
+        http_info = self._rotate_cluster_credentials_http_info(request)
+        return self._call_api(**http_info)
+
+    def rotate_cluster_credentials_invoker(self, request):
+        http_info = self._rotate_cluster_credentials_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rotate_cluster_credentials_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/rotatecredentials",
+            "request_type": request.__class__.__name__,
+            "response_type": "RotateClusterCredentialsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rotate_node_cert(self, request):
+        r"""轮转节点证书
+
+        该API用于在指定集群下轮转节点证书。作为集群证书轮转操作的补偿机制：当通过配套的集群证书轮转接口执行轮转时，若部分节点证书轮转失败，可通过调用本接口进行重试。
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RotateNodeCert
+        :type request: :class:`huaweicloudsdkcce.v3.RotateNodeCertRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.RotateNodeCertResponse`
+        """
+        http_info = self._rotate_node_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def rotate_node_cert_invoker(self, request):
+        http_info = self._rotate_node_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rotate_node_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/rotate-cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "RotateNodeCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
 
@@ -5662,6 +6141,73 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'partition_name' in local_var_params:
             path_params['partition_name'] = local_var_params['partition_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pod_identity_association(self, request):
+        r"""查询指定pod-identity关联
+
+        该API用于查询指定pod-identity关联详情信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPodIdentityAssociation
+        :type request: :class:`huaweicloudsdkcce.v3.ShowPodIdentityAssociationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowPodIdentityAssociationResponse`
+        """
+        http_info = self._show_pod_identity_association_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pod_identity_association_invoker(self, request):
+        http_info = self._show_pod_identity_association_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pod_identity_association_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/pod-identity-associations/{association_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPodIdentityAssociationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'association_id' in local_var_params:
+            path_params['association_id'] = local_var_params['association_id']
 
         query_params = []
 
@@ -7086,6 +7632,75 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
         if 'partition_name' in local_var_params:
             path_params['partition_name'] = local_var_params['partition_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pod_identity_association(self, request):
+        r"""更新pod-identity关联
+
+        该API用于更新指定pod-identity关联所绑定的IAM委托信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePodIdentityAssociation
+        :type request: :class:`huaweicloudsdkcce.v3.UpdatePodIdentityAssociationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdatePodIdentityAssociationResponse`
+        """
+        http_info = self._update_pod_identity_association_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pod_identity_association_invoker(self, request):
+        http_info = self._update_pod_identity_association_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_pod_identity_association_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/pod-identity-associations/{association_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePodIdentityAssociationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'association_id' in local_var_params:
+            path_params['association_id'] = local_var_params['association_id']
 
         query_params = []
 
@@ -8587,6 +9202,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 
@@ -10430,6 +11047,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 
@@ -11108,6 +11727,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 

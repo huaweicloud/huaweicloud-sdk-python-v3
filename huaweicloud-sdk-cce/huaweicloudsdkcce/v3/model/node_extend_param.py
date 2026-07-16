@@ -85,13 +85,13 @@ class NodeExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param ecsperformancetype: 云服务器规格的分类。响应中会返回此字段。
+        :param ecsperformancetype: **参数解释**： 云服务器规格的分类。响应中会返回此字段。 **约束限制**： 不涉及 **取值范围**： 请参考ECS API参考手册中“查询规格详情和规格扩展信息列表”接口的ecs:performancetype参数说明，以了解云服务器的规格类型。   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212656.html)](tag:hws)   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212656.html)](tag:hws_hk) **默认取值**： 不涉及
         :type ecsperformancetype: str
         :param order_id: **参数解释**： 订单ID。 **约束限制**： 节点付费类型为自动付费包周期类型时，响应中会返回此字段(仅创建场景涉及)，节点池场景响应返回中无该参数。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type order_id: str
         :param product_id: **参数解释**： 产品ID。 **约束限制**： 节点付费类型为自动付费包周期类型或者节点池类型是包周期节点池时，响应中会返回此字段。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type product_id: str
-        :param max_pods: 节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，取值范围为16~256。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
+        :param max_pods: 节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，通用取值范围为16~256，节点运行时子类别为安全运行时v2(kuasar-vmm)场景取值范围为16~1024。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
         :type max_pods: int
         :param period_type: - month：月 - year：年 &gt; 作为请求参数，billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 &gt; 作为响应参数，仅在创建包周期节点时返回。 
         :type period_type: str
@@ -246,7 +246,7 @@ class NodeExtendParam:
     def ecsperformancetype(self):
         r"""Gets the ecsperformancetype of this NodeExtendParam.
 
-        云服务器规格的分类。响应中会返回此字段。
+        **参数解释**： 云服务器规格的分类。响应中会返回此字段。 **约束限制**： 不涉及 **取值范围**： 请参考ECS API参考手册中“查询规格详情和规格扩展信息列表”接口的ecs:performancetype参数说明，以了解云服务器的规格类型。   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212656.html)](tag:hws)   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212656.html)](tag:hws_hk) **默认取值**： 不涉及
 
         :return: The ecsperformancetype of this NodeExtendParam.
         :rtype: str
@@ -257,7 +257,7 @@ class NodeExtendParam:
     def ecsperformancetype(self, ecsperformancetype):
         r"""Sets the ecsperformancetype of this NodeExtendParam.
 
-        云服务器规格的分类。响应中会返回此字段。
+        **参数解释**： 云服务器规格的分类。响应中会返回此字段。 **约束限制**： 不涉及 **取值范围**： 请参考ECS API参考手册中“查询规格详情和规格扩展信息列表”接口的ecs:performancetype参数说明，以了解云服务器的规格类型。   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212656.html)](tag:hws)   [链接请参见[查询规格详情和规格扩展信息列表](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212656.html)](tag:hws_hk) **默认取值**： 不涉及
 
         :param ecsperformancetype: The ecsperformancetype of this NodeExtendParam.
         :type ecsperformancetype: str
@@ -312,7 +312,7 @@ class NodeExtendParam:
     def max_pods(self):
         r"""Gets the max_pods of this NodeExtendParam.
 
-        节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，取值范围为16~256。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
+        节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，通用取值范围为16~256，节点运行时子类别为安全运行时v2(kuasar-vmm)场景取值范围为16~1024。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
 
         :return: The max_pods of this NodeExtendParam.
         :rtype: int
@@ -323,7 +323,7 @@ class NodeExtendParam:
     def max_pods(self, max_pods):
         r"""Sets the max_pods of this NodeExtendParam.
 
-        节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，取值范围为16~256。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
+        节点最大允许创建的实例数(Pod)，该数量包含系统默认实例，通用取值范围为16~256，节点运行时子类别为安全运行时v2(kuasar-vmm)场景取值范围为16~1024。  该设置的目的为防止节点因管理过多实例而负载过重，请根据您的业务需要进行设置。  节点可以创建多少个Pod，受多个参数影响，具体请参见[节点最多可以创建多少Pod](maxPods.xml)。 
 
         :param max_pods: The max_pods of this NodeExtendParam.
         :type max_pods: int

@@ -47,11 +47,11 @@ class ReleaseReqBodyParams:
         :type name_template: str
         :param no_hooks: 安装时是否禁用hooks
         :type no_hooks: bool
-        :param replace: 是否替换同名实例
+        :param replace: 模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
         :type replace: bool
-        :param recreate: 是否重建实例
+        :param recreate: 模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
         :type recreate: bool
-        :param reset_values: 更新时是否重置values
+        :param reset_values: 模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
         :type reset_values: bool
         :param release_version: 回滚实例的版本
         :type release_version: int
@@ -158,7 +158,7 @@ class ReleaseReqBodyParams:
     def replace(self):
         r"""Gets the replace of this ReleaseReqBodyParams.
 
-        是否替换同名实例
+        模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
 
         :return: The replace of this ReleaseReqBodyParams.
         :rtype: bool
@@ -169,7 +169,7 @@ class ReleaseReqBodyParams:
     def replace(self, replace):
         r"""Sets the replace of this ReleaseReqBodyParams.
 
-        是否替换同名实例
+        模板实例更新时是否保留values，该字段仅在更新指定模板实例时生效
 
         :param replace: The replace of this ReleaseReqBodyParams.
         :type replace: bool
@@ -180,7 +180,7 @@ class ReleaseReqBodyParams:
     def recreate(self):
         r"""Gets the recreate of this ReleaseReqBodyParams.
 
-        是否重建实例
+        模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
 
         :return: The recreate of this ReleaseReqBodyParams.
         :rtype: bool
@@ -191,7 +191,7 @@ class ReleaseReqBodyParams:
     def recreate(self, recreate):
         r"""Sets the recreate of this ReleaseReqBodyParams.
 
-        是否重建实例
+        模板实例更新时是否重建实例，该字段仅在更新指定模板实例时生效
 
         :param recreate: The recreate of this ReleaseReqBodyParams.
         :type recreate: bool
@@ -202,7 +202,7 @@ class ReleaseReqBodyParams:
     def reset_values(self):
         r"""Gets the reset_values of this ReleaseReqBodyParams.
 
-        更新时是否重置values
+        模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
 
         :return: The reset_values of this ReleaseReqBodyParams.
         :rtype: bool
@@ -213,7 +213,7 @@ class ReleaseReqBodyParams:
     def reset_values(self, reset_values):
         r"""Sets the reset_values of this ReleaseReqBodyParams.
 
-        更新时是否重置values
+        模板实例更新时是否重置values，该字段仅在更新指定模板实例时生效
 
         :param reset_values: The reset_values of this ReleaseReqBodyParams.
         :type reset_values: bool

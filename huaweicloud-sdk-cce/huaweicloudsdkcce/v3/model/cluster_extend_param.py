@@ -61,7 +61,7 @@ class ClusterExtendParam:
         :type dss_master_volumes: str
         :param enterprise_project_id: 集群所属的企业项目ID。 &gt;   - 需要开通企业项目功能后才可配置企业项目。 &gt;   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
         :type enterprise_project_id: str
-        :param kube_proxy_mode: 服务转发模式，支持以下两种实现：  - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  &gt; 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
+        :param kube_proxy_mode: 服务转发模式，支持以下三种实现：  - nftables：仅1.35集群及以上版本支持。替代iptables的新一代转发模式，规则管理高效、性能更优，原生支持IPv6，适配各类Service规模与集群场景，兼顾高并发短链接与大规模集群需求。 - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  &gt; 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
         :type kube_proxy_mode: str
         :param cluster_external_ip: **参数解释：** 集群控制节点弹性公网IP，绑定后可以通过该弹性公网IP访问集群管控面API。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type cluster_external_ip: str
@@ -207,7 +207,7 @@ class ClusterExtendParam:
     def kube_proxy_mode(self):
         r"""Gets the kube_proxy_mode of this ClusterExtendParam.
 
-        服务转发模式，支持以下两种实现：  - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  > 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
+        服务转发模式，支持以下三种实现：  - nftables：仅1.35集群及以上版本支持。替代iptables的新一代转发模式，规则管理高效、性能更优，原生支持IPv6，适配各类Service规模与集群场景，兼顾高并发短链接与大规模集群需求。 - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  > 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
 
         :return: The kube_proxy_mode of this ClusterExtendParam.
         :rtype: str
@@ -218,7 +218,7 @@ class ClusterExtendParam:
     def kube_proxy_mode(self, kube_proxy_mode):
         r"""Sets the kube_proxy_mode of this ClusterExtendParam.
 
-        服务转发模式，支持以下两种实现：  - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  > 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
+        服务转发模式，支持以下三种实现：  - nftables：仅1.35集群及以上版本支持。替代iptables的新一代转发模式，规则管理高效、性能更优，原生支持IPv6，适配各类Service规模与集群场景，兼顾高并发短链接与大规模集群需求。 - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  > 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
 
         :param kube_proxy_mode: The kube_proxy_mode of this ClusterExtendParam.
         :type kube_proxy_mode: str

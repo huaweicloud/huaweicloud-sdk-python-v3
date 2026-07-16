@@ -39,9 +39,9 @@ class SnapshotSpecItems:
 
         :param id: 子任务ID
         :type id: str
-        :param type: 子任务类型
+        :param type: **参数解释**： 子任务类型 **取值范围**： - master-backup：集群EVS备份 - master-backup-rollback：集群EVS回滚 **默认取值**： 不涉及
         :type type: str
-        :param status: 状态
+        :param status: **参数解释**： 状态 **取值范围**： - Init：初始化 - Queuing：等待 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败 **默认取值**： 不涉及
         :type status: str
         :param creation_timestamp: 任务创建时间
         :type creation_timestamp: str
@@ -100,7 +100,7 @@ class SnapshotSpecItems:
     def type(self):
         r"""Gets the type of this SnapshotSpecItems.
 
-        子任务类型
+        **参数解释**： 子任务类型 **取值范围**： - master-backup：集群EVS备份 - master-backup-rollback：集群EVS回滚 **默认取值**： 不涉及
 
         :return: The type of this SnapshotSpecItems.
         :rtype: str
@@ -111,7 +111,7 @@ class SnapshotSpecItems:
     def type(self, type):
         r"""Sets the type of this SnapshotSpecItems.
 
-        子任务类型
+        **参数解释**： 子任务类型 **取值范围**： - master-backup：集群EVS备份 - master-backup-rollback：集群EVS回滚 **默认取值**： 不涉及
 
         :param type: The type of this SnapshotSpecItems.
         :type type: str
@@ -122,7 +122,7 @@ class SnapshotSpecItems:
     def status(self):
         r"""Gets the status of this SnapshotSpecItems.
 
-        状态
+        **参数解释**： 状态 **取值范围**： - Init：初始化 - Queuing：等待 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败 **默认取值**： 不涉及
 
         :return: The status of this SnapshotSpecItems.
         :rtype: str
@@ -133,7 +133,7 @@ class SnapshotSpecItems:
     def status(self, status):
         r"""Sets the status of this SnapshotSpecItems.
 
-        状态
+        **参数解释**： 状态 **取值范围**： - Init：初始化 - Queuing：等待 - Running：运行中 - Pause：暂停 - Success：成功 - Failed：失败 **默认取值**： 不涉及
 
         :param status: The status of this SnapshotSpecItems.
         :type status: str

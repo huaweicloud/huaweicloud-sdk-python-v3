@@ -37,9 +37,9 @@ class NodeInfo:
         :type uid: str
         :param name: 节点名称
         :type name: str
-        :param status: 状态
+        :param status: **参数解释**： 节点状态 **取值范围**： - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。 **默认取值**： 不涉及
         :type status: str
-        :param node_type: 节点类型
+        :param node_type: **参数解释**： 节点类型 **取值范围**： - master：控制面节点 - node：数据面节点 **默认取值**： 不涉及
         :type node_type: str
         """
         
@@ -108,7 +108,7 @@ class NodeInfo:
     def status(self):
         r"""Gets the status of this NodeInfo.
 
-        状态
+        **参数解释**： 节点状态 **取值范围**： - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。 **默认取值**： 不涉及
 
         :return: The status of this NodeInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class NodeInfo:
     def status(self, status):
         r"""Sets the status of this NodeInfo.
 
-        状态
+        **参数解释**： 节点状态 **取值范围**： - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。 **默认取值**： 不涉及
 
         :param status: The status of this NodeInfo.
         :type status: str
@@ -130,7 +130,7 @@ class NodeInfo:
     def node_type(self):
         r"""Gets the node_type of this NodeInfo.
 
-        节点类型
+        **参数解释**： 节点类型 **取值范围**： - master：控制面节点 - node：数据面节点 **默认取值**： 不涉及
 
         :return: The node_type of this NodeInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class NodeInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this NodeInfo.
 
-        节点类型
+        **参数解释**： 节点类型 **取值范围**： - master：控制面节点 - node：数据面节点 **默认取值**： 不涉及
 
         :param node_type: The node_type of this NodeInfo.
         :type node_type: str

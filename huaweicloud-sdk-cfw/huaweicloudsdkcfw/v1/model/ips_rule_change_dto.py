@@ -46,12 +46,9 @@ class IpsRuleChangeDto:
         self._status = None
         self.discriminator = None
 
-        if ips_ids is not None:
-            self.ips_ids = ips_ids
-        if object_id is not None:
-            self.object_id = object_id
-        if status is not None:
-            self.status = status
+        self.ips_ids = ips_ids
+        self.object_id = object_id
+        self.status = status
 
     @property
     def ips_ids(self):

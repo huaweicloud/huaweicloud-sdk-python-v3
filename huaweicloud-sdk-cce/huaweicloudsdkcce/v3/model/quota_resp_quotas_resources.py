@@ -31,7 +31,7 @@ class QuotaRespQuotasResources:
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型
+        :param type: **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
         :type type: str
         :param quota: 配额
         :type quota: int
@@ -57,7 +57,7 @@ class QuotaRespQuotasResources:
     def type(self):
         r"""Gets the type of this QuotaRespQuotasResources.
 
-        类型
+        **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
 
         :return: The type of this QuotaRespQuotasResources.
         :rtype: str
@@ -68,7 +68,7 @@ class QuotaRespQuotasResources:
     def type(self, type):
         r"""Sets the type of this QuotaRespQuotasResources.
 
-        类型
+        **参数解释**： 类型 **取值范围**： - Charts：配额类型为模板 
 
         :param type: The type of this QuotaRespQuotasResources.
         :type type: str

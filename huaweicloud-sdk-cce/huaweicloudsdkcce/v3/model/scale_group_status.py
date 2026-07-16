@@ -22,6 +22,7 @@ class ScaleGroupStatus:
         'phase': 'str',
         'desired_node_count': 'int',
         'unpaid_scale_node_count': 'int',
+        'active_node_count': 'int',
         'existing_node_count': 'ScaleGroupStatusExistingNodeCount',
         'upcoming_node_count': 'ScaleGroupStatusUpcomingNodeCount',
         'scale_down_disabled_node_count': 'int',
@@ -36,13 +37,14 @@ class ScaleGroupStatus:
         'phase': 'phase',
         'desired_node_count': 'desiredNodeCount',
         'unpaid_scale_node_count': 'unpaidScaleNodeCount',
+        'active_node_count': 'activeNodeCount',
         'existing_node_count': 'existingNodeCount',
         'upcoming_node_count': 'upcomingNodeCount',
         'scale_down_disabled_node_count': 'scaleDownDisabledNodeCount',
         'conditions': 'conditions'
     }
 
-    def __init__(self, name=None, uid=None, creation_timestamp=None, update_timestamp=None, phase=None, desired_node_count=None, unpaid_scale_node_count=None, existing_node_count=None, upcoming_node_count=None, scale_down_disabled_node_count=None, conditions=None):
+    def __init__(self, name=None, uid=None, creation_timestamp=None, update_timestamp=None, phase=None, desired_node_count=None, unpaid_scale_node_count=None, active_node_count=None, existing_node_count=None, upcoming_node_count=None, scale_down_disabled_node_count=None, conditions=None):
         r"""ScaleGroupStatus
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ScaleGroupStatus:
         :type desired_node_count: int
         :param unpaid_scale_node_count: 订单未支付节点个数
         :type unpaid_scale_node_count: int
+        :param active_node_count: **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+        :type active_node_count: int
         :param existing_node_count: 
         :type existing_node_count: :class:`huaweicloudsdkcce.v3.ScaleGroupStatusExistingNodeCount`
         :param upcoming_node_count: 
@@ -80,6 +84,7 @@ class ScaleGroupStatus:
         self._phase = None
         self._desired_node_count = None
         self._unpaid_scale_node_count = None
+        self._active_node_count = None
         self._existing_node_count = None
         self._upcoming_node_count = None
         self._scale_down_disabled_node_count = None
@@ -100,6 +105,8 @@ class ScaleGroupStatus:
             self.desired_node_count = desired_node_count
         if unpaid_scale_node_count is not None:
             self.unpaid_scale_node_count = unpaid_scale_node_count
+        if active_node_count is not None:
+            self.active_node_count = active_node_count
         if existing_node_count is not None:
             self.existing_node_count = existing_node_count
         if upcoming_node_count is not None:
@@ -262,6 +269,28 @@ class ScaleGroupStatus:
         :type unpaid_scale_node_count: int
         """
         self._unpaid_scale_node_count = unpaid_scale_node_count
+
+    @property
+    def active_node_count(self):
+        r"""Gets the active_node_count of this ScaleGroupStatus.
+
+        **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+
+        :return: The active_node_count of this ScaleGroupStatus.
+        :rtype: int
+        """
+        return self._active_node_count
+
+    @active_node_count.setter
+    def active_node_count(self, active_node_count):
+        r"""Sets the active_node_count of this ScaleGroupStatus.
+
+        **参数解释**： 伸缩组就绪节点个数 **取值范围**： 不涉及
+
+        :param active_node_count: The active_node_count of this ScaleGroupStatus.
+        :type active_node_count: int
+        """
+        self._active_node_count = active_node_count
 
     @property
     def existing_node_count(self):

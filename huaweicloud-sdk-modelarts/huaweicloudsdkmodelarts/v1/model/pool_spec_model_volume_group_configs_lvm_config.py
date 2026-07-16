@@ -1,0 +1,108 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class PoolSpecModelVolumeGroupConfigsLvmConfig:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'lv_type': 'str'
+    }
+
+    attribute_map = {
+        'lv_type': 'lvType'
+    }
+
+    def __init__(self, lv_type=None):
+        r"""PoolSpecModelVolumeGroupConfigsLvmConfig
+
+        The model defined in huaweicloud sdk
+
+        :param lv_type: **参数解释**：LVM写入模式 **取值范围**：可选项如下： - linear：线性模式。 - striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
+        :type lv_type: str
+        """
+        
+        
+
+        self._lv_type = None
+        self.discriminator = None
+
+        if lv_type is not None:
+            self.lv_type = lv_type
+
+    @property
+    def lv_type(self):
+        r"""Gets the lv_type of this PoolSpecModelVolumeGroupConfigsLvmConfig.
+
+        **参数解释**：LVM写入模式 **取值范围**：可选项如下： - linear：线性模式。 - striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
+
+        :return: The lv_type of this PoolSpecModelVolumeGroupConfigsLvmConfig.
+        :rtype: str
+        """
+        return self._lv_type
+
+    @lv_type.setter
+    def lv_type(self, lv_type):
+        r"""Sets the lv_type of this PoolSpecModelVolumeGroupConfigsLvmConfig.
+
+        **参数解释**：LVM写入模式 **取值范围**：可选项如下： - linear：线性模式。 - striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
+
+        :param lv_type: The lv_type of this PoolSpecModelVolumeGroupConfigsLvmConfig.
+        :type lv_type: str
+        """
+        self._lv_type = lv_type
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, PoolSpecModelVolumeGroupConfigsLvmConfig):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

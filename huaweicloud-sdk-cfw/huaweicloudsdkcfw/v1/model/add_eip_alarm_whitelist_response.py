@@ -16,7 +16,7 @@ class AddEipAlarmWhitelistResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object'
+        'data': 'AddEipAlarmWhitelistRespData'
     }
 
     attribute_map = {
@@ -28,8 +28,8 @@ class AddEipAlarmWhitelistResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: **参数解释**： 添加EIP告警白名单响应data **取值范围**： 不涉及
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkcfw.v1.AddEipAlarmWhitelistRespData`
         """
         
         super().__init__()
@@ -44,10 +44,8 @@ class AddEipAlarmWhitelistResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this AddEipAlarmWhitelistResponse.
 
-        **参数解释**： 添加EIP告警白名单响应data **取值范围**： 不涉及
-
         :return: The data of this AddEipAlarmWhitelistResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcfw.v1.AddEipAlarmWhitelistRespData`
         """
         return self._data
 
@@ -55,10 +53,8 @@ class AddEipAlarmWhitelistResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this AddEipAlarmWhitelistResponse.
 
-        **参数解释**： 添加EIP告警白名单响应data **取值范围**： 不涉及
-
         :param data: The data of this AddEipAlarmWhitelistResponse.
-        :type data: object
+        :type data: :class:`huaweicloudsdkcfw.v1.AddEipAlarmWhitelistRespData`
         """
         self._data = data
 

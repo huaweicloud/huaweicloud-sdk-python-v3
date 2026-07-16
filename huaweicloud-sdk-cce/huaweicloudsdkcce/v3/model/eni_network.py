@@ -50,7 +50,8 @@ class EniNetwork:
             self.eni_subnet_id = eni_subnet_id
         if eni_subnet_cidr is not None:
             self.eni_subnet_cidr = eni_subnet_cidr
-        self.subnets = subnets
+        if subnets is not None:
+            self.subnets = subnets
 
     @property
     def eni_subnet_id(self):

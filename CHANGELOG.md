@@ -1,3 +1,416 @@
+# 3.1.206 2026-07-16
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListCoreRuntimes`
+    - `CreateCoreRuntime`
+    - `ShowCoreRuntime`
+    - `UpdateCoreRuntime`
+    - `DeleteCoreRuntime`
+    - `ListCoreIngresses`
+    - `CreateCoreIngress`
+    - `ShowCoreIngress`
+    - `UpdateCoreIngress`
+    - `DeleteCoreIngress`
+    - `ListCoreIngressNetworks`
+    - `CreateCoreIngressNetwork`
+    - `ShowCoreIngressNetwork`
+    - `DeleteCoreIngressNetwork`
+    - `ListCoreRuntimeEndpoints`
+    - `CreateCoreRuntimeEndpoint`
+    - `ShowCoreRuntimeEndpoint`
+    - `UpdateCoreRuntimeEndpoint`
+    - `DeleteCoreRuntimeEndpoint`
+    - `ListCoreRuntimeVersions`
+    - `ShowOpsAgentMetric`
+    - `ListOpsAgentObservation`
+    - `CreateOpsAgentObservation`
+    - `UpdateOpsAgentObservation`
+    - `DeleteOpsAgentObservation`
+    - `ShowOpsAgentMetricTrend`
+    - `ShowOpsAgentMetricTopN`
+    - `ShowOpsAgentMetricGauge`
+    - `ListOpsAgentSpanMetric`
+    - `TagOpsTraceLabel`
+    - `UpdateOpsTraceFeedback`
+    - `ListOpsSession`
+    - `ShowOpsSession`
+    - `ListOpsTrace`
+    - `ShowOpsTrace`
+    - `ShowOpsSubscriptionInfo`
+    - `ShowOpsSubscriptionApmInfo`
+    - `ShowOpsSubscriptionAomInfo`
+    - `ShowOpsSubscriptionLtsInfo`
+    - `ShowOpsTraceTopology`
+    - `ListOpsAgentLog`
+    - `ListOpsAgentRuntLog`
+    - `ListOpsAgentMetricLabelValues`
+    - `ListOpsDatasets`
+    - `CreateOpsDataset`
+    - `BatchDeleteOpsDatasets`
+    - `ShowOpsDataset`
+    - `UpdateOpsDataset`
+    - `DeleteOpsDataset`
+    - `ListOpsDatasetSchemas`
+    - `ListOpsDatasetItems`
+    - `BatchCreateOpsDatasetItems`
+    - `BatchDeleteOpsDatasetItems`
+    - `ShowOpsDatasetItem`
+    - `UpdateOpsDatasetItem`
+    - `ListOpsDatasetVersions`
+    - `PublishOpsDatasetVersion`
+    - `ShowOpsDatasetVersion`
+    - `DeleteOpsDatasetVersion`
+    - `ImportOpsDatasetItems`
+    - `ListOpsDatasetItemsImportTasks`
+    - `ListOpsSynthesisTasks`
+    - `CreateOpsSynthesisTask`
+    - `BatchDeleteOpsSynthesisTasks`
+    - `ShowOpsSynthesisTask`
+    - `UpdateOpsSynthesisTask`
+    - `DeleteOpsSynthesisTask`
+    - `ListOpsSynthesisItems`
+    - `ImportOpsResults`
+    - `UpdateOpsDatasetTags`
+    - `CreateOpsEvaluator`
+    - `BatchDeleteOpsEvaluator`
+    - `ListOpsEvaluators`
+    - `ShowOpsEvaluator`
+    - `DeleteOpsEvaluator`
+    - `ListOpsEvaluatorVersions`
+    - `PublishOpsEvaluatorVersion`
+    - `ShowOpsEvaluatorVersion`
+    - `DeleteOpsEvaluatorVersion`
+    - `ListOpsEvaluationModels`
+    - `ShowOpsEvaluationModel`
+    - `DebugOpsEvaluator`
+    - `GenerateOpsEvaluatorEvaluationSteps`
+    - `ListOpsEvaluatorFilterOptions`
+    - `UpdateOpsEvaluatorTags`
+    - `ListOpsEvaluatorTemplates`
+    - `ShowOpsEvaluatorTemplate`
+    - `CheckOpsEvaluationTaskName`
+    - `ListOpsEvaluationTasks`
+    - `ListOpsEvaluationTaskResults`
+    - `UpdateOpsEvaluationTaskResult`
+    - `ShowOpsEvaluationTaskChartsStatus`
+    - `ShowOpsEvaluationTaskChartsScoreStats`
+    - `ShowOpsEvaluationTaskChartsLabelsDistribution`
+    - `ShowOpsEvaluationTaskChartsScoreDistribution`
+    - `DeleteOpsEvaluationTaskCustomLabels`
+    - `ListOpsLabels`
+    - `CreateOpsLabel`
+    - `ShowOpsLabel`
+    - `UpdateOpsLabel`
+    - `ShowOpsQuota`
+    - `CreateOpsEvaluationTask`
+    - `BatchDeleteOpsEvaluationTasks`
+    - `ShowOpsEvaluationTask`
+    - `StopOpsEvaluationTask`
+    - `ListOpsEvaluationTaskCustomLabelValues`
+    - `BatchUpdateOpsEvaluationTaskCustomLabelValues`
+    - `BatchAddOpsEvaluationTaskCustomLabelValues`
+    - `DeleteOpsEvaluationTaskCustomLabelValues`
+    - `UpdateOpsEvaluationTaskTags`
+    - `ListOpsEvaluationTaskCustomLabels`
+    - `BatchAddOpsEvaluationTaskCustomLabels`
+    - `ShowOpsEvaluationTasksCompareResult`
+    - `ShowOpsEvaluationTasksChartsCompareResult`
+    - `SyncCoreGatewayTargets`
+    - `ListCoreGatewayTargets`
+    - `CreateCoreGatewayTarget`
+    - `ShowCoreGatewayTarget`
+    - `UpdateCoreGatewayTarget`
+    - `DeleteCoreGatewayTarget`
+    - `ListCoreGatewayQuotas`
+    - `ListCoreGatewaysByTags`
+    - `ShowCoreGatewayNumsByTags`
+    - `BatchCreateCoreGatewayTags`
+    - `BatchDeleteCoreGatewayTags`
+    - `ListCoreGatewayTags`
+    - `ListAllCoreGatewayTags`
+    - `ListCoreCodeInterpreters`
+    - `CreateCoreCodeInterpreter`
+    - `ShowCoreCodeInterpreter`
+    - `UpdateCoreCodeInterpreter`
+    - `DeleteCoreCodeInterpreter`
+    - `ListCoreSpaces`
+    - `CreateCoreSpace`
+    - `ShowCoreSpace`
+    - `UpdateCoreSpace`
+    - `DeleteCoreSpace`
+    - `ListCoreSpaceBuiltinStrategies`
+    - `CreateCoreSpaceCustomizedStrategy`
+    - `UpdateCoreSpaceCustomizedStrategy`
+    - `DeleteCoreSpaceCustomizedStrategy`
+    - `CreateCoreSpaceApiKey`
+    - `ResetCoreSpaceApiKey`
+    - `UpdateCoreSpaceNetwork`
+    - `ListCoreSpaceJobs`
+    - `ShowCoreSpaceJob`
+    - `ListCoreSpaceMemories`
+    - `SearchCoreSpaceMemories`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `RotateClusterCredentials`
+    - `RotateNodeCert`
+    - `BatchChangeNodeToPeriod`
+    - `ListPodIdentityAssociations`
+    - `CreatePodIdentityAssociation`
+    - `ShowPodIdentityAssociation`
+    - `UpdatePodIdentityAssociation`
+    - `DeletePodIdentityAssociation`
+    - `AssumeAgencyForPodIdentity`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteAutopilotRelease**
+    - changes of request param
+      - `+ show_resources`
+  - **ShowAutopilotRelease**
+    - changes of request param
+      - `+ show_resources`
+  - **UpdateAutopilotRelease**
+    - changes of request param
+      - `+ show_resources`
+  - **ShowCluster**
+    - changes of response param
+      - `+ status.conditions`
+      - `+ spec.certificateAuthority`
+      - `+ spec.kubeProxyMode: enum value [nftables]`
+  - **UpdateCluster**
+    - changes of response param
+      - `+ status.conditions`
+      - `+ spec.certificateAuthority`
+      - `+ spec.kubeProxyMode: enum value [nftables]`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ status.conditions`
+      - `+ spec.certificateAuthority`
+      - `+ spec.kubeProxyMode: enum value [nftables]`
+  - **MigrateNode**
+    - changes of request param
+      - `+ spec.runtime.runtimeClass`
+    - changes of response param
+      - `+ spec.runtime.runtimeClass`
+  - **CreateCluster**
+    - changes of request param
+      - `+ status.conditions`
+      - `+ spec.certificateAuthority`
+      - `+ spec.kubeProxyMode: enum value [nftables]`
+    - changes of response param
+      - `+ status.conditions`
+      - `+ spec.certificateAuthority`
+      - `+ spec.kubeProxyMode: enum value [nftables]`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.status.conditions`
+      - `+ items.spec.certificateAuthority`
+      - `+ items.spec.kubeProxyMode: enum value [nftables]`
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.runtime.runtimeClass`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.runtime.runtimeClass`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.runtime.runtimeClass`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.runtime.runtimeClass`
+    - changes of response param
+      - `+ spec.runtime.runtimeClass`
+  - **ListNodes**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ pageInfo`
+      - `+ items.spec.runtime.runtimeClass`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ status.activeNode`
+      - `+ status.scaleGroupStatuses.activeNodeCount`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+  - **UpdateNodePool**
+    - changes of request param
+      - `+ spec.customSecurityGroups`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+    - changes of response param
+      - `+ status.activeNode`
+      - `+ status.scaleGroupStatuses.activeNodeCount`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ status.activeNode`
+      - `+ status.scaleGroupStatuses.activeNodeCount`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+  - **UpgradeNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+  - **AddNode**
+    - changes of request param
+      - `+ nodeList.spec.runtimeConfig.runtime.runtimeClass`
+  - **ResetNode**
+    - changes of request param
+      - `+ nodeList.spec.runtimeConfig.runtime.runtimeClass`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ status.activeNode`
+      - `+ status.scaleGroupStatuses.activeNodeCount`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+    - changes of response param
+      - `+ status.activeNode`
+      - `+ status.scaleGroupStatuses.activeNodeCount`
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.status.activeNode`
+      - `+ items.status.scaleGroupStatuses.activeNodeCount`
+      - `+ items.spec.nodeTemplate.runtime.runtimeClass`
+  - **ListHyperNodes**
+    - changes of response param
+      - `+ spec.nodeTemplate.runtime.runtimeClass`
+
+### HuaweiCloud SDK CFW
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteDomainSet**
+    - changes of response param
+      - `+ data.responseDatas`
+      - `* data: map<string, list<Map«string,string»>> -> object<DeleteDomainSetResponseDatas>`
+  - **UpdateObjectConfigDesc**
+    - changes of response param
+      - `* data: object -> string`
+  - **ListRegions**
+    - changes of response param
+      - `* data.region_type: string -> integer`
+      - `* data.superior_region_id: int32 -> string`
+  - **AddEipAlarmWhitelist**
+    - changes of response param
+      - `+ data.id`
+      - `* data: object -> object<AddEipAlarmWhitelistRespData>`
+  - **BatchRemoveAccounts**
+    - changes of response param
+      - `+ data.trust_service_status`
+  - **ListBlackWhiteLists**
+    - changes of response param
+      - `* data.records.created_date: string -> int32`
+      - `* data.records.modified_date: string -> int32`
+  - **ListDomains**
+    - changes of request param
+      - `- object_Id`
+  - **ShowAccessTop**
+    - changes of response param
+      - `+ data.all_hit_rule_list`
+  - **ShowAccessDetail**
+    - changes of response param
+      - `+ data.all_session_count`
+      - `+ data.session_count`
+  - **BatchAddAccounts**
+    - changes of response param
+      - `+ data.trust_service_status`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInferDeploymentHpa**
+    - changes of response param
+      - `- type`
+  - **UpdateInferDeploymentHpa**
+    - changes of response param
+      - `- type`
+  - **CreateInferDeploymentHpa**
+    - changes of response param
+      - `- type`
+  - **DeleteInferDeploymentHpa**
+    - changes of response param
+      - `- type`
+  - **ShowPoolNodeConfigTemplate**
+    - changes of response param
+      - `+ apiVersion`
+      - `- apiversion`
+  - **ListFlavors**
+    - changes of response param
+      - `+ data.arch: enum value [x86_64,aarch64]`
+      - `- data.arch: enum value [AARCH64,X86_64]`
+  - **ShowSwitchableFlavors**
+    - changes of response param
+      - `+ data.arch: enum value [x86_64,aarch64]`
+      - `- data.arch: enum value [AARCH64,X86_64]`
+  - **ListWorkloads**
+    - changes of response param
+      - `+ items.resourceRequirement.huawei.com/ascend-310`
+      - `+ items.resourceRequirement.huawei.com/ascend-1980`
+      - `- items.resourceRequirement.huawei.com/ascend-snt3`
+      - `- items.resourceRequirement.huawei.com/ascend-snt9`
+  - **ShowTrainingJobDetails**
+    - changes of response param
+      - `+ spec.output_model.obs.obs_path`
+      - `- spec.output_model.obs.obs_url`
+  - **StopTrainingJob**
+    - changes of response param
+      - `+ spec.output_model.obs.obs_path`
+      - `- spec.output_model.obs.obs_url`
+  - **CreateTrainingJob**
+    - changes of request param
+      - `+ spec.output_model.obs.obs_path`
+      - `- spec.output_model.obs.obs_url`
+      - `* spec.output_model.obs: object<ObsModelResp> -> object<ObsModel>`
+    - changes of response param
+      - `+ spec.output_model.obs.obs_path`
+      - `- spec.output_model.obs.obs_url`
+  - **ListTrainingJobs**
+    - changes of request param
+      - `- unified_jobs`
+    - changes of response param
+      - `- unified_jobs`
+      - `+ items.spec.output_model.obs.obs_path`
+      - `- items.spec.output_model.obs.obs_url`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeTransportationLicense**
+    - changes of response param
+      - `+ result.is_temporary_certificate`
+  - **RecognizeVatInvoice**
+    - changes of response param
+      - `+ result.total_pages`
+      - `+ result.current_page`
+
 # 3.1.205 2026-07-14
 
 ### HuaweiCloud SDK CBH

@@ -1,0 +1,165 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ShowAutoSearchTrialsRequest:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'training_job_id': 'str',
+        'limit': 'int',
+        'offset': 'int'
+    }
+
+    attribute_map = {
+        'training_job_id': 'training_job_id',
+        'limit': 'limit',
+        'offset': 'offset'
+    }
+
+    def __init__(self, training_job_id=None, limit=None, offset=None):
+        r"""ShowAutoSearchTrialsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param training_job_id: 训练作业ID。获取方法请参见[查询训练作业列表](ListTrainingJobs.xml)。
+        :type training_job_id: str
+        :param limit: 返回的数据条目数。
+        :type limit: int
+        :param offset: 数据条目偏移量。
+        :type offset: int
+        """
+        
+        
+
+        self._training_job_id = None
+        self._limit = None
+        self._offset = None
+        self.discriminator = None
+
+        self.training_job_id = training_job_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def training_job_id(self):
+        r"""Gets the training_job_id of this ShowAutoSearchTrialsRequest.
+
+        训练作业ID。获取方法请参见[查询训练作业列表](ListTrainingJobs.xml)。
+
+        :return: The training_job_id of this ShowAutoSearchTrialsRequest.
+        :rtype: str
+        """
+        return self._training_job_id
+
+    @training_job_id.setter
+    def training_job_id(self, training_job_id):
+        r"""Sets the training_job_id of this ShowAutoSearchTrialsRequest.
+
+        训练作业ID。获取方法请参见[查询训练作业列表](ListTrainingJobs.xml)。
+
+        :param training_job_id: The training_job_id of this ShowAutoSearchTrialsRequest.
+        :type training_job_id: str
+        """
+        self._training_job_id = training_job_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowAutoSearchTrialsRequest.
+
+        返回的数据条目数。
+
+        :return: The limit of this ShowAutoSearchTrialsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowAutoSearchTrialsRequest.
+
+        返回的数据条目数。
+
+        :param limit: The limit of this ShowAutoSearchTrialsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowAutoSearchTrialsRequest.
+
+        数据条目偏移量。
+
+        :return: The offset of this ShowAutoSearchTrialsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowAutoSearchTrialsRequest.
+
+        数据条目偏移量。
+
+        :param offset: The offset of this ShowAutoSearchTrialsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ShowAutoSearchTrialsRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other
