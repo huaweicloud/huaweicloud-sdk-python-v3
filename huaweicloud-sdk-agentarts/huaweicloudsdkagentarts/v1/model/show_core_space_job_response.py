@@ -16,47 +16,109 @@ class ShowCoreSpaceJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'GetCoreSpaceJobResponseBody'
+        'id': 'str',
+        'job_name': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'id': 'id',
+        'job_name': 'job_name',
+        'status': 'status'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, id=None, job_name=None, status=None):
         r"""ShowCoreSpaceJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: :class:`huaweicloudsdkagentarts.v1.GetCoreSpaceJobResponseBody`
+        :param id: **参数解释：** 异步任务 ID，唯一标识一个异步任务，可通过创建异步任务的接口返回获取。 **取值范围：** 不涉及。 
+        :type id: str
+        :param job_name: **参数解释：** 异步任务名称，标识任务的类型。 **取值范围：** - create_space: 创建记忆库 - update_network: 更新网络配置 
+        :type job_name: str
+        :param status: **参数解释：** 异步任务的当前执行状态。 **取值范围：** - running: 执行中 - success: 成功 - failed: 失败 
+        :type status: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._id = None
+        self._job_name = None
+        self._status = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if id is not None:
+            self.id = id
+        if job_name is not None:
+            self.job_name = job_name
+        if status is not None:
+            self.status = status
 
     @property
-    def body(self):
-        r"""Gets the body of this ShowCoreSpaceJobResponse.
+    def id(self):
+        r"""Gets the id of this ShowCoreSpaceJobResponse.
 
-        :return: The body of this ShowCoreSpaceJobResponse.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.GetCoreSpaceJobResponseBody`
+        **参数解释：** 异步任务 ID，唯一标识一个异步任务，可通过创建异步任务的接口返回获取。 **取值范围：** 不涉及。 
+
+        :return: The id of this ShowCoreSpaceJobResponse.
+        :rtype: str
         """
-        return self._body
+        return self._id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ShowCoreSpaceJobResponse.
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ShowCoreSpaceJobResponse.
 
-        :param body: The body of this ShowCoreSpaceJobResponse.
-        :type body: :class:`huaweicloudsdkagentarts.v1.GetCoreSpaceJobResponseBody`
+        **参数解释：** 异步任务 ID，唯一标识一个异步任务，可通过创建异步任务的接口返回获取。 **取值范围：** 不涉及。 
+
+        :param id: The id of this ShowCoreSpaceJobResponse.
+        :type id: str
         """
-        self._body = body
+        self._id = id
+
+    @property
+    def job_name(self):
+        r"""Gets the job_name of this ShowCoreSpaceJobResponse.
+
+        **参数解释：** 异步任务名称，标识任务的类型。 **取值范围：** - create_space: 创建记忆库 - update_network: 更新网络配置 
+
+        :return: The job_name of this ShowCoreSpaceJobResponse.
+        :rtype: str
+        """
+        return self._job_name
+
+    @job_name.setter
+    def job_name(self, job_name):
+        r"""Sets the job_name of this ShowCoreSpaceJobResponse.
+
+        **参数解释：** 异步任务名称，标识任务的类型。 **取值范围：** - create_space: 创建记忆库 - update_network: 更新网络配置 
+
+        :param job_name: The job_name of this ShowCoreSpaceJobResponse.
+        :type job_name: str
+        """
+        self._job_name = job_name
+
+    @property
+    def status(self):
+        r"""Gets the status of this ShowCoreSpaceJobResponse.
+
+        **参数解释：** 异步任务的当前执行状态。 **取值范围：** - running: 执行中 - success: 成功 - failed: 失败 
+
+        :return: The status of this ShowCoreSpaceJobResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ShowCoreSpaceJobResponse.
+
+        **参数解释：** 异步任务的当前执行状态。 **取值范围：** - running: 执行中 - success: 成功 - failed: 失败 
+
+        :param status: The status of this ShowCoreSpaceJobResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         import warnings

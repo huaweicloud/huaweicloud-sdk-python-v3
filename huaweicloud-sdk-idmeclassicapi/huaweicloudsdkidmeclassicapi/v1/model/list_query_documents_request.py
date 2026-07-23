@@ -15,69 +15,47 @@ class ListQueryDocumentsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'model_name': 'str',
         'identifier': 'str',
+        'model_name': 'str',
         'body': 'RDMParamVOQueryDocParamDto'
     }
 
     attribute_map = {
-        'model_name': 'modelName',
         'identifier': 'identifier',
+        'model_name': 'modelName',
         'body': 'body'
     }
 
-    def __init__(self, model_name=None, identifier=None, body=None):
+    def __init__(self, identifier=None, model_name=None, body=None):
         r"""ListQueryDocumentsRequest
 
         The model defined in huaweicloud sdk
 
-        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。
-        :type model_name: str
-        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        :param identifier: **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
+        :type model_name: str
         :param body: Body of the ListQueryDocumentsRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOQueryDocParamDto`
         """
         
         
 
-        self._model_name = None
         self._identifier = None
+        self._model_name = None
         self._body = None
         self.discriminator = None
 
-        self.model_name = model_name
         self.identifier = identifier
+        self.model_name = model_name
         if body is not None:
             self.body = body
-
-    @property
-    def model_name(self):
-        r"""Gets the model_name of this ListQueryDocumentsRequest.
-
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。
-
-        :return: The model_name of this ListQueryDocumentsRequest.
-        :rtype: str
-        """
-        return self._model_name
-
-    @model_name.setter
-    def model_name(self, model_name):
-        r"""Sets the model_name of this ListQueryDocumentsRequest.
-
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。
-
-        :param model_name: The model_name of this ListQueryDocumentsRequest.
-        :type model_name: str
-        """
-        self._model_name = model_name
 
     @property
     def identifier(self):
         r"""Gets the identifier of this ListQueryDocumentsRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :return: The identifier of this ListQueryDocumentsRequest.
         :rtype: str
@@ -88,12 +66,34 @@ class ListQueryDocumentsRequest:
     def identifier(self, identifier):
         r"""Sets the identifier of this ListQueryDocumentsRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :param identifier: The identifier of this ListQueryDocumentsRequest.
         :type identifier: str
         """
         self._identifier = identifier
+
+    @property
+    def model_name(self):
+        r"""Gets the model_name of this ListQueryDocumentsRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
+
+        :return: The model_name of this ListQueryDocumentsRequest.
+        :rtype: str
+        """
+        return self._model_name
+
+    @model_name.setter
+    def model_name(self, model_name):
+        r"""Sets the model_name of this ListQueryDocumentsRequest.
+
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
+
+        :param model_name: The model_name of this ListQueryDocumentsRequest.
+        :type model_name: str
+        """
+        self._model_name = model_name
 
     @property
     def body(self):

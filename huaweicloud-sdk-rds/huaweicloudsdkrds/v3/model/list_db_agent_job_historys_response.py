@@ -16,58 +16,58 @@ class ListDbAgentJobHistorysResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'historys': 'list[ListDbAgentJobHistorysResult]',
+        'histories': 'list[ListDbAgentJobHistorysResult]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'historys': 'historys',
+        'histories': 'histories',
         'total_count': 'total_count'
     }
 
-    def __init__(self, historys=None, total_count=None):
+    def __init__(self, histories=None, total_count=None):
         r"""ListDbAgentJobHistorysResponse
 
         The model defined in huaweicloud sdk
 
-        :param historys: 执行历史列表。
-        :type historys: list[:class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResult`]
+        :param histories: 执行历史列表。
+        :type histories: list[:class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResult`]
         :param total_count: 执行历史总数。
         :type total_count: int
         """
         
         super().__init__()
 
-        self._historys = None
+        self._histories = None
         self._total_count = None
         self.discriminator = None
 
-        if historys is not None:
-            self.historys = historys
+        if histories is not None:
+            self.histories = histories
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def historys(self):
-        r"""Gets the historys of this ListDbAgentJobHistorysResponse.
+    def histories(self):
+        r"""Gets the histories of this ListDbAgentJobHistorysResponse.
 
         执行历史列表。
 
-        :return: The historys of this ListDbAgentJobHistorysResponse.
+        :return: The histories of this ListDbAgentJobHistorysResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResult`]
         """
-        return self._historys
+        return self._histories
 
-    @historys.setter
-    def historys(self, historys):
-        r"""Sets the historys of this ListDbAgentJobHistorysResponse.
+    @histories.setter
+    def histories(self, histories):
+        r"""Sets the histories of this ListDbAgentJobHistorysResponse.
 
         执行历史列表。
 
-        :param historys: The historys of this ListDbAgentJobHistorysResponse.
-        :type historys: list[:class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResult`]
+        :param histories: The histories of this ListDbAgentJobHistorysResponse.
+        :type histories: list[:class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResult`]
         """
-        self._historys = historys
+        self._histories = histories
 
     @property
     def total_count(self):

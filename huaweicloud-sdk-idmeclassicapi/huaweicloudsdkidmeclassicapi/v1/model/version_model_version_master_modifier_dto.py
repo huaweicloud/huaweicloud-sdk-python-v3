@@ -31,11 +31,11 @@ class VersionModelVersionMasterModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param master_id: **参数解释：**  主对象ID，用于定位待删除的版本实例所属的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type master_id: str
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，记录执行删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
-        :param version: **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param version: **参数解释：**  版本对象，用于指定待删除的版本标识。若未指定，则默认删除最新分支的最新版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type version: str
         """
         
@@ -56,7 +56,7 @@ class VersionModelVersionMasterModifierDTO:
     def master_id(self):
         r"""Gets the master_id of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于定位待删除的版本实例所属的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The master_id of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class VersionModelVersionMasterModifierDTO:
     def master_id(self, master_id):
         r"""Sets the master_id of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于定位待删除的版本实例所属的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param master_id: The master_id of this VersionModelVersionMasterModifierDTO.
         :type master_id: str
@@ -78,7 +78,7 @@ class VersionModelVersionMasterModifierDTO:
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，记录执行删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class VersionModelVersionMasterModifierDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，记录执行删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionMasterModifierDTO.
         :type modifier: str
@@ -100,7 +100,7 @@ class VersionModelVersionMasterModifierDTO:
     def version(self):
         r"""Gets the version of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  版本对象，用于指定待删除的版本标识。若未指定，则默认删除最新分支的最新版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The version of this VersionModelVersionMasterModifierDTO.
         :rtype: str
@@ -111,7 +111,7 @@ class VersionModelVersionMasterModifierDTO:
     def version(self, version):
         r"""Sets the version of this VersionModelVersionMasterModifierDTO.
 
-        **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  版本对象，用于指定待删除的版本标识。若未指定，则默认删除最新分支的最新版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param version: The version of this VersionModelVersionMasterModifierDTO.
         :type version: str

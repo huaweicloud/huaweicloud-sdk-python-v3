@@ -23,6 +23,7 @@ class CreateOpsEvaluationTaskRequestBody:
         'human_read_version': 'str',
         'dataset_name': 'str',
         'input_source_type': 'str',
+        'input_source': 'OpsInputSource',
         'runtime_config': 'RuntimeConfig',
         'evaluation_object_config': 'object'
     }
@@ -36,11 +37,12 @@ class CreateOpsEvaluationTaskRequestBody:
         'human_read_version': 'human_read_version',
         'dataset_name': 'dataset_name',
         'input_source_type': 'input_source_type',
+        'input_source': 'input_source',
         'runtime_config': 'runtime_config',
         'evaluation_object_config': 'evaluation_object_config'
     }
 
-    def __init__(self, eval_mode=None, name=None, description=None, dataset_id=None, dataset_version=None, human_read_version=None, dataset_name=None, input_source_type=None, runtime_config=None, evaluation_object_config=None):
+    def __init__(self, eval_mode=None, name=None, description=None, dataset_id=None, dataset_version=None, human_read_version=None, dataset_name=None, input_source_type=None, input_source=None, runtime_config=None, evaluation_object_config=None):
         r"""CreateOpsEvaluationTaskRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class CreateOpsEvaluationTaskRequestBody:
         :type dataset_name: str
         :param input_source_type: **参数解释：** 评估数据来源，指定评估数据的类型和来源，影响数据的获取方式。 **约束限制：** 字符串类型，最大长度为36。 **取值范围：** 字符长度1-36，枚举值：DATASET_DYNAMIC、DATASET_STATIC、TRACE_STREAM。 **默认取值：** DATASET_DYNAMIC。
         :type input_source_type: str
+        :param input_source: 
+        :type input_source: :class:`huaweicloudsdkagentarts.v1.OpsInputSource`
         :param runtime_config: 
         :type runtime_config: :class:`huaweicloudsdkagentarts.v1.RuntimeConfig`
         :param evaluation_object_config: **参数解释：** 评估对象配置，指定被评估的对象信息（如模型、流等）。 **约束限制：** 结构化对象。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
@@ -77,6 +81,7 @@ class CreateOpsEvaluationTaskRequestBody:
         self._human_read_version = None
         self._dataset_name = None
         self._input_source_type = None
+        self._input_source = None
         self._runtime_config = None
         self._evaluation_object_config = None
         self.discriminator = None
@@ -97,6 +102,8 @@ class CreateOpsEvaluationTaskRequestBody:
             self.dataset_name = dataset_name
         if input_source_type is not None:
             self.input_source_type = input_source_type
+        if input_source is not None:
+            self.input_source = input_source
         if runtime_config is not None:
             self.runtime_config = runtime_config
         if evaluation_object_config is not None:
@@ -277,6 +284,24 @@ class CreateOpsEvaluationTaskRequestBody:
         :type input_source_type: str
         """
         self._input_source_type = input_source_type
+
+    @property
+    def input_source(self):
+        r"""Gets the input_source of this CreateOpsEvaluationTaskRequestBody.
+
+        :return: The input_source of this CreateOpsEvaluationTaskRequestBody.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.OpsInputSource`
+        """
+        return self._input_source
+
+    @input_source.setter
+    def input_source(self, input_source):
+        r"""Sets the input_source of this CreateOpsEvaluationTaskRequestBody.
+
+        :param input_source: The input_source of this CreateOpsEvaluationTaskRequestBody.
+        :type input_source: :class:`huaweicloudsdkagentarts.v1.OpsInputSource`
+        """
+        self._input_source = input_source
 
     @property
     def runtime_config(self):

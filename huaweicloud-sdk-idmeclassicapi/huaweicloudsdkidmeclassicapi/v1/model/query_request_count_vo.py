@@ -15,7 +15,7 @@ class QueryRequestCountVo:
     sensitive_list = []
 
     openapi_types = {
-        'character_set': 'CharacterSetEnum',
+        'character_set': 'str',
         'conditions': 'list[QueryCondition]',
         'decrypt': 'bool',
         'entity_type': 'str',
@@ -53,8 +53,8 @@ class QueryRequestCountVo:
 
         The model defined in huaweicloud sdk
 
-        :param character_set: 
-        :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
+        :param character_set: **参数解释：**  编码类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  UTF8
+        :type character_set: str
         :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
         :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。
@@ -134,8 +134,10 @@ class QueryRequestCountVo:
     def character_set(self):
         r"""Gets the character_set of this QueryRequestCountVo.
 
+        **参数解释：**  编码类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  UTF8
+
         :return: The character_set of this QueryRequestCountVo.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
+        :rtype: str
         """
         return self._character_set
 
@@ -143,8 +145,10 @@ class QueryRequestCountVo:
     def character_set(self, character_set):
         r"""Sets the character_set of this QueryRequestCountVo.
 
+        **参数解释：**  编码类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  UTF8
+
         :param character_set: The character_set of this QueryRequestCountVo.
-        :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
+        :type character_set: str
         """
         self._character_set = character_set
 

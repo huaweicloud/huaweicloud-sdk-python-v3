@@ -55,35 +55,35 @@ class TreeableModelViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  唯一标识，系统生成的子节点主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
         :type id: str
-        :param creator: **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号，标识创建该子节点的用户。  **取值范围：**  不涉及。
         :type creator: str
-        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，标识最后更新该子节点的用户。  **取值范围：**  不涉及。
         :type modifier: str
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type create_time: str
-        :param last_update_time: **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type last_update_time: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_version: **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
         :type rdm_version: int
-        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param class_name: **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
         :type class_name: str
         :param root_node: 
         :type root_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
         :param parent_node: 
         :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
-        :param leaf_flag: **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  不涉及。 
+        :param leaf_flag: **参数解释：**  是否为叶子节点，标识该节点是否拥有子节点。  **取值范围：**  - true：是叶子节点（无子节点）。 - false：不是叶子节点（有子节点）。  **默认取值：**  不涉及。
         :type leaf_flag: bool
-        :param full_path: **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param full_path: **参数解释：**  用于存储当前节点全路径，格式为从根节点到当前节点的ID路径，以“/”分隔。 例如：根节点ID/父节点ID/当前节点ID/。  **取值范围：**  不涉及。
         :type full_path: str
-        :param raw_full_path: **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param raw_full_path: **参数解释：**  用于存储当前节点原始全路径，格式与fullPath一致，记录节点在树形结构中的原始层级位置。  **取值范围：**  不涉及。
         :type raw_full_path: str
         """
         
@@ -141,7 +141,7 @@ class TreeableModelViewDTO:
     def id(self):
         r"""Gets the id of this TreeableModelViewDTO.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识，系统生成的子节点主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :return: The id of this TreeableModelViewDTO.
         :rtype: str
@@ -152,7 +152,7 @@ class TreeableModelViewDTO:
     def id(self, id):
         r"""Sets the id of this TreeableModelViewDTO.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识，系统生成的子节点主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :param id: The id of this TreeableModelViewDTO.
         :type id: str
@@ -163,7 +163,7 @@ class TreeableModelViewDTO:
     def creator(self):
         r"""Gets the creator of this TreeableModelViewDTO.
 
-        **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号，标识创建该子节点的用户。  **取值范围：**  不涉及。
 
         :return: The creator of this TreeableModelViewDTO.
         :rtype: str
@@ -174,7 +174,7 @@ class TreeableModelViewDTO:
     def creator(self, creator):
         r"""Sets the creator of this TreeableModelViewDTO.
 
-        **参数解释：**  创建人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号，标识创建该子节点的用户。  **取值范围：**  不涉及。
 
         :param creator: The creator of this TreeableModelViewDTO.
         :type creator: str
@@ -185,7 +185,7 @@ class TreeableModelViewDTO:
     def modifier(self):
         r"""Gets the modifier of this TreeableModelViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，标识最后更新该子节点的用户。  **取值范围：**  不涉及。
 
         :return: The modifier of this TreeableModelViewDTO.
         :rtype: str
@@ -196,7 +196,7 @@ class TreeableModelViewDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this TreeableModelViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，标识最后更新该子节点的用户。  **取值范围：**  不涉及。
 
         :param modifier: The modifier of this TreeableModelViewDTO.
         :type modifier: str
@@ -207,7 +207,7 @@ class TreeableModelViewDTO:
     def create_time(self):
         r"""Gets the create_time of this TreeableModelViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The create_time of this TreeableModelViewDTO.
         :rtype: str
@@ -218,7 +218,7 @@ class TreeableModelViewDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this TreeableModelViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param create_time: The create_time of this TreeableModelViewDTO.
         :type create_time: str
@@ -229,7 +229,7 @@ class TreeableModelViewDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this TreeableModelViewDTO.
 
-        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The last_update_time of this TreeableModelViewDTO.
         :rtype: str
@@ -240,7 +240,7 @@ class TreeableModelViewDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this TreeableModelViewDTO.
 
-        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param last_update_time: The last_update_time of this TreeableModelViewDTO.
         :type last_update_time: str
@@ -251,7 +251,7 @@ class TreeableModelViewDTO:
     def rdm_version(self):
         r"""Gets the rdm_version of this TreeableModelViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :return: The rdm_version of this TreeableModelViewDTO.
         :rtype: int
@@ -262,7 +262,7 @@ class TreeableModelViewDTO:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this TreeableModelViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :param rdm_version: The rdm_version of this TreeableModelViewDTO.
         :type rdm_version: int
@@ -273,7 +273,7 @@ class TreeableModelViewDTO:
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this TreeableModelViewDTO.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :return: The rdm_delete_flag of this TreeableModelViewDTO.
         :rtype: int
@@ -284,7 +284,7 @@ class TreeableModelViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this TreeableModelViewDTO.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :param rdm_delete_flag: The rdm_delete_flag of this TreeableModelViewDTO.
         :type rdm_delete_flag: int
@@ -295,7 +295,7 @@ class TreeableModelViewDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this TreeableModelViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :return: The rdm_extension_type of this TreeableModelViewDTO.
         :rtype: str
@@ -306,7 +306,7 @@ class TreeableModelViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this TreeableModelViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this TreeableModelViewDTO.
         :type rdm_extension_type: str
@@ -335,7 +335,7 @@ class TreeableModelViewDTO:
     def class_name(self):
         r"""Gets the class_name of this TreeableModelViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :return: The class_name of this TreeableModelViewDTO.
         :rtype: str
@@ -346,7 +346,7 @@ class TreeableModelViewDTO:
     def class_name(self, class_name):
         r"""Sets the class_name of this TreeableModelViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :param class_name: The class_name of this TreeableModelViewDTO.
         :type class_name: str
@@ -393,7 +393,7 @@ class TreeableModelViewDTO:
     def leaf_flag(self):
         r"""Gets the leaf_flag of this TreeableModelViewDTO.
 
-        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  不涉及。 
+        **参数解释：**  是否为叶子节点，标识该节点是否拥有子节点。  **取值范围：**  - true：是叶子节点（无子节点）。 - false：不是叶子节点（有子节点）。  **默认取值：**  不涉及。
 
         :return: The leaf_flag of this TreeableModelViewDTO.
         :rtype: bool
@@ -404,7 +404,7 @@ class TreeableModelViewDTO:
     def leaf_flag(self, leaf_flag):
         r"""Sets the leaf_flag of this TreeableModelViewDTO.
 
-        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  不涉及。 
+        **参数解释：**  是否为叶子节点，标识该节点是否拥有子节点。  **取值范围：**  - true：是叶子节点（无子节点）。 - false：不是叶子节点（有子节点）。  **默认取值：**  不涉及。
 
         :param leaf_flag: The leaf_flag of this TreeableModelViewDTO.
         :type leaf_flag: bool
@@ -415,7 +415,7 @@ class TreeableModelViewDTO:
     def full_path(self):
         r"""Gets the full_path of this TreeableModelViewDTO.
 
-        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点全路径，格式为从根节点到当前节点的ID路径，以“/”分隔。 例如：根节点ID/父节点ID/当前节点ID/。  **取值范围：**  不涉及。
 
         :return: The full_path of this TreeableModelViewDTO.
         :rtype: str
@@ -426,7 +426,7 @@ class TreeableModelViewDTO:
     def full_path(self, full_path):
         r"""Sets the full_path of this TreeableModelViewDTO.
 
-        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点全路径，格式为从根节点到当前节点的ID路径，以“/”分隔。 例如：根节点ID/父节点ID/当前节点ID/。  **取值范围：**  不涉及。
 
         :param full_path: The full_path of this TreeableModelViewDTO.
         :type full_path: str
@@ -437,7 +437,7 @@ class TreeableModelViewDTO:
     def raw_full_path(self):
         r"""Gets the raw_full_path of this TreeableModelViewDTO.
 
-        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点原始全路径，格式与fullPath一致，记录节点在树形结构中的原始层级位置。  **取值范围：**  不涉及。
 
         :return: The raw_full_path of this TreeableModelViewDTO.
         :rtype: str
@@ -448,7 +448,7 @@ class TreeableModelViewDTO:
     def raw_full_path(self, raw_full_path):
         r"""Sets the raw_full_path of this TreeableModelViewDTO.
 
-        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点原始全路径，格式与fullPath一致，记录节点在树形结构中的原始层级位置。  **取值范围：**  不涉及。
 
         :param raw_full_path: The raw_full_path of this TreeableModelViewDTO.
         :type raw_full_path: str

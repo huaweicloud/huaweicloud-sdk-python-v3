@@ -1,3 +1,228 @@
+# 3.1.207 2026-07-23
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ShowOpsTraceTopology`
+  - **CreateCoreSpaceCustomizedStrategy**
+    - changes of response param
+      - `+ updated_at`
+      - `+ name`
+      - `+ created_at`
+      - `+ id`
+      - `+ type`
+      - `+ steps`
+      - `+ origin_type`
+      - `- body`
+  - **UpdateCoreSpaceCustomizedStrategy**
+    - changes of request param
+      - `+ name`
+      - `+ steps`
+      - `- body`
+    - changes of response param
+      - `+ updated_at`
+      - `+ name`
+      - `+ created_at`
+      - `+ id`
+      - `+ type`
+      - `+ steps`
+      - `+ origin_type`
+      - `- body`
+  - **ShowCoreSpaceJob**
+    - changes of response param
+      - `+ job_name`
+      - `+ id`
+      - `+ status`
+      - `- body`
+  - **ListCoreSpaceMemories**
+    - changes of response param
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+      - `+ items`
+      - `- body`
+  - **SearchCoreSpaceMemories**
+    - changes of response param
+      - `+ total`
+      - `+ query`
+      - `+ results`
+      - `- body`
+  - **ListOpsAgentObservation**
+    - changes of response param
+      - `+ app_info_list.source`
+      - `+ app_info_list.total_token`
+      - `+ app_info_list.avg_request_count`
+      - `+ app_info_list.avg_duration_time`
+      - `+ app_info_list.avg_fail_count`
+      - `+ app_info_list.apm_app_id`
+      - `+ app_info_list.aom_prom_id`
+      - `+ app_info_list.apm_app_token`
+      - `+ app_info_list.aom_access_code`
+      - `+ app_info_list.lts_group_id`
+      - `+ app_info_list.lts_stream_id`
+      - `+ app_info_list.lts_label_name`
+      - `+ app_info_list.apm_exporter_endpoint`
+      - `+ app_info_list.aom_exporter_endpoint`
+      - `+ app_info_list.deleted`
+  - **ListOpsSession**
+    - changes of request param
+      - `- business_id`
+  - **ListOpsAgentMetricLabelValues**
+    - changes of response param
+      - `+ data_extend_list`
+  - **CreateOpsEvaluationTask**
+    - changes of request param
+      - `+ input_source`
+  - **ShowCoreSpace**
+    - changes of response param
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **UpdateCoreSpace**
+    - changes of response param
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **UpdateCoreSpaceNetwork**
+    - changes of request param
+      - `+ public_access_enable`
+      - `+ private_access_config`
+      - `- body`
+  - **ShowOpsAgentMetricTrend**
+    - changes of response param
+      - `+ step`
+  - **ListOpsTrace**
+    - changes of response param
+      - `+ span_list.status_message`
+  - **ShowOpsTrace**
+    - changes of response param
+      - `+ span_list.status_message`
+  - **CreateCoreSpace**
+    - changes of response param
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **ShowOpsEvaluationTasksCompareResult**
+    - changes of response param
+      - `* data.benchmark_group.evaluations.correction: map<string, object> -> object`
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.is_spot`
+      - `+ monthly_records.promotion_type`
+      - `+ monthly_records.payment_type`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.is_spot`
+      - `+ monthly_records.promotion_type`
+      - `+ monthly_records.payment_type`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFactoryScripts**
+    - changes of response param
+      - `+ scripts.modify_time`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ModifyJobSchedule`, `DeleteJobSchedule`, `ListJobSchedules`, `CreateJobSchedule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDbAgentJobHistorys**
+    - changes of response param
+      - `+ histories`
+      - `- historys`
+
 # 3.1.206 2026-07-16
 
 ### HuaweiCloud SDK AgentArts

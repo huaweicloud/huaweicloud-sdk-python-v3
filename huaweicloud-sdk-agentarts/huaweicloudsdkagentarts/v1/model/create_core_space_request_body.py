@@ -53,7 +53,7 @@ class CreateCoreSpaceRequestBody:
         :type name: str
         :param description: **参数解释：**  空间描述。 **约束限制：**  不涉及。 **取值范围：**  不超过1000个字符。 **默认取值：** 不涉及。 
         :type description: str
-        :param api_key_id: **参数解释：**  空间访问Key。 **约束限制：**  不涉及。 **取值范围：**  由英文字母、数字、\&quot;-\&quot;组成的字符串。 **默认取值：** 不涉及。 
+        :param api_key_id: **参数解释：** 空间访问Key。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字、\&quot;-\&quot;组成的字符串。 **默认取值：** 不涉及。
         :type api_key_id: str
         :param message_ttl_hours: **参数解释：** 过期时间（小时）。 **约束限制：** 不涉及。 **取值范围：** 1-8760 h。 **默认取值：** 168。 
         :type message_ttl_hours: int
@@ -161,7 +161,7 @@ class CreateCoreSpaceRequestBody:
     def api_key_id(self):
         r"""Gets the api_key_id of this CreateCoreSpaceRequestBody.
 
-        **参数解释：**  空间访问Key。 **约束限制：**  不涉及。 **取值范围：**  由英文字母、数字、\"-\"组成的字符串。 **默认取值：** 不涉及。 
+        **参数解释：** 空间访问Key。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字、\"-\"组成的字符串。 **默认取值：** 不涉及。
 
         :return: The api_key_id of this CreateCoreSpaceRequestBody.
         :rtype: str
@@ -172,7 +172,7 @@ class CreateCoreSpaceRequestBody:
     def api_key_id(self, api_key_id):
         r"""Sets the api_key_id of this CreateCoreSpaceRequestBody.
 
-        **参数解释：**  空间访问Key。 **约束限制：**  不涉及。 **取值范围：**  由英文字母、数字、\"-\"组成的字符串。 **默认取值：** 不涉及。 
+        **参数解释：** 空间访问Key。 **约束限制：** 不涉及。 **取值范围：** 由英文字母、数字、\"-\"组成的字符串。 **默认取值：** 不涉及。
 
         :param api_key_id: The api_key_id of this CreateCoreSpaceRequestBody.
         :type api_key_id: str

@@ -15,62 +15,40 @@ class StatisticsPVO:
     sensitive_list = []
 
     openapi_types = {
-        'end_time': 'str',
-        'start_time': 'str'
+        'start_time': 'str',
+        'end_time': 'str'
     }
 
     attribute_map = {
-        'end_time': 'endTime',
-        'start_time': 'startTime'
+        'start_time': 'startTime',
+        'end_time': 'endTime'
     }
 
-    def __init__(self, end_time=None, start_time=None):
+    def __init__(self, start_time=None, end_time=None):
         r"""StatisticsPVO
 
         The model defined in huaweicloud sdk
 
-        :param end_time: **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type end_time: str
-        :param start_time: **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param start_time: **参数解释：**  统计区间的开始时间，用于指定统计时间区间的起始点。  **约束限制：**  不能为空，且必须早于或等于endTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
         :type start_time: str
+        :param end_time: **参数解释：**  统计区间的结束时间，用于指定统计时间区间的结束点。  **约束限制：**  不能为空，且必须晚于或等于startTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
+        :type end_time: str
         """
         
         
 
-        self._end_time = None
         self._start_time = None
+        self._end_time = None
         self.discriminator = None
 
-        self.end_time = end_time
         self.start_time = start_time
-
-    @property
-    def end_time(self):
-        r"""Gets the end_time of this StatisticsPVO.
-
-        **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :return: The end_time of this StatisticsPVO.
-        :rtype: str
-        """
-        return self._end_time
-
-    @end_time.setter
-    def end_time(self, end_time):
-        r"""Sets the end_time of this StatisticsPVO.
-
-        **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :param end_time: The end_time of this StatisticsPVO.
-        :type end_time: str
-        """
-        self._end_time = end_time
+        self.end_time = end_time
 
     @property
     def start_time(self):
         r"""Gets the start_time of this StatisticsPVO.
 
-        **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  统计区间的开始时间，用于指定统计时间区间的起始点。  **约束限制：**  不能为空，且必须早于或等于endTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
 
         :return: The start_time of this StatisticsPVO.
         :rtype: str
@@ -81,12 +59,34 @@ class StatisticsPVO:
     def start_time(self, start_time):
         r"""Sets the start_time of this StatisticsPVO.
 
-        **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  统计区间的开始时间，用于指定统计时间区间的起始点。  **约束限制：**  不能为空，且必须早于或等于endTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
 
         :param start_time: The start_time of this StatisticsPVO.
         :type start_time: str
         """
         self._start_time = start_time
+
+    @property
+    def end_time(self):
+        r"""Gets the end_time of this StatisticsPVO.
+
+        **参数解释：**  统计区间的结束时间，用于指定统计时间区间的结束点。  **约束限制：**  不能为空，且必须晚于或等于startTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
+
+        :return: The end_time of this StatisticsPVO.
+        :rtype: str
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        r"""Sets the end_time of this StatisticsPVO.
+
+        **参数解释：**  统计区间的结束时间，用于指定统计时间区间的结束点。  **约束限制：**  不能为空，且必须晚于或等于startTime。  **取值范围：**  UTC标准时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **默认取值：**  不涉及。
+
+        :param end_time: The end_time of this StatisticsPVO.
+        :type end_time: str
+        """
+        self._end_time = end_time
 
     def to_dict(self):
         result = {}

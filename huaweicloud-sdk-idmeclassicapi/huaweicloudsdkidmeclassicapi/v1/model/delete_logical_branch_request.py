@@ -31,9 +31,9 @@ class DeleteLogicalBranchRequest:
 
         The model defined in huaweicloud sdk
 
-        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        :param identifier: **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
-        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :param model_name: **参数解释：**  M-V模型的英文名称。  **约束限制：**  必须为已发布的M-V模型，单实体、关系实体不支持。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
         :type model_name: str
         :param body: Body of the DeleteLogicalBranchRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOVersionModelVersionMasterModifierDTO`
@@ -55,7 +55,7 @@ class DeleteLogicalBranchRequest:
     def identifier(self):
         r"""Gets the identifier of this DeleteLogicalBranchRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :return: The identifier of this DeleteLogicalBranchRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class DeleteLogicalBranchRequest:
     def identifier(self, identifier):
         r"""Sets the identifier of this DeleteLogicalBranchRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :param identifier: The identifier of this DeleteLogicalBranchRequest.
         :type identifier: str
@@ -77,7 +77,7 @@ class DeleteLogicalBranchRequest:
     def model_name(self):
         r"""Gets the model_name of this DeleteLogicalBranchRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  M-V模型的英文名称。  **约束限制：**  必须为已发布的M-V模型，单实体、关系实体不支持。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :return: The model_name of this DeleteLogicalBranchRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteLogicalBranchRequest:
     def model_name(self, model_name):
         r"""Sets the model_name of this DeleteLogicalBranchRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  M-V模型的英文名称。  **约束限制：**  必须为已发布的M-V模型，单实体、关系实体不支持。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :param model_name: The model_name of this DeleteLogicalBranchRequest.
         :type model_name: str

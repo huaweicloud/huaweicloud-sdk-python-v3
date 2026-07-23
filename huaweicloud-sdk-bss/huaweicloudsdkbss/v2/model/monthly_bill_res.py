@@ -65,7 +65,10 @@ class MonthlyBillRes:
         'be_id': 'str',
         'extend_params': 'ResRelation',
         'account_name': 'str',
-        'period_num': 'decimal.Decimal'
+        'period_num': 'decimal.Decimal',
+        'is_spot': 'str',
+        'promotion_type': 'str',
+        'payment_type': 'str'
     }
 
     attribute_map = {
@@ -119,10 +122,13 @@ class MonthlyBillRes:
         'be_id': 'be_id',
         'extend_params': 'extend_params',
         'account_name': 'account_name',
-        'period_num': 'period_num'
+        'period_num': 'period_num',
+        'is_spot': 'is_spot',
+        'promotion_type': 'promotion_type',
+        'payment_type': 'payment_type'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None, extend_params=None, account_name=None, period_num=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None, extend_params=None, account_name=None, period_num=None, is_spot=None, promotion_type=None, payment_type=None):
         r"""MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -229,6 +235,12 @@ class MonthlyBillRes:
         :type account_name: str
         :param period_num: |参数名称：周期数量| |参数的约束及描述：该参数非必填|
         :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
+        :param is_spot: 是否竞价实例。该参数非必填，Y：是；N：否；--：不涉及（例如：包周期和预留实例不涉及此特性展示为\&quot;--\&quot;）。 说明：statistic_type&#x3D;3有效，statistic_type&#x3D;1或者2该字段保留。
+        :type is_spot: str
+        :param promotion_type: 优惠类型。该参数非必填，优惠类型。不含折扣返回null或空串，多种折扣，逗号拼接，举例：300,500。 说明：statistic_type&#x3D;3有效，statistic_type&#x3D;1或者2该字段保留。
+        :type promotion_type: str
+        :param payment_type: 付款方式。该参数非必填，付款方式，节省计划和预留实例有值；枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付。 说明：statistic_type&#x3D;3有效，statistic_type&#x3D;1或者2该字段保留。
+        :type payment_type: str
         """
         
         
@@ -284,6 +296,9 @@ class MonthlyBillRes:
         self._extend_params = None
         self._account_name = None
         self._period_num = None
+        self._is_spot = None
+        self._promotion_type = None
+        self._payment_type = None
         self.discriminator = None
 
         if cycle is not None:
@@ -388,6 +403,12 @@ class MonthlyBillRes:
             self.account_name = account_name
         if period_num is not None:
             self.period_num = period_num
+        if is_spot is not None:
+            self.is_spot = is_spot
+        if promotion_type is not None:
+            self.promotion_type = promotion_type
+        if payment_type is not None:
+            self.payment_type = payment_type
 
     @property
     def cycle(self):
@@ -1506,6 +1527,72 @@ class MonthlyBillRes:
         :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._period_num = period_num
+
+    @property
+    def is_spot(self):
+        r"""Gets the is_spot of this MonthlyBillRes.
+
+        是否竞价实例。该参数非必填，Y：是；N：否；--：不涉及（例如：包周期和预留实例不涉及此特性展示为\"--\"）。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :return: The is_spot of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._is_spot
+
+    @is_spot.setter
+    def is_spot(self, is_spot):
+        r"""Sets the is_spot of this MonthlyBillRes.
+
+        是否竞价实例。该参数非必填，Y：是；N：否；--：不涉及（例如：包周期和预留实例不涉及此特性展示为\"--\"）。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :param is_spot: The is_spot of this MonthlyBillRes.
+        :type is_spot: str
+        """
+        self._is_spot = is_spot
+
+    @property
+    def promotion_type(self):
+        r"""Gets the promotion_type of this MonthlyBillRes.
+
+        优惠类型。该参数非必填，优惠类型。不含折扣返回null或空串，多种折扣，逗号拼接，举例：300,500。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :return: The promotion_type of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._promotion_type
+
+    @promotion_type.setter
+    def promotion_type(self, promotion_type):
+        r"""Sets the promotion_type of this MonthlyBillRes.
+
+        优惠类型。该参数非必填，优惠类型。不含折扣返回null或空串，多种折扣，逗号拼接，举例：300,500。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :param promotion_type: The promotion_type of this MonthlyBillRes.
+        :type promotion_type: str
+        """
+        self._promotion_type = promotion_type
+
+    @property
+    def payment_type(self):
+        r"""Gets the payment_type of this MonthlyBillRes.
+
+        付款方式。该参数非必填，付款方式，节省计划和预留实例有值；枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :return: The payment_type of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._payment_type
+
+    @payment_type.setter
+    def payment_type(self, payment_type):
+        r"""Sets the payment_type of this MonthlyBillRes.
+
+        付款方式。该参数非必填，付款方式，节省计划和预留实例有值；枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付。 说明：statistic_type=3有效，statistic_type=1或者2该字段保留。
+
+        :param payment_type: The payment_type of this MonthlyBillRes.
+        :type payment_type: str
+        """
+        self._payment_type = payment_type
 
     def to_dict(self):
         result = {}

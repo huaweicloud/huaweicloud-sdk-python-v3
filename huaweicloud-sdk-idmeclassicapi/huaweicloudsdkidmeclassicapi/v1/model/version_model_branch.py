@@ -39,19 +39,19 @@ class VersionModelBranch:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  分支对象创建时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动生成，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  分支对象的创建者账号。由系统自动记录，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type creator: str
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  分支对象的唯一标识，用于定位待更新的分支对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type id: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  分支对象最后更新时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动更新，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type last_update_time: str
-        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  分支对象更新者账号。由系统自动记录，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
-        :param need_set_null_attrs: **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_set_null_attrs: **参数解释：**  需要将分支对象的自定义属性（包括基本属性、扩展属性和分类属性）设置为空值的属性名称列表。  **约束限制：**  不涉及。  **取值范围：**  长度不能超过1000个字符。  **默认取值：**  不涉及。
         :type need_set_null_attrs: list[str]
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  分支对象扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type rdm_extension_type: str
         """
         
@@ -85,7 +85,7 @@ class VersionModelBranch:
     def create_time(self):
         r"""Gets the create_time of this VersionModelBranch.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象创建时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动生成，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The create_time of this VersionModelBranch.
         :rtype: str
@@ -96,7 +96,7 @@ class VersionModelBranch:
     def create_time(self, create_time):
         r"""Sets the create_time of this VersionModelBranch.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象创建时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动生成，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param create_time: The create_time of this VersionModelBranch.
         :type create_time: str
@@ -107,7 +107,7 @@ class VersionModelBranch:
     def creator(self):
         r"""Gets the creator of this VersionModelBranch.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象的创建者账号。由系统自动记录，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The creator of this VersionModelBranch.
         :rtype: str
@@ -118,7 +118,7 @@ class VersionModelBranch:
     def creator(self, creator):
         r"""Sets the creator of this VersionModelBranch.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象的创建者账号。由系统自动记录，管理员更新时不可修改。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param creator: The creator of this VersionModelBranch.
         :type creator: str
@@ -129,7 +129,7 @@ class VersionModelBranch:
     def id(self):
         r"""Gets the id of this VersionModelBranch.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象的唯一标识，用于定位待更新的分支对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The id of this VersionModelBranch.
         :rtype: str
@@ -140,7 +140,7 @@ class VersionModelBranch:
     def id(self, id):
         r"""Sets the id of this VersionModelBranch.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象的唯一标识，用于定位待更新的分支对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param id: The id of this VersionModelBranch.
         :type id: str
@@ -151,7 +151,7 @@ class VersionModelBranch:
     def last_update_time(self):
         r"""Gets the last_update_time of this VersionModelBranch.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象最后更新时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动更新，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The last_update_time of this VersionModelBranch.
         :rtype: str
@@ -162,7 +162,7 @@ class VersionModelBranch:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this VersionModelBranch.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象最后更新时间，使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。由系统自动更新，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param last_update_time: The last_update_time of this VersionModelBranch.
         :type last_update_time: str
@@ -173,7 +173,7 @@ class VersionModelBranch:
     def modifier(self):
         r"""Gets the modifier of this VersionModelBranch.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象更新者账号。由系统自动记录，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelBranch.
         :rtype: str
@@ -184,7 +184,7 @@ class VersionModelBranch:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelBranch.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象更新者账号。由系统自动记录，管理员更新时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelBranch.
         :type modifier: str
@@ -195,7 +195,7 @@ class VersionModelBranch:
     def need_set_null_attrs(self):
         r"""Gets the need_set_null_attrs of this VersionModelBranch.
 
-        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要将分支对象的自定义属性（包括基本属性、扩展属性和分类属性）设置为空值的属性名称列表。  **约束限制：**  不涉及。  **取值范围：**  长度不能超过1000个字符。  **默认取值：**  不涉及。
 
         :return: The need_set_null_attrs of this VersionModelBranch.
         :rtype: list[str]
@@ -206,7 +206,7 @@ class VersionModelBranch:
     def need_set_null_attrs(self, need_set_null_attrs):
         r"""Sets the need_set_null_attrs of this VersionModelBranch.
 
-        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要将分支对象的自定义属性（包括基本属性、扩展属性和分类属性）设置为空值的属性名称列表。  **约束限制：**  不涉及。  **取值范围：**  长度不能超过1000个字符。  **默认取值：**  不涉及。
 
         :param need_set_null_attrs: The need_set_null_attrs of this VersionModelBranch.
         :type need_set_null_attrs: list[str]
@@ -217,7 +217,7 @@ class VersionModelBranch:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this VersionModelBranch.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The rdm_extension_type of this VersionModelBranch.
         :rtype: str
@@ -228,7 +228,7 @@ class VersionModelBranch:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this VersionModelBranch.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分支对象扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this VersionModelBranch.
         :type rdm_extension_type: str

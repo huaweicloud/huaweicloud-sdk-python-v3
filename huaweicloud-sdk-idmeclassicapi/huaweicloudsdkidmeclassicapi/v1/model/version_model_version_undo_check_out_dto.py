@@ -29,9 +29,9 @@ class VersionModelVersionUndoCheckOutDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param master_id: **参数解释：**  M-V模型主对象ID，用于定位需要撤销检出的版本实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type master_id: str
-        :param modifier: **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  撤销检出操作者账号，用于记录本次管理操作的责任人。由系统自动记录为当前调用用户，管理员操作时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -49,7 +49,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def master_id(self):
         r"""Gets the master_id of this VersionModelVersionUndoCheckOutDTO.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  M-V模型主对象ID，用于定位需要撤销检出的版本实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The master_id of this VersionModelVersionUndoCheckOutDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def master_id(self, master_id):
         r"""Sets the master_id of this VersionModelVersionUndoCheckOutDTO.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  M-V模型主对象ID，用于定位需要撤销检出的版本实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param master_id: The master_id of this VersionModelVersionUndoCheckOutDTO.
         :type master_id: str
@@ -71,7 +71,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionUndoCheckOutDTO.
 
-        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  撤销检出操作者账号，用于记录本次管理操作的责任人。由系统自动记录为当前调用用户，管理员操作时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionUndoCheckOutDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class VersionModelVersionUndoCheckOutDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionUndoCheckOutDTO.
 
-        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  撤销检出操作者账号，用于记录本次管理操作的责任人。由系统自动记录为当前调用用户，管理员操作时无需传入。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionUndoCheckOutDTO.
         :type modifier: str

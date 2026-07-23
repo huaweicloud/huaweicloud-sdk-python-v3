@@ -28,6 +28,8 @@ class DccRegion:
                         "https://dcc.ap-southeast-2.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://dcc.ap-southeast-3.myhuaweicloud.com")
+    CN_EAST_4 = Region("cn-east-4",
+                        "https://dcc.cn-east-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -41,6 +43,7 @@ class DccRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "cn-east-4": CN_EAST_4,
     }
 
     @classmethod

@@ -15,6 +15,7 @@ class ShowOpsAgentMetricTypeRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'group_by': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
         'metric_name': 'str',
@@ -25,6 +26,7 @@ class ShowOpsAgentMetricTypeRequestBody:
     }
 
     attribute_map = {
+        'group_by': 'group_by',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'metric_name': 'metric_name',
@@ -34,11 +36,13 @@ class ShowOpsAgentMetricTypeRequestBody:
         'filter': 'filter'
     }
 
-    def __init__(self, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None):
+    def __init__(self, group_by=None, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None):
         r"""ShowOpsAgentMetricTypeRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param group_by: 分组名
+        :type group_by: list[str]
         :param start_time: 开始时间
         :type start_time: str
         :param end_time: 结束时间
@@ -57,6 +61,7 @@ class ShowOpsAgentMetricTypeRequestBody:
         
         
 
+        self._group_by = None
         self._start_time = None
         self._end_time = None
         self._metric_name = None
@@ -66,6 +71,8 @@ class ShowOpsAgentMetricTypeRequestBody:
         self._filter = None
         self.discriminator = None
 
+        if group_by is not None:
+            self.group_by = group_by
         self.start_time = start_time
         self.end_time = end_time
         self.metric_name = metric_name
@@ -77,6 +84,28 @@ class ShowOpsAgentMetricTypeRequestBody:
             self.user_id = user_id
         if filter is not None:
             self.filter = filter
+
+    @property
+    def group_by(self):
+        r"""Gets the group_by of this ShowOpsAgentMetricTypeRequestBody.
+
+        分组名
+
+        :return: The group_by of this ShowOpsAgentMetricTypeRequestBody.
+        :rtype: list[str]
+        """
+        return self._group_by
+
+    @group_by.setter
+    def group_by(self, group_by):
+        r"""Sets the group_by of this ShowOpsAgentMetricTypeRequestBody.
+
+        分组名
+
+        :param group_by: The group_by of this ShowOpsAgentMetricTypeRequestBody.
+        :type group_by: list[str]
+        """
+        self._group_by = group_by
 
     @property
     def start_time(self):

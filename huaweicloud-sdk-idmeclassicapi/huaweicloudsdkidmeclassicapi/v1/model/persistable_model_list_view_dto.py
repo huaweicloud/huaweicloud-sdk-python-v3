@@ -71,51 +71,51 @@ class PersistableModelListViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param acl_entry: **参数解释：**  访问控制列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param acl_entry: **参数解释：**  访问控制列表。  **取值范围：**  不涉及。 
         :type acl_entry: str
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。 
         :type class_name: str
-        :param cls_attrs: **参数解释：**  分类属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param cls_attrs: **参数解释：**  分类属性。  **取值范围：**  不涉及。 
         :type cls_attrs: list[object]
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号。  **取值范围：**  不涉及。 
         :type creator: str
-        :param disable_flag: **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
+        :param disable_flag: **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。 
         :type disable_flag: bool
         :param folder: 
         :type folder: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
-        :param full_path: **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param full_path: **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。 
         :type full_path: str
-        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
         :type id: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
         :type last_update_time: str
-        :param leaf_flag: **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  false。 
+        :param leaf_flag: **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。 
         :type leaf_flag: bool
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
         :param lifecycle_template: 
         :type lifecycle_template: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
-        :param modifier: **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号。  **取值范围：**  不涉及。 
         :type modifier: str
-        :param owner: **参数解释：**  拥有者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param owner: **参数解释：**  拥有者。  **取值范围：**  不涉及。 
         :type owner: str
         :param parent_node: 
         :type parent_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
-        :param raw_full_path: **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param raw_full_path: **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。 
         :type raw_full_path: str
-        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。 
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。 
         :type rdm_extension_type: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。 
         :type rdm_version: int
         :param root_node: 
         :type root_node: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
-        :param unique_key: **参数解释：**  示例模型的唯一键约束属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param unique_key: **参数解释：**  数据模型的唯一键约束属性。  **取值范围：**  不涉及。 
         :type unique_key: str
         """
         
@@ -197,7 +197,7 @@ class PersistableModelListViewDTO:
     def acl_entry(self):
         r"""Gets the acl_entry of this PersistableModelListViewDTO.
 
-        **参数解释：**  访问控制列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  访问控制列表。  **取值范围：**  不涉及。 
 
         :return: The acl_entry of this PersistableModelListViewDTO.
         :rtype: str
@@ -208,7 +208,7 @@ class PersistableModelListViewDTO:
     def acl_entry(self, acl_entry):
         r"""Sets the acl_entry of this PersistableModelListViewDTO.
 
-        **参数解释：**  访问控制列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  访问控制列表。  **取值范围：**  不涉及。 
 
         :param acl_entry: The acl_entry of this PersistableModelListViewDTO.
         :type acl_entry: str
@@ -219,7 +219,7 @@ class PersistableModelListViewDTO:
     def class_name(self):
         r"""Gets the class_name of this PersistableModelListViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名。  **取值范围：**  不涉及。 
 
         :return: The class_name of this PersistableModelListViewDTO.
         :rtype: str
@@ -230,7 +230,7 @@ class PersistableModelListViewDTO:
     def class_name(self, class_name):
         r"""Sets the class_name of this PersistableModelListViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名。  **取值范围：**  不涉及。 
 
         :param class_name: The class_name of this PersistableModelListViewDTO.
         :type class_name: str
@@ -241,7 +241,7 @@ class PersistableModelListViewDTO:
     def cls_attrs(self):
         r"""Gets the cls_attrs of this PersistableModelListViewDTO.
 
-        **参数解释：**  分类属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分类属性。  **取值范围：**  不涉及。 
 
         :return: The cls_attrs of this PersistableModelListViewDTO.
         :rtype: list[object]
@@ -252,7 +252,7 @@ class PersistableModelListViewDTO:
     def cls_attrs(self, cls_attrs):
         r"""Sets the cls_attrs of this PersistableModelListViewDTO.
 
-        **参数解释：**  分类属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  分类属性。  **取值范围：**  不涉及。 
 
         :param cls_attrs: The cls_attrs of this PersistableModelListViewDTO.
         :type cls_attrs: list[object]
@@ -263,7 +263,7 @@ class PersistableModelListViewDTO:
     def create_time(self):
         r"""Gets the create_time of this PersistableModelListViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
 
         :return: The create_time of this PersistableModelListViewDTO.
         :rtype: str
@@ -274,7 +274,7 @@ class PersistableModelListViewDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this PersistableModelListViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
 
         :param create_time: The create_time of this PersistableModelListViewDTO.
         :type create_time: str
@@ -285,7 +285,7 @@ class PersistableModelListViewDTO:
     def creator(self):
         r"""Gets the creator of this PersistableModelListViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **取值范围：**  不涉及。 
 
         :return: The creator of this PersistableModelListViewDTO.
         :rtype: str
@@ -296,7 +296,7 @@ class PersistableModelListViewDTO:
     def creator(self, creator):
         r"""Sets the creator of this PersistableModelListViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **取值范围：**  不涉及。 
 
         :param creator: The creator of this PersistableModelListViewDTO.
         :type creator: str
@@ -307,7 +307,7 @@ class PersistableModelListViewDTO:
     def disable_flag(self):
         r"""Gets the disable_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
+        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。 
 
         :return: The disable_flag of this PersistableModelListViewDTO.
         :rtype: bool
@@ -318,7 +318,7 @@ class PersistableModelListViewDTO:
     def disable_flag(self, disable_flag):
         r"""Sets the disable_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
+        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。 
 
         :param disable_flag: The disable_flag of this PersistableModelListViewDTO.
         :type disable_flag: bool
@@ -347,7 +347,7 @@ class PersistableModelListViewDTO:
     def full_path(self):
         r"""Gets the full_path of this PersistableModelListViewDTO.
 
-        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。 
 
         :return: The full_path of this PersistableModelListViewDTO.
         :rtype: str
@@ -358,7 +358,7 @@ class PersistableModelListViewDTO:
     def full_path(self, full_path):
         r"""Sets the full_path of this PersistableModelListViewDTO.
 
-        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点全路径。  **取值范围：**  不涉及。 
 
         :param full_path: The full_path of this PersistableModelListViewDTO.
         :type full_path: str
@@ -369,7 +369,7 @@ class PersistableModelListViewDTO:
     def id(self):
         r"""Gets the id of this PersistableModelListViewDTO.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
 
         :return: The id of this PersistableModelListViewDTO.
         :rtype: str
@@ -380,7 +380,7 @@ class PersistableModelListViewDTO:
     def id(self, id):
         r"""Sets the id of this PersistableModelListViewDTO.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
 
         :param id: The id of this PersistableModelListViewDTO.
         :type id: str
@@ -391,7 +391,7 @@ class PersistableModelListViewDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this PersistableModelListViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
 
         :return: The last_update_time of this PersistableModelListViewDTO.
         :rtype: str
@@ -402,7 +402,7 @@ class PersistableModelListViewDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this PersistableModelListViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。 
 
         :param last_update_time: The last_update_time of this PersistableModelListViewDTO.
         :type last_update_time: str
@@ -413,7 +413,7 @@ class PersistableModelListViewDTO:
     def leaf_flag(self):
         r"""Gets the leaf_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  false。 
+        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。 
 
         :return: The leaf_flag of this PersistableModelListViewDTO.
         :rtype: bool
@@ -424,7 +424,7 @@ class PersistableModelListViewDTO:
     def leaf_flag(self, leaf_flag):
         r"""Sets the leaf_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。  **默认取值：**  false。 
+        **参数解释：**  是否为叶子节点。  **取值范围：**  - true：是叶子节点。 - false：不是叶子节点。 
 
         :param leaf_flag: The leaf_flag of this PersistableModelListViewDTO.
         :type leaf_flag: bool
@@ -471,7 +471,7 @@ class PersistableModelListViewDTO:
     def modifier(self):
         r"""Gets the modifier of this PersistableModelListViewDTO.
 
-        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **取值范围：**  不涉及。 
 
         :return: The modifier of this PersistableModelListViewDTO.
         :rtype: str
@@ -482,7 +482,7 @@ class PersistableModelListViewDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this PersistableModelListViewDTO.
 
-        **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **取值范围：**  不涉及。 
 
         :param modifier: The modifier of this PersistableModelListViewDTO.
         :type modifier: str
@@ -493,7 +493,7 @@ class PersistableModelListViewDTO:
     def owner(self):
         r"""Gets the owner of this PersistableModelListViewDTO.
 
-        **参数解释：**  拥有者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  拥有者。  **取值范围：**  不涉及。 
 
         :return: The owner of this PersistableModelListViewDTO.
         :rtype: str
@@ -504,7 +504,7 @@ class PersistableModelListViewDTO:
     def owner(self, owner):
         r"""Sets the owner of this PersistableModelListViewDTO.
 
-        **参数解释：**  拥有者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  拥有者。  **取值范围：**  不涉及。 
 
         :param owner: The owner of this PersistableModelListViewDTO.
         :type owner: str
@@ -533,7 +533,7 @@ class PersistableModelListViewDTO:
     def raw_full_path(self):
         r"""Gets the raw_full_path of this PersistableModelListViewDTO.
 
-        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。 
 
         :return: The raw_full_path of this PersistableModelListViewDTO.
         :rtype: str
@@ -544,7 +544,7 @@ class PersistableModelListViewDTO:
     def raw_full_path(self, raw_full_path):
         r"""Sets the raw_full_path of this PersistableModelListViewDTO.
 
-        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  用于存储当前节点原始全路径。  **取值范围：**  不涉及。 
 
         :param raw_full_path: The raw_full_path of this PersistableModelListViewDTO.
         :type raw_full_path: str
@@ -555,7 +555,7 @@ class PersistableModelListViewDTO:
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。 
 
         :return: The rdm_delete_flag of this PersistableModelListViewDTO.
         :rtype: int
@@ -566,7 +566,7 @@ class PersistableModelListViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this PersistableModelListViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。 
 
         :param rdm_delete_flag: The rdm_delete_flag of this PersistableModelListViewDTO.
         :type rdm_delete_flag: int
@@ -577,7 +577,7 @@ class PersistableModelListViewDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this PersistableModelListViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。 
 
         :return: The rdm_extension_type of this PersistableModelListViewDTO.
         :rtype: str
@@ -588,7 +588,7 @@ class PersistableModelListViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this PersistableModelListViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this PersistableModelListViewDTO.
         :type rdm_extension_type: str
@@ -599,7 +599,7 @@ class PersistableModelListViewDTO:
     def rdm_version(self):
         r"""Gets the rdm_version of this PersistableModelListViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。 
 
         :return: The rdm_version of this PersistableModelListViewDTO.
         :rtype: int
@@ -610,7 +610,7 @@ class PersistableModelListViewDTO:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this PersistableModelListViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。 
 
         :param rdm_version: The rdm_version of this PersistableModelListViewDTO.
         :type rdm_version: int
@@ -657,7 +657,7 @@ class PersistableModelListViewDTO:
     def unique_key(self):
         r"""Gets the unique_key of this PersistableModelListViewDTO.
 
-        **参数解释：**  示例模型的唯一键约束属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键约束属性。  **取值范围：**  不涉及。 
 
         :return: The unique_key of this PersistableModelListViewDTO.
         :rtype: str
@@ -668,7 +668,7 @@ class PersistableModelListViewDTO:
     def unique_key(self, unique_key):
         r"""Sets the unique_key of this PersistableModelListViewDTO.
 
-        **参数解释：**  示例模型的唯一键约束属性。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键约束属性。  **取值范围：**  不涉及。 
 
         :param unique_key: The unique_key of this PersistableModelListViewDTO.
         :type unique_key: str

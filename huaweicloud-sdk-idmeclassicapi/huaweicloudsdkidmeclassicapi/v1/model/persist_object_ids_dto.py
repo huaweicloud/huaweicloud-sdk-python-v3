@@ -27,7 +27,7 @@ class PersistObjectIdsDTO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param ids: **参数解释：**  数据实例ID列表。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type ids: list[str]
         """
         
@@ -42,7 +42,7 @@ class PersistObjectIdsDTO:
     def ids(self):
         r"""Gets the ids of this PersistObjectIdsDTO.
 
-        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID列表。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The ids of this PersistObjectIdsDTO.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class PersistObjectIdsDTO:
     def ids(self, ids):
         r"""Sets the ids of this PersistObjectIdsDTO.
 
-        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID列表。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param ids: The ids of this PersistObjectIdsDTO.
         :type ids: list[str]

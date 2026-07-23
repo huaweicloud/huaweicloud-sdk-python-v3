@@ -31,7 +31,7 @@ class PersistableModelUniqueKeyDTO:
 
         :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
         :type decrypt: bool
-        :param unique_key: **参数解释：**  示例模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param unique_key: **参数解释：**  数据模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type unique_key: str
         """
         
@@ -71,7 +71,7 @@ class PersistableModelUniqueKeyDTO:
     def unique_key(self):
         r"""Gets the unique_key of this PersistableModelUniqueKeyDTO.
 
-        **参数解释：**  示例模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The unique_key of this PersistableModelUniqueKeyDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class PersistableModelUniqueKeyDTO:
     def unique_key(self, unique_key):
         r"""Sets the unique_key of this PersistableModelUniqueKeyDTO.
 
-        **参数解释：**  示例模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param unique_key: The unique_key of this PersistableModelUniqueKeyDTO.
         :type unique_key: str

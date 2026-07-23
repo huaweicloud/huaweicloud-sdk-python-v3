@@ -12,10 +12,14 @@ class ConfigRegion:
     EU_WEST_101 = Region("eu-west-101",
                         "https://rms.eu-west-101.myhuaweicloud.com",
                         "https://rms.eu-west-101.myhuaweicloud.cn")
+    RU_MOSCOW_1 = Region("ru-moscow-1",
+                        "https://rms.ru-moscow-1.myhuaweicloud.com",
+                        "https://rms.ru-moscow-1.myhuaweicloud.cn")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "eu-west-101": EU_WEST_101,
+        "ru-moscow-1": RU_MOSCOW_1,
     }
 
     @classmethod

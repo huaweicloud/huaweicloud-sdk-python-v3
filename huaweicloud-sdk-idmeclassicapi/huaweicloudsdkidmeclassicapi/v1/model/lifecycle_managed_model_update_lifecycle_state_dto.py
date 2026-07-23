@@ -31,11 +31,11 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  数据实例ID，用于指定待修改生命周期状态的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type id: str
         :param lifecycle_state: 
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，用于记录执行设置生命周期状态操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -55,7 +55,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self):
         r"""Gets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID，用于指定待修改生命周期状态的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -66,7 +66,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def id(self, id):
         r"""Sets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID，用于指定待修改生命周期状态的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param id: The id of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type id: str
@@ -95,7 +95,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self):
         r"""Gets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行设置生命周期状态操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -106,7 +106,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行设置生命周期状态操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type modifier: str

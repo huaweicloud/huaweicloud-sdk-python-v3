@@ -33,6 +33,7 @@ from huaweicloudsdkcdm.v1.model.cluster_detail_instance_flavor import ClusterDet
 from huaweicloudsdkcdm.v1.model.cluster_detail_instance_volume import ClusterDetailInstanceVolume
 from huaweicloudsdkcdm.v1.model.cluster_instance import ClusterInstance
 from huaweicloudsdkcdm.v1.model.cluster_links import ClusterLinks
+from huaweicloudsdkcdm.v1.model.cluster_tag import ClusterTag
 from huaweicloudsdkcdm.v1.model.cluster_task import ClusterTask
 from huaweicloudsdkcdm.v1.model.clusters import Clusters
 from huaweicloudsdkcdm.v1.model.config_values import ConfigValues

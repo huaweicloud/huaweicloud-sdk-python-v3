@@ -31,9 +31,9 @@ class DeleteMultiViewRequest:
 
         The model defined in huaweicloud sdk
 
-        :param mv_model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :param mv_model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
         :type mv_model_name: str
-        :param identifier: 应用ID。
+        :param identifier: 应用ID，用于指定实例所属的应用。
         :type identifier: str
         :param body: Body of the DeleteMultiViewRequest
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMultiViewModelMasterIdModifierDTO`
@@ -55,7 +55,7 @@ class DeleteMultiViewRequest:
     def mv_model_name(self):
         r"""Gets the mv_model_name of this DeleteMultiViewRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :return: The mv_model_name of this DeleteMultiViewRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class DeleteMultiViewRequest:
     def mv_model_name(self, mv_model_name):
         r"""Sets the mv_model_name of this DeleteMultiViewRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :param mv_model_name: The mv_model_name of this DeleteMultiViewRequest.
         :type mv_model_name: str
@@ -77,7 +77,7 @@ class DeleteMultiViewRequest:
     def identifier(self):
         r"""Gets the identifier of this DeleteMultiViewRequest.
 
-        应用ID。
+        应用ID，用于指定实例所属的应用。
 
         :return: The identifier of this DeleteMultiViewRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteMultiViewRequest:
     def identifier(self, identifier):
         r"""Sets the identifier of this DeleteMultiViewRequest.
 
-        应用ID。
+        应用ID，用于指定实例所属的应用。
 
         :param identifier: The identifier of this DeleteMultiViewRequest.
         :type identifier: str

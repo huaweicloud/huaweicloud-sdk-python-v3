@@ -15,35 +15,57 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
     sensitive_list = []
 
     openapi_types = {
-        'params': 'MultiViewModelMasterIdModifierDTO',
-        'application_id': 'str'
+        'application_id': 'str',
+        'params': 'MultiViewModelMasterIdModifierDTO'
     }
 
     attribute_map = {
-        'params': 'params',
-        'application_id': 'applicationId'
+        'application_id': 'applicationId',
+        'params': 'params'
     }
 
-    def __init__(self, params=None, application_id=None):
+    def __init__(self, application_id=None, params=None):
         r"""RDMParamVOMultiViewModelMasterIdModifierDTO
 
         The model defined in huaweicloud sdk
 
+        :param application_id: **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
+        :type application_id: str
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterIdModifierDTO`
-        :param application_id: 应用ID。
-        :type application_id: str
         """
         
         
 
-        self._params = None
         self._application_id = None
+        self._params = None
         self.discriminator = None
 
-        self.params = params
         if application_id is not None:
             self.application_id = application_id
+        self.params = params
+
+    @property
+    def application_id(self):
+        r"""Gets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
+
+        :return: The application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        :rtype: str
+        """
+        return self._application_id
+
+    @application_id.setter
+    def application_id(self, application_id):
+        r"""Sets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
+
+        :param application_id: The application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        :type application_id: str
+        """
+        self._application_id = application_id
 
     @property
     def params(self):
@@ -62,28 +84,6 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterIdModifierDTO`
         """
         self._params = params
-
-    @property
-    def application_id(self):
-        r"""Gets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
-
-        应用ID。
-
-        :return: The application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
-        :rtype: str
-        """
-        return self._application_id
-
-    @application_id.setter
-    def application_id(self, application_id):
-        r"""Sets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
-
-        应用ID。
-
-        :param application_id: The application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
-        :type application_id: str
-        """
-        self._application_id = application_id
 
     def to_dict(self):
         result = {}

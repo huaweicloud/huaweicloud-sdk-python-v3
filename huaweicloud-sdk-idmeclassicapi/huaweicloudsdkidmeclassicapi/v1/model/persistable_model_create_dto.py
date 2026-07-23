@@ -41,21 +41,21 @@ class PersistableModelCreateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type creator: str
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  数据实例的唯一标识。 如不填写，系统将自动生成。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type id: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type last_update_time: str
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param unique_key: **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param unique_key: **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type unique_key: str
         """
         
@@ -92,7 +92,7 @@ class PersistableModelCreateDTO:
     def create_time(self):
         r"""Gets the create_time of this PersistableModelCreateDTO.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The create_time of this PersistableModelCreateDTO.
         :rtype: str
@@ -103,7 +103,7 @@ class PersistableModelCreateDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this PersistableModelCreateDTO.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param create_time: The create_time of this PersistableModelCreateDTO.
         :type create_time: str
@@ -114,7 +114,7 @@ class PersistableModelCreateDTO:
     def creator(self):
         r"""Gets the creator of this PersistableModelCreateDTO.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The creator of this PersistableModelCreateDTO.
         :rtype: str
@@ -125,7 +125,7 @@ class PersistableModelCreateDTO:
     def creator(self, creator):
         r"""Sets the creator of this PersistableModelCreateDTO.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param creator: The creator of this PersistableModelCreateDTO.
         :type creator: str
@@ -136,7 +136,7 @@ class PersistableModelCreateDTO:
     def id(self):
         r"""Gets the id of this PersistableModelCreateDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识。 如不填写，系统将自动生成。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The id of this PersistableModelCreateDTO.
         :rtype: str
@@ -147,7 +147,7 @@ class PersistableModelCreateDTO:
     def id(self, id):
         r"""Sets the id of this PersistableModelCreateDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识。 如不填写，系统将自动生成。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param id: The id of this PersistableModelCreateDTO.
         :type id: str
@@ -158,7 +158,7 @@ class PersistableModelCreateDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this PersistableModelCreateDTO.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The last_update_time of this PersistableModelCreateDTO.
         :rtype: str
@@ -169,7 +169,7 @@ class PersistableModelCreateDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this PersistableModelCreateDTO.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param last_update_time: The last_update_time of this PersistableModelCreateDTO.
         :type last_update_time: str
@@ -180,7 +180,7 @@ class PersistableModelCreateDTO:
     def modifier(self):
         r"""Gets the modifier of this PersistableModelCreateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this PersistableModelCreateDTO.
         :rtype: str
@@ -191,7 +191,7 @@ class PersistableModelCreateDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this PersistableModelCreateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this PersistableModelCreateDTO.
         :type modifier: str
@@ -202,7 +202,7 @@ class PersistableModelCreateDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this PersistableModelCreateDTO.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The rdm_extension_type of this PersistableModelCreateDTO.
         :rtype: str
@@ -213,7 +213,7 @@ class PersistableModelCreateDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this PersistableModelCreateDTO.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this PersistableModelCreateDTO.
         :type rdm_extension_type: str
@@ -242,7 +242,7 @@ class PersistableModelCreateDTO:
     def unique_key(self):
         r"""Gets the unique_key of this PersistableModelCreateDTO.
 
-        **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The unique_key of this PersistableModelCreateDTO.
         :rtype: str
@@ -253,7 +253,7 @@ class PersistableModelCreateDTO:
     def unique_key(self, unique_key):
         r"""Sets the unique_key of this PersistableModelCreateDTO.
 
-        **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param unique_key: The unique_key of this PersistableModelCreateDTO.
         :type unique_key: str

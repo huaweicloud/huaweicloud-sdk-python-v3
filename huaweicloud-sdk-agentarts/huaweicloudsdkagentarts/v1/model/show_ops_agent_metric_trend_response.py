@@ -16,29 +16,36 @@ class ShowOpsAgentMetricTrendResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'line_list': 'list[FrontLine]'
+        'line_list': 'list[FrontLine]',
+        'step': 'str'
     }
 
     attribute_map = {
-        'line_list': 'line_list'
+        'line_list': 'line_list',
+        'step': 'step'
     }
 
-    def __init__(self, line_list=None):
+    def __init__(self, line_list=None, step=None):
         r"""ShowOpsAgentMetricTrendResponse
 
         The model defined in huaweicloud sdk
 
         :param line_list: 趋势图数据
         :type line_list: list[:class:`huaweicloudsdkagentarts.v1.FrontLine`]
+        :param step: 步长 
+        :type step: str
         """
         
         super().__init__()
 
         self._line_list = None
+        self._step = None
         self.discriminator = None
 
         if line_list is not None:
             self.line_list = line_list
+        if step is not None:
+            self.step = step
 
     @property
     def line_list(self):
@@ -61,6 +68,28 @@ class ShowOpsAgentMetricTrendResponse(SdkResponse):
         :type line_list: list[:class:`huaweicloudsdkagentarts.v1.FrontLine`]
         """
         self._line_list = line_list
+
+    @property
+    def step(self):
+        r"""Gets the step of this ShowOpsAgentMetricTrendResponse.
+
+        步长 
+
+        :return: The step of this ShowOpsAgentMetricTrendResponse.
+        :rtype: str
+        """
+        return self._step
+
+    @step.setter
+    def step(self, step):
+        r"""Sets the step of this ShowOpsAgentMetricTrendResponse.
+
+        步长 
+
+        :param step: The step of this ShowOpsAgentMetricTrendResponse.
+        :type step: str
+        """
+        self._step = step
 
     def to_dict(self):
         import warnings

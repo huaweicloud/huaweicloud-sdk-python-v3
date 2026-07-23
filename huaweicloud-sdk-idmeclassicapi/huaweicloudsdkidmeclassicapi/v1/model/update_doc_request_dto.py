@@ -33,13 +33,13 @@ class UpdateDocRequestDto:
 
         The model defined in huaweicloud sdk
 
-        :param document_id: **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param document_id: **参数解释：**  KooPage文档ID，用于唯一标识待更新的结构化文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type document_id: str
-        :param title: **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param title: **参数解释：**  文档标题，用于指定更新后的文档名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type title: str
-        :param instance_id: **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param instance_id: **参数解释：**  实例ID，用于通过关联的数据模型实例定位待更新的文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type instance_id: str
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param modifier: **参数解释：**  更新者账号，用于记录执行本次更新操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
         :type modifier: str
         """
         
@@ -51,12 +51,10 @@ class UpdateDocRequestDto:
         self._modifier = None
         self.discriminator = None
 
-        if document_id is not None:
-            self.document_id = document_id
+        self.document_id = document_id
         if title is not None:
             self.title = title
-        if instance_id is not None:
-            self.instance_id = instance_id
+        self.instance_id = instance_id
         if modifier is not None:
             self.modifier = modifier
 
@@ -64,7 +62,7 @@ class UpdateDocRequestDto:
     def document_id(self):
         r"""Gets the document_id of this UpdateDocRequestDto.
 
-        **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  KooPage文档ID，用于唯一标识待更新的结构化文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The document_id of this UpdateDocRequestDto.
         :rtype: str
@@ -75,7 +73,7 @@ class UpdateDocRequestDto:
     def document_id(self, document_id):
         r"""Sets the document_id of this UpdateDocRequestDto.
 
-        **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  KooPage文档ID，用于唯一标识待更新的结构化文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param document_id: The document_id of this UpdateDocRequestDto.
         :type document_id: str
@@ -86,7 +84,7 @@ class UpdateDocRequestDto:
     def title(self):
         r"""Gets the title of this UpdateDocRequestDto.
 
-        **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档标题，用于指定更新后的文档名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The title of this UpdateDocRequestDto.
         :rtype: str
@@ -97,7 +95,7 @@ class UpdateDocRequestDto:
     def title(self, title):
         r"""Sets the title of this UpdateDocRequestDto.
 
-        **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档标题，用于指定更新后的文档名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param title: The title of this UpdateDocRequestDto.
         :type title: str
@@ -108,7 +106,7 @@ class UpdateDocRequestDto:
     def instance_id(self):
         r"""Gets the instance_id of this UpdateDocRequestDto.
 
-        **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  实例ID，用于通过关联的数据模型实例定位待更新的文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The instance_id of this UpdateDocRequestDto.
         :rtype: str
@@ -119,7 +117,7 @@ class UpdateDocRequestDto:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this UpdateDocRequestDto.
 
-        **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  实例ID，用于通过关联的数据模型实例定位待更新的文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param instance_id: The instance_id of this UpdateDocRequestDto.
         :type instance_id: str
@@ -130,7 +128,7 @@ class UpdateDocRequestDto:
     def modifier(self):
         r"""Gets the modifier of this UpdateDocRequestDto.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，用于记录执行本次更新操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
 
         :return: The modifier of this UpdateDocRequestDto.
         :rtype: str
@@ -141,7 +139,7 @@ class UpdateDocRequestDto:
     def modifier(self, modifier):
         r"""Sets the modifier of this UpdateDocRequestDto.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，用于记录执行本次更新操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
 
         :param modifier: The modifier of this UpdateDocRequestDto.
         :type modifier: str

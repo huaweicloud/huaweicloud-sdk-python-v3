@@ -31,11 +31,11 @@ class TagOperationDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param object_id: **参数解释：**  目标数据实例ID。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type object_id: str
-        :param tag_id: **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param tag_id: **参数解释：**  当前租户下标签ID。 获取方法请参见[全量数据服务](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0154.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type tag_id: str
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，用于记录执行此操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -55,7 +55,7 @@ class TagOperationDTO:
     def object_id(self):
         r"""Gets the object_id of this TagOperationDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标数据实例ID。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The object_id of this TagOperationDTO.
         :rtype: str
@@ -66,7 +66,7 @@ class TagOperationDTO:
     def object_id(self, object_id):
         r"""Sets the object_id of this TagOperationDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标数据实例ID。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param object_id: The object_id of this TagOperationDTO.
         :type object_id: str
@@ -77,7 +77,7 @@ class TagOperationDTO:
     def tag_id(self):
         r"""Gets the tag_id of this TagOperationDTO.
 
-        **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  当前租户下标签ID。 获取方法请参见[全量数据服务](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0154.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The tag_id of this TagOperationDTO.
         :rtype: str
@@ -88,7 +88,7 @@ class TagOperationDTO:
     def tag_id(self, tag_id):
         r"""Sets the tag_id of this TagOperationDTO.
 
-        **参数解释：**  标签ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  当前租户下标签ID。 获取方法请参见[全量数据服务](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0154.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param tag_id: The tag_id of this TagOperationDTO.
         :type tag_id: str
@@ -99,7 +99,7 @@ class TagOperationDTO:
     def modifier(self):
         r"""Gets the modifier of this TagOperationDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行此操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this TagOperationDTO.
         :rtype: str
@@ -110,7 +110,7 @@ class TagOperationDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this TagOperationDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行此操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this TagOperationDTO.
         :type modifier: str

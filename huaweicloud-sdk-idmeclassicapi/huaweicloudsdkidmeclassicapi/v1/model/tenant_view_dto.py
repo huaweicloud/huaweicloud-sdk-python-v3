@@ -27,6 +27,7 @@ class TenantViewDTO:
         'last_update_time': 'str',
         'modifier': 'str',
         'name': 'str',
+        'name_en': 'str',
         'rdm_delete_flag': 'int',
         'rdm_extension_type': 'str',
         'rdm_version': 'int',
@@ -47,6 +48,7 @@ class TenantViewDTO:
         'last_update_time': 'lastUpdateTime',
         'modifier': 'modifier',
         'name': 'name',
+        'name_en': 'nameEn',
         'rdm_delete_flag': 'rdmDeleteFlag',
         'rdm_extension_type': 'rdmExtensionType',
         'rdm_version': 'rdmVersion',
@@ -54,42 +56,44 @@ class TenantViewDTO:
         'tenant': 'tenant'
     }
 
-    def __init__(self, class_name=None, code=None, create_time=None, creator=None, data_source=None, description=None, disable_flag=None, id=None, kiaguid=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, security_level=None, tenant=None):
+    def __init__(self, class_name=None, code=None, create_time=None, creator=None, data_source=None, description=None, disable_flag=None, id=None, kiaguid=None, last_update_time=None, modifier=None, name=None, name_en=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, security_level=None, tenant=None):
         r"""TenantViewDTO
 
         The model defined in huaweicloud sdk
 
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param class_name: **参数解释：**  租户对象的类名。  **取值范围：**  不涉及。
         :type class_name: str
-        :param code: **参数解释：**  租户编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param code: **参数解释：**  租户编码，用于多租户场景下的租户唯一标识。  **取值范围：**  不涉及。
         :type code: str
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  租户对象的创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  租户对象的创建者账号。  **取值范围：**  不涉及。
         :type creator: str
-        :param data_source: **参数解释：**  租户使用的数据源名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param data_source: **参数解释：**  租户使用的数据源名称，用于多租户数据隔离。  **取值范围：**  不涉及。
         :type data_source: str
-        :param description: **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param description: **参数解释：**  租户描述信息。  **取值范围：**  不涉及。
         :type description: str
-        :param disable_flag: **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
+        :param disable_flag: **参数解释：**  租户失效标识，用于标识租户是否已失效。   **取值范围：**  - true：失效。  - false：未失效（默认）。
         :type disable_flag: bool
-        :param id: **参数解释：**  唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  租户的唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。
         :type id: str
-        :param kiaguid: **参数解释：**  KIA密级。   **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param kiaguid: **参数解释：**  租户KIA密级。   **取值范围：**  不涉及。
         :type kiaguid: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  租户的最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type last_update_time: str
-        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  租户的更新者账号。  **取值范围：**  不涉及。
         :type modifier: str
-        :param name: **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param name: **参数解释：**  租户中文名称。  **取值范围：**  不涉及。
         :type name: str
-        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        :param name_en: **参数解释：**  租户英文名称。  **取值范围：**  不涉及。
+        :type name_en: str
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  租户扩展类型。  **取值范围：**  不涉及。
         :type rdm_extension_type: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_version: **参数解释：**  租户对象的系统版本号。  **取值范围：**  不涉及。
         :type rdm_version: int
-        :param security_level: **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        :param security_level: **参数解释：**  租户安全密级，用于标识租户信息的安全等级。  **取值范围：**  - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
         :type security_level: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -109,6 +113,7 @@ class TenantViewDTO:
         self._last_update_time = None
         self._modifier = None
         self._name = None
+        self._name_en = None
         self._rdm_delete_flag = None
         self._rdm_extension_type = None
         self._rdm_version = None
@@ -138,6 +143,8 @@ class TenantViewDTO:
             self.modifier = modifier
         if name is not None:
             self.name = name
+        if name_en is not None:
+            self.name_en = name_en
         if rdm_delete_flag is not None:
             self.rdm_delete_flag = rdm_delete_flag
         if rdm_extension_type is not None:
@@ -153,7 +160,7 @@ class TenantViewDTO:
     def class_name(self):
         r"""Gets the class_name of this TenantViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的类名。  **取值范围：**  不涉及。
 
         :return: The class_name of this TenantViewDTO.
         :rtype: str
@@ -164,7 +171,7 @@ class TenantViewDTO:
     def class_name(self, class_name):
         r"""Sets the class_name of this TenantViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的类名。  **取值范围：**  不涉及。
 
         :param class_name: The class_name of this TenantViewDTO.
         :type class_name: str
@@ -175,7 +182,7 @@ class TenantViewDTO:
     def code(self):
         r"""Gets the code of this TenantViewDTO.
 
-        **参数解释：**  租户编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户编码，用于多租户场景下的租户唯一标识。  **取值范围：**  不涉及。
 
         :return: The code of this TenantViewDTO.
         :rtype: str
@@ -186,7 +193,7 @@ class TenantViewDTO:
     def code(self, code):
         r"""Sets the code of this TenantViewDTO.
 
-        **参数解释：**  租户编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户编码，用于多租户场景下的租户唯一标识。  **取值范围：**  不涉及。
 
         :param code: The code of this TenantViewDTO.
         :type code: str
@@ -197,7 +204,7 @@ class TenantViewDTO:
     def create_time(self):
         r"""Gets the create_time of this TenantViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The create_time of this TenantViewDTO.
         :rtype: str
@@ -208,7 +215,7 @@ class TenantViewDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this TenantViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param create_time: The create_time of this TenantViewDTO.
         :type create_time: str
@@ -219,7 +226,7 @@ class TenantViewDTO:
     def creator(self):
         r"""Gets the creator of this TenantViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的创建者账号。  **取值范围：**  不涉及。
 
         :return: The creator of this TenantViewDTO.
         :rtype: str
@@ -230,7 +237,7 @@ class TenantViewDTO:
     def creator(self, creator):
         r"""Sets the creator of this TenantViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的创建者账号。  **取值范围：**  不涉及。
 
         :param creator: The creator of this TenantViewDTO.
         :type creator: str
@@ -241,7 +248,7 @@ class TenantViewDTO:
     def data_source(self):
         r"""Gets the data_source of this TenantViewDTO.
 
-        **参数解释：**  租户使用的数据源名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户使用的数据源名称，用于多租户数据隔离。  **取值范围：**  不涉及。
 
         :return: The data_source of this TenantViewDTO.
         :rtype: str
@@ -252,7 +259,7 @@ class TenantViewDTO:
     def data_source(self, data_source):
         r"""Sets the data_source of this TenantViewDTO.
 
-        **参数解释：**  租户使用的数据源名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户使用的数据源名称，用于多租户数据隔离。  **取值范围：**  不涉及。
 
         :param data_source: The data_source of this TenantViewDTO.
         :type data_source: str
@@ -263,7 +270,7 @@ class TenantViewDTO:
     def description(self):
         r"""Gets the description of this TenantViewDTO.
 
-        **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户描述信息。  **取值范围：**  不涉及。
 
         :return: The description of this TenantViewDTO.
         :rtype: str
@@ -274,7 +281,7 @@ class TenantViewDTO:
     def description(self, description):
         r"""Sets the description of this TenantViewDTO.
 
-        **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户描述信息。  **取值范围：**  不涉及。
 
         :param description: The description of this TenantViewDTO.
         :type description: str
@@ -285,7 +292,7 @@ class TenantViewDTO:
     def disable_flag(self):
         r"""Gets the disable_flag of this TenantViewDTO.
 
-        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
+        **参数解释：**  租户失效标识，用于标识租户是否已失效。   **取值范围：**  - true：失效。  - false：未失效（默认）。
 
         :return: The disable_flag of this TenantViewDTO.
         :rtype: bool
@@ -296,7 +303,7 @@ class TenantViewDTO:
     def disable_flag(self, disable_flag):
         r"""Sets the disable_flag of this TenantViewDTO.
 
-        **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
+        **参数解释：**  租户失效标识，用于标识租户是否已失效。   **取值范围：**  - true：失效。  - false：未失效（默认）。
 
         :param disable_flag: The disable_flag of this TenantViewDTO.
         :type disable_flag: bool
@@ -307,7 +314,7 @@ class TenantViewDTO:
     def id(self):
         r"""Gets the id of this TenantViewDTO.
 
-        **参数解释：**  唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :return: The id of this TenantViewDTO.
         :rtype: str
@@ -318,7 +325,7 @@ class TenantViewDTO:
     def id(self, id):
         r"""Sets the id of this TenantViewDTO.
 
-        **参数解释：**  唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的唯一标识。   **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :param id: The id of this TenantViewDTO.
         :type id: str
@@ -329,7 +336,7 @@ class TenantViewDTO:
     def kiaguid(self):
         r"""Gets the kiaguid of this TenantViewDTO.
 
-        **参数解释：**  KIA密级。   **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户KIA密级。   **取值范围：**  不涉及。
 
         :return: The kiaguid of this TenantViewDTO.
         :rtype: str
@@ -340,7 +347,7 @@ class TenantViewDTO:
     def kiaguid(self, kiaguid):
         r"""Sets the kiaguid of this TenantViewDTO.
 
-        **参数解释：**  KIA密级。   **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户KIA密级。   **取值范围：**  不涉及。
 
         :param kiaguid: The kiaguid of this TenantViewDTO.
         :type kiaguid: str
@@ -351,7 +358,7 @@ class TenantViewDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this TenantViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The last_update_time of this TenantViewDTO.
         :rtype: str
@@ -362,7 +369,7 @@ class TenantViewDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this TenantViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param last_update_time: The last_update_time of this TenantViewDTO.
         :type last_update_time: str
@@ -373,7 +380,7 @@ class TenantViewDTO:
     def modifier(self):
         r"""Gets the modifier of this TenantViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的更新者账号。  **取值范围：**  不涉及。
 
         :return: The modifier of this TenantViewDTO.
         :rtype: str
@@ -384,7 +391,7 @@ class TenantViewDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this TenantViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户的更新者账号。  **取值范围：**  不涉及。
 
         :param modifier: The modifier of this TenantViewDTO.
         :type modifier: str
@@ -395,7 +402,7 @@ class TenantViewDTO:
     def name(self):
         r"""Gets the name of this TenantViewDTO.
 
-        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户中文名称。  **取值范围：**  不涉及。
 
         :return: The name of this TenantViewDTO.
         :rtype: str
@@ -406,7 +413,7 @@ class TenantViewDTO:
     def name(self, name):
         r"""Sets the name of this TenantViewDTO.
 
-        **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户中文名称。  **取值范围：**  不涉及。
 
         :param name: The name of this TenantViewDTO.
         :type name: str
@@ -414,10 +421,32 @@ class TenantViewDTO:
         self._name = name
 
     @property
+    def name_en(self):
+        r"""Gets the name_en of this TenantViewDTO.
+
+        **参数解释：**  租户英文名称。  **取值范围：**  不涉及。
+
+        :return: The name_en of this TenantViewDTO.
+        :rtype: str
+        """
+        return self._name_en
+
+    @name_en.setter
+    def name_en(self, name_en):
+        r"""Sets the name_en of this TenantViewDTO.
+
+        **参数解释：**  租户英文名称。  **取值范围：**  不涉及。
+
+        :param name_en: The name_en of this TenantViewDTO.
+        :type name_en: str
+        """
+        self._name_en = name_en
+
+    @property
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this TenantViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :return: The rdm_delete_flag of this TenantViewDTO.
         :rtype: int
@@ -428,7 +457,7 @@ class TenantViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this TenantViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :param rdm_delete_flag: The rdm_delete_flag of this TenantViewDTO.
         :type rdm_delete_flag: int
@@ -439,7 +468,7 @@ class TenantViewDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this TenantViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户扩展类型。  **取值范围：**  不涉及。
 
         :return: The rdm_extension_type of this TenantViewDTO.
         :rtype: str
@@ -450,7 +479,7 @@ class TenantViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this TenantViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户扩展类型。  **取值范围：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this TenantViewDTO.
         :type rdm_extension_type: str
@@ -461,7 +490,7 @@ class TenantViewDTO:
     def rdm_version(self):
         r"""Gets the rdm_version of this TenantViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的系统版本号。  **取值范围：**  不涉及。
 
         :return: The rdm_version of this TenantViewDTO.
         :rtype: int
@@ -472,7 +501,7 @@ class TenantViewDTO:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this TenantViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  租户对象的系统版本号。  **取值范围：**  不涉及。
 
         :param rdm_version: The rdm_version of this TenantViewDTO.
         :type rdm_version: int
@@ -483,7 +512,7 @@ class TenantViewDTO:
     def security_level(self):
         r"""Gets the security_level of this TenantViewDTO.
 
-        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        **参数解释：**  租户安全密级，用于标识租户信息的安全等级。  **取值范围：**  - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :return: The security_level of this TenantViewDTO.
         :rtype: str
@@ -494,7 +523,7 @@ class TenantViewDTO:
     def security_level(self, security_level):
         r"""Sets the security_level of this TenantViewDTO.
 
-        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        **参数解释：**  租户安全密级，用于标识租户信息的安全等级。  **取值范围：**  - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :param security_level: The security_level of this TenantViewDTO.
         :type security_level: str

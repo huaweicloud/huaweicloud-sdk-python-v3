@@ -25,7 +25,7 @@ class StructuredDocShareViewDTO:
         'rdm_extension_type': 'str',
         'tenant': 'TenantViewDTO',
         'class_name': 'str',
-        'structured_doc': 'StructuredDocView',
+        'structured_doc': 'StructuredDocViewDTO',
         'share_user_name': 'str',
         'shared_user_name': 'str',
         'shared_user_id': 'str',
@@ -57,37 +57,37 @@ class StructuredDocShareViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**：  唯一标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param id: **参数解释：**  分享权限记录的唯一标识，可用于批量删除分享权限接口定位目标记录。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type id: str
-        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param creator: **参数解释：**  创建者账号，标识创建该分享记录的用户。  **取值范围：**  不涉及。
         :type creator: str
-        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param modifier: **参数解释：**  更新者账号，标识最后更新该分享记录的用户。  **取值范围：**  不涉及。
         :type modifier: str
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type create_time: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param last_update_time: **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type last_update_time: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param rdm_version: **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
         :type rdm_version: int
-        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param rdm_extension_type: **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param class_name: **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
         :type class_name: str
         :param structured_doc: 
-        :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
-        :param share_user_name: **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocViewDTO`
+        :param share_user_name: **参数解释：**  分享用户名，标识执行分享操作的用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type share_user_name: str
-        :param shared_user_name: **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        :param shared_user_name: **参数解释：**  被分享用户名，标识接收文档分享的用户名称。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的名称。  **默认取值：**  不涉及。
         :type shared_user_name: str
-        :param shared_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        :param shared_user_id: **参数解释：**  被分享用户ID，标识接收文档分享的用户ID。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的ID。  **默认取值：**  不涉及。
         :type shared_user_id: str
-        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        :param auth_type: **参数解释：**  认证类型，标识被分享用户对文档的访问权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，被分享用户仅可查看文档内容。 - write：读写权限，被分享用户可查看和编辑文档内容。  **默认取值：**  不涉及。
         :type auth_type: str
-        :param share_user_id: **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        :param share_user_id: **参数解释：**  分享用户ID，标识执行分享操作的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type share_user_id: str
         """
         
@@ -148,7 +148,7 @@ class StructuredDocShareViewDTO:
     def id(self):
         r"""Gets the id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  唯一标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  分享权限记录的唯一标识，可用于批量删除分享权限接口定位目标记录。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The id of this StructuredDocShareViewDTO.
         :rtype: str
@@ -159,7 +159,7 @@ class StructuredDocShareViewDTO:
     def id(self, id):
         r"""Sets the id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  唯一标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  分享权限记录的唯一标识，可用于批量删除分享权限接口定位目标记录。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param id: The id of this StructuredDocShareViewDTO.
         :type id: str
@@ -170,7 +170,7 @@ class StructuredDocShareViewDTO:
     def creator(self):
         r"""Gets the creator of this StructuredDocShareViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者账号，标识创建该分享记录的用户。  **取值范围：**  不涉及。
 
         :return: The creator of this StructuredDocShareViewDTO.
         :rtype: str
@@ -181,7 +181,7 @@ class StructuredDocShareViewDTO:
     def creator(self, creator):
         r"""Sets the creator of this StructuredDocShareViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者账号，标识创建该分享记录的用户。  **取值范围：**  不涉及。
 
         :param creator: The creator of this StructuredDocShareViewDTO.
         :type creator: str
@@ -192,7 +192,7 @@ class StructuredDocShareViewDTO:
     def modifier(self):
         r"""Gets the modifier of this StructuredDocShareViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，标识最后更新该分享记录的用户。  **取值范围：**  不涉及。
 
         :return: The modifier of this StructuredDocShareViewDTO.
         :rtype: str
@@ -203,7 +203,7 @@ class StructuredDocShareViewDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this StructuredDocShareViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，标识最后更新该分享记录的用户。  **取值范围：**  不涉及。
 
         :param modifier: The modifier of this StructuredDocShareViewDTO.
         :type modifier: str
@@ -214,7 +214,7 @@ class StructuredDocShareViewDTO:
     def create_time(self):
         r"""Gets the create_time of this StructuredDocShareViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The create_time of this StructuredDocShareViewDTO.
         :rtype: str
@@ -225,7 +225,7 @@ class StructuredDocShareViewDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this StructuredDocShareViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param create_time: The create_time of this StructuredDocShareViewDTO.
         :type create_time: str
@@ -236,7 +236,7 @@ class StructuredDocShareViewDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this StructuredDocShareViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The last_update_time of this StructuredDocShareViewDTO.
         :rtype: str
@@ -247,7 +247,7 @@ class StructuredDocShareViewDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this StructuredDocShareViewDTO.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param last_update_time: The last_update_time of this StructuredDocShareViewDTO.
         :type last_update_time: str
@@ -258,7 +258,7 @@ class StructuredDocShareViewDTO:
     def rdm_version(self):
         r"""Gets the rdm_version of this StructuredDocShareViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :return: The rdm_version of this StructuredDocShareViewDTO.
         :rtype: int
@@ -269,7 +269,7 @@ class StructuredDocShareViewDTO:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this StructuredDocShareViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :param rdm_version: The rdm_version of this StructuredDocShareViewDTO.
         :type rdm_version: int
@@ -280,7 +280,7 @@ class StructuredDocShareViewDTO:
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this StructuredDocShareViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :return: The rdm_delete_flag of this StructuredDocShareViewDTO.
         :rtype: int
@@ -291,7 +291,7 @@ class StructuredDocShareViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this StructuredDocShareViewDTO.
 
-        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :param rdm_delete_flag: The rdm_delete_flag of this StructuredDocShareViewDTO.
         :type rdm_delete_flag: int
@@ -302,7 +302,7 @@ class StructuredDocShareViewDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this StructuredDocShareViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :return: The rdm_extension_type of this StructuredDocShareViewDTO.
         :rtype: str
@@ -313,7 +313,7 @@ class StructuredDocShareViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this StructuredDocShareViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this StructuredDocShareViewDTO.
         :type rdm_extension_type: str
@@ -342,7 +342,7 @@ class StructuredDocShareViewDTO:
     def class_name(self):
         r"""Gets the class_name of this StructuredDocShareViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :return: The class_name of this StructuredDocShareViewDTO.
         :rtype: str
@@ -353,7 +353,7 @@ class StructuredDocShareViewDTO:
     def class_name(self, class_name):
         r"""Sets the class_name of this StructuredDocShareViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :param class_name: The class_name of this StructuredDocShareViewDTO.
         :type class_name: str
@@ -365,7 +365,7 @@ class StructuredDocShareViewDTO:
         r"""Gets the structured_doc of this StructuredDocShareViewDTO.
 
         :return: The structured_doc of this StructuredDocShareViewDTO.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocViewDTO`
         """
         return self._structured_doc
 
@@ -374,7 +374,7 @@ class StructuredDocShareViewDTO:
         r"""Sets the structured_doc of this StructuredDocShareViewDTO.
 
         :param structured_doc: The structured_doc of this StructuredDocShareViewDTO.
-        :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
+        :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocViewDTO`
         """
         self._structured_doc = structured_doc
 
@@ -382,7 +382,7 @@ class StructuredDocShareViewDTO:
     def share_user_name(self):
         r"""Gets the share_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  分享用户名，标识执行分享操作的用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The share_user_name of this StructuredDocShareViewDTO.
         :rtype: str
@@ -393,7 +393,7 @@ class StructuredDocShareViewDTO:
     def share_user_name(self, share_user_name):
         r"""Sets the share_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  分享用户名，标识执行分享操作的用户名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param share_user_name: The share_user_name of this StructuredDocShareViewDTO.
         :type share_user_name: str
@@ -404,7 +404,7 @@ class StructuredDocShareViewDTO:
     def shared_user_name(self):
         r"""Gets the shared_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  被分享用户名，标识接收文档分享的用户名称。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的名称。  **默认取值：**  不涉及。
 
         :return: The shared_user_name of this StructuredDocShareViewDTO.
         :rtype: str
@@ -415,7 +415,7 @@ class StructuredDocShareViewDTO:
     def shared_user_name(self, shared_user_name):
         r"""Sets the shared_user_name of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  被分享用户名，标识接收文档分享的用户名称。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的名称。  **默认取值：**  不涉及。
 
         :param shared_user_name: The shared_user_name of this StructuredDocShareViewDTO.
         :type shared_user_name: str
@@ -426,7 +426,7 @@ class StructuredDocShareViewDTO:
     def shared_user_id(self):
         r"""Gets the shared_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  被分享用户ID，标识接收文档分享的用户ID。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的ID。  **默认取值：**  不涉及。
 
         :return: The shared_user_id of this StructuredDocShareViewDTO.
         :rtype: str
@@ -437,7 +437,7 @@ class StructuredDocShareViewDTO:
     def shared_user_id(self, shared_user_id):
         r"""Sets the shared_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  被分享用户ID，标识接收文档分享的用户ID。  **约束限制：**  不涉及。  **取值范围：**  - all：表示分享给所有人。 - 其他值：指定具体用户的ID。  **默认取值：**  不涉及。
 
         :param shared_user_id: The shared_user_id of this StructuredDocShareViewDTO.
         :type shared_user_id: str
@@ -448,7 +448,7 @@ class StructuredDocShareViewDTO:
     def auth_type(self):
         r"""Gets the auth_type of this StructuredDocShareViewDTO.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        **参数解释：**  认证类型，标识被分享用户对文档的访问权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，被分享用户仅可查看文档内容。 - write：读写权限，被分享用户可查看和编辑文档内容。  **默认取值：**  不涉及。
 
         :return: The auth_type of this StructuredDocShareViewDTO.
         :rtype: str
@@ -459,7 +459,7 @@ class StructuredDocShareViewDTO:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this StructuredDocShareViewDTO.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        **参数解释：**  认证类型，标识被分享用户对文档的访问权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，被分享用户仅可查看文档内容。 - write：读写权限，被分享用户可查看和编辑文档内容。  **默认取值：**  不涉及。
 
         :param auth_type: The auth_type of this StructuredDocShareViewDTO.
         :type auth_type: str
@@ -470,7 +470,7 @@ class StructuredDocShareViewDTO:
     def share_user_id(self):
         r"""Gets the share_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  分享用户ID，标识执行分享操作的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The share_user_id of this StructuredDocShareViewDTO.
         :rtype: str
@@ -481,7 +481,7 @@ class StructuredDocShareViewDTO:
     def share_user_id(self, share_user_id):
         r"""Sets the share_user_id of this StructuredDocShareViewDTO.
 
-        **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
+        **参数解释：**  分享用户ID，标识执行分享操作的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param share_user_id: The share_user_id of this StructuredDocShareViewDTO.
         :type share_user_id: str

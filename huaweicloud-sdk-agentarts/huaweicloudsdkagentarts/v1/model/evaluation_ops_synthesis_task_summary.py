@@ -55,7 +55,7 @@ class EvaluationOpsSynthesisTaskSummary:
         :type name: str
         :param scenario_type: **参数解释：**   合成任务的技术场景类型。 **约束限制：**   枚举值。 **取值范围：**   seed_data等。 **默认取值：**   不涉及。 
         :type scenario_type: str
-        :param scenario_name: **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \&quot;基于种子数据泛化\&quot;。 **默认取值：**   不涉及。 
+        :param scenario_name: **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \&quot;基于种子数据泛化\&quot;。 **默认取值：** 不涉及。
         :type scenario_name: str
         :param scenario_description: **参数解释：**   合成任务背景的详细描述。 **约束限制：**   1-4000字符。 **取值范围：**   场景背景文本。 **默认取值：**   不涉及。 
         :type scenario_description: str
@@ -186,7 +186,7 @@ class EvaluationOpsSynthesisTaskSummary:
     def scenario_name(self):
         r"""Gets the scenario_name of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \"基于种子数据泛化\"。 **默认取值：**   不涉及。 
+        **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \"基于种子数据泛化\"。 **默认取值：** 不涉及。
 
         :return: The scenario_name of this EvaluationOpsSynthesisTaskSummary.
         :rtype: str
@@ -197,7 +197,7 @@ class EvaluationOpsSynthesisTaskSummary:
     def scenario_name(self, scenario_name):
         r"""Sets the scenario_name of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \"基于种子数据泛化\"。 **默认取值：**   不涉及。 
+        **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \"基于种子数据泛化\"。 **默认取值：** 不涉及。
 
         :param scenario_name: The scenario_name of this EvaluationOpsSynthesisTaskSummary.
         :type scenario_name: str

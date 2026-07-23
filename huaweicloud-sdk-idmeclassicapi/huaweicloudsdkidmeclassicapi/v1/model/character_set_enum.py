@@ -31,11 +31,11 @@ class CharacterSetEnum:
 
         The model defined in huaweicloud sdk
 
-        :param cn_name: **参数解释：**  中文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param cn_name: **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type cn_name: str
-        :param code: **参数解释：**  编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param code: **参数解释：**  编码值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type code: str
-        :param en_name: **参数解释：**  英文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param en_name: **参数解释：**  英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type en_name: str
         """
         
@@ -57,7 +57,7 @@ class CharacterSetEnum:
     def cn_name(self):
         r"""Gets the cn_name of this CharacterSetEnum.
 
-        **参数解释：**  中文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The cn_name of this CharacterSetEnum.
         :rtype: str
@@ -68,7 +68,7 @@ class CharacterSetEnum:
     def cn_name(self, cn_name):
         r"""Sets the cn_name of this CharacterSetEnum.
 
-        **参数解释：**  中文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  中文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param cn_name: The cn_name of this CharacterSetEnum.
         :type cn_name: str
@@ -79,7 +79,7 @@ class CharacterSetEnum:
     def code(self):
         r"""Gets the code of this CharacterSetEnum.
 
-        **参数解释：**  编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  编码值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The code of this CharacterSetEnum.
         :rtype: str
@@ -90,7 +90,7 @@ class CharacterSetEnum:
     def code(self, code):
         r"""Sets the code of this CharacterSetEnum.
 
-        **参数解释：**  编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  编码值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param code: The code of this CharacterSetEnum.
         :type code: str
@@ -101,7 +101,7 @@ class CharacterSetEnum:
     def en_name(self):
         r"""Gets the en_name of this CharacterSetEnum.
 
-        **参数解释：**  英文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The en_name of this CharacterSetEnum.
         :rtype: str
@@ -112,7 +112,7 @@ class CharacterSetEnum:
     def en_name(self, en_name):
         r"""Sets the en_name of this CharacterSetEnum.
 
-        **参数解释：**  英文名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param en_name: The en_name of this CharacterSetEnum.
         :type en_name: str

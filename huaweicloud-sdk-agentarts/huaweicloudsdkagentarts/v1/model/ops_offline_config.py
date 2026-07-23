@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowOpsTraceTopologyRequest:
+class OpsOfflineConfig:
 
     """
     Attributes:
@@ -15,50 +15,51 @@ class ShowOpsTraceTopologyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'trace_id': 'str'
+        'evaluator_config': 'list[OpsEvaluatorConfigInfo]'
     }
 
     attribute_map = {
-        'trace_id': 'trace_id'
+        'evaluator_config': 'evaluator_config'
     }
 
-    def __init__(self, trace_id=None):
-        r"""ShowOpsTraceTopologyRequest
+    def __init__(self, evaluator_config=None):
+        r"""OpsOfflineConfig
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: 调用链id
-        :type trace_id: str
+        :param evaluator_config: **参数解释：** 评估器的配置。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type evaluator_config: list[:class:`huaweicloudsdkagentarts.v1.OpsEvaluatorConfigInfo`]
         """
         
         
 
-        self._trace_id = None
+        self._evaluator_config = None
         self.discriminator = None
 
-        self.trace_id = trace_id
+        if evaluator_config is not None:
+            self.evaluator_config = evaluator_config
 
     @property
-    def trace_id(self):
-        r"""Gets the trace_id of this ShowOpsTraceTopologyRequest.
+    def evaluator_config(self):
+        r"""Gets the evaluator_config of this OpsOfflineConfig.
 
-        调用链id
+        **参数解释：** 评估器的配置。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
 
-        :return: The trace_id of this ShowOpsTraceTopologyRequest.
-        :rtype: str
+        :return: The evaluator_config of this OpsOfflineConfig.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsEvaluatorConfigInfo`]
         """
-        return self._trace_id
+        return self._evaluator_config
 
-    @trace_id.setter
-    def trace_id(self, trace_id):
-        r"""Sets the trace_id of this ShowOpsTraceTopologyRequest.
+    @evaluator_config.setter
+    def evaluator_config(self, evaluator_config):
+        r"""Sets the evaluator_config of this OpsOfflineConfig.
 
-        调用链id
+        **参数解释：** 评估器的配置。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
 
-        :param trace_id: The trace_id of this ShowOpsTraceTopologyRequest.
-        :type trace_id: str
+        :param evaluator_config: The evaluator_config of this OpsOfflineConfig.
+        :type evaluator_config: list[:class:`huaweicloudsdkagentarts.v1.OpsEvaluatorConfigInfo`]
         """
-        self._trace_id = trace_id
+        self._evaluator_config = evaluator_config
 
     def to_dict(self):
         result = {}
@@ -97,7 +98,7 @@ class ShowOpsTraceTopologyRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowOpsTraceTopologyRequest):
+        if not isinstance(other, OpsOfflineConfig):
             return False
 
         return self.__dict__ == other.__dict__

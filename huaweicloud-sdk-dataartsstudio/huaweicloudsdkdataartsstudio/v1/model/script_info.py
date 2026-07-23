@@ -26,6 +26,7 @@ class ScriptInfo:
         'configuration': 'object',
         'description': 'str',
         'owner': 'str',
+        'modify_time': 'int',
         'version': 'int'
     }
 
@@ -41,10 +42,11 @@ class ScriptInfo:
         'configuration': 'configuration',
         'description': 'description',
         'owner': 'owner',
+        'modify_time': 'modify_time',
         'version': 'version'
     }
 
-    def __init__(self, name=None, type=None, directory=None, id=None, create_user=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, version=None):
+    def __init__(self, name=None, type=None, directory=None, id=None, create_user=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, modify_time=None, version=None):
         r"""ScriptInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ScriptInfo:
         :type description: str
         :param owner: 责任人名称。
         :type owner: str
+        :param modify_time: 脚本最后修改时间。
+        :type modify_time: int
         :param version: 脚本最新提交版本。
         :type version: int
         """
@@ -88,6 +92,7 @@ class ScriptInfo:
         self._configuration = None
         self._description = None
         self._owner = None
+        self._modify_time = None
         self._version = None
         self.discriminator = None
 
@@ -113,6 +118,8 @@ class ScriptInfo:
             self.description = description
         if owner is not None:
             self.owner = owner
+        if modify_time is not None:
+            self.modify_time = modify_time
         if version is not None:
             self.version = version
 
@@ -357,6 +364,28 @@ class ScriptInfo:
         :type owner: str
         """
         self._owner = owner
+
+    @property
+    def modify_time(self):
+        r"""Gets the modify_time of this ScriptInfo.
+
+        脚本最后修改时间。
+
+        :return: The modify_time of this ScriptInfo.
+        :rtype: int
+        """
+        return self._modify_time
+
+    @modify_time.setter
+    def modify_time(self, modify_time):
+        r"""Sets the modify_time of this ScriptInfo.
+
+        脚本最后修改时间。
+
+        :param modify_time: The modify_time of this ScriptInfo.
+        :type modify_time: int
+        """
+        self._modify_time = modify_time
 
     @property
     def version(self):

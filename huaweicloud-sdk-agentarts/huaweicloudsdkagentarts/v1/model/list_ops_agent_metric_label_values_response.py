@@ -16,35 +16,42 @@ class ListOpsAgentMetricLabelValuesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data_list': 'list[str]'
+        'data_list': 'list[str]',
+        'data_extend_list': 'list[ComponentExtendInfo]'
     }
 
     attribute_map = {
-        'data_list': 'data_list'
+        'data_list': 'data_list',
+        'data_extend_list': 'data_extend_list'
     }
 
-    def __init__(self, data_list=None):
+    def __init__(self, data_list=None, data_extend_list=None):
         r"""ListOpsAgentMetricLabelValuesResponse
 
         The model defined in huaweicloud sdk
 
-        :param data_list: 组件列表
+        :param data_list: **参数解释**：  组件列表。  **取值范围**： 不涉及。 
         :type data_list: list[str]
+        :param data_extend_list: **参数解释**：  组件扩展属性列表，返回组件的ID和名称等扩展信息。  **取值范围**： 不涉及。 
+        :type data_extend_list: list[:class:`huaweicloudsdkagentarts.v1.ComponentExtendInfo`]
         """
         
         super().__init__()
 
         self._data_list = None
+        self._data_extend_list = None
         self.discriminator = None
 
         if data_list is not None:
             self.data_list = data_list
+        if data_extend_list is not None:
+            self.data_extend_list = data_extend_list
 
     @property
     def data_list(self):
         r"""Gets the data_list of this ListOpsAgentMetricLabelValuesResponse.
 
-        组件列表
+        **参数解释**：  组件列表。  **取值范围**： 不涉及。 
 
         :return: The data_list of this ListOpsAgentMetricLabelValuesResponse.
         :rtype: list[str]
@@ -55,12 +62,34 @@ class ListOpsAgentMetricLabelValuesResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListOpsAgentMetricLabelValuesResponse.
 
-        组件列表
+        **参数解释**：  组件列表。  **取值范围**： 不涉及。 
 
         :param data_list: The data_list of this ListOpsAgentMetricLabelValuesResponse.
         :type data_list: list[str]
         """
         self._data_list = data_list
+
+    @property
+    def data_extend_list(self):
+        r"""Gets the data_extend_list of this ListOpsAgentMetricLabelValuesResponse.
+
+        **参数解释**：  组件扩展属性列表，返回组件的ID和名称等扩展信息。  **取值范围**： 不涉及。 
+
+        :return: The data_extend_list of this ListOpsAgentMetricLabelValuesResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.ComponentExtendInfo`]
+        """
+        return self._data_extend_list
+
+    @data_extend_list.setter
+    def data_extend_list(self, data_extend_list):
+        r"""Sets the data_extend_list of this ListOpsAgentMetricLabelValuesResponse.
+
+        **参数解释**：  组件扩展属性列表，返回组件的ID和名称等扩展信息。  **取值范围**： 不涉及。 
+
+        :param data_extend_list: The data_extend_list of this ListOpsAgentMetricLabelValuesResponse.
+        :type data_extend_list: list[:class:`huaweicloudsdkagentarts.v1.ComponentExtendInfo`]
+        """
+        self._data_extend_list = data_extend_list
 
     def to_dict(self):
         import warnings

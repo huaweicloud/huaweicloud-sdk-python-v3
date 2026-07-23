@@ -31,11 +31,11 @@ class RelatedObjectViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param object_id: **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param object_id: **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
         :type object_id: str
-        :param related_list: **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param related_list: **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。 
         :type related_list: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]
-        :param related_entity_list: **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param related_entity_list: **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。 
         :type related_entity_list: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]
         """
         
@@ -57,7 +57,7 @@ class RelatedObjectViewDTO:
     def object_id(self):
         r"""Gets the object_id of this RelatedObjectViewDTO.
 
-        **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
 
         :return: The object_id of this RelatedObjectViewDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class RelatedObjectViewDTO:
     def object_id(self, object_id):
         r"""Sets the object_id of this RelatedObjectViewDTO.
 
-        **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。 
 
         :param object_id: The object_id of this RelatedObjectViewDTO.
         :type object_id: str
@@ -79,7 +79,7 @@ class RelatedObjectViewDTO:
     def related_list(self):
         r"""Gets the related_list of this RelatedObjectViewDTO.
 
-        **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。 
 
         :return: The related_list of this RelatedObjectViewDTO.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]
@@ -90,7 +90,7 @@ class RelatedObjectViewDTO:
     def related_list(self, related_list):
         r"""Sets the related_list of this RelatedObjectViewDTO.
 
-        **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关联的数据传输对象列表。  **取值范围：**  不涉及。 
 
         :param related_list: The related_list of this RelatedObjectViewDTO.
         :type related_list: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]
@@ -101,7 +101,7 @@ class RelatedObjectViewDTO:
     def related_entity_list(self):
         r"""Gets the related_entity_list of this RelatedObjectViewDTO.
 
-        **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。 
 
         :return: The related_entity_list of this RelatedObjectViewDTO.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]
@@ -112,7 +112,7 @@ class RelatedObjectViewDTO:
     def related_entity_list(self, related_entity_list):
         r"""Sets the related_entity_list of this RelatedObjectViewDTO.
 
-        **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关联的数据实体列表。  **取值范围：**  不涉及。 
 
         :param related_entity_list: The related_entity_list of this RelatedObjectViewDTO.
         :type related_entity_list: list[:class:`huaweicloudsdkidmeclassicapi.v1.BasicObjectQueryViewDTO`]

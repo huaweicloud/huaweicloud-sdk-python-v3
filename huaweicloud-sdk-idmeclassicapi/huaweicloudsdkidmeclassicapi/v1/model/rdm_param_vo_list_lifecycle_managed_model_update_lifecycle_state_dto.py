@@ -15,63 +15,41 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     sensitive_list = []
 
     openapi_types = {
-        'params': 'list[LifecycleManagedModelUpdateLifecycleStateDTO]',
-        'application_id': 'str'
+        'application_id': 'str',
+        'params': 'list[LifecycleManagedModelUpdateLifecycleStateDTO]'
     }
 
     attribute_map = {
-        'params': 'params',
-        'application_id': 'applicationId'
+        'application_id': 'applicationId',
+        'params': 'params'
     }
 
-    def __init__(self, params=None, application_id=None):
+    def __init__(self, application_id=None, params=None):
         r"""RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO
 
         The model defined in huaweicloud sdk
 
-        :param params: **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-        :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
-        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        :param application_id: **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为1-32个字符。  **默认取值：**  不涉及。
         :type application_id: str
+        :param params: **参数解释：**  请求参数对象数组，每个元素包含一个待修改生命周期状态的数据实例信息。支持批量操作。  **约束限制：**  单次请求不超过1000条。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
         """
         
         
 
-        self._params = None
         self._application_id = None
+        self._params = None
         self.discriminator = None
 
-        self.params = params
         if application_id is not None:
             self.application_id = application_id
-
-    @property
-    def params(self):
-        r"""Gets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
-
-        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-
-        :return: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
-        :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
-        """
-        return self._params
-
-    @params.setter
-    def params(self, params):
-        r"""Sets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
-
-        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-
-        :param params: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
-        :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
-        """
-        self._params = params
+        self.params = params
 
     @property
     def application_id(self):
         r"""Gets the application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为1-32个字符。  **默认取值：**  不涉及。
 
         :return: The application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: str
@@ -82,12 +60,34 @@ class RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO:
     def application_id(self, application_id):
         r"""Sets the application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为1-32个字符。  **默认取值：**  不涉及。
 
         :param application_id: The application_id of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
         :type application_id: str
         """
         self._application_id = application_id
+
+    @property
+    def params(self):
+        r"""Gets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
+
+        **参数解释：**  请求参数对象数组，每个元素包含一个待修改生命周期状态的数据实例信息。支持批量操作。  **约束限制：**  单次请求不超过1000条。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :return: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
+        :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
+        """
+        return self._params
+
+    @params.setter
+    def params(self, params):
+        r"""Sets the params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
+
+        **参数解释：**  请求参数对象数组，每个元素包含一个待修改生命周期状态的数据实例信息。支持批量操作。  **约束限制：**  单次请求不超过1000条。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :param params: The params of this RDMParamVOListLifecycleManagedModelUpdateLifecycleStateDTO.
+        :type params: list[:class:`huaweicloudsdkidmeclassicapi.v1.LifecycleManagedModelUpdateLifecycleStateDTO`]
+        """
+        self._params = params
 
     def to_dict(self):
         result = {}

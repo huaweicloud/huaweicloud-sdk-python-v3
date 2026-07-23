@@ -63,11 +63,11 @@ class MultiViewModelCreateDTO:
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param branch: 
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelBranchCreateDTO`
-        :param check_out_time: 检出时间。
+        :param check_out_time: 检出时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type check_out_time: str
         :param check_out_user_name: 检出人。
         :type check_out_user_name: str
-        :param create_time: 创建时间。
+        :param create_time: 创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type create_time: str
         :param creator: 创建者。
         :type creator: str
@@ -77,17 +77,17 @@ class MultiViewModelCreateDTO:
         :type id: str
         :param kiaguid: 关键信息资产ID。
         :type kiaguid: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: 最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type last_update_time: str
         :param master: 
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModelMasterCreateDTO`
-        :param modifier: 修改人。
+        :param modifier: 更新者。
         :type modifier: str
         :param name: 中文名称。
         :type name: str
         :param rdm_extension_type: 扩展类型。
         :type rdm_extension_type: str
-        :param security_level: 安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        :param security_level: 安全密级。 - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
         :type security_level: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -191,7 +191,7 @@ class MultiViewModelCreateDTO:
     def check_out_time(self):
         r"""Gets the check_out_time of this MultiViewModelCreateDTO.
 
-        检出时间。
+        检出时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The check_out_time of this MultiViewModelCreateDTO.
         :rtype: str
@@ -202,7 +202,7 @@ class MultiViewModelCreateDTO:
     def check_out_time(self, check_out_time):
         r"""Sets the check_out_time of this MultiViewModelCreateDTO.
 
-        检出时间。
+        检出时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param check_out_time: The check_out_time of this MultiViewModelCreateDTO.
         :type check_out_time: str
@@ -235,7 +235,7 @@ class MultiViewModelCreateDTO:
     def create_time(self):
         r"""Gets the create_time of this MultiViewModelCreateDTO.
 
-        创建时间。
+        创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The create_time of this MultiViewModelCreateDTO.
         :rtype: str
@@ -246,7 +246,7 @@ class MultiViewModelCreateDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this MultiViewModelCreateDTO.
 
-        创建时间。
+        创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param create_time: The create_time of this MultiViewModelCreateDTO.
         :type create_time: str
@@ -345,7 +345,7 @@ class MultiViewModelCreateDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this MultiViewModelCreateDTO.
 
-        最后更新时间。
+        最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The last_update_time of this MultiViewModelCreateDTO.
         :rtype: str
@@ -356,7 +356,7 @@ class MultiViewModelCreateDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this MultiViewModelCreateDTO.
 
-        最后更新时间。
+        最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param last_update_time: The last_update_time of this MultiViewModelCreateDTO.
         :type last_update_time: str
@@ -385,7 +385,7 @@ class MultiViewModelCreateDTO:
     def modifier(self):
         r"""Gets the modifier of this MultiViewModelCreateDTO.
 
-        修改人。
+        更新者。
 
         :return: The modifier of this MultiViewModelCreateDTO.
         :rtype: str
@@ -396,7 +396,7 @@ class MultiViewModelCreateDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this MultiViewModelCreateDTO.
 
-        修改人。
+        更新者。
 
         :param modifier: The modifier of this MultiViewModelCreateDTO.
         :type modifier: str
@@ -451,7 +451,7 @@ class MultiViewModelCreateDTO:
     def security_level(self):
         r"""Gets the security_level of this MultiViewModelCreateDTO.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        安全密级。 - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :return: The security_level of this MultiViewModelCreateDTO.
         :rtype: str
@@ -462,7 +462,7 @@ class MultiViewModelCreateDTO:
     def security_level(self, security_level):
         r"""Sets the security_level of this MultiViewModelCreateDTO.
 
-        安全密级。 - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。
+        安全密级。 - internal：内部公开。 - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :param security_level: The security_level of this MultiViewModelCreateDTO.
         :type security_level: str

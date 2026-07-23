@@ -29,9 +29,9 @@ class BatchOperateChildDTO:
 
         The model defined in huaweicloud sdk
 
-        :param child_list: **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param child_list: **参数解释：**  子节点实例ID列表，用于指定待批量添加为目标父节点子节点的实例。列表中的每个元素对应一个需要挂载的子节点实例ID，这些实例当前必须没有父节点。  **约束限制：**  子节点实例当前必须没有父节点。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type child_list: list[str]
-        :param parent_id: **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param parent_id: **参数解释：**  父节点实例ID，用于指定待添加子节点所属的目标父节点。例如BOM中的某个装配节点ID、组织架构中的某个部门ID等。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type parent_id: str
         """
         
@@ -48,7 +48,7 @@ class BatchOperateChildDTO:
     def child_list(self):
         r"""Gets the child_list of this BatchOperateChildDTO.
 
-        **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  子节点实例ID列表，用于指定待批量添加为目标父节点子节点的实例。列表中的每个元素对应一个需要挂载的子节点实例ID，这些实例当前必须没有父节点。  **约束限制：**  子节点实例当前必须没有父节点。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The child_list of this BatchOperateChildDTO.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class BatchOperateChildDTO:
     def child_list(self, child_list):
         r"""Sets the child_list of this BatchOperateChildDTO.
 
-        **参数解释：**  子节点实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  子节点实例ID列表，用于指定待批量添加为目标父节点子节点的实例。列表中的每个元素对应一个需要挂载的子节点实例ID，这些实例当前必须没有父节点。  **约束限制：**  子节点实例当前必须没有父节点。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param child_list: The child_list of this BatchOperateChildDTO.
         :type child_list: list[str]
@@ -70,7 +70,7 @@ class BatchOperateChildDTO:
     def parent_id(self):
         r"""Gets the parent_id of this BatchOperateChildDTO.
 
-        **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  父节点实例ID，用于指定待添加子节点所属的目标父节点。例如BOM中的某个装配节点ID、组织架构中的某个部门ID等。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The parent_id of this BatchOperateChildDTO.
         :rtype: str
@@ -81,7 +81,7 @@ class BatchOperateChildDTO:
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this BatchOperateChildDTO.
 
-        **参数解释：**  父节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  父节点实例ID，用于指定待添加子节点所属的目标父节点。例如BOM中的某个装配节点ID、组织架构中的某个部门ID等。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param parent_id: The parent_id of this BatchOperateChildDTO.
         :type parent_id: str

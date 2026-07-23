@@ -29,9 +29,9 @@ class VersionModelVersionCheckInDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param master_id: **参数解释：**  主对象ID，用于标识待检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type master_id: str
-        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -49,7 +49,7 @@ class VersionModelVersionCheckInDTO:
     def master_id(self):
         r"""Gets the master_id of this VersionModelVersionCheckInDTO.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于标识待检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The master_id of this VersionModelVersionCheckInDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class VersionModelVersionCheckInDTO:
     def master_id(self, master_id):
         r"""Sets the master_id of this VersionModelVersionCheckInDTO.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于标识待检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param master_id: The master_id of this VersionModelVersionCheckInDTO.
         :type master_id: str
@@ -71,7 +71,7 @@ class VersionModelVersionCheckInDTO:
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionCheckInDTO.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionCheckInDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class VersionModelVersionCheckInDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionCheckInDTO.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionCheckInDTO.
         :type modifier: str

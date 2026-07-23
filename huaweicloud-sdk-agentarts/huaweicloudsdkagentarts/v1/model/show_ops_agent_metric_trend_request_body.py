@@ -15,32 +15,34 @@ class ShowOpsAgentMetricTrendRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'group_by': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
         'metric_name': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
         'user_id': 'str',
-        'filter': 'list[MetricFilterParam]',
-        'group_by': 'list[str]'
+        'filter': 'list[MetricFilterParam]'
     }
 
     attribute_map = {
+        'group_by': 'group_by',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'metric_name': 'metric_name',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
         'user_id': 'user_id',
-        'filter': 'filter',
-        'group_by': 'group_by'
+        'filter': 'filter'
     }
 
-    def __init__(self, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None, group_by=None):
+    def __init__(self, group_by=None, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None):
         r"""ShowOpsAgentMetricTrendRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param group_by: 分组名
+        :type group_by: list[str]
         :param start_time: 开始时间
         :type start_time: str
         :param end_time: 结束时间
@@ -55,12 +57,11 @@ class ShowOpsAgentMetricTrendRequestBody:
         :type user_id: str
         :param filter: 过滤条件
         :type filter: list[:class:`huaweicloudsdkagentarts.v1.MetricFilterParam`]
-        :param group_by: 分组名
-        :type group_by: list[str]
         """
         
         
 
+        self._group_by = None
         self._start_time = None
         self._end_time = None
         self._metric_name = None
@@ -68,9 +69,10 @@ class ShowOpsAgentMetricTrendRequestBody:
         self._resource_type = None
         self._user_id = None
         self._filter = None
-        self._group_by = None
         self.discriminator = None
 
+        if group_by is not None:
+            self.group_by = group_by
         self.start_time = start_time
         self.end_time = end_time
         self.metric_name = metric_name
@@ -82,8 +84,28 @@ class ShowOpsAgentMetricTrendRequestBody:
             self.user_id = user_id
         if filter is not None:
             self.filter = filter
-        if group_by is not None:
-            self.group_by = group_by
+
+    @property
+    def group_by(self):
+        r"""Gets the group_by of this ShowOpsAgentMetricTrendRequestBody.
+
+        分组名
+
+        :return: The group_by of this ShowOpsAgentMetricTrendRequestBody.
+        :rtype: list[str]
+        """
+        return self._group_by
+
+    @group_by.setter
+    def group_by(self, group_by):
+        r"""Sets the group_by of this ShowOpsAgentMetricTrendRequestBody.
+
+        分组名
+
+        :param group_by: The group_by of this ShowOpsAgentMetricTrendRequestBody.
+        :type group_by: list[str]
+        """
+        self._group_by = group_by
 
     @property
     def start_time(self):
@@ -238,28 +260,6 @@ class ShowOpsAgentMetricTrendRequestBody:
         :type filter: list[:class:`huaweicloudsdkagentarts.v1.MetricFilterParam`]
         """
         self._filter = filter
-
-    @property
-    def group_by(self):
-        r"""Gets the group_by of this ShowOpsAgentMetricTrendRequestBody.
-
-        分组名
-
-        :return: The group_by of this ShowOpsAgentMetricTrendRequestBody.
-        :rtype: list[str]
-        """
-        return self._group_by
-
-    @group_by.setter
-    def group_by(self, group_by):
-        r"""Sets the group_by of this ShowOpsAgentMetricTrendRequestBody.
-
-        分组名
-
-        :param group_by: The group_by of this ShowOpsAgentMetricTrendRequestBody.
-        :type group_by: list[str]
-        """
-        self._group_by = group_by
 
     def to_dict(self):
         result = {}

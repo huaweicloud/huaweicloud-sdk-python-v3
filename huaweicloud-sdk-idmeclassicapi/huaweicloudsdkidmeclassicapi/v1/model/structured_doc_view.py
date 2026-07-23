@@ -32,7 +32,7 @@ class StructuredDocView:
         'organization_id': 'str',
         'wiki_id': 'str',
         'parent_document_id': 'str',
-        'instance_id': 'str',
+        'instance': 'ObjectReferenceViewDTO',
         'model_name': 'str',
         'create_user_id': 'str',
         'modifier': 'str'
@@ -56,58 +56,58 @@ class StructuredDocView:
         'organization_id': 'organization_id',
         'wiki_id': 'wiki_id',
         'parent_document_id': 'parent_document_id',
-        'instance_id': 'instance_id',
+        'instance': 'instance',
         'model_name': 'model_name',
         'create_user_id': 'create_user_id',
         'modifier': 'modifier'
     }
 
-    def __init__(self, creator=None, create_time=None, last_update_time=None, rdm_version=None, rdm_delete_flag=None, rdm_extension_type=None, tenant=None, class_name=None, clazz=None, id=None, document_id=None, title=None, type=None, template_id=None, organization_id=None, wiki_id=None, parent_document_id=None, instance_id=None, model_name=None, create_user_id=None, modifier=None):
+    def __init__(self, creator=None, create_time=None, last_update_time=None, rdm_version=None, rdm_delete_flag=None, rdm_extension_type=None, tenant=None, class_name=None, clazz=None, id=None, document_id=None, title=None, type=None, template_id=None, organization_id=None, wiki_id=None, parent_document_id=None, instance=None, model_name=None, create_user_id=None, modifier=None):
         r"""StructuredDocView
 
         The model defined in huaweicloud sdk
 
-        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param creator: **参数解释：**  创建者账号，标识创建该文档的用户。  **取值范围：**  不涉及。
         :type creator: str
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type create_time: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param last_update_time: **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type last_update_time: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param rdm_version: **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
         :type rdm_version: int
-        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param rdm_extension_type: **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param class_name: **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
         :type class_name: str
-        :param clazz: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param clazz: **参数解释：**  类名，标识对象的类类型。  **取值范围：**  不涉及。
         :type clazz: str
-        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        :param id: **参数解释：**  唯一标识，系统生成的文档主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
         :type id: str
-        :param document_id: **参数解释：**  kooPage文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param document_id: **参数解释：**  KooPage文档ID，系统生成的KooPage文档唯一标识。  **取值范围：**  不涉及。
         :type document_id: str
-        :param title: **参数解释：**  文档标题。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param title: **参数解释：**  文档标题。  **取值范围：**  不涉及。
         :type title: str
-        :param type: **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值：**  不涉及。
+        :param type: **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。
         :type type: str
-        :param template_id: **参数解释：**  模板ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param template_id: **参数解释：**  模板ID。  **取值范围：**  不涉及。
         :type template_id: str
-        :param organization_id: **参数解释：**  团队ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param organization_id: **参数解释：**  团队ID。  **取值范围：**  不涉及。
         :type organization_id: str
-        :param wiki_id: **参数解释：**  知识库ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param wiki_id: **参数解释：**  知识库ID。  **取值范围：**  不涉及。
         :type wiki_id: str
-        :param parent_document_id: **参数解释：**  父文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param parent_document_id: **参数解释：**  父文档ID。  **取值范围：**  不涉及。
         :type parent_document_id: str
-        :param instance_id: **参数解释：**  实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-        :type instance_id: str
-        :param model_name: **参数解释：**  模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param instance: 
+        :type instance: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
+        :param model_name: **参数解释：**  模型名称，标识文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type model_name: str
-        :param create_user_id: **参数解释：**  创建者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param create_user_id: **参数解释：**  创建者ID，标识创建该文档的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type create_user_id: str
-        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param modifier: **参数解释：**  更新者账号，标识最后更新该文档的用户。  **取值范围：**  不涉及。
         :type modifier: str
         """
         
@@ -130,7 +130,7 @@ class StructuredDocView:
         self._organization_id = None
         self._wiki_id = None
         self._parent_document_id = None
-        self._instance_id = None
+        self._instance = None
         self._model_name = None
         self._create_user_id = None
         self._modifier = None
@@ -169,8 +169,8 @@ class StructuredDocView:
             self.wiki_id = wiki_id
         if parent_document_id is not None:
             self.parent_document_id = parent_document_id
-        if instance_id is not None:
-            self.instance_id = instance_id
+        if instance is not None:
+            self.instance = instance
         if model_name is not None:
             self.model_name = model_name
         if create_user_id is not None:
@@ -182,7 +182,7 @@ class StructuredDocView:
     def creator(self):
         r"""Gets the creator of this StructuredDocView.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者账号，标识创建该文档的用户。  **取值范围：**  不涉及。
 
         :return: The creator of this StructuredDocView.
         :rtype: str
@@ -193,7 +193,7 @@ class StructuredDocView:
     def creator(self, creator):
         r"""Sets the creator of this StructuredDocView.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者账号，标识创建该文档的用户。  **取值范围：**  不涉及。
 
         :param creator: The creator of this StructuredDocView.
         :type creator: str
@@ -204,7 +204,7 @@ class StructuredDocView:
     def create_time(self):
         r"""Gets the create_time of this StructuredDocView.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The create_time of this StructuredDocView.
         :rtype: str
@@ -215,7 +215,7 @@ class StructuredDocView:
     def create_time(self, create_time):
         r"""Sets the create_time of this StructuredDocView.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param create_time: The create_time of this StructuredDocView.
         :type create_time: str
@@ -226,7 +226,7 @@ class StructuredDocView:
     def last_update_time(self):
         r"""Gets the last_update_time of this StructuredDocView.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The last_update_time of this StructuredDocView.
         :rtype: str
@@ -237,7 +237,7 @@ class StructuredDocView:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this StructuredDocView.
 
-        **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param last_update_time: The last_update_time of this StructuredDocView.
         :type last_update_time: str
@@ -248,7 +248,7 @@ class StructuredDocView:
     def rdm_version(self):
         r"""Gets the rdm_version of this StructuredDocView.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :return: The rdm_version of this StructuredDocView.
         :rtype: int
@@ -259,7 +259,7 @@ class StructuredDocView:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this StructuredDocView.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  系统版本号，用于数据版本控制。  **取值范围：**  不涉及。
 
         :param rdm_version: The rdm_version of this StructuredDocView.
         :type rdm_version: int
@@ -270,7 +270,7 @@ class StructuredDocView:
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this StructuredDocView.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :return: The rdm_delete_flag of this StructuredDocView.
         :rtype: int
@@ -281,7 +281,7 @@ class StructuredDocView:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this StructuredDocView.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。
 
         :param rdm_delete_flag: The rdm_delete_flag of this StructuredDocView.
         :type rdm_delete_flag: int
@@ -292,7 +292,7 @@ class StructuredDocView:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this StructuredDocView.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :return: The rdm_extension_type of this StructuredDocView.
         :rtype: str
@@ -303,7 +303,7 @@ class StructuredDocView:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this StructuredDocView.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  扩展类型，标识对象的扩展类别。  **取值范围：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this StructuredDocView.
         :type rdm_extension_type: str
@@ -332,7 +332,7 @@ class StructuredDocView:
     def class_name(self):
         r"""Gets the class_name of this StructuredDocView.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :return: The class_name of this StructuredDocView.
         :rtype: str
@@ -343,7 +343,7 @@ class StructuredDocView:
     def class_name(self, class_name):
         r"""Sets the class_name of this StructuredDocView.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的Java类名称。  **取值范围：**  不涉及。
 
         :param class_name: The class_name of this StructuredDocView.
         :type class_name: str
@@ -354,7 +354,7 @@ class StructuredDocView:
     def clazz(self):
         r"""Gets the clazz of this StructuredDocView.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的类类型。  **取值范围：**  不涉及。
 
         :return: The clazz of this StructuredDocView.
         :rtype: str
@@ -365,7 +365,7 @@ class StructuredDocView:
     def clazz(self, clazz):
         r"""Sets the clazz of this StructuredDocView.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  类名，标识对象的类类型。  **取值范围：**  不涉及。
 
         :param clazz: The clazz of this StructuredDocView.
         :type clazz: str
@@ -376,7 +376,7 @@ class StructuredDocView:
     def id(self):
         r"""Gets the id of this StructuredDocView.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        **参数解释：**  唯一标识，系统生成的文档主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :return: The id of this StructuredDocView.
         :rtype: str
@@ -387,7 +387,7 @@ class StructuredDocView:
     def id(self, id):
         r"""Sets the id of this StructuredDocView.
 
-        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        **参数解释：**  唯一标识，系统生成的文档主键ID。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :param id: The id of this StructuredDocView.
         :type id: str
@@ -398,7 +398,7 @@ class StructuredDocView:
     def document_id(self):
         r"""Gets the document_id of this StructuredDocView.
 
-        **参数解释：**  kooPage文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  KooPage文档ID，系统生成的KooPage文档唯一标识。  **取值范围：**  不涉及。
 
         :return: The document_id of this StructuredDocView.
         :rtype: str
@@ -409,7 +409,7 @@ class StructuredDocView:
     def document_id(self, document_id):
         r"""Sets the document_id of this StructuredDocView.
 
-        **参数解释：**  kooPage文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  KooPage文档ID，系统生成的KooPage文档唯一标识。  **取值范围：**  不涉及。
 
         :param document_id: The document_id of this StructuredDocView.
         :type document_id: str
@@ -420,7 +420,7 @@ class StructuredDocView:
     def title(self):
         r"""Gets the title of this StructuredDocView.
 
-        **参数解释：**  文档标题。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  文档标题。  **取值范围：**  不涉及。
 
         :return: The title of this StructuredDocView.
         :rtype: str
@@ -431,7 +431,7 @@ class StructuredDocView:
     def title(self, title):
         r"""Sets the title of this StructuredDocView.
 
-        **参数解释：**  文档标题。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  文档标题。  **取值范围：**  不涉及。
 
         :param title: The title of this StructuredDocView.
         :type title: str
@@ -442,7 +442,7 @@ class StructuredDocView:
     def type(self):
         r"""Gets the type of this StructuredDocView.
 
-        **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值：**  不涉及。
+        **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。
 
         :return: The type of this StructuredDocView.
         :rtype: str
@@ -453,7 +453,7 @@ class StructuredDocView:
     def type(self, type):
         r"""Sets the type of this StructuredDocView.
 
-        **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值：**  不涉及。
+        **参数解释：**  文档类型。  **取值范围：**  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。
 
         :param type: The type of this StructuredDocView.
         :type type: str
@@ -464,7 +464,7 @@ class StructuredDocView:
     def template_id(self):
         r"""Gets the template_id of this StructuredDocView.
 
-        **参数解释：**  模板ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  模板ID。  **取值范围：**  不涉及。
 
         :return: The template_id of this StructuredDocView.
         :rtype: str
@@ -475,7 +475,7 @@ class StructuredDocView:
     def template_id(self, template_id):
         r"""Sets the template_id of this StructuredDocView.
 
-        **参数解释：**  模板ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  模板ID。  **取值范围：**  不涉及。
 
         :param template_id: The template_id of this StructuredDocView.
         :type template_id: str
@@ -486,7 +486,7 @@ class StructuredDocView:
     def organization_id(self):
         r"""Gets the organization_id of this StructuredDocView.
 
-        **参数解释：**  团队ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  团队ID。  **取值范围：**  不涉及。
 
         :return: The organization_id of this StructuredDocView.
         :rtype: str
@@ -497,7 +497,7 @@ class StructuredDocView:
     def organization_id(self, organization_id):
         r"""Sets the organization_id of this StructuredDocView.
 
-        **参数解释：**  团队ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  团队ID。  **取值范围：**  不涉及。
 
         :param organization_id: The organization_id of this StructuredDocView.
         :type organization_id: str
@@ -508,7 +508,7 @@ class StructuredDocView:
     def wiki_id(self):
         r"""Gets the wiki_id of this StructuredDocView.
 
-        **参数解释：**  知识库ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  知识库ID。  **取值范围：**  不涉及。
 
         :return: The wiki_id of this StructuredDocView.
         :rtype: str
@@ -519,7 +519,7 @@ class StructuredDocView:
     def wiki_id(self, wiki_id):
         r"""Sets the wiki_id of this StructuredDocView.
 
-        **参数解释：**  知识库ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  知识库ID。  **取值范围：**  不涉及。
 
         :param wiki_id: The wiki_id of this StructuredDocView.
         :type wiki_id: str
@@ -530,7 +530,7 @@ class StructuredDocView:
     def parent_document_id(self):
         r"""Gets the parent_document_id of this StructuredDocView.
 
-        **参数解释：**  父文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  父文档ID。  **取值范围：**  不涉及。
 
         :return: The parent_document_id of this StructuredDocView.
         :rtype: str
@@ -541,7 +541,7 @@ class StructuredDocView:
     def parent_document_id(self, parent_document_id):
         r"""Sets the parent_document_id of this StructuredDocView.
 
-        **参数解释：**  父文档ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  父文档ID。  **取值范围：**  不涉及。
 
         :param parent_document_id: The parent_document_id of this StructuredDocView.
         :type parent_document_id: str
@@ -549,32 +549,28 @@ class StructuredDocView:
         self._parent_document_id = parent_document_id
 
     @property
-    def instance_id(self):
-        r"""Gets the instance_id of this StructuredDocView.
+    def instance(self):
+        r"""Gets the instance of this StructuredDocView.
 
-        **参数解释：**  实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-
-        :return: The instance_id of this StructuredDocView.
-        :rtype: str
+        :return: The instance of this StructuredDocView.
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
         """
-        return self._instance_id
+        return self._instance
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        r"""Sets the instance_id of this StructuredDocView.
+    @instance.setter
+    def instance(self, instance):
+        r"""Sets the instance of this StructuredDocView.
 
-        **参数解释：**  实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
-
-        :param instance_id: The instance_id of this StructuredDocView.
-        :type instance_id: str
+        :param instance: The instance of this StructuredDocView.
+        :type instance: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceViewDTO`
         """
-        self._instance_id = instance_id
+        self._instance = instance
 
     @property
     def model_name(self):
         r"""Gets the model_name of this StructuredDocView.
 
-        **参数解释：**  模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  模型名称，标识文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The model_name of this StructuredDocView.
         :rtype: str
@@ -585,7 +581,7 @@ class StructuredDocView:
     def model_name(self, model_name):
         r"""Sets the model_name of this StructuredDocView.
 
-        **参数解释：**  模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  模型名称，标识文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param model_name: The model_name of this StructuredDocView.
         :type model_name: str
@@ -596,7 +592,7 @@ class StructuredDocView:
     def create_user_id(self):
         r"""Gets the create_user_id of this StructuredDocView.
 
-        **参数解释：**  创建者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者ID，标识创建该文档的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The create_user_id of this StructuredDocView.
         :rtype: str
@@ -607,7 +603,7 @@ class StructuredDocView:
     def create_user_id(self, create_user_id):
         r"""Sets the create_user_id of this StructuredDocView.
 
-        **参数解释：**  创建者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  创建者ID，标识创建该文档的用户ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param create_user_id: The create_user_id of this StructuredDocView.
         :type create_user_id: str
@@ -618,7 +614,7 @@ class StructuredDocView:
     def modifier(self):
         r"""Gets the modifier of this StructuredDocView.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，标识最后更新该文档的用户。  **取值范围：**  不涉及。
 
         :return: The modifier of this StructuredDocView.
         :rtype: str
@@ -629,7 +625,7 @@ class StructuredDocView:
     def modifier(self, modifier):
         r"""Sets the modifier of this StructuredDocView.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，标识最后更新该文档的用户。  **取值范围：**  不涉及。
 
         :param modifier: The modifier of this StructuredDocView.
         :type modifier: str

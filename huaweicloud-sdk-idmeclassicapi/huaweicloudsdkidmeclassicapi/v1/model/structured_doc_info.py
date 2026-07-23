@@ -49,29 +49,29 @@ class StructuredDocInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param id: **参数解释：**  文档ID，用于指定自定义文档唯一标识。 若不指定，系统会自动生成。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type id: str
-        :param document_id: **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param document_id: **参数解释：**  KooPage文档ID，用于关联已有的KooPage文档。 若创建新文档，可不指定。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type document_id: str
-        :param title: **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param title: **参数解释：**  文档标题，用于标识结构化文档的名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type title: str
-        :param type: **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
+        :param type: **参数解释：**  文档类型，指定结构化文档的类型。  **约束限制：**  不涉及。  **取值范围：**  - directory：目录，用于组织和管理文档层级结构。 - pageDocument：Page文档，适用于富文本编辑场景，如设计说明书、技术文档等。 - boardDocument：Board文档，适用于白板协作场景，如工艺评审、方案讨论等。 - mindDocument：Mind文档，适用于思维导图场景，如产品结构分析、流程梳理等。 - drawDocument：Draw文档，适用于绘图场景，如工艺流程图、设备布局图等。  **默认取值：**  不涉及。
         :type type: str
-        :param template_id: **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param template_id: **参数解释：**  模板ID，用于指定文档创建时所使用的模板。 若指定模板，创建的文档将继承模板的格式和内容。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type template_id: str
-        :param organization_id: **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param organization_id: **参数解释：**  团队ID，用于指定文档所属的团队组织。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type organization_id: str
-        :param wiki_id: **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param wiki_id: **参数解释：**  知识库ID，用于指定文档所属的知识库。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type wiki_id: str
-        :param parent_document_id: **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param parent_document_id: **参数解释：**  父文档ID，用于指定文档的父级目录。 若指定，创建的文档将作为该父文档的子文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type parent_document_id: str
-        :param instance_id: **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param instance_id: **参数解释：**  实例ID，用于将结构化文档关联到指定的数据模型实例。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type instance_id: str
-        :param model_name: **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param model_name: **参数解释：**  模型名称，用于指定文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type model_name: str
-        :param create_user_id: **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param create_user_id: **参数解释：**  创建者ID，用于指定文档的创建者。 若不指定，默认使用当前调用者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者ID。
         :type create_user_id: str
-        :param modifier: **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param modifier: **参数解释：**  更新者账号，用于指定文档的最后更新者信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -120,7 +120,7 @@ class StructuredDocInfo:
     def id(self):
         r"""Gets the id of this StructuredDocInfo.
 
-        **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID，用于指定自定义文档唯一标识。 若不指定，系统会自动生成。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The id of this StructuredDocInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class StructuredDocInfo:
     def id(self, id):
         r"""Sets the id of this StructuredDocInfo.
 
-        **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID，用于指定自定义文档唯一标识。 若不指定，系统会自动生成。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param id: The id of this StructuredDocInfo.
         :type id: str
@@ -142,7 +142,7 @@ class StructuredDocInfo:
     def document_id(self):
         r"""Gets the document_id of this StructuredDocInfo.
 
-        **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  KooPage文档ID，用于关联已有的KooPage文档。 若创建新文档，可不指定。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The document_id of this StructuredDocInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class StructuredDocInfo:
     def document_id(self, document_id):
         r"""Sets the document_id of this StructuredDocInfo.
 
-        **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  KooPage文档ID，用于关联已有的KooPage文档。 若创建新文档，可不指定。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param document_id: The document_id of this StructuredDocInfo.
         :type document_id: str
@@ -164,7 +164,7 @@ class StructuredDocInfo:
     def title(self):
         r"""Gets the title of this StructuredDocInfo.
 
-        **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档标题，用于标识结构化文档的名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The title of this StructuredDocInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class StructuredDocInfo:
     def title(self, title):
         r"""Sets the title of this StructuredDocInfo.
 
-        **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档标题，用于标识结构化文档的名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param title: The title of this StructuredDocInfo.
         :type title: str
@@ -186,7 +186,7 @@ class StructuredDocInfo:
     def type(self):
         r"""Gets the type of this StructuredDocInfo.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
+        **参数解释：**  文档类型，指定结构化文档的类型。  **约束限制：**  不涉及。  **取值范围：**  - directory：目录，用于组织和管理文档层级结构。 - pageDocument：Page文档，适用于富文本编辑场景，如设计说明书、技术文档等。 - boardDocument：Board文档，适用于白板协作场景，如工艺评审、方案讨论等。 - mindDocument：Mind文档，适用于思维导图场景，如产品结构分析、流程梳理等。 - drawDocument：Draw文档，适用于绘图场景，如工艺流程图、设备布局图等。  **默认取值：**  不涉及。
 
         :return: The type of this StructuredDocInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class StructuredDocInfo:
     def type(self, type):
         r"""Sets the type of this StructuredDocInfo.
 
-        **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
+        **参数解释：**  文档类型，指定结构化文档的类型。  **约束限制：**  不涉及。  **取值范围：**  - directory：目录，用于组织和管理文档层级结构。 - pageDocument：Page文档，适用于富文本编辑场景，如设计说明书、技术文档等。 - boardDocument：Board文档，适用于白板协作场景，如工艺评审、方案讨论等。 - mindDocument：Mind文档，适用于思维导图场景，如产品结构分析、流程梳理等。 - drawDocument：Draw文档，适用于绘图场景，如工艺流程图、设备布局图等。  **默认取值：**  不涉及。
 
         :param type: The type of this StructuredDocInfo.
         :type type: str
@@ -208,7 +208,7 @@ class StructuredDocInfo:
     def template_id(self):
         r"""Gets the template_id of this StructuredDocInfo.
 
-        **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模板ID，用于指定文档创建时所使用的模板。 若指定模板，创建的文档将继承模板的格式和内容。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The template_id of this StructuredDocInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class StructuredDocInfo:
     def template_id(self, template_id):
         r"""Sets the template_id of this StructuredDocInfo.
 
-        **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模板ID，用于指定文档创建时所使用的模板。 若指定模板，创建的文档将继承模板的格式和内容。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param template_id: The template_id of this StructuredDocInfo.
         :type template_id: str
@@ -230,7 +230,7 @@ class StructuredDocInfo:
     def organization_id(self):
         r"""Gets the organization_id of this StructuredDocInfo.
 
-        **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  团队ID，用于指定文档所属的团队组织。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The organization_id of this StructuredDocInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class StructuredDocInfo:
     def organization_id(self, organization_id):
         r"""Sets the organization_id of this StructuredDocInfo.
 
-        **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  团队ID，用于指定文档所属的团队组织。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param organization_id: The organization_id of this StructuredDocInfo.
         :type organization_id: str
@@ -252,7 +252,7 @@ class StructuredDocInfo:
     def wiki_id(self):
         r"""Gets the wiki_id of this StructuredDocInfo.
 
-        **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  知识库ID，用于指定文档所属的知识库。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The wiki_id of this StructuredDocInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class StructuredDocInfo:
     def wiki_id(self, wiki_id):
         r"""Sets the wiki_id of this StructuredDocInfo.
 
-        **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  知识库ID，用于指定文档所属的知识库。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param wiki_id: The wiki_id of this StructuredDocInfo.
         :type wiki_id: str
@@ -274,7 +274,7 @@ class StructuredDocInfo:
     def parent_document_id(self):
         r"""Gets the parent_document_id of this StructuredDocInfo.
 
-        **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  父文档ID，用于指定文档的父级目录。 若指定，创建的文档将作为该父文档的子文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The parent_document_id of this StructuredDocInfo.
         :rtype: str
@@ -285,7 +285,7 @@ class StructuredDocInfo:
     def parent_document_id(self, parent_document_id):
         r"""Sets the parent_document_id of this StructuredDocInfo.
 
-        **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  父文档ID，用于指定文档的父级目录。 若指定，创建的文档将作为该父文档的子文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param parent_document_id: The parent_document_id of this StructuredDocInfo.
         :type parent_document_id: str
@@ -296,7 +296,7 @@ class StructuredDocInfo:
     def instance_id(self):
         r"""Gets the instance_id of this StructuredDocInfo.
 
-        **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  实例ID，用于将结构化文档关联到指定的数据模型实例。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The instance_id of this StructuredDocInfo.
         :rtype: str
@@ -307,7 +307,7 @@ class StructuredDocInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this StructuredDocInfo.
 
-        **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  实例ID，用于将结构化文档关联到指定的数据模型实例。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param instance_id: The instance_id of this StructuredDocInfo.
         :type instance_id: str
@@ -318,7 +318,7 @@ class StructuredDocInfo:
     def model_name(self):
         r"""Gets the model_name of this StructuredDocInfo.
 
-        **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模型名称，用于指定文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The model_name of this StructuredDocInfo.
         :rtype: str
@@ -329,7 +329,7 @@ class StructuredDocInfo:
     def model_name(self, model_name):
         r"""Sets the model_name of this StructuredDocInfo.
 
-        **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模型名称，用于指定文档关联的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param model_name: The model_name of this StructuredDocInfo.
         :type model_name: str
@@ -340,7 +340,7 @@ class StructuredDocInfo:
     def create_user_id(self):
         r"""Gets the create_user_id of this StructuredDocInfo.
 
-        **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  创建者ID，用于指定文档的创建者。 若不指定，默认使用当前调用者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者ID。
 
         :return: The create_user_id of this StructuredDocInfo.
         :rtype: str
@@ -351,7 +351,7 @@ class StructuredDocInfo:
     def create_user_id(self, create_user_id):
         r"""Sets the create_user_id of this StructuredDocInfo.
 
-        **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  创建者ID，用于指定文档的创建者。 若不指定，默认使用当前调用者ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者ID。
 
         :param create_user_id: The create_user_id of this StructuredDocInfo.
         :type create_user_id: str
@@ -362,7 +362,7 @@ class StructuredDocInfo:
     def modifier(self):
         r"""Gets the modifier of this StructuredDocInfo.
 
-        **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  更新者账号，用于指定文档的最后更新者信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this StructuredDocInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class StructuredDocInfo:
     def modifier(self, modifier):
         r"""Sets the modifier of this StructuredDocInfo.
 
-        **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  更新者账号，用于指定文档的最后更新者信息。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this StructuredDocInfo.
         :type modifier: str

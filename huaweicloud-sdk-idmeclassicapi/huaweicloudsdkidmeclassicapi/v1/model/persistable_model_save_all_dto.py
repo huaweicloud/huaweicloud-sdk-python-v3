@@ -16,7 +16,7 @@ class PersistableModelSaveAllDTO:
 
     openapi_types = {
         'create_time': 'str',
-        'creator': 'int',
+        'creator': 'str',
         'id': 'str',
         'last_update_time': 'str',
         'modifier': 'str',
@@ -43,23 +43,23 @@ class PersistableModelSaveAllDTO:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type creator: int
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :type creator: str
+        :param id: **参数解释：**  数据实例的唯一标识。如指定id，系统将根据id进行匹配；如未指定id，系统将根据uniqueKey进行匹配。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param last_update_time: **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type last_update_time: str
-        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，用于记录执行更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
-        :param need_set_null_attrs: **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param need_set_null_attrs: **参数解释：**  需要置空的自定义属性列表，包括基本属性、扩展属性和分类属性。  **约束限制：**  属性名称长度不能超过1000个字符。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type need_set_null_attrs: list[str]
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type rdm_extension_type: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param unique_key: **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param unique_key: **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。当id未指定时，系统将根据此属性进行匹配；如果实例不存在则自动创建。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type unique_key: str
         """
         
@@ -99,7 +99,7 @@ class PersistableModelSaveAllDTO:
     def create_time(self):
         r"""Gets the create_time of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The create_time of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -110,7 +110,7 @@ class PersistableModelSaveAllDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param create_time: The create_time of this PersistableModelSaveAllDTO.
         :type create_time: str
@@ -121,10 +121,10 @@ class PersistableModelSaveAllDTO:
     def creator(self):
         r"""Gets the creator of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The creator of this PersistableModelSaveAllDTO.
-        :rtype: int
+        :rtype: str
         """
         return self._creator
 
@@ -132,10 +132,10 @@ class PersistableModelSaveAllDTO:
     def creator(self, creator):
         r"""Sets the creator of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param creator: The creator of this PersistableModelSaveAllDTO.
-        :type creator: int
+        :type creator: str
         """
         self._creator = creator
 
@@ -143,7 +143,7 @@ class PersistableModelSaveAllDTO:
     def id(self):
         r"""Gets the id of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识。如指定id，系统将根据id进行匹配；如未指定id，系统将根据uniqueKey进行匹配。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -154,7 +154,7 @@ class PersistableModelSaveAllDTO:
     def id(self, id):
         r"""Sets the id of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识。如指定id，系统将根据id进行匹配；如未指定id，系统将根据uniqueKey进行匹配。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistableModelSaveAllDTO.
         :type id: str
@@ -165,7 +165,7 @@ class PersistableModelSaveAllDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The last_update_time of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -176,7 +176,7 @@ class PersistableModelSaveAllDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  最后更新时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。 例如：2025-12-04T03:50:40.599+0000。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param last_update_time: The last_update_time of this PersistableModelSaveAllDTO.
         :type last_update_time: str
@@ -187,7 +187,7 @@ class PersistableModelSaveAllDTO:
     def modifier(self):
         r"""Gets the modifier of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -198,7 +198,7 @@ class PersistableModelSaveAllDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistableModelSaveAllDTO.
         :type modifier: str
@@ -209,7 +209,7 @@ class PersistableModelSaveAllDTO:
     def need_set_null_attrs(self):
         r"""Gets the need_set_null_attrs of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要置空的自定义属性列表，包括基本属性、扩展属性和分类属性。  **约束限制：**  属性名称长度不能超过1000个字符。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The need_set_null_attrs of this PersistableModelSaveAllDTO.
         :rtype: list[str]
@@ -220,7 +220,7 @@ class PersistableModelSaveAllDTO:
     def need_set_null_attrs(self, need_set_null_attrs):
         r"""Sets the need_set_null_attrs of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  需要置空的自定义属性列表，包括基本属性、扩展属性和分类属性。  **约束限制：**  属性名称长度不能超过1000个字符。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param need_set_null_attrs: The need_set_null_attrs of this PersistableModelSaveAllDTO.
         :type need_set_null_attrs: list[str]
@@ -231,7 +231,7 @@ class PersistableModelSaveAllDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The rdm_extension_type of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -242,7 +242,7 @@ class PersistableModelSaveAllDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型，用于指定数据模型的具体扩展类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param rdm_extension_type: The rdm_extension_type of this PersistableModelSaveAllDTO.
         :type rdm_extension_type: str
@@ -271,7 +271,7 @@ class PersistableModelSaveAllDTO:
     def unique_key(self):
         r"""Gets the unique_key of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。当id未指定时，系统将根据此属性进行匹配；如果实例不存在则自动创建。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The unique_key of this PersistableModelSaveAllDTO.
         :rtype: str
@@ -282,7 +282,7 @@ class PersistableModelSaveAllDTO:
     def unique_key(self, unique_key):
         r"""Sets the unique_key of this PersistableModelSaveAllDTO.
 
-        **参数解释：**  示例模型的唯一键属性。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的唯一键属性，用于业务层面的唯一标识。当id未指定时，系统将根据此属性进行匹配；如果实例不存在则自动创建。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param unique_key: The unique_key of this PersistableModelSaveAllDTO.
         :type unique_key: str

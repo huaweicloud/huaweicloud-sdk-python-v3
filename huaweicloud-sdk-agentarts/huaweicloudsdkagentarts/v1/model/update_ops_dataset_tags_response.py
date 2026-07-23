@@ -16,47 +16,20 @@ class UpdateOpsDatasetTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
     }
 
     attribute_map = {
-        'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self):
         r"""UpdateOpsDatasetTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
         """
         
         super().__init__()
-
-        self._body = None
         self.discriminator = None
-
-        if body is not None:
-            self.body = body
-
-    @property
-    def body(self):
-        r"""Gets the body of this UpdateOpsDatasetTagsResponse.
-
-        :return: The body of this UpdateOpsDatasetTagsResponse.
-        :rtype: object
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateOpsDatasetTagsResponse.
-
-        :param body: The body of this UpdateOpsDatasetTagsResponse.
-        :type body: object
-        """
-        self._body = body
 
     def to_dict(self):
         import warnings

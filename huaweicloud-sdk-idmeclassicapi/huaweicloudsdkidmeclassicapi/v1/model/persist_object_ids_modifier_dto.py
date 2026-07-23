@@ -29,9 +29,9 @@ class PersistObjectIdsModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param ids: **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param ids: **参数解释：**  数据实例ID列表，用于指定待删除的多个实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](ShowFindUsingPost.xml)。  **约束限制：**  单次请求不超过1000个。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type ids: list[str]
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -49,7 +49,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self):
         r"""Gets the ids of this PersistObjectIdsModifierDTO.
 
-        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID列表，用于指定待删除的多个实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](ShowFindUsingPost.xml)。  **约束限制：**  单次请求不超过1000个。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The ids of this PersistObjectIdsModifierDTO.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class PersistObjectIdsModifierDTO:
     def ids(self, ids):
         r"""Sets the ids of this PersistObjectIdsModifierDTO.
 
-        **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID列表，用于指定待删除的多个实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](ShowFindUsingPost.xml)。  **约束限制：**  单次请求不超过1000个。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param ids: The ids of this PersistObjectIdsModifierDTO.
         :type ids: list[str]
@@ -71,7 +71,7 @@ class PersistObjectIdsModifierDTO:
     def modifier(self):
         r"""Gets the modifier of this PersistObjectIdsModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistObjectIdsModifierDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class PersistObjectIdsModifierDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this PersistObjectIdsModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistObjectIdsModifierDTO.
         :type modifier: str

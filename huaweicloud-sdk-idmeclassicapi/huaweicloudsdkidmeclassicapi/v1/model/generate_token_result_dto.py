@@ -33,13 +33,13 @@ class GenerateTokenResultDto:
 
         The model defined in huaweicloud sdk
 
-        :param token: **参数解释**：  认证token。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param token: **参数解释：**  认证Token，用于后续对结构化文档的访问鉴权。  **取值范围：**  不涉及。
         :type token: str
-        :param user_id: **参数解释**：  用户ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param user_id: **参数解释：**  用户ID，标识获取Token的IAM用户。  **取值范围：**  不涉及。
         :type user_id: str
-        :param user_name: **参数解释**：  用户名。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param user_name: **参数解释：**  用户名，标识获取Token的IAM用户名称。  **取值范围：**  不涉及。
         :type user_name: str
-        :param app_id: **参数解释**：  应用ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param app_id: **参数解释：**  应用ID，用于指定实例所属的应用。  **取值范围：**  不涉及。
         :type app_id: str
         """
         
@@ -64,7 +64,7 @@ class GenerateTokenResultDto:
     def token(self):
         r"""Gets the token of this GenerateTokenResultDto.
 
-        **参数解释**：  认证token。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  认证Token，用于后续对结构化文档的访问鉴权。  **取值范围：**  不涉及。
 
         :return: The token of this GenerateTokenResultDto.
         :rtype: str
@@ -75,7 +75,7 @@ class GenerateTokenResultDto:
     def token(self, token):
         r"""Sets the token of this GenerateTokenResultDto.
 
-        **参数解释**：  认证token。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  认证Token，用于后续对结构化文档的访问鉴权。  **取值范围：**  不涉及。
 
         :param token: The token of this GenerateTokenResultDto.
         :type token: str
@@ -86,7 +86,7 @@ class GenerateTokenResultDto:
     def user_id(self):
         r"""Gets the user_id of this GenerateTokenResultDto.
 
-        **参数解释**：  用户ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  用户ID，标识获取Token的IAM用户。  **取值范围：**  不涉及。
 
         :return: The user_id of this GenerateTokenResultDto.
         :rtype: str
@@ -97,7 +97,7 @@ class GenerateTokenResultDto:
     def user_id(self, user_id):
         r"""Sets the user_id of this GenerateTokenResultDto.
 
-        **参数解释**：  用户ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  用户ID，标识获取Token的IAM用户。  **取值范围：**  不涉及。
 
         :param user_id: The user_id of this GenerateTokenResultDto.
         :type user_id: str
@@ -108,7 +108,7 @@ class GenerateTokenResultDto:
     def user_name(self):
         r"""Gets the user_name of this GenerateTokenResultDto.
 
-        **参数解释**：  用户名。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  用户名，标识获取Token的IAM用户名称。  **取值范围：**  不涉及。
 
         :return: The user_name of this GenerateTokenResultDto.
         :rtype: str
@@ -119,7 +119,7 @@ class GenerateTokenResultDto:
     def user_name(self, user_name):
         r"""Sets the user_name of this GenerateTokenResultDto.
 
-        **参数解释**：  用户名。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  用户名，标识获取Token的IAM用户名称。  **取值范围：**  不涉及。
 
         :param user_name: The user_name of this GenerateTokenResultDto.
         :type user_name: str
@@ -130,7 +130,7 @@ class GenerateTokenResultDto:
     def app_id(self):
         r"""Gets the app_id of this GenerateTokenResultDto.
 
-        **参数解释**：  应用ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。  **取值范围：**  不涉及。
 
         :return: The app_id of this GenerateTokenResultDto.
         :rtype: str
@@ -141,7 +141,7 @@ class GenerateTokenResultDto:
     def app_id(self, app_id):
         r"""Sets the app_id of this GenerateTokenResultDto.
 
-        **参数解释**：  应用ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。  **取值范围：**  不涉及。
 
         :param app_id: The app_id of this GenerateTokenResultDto.
         :type app_id: str

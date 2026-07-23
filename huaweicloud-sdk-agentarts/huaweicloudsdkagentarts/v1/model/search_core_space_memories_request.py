@@ -16,7 +16,7 @@ class SearchCoreSpaceMemoriesRequest:
 
     openapi_types = {
         'space_id': 'str',
-        'body': 'MemorySearchReq'
+        'body': 'SearchCoreSpaceMemoriesRequestBody'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class SearchCoreSpaceMemoriesRequest:
 
         :param space_id: **参数解释：**  记忆库 ID，唯一标识一个记忆库，可以通过AgentArts智能体记忆库控制台或者记忆库查询接口获取。 **约束限制：** 仅支持字母、数字和中划线。 **取值范围：** 匹配标准的UUID格式（8-4-4-4-12的十六进制数字串，由连字符分隔），符合正则条件^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$。 **默认取值：** 不涉及。 
         :type space_id: str
-        :param body: 
-        :type body: :class:`huaweicloudsdkagentarts.v1.MemorySearchReq`
+        :param body: Body of the SearchCoreSpaceMemoriesRequest
+        :type body: :class:`huaweicloudsdkagentarts.v1.SearchCoreSpaceMemoriesRequestBody`
         """
         
         
@@ -72,7 +72,7 @@ class SearchCoreSpaceMemoriesRequest:
         r"""Gets the body of this SearchCoreSpaceMemoriesRequest.
 
         :return: The body of this SearchCoreSpaceMemoriesRequest.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.MemorySearchReq`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.SearchCoreSpaceMemoriesRequestBody`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class SearchCoreSpaceMemoriesRequest:
         r"""Sets the body of this SearchCoreSpaceMemoriesRequest.
 
         :param body: The body of this SearchCoreSpaceMemoriesRequest.
-        :type body: :class:`huaweicloudsdkagentarts.v1.MemorySearchReq`
+        :type body: :class:`huaweicloudsdkagentarts.v1.SearchCoreSpaceMemoriesRequestBody`
         """
         self._body = body
 

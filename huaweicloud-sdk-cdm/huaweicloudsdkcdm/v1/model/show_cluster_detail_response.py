@@ -50,7 +50,9 @@ class ShowClusterDetailResponse(SdkResponse):
         'is_frozen': 'str',
         'actions': 'list[str]',
         'updated': 'str',
-        'status': 'str'
+        'status': 'str',
+        'eps_id': 'str',
+        'tags': 'list[ClusterTag]'
     }
 
     attribute_map = {
@@ -88,10 +90,12 @@ class ShowClusterDetailResponse(SdkResponse):
         'is_frozen': 'isFrozen',
         'actions': 'actions',
         'updated': 'updated',
-        'status': 'status'
+        'status': 'status',
+        'eps_id': 'eps_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, endpoint_domain_name=None, public_endpoint_status=None, is_schedule_boot_off=None, namespace=None, eip_id=None, failed_reasons=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None):
+    def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, endpoint_domain_name=None, public_endpoint_status=None, is_schedule_boot_off=None, namespace=None, eip_id=None, failed_reasons=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None, eps_id=None, tags=None):
         r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
@@ -166,6 +170,10 @@ class ShowClusterDetailResponse(SdkResponse):
         :type updated: str
         :param status: 集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
         :type status: str
+        :param eps_id: 企业项目ID
+        :type eps_id: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkcdm.v1.ClusterTag`]
         """
         
         super().__init__()
@@ -205,6 +213,8 @@ class ShowClusterDetailResponse(SdkResponse):
         self._actions = None
         self._updated = None
         self._status = None
+        self._eps_id = None
+        self._tags = None
         self.discriminator = None
 
         if public_endpoint is not None:
@@ -277,6 +287,10 @@ class ShowClusterDetailResponse(SdkResponse):
             self.updated = updated
         if status is not None:
             self.status = status
+        if eps_id is not None:
+            self.eps_id = eps_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def public_endpoint(self):
@@ -1015,6 +1029,50 @@ class ShowClusterDetailResponse(SdkResponse):
         :type status: str
         """
         self._status = status
+
+    @property
+    def eps_id(self):
+        r"""Gets the eps_id of this ShowClusterDetailResponse.
+
+        企业项目ID
+
+        :return: The eps_id of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._eps_id
+
+    @eps_id.setter
+    def eps_id(self, eps_id):
+        r"""Sets the eps_id of this ShowClusterDetailResponse.
+
+        企业项目ID
+
+        :param eps_id: The eps_id of this ShowClusterDetailResponse.
+        :type eps_id: str
+        """
+        self._eps_id = eps_id
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ShowClusterDetailResponse.
+
+        标签列表
+
+        :return: The tags of this ShowClusterDetailResponse.
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ShowClusterDetailResponse.
+
+        标签列表
+
+        :param tags: The tags of this ShowClusterDetailResponse.
+        :type tags: list[:class:`huaweicloudsdkcdm.v1.ClusterTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         import warnings

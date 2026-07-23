@@ -36,7 +36,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def add_tag_async(self, request):
         r"""绑定标签
 
-        调用该接口为指定模型的数据实例绑定标签。在调用该接口前请确保数据模型具有“标签管理”功能。
+        本接口用于为指定数据模型的数据实例绑定预定义的标签。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“标签管理”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
+        3. 已在应用运行态的“基础数据管理 &gt; 标签”中创建目标标签。具体操作请参见[标签](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0096.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -105,7 +109,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def add_to_category_async(self, request):
         r"""添加数据分类
 
-        将数据分类对象数据实例添加至数据分类数据实例中。
+        本接口用于将数据实例添加到指定分类。当需要对零部件、设备、物料等数据实例进行归类管理（如按功能模块、产品线、工艺类型等维度分类）时，可调用本接口建立实例与分类的关联关系。
+        - 当实例不存在时，系统将抛出异常。
+        - 当实例与指定分类已存在关联关系时，系统将不重复添加，返回值为0。
+        - 当实例与指定分类首次建立关联时，返回值为1。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -174,7 +181,12 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_add_child_node_async(self, request):
         r"""批量添加实例的子节点
 
-        调用该接口批量为指定数据实例添加子节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于批量为指定数据实例添加子节点，建立父子层级关联关系。当BOM（物料清单）需要新增子装配节点、组织架构需要新增下属团队或产品分类需要新增下级类目时，可调用本接口批量完成节点挂载。
+        - 调用本接口时，需在parentId中指定父节点实例ID，在childList中传入待添加为子节点的实例ID列表。
+        - 添加操作执行后，子节点将发生以下变更：
+          - 父节点（parentNode）字段被设置为指定的父节点。
+          - 根节点（rootNode）字段被设置为父节点所在树的根节点。
+        - 全路径（fullPath）和原始全路径（rawFullPath）字段被更新为包含父节点路径的完整路径。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -243,7 +255,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_checkin_async(self, request):
         r"""批量检入M-V模型数据实例
 
-        根据主对象ID批量检入M-V模型数据实例。已检入的数据实例会生成一个新的迭代版本，并将数据存储至系统中。
+        本接口用于根据主对象ID批量检入M-V模型数据实例。已检入的数据实例会生成一个新的迭代版本，并将数据存储至系统中。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -312,7 +327,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_checkout_async(self, request):
         r"""批量检出M-V模型数据实例
 
-        根据主对象ID批量检出M-V模型数据实例。
+        本接口用于根据主对象ID（masterId）列表，对指定的多个Master-Branch-Version（M-V）模型实例批量执行检出（Check-out）操作。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -381,7 +399,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_checkout_and_update_async(self, request):
         r"""批量检出并更新M-V模型
 
-        根据主对象ID批量检出并更新M-V模型数据实例。
+        本接口用于根据主对象ID（masterId）列表，对指定的多个Master-Branch-Version（M-V）模型实例批量执行检出（Check-out）并同步更新（Update）的原子操作。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -450,7 +471,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_checkout_undo_async(self, request):
         r"""批量撤销检出M-V模型数据实例
 
-        通过此接口批量撤销指定M-V模型实例的检出，将实例数据批量还原至检出前的内容。
+        本接口用于批量撤销指定M-V模型实例的检出，将实例数据批量还原至检出前的内容。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -519,7 +543,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_checkout_undo_by_admin_async(self, request):
         r"""管理员批量撤销检出M-V模型数据实例
 
-        管理员通过此接口批量撤销指定M-V模型实例的检出，将实例数据批量还原至检出前的内容。
+        本接口用于管理员批量撤销Master-Branch-Version（M-V）模型实例的检出状态，将实例数据批量还原至检出前的最后检入版本内容。适用于数据治理中大规模清理长期锁定实例、批量处理离职员工未检入数据、系统维护前统一释放编辑锁等管理场景。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -588,7 +615,12 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_create_share_docs_async(self, request):
         r"""批量创建分享结构化文档
 
-        批量创建分享结构化文档。
+        本接口用于批量创建结构化文档的分享记录，实现文档的跨用户或跨团队协作共享。当需要将产品设计说明书、工艺卡片、BOM清单等结构化文档共享给团队成员、上下游合作伙伴或全体用户时，可调用本接口一次性完成批量分享配置。
+        - 调用本接口时，需在params数组中传入多个分享记录，每个元素对应一条文档分享配置。
+        - 分享时可指定被分享用户的权限级别：
+          - 当auth_type为read时，被分享用户仅可查看文档内容。
+          - 当auth_type为write时，被分享用户可查看和编辑文档内容。
+        - 当shared_user_id和shared_user_name均设置为all时，表示将文档分享给所有用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -619,10 +651,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -657,7 +689,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_create_using_post_async(self, request):
         r"""批量创建实例
 
-        批量创建指定数据模型的数据实例。
+        本接口用于在指定的数据模型（数据实体或关系实体）下，批量创建多个数据实例。调用成功后，将返回所有成功创建的实例信息列表。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -726,7 +761,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_create_view_async(self, request):
         r"""批量创建多维视图
 
-        调用该接口批量创建指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
+        本接口用于批量为指定的一个或多个M-V模型数据实例创建新的多维视图。多维视图允许用户从不同的预设维度（如设计视图、工艺视图、采购视图等）来观察和管理同一个数据对象。在同一个数据实例下，视图的标识（item）必须是唯一的。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“多维视图&amp;多维分支”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -795,7 +833,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_branch_async(self, request):
         r"""批量删除最新大版本下的所有小版本
 
-        根据主对象ID和父模型ID，批量软删除最新大版本下的所有小版本。请您谨慎使用删除操作，删除后该数据将无法恢复。
+        本接口用于根据主对象ID（masterIds）列表，批量删除指定M-V模型实例中最新分支（Branch）下的所有迭代版本（Iteration）。
+        此操作为物理删除，执行后数据将无法恢复，请谨慎使用。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -864,9 +906,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_latest_version_async(self, request):
         r"""批量删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID，批量删除版本对象下最新分支的最新版本实例数据。单次调用此接口时，建议最多设置不超过100个主对象ID。
-        
-        请您谨慎使用删除操作，删除后该数据将无法恢复。
+        本接口用于根据多个主对象（Master）ID，批量永久删除指定M-V模型实体下最新分支的最新版本数据实例。此操作为物理删除，执行后数据将无法恢复，请谨慎使用。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -897,10 +940,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -935,9 +978,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_logical_branch_async(self, request):
         r"""批量软删除最新大版本下的所有小版本
 
-        根据主对象ID，批量软删除最新大版本下的所有小版本。
-        
-        通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
+        本接口用于根据主对象ID（masterIds）列表，批量软删除指定M-V模型实例中最新分支（Branch）下的所有迭代版本（Iteration）。
+        软删除操作并非物理删除，而是将目标分支下的所有版本实例标记为已删除状态（rdmDeleteFlag置为1），并将数据转存至XDM应用的XDMLogicDeleteData内置模型中，以便在需要时进行数据恢复或归档查询。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1006,9 +1051,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_logical_latest_version_async(self, request):
         r"""批量软删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID，批量软删除版本对象下最新分支的最新版本实例数据。单次调用此接口时，建议最多设置不超过100个主对象ID。
-        
-        通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
+        本接口用于根据主对象ID（masterIds）列表，批量软删除指定M-V模型实体下最新分支的最新版本数据实例。
+        软删除操作并非物理删除，而是将目标实例标记为已删除状态（rdmDeleteFlag置为1），并将数据转存至XDM应用的XDMLogicDeleteData内置模型中，以便在需要时进行数据恢复或归档查询。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1039,10 +1086,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -1077,9 +1124,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_logical_using_post_async(self, request):
         r"""批量软删除实例
 
-        根据数据实例的唯一编码，批量软删除指定数据模型中的多个数据实例。
-        
-        通过此接口进行删除操作时，系统会将当前删除的实例转存至XDM应用的XDMLogicDeleteData内置模型中。
+        本接口用于根据数据实例的唯一编码（id）列表，批量对指定数据模型下的多个数据实例执行软删除（逻辑删除）操作。
+        软删除操作不会从数据库中物理移除数据，而是将所有实例标记为已删除状态，并转存至XDM应用的XDMLogicDeleteData内置模型中。如需彻底删除数据，请使用[批量删除实例 - BatchDeleteUsingPost](BatchDeleteUsingPost.xml)接口。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1148,7 +1197,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_share_docs_async(self, request):
         r"""批量删除结构化文档分享权限
 
-        批量删除结构化文档分享权限。
+        本接口用于批量删除结构化文档的分享权限记录，撤销已共享文档的访问权限。当项目结束、人员岗位变动或文档权限需要回收时，可调用本接口一次性撤销多个用户的文档分享权限。
+        - 调用本接口时，需在ids中传入待删除的分享权限记录ID列表，系统将对列表中的分享记录执行批量删除。
+        - 分享权限删除后，被分享用户将无法再通过原分享渠道访问该文档。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1179,10 +1230,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -1217,7 +1268,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_structured_document_async(self, request):
         r"""批量删除结构化文档
 
-        批量删除结构化文档。
+        本接口用于批量删除指定数据模型下的结构化文档。当产品下线、项目归档或文档批量清理时，可调用本接口一次性删除多个结构化文档，提升数据管理效率。
+        - 调用本接口时，需在ids中传入待删除文档的ID列表，系统将对列表中的文档执行批量删除操作。
+        - 当is_check设置为true时，系统将在删除前检查当前用户是否具备文档删除权限，无权限的文档将被跳过删除。
+        - 当is_check设置为false时，系统将直接执行删除，不做权限检查。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1248,10 +1302,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -1286,9 +1340,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_delete_using_post_async(self, request):
         r"""批量删除实例
 
-        根据数据实例的唯一编码，批量删除指定数据模型中的多个数据实例。
-        
-        请您谨慎使用删除操作，实例删除后将无法恢复。
+        本接口用于根据数据实例的唯一编码（id）列表，批量删除指定数据模型中的多个数据实例。
+        删除操作不可逆，实例删除后将无法恢复。请在调用前务必确认目标实例ID列表，谨慎操作。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1357,7 +1413,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_execute_revise_async(self, request):
         r"""批量修订M-V模型数据实例
 
-        通过此接口批量修订指定M-V模型实例。修订后，实例的“version.修订版本”会更新为新的修订版本。
+        本接口用于批量修订一个或多个指定的M-V模型数据实例。修订操作会基于当前实例创建一个新的修订版本，并自动将新实例的version字段更新为下一个修订版本号（例如从A升级到B）。修订后的新实例默认处于“已检入”状态。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1426,7 +1485,12 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_remove_child_node_async(self, request):
         r"""批量移除实例的子节点
 
-        调用该接口批量移除指定数据实例的所有子节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于批量移除指定数据实例的子节点，解除父子节点间的层级关联关系。当BOM（物料清单）结构发生变更需要拆解某个装配节点、组织架构调整需要撤销某个部门的下属团队归属，或产品分类体系重组需要移除下级类目时，可调用本接口批量解除子节点关联。
+        - 调用本接口时，需在parentId中指定父节点实例ID，在childList中传入待移除的子节点实例ID列表。
+        - 移除操作执行后，被移除的子节点将发生以下变更：
+          - 父节点（parent）字段被置为空。
+          - 根节点（root）字段被置为空。
+        - 当父节点的所有子节点均被移除后，该父节点将被置为叶子节点（即不再拥有子节点）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1495,7 +1559,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_show_get_using_post_async(self, request):
         r"""批量查询实例
 
-        根据多个数据实例的唯一编码，批量查询实例的详细信息。
+        本接口用于根据数据实例的系统唯一标识（id）列表，批量查询指定数据模型下多个实例的完整详细信息。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1564,7 +1631,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_update_and_checkin_async(self, request):
         r"""批量更新并检入M-V模型数据实例
 
-        通过此接口批量更新指定M-V模型实例，并检入这些实例。
+        本接口用于批量更新一个或多个指定的M-V模型数据实例，并在更新成功后自动执行检入（Check-in）操作，将实例从“检出”状态切换为“已检入”状态。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1634,6 +1704,9 @@ class IDMEClassicAPIAsyncClient(Client):
         r"""批量修订并更新M-V模型数据实例
 
         根据主对象ID批量修订并更新M-V模型数据实例，即修订后实例的“version.修订版本”更新为新的修订版本，并同时更新该实例的信息。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1702,7 +1775,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_update_by_admin_async(self, request):
         r"""管理员批量更新M-V模型数据实例
 
-        管理员通过此接口批量更新指定M-V模型的指定实例数据。如果某个实例的唯一编码不存在，则不做任何更新操作。
+        本接口用于管理员批量强制更新Master-Branch-Version（M-V）模型数据实例，适用于数据治理中的大规模紧急数据修正、批量版本回滚、全量属性修正等管理场景。对于批量中的每个实例，若其唯一编码不存在，则该实例不做任何更新操作，不影响其他实例的正常更新。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1771,7 +1847,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_update_document_async(self, request):
         r"""批量更新结构化文档
 
-        批量更新结构化文档。
+        本接口用于批量更新结构化文档的属性信息。
+        - 调用本接口时，需在params数组中传入多个文档的更新信息，每个元素对应一个待更新的文档。
+        - 每个文档更新项中，id为必填参数，用于唯一标识目标文档；其余字段为可选，仅更新传入的字段。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1802,10 +1880,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -1840,7 +1918,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_update_using_post_async(self, request):
         r"""批量更新实例
 
-        批量更新指定数据模型中的多个实例数据。如果某个实例的唯一编码不存在，该实例不做任何更新操作。
+        本接口用于批量更新指定数据模型中的多个实例数据。如果请求列表中某个实例的唯一编码（id）在系统中不存在，系统将跳过该实例，不执行任何更新操作，且不会因此导致整个批量请求失败。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1909,7 +1990,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def batch_update_version_async(self, request):
         r"""批量升级M-V模型实例的版本号
 
-        根据M-V模型实体的唯一编码，批量将该实体下实例的版本号更新至最新版本。
+        本接口用于根据数据实例的唯一标识（id），批量更新/升级指定Master-Branch-Version（M-V）模型实例的版本号信息（包括修订版本version和迭代版本iteration）。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1979,6 +2063,9 @@ class IDMEClassicAPIAsyncClient(Client):
         r"""检入M-V模型数据实例
 
         根据主对象ID检入M-V模型数据实例。已检入的数据实例会生成一个新的迭代版本，并将数据存储至系统中。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2047,7 +2134,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def checkout_async(self, request):
         r"""检出M-V模型数据实例
 
-        根据主对象ID检出M-V模型数据实例，检出后会生成一个新的数据实例，该实例会完全复制原实例现有的信息，且状态修改为已检出。
+        本接口用于根据主对象ID（masterId），对指定的M-V模型数据实例执行检出（Check-out）操作。
+        调用本接口后，系统会基于原实例（已检入版本）完全复制生成一个新的数据实例（工作副本），将其状态修改为“工作中”，并对该主对象加锁，阻止其他用户再次检出，直到当前用户执行“检入”或“撤销检出”。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2116,7 +2207,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def checkout_and_update_async(self, request):
         r"""检出并更新M-V模型
 
-        根据主对象ID检出并更新M-V模型数据实例，即检出后生成一个新的数据实例的同时，更新该新实例的信息。
+        本接口用于根据主对象ID（masterId），对指定的Master-Branch-Version（M-V）模型实例执行检出（Check-out）并同步更新（Update）的原子操作。
+        本接口将“检出”与“更新”合并为一次网络请求，系统在生成新工作副本并加锁的同时，直接将请求中指定的属性值应用到该工作副本上。这大幅减少了网络交互次数，避免了“先检出空副本，再发请求更新”带来的数据不一致风险与性能开销。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2185,7 +2280,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def checkout_undo_async(self, request):
         r"""撤销检出M-V模型数据实例
 
-        通过此接口撤销指定M-V模型实例的检出，将实例数据还原至检出前的内容。
+        本接口用于撤销指定M-V模型实例的检出状态。
+        执行撤销检出后，系统会彻底丢弃当前工作副本中的所有未提交修改，将实例数据还原至最近一次检入（Check-in）的历史版本状态，并释放该对象的并发锁，以便自己或他人重新检出。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2254,7 +2353,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def checkout_undo_by_admin_async(self, request):
         r"""管理员撤销检出M-V模型数据实例
 
-        管理员通过此接口撤销指定M-V模型实例的检出，将实例数据还原至检出前的内容。
+        本接口用于管理员强制撤销Master-Branch-Version（M-V）模型实例的检出状态，将实例数据还原至检出前的最后检入版本内容。适用于数据治理中因用户离职、会话超时、误操作等导致的实例长期锁定场景。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2321,9 +2423,12 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def collect_history_data_async(self, request):
-        r"""获取模型的统计信息
+        r"""根据时间范围获取模型的历史记录数
 
-        输入指定模型的统计时间区间（开始时间和结束时间），即可获取该模型的统计数据，包含创建实例、删除实例、软删除实例和更新实例的数据。在调用该接口前请确保数据模型具有“系统版本”功能。
+        本接口用于根据指定的时间范围，获取数据模型的历史操作统计记录数，包括创建实例、更新实例、删除实例及软删除实例的数量。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“系统版本”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2392,7 +2497,13 @@ class IDMEClassicAPIAsyncClient(Client):
     def compare_business_version_async(self, request):
         r"""对比M-V模型实例
 
-        通过此接口可以对比某个M-V模型数据实例的不同版本的属性和关系。建议使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比功能，即使用instance-attrs-comparison和instance-relation-comparison接口，更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。
+        本接口用于根据主对象ID（id），获取指定Master-Branch-Version（M-V）模型下两个不同版本实例的完整数据快照，以便进行属性与关系的差异对比。
+        **建议：**
+        本接口为基础对比功能。为获得更优的对比体验和更细粒度的控制（如仅对比属性或仅对比关系），推荐使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比接口，即instance-attrs-comparison（属性对比）和instance-relation-comparison（关系对比）接口。更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。
+        
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2459,9 +2570,13 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def compare_version_async(self, request):
-        r"""对比数据实例
+        r"""数据实例指定版本对比
 
-        通过此接口可以对比某个模型数据实例的不同版本的属性和关系。建议使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比功能，即使用instance-attrs-comparison和instance-relation-comparison接口，更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。在调用该接口前请确保数据模型具有“系统版本”功能。
+        本接口用于对比指定数据实例两个版本之间的属性差异和关系差异，返回基础版本对象及差异对比结果。
+        建议使用数据建模引擎（xDM Foundation，简称xDM-F）新增的差异对比功能，即使用instance-attrs-comparison（属性对比）和instance-relation-comparison（关系对比）接口。更多内容可在应用运行态的“数据服务管理 &gt; 全量数据服务 &gt; 系统管理API &gt; 属性对比API”中查看。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“系统版本”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2530,7 +2645,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def count_using_post_async(self, request):
         r"""统计指定数据模型的实例总数
 
-        根据指定的查询条件，统计指定数据模型中的实例总数。
+        本接口用于根据指定的查询条件，统计指定数据模型中满足条件的实例总数。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2599,7 +2717,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def create_document_async(self, request):
         r"""创建结构化文档
 
-        创建结构化文档。
+        本接口用于在指定数据模型下创建结构化文档。结构化文档是工业数据管理中用于承载设计说明书、工艺卡片、BOM清单等工业文档的载体，支持目录（directory）、Page文档（pageDocument）、Board文档（boardDocument）、Mind文档（mindDocument）、Draw文档（drawDocument）等多种文档类型。
+        - 创建结构化文档时，需指定文档标题和文档类型。
+        - 如需将文档关联到具体的数据模型实例，可通过instance_id参数指定实例ID。
+        - 如需将文档挂载到指定目录下，可通过parent_document_id参数指定父文档ID。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2630,10 +2751,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -2666,9 +2787,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def create_multi_view_async(self, request):
-        r"""创建视图对象
+        r"""创建M-V模型视图数据实例
 
-        通过接口创建多视图MV对象实例。
+        本接口用于勾选了“多维视图&amp;多维分支”的MV模型创建数据实例。创建实例时给视图属性赋不同视图属性表示实例所属的视图。视图属性为NULL表示的是默认视图，若创建、更新、修订等MV模型特有接口不指定视图参数则表示操作的视图属性为NULL的视图。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2737,7 +2858,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def create_using_post_async(self, request):
         r"""创建实例
 
-        创建指定数据模型的数据实例。
+        本接口用于在指定的数据模型（数据实体或关系实体）下创建数据实例。调用成功后，将返回新创建实例的详细信息。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2806,7 +2930,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def create_view_async(self, request):
         r"""创建多维视图
 
-        调用该接口创建指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
+        本接口用于为指定的M-V模型数据实例创建一个新的多维视图。多维视图允许用户从不同的预设维度（如设计视图、工艺视图、采购视图等）来观察和管理同一个数据对象，每个视图下的属性或关系可以独立配置和演进。在同一个数据实例下，视图的标识（item）必须是唯一的。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“多维视图&amp;多维分支”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2875,7 +3002,16 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_branch_async(self, request):
         r"""删除最新大版本下的所有小版本
 
-        根据父模型ID和版本对象，删除最新大版本下的所有小版本。请您谨慎使用删除操作，删除后该数据将无法恢复。
+        本接口用于根据主对象ID（masterId）和修订版本号（version），删除指定M-V模型实例中最新分支（Branch）下的所有迭代版本（Iteration）。
+        其中：
+        - 分支（Branch）：对应M-V模型中的大版本（如版本A、版本B），代表一次完整的修订基线。
+        - 迭代（Iteration）：对应分支内的小版本（如A.1、A.2），代表同一修订基线下的多次迭代更新。
+        - 本接口将级联删除指定分支下的所有迭代版本，包括该分支的最终版本及其历史迭代记录。
+        
+        此操作为物理删除，执行后数据将无法恢复，请谨慎使用。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2942,9 +3078,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_by_condition_multi_view_async(self, request):
-        r"""条件删除模型
+        r"""条件删除M-V模型数据实例
 
-        条件删除多视图对象。
+        根据用户指定条件删除MV模型数据实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3013,9 +3149,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_by_condition_using_post_async(self, request):
         r"""根据指定条件删除实例
 
-        通过此接口，删除满足指定条件的实例。
-        
-        请您谨慎使用删除操作，实例删除后将无法恢复。
+        本接口用于根据指定的过滤条件，批量删除指定数据模型下满足条件的所有数据实例。
+        删除操作不可逆，实例删除后将无法恢复。请在调用前务必先使用[分页查询实例 - ShowFindUsingPost](ShowFindUsingPost.xml)接口验证条件表达式的准确性。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3084,7 +3222,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_latest_version_async(self, request):
         r"""删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID，删除版本对象下最新分支的最新版本实例数据。请您谨慎使用删除操作，删除后该数据将无法恢复。
+        本接口用于根据主对象ID（masterId），精准删除指定Master-Branch-Version（M-V）模型在特定分支下的最新（末端）版本实例。
+        此操作为物理删除，执行后数据将无法恢复，请谨慎使用。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3153,9 +3295,12 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_logical_branch_async(self, request):
         r"""软删除M-V模型实例下最新分支的所有小版本数据
 
-        根据父模型ID和版本对象，软删除M-V模型实例下最新分支的所有小版本数据。
+        本接口用于根据主对象ID（masterId）和修订版本号（version），软删除指定M-V模型实例中最新分支（Branch）下的所有迭代版本（Iteration）。
+        软删除操作并非物理删除，而是将目标分支下的所有版本实例标记为已删除状态（rdmDeleteFlag置为1），并将数据转存至XDM应用的XDMLogicDeleteData内置模型中，以便在需要时进行数据恢复或归档查询。
         
-        通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3224,9 +3369,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_logical_latest_version_async(self, request):
         r"""软删除版本对象下最新分支的最新版本实例数据
 
-        根据主对象ID，软删除版本对象下最新分支的最新版本实例数据。
-        
-        通过此接口进行删除操作时，系统会将当前删除的实例数据转存至XDM应用的XDMLogicDeleteData内置模型中。
+        本接口用于根据主对象ID，软删除指定M-V模型实体下最新分支的最新版本数据实例。
+        软删除操作并非从数据库中物理移除数据，而是将目标实例标记为已删除状态（rdmDeleteFlag置为1），并将该实例的数据转存至XDM应用的XDMLogicDeleteData内置模型中，以便在需要时进行数据恢复或归档查询。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3293,9 +3440,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def delete_multi_view_async(self, request):
-        r"""删除模型
+        r"""删除M-V模型指定视图版本
 
-        删除多视图对象。
+        本接口用于勾选了“多维视图&amp;多维分支”的MV模型删除指定的数据实例。若模型配置视图属性，且调用createView接口创建了多维视图。需要在接口参数中给视图属性指定要删除的视图。若入参中书体属性为null，会删除视图属性为null的视图。本接口为同步接口，调用完成后立即返回结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3364,7 +3511,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_target_async(self, request):
         r"""通过目标模型删除关系实体的数据实例
 
-        调用该接口输入源模型的数据实例ID和目标模型的英文名称，删除对应关系实体的数据实例。
+        本接口用于通过目标模型删除关系实体的数据实例，即解除源模型实例与目标模型实例之间的关联关系。
+        - 调用本接口时，需在sourceId中指定源模型实例ID，在targetType中指定目标模型的英文名称，系统将删除该源实例与指定目标模型之间的所有关联关系实例。
+        - 当latestOnly设置为true时，仅删除源实例关联的最新版本目标模型实例的关系（仅对M-V模型实体生效）。
+        - 当latestOnly设置为false时，删除源实例关联的所有版本目标模型实例的关系。
+        - 本接口仅执行关系表的DELETE操作，目标端实体的业务数据不受任何影响。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3433,9 +3584,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def delete_using_post_async(self, request):
         r"""删除实例
 
-        根据数据实例的唯一编码，删除指定数据模型中的一个数据实例。
-        
-        请您谨慎使用删除操作，实例删除后将无法恢复。
+        本接口用于根据数据实例的唯一编码（id），删除指定数据模型中的一个数据实例。
+        删除操作不可逆，实例删除后将无法恢复。请在调用前务必确认目标实例，谨慎操作。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3504,7 +3657,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def disable_data_instance_async(self, request):
         r"""失效模型数据实例
 
-        调用该接口失效指定模型的数据实例，同时返回失效成功的实例数量。在调用该接口前请确保数据模型具有“失效管理”功能。
+        本接口用于批量将指定数据模型的数据实例标记为失效状态，并同步返回实际失效成功的实例数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3573,7 +3726,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def enable_data_instance_async(self, request):
         r"""生效模型数据实例
 
-        调用该接口生效指定模型的数据实例，同时返回生效成功的实例数量。在调用该接口前请确保数据模型具有“失效管理”功能。
+        本接口用于批量将指定数据模型中处于失效状态的数据实例重新标记为生效状态，并同步返回实际生效成功的实例数量。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3642,7 +3795,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def execute_revise_async(self, request):
         r"""修订M-V模型数据实例
 
-        通过此接口修订指定M-V模型实例。修订后，该实例的“version.修订版本”会更新为新的修订版本。
+        本接口用于对指定的Master-Branch-Version（M-V）模型实例执行修订（Revise）操作。
+        调用本接口后，系统会基于指定的主对象（Master）及其当前最新修订版本，复制并生成一个新的修订版本实例。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3709,9 +3866,9 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def generate_business_code_async(self, request):
-        r"""新增模型业务编码
+        r"""生成新模型业务编码
 
-        调用该接口为指定模型的数据实例生成业务编码。在调用该接口前请确保数据模型具有“业务编码生成器”功能。
+        本接口用于根据指定数据模型在应用设计态预配置的“业务编码生成器”规则，自动生成符合企业命名规范的业务流水码。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3778,7 +3935,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_all_versions_async(self, request):
         r"""获取指定M-V模型实例的版本列表
 
-        根据主对象ID，获取对应M-V模型实例的所有版本信息（包含对应版本下的属性信息）。
+        本接口用于根据主对象ID（masterId），分页获取指定Master-Branch-Version（M-V）模型实例的所有版本信息（包含对应版本下的属性信息）。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3865,7 +4025,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_batch_query_related_objects_async(self, request):
         r"""批量查询关系实体关联模型的信息
 
-        调用该接口批量查询指定关系实体所关联的源/目标模型的所有实例信息，包含具体的属性。
+        本接口用于批量查询指定关系实体所关联的源模型或目标模型的所有实例信息，返回结果包含实例的具体属性。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3952,7 +4112,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_get_all_parent_list_async(self, request):
         r"""获取所有父节点
 
-        调用该接口获取指定数据实例的所有父节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于获取指定数据实例的所有父节点列表，同时返回各父节点的列表属性。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4021,7 +4181,8 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_get_child_list_async(self, request):
         r"""获取子节点
 
-        调用该接口获取指定数据实例的子节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于分页获取指定数据实例的直接子节点列表，同时返回各子节点的列表属性。当需要展开BOM（物料清单）的某个装配节点查看下级零部件、浏览组织架构中某个部门的下属团队或查看产品分类的下一级类目时，可调用本接口获取直接子节点信息。
+        调用本接口时，需在parentId中传入目标数据实例的ID，系统将返回该实例的直接子节点（仅返回一层，不向下递归）。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4052,14 +4213,14 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'page_size_path' in local_var_params:
-            path_params['pageSizePath'] = local_var_params['page_size_path']
-        if 'cur_page_path' in local_var_params:
-            path_params['curPagePath'] = local_var_params['cur_page_path']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -4108,7 +4269,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_history_data_async(self, request):
         r"""分页查询模型历史版本信息
 
-        调用该接口输入指定模型的统计时间区间（开始时间和结束时间）后，会以数据实例的最后修改时间作为查询条件，分页查询该实例的历史版本信息。在调用该接口前请确保数据模型具有“系统版本”功能。
+        本接口用于分页查询指定数据实例的历史版本信息。系统以数据实例的最后修改时间作为查询条件，根据您指定的时间范围返回该实例的历史版本变更记录。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“系统版本”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4195,7 +4359,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_documents_async(self, request):
         r"""查询结构化文档
 
-        查询结构化文档。
+        本接口用于查询指定数据模型下的结构化文档列表。
+        - 当请求中传入instance_id时，返回与该实例关联的结构化文档列表。
+        - 当请求中传入type时，返回指定类型的结构化文档列表。
+        - 当请求中同时传入instance_id和type时，返回同时满足两个条件的结构化文档列表。
+        - 当请求中不传入任何筛选条件时，返回该数据模型下所有的结构化文档列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4226,10 +4394,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -4264,7 +4432,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_related_objects_async(self, request):
         r"""查询关系实体关联模型的信息
 
-        调用该接口查询指定关系实体所关联的源/目标模型的所有实例信息，包含具体的属性。
+        本接口用于分页查询指定关系实体所关联的源模型或目标模型的所有实例信息，返回结果包含关联实例的具体属性。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4351,7 +4519,7 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_relationship_async(self, request):
         r"""查询关系实体的数据实例
 
-        调用该接口输入数据实例的ID和对应的关系角色（源/目标模型），查询并返回对应关系实体的数据实例。
+        本接口用于分页查询关系实体的数据实例。通过指定数据实例ID及对应的关系角色（源/目标），或数据模型的英文名称及对应的关系角色（源类型/目标类型），返回匹配的关系实体数据实例信息。
         如果对应的关系实体存在“参考对象”类型属性，且参考的数据模型为抽象模型，返回信息仅返回对应模型的英文名称和ID。如果参考的数据模型为实体模型，返回空。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -4383,14 +4551,14 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'page_size_path' in local_var_params:
-            path_params['pageSizePath'] = local_var_params['page_size_path']
-        if 'cur_page_path' in local_var_params:
-            path_params['curPagePath'] = local_var_params['cur_page_path']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
         if 'model_name' in local_var_params:
             path_params['modelName'] = local_var_params['model_name']
+        if 'page_size_path' in local_var_params:
+            path_params['pageSizePath'] = local_var_params['page_size_path']
+        if 'cur_page_path' in local_var_params:
+            path_params['curPagePath'] = local_var_params['cur_page_path']
 
         query_params = []
         if 'cur_page' in local_var_params:
@@ -4439,7 +4607,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_share_docs_async(self, request):
         r"""查询结构化文档分享授权列表
 
-        查询结构化文档分享授权列表。
+        本接口用于查询指定结构化文档的分享授权列表，获取该文档的所有分享记录信息。当需要审计文档的共享范围、回收过期权限或排查文档访问异常时，可调用本接口获取完整的分享授权信息。
+        - 调用本接口时，需在params中传入目标结构化文档的ID。
+        - 返回结果中包含该文档的所有分享记录，每条记录包含被分享用户、分享用户、权限类型等详细信息。
+        - 返回结果中的id字段为分享权限记录的唯一标识，可用于[批量删除结构化文档分享权限 - BatchDeleteShareDocs](BatchDeleteShareDocs.xml)接口删除指定分享权限。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4470,10 +4641,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -4508,8 +4679,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_target_async(self, request):
         r"""通过源模型实例ID查询关联的目标模型实例
 
-        调用该接口输入源模型的数据实例ID，查询并返回与该实例关联的目标模型数据实例的信息，实例信息包含对应数据实例的“列表属性”。
+        本接口用于通过源模型的数据实例ID，分页查询并返回与该实例关联的目标模型数据实例信息。返回的实例信息包含目标模板的“列表属性”（即模型中标记为列表展示的属性）。
         如果目标模型存在“参考对象”类型的属性，且参考的数据模型为抽象模型，返回信息仅返回对应模型的英文名称和ID。如果参考的数据模型为实体模型，返回空。
+        如果目标对象是M-V模型，可通过设置latestOnly&#x3D;true仅返回源实例关联的最新版本目标对象；默认返回所有版本。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4596,7 +4768,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_query_using_post_async(self, request):
         r"""根据“列表属性”为“是”的属性查询实例
 
-        当数据模型中存在“列表属性”为“是”的属性时，可通过此接口查询数据模型中的实例数据。
+        当数据模型中存在“列表属性”为“是”的属性时，可通过此接口查询数据模型中的实例数据，且支持分页。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 目标数据模型在应用设计态中，必须至少存在一个“列表属性”为“是”的属性。
+        2. 已在应用设计态完成数据模型的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        3. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4683,7 +4859,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_select_using_post_async(self, request):
         r"""查询实例的指定属性
 
-        根据查询条件及指定属性分页返回（不支持扩展属性作为选定属性列）。
+        本接口用于根据查询条件，按需返回数据模型实例的指定属性信息。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4770,7 +4949,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def list_using_post_async(self, request):
         r"""查询实例的基础属性
 
-        根据查询条件分页返回模型基本属性信息且不级联查询（不支持扩展属性作为查询条件）。
+        本接口用于根据查询条件，分页检索数据模型实例的基础属性与系统级元数据信息。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4857,8 +5039,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def refresh_async(self, request):
         r"""刷新树形节点
 
-        调用该接口刷新指定数据实例对应的节点全路径。在调用该接口前请确保数据模型具有“树形结构”功能。
-        调用该接口时，如果未指定数据实例或指定的数据实例为父节点，则刷新整棵树的所有节点全路径。
+        本接口用于刷新指定数据实例对应的节点全路径。在调用本接口前请确保数据模型具有“树形结构”功能。
+        调用本接口时，如果未指定数据实例或指定的数据实例为父节点，则刷新整棵树的所有节点全路径。
+        本接口为异步接口，调用后立即返回结果，但实际上整棵树的结构还在刷新中，需适时等待后（刷新时间视该树的大小而定）再查看该树的具体数据是否已刷新。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4927,7 +5110,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def remove_from_category_async(self, request):
         r"""移除数据分类
 
-        将数据分类数据实例从数据分类对象数据实例中移除。
+        本接口用于数据实例从指定分类中移除。当零部件变更产品线、设备调整工艺归属或物料重新归类时，可调用本接口解除实例与分类的关联关系。
+        - 当实例不存在时，系统将抛出异常。
+        - 当实例与指定分类不存在关联关系时，返回值为0。
+        - 当实例与指定分类存在关联关系时，返回值为成功移除的关联数据分类个数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4958,10 +5144,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -4996,7 +5182,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def remove_tag_async(self, request):
         r"""解绑标签
 
-        调用该接口为指定数据模型的数据实例解绑标签。在调用该接口前请确保数据模型具有“标签管理”功能。
+        本接口用于为指定数据模型的数据实例解绑标签，移除实例与标签之间的关联关系。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“标签管理”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5065,9 +5254,12 @@ class IDMEClassicAPIAsyncClient(Client):
     def save_all_using_post_async(self, request):
         r"""根据唯一键为“是”的属性更新实例数据
 
-        当数据模型中存在“唯一键”为“是”的属性时，可根据该属性的英文名称更新该数据模型中实例的所有字段数据。如果更新的实例不存在，系统将自动创建该实例数据。
-        
-        调用此接口时，建议传入该实例的所有字段信息。如果未传入某个字段，该字段的数据将更新为空值。
+        本接口用于根据数据模型中“唯一键”为“是”的属性（业务唯一键），对数据实例执行全量保存或更新操作。
+        更新（Update）：若系统中已存在匹配该唯一键的实例，则更新其所有字段。
+        创建（Insert）：若系统中不存在匹配该唯一键的实例，则自动创建一条新实例。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5134,9 +5326,18 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def save_as_using_post_async(self, request):
-        r"""另存版本对象的实例数据
+        r"""另存实例数据
 
-        版本对象的另存为接口（saveAs）用于创建一条与原版本对象实例数据相同的数据实例。该实例数据会完全复制原实例现有的数据，包括与其关联的主对象和分支对象，且新实例数据的版本号从初始值开始计算。
+        本接口用于对指定数据模型的数据实例执行另存为（SaveAs）操作。系统将以指定的源实例为模板，克隆其数据并生成一条全新的实例记录。
+        在另存过程中，用户可以灵活控制新实例的属性值：
+        - 未作特殊指定的属性，将完全保持与源实例一致。
+        - 可通过entityToSave为指定属性赋予新的值。
+        - 可通过needSetNullAttrs将指定属性强制清空（置为Null）。
+        另存操作不会修改或覆盖源实例，而是生成一个具有全新系统主键（id）的新实例。此功能常用于工业场景中的“图纸/模型版本迭代”、“BOM复制建版”或“基于历史数据快速创建新对象”等业务。
+        
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5205,9 +5406,13 @@ class IDMEClassicAPIAsyncClient(Client):
     def save_using_post_async(self, request):
         r"""根据唯一键为“是”的属性更新实例的指定字段
 
-        当数据模型中存在“唯一键”为“是”的属性时，可根据该属性的英文名称更新该数据模型中实例的指定字段数据。
+        本接口用于根据数据模型中“唯一键”为“是”的属性（业务唯一键），对数据实例执行指定字段的保存或更新操作。
+          - 更新（Update）：若系统中已存在匹配该唯一键的实例，则仅更新请求体中传入的指定字段。
+          - 创建（Insert）：若系统中不存在匹配该唯一键的实例，则自动创建一条新实例。
         
-        如果更新的实例不存在，系统将自动创建该实例数据。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5276,7 +5481,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_find_using_post_async(self, request):
         r"""分页查询实例
 
-        分页查询指定数据模型中的所有实例。
+        本接口用于分页查询指定数据模型中的数据实例列表。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5361,9 +5569,12 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def show_get_by_unique_key_async(self, request):
-        r"""根据唯一键为“是”的属性查询实例
+        r"""根据唯一键为“是”的基本属性查询实例
 
-        当数据模型中存在“唯一键”为“是”的属性时，可根据该属性查询实例数据。
+        当数据模型中存在“唯一键”为“是”的基本属性时，可根据该属性查询实例数据。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5434,7 +5645,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_get_parent_async(self, request):
         r"""获取父节点
 
-        调用该接口获取指定数据实例的父节点，同时返回其列表属性。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于获取指定数据实例的直接父节点，同时返回父节点的列表属性。当需要查询BOM（物料清单）中某个零部件的直接上级装配节点、查看组织架构中某个部门的直接汇报部门或获取产品分类的直接上级类目时，可调用本接口获取直接父节点信息。
+        - 调用本接口时，需在childId中传入目标数据实例的ID，系统将返回该实例的直接父节点（仅返回一层，不向上递归）。
+        - 返回结果中包含父节点的完整属性信息，包括创建者、创建时间、租户信息等列表属性。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5503,7 +5716,8 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_get_root_async(self, request):
         r"""获取根节点
 
-        调用该接口获取指定数据实例的根节点。在调用该接口前请确保数据模型具有“树形结构”功能。
+        本接口用于获取指定数据实例所在树形结构的根节点信息。当需要追溯BOM（物料清单）的顶层装配节点、查找组织架构的顶层部门或定位产品分类的顶级类目时，可调用本接口获取目标节点的根节点。
+        调用本接口时，需在id中传入目标数据实例的ID，系统将沿树形结构向上遍历，返回该实例所在树的根节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5572,7 +5786,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_get_tokens_async(self, request):
         r"""获取Token信息
 
-        该接口可以用于通过文档ID和认证类型的方式进行认证来获取结构化文档的Token。
+        本接口用于通过文档ID和认证类型获取结构化文档的访问Token。获取Token后，可在Token有效期内对指定结构化文档进行只读或读写操作。
+        - 当认证类型为read时，获取的Token仅支持对文档进行查看操作。
+        - 当认证类型为write时，获取的Token支持对文档进行编辑、保存等操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5639,9 +5855,12 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def show_get_using_post_async(self, request):
-        r"""查询实例
+        r"""查询实例详情
 
-        根据一个数据实例的唯一编码，查询实例的详细信息。
+        本接口用于根据数据实例的唯一编码（id），查询指定数据模型下单个数据实例的完整详细信息。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5710,9 +5929,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_logical_delete_by_condition_using_post_async(self, request):
         r"""根据指定条件软删除实例
 
-        通过此接口，软删除指定条件查询返回的实例。
-        
+        本接口用于根据指定的过滤条件，批量对指定数据模型下满足条件的所有数据实例执行软删除（逻辑删除）操作。
         通过此接口进行删除操作时，系统会将当前删除的实例转存至XDM应用的XDMLogicDeleteData内置模型中。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5781,9 +6002,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_logical_delete_using_post_async(self, request):
         r"""软删除实例
 
-        根据数据实例的唯一编码，软删除指定数据模型中的一个数据实例。
-        
-        通过此接口进行删除操作时，系统会将当前删除的实例转存至XDM应用的XDMLogicDeleteData内置模型中。
+        本接口用于根据数据实例的唯一编码（id），对指定数据模型下的单个数据实例执行软删除（逻辑删除）操作。
+        软删除操作不会从数据库中物理移除数据，而是将实例标记为已删除状态，并转存至XDM应用的XDMLogicDeleteData内置模型中。如需彻底删除数据，请使用[删除实例 - DeleteUsingPost](DeleteUsingPost.xml)接口。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5852,7 +6075,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_statics_page_async(self, request):
         r"""分页查询数据实例的统计信息
 
-        分页查询数据实例的统计信息，支持分组和简单函数分页统计。
+        本接口用于根据指定的聚合函数与分组条件，对指定数据模型的实例数据进行统计计算，并支持对分组后的统计结果进行分页返回。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5939,7 +6165,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_statics_using_post_async(self, request):
         r"""查询指定数据模型的实例统计信息
 
-        根据指定函数，统计指定数据模型的实例信息。
+        本接口用于根据指定的聚合函数与分组条件，对指定数据模型的实例数据进行统计计算（如计数、求平均值、求最大/最小值等）。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6008,7 +6237,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_tag_async(self, request):
         r"""查询指定数据实例的标签详情
 
-        调用该接口查询指定模型的数据实例对应标签信息。在调用该接口前请确保数据模型具有“标签管理”功能。
+        本接口用于查询指定模型的数据实例已绑定的所有标签详情，返回标签的完整定义信息及所属标签组信息。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“标签管理”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6077,7 +6309,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def show_version_by_master_async(self, request):
         r"""获取指定版本的M-V模型实例数据
 
-        根据主对象ID、迭代版本和版本号，查询M-V模型实例的详细版本信息。
+        本接口用于根据主对象ID、迭代版本和版本号，查询M-V模型实例的详细版本信息。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6146,7 +6381,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def switch_lifecycle_template_async(self, request):
         r"""切换生命周期模板
 
-        调用该接口切换指定模型的数据实例绑定的生命周期模板。切换生命周期模板时，需为数据实例指定生命周期的状态。在调用该接口前请确保数据模型具有“生命周期管理”功能。
+        本接口用于为指定模型的数据实例切换绑定的生命周期模板，并同时指定实例在新模板中的生命周期状态。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“生命周期管理”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
+        3. 已在运行态创建目标生命周期模板，且模板中包含目标生命周期状态。具体操作请参见[生命周期管理](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0068.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6215,7 +6454,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_and_checkin_async(self, request):
         r"""更新并检入M-V模型数据实例
 
-        通过此接口更新指定M-V模型实例，并检入该实例。
+        本接口用于更新指定M-V模型实例的数据，并同步完成检入操作，即一步完成“修改-提交”流程。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6284,7 +6526,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_and_revise_async(self, request):
         r"""修订并更新M-V模型数据实例
 
-        根据主对象ID修订并更新M-V模型数据实例，即修订后实例的“version.修订版本”更新为新的修订版本，并同时更新该实例的信息。
+        本用于修订一个指定的M-V模型数据实例，并在修订生成新版本的同时，更新该新实例的业务数据。
+        修订操作会将version字段升级为新的修订版本号（例如从A升级到B），随后将data参数中指定的属性值应用到新版本实例上。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6353,7 +6599,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_by_admin_async(self, request):
         r"""管理员更新M-V模型数据实例
 
-        管理员通过此接口更新指定M-V模型的指定实例数据。如果实例的唯一编码不存在，则不做任何更新操作。
+        本接口用于管理员强制更新Master-Branch-Version（M-V）模型数据实例，适用于数据治理中的紧急数据修正、版本回滚、批量属性修正等管理场景。当实例的唯一编码不存在时，系统将不做任何更新操作。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态完成M-V模型实体（即“父模型”为“VersionObject”的数据实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6422,7 +6671,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_by_condition_using_post_async(self, request):
         r"""根据指定条件更新实例
 
-        根据指定条件更新指定模型的实例。
+        本接口用于根据指定的过滤条件，批量更新指定数据模型下满足条件的所有数据实例。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6491,7 +6743,9 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_document_async(self, request):
         r"""更新文档标题
 
-        更新文档标题。
+        本接口用于更新结构化文档的标题信息。当文档标题需要随产品版本迭代、工艺变更或项目阶段调整时，可调用本接口修改文档标题。
+        调用本接口时，需通过document_id或instance_id指定目标文档。
+        若同时传入document_id和instance_id，优先以document_id定位目标文档。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6522,10 +6776,10 @@ class IDMEClassicAPIAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'model_name' in local_var_params:
-            path_params['modelName'] = local_var_params['model_name']
         if 'identifier' in local_var_params:
             path_params['identifier'] = local_var_params['identifier']
+        if 'model_name' in local_var_params:
+            path_params['modelName'] = local_var_params['model_name']
 
         query_params = []
 
@@ -6560,7 +6814,11 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_state_async(self, request):
         r"""设置生命周期的状态
 
-        调用该接口修改或切换数据实例绑定的生命周期状态。在调用该接口前请确保数据模型具有“生命周期管理”功能。
+        本接口用于修改或切换数据实例所绑定的生命周期状态，支持单个或批量实例的状态更新。
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“生命周期管理”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
+        3. 已在运行态创建并发布目标生命周期模板，且模板中包含目标生命周期状态。具体操作请参见[生命周期管理](https://support.huaweicloud.com/usermanual-idme/idme_clientog_0068.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6629,7 +6887,10 @@ class IDMEClassicAPIAsyncClient(Client):
     def update_using_post_async(self, request):
         r"""更新实例
 
-        更新指定数据模型中的一个实例数据。如果实例的唯一编码不存在，则不做任何更新操作。
+        本接口用于更新指定数据模型中的一个实例数据。如果请求中指定的实例唯一编码（id）不存在，接口将不会执行任何更新操作，也不会返回错误。
+        在调用本接口前，请确保目标数据模型已满足实例化条件：
+        1. 已在应用设计态完成数据模型（数据实体或关系实体）的创建与发布。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6696,9 +6957,16 @@ class IDMEClassicAPIAsyncClient(Client):
         return http_info
 
     def update_view_async(self, request):
-        r"""更新多维视图
+        r"""更新M-V模型数据实例的多维视图属性
 
-        调用该接口更新指定M-V模型实体的多维视图。在调用该接口前请确保数据模型具有“多维视图&amp;多维分支”功能。
+        本接口用于更新指定M-V模型实例的多维视图属性。
+        在多维视图管理中，一个零部件（Part）可能衍生出“研发”、“工艺”、“采购”等多个视图。随着业务流转或数据纠错的需求，可能需要对已存在的视图实例进行属性调整：
+        - 变更视图标识（视角切换）：当视图绑定的分类标识（item，如MultiViewItem对象）分配错误或业务标准变更时，可通过此接口将其重新绑定到正确的视图标识上。
+        - 视图属性脱敏/置空：在切换视角或修正数据时，通过needSetNull参数强制清空某些不再适用于当前视角的敏感或冗余属性。
+        
+        在调用本接口前，请确保目标数据模型满足以下条件：
+        1. 已在应用设计态创建并发布一个具有“多维视图&amp;多维分支”功能的数据模型。具体操作请参见[创建数据实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0007.html)、[创建关系实体](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0022.html)和[应用发布](https://support.huaweicloud.com/usermanual-idme/idme_usermanual_0085.html)。
+        2. 已将对应应用成功部署至运行态。具体操作请参见[部署应用](https://support.huaweicloud.com/consog-idme/idme_consog_0022.html)。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

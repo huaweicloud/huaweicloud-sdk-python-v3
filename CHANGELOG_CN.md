@@ -1,3 +1,228 @@
+# 3.1.207 2026-07-23
+
+### HuaweiCloud SDK AgentArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowOpsTraceTopology`
+  - **CreateCoreSpaceCustomizedStrategy**
+    - 响应参数变更
+      - `+ updated_at`
+      - `+ name`
+      - `+ created_at`
+      - `+ id`
+      - `+ type`
+      - `+ steps`
+      - `+ origin_type`
+      - `- body`
+  - **UpdateCoreSpaceCustomizedStrategy**
+    - 请求参数变更
+      - `+ name`
+      - `+ steps`
+      - `- body`
+    - 响应参数变更
+      - `+ updated_at`
+      - `+ name`
+      - `+ created_at`
+      - `+ id`
+      - `+ type`
+      - `+ steps`
+      - `+ origin_type`
+      - `- body`
+  - **ShowCoreSpaceJob**
+    - 响应参数变更
+      - `+ job_name`
+      - `+ id`
+      - `+ status`
+      - `- body`
+  - **ListCoreSpaceMemories**
+    - 响应参数变更
+      - `+ total`
+      - `+ offset`
+      - `+ limit`
+      - `+ items`
+      - `- body`
+  - **SearchCoreSpaceMemories**
+    - 响应参数变更
+      - `+ total`
+      - `+ query`
+      - `+ results`
+      - `- body`
+  - **ListOpsAgentObservation**
+    - 响应参数变更
+      - `+ app_info_list.source`
+      - `+ app_info_list.total_token`
+      - `+ app_info_list.avg_request_count`
+      - `+ app_info_list.avg_duration_time`
+      - `+ app_info_list.avg_fail_count`
+      - `+ app_info_list.apm_app_id`
+      - `+ app_info_list.aom_prom_id`
+      - `+ app_info_list.apm_app_token`
+      - `+ app_info_list.aom_access_code`
+      - `+ app_info_list.lts_group_id`
+      - `+ app_info_list.lts_stream_id`
+      - `+ app_info_list.lts_label_name`
+      - `+ app_info_list.apm_exporter_endpoint`
+      - `+ app_info_list.aom_exporter_endpoint`
+      - `+ app_info_list.deleted`
+  - **ListOpsSession**
+    - 请求参数变更
+      - `- business_id`
+  - **ListOpsAgentMetricLabelValues**
+    - 响应参数变更
+      - `+ data_extend_list`
+  - **CreateOpsEvaluationTask**
+    - 请求参数变更
+      - `+ input_source`
+  - **ShowCoreSpace**
+    - 响应参数变更
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **UpdateCoreSpace**
+    - 响应参数变更
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **UpdateCoreSpaceNetwork**
+    - 请求参数变更
+      - `+ public_access_enable`
+      - `+ private_access_config`
+      - `- body`
+  - **ShowOpsAgentMetricTrend**
+    - 响应参数变更
+      - `+ step`
+  - **ListOpsTrace**
+    - 响应参数变更
+      - `+ span_list.status_message`
+  - **ShowOpsTrace**
+    - 响应参数变更
+      - `+ span_list.status_message`
+  - **CreateCoreSpace**
+    - 响应参数变更
+      - `+ memory_extract_enabled`
+      - `+ vpc_id`
+      - `+ message_ttl_hours`
+      - `+ description`
+      - `+ memory_strategies_builtin`
+      - `+ created_at`
+      - `+ memory_extract_max_tokens`
+      - `+ private_access`
+      - `+ encryption_config`
+      - `+ tags`
+      - `+ public_access`
+      - `+ updated_at`
+      - `+ api_key`
+      - `+ memory_extract_max_messages`
+      - `+ name`
+      - `+ subnet_id`
+      - `+ id`
+      - `+ memory_extract_idle_seconds`
+      - `+ memory_strategies_customized`
+      - `+ status`
+      - `- body`
+  - **ShowOpsEvaluationTasksCompareResult**
+    - 响应参数变更
+      - `* data.benchmark_group.evaluations.correction: map<string, object> -> object`
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.is_spot`
+      - `+ monthly_records.promotion_type`
+      - `+ monthly_records.payment_type`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.is_spot`
+      - `+ monthly_records.promotion_type`
+      - `+ monthly_records.payment_type`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFactoryScripts**
+    - 响应参数变更
+      - `+ scripts.modify_time`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ModifyJobSchedule`、`DeleteJobSchedule`、`ListJobSchedules`、`CreateJobSchedule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDbAgentJobHistorys**
+    - 响应参数变更
+      - `+ histories`
+      - `- historys`
+
 # 3.1.206 2026-07-16
 
 ### HuaweiCloud SDK AgentArts

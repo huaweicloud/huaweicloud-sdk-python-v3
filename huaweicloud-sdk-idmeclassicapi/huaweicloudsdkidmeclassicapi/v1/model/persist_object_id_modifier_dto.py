@@ -29,9 +29,9 @@ class PersistObjectIdModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  数据实例的唯一标识，用于指定待删除的实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
         :type id: str
-        :param modifier: **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type modifier: str
         """
         
@@ -49,7 +49,7 @@ class PersistObjectIdModifierDTO:
     def id(self):
         r"""Gets the id of this PersistObjectIdModifierDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识，用于指定待删除的实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :return: The id of this PersistObjectIdModifierDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class PersistObjectIdModifierDTO:
     def id(self, id):
         r"""Sets the id of this PersistObjectIdModifierDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例的唯一标识，用于指定待删除的实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
         :param id: The id of this PersistObjectIdModifierDTO.
         :type id: str
@@ -71,7 +71,7 @@ class PersistObjectIdModifierDTO:
     def modifier(self):
         r"""Gets the modifier of this PersistObjectIdModifierDTO.
 
-        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The modifier of this PersistObjectIdModifierDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class PersistObjectIdModifierDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this PersistObjectIdModifierDTO.
 
-        **参数解释：**  请求参数对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，用于记录执行删除操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param modifier: The modifier of this PersistObjectIdModifierDTO.
         :type modifier: str

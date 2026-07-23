@@ -91,7 +91,7 @@ class ListCustomerselfResourceRecordsRequest:
         :type bill_date_begin: str
         :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
         :type bill_date_end: str
-        :param statistic_type: |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+        :param statistic_type: 统计类型。1：按账期 2：按天 3：按明细。该参数不携带或携带值为空时，取默认值3。
         :type statistic_type: int
         """
         
@@ -506,7 +506,7 @@ class ListCustomerselfResourceRecordsRequest:
     def statistic_type(self):
         r"""Gets the statistic_type of this ListCustomerselfResourceRecordsRequest.
 
-        |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+        统计类型。1：按账期 2：按天 3：按明细。该参数不携带或携带值为空时，取默认值3。
 
         :return: The statistic_type of this ListCustomerselfResourceRecordsRequest.
         :rtype: int
@@ -517,7 +517,7 @@ class ListCustomerselfResourceRecordsRequest:
     def statistic_type(self, statistic_type):
         r"""Sets the statistic_type of this ListCustomerselfResourceRecordsRequest.
 
-        |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
+        统计类型。1：按账期 2：按天 3：按明细。该参数不携带或携带值为空时，取默认值3。
 
         :param statistic_type: The statistic_type of this ListCustomerselfResourceRecordsRequest.
         :type statistic_type: int

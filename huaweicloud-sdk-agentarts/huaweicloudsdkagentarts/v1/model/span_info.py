@@ -21,6 +21,7 @@ class SpanInfo:
         'span_type': 'str',
         'span_name': 'str',
         'status_code': 'str',
+        'status_message': 'str',
         'input': 'str',
         'output': 'str',
         'duration': 'int',
@@ -47,6 +48,7 @@ class SpanInfo:
         'span_type': 'span_type',
         'span_name': 'span_name',
         'status_code': 'status_code',
+        'status_message': 'status_message',
         'input': 'input',
         'output': 'output',
         'duration': 'duration',
@@ -66,7 +68,7 @@ class SpanInfo:
         'is_error': 'is_error'
     }
 
-    def __init__(self, trace_id=None, parent_span_id=None, span_id=None, span_type=None, span_name=None, status_code=None, input=None, output=None, duration=None, session_id=None, tokens=None, input_tokens=None, output_tokens=None, start_time=None, call_type=None, metadata=None, feedback_operation=None, label=None, resource_id=None, resource_name=None, resource_type=None, model_name=None, is_error=None):
+    def __init__(self, trace_id=None, parent_span_id=None, span_id=None, span_type=None, span_name=None, status_code=None, status_message=None, input=None, output=None, duration=None, session_id=None, tokens=None, input_tokens=None, output_tokens=None, start_time=None, call_type=None, metadata=None, feedback_operation=None, label=None, resource_id=None, resource_name=None, resource_type=None, model_name=None, is_error=None):
         r"""SpanInfo
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class SpanInfo:
         :type span_name: str
         :param status_code: 状态码
         :type status_code: str
+        :param status_message: 状态信息
+        :type status_message: str
         :param input: 输入
         :type input: str
         :param output: 输出
@@ -127,6 +131,7 @@ class SpanInfo:
         self._span_type = None
         self._span_name = None
         self._status_code = None
+        self._status_message = None
         self._input = None
         self._output = None
         self._duration = None
@@ -158,6 +163,8 @@ class SpanInfo:
             self.span_name = span_name
         if status_code is not None:
             self.status_code = status_code
+        if status_message is not None:
+            self.status_message = status_message
         if input is not None:
             self.input = input
         if output is not None:
@@ -324,6 +331,28 @@ class SpanInfo:
         :type status_code: str
         """
         self._status_code = status_code
+
+    @property
+    def status_message(self):
+        r"""Gets the status_message of this SpanInfo.
+
+        状态信息
+
+        :return: The status_message of this SpanInfo.
+        :rtype: str
+        """
+        return self._status_message
+
+    @status_message.setter
+    def status_message(self, status_message):
+        r"""Sets the status_message of this SpanInfo.
+
+        状态信息
+
+        :param status_message: The status_message of this SpanInfo.
+        :type status_message: str
+        """
+        self._status_message = status_message
 
     @property
     def input(self):

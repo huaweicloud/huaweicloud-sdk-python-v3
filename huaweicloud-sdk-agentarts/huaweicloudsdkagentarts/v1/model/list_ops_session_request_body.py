@@ -17,7 +17,6 @@ class ListOpsSessionRequestBody:
     openapi_types = {
         'start_time': 'int',
         'end_time': 'int',
-        'business_id': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
         'filter': 'list[ListFilterParam]',
@@ -29,7 +28,6 @@ class ListOpsSessionRequestBody:
     attribute_map = {
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'business_id': 'business_id',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
         'filter': 'filter',
@@ -38,7 +36,7 @@ class ListOpsSessionRequestBody:
         'page_size': 'page_size'
     }
 
-    def __init__(self, start_time=None, end_time=None, business_id=None, resource_id=None, resource_type=None, filter=None, label_filter=None, page_no=None, page_size=None):
+    def __init__(self, start_time=None, end_time=None, resource_id=None, resource_type=None, filter=None, label_filter=None, page_no=None, page_size=None):
         r"""ListOpsSessionRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,8 +45,6 @@ class ListOpsSessionRequestBody:
         :type start_time: int
         :param end_time: 时间戳
         :type end_time: int
-        :param business_id: 企业id
-        :type business_id: str
         :param resource_id: 资源id
         :type resource_id: str
         :param resource_type: 资源类型
@@ -67,7 +63,6 @@ class ListOpsSessionRequestBody:
 
         self._start_time = None
         self._end_time = None
-        self._business_id = None
         self._resource_id = None
         self._resource_type = None
         self._filter = None
@@ -80,8 +75,6 @@ class ListOpsSessionRequestBody:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
-        if business_id is not None:
-            self.business_id = business_id
         if resource_id is not None:
             self.resource_id = resource_id
         if resource_type is not None:
@@ -138,28 +131,6 @@ class ListOpsSessionRequestBody:
         :type end_time: int
         """
         self._end_time = end_time
-
-    @property
-    def business_id(self):
-        r"""Gets the business_id of this ListOpsSessionRequestBody.
-
-        企业id
-
-        :return: The business_id of this ListOpsSessionRequestBody.
-        :rtype: str
-        """
-        return self._business_id
-
-    @business_id.setter
-    def business_id(self, business_id):
-        r"""Sets the business_id of this ListOpsSessionRequestBody.
-
-        企业id
-
-        :param business_id: The business_id of this ListOpsSessionRequestBody.
-        :type business_id: str
-        """
-        self._business_id = business_id
 
     @property
     def resource_id(self):

@@ -29,9 +29,9 @@ class SelectedField:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param name: **参数解释：**  指定返回的数据属性字段名称。如需返回子参考对象的属性，格式为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name: str
-        :param name_as: **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param name_as: **参数解释：**  字段别名，用于自定义响应中该属性的字段名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type name_as: str
         """
         
@@ -49,7 +49,7 @@ class SelectedField:
     def name(self):
         r"""Gets the name of this SelectedField.
 
-        **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定返回的数据属性字段名称。如需返回子参考对象的属性，格式为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name of this SelectedField.
         :rtype: str
@@ -60,7 +60,7 @@ class SelectedField:
     def name(self, name):
         r"""Sets the name of this SelectedField.
 
-        **参数解释：**  字段名称，如果是子参考对象的属性，则为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  指定返回的数据属性字段名称。如需返回子参考对象的属性，格式为“参考对象.属性名称”，例如：“master.name”。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name: The name of this SelectedField.
         :type name: str
@@ -71,7 +71,7 @@ class SelectedField:
     def name_as(self):
         r"""Gets the name_as of this SelectedField.
 
-        **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  字段别名，用于自定义响应中该属性的字段名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The name_as of this SelectedField.
         :rtype: str
@@ -82,7 +82,7 @@ class SelectedField:
     def name_as(self, name_as):
         r"""Sets the name_as of this SelectedField.
 
-        **参数解释：**  字段别名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  字段别名，用于自定义响应中该属性的字段名。如果不填，默认使用name参数的值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param name_as: The name_as of this SelectedField.
         :type name_as: str

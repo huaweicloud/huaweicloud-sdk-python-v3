@@ -18,26 +18,30 @@ class ShowStaticsPageResponse(SdkResponse):
     openapi_types = {
         'result': 'str',
         'data': 'list[object]',
-        'errors': 'list[str]'
+        'errors': 'list[str]',
+        'page_info': 'PageInfoViewDTO'
     }
 
     attribute_map = {
         'result': 'result',
         'data': 'data',
-        'errors': 'errors'
+        'errors': 'errors',
+        'page_info': 'pageInfo'
     }
 
-    def __init__(self, result=None, data=None, errors=None):
+    def __init__(self, result=None, data=None, errors=None, page_info=None):
         r"""ShowStaticsPageResponse
 
         The model defined in huaweicloud sdk
 
-        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
         :type result: str
-        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。
         :type data: list[object]
-        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param errors: **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
         :type errors: list[str]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ShowStaticsPageResponse(SdkResponse):
         self._result = None
         self._data = None
         self._errors = None
+        self._page_info = None
         self.discriminator = None
 
         if result is not None:
@@ -53,12 +58,14 @@ class ShowStaticsPageResponse(SdkResponse):
             self.data = data
         if errors is not None:
             self.errors = errors
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def result(self):
         r"""Gets the result of this ShowStaticsPageResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :return: The result of this ShowStaticsPageResponse.
         :rtype: str
@@ -69,7 +76,7 @@ class ShowStaticsPageResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowStaticsPageResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :param result: The result of this ShowStaticsPageResponse.
         :type result: str
@@ -80,7 +87,7 @@ class ShowStaticsPageResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ShowStaticsPageResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。
 
         :return: The data of this ShowStaticsPageResponse.
         :rtype: list[object]
@@ -91,7 +98,7 @@ class ShowStaticsPageResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ShowStaticsPageResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求数据。  **取值范围：**  不涉及。
 
         :param data: The data of this ShowStaticsPageResponse.
         :type data: list[object]
@@ -102,7 +109,7 @@ class ShowStaticsPageResponse(SdkResponse):
     def errors(self):
         r"""Gets the errors of this ShowStaticsPageResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :return: The errors of this ShowStaticsPageResponse.
         :rtype: list[str]
@@ -113,12 +120,30 @@ class ShowStaticsPageResponse(SdkResponse):
     def errors(self, errors):
         r"""Sets the errors of this ShowStaticsPageResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :param errors: The errors of this ShowStaticsPageResponse.
         :type errors: list[str]
         """
         self._errors = errors
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ShowStaticsPageResponse.
+
+        :return: The page_info of this ShowStaticsPageResponse.
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ShowStaticsPageResponse.
+
+        :param page_info: The page_info of this ShowStaticsPageResponse.
+        :type page_info: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

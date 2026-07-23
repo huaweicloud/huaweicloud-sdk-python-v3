@@ -15,35 +15,57 @@ class RDMParamVOPersistableModelSaveAsDTO:
     sensitive_list = []
 
     openapi_types = {
-        'params': 'PersistableModelSaveAsDTO',
-        'application_id': 'str'
+        'application_id': 'str',
+        'params': 'PersistableModelSaveAsDTO'
     }
 
     attribute_map = {
-        'params': 'params',
-        'application_id': 'applicationId'
+        'application_id': 'applicationId',
+        'params': 'params'
     }
 
-    def __init__(self, params=None, application_id=None):
+    def __init__(self, application_id=None, params=None):
         r"""RDMParamVOPersistableModelSaveAsDTO
 
         The model defined in huaweicloud sdk
 
+        :param application_id: **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为32个字符。  **默认取值：**  不涉及。
+        :type application_id: str
         :param params: 
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAsDTO`
-        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
-        :type application_id: str
         """
         
         
 
-        self._params = None
         self._application_id = None
+        self._params = None
         self.discriminator = None
 
-        self.params = params
         if application_id is not None:
             self.application_id = application_id
+        self.params = params
+
+    @property
+    def application_id(self):
+        r"""Gets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
+
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为32个字符。  **默认取值：**  不涉及。
+
+        :return: The application_id of this RDMParamVOPersistableModelSaveAsDTO.
+        :rtype: str
+        """
+        return self._application_id
+
+    @application_id.setter
+    def application_id(self, application_id):
+        r"""Sets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
+
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度固定为32个字符。  **默认取值：**  不涉及。
+
+        :param application_id: The application_id of this RDMParamVOPersistableModelSaveAsDTO.
+        :type application_id: str
+        """
+        self._application_id = application_id
 
     @property
     def params(self):
@@ -62,28 +84,6 @@ class RDMParamVOPersistableModelSaveAsDTO:
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistableModelSaveAsDTO`
         """
         self._params = params
-
-    @property
-    def application_id(self):
-        r"""Gets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
-
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
-
-        :return: The application_id of this RDMParamVOPersistableModelSaveAsDTO.
-        :rtype: str
-        """
-        return self._application_id
-
-    @application_id.setter
-    def application_id(self, application_id):
-        r"""Sets the application_id of this RDMParamVOPersistableModelSaveAsDTO.
-
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
-
-        :param application_id: The application_id of this RDMParamVOPersistableModelSaveAsDTO.
-        :type application_id: str
-        """
-        self._application_id = application_id
 
     def to_dict(self):
         result = {}

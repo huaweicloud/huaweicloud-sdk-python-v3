@@ -16,55 +16,55 @@ class StatisticsRVO:
 
     openapi_types = {
         'create_count': 'int',
+        'update_count': 'int',
         'delete_count': 'int',
-        'logical_delete_count': 'int',
-        'update_count': 'int'
+        'logical_delete_count': 'int'
     }
 
     attribute_map = {
         'create_count': 'createCount',
+        'update_count': 'updateCount',
         'delete_count': 'deleteCount',
-        'logical_delete_count': 'logicalDeleteCount',
-        'update_count': 'updateCount'
+        'logical_delete_count': 'logicalDeleteCount'
     }
 
-    def __init__(self, create_count=None, delete_count=None, logical_delete_count=None, update_count=None):
+    def __init__(self, create_count=None, update_count=None, delete_count=None, logical_delete_count=None):
         r"""StatisticsRVO
 
         The model defined in huaweicloud sdk
 
-        :param create_count: **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_count: **参数解释：**  新增实例统计记录数，表示在指定时间区间内创建的实例数量。  **取值范围：**  不涉及。
         :type create_count: int
-        :param delete_count: **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type delete_count: int
-        :param logical_delete_count: **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type logical_delete_count: int
-        :param update_count: **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param update_count: **参数解释：**  更新实例统计记录数，表示在指定时间区间内更新的实例数量。  **取值范围：**  不涉及。
         :type update_count: int
+        :param delete_count: **参数解释：**  删除实例统计记录数，表示在指定时间区间内物理删除的实例数量。  **取值范围：**  不涉及。
+        :type delete_count: int
+        :param logical_delete_count: **参数解释：**  软删除实例统计记录数，表示在指定时间区间内软删除的实例数量。  **取值范围：**  不涉及。
+        :type logical_delete_count: int
         """
         
         
 
         self._create_count = None
+        self._update_count = None
         self._delete_count = None
         self._logical_delete_count = None
-        self._update_count = None
         self.discriminator = None
 
         if create_count is not None:
             self.create_count = create_count
+        if update_count is not None:
+            self.update_count = update_count
         if delete_count is not None:
             self.delete_count = delete_count
         if logical_delete_count is not None:
             self.logical_delete_count = logical_delete_count
-        if update_count is not None:
-            self.update_count = update_count
 
     @property
     def create_count(self):
         r"""Gets the create_count of this StatisticsRVO.
 
-        **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  新增实例统计记录数，表示在指定时间区间内创建的实例数量。  **取值范围：**  不涉及。
 
         :return: The create_count of this StatisticsRVO.
         :rtype: int
@@ -75,7 +75,7 @@ class StatisticsRVO:
     def create_count(self, create_count):
         r"""Sets the create_count of this StatisticsRVO.
 
-        **参数解释：**  新增统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  新增实例统计记录数，表示在指定时间区间内创建的实例数量。  **取值范围：**  不涉及。
 
         :param create_count: The create_count of this StatisticsRVO.
         :type create_count: int
@@ -83,54 +83,10 @@ class StatisticsRVO:
         self._create_count = create_count
 
     @property
-    def delete_count(self):
-        r"""Gets the delete_count of this StatisticsRVO.
-
-        **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :return: The delete_count of this StatisticsRVO.
-        :rtype: int
-        """
-        return self._delete_count
-
-    @delete_count.setter
-    def delete_count(self, delete_count):
-        r"""Sets the delete_count of this StatisticsRVO.
-
-        **参数解释：**  删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :param delete_count: The delete_count of this StatisticsRVO.
-        :type delete_count: int
-        """
-        self._delete_count = delete_count
-
-    @property
-    def logical_delete_count(self):
-        r"""Gets the logical_delete_count of this StatisticsRVO.
-
-        **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :return: The logical_delete_count of this StatisticsRVO.
-        :rtype: int
-        """
-        return self._logical_delete_count
-
-    @logical_delete_count.setter
-    def logical_delete_count(self, logical_delete_count):
-        r"""Sets the logical_delete_count of this StatisticsRVO.
-
-        **参数解释：**  软删除统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :param logical_delete_count: The logical_delete_count of this StatisticsRVO.
-        :type logical_delete_count: int
-        """
-        self._logical_delete_count = logical_delete_count
-
-    @property
     def update_count(self):
         r"""Gets the update_count of this StatisticsRVO.
 
-        **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新实例统计记录数，表示在指定时间区间内更新的实例数量。  **取值范围：**  不涉及。
 
         :return: The update_count of this StatisticsRVO.
         :rtype: int
@@ -141,12 +97,56 @@ class StatisticsRVO:
     def update_count(self, update_count):
         r"""Sets the update_count of this StatisticsRVO.
 
-        **参数解释：**  更新统计记录数。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新实例统计记录数，表示在指定时间区间内更新的实例数量。  **取值范围：**  不涉及。
 
         :param update_count: The update_count of this StatisticsRVO.
         :type update_count: int
         """
         self._update_count = update_count
+
+    @property
+    def delete_count(self):
+        r"""Gets the delete_count of this StatisticsRVO.
+
+        **参数解释：**  删除实例统计记录数，表示在指定时间区间内物理删除的实例数量。  **取值范围：**  不涉及。
+
+        :return: The delete_count of this StatisticsRVO.
+        :rtype: int
+        """
+        return self._delete_count
+
+    @delete_count.setter
+    def delete_count(self, delete_count):
+        r"""Sets the delete_count of this StatisticsRVO.
+
+        **参数解释：**  删除实例统计记录数，表示在指定时间区间内物理删除的实例数量。  **取值范围：**  不涉及。
+
+        :param delete_count: The delete_count of this StatisticsRVO.
+        :type delete_count: int
+        """
+        self._delete_count = delete_count
+
+    @property
+    def logical_delete_count(self):
+        r"""Gets the logical_delete_count of this StatisticsRVO.
+
+        **参数解释：**  软删除实例统计记录数，表示在指定时间区间内软删除的实例数量。  **取值范围：**  不涉及。
+
+        :return: The logical_delete_count of this StatisticsRVO.
+        :rtype: int
+        """
+        return self._logical_delete_count
+
+    @logical_delete_count.setter
+    def logical_delete_count(self, logical_delete_count):
+        r"""Sets the logical_delete_count of this StatisticsRVO.
+
+        **参数解释：**  软删除实例统计记录数，表示在指定时间区间内软删除的实例数量。  **取值范围：**  不涉及。
+
+        :param logical_delete_count: The logical_delete_count of this StatisticsRVO.
+        :type logical_delete_count: int
+        """
+        self._logical_delete_count = logical_delete_count
 
     def to_dict(self):
         result = {}

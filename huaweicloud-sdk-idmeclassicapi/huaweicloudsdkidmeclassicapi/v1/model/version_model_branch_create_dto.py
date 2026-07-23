@@ -39,15 +39,15 @@ class VersionModelBranchCreateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: 创建时间。
+        :param create_time: 创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type create_time: str
         :param creator: 创建者。
         :type creator: str
         :param id: 唯一标识。
         :type id: str
-        :param last_update_time: 最后更新时间。
+        :param last_update_time: 最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
         :type last_update_time: str
-        :param modifier: 修改人。
+        :param modifier: 更新者。
         :type modifier: str
         :param rdm_extension_type: 扩展类型。
         :type rdm_extension_type: str
@@ -85,7 +85,7 @@ class VersionModelBranchCreateDTO:
     def create_time(self):
         r"""Gets the create_time of this VersionModelBranchCreateDTO.
 
-        创建时间。
+        创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The create_time of this VersionModelBranchCreateDTO.
         :rtype: str
@@ -96,7 +96,7 @@ class VersionModelBranchCreateDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this VersionModelBranchCreateDTO.
 
-        创建时间。
+        创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param create_time: The create_time of this VersionModelBranchCreateDTO.
         :type create_time: str
@@ -151,7 +151,7 @@ class VersionModelBranchCreateDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this VersionModelBranchCreateDTO.
 
-        最后更新时间。
+        最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :return: The last_update_time of this VersionModelBranchCreateDTO.
         :rtype: str
@@ -162,7 +162,7 @@ class VersionModelBranchCreateDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this VersionModelBranchCreateDTO.
 
-        最后更新时间。
+        最后更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。
 
         :param last_update_time: The last_update_time of this VersionModelBranchCreateDTO.
         :type last_update_time: str
@@ -173,7 +173,7 @@ class VersionModelBranchCreateDTO:
     def modifier(self):
         r"""Gets the modifier of this VersionModelBranchCreateDTO.
 
-        修改人。
+        更新者。
 
         :return: The modifier of this VersionModelBranchCreateDTO.
         :rtype: str
@@ -184,7 +184,7 @@ class VersionModelBranchCreateDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelBranchCreateDTO.
 
-        修改人。
+        更新者。
 
         :param modifier: The modifier of this VersionModelBranchCreateDTO.
         :type modifier: str

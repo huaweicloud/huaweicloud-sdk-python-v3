@@ -15443,6 +15443,71 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def create_job_schedule_async(self, request):
+        r"""创建数据库定时任务策略
+
+        创建数据库定时任务策略。每个类型最多只能创建100个自定义策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateJobSchedule
+        :type request: :class:`huaweicloudsdkrds.v3.CreateJobScheduleRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateJobScheduleResponse`
+        """
+        http_info = self._create_job_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_job_schedule_async_invoker(self, request):
+        http_info = self._create_job_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_job_schedule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/db-job/schedules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_publication_async(self, request):
         r"""创建发布
 
@@ -15621,6 +15686,71 @@ class RdsAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_job_schedule_async(self, request):
+        r"""删除数据库定时任务策略
+
+        删除数据库定时任务策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteJobSchedule
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteJobScheduleRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteJobScheduleResponse`
+        """
+        http_info = self._delete_job_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_job_schedule_async_invoker(self, request):
+        http_info = self._delete_job_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_schedule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/db-job/schedules/{schedule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schedule_id' in local_var_params:
+            path_params['schedule_id'] = local_var_params['schedule_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -16118,6 +16248,77 @@ class RdsAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_job_schedules_async(self, request):
+        r"""查询数据库定时任务策略
+
+        查询数据库定时任务策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListJobSchedules
+        :type request: :class:`huaweicloudsdkrds.v3.ListJobSchedulesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListJobSchedulesResponse`
+        """
+        http_info = self._list_job_schedules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_job_schedules_async_invoker(self, request):
+        http_info = self._list_job_schedules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_schedules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/db-job/schedules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobSchedulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'schedule_type' in local_var_params:
+            query_params.append(('schedule_type', local_var_params['schedule_type']))
+        if 'schedule_id' in local_var_params:
+            query_params.append(('schedule_id', local_var_params['schedule_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
 
         form_params = {}
 
@@ -16698,6 +16899,73 @@ class RdsAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_job_schedule_async(self, request):
+        r"""修改数据库定时任务策略
+
+        修改数据库定时任务策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyJobSchedule
+        :type request: :class:`huaweicloudsdkrds.v3.ModifyJobScheduleRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifyJobScheduleResponse`
+        """
+        http_info = self._modify_job_schedule_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_job_schedule_async_invoker(self, request):
+        http_info = self._modify_job_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_job_schedule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/db-job/schedules/{schedule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyJobScheduleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schedule_id' in local_var_params:
+            path_params['schedule_id'] = local_var_params['schedule_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

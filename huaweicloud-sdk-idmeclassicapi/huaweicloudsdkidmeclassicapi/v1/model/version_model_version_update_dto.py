@@ -16,45 +16,45 @@ class VersionModelVersionUpdateDTO:
 
     openapi_types = {
         'id': 'str',
-        'iteration': 'int',
         'version': 'str',
+        'iteration': 'int',
         'modifier': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'iteration': 'iteration',
         'version': 'version',
+        'iteration': 'iteration',
         'modifier': 'modifier'
     }
 
-    def __init__(self, id=None, iteration=None, version=None, modifier=None):
+    def __init__(self, id=None, version=None, iteration=None, modifier=None):
         r"""VersionModelVersionUpdateDTO
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  待升级实例的系统唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type id: str
-        :param iteration: **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type iteration: int
-        :param version: **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param version: **参数解释：**  目标修订版本号（小版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type version: str
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param iteration: **参数解释：**  目标迭代版本号（大版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :type iteration: int
+        :param modifier: **参数解释：**  执行升级操作的更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
         
 
         self._id = None
-        self._iteration = None
         self._version = None
+        self._iteration = None
         self._modifier = None
         self.discriminator = None
 
         self.id = id
+        self.version = version
         if iteration is not None:
             self.iteration = iteration
-        self.version = version
         if modifier is not None:
             self.modifier = modifier
 
@@ -62,7 +62,7 @@ class VersionModelVersionUpdateDTO:
     def id(self):
         r"""Gets the id of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  待升级实例的系统唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The id of this VersionModelVersionUpdateDTO.
         :rtype: str
@@ -73,7 +73,7 @@ class VersionModelVersionUpdateDTO:
     def id(self, id):
         r"""Sets the id of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  待升级实例的系统唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param id: The id of this VersionModelVersionUpdateDTO.
         :type id: str
@@ -81,32 +81,10 @@ class VersionModelVersionUpdateDTO:
         self._id = id
 
     @property
-    def iteration(self):
-        r"""Gets the iteration of this VersionModelVersionUpdateDTO.
-
-        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :return: The iteration of this VersionModelVersionUpdateDTO.
-        :rtype: int
-        """
-        return self._iteration
-
-    @iteration.setter
-    def iteration(self, iteration):
-        r"""Sets the iteration of this VersionModelVersionUpdateDTO.
-
-        **参数解释：**  迭代版本。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :param iteration: The iteration of this VersionModelVersionUpdateDTO.
-        :type iteration: int
-        """
-        self._iteration = iteration
-
-    @property
     def version(self):
         r"""Gets the version of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标修订版本号（小版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The version of this VersionModelVersionUpdateDTO.
         :rtype: str
@@ -117,7 +95,7 @@ class VersionModelVersionUpdateDTO:
     def version(self, version):
         r"""Sets the version of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标修订版本号（小版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param version: The version of this VersionModelVersionUpdateDTO.
         :type version: str
@@ -125,10 +103,32 @@ class VersionModelVersionUpdateDTO:
         self._version = version
 
     @property
+    def iteration(self):
+        r"""Gets the iteration of this VersionModelVersionUpdateDTO.
+
+        **参数解释：**  目标迭代版本号（大版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :return: The iteration of this VersionModelVersionUpdateDTO.
+        :rtype: int
+        """
+        return self._iteration
+
+    @iteration.setter
+    def iteration(self, iteration):
+        r"""Sets the iteration of this VersionModelVersionUpdateDTO.
+
+        **参数解释：**  目标迭代版本号（大版本）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :param iteration: The iteration of this VersionModelVersionUpdateDTO.
+        :type iteration: int
+        """
+        self._iteration = iteration
+
+    @property
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  执行升级操作的更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionUpdateDTO.
         :rtype: str
@@ -139,7 +139,7 @@ class VersionModelVersionUpdateDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionUpdateDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  执行升级操作的更新者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionUpdateDTO.
         :type modifier: str

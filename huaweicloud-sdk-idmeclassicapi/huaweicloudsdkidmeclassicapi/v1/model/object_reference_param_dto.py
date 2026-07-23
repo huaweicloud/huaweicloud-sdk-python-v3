@@ -15,63 +15,41 @@ class ObjectReferenceParamDTO:
     sensitive_list = []
 
     openapi_types = {
-        'clazz': 'str',
-        'id': 'str'
+        'id': 'str',
+        'clazz': 'str'
     }
 
     attribute_map = {
-        'clazz': 'clazz',
-        'id': 'id'
+        'id': 'id',
+        'clazz': 'clazz'
     }
 
-    def __init__(self, clazz=None, id=None):
+    def __init__(self, id=None, clazz=None):
         r"""ObjectReferenceParamDTO
 
         The model defined in huaweicloud sdk
 
-        :param clazz: **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type clazz: str
-        :param id: **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  数据实例ID，用于唯一标识引用的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type id: str
+        :param clazz: **参数解释：**  类名，用于指定引用对象的类类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :type clazz: str
         """
         
         
 
-        self._clazz = None
         self._id = None
+        self._clazz = None
         self.discriminator = None
 
+        self.id = id
         if clazz is not None:
             self.clazz = clazz
-        self.id = id
-
-    @property
-    def clazz(self):
-        r"""Gets the clazz of this ObjectReferenceParamDTO.
-
-        **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :return: The clazz of this ObjectReferenceParamDTO.
-        :rtype: str
-        """
-        return self._clazz
-
-    @clazz.setter
-    def clazz(self, clazz):
-        r"""Sets the clazz of this ObjectReferenceParamDTO.
-
-        **参数解释：**  类名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-
-        :param clazz: The clazz of this ObjectReferenceParamDTO.
-        :type clazz: str
-        """
-        self._clazz = clazz
 
     @property
     def id(self):
         r"""Gets the id of this ObjectReferenceParamDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID，用于唯一标识引用的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The id of this ObjectReferenceParamDTO.
         :rtype: str
@@ -82,12 +60,34 @@ class ObjectReferenceParamDTO:
     def id(self, id):
         r"""Sets the id of this ObjectReferenceParamDTO.
 
-        **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  数据实例ID，用于唯一标识引用的数据实例。 获取方法请参见[分页查询实例 - ShowFindUsingPost](https://support.huaweicloud.com/api-idme/ShowFindUsingPost.html)。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param id: The id of this ObjectReferenceParamDTO.
         :type id: str
         """
         self._id = id
+
+    @property
+    def clazz(self):
+        r"""Gets the clazz of this ObjectReferenceParamDTO.
+
+        **参数解释：**  类名，用于指定引用对象的类类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :return: The clazz of this ObjectReferenceParamDTO.
+        :rtype: str
+        """
+        return self._clazz
+
+    @clazz.setter
+    def clazz(self, clazz):
+        r"""Sets the clazz of this ObjectReferenceParamDTO.
+
+        **参数解释：**  类名，用于指定引用对象的类类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+
+        :param clazz: The clazz of this ObjectReferenceParamDTO.
+        :type clazz: str
+        """
+        self._clazz = clazz
 
     def to_dict(self):
         result = {}

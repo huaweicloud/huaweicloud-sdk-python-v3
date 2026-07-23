@@ -29,9 +29,9 @@ class VersionModelMasterIdsModifierDTO:
 
         The model defined in huaweicloud sdk
 
-        :param master_ids: **参数解释：**  主对象ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        :param master_ids: **参数解释：**  主对象ID列表，用于批量定位待删除的版本实例所属的主对象。  **约束限制：**  - 单次请求最多支持100个主对象ID。 - 每个主对象ID必须有效且存在对应M-V模型实例。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type master_ids: list[str]
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param modifier: **参数解释：**  更新者账号，记录执行批量删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -49,7 +49,7 @@ class VersionModelMasterIdsModifierDTO:
     def master_ids(self):
         r"""Gets the master_ids of this VersionModelMasterIdsModifierDTO.
 
-        **参数解释：**  主对象ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        **参数解释：**  主对象ID列表，用于批量定位待删除的版本实例所属的主对象。  **约束限制：**  - 单次请求最多支持100个主对象ID。 - 每个主对象ID必须有效且存在对应M-V模型实例。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The master_ids of this VersionModelMasterIdsModifierDTO.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class VersionModelMasterIdsModifierDTO:
     def master_ids(self, master_ids):
         r"""Sets the master_ids of this VersionModelMasterIdsModifierDTO.
 
-        **参数解释：**  主对象ID列表。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        **参数解释：**  主对象ID列表，用于批量定位待删除的版本实例所属的主对象。  **约束限制：**  - 单次请求最多支持100个主对象ID。 - 每个主对象ID必须有效且存在对应M-V模型实例。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param master_ids: The master_ids of this VersionModelMasterIdsModifierDTO.
         :type master_ids: list[str]
@@ -71,7 +71,7 @@ class VersionModelMasterIdsModifierDTO:
     def modifier(self):
         r"""Gets the modifier of this VersionModelMasterIdsModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，记录执行批量删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelMasterIdsModifierDTO.
         :rtype: str
@@ -82,7 +82,7 @@ class VersionModelMasterIdsModifierDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelMasterIdsModifierDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，记录执行批量删除操作的用户标识。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelMasterIdsModifierDTO.
         :type modifier: str

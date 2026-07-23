@@ -15,97 +15,141 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
     sensitive_list = []
 
     openapi_types = {
-        'creator': 'str',
+        'master_id': 'str',
+        'working_copy': 'bool',
+        'work_copy_type': 'str',
         'custom_link_set': 'list[str]',
         'data': 'VersionModel',
-        'master_id': 'str',
-        'modifier': 'str',
-        'work_copy_type': 'str',
-        'working_copy': 'bool'
+        'creator': 'str',
+        'modifier': 'str'
     }
 
     attribute_map = {
-        'creator': 'creator',
+        'master_id': 'masterId',
+        'working_copy': 'workingCopy',
+        'work_copy_type': 'workCopyType',
         'custom_link_set': 'customLinkSet',
         'data': 'data',
-        'master_id': 'masterId',
-        'modifier': 'modifier',
-        'work_copy_type': 'workCopyType',
-        'working_copy': 'workingCopy'
+        'creator': 'creator',
+        'modifier': 'modifier'
     }
 
-    def __init__(self, creator=None, custom_link_set=None, data=None, master_id=None, modifier=None, work_copy_type=None, working_copy=None):
+    def __init__(self, master_id=None, working_copy=None, work_copy_type=None, custom_link_set=None, data=None, creator=None, modifier=None):
         r"""VersionModelVersionReviseAndUpdateDTOVersionModel
 
         The model defined in huaweicloud sdk
 
-        :param creator: **参数解释：**  创建人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type creator: str
-        :param custom_link_set: **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param master_id: **参数解释：**  主对象ID，用于定位需要修订的数据实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
+        :type master_id: str
+        :param working_copy: **参数解释：**  是否已检出，用于控制修订后实例的工作状态。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。
+        :type working_copy: bool
+        :param work_copy_type: **参数解释：**  关系的复制类型，控制新版本实例是否继承旧版本的关系实例引用。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。
+        :type work_copy_type: str
+        :param custom_link_set: **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  仅当workCopyType为CUSTOM时有效。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type custom_link_set: list[str]
         :param data: 
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
-        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
-        :type master_id: str
-        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :type creator: str
+        :param modifier: **参数解释：**  更新者账号，记录执行本次修订更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
-        :param work_copy_type: **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
-        :type work_copy_type: str
-        :param working_copy: **参数解释：**  是否已检出。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
-        :type working_copy: bool
         """
         
         
 
-        self._creator = None
+        self._master_id = None
+        self._working_copy = None
+        self._work_copy_type = None
         self._custom_link_set = None
         self._data = None
-        self._master_id = None
+        self._creator = None
         self._modifier = None
-        self._work_copy_type = None
-        self._working_copy = None
         self.discriminator = None
 
-        if creator is not None:
-            self.creator = creator
+        self.master_id = master_id
+        if working_copy is not None:
+            self.working_copy = working_copy
+        if work_copy_type is not None:
+            self.work_copy_type = work_copy_type
         if custom_link_set is not None:
             self.custom_link_set = custom_link_set
         self.data = data
-        self.master_id = master_id
+        if creator is not None:
+            self.creator = creator
         if modifier is not None:
             self.modifier = modifier
-        if work_copy_type is not None:
-            self.work_copy_type = work_copy_type
-        if working_copy is not None:
-            self.working_copy = working_copy
 
     @property
-    def creator(self):
-        r"""Gets the creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+    def master_id(self):
+        r"""Gets the master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  创建人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于定位需要修订的数据实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
-        :return: The creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :return: The master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: str
         """
-        return self._creator
+        return self._master_id
 
-    @creator.setter
-    def creator(self, creator):
-        r"""Sets the creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+    @master_id.setter
+    def master_id(self, master_id):
+        r"""Sets the master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  创建人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于定位需要修订的数据实例。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
-        :param creator: The creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :type creator: str
+        :param master_id: The master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :type master_id: str
         """
-        self._creator = creator
+        self._master_id = master_id
+
+    @property
+    def working_copy(self):
+        r"""Gets the working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+
+        **参数解释：**  是否已检出，用于控制修订后实例的工作状态。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。
+
+        :return: The working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :rtype: bool
+        """
+        return self._working_copy
+
+    @working_copy.setter
+    def working_copy(self, working_copy):
+        r"""Sets the working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+
+        **参数解释：**  是否已检出，用于控制修订后实例的工作状态。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。
+
+        :param working_copy: The working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :type working_copy: bool
+        """
+        self._working_copy = working_copy
+
+    @property
+    def work_copy_type(self):
+        r"""Gets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+
+        **参数解释：**  关系的复制类型，控制新版本实例是否继承旧版本的关系实例引用。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。
+
+        :return: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :rtype: str
+        """
+        return self._work_copy_type
+
+    @work_copy_type.setter
+    def work_copy_type(self, work_copy_type):
+        r"""Sets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+
+        **参数解释：**  关系的复制类型，控制新版本实例是否继承旧版本的关系实例引用。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。
+
+        :param work_copy_type: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :type work_copy_type: str
+        """
+        self._work_copy_type = work_copy_type
 
     @property
     def custom_link_set(self):
         r"""Gets the custom_link_set of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  仅当workCopyType为CUSTOM时有效。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The custom_link_set of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: list[str]
@@ -116,7 +160,7 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
     def custom_link_set(self, custom_link_set):
         r"""Sets the custom_link_set of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  仅当workCopyType为CUSTOM时有效。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param custom_link_set: The custom_link_set of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :type custom_link_set: list[str]
@@ -142,32 +186,32 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
         self._data = data
 
     @property
-    def master_id(self):
-        r"""Gets the master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+    def creator(self):
+        r"""Gets the creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
-        :return: The master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :return: The creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: str
         """
-        return self._master_id
+        return self._creator
 
-    @master_id.setter
-    def master_id(self, master_id):
-        r"""Sets the master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+    @creator.setter
+    def creator(self, creator):
+        r"""Sets the creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
-        :param master_id: The master_id of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :type master_id: str
+        :param creator: The creator of this VersionModelVersionReviseAndUpdateDTOVersionModel.
+        :type creator: str
         """
-        self._master_id = master_id
+        self._creator = creator
 
     @property
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，记录执行本次修订更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :rtype: str
@@ -178,56 +222,12 @@ class VersionModelVersionReviseAndUpdateDTOVersionModel:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionReviseAndUpdateDTOVersionModel.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号，记录执行本次修订更新操作的用户。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionReviseAndUpdateDTOVersionModel.
         :type modifier: str
         """
         self._modifier = modifier
-
-    @property
-    def work_copy_type(self):
-        r"""Gets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-
-        **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
-
-        :return: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :rtype: str
-        """
-        return self._work_copy_type
-
-    @work_copy_type.setter
-    def work_copy_type(self, work_copy_type):
-        r"""Sets the work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-
-        **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订且更新后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订且更新后的数据实例将继承这些关系实例。 - NONE：修订且更新后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订且更新后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
-
-        :param work_copy_type: The work_copy_type of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :type work_copy_type: str
-        """
-        self._work_copy_type = work_copy_type
-
-    @property
-    def working_copy(self):
-        r"""Gets the working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-
-        **参数解释：**  是否已检出。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
-
-        :return: The working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :rtype: bool
-        """
-        return self._working_copy
-
-    @working_copy.setter
-    def working_copy(self, working_copy):
-        r"""Sets the working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-
-        **参数解释：**  是否已检出。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
-
-        :param working_copy: The working_copy of this VersionModelVersionReviseAndUpdateDTOVersionModel.
-        :type working_copy: bool
-        """
-        self._working_copy = working_copy
 
     def to_dict(self):
         result = {}

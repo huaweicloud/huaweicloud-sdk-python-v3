@@ -35,7 +35,7 @@ class DataCategoryDTO:
         :type categoryable: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
         :param category: 
         :type category: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
-        :param modifier: **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param modifier: **参数解释：**  更新者账号，用于记录执行本次分类添加操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
         :type modifier: str
         """
         
@@ -93,7 +93,7 @@ class DataCategoryDTO:
     def modifier(self):
         r"""Gets the modifier of this DataCategoryDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，用于记录执行本次分类添加操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
 
         :return: The modifier of this DataCategoryDTO.
         :rtype: str
@@ -104,7 +104,7 @@ class DataCategoryDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this DataCategoryDTO.
 
-        **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  更新者账号，用于记录执行本次分类添加操作的用户信息。 若不指定，默认使用当前调用者账号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  当前调用者账号。
 
         :param modifier: The modifier of this DataCategoryDTO.
         :type modifier: str

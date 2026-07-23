@@ -34,11 +34,11 @@ class ListHistoryDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
         :type result: str
-        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param data: **参数解释：**  请求数据，返回数据实例的历史版本信息列表。  **取值范围：**  不涉及。
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.HistoryDataModelHistoryViewDTO`]
-        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param errors: **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
         :type errors: list[str]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkidmeclassicapi.v1.PageInfoViewDTO`
@@ -65,7 +65,7 @@ class ListHistoryDataResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ListHistoryDataResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :return: The result of this ListHistoryDataResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ListHistoryDataResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ListHistoryDataResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :param result: The result of this ListHistoryDataResponse.
         :type result: str
@@ -87,7 +87,7 @@ class ListHistoryDataResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListHistoryDataResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求数据，返回数据实例的历史版本信息列表。  **取值范围：**  不涉及。
 
         :return: The data of this ListHistoryDataResponse.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.HistoryDataModelHistoryViewDTO`]
@@ -98,7 +98,7 @@ class ListHistoryDataResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListHistoryDataResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  请求数据，返回数据实例的历史版本信息列表。  **取值范围：**  不涉及。
 
         :param data: The data of this ListHistoryDataResponse.
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.HistoryDataModelHistoryViewDTO`]
@@ -109,7 +109,7 @@ class ListHistoryDataResponse(SdkResponse):
     def errors(self):
         r"""Gets the errors of this ListHistoryDataResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :return: The errors of this ListHistoryDataResponse.
         :rtype: list[str]
@@ -120,7 +120,7 @@ class ListHistoryDataResponse(SdkResponse):
     def errors(self, errors):
         r"""Sets the errors of this ListHistoryDataResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :param errors: The errors of this ListHistoryDataResponse.
         :type errors: list[str]

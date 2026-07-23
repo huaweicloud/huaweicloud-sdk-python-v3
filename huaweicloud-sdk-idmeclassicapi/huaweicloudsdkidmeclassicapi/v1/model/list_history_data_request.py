@@ -26,7 +26,7 @@ class ListHistoryDataRequest:
         'cur_page_path': 'int',
         'identifier': 'str',
         'model_name': 'str',
-        'body': 'RDMParamVOMongPageRequest'
+        'body': 'RDMParamVOMongoPageRequest'
     }
 
     attribute_map = {
@@ -49,30 +49,30 @@ class ListHistoryDataRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cur_page: **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        :param cur_page: **参数解释：**  当前页码，从1开始计数。当路径参数curPagePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page: int
-        :param end_index: **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :param end_index: **参数解释：**  结束索引，用于指定查询结果的结束位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type end_index: int
-        :param max_page_size: **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        :param max_page_size: **参数解释：**  最大分页数，用于限制返回的最大页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
         :type max_page_size: int
-        :param page_size: **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        :param page_size: **参数解释：**  分页大小，即每页返回的实例数量。当路径参数pageSizePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
         :type page_size: int
-        :param start_index: **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :param start_index: **参数解释：**  起始索引，用于指定查询结果的起始位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type start_index: int
-        :param total_pages: **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :param total_pages: **参数解释：**  总页数，用于指定查询的总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type total_pages: int
-        :param total_rows: **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        :param total_rows: **参数解释：**  总行数，用于指定查询的总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
         :type total_rows: int
-        :param page_size_path: **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
+        :param page_size_path: **参数解释：**  分页大小，即每页返回的实例数量。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
         :type page_size_path: int
-        :param cur_page_path: **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        :param cur_page_path: **参数解释：**  当前页数，从1开始计数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
         :type cur_page_path: int
-        :param identifier: **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        :param identifier: **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
         :type identifier: str
-        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        :param model_name: **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
         :type model_name: str
         :param body: Body of the ListHistoryDataRequest
-        :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongPageRequest`
+        :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongoPageRequest`
         """
         
         
@@ -116,7 +116,7 @@ class ListHistoryDataRequest:
     def cur_page(self):
         r"""Gets the cur_page of this ListHistoryDataRequest.
 
-        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        **参数解释：**  当前页码，从1开始计数。当路径参数curPagePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page of this ListHistoryDataRequest.
         :rtype: int
@@ -127,7 +127,7 @@ class ListHistoryDataRequest:
     def cur_page(self, cur_page):
         r"""Sets the cur_page of this ListHistoryDataRequest.
 
-        **参数解释：**  当前页。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        **参数解释：**  当前页码，从1开始计数。当路径参数curPagePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page: The cur_page of this ListHistoryDataRequest.
         :type cur_page: int
@@ -138,7 +138,7 @@ class ListHistoryDataRequest:
     def end_index(self):
         r"""Gets the end_index of this ListHistoryDataRequest.
 
-        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  结束索引，用于指定查询结果的结束位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The end_index of this ListHistoryDataRequest.
         :rtype: int
@@ -149,7 +149,7 @@ class ListHistoryDataRequest:
     def end_index(self, end_index):
         r"""Sets the end_index of this ListHistoryDataRequest.
 
-        **参数解释：**  结束索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  结束索引，用于指定查询结果的结束位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param end_index: The end_index of this ListHistoryDataRequest.
         :type end_index: int
@@ -160,7 +160,7 @@ class ListHistoryDataRequest:
     def max_page_size(self):
         r"""Gets the max_page_size of this ListHistoryDataRequest.
 
-        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        **参数解释：**  最大分页数，用于限制返回的最大页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :return: The max_page_size of this ListHistoryDataRequest.
         :rtype: int
@@ -171,7 +171,7 @@ class ListHistoryDataRequest:
     def max_page_size(self, max_page_size):
         r"""Sets the max_page_size of this ListHistoryDataRequest.
 
-        **参数解释：**  最大分页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        **参数解释：**  最大分页数，用于限制返回的最大页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :param max_page_size: The max_page_size of this ListHistoryDataRequest.
         :type max_page_size: int
@@ -182,7 +182,7 @@ class ListHistoryDataRequest:
     def page_size(self):
         r"""Gets the page_size of this ListHistoryDataRequest.
 
-        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        **参数解释：**  分页大小，即每页返回的实例数量。当路径参数pageSizePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :return: The page_size of this ListHistoryDataRequest.
         :rtype: int
@@ -193,7 +193,7 @@ class ListHistoryDataRequest:
     def page_size(self, page_size):
         r"""Sets the page_size of this ListHistoryDataRequest.
 
-        **参数解释：**  每页大小。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
+        **参数解释：**  分页大小，即每页返回的实例数量。当路径参数pageSizePath未指定时生效。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1000。 
 
         :param page_size: The page_size of this ListHistoryDataRequest.
         :type page_size: int
@@ -204,7 +204,7 @@ class ListHistoryDataRequest:
     def start_index(self):
         r"""Gets the start_index of this ListHistoryDataRequest.
 
-        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  起始索引，用于指定查询结果的起始位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The start_index of this ListHistoryDataRequest.
         :rtype: int
@@ -215,7 +215,7 @@ class ListHistoryDataRequest:
     def start_index(self, start_index):
         r"""Sets the start_index of this ListHistoryDataRequest.
 
-        **参数解释：**  起始索引。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  起始索引，用于指定查询结果的起始位置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param start_index: The start_index of this ListHistoryDataRequest.
         :type start_index: int
@@ -226,7 +226,7 @@ class ListHistoryDataRequest:
     def total_pages(self):
         r"""Gets the total_pages of this ListHistoryDataRequest.
 
-        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  总页数，用于指定查询的总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The total_pages of this ListHistoryDataRequest.
         :rtype: int
@@ -237,7 +237,7 @@ class ListHistoryDataRequest:
     def total_pages(self, total_pages):
         r"""Sets the total_pages of this ListHistoryDataRequest.
 
-        **参数解释：**  总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  总页数，用于指定查询的总页数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param total_pages: The total_pages of this ListHistoryDataRequest.
         :type total_pages: int
@@ -248,7 +248,7 @@ class ListHistoryDataRequest:
     def total_rows(self):
         r"""Gets the total_rows of this ListHistoryDataRequest.
 
-        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  总行数，用于指定查询的总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :return: The total_rows of this ListHistoryDataRequest.
         :rtype: int
@@ -259,7 +259,7 @@ class ListHistoryDataRequest:
     def total_rows(self, total_rows):
         r"""Sets the total_rows of this ListHistoryDataRequest.
 
-        **参数解释：**  总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
+        **参数解释：**  总行数，用于指定查询的总行数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  0。 
 
         :param total_rows: The total_rows of this ListHistoryDataRequest.
         :type total_rows: int
@@ -270,7 +270,7 @@ class ListHistoryDataRequest:
     def page_size_path(self):
         r"""Gets the page_size_path of this ListHistoryDataRequest.
 
-        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
+        **参数解释：**  分页大小，即每页返回的实例数量。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :return: The page_size_path of this ListHistoryDataRequest.
         :rtype: int
@@ -281,7 +281,7 @@ class ListHistoryDataRequest:
     def page_size_path(self, page_size_path):
         r"""Sets the page_size_path of this ListHistoryDataRequest.
 
-        **参数解释：**  分页大小（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
+        **参数解释：**  分页大小，即每页返回的实例数量。  **约束限制：**  不涉及。  **取值范围：**  1-1000。  **默认取值：**  不涉及。 
 
         :param page_size_path: The page_size_path of this ListHistoryDataRequest.
         :type page_size_path: int
@@ -292,7 +292,7 @@ class ListHistoryDataRequest:
     def cur_page_path(self):
         r"""Gets the cur_page_path of this ListHistoryDataRequest.
 
-        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        **参数解释：**  当前页数，从1开始计数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :return: The cur_page_path of this ListHistoryDataRequest.
         :rtype: int
@@ -303,7 +303,7 @@ class ListHistoryDataRequest:
     def cur_page_path(self, cur_page_path):
         r"""Sets the cur_page_path of this ListHistoryDataRequest.
 
-        **参数解释：**  当前页数（路径参数）。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
+        **参数解释：**  当前页数，从1开始计数。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  1。 
 
         :param cur_page_path: The cur_page_path of this ListHistoryDataRequest.
         :type cur_page_path: int
@@ -314,7 +314,7 @@ class ListHistoryDataRequest:
     def identifier(self):
         r"""Gets the identifier of this ListHistoryDataRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :return: The identifier of this ListHistoryDataRequest.
         :rtype: str
@@ -325,7 +325,7 @@ class ListHistoryDataRequest:
     def identifier(self, identifier):
         r"""Sets the identifier of this ListHistoryDataRequest.
 
-        **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  应用的唯一标识。  - 于2023年06月01日之前创建的应用，其唯一标识为该应用的名称。 - 于2023年06月01日之后创建的应用，其唯一标识为该应用的ID。 获取方法请参见[获取运行服务清单 - ListEnvs](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
         :param identifier: The identifier of this ListHistoryDataRequest.
         :type identifier: str
@@ -336,7 +336,7 @@ class ListHistoryDataRequest:
     def model_name(self):
         r"""Gets the model_name of this ListHistoryDataRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :return: The model_name of this ListHistoryDataRequest.
         :rtype: str
@@ -347,7 +347,7 @@ class ListHistoryDataRequest:
     def model_name(self, model_name):
         r"""Sets the model_name of this ListHistoryDataRequest.
 
-        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
+        **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  以大写字母开头，只能包含字母、数字、“_”，且长度为1-60个字符。  **默认取值：**  不涉及。
 
         :param model_name: The model_name of this ListHistoryDataRequest.
         :type model_name: str
@@ -359,7 +359,7 @@ class ListHistoryDataRequest:
         r"""Gets the body of this ListHistoryDataRequest.
 
         :return: The body of this ListHistoryDataRequest.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongPageRequest`
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongoPageRequest`
         """
         return self._body
 
@@ -368,7 +368,7 @@ class ListHistoryDataRequest:
         r"""Sets the body of this ListHistoryDataRequest.
 
         :param body: The body of this ListHistoryDataRequest.
-        :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongPageRequest`
+        :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOMongoPageRequest`
         """
         self._body = body
 

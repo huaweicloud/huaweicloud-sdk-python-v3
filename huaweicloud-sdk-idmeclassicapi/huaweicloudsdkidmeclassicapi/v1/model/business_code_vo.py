@@ -27,7 +27,7 @@ class BusinessCodeVo:
 
         The model defined in huaweicloud sdk
 
-        :param code: **参数解释：**  业务编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param code: **参数解释：**  业务编码，根据模型配置的业务编码生成规则自动生成的流水。  **取值范围：**  不涉及。
         :type code: str
         """
         
@@ -43,7 +43,7 @@ class BusinessCodeVo:
     def code(self):
         r"""Gets the code of this BusinessCodeVo.
 
-        **参数解释：**  业务编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  业务编码，根据模型配置的业务编码生成规则自动生成的流水。  **取值范围：**  不涉及。
 
         :return: The code of this BusinessCodeVo.
         :rtype: str
@@ -54,7 +54,7 @@ class BusinessCodeVo:
     def code(self, code):
         r"""Sets the code of this BusinessCodeVo.
 
-        **参数解释：**  业务编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  业务编码，根据模型配置的业务编码生成规则自动生成的流水。  **取值范围：**  不涉及。
 
         :param code: The code of this BusinessCodeVo.
         :type code: str

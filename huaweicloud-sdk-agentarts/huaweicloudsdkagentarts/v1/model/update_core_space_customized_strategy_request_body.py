@@ -15,47 +15,79 @@ class UpdateCoreSpaceCustomizedStrategyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'UpdateCoreSpaceMemoryStrategyRequestBody'
+        'name': 'str',
+        'steps': 'list[CoreSpaceMemoryStrategyStepRequestBody]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'name': 'name',
+        'steps': 'steps'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, name=None, steps=None):
         r"""UpdateCoreSpaceCustomizedStrategyRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: :class:`huaweicloudsdkagentarts.v1.UpdateCoreSpaceMemoryStrategyRequestBody`
+        :param name: **参数解释：**  策略名称，用于标识和区分不同的记忆策略。 **约束限制：**  仅支持字母、数字和中划线。 **取值范围：**  长度1-48字符。 **默认取值：** 不涉及。 
+        :type name: str
+        :param steps: **参数解释：** 更新已有步骤。 **约束限制：** 数组长度0-20个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+        :type steps: list[:class:`huaweicloudsdkagentarts.v1.CoreSpaceMemoryStrategyStepRequestBody`]
         """
         
         
 
-        self._body = None
+        self._name = None
+        self._steps = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if name is not None:
+            self.name = name
+        self.steps = steps
 
     @property
-    def body(self):
-        r"""Gets the body of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+    def name(self):
+        r"""Gets the name of this UpdateCoreSpaceCustomizedStrategyRequestBody.
 
-        :return: The body of this UpdateCoreSpaceCustomizedStrategyRequestBody.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateCoreSpaceMemoryStrategyRequestBody`
+        **参数解释：**  策略名称，用于标识和区分不同的记忆策略。 **约束限制：**  仅支持字母、数字和中划线。 **取值范围：**  长度1-48字符。 **默认取值：** 不涉及。 
+
+        :return: The name of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+        :rtype: str
         """
-        return self._body
+        return self._name
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this UpdateCoreSpaceCustomizedStrategyRequestBody.
 
-        :param body: The body of this UpdateCoreSpaceCustomizedStrategyRequestBody.
-        :type body: :class:`huaweicloudsdkagentarts.v1.UpdateCoreSpaceMemoryStrategyRequestBody`
+        **参数解释：**  策略名称，用于标识和区分不同的记忆策略。 **约束限制：**  仅支持字母、数字和中划线。 **取值范围：**  长度1-48字符。 **默认取值：** 不涉及。 
+
+        :param name: The name of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+        :type name: str
         """
-        self._body = body
+        self._name = name
+
+    @property
+    def steps(self):
+        r"""Gets the steps of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+
+        **参数解释：** 更新已有步骤。 **约束限制：** 数组长度0-20个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :return: The steps of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.CoreSpaceMemoryStrategyStepRequestBody`]
+        """
+        return self._steps
+
+    @steps.setter
+    def steps(self, steps):
+        r"""Sets the steps of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+
+        **参数解释：** 更新已有步骤。 **约束限制：** 数组长度0-20个。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 
+
+        :param steps: The steps of this UpdateCoreSpaceCustomizedStrategyRequestBody.
+        :type steps: list[:class:`huaweicloudsdkagentarts.v1.CoreSpaceMemoryStrategyStepRequestBody`]
+        """
+        self._steps = steps
 
     def to_dict(self):
         result = {}

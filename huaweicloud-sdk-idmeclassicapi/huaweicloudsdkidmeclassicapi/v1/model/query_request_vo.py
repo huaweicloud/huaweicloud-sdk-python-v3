@@ -15,7 +15,7 @@ class QueryRequestVo:
     sensitive_list = []
 
     openapi_types = {
-        'character_set': 'CharacterSetEnum',
+        'character_set': 'str',
         'conditions': 'list[QueryCondition]',
         'decrypt': 'bool',
         'entity_type': 'str',
@@ -51,13 +51,13 @@ class QueryRequestVo:
 
         The model defined in huaweicloud sdk
 
-        :param character_set: 
-        :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param conditions: **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param character_set: **参数解释：**  编码类型，用于指定查询的字符编码。  **约束限制：**  不涉及。  **取值范围：**  - ASCII：ASCII - BINARY：BINARY - GB2312：GB2312 - GBK：GBK - UTF8：UTF8 - UTF16：UTF16 - UTF32：UTF32 - UTF8MB4：UTF8MB4  **默认取值：**  UTF8。
+        :type character_set: str
+        :param conditions: **参数解释：**  查询条件组。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
-        :param decrypt: **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
+        :param decrypt: **参数解释：**  是否对查询结果进行加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
         :type decrypt: bool
-        :param entity_type: **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
+        :param entity_type: **参数解释：**  实体类型，用于指定查询的目标实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
         :type entity_type: str
         :param filter: 
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -67,15 +67,15 @@ class QueryRequestVo:
         :type is_present_all: bool
         :param need_present_detail: **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type need_present_detail: list[str]
-        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param order_by: **参数解释：**  排序字段，按某个指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by: str
         :param order_by_table_alias: **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type order_by_table_alias: str
-        :param public_data: **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
+        :param public_data: **参数解释：**  多租查询参数，用于控制是否包含公共租户数据。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
         :type public_data: str
         :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。
         :type sort: str
-        :param sorts: **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param sorts: **参数解释：**  多字段排序配置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
         """
         
@@ -127,8 +127,10 @@ class QueryRequestVo:
     def character_set(self):
         r"""Gets the character_set of this QueryRequestVo.
 
+        **参数解释：**  编码类型，用于指定查询的字符编码。  **约束限制：**  不涉及。  **取值范围：**  - ASCII：ASCII - BINARY：BINARY - GB2312：GB2312 - GBK：GBK - UTF8：UTF8 - UTF16：UTF16 - UTF32：UTF32 - UTF8MB4：UTF8MB4  **默认取值：**  UTF8。
+
         :return: The character_set of this QueryRequestVo.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
+        :rtype: str
         """
         return self._character_set
 
@@ -136,8 +138,10 @@ class QueryRequestVo:
     def character_set(self, character_set):
         r"""Sets the character_set of this QueryRequestVo.
 
+        **参数解释：**  编码类型，用于指定查询的字符编码。  **约束限制：**  不涉及。  **取值范围：**  - ASCII：ASCII - BINARY：BINARY - GB2312：GB2312 - GBK：GBK - UTF8：UTF8 - UTF16：UTF16 - UTF32：UTF32 - UTF8MB4：UTF8MB4  **默认取值：**  UTF8。
+
         :param character_set: The character_set of this QueryRequestVo.
-        :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
+        :type character_set: str
         """
         self._character_set = character_set
 
@@ -145,7 +149,7 @@ class QueryRequestVo:
     def conditions(self):
         r"""Gets the conditions of this QueryRequestVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  查询条件组。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The conditions of this QueryRequestVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -156,7 +160,7 @@ class QueryRequestVo:
     def conditions(self, conditions):
         r"""Sets the conditions of this QueryRequestVo.
 
-        **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  查询条件组。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param conditions: The conditions of this QueryRequestVo.
         :type conditions: list[:class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`]
@@ -167,7 +171,7 @@ class QueryRequestVo:
     def decrypt(self):
         r"""Gets the decrypt of this QueryRequestVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
+        **参数解释：**  是否对查询结果进行加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
 
         :return: The decrypt of this QueryRequestVo.
         :rtype: bool
@@ -178,7 +182,7 @@ class QueryRequestVo:
     def decrypt(self, decrypt):
         r"""Sets the decrypt of this QueryRequestVo.
 
-        **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
+        **参数解释：**  是否对查询结果进行加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  不涉及。
 
         :param decrypt: The decrypt of this QueryRequestVo.
         :type decrypt: bool
@@ -189,7 +193,7 @@ class QueryRequestVo:
     def entity_type(self):
         r"""Gets the entity_type of this QueryRequestVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
+        **参数解释：**  实体类型，用于指定查询的目标实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
 
         :return: The entity_type of this QueryRequestVo.
         :rtype: str
@@ -200,7 +204,7 @@ class QueryRequestVo:
     def entity_type(self, entity_type):
         r"""Sets the entity_type of this QueryRequestVo.
 
-        **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
+        **参数解释：**  实体类型，用于指定查询的目标实体类型。  **约束限制：**  不涉及。  **取值范围：**  - ENTITY：数据实体。 - RRELATION：关系实体。  **默认取值：**  不涉及。
 
         :param entity_type: The entity_type of this QueryRequestVo.
         :type entity_type: str
@@ -295,7 +299,7 @@ class QueryRequestVo:
     def order_by(self):
         r"""Gets the order_by of this QueryRequestVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  排序字段，按某个指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The order_by of this QueryRequestVo.
         :rtype: str
@@ -306,7 +310,7 @@ class QueryRequestVo:
     def order_by(self, order_by):
         r"""Sets the order_by of this QueryRequestVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  排序字段，按某个指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param order_by: The order_by of this QueryRequestVo.
         :type order_by: str
@@ -339,7 +343,7 @@ class QueryRequestVo:
     def public_data(self):
         r"""Gets the public_data of this QueryRequestVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
+        **参数解释：**  多租查询参数，用于控制是否包含公共租户数据。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :return: The public_data of this QueryRequestVo.
         :rtype: str
@@ -350,7 +354,7 @@ class QueryRequestVo:
     def public_data(self, public_data):
         r"""Sets the public_data of this QueryRequestVo.
 
-        **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
+        **参数解释：**  多租查询参数，用于控制是否包含公共租户数据。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。
 
         :param public_data: The public_data of this QueryRequestVo.
         :type public_data: str
@@ -383,7 +387,7 @@ class QueryRequestVo:
     def sorts(self):
         r"""Gets the sorts of this QueryRequestVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  多字段排序配置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The sorts of this QueryRequestVo.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]
@@ -394,7 +398,7 @@ class QueryRequestVo:
     def sorts(self, sorts):
         r"""Sets the sorts of this QueryRequestVo.
 
-        **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  多字段排序配置。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param sorts: The sorts of this QueryRequestVo.
         :type sorts: list[:class:`huaweicloudsdkidmeclassicapi.v1.SortInfoVo`]

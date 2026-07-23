@@ -16,20 +16,51 @@ class SwitchDbAgentJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'resp': 'str'
     }
 
     attribute_map = {
+        'resp': 'resp'
     }
 
-    def __init__(self):
+    def __init__(self, resp=None):
         r"""SwitchDbAgentJobResponse
 
         The model defined in huaweicloud sdk
 
+        :param resp: 响应结果
+        :type resp: str
         """
         
         super().__init__()
+
+        self._resp = None
         self.discriminator = None
+
+        if resp is not None:
+            self.resp = resp
+
+    @property
+    def resp(self):
+        r"""Gets the resp of this SwitchDbAgentJobResponse.
+
+        响应结果
+
+        :return: The resp of this SwitchDbAgentJobResponse.
+        :rtype: str
+        """
+        return self._resp
+
+    @resp.setter
+    def resp(self, resp):
+        r"""Sets the resp of this SwitchDbAgentJobResponse.
+
+        响应结果
+
+        :param resp: The resp of this SwitchDbAgentJobResponse.
+        :type resp: str
+        """
+        self._resp = resp
 
     def to_dict(self):
         import warnings

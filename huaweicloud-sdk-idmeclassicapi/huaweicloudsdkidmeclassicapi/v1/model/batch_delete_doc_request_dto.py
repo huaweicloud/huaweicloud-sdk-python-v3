@@ -31,11 +31,11 @@ class BatchDeleteDocRequestDto:
 
         The model defined in huaweicloud sdk
 
-        :param ids: **参数解释**：  文档ID列表。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param ids: **参数解释：**  文档ID列表，系统生成的文档主键唯一标识列表，用于指定待批量删除的目标文档。 若不传入，则不执行任何删除操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type ids: list[str]
-        :param model_name: **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param model_name: **参数解释：**  模型名称，用于指定待删除文档所属的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type model_name: str
-        :param is_check: **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
+        :param is_check: **参数解释：**  是否检查文档删除权限，用于控制删除前是否进行权限校验。  **约束限制：**  不涉及。  **取值范围：**  - true：检查删除权限，当前用户无权限的文档将被跳过删除。 - false：不检查删除权限，直接执行删除操作。  **默认取值：**  true。
         :type is_check: bool
         """
         
@@ -57,7 +57,7 @@ class BatchDeleteDocRequestDto:
     def ids(self):
         r"""Gets the ids of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  文档ID列表。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID列表，系统生成的文档主键唯一标识列表，用于指定待批量删除的目标文档。 若不传入，则不执行任何删除操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The ids of this BatchDeleteDocRequestDto.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class BatchDeleteDocRequestDto:
     def ids(self, ids):
         r"""Sets the ids of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  文档ID列表。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID列表，系统生成的文档主键唯一标识列表，用于指定待批量删除的目标文档。 若不传入，则不执行任何删除操作。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param ids: The ids of this BatchDeleteDocRequestDto.
         :type ids: list[str]
@@ -79,7 +79,7 @@ class BatchDeleteDocRequestDto:
     def model_name(self):
         r"""Gets the model_name of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模型名称，用于指定待删除文档所属的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The model_name of this BatchDeleteDocRequestDto.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchDeleteDocRequestDto:
     def model_name(self, model_name):
         r"""Sets the model_name of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  模型名称，用于指定待删除文档所属的数据模型名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param model_name: The model_name of this BatchDeleteDocRequestDto.
         :type model_name: str
@@ -101,7 +101,7 @@ class BatchDeleteDocRequestDto:
     def is_check(self):
         r"""Gets the is_check of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
+        **参数解释：**  是否检查文档删除权限，用于控制删除前是否进行权限校验。  **约束限制：**  不涉及。  **取值范围：**  - true：检查删除权限，当前用户无权限的文档将被跳过删除。 - false：不检查删除权限，直接执行删除操作。  **默认取值：**  true。
 
         :return: The is_check of this BatchDeleteDocRequestDto.
         :rtype: bool
@@ -112,7 +112,7 @@ class BatchDeleteDocRequestDto:
     def is_check(self, is_check):
         r"""Sets the is_check of this BatchDeleteDocRequestDto.
 
-        **参数解释**：  是否检查文档删除权限。  **约束限制**：  不涉及。  **取值范围**：  - true：检查。 - false：不检查。  **默认取值**：  true。
+        **参数解释：**  是否检查文档删除权限，用于控制删除前是否进行权限校验。  **约束限制：**  不涉及。  **取值范围：**  - true：检查删除权限，当前用户无权限的文档将被跳过删除。 - false：不检查删除权限，直接执行删除操作。  **默认取值：**  true。
 
         :param is_check: The is_check of this BatchDeleteDocRequestDto.
         :type is_check: bool

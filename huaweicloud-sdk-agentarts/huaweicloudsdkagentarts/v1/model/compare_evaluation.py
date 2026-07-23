@@ -24,7 +24,7 @@ class CompareEvaluation:
         'error': 'str',
         'input_token_usage': 'int',
         'output_token_usage': 'int',
-        'correction': 'dict(str, object)',
+        'correction': 'object',
         'retry_count': 'int',
         'created_at': 'datetime',
         'evaluator_name': 'str'
@@ -70,7 +70,7 @@ class CompareEvaluation:
         :param output_token_usage: 评估器生成输出时消耗的 token 数量。
         :type output_token_usage: int
         :param correction: 纠正信息字段，通常为null；预留用于自动纠错或人工校正结果。
-        :type correction: dict(str, object)
+        :type correction: object
         :param retry_count: 评估器失败后重试的次数。
         :type retry_count: int
         :param created_at: 评估记录创建时间，ISO 8601格式（UTC）。
@@ -328,7 +328,7 @@ class CompareEvaluation:
         纠正信息字段，通常为null；预留用于自动纠错或人工校正结果。
 
         :return: The correction of this CompareEvaluation.
-        :rtype: dict(str, object)
+        :rtype: object
         """
         return self._correction
 
@@ -339,7 +339,7 @@ class CompareEvaluation:
         纠正信息字段，通常为null；预留用于自动纠错或人工校正结果。
 
         :param correction: The correction of this CompareEvaluation.
-        :type correction: dict(str, object)
+        :type correction: object
         """
         self._correction = correction
 

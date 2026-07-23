@@ -32,11 +32,11 @@ class ShowGetTokensResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
         :type result: str
-        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        :param data: **参数解释：**  请求数据，包含生成的Token及相关用户信息。  **取值范围：**  不涉及。
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.GenerateTokenResultDto`]
-        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param errors: **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
         :type errors: list[str]
         """
         
@@ -58,7 +58,7 @@ class ShowGetTokensResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowGetTokensResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :return: The result of this ShowGetTokensResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ShowGetTokensResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowGetTokensResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :param result: The result of this ShowGetTokensResponse.
         :type result: str
@@ -80,7 +80,7 @@ class ShowGetTokensResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ShowGetTokensResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  请求数据，包含生成的Token及相关用户信息。  **取值范围：**  不涉及。
 
         :return: The data of this ShowGetTokensResponse.
         :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.GenerateTokenResultDto`]
@@ -91,7 +91,7 @@ class ShowGetTokensResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ShowGetTokensResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
+        **参数解释：**  请求数据，包含生成的Token及相关用户信息。  **取值范围：**  不涉及。
 
         :param data: The data of this ShowGetTokensResponse.
         :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.GenerateTokenResultDto`]
@@ -102,7 +102,7 @@ class ShowGetTokensResponse(SdkResponse):
     def errors(self):
         r"""Gets the errors of this ShowGetTokensResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :return: The errors of this ShowGetTokensResponse.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ShowGetTokensResponse(SdkResponse):
     def errors(self, errors):
         r"""Sets the errors of this ShowGetTokensResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :param errors: The errors of this ShowGetTokensResponse.
         :type errors: list[str]

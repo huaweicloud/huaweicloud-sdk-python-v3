@@ -15,71 +15,49 @@ class GenericLinkTypeDTO:
     sensitive_list = []
 
     openapi_types = {
-        'latest_only': 'bool',
         'source_id': 'str',
-        'target_type': 'str'
+        'target_type': 'str',
+        'latest_only': 'bool'
     }
 
     attribute_map = {
-        'latest_only': 'latestOnly',
         'source_id': 'sourceId',
-        'target_type': 'targetType'
+        'target_type': 'targetType',
+        'latest_only': 'latestOnly'
     }
 
-    def __init__(self, latest_only=None, source_id=None, target_type=None):
+    def __init__(self, source_id=None, target_type=None, latest_only=None):
         r"""GenericLinkTypeDTO
 
         The model defined in huaweicloud sdk
 
-        :param latest_only: **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
-        :type latest_only: bool
-        :param source_id: **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param source_id: **参数解释：**  源模型数据实例的ID，用于查询该实例关联的目标模型数据实例。  **约束限制：**  如不传入，将查询该源模型下所有实例与目标模型的关联关系，返回数据量可能较大。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type source_id: str
-        :param target_type: **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param target_type: **参数解释：**  目标模型的英文名称，用于限定查询源实例与哪个目标模型的关联关系。  **约束限制：**  如不传入，将查询源实例与所有目标模型的关联关系。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type target_type: str
+        :param latest_only: **参数解释：**  是否仅返回源实例关联的最新版本目标模型数据实例。此参数仅当源模型或目标模型为M-V模型实体时生效。  **约束限制：**  仅对M-V模型实体有效。  **取值范围：**  - true：仅返回源实例关联的最新版本目标模型数据实例。 - false：返回源实例关联的所有版本目标模型数据实例。  **默认取值：**  false。
+        :type latest_only: bool
         """
         
         
 
-        self._latest_only = None
         self._source_id = None
         self._target_type = None
+        self._latest_only = None
         self.discriminator = None
 
-        if latest_only is not None:
-            self.latest_only = latest_only
         if source_id is not None:
             self.source_id = source_id
         if target_type is not None:
             self.target_type = target_type
-
-    @property
-    def latest_only(self):
-        r"""Gets the latest_only of this GenericLinkTypeDTO.
-
-        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
-
-        :return: The latest_only of this GenericLinkTypeDTO.
-        :rtype: bool
-        """
-        return self._latest_only
-
-    @latest_only.setter
-    def latest_only(self, latest_only):
-        r"""Sets the latest_only of this GenericLinkTypeDTO.
-
-        **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
-
-        :param latest_only: The latest_only of this GenericLinkTypeDTO.
-        :type latest_only: bool
-        """
-        self._latest_only = latest_only
+        if latest_only is not None:
+            self.latest_only = latest_only
 
     @property
     def source_id(self):
         r"""Gets the source_id of this GenericLinkTypeDTO.
 
-        **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  源模型数据实例的ID，用于查询该实例关联的目标模型数据实例。  **约束限制：**  如不传入，将查询该源模型下所有实例与目标模型的关联关系，返回数据量可能较大。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The source_id of this GenericLinkTypeDTO.
         :rtype: str
@@ -90,7 +68,7 @@ class GenericLinkTypeDTO:
     def source_id(self, source_id):
         r"""Sets the source_id of this GenericLinkTypeDTO.
 
-        **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  源模型数据实例的ID，用于查询该实例关联的目标模型数据实例。  **约束限制：**  如不传入，将查询该源模型下所有实例与目标模型的关联关系，返回数据量可能较大。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param source_id: The source_id of this GenericLinkTypeDTO.
         :type source_id: str
@@ -101,7 +79,7 @@ class GenericLinkTypeDTO:
     def target_type(self):
         r"""Gets the target_type of this GenericLinkTypeDTO.
 
-        **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标模型的英文名称，用于限定查询源实例与哪个目标模型的关联关系。  **约束限制：**  如不传入，将查询源实例与所有目标模型的关联关系。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The target_type of this GenericLinkTypeDTO.
         :rtype: str
@@ -112,12 +90,34 @@ class GenericLinkTypeDTO:
     def target_type(self, target_type):
         r"""Sets the target_type of this GenericLinkTypeDTO.
 
-        **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  目标模型的英文名称，用于限定查询源实例与哪个目标模型的关联关系。  **约束限制：**  如不传入，将查询源实例与所有目标模型的关联关系。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param target_type: The target_type of this GenericLinkTypeDTO.
         :type target_type: str
         """
         self._target_type = target_type
+
+    @property
+    def latest_only(self):
+        r"""Gets the latest_only of this GenericLinkTypeDTO.
+
+        **参数解释：**  是否仅返回源实例关联的最新版本目标模型数据实例。此参数仅当源模型或目标模型为M-V模型实体时生效。  **约束限制：**  仅对M-V模型实体有效。  **取值范围：**  - true：仅返回源实例关联的最新版本目标模型数据实例。 - false：返回源实例关联的所有版本目标模型数据实例。  **默认取值：**  false。
+
+        :return: The latest_only of this GenericLinkTypeDTO.
+        :rtype: bool
+        """
+        return self._latest_only
+
+    @latest_only.setter
+    def latest_only(self, latest_only):
+        r"""Sets the latest_only of this GenericLinkTypeDTO.
+
+        **参数解释：**  是否仅返回源实例关联的最新版本目标模型数据实例。此参数仅当源模型或目标模型为M-V模型实体时生效。  **约束限制：**  仅对M-V模型实体有效。  **取值范围：**  - true：仅返回源实例关联的最新版本目标模型数据实例。 - false：返回源实例关联的所有版本目标模型数据实例。  **默认取值：**  false。
+
+        :param latest_only: The latest_only of this GenericLinkTypeDTO.
+        :type latest_only: bool
+        """
+        self._latest_only = latest_only
 
     def to_dict(self):
         result = {}

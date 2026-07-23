@@ -29,9 +29,9 @@ class GetTokenDto:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        :param auth_type: **参数解释：**  认证类型，指定获取Token的权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，获取的Token仅支持查看文档内容。 - write：读写权限，获取的Token支持编辑和保存文档。  **默认取值：**  不涉及。
         :type auth_type: str
-        :param doc_id: **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :param doc_id: **参数解释：**  文档ID，用于指定需要获取Token的目标文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type doc_id: str
         """
         
@@ -48,7 +48,7 @@ class GetTokenDto:
     def auth_type(self):
         r"""Gets the auth_type of this GetTokenDto.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        **参数解释：**  认证类型，指定获取Token的权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，获取的Token仅支持查看文档内容。 - write：读写权限，获取的Token支持编辑和保存文档。  **默认取值：**  不涉及。
 
         :return: The auth_type of this GetTokenDto.
         :rtype: str
@@ -59,7 +59,7 @@ class GetTokenDto:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this GetTokenDto.
 
-        **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
+        **参数解释：**  认证类型，指定获取Token的权限级别。  **约束限制：**  不涉及。  **取值范围：**  - read：只读权限，获取的Token仅支持查看文档内容。 - write：读写权限，获取的Token支持编辑和保存文档。  **默认取值：**  不涉及。
 
         :param auth_type: The auth_type of this GetTokenDto.
         :type auth_type: str
@@ -70,7 +70,7 @@ class GetTokenDto:
     def doc_id(self):
         r"""Gets the doc_id of this GetTokenDto.
 
-        **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID，用于指定需要获取Token的目标文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The doc_id of this GetTokenDto.
         :rtype: str
@@ -81,7 +81,7 @@ class GetTokenDto:
     def doc_id(self, doc_id):
         r"""Sets the doc_id of this GetTokenDto.
 
-        **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        **参数解释：**  文档ID，用于指定需要获取Token的目标文档。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param doc_id: The doc_id of this GetTokenDto.
         :type doc_id: str

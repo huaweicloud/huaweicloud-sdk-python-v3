@@ -37,7 +37,7 @@ class SortInfoVo:
 
         :param character_set: 
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
-        :param order_by: **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param order_by: **参数解释：**  排序字段，按指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
         :type order_by: str
         :param sort: **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
         :type sort: str
@@ -89,7 +89,7 @@ class SortInfoVo:
     def order_by(self):
         r"""Gets the order_by of this SortInfoVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段，按指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :return: The order_by of this SortInfoVo.
         :rtype: str
@@ -100,7 +100,7 @@ class SortInfoVo:
     def order_by(self, order_by):
         r"""Sets the order_by of this SortInfoVo.
 
-        **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  排序字段，按指定字段对查询结果进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
         :param order_by: The order_by of this SortInfoVo.
         :type order_by: str

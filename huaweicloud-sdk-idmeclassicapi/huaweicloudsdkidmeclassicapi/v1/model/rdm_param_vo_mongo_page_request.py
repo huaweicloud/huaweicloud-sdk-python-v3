@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RDMParamVOMongPageRequest:
+class RDMParamVOMongoPageRequest:
 
     """
     Attributes:
@@ -16,7 +16,7 @@ class RDMParamVOMongPageRequest:
 
     openapi_types = {
         'application_id': 'str',
-        'params': 'MongPageRequest'
+        'params': 'MongoPageRequest'
     }
 
     attribute_map = {
@@ -25,14 +25,14 @@ class RDMParamVOMongPageRequest:
     }
 
     def __init__(self, application_id=None, params=None):
-        r"""RDMParamVOMongPageRequest
+        r"""RDMParamVOMongoPageRequest
 
         The model defined in huaweicloud sdk
 
-        :param application_id: **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        :param application_id: **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
         :type application_id: str
         :param params: 
-        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MongPageRequest`
+        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MongoPageRequest`
         """
         
         
@@ -47,41 +47,41 @@ class RDMParamVOMongPageRequest:
 
     @property
     def application_id(self):
-        r"""Gets the application_id of this RDMParamVOMongPageRequest.
+        r"""Gets the application_id of this RDMParamVOMongoPageRequest.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
 
-        :return: The application_id of this RDMParamVOMongPageRequest.
+        :return: The application_id of this RDMParamVOMongoPageRequest.
         :rtype: str
         """
         return self._application_id
 
     @application_id.setter
     def application_id(self, application_id):
-        r"""Sets the application_id of this RDMParamVOMongPageRequest.
+        r"""Sets the application_id of this RDMParamVOMongoPageRequest.
 
-        **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
+        **参数解释：**  应用ID，用于指定实例所属的应用。 当URL路径中已能明确应用上下文时，此参数可不传。 获取方法请参见[获取租户下的应用清单 - ListApps](https://support.huaweicloud.com/api-idme/ListApps.html)。  **约束限制：**  不涉及。  **取值范围：**  - 于2023年06月01日之前创建的应用：由英文字母和数字组成，长度为1-36个字符。 - 于2023年06月01日之后创建的应用：由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。
 
-        :param application_id: The application_id of this RDMParamVOMongPageRequest.
+        :param application_id: The application_id of this RDMParamVOMongoPageRequest.
         :type application_id: str
         """
         self._application_id = application_id
 
     @property
     def params(self):
-        r"""Gets the params of this RDMParamVOMongPageRequest.
+        r"""Gets the params of this RDMParamVOMongoPageRequest.
 
-        :return: The params of this RDMParamVOMongPageRequest.
-        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MongPageRequest`
+        :return: The params of this RDMParamVOMongoPageRequest.
+        :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MongoPageRequest`
         """
         return self._params
 
     @params.setter
     def params(self, params):
-        r"""Sets the params of this RDMParamVOMongPageRequest.
+        r"""Sets the params of this RDMParamVOMongoPageRequest.
 
-        :param params: The params of this RDMParamVOMongPageRequest.
-        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MongPageRequest`
+        :param params: The params of this RDMParamVOMongoPageRequest.
+        :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MongoPageRequest`
         """
         self._params = params
 
@@ -122,7 +122,7 @@ class RDMParamVOMongPageRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RDMParamVOMongPageRequest):
+        if not isinstance(other, RDMParamVOMongoPageRequest):
             return False
 
         return self.__dict__ == other.__dict__

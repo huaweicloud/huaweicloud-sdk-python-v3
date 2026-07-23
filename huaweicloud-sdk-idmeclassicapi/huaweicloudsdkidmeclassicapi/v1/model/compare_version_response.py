@@ -17,7 +17,7 @@ class CompareVersionResponse(SdkResponse):
 
     openapi_types = {
         'result': 'str',
-        'data': 'list[CompareVersionRespVo]',
+        'data': 'list[object]',
         'errors': 'list[str]'
     }
 
@@ -32,11 +32,11 @@ class CompareVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        :param result: **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
         :type result: str
-        :param data: **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
-        :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.CompareVersionRespVo`]
-        :param errors: **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param data: **参数解释：**  版本对比数据。data[0]为基础版本对象，data[1]为当前版本对象和基础版本对象的差异数据。  **取值范围：**  不涉及。
+        :type data: list[object]
+        :param errors: **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
         :type errors: list[str]
         """
         
@@ -58,7 +58,7 @@ class CompareVersionResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this CompareVersionResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :return: The result of this CompareVersionResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class CompareVersionResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this CompareVersionResponse.
 
-        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
+        **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。 
 
         :param result: The result of this CompareVersionResponse.
         :type result: str
@@ -80,10 +80,10 @@ class CompareVersionResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this CompareVersionResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  版本对比数据。data[0]为基础版本对象，data[1]为当前版本对象和基础版本对象的差异数据。  **取值范围：**  不涉及。
 
         :return: The data of this CompareVersionResponse.
-        :rtype: list[:class:`huaweicloudsdkidmeclassicapi.v1.CompareVersionRespVo`]
+        :rtype: list[object]
         """
         return self._data
 
@@ -91,10 +91,10 @@ class CompareVersionResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this CompareVersionResponse.
 
-        **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  版本对比数据。data[0]为基础版本对象，data[1]为当前版本对象和基础版本对象的差异数据。  **取值范围：**  不涉及。
 
         :param data: The data of this CompareVersionResponse.
-        :type data: list[:class:`huaweicloudsdkidmeclassicapi.v1.CompareVersionRespVo`]
+        :type data: list[object]
         """
         self._data = data
 
@@ -102,7 +102,7 @@ class CompareVersionResponse(SdkResponse):
     def errors(self):
         r"""Gets the errors of this CompareVersionResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :return: The errors of this CompareVersionResponse.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class CompareVersionResponse(SdkResponse):
     def errors(self, errors):
         r"""Sets the errors of this CompareVersionResponse.
 
-        **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  异常信息，当请求失败时返回具体的错误描述。  **取值范围：**  不涉及。 
 
         :param errors: The errors of this CompareVersionResponse.
         :type errors: list[str]

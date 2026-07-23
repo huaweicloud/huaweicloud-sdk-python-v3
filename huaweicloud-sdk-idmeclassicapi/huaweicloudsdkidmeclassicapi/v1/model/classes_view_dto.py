@@ -53,31 +53,31 @@ class ClassesViewDTO:
 
         The model defined in huaweicloud sdk
 
-        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param class_name: **参数解释：**  类名。  **取值范围：**  不涉及。
         :type class_name: str
-        :param create_time: **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param create_time: **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type create_time: str
-        :param creator: **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param creator: **参数解释：**  创建者账号。  **取值范围：**  不涉及。
         :type creator: str
-        :param description: **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param description: **参数解释：**  描述。  **取值范围：**  不涉及。
         :type description: str
-        :param id: **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param id: **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
         :type id: str
-        :param kiaguid: **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param kiaguid: **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。
         :type kiaguid: str
-        :param last_update_time: **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param last_update_time: **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
         :type last_update_time: str
-        :param modifier: **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号。  **取值范围：**  不涉及。
         :type modifier: str
-        :param name: **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param name: **参数解释：**  名称。  **取值范围：**  不涉及。
         :type name: str
-        :param rdm_delete_flag: **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
+        :param rdm_delete_flag: **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。
         :type rdm_delete_flag: int
-        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_extension_type: **参数解释：**  扩展类型。  **取值范围：**  不涉及。
         :type rdm_extension_type: str
-        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param rdm_version: **参数解释：**  系统版本。  **取值范围：**  不涉及。
         :type rdm_version: int
-        :param security_level: **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        :param security_level: **参数解释：**  安全密级。  **取值范围：**  - internal：内部公开。  - secret：秘密。 - confidential：机密。 - top_secret：绝密。
         :type security_level: str
         :param tenant: 
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -134,7 +134,7 @@ class ClassesViewDTO:
     def class_name(self):
         r"""Gets the class_name of this ClassesViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名。  **取值范围：**  不涉及。
 
         :return: The class_name of this ClassesViewDTO.
         :rtype: str
@@ -145,7 +145,7 @@ class ClassesViewDTO:
     def class_name(self, class_name):
         r"""Sets the class_name of this ClassesViewDTO.
 
-        **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  类名。  **取值范围：**  不涉及。
 
         :param class_name: The class_name of this ClassesViewDTO.
         :type class_name: str
@@ -156,7 +156,7 @@ class ClassesViewDTO:
     def create_time(self):
         r"""Gets the create_time of this ClassesViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The create_time of this ClassesViewDTO.
         :rtype: str
@@ -167,7 +167,7 @@ class ClassesViewDTO:
     def create_time(self, create_time):
         r"""Sets the create_time of this ClassesViewDTO.
 
-        **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param create_time: The create_time of this ClassesViewDTO.
         :type create_time: str
@@ -178,7 +178,7 @@ class ClassesViewDTO:
     def creator(self):
         r"""Gets the creator of this ClassesViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **取值范围：**  不涉及。
 
         :return: The creator of this ClassesViewDTO.
         :rtype: str
@@ -189,7 +189,7 @@ class ClassesViewDTO:
     def creator(self, creator):
         r"""Sets the creator of this ClassesViewDTO.
 
-        **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  创建者账号。  **取值范围：**  不涉及。
 
         :param creator: The creator of this ClassesViewDTO.
         :type creator: str
@@ -200,7 +200,7 @@ class ClassesViewDTO:
     def description(self):
         r"""Gets the description of this ClassesViewDTO.
 
-        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  描述。  **取值范围：**  不涉及。
 
         :return: The description of this ClassesViewDTO.
         :rtype: str
@@ -211,7 +211,7 @@ class ClassesViewDTO:
     def description(self, description):
         r"""Sets the description of this ClassesViewDTO.
 
-        **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  描述。  **取值范围：**  不涉及。
 
         :param description: The description of this ClassesViewDTO.
         :type description: str
@@ -222,7 +222,7 @@ class ClassesViewDTO:
     def id(self):
         r"""Gets the id of this ClassesViewDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :return: The id of this ClassesViewDTO.
         :rtype: str
@@ -233,7 +233,7 @@ class ClassesViewDTO:
     def id(self, id):
         r"""Sets the id of this ClassesViewDTO.
 
-        **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。
 
         :param id: The id of this ClassesViewDTO.
         :type id: str
@@ -244,7 +244,7 @@ class ClassesViewDTO:
     def kiaguid(self):
         r"""Gets the kiaguid of this ClassesViewDTO.
 
-        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。
 
         :return: The kiaguid of this ClassesViewDTO.
         :rtype: str
@@ -255,7 +255,7 @@ class ClassesViewDTO:
     def kiaguid(self, kiaguid):
         r"""Sets the kiaguid of this ClassesViewDTO.
 
-        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  关键信息资产ID。  **取值范围：**  不涉及。
 
         :param kiaguid: The kiaguid of this ClassesViewDTO.
         :type kiaguid: str
@@ -266,7 +266,7 @@ class ClassesViewDTO:
     def last_update_time(self):
         r"""Gets the last_update_time of this ClassesViewDTO.
 
-        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :return: The last_update_time of this ClassesViewDTO.
         :rtype: str
@@ -277,7 +277,7 @@ class ClassesViewDTO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this ClassesViewDTO.
 
-        **参数解释：**  最新更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  最新更新时间。使用UTC+0时间格式，格式为yyyy-MM-ddTHH:mm:ss.SSSZ。  **取值范围：**  不涉及。
 
         :param last_update_time: The last_update_time of this ClassesViewDTO.
         :type last_update_time: str
@@ -288,7 +288,7 @@ class ClassesViewDTO:
     def modifier(self):
         r"""Gets the modifier of this ClassesViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **取值范围：**  不涉及。
 
         :return: The modifier of this ClassesViewDTO.
         :rtype: str
@@ -299,7 +299,7 @@ class ClassesViewDTO:
     def modifier(self, modifier):
         r"""Sets the modifier of this ClassesViewDTO.
 
-        **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **取值范围：**  不涉及。
 
         :param modifier: The modifier of this ClassesViewDTO.
         :type modifier: str
@@ -310,7 +310,7 @@ class ClassesViewDTO:
     def name(self):
         r"""Gets the name of this ClassesViewDTO.
 
-        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  名称。  **取值范围：**  不涉及。
 
         :return: The name of this ClassesViewDTO.
         :rtype: str
@@ -321,7 +321,7 @@ class ClassesViewDTO:
     def name(self, name):
         r"""Sets the name of this ClassesViewDTO.
 
-        **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  名称。  **取值范围：**  不涉及。
 
         :param name: The name of this ClassesViewDTO.
         :type name: str
@@ -332,7 +332,7 @@ class ClassesViewDTO:
     def rdm_delete_flag(self):
         r"""Gets the rdm_delete_flag of this ClassesViewDTO.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。
 
         :return: The rdm_delete_flag of this ClassesViewDTO.
         :rtype: int
@@ -343,7 +343,7 @@ class ClassesViewDTO:
     def rdm_delete_flag(self, rdm_delete_flag):
         r"""Sets the rdm_delete_flag of this ClassesViewDTO.
 
-        **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。  **默认取值：**  不涉及。 
+        **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。  - 1：表示已删除。
 
         :param rdm_delete_flag: The rdm_delete_flag of this ClassesViewDTO.
         :type rdm_delete_flag: int
@@ -354,7 +354,7 @@ class ClassesViewDTO:
     def rdm_extension_type(self):
         r"""Gets the rdm_extension_type of this ClassesViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。
 
         :return: The rdm_extension_type of this ClassesViewDTO.
         :rtype: str
@@ -365,7 +365,7 @@ class ClassesViewDTO:
     def rdm_extension_type(self, rdm_extension_type):
         r"""Sets the rdm_extension_type of this ClassesViewDTO.
 
-        **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  扩展类型。  **取值范围：**  不涉及。
 
         :param rdm_extension_type: The rdm_extension_type of this ClassesViewDTO.
         :type rdm_extension_type: str
@@ -376,7 +376,7 @@ class ClassesViewDTO:
     def rdm_version(self):
         r"""Gets the rdm_version of this ClassesViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。
 
         :return: The rdm_version of this ClassesViewDTO.
         :rtype: int
@@ -387,7 +387,7 @@ class ClassesViewDTO:
     def rdm_version(self, rdm_version):
         r"""Sets the rdm_version of this ClassesViewDTO.
 
-        **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  系统版本。  **取值范围：**  不涉及。
 
         :param rdm_version: The rdm_version of this ClassesViewDTO.
         :type rdm_version: int
@@ -398,7 +398,7 @@ class ClassesViewDTO:
     def security_level(self):
         r"""Gets the security_level of this ClassesViewDTO.
 
-        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        **参数解释：**  安全密级。  **取值范围：**  - internal：内部公开。  - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :return: The security_level of this ClassesViewDTO.
         :rtype: str
@@ -409,7 +409,7 @@ class ClassesViewDTO:
     def security_level(self, security_level):
         r"""Sets the security_level of this ClassesViewDTO.
 
-        **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。  - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
+        **参数解释：**  安全密级。  **取值范围：**  - internal：内部公开。  - secret：秘密。 - confidential：机密。 - top_secret：绝密。
 
         :param security_level: The security_level of this ClassesViewDTO.
         :type security_level: str

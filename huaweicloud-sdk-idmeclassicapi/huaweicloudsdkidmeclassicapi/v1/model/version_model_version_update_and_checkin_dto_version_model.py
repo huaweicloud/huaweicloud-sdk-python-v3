@@ -33,9 +33,9 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
         :param data: 
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
-        :param master_id: **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        :param master_id: **参数解释：**  主对象ID，用于标识待更新并检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
         :type master_id: str
-        :param modifier: **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        :param modifier: **参数解释：**  更新者账号。  **约束限制：**  需与实例当前modifier字段值一致，否则将触发权限校验失败。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
         :type modifier: str
         """
         
@@ -73,7 +73,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
     def master_id(self):
         r"""Gets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于标识待更新并检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :return: The master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :rtype: str
@@ -84,7 +84,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
     def master_id(self, master_id):
         r"""Sets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
-        **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
+        **参数解释：**  主对象ID，用于标识待更新并检入的M-V模型实例的主对象。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。
 
         :param master_id: The master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :type master_id: str
@@ -95,7 +95,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
     def modifier(self):
         r"""Gets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  需与实例当前modifier字段值一致，否则将触发权限校验失败。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :return: The modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :rtype: str
@@ -106,7 +106,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
     def modifier(self, modifier):
         r"""Sets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
-        **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
+        **参数解释：**  更新者账号。  **约束限制：**  需与实例当前modifier字段值一致，否则将触发权限校验失败。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
         :param modifier: The modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :type modifier: str
