@@ -44,7 +44,7 @@ class ListTrainingJobEventsResponse(SdkResponse):
         :type total: int
         :param limit: **参数解释**：最大显示条数。 **取值范围**：不涉及。
         :type limit: int
-        :param offset: **参数解释**：开始的条数。 **取值范围**：不涉及。
+        :param offset: **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。
         :type offset: int
         :param order: **参数解释**：排序方式。 **取值范围**：不涉及。
         :type order: str
@@ -130,7 +130,7 @@ class ListTrainingJobEventsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListTrainingJobEventsResponse.
 
-        **参数解释**：开始的条数。 **取值范围**：不涉及。
+        **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。
 
         :return: The offset of this ListTrainingJobEventsResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class ListTrainingJobEventsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListTrainingJobEventsResponse.
 
-        **参数解释**：开始的条数。 **取值范围**：不涉及。
+        **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。
 
         :param offset: The offset of this ListTrainingJobEventsResponse.
         :type offset: int

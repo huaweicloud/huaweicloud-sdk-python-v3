@@ -8,6 +8,7 @@ from huaweicloudsdkmodelarts.v1.model.accept_scheduled_event_request import Acce
 from huaweicloudsdkmodelarts.v1.model.accept_scheduled_event_response import AcceptScheduledEventResponse
 from huaweicloudsdkmodelarts.v1.model.advanced_config import AdvancedConfig
 from huaweicloudsdkmodelarts.v1.model.affinity import Affinity
+from huaweicloudsdkmodelarts.v1.model.affinity_os import AffinityOS
 from huaweicloudsdkmodelarts.v1.model.affinity_response import AffinityResponse
 from huaweicloudsdkmodelarts.v1.model.affinity_rule import AffinityRule
 from huaweicloudsdkmodelarts.v1.model.affinity_type import AffinityType
@@ -750,6 +751,7 @@ from huaweicloudsdkmodelarts.v1.model.rate_limit_response import RateLimitRespon
 from huaweicloudsdkmodelarts.v1.model.reboot_dev_server_request import RebootDevServerRequest
 from huaweicloudsdkmodelarts.v1.model.reboot_dev_server_response import RebootDevServerResponse
 from huaweicloudsdkmodelarts.v1.model.recover_record import RecoverRecord
+from huaweicloudsdkmodelarts.v1.model.redeploy_config import RedeployConfig
 from huaweicloudsdkmodelarts.v1.model.register_image_request import RegisterImageRequest
 from huaweicloudsdkmodelarts.v1.model.register_image_response import RegisterImageResponse
 from huaweicloudsdkmodelarts.v1.model.reinstall_dev_server_os_request import ReinstallDevServerOSRequest

@@ -29,8 +29,8 @@ class ListAntivirusHandleHistoryRequest:
         'asset_value': 'str',
         'handle_method': 'str',
         'user_name': 'str',
-        'event_type': 'int',
         'sort_dir': 'str',
+        'event_type': 'int',
         'sort_key': 'str'
     }
 
@@ -49,12 +49,12 @@ class ListAntivirusHandleHistoryRequest:
         'asset_value': 'asset_value',
         'handle_method': 'handle_method',
         'user_name': 'user_name',
-        'event_type': 'event_type',
         'sort_dir': 'sort_dir',
+        'event_type': 'event_type',
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, severities=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, event_type=None, sort_dir=None, sort_key=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, severities=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, sort_dir=None, event_type=None, sort_key=None):
         r"""ListAntivirusHandleHistoryRequest
 
         The model defined in huaweicloud sdk
@@ -87,10 +87,10 @@ class ListAntivirusHandleHistoryRequest:
         :type handle_method: str
         :param user_name: **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type user_name: str
-        :param event_type: **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
-        :type event_type: int
         :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc：正序   - desc：倒序  **默认取值**: 正序排序 
         :type sort_dir: str
+        :param event_type: **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+        :type event_type: int
         :param sort_key: **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: handle_time（处置时间） **默认取值**: 不涉及 
         :type sort_key: str
         """
@@ -111,8 +111,8 @@ class ListAntivirusHandleHistoryRequest:
         self._asset_value = None
         self._handle_method = None
         self._user_name = None
-        self._event_type = None
         self._sort_dir = None
+        self._event_type = None
         self._sort_key = None
         self.discriminator = None
 
@@ -142,10 +142,10 @@ class ListAntivirusHandleHistoryRequest:
             self.handle_method = handle_method
         if user_name is not None:
             self.user_name = user_name
-        if event_type is not None:
-            self.event_type = event_type
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if event_type is not None:
+            self.event_type = event_type
         if sort_key is not None:
             self.sort_key = sort_key
 
@@ -458,28 +458,6 @@ class ListAntivirusHandleHistoryRequest:
         self._user_name = user_name
 
     @property
-    def event_type(self):
-        r"""Gets the event_type of this ListAntivirusHandleHistoryRequest.
-
-        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
-
-        :return: The event_type of this ListAntivirusHandleHistoryRequest.
-        :rtype: int
-        """
-        return self._event_type
-
-    @event_type.setter
-    def event_type(self, event_type):
-        r"""Sets the event_type of this ListAntivirusHandleHistoryRequest.
-
-        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
-
-        :param event_type: The event_type of this ListAntivirusHandleHistoryRequest.
-        :type event_type: int
-        """
-        self._event_type = event_type
-
-    @property
     def sort_dir(self):
         r"""Gets the sort_dir of this ListAntivirusHandleHistoryRequest.
 
@@ -500,6 +478,28 @@ class ListAntivirusHandleHistoryRequest:
         :type sort_dir: str
         """
         self._sort_dir = sort_dir
+
+    @property
+    def event_type(self):
+        r"""Gets the event_type of this ListAntivirusHandleHistoryRequest.
+
+        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+
+        :return: The event_type of this ListAntivirusHandleHistoryRequest.
+        :rtype: int
+        """
+        return self._event_type
+
+    @event_type.setter
+    def event_type(self, event_type):
+        r"""Sets the event_type of this ListAntivirusHandleHistoryRequest.
+
+        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+
+        :param event_type: The event_type of this ListAntivirusHandleHistoryRequest.
+        :type event_type: int
+        """
+        self._event_type = event_type
 
     @property
     def sort_key(self):

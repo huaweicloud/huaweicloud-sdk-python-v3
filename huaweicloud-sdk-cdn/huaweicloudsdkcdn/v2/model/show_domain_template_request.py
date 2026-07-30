@@ -35,11 +35,11 @@ class ShowDomainTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
         :type tml_name: str
         :param tml_id: **参数解释：** 域名模板ID，可以通过本接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tml_id: str
-        :param tml_type: **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        :param tml_type: **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
         :type tml_type: int
         :param limit: **参数解释：** 分页大小 **约束限制：** 不涉及 **取值范围：** 1-10000 **默认取值：** 30
         :type limit: str
@@ -71,7 +71,7 @@ class ShowDomainTemplateRequest:
     def tml_name(self):
         r"""Gets the tml_name of this ShowDomainTemplateRequest.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :return: The tml_name of this ShowDomainTemplateRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowDomainTemplateRequest:
     def tml_name(self, tml_name):
         r"""Sets the tml_name of this ShowDomainTemplateRequest.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :param tml_name: The tml_name of this ShowDomainTemplateRequest.
         :type tml_name: str
@@ -115,7 +115,7 @@ class ShowDomainTemplateRequest:
     def tml_type(self):
         r"""Gets the tml_type of this ShowDomainTemplateRequest.
 
-        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
 
         :return: The tml_type of this ShowDomainTemplateRequest.
         :rtype: int
@@ -126,7 +126,7 @@ class ShowDomainTemplateRequest:
     def tml_type(self, tml_type):
         r"""Sets the tml_type of this ShowDomainTemplateRequest.
 
-        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
 
         :param tml_type: The tml_type of this ShowDomainTemplateRequest.
         :type tml_type: int

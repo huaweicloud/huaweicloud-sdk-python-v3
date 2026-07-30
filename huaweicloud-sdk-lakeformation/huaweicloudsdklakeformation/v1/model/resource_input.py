@@ -22,7 +22,8 @@ class ResourceInput:
         'table': 'str',
         'column': 'str',
         'uri': 'str',
-        'columns': 'list[str]'
+        'columns': 'list[str]',
+        'dataset': 'str'
     }
 
     attribute_map = {
@@ -33,15 +34,16 @@ class ResourceInput:
         'table': 'table',
         'column': 'column',
         'uri': 'uri',
-        'columns': 'columns'
+        'columns': 'columns',
+        'dataset': 'dataset'
     }
 
-    def __init__(self, resource_type=None, catalog=None, database=None, function=None, table=None, column=None, uri=None, columns=None):
+    def __init__(self, resource_type=None, catalog=None, database=None, function=None, table=None, column=None, uri=None, columns=None, dataset=None):
         r"""ResourceInput
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI
+        :param resource_type: 元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI,DATASET
         :type resource_type: str
         :param catalog: catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type catalog: str
@@ -57,6 +59,8 @@ class ResourceInput:
         :type uri: str
         :param columns: 列名称列表
         :type columns: list[str]
+        :param dataset: 数据集名称。
+        :type dataset: str
         """
         
         
@@ -69,6 +73,7 @@ class ResourceInput:
         self._column = None
         self._uri = None
         self._columns = None
+        self._dataset = None
         self.discriminator = None
 
         self.resource_type = resource_type
@@ -86,12 +91,14 @@ class ResourceInput:
             self.uri = uri
         if columns is not None:
             self.columns = columns
+        if dataset is not None:
+            self.dataset = dataset
 
     @property
     def resource_type(self):
         r"""Gets the resource_type of this ResourceInput.
 
-        元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI
+        元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI,DATASET
 
         :return: The resource_type of this ResourceInput.
         :rtype: str
@@ -102,7 +109,7 @@ class ResourceInput:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ResourceInput.
 
-        元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI
+        元数据资源类型,CATALOG,DATABASE,TABLE,FUNC,MODEL,COLUMN,URI,DATASET
 
         :param resource_type: The resource_type of this ResourceInput.
         :type resource_type: str
@@ -262,6 +269,28 @@ class ResourceInput:
         :type columns: list[str]
         """
         self._columns = columns
+
+    @property
+    def dataset(self):
+        r"""Gets the dataset of this ResourceInput.
+
+        数据集名称。
+
+        :return: The dataset of this ResourceInput.
+        :rtype: str
+        """
+        return self._dataset
+
+    @dataset.setter
+    def dataset(self, dataset):
+        r"""Sets the dataset of this ResourceInput.
+
+        数据集名称。
+
+        :param dataset: The dataset of this ResourceInput.
+        :type dataset: str
+        """
+        self._dataset = dataset
 
     def to_dict(self):
         result = {}

@@ -17,6 +17,7 @@ class ParameterConfigurationInfo:
     openapi_types = {
         'datastore_version_name': 'str',
         'datastore_name': 'str',
+        'configuration_id': 'str',
         'created': 'str',
         'updated': 'str'
     }
@@ -24,11 +25,12 @@ class ParameterConfigurationInfo:
     attribute_map = {
         'datastore_version_name': 'datastore_version_name',
         'datastore_name': 'datastore_name',
+        'configuration_id': 'configuration_id',
         'created': 'created',
         'updated': 'updated'
     }
 
-    def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None):
+    def __init__(self, datastore_version_name=None, datastore_name=None, configuration_id=None, created=None, updated=None):
         r"""ParameterConfigurationInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ParameterConfigurationInfo:
         :type datastore_version_name: str
         :param datastore_name: 数据库名称。
         :type datastore_name: str
+        :param configuration_id: **参数解释**：  参数组ID。  **取值范围**：  只能由英文字母、数字组成，前面为UUID，后缀为pr07，长度为36个字符。
+        :type configuration_id: str
         :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
@@ -47,6 +51,7 @@ class ParameterConfigurationInfo:
 
         self._datastore_version_name = None
         self._datastore_name = None
+        self._configuration_id = None
         self._created = None
         self._updated = None
         self.discriminator = None
@@ -55,6 +60,8 @@ class ParameterConfigurationInfo:
             self.datastore_version_name = datastore_version_name
         if datastore_name is not None:
             self.datastore_name = datastore_name
+        if configuration_id is not None:
+            self.configuration_id = configuration_id
         if created is not None:
             self.created = created
         if updated is not None:
@@ -103,6 +110,28 @@ class ParameterConfigurationInfo:
         :type datastore_name: str
         """
         self._datastore_name = datastore_name
+
+    @property
+    def configuration_id(self):
+        r"""Gets the configuration_id of this ParameterConfigurationInfo.
+
+        **参数解释**：  参数组ID。  **取值范围**：  只能由英文字母、数字组成，前面为UUID，后缀为pr07，长度为36个字符。
+
+        :return: The configuration_id of this ParameterConfigurationInfo.
+        :rtype: str
+        """
+        return self._configuration_id
+
+    @configuration_id.setter
+    def configuration_id(self, configuration_id):
+        r"""Sets the configuration_id of this ParameterConfigurationInfo.
+
+        **参数解释**：  参数组ID。  **取值范围**：  只能由英文字母、数字组成，前面为UUID，后缀为pr07，长度为36个字符。
+
+        :param configuration_id: The configuration_id of this ParameterConfigurationInfo.
+        :type configuration_id: str
+        """
+        self._configuration_id = configuration_id
 
     @property
     def created(self):

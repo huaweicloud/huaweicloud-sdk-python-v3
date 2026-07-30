@@ -17,17 +17,15 @@ class ShowInstanceDatabasesForHtapResponse(SdkResponse):
 
     openapi_types = {
         'databases': 'list[str]',
-        'total_count': 'int',
-        'timestamp': 'int'
+        'total_count': 'int'
     }
 
     attribute_map = {
         'databases': 'databases',
-        'total_count': 'total_count',
-        'timestamp': 'timestamp'
+        'total_count': 'total_count'
     }
 
-    def __init__(self, databases=None, total_count=None, timestamp=None):
+    def __init__(self, databases=None, total_count=None):
         r"""ShowInstanceDatabasesForHtapResponse
 
         The model defined in huaweicloud sdk
@@ -36,23 +34,18 @@ class ShowInstanceDatabasesForHtapResponse(SdkResponse):
         :type databases: list[str]
         :param total_count: 数据库数量。
         :type total_count: int
-        :param timestamp: 查询时间戳。
-        :type timestamp: int
         """
         
         super().__init__()
 
         self._databases = None
         self._total_count = None
-        self._timestamp = None
         self.discriminator = None
 
         if databases is not None:
             self.databases = databases
         if total_count is not None:
             self.total_count = total_count
-        if timestamp is not None:
-            self.timestamp = timestamp
 
     @property
     def databases(self):
@@ -97,28 +90,6 @@ class ShowInstanceDatabasesForHtapResponse(SdkResponse):
         :type total_count: int
         """
         self._total_count = total_count
-
-    @property
-    def timestamp(self):
-        r"""Gets the timestamp of this ShowInstanceDatabasesForHtapResponse.
-
-        查询时间戳。
-
-        :return: The timestamp of this ShowInstanceDatabasesForHtapResponse.
-        :rtype: int
-        """
-        return self._timestamp
-
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        r"""Sets the timestamp of this ShowInstanceDatabasesForHtapResponse.
-
-        查询时间戳。
-
-        :param timestamp: The timestamp of this ShowInstanceDatabasesForHtapResponse.
-        :type timestamp: int
-        """
-        self._timestamp = timestamp
 
     def to_dict(self):
         import warnings

@@ -19,7 +19,8 @@ class JobEngineResp:
         'engine_name': 'str',
         'engine_version': 'str',
         'image_url': 'str',
-        'install_sys_packages': 'bool'
+        'install_sys_packages': 'bool',
+        'image_repo_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class JobEngineResp:
         'engine_name': 'engine_name',
         'engine_version': 'engine_version',
         'image_url': 'image_url',
-        'install_sys_packages': 'install_sys_packages'
+        'install_sys_packages': 'install_sys_packages',
+        'image_repo_id': 'image_repo_id'
     }
 
-    def __init__(self, engine_id=None, engine_name=None, engine_version=None, image_url=None, install_sys_packages=None):
+    def __init__(self, engine_id=None, engine_name=None, engine_version=None, image_url=None, install_sys_packages=None, image_repo_id=None):
         r"""JobEngineResp
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class JobEngineResp:
         :type image_url: str
         :param install_sys_packages: **参数解释**：是否需要安装训练平台指定的 moxing 版本。 **取值范围**： - true：需要 - false：不需要
         :type install_sys_packages: bool
+        :param image_repo_id: **参数解释**：SWR企业仓实例ID，使用企业仓镜像时需传入。 **取值范围**：不涉及。
+        :type image_repo_id: str
         """
         
         
@@ -54,6 +58,7 @@ class JobEngineResp:
         self._engine_version = None
         self._image_url = None
         self._install_sys_packages = None
+        self._image_repo_id = None
         self.discriminator = None
 
         if engine_id is not None:
@@ -66,6 +71,8 @@ class JobEngineResp:
             self.image_url = image_url
         if install_sys_packages is not None:
             self.install_sys_packages = install_sys_packages
+        if image_repo_id is not None:
+            self.image_repo_id = image_repo_id
 
     @property
     def engine_id(self):
@@ -176,6 +183,28 @@ class JobEngineResp:
         :type install_sys_packages: bool
         """
         self._install_sys_packages = install_sys_packages
+
+    @property
+    def image_repo_id(self):
+        r"""Gets the image_repo_id of this JobEngineResp.
+
+        **参数解释**：SWR企业仓实例ID，使用企业仓镜像时需传入。 **取值范围**：不涉及。
+
+        :return: The image_repo_id of this JobEngineResp.
+        :rtype: str
+        """
+        return self._image_repo_id
+
+    @image_repo_id.setter
+    def image_repo_id(self, image_repo_id):
+        r"""Sets the image_repo_id of this JobEngineResp.
+
+        **参数解释**：SWR企业仓实例ID，使用企业仓镜像时需传入。 **取值范围**：不涉及。
+
+        :param image_repo_id: The image_repo_id of this JobEngineResp.
+        :type image_repo_id: str
+        """
+        self._image_repo_id = image_repo_id
 
     def to_dict(self):
         result = {}

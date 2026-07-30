@@ -2105,6 +2105,373 @@ class LakeFormationClient(Client):
 
         return http_info
 
+    def create_dataset(self, request):
+        r"""创建数据集
+
+        创建数据集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDataset
+        :type request: :class:`huaweicloudsdklakeformation.v1.CreateDatasetRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreateDatasetResponse`
+        """
+        http_info = self._create_dataset_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dataset_invoker(self, request):
+        http_info = self._create_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dataset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/datasets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dataset(self, request):
+        r"""删除数据集
+
+        删除数据集
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDataset
+        :type request: :class:`huaweicloudsdklakeformation.v1.DeleteDatasetRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteDatasetResponse`
+        """
+        http_info = self._delete_dataset_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dataset_invoker(self, request):
+        http_info = self._delete_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dataset_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/datasets/{dataset_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'dataset_name' in local_var_params:
+            path_params['dataset_name'] = local_var_params['dataset_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'delete_data' in local_var_params:
+            query_params.append(('delete_data', local_var_params['delete_data']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_datasets(self, request):
+        r"""查询数据集列表
+
+        分页查询数据集列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDatasets
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListDatasetsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListDatasetsResponse`
+        """
+        http_info = self._list_datasets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_datasets_invoker(self, request):
+        http_info = self._list_datasets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datasets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/datasets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'reverse_page' in local_var_params:
+            query_params.append(('reverse_page', local_var_params['reverse_page']))
+        if 'name_partern' in local_var_params:
+            query_params.append(('name_partern', local_var_params['name_partern']))
+        if 'format' in local_var_params:
+            query_params.append(('format', local_var_params['format']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dataset(self, request):
+        r"""获取数据集信息详情
+
+        按名称获取数据集信息详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDataset
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowDatasetRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowDatasetResponse`
+        """
+        http_info = self._show_dataset_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dataset_invoker(self, request):
+        http_info = self._show_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dataset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/datasets/{dataset_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'dataset_name' in local_var_params:
+            path_params['dataset_name'] = local_var_params['dataset_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_dataset(self, request):
+        r"""修改数据集属性
+
+        修改数据集属性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDataset
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdateDatasetRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateDatasetResponse`
+        """
+        http_info = self._update_dataset_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_dataset_invoker(self, request):
+        http_info = self._update_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dataset_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/datasets/{dataset_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatasetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'dataset_name' in local_var_params:
+            path_params['dataset_name'] = local_var_params['dataset_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_function(self, request):
         r"""创建函数
 

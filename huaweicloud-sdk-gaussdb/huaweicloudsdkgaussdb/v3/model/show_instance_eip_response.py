@@ -27,7 +27,7 @@ class ShowInstanceEipResponse(SdkResponse):
         'create_time': 'str',
         'bandwidth_id': 'str',
         'bandwidth_name': 'str',
-        'bandwidth_size': 'str',
+        'bandwidth_size': 'int',
         'bandwidth_share_type': 'str',
         'profile': 'object'
     }
@@ -77,7 +77,7 @@ class ShowInstanceEipResponse(SdkResponse):
         :param bandwidth_name: 带宽名称。
         :type bandwidth_name: str
         :param bandwidth_size: 带宽大小。
-        :type bandwidth_size: str
+        :type bandwidth_size: int
         :param bandwidth_share_type: 带宽类型。枚举值：PER 和WHOLE。
         :type bandwidth_share_type: str
         :param profile: 额外参数，包括订单id、产品id等信息。如果profile不为空，说明是包周期的弹性公网IP。
@@ -380,7 +380,7 @@ class ShowInstanceEipResponse(SdkResponse):
         带宽大小。
 
         :return: The bandwidth_size of this ShowInstanceEipResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._bandwidth_size
 
@@ -391,7 +391,7 @@ class ShowInstanceEipResponse(SdkResponse):
         带宽大小。
 
         :param bandwidth_size: The bandwidth_size of this ShowInstanceEipResponse.
-        :type bandwidth_size: str
+        :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
 

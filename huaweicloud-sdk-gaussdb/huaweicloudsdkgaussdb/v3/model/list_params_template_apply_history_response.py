@@ -16,7 +16,7 @@ class ListParamsTemplateApplyHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'histories': 'list[TemplateApplyHistory]'
     }
 
@@ -31,7 +31,7 @@ class ListParamsTemplateApplyHistoryResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 应用记录数量。
-        :type total_count: str
+        :type total_count: int
         :param histories: 应用记录信息
         :type histories: list[:class:`huaweicloudsdkgaussdb.v3.TemplateApplyHistory`]
         """
@@ -54,7 +54,7 @@ class ListParamsTemplateApplyHistoryResponse(SdkResponse):
         应用记录数量。
 
         :return: The total_count of this ListParamsTemplateApplyHistoryResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -65,7 +65,7 @@ class ListParamsTemplateApplyHistoryResponse(SdkResponse):
         应用记录数量。
 
         :param total_count: The total_count of this ListParamsTemplateApplyHistoryResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

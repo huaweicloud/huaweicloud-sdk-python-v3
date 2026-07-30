@@ -39,7 +39,7 @@ class ListTrainingExperimentsRequest:
         :type workspace_id: str
         :param limit: 返回的数据条目数。
         :type limit: int
-        :param offset: 数据条目偏移量。
+        :param offset: **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
         :type offset: int
         :param sort_by: **参数解释**：排序依据字段，例如sort_by&#x3D;update_time，则表示以条目的更新时间进行排序。 **约束限制**：不涉及。 **取值范围**： - update_time：更新时间。 - name：实验名称。 - create_time：创建时间。 **默认取值**：不涉及。
         :type sort_by: str
@@ -115,7 +115,7 @@ class ListTrainingExperimentsRequest:
     def offset(self):
         r"""Gets the offset of this ListTrainingExperimentsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :return: The offset of this ListTrainingExperimentsRequest.
         :rtype: int
@@ -126,7 +126,7 @@ class ListTrainingExperimentsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTrainingExperimentsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :param offset: The offset of this ListTrainingExperimentsRequest.
         :type offset: int

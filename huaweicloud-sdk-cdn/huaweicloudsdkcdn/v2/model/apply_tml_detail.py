@@ -31,7 +31,7 @@ class ApplyTmlDetail:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
         :type status: str
         :param domain_name: **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type domain_name: str
@@ -57,7 +57,7 @@ class ApplyTmlDetail:
     def status(self):
         r"""Gets the status of this ApplyTmlDetail.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :return: The status of this ApplyTmlDetail.
         :rtype: str
@@ -68,7 +68,7 @@ class ApplyTmlDetail:
     def status(self, status):
         r"""Sets the status of this ApplyTmlDetail.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :param status: The status of this ApplyTmlDetail.
         :type status: str

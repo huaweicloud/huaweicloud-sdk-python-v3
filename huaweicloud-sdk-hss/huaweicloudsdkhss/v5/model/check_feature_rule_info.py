@@ -49,9 +49,9 @@ class CheckFeatureRuleInfo:
         :type chk_feature_desc: str
         :param feature_configure: 检测特性规则配置信息
         :type feature_configure: str
-        :param protective_action: 防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        :param protective_action: **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截     **默认取值**: 不涉及 
         :type protective_action: int
-        :param optional_protective_action: 可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        :param optional_protective_action: **参数解释**: 可选防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截 - 3: 都可以       **默认取值**: 不涉及 
         :type optional_protective_action: int
         :param enabled: 开启状态，包含如下 -0 开启 -1 关闭
         :type enabled: int
@@ -180,7 +180,7 @@ class CheckFeatureRuleInfo:
     def protective_action(self):
         r"""Gets the protective_action of this CheckFeatureRuleInfo.
 
-        防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截     **默认取值**: 不涉及 
 
         :return: The protective_action of this CheckFeatureRuleInfo.
         :rtype: int
@@ -191,7 +191,7 @@ class CheckFeatureRuleInfo:
     def protective_action(self, protective_action):
         r"""Sets the protective_action of this CheckFeatureRuleInfo.
 
-        防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        **参数解释**: 防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截     **默认取值**: 不涉及 
 
         :param protective_action: The protective_action of this CheckFeatureRuleInfo.
         :type protective_action: int
@@ -202,7 +202,7 @@ class CheckFeatureRuleInfo:
     def optional_protective_action(self):
         r"""Gets the optional_protective_action of this CheckFeatureRuleInfo.
 
-        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        **参数解释**: 可选防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截 - 3: 都可以       **默认取值**: 不涉及 
 
         :return: The optional_protective_action of this CheckFeatureRuleInfo.
         :rtype: int
@@ -213,7 +213,7 @@ class CheckFeatureRuleInfo:
     def optional_protective_action(self, optional_protective_action):
         r"""Sets the optional_protective_action of this CheckFeatureRuleInfo.
 
-        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        **参数解释**: 可选防护动作 **约束限制**: 不涉及 **取值范围**: - 1：检测 - 2: 检测并阻断/拦截 - 3: 都可以       **默认取值**: 不涉及 
 
         :param optional_protective_action: The optional_protective_action of this CheckFeatureRuleInfo.
         :type optional_protective_action: int

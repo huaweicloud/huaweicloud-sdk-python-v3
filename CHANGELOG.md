@@ -1,3 +1,223 @@
+# 3.1.208 2026-07-30
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDomainTemplate**
+    - changes of request param
+      - `* configs.flow_limit_strategy.item_type: string -> int64`
+      - `* configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.flow_limit_strategy`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.flow_limit_strategy`
+  - **UpdateFullRule**
+    - changes of request param
+      - `+ rules.rule_id`
+      - `* rules: list<CreateRuleRequest> -> list<FullUpdateRuleRequest>`
+  - **CreateDomainTemplate**
+    - changes of request param
+      - `* configs.flow_limit_strategy.item_type: string -> int64`
+      - `* configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowDomainTemplate**
+    - changes of response param
+      - `* templates.configs.flow_limit_strategy.item_type: string -> int64`
+      - `* templates.configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* templates.configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* templates.configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowAppliedTemplateRecord**
+    - changes of response param
+      - `* elements.configs.flow_limit_strategy.item_type: string -> int64`
+      - `* elements.configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* elements.configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* elements.configs.flow_limit_strategy.ban_time: string -> int64`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyNodePriority**
+    - changes of request param
+      - `* priority: string -> int32`
+  - **ShowInstanceEip**
+    - changes of response param
+      - `* bandwidth_size: string -> int32`
+  - **UpgradeSrKernelVersion**
+    - changes of request param
+      - `* delay: string -> boolean`
+      - `* is_skip_validate: string -> boolean`
+  - **SyncStarRocksUsers**
+    - changes of response param
+      - `* success: string -> boolean`
+  - **DownloadDdlLogs**
+    - changes of response param
+      - `+ download_files`
+      - `- list`
+  - **ShowInstanceDatabasesForHtap**
+    - changes of response param
+      - `- timestamp`
+  - **ShowHtapErrorLogDetail**
+    - changes of request param
+      - `* limit: int32 -> string`
+  - **ShowHtapLtsConfig**
+    - changes of response param
+      - `* instance_lts_configs.lts_configs.enabled: string -> boolean`
+  - **UpdateServerlessComputeAbilityPolicy**
+    - changes of request param
+      - `* min_vcpus: int32 -> string`
+      - `* max_vcpus: int32 -> string`
+  - **ShowAutoScalingHistory**
+    - changes of response param
+      - `* total_count: string -> int32`
+  - **ListParamsTemplateApplyHistory**
+    - changes of response param
+      - `* total_count: string -> int32`
+  - **ShowStarrocksParams**
+    - changes of response param
+      - `+ configurations.configuration_id`
+  - **ShowProxyConfigurations**
+    - changes of response param
+      - `* total_count: string -> int32`
+  - **ListInstanceConfigurations**
+    - changes of response param
+      - `+ configurations.configuration_id`
+  - **BatchUpgradeDatabases**
+    - changes of request param
+      - `* delay: string -> boolean`
+  - **ShowHtapProcessList**
+    - changes of response param
+      - `* process_list.duration: string -> double`
+  - **ListRecycleInstances**
+    - changes of response param
+      - `* instances.recycle_backups.begin_time: string -> int64`
+      - `* instances.recycle_backups.end_time: string -> int64`
+
+### HuaweiCloud SDK LakeFormation
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListDatasets`
+    - `CreateDataset`
+    - `ShowDataset`
+    - `UpdateDataset`
+    - `DeleteDataset`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchCheckPermission**
+    - changes of request param
+      - `+ access_request.action: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ access_request.resource.dataset`
+      - `+ access_request.resource.resource_type: enum value [DATASET]`
+  - **BatchCancelAuthorizationInterface**
+    - changes of request param
+      - `+ permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ resource.type: enum value [DATASET]`
+      - `+ resource.catalogs.databases.datasets`
+  - **BatchAuthorizeInterface**
+    - changes of request param
+      - `+ permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ resource.type: enum value [DATASET]`
+      - `+ resource.catalogs.databases.datasets`
+    - changes of response param
+      - `+ policies.permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.resource.type: enum value [DATASET]`
+      - `+ policies.resource.catalogs.databases.datasets`
+  - **ListInterfaces**
+    - changes of response param
+      - `+ policies.permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.resource.type: enum value [DATASET]`
+      - `+ policies.resource.catalogs.databases.datasets`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **AcceptScheduledEvent**
+    - changes of request param
+      - `+ redeployConfig`
+    - changes of response param
+      - `+ jobProgress`
+      - `+ underLyingInstanceId`
+  - **ListScheduledEvents**
+    - changes of response param
+      - `+ jobProgress`
+      - `+ underLyingInstanceId`
+      - `+ events.jobProgress`
+      - `+ events.underLyingInstanceId`
+  - **ShowNodeConfigTemplate**
+    - changes of response param
+      - `+ spec.osList`
+  - **ShowPoolNode**
+    - changes of response param
+      - `+ metadata.labels.os.modelarts.node/spod.id`
+  - **ListPoolNodes**
+    - changes of response param
+      - `+ items.metadata.labels.os.modelarts.node/spod.id`
+  - **ListNodePoolNodes**
+    - changes of response param
+      - `+ items.metadata.labels.os.modelarts.node/spod.id`
+  - **ShowTrainingJobDetails**
+    - changes of response param
+      - `+ algorithm.engine.image_repo_id`
+  - **StopTrainingJob**
+    - changes of response param
+      - `+ algorithm.engine.image_repo_id`
+  - **CreateTrainingJob**
+    - changes of request param
+      - `+ algorithm.engine.image_repo_id`
+    - changes of response param
+      - `+ algorithm.engine.image_repo_id`
+  - **ListTrainingJobs**
+    - changes of response param
+      - `+ items.algorithm.engine.image_repo_id`
+
+### HuaweiCloud SDK TMS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DeleteAssociatedResourceRule`
+    - `ListAssociatedResourceRules`
+    - `ListAssociatedResourceSettings`
+    - `UpdateAssociatedResourceRules`
+    - `CreateAssociatedResourceRules`
+    - `ShowAssociatedResourceOpenStatus`
+    - `ChangeAssociatedResourceOpenStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.207 2026-07-23
 
 ### HuaweiCloud SDK AgentArts

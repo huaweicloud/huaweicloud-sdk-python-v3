@@ -37,7 +37,7 @@ class ShowAppliedTemplateRecordRequest:
 
         :param tml_id: **参数解释：** 域名模板ID，可以通过查询域名模板列表接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tml_id: str
-        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
         :type tml_name: str
         :param operator_id: **参数解释：** 域名模板操作ID，可以通过本接口获取 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type operator_id: str
@@ -93,7 +93,7 @@ class ShowAppliedTemplateRecordRequest:
     def tml_name(self):
         r"""Gets the tml_name of this ShowAppliedTemplateRecordRequest.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :return: The tml_name of this ShowAppliedTemplateRecordRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ShowAppliedTemplateRecordRequest:
     def tml_name(self, tml_name):
         r"""Sets the tml_name of this ShowAppliedTemplateRecordRequest.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :param tml_name: The tml_name of this ShowAppliedTemplateRecordRequest.
         :type tml_name: str

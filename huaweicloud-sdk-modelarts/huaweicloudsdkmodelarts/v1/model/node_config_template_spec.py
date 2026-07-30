@@ -16,15 +16,17 @@ class NodeConfigTemplateSpec:
 
     openapi_types = {
         'docker_base_size': 'int',
-        'docker_lvm_config': 'DockerLvmConfig'
+        'docker_lvm_config': 'DockerLvmConfig',
+        'os_list': 'list[AffinityOS]'
     }
 
     attribute_map = {
         'docker_base_size': 'dockerBaseSize',
-        'docker_lvm_config': 'dockerLvmConfig'
+        'docker_lvm_config': 'dockerLvmConfig',
+        'os_list': 'osList'
     }
 
-    def __init__(self, docker_base_size=None, docker_lvm_config=None):
+    def __init__(self, docker_base_size=None, docker_lvm_config=None, os_list=None):
         r"""NodeConfigTemplateSpec
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class NodeConfigTemplateSpec:
         :type docker_base_size: int
         :param docker_lvm_config: 
         :type docker_lvm_config: :class:`huaweicloudsdkmodelarts.v1.DockerLvmConfig`
+        :param os_list: **参数解释**：该规格支持的Modelarts内置操作系统列表。
+        :type os_list: list[:class:`huaweicloudsdkmodelarts.v1.AffinityOS`]
         """
         
         
 
         self._docker_base_size = None
         self._docker_lvm_config = None
+        self._os_list = None
         self.discriminator = None
 
         self.docker_base_size = docker_base_size
         if docker_lvm_config is not None:
             self.docker_lvm_config = docker_lvm_config
+        if os_list is not None:
+            self.os_list = os_list
 
     @property
     def docker_base_size(self):
@@ -84,6 +91,28 @@ class NodeConfigTemplateSpec:
         :type docker_lvm_config: :class:`huaweicloudsdkmodelarts.v1.DockerLvmConfig`
         """
         self._docker_lvm_config = docker_lvm_config
+
+    @property
+    def os_list(self):
+        r"""Gets the os_list of this NodeConfigTemplateSpec.
+
+        **参数解释**：该规格支持的Modelarts内置操作系统列表。
+
+        :return: The os_list of this NodeConfigTemplateSpec.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.AffinityOS`]
+        """
+        return self._os_list
+
+    @os_list.setter
+    def os_list(self, os_list):
+        r"""Sets the os_list of this NodeConfigTemplateSpec.
+
+        **参数解释**：该规格支持的Modelarts内置操作系统列表。
+
+        :param os_list: The os_list of this NodeConfigTemplateSpec.
+        :type os_list: list[:class:`huaweicloudsdkmodelarts.v1.AffinityOS`]
+        """
+        self._os_list = os_list
 
     def to_dict(self):
         result = {}

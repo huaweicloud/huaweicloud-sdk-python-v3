@@ -30,7 +30,9 @@ class ScheduledEvent:
         'finish_time': 'str',
         'not_before': 'str',
         'probe_msg': 'str',
-        'redeploy_type': 'list[str]'
+        'job_progress': 'str',
+        'redeploy_type': 'list[str]',
+        'under_lying_instance_id': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class ScheduledEvent:
         'finish_time': 'finishTime',
         'not_before': 'notBefore',
         'probe_msg': 'probeMsg',
-        'redeploy_type': 'redeployType'
+        'job_progress': 'jobProgress',
+        'redeploy_type': 'redeployType',
+        'under_lying_instance_id': 'underLyingInstanceId'
     }
 
-    def __init__(self, id=None, catalog=None, type=None, description=None, state=None, instance_type=None, instance_id=None, node_name=None, pool_name=None, pool_display_name=None, publish_time=None, start_time=None, finish_time=None, not_before=None, probe_msg=None, redeploy_type=None):
+    def __init__(self, id=None, catalog=None, type=None, description=None, state=None, instance_type=None, instance_id=None, node_name=None, pool_name=None, pool_display_name=None, publish_time=None, start_time=None, finish_time=None, not_before=None, probe_msg=None, job_progress=None, redeploy_type=None, under_lying_instance_id=None):
         r"""ScheduledEvent
 
         The model defined in huaweicloud sdk
@@ -87,8 +91,12 @@ class ScheduledEvent:
         :type not_before: str
         :param probe_msg: **参数解释**：提示信息。 **约束限制**：系统自动生成，只能以小写字母开头，数字、中划线组成，不能以中划线结尾，长度小于63字符。 **取值范围**：不涉及。 **默认取值**：不涉及。
         :type probe_msg: str
+        :param job_progress: **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :type job_progress: str
         :param redeploy_type: **参数解释**：节点的重部署类型。 **约束限制**：不涉及。 **取值范围**：可选值如下：- HARD：表示支持强制重部署, - SOFT：表示支持重部署 **默认取值**：不涉及。
         :type redeploy_type: list[str]
+        :param under_lying_instance_id: **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+        :type under_lying_instance_id: str
         """
         
         
@@ -108,7 +116,9 @@ class ScheduledEvent:
         self._finish_time = None
         self._not_before = None
         self._probe_msg = None
+        self._job_progress = None
         self._redeploy_type = None
+        self._under_lying_instance_id = None
         self.discriminator = None
 
         self.id = id
@@ -133,7 +143,11 @@ class ScheduledEvent:
             self.not_before = not_before
         if probe_msg is not None:
             self.probe_msg = probe_msg
+        if job_progress is not None:
+            self.job_progress = job_progress
         self.redeploy_type = redeploy_type
+        if under_lying_instance_id is not None:
+            self.under_lying_instance_id = under_lying_instance_id
 
     @property
     def id(self):
@@ -466,6 +480,28 @@ class ScheduledEvent:
         self._probe_msg = probe_msg
 
     @property
+    def job_progress(self):
+        r"""Gets the job_progress of this ScheduledEvent.
+
+        **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :return: The job_progress of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._job_progress
+
+    @job_progress.setter
+    def job_progress(self, job_progress):
+        r"""Sets the job_progress of this ScheduledEvent.
+
+        **参数解释**：计划事件执行的实时进度信息，系统自动生成。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :param job_progress: The job_progress of this ScheduledEvent.
+        :type job_progress: str
+        """
+        self._job_progress = job_progress
+
+    @property
     def redeploy_type(self):
         r"""Gets the redeploy_type of this ScheduledEvent.
 
@@ -486,6 +522,28 @@ class ScheduledEvent:
         :type redeploy_type: list[str]
         """
         self._redeploy_type = redeploy_type
+
+    @property
+    def under_lying_instance_id(self):
+        r"""Gets the under_lying_instance_id of this ScheduledEvent.
+
+        **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+
+        :return: The under_lying_instance_id of this ScheduledEvent.
+        :rtype: str
+        """
+        return self._under_lying_instance_id
+
+    @under_lying_instance_id.setter
+    def under_lying_instance_id(self, under_lying_instance_id):
+        r"""Sets the under_lying_instance_id of this ScheduledEvent.
+
+        **参数解释**：snt9b23 场景对应ECS服务器ID。计算服务系统自动生成的实例ID，长度小于63。  **取值范围**：snt9b23 涉及, snt9b 不涉及。
+
+        :param under_lying_instance_id: The under_lying_instance_id of this ScheduledEvent.
+        :type under_lying_instance_id: str
+        """
+        self._under_lying_instance_id = under_lying_instance_id
 
     def to_dict(self):
         result = {}

@@ -34,7 +34,7 @@ class ApplyDomainTemplateResponse(SdkResponse):
 
         :param id: **参数解释：** 操作ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: str
-        :param status: **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        :param status: **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
         :type status: str
         :param detail: 
         :type detail: list[:class:`huaweicloudsdkcdn.v2.ApplyTmlDetail`]
@@ -80,7 +80,7 @@ class ApplyDomainTemplateResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ApplyDomainTemplateResponse.
 
-        **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :return: The status of this ApplyDomainTemplateResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ApplyDomainTemplateResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ApplyDomainTemplateResponse.
 
-        **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（任务粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :param status: The status of this ApplyDomainTemplateResponse.
         :type status: str

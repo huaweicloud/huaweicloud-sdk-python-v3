@@ -22,6 +22,7 @@ class NodeLabels:
         'os_modelarts_node_batch_name': 'str',
         'os_modelarts_node_batch_type': 'str',
         'os_modelarts_node_batch_count': 'str',
+        'os_modelarts_node_spod_id': 'str',
         'os_modelarts_resource_id': 'str',
         'os_modelarts_tenant_domain_id': 'str',
         'os_modelarts_tenant_project_id': 'str',
@@ -41,6 +42,7 @@ class NodeLabels:
         'os_modelarts_node_batch_name': 'os.modelarts.node/batch.name',
         'os_modelarts_node_batch_type': 'os.modelarts.node/batch.type',
         'os_modelarts_node_batch_count': 'os.modelarts.node/batch.count',
+        'os_modelarts_node_spod_id': 'os.modelarts.node/spod.id',
         'os_modelarts_resource_id': 'os.modelarts/resource.id',
         'os_modelarts_tenant_domain_id': 'os.modelarts/tenant.domain.id',
         'os_modelarts_tenant_project_id': 'os.modelarts/tenant.project.id',
@@ -52,7 +54,7 @@ class NodeLabels:
         'os_modelarts_node_nodepoolname': 'os.modelarts.node/nodepoolname'
     }
 
-    def __init__(self, os_modelarts_node_cluster=None, os_modelarts_node_elastic_quota=None, os_modelarts_node_nodepool=None, os_modelarts_node_batch_uid=None, os_modelarts_node_batch_name=None, os_modelarts_node_batch_type=None, os_modelarts_node_batch_count=None, os_modelarts_resource_id=None, os_modelarts_tenant_domain_id=None, os_modelarts_tenant_project_id=None, os_modelarts_billing_status=None, os_modelarts_node_volcano_scheduler_cabinet_exclusive=None, cce_kubectl_kubernetes_io_cabinet=None, os_modelarts_node_underlying_instance_id=None, os_modelarts_node_ha_redundant_enabled=None, os_modelarts_node_nodepoolname=None):
+    def __init__(self, os_modelarts_node_cluster=None, os_modelarts_node_elastic_quota=None, os_modelarts_node_nodepool=None, os_modelarts_node_batch_uid=None, os_modelarts_node_batch_name=None, os_modelarts_node_batch_type=None, os_modelarts_node_batch_count=None, os_modelarts_node_spod_id=None, os_modelarts_resource_id=None, os_modelarts_tenant_domain_id=None, os_modelarts_tenant_project_id=None, os_modelarts_billing_status=None, os_modelarts_node_volcano_scheduler_cabinet_exclusive=None, cce_kubectl_kubernetes_io_cabinet=None, os_modelarts_node_underlying_instance_id=None, os_modelarts_node_ha_redundant_enabled=None, os_modelarts_node_nodepoolname=None):
         r"""NodeLabels
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class NodeLabels:
         :type os_modelarts_node_batch_type: str
         :param os_modelarts_node_batch_count: **参数解释**：批量创建的节点个数。 **取值范围**：不涉及。
         :type os_modelarts_node_batch_count: str
+        :param os_modelarts_node_spod_id: **参数解释**：HPS超节点ID。该值相同的节点，A5代表在同一框内，A3代表在同一个超节点内。 **取值范围**：不涉及。
+        :type os_modelarts_node_spod_id: str
         :param os_modelarts_resource_id: **参数解释**：节点的资源id。 **取值范围**：不涉及。
         :type os_modelarts_resource_id: str
         :param os_modelarts_tenant_domain_id: **参数解释**：节点的租户id，记录节点创建在哪个租户账号下。 **取值范围**：不涉及。
@@ -100,6 +104,7 @@ class NodeLabels:
         self._os_modelarts_node_batch_name = None
         self._os_modelarts_node_batch_type = None
         self._os_modelarts_node_batch_count = None
+        self._os_modelarts_node_spod_id = None
         self._os_modelarts_resource_id = None
         self._os_modelarts_tenant_domain_id = None
         self._os_modelarts_tenant_project_id = None
@@ -125,6 +130,8 @@ class NodeLabels:
             self.os_modelarts_node_batch_type = os_modelarts_node_batch_type
         if os_modelarts_node_batch_count is not None:
             self.os_modelarts_node_batch_count = os_modelarts_node_batch_count
+        if os_modelarts_node_spod_id is not None:
+            self.os_modelarts_node_spod_id = os_modelarts_node_spod_id
         if os_modelarts_resource_id is not None:
             self.os_modelarts_resource_id = os_modelarts_resource_id
         if os_modelarts_tenant_domain_id is not None:
@@ -297,6 +304,28 @@ class NodeLabels:
         :type os_modelarts_node_batch_count: str
         """
         self._os_modelarts_node_batch_count = os_modelarts_node_batch_count
+
+    @property
+    def os_modelarts_node_spod_id(self):
+        r"""Gets the os_modelarts_node_spod_id of this NodeLabels.
+
+        **参数解释**：HPS超节点ID。该值相同的节点，A5代表在同一框内，A3代表在同一个超节点内。 **取值范围**：不涉及。
+
+        :return: The os_modelarts_node_spod_id of this NodeLabels.
+        :rtype: str
+        """
+        return self._os_modelarts_node_spod_id
+
+    @os_modelarts_node_spod_id.setter
+    def os_modelarts_node_spod_id(self, os_modelarts_node_spod_id):
+        r"""Sets the os_modelarts_node_spod_id of this NodeLabels.
+
+        **参数解释**：HPS超节点ID。该值相同的节点，A5代表在同一框内，A3代表在同一个超节点内。 **取值范围**：不涉及。
+
+        :param os_modelarts_node_spod_id: The os_modelarts_node_spod_id of this NodeLabels.
+        :type os_modelarts_node_spod_id: str
+        """
+        self._os_modelarts_node_spod_id = os_modelarts_node_spod_id
 
     @property
     def os_modelarts_resource_id(self):

@@ -15,8 +15,8 @@ class UpgradeSrKernelVersionRequestV3:
     sensitive_list = []
 
     openapi_types = {
-        'delay': 'str',
-        'is_skip_validate': 'str'
+        'delay': 'bool',
+        'is_skip_validate': 'bool'
     }
 
     attribute_map = {
@@ -30,9 +30,9 @@ class UpgradeSrKernelVersionRequestV3:
         The model defined in huaweicloud sdk
 
         :param delay: **参数解释**： 是否延时升级。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
-        :type delay: str
+        :type delay: bool
         :param is_skip_validate: **参数解释**： 是否跳过升级校验。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
-        :type is_skip_validate: str
+        :type is_skip_validate: bool
         """
         
         
@@ -53,7 +53,7 @@ class UpgradeSrKernelVersionRequestV3:
         **参数解释**： 是否延时升级。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
         :return: The delay of this UpgradeSrKernelVersionRequestV3.
-        :rtype: str
+        :rtype: bool
         """
         return self._delay
 
@@ -64,7 +64,7 @@ class UpgradeSrKernelVersionRequestV3:
         **参数解释**： 是否延时升级。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
         :param delay: The delay of this UpgradeSrKernelVersionRequestV3.
-        :type delay: str
+        :type delay: bool
         """
         self._delay = delay
 
@@ -75,7 +75,7 @@ class UpgradeSrKernelVersionRequestV3:
         **参数解释**： 是否跳过升级校验。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
         :return: The is_skip_validate of this UpgradeSrKernelVersionRequestV3.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_skip_validate
 
@@ -86,7 +86,7 @@ class UpgradeSrKernelVersionRequestV3:
         **参数解释**： 是否跳过升级校验。  **约束限制**： 不涉及  **取值范围**： - true - false  **默认取值**： false。
 
         :param is_skip_validate: The is_skip_validate of this UpgradeSrKernelVersionRequestV3.
-        :type is_skip_validate: str
+        :type is_skip_validate: bool
         """
         self._is_skip_validate = is_skip_validate
 

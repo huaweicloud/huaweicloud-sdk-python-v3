@@ -46,7 +46,7 @@ class ListTrainingExperimentsResponse(SdkResponse):
         :type count: int
         :param limit: **参数解释**：查询到所有训练实验限制个数。 **取值范围**：不涉及。
         :type limit: int
-        :param offset: **参数解释**：查询到所有训练实验查询偏移量。  **取值范围**：不涉及。
+        :param offset: **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。  **取值范围**：不涉及。
         :type offset: int
         :param sort_by: **参数解释**：查询到所有训练实验排序依赖字段。 **取值范围**：不涉及。
         :type sort_by: str
@@ -152,7 +152,7 @@ class ListTrainingExperimentsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListTrainingExperimentsResponse.
 
-        **参数解释**：查询到所有训练实验查询偏移量。  **取值范围**：不涉及。
+        **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。  **取值范围**：不涉及。
 
         :return: The offset of this ListTrainingExperimentsResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class ListTrainingExperimentsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListTrainingExperimentsResponse.
 
-        **参数解释**：查询到所有训练实验查询偏移量。  **取值范围**：不涉及。
+        **参数解释**：查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。  **取值范围**：不涉及。
 
         :param offset: The offset of this ListTrainingExperimentsResponse.
         :type offset: int

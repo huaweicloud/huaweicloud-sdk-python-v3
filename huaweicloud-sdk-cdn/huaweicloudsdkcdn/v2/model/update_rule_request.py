@@ -37,7 +37,7 @@ class UpdateRuleRequest:
 
         :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 1-50个字符 **默认取值：** 不涉及
         :type name: str
-        :param status: **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭 **默认取值：** 不涉及
+        :param status: **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
         :type status: str
         :param priority: **参数解释：** 此条规则的优先级，数值越大，优先级越高 **约束限制：** 优先级不能相同 **取值范围：** 1-100 **默认取值：** 不涉及
         :type priority: int
@@ -88,7 +88,7 @@ class UpdateRuleRequest:
     def status(self):
         r"""Gets the status of this UpdateRuleRequest.
 
-        **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭 **默认取值：** 不涉及
+        **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :return: The status of this UpdateRuleRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateRuleRequest:
     def status(self, status):
         r"""Sets the status of this UpdateRuleRequest.
 
-        **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭 **默认取值：** 不涉及
+        **参数解释：** 是否开启规则 **约束限制：** 不涉及 **取值范围：** - on: 开启 - off: 关闭  **默认取值：** 不涉及
 
         :param status: The status of this UpdateRuleRequest.
         :type status: str

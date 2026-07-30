@@ -51,11 +51,11 @@ class FlexibleOriginsEngine:
 
         The model defined in huaweicloud sdk
 
-        :param sources_type: **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名 **默认取值：** 不涉及
+        :param sources_type: **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名  **默认取值：** 不涉及
         :type sources_type: str
         :param ip_or_domain: **参数解释：** 源站IP或者域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ip_or_domain: str
-        :param obs_bucket_type: **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶 **默认取值：** public: 公有桶
+        :param obs_bucket_type: **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
         :type obs_bucket_type: str
         :param bucket_access_key: **参数解释：** 第三方对象存储访问密钥 **约束限制：** 源站类型为第三方桶时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type bucket_access_key: str
@@ -67,7 +67,7 @@ class FlexibleOriginsEngine:
         :type bucket_name: str
         :param host_name: **参数解释：** 回源HOST **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 加速域名
         :type host_name: str
-        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议 **默认取值：** http: http协议
+        :param origin_protocol: **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
         :type origin_protocol: str
         :param http_port: **参数解释：** HTTP端口 **约束限制：** 不涉及 **取值范围：** 1-65535 **默认取值：** 80
         :type http_port: int
@@ -123,7 +123,7 @@ class FlexibleOriginsEngine:
     def sources_type(self):
         r"""Gets the sources_type of this FlexibleOriginsEngine.
 
-        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名 **默认取值：** 不涉及
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名  **默认取值：** 不涉及
 
         :return: The sources_type of this FlexibleOriginsEngine.
         :rtype: str
@@ -134,7 +134,7 @@ class FlexibleOriginsEngine:
     def sources_type(self, sources_type):
         r"""Sets the sources_type of this FlexibleOriginsEngine.
 
-        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名 **默认取值：** 不涉及
+        **参数解释：** 源站类型 **约束限制：** 不涉及 **取值范围：** - ipaddr: 源站IP - domain: 源站域名 - obs_bucket: OBS桶域名 - third_bucket: 第三方桶域名  **默认取值：** 不涉及
 
         :param sources_type: The sources_type of this FlexibleOriginsEngine.
         :type sources_type: str
@@ -167,7 +167,7 @@ class FlexibleOriginsEngine:
     def obs_bucket_type(self):
         r"""Gets the obs_bucket_type of this FlexibleOriginsEngine.
 
-        **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶 **默认取值：** public: 公有桶
+        **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
 
         :return: The obs_bucket_type of this FlexibleOriginsEngine.
         :rtype: str
@@ -178,7 +178,7 @@ class FlexibleOriginsEngine:
     def obs_bucket_type(self, obs_bucket_type):
         r"""Sets the obs_bucket_type of this FlexibleOriginsEngine.
 
-        **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶 **默认取值：** public: 公有桶
+        **参数解释：** OBS桶类型 **约束限制：** 源站类型是“OBS桶域名”时需要传该参数 **取值范围：** - private: 私有桶 - public: 公有桶  **默认取值：** public: 公有桶
 
         :param obs_bucket_type: The obs_bucket_type of this FlexibleOriginsEngine.
         :type obs_bucket_type: str
@@ -299,7 +299,7 @@ class FlexibleOriginsEngine:
     def origin_protocol(self):
         r"""Gets the origin_protocol of this FlexibleOriginsEngine.
 
-        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议 **默认取值：** http: http协议
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
 
         :return: The origin_protocol of this FlexibleOriginsEngine.
         :rtype: str
@@ -310,7 +310,7 @@ class FlexibleOriginsEngine:
     def origin_protocol(self, origin_protocol):
         r"""Sets the origin_protocol of this FlexibleOriginsEngine.
 
-        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议 **默认取值：** http: http协议
+        **参数解释：** 指定CDN回源时的请求协议 **约束限制：** 不涉及 **取值范围：** - follow: 协议跟随 - http: http协议 - https: https协议  **默认取值：** http: http协议
 
         :param origin_protocol: The origin_protocol of this FlexibleOriginsEngine.
         :type origin_protocol: str

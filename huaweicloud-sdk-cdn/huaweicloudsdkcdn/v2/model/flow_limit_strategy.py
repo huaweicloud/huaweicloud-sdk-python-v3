@@ -17,9 +17,9 @@ class FlowLimitStrategy:
     openapi_types = {
         'strategy_type': 'str',
         'item_type': 'str',
-        'limit_value': 'str',
-        'alarm_percent_threshold': 'str',
-        'ban_time': 'str'
+        'limit_value': 'int',
+        'alarm_percent_threshold': 'int',
+        'ban_time': 'int'
     }
 
     attribute_map = {
@@ -35,16 +35,16 @@ class FlowLimitStrategy:
 
         The model defined in huaweicloud sdk
 
-        :param strategy_type: **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天） **默认取值：** 不涉及
+        :param strategy_type: **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天）  **默认取值：** 不涉及
         :type strategy_type: str
-        :param item_type: **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: bit **默认取值：** 不涉及
+        :param item_type: **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: byte  **默认取值：** 不涉及
         :type item_type: str
         :param limit_value: **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
-        :type limit_value: str
-        :param alarm_percent_threshold: **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 1-90 **默认取值：** 不涉及
-        :type alarm_percent_threshold: str
-        :param ban_time: **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天 **默认取值：** 不涉及
-        :type ban_time: str
+        :type limit_value: int
+        :param alarm_percent_threshold: **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 10-90 **默认取值：** 不涉及
+        :type alarm_percent_threshold: int
+        :param ban_time: **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天  **默认取值：** 0
+        :type ban_time: int
         """
         
         
@@ -56,12 +56,9 @@ class FlowLimitStrategy:
         self._ban_time = None
         self.discriminator = None
 
-        if strategy_type is not None:
-            self.strategy_type = strategy_type
-        if item_type is not None:
-            self.item_type = item_type
-        if limit_value is not None:
-            self.limit_value = limit_value
+        self.strategy_type = strategy_type
+        self.item_type = item_type
+        self.limit_value = limit_value
         if alarm_percent_threshold is not None:
             self.alarm_percent_threshold = alarm_percent_threshold
         if ban_time is not None:
@@ -71,7 +68,7 @@ class FlowLimitStrategy:
     def strategy_type(self):
         r"""Gets the strategy_type of this FlowLimitStrategy.
 
-        **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天） **默认取值：** 不涉及
+        **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天）  **默认取值：** 不涉及
 
         :return: The strategy_type of this FlowLimitStrategy.
         :rtype: str
@@ -82,7 +79,7 @@ class FlowLimitStrategy:
     def strategy_type(self, strategy_type):
         r"""Sets the strategy_type of this FlowLimitStrategy.
 
-        **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天） **默认取值：** 不涉及
+        **参数解释：**  用量统计类型 **约束限制：** 不涉及 **取值范围：** - instant: 瞬时用量 - hour: 累计用量（小时） - day: 累计用量（天）  **默认取值：** 不涉及
 
         :param strategy_type: The strategy_type of this FlowLimitStrategy.
         :type strategy_type: str
@@ -93,7 +90,7 @@ class FlowLimitStrategy:
     def item_type(self):
         r"""Gets the item_type of this FlowLimitStrategy.
 
-        **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: bit **默认取值：** 不涉及
+        **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: byte  **默认取值：** 不涉及
 
         :return: The item_type of this FlowLimitStrategy.
         :rtype: str
@@ -104,7 +101,7 @@ class FlowLimitStrategy:
     def item_type(self, item_type):
         r"""Sets the item_type of this FlowLimitStrategy.
 
-        **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: bit **默认取值：** 不涉及
+        **参数解释：**  用量封顶类型 **约束限制：** 不涉及 **取值范围：** - bandwidth: 带宽封顶，单位: bit/s - traffic: 流量封顶，单位: byte  **默认取值：** 不涉及
 
         :param item_type: The item_type of this FlowLimitStrategy.
         :type item_type: str
@@ -118,7 +115,7 @@ class FlowLimitStrategy:
         **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
 
         :return: The limit_value of this FlowLimitStrategy.
-        :rtype: str
+        :rtype: int
         """
         return self._limit_value
 
@@ -129,7 +126,7 @@ class FlowLimitStrategy:
         **参数解释：** 用量封顶阈值，域名用量达到该阈值后，将会停用域名 **约束限制：** 不涉及 **取值范围：** 必须为正整数 **默认取值：** 不涉及
 
         :param limit_value: The limit_value of this FlowLimitStrategy.
-        :type limit_value: str
+        :type limit_value: int
         """
         self._limit_value = limit_value
 
@@ -137,10 +134,10 @@ class FlowLimitStrategy:
     def alarm_percent_threshold(self):
         r"""Gets the alarm_percent_threshold of this FlowLimitStrategy.
 
-        **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 1-90 **默认取值：** 不涉及
+        **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 10-90 **默认取值：** 不涉及
 
         :return: The alarm_percent_threshold of this FlowLimitStrategy.
-        :rtype: str
+        :rtype: int
         """
         return self._alarm_percent_threshold
 
@@ -148,10 +145,10 @@ class FlowLimitStrategy:
     def alarm_percent_threshold(self, alarm_percent_threshold):
         r"""Sets the alarm_percent_threshold of this FlowLimitStrategy.
 
-        **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 1-90 **默认取值：** 不涉及
+        **参数解释：** 用量告警阈值，域名用量达到该阈值后，将会发送告警 **约束限制：** 不涉及 **取值范围：** 10-90 **默认取值：** 不涉及
 
         :param alarm_percent_threshold: The alarm_percent_threshold of this FlowLimitStrategy.
-        :type alarm_percent_threshold: str
+        :type alarm_percent_threshold: int
         """
         self._alarm_percent_threshold = alarm_percent_threshold
 
@@ -159,10 +156,10 @@ class FlowLimitStrategy:
     def ban_time(self):
         r"""Gets the ban_time of this FlowLimitStrategy.
 
-        **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天 **默认取值：** 不涉及
+        **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天  **默认取值：** 0
 
         :return: The ban_time of this FlowLimitStrategy.
-        :rtype: str
+        :rtype: int
         """
         return self._ban_time
 
@@ -170,10 +167,10 @@ class FlowLimitStrategy:
     def ban_time(self, ban_time):
         r"""Sets the ban_time of this FlowLimitStrategy.
 
-        **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天 **默认取值：** 不涉及
+        **参数解释：** 域名封禁周期 **约束限制：** ban_time设置为0时，表示不自动解封，需要客户手动解封域名 **取值范围：** - 0: 不自动解封 - 60: 60分钟，即1个小时 - 720: 720分钟，即12个小时 - 1440: 1440分钟，即24个小时 - 4320: 4320分钟，即3天  **默认取值：** 0
 
         :param ban_time: The ban_time of this FlowLimitStrategy.
-        :type ban_time: str
+        :type ban_time: int
         """
         self._ban_time = ban_time
 

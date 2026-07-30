@@ -16,76 +16,20 @@ class UpdateServerlessScalingPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'enlarge_step_size': 'str',
-        'custom_scaling_config': 'CustomScalingConfig'
     }
 
     attribute_map = {
-        'enlarge_step_size': 'enlarge_step_size',
-        'custom_scaling_config': 'custom_scaling_config'
     }
 
-    def __init__(self, enlarge_step_size=None, custom_scaling_config=None):
+    def __init__(self):
         r"""UpdateServerlessScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param enlarge_step_size: **参数描述**：  自定义扩容步长。  **约束限制**：  不涉及。  **取值范围**：  2-算力上限的一半。  **默认取值**：  不涉及。
-        :type enlarge_step_size: str
-        :param custom_scaling_config: 
-        :type custom_scaling_config: :class:`huaweicloudsdkgaussdb.v3.CustomScalingConfig`
         """
         
         super().__init__()
-
-        self._enlarge_step_size = None
-        self._custom_scaling_config = None
         self.discriminator = None
-
-        if enlarge_step_size is not None:
-            self.enlarge_step_size = enlarge_step_size
-        if custom_scaling_config is not None:
-            self.custom_scaling_config = custom_scaling_config
-
-    @property
-    def enlarge_step_size(self):
-        r"""Gets the enlarge_step_size of this UpdateServerlessScalingPolicyResponse.
-
-        **参数描述**：  自定义扩容步长。  **约束限制**：  不涉及。  **取值范围**：  2-算力上限的一半。  **默认取值**：  不涉及。
-
-        :return: The enlarge_step_size of this UpdateServerlessScalingPolicyResponse.
-        :rtype: str
-        """
-        return self._enlarge_step_size
-
-    @enlarge_step_size.setter
-    def enlarge_step_size(self, enlarge_step_size):
-        r"""Sets the enlarge_step_size of this UpdateServerlessScalingPolicyResponse.
-
-        **参数描述**：  自定义扩容步长。  **约束限制**：  不涉及。  **取值范围**：  2-算力上限的一半。  **默认取值**：  不涉及。
-
-        :param enlarge_step_size: The enlarge_step_size of this UpdateServerlessScalingPolicyResponse.
-        :type enlarge_step_size: str
-        """
-        self._enlarge_step_size = enlarge_step_size
-
-    @property
-    def custom_scaling_config(self):
-        r"""Gets the custom_scaling_config of this UpdateServerlessScalingPolicyResponse.
-
-        :return: The custom_scaling_config of this UpdateServerlessScalingPolicyResponse.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.CustomScalingConfig`
-        """
-        return self._custom_scaling_config
-
-    @custom_scaling_config.setter
-    def custom_scaling_config(self, custom_scaling_config):
-        r"""Sets the custom_scaling_config of this UpdateServerlessScalingPolicyResponse.
-
-        :param custom_scaling_config: The custom_scaling_config of this UpdateServerlessScalingPolicyResponse.
-        :type custom_scaling_config: :class:`huaweicloudsdkgaussdb.v3.CustomScalingConfig`
-        """
-        self._custom_scaling_config = custom_scaling_config
 
     def to_dict(self):
         import warnings

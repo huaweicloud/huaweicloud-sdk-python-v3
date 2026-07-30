@@ -43,7 +43,7 @@ class AlarmWhiteListResponseInfo:
 
         :param enterprise_project_name: 企业项目名称
         :type enterprise_project_name: str
-        :param hash: **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及
+        :param hash: **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及
         :type hash: str
         :param description: **参数解释**: 描述信息。 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及
         :type description: str
@@ -114,7 +114,7 @@ class AlarmWhiteListResponseInfo:
     def hash(self):
         r"""Gets the hash of this AlarmWhiteListResponseInfo.
 
-        **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及
+        **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及
 
         :return: The hash of this AlarmWhiteListResponseInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class AlarmWhiteListResponseInfo:
     def hash(self, hash):
         r"""Sets the hash of this AlarmWhiteListResponseInfo.
 
-        **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及
+        **参数解释**: 事件白名单SHA256 **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及
 
         :param hash: The hash of this AlarmWhiteListResponseInfo.
         :type hash: str

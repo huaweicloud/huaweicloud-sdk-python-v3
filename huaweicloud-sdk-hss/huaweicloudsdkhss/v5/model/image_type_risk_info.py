@@ -17,24 +17,28 @@ class ImageTypeRiskInfo:
     openapi_types = {
         'local': 'int',
         'registriy': 'int',
+        'registry': 'int',
         'cicd': 'int'
     }
 
     attribute_map = {
         'local': 'local',
         'registriy': 'registriy',
+        'registry': 'registry',
         'cicd': 'cicd'
     }
 
-    def __init__(self, local=None, registriy=None, cicd=None):
+    def __init__(self, local=None, registriy=None, registry=None, cicd=None):
         r"""ImageTypeRiskInfo
 
         The model defined in huaweicloud sdk
 
         :param local: 本地镜像
         :type local: int
-        :param registriy: 仓库镜像
+        :param registriy: 仓库镜像（已废弃，请使用registry）
         :type registriy: int
+        :param registry: 仓库镜像
+        :type registry: int
         :param cicd: cicd镜像
         :type cicd: int
         """
@@ -43,6 +47,7 @@ class ImageTypeRiskInfo:
 
         self._local = None
         self._registriy = None
+        self._registry = None
         self._cicd = None
         self.discriminator = None
 
@@ -50,6 +55,8 @@ class ImageTypeRiskInfo:
             self.local = local
         if registriy is not None:
             self.registriy = registriy
+        if registry is not None:
+            self.registry = registry
         if cicd is not None:
             self.cicd = cicd
 
@@ -79,7 +86,7 @@ class ImageTypeRiskInfo:
     def registriy(self):
         r"""Gets the registriy of this ImageTypeRiskInfo.
 
-        仓库镜像
+        仓库镜像（已废弃，请使用registry）
 
         :return: The registriy of this ImageTypeRiskInfo.
         :rtype: int
@@ -90,12 +97,34 @@ class ImageTypeRiskInfo:
     def registriy(self, registriy):
         r"""Sets the registriy of this ImageTypeRiskInfo.
 
-        仓库镜像
+        仓库镜像（已废弃，请使用registry）
 
         :param registriy: The registriy of this ImageTypeRiskInfo.
         :type registriy: int
         """
         self._registriy = registriy
+
+    @property
+    def registry(self):
+        r"""Gets the registry of this ImageTypeRiskInfo.
+
+        仓库镜像
+
+        :return: The registry of this ImageTypeRiskInfo.
+        :rtype: int
+        """
+        return self._registry
+
+    @registry.setter
+    def registry(self, registry):
+        r"""Sets the registry of this ImageTypeRiskInfo.
+
+        仓库镜像
+
+        :param registry: The registry of this ImageTypeRiskInfo.
+        :type registry: int
+        """
+        self._registry = registry
 
     @property
     def cicd(self):

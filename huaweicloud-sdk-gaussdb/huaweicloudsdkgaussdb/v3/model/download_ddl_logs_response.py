@@ -16,51 +16,51 @@ class DownloadDdlLogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'list': 'list[DownLoadFileInfoItem]'
+        'download_files': 'list[DownLoadFileInfoItem]'
     }
 
     attribute_map = {
-        'list': 'list'
+        'download_files': 'download_files'
     }
 
-    def __init__(self, list=None):
+    def __init__(self, download_files=None):
         r"""DownloadDdlLogsResponse
 
         The model defined in huaweicloud sdk
 
-        :param list: **参数解释**：  每个日志文件的下载链接详情。  **取值范围**：  不涉及。 
-        :type list: list[:class:`huaweicloudsdkgaussdb.v3.DownLoadFileInfoItem`]
+        :param download_files: **参数解释**：  每个日志文件的下载链接详情。  **取值范围**：  不涉及。 
+        :type download_files: list[:class:`huaweicloudsdkgaussdb.v3.DownLoadFileInfoItem`]
         """
         
         super().__init__()
 
-        self._list = None
+        self._download_files = None
         self.discriminator = None
 
-        if list is not None:
-            self.list = list
+        if download_files is not None:
+            self.download_files = download_files
 
     @property
-    def list(self):
-        r"""Gets the list of this DownloadDdlLogsResponse.
+    def download_files(self):
+        r"""Gets the download_files of this DownloadDdlLogsResponse.
 
         **参数解释**：  每个日志文件的下载链接详情。  **取值范围**：  不涉及。 
 
-        :return: The list of this DownloadDdlLogsResponse.
+        :return: The download_files of this DownloadDdlLogsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DownLoadFileInfoItem`]
         """
-        return self._list
+        return self._download_files
 
-    @list.setter
-    def list(self, list):
-        r"""Sets the list of this DownloadDdlLogsResponse.
+    @download_files.setter
+    def download_files(self, download_files):
+        r"""Sets the download_files of this DownloadDdlLogsResponse.
 
         **参数解释**：  每个日志文件的下载链接详情。  **取值范围**：  不涉及。 
 
-        :param list: The list of this DownloadDdlLogsResponse.
-        :type list: list[:class:`huaweicloudsdkgaussdb.v3.DownLoadFileInfoItem`]
+        :param download_files: The download_files of this DownloadDdlLogsResponse.
+        :type download_files: list[:class:`huaweicloudsdkgaussdb.v3.DownLoadFileInfoItem`]
         """
-        self._list = list
+        self._download_files = download_files
 
     def to_dict(self):
         import warnings

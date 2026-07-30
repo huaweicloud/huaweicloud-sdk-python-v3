@@ -61,7 +61,7 @@ class ExportTaskVo:
         :type group_by: str
         :param interval: 查询时间间隔，单位：秒
         :type interval: int
-        :param service_area: **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球 **默认取值：** mainland_china: 中国大陆
+        :param service_area: **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
         :type service_area: str
         :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
         :type stat_type: str
@@ -252,7 +252,7 @@ class ExportTaskVo:
     def service_area(self):
         r"""Gets the service_area of this ExportTaskVo.
 
-        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球 **默认取值：** mainland_china: 中国大陆
+        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
 
         :return: The service_area of this ExportTaskVo.
         :rtype: str
@@ -263,7 +263,7 @@ class ExportTaskVo:
     def service_area(self, service_area):
         r"""Sets the service_area of this ExportTaskVo.
 
-        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球 **默认取值：** mainland_china: 中国大陆
+        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
 
         :param service_area: The service_area of this ExportTaskVo.
         :type service_area: str

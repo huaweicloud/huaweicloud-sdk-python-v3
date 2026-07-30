@@ -18,7 +18,7 @@ class HtapLTSConfigResponseLtsConfigs:
         'log_type': 'str',
         'lts_group_id': 'str',
         'lts_stream_id': 'str',
-        'enabled': 'str'
+        'enabled': 'bool'
     }
 
     attribute_map = {
@@ -40,7 +40,7 @@ class HtapLTSConfigResponseLtsConfigs:
         :param lts_stream_id: **参数解释**： LTS日志流ID。  **取值范围**：  不涉及。
         :type lts_stream_id: str
         :param enabled: **参数解释**： LTS配置开关状态。  **取值范围**：  不涉及。
-        :type enabled: str
+        :type enabled: bool
         """
         
         
@@ -129,7 +129,7 @@ class HtapLTSConfigResponseLtsConfigs:
         **参数解释**： LTS配置开关状态。  **取值范围**：  不涉及。
 
         :return: The enabled of this HtapLTSConfigResponseLtsConfigs.
-        :rtype: str
+        :rtype: bool
         """
         return self._enabled
 
@@ -140,7 +140,7 @@ class HtapLTSConfigResponseLtsConfigs:
         **参数解释**： LTS配置开关状态。  **取值范围**：  不涉及。
 
         :param enabled: The enabled of this HtapLTSConfigResponseLtsConfigs.
-        :type enabled: str
+        :type enabled: bool
         """
         self._enabled = enabled
 

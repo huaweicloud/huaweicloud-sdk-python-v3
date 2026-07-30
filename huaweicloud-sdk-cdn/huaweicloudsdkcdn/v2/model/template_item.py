@@ -43,13 +43,13 @@ class TemplateItem:
 
         :param account_id: **参数解释：** 账户ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type account_id: str
-        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        :param tml_name: **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
         :type tml_name: str
         :param remark: **参数解释：** 域名模板描述 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type remark: str
         :param tml_id: **参数解释：** 域名模板ID **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type tml_id: str
-        :param type: **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        :param type: **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
         :type type: int
         :param create_time: **参数解释：** 创建时间 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type create_time: int
@@ -114,7 +114,7 @@ class TemplateItem:
     def tml_name(self):
         r"""Gets the tml_name of this TemplateItem.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :return: The tml_name of this TemplateItem.
         :rtype: str
@@ -125,7 +125,7 @@ class TemplateItem:
     def tml_name(self, tml_name):
         r"""Sets the tml_name of this TemplateItem.
 
-        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-） **默认取值：** 不涉及
+        **参数解释：** 域名模板名称 **约束限制：** 不涉及 **取值范围：** - 1-100个字符 - 仅支持字母、数字、中文、下划线（_）、中横线（-）  **默认取值：** 不涉及
 
         :param tml_name: The tml_name of this TemplateItem.
         :type tml_name: str
@@ -180,7 +180,7 @@ class TemplateItem:
     def type(self):
         r"""Gets the type of this TemplateItem.
 
-        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
 
         :return: The type of this TemplateItem.
         :rtype: int
@@ -191,7 +191,7 @@ class TemplateItem:
     def type(self, type):
         r"""Sets the type of this TemplateItem.
 
-        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板 **默认取值：** 不涉及
+        **参数解释：** 域名模板类型 **约束限制：** 不涉及 **取值范围：** - 1: 系统预置模板 - 2: 租户自定义模板  **默认取值：** 不涉及
 
         :param type: The type of this TemplateItem.
         :type type: int

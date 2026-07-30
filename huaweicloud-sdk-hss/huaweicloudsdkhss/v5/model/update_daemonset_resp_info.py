@@ -16,21 +16,25 @@ class UpdateDaemonsetRespInfo:
 
     openapi_types = {
         'failed_reson': 'str',
+        'failed_reason': 'str',
         'cluster_id': 'str'
     }
 
     attribute_map = {
         'failed_reson': 'failed_reson',
+        'failed_reason': 'failed_reason',
         'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, failed_reson=None, cluster_id=None):
+    def __init__(self, failed_reson=None, failed_reason=None, cluster_id=None):
         r"""UpdateDaemonsetRespInfo
 
         The model defined in huaweicloud sdk
 
-        :param failed_reson: 失败原因
+        :param failed_reson: 失败原因（已废弃，请使用failed_reason）
         :type failed_reson: str
+        :param failed_reason: 失败原因
+        :type failed_reason: str
         :param cluster_id: 集群Id
         :type cluster_id: str
         """
@@ -38,11 +42,14 @@ class UpdateDaemonsetRespInfo:
         
 
         self._failed_reson = None
+        self._failed_reason = None
         self._cluster_id = None
         self.discriminator = None
 
         if failed_reson is not None:
             self.failed_reson = failed_reson
+        if failed_reason is not None:
+            self.failed_reason = failed_reason
         if cluster_id is not None:
             self.cluster_id = cluster_id
 
@@ -50,7 +57,7 @@ class UpdateDaemonsetRespInfo:
     def failed_reson(self):
         r"""Gets the failed_reson of this UpdateDaemonsetRespInfo.
 
-        失败原因
+        失败原因（已废弃，请使用failed_reason）
 
         :return: The failed_reson of this UpdateDaemonsetRespInfo.
         :rtype: str
@@ -61,12 +68,34 @@ class UpdateDaemonsetRespInfo:
     def failed_reson(self, failed_reson):
         r"""Sets the failed_reson of this UpdateDaemonsetRespInfo.
 
-        失败原因
+        失败原因（已废弃，请使用failed_reason）
 
         :param failed_reson: The failed_reson of this UpdateDaemonsetRespInfo.
         :type failed_reson: str
         """
         self._failed_reson = failed_reson
+
+    @property
+    def failed_reason(self):
+        r"""Gets the failed_reason of this UpdateDaemonsetRespInfo.
+
+        失败原因
+
+        :return: The failed_reason of this UpdateDaemonsetRespInfo.
+        :rtype: str
+        """
+        return self._failed_reason
+
+    @failed_reason.setter
+    def failed_reason(self, failed_reason):
+        r"""Sets the failed_reason of this UpdateDaemonsetRespInfo.
+
+        失败原因
+
+        :param failed_reason: The failed_reason of this UpdateDaemonsetRespInfo.
+        :type failed_reason: str
+        """
+        self._failed_reason = failed_reason
 
     @property
     def cluster_id(self):

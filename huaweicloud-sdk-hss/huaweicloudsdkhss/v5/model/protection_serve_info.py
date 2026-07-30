@@ -87,7 +87,7 @@ class ProtectionServeInfo:
         :type agent_status: str
         :param auto_attach: 动态加载是否开启
         :type auto_attach: bool
-        :param protect_status: 防护状态 |- agent防护状态，包含如下2种。 - 0 ：关闭。 - 1 ：开启。
+        :param protect_status: 防护状态 |- agent防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
         :type protect_status: str
         :param group_id: 服务器组ID
         :type group_id: str
@@ -448,7 +448,7 @@ class ProtectionServeInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ProtectionServeInfo.
 
-        防护状态 |- agent防护状态，包含如下2种。 - 0 ：关闭。 - 1 ：开启。
+        防护状态 |- agent防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
 
         :return: The protect_status of this ProtectionServeInfo.
         :rtype: str
@@ -459,7 +459,7 @@ class ProtectionServeInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ProtectionServeInfo.
 
-        防护状态 |- agent防护状态，包含如下2种。 - 0 ：关闭。 - 1 ：开启。
+        防护状态 |- agent防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
 
         :param protect_status: The protect_status of this ProtectionServeInfo.
         :type protect_status: str

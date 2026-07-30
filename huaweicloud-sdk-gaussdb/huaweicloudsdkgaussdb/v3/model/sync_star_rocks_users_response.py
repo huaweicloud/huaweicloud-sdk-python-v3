@@ -16,7 +16,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'success': 'str'
+        'success': 'bool'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param success: 开启行列分流是否成功。
-        :type success: str
+        :type success: bool
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
         开启行列分流是否成功。
 
         :return: The success of this SyncStarRocksUsersResponse.
-        :rtype: str
+        :rtype: bool
         """
         return self._success
 
@@ -58,7 +58,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
         开启行列分流是否成功。
 
         :param success: The success of this SyncStarRocksUsersResponse.
-        :type success: str
+        :type success: bool
         """
         self._success = success
 

@@ -31,11 +31,11 @@ class BrowserCacheRulesEngine:
 
         The model defined in huaweicloud sdk
 
-        :param cache_type: **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源 **默认取值：** 不涉及
+        :param cache_type: **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源  **默认取值：** 不涉及
         :type cache_type: str
         :param ttl: **参数解释：** 缓存过期时间 **约束限制：** - 最大支持365天 - 当缓存生效类型为ttl时必填 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type ttl: int
-        :param ttl_unit: **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天 **默认取值：** 不涉及
+        :param ttl_unit: **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天  **默认取值：** 不涉及
         :type ttl_unit: str
         """
         
@@ -56,7 +56,7 @@ class BrowserCacheRulesEngine:
     def cache_type(self):
         r"""Gets the cache_type of this BrowserCacheRulesEngine.
 
-        **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源 **默认取值：** 不涉及
+        **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源  **默认取值：** 不涉及
 
         :return: The cache_type of this BrowserCacheRulesEngine.
         :rtype: str
@@ -67,7 +67,7 @@ class BrowserCacheRulesEngine:
     def cache_type(self, cache_type):
         r"""Sets the cache_type of this BrowserCacheRulesEngine.
 
-        **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源 **默认取值：** 不涉及
+        **参数解释：** 缓存生效类型 **约束限制：** 不涉及 **取值范围：** - follow_origin: 遵循源站的缓存策略，即Cache-Control头部的设置 - ttl: 浏览器缓存遵循当前规则设置的过期时间 - never: 浏览器不缓存资源  **默认取值：** 不涉及
 
         :param cache_type: The cache_type of this BrowserCacheRulesEngine.
         :type cache_type: str
@@ -100,7 +100,7 @@ class BrowserCacheRulesEngine:
     def ttl_unit(self):
         r"""Gets the ttl_unit of this BrowserCacheRulesEngine.
 
-        **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天 **默认取值：** 不涉及
+        **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天  **默认取值：** 不涉及
 
         :return: The ttl_unit of this BrowserCacheRulesEngine.
         :rtype: str
@@ -111,7 +111,7 @@ class BrowserCacheRulesEngine:
     def ttl_unit(self, ttl_unit):
         r"""Sets the ttl_unit of this BrowserCacheRulesEngine.
 
-        **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天 **默认取值：** 不涉及
+        **参数解释：** 缓存过期时间单位 **约束限制：** 当缓存生效类型为ttl时必填 **取值范围：** - s：秒 - m：分种 - h：小时 - d：天  **默认取值：** 不涉及
 
         :param ttl_unit: The ttl_unit of this BrowserCacheRulesEngine.
         :type ttl_unit: str

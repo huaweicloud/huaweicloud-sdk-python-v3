@@ -51,8 +51,7 @@ class ModifyAutoExpandPolicyReq:
         self._step_percent = None
         self.discriminator = None
 
-        if switch_option is not None:
-            self.switch_option = switch_option
+        self.switch_option = switch_option
         if limit_size is not None:
             self.limit_size = limit_size
         if trigger_available_percent is not None:

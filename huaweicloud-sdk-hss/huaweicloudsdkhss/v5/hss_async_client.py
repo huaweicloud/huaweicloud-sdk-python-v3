@@ -15328,6 +15328,603 @@ class HssAsyncClient(Client):
 
         return http_info
 
+    def bind_agent_policy_async(self, request):
+        r"""Agent绑定策略ID，当前仅西南-贵阳一支持
+
+        Agent绑定策略ID。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BindAgentPolicy
+        :type request: :class:`huaweicloudsdkhss.v5.BindAgentPolicyRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.BindAgentPolicyResponse`
+        """
+        http_info = self._bind_agent_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_agent_policy_async_invoker(self, request):
+        http_info = self._bind_agent_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _bind_agent_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ai/agent/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindAgentPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def copy_ai_policy_group_async(self, request):
+        r"""复制策略组，当前仅西南-贵阳一支持
+
+        复制策略组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CopyAiPolicyGroup
+        :type request: :class:`huaweicloudsdkhss.v5.CopyAiPolicyGroupRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.CopyAiPolicyGroupResponse`
+        """
+        http_info = self._copy_ai_policy_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def copy_ai_policy_group_async_invoker(self, request):
+        http_info = self._copy_ai_policy_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _copy_ai_policy_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ai/policy/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyAiPolicyGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ai_policy_groups_async(self, request):
+        r"""删除策略组，当前仅西南-贵阳一支持
+
+        删除策略组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAiPolicyGroups
+        :type request: :class:`huaweicloudsdkhss.v5.DeleteAiPolicyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.DeleteAiPolicyGroupsResponse`
+        """
+        http_info = self._delete_ai_policy_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ai_policy_groups_async_invoker(self, request):
+        http_info = self._delete_ai_policy_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ai_policy_groups_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/ai/policy/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAiPolicyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ai_policies_async(self, request):
+        r"""查询策略列表，当前仅西南-贵阳一支持
+
+        查询策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAiPolicies
+        :type request: :class:`huaweicloudsdkhss.v5.ListAiPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListAiPoliciesResponse`
+        """
+        http_info = self._list_ai_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ai_policies_async_invoker(self, request):
+        http_info = self._list_ai_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ai_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/ai/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'policy_group_id' in local_var_params:
+            query_params.append(('policy_group_id', local_var_params['policy_group_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ai_policy_detail_async(self, request):
+        r"""查询策略详情，当前仅西南-贵阳一支持
+
+        查询策略详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAiPolicyDetail
+        :type request: :class:`huaweicloudsdkhss.v5.ListAiPolicyDetailRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListAiPolicyDetailResponse`
+        """
+        http_info = self._list_ai_policy_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ai_policy_detail_async_invoker(self, request):
+        http_info = self._list_ai_policy_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ai_policy_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/ai/policy/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiPolicyDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'policy_id' in local_var_params:
+            query_params.append(('policy_id', local_var_params['policy_id']))
+        if 'policy_name' in local_var_params:
+            query_params.append(('policy_name', local_var_params['policy_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ai_policy_groups_async(self, request):
+        r"""查询策略组列表，当前仅西南-贵阳一支持
+
+        查询策略组列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAiPolicyGroups
+        :type request: :class:`huaweicloudsdkhss.v5.ListAiPolicyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListAiPolicyGroupsResponse`
+        """
+        http_info = self._list_ai_policy_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ai_policy_groups_async_invoker(self, request):
+        http_info = self._list_ai_policy_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ai_policy_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/ai/policy/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiPolicyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+        if 'protection_object' in local_var_params:
+            query_params.append(('protection_object', local_var_params['protection_object']))
+        if 'object_type' in local_var_params:
+            query_params.append(('object_type', local_var_params['object_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resume_pause_ai_policies_async(self, request):
+        r"""启用、停用策略，当前仅西南-贵阳一支持
+
+        启用、停用策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResumePauseAiPolicies
+        :type request: :class:`huaweicloudsdkhss.v5.ResumePauseAiPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ResumePauseAiPoliciesResponse`
+        """
+        http_info = self._resume_pause_ai_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_pause_ai_policies_async_invoker(self, request):
+        http_info = self._resume_pause_ai_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resume_pause_ai_policies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ai/policy/operate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumePauseAiPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resume_pause_ai_policy_groups_async(self, request):
+        r"""启用、停用策略组，当前仅西南-贵阳一支持
+
+        启用、停用策略组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResumePauseAiPolicyGroups
+        :type request: :class:`huaweicloudsdkhss.v5.ResumePauseAiPolicyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ResumePauseAiPolicyGroupsResponse`
+        """
+        http_info = self._resume_pause_ai_policy_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_pause_ai_policy_groups_async_invoker(self, request):
+        http_info = self._resume_pause_ai_policy_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resume_pause_ai_policy_groups_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ai/policy/groups/operate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumePauseAiPolicyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ai_policy_detail_async(self, request):
+        r"""修改策略详情，当前仅西南-贵阳一支持
+
+        修改策略详情，该接口非常复杂，不建议通过API调用，推荐使用华为云console页面修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAiPolicyDetail
+        :type request: :class:`huaweicloudsdkhss.v5.UpdateAiPolicyDetailRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.UpdateAiPolicyDetailResponse`
+        """
+        http_info = self._update_ai_policy_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ai_policy_detail_async_invoker(self, request):
+        http_info = self._update_ai_policy_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ai_policy_detail_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/ai/policy/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAiPolicyDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_antivirus_pay_per_scan_status_async(self, request):
         r"""修改“病毒查杀按次计费”开关状态
 
@@ -22545,6 +23142,144 @@ class HssAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alarm_white_list_host_detail_async(self, request):
+        r"""查询告警白名单生详情
+
+        查询告警白名单生详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmWhiteListHostDetail
+        :type request: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListHostDetailResponse`
+        """
+        http_info = self._list_alarm_white_list_host_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_white_list_host_detail_async_invoker(self, request):
+        http_info = self._list_alarm_white_list_host_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_white_list_host_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/white-list/rule/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmWhiteListHostDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'rule_id' in local_var_params:
+            query_params.append(('rule_id', local_var_params['rule_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_alarm_white_list_host_async(self, request):
+        r"""编辑告警白名单生效主机
+
+        编辑告警白名单主机相关信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAlarmWhiteListHost
+        :type request: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.UpdateAlarmWhiteListHostResponse`
+        """
+        http_info = self._update_alarm_white_list_host_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_alarm_white_list_host_async_invoker(self, request):
+        http_info = self._update_alarm_white_list_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_white_list_host_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/event/white-list/alarm",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmWhiteListHostResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
 
         form_params = {}
 
@@ -33548,10 +34283,10 @@ class HssAsyncClient(Client):
             query_params.append(('handle_method', local_var_params['handle_method']))
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
-        if 'event_type' in local_var_params:
-            query_params.append(('event_type', local_var_params['event_type']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'event_type' in local_var_params:
+            query_params.append(('event_type', local_var_params['event_type']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
 

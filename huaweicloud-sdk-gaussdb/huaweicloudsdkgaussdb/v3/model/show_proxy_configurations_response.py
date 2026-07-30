@@ -16,7 +16,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'configurations': 'list[ProxyConfiguration]'
     }
 
@@ -31,7 +31,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 数据总数
-        :type total_count: str
+        :type total_count: int
         :param configurations: 内核可配置的参数列表
         :type configurations: list[:class:`huaweicloudsdkgaussdb.v3.ProxyConfiguration`]
         """
@@ -54,7 +54,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
         数据总数
 
         :return: The total_count of this ShowProxyConfigurationsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -65,7 +65,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
         数据总数
 
         :param total_count: The total_count of this ShowProxyConfigurationsResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

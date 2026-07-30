@@ -16,7 +16,7 @@ class BatchUpgradeDatabasesRequestBody:
 
     openapi_types = {
         'databases_instance_infos': 'list[UpgradeDatabasesSingleInstance]',
-        'delay': 'str'
+        'delay': 'bool'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class BatchUpgradeDatabasesRequestBody:
         :param databases_instance_infos: 要版本升级的批量实例。
         :type databases_instance_infos: list[:class:`huaweicloudsdkgaussdb.v3.UpgradeDatabasesSingleInstance`]
         :param delay: 是否延迟升级。
-        :type delay: str
+        :type delay: bool
         """
         
         
@@ -73,7 +73,7 @@ class BatchUpgradeDatabasesRequestBody:
         是否延迟升级。
 
         :return: The delay of this BatchUpgradeDatabasesRequestBody.
-        :rtype: str
+        :rtype: bool
         """
         return self._delay
 
@@ -84,7 +84,7 @@ class BatchUpgradeDatabasesRequestBody:
         是否延迟升级。
 
         :param delay: The delay of this BatchUpgradeDatabasesRequestBody.
-        :type delay: str
+        :type delay: bool
         """
         self._delay = delay
 

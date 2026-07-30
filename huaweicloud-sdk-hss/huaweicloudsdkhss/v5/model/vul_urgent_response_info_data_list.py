@@ -79,7 +79,7 @@ class VulUrgentResponseInfoDataList:
         :type private_ip: str
         :param host_name: **参数解释**: 主机名称 **取值范围**: 字符长度1-128位 
         :type host_name: str
-        :param asset_value: **参数解释**: 修复优先级 **取值范围**: - Critical：紧急。 - High：高。 - Medium：中。 - Low：低。 
+        :param asset_value: **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
         :type asset_value: str
         :param status: **参数解释**： 漏洞状态 **取值范围**： 字符长度0-32位 
         :type status: str
@@ -390,7 +390,7 @@ class VulUrgentResponseInfoDataList:
     def asset_value(self):
         r"""Gets the asset_value of this VulUrgentResponseInfoDataList.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急。 - High：高。 - Medium：中。 - Low：低。 
+        **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
 
         :return: The asset_value of this VulUrgentResponseInfoDataList.
         :rtype: str
@@ -401,7 +401,7 @@ class VulUrgentResponseInfoDataList:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this VulUrgentResponseInfoDataList.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical：紧急。 - High：高。 - Medium：中。 - Low：低。 
+        **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
 
         :param asset_value: The asset_value of this VulUrgentResponseInfoDataList.
         :type asset_value: str

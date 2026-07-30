@@ -15,29 +15,36 @@ class EventUpdate:
     sensitive_list = []
 
     openapi_types = {
-        'not_before': 'str'
+        'not_before': 'str',
+        'redeploy_config': 'RedeployConfig'
     }
 
     attribute_map = {
-        'not_before': 'notBefore'
+        'not_before': 'notBefore',
+        'redeploy_config': 'redeployConfig'
     }
 
-    def __init__(self, not_before=None):
+    def __init__(self, not_before=None, redeploy_config=None):
         r"""EventUpdate
 
         The model defined in huaweicloud sdk
 
         :param not_before: **参数解释**：计划执行开始时间，格式为yyyy-MM-ddTHH:mm:ssZ。 **约束限制**：不涉及。 **取值范围**：大于当前时间。 **默认取值**：不填表示立即执行。
         :type not_before: str
+        :param redeploy_config: 
+        :type redeploy_config: :class:`huaweicloudsdkmodelarts.v1.RedeployConfig`
         """
         
         
 
         self._not_before = None
+        self._redeploy_config = None
         self.discriminator = None
 
         if not_before is not None:
             self.not_before = not_before
+        if redeploy_config is not None:
+            self.redeploy_config = redeploy_config
 
     @property
     def not_before(self):
@@ -60,6 +67,24 @@ class EventUpdate:
         :type not_before: str
         """
         self._not_before = not_before
+
+    @property
+    def redeploy_config(self):
+        r"""Gets the redeploy_config of this EventUpdate.
+
+        :return: The redeploy_config of this EventUpdate.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.RedeployConfig`
+        """
+        return self._redeploy_config
+
+    @redeploy_config.setter
+    def redeploy_config(self, redeploy_config):
+        r"""Sets the redeploy_config of this EventUpdate.
+
+        :param redeploy_config: The redeploy_config of this EventUpdate.
+        :type redeploy_config: :class:`huaweicloudsdkmodelarts.v1.RedeployConfig`
+        """
+        self._redeploy_config = redeploy_config
 
     def to_dict(self):
         result = {}

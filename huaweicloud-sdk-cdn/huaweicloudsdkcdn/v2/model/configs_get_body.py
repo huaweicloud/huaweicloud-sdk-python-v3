@@ -52,7 +52,8 @@ class ConfigsGetBody:
         'browser_cache_rules': 'list[BrowserCacheRules]',
         'access_area_filter': 'list[AccessAreaFilter]',
         'client_cert': 'ClientCert',
-        'https_tls_version': 'HttpsTlsVersion'
+        'https_tls_version': 'HttpsTlsVersion',
+        'flow_limit_strategy': 'list[FlowLimitStrategy]'
     }
 
     attribute_map = {
@@ -93,10 +94,11 @@ class ConfigsGetBody:
         'browser_cache_rules': 'browser_cache_rules',
         'access_area_filter': 'access_area_filter',
         'client_cert': 'client_cert',
-        'https_tls_version': 'https_tls_version'
+        'https_tls_version': 'https_tls_version',
+        'flow_limit_strategy': 'flow_limit_strategy'
     }
 
-    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None, https_tls_version=None, flow_limit_strategy=None):
         r"""ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -177,6 +179,8 @@ class ConfigsGetBody:
         :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`
         :param https_tls_version: 
         :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
+        :param flow_limit_strategy: **参数解释：** 设置用量封顶阈值，当实际用量大于阈值时停用域名，有效预防流量盗刷或恶意攻击带来的高额账单。  &gt; 由于监控数据存在时延，域名将在用量达到阈值后的10分钟左右被停用  **约束限制：** 不涉及
+        :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
         """
         
         
@@ -219,6 +223,7 @@ class ConfigsGetBody:
         self._access_area_filter = None
         self._client_cert = None
         self._https_tls_version = None
+        self._flow_limit_strategy = None
         self.discriminator = None
 
         if business_type is not None:
@@ -297,6 +302,8 @@ class ConfigsGetBody:
             self.client_cert = client_cert
         if https_tls_version is not None:
             self.https_tls_version = https_tls_version
+        if flow_limit_strategy is not None:
+            self.flow_limit_strategy = flow_limit_strategy
 
     @property
     def business_type(self):
@@ -1061,6 +1068,28 @@ class ConfigsGetBody:
         :type https_tls_version: :class:`huaweicloudsdkcdn.v2.HttpsTlsVersion`
         """
         self._https_tls_version = https_tls_version
+
+    @property
+    def flow_limit_strategy(self):
+        r"""Gets the flow_limit_strategy of this ConfigsGetBody.
+
+        **参数解释：** 设置用量封顶阈值，当实际用量大于阈值时停用域名，有效预防流量盗刷或恶意攻击带来的高额账单。  > 由于监控数据存在时延，域名将在用量达到阈值后的10分钟左右被停用  **约束限制：** 不涉及
+
+        :return: The flow_limit_strategy of this ConfigsGetBody.
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
+        """
+        return self._flow_limit_strategy
+
+    @flow_limit_strategy.setter
+    def flow_limit_strategy(self, flow_limit_strategy):
+        r"""Sets the flow_limit_strategy of this ConfigsGetBody.
+
+        **参数解释：** 设置用量封顶阈值，当实际用量大于阈值时停用域名，有效预防流量盗刷或恶意攻击带来的高额账单。  > 由于监控数据存在时延，域名将在用量达到阈值后的10分钟左右被停用  **约束限制：** 不涉及
+
+        :param flow_limit_strategy: The flow_limit_strategy of this ConfigsGetBody.
+        :type flow_limit_strategy: list[:class:`huaweicloudsdkcdn.v2.FlowLimitStrategy`]
+        """
+        self._flow_limit_strategy = flow_limit_strategy
 
     def to_dict(self):
         result = {}

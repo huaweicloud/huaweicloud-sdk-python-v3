@@ -41,7 +41,7 @@ class ExportTask:
         :type task_id: str
         :param task_name: 导出任务名称
         :type task_name: str
-        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
         :type status: str
         :param download_link: 下载链接
         :type download_link: str
@@ -122,7 +122,7 @@ class ExportTask:
     def status(self):
         r"""Gets the status of this ExportTask.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :return: The status of this ExportTask.
         :rtype: str
@@ -133,7 +133,7 @@ class ExportTask:
     def status(self, status):
         r"""Sets the status of this ExportTask.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
 
         :param status: The status of this ExportTask.
         :type status: str

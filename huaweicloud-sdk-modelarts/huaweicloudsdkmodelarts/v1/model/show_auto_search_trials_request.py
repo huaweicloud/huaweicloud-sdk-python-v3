@@ -35,7 +35,7 @@ class ShowAutoSearchTrialsRequest:
         :type training_job_id: str
         :param limit: 返回的数据条目数。
         :type limit: int
-        :param offset: 数据条目偏移量。
+        :param offset: **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
         :type offset: int
         """
         
@@ -100,7 +100,7 @@ class ShowAutoSearchTrialsRequest:
     def offset(self):
         r"""Gets the offset of this ShowAutoSearchTrialsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :return: The offset of this ShowAutoSearchTrialsRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowAutoSearchTrialsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowAutoSearchTrialsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :param offset: The offset of this ShowAutoSearchTrialsRequest.
         :type offset: int

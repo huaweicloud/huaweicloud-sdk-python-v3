@@ -17,16 +17,18 @@ class DatabaseInfo:
     openapi_types = {
         'name': 'str',
         'tables': 'list[TableInfo]',
-        'functions': 'list[FunctionInfo]'
+        'functions': 'list[FunctionInfo]',
+        'datasets': 'list[DatasetInfo]'
     }
 
     attribute_map = {
         'name': 'name',
         'tables': 'tables',
-        'functions': 'functions'
+        'functions': 'functions',
+        'datasets': 'datasets'
     }
 
-    def __init__(self, name=None, tables=None, functions=None):
+    def __init__(self, name=None, tables=None, functions=None, datasets=None):
         r"""DatabaseInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class DatabaseInfo:
         :type tables: list[:class:`huaweicloudsdklakeformation.v1.TableInfo`]
         :param functions: 子方法信息
         :type functions: list[:class:`huaweicloudsdklakeformation.v1.FunctionInfo`]
+        :param datasets: **参数解释:** 子数据集信息 **约束限制:** 数组元素个数为0~10 **取值范围:** 数组元素个数为0~10 **默认取值:** 不涉及 
+        :type datasets: list[:class:`huaweicloudsdklakeformation.v1.DatasetInfo`]
         """
         
         
@@ -44,6 +48,7 @@ class DatabaseInfo:
         self._name = None
         self._tables = None
         self._functions = None
+        self._datasets = None
         self.discriminator = None
 
         self.name = name
@@ -51,6 +56,8 @@ class DatabaseInfo:
             self.tables = tables
         if functions is not None:
             self.functions = functions
+        if datasets is not None:
+            self.datasets = datasets
 
     @property
     def name(self):
@@ -117,6 +124,28 @@ class DatabaseInfo:
         :type functions: list[:class:`huaweicloudsdklakeformation.v1.FunctionInfo`]
         """
         self._functions = functions
+
+    @property
+    def datasets(self):
+        r"""Gets the datasets of this DatabaseInfo.
+
+        **参数解释:** 子数据集信息 **约束限制:** 数组元素个数为0~10 **取值范围:** 数组元素个数为0~10 **默认取值:** 不涉及 
+
+        :return: The datasets of this DatabaseInfo.
+        :rtype: list[:class:`huaweicloudsdklakeformation.v1.DatasetInfo`]
+        """
+        return self._datasets
+
+    @datasets.setter
+    def datasets(self, datasets):
+        r"""Sets the datasets of this DatabaseInfo.
+
+        **参数解释:** 子数据集信息 **约束限制:** 数组元素个数为0~10 **取值范围:** 数组元素个数为0~10 **默认取值:** 不涉及 
+
+        :param datasets: The datasets of this DatabaseInfo.
+        :type datasets: list[:class:`huaweicloudsdklakeformation.v1.DatasetInfo`]
+        """
+        self._datasets = datasets
 
     def to_dict(self):
         result = {}

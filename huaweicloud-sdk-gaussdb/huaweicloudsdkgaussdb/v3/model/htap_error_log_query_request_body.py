@@ -19,7 +19,7 @@ class HtapErrorLogQueryRequestBody:
         'start_time': 'str',
         'end_time': 'str',
         'level': 'str',
-        'limit': 'int',
+        'limit': 'str',
         'line_num': 'str'
     }
 
@@ -46,7 +46,7 @@ class HtapErrorLogQueryRequestBody:
         :param level: **参数解释**： 日志级别。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **取值范围**： 不涉及。
         :type level: str
         :param limit: **参数解释**： 查询记录数。  **约束限制**：  不涉及。  **取值范围**： 0-100。  **默认取值**： 不涉及。
-        :type limit: int
+        :type limit: str
         :param line_num: **参数解释**： 日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**： 不涉及。
         :type line_num: str
         """
@@ -164,7 +164,7 @@ class HtapErrorLogQueryRequestBody:
         **参数解释**： 查询记录数。  **约束限制**：  不涉及。  **取值范围**： 0-100。  **默认取值**： 不涉及。
 
         :return: The limit of this HtapErrorLogQueryRequestBody.
-        :rtype: int
+        :rtype: str
         """
         return self._limit
 
@@ -175,7 +175,7 @@ class HtapErrorLogQueryRequestBody:
         **参数解释**： 查询记录数。  **约束限制**：  不涉及。  **取值范围**： 0-100。  **默认取值**： 不涉及。
 
         :param limit: The limit of this HtapErrorLogQueryRequestBody.
-        :type limit: int
+        :type limit: str
         """
         self._limit = limit
 

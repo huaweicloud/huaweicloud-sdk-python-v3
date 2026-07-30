@@ -33,6 +33,136 @@ class TmsAsyncClient(Client):
 
         return client_builder
 
+    def change_associated_resource_open_status_async(self, request):
+        r"""开通或关闭关联资源标签继承能力
+
+        开通或关闭关联资源标签继承能力
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeAssociatedResourceOpenStatus
+        :type request: :class:`huaweicloudsdktms.v1.ChangeAssociatedResourceOpenStatusRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ChangeAssociatedResourceOpenStatusResponse`
+        """
+        http_info = self._change_associated_resource_open_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_associated_resource_open_status_async_invoker(self, request):
+        http_info = self._change_associated_resource_open_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_associated_resource_open_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/tms/associated-resources/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAssociatedResourceOpenStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_associated_resource_rules_async(self, request):
+        r"""批量启用规则
+
+        按照规则和region来批量启用规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAssociatedResourceRules
+        :type request: :class:`huaweicloudsdktms.v1.CreateAssociatedResourceRulesRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.CreateAssociatedResourceRulesResponse`
+        """
+        http_info = self._create_associated_resource_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_associated_resource_rules_async_invoker(self, request):
+        http_info = self._create_associated_resource_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_associated_resource_rules_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/tms/associated-resources/rules/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssociatedResourceRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_predefine_tags_async(self, request):
         r"""创建预定义标签
 
@@ -149,6 +279,74 @@ class TmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_associated_resource_rule_async(self, request):
+        r"""关闭规则
+
+        通过指定setting_name和region_id来关闭指定的规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAssociatedResourceRule
+        :type request: :class:`huaweicloudsdktms.v1.DeleteAssociatedResourceRuleRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.DeleteAssociatedResourceRuleResponse`
+        """
+        http_info = self._delete_associated_resource_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_associated_resource_rule_async_invoker(self, request):
+        http_info = self._delete_associated_resource_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_associated_resource_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/tms/associated-resources/rules/{setting_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssociatedResourceRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'setting_name' in local_var_params:
+            path_params['setting_name'] = local_var_params['setting_name']
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+            collection_formats['region_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -329,6 +527,146 @@ class TmsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_associated_resource_rules_async(self, request):
+        r"""查询当前规则列表
+
+        查询当前规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAssociatedResourceRules
+        :type request: :class:`huaweicloudsdktms.v1.ListAssociatedResourceRulesRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ListAssociatedResourceRulesResponse`
+        """
+        http_info = self._list_associated_resource_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_associated_resource_rules_async_invoker(self, request):
+        http_info = self._list_associated_resource_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_associated_resource_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tms/associated-resources/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociatedResourceRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'setting_name' in local_var_params:
+            query_params.append(('setting_name', local_var_params['setting_name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_associated_resource_settings_async(self, request):
+        r"""查询当前规则的配置列表
+
+        查询当前规则的配置列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAssociatedResourceSettings
+        :type request: :class:`huaweicloudsdktms.v1.ListAssociatedResourceSettingsRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ListAssociatedResourceSettingsResponse`
+        """
+        http_info = self._list_associated_resource_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_associated_resource_settings_async_invoker(self, request):
+        http_info = self._list_associated_resource_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_associated_resource_settings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tms/associated-resources/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociatedResourceSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
 
         header_params = {}
 
@@ -841,6 +1179,69 @@ class TmsAsyncClient(Client):
 
         return http_info
 
+    def show_associated_resource_open_status_async(self, request):
+        r"""查询当前用户的关联资源标签继承能力的开通状态
+
+        查询当前用户的关联资源标签继承能力的开通状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAssociatedResourceOpenStatus
+        :type request: :class:`huaweicloudsdktms.v1.ShowAssociatedResourceOpenStatusRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.ShowAssociatedResourceOpenStatusResponse`
+        """
+        http_info = self._show_associated_resource_open_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_associated_resource_open_status_async_invoker(self, request):
+        http_info = self._show_associated_resource_open_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_associated_resource_open_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tms/associated-resources/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssociatedResourceOpenStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_tag_async(self, request):
         r"""查询资源标签
 
@@ -959,6 +1360,71 @@ class TmsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_associated_resource_rules_async(self, request):
+        r"""更新规则
+
+        更新规则。规则更新的信息会覆盖原有内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAssociatedResourceRules
+        :type request: :class:`huaweicloudsdktms.v1.UpdateAssociatedResourceRulesRequest`
+        :rtype: :class:`huaweicloudsdktms.v1.UpdateAssociatedResourceRulesResponse`
+        """
+        http_info = self._update_associated_resource_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_associated_resource_rules_async_invoker(self, request):
+        http_info = self._update_associated_resource_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_associated_resource_rules_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/tms/associated-resources/rules/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssociatedResourceRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

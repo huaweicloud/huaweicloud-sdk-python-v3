@@ -218,9 +218,6 @@ class ModelArtsAsyncClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'key_ids' in local_var_params:
-            form_params['key_ids'] = local_var_params['key_ids']
-            collection_formats['key_ids'] = 'csv'
 
         body = None
         if 'body' in local_var_params:
@@ -231,7 +228,7 @@ class ModelArtsAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -1021,9 +1018,6 @@ class ModelArtsAsyncClient(Client):
         header_params = {}
 
         form_params = {}
-        if 'key_ids' in local_var_params:
-            form_params['key_ids'] = local_var_params['key_ids']
-            collection_formats['key_ids'] = 'csv'
 
         body = None
         if 'body' in local_var_params:
@@ -1034,7 +1028,7 @@ class ModelArtsAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 

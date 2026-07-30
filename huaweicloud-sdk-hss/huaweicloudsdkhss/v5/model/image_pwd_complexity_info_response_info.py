@@ -57,7 +57,7 @@ class ImagePwdComplexityInfoResponseInfo:
         :type image_name: str
         :param image_version: **参数解释**: 镜像版本名称 **取值范围**: 字符长度0-256位 
         :type image_version: str
-        :param image_type: **参数解释**: 仓库镜像类型 **取值范围**: - SwrPrivate : swr私有镜像。 - SwrShared : swr共享。 - SwrEnterprise : swr企业。 - Harbor : harbor仓库。 - Jfrog : jfrog仓库。 - Other : 其他仓库。 
+        :param image_type: **参数解释**: 仓库镜像类型 **取值范围**: - private_image：私有镜像仓库。 - shared_image：共享镜像仓库。 - instance_image：企业镜像。 - cicd : cicd镜像。 - harbor ：Harbor仓库镜像。 - registry : 仓库镜像。 
         :type image_type: str
         :param latest_scan_time: **参数解释**: 最后一次检测时间，时间单位 毫秒（ms） **取值范围**: 最小值0，最大值2147483647 
         :type latest_scan_time: int
@@ -208,7 +208,7 @@ class ImagePwdComplexityInfoResponseInfo:
     def image_type(self):
         r"""Gets the image_type of this ImagePwdComplexityInfoResponseInfo.
 
-        **参数解释**: 仓库镜像类型 **取值范围**: - SwrPrivate : swr私有镜像。 - SwrShared : swr共享。 - SwrEnterprise : swr企业。 - Harbor : harbor仓库。 - Jfrog : jfrog仓库。 - Other : 其他仓库。 
+        **参数解释**: 仓库镜像类型 **取值范围**: - private_image：私有镜像仓库。 - shared_image：共享镜像仓库。 - instance_image：企业镜像。 - cicd : cicd镜像。 - harbor ：Harbor仓库镜像。 - registry : 仓库镜像。 
 
         :return: The image_type of this ImagePwdComplexityInfoResponseInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class ImagePwdComplexityInfoResponseInfo:
     def image_type(self, image_type):
         r"""Sets the image_type of this ImagePwdComplexityInfoResponseInfo.
 
-        **参数解释**: 仓库镜像类型 **取值范围**: - SwrPrivate : swr私有镜像。 - SwrShared : swr共享。 - SwrEnterprise : swr企业。 - Harbor : harbor仓库。 - Jfrog : jfrog仓库。 - Other : 其他仓库。 
+        **参数解释**: 仓库镜像类型 **取值范围**: - private_image：私有镜像仓库。 - shared_image：共享镜像仓库。 - instance_image：企业镜像。 - cicd : cicd镜像。 - harbor ：Harbor仓库镜像。 - registry : 仓库镜像。 
 
         :param image_type: The image_type of this ImagePwdComplexityInfoResponseInfo.
         :type image_type: str

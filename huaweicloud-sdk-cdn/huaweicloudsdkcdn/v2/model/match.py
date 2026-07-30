@@ -29,7 +29,7 @@ class Match:
 
         The model defined in huaweicloud sdk
 
-        :param logic: **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系 **默认取值：** 不涉及
+        :param logic: **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系  **默认取值：** 不涉及
         :type logic: str
         :param criteria: **参数解释：** 匹配条件列表 **约束限制：** 不涉及
         :type criteria: list[:class:`huaweicloudsdkcdn.v2.CriteriaItem`]
@@ -48,7 +48,7 @@ class Match:
     def logic(self):
         r"""Gets the logic of this Match.
 
-        **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系 **默认取值：** 不涉及
+        **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系  **默认取值：** 不涉及
 
         :return: The logic of this Match.
         :rtype: str
@@ -59,7 +59,7 @@ class Match:
     def logic(self, logic):
         r"""Sets the logic of this Match.
 
-        **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系 **默认取值：** 不涉及
+        **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系  **默认取值：** 不涉及
 
         :param logic: The logic of this Match.
         :type logic: str

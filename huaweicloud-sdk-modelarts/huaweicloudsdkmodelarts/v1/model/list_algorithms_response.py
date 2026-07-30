@@ -48,7 +48,7 @@ class ListAlgorithmsResponse(SdkResponse):
         :type count: int
         :param limit: 查询到当前用户名下的所有算法限制个数。
         :type limit: int
-        :param offset: 查询到当前用户名下的所有算法查询偏移量。
+        :param offset: 查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。
         :type offset: int
         :param sort_by: 查询到当前用户名下的所有算法排序依赖字段。
         :type sort_by: str
@@ -159,7 +159,7 @@ class ListAlgorithmsResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListAlgorithmsResponse.
 
-        查询到当前用户名下的所有算法查询偏移量。
+        查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。
 
         :return: The offset of this ListAlgorithmsResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class ListAlgorithmsResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListAlgorithmsResponse.
 
-        查询到当前用户名下的所有算法查询偏移量。
+        查询作业的页数，最小为0。例如设置为0，则表示从第一页开始查询。
 
         :param offset: The offset of this ListAlgorithmsResponse.
         :type offset: int

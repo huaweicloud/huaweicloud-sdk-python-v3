@@ -57,9 +57,9 @@ class AppChangeResponseInfo:
         :type host_ip: str
         :param version: **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
         :type version: str
-        :param update_time: **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        :param update_time: **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
         :type update_time: int
-        :param recent_scan_time: **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        :param recent_scan_time: **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
         :type recent_scan_time: int
         """
         
@@ -253,7 +253,7 @@ class AppChangeResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this AppChangeResponseInfo.
 
-        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The update_time of this AppChangeResponseInfo.
         :rtype: int
@@ -264,7 +264,7 @@ class AppChangeResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this AppChangeResponseInfo.
 
-        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        **参数解释**: 软件更新时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param update_time: The update_time of this AppChangeResponseInfo.
         :type update_time: int
@@ -275,7 +275,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self):
         r"""Gets the recent_scan_time of this AppChangeResponseInfo.
 
-        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The recent_scan_time of this AppChangeResponseInfo.
         :rtype: int
@@ -286,7 +286,7 @@ class AppChangeResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         r"""Sets the recent_scan_time of this AppChangeResponseInfo.
 
-        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值10000 
+        **参数解释**: 最近扫描时间，单位毫秒 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param recent_scan_time: The recent_scan_time of this AppChangeResponseInfo.
         :type recent_scan_time: int

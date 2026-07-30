@@ -16,51 +16,20 @@ class ModifyAutoExpandPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'str'
     }
 
     attribute_map = {
-        'result': 'result'
     }
 
-    def __init__(self, result=None):
+    def __init__(self):
         r"""ModifyAutoExpandPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param result: 修改结果。
-        :type result: str
         """
         
         super().__init__()
-
-        self._result = None
         self.discriminator = None
-
-        if result is not None:
-            self.result = result
-
-    @property
-    def result(self):
-        r"""Gets the result of this ModifyAutoExpandPolicyResponse.
-
-        修改结果。
-
-        :return: The result of this ModifyAutoExpandPolicyResponse.
-        :rtype: str
-        """
-        return self._result
-
-    @result.setter
-    def result(self, result):
-        r"""Sets the result of this ModifyAutoExpandPolicyResponse.
-
-        修改结果。
-
-        :param result: The result of this ModifyAutoExpandPolicyResponse.
-        :type result: str
-        """
-        self._result = result
 
     def to_dict(self):
         import warnings

@@ -27,7 +27,7 @@ class AccessControl:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许 **默认取值：** 不涉及
+        :param type: **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许  **默认取值：** 不涉及
         :type type: str
         """
         
@@ -42,7 +42,7 @@ class AccessControl:
     def type(self):
         r"""Gets the type of this AccessControl.
 
-        **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许 **默认取值：** 不涉及
+        **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许  **默认取值：** 不涉及
 
         :return: The type of this AccessControl.
         :rtype: str
@@ -53,7 +53,7 @@ class AccessControl:
     def type(self, type):
         r"""Sets the type of this AccessControl.
 
-        **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许 **默认取值：** 不涉及
+        **参数解释：** 访问控制类型 **约束限制：** 不涉及 **取值范围：** - block: 拒绝 - trust: 允许  **默认取值：** 不涉及
 
         :param type: The type of this AccessControl.
         :type type: str

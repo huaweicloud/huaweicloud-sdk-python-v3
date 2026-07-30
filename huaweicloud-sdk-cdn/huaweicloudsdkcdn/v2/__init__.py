@@ -118,6 +118,7 @@ from huaweicloudsdkcdn.v2.model.flexible_origins_engine import FlexibleOriginsEn
 from huaweicloudsdkcdn.v2.model.flow_limit_strategy import FlowLimitStrategy
 from huaweicloudsdkcdn.v2.model.force_redirect import ForceRedirect
 from huaweicloudsdkcdn.v2.model.force_redirect_config import ForceRedirectConfig
+from huaweicloudsdkcdn.v2.model.full_update_rule_request import FullUpdateRuleRequest
 from huaweicloudsdkcdn.v2.model.full_update_rules_request import FullUpdateRulesRequest
 from huaweicloudsdkcdn.v2.model.hsts import Hsts
 from huaweicloudsdkcdn.v2.model.hsts_query import HstsQuery

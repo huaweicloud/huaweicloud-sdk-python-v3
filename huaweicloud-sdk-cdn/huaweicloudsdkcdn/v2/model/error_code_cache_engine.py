@@ -29,7 +29,7 @@ class ErrorCodeCacheEngine:
 
         The model defined in huaweicloud sdk
 
-        :param code: **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504 **默认取值：** 不涉及
+        :param code: **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504  **默认取值：** 不涉及
         :type code: int
         :param ttl: **参数解释：** 错误码缓存时间 **约束限制：** 不涉及 **取值范围：** 0-31536000，单位：秒 &gt; 3XX状态码缓存时间范围为0-20s  **默认取值：** 不涉及
         :type ttl: int
@@ -48,7 +48,7 @@ class ErrorCodeCacheEngine:
     def code(self):
         r"""Gets the code of this ErrorCodeCacheEngine.
 
-        **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504 **默认取值：** 不涉及
+        **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504  **默认取值：** 不涉及
 
         :return: The code of this ErrorCodeCacheEngine.
         :rtype: int
@@ -59,7 +59,7 @@ class ErrorCodeCacheEngine:
     def code(self, code):
         r"""Sets the code of this ErrorCodeCacheEngine.
 
-        **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504 **默认取值：** 不涉及
+        **参数解释：** 需要缓存的错误码 **约束限制：** 不涉及 **取值范围：** - 3xx: 301, 302 - 4xx: 400, 403, 404, 405, 414 - 5xx: 501, 502, 503, 504  **默认取值：** 不涉及
 
         :param code: The code of this ErrorCodeCacheEngine.
         :type code: int

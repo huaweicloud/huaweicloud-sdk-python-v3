@@ -21,7 +21,7 @@ class HtapProcessInfo:
         'state': 'str',
         'database': 'str',
         'sql_statement': 'str',
-        'duration': 'str',
+        'duration': 'float',
         'command': 'str'
     }
 
@@ -54,7 +54,7 @@ class HtapProcessInfo:
         :param sql_statement: **参数解释**：  会话执行的SQL语句。    **取值范围**：  不涉及。
         :type sql_statement: str
         :param duration: **参数解释**：  会话持续时间，单位是秒。  **取值范围**：  不涉及。
-        :type duration: str
+        :type duration: float
         :param command: **参数解释**：  会话命令类型。    **取值范围**：  不涉及。
         :type command: str
         """
@@ -227,7 +227,7 @@ class HtapProcessInfo:
         **参数解释**：  会话持续时间，单位是秒。  **取值范围**：  不涉及。
 
         :return: The duration of this HtapProcessInfo.
-        :rtype: str
+        :rtype: float
         """
         return self._duration
 
@@ -238,7 +238,7 @@ class HtapProcessInfo:
         **参数解释**：  会话持续时间，单位是秒。  **取值范围**：  不涉及。
 
         :param duration: The duration of this HtapProcessInfo.
-        :type duration: str
+        :type duration: float
         """
         self._duration = duration
 

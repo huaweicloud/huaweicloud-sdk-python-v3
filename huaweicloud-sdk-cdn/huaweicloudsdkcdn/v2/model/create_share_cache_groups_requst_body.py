@@ -31,7 +31,7 @@ class CreateShareCacheGroupsRequstBody:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&amp;”、“&#x3D;”、“?”、“$”\&quot;、“\&quot;”、“&lt;”、“&gt;” **默认取值：** 不涉及
+        :param group_name: **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&amp;”、“&#x3D;”、“?”、“$”\&quot;、“\&quot;”、“&lt;”、“&gt;”  **默认取值：** 不涉及
         :type group_name: str
         :param primary_domain: **参数解释：** 主域名 **约束限制：** 只能有一个主域名 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type primary_domain: str
@@ -57,7 +57,7 @@ class CreateShareCacheGroupsRequstBody:
     def group_name(self):
         r"""Gets the group_name of this CreateShareCacheGroupsRequstBody.
 
-        **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&”、“=”、“?”、“$”\"、“\"”、“<”、“>” **默认取值：** 不涉及
+        **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&”、“=”、“?”、“$”\"、“\"”、“<”、“>”  **默认取值：** 不涉及
 
         :return: The group_name of this CreateShareCacheGroupsRequstBody.
         :rtype: str
@@ -68,7 +68,7 @@ class CreateShareCacheGroupsRequstBody:
     def group_name(self, group_name):
         r"""Sets the group_name of this CreateShareCacheGroupsRequstBody.
 
-        **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&”、“=”、“?”、“$”\"、“\"”、“<”、“>” **默认取值：** 不涉及
+        **参数解释：** 共享缓存组名称 **约束限制：** 不涉及 **取值范围：** - 1-128个字符 - 不支持特殊字符“%”、“&”、“=”、“?”、“$”\"、“\"”、“<”、“>”  **默认取值：** 不涉及
 
         :param group_name: The group_name of this CreateShareCacheGroupsRequstBody.
         :type group_name: str

@@ -20,8 +20,8 @@ class RecycleBackupV3:
         'backup_name': 'str',
         'size': 'int',
         'status': 'str',
-        'begin_time': 'str',
-        'end_time': 'str'
+        'begin_time': 'int',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -50,9 +50,9 @@ class RecycleBackupV3:
         :param status: 回收状态。
         :type status: str
         :param begin_time: 备份开始时间。
-        :type begin_time: str
+        :type begin_time: int
         :param end_time: 备份结束时间。
-        :type end_time: str
+        :type end_time: int
         """
         
         
@@ -198,7 +198,7 @@ class RecycleBackupV3:
         备份开始时间。
 
         :return: The begin_time of this RecycleBackupV3.
-        :rtype: str
+        :rtype: int
         """
         return self._begin_time
 
@@ -209,7 +209,7 @@ class RecycleBackupV3:
         备份开始时间。
 
         :param begin_time: The begin_time of this RecycleBackupV3.
-        :type begin_time: str
+        :type begin_time: int
         """
         self._begin_time = begin_time
 
@@ -220,7 +220,7 @@ class RecycleBackupV3:
         备份结束时间。
 
         :return: The end_time of this RecycleBackupV3.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -231,7 +231,7 @@ class RecycleBackupV3:
         备份结束时间。
 
         :param end_time: The end_time of this RecycleBackupV3.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

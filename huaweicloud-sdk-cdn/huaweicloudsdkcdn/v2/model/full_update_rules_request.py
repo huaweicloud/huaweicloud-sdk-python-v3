@@ -15,7 +15,7 @@ class FullUpdateRulesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'rules': 'list[CreateRuleRequest]'
+        'rules': 'list[FullUpdateRuleRequest]'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class FullUpdateRulesRequest:
         The model defined in huaweicloud sdk
 
         :param rules: **参数解释：** 规则配置内容，可以配置多个规则 **约束限制：** 不涉及
-        :type rules: list[:class:`huaweicloudsdkcdn.v2.CreateRuleRequest`]
+        :type rules: list[:class:`huaweicloudsdkcdn.v2.FullUpdateRuleRequest`]
         """
         
         
@@ -45,7 +45,7 @@ class FullUpdateRulesRequest:
         **参数解释：** 规则配置内容，可以配置多个规则 **约束限制：** 不涉及
 
         :return: The rules of this FullUpdateRulesRequest.
-        :rtype: list[:class:`huaweicloudsdkcdn.v2.CreateRuleRequest`]
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.FullUpdateRuleRequest`]
         """
         return self._rules
 
@@ -56,7 +56,7 @@ class FullUpdateRulesRequest:
         **参数解释：** 规则配置内容，可以配置多个规则 **约束限制：** 不涉及
 
         :param rules: The rules of this FullUpdateRulesRequest.
-        :type rules: list[:class:`huaweicloudsdkcdn.v2.CreateRuleRequest`]
+        :type rules: list[:class:`huaweicloudsdkcdn.v2.FullUpdateRuleRequest`]
         """
         self._rules = rules
 

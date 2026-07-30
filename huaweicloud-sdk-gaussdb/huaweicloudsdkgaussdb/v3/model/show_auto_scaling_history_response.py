@@ -16,7 +16,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'records': 'list[AutoScalingRecordInfo]'
     }
 
@@ -31,7 +31,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 记录总数。
-        :type total_count: str
+        :type total_count: int
         :param records: 自动变配历史记录列表。
         :type records: list[:class:`huaweicloudsdkgaussdb.v3.AutoScalingRecordInfo`]
         """
@@ -54,7 +54,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
         记录总数。
 
         :return: The total_count of this ShowAutoScalingHistoryResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -65,7 +65,7 @@ class ShowAutoScalingHistoryResponse(SdkResponse):
         记录总数。
 
         :param total_count: The total_count of this ShowAutoScalingHistoryResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

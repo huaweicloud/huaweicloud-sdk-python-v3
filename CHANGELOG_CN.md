@@ -1,3 +1,223 @@
+# 3.1.208 2026-07-30
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDomainTemplate**
+    - 请求参数变更
+      - `* configs.flow_limit_strategy.item_type: string -> int64`
+      - `* configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.flow_limit_strategy`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.flow_limit_strategy`
+  - **UpdateFullRule**
+    - 请求参数变更
+      - `+ rules.rule_id`
+      - `* rules: list<CreateRuleRequest> -> list<FullUpdateRuleRequest>`
+  - **CreateDomainTemplate**
+    - 请求参数变更
+      - `* configs.flow_limit_strategy.item_type: string -> int64`
+      - `* configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowDomainTemplate**
+    - 响应参数变更
+      - `* templates.configs.flow_limit_strategy.item_type: string -> int64`
+      - `* templates.configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* templates.configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* templates.configs.flow_limit_strategy.ban_time: string -> int64`
+  - **ShowAppliedTemplateRecord**
+    - 响应参数变更
+      - `* elements.configs.flow_limit_strategy.item_type: string -> int64`
+      - `* elements.configs.flow_limit_strategy.limit_value: string -> int64`
+      - `* elements.configs.flow_limit_strategy.alarm_percent_threshold: string -> int32`
+      - `* elements.configs.flow_limit_strategy.ban_time: string -> int64`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyNodePriority**
+    - 请求参数变更
+      - `* priority: string -> int32`
+  - **ShowInstanceEip**
+    - 响应参数变更
+      - `* bandwidth_size: string -> int32`
+  - **UpgradeSrKernelVersion**
+    - 请求参数变更
+      - `* delay: string -> boolean`
+      - `* is_skip_validate: string -> boolean`
+  - **SyncStarRocksUsers**
+    - 响应参数变更
+      - `* success: string -> boolean`
+  - **DownloadDdlLogs**
+    - 响应参数变更
+      - `+ download_files`
+      - `- list`
+  - **ShowInstanceDatabasesForHtap**
+    - 响应参数变更
+      - `- timestamp`
+  - **ShowHtapErrorLogDetail**
+    - 请求参数变更
+      - `* limit: int32 -> string`
+  - **ShowHtapLtsConfig**
+    - 响应参数变更
+      - `* instance_lts_configs.lts_configs.enabled: string -> boolean`
+  - **UpdateServerlessComputeAbilityPolicy**
+    - 请求参数变更
+      - `* min_vcpus: int32 -> string`
+      - `* max_vcpus: int32 -> string`
+  - **ShowAutoScalingHistory**
+    - 响应参数变更
+      - `* total_count: string -> int32`
+  - **ListParamsTemplateApplyHistory**
+    - 响应参数变更
+      - `* total_count: string -> int32`
+  - **ShowStarrocksParams**
+    - 响应参数变更
+      - `+ configurations.configuration_id`
+  - **ShowProxyConfigurations**
+    - 响应参数变更
+      - `* total_count: string -> int32`
+  - **ListInstanceConfigurations**
+    - 响应参数变更
+      - `+ configurations.configuration_id`
+  - **BatchUpgradeDatabases**
+    - 请求参数变更
+      - `* delay: string -> boolean`
+  - **ShowHtapProcessList**
+    - 响应参数变更
+      - `* process_list.duration: string -> double`
+  - **ListRecycleInstances**
+    - 响应参数变更
+      - `* instances.recycle_backups.begin_time: string -> int64`
+      - `* instances.recycle_backups.end_time: string -> int64`
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListDatasets`
+    - `CreateDataset`
+    - `ShowDataset`
+    - `UpdateDataset`
+    - `DeleteDataset`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchCheckPermission**
+    - 请求参数变更
+      - `+ access_request.action: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ access_request.resource.dataset`
+      - `+ access_request.resource.resource_type: enum value [DATASET]`
+  - **BatchCancelAuthorizationInterface**
+    - 请求参数变更
+      - `+ permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ resource.type: enum value [DATASET]`
+      - `+ resource.catalogs.databases.datasets`
+  - **BatchAuthorizeInterface**
+    - 请求参数变更
+      - `+ permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ resource.type: enum value [DATASET]`
+      - `+ resource.catalogs.databases.datasets`
+    - 响应参数变更
+      - `+ policies.permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.resource.type: enum value [DATASET]`
+      - `+ policies.resource.catalogs.databases.datasets`
+  - **ListInterfaces**
+    - 响应参数变更
+      - `+ policies.permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.grant_able_permissions: enum value [CREATE_DATASET,LIST_DATASET,READ_DATASET,WRITE_DATASET]`
+      - `+ policies.resource.type: enum value [DATASET]`
+      - `+ policies.resource.catalogs.databases.datasets`
+
+### HuaweiCloud SDK ModelArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AcceptScheduledEvent**
+    - 请求参数变更
+      - `+ redeployConfig`
+    - 响应参数变更
+      - `+ jobProgress`
+      - `+ underLyingInstanceId`
+  - **ListScheduledEvents**
+    - 响应参数变更
+      - `+ jobProgress`
+      - `+ underLyingInstanceId`
+      - `+ events.jobProgress`
+      - `+ events.underLyingInstanceId`
+  - **ShowNodeConfigTemplate**
+    - 响应参数变更
+      - `+ spec.osList`
+  - **ShowPoolNode**
+    - 响应参数变更
+      - `+ metadata.labels.os.modelarts.node/spod.id`
+  - **ListPoolNodes**
+    - 响应参数变更
+      - `+ items.metadata.labels.os.modelarts.node/spod.id`
+  - **ListNodePoolNodes**
+    - 响应参数变更
+      - `+ items.metadata.labels.os.modelarts.node/spod.id`
+  - **ShowTrainingJobDetails**
+    - 响应参数变更
+      - `+ algorithm.engine.image_repo_id`
+  - **StopTrainingJob**
+    - 响应参数变更
+      - `+ algorithm.engine.image_repo_id`
+  - **CreateTrainingJob**
+    - 请求参数变更
+      - `+ algorithm.engine.image_repo_id`
+    - 响应参数变更
+      - `+ algorithm.engine.image_repo_id`
+  - **ListTrainingJobs**
+    - 响应参数变更
+      - `+ items.algorithm.engine.image_repo_id`
+
+### HuaweiCloud SDK TMS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `DeleteAssociatedResourceRule`
+    - `ListAssociatedResourceRules`
+    - `ListAssociatedResourceSettings`
+    - `UpdateAssociatedResourceRules`
+    - `CreateAssociatedResourceRules`
+    - `ShowAssociatedResourceOpenStatus`
+    - `ChangeAssociatedResourceOpenStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.207 2026-07-23
 
 ### HuaweiCloud SDK AgentArts

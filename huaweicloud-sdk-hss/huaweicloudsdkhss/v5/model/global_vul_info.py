@@ -19,6 +19,7 @@ class GlobalVulInfo:
         'vul_id': 'str',
         'repair_necessity': 'str',
         'decription': 'str',
+        'description': 'str',
         'solution': 'str',
         'url': 'str',
         'history_number': 'int',
@@ -31,6 +32,7 @@ class GlobalVulInfo:
         'vul_id': 'vul_id',
         'repair_necessity': 'repair_necessity',
         'decription': 'decription',
+        'description': 'description',
         'solution': 'solution',
         'url': 'url',
         'history_number': 'history_number',
@@ -38,7 +40,7 @@ class GlobalVulInfo:
         'data_list': 'data_list'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, repair_necessity=None, decription=None, solution=None, url=None, history_number=None, undeal_number=None, data_list=None):
+    def __init__(self, vul_name=None, vul_id=None, repair_necessity=None, decription=None, description=None, solution=None, url=None, history_number=None, undeal_number=None, data_list=None):
         r"""GlobalVulInfo
 
         The model defined in huaweicloud sdk
@@ -49,8 +51,10 @@ class GlobalVulInfo:
         :type vul_id: str
         :param repair_necessity: **参数解释**: 修复紧急度 **取值范围**: - immediate_repair：需尽快修复。 - delay_repair：可延后修复。 - not_needed_repair：暂可不修复。 
         :type repair_necessity: str
-        :param decription: **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+        :param decription: **参数解释** 漏洞描述（已废弃，请使用description） **取值范围** 字符长度0-65535位 
         :type decription: str
+        :param description: **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+        :type description: str
         :param solution: **参数解释** 解决方案 **取值范围** 字符长度0-65535位 
         :type solution: str
         :param url: **参数解释** URL链接 **取值范围** 字符长度0-65535位 
@@ -69,6 +73,7 @@ class GlobalVulInfo:
         self._vul_id = None
         self._repair_necessity = None
         self._decription = None
+        self._description = None
         self._solution = None
         self._url = None
         self._history_number = None
@@ -84,6 +89,8 @@ class GlobalVulInfo:
             self.repair_necessity = repair_necessity
         if decription is not None:
             self.decription = decription
+        if description is not None:
+            self.description = description
         if solution is not None:
             self.solution = solution
         if url is not None:
@@ -165,7 +172,7 @@ class GlobalVulInfo:
     def decription(self):
         r"""Gets the decription of this GlobalVulInfo.
 
-        **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+        **参数解释** 漏洞描述（已废弃，请使用description） **取值范围** 字符长度0-65535位 
 
         :return: The decription of this GlobalVulInfo.
         :rtype: str
@@ -176,12 +183,34 @@ class GlobalVulInfo:
     def decription(self, decription):
         r"""Sets the decription of this GlobalVulInfo.
 
-        **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+        **参数解释** 漏洞描述（已废弃，请使用description） **取值范围** 字符长度0-65535位 
 
         :param decription: The decription of this GlobalVulInfo.
         :type decription: str
         """
         self._decription = decription
+
+    @property
+    def description(self):
+        r"""Gets the description of this GlobalVulInfo.
+
+        **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+
+        :return: The description of this GlobalVulInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this GlobalVulInfo.
+
+        **参数解释** 漏洞描述 **取值范围** 字符长度0-65535位 
+
+        :param description: The description of this GlobalVulInfo.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def solution(self):

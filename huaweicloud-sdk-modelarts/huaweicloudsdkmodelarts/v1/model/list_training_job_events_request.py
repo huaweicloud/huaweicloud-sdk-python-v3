@@ -45,7 +45,7 @@ class ListTrainingJobEventsRequest:
 
         :param training_job_id: 训练作业ID。获取方法请参见[查询训练作业列表](ListTrainingJobs.xml)。
         :type training_job_id: str
-        :param offset: 数据条目偏移量。
+        :param offset: **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
         :type offset: int
         :param limit: 指定每一页返回的最大条目数，取值范围[1,100]，默认为50。
         :type limit: int
@@ -120,7 +120,7 @@ class ListTrainingJobEventsRequest:
     def offset(self):
         r"""Gets the offset of this ListTrainingJobEventsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :return: The offset of this ListTrainingJobEventsRequest.
         :rtype: int
@@ -131,7 +131,7 @@ class ListTrainingJobEventsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListTrainingJobEventsRequest.
 
-        数据条目偏移量。
+        **参数解释**：分页列表的起始页。 **约束限制**：最小为0。例如设置为0，则表示从第一页开始查询。 **取值范围**：不涉及。 **默认取值**：默认为0。
 
         :param offset: The offset of this ListTrainingJobEventsRequest.
         :type offset: int
