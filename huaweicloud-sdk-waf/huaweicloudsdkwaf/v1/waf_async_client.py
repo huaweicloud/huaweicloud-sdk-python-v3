@@ -3546,6 +3546,73 @@ class WafAsyncClient(Client):
 
         return http_info
 
+    def create_pool_async(self, request):
+        r"""创建实例组
+
+        创建实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePool
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePoolRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePoolResponse`
+        """
+        http_info = self._create_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_pool_async_invoker(self, request):
+        http_info = self._create_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pool_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/premium-waf/pool",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_premium_host_async(self, request):
         r"""创建独享模式域名或者创建云模式ELB接入模式域名
 
@@ -5077,6 +5144,73 @@ class WafAsyncClient(Client):
         path_params = {}
         if 'policy_id' in local_var_params:
             path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_pool_async(self, request):
+        r"""删除实例组
+
+        删除实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePool
+        :type request: :class:`huaweicloudsdkwaf.v1.DeletePoolRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeletePoolResponse`
+        """
+        http_info = self._delete_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_pool_async_invoker(self, request):
+        http_info = self._delete_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_pool_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/premium-waf/pool/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -11049,6 +11183,73 @@ class WafAsyncClient(Client):
         query_params = []
         if 'lang' in local_var_params:
             query_params.append(('lang', local_var_params['lang']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_pool_async(self, request):
+        r"""查询实例组详情
+
+        查询实例组详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPool
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowPoolRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowPoolResponse`
+        """
+        http_info = self._show_pool_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_pool_async_invoker(self, request):
+        http_info = self._show_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pool_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/premium-waf/pool/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

@@ -15,10 +15,12 @@ class RecommendSqlLimitRuleRespRawSql:
     sensitive_list = []
 
     openapi_types = {
-        'session_id': 'str',
+        'session_id': 'float',
         'host': 'str',
         'sql': 'str',
         'db': 'str',
+        'user': 'str',
+        'sql_type': 'str',
         'time': 'int'
     }
 
@@ -27,22 +29,28 @@ class RecommendSqlLimitRuleRespRawSql:
         'host': 'host',
         'sql': 'sql',
         'db': 'db',
+        'user': 'user',
+        'sql_type': 'sql_type',
         'time': 'time'
     }
 
-    def __init__(self, session_id=None, host=None, sql=None, db=None, time=None):
+    def __init__(self, session_id=None, host=None, sql=None, db=None, user=None, sql_type=None, time=None):
         r"""RecommendSqlLimitRuleRespRawSql
 
         The model defined in huaweicloud sdk
 
         :param session_id: 会话id
-        :type session_id: str
+        :type session_id: float
         :param host: 主机ip
         :type host: str
         :param sql: sql
         :type sql: str
         :param db: 数据库名称
         :type db: str
+        :param user: 会话用户名
+        :type user: str
+        :param sql_type: SQL类型
+        :type sql_type: str
         :param time: 时间
         :type time: int
         """
@@ -53,6 +61,8 @@ class RecommendSqlLimitRuleRespRawSql:
         self._host = None
         self._sql = None
         self._db = None
+        self._user = None
+        self._sql_type = None
         self._time = None
         self.discriminator = None
 
@@ -64,6 +74,10 @@ class RecommendSqlLimitRuleRespRawSql:
             self.sql = sql
         if db is not None:
             self.db = db
+        if user is not None:
+            self.user = user
+        if sql_type is not None:
+            self.sql_type = sql_type
         if time is not None:
             self.time = time
 
@@ -74,7 +88,7 @@ class RecommendSqlLimitRuleRespRawSql:
         会话id
 
         :return: The session_id of this RecommendSqlLimitRuleRespRawSql.
-        :rtype: str
+        :rtype: float
         """
         return self._session_id
 
@@ -85,7 +99,7 @@ class RecommendSqlLimitRuleRespRawSql:
         会话id
 
         :param session_id: The session_id of this RecommendSqlLimitRuleRespRawSql.
-        :type session_id: str
+        :type session_id: float
         """
         self._session_id = session_id
 
@@ -154,6 +168,50 @@ class RecommendSqlLimitRuleRespRawSql:
         :type db: str
         """
         self._db = db
+
+    @property
+    def user(self):
+        r"""Gets the user of this RecommendSqlLimitRuleRespRawSql.
+
+        会话用户名
+
+        :return: The user of this RecommendSqlLimitRuleRespRawSql.
+        :rtype: str
+        """
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        r"""Sets the user of this RecommendSqlLimitRuleRespRawSql.
+
+        会话用户名
+
+        :param user: The user of this RecommendSqlLimitRuleRespRawSql.
+        :type user: str
+        """
+        self._user = user
+
+    @property
+    def sql_type(self):
+        r"""Gets the sql_type of this RecommendSqlLimitRuleRespRawSql.
+
+        SQL类型
+
+        :return: The sql_type of this RecommendSqlLimitRuleRespRawSql.
+        :rtype: str
+        """
+        return self._sql_type
+
+    @sql_type.setter
+    def sql_type(self, sql_type):
+        r"""Sets the sql_type of this RecommendSqlLimitRuleRespRawSql.
+
+        SQL类型
+
+        :param sql_type: The sql_type of this RecommendSqlLimitRuleRespRawSql.
+        :type sql_type: str
+        """
+        self._sql_type = sql_type
 
     @property
     def time(self):

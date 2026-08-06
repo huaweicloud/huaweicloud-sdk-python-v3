@@ -45,25 +45,25 @@ class PremiumWafPoolResponse:
 
         The model defined in huaweicloud sdk
 
-        :param id: 实例组id
+        :param id: **参数解释：** 实例组ID，用于唯一标识一个实例组。 **取值范围：** 不涉及
         :type id: str
-        :param name: 实例组名称
+        :param name: **参数解释：** 实例组名称。 **取值范围：** 不涉及
         :type name: str
-        :param region: 实例组所在region
+        :param region: **参数解释：** 实例组所在的区域（Region）。 **取值范围：** 不涉及
         :type region: str
-        :param type: 实例组类型
+        :param type: **参数解释：** 实例组类型。 **取值范围：** - elb：基础elb类型 - elb-v2：elb-v2类型 - elb-shadow：saas化elb类型 - standard-container：反向代理独享引擎组（云内，承载租户专用） - standard-cloud：反向代理独享引擎组（云内） - standard：反向代理独享引擎组（云外） - detector-cloud：旁路检测独享引擎组（云内） - detector：旁路检测独享引擎组（云外）
         :type type: str
-        :param vpc_id: 实例组关联的vpc_id
+        :param vpc_id: **参数解释：** 实例组关联的虚拟私有云ID。 **取值范围：** 不涉及
         :type vpc_id: str
-        :param description: 实例组描述
+        :param description: **参数解释：** 实例组的描述信息。 **取值范围：** 不涉及
         :type description: str
-        :param hosts: 实例组关联的防护域名
+        :param hosts: **参数解释：** 实例组关联的防护域名列表。 **取值范围：** 不涉及
         :type hosts: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
-        :param instances: 实例组关联的引擎实例
+        :param instances: **参数解释：** 实例组关联的引擎实例列表。 **取值范围：** 不涉及
         :type instances: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
-        :param enterprise_project_id: 实例组关联的企业计划id
+        :param enterprise_project_id: **参数解释：** 实例组关联的企业项目ID。 **取值范围：** - 0：代表default企业项目 - 其他为企业项目ID，长度为36个字符
         :type enterprise_project_id: str
-        :param create_time: 实例组创建时间
+        :param create_time: **参数解释：** 实例组创建时间。Unix时间戳格式，单位为毫秒（ms）。 **取值范围：** 不涉及
         :type create_time: int
         """
         
@@ -106,7 +106,7 @@ class PremiumWafPoolResponse:
     def id(self):
         r"""Gets the id of this PremiumWafPoolResponse.
 
-        实例组id
+        **参数解释：** 实例组ID，用于唯一标识一个实例组。 **取值范围：** 不涉及
 
         :return: The id of this PremiumWafPoolResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class PremiumWafPoolResponse:
     def id(self, id):
         r"""Sets the id of this PremiumWafPoolResponse.
 
-        实例组id
+        **参数解释：** 实例组ID，用于唯一标识一个实例组。 **取值范围：** 不涉及
 
         :param id: The id of this PremiumWafPoolResponse.
         :type id: str
@@ -128,7 +128,7 @@ class PremiumWafPoolResponse:
     def name(self):
         r"""Gets the name of this PremiumWafPoolResponse.
 
-        实例组名称
+        **参数解释：** 实例组名称。 **取值范围：** 不涉及
 
         :return: The name of this PremiumWafPoolResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class PremiumWafPoolResponse:
     def name(self, name):
         r"""Sets the name of this PremiumWafPoolResponse.
 
-        实例组名称
+        **参数解释：** 实例组名称。 **取值范围：** 不涉及
 
         :param name: The name of this PremiumWafPoolResponse.
         :type name: str
@@ -150,7 +150,7 @@ class PremiumWafPoolResponse:
     def region(self):
         r"""Gets the region of this PremiumWafPoolResponse.
 
-        实例组所在region
+        **参数解释：** 实例组所在的区域（Region）。 **取值范围：** 不涉及
 
         :return: The region of this PremiumWafPoolResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class PremiumWafPoolResponse:
     def region(self, region):
         r"""Sets the region of this PremiumWafPoolResponse.
 
-        实例组所在region
+        **参数解释：** 实例组所在的区域（Region）。 **取值范围：** 不涉及
 
         :param region: The region of this PremiumWafPoolResponse.
         :type region: str
@@ -172,7 +172,7 @@ class PremiumWafPoolResponse:
     def type(self):
         r"""Gets the type of this PremiumWafPoolResponse.
 
-        实例组类型
+        **参数解释：** 实例组类型。 **取值范围：** - elb：基础elb类型 - elb-v2：elb-v2类型 - elb-shadow：saas化elb类型 - standard-container：反向代理独享引擎组（云内，承载租户专用） - standard-cloud：反向代理独享引擎组（云内） - standard：反向代理独享引擎组（云外） - detector-cloud：旁路检测独享引擎组（云内） - detector：旁路检测独享引擎组（云外）
 
         :return: The type of this PremiumWafPoolResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class PremiumWafPoolResponse:
     def type(self, type):
         r"""Sets the type of this PremiumWafPoolResponse.
 
-        实例组类型
+        **参数解释：** 实例组类型。 **取值范围：** - elb：基础elb类型 - elb-v2：elb-v2类型 - elb-shadow：saas化elb类型 - standard-container：反向代理独享引擎组（云内，承载租户专用） - standard-cloud：反向代理独享引擎组（云内） - standard：反向代理独享引擎组（云外） - detector-cloud：旁路检测独享引擎组（云内） - detector：旁路检测独享引擎组（云外）
 
         :param type: The type of this PremiumWafPoolResponse.
         :type type: str
@@ -194,7 +194,7 @@ class PremiumWafPoolResponse:
     def vpc_id(self):
         r"""Gets the vpc_id of this PremiumWafPoolResponse.
 
-        实例组关联的vpc_id
+        **参数解释：** 实例组关联的虚拟私有云ID。 **取值范围：** 不涉及
 
         :return: The vpc_id of this PremiumWafPoolResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class PremiumWafPoolResponse:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this PremiumWafPoolResponse.
 
-        实例组关联的vpc_id
+        **参数解释：** 实例组关联的虚拟私有云ID。 **取值范围：** 不涉及
 
         :param vpc_id: The vpc_id of this PremiumWafPoolResponse.
         :type vpc_id: str
@@ -216,7 +216,7 @@ class PremiumWafPoolResponse:
     def description(self):
         r"""Gets the description of this PremiumWafPoolResponse.
 
-        实例组描述
+        **参数解释：** 实例组的描述信息。 **取值范围：** 不涉及
 
         :return: The description of this PremiumWafPoolResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class PremiumWafPoolResponse:
     def description(self, description):
         r"""Sets the description of this PremiumWafPoolResponse.
 
-        实例组描述
+        **参数解释：** 实例组的描述信息。 **取值范围：** 不涉及
 
         :param description: The description of this PremiumWafPoolResponse.
         :type description: str
@@ -238,7 +238,7 @@ class PremiumWafPoolResponse:
     def hosts(self):
         r"""Gets the hosts of this PremiumWafPoolResponse.
 
-        实例组关联的防护域名
+        **参数解释：** 实例组关联的防护域名列表。 **取值范围：** 不涉及
 
         :return: The hosts of this PremiumWafPoolResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
@@ -249,7 +249,7 @@ class PremiumWafPoolResponse:
     def hosts(self, hosts):
         r"""Sets the hosts of this PremiumWafPoolResponse.
 
-        实例组关联的防护域名
+        **参数解释：** 实例组关联的防护域名列表。 **取值范围：** 不涉及
 
         :param hosts: The hosts of this PremiumWafPoolResponse.
         :type hosts: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
@@ -260,7 +260,7 @@ class PremiumWafPoolResponse:
     def instances(self):
         r"""Gets the instances of this PremiumWafPoolResponse.
 
-        实例组关联的引擎实例
+        **参数解释：** 实例组关联的引擎实例列表。 **取值范围：** 不涉及
 
         :return: The instances of this PremiumWafPoolResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
@@ -271,7 +271,7 @@ class PremiumWafPoolResponse:
     def instances(self, instances):
         r"""Sets the instances of this PremiumWafPoolResponse.
 
-        实例组关联的引擎实例
+        **参数解释：** 实例组关联的引擎实例列表。 **取值范围：** 不涉及
 
         :param instances: The instances of this PremiumWafPoolResponse.
         :type instances: list[:class:`huaweicloudsdkwaf.v1.IdNameEntry`]
@@ -282,7 +282,7 @@ class PremiumWafPoolResponse:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this PremiumWafPoolResponse.
 
-        实例组关联的企业计划id
+        **参数解释：** 实例组关联的企业项目ID。 **取值范围：** - 0：代表default企业项目 - 其他为企业项目ID，长度为36个字符
 
         :return: The enterprise_project_id of this PremiumWafPoolResponse.
         :rtype: str
@@ -293,7 +293,7 @@ class PremiumWafPoolResponse:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this PremiumWafPoolResponse.
 
-        实例组关联的企业计划id
+        **参数解释：** 实例组关联的企业项目ID。 **取值范围：** - 0：代表default企业项目 - 其他为企业项目ID，长度为36个字符
 
         :param enterprise_project_id: The enterprise_project_id of this PremiumWafPoolResponse.
         :type enterprise_project_id: str
@@ -304,7 +304,7 @@ class PremiumWafPoolResponse:
     def create_time(self):
         r"""Gets the create_time of this PremiumWafPoolResponse.
 
-        实例组创建时间
+        **参数解释：** 实例组创建时间。Unix时间戳格式，单位为毫秒（ms）。 **取值范围：** 不涉及
 
         :return: The create_time of this PremiumWafPoolResponse.
         :rtype: int
@@ -315,7 +315,7 @@ class PremiumWafPoolResponse:
     def create_time(self, create_time):
         r"""Sets the create_time of this PremiumWafPoolResponse.
 
-        实例组创建时间
+        **参数解释：** 实例组创建时间。Unix时间戳格式，单位为毫秒（ms）。 **取值范围：** 不涉及
 
         :param create_time: The create_time of this PremiumWafPoolResponse.
         :type create_time: int

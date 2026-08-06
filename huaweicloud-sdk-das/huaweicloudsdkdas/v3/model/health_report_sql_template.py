@@ -86,17 +86,28 @@ class HealthReportSqlTemplate:
         self._max_rows_sent = None
         self.discriminator = None
 
-        self.template_id = template_id
-        self.template = template
-        self.databases = databases
-        self.times = times
-        self.avg_query_time = avg_query_time
-        self.max_query_time = max_query_time
-        self.avg_rows_examined = avg_rows_examined
-        self.max_rows_examined = max_rows_examined
-        self.sum_rows_examined = sum_rows_examined
-        self.avg_rows_sent = avg_rows_sent
-        self.max_rows_sent = max_rows_sent
+        if template_id is not None:
+            self.template_id = template_id
+        if template is not None:
+            self.template = template
+        if databases is not None:
+            self.databases = databases
+        if times is not None:
+            self.times = times
+        if avg_query_time is not None:
+            self.avg_query_time = avg_query_time
+        if max_query_time is not None:
+            self.max_query_time = max_query_time
+        if avg_rows_examined is not None:
+            self.avg_rows_examined = avg_rows_examined
+        if max_rows_examined is not None:
+            self.max_rows_examined = max_rows_examined
+        if sum_rows_examined is not None:
+            self.sum_rows_examined = sum_rows_examined
+        if avg_rows_sent is not None:
+            self.avg_rows_sent = avg_rows_sent
+        if max_rows_sent is not None:
+            self.max_rows_sent = max_rows_sent
 
     @property
     def template_id(self):

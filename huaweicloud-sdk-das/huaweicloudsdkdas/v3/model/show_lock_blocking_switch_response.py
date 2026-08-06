@@ -16,28 +16,40 @@ class ShowLockBlockingSwitchResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'success': 'bool',
         'switch_on': 'bool',
         'retention_hours': 'int',
+        'retry': 'bool',
+        'error_msg': 'str',
         'can_open': 'bool',
         'cant_open_msg': 'str'
     }
 
     attribute_map = {
+        'success': 'success',
         'switch_on': 'switch_on',
         'retention_hours': 'retention_hours',
+        'retry': 'retry',
+        'error_msg': 'error_msg',
         'can_open': 'can_open',
         'cant_open_msg': 'cant_open_msg'
     }
 
-    def __init__(self, switch_on=None, retention_hours=None, can_open=None, cant_open_msg=None):
+    def __init__(self, success=None, switch_on=None, retention_hours=None, retry=None, error_msg=None, can_open=None, cant_open_msg=None):
         r"""ShowLockBlockingSwitchResponse
 
         The model defined in huaweicloud sdk
 
+        :param success: 是否成功
+        :type success: bool
         :param switch_on: 开关状态
         :type switch_on: bool
         :param retention_hours: 保存时长
         :type retention_hours: int
+        :param retry: 是否需要重试
+        :type retry: bool
+        :param error_msg: 错误信息
+        :type error_msg: str
         :param can_open: 是否可以开启
         :type can_open: bool
         :param cant_open_msg: 无法开启原因
@@ -46,20 +58,51 @@ class ShowLockBlockingSwitchResponse(SdkResponse):
         
         super().__init__()
 
+        self._success = None
         self._switch_on = None
         self._retention_hours = None
+        self._retry = None
+        self._error_msg = None
         self._can_open = None
         self._cant_open_msg = None
         self.discriminator = None
 
+        if success is not None:
+            self.success = success
         if switch_on is not None:
             self.switch_on = switch_on
         if retention_hours is not None:
             self.retention_hours = retention_hours
+        if retry is not None:
+            self.retry = retry
+        if error_msg is not None:
+            self.error_msg = error_msg
         if can_open is not None:
             self.can_open = can_open
         if cant_open_msg is not None:
             self.cant_open_msg = cant_open_msg
+
+    @property
+    def success(self):
+        r"""Gets the success of this ShowLockBlockingSwitchResponse.
+
+        是否成功
+
+        :return: The success of this ShowLockBlockingSwitchResponse.
+        :rtype: bool
+        """
+        return self._success
+
+    @success.setter
+    def success(self, success):
+        r"""Sets the success of this ShowLockBlockingSwitchResponse.
+
+        是否成功
+
+        :param success: The success of this ShowLockBlockingSwitchResponse.
+        :type success: bool
+        """
+        self._success = success
 
     @property
     def switch_on(self):
@@ -104,6 +147,50 @@ class ShowLockBlockingSwitchResponse(SdkResponse):
         :type retention_hours: int
         """
         self._retention_hours = retention_hours
+
+    @property
+    def retry(self):
+        r"""Gets the retry of this ShowLockBlockingSwitchResponse.
+
+        是否需要重试
+
+        :return: The retry of this ShowLockBlockingSwitchResponse.
+        :rtype: bool
+        """
+        return self._retry
+
+    @retry.setter
+    def retry(self, retry):
+        r"""Sets the retry of this ShowLockBlockingSwitchResponse.
+
+        是否需要重试
+
+        :param retry: The retry of this ShowLockBlockingSwitchResponse.
+        :type retry: bool
+        """
+        self._retry = retry
+
+    @property
+    def error_msg(self):
+        r"""Gets the error_msg of this ShowLockBlockingSwitchResponse.
+
+        错误信息
+
+        :return: The error_msg of this ShowLockBlockingSwitchResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        r"""Sets the error_msg of this ShowLockBlockingSwitchResponse.
+
+        错误信息
+
+        :param error_msg: The error_msg of this ShowLockBlockingSwitchResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
 
     @property
     def can_open(self):

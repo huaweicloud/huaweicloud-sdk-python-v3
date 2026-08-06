@@ -17,6 +17,8 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
     openapi_types = {
         'raw_sql': 'RecommendSqlLimitRuleRespRawSql',
         'average_time': 'float',
+        'keyword': 'str',
+        'recommend_type': 'str',
         'count': 'float',
         'max_time': 'int',
         'exe_time': 'int'
@@ -25,12 +27,14 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
     attribute_map = {
         'raw_sql': 'raw_sql',
         'average_time': 'average_time',
+        'keyword': 'keyword',
+        'recommend_type': 'recommend_type',
         'count': 'count',
-        'max_time': 'maxTime',
+        'max_time': 'max_time',
         'exe_time': 'exe_time'
     }
 
-    def __init__(self, raw_sql=None, average_time=None, count=None, max_time=None, exe_time=None):
+    def __init__(self, raw_sql=None, average_time=None, keyword=None, recommend_type=None, count=None, max_time=None, exe_time=None):
         r"""RecommendSqlLimitRuleRespSqlLimitInfos
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
         :type raw_sql: :class:`huaweicloudsdkdas.v3.RecommendSqlLimitRuleRespRawSql`
         :param average_time: 平均时间
         :type average_time: float
+        :param keyword: 限流关键字
+        :type keyword: str
+        :param recommend_type: 推荐类型
+        :type recommend_type: str
         :param count: 数量
         :type count: float
         :param max_time: mysql 提供， taurus不提供
@@ -51,6 +59,8 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
 
         self._raw_sql = None
         self._average_time = None
+        self._keyword = None
+        self._recommend_type = None
         self._count = None
         self._max_time = None
         self._exe_time = None
@@ -60,6 +70,10 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
             self.raw_sql = raw_sql
         if average_time is not None:
             self.average_time = average_time
+        if keyword is not None:
+            self.keyword = keyword
+        if recommend_type is not None:
+            self.recommend_type = recommend_type
         if count is not None:
             self.count = count
         if max_time is not None:
@@ -106,6 +120,50 @@ class RecommendSqlLimitRuleRespSqlLimitInfos:
         :type average_time: float
         """
         self._average_time = average_time
+
+    @property
+    def keyword(self):
+        r"""Gets the keyword of this RecommendSqlLimitRuleRespSqlLimitInfos.
+
+        限流关键字
+
+        :return: The keyword of this RecommendSqlLimitRuleRespSqlLimitInfos.
+        :rtype: str
+        """
+        return self._keyword
+
+    @keyword.setter
+    def keyword(self, keyword):
+        r"""Sets the keyword of this RecommendSqlLimitRuleRespSqlLimitInfos.
+
+        限流关键字
+
+        :param keyword: The keyword of this RecommendSqlLimitRuleRespSqlLimitInfos.
+        :type keyword: str
+        """
+        self._keyword = keyword
+
+    @property
+    def recommend_type(self):
+        r"""Gets the recommend_type of this RecommendSqlLimitRuleRespSqlLimitInfos.
+
+        推荐类型
+
+        :return: The recommend_type of this RecommendSqlLimitRuleRespSqlLimitInfos.
+        :rtype: str
+        """
+        return self._recommend_type
+
+    @recommend_type.setter
+    def recommend_type(self, recommend_type):
+        r"""Sets the recommend_type of this RecommendSqlLimitRuleRespSqlLimitInfos.
+
+        推荐类型
+
+        :param recommend_type: The recommend_type of this RecommendSqlLimitRuleRespSqlLimitInfos.
+        :type recommend_type: str
+        """
+        self._recommend_type = recommend_type
 
     @property
     def count(self):

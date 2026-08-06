@@ -33,13 +33,13 @@ class HealthReportAnalysisResult:
 
         The model defined in huaweicloud sdk
 
-        :param risk_code: 风险点编码。
+        :param risk_code: 风险点编码
         :type risk_code: str
-        :param risk_level: 风险点级别。
+        :param risk_level: 风险点级别
         :type risk_level: str
-        :param risk_content: 风险点内容。
+        :param risk_content: 风险点内容
         :type risk_content: str
-        :param reasons: 可能原因列表。
+        :param reasons: 可能原因列表
         :type reasons: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskReason`]
         """
         
@@ -51,16 +51,20 @@ class HealthReportAnalysisResult:
         self._reasons = None
         self.discriminator = None
 
-        self.risk_code = risk_code
-        self.risk_level = risk_level
-        self.risk_content = risk_content
-        self.reasons = reasons
+        if risk_code is not None:
+            self.risk_code = risk_code
+        if risk_level is not None:
+            self.risk_level = risk_level
+        if risk_content is not None:
+            self.risk_content = risk_content
+        if reasons is not None:
+            self.reasons = reasons
 
     @property
     def risk_code(self):
         r"""Gets the risk_code of this HealthReportAnalysisResult.
 
-        风险点编码。
+        风险点编码
 
         :return: The risk_code of this HealthReportAnalysisResult.
         :rtype: str
@@ -71,7 +75,7 @@ class HealthReportAnalysisResult:
     def risk_code(self, risk_code):
         r"""Sets the risk_code of this HealthReportAnalysisResult.
 
-        风险点编码。
+        风险点编码
 
         :param risk_code: The risk_code of this HealthReportAnalysisResult.
         :type risk_code: str
@@ -82,7 +86,7 @@ class HealthReportAnalysisResult:
     def risk_level(self):
         r"""Gets the risk_level of this HealthReportAnalysisResult.
 
-        风险点级别。
+        风险点级别
 
         :return: The risk_level of this HealthReportAnalysisResult.
         :rtype: str
@@ -93,7 +97,7 @@ class HealthReportAnalysisResult:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this HealthReportAnalysisResult.
 
-        风险点级别。
+        风险点级别
 
         :param risk_level: The risk_level of this HealthReportAnalysisResult.
         :type risk_level: str
@@ -104,7 +108,7 @@ class HealthReportAnalysisResult:
     def risk_content(self):
         r"""Gets the risk_content of this HealthReportAnalysisResult.
 
-        风险点内容。
+        风险点内容
 
         :return: The risk_content of this HealthReportAnalysisResult.
         :rtype: str
@@ -115,7 +119,7 @@ class HealthReportAnalysisResult:
     def risk_content(self, risk_content):
         r"""Sets the risk_content of this HealthReportAnalysisResult.
 
-        风险点内容。
+        风险点内容
 
         :param risk_content: The risk_content of this HealthReportAnalysisResult.
         :type risk_content: str
@@ -126,7 +130,7 @@ class HealthReportAnalysisResult:
     def reasons(self):
         r"""Gets the reasons of this HealthReportAnalysisResult.
 
-        可能原因列表。
+        可能原因列表
 
         :return: The reasons of this HealthReportAnalysisResult.
         :rtype: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskReason`]
@@ -137,7 +141,7 @@ class HealthReportAnalysisResult:
     def reasons(self, reasons):
         r"""Sets the reasons of this HealthReportAnalysisResult.
 
-        可能原因列表。
+        可能原因列表
 
         :param reasons: The reasons of this HealthReportAnalysisResult.
         :type reasons: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskReason`]

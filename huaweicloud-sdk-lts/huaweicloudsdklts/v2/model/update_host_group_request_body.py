@@ -18,17 +18,21 @@ class UpdateHostGroupRequestBody:
         'host_group_id': 'str',
         'host_group_name': 'str',
         'host_id_list': 'list[str]',
-        'host_group_tag': 'list[HostGroupTag]'
+        'host_group_tag': 'list[HostGroupTag]',
+        'agent_access_type': 'str',
+        'labels': 'list[str]'
     }
 
     attribute_map = {
         'host_group_id': 'host_group_id',
         'host_group_name': 'host_group_name',
         'host_id_list': 'host_id_list',
-        'host_group_tag': 'host_group_tag'
+        'host_group_tag': 'host_group_tag',
+        'agent_access_type': 'agent_access_type',
+        'labels': 'labels'
     }
 
-    def __init__(self, host_group_id=None, host_group_name=None, host_id_list=None, host_group_tag=None):
+    def __init__(self, host_group_id=None, host_group_name=None, host_id_list=None, host_group_tag=None, agent_access_type=None, labels=None):
         r"""UpdateHostGroupRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class UpdateHostGroupRequestBody:
         :type host_id_list: list[str]
         :param host_group_tag: 主机组标签。KEY不能重复
         :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
+        :param agent_access_type: **参数解释：** 主机组类型。支持两种主机组类型，分别为IP类型和LABEL类型。 **约束限制：** 不涉及 **取值范围：** - IP - LABEL **默认取值：** IP。
+        :type agent_access_type: str
+        :param labels: **参数解释：** 自定义标识。主机组类型为LABEL类型，该字段必填。 **约束限制：** 不涉及。
+        :type labels: list[str]
         """
         
         
@@ -49,6 +57,8 @@ class UpdateHostGroupRequestBody:
         self._host_group_name = None
         self._host_id_list = None
         self._host_group_tag = None
+        self._agent_access_type = None
+        self._labels = None
         self.discriminator = None
 
         self.host_group_id = host_group_id
@@ -58,6 +68,10 @@ class UpdateHostGroupRequestBody:
             self.host_id_list = host_id_list
         if host_group_tag is not None:
             self.host_group_tag = host_group_tag
+        if agent_access_type is not None:
+            self.agent_access_type = agent_access_type
+        if labels is not None:
+            self.labels = labels
 
     @property
     def host_group_id(self):
@@ -146,6 +160,50 @@ class UpdateHostGroupRequestBody:
         :type host_group_tag: list[:class:`huaweicloudsdklts.v2.HostGroupTag`]
         """
         self._host_group_tag = host_group_tag
+
+    @property
+    def agent_access_type(self):
+        r"""Gets the agent_access_type of this UpdateHostGroupRequestBody.
+
+        **参数解释：** 主机组类型。支持两种主机组类型，分别为IP类型和LABEL类型。 **约束限制：** 不涉及 **取值范围：** - IP - LABEL **默认取值：** IP。
+
+        :return: The agent_access_type of this UpdateHostGroupRequestBody.
+        :rtype: str
+        """
+        return self._agent_access_type
+
+    @agent_access_type.setter
+    def agent_access_type(self, agent_access_type):
+        r"""Sets the agent_access_type of this UpdateHostGroupRequestBody.
+
+        **参数解释：** 主机组类型。支持两种主机组类型，分别为IP类型和LABEL类型。 **约束限制：** 不涉及 **取值范围：** - IP - LABEL **默认取值：** IP。
+
+        :param agent_access_type: The agent_access_type of this UpdateHostGroupRequestBody.
+        :type agent_access_type: str
+        """
+        self._agent_access_type = agent_access_type
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this UpdateHostGroupRequestBody.
+
+        **参数解释：** 自定义标识。主机组类型为LABEL类型，该字段必填。 **约束限制：** 不涉及。
+
+        :return: The labels of this UpdateHostGroupRequestBody.
+        :rtype: list[str]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this UpdateHostGroupRequestBody.
+
+        **参数解释：** 自定义标识。主机组类型为LABEL类型，该字段必填。 **约束限制：** 不涉及。
+
+        :param labels: The labels of this UpdateHostGroupRequestBody.
+        :type labels: list[str]
+        """
+        self._labels = labels
 
     def to_dict(self):
         result = {}

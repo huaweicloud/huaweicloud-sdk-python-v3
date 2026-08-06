@@ -86,17 +86,28 @@ class HealthReportInstanceInfo:
         self._engine_version = None
         self.discriminator = None
 
-        self.tenant_id = tenant_id
-        self.project_id = project_id
-        self.instance_id = instance_id
-        self.master_node_id = master_node_id
-        self.instance_name = instance_name
-        self.cpu = cpu
-        self.mem = mem
-        self.disk_size = disk_size
-        self.disk_type = disk_type
-        self.engine = engine
-        self.engine_version = engine_version
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
+        if project_id is not None:
+            self.project_id = project_id
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if master_node_id is not None:
+            self.master_node_id = master_node_id
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if cpu is not None:
+            self.cpu = cpu
+        if mem is not None:
+            self.mem = mem
+        if disk_size is not None:
+            self.disk_size = disk_size
+        if disk_type is not None:
+            self.disk_type = disk_type
+        if engine is not None:
+            self.engine = engine
+        if engine_version is not None:
+            self.engine_version = engine_version
 
     @property
     def tenant_id(self):

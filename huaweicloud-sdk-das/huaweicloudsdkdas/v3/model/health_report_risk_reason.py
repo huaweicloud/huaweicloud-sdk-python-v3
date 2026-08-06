@@ -31,11 +31,11 @@ class HealthReportRiskReason:
 
         The model defined in huaweicloud sdk
 
-        :param reason_code: 可能原因编码。
+        :param reason_code: 可能原因编码
         :type reason_code: str
-        :param reason_content: 可能原因内容。
+        :param reason_content: 可能原因内容
         :type reason_content: str
-        :param suggestions: 建议优化措施列表。
+        :param suggestions: 建议优化措施列表
         :type suggestions: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskSuggestion`]
         """
         
@@ -46,15 +46,18 @@ class HealthReportRiskReason:
         self._suggestions = None
         self.discriminator = None
 
-        self.reason_code = reason_code
-        self.reason_content = reason_content
-        self.suggestions = suggestions
+        if reason_code is not None:
+            self.reason_code = reason_code
+        if reason_content is not None:
+            self.reason_content = reason_content
+        if suggestions is not None:
+            self.suggestions = suggestions
 
     @property
     def reason_code(self):
         r"""Gets the reason_code of this HealthReportRiskReason.
 
-        可能原因编码。
+        可能原因编码
 
         :return: The reason_code of this HealthReportRiskReason.
         :rtype: str
@@ -65,7 +68,7 @@ class HealthReportRiskReason:
     def reason_code(self, reason_code):
         r"""Sets the reason_code of this HealthReportRiskReason.
 
-        可能原因编码。
+        可能原因编码
 
         :param reason_code: The reason_code of this HealthReportRiskReason.
         :type reason_code: str
@@ -76,7 +79,7 @@ class HealthReportRiskReason:
     def reason_content(self):
         r"""Gets the reason_content of this HealthReportRiskReason.
 
-        可能原因内容。
+        可能原因内容
 
         :return: The reason_content of this HealthReportRiskReason.
         :rtype: str
@@ -87,7 +90,7 @@ class HealthReportRiskReason:
     def reason_content(self, reason_content):
         r"""Sets the reason_content of this HealthReportRiskReason.
 
-        可能原因内容。
+        可能原因内容
 
         :param reason_content: The reason_content of this HealthReportRiskReason.
         :type reason_content: str
@@ -98,7 +101,7 @@ class HealthReportRiskReason:
     def suggestions(self):
         r"""Gets the suggestions of this HealthReportRiskReason.
 
-        建议优化措施列表。
+        建议优化措施列表
 
         :return: The suggestions of this HealthReportRiskReason.
         :rtype: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskSuggestion`]
@@ -109,7 +112,7 @@ class HealthReportRiskReason:
     def suggestions(self, suggestions):
         r"""Sets the suggestions of this HealthReportRiskReason.
 
-        建议优化措施列表。
+        建议优化措施列表
 
         :param suggestions: The suggestions of this HealthReportRiskReason.
         :type suggestions: list[:class:`huaweicloudsdkdas.v3.HealthReportRiskSuggestion`]

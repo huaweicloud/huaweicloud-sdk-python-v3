@@ -565,12 +565,13 @@ from huaweicloudsdkdataartsstudio.v1.model.instance_host_dto import InstanceHost
 from huaweicloudsdkdataartsstudio.v1.model.instance_node_dto import InstanceNodeDTO
 from huaweicloudsdkdataartsstudio.v1.model.instance_overview_dto import InstanceOverviewDTO
 from huaweicloudsdkdataartsstudio.v1.model.instance_overview_vo import InstanceOverviewVo
+from huaweicloudsdkdataartsstudio.v1.model.job_alarm import JobAlarm
 from huaweicloudsdkdataartsstudio.v1.model.job_and_node_info import JobAndNodeInfo
 from huaweicloudsdkdataartsstudio.v1.model.job_info_request import JobInfoRequest
 from huaweicloudsdkdataartsstudio.v1.model.job_instance import JobInstance
 from huaweicloudsdkdataartsstudio.v1.model.job_log_request import JobLogRequest
 from huaweicloudsdkdataartsstudio.v1.model.job_param import JobParam
-from huaweicloudsdkdataartsstudio.v1.model.job_resp import JobResp
+from huaweicloudsdkdataartsstudio.v1.model.job_result_v2 import JobResultV2
 from huaweicloudsdkdataartsstudio.v1.model.kerberos_status import KerberosStatus
 from huaweicloudsdkdataartsstudio.v1.model.l1 import L1
 from huaweicloudsdkdataartsstudio.v1.model.l1_statistic import L1Statistic
@@ -809,6 +810,8 @@ from huaweicloudsdkdataartsstudio.v1.model.list_table_models_request import List
 from huaweicloudsdkdataartsstudio.v1.model.list_table_models_response import ListTableModelsResponse
 from huaweicloudsdkdataartsstudio.v1.model.list_table_models_result_data import ListTableModelsResultData
 from huaweicloudsdkdataartsstudio.v1.model.list_table_models_result_data_value import ListTableModelsResultDataValue
+from huaweicloudsdkdataartsstudio.v1.model.list_task_table_reference_detail_request import ListTaskTableReferenceDetailRequest
+from huaweicloudsdkdataartsstudio.v1.model.list_task_table_reference_detail_response import ListTaskTableReferenceDetailResponse
 from huaweicloudsdkdataartsstudio.v1.model.list_workspace_roles_request import ListWorkspaceRolesRequest
 from huaweicloudsdkdataartsstudio.v1.model.list_workspace_roles_response import ListWorkspaceRolesResponse
 from huaweicloudsdkdataartsstudio.v1.model.list_workspaces_for_user_request import ListWorkspacesForUserRequest
@@ -1223,6 +1226,7 @@ from huaweicloudsdkdataartsstudio.v1.model.tag_record_vo import TagRecordVO
 from huaweicloudsdkdataartsstudio.v1.model.tag_request import TagRequest
 from huaweicloudsdkdataartsstudio.v1.model.tag_vo import TagVO
 from huaweicloudsdkdataartsstudio.v1.model.tags_result_data import TagsResultData
+from huaweicloudsdkdataartsstudio.v1.model.task_table_reference_detail_response import TaskTableReferenceDetailResponse
 from huaweicloudsdkdataartsstudio.v1.model.tb_guid import TbGuid
 from huaweicloudsdkdataartsstudio.v1.model.tb_logic_guid import TbLogicGuid
 from huaweicloudsdkdataartsstudio.v1.model.template_list_ro import TemplateListRO

@@ -17,7 +17,7 @@ class ListFactoryJobsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'jobs': 'list[JobResp]'
+        'jobs': 'list[JobResultV2]'
     }
 
     attribute_map = {
@@ -30,10 +30,10 @@ class ListFactoryJobsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 作业数量
+        :param total: 作业总数。
         :type total: int
-        :param jobs: 作业列表
-        :type jobs: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResp`]
+        :param jobs: 作业列表。
+        :type jobs: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResultV2`]
         """
         
         super().__init__()
@@ -51,7 +51,7 @@ class ListFactoryJobsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListFactoryJobsResponse.
 
-        作业数量
+        作业总数。
 
         :return: The total of this ListFactoryJobsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListFactoryJobsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListFactoryJobsResponse.
 
-        作业数量
+        作业总数。
 
         :param total: The total of this ListFactoryJobsResponse.
         :type total: int
@@ -73,10 +73,10 @@ class ListFactoryJobsResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ListFactoryJobsResponse.
 
-        作业列表
+        作业列表。
 
         :return: The jobs of this ListFactoryJobsResponse.
-        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResp`]
+        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResultV2`]
         """
         return self._jobs
 
@@ -84,10 +84,10 @@ class ListFactoryJobsResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ListFactoryJobsResponse.
 
-        作业列表
+        作业列表。
 
         :param jobs: The jobs of this ListFactoryJobsResponse.
-        :type jobs: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResp`]
+        :type jobs: list[:class:`huaweicloudsdkdataartsstudio.v1.JobResultV2`]
         """
         self._jobs = jobs
 

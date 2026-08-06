@@ -19,7 +19,9 @@ class LtslogInfo:
         'id': 'str',
         'log_type': 'str',
         'log_desc': 'str',
-        'access_url': 'str'
+        'access_url': 'str',
+        'report_interval': 'int',
+        'max_report_size': 'int'
     }
 
     attribute_map = {
@@ -27,15 +29,17 @@ class LtslogInfo:
         'id': 'id',
         'log_type': 'log_type',
         'log_desc': 'log_desc',
-        'access_url': 'access_url'
+        'access_url': 'access_url',
+        'report_interval': 'report_interval',
+        'max_report_size': 'max_report_size'
     }
 
-    def __init__(self, status=None, id=None, log_type=None, log_desc=None, access_url=None):
+    def __init__(self, status=None, id=None, log_type=None, log_desc=None, access_url=None, report_interval=None, max_report_size=None):
         r"""LtslogInfo
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
+        :param status: **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - ARCHIVED：历史日志流，不再上报但仍保留LTS访问入口。
         :type status: str
         :param id: **参数解释**： 日志ID。 **取值范围**： 不涉及。
         :type id: str
@@ -45,6 +49,10 @@ class LtslogInfo:
         :type log_desc: str
         :param access_url: **参数解释**： LTS日志访问URL。 **取值范围**： 不涉及。
         :type access_url: str
+        :param report_interval: **参数解释**： 日志上报频率，单位秒。 **约束限制**： 仅 status&#x3D;OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 5~60。
+        :type report_interval: int
+        :param max_report_size: **参数解释**： 单次上报大小，单位字节。 **约束限制**： 仅 status&#x3D;OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 51200~1048576。
+        :type max_report_size: int
         """
         
         
@@ -54,6 +62,8 @@ class LtslogInfo:
         self._log_type = None
         self._log_desc = None
         self._access_url = None
+        self._report_interval = None
+        self._max_report_size = None
         self.discriminator = None
 
         self.status = status
@@ -61,12 +71,16 @@ class LtslogInfo:
         self.log_type = log_type
         self.log_desc = log_desc
         self.access_url = access_url
+        if report_interval is not None:
+            self.report_interval = report_interval
+        if max_report_size is not None:
+            self.max_report_size = max_report_size
 
     @property
     def status(self):
         r"""Gets the status of this LtslogInfo.
 
-        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
+        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - ARCHIVED：历史日志流，不再上报但仍保留LTS访问入口。
 
         :return: The status of this LtslogInfo.
         :rtype: str
@@ -77,7 +91,7 @@ class LtslogInfo:
     def status(self, status):
         r"""Sets the status of this LtslogInfo.
 
-        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
+        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - ARCHIVED：历史日志流，不再上报但仍保留LTS访问入口。
 
         :param status: The status of this LtslogInfo.
         :type status: str
@@ -171,6 +185,50 @@ class LtslogInfo:
         :type access_url: str
         """
         self._access_url = access_url
+
+    @property
+    def report_interval(self):
+        r"""Gets the report_interval of this LtslogInfo.
+
+        **参数解释**： 日志上报频率，单位秒。 **约束限制**： 仅 status=OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 5~60。
+
+        :return: The report_interval of this LtslogInfo.
+        :rtype: int
+        """
+        return self._report_interval
+
+    @report_interval.setter
+    def report_interval(self, report_interval):
+        r"""Sets the report_interval of this LtslogInfo.
+
+        **参数解释**： 日志上报频率，单位秒。 **约束限制**： 仅 status=OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 5~60。
+
+        :param report_interval: The report_interval of this LtslogInfo.
+        :type report_interval: int
+        """
+        self._report_interval = report_interval
+
+    @property
+    def max_report_size(self):
+        r"""Gets the max_report_size of this LtslogInfo.
+
+        **参数解释**： 单次上报大小，单位字节。 **约束限制**： 仅 status=OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 51200~1048576。
+
+        :return: The max_report_size of this LtslogInfo.
+        :rtype: int
+        """
+        return self._max_report_size
+
+    @max_report_size.setter
+    def max_report_size(self, max_report_size):
+        r"""Sets the max_report_size of this LtslogInfo.
+
+        **参数解释**： 单次上报大小，单位字节。 **约束限制**： 仅 status=OPEN 的日志流返回此字段，ARCHIVED 状态不返回。 **取值范围**： 51200~1048576。
+
+        :param max_report_size: The max_report_size of this LtslogInfo.
+        :type max_report_size: int
+        """
+        self._max_report_size = max_report_size
 
     def to_dict(self):
         result = {}

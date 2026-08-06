@@ -17,6 +17,7 @@ class HealthReportDiskStat:
     openapi_types = {
         'peak_stats': 'list[HealthReportSingleValueStat]',
         'ratio_stats': 'list[HealthReportRatioStat]',
+        'last_stat': 'list[HealthReportSingleValueStat]',
         'analyze_success': 'bool',
         'error_message': 'str'
     }
@@ -24,11 +25,12 @@ class HealthReportDiskStat:
     attribute_map = {
         'peak_stats': 'peak_stats',
         'ratio_stats': 'ratio_stats',
+        'last_stat': 'last_stat',
         'analyze_success': 'analyze_success',
         'error_message': 'error_message'
     }
 
-    def __init__(self, peak_stats=None, ratio_stats=None, analyze_success=None, error_message=None):
+    def __init__(self, peak_stats=None, ratio_stats=None, last_stat=None, analyze_success=None, error_message=None):
         r"""HealthReportDiskStat
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class HealthReportDiskStat:
         :type peak_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
         :param ratio_stats: 比率值数据列表。
         :type ratio_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportRatioStat`]
+        :param last_stat: 最新统计信息列表。
+        :type last_stat: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
         :param analyze_success: 统计分析是否成功。
         :type analyze_success: bool
         :param error_message: 错误信息。
@@ -47,14 +51,21 @@ class HealthReportDiskStat:
 
         self._peak_stats = None
         self._ratio_stats = None
+        self._last_stat = None
         self._analyze_success = None
         self._error_message = None
         self.discriminator = None
 
-        self.peak_stats = peak_stats
-        self.ratio_stats = ratio_stats
-        self.analyze_success = analyze_success
-        self.error_message = error_message
+        if peak_stats is not None:
+            self.peak_stats = peak_stats
+        if ratio_stats is not None:
+            self.ratio_stats = ratio_stats
+        if last_stat is not None:
+            self.last_stat = last_stat
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def peak_stats(self):
@@ -99,6 +110,28 @@ class HealthReportDiskStat:
         :type ratio_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportRatioStat`]
         """
         self._ratio_stats = ratio_stats
+
+    @property
+    def last_stat(self):
+        r"""Gets the last_stat of this HealthReportDiskStat.
+
+        最新统计信息列表。
+
+        :return: The last_stat of this HealthReportDiskStat.
+        :rtype: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
+        """
+        return self._last_stat
+
+    @last_stat.setter
+    def last_stat(self, last_stat):
+        r"""Sets the last_stat of this HealthReportDiskStat.
+
+        最新统计信息列表。
+
+        :param last_stat: The last_stat of this HealthReportDiskStat.
+        :type last_stat: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
+        """
+        self._last_stat = last_stat
 
     @property
     def analyze_success(self):

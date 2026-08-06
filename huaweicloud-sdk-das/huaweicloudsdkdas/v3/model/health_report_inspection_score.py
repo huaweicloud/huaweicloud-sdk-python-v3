@@ -91,18 +91,30 @@ class HealthReportInspectionScore:
         self._lost_points_detail_list = None
         self.discriminator = None
 
-        self.score = score
-        self.critical = critical
-        self.medium = medium
-        self.light = light
-        self.cpu_usage = cpu_usage
-        self.mem_usage = mem_usage
-        self.space_usage = space_usage
-        self.connection_rate = connection_rate
-        self.iops_usage = iops_usage
-        self.thread_running = thread_running
-        self.slow_sql_total = slow_sql_total
-        self.lost_points_detail_list = lost_points_detail_list
+        if score is not None:
+            self.score = score
+        if critical is not None:
+            self.critical = critical
+        if medium is not None:
+            self.medium = medium
+        if light is not None:
+            self.light = light
+        if cpu_usage is not None:
+            self.cpu_usage = cpu_usage
+        if mem_usage is not None:
+            self.mem_usage = mem_usage
+        if space_usage is not None:
+            self.space_usage = space_usage
+        if connection_rate is not None:
+            self.connection_rate = connection_rate
+        if iops_usage is not None:
+            self.iops_usage = iops_usage
+        if thread_running is not None:
+            self.thread_running = thread_running
+        if slow_sql_total is not None:
+            self.slow_sql_total = slow_sql_total
+        if lost_points_detail_list is not None:
+            self.lost_points_detail_list = lost_points_detail_list
 
     @property
     def score(self):

@@ -99,8 +99,110 @@ def test_add_stream_handler_to_sdk_logger():
     logger = logging.getLogger(logger_name)
     assert len(logger.handlers) == 1
     assert isinstance(logger.handlers[0], StreamHandler)
+    assert logger.handlers[0].level == logging.DEBUG
 
     logger.removeHandler(logger.handlers[0])
+
+
+def test_stream_logger_no_duplicate_on_multiple_build():
+    for _ in range(3):
+        ClientBuilder(Client) \
+            .with_http_config(config) \
+            .with_credentials(credentials) \
+            .with_endpoint(endpoint) \
+            .with_stream_log(log_level=logging.DEBUG) \
+            .build()
+
+    logger = logging.getLogger(logger_name)
+    assert len(logger.handlers) == 1
+    assert isinstance(logger.handlers[0], StreamHandler)
+    assert logger.handlers[0].level == logging.DEBUG
+
+    logger.removeHandler(logger.handlers[0])
+
+
+def test_file_logger_no_duplicate_on_multiple_build():
+    for _ in range(3):
+        ClientBuilder(Client) \
+            .with_http_config(config) \
+            .with_credentials(credentials) \
+            .with_file_log(path="tests.log", log_level=logging.DEBUG, max_bytes=1024, backup_count=1) \
+            .with_endpoint(endpoint) \
+            .build()
+
+    logger = logging.getLogger(logger_name)
+    assert len(logger.handlers) == 1
+    assert isinstance(logger.handlers[0], RotatingFileHandler)
+    assert logger.handlers[0].level == logging.DEBUG
+
+    logger.removeHandler(logger.handlers[0])
+    os.remove("tests.log")
+
+
+def test_stream_and_file_logger_no_duplicate_on_multiple_build():
+    for _ in range(3):
+        ClientBuilder(Client) \
+            .with_http_config(config) \
+            .with_credentials(credentials) \
+            .with_endpoint(endpoint) \
+            .with_stream_log(log_level=logging.DEBUG) \
+            .with_file_log(path="tests.log", log_level=logging.DEBUG, max_bytes=1024, backup_count=1) \
+            .build()
+
+    logger = logging.getLogger(logger_name)
+    assert len(logger.handlers) == 2
+    stream_count = sum(1 for h in logger.handlers if isinstance(h, StreamHandler) and not isinstance(h, RotatingFileHandler))
+    file_count = sum(1 for h in logger.handlers if isinstance(h, RotatingFileHandler))
+    assert stream_count == 1
+    assert file_count == 1
+    assert logger.handlers[0].level == logging.DEBUG or logger.handlers[1].level == logging.DEBUG
+
+    for handler in logger.handlers[:]:
+        logger.removeHandler(handler)
+    os.remove("tests.log")
+
+
+def test_stream_logger_cleans_up_legacy_duplicate_handlers():
+    logger = logging.getLogger(logger_name)
+    for _ in range(3):
+        logger.addHandler(logging.StreamHandler())
+
+    ClientBuilder(Client) \
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_endpoint(endpoint) \
+        .with_stream_log(log_level=logging.DEBUG) \
+        .build()
+
+    stream_handlers = [h for h in logger.handlers
+                       if isinstance(h, StreamHandler) and not isinstance(h, RotatingFileHandler)]
+    assert len(stream_handlers) == 1
+
+    for handler in logger.handlers[:]:
+        logger.removeHandler(handler)
+
+
+def test_file_logger_cleans_up_legacy_duplicate_handlers():
+    logger = logging.getLogger(logger_name)
+    for _ in range(3):
+        logger.addHandler(RotatingFileHandler("legacy.log"))
+
+    ClientBuilder(Client) \
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_file_log(path="tests.log", log_level=logging.DEBUG, max_bytes=1024, backup_count=1) \
+        .with_endpoint(endpoint) \
+        .build()
+
+    file_handlers = [h for h in logger.handlers if isinstance(h, RotatingFileHandler)]
+    assert len(file_handlers) == 1
+    assert file_handlers[0].baseFilename.endswith("tests.log")
+
+    for handler in logger.handlers[:]:
+        handler.close()
+        logger.removeHandler(handler)
+    os.remove("tests.log")
+    os.remove("legacy.log")
 
 
 def test_client_with_endpoint():

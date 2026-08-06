@@ -19,6 +19,7 @@ class ListLogsResponse(SdkResponse):
         'count': 'int',
         'logs': 'list[LogContents]',
         'is_query_complete': 'bool',
+        'scroll_id': 'str',
         'analysis_logs': 'list[object]'
     }
 
@@ -26,10 +27,11 @@ class ListLogsResponse(SdkResponse):
         'count': 'count',
         'logs': 'logs',
         'is_query_complete': 'isQueryComplete',
+        'scroll_id': 'scrollId',
         'analysis_logs': 'analysisLogs'
     }
 
-    def __init__(self, count=None, logs=None, is_query_complete=None, analysis_logs=None):
+    def __init__(self, count=None, logs=None, is_query_complete=None, scroll_id=None, analysis_logs=None):
         r"""ListLogsResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class ListLogsResponse(SdkResponse):
         :type logs: list[:class:`huaweicloudsdklts.v2.LogContents`]
         :param is_query_complete: 是否查询完成。
         :type is_query_complete: bool
+        :param scroll_id: **参数解释：** 分页查询时，若返回结果中包含该字段，下一次请求体需要增加scroll_Id参数参与分页查询。 **取值范围：** 不涉及。
+        :type scroll_id: str
         :param analysis_logs: 分析日志返回响应体
         :type analysis_logs: list[object]
         """
@@ -49,6 +53,7 @@ class ListLogsResponse(SdkResponse):
         self._count = None
         self._logs = None
         self._is_query_complete = None
+        self._scroll_id = None
         self._analysis_logs = None
         self.discriminator = None
 
@@ -58,6 +63,8 @@ class ListLogsResponse(SdkResponse):
             self.logs = logs
         if is_query_complete is not None:
             self.is_query_complete = is_query_complete
+        if scroll_id is not None:
+            self.scroll_id = scroll_id
         if analysis_logs is not None:
             self.analysis_logs = analysis_logs
 
@@ -126,6 +133,28 @@ class ListLogsResponse(SdkResponse):
         :type is_query_complete: bool
         """
         self._is_query_complete = is_query_complete
+
+    @property
+    def scroll_id(self):
+        r"""Gets the scroll_id of this ListLogsResponse.
+
+        **参数解释：** 分页查询时，若返回结果中包含该字段，下一次请求体需要增加scroll_Id参数参与分页查询。 **取值范围：** 不涉及。
+
+        :return: The scroll_id of this ListLogsResponse.
+        :rtype: str
+        """
+        return self._scroll_id
+
+    @scroll_id.setter
+    def scroll_id(self, scroll_id):
+        r"""Sets the scroll_id of this ListLogsResponse.
+
+        **参数解释：** 分页查询时，若返回结果中包含该字段，下一次请求体需要增加scroll_Id参数参与分页查询。 **取值范围：** 不涉及。
+
+        :param scroll_id: The scroll_id of this ListLogsResponse.
+        :type scroll_id: str
+        """
+        self._scroll_id = scroll_id
 
     @property
     def analysis_logs(self):

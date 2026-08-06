@@ -46,9 +46,12 @@ class HealthReportInspectionStat:
         self._error_message = None
         self.discriminator = None
 
-        self.inspection_score = inspection_score
-        self.analyze_success = analyze_success
-        self.error_message = error_message
+        if inspection_score is not None:
+            self.inspection_score = inspection_score
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def inspection_score(self):

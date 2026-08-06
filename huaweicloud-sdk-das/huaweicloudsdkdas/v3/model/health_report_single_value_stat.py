@@ -61,12 +61,18 @@ class HealthReportSingleValueStat:
         self._timestamp = None
         self.discriminator = None
 
-        self.metric = metric
-        self.value = value
-        self.max_value = max_value
-        self.normalized = normalized
-        self.stage = stage
-        self.timestamp = timestamp
+        if metric is not None:
+            self.metric = metric
+        if value is not None:
+            self.value = value
+        if max_value is not None:
+            self.max_value = max_value
+        if normalized is not None:
+            self.normalized = normalized
+        if stage is not None:
+            self.stage = stage
+        if timestamp is not None:
+            self.timestamp = timestamp
 
     @property
     def metric(self):

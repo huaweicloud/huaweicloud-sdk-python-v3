@@ -30,9 +30,9 @@ class ListInstancePoolsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 实例组总数
+        :param total: **参数解释：** 符合条件的实例组总数。 **取值范围：** 不涉及
         :type total: int
-        :param items: 实例组列表
+        :param items: **参数解释：** 实例组列表，详细字段说明请参见PremiumWafPoolResponse object。 **取值范围：** 不涉及
         :type items: list[:class:`huaweicloudsdkwaf.v1.PremiumWafPoolResponse`]
         """
         
@@ -51,7 +51,7 @@ class ListInstancePoolsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListInstancePoolsResponse.
 
-        实例组总数
+        **参数解释：** 符合条件的实例组总数。 **取值范围：** 不涉及
 
         :return: The total of this ListInstancePoolsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListInstancePoolsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstancePoolsResponse.
 
-        实例组总数
+        **参数解释：** 符合条件的实例组总数。 **取值范围：** 不涉及
 
         :param total: The total of this ListInstancePoolsResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListInstancePoolsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListInstancePoolsResponse.
 
-        实例组列表
+        **参数解释：** 实例组列表，详细字段说明请参见PremiumWafPoolResponse object。 **取值范围：** 不涉及
 
         :return: The items of this ListInstancePoolsResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafPoolResponse`]
@@ -84,7 +84,7 @@ class ListInstancePoolsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListInstancePoolsResponse.
 
-        实例组列表
+        **参数解释：** 实例组列表，详细字段说明请参见PremiumWafPoolResponse object。 **取值范围：** 不涉及
 
         :param items: The items of this ListInstancePoolsResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.PremiumWafPoolResponse`]

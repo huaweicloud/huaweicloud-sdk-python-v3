@@ -194,6 +194,9 @@ from huaweicloudsdkwaf.v1.model.create_ip_reputation_rule_response_body_action i
 from huaweicloudsdkwaf.v1.model.create_policy_request import CreatePolicyRequest
 from huaweicloudsdkwaf.v1.model.create_policy_request_body import CreatePolicyRequestBody
 from huaweicloudsdkwaf.v1.model.create_policy_response import CreatePolicyResponse
+from huaweicloudsdkwaf.v1.model.create_pool_request import CreatePoolRequest
+from huaweicloudsdkwaf.v1.model.create_pool_request_body import CreatePoolRequestBody
+from huaweicloudsdkwaf.v1.model.create_pool_response import CreatePoolResponse
 from huaweicloudsdkwaf.v1.model.create_premium_host_request import CreatePremiumHostRequest
 from huaweicloudsdkwaf.v1.model.create_premium_host_request_body import CreatePremiumHostRequestBody
 from huaweicloudsdkwaf.v1.model.create_premium_host_response import CreatePremiumHostResponse
@@ -258,6 +261,8 @@ from huaweicloudsdkwaf.v1.model.delete_ip_reputation_rule_response import Delete
 from huaweicloudsdkwaf.v1.model.delete_ip_reputation_rule_response_body_action import DeleteIpReputationRuleResponseBodyAction
 from huaweicloudsdkwaf.v1.model.delete_policy_request import DeletePolicyRequest
 from huaweicloudsdkwaf.v1.model.delete_policy_response import DeletePolicyResponse
+from huaweicloudsdkwaf.v1.model.delete_pool_request import DeletePoolRequest
+from huaweicloudsdkwaf.v1.model.delete_pool_response import DeletePoolResponse
 from huaweicloudsdkwaf.v1.model.delete_premium_host_request import DeletePremiumHostRequest
 from huaweicloudsdkwaf.v1.model.delete_premium_host_response import DeletePremiumHostResponse
 from huaweicloudsdkwaf.v1.model.delete_privacy_rule_request import DeletePrivacyRuleRequest
@@ -517,6 +522,8 @@ from huaweicloudsdkwaf.v1.model.show_policy_geoip_map_request import ShowPolicyG
 from huaweicloudsdkwaf.v1.model.show_policy_geoip_map_response import ShowPolicyGeoipMapResponse
 from huaweicloudsdkwaf.v1.model.show_policy_request import ShowPolicyRequest
 from huaweicloudsdkwaf.v1.model.show_policy_response import ShowPolicyResponse
+from huaweicloudsdkwaf.v1.model.show_pool_request import ShowPoolRequest
+from huaweicloudsdkwaf.v1.model.show_pool_response import ShowPoolResponse
 from huaweicloudsdkwaf.v1.model.show_premium_host_request import ShowPremiumHostRequest
 from huaweicloudsdkwaf.v1.model.show_premium_host_response import ShowPremiumHostResponse
 from huaweicloudsdkwaf.v1.model.show_privacy_rule_request import ShowPrivacyRuleRequest

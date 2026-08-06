@@ -4982,6 +4982,10 @@ class ModelArtsClient(Client):
             path_params['name'] = local_var_params['name']
 
         query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -5133,6 +5137,12 @@ class ModelArtsClient(Client):
             path_params['deployment_id'] = local_var_params['deployment_id']
 
         query_params = []
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

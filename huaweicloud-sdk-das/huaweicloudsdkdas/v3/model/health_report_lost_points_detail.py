@@ -46,9 +46,12 @@ class HealthReportLostPointsDetail:
         self._risk_level = None
         self.discriminator = None
 
-        self.metric = metric
-        self.lost_points = lost_points
-        self.risk_level = risk_level
+        if metric is not None:
+            self.metric = metric
+        if lost_points is not None:
+            self.lost_points = lost_points
+        if risk_level is not None:
+            self.risk_level = risk_level
 
     @property
     def metric(self):

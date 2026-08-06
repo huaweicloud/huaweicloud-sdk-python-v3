@@ -31,7 +31,9 @@ class ListPortsRequest:
         'vpc_id': 'list[str]',
         'allowed_address_pairs': 'list[str]',
         'instance_id': 'str',
-        'instance_type': 'str'
+        'instance_type': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class ListPortsRequest:
         'vpc_id': 'vpc_id',
         'allowed_address_pairs': 'allowed_address_pairs',
         'instance_id': 'instance_id',
-        'instance_type': 'instance_type'
+        'instance_type': 'instance_type',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, name=None, admin_state_up=None, status=None, virsubnet_id=None, device_id=None, mac_address=None, device_owner=None, device_owner_prefixlike=None, description=None, bindinghost_id=None, private_ips=None, security_groups=None, vpc_id=None, allowed_address_pairs=None, instance_id=None, instance_type=None):
+    def __init__(self, id=None, name=None, admin_state_up=None, status=None, virsubnet_id=None, device_id=None, mac_address=None, device_owner=None, device_owner_prefixlike=None, description=None, bindinghost_id=None, private_ips=None, security_groups=None, vpc_id=None, allowed_address_pairs=None, instance_id=None, instance_type=None, limit=None, marker=None):
         r"""ListPortsRequest
 
         The model defined in huaweicloud sdk
@@ -93,6 +97,10 @@ class ListPortsRequest:
         :type instance_id: str
         :param instance_type: **参数解释**： 端口所属的云服务实例类型，例如“RDS”。 **取值范围**： 不涉及。
         :type instance_type: str
+        :param limit: **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+        :type limit: int
+        :param marker: **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+        :type marker: str
         """
         
         
@@ -114,6 +122,8 @@ class ListPortsRequest:
         self._allowed_address_pairs = None
         self._instance_id = None
         self._instance_type = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -150,6 +160,10 @@ class ListPortsRequest:
             self.instance_id = instance_id
         if instance_type is not None:
             self.instance_type = instance_type
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -524,6 +538,50 @@ class ListPortsRequest:
         :type instance_type: str
         """
         self._instance_type = instance_type
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListPortsRequest.
+
+        **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+
+        :return: The limit of this ListPortsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListPortsRequest.
+
+        **参数解释**： 每页返回的个数。 **取值范围**： 0-2000。
+
+        :param limit: The limit of this ListPortsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListPortsRequest.
+
+        **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+
+        :return: The marker of this ListPortsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListPortsRequest.
+
+        **参数解释**： 分页查询起始的资源ID，为空时查询第一页。 **取值范围**： 带“-”的标准UUID格式。
+
+        :param marker: The marker of this ListPortsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

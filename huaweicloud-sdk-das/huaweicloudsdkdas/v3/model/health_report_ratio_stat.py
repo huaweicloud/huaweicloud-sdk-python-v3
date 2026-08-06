@@ -56,11 +56,16 @@ class HealthReportRatioStat:
         self._light_ratio = None
         self.discriminator = None
 
-        self.metric = metric
-        self.max_value = max_value
-        self.critical_ratio = critical_ratio
-        self.medium_ratio = medium_ratio
-        self.light_ratio = light_ratio
+        if metric is not None:
+            self.metric = metric
+        if max_value is not None:
+            self.max_value = max_value
+        if critical_ratio is not None:
+            self.critical_ratio = critical_ratio
+        if medium_ratio is not None:
+            self.medium_ratio = medium_ratio
+        if light_ratio is not None:
+            self.light_ratio = light_ratio
 
     @property
     def metric(self):

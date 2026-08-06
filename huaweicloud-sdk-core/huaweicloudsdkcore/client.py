@@ -251,24 +251,32 @@ class Client:
 
     def add_stream_logger(self, stream: TextIO, log_level: Union[int, str], format_string: Optional[str]):
         self._logger.setLevel(log_level)
+
+        for handler in self._logger.handlers[:]:
+            if isinstance(handler, logging.StreamHandler) and not isinstance(handler, logging.FileHandler):
+                handler.close()
+                self._logger.removeHandler(handler)
+
         stream_handler = logging.StreamHandler(stream)
         stream_handler.setLevel(log_level)
         formatter = logging.Formatter(format_string or self._LOG_FORMAT)
         stream_handler.setFormatter(formatter)
-
-        if stream_handler not in self._logger.handlers:
-            self._logger.addHandler(stream_handler)
+        self._logger.addHandler(stream_handler)
 
     def add_file_logger(self, path: str, log_level: Union[int, str], max_bytes: int, backup_count: int,
                         format_string: Optional[str]):
         self._logger.setLevel(log_level)
+
+        for handler in self._logger.handlers[:]:
+            if isinstance(handler, logging.FileHandler):
+                handler.close()
+                self._logger.removeHandler(handler)
+
         file_handler = RotatingFileHandler(path, maxBytes=max_bytes, backupCount=backup_count)
         file_handler.setLevel(log_level)
         formatter = logging.Formatter(format_string or self._LOG_FORMAT)
         file_handler.setFormatter(formatter)
-
-        if file_handler not in self._logger.handlers:
-            self._logger.addHandler(file_handler)
+        self._logger.addHandler(file_handler)
 
     def get_agent(self):
         return self._agent

@@ -1,3 +1,197 @@
+# 3.1.209 2026-08-06
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListSubTestCaseByConditionsUsing`、`ListSubTasksByPostUsing`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CancelShareNew`
+    - `BatchDeleteConnectionNew`
+    - `ShowLatestInstanceHealthReport`
+    - `AddSqlLimitingRecordNew`
+    - `ShowExportTaskInfo`
+    - `ShowWhetherUseCloudDba`
+    - `ShowDasCloudDbaPrice`
+    - `ShowClouddbaGetSearchPathFlagNew`
+    - `ShowDeadLockSwitchNew`
+    - `ShowSupportedEngines`
+    - `SwitchFullsqlSwitch`
+    - `ShowFullDeadLockSwitchNew`
+    - `ShowGlobalPrivacyNew`
+    - `ShowHistoryTransactionSwitchNew`
+    - `ShowLongHistoryTransactionSwitchNew`
+    - `ShowIndexUsageSwitchNew`
+    - `ShowSlowLogSwitchNew`
+    - `ShowSqlLimitingSwitchNew`
+    - `ListDbNames`
+    - `ShowNameList`
+    - `ShowKillProcessTaskSwitch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDasRecommendSqlLimitRule**
+    - 响应参数变更
+      - `+ sql_limit_infos.keyword`
+      - `+ sql_limit_infos.recommend_type`
+      - `+ sql_limit_infos.max_time`
+      - `- sql_limit_infos.maxTime`
+      - `+ sql_limit_infos.raw_sql.user`
+      - `+ sql_limit_infos.raw_sql.sql_type`
+      - `* sql_limit_infos.raw_sql.session_id: string -> number`
+  - **ShowLockBlockingSwitch**
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ success`
+      - `+ retry`
+  - **UpdateEmailTemplate**
+    - 请求参数变更
+      - `+ service_uri`
+  - **AddEmailTemplate**
+    - 请求参数变更
+      - `+ service_uri`
+  - **ShowInstanceHealthReport**
+    - 响应参数变更
+      - `+ disk_stat.last_stat`
+      - `+ performance_stat.last_values`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListTaskTableReferenceDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDataconnections**
+    - 请求参数变更
+      - `+ ip`
+  - **ListFactoryJobs**
+    - 请求参数变更
+      - `+ job_id`
+      - `+ status`
+      - `+ need_alarms`
+      - `+ match_all_tags`
+      - `+ connection_name`
+      - `+ source_type`
+      - `+ source_name`
+      - `+ sink_type`
+      - `+ sink_name`
+    - 响应参数变更
+      - `+ jobs.end_time`
+      - `+ jobs.flink_job_info`
+      - `+ jobs.alarms`
+      - `+ jobs.single_node_job_type`
+      - `+ jobs.empty_running_job`
+      - `+ jobs.next_plan_time`
+      - `- jobs.job_type: enum value [REAL_TIME,BATCH]`
+      - `* jobs: list<JobResp> -> list<JobResultV2>`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `RotateOnDemand`
+    - `ListAccessPoint`
+    - `CreateAccessPoint`
+    - `EnableAccessPoint`
+    - `DisableAccessPoint`
+    - `DeleteAccessPoint`
+    - `DownloadAccessPointPrivateKey`
+    - `ListKeyPolicy`
+    - `CreateKeyPolicy`
+    - `ShowKeyPolicy`
+    - `UpdateKeyPolicy`
+    - `DeleteKeyPolicy`
+    - `CreateDatakeyCapsule`
+    - `DecryptDatakeyCapsule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **Sign**
+    - 请求参数变更
+      - `+ signing_algorithm: enum value [ED25519_SHA_512,ED25519_PH_SHA_512]`
+  - **ValidateSignature**
+    - 请求参数变更
+      - `+ signing_algorithm: enum value [ED25519_SHA_512,ED25519_PH_SHA_512]`
+  - **ShowKeyRotationStatus**
+    - 响应参数变更
+      - `+ key_materials`
+  - **CreateKey**
+    - 请求参数变更
+      - `+ key_spec: enum value [ED25519,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogs**
+    - 响应参数变更
+      - `+ scrollId`
+  - **UpdateHostGroup**
+    - 请求参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+  - **CreateHostGroup**
+    - 请求参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPorts**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`CreatePool`、`ShowPool`、`DeletePool`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstancePools**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `+ create_time`
+      - `+ vpc_id`
+      - `+ instances`
+      - `+ hosts`
+      - `+ name`
+      - `+ description`
+      - `+ id`
+      - `+ region`
+      - `+ type`
+
 # 3.1.208 2026-07-30
 
 ### HuaweiCloud SDK CDN

@@ -1695,6 +1695,10 @@ class VpcClient(Client):
             query_params.append(('instance_id', local_var_params['instance_id']))
         if 'instance_type' in local_var_params:
             query_params.append(('instance_type', local_var_params['instance_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

@@ -66,13 +66,20 @@ class HealthReportSlowLogStat:
         self._error_message = None
         self.discriminator = None
 
-        self.collect_slow_log = collect_slow_log
-        self.top_execute_slow_logs = top_execute_slow_logs
-        self.top_avg_query_time_slow_logs = top_avg_query_time_slow_logs
-        self.top_max_query_time_slow_logs = top_max_query_time_slow_logs
-        self.rows_examined_exceeding = rows_examined_exceeding
-        self.analyze_success = analyze_success
-        self.error_message = error_message
+        if collect_slow_log is not None:
+            self.collect_slow_log = collect_slow_log
+        if top_execute_slow_logs is not None:
+            self.top_execute_slow_logs = top_execute_slow_logs
+        if top_avg_query_time_slow_logs is not None:
+            self.top_avg_query_time_slow_logs = top_avg_query_time_slow_logs
+        if top_max_query_time_slow_logs is not None:
+            self.top_max_query_time_slow_logs = top_max_query_time_slow_logs
+        if rows_examined_exceeding is not None:
+            self.rows_examined_exceeding = rows_examined_exceeding
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def collect_slow_log(self):

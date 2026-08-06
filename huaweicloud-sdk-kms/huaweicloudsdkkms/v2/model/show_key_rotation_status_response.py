@@ -19,17 +19,19 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         'key_rotation_enabled': 'bool',
         'rotation_interval': 'int',
         'last_rotation_time': 'str',
-        'number_of_rotations': 'int'
+        'number_of_rotations': 'int',
+        'key_materials': 'list[GetkeyRotationStatusResponseBodyKeyMaterials]'
     }
 
     attribute_map = {
         'key_rotation_enabled': 'key_rotation_enabled',
         'rotation_interval': 'rotation_interval',
         'last_rotation_time': 'last_rotation_time',
-        'number_of_rotations': 'number_of_rotations'
+        'number_of_rotations': 'number_of_rotations',
+        'key_materials': 'key_materials'
     }
 
-    def __init__(self, key_rotation_enabled=None, rotation_interval=None, last_rotation_time=None, number_of_rotations=None):
+    def __init__(self, key_rotation_enabled=None, rotation_interval=None, last_rotation_time=None, number_of_rotations=None, key_materials=None):
         r"""ShowKeyRotationStatusResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         :type last_rotation_time: str
         :param number_of_rotations: 密钥轮换次数。
         :type number_of_rotations: int
+        :param key_materials: **参数解释：** 密钥下的密钥材料信息 **取值范围：** 不涉及
+        :type key_materials: list[:class:`huaweicloudsdkkms.v2.GetkeyRotationStatusResponseBodyKeyMaterials`]
         """
         
         super().__init__()
@@ -50,6 +54,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         self._rotation_interval = None
         self._last_rotation_time = None
         self._number_of_rotations = None
+        self._key_materials = None
         self.discriminator = None
 
         if key_rotation_enabled is not None:
@@ -60,6 +65,8 @@ class ShowKeyRotationStatusResponse(SdkResponse):
             self.last_rotation_time = last_rotation_time
         if number_of_rotations is not None:
             self.number_of_rotations = number_of_rotations
+        if key_materials is not None:
+            self.key_materials = key_materials
 
     @property
     def key_rotation_enabled(self):
@@ -148,6 +155,28 @@ class ShowKeyRotationStatusResponse(SdkResponse):
         :type number_of_rotations: int
         """
         self._number_of_rotations = number_of_rotations
+
+    @property
+    def key_materials(self):
+        r"""Gets the key_materials of this ShowKeyRotationStatusResponse.
+
+        **参数解释：** 密钥下的密钥材料信息 **取值范围：** 不涉及
+
+        :return: The key_materials of this ShowKeyRotationStatusResponse.
+        :rtype: list[:class:`huaweicloudsdkkms.v2.GetkeyRotationStatusResponseBodyKeyMaterials`]
+        """
+        return self._key_materials
+
+    @key_materials.setter
+    def key_materials(self, key_materials):
+        r"""Sets the key_materials of this ShowKeyRotationStatusResponse.
+
+        **参数解释：** 密钥下的密钥材料信息 **取值范围：** 不涉及
+
+        :param key_materials: The key_materials of this ShowKeyRotationStatusResponse.
+        :type key_materials: list[:class:`huaweicloudsdkkms.v2.GetkeyRotationStatusResponseBodyKeyMaterials`]
+        """
+        self._key_materials = key_materials
 
     def to_dict(self):
         import warnings

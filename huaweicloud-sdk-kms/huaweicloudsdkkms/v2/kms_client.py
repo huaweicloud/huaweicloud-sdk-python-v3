@@ -371,6 +371,71 @@ class KmsClient(Client):
 
         return http_info
 
+    def create_access_point(self, request):
+        r"""创建接入点
+
+        用于创建接入点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAccessPoint
+        :type request: :class:`huaweicloudsdkkms.v2.CreateAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateAccessPointResponse`
+        """
+        http_info = self._create_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_access_point_invoker(self, request):
+        http_info = self._create_access_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_access_point_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/access-points",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_alias(self, request):
         r"""create_alias
 
@@ -460,6 +525,71 @@ class KmsClient(Client):
             "resource_path": "/v1.0/{project_id}/kms/create-datakey",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDatakeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_datakey_capsule(self, request):
+        r"""创建密钥胶囊
+
+        创建密钥胶囊
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDatakeyCapsule
+        :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyCapsuleRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyCapsuleResponse`
+        """
+        http_info = self._create_datakey_capsule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_datakey_capsule_invoker(self, request):
+        http_info = self._create_datakey_capsule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datakey_capsule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/datakey-capsule/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatakeyCapsuleResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -724,6 +854,71 @@ class KmsClient(Client):
             "resource_path": "/v1.0/{project_id}/kms/create-key",
             "request_type": request.__class__.__name__,
             "response_type": "CreateKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_key_policy(self, request):
+        r"""创建密钥策略
+
+        创建密钥策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateKeyPolicy
+        :type request: :class:`huaweicloudsdkkms.v2.CreateKeyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyPolicyResponse`
+        """
+        http_info = self._create_key_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_key_policy_invoker(self, request):
+        http_info = self._create_key_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_key_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/key-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKeyPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1288,6 +1483,136 @@ class KmsClient(Client):
 
         return http_info
 
+    def decrypt_datakey_capsule(self, request):
+        r"""解密密钥胶囊
+
+        解密密钥胶囊
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DecryptDatakeyCapsule
+        :type request: :class:`huaweicloudsdkkms.v2.DecryptDatakeyCapsuleRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DecryptDatakeyCapsuleResponse`
+        """
+        http_info = self._decrypt_datakey_capsule_http_info(request)
+        return self._call_api(**http_info)
+
+    def decrypt_datakey_capsule_invoker(self, request):
+        http_info = self._decrypt_datakey_capsule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _decrypt_datakey_capsule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/datakey-capsule/decrypt",
+            "request_type": request.__class__.__name__,
+            "response_type": "DecryptDatakeyCapsuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_access_point(self, request):
+        r"""删除接入点
+
+        删除接入点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAccessPoint
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteAccessPointResponse`
+        """
+        http_info = self._delete_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_access_point_invoker(self, request):
+        http_info = self._delete_access_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_access_point_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/kms/access-points/{access_point_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'access_point_id' in local_var_params:
+            path_params['access_point_id'] = local_var_params['access_point_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_alias(self, request):
         r"""delete_alias
 
@@ -1469,6 +1794,71 @@ class KmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_key_policy(self, request):
+        r"""删除密钥策略
+
+        删除密钥策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteKeyPolicy
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyPolicyResponse`
+        """
+        http_info = self._delete_key_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_key_policy_invoker(self, request):
+        http_info = self._delete_key_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_key_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/kms/key-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKeyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1680,6 +2070,71 @@ class KmsClient(Client):
 
         return http_info
 
+    def disable_access_point(self, request):
+        r"""禁用接入点
+
+        禁用接入点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableAccessPoint
+        :type request: :class:`huaweicloudsdkkms.v2.DisableAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DisableAccessPointResponse`
+        """
+        http_info = self._disable_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_access_point_invoker(self, request):
+        http_info = self._disable_access_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_access_point_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/access-points/{access_point_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'access_point_id' in local_var_params:
+            path_params['access_point_id'] = local_var_params['access_point_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disable_key(self, request):
         r"""禁用密钥
 
@@ -1847,6 +2302,136 @@ class KmsClient(Client):
         path_params = {}
         if 'keystore_id' in local_var_params:
             path_params['keystore_id'] = local_var_params['keystore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_access_point_private_key(self, request):
+        r"""下载通用接入点私钥
+
+        用于下载通用接入点私钥
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadAccessPointPrivateKey
+        :type request: :class:`huaweicloudsdkkms.v2.DownloadAccessPointPrivateKeyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DownloadAccessPointPrivateKeyResponse`
+        """
+        http_info = self._download_access_point_private_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_access_point_private_key_invoker(self, request):
+        http_info = self._download_access_point_private_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_access_point_private_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/access-points/{access_point_id}/get-privatekey",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAccessPointPrivateKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'access_point_id' in local_var_params:
+            path_params['access_point_id'] = local_var_params['access_point_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_access_point(self, request):
+        r"""启用接入点
+
+        启用接入点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for EnableAccessPoint
+        :type request: :class:`huaweicloudsdkkms.v2.EnableAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EnableAccessPointResponse`
+        """
+        http_info = self._enable_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_access_point_invoker(self, request):
+        http_info = self._enable_access_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_access_point_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/access-points/{access_point_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'access_point_id' in local_var_params:
+            path_params['access_point_id'] = local_var_params['access_point_id']
 
         query_params = []
 
@@ -2335,6 +2920,75 @@ class KmsClient(Client):
 
         return http_info
 
+    def list_access_point(self, request):
+        r"""查询接入点列表
+
+        用于查询接入点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAccessPoint
+        :type request: :class:`huaweicloudsdkkms.v2.ListAccessPointRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListAccessPointResponse`
+        """
+        http_info = self._list_access_point_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_access_point_invoker(self, request):
+        http_info = self._list_access_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_point_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/access-points",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessPointResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyspace_id' in local_var_params:
+            query_params.append(('keyspace_id', local_var_params['keyspace_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_aliases(self, request):
         r"""list_aliases
 
@@ -2520,6 +3174,75 @@ class KmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_key_policy(self, request):
+        r"""查询密钥策略列表
+
+        查询密钥策略列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListKeyPolicy
+        :type request: :class:`huaweicloudsdkkms.v2.ListKeyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKeyPolicyResponse`
+        """
+        http_info = self._list_key_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_key_policy_invoker(self, request):
+        http_info = self._list_key_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_key_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/key-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyspace_id' in local_var_params:
+            query_params.append(('keyspace_id', local_var_params['keyspace_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3048,6 +3771,136 @@ class KmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rotate_on_demand(self, request):
+        r"""按需轮转密钥
+
+        用于外部密钥的密钥材料，需要用户提前导入密钥材料后才能执行轮转
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RotateOnDemand
+        :type request: :class:`huaweicloudsdkkms.v2.RotateOnDemandRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.RotateOnDemandResponse`
+        """
+        http_info = self._rotate_on_demand_http_info(request)
+        return self._call_api(**http_info)
+
+    def rotate_on_demand_invoker(self, request):
+        http_info = self._rotate_on_demand_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rotate_on_demand_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/rotate-on-demand",
+            "request_type": request.__class__.__name__,
+            "response_type": "RotateOnDemandResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_key_policy(self, request):
+        r"""查询密钥策略
+
+        查询密钥策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowKeyPolicy
+        :type request: :class:`huaweicloudsdkkms.v2.ShowKeyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyPolicyResponse`
+        """
+        http_info = self._show_key_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_key_policy_invoker(self, request):
+        http_info = self._show_key_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_key_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/key-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3618,6 +4471,73 @@ class KmsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_key_policy(self, request):
+        r"""更新密钥策略
+
+        更新密钥策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateKeyPolicy
+        :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyPolicyResponse`
+        """
+        http_info = self._update_key_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_key_policy_invoker(self, request):
+        http_info = self._update_key_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_key_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/kms/key-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
 

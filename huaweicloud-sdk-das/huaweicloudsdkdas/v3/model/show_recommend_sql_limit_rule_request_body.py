@@ -56,14 +56,12 @@ class ShowRecommendSqlLimitRuleRequestBody:
         self._node_id = None
         self.discriminator = None
 
-        if engine_type is not None:
-            self.engine_type = engine_type
+        self.engine_type = engine_type
         if rds_recommendation_type is not None:
             self.rds_recommendation_type = rds_recommendation_type
         if taurus_recommendation_type is not None:
             self.taurus_recommendation_type = taurus_recommendation_type
-        if recommend_count is not None:
-            self.recommend_count = recommend_count
+        self.recommend_count = recommend_count
         if node_id is not None:
             self.node_id = node_id
 

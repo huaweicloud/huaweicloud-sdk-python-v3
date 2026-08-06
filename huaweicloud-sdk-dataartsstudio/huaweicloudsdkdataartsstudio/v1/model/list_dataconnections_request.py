@@ -19,7 +19,8 @@ class ListDataconnectionsRequest:
         'name': 'str',
         'type': 'str',
         'limit': 'str',
-        'offset': 'str'
+        'offset': 'str',
+        'ip': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class ListDataconnectionsRequest:
         'name': 'name',
         'type': 'type',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'ip': 'ip'
     }
 
-    def __init__(self, workspace=None, name=None, type=None, limit=None, offset=None):
+    def __init__(self, workspace=None, name=None, type=None, limit=None, offset=None, ip=None):
         r"""ListDataconnectionsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListDataconnectionsRequest:
         :type limit: str
         :param offset: 偏移量
         :type offset: str
+        :param ip: 数据连接中数据库的ip，支持模糊搜索
+        :type ip: str
         """
         
         
@@ -54,6 +58,7 @@ class ListDataconnectionsRequest:
         self._type = None
         self._limit = None
         self._offset = None
+        self._ip = None
         self.discriminator = None
 
         self.workspace = workspace
@@ -65,6 +70,8 @@ class ListDataconnectionsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if ip is not None:
+            self.ip = ip
 
     @property
     def workspace(self):
@@ -175,6 +182,28 @@ class ListDataconnectionsRequest:
         :type offset: str
         """
         self._offset = offset
+
+    @property
+    def ip(self):
+        r"""Gets the ip of this ListDataconnectionsRequest.
+
+        数据连接中数据库的ip，支持模糊搜索
+
+        :return: The ip of this ListDataconnectionsRequest.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        r"""Sets the ip of this ListDataconnectionsRequest.
+
+        数据连接中数据库的ip，支持模糊搜索
+
+        :param ip: The ip of this ListDataconnectionsRequest.
+        :type ip: str
+        """
+        self._ip = ip
 
     def to_dict(self):
         result = {}

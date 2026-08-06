@@ -37,7 +37,7 @@ class ShowDatasetRequest:
         :type instance_id: str
         :param catalog_name: **参数解释:** catalog名称。 **约束限制:** 只能包含字母、数字和下划线，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及
         :type catalog_name: str
-        :param dataset_name: **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
+        :param dataset_name: **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字和_-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
         :type dataset_name: str
         :param database_name: **参数解释:** 数据库名称。 **约束限制:** 只能包含中文、字母、数字、下划线、中划线，且长度为1~128个字符。 **取值范围:** 长度为1~128个字符 **默认取值:** 不涉及 
         :type database_name: str
@@ -104,7 +104,7 @@ class ShowDatasetRequest:
     def dataset_name(self):
         r"""Gets the dataset_name of this ShowDatasetRequest.
 
-        **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
+        **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字和_-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
 
         :return: The dataset_name of this ShowDatasetRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowDatasetRequest:
     def dataset_name(self, dataset_name):
         r"""Sets the dataset_name of this ShowDatasetRequest.
 
-        **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
+        **参数解释:** 数据集名称。 **约束限制:** 只能包含中文、字母、数字和_-特殊字符，且长度为1~256个字符。 **取值范围:** 长度为1~256个字符 **默认取值:** 不涉及 
 
         :param dataset_name: The dataset_name of this ShowDatasetRequest.
         :type dataset_name: str

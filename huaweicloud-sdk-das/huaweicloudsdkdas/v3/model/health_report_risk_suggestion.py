@@ -29,9 +29,9 @@ class HealthReportRiskSuggestion:
 
         The model defined in huaweicloud sdk
 
-        :param suggestion_code: 建议优化措施编码。
+        :param suggestion_code: 建议优化措施编码
         :type suggestion_code: str
-        :param suggestion_content: 建议优化措施。
+        :param suggestion_content: 建议优化措施
         :type suggestion_content: str
         """
         
@@ -41,14 +41,16 @@ class HealthReportRiskSuggestion:
         self._suggestion_content = None
         self.discriminator = None
 
-        self.suggestion_code = suggestion_code
-        self.suggestion_content = suggestion_content
+        if suggestion_code is not None:
+            self.suggestion_code = suggestion_code
+        if suggestion_content is not None:
+            self.suggestion_content = suggestion_content
 
     @property
     def suggestion_code(self):
         r"""Gets the suggestion_code of this HealthReportRiskSuggestion.
 
-        建议优化措施编码。
+        建议优化措施编码
 
         :return: The suggestion_code of this HealthReportRiskSuggestion.
         :rtype: str
@@ -59,7 +61,7 @@ class HealthReportRiskSuggestion:
     def suggestion_code(self, suggestion_code):
         r"""Sets the suggestion_code of this HealthReportRiskSuggestion.
 
-        建议优化措施编码。
+        建议优化措施编码
 
         :param suggestion_code: The suggestion_code of this HealthReportRiskSuggestion.
         :type suggestion_code: str
@@ -70,7 +72,7 @@ class HealthReportRiskSuggestion:
     def suggestion_content(self):
         r"""Gets the suggestion_content of this HealthReportRiskSuggestion.
 
-        建议优化措施。
+        建议优化措施
 
         :return: The suggestion_content of this HealthReportRiskSuggestion.
         :rtype: str
@@ -81,7 +83,7 @@ class HealthReportRiskSuggestion:
     def suggestion_content(self, suggestion_content):
         r"""Sets the suggestion_content of this HealthReportRiskSuggestion.
 
-        建议优化措施。
+        建议优化措施
 
         :param suggestion_content: The suggestion_content of this HealthReportRiskSuggestion.
         :type suggestion_content: str

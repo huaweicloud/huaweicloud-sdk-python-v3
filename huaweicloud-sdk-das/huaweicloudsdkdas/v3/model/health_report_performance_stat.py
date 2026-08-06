@@ -16,6 +16,7 @@ class HealthReportPerformanceStat:
 
     openapi_types = {
         'peak_stats': 'list[HealthReportSingleValueStat]',
+        'last_values': 'list[HealthReportSingleValueStat]',
         'ratio_stats': 'list[HealthReportRatioStat]',
         'analyze_success': 'bool',
         'error_message': 'str'
@@ -23,18 +24,21 @@ class HealthReportPerformanceStat:
 
     attribute_map = {
         'peak_stats': 'peak_stats',
+        'last_values': 'last_values',
         'ratio_stats': 'ratio_stats',
         'analyze_success': 'analyze_success',
         'error_message': 'error_message'
     }
 
-    def __init__(self, peak_stats=None, ratio_stats=None, analyze_success=None, error_message=None):
+    def __init__(self, peak_stats=None, last_values=None, ratio_stats=None, analyze_success=None, error_message=None):
         r"""HealthReportPerformanceStat
 
         The model defined in huaweicloud sdk
 
         :param peak_stats: 峰值统计信息列表。
         :type peak_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
+        :param last_values: 最新统计信息列表。
+        :type last_values: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
         :param ratio_stats: 比率值数据列表。
         :type ratio_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportRatioStat`]
         :param analyze_success: 统计分析是否成功。
@@ -46,15 +50,22 @@ class HealthReportPerformanceStat:
         
 
         self._peak_stats = None
+        self._last_values = None
         self._ratio_stats = None
         self._analyze_success = None
         self._error_message = None
         self.discriminator = None
 
-        self.peak_stats = peak_stats
-        self.ratio_stats = ratio_stats
-        self.analyze_success = analyze_success
-        self.error_message = error_message
+        if peak_stats is not None:
+            self.peak_stats = peak_stats
+        if last_values is not None:
+            self.last_values = last_values
+        if ratio_stats is not None:
+            self.ratio_stats = ratio_stats
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def peak_stats(self):
@@ -77,6 +88,28 @@ class HealthReportPerformanceStat:
         :type peak_stats: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
         """
         self._peak_stats = peak_stats
+
+    @property
+    def last_values(self):
+        r"""Gets the last_values of this HealthReportPerformanceStat.
+
+        最新统计信息列表。
+
+        :return: The last_values of this HealthReportPerformanceStat.
+        :rtype: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
+        """
+        return self._last_values
+
+    @last_values.setter
+    def last_values(self, last_values):
+        r"""Sets the last_values of this HealthReportPerformanceStat.
+
+        最新统计信息列表。
+
+        :param last_values: The last_values of this HealthReportPerformanceStat.
+        :type last_values: list[:class:`huaweicloudsdkdas.v3.HealthReportSingleValueStat`]
+        """
+        self._last_values = last_values
 
     @property
     def ratio_stats(self):

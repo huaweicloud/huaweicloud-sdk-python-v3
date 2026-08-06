@@ -11610,6 +11610,8 @@ class DataArtsStudioClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -12542,7 +12544,7 @@ class DataArtsStudioClient(Client):
     def list_factory_jobs(self, request):
         r"""查询作业列表
 
-        查询作业列表清单
+        查询作业列表清单，支持按作业类型、名称、ID、状态、标签、数据连接等条件筛选。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12583,8 +12585,26 @@ class DataArtsStudioClient(Client):
             query_params.append(('job_type', local_var_params['job_type']))
         if 'job_name' in local_var_params:
             query_params.append(('job_name', local_var_params['job_name']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'need_alarms' in local_var_params:
+            query_params.append(('need_alarms', local_var_params['need_alarms']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'match_all_tags' in local_var_params:
+            query_params.append(('match_all_tags', local_var_params['match_all_tags']))
+        if 'connection_name' in local_var_params:
+            query_params.append(('connection_name', local_var_params['connection_name']))
+        if 'source_type' in local_var_params:
+            query_params.append(('source_type', local_var_params['source_type']))
+        if 'source_name' in local_var_params:
+            query_params.append(('source_name', local_var_params['source_name']))
+        if 'sink_type' in local_var_params:
+            query_params.append(('sink_type', local_var_params['sink_type']))
+        if 'sink_name' in local_var_params:
+            query_params.append(('sink_name', local_var_params['sink_name']))
 
         header_params = {}
         if 'workspace' in local_var_params:
@@ -16064,6 +16084,93 @@ class DataArtsStudioClient(Client):
             query_params.append(('model_id', local_var_params['model_id']))
         if 'biz_catalog_id' in local_var_params:
             query_params.append(('biz_catalog_id', local_var_params['biz_catalog_id']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_task_table_reference_detail(self, request):
+        r"""查询单表的作业表引用详情
+
+        根据表名查询该表被哪些作业引用的详细信息，支持按输入输出类型、工作空间等条件筛选。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTaskTableReferenceDetail
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListTaskTableReferenceDetailRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTaskTableReferenceDetailResponse`
+        """
+        http_info = self._list_task_table_reference_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_task_table_reference_detail_invoker(self, request):
+        http_info = self._list_task_table_reference_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_table_reference_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/task-table-references",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskTableReferenceDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'db_type' in local_var_params:
+            query_params.append(('db_type', local_var_params['db_type']))
+        if 'data_base_name' in local_var_params:
+            query_params.append(('data_base_name', local_var_params['data_base_name']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'io_type' in local_var_params:
+            query_params.append(('io_type', local_var_params['io_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'workspace_name' in local_var_params:
+            query_params.append(('workspace_name', local_var_params['workspace_name']))
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'execute_user' in local_var_params:
+            query_params.append(('execute_user', local_var_params['execute_user']))
 
         header_params = {}
         if 'workspace' in local_var_params:

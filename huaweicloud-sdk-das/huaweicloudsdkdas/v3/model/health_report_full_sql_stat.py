@@ -61,12 +61,18 @@ class HealthReportFullSqlStat:
         self._error_message = None
         self.discriminator = None
 
-        self.collect_full_sql = collect_full_sql
-        self.execute_top_templates = execute_top_templates
-        self.sum_rows_examined_top_templates = sum_rows_examined_top_templates
-        self.avg_cost_top_templates = avg_cost_top_templates
-        self.analyze_success = analyze_success
-        self.error_message = error_message
+        if collect_full_sql is not None:
+            self.collect_full_sql = collect_full_sql
+        if execute_top_templates is not None:
+            self.execute_top_templates = execute_top_templates
+        if sum_rows_examined_top_templates is not None:
+            self.sum_rows_examined_top_templates = sum_rows_examined_top_templates
+        if avg_cost_top_templates is not None:
+            self.avg_cost_top_templates = avg_cost_top_templates
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def collect_full_sql(self):

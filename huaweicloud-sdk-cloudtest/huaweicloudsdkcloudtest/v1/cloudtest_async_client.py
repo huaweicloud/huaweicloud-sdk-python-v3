@@ -4178,6 +4178,140 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def list_sub_tasks_by_post_using_async(self, request):
+        r"""根据条件查询子任务集合
+
+        根据条件查询子任务集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSubTasksByPostUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListSubTasksByPostUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListSubTasksByPostUsingResponse`
+        """
+        http_info = self._list_sub_tasks_by_post_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_tasks_by_post_using_async_invoker(self, request):
+        http_info = self._list_sub_tasks_by_post_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_tasks_by_post_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/testsuite/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubTasksByPostUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sub_test_case_by_conditions_using_async(self, request):
+        r"""批量查询子任务用例
+
+        批量查询子任务用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSubTestCaseByConditionsUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ListSubTestCaseByConditionsUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ListSubTestCaseByConditionsUsingResponse`
+        """
+        http_info = self._list_sub_test_case_by_conditions_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_test_case_by_conditions_using_async_invoker(self, request):
+        http_info = self._list_sub_test_case_by_conditions_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_test_case_by_conditions_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/testsuite/results/cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubTestCaseByConditionsUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_task_assign_cases_async(self, request):
         r"""获取测试套关联用例详情
 

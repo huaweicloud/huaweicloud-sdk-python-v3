@@ -1,3 +1,197 @@
+# 3.1.209 2026-08-06
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListSubTestCaseByConditionsUsing`, `ListSubTasksByPostUsing`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CancelShareNew`
+    - `BatchDeleteConnectionNew`
+    - `ShowLatestInstanceHealthReport`
+    - `AddSqlLimitingRecordNew`
+    - `ShowExportTaskInfo`
+    - `ShowWhetherUseCloudDba`
+    - `ShowDasCloudDbaPrice`
+    - `ShowClouddbaGetSearchPathFlagNew`
+    - `ShowDeadLockSwitchNew`
+    - `ShowSupportedEngines`
+    - `SwitchFullsqlSwitch`
+    - `ShowFullDeadLockSwitchNew`
+    - `ShowGlobalPrivacyNew`
+    - `ShowHistoryTransactionSwitchNew`
+    - `ShowLongHistoryTransactionSwitchNew`
+    - `ShowIndexUsageSwitchNew`
+    - `ShowSlowLogSwitchNew`
+    - `ShowSqlLimitingSwitchNew`
+    - `ListDbNames`
+    - `ShowNameList`
+    - `ShowKillProcessTaskSwitch`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDasRecommendSqlLimitRule**
+    - changes of response param
+      - `+ sql_limit_infos.keyword`
+      - `+ sql_limit_infos.recommend_type`
+      - `+ sql_limit_infos.max_time`
+      - `- sql_limit_infos.maxTime`
+      - `+ sql_limit_infos.raw_sql.user`
+      - `+ sql_limit_infos.raw_sql.sql_type`
+      - `* sql_limit_infos.raw_sql.session_id: string -> number`
+  - **ShowLockBlockingSwitch**
+    - changes of response param
+      - `+ error_msg`
+      - `+ success`
+      - `+ retry`
+  - **UpdateEmailTemplate**
+    - changes of request param
+      - `+ service_uri`
+  - **AddEmailTemplate**
+    - changes of request param
+      - `+ service_uri`
+  - **ShowInstanceHealthReport**
+    - changes of response param
+      - `+ disk_stat.last_stat`
+      - `+ performance_stat.last_values`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListTaskTableReferenceDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDataconnections**
+    - changes of request param
+      - `+ ip`
+  - **ListFactoryJobs**
+    - changes of request param
+      - `+ job_id`
+      - `+ status`
+      - `+ need_alarms`
+      - `+ match_all_tags`
+      - `+ connection_name`
+      - `+ source_type`
+      - `+ source_name`
+      - `+ sink_type`
+      - `+ sink_name`
+    - changes of response param
+      - `+ jobs.end_time`
+      - `+ jobs.flink_job_info`
+      - `+ jobs.alarms`
+      - `+ jobs.single_node_job_type`
+      - `+ jobs.empty_running_job`
+      - `+ jobs.next_plan_time`
+      - `- jobs.job_type: enum value [REAL_TIME,BATCH]`
+      - `* jobs: list<JobResp> -> list<JobResultV2>`
+
+### HuaweiCloud SDK KMS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `RotateOnDemand`
+    - `ListAccessPoint`
+    - `CreateAccessPoint`
+    - `EnableAccessPoint`
+    - `DisableAccessPoint`
+    - `DeleteAccessPoint`
+    - `DownloadAccessPointPrivateKey`
+    - `ListKeyPolicy`
+    - `CreateKeyPolicy`
+    - `ShowKeyPolicy`
+    - `UpdateKeyPolicy`
+    - `DeleteKeyPolicy`
+    - `CreateDatakeyCapsule`
+    - `DecryptDatakeyCapsule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **Sign**
+    - changes of request param
+      - `+ signing_algorithm: enum value [ED25519_SHA_512,ED25519_PH_SHA_512]`
+  - **ValidateSignature**
+    - changes of request param
+      - `+ signing_algorithm: enum value [ED25519_SHA_512,ED25519_PH_SHA_512]`
+  - **ShowKeyRotationStatus**
+    - changes of response param
+      - `+ key_materials`
+  - **CreateKey**
+    - changes of request param
+      - `+ key_spec: enum value [ED25519,HMAC_256,HMAC_384,HMAC_512,HMAC_SM3]`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogs**
+    - changes of response param
+      - `+ scrollId`
+  - **UpdateHostGroup**
+    - changes of request param
+      - `+ agent_access_type`
+      - `+ labels`
+  - **CreateHostGroup**
+    - changes of request param
+      - `+ agent_access_type`
+      - `+ labels`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPorts**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `CreatePool`, `ShowPool`, `DeletePool`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstancePools**
+    - changes of response param
+      - `+ enterprise_project_id`
+      - `+ create_time`
+      - `+ vpc_id`
+      - `+ instances`
+      - `+ hosts`
+      - `+ name`
+      - `+ description`
+      - `+ id`
+      - `+ region`
+      - `+ type`
+
 # 3.1.208 2026-07-30
 
 ### HuaweiCloud SDK CDN

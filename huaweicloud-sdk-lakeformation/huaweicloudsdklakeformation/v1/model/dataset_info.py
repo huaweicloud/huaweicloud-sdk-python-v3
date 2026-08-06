@@ -27,7 +27,7 @@ class DatasetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 数据集名称。只能包含数字、字母、下划线，且长度为1~256。
+        :param name: 数据集名称。只能包含中文、字母、数字和_*-特殊字符，且长度为1~256。
         :type name: str
         """
         
@@ -42,7 +42,7 @@ class DatasetInfo:
     def name(self):
         r"""Gets the name of this DatasetInfo.
 
-        数据集名称。只能包含数字、字母、下划线，且长度为1~256。
+        数据集名称。只能包含中文、字母、数字和_*-特殊字符，且长度为1~256。
 
         :return: The name of this DatasetInfo.
         :rtype: str
@@ -53,7 +53,7 @@ class DatasetInfo:
     def name(self, name):
         r"""Sets the name of this DatasetInfo.
 
-        数据集名称。只能包含数字、字母、下划线，且长度为1~256。
+        数据集名称。只能包含中文、字母、数字和_*-特殊字符，且长度为1~256。
 
         :param name: The name of this DatasetInfo.
         :type name: str

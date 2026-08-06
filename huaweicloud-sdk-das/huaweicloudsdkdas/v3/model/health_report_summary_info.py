@@ -36,7 +36,8 @@ class HealthReportSummaryInfo:
         self._analysis_results = None
         self.discriminator = None
 
-        self.analysis_results = analysis_results
+        if analysis_results is not None:
+            self.analysis_results = analysis_results
 
     @property
     def analysis_results(self):

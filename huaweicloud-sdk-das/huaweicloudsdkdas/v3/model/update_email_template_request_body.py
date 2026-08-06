@@ -25,7 +25,8 @@ class UpdateEmailTemplateRequestBody:
         'obs_bucket_name': 'str',
         'inspection_time': 'str',
         'send_time': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'service_uri': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class UpdateEmailTemplateRequestBody:
         'obs_bucket_name': 'obs_bucket_name',
         'inspection_time': 'inspection_time',
         'send_time': 'send_time',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'service_uri': 'service_uri'
     }
 
-    def __init__(self, template_id=None, template_name=None, group_id=None, health_rank=None, email=None, topic=None, topic_urn=None, obs_bucket_name=None, inspection_time=None, send_time=None, time_zone=None):
+    def __init__(self, template_id=None, template_name=None, group_id=None, health_rank=None, email=None, topic=None, topic_urn=None, obs_bucket_name=None, inspection_time=None, send_time=None, time_zone=None, service_uri=None):
         r"""UpdateEmailTemplateRequestBody
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class UpdateEmailTemplateRequestBody:
         :type send_time: str
         :param time_zone: 时区
         :type time_zone: str
+        :param service_uri: 服务地址
+        :type service_uri: str
         """
         
         
@@ -84,6 +88,7 @@ class UpdateEmailTemplateRequestBody:
         self._inspection_time = None
         self._send_time = None
         self._time_zone = None
+        self._service_uri = None
         self.discriminator = None
 
         self.template_id = template_id
@@ -107,6 +112,8 @@ class UpdateEmailTemplateRequestBody:
             self.send_time = send_time
         if time_zone is not None:
             self.time_zone = time_zone
+        if service_uri is not None:
+            self.service_uri = service_uri
 
     @property
     def template_id(self):
@@ -349,6 +356,28 @@ class UpdateEmailTemplateRequestBody:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def service_uri(self):
+        r"""Gets the service_uri of this UpdateEmailTemplateRequestBody.
+
+        服务地址
+
+        :return: The service_uri of this UpdateEmailTemplateRequestBody.
+        :rtype: str
+        """
+        return self._service_uri
+
+    @service_uri.setter
+    def service_uri(self, service_uri):
+        r"""Sets the service_uri of this UpdateEmailTemplateRequestBody.
+
+        服务地址
+
+        :param service_uri: The service_uri of this UpdateEmailTemplateRequestBody.
+        :type service_uri: str
+        """
+        self._service_uri = service_uri
 
     def to_dict(self):
         result = {}
