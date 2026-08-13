@@ -3601,6 +3601,20 @@ class ElbAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'page_reverse' in local_var_params:
             query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'ip_address' in local_var_params:
+            query_params.append(('ip_address', local_var_params['ip_address']))
+            collection_formats['ip_address'] = 'csv'
+        if 'enable' in local_var_params:
+            query_params.append(('enable', local_var_params['enable']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+            collection_formats['domain_name'] = 'csv'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
 
         header_params = {}
 

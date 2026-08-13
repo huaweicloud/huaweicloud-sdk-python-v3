@@ -97,7 +97,7 @@ class MemberInfo:
         :type device_id: str
         :param operating_status: **参数解释**：后端服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  **取值范围**： - NO_MONITOR：后端服务器所在的服务器组没有开启健康检查。 - INITIAL：初始化中，表示负载均衡实例配置了健康检查，但查不到数据。 - ONLINE：后端服务器正常。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - UNKNOWN：未关联LB实例的pool下的member，或者创建后从未关联ECS的云服务器类型member，状态置为UNKNOWN。
         :type operating_status: str
-        :param status: **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :param status: **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
         :param loadbalancer_id: **参数解释**：所属负载均衡器ID。  不支持该字段，请勿使用。
         :type loadbalancer_id: str
@@ -487,7 +487,7 @@ class MemberInfo:
     def status(self):
         r"""Gets the status of this MemberInfo.
 
-        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :return: The status of this MemberInfo.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -498,7 +498,7 @@ class MemberInfo:
     def status(self, status):
         r"""Sets the status of this MemberInfo.
 
-        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :param status: The status of this MemberInfo.
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]

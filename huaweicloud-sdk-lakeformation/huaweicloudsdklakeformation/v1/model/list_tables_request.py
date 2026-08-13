@@ -57,7 +57,7 @@ class ListTablesRequest:
         :type database_name: str
         :param table_name_pattern: 表名称通配符。只能包含中文、字母、数字和_|*.-特殊字符，且长度为1~256个字符。
         :type table_name_pattern: str
-        :param table_format: 表格式。支持HIVE,ICEBERG,LANCE
+        :param table_format: 表格式。支持HIVE,ICEBERG,LANCE,PAIMON
         :type table_format: str
         :param table_type: 表类型：MANAGED_TABLE-内表、EXTERNAL_TABLE-外表、VIRTUAL_VIEW-视图、MATERIALIZED_VIEW-物化视图、DICTIONARY_TABLE字典表、LAKE_TABLE内表。
         :type table_type: str
@@ -205,7 +205,7 @@ class ListTablesRequest:
     def table_format(self):
         r"""Gets the table_format of this ListTablesRequest.
 
-        表格式。支持HIVE,ICEBERG,LANCE
+        表格式。支持HIVE,ICEBERG,LANCE,PAIMON
 
         :return: The table_format of this ListTablesRequest.
         :rtype: str
@@ -216,7 +216,7 @@ class ListTablesRequest:
     def table_format(self, table_format):
         r"""Sets the table_format of this ListTablesRequest.
 
-        表格式。支持HIVE,ICEBERG,LANCE
+        表格式。支持HIVE,ICEBERG,LANCE,PAIMON
 
         :param table_format: The table_format of this ListTablesRequest.
         :type table_format: str

@@ -18,17 +18,27 @@ class ListDomainIPsRequest:
         'loadbalancer_id': 'str',
         'marker': 'str',
         'limit': 'int',
-        'page_reverse': 'bool'
+        'page_reverse': 'bool',
+        'ip_address': 'list[str]',
+        'enable': 'bool',
+        'type': 'list[str]',
+        'domain_name': 'list[str]',
+        'enterprise_project_id': 'list[str]'
     }
 
     attribute_map = {
         'loadbalancer_id': 'loadbalancer_id',
         'marker': 'marker',
         'limit': 'limit',
-        'page_reverse': 'page_reverse'
+        'page_reverse': 'page_reverse',
+        'ip_address': 'ip_address',
+        'enable': 'enable',
+        'type': 'type',
+        'domain_name': 'domain_name',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, loadbalancer_id=None, marker=None, limit=None, page_reverse=None):
+    def __init__(self, loadbalancer_id=None, marker=None, limit=None, page_reverse=None, ip_address=None, enable=None, type=None, domain_name=None, enterprise_project_id=None):
         r"""ListDomainIPsRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +51,16 @@ class ListDomainIPsRequest:
         :type limit: int
         :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
+        :param ip_address: **参数解释**：IPv4或IPv6地址。 支持多值查询，查询条件格式： *ip_address&#x3D;xxx&amp;ip_address&#x3D;xxx*。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+        :type ip_address: list[str]
+        :param enable: **参数解释**：IP地址是否已加入到域名解析。  **约束限制**：不涉及  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。  **默认取值**：不涉及
+        :type enable: bool
+        :param type: **参数解释**：IP地址类型。 支持多值查询，查询条件格式： *type&#x3D;xxx&amp;type&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： - vip：私网IP。 - eip：公网IP。  **默认取值**：不涉及
+        :type type: list[str]
+        :param domain_name: **参数解释**：当前IP地址关联的负载均衡实例域名。 支持多值查询，查询条件格式： *domain_name&#x3D;xxx&amp;domain_name&#x3D;xxx*。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。  **取值范围**：不涉及  **默认取值**：不涉及
+        :type domain_name: list[str]
+        :param enterprise_project_id: **参数解释**：所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:loadbalancers:listDnsConfig权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
+        :type enterprise_project_id: list[str]
         """
         
         
@@ -49,6 +69,11 @@ class ListDomainIPsRequest:
         self._marker = None
         self._limit = None
         self._page_reverse = None
+        self._ip_address = None
+        self._enable = None
+        self._type = None
+        self._domain_name = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.loadbalancer_id = loadbalancer_id
@@ -58,6 +83,16 @@ class ListDomainIPsRequest:
             self.limit = limit
         if page_reverse is not None:
             self.page_reverse = page_reverse
+        if ip_address is not None:
+            self.ip_address = ip_address
+        if enable is not None:
+            self.enable = enable
+        if type is not None:
+            self.type = type
+        if domain_name is not None:
+            self.domain_name = domain_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def loadbalancer_id(self):
@@ -146,6 +181,116 @@ class ListDomainIPsRequest:
         :type page_reverse: bool
         """
         self._page_reverse = page_reverse
+
+    @property
+    def ip_address(self):
+        r"""Gets the ip_address of this ListDomainIPsRequest.
+
+        **参数解释**：IPv4或IPv6地址。 支持多值查询，查询条件格式： *ip_address=xxx&ip_address=xxx*。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :return: The ip_address of this ListDomainIPsRequest.
+        :rtype: list[str]
+        """
+        return self._ip_address
+
+    @ip_address.setter
+    def ip_address(self, ip_address):
+        r"""Sets the ip_address of this ListDomainIPsRequest.
+
+        **参数解释**：IPv4或IPv6地址。 支持多值查询，查询条件格式： *ip_address=xxx&ip_address=xxx*。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :param ip_address: The ip_address of this ListDomainIPsRequest.
+        :type ip_address: list[str]
+        """
+        self._ip_address = ip_address
+
+    @property
+    def enable(self):
+        r"""Gets the enable of this ListDomainIPsRequest.
+
+        **参数解释**：IP地址是否已加入到域名解析。  **约束限制**：不涉及  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。  **默认取值**：不涉及
+
+        :return: The enable of this ListDomainIPsRequest.
+        :rtype: bool
+        """
+        return self._enable
+
+    @enable.setter
+    def enable(self, enable):
+        r"""Sets the enable of this ListDomainIPsRequest.
+
+        **参数解释**：IP地址是否已加入到域名解析。  **约束限制**：不涉及  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。  **默认取值**：不涉及
+
+        :param enable: The enable of this ListDomainIPsRequest.
+        :type enable: bool
+        """
+        self._enable = enable
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListDomainIPsRequest.
+
+        **参数解释**：IP地址类型。 支持多值查询，查询条件格式： *type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - vip：私网IP。 - eip：公网IP。  **默认取值**：不涉及
+
+        :return: The type of this ListDomainIPsRequest.
+        :rtype: list[str]
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListDomainIPsRequest.
+
+        **参数解释**：IP地址类型。 支持多值查询，查询条件格式： *type=xxx&type=xxx*。  **约束限制**：不涉及  **取值范围**： - vip：私网IP。 - eip：公网IP。  **默认取值**：不涉及
+
+        :param type: The type of this ListDomainIPsRequest.
+        :type type: list[str]
+        """
+        self._type = type
+
+    @property
+    def domain_name(self):
+        r"""Gets the domain_name of this ListDomainIPsRequest.
+
+        **参数解释**：当前IP地址关联的负载均衡实例域名。 支持多值查询，查询条件格式： *domain_name=xxx&domain_name=xxx*。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :return: The domain_name of this ListDomainIPsRequest.
+        :rtype: list[str]
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        r"""Sets the domain_name of this ListDomainIPsRequest.
+
+        **参数解释**：当前IP地址关联的负载均衡实例域名。 支持多值查询，查询条件格式： *domain_name=xxx&domain_name=xxx*。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :param domain_name: The domain_name of this ListDomainIPsRequest.
+        :type domain_name: list[str]
+        """
+        self._domain_name = domain_name
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListDomainIPsRequest.
+
+        **参数解释**：所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:loadbalancers:listDnsConfig权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :return: The enterprise_project_id of this ListDomainIPsRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListDomainIPsRequest.
+
+        **参数解释**：所属的企业项目ID。 支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  **约束限制**： 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:loadbalancers:listDnsConfig权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  **取值范围**：不涉及  **默认取值**：不涉及
+
+        :param enterprise_project_id: The enterprise_project_id of this ListDomainIPsRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

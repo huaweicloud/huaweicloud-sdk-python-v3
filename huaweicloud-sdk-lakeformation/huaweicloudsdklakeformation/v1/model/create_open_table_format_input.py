@@ -16,15 +16,17 @@ class CreateOpenTableFormatInput:
 
     openapi_types = {
         'create_iceberg_table_input': 'CreateIcebergTableInput',
-        'create_lance_table_input': 'CreateLanceTableInput'
+        'create_lance_table_input': 'CreateLanceTableInput',
+        'create_paimon_table_input': 'CreatePaimonTableInput'
     }
 
     attribute_map = {
         'create_iceberg_table_input': 'create_iceberg_table_input',
-        'create_lance_table_input': 'create_lance_table_input'
+        'create_lance_table_input': 'create_lance_table_input',
+        'create_paimon_table_input': 'create_paimon_table_input'
     }
 
-    def __init__(self, create_iceberg_table_input=None, create_lance_table_input=None):
+    def __init__(self, create_iceberg_table_input=None, create_lance_table_input=None, create_paimon_table_input=None):
         r"""CreateOpenTableFormatInput
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class CreateOpenTableFormatInput:
         :type create_iceberg_table_input: :class:`huaweicloudsdklakeformation.v1.CreateIcebergTableInput`
         :param create_lance_table_input: 
         :type create_lance_table_input: :class:`huaweicloudsdklakeformation.v1.CreateLanceTableInput`
+        :param create_paimon_table_input: 
+        :type create_paimon_table_input: :class:`huaweicloudsdklakeformation.v1.CreatePaimonTableInput`
         """
         
         
 
         self._create_iceberg_table_input = None
         self._create_lance_table_input = None
+        self._create_paimon_table_input = None
         self.discriminator = None
 
         if create_iceberg_table_input is not None:
             self.create_iceberg_table_input = create_iceberg_table_input
         if create_lance_table_input is not None:
             self.create_lance_table_input = create_lance_table_input
+        if create_paimon_table_input is not None:
+            self.create_paimon_table_input = create_paimon_table_input
 
     @property
     def create_iceberg_table_input(self):
@@ -81,6 +88,24 @@ class CreateOpenTableFormatInput:
         :type create_lance_table_input: :class:`huaweicloudsdklakeformation.v1.CreateLanceTableInput`
         """
         self._create_lance_table_input = create_lance_table_input
+
+    @property
+    def create_paimon_table_input(self):
+        r"""Gets the create_paimon_table_input of this CreateOpenTableFormatInput.
+
+        :return: The create_paimon_table_input of this CreateOpenTableFormatInput.
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreatePaimonTableInput`
+        """
+        return self._create_paimon_table_input
+
+    @create_paimon_table_input.setter
+    def create_paimon_table_input(self, create_paimon_table_input):
+        r"""Sets the create_paimon_table_input of this CreateOpenTableFormatInput.
+
+        :param create_paimon_table_input: The create_paimon_table_input of this CreateOpenTableFormatInput.
+        :type create_paimon_table_input: :class:`huaweicloudsdklakeformation.v1.CreatePaimonTableInput`
+        """
+        self._create_paimon_table_input = create_paimon_table_input
 
     def to_dict(self):
         result = {}

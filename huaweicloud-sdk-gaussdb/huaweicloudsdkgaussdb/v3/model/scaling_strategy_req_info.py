@@ -31,7 +31,7 @@ class ScalingStrategyReqInfo:
 
         :param flavor_switch: 扩缩规格开关。 - ON：开启。 - OFF：关闭。
         :type flavor_switch: str
-        :param read_only_switch: 增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-gaussdbformysql/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
+        :param read_only_switch: 增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-taurusdb/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
         :type read_only_switch: str
         """
         
@@ -70,7 +70,7 @@ class ScalingStrategyReqInfo:
     def read_only_switch(self):
         r"""Gets the read_only_switch of this ScalingStrategyReqInfo.
 
-        增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-gaussdbformysql/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
+        增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-taurusdb/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
 
         :return: The read_only_switch of this ScalingStrategyReqInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class ScalingStrategyReqInfo:
     def read_only_switch(self, read_only_switch):
         r"""Sets the read_only_switch of this ScalingStrategyReqInfo.
 
-        增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-gaussdbformysql/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
+        增删只读节点开关。自动增删只读节点功能需要先[开启数据库代理](https://support.huaweicloud.com/api-taurusdb/CreateGaussMySqlProxy.html)，且只能有一个代理。 - ON：开启。 - OFF：关闭。
 
         :param read_only_switch: The read_only_switch of this ScalingStrategyReqInfo.
         :type read_only_switch: str

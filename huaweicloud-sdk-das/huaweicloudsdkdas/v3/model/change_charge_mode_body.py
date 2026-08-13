@@ -16,15 +16,17 @@ class ChangeChargeModeBody:
 
     openapi_types = {
         'instance_id_list': 'list[str]',
-        'datastore_type': 'str'
+        'datastore_type': 'str',
+        'payment_mode': 'bool'
     }
 
     attribute_map = {
         'instance_id_list': 'instance_id_list',
-        'datastore_type': 'datastore_type'
+        'datastore_type': 'datastore_type',
+        'payment_mode': 'payment_mode'
     }
 
-    def __init__(self, instance_id_list=None, datastore_type=None):
+    def __init__(self, instance_id_list=None, datastore_type=None, payment_mode=None):
         r"""ChangeChargeModeBody
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class ChangeChargeModeBody:
         :type instance_id_list: list[str]
         :param datastore_type: 引擎类型
         :type datastore_type: str
+        :param payment_mode: true: 设置为付费, false: 设置为免费
+        :type payment_mode: bool
         """
         
         
 
         self._instance_id_list = None
         self._datastore_type = None
+        self._payment_mode = None
         self.discriminator = None
 
         self.instance_id_list = instance_id_list
         self.datastore_type = datastore_type
+        if payment_mode is not None:
+            self.payment_mode = payment_mode
 
     @property
     def instance_id_list(self):
@@ -87,6 +94,28 @@ class ChangeChargeModeBody:
         :type datastore_type: str
         """
         self._datastore_type = datastore_type
+
+    @property
+    def payment_mode(self):
+        r"""Gets the payment_mode of this ChangeChargeModeBody.
+
+        true: 设置为付费, false: 设置为免费
+
+        :return: The payment_mode of this ChangeChargeModeBody.
+        :rtype: bool
+        """
+        return self._payment_mode
+
+    @payment_mode.setter
+    def payment_mode(self, payment_mode):
+        r"""Sets the payment_mode of this ChangeChargeModeBody.
+
+        true: 设置为付费, false: 设置为免费
+
+        :param payment_mode: The payment_mode of this ChangeChargeModeBody.
+        :type payment_mode: bool
+        """
+        self._payment_mode = payment_mode
 
     def to_dict(self):
         result = {}

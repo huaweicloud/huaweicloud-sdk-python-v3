@@ -29,9 +29,9 @@ class UpdateServerlessPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param min_vcpus: 单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        :param min_vcpus: 单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
         :type min_vcpus: int
-        :param max_vcpus: 单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        :param max_vcpus: 单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
         :type max_vcpus: int
         """
         
@@ -48,7 +48,7 @@ class UpdateServerlessPolicy:
     def min_vcpus(self):
         r"""Gets the min_vcpus of this UpdateServerlessPolicy.
 
-        单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
 
         :return: The min_vcpus of this UpdateServerlessPolicy.
         :rtype: int
@@ -59,7 +59,7 @@ class UpdateServerlessPolicy:
     def min_vcpus(self, min_vcpus):
         r"""Sets the min_vcpus of this UpdateServerlessPolicy.
 
-        单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
 
         :param min_vcpus: The min_vcpus of this UpdateServerlessPolicy.
         :type min_vcpus: int
@@ -70,7 +70,7 @@ class UpdateServerlessPolicy:
     def max_vcpus(self):
         r"""Gets the max_vcpus of this UpdateServerlessPolicy.
 
-        单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
 
         :return: The max_vcpus of this UpdateServerlessPolicy.
         :rtype: int
@@ -81,7 +81,7 @@ class UpdateServerlessPolicy:
     def max_vcpus(self, max_vcpus):
         r"""Sets the max_vcpus of this UpdateServerlessPolicy.
 
-        单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
+        单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlFlavors.html)接口获取。
 
         :param max_vcpus: The max_vcpus of this UpdateServerlessPolicy.
         :type max_vcpus: int

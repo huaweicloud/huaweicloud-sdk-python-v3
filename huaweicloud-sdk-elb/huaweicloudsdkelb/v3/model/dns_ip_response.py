@@ -37,11 +37,11 @@ class DnsIpResponse:
 
         The model defined in huaweicloud sdk
 
-        :param enable: **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        :param enable: **参数解释**：IP地址是否已加入到域名解析。  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。
         :type enable: bool
         :param ip_address: **参数解释**：IPv4或IPv6地址。  **约束限制**：必须是当前负载均衡器绑定的私网地址或者公网地址。
         :type ip_address: str
-        :param type: **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
+        :param type: **参数解释**：IP地址类型。  **取值范围**： - vip：私网IP。 - eip：公网IP。
         :type type: str
         :param domain_name: **参数解释**：当前IP地址关联的负载均衡实例域名。  **约束限制**： - 如果IP为私网类型，则这里为负载均衡实例的私网域名。 - 如果IP为公网类型，则这里为负载均衡实例的公网域名。
         :type domain_name: str
@@ -78,7 +78,7 @@ class DnsIpResponse:
     def enable(self):
         r"""Gets the enable of this DnsIpResponse.
 
-        **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        **参数解释**：IP地址是否已加入到域名解析。  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。
 
         :return: The enable of this DnsIpResponse.
         :rtype: bool
@@ -89,7 +89,7 @@ class DnsIpResponse:
     def enable(self, enable):
         r"""Sets the enable of this DnsIpResponse.
 
-        **参数解释**：是否已加入到域名解析。  **取值范围**： true：已加入域名解析。 false：未加入域名解析。
+        **参数解释**：IP地址是否已加入到域名解析。  **取值范围**： - true：已加入域名解析。 - false：未加入域名解析。
 
         :param enable: The enable of this DnsIpResponse.
         :type enable: bool
@@ -122,7 +122,7 @@ class DnsIpResponse:
     def type(self):
         r"""Gets the type of this DnsIpResponse.
 
-        **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
+        **参数解释**：IP地址类型。  **取值范围**： - vip：私网IP。 - eip：公网IP。
 
         :return: The type of this DnsIpResponse.
         :rtype: str
@@ -133,7 +133,7 @@ class DnsIpResponse:
     def type(self, type):
         r"""Sets the type of this DnsIpResponse.
 
-        **参数解释**：IP地址类型。  **取值范围**： vip：私网IP。 eip：公网IP。
+        **参数解释**：IP地址类型。  **取值范围**： - vip：私网IP。 - eip：公网IP。
 
         :param type: The type of this DnsIpResponse.
         :type type: str

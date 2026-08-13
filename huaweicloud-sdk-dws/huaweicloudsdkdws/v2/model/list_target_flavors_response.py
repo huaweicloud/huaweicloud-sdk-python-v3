@@ -17,15 +17,17 @@ class ListTargetFlavorsResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'flavors': 'list[FlavorInfoResponse]'
+        'flavors': 'list[FlavorInfoResponse]',
+        'change_mode': 'str'
     }
 
     attribute_map = {
         'count': 'count',
-        'flavors': 'flavors'
+        'flavors': 'flavors',
+        'change_mode': 'change_mode'
     }
 
-    def __init__(self, count=None, flavors=None):
+    def __init__(self, count=None, flavors=None, change_mode=None):
         r"""ListTargetFlavorsResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListTargetFlavorsResponse(SdkResponse):
         :type count: int
         :param flavors: **参数解释**： 规格详情列表。接口返回的规格列表最多为20条。 **取值范围**： 不涉及。
         :type flavors: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]
+        :param change_mode: **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+        :type change_mode: str
         """
         
         super().__init__()
 
         self._count = None
         self._flavors = None
+        self._change_mode = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
         if flavors is not None:
             self.flavors = flavors
+        if change_mode is not None:
+            self.change_mode = change_mode
 
     @property
     def count(self):
@@ -90,6 +97,28 @@ class ListTargetFlavorsResponse(SdkResponse):
         :type flavors: list[:class:`huaweicloudsdkdws.v2.FlavorInfoResponse`]
         """
         self._flavors = flavors
+
+    @property
+    def change_mode(self):
+        r"""Gets the change_mode of this ListTargetFlavorsResponse.
+
+        **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+
+        :return: The change_mode of this ListTargetFlavorsResponse.
+        :rtype: str
+        """
+        return self._change_mode
+
+    @change_mode.setter
+    def change_mode(self, change_mode):
+        r"""Sets the change_mode of this ListTargetFlavorsResponse.
+
+        **参数解释**： 规格变更模式。 **取值范围**： online：在线模式； offline：离线模式； all：在线模式、离线模式都支持。
+
+        :param change_mode: The change_mode of this ListTargetFlavorsResponse.
+        :type change_mode: str
+        """
+        self._change_mode = change_mode
 
     def to_dict(self):
         import warnings

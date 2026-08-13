@@ -29,9 +29,9 @@ class ListConfigurationsDifferencesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param source_configuration_id: 需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
+        :param source_configuration_id: 需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
         :type source_configuration_id: str
-        :param target_configuration_id: 需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
+        :param target_configuration_id: 需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
         :type target_configuration_id: str
         """
         
@@ -48,7 +48,7 @@ class ListConfigurationsDifferencesRequestBody:
     def source_configuration_id(self):
         r"""Gets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
-        需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
+        需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
 
         :return: The source_configuration_id of this ListConfigurationsDifferencesRequestBody.
         :rtype: str
@@ -59,7 +59,7 @@ class ListConfigurationsDifferencesRequestBody:
     def source_configuration_id(self, source_configuration_id):
         r"""Sets the source_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
-        需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
+        需要进行比较的源参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为source_configuration_id值。
 
         :param source_configuration_id: The source_configuration_id of this ListConfigurationsDifferencesRequestBody.
         :type source_configuration_id: str
@@ -70,7 +70,7 @@ class ListConfigurationsDifferencesRequestBody:
     def target_configuration_id(self):
         r"""Gets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
-        需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
+        需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
 
         :return: The target_configuration_id of this ListConfigurationsDifferencesRequestBody.
         :rtype: str
@@ -81,7 +81,7 @@ class ListConfigurationsDifferencesRequestBody:
     def target_configuration_id(self, target_configuration_id):
         r"""Sets the target_configuration_id of this ListConfigurationsDifferencesRequestBody.
 
-        需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
+        需要进行比较的目标参数模板ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-taurusdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为target_configuration_id值。
 
         :param target_configuration_id: The target_configuration_id of this ListConfigurationsDifferencesRequestBody.
         :type target_configuration_id: str

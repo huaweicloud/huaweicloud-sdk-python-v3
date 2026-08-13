@@ -121,7 +121,7 @@ class Pool:
         :type vpc_id: str
         :param type: **参数解释**：后端服务器组的类型。  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。pool的protocol为IP时，type不允许设置为ip。] - 空字符串（\&quot;\&quot;）：允许任意类型的后端
         :type type: str
-        :param protection_status: **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
+        :param protection_status: **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
         :type protection_status: str
         :param protection_reason: **参数解释**：设置保护的原因。作为protection_status的转态设置的原因。  **取值范围**：除&#39;&lt;&#39;和&#39;&gt;&#39;外通用Unicode字符集字符，最大255个字符。
         :type protection_reason: str
@@ -643,7 +643,7 @@ class Pool:
     def protection_status(self):
         r"""Gets the protection_status of this Pool.
 
-        **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :return: The protection_status of this Pool.
         :rtype: str
@@ -654,7 +654,7 @@ class Pool:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this Pool.
 
-        **参数解释**：修改保护状态,。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
+        **参数解释**：修改保护状态。  **取值范围**： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。
 
         :param protection_status: The protection_status of this Pool.
         :type protection_status: str

@@ -1,3 +1,158 @@
+# 3.1.210 2026-08-13
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ChangePaymentModeNew`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeChargeMode**
+    - changes of request param
+      - `+ payment_mode`
+  - **ShowExportTaskInfo**
+    - changes of response param
+      - `* create_at: number -> int64`
+      - `* end_time: number -> int64`
+      - `* export_line_num: number -> int64`
+      - `* last_record_time: number -> int64`
+      - `* start_time: number -> int64`
+      - `* task_id: number -> int64`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteFlavorChange**
+    - changes of request param
+      - `+ change_mode`
+  - **ListTargetFlavors**
+    - changes of response param
+      - `+ change_mode`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDomainIPs**
+    - changes of request param
+      - `+ ip_address`
+      - `+ enable`
+      - `+ type`
+      - `+ domain_name`
+      - `+ enterprise_project_id`
+  - **ShowLoadBalancerTopology**
+    - changes of response param
+      - `* topology.labels.l7policies.priority: string -> int32`
+
+### HuaweiCloud SDK EPS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the API `ShowResourceBindEnterpriseProject`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDdlLogs**
+    - changes of request param
+      - `* start_time: string -> int64`
+      - `* end_time: string -> int64`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `SwitchOverDisasterRecovery`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LakeFormation
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTablesByName**
+    - changes of response param
+      - `+ table_format: enum value [PAIMON]`
+  - **ShowTable**
+    - changes of response param
+      - `+ table_format: enum value [PAIMON]`
+  - **UpdateTable**
+    - changes of request param
+      - `+ table.table_format: enum value [PAIMON]`
+    - changes of response param
+      - `+ table_format: enum value [PAIMON]`
+  - **ListTables**
+    - changes of request param
+      - `+ table_format: enum value [PAIMON]`
+    - changes of response param
+      - `+ tables.table_format: enum value [PAIMON]`
+  - **CreateTable**
+    - changes of request param
+      - `+ table_format: enum value [PAIMON]`
+      - `+ create_open_table_format_input.create_paimon_table_input`
+    - changes of response param
+      - `+ table_format: enum value [PAIMON]`
+
+### HuaweiCloud SDK VOD
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTakeOverAssetDetails**
+    - changes of response param
+      - `+ base_info.meta_data.audio_codec`
+  - **PublishAssets**
+    - changes of response param
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **UnpublishAssets**
+    - changes of response param
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **ShowAssetMeta**
+    - changes of response param
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **ShowAssetDetail**
+    - changes of response param
+      - `+ base_info.meta_data.audio_codec`
+  - **ShowTakeOverTaskDetails**
+    - changes of response param
+      - `+ assets.base_info.meta_data.audio_codec`
+
 # 3.1.209 2026-08-06
 
 ### HuaweiCloud SDK Cloudtest

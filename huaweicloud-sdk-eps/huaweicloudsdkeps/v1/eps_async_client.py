@@ -1052,10 +1052,12 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectResponse`
         """
+        warnings.warn("Method 'show_resource_bind_enterprise_project_async' of EpsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_resource_bind_enterprise_project_http_info(request)
         return self._call_api(**http_info)
 
     def show_resource_bind_enterprise_project_async_invoker(self, request):
+        warnings.warn("Method 'show_resource_bind_enterprise_project_async_invoker' of EpsAsyncClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_resource_bind_enterprise_project_http_info(request)
         return AsyncInvoker(self, http_info)
 

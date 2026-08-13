@@ -17,6 +17,7 @@ class MetaData:
     openapi_types = {
         'pack_type': 'str',
         'codec': 'str',
+        'audio_codec': 'str',
         'duration': 'int',
         'duration_ms': 'int',
         'video_size': 'int',
@@ -32,6 +33,7 @@ class MetaData:
     attribute_map = {
         'pack_type': 'pack_type',
         'codec': 'codec',
+        'audio_codec': 'audio_codec',
         'duration': 'duration',
         'duration_ms': 'duration_ms',
         'video_size': 'video_size',
@@ -44,7 +46,7 @@ class MetaData:
         'audio_channels': 'audio_channels'
     }
 
-    def __init__(self, pack_type=None, codec=None, duration=None, duration_ms=None, video_size=None, width=None, hight=None, height=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
+    def __init__(self, pack_type=None, codec=None, audio_codec=None, duration=None, duration_ms=None, video_size=None, width=None, hight=None, height=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
         r"""MetaData
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class MetaData:
         :type pack_type: str
         :param codec: 视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
         :type codec: str
+        :param audio_codec: 音频编码格式。 须知：仅在2025/01/01之后创建的媒资元数据/转码产物包含该参数。
+        :type audio_codec: str
         :param duration: 视频时长，单位：秒。  若视频的原时长为非整数，则该字段值为原时长的向下取整。 若视频的原时长小于1，则该字段值为1。
         :type duration: int
         :param duration_ms: 视频时长，单位毫秒。
@@ -79,6 +83,7 @@ class MetaData:
 
         self._pack_type = None
         self._codec = None
+        self._audio_codec = None
         self._duration = None
         self._duration_ms = None
         self._video_size = None
@@ -95,6 +100,8 @@ class MetaData:
             self.pack_type = pack_type
         if codec is not None:
             self.codec = codec
+        if audio_codec is not None:
+            self.audio_codec = audio_codec
         if duration is not None:
             self.duration = duration
         if duration_ms is not None:
@@ -159,6 +166,28 @@ class MetaData:
         :type codec: str
         """
         self._codec = codec
+
+    @property
+    def audio_codec(self):
+        r"""Gets the audio_codec of this MetaData.
+
+        音频编码格式。 须知：仅在2025/01/01之后创建的媒资元数据/转码产物包含该参数。
+
+        :return: The audio_codec of this MetaData.
+        :rtype: str
+        """
+        return self._audio_codec
+
+    @audio_codec.setter
+    def audio_codec(self, audio_codec):
+        r"""Sets the audio_codec of this MetaData.
+
+        音频编码格式。 须知：仅在2025/01/01之后创建的媒资元数据/转码产物包含该参数。
+
+        :param audio_codec: The audio_codec of this MetaData.
+        :type audio_codec: str
+        """
+        self._audio_codec = audio_codec
 
     @property
     def duration(self):

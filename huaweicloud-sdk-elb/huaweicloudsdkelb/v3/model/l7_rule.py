@@ -49,7 +49,7 @@ class L7Rule:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: **参数解释**：转发规则的管理状。  **取值范围**：固定为true。  不支持该字段，请勿使用。
+        :param admin_state_up: **参数解释**：转发规则的管理状态。  **取值范围**：固定为true。  不支持该字段，请勿使用。
         :type admin_state_up: bool
         :param compare_type: **参数解释**：转发规则的匹配方式。  **取值范围**：type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX，STARTS_WITH，EQUAL_TO。
         :type compare_type: str
@@ -110,7 +110,7 @@ class L7Rule:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this L7Rule.
 
-        **参数解释**：转发规则的管理状。  **取值范围**：固定为true。  不支持该字段，请勿使用。
+        **参数解释**：转发规则的管理状态。  **取值范围**：固定为true。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this L7Rule.
         :rtype: bool
@@ -121,7 +121,7 @@ class L7Rule:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this L7Rule.
 
-        **参数解释**：转发规则的管理状。  **取值范围**：固定为true。  不支持该字段，请勿使用。
+        **参数解释**：转发规则的管理状态。  **取值范围**：固定为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this L7Rule.
         :type admin_state_up: bool

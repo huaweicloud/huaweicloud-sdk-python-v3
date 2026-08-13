@@ -16,14 +16,14 @@ class ShowExportTaskInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'create_at': 'float',
+        'create_at': 'int',
         'download_url': 'str',
-        'end_time': 'float',
-        'export_line_num': 'float',
+        'end_time': 'int',
+        'export_line_num': 'int',
         'instance_id': 'str',
-        'last_record_time': 'float',
-        'start_time': 'float',
-        'task_id': 'float',
+        'last_record_time': 'int',
+        'start_time': 'int',
+        'task_id': 'int',
         'task_status': 'int'
     }
 
@@ -45,21 +45,21 @@ class ShowExportTaskInfoResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param create_at: 创建时间
-        :type create_at: float
+        :type create_at: int
         :param download_url: 下载链接
         :type download_url: str
         :param end_time: 结束时间
-        :type end_time: float
+        :type end_time: int
         :param export_line_num: 导出条数
-        :type export_line_num: float
+        :type export_line_num: int
         :param instance_id: 实例ID
         :type instance_id: str
         :param last_record_time: 最新SQL执行时间
-        :type last_record_time: float
+        :type last_record_time: int
         :param start_time: 开始时间
-        :type start_time: float
+        :type start_time: int
         :param task_id: 任务ID
-        :type task_id: float
+        :type task_id: int
         :param task_status: 任务状态
         :type task_status: int
         """
@@ -103,7 +103,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         创建时间
 
         :return: The create_at of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._create_at
 
@@ -114,7 +114,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         创建时间
 
         :param create_at: The create_at of this ShowExportTaskInfoResponse.
-        :type create_at: float
+        :type create_at: int
         """
         self._create_at = create_at
 
@@ -147,7 +147,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         结束时间
 
         :return: The end_time of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._end_time
 
@@ -158,7 +158,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         结束时间
 
         :param end_time: The end_time of this ShowExportTaskInfoResponse.
-        :type end_time: float
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -169,7 +169,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         导出条数
 
         :return: The export_line_num of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._export_line_num
 
@@ -180,7 +180,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         导出条数
 
         :param export_line_num: The export_line_num of this ShowExportTaskInfoResponse.
-        :type export_line_num: float
+        :type export_line_num: int
         """
         self._export_line_num = export_line_num
 
@@ -213,7 +213,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         最新SQL执行时间
 
         :return: The last_record_time of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._last_record_time
 
@@ -224,7 +224,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         最新SQL执行时间
 
         :param last_record_time: The last_record_time of this ShowExportTaskInfoResponse.
-        :type last_record_time: float
+        :type last_record_time: int
         """
         self._last_record_time = last_record_time
 
@@ -235,7 +235,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         开始时间
 
         :return: The start_time of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._start_time
 
@@ -246,7 +246,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         开始时间
 
         :param start_time: The start_time of this ShowExportTaskInfoResponse.
-        :type start_time: float
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -257,7 +257,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         任务ID
 
         :return: The task_id of this ShowExportTaskInfoResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._task_id
 
@@ -268,7 +268,7 @@ class ShowExportTaskInfoResponse(SdkResponse):
         任务ID
 
         :param task_id: The task_id of this ShowExportTaskInfoResponse.
-        :type task_id: float
+        :type task_id: int
         """
         self._task_id = task_id
 

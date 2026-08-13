@@ -20,8 +20,8 @@ class ListDdlLogsRequest:
         'node_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'start_time': 'str',
-        'end_time': 'str'
+        'start_time': 'int',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -49,10 +49,10 @@ class ListDdlLogsRequest:
         :type offset: int
         :param limit: **参数解释**：  每页显示条数。  **约束限制**：  不涉及。  **取值范围**：  1-100  **默认取值**：  10 
         :type limit: int
-        :param start_time: **参数解释**：  开始日期。格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
-        :type start_time: str
-        :param end_time: **参数解释**：  结束时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
-        :type end_time: str
+        :param start_time: **参数解释**：  查询开始时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        :type start_time: int
+        :param end_time: **参数解释**：  查询结束时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        :type end_time: int
         """
         
         
@@ -193,10 +193,10 @@ class ListDdlLogsRequest:
     def start_time(self):
         r"""Gets the start_time of this ListDdlLogsRequest.
 
-        **参数解释**：  开始日期。格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        **参数解释**：  查询开始时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
         :return: The start_time of this ListDdlLogsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -204,10 +204,10 @@ class ListDdlLogsRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListDdlLogsRequest.
 
-        **参数解释**：  开始日期。格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        **参数解释**：  查询开始时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
         :param start_time: The start_time of this ListDdlLogsRequest.
-        :type start_time: str
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -215,10 +215,10 @@ class ListDdlLogsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListDdlLogsRequest.
 
-        **参数解释**：  结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        **参数解释**：  查询结束时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
         :return: The end_time of this ListDdlLogsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -226,10 +226,10 @@ class ListDdlLogsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListDdlLogsRequest.
 
-        **参数解释**：  结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
+        **参数解释**：  查询结束时间。格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
         :param end_time: The end_time of this ListDdlLogsRequest.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

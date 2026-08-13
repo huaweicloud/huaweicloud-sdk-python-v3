@@ -16,15 +16,17 @@ class SpecResizeRequest:
 
     openapi_types = {
         'target_flavor_id': 'str',
-        'force_backup': 'bool'
+        'force_backup': 'bool',
+        'change_mode': 'str'
     }
 
     attribute_map = {
         'target_flavor_id': 'target_flavor_id',
-        'force_backup': 'force_backup'
+        'force_backup': 'force_backup',
+        'change_mode': 'change_mode'
     }
 
-    def __init__(self, target_flavor_id=None, force_backup=None):
+    def __init__(self, target_flavor_id=None, force_backup=None, change_mode=None):
         r"""SpecResizeRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class SpecResizeRequest:
         :type target_flavor_id: str
         :param force_backup: **参数解释**： 强制备份。字段已废弃，不再生效。 **取值范围**： 不涉及。
         :type force_backup: bool
+        :param change_mode: **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： online：在线模式； offline：离线模式； **默认取值**： offline
+        :type change_mode: str
         """
         
         
 
         self._target_flavor_id = None
         self._force_backup = None
+        self._change_mode = None
         self.discriminator = None
 
         self.target_flavor_id = target_flavor_id
         if force_backup is not None:
             self.force_backup = force_backup
+        if change_mode is not None:
+            self.change_mode = change_mode
 
     @property
     def target_flavor_id(self):
@@ -88,6 +95,28 @@ class SpecResizeRequest:
         :type force_backup: bool
         """
         self._force_backup = force_backup
+
+    @property
+    def change_mode(self):
+        r"""Gets the change_mode of this SpecResizeRequest.
+
+        **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： online：在线模式； offline：离线模式； **默认取值**： offline
+
+        :return: The change_mode of this SpecResizeRequest.
+        :rtype: str
+        """
+        return self._change_mode
+
+    @change_mode.setter
+    def change_mode(self, change_mode):
+        r"""Sets the change_mode of this SpecResizeRequest.
+
+        **参数解释**： 规格变更模式。 **约束限制**： 不涉及。 **取值范围**： online：在线模式； offline：离线模式； **默认取值**： offline
+
+        :param change_mode: The change_mode of this SpecResizeRequest.
+        :type change_mode: str
+        """
+        self._change_mode = change_mode
 
     def to_dict(self):
         result = {}

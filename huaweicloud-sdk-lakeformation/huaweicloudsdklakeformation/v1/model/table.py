@@ -87,7 +87,7 @@ class Table:
         :type retention: int
         :param storage_descriptor: 
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
-        :param table_format: 表格式,支持HIVE,ICEBERG,LANCE
+        :param table_format: 表格式,支持HIVE,ICEBERG,LANCE,PAIMON
         :type table_format: str
         :param table_type: 表类型
         :type table_type: str
@@ -430,7 +430,7 @@ class Table:
     def table_format(self):
         r"""Gets the table_format of this Table.
 
-        表格式,支持HIVE,ICEBERG,LANCE
+        表格式,支持HIVE,ICEBERG,LANCE,PAIMON
 
         :return: The table_format of this Table.
         :rtype: str
@@ -441,7 +441,7 @@ class Table:
     def table_format(self, table_format):
         r"""Sets the table_format of this Table.
 
-        表格式,支持HIVE,ICEBERG,LANCE
+        表格式,支持HIVE,ICEBERG,LANCE,PAIMON
 
         :param table_format: The table_format of this Table.
         :type table_format: str

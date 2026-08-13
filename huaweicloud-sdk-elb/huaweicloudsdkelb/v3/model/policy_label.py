@@ -17,7 +17,7 @@ class PolicyLabel:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'priority': 'str',
+        'priority': 'int',
         'action': 'str',
         'admin_state_up': 'bool',
         'rules': 'list[L7Rule]'
@@ -42,7 +42,7 @@ class PolicyLabel:
         :param name: **参数解释**：转发策略名称。  **取值范围**：不涉及
         :type name: str
         :param priority: **参数解释**：转发策略优先级。  **取值范围**：不涉及
-        :type priority: str
+        :type priority: int
         :param action: **参数解释**：转发策略action。  **取值范围**：不涉及
         :type action: str
         :param admin_state_up: **参数解释**：转发策略是否启用。  **取值范围**：不涉及
@@ -120,7 +120,7 @@ class PolicyLabel:
         **参数解释**：转发策略优先级。  **取值范围**：不涉及
 
         :return: The priority of this PolicyLabel.
-        :rtype: str
+        :rtype: int
         """
         return self._priority
 
@@ -131,7 +131,7 @@ class PolicyLabel:
         **参数解释**：转发策略优先级。  **取值范围**：不涉及
 
         :param priority: The priority of this PolicyLabel.
-        :type priority: str
+        :type priority: int
         """
         self._priority = priority
 

@@ -79,7 +79,7 @@ class BatchUpdateMember:
         :type operating_status: str
         :param reason: 
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
-        :param status: **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :param status: **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
         :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
         :type member_type: str
@@ -362,7 +362,7 @@ class BatchUpdateMember:
     def status(self):
         r"""Gets the status of this BatchUpdateMember.
 
-        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :return: The status of this BatchUpdateMember.
         :rtype: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -373,7 +373,7 @@ class BatchUpdateMember:
     def status(self, status):
         r"""Sets the status of this BatchUpdateMember.
 
-        **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        **参数解释**：后端服务器监听器粒度的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
         :param status: The status of this BatchUpdateMember.
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]

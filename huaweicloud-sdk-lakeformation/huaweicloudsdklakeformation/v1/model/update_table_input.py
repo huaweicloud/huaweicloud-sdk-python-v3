@@ -65,7 +65,7 @@ class UpdateTableInput:
 
         :param table_name: 表名称。只能包含中文、字母、数字、下划线、中划线，且长度为1~256个字符。
         :type table_name: str
-        :param table_format: 表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+        :param table_format: 表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE。
         :type table_format: str
         :param table_type: 表类型：MANAGED_TABLE-内表、EXTERNAL_TABLE-外表、VIRTUAL_VIEW-视图、MATERIALIZED_VIEW-物化视图、DICTIONARY_TABLE字典表，LAKE_TABLE内表。
         :type table_type: str
@@ -191,7 +191,7 @@ class UpdateTableInput:
     def table_format(self):
         r"""Gets the table_format of this UpdateTableInput.
 
-        表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+        表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE。
 
         :return: The table_format of this UpdateTableInput.
         :rtype: str
@@ -202,7 +202,7 @@ class UpdateTableInput:
     def table_format(self, table_format):
         r"""Sets the table_format of this UpdateTableInput.
 
-        表格式。支持{HIVE,ICEBERG,LANCE}，默认值为HIVE。
+        表格式。支持{HIVE,ICEBERG,LANCE,PAIMON}，默认值为HIVE。
 
         :param table_format: The table_format of this UpdateTableInput.
         :type table_format: str

@@ -1,3 +1,158 @@
+# 3.1.210 2026-08-13
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ChangePaymentModeNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeChargeMode**
+    - 请求参数变更
+      - `+ payment_mode`
+  - **ShowExportTaskInfo**
+    - 响应参数变更
+      - `* create_at: number -> int64`
+      - `* end_time: number -> int64`
+      - `* export_line_num: number -> int64`
+      - `* last_record_time: number -> int64`
+      - `* start_time: number -> int64`
+      - `* task_id: number -> int64`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteFlavorChange**
+    - 请求参数变更
+      - `+ change_mode`
+  - **ListTargetFlavors**
+    - 响应参数变更
+      - `+ change_mode`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDomainIPs**
+    - 请求参数变更
+      - `+ ip_address`
+      - `+ enable`
+      - `+ type`
+      - `+ domain_name`
+      - `+ enterprise_project_id`
+  - **ShowLoadBalancerTopology**
+    - 响应参数变更
+      - `* topology.labels.l7policies.priority: string -> int32`
+
+### HuaweiCloud SDK EPS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ShowResourceBindEnterpriseProject`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDdlLogs**
+    - 请求参数变更
+      - `* start_time: string -> int64`
+      - `* end_time: string -> int64`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`SwitchOverDisasterRecovery`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK LakeFormation
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTablesByName**
+    - 响应参数变更
+      - `+ table_format: enum value [PAIMON]`
+  - **ShowTable**
+    - 响应参数变更
+      - `+ table_format: enum value [PAIMON]`
+  - **UpdateTable**
+    - 请求参数变更
+      - `+ table.table_format: enum value [PAIMON]`
+    - 响应参数变更
+      - `+ table_format: enum value [PAIMON]`
+  - **ListTables**
+    - 请求参数变更
+      - `+ table_format: enum value [PAIMON]`
+    - 响应参数变更
+      - `+ tables.table_format: enum value [PAIMON]`
+  - **CreateTable**
+    - 请求参数变更
+      - `+ table_format: enum value [PAIMON]`
+      - `+ create_open_table_format_input.create_paimon_table_input`
+    - 响应参数变更
+      - `+ table_format: enum value [PAIMON]`
+
+### HuaweiCloud SDK VOD
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowTakeOverAssetDetails**
+    - 响应参数变更
+      - `+ base_info.meta_data.audio_codec`
+  - **PublishAssets**
+    - 响应参数变更
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **UnpublishAssets**
+    - 响应参数变更
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **ShowAssetMeta**
+    - 响应参数变更
+      - `+ asset_info_array.base_info.meta_data.audio_codec`
+  - **ShowAssetDetail**
+    - 响应参数变更
+      - `+ base_info.meta_data.audio_codec`
+  - **ShowTakeOverTaskDetails**
+    - 响应参数变更
+      - `+ assets.base_info.meta_data.audio_codec`
+
 # 3.1.209 2026-08-06
 
 ### HuaweiCloud SDK Cloudtest
