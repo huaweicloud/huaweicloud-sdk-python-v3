@@ -35,15 +35,15 @@ class SubscriptionTaskVo:
 
         The model defined in huaweicloud sdk
 
-        :param name: - 订阅任务的名称 - [单词字符] [减号] [中文字符] 长度不超过32
+        :param name: **参数解释：** 订阅任务的名称 **约束限制：** 长度不超过32个字符 **取值范围：** 支持大小写字母、中文字符、“-” **默认取值：** 不涉及
         :type name: str
-        :param period_type: - 订阅任务类型，类型如下： - 0：日报 - 1：周报 - 2：月报
+        :param period_type: **参数解释：** 订阅任务类型 **约束限制：** 不涉及 **取值范围：** - 0：日报 - 1：周报 - 2：月报 **默认取值：** 不涉及
         :type period_type: int
-        :param emails: 接收运营报表的邮箱地址。支持同时输入多个邮箱地址，多个邮箱地址用英文逗号（,）分隔。
+        :param emails: **参数解释：** 接收运营报表的邮箱地址 &gt; 支持同时输入多个邮箱地址  **约束限制：** 不涉及 **取值范围：** 多个邮箱地址用英文逗号（,）分隔 **默认取值：** 不涉及
         :type emails: str
-        :param domain_name: 订阅的域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名订阅运营报表。
+        :param domain_name: **参数解释：** 订阅的域名列表 &gt; 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名订阅运营报表 **默认取值：** 不涉及
         :type domain_name: str
-        :param report_type: - 运营报表类型。支持同时输入多个报表类型，多个报表类型以英文逗号（,）分隔。 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
+        :param report_type: **参数解释：** 运营报表类型 &gt; 支持同时输入多个报表类型  **约束限制：** 不涉及 **取值范围：** - 多个报表类型以英文逗号（,）分隔 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
         :type report_type: str
         """
         
@@ -71,7 +71,7 @@ class SubscriptionTaskVo:
     def name(self):
         r"""Gets the name of this SubscriptionTaskVo.
 
-        - 订阅任务的名称 - [单词字符] [减号] [中文字符] 长度不超过32
+        **参数解释：** 订阅任务的名称 **约束限制：** 长度不超过32个字符 **取值范围：** 支持大小写字母、中文字符、“-” **默认取值：** 不涉及
 
         :return: The name of this SubscriptionTaskVo.
         :rtype: str
@@ -82,7 +82,7 @@ class SubscriptionTaskVo:
     def name(self, name):
         r"""Sets the name of this SubscriptionTaskVo.
 
-        - 订阅任务的名称 - [单词字符] [减号] [中文字符] 长度不超过32
+        **参数解释：** 订阅任务的名称 **约束限制：** 长度不超过32个字符 **取值范围：** 支持大小写字母、中文字符、“-” **默认取值：** 不涉及
 
         :param name: The name of this SubscriptionTaskVo.
         :type name: str
@@ -93,7 +93,7 @@ class SubscriptionTaskVo:
     def period_type(self):
         r"""Gets the period_type of this SubscriptionTaskVo.
 
-        - 订阅任务类型，类型如下： - 0：日报 - 1：周报 - 2：月报
+        **参数解释：** 订阅任务类型 **约束限制：** 不涉及 **取值范围：** - 0：日报 - 1：周报 - 2：月报 **默认取值：** 不涉及
 
         :return: The period_type of this SubscriptionTaskVo.
         :rtype: int
@@ -104,7 +104,7 @@ class SubscriptionTaskVo:
     def period_type(self, period_type):
         r"""Sets the period_type of this SubscriptionTaskVo.
 
-        - 订阅任务类型，类型如下： - 0：日报 - 1：周报 - 2：月报
+        **参数解释：** 订阅任务类型 **约束限制：** 不涉及 **取值范围：** - 0：日报 - 1：周报 - 2：月报 **默认取值：** 不涉及
 
         :param period_type: The period_type of this SubscriptionTaskVo.
         :type period_type: int
@@ -115,7 +115,7 @@ class SubscriptionTaskVo:
     def emails(self):
         r"""Gets the emails of this SubscriptionTaskVo.
 
-        接收运营报表的邮箱地址。支持同时输入多个邮箱地址，多个邮箱地址用英文逗号（,）分隔。
+        **参数解释：** 接收运营报表的邮箱地址 > 支持同时输入多个邮箱地址  **约束限制：** 不涉及 **取值范围：** 多个邮箱地址用英文逗号（,）分隔 **默认取值：** 不涉及
 
         :return: The emails of this SubscriptionTaskVo.
         :rtype: str
@@ -126,7 +126,7 @@ class SubscriptionTaskVo:
     def emails(self, emails):
         r"""Sets the emails of this SubscriptionTaskVo.
 
-        接收运营报表的邮箱地址。支持同时输入多个邮箱地址，多个邮箱地址用英文逗号（,）分隔。
+        **参数解释：** 接收运营报表的邮箱地址 > 支持同时输入多个邮箱地址  **约束限制：** 不涉及 **取值范围：** 多个邮箱地址用英文逗号（,）分隔 **默认取值：** 不涉及
 
         :param emails: The emails of this SubscriptionTaskVo.
         :type emails: str
@@ -137,7 +137,7 @@ class SubscriptionTaskVo:
     def domain_name(self):
         r"""Gets the domain_name of this SubscriptionTaskVo.
 
-        订阅的域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名订阅运营报表。
+        **参数解释：** 订阅的域名列表 > 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名订阅运营报表 **默认取值：** 不涉及
 
         :return: The domain_name of this SubscriptionTaskVo.
         :rtype: str
@@ -148,7 +148,7 @@ class SubscriptionTaskVo:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this SubscriptionTaskVo.
 
-        订阅的域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名订阅运营报表。
+        **参数解释：** 订阅的域名列表 > 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名订阅运营报表 **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this SubscriptionTaskVo.
         :type domain_name: str
@@ -159,7 +159,7 @@ class SubscriptionTaskVo:
     def report_type(self):
         r"""Gets the report_type of this SubscriptionTaskVo.
 
-        - 运营报表类型。支持同时输入多个报表类型，多个报表类型以英文逗号（,）分隔。 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
+        **参数解释：** 运营报表类型 > 支持同时输入多个报表类型  **约束限制：** 不涉及 **取值范围：** - 多个报表类型以英文逗号（,）分隔 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
 
         :return: The report_type of this SubscriptionTaskVo.
         :rtype: str
@@ -170,7 +170,7 @@ class SubscriptionTaskVo:
     def report_type(self, report_type):
         r"""Sets the report_type of this SubscriptionTaskVo.
 
-        - 运营报表类型。支持同时输入多个报表类型，多个报表类型以英文逗号（,）分隔。 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
+        **参数解释：** 运营报表类型 > 支持同时输入多个报表类型  **约束限制：** 不涉及 **取值范围：** - 多个报表类型以英文逗号（,）分隔 - 0：访问区域分布 - 1：国家分布 - 2：运营商分布 - 3：域名排行（按流量排序） - 4：热门URL（按流量排序） - 5：热门URL（按请求数排序） - 6：热门Referer（按流量排序） - 7：热门Referer（按请求数排序） - 10：回源热门URL（按流量排序） - 11：回源热门URL（按请求数排序） - 13：热门UA（按流量排序） - 14：热门UA（按请求数排序）
 
         :param report_type: The report_type of this SubscriptionTaskVo.
         :type report_type: str

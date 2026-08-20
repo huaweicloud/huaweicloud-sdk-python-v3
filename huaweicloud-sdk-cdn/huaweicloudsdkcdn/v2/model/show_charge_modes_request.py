@@ -31,11 +31,11 @@ class ShowChargeModesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param product_type: 加速类型，base（基础加速）
+        :param product_type: **参数解释：** 加速类型 **约束限制：** 不涉及 **取值范围：** - base：基础加速 **默认取值：** 不涉及
         :type product_type: str
-        :param status: 查询计费模式状态，active（已生效），upcoming（待生效），不传默认为active(已生效)
+        :param status: **参数解释：** 查询计费模式状态 **约束限制：** 不涉及 **取值范围：** - active：已生效 - upcoming：待生效 **默认取值：** active：已生效
         :type status: str
-        :param service_area: 服务区域，mainland_china（国内），outside_mainland_china（海外），不传默认为mainland_china(国内)
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
         :type service_area: str
         """
         
@@ -56,7 +56,7 @@ class ShowChargeModesRequest:
     def product_type(self):
         r"""Gets the product_type of this ShowChargeModesRequest.
 
-        加速类型，base（基础加速）
+        **参数解释：** 加速类型 **约束限制：** 不涉及 **取值范围：** - base：基础加速 **默认取值：** 不涉及
 
         :return: The product_type of this ShowChargeModesRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowChargeModesRequest:
     def product_type(self, product_type):
         r"""Sets the product_type of this ShowChargeModesRequest.
 
-        加速类型，base（基础加速）
+        **参数解释：** 加速类型 **约束限制：** 不涉及 **取值范围：** - base：基础加速 **默认取值：** 不涉及
 
         :param product_type: The product_type of this ShowChargeModesRequest.
         :type product_type: str
@@ -78,7 +78,7 @@ class ShowChargeModesRequest:
     def status(self):
         r"""Gets the status of this ShowChargeModesRequest.
 
-        查询计费模式状态，active（已生效），upcoming（待生效），不传默认为active(已生效)
+        **参数解释：** 查询计费模式状态 **约束限制：** 不涉及 **取值范围：** - active：已生效 - upcoming：待生效 **默认取值：** active：已生效
 
         :return: The status of this ShowChargeModesRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowChargeModesRequest:
     def status(self, status):
         r"""Sets the status of this ShowChargeModesRequest.
 
-        查询计费模式状态，active（已生效），upcoming（待生效），不传默认为active(已生效)
+        **参数解释：** 查询计费模式状态 **约束限制：** 不涉及 **取值范围：** - active：已生效 - upcoming：待生效 **默认取值：** active：已生效
 
         :param status: The status of this ShowChargeModesRequest.
         :type status: str
@@ -100,7 +100,7 @@ class ShowChargeModesRequest:
     def service_area(self):
         r"""Gets the service_area of this ShowChargeModesRequest.
 
-        服务区域，mainland_china（国内），outside_mainland_china（海外），不传默认为mainland_china(国内)
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
 
         :return: The service_area of this ShowChargeModesRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowChargeModesRequest:
     def service_area(self, service_area):
         r"""Sets the service_area of this ShowChargeModesRequest.
 
-        服务区域，mainland_china（国内），outside_mainland_china（海外），不传默认为mainland_china(国内)
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
 
         :param service_area: The service_area of this ShowChargeModesRequest.
         :type service_area: str

@@ -28,7 +28,7 @@ class ShowChargeModesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 计费模式查询结果
+        :param result: **参数解释：** 计费模式查询结果 **取值范围：** 不涉及
         :type result: list[dict(str, object)]
         """
         
@@ -44,7 +44,7 @@ class ShowChargeModesResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowChargeModesResponse.
 
-        计费模式查询结果
+        **参数解释：** 计费模式查询结果 **取值范围：** 不涉及
 
         :return: The result of this ShowChargeModesResponse.
         :rtype: list[dict(str, object)]
@@ -55,7 +55,7 @@ class ShowChargeModesResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowChargeModesResponse.
 
-        计费模式查询结果
+        **参数解释：** 计费模式查询结果 **取值范围：** 不涉及
 
         :param result: The result of this ShowChargeModesResponse.
         :type result: list[dict(str, object)]

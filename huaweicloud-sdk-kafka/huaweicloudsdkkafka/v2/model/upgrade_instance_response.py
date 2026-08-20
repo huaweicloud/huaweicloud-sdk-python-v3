@@ -16,51 +16,80 @@ class UpgradeInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'job_id': 'str',
+        'schedule_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'job_id': 'job_id',
+        'schedule_id': 'schedule_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, job_id=None, schedule_id=None):
         r"""UpgradeInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 提交升级任务id
-        :type body: str
+        :param job_id: **参数解释**： 实例升级任务ID。 **取值范围**： 不涉及。
+        :type job_id: str
+        :param schedule_id: **参数解释**： 实例升级调度任务ID。 **取值范围**： 不涉及。
+        :type schedule_id: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._job_id = None
+        self._schedule_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if job_id is not None:
+            self.job_id = job_id
+        if schedule_id is not None:
+            self.schedule_id = schedule_id
 
     @property
-    def body(self):
-        r"""Gets the body of this UpgradeInstanceResponse.
+    def job_id(self):
+        r"""Gets the job_id of this UpgradeInstanceResponse.
 
-        提交升级任务id
+        **参数解释**： 实例升级任务ID。 **取值范围**： 不涉及。
 
-        :return: The body of this UpgradeInstanceResponse.
+        :return: The job_id of this UpgradeInstanceResponse.
         :rtype: str
         """
-        return self._body
+        return self._job_id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpgradeInstanceResponse.
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this UpgradeInstanceResponse.
 
-        提交升级任务id
+        **参数解释**： 实例升级任务ID。 **取值范围**： 不涉及。
 
-        :param body: The body of this UpgradeInstanceResponse.
-        :type body: str
+        :param job_id: The job_id of this UpgradeInstanceResponse.
+        :type job_id: str
         """
-        self._body = body
+        self._job_id = job_id
+
+    @property
+    def schedule_id(self):
+        r"""Gets the schedule_id of this UpgradeInstanceResponse.
+
+        **参数解释**： 实例升级调度任务ID。 **取值范围**： 不涉及。
+
+        :return: The schedule_id of this UpgradeInstanceResponse.
+        :rtype: str
+        """
+        return self._schedule_id
+
+    @schedule_id.setter
+    def schedule_id(self, schedule_id):
+        r"""Sets the schedule_id of this UpgradeInstanceResponse.
+
+        **参数解释**： 实例升级调度任务ID。 **取值范围**： 不涉及。
+
+        :param schedule_id: The schedule_id of this UpgradeInstanceResponse.
+        :type schedule_id: str
+        """
+        self._schedule_id = schedule_id
 
     def to_dict(self):
         import warnings

@@ -28,7 +28,7 @@ class ListCdnDomainTopIpsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param top_ip_summary: 详情数据对象。
+        :param top_ip_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_ip_summary: list[:class:`huaweicloudsdkcdn.v2.TopIpSummary`]
         """
         
@@ -44,7 +44,7 @@ class ListCdnDomainTopIpsResponse(SdkResponse):
     def top_ip_summary(self):
         r"""Gets the top_ip_summary of this ListCdnDomainTopIpsResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_ip_summary of this ListCdnDomainTopIpsResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopIpSummary`]
@@ -55,7 +55,7 @@ class ListCdnDomainTopIpsResponse(SdkResponse):
     def top_ip_summary(self, top_ip_summary):
         r"""Sets the top_ip_summary of this ListCdnDomainTopIpsResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_ip_summary: The top_ip_summary of this ListCdnDomainTopIpsResponse.
         :type top_ip_summary: list[:class:`huaweicloudsdkcdn.v2.TopIpSummary`]

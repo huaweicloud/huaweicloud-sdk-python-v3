@@ -33,13 +33,13 @@ class ListExportTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: - 每页显示的条目数量, 默认为10
+        :param limit: **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 10
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        :param offset: **参数解释：** 偏移量 &gt; 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
         :type offset: int
-        :param task_id: 任务id
+        :param task_id: **参数解释：** 任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释：** 任务名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type task_name: str
         """
         
@@ -55,14 +55,16 @@ class ListExportTasksRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        self.task_id = task_id
-        self.task_name = task_name
+        if task_id is not None:
+            self.task_id = task_id
+        if task_name is not None:
+            self.task_name = task_name
 
     @property
     def limit(self):
         r"""Gets the limit of this ListExportTasksRequest.
 
-        - 每页显示的条目数量, 默认为10
+        **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 10
 
         :return: The limit of this ListExportTasksRequest.
         :rtype: int
@@ -73,7 +75,7 @@ class ListExportTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListExportTasksRequest.
 
-        - 每页显示的条目数量, 默认为10
+        **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 10
 
         :param limit: The limit of this ListExportTasksRequest.
         :type limit: int
@@ -84,7 +86,7 @@ class ListExportTasksRequest:
     def offset(self):
         r"""Gets the offset of this ListExportTasksRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        **参数解释：** 偏移量 > 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
 
         :return: The offset of this ListExportTasksRequest.
         :rtype: int
@@ -95,7 +97,7 @@ class ListExportTasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListExportTasksRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        **参数解释：** 偏移量 > 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
 
         :param offset: The offset of this ListExportTasksRequest.
         :type offset: int
@@ -106,7 +108,7 @@ class ListExportTasksRequest:
     def task_id(self):
         r"""Gets the task_id of this ListExportTasksRequest.
 
-        任务id
+        **参数解释：** 任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The task_id of this ListExportTasksRequest.
         :rtype: str
@@ -117,7 +119,7 @@ class ListExportTasksRequest:
     def task_id(self, task_id):
         r"""Sets the task_id of this ListExportTasksRequest.
 
-        任务id
+        **参数解释：** 任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param task_id: The task_id of this ListExportTasksRequest.
         :type task_id: str
@@ -128,7 +130,7 @@ class ListExportTasksRequest:
     def task_name(self):
         r"""Gets the task_name of this ListExportTasksRequest.
 
-        任务名称
+        **参数解释：** 任务名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The task_name of this ListExportTasksRequest.
         :rtype: str
@@ -139,7 +141,7 @@ class ListExportTasksRequest:
     def task_name(self, task_name):
         r"""Sets the task_name of this ListExportTasksRequest.
 
-        任务名称
+        **参数解释：** 任务名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param task_name: The task_name of this ListExportTasksRequest.
         :type task_name: str

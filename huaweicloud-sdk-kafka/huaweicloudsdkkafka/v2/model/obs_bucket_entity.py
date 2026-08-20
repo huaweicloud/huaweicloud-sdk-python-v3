@@ -63,7 +63,7 @@ class ObsBucketEntity:
         :type bucket_name: str
         :param owner: **参数解释**： 桶拥有者信息。
         :type owner: object
-        :param creation_date: **参数解释**： 桶的创建时间。 **取值范围**： 长度为24的字符串。
+        :param creation_date: **参数解释**： 桶的创建时间。 **取值范围**： 不涉及。
         :type creation_date: int
         :param location: **参数解释**： 桶所在的区域。 **取值范围**： 不涉及。
         :type location: str
@@ -244,7 +244,7 @@ class ObsBucketEntity:
     def creation_date(self):
         r"""Gets the creation_date of this ObsBucketEntity.
 
-        **参数解释**： 桶的创建时间。 **取值范围**： 长度为24的字符串。
+        **参数解释**： 桶的创建时间。 **取值范围**： 不涉及。
 
         :return: The creation_date of this ObsBucketEntity.
         :rtype: int
@@ -255,7 +255,7 @@ class ObsBucketEntity:
     def creation_date(self, creation_date):
         r"""Sets the creation_date of this ObsBucketEntity.
 
-        **参数解释**： 桶的创建时间。 **取值范围**： 长度为24的字符串。
+        **参数解释**： 桶的创建时间。 **取值范围**： 不涉及。
 
         :param creation_date: The creation_date of this ObsBucketEntity.
         :type creation_date: int

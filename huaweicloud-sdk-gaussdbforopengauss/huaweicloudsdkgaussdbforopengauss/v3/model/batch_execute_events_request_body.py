@@ -33,7 +33,7 @@ class BatchExecuteEventsRequestBody:
 
         :param event_instances: **参数解释**: 事件列表。 **约束限制**: 不涉及。
         :type event_instances: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EventInstanceOption`]
-        :param operation_type: **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口 **默认取值**: 不涉及。
+        :param operation_type: **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口  **默认取值**: 不涉及。
         :type operation_type: str
         :param event_schedule_window: 
         :type event_schedule_window: :class:`huaweicloudsdkgaussdbforopengauss.v3.EventScheduleWindowOption`
@@ -77,7 +77,7 @@ class BatchExecuteEventsRequestBody:
     def operation_type(self):
         r"""Gets the operation_type of this BatchExecuteEventsRequestBody.
 
-        **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口 **默认取值**: 不涉及。
+        **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口  **默认取值**: 不涉及。
 
         :return: The operation_type of this BatchExecuteEventsRequestBody.
         :rtype: str
@@ -88,7 +88,7 @@ class BatchExecuteEventsRequestBody:
     def operation_type(self, operation_type):
         r"""Sets the operation_type of this BatchExecuteEventsRequestBody.
 
-        **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口 **默认取值**: 不涉及。
+        **参数解释**: 事件操作类型。 **约束限制**: 不涉及。 **取值范围**: - cancel：取消事件 - execute：立即执行 - reservation：预约执行时间窗口  **默认取值**: 不涉及。
 
         :param operation_type: The operation_type of this BatchExecuteEventsRequestBody.
         :type operation_type: str

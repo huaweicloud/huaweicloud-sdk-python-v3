@@ -35,7 +35,7 @@ class SwitchLogCollectionStatusRequest:
         :type x_language: str
         :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
-        :param status: **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。 **默认取值**: 不涉及。
+        :param status: **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。  **默认取值**: 不涉及。
         :type status: str
         """
         
@@ -99,7 +99,7 @@ class SwitchLogCollectionStatusRequest:
     def status(self):
         r"""Gets the status of this SwitchLogCollectionStatusRequest.
 
-        **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。 **默认取值**: 不涉及。
+        **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。  **默认取值**: 不涉及。
 
         :return: The status of this SwitchLogCollectionStatusRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class SwitchLogCollectionStatusRequest:
     def status(self, status):
         r"""Sets the status of this SwitchLogCollectionStatusRequest.
 
-        **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。 **默认取值**: 不涉及。
+        **参数解释**: 采集状态。 **约束限制**: 不涉及。 **取值范围**: - ON：开始采集。 - OFF：关闭采集。  **默认取值**: 不涉及。
 
         :param status: The status of this SwitchLogCollectionStatusRequest.
         :type status: str

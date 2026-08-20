@@ -29,9 +29,9 @@ class TopReferSummary:
 
         The model defined in huaweicloud sdk
 
-        :param refer: referer值。
+        :param refer: **参数解释：** referer值 **取值范围：** 不涉及
         :type refer: str
-        :param value: 对应查询类型的值。（流量单位：Byte）
+        :param value: **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
         :type value: int
         """
         
@@ -50,7 +50,7 @@ class TopReferSummary:
     def refer(self):
         r"""Gets the refer of this TopReferSummary.
 
-        referer值。
+        **参数解释：** referer值 **取值范围：** 不涉及
 
         :return: The refer of this TopReferSummary.
         :rtype: str
@@ -61,7 +61,7 @@ class TopReferSummary:
     def refer(self, refer):
         r"""Sets the refer of this TopReferSummary.
 
-        referer值。
+        **参数解释：** referer值 **取值范围：** 不涉及
 
         :param refer: The refer of this TopReferSummary.
         :type refer: str
@@ -72,7 +72,7 @@ class TopReferSummary:
     def value(self):
         r"""Gets the value of this TopReferSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
 
         :return: The value of this TopReferSummary.
         :rtype: int
@@ -83,7 +83,7 @@ class TopReferSummary:
     def value(self, value):
         r"""Sets the value of this TopReferSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
 
         :param value: The value of this TopReferSummary.
         :type value: int

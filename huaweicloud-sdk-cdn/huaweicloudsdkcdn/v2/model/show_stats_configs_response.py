@@ -30,7 +30,7 @@ class ShowStatsConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 统计配置数量
+        :param total: **参数解释：** 统计配置数量 **取值范围：** 不涉及
         :type total: int
         :param data: 
         :type data: list[:class:`huaweicloudsdkcdn.v2.StatsConfigDetails`]
@@ -51,7 +51,7 @@ class ShowStatsConfigsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowStatsConfigsResponse.
 
-        统计配置数量
+        **参数解释：** 统计配置数量 **取值范围：** 不涉及
 
         :return: The total of this ShowStatsConfigsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ShowStatsConfigsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowStatsConfigsResponse.
 
-        统计配置数量
+        **参数解释：** 统计配置数量 **取值范围：** 不涉及
 
         :param total: The total of this ShowStatsConfigsResponse.
         :type total: int

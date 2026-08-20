@@ -17,8 +17,8 @@ class StepDetail:
     openapi_types = {
         'name': 'str',
         'statue': 'str',
-        'start_time': 'str',
-        'end_time': 'str'
+        'start_time': 'int',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -38,9 +38,9 @@ class StepDetail:
         :param statue: **参数解释**： 任务状态。 **取值范围**： - COMPLETED：任务已完成。 - IN_PROGRESS：任务正在进行。 - FAILED：任务失败。 - WAITING：等待开始。
         :type statue: str
         :param start_time: **参数解释**： 开始时间。     **取值范围**： 不涉及。
-        :type start_time: str
+        :type start_time: int
         :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
-        :type end_time: str
+        :type end_time: int
         """
         
         
@@ -111,7 +111,7 @@ class StepDetail:
         **参数解释**： 开始时间。     **取值范围**： 不涉及。
 
         :return: The start_time of this StepDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -122,7 +122,7 @@ class StepDetail:
         **参数解释**： 开始时间。     **取值范围**： 不涉及。
 
         :param start_time: The start_time of this StepDetail.
-        :type start_time: str
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -133,7 +133,7 @@ class StepDetail:
         **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :return: The end_time of this StepDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -144,7 +144,7 @@ class StepDetail:
         **参数解释**： 结束时间。 **取值范围**： 不涉及。
 
         :param end_time: The end_time of this StepDetail.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 

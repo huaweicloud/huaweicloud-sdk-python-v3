@@ -28,7 +28,7 @@ class ListCdnDomainTopUasResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param top_ua_summary: 详情数据对象。
+        :param top_ua_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_ua_summary: list[:class:`huaweicloudsdkcdn.v2.TopUaSummary`]
         """
         
@@ -44,7 +44,7 @@ class ListCdnDomainTopUasResponse(SdkResponse):
     def top_ua_summary(self):
         r"""Gets the top_ua_summary of this ListCdnDomainTopUasResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_ua_summary of this ListCdnDomainTopUasResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopUaSummary`]
@@ -55,7 +55,7 @@ class ListCdnDomainTopUasResponse(SdkResponse):
     def top_ua_summary(self, top_ua_summary):
         r"""Sets the top_ua_summary of this ListCdnDomainTopUasResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_ua_summary: The top_ua_summary of this ListCdnDomainTopUasResponse.
         :type top_ua_summary: list[:class:`huaweicloudsdkcdn.v2.TopUaSummary`]

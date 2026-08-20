@@ -1,0 +1,630 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ProcessInstanceResponseResultIssueStatus:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'belonging': 'str',
+        'space_id': 'str',
+        'name': 'str',
+        'code': 'str',
+        'definition_type': 'str',
+        'belong_definition_type': 'int',
+        'display_value': 'str',
+        'position': 'int',
+        'displayable': 'int',
+        'editable': 'int',
+        'deletable': 'int',
+        'mutable': 'int',
+        'title_py': 'str',
+        'created_by': 'str',
+        'created_date': 'str',
+        'modified_date': 'str',
+        'modified_by': 'str',
+        'linkage_node_fields': 'bool'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'belonging': 'belonging',
+        'space_id': 'space_id',
+        'name': 'name',
+        'code': 'code',
+        'definition_type': 'definition_type',
+        'belong_definition_type': 'belong_definition_type',
+        'display_value': 'display_value',
+        'position': 'position',
+        'displayable': 'displayable',
+        'editable': 'editable',
+        'deletable': 'deletable',
+        'mutable': 'mutable',
+        'title_py': 'title_py',
+        'created_by': 'created_by',
+        'created_date': 'created_date',
+        'modified_date': 'modified_date',
+        'modified_by': 'modified_by',
+        'linkage_node_fields': 'linkage_node_fields'
+    }
+
+    def __init__(self, id=None, belonging=None, space_id=None, name=None, code=None, definition_type=None, belong_definition_type=None, display_value=None, position=None, displayable=None, editable=None, deletable=None, mutable=None, title_py=None, created_by=None, created_date=None, modified_date=None, modified_by=None, linkage_node_fields=None):
+        r"""ProcessInstanceResponseResultIssueStatus
+
+        The model defined in huaweicloud sdk
+
+        :param id: 状态id
+        :type id: str
+        :param belonging: **参数解释**： 工作项的状态属性。 **取值范围**： START、IN_PROGRESS、END。
+        :type belonging: str
+        :param space_id: 空间id
+        :type space_id: str
+        :param name: 状态名称
+        :type name: str
+        :param code: 状态码
+        :type code: str
+        :param definition_type: 定义类型
+        :type definition_type: str
+        :param belong_definition_type: 所属字段定义类型
+        :type belong_definition_type: int
+        :param display_value: 显示值
+        :type display_value: str
+        :param position: 排序位置
+        :type position: int
+        :param displayable: 可显示
+        :type displayable: int
+        :param editable: 可编辑
+        :type editable: int
+        :param deletable: 可删除
+        :type deletable: int
+        :param mutable: 可变的
+        :type mutable: int
+        :param title_py: 状态拼音
+        :type title_py: str
+        :param created_by: 状态创建人
+        :type created_by: str
+        :param created_date: 状态创建时间
+        :type created_date: str
+        :param modified_date: 状态最后修改时间
+        :type modified_date: str
+        :param modified_by: 状态最后修改人
+        :type modified_by: str
+        :param linkage_node_fields: 是否链接节点字段
+        :type linkage_node_fields: bool
+        """
+        
+        
+
+        self._id = None
+        self._belonging = None
+        self._space_id = None
+        self._name = None
+        self._code = None
+        self._definition_type = None
+        self._belong_definition_type = None
+        self._display_value = None
+        self._position = None
+        self._displayable = None
+        self._editable = None
+        self._deletable = None
+        self._mutable = None
+        self._title_py = None
+        self._created_by = None
+        self._created_date = None
+        self._modified_date = None
+        self._modified_by = None
+        self._linkage_node_fields = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if belonging is not None:
+            self.belonging = belonging
+        if space_id is not None:
+            self.space_id = space_id
+        if name is not None:
+            self.name = name
+        if code is not None:
+            self.code = code
+        if definition_type is not None:
+            self.definition_type = definition_type
+        if belong_definition_type is not None:
+            self.belong_definition_type = belong_definition_type
+        if display_value is not None:
+            self.display_value = display_value
+        if position is not None:
+            self.position = position
+        if displayable is not None:
+            self.displayable = displayable
+        if editable is not None:
+            self.editable = editable
+        if deletable is not None:
+            self.deletable = deletable
+        if mutable is not None:
+            self.mutable = mutable
+        if title_py is not None:
+            self.title_py = title_py
+        if created_by is not None:
+            self.created_by = created_by
+        if created_date is not None:
+            self.created_date = created_date
+        if modified_date is not None:
+            self.modified_date = modified_date
+        if modified_by is not None:
+            self.modified_by = modified_by
+        if linkage_node_fields is not None:
+            self.linkage_node_fields = linkage_node_fields
+
+    @property
+    def id(self):
+        r"""Gets the id of this ProcessInstanceResponseResultIssueStatus.
+
+        状态id
+
+        :return: The id of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ProcessInstanceResponseResultIssueStatus.
+
+        状态id
+
+        :param id: The id of this ProcessInstanceResponseResultIssueStatus.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def belonging(self):
+        r"""Gets the belonging of this ProcessInstanceResponseResultIssueStatus.
+
+        **参数解释**： 工作项的状态属性。 **取值范围**： START、IN_PROGRESS、END。
+
+        :return: The belonging of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._belonging
+
+    @belonging.setter
+    def belonging(self, belonging):
+        r"""Sets the belonging of this ProcessInstanceResponseResultIssueStatus.
+
+        **参数解释**： 工作项的状态属性。 **取值范围**： START、IN_PROGRESS、END。
+
+        :param belonging: The belonging of this ProcessInstanceResponseResultIssueStatus.
+        :type belonging: str
+        """
+        self._belonging = belonging
+
+    @property
+    def space_id(self):
+        r"""Gets the space_id of this ProcessInstanceResponseResultIssueStatus.
+
+        空间id
+
+        :return: The space_id of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._space_id
+
+    @space_id.setter
+    def space_id(self, space_id):
+        r"""Sets the space_id of this ProcessInstanceResponseResultIssueStatus.
+
+        空间id
+
+        :param space_id: The space_id of this ProcessInstanceResponseResultIssueStatus.
+        :type space_id: str
+        """
+        self._space_id = space_id
+
+    @property
+    def name(self):
+        r"""Gets the name of this ProcessInstanceResponseResultIssueStatus.
+
+        状态名称
+
+        :return: The name of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this ProcessInstanceResponseResultIssueStatus.
+
+        状态名称
+
+        :param name: The name of this ProcessInstanceResponseResultIssueStatus.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def code(self):
+        r"""Gets the code of this ProcessInstanceResponseResultIssueStatus.
+
+        状态码
+
+        :return: The code of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ProcessInstanceResponseResultIssueStatus.
+
+        状态码
+
+        :param code: The code of this ProcessInstanceResponseResultIssueStatus.
+        :type code: str
+        """
+        self._code = code
+
+    @property
+    def definition_type(self):
+        r"""Gets the definition_type of this ProcessInstanceResponseResultIssueStatus.
+
+        定义类型
+
+        :return: The definition_type of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._definition_type
+
+    @definition_type.setter
+    def definition_type(self, definition_type):
+        r"""Sets the definition_type of this ProcessInstanceResponseResultIssueStatus.
+
+        定义类型
+
+        :param definition_type: The definition_type of this ProcessInstanceResponseResultIssueStatus.
+        :type definition_type: str
+        """
+        self._definition_type = definition_type
+
+    @property
+    def belong_definition_type(self):
+        r"""Gets the belong_definition_type of this ProcessInstanceResponseResultIssueStatus.
+
+        所属字段定义类型
+
+        :return: The belong_definition_type of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._belong_definition_type
+
+    @belong_definition_type.setter
+    def belong_definition_type(self, belong_definition_type):
+        r"""Sets the belong_definition_type of this ProcessInstanceResponseResultIssueStatus.
+
+        所属字段定义类型
+
+        :param belong_definition_type: The belong_definition_type of this ProcessInstanceResponseResultIssueStatus.
+        :type belong_definition_type: int
+        """
+        self._belong_definition_type = belong_definition_type
+
+    @property
+    def display_value(self):
+        r"""Gets the display_value of this ProcessInstanceResponseResultIssueStatus.
+
+        显示值
+
+        :return: The display_value of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._display_value
+
+    @display_value.setter
+    def display_value(self, display_value):
+        r"""Sets the display_value of this ProcessInstanceResponseResultIssueStatus.
+
+        显示值
+
+        :param display_value: The display_value of this ProcessInstanceResponseResultIssueStatus.
+        :type display_value: str
+        """
+        self._display_value = display_value
+
+    @property
+    def position(self):
+        r"""Gets the position of this ProcessInstanceResponseResultIssueStatus.
+
+        排序位置
+
+        :return: The position of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._position
+
+    @position.setter
+    def position(self, position):
+        r"""Sets the position of this ProcessInstanceResponseResultIssueStatus.
+
+        排序位置
+
+        :param position: The position of this ProcessInstanceResponseResultIssueStatus.
+        :type position: int
+        """
+        self._position = position
+
+    @property
+    def displayable(self):
+        r"""Gets the displayable of this ProcessInstanceResponseResultIssueStatus.
+
+        可显示
+
+        :return: The displayable of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._displayable
+
+    @displayable.setter
+    def displayable(self, displayable):
+        r"""Sets the displayable of this ProcessInstanceResponseResultIssueStatus.
+
+        可显示
+
+        :param displayable: The displayable of this ProcessInstanceResponseResultIssueStatus.
+        :type displayable: int
+        """
+        self._displayable = displayable
+
+    @property
+    def editable(self):
+        r"""Gets the editable of this ProcessInstanceResponseResultIssueStatus.
+
+        可编辑
+
+        :return: The editable of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._editable
+
+    @editable.setter
+    def editable(self, editable):
+        r"""Sets the editable of this ProcessInstanceResponseResultIssueStatus.
+
+        可编辑
+
+        :param editable: The editable of this ProcessInstanceResponseResultIssueStatus.
+        :type editable: int
+        """
+        self._editable = editable
+
+    @property
+    def deletable(self):
+        r"""Gets the deletable of this ProcessInstanceResponseResultIssueStatus.
+
+        可删除
+
+        :return: The deletable of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._deletable
+
+    @deletable.setter
+    def deletable(self, deletable):
+        r"""Sets the deletable of this ProcessInstanceResponseResultIssueStatus.
+
+        可删除
+
+        :param deletable: The deletable of this ProcessInstanceResponseResultIssueStatus.
+        :type deletable: int
+        """
+        self._deletable = deletable
+
+    @property
+    def mutable(self):
+        r"""Gets the mutable of this ProcessInstanceResponseResultIssueStatus.
+
+        可变的
+
+        :return: The mutable of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: int
+        """
+        return self._mutable
+
+    @mutable.setter
+    def mutable(self, mutable):
+        r"""Sets the mutable of this ProcessInstanceResponseResultIssueStatus.
+
+        可变的
+
+        :param mutable: The mutable of this ProcessInstanceResponseResultIssueStatus.
+        :type mutable: int
+        """
+        self._mutable = mutable
+
+    @property
+    def title_py(self):
+        r"""Gets the title_py of this ProcessInstanceResponseResultIssueStatus.
+
+        状态拼音
+
+        :return: The title_py of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._title_py
+
+    @title_py.setter
+    def title_py(self, title_py):
+        r"""Sets the title_py of this ProcessInstanceResponseResultIssueStatus.
+
+        状态拼音
+
+        :param title_py: The title_py of this ProcessInstanceResponseResultIssueStatus.
+        :type title_py: str
+        """
+        self._title_py = title_py
+
+    @property
+    def created_by(self):
+        r"""Gets the created_by of this ProcessInstanceResponseResultIssueStatus.
+
+        状态创建人
+
+        :return: The created_by of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._created_by
+
+    @created_by.setter
+    def created_by(self, created_by):
+        r"""Sets the created_by of this ProcessInstanceResponseResultIssueStatus.
+
+        状态创建人
+
+        :param created_by: The created_by of this ProcessInstanceResponseResultIssueStatus.
+        :type created_by: str
+        """
+        self._created_by = created_by
+
+    @property
+    def created_date(self):
+        r"""Gets the created_date of this ProcessInstanceResponseResultIssueStatus.
+
+        状态创建时间
+
+        :return: The created_date of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._created_date
+
+    @created_date.setter
+    def created_date(self, created_date):
+        r"""Sets the created_date of this ProcessInstanceResponseResultIssueStatus.
+
+        状态创建时间
+
+        :param created_date: The created_date of this ProcessInstanceResponseResultIssueStatus.
+        :type created_date: str
+        """
+        self._created_date = created_date
+
+    @property
+    def modified_date(self):
+        r"""Gets the modified_date of this ProcessInstanceResponseResultIssueStatus.
+
+        状态最后修改时间
+
+        :return: The modified_date of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._modified_date
+
+    @modified_date.setter
+    def modified_date(self, modified_date):
+        r"""Sets the modified_date of this ProcessInstanceResponseResultIssueStatus.
+
+        状态最后修改时间
+
+        :param modified_date: The modified_date of this ProcessInstanceResponseResultIssueStatus.
+        :type modified_date: str
+        """
+        self._modified_date = modified_date
+
+    @property
+    def modified_by(self):
+        r"""Gets the modified_by of this ProcessInstanceResponseResultIssueStatus.
+
+        状态最后修改人
+
+        :return: The modified_by of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: str
+        """
+        return self._modified_by
+
+    @modified_by.setter
+    def modified_by(self, modified_by):
+        r"""Sets the modified_by of this ProcessInstanceResponseResultIssueStatus.
+
+        状态最后修改人
+
+        :param modified_by: The modified_by of this ProcessInstanceResponseResultIssueStatus.
+        :type modified_by: str
+        """
+        self._modified_by = modified_by
+
+    @property
+    def linkage_node_fields(self):
+        r"""Gets the linkage_node_fields of this ProcessInstanceResponseResultIssueStatus.
+
+        是否链接节点字段
+
+        :return: The linkage_node_fields of this ProcessInstanceResponseResultIssueStatus.
+        :rtype: bool
+        """
+        return self._linkage_node_fields
+
+    @linkage_node_fields.setter
+    def linkage_node_fields(self, linkage_node_fields):
+        r"""Sets the linkage_node_fields of this ProcessInstanceResponseResultIssueStatus.
+
+        是否链接节点字段
+
+        :param linkage_node_fields: The linkage_node_fields of this ProcessInstanceResponseResultIssueStatus.
+        :type linkage_node_fields: bool
+        """
+        self._linkage_node_fields = linkage_node_fields
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ProcessInstanceResponseResultIssueStatus):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

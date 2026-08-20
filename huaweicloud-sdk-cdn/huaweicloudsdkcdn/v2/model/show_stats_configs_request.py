@@ -31,11 +31,11 @@ class ShowStatsConfigsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param config_type: - 配置类型 - 目前支持0：热点统计，1：ces上报
+        :param config_type: **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
         :type config_type: int
         :param limit: **参数解释：** 分页查询每页的数量 **约束限制：** 不涉及 **取值范围：** 1-1000 **默认取值：** 10
         :type limit: int
-        :param offset: **参数解释：** 查询偏移量，表示跳过多少个数据开始查询 **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
+        :param offset: **参数解释：** 查询偏移量 &gt; 表示跳过多少个数据开始查询  **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
         :type offset: int
         """
         
@@ -56,7 +56,7 @@ class ShowStatsConfigsRequest:
     def config_type(self):
         r"""Gets the config_type of this ShowStatsConfigsRequest.
 
-        - 配置类型 - 目前支持0：热点统计，1：ces上报
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
 
         :return: The config_type of this ShowStatsConfigsRequest.
         :rtype: int
@@ -67,7 +67,7 @@ class ShowStatsConfigsRequest:
     def config_type(self, config_type):
         r"""Sets the config_type of this ShowStatsConfigsRequest.
 
-        - 配置类型 - 目前支持0：热点统计，1：ces上报
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
 
         :param config_type: The config_type of this ShowStatsConfigsRequest.
         :type config_type: int
@@ -100,7 +100,7 @@ class ShowStatsConfigsRequest:
     def offset(self):
         r"""Gets the offset of this ShowStatsConfigsRequest.
 
-        **参数解释：** 查询偏移量，表示跳过多少个数据开始查询 **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
+        **参数解释：** 查询偏移量 > 表示跳过多少个数据开始查询  **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
 
         :return: The offset of this ShowStatsConfigsRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowStatsConfigsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowStatsConfigsRequest.
 
-        **参数解释：** 查询偏移量，表示跳过多少个数据开始查询 **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
+        **参数解释：** 查询偏移量 > 表示跳过多少个数据开始查询  **约束限制：** 不涉及 **取值范围：** 0-65535 **默认取值：** 0
 
         :param offset: The offset of this ShowStatsConfigsRequest.
         :type offset: int

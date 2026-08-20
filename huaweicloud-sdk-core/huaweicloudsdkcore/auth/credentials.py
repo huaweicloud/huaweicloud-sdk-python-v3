@@ -80,6 +80,7 @@ class Credentials(DerivedCredentials):
         self._derived_predicate: Optional[Callable[[SdkRequest], bool]] = None
         self._region_id: Optional[str] = None
         self._sts_accessor: Optional[StsAccessor] = None
+        self._metadata_accessor = None
         self._expire_at: Optional[float] = 0
         self._once = six_utils.Once()
 
@@ -142,6 +143,14 @@ class Credentials(DerivedCredentials):
     @sts_accessor.setter
     def sts_accessor(self, value):
         self._sts_accessor = value
+
+    @property
+    def metadata_accessor(self):
+        return self._metadata_accessor
+
+    @metadata_accessor.setter
+    def metadata_accessor(self, value):
+        self._metadata_accessor = value
 
     def with_ak(self, ak: str):
         self.ak = ak
@@ -209,6 +218,15 @@ class Credentials(DerivedCredentials):
 
     def _is_expired(self) -> bool:
         return self._expire_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
+
+    def update_security_token_from_metadata(self):
+        if not self.metadata_accessor:
+            self.metadata_accessor = MetadataAccessor()
+        credential = self.metadata_accessor.get_credential()
+        self.ak = credential.access
+        self.sk = credential.secret
+        self.security_token = credential.security_token
+        self._expire_at = credential.expire_at
 
     def sign_request(self, request: SdkRequest) -> SdkRequest:
         if self.security_token is not None:

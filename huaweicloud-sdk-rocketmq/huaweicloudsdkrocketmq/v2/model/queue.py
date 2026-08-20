@@ -19,7 +19,8 @@ class Queue:
         'lag': 'int',
         'broker_offset': 'int',
         'consumer_offset': 'int',
-        'last_message_time': 'int'
+        'last_message_time': 'int',
+        'client_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class Queue:
         'lag': 'lag',
         'broker_offset': 'broker_offset',
         'consumer_offset': 'consumer_offset',
-        'last_message_time': 'last_message_time'
+        'last_message_time': 'last_message_time',
+        'client_id': 'client_id'
     }
 
-    def __init__(self, id=None, lag=None, broker_offset=None, consumer_offset=None, last_message_time=None):
+    def __init__(self, id=None, lag=None, broker_offset=None, consumer_offset=None, last_message_time=None, client_id=None):
         r"""Queue
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class Queue:
         :type consumer_offset: int
         :param last_message_time: **参数解释**： 最新消费消息的存储时间，Unix毫秒时间戳格式。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type last_message_time: int
+        :param client_id: **参数解释**： 客户端ID。 **取值范围**： 不涉及。
+        :type client_id: str
         """
         
         
@@ -54,6 +58,7 @@ class Queue:
         self._broker_offset = None
         self._consumer_offset = None
         self._last_message_time = None
+        self._client_id = None
         self.discriminator = None
 
         if id is not None:
@@ -66,6 +71,8 @@ class Queue:
             self.consumer_offset = consumer_offset
         if last_message_time is not None:
             self.last_message_time = last_message_time
+        if client_id is not None:
+            self.client_id = client_id
 
     @property
     def id(self):
@@ -176,6 +183,28 @@ class Queue:
         :type last_message_time: int
         """
         self._last_message_time = last_message_time
+
+    @property
+    def client_id(self):
+        r"""Gets the client_id of this Queue.
+
+        **参数解释**： 客户端ID。 **取值范围**： 不涉及。
+
+        :return: The client_id of this Queue.
+        :rtype: str
+        """
+        return self._client_id
+
+    @client_id.setter
+    def client_id(self, client_id):
+        r"""Sets the client_id of this Queue.
+
+        **参数解释**： 客户端ID。 **取值范围**： 不涉及。
+
+        :param client_id: The client_id of this Queue.
+        :type client_id: str
+        """
+        self._client_id = client_id
 
     def to_dict(self):
         result = {}

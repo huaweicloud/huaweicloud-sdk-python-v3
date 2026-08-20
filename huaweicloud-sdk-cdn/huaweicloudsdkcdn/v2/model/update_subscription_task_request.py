@@ -29,7 +29,7 @@ class UpdateSubscriptionTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 订阅任务id
+        :param id: **参数解释：** 订阅任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type id: int
         :param body: Body of the UpdateSubscriptionTaskRequest
         :type body: :class:`huaweicloudsdkcdn.v2.SubscriptionTaskVo`
@@ -49,7 +49,7 @@ class UpdateSubscriptionTaskRequest:
     def id(self):
         r"""Gets the id of this UpdateSubscriptionTaskRequest.
 
-        订阅任务id
+        **参数解释：** 订阅任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The id of this UpdateSubscriptionTaskRequest.
         :rtype: int
@@ -60,7 +60,7 @@ class UpdateSubscriptionTaskRequest:
     def id(self, id):
         r"""Sets the id of this UpdateSubscriptionTaskRequest.
 
-        订阅任务id
+        **参数解释：** 订阅任务id **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param id: The id of this UpdateSubscriptionTaskRequest.
         :type id: int

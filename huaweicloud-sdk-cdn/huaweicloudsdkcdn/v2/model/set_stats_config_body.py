@@ -33,13 +33,13 @@ class SetStatsConfigBody:
 
         The model defined in huaweicloud sdk
 
-        :param config_type: 配置类别.0：热点统计类
+        :param config_type: **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
         :type config_type: int
-        :param resource_type: 资源类型。domain:resource_name为域名，account:resource_name为账号
+        :param resource_type: **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号 **默认取值：** 不涉及
         :type resource_type: str
-        :param resource_name: 资源名称为账号或域名。多个域名以英文逗号分隔
+        :param resource_name: **参数解释：** 资源名称 &gt; 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个资源名称以英文逗号分隔 **默认取值：** 不涉及
         :type resource_name: str
-        :param config_info: 配置信息.top指标仅支持ua、refer、url、origin url
+        :param config_info: **参数解释：** 配置信息 **约束限制：** 不涉及 **取值范围：** - ua：HTTP请求头User-Agent的值 - refer：HTTP请求头referer的值 - url：客户访问的http地址 - originurl：回源url **默认取值：** 不涉及
         :type config_info: :class:`huaweicloudsdkcdn.v2.object`
         """
         
@@ -61,7 +61,7 @@ class SetStatsConfigBody:
     def config_type(self):
         r"""Gets the config_type of this SetStatsConfigBody.
 
-        配置类别.0：热点统计类
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
 
         :return: The config_type of this SetStatsConfigBody.
         :rtype: int
@@ -72,7 +72,7 @@ class SetStatsConfigBody:
     def config_type(self, config_type):
         r"""Sets the config_type of this SetStatsConfigBody.
 
-        配置类别.0：热点统计类
+        **参数解释：** 配置类型 **约束限制：** 不涉及 **取值范围：** - 0：热点统计 - 1：ces上报 **默认取值：** 不涉及
 
         :param config_type: The config_type of this SetStatsConfigBody.
         :type config_type: int
@@ -83,7 +83,7 @@ class SetStatsConfigBody:
     def resource_type(self):
         r"""Gets the resource_type of this SetStatsConfigBody.
 
-        资源类型。domain:resource_name为域名，account:resource_name为账号
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号 **默认取值：** 不涉及
 
         :return: The resource_type of this SetStatsConfigBody.
         :rtype: str
@@ -94,7 +94,7 @@ class SetStatsConfigBody:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this SetStatsConfigBody.
 
-        资源类型。domain:resource_name为域名，account:resource_name为账号
+        **参数解释：** 资源类型 **约束限制：** 不涉及 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号 **默认取值：** 不涉及
 
         :param resource_type: The resource_type of this SetStatsConfigBody.
         :type resource_type: str
@@ -105,7 +105,7 @@ class SetStatsConfigBody:
     def resource_name(self):
         r"""Gets the resource_name of this SetStatsConfigBody.
 
-        资源名称为账号或域名。多个域名以英文逗号分隔
+        **参数解释：** 资源名称 > 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个资源名称以英文逗号分隔 **默认取值：** 不涉及
 
         :return: The resource_name of this SetStatsConfigBody.
         :rtype: str
@@ -116,7 +116,7 @@ class SetStatsConfigBody:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this SetStatsConfigBody.
 
-        资源名称为账号或域名。多个域名以英文逗号分隔
+        **参数解释：** 资源名称 > 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个资源名称以英文逗号分隔 **默认取值：** 不涉及
 
         :param resource_name: The resource_name of this SetStatsConfigBody.
         :type resource_name: str
@@ -127,7 +127,7 @@ class SetStatsConfigBody:
     def config_info(self):
         r"""Gets the config_info of this SetStatsConfigBody.
 
-        配置信息.top指标仅支持ua、refer、url、origin url
+        **参数解释：** 配置信息 **约束限制：** 不涉及 **取值范围：** - ua：HTTP请求头User-Agent的值 - refer：HTTP请求头referer的值 - url：客户访问的http地址 - originurl：回源url **默认取值：** 不涉及
 
         :return: The config_info of this SetStatsConfigBody.
         :rtype: :class:`huaweicloudsdkcdn.v2.object`
@@ -138,7 +138,7 @@ class SetStatsConfigBody:
     def config_info(self, config_info):
         r"""Sets the config_info of this SetStatsConfigBody.
 
-        配置信息.top指标仅支持ua、refer、url、origin url
+        **参数解释：** 配置信息 **约束限制：** 不涉及 **取值范围：** - ua：HTTP请求头User-Agent的值 - refer：HTTP请求头referer的值 - url：客户访问的http地址 - originurl：回源url **默认取值：** 不涉及
 
         :param config_info: The config_info of this SetStatsConfigBody.
         :type config_info: :class:`huaweicloudsdkcdn.v2.object`

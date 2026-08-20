@@ -31,11 +31,11 @@ class TopOriginUrlSummary:
 
         The model defined in huaweicloud sdk
 
-        :param origin_url: 回源url名称
+        :param origin_url: **参数解释：** 回源url **取值范围：** 不涉及
         :type origin_url: str
-        :param value: 对应查询类型的值。（流量单位：Byte）
+        :param value: **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
         :type value: int
-        :param ratio: 该origin url的流量(或请求数)占当前查询条件下总流量(或请求数)的比例。保留4位小数
+        :param ratio: **参数解释：** 该origin url的流量（或请求数）占当前查询条件下总流量（或请求数）的比例 **取值范围：** 保留4位小数
         :type ratio: float
         """
         
@@ -57,7 +57,7 @@ class TopOriginUrlSummary:
     def origin_url(self):
         r"""Gets the origin_url of this TopOriginUrlSummary.
 
-        回源url名称
+        **参数解释：** 回源url **取值范围：** 不涉及
 
         :return: The origin_url of this TopOriginUrlSummary.
         :rtype: str
@@ -68,7 +68,7 @@ class TopOriginUrlSummary:
     def origin_url(self, origin_url):
         r"""Sets the origin_url of this TopOriginUrlSummary.
 
-        回源url名称
+        **参数解释：** 回源url **取值范围：** 不涉及
 
         :param origin_url: The origin_url of this TopOriginUrlSummary.
         :type origin_url: str
@@ -79,7 +79,7 @@ class TopOriginUrlSummary:
     def value(self):
         r"""Gets the value of this TopOriginUrlSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
 
         :return: The value of this TopOriginUrlSummary.
         :rtype: int
@@ -90,7 +90,7 @@ class TopOriginUrlSummary:
     def value(self, value):
         r"""Sets the value of this TopOriginUrlSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        **参数解释：** 对应查询类型的值 **取值范围：** 若值为流量，流量单位：Byte
 
         :param value: The value of this TopOriginUrlSummary.
         :type value: int
@@ -101,7 +101,7 @@ class TopOriginUrlSummary:
     def ratio(self):
         r"""Gets the ratio of this TopOriginUrlSummary.
 
-        该origin url的流量(或请求数)占当前查询条件下总流量(或请求数)的比例。保留4位小数
+        **参数解释：** 该origin url的流量（或请求数）占当前查询条件下总流量（或请求数）的比例 **取值范围：** 保留4位小数
 
         :return: The ratio of this TopOriginUrlSummary.
         :rtype: float
@@ -112,7 +112,7 @@ class TopOriginUrlSummary:
     def ratio(self, ratio):
         r"""Sets the ratio of this TopOriginUrlSummary.
 
-        该origin url的流量(或请求数)占当前查询条件下总流量(或请求数)的比例。保留4位小数
+        **参数解释：** 该origin url的流量（或请求数）占当前查询条件下总流量（或请求数）的比例 **取值范围：** 保留4位小数
 
         :param ratio: The ratio of this TopOriginUrlSummary.
         :type ratio: float

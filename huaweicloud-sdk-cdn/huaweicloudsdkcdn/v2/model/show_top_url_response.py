@@ -30,9 +30,9 @@ class ShowTopUrlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param service_area: 服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        :param service_area: **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球
         :type service_area: str
-        :param top_url_summary: 详情数据对象。
+        :param top_url_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
         """
         
@@ -51,7 +51,7 @@ class ShowTopUrlResponse(SdkResponse):
     def service_area(self):
         r"""Gets the service_area of this ShowTopUrlResponse.
 
-        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球
 
         :return: The service_area of this ShowTopUrlResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowTopUrlResponse(SdkResponse):
     def service_area(self, service_area):
         r"""Sets the service_area of this ShowTopUrlResponse.
 
-        服务区域：mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+        **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球
 
         :param service_area: The service_area of this ShowTopUrlResponse.
         :type service_area: str
@@ -73,7 +73,7 @@ class ShowTopUrlResponse(SdkResponse):
     def top_url_summary(self):
         r"""Gets the top_url_summary of this ShowTopUrlResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_url_summary of this ShowTopUrlResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
@@ -84,7 +84,7 @@ class ShowTopUrlResponse(SdkResponse):
     def top_url_summary(self, top_url_summary):
         r"""Sets the top_url_summary of this ShowTopUrlResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_url_summary: The top_url_summary of this ShowTopUrlResponse.
         :type top_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]

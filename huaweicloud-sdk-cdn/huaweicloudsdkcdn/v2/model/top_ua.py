@@ -27,7 +27,7 @@ class TopUa:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 配置开关
+        :param enable: **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
         :type enable: bool
         """
         
@@ -43,7 +43,7 @@ class TopUa:
     def enable(self):
         r"""Gets the enable of this TopUa.
 
-        配置开关
+        **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
 
         :return: The enable of this TopUa.
         :rtype: bool
@@ -54,7 +54,7 @@ class TopUa:
     def enable(self, enable):
         r"""Sets the enable of this TopUa.
 
-        配置开关
+        **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
 
         :param enable: The enable of this TopUa.
         :type enable: bool

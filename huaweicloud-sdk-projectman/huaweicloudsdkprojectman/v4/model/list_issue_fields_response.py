@@ -17,7 +17,7 @@ class ListIssueFieldsResponse(SdkResponse):
 
     openapi_types = {
         'page': 'PageVO',
-        'result': 'list[FieldVO]'
+        'result': 'list[FieldLongDateVO]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListIssueFieldsResponse(SdkResponse):
         :param page: 
         :type page: :class:`huaweicloudsdkprojectman.v4.PageVO`
         :param result: 返回数据
-        :type result: list[:class:`huaweicloudsdkprojectman.v4.FieldVO`]
+        :type result: list[:class:`huaweicloudsdkprojectman.v4.FieldLongDateVO`]
         """
         
         super().__init__()
@@ -72,7 +72,7 @@ class ListIssueFieldsResponse(SdkResponse):
         返回数据
 
         :return: The result of this ListIssueFieldsResponse.
-        :rtype: list[:class:`huaweicloudsdkprojectman.v4.FieldVO`]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.FieldLongDateVO`]
         """
         return self._result
 
@@ -83,7 +83,7 @@ class ListIssueFieldsResponse(SdkResponse):
         返回数据
 
         :param result: The result of this ListIssueFieldsResponse.
-        :type result: list[:class:`huaweicloudsdkprojectman.v4.FieldVO`]
+        :type result: list[:class:`huaweicloudsdkprojectman.v4.FieldLongDateVO`]
         """
         self._result = result
 

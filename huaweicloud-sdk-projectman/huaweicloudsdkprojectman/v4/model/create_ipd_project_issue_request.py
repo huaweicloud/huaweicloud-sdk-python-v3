@@ -16,7 +16,7 @@ class CreateIpdProjectIssueRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'CreateIpdProjectIssueRequestBody'
+        'body': 'CreateIpdProjectIssueParam'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class CreateIpdProjectIssueRequest:
         :param project_id: devcloud项目的32位id
         :type project_id: str
         :param body: Body of the CreateIpdProjectIssueRequest
-        :type body: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueRequestBody`
+        :type body: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueParam`
         """
         
         
@@ -72,7 +72,7 @@ class CreateIpdProjectIssueRequest:
         r"""Gets the body of this CreateIpdProjectIssueRequest.
 
         :return: The body of this CreateIpdProjectIssueRequest.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueRequestBody`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueParam`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class CreateIpdProjectIssueRequest:
         r"""Sets the body of this CreateIpdProjectIssueRequest.
 
         :param body: The body of this CreateIpdProjectIssueRequest.
-        :type body: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueRequestBody`
+        :type body: :class:`huaweicloudsdkprojectman.v4.CreateIpdProjectIssueParam`
         """
         self._body = body
 

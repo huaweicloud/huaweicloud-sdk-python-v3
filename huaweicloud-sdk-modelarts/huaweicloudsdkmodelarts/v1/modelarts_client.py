@@ -2174,6 +2174,80 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def create_infer_temp_api_key(self, request):
+        r"""创建临时应用密钥
+
+        本接口用于在系统中创建一个新的临时API_KEY，适用于需要为用户或应用程序生成临时访问凭证的场景。调用此接口前，确保已具备相应的创建权限，并提供必要的参数，如用户ID或应用程序ID。创建成功后，系统将生成一个唯一的API_KEY，并返回该API_KEY的详细信息，包括临时API_KEY值、创建时间等。如果提供的参数无效，将返回相应的异常信息，提示用户检查输入数据的有效性。
+        临时API KEY使用方法：
+        **预测接口**加上两个header：
+        X-Api-Key-Type&#x3D;temp
+        Authorization&#x3D;临时API KEY
+        **取值范围：**
+        - normal：普通API KEY
+        - temp：临时API KEY
+        **默认取值：**
+        normal。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateInferTempApiKey
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateInferTempApiKeyRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateInferTempApiKeyResponse`
+        """
+        http_info = self._create_infer_temp_api_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_infer_temp_api_key_invoker(self, request):
+        http_info = self._create_infer_temp_api_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_infer_temp_api_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/services/api-keys/temp",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInferTempApiKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_model_arts_agency(self, request):
         r"""创建ModelArts委托
 
@@ -5635,6 +5709,8 @@ class ModelArtsClient(Client):
             query_params.append(('tags', local_var_params['tags']))
         if 'asset_id' in local_var_params:
             query_params.append(('asset_id', local_var_params['asset_id']))
+        if 'node_ip' in local_var_params:
+            query_params.append(('node_ip', local_var_params['node_ip']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
         if 'limit' in local_var_params:

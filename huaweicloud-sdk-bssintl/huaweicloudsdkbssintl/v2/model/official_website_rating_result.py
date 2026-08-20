@@ -33,9 +33,9 @@ class OfficialWebsiteRatingResult:
 
         :param official_website_amount: 包年/包月产品的官网价。
         :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
-        :param measure_id: 价格度量单位标识。 1：元
+        :param measure_id: 价格度量单位标识。 1：美元
         :type measure_id: int
-        :param product_rating_results: 产品询价结果，具体参见表5。
+        :param product_rating_results: 产品询价结果，具体参见PeriodProductOfficialRatingResult。
         :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductOfficialRatingResult`]
         """
         
@@ -79,7 +79,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self):
         r"""Gets the measure_id of this OfficialWebsiteRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :return: The measure_id of this OfficialWebsiteRatingResult.
         :rtype: int
@@ -90,7 +90,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this OfficialWebsiteRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
         :type measure_id: int
@@ -101,7 +101,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self):
         r"""Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        产品询价结果，具体参见表5。
+        产品询价结果，具体参见PeriodProductOfficialRatingResult。
 
         :return: The product_rating_results of this OfficialWebsiteRatingResult.
         :rtype: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductOfficialRatingResult`]
@@ -112,7 +112,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self, product_rating_results):
         r"""Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        产品询价结果，具体参见表5。
+        产品询价结果，具体参见PeriodProductOfficialRatingResult。
 
         :param product_rating_results: The product_rating_results of this OfficialWebsiteRatingResult.
         :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductOfficialRatingResult`]

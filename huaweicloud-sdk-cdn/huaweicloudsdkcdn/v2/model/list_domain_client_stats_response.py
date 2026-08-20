@@ -30,9 +30,9 @@ class ListDomainClientStatsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param service_area: 区域
+        :param service_area: **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外
         :type service_area: str
-        :param result: 按域名维每天客户端访问详情统计
+        :param result: **参数解释：** 按域名维每天客户端访问详情统计 **取值范围：** 不涉及
         :type result: list[dict(str, object)]
         """
         
@@ -51,7 +51,7 @@ class ListDomainClientStatsResponse(SdkResponse):
     def service_area(self):
         r"""Gets the service_area of this ListDomainClientStatsResponse.
 
-        区域
+        **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外
 
         :return: The service_area of this ListDomainClientStatsResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ListDomainClientStatsResponse(SdkResponse):
     def service_area(self, service_area):
         r"""Sets the service_area of this ListDomainClientStatsResponse.
 
-        区域
+        **参数解释：** 服务范围 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外
 
         :param service_area: The service_area of this ListDomainClientStatsResponse.
         :type service_area: str
@@ -73,7 +73,7 @@ class ListDomainClientStatsResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ListDomainClientStatsResponse.
 
-        按域名维每天客户端访问详情统计
+        **参数解释：** 按域名维每天客户端访问详情统计 **取值范围：** 不涉及
 
         :return: The result of this ListDomainClientStatsResponse.
         :rtype: list[dict(str, object)]
@@ -84,7 +84,7 @@ class ListDomainClientStatsResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ListDomainClientStatsResponse.
 
-        按域名维每天客户端访问详情统计
+        **参数解释：** 按域名维每天客户端访问详情统计 **取值范围：** 不涉及
 
         :param result: The result of this ListDomainClientStatsResponse.
         :type result: list[dict(str, object)]

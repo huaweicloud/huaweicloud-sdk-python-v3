@@ -29,9 +29,9 @@ class ListSubscriptionTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: - 每页显示的条目数量，默认值为5, 传入空或0时，会按默认处理
+        :param limit: **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 5 &gt; 传入空或0时，会按默认处理
         :type limit: int
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        :param offset: **参数解释：** 偏移量 &gt; 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
         :type offset: int
         """
         
@@ -50,7 +50,7 @@ class ListSubscriptionTasksRequest:
     def limit(self):
         r"""Gets the limit of this ListSubscriptionTasksRequest.
 
-        - 每页显示的条目数量，默认值为5, 传入空或0时，会按默认处理
+        **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 5 > 传入空或0时，会按默认处理
 
         :return: The limit of this ListSubscriptionTasksRequest.
         :rtype: int
@@ -61,7 +61,7 @@ class ListSubscriptionTasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSubscriptionTasksRequest.
 
-        - 每页显示的条目数量，默认值为5, 传入空或0时，会按默认处理
+        **参数解释：** 每页显示的条目数量 **约束限制：** 不涉及 **取值范围：** 0-100 **默认取值：** 5 > 传入空或0时，会按默认处理
 
         :param limit: The limit of this ListSubscriptionTasksRequest.
         :type limit: int
@@ -72,7 +72,7 @@ class ListSubscriptionTasksRequest:
     def offset(self):
         r"""Gets the offset of this ListSubscriptionTasksRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        **参数解释：** 偏移量 > 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
 
         :return: The offset of this ListSubscriptionTasksRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ListSubscriptionTasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListSubscriptionTasksRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0
+        **参数解释：** 偏移量 > 表示从此偏移量开始查询  **约束限制：** 不涉及 **取值范围：** offset大于等于0 **默认取值：** 0
 
         :param offset: The offset of this ListSubscriptionTasksRequest.
         :type offset: int

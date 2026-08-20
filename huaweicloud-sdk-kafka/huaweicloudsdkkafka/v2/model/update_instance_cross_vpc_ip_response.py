@@ -30,9 +30,9 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param success: 修改跨VPC访问结果。
+        :param success: **参数解释**： 修改跨VPC访问结果。 **取值范围**： - true：修改跨VPC访问成功。 - false：修改跨VPC访问失败。
         :type success: bool
-        :param results: 修改broker跨VPC访问的结果列表。
+        :param results: **参数解释**： 修改broker跨VPC访问的结果列表。
         :type results: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]
         """
         
@@ -51,7 +51,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     def success(self):
         r"""Gets the success of this UpdateInstanceCrossVpcIpResponse.
 
-        修改跨VPC访问结果。
+        **参数解释**： 修改跨VPC访问结果。 **取值范围**： - true：修改跨VPC访问成功。 - false：修改跨VPC访问失败。
 
         :return: The success of this UpdateInstanceCrossVpcIpResponse.
         :rtype: bool
@@ -62,7 +62,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     def success(self, success):
         r"""Sets the success of this UpdateInstanceCrossVpcIpResponse.
 
-        修改跨VPC访问结果。
+        **参数解释**： 修改跨VPC访问结果。 **取值范围**： - true：修改跨VPC访问成功。 - false：修改跨VPC访问失败。
 
         :param success: The success of this UpdateInstanceCrossVpcIpResponse.
         :type success: bool
@@ -73,7 +73,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     def results(self):
         r"""Gets the results of this UpdateInstanceCrossVpcIpResponse.
 
-        修改broker跨VPC访问的结果列表。
+        **参数解释**： 修改broker跨VPC访问的结果列表。
 
         :return: The results of this UpdateInstanceCrossVpcIpResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]
@@ -84,7 +84,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     def results(self, results):
         r"""Sets the results of this UpdateInstanceCrossVpcIpResponse.
 
-        修改broker跨VPC访问的结果列表。
+        **参数解释**： 修改broker跨VPC访问的结果列表。
 
         :param results: The results of this UpdateInstanceCrossVpcIpResponse.
         :type results: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRespResults`]

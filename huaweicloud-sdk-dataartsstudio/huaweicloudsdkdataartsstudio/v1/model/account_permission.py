@@ -32,6 +32,7 @@ class AccountPermission:
         'project_id': 'str',
         'row_level_security': 'str',
         'row_level_security_desc': 'str',
+        'renewal_status': 'str',
         'schema_name': 'str',
         'table_name': 'str',
         'workspace_id': 'str'
@@ -55,12 +56,13 @@ class AccountPermission:
         'project_id': 'project_id',
         'row_level_security': 'row_level_security',
         'row_level_security_desc': 'row_level_security_desc',
+        'renewal_status': 'renewal_status',
         'schema_name': 'schema_name',
         'table_name': 'table_name',
         'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, column_name=None, database_name=None, datasource_type=None, expire_msg=None, expire_status=None, expire_time=None, id=None, instance_id=None, member_id=None, member_name=None, permission_action=None, permission_action_code=None, project_id=None, row_level_security=None, row_level_security_desc=None, schema_name=None, table_name=None, workspace_id=None):
+    def __init__(self, cluster_id=None, cluster_name=None, column_name=None, database_name=None, datasource_type=None, expire_msg=None, expire_status=None, expire_time=None, id=None, instance_id=None, member_id=None, member_name=None, permission_action=None, permission_action_code=None, project_id=None, row_level_security=None, row_level_security_desc=None, renewal_status=None, schema_name=None, table_name=None, workspace_id=None):
         r"""AccountPermission
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class AccountPermission:
         :type row_level_security: str
         :param row_level_security_desc: 行级权限描述
         :type row_level_security_desc: str
+        :param renewal_status: 续期工单状态，可选值： * ORDER_WAITING_APPROVE  工单待审批 * NO_ORDER  无工单 * ORDER_REJECT  工单已拒绝
+        :type renewal_status: str
         :param schema_name: schema名称
         :type schema_name: str
         :param table_name: 表名
@@ -126,6 +130,7 @@ class AccountPermission:
         self._project_id = None
         self._row_level_security = None
         self._row_level_security_desc = None
+        self._renewal_status = None
         self._schema_name = None
         self._table_name = None
         self._workspace_id = None
@@ -158,6 +163,8 @@ class AccountPermission:
             self.row_level_security = row_level_security
         if row_level_security_desc is not None:
             self.row_level_security_desc = row_level_security_desc
+        if renewal_status is not None:
+            self.renewal_status = renewal_status
         if schema_name is not None:
             self.schema_name = schema_name
         if table_name is not None:
@@ -537,6 +544,28 @@ class AccountPermission:
         :type row_level_security_desc: str
         """
         self._row_level_security_desc = row_level_security_desc
+
+    @property
+    def renewal_status(self):
+        r"""Gets the renewal_status of this AccountPermission.
+
+        续期工单状态，可选值： * ORDER_WAITING_APPROVE  工单待审批 * NO_ORDER  无工单 * ORDER_REJECT  工单已拒绝
+
+        :return: The renewal_status of this AccountPermission.
+        :rtype: str
+        """
+        return self._renewal_status
+
+    @renewal_status.setter
+    def renewal_status(self, renewal_status):
+        r"""Sets the renewal_status of this AccountPermission.
+
+        续期工单状态，可选值： * ORDER_WAITING_APPROVE  工单待审批 * NO_ORDER  无工单 * ORDER_REJECT  工单已拒绝
+
+        :param renewal_status: The renewal_status of this AccountPermission.
+        :type renewal_status: str
+        """
+        self._renewal_status = renewal_status
 
     @property
     def schema_name(self):

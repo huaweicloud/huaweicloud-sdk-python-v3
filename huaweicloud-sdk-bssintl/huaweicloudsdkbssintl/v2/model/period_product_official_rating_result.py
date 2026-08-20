@@ -39,7 +39,7 @@ class PeriodProductOfficialRatingResult:
         :type product_id: str
         :param official_website_amount: 包年/包月产品的官网价。
         :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
-        :param measure_id: 价格度量单位标识。 1：元
+        :param measure_id: 价格度量单位标识。 1：美元
         :type measure_id: int
         """
         
@@ -130,7 +130,7 @@ class PeriodProductOfficialRatingResult:
     def measure_id(self):
         r"""Gets the measure_id of this PeriodProductOfficialRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :return: The measure_id of this PeriodProductOfficialRatingResult.
         :rtype: int
@@ -141,7 +141,7 @@ class PeriodProductOfficialRatingResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this PeriodProductOfficialRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :param measure_id: The measure_id of this PeriodProductOfficialRatingResult.
         :type measure_id: int

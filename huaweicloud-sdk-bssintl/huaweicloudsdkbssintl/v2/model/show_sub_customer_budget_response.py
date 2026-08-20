@@ -44,7 +44,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         :type measure_id: int
         :param currency: 币种。 USD：美金
         :type currency: str
-        :param budget_type: |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+        :param budget_type: 预算模式。 MONTHLY：月度预算 PACKAGE：一次性预算
         :type budget_type: str
         """
         
@@ -160,7 +160,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     def budget_type(self):
         r"""Gets the budget_type of this ShowSubCustomerBudgetResponse.
 
-        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+        预算模式。 MONTHLY：月度预算 PACKAGE：一次性预算
 
         :return: The budget_type of this ShowSubCustomerBudgetResponse.
         :rtype: str
@@ -171,7 +171,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     def budget_type(self, budget_type):
         r"""Sets the budget_type of this ShowSubCustomerBudgetResponse.
 
-        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
+        预算模式。 MONTHLY：月度预算 PACKAGE：一次性预算
 
         :param budget_type: The budget_type of this ShowSubCustomerBudgetResponse.
         :type budget_type: str

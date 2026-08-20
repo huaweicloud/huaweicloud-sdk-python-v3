@@ -36,15 +36,15 @@ class ShowDomainCountryStatResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释：** 规则行为 **约束限制：** 不涉及
+        :param action: **参数解释：** 查询数据类型 &gt; 汇总或明细数据  **取值范围：** - summary：查询汇总数据 - detail：查询数据详情
         :type action: str
-        :param start_time: 查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param start_time: **参数解释：** 查询起始时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
         :type start_time: int
-        :param end_time: 查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param end_time: **参数解释：** 查询结束时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
         :type end_time: int
-        :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
+        :param stat_type: **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
         :type stat_type: str
-        :param result: 按指定的分组方式组织的数据
+        :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&amp;地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
         :type result: dict(str, object)
         """
         
@@ -72,7 +72,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def action(self):
         r"""Gets the action of this ShowDomainCountryStatResponse.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 查询数据类型 > 汇总或明细数据  **取值范围：** - summary：查询汇总数据 - detail：查询数据详情
 
         :return: The action of this ShowDomainCountryStatResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def action(self, action):
         r"""Sets the action of this ShowDomainCountryStatResponse.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 查询数据类型 > 汇总或明细数据  **取值范围：** - summary：查询汇总数据 - detail：查询数据详情
 
         :param action: The action of this ShowDomainCountryStatResponse.
         :type action: str
@@ -94,7 +94,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def start_time(self):
         r"""Gets the start_time of this ShowDomainCountryStatResponse.
 
-        查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 查询起始时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
 
         :return: The start_time of this ShowDomainCountryStatResponse.
         :rtype: int
@@ -105,7 +105,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowDomainCountryStatResponse.
 
-        查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 查询起始时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
 
         :param start_time: The start_time of this ShowDomainCountryStatResponse.
         :type start_time: int
@@ -116,7 +116,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def end_time(self):
         r"""Gets the end_time of this ShowDomainCountryStatResponse.
 
-        查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 查询结束时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
 
         :return: The end_time of this ShowDomainCountryStatResponse.
         :rtype: int
@@ -127,7 +127,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowDomainCountryStatResponse.
 
-        查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 查询结束时间 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数
 
         :param end_time: The end_time of this ShowDomainCountryStatResponse.
         :type end_time: int
@@ -138,7 +138,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def stat_type(self):
         r"""Gets the stat_type of this ShowDomainCountryStatResponse.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
 
         :return: The stat_type of this ShowDomainCountryStatResponse.
         :rtype: str
@@ -149,7 +149,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ShowDomainCountryStatResponse.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
 
         :param stat_type: The stat_type of this ShowDomainCountryStatResponse.
         :type stat_type: str
@@ -160,7 +160,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowDomainCountryStatResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
 
         :return: The result of this ShowDomainCountryStatResponse.
         :rtype: dict(str, object)
@@ -171,7 +171,7 @@ class ShowDomainCountryStatResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowDomainCountryStatResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组 **默认取值：** 默认不分组
 
         :param result: The result of this ShowDomainCountryStatResponse.
         :type result: dict(str, object)

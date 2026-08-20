@@ -100,71 +100,6 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
-    def batch_show_pipelines_status(self, request):
-        r"""批量获取流水线状态
-
-        批量获取流水线状态和阶段信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for BatchShowPipelinesStatus
-        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.BatchShowPipelinesStatusRequest`
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.BatchShowPipelinesStatusResponse`
-        """
-        http_info = self._batch_show_pipelines_status_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_show_pipelines_status_invoker(self, request):
-        http_info = self._batch_show_pipelines_status_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _batch_show_pipelines_status_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v3/pipelines/status",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchShowPipelinesStatusResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'pipeline_ids' in local_var_params:
-            query_params.append(('pipeline_ids', local_var_params['pipeline_ids']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_basic_plugin(self, request):
         r"""创建基础插件
 
@@ -1300,6 +1235,160 @@ class CodeArtsPipelineClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_endpoints_details(self, request):
+        r"""查询扩展点列表
+
+        查询扩展点列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEndpointsDetails
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListEndpointsDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListEndpointsDetailsResponse`
+        """
+        http_info = self._list_endpoints_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_endpoints_details_invoker(self, request):
+        http_info = self._list_endpoints_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_endpoints_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/serviceconnection/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointsDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_uuid' in local_var_params:
+            query_params.append(('project_uuid', local_var_params['project_uuid']))
+        if 'region_name' in local_var_params:
+            query_params.append(('region_name', local_var_params['region_name']))
+        if 'module_id' in local_var_params:
+            query_params.append(('module_id', local_var_params['module_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_modules_detail(self, request):
+        r"""查询插件列表
+
+        查询插件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListModulesDetail
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListModulesDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListModulesDetailResponse`
+        """
+        http_info = self._list_modules_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_modules_detail_invoker(self, request):
+        http_info = self._list_modules_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_modules_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/extensions/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModulesDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_uuid' in local_var_params:
+            query_params.append(('project_uuid', local_var_params['project_uuid']))
+        if 'region_name' in local_var_params:
+            query_params.append(('region_name', local_var_params['region_name']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'product_line' in local_var_params:
+            query_params.append(('productLine', local_var_params['product_line']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+            collection_formats['tags'] = 'csv'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'locations' in local_var_params:
+            query_params.append(('locations', local_var_params['locations']))
+            collection_formats['locations'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4202,6 +4291,71 @@ class CodeArtsPipelineClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def invoke_endpoint_proxy(self, request):
+        r"""代理调用外部服务接口
+
+        代理调用外部服务接口。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for InvokeEndpointProxy
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.InvokeEndpointProxyRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.InvokeEndpointProxyResponse`
+        """
+        http_info = self._invoke_endpoint_proxy_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_endpoint_proxy_invoker(self, request):
+        http_info = self._invoke_endpoint_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_endpoint_proxy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/serviceconnection/endpointproxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeEndpointProxyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

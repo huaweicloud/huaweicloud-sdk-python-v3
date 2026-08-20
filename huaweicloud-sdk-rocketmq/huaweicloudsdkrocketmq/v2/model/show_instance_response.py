@@ -226,13 +226,13 @@ class ShowInstanceResponse(SdkResponse):
         :type used_storage_space: int
         :param enable_publicip: **参数解释**： 是否开启公网。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
         :type enable_publicip: bool
-        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
+        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。 **取值范围**： 不涉及。
         :type publicip_id: str
         :param publicip_address: **参数解释**： 公网IP地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type publicip_address: str
         :param ssl_enable: **参数解释**： 是否开启SSL。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
         :type ssl_enable: bool
-        :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
+        :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
         :type cross_vpc_info: str
         :param storage_resource_id: **参数解释**： 存储资源ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type storage_resource_id: str
@@ -1157,7 +1157,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self):
         r"""Gets the publicip_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
+        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。 **取值范围**： 不涉及。
 
         :return: The publicip_id of this ShowInstanceResponse.
         :rtype: str
@@ -1168,7 +1168,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_id(self, publicip_id):
         r"""Sets the publicip_id of this ShowInstanceResponse.
 
-        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： 不涉及。
+        **参数解释**： 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。 **取值范围**： 不涉及。
 
         :param publicip_id: The publicip_id of this ShowInstanceResponse.
         :type publicip_id: str
@@ -1223,7 +1223,7 @@ class ShowInstanceResponse(SdkResponse):
     def cross_vpc_info(self):
         r"""Gets the cross_vpc_info of this ShowInstanceResponse.
 
-        **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
+        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :return: The cross_vpc_info of this ShowInstanceResponse.
         :rtype: str
@@ -1234,7 +1234,7 @@ class ShowInstanceResponse(SdkResponse):
     def cross_vpc_info(self, cross_vpc_info):
         r"""Sets the cross_vpc_info of this ShowInstanceResponse.
 
-        **参数解释**： 跨VPC访问信息。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：未开启。 **默认取值**： 不涉及。
+        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowInstanceResponse.
         :type cross_vpc_info: str

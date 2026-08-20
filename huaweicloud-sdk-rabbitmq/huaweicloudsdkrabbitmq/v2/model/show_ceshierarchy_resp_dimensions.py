@@ -18,19 +18,17 @@ class ShowCeshierarchyRespDimensions:
         'name': 'str',
         'metrics': 'list[str]',
         'key_name': 'list[str]',
-        'dim_router': 'list[str]',
-        'children': 'list[ShowCeshierarchyRespChildren]'
+        'dim_router': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
         'metrics': 'metrics',
         'key_name': 'key_name',
-        'dim_router': 'dim_router',
-        'children': 'children'
+        'dim_router': 'dim_router'
     }
 
-    def __init__(self, name=None, metrics=None, key_name=None, dim_router=None, children=None):
+    def __init__(self, name=None, metrics=None, key_name=None, dim_router=None):
         r"""ShowCeshierarchyRespDimensions
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class ShowCeshierarchyRespDimensions:
         :type key_name: list[str]
         :param dim_router: **参数解释**： 监控维度路由。
         :type dim_router: list[str]
-        :param children: **参数解释**： 子维度列表。
-        :type children: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]
         """
         
         
@@ -53,7 +49,6 @@ class ShowCeshierarchyRespDimensions:
         self._metrics = None
         self._key_name = None
         self._dim_router = None
-        self._children = None
         self.discriminator = None
 
         if name is not None:
@@ -64,8 +59,6 @@ class ShowCeshierarchyRespDimensions:
             self.key_name = key_name
         if dim_router is not None:
             self.dim_router = dim_router
-        if children is not None:
-            self.children = children
 
     @property
     def name(self):
@@ -154,28 +147,6 @@ class ShowCeshierarchyRespDimensions:
         :type dim_router: list[str]
         """
         self._dim_router = dim_router
-
-    @property
-    def children(self):
-        r"""Gets the children of this ShowCeshierarchyRespDimensions.
-
-        **参数解释**： 子维度列表。
-
-        :return: The children of this ShowCeshierarchyRespDimensions.
-        :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]
-        """
-        return self._children
-
-    @children.setter
-    def children(self, children):
-        r"""Sets the children of this ShowCeshierarchyRespDimensions.
-
-        **参数解释**： 子维度列表。
-
-        :param children: The children of this ShowCeshierarchyRespDimensions.
-        :type children: list[:class:`huaweicloudsdkrabbitmq.v2.ShowCeshierarchyRespChildren`]
-        """
-        self._children = children
 
     def to_dict(self):
         result = {}

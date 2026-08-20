@@ -18,29 +18,37 @@ class AscendInfo:
         'npu': 'int',
         'npu_memory': 'str',
         'type': 'str',
-        'chip': 'int'
+        'ai_core': 'str',
+        'ai_cpu': 'str',
+        'type_alias': 'str'
     }
 
     attribute_map = {
         'npu': 'npu',
         'npu_memory': 'npu_memory',
         'type': 'type',
-        'chip': 'chip'
+        'ai_core': 'ai_core',
+        'ai_cpu': 'ai_cpu',
+        'type_alias': 'type_alias'
     }
 
-    def __init__(self, npu=None, npu_memory=None, type=None, chip=None):
+    def __init__(self, npu=None, npu_memory=None, type=None, ai_core=None, ai_cpu=None, type_alias=None):
         r"""AscendInfo
 
         The model defined in huaweicloud sdk
 
-        :param npu: **参数解释**：NPU数量。 **取值范围**：不涉及。
+        :param npu: **参数解释：** NPU数量。 **取值范围：** 不涉及。
         :type npu: int
-        :param npu_memory: **参数解释**：NPU内存。 **取值范围**：不涉及。
+        :param npu_memory: **参数解释：** NPU内存。 **取值范围：** 不涉及。
         :type npu_memory: str
-        :param type: **参数解释**：NPU类型。 **取值范围**：不涉及。
+        :param type: **参数解释：** NPU类型。 **取值范围：** 不涉及。
         :type type: str
-        :param chip: **参数解释**：NPU设备数。 **取值范围**：不涉及。
-        :type chip: int
+        :param ai_core: **参数解释：** 切分规格中的ai_core。 **取值范围：** 不涉及。
+        :type ai_core: str
+        :param ai_cpu: **参数解释：** 切分规格中的ai_cpu。 **取值范围：** 不涉及。
+        :type ai_cpu: str
+        :param type_alias: **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+        :type type_alias: str
         """
         
         
@@ -48,7 +56,9 @@ class AscendInfo:
         self._npu = None
         self._npu_memory = None
         self._type = None
-        self._chip = None
+        self._ai_core = None
+        self._ai_cpu = None
+        self._type_alias = None
         self.discriminator = None
 
         if npu is not None:
@@ -57,14 +67,18 @@ class AscendInfo:
             self.npu_memory = npu_memory
         if type is not None:
             self.type = type
-        if chip is not None:
-            self.chip = chip
+        if ai_core is not None:
+            self.ai_core = ai_core
+        if ai_cpu is not None:
+            self.ai_cpu = ai_cpu
+        if type_alias is not None:
+            self.type_alias = type_alias
 
     @property
     def npu(self):
         r"""Gets the npu of this AscendInfo.
 
-        **参数解释**：NPU数量。 **取值范围**：不涉及。
+        **参数解释：** NPU数量。 **取值范围：** 不涉及。
 
         :return: The npu of this AscendInfo.
         :rtype: int
@@ -75,7 +89,7 @@ class AscendInfo:
     def npu(self, npu):
         r"""Sets the npu of this AscendInfo.
 
-        **参数解释**：NPU数量。 **取值范围**：不涉及。
+        **参数解释：** NPU数量。 **取值范围：** 不涉及。
 
         :param npu: The npu of this AscendInfo.
         :type npu: int
@@ -86,7 +100,7 @@ class AscendInfo:
     def npu_memory(self):
         r"""Gets the npu_memory of this AscendInfo.
 
-        **参数解释**：NPU内存。 **取值范围**：不涉及。
+        **参数解释：** NPU内存。 **取值范围：** 不涉及。
 
         :return: The npu_memory of this AscendInfo.
         :rtype: str
@@ -97,7 +111,7 @@ class AscendInfo:
     def npu_memory(self, npu_memory):
         r"""Sets the npu_memory of this AscendInfo.
 
-        **参数解释**：NPU内存。 **取值范围**：不涉及。
+        **参数解释：** NPU内存。 **取值范围：** 不涉及。
 
         :param npu_memory: The npu_memory of this AscendInfo.
         :type npu_memory: str
@@ -108,7 +122,7 @@ class AscendInfo:
     def type(self):
         r"""Gets the type of this AscendInfo.
 
-        **参数解释**：NPU类型。 **取值范围**：不涉及。
+        **参数解释：** NPU类型。 **取值范围：** 不涉及。
 
         :return: The type of this AscendInfo.
         :rtype: str
@@ -119,7 +133,7 @@ class AscendInfo:
     def type(self, type):
         r"""Sets the type of this AscendInfo.
 
-        **参数解释**：NPU类型。 **取值范围**：不涉及。
+        **参数解释：** NPU类型。 **取值范围：** 不涉及。
 
         :param type: The type of this AscendInfo.
         :type type: str
@@ -127,26 +141,70 @@ class AscendInfo:
         self._type = type
 
     @property
-    def chip(self):
-        r"""Gets the chip of this AscendInfo.
+    def ai_core(self):
+        r"""Gets the ai_core of this AscendInfo.
 
-        **参数解释**：NPU设备数。 **取值范围**：不涉及。
+        **参数解释：** 切分规格中的ai_core。 **取值范围：** 不涉及。
 
-        :return: The chip of this AscendInfo.
-        :rtype: int
+        :return: The ai_core of this AscendInfo.
+        :rtype: str
         """
-        return self._chip
+        return self._ai_core
 
-    @chip.setter
-    def chip(self, chip):
-        r"""Sets the chip of this AscendInfo.
+    @ai_core.setter
+    def ai_core(self, ai_core):
+        r"""Sets the ai_core of this AscendInfo.
 
-        **参数解释**：NPU设备数。 **取值范围**：不涉及。
+        **参数解释：** 切分规格中的ai_core。 **取值范围：** 不涉及。
 
-        :param chip: The chip of this AscendInfo.
-        :type chip: int
+        :param ai_core: The ai_core of this AscendInfo.
+        :type ai_core: str
         """
-        self._chip = chip
+        self._ai_core = ai_core
+
+    @property
+    def ai_cpu(self):
+        r"""Gets the ai_cpu of this AscendInfo.
+
+        **参数解释：** 切分规格中的ai_cpu。 **取值范围：** 不涉及。
+
+        :return: The ai_cpu of this AscendInfo.
+        :rtype: str
+        """
+        return self._ai_cpu
+
+    @ai_cpu.setter
+    def ai_cpu(self, ai_cpu):
+        r"""Sets the ai_cpu of this AscendInfo.
+
+        **参数解释：** 切分规格中的ai_cpu。 **取值范围：** 不涉及。
+
+        :param ai_cpu: The ai_cpu of this AscendInfo.
+        :type ai_cpu: str
+        """
+        self._ai_cpu = ai_cpu
+
+    @property
+    def type_alias(self):
+        r"""Gets the type_alias of this AscendInfo.
+
+        **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+
+        :return: The type_alias of this AscendInfo.
+        :rtype: str
+        """
+        return self._type_alias
+
+    @type_alias.setter
+    def type_alias(self, type_alias):
+        r"""Sets the type_alias of this AscendInfo.
+
+        **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+
+        :param type_alias: The type_alias of this AscendInfo.
+        :type type_alias: str
+        """
+        self._type_alias = type_alias
 
     def to_dict(self):
         result = {}

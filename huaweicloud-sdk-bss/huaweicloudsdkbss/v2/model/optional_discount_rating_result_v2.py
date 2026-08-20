@@ -47,27 +47,27 @@ class OptionalDiscountRatingResultV2:
 
         The model defined in huaweicloud sdk
 
-        :param discount_id: |参数名称：折扣优惠ID| |参数约束及描述：折扣优惠ID|
+        :param discount_id: 折扣优惠ID
         :type discount_id: str
-        :param amount: |参数名称：总额，即最终优惠后的金额。单位为元。amount&#x3D; official_website_amount - discount_amount| |参数约束及描述：总额，即最终优惠后的金额。单位为元。amount&#x3D; official_website_amount - discount_amount|
+        :param amount: 总额，即最终优惠后的金额。单位为元。amount&#x3D; official_website_amount - discount_amount
         :type amount: str
-        :param official_website_amount: |参数名称：官网价。单位为元| |参数约束及描述：官网价。单位为元|
+        :param official_website_amount: 官网价。单位为元
         :type official_website_amount: str
-        :param discount_amount: |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
+        :param discount_amount: 可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为元
         :type discount_amount: str
-        :param discount_type: |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
+        :param discount_type: 折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
         :type discount_type: int
-        :param discount_name: |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        :param discount_name: 折扣名称
         :type discount_name: str
-        :param best_offer: |参数名称：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算| |参数的约束及描述：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
+        :param best_offer: 是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算
         :type best_offer: int
-        :param installment_official_website_amount: |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        :param installment_official_website_amount: 分期金额的官网价。单位为元
         :type installment_official_website_amount: str
-        :param installment_official_discount_amount: |参数名称：分期金额的折扣价。单位为元| |参数约束及描述：分期金额的折扣价。单位为元|
+        :param installment_official_discount_amount: 分期金额的折扣价。单位为元
         :type installment_official_discount_amount: str
-        :param installment_amount: |参数名称：分期金额的成交价。单位为元| |参数约束及描述：分期金额的成交价。单位为元|
+        :param installment_amount: 分期金额的成交价。单位为元
         :type installment_amount: str
-        :param installment_period_type: |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        :param installment_period_type: 分期付款的周期类型。2：月
         :type installment_period_type: int
         """
         
@@ -113,7 +113,7 @@ class OptionalDiscountRatingResultV2:
     def discount_id(self):
         r"""Gets the discount_id of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠ID| |参数约束及描述：折扣优惠ID|
+        折扣优惠ID
 
         :return: The discount_id of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -124,7 +124,7 @@ class OptionalDiscountRatingResultV2:
     def discount_id(self, discount_id):
         r"""Sets the discount_id of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠ID| |参数约束及描述：折扣优惠ID|
+        折扣优惠ID
 
         :param discount_id: The discount_id of this OptionalDiscountRatingResultV2.
         :type discount_id: str
@@ -135,7 +135,7 @@ class OptionalDiscountRatingResultV2:
     def amount(self):
         r"""Gets the amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount| |参数约束及描述：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount|
+        总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount
 
         :return: The amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -146,7 +146,7 @@ class OptionalDiscountRatingResultV2:
     def amount(self, amount):
         r"""Sets the amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount| |参数约束及描述：总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount|
+        总额，即最终优惠后的金额。单位为元。amount= official_website_amount - discount_amount
 
         :param amount: The amount of this OptionalDiscountRatingResultV2.
         :type amount: str
@@ -157,7 +157,7 @@ class OptionalDiscountRatingResultV2:
     def official_website_amount(self):
         r"""Gets the official_website_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：官网价。单位为元| |参数约束及描述：官网价。单位为元|
+        官网价。单位为元
 
         :return: The official_website_amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -168,7 +168,7 @@ class OptionalDiscountRatingResultV2:
     def official_website_amount(self, official_website_amount):
         r"""Sets the official_website_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：官网价。单位为元| |参数约束及描述：官网价。单位为元|
+        官网价。单位为元
 
         :param official_website_amount: The official_website_amount of this OptionalDiscountRatingResultV2.
         :type official_website_amount: str
@@ -179,7 +179,7 @@ class OptionalDiscountRatingResultV2:
     def discount_amount(self):
         r"""Gets the discount_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为元
 
         :return: The discount_amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -190,7 +190,7 @@ class OptionalDiscountRatingResultV2:
     def discount_amount(self, discount_amount):
         r"""Sets the discount_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为| |参数约束及描述：可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。单位为元
 
         :param discount_amount: The discount_amount of this OptionalDiscountRatingResultV2.
         :type discount_amount: str
@@ -201,7 +201,7 @@ class OptionalDiscountRatingResultV2:
     def discount_type(self):
         r"""Gets the discount_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
+        折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
 
         :return: The discount_type of this OptionalDiscountRatingResultV2.
         :rtype: int
@@ -212,7 +212,7 @@ class OptionalDiscountRatingResultV2:
     def discount_type(self, discount_type):
         r"""Sets the discount_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣优惠类型| |参数约束及描述：折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)|
+        折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
 
         :param discount_type: The discount_type of this OptionalDiscountRatingResultV2.
         :type discount_type: int
@@ -223,7 +223,7 @@ class OptionalDiscountRatingResultV2:
     def discount_name(self):
         r"""Gets the discount_name of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        折扣名称
 
         :return: The discount_name of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -234,7 +234,7 @@ class OptionalDiscountRatingResultV2:
     def discount_name(self, discount_name):
         r"""Sets the discount_name of this OptionalDiscountRatingResultV2.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        折扣名称
 
         :param discount_name: The discount_name of this OptionalDiscountRatingResultV2.
         :type discount_name: str
@@ -245,7 +245,7 @@ class OptionalDiscountRatingResultV2:
     def best_offer(self):
         r"""Gets the best_offer of this OptionalDiscountRatingResultV2.
 
-        |参数名称：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算| |参数的约束及描述：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
+        是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算
 
         :return: The best_offer of this OptionalDiscountRatingResultV2.
         :rtype: int
@@ -256,7 +256,7 @@ class OptionalDiscountRatingResultV2:
     def best_offer(self, best_offer):
         r"""Sets the best_offer of this OptionalDiscountRatingResultV2.
 
-        |参数名称：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算| |参数的约束及描述：是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
+        是否为最优折扣。0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算
 
         :param best_offer: The best_offer of this OptionalDiscountRatingResultV2.
         :type best_offer: int
@@ -267,7 +267,7 @@ class OptionalDiscountRatingResultV2:
     def installment_official_website_amount(self):
         r"""Gets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        分期金额的官网价。单位为元
 
         :return: The installment_official_website_amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -278,7 +278,7 @@ class OptionalDiscountRatingResultV2:
     def installment_official_website_amount(self, installment_official_website_amount):
         r"""Sets the installment_official_website_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        分期金额的官网价。单位为元
 
         :param installment_official_website_amount: The installment_official_website_amount of this OptionalDiscountRatingResultV2.
         :type installment_official_website_amount: str
@@ -289,7 +289,7 @@ class OptionalDiscountRatingResultV2:
     def installment_official_discount_amount(self):
         r"""Gets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的折扣价。单位为元| |参数约束及描述：分期金额的折扣价。单位为元|
+        分期金额的折扣价。单位为元
 
         :return: The installment_official_discount_amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -300,7 +300,7 @@ class OptionalDiscountRatingResultV2:
     def installment_official_discount_amount(self, installment_official_discount_amount):
         r"""Sets the installment_official_discount_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的折扣价。单位为元| |参数约束及描述：分期金额的折扣价。单位为元|
+        分期金额的折扣价。单位为元
 
         :param installment_official_discount_amount: The installment_official_discount_amount of this OptionalDiscountRatingResultV2.
         :type installment_official_discount_amount: str
@@ -311,7 +311,7 @@ class OptionalDiscountRatingResultV2:
     def installment_amount(self):
         r"""Gets the installment_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的成交价。单位为元| |参数约束及描述：分期金额的成交价。单位为元|
+        分期金额的成交价。单位为元
 
         :return: The installment_amount of this OptionalDiscountRatingResultV2.
         :rtype: str
@@ -322,7 +322,7 @@ class OptionalDiscountRatingResultV2:
     def installment_amount(self, installment_amount):
         r"""Sets the installment_amount of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期金额的成交价。单位为元| |参数约束及描述：分期金额的成交价。单位为元|
+        分期金额的成交价。单位为元
 
         :param installment_amount: The installment_amount of this OptionalDiscountRatingResultV2.
         :type installment_amount: str
@@ -333,7 +333,7 @@ class OptionalDiscountRatingResultV2:
     def installment_period_type(self):
         r"""Gets the installment_period_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        分期付款的周期类型。2：月
 
         :return: The installment_period_type of this OptionalDiscountRatingResultV2.
         :rtype: int
@@ -344,7 +344,7 @@ class OptionalDiscountRatingResultV2:
     def installment_period_type(self, installment_period_type):
         r"""Sets the installment_period_type of this OptionalDiscountRatingResultV2.
 
-        |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        分期付款的周期类型。2：月
 
         :param installment_period_type: The installment_period_type of this OptionalDiscountRatingResultV2.
         :type installment_period_type: int

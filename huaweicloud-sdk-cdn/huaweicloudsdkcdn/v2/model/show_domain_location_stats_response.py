@@ -30,9 +30,9 @@ class ShowDomainLocationStatsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_by: 数据分组方式
+        :param group_by: **参数解释：** 数据分组方式 **取值范围：** - domain：按域名分组 - country：按国际&amp;地区分组 - province：按省份分组 - isp：按运营商分组
         :type group_by: str
-        :param result: 按指定的分组方式组织的数据
+        :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
         :type result: dict(str, object)
         """
         
@@ -51,7 +51,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
     def group_by(self):
         r"""Gets the group_by of this ShowDomainLocationStatsResponse.
 
-        数据分组方式
+        **参数解释：** 数据分组方式 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组
 
         :return: The group_by of this ShowDomainLocationStatsResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
     def group_by(self, group_by):
         r"""Sets the group_by of this ShowDomainLocationStatsResponse.
 
-        数据分组方式
+        **参数解释：** 数据分组方式 **取值范围：** - domain：按域名分组 - country：按国际&地区分组 - province：按省份分组 - isp：按运营商分组
 
         :param group_by: The group_by of this ShowDomainLocationStatsResponse.
         :type group_by: str
@@ -73,7 +73,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowDomainLocationStatsResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
 
         :return: The result of this ShowDomainLocationStatsResponse.
         :rtype: dict(str, object)
@@ -84,7 +84,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowDomainLocationStatsResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
 
         :param result: The result of this ShowDomainLocationStatsResponse.
         :type result: dict(str, object)

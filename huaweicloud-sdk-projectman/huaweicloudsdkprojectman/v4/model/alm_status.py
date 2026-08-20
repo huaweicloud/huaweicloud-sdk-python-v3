@@ -32,7 +32,8 @@ class AlmStatus:
         'created_by': 'str',
         'created_date': 'int',
         'modified_date': 'int',
-        'modified_by': 'str'
+        'modified_by': 'str',
+        'linkage_node_fields': 'bool'
     }
 
     attribute_map = {
@@ -53,50 +54,53 @@ class AlmStatus:
         'created_by': 'created_by',
         'created_date': 'created_date',
         'modified_date': 'modified_date',
-        'modified_by': 'modified_by'
+        'modified_by': 'modified_by',
+        'linkage_node_fields': 'linkage_node_fields'
     }
 
-    def __init__(self, id=None, belonging=None, space_id=None, name=None, code=None, definition_type=None, belong_definition_type=None, display_value=None, position=None, displayable=None, editable=None, deletable=None, mutable=None, title_py=None, created_by=None, created_date=None, modified_date=None, modified_by=None):
+    def __init__(self, id=None, belonging=None, space_id=None, name=None, code=None, definition_type=None, belong_definition_type=None, display_value=None, position=None, displayable=None, editable=None, deletable=None, mutable=None, title_py=None, created_by=None, created_date=None, modified_date=None, modified_by=None, linkage_node_fields=None):
         r"""AlmStatus
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**  状态Id。 **取值范围：**  不涉及。
+        :param id: 状态ID。
         :type id: str
-        :param belonging: **参数解释：**  工作项的状态属性。 **取值范围：**  - START - IN_PROGRESS - END
+        :param belonging: 工作项的状态属性。
         :type belonging: str
-        :param space_id: **参数解释：**  状态所属的项目空间id。 **取值范围：**  不涉及。
+        :param space_id: 状态所属的项目空间ID。
         :type space_id: str
-        :param name: **参数解释：**  状态名称。 **取值范围：**  不涉及。
+        :param name: 状态名称。
         :type name: str
-        :param code: **参数解释：**  状态code值。 **取值范围：**  不涉及。
+        :param code: 状态code值。
         :type code: str
-        :param definition_type: **参数解释：**  状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。 **取值范围：**  不涉及。
+        :param definition_type: 状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。
         :type definition_type: str
-        :param belong_definition_type: **参数解释：**  状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。 **取值范围：**  不涉及。
+        :param belong_definition_type: 状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。
         :type belong_definition_type: int
-        :param display_value: **参数解释：**  状态名称，和name值相同。 **取值范围：**  不涉及。
+        :param display_value: 状态名称，和name值相同。
         :type display_value: str
-        :param position: **参数解释：**  位置顺序。 **取值范围：**  不涉及。
+        :param position: 位置顺序。
         :type position: int
-        :param displayable: **参数解释：**  是否显示。 **取值范围：**  不涉及。
+        :param displayable: 是否显示。
         :type displayable: int
-        :param editable: **参数解释：**  是否可编辑。 **取值范围：**  不涉及。
+        :param editable: 是否可编辑。
         :type editable: int
-        :param deletable: **参数解释：**  是否可删除。 **取值范围：**  不涉及。
+        :param deletable: 是否可删除。
         :type deletable: int
-        :param mutable: **参数解释：**  是否可变，即是否为固定值。 **取值范围：**  不涉及。
+        :param mutable: 是否可变，即是否为固定值。
         :type mutable: int
-        :param title_py: **参数解释：**  标题的拼音首字母。 **取值范围：**  不涉及。
+        :param title_py: 标题的拼音首字母。
         :type title_py: str
-        :param created_by: **参数解释：**  创建人用户Id。 **取值范围：**  不涉及。
+        :param created_by: 创建人用户ID。
         :type created_by: str
-        :param created_date: **参数解释：**  创建时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        :param created_date: 创建时间。Unix时间戳，精度为毫秒。
         :type created_date: int
-        :param modified_date: **参数解释：**  最近修改时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        :param modified_date: 最近修改时间。Unix时间戳，精度为毫秒。
         :type modified_date: int
-        :param modified_by: **参数解释：**  最近修改人用户Id。 **取值范围：**    不涉及。
+        :param modified_by: 最近修改人用户ID。
         :type modified_by: str
+        :param linkage_node_fields: 工作流配置中用于标识是否新增“节点责任人/节点结束时间”。
+        :type linkage_node_fields: bool
         """
         
         
@@ -119,6 +123,7 @@ class AlmStatus:
         self._created_date = None
         self._modified_date = None
         self._modified_by = None
+        self._linkage_node_fields = None
         self.discriminator = None
 
         if id is not None:
@@ -157,12 +162,14 @@ class AlmStatus:
             self.modified_date = modified_date
         if modified_by is not None:
             self.modified_by = modified_by
+        if linkage_node_fields is not None:
+            self.linkage_node_fields = linkage_node_fields
 
     @property
     def id(self):
         r"""Gets the id of this AlmStatus.
 
-        **参数解释：**  状态Id。 **取值范围：**  不涉及。
+        状态ID。
 
         :return: The id of this AlmStatus.
         :rtype: str
@@ -173,7 +180,7 @@ class AlmStatus:
     def id(self, id):
         r"""Sets the id of this AlmStatus.
 
-        **参数解释：**  状态Id。 **取值范围：**  不涉及。
+        状态ID。
 
         :param id: The id of this AlmStatus.
         :type id: str
@@ -184,7 +191,7 @@ class AlmStatus:
     def belonging(self):
         r"""Gets the belonging of this AlmStatus.
 
-        **参数解释：**  工作项的状态属性。 **取值范围：**  - START - IN_PROGRESS - END
+        工作项的状态属性。
 
         :return: The belonging of this AlmStatus.
         :rtype: str
@@ -195,7 +202,7 @@ class AlmStatus:
     def belonging(self, belonging):
         r"""Sets the belonging of this AlmStatus.
 
-        **参数解释：**  工作项的状态属性。 **取值范围：**  - START - IN_PROGRESS - END
+        工作项的状态属性。
 
         :param belonging: The belonging of this AlmStatus.
         :type belonging: str
@@ -206,7 +213,7 @@ class AlmStatus:
     def space_id(self):
         r"""Gets the space_id of this AlmStatus.
 
-        **参数解释：**  状态所属的项目空间id。 **取值范围：**  不涉及。
+        状态所属的项目空间ID。
 
         :return: The space_id of this AlmStatus.
         :rtype: str
@@ -217,7 +224,7 @@ class AlmStatus:
     def space_id(self, space_id):
         r"""Sets the space_id of this AlmStatus.
 
-        **参数解释：**  状态所属的项目空间id。 **取值范围：**  不涉及。
+        状态所属的项目空间ID。
 
         :param space_id: The space_id of this AlmStatus.
         :type space_id: str
@@ -228,7 +235,7 @@ class AlmStatus:
     def name(self):
         r"""Gets the name of this AlmStatus.
 
-        **参数解释：**  状态名称。 **取值范围：**  不涉及。
+        状态名称。
 
         :return: The name of this AlmStatus.
         :rtype: str
@@ -239,7 +246,7 @@ class AlmStatus:
     def name(self, name):
         r"""Sets the name of this AlmStatus.
 
-        **参数解释：**  状态名称。 **取值范围：**  不涉及。
+        状态名称。
 
         :param name: The name of this AlmStatus.
         :type name: str
@@ -250,7 +257,7 @@ class AlmStatus:
     def code(self):
         r"""Gets the code of this AlmStatus.
 
-        **参数解释：**  状态code值。 **取值范围：**  不涉及。
+        状态code值。
 
         :return: The code of this AlmStatus.
         :rtype: str
@@ -261,7 +268,7 @@ class AlmStatus:
     def code(self, code):
         r"""Sets the code of this AlmStatus.
 
-        **参数解释：**  状态code值。 **取值范围：**  不涉及。
+        状态code值。
 
         :param code: The code of this AlmStatus.
         :type code: str
@@ -272,7 +279,7 @@ class AlmStatus:
     def definition_type(self):
         r"""Gets the definition_type of this AlmStatus.
 
-        **参数解释：**  状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。 **取值范围：**  不涉及。
+        状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。
 
         :return: The definition_type of this AlmStatus.
         :rtype: str
@@ -283,7 +290,7 @@ class AlmStatus:
     def definition_type(self, definition_type):
         r"""Sets the definition_type of this AlmStatus.
 
-        **参数解释：**  状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。 **取值范围：**  不涉及。
+        状态定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。
 
         :param definition_type: The definition_type of this AlmStatus.
         :type definition_type: str
@@ -294,7 +301,7 @@ class AlmStatus:
     def belong_definition_type(self):
         r"""Gets the belong_definition_type of this AlmStatus.
 
-        **参数解释：**  状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。 **取值范围：**  不涉及。
+        状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。
 
         :return: The belong_definition_type of this AlmStatus.
         :rtype: int
@@ -305,7 +312,7 @@ class AlmStatus:
     def belong_definition_type(self, belong_definition_type):
         r"""Sets the belong_definition_type of this AlmStatus.
 
-        **参数解释：**  状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。 **取值范围：**  不涉及。
+        状态归属定义级别，1,2,3为系统级，4为租户自定义，5为项目自定义。区别于definition_type。如果为系统级和租户自定义级，在项目中会复制一份元数据，归属于项目空间。
 
         :param belong_definition_type: The belong_definition_type of this AlmStatus.
         :type belong_definition_type: int
@@ -316,7 +323,7 @@ class AlmStatus:
     def display_value(self):
         r"""Gets the display_value of this AlmStatus.
 
-        **参数解释：**  状态名称，和name值相同。 **取值范围：**  不涉及。
+        状态名称，和name值相同。
 
         :return: The display_value of this AlmStatus.
         :rtype: str
@@ -327,7 +334,7 @@ class AlmStatus:
     def display_value(self, display_value):
         r"""Sets the display_value of this AlmStatus.
 
-        **参数解释：**  状态名称，和name值相同。 **取值范围：**  不涉及。
+        状态名称，和name值相同。
 
         :param display_value: The display_value of this AlmStatus.
         :type display_value: str
@@ -338,7 +345,7 @@ class AlmStatus:
     def position(self):
         r"""Gets the position of this AlmStatus.
 
-        **参数解释：**  位置顺序。 **取值范围：**  不涉及。
+        位置顺序。
 
         :return: The position of this AlmStatus.
         :rtype: int
@@ -349,7 +356,7 @@ class AlmStatus:
     def position(self, position):
         r"""Sets the position of this AlmStatus.
 
-        **参数解释：**  位置顺序。 **取值范围：**  不涉及。
+        位置顺序。
 
         :param position: The position of this AlmStatus.
         :type position: int
@@ -360,7 +367,7 @@ class AlmStatus:
     def displayable(self):
         r"""Gets the displayable of this AlmStatus.
 
-        **参数解释：**  是否显示。 **取值范围：**  不涉及。
+        是否显示。
 
         :return: The displayable of this AlmStatus.
         :rtype: int
@@ -371,7 +378,7 @@ class AlmStatus:
     def displayable(self, displayable):
         r"""Sets the displayable of this AlmStatus.
 
-        **参数解释：**  是否显示。 **取值范围：**  不涉及。
+        是否显示。
 
         :param displayable: The displayable of this AlmStatus.
         :type displayable: int
@@ -382,7 +389,7 @@ class AlmStatus:
     def editable(self):
         r"""Gets the editable of this AlmStatus.
 
-        **参数解释：**  是否可编辑。 **取值范围：**  不涉及。
+        是否可编辑。
 
         :return: The editable of this AlmStatus.
         :rtype: int
@@ -393,7 +400,7 @@ class AlmStatus:
     def editable(self, editable):
         r"""Sets the editable of this AlmStatus.
 
-        **参数解释：**  是否可编辑。 **取值范围：**  不涉及。
+        是否可编辑。
 
         :param editable: The editable of this AlmStatus.
         :type editable: int
@@ -404,7 +411,7 @@ class AlmStatus:
     def deletable(self):
         r"""Gets the deletable of this AlmStatus.
 
-        **参数解释：**  是否可删除。 **取值范围：**  不涉及。
+        是否可删除。
 
         :return: The deletable of this AlmStatus.
         :rtype: int
@@ -415,7 +422,7 @@ class AlmStatus:
     def deletable(self, deletable):
         r"""Sets the deletable of this AlmStatus.
 
-        **参数解释：**  是否可删除。 **取值范围：**  不涉及。
+        是否可删除。
 
         :param deletable: The deletable of this AlmStatus.
         :type deletable: int
@@ -426,7 +433,7 @@ class AlmStatus:
     def mutable(self):
         r"""Gets the mutable of this AlmStatus.
 
-        **参数解释：**  是否可变，即是否为固定值。 **取值范围：**  不涉及。
+        是否可变，即是否为固定值。
 
         :return: The mutable of this AlmStatus.
         :rtype: int
@@ -437,7 +444,7 @@ class AlmStatus:
     def mutable(self, mutable):
         r"""Sets the mutable of this AlmStatus.
 
-        **参数解释：**  是否可变，即是否为固定值。 **取值范围：**  不涉及。
+        是否可变，即是否为固定值。
 
         :param mutable: The mutable of this AlmStatus.
         :type mutable: int
@@ -448,7 +455,7 @@ class AlmStatus:
     def title_py(self):
         r"""Gets the title_py of this AlmStatus.
 
-        **参数解释：**  标题的拼音首字母。 **取值范围：**  不涉及。
+        标题的拼音首字母。
 
         :return: The title_py of this AlmStatus.
         :rtype: str
@@ -459,7 +466,7 @@ class AlmStatus:
     def title_py(self, title_py):
         r"""Sets the title_py of this AlmStatus.
 
-        **参数解释：**  标题的拼音首字母。 **取值范围：**  不涉及。
+        标题的拼音首字母。
 
         :param title_py: The title_py of this AlmStatus.
         :type title_py: str
@@ -470,7 +477,7 @@ class AlmStatus:
     def created_by(self):
         r"""Gets the created_by of this AlmStatus.
 
-        **参数解释：**  创建人用户Id。 **取值范围：**  不涉及。
+        创建人用户ID。
 
         :return: The created_by of this AlmStatus.
         :rtype: str
@@ -481,7 +488,7 @@ class AlmStatus:
     def created_by(self, created_by):
         r"""Sets the created_by of this AlmStatus.
 
-        **参数解释：**  创建人用户Id。 **取值范围：**  不涉及。
+        创建人用户ID。
 
         :param created_by: The created_by of this AlmStatus.
         :type created_by: str
@@ -492,7 +499,7 @@ class AlmStatus:
     def created_date(self):
         r"""Gets the created_date of this AlmStatus.
 
-        **参数解释：**  创建时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        创建时间。Unix时间戳，精度为毫秒。
 
         :return: The created_date of this AlmStatus.
         :rtype: int
@@ -503,7 +510,7 @@ class AlmStatus:
     def created_date(self, created_date):
         r"""Sets the created_date of this AlmStatus.
 
-        **参数解释：**  创建时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        创建时间。Unix时间戳，精度为毫秒。
 
         :param created_date: The created_date of this AlmStatus.
         :type created_date: int
@@ -514,7 +521,7 @@ class AlmStatus:
     def modified_date(self):
         r"""Gets the modified_date of this AlmStatus.
 
-        **参数解释：**  最近修改时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        最近修改时间。Unix时间戳，精度为毫秒。
 
         :return: The modified_date of this AlmStatus.
         :rtype: int
@@ -525,7 +532,7 @@ class AlmStatus:
     def modified_date(self, modified_date):
         r"""Sets the modified_date of this AlmStatus.
 
-        **参数解释：**  最近修改时间。Unix时间戳，精度为毫秒。 **取值范围：**  不涉及。
+        最近修改时间。Unix时间戳，精度为毫秒。
 
         :param modified_date: The modified_date of this AlmStatus.
         :type modified_date: int
@@ -536,7 +543,7 @@ class AlmStatus:
     def modified_by(self):
         r"""Gets the modified_by of this AlmStatus.
 
-        **参数解释：**  最近修改人用户Id。 **取值范围：**    不涉及。
+        最近修改人用户ID。
 
         :return: The modified_by of this AlmStatus.
         :rtype: str
@@ -547,12 +554,34 @@ class AlmStatus:
     def modified_by(self, modified_by):
         r"""Sets the modified_by of this AlmStatus.
 
-        **参数解释：**  最近修改人用户Id。 **取值范围：**    不涉及。
+        最近修改人用户ID。
 
         :param modified_by: The modified_by of this AlmStatus.
         :type modified_by: str
         """
         self._modified_by = modified_by
+
+    @property
+    def linkage_node_fields(self):
+        r"""Gets the linkage_node_fields of this AlmStatus.
+
+        工作流配置中用于标识是否新增“节点责任人/节点结束时间”。
+
+        :return: The linkage_node_fields of this AlmStatus.
+        :rtype: bool
+        """
+        return self._linkage_node_fields
+
+    @linkage_node_fields.setter
+    def linkage_node_fields(self, linkage_node_fields):
+        r"""Sets the linkage_node_fields of this AlmStatus.
+
+        工作流配置中用于标识是否新增“节点责任人/节点结束时间”。
+
+        :param linkage_node_fields: The linkage_node_fields of this AlmStatus.
+        :type linkage_node_fields: bool
+        """
+        self._linkage_node_fields = linkage_node_fields
 
     def to_dict(self):
         result = {}

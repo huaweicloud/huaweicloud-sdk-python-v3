@@ -33,11 +33,11 @@ class StatsConfigDetails:
 
         The model defined in huaweicloud sdk
 
-        :param config_type: 配置类别.0：热点统计类
+        :param config_type: **参数解释：** 配置类型 **取值范围：** - 0：热点统计 - 1：ces上报
         :type config_type: int
-        :param resource_type: 资源类型。domain:resource_name为域名，account:resource_name为账号
+        :param resource_type: **参数解释：** 资源类型 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号
         :type resource_type: str
-        :param resource_name: 资源名称为账号或域名。多个域名以英文逗号分隔
+        :param resource_name: **参数解释：** 资源名称 &gt; 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个域名以英文逗号分隔
         :type resource_name: str
         :param config_info: 
         :type config_info: :class:`huaweicloudsdkcdn.v2.ConfigInfo`
@@ -64,7 +64,7 @@ class StatsConfigDetails:
     def config_type(self):
         r"""Gets the config_type of this StatsConfigDetails.
 
-        配置类别.0：热点统计类
+        **参数解释：** 配置类型 **取值范围：** - 0：热点统计 - 1：ces上报
 
         :return: The config_type of this StatsConfigDetails.
         :rtype: int
@@ -75,7 +75,7 @@ class StatsConfigDetails:
     def config_type(self, config_type):
         r"""Sets the config_type of this StatsConfigDetails.
 
-        配置类别.0：热点统计类
+        **参数解释：** 配置类型 **取值范围：** - 0：热点统计 - 1：ces上报
 
         :param config_type: The config_type of this StatsConfigDetails.
         :type config_type: int
@@ -86,7 +86,7 @@ class StatsConfigDetails:
     def resource_type(self):
         r"""Gets the resource_type of this StatsConfigDetails.
 
-        资源类型。domain:resource_name为域名，account:resource_name为账号
+        **参数解释：** 资源类型 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号
 
         :return: The resource_type of this StatsConfigDetails.
         :rtype: str
@@ -97,7 +97,7 @@ class StatsConfigDetails:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this StatsConfigDetails.
 
-        资源类型。domain:resource_name为域名，account:resource_name为账号
+        **参数解释：** 资源类型 **取值范围：** - domain：域名，对应resource_name需配置为域名 - account：账号，对应resource_name需配置为账号
 
         :param resource_type: The resource_type of this StatsConfigDetails.
         :type resource_type: str
@@ -108,7 +108,7 @@ class StatsConfigDetails:
     def resource_name(self):
         r"""Gets the resource_name of this StatsConfigDetails.
 
-        资源名称为账号或域名。多个域名以英文逗号分隔
+        **参数解释：** 资源名称 > 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个域名以英文逗号分隔
 
         :return: The resource_name of this StatsConfigDetails.
         :rtype: str
@@ -119,7 +119,7 @@ class StatsConfigDetails:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this StatsConfigDetails.
 
-        资源名称为账号或域名。多个域名以英文逗号分隔
+        **参数解释：** 资源名称 > 账号或域名  **约束限制：** 不涉及 **取值范围：** 多个域名以英文逗号分隔
 
         :param resource_name: The resource_name of this StatsConfigDetails.
         :type resource_name: str

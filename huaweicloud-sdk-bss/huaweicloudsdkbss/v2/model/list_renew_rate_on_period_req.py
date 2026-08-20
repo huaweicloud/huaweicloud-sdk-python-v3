@@ -33,13 +33,13 @@ class ListRenewRateOnPeriodReq:
 
         The model defined in huaweicloud sdk
 
-        :param resource_ids: |参数名称：资源ID列表。只支持传入主资源ID，最多10个资源ID。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多10个资源ID。|
+        :param resource_ids: 资源ID列表。只支持传入主资源ID，最多10个资源ID。
         :type resource_ids: list[str]
-        :param period_type: |参数名称：周期类型：2：月3：年| |参数的约束及描述：周期类型：2：月3：年|
+        :param period_type: 周期类型。2：月 3：年
         :type period_type: int
-        :param period_num: |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
+        :param period_num: 周期数目。如果是月，目前支持1-11 如果是年，目前支持1-3
         :type period_num: int
-        :param include_relative_resources: 是否包含关联资源一起续费询价。 false：不包含true：包含 此参数不携带或携带值为空串时，默认值为“false\&quot;。
+        :param include_relative_resources: 是否包含关联资源一起续费询价。该参数非必填，true:包含。false:不包含。此参数不携带或携带值为空串时，默认值为“false”。
         :type include_relative_resources: bool
         """
         
@@ -61,7 +61,7 @@ class ListRenewRateOnPeriodReq:
     def resource_ids(self):
         r"""Gets the resource_ids of this ListRenewRateOnPeriodReq.
 
-        |参数名称：资源ID列表。只支持传入主资源ID，最多10个资源ID。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多10个资源ID。|
+        资源ID列表。只支持传入主资源ID，最多10个资源ID。
 
         :return: The resource_ids of this ListRenewRateOnPeriodReq.
         :rtype: list[str]
@@ -72,7 +72,7 @@ class ListRenewRateOnPeriodReq:
     def resource_ids(self, resource_ids):
         r"""Sets the resource_ids of this ListRenewRateOnPeriodReq.
 
-        |参数名称：资源ID列表。只支持传入主资源ID，最多10个资源ID。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多10个资源ID。|
+        资源ID列表。只支持传入主资源ID，最多10个资源ID。
 
         :param resource_ids: The resource_ids of this ListRenewRateOnPeriodReq.
         :type resource_ids: list[str]
@@ -83,7 +83,7 @@ class ListRenewRateOnPeriodReq:
     def period_type(self):
         r"""Gets the period_type of this ListRenewRateOnPeriodReq.
 
-        |参数名称：周期类型：2：月3：年| |参数的约束及描述：周期类型：2：月3：年|
+        周期类型。2：月 3：年
 
         :return: The period_type of this ListRenewRateOnPeriodReq.
         :rtype: int
@@ -94,7 +94,7 @@ class ListRenewRateOnPeriodReq:
     def period_type(self, period_type):
         r"""Sets the period_type of this ListRenewRateOnPeriodReq.
 
-        |参数名称：周期类型：2：月3：年| |参数的约束及描述：周期类型：2：月3：年|
+        周期类型。2：月 3：年
 
         :param period_type: The period_type of this ListRenewRateOnPeriodReq.
         :type period_type: int
@@ -105,7 +105,7 @@ class ListRenewRateOnPeriodReq:
     def period_num(self):
         r"""Gets the period_num of this ListRenewRateOnPeriodReq.
 
-        |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
+        周期数目。如果是月，目前支持1-11 如果是年，目前支持1-3
 
         :return: The period_num of this ListRenewRateOnPeriodReq.
         :rtype: int
@@ -116,7 +116,7 @@ class ListRenewRateOnPeriodReq:
     def period_num(self, period_num):
         r"""Sets the period_num of this ListRenewRateOnPeriodReq.
 
-        |参数名称：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11如果是年，目前支持1-3|
+        周期数目。如果是月，目前支持1-11 如果是年，目前支持1-3
 
         :param period_num: The period_num of this ListRenewRateOnPeriodReq.
         :type period_num: int
@@ -127,7 +127,7 @@ class ListRenewRateOnPeriodReq:
     def include_relative_resources(self):
         r"""Gets the include_relative_resources of this ListRenewRateOnPeriodReq.
 
-        是否包含关联资源一起续费询价。 false：不包含true：包含 此参数不携带或携带值为空串时，默认值为“false\"。
+        是否包含关联资源一起续费询价。该参数非必填，true:包含。false:不包含。此参数不携带或携带值为空串时，默认值为“false”。
 
         :return: The include_relative_resources of this ListRenewRateOnPeriodReq.
         :rtype: bool
@@ -138,7 +138,7 @@ class ListRenewRateOnPeriodReq:
     def include_relative_resources(self, include_relative_resources):
         r"""Sets the include_relative_resources of this ListRenewRateOnPeriodReq.
 
-        是否包含关联资源一起续费询价。 false：不包含true：包含 此参数不携带或携带值为空串时，默认值为“false\"。
+        是否包含关联资源一起续费询价。该参数非必填，true:包含。false:不包含。此参数不携带或携带值为空串时，默认值为“false”。
 
         :param include_relative_resources: The include_relative_resources of this ListRenewRateOnPeriodReq.
         :type include_relative_resources: bool

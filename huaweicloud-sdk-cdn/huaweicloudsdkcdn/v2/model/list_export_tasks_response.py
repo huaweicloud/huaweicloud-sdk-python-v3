@@ -30,7 +30,7 @@ class ListExportTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 导出任务总数
+        :param total: **参数解释：** 导出任务总数 **取值范围：** 不涉及
         :type total: int
         :param data: 
         :type data: list[:class:`huaweicloudsdkcdn.v2.ExportTask`]
@@ -51,7 +51,7 @@ class ListExportTasksResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListExportTasksResponse.
 
-        导出任务总数
+        **参数解释：** 导出任务总数 **取值范围：** 不涉及
 
         :return: The total of this ListExportTasksResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListExportTasksResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListExportTasksResponse.
 
-        导出任务总数
+        **参数解释：** 导出任务总数 **取值范围：** 不涉及
 
         :param total: The total of this ListExportTasksResponse.
         :type total: int

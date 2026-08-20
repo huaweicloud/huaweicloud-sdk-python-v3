@@ -14863,6 +14863,101 @@ class DataArtsStudioAsyncClient(Client):
 
         return http_info
 
+    def list_security_member_permissions_by_user_id_async(self, request):
+        r"""查询指定用户权限清单
+
+        查询指定用户权限清单。
+        
+        权限要求：dayu_admin / te_admin / 数据安全管理员可查询任意用户；普通用户仅可查询自身权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityMemberPermissionsByUserId
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberPermissionsByUserIdRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberPermissionsByUserIdResponse`
+        """
+        http_info = self._list_security_member_permissions_by_user_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_member_permissions_by_user_id_async_invoker(self, request):
+        http_info = self._list_security_member_permissions_by_user_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_member_permissions_by_user_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/member-permission/query/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityMemberPermissionsByUserIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'schema_name' in local_var_params:
+            query_params.append(('schema_name', local_var_params['schema_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'account_type' in local_var_params:
+            query_params.append(('account_type', local_var_params['account_type']))
+        if 'expire_status' in local_var_params:
+            query_params.append(('expire_status', local_var_params['expire_status']))
+        if 'start_expire_time' in local_var_params:
+            query_params.append(('start_expire_time', local_var_params['start_expire_time']))
+        if 'end_expire_time' in local_var_params:
+            query_params.append(('end_expire_time', local_var_params['end_expire_time']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_member_sync_tasks_async(self, request):
         r"""查询用户同步列表
 

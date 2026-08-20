@@ -22,6 +22,8 @@ class JobSearches:
         'group_by': 'str',
         'workspace_id': 'str',
         'train_type': 'str',
+        'tags': 'list[ListTagFilter]',
+        'host_ips': 'list[str]',
         'filters': 'list[Filter]'
     }
 
@@ -33,10 +35,12 @@ class JobSearches:
         'group_by': 'group_by',
         'workspace_id': 'workspace_id',
         'train_type': 'train_type',
+        'tags': 'tags',
+        'host_ips': 'host_ips',
         'filters': 'filters'
     }
 
-    def __init__(self, offset=None, limit=None, sort_by=None, order=None, group_by=None, workspace_id=None, train_type=None, filters=None):
+    def __init__(self, offset=None, limit=None, sort_by=None, order=None, group_by=None, workspace_id=None, train_type=None, tags=None, host_ips=None, filters=None):
         r"""JobSearches
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class JobSearches:
         :type workspace_id: str
         :param train_type: **参数解释**：在开启自定义作业和精调作业联合查询时，只显示自定义或精调作业。 **约束限制**：不涉及。 **取值范围**：   - job: 只查自定义作业   - ftjob : 只查精调作业 **默认取值**：不涉及。
         :type train_type: str
+        :param tags: **参数解释**：按 TMS 标签筛选训练作业列表。 **约束限制**：   - 最多 10 个标签条件；   - 同一 &#x60;key&#x60; 不可重复；   - 同一 &#x60;key&#x60; 下 &#x60;values&#x60; 不可重复；   - 传入本参数时须同时满足 &#x60;filters&#x60; 中 &#x60;create_time&#x60; 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 同一 &#x60;key&#x60; 下多个 &#x60;values&#x60; 为 **OR**；   - 不同 &#x60;key&#x60; 之间为 **AND**；   - &#x60;values&#x60; 为空或仅含空字符串时，按 **仅匹配该 key**（不限 value）处理。 **取值范围**：不涉及。 **默认取值**：不传则不按标签筛选。
+        :type tags: list[:class:`huaweicloudsdkmodelarts.v1.ListTagFilter`]
+        :param host_ips: **参数解释**：按训练实例所在节点宿主机 IP 筛选训练作业列表。 **约束限制**：   - 最多 10 个 IP；   - 每个元素须为合法 IPv4/IPv6 地址；   - 传入本参数时须同时满足 &#x60;filters&#x60; 中 &#x60;create_time&#x60; 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 多个 IP 之间为 **OR**（命中任一 IP 即匹配） **取值范围**：不涉及。 **默认取值**：不传则不按 IP 筛选。
+        :type host_ips: list[str]
         :param filters: 查询作业要过滤的一系列条件。
         :type filters: list[:class:`huaweicloudsdkmodelarts.v1.Filter`]
         """
@@ -68,6 +76,8 @@ class JobSearches:
         self._group_by = None
         self._workspace_id = None
         self._train_type = None
+        self._tags = None
+        self._host_ips = None
         self._filters = None
         self.discriminator = None
 
@@ -85,6 +95,10 @@ class JobSearches:
             self.workspace_id = workspace_id
         if train_type is not None:
             self.train_type = train_type
+        if tags is not None:
+            self.tags = tags
+        if host_ips is not None:
+            self.host_ips = host_ips
         if filters is not None:
             self.filters = filters
 
@@ -241,6 +255,50 @@ class JobSearches:
         :type train_type: str
         """
         self._train_type = train_type
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this JobSearches.
+
+        **参数解释**：按 TMS 标签筛选训练作业列表。 **约束限制**：   - 最多 10 个标签条件；   - 同一 `key` 不可重复；   - 同一 `key` 下 `values` 不可重复；   - 传入本参数时须同时满足 `filters` 中 `create_time` 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 同一 `key` 下多个 `values` 为 **OR**；   - 不同 `key` 之间为 **AND**；   - `values` 为空或仅含空字符串时，按 **仅匹配该 key**（不限 value）处理。 **取值范围**：不涉及。 **默认取值**：不传则不按标签筛选。
+
+        :return: The tags of this JobSearches.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.ListTagFilter`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this JobSearches.
+
+        **参数解释**：按 TMS 标签筛选训练作业列表。 **约束限制**：   - 最多 10 个标签条件；   - 同一 `key` 不可重复；   - 同一 `key` 下 `values` 不可重复；   - 传入本参数时须同时满足 `filters` 中 `create_time` 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 同一 `key` 下多个 `values` 为 **OR**；   - 不同 `key` 之间为 **AND**；   - `values` 为空或仅含空字符串时，按 **仅匹配该 key**（不限 value）处理。 **取值范围**：不涉及。 **默认取值**：不传则不按标签筛选。
+
+        :param tags: The tags of this JobSearches.
+        :type tags: list[:class:`huaweicloudsdkmodelarts.v1.ListTagFilter`]
+        """
+        self._tags = tags
+
+    @property
+    def host_ips(self):
+        r"""Gets the host_ips of this JobSearches.
+
+        **参数解释**：按训练实例所在节点宿主机 IP 筛选训练作业列表。 **约束限制**：   - 最多 10 个 IP；   - 每个元素须为合法 IPv4/IPv6 地址；   - 传入本参数时须同时满足 `filters` 中 `create_time` 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 多个 IP 之间为 **OR**（命中任一 IP 即匹配） **取值范围**：不涉及。 **默认取值**：不传则不按 IP 筛选。
+
+        :return: The host_ips of this JobSearches.
+        :rtype: list[str]
+        """
+        return self._host_ips
+
+    @host_ips.setter
+    def host_ips(self, host_ips):
+        r"""Sets the host_ips of this JobSearches.
+
+        **参数解释**：按训练实例所在节点宿主机 IP 筛选训练作业列表。 **约束限制**：   - 最多 10 个 IP；   - 每个元素须为合法 IPv4/IPv6 地址；   - 传入本参数时须同时满足 `filters` 中 `create_time` 条件：未传则默认最近 31 天，时间跨度不得超过 31 天。 **匹配规则**：   - 多个 IP 之间为 **OR**（命中任一 IP 即匹配） **取值范围**：不涉及。 **默认取值**：不传则不按 IP 筛选。
+
+        :param host_ips: The host_ips of this JobSearches.
+        :type host_ips: list[str]
+        """
+        self._host_ips = host_ips
 
     @property
     def filters(self):

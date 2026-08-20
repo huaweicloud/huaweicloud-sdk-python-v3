@@ -57,9 +57,9 @@ class ListRestorableInstancesDetailsRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
-        :param backup_restore_type: **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+        :param backup_restore_type: **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE  **默认取值**: INSTANCE
         :type backup_restore_type: str
-        :param source_backup_schema: **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+        :param source_backup_schema: **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE  **默认取值**: INSTANCE
         :type source_backup_schema: str
         :param target_instance_id: **参数解释**: 目标实例ID，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type target_instance_id: str
@@ -237,7 +237,7 @@ class ListRestorableInstancesDetailsRequest:
     def backup_restore_type(self):
         r"""Gets the backup_restore_type of this ListRestorableInstancesDetailsRequest.
 
-        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE  **默认取值**: INSTANCE
 
         :return: The backup_restore_type of this ListRestorableInstancesDetailsRequest.
         :rtype: str
@@ -248,7 +248,7 @@ class ListRestorableInstancesDetailsRequest:
     def backup_restore_type(self, backup_restore_type):
         r"""Sets the backup_restore_type of this ListRestorableInstancesDetailsRequest.
 
-        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE  **默认取值**: INSTANCE
 
         :param backup_restore_type: The backup_restore_type of this ListRestorableInstancesDetailsRequest.
         :type backup_restore_type: str
@@ -259,7 +259,7 @@ class ListRestorableInstancesDetailsRequest:
     def source_backup_schema(self):
         r"""Gets the source_backup_schema of this ListRestorableInstancesDetailsRequest.
 
-        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE  **默认取值**: INSTANCE
 
         :return: The source_backup_schema of this ListRestorableInstancesDetailsRequest.
         :rtype: str
@@ -270,7 +270,7 @@ class ListRestorableInstancesDetailsRequest:
     def source_backup_schema(self, source_backup_schema):
         r"""Sets the source_backup_schema of this ListRestorableInstancesDetailsRequest.
 
-        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE  **默认取值**: INSTANCE
 
         :param source_backup_schema: The source_backup_schema of this ListRestorableInstancesDetailsRequest.
         :type source_backup_schema: str

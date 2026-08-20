@@ -31,11 +31,11 @@ class ListParameterGroupTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
+        :param x_language: **参数解释**: 指定接口返回信息的语言类型。 **约束限制**: 不涉及。 **取值范围**: - zh-cn：中文 - en-us：英文  **默认取值**: en-us
         :type x_language: str
-        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :param offset: **参数解释**: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。例如：该参数指定为0，limit指定为10，则只展示第1~10条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2147483647] **默认取值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。
         :type offset: int
-        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :param limit: **参数解释**: 查询记录数。例如该参数设定为10，则查询结果最多只显示10条记录。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认取值**: 默认为100。
         :type limit: int
         """
         
@@ -57,7 +57,7 @@ class ListParameterGroupTemplatesRequest:
     def x_language(self):
         r"""Gets the x_language of this ListParameterGroupTemplatesRequest.
 
-        语言
+        **参数解释**: 指定接口返回信息的语言类型。 **约束限制**: 不涉及。 **取值范围**: - zh-cn：中文 - en-us：英文  **默认取值**: en-us
 
         :return: The x_language of this ListParameterGroupTemplatesRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ListParameterGroupTemplatesRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ListParameterGroupTemplatesRequest.
 
-        语言
+        **参数解释**: 指定接口返回信息的语言类型。 **约束限制**: 不涉及。 **取值范围**: - zh-cn：中文 - en-us：英文  **默认取值**: en-us
 
         :param x_language: The x_language of this ListParameterGroupTemplatesRequest.
         :type x_language: str
@@ -79,7 +79,7 @@ class ListParameterGroupTemplatesRequest:
     def offset(self):
         r"""Gets the offset of this ListParameterGroupTemplatesRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释**: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。例如：该参数指定为0，limit指定为10，则只展示第1~10条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2147483647] **默认取值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :return: The offset of this ListParameterGroupTemplatesRequest.
         :rtype: int
@@ -90,7 +90,7 @@ class ListParameterGroupTemplatesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListParameterGroupTemplatesRequest.
 
-        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        **参数解释**: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。例如：该参数指定为0，limit指定为10，则只展示第1~10条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2147483647] **默认取值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :param offset: The offset of this ListParameterGroupTemplatesRequest.
         :type offset: int
@@ -101,7 +101,7 @@ class ListParameterGroupTemplatesRequest:
     def limit(self):
         r"""Gets the limit of this ListParameterGroupTemplatesRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        **参数解释**: 查询记录数。例如该参数设定为10，则查询结果最多只显示10条记录。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认取值**: 默认为100。
 
         :return: The limit of this ListParameterGroupTemplatesRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListParameterGroupTemplatesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListParameterGroupTemplatesRequest.
 
-        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        **参数解释**: 查询记录数。例如该参数设定为10，则查询结果最多只显示10条记录。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认取值**: 默认为100。
 
         :param limit: The limit of this ListParameterGroupTemplatesRequest.
         :type limit: int

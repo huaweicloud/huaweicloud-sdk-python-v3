@@ -41,21 +41,21 @@ class ListCdnDomainTopIpsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        :param start_time: **参数解释：** 查询起始时间戳 **约束限制：** 需与结束时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - 若查询1小时时间粒度（即interval为3600）数据，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - 若查询1天时间粒度（即interval为86400）数据，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00) **默认取值：** 不涉及
         :type start_time: int
-        :param end_time: 查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        :param end_time: **参数解释：** 查询结束时间戳 **约束限制：** 需与起始时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，end_time设置为整5分钟时刻点，如：1631240100000）对应2021-09-10 10:15:00） - 若查询1小时时间粒度（即interval为3600）数据，end_time设置为整小时时刻点，如：1631239200000（对应2021-09-10 10:00:00） - 若查询1天时间粒度（即interval为86400）数据，end_time设置为东8区零点时刻点，如：1631203200000（对应2021-09-10 00:00:00） **默认取值：** 不涉及
         :type end_time: int
-        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        :param domain_name: **参数解释：** 域名列表 &gt; 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
         :type domain_name: str
-        :param group_by: 数据分组方式，可选domain，默认不分组
+        :param group_by: **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** domain：按域名分组 **默认取值：** 默认不分组
         :type group_by: str
-        :param stat_type: -  参数类型支持：flux(流量),req_num(请求数)
+        :param stat_type: **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
         :type stat_type: str
-        :param service_area: 服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
         :type service_area: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
         :type enterprise_project_id: str
-        :param include_ratio: 是否包含百分比数据，默认false
+        :param include_ratio: **参数解释：** 是否包含百分比数据 **约束限制：** 不涉及 **取值范围：** - true：包含百分比数据 - false：不包含百分比数据 **默认取值：** false：不包含百分比数据
         :type include_ratio: bool
         """
         
@@ -88,7 +88,7 @@ class ListCdnDomainTopIpsRequest:
     def start_time(self):
         r"""Gets the start_time of this ListCdnDomainTopIpsRequest.
 
-        查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        **参数解释：** 查询起始时间戳 **约束限制：** 需与结束时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - 若查询1小时时间粒度（即interval为3600）数据，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - 若查询1天时间粒度（即interval为86400）数据，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00) **默认取值：** 不涉及
 
         :return: The start_time of this ListCdnDomainTopIpsRequest.
         :rtype: int
@@ -99,7 +99,7 @@ class ListCdnDomainTopIpsRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListCdnDomainTopIpsRequest.
 
-        查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        **参数解释：** 查询起始时间戳 **约束限制：** 需与结束时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - 若查询1小时时间粒度（即interval为3600）数据，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - 若查询1天时间粒度（即interval为86400）数据，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00) **默认取值：** 不涉及
 
         :param start_time: The start_time of this ListCdnDomainTopIpsRequest.
         :type start_time: int
@@ -110,7 +110,7 @@ class ListCdnDomainTopIpsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListCdnDomainTopIpsRequest.
 
-        查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        **参数解释：** 查询结束时间戳 **约束限制：** 需与起始时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，end_time设置为整5分钟时刻点，如：1631240100000）对应2021-09-10 10:15:00） - 若查询1小时时间粒度（即interval为3600）数据，end_time设置为整小时时刻点，如：1631239200000（对应2021-09-10 10:00:00） - 若查询1天时间粒度（即interval为86400）数据，end_time设置为东8区零点时刻点，如：1631203200000（对应2021-09-10 00:00:00） **默认取值：** 不涉及
 
         :return: The end_time of this ListCdnDomainTopIpsRequest.
         :rtype: int
@@ -121,7 +121,7 @@ class ListCdnDomainTopIpsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListCdnDomainTopIpsRequest.
 
-        查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        **参数解释：** 查询结束时间戳 **约束限制：** 需与起始时间戳同时指定，左闭右开 **取值范围：** - 若查询5分钟时间粒度（即interval为300）数据，end_time设置为整5分钟时刻点，如：1631240100000）对应2021-09-10 10:15:00） - 若查询1小时时间粒度（即interval为3600）数据，end_time设置为整小时时刻点，如：1631239200000（对应2021-09-10 10:00:00） - 若查询1天时间粒度（即interval为86400）数据，end_time设置为东8区零点时刻点，如：1631203200000（对应2021-09-10 00:00:00） **默认取值：** 不涉及
 
         :param end_time: The end_time of this ListCdnDomainTopIpsRequest.
         :type end_time: int
@@ -132,7 +132,7 @@ class ListCdnDomainTopIpsRequest:
     def domain_name(self):
         r"""Gets the domain_name of this ListCdnDomainTopIpsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
 
         :return: The domain_name of this ListCdnDomainTopIpsRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListCdnDomainTopIpsRequest:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ListCdnDomainTopIpsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this ListCdnDomainTopIpsRequest.
         :type domain_name: str
@@ -154,7 +154,7 @@ class ListCdnDomainTopIpsRequest:
     def group_by(self):
         r"""Gets the group_by of this ListCdnDomainTopIpsRequest.
 
-        数据分组方式，可选domain，默认不分组
+        **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** domain：按域名分组 **默认取值：** 默认不分组
 
         :return: The group_by of this ListCdnDomainTopIpsRequest.
         :rtype: str
@@ -165,7 +165,7 @@ class ListCdnDomainTopIpsRequest:
     def group_by(self, group_by):
         r"""Sets the group_by of this ListCdnDomainTopIpsRequest.
 
-        数据分组方式，可选domain，默认不分组
+        **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** domain：按域名分组 **默认取值：** 默认不分组
 
         :param group_by: The group_by of this ListCdnDomainTopIpsRequest.
         :type group_by: str
@@ -176,7 +176,7 @@ class ListCdnDomainTopIpsRequest:
     def stat_type(self):
         r"""Gets the stat_type of this ListCdnDomainTopIpsRequest.
 
-        -  参数类型支持：flux(流量),req_num(请求数)
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
 
         :return: The stat_type of this ListCdnDomainTopIpsRequest.
         :rtype: str
@@ -187,7 +187,7 @@ class ListCdnDomainTopIpsRequest:
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ListCdnDomainTopIpsRequest.
 
-        -  参数类型支持：flux(流量),req_num(请求数)
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
 
         :param stat_type: The stat_type of this ListCdnDomainTopIpsRequest.
         :type stat_type: str
@@ -198,7 +198,7 @@ class ListCdnDomainTopIpsRequest:
     def service_area(self):
         r"""Gets the service_area of this ListCdnDomainTopIpsRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
 
         :return: The service_area of this ListCdnDomainTopIpsRequest.
         :rtype: str
@@ -209,7 +209,7 @@ class ListCdnDomainTopIpsRequest:
     def service_area(self, service_area):
         r"""Sets the service_area of this ListCdnDomainTopIpsRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为mainland_china
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 **默认取值：** mainland_china：中国大陆
 
         :param service_area: The service_area of this ListCdnDomainTopIpsRequest.
         :type service_area: str
@@ -220,7 +220,7 @@ class ListCdnDomainTopIpsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListCdnDomainTopIpsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :return: The enterprise_project_id of this ListCdnDomainTopIpsRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ListCdnDomainTopIpsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListCdnDomainTopIpsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ListCdnDomainTopIpsRequest.
         :type enterprise_project_id: str
@@ -242,7 +242,7 @@ class ListCdnDomainTopIpsRequest:
     def include_ratio(self):
         r"""Gets the include_ratio of this ListCdnDomainTopIpsRequest.
 
-        是否包含百分比数据，默认false
+        **参数解释：** 是否包含百分比数据 **约束限制：** 不涉及 **取值范围：** - true：包含百分比数据 - false：不包含百分比数据 **默认取值：** false：不包含百分比数据
 
         :return: The include_ratio of this ListCdnDomainTopIpsRequest.
         :rtype: bool
@@ -253,7 +253,7 @@ class ListCdnDomainTopIpsRequest:
     def include_ratio(self, include_ratio):
         r"""Sets the include_ratio of this ListCdnDomainTopIpsRequest.
 
-        是否包含百分比数据，默认false
+        **参数解释：** 是否包含百分比数据 **约束限制：** 不涉及 **取值范围：** - true：包含百分比数据 - false：不包含百分比数据 **默认取值：** false：不包含百分比数据
 
         :param include_ratio: The include_ratio of this ListCdnDomainTopIpsRequest.
         :type include_ratio: bool

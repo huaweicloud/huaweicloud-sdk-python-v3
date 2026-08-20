@@ -35,7 +35,7 @@ class ShowQueueDetailsRequest:
         :type instance_id: str
         :param vhost: **参数解释**：  Vhost名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vhost: str
-        :param queue: **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
+        :param queue: **参数解释**： Queue名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type queue: str
         """
         
@@ -98,7 +98,7 @@ class ShowQueueDetailsRequest:
     def queue(self):
         r"""Gets the queue of this ShowQueueDetailsRequest.
 
-        **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
+        **参数解释**： Queue名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The queue of this ShowQueueDetailsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ShowQueueDetailsRequest:
     def queue(self, queue):
         r"""Sets the queue of this ShowQueueDetailsRequest.
 
-        **参数解释**：  分页查询偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 0。
+        **参数解释**： Queue名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param queue: The queue of this ShowQueueDetailsRequest.
         :type queue: str

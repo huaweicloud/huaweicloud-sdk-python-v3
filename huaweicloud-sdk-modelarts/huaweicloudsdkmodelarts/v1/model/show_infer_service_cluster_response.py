@@ -25,7 +25,9 @@ class ShowInferServiceClusterResponse(SdkResponse):
         'project_id': 'str',
         'create_at': 'int',
         'update_at': 'int',
-        'flavors': 'list[InferFlavor]'
+        'flavors': 'list[NotebookFlavor]',
+        'pool_type': 'str',
+        'physical_pool_id': 'str'
     }
 
     attribute_map = {
@@ -38,10 +40,12 @@ class ShowInferServiceClusterResponse(SdkResponse):
         'project_id': 'project_id',
         'create_at': 'create_at',
         'update_at': 'update_at',
-        'flavors': 'flavors'
+        'flavors': 'flavors',
+        'pool_type': 'pool_type',
+        'physical_pool_id': 'physical_pool_id'
     }
 
-    def __init__(self, workspace_id=None, logic_cluster_id=None, status=None, pool_id=None, type=None, resource_categories=None, project_id=None, create_at=None, update_at=None, flavors=None):
+    def __init__(self, workspace_id=None, logic_cluster_id=None, status=None, pool_id=None, type=None, resource_categories=None, project_id=None, create_at=None, update_at=None, flavors=None, pool_type=None, physical_pool_id=None):
         r"""ShowInferServiceClusterResponse
 
         The model defined in huaweicloud sdk
@@ -65,7 +69,11 @@ class ShowInferServiceClusterResponse(SdkResponse):
         :param update_at: **参数解释：** 资源池最后更新的时间，UTC毫秒。 **取值范围：** 不涉及。
         :type update_at: int
         :param flavors: **参数解释：** 当前专属池支持的规格。
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
+        :param pool_type: **参数解释：** 资源池类型。 **取值范围：** - LOGICAL ：逻辑池。 - PHYSICAL ：物理池。
+        :type pool_type: str
+        :param physical_pool_id: **参数解释：** 物理资源池ID，逻辑子池对应的父池ID。 **取值范围：** 不涉及。
+        :type physical_pool_id: str
         """
         
         super().__init__()
@@ -80,6 +88,8 @@ class ShowInferServiceClusterResponse(SdkResponse):
         self._create_at = None
         self._update_at = None
         self._flavors = None
+        self._pool_type = None
+        self._physical_pool_id = None
         self.discriminator = None
 
         if workspace_id is not None:
@@ -102,6 +112,10 @@ class ShowInferServiceClusterResponse(SdkResponse):
             self.update_at = update_at
         if flavors is not None:
             self.flavors = flavors
+        if pool_type is not None:
+            self.pool_type = pool_type
+        if physical_pool_id is not None:
+            self.physical_pool_id = physical_pool_id
 
     @property
     def workspace_id(self):
@@ -308,7 +322,7 @@ class ShowInferServiceClusterResponse(SdkResponse):
         **参数解释：** 当前专属池支持的规格。
 
         :return: The flavors of this ShowInferServiceClusterResponse.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
         """
         return self._flavors
 
@@ -319,9 +333,53 @@ class ShowInferServiceClusterResponse(SdkResponse):
         **参数解释：** 当前专属池支持的规格。
 
         :param flavors: The flavors of this ShowInferServiceClusterResponse.
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
         """
         self._flavors = flavors
+
+    @property
+    def pool_type(self):
+        r"""Gets the pool_type of this ShowInferServiceClusterResponse.
+
+        **参数解释：** 资源池类型。 **取值范围：** - LOGICAL ：逻辑池。 - PHYSICAL ：物理池。
+
+        :return: The pool_type of this ShowInferServiceClusterResponse.
+        :rtype: str
+        """
+        return self._pool_type
+
+    @pool_type.setter
+    def pool_type(self, pool_type):
+        r"""Sets the pool_type of this ShowInferServiceClusterResponse.
+
+        **参数解释：** 资源池类型。 **取值范围：** - LOGICAL ：逻辑池。 - PHYSICAL ：物理池。
+
+        :param pool_type: The pool_type of this ShowInferServiceClusterResponse.
+        :type pool_type: str
+        """
+        self._pool_type = pool_type
+
+    @property
+    def physical_pool_id(self):
+        r"""Gets the physical_pool_id of this ShowInferServiceClusterResponse.
+
+        **参数解释：** 物理资源池ID，逻辑子池对应的父池ID。 **取值范围：** 不涉及。
+
+        :return: The physical_pool_id of this ShowInferServiceClusterResponse.
+        :rtype: str
+        """
+        return self._physical_pool_id
+
+    @physical_pool_id.setter
+    def physical_pool_id(self, physical_pool_id):
+        r"""Sets the physical_pool_id of this ShowInferServiceClusterResponse.
+
+        **参数解释：** 物理资源池ID，逻辑子池对应的父池ID。 **取值范围：** 不涉及。
+
+        :param physical_pool_id: The physical_pool_id of this ShowInferServiceClusterResponse.
+        :type physical_pool_id: str
+        """
+        self._physical_pool_id = physical_pool_id
 
     def to_dict(self):
         import warnings

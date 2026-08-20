@@ -16,7 +16,7 @@ class ResetConsumeOffsetReq:
 
     openapi_types = {
         'topic': 'str',
-        'timestamp': 'str'
+        'timestamp': 'int'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ResetConsumeOffsetReq:
         :param topic: **参数解释**： 重置的主题。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
         :param timestamp: **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
-        :type timestamp: str
+        :type timestamp: int
         """
         
         
@@ -73,7 +73,7 @@ class ResetConsumeOffsetReq:
         **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The timestamp of this ResetConsumeOffsetReq.
-        :rtype: str
+        :rtype: int
         """
         return self._timestamp
 
@@ -84,7 +84,7 @@ class ResetConsumeOffsetReq:
         **参数解释**： 重置的时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param timestamp: The timestamp of this ResetConsumeOffsetReq.
-        :type timestamp: str
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

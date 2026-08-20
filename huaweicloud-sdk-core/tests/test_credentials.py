@@ -27,7 +27,8 @@ from urllib3.exceptions import NewConnectionError
 
 from huaweicloudsdkcore.auth import endpoint
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
-from huaweicloudsdkcore.auth.internal import IamHelper
+from huaweicloudsdkcore.auth.internal import IamHelper, _TIME_FORMAT
+from huaweicloudsdkcore.utils import time_utils
 from huaweicloudsdkcore.auth.provider import MetadataCredentialProvider, PodIdentityCredentialProvider
 from huaweicloudsdkcore.exceptions.exception_handler import DefaultExceptionHandler
 from huaweicloudsdkcore.exceptions.exceptions import SdkException, ServiceResponseException, ApiValueError
@@ -39,6 +40,14 @@ from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from tests.util.response_registry import OrderedRegistry
 
 TEST_TOKEN_FILE = os.path.join(os.path.abspath(os.path.dirname(__file__)), "data", "test_token.txt")
+
+_METADATA_TOKEN_URL = "http://169.254.169.254/meta-data/latest/api/token"
+_METADATA_SECURITY_KEY_URL = "http://169.254.169.254/openstack/latest/securitykey"
+_CREDENTIAL_BODY = ('{"credential": '
+                     '{"access": "ak","expires_at": "2020-01-08T03:50:07.574000Z",'
+                     '"secret": "sk","securitytoken": "st"}}')
+_EXPECTED_EXPIRE_AT = time_utils.get_timestamp_from_str(
+    "2020-01-08T03:50:07.574000Z", _TIME_FORMAT)
 
 
 @pytest.fixture
@@ -312,6 +321,115 @@ class TestMetadataCredentials:
         assert credentials.ak == "ak"
         assert credentials.sk == "sk"
         assert credentials.security_token == "st"
+
+    # ---- update_security_token_from_metadata tests ----
+
+    @responses.activate
+    def test_update_security_token_from_metadata_with_token(self):
+        """Normal flow: PUT obtains a token, GET carries X-Metadata-Token, credential assigned."""
+        responses.add(
+            method=responses.PUT,
+            url=_METADATA_TOKEN_URL,
+            match=[responses.matchers.header_matcher({"X-Metadata-Token-Ttl-Seconds": "21600"})],
+            body="token",
+        )
+        responses.add(
+            method=responses.GET,
+            url=_METADATA_SECURITY_KEY_URL,
+            match=[responses.matchers.header_matcher({"X-Metadata-Token": "token"})],
+            content_type="application/json",
+            body=_CREDENTIAL_BODY,
+        )
+
+        credentials = BasicCredentials()
+        assert credentials.metadata_accessor is None
+
+        credentials.update_security_token_from_metadata()
+
+        assert credentials.ak == "ak"
+        assert credentials.sk == "sk"
+        assert credentials.security_token == "st"
+        assert credentials._expire_at == _EXPECTED_EXPIRE_AT
+        assert credentials.metadata_accessor is not None
+
+    @responses.activate
+    def test_update_security_token_from_metadata_reuse_accessor(self):
+        """Lazy-load cache reuse: two consecutive updates reuse the same MetadataAccessor,
+        PUT called once, GET called twice."""
+        responses.add(
+            method=responses.PUT,
+            url=_METADATA_TOKEN_URL,
+            match=[responses.matchers.header_matcher({"X-Metadata-Token-Ttl-Seconds": "21600"})],
+            body="token",
+        )
+        responses.add(
+            method=responses.GET,
+            url=_METADATA_SECURITY_KEY_URL,
+            match=[responses.matchers.header_matcher({"X-Metadata-Token": "token"})],
+            content_type="application/json",
+            body=_CREDENTIAL_BODY,
+        )
+
+        credentials = BasicCredentials()
+        assert credentials.metadata_accessor is None
+
+        credentials.update_security_token_from_metadata()
+        accessor_after_first = credentials.metadata_accessor
+
+        credentials.update_security_token_from_metadata()
+        accessor_after_second = credentials.metadata_accessor
+
+        assert accessor_after_first is accessor_after_second
+        put_calls = [c for c in responses.calls if c.request.method == "PUT"]
+        get_calls = [c for c in responses.calls if c.request.method == "GET"]
+        assert len(put_calls) == 1
+        assert len(get_calls) == 2
+        assert credentials.ak == "ak"
+        assert credentials.security_token == "st"
+
+    @responses.activate
+    def test_update_then_process_sts_not_refresh(self):
+        """After update, process_sts does not refresh and does not pollute sts_accessor."""
+        responses.add(
+            method=responses.PUT,
+            url=_METADATA_TOKEN_URL,
+            status=405,
+        )
+        responses.add(
+            method=responses.GET,
+            url=_METADATA_SECURITY_KEY_URL,
+            content_type="application/json",
+            body=_CREDENTIAL_BODY,
+        )
+
+        credentials = BasicCredentials()
+        credentials.update_security_token_from_metadata()
+        assert credentials.ak == "ak"
+
+        credentials.ak = "custom-ak"
+        credentials.sk = "custom-sk"
+        credentials.security_token = "custom-token"
+
+        credentials.process_sts(None)
+
+        assert credentials.sts_accessor is None
+        assert credentials.ak == "custom-ak"
+        assert credentials.sk == "custom-sk"
+        assert credentials.security_token == "custom-token"
+
+    def test_update_security_token_from_metadata_overridable(self):
+        """Subclass can override update_security_token_from_metadata."""
+        class CustomCredentials(BasicCredentials):
+            def update_security_token_from_metadata(self):
+                self.ak = "cust-ak"
+                self.sk = "cust-sk"
+                self.security_token = "cust-token"
+
+        credentials = CustomCredentials()
+        credentials.update_security_token_from_metadata()
+        assert credentials.ak == "cust-ak"
+        assert credentials.sk == "cust-sk"
+        assert credentials.security_token == "cust-token"
 
 
 def test_new_basic_credentials():

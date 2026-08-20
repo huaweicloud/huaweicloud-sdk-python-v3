@@ -58,37 +58,37 @@ class ShowSpecialUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 1表示用户可以查询总请求时长枚举，0表示用户不可以查询总请求时长枚举
+        :param status: **参数解释：** 租户是否可以查询总请求时长 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询总请求时长 - 0：表示租户不可以查询总请求时长 **默认取值：** 不涉及
         :type status: int
-        :param metric: 进制
+        :param metric: **参数解释：** 进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type metric: int
-        :param flux_metric: 流量进制
+        :param flux_metric: **参数解释：** 流量进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type flux_metric: int
-        :param cy: 1表示用户可以，0表示用户不可以。是否是开放国家及地区界面用户
+        :param cy: **参数解释：** 租户是否是开放国家及地区界面 **约束限制：** 不涉及 **取值范围：** - 1：表示租户开放国家及地区界面 - 0：表示租户不用开放国家及地区界面 **默认取值：** 不涉及
         :type cy: int
-        :param h6: 1表示用户可以查询ipv6流量,https流量，0表示用户不可以
+        :param h6: **参数解释：** 租户是否可以查询ipv6流量、https流量 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询ipv6流量、https流量 - 0：表示租户不可以查询ipv6流量、https流量 **默认取值：** 不涉及
         :type h6: int
-        :param c: 1表示用户可以查询具体的状态码详情，0表示用户不可以
+        :param c: **参数解释：** 租户是否可以查询具体的状态码详情 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询具体的状态码详情 - 0：表示租户不可以查询具体的状态码详情 **默认取值：** 不涉及
         :type c: int
-        :param sc: 1表示用户查询 top url 时要返回http状态码，0表示用户不返回
+        :param sc: **参数解释：** 查询查询top url时是否返回http状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户查询top url时返回http状态码 - 0：表示租户查询top url时不返回http状态码 **默认取值：** 不涉及
         :type sc: int
-        :param bhc: 1表示该用户可以查询回源状态码，0表示不可以
+        :param bhc: **参数解释：** 租户是否可以查询回源状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询回源状态码 - 0：表示租户不可以查询回源状态码 **默认取值：** 不涉及
         :type bhc: int
-        :param pi: 1表示该用户可以查询protocol和IPVersion，0表示用户不可以
+        :param pi: **参数解释：** 租户是否可以查询protocol和IPVersion **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询protocol和IPVersion - 0：表示租户不可以查询protocol和IPVersion **默认取值：** 不涉及
         :type pi: int
-        :param exp5: 1表示该用户可以查询租户界面5分钟粒度数据导出白名单，0表示用户不可以
+        :param exp5: **参数解释：** 租户是否可以导出5分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以导出5分钟粒度数据 - 0：表示租户不可以导出5分钟粒度数据 **默认取值：** 不涉及
         :type exp5: int
-        :param m1: 1表示该用户可以查询1分钟粒度统计数据，0表示用户不可以
+        :param m1: **参数解释：** 租户是否可以查询1分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1分钟粒度数据 - 0：表示租户不可以查询1分钟粒度数据 **默认取值：** 不涉及
         :type m1: int
-        :param is_month_m5: 1表示该用户可以查询1个月5分钟粒度统计数据，0表示用户不可以
+        :param is_month_m5: **参数解释：** 租户是否可以查询1个月5分钟粒度统计数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1个月5分钟粒度统计数据 - 0：表示租户不可以查询1个月5分钟粒度统计数据 **默认取值：** 不涉及
         :type is_month_m5: int
-        :param exp_agy: 1表示该用户可以在租户界面指定下载链接可用范围，0表示用户不可以
+        :param exp_agy: **参数解释：** 租户是否可以在租户界面指定下载链接可用范围 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以在租户界面指定下载链接可用范围 - 0：表示租户不可以在租户界面指定下载链接可用范围 **默认取值：** 不涉及
         :type exp_agy: int
-        :param ces_report_site: 1表示该用户可以是否上报到国际站CES，0表示用户不可以
+        :param ces_report_site: **参数解释：** 租户是否可以上报到国际站CES **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以上报到国际站CES - 0：表示租户不可以上报到国际站CES **默认取值：** 不涉及
         :type ces_report_site: int
-        :param float: 1表示该用户按上浮系数展示数据，0表示用户不可以
+        :param float: **参数解释：** 租户是否按上浮系数展示数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户按上浮系数展示数据 - 0：表示租户不按上浮系数展示数据 **默认取值：** 不涉及
         :type float: int
-        :param is_show_up_bw: 1表示该用户允许查询入网带宽，0表示用户不可以
+        :param is_show_up_bw: **参数解释：** 租户是否允许查询入网带宽 **约束限制：** 不涉及 **取值范围：** - 1：表示租户允许查询入网带宽 - 0：表示租户不可以查询入网带宽 **默认取值：** 不涉及
         :type is_show_up_bw: int
         """
         
@@ -149,7 +149,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowSpecialUserResponse.
 
-        1表示用户可以查询总请求时长枚举，0表示用户不可以查询总请求时长枚举
+        **参数解释：** 租户是否可以查询总请求时长 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询总请求时长 - 0：表示租户不可以查询总请求时长 **默认取值：** 不涉及
 
         :return: The status of this ShowSpecialUserResponse.
         :rtype: int
@@ -160,7 +160,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowSpecialUserResponse.
 
-        1表示用户可以查询总请求时长枚举，0表示用户不可以查询总请求时长枚举
+        **参数解释：** 租户是否可以查询总请求时长 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询总请求时长 - 0：表示租户不可以查询总请求时长 **默认取值：** 不涉及
 
         :param status: The status of this ShowSpecialUserResponse.
         :type status: int
@@ -171,7 +171,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def metric(self):
         r"""Gets the metric of this ShowSpecialUserResponse.
 
-        进制
+        **参数解释：** 进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The metric of this ShowSpecialUserResponse.
         :rtype: int
@@ -182,7 +182,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def metric(self, metric):
         r"""Sets the metric of this ShowSpecialUserResponse.
 
-        进制
+        **参数解释：** 进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param metric: The metric of this ShowSpecialUserResponse.
         :type metric: int
@@ -193,7 +193,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def flux_metric(self):
         r"""Gets the flux_metric of this ShowSpecialUserResponse.
 
-        流量进制
+        **参数解释：** 流量进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The flux_metric of this ShowSpecialUserResponse.
         :rtype: int
@@ -204,7 +204,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def flux_metric(self, flux_metric):
         r"""Sets the flux_metric of this ShowSpecialUserResponse.
 
-        流量进制
+        **参数解释：** 流量进制 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param flux_metric: The flux_metric of this ShowSpecialUserResponse.
         :type flux_metric: int
@@ -215,7 +215,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def cy(self):
         r"""Gets the cy of this ShowSpecialUserResponse.
 
-        1表示用户可以，0表示用户不可以。是否是开放国家及地区界面用户
+        **参数解释：** 租户是否是开放国家及地区界面 **约束限制：** 不涉及 **取值范围：** - 1：表示租户开放国家及地区界面 - 0：表示租户不用开放国家及地区界面 **默认取值：** 不涉及
 
         :return: The cy of this ShowSpecialUserResponse.
         :rtype: int
@@ -226,7 +226,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def cy(self, cy):
         r"""Sets the cy of this ShowSpecialUserResponse.
 
-        1表示用户可以，0表示用户不可以。是否是开放国家及地区界面用户
+        **参数解释：** 租户是否是开放国家及地区界面 **约束限制：** 不涉及 **取值范围：** - 1：表示租户开放国家及地区界面 - 0：表示租户不用开放国家及地区界面 **默认取值：** 不涉及
 
         :param cy: The cy of this ShowSpecialUserResponse.
         :type cy: int
@@ -237,7 +237,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def h6(self):
         r"""Gets the h6 of this ShowSpecialUserResponse.
 
-        1表示用户可以查询ipv6流量,https流量，0表示用户不可以
+        **参数解释：** 租户是否可以查询ipv6流量、https流量 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询ipv6流量、https流量 - 0：表示租户不可以查询ipv6流量、https流量 **默认取值：** 不涉及
 
         :return: The h6 of this ShowSpecialUserResponse.
         :rtype: int
@@ -248,7 +248,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def h6(self, h6):
         r"""Sets the h6 of this ShowSpecialUserResponse.
 
-        1表示用户可以查询ipv6流量,https流量，0表示用户不可以
+        **参数解释：** 租户是否可以查询ipv6流量、https流量 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询ipv6流量、https流量 - 0：表示租户不可以查询ipv6流量、https流量 **默认取值：** 不涉及
 
         :param h6: The h6 of this ShowSpecialUserResponse.
         :type h6: int
@@ -259,7 +259,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def c(self):
         r"""Gets the c of this ShowSpecialUserResponse.
 
-        1表示用户可以查询具体的状态码详情，0表示用户不可以
+        **参数解释：** 租户是否可以查询具体的状态码详情 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询具体的状态码详情 - 0：表示租户不可以查询具体的状态码详情 **默认取值：** 不涉及
 
         :return: The c of this ShowSpecialUserResponse.
         :rtype: int
@@ -270,7 +270,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def c(self, c):
         r"""Sets the c of this ShowSpecialUserResponse.
 
-        1表示用户可以查询具体的状态码详情，0表示用户不可以
+        **参数解释：** 租户是否可以查询具体的状态码详情 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询具体的状态码详情 - 0：表示租户不可以查询具体的状态码详情 **默认取值：** 不涉及
 
         :param c: The c of this ShowSpecialUserResponse.
         :type c: int
@@ -281,7 +281,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def sc(self):
         r"""Gets the sc of this ShowSpecialUserResponse.
 
-        1表示用户查询 top url 时要返回http状态码，0表示用户不返回
+        **参数解释：** 查询查询top url时是否返回http状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户查询top url时返回http状态码 - 0：表示租户查询top url时不返回http状态码 **默认取值：** 不涉及
 
         :return: The sc of this ShowSpecialUserResponse.
         :rtype: int
@@ -292,7 +292,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def sc(self, sc):
         r"""Sets the sc of this ShowSpecialUserResponse.
 
-        1表示用户查询 top url 时要返回http状态码，0表示用户不返回
+        **参数解释：** 查询查询top url时是否返回http状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户查询top url时返回http状态码 - 0：表示租户查询top url时不返回http状态码 **默认取值：** 不涉及
 
         :param sc: The sc of this ShowSpecialUserResponse.
         :type sc: int
@@ -303,7 +303,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def bhc(self):
         r"""Gets the bhc of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询回源状态码，0表示不可以
+        **参数解释：** 租户是否可以查询回源状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询回源状态码 - 0：表示租户不可以查询回源状态码 **默认取值：** 不涉及
 
         :return: The bhc of this ShowSpecialUserResponse.
         :rtype: int
@@ -314,7 +314,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def bhc(self, bhc):
         r"""Sets the bhc of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询回源状态码，0表示不可以
+        **参数解释：** 租户是否可以查询回源状态码 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询回源状态码 - 0：表示租户不可以查询回源状态码 **默认取值：** 不涉及
 
         :param bhc: The bhc of this ShowSpecialUserResponse.
         :type bhc: int
@@ -325,7 +325,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def pi(self):
         r"""Gets the pi of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询protocol和IPVersion，0表示用户不可以
+        **参数解释：** 租户是否可以查询protocol和IPVersion **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询protocol和IPVersion - 0：表示租户不可以查询protocol和IPVersion **默认取值：** 不涉及
 
         :return: The pi of this ShowSpecialUserResponse.
         :rtype: int
@@ -336,7 +336,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def pi(self, pi):
         r"""Sets the pi of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询protocol和IPVersion，0表示用户不可以
+        **参数解释：** 租户是否可以查询protocol和IPVersion **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询protocol和IPVersion - 0：表示租户不可以查询protocol和IPVersion **默认取值：** 不涉及
 
         :param pi: The pi of this ShowSpecialUserResponse.
         :type pi: int
@@ -347,7 +347,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def exp5(self):
         r"""Gets the exp5 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询租户界面5分钟粒度数据导出白名单，0表示用户不可以
+        **参数解释：** 租户是否可以导出5分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以导出5分钟粒度数据 - 0：表示租户不可以导出5分钟粒度数据 **默认取值：** 不涉及
 
         :return: The exp5 of this ShowSpecialUserResponse.
         :rtype: int
@@ -358,7 +358,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def exp5(self, exp5):
         r"""Sets the exp5 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询租户界面5分钟粒度数据导出白名单，0表示用户不可以
+        **参数解释：** 租户是否可以导出5分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以导出5分钟粒度数据 - 0：表示租户不可以导出5分钟粒度数据 **默认取值：** 不涉及
 
         :param exp5: The exp5 of this ShowSpecialUserResponse.
         :type exp5: int
@@ -369,7 +369,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def m1(self):
         r"""Gets the m1 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询1分钟粒度统计数据，0表示用户不可以
+        **参数解释：** 租户是否可以查询1分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1分钟粒度数据 - 0：表示租户不可以查询1分钟粒度数据 **默认取值：** 不涉及
 
         :return: The m1 of this ShowSpecialUserResponse.
         :rtype: int
@@ -380,7 +380,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def m1(self, m1):
         r"""Sets the m1 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询1分钟粒度统计数据，0表示用户不可以
+        **参数解释：** 租户是否可以查询1分钟粒度数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1分钟粒度数据 - 0：表示租户不可以查询1分钟粒度数据 **默认取值：** 不涉及
 
         :param m1: The m1 of this ShowSpecialUserResponse.
         :type m1: int
@@ -391,7 +391,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def is_month_m5(self):
         r"""Gets the is_month_m5 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询1个月5分钟粒度统计数据，0表示用户不可以
+        **参数解释：** 租户是否可以查询1个月5分钟粒度统计数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1个月5分钟粒度统计数据 - 0：表示租户不可以查询1个月5分钟粒度统计数据 **默认取值：** 不涉及
 
         :return: The is_month_m5 of this ShowSpecialUserResponse.
         :rtype: int
@@ -402,7 +402,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def is_month_m5(self, is_month_m5):
         r"""Sets the is_month_m5 of this ShowSpecialUserResponse.
 
-        1表示该用户可以查询1个月5分钟粒度统计数据，0表示用户不可以
+        **参数解释：** 租户是否可以查询1个月5分钟粒度统计数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以查询1个月5分钟粒度统计数据 - 0：表示租户不可以查询1个月5分钟粒度统计数据 **默认取值：** 不涉及
 
         :param is_month_m5: The is_month_m5 of this ShowSpecialUserResponse.
         :type is_month_m5: int
@@ -413,7 +413,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def exp_agy(self):
         r"""Gets the exp_agy of this ShowSpecialUserResponse.
 
-        1表示该用户可以在租户界面指定下载链接可用范围，0表示用户不可以
+        **参数解释：** 租户是否可以在租户界面指定下载链接可用范围 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以在租户界面指定下载链接可用范围 - 0：表示租户不可以在租户界面指定下载链接可用范围 **默认取值：** 不涉及
 
         :return: The exp_agy of this ShowSpecialUserResponse.
         :rtype: int
@@ -424,7 +424,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def exp_agy(self, exp_agy):
         r"""Sets the exp_agy of this ShowSpecialUserResponse.
 
-        1表示该用户可以在租户界面指定下载链接可用范围，0表示用户不可以
+        **参数解释：** 租户是否可以在租户界面指定下载链接可用范围 **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以在租户界面指定下载链接可用范围 - 0：表示租户不可以在租户界面指定下载链接可用范围 **默认取值：** 不涉及
 
         :param exp_agy: The exp_agy of this ShowSpecialUserResponse.
         :type exp_agy: int
@@ -435,7 +435,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def ces_report_site(self):
         r"""Gets the ces_report_site of this ShowSpecialUserResponse.
 
-        1表示该用户可以是否上报到国际站CES，0表示用户不可以
+        **参数解释：** 租户是否可以上报到国际站CES **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以上报到国际站CES - 0：表示租户不可以上报到国际站CES **默认取值：** 不涉及
 
         :return: The ces_report_site of this ShowSpecialUserResponse.
         :rtype: int
@@ -446,7 +446,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def ces_report_site(self, ces_report_site):
         r"""Sets the ces_report_site of this ShowSpecialUserResponse.
 
-        1表示该用户可以是否上报到国际站CES，0表示用户不可以
+        **参数解释：** 租户是否可以上报到国际站CES **约束限制：** 不涉及 **取值范围：** - 1：表示租户可以上报到国际站CES - 0：表示租户不可以上报到国际站CES **默认取值：** 不涉及
 
         :param ces_report_site: The ces_report_site of this ShowSpecialUserResponse.
         :type ces_report_site: int
@@ -457,7 +457,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def float(self):
         r"""Gets the float of this ShowSpecialUserResponse.
 
-        1表示该用户按上浮系数展示数据，0表示用户不可以
+        **参数解释：** 租户是否按上浮系数展示数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户按上浮系数展示数据 - 0：表示租户不按上浮系数展示数据 **默认取值：** 不涉及
 
         :return: The float of this ShowSpecialUserResponse.
         :rtype: int
@@ -468,7 +468,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def float(self, float):
         r"""Sets the float of this ShowSpecialUserResponse.
 
-        1表示该用户按上浮系数展示数据，0表示用户不可以
+        **参数解释：** 租户是否按上浮系数展示数据 **约束限制：** 不涉及 **取值范围：** - 1：表示租户按上浮系数展示数据 - 0：表示租户不按上浮系数展示数据 **默认取值：** 不涉及
 
         :param float: The float of this ShowSpecialUserResponse.
         :type float: int
@@ -479,7 +479,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def is_show_up_bw(self):
         r"""Gets the is_show_up_bw of this ShowSpecialUserResponse.
 
-        1表示该用户允许查询入网带宽，0表示用户不可以
+        **参数解释：** 租户是否允许查询入网带宽 **约束限制：** 不涉及 **取值范围：** - 1：表示租户允许查询入网带宽 - 0：表示租户不可以查询入网带宽 **默认取值：** 不涉及
 
         :return: The is_show_up_bw of this ShowSpecialUserResponse.
         :rtype: int
@@ -490,7 +490,7 @@ class ShowSpecialUserResponse(SdkResponse):
     def is_show_up_bw(self, is_show_up_bw):
         r"""Sets the is_show_up_bw of this ShowSpecialUserResponse.
 
-        1表示该用户允许查询入网带宽，0表示用户不可以
+        **参数解释：** 租户是否允许查询入网带宽 **约束限制：** 不涉及 **取值范围：** - 1：表示租户允许查询入网带宽 - 0：表示租户不可以查询入网带宽 **默认取值：** 不涉及
 
         :param is_show_up_bw: The is_show_up_bw of this ShowSpecialUserResponse.
         :type is_show_up_bw: int

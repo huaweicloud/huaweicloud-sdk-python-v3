@@ -37,7 +37,7 @@ class DescribeGroupsRespGroup:
 
         The model defined in huaweicloud sdk
 
-        :param state: **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        :param state: **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
         :type state: str
         :param created_at: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type created_at: int
@@ -78,7 +78,7 @@ class DescribeGroupsRespGroup:
     def state(self):
         r"""Gets the state of this DescribeGroupsRespGroup.
 
-        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
 
         :return: The state of this DescribeGroupsRespGroup.
         :rtype: str
@@ -89,7 +89,7 @@ class DescribeGroupsRespGroup:
     def state(self, state):
         r"""Sets the state of this DescribeGroupsRespGroup.
 
-        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
 
         :param state: The state of this DescribeGroupsRespGroup.
         :type state: str

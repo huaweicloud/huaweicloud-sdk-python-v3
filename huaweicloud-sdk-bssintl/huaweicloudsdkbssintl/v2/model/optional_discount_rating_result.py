@@ -51,7 +51,7 @@ class OptionalDiscountRatingResult:
         :type official_website_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         :param discount_amount: 可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
         :type discount_amount: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
-        :param measure_id: 价格度量单位标识。 1：元
+        :param measure_id: 价格度量单位标识。 1：美元
         :type measure_id: int
         :param discount_type: 折扣优惠类型。商务授权折扣：605(华为云BE场景下的合同商务折扣)、伙伴授予折扣：606(分销商BE场景下的合同商务折扣)、伙伴设置折扣：607(合作伙伴设置折扣-折扣率)
         :type discount_type: int
@@ -59,7 +59,7 @@ class OptionalDiscountRatingResult:
         :type discount_name: str
         :param best_offer: 是否为最优折扣。 0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算。
         :type best_offer: int
-        :param product_rating_results: 产品询价结果，具体参见表5。
+        :param product_rating_results: 产品询价结果，具体参见PeriodProductRatingResult。
         :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]
         """
         
@@ -187,7 +187,7 @@ class OptionalDiscountRatingResult:
     def measure_id(self):
         r"""Gets the measure_id of this OptionalDiscountRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :return: The measure_id of this OptionalDiscountRatingResult.
         :rtype: int
@@ -198,7 +198,7 @@ class OptionalDiscountRatingResult:
     def measure_id(self, measure_id):
         r"""Sets the measure_id of this OptionalDiscountRatingResult.
 
-        价格度量单位标识。 1：元
+        价格度量单位标识。 1：美元
 
         :param measure_id: The measure_id of this OptionalDiscountRatingResult.
         :type measure_id: int
@@ -275,7 +275,7 @@ class OptionalDiscountRatingResult:
     def product_rating_results(self):
         r"""Gets the product_rating_results of this OptionalDiscountRatingResult.
 
-        产品询价结果，具体参见表5。
+        产品询价结果，具体参见PeriodProductRatingResult。
 
         :return: The product_rating_results of this OptionalDiscountRatingResult.
         :rtype: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]
@@ -286,7 +286,7 @@ class OptionalDiscountRatingResult:
     def product_rating_results(self, product_rating_results):
         r"""Sets the product_rating_results of this OptionalDiscountRatingResult.
 
-        产品询价结果，具体参见表5。
+        产品询价结果，具体参见PeriodProductRatingResult。
 
         :param product_rating_results: The product_rating_results of this OptionalDiscountRatingResult.
         :type product_rating_results: list[:class:`huaweicloudsdkbssintl.v2.PeriodProductRatingResult`]

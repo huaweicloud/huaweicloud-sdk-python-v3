@@ -16,7 +16,7 @@ class ListScheduledTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_count': 'str',
+        'job_count': 'int',
         'jobs': 'list[ScheduledTaskEntity]'
     }
 
@@ -31,7 +31,7 @@ class ListScheduledTasksResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param job_count: **参数解释**： 任务总数。 **取值范围**： 不涉及。
-        :type job_count: str
+        :type job_count: int
         :param jobs: **参数解释**： 任务列表。 **取值范围**： 不涉及。
         :type jobs: list[:class:`huaweicloudsdkrabbitmq.v2.ScheduledTaskEntity`]
         """
@@ -54,7 +54,7 @@ class ListScheduledTasksResponse(SdkResponse):
         **参数解释**： 任务总数。 **取值范围**： 不涉及。
 
         :return: The job_count of this ListScheduledTasksResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._job_count
 
@@ -65,7 +65,7 @@ class ListScheduledTasksResponse(SdkResponse):
         **参数解释**： 任务总数。 **取值范围**： 不涉及。
 
         :param job_count: The job_count of this ListScheduledTasksResponse.
-        :type job_count: str
+        :type job_count: int
         """
         self._job_count = job_count
 

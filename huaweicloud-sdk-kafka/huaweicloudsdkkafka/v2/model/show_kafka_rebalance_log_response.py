@@ -22,42 +22,50 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
         'log_stream_id': 'str',
         'log_group_id': 'str',
         'dashboard_id': 'str',
-        'create_at': 'str',
-        'update_at': 'str'
+        'log_type': 'str',
+        'log_file_name': 'str',
+        'created_at': 'int',
+        'updated_at': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'instance_id': 'instanceId',
+        'instance_id': 'instance_id',
         'status': 'status',
-        'log_stream_id': 'logStreamId',
-        'log_group_id': 'logGroupId',
-        'dashboard_id': 'dashboardId',
-        'create_at': 'createAt',
-        'update_at': 'updateAt'
+        'log_stream_id': 'log_stream_id',
+        'log_group_id': 'log_group_id',
+        'dashboard_id': 'dashboard_id',
+        'log_type': 'log_type',
+        'log_file_name': 'log_file_name',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, instance_id=None, status=None, log_stream_id=None, log_group_id=None, dashboard_id=None, create_at=None, update_at=None):
+    def __init__(self, id=None, instance_id=None, status=None, log_stream_id=None, log_group_id=None, dashboard_id=None, log_type=None, log_file_name=None, created_at=None, updated_at=None):
         r"""ShowKafkaRebalanceLogResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 日志ID。
+        :param id: **参数解释**： 日志ID。 **取值范围**： 不涉及。
         :type id: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param status: 状态。
+        :param status: **参数解释**： 重平衡日志状态。 **取值范围**： - OPEN：已开启重平衡日志。 - CLOSE：已关闭重平衡日志。 - OPENING：重平衡日志开启中。 - CLOSING：重平衡日志关闭中。
         :type status: str
-        :param log_stream_id: 日志流ID。
+        :param log_stream_id: **参数解释**： 日志流ID。 **取值范围**： 不涉及。
         :type log_stream_id: str
-        :param log_group_id: 日志组ID。
+        :param log_group_id: **参数解释**： 日志组ID。 **取值范围**： 不涉及。
         :type log_group_id: str
-        :param dashboard_id: 看板ID。
+        :param dashboard_id: **参数解释**： 看板ID。 **取值范围**： 不涉及。
         :type dashboard_id: str
-        :param create_at: 创建时间。
-        :type create_at: str
-        :param update_at: 更新时间。
-        :type update_at: str
+        :param log_type: **参数解释**： 日志类型。 **取值范围**： 不涉及。
+        :type log_type: str
+        :param log_file_name: **参数解释**： 日志文件名称。 **取值范围**： 不涉及。
+        :type log_file_name: str
+        :param created_at: **参数解释**： 创建时间。 **取值范围**： 不涉及。
+        :type created_at: int
+        :param updated_at: **参数解释**： 更新时间。 **取值范围**： 不涉及。
+        :type updated_at: int
         """
         
         super().__init__()
@@ -68,8 +76,10 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
         self._log_stream_id = None
         self._log_group_id = None
         self._dashboard_id = None
-        self._create_at = None
-        self._update_at = None
+        self._log_type = None
+        self._log_file_name = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         if id is not None:
@@ -84,16 +94,20 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
             self.log_group_id = log_group_id
         if dashboard_id is not None:
             self.dashboard_id = dashboard_id
-        if create_at is not None:
-            self.create_at = create_at
-        if update_at is not None:
-            self.update_at = update_at
+        if log_type is not None:
+            self.log_type = log_type
+        if log_file_name is not None:
+            self.log_file_name = log_file_name
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
 
     @property
     def id(self):
         r"""Gets the id of this ShowKafkaRebalanceLogResponse.
 
-        日志ID。
+        **参数解释**： 日志ID。 **取值范围**： 不涉及。
 
         :return: The id of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -104,7 +118,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowKafkaRebalanceLogResponse.
 
-        日志ID。
+        **参数解释**： 日志ID。 **取值范围**： 不涉及。
 
         :param id: The id of this ShowKafkaRebalanceLogResponse.
         :type id: str
@@ -115,7 +129,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this ShowKafkaRebalanceLogResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The instance_id of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -126,7 +140,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowKafkaRebalanceLogResponse.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this ShowKafkaRebalanceLogResponse.
         :type instance_id: str
@@ -137,7 +151,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowKafkaRebalanceLogResponse.
 
-        状态。
+        **参数解释**： 重平衡日志状态。 **取值范围**： - OPEN：已开启重平衡日志。 - CLOSE：已关闭重平衡日志。 - OPENING：重平衡日志开启中。 - CLOSING：重平衡日志关闭中。
 
         :return: The status of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -148,7 +162,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowKafkaRebalanceLogResponse.
 
-        状态。
+        **参数解释**： 重平衡日志状态。 **取值范围**： - OPEN：已开启重平衡日志。 - CLOSE：已关闭重平衡日志。 - OPENING：重平衡日志开启中。 - CLOSING：重平衡日志关闭中。
 
         :param status: The status of this ShowKafkaRebalanceLogResponse.
         :type status: str
@@ -159,7 +173,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def log_stream_id(self):
         r"""Gets the log_stream_id of this ShowKafkaRebalanceLogResponse.
 
-        日志流ID。
+        **参数解释**： 日志流ID。 **取值范围**： 不涉及。
 
         :return: The log_stream_id of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -170,7 +184,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def log_stream_id(self, log_stream_id):
         r"""Sets the log_stream_id of this ShowKafkaRebalanceLogResponse.
 
-        日志流ID。
+        **参数解释**： 日志流ID。 **取值范围**： 不涉及。
 
         :param log_stream_id: The log_stream_id of this ShowKafkaRebalanceLogResponse.
         :type log_stream_id: str
@@ -181,7 +195,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def log_group_id(self):
         r"""Gets the log_group_id of this ShowKafkaRebalanceLogResponse.
 
-        日志组ID。
+        **参数解释**： 日志组ID。 **取值范围**： 不涉及。
 
         :return: The log_group_id of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -192,7 +206,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def log_group_id(self, log_group_id):
         r"""Sets the log_group_id of this ShowKafkaRebalanceLogResponse.
 
-        日志组ID。
+        **参数解释**： 日志组ID。 **取值范围**： 不涉及。
 
         :param log_group_id: The log_group_id of this ShowKafkaRebalanceLogResponse.
         :type log_group_id: str
@@ -203,7 +217,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def dashboard_id(self):
         r"""Gets the dashboard_id of this ShowKafkaRebalanceLogResponse.
 
-        看板ID。
+        **参数解释**： 看板ID。 **取值范围**： 不涉及。
 
         :return: The dashboard_id of this ShowKafkaRebalanceLogResponse.
         :rtype: str
@@ -214,7 +228,7 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this ShowKafkaRebalanceLogResponse.
 
-        看板ID。
+        **参数解释**： 看板ID。 **取值范围**： 不涉及。
 
         :param dashboard_id: The dashboard_id of this ShowKafkaRebalanceLogResponse.
         :type dashboard_id: str
@@ -222,48 +236,92 @@ class ShowKafkaRebalanceLogResponse(SdkResponse):
         self._dashboard_id = dashboard_id
 
     @property
-    def create_at(self):
-        r"""Gets the create_at of this ShowKafkaRebalanceLogResponse.
+    def log_type(self):
+        r"""Gets the log_type of this ShowKafkaRebalanceLogResponse.
 
-        创建时间。
+        **参数解释**： 日志类型。 **取值范围**： 不涉及。
 
-        :return: The create_at of this ShowKafkaRebalanceLogResponse.
+        :return: The log_type of this ShowKafkaRebalanceLogResponse.
         :rtype: str
         """
-        return self._create_at
+        return self._log_type
 
-    @create_at.setter
-    def create_at(self, create_at):
-        r"""Sets the create_at of this ShowKafkaRebalanceLogResponse.
+    @log_type.setter
+    def log_type(self, log_type):
+        r"""Sets the log_type of this ShowKafkaRebalanceLogResponse.
 
-        创建时间。
+        **参数解释**： 日志类型。 **取值范围**： 不涉及。
 
-        :param create_at: The create_at of this ShowKafkaRebalanceLogResponse.
-        :type create_at: str
+        :param log_type: The log_type of this ShowKafkaRebalanceLogResponse.
+        :type log_type: str
         """
-        self._create_at = create_at
+        self._log_type = log_type
 
     @property
-    def update_at(self):
-        r"""Gets the update_at of this ShowKafkaRebalanceLogResponse.
+    def log_file_name(self):
+        r"""Gets the log_file_name of this ShowKafkaRebalanceLogResponse.
 
-        更新时间。
+        **参数解释**： 日志文件名称。 **取值范围**： 不涉及。
 
-        :return: The update_at of this ShowKafkaRebalanceLogResponse.
+        :return: The log_file_name of this ShowKafkaRebalanceLogResponse.
         :rtype: str
         """
-        return self._update_at
+        return self._log_file_name
 
-    @update_at.setter
-    def update_at(self, update_at):
-        r"""Sets the update_at of this ShowKafkaRebalanceLogResponse.
+    @log_file_name.setter
+    def log_file_name(self, log_file_name):
+        r"""Sets the log_file_name of this ShowKafkaRebalanceLogResponse.
 
-        更新时间。
+        **参数解释**： 日志文件名称。 **取值范围**： 不涉及。
 
-        :param update_at: The update_at of this ShowKafkaRebalanceLogResponse.
-        :type update_at: str
+        :param log_file_name: The log_file_name of this ShowKafkaRebalanceLogResponse.
+        :type log_file_name: str
         """
-        self._update_at = update_at
+        self._log_file_name = log_file_name
+
+    @property
+    def created_at(self):
+        r"""Gets the created_at of this ShowKafkaRebalanceLogResponse.
+
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
+
+        :return: The created_at of this ShowKafkaRebalanceLogResponse.
+        :rtype: int
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        r"""Sets the created_at of this ShowKafkaRebalanceLogResponse.
+
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
+
+        :param created_at: The created_at of this ShowKafkaRebalanceLogResponse.
+        :type created_at: int
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        r"""Gets the updated_at of this ShowKafkaRebalanceLogResponse.
+
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
+
+        :return: The updated_at of this ShowKafkaRebalanceLogResponse.
+        :rtype: int
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        r"""Sets the updated_at of this ShowKafkaRebalanceLogResponse.
+
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
+
+        :param updated_at: The updated_at of this ShowKafkaRebalanceLogResponse.
+        :type updated_at: int
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         import warnings

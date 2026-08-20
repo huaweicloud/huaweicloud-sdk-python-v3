@@ -226,7 +226,7 @@ class ShowInstanceResponse(SdkResponse):
         :type status: str
         :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
+        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： 不涉及。
         :type resource_spec_code: str
         :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax,hws_eu)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc)
         :type charging_mode: int
@@ -326,7 +326,7 @@ class ShowInstanceResponse(SdkResponse):
         :type ipv6_connect_addresses: list[str]
         :param connector_enable: **参数解释**： 是否开启转储。 **取值范围**： - true：开启 - false：不开启
         :type connector_enable: bool
-        :param connector_node_num: **参数解释**： connector节点数量。 **取值范围**： 2-16。
+        :param connector_node_num: **参数解释**： connector节点数量。 **取值范围**： 0-16。
         :type connector_node_num: int
         :param connector_id: **参数解释**： 转储任务ID。 **取值范围**： 不涉及。
         :type connector_id: str
@@ -932,7 +932,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
+        **参数解释**： 资源规格标识。 **取值范围**： 不涉及。
 
         :return: The resource_spec_code of this ShowInstanceResponse.
         :rtype: str
@@ -943,7 +943,7 @@ class ShowInstanceResponse(SdkResponse):
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
-        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [不涉及。](tag:hcs)
+        **参数解释**： 资源规格标识。 **取值范围**： 不涉及。
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResponse.
         :type resource_spec_code: str
@@ -2032,7 +2032,7 @@ class ShowInstanceResponse(SdkResponse):
     def connector_node_num(self):
         r"""Gets the connector_node_num of this ShowInstanceResponse.
 
-        **参数解释**： connector节点数量。 **取值范围**： 2-16。
+        **参数解释**： connector节点数量。 **取值范围**： 0-16。
 
         :return: The connector_node_num of this ShowInstanceResponse.
         :rtype: int
@@ -2043,7 +2043,7 @@ class ShowInstanceResponse(SdkResponse):
     def connector_node_num(self, connector_node_num):
         r"""Sets the connector_node_num of this ShowInstanceResponse.
 
-        **参数解释**： connector节点数量。 **取值范围**： 2-16。
+        **参数解释**： connector节点数量。 **取值范围**： 0-16。
 
         :param connector_node_num: The connector_node_num of this ShowInstanceResponse.
         :type connector_node_num: int

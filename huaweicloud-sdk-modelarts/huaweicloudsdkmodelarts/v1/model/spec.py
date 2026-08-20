@@ -19,13 +19,15 @@ class Spec:
         'volumes': 'list[SpecVolumes]',
         'log_export_path': 'LogExportPath',
         'auto_stop': 'AutoStop',
+        'retention': 'RetentionPolicy',
         'schedule_policy': 'SchedulePolicy',
         'log_export_config': 'LogExportConfig',
         'notification': 'Notification',
         'custom_metrics': 'list[CustomMetrics]',
         'output_model': 'OutputModel',
         'asset_model': 'AssetModel',
-        'asset_id': 'str'
+        'asset_id': 'str',
+        'reserved_time': 'ReserveTime'
     }
 
     attribute_map = {
@@ -33,16 +35,18 @@ class Spec:
         'volumes': 'volumes',
         'log_export_path': 'log_export_path',
         'auto_stop': 'auto_stop',
+        'retention': 'retention',
         'schedule_policy': 'schedule_policy',
         'log_export_config': 'log_export_config',
         'notification': 'notification',
         'custom_metrics': 'custom_metrics',
         'output_model': 'output_model',
         'asset_model': 'asset_model',
-        'asset_id': 'asset_id'
+        'asset_id': 'asset_id',
+        'reserved_time': 'reserved_time'
     }
 
-    def __init__(self, resource=None, volumes=None, log_export_path=None, auto_stop=None, schedule_policy=None, log_export_config=None, notification=None, custom_metrics=None, output_model=None, asset_model=None, asset_id=None):
+    def __init__(self, resource=None, volumes=None, log_export_path=None, auto_stop=None, retention=None, schedule_policy=None, log_export_config=None, notification=None, custom_metrics=None, output_model=None, asset_model=None, asset_id=None, reserved_time=None):
         r"""Spec
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,8 @@ class Spec:
         :type log_export_path: :class:`huaweicloudsdkmodelarts.v1.LogExportPath`
         :param auto_stop: 
         :type auto_stop: :class:`huaweicloudsdkmodelarts.v1.AutoStop`
+        :param retention: 
+        :type retention: :class:`huaweicloudsdkmodelarts.v1.RetentionPolicy`
         :param schedule_policy: 
         :type schedule_policy: :class:`huaweicloudsdkmodelarts.v1.SchedulePolicy`
         :param log_export_config: 
@@ -69,6 +75,8 @@ class Spec:
         :type asset_model: :class:`huaweicloudsdkmodelarts.v1.AssetModel`
         :param asset_id: **参数解释**：精调训练作业资产模型ID。
         :type asset_id: str
+        :param reserved_time: 
+        :type reserved_time: :class:`huaweicloudsdkmodelarts.v1.ReserveTime`
         """
         
         
@@ -77,6 +85,7 @@ class Spec:
         self._volumes = None
         self._log_export_path = None
         self._auto_stop = None
+        self._retention = None
         self._schedule_policy = None
         self._log_export_config = None
         self._notification = None
@@ -84,6 +93,7 @@ class Spec:
         self._output_model = None
         self._asset_model = None
         self._asset_id = None
+        self._reserved_time = None
         self.discriminator = None
 
         if resource is not None:
@@ -94,6 +104,8 @@ class Spec:
             self.log_export_path = log_export_path
         if auto_stop is not None:
             self.auto_stop = auto_stop
+        if retention is not None:
+            self.retention = retention
         if schedule_policy is not None:
             self.schedule_policy = schedule_policy
         if log_export_config is not None:
@@ -108,6 +120,8 @@ class Spec:
             self.asset_model = asset_model
         if asset_id is not None:
             self.asset_id = asset_id
+        if reserved_time is not None:
+            self.reserved_time = reserved_time
 
     @property
     def resource(self):
@@ -184,6 +198,24 @@ class Spec:
         :type auto_stop: :class:`huaweicloudsdkmodelarts.v1.AutoStop`
         """
         self._auto_stop = auto_stop
+
+    @property
+    def retention(self):
+        r"""Gets the retention of this Spec.
+
+        :return: The retention of this Spec.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.RetentionPolicy`
+        """
+        return self._retention
+
+    @retention.setter
+    def retention(self, retention):
+        r"""Sets the retention of this Spec.
+
+        :param retention: The retention of this Spec.
+        :type retention: :class:`huaweicloudsdkmodelarts.v1.RetentionPolicy`
+        """
+        self._retention = retention
 
     @property
     def schedule_policy(self):
@@ -318,6 +350,24 @@ class Spec:
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def reserved_time(self):
+        r"""Gets the reserved_time of this Spec.
+
+        :return: The reserved_time of this Spec.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ReserveTime`
+        """
+        return self._reserved_time
+
+    @reserved_time.setter
+    def reserved_time(self, reserved_time):
+        r"""Sets the reserved_time of this Spec.
+
+        :param reserved_time: The reserved_time of this Spec.
+        :type reserved_time: :class:`huaweicloudsdkmodelarts.v1.ReserveTime`
+        """
+        self._reserved_time = reserved_time
 
     def to_dict(self):
         result = {}

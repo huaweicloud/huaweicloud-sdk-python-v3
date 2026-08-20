@@ -22,7 +22,7 @@ class ScheduleTaskDetail:
         'start_time': 'str',
         'instance_id': 'str',
         'instance_name': 'str',
-        'task_content': 'object'
+        'task_content': 'str'
     }
 
     attribute_map = {
@@ -56,7 +56,7 @@ class ScheduleTaskDetail:
         :param instance_name: 实例名称。
         :type instance_name: str
         :param task_content: 任务信息。
-        :type task_content: object
+        :type task_content: str
         """
         
         
@@ -249,7 +249,7 @@ class ScheduleTaskDetail:
         任务信息。
 
         :return: The task_content of this ScheduleTaskDetail.
-        :rtype: object
+        :rtype: str
         """
         return self._task_content
 
@@ -260,7 +260,7 @@ class ScheduleTaskDetail:
         任务信息。
 
         :param task_content: The task_content of this ScheduleTaskDetail.
-        :type task_content: object
+        :type task_content: str
         """
         self._task_content = task_content
 

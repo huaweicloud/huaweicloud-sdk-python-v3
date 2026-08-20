@@ -16,29 +16,36 @@ class RunPipelineResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'pipeline_run_id': 'str'
+        'pipeline_run_id': 'str',
+        'error_msg': 'str'
     }
 
     attribute_map = {
-        'pipeline_run_id': 'pipeline_run_id'
+        'pipeline_run_id': 'pipeline_run_id',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self, pipeline_run_id=None):
+    def __init__(self, pipeline_run_id=None, error_msg=None):
         r"""RunPipelineResponse
 
         The model defined in huaweicloud sdk
 
         :param pipeline_run_id: **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type pipeline_run_id: str
+        :param error_msg: **参数解释**： 流水线运行失败详情。 **取值范围**： 不涉及。 
+        :type error_msg: str
         """
         
         super().__init__()
 
         self._pipeline_run_id = None
+        self._error_msg = None
         self.discriminator = None
 
         if pipeline_run_id is not None:
             self.pipeline_run_id = pipeline_run_id
+        if error_msg is not None:
+            self.error_msg = error_msg
 
     @property
     def pipeline_run_id(self):
@@ -61,6 +68,28 @@ class RunPipelineResponse(SdkResponse):
         :type pipeline_run_id: str
         """
         self._pipeline_run_id = pipeline_run_id
+
+    @property
+    def error_msg(self):
+        r"""Gets the error_msg of this RunPipelineResponse.
+
+        **参数解释**： 流水线运行失败详情。 **取值范围**： 不涉及。 
+
+        :return: The error_msg of this RunPipelineResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        r"""Sets the error_msg of this RunPipelineResponse.
+
+        **参数解释**： 流水线运行失败详情。 **取值范围**： 不涉及。 
+
+        :param error_msg: The error_msg of this RunPipelineResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         import warnings

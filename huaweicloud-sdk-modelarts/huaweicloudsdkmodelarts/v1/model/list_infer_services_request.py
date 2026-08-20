@@ -28,6 +28,7 @@ class ListInferServicesRequest:
         'user_name': 'str',
         'tags': 'str',
         'asset_id': 'str',
+        'node_ip': 'str',
         'sort_dir': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -47,12 +48,13 @@ class ListInferServicesRequest:
         'user_name': 'user_name',
         'tags': 'tags',
         'asset_id': 'asset_id',
+        'node_ip': 'node_ip',
         'sort_dir': 'sort_dir',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, id=None, pool_id=None, pool_name=None, sort_key=None, status=None, name=None, auth_type=None, type=None, description=None, workspace_id=None, user_name=None, tags=None, asset_id=None, sort_dir=None, limit=None, offset=None):
+    def __init__(self, id=None, pool_id=None, pool_name=None, sort_key=None, status=None, name=None, auth_type=None, type=None, description=None, workspace_id=None, user_name=None, tags=None, asset_id=None, node_ip=None, sort_dir=None, limit=None, offset=None):
         r"""ListInferServicesRequest
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ListInferServicesRequest:
         :type tags: str
         :param asset_id: **参数解释：** 资产ID，查询使用了指定资产的服务，默认不过滤。可通过[资产管理][模型列表]获取。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type asset_id: str
+        :param node_ip: **参数解释：** 节点IP地址，按节点IP地址查询该节点IP下POD对应的服务，默认不过滤。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type node_ip: str
         :param sort_dir: **参数解释：** 排序方式 **约束限制：** 不涉及。 **取值范围：** - ASC: 递增排序。 - DESC: 递减排序。 **默认取值：** DESC。
         :type sort_dir: str
         :param limit: **参数解释：** 指定返回的最大条目数。 **约束限制：** 不涉及。 **取值范围：** [1,500] **默认取值：** 10。
@@ -106,6 +110,7 @@ class ListInferServicesRequest:
         self._user_name = None
         self._tags = None
         self._asset_id = None
+        self._node_ip = None
         self._sort_dir = None
         self._limit = None
         self._offset = None
@@ -137,6 +142,8 @@ class ListInferServicesRequest:
             self.tags = tags
         if asset_id is not None:
             self.asset_id = asset_id
+        if node_ip is not None:
+            self.node_ip = node_ip
         if sort_dir is not None:
             self.sort_dir = sort_dir
         if limit is not None:
@@ -429,6 +436,28 @@ class ListInferServicesRequest:
         :type asset_id: str
         """
         self._asset_id = asset_id
+
+    @property
+    def node_ip(self):
+        r"""Gets the node_ip of this ListInferServicesRequest.
+
+        **参数解释：** 节点IP地址，按节点IP地址查询该节点IP下POD对应的服务，默认不过滤。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The node_ip of this ListInferServicesRequest.
+        :rtype: str
+        """
+        return self._node_ip
+
+    @node_ip.setter
+    def node_ip(self, node_ip):
+        r"""Sets the node_ip of this ListInferServicesRequest.
+
+        **参数解释：** 节点IP地址，按节点IP地址查询该节点IP下POD对应的服务，默认不过滤。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param node_ip: The node_ip of this ListInferServicesRequest.
+        :type node_ip: str
+        """
+        self._node_ip = node_ip
 
     @property
     def sort_dir(self):

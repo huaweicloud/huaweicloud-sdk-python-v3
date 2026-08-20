@@ -31,11 +31,11 @@ class TopUrl:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 配置开关
+        :param enable: **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
         :type enable: bool
-        :param limit: 热点统计配置指标的上报数量。如top_url 100、top_url 1000
+        :param limit: **参数解释：** 热点统计配置指标的上报数量 &gt; 如top_url 100、top_url 1000  **约束限制：** 不涉及 **取值范围：** 0-2000 **默认取值：** 不涉及
         :type limit: int
-        :param sort_by_code: 热点统计类指标是否支持按状态码上报
+        :param sort_by_code: **参数解释：** 热点统计类指标是否支持按状态码上报 **约束限制：** 不涉及 **取值范围：** - true：热点统计类指标支持按状态码上报 - false：热点统计类指标不支持按状态码上报 **默认取值：** 不涉及
         :type sort_by_code: bool
         """
         
@@ -57,7 +57,7 @@ class TopUrl:
     def enable(self):
         r"""Gets the enable of this TopUrl.
 
-        配置开关
+        **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
 
         :return: The enable of this TopUrl.
         :rtype: bool
@@ -68,7 +68,7 @@ class TopUrl:
     def enable(self, enable):
         r"""Sets the enable of this TopUrl.
 
-        配置开关
+        **参数解释：** 配置开关 **约束限制：** 不涉及 **取值范围：** - true：打开 - false：关闭 **默认取值：** 不涉及
 
         :param enable: The enable of this TopUrl.
         :type enable: bool
@@ -79,7 +79,7 @@ class TopUrl:
     def limit(self):
         r"""Gets the limit of this TopUrl.
 
-        热点统计配置指标的上报数量。如top_url 100、top_url 1000
+        **参数解释：** 热点统计配置指标的上报数量 > 如top_url 100、top_url 1000  **约束限制：** 不涉及 **取值范围：** 0-2000 **默认取值：** 不涉及
 
         :return: The limit of this TopUrl.
         :rtype: int
@@ -90,7 +90,7 @@ class TopUrl:
     def limit(self, limit):
         r"""Sets the limit of this TopUrl.
 
-        热点统计配置指标的上报数量。如top_url 100、top_url 1000
+        **参数解释：** 热点统计配置指标的上报数量 > 如top_url 100、top_url 1000  **约束限制：** 不涉及 **取值范围：** 0-2000 **默认取值：** 不涉及
 
         :param limit: The limit of this TopUrl.
         :type limit: int
@@ -101,7 +101,7 @@ class TopUrl:
     def sort_by_code(self):
         r"""Gets the sort_by_code of this TopUrl.
 
-        热点统计类指标是否支持按状态码上报
+        **参数解释：** 热点统计类指标是否支持按状态码上报 **约束限制：** 不涉及 **取值范围：** - true：热点统计类指标支持按状态码上报 - false：热点统计类指标不支持按状态码上报 **默认取值：** 不涉及
 
         :return: The sort_by_code of this TopUrl.
         :rtype: bool
@@ -112,7 +112,7 @@ class TopUrl:
     def sort_by_code(self, sort_by_code):
         r"""Sets the sort_by_code of this TopUrl.
 
-        热点统计类指标是否支持按状态码上报
+        **参数解释：** 热点统计类指标是否支持按状态码上报 **约束限制：** 不涉及 **取值范围：** - true：热点统计类指标支持按状态码上报 - false：热点统计类指标不支持按状态码上报 **默认取值：** 不涉及
 
         :param sort_by_code: The sort_by_code of this TopUrl.
         :type sort_by_code: bool

@@ -15,56 +15,57 @@ class BatchDeleteMessageDiagnosisRespResults:
     sensitive_list = []
 
     openapi_types = {
-        'result': 'bool',
+        'success': 'bool',
         'id': 'str'
     }
 
     attribute_map = {
-        'result': 'result',
+        'success': 'success',
         'id': 'id'
     }
 
-    def __init__(self, result=None, id=None):
+    def __init__(self, success=None, id=None):
         r"""BatchDeleteMessageDiagnosisRespResults
 
         The model defined in huaweicloud sdk
 
-        :param result: 报告删除结果
-        :type result: bool
+        :param success: 报告删除结果
+        :type success: bool
         :param id: 报告ID
         :type id: str
         """
         
         
 
-        self._result = None
+        self._success = None
         self._id = None
         self.discriminator = None
 
-        self.result = result
+        if success is not None:
+            self.success = success
         self.id = id
 
     @property
-    def result(self):
-        r"""Gets the result of this BatchDeleteMessageDiagnosisRespResults.
+    def success(self):
+        r"""Gets the success of this BatchDeleteMessageDiagnosisRespResults.
 
         报告删除结果
 
-        :return: The result of this BatchDeleteMessageDiagnosisRespResults.
+        :return: The success of this BatchDeleteMessageDiagnosisRespResults.
         :rtype: bool
         """
-        return self._result
+        return self._success
 
-    @result.setter
-    def result(self, result):
-        r"""Sets the result of this BatchDeleteMessageDiagnosisRespResults.
+    @success.setter
+    def success(self, success):
+        r"""Sets the success of this BatchDeleteMessageDiagnosisRespResults.
 
         报告删除结果
 
-        :param result: The result of this BatchDeleteMessageDiagnosisRespResults.
-        :type result: bool
+        :param success: The success of this BatchDeleteMessageDiagnosisRespResults.
+        :type success: bool
         """
-        self._result = result
+        self._success = success
 
     @property
     def id(self):

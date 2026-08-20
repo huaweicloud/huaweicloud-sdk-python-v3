@@ -72,7 +72,7 @@ class IssueVO:
         'collaborative_status': 'list[str]',
         'project': 'DomainVO',
         'child_issues': 'dict(str, IssueVO)',
-        'activate_times': 'int',
+        'activate_times': 'str',
         'baseline': 'OptionVO',
         'business_domain': 'OptionVO',
         'children': 'str',
@@ -106,14 +106,14 @@ class IssueVO:
         'position_float': 'str',
         'processing_owner': 'str',
         'reason_analysis': 'str',
-        'regression_failure_number': 'int',
+        'regression_failure_number': 'str',
         'related_network_security': 'OptionVO',
         'repair_solution': 'str',
         'researchanddevelop_owner': 'str',
         'severity': 'OptionVO',
         'sys_activation_reason': 'str',
         'sys_no_repair_reason': 'str',
-        'test_failures_times': 'int',
+        'test_failures_times': 'str',
         'test_owner': 'str',
         'test_report': 'str',
         'val_feature': 'OptionVO',
@@ -348,7 +348,7 @@ class IssueVO:
         :param child_issues: **参数解释：**  子工作项列表。 **取值范围：**  不涉及。
         :type child_issues: dict(str, IssueVO)
         :param activate_times: **参数解释：**  激活次数。Bug激活时自动赋值。 **取值范围：**  不涉及。
-        :type activate_times: int
+        :type activate_times: str
         :param baseline: 
         :type baseline: :class:`huaweicloudsdkprojectman.v4.OptionVO`
         :param business_domain: 
@@ -416,7 +416,7 @@ class IssueVO:
         :param reason_analysis: **参数解释：**  分析原因。 **取值范围：**  不涉及。
         :type reason_analysis: str
         :param regression_failure_number: **参数解释：**  回归不通过次数。缺陷测试不通过时自动赋值。 **取值范围：**  不涉及。
-        :type regression_failure_number: int
+        :type regression_failure_number: str
         :param related_network_security: 
         :type related_network_security: :class:`huaweicloudsdkprojectman.v4.OptionVO`
         :param repair_solution: **参数解释：**  修复方案。常用于修复缺陷时。 **取值范围：**  不涉及。
@@ -430,7 +430,7 @@ class IssueVO:
         :param sys_no_repair_reason: **参数解释：**  无需修复原因。通常用于在缺陷无需修复时。 **取值范围：**  不涉及。
         :type sys_no_repair_reason: str
         :param test_failures_times: **参数解释：**  测试不通过次数。 **取值范围：**  不涉及。
-        :type test_failures_times: int
+        :type test_failures_times: str
         :param test_owner: **参数解释：**  测试责任人。通常用于“测试”状态节点。 **取值范围：**  不涉及。
         :type test_owner: str
         :param test_report: **参数解释：**  测试报告。 **取值范围：**  不涉及。
@@ -1965,7 +1965,7 @@ class IssueVO:
         **参数解释：**  激活次数。Bug激活时自动赋值。 **取值范围：**  不涉及。
 
         :return: The activate_times of this IssueVO.
-        :rtype: int
+        :rtype: str
         """
         return self._activate_times
 
@@ -1976,7 +1976,7 @@ class IssueVO:
         **参数解释：**  激活次数。Bug激活时自动赋值。 **取值范围：**  不涉及。
 
         :param activate_times: The activate_times of this IssueVO.
-        :type activate_times: int
+        :type activate_times: str
         """
         self._activate_times = activate_times
 
@@ -2673,7 +2673,7 @@ class IssueVO:
         **参数解释：**  回归不通过次数。缺陷测试不通过时自动赋值。 **取值范围：**  不涉及。
 
         :return: The regression_failure_number of this IssueVO.
-        :rtype: int
+        :rtype: str
         """
         return self._regression_failure_number
 
@@ -2684,7 +2684,7 @@ class IssueVO:
         **参数解释：**  回归不通过次数。缺陷测试不通过时自动赋值。 **取值范围：**  不涉及。
 
         :param regression_failure_number: The regression_failure_number of this IssueVO.
-        :type regression_failure_number: int
+        :type regression_failure_number: str
         """
         self._regression_failure_number = regression_failure_number
 
@@ -2819,7 +2819,7 @@ class IssueVO:
         **参数解释：**  测试不通过次数。 **取值范围：**  不涉及。
 
         :return: The test_failures_times of this IssueVO.
-        :rtype: int
+        :rtype: str
         """
         return self._test_failures_times
 
@@ -2830,7 +2830,7 @@ class IssueVO:
         **参数解释：**  测试不通过次数。 **取值范围：**  不涉及。
 
         :param test_failures_times: The test_failures_times of this IssueVO.
-        :type test_failures_times: int
+        :type test_failures_times: str
         """
         self._test_failures_times = test_failures_times
 

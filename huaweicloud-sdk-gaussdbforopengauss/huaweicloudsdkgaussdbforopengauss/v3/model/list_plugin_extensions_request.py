@@ -17,16 +17,18 @@ class ListPluginExtensionsRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'ListPluginExtensionsRequestBody'
+        'db_name': 'str',
+        'plugin_name': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
-        'body': 'body'
+        'db_name': 'db_name',
+        'plugin_name': 'plugin_name'
     }
 
-    def __init__(self, x_language=None, instance_id=None, body=None):
+    def __init__(self, x_language=None, instance_id=None, db_name=None, plugin_name=None):
         r"""ListPluginExtensionsRequest
 
         The model defined in huaweicloud sdk
@@ -35,22 +37,25 @@ class ListPluginExtensionsRequest:
         :type x_language: str
         :param instance_id: 查询实例插件拓展信息的实例ID
         :type instance_id: str
-        :param body: Body of the ListPluginExtensionsRequest
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequestBody`
+        :param db_name: **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type db_name: str
+        :param plugin_name: **参数解释**: 插件名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type plugin_name: str
         """
         
         
 
         self._x_language = None
         self._instance_id = None
-        self._body = None
+        self._db_name = None
+        self._plugin_name = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
-        if body is not None:
-            self.body = body
+        self.db_name = db_name
+        self.plugin_name = plugin_name
 
     @property
     def x_language(self):
@@ -97,22 +102,48 @@ class ListPluginExtensionsRequest:
         self._instance_id = instance_id
 
     @property
-    def body(self):
-        r"""Gets the body of this ListPluginExtensionsRequest.
+    def db_name(self):
+        r"""Gets the db_name of this ListPluginExtensionsRequest.
 
-        :return: The body of this ListPluginExtensionsRequest.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequestBody`
+        **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The db_name of this ListPluginExtensionsRequest.
+        :rtype: str
         """
-        return self._body
+        return self._db_name
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListPluginExtensionsRequest.
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this ListPluginExtensionsRequest.
 
-        :param body: The body of this ListPluginExtensionsRequest.
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequestBody`
+        **参数解释**: 数据库名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param db_name: The db_name of this ListPluginExtensionsRequest.
+        :type db_name: str
         """
-        self._body = body
+        self._db_name = db_name
+
+    @property
+    def plugin_name(self):
+        r"""Gets the plugin_name of this ListPluginExtensionsRequest.
+
+        **参数解释**: 插件名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The plugin_name of this ListPluginExtensionsRequest.
+        :rtype: str
+        """
+        return self._plugin_name
+
+    @plugin_name.setter
+    def plugin_name(self, plugin_name):
+        r"""Sets the plugin_name of this ListPluginExtensionsRequest.
+
+        **参数解释**: 插件名称。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param plugin_name: The plugin_name of this ListPluginExtensionsRequest.
+        :type plugin_name: str
+        """
+        self._plugin_name = plugin_name
 
     def to_dict(self):
         result = {}

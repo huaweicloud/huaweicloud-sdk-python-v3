@@ -20,8 +20,7 @@ class ListCdnDomainTopRefersRequest:
         'domain_name': 'str',
         'stat_type': 'str',
         'service_area': 'str',
-        'enterprise_project_id': 'str',
-        'include_ratio': 'bool'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -30,29 +29,26 @@ class ListCdnDomainTopRefersRequest:
         'domain_name': 'domain_name',
         'stat_type': 'stat_type',
         'service_area': 'service_area',
-        'enterprise_project_id': 'enterprise_project_id',
-        'include_ratio': 'include_ratio'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, start_time=None, end_time=None, domain_name=None, stat_type=None, service_area=None, enterprise_project_id=None, include_ratio=None):
+    def __init__(self, start_time=None, end_time=None, domain_name=None, stat_type=None, service_area=None, enterprise_project_id=None):
         r"""ListCdnDomainTopRefersRequest
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        :param start_time: **参数解释：** 查询起始时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type start_time: int
-        :param end_time: 查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        :param end_time: **参数解释：** 查询结束时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type end_time: int
-        :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        :param domain_name: **参数解释：** 域名列表 &gt; 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
         :type domain_name: str
-        :param stat_type: - 统计指标类型 - 目前只支持flux（流量），req_num（请求数）
+        :param stat_type: **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
         :type stat_type: str
-        :param service_area: 服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
         :type service_area: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: **参数解释：** 企业项目id &gt; 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
         :type enterprise_project_id: str
-        :param include_ratio: 是否包含百分比数据，默认false
-        :type include_ratio: bool
         """
         
         
@@ -63,7 +59,6 @@ class ListCdnDomainTopRefersRequest:
         self._stat_type = None
         self._service_area = None
         self._enterprise_project_id = None
-        self._include_ratio = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -74,14 +69,12 @@ class ListCdnDomainTopRefersRequest:
             self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if include_ratio is not None:
-            self.include_ratio = include_ratio
 
     @property
     def start_time(self):
         r"""Gets the start_time of this ListCdnDomainTopRefersRequest.
 
-        查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        **参数解释：** 查询起始时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The start_time of this ListCdnDomainTopRefersRequest.
         :rtype: int
@@ -92,7 +85,7 @@ class ListCdnDomainTopRefersRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListCdnDomainTopRefersRequest.
 
-        查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
+        **参数解释：** 查询起始时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param start_time: The start_time of this ListCdnDomainTopRefersRequest.
         :type start_time: int
@@ -103,7 +96,7 @@ class ListCdnDomainTopRefersRequest:
     def end_time(self):
         r"""Gets the end_time of this ListCdnDomainTopRefersRequest.
 
-        查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        **参数解释：** 查询结束时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The end_time of this ListCdnDomainTopRefersRequest.
         :rtype: int
@@ -114,7 +107,7 @@ class ListCdnDomainTopRefersRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListCdnDomainTopRefersRequest.
 
-        查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
+        **参数解释：** 查询结束时间戳 **约束限制：** 该参数只能传0点毫秒时间戳 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param end_time: The end_time of this ListCdnDomainTopRefersRequest.
         :type end_time: int
@@ -125,7 +118,7 @@ class ListCdnDomainTopRefersRequest:
     def domain_name(self):
         r"""Gets the domain_name of this ListCdnDomainTopRefersRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
 
         :return: The domain_name of this ListCdnDomainTopRefersRequest.
         :rtype: str
@@ -136,7 +129,7 @@ class ListCdnDomainTopRefersRequest:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ListCdnDomainTopRefersRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
+        **参数解释：** 域名列表 > 如果域名在查询时间段内无数据，结果将不返回该域名的信息  **约束限制：** 仅支持查询已经在CDN创建成功的域名 **取值范围：** - all表示查询名下全部域名 - 多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this ListCdnDomainTopRefersRequest.
         :type domain_name: str
@@ -147,7 +140,7 @@ class ListCdnDomainTopRefersRequest:
     def stat_type(self):
         r"""Gets the stat_type of this ListCdnDomainTopRefersRequest.
 
-        - 统计指标类型 - 目前只支持flux（流量），req_num（请求数）
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
 
         :return: The stat_type of this ListCdnDomainTopRefersRequest.
         :rtype: str
@@ -158,7 +151,7 @@ class ListCdnDomainTopRefersRequest:
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ListCdnDomainTopRefersRequest.
 
-        - 统计指标类型 - 目前只支持flux（流量），req_num（请求数）
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求数 **默认取值：** 不涉及
 
         :param stat_type: The stat_type of this ListCdnDomainTopRefersRequest.
         :type stat_type: str
@@ -169,7 +162,7 @@ class ListCdnDomainTopRefersRequest:
     def service_area(self):
         r"""Gets the service_area of this ListCdnDomainTopRefersRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
 
         :return: The service_area of this ListCdnDomainTopRefersRequest.
         :rtype: str
@@ -180,7 +173,7 @@ class ListCdnDomainTopRefersRequest:
     def service_area(self, service_area):
         r"""Sets the service_area of this ListCdnDomainTopRefersRequest.
 
-        服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
+        **参数解释：** 服务范围 **约束限制：** 不涉及 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** global：全球
 
         :param service_area: The service_area of this ListCdnDomainTopRefersRequest.
         :type service_area: str
@@ -191,7 +184,7 @@ class ListCdnDomainTopRefersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :return: The enterprise_project_id of this ListCdnDomainTopRefersRequest.
         :rtype: str
@@ -202,34 +195,12 @@ class ListCdnDomainTopRefersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        **参数解释：** 企业项目id > 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id  **约束限制：** - 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目 - 当使用子账号调用接口时，该参数必传 **取值范围：** all表示所有项目 **默认取值：** 不涉及
 
         :param enterprise_project_id: The enterprise_project_id of this ListCdnDomainTopRefersRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def include_ratio(self):
-        r"""Gets the include_ratio of this ListCdnDomainTopRefersRequest.
-
-        是否包含百分比数据，默认false
-
-        :return: The include_ratio of this ListCdnDomainTopRefersRequest.
-        :rtype: bool
-        """
-        return self._include_ratio
-
-    @include_ratio.setter
-    def include_ratio(self, include_ratio):
-        r"""Sets the include_ratio of this ListCdnDomainTopRefersRequest.
-
-        是否包含百分比数据，默认false
-
-        :param include_ratio: The include_ratio of this ListCdnDomainTopRefersRequest.
-        :type include_ratio: bool
-        """
-        self._include_ratio = include_ratio
 
     def to_dict(self):
         result = {}

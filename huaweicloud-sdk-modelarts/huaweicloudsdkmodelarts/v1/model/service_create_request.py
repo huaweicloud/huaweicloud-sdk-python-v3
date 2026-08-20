@@ -21,10 +21,10 @@ class ServiceCreateRequest:
         'type': 'str',
         'deploy_type': 'str',
         'group_configs': 'list[GroupConfig]',
-        'runtime_config': 'RuntimeConfig',
+        'runtime_config': 'RuntimeConfigCreateRequest',
         'upgrade_config': 'UpgradeConfig',
         'lts_strategy': 'str',
-        'log_configs': 'list[LtsConfig]',
+        'log_configs': 'list[LtsConfiguration]',
         'tags': 'list[ServiceCreateRequestTags]',
         'workspace_id': 'str',
         'schedule': 'list[ScheduleConfig]',
@@ -72,18 +72,18 @@ class ServiceCreateRequest:
         :param group_configs: **参数解释：** 服务实例组配置。 **约束限制：** 仅创建服务时group_configs可传[]空数组，group_configs的最大元素数量为1。
         :type group_configs: list[:class:`huaweicloudsdkmodelarts.v1.GroupConfig`]
         :param runtime_config: 
-        :type runtime_config: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfig`
+        :type runtime_config: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfigCreateRequest`
         :param upgrade_config: 
         :type upgrade_config: :class:`huaweicloudsdkmodelarts.v1.UpgradeConfig`
         :param lts_strategy: **参数解释：** 日志策略。 **约束限制：** 不涉及。 **取值范围：** - POOL：使用资源池日志插件配置的日志流。 - AUTO_CREATE：自动创建日志流。 - DEFAULT: 由系统决定日志策略 **默认取值：** AUTO_CREATE：自动创建日志流。
         :type lts_strategy: str
-        :param log_configs: **参数解释：** 日志配置。 **约束限制：** 当开启LTS日志的时候，STDOUT类型为必填。 数量上限为2个。
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfig`]
+        :param log_configs: **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
         :param tags: **参数解释：** 服务标签。 **约束限制：** 上限20个。
         :type tags: list[:class:`huaweicloudsdkmodelarts.v1.ServiceCreateRequestTags`]
         :param workspace_id: **参数解释：** 工作空间ID。 **约束限制：** 不涉及。 **取值范围：** - 0：默认空间ID。 - 由数字和小写字母组成的32位字符：其他空间ID，可参考[工作空间创建](CreateWorkspace.xml)。 **默认取值：** 不涉及。
         :type workspace_id: str
-        :param schedule: **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
+        :param schedule: **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
         :param custom_metrics_path: **参数解释：** 该参数值由英文逗号隔开的协议、端口号、地址组成，比如：[http,8080,metrics]，其中地址长度不超过255 ，且需要与镜像给定的协议、地址、端口一致，否则指标无法上报。 **约束限制：** 长度不超过255。 **取值范围：** - 协议范围：http/https。 - 端口范围：1-65535。 - 地址范围：仅包含字母、数字、点号（.）、中划线（-)、下划线（_）、斜杠（/）的路径，非斜杠（/）开头。 **默认取值：** 不涉及。
         :type custom_metrics_path: str
@@ -282,7 +282,7 @@ class ServiceCreateRequest:
         r"""Gets the runtime_config of this ServiceCreateRequest.
 
         :return: The runtime_config of this ServiceCreateRequest.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfig`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfigCreateRequest`
         """
         return self._runtime_config
 
@@ -291,7 +291,7 @@ class ServiceCreateRequest:
         r"""Sets the runtime_config of this ServiceCreateRequest.
 
         :param runtime_config: The runtime_config of this ServiceCreateRequest.
-        :type runtime_config: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfig`
+        :type runtime_config: :class:`huaweicloudsdkmodelarts.v1.RuntimeConfigCreateRequest`
         """
         self._runtime_config = runtime_config
 
@@ -339,10 +339,10 @@ class ServiceCreateRequest:
     def log_configs(self):
         r"""Gets the log_configs of this ServiceCreateRequest.
 
-        **参数解释：** 日志配置。 **约束限制：** 当开启LTS日志的时候，STDOUT类型为必填。 数量上限为2个。
+        **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :return: The log_configs of this ServiceCreateRequest.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfig`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
         """
         return self._log_configs
 
@@ -350,10 +350,10 @@ class ServiceCreateRequest:
     def log_configs(self, log_configs):
         r"""Sets the log_configs of this ServiceCreateRequest.
 
-        **参数解释：** 日志配置。 **约束限制：** 当开启LTS日志的时候，STDOUT类型为必填。 数量上限为2个。
+        **参数解释：** 服务日志配置。 **约束限制：** 数量上限为[3](tag:hws,hws_hk,fcs,fcs_super)[2](tag:hcs,hcs_sm)个，且每种类型只可配置一个。
 
         :param log_configs: The log_configs of this ServiceCreateRequest.
-        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfig`]
+        :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LtsConfiguration`]
         """
         self._log_configs = log_configs
 
@@ -405,7 +405,7 @@ class ServiceCreateRequest:
     def schedule(self):
         r"""Gets the schedule of this ServiceCreateRequest.
 
-        **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
+        **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
 
         :return: The schedule of this ServiceCreateRequest.
         :rtype: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]
@@ -416,7 +416,7 @@ class ServiceCreateRequest:
     def schedule(self, schedule):
         r"""Sets the schedule of this ServiceCreateRequest.
 
-        **参数解释：** 定时停止配置。 **约束限制：** 最多支持一个定时任务。
+        **参数解释：**  定时停止配置。 **约束限制：**  最多支持一个定时任务。
 
         :param schedule: The schedule of this ServiceCreateRequest.
         :type schedule: list[:class:`huaweicloudsdkmodelarts.v1.ScheduleConfig`]

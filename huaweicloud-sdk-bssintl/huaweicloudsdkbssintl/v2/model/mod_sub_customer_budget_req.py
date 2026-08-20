@@ -45,9 +45,9 @@ class ModSubCustomerBudgetReq:
         :type cancel_partner_frozen: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
-        :param budget_type: |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+        :param budget_type: 预算模式。MONTHLY：月度预算 PACKAGE：一次性预算，此参数不携带或携带值为null时，默认值为MONTHLY。
         :type budget_type: str
-        :param frozen_operate_type: |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+        :param frozen_operate_type: 设置超预算时是否自动冻结。0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。
         :type frozen_operate_type: int
         """
         
@@ -164,7 +164,7 @@ class ModSubCustomerBudgetReq:
     def budget_type(self):
         r"""Gets the budget_type of this ModSubCustomerBudgetReq.
 
-        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+        预算模式。MONTHLY：月度预算 PACKAGE：一次性预算，此参数不携带或携带值为null时，默认值为MONTHLY。
 
         :return: The budget_type of this ModSubCustomerBudgetReq.
         :rtype: str
@@ -175,7 +175,7 @@ class ModSubCustomerBudgetReq:
     def budget_type(self, budget_type):
         r"""Sets the budget_type of this ModSubCustomerBudgetReq.
 
-        |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
+        预算模式。MONTHLY：月度预算 PACKAGE：一次性预算，此参数不携带或携带值为null时，默认值为MONTHLY。
 
         :param budget_type: The budget_type of this ModSubCustomerBudgetReq.
         :type budget_type: str
@@ -186,7 +186,7 @@ class ModSubCustomerBudgetReq:
     def frozen_operate_type(self):
         r"""Gets the frozen_operate_type of this ModSubCustomerBudgetReq.
 
-        |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+        设置超预算时是否自动冻结。0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。
 
         :return: The frozen_operate_type of this ModSubCustomerBudgetReq.
         :rtype: int
@@ -197,7 +197,7 @@ class ModSubCustomerBudgetReq:
     def frozen_operate_type(self, frozen_operate_type):
         r"""Sets the frozen_operate_type of this ModSubCustomerBudgetReq.
 
-        |参数名称：设置超预算时是否自动冻结| |参数的约束及描述：0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。|
+        设置超预算时是否自动冻结。0：手工冻结 1：自动冻结，此参数不携带或携带值为null或携带值为空时，字段不生效。
 
         :param frozen_operate_type: The frozen_operate_type of this ModSubCustomerBudgetReq.
         :type frozen_operate_type: int

@@ -1,3 +1,479 @@
+# 3.1.211 2026-08-20
+
+### HuaweiCloud SDK AIDataLakeJobServer
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListSparkJobs`
+    - `RunSparkJob`
+    - `ShowSparkJob`
+    - `ShowSparkJobState`
+    - `CancelSparkJob`
+    - `ListSparkSqls`
+    - `RunSparkSql`
+    - `ShowSparkSql`
+    - `ShowSparkSqlState`
+    - `CancelSparkSql`
+    - `PreviewSparkSqlResult`
+    - `RestartSparkSqlCluster`
+    - `ShowSparkOperatorState`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubCustomerBillDetail**
+    - changes of response param
+      - `+ fee_records.enterprise_project_id`
+      - `+ fee_records.order_type`
+      - `+ fee_records.payment_type`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainStats**
+    - changes of response param
+      - `+ group_by`
+  - **ListCdnDomainTopRefers**
+    - changes of request param
+      - `- include_ratio`
+  - **ListExportTasks**
+    - changes of request param
+      - `* task_id: required -> optional`
+      - `* task_name: required -> optional`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListModulesDetail`, `ListEndpointsDetails`, `InvokeEndpointProxy`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `BatchShowPipelinesStatus`
+  - **RunPipeline**
+    - changes of response param
+      - `+ error_msg`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ExecuteExportTask`, `ExecuteImportTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListSecurityMemberPermissionsByUserId`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecurityMemberPermission**
+    - changes of response param
+      - `+ result.renewal_status`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ChangeDeploymentSolution`, `RestoreNodeRoles`, `ListWdrSnapshotAvailableGroups`, `ShowInstanceQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `ShowInstanceSnapshot`
+    - `ListDatastores`
+    - `ResizeInstanceFlavor`
+    - `UpdateInstanceVersions`
+    - `ListRestorableInstances`
+    - `ListRecycleInstances`
+    - `ShowInstanceConfiguration`
+    - `ListConfigurations`
+    - `ShowConfigurationDetail`
+    - `SetBackupPolicy`
+    - `ListGaussDbDatastores`
+    - `ListParamGroupTemplates`
+    - `ShowInstanceParamGroup`
+    - `CreateLimitTask`
+    - `DeleteLimitTask`
+    - `UpdateLimitTask`
+    - `ShowLimitTask`
+    - `ListInstances`
+    - `CreateInstance`
+    - `ListBackups`
+    - `ListFlavors`
+    - `ListInstancesDetails`
+    - `CreateDbInstance`
+    - `ShowUpgradeCandidateVersions`
+    - `ShowBatchUpgradeCandidateVersions`
+    - `ListDbFlavors`
+    - `ListDbBackups`
+    - `ListLimitTask`
+    - `ListInstanceDetails`
+  - **ListScheduleTask**
+    - changes of response param
+      - `* tasks.task_content: object -> string`
+  - **ListParameterGroupTemplates**
+    - changes of response param
+      - `+ configurations.node_type`
+  - **ShowInstanceParamGroupDetail**
+    - changes of response param
+      - `+ id`
+  - **ListPluginExtensions**
+    - changes of request param
+      - `+ db_name`
+      - `+ plugin_name`
+  - **ShowFullSql**
+    - changes of response param
+      - `* components.details: int64 -> string`
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateConnector**
+    - changes of request param
+      - `* node_cnt: string -> int32`
+  - **ListBackgroundTasks**
+    - changes of request param
+      - `+ start`
+      - `- offset`
+  - **UpgradeInstance**
+    - changes of response param
+      - `+ job_id`
+      - `+ schedule_id`
+      - `- body`
+  - **ShowKafkaScalePreCheckInfo**
+    - changes of response param
+      - `+ body`
+      - `- reason`
+      - `- success`
+      - `- name`
+      - `- risk`
+  - **ShowKafkaRebalanceLog**
+    - changes of response param
+      - `+ log_type`
+      - `+ instance_id`
+      - `+ updated_at`
+      - `+ log_file_name`
+      - `+ created_at`
+      - `+ log_stream_id`
+      - `+ log_group_id`
+      - `+ dashboard_id`
+      - `- logGroupId`
+      - `- instanceId`
+      - `- dashboardId`
+      - `- updateAt`
+      - `- logStreamId`
+      - `- createAt`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `* job_count: string -> int32`
+  - **ShowBackgroundTaskProgress**
+    - changes of response param
+      - `* step_list.start_time: string -> int64`
+      - `* step_list.end_time: string -> int64`
+  - **ListInstanceConsumerGroupMessageOffset**
+    - changes of response param
+      - `* group_message_offsets.partition: string -> int32`
+      - `* group_message_offsets.message_current_offset: string -> int32`
+  - **ModifyKafkaTopicQuota**
+    - changes of request param
+      - `+ producer_byte_rate`
+      - `+ consumer_byte_rate`
+      - `- producer-byte-rate`
+      - `- consumer-byte-rate`
+  - **CreateKafkaTopicQuota**
+    - changes of request param
+      - `+ producer_byte_rate`
+      - `+ consumer_byte_rate`
+      - `- producer-byte-rate`
+      - `- consumer-byte-rate`
+  - **DeleteKafkaTopicQuota**
+    - changes of request param
+      - `+ producer_byte_rate`
+      - `+ consumer_byte_rate`
+      - `- producer-byte-rate`
+      - `- consumer-byte-rate`
+  - **ShowKafkaTopicQuota**
+    - changes of response param
+      - `+ quotas.producer_byte_rate`
+      - `+ quotas.consumer_byte_rate`
+      - `- quotas.producer-byte-rate`
+      - `- quotas.consumer-byte-rate`
+  - **BatchDeleteMessageDiagnosisReports**
+    - changes of response param
+      - `+ results.success`
+      - `- results.result`
+  - **ListEngineProducts**
+    - changes of response param
+      - `+ products.properties.engine_versions`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowTrainingJobFlavors**
+    - changes of response param
+      - `+ flavors.support_engines`
+      - `+ flavors.support_groups`
+  - **ShowTrainingJobDetails**
+    - changes of response param
+      - `+ status.retention_time`
+      - `+ status.task_ips`
+      - `+ tasks.task_resource.support_engines`
+      - `+ tasks.task_resource.support_groups`
+  - **StopTrainingJob**
+    - changes of response param
+      - `+ status.retention_time`
+      - `+ status.task_ips`
+      - `+ tasks.task_resource.support_engines`
+      - `+ tasks.task_resource.support_groups`
+  - **CreateTrainingJob**
+    - changes of request param
+      - `+ spec.retention`
+      - `+ spec.reserved_time`
+    - changes of response param
+      - `+ status.retention_time`
+      - `+ status.task_ips`
+      - `+ tasks.task_resource.support_engines`
+      - `+ tasks.task_resource.support_groups`
+  - **ListTrainingJobs**
+    - changes of request param
+      - `+ tags`
+      - `+ host_ips`
+    - changes of response param
+      - `+ items.status.retention_time`
+      - `+ items.status.task_ips`
+      - `+ items.tasks.task_resource.support_engines`
+      - `+ items.tasks.task_resource.support_groups`
+
+### HuaweiCloud SDK ProjectMan
+
+- _API Version_
+  - V4
+- _Features_
+  - Support the following APIs:
+    - `ShowIpdFieldsV2`
+    - `CreateIpdProcessInstance`
+    - `PutIpdChangeReviewFormV2`
+    - `ListIpdLabels`
+    - `CreateIpdLabel`
+    - `UpdateIpdLabel`
+    - `DeleteIpdLabel`
+    - `CreateSprintSnapshots`
+    - `ListIssueSprintSnapshots`
+    - `ShowIpdThirdPartyAssociated`
+    - `UpdateIpdThirdParty`
+    - `AssociateIpdThirdParty`
+    - `DeleteIpdThirdParty`
+    - `AssociateIssues`
+    - `QueryIssueAssociatedItem`
+    - `BatchDeleteSnapshots`
+    - `BatchUpdateSnapshotDeletableFlag`
+    - `BatchCreateIssueSnapitems`
+    - `ListIssueBySnapIds`
+    - `BatchBaselineIpdIssues`
+    - `ListIpdReviewFormsByIssueId`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListIssueFields**
+    - changes of response param
+      - `+ result.id`
+      - `+ result.code`
+      - `+ result.created_date`
+      - `+ result.modified_by`
+      - `+ result.modified_date`
+      - `+ result.field_type_id`
+      - `+ result.field_type_name`
+      - `+ result.definition_type`
+      - `+ result.controlled`
+      - `+ result.immutable`
+      - `+ result.no`
+      - `+ result.option`
+      - `+ result.has_same_display_name`
+      - `* result: list<FieldVO> -> list<FieldLongDateVO>`
+  - **UploadIpdImageInIssue**
+    - changes of response param
+      - `+ result.category_layer_id`
+      - `+ result.assigned_cc`
+      - `+ result.plan_iteration`
+      - `+ result.feature_set`
+      - `+ result.expected_repair_date`
+      - `+ result.found_pi`
+      - `+ result.found_iteration`
+      - `+ result.reason_analysis`
+      - `+ result.repair_solution`
+      - `+ result.test_report`
+      - `+ result.sys_no_repair_reason`
+      - `+ result.sys_activation_reason`
+      - `+ result.sys_return_reason`
+      - `+ result.test_failures_times`
+      - `+ result.close_type`
+      - `+ result.plan_owner`
+      - `+ result.doing_owner`
+      - `+ result.delivered_owner`
+      - `+ result.checking_owner`
+      - `+ result.test_owner`
+      - `+ result.develop_owner`
+      - `+ result.processing_owner`
+      - `+ result.fixed_owner`
+      - `+ result.researchanddevelop_owner`
+      - `+ result.analyse_owner`
+      - `+ result.plan_start_date`
+      - `+ result.expect_delivery_time`
+      - `+ result.plan_test_end_date`
+      - `+ result.severity`
+      - `+ result.promised`
+      - `+ result.recipient`
+      - `+ result.sys_no_develop_reason`
+      - `+ result.val_feature`
+      - `+ result.function_scene`
+      - `* result.submitted_by: string -> list<UserEntity>`
+      - `+ result.labels.category_types`
+  - **DeleteIpdImageInIssue**
+    - changes of response param
+      - `+ result.category_layer_id`
+      - `+ result.assigned_cc`
+      - `+ result.plan_iteration`
+      - `+ result.feature_set`
+      - `+ result.expected_repair_date`
+      - `+ result.found_pi`
+      - `+ result.found_iteration`
+      - `+ result.reason_analysis`
+      - `+ result.repair_solution`
+      - `+ result.test_report`
+      - `+ result.sys_no_repair_reason`
+      - `+ result.sys_activation_reason`
+      - `+ result.sys_return_reason`
+      - `+ result.test_failures_times`
+      - `+ result.close_type`
+      - `+ result.plan_owner`
+      - `+ result.doing_owner`
+      - `+ result.delivered_owner`
+      - `+ result.checking_owner`
+      - `+ result.test_owner`
+      - `+ result.develop_owner`
+      - `+ result.processing_owner`
+      - `+ result.fixed_owner`
+      - `+ result.researchanddevelop_owner`
+      - `+ result.analyse_owner`
+      - `+ result.plan_start_date`
+      - `+ result.expect_delivery_time`
+      - `+ result.plan_test_end_date`
+      - `+ result.severity`
+      - `+ result.promised`
+      - `+ result.recipient`
+      - `+ result.sys_no_develop_reason`
+      - `+ result.val_feature`
+      - `+ result.function_scene`
+      - `* result.submitted_by: string -> list<UserEntity>`
+      - `+ result.labels.category_types`
+  - **ListIpdProjectIssues**
+    - changes of response param
+      - `* result.issues.activate_times: int32 -> string`
+      - `* result.issues.regression_failure_number: int32 -> string`
+      - `* result.issues.test_failures_times: int32 -> string`
+      - `+ result.issues.assigned_cc.role_id`
+      - `+ result.issues.assigned_cc.role_name`
+      - `+ result.issues.assigned_cc.role_code`
+      - `+ result.issues.status.linkage_node_fields`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBackgroundTasks**
+    - changes of request param
+      - `+ start`
+      - `- offset`
+  - **ShowCesHierarchy**
+    - changes of response param
+      - `- dimensions.children`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `* job_count: string -> int32`
+  - **ShowRecycleInstances**
+    - changes of response param
+      - `* recycle_instances.in_recycle_time: string -> int64`
+      - `* recycle_instances.auto_delete_time: string -> int64`
+  - **ModifyRecyclePolicy**
+    - changes of response param
+      - `* recycle_instances.in_recycle_time: string -> int64`
+      - `* recycle_instances.auto_delete_time: string -> int64`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `RestartInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResetConsumeOffset**
+    - changes of request param
+      - `* timestamp: string -> int64`
+  - **ResetConsumeOffsetForRocketMq**
+    - changes of request param
+      - `* timestamp: string -> int64`
+  - **ListBackgroundTasks**
+    - changes of request param
+      - `+ start`
+      - `- offset`
+  - **ListScheduledTasks**
+    - changes of response param
+      - `* job_count: string -> int32`
+  - **ShowBackgroundTaskProgress**
+    - changes of response param
+      - `* step_list.start_time: string -> int64`
+      - `* step_list.end_time: string -> int64`
+  - **ShowConsumerListOrDetails**
+    - changes of response param
+      - `+ brokers.queues.client_id`
+
 # 3.1.210 2026-08-13
 
 ### HuaweiCloud SDK DAS

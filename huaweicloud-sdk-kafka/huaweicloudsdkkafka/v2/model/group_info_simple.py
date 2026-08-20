@@ -41,7 +41,7 @@ class GroupInfoSimple:
         :type created_at: int
         :param group_id: **参数解释**： 消费组ID。 **取值范围**： 不涉及。
         :type group_id: str
-        :param state: **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        :param state: **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
         :type state: str
         :param coordinator_id: **参数解释**： 协调器编号。 **取值范围**： 不涉及。
         :type coordinator_id: int
@@ -122,7 +122,7 @@ class GroupInfoSimple:
     def state(self):
         r"""Gets the state of this GroupInfoSimple.
 
-        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
 
         :return: The state of this GroupInfoSimple.
         :rtype: str
@@ -133,7 +133,7 @@ class GroupInfoSimple:
     def state(self, state):
         r"""Sets the state of this GroupInfoSimple.
 
-        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - DEAD：消费组内没有任何成员，且没有任何元数据。 - EMPTY：消费组内没有任何成员，存在元数据。 - PREPARING_REBALANCE：准备开启rebalance。 - COMPLETING_REBALANCE：所有成员加入group。 - STABLE：消费组内成员可正常消费。
 
         :param state: The state of this GroupInfoSimple.
         :type state: str

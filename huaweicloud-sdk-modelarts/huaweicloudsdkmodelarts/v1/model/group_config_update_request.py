@@ -69,19 +69,19 @@ class GroupConfigUpdateRequest:
 
         :param id: **参数解释：** 部署ID。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type id: str
-        :param name: **参数解释：** 部署名称。 **约束限制：** 必填参数，不填不保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :param name: **参数解释：** 部署名称。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
         :param pool_id: **参数解释：** 资源池ID，查询指定资源池下的服务，默认不过滤。可通过[查询资源池列表](ShowPool.xml)获取。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type pool_id: str
-        :param framework: **参数解释：** 框架类型。 **约束限制：** 不填则为默认值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** COMMON
+        :param framework: **参数解释：** 框架类型。 **约束限制：** 不填保留原有值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** 不涉及。
         :type framework: str
-        :param count: **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填则为默认值。 **取值范围：** [1, 128]。 **默认取值：** 1
+        :param count: **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填保留原有值。 **取值范围：** [1, 128]。 **默认取值：** 不涉及。
         :type count: int
         :param deploy_type: **参数解释：** 部署类型。 **约束限制：** 不填保留原有值。 **取值范围：** - SINGLE：常规部署 - MULTI：分布式部署 **默认取值：** 不涉及
         :type deploy_type: str
-        :param system_log_dump_enable: **参数解释：** 系统日志转储开关。 **约束限制：** 不填则为默认值。 **取值范围：** 不涉及 **默认取值：** false
+        :param system_log_dump_enable: **参数解释：** 系统日志转储开关。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及。
         :type system_log_dump_enable: bool
-        :param unit_configs: **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 必填字段。 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param unit_configs: **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 不填保留原有值，填了全量覆盖原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type unit_configs: list[:class:`huaweicloudsdkmodelarts.v1.UnitConfig`]
         :param weight: **参数解释：** 权重百分比，分配到此模型的流量权重，仅当模型部署为在线服务时需要配置。 **约束限制：** 不填保留原有值。 **取值范围：** [0, 100]。 **默认取值：** 不涉及
         :type weight: int
@@ -91,9 +91,9 @@ class GroupConfigUpdateRequest:
         :type secret_name: str
         :param priority: **参数解释：** 服务优先级。 **约束限制：** - 如服务处于“运行中”，priority字段为必要参数，且value必须为原版的值； - 如服务处于“停止”，priority字段为非必要参数。 - 不填保留原有值。 **取值范围：** [1, 3]。 **默认取值：** 不涉及。
         :type priority: int
-        :param high_avail_switch: **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填则为默认值 **取值范围：** 不涉及 **默认取值：** true
+        :param high_avail_switch: **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填保留原有值 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type high_avail_switch: bool
-        :param description: **参数解释：** 部署备注。 **约束限制：** 不填则将部署描述清空。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
+        :param description: **参数解释：** 部署备注。 **约束限制：** 不填保留原有值。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
         :type description: str
         :param advanced_config: 
         :type advanced_config: :class:`huaweicloudsdkmodelarts.v1.AdvancedConfig`
@@ -107,7 +107,7 @@ class GroupConfigUpdateRequest:
         :type status: str
         :param deployment_task_limit: 
         :type deployment_task_limit: :class:`huaweicloudsdkmodelarts.v1.DeploymentTaskLimit`
-        :param schedule_strategy: **参数解释：** 调度策略。 **约束限制：** 不涉及。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
+        :param schedule_strategy: **参数解释：** 调度策略。 **约束限制：** 不填保留原有值。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
         :type schedule_strategy: str
         """
         
@@ -202,7 +202,7 @@ class GroupConfigUpdateRequest:
     def name(self):
         r"""Gets the name of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署名称。 **约束限制：** 必填参数，不填不保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 部署名称。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this GroupConfigUpdateRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class GroupConfigUpdateRequest:
     def name(self, name):
         r"""Sets the name of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署名称。 **约束限制：** 必填参数，不填不保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 部署名称。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this GroupConfigUpdateRequest.
         :type name: str
@@ -246,7 +246,7 @@ class GroupConfigUpdateRequest:
     def framework(self):
         r"""Gets the framework of this GroupConfigUpdateRequest.
 
-        **参数解释：** 框架类型。 **约束限制：** 不填则为默认值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** COMMON
+        **参数解释：** 框架类型。 **约束限制：** 不填保留原有值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** 不涉及。
 
         :return: The framework of this GroupConfigUpdateRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class GroupConfigUpdateRequest:
     def framework(self, framework):
         r"""Sets the framework of this GroupConfigUpdateRequest.
 
-        **参数解释：** 框架类型。 **约束限制：** 不填则为默认值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** COMMON
+        **参数解释：** 框架类型。 **约束限制：** 不填保留原有值。 **取值范围：** - COMMON：普通在线服务 - VLLM：VLLM框架 - MINDIE：MINDIE框架 **默认取值：** 不涉及。
 
         :param framework: The framework of this GroupConfigUpdateRequest.
         :type framework: str
@@ -268,7 +268,7 @@ class GroupConfigUpdateRequest:
     def count(self):
         r"""Gets the count of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填则为默认值。 **取值范围：** [1, 128]。 **默认取值：** 1
+        **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填保留原有值。 **取值范围：** [1, 128]。 **默认取值：** 不涉及。
 
         :return: The count of this GroupConfigUpdateRequest.
         :rtype: int
@@ -279,7 +279,7 @@ class GroupConfigUpdateRequest:
     def count(self, count):
         r"""Sets the count of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填则为默认值。 **取值范围：** [1, 128]。 **默认取值：** 1
+        **参数解释：** 部署场景下，服务实例数量。 **约束限制：** 不填保留原有值。 **取值范围：** [1, 128]。 **默认取值：** 不涉及。
 
         :param count: The count of this GroupConfigUpdateRequest.
         :type count: int
@@ -312,7 +312,7 @@ class GroupConfigUpdateRequest:
     def system_log_dump_enable(self):
         r"""Gets the system_log_dump_enable of this GroupConfigUpdateRequest.
 
-        **参数解释：** 系统日志转储开关。 **约束限制：** 不填则为默认值。 **取值范围：** 不涉及 **默认取值：** false
+        **参数解释：** 系统日志转储开关。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及。
 
         :return: The system_log_dump_enable of this GroupConfigUpdateRequest.
         :rtype: bool
@@ -323,7 +323,7 @@ class GroupConfigUpdateRequest:
     def system_log_dump_enable(self, system_log_dump_enable):
         r"""Sets the system_log_dump_enable of this GroupConfigUpdateRequest.
 
-        **参数解释：** 系统日志转储开关。 **约束限制：** 不填则为默认值。 **取值范围：** 不涉及 **默认取值：** false
+        **参数解释：** 系统日志转储开关。 **约束限制：** 不填保留原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及。
 
         :param system_log_dump_enable: The system_log_dump_enable of this GroupConfigUpdateRequest.
         :type system_log_dump_enable: bool
@@ -334,7 +334,7 @@ class GroupConfigUpdateRequest:
     def unit_configs(self):
         r"""Gets the unit_configs of this GroupConfigUpdateRequest.
 
-        **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 必填字段。 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 不填保留原有值，填了全量覆盖原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The unit_configs of this GroupConfigUpdateRequest.
         :rtype: list[:class:`huaweicloudsdkmodelarts.v1.UnitConfig`]
@@ -345,7 +345,7 @@ class GroupConfigUpdateRequest:
     def unit_configs(self, unit_configs):
         r"""Sets the unit_configs of this GroupConfigUpdateRequest.
 
-        **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 必填字段。 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 实例单元配置。 **约束限制：** - 单机推理时，个数只会为1；如果是分布式推理时，根据不同框架，实例单元配置可灵活配置。 - 不填保留原有值，填了全量覆盖原有值。 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param unit_configs: The unit_configs of this GroupConfigUpdateRequest.
         :type unit_configs: list[:class:`huaweicloudsdkmodelarts.v1.UnitConfig`]
@@ -444,7 +444,7 @@ class GroupConfigUpdateRequest:
     def high_avail_switch(self):
         r"""Gets the high_avail_switch of this GroupConfigUpdateRequest.
 
-        **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填则为默认值 **取值范围：** 不涉及 **默认取值：** true
+        **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填保留原有值 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The high_avail_switch of this GroupConfigUpdateRequest.
         :rtype: bool
@@ -455,7 +455,7 @@ class GroupConfigUpdateRequest:
     def high_avail_switch(self, high_avail_switch):
         r"""Sets the high_avail_switch of this GroupConfigUpdateRequest.
 
-        **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填则为默认值 **取值范围：** 不涉及 **默认取值：** true
+        **参数解释：** 高可用开关，开启后不同实例的pod将尽量均匀分布到不同的节点上。 **约束限制：** 不填保留原有值 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param high_avail_switch: The high_avail_switch of this GroupConfigUpdateRequest.
         :type high_avail_switch: bool
@@ -466,7 +466,7 @@ class GroupConfigUpdateRequest:
     def description(self):
         r"""Gets the description of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署备注。 **约束限制：** 不填则将部署描述清空。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
+        **参数解释：** 部署备注。 **约束限制：** 不填保留原有值。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
 
         :return: The description of this GroupConfigUpdateRequest.
         :rtype: str
@@ -477,7 +477,7 @@ class GroupConfigUpdateRequest:
     def description(self, description):
         r"""Sets the description of this GroupConfigUpdateRequest.
 
-        **参数解释：** 部署备注。 **约束限制：** 不填则将部署描述清空。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
+        **参数解释：** 部署备注。 **约束限制：** 不填保留原有值。 **取值范围：** 长度不可以超过512，不能包含大于号，小于号。 **默认取值：** 默认为空。
 
         :param description: The description of this GroupConfigUpdateRequest.
         :type description: str
@@ -608,7 +608,7 @@ class GroupConfigUpdateRequest:
     def schedule_strategy(self):
         r"""Gets the schedule_strategy of this GroupConfigUpdateRequest.
 
-        **参数解释：** 调度策略。 **约束限制：** 不涉及。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
+        **参数解释：** 调度策略。 **约束限制：** 不填保留原有值。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
 
         :return: The schedule_strategy of this GroupConfigUpdateRequest.
         :rtype: str
@@ -619,7 +619,7 @@ class GroupConfigUpdateRequest:
     def schedule_strategy(self, schedule_strategy):
         r"""Sets the schedule_strategy of this GroupConfigUpdateRequest.
 
-        **参数解释：** 调度策略。 **约束限制：** 不涉及。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
+        **参数解释：** 调度策略。 **约束限制：** 不填保留原有值。 **取值范围：** - HIGH_AVAILABILITY：高可用调度 - HIGH_UTILIZATION：紧凑调度 - HIGH_PERFORMANCE：高性能调度 **默认取值：** HIGH_AVAILABILITY。
 
         :param schedule_strategy: The schedule_strategy of this GroupConfigUpdateRequest.
         :type schedule_strategy: str

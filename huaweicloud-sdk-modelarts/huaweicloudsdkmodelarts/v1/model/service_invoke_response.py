@@ -29,7 +29,8 @@ class ServiceInvokeResponse:
         'request_retry_enable': 'bool',
         'request_retry_cnt_max': 'int',
         'request_retry_interval_ms': 'int',
-        'fuse_configs': 'FuseConfig'
+        'fuse_configs': 'FuseConfig',
+        'elb_connection': 'ElbConnectionResponse'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ServiceInvokeResponse:
         'request_retry_enable': 'request_retry_enable',
         'request_retry_cnt_max': 'request_retry_cnt_max',
         'request_retry_interval_ms': 'request_retry_interval_ms',
-        'fuse_configs': 'fuse_configs'
+        'fuse_configs': 'fuse_configs',
+        'elb_connection': 'elb_connection'
     }
 
-    def __init__(self, port=None, protocol=None, auth_type=None, internet_access_enable=None, intranet_approval_enable=None, dynamic_routing_enable=None, strategy=None, metric_api_scheme=None, metric_api_port=None, metric_api_path=None, ems_enable=None, request_retry_enable=None, request_retry_cnt_max=None, request_retry_interval_ms=None, fuse_configs=None):
+    def __init__(self, port=None, protocol=None, auth_type=None, internet_access_enable=None, intranet_approval_enable=None, dynamic_routing_enable=None, strategy=None, metric_api_scheme=None, metric_api_port=None, metric_api_path=None, ems_enable=None, request_retry_enable=None, request_retry_cnt_max=None, request_retry_interval_ms=None, fuse_configs=None, elb_connection=None):
         r"""ServiceInvokeResponse
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class ServiceInvokeResponse:
         :type request_retry_interval_ms: int
         :param fuse_configs: 
         :type fuse_configs: :class:`huaweicloudsdkmodelarts.v1.FuseConfig`
+        :param elb_connection: 
+        :type elb_connection: :class:`huaweicloudsdkmodelarts.v1.ElbConnectionResponse`
         """
         
         
@@ -104,6 +108,7 @@ class ServiceInvokeResponse:
         self._request_retry_cnt_max = None
         self._request_retry_interval_ms = None
         self._fuse_configs = None
+        self._elb_connection = None
         self.discriminator = None
 
         self.port = port
@@ -133,6 +138,8 @@ class ServiceInvokeResponse:
             self.request_retry_interval_ms = request_retry_interval_ms
         if fuse_configs is not None:
             self.fuse_configs = fuse_configs
+        if elb_connection is not None:
+            self.elb_connection = elb_connection
 
     @property
     def port(self):
@@ -459,6 +466,24 @@ class ServiceInvokeResponse:
         :type fuse_configs: :class:`huaweicloudsdkmodelarts.v1.FuseConfig`
         """
         self._fuse_configs = fuse_configs
+
+    @property
+    def elb_connection(self):
+        r"""Gets the elb_connection of this ServiceInvokeResponse.
+
+        :return: The elb_connection of this ServiceInvokeResponse.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ElbConnectionResponse`
+        """
+        return self._elb_connection
+
+    @elb_connection.setter
+    def elb_connection(self, elb_connection):
+        r"""Sets the elb_connection of this ServiceInvokeResponse.
+
+        :param elb_connection: The elb_connection of this ServiceInvokeResponse.
+        :type elb_connection: :class:`huaweicloudsdkmodelarts.v1.ElbConnectionResponse`
+        """
+        self._elb_connection = elb_connection
 
     def to_dict(self):
         result = {}

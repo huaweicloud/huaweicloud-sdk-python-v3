@@ -46,12 +46,10 @@ class CreateInstanceUserReq:
         self._user_passwd = None
         self.discriminator = None
 
-        if user_name is not None:
-            self.user_name = user_name
+        self.user_name = user_name
         if user_desc is not None:
             self.user_desc = user_desc
-        if user_passwd is not None:
-            self.user_passwd = user_passwd
+        self.user_passwd = user_passwd
 
     @property
     def user_name(self):

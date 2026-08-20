@@ -43,9 +43,9 @@ class ShowDeploymentFormRequest:
         :type solution: str
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param consistency: **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+        :param consistency: **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual  **默认取值**: 不涉及。
         :type consistency: str
-        :param consistency_protocol: **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+        :param consistency_protocol: **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos  **默认取值**: 不涉及。
         :type consistency_protocol: str
         :param engine_version: **参数解释**: 引擎版本号。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type engine_version: str
@@ -144,7 +144,7 @@ class ShowDeploymentFormRequest:
     def consistency(self):
         r"""Gets the consistency of this ShowDeploymentFormRequest.
 
-        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual  **默认取值**: 不涉及。
 
         :return: The consistency of this ShowDeploymentFormRequest.
         :rtype: str
@@ -155,7 +155,7 @@ class ShowDeploymentFormRequest:
     def consistency(self, consistency):
         r"""Sets the consistency of this ShowDeploymentFormRequest.
 
-        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual  **默认取值**: 不涉及。
 
         :param consistency: The consistency of this ShowDeploymentFormRequest.
         :type consistency: str
@@ -166,7 +166,7 @@ class ShowDeploymentFormRequest:
     def consistency_protocol(self):
         r"""Gets the consistency_protocol of this ShowDeploymentFormRequest.
 
-        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos  **默认取值**: 不涉及。
 
         :return: The consistency_protocol of this ShowDeploymentFormRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ShowDeploymentFormRequest:
     def consistency_protocol(self, consistency_protocol):
         r"""Sets the consistency_protocol of this ShowDeploymentFormRequest.
 
-        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos  **默认取值**: 不涉及。
 
         :param consistency_protocol: The consistency_protocol of this ShowDeploymentFormRequest.
         :type consistency_protocol: str

@@ -16,6 +16,7 @@ class LabelEntity:
 
     openapi_types = {
         'id': 'str',
+        'category_types': 'list[str]',
         'label_type': 'str',
         'color': 'str',
         'title': 'str'
@@ -23,29 +24,33 @@ class LabelEntity:
 
     attribute_map = {
         'id': 'id',
+        'category_types': 'category_types',
         'label_type': 'label_type',
         'color': 'color',
         'title': 'title'
     }
 
-    def __init__(self, id=None, label_type=None, color=None, title=None):
+    def __init__(self, id=None, category_types=None, label_type=None, color=None, title=None):
         r"""LabelEntity
 
         The model defined in huaweicloud sdk
 
-        :param id: 标签id
+        :param id: 标签ID，可通过查询标签列表接口获取，响应消息体中的id字段的值就是标签ID。
         :type id: str
-        :param label_type: 标签所属工作项类型，对应工作项的type字段
+        :param category_types: 标签所属工作项类型编码。
+        :type category_types: list[str]
+        :param label_type: 标签所属工作项类型，对应工作项的type字段，枚举类型。
         :type label_type: str
-        :param color: 标签颜色RGB
+        :param color: 标签颜色RGB。 0~16个字符。
         :type color: str
-        :param title: 标签标题
+        :param title: 标签标题。 1~30个字符。
         :type title: str
         """
         
         
 
         self._id = None
+        self._category_types = None
         self._label_type = None
         self._color = None
         self._title = None
@@ -53,6 +58,8 @@ class LabelEntity:
 
         if id is not None:
             self.id = id
+        if category_types is not None:
+            self.category_types = category_types
         if label_type is not None:
             self.label_type = label_type
         if color is not None:
@@ -64,7 +71,7 @@ class LabelEntity:
     def id(self):
         r"""Gets the id of this LabelEntity.
 
-        标签id
+        标签ID，可通过查询标签列表接口获取，响应消息体中的id字段的值就是标签ID。
 
         :return: The id of this LabelEntity.
         :rtype: str
@@ -75,7 +82,7 @@ class LabelEntity:
     def id(self, id):
         r"""Sets the id of this LabelEntity.
 
-        标签id
+        标签ID，可通过查询标签列表接口获取，响应消息体中的id字段的值就是标签ID。
 
         :param id: The id of this LabelEntity.
         :type id: str
@@ -83,10 +90,32 @@ class LabelEntity:
         self._id = id
 
     @property
+    def category_types(self):
+        r"""Gets the category_types of this LabelEntity.
+
+        标签所属工作项类型编码。
+
+        :return: The category_types of this LabelEntity.
+        :rtype: list[str]
+        """
+        return self._category_types
+
+    @category_types.setter
+    def category_types(self, category_types):
+        r"""Sets the category_types of this LabelEntity.
+
+        标签所属工作项类型编码。
+
+        :param category_types: The category_types of this LabelEntity.
+        :type category_types: list[str]
+        """
+        self._category_types = category_types
+
+    @property
     def label_type(self):
         r"""Gets the label_type of this LabelEntity.
 
-        标签所属工作项类型，对应工作项的type字段
+        标签所属工作项类型，对应工作项的type字段，枚举类型。
 
         :return: The label_type of this LabelEntity.
         :rtype: str
@@ -97,7 +126,7 @@ class LabelEntity:
     def label_type(self, label_type):
         r"""Sets the label_type of this LabelEntity.
 
-        标签所属工作项类型，对应工作项的type字段
+        标签所属工作项类型，对应工作项的type字段，枚举类型。
 
         :param label_type: The label_type of this LabelEntity.
         :type label_type: str
@@ -108,7 +137,7 @@ class LabelEntity:
     def color(self):
         r"""Gets the color of this LabelEntity.
 
-        标签颜色RGB
+        标签颜色RGB。 0~16个字符。
 
         :return: The color of this LabelEntity.
         :rtype: str
@@ -119,7 +148,7 @@ class LabelEntity:
     def color(self, color):
         r"""Sets the color of this LabelEntity.
 
-        标签颜色RGB
+        标签颜色RGB。 0~16个字符。
 
         :param color: The color of this LabelEntity.
         :type color: str
@@ -130,7 +159,7 @@ class LabelEntity:
     def title(self):
         r"""Gets the title of this LabelEntity.
 
-        标签标题
+        标签标题。 1~30个字符。
 
         :return: The title of this LabelEntity.
         :rtype: str
@@ -141,7 +170,7 @@ class LabelEntity:
     def title(self, title):
         r"""Sets the title of this LabelEntity.
 
-        标签标题
+        标签标题。 1~30个字符。
 
         :param title: The title of this LabelEntity.
         :type title: str

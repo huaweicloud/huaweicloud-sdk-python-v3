@@ -16,51 +16,20 @@ class BatchDeleteConnectionNewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'status': 'bool'
     }
 
     attribute_map = {
-        'status': 'status'
     }
 
-    def __init__(self, status=None):
+    def __init__(self):
         r"""BatchDeleteConnectionNewResponse
 
         The model defined in huaweicloud sdk
 
-        :param status: 操作是否成功
-        :type status: bool
         """
         
         super().__init__()
-
-        self._status = None
         self.discriminator = None
-
-        if status is not None:
-            self.status = status
-
-    @property
-    def status(self):
-        r"""Gets the status of this BatchDeleteConnectionNewResponse.
-
-        操作是否成功
-
-        :return: The status of this BatchDeleteConnectionNewResponse.
-        :rtype: bool
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this BatchDeleteConnectionNewResponse.
-
-        操作是否成功
-
-        :param status: The status of this BatchDeleteConnectionNewResponse.
-        :type status: bool
-        """
-        self._status = status
 
     def to_dict(self):
         import warnings

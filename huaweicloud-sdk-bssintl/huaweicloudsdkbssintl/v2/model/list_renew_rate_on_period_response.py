@@ -36,15 +36,15 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param currency: |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        :param currency: 币种。USD：美元。值为空代表美元。
         :type currency: str
-        :param renew_inquiry_results: |参数名称：主资源（包含从资源）询价结果| |参数约束以及描述：主资源（包含从资源）询价结果|
+        :param renew_inquiry_results: 主资源（包含从资源）询价结果。具体请参见表RenewInquiryResultInfo。
         :type renew_inquiry_results: list[:class:`huaweicloudsdkbssintl.v2.RenewInquiryResultInfo`]
         :param official_website_rating_result: 
         :type official_website_rating_result: :class:`huaweicloudsdkbssintl.v2.OfficialWebsiteRatingResultV2`
-        :param optional_discount_rating_results: |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数约束以及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
+        :param optional_discount_rating_results: 存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表OptionalDiscountRatingResultV2。
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResultV2`]
-        :param fail_resource_infos: |参数名称：失败的资源信息列表| |参数约束以及描述：失败的资源信息列表|
+        :param fail_resource_infos: 失败的资源信息列表。具体请参见表FailResourceInfo。
         :type fail_resource_infos: list[:class:`huaweicloudsdkbssintl.v2.FailResourceInfo`]
         """
         
@@ -72,7 +72,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def currency(self):
         r"""Gets the currency of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。USD：美元。值为空代表美元。
 
         :return: The currency of this ListRenewRateOnPeriodResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def currency(self, currency):
         r"""Sets the currency of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。USD：美元。值为空代表美元。
 
         :param currency: The currency of this ListRenewRateOnPeriodResponse.
         :type currency: str
@@ -94,7 +94,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def renew_inquiry_results(self):
         r"""Gets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：主资源（包含从资源）询价结果| |参数约束以及描述：主资源（包含从资源）询价结果|
+        主资源（包含从资源）询价结果。具体请参见表RenewInquiryResultInfo。
 
         :return: The renew_inquiry_results of this ListRenewRateOnPeriodResponse.
         :rtype: list[:class:`huaweicloudsdkbssintl.v2.RenewInquiryResultInfo`]
@@ -105,7 +105,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def renew_inquiry_results(self, renew_inquiry_results):
         r"""Sets the renew_inquiry_results of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：主资源（包含从资源）询价结果| |参数约束以及描述：主资源（包含从资源）询价结果|
+        主资源（包含从资源）询价结果。具体请参见表RenewInquiryResultInfo。
 
         :param renew_inquiry_results: The renew_inquiry_results of this ListRenewRateOnPeriodResponse.
         :type renew_inquiry_results: list[:class:`huaweicloudsdkbssintl.v2.RenewInquiryResultInfo`]
@@ -134,7 +134,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def optional_discount_rating_results(self):
         r"""Gets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数约束以及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表OptionalDiscountRatingResultV2。
 
         :return: The optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
         :rtype: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResultV2`]
@@ -145,7 +145,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def optional_discount_rating_results(self, optional_discount_rating_results):
         r"""Sets the optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数约束以及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表OptionalDiscountRatingResultV2。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this ListRenewRateOnPeriodResponse.
         :type optional_discount_rating_results: list[:class:`huaweicloudsdkbssintl.v2.OptionalDiscountRatingResultV2`]
@@ -156,7 +156,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def fail_resource_infos(self):
         r"""Gets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：失败的资源信息列表| |参数约束以及描述：失败的资源信息列表|
+        失败的资源信息列表。具体请参见表FailResourceInfo。
 
         :return: The fail_resource_infos of this ListRenewRateOnPeriodResponse.
         :rtype: list[:class:`huaweicloudsdkbssintl.v2.FailResourceInfo`]
@@ -167,7 +167,7 @@ class ListRenewRateOnPeriodResponse(SdkResponse):
     def fail_resource_infos(self, fail_resource_infos):
         r"""Sets the fail_resource_infos of this ListRenewRateOnPeriodResponse.
 
-        |参数名称：失败的资源信息列表| |参数约束以及描述：失败的资源信息列表|
+        失败的资源信息列表。具体请参见表FailResourceInfo。
 
         :param fail_resource_infos: The fail_resource_infos of this ListRenewRateOnPeriodResponse.
         :type fail_resource_infos: list[:class:`huaweicloudsdkbssintl.v2.FailResourceInfo`]

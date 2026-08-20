@@ -27,7 +27,8 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         'table_space_stat': 'HealthReportTableSpaceNewStat',
         'slow_log_stat': 'HealthReportSlowLogStat',
         'full_sql_stat': 'HealthReportFullSqlStat',
-        'inspection_stat': 'HealthReportInspectionStat'
+        'inspection_stat': 'HealthReportInspectionStat',
+        'error_message': 'str'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         'table_space_stat': 'table_space_stat',
         'slow_log_stat': 'slow_log_stat',
         'full_sql_stat': 'full_sql_stat',
-        'inspection_stat': 'inspection_stat'
+        'inspection_stat': 'inspection_stat',
+        'error_message': 'error_message'
     }
 
-    def __init__(self, success=None, start_at=None, end_at=None, task_id=None, summary_info=None, instance_info=None, performance_stat=None, disk_stat=None, table_space_stat=None, slow_log_stat=None, full_sql_stat=None, inspection_stat=None):
+    def __init__(self, success=None, start_at=None, end_at=None, task_id=None, summary_info=None, instance_info=None, performance_stat=None, disk_stat=None, table_space_stat=None, slow_log_stat=None, full_sql_stat=None, inspection_stat=None, error_message=None):
         r"""ShowLatestInstanceHealthReportResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         :type full_sql_stat: :class:`huaweicloudsdkdas.v3.HealthReportFullSqlStat`
         :param inspection_stat: 
         :type inspection_stat: :class:`huaweicloudsdkdas.v3.HealthReportInspectionStat`
+        :param error_message: 错误信息
+        :type error_message: str
         """
         
         super().__init__()
@@ -90,6 +94,7 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         self._slow_log_stat = None
         self._full_sql_stat = None
         self._inspection_stat = None
+        self._error_message = None
         self.discriminator = None
 
         if success is not None:
@@ -116,6 +121,8 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
             self.full_sql_stat = full_sql_stat
         if inspection_stat is not None:
             self.inspection_stat = inspection_stat
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def success(self):
@@ -348,6 +355,28 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         :type inspection_stat: :class:`huaweicloudsdkdas.v3.HealthReportInspectionStat`
         """
         self._inspection_stat = inspection_stat
+
+    @property
+    def error_message(self):
+        r"""Gets the error_message of this ShowLatestInstanceHealthReportResponse.
+
+        错误信息
+
+        :return: The error_message of this ShowLatestInstanceHealthReportResponse.
+        :rtype: str
+        """
+        return self._error_message
+
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this ShowLatestInstanceHealthReportResponse.
+
+        错误信息
+
+        :param error_message: The error_message of this ShowLatestInstanceHealthReportResponse.
+        :type error_message: str
+        """
+        self._error_message = error_message
 
     def to_dict(self):
         import warnings

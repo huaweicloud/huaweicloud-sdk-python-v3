@@ -16,6 +16,7 @@ class ShowDomainStatsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'group_by': 'str',
         'start_time': 'int',
         'end_time': 'int',
         'stat_type': 'str',
@@ -25,6 +26,7 @@ class ShowDomainStatsResponse(SdkResponse):
     }
 
     attribute_map = {
+        'group_by': 'group_by',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'stat_type': 'stat_type',
@@ -33,27 +35,30 @@ class ShowDomainStatsResponse(SdkResponse):
         'result': 'result'
     }
 
-    def __init__(self, start_time=None, end_time=None, stat_type=None, action=None, interval=None, result=None):
+    def __init__(self, group_by=None, start_time=None, end_time=None, stat_type=None, action=None, interval=None, result=None):
         r"""ShowDomainStatsResponse
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 查询起始时间戳。
+        :param group_by: **参数解释：** 数据分组方式 **取值范围：** domain：按域名分组 **默认取值：** 不分组
+        :type group_by: str
+        :param start_time: **参数解释：** 查询起始时间戳 **取值范围：** 不涉及
         :type start_time: int
-        :param end_time: 查询结束时间戳
+        :param end_time: **参数解释：** 查询结束时间戳 **取值范围：** 不涉及
         :type end_time: int
-        :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
+        :param stat_type: **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
         :type stat_type: str
-        :param action: **参数解释：** 规则行为 **约束限制：** 不涉及
+        :param action: **参数解释：** 查询数据类型 **取值范围：** - summary：汇总数据 - detail：明细数据
         :type action: str
-        :param interval: 查询时间间隔，单位：秒
+        :param interval: **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 &gt; 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
         :type interval: int
-        :param result: 按指定的分组方式组织的数据
+        :param result: **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
         :type result: dict(str, object)
         """
         
         super().__init__()
 
+        self._group_by = None
         self._start_time = None
         self._end_time = None
         self._stat_type = None
@@ -62,6 +67,8 @@ class ShowDomainStatsResponse(SdkResponse):
         self._result = None
         self.discriminator = None
 
+        if group_by is not None:
+            self.group_by = group_by
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
@@ -76,10 +83,32 @@ class ShowDomainStatsResponse(SdkResponse):
             self.result = result
 
     @property
+    def group_by(self):
+        r"""Gets the group_by of this ShowDomainStatsResponse.
+
+        **参数解释：** 数据分组方式 **取值范围：** domain：按域名分组 **默认取值：** 不分组
+
+        :return: The group_by of this ShowDomainStatsResponse.
+        :rtype: str
+        """
+        return self._group_by
+
+    @group_by.setter
+    def group_by(self, group_by):
+        r"""Sets the group_by of this ShowDomainStatsResponse.
+
+        **参数解释：** 数据分组方式 **取值范围：** domain：按域名分组 **默认取值：** 不分组
+
+        :param group_by: The group_by of this ShowDomainStatsResponse.
+        :type group_by: str
+        """
+        self._group_by = group_by
+
+    @property
     def start_time(self):
         r"""Gets the start_time of this ShowDomainStatsResponse.
 
-        查询起始时间戳。
+        **参数解释：** 查询起始时间戳 **取值范围：** 不涉及
 
         :return: The start_time of this ShowDomainStatsResponse.
         :rtype: int
@@ -90,7 +119,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowDomainStatsResponse.
 
-        查询起始时间戳。
+        **参数解释：** 查询起始时间戳 **取值范围：** 不涉及
 
         :param start_time: The start_time of this ShowDomainStatsResponse.
         :type start_time: int
@@ -101,7 +130,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def end_time(self):
         r"""Gets the end_time of this ShowDomainStatsResponse.
 
-        查询结束时间戳
+        **参数解释：** 查询结束时间戳 **取值范围：** 不涉及
 
         :return: The end_time of this ShowDomainStatsResponse.
         :rtype: int
@@ -112,7 +141,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowDomainStatsResponse.
 
-        查询结束时间戳
+        **参数解释：** 查询结束时间戳 **取值范围：** 不涉及
 
         :param end_time: The end_time of this ShowDomainStatsResponse.
         :type end_time: int
@@ -123,7 +152,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def stat_type(self):
         r"""Gets the stat_type of this ShowDomainStatsResponse.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
 
         :return: The stat_type of this ShowDomainStatsResponse.
         :rtype: str
@@ -134,7 +163,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ShowDomainStatsResponse.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **取值范围：** - flux：流量 - req_num：请求总数
 
         :param stat_type: The stat_type of this ShowDomainStatsResponse.
         :type stat_type: str
@@ -145,7 +174,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def action(self):
         r"""Gets the action of this ShowDomainStatsResponse.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 查询数据类型 **取值范围：** - summary：汇总数据 - detail：明细数据
 
         :return: The action of this ShowDomainStatsResponse.
         :rtype: str
@@ -156,7 +185,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def action(self, action):
         r"""Sets the action of this ShowDomainStatsResponse.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 查询数据类型 **取值范围：** - summary：汇总数据 - detail：明细数据
 
         :param action: The action of this ShowDomainStatsResponse.
         :type action: str
@@ -167,7 +196,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def interval(self):
         r"""Gets the interval of this ShowDomainStatsResponse.
 
-        查询时间间隔，单位：秒
+        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
 
         :return: The interval of this ShowDomainStatsResponse.
         :rtype: int
@@ -178,7 +207,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def interval(self, interval):
         r"""Sets the interval of this ShowDomainStatsResponse.
 
-        查询时间间隔，单位：秒
+        **参数解释：** 查询时间粒度 **取值范围：** - 300：采样时间间隔为5分钟，单位：秒 - 3600：采样时间间隔为1小时，单位：秒 - 86400：采样时间间隔为1天，单位：秒 **默认取值：** 默认取对应时间跨度的最小间隔 > 时间跨度小于等于7天，最小时间间隔为300；时间跨度大于7天，最小时间间隔为3600
 
         :param interval: The interval of this ShowDomainStatsResponse.
         :type interval: int
@@ -189,7 +218,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ShowDomainStatsResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
 
         :return: The result of this ShowDomainStatsResponse.
         :rtype: dict(str, object)
@@ -200,7 +229,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ShowDomainStatsResponse.
 
-        按指定的分组方式组织的数据
+        **参数解释：** 按指定的分组方式组织的数据 **取值范围：** 不涉及
 
         :param result: The result of this ShowDomainStatsResponse.
         :type result: dict(str, object)

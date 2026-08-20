@@ -31,11 +31,11 @@ class OfficialWebsiteRatingResultV2:
 
         The model defined in huaweicloud sdk
 
-        :param official_website_amount: |参数名称：官网价格。单位为元| |参数约束及描述：官网价格。单位为元|
+        :param official_website_amount: 官网价格。单位为元
         :type official_website_amount: str
-        :param installment_official_website_amount: |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        :param installment_official_website_amount: 分期金额的官网价。单位为元
         :type installment_official_website_amount: str
-        :param installment_period_type: |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        :param installment_period_type: 分期付款的周期类型。2：月
         :type installment_period_type: int
         """
         
@@ -57,7 +57,7 @@ class OfficialWebsiteRatingResultV2:
     def official_website_amount(self):
         r"""Gets the official_website_amount of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：官网价格。单位为元| |参数约束及描述：官网价格。单位为元|
+        官网价格。单位为元
 
         :return: The official_website_amount of this OfficialWebsiteRatingResultV2.
         :rtype: str
@@ -68,7 +68,7 @@ class OfficialWebsiteRatingResultV2:
     def official_website_amount(self, official_website_amount):
         r"""Sets the official_website_amount of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：官网价格。单位为元| |参数约束及描述：官网价格。单位为元|
+        官网价格。单位为元
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResultV2.
         :type official_website_amount: str
@@ -79,7 +79,7 @@ class OfficialWebsiteRatingResultV2:
     def installment_official_website_amount(self):
         r"""Gets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        分期金额的官网价。单位为元
 
         :return: The installment_official_website_amount of this OfficialWebsiteRatingResultV2.
         :rtype: str
@@ -90,7 +90,7 @@ class OfficialWebsiteRatingResultV2:
     def installment_official_website_amount(self, installment_official_website_amount):
         r"""Sets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
+        分期金额的官网价。单位为元
 
         :param installment_official_website_amount: The installment_official_website_amount of this OfficialWebsiteRatingResultV2.
         :type installment_official_website_amount: str
@@ -101,7 +101,7 @@ class OfficialWebsiteRatingResultV2:
     def installment_period_type(self):
         r"""Gets the installment_period_type of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        分期付款的周期类型。2：月
 
         :return: The installment_period_type of this OfficialWebsiteRatingResultV2.
         :rtype: int
@@ -112,7 +112,7 @@ class OfficialWebsiteRatingResultV2:
     def installment_period_type(self, installment_period_type):
         r"""Sets the installment_period_type of this OfficialWebsiteRatingResultV2.
 
-        |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
+        分期付款的周期类型。2：月
 
         :param installment_period_type: The installment_period_type of this OfficialWebsiteRatingResultV2.
         :type installment_period_type: int

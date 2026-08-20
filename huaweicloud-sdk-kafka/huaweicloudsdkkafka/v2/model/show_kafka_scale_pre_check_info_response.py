@@ -16,138 +16,51 @@ class ShowKafkaScalePreCheckInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'success': 'bool',
-        'reason': 'str',
-        'risk': 'str'
+        'body': 'list[ShowKafkaScalePreCheckInfoEntity]'
     }
 
     attribute_map = {
-        'name': 'name',
-        'success': 'success',
-        'reason': 'reason',
-        'risk': 'risk'
+        'body': 'body'
     }
 
-    def __init__(self, name=None, success=None, reason=None, risk=None):
+    def __init__(self, body=None):
         r"""ShowKafkaScalePreCheckInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 检查项名称。  **取值范围**： 不涉及。
-        :type name: str
-        :param success: **参数解释**： 检查项状态。 **取值范围**： - true：正常。 - false：异常。
-        :type success: bool
-        :param reason: **参数解释**： 失败原因。    **取值范围**： 不涉及。
-        :type reason: str
-        :param risk: **参数解释**： 风险等级。   **取值范围**： - low：低风险。 - medium：中风险。 - high：高风险。
-        :type risk: str
+        :param body: **参数解释**： 扩容前置检查信息。
+        :type body: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaScalePreCheckInfoEntity`]
         """
         
         super().__init__()
 
-        self._name = None
-        self._success = None
-        self._reason = None
-        self._risk = None
+        self._body = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if success is not None:
-            self.success = success
-        if reason is not None:
-            self.reason = reason
-        if risk is not None:
-            self.risk = risk
+        if body is not None:
+            self.body = body
 
     @property
-    def name(self):
-        r"""Gets the name of this ShowKafkaScalePreCheckInfoResponse.
+    def body(self):
+        r"""Gets the body of this ShowKafkaScalePreCheckInfoResponse.
 
-        **参数解释**： 检查项名称。  **取值范围**： 不涉及。
+        **参数解释**： 扩容前置检查信息。
 
-        :return: The name of this ShowKafkaScalePreCheckInfoResponse.
-        :rtype: str
+        :return: The body of this ShowKafkaScalePreCheckInfoResponse.
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaScalePreCheckInfoEntity`]
         """
-        return self._name
+        return self._body
 
-    @name.setter
-    def name(self, name):
-        r"""Sets the name of this ShowKafkaScalePreCheckInfoResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this ShowKafkaScalePreCheckInfoResponse.
 
-        **参数解释**： 检查项名称。  **取值范围**： 不涉及。
+        **参数解释**： 扩容前置检查信息。
 
-        :param name: The name of this ShowKafkaScalePreCheckInfoResponse.
-        :type name: str
+        :param body: The body of this ShowKafkaScalePreCheckInfoResponse.
+        :type body: list[:class:`huaweicloudsdkkafka.v2.ShowKafkaScalePreCheckInfoEntity`]
         """
-        self._name = name
-
-    @property
-    def success(self):
-        r"""Gets the success of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 检查项状态。 **取值范围**： - true：正常。 - false：异常。
-
-        :return: The success of this ShowKafkaScalePreCheckInfoResponse.
-        :rtype: bool
-        """
-        return self._success
-
-    @success.setter
-    def success(self, success):
-        r"""Sets the success of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 检查项状态。 **取值范围**： - true：正常。 - false：异常。
-
-        :param success: The success of this ShowKafkaScalePreCheckInfoResponse.
-        :type success: bool
-        """
-        self._success = success
-
-    @property
-    def reason(self):
-        r"""Gets the reason of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 失败原因。    **取值范围**： 不涉及。
-
-        :return: The reason of this ShowKafkaScalePreCheckInfoResponse.
-        :rtype: str
-        """
-        return self._reason
-
-    @reason.setter
-    def reason(self, reason):
-        r"""Sets the reason of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 失败原因。    **取值范围**： 不涉及。
-
-        :param reason: The reason of this ShowKafkaScalePreCheckInfoResponse.
-        :type reason: str
-        """
-        self._reason = reason
-
-    @property
-    def risk(self):
-        r"""Gets the risk of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 风险等级。   **取值范围**： - low：低风险。 - medium：中风险。 - high：高风险。
-
-        :return: The risk of this ShowKafkaScalePreCheckInfoResponse.
-        :rtype: str
-        """
-        return self._risk
-
-    @risk.setter
-    def risk(self, risk):
-        r"""Sets the risk of this ShowKafkaScalePreCheckInfoResponse.
-
-        **参数解释**： 风险等级。   **取值范围**： - low：低风险。 - medium：中风险。 - high：高风险。
-
-        :param risk: The risk of this ShowKafkaScalePreCheckInfoResponse.
-        :type risk: str
-        """
-        self._risk = risk
+        self._body = body
 
     def to_dict(self):
         import warnings

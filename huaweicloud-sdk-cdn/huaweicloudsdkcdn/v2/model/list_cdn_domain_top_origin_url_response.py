@@ -28,7 +28,7 @@ class ListCdnDomainTopOriginUrlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param top_origin_url_summary: 详情数据对象。
+        :param top_origin_url_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_origin_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopOriginUrlSummary`]
         """
         
@@ -44,7 +44,7 @@ class ListCdnDomainTopOriginUrlResponse(SdkResponse):
     def top_origin_url_summary(self):
         r"""Gets the top_origin_url_summary of this ListCdnDomainTopOriginUrlResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_origin_url_summary of this ListCdnDomainTopOriginUrlResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopOriginUrlSummary`]
@@ -55,7 +55,7 @@ class ListCdnDomainTopOriginUrlResponse(SdkResponse):
     def top_origin_url_summary(self, top_origin_url_summary):
         r"""Sets the top_origin_url_summary of this ListCdnDomainTopOriginUrlResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_origin_url_summary: The top_origin_url_summary of this ListCdnDomainTopOriginUrlResponse.
         :type top_origin_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopOriginUrlSummary`]

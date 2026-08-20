@@ -16,6 +16,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'datastore_version': 'str',
         'datastore_name': 'str',
         'created': 'str',
@@ -24,6 +25,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     }
 
     attribute_map = {
+        'id': 'id',
         'datastore_version': 'datastore_version',
         'datastore_name': 'datastore_name',
         'created': 'created',
@@ -31,25 +33,28 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
         'configuration_parameters': 'configuration_parameters'
     }
 
-    def __init__(self, datastore_version=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
+    def __init__(self, id=None, datastore_version=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
         r"""ShowInstanceParamGroupDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param datastore_version: 引擎版本。
+        :param id: **参数解释**: 实例对应参数组ID。 **取值范围**: 不涉及。
+        :type id: str
+        :param datastore_version: **参数解释**: 引擎版本。 **取值范围**: 不涉及。
         :type datastore_version: str
-        :param datastore_name: 引擎名称。
+        :param datastore_name: **参数解释**: 引擎名称。 **取值范围**: 不涉及。
         :type datastore_name: str
-        :param created: 创建时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。
+        :param created: **参数解释**: 创建时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。 **取值范围**: 不涉及。
         :type created: str
-        :param updated: 更新时间，格式为\&quot;yyyy-MM-ddHH:mm:ss\&quot;。
+        :param updated: **参数解释**: 更新时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。 **取值范围**: 不涉及。
         :type updated: str
-        :param configuration_parameters: 参数对象，用户基于默认参数模板自定义的参数配置。
+        :param configuration_parameters: **参数解释**: 参数对象，用户基于默认参数模板自定义的参数配置，具体请参考ConfigurationParameterResult。
         :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]
         """
         
         super().__init__()
 
+        self._id = None
         self._datastore_version = None
         self._datastore_name = None
         self._created = None
@@ -57,6 +62,8 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
         self._configuration_parameters = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if datastore_version is not None:
             self.datastore_version = datastore_version
         if datastore_name is not None:
@@ -69,10 +76,32 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
             self.configuration_parameters = configuration_parameters
 
     @property
+    def id(self):
+        r"""Gets the id of this ShowInstanceParamGroupDetailResponse.
+
+        **参数解释**: 实例对应参数组ID。 **取值范围**: 不涉及。
+
+        :return: The id of this ShowInstanceParamGroupDetailResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ShowInstanceParamGroupDetailResponse.
+
+        **参数解释**: 实例对应参数组ID。 **取值范围**: 不涉及。
+
+        :param id: The id of this ShowInstanceParamGroupDetailResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
     def datastore_version(self):
         r"""Gets the datastore_version of this ShowInstanceParamGroupDetailResponse.
 
-        引擎版本。
+        **参数解释**: 引擎版本。 **取值范围**: 不涉及。
 
         :return: The datastore_version of this ShowInstanceParamGroupDetailResponse.
         :rtype: str
@@ -83,7 +112,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def datastore_version(self, datastore_version):
         r"""Sets the datastore_version of this ShowInstanceParamGroupDetailResponse.
 
-        引擎版本。
+        **参数解释**: 引擎版本。 **取值范围**: 不涉及。
 
         :param datastore_version: The datastore_version of this ShowInstanceParamGroupDetailResponse.
         :type datastore_version: str
@@ -94,7 +123,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def datastore_name(self):
         r"""Gets the datastore_name of this ShowInstanceParamGroupDetailResponse.
 
-        引擎名称。
+        **参数解释**: 引擎名称。 **取值范围**: 不涉及。
 
         :return: The datastore_name of this ShowInstanceParamGroupDetailResponse.
         :rtype: str
@@ -105,7 +134,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def datastore_name(self, datastore_name):
         r"""Sets the datastore_name of this ShowInstanceParamGroupDetailResponse.
 
-        引擎名称。
+        **参数解释**: 引擎名称。 **取值范围**: 不涉及。
 
         :param datastore_name: The datastore_name of this ShowInstanceParamGroupDetailResponse.
         :type datastore_name: str
@@ -116,7 +145,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def created(self):
         r"""Gets the created of this ShowInstanceParamGroupDetailResponse.
 
-        创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
+        **参数解释**: 创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。 **取值范围**: 不涉及。
 
         :return: The created of this ShowInstanceParamGroupDetailResponse.
         :rtype: str
@@ -127,7 +156,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def created(self, created):
         r"""Sets the created of this ShowInstanceParamGroupDetailResponse.
 
-        创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
+        **参数解释**: 创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。 **取值范围**: 不涉及。
 
         :param created: The created of this ShowInstanceParamGroupDetailResponse.
         :type created: str
@@ -138,7 +167,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def updated(self):
         r"""Gets the updated of this ShowInstanceParamGroupDetailResponse.
 
-        更新时间，格式为\"yyyy-MM-ddHH:mm:ss\"。
+        **参数解释**: 更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。 **取值范围**: 不涉及。
 
         :return: The updated of this ShowInstanceParamGroupDetailResponse.
         :rtype: str
@@ -149,7 +178,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def updated(self, updated):
         r"""Sets the updated of this ShowInstanceParamGroupDetailResponse.
 
-        更新时间，格式为\"yyyy-MM-ddHH:mm:ss\"。
+        **参数解释**: 更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。 **取值范围**: 不涉及。
 
         :param updated: The updated of this ShowInstanceParamGroupDetailResponse.
         :type updated: str
@@ -160,7 +189,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def configuration_parameters(self):
         r"""Gets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
 
-        参数对象，用户基于默认参数模板自定义的参数配置。
+        **参数解释**: 参数对象，用户基于默认参数模板自定义的参数配置，具体请参考ConfigurationParameterResult。
 
         :return: The configuration_parameters of this ShowInstanceParamGroupDetailResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]
@@ -171,7 +200,7 @@ class ShowInstanceParamGroupDetailResponse(SdkResponse):
     def configuration_parameters(self, configuration_parameters):
         r"""Sets the configuration_parameters of this ShowInstanceParamGroupDetailResponse.
 
-        参数对象，用户基于默认参数模板自定义的参数配置。
+        **参数解释**: 参数对象，用户基于默认参数模板自定义的参数配置，具体请参考ConfigurationParameterResult。
 
         :param configuration_parameters: The configuration_parameters of this ShowInstanceParamGroupDetailResponse.
         :type configuration_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationParameterResult`]

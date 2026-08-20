@@ -31,11 +31,11 @@ class FailResourceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: |参数名称：错误码| |参数约束及描述：错误码|
+        :param error_code: 状态码。
         :type error_code: str
-        :param error_msg: |参数名称：错误描述| |参数约束及描述：错误描述|
+        :param error_msg: 错误描述信息。
         :type error_msg: str
-        :param resource_id: |参数名称：资源ID| |参数约束及描述：资源ID|
+        :param resource_id: 资源ID。
         :type resource_id: str
         """
         
@@ -57,7 +57,7 @@ class FailResourceInfo:
     def error_code(self):
         r"""Gets the error_code of this FailResourceInfo.
 
-        |参数名称：错误码| |参数约束及描述：错误码|
+        状态码。
 
         :return: The error_code of this FailResourceInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class FailResourceInfo:
     def error_code(self, error_code):
         r"""Sets the error_code of this FailResourceInfo.
 
-        |参数名称：错误码| |参数约束及描述：错误码|
+        状态码。
 
         :param error_code: The error_code of this FailResourceInfo.
         :type error_code: str
@@ -79,7 +79,7 @@ class FailResourceInfo:
     def error_msg(self):
         r"""Gets the error_msg of this FailResourceInfo.
 
-        |参数名称：错误描述| |参数约束及描述：错误描述|
+        错误描述信息。
 
         :return: The error_msg of this FailResourceInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class FailResourceInfo:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this FailResourceInfo.
 
-        |参数名称：错误描述| |参数约束及描述：错误描述|
+        错误描述信息。
 
         :param error_msg: The error_msg of this FailResourceInfo.
         :type error_msg: str
@@ -101,7 +101,7 @@ class FailResourceInfo:
     def resource_id(self):
         r"""Gets the resource_id of this FailResourceInfo.
 
-        |参数名称：资源ID| |参数约束及描述：资源ID|
+        资源ID。
 
         :return: The resource_id of this FailResourceInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class FailResourceInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this FailResourceInfo.
 
-        |参数名称：资源ID| |参数约束及描述：资源ID|
+        资源ID。
 
         :param resource_id: The resource_id of this FailResourceInfo.
         :type resource_id: str

@@ -41,10 +41,8 @@ class BatchDeleteInstanceUsersReq:
         self._users = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
-        if users is not None:
-            self.users = users
+        self.action = action
+        self.users = users
 
     @property
     def action(self):

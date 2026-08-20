@@ -67,12 +67,9 @@ class ShowSaveImageJobResponse(SdkResponse):
         self._create_time = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if namespace is not None:
-            self.namespace = namespace
-        if tag is not None:
-            self.tag = tag
+        self.name = name
+        self.namespace = namespace
+        self.tag = tag
         if description is not None:
             self.description = description
         if status is not None:

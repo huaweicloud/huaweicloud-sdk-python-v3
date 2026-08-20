@@ -19,9 +19,9 @@ class InstanceRecycleInfo:
         'status': 'str',
         'name': 'str',
         'engine': 'str',
-        'in_recycle_time': 'str',
+        'in_recycle_time': 'int',
         'save_time': 'int',
-        'auto_delete_time': 'str',
+        'auto_delete_time': 'int',
         'cost_per_hour': 'float',
         'error_message': 'str',
         'product_id': 'str'
@@ -54,11 +54,11 @@ class InstanceRecycleInfo:
         :param engine: **参数解释**： 消息引擎。  **取值范围**： - rocketmq：RocketMQ消息引擎。 - reliability：RocketMQ消息引擎别称。
         :type engine: str
         :param in_recycle_time: **参数解释**： 回收时间。  **取值范围**： 不涉及。
-        :type in_recycle_time: str
+        :type in_recycle_time: int
         :param save_time: **参数解释**： 保留时间。  **取值范围**： 1~7。
         :type save_time: int
         :param auto_delete_time: **参数解释**： 自动删除时间。  **取值范围**： 不涉及。
-        :type auto_delete_time: str
+        :type auto_delete_time: int
         :param cost_per_hour: **参数解释**： 每小时的费用。  **取值范围**： 不涉及。
         :type cost_per_hour: float
         :param error_message: **参数解释**： 错误信息。  **取值范围**： 不涉及。
@@ -197,7 +197,7 @@ class InstanceRecycleInfo:
         **参数解释**： 回收时间。  **取值范围**： 不涉及。
 
         :return: The in_recycle_time of this InstanceRecycleInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._in_recycle_time
 
@@ -208,7 +208,7 @@ class InstanceRecycleInfo:
         **参数解释**： 回收时间。  **取值范围**： 不涉及。
 
         :param in_recycle_time: The in_recycle_time of this InstanceRecycleInfo.
-        :type in_recycle_time: str
+        :type in_recycle_time: int
         """
         self._in_recycle_time = in_recycle_time
 
@@ -241,7 +241,7 @@ class InstanceRecycleInfo:
         **参数解释**： 自动删除时间。  **取值范围**： 不涉及。
 
         :return: The auto_delete_time of this InstanceRecycleInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._auto_delete_time
 
@@ -252,7 +252,7 @@ class InstanceRecycleInfo:
         **参数解释**： 自动删除时间。  **取值范围**： 不涉及。
 
         :param auto_delete_time: The auto_delete_time of this InstanceRecycleInfo.
-        :type auto_delete_time: str
+        :type auto_delete_time: int
         """
         self._auto_delete_time = auto_delete_time
 

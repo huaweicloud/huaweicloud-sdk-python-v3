@@ -30,9 +30,9 @@ class ListParameterGroupTemplatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 参数模板数量。
+        :param count: **参数解释**: 参数模板总记录数。 **取值范围**: [0, 2147483647]，取决于实际查询大小。
         :type count: int
-        :param configurations: 参数模板列表。
+        :param configurations: **参数解释**: 参数模板信息，具体参数请参考ConfigurationsResult。
         :type configurations: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationsResult`]
         """
         
@@ -51,7 +51,7 @@ class ListParameterGroupTemplatesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListParameterGroupTemplatesResponse.
 
-        参数模板数量。
+        **参数解释**: 参数模板总记录数。 **取值范围**: [0, 2147483647]，取决于实际查询大小。
 
         :return: The count of this ListParameterGroupTemplatesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListParameterGroupTemplatesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListParameterGroupTemplatesResponse.
 
-        参数模板数量。
+        **参数解释**: 参数模板总记录数。 **取值范围**: [0, 2147483647]，取决于实际查询大小。
 
         :param count: The count of this ListParameterGroupTemplatesResponse.
         :type count: int
@@ -73,7 +73,7 @@ class ListParameterGroupTemplatesResponse(SdkResponse):
     def configurations(self):
         r"""Gets the configurations of this ListParameterGroupTemplatesResponse.
 
-        参数模板列表。
+        **参数解释**: 参数模板信息，具体参数请参考ConfigurationsResult。
 
         :return: The configurations of this ListParameterGroupTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationsResult`]
@@ -84,7 +84,7 @@ class ListParameterGroupTemplatesResponse(SdkResponse):
     def configurations(self, configurations):
         r"""Sets the configurations of this ListParameterGroupTemplatesResponse.
 
-        参数模板列表。
+        **参数解释**: 参数模板信息，具体参数请参考ConfigurationsResult。
 
         :param configurations: The configurations of this ListParameterGroupTemplatesResponse.
         :type configurations: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationsResult`]

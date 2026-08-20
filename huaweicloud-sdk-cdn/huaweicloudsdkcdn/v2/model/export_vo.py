@@ -41,21 +41,21 @@ class ExportVo:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释：** 规则行为 **约束限制：** 不涉及
+        :param action: **参数解释：** 导出数据类型 **约束限制：** 不涉及 **取值范围：** - export_country_summary：国家及地区统计数据 - export_mgtv_detail：芒果域名统计数据 - export_month_user_charge：月结用户话单计费数据 - export_m5：5分钟粒度统计数据 **默认取值：** 不涉及
         :type action: str
-        :param domain_name: 域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名报表。
+        :param domain_name: **参数解释：** 域名列表 &gt; 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名报表 **默认取值：** 不涉及
         :type domain_name: str
-        :param start_time: 查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param start_time: **参数解释：** 导出起始时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
         :type start_time: int
-        :param end_time: 查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        :param end_time: **参数解释：** 导出结束时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
         :type end_time: int
-        :param group_by: 数据分组方式
+        :param group_by: **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** - 当action为export_country_summary时，该参数生效 - country：按国家及地区分组 **默认取值：** 不涉及
         :type group_by: str
-        :param service_area: **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
+        :param service_area: **参数解释：** 服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** mainland_china：中国大陆
         :type service_area: str
-        :param stat_type: 参数类型支持：flux(流量)，req_num(请求总数)。
+        :param stat_type: **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求总数 **默认取值：** 不涉及
         :type stat_type: str
-        :param country: - 国家&amp;地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
+        :param country: **参数解释：** 国家&amp;地区编码 **约束限制：** - 查询运营商统计数据时，不传该参数 - 查询top_url数据时，不传该参数 - 查询区域情况数据时，该参数只能传cn（中国）  **取值范围：** - 多个以英文逗号分隔 - all表示全部，取值见附录 **默认取值：** 不涉及
         :type country: str
         """
         
@@ -92,7 +92,7 @@ class ExportVo:
     def action(self):
         r"""Gets the action of this ExportVo.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 导出数据类型 **约束限制：** 不涉及 **取值范围：** - export_country_summary：国家及地区统计数据 - export_mgtv_detail：芒果域名统计数据 - export_month_user_charge：月结用户话单计费数据 - export_m5：5分钟粒度统计数据 **默认取值：** 不涉及
 
         :return: The action of this ExportVo.
         :rtype: str
@@ -103,7 +103,7 @@ class ExportVo:
     def action(self, action):
         r"""Sets the action of this ExportVo.
 
-        **参数解释：** 规则行为 **约束限制：** 不涉及
+        **参数解释：** 导出数据类型 **约束限制：** 不涉及 **取值范围：** - export_country_summary：国家及地区统计数据 - export_mgtv_detail：芒果域名统计数据 - export_month_user_charge：月结用户话单计费数据 - export_m5：5分钟粒度统计数据 **默认取值：** 不涉及
 
         :param action: The action of this ExportVo.
         :type action: str
@@ -114,7 +114,7 @@ class ExportVo:
     def domain_name(self):
         r"""Gets the domain_name of this ExportVo.
 
-        域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名报表。
+        **参数解释：** 域名列表 > 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名报表 **默认取值：** 不涉及
 
         :return: The domain_name of this ExportVo.
         :rtype: str
@@ -125,7 +125,7 @@ class ExportVo:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this ExportVo.
 
-        域名列表，支持同时输入多个域名，多个域名用半角逗号（,）分隔；说明：如果该参数为all，则为账号下的所有域名报表。
+        **参数解释：** 域名列表 > 支持同时输入多个域名  **约束限制：** 不涉及 **取值范围：** - 多个域名用半角逗号（,）分隔 - 如果该参数为all，则为账号下的所有域名报表 **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this ExportVo.
         :type domain_name: str
@@ -136,7 +136,7 @@ class ExportVo:
     def start_time(self):
         r"""Gets the start_time of this ExportVo.
 
-        查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 导出起始时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
 
         :return: The start_time of this ExportVo.
         :rtype: int
@@ -147,7 +147,7 @@ class ExportVo:
     def start_time(self, start_time):
         r"""Sets the start_time of this ExportVo.
 
-        查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 导出起始时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
 
         :param start_time: The start_time of this ExportVo.
         :type start_time: int
@@ -158,7 +158,7 @@ class ExportVo:
     def end_time(self):
         r"""Gets the end_time of this ExportVo.
 
-        查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 导出结束时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
 
         :return: The end_time of this ExportVo.
         :rtype: int
@@ -169,7 +169,7 @@ class ExportVo:
     def end_time(self, end_time):
         r"""Sets the end_time of this ExportVo.
 
-        查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
+        **参数解释：** 导出结束时间 **约束限制：** 不涉及 **取值范围：** 相对于UTC 1970-01-01到当前时间相隔的毫秒数 **默认取值：** 不涉及
 
         :param end_time: The end_time of this ExportVo.
         :type end_time: int
@@ -180,7 +180,7 @@ class ExportVo:
     def group_by(self):
         r"""Gets the group_by of this ExportVo.
 
-        数据分组方式
+        **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** - 当action为export_country_summary时，该参数生效 - country：按国家及地区分组 **默认取值：** 不涉及
 
         :return: The group_by of this ExportVo.
         :rtype: str
@@ -191,7 +191,7 @@ class ExportVo:
     def group_by(self, group_by):
         r"""Sets the group_by of this ExportVo.
 
-        数据分组方式
+        **参数解释：** 数据分组方式 **约束限制：** 不涉及 **取值范围：** - 当action为export_country_summary时，该参数生效 - country：按国家及地区分组 **默认取值：** 不涉及
 
         :param group_by: The group_by of this ExportVo.
         :type group_by: str
@@ -202,7 +202,7 @@ class ExportVo:
     def service_area(self):
         r"""Gets the service_area of this ExportVo.
 
-        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
+        **参数解释：** 服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** mainland_china：中国大陆
 
         :return: The service_area of this ExportVo.
         :rtype: str
@@ -213,7 +213,7 @@ class ExportVo:
     def service_area(self, service_area):
         r"""Sets the service_area of this ExportVo.
 
-        **参数解释：** 域名服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china: 中国大陆 - outside_mainland_china: 中国大陆境外 - global: 全球  **默认取值：** mainland_china: 中国大陆
+        **参数解释：** 服务范围 **约束限制：** 服务范围为中国大陆或全球时，加速域名需要到工信部备案 **取值范围：** - mainland_china：中国大陆 - outside_mainland_china：中国大陆境外 - global：全球 **默认取值：** mainland_china：中国大陆
 
         :param service_area: The service_area of this ExportVo.
         :type service_area: str
@@ -224,7 +224,7 @@ class ExportVo:
     def stat_type(self):
         r"""Gets the stat_type of this ExportVo.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求总数 **默认取值：** 不涉及
 
         :return: The stat_type of this ExportVo.
         :rtype: str
@@ -235,7 +235,7 @@ class ExportVo:
     def stat_type(self, stat_type):
         r"""Sets the stat_type of this ExportVo.
 
-        参数类型支持：flux(流量)，req_num(请求总数)。
+        **参数解释：** 统计指标类型 **约束限制：** 不涉及 **取值范围：** - flux：流量 - req_num：请求总数 **默认取值：** 不涉及
 
         :param stat_type: The stat_type of this ExportVo.
         :type stat_type: str
@@ -246,7 +246,7 @@ class ExportVo:
     def country(self):
         r"""Gets the country of this ExportVo.
 
-        - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
+        **参数解释：** 国家&地区编码 **约束限制：** - 查询运营商统计数据时，不传该参数 - 查询top_url数据时，不传该参数 - 查询区域情况数据时，该参数只能传cn（中国）  **取值范围：** - 多个以英文逗号分隔 - all表示全部，取值见附录 **默认取值：** 不涉及
 
         :return: The country of this ExportVo.
         :rtype: str
@@ -257,7 +257,7 @@ class ExportVo:
     def country(self, country):
         r"""Sets the country of this ExportVo.
 
-        - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
+        **参数解释：** 国家&地区编码 **约束限制：** - 查询运营商统计数据时，不传该参数 - 查询top_url数据时，不传该参数 - 查询区域情况数据时，该参数只能传cn（中国）  **取值范围：** - 多个以英文逗号分隔 - all表示全部，取值见附录 **默认取值：** 不涉及
 
         :param country: The country of this ExportVo.
         :type country: str

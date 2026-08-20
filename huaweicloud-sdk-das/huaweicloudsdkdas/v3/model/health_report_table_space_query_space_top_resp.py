@@ -16,8 +16,8 @@ class HealthReportTableSpaceQuerySpaceTopResp:
 
     openapi_types = {
         'top_data_list': 'list[HealthReportTableSpaceTopDataDto]',
-        'collect_timestamp': 'float',
-        'total_count': 'float'
+        'collect_timestamp': 'int',
+        'total_count': 'int'
     }
 
     attribute_map = {
@@ -34,9 +34,9 @@ class HealthReportTableSpaceQuerySpaceTopResp:
         :param top_data_list: 库/表大小Top列表。
         :type top_data_list: list[:class:`huaweicloudsdkdas.v3.HealthReportTableSpaceTopDataDto`]
         :param collect_timestamp: 采集时间
-        :type collect_timestamp: float
+        :type collect_timestamp: int
         :param total_count: 总大小。
-        :type total_count: float
+        :type total_count: int
         """
         
         
@@ -82,7 +82,7 @@ class HealthReportTableSpaceQuerySpaceTopResp:
         采集时间
 
         :return: The collect_timestamp of this HealthReportTableSpaceQuerySpaceTopResp.
-        :rtype: float
+        :rtype: int
         """
         return self._collect_timestamp
 
@@ -93,7 +93,7 @@ class HealthReportTableSpaceQuerySpaceTopResp:
         采集时间
 
         :param collect_timestamp: The collect_timestamp of this HealthReportTableSpaceQuerySpaceTopResp.
-        :type collect_timestamp: float
+        :type collect_timestamp: int
         """
         self._collect_timestamp = collect_timestamp
 
@@ -104,7 +104,7 @@ class HealthReportTableSpaceQuerySpaceTopResp:
         总大小。
 
         :return: The total_count of this HealthReportTableSpaceQuerySpaceTopResp.
-        :rtype: float
+        :rtype: int
         """
         return self._total_count
 
@@ -115,7 +115,7 @@ class HealthReportTableSpaceQuerySpaceTopResp:
         总大小。
 
         :param total_count: The total_count of this HealthReportTableSpaceQuerySpaceTopResp.
-        :type total_count: float
+        :type total_count: int
         """
         self._total_count = total_count
 

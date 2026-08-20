@@ -31,11 +31,11 @@ class UpdateInstanceCrossVpcIpRespResults:
 
         The model defined in huaweicloud sdk
 
-        :param advertised_ip: advertised.listeners IP/域名。
+        :param advertised_ip: **参数解释**： advertised.listeners IP/域名。 **取值范围**： 不涉及。
         :type advertised_ip: str
-        :param success: 修改broker跨VPC访问的状态。
+        :param success: **参数解释**： 修改broker跨VPC访问的状态。 **取值范围**： - true：修改broker跨VPC访问成功。 - false：修改broker跨VPC访问失败。
         :type success: bool
-        :param ip: listeners IP。
+        :param ip: **参数解释**： listeners IP。 **取值范围**： 不涉及。
         :type ip: str
         """
         
@@ -57,7 +57,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def advertised_ip(self):
         r"""Gets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
 
-        advertised.listeners IP/域名。
+        **参数解释**： advertised.listeners IP/域名。 **取值范围**： 不涉及。
 
         :return: The advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def advertised_ip(self, advertised_ip):
         r"""Sets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
 
-        advertised.listeners IP/域名。
+        **参数解释**： advertised.listeners IP/域名。 **取值范围**： 不涉及。
 
         :param advertised_ip: The advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
         :type advertised_ip: str
@@ -79,7 +79,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def success(self):
         r"""Gets the success of this UpdateInstanceCrossVpcIpRespResults.
 
-        修改broker跨VPC访问的状态。
+        **参数解释**： 修改broker跨VPC访问的状态。 **取值范围**： - true：修改broker跨VPC访问成功。 - false：修改broker跨VPC访问失败。
 
         :return: The success of this UpdateInstanceCrossVpcIpRespResults.
         :rtype: bool
@@ -90,7 +90,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def success(self, success):
         r"""Sets the success of this UpdateInstanceCrossVpcIpRespResults.
 
-        修改broker跨VPC访问的状态。
+        **参数解释**： 修改broker跨VPC访问的状态。 **取值范围**： - true：修改broker跨VPC访问成功。 - false：修改broker跨VPC访问失败。
 
         :param success: The success of this UpdateInstanceCrossVpcIpRespResults.
         :type success: bool
@@ -101,7 +101,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def ip(self):
         r"""Gets the ip of this UpdateInstanceCrossVpcIpRespResults.
 
-        listeners IP。
+        **参数解释**： listeners IP。 **取值范围**： 不涉及。
 
         :return: The ip of this UpdateInstanceCrossVpcIpRespResults.
         :rtype: str
@@ -112,7 +112,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     def ip(self, ip):
         r"""Sets the ip of this UpdateInstanceCrossVpcIpRespResults.
 
-        listeners IP。
+        **参数解释**： listeners IP。 **取值范围**： 不涉及。
 
         :param ip: The ip of this UpdateInstanceCrossVpcIpRespResults.
         :type ip: str

@@ -22,8 +22,8 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         'task_id': 'str',
         'summary_info': 'HealthReportSummaryInfo',
         'instance_info': 'HealthReportInstanceInfo',
-        'performance_stat': 'HealthReportPerformanceStat',
-        'disk_stat': 'HealthReportDiskStat',
+        'performance_stat': 'HealthReportPerformanceStatInfo',
+        'disk_stat': 'HealthReportDiskStatInfo',
         'table_space_stat': 'HealthReportTableSpaceStat',
         'slow_log_stat': 'HealthReportSlowLogStat',
         'full_sql_stat': 'HealthReportFullSqlStat',
@@ -65,9 +65,9 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         :param instance_info: 
         :type instance_info: :class:`huaweicloudsdkdas.v3.HealthReportInstanceInfo`
         :param performance_stat: 
-        :type performance_stat: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStat`
+        :type performance_stat: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStatInfo`
         :param disk_stat: 
-        :type disk_stat: :class:`huaweicloudsdkdas.v3.HealthReportDiskStat`
+        :type disk_stat: :class:`huaweicloudsdkdas.v3.HealthReportDiskStatInfo`
         :param table_space_stat: 
         :type table_space_stat: :class:`huaweicloudsdkdas.v3.HealthReportTableSpaceStat`
         :param slow_log_stat: 
@@ -253,7 +253,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         r"""Gets the performance_stat of this ShowInstanceHealthReportResponse.
 
         :return: The performance_stat of this ShowInstanceHealthReportResponse.
-        :rtype: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStat`
+        :rtype: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStatInfo`
         """
         return self._performance_stat
 
@@ -262,7 +262,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         r"""Sets the performance_stat of this ShowInstanceHealthReportResponse.
 
         :param performance_stat: The performance_stat of this ShowInstanceHealthReportResponse.
-        :type performance_stat: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStat`
+        :type performance_stat: :class:`huaweicloudsdkdas.v3.HealthReportPerformanceStatInfo`
         """
         self._performance_stat = performance_stat
 
@@ -271,7 +271,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         r"""Gets the disk_stat of this ShowInstanceHealthReportResponse.
 
         :return: The disk_stat of this ShowInstanceHealthReportResponse.
-        :rtype: :class:`huaweicloudsdkdas.v3.HealthReportDiskStat`
+        :rtype: :class:`huaweicloudsdkdas.v3.HealthReportDiskStatInfo`
         """
         return self._disk_stat
 
@@ -280,7 +280,7 @@ class ShowInstanceHealthReportResponse(SdkResponse):
         r"""Sets the disk_stat of this ShowInstanceHealthReportResponse.
 
         :param disk_stat: The disk_stat of this ShowInstanceHealthReportResponse.
-        :type disk_stat: :class:`huaweicloudsdkdas.v3.HealthReportDiskStat`
+        :type disk_stat: :class:`huaweicloudsdkdas.v3.HealthReportDiskStatInfo`
         """
         self._disk_stat = disk_stat
 

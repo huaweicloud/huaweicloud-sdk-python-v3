@@ -176,6 +176,8 @@ from huaweicloudsdkmodelarts.v1.model.create_infer_service_request import Create
 from huaweicloudsdkmodelarts.v1.model.create_infer_service_response import CreateInferServiceResponse
 from huaweicloudsdkmodelarts.v1.model.create_infer_service_tag_request import CreateInferServiceTagRequest
 from huaweicloudsdkmodelarts.v1.model.create_infer_service_tag_response import CreateInferServiceTagResponse
+from huaweicloudsdkmodelarts.v1.model.create_infer_temp_api_key_request import CreateInferTempApiKeyRequest
+from huaweicloudsdkmodelarts.v1.model.create_infer_temp_api_key_response import CreateInferTempApiKeyResponse
 from huaweicloudsdkmodelarts.v1.model.create_model_arts_agency_request import CreateModelArtsAgencyRequest
 from huaweicloudsdkmodelarts.v1.model.create_model_arts_agency_response import CreateModelArtsAgencyResponse
 from huaweicloudsdkmodelarts.v1.model.create_network_request import CreateNetworkRequest
@@ -203,6 +205,7 @@ from huaweicloudsdkmodelarts.v1.model.create_roce_network_response import Create
 from huaweicloudsdkmodelarts.v1.model.create_save_image_job_request import CreateSaveImageJobRequest
 from huaweicloudsdkmodelarts.v1.model.create_save_image_job_response import CreateSaveImageJobResponse
 from huaweicloudsdkmodelarts.v1.model.create_tag_request import CreateTagRequest
+from huaweicloudsdkmodelarts.v1.model.create_temp_api_key_req import CreateTempApiKeyReq
 from huaweicloudsdkmodelarts.v1.model.create_tms_tags_request import CreateTmsTagsRequest
 from huaweicloudsdkmodelarts.v1.model.create_train_job_tags_request import CreateTrainJobTagsRequest
 from huaweicloudsdkmodelarts.v1.model.create_train_job_tags_response import CreateTrainJobTagsResponse
@@ -326,6 +329,9 @@ from huaweicloudsdkmodelarts.v1.model.docker_lvm_config import DockerLvmConfig
 from huaweicloudsdkmodelarts.v1.model.domain import Domain
 from huaweicloudsdkmodelarts.v1.model.dump import Dump
 from huaweicloudsdkmodelarts.v1.model.dump_response import DumpResponse
+from huaweicloudsdkmodelarts.v1.model.elb_connection_create_request import ElbConnectionCreateRequest
+from huaweicloudsdkmodelarts.v1.model.elb_connection_response import ElbConnectionResponse
+from huaweicloudsdkmodelarts.v1.model.elb_connection_update_request import ElbConnectionUpdateRequest
 from huaweicloudsdkmodelarts.v1.model.endpoints import Endpoints
 from huaweicloudsdkmodelarts.v1.model.endpoints_req import EndpointsReq
 from huaweicloudsdkmodelarts.v1.model.endpoints_res import EndpointsRes
@@ -552,6 +558,7 @@ from huaweicloudsdkmodelarts.v1.model.list_scheduled_events_request import ListS
 from huaweicloudsdkmodelarts.v1.model.list_scheduled_events_response import ListScheduledEventsResponse
 from huaweicloudsdkmodelarts.v1.model.list_search_algorithms_params import ListSearchAlgorithmsParams
 from huaweicloudsdkmodelarts.v1.model.list_search_algorithms_search_algo_list import ListSearchAlgorithmsSearchAlgoList
+from huaweicloudsdkmodelarts.v1.model.list_tag_filter import ListTagFilter
 from huaweicloudsdkmodelarts.v1.model.list_training_experiments_request import ListTrainingExperimentsRequest
 from huaweicloudsdkmodelarts.v1.model.list_training_experiments_response import ListTrainingExperimentsResponse
 from huaweicloudsdkmodelarts.v1.model.list_training_job_events_request import ListTrainingJobEventsRequest
@@ -578,7 +585,8 @@ from huaweicloudsdkmodelarts.v1.model.log_dir_resp import LogDirResp
 from huaweicloudsdkmodelarts.v1.model.log_export_config import LogExportConfig
 from huaweicloudsdkmodelarts.v1.model.log_export_path import LogExportPath
 from huaweicloudsdkmodelarts.v1.model.log_export_path_resp import LogExportPathResp
-from huaweicloudsdkmodelarts.v1.model.lts_config import LtsConfig
+from huaweicloudsdkmodelarts.v1.model.lts_configuration import LtsConfiguration
+from huaweicloudsdkmodelarts.v1.model.lts_files import LtsFiles
 from huaweicloudsdkmodelarts.v1.model.lvm_config import LvmConfig
 from huaweicloudsdkmodelarts.v1.model.main_container_allocated_resources import MainContainerAllocatedResources
 from huaweicloudsdkmodelarts.v1.model.main_container_customized_flavor import MainContainerCustomizedFlavor
@@ -768,9 +776,11 @@ from huaweicloudsdkmodelarts.v1.model.renew_lease_response import RenewLeaseResp
 from huaweicloudsdkmodelarts.v1.model.report_event_body import ReportEventBody
 from huaweicloudsdkmodelarts.v1.model.required_affinity import RequiredAffinity
 from huaweicloudsdkmodelarts.v1.model.required_affinity_resp import RequiredAffinityResp
+from huaweicloudsdkmodelarts.v1.model.reserve_time import ReserveTime
 from huaweicloudsdkmodelarts.v1.model.reset_nodes_request import ResetNodesRequest
 from huaweicloudsdkmodelarts.v1.model.reset_nodes_request_node_config import ResetNodesRequestNodeConfig
 from huaweicloudsdkmodelarts.v1.model.reset_nodes_request_rolling_config import ResetNodesRequestRollingConfig
+from huaweicloudsdkmodelarts.v1.model.residual_resources import ResidualResources
 from huaweicloudsdkmodelarts.v1.model.resize_node_info import ResizeNodeInfo
 from huaweicloudsdkmodelarts.v1.model.resource import Resource
 from huaweicloudsdkmodelarts.v1.model.resource_extend_params import ResourceExtendParams
@@ -788,6 +798,7 @@ from huaweicloudsdkmodelarts.v1.model.resource_metrics_metadata import ResourceM
 from huaweicloudsdkmodelarts.v1.model.resource_quota import ResourceQuota
 from huaweicloudsdkmodelarts.v1.model.resource_requirement import ResourceRequirement
 from huaweicloudsdkmodelarts.v1.model.resource_requirement_vo import ResourceRequirementVO
+from huaweicloudsdkmodelarts.v1.model.retention_policy import RetentionPolicy
 from huaweicloudsdkmodelarts.v1.model.reward_attrs import RewardAttrs
 from huaweicloudsdkmodelarts.v1.model.role_replica import RoleReplica
 from huaweicloudsdkmodelarts.v1.model.rolling_update import RollingUpdate
@@ -796,8 +807,9 @@ from huaweicloudsdkmodelarts.v1.model.root_volume import RootVolume
 from huaweicloudsdkmodelarts.v1.model.run_user_info import RunUserInfo
 from huaweicloudsdkmodelarts.v1.model.run_user_request import RunUserRequest
 from huaweicloudsdkmodelarts.v1.model.running_record import RunningRecord
-from huaweicloudsdkmodelarts.v1.model.runtime_config import RuntimeConfig
+from huaweicloudsdkmodelarts.v1.model.runtime_config_create_request import RuntimeConfigCreateRequest
 from huaweicloudsdkmodelarts.v1.model.runtime_config_response import RuntimeConfigResponse
+from huaweicloudsdkmodelarts.v1.model.runtime_config_update_request import RuntimeConfigUpdateRequest
 from huaweicloudsdkmodelarts.v1.model.ssh_req import SSHReq
 from huaweicloudsdkmodelarts.v1.model.ssh_resp import SSHResp
 from huaweicloudsdkmodelarts.v1.model.scale_down_hyperinstance_request import ScaleDownHyperinstanceRequest
@@ -842,8 +854,9 @@ from huaweicloudsdkmodelarts.v1.model.service_create_request_tags import Service
 from huaweicloudsdkmodelarts.v1.model.service_event_response import ServiceEventResponse
 from huaweicloudsdkmodelarts.v1.model.service_id_name import ServiceIdName
 from huaweicloudsdkmodelarts.v1.model.service_instance_response import ServiceInstanceResponse
-from huaweicloudsdkmodelarts.v1.model.service_invoke import ServiceInvoke
+from huaweicloudsdkmodelarts.v1.model.service_invoke_create_request import ServiceInvokeCreateRequest
 from huaweicloudsdkmodelarts.v1.model.service_invoke_response import ServiceInvokeResponse
+from huaweicloudsdkmodelarts.v1.model.service_invoke_update_request import ServiceInvokeUpdateRequest
 from huaweicloudsdkmodelarts.v1.model.service_item_response_data import ServiceItemResponseData
 from huaweicloudsdkmodelarts.v1.model.service_limit import ServiceLimit
 from huaweicloudsdkmodelarts.v1.model.service_limit_response import ServiceLimitResponse
@@ -1048,6 +1061,7 @@ from huaweicloudsdkmodelarts.v1.model.task_algorithm_remote import TaskAlgorithm
 from huaweicloudsdkmodelarts.v1.model.task_algorithm_remote_obs import TaskAlgorithmRemoteObs
 from huaweicloudsdkmodelarts.v1.model.task_env import TaskEnv
 from huaweicloudsdkmodelarts.v1.model.task_history import TaskHistory
+from huaweicloudsdkmodelarts.v1.model.task_ip import TaskIP
 from huaweicloudsdkmodelarts.v1.model.task_log_export_path import TaskLogExportPath
 from huaweicloudsdkmodelarts.v1.model.task_response import TaskResponse
 from huaweicloudsdkmodelarts.v1.model.task_response_algorithm import TaskResponseAlgorithm

@@ -16,7 +16,7 @@ class ListBackgroundTasksRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'offset': 'int',
+        'start': 'int',
         'limit': 'int',
         'begin_time': 'str',
         'end_time': 'str'
@@ -24,21 +24,21 @@ class ListBackgroundTasksRequest:
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'offset': 'offset',
+        'start': 'start',
         'limit': 'limit',
         'begin_time': 'begin_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, begin_time=None, end_time=None):
+    def __init__(self, instance_id=None, start=None, limit=None, begin_time=None, end_time=None):
         r"""ListBackgroundTasksRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param offset: **参数解释**： 开启查询的任务编号。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
-        :type offset: int
+        :param start: **参数解释**： 开启查询的任务编号。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        :type start: int
         :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type limit: int
         :param begin_time: **参数解释**： 查询任务的最小时间，格式为YYYYMMDDHHmmss。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
@@ -50,15 +50,15 @@ class ListBackgroundTasksRequest:
         
 
         self._instance_id = None
-        self._offset = None
+        self._start = None
         self._limit = None
         self._begin_time = None
         self._end_time = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        if offset is not None:
-            self.offset = offset
+        if start is not None:
+            self.start = start
         if limit is not None:
             self.limit = limit
         if begin_time is not None:
@@ -89,26 +89,26 @@ class ListBackgroundTasksRequest:
         self._instance_id = instance_id
 
     @property
-    def offset(self):
-        r"""Gets the offset of this ListBackgroundTasksRequest.
+    def start(self):
+        r"""Gets the start of this ListBackgroundTasksRequest.
 
         **参数解释**： 开启查询的任务编号。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
-        :return: The offset of this ListBackgroundTasksRequest.
+        :return: The start of this ListBackgroundTasksRequest.
         :rtype: int
         """
-        return self._offset
+        return self._start
 
-    @offset.setter
-    def offset(self, offset):
-        r"""Sets the offset of this ListBackgroundTasksRequest.
+    @start.setter
+    def start(self, start):
+        r"""Sets the start of this ListBackgroundTasksRequest.
 
         **参数解释**： 开启查询的任务编号。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
-        :param offset: The offset of this ListBackgroundTasksRequest.
-        :type offset: int
+        :param start: The start of this ListBackgroundTasksRequest.
+        :type start: int
         """
-        self._offset = offset
+        self._start = start
 
     @property
     def limit(self):

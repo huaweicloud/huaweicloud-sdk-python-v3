@@ -38,17 +38,17 @@ class SetChargeModesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param charge_mode: 账号的计费模式
+        :param charge_mode: **参数解释：** 账号的计费模式 **取值范围：** - flux：流量 - bw：带宽
         :type charge_mode: str
-        :param product_type: 加速类型
+        :param product_type: **参数解释：** 加速类型 **取值范围：** base：基础加速
         :type product_type: str
-        :param effective_time: 该模式生效时间
+        :param effective_time: **参数解释：** 该模式生效时间 **取值范围：** 不涉及
         :type effective_time: int
-        :param create_time: 创建时间
+        :param create_time: **参数解释：** 创建时间 **取值范围：** 不涉及
         :type create_time: int
-        :param service_area: 该模式的区域
+        :param service_area: **参数解释：** 该模式的区域 **取值范围：** mainland_china：中国大陆
         :type service_area: str
-        :param status: 状态,首次开通状态为active,之后修改为upcoming
+        :param status: **参数解释：** 状态 &gt; 首次开通状态为active（已生效）,之后修改为upcoming（待生效）  **取值范围：** - active：已生效 - upcoming：待生效
         :type status: str
         """
         
@@ -79,7 +79,7 @@ class SetChargeModesResponse(SdkResponse):
     def charge_mode(self):
         r"""Gets the charge_mode of this SetChargeModesResponse.
 
-        账号的计费模式
+        **参数解释：** 账号的计费模式 **取值范围：** - flux：流量 - bw：带宽
 
         :return: The charge_mode of this SetChargeModesResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class SetChargeModesResponse(SdkResponse):
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this SetChargeModesResponse.
 
-        账号的计费模式
+        **参数解释：** 账号的计费模式 **取值范围：** - flux：流量 - bw：带宽
 
         :param charge_mode: The charge_mode of this SetChargeModesResponse.
         :type charge_mode: str
@@ -101,7 +101,7 @@ class SetChargeModesResponse(SdkResponse):
     def product_type(self):
         r"""Gets the product_type of this SetChargeModesResponse.
 
-        加速类型
+        **参数解释：** 加速类型 **取值范围：** base：基础加速
 
         :return: The product_type of this SetChargeModesResponse.
         :rtype: str
@@ -112,7 +112,7 @@ class SetChargeModesResponse(SdkResponse):
     def product_type(self, product_type):
         r"""Sets the product_type of this SetChargeModesResponse.
 
-        加速类型
+        **参数解释：** 加速类型 **取值范围：** base：基础加速
 
         :param product_type: The product_type of this SetChargeModesResponse.
         :type product_type: str
@@ -123,7 +123,7 @@ class SetChargeModesResponse(SdkResponse):
     def effective_time(self):
         r"""Gets the effective_time of this SetChargeModesResponse.
 
-        该模式生效时间
+        **参数解释：** 该模式生效时间 **取值范围：** 不涉及
 
         :return: The effective_time of this SetChargeModesResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class SetChargeModesResponse(SdkResponse):
     def effective_time(self, effective_time):
         r"""Sets the effective_time of this SetChargeModesResponse.
 
-        该模式生效时间
+        **参数解释：** 该模式生效时间 **取值范围：** 不涉及
 
         :param effective_time: The effective_time of this SetChargeModesResponse.
         :type effective_time: int
@@ -145,7 +145,7 @@ class SetChargeModesResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this SetChargeModesResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **取值范围：** 不涉及
 
         :return: The create_time of this SetChargeModesResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class SetChargeModesResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this SetChargeModesResponse.
 
-        创建时间
+        **参数解释：** 创建时间 **取值范围：** 不涉及
 
         :param create_time: The create_time of this SetChargeModesResponse.
         :type create_time: int
@@ -167,7 +167,7 @@ class SetChargeModesResponse(SdkResponse):
     def service_area(self):
         r"""Gets the service_area of this SetChargeModesResponse.
 
-        该模式的区域
+        **参数解释：** 该模式的区域 **取值范围：** mainland_china：中国大陆
 
         :return: The service_area of this SetChargeModesResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class SetChargeModesResponse(SdkResponse):
     def service_area(self, service_area):
         r"""Sets the service_area of this SetChargeModesResponse.
 
-        该模式的区域
+        **参数解释：** 该模式的区域 **取值范围：** mainland_china：中国大陆
 
         :param service_area: The service_area of this SetChargeModesResponse.
         :type service_area: str
@@ -189,7 +189,7 @@ class SetChargeModesResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SetChargeModesResponse.
 
-        状态,首次开通状态为active,之后修改为upcoming
+        **参数解释：** 状态 > 首次开通状态为active（已生效）,之后修改为upcoming（待生效）  **取值范围：** - active：已生效 - upcoming：待生效
 
         :return: The status of this SetChargeModesResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class SetChargeModesResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SetChargeModesResponse.
 
-        状态,首次开通状态为active,之后修改为upcoming
+        **参数解释：** 状态 > 首次开通状态为active（已生效）,之后修改为upcoming（待生效）  **取值范围：** - active：已生效 - upcoming：待生效
 
         :param status: The status of this SetChargeModesResponse.
         :type status: str

@@ -15,136 +15,91 @@ class UserVO:
     sensitive_list = []
 
     openapi_types = {
+        'user_id': 'str',
+        'user_num_id': 'int',
+        'user_name': 'str',
         'domain_id': 'str',
         'domain_name': 'str',
         'nick_name': 'str',
-        'user_id': 'str',
-        'user_name': 'str',
-        'user_num_id': 'int'
+        'role_id': 'str',
+        'role_name': 'str',
+        'role_code': 'str'
     }
 
     attribute_map = {
+        'user_id': 'user_id',
+        'user_num_id': 'user_num_id',
+        'user_name': 'user_name',
         'domain_id': 'domain_id',
         'domain_name': 'domain_name',
         'nick_name': 'nick_name',
-        'user_id': 'user_id',
-        'user_name': 'user_name',
-        'user_num_id': 'user_num_id'
+        'role_id': 'role_id',
+        'role_name': 'role_name',
+        'role_code': 'role_code'
     }
 
-    def __init__(self, domain_id=None, domain_name=None, nick_name=None, user_id=None, user_name=None, user_num_id=None):
+    def __init__(self, user_id=None, user_num_id=None, user_name=None, domain_id=None, domain_name=None, nick_name=None, role_id=None, role_name=None, role_code=None):
         r"""UserVO
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 用户的租户ID
-        :type domain_id: str
-        :param domain_name: 用户的租户名称
-        :type domain_name: str
-        :param nick_name: 用户的昵称
-        :type nick_name: str
-        :param user_id: 用户Iam id
+        :param user_id: 用户ID。
         :type user_id: str
-        :param user_name: 用户名
-        :type user_name: str
-        :param user_num_id: 用户索引id
+        :param user_num_id: 用户短ID。
         :type user_num_id: int
+        :param user_name: 用户名称。
+        :type user_name: str
+        :param domain_id: 用户所属域ID。
+        :type domain_id: str
+        :param domain_name: 租户名称。
+        :type domain_name: str
+        :param nick_name: 用户昵称。
+        :type nick_name: str
+        :param role_id: 角色ID，用户在项目中具有多个角色时用英文逗号分隔。
+        :type role_id: str
+        :param role_name: 用户角色名称，多个角色用英文逗号分隔。
+        :type role_name: str
+        :param role_code: 用户角色编码，多个角色用英文逗号分隔。
+        :type role_code: str
         """
         
         
 
+        self._user_id = None
+        self._user_num_id = None
+        self._user_name = None
         self._domain_id = None
         self._domain_name = None
         self._nick_name = None
-        self._user_id = None
-        self._user_name = None
-        self._user_num_id = None
+        self._role_id = None
+        self._role_name = None
+        self._role_code = None
         self.discriminator = None
 
+        if user_id is not None:
+            self.user_id = user_id
+        if user_num_id is not None:
+            self.user_num_id = user_num_id
+        if user_name is not None:
+            self.user_name = user_name
         if domain_id is not None:
             self.domain_id = domain_id
         if domain_name is not None:
             self.domain_name = domain_name
         if nick_name is not None:
             self.nick_name = nick_name
-        if user_id is not None:
-            self.user_id = user_id
-        if user_name is not None:
-            self.user_name = user_name
-        if user_num_id is not None:
-            self.user_num_id = user_num_id
-
-    @property
-    def domain_id(self):
-        r"""Gets the domain_id of this UserVO.
-
-        用户的租户ID
-
-        :return: The domain_id of this UserVO.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        r"""Sets the domain_id of this UserVO.
-
-        用户的租户ID
-
-        :param domain_id: The domain_id of this UserVO.
-        :type domain_id: str
-        """
-        self._domain_id = domain_id
-
-    @property
-    def domain_name(self):
-        r"""Gets the domain_name of this UserVO.
-
-        用户的租户名称
-
-        :return: The domain_name of this UserVO.
-        :rtype: str
-        """
-        return self._domain_name
-
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        r"""Sets the domain_name of this UserVO.
-
-        用户的租户名称
-
-        :param domain_name: The domain_name of this UserVO.
-        :type domain_name: str
-        """
-        self._domain_name = domain_name
-
-    @property
-    def nick_name(self):
-        r"""Gets the nick_name of this UserVO.
-
-        用户的昵称
-
-        :return: The nick_name of this UserVO.
-        :rtype: str
-        """
-        return self._nick_name
-
-    @nick_name.setter
-    def nick_name(self, nick_name):
-        r"""Sets the nick_name of this UserVO.
-
-        用户的昵称
-
-        :param nick_name: The nick_name of this UserVO.
-        :type nick_name: str
-        """
-        self._nick_name = nick_name
+        if role_id is not None:
+            self.role_id = role_id
+        if role_name is not None:
+            self.role_name = role_name
+        if role_code is not None:
+            self.role_code = role_code
 
     @property
     def user_id(self):
         r"""Gets the user_id of this UserVO.
 
-        用户Iam id
+        用户ID。
 
         :return: The user_id of this UserVO.
         :rtype: str
@@ -155,7 +110,7 @@ class UserVO:
     def user_id(self, user_id):
         r"""Sets the user_id of this UserVO.
 
-        用户Iam id
+        用户ID。
 
         :param user_id: The user_id of this UserVO.
         :type user_id: str
@@ -163,32 +118,10 @@ class UserVO:
         self._user_id = user_id
 
     @property
-    def user_name(self):
-        r"""Gets the user_name of this UserVO.
-
-        用户名
-
-        :return: The user_name of this UserVO.
-        :rtype: str
-        """
-        return self._user_name
-
-    @user_name.setter
-    def user_name(self, user_name):
-        r"""Sets the user_name of this UserVO.
-
-        用户名
-
-        :param user_name: The user_name of this UserVO.
-        :type user_name: str
-        """
-        self._user_name = user_name
-
-    @property
     def user_num_id(self):
         r"""Gets the user_num_id of this UserVO.
 
-        用户索引id
+        用户短ID。
 
         :return: The user_num_id of this UserVO.
         :rtype: int
@@ -199,12 +132,166 @@ class UserVO:
     def user_num_id(self, user_num_id):
         r"""Sets the user_num_id of this UserVO.
 
-        用户索引id
+        用户短ID。
 
         :param user_num_id: The user_num_id of this UserVO.
         :type user_num_id: int
         """
         self._user_num_id = user_num_id
+
+    @property
+    def user_name(self):
+        r"""Gets the user_name of this UserVO.
+
+        用户名称。
+
+        :return: The user_name of this UserVO.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        r"""Sets the user_name of this UserVO.
+
+        用户名称。
+
+        :param user_name: The user_name of this UserVO.
+        :type user_name: str
+        """
+        self._user_name = user_name
+
+    @property
+    def domain_id(self):
+        r"""Gets the domain_id of this UserVO.
+
+        用户所属域ID。
+
+        :return: The domain_id of this UserVO.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this UserVO.
+
+        用户所属域ID。
+
+        :param domain_id: The domain_id of this UserVO.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def domain_name(self):
+        r"""Gets the domain_name of this UserVO.
+
+        租户名称。
+
+        :return: The domain_name of this UserVO.
+        :rtype: str
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        r"""Sets the domain_name of this UserVO.
+
+        租户名称。
+
+        :param domain_name: The domain_name of this UserVO.
+        :type domain_name: str
+        """
+        self._domain_name = domain_name
+
+    @property
+    def nick_name(self):
+        r"""Gets the nick_name of this UserVO.
+
+        用户昵称。
+
+        :return: The nick_name of this UserVO.
+        :rtype: str
+        """
+        return self._nick_name
+
+    @nick_name.setter
+    def nick_name(self, nick_name):
+        r"""Sets the nick_name of this UserVO.
+
+        用户昵称。
+
+        :param nick_name: The nick_name of this UserVO.
+        :type nick_name: str
+        """
+        self._nick_name = nick_name
+
+    @property
+    def role_id(self):
+        r"""Gets the role_id of this UserVO.
+
+        角色ID，用户在项目中具有多个角色时用英文逗号分隔。
+
+        :return: The role_id of this UserVO.
+        :rtype: str
+        """
+        return self._role_id
+
+    @role_id.setter
+    def role_id(self, role_id):
+        r"""Sets the role_id of this UserVO.
+
+        角色ID，用户在项目中具有多个角色时用英文逗号分隔。
+
+        :param role_id: The role_id of this UserVO.
+        :type role_id: str
+        """
+        self._role_id = role_id
+
+    @property
+    def role_name(self):
+        r"""Gets the role_name of this UserVO.
+
+        用户角色名称，多个角色用英文逗号分隔。
+
+        :return: The role_name of this UserVO.
+        :rtype: str
+        """
+        return self._role_name
+
+    @role_name.setter
+    def role_name(self, role_name):
+        r"""Sets the role_name of this UserVO.
+
+        用户角色名称，多个角色用英文逗号分隔。
+
+        :param role_name: The role_name of this UserVO.
+        :type role_name: str
+        """
+        self._role_name = role_name
+
+    @property
+    def role_code(self):
+        r"""Gets the role_code of this UserVO.
+
+        用户角色编码，多个角色用英文逗号分隔。
+
+        :return: The role_code of this UserVO.
+        :rtype: str
+        """
+        return self._role_code
+
+    @role_code.setter
+    def role_code(self, role_code):
+        r"""Sets the role_code of this UserVO.
+
+        用户角色编码，多个角色用英文逗号分隔。
+
+        :param role_code: The role_code of this UserVO.
+        :type role_code: str
+        """
+        self._role_code = role_code
 
     def to_dict(self):
         result = {}

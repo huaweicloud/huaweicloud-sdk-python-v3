@@ -16,7 +16,7 @@ class CreateConnectorReq:
 
     openapi_types = {
         'specification': 'str',
-        'node_cnt': 'str',
+        'node_cnt': 'int',
         'spec_code': 'str'
     }
 
@@ -34,7 +34,7 @@ class CreateConnectorReq:
         :param specification: 部署Smart Connect的规格，基准带宽，表示单位时间内传送的最大数据量。请保持和当前实例规格一致。[仅老规格实例需要填写。 取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB](tag:hws,hws_hk,g42,hk_g42,ctc)
         :type specification: str
         :param node_cnt: Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
-        :type node_cnt: str
+        :type node_cnt: int
         :param spec_code: 转储节点规格编码。仅老规格实例需要填写。 
         :type spec_code: str
         """
@@ -82,7 +82,7 @@ class CreateConnectorReq:
         Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
         :return: The node_cnt of this CreateConnectorReq.
-        :rtype: str
+        :rtype: int
         """
         return self._node_cnt
 
@@ -93,7 +93,7 @@ class CreateConnectorReq:
         Smart Connect节点数量。不能小于2个。 如果不填，默认是2个。 
 
         :param node_cnt: The node_cnt of this CreateConnectorReq.
-        :type node_cnt: str
+        :type node_cnt: int
         """
         self._node_cnt = node_cnt
 

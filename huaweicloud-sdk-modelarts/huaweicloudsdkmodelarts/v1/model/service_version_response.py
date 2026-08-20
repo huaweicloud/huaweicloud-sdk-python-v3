@@ -25,6 +25,7 @@ class ServiceVersionResponse:
         'lts_strategy': 'str',
         'lts_status': 'str',
         'lts_event_status': 'str',
+        'lts_file_status': 'str',
         'log_configs': 'list[LogConfigResponse]',
         'deploy_timeout_minutes': 'int'
     }
@@ -40,11 +41,12 @@ class ServiceVersionResponse:
         'lts_strategy': 'lts_strategy',
         'lts_status': 'lts_status',
         'lts_event_status': 'lts_event_status',
+        'lts_file_status': 'lts_file_status',
         'log_configs': 'log_configs',
         'deploy_timeout_minutes': 'deploy_timeout_minutes'
     }
 
-    def __init__(self, id=None, version=None, description=None, predict_url=None, runtime_config=None, upgrade_config=None, instance_groups=None, lts_strategy=None, lts_status=None, lts_event_status=None, log_configs=None, deploy_timeout_minutes=None):
+    def __init__(self, id=None, version=None, description=None, predict_url=None, runtime_config=None, upgrade_config=None, instance_groups=None, lts_strategy=None, lts_status=None, lts_event_status=None, lts_file_status=None, log_configs=None, deploy_timeout_minutes=None):
         r"""ServiceVersionResponse
 
         The model defined in huaweicloud sdk
@@ -65,10 +67,12 @@ class ServiceVersionResponse:
         :type instance_groups: list[:class:`huaweicloudsdkmodelarts.v1.GroupConfigResponse`]
         :param lts_strategy: **参数解释：** 日志策略。 **取值范围：** - POOL：使用资源池日志插件配置的日志流。 - AUTO_CREATE：自动创建日志流。 - DEFAULT: 由系统决定日志策略
         :type lts_strategy: str
-        :param lts_status: **参数解释：** 部署对接lts状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        :param lts_status: **参数解释：** 服务容器标准输出对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
         :type lts_status: str
-        :param lts_event_status: **参数解释：** 部署对接lts k8s事件状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        :param lts_event_status: **参数解释：** 服务对接lts k8s事件开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
         :type lts_event_status: str
+        :param lts_file_status: **参数解释：** 服务容器日志文件对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        :type lts_file_status: str
         :param log_configs: **参数解释：** 服务日志配置信息。
         :type log_configs: list[:class:`huaweicloudsdkmodelarts.v1.LogConfigResponse`]
         :param deploy_timeout_minutes: **参数解释：** 部署超时时间。 **取值范围：** 不涉及。
@@ -87,6 +91,7 @@ class ServiceVersionResponse:
         self._lts_strategy = None
         self._lts_status = None
         self._lts_event_status = None
+        self._lts_file_status = None
         self._log_configs = None
         self._deploy_timeout_minutes = None
         self.discriminator = None
@@ -111,6 +116,8 @@ class ServiceVersionResponse:
             self.lts_status = lts_status
         if lts_event_status is not None:
             self.lts_event_status = lts_event_status
+        if lts_file_status is not None:
+            self.lts_file_status = lts_file_status
         if log_configs is not None:
             self.log_configs = log_configs
         if deploy_timeout_minutes is not None:
@@ -288,7 +295,7 @@ class ServiceVersionResponse:
     def lts_status(self):
         r"""Gets the lts_status of this ServiceVersionResponse.
 
-        **参数解释：** 部署对接lts状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        **参数解释：** 服务容器标准输出对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
 
         :return: The lts_status of this ServiceVersionResponse.
         :rtype: str
@@ -299,7 +306,7 @@ class ServiceVersionResponse:
     def lts_status(self, lts_status):
         r"""Sets the lts_status of this ServiceVersionResponse.
 
-        **参数解释：** 部署对接lts状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        **参数解释：** 服务容器标准输出对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
 
         :param lts_status: The lts_status of this ServiceVersionResponse.
         :type lts_status: str
@@ -310,7 +317,7 @@ class ServiceVersionResponse:
     def lts_event_status(self):
         r"""Gets the lts_event_status of this ServiceVersionResponse.
 
-        **参数解释：** 部署对接lts k8s事件状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        **参数解释：** 服务对接lts k8s事件开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
 
         :return: The lts_event_status of this ServiceVersionResponse.
         :rtype: str
@@ -321,12 +328,34 @@ class ServiceVersionResponse:
     def lts_event_status(self, lts_event_status):
         r"""Sets the lts_event_status of this ServiceVersionResponse.
 
-        **参数解释：** 部署对接lts k8s事件状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+        **参数解释：** 服务对接lts k8s事件开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
 
         :param lts_event_status: The lts_event_status of this ServiceVersionResponse.
         :type lts_event_status: str
         """
         self._lts_event_status = lts_event_status
+
+    @property
+    def lts_file_status(self):
+        r"""Gets the lts_file_status of this ServiceVersionResponse.
+
+        **参数解释：** 服务容器日志文件对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+
+        :return: The lts_file_status of this ServiceVersionResponse.
+        :rtype: str
+        """
+        return self._lts_file_status
+
+    @lts_file_status.setter
+    def lts_file_status(self, lts_file_status):
+        r"""Sets the lts_file_status of this ServiceVersionResponse.
+
+        **参数解释：** 服务容器日志文件对接lts开关状态。 **取值范围：** - ON：开启。 - OFF：关闭。
+
+        :param lts_file_status: The lts_file_status of this ServiceVersionResponse.
+        :type lts_file_status: str
+        """
+        self._lts_file_status = lts_file_status
 
     @property
     def log_configs(self):

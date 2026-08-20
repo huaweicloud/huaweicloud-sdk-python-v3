@@ -28,7 +28,7 @@ class ListCdnDomainTopPathResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param top_path_summary: 详情数据对象。
+        :param top_path_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_path_summary: list[:class:`huaweicloudsdkcdn.v2.TopPathSummary`]
         """
         
@@ -44,7 +44,7 @@ class ListCdnDomainTopPathResponse(SdkResponse):
     def top_path_summary(self):
         r"""Gets the top_path_summary of this ListCdnDomainTopPathResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_path_summary of this ListCdnDomainTopPathResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopPathSummary`]
@@ -55,7 +55,7 @@ class ListCdnDomainTopPathResponse(SdkResponse):
     def top_path_summary(self, top_path_summary):
         r"""Sets the top_path_summary of this ListCdnDomainTopPathResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_path_summary: The top_path_summary of this ListCdnDomainTopPathResponse.
         :type top_path_summary: list[:class:`huaweicloudsdkcdn.v2.TopPathSummary`]

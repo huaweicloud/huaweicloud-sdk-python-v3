@@ -37,17 +37,17 @@ class ExportTask:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 导出任务id
+        :param task_id: **参数解释：** 导出任务id **取值范围：** 不涉及
         :type task_id: str
-        :param task_name: 导出任务名称
+        :param task_name: **参数解释：** 导出任务名称 **取值范围：** 不涉及
         :type task_name: str
-        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
+        :param status: **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** - success: 成功 - fail: 失败 **默认取值：** 不涉及
         :type status: str
-        :param download_link: 下载链接
+        :param download_link: **参数解释：** 下载链接 **取值范围：** 不涉及
         :type download_link: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释：** 创建时间 **取值范围：** 不涉及
         :type create_time: int
-        :param update_time: 最近更新时间
+        :param update_time: **参数解释：** 最近更新时间 **取值范围：** 不涉及
         :type update_time: int
         """
         
@@ -78,7 +78,7 @@ class ExportTask:
     def task_id(self):
         r"""Gets the task_id of this ExportTask.
 
-        导出任务id
+        **参数解释：** 导出任务id **取值范围：** 不涉及
 
         :return: The task_id of this ExportTask.
         :rtype: str
@@ -89,7 +89,7 @@ class ExportTask:
     def task_id(self, task_id):
         r"""Sets the task_id of this ExportTask.
 
-        导出任务id
+        **参数解释：** 导出任务id **取值范围：** 不涉及
 
         :param task_id: The task_id of this ExportTask.
         :type task_id: str
@@ -100,7 +100,7 @@ class ExportTask:
     def task_name(self):
         r"""Gets the task_name of this ExportTask.
 
-        导出任务名称
+        **参数解释：** 导出任务名称 **取值范围：** 不涉及
 
         :return: The task_name of this ExportTask.
         :rtype: str
@@ -111,7 +111,7 @@ class ExportTask:
     def task_name(self, task_name):
         r"""Sets the task_name of this ExportTask.
 
-        导出任务名称
+        **参数解释：** 导出任务名称 **取值范围：** 不涉及
 
         :param task_name: The task_name of this ExportTask.
         :type task_name: str
@@ -122,7 +122,7 @@ class ExportTask:
     def status(self):
         r"""Gets the status of this ExportTask.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
+        **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** - success: 成功 - fail: 失败 **默认取值：** 不涉及
 
         :return: The status of this ExportTask.
         :rtype: str
@@ -133,7 +133,7 @@ class ExportTask:
     def status(self, status):
         r"""Sets the status of this ExportTask.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败  **默认取值：** 不涉及
+        **参数解释：** 任务状态 **约束限制：** 不涉及 **取值范围：** - success: 成功 - fail: 失败 **默认取值：** 不涉及
 
         :param status: The status of this ExportTask.
         :type status: str
@@ -144,7 +144,7 @@ class ExportTask:
     def download_link(self):
         r"""Gets the download_link of this ExportTask.
 
-        下载链接
+        **参数解释：** 下载链接 **取值范围：** 不涉及
 
         :return: The download_link of this ExportTask.
         :rtype: str
@@ -155,7 +155,7 @@ class ExportTask:
     def download_link(self, download_link):
         r"""Sets the download_link of this ExportTask.
 
-        下载链接
+        **参数解释：** 下载链接 **取值范围：** 不涉及
 
         :param download_link: The download_link of this ExportTask.
         :type download_link: str
@@ -166,7 +166,7 @@ class ExportTask:
     def create_time(self):
         r"""Gets the create_time of this ExportTask.
 
-        创建时间
+        **参数解释：** 创建时间 **取值范围：** 不涉及
 
         :return: The create_time of this ExportTask.
         :rtype: int
@@ -177,7 +177,7 @@ class ExportTask:
     def create_time(self, create_time):
         r"""Sets the create_time of this ExportTask.
 
-        创建时间
+        **参数解释：** 创建时间 **取值范围：** 不涉及
 
         :param create_time: The create_time of this ExportTask.
         :type create_time: int
@@ -188,7 +188,7 @@ class ExportTask:
     def update_time(self):
         r"""Gets the update_time of this ExportTask.
 
-        最近更新时间
+        **参数解释：** 最近更新时间 **取值范围：** 不涉及
 
         :return: The update_time of this ExportTask.
         :rtype: int
@@ -199,7 +199,7 @@ class ExportTask:
     def update_time(self, update_time):
         r"""Sets the update_time of this ExportTask.
 
-        最近更新时间
+        **参数解释：** 最近更新时间 **取值范围：** 不涉及
 
         :param update_time: The update_time of this ExportTask.
         :type update_time: int

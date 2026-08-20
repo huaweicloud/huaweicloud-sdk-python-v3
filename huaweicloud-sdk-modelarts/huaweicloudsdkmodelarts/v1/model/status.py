@@ -22,7 +22,9 @@ class Status:
         'tasks': 'list[str]',
         'start_time': 'int',
         'task_statuses': 'list[TaskStatuses]',
-        'running_records': 'list[RunningRecord]'
+        'running_records': 'list[RunningRecord]',
+        'retention_time': 'int',
+        'task_ips': 'list[TaskIP]'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class Status:
         'tasks': 'tasks',
         'start_time': 'start_time',
         'task_statuses': 'task_statuses',
-        'running_records': 'running_records'
+        'running_records': 'running_records',
+        'retention_time': 'retention_time',
+        'task_ips': 'task_ips'
     }
 
-    def __init__(self, phase=None, secondary_phase=None, duration=None, node_count_metrics=None, tasks=None, start_time=None, task_statuses=None, running_records=None):
+    def __init__(self, phase=None, secondary_phase=None, duration=None, node_count_metrics=None, tasks=None, start_time=None, task_statuses=None, running_records=None, retention_time=None, task_ips=None):
         r"""Status
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class Status:
         :type task_statuses: list[:class:`huaweicloudsdkmodelarts.v1.TaskStatuses`]
         :param running_records: 训练作业运行及故障恢复记录。
         :type running_records: list[:class:`huaweicloudsdkmodelarts.v1.RunningRecord`]
+        :param retention_time: **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了&#x60;reserved_time&#x60;时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+        :type retention_time: int
+        :param task_ips: **参数解释**：训练作业各 Task 的 IP 信息。 **约束限制**：仅当查询请求携带 &#x60;host_ips&#x60; 时返回；且仅返回与筛选 IP 匹配的记录。 **取值范围**：不涉及。 **默认取值**：不传 &#x60;host_ips&#x60; 时不返回。
+        :type task_ips: list[:class:`huaweicloudsdkmodelarts.v1.TaskIP`]
         """
         
         
@@ -69,6 +77,8 @@ class Status:
         self._start_time = None
         self._task_statuses = None
         self._running_records = None
+        self._retention_time = None
+        self._task_ips = None
         self.discriminator = None
 
         if phase is not None:
@@ -87,6 +97,10 @@ class Status:
             self.task_statuses = task_statuses
         if running_records is not None:
             self.running_records = running_records
+        if retention_time is not None:
+            self.retention_time = retention_time
+        if task_ips is not None:
+            self.task_ips = task_ips
 
     @property
     def phase(self):
@@ -263,6 +277,50 @@ class Status:
         :type running_records: list[:class:`huaweicloudsdkmodelarts.v1.RunningRecord`]
         """
         self._running_records = running_records
+
+    @property
+    def retention_time(self):
+        r"""Gets the retention_time of this Status.
+
+        **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+
+        :return: The retention_time of this Status.
+        :rtype: int
+        """
+        return self._retention_time
+
+    @retention_time.setter
+    def retention_time(self, retention_time):
+        r"""Sets the retention_time of this Status.
+
+        **参数解释**：作业已经保留时长。  **约束限制**：仅当创建训练作业时，设置了`reserved_time`时返回。  **取值范围**：不涉及。    **默认取值**：不涉及。
+
+        :param retention_time: The retention_time of this Status.
+        :type retention_time: int
+        """
+        self._retention_time = retention_time
+
+    @property
+    def task_ips(self):
+        r"""Gets the task_ips of this Status.
+
+        **参数解释**：训练作业各 Task 的 IP 信息。 **约束限制**：仅当查询请求携带 `host_ips` 时返回；且仅返回与筛选 IP 匹配的记录。 **取值范围**：不涉及。 **默认取值**：不传 `host_ips` 时不返回。
+
+        :return: The task_ips of this Status.
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.TaskIP`]
+        """
+        return self._task_ips
+
+    @task_ips.setter
+    def task_ips(self, task_ips):
+        r"""Sets the task_ips of this Status.
+
+        **参数解释**：训练作业各 Task 的 IP 信息。 **约束限制**：仅当查询请求携带 `host_ips` 时返回；且仅返回与筛选 IP 匹配的记录。 **取值范围**：不涉及。 **默认取值**：不传 `host_ips` 时不返回。
+
+        :param task_ips: The task_ips of this Status.
+        :type task_ips: list[:class:`huaweicloudsdkmodelarts.v1.TaskIP`]
+        """
+        self._task_ips = task_ips
 
     def to_dict(self):
         result = {}

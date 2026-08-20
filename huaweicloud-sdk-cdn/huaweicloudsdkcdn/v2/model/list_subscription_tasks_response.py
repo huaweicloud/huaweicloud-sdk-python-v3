@@ -30,7 +30,7 @@ class ListSubscriptionTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 订阅任务总数
+        :param total: **参数解释：** 订阅任务总数 **取值范围：** 不涉及
         :type total: int
         :param data: 
         :type data: list[:class:`huaweicloudsdkcdn.v2.SubscriptionTask`]
@@ -51,7 +51,7 @@ class ListSubscriptionTasksResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListSubscriptionTasksResponse.
 
-        订阅任务总数
+        **参数解释：** 订阅任务总数 **取值范围：** 不涉及
 
         :return: The total of this ListSubscriptionTasksResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListSubscriptionTasksResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListSubscriptionTasksResponse.
 
-        订阅任务总数
+        **参数解释：** 订阅任务总数 **取值范围：** 不涉及
 
         :param total: The total of this ListSubscriptionTasksResponse.
         :type total: int

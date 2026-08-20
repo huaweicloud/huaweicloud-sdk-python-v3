@@ -15,8 +15,8 @@ class GroupMessageOffsetsDetailEntity:
     sensitive_list = []
 
     openapi_types = {
-        'partition': 'str',
-        'message_current_offset': 'str',
+        'partition': 'int',
+        'message_current_offset': 'int',
         'topic': 'str',
         'message_log_start_offset': 'int',
         'lag': 'int',
@@ -44,9 +44,9 @@ class GroupMessageOffsetsDetailEntity:
         The model defined in huaweicloud sdk
 
         :param partition: 分区
-        :type partition: str
+        :type partition: int
         :param message_current_offset: 消息当前位点
-        :type message_current_offset: str
+        :type message_current_offset: int
         :param topic: topic名称
         :type topic: str
         :param message_log_start_offset: 消息开始位点
@@ -102,7 +102,7 @@ class GroupMessageOffsetsDetailEntity:
         分区
 
         :return: The partition of this GroupMessageOffsetsDetailEntity.
-        :rtype: str
+        :rtype: int
         """
         return self._partition
 
@@ -113,7 +113,7 @@ class GroupMessageOffsetsDetailEntity:
         分区
 
         :param partition: The partition of this GroupMessageOffsetsDetailEntity.
-        :type partition: str
+        :type partition: int
         """
         self._partition = partition
 
@@ -124,7 +124,7 @@ class GroupMessageOffsetsDetailEntity:
         消息当前位点
 
         :return: The message_current_offset of this GroupMessageOffsetsDetailEntity.
-        :rtype: str
+        :rtype: int
         """
         return self._message_current_offset
 
@@ -135,7 +135,7 @@ class GroupMessageOffsetsDetailEntity:
         消息当前位点
 
         :param message_current_offset: The message_current_offset of this GroupMessageOffsetsDetailEntity.
-        :type message_current_offset: str
+        :type message_current_offset: int
         """
         self._message_current_offset = message_current_offset
 

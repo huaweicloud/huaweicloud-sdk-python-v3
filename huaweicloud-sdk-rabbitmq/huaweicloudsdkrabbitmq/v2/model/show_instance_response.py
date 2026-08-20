@@ -192,7 +192,7 @@ class ShowInstanceResponse(SdkResponse):
         :type maintain_end: str
         :param enable_publicip: **参数解释**： RabbitMQ实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
         :type enable_publicip: bool
-        :param publicip_address: **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
+        :param publicip_address: **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
         :type publicip_address: str
         :param publicip_id: **参数解释**： RabbitMQ实例绑定的弹性IP地址的ID。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
         :type publicip_id: str
@@ -1038,7 +1038,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self):
         r"""Gets the publicip_address of this ShowInstanceResponse.
 
-        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
 
         :return: The publicip_address of this ShowInstanceResponse.
         :rtype: str
@@ -1049,7 +1049,7 @@ class ShowInstanceResponse(SdkResponse):
     def publicip_address(self, publicip_address):
         r"""Sets the publicip_address of this ShowInstanceResponse.
 
-        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： - true：开启 - false：未开启
+        **参数解释**： RabbitMQ实例绑定的弹性IP地址。  如果未开启公网访问功能，该字段值为null。 **取值范围**： 不涉及。
 
         :param publicip_address: The publicip_address of this ShowInstanceResponse.
         :type publicip_address: str

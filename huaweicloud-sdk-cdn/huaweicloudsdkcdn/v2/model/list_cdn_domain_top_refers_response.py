@@ -28,7 +28,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param top_refer_summary: 详情数据对象。
+        :param top_refer_summary: **参数解释：** 数据详情 **取值范围：** 不涉及
         :type top_refer_summary: list[:class:`huaweicloudsdkcdn.v2.TopReferSummary`]
         """
         
@@ -44,7 +44,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
     def top_refer_summary(self):
         r"""Gets the top_refer_summary of this ListCdnDomainTopRefersResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :return: The top_refer_summary of this ListCdnDomainTopRefersResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.TopReferSummary`]
@@ -55,7 +55,7 @@ class ListCdnDomainTopRefersResponse(SdkResponse):
     def top_refer_summary(self, top_refer_summary):
         r"""Sets the top_refer_summary of this ListCdnDomainTopRefersResponse.
 
-        详情数据对象。
+        **参数解释：** 数据详情 **取值范围：** 不涉及
 
         :param top_refer_summary: The top_refer_summary of this ListCdnDomainTopRefersResponse.
         :type top_refer_summary: list[:class:`huaweicloudsdkcdn.v2.TopReferSummary`]

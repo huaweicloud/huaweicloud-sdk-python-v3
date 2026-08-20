@@ -16,20 +16,51 @@ class UpdateInstanceAutoCreateTopicResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'enable_auto_topic': 'bool'
     }
 
     attribute_map = {
+        'enable_auto_topic': 'enable_auto_topic'
     }
 
-    def __init__(self):
+    def __init__(self, enable_auto_topic=None):
         r"""UpdateInstanceAutoCreateTopicResponse
 
         The model defined in huaweicloud sdk
 
+        :param enable_auto_topic: **参数解释**： 是否开启自动创建Topic功能。 **取值范围**： - true：开启自动创建Topic功能。 - false：关闭自动创建Topic功能。
+        :type enable_auto_topic: bool
         """
         
         super().__init__()
+
+        self._enable_auto_topic = None
         self.discriminator = None
+
+        if enable_auto_topic is not None:
+            self.enable_auto_topic = enable_auto_topic
+
+    @property
+    def enable_auto_topic(self):
+        r"""Gets the enable_auto_topic of this UpdateInstanceAutoCreateTopicResponse.
+
+        **参数解释**： 是否开启自动创建Topic功能。 **取值范围**： - true：开启自动创建Topic功能。 - false：关闭自动创建Topic功能。
+
+        :return: The enable_auto_topic of this UpdateInstanceAutoCreateTopicResponse.
+        :rtype: bool
+        """
+        return self._enable_auto_topic
+
+    @enable_auto_topic.setter
+    def enable_auto_topic(self, enable_auto_topic):
+        r"""Sets the enable_auto_topic of this UpdateInstanceAutoCreateTopicResponse.
+
+        **参数解释**： 是否开启自动创建Topic功能。 **取值范围**： - true：开启自动创建Topic功能。 - false：关闭自动创建Topic功能。
+
+        :param enable_auto_topic: The enable_auto_topic of this UpdateInstanceAutoCreateTopicResponse.
+        :type enable_auto_topic: bool
+        """
+        self._enable_auto_topic = enable_auto_topic
 
     def to_dict(self):
         import warnings

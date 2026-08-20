@@ -62,7 +62,10 @@ class SubCustomerMonthlyBillDetail:
         'sub_resource_type_name': 'str',
         'sub_resource_id': 'str',
         'sub_resource_name': 'str',
-        'period_num': 'decimal.Decimal'
+        'period_num': 'decimal.Decimal',
+        'enterprise_project_id': 'str',
+        'order_type': 'int',
+        'payment_type': 'str'
     }
 
     attribute_map = {
@@ -113,10 +116,13 @@ class SubCustomerMonthlyBillDetail:
         'sub_resource_type_name': 'sub_resource_type_name',
         'sub_resource_id': 'sub_resource_id',
         'sub_resource_name': 'sub_resource_name',
-        'period_num': 'period_num'
+        'period_num': 'period_num',
+        'enterprise_project_id': 'enterprise_project_id',
+        'order_type': 'order_type',
+        'payment_type': 'payment_type'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, period_num=None):
+    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, period_num=None, enterprise_project_id=None, order_type=None, payment_type=None):
         r"""SubCustomerMonthlyBillDetail
 
         The model defined in huaweicloud sdk
@@ -139,7 +145,7 @@ class SubCustomerMonthlyBillDetail:
         :type charging_mode: int
         :param trade_time: 交易时间，即某条消费记录对应的扣费时间。 示例：2020-11-17T06:43:38Z
         :type trade_time: str
-        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8和103时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
         :type trade_id: str
         :param id: 唯一标识。
         :type id: str
@@ -217,6 +223,12 @@ class SubCustomerMonthlyBillDetail:
         :type sub_resource_name: str
         :param period_num: 周期数量，该参数非必填
         :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
+        :param enterprise_project_id: 企业项目标识（企业项目ID），该参数非必填，最大长度：64
+        :type enterprise_project_id: str
+        :param order_type: 订单类型，该参数非必填，1：开通 2：续订 3：变更 4：退订 10：包年/包月转按需 11：按需转包年/包月 13：试用 14：转商用 15：费用调整
+        :type order_type: int
+        :param payment_type: 付款方式，节省计划和预留实例有值。枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付
+        :type payment_type: str
         """
         
         
@@ -269,6 +281,9 @@ class SubCustomerMonthlyBillDetail:
         self._sub_resource_id = None
         self._sub_resource_name = None
         self._period_num = None
+        self._enterprise_project_id = None
+        self._order_type = None
+        self._payment_type = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -367,6 +382,12 @@ class SubCustomerMonthlyBillDetail:
             self.sub_resource_name = sub_resource_name
         if period_num is not None:
             self.period_num = period_num
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if order_type is not None:
+            self.order_type = order_type
+        if payment_type is not None:
+            self.payment_type = payment_type
 
     @property
     def bill_cycle(self):
@@ -570,7 +591,7 @@ class SubCustomerMonthlyBillDetail:
     def trade_id(self):
         r"""Gets the trade_id of this SubCustomerMonthlyBillDetail.
 
-        订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8和103时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
         :return: The trade_id of this SubCustomerMonthlyBillDetail.
         :rtype: str
@@ -581,7 +602,7 @@ class SubCustomerMonthlyBillDetail:
     def trade_id(self, trade_id):
         r"""Sets the trade_id of this SubCustomerMonthlyBillDetail.
 
-        订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        订单ID或交易ID，扣费维度的唯一标识。 账单类型为1，2，3，4，8和103时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
 
         :param trade_id: The trade_id of this SubCustomerMonthlyBillDetail.
         :type trade_id: str
@@ -1423,6 +1444,72 @@ class SubCustomerMonthlyBillDetail:
         :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         self._period_num = period_num
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this SubCustomerMonthlyBillDetail.
+
+        企业项目标识（企业项目ID），该参数非必填，最大长度：64
+
+        :return: The enterprise_project_id of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this SubCustomerMonthlyBillDetail.
+
+        企业项目标识（企业项目ID），该参数非必填，最大长度：64
+
+        :param enterprise_project_id: The enterprise_project_id of this SubCustomerMonthlyBillDetail.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def order_type(self):
+        r"""Gets the order_type of this SubCustomerMonthlyBillDetail.
+
+        订单类型，该参数非必填，1：开通 2：续订 3：变更 4：退订 10：包年/包月转按需 11：按需转包年/包月 13：试用 14：转商用 15：费用调整
+
+        :return: The order_type of this SubCustomerMonthlyBillDetail.
+        :rtype: int
+        """
+        return self._order_type
+
+    @order_type.setter
+    def order_type(self, order_type):
+        r"""Sets the order_type of this SubCustomerMonthlyBillDetail.
+
+        订单类型，该参数非必填，1：开通 2：续订 3：变更 4：退订 10：包年/包月转按需 11：按需转包年/包月 13：试用 14：转商用 15：费用调整
+
+        :param order_type: The order_type of this SubCustomerMonthlyBillDetail.
+        :type order_type: int
+        """
+        self._order_type = order_type
+
+    @property
+    def payment_type(self):
+        r"""Gets the payment_type of this SubCustomerMonthlyBillDetail.
+
+        付款方式，节省计划和预留实例有值。枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付
+
+        :return: The payment_type of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._payment_type
+
+    @payment_type.setter
+    def payment_type(self, payment_type):
+        r"""Sets the payment_type of this SubCustomerMonthlyBillDetail.
+
+        付款方式，节省计划和预留实例有值。枚举值：ALL_UPFRONT：全预付；PARTIAL_UPFRONT：部分预付；NO_UPFRONT：零预付
+
+        :param payment_type: The payment_type of this SubCustomerMonthlyBillDetail.
+        :type payment_type: str
+        """
+        self._payment_type = payment_type
 
     def to_dict(self):
         result = {}

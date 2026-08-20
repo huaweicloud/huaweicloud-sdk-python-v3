@@ -51,15 +51,15 @@ class ListEventsRequest:
         :type id: str
         :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
-        :param status: **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消 **默认取值**: 不涉及。
+        :param status: **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消  **默认取值**: 不涉及。
         :type status: str
-        :param type: **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点 **默认取值**: 不涉及。
+        :param type: **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点  **默认取值**: 不涉及。
         :type type: str
-        :param level: **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示 **默认取值**: 不涉及。
+        :param level: **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示  **默认取值**: 不涉及。
         :type level: str
-        :param sort_field: **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间 **默认取值**: 不涉及。
+        :param sort_field: **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间  **默认取值**: 不涉及。
         :type sort_field: str
-        :param order: **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序 **默认取值**: DESC。
+        :param order: **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序  **默认取值**: DESC。
         :type order: str
         :param offset: **参数解释**: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询。 **约束限制**: 必须为数字，不能为负数。 **取值范围**: 不涉及。 **默认取值**: 0。
         :type offset: int
@@ -172,7 +172,7 @@ class ListEventsRequest:
     def status(self):
         r"""Gets the status of this ListEventsRequest.
 
-        **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消 **默认取值**: 不涉及。
+        **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消  **默认取值**: 不涉及。
 
         :return: The status of this ListEventsRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListEventsRequest:
     def status(self, status):
         r"""Sets the status of this ListEventsRequest.
 
-        **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消 **默认取值**: 不涉及。
+        **参数解释**: 事件状态。 **约束限制**: 不涉及。 **取值范围**: - WAITING：等待中 - INQUIRING：待授权 - SCHEDULED：待执行 - EXECUTING：执行中 - COMPLETED：已完成 - FAILED：失败 - CANCELED：已取消  **默认取值**: 不涉及。
 
         :param status: The status of this ListEventsRequest.
         :type status: str
@@ -194,7 +194,7 @@ class ListEventsRequest:
     def type(self):
         r"""Gets the type of this ListEventsRequest.
 
-        **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点 **默认取值**: 不涉及。
+        **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点  **默认取值**: 不涉及。
 
         :return: The type of this ListEventsRequest.
         :rtype: str
@@ -205,7 +205,7 @@ class ListEventsRequest:
     def type(self, type):
         r"""Sets the type of this ListEventsRequest.
 
-        **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点 **默认取值**: 不涉及。
+        **参数解释**: 事件类型。 **约束限制**: 不涉及。 **取值范围**: - RESTAT_NODE：重启实例节点  **默认取值**: 不涉及。
 
         :param type: The type of this ListEventsRequest.
         :type type: str
@@ -216,7 +216,7 @@ class ListEventsRequest:
     def level(self):
         r"""Gets the level of this ListEventsRequest.
 
-        **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示 **默认取值**: 不涉及。
+        **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示  **默认取值**: 不涉及。
 
         :return: The level of this ListEventsRequest.
         :rtype: str
@@ -227,7 +227,7 @@ class ListEventsRequest:
     def level(self, level):
         r"""Sets the level of this ListEventsRequest.
 
-        **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示 **默认取值**: 不涉及。
+        **参数解释**: 事件级别。 **约束限制**: 不涉及。 **取值范围**: - CRITICAL：紧急 - MAJOR：重要 - MINOR：一般 - INFO：提示  **默认取值**: 不涉及。
 
         :param level: The level of this ListEventsRequest.
         :type level: str
@@ -238,7 +238,7 @@ class ListEventsRequest:
     def sort_field(self):
         r"""Gets the sort_field of this ListEventsRequest.
 
-        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间 **默认取值**: 不涉及。
+        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间  **默认取值**: 不涉及。
 
         :return: The sort_field of this ListEventsRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ListEventsRequest:
     def sort_field(self, sort_field):
         r"""Sets the sort_field of this ListEventsRequest.
 
-        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间 **默认取值**: 不涉及。
+        **参数解释**: 排序字段。 **约束限制**: 不涉及。 **取值范围**: - planned_execution_time：计划执行时间 - created_time：创建时间 - latest_execution_time：最晚执行时间  **默认取值**: 不涉及。
 
         :param sort_field: The sort_field of this ListEventsRequest.
         :type sort_field: str
@@ -260,7 +260,7 @@ class ListEventsRequest:
     def order(self):
         r"""Gets the order of this ListEventsRequest.
 
-        **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序 **默认取值**: DESC。
+        **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序  **默认取值**: DESC。
 
         :return: The order of this ListEventsRequest.
         :rtype: str
@@ -271,7 +271,7 @@ class ListEventsRequest:
     def order(self, order):
         r"""Sets the order of this ListEventsRequest.
 
-        **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序 **默认取值**: DESC。
+        **参数解释**: 排序顺序。 **约束限制**: 不涉及。 **取值范围**: - DESC：降序 - ASC：升序  **默认取值**: DESC。
 
         :param order: The order of this ListEventsRequest.
         :type order: str

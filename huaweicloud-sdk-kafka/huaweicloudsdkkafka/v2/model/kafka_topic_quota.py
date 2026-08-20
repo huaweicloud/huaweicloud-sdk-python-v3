@@ -22,8 +22,8 @@ class KafkaTopicQuota:
 
     attribute_map = {
         'topic': 'topic',
-        'producer_byte_rate': 'producer-byte-rate',
-        'consumer_byte_rate': 'consumer-byte-rate'
+        'producer_byte_rate': 'producer_byte_rate',
+        'consumer_byte_rate': 'consumer_byte_rate'
     }
 
     def __init__(self, topic=None, producer_byte_rate=None, consumer_byte_rate=None):
