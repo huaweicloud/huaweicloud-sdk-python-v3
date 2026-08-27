@@ -16,15 +16,19 @@ class MetricTableItem:
 
     openapi_types = {
         'allocated': 'Allocated',
-        'capacity': 'Capacity'
+        'capacity': 'Capacity',
+        'available': 'Available',
+        'workload': 'WorkloadInfo'
     }
 
     attribute_map = {
         'allocated': 'allocated',
-        'capacity': 'capacity'
+        'capacity': 'capacity',
+        'available': 'available',
+        'workload': 'workload'
     }
 
-    def __init__(self, allocated=None, capacity=None):
+    def __init__(self, allocated=None, capacity=None, available=None, workload=None):
         r"""MetricTableItem
 
         The model defined in huaweicloud sdk
@@ -33,18 +37,28 @@ class MetricTableItem:
         :type allocated: :class:`huaweicloudsdkmodelarts.v1.Allocated`
         :param capacity: 
         :type capacity: :class:`huaweicloudsdkmodelarts.v1.Capacity`
+        :param available: 
+        :type available: :class:`huaweicloudsdkmodelarts.v1.Available`
+        :param workload: 
+        :type workload: :class:`huaweicloudsdkmodelarts.v1.WorkloadInfo`
         """
         
         
 
         self._allocated = None
         self._capacity = None
+        self._available = None
+        self._workload = None
         self.discriminator = None
 
         if allocated is not None:
             self.allocated = allocated
         if capacity is not None:
             self.capacity = capacity
+        if available is not None:
+            self.available = available
+        if workload is not None:
+            self.workload = workload
 
     @property
     def allocated(self):
@@ -81,6 +95,42 @@ class MetricTableItem:
         :type capacity: :class:`huaweicloudsdkmodelarts.v1.Capacity`
         """
         self._capacity = capacity
+
+    @property
+    def available(self):
+        r"""Gets the available of this MetricTableItem.
+
+        :return: The available of this MetricTableItem.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.Available`
+        """
+        return self._available
+
+    @available.setter
+    def available(self, available):
+        r"""Sets the available of this MetricTableItem.
+
+        :param available: The available of this MetricTableItem.
+        :type available: :class:`huaweicloudsdkmodelarts.v1.Available`
+        """
+        self._available = available
+
+    @property
+    def workload(self):
+        r"""Gets the workload of this MetricTableItem.
+
+        :return: The workload of this MetricTableItem.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.WorkloadInfo`
+        """
+        return self._workload
+
+    @workload.setter
+    def workload(self, workload):
+        r"""Sets the workload of this MetricTableItem.
+
+        :param workload: The workload of this MetricTableItem.
+        :type workload: :class:`huaweicloudsdkmodelarts.v1.WorkloadInfo`
+        """
+        self._workload = workload
 
     def to_dict(self):
         result = {}

@@ -37,13 +37,13 @@ class CreateManualImageScanTaskReqInfo:
 
         :param scan_scope: **参数解释**: 扫描风险类型 **约束限制**: 不涉及 **取值范围**: - 0：none。 - 0x7fffffff：全部。 - 0x000f0000：漏洞。 - 0x0000f000：基线检查。 - 0x00000f00：恶意文件。 - 0x000000f0：敏感信息。 - 0x0000000f：软件合规。  **默认取值**: 不涉及 
         :type scan_scope: int
-        :param rate_limit: **参数解释**: 扫描限速 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
+        :param rate_limit: **参数解释**: 三方镜像仓扫描限速,其他镜像仓不生效 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
         :type rate_limit: int
-        :param is_all: **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。 - false：指定镜像扫描,见image_info字段。  **默认取值**: 不涉及 
+        :param is_all: **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
         :type is_all: bool
         :param query_info: 
         :type query_info: :class:`huaweicloudsdkhss.v5.CreateManualImageScanTaskReqInfoQueryInfo`
-        :param image_info: 待扫描镜像
+        :param image_info: **参数解释**:   待扫描镜像，is_all为false需要填写；   若为仓库镜像，需要填写id，image_digest，namespace，image_name，image_version，image_version，registry_id，registry_name，registry_type，若为企业镜像，需要填写instance_id   若为本地镜像，需要填写image_id，image_name，image_version，registry_id，registry_name，registry_type 
         :type image_info: list[:class:`huaweicloudsdkhss.v5.CreateManualImageScanTaskReqInfoImageInfo`]
         """
         
@@ -93,7 +93,7 @@ class CreateManualImageScanTaskReqInfo:
     def rate_limit(self):
         r"""Gets the rate_limit of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描限速 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
+        **参数解释**: 三方镜像仓扫描限速,其他镜像仓不生效 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
 
         :return: The rate_limit of this CreateManualImageScanTaskReqInfo.
         :rtype: int
@@ -104,7 +104,7 @@ class CreateManualImageScanTaskReqInfo:
     def rate_limit(self, rate_limit):
         r"""Sets the rate_limit of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描限速 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
+        **参数解释**: 三方镜像仓扫描限速,其他镜像仓不生效 单位：个/h **约束限制**: 不涉及 **取值范围**: 0-1000，0表示不限制。  **默认取值**: 不涉及 
 
         :param rate_limit: The rate_limit of this CreateManualImageScanTaskReqInfo.
         :type rate_limit: int
@@ -115,7 +115,7 @@ class CreateManualImageScanTaskReqInfo:
     def is_all(self):
         r"""Gets the is_all of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。 - false：指定镜像扫描,见image_info字段。  **默认取值**: 不涉及 
+        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
 
         :return: The is_all of this CreateManualImageScanTaskReqInfo.
         :rtype: bool
@@ -126,7 +126,7 @@ class CreateManualImageScanTaskReqInfo:
     def is_all(self, is_all):
         r"""Sets the is_all of this CreateManualImageScanTaskReqInfo.
 
-        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。 - false：指定镜像扫描,见image_info字段。  **默认取值**: 不涉及 
+        **参数解释**: 扫描全部镜像 **约束限制**: 不涉及 **取值范围**: - true：扫描全部镜像。支持全部镜像扫描或者指定镜像仓类型扫描，若为指定镜像仓类型扫描，需要填写query_info的image_type类型。 - false：指定镜像扫描,需要填写详细的镜像信息image_info字段。 **默认取值**: 不涉及 
 
         :param is_all: The is_all of this CreateManualImageScanTaskReqInfo.
         :type is_all: bool
@@ -155,7 +155,7 @@ class CreateManualImageScanTaskReqInfo:
     def image_info(self):
         r"""Gets the image_info of this CreateManualImageScanTaskReqInfo.
 
-        待扫描镜像
+        **参数解释**:   待扫描镜像，is_all为false需要填写；   若为仓库镜像，需要填写id，image_digest，namespace，image_name，image_version，image_version，registry_id，registry_name，registry_type，若为企业镜像，需要填写instance_id   若为本地镜像，需要填写image_id，image_name，image_version，registry_id，registry_name，registry_type 
 
         :return: The image_info of this CreateManualImageScanTaskReqInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CreateManualImageScanTaskReqInfoImageInfo`]
@@ -166,7 +166,7 @@ class CreateManualImageScanTaskReqInfo:
     def image_info(self, image_info):
         r"""Sets the image_info of this CreateManualImageScanTaskReqInfo.
 
-        待扫描镜像
+        **参数解释**:   待扫描镜像，is_all为false需要填写；   若为仓库镜像，需要填写id，image_digest，namespace，image_name，image_version，image_version，registry_id，registry_name，registry_type，若为企业镜像，需要填写instance_id   若为本地镜像，需要填写image_id，image_name，image_version，registry_id，registry_name，registry_type 
 
         :param image_info: The image_info of this CreateManualImageScanTaskReqInfo.
         :type image_info: list[:class:`huaweicloudsdkhss.v5.CreateManualImageScanTaskReqInfoImageInfo`]

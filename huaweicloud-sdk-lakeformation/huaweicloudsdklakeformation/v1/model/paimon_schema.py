@@ -23,8 +23,8 @@ class PaimonSchema:
 
     attribute_map = {
         'fields': 'fields',
-        'partition_keys': 'partitionKeys',
-        'primary_keys': 'primaryKeys',
+        'partition_keys': 'partition_keys',
+        'primary_keys': 'primary_keys',
         'options': 'options'
     }
 

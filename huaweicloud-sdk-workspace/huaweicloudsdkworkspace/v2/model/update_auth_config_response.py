@@ -17,15 +17,17 @@ class UpdateAuthConfigResponse(SdkResponse):
 
     openapi_types = {
         'auth_config_id': 'str',
-        'sms_login_enabled': 'bool'
+        'sms_login_enabled': 'bool',
+        'login_captcha': 'LoginCaptchaConfig'
     }
 
     attribute_map = {
         'auth_config_id': 'auth_config_id',
-        'sms_login_enabled': 'sms_login_enabled'
+        'sms_login_enabled': 'sms_login_enabled',
+        'login_captcha': 'login_captcha'
     }
 
-    def __init__(self, auth_config_id=None, sms_login_enabled=None):
+    def __init__(self, auth_config_id=None, sms_login_enabled=None, login_captcha=None):
         r"""UpdateAuthConfigResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class UpdateAuthConfigResponse(SdkResponse):
         :type auth_config_id: str
         :param sms_login_enabled: 是否开启短信登录。
         :type sms_login_enabled: bool
+        :param login_captcha: 
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
         """
         
         super().__init__()
 
         self._auth_config_id = None
         self._sms_login_enabled = None
+        self._login_captcha = None
         self.discriminator = None
 
         if auth_config_id is not None:
             self.auth_config_id = auth_config_id
         if sms_login_enabled is not None:
             self.sms_login_enabled = sms_login_enabled
+        if login_captcha is not None:
+            self.login_captcha = login_captcha
 
     @property
     def auth_config_id(self):
@@ -90,6 +97,24 @@ class UpdateAuthConfigResponse(SdkResponse):
         :type sms_login_enabled: bool
         """
         self._sms_login_enabled = sms_login_enabled
+
+    @property
+    def login_captcha(self):
+        r"""Gets the login_captcha of this UpdateAuthConfigResponse.
+
+        :return: The login_captcha of this UpdateAuthConfigResponse.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        return self._login_captcha
+
+    @login_captcha.setter
+    def login_captcha(self, login_captcha):
+        r"""Sets the login_captcha of this UpdateAuthConfigResponse.
+
+        :param login_captcha: The login_captcha of this UpdateAuthConfigResponse.
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        self._login_captcha = login_captcha
 
     def to_dict(self):
         import warnings

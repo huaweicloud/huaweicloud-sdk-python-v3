@@ -31,7 +31,8 @@ class Flavor:
         'storages': 'list[str]',
         'vcpus': 'int',
         'gpu': 'GPUsInfo',
-        'ascend': 'AscendInfo'
+        'ascend': 'AscendInfo',
+        'support_eni': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class Flavor:
         'storages': 'storages',
         'vcpus': 'vcpus',
         'gpu': 'gpu',
-        'ascend': 'ascend'
+        'ascend': 'ascend',
+        'support_eni': 'support_eni'
     }
 
-    def __init__(self, arch=None, billing=None, category=None, description=None, evs_max_size=None, evs_sku_code=None, feature=None, free=None, grow_support_type=None, id=None, memory=None, name=None, sold_out=None, storages=None, vcpus=None, gpu=None, ascend=None):
+    def __init__(self, arch=None, billing=None, category=None, description=None, evs_max_size=None, evs_sku_code=None, feature=None, free=None, grow_support_type=None, id=None, memory=None, name=None, sold_out=None, storages=None, vcpus=None, gpu=None, ascend=None, support_eni=None):
         r"""Flavor
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class Flavor:
         :type gpu: :class:`huaweicloudsdkmodelarts.v1.GPUsInfo`
         :param ascend: 
         :type ascend: :class:`huaweicloudsdkmodelarts.v1.AscendInfo`
+        :param support_eni: **参数解释**：是否支持ENI挂载。
+        :type support_eni: bool
         """
         
         
@@ -114,6 +118,7 @@ class Flavor:
         self._vcpus = None
         self._gpu = None
         self._ascend = None
+        self._support_eni = None
         self.discriminator = None
 
         if arch is not None:
@@ -150,6 +155,8 @@ class Flavor:
             self.gpu = gpu
         if ascend is not None:
             self.ascend = ascend
+        if support_eni is not None:
+            self.support_eni = support_eni
 
     @property
     def arch(self):
@@ -512,6 +519,28 @@ class Flavor:
         :type ascend: :class:`huaweicloudsdkmodelarts.v1.AscendInfo`
         """
         self._ascend = ascend
+
+    @property
+    def support_eni(self):
+        r"""Gets the support_eni of this Flavor.
+
+        **参数解释**：是否支持ENI挂载。
+
+        :return: The support_eni of this Flavor.
+        :rtype: bool
+        """
+        return self._support_eni
+
+    @support_eni.setter
+    def support_eni(self, support_eni):
+        r"""Sets the support_eni of this Flavor.
+
+        **参数解释**：是否支持ENI挂载。
+
+        :param support_eni: The support_eni of this Flavor.
+        :type support_eni: bool
+        """
+        self._support_eni = support_eni
 
     def to_dict(self):
         result = {}

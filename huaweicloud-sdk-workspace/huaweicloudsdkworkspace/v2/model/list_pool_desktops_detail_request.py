@@ -30,6 +30,7 @@ class ListPoolDesktopsDetailRequest:
         'desktop_id': 'list[str]',
         'desktop_type': 'str',
         'tag': 'str',
+        'domain_status': 'int',
         'user_attached': 'bool',
         'enterprise_project_id': 'str',
         'image_id': 'str',
@@ -58,6 +59,7 @@ class ListPoolDesktopsDetailRequest:
         'desktop_id': 'desktop_id',
         'desktop_type': 'desktop_type',
         'tag': 'tag',
+        'domain_status': 'domain_status',
         'user_attached': 'user_attached',
         'enterprise_project_id': 'enterprise_project_id',
         'image_id': 'image_id',
@@ -70,7 +72,7 @@ class ListPoolDesktopsDetailRequest:
         'isolated': 'isolated'
     }
 
-    def __init__(self, pool_id=None, inconsistent_type=None, offset=None, limit=None, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, desktop_type=None, tag=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, isolated=None):
+    def __init__(self, pool_id=None, inconsistent_type=None, offset=None, limit=None, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, desktop_type=None, tag=None, domain_status=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, isolated=None):
         r"""ListPoolDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class ListPoolDesktopsDetailRequest:
         :type desktop_type: str
         :param tag: 桌面的标签。样例：  - key1&#x3D;value1。 - key1&#x3D;value1，key2&#x3D;value2。
         :type tag: str
+        :param domain_status: 加域状态。|- 1 正常。 2 脱域。 3 未上报。
+        :type domain_status: int
         :param user_attached: 是否分配了用户。
         :type user_attached: bool
         :param enterprise_project_id: 企业项目ID。
@@ -144,6 +148,7 @@ class ListPoolDesktopsDetailRequest:
         self._desktop_id = None
         self._desktop_type = None
         self._tag = None
+        self._domain_status = None
         self._user_attached = None
         self._enterprise_project_id = None
         self._image_id = None
@@ -185,6 +190,8 @@ class ListPoolDesktopsDetailRequest:
             self.desktop_type = desktop_type
         if tag is not None:
             self.tag = tag
+        if domain_status is not None:
+            self.domain_status = domain_status
         if user_attached is not None:
             self.user_attached = user_attached
         if enterprise_project_id is not None:
@@ -535,6 +542,28 @@ class ListPoolDesktopsDetailRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def domain_status(self):
+        r"""Gets the domain_status of this ListPoolDesktopsDetailRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :return: The domain_status of this ListPoolDesktopsDetailRequest.
+        :rtype: int
+        """
+        return self._domain_status
+
+    @domain_status.setter
+    def domain_status(self, domain_status):
+        r"""Sets the domain_status of this ListPoolDesktopsDetailRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :param domain_status: The domain_status of this ListPoolDesktopsDetailRequest.
+        :type domain_status: int
+        """
+        self._domain_status = domain_status
 
     @property
     def user_attached(self):

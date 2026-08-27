@@ -17,6 +17,7 @@ class ListDesktopsDetailRequest:
     openapi_types = {
         'status': 'str',
         'user_name': 'str',
+        'user_id': 'str',
         'user_names': 'list[str]',
         'sort_field': 'str',
         'sort_type': 'str',
@@ -27,6 +28,7 @@ class ListDesktopsDetailRequest:
         'limit': 'int',
         'desktop_id': 'list[str]',
         'desktop_type': 'str',
+        'domain_status': 'int',
         'tag': 'str',
         'pool_id': 'str',
         'user_attached': 'bool',
@@ -37,12 +39,14 @@ class ListDesktopsDetailRequest:
         'is_share_desktop': 'bool',
         'subnet_id': 'str',
         'is_support_internet': 'bool',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'agent_version': 'str'
     }
 
     attribute_map = {
         'status': 'status',
         'user_name': 'user_name',
+        'user_id': 'user_id',
         'user_names': 'user_names',
         'sort_field': 'sort_field',
         'sort_type': 'sort_type',
@@ -53,6 +57,7 @@ class ListDesktopsDetailRequest:
         'limit': 'limit',
         'desktop_id': 'desktop_id',
         'desktop_type': 'desktop_type',
+        'domain_status': 'domain_status',
         'tag': 'tag',
         'pool_id': 'pool_id',
         'user_attached': 'user_attached',
@@ -63,10 +68,11 @@ class ListDesktopsDetailRequest:
         'is_share_desktop': 'is_share_desktop',
         'subnet_id': 'subnet_id',
         'is_support_internet': 'is_support_internet',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'agent_version': 'agent_version'
     }
 
-    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
+    def __init__(self, status=None, user_name=None, user_id=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, domain_status=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, agent_version=None):
         r"""ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -75,6 +81,8 @@ class ListDesktopsDetailRequest:
         :type status: str
         :param user_name: 桌面所属用户，当传user_names时，本字段不生效。
         :type user_name: str
+        :param user_id: 用户ID。
+        :type user_id: str
         :param user_names: 桌面所属用户，批量筛选，最多不超过100个用户。
         :type user_names: list[str]
         :param sort_field: 排序字段名称，需要结合sort_type字段一起使用。 - created 创建时间。 - computer_name 桌面名称。
@@ -95,6 +103,8 @@ class ListDesktopsDetailRequest:
         :type desktop_id: list[str]
         :param desktop_type: 桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
         :type desktop_type: str
+        :param domain_status: 加域状态。|- 1 正常。 2 脱域。 3 未上报。
+        :type domain_status: int
         :param tag: 桌面的标签。样例：  - key1&#x3D;value1。 - key1&#x3D;value1，key2&#x3D;value2。
         :type tag: str
         :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
@@ -117,12 +127,15 @@ class ListDesktopsDetailRequest:
         :type is_support_internet: bool
         :param availability_zone: 查询可用区。
         :type availability_zone: str
+        :param agent_version: agent版本。
+        :type agent_version: str
         """
         
         
 
         self._status = None
         self._user_name = None
+        self._user_id = None
         self._user_names = None
         self._sort_field = None
         self._sort_type = None
@@ -133,6 +146,7 @@ class ListDesktopsDetailRequest:
         self._limit = None
         self._desktop_id = None
         self._desktop_type = None
+        self._domain_status = None
         self._tag = None
         self._pool_id = None
         self._user_attached = None
@@ -144,12 +158,15 @@ class ListDesktopsDetailRequest:
         self._subnet_id = None
         self._is_support_internet = None
         self._availability_zone = None
+        self._agent_version = None
         self.discriminator = None
 
         if status is not None:
             self.status = status
         if user_name is not None:
             self.user_name = user_name
+        if user_id is not None:
+            self.user_id = user_id
         if user_names is not None:
             self.user_names = user_names
         if sort_field is not None:
@@ -170,6 +187,8 @@ class ListDesktopsDetailRequest:
             self.desktop_id = desktop_id
         if desktop_type is not None:
             self.desktop_type = desktop_type
+        if domain_status is not None:
+            self.domain_status = domain_status
         if tag is not None:
             self.tag = tag
         if pool_id is not None:
@@ -192,6 +211,8 @@ class ListDesktopsDetailRequest:
             self.is_support_internet = is_support_internet
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if agent_version is not None:
+            self.agent_version = agent_version
 
     @property
     def status(self):
@@ -236,6 +257,28 @@ class ListDesktopsDetailRequest:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_id(self):
+        r"""Gets the user_id of this ListDesktopsDetailRequest.
+
+        用户ID。
+
+        :return: The user_id of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        r"""Sets the user_id of this ListDesktopsDetailRequest.
+
+        用户ID。
+
+        :param user_id: The user_id of this ListDesktopsDetailRequest.
+        :type user_id: str
+        """
+        self._user_id = user_id
 
     @property
     def user_names(self):
@@ -456,6 +499,28 @@ class ListDesktopsDetailRequest:
         :type desktop_type: str
         """
         self._desktop_type = desktop_type
+
+    @property
+    def domain_status(self):
+        r"""Gets the domain_status of this ListDesktopsDetailRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :return: The domain_status of this ListDesktopsDetailRequest.
+        :rtype: int
+        """
+        return self._domain_status
+
+    @domain_status.setter
+    def domain_status(self, domain_status):
+        r"""Sets the domain_status of this ListDesktopsDetailRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :param domain_status: The domain_status of this ListDesktopsDetailRequest.
+        :type domain_status: int
+        """
+        self._domain_status = domain_status
 
     @property
     def tag(self):
@@ -698,6 +763,28 @@ class ListDesktopsDetailRequest:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def agent_version(self):
+        r"""Gets the agent_version of this ListDesktopsDetailRequest.
+
+        agent版本。
+
+        :return: The agent_version of this ListDesktopsDetailRequest.
+        :rtype: str
+        """
+        return self._agent_version
+
+    @agent_version.setter
+    def agent_version(self, agent_version):
+        r"""Sets the agent_version of this ListDesktopsDetailRequest.
+
+        agent版本。
+
+        :param agent_version: The agent_version of this ListDesktopsDetailRequest.
+        :type agent_version: str
+        """
+        self._agent_version = agent_version
 
     def to_dict(self):
         result = {}

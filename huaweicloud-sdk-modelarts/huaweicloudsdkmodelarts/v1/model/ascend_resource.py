@@ -19,7 +19,8 @@ class AscendResource:
         'npu_memory': 'str',
         'type': 'str',
         'ai_core': 'str',
-        'ai_cpu': 'str'
+        'ai_cpu': 'str',
+        'type_alias': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class AscendResource:
         'npu_memory': 'npu_memory',
         'type': 'type',
         'ai_core': 'ai_core',
-        'ai_cpu': 'ai_cpu'
+        'ai_cpu': 'ai_cpu',
+        'type_alias': 'type_alias'
     }
 
-    def __init__(self, npu=None, npu_memory=None, type=None, ai_core=None, ai_cpu=None):
+    def __init__(self, npu=None, npu_memory=None, type=None, ai_core=None, ai_cpu=None, type_alias=None):
         r"""AscendResource
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class AscendResource:
         :type ai_core: str
         :param ai_cpu: **参数解释：** 切分规格中的ai_cpu。 **取值范围：** 不涉及。
         :type ai_cpu: str
+        :param type_alias: **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+        :type type_alias: str
         """
         
         
@@ -54,6 +58,7 @@ class AscendResource:
         self._type = None
         self._ai_core = None
         self._ai_cpu = None
+        self._type_alias = None
         self.discriminator = None
 
         if npu is not None:
@@ -66,6 +71,8 @@ class AscendResource:
             self.ai_core = ai_core
         if ai_cpu is not None:
             self.ai_cpu = ai_cpu
+        if type_alias is not None:
+            self.type_alias = type_alias
 
     @property
     def npu(self):
@@ -176,6 +183,28 @@ class AscendResource:
         :type ai_cpu: str
         """
         self._ai_cpu = ai_cpu
+
+    @property
+    def type_alias(self):
+        r"""Gets the type_alias of this AscendResource.
+
+        **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+
+        :return: The type_alias of this AscendResource.
+        :rtype: str
+        """
+        return self._type_alias
+
+    @type_alias.setter
+    def type_alias(self, type_alias):
+        r"""Sets the type_alias of this AscendResource.
+
+        **参数解释：** 区分卡类型，如Snt9b3、Snt9b2 **取值范围：** 不涉及。
+
+        :param type_alias: The type_alias of this AscendResource.
+        :type type_alias: str
+        """
+        self._type_alias = type_alias
 
     def to_dict(self):
         result = {}

@@ -15,20 +15,80 @@ class ListCertsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         r"""ListCertsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 每页显示的数量。
+        :type limit: int
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :type offset: int
         """
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListCertsRequest.
+
+        每页显示的数量。
+
+        :return: The limit of this ListCertsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListCertsRequest.
+
+        每页显示的数量。
+
+        :param limit: The limit of this ListCertsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListCertsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :return: The offset of this ListCertsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListCertsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :param offset: The offset of this ListCertsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

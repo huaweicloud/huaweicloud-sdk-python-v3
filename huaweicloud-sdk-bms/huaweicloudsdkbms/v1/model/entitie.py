@@ -16,15 +16,17 @@ class Entitie:
 
     openapi_types = {
         'server_id': 'str',
-        'nic_id': 'str'
+        'nic_id': 'str',
+        'errorcode_message': 'str'
     }
 
     attribute_map = {
         'server_id': 'server_id',
-        'nic_id': 'nic_id'
+        'nic_id': 'nic_id',
+        'errorcode_message': 'errorcode_message'
     }
 
-    def __init__(self, server_id=None, nic_id=None):
+    def __init__(self, server_id=None, nic_id=None, errorcode_message=None):
         r"""Entitie
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class Entitie:
         :type server_id: str
         :param nic_id: 网卡相关操作显示nic_id
         :type nic_id: str
+        :param errorcode_message: 子任务执行失败的具体原因
+        :type errorcode_message: str
         """
         
         
 
         self._server_id = None
         self._nic_id = None
+        self._errorcode_message = None
         self.discriminator = None
 
         if server_id is not None:
             self.server_id = server_id
         if nic_id is not None:
             self.nic_id = nic_id
+        if errorcode_message is not None:
+            self.errorcode_message = errorcode_message
 
     @property
     def server_id(self):
@@ -89,6 +96,28 @@ class Entitie:
         :type nic_id: str
         """
         self._nic_id = nic_id
+
+    @property
+    def errorcode_message(self):
+        r"""Gets the errorcode_message of this Entitie.
+
+        子任务执行失败的具体原因
+
+        :return: The errorcode_message of this Entitie.
+        :rtype: str
+        """
+        return self._errorcode_message
+
+    @errorcode_message.setter
+    def errorcode_message(self, errorcode_message):
+        r"""Sets the errorcode_message of this Entitie.
+
+        子任务执行失败的具体原因
+
+        :param errorcode_message: The errorcode_message of this Entitie.
+        :type errorcode_message: str
+        """
+        self._errorcode_message = errorcode_message
 
     def to_dict(self):
         result = {}

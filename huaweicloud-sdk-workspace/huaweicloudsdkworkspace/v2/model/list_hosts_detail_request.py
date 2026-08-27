@@ -25,7 +25,9 @@ class ListHostsDetailRequest:
         'limit': 'int',
         'offset': 'int',
         'marker': 'str',
-        'changes_since': 'str'
+        'changes_since': 'str',
+        'sort_field': 'str',
+        'sort_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class ListHostsDetailRequest:
         'limit': 'limit',
         'offset': 'offset',
         'marker': 'marker',
-        'changes_since': 'changes_since'
+        'changes_since': 'changes_since',
+        'sort_field': 'sort_field',
+        'sort_type': 'sort_type'
     }
 
-    def __init__(self, name=None, availability_zone=None, host_id=None, enterprise_project_id=None, host_type=None, host_type_name=None, state=None, limit=None, offset=None, marker=None, changes_since=None):
+    def __init__(self, name=None, availability_zone=None, host_id=None, enterprise_project_id=None, host_type=None, host_type_name=None, state=None, limit=None, offset=None, marker=None, changes_since=None, sort_field=None, sort_type=None):
         r"""ListHostsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +73,10 @@ class ListHostsDetailRequest:
         :type marker: str
         :param changes_since: 过滤指定时间起状态变更的专属主机。 日期和时间戳的格式为ISO 8601：CCYY-MM-DDThh:mm:ss±hh:mm 如果包含“hh:mm”值，则将时区作为UTC的偏移量返回。例如，“2015-08-27T09:49:58-05:00”。如果您省略时区，则假定为UTC时区。
         :type changes_since: str
+        :param sort_field: 排序字段名称，需要结合sort_type字段一起使用。 - instance_total 云办公主机上的实例总数 - available_vcpus 云办公主机可用的vCPU核数 - available_memory 云办公主机可用的内存大小
+        :type sort_field: str
+        :param sort_type: 排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
+        :type sort_type: str
         """
         
         
@@ -84,6 +92,8 @@ class ListHostsDetailRequest:
         self._offset = None
         self._marker = None
         self._changes_since = None
+        self._sort_field = None
+        self._sort_type = None
         self.discriminator = None
 
         if name is not None:
@@ -108,6 +118,10 @@ class ListHostsDetailRequest:
             self.marker = marker
         if changes_since is not None:
             self.changes_since = changes_since
+        if sort_field is not None:
+            self.sort_field = sort_field
+        if sort_type is not None:
+            self.sort_type = sort_type
 
     @property
     def name(self):
@@ -350,6 +364,50 @@ class ListHostsDetailRequest:
         :type changes_since: str
         """
         self._changes_since = changes_since
+
+    @property
+    def sort_field(self):
+        r"""Gets the sort_field of this ListHostsDetailRequest.
+
+        排序字段名称，需要结合sort_type字段一起使用。 - instance_total 云办公主机上的实例总数 - available_vcpus 云办公主机可用的vCPU核数 - available_memory 云办公主机可用的内存大小
+
+        :return: The sort_field of this ListHostsDetailRequest.
+        :rtype: str
+        """
+        return self._sort_field
+
+    @sort_field.setter
+    def sort_field(self, sort_field):
+        r"""Sets the sort_field of this ListHostsDetailRequest.
+
+        排序字段名称，需要结合sort_type字段一起使用。 - instance_total 云办公主机上的实例总数 - available_vcpus 云办公主机可用的vCPU核数 - available_memory 云办公主机可用的内存大小
+
+        :param sort_field: The sort_field of this ListHostsDetailRequest.
+        :type sort_field: str
+        """
+        self._sort_field = sort_field
+
+    @property
+    def sort_type(self):
+        r"""Gets the sort_type of this ListHostsDetailRequest.
+
+        排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
+
+        :return: The sort_type of this ListHostsDetailRequest.
+        :rtype: str
+        """
+        return self._sort_type
+
+    @sort_type.setter
+    def sort_type(self, sort_type):
+        r"""Sets the sort_type of this ListHostsDetailRequest.
+
+        排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
+
+        :param sort_type: The sort_type of this ListHostsDetailRequest.
+        :type sort_type: str
+        """
+        self._sort_type = sort_type
 
     def to_dict(self):
         result = {}

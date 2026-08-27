@@ -4987,6 +4987,10 @@ class HssClient(Client):
             query_params.append(('protect_status', local_var_params['protect_status']))
         if 'container_tags' in local_var_params:
             query_params.append(('container_tags', local_var_params['container_tags']))
+        if 'container_node' in local_var_params:
+            query_params.append(('container_node', local_var_params['container_node']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
 
         header_params = {}
         if 'region' in local_var_params:
@@ -5675,10 +5679,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListEventTopRiskRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListEventTopRiskResponse`
         """
+        warnings.warn("Method 'list_event_top_risk' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_event_top_risk_http_info(request)
         return self._call_api(**http_info)
 
     def list_event_top_risk_invoker(self, request):
+        warnings.warn("Method 'list_event_top_risk_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_event_top_risk_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -25896,10 +25902,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.BatchScanSwrImageRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.BatchScanSwrImageResponse`
         """
+        warnings.warn("Method 'batch_scan_swr_image' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_scan_swr_image_http_info(request)
         return self._call_api(**http_info)
 
     def batch_scan_swr_image_invoker(self, request):
+        warnings.warn("Method 'batch_scan_swr_image_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_scan_swr_image_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -26032,10 +26040,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeFilePathWhiteDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeFilePathWhiteDetailResponse`
         """
+        warnings.warn("Method 'change_file_path_white_detail' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_file_path_white_detail_http_info(request)
         return self._call_api(**http_info)
 
     def change_file_path_white_detail_invoker(self, request):
+        warnings.warn("Method 'change_file_path_white_detail_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._change_file_path_white_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -28730,10 +28740,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListSwrImageRepositoryRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListSwrImageRepositoryResponse`
         """
+        warnings.warn("Method 'list_swr_image_repository' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_swr_image_repository_http_info(request)
         return self._call_api(**http_info)
 
     def list_swr_image_repository_invoker(self, request):
+        warnings.warn("Method 'list_swr_image_repository_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_swr_image_repository_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -29234,10 +29246,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeResponse`
         """
+        warnings.warn("Method 'run_image_synchronize' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._run_image_synchronize_http_info(request)
         return self._call_api(**http_info)
 
     def run_image_synchronize_invoker(self, request):
+        warnings.warn("Method 'run_image_synchronize_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._run_image_synchronize_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -29370,10 +29384,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowFilePathWhiteDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowFilePathWhiteDetailResponse`
         """
+        warnings.warn("Method 'show_file_path_white_detail' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_file_path_white_detail_http_info(request)
         return self._call_api(**http_info)
 
     def show_file_path_white_detail_invoker(self, request):
+        warnings.warn("Method 'show_file_path_white_detail_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_file_path_white_detail_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -35063,10 +35079,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListServerlessAssetRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListServerlessAssetResponse`
         """
+        warnings.warn("Method 'list_serverless_asset' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_serverless_asset_http_info(request)
         return self._call_api(**http_info)
 
     def list_serverless_asset_invoker(self, request):
+        warnings.warn("Method 'list_serverless_asset_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_serverless_asset_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -35134,10 +35152,12 @@ class HssClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListServerlessAssetDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListServerlessAssetDetailResponse`
         """
+        warnings.warn("Method 'list_serverless_asset_detail' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_serverless_asset_detail_http_info(request)
         return self._call_api(**http_info)
 
     def list_serverless_asset_detail_invoker(self, request):
+        warnings.warn("Method 'list_serverless_asset_detail_invoker' of HssClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._list_serverless_asset_detail_http_info(request)
         return SyncInvoker(self, http_info)
 

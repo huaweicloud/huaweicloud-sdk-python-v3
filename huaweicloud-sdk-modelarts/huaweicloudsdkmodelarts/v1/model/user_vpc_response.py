@@ -20,7 +20,9 @@ class UserVpcResponse:
         'security_group_ids': 'list[str]',
         'connect_cidrs': 'str',
         'port_id': 'list[str]',
-        'port_ip': 'str'
+        'port_ip': 'str',
+        'nat_id': 'str',
+        'eip_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class UserVpcResponse:
         'security_group_ids': 'security_group_ids',
         'connect_cidrs': 'connect_cidrs',
         'port_id': 'port_id',
-        'port_ip': 'port_ip'
+        'port_ip': 'port_ip',
+        'nat_id': 'nat_id',
+        'eip_id': 'eip_id'
     }
 
-    def __init__(self, vpc_id=None, subnet_id=None, security_group_ids=None, connect_cidrs=None, port_id=None, port_ip=None):
+    def __init__(self, vpc_id=None, subnet_id=None, security_group_ids=None, connect_cidrs=None, port_id=None, port_ip=None, nat_id=None, eip_id=None):
         r"""UserVpcResponse
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class UserVpcResponse:
         :type port_id: list[str]
         :param port_ip: **参数解释**：网卡ip。 **取值范围**：不涉及。
         :type port_ip: str
+        :param nat_id: **参数解释**：NAT ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :type nat_id: str
+        :param eip_id: **参数解释**：EIP ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :type eip_id: str
         """
         
         
@@ -59,6 +67,8 @@ class UserVpcResponse:
         self._connect_cidrs = None
         self._port_id = None
         self._port_ip = None
+        self._nat_id = None
+        self._eip_id = None
         self.discriminator = None
 
         if vpc_id is not None:
@@ -73,6 +83,10 @@ class UserVpcResponse:
             self.port_id = port_id
         if port_ip is not None:
             self.port_ip = port_ip
+        if nat_id is not None:
+            self.nat_id = nat_id
+        if eip_id is not None:
+            self.eip_id = eip_id
 
     @property
     def vpc_id(self):
@@ -205,6 +219,50 @@ class UserVpcResponse:
         :type port_ip: str
         """
         self._port_ip = port_ip
+
+    @property
+    def nat_id(self):
+        r"""Gets the nat_id of this UserVpcResponse.
+
+        **参数解释**：NAT ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :return: The nat_id of this UserVpcResponse.
+        :rtype: str
+        """
+        return self._nat_id
+
+    @nat_id.setter
+    def nat_id(self, nat_id):
+        r"""Sets the nat_id of this UserVpcResponse.
+
+        **参数解释**：NAT ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :param nat_id: The nat_id of this UserVpcResponse.
+        :type nat_id: str
+        """
+        self._nat_id = nat_id
+
+    @property
+    def eip_id(self):
+        r"""Gets the eip_id of this UserVpcResponse.
+
+        **参数解释**：EIP ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :return: The eip_id of this UserVpcResponse.
+        :rtype: str
+        """
+        return self._eip_id
+
+    @eip_id.setter
+    def eip_id(self, eip_id):
+        r"""Sets the eip_id of this UserVpcResponse.
+
+        **参数解释**：EIP ID。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+
+        :param eip_id: The eip_id of this UserVpcResponse.
+        :type eip_id: str
+        """
+        self._eip_id = eip_id
 
     def to_dict(self):
         result = {}

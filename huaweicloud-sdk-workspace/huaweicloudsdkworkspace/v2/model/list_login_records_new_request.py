@@ -25,7 +25,8 @@ class ListLoginRecordsNewRequest:
         'offset': 'int',
         'limit': 'int',
         'min_network_rtt': 'int',
-        'max_network_rtt': 'int'
+        'max_network_rtt': 'int',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListLoginRecordsNewRequest:
         'offset': 'offset',
         'limit': 'limit',
         'min_network_rtt': 'min_network_rtt',
-        'max_network_rtt': 'max_network_rtt'
+        'max_network_rtt': 'max_network_rtt',
+        'domain': 'domain'
     }
 
-    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, enterprise_project_id=None, public_ip=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None):
+    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, enterprise_project_id=None, public_ip=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None, domain=None):
         r"""ListLoginRecordsNewRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ListLoginRecordsNewRequest:
         :type min_network_rtt: int
         :param max_network_rtt: 查询端到端时延的最大值。
         :type max_network_rtt: int
+        :param domain: 域名筛选条件，用于根据域名筛选用户连接记录。
+        :type domain: str
         """
         
         
@@ -84,6 +88,7 @@ class ListLoginRecordsNewRequest:
         self._limit = None
         self._min_network_rtt = None
         self._max_network_rtt = None
+        self._domain = None
         self.discriminator = None
 
         if start_time is not None:
@@ -108,6 +113,8 @@ class ListLoginRecordsNewRequest:
             self.min_network_rtt = min_network_rtt
         if max_network_rtt is not None:
             self.max_network_rtt = max_network_rtt
+        if domain is not None:
+            self.domain = domain
 
     @property
     def start_time(self):
@@ -350,6 +357,28 @@ class ListLoginRecordsNewRequest:
         :type max_network_rtt: int
         """
         self._max_network_rtt = max_network_rtt
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ListLoginRecordsNewRequest.
+
+        域名筛选条件，用于根据域名筛选用户连接记录。
+
+        :return: The domain of this ListLoginRecordsNewRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ListLoginRecordsNewRequest.
+
+        域名筛选条件，用于根据域名筛选用户连接记录。
+
+        :param domain: The domain of this ListLoginRecordsNewRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

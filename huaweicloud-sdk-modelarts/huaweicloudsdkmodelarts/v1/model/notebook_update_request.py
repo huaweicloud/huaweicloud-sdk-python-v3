@@ -25,7 +25,8 @@ class NotebookUpdateRequest:
         'hooks': 'CustomHooks',
         'affinity': 'AffinityType',
         'dew_secret_name': 'str',
-        'data_volumes': 'list[VolumeMountRequest]'
+        'data_volumes': 'list[VolumeMountRequest]',
+        'public_network_config': 'PublicNetworkConfig'
     }
 
     attribute_map = {
@@ -39,15 +40,16 @@ class NotebookUpdateRequest:
         'hooks': 'hooks',
         'affinity': 'affinity',
         'dew_secret_name': 'dew_secret_name',
-        'data_volumes': 'data_volumes'
+        'data_volumes': 'data_volumes',
+        'public_network_config': 'public_network_config'
     }
 
-    def __init__(self, description=None, endpoints=None, flavor=None, custom_spec=None, image_id=None, name=None, storage_new_size=None, hooks=None, affinity=None, dew_secret_name=None, data_volumes=None):
+    def __init__(self, description=None, endpoints=None, flavor=None, custom_spec=None, image_id=None, name=None, storage_new_size=None, hooks=None, affinity=None, dew_secret_name=None, data_volumes=None, public_network_config=None):
         r"""NotebookUpdateRequest
 
         The model defined in huaweicloud sdk
 
-        :param description: **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&amp;&lt;&gt;\&quot;&#39;/。 **默认取值**：不涉及。
+        :param description: **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符&lt;&gt;，缺省值为空。 **默认取值**：不涉及。
         :type description: str
         :param endpoints: **参数解释**：仅在本地IDE（如PyCharm、VS Code）或SSH客户端接入Notebook。 **约束限制**：仅在本地IDE（如PyCharm、VS Code）或SSH客户端，通过SSH远程接入Notebook实例时需要的相关配置。
         :type endpoints: list[:class:`huaweicloudsdkmodelarts.v1.EndpointsReq`]
@@ -57,7 +59,7 @@ class NotebookUpdateRequest:
         :type custom_spec: :class:`huaweicloudsdkmodelarts.v1.NotebookCustomSpec`
         :param image_id: **参数解释**：支持更新镜像ID，镜像ID参考[查询支持的镜像列表](ListImage.xml)获取。 **约束限制**：不涉及。 **取值范围**：调用[查询支持的镜像列表](ListImage.xml)接口获取的合法镜像ID列表。 **默认取值**：不涉及。
         :type image_id: str
-        :param name: **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        :param name: **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
         :type name: str
         :param storage_new_size: **参数解释**：EVS实例支持动态扩充的容量，单位GB。只允许扩容，不允许缩容。 **约束限制**：不涉及。 **取值范围**：最大允许扩容至4096。 **默认取值**：不涉及。
         :type storage_new_size: int
@@ -69,6 +71,8 @@ class NotebookUpdateRequest:
         :type dew_secret_name: str
         :param data_volumes: **参数解释**：扩展存储信息。 **约束限制**：不涉及。
         :type data_volumes: list[:class:`huaweicloudsdkmodelarts.v1.VolumeMountRequest`]
+        :param public_network_config: 
+        :type public_network_config: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
         """
         
         
@@ -84,6 +88,7 @@ class NotebookUpdateRequest:
         self._affinity = None
         self._dew_secret_name = None
         self._data_volumes = None
+        self._public_network_config = None
         self.discriminator = None
 
         if description is not None:
@@ -108,12 +113,14 @@ class NotebookUpdateRequest:
             self.dew_secret_name = dew_secret_name
         if data_volumes is not None:
             self.data_volumes = data_volumes
+        if public_network_config is not None:
+            self.public_network_config = public_network_config
 
     @property
     def description(self):
         r"""Gets the description of this NotebookUpdateRequest.
 
-        **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&<>\"'/。 **默认取值**：不涉及。
+        **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>，缺省值为空。 **默认取值**：不涉及。
 
         :return: The description of this NotebookUpdateRequest.
         :rtype: str
@@ -124,7 +131,7 @@ class NotebookUpdateRequest:
     def description(self, description):
         r"""Sets the description of this NotebookUpdateRequest.
 
-        **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&<>\"'/。 **默认取值**：不涉及。
+        **参数解释**：支持更新实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>，缺省值为空。 **默认取值**：不涉及。
 
         :param description: The description of this NotebookUpdateRequest.
         :type description: str
@@ -219,7 +226,7 @@ class NotebookUpdateRequest:
     def name(self):
         r"""Gets the name of this NotebookUpdateRequest.
 
-        **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
 
         :return: The name of this NotebookUpdateRequest.
         :rtype: str
@@ -230,7 +237,7 @@ class NotebookUpdateRequest:
     def name(self, name):
         r"""Sets the name of this NotebookUpdateRequest.
 
-        **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        **参数解释**：支持更新实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
 
         :param name: The name of this NotebookUpdateRequest.
         :type name: str
@@ -338,6 +345,24 @@ class NotebookUpdateRequest:
         :type data_volumes: list[:class:`huaweicloudsdkmodelarts.v1.VolumeMountRequest`]
         """
         self._data_volumes = data_volumes
+
+    @property
+    def public_network_config(self):
+        r"""Gets the public_network_config of this NotebookUpdateRequest.
+
+        :return: The public_network_config of this NotebookUpdateRequest.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
+        """
+        return self._public_network_config
+
+    @public_network_config.setter
+    def public_network_config(self, public_network_config):
+        r"""Sets the public_network_config of this NotebookUpdateRequest.
+
+        :param public_network_config: The public_network_config of this NotebookUpdateRequest.
+        :type public_network_config: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
+        """
+        self._public_network_config = public_network_config
 
     def to_dict(self):
         result = {}

@@ -19,7 +19,7 @@ class DownLoadFileInfoItem:
         'file_name': 'str',
         'file_size': 'int',
         'download_url': 'str',
-        'expire_time': 'str'
+        'expire_time': 'int'
     }
 
     attribute_map = {
@@ -44,7 +44,7 @@ class DownLoadFileInfoItem:
         :param download_url: **参数解释**：  日志下载链接。  **取值范围**：  不涉及。 
         :type download_url: str
         :param expire_time: **参数解释**：  下载链接过期时间，格式为\&quot;yyyy-MM-dd HH:mm:ss\&quot;。  **取值范围**：  不涉及。 
-        :type expire_time: str
+        :type expire_time: int
         """
         
         
@@ -162,7 +162,7 @@ class DownLoadFileInfoItem:
         **参数解释**：  下载链接过期时间，格式为\"yyyy-MM-dd HH:mm:ss\"。  **取值范围**：  不涉及。 
 
         :return: The expire_time of this DownLoadFileInfoItem.
-        :rtype: str
+        :rtype: int
         """
         return self._expire_time
 
@@ -173,7 +173,7 @@ class DownLoadFileInfoItem:
         **参数解释**：  下载链接过期时间，格式为\"yyyy-MM-dd HH:mm:ss\"。  **取值范围**：  不涉及。 
 
         :param expire_time: The expire_time of this DownLoadFileInfoItem.
-        :type expire_time: str
+        :type expire_time: int
         """
         self._expire_time = expire_time
 

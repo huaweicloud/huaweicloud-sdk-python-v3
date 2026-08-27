@@ -37,7 +37,9 @@ class MysqlInstanceRequest:
         'enterprise_project_id': 'str',
         'dedicated_resource_id': 'str',
         'restore_point': 'MysqlRestorePoint',
-        'tde_info': 'MysqlTdeInfo'
+        'tde_info': 'MysqlTdeInfo',
+        'enable_binlog': 'bool',
+        'volume_auto_expand': 'MysqlVolumeAutoExpandPolicy'
     }
 
     attribute_map = {
@@ -63,10 +65,12 @@ class MysqlInstanceRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'dedicated_resource_id': 'dedicated_resource_id',
         'restore_point': 'restore_point',
-        'tde_info': 'tde_info'
+        'tde_info': 'tde_info',
+        'enable_binlog': 'enable_binlog',
+        'volume_auto_expand': 'volume_auto_expand'
     }
 
-    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None, tde_info=None):
+    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None, restore_point=None, tde_info=None, enable_binlog=None, volume_auto_expand=None):
         r"""MysqlInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -117,6 +121,10 @@ class MysqlInstanceRequest:
         :type restore_point: :class:`huaweicloudsdkgaussdb.v3.MysqlRestorePoint`
         :param tde_info: 
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        :param enable_binlog: **参数解释**：  是否打开本地Binlog日志。  **约束限制**：  不涉及。  **取值范围**：  - true: 打开。 - false: 关闭。  **默认取值**：  false。
+        :type enable_binlog: bool
+        :param volume_auto_expand: 
+        :type volume_auto_expand: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeAutoExpandPolicy`
         """
         
         
@@ -144,6 +152,8 @@ class MysqlInstanceRequest:
         self._dedicated_resource_id = None
         self._restore_point = None
         self._tde_info = None
+        self._enable_binlog = None
+        self._volume_auto_expand = None
         self.discriminator = None
 
         self.charge_info = charge_info
@@ -180,6 +190,10 @@ class MysqlInstanceRequest:
             self.restore_point = restore_point
         if tde_info is not None:
             self.tde_info = tde_info
+        if enable_binlog is not None:
+            self.enable_binlog = enable_binlog
+        if volume_auto_expand is not None:
+            self.volume_auto_expand = volume_auto_expand
 
     @property
     def charge_info(self):
@@ -658,6 +672,46 @@ class MysqlInstanceRequest:
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
         """
         self._tde_info = tde_info
+
+    @property
+    def enable_binlog(self):
+        r"""Gets the enable_binlog of this MysqlInstanceRequest.
+
+        **参数解释**：  是否打开本地Binlog日志。  **约束限制**：  不涉及。  **取值范围**：  - true: 打开。 - false: 关闭。  **默认取值**：  false。
+
+        :return: The enable_binlog of this MysqlInstanceRequest.
+        :rtype: bool
+        """
+        return self._enable_binlog
+
+    @enable_binlog.setter
+    def enable_binlog(self, enable_binlog):
+        r"""Sets the enable_binlog of this MysqlInstanceRequest.
+
+        **参数解释**：  是否打开本地Binlog日志。  **约束限制**：  不涉及。  **取值范围**：  - true: 打开。 - false: 关闭。  **默认取值**：  false。
+
+        :param enable_binlog: The enable_binlog of this MysqlInstanceRequest.
+        :type enable_binlog: bool
+        """
+        self._enable_binlog = enable_binlog
+
+    @property
+    def volume_auto_expand(self):
+        r"""Gets the volume_auto_expand of this MysqlInstanceRequest.
+
+        :return: The volume_auto_expand of this MysqlInstanceRequest.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeAutoExpandPolicy`
+        """
+        return self._volume_auto_expand
+
+    @volume_auto_expand.setter
+    def volume_auto_expand(self, volume_auto_expand):
+        r"""Sets the volume_auto_expand of this MysqlInstanceRequest.
+
+        :param volume_auto_expand: The volume_auto_expand of this MysqlInstanceRequest.
+        :type volume_auto_expand: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeAutoExpandPolicy`
+        """
+        self._volume_auto_expand = volume_auto_expand
 
     def to_dict(self):
         result = {}

@@ -219,6 +219,14 @@ class Credentials(DerivedCredentials):
     def _is_expired(self) -> bool:
         return self._expire_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
 
+    @property
+    def _expired_at(self) -> Optional[float]:
+        return self._expire_at
+
+    @_expired_at.setter
+    def _expired_at(self, value: Optional[float]):
+        self._expire_at = value
+
     def update_security_token_from_metadata(self):
         if not self.metadata_accessor:
             self.metadata_accessor = MetadataAccessor()

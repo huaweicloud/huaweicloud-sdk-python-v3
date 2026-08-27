@@ -35,7 +35,9 @@ class ContainerNodeInfo:
         'vulnerability': 'int',
         'intrusion': 'int',
         'policy_group_id': 'str',
-        'policy_group_name': 'str'
+        'policy_group_name': 'str',
+        'is_container_node': 'bool',
+        'version': 'str'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class ContainerNodeInfo:
         'vulnerability': 'vulnerability',
         'intrusion': 'intrusion',
         'policy_group_id': 'policy_group_id',
-        'policy_group_name': 'policy_group_name'
+        'policy_group_name': 'policy_group_name',
+        'is_container_node': 'is_container_node',
+        'version': 'version'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None, protect_interrupt=None, protect_degradation=None, degradation_reason=None, container_tags=None, private_ip=None, public_ip=None, resource_id=None, group_name=None, enterprise_project_name=None, detect_result=None, asset=None, vulnerability=None, intrusion=None, policy_group_id=None, policy_group_name=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None, protect_interrupt=None, protect_degradation=None, degradation_reason=None, container_tags=None, private_ip=None, public_ip=None, resource_id=None, group_name=None, enterprise_project_name=None, detect_result=None, asset=None, vulnerability=None, intrusion=None, policy_group_id=None, policy_group_name=None, is_container_node=None, version=None):
         r"""ContainerNodeInfo
 
         The model defined in huaweicloud sdk
@@ -109,6 +113,10 @@ class ContainerNodeInfo:
         :type policy_group_id: str
         :param policy_group_name: **参数解释**: 策略组名称 **取值范围**: 字符长度1-128位 
         :type policy_group_name: str
+        :param is_container_node: **参数解释** 是否是容器节点 **取值范围** - true：是容器节点 - false：非容器节点 
+        :type is_container_node: bool
+        :param version: **参数解释**: 节点开启的防护版本 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 
+        :type version: str
         """
         
         
@@ -134,6 +142,8 @@ class ContainerNodeInfo:
         self._intrusion = None
         self._policy_group_id = None
         self._policy_group_name = None
+        self._is_container_node = None
+        self._version = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -178,6 +188,10 @@ class ContainerNodeInfo:
             self.policy_group_id = policy_group_id
         if policy_group_name is not None:
             self.policy_group_name = policy_group_name
+        if is_container_node is not None:
+            self.is_container_node = is_container_node
+        if version is not None:
+            self.version = version
 
     @property
     def agent_id(self):
@@ -640,6 +654,50 @@ class ContainerNodeInfo:
         :type policy_group_name: str
         """
         self._policy_group_name = policy_group_name
+
+    @property
+    def is_container_node(self):
+        r"""Gets the is_container_node of this ContainerNodeInfo.
+
+        **参数解释** 是否是容器节点 **取值范围** - true：是容器节点 - false：非容器节点 
+
+        :return: The is_container_node of this ContainerNodeInfo.
+        :rtype: bool
+        """
+        return self._is_container_node
+
+    @is_container_node.setter
+    def is_container_node(self, is_container_node):
+        r"""Sets the is_container_node of this ContainerNodeInfo.
+
+        **参数解释** 是否是容器节点 **取值范围** - true：是容器节点 - false：非容器节点 
+
+        :param is_container_node: The is_container_node of this ContainerNodeInfo.
+        :type is_container_node: bool
+        """
+        self._is_container_node = is_container_node
+
+    @property
+    def version(self):
+        r"""Gets the version of this ContainerNodeInfo.
+
+        **参数解释**: 节点开启的防护版本 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 
+
+        :return: The version of this ContainerNodeInfo.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this ContainerNodeInfo.
+
+        **参数解释**: 节点开启的防护版本 **取值范围**: - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 
+
+        :param version: The version of this ContainerNodeInfo.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         result = {}

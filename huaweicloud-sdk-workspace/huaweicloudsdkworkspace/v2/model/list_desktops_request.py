@@ -20,6 +20,7 @@ class ListDesktopsRequest:
         'desktop_ip': 'str',
         'offset': 'int',
         'limit': 'int',
+        'domain_status': 'int',
         'pool_id': 'str',
         'enterprise_project_id': 'str',
         'desktop_type': 'str',
@@ -36,6 +37,7 @@ class ListDesktopsRequest:
         'desktop_ip': 'desktop_ip',
         'offset': 'offset',
         'limit': 'limit',
+        'domain_status': 'domain_status',
         'pool_id': 'pool_id',
         'enterprise_project_id': 'enterprise_project_id',
         'desktop_type': 'desktop_type',
@@ -46,7 +48,7 @@ class ListDesktopsRequest:
         'tag': 'tag'
     }
 
-    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, pool_id=None, enterprise_project_id=None, desktop_type=None, is_share_desktop=None, subnet_id=None, status=None, desktop_id=None, tag=None):
+    def __init__(self, user_name=None, computer_name=None, desktop_ip=None, offset=None, limit=None, domain_status=None, pool_id=None, enterprise_project_id=None, desktop_type=None, is_share_desktop=None, subnet_id=None, status=None, desktop_id=None, tag=None):
         r"""ListDesktopsRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListDesktopsRequest:
         :type offset: int
         :param limit: 用于分页查询，取值范围0-1000，默认值1000。
         :type limit: int
+        :param domain_status: 加域状态。|- 1 正常。 2 脱域。 3 未上报。
+        :type domain_status: int
         :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
         :type pool_id: str
         :param enterprise_project_id: 企业项目ID。
@@ -86,6 +90,7 @@ class ListDesktopsRequest:
         self._desktop_ip = None
         self._offset = None
         self._limit = None
+        self._domain_status = None
         self._pool_id = None
         self._enterprise_project_id = None
         self._desktop_type = None
@@ -106,6 +111,8 @@ class ListDesktopsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if domain_status is not None:
+            self.domain_status = domain_status
         if pool_id is not None:
             self.pool_id = pool_id
         if enterprise_project_id is not None:
@@ -232,6 +239,28 @@ class ListDesktopsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def domain_status(self):
+        r"""Gets the domain_status of this ListDesktopsRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :return: The domain_status of this ListDesktopsRequest.
+        :rtype: int
+        """
+        return self._domain_status
+
+    @domain_status.setter
+    def domain_status(self, domain_status):
+        r"""Sets the domain_status of this ListDesktopsRequest.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :param domain_status: The domain_status of this ListDesktopsRequest.
+        :type domain_status: int
+        """
+        self._domain_status = domain_status
 
     @property
     def pool_id(self):

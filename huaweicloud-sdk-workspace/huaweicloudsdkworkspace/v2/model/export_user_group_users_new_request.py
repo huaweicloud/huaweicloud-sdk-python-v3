@@ -17,6 +17,7 @@ class ExportUserGroupUsersNewRequest:
     openapi_types = {
         'group_id': 'str',
         'user_name': 'str',
+        'user_names': 'list[str]',
         'description': 'str',
         'active_type': 'str',
         'group_name': 'str',
@@ -27,6 +28,7 @@ class ExportUserGroupUsersNewRequest:
     attribute_map = {
         'group_id': 'group_id',
         'user_name': 'user_name',
+        'user_names': 'user_names',
         'description': 'description',
         'active_type': 'active_type',
         'group_name': 'group_name',
@@ -34,7 +36,7 @@ class ExportUserGroupUsersNewRequest:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, group_id=None, user_name=None, description=None, active_type=None, group_name=None, language=None, enterprise_project_id=None):
+    def __init__(self, group_id=None, user_name=None, user_names=None, description=None, active_type=None, group_name=None, language=None, enterprise_project_id=None):
         r"""ExportUserGroupUsersNewRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ExportUserGroupUsersNewRequest:
         :type group_id: str
         :param user_name: 用户名支持模糊查询。
         :type user_name: str
+        :param user_names: 用户名列表，支持多用户名查询。
+        :type user_names: list[str]
         :param description: 用户描述支持模糊查询。
         :type description: str
         :param active_type: 激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
@@ -59,6 +63,7 @@ class ExportUserGroupUsersNewRequest:
 
         self._group_id = None
         self._user_name = None
+        self._user_names = None
         self._description = None
         self._active_type = None
         self._group_name = None
@@ -69,6 +74,8 @@ class ExportUserGroupUsersNewRequest:
         self.group_id = group_id
         if user_name is not None:
             self.user_name = user_name
+        if user_names is not None:
+            self.user_names = user_names
         if description is not None:
             self.description = description
         if active_type is not None:
@@ -123,6 +130,28 @@ class ExportUserGroupUsersNewRequest:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_names(self):
+        r"""Gets the user_names of this ExportUserGroupUsersNewRequest.
+
+        用户名列表，支持多用户名查询。
+
+        :return: The user_names of this ExportUserGroupUsersNewRequest.
+        :rtype: list[str]
+        """
+        return self._user_names
+
+    @user_names.setter
+    def user_names(self, user_names):
+        r"""Sets the user_names of this ExportUserGroupUsersNewRequest.
+
+        用户名列表，支持多用户名查询。
+
+        :param user_names: The user_names of this ExportUserGroupUsersNewRequest.
+        :type user_names: list[str]
+        """
+        self._user_names = user_names
 
     @property
     def description(self):

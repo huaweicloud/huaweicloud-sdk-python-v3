@@ -74,10 +74,8 @@ class ListDdlLogsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.start_time = start_time
+        self.end_time = end_time
 
     @property
     def x_language(self):

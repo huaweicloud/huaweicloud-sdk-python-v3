@@ -25,6 +25,7 @@ class Workload:
         'job_uuid': 'str',
         'flavor': 'str',
         'status': 'str',
+        'user_name': 'str',
         'resource_requirement': 'WorkloadResourceRequirement',
         'priority': 'str',
         'running_duration': 'int',
@@ -47,6 +48,7 @@ class Workload:
         'job_uuid': 'jobUUID',
         'flavor': 'flavor',
         'status': 'status',
+        'user_name': 'userName',
         'resource_requirement': 'resourceRequirement',
         'priority': 'priority',
         'running_duration': 'runningDuration',
@@ -58,7 +60,7 @@ class Workload:
         'nodes': 'nodes'
     }
 
-    def __init__(self, api_version=None, kind=None, type=None, namespace=None, name=None, job_name=None, uid=None, job_uuid=None, flavor=None, status=None, resource_requirement=None, priority=None, running_duration=None, pending_duration=None, pending_position=None, create_time=None, gvk=None, host_ips=None, nodes=None):
+    def __init__(self, api_version=None, kind=None, type=None, namespace=None, name=None, job_name=None, uid=None, job_uuid=None, flavor=None, status=None, user_name=None, resource_requirement=None, priority=None, running_duration=None, pending_duration=None, pending_position=None, create_time=None, gvk=None, host_ips=None, nodes=None):
         r"""Workload
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class Workload:
         :type flavor: str
         :param status: **参数解释**：作业状态。 **取值范围**：不涉及。
         :type status: str
+        :param user_name: **参数解释**：作业创建者。 **取值范围**：不涉及。
+        :type user_name: str
         :param resource_requirement: 
         :type resource_requirement: :class:`huaweicloudsdkmodelarts.v1.WorkloadResourceRequirement`
         :param priority: **参数解释**：作业的优先级。 **取值范围**：不涉及。
@@ -115,6 +119,7 @@ class Workload:
         self._job_uuid = None
         self._flavor = None
         self._status = None
+        self._user_name = None
         self._resource_requirement = None
         self._priority = None
         self._running_duration = None
@@ -141,6 +146,8 @@ class Workload:
             self.flavor = flavor
         if status is not None:
             self.status = status
+        if user_name is not None:
+            self.user_name = user_name
         if resource_requirement is not None:
             self.resource_requirement = resource_requirement
         if priority is not None:
@@ -379,6 +386,28 @@ class Workload:
         :type status: str
         """
         self._status = status
+
+    @property
+    def user_name(self):
+        r"""Gets the user_name of this Workload.
+
+        **参数解释**：作业创建者。 **取值范围**：不涉及。
+
+        :return: The user_name of this Workload.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        r"""Sets the user_name of this Workload.
+
+        **参数解释**：作业创建者。 **取值范围**：不涉及。
+
+        :param user_name: The user_name of this Workload.
+        :type user_name: str
+        """
+        self._user_name = user_name
 
     @property
     def resource_requirement(self):

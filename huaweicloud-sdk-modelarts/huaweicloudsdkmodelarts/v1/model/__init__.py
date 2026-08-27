@@ -55,6 +55,7 @@ from huaweicloudsdkmodelarts.v1.model.authorization_response import Authorizatio
 from huaweicloudsdkmodelarts.v1.model.auto_search import AutoSearch
 from huaweicloudsdkmodelarts.v1.model.auto_search_algo_config_parameter import AutoSearchAlgoConfigParameter
 from huaweicloudsdkmodelarts.v1.model.auto_stop import AutoStop
+from huaweicloudsdkmodelarts.v1.model.available import Available
 from huaweicloudsdkmodelarts.v1.model.batch_action_dev_server_ids import BatchActionDevServerIds
 from huaweicloudsdkmodelarts.v1.model.batch_bind_api_key_request import BatchBindApiKeyRequest
 from huaweicloudsdkmodelarts.v1.model.batch_bind_api_key_request_key_ids import BatchBindApiKeyRequestKeyIds
@@ -75,6 +76,9 @@ from huaweicloudsdkmodelarts.v1.model.batch_delete_pool_tags_request import Batc
 from huaweicloudsdkmodelarts.v1.model.batch_delete_pool_tags_response import BatchDeletePoolTagsResponse
 from huaweicloudsdkmodelarts.v1.model.batch_dev_servers_action_request import BatchDevServersActionRequest
 from huaweicloudsdkmodelarts.v1.model.batch_dev_servers_action_response import BatchDevServersActionResponse
+from huaweicloudsdkmodelarts.v1.model.batch_drain_pool_nodes_req import BatchDrainPoolNodesReq
+from huaweicloudsdkmodelarts.v1.model.batch_drain_pool_nodes_request import BatchDrainPoolNodesRequest
+from huaweicloudsdkmodelarts.v1.model.batch_drain_pool_nodes_response import BatchDrainPoolNodesResponse
 from huaweicloudsdkmodelarts.v1.model.batch_lock_pool_nodes_request import BatchLockPoolNodesRequest
 from huaweicloudsdkmodelarts.v1.model.batch_lock_pool_nodes_request_body import BatchLockPoolNodesRequestBody
 from huaweicloudsdkmodelarts.v1.model.batch_lock_pool_nodes_response import BatchLockPoolNodesResponse
@@ -352,6 +356,7 @@ from huaweicloudsdkmodelarts.v1.model.flavor_detail import FlavorDetail
 from huaweicloudsdkmodelarts.v1.model.flavor_info import FlavorInfo
 from huaweicloudsdkmodelarts.v1.model.flavor_info_response import FlavorInfoResponse
 from huaweicloudsdkmodelarts.v1.model.flavor_response import FlavorResponse
+from huaweicloudsdkmodelarts.v1.model.flavor_response_with_support import FlavorResponseWithSupport
 from huaweicloudsdkmodelarts.v1.model.frozen_info import FrozenInfo
 from huaweicloudsdkmodelarts.v1.model.fuse_config import FuseConfig
 from huaweicloudsdkmodelarts.v1.model.gpu_info import GPUInfo
@@ -749,6 +754,7 @@ from huaweicloudsdkmodelarts.v1.model.pool_update_request import PoolUpdateReque
 from huaweicloudsdkmodelarts.v1.model.predict_url_response import PredictUrlResponse
 from huaweicloudsdkmodelarts.v1.model.preferred_affinity import PreferredAffinity
 from huaweicloudsdkmodelarts.v1.model.preferred_scheduling_term import PreferredSchedulingTerm
+from huaweicloudsdkmodelarts.v1.model.public_network_config import PublicNetworkConfig
 from huaweicloudsdkmodelarts.v1.model.query_hyperinstance_tags_request import QueryHyperinstanceTagsRequest
 from huaweicloudsdkmodelarts.v1.model.query_hyperinstance_tags_response import QueryHyperinstanceTagsResponse
 from huaweicloudsdkmodelarts.v1.model.query_tms_resource_count_request import QueryTmsResourceCountRequest
@@ -789,9 +795,8 @@ from huaweicloudsdkmodelarts.v1.model.resource_flavor_list_metadata import Resou
 from huaweicloudsdkmodelarts.v1.model.resource_flavor_metadata import ResourceFlavorMetadata
 from huaweicloudsdkmodelarts.v1.model.resource_flavor_spec import ResourceFlavorSpec
 from huaweicloudsdkmodelarts.v1.model.resource_flavor_spec_data_volume import ResourceFlavorSpecDataVolume
-from huaweicloudsdkmodelarts.v1.model.resource_flavor_spec_gpu import ResourceFlavorSpecGpu
-from huaweicloudsdkmodelarts.v1.model.resource_flavor_spec_npu import ResourceFlavorSpecNpu
 from huaweicloudsdkmodelarts.v1.model.resource_flavor_status import ResourceFlavorStatus
+from huaweicloudsdkmodelarts.v1.model.resource_flavor_xpu import ResourceFlavorXpu
 from huaweicloudsdkmodelarts.v1.model.resource_metrics_metadata import ResourceMetricsMetadata
 from huaweicloudsdkmodelarts.v1.model.resource_quota import ResourceQuota
 from huaweicloudsdkmodelarts.v1.model.resource_requirement import ResourceRequirement
@@ -1187,6 +1192,7 @@ from huaweicloudsdkmodelarts.v1.model.workflow_subgraph_resp import WorkflowSubg
 from huaweicloudsdkmodelarts.v1.model.workflow_todo import WorkflowTodo
 from huaweicloudsdkmodelarts.v1.model.workflow_update import WorkflowUpdate
 from huaweicloudsdkmodelarts.v1.model.workload import Workload
+from huaweicloudsdkmodelarts.v1.model.workload_info import WorkloadInfo
 from huaweicloudsdkmodelarts.v1.model.workload_list_statistics_statistics import WorkloadListStatisticsStatistics
 from huaweicloudsdkmodelarts.v1.model.workload_node_vo import WorkloadNodeVO
 from huaweicloudsdkmodelarts.v1.model.workload_resource_requirement import WorkloadResourceRequirement

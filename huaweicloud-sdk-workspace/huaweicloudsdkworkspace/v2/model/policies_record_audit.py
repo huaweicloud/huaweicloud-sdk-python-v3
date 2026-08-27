@@ -20,7 +20,8 @@ class PoliciesRecordAudit:
         'storage_type': 'str',
         'obs_bucket_source': 'str',
         'obs_bucket_name': 'str',
-        'retention_duration': 'int'
+        'retention_duration': 'int',
+        'reminder_frequency': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class PoliciesRecordAudit:
         'storage_type': 'storage_type',
         'obs_bucket_source': 'obs_bucket_source',
         'obs_bucket_name': 'obs_bucket_name',
-        'retention_duration': 'retention_duration'
+        'retention_duration': 'retention_duration',
+        'reminder_frequency': 'reminder_frequency'
     }
 
-    def __init__(self, enable=None, rules=None, storage_type=None, obs_bucket_source=None, obs_bucket_name=None, retention_duration=None):
+    def __init__(self, enable=None, rules=None, storage_type=None, obs_bucket_source=None, obs_bucket_name=None, retention_duration=None, reminder_frequency=None):
         r"""PoliciesRecordAudit
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class PoliciesRecordAudit:
         :type obs_bucket_name: str
         :param retention_duration: 录屏文件保留时长（天）。取值为1~180天，0 表示永久保留。
         :type retention_duration: int
+        :param reminder_frequency: 登录时，录屏审计提醒频率（天/次）。取值为1~30天，0 表示每次登录都提醒。
+        :type reminder_frequency: int
         """
         
         
@@ -59,6 +63,7 @@ class PoliciesRecordAudit:
         self._obs_bucket_source = None
         self._obs_bucket_name = None
         self._retention_duration = None
+        self._reminder_frequency = None
         self.discriminator = None
 
         if enable is not None:
@@ -73,6 +78,8 @@ class PoliciesRecordAudit:
             self.obs_bucket_name = obs_bucket_name
         if retention_duration is not None:
             self.retention_duration = retention_duration
+        if reminder_frequency is not None:
+            self.reminder_frequency = reminder_frequency
 
     @property
     def enable(self):
@@ -201,6 +208,28 @@ class PoliciesRecordAudit:
         :type retention_duration: int
         """
         self._retention_duration = retention_duration
+
+    @property
+    def reminder_frequency(self):
+        r"""Gets the reminder_frequency of this PoliciesRecordAudit.
+
+        登录时，录屏审计提醒频率（天/次）。取值为1~30天，0 表示每次登录都提醒。
+
+        :return: The reminder_frequency of this PoliciesRecordAudit.
+        :rtype: int
+        """
+        return self._reminder_frequency
+
+    @reminder_frequency.setter
+    def reminder_frequency(self, reminder_frequency):
+        r"""Sets the reminder_frequency of this PoliciesRecordAudit.
+
+        登录时，录屏审计提醒频率（天/次）。取值为1~30天，0 表示每次登录都提醒。
+
+        :param reminder_frequency: The reminder_frequency of this PoliciesRecordAudit.
+        :type reminder_frequency: int
+        """
+        self._reminder_frequency = reminder_frequency
 
     def to_dict(self):
         result = {}

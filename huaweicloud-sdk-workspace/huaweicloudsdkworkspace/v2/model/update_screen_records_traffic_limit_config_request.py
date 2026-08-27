@@ -15,7 +15,7 @@ class UpdateScreenRecordsTrafficLimitConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'ScreenRecordsConfigResultReq'
+        'body': 'UpdateScreenRecordsTrafficLimitConfigRequestBody'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class UpdateScreenRecordsTrafficLimitConfigRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the UpdateScreenRecordsTrafficLimitConfigRequest
-        :type body: :class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReq`
+        :type body: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBody`
         """
         
         
@@ -44,7 +44,7 @@ class UpdateScreenRecordsTrafficLimitConfigRequest:
         r"""Gets the body of this UpdateScreenRecordsTrafficLimitConfigRequest.
 
         :return: The body of this UpdateScreenRecordsTrafficLimitConfigRequest.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReq`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBody`
         """
         return self._body
 
@@ -53,7 +53,7 @@ class UpdateScreenRecordsTrafficLimitConfigRequest:
         r"""Sets the body of this UpdateScreenRecordsTrafficLimitConfigRequest.
 
         :param body: The body of this UpdateScreenRecordsTrafficLimitConfigRequest.
-        :type body: :class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReq`
+        :type body: :class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBody`
         """
         self._body = body
 

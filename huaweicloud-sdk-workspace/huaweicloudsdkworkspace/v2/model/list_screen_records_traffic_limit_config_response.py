@@ -17,7 +17,7 @@ class ListScreenRecordsTrafficLimitConfigResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'configs': 'list[ScreenRecordsConfigResultReqConfigs]'
+        'configs': 'list[UpdateScreenRecordsTrafficLimitConfigRequestBodyConfigs]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ListScreenRecordsTrafficLimitConfigResponse(SdkResponse):
         :param total_count: 总数。
         :type total_count: int
         :param configs: 录屏记录。
-        :type configs: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReqConfigs`]
+        :type configs: list[:class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBodyConfigs`]
         """
         
         super().__init__()
@@ -76,7 +76,7 @@ class ListScreenRecordsTrafficLimitConfigResponse(SdkResponse):
         录屏记录。
 
         :return: The configs of this ListScreenRecordsTrafficLimitConfigResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReqConfigs`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBodyConfigs`]
         """
         return self._configs
 
@@ -87,7 +87,7 @@ class ListScreenRecordsTrafficLimitConfigResponse(SdkResponse):
         录屏记录。
 
         :param configs: The configs of this ListScreenRecordsTrafficLimitConfigResponse.
-        :type configs: list[:class:`huaweicloudsdkworkspace.v2.ScreenRecordsConfigResultReqConfigs`]
+        :type configs: list[:class:`huaweicloudsdkworkspace.v2.UpdateScreenRecordsTrafficLimitConfigRequestBodyConfigs`]
         """
         self._configs = configs
 

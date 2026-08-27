@@ -17,6 +17,8 @@ class Capacity:
     openapi_types = {
         'value': 'Value',
         'max_value': 'Value',
+        'all_value': 'Value',
+        'all_max_value': 'Value',
         'timestamp': 'str',
         'window': 'str'
     }
@@ -24,11 +26,13 @@ class Capacity:
     attribute_map = {
         'value': 'value',
         'max_value': 'maxValue',
+        'all_value': 'allValue',
+        'all_max_value': 'allMaxValue',
         'timestamp': 'timestamp',
         'window': 'window'
     }
 
-    def __init__(self, value=None, max_value=None, timestamp=None, window=None):
+    def __init__(self, value=None, max_value=None, all_value=None, all_max_value=None, timestamp=None, window=None):
         r"""Capacity
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class Capacity:
         :type value: :class:`huaweicloudsdkmodelarts.v1.Value`
         :param max_value: 
         :type max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
+        :param all_value: 
+        :type all_value: :class:`huaweicloudsdkmodelarts.v1.Value`
+        :param all_max_value: 
+        :type all_max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
         :param timestamp: UTC时间，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
         :type timestamp: str
         :param window: 统计间隔，1s表示1秒，1m表示1分钟，1h为1小时。
@@ -47,6 +55,8 @@ class Capacity:
 
         self._value = None
         self._max_value = None
+        self._all_value = None
+        self._all_max_value = None
         self._timestamp = None
         self._window = None
         self.discriminator = None
@@ -55,6 +65,10 @@ class Capacity:
             self.value = value
         if max_value is not None:
             self.max_value = max_value
+        if all_value is not None:
+            self.all_value = all_value
+        if all_max_value is not None:
+            self.all_max_value = all_max_value
         if timestamp is not None:
             self.timestamp = timestamp
         if window is not None:
@@ -95,6 +109,42 @@ class Capacity:
         :type max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
         """
         self._max_value = max_value
+
+    @property
+    def all_value(self):
+        r"""Gets the all_value of this Capacity.
+
+        :return: The all_value of this Capacity.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.Value`
+        """
+        return self._all_value
+
+    @all_value.setter
+    def all_value(self, all_value):
+        r"""Sets the all_value of this Capacity.
+
+        :param all_value: The all_value of this Capacity.
+        :type all_value: :class:`huaweicloudsdkmodelarts.v1.Value`
+        """
+        self._all_value = all_value
+
+    @property
+    def all_max_value(self):
+        r"""Gets the all_max_value of this Capacity.
+
+        :return: The all_max_value of this Capacity.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.Value`
+        """
+        return self._all_max_value
+
+    @all_max_value.setter
+    def all_max_value(self, all_max_value):
+        r"""Sets the all_max_value of this Capacity.
+
+        :param all_max_value: The all_max_value of this Capacity.
+        :type all_max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
+        """
+        self._all_max_value = all_max_value
 
     @property
     def timestamp(self):

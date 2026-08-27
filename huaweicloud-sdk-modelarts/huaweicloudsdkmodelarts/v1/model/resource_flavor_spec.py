@@ -19,8 +19,8 @@ class ResourceFlavorSpec:
         'cpu_arch': 'str',
         'cpu': 'str',
         'memory': 'str',
-        'gpu': 'ResourceFlavorSpecGpu',
-        'npu': 'ResourceFlavorSpecNpu',
+        'gpu': 'ResourceFlavorXpu',
+        'npu': 'ResourceFlavorXpu',
         'data_volume': 'list[ResourceFlavorSpecDataVolume]',
         'billing_modes': 'list[int]',
         'billing_code': 'str',
@@ -54,9 +54,9 @@ class ResourceFlavorSpec:
         :param memory: **参数解释**：资源规格实例的内存大小。以Gi为单位。 **取值范围**：不涉及。
         :type memory: str
         :param gpu: 
-        :type gpu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecGpu`
+        :type gpu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         :param npu: 
-        :type npu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecNpu`
+        :type npu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         :param data_volume: **参数解释**：资源规格实例的存储资源信息。
         :type data_volume: list[:class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecDataVolume`]
         :param billing_modes: **参数解释**：资源规格支持的计费模式。
@@ -195,7 +195,7 @@ class ResourceFlavorSpec:
         r"""Gets the gpu of this ResourceFlavorSpec.
 
         :return: The gpu of this ResourceFlavorSpec.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecGpu`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         """
         return self._gpu
 
@@ -204,7 +204,7 @@ class ResourceFlavorSpec:
         r"""Sets the gpu of this ResourceFlavorSpec.
 
         :param gpu: The gpu of this ResourceFlavorSpec.
-        :type gpu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecGpu`
+        :type gpu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         """
         self._gpu = gpu
 
@@ -213,7 +213,7 @@ class ResourceFlavorSpec:
         r"""Gets the npu of this ResourceFlavorSpec.
 
         :return: The npu of this ResourceFlavorSpec.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecNpu`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         """
         return self._npu
 
@@ -222,7 +222,7 @@ class ResourceFlavorSpec:
         r"""Sets the npu of this ResourceFlavorSpec.
 
         :param npu: The npu of this ResourceFlavorSpec.
-        :type npu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorSpecNpu`
+        :type npu: :class:`huaweicloudsdkmodelarts.v1.ResourceFlavorXpu`
         """
         self._npu = npu
 

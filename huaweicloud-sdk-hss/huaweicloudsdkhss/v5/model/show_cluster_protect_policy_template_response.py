@@ -54,7 +54,7 @@ class ShowClusterProtectPolicyTemplateResponse(SdkResponse):
         :type target_kind: str
         :param tag: **参数解释**: 标签 **取值范围**: 字符长度0-2048 
         :type tag: str
-        :param level: **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
+        :param level: **参数解释**: 推荐级别 **取值范围**: 字符长度1-6 
         :type level: str
         :param constraint_template: **参数解释**: 策略模板内容 **取值范围**: 字符长度1-65535 
         :type constraint_template: str
@@ -225,7 +225,7 @@ class ShowClusterProtectPolicyTemplateResponse(SdkResponse):
     def level(self):
         r"""Gets the level of this ShowClusterProtectPolicyTemplateResponse.
 
-        **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
+        **参数解释**: 推荐级别 **取值范围**: 字符长度1-6 
 
         :return: The level of this ShowClusterProtectPolicyTemplateResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class ShowClusterProtectPolicyTemplateResponse(SdkResponse):
     def level(self, level):
         r"""Sets the level of this ShowClusterProtectPolicyTemplateResponse.
 
-        **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
+        **参数解释**: 推荐级别 **取值范围**: 字符长度1-6 
 
         :param level: The level of this ShowClusterProtectPolicyTemplateResponse.
         :type level: str

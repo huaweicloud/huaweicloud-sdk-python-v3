@@ -67,7 +67,7 @@ class CreateManualImageScanTaskReqInfoImageInfo:
         :type instance_id: str
         :param instance_url: 下载企业镜像URL
         :type instance_url: str
-        :param registry_type: **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。  **默认取值**: 不涉及 
+        :param registry_type: **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 - Local：本地镜像 **默认取值**: 不涉及 
         :type registry_type: str
         """
         
@@ -333,7 +333,7 @@ class CreateManualImageScanTaskReqInfoImageInfo:
     def registry_type(self):
         r"""Gets the registry_type of this CreateManualImageScanTaskReqInfoImageInfo.
 
-        **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。  **默认取值**: 不涉及 
+        **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 - Local：本地镜像 **默认取值**: 不涉及 
 
         :return: The registry_type of this CreateManualImageScanTaskReqInfoImageInfo.
         :rtype: str
@@ -344,7 +344,7 @@ class CreateManualImageScanTaskReqInfoImageInfo:
     def registry_type(self, registry_type):
         r"""Sets the registry_type of this CreateManualImageScanTaskReqInfoImageInfo.
 
-        **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。  **默认取值**: 不涉及 
+        **参数解释**: 镜像仓库类型 **约束限制**: 不涉及 **取值范围**: - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 - Local：本地镜像 **默认取值**: 不涉及 
 
         :param registry_type: The registry_type of this CreateManualImageScanTaskReqInfoImageInfo.
         :type registry_type: str

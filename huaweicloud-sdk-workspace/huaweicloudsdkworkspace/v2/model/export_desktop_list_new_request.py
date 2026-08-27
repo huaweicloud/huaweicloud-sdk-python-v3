@@ -16,6 +16,7 @@ class ExportDesktopListNewRequest:
 
     openapi_types = {
         'computer_name': 'str',
+        'computer_names': 'list[str]',
         'desktop_ip': 'str',
         'desktop_id': 'str',
         'tag': 'str',
@@ -26,17 +27,23 @@ class ExportDesktopListNewRequest:
         'user_names': 'list[str]',
         'sort_field': 'str',
         'sort_type': 'str',
-        'pool_id': 'str',
         'user_attached': 'bool',
         'image_id': 'str',
         'charge_mode': 'str',
         'in_maintenance_mode': 'bool',
         'subnet_id': 'str',
-        'connection_status_version': 'str'
+        'connection_status_version': 'str',
+        'pool_id': 'str',
+        'include_pool': 'bool',
+        'pool_name': 'str',
+        'pool_type': 'str',
+        'pool_in_maintenance_mode': 'bool',
+        'pool_enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'computer_name': 'computer_name',
+        'computer_names': 'computer_names',
         'desktop_ip': 'desktop_ip',
         'desktop_id': 'desktop_id',
         'tag': 'tag',
@@ -47,22 +54,29 @@ class ExportDesktopListNewRequest:
         'user_names': 'user_names',
         'sort_field': 'sort_field',
         'sort_type': 'sort_type',
-        'pool_id': 'pool_id',
         'user_attached': 'user_attached',
         'image_id': 'image_id',
         'charge_mode': 'charge_mode',
         'in_maintenance_mode': 'in_maintenance_mode',
         'subnet_id': 'subnet_id',
-        'connection_status_version': 'connection_status_version'
+        'connection_status_version': 'connection_status_version',
+        'pool_id': 'pool_id',
+        'include_pool': 'include_pool',
+        'pool_name': 'pool_name',
+        'pool_type': 'pool_type',
+        'pool_in_maintenance_mode': 'pool_in_maintenance_mode',
+        'pool_enterprise_project_id': 'pool_enterprise_project_id'
     }
 
-    def __init__(self, computer_name=None, desktop_ip=None, desktop_id=None, tag=None, language=None, enterprise_project_id=None, desktop_type=None, status=None, user_names=None, sort_field=None, sort_type=None, pool_id=None, user_attached=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None, connection_status_version=None):
+    def __init__(self, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, tag=None, language=None, enterprise_project_id=None, desktop_type=None, status=None, user_names=None, sort_field=None, sort_type=None, user_attached=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None, connection_status_version=None, pool_id=None, include_pool=None, pool_name=None, pool_type=None, pool_in_maintenance_mode=None, pool_enterprise_project_id=None):
         r"""ExportDesktopListNewRequest
 
         The model defined in huaweicloud sdk
 
         :param computer_name: 桌面名。
         :type computer_name: str
+        :param computer_names: 桌面名列表
+        :type computer_names: list[str]
         :param desktop_ip: 桌面IP地址。
         :type desktop_ip: str
         :param desktop_id: 桌面ID。
@@ -83,8 +97,6 @@ class ExportDesktopListNewRequest:
         :type sort_field: str
         :param sort_type: 排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
         :type sort_type: str
-        :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
-        :type pool_id: str
         :param user_attached: 是否分配了用户。
         :type user_attached: bool
         :param image_id: 镜像ID。
@@ -97,11 +109,24 @@ class ExportDesktopListNewRequest:
         :type subnet_id: str
         :param connection_status_version: 连接状态版本，默认值为OLD。 - NEW：新版本 - OLD：老版本
         :type connection_status_version: str
+        :param pool_id: 桌面池ID,多个桌面池ID用逗号隔开。
+        :type pool_id: str
+        :param include_pool: 是否只导出桌面池桌面。 - true：只导出桌面池桌面，此时可配合pool_name、pool_type、pool_in_maintenance_mode过滤参数对桌面池进行过滤 - false：只导出普通桌面，忽略其他pool_name、pool_type、pool_in_maintenance_mode过滤参数参数
+        :type include_pool: bool
+        :param pool_name: 桌面池名称。
+        :type pool_name: str
+        :param pool_type: 桌面池类型，DYNAMIC：动态池，STATIC：静态池。
+        :type pool_type: str
+        :param pool_in_maintenance_mode: 按照维护状态过滤。
+        :type pool_in_maintenance_mode: bool
+        :param pool_enterprise_project_id: 按照企业项目ID过滤桌面池。
+        :type pool_enterprise_project_id: str
         """
         
         
 
         self._computer_name = None
+        self._computer_names = None
         self._desktop_ip = None
         self._desktop_id = None
         self._tag = None
@@ -112,17 +137,24 @@ class ExportDesktopListNewRequest:
         self._user_names = None
         self._sort_field = None
         self._sort_type = None
-        self._pool_id = None
         self._user_attached = None
         self._image_id = None
         self._charge_mode = None
         self._in_maintenance_mode = None
         self._subnet_id = None
         self._connection_status_version = None
+        self._pool_id = None
+        self._include_pool = None
+        self._pool_name = None
+        self._pool_type = None
+        self._pool_in_maintenance_mode = None
+        self._pool_enterprise_project_id = None
         self.discriminator = None
 
         if computer_name is not None:
             self.computer_name = computer_name
+        if computer_names is not None:
+            self.computer_names = computer_names
         if desktop_ip is not None:
             self.desktop_ip = desktop_ip
         if desktop_id is not None:
@@ -142,8 +174,6 @@ class ExportDesktopListNewRequest:
             self.sort_field = sort_field
         if sort_type is not None:
             self.sort_type = sort_type
-        if pool_id is not None:
-            self.pool_id = pool_id
         if user_attached is not None:
             self.user_attached = user_attached
         if image_id is not None:
@@ -156,6 +186,18 @@ class ExportDesktopListNewRequest:
             self.subnet_id = subnet_id
         if connection_status_version is not None:
             self.connection_status_version = connection_status_version
+        if pool_id is not None:
+            self.pool_id = pool_id
+        if include_pool is not None:
+            self.include_pool = include_pool
+        if pool_name is not None:
+            self.pool_name = pool_name
+        if pool_type is not None:
+            self.pool_type = pool_type
+        if pool_in_maintenance_mode is not None:
+            self.pool_in_maintenance_mode = pool_in_maintenance_mode
+        if pool_enterprise_project_id is not None:
+            self.pool_enterprise_project_id = pool_enterprise_project_id
 
     @property
     def computer_name(self):
@@ -178,6 +220,28 @@ class ExportDesktopListNewRequest:
         :type computer_name: str
         """
         self._computer_name = computer_name
+
+    @property
+    def computer_names(self):
+        r"""Gets the computer_names of this ExportDesktopListNewRequest.
+
+        桌面名列表
+
+        :return: The computer_names of this ExportDesktopListNewRequest.
+        :rtype: list[str]
+        """
+        return self._computer_names
+
+    @computer_names.setter
+    def computer_names(self, computer_names):
+        r"""Sets the computer_names of this ExportDesktopListNewRequest.
+
+        桌面名列表
+
+        :param computer_names: The computer_names of this ExportDesktopListNewRequest.
+        :type computer_names: list[str]
+        """
+        self._computer_names = computer_names
 
     @property
     def desktop_ip(self):
@@ -400,28 +464,6 @@ class ExportDesktopListNewRequest:
         self._sort_type = sort_type
 
     @property
-    def pool_id(self):
-        r"""Gets the pool_id of this ExportDesktopListNewRequest.
-
-        桌面池ID,多个桌面池ID用逗号隔开。
-
-        :return: The pool_id of this ExportDesktopListNewRequest.
-        :rtype: str
-        """
-        return self._pool_id
-
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        r"""Sets the pool_id of this ExportDesktopListNewRequest.
-
-        桌面池ID,多个桌面池ID用逗号隔开。
-
-        :param pool_id: The pool_id of this ExportDesktopListNewRequest.
-        :type pool_id: str
-        """
-        self._pool_id = pool_id
-
-    @property
     def user_attached(self):
         r"""Gets the user_attached of this ExportDesktopListNewRequest.
 
@@ -552,6 +594,138 @@ class ExportDesktopListNewRequest:
         :type connection_status_version: str
         """
         self._connection_status_version = connection_status_version
+
+    @property
+    def pool_id(self):
+        r"""Gets the pool_id of this ExportDesktopListNewRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :return: The pool_id of this ExportDesktopListNewRequest.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        r"""Sets the pool_id of this ExportDesktopListNewRequest.
+
+        桌面池ID,多个桌面池ID用逗号隔开。
+
+        :param pool_id: The pool_id of this ExportDesktopListNewRequest.
+        :type pool_id: str
+        """
+        self._pool_id = pool_id
+
+    @property
+    def include_pool(self):
+        r"""Gets the include_pool of this ExportDesktopListNewRequest.
+
+        是否只导出桌面池桌面。 - true：只导出桌面池桌面，此时可配合pool_name、pool_type、pool_in_maintenance_mode过滤参数对桌面池进行过滤 - false：只导出普通桌面，忽略其他pool_name、pool_type、pool_in_maintenance_mode过滤参数参数
+
+        :return: The include_pool of this ExportDesktopListNewRequest.
+        :rtype: bool
+        """
+        return self._include_pool
+
+    @include_pool.setter
+    def include_pool(self, include_pool):
+        r"""Sets the include_pool of this ExportDesktopListNewRequest.
+
+        是否只导出桌面池桌面。 - true：只导出桌面池桌面，此时可配合pool_name、pool_type、pool_in_maintenance_mode过滤参数对桌面池进行过滤 - false：只导出普通桌面，忽略其他pool_name、pool_type、pool_in_maintenance_mode过滤参数参数
+
+        :param include_pool: The include_pool of this ExportDesktopListNewRequest.
+        :type include_pool: bool
+        """
+        self._include_pool = include_pool
+
+    @property
+    def pool_name(self):
+        r"""Gets the pool_name of this ExportDesktopListNewRequest.
+
+        桌面池名称。
+
+        :return: The pool_name of this ExportDesktopListNewRequest.
+        :rtype: str
+        """
+        return self._pool_name
+
+    @pool_name.setter
+    def pool_name(self, pool_name):
+        r"""Sets the pool_name of this ExportDesktopListNewRequest.
+
+        桌面池名称。
+
+        :param pool_name: The pool_name of this ExportDesktopListNewRequest.
+        :type pool_name: str
+        """
+        self._pool_name = pool_name
+
+    @property
+    def pool_type(self):
+        r"""Gets the pool_type of this ExportDesktopListNewRequest.
+
+        桌面池类型，DYNAMIC：动态池，STATIC：静态池。
+
+        :return: The pool_type of this ExportDesktopListNewRequest.
+        :rtype: str
+        """
+        return self._pool_type
+
+    @pool_type.setter
+    def pool_type(self, pool_type):
+        r"""Sets the pool_type of this ExportDesktopListNewRequest.
+
+        桌面池类型，DYNAMIC：动态池，STATIC：静态池。
+
+        :param pool_type: The pool_type of this ExportDesktopListNewRequest.
+        :type pool_type: str
+        """
+        self._pool_type = pool_type
+
+    @property
+    def pool_in_maintenance_mode(self):
+        r"""Gets the pool_in_maintenance_mode of this ExportDesktopListNewRequest.
+
+        按照维护状态过滤。
+
+        :return: The pool_in_maintenance_mode of this ExportDesktopListNewRequest.
+        :rtype: bool
+        """
+        return self._pool_in_maintenance_mode
+
+    @pool_in_maintenance_mode.setter
+    def pool_in_maintenance_mode(self, pool_in_maintenance_mode):
+        r"""Sets the pool_in_maintenance_mode of this ExportDesktopListNewRequest.
+
+        按照维护状态过滤。
+
+        :param pool_in_maintenance_mode: The pool_in_maintenance_mode of this ExportDesktopListNewRequest.
+        :type pool_in_maintenance_mode: bool
+        """
+        self._pool_in_maintenance_mode = pool_in_maintenance_mode
+
+    @property
+    def pool_enterprise_project_id(self):
+        r"""Gets the pool_enterprise_project_id of this ExportDesktopListNewRequest.
+
+        按照企业项目ID过滤桌面池。
+
+        :return: The pool_enterprise_project_id of this ExportDesktopListNewRequest.
+        :rtype: str
+        """
+        return self._pool_enterprise_project_id
+
+    @pool_enterprise_project_id.setter
+    def pool_enterprise_project_id(self, pool_enterprise_project_id):
+        r"""Sets the pool_enterprise_project_id of this ExportDesktopListNewRequest.
+
+        按照企业项目ID过滤桌面池。
+
+        :param pool_enterprise_project_id: The pool_enterprise_project_id of this ExportDesktopListNewRequest.
+        :type pool_enterprise_project_id: str
+        """
+        self._pool_enterprise_project_id = pool_enterprise_project_id
 
     def to_dict(self):
         result = {}

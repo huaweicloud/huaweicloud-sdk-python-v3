@@ -36,7 +36,8 @@ class Record:
         'e2e_rtt': 'int',
         'source_ip': 'str',
         'public_ip': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'desktop_id': 'str'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class Record:
         'e2e_rtt': 'e2e_rtt',
         'source_ip': 'source_ip',
         'public_ip': 'public_ip',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'desktop_id': 'desktop_id'
     }
 
-    def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None, source_ip=None, public_ip=None, enterprise_project_id=None):
+    def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None, source_ip=None, public_ip=None, enterprise_project_id=None, desktop_id=None):
         r"""Record
 
         The model defined in huaweicloud sdk
@@ -113,6 +115,8 @@ class Record:
         :type public_ip: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param desktop_id: 桌面ID。
+        :type desktop_id: str
         """
         
         
@@ -139,6 +143,7 @@ class Record:
         self._source_ip = None
         self._public_ip = None
         self._enterprise_project_id = None
+        self._desktop_id = None
         self.discriminator = None
 
         if tenant_id is not None:
@@ -185,6 +190,8 @@ class Record:
             self.public_ip = public_ip
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if desktop_id is not None:
+            self.desktop_id = desktop_id
 
     @property
     def tenant_id(self):
@@ -669,6 +676,28 @@ class Record:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def desktop_id(self):
+        r"""Gets the desktop_id of this Record.
+
+        桌面ID。
+
+        :return: The desktop_id of this Record.
+        :rtype: str
+        """
+        return self._desktop_id
+
+    @desktop_id.setter
+    def desktop_id(self, desktop_id):
+        r"""Sets the desktop_id of this Record.
+
+        桌面ID。
+
+        :param desktop_id: The desktop_id of this Record.
+        :type desktop_id: str
+        """
+        self._desktop_id = desktop_id
 
     def to_dict(self):
         result = {}

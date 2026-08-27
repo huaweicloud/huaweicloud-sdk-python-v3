@@ -21,7 +21,9 @@ class OpenMysqlProxyRequestBody:
         'proxy_mode': 'str',
         'route_mode': 'int',
         'nodes_read_weight': 'list[NodesWeight]',
+        'proxy_nodes_az_list': 'list[str]',
         'subnet_id': 'str',
+        'proxy_ip': 'str',
         'new_node_auto_add_status': 'str',
         'new_node_weight': 'int'
     }
@@ -33,12 +35,14 @@ class OpenMysqlProxyRequestBody:
         'proxy_mode': 'proxy_mode',
         'route_mode': 'route_mode',
         'nodes_read_weight': 'nodes_read_weight',
+        'proxy_nodes_az_list': 'proxy_nodes_az_list',
         'subnet_id': 'subnet_id',
+        'proxy_ip': 'proxy_ip',
         'new_node_auto_add_status': 'new_node_auto_add_status',
         'new_node_weight': 'new_node_weight'
     }
 
-    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, subnet_id=None, new_node_auto_add_status=None, new_node_weight=None):
+    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, proxy_nodes_az_list=None, subnet_id=None, proxy_ip=None, new_node_auto_add_status=None, new_node_weight=None):
         r"""OpenMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,8 +59,12 @@ class OpenMysqlProxyRequestBody:
         :type route_mode: int
         :param nodes_read_weight: 数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
         :type nodes_read_weight: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
+        :param proxy_nodes_az_list: **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+        :type proxy_nodes_az_list: list[str]
         :param subnet_id: 数据库VPC下的子网ID。
         :type subnet_id: str
+        :param proxy_ip: **参数解释**：   数据库代理IP，获取方法如下。 - 用户自定义代理IP时，由用户自定义传入。 - 用户不指定代理IP时，随机在指定子网下生成的IPV4地址。  **约束限制**：  指定子网下的可用IP，获取方法如下： 登录TaurusDB的控制台界面，单击实例名称，进入实例详情页面，在该页面单击数据库代理，新增代理，查看已使用IP地址，查找指定子网下未被使用的IP。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+        :type proxy_ip: str
         :param new_node_auto_add_status: 是否开启新增节点自动加入该Proxy。如果需要设置是否开启新增节点自动加入该Proxy，请联系客服人员添加白名单，加入白名单后，方可输入该字段。  取值范围： - ON：开启。 - OFF：关闭。
         :type new_node_auto_add_status: str
         :param new_node_weight: 新增节点的读权重：    - 如果路由模式为0，新增节点自动加入为ON，取值为0~1000。 - 如果路由模式不为0或新增节点自动加入为OFF，则可不输入读权重。
@@ -71,7 +79,9 @@ class OpenMysqlProxyRequestBody:
         self._proxy_mode = None
         self._route_mode = None
         self._nodes_read_weight = None
+        self._proxy_nodes_az_list = None
         self._subnet_id = None
+        self._proxy_ip = None
         self._new_node_auto_add_status = None
         self._new_node_weight = None
         self.discriminator = None
@@ -86,8 +96,12 @@ class OpenMysqlProxyRequestBody:
             self.route_mode = route_mode
         if nodes_read_weight is not None:
             self.nodes_read_weight = nodes_read_weight
+        if proxy_nodes_az_list is not None:
+            self.proxy_nodes_az_list = proxy_nodes_az_list
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if proxy_ip is not None:
+            self.proxy_ip = proxy_ip
         if new_node_auto_add_status is not None:
             self.new_node_auto_add_status = new_node_auto_add_status
         if new_node_weight is not None:
@@ -226,6 +240,28 @@ class OpenMysqlProxyRequestBody:
         self._nodes_read_weight = nodes_read_weight
 
     @property
+    def proxy_nodes_az_list(self):
+        r"""Gets the proxy_nodes_az_list of this OpenMysqlProxyRequestBody.
+
+        **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+
+        :return: The proxy_nodes_az_list of this OpenMysqlProxyRequestBody.
+        :rtype: list[str]
+        """
+        return self._proxy_nodes_az_list
+
+    @proxy_nodes_az_list.setter
+    def proxy_nodes_az_list(self, proxy_nodes_az_list):
+        r"""Sets the proxy_nodes_az_list of this OpenMysqlProxyRequestBody.
+
+        **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+
+        :param proxy_nodes_az_list: The proxy_nodes_az_list of this OpenMysqlProxyRequestBody.
+        :type proxy_nodes_az_list: list[str]
+        """
+        self._proxy_nodes_az_list = proxy_nodes_az_list
+
+    @property
     def subnet_id(self):
         r"""Gets the subnet_id of this OpenMysqlProxyRequestBody.
 
@@ -246,6 +282,28 @@ class OpenMysqlProxyRequestBody:
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def proxy_ip(self):
+        r"""Gets the proxy_ip of this OpenMysqlProxyRequestBody.
+
+        **参数解释**：   数据库代理IP，获取方法如下。 - 用户自定义代理IP时，由用户自定义传入。 - 用户不指定代理IP时，随机在指定子网下生成的IPV4地址。  **约束限制**：  指定子网下的可用IP，获取方法如下： 登录TaurusDB的控制台界面，单击实例名称，进入实例详情页面，在该页面单击数据库代理，新增代理，查看已使用IP地址，查找指定子网下未被使用的IP。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :return: The proxy_ip of this OpenMysqlProxyRequestBody.
+        :rtype: str
+        """
+        return self._proxy_ip
+
+    @proxy_ip.setter
+    def proxy_ip(self, proxy_ip):
+        r"""Sets the proxy_ip of this OpenMysqlProxyRequestBody.
+
+        **参数解释**：   数据库代理IP，获取方法如下。 - 用户自定义代理IP时，由用户自定义传入。 - 用户不指定代理IP时，随机在指定子网下生成的IPV4地址。  **约束限制**：  指定子网下的可用IP，获取方法如下： 登录TaurusDB的控制台界面，单击实例名称，进入实例详情页面，在该页面单击数据库代理，新增代理，查看已使用IP地址，查找指定子网下未被使用的IP。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
+
+        :param proxy_ip: The proxy_ip of this OpenMysqlProxyRequestBody.
+        :type proxy_ip: str
+        """
+        self._proxy_ip = proxy_ip
 
     @property
     def new_node_auto_add_status(self):

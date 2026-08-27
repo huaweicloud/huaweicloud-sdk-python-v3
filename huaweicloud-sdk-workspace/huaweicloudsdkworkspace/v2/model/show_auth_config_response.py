@@ -24,6 +24,7 @@ class ShowAuthConfigResponse(SdkResponse):
         'third_party_auth_config': 'list[ThirdPartyAuthConfig]',
         'emergency_login_mode': 'str',
         'sms_login_enabled': 'bool',
+        'login_captcha': 'LoginCaptchaConfig',
         'saml2_auth_config': 'Saml2AuthConfig'
     }
 
@@ -36,10 +37,11 @@ class ShowAuthConfigResponse(SdkResponse):
         'third_party_auth_config': 'third_party_auth_config',
         'emergency_login_mode': 'emergency_login_mode',
         'sms_login_enabled': 'sms_login_enabled',
+        'login_captcha': 'login_captcha',
         'saml2_auth_config': 'saml2_auth_config'
     }
 
-    def __init__(self, id=None, auth_type=None, enable=None, is_multi_domain_authenticate_enabled=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, sms_login_enabled=None, saml2_auth_config=None):
+    def __init__(self, id=None, auth_type=None, enable=None, is_multi_domain_authenticate_enabled=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, sms_login_enabled=None, login_captcha=None, saml2_auth_config=None):
         r"""ShowAuthConfigResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class ShowAuthConfigResponse(SdkResponse):
         :type emergency_login_mode: str
         :param sms_login_enabled: 短信验证码登录开关。
         :type sms_login_enabled: bool
+        :param login_captcha: 
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
         :param saml2_auth_config: 
         :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
         """
@@ -74,6 +78,7 @@ class ShowAuthConfigResponse(SdkResponse):
         self._third_party_auth_config = None
         self._emergency_login_mode = None
         self._sms_login_enabled = None
+        self._login_captcha = None
         self._saml2_auth_config = None
         self.discriminator = None
 
@@ -93,6 +98,8 @@ class ShowAuthConfigResponse(SdkResponse):
             self.emergency_login_mode = emergency_login_mode
         if sms_login_enabled is not None:
             self.sms_login_enabled = sms_login_enabled
+        if login_captcha is not None:
+            self.login_captcha = login_captcha
         if saml2_auth_config is not None:
             self.saml2_auth_config = saml2_auth_config
 
@@ -267,6 +274,24 @@ class ShowAuthConfigResponse(SdkResponse):
         :type sms_login_enabled: bool
         """
         self._sms_login_enabled = sms_login_enabled
+
+    @property
+    def login_captcha(self):
+        r"""Gets the login_captcha of this ShowAuthConfigResponse.
+
+        :return: The login_captcha of this ShowAuthConfigResponse.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        return self._login_captcha
+
+    @login_captcha.setter
+    def login_captcha(self, login_captcha):
+        r"""Sets the login_captcha of this ShowAuthConfigResponse.
+
+        :param login_captcha: The login_captcha of this ShowAuthConfigResponse.
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        self._login_captcha = login_captcha
 
     @property
     def saml2_auth_config(self):

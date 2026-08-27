@@ -36,7 +36,8 @@ class BatchBindApiKeyRequestKeyIds:
         self._key_id = None
         self.discriminator = None
 
-        self.key_id = key_id
+        if key_id is not None:
+            self.key_id = key_id
 
     @property
     def key_id(self):

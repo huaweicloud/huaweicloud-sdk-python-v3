@@ -29,6 +29,7 @@ class DesktopDetailInfo:
         'flavor': 'FlavorInfo',
         'status': 'str',
         'task_status': 'str',
+        'domain_status': 'int',
         'in_maintenance_mode': 'bool',
         'created': 'str',
         'security_groups': 'list[SecurityGroupInfo]',
@@ -62,7 +63,8 @@ class DesktopDetailInfo:
         'hour_package_info': 'HourPackageInfo',
         'is_freeze': 'bool',
         'isolated': 'bool',
-        'domain': 'str'
+        'domain': 'str',
+        'agent_version': 'str'
     }
 
     attribute_map = {
@@ -80,6 +82,7 @@ class DesktopDetailInfo:
         'flavor': 'flavor',
         'status': 'status',
         'task_status': 'task_status',
+        'domain_status': 'domain_status',
         'in_maintenance_mode': 'in_maintenance_mode',
         'created': 'created',
         'security_groups': 'security_groups',
@@ -113,10 +116,11 @@ class DesktopDetailInfo:
         'hour_package_info': 'hour_package_info',
         'is_freeze': 'is_freeze',
         'isolated': 'isolated',
-        'domain': 'domain'
+        'domain': 'domain',
+        'agent_version': 'agent_version'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None, isolated=None, domain=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, domain_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None, is_freeze=None, isolated=None, domain=None, agent_version=None):
         r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -149,6 +153,8 @@ class DesktopDetailInfo:
         :type status: str
         :param task_status: 任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
         :type task_status: str
+        :param domain_status: 加域状态。|- 1 正常。 2 脱域。 3 未上报。
+        :type domain_status: int
         :param in_maintenance_mode: 是否处于维护模式,true表示维护模式，false表示不处于维护模式。
         :type in_maintenance_mode: bool
         :param created: 桌面创建时间。
@@ -217,6 +223,8 @@ class DesktopDetailInfo:
         :type isolated: bool
         :param domain: 桌面分配的域。
         :type domain: str
+        :param agent_version: agent版本。
+        :type agent_version: str
         """
         
         
@@ -235,6 +243,7 @@ class DesktopDetailInfo:
         self._flavor = None
         self._status = None
         self._task_status = None
+        self._domain_status = None
         self._in_maintenance_mode = None
         self._created = None
         self._security_groups = None
@@ -269,6 +278,7 @@ class DesktopDetailInfo:
         self._is_freeze = None
         self._isolated = None
         self._domain = None
+        self._agent_version = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -299,6 +309,8 @@ class DesktopDetailInfo:
             self.status = status
         if task_status is not None:
             self.task_status = task_status
+        if domain_status is not None:
+            self.domain_status = domain_status
         if in_maintenance_mode is not None:
             self.in_maintenance_mode = in_maintenance_mode
         if created is not None:
@@ -367,6 +379,8 @@ class DesktopDetailInfo:
             self.isolated = isolated
         if domain is not None:
             self.domain = domain
+        if agent_version is not None:
+            self.agent_version = agent_version
 
     @property
     def desktop_id(self):
@@ -671,6 +685,28 @@ class DesktopDetailInfo:
         :type task_status: str
         """
         self._task_status = task_status
+
+    @property
+    def domain_status(self):
+        r"""Gets the domain_status of this DesktopDetailInfo.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :return: The domain_status of this DesktopDetailInfo.
+        :rtype: int
+        """
+        return self._domain_status
+
+    @domain_status.setter
+    def domain_status(self, domain_status):
+        r"""Sets the domain_status of this DesktopDetailInfo.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :param domain_status: The domain_status of this DesktopDetailInfo.
+        :type domain_status: int
+        """
+        self._domain_status = domain_status
 
     @property
     def in_maintenance_mode(self):
@@ -1407,6 +1443,28 @@ class DesktopDetailInfo:
         :type domain: str
         """
         self._domain = domain
+
+    @property
+    def agent_version(self):
+        r"""Gets the agent_version of this DesktopDetailInfo.
+
+        agent版本。
+
+        :return: The agent_version of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._agent_version
+
+    @agent_version.setter
+    def agent_version(self, agent_version):
+        r"""Sets the agent_version of this DesktopDetailInfo.
+
+        agent版本。
+
+        :param agent_version: The agent_version of this DesktopDetailInfo.
+        :type agent_version: str
+        """
+        self._agent_version = agent_version
 
     def to_dict(self):
         result = {}

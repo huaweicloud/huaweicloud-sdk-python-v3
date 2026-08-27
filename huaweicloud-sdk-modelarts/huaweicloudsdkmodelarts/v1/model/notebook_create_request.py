@@ -31,7 +31,8 @@ class NotebookCreateRequest:
         'run_user': 'RunUserRequest',
         'data_volumes': 'list[VolumeMountRequest]',
         'user_vpc': 'UserVpcRequest',
-        'duration': 'int'
+        'duration': 'int',
+        'public_network_config': 'PublicNetworkConfig'
     }
 
     attribute_map = {
@@ -51,15 +52,16 @@ class NotebookCreateRequest:
         'run_user': 'run_user',
         'data_volumes': 'data_volumes',
         'user_vpc': 'user_vpc',
-        'duration': 'duration'
+        'duration': 'duration',
+        'public_network_config': 'public_network_config'
     }
 
-    def __init__(self, description=None, endpoints=None, feature=None, flavor=None, custom_spec=None, image_id=None, name=None, pool_id=None, volume=None, workspace_id=None, hooks=None, lease=None, affinity=None, run_user=None, data_volumes=None, user_vpc=None, duration=None):
+    def __init__(self, description=None, endpoints=None, feature=None, flavor=None, custom_spec=None, image_id=None, name=None, pool_id=None, volume=None, workspace_id=None, hooks=None, lease=None, affinity=None, run_user=None, data_volumes=None, user_vpc=None, duration=None, public_network_config=None):
         r"""NotebookCreateRequest
 
         The model defined in huaweicloud sdk
 
-        :param description: **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&amp;&lt;&gt;\&quot;&#39;/。 **默认取值**：不涉及。
+        :param description: **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符&lt;&gt;，缺省值为空。 **默认取值**：不涉及。
         :type description: str
         :param endpoints: **参数解释**：仅在本地IDE（如PyCharm、VS Code）或SSH客户端接入Notebook。 **约束限制**：仅在本地IDE（如PyCharm、VS Code）或SSH客户端，通过SSH远程接入Notebook实例时需要的相关配置。
         :type endpoints: list[:class:`huaweicloudsdkmodelarts.v1.EndpointsReq`]
@@ -71,7 +73,7 @@ class NotebookCreateRequest:
         :type custom_spec: :class:`huaweicloudsdkmodelarts.v1.NotebookCustomSpec`
         :param image_id: **参数解释**：待创建Notebook实例的镜像，需要指定镜像ID。ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。镜像的ID可通过调用[[查询支持的镜像列表](https://support.huaweicloud.com/api-modelarts/ListImage.html)](tag:hc)[[查询支持的镜像列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListImage.html)](tag:hk)接口获取。 **约束限制**：不涉及。 **取值范围**：调用[[查询支持的镜像列表](https://support.huaweicloud.com/api-modelarts/ListImage.html)](tag:hc)[[查询支持的镜像列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListImage.html)](tag:hk)接口获取的合法镜像ID列表。 **默认取值**：不涉及。
         :type image_id: str
-        :param name: **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        :param name: **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
         :type name: str
         :param pool_id: **参数解释**：专属资源池ID，若需要指定专属资源池创建实例时必填。专属资源池ID可通过[[查询资源池列表](https://support.huaweicloud.com/api-modelarts/ListPools.html)](tag:hc)[[查询资源池列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListPools.html)](tag:hk)接口获取。 **约束限制**：不涉及。 **取值范围**：调用[[查询资源池列表](https://support.huaweicloud.com/api-modelarts/ListPools.html)](tag:hc)[[查询资源池列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListPools.html)](tag:hk)接口获取的合法资源池ID列表。 **默认取值**：不涉及。
         :type pool_id: str
@@ -93,6 +95,8 @@ class NotebookCreateRequest:
         :type user_vpc: :class:`huaweicloudsdkmodelarts.v1.UserVpcRequest`
         :param duration: **参数解释**：定时停止，以当前时刻为起点，运行的时长（到期后自动停止）。单位：毫秒。 **约束限制**：不涉及。 **取值范围**：3600000-259200000。 **默认取值**：3600000。
         :type duration: int
+        :param public_network_config: 
+        :type public_network_config: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
         """
         
         
@@ -114,6 +118,7 @@ class NotebookCreateRequest:
         self._data_volumes = None
         self._user_vpc = None
         self._duration = None
+        self._public_network_config = None
         self.discriminator = None
 
         if description is not None:
@@ -147,12 +152,14 @@ class NotebookCreateRequest:
             self.user_vpc = user_vpc
         if duration is not None:
             self.duration = duration
+        if public_network_config is not None:
+            self.public_network_config = public_network_config
 
     @property
     def description(self):
         r"""Gets the description of this NotebookCreateRequest.
 
-        **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&<>\"'/。 **默认取值**：不涉及。
+        **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>，缺省值为空。 **默认取值**：不涉及。
 
         :return: The description of this NotebookCreateRequest.
         :rtype: str
@@ -163,7 +170,7 @@ class NotebookCreateRequest:
     def description(self, description):
         r"""Sets the description of this NotebookCreateRequest.
 
-        **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，且不能包含字符&<>\"'/。 **默认取值**：不涉及。
+        **参数解释**：实例描述信息。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>，缺省值为空。 **默认取值**：不涉及。
 
         :param description: The description of this NotebookCreateRequest.
         :type description: str
@@ -280,7 +287,7 @@ class NotebookCreateRequest:
     def name(self):
         r"""Gets the name of this NotebookCreateRequest.
 
-        **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
 
         :return: The name of this NotebookCreateRequest.
         :rtype: str
@@ -291,7 +298,7 @@ class NotebookCreateRequest:
     def name(self, name):
         r"""Sets the name of this NotebookCreateRequest.
 
-        **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符，支持大小写字母、数字、中划线和下划线，名称可重复。 **默认取值**：不涉及。
+        **参数解释**：实例名称。 **约束限制**：不涉及。 **取值范围**：长度限制为128个字符， 支持大小写字母、数字、中划线、下划线和中文，名称可重复。 **默认取值**：不涉及。
 
         :param name: The name of this NotebookCreateRequest.
         :type name: str
@@ -493,6 +500,24 @@ class NotebookCreateRequest:
         :type duration: int
         """
         self._duration = duration
+
+    @property
+    def public_network_config(self):
+        r"""Gets the public_network_config of this NotebookCreateRequest.
+
+        :return: The public_network_config of this NotebookCreateRequest.
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
+        """
+        return self._public_network_config
+
+    @public_network_config.setter
+    def public_network_config(self, public_network_config):
+        r"""Sets the public_network_config of this NotebookCreateRequest.
+
+        :param public_network_config: The public_network_config of this NotebookCreateRequest.
+        :type public_network_config: :class:`huaweicloudsdkmodelarts.v1.PublicNetworkConfig`
+        """
+        self._public_network_config = public_network_config
 
     def to_dict(self):
         result = {}

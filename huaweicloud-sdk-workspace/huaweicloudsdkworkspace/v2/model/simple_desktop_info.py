@@ -39,7 +39,8 @@ class SimpleDesktopInfo:
         'task_status': 'str',
         'availability_zone': 'str',
         'connect_status': 'str',
-        'pool_id': 'str'
+        'pool_id': 'str',
+        'domain_status': 'int'
     }
 
     attribute_map = {
@@ -67,10 +68,11 @@ class SimpleDesktopInfo:
         'task_status': 'task_status',
         'availability_zone': 'availability_zone',
         'connect_status': 'connect_status',
-        'pool_id': 'pool_id'
+        'pool_id': 'pool_id',
+        'domain_status': 'domain_status'
     }
 
-    def __init__(self, domain_id=None, project_id=None, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, desktop_detail_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None, availability_zone=None, connect_status=None, pool_id=None):
+    def __init__(self, domain_id=None, project_id=None, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, desktop_detail_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None, availability_zone=None, connect_status=None, pool_id=None, domain_status=None):
         r"""SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
@@ -125,6 +127,8 @@ class SimpleDesktopInfo:
         :type connect_status: str
         :param pool_id: 桌面池id。
         :type pool_id: str
+        :param domain_status: 加域状态。|- 1 正常。 2 脱域。 3 未上报。
+        :type domain_status: int
         """
         
         
@@ -154,6 +158,7 @@ class SimpleDesktopInfo:
         self._availability_zone = None
         self._connect_status = None
         self._pool_id = None
+        self._domain_status = None
         self.discriminator = None
 
         if domain_id is not None:
@@ -206,6 +211,8 @@ class SimpleDesktopInfo:
             self.connect_status = connect_status
         if pool_id is not None:
             self.pool_id = pool_id
+        if domain_status is not None:
+            self.domain_status = domain_status
 
     @property
     def domain_id(self):
@@ -756,6 +763,28 @@ class SimpleDesktopInfo:
         :type pool_id: str
         """
         self._pool_id = pool_id
+
+    @property
+    def domain_status(self):
+        r"""Gets the domain_status of this SimpleDesktopInfo.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :return: The domain_status of this SimpleDesktopInfo.
+        :rtype: int
+        """
+        return self._domain_status
+
+    @domain_status.setter
+    def domain_status(self, domain_status):
+        r"""Sets the domain_status of this SimpleDesktopInfo.
+
+        加域状态。|- 1 正常。 2 脱域。 3 未上报。
+
+        :param domain_status: The domain_status of this SimpleDesktopInfo.
+        :type domain_status: int
+        """
+        self._domain_status = domain_status
 
     def to_dict(self):
         result = {}

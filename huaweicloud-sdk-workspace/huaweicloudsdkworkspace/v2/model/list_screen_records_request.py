@@ -18,6 +18,7 @@ class ListScreenRecordsRequest:
         'limit': 'int',
         'offset': 'int',
         'desktop_id': 'str',
+        'desktop_names': 'str',
         'username': 'str',
         'status': 'str',
         'type': 'str',
@@ -31,6 +32,7 @@ class ListScreenRecordsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'desktop_id': 'desktop_id',
+        'desktop_names': 'desktop_names',
         'username': 'username',
         'status': 'status',
         'type': 'type',
@@ -40,7 +42,7 @@ class ListScreenRecordsRequest:
         'sort_type': 'sort_type'
     }
 
-    def __init__(self, limit=None, offset=None, desktop_id=None, username=None, status=None, type=None, start_time=None, end_time=None, sort_field=None, sort_type=None):
+    def __init__(self, limit=None, offset=None, desktop_id=None, desktop_names=None, username=None, status=None, type=None, start_time=None, end_time=None, sort_field=None, sort_type=None):
         r"""ListScreenRecordsRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListScreenRecordsRequest:
         :type offset: int
         :param desktop_id: 根据桌面ID过滤结果。
         :type desktop_id: str
+        :param desktop_names: 桌面名称列表，多个名称用英文逗号分割，最多支持100个桌面名称
+        :type desktop_names: str
         :param username: 根据用户名称过滤结果。
         :type username: str
         :param status: 录屏状态。 - RECORDING：录制中。 - REC_COMPLETED：录制完成。 - UPLOADING：上传中。 - UPLOAD_COMPLETED：上传完成。
@@ -72,6 +76,7 @@ class ListScreenRecordsRequest:
         self._limit = None
         self._offset = None
         self._desktop_id = None
+        self._desktop_names = None
         self._username = None
         self._status = None
         self._type = None
@@ -87,6 +92,8 @@ class ListScreenRecordsRequest:
             self.offset = offset
         if desktop_id is not None:
             self.desktop_id = desktop_id
+        if desktop_names is not None:
+            self.desktop_names = desktop_names
         if username is not None:
             self.username = username
         if status is not None:
@@ -167,6 +174,28 @@ class ListScreenRecordsRequest:
         :type desktop_id: str
         """
         self._desktop_id = desktop_id
+
+    @property
+    def desktop_names(self):
+        r"""Gets the desktop_names of this ListScreenRecordsRequest.
+
+        桌面名称列表，多个名称用英文逗号分割，最多支持100个桌面名称
+
+        :return: The desktop_names of this ListScreenRecordsRequest.
+        :rtype: str
+        """
+        return self._desktop_names
+
+    @desktop_names.setter
+    def desktop_names(self, desktop_names):
+        r"""Sets the desktop_names of this ListScreenRecordsRequest.
+
+        桌面名称列表，多个名称用英文逗号分割，最多支持100个桌面名称
+
+        :param desktop_names: The desktop_names of this ListScreenRecordsRequest.
+        :type desktop_names: str
+        """
+        self._desktop_names = desktop_names
 
     @property
     def username(self):

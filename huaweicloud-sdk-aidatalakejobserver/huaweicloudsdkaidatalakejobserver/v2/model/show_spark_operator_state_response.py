@@ -17,7 +17,7 @@ class ShowSparkOperatorStateResponse(SdkResponse):
 
     openapi_types = {
         'status': 'str',
-        'operator_info': 'object',
+        'operator_info': 'ShowSparkOperatorStateOperationInfo',
         'message': 'str',
         'create_time': 'int',
         'end_time': 'int'
@@ -38,8 +38,8 @@ class ShowSparkOperatorStateResponse(SdkResponse):
 
         :param status: **参数解释**：操作状态，用于标识异步操作的当前执行状态。 **取值范围**：   - RUNNING：运行中。   - FAILED：失败。   - SUCCESS：成功。
         :type status: str
-        :param operator_info: **参数解释**：操作详情描述。
-        :type operator_info: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :param operator_info: 
+        :type operator_info: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkOperatorStateOperationInfo`
         :param message: **参数解释**：操作描述信息，包含操作状态描述或失败时的错误信息。 **取值范围**：长度为0~1024个字符。
         :type message: str
         :param create_time: **参数解释**：操作创建时间，用于记录操作提交的时间。 **取值范围**：Unix时间戳，单位为毫秒，取值范围为0~9223372036854775807。
@@ -94,10 +94,8 @@ class ShowSparkOperatorStateResponse(SdkResponse):
     def operator_info(self):
         r"""Gets the operator_info of this ShowSparkOperatorStateResponse.
 
-        **参数解释**：操作详情描述。
-
         :return: The operator_info of this ShowSparkOperatorStateResponse.
-        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkOperatorStateOperationInfo`
         """
         return self._operator_info
 
@@ -105,10 +103,8 @@ class ShowSparkOperatorStateResponse(SdkResponse):
     def operator_info(self, operator_info):
         r"""Sets the operator_info of this ShowSparkOperatorStateResponse.
 
-        **参数解释**：操作详情描述。
-
         :param operator_info: The operator_info of this ShowSparkOperatorStateResponse.
-        :type operator_info: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :type operator_info: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkOperatorStateOperationInfo`
         """
         self._operator_info = operator_info
 

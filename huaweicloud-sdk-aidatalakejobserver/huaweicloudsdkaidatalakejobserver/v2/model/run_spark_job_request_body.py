@@ -17,7 +17,7 @@ class RunSparkJobRequestBody:
     openapi_types = {
         'name': 'str',
         'endpoint_name': 'str',
-        'job_config': 'object',
+        'job_config': 'SparkJobArtifact',
         'catalog_name': 'str',
         'job_agency': 'str',
         'resource_config': 'SparkResourceConfig',
@@ -53,8 +53,8 @@ class RunSparkJobRequestBody:
         :type name: str
         :param endpoint_name: **参数解释**：端点名称，用于指定Spark作业执行环境。 **约束限制**：不涉及。 **取值范围**：只能由英文小写字母、数字及中划线组成，以英文小写字母开头，以英文小写字母或数字结尾，且长度为1~63个字符。 **默认取值**：不涉及。
         :type endpoint_name: str
-        :param job_config: **参数解释**：作业配置参数，用于指定Spark作业的类型和执行参数。根据作业类型自动选择对应的参数结构：spark_jar_job对应SparkJarParameter，spark_python_job对应SparkPyParameter，spark_sql_scripting_job对应SparkSqlScriptParameter。 **约束限制**：不涉及。
-        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.SparkJobArtifact`
         :param catalog_name: **参数解释**：Catalog名称，用于指定作业使用的数据目录。 **约束限制**：不涉及。 **取值范围**：长度不超过128个字符。 **默认取值**：不涉及。
         :type catalog_name: str
         :param job_agency: **参数解释**：自定义委托名称，用于作业操作OBS对象、转储日志、访问DLI元数据等。 **约束限制**：不涉及。 **取值范围**：长度为1~64个字符。 **默认取值**：不涉及。
@@ -161,10 +161,8 @@ class RunSparkJobRequestBody:
     def job_config(self):
         r"""Gets the job_config of this RunSparkJobRequestBody.
 
-        **参数解释**：作业配置参数，用于指定Spark作业的类型和执行参数。根据作业类型自动选择对应的参数结构：spark_jar_job对应SparkJarParameter，spark_python_job对应SparkPyParameter，spark_sql_scripting_job对应SparkSqlScriptParameter。 **约束限制**：不涉及。
-
         :return: The job_config of this RunSparkJobRequestBody.
-        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.SparkJobArtifact`
         """
         return self._job_config
 
@@ -172,10 +170,8 @@ class RunSparkJobRequestBody:
     def job_config(self, job_config):
         r"""Sets the job_config of this RunSparkJobRequestBody.
 
-        **参数解释**：作业配置参数，用于指定Spark作业的类型和执行参数。根据作业类型自动选择对应的参数结构：spark_jar_job对应SparkJarParameter，spark_python_job对应SparkPyParameter，spark_sql_scripting_job对应SparkSqlScriptParameter。 **约束限制**：不涉及。
-
         :param job_config: The job_config of this RunSparkJobRequestBody.
-        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.SparkJobArtifact`
         """
         self._job_config = job_config
 

@@ -1,3 +1,471 @@
+# 3.1.212 2026-08-27
+
+### HuaweiCloud SDK BMS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowJobInfos**
+    - changes of response param
+      - `+ entities.server_id`
+      - `+ entities.nic_id`
+      - `+ entities.sub_jobs.entities.errorcode_message`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowQuotas**
+    - changes of response param
+      - `+ quotas.resources`
+      - `* quotas: object -> object<Quotas>`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListColdTableMetas`
+    - `ShowInstanceScheduleEvents`
+    - `SetInstanceScheduleEvents`
+    - `UpgradeConfiguration`
+    - `ShowTaurusDbAdvancedBackupPolicy`
+    - `UpdateTaurusDbAdvancedBackupPolicy`
+    - `BatchUpdateBackupPolicy`
+    - `CheckKernelUpgrade`
+    - `SetInstanceReadonlyStatus`
+    - `ShowKernelUpgradeCheckResult`
+    - `ClearOnlineDdlTaskTempTable`
+    - `StartOnlineDdlTask`
+    - `DeleteOnlineDdlTaskRecord`
+    - `DownloadOnlineDdlTaskLog`
+    - `ListOnlineDdlTaskRecords`
+    - `StopOnlineDdlTask`
+    - `ShowTaurusDbTxnProgress`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExpandGaussMySqlProxy**
+    - changes of request param
+      - `+ proxy_nodes_az_list`
+  - **ShrinkGaussMySqlProxy**
+    - changes of request param
+      - `+ node_ids`
+  - **SwitchGaussMySqlConfiguration**
+    - changes of request param
+      - `+ is_update_param_group_version`
+  - **CreateGaussMySqlProxy**
+    - changes of request param
+      - `+ proxy_nodes_az_list`
+      - `+ proxy_ip`
+  - **ListImmediateJobs**
+    - changes of response param
+      - `+ jobs.extend_fields`
+  - **ListDdlLogs**
+    - changes of request param
+      - `* start_time: optional -> required`
+      - `* end_time: optional -> required`
+  - **DownloadDdlLogs**
+    - changes of response param
+      - `* download_files.file_size: int32 -> int64`
+      - `* download_files.expire_time: string -> int64`
+  - **ShowInstanceBackups**
+    - changes of response param
+      - `+ backups.backup_mode`
+  - **CreateGaussMySqlInstance**
+    - changes of request param
+      - `+ enable_binlog`
+      - `+ volume_auto_expand`
+  - **ShowGaussMySqlBackupList**
+    - changes of response param
+      - `+ backups.backup_mode`
+      - `* backups: list<backups> -> list<Backups>`
+  - **ListGaussMySqlInstancesUnifyStatus**
+    - changes of response param
+      - `+ instances.eos_tag`
+  - **ShowGaussMySqlInstanceInfoUnifyStatus**
+    - changes of response param
+      - `+ instance.eos_tag`
+  - **ListGaussMySqlInstanceDetailInfoUnifyStatus**
+    - changes of response param
+      - `+ instances.eos_tag`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `ShowFilePathWhiteDetail`
+    - `ChangeFilePathWhiteDetail`
+    - `RunImageSynchronize`
+    - `BatchScanSwrImage`
+    - `ListServerlessAssetDetail`
+    - `ListServerlessAsset`
+    - `ListEventTopRisk`
+    - `ListSwrImageRepository`
+  - **ListContainerNodes**
+    - changes of request param
+      - `+ container_node`
+      - `+ version`
+    - changes of response param
+      - `+ data_list.is_container_node`
+      - `+ data_list.version`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListProtocolConfigs`
+    - `CreateProtocolConfig`
+    - `ShowProtocolConfig`
+    - `UpdateProtocolConfig`
+    - `DeleteProtocolConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LakeFormation
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateTable**
+    - changes of request param
+      - `+ create_open_table_format_input.create_paimon_table_input.schema.partition_keys`
+      - `+ create_open_table_format_input.create_paimon_table_input.schema.primary_keys`
+      - `- create_open_table_format_input.create_paimon_table_input.schema.partitionKeys`
+      - `- create_open_table_format_input.create_paimon_table_input.schema.primaryKeys`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchDrainPoolNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of response param
+      - `+ data.ascend.chip`
+      - `- data.ascend.ai_core`
+      - `- data.ascend.ai_cpu`
+      - `- data.ascend.type_alias`
+  - **ShowSwitchableFlavors**
+    - changes of response param
+      - `+ data.ascend.chip`
+      - `- data.ascend.ai_core`
+      - `- data.ascend.ai_cpu`
+      - `- data.ascend.type_alias`
+  - **StartNotebook**
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **StopNotebook**
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **ShowCluster**
+    - changes of response param
+      - `+ flavors.support_eni`
+      - `+ flavors.ascend.chip`
+      - `- flavors.ascend.ai_core`
+      - `- flavors.ascend.ai_cpu`
+      - `- flavors.ascend.type_alias`
+  - **ShowInferServiceCluster**
+    - changes of response param
+      - `- flavors.evs_sku_code`
+      - `- flavors.grow_support_type`
+      - `+ flavors.arch: enum value [arm64,X86_64]`
+      - `- flavors.arch: enum value [x86_64,aarch64]`
+      - `* flavors.billing: object<BillingInfo> -> object<BillingResource>`
+      - `* flavors.gpu: object<GPUInfo> -> object<GPUResource>`
+      - `* flavors: list<NotebookFlavor> -> list<InferFlavor>`
+  - **ListInferClusterFlavors**
+    - changes of response param
+      - `+ data.ascend.type_alias`
+  - **ShowTrainingJobFlavors**
+    - changes of response param
+      - `* flavors: list<FlavorResponse> -> list<FlavorResponseWithSupport>`
+  - **ListNotebooks**
+    - changes of request param
+      - `+ swr_path`
+      - `+ pool_name`
+      - `+ description`
+      - `+ ip`
+      - `+ username`
+    - changes of response param
+      - `+ data.user_vpc.nat_id`
+      - `+ data.user_vpc.eip_id`
+  - **CreateNotebook**
+    - changes of request param
+      - `+ public_network_config`
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **ListAllNotebooks**
+    - changes of request param
+      - `+ swr_path`
+      - `+ pool_name`
+      - `+ description`
+      - `+ ip`
+      - `+ username`
+    - changes of response param
+      - `+ data.user_vpc.nat_id`
+      - `+ data.user_vpc.eip_id`
+  - **ShowNotebook**
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **DeleteNotebook**
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **UpdateNotebook**
+    - changes of request param
+      - `+ public_network_config`
+    - changes of response param
+      - `+ user_vpc.nat_id`
+      - `+ user_vpc.eip_id`
+  - **ListAuthoringClusters**
+    - changes of response param
+      - `+ data.flavors.support_eni`
+      - `+ data.flavors.ascend.chip`
+      - `- data.flavors.ascend.ai_core`
+      - `- data.flavors.ascend.ai_cpu`
+      - `- data.flavors.ascend.type_alias`
+  - **ShowTrainingJobDetails**
+    - changes of response param
+      - `- tasks.task_resource.support_engines`
+      - `- tasks.task_resource.support_groups`
+  - **StopTrainingJob**
+    - changes of response param
+      - `- tasks.task_resource.support_engines`
+      - `- tasks.task_resource.support_groups`
+  - **CreateTrainingJob**
+    - changes of response param
+      - `- tasks.task_resource.support_engines`
+      - `- tasks.task_resource.support_groups`
+  - **ListTrainingJobs**
+    - changes of response param
+      - `- items.tasks.task_resource.support_engines`
+      - `- items.tasks.task_resource.support_groups`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListAgentInstances`
+    - `ListInstanceStatistics`
+    - `SaveImChannels`
+    - `ListImChannels`
+    - `DeleteImChannel`
+    - `ListInstanceModelGroups`
+    - `ApplyModelConfig`
+    - `RemoveModelConfig`
+    - `ListModelGroups`
+    - `CreateModelGroup`
+    - `ShowModelGroup`
+    - `UpdateModelGroup`
+    - `DeleteModelGroup`
+    - `BatchBindProviders`
+    - `ListModelGroupResources`
+    - `ListModelGroupProviders`
+    - `BatchDeleteProviders`
+    - `ListProviderTemplates`
+    - `VerifyProvider`
+    - `ListRemoteProviderModels`
+    - `ListProviders`
+    - `CreateProvider`
+    - `ShowProvider`
+    - `UpdateProvider`
+    - `DeleteProvider`
+    - `BatchCreateModel`
+    - `BatchDeleteModel`
+    - `ListModels`
+    - `ShowModel`
+    - `UpdateModel`
+    - `ListTenantUpgradeStrategies`
+    - `ExportTenantUpgradeStrategies`
+    - `ListApplyObjects`
+    - `UpdateStrategyApplyObjects`
+    - `CreateTenantUpgradeStrategy`
+    - `DeleteTenantUpgradeStrategy`
+    - `UpdateTenantUpgradeStrategy`
+    - `ListUpgradeTasks`
+    - `ListTaskApplyObjects`
+    - `CreateUpgradeScheduleTask`
+    - `DeleteUpgradeTask`
+    - `ShowUpgradeTaskDetail`
+    - `UpdateUpgradeTask`
+    - `ExecuteTriggerUpgrade`
+    - `ShowTenantVersionConfig`
+    - `ListTenantVersionConfig`
+    - `BatchCheckDesktopRejoinDomain`
+    - `ListDesktopStatisticsByVersion`
+    - `ListDesktopVersion`
+    - `ExportDesktopVersionList`
+    - `BatchUpdateDesktopDomain`
+    - `ExportHostsDetail`
+    - `ExportUserGroupsNew`
+    - `ResetSiteAuthConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExecuteScriptOrCommand**
+    - changes of request param
+      - `+ command`
+      - `+ command_type`
+  - **ExportDesktopListNew**
+    - changes of request param
+      - `+ computer_names`
+      - `+ include_pool`
+      - `+ pool_name`
+      - `+ pool_type`
+      - `+ pool_in_maintenance_mode`
+      - `+ pool_enterprise_project_id`
+  - **ListServersByHostId**
+    - changes of request param
+      - `+ sort_field`
+      - `+ sort_type`
+      - `+ limit`
+      - `+ offset`
+    - changes of response param
+      - `+ total`
+  - **UpdateScreenRecords**
+    - changes of response param
+      - `- result_desc`
+      - `- result_code`
+  - **ExportUserGroupUsersNew**
+    - changes of request param
+      - `+ user_names`
+  - **UpdateAuthConfig**
+    - changes of request param
+      - `+ login_captcha`
+    - changes of response param
+      - `+ login_captcha`
+  - **ExportDesktopUsageMetricNew**
+    - changes of request param
+      - `+ resource_id`
+  - **ListHostsDetail**
+    - changes of request param
+      - `+ sort_field`
+      - `+ sort_type`
+  - **ListUsersOfGroup**
+    - changes of request param
+      - `+ user_names`
+  - **ListAccessPolicyObjects**
+    - changes of response param
+      - `+ policy_objects_list.object_domain`
+  - **ListScreenRecords**
+    - changes of request param
+      - `+ desktop_names`
+  - **ListCerts**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListLoginRecordsNew**
+    - changes of request param
+      - `+ domain`
+    - changes of response param
+      - `+ records.desktop_id`
+  - **ListDesktops**
+    - changes of request param
+      - `+ domain_status`
+    - changes of response param
+      - `+ desktops.domain_status`
+  - **ListResourcePackages**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ complete_time`
+  - **ListDesktopUsageMetric**
+    - changes of request param
+      - `+ resource_id`
+  - **ListPoolDesktopsDetail**
+    - changes of request param
+      - `+ domain_status`
+    - changes of response param
+      - `+ pool_desktops.domain_status`
+      - `+ pool_desktops.agent_version`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.domain_status`
+      - `+ desktop.agent_version`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ user_id`
+      - `+ domain_status`
+      - `+ agent_version`
+    - changes of response param
+      - `+ desktops.domain_status`
+      - `+ desktops.agent_version`
+  - **ShowAuthConfig**
+    - changes of response param
+      - `+ login_captcha`
+  - **UpdateAuthMethodConfig**
+    - changes of request param
+      - `+ login_captcha`
+  - **ValidateConfig**
+    - changes of request param
+      - `+ login_captcha`
+  - **ListPoliciesOfPolicyGroup**
+    - changes of response param
+      - `+ policies.record_audit.reminder_frequency`
+  - **UpdatePoliciesOfPolicyGroup**
+    - changes of request param
+      - `+ policies.record_audit.reminder_frequency`
+    - changes of response param
+      - `+ policies.record_audit.reminder_frequency`
+  - **ListOriginalPolicyInfo**
+    - changes of response param
+      - `+ policies.record_audit.reminder_frequency`
+  - **ListPolicyGroup**
+    - changes of response param
+      - `- policy_groups.policies`
+      - `- policy_groups.targets`
+      - `* policy_groups: list<PolicyGroupForList> -> list<PolicyGroupForBaseList>`
+  - **CreatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.record_audit.reminder_frequency`
+  - **ListPolicyDetailInfoById**
+    - changes of response param
+      - `+ policy_group.policies.record_audit.reminder_frequency`
+  - **UpdatePolicyGroup**
+    - changes of request param
+      - `+ policy_group.policies.record_audit.reminder_frequency`
+  - **ListPolicyGroupInfo**
+    - changes of response param
+      - `+ policy_groups.policies.record_audit.reminder_frequency`
+
 # 3.1.211 2026-08-20
 
 ### HuaweiCloud SDK AIDataLakeJobServer

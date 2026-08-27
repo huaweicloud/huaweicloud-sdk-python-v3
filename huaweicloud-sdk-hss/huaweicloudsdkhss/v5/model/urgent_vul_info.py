@@ -65,7 +65,7 @@ class UrgentVulInfo:
         :type publish_time: int
         :param solution_detail: **参数解释**： 解决方案 **取值范围**： 字符长度0-65534位 
         :type solution_detail: str
-        :param description: **参数解释**： 漏洞描述 **取值范围**： 字符长度0-64位 
+        :param description: **参数解释**： 漏洞描述 **取值范围**： 字符长度0-2048位 
         :type description: str
         :param scan_status: **参数解释**： 漏洞扫描状态 **约束限制**: 不涉及 **取值范围**： - never_scan : 未扫描 - scanning : 扫描中 - finished : 扫描完成  **默认取值**: 不涉及 
         :type scan_status: str
@@ -277,7 +277,7 @@ class UrgentVulInfo:
     def description(self):
         r"""Gets the description of this UrgentVulInfo.
 
-        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-64位 
+        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-2048位 
 
         :return: The description of this UrgentVulInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class UrgentVulInfo:
     def description(self, description):
         r"""Sets the description of this UrgentVulInfo.
 
-        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-64位 
+        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-2048位 
 
         :param description: The description of this UrgentVulInfo.
         :type description: str

@@ -27,7 +27,8 @@ class Backups:
         'instance_id': 'str',
         'instance_name': 'str',
         'backup_level': 'str',
-        'description': 'str'
+        'description': 'str',
+        'backup_mode': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class Backups:
         'instance_id': 'instance_id',
         'instance_name': 'instance_name',
         'backup_level': 'backup_level',
-        'description': 'description'
+        'description': 'description',
+        'backup_mode': 'backup_mode'
     }
 
-    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, instance_name=None, backup_level=None, description=None):
+    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, instance_name=None, backup_level=None, description=None, backup_mode=None):
         r"""Backups
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class Backups:
         :type backup_level: str
         :param description: 备份文件描述信息。
         :type description: str
+        :param backup_mode: **参数解释**：  备份类型。  **取值范围**： - differential：差量备份。 - completed：全量备份。
+        :type backup_mode: str
         """
         
         
@@ -94,6 +98,7 @@ class Backups:
         self._instance_name = None
         self._backup_level = None
         self._description = None
+        self._backup_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -122,6 +127,8 @@ class Backups:
             self.backup_level = backup_level
         if description is not None:
             self.description = description
+        if backup_mode is not None:
+            self.backup_mode = backup_mode
 
     @property
     def id(self):
@@ -404,6 +411,28 @@ class Backups:
         :type description: str
         """
         self._description = description
+
+    @property
+    def backup_mode(self):
+        r"""Gets the backup_mode of this Backups.
+
+        **参数解释**：  备份类型。  **取值范围**： - differential：差量备份。 - completed：全量备份。
+
+        :return: The backup_mode of this Backups.
+        :rtype: str
+        """
+        return self._backup_mode
+
+    @backup_mode.setter
+    def backup_mode(self, backup_mode):
+        r"""Sets the backup_mode of this Backups.
+
+        **参数解释**：  备份类型。  **取值范围**： - differential：差量备份。 - completed：全量备份。
+
+        :param backup_mode: The backup_mode of this Backups.
+        :type backup_mode: str
+        """
+        self._backup_mode = backup_mode
 
     def to_dict(self):
         result = {}

@@ -18,6 +18,7 @@ class ListDesktopUsageMetricRequest:
         'start_time': 'str',
         'end_time': 'str',
         'resource_name': 'str',
+        'resource_id': 'str',
         'min_idle_days': 'int',
         'max_idle_days': 'int',
         'usage_min_hours': 'int',
@@ -33,6 +34,7 @@ class ListDesktopUsageMetricRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'resource_name': 'resource_name',
+        'resource_id': 'resource_id',
         'min_idle_days': 'min_idle_days',
         'max_idle_days': 'max_idle_days',
         'usage_min_hours': 'usage_min_hours',
@@ -44,7 +46,7 @@ class ListDesktopUsageMetricRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, start_time=None, end_time=None, resource_name=None, min_idle_days=None, max_idle_days=None, usage_min_hours=None, usage_max_hours=None, enterprise_project_id=None, sort_field=None, sort_type=None, offset=None, limit=None):
+    def __init__(self, start_time=None, end_time=None, resource_name=None, resource_id=None, min_idle_days=None, max_idle_days=None, usage_min_hours=None, usage_max_hours=None, enterprise_project_id=None, sort_field=None, sort_type=None, offset=None, limit=None):
         r"""ListDesktopUsageMetricRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ListDesktopUsageMetricRequest:
         :type end_time: str
         :param resource_name: 资源名称(模糊匹配)。
         :type resource_name: str
+        :param resource_id: 资源ID(精确匹配)。
+        :type resource_id: str
         :param min_idle_days: 最小空闲天数。
         :type min_idle_days: int
         :param max_idle_days: 最大空闲天数 min_idle_days、max_idle_days都非空时,max_idle_days必须大于等于min_idle_days否则可能查询不到数据
@@ -80,6 +84,7 @@ class ListDesktopUsageMetricRequest:
         self._start_time = None
         self._end_time = None
         self._resource_name = None
+        self._resource_id = None
         self._min_idle_days = None
         self._max_idle_days = None
         self._usage_min_hours = None
@@ -95,6 +100,8 @@ class ListDesktopUsageMetricRequest:
         self.end_time = end_time
         if resource_name is not None:
             self.resource_name = resource_name
+        if resource_id is not None:
+            self.resource_id = resource_id
         if min_idle_days is not None:
             self.min_idle_days = min_idle_days
         if max_idle_days is not None:
@@ -179,6 +186,28 @@ class ListDesktopUsageMetricRequest:
         :type resource_name: str
         """
         self._resource_name = resource_name
+
+    @property
+    def resource_id(self):
+        r"""Gets the resource_id of this ListDesktopUsageMetricRequest.
+
+        资源ID(精确匹配)。
+
+        :return: The resource_id of this ListDesktopUsageMetricRequest.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        r"""Sets the resource_id of this ListDesktopUsageMetricRequest.
+
+        资源ID(精确匹配)。
+
+        :param resource_id: The resource_id of this ListDesktopUsageMetricRequest.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     @property
     def min_idle_days(self):

@@ -22,7 +22,8 @@ class AuthMethodConfigRequest:
         'third_party_auth_config': 'ThirdPartyAuthConfig',
         'emergency_login_mode': 'str',
         'saml2_auth_config': 'Saml2AuthConfig',
-        'sms_login_enabled': 'bool'
+        'sms_login_enabled': 'bool',
+        'login_captcha': 'LoginCaptchaConfig'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class AuthMethodConfigRequest:
         'third_party_auth_config': 'third_party_auth_config',
         'emergency_login_mode': 'emergency_login_mode',
         'saml2_auth_config': 'saml2_auth_config',
-        'sms_login_enabled': 'sms_login_enabled'
+        'sms_login_enabled': 'sms_login_enabled',
+        'login_captcha': 'login_captcha'
     }
 
-    def __init__(self, id=None, is_multi_domain_authenticate_enabled=None, auth_type=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None, sms_login_enabled=None):
+    def __init__(self, id=None, is_multi_domain_authenticate_enabled=None, auth_type=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None, sms_login_enabled=None, login_captcha=None):
         r"""AuthMethodConfigRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class AuthMethodConfigRequest:
         :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
         :param sms_login_enabled: 短信验证码登录开关。
         :type sms_login_enabled: bool
+        :param login_captcha: 
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
         """
         
         
@@ -69,6 +73,7 @@ class AuthMethodConfigRequest:
         self._emergency_login_mode = None
         self._saml2_auth_config = None
         self._sms_login_enabled = None
+        self._login_captcha = None
         self.discriminator = None
 
         if id is not None:
@@ -87,6 +92,8 @@ class AuthMethodConfigRequest:
             self.saml2_auth_config = saml2_auth_config
         if sms_login_enabled is not None:
             self.sms_login_enabled = sms_login_enabled
+        if login_captcha is not None:
+            self.login_captcha = login_captcha
 
     @property
     def id(self):
@@ -247,6 +254,24 @@ class AuthMethodConfigRequest:
         :type sms_login_enabled: bool
         """
         self._sms_login_enabled = sms_login_enabled
+
+    @property
+    def login_captcha(self):
+        r"""Gets the login_captcha of this AuthMethodConfigRequest.
+
+        :return: The login_captcha of this AuthMethodConfigRequest.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        return self._login_captcha
+
+    @login_captcha.setter
+    def login_captcha(self, login_captcha):
+        r"""Sets the login_captcha of this AuthMethodConfigRequest.
+
+        :param login_captcha: The login_captcha of this AuthMethodConfigRequest.
+        :type login_captcha: :class:`huaweicloudsdkworkspace.v2.LoginCaptchaConfig`
+        """
+        self._login_captcha = login_captcha
 
     def to_dict(self):
         result = {}

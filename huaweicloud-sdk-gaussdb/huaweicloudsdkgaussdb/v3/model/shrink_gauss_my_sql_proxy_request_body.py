@@ -15,28 +15,35 @@ class ShrinkGaussMySqlProxyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'node_num': 'int'
+        'node_num': 'int',
+        'node_ids': 'list[str]'
     }
 
     attribute_map = {
-        'node_num': 'node_num'
+        'node_num': 'node_num',
+        'node_ids': 'node_ids'
     }
 
-    def __init__(self, node_num=None):
+    def __init__(self, node_num=None, node_ids=None):
         r"""ShrinkGaussMySqlProxyRequestBody
 
         The model defined in huaweicloud sdk
 
         :param node_num: 数据库代理节点缩容操作需要减少的节点数。  缩容的节点数的取值范围：1~30之间的整数。  限制条件：该实例的数据库代理节点的总数量小于等于32，大于等于2。
         :type node_num: int
+        :param node_ids: **参数解释**：  数据库代理节点的节点ID。  获取方式请参见[查询数据库代理信息列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlProxyList.html)。  **约束限制**：  不传该字段，将随机删除代理节点；传入该字段，将删除指定ID的代理节点。
+        :type node_ids: list[str]
         """
         
         
 
         self._node_num = None
+        self._node_ids = None
         self.discriminator = None
 
         self.node_num = node_num
+        if node_ids is not None:
+            self.node_ids = node_ids
 
     @property
     def node_num(self):
@@ -59,6 +66,28 @@ class ShrinkGaussMySqlProxyRequestBody:
         :type node_num: int
         """
         self._node_num = node_num
+
+    @property
+    def node_ids(self):
+        r"""Gets the node_ids of this ShrinkGaussMySqlProxyRequestBody.
+
+        **参数解释**：  数据库代理节点的节点ID。  获取方式请参见[查询数据库代理信息列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlProxyList.html)。  **约束限制**：  不传该字段，将随机删除代理节点；传入该字段，将删除指定ID的代理节点。
+
+        :return: The node_ids of this ShrinkGaussMySqlProxyRequestBody.
+        :rtype: list[str]
+        """
+        return self._node_ids
+
+    @node_ids.setter
+    def node_ids(self, node_ids):
+        r"""Sets the node_ids of this ShrinkGaussMySqlProxyRequestBody.
+
+        **参数解释**：  数据库代理节点的节点ID。  获取方式请参见[查询数据库代理信息列表](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlProxyList.html)。  **约束限制**：  不传该字段，将随机删除代理节点；传入该字段，将删除指定ID的代理节点。
+
+        :param node_ids: The node_ids of this ShrinkGaussMySqlProxyRequestBody.
+        :type node_ids: list[str]
+        """
+        self._node_ids = node_ids
 
     def to_dict(self):
         result = {}

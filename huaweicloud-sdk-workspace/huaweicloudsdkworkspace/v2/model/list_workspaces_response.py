@@ -49,7 +49,8 @@ class ListWorkspacesResponse(SdkResponse):
         'dc_vnc_ip': 'str',
         'is_authorized_install_agent': 'bool',
         'is_support_ipv6': 'bool',
-        'enable_user_create_snapshot': 'bool'
+        'enable_user_create_snapshot': 'bool',
+        'complete_time': 'str'
     }
 
     attribute_map = {
@@ -86,10 +87,11 @@ class ListWorkspacesResponse(SdkResponse):
         'dc_vnc_ip': 'dc_vnc_ip',
         'is_authorized_install_agent': 'is_authorized_install_agent',
         'is_support_ipv6': 'is_support_ipv6',
-        'enable_user_create_snapshot': 'enable_user_create_snapshot'
+        'enable_user_create_snapshot': 'enable_user_create_snapshot',
+        'complete_time': 'complete_time'
     }
 
-    def __init__(self, id=None, is_global=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, adn_conflict_network=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, vpc_config_infos=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, enterprise_project_id=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, site_configs=None, dc_vnc_ip=None, is_authorized_install_agent=None, is_support_ipv6=None, enable_user_create_snapshot=None):
+    def __init__(self, id=None, is_global=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, adn_conflict_network=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, vpc_config_infos=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, enterprise_project_id=None, is_send_email=None, authorized_collect_log=None, authorized_hda_upgrade=None, site_configs=None, dc_vnc_ip=None, is_authorized_install_agent=None, is_support_ipv6=None, enable_user_create_snapshot=None, complete_time=None):
         r"""ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
@@ -162,6 +164,8 @@ class ListWorkspacesResponse(SdkResponse):
         :type is_support_ipv6: bool
         :param enable_user_create_snapshot: 是否授权最终租户创建快照。
         :type enable_user_create_snapshot: bool
+        :param complete_time: 开户完成时间。
+        :type complete_time: str
         """
         
         super().__init__()
@@ -200,6 +204,7 @@ class ListWorkspacesResponse(SdkResponse):
         self._is_authorized_install_agent = None
         self._is_support_ipv6 = None
         self._enable_user_create_snapshot = None
+        self._complete_time = None
         self.discriminator = None
 
         if id is not None:
@@ -270,6 +275,8 @@ class ListWorkspacesResponse(SdkResponse):
             self.is_support_ipv6 = is_support_ipv6
         if enable_user_create_snapshot is not None:
             self.enable_user_create_snapshot = enable_user_create_snapshot
+        if complete_time is not None:
+            self.complete_time = complete_time
 
     @property
     def id(self):
@@ -1006,6 +1013,28 @@ class ListWorkspacesResponse(SdkResponse):
         :type enable_user_create_snapshot: bool
         """
         self._enable_user_create_snapshot = enable_user_create_snapshot
+
+    @property
+    def complete_time(self):
+        r"""Gets the complete_time of this ListWorkspacesResponse.
+
+        开户完成时间。
+
+        :return: The complete_time of this ListWorkspacesResponse.
+        :rtype: str
+        """
+        return self._complete_time
+
+    @complete_time.setter
+    def complete_time(self, complete_time):
+        r"""Sets the complete_time of this ListWorkspacesResponse.
+
+        开户完成时间。
+
+        :param complete_time: The complete_time of this ListWorkspacesResponse.
+        :type complete_time: str
+        """
+        self._complete_time = complete_time
 
     def to_dict(self):
         import warnings

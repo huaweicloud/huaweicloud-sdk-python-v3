@@ -16,7 +16,7 @@ class ListPolicyGroupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policy_groups': 'list[PolicyGroupForList]',
+        'policy_groups': 'list[PolicyGroupForBaseList]',
         'total_count': 'int'
     }
 
@@ -31,7 +31,7 @@ class ListPolicyGroupResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param policy_groups: 策略组。
-        :type policy_groups: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForList`]
+        :type policy_groups: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForBaseList`]
         :param total_count: 总数。
         :type total_count: int
         """
@@ -54,7 +54,7 @@ class ListPolicyGroupResponse(SdkResponse):
         策略组。
 
         :return: The policy_groups of this ListPolicyGroupResponse.
-        :rtype: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForList`]
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForBaseList`]
         """
         return self._policy_groups
 
@@ -65,7 +65,7 @@ class ListPolicyGroupResponse(SdkResponse):
         策略组。
 
         :param policy_groups: The policy_groups of this ListPolicyGroupResponse.
-        :type policy_groups: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForList`]
+        :type policy_groups: list[:class:`huaweicloudsdkworkspace.v2.PolicyGroupForBaseList`]
         """
         self._policy_groups = policy_groups
 

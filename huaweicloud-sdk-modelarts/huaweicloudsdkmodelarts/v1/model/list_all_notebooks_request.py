@@ -29,7 +29,12 @@ class ListAllNotebooksRequest:
         'image_id': 'str',
         'id': 'str',
         'billing': 'str',
-        'tags': 'str'
+        'tags': 'str',
+        'swr_path': 'str',
+        'pool_name': 'str',
+        'description': 'str',
+        'ip': 'str',
+        'username': 'str'
     }
 
     attribute_map = {
@@ -47,10 +52,15 @@ class ListAllNotebooksRequest:
         'image_id': 'image_id',
         'id': 'id',
         'billing': 'billing',
-        'tags': 'tags'
+        'tags': 'tags',
+        'swr_path': 'swr_path',
+        'pool_name': 'pool_name',
+        'description': 'description',
+        'ip': 'ip',
+        'username': 'username'
     }
 
-    def __init__(self, feature=None, limit=None, name=None, pool_id=None, offset=None, owner=None, sort_dir=None, sort_key=None, status=None, workspace_id=None, flavor=None, image_id=None, id=None, billing=None, tags=None):
+    def __init__(self, feature=None, limit=None, name=None, pool_id=None, offset=None, owner=None, sort_dir=None, sort_key=None, status=None, workspace_id=None, flavor=None, image_id=None, id=None, billing=None, tags=None, swr_path=None, pool_name=None, description=None, ip=None, username=None):
         r"""ListAllNotebooksRequest
 
         The model defined in huaweicloud sdk
@@ -75,7 +85,7 @@ class ListAllNotebooksRequest:
         :type status: str
         :param workspace_id: **参数解释**：工作空间ID。获取方法请参见[[查询工作空间列表](ListWorkspace.xml)](tag:hc,hk)。未创建工作空间时默认值为“0”，存在创建并使用的工作空间，以实际取值为准。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：0。
         :type workspace_id: str
-        :param flavor: **参数解释**：实例的机器规格。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        :param flavor: **参数解释**：实例的机器规格编码，支持模糊匹配查询。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不支持专属资源池的自定义规格查询。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
         :type flavor: str
         :param image_id: **参数解释**：待创建Notebook实例的镜像，需要指定镜像ID。ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。镜像的ID可通过调用[[查询支持的镜像列表](https://support.huaweicloud.com/api-modelarts/ListImage.html)](tag:hc)[[查询支持的镜像列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListImage.html)](tag:hk)接口获取。 **约束限制**：不涉及。 **取值范围**：调用[[查询支持的镜像列表](https://support.huaweicloud.com/api-modelarts/ListImage.html)](tag:hc)[[查询支持的镜像列表](https://support.huaweicloud.com/intl/zh-cn/api-modelarts/ListImage.html)](tag:hk)接口获取的合法镜像ID列表。 **默认取值**：不涉及。
         :type image_id: str
@@ -83,8 +93,18 @@ class ListAllNotebooksRequest:
         :type id: str
         :param billing: **参数解释**：实例计费类型。 **约束限制**：不涉及。 **取值范围**：枚举类型，取值如下： - COMPUTE：计算资源计费 - STORAGE：存储资源计费 - ALL：所有计费类型  **默认取值**：不涉及。
         :type billing: str
-        :param tags: **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/&#x3D;+-@特殊字符，且字符间以逗号或者竖划线分割。 **默认取值**：不涉及。
+        :param tags: **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/&#x3D;+-@特殊字符，且字符间以逗号或者竖划线分割。例：tag_key1|tag_value1,tag_key2|tag_value2。 **默认取值**：不涉及。
         :type tags: str
+        :param swr_path: **参数解释**：SWR镜像路径，该参数是针对返回参数NotebookResp中Image的swr_path属性进行模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制2048个字符，支持数字、大小写字母、下划线、中划线、点号、冒号和斜杠，0-2048个字符。 **默认取值**：不涉及。
+        :type swr_path: str
+        :param pool_name: **参数解释**：专属资源池名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-64字符，支持数字、大小写字母和中划线。 **默认取值**：不涉及。
+        :type pool_name: str
+        :param description: **参数解释**：实例描述信息，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符&lt;&gt;。 **默认取值**：不涉及。
+        :type description: str
+        :param ip: **参数解释**：节点IP。 **约束限制**：不涉及。 **取值范围**：正确的IPv4地址，暂不支持IPv6地址。 **默认取值**：不涉及。
+        :type ip: str
+        :param username: **参数解释**：实例创建用户名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
+        :type username: str
         """
         
         
@@ -104,6 +124,11 @@ class ListAllNotebooksRequest:
         self._id = None
         self._billing = None
         self._tags = None
+        self._swr_path = None
+        self._pool_name = None
+        self._description = None
+        self._ip = None
+        self._username = None
         self.discriminator = None
 
         if feature is not None:
@@ -136,6 +161,16 @@ class ListAllNotebooksRequest:
             self.billing = billing
         if tags is not None:
             self.tags = tags
+        if swr_path is not None:
+            self.swr_path = swr_path
+        if pool_name is not None:
+            self.pool_name = pool_name
+        if description is not None:
+            self.description = description
+        if ip is not None:
+            self.ip = ip
+        if username is not None:
+            self.username = username
 
     @property
     def feature(self):
@@ -361,7 +396,7 @@ class ListAllNotebooksRequest:
     def flavor(self):
         r"""Gets the flavor of this ListAllNotebooksRequest.
 
-        **参数解释**：实例的机器规格。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：实例的机器规格编码，支持模糊匹配查询。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不支持专属资源池的自定义规格查询。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
 
         :return: The flavor of this ListAllNotebooksRequest.
         :rtype: str
@@ -372,7 +407,7 @@ class ListAllNotebooksRequest:
     def flavor(self, flavor):
         r"""Sets the flavor of this ListAllNotebooksRequest.
 
-        **参数解释**：实例的机器规格。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
+        **参数解释**：实例的机器规格编码，支持模糊匹配查询。如下规格仅供参考，实际支持的规格以具体区域为准。 modelarts.vm.cpu.2u：Intel CPU通用规格，用于快速数据探索和实验。 modelarts.vm.cpu.8u：Intel CPU算力增强型，适用于密集计算场景下运算。 **约束限制**：不支持专属资源池的自定义规格查询。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
 
         :param flavor: The flavor of this ListAllNotebooksRequest.
         :type flavor: str
@@ -449,7 +484,7 @@ class ListAllNotebooksRequest:
     def tags(self):
         r"""Gets the tags of this ListAllNotebooksRequest.
 
-        **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/=+-@特殊字符，且字符间以逗号或者竖划线分割。 **默认取值**：不涉及。
+        **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/=+-@特殊字符，且字符间以逗号或者竖划线分割。例：tag_key1|tag_value1,tag_key2|tag_value2。 **默认取值**：不涉及。
 
         :return: The tags of this ListAllNotebooksRequest.
         :rtype: str
@@ -460,12 +495,122 @@ class ListAllNotebooksRequest:
     def tags(self, tags):
         r"""Sets the tags of this ListAllNotebooksRequest.
 
-        **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/=+-@特殊字符，且字符间以逗号或者竖划线分割。 **默认取值**：不涉及。
+        **参数解释**：实例标签信息。 **约束限制**：不涉及。 **取值范围**：不以逗号，竖划线开头，不以逗号结尾，不出现连续的竖划线和逗号，允许中文、西文、葡文等语言以及空格_.:/=+-@特殊字符，且字符间以逗号或者竖划线分割。例：tag_key1|tag_value1,tag_key2|tag_value2。 **默认取值**：不涉及。
 
         :param tags: The tags of this ListAllNotebooksRequest.
         :type tags: str
         """
         self._tags = tags
+
+    @property
+    def swr_path(self):
+        r"""Gets the swr_path of this ListAllNotebooksRequest.
+
+        **参数解释**：SWR镜像路径，该参数是针对返回参数NotebookResp中Image的swr_path属性进行模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制2048个字符，支持数字、大小写字母、下划线、中划线、点号、冒号和斜杠，0-2048个字符。 **默认取值**：不涉及。
+
+        :return: The swr_path of this ListAllNotebooksRequest.
+        :rtype: str
+        """
+        return self._swr_path
+
+    @swr_path.setter
+    def swr_path(self, swr_path):
+        r"""Sets the swr_path of this ListAllNotebooksRequest.
+
+        **参数解释**：SWR镜像路径，该参数是针对返回参数NotebookResp中Image的swr_path属性进行模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制2048个字符，支持数字、大小写字母、下划线、中划线、点号、冒号和斜杠，0-2048个字符。 **默认取值**：不涉及。
+
+        :param swr_path: The swr_path of this ListAllNotebooksRequest.
+        :type swr_path: str
+        """
+        self._swr_path = swr_path
+
+    @property
+    def pool_name(self):
+        r"""Gets the pool_name of this ListAllNotebooksRequest.
+
+        **参数解释**：专属资源池名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-64字符，支持数字、大小写字母和中划线。 **默认取值**：不涉及。
+
+        :return: The pool_name of this ListAllNotebooksRequest.
+        :rtype: str
+        """
+        return self._pool_name
+
+    @pool_name.setter
+    def pool_name(self, pool_name):
+        r"""Sets the pool_name of this ListAllNotebooksRequest.
+
+        **参数解释**：专属资源池名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-64字符，支持数字、大小写字母和中划线。 **默认取值**：不涉及。
+
+        :param pool_name: The pool_name of this ListAllNotebooksRequest.
+        :type pool_name: str
+        """
+        self._pool_name = pool_name
+
+    @property
+    def description(self):
+        r"""Gets the description of this ListAllNotebooksRequest.
+
+        **参数解释**：实例描述信息，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>。 **默认取值**：不涉及。
+
+        :return: The description of this ListAllNotebooksRequest.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this ListAllNotebooksRequest.
+
+        **参数解释**：实例描述信息，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制为512字符，不可包含特殊字符<>。 **默认取值**：不涉及。
+
+        :param description: The description of this ListAllNotebooksRequest.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def ip(self):
+        r"""Gets the ip of this ListAllNotebooksRequest.
+
+        **参数解释**：节点IP。 **约束限制**：不涉及。 **取值范围**：正确的IPv4地址，暂不支持IPv6地址。 **默认取值**：不涉及。
+
+        :return: The ip of this ListAllNotebooksRequest.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        r"""Sets the ip of this ListAllNotebooksRequest.
+
+        **参数解释**：节点IP。 **约束限制**：不涉及。 **取值范围**：正确的IPv4地址，暂不支持IPv6地址。 **默认取值**：不涉及。
+
+        :param ip: The ip of this ListAllNotebooksRequest.
+        :type ip: str
+        """
+        self._ip = ip
+
+    @property
+    def username(self):
+        r"""Gets the username of this ListAllNotebooksRequest.
+
+        **参数解释**：实例创建用户名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
+
+        :return: The username of this ListAllNotebooksRequest.
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        r"""Sets the username of this ListAllNotebooksRequest.
+
+        **参数解释**：实例创建用户名称，支持模糊匹配查询。 **约束限制**：不涉及。 **取值范围**：长度限制1-256字符，支持数字、大小写字母、小数点、下划线或中划线。 **默认取值**：不涉及。
+
+        :param username: The username of this ListAllNotebooksRequest.
+        :type username: str
+        """
+        self._username = username
 
     def to_dict(self):
         result = {}

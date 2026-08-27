@@ -40,7 +40,8 @@ class MysqlInstanceListInfoUnifyStatus:
         'time_zone': 'str',
         'charge_info': 'MysqlChargeInfo',
         'dedicated_resource_id': 'str',
-        'tags': 'list[InstanceTagItem]'
+        'tags': 'list[InstanceTagItem]',
+        'eos_tag': 'bool'
     }
 
     attribute_map = {
@@ -69,10 +70,11 @@ class MysqlInstanceListInfoUnifyStatus:
         'time_zone': 'time_zone',
         'charge_info': 'charge_info',
         'dedicated_resource_id': 'dedicated_resource_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'eos_tag': 'eos_tag'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, proxy_ips=None, readonly_private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, proxy_ips=None, readonly_private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None, eos_tag=None):
         r"""MysqlInstanceListInfoUnifyStatus
 
         The model defined in huaweicloud sdk
@@ -129,6 +131,8 @@ class MysqlInstanceListInfoUnifyStatus:
         :type dedicated_resource_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.InstanceTagItem`]
+        :param eos_tag: **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+        :type eos_tag: bool
         """
         
         
@@ -159,6 +163,7 @@ class MysqlInstanceListInfoUnifyStatus:
         self._charge_info = None
         self._dedicated_resource_id = None
         self._tags = None
+        self._eos_tag = None
         self.discriminator = None
 
         self.id = id
@@ -211,6 +216,8 @@ class MysqlInstanceListInfoUnifyStatus:
             self.dedicated_resource_id = dedicated_resource_id
         if tags is not None:
             self.tags = tags
+        if eos_tag is not None:
+            self.eos_tag = eos_tag
 
     @property
     def id(self):
@@ -763,6 +770,28 @@ class MysqlInstanceListInfoUnifyStatus:
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.InstanceTagItem`]
         """
         self._tags = tags
+
+    @property
+    def eos_tag(self):
+        r"""Gets the eos_tag of this MysqlInstanceListInfoUnifyStatus.
+
+        **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+
+        :return: The eos_tag of this MysqlInstanceListInfoUnifyStatus.
+        :rtype: bool
+        """
+        return self._eos_tag
+
+    @eos_tag.setter
+    def eos_tag(self, eos_tag):
+        r"""Sets the eos_tag of this MysqlInstanceListInfoUnifyStatus.
+
+        **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+
+        :param eos_tag: The eos_tag of this MysqlInstanceListInfoUnifyStatus.
+        :type eos_tag: bool
+        """
+        self._eos_tag = eos_tag
 
     def to_dict(self):
         result = {}

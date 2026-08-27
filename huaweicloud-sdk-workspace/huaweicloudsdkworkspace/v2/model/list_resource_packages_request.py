@@ -15,29 +15,43 @@ class ListResourcePackagesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_spec_code': 'str'
+        'resource_spec_code': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
-        'resource_spec_code': 'resource_spec_code'
+        'resource_spec_code': 'resource_spec_code',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, resource_spec_code=None):
+    def __init__(self, resource_spec_code=None, limit=None, offset=None):
         r"""ListResourcePackagesRequest
 
         The model defined in huaweicloud sdk
 
         :param resource_spec_code: 资源包的资源规格编码。
         :type resource_spec_code: str
+        :param limit: 每页显示的数量。
+        :type limit: int
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始。
+        :type offset: int
         """
         
         
 
         self._resource_spec_code = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def resource_spec_code(self):
@@ -60,6 +74,50 @@ class ListResourcePackagesRequest:
         :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListResourcePackagesRequest.
+
+        每页显示的数量。
+
+        :return: The limit of this ListResourcePackagesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListResourcePackagesRequest.
+
+        每页显示的数量。
+
+        :param limit: The limit of this ListResourcePackagesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListResourcePackagesRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :return: The offset of this ListResourcePackagesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListResourcePackagesRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始。
+
+        :param offset: The offset of this ListResourcePackagesRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

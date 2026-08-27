@@ -16,15 +16,17 @@ class EnlargeProxyRequest:
 
     openapi_types = {
         'node_num': 'int',
-        'proxy_id': 'str'
+        'proxy_id': 'str',
+        'proxy_nodes_az_list': 'list[str]'
     }
 
     attribute_map = {
         'node_num': 'node_num',
-        'proxy_id': 'proxy_id'
+        'proxy_id': 'proxy_id',
+        'proxy_nodes_az_list': 'proxy_nodes_az_list'
     }
 
-    def __init__(self, node_num=None, proxy_id=None):
+    def __init__(self, node_num=None, proxy_id=None, proxy_nodes_az_list=None):
         r"""EnlargeProxyRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +35,22 @@ class EnlargeProxyRequest:
         :type node_num: int
         :param proxy_id: 数据库代理ID。  如果实例只开启了一个代理，可不传该参数；如果实例开启了多个代理，则必须指定一个数据库代理，扩容新的代理节点。
         :type proxy_id: str
+        :param proxy_nodes_az_list: **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+        :type proxy_nodes_az_list: list[str]
         """
         
         
 
         self._node_num = None
         self._proxy_id = None
+        self._proxy_nodes_az_list = None
         self.discriminator = None
 
         self.node_num = node_num
         if proxy_id is not None:
             self.proxy_id = proxy_id
+        if proxy_nodes_az_list is not None:
+            self.proxy_nodes_az_list = proxy_nodes_az_list
 
     @property
     def node_num(self):
@@ -88,6 +95,28 @@ class EnlargeProxyRequest:
         :type proxy_id: str
         """
         self._proxy_id = proxy_id
+
+    @property
+    def proxy_nodes_az_list(self):
+        r"""Gets the proxy_nodes_az_list of this EnlargeProxyRequest.
+
+        **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+
+        :return: The proxy_nodes_az_list of this EnlargeProxyRequest.
+        :rtype: list[str]
+        """
+        return self._proxy_nodes_az_list
+
+    @proxy_nodes_az_list.setter
+    def proxy_nodes_az_list(self, proxy_nodes_az_list):
+        r"""Sets the proxy_nodes_az_list of this EnlargeProxyRequest.
+
+        **参数解释**：  数据库代理节点的可用区设置。  **约束限制**：  不传该字段，代理节点可用区将随机设置，优先与数据库节点可用区保持一致；传入该字段，代理节点将设置在指定可用区。
+
+        :param proxy_nodes_az_list: The proxy_nodes_az_list of this EnlargeProxyRequest.
+        :type proxy_nodes_az_list: list[str]
+        """
+        self._proxy_nodes_az_list = proxy_nodes_az_list
 
     def to_dict(self):
         result = {}

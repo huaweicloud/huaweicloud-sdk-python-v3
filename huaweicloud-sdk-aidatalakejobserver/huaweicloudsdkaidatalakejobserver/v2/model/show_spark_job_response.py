@@ -24,7 +24,7 @@ class ShowSparkJobResponse(SdkResponse):
         'job_agency': 'str',
         'state': 'str',
         'state_message': 'str',
-        'job_config': 'object',
+        'job_config': 'ShowSparkJobArtifactResponse',
         'resource_config': 'ShowSparkResourceConfigResponse',
         'restore_strategy': 'ShowSparkRestoreStrategyResponse',
         'spark_config': 'dict(str, str)',
@@ -86,8 +86,8 @@ class ShowSparkJobResponse(SdkResponse):
         :type state: str
         :param state_message: **参数解释**：作业状态消息，当作业异常结束时显示相关信息。 **取值范围**：长度为0~512个字符。
         :type state_message: str
-        :param job_config: **参数解释**：作业配置信息，包含作业类型、入口参数、依赖包等信息。
-        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :param job_config: 
+        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkJobArtifactResponse`
         :param resource_config: 
         :type resource_config: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkResourceConfigResponse`
         :param restore_strategy: 
@@ -367,10 +367,8 @@ class ShowSparkJobResponse(SdkResponse):
     def job_config(self):
         r"""Gets the job_config of this ShowSparkJobResponse.
 
-        **参数解释**：作业配置信息，包含作业类型、入口参数、依赖包等信息。
-
         :return: The job_config of this ShowSparkJobResponse.
-        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :rtype: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkJobArtifactResponse`
         """
         return self._job_config
 
@@ -378,10 +376,8 @@ class ShowSparkJobResponse(SdkResponse):
     def job_config(self, job_config):
         r"""Sets the job_config of this ShowSparkJobResponse.
 
-        **参数解释**：作业配置信息，包含作业类型、入口参数、依赖包等信息。
-
         :param job_config: The job_config of this ShowSparkJobResponse.
-        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.object`
+        :type job_config: :class:`huaweicloudsdkaidatalakejobserver.v2.ShowSparkJobArtifactResponse`
         """
         self._job_config = job_config
 

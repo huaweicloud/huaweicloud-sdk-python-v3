@@ -350,6 +350,7 @@ class TestMetadataCredentials:
         assert credentials.sk == "sk"
         assert credentials.security_token == "st"
         assert credentials._expire_at == _EXPECTED_EXPIRE_AT
+        assert credentials._expired_at == _EXPECTED_EXPIRE_AT
         assert credentials.metadata_accessor is not None
 
     @responses.activate

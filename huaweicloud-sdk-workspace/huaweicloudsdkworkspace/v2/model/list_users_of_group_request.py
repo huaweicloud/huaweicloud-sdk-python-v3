@@ -16,6 +16,7 @@ class ListUsersOfGroupRequest:
 
     openapi_types = {
         'user_name': 'str',
+        'user_names': 'list[str]',
         'group_id': 'str',
         'description': 'str',
         'active_type': 'str',
@@ -26,6 +27,7 @@ class ListUsersOfGroupRequest:
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_names': 'user_names',
         'group_id': 'group_id',
         'description': 'description',
         'active_type': 'active_type',
@@ -34,13 +36,15 @@ class ListUsersOfGroupRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, user_name=None, group_id=None, description=None, active_type=None, enterprise_project_id=None, limit=None, offset=None):
+    def __init__(self, user_name=None, user_names=None, group_id=None, description=None, active_type=None, enterprise_project_id=None, limit=None, offset=None):
         r"""ListUsersOfGroupRequest
 
         The model defined in huaweicloud sdk
 
         :param user_name: 用户名支持模糊查询。
         :type user_name: str
+        :param user_names: 用户名列表，支持多用户名查询。
+        :type user_names: list[str]
         :param group_id: 用户组ID。
         :type group_id: str
         :param description: 用户描述支持模糊查询。
@@ -58,6 +62,7 @@ class ListUsersOfGroupRequest:
         
 
         self._user_name = None
+        self._user_names = None
         self._group_id = None
         self._description = None
         self._active_type = None
@@ -68,6 +73,8 @@ class ListUsersOfGroupRequest:
 
         if user_name is not None:
             self.user_name = user_name
+        if user_names is not None:
+            self.user_names = user_names
         self.group_id = group_id
         if description is not None:
             self.description = description
@@ -101,6 +108,28 @@ class ListUsersOfGroupRequest:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_names(self):
+        r"""Gets the user_names of this ListUsersOfGroupRequest.
+
+        用户名列表，支持多用户名查询。
+
+        :return: The user_names of this ListUsersOfGroupRequest.
+        :rtype: list[str]
+        """
+        return self._user_names
+
+    @user_names.setter
+    def user_names(self, user_names):
+        r"""Sets the user_names of this ListUsersOfGroupRequest.
+
+        用户名列表，支持多用户名查询。
+
+        :param user_names: The user_names of this ListUsersOfGroupRequest.
+        :type user_names: list[str]
+        """
+        self._user_names = user_names
 
     @property
     def group_id(self):

@@ -21,6 +21,8 @@ class ExecuteScriptOrCommandReq:
         'gray_fail_threshold': 'int',
         'resource_ids': 'list[str]',
         'script_ids': 'list[str]',
+        'command': 'str',
+        'command_type': 'str',
         'execution_timeout': 'int'
     }
 
@@ -31,10 +33,12 @@ class ExecuteScriptOrCommandReq:
         'gray_fail_threshold': 'gray_fail_threshold',
         'resource_ids': 'resource_ids',
         'script_ids': 'script_ids',
+        'command': 'command',
+        'command_type': 'command_type',
         'execution_timeout': 'execution_timeout'
     }
 
-    def __init__(self, gray_count=None, resource_type=None, gray_resource_ids=None, gray_fail_threshold=None, resource_ids=None, script_ids=None, execution_timeout=None):
+    def __init__(self, gray_count=None, resource_type=None, gray_resource_ids=None, gray_fail_threshold=None, resource_ids=None, script_ids=None, command=None, command_type=None, execution_timeout=None):
         r"""ExecuteScriptOrCommandReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ExecuteScriptOrCommandReq:
         :type resource_ids: list[str]
         :param script_ids: 执行的脚本列表。
         :type script_ids: list[str]
+        :param command: 执行的命令行，与script_ids二选一。
+        :type command: str
+        :param command_type: 命令行的类型（POWERSHELL，BAT，SHELL）。
+        :type command_type: str
         :param execution_timeout: 执行脚本的超时时间，单位分钟。
         :type execution_timeout: int
         """
@@ -63,6 +71,8 @@ class ExecuteScriptOrCommandReq:
         self._gray_fail_threshold = None
         self._resource_ids = None
         self._script_ids = None
+        self._command = None
+        self._command_type = None
         self._execution_timeout = None
         self.discriminator = None
 
@@ -78,6 +88,10 @@ class ExecuteScriptOrCommandReq:
             self.resource_ids = resource_ids
         if script_ids is not None:
             self.script_ids = script_ids
+        if command is not None:
+            self.command = command
+        if command_type is not None:
+            self.command_type = command_type
         if execution_timeout is not None:
             self.execution_timeout = execution_timeout
 
@@ -212,6 +226,50 @@ class ExecuteScriptOrCommandReq:
         :type script_ids: list[str]
         """
         self._script_ids = script_ids
+
+    @property
+    def command(self):
+        r"""Gets the command of this ExecuteScriptOrCommandReq.
+
+        执行的命令行，与script_ids二选一。
+
+        :return: The command of this ExecuteScriptOrCommandReq.
+        :rtype: str
+        """
+        return self._command
+
+    @command.setter
+    def command(self, command):
+        r"""Sets the command of this ExecuteScriptOrCommandReq.
+
+        执行的命令行，与script_ids二选一。
+
+        :param command: The command of this ExecuteScriptOrCommandReq.
+        :type command: str
+        """
+        self._command = command
+
+    @property
+    def command_type(self):
+        r"""Gets the command_type of this ExecuteScriptOrCommandReq.
+
+        命令行的类型（POWERSHELL，BAT，SHELL）。
+
+        :return: The command_type of this ExecuteScriptOrCommandReq.
+        :rtype: str
+        """
+        return self._command_type
+
+    @command_type.setter
+    def command_type(self, command_type):
+        r"""Sets the command_type of this ExecuteScriptOrCommandReq.
+
+        命令行的类型（POWERSHELL，BAT，SHELL）。
+
+        :param command_type: The command_type of this ExecuteScriptOrCommandReq.
+        :type command_type: str
+        """
+        self._command_type = command_type
 
     @property
     def execution_timeout(self):

@@ -25,7 +25,7 @@ class ShowInferServiceClusterResponse(SdkResponse):
         'project_id': 'str',
         'create_at': 'int',
         'update_at': 'int',
-        'flavors': 'list[NotebookFlavor]',
+        'flavors': 'list[InferFlavor]',
         'pool_type': 'str',
         'physical_pool_id': 'str'
     }
@@ -69,7 +69,7 @@ class ShowInferServiceClusterResponse(SdkResponse):
         :param update_at: **参数解释：** 资源池最后更新的时间，UTC毫秒。 **取值范围：** 不涉及。
         :type update_at: int
         :param flavors: **参数解释：** 当前专属池支持的规格。
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
         :param pool_type: **参数解释：** 资源池类型。 **取值范围：** - LOGICAL ：逻辑池。 - PHYSICAL ：物理池。
         :type pool_type: str
         :param physical_pool_id: **参数解释：** 物理资源池ID，逻辑子池对应的父池ID。 **取值范围：** 不涉及。
@@ -322,7 +322,7 @@ class ShowInferServiceClusterResponse(SdkResponse):
         **参数解释：** 当前专属池支持的规格。
 
         :return: The flavors of this ShowInferServiceClusterResponse.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
         """
         return self._flavors
 
@@ -333,7 +333,7 @@ class ShowInferServiceClusterResponse(SdkResponse):
         **参数解释：** 当前专属池支持的规格。
 
         :param flavors: The flavors of this ShowInferServiceClusterResponse.
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.NotebookFlavor`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.InferFlavor`]
         """
         self._flavors = flavors
 

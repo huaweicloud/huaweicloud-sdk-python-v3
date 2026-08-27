@@ -16,29 +16,36 @@ class ListServersByHostIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'servers': 'list[ListServersRspServers]'
+        'servers': 'list[ListServersRspServers]',
+        'total': 'int'
     }
 
     attribute_map = {
-        'servers': 'servers'
+        'servers': 'servers',
+        'total': 'total'
     }
 
-    def __init__(self, servers=None):
+    def __init__(self, servers=None, total=None):
         r"""ListServersByHostIdResponse
 
         The model defined in huaweicloud sdk
 
         :param servers: 计算机列表。
         :type servers: list[:class:`huaweicloudsdkworkspace.v2.ListServersRspServers`]
+        :param total: 计算机实例总数。
+        :type total: int
         """
         
         super().__init__()
 
         self._servers = None
+        self._total = None
         self.discriminator = None
 
         if servers is not None:
             self.servers = servers
+        if total is not None:
+            self.total = total
 
     @property
     def servers(self):
@@ -61,6 +68,28 @@ class ListServersByHostIdResponse(SdkResponse):
         :type servers: list[:class:`huaweicloudsdkworkspace.v2.ListServersRspServers`]
         """
         self._servers = servers
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListServersByHostIdResponse.
+
+        计算机实例总数。
+
+        :return: The total of this ListServersByHostIdResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListServersByHostIdResponse.
+
+        计算机实例总数。
+
+        :param total: The total of this ListServersByHostIdResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

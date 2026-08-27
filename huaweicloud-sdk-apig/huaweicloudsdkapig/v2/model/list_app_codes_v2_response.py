@@ -36,7 +36,7 @@ class ListAppCodesV2Response(SdkResponse):
         :type size: int
         :param total: 满足条件的记录数
         :type total: int
-        :param app_codes: App Code列表
+        :param app_codes: APP Code列表
         :type app_codes: list[:class:`huaweicloudsdkapig.v2.AppCodeBaseInfo`]
         """
         
@@ -100,7 +100,7 @@ class ListAppCodesV2Response(SdkResponse):
     def app_codes(self):
         r"""Gets the app_codes of this ListAppCodesV2Response.
 
-        App Code列表
+        APP Code列表
 
         :return: The app_codes of this ListAppCodesV2Response.
         :rtype: list[:class:`huaweicloudsdkapig.v2.AppCodeBaseInfo`]
@@ -111,7 +111,7 @@ class ListAppCodesV2Response(SdkResponse):
     def app_codes(self, app_codes):
         r"""Sets the app_codes of this ListAppCodesV2Response.
 
-        App Code列表
+        APP Code列表
 
         :param app_codes: The app_codes of this ListAppCodesV2Response.
         :type app_codes: list[:class:`huaweicloudsdkapig.v2.AppCodeBaseInfo`]

@@ -17,7 +17,7 @@ class ShowTrainingJobFlavorsResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'flavors': 'list[FlavorResponse]'
+        'flavors': 'list[FlavorResponseWithSupport]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ShowTrainingJobFlavorsResponse(SdkResponse):
         :param total_count: 训练作业资源规格总数。
         :type total_count: int
         :param flavors: 训练作业资源规格列表。
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponse`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponseWithSupport`]
         """
         
         super().__init__()
@@ -76,7 +76,7 @@ class ShowTrainingJobFlavorsResponse(SdkResponse):
         训练作业资源规格列表。
 
         :return: The flavors of this ShowTrainingJobFlavorsResponse.
-        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponse`]
+        :rtype: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponseWithSupport`]
         """
         return self._flavors
 
@@ -87,7 +87,7 @@ class ShowTrainingJobFlavorsResponse(SdkResponse):
         训练作业资源规格列表。
 
         :param flavors: The flavors of this ShowTrainingJobFlavorsResponse.
-        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponse`]
+        :type flavors: list[:class:`huaweicloudsdkmodelarts.v1.FlavorResponseWithSupport`]
         """
         self._flavors = flavors
 

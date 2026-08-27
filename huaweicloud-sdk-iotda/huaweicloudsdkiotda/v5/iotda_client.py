@@ -9577,6 +9577,347 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def create_protocol_config(self, request):
+        r"""创建泛协议配置
+
+        提供创建泛协议配置的功能，仅企业版白名单支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateProtocolConfig
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateProtocolConfigRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateProtocolConfigResponse`
+        """
+        http_info = self._create_protocol_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_protocol_config_invoker(self, request):
+        http_info = self._create_protocol_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_protocol_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/protocol-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProtocolConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_protocol_config(self, request):
+        r"""删除泛协议配置
+
+        提供删除泛协议配置的功能，仅企业版白名单支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteProtocolConfig
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteProtocolConfigRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteProtocolConfigResponse`
+        """
+        http_info = self._delete_protocol_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_protocol_config_invoker(self, request):
+        http_info = self._delete_protocol_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_protocol_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/protocol-configs/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtocolConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'protocol_id' in local_var_params:
+            path_params['protocol_id'] = local_var_params['protocol_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_protocol_configs(self, request):
+        r"""查询泛协议配置列表
+
+        提供查询泛协议配置列表的功能，仅企业版白名单支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProtocolConfigs
+        :type request: :class:`huaweicloudsdkiotda.v5.ListProtocolConfigsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListProtocolConfigsResponse`
+        """
+        http_info = self._list_protocol_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_protocol_configs_invoker(self, request):
+        http_info = self._list_protocol_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protocol_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/protocol-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtocolConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_protocol_config(self, request):
+        r"""查询泛协议配置详情
+
+        提供查询泛协议配置详情的功能，仅企业版白名单支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowProtocolConfig
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowProtocolConfigRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowProtocolConfigResponse`
+        """
+        http_info = self._show_protocol_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_protocol_config_invoker(self, request):
+        http_info = self._show_protocol_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_protocol_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/protocol-configs/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProtocolConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'protocol_id' in local_var_params:
+            path_params['protocol_id'] = local_var_params['protocol_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_protocol_config(self, request):
+        r"""更新泛协议配置
+
+        提供更新泛协议配置的功能，仅企业版白名单支持。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateProtocolConfig
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateProtocolConfigRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateProtocolConfigResponse`
+        """
+        http_info = self._update_protocol_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_protocol_config_invoker(self, request):
+        http_info = self._update_protocol_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_protocol_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/protocol-configs/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProtocolConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'protocol_id' in local_var_params:
+            path_params['protocol_id'] = local_var_params['protocol_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_provisioning_template(self, request):
         r"""创建预调配模板
 

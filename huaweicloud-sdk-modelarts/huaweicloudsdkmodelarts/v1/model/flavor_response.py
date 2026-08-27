@@ -18,8 +18,6 @@ class FlavorResponse:
         'pool_id': 'str',
         'flavor_id': 'str',
         'flavor_name': 'str',
-        'support_engines': 'str',
-        'support_groups': 'str',
         'max_num': 'int',
         'flavor_type': 'str',
         'billing': 'BillingInfo',
@@ -31,8 +29,6 @@ class FlavorResponse:
         'pool_id': 'pool_id',
         'flavor_id': 'flavor_id',
         'flavor_name': 'flavor_name',
-        'support_engines': 'support_engines',
-        'support_groups': 'support_groups',
         'max_num': 'max_num',
         'flavor_type': 'flavor_type',
         'billing': 'billing',
@@ -40,7 +36,7 @@ class FlavorResponse:
         'attributes': 'attributes'
     }
 
-    def __init__(self, pool_id=None, flavor_id=None, flavor_name=None, support_engines=None, support_groups=None, max_num=None, flavor_type=None, billing=None, flavor_info=None, attributes=None):
+    def __init__(self, pool_id=None, flavor_id=None, flavor_name=None, max_num=None, flavor_type=None, billing=None, flavor_info=None, attributes=None):
         r"""FlavorResponse
 
         The model defined in huaweicloud sdk
@@ -51,10 +47,6 @@ class FlavorResponse:
         :type flavor_id: str
         :param flavor_name: 资源规格的名称。
         :type flavor_name: str
-        :param support_engines: **参数解释**：该规格支持的训练引擎列表（JSON 数组字符串格式）。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-        :type support_engines: str
-        :param support_groups: **参数解释**：该规格支持的用户组列表。若为空则默认为 &#x60;public&#x60;。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：&#x60;public&#x60;
-        :type support_groups: str
         :param max_num: 资源规格的最大节点数。
         :type max_num: int
         :param flavor_type: 资源规格的类型。可选值如下： - CPU - GPU - [Ascend](tag:hc,hk,fcs_super)
@@ -72,8 +64,6 @@ class FlavorResponse:
         self._pool_id = None
         self._flavor_id = None
         self._flavor_name = None
-        self._support_engines = None
-        self._support_groups = None
         self._max_num = None
         self._flavor_type = None
         self._billing = None
@@ -87,10 +77,6 @@ class FlavorResponse:
             self.flavor_id = flavor_id
         if flavor_name is not None:
             self.flavor_name = flavor_name
-        if support_engines is not None:
-            self.support_engines = support_engines
-        if support_groups is not None:
-            self.support_groups = support_groups
         if max_num is not None:
             self.max_num = max_num
         if flavor_type is not None:
@@ -167,50 +153,6 @@ class FlavorResponse:
         :type flavor_name: str
         """
         self._flavor_name = flavor_name
-
-    @property
-    def support_engines(self):
-        r"""Gets the support_engines of this FlavorResponse.
-
-        **参数解释**：该规格支持的训练引擎列表（JSON 数组字符串格式）。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-
-        :return: The support_engines of this FlavorResponse.
-        :rtype: str
-        """
-        return self._support_engines
-
-    @support_engines.setter
-    def support_engines(self, support_engines):
-        r"""Sets the support_engines of this FlavorResponse.
-
-        **参数解释**：该规格支持的训练引擎列表（JSON 数组字符串格式）。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：不涉及。
-
-        :param support_engines: The support_engines of this FlavorResponse.
-        :type support_engines: str
-        """
-        self._support_engines = support_engines
-
-    @property
-    def support_groups(self):
-        r"""Gets the support_groups of this FlavorResponse.
-
-        **参数解释**：该规格支持的用户组列表。若为空则默认为 `public`。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：`public`
-
-        :return: The support_groups of this FlavorResponse.
-        :rtype: str
-        """
-        return self._support_groups
-
-    @support_groups.setter
-    def support_groups(self, support_groups):
-        r"""Sets the support_groups of this FlavorResponse.
-
-        **参数解释**：该规格支持的用户组列表。若为空则默认为 `public`。 **约束限制**：不涉及。 **取值范围**：不涉及。 **默认取值**：`public`
-
-        :param support_groups: The support_groups of this FlavorResponse.
-        :type support_groups: str
-        """
-        self._support_groups = support_groups
 
     @property
     def max_num(self):

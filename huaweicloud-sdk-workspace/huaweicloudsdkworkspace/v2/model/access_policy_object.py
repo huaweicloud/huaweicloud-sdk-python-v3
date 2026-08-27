@@ -17,16 +17,18 @@ class AccessPolicyObject:
     openapi_types = {
         'object_id': 'str',
         'object_name': 'str',
-        'object_type': 'str'
+        'object_type': 'str',
+        'object_domain': 'str'
     }
 
     attribute_map = {
         'object_id': 'object_id',
         'object_name': 'object_name',
-        'object_type': 'object_type'
+        'object_type': 'object_type',
+        'object_domain': 'object_domain'
     }
 
-    def __init__(self, object_id=None, object_name=None, object_type=None):
+    def __init__(self, object_id=None, object_name=None, object_type=None, object_domain=None):
         r"""AccessPolicyObject
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class AccessPolicyObject:
         :type object_name: str
         :param object_type: 对象类型。 * USER： 用户 * USERGROUP： 用户组
         :type object_type: str
+        :param object_domain: 域名称。
+        :type object_domain: str
         """
         
         
@@ -44,6 +48,7 @@ class AccessPolicyObject:
         self._object_id = None
         self._object_name = None
         self._object_type = None
+        self._object_domain = None
         self.discriminator = None
 
         if object_id is not None:
@@ -52,6 +57,8 @@ class AccessPolicyObject:
             self.object_name = object_name
         if object_type is not None:
             self.object_type = object_type
+        if object_domain is not None:
+            self.object_domain = object_domain
 
     @property
     def object_id(self):
@@ -118,6 +125,28 @@ class AccessPolicyObject:
         :type object_type: str
         """
         self._object_type = object_type
+
+    @property
+    def object_domain(self):
+        r"""Gets the object_domain of this AccessPolicyObject.
+
+        域名称。
+
+        :return: The object_domain of this AccessPolicyObject.
+        :rtype: str
+        """
+        return self._object_domain
+
+    @object_domain.setter
+    def object_domain(self, object_domain):
+        r"""Sets the object_domain of this AccessPolicyObject.
+
+        域名称。
+
+        :param object_domain: The object_domain of this AccessPolicyObject.
+        :type object_domain: str
+        """
+        self._object_domain = object_domain
 
     def to_dict(self):
         result = {}

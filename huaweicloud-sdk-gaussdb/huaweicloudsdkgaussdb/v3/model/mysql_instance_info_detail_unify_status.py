@@ -46,7 +46,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
         'tags': 'list[MysqlTags]',
         'dedicated_resource_id': 'str',
         'proxies': 'list[MysqlProxyInfo]',
-        'tde_info': 'MysqlTdeInfo'
+        'tde_info': 'MysqlTdeInfo',
+        'eos_tag': 'bool'
     }
 
     attribute_map = {
@@ -81,10 +82,11 @@ class MysqlInstanceInfoDetailUnifyStatus:
         'tags': 'tags',
         'dedicated_resource_id': 'dedicated_resource_id',
         'proxies': 'proxies',
-        'tde_info': 'tde_info'
+        'tde_info': 'tde_info',
+        'eos_tag': 'eos_tag'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None, tde_info=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None, tde_info=None, eos_tag=None):
         r"""MysqlInstanceInfoDetailUnifyStatus
 
         The model defined in huaweicloud sdk
@@ -153,6 +155,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
         :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
         :param tde_info: 
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
+        :param eos_tag: **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+        :type eos_tag: bool
         """
         
         
@@ -189,6 +193,7 @@ class MysqlInstanceInfoDetailUnifyStatus:
         self._dedicated_resource_id = None
         self._proxies = None
         self._tde_info = None
+        self._eos_tag = None
         self.discriminator = None
 
         self.id = id
@@ -252,6 +257,8 @@ class MysqlInstanceInfoDetailUnifyStatus:
             self.proxies = proxies
         if tde_info is not None:
             self.tde_info = tde_info
+        if eos_tag is not None:
+            self.eos_tag = eos_tag
 
     @property
     def id(self):
@@ -940,6 +947,28 @@ class MysqlInstanceInfoDetailUnifyStatus:
         :type tde_info: :class:`huaweicloudsdkgaussdb.v3.MysqlTdeInfo`
         """
         self._tde_info = tde_info
+
+    @property
+    def eos_tag(self):
+        r"""Gets the eos_tag of this MysqlInstanceInfoDetailUnifyStatus.
+
+        **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+
+        :return: The eos_tag of this MysqlInstanceInfoDetailUnifyStatus.
+        :rtype: bool
+        """
+        return self._eos_tag
+
+    @eos_tag.setter
+    def eos_tag(self, eos_tag):
+        r"""Sets the eos_tag of this MysqlInstanceInfoDetailUnifyStatus.
+
+        **参数解释**：  当前内核版本是否EOS。  **取值范围**：  - true：版本EOS。 - false：版本正常维护。
+
+        :param eos_tag: The eos_tag of this MysqlInstanceInfoDetailUnifyStatus.
+        :type eos_tag: bool
+        """
+        self._eos_tag = eos_tag
 
     def to_dict(self):
         result = {}

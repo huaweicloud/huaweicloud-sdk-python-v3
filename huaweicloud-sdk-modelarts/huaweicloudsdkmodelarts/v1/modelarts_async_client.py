@@ -104,6 +104,73 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def attach_dev_server_volume_async(self, request):
+        r"""Lite Server服务器挂载磁盘
+
+        Lite Server服务器挂载磁盘接口用于将额外的磁盘挂载到Lite Server服务器上。该接口适用于以下场景：当用户需要扩展Lite Server服务器的存储空间以满足更大的数据存储需求时，可以通过此接口将指定的磁盘挂载到服务器上。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态、或者停止状态，用户具有挂载磁盘的权限，且指定的磁盘已存在且未被其他服务器使用。挂载操作完成后，磁盘将成功挂载到Lite Server服务器上，用户可以访问和使用新增的存储空间。若Lite Server服务器不存在、指定的磁盘不存在或已被使用，或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachDevServerVolume
+        :type request: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerVolumeRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerVolumeResponse`
+        """
+        http_info = self._attach_dev_server_volume_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_dev_server_volume_async_invoker(self, request):
+        http_info = self._attach_dev_server_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_dev_server_volume_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/attachvolume",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachDevServerVolumeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def attach_dynamic_storage_async(self, request):
         r"""动态挂载Notebook存储
 
@@ -599,6 +666,138 @@ class ModelArtsAsyncClient(Client):
             "resource_path": "/v1/{project_id}/pools/{pool_name}/tags/delete",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeletePoolTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_name' in local_var_params:
+            path_params['pool_name'] = local_var_params['pool_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_dev_servers_action_async(self, request):
+        r"""批量操作Lite Server实例
+
+        批量操作Lite Server实例接口用于对多个Lite Server实例进行统一操作，如启动、停止、重启或删除等。该接口适用于以下场景：当需要对多个Lite Server实例进行相同的操作，例如在维护期间批量停止实例、更新配置后批量重启实例或清理不再需要的实例时，用户可通过此接口高效地完成批量操作。使用该接口的前提条件是目标Lite Server实例已存在且用户具有相应的操作权限。操作完成后，所有指定的Lite Server实例将根据请求完成相应的状态变更或被移除，相关资源和配置也将被相应调整或清理。若目标Lite Server实例不存在、用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDevServersAction
+        :type request: :class:`huaweicloudsdkmodelarts.v1.BatchDevServersActionRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.BatchDevServersActionResponse`
+        """
+        http_info = self._batch_dev_servers_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_dev_servers_action_async_invoker(self, request):
+        http_info = self._batch_dev_servers_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_dev_servers_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDevServersActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_drain_pool_nodes_async(self, request):
+        r"""节点批量排水
+
+        节点批量排水接口用于集中停止指定节点的业务处理能力并释放相关资源。该接口适用于以下场景：当系统需进行紧急故障隔离、资源回收、版本升级或维护操作时，用户可通过此接口批量暂停目标节点的业务流量，确保操作期间服务稳定性。使用该接口的前提条件包括：目标节点已存在且用户具备管理员权限，节点需处于运行状态且未被锁定，资源池需满足排水后容量约束（如最小可用节点数），同时需提供有效的节点列表及排水策略（如立即排水或延迟排水）作为输入参数。操作完成后，指定节点将停止接收新任务并逐步释放资源，原有业务数据将根据策略保留或迁移。若节点不存在、用户权限不足、节点状态异常（如维护中）、资源池容量不足或输入参数缺失，接口将返回对应错误信息（如404未找到节点、403权限拒绝、400参数校验失败等）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDrainPoolNodes
+        :type request: :class:`huaweicloudsdkmodelarts.v1.BatchDrainPoolNodesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.BatchDrainPoolNodesResponse`
+        """
+        http_info = self._batch_drain_pool_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_drain_pool_nodes_async_invoker(self, request):
+        http_info = self._batch_drain_pool_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_drain_pool_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/pools/{pool_name}/nodes/batch-drain",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDrainPoolNodesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1177,6 +1376,73 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def bind_dev_server_public_ip_async(self, request):
+        r"""Lite Server服务器绑定EIP
+
+        Lite Server服务器绑定的EIP接口用于将弹性公网IP（EIP）绑定到Lite Server服务器上。该接口适用于以下场景：当用户需要为Lite Server服务器分配一个固定的公网IP地址，以便从外部网络访问服务器时，可以通过此接口将指定的EIP绑定到服务器上。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态，用户具有绑定EIP的权限，且指定的EIP已存在且未被其他资源使用。绑定操作完成后，EIP将成功绑定到Lite Server服务器上，服务器可以通过该EIP从外部网络访问。若Lite Server服务器不存在、已处于停止状态、指定的EIP不存在或已被使用，或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BindDevServerPublicIP
+        :type request: :class:`huaweicloudsdkmodelarts.v1.BindDevServerPublicIPRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.BindDevServerPublicIPResponse`
+        """
+        http_info = self._bind_dev_server_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_dev_server_public_ip_async_invoker(self, request):
+        http_info = self._bind_dev_server_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _bind_dev_server_public_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindDevServerPublicIPResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def bind_infer_api_key_async(self, request):
         r"""绑定应用密钥
 
@@ -1361,6 +1627,140 @@ class ModelArtsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_dev_server_os_async(self, request):
+        r"""切换Lite Server服务器操作系统镜像
+
+        切换Lite Server服务器操作系统镜像接口用于更换Lite Server服务器当前使用的操作系统镜像。该接口适用于以下场景：当用户需要更换操作系统以适应不同的开发或测试需求时，可以通过此接口切换指定的Lite Server服务器操作系统镜像。使用该接口的前提条件是Lite Server服务器已存在且处于停止状态，用户具有切换操作系统的权限。切换操作完成后，Lite Server服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeDevServerOS
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ChangeDevServerOSRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ChangeDevServerOSResponse`
+        """
+        http_info = self._change_dev_server_os_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_dev_server_os_async_invoker(self, request):
+        http_info = self._change_dev_server_os_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_dev_server_os_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/changeos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeDevServerOSResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_hyperinstance_os_async(self, request):
+        r"""切换Lite Server超节点服务器操作系统镜像
+
+        切换Lite Server超节点服务器操作系统镜像接口用于更换Lite Server超节点服务器当前使用的操作系统镜像。该接口适用于以下场景：当用户需要更换操作系统以适应不同的开发或测试需求时，可以通过此接口切换指定的Lite Server超节点服务器操作系统镜像。使用该接口的前提条件是Lite Server超节点服务器已存在且处于停止状态，用户具有切换操作系统的权限。切换操作完成后，Lite Server超节点服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server超节点服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeHyperinstanceOS
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ChangeHyperinstanceOSRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ChangeHyperinstanceOSResponse`
+        """
+        http_info = self._change_hyperinstance_os_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_hyperinstance_os_async_invoker(self, request):
+        http_info = self._change_hyperinstance_os_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_hyperinstance_os_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/changeos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeHyperinstanceOSResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -1829,6 +2229,268 @@ class ModelArtsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_dev_server_async(self, request):
+        r"""创建Lite Server
+
+        创建Lite Server接口用于创建LiteServer弹性云服务器、裸金属服务器及超节点服务器。该接口适用于以下场景：用户需要根据业务需求快速部署和配置不同类型的服务器资源。使用该接口的前提条件是用户已登录且具有创建Lite Server的权限，并且需要提供服务器类型、规格、网络配置等必要参数。创建操作完成后，系统将返回新创建的Lite Server实例信息，包括实例ID、状态等。若用户无权限、参数配置错误或资源不足，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerResponse`
+        """
+        http_info = self._create_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dev_server_async_invoker(self, request):
+        http_info = self._create_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dev_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_dev_server_job_async(self, request):
+        r"""创建Lite Server任务
+
+        创建Lite Server任务接口用于在Lite Server上创建新的任务。该接口适用于以下场景：当用户需要在Lite Server上启动新的开发、测试或部署任务时，可以通过此接口创建并配置任务。使用该接口的前提条件是用户具有创建任务的权限，并且提供的任务配置参数符合要求。创建操作完成后，新的Lite Server任务将被成功创建，并返回任务ID和其他相关信息。若用户无权限操作、提供的参数不正确或系统资源不足，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDevServerJob
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerJobRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerJobResponse`
+        """
+        http_info = self._create_dev_server_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_dev_server_job_async_invoker(self, request):
+        http_info = self._create_dev_server_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dev_server_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDevServerJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_hyper_cluster_async(self, request):
+        r"""创建Hyper Cluster
+
+        创建Hyper Cluster接口用于在系统中创建一个新的Hyper Cluster。该接口适用于以下场景：当用户需要使用超节点网络时，可以通过此接口创建Hyper Cluster。使用该接口的前提条件是用户已登录并具有创建Hyper Cluster的权限，且系统中已配置了必要的资源。创建操作完成后，将生成一个新的超节点网络，并返回超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作、系统中缺少必要的资源或配置参数无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHyperCluster
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateHyperClusterRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateHyperClusterResponse`
+        """
+        http_info = self._create_hyper_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_hyper_cluster_async_invoker(self, request):
+        http_info = self._create_hyper_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_hyper_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHyperClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_hyperinstance_tags_async(self, request):
+        r"""创建Lite Server超节点标签
+
+        创建Lite Server超节点标签接口用于为Lite Server超节点添加自定义标签。该接口适用于以下场景：当用户需要对Lite Server超节点进行分类管理或标记特定信息时，可以通过此接口为指定的超节点创建标签。使用该接口的前提条件是Lite Server超节点已存在，用户具有创建标签的权限。创建操作完成后，标签将被成功添加到指定的超节点上，用户可以通过标签进行快速查找和管理。若Lite Server超节点不存在、标签已存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHyperinstanceTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceTagsResponse`
+        """
+        http_info = self._create_hyperinstance_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_hyperinstance_tags_async_invoker(self, request):
+        http_info = self._create_hyperinstance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_hyperinstance_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHyperinstanceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -2650,6 +3312,71 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def create_roce_network_async(self, request):
+        r"""创建RoCE网络
+
+        创建RoCE网络接口用于在系统中创建一个新的RoCE网络。该接口适用于以下场景：当用户需要为高性能计算或低延迟应用创建专用的RoCE网络时，可以通过此接口创建并配置RoCE网络。使用该接口的前提条件是用户已登录并具有创建RoCE网络的权限，且系统中已配置了必要的网络资源。创建操作完成后，将生成一个新的RoCE网络，并返回网络的详细信息，包括网络ID、子网信息、配置参数等。若用户无权限操作、系统中缺少必要的网络资源或网络配置参数无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRoceNetwork
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateRoceNetworkRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateRoceNetworkResponse`
+        """
+        http_info = self._create_roce_network_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_roce_network_async_invoker(self, request):
+        http_info = self._create_roce_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_roce_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoceNetworkResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_save_image_job_async(self, request):
         r"""创建训练作业镜像保存任务
 
@@ -3098,6 +3825,335 @@ class ModelArtsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dev_server_async(self, request):
+        r"""删除Lite Server实例
+
+        删除Lite Server实例接口用于移除已创建的Lite Server实例。该接口适用于以下场景：当Lite Server按需实例不再需要使用时或者创建失败的实例以及处于ERROR状态时，用户可通过此接口删除指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已存在且用户具有管理员权限。删除操作完成后，Lite Server实例将被永久移除，相关资源也将被清理。若Lite Server实例不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerResponse`
+        """
+        http_info = self._delete_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dev_server_async_invoker(self, request):
+        http_info = self._delete_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dev_server_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dev_server_jobs_async(self, request):
+        r"""批量删除Lite Server Job
+
+        批量删除Lite Server Job接口用于批量移除已创建的Lite Server Job。该接口适用于以下场景：当多个Lite Server Job已完成、配置错误或需要清理资源时，用户可以通过此接口批量删除指定的Lite Server Job。使用该接口的前提条件是目标Lite Server Job已存在且用户具有管理员权限。删除操作完成后，指定的Lite Server Job将被永久移除，相关资源和配置也将被清理。若目标Lite Server Job不存在、用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteDevServerJobs
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerJobsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerJobsResponse`
+        """
+        http_info = self._delete_dev_server_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dev_server_jobs_async_invoker(self, request):
+        http_info = self._delete_dev_server_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dev_server_jobs_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDevServerJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hyper_cluster_async(self, request):
+        r"""删除Hyper Cluster实例
+
+        删除Hyper Cluster实例接口用于移除已创建的Hyper Cluster。该接口适用于以下场景：当超节点网络配置错误或需要清理资源时，用户可通过此接口删除指定的超节点网络。使用该接口的前提条件是Hyper Cluster实例已存在且用户具有管理员权限。删除操作完成后，超节点网络将被永久移除，相关资源和配置也将被清理。若Hyper Cluster实例不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHyperCluster
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperClusterRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperClusterResponse`
+        """
+        http_info = self._delete_hyper_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hyper_cluster_async_invoker(self, request):
+        http_info = self._delete_hyper_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hyper_cluster_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHyperClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hyperinstance_async(self, request):
+        r"""删除Lite Server超节点实例
+
+        删除Lite Server超节点实例接口用于删除按需超节点实例同时移除处于ERROR状态的Lite Server超节点实例。该接口适用于以下场景：当超节点实例因创建失败、或其他原因进入ERROR状态；按需超节点实例，用户可以通过此接口删除指定的超节点实例。使用该接口的前提条件是用户已登录并具有删除超节点实例的权限，且指定的超节点实例是按需且处于运行状态、或者处于ERROR状态。删除操作完成后，指定的超节点实例将被永久移除，相关资源也将被清理。若指定的超节点实例不存在、未处于ERROR状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceResponse`
+        """
+        http_info = self._delete_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hyperinstance_async_invoker(self, request):
+        http_info = self._delete_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_hyperinstance_tags_async(self, request):
+        r"""删除Lite Server超节点标签
+
+        删除Lite Server超节点标签接口用于移除已创建的Lite Server超节点标签。该接口适用于以下场景：当用户需要清理不再需要的标签或修正标签错误时，可以通过此接口删除指定的超节点标签。使用该接口的前提条件是Lite Server超节点已存在，且该超节点上已存在要删除的标签，用户具有删除标签的权限。删除操作完成后，指定的标签将从超节点上移除，超节点的其他配置和数据保持不变。若Lite Server超节点不存在、标签不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHyperinstanceTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceTagsResponse`
+        """
+        http_info = self._delete_hyperinstance_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_hyperinstance_tags_async_invoker(self, request):
+        http_info = self._delete_hyperinstance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hyperinstance_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHyperinstanceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -4127,6 +5183,73 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def detach_dev_server_volume_async(self, request):
+        r"""Lite Server服务器卸载磁盘
+
+        Lite Server服务器卸载磁盘接口用于从Lite Server服务器上卸载已挂载的磁盘。该接口适用于以下场景：当用户需要释放存储资源或重新分配磁盘时，可以通过此接口卸载指定的磁盘。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态、或者停止状态，用户具有卸载磁盘的权限，且指定的磁盘已挂载到服务器上。卸载操作完成后，磁盘将从Lite Server服务器上成功卸载，用户可以将其挂载到其他服务器或进行其他操作。若Lite Server服务器不存在、指定的磁盘未挂载到服务器上，或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachDevServerVolume
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerVolumeRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerVolumeResponse`
+        """
+        http_info = self._detach_dev_server_volume_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_dev_server_volume_async_invoker(self, request):
+        http_info = self._detach_dev_server_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_dev_server_volume_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/detachvolume/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachDevServerVolumeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def detach_dynamic_storage_async(self, request):
         r"""动态卸载Notebook存储
 
@@ -4267,6 +5390,465 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def get_dev_server_image_async(self, request):
+        r"""查询Lite Server镜像详情
+
+        查询Lite Server镜像详情接口用于获取指定Lite Server镜像的详细信息。该接口适用于以下场景：当用户需要了解某个Lite Server镜像的具体配置和属性，以便在创建或调整Lite Server实例时选择合适的镜像时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询镜像详情的权限，且指定的镜像已存在。查询操作完成后，接口将返回指定Lite Server镜像的详细信息，包括镜像ID、名称、操作系统、版本、创建时间等。若用户无权限操作、指定的镜像不存在或镜像ID无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDevServerImage
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerImageRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerImageResponse`
+        """
+        http_info = self._get_dev_server_image_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dev_server_image_async_invoker(self, request):
+        http_info = self._get_dev_server_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dev_server_image_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/images/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDevServerImageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_dev_server_job_async(self, request):
+        r"""查询Lite Server Job详情
+
+        查询Lite Server Job详情接口用于获取指定Lite Server Job的详细信息。该接口适用于以下场景：当用户需要查看某个Lite Server Job的执行状态、配置参数、日志信息等详细数据时，可以通过此接口获取相关信息。使用该接口的前提条件是目标Lite Server Job已存在且用户具有查看权限。查询操作完成后，接口将返回指定Lite Server Job的详细信息，包括但不限于Job ID、状态、创建时间、执行时间、配置参数和日志等。若目标Lite Server Job不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDevServerJob
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobResponse`
+        """
+        http_info = self._get_dev_server_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dev_server_job_async_invoker(self, request):
+        http_info = self._get_dev_server_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dev_server_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDevServerJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_dev_server_job_service_async(self, request):
+        r"""获取Lite Server 部署服务详情
+
+        根据服务id获取Lite Server部署服务详情。该接口适用于以下场景：当用户需要查看部署服务详情，以便查看已部署服务的状态、api等信息时，可以通过此接口获取服务详情。使用该接口的前提条件是用户具有查看服务的权限。查询操作完成后，接口将返回此部署服务的详细信息，包括名称、状态、描述、所用模型、实例详情等信息。若用户无权限操作或无相应id，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDevServerJobService
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobServiceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobServiceResponse`
+        """
+        http_info = self._get_dev_server_job_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dev_server_job_service_async_invoker(self, request):
+        http_info = self._get_dev_server_job_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dev_server_job_service_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs/services/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDevServerJobServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_dev_server_job_template_async(self, request):
+        r"""获取Lite Server Job模板详情
+
+        获取Lite Server Job模板详情接口用于获取指定Lite Server Job模板的详细信息。该接口适用于以下场景：当用户需要查看某个特定Job模板的详细配置，以便了解其参数设置、使用说明等信息时，可以通过此接口获取模板详情。查询操作完成后，接口将返回指定模板的详细信息，包括模板ID、名称、描述、配置参数等。若目标模板不存在，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDevServerJobTemplate
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobTemplateRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobTemplateResponse`
+        """
+        http_info = self._get_dev_server_job_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dev_server_job_template_async_invoker(self, request):
+        http_info = self._get_dev_server_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dev_server_job_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDevServerJobTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_dev_server_operation_async(self, request):
+        r"""查询Operation详情
+
+        查询Operation详情接口用于获取指定Operation的详细信息。该接口适用于以下场景：当用户需要了解某个Operation的具体执行情况和状态，以便进行故障排查或操作审计时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Operation详情的权限，且指定的Operation已存在。查询操作完成后，接口将返回指定Operation的详细信息，包括Operation ID、操作类型、执行状态、开始时间、结束时间、操作结果等。若用户无权限操作、指定的Operation不存在或Operation ID无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetDevServerOperation
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerOperationRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerOperationResponse`
+        """
+        http_info = self._get_dev_server_operation_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_dev_server_operation_async_invoker(self, request):
+        http_info = self._get_dev_server_operation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_dev_server_operation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/operation/{operation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetDevServerOperationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+        if 'operation_id' in local_var_params:
+            path_params['operation_id'] = local_var_params['operation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_hyper_cluster_async(self, request):
+        r"""查询Hyper Cluster实例详情
+
+        查询Hyper Cluster实例详情接口用于获取指定Hyper Cluster实例的详细信息。该接口适用于以下场景：当用户需要了解某个超节点网络的具体配置和状态，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Hyper Cluster详情的权限，且指定的超节点网络已存在。查询操作完成后，接口将返回指定超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作、指定的超节点网络不存在或ID无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetHyperCluster
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetHyperClusterRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetHyperClusterResponse`
+        """
+        http_info = self._get_hyper_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_hyper_cluster_async_invoker(self, request):
+        http_info = self._get_hyper_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_hyper_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetHyperClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_hyperinstance_async(self, request):
+        r"""查询指定超节点实例详情
+
+        查询指定超节点实例详情接口用于获取特定Lite Server超节点实例的详细信息。该接口适用于以下场景：当用户需要查看某个具体超节点实例的配置、状态和使用情况时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点实例的权限，且指定的超节点实例已存在。查询操作完成后，接口将返回指定超节点实例的详细信息，包括实例ID、操作系统、运行状态、资源使用情况等。若用户无权限操作、指定的超节点实例不存在或实例ID无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceResponse`
+        """
+        http_info = self._get_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_hyperinstance_async_invoker(self, request):
+        http_info = self._get_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_hyperinstance_operation_async(self, request):
         r"""查询超节点Operation详情
 
@@ -4307,6 +5889,138 @@ class ModelArtsAsyncClient(Client):
             path_params['operation_id'] = local_var_params['operation_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_scale_evaluations_dev_server_async(self, request):
+        r"""查询Lite Server超节点扩缩容支持规格列表及容量测算
+
+        查询Lite Server超节点扩缩容支持规格列表及容量测算接口用于获取Lite Server超节点支持的扩缩容规格列表，并进行容量测算。该接口适用于以下场景：当用户需要了解Lite Server超节点支持的扩缩容选项，以便在调整超节点资源时选择合适的规格，并评估扩缩容后的资源需求时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点扩缩容规格的权限，且指定的超节点已存在。查询操作完成后，接口将返回支持的扩缩容规格列表及容量测算结果，包括规格ID、CPU、内存、存储等详细配置和扩缩容后的资源使用情况。若用户无权限操作、指定的超节点不存在或系统中没有可用的扩缩容规格，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetScaleEvaluationsDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetScaleEvaluationsDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetScaleEvaluationsDevServerResponse`
+        """
+        http_info = self._get_scale_evaluations_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_scale_evaluations_dev_server_async_invoker(self, request):
+        http_info = self._get_scale_evaluations_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_scale_evaluations_dev_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/scale-evaluations",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetScaleEvaluationsDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_topologies_async(self, request):
+        r"""查询实例的Tor信息
+
+        查询实例的Tor信息接口用于获取指定实例的Top-of-Rack（Tor）交换机相关信息。该接口适用于以下场景：当用户需要了解实例连接的Tor交换机的详细信息，以便进行网络配置时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询实例Tor信息的权限，且指定的实例已存在。查询操作完成后，接口将返回指定实例的Tor信息。若用户无权限操作、指定的实例不存在或实例未连接到Tor交换机，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetTopologies
+        :type request: :class:`huaweicloudsdkmodelarts.v1.GetTopologiesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetTopologiesResponse`
+        """
+        http_info = self._get_topologies_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_topologies_async_invoker(self, request):
+        http_info = self._get_topologies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_topologies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/instance-physical-topologies",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetTopologiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
 
         header_params = {}
 
@@ -4384,6 +6098,548 @@ class ModelArtsAsyncClient(Client):
             query_params.append(('searches', local_var_params['searches']))
         if 'workspace_id' in local_var_params:
             query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_dev_servers_async(self, request):
+        r"""查询租户Lite Server列表
+
+        查询租户Lite Server列表接口用于获取指定租户的所有Lite Server实例信息。该接口适用于以下场景：当用户需要查看其租户下所有Lite Server实例的详细信息，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询租户Lite Server列表的权限。查询操作完成后，接口将返回租户下所有Lite Server实例的详细信息，包括实例ID、名称、状态、资源配置等。若用户无权限操作或租户下没有Lite Server实例，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllDevServers
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAllDevServersRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAllDevServersResponse`
+        """
+        http_info = self._list_all_dev_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_dev_servers_async_invoker(self, request):
+        http_info = self._list_all_dev_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_dev_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/all",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllDevServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_hyperinstances_async(self, request):
+        r"""查询租户Hyperinstance列表
+
+        查询租户Hyperinstance列表接口用于获取指定租户的所有Hyperinstance实例信息。该接口适用于以下场景：当用户需要查看其租户下所有Hyperinstance实例的详细信息，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询租户Hyperinstance列表的权限。查询操作完成后，接口将返回租户下所有Hyperinstance实例的详细信息，包括实例ID、名称、状态、资源配置等。若用户无权限操作或租户下没有Hyperinstance实例，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllHyperinstances
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAllHyperinstancesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAllHyperinstancesResponse`
+        """
+        http_info = self._list_all_hyperinstances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_hyperinstances_async_invoker(self, request):
+        http_info = self._list_all_hyperinstances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_hyperinstances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/all",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllHyperinstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_server_flavors_async(self, request):
+        r"""查询规格列表
+
+        查询规格列表接口用于获取系统中所有可用的资源规格信息。该接口适用于以下场景：当用户需要了解可用的资源规格，以便在创建或调整Lite Server实例时选择合适的配置时，可以通过此接口获取规格列表。使用该接口的前提条件是用户已登录并具有查询规格的权限。查询操作完成后，接口将返回所有可用的资源规格信息，包括规格ID、CPU、内存、存储等详细配置。若用户无权限操作或系统中没有可用的资源规格，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServerFlavors
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerFlavorsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerFlavorsResponse`
+        """
+        http_info = self._list_dev_server_flavors_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_server_flavors_async_invoker(self, request):
+        http_info = self._list_dev_server_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_server_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServerFlavorsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+        if 'arch' in local_var_params:
+            query_params.append(('arch', local_var_params['arch']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_server_images_async(self, request):
+        r"""查询Lite Server镜像列表
+
+        查询Lite Server镜像列表接口用于获取系统中所有可用的Lite Server镜像信息。该接口适用于以下场景：当用户需要了解可用的Lite Server镜像，以便在创建或调整Lite Server实例时选择合适的镜像时，可以通过此接口获取镜像列表。使用该接口的前提条件是用户已登录并具有查询镜像列表的权限。查询操作完成后，接口将返回所有可用的Lite Server镜像信息，包括镜像ID、名称、架构类型等。若用户无权限操作或系统中没有可用的镜像，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServerImages
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerImagesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerImagesResponse`
+        """
+        http_info = self._list_dev_server_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_server_images_async_invoker(self, request):
+        http_info = self._list_dev_server_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_server_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServerImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_server_job_templates_async(self, request):
+        r"""获取Lite Server Job模板列表
+
+        获取Lite Server Job模板列表接口用于获取可用的Lite Server Job模板列表。该接口适用于以下场景：当用户需要查看可用的Job模板，以便选择合适的模板来创建新的Lite Server任务时，可以通过此接口获取模板列表。查询操作完成后，接口将返回所有可用的Lite Server Job模板列表，包括模板ID、名称、描述等信息。若系统中无可用模板，接口将返回相应的信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServerJobTemplates
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobTemplatesResponse`
+        """
+        http_info = self._list_dev_server_job_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_server_job_templates_async_invoker(self, request):
+        http_info = self._list_dev_server_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_server_job_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServerJobTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_server_jobs_async(self, request):
+        r"""查询Lite Server Job列表
+
+        查询Lite Server Job列表接口用于获取Lite Server Job的列表信息，并支持按照状态、ID等相关字段进行过滤。该接口适用于以下场景：当用户需要查看多个Lite Server Job的概要信息，例如在监控作业状态、排查问题或进行日常管理时，可以通过此接口获取符合过滤条件的Job列表。使用该接口的前提条件是用户具有查看权限。查询操作完成后，接口将返回符合条件的Lite Server Job列表，包括每个Job的ID、状态、创建时间等基本信息。若用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServerJobs
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobsResponse`
+        """
+        http_info = self._list_dev_server_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_server_jobs_async_invoker(self, request):
+        http_info = self._list_dev_server_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_server_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServerJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'visible' in local_var_params:
+            query_params.append(('visible', local_var_params['visible']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_server_public_ip_async(self, request):
+        r"""查询已绑定的EIP
+
+        查询已绑定的EIP接口用于获取已绑定到Lite Server服务器上的弹性公网IP（EIP）信息。该接口适用于以下场景：当用户需要查看Lite Server服务器上已绑定的EIP及其详细信息时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询EIP的权限，且指定的Lite Server服务器已存在。查询操作完成后，接口将返回已绑定到Lite Server服务器上的EIP的详细信息，包括EIP地址、绑定时间、状态等。若Lite Server服务器不存在、未绑定EIP或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServerPublicIP
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerPublicIPRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerPublicIPResponse`
+        """
+        http_info = self._list_dev_server_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_server_public_ip_async_invoker(self, request):
+        http_info = self._list_dev_server_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_server_public_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServerPublicIPResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dev_servers_async(self, request):
+        r"""查询用户所有Lite Server实例列表
+
+        查询用户所有Lite Server实例列表接口用于获取用户名下所有Lite Server实例的详细信息。该接口适用于以下场景：用户需要查看其所有Lite Server实例的状态、配置等信息，以便进行资源管理和监控。使用该接口的前提条件是用户已登录且具有查看Lite Server实例的权限。调用此接口后，系统将返回用户名下所有Lite Server实例的列表，包括实例ID、名称、状态、创建时间等信息。若用户无权限或未登录，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDevServers
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServersRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServersResponse`
+        """
+        http_info = self._list_dev_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dev_servers_async_invoker(self, request):
+        http_info = self._list_dev_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dev_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -4603,6 +6859,207 @@ class ModelArtsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyper_cluster_async(self, request):
+        r"""查询Hyper Cluster详情列表
+
+        查询Hyper Cluster详情列表接口用于获取所有Hyper Cluster的详细信息。该接口适用于以下场景：当用户需要了解系统中所有超节点网络的配置和状态时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Hyper Cluster详情的权限。查询操作完成后，接口将返回所有超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作或系统中没有Hyper Cluster，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperCluster
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperClusterRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperClusterResponse`
+        """
+        http_info = self._list_hyper_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyper_cluster_async_invoker(self, request):
+        http_info = self._list_hyper_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyper_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyperinstance_clusters_capacity_async(self, request):
+        r"""查询超节点hyperinstance-clusters逻辑容量测算结果
+
+        查询超节点hyperinstance-clusters逻辑容量测算结果接口用于获取指定超节点集群的逻辑容量测算结果。该接口适用于以下场景：当用户需要了解超节点集群的资源使用情况和容量规划，以便进行资源管理和优化时，可以通过此接口获取逻辑容量测算结果。使用该接口的前提条件是用户已登录并具有查询超节点集群逻辑容量的权限，且指定的超节点集群已存在。查询操作完成后，接口将返回指定超节点集群的逻辑容量测算结果，包括可用容量信息。若用户无权限操作、指定的超节点集群不存在或集群ID无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperinstanceClustersCapacity
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceClustersCapacityRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceClustersCapacityResponse`
+        """
+        http_info = self._list_hyperinstance_clusters_capacity_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyperinstance_clusters_capacity_async_invoker(self, request):
+        http_info = self._list_hyperinstance_clusters_capacity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyperinstance_clusters_capacity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/cluster-capacity-evaluations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperinstanceClustersCapacityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyperinstances_async(self, request):
+        r"""查询用户所有超节点实例详情
+
+        查询用户所有超节点实例详情接口用于获取用户所有Lite Server超节点实例的详细信息。该接口适用于以下场景：当用户需要查看其所有超节点实例的配置、状态和使用情况时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点实例的权限。查询操作完成后，接口将返回所有超节点实例的详细信息，包括实例ID、操作系统、运行状态、资源使用情况等。若用户无权限操作或没有超节点实例，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHyperinstances
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstancesRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstancesResponse`
+        """
+        http_info = self._list_hyperinstances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyperinstances_async_invoker(self, request):
+        http_info = self._list_hyperinstances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hyperinstances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperinstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -7441,6 +9898,136 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def query_hyperinstance_tags_async(self, request):
+        r"""查询Lite Server超节点标签
+
+        查询Lite Server超节点标签接口用于获取Lite Server超节点上的所有标签信息。该接口适用于以下场景：当用户需要查看或管理Lite Server超节点的标签时，可以通过此接口查询指定超节点上的所有标签。使用该接口的前提条件是Lite Server超节点已存在，用户具有查询标签的权限。查询操作完成后，接口将返回超节点上的所有标签信息，包括标签名称和相关属性。若Lite Server超节点不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for QueryHyperinstanceTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.QueryHyperinstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.QueryHyperinstanceTagsResponse`
+        """
+        http_info = self._query_hyperinstance_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def query_hyperinstance_tags_async_invoker(self, request):
+        http_info = self._query_hyperinstance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _query_hyperinstance_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "QueryHyperinstanceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reboot_dev_server_async(self, request):
+        r"""重启Lite Server实例
+
+        重启Lite Server实例接口用于重启正在运行的Lite Server实例。该接口适用于以下场景：当用户需要重启实例以应用配置更改、解决运行问题或进行系统维护时，可以通过此接口重启指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于运行状态，用户具有重启实例的权限。重启操作完成后，Lite Server实例将重新启动并进入运行状态，用户可以继续使用实例提供的服务。若Lite Server实例不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RebootDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.RebootDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.RebootDevServerResponse`
+        """
+        http_info = self._reboot_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def reboot_dev_server_async_invoker(self, request):
+        http_info = self._reboot_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reboot_dev_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/reboot",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebootDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def register_image_async(self, request):
         r"""注册自定义镜像
 
@@ -7475,6 +10062,207 @@ class ModelArtsAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def reinstall_dev_server_os_async(self, request):
+        r"""重装Lite Server服务器操作系统镜像
+
+        重装Lite Server服务器操作系统镜像接口用于重新安装Lite Server服务器的操作系统镜像。该接口适用于以下场景：当用户需要更新操作系统版本、修复系统故障或重新配置系统环境时，可以通过此接口重装指定的Lite Server服务器操作系统镜像。使用该接口的前提条件是Lite Server服务器已存在且处于停止状态，用户具有重装操作系统的权限。重装操作完成后，Lite Server服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ReinstallDevServerOS
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ReinstallDevServerOSRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ReinstallDevServerOSResponse`
+        """
+        http_info = self._reinstall_dev_server_os_http_info(request)
+        return self._call_api(**http_info)
+
+    def reinstall_dev_server_os_async_invoker(self, request):
+        http_info = self._reinstall_dev_server_os_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reinstall_dev_server_os_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/reinstallos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReinstallDevServerOSResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def scale_down_hyperinstance_async(self, request):
+        r"""缩容Lite Server超节点
+
+        缩容Lite Server超节点接口用于减少Lite Server超节点的资源容量。该接口适用于以下场景：当用户需要降低Lite Server超节点的资源使用，以节省成本或优化资源分配时，可以通过此接口进行缩容。使用该接口的前提条件是用户已登录并具有缩容超节点的权限，且指定的超节点已存在且处于运行状态。缩容操作完成后，超节点的资源容量将根据指定的规格进行调整，用户可以立即使用减少后的资源。若用户无权限操作、指定的超节点不存在、超节点已处于最小容量或指定的缩容规格无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ScaleDownHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ScaleDownHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ScaleDownHyperinstanceResponse`
+        """
+        http_info = self._scale_down_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def scale_down_hyperinstance_async_invoker(self, request):
+        http_info = self._scale_down_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _scale_down_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/live-scale-down",
+            "request_type": request.__class__.__name__,
+            "response_type": "ScaleDownHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def scale_up_hyperinstance_async(self, request):
+        r"""扩容Lite Server超节点
+
+        扩容Lite Server超节点接口用于增加Lite Server超节点的资源容量。该接口适用于以下场景：当用户需要提升Lite Server超节点的性能，以支持更多的负载或更大的数据处理需求时，可以通过此接口进行扩容。使用该接口的前提条件是用户已登录并具有扩容超节点的权限，且指定的超节点已存在且处于运行状态。扩容操作完成后，超节点的资源容量将根据指定的规格进行调整，用户可以立即使用增加的资源。若用户无权限操作、指定的超节点不存在、超节点已处于最大容量或指定的扩容规格无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ScaleUpHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ScaleUpHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ScaleUpHyperinstanceResponse`
+        """
+        http_info = self._scale_up_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def scale_up_hyperinstance_async_invoker(self, request):
+        http_info = self._scale_up_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _scale_up_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/live-scale-up",
+            "request_type": request.__class__.__name__,
+            "response_type": "ScaleUpHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -8070,6 +10858,71 @@ class ModelArtsAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dev_server_async(self, request):
+        r"""查询Lite Server实例详情
+
+        查询Lite Server实例详情接口用于获取指定Lite Server实例的详细信息。该接口适用于以下场景：用户需要查看特定Lite Server实例的配置、状态、网络信息等详细数据，以便进行故障排查、资源管理和监控。使用该接口的前提条件是用户已登录且具有查看Lite Server实例的权限，并且需要提供有效的实例ID。查询操作完成后，系统将返回指定Lite Server实例的详细信息，包括实例ID、名称、状态、配置、网络配置等。若用户无权限、实例ID无效或实例不存在，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowDevServerResponse`
+        """
+        http_info = self._show_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dev_server_async_invoker(self, request):
+        http_info = self._show_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dev_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -10538,6 +13391,138 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def start_dev_server_async(self, request):
+        r"""启动Lite Server实例
+
+        启动Lite Server实例接口用于启动已创建但未运行的Lite Server实例。该接口适用于以下场景：当用户需要开始使用Lite Server实例进行开发或测试时，可以通过此接口启动指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于停止状态，用户具有启动实例的权限。若Lite Server实例不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.StartDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.StartDevServerResponse`
+        """
+        http_info = self._start_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_dev_server_async_invoker(self, request):
+        http_info = self._start_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_dev_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_hyperinstance_async(self, request):
+        r"""启动Lite Server超节点服务器
+
+        启动Lite Server超节点服务器接口用于启动已创建但未运行的Lite Server超节点服务器。该接口适用于以下场景：当用户需要开始使用Lite Server超节点服务器进行开发或测试时，可以通过此接口启动指定的超节点服务器。使用该接口的前提条件是Lite Server超节点服务器已创建且处于停止状态，用户具有启动超节点服务器的权限。启动操作完成后，超节点服务器将进入运行状态，用户可以访问和使用服务器提供的服务。若Lite Server超节点服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.StartHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.StartHyperinstanceResponse`
+        """
+        http_info = self._start_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_hyperinstance_async_invoker(self, request):
+        http_info = self._start_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def start_infer_deployment_async(self, request):
         r"""启动服务部署
 
@@ -10653,6 +13638,136 @@ class ModelArtsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_dev_server_async(self, request):
+        r"""停止Lite Server实例
+
+        停止Lite Server实例接口用于停止正在运行的Lite Server实例。该接口适用于以下场景：当用户需要停止Lite Server实例，以节省资源或进行维护时，可以通过此接口停止指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于运行状态，用户具有停止实例的权限。若Lite Server实例不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.StopDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.StopDevServerResponse`
+        """
+        http_info = self._stop_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_dev_server_async_invoker(self, request):
+        http_info = self._stop_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_dev_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_hyperinstance_async(self, request):
+        r"""停止Lite Server超节点服务器
+
+        停止Lite Server超节点服务器接口用于停止正在运行的Lite Server超节点服务器。该接口适用于以下场景：当用户需要暂停使用Lite Server超节点服务器，以节省资源或进行维护时，可以通过此接口停止指定的超节点服务器。使用该接口的前提条件是Lite Server超节点服务器已创建且处于运行状态或者停止失败状态，用户具有停止超节点服务器的权限。停止操作完成后，超节点服务器将进入停止状态，不再提供服务。若Lite Server超节点服务器不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopHyperinstance
+        :type request: :class:`huaweicloudsdkmodelarts.v1.StopHyperinstanceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.StopHyperinstanceResponse`
+        """
+        http_info = self._stop_hyperinstance_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_hyperinstance_async_invoker(self, request):
+        http_info = self._stop_hyperinstance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_hyperinstance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopHyperinstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -10940,6 +14055,79 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def sync_dev_servers_async(self, request):
+        r"""实时同步用户指定Lite Server实例状态
+
+        实时同步用户Lite Server实例状态接口用于实时获取并同步用户Lite Server实例的当前状态。该接口适用于以下场景：用户需要实时监控其Lite Server实例的运行状态，确保实例正常运行或及时发现并处理异常情况。使用该接口的前提条件是用户已登录并具有相应的权限，且Lite Server实例已创建并处于运行状态。接口调用成功后，将返回Lite Server实例的最新状态信息，包括但不限于实例ID、运行状态、资源使用情况等。若用户无权限操作或Lite Server实例不存在，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncDevServers
+        :type request: :class:`huaweicloudsdkmodelarts.v1.SyncDevServersRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.SyncDevServersResponse`
+        """
+        http_info = self._sync_dev_servers_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_dev_servers_async_invoker(self, request):
+        http_info = self._sync_dev_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_dev_servers_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncDevServersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def sync_image_async(self, request):
         r"""同步镜像状态
 
@@ -11106,6 +14294,73 @@ class ModelArtsAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_dev_server_async(self, request):
+        r"""修改Lite Server实例名称
+
+        修改DevServer实例名称接口用于更改已创建的DevServer实例的名称。该接口适用于以下场景：当用户需要对DevServer实例进行重命名以更好地反映实例的功能或用途时，或者在实例名称不再符合当前项目命名规范时进行更新。使用该接口的前提条件是DevServer实例已存在且用户具有对该实例的管理权限。修改操作完成后，实例的新名称将立即生效，并在所有相关视图和记录中更新。若DevServer实例不存在、用户无权限操作或新名称不符合命名规则，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDevServer
+        :type request: :class:`huaweicloudsdkmodelarts.v1.UpdateDevServerRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.UpdateDevServerResponse`
+        """
+        http_info = self._update_dev_server_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_dev_server_async_invoker(self, request):
+        http_info = self._update_dev_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_dev_server_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDevServerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 
@@ -12229,3194 +15484,6 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
-    def attach_dev_server_volume_async(self, request):
-        r"""Lite Server服务器挂载磁盘
-
-        Lite Server服务器挂载磁盘接口用于将额外的磁盘挂载到Lite Server服务器上。该接口适用于以下场景：当用户需要扩展Lite Server服务器的存储空间以满足更大的数据存储需求时，可以通过此接口将指定的磁盘挂载到服务器上。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态、或者停止状态，用户具有挂载磁盘的权限，且指定的磁盘已存在且未被其他服务器使用。挂载操作完成后，磁盘将成功挂载到Lite Server服务器上，用户可以访问和使用新增的存储空间。若Lite Server服务器不存在、指定的磁盘不存在或已被使用，或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for AttachDevServerVolume
-        :type request: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerVolumeRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerVolumeResponse`
-        """
-        http_info = self._attach_dev_server_volume_http_info(request)
-        return self._call_api(**http_info)
-
-    def attach_dev_server_volume_async_invoker(self, request):
-        http_info = self._attach_dev_server_volume_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _attach_dev_server_volume_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/attachvolume",
-            "request_type": request.__class__.__name__,
-            "response_type": "AttachDevServerVolumeResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_dev_servers_action_async(self, request):
-        r"""批量操作Lite Server实例
-
-        批量操作Lite Server实例接口用于对多个Lite Server实例进行统一操作，如启动、停止、重启或删除等。该接口适用于以下场景：当需要对多个Lite Server实例进行相同的操作，例如在维护期间批量停止实例、更新配置后批量重启实例或清理不再需要的实例时，用户可通过此接口高效地完成批量操作。使用该接口的前提条件是目标Lite Server实例已存在且用户具有相应的操作权限。操作完成后，所有指定的Lite Server实例将根据请求完成相应的状态变更或被移除，相关资源和配置也将被相应调整或清理。若目标Lite Server实例不存在、用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchDevServersAction
-        :type request: :class:`huaweicloudsdkmodelarts.v1.BatchDevServersActionRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.BatchDevServersActionResponse`
-        """
-        http_info = self._batch_dev_servers_action_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_dev_servers_action_async_invoker(self, request):
-        http_info = self._batch_dev_servers_action_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_dev_servers_action_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/action",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDevServersActionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def bind_dev_server_public_ip_async(self, request):
-        r"""Lite Server服务器绑定EIP
-
-        Lite Server服务器绑定的EIP接口用于将弹性公网IP（EIP）绑定到Lite Server服务器上。该接口适用于以下场景：当用户需要为Lite Server服务器分配一个固定的公网IP地址，以便从外部网络访问服务器时，可以通过此接口将指定的EIP绑定到服务器上。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态，用户具有绑定EIP的权限，且指定的EIP已存在且未被其他资源使用。绑定操作完成后，EIP将成功绑定到Lite Server服务器上，服务器可以通过该EIP从外部网络访问。若Lite Server服务器不存在、已处于停止状态、指定的EIP不存在或已被使用，或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BindDevServerPublicIP
-        :type request: :class:`huaweicloudsdkmodelarts.v1.BindDevServerPublicIPRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.BindDevServerPublicIPResponse`
-        """
-        http_info = self._bind_dev_server_public_ip_http_info(request)
-        return self._call_api(**http_info)
-
-    def bind_dev_server_public_ip_async_invoker(self, request):
-        http_info = self._bind_dev_server_public_ip_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _bind_dev_server_public_ip_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/publicips",
-            "request_type": request.__class__.__name__,
-            "response_type": "BindDevServerPublicIPResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_dev_server_os_async(self, request):
-        r"""切换Lite Server服务器操作系统镜像
-
-        切换Lite Server服务器操作系统镜像接口用于更换Lite Server服务器当前使用的操作系统镜像。该接口适用于以下场景：当用户需要更换操作系统以适应不同的开发或测试需求时，可以通过此接口切换指定的Lite Server服务器操作系统镜像。使用该接口的前提条件是Lite Server服务器已存在且处于停止状态，用户具有切换操作系统的权限。切换操作完成后，Lite Server服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeDevServerOS
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ChangeDevServerOSRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ChangeDevServerOSResponse`
-        """
-        http_info = self._change_dev_server_os_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_dev_server_os_async_invoker(self, request):
-        http_info = self._change_dev_server_os_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_dev_server_os_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/changeos",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeDevServerOSResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_hyperinstance_os_async(self, request):
-        r"""切换Lite Server超节点服务器操作系统镜像
-
-        切换Lite Server超节点服务器操作系统镜像接口用于更换Lite Server超节点服务器当前使用的操作系统镜像。该接口适用于以下场景：当用户需要更换操作系统以适应不同的开发或测试需求时，可以通过此接口切换指定的Lite Server超节点服务器操作系统镜像。使用该接口的前提条件是Lite Server超节点服务器已存在且处于停止状态，用户具有切换操作系统的权限。切换操作完成后，Lite Server超节点服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server超节点服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeHyperinstanceOS
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ChangeHyperinstanceOSRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ChangeHyperinstanceOSResponse`
-        """
-        http_info = self._change_hyperinstance_os_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_hyperinstance_os_async_invoker(self, request):
-        http_info = self._change_hyperinstance_os_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_hyperinstance_os_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/changeos",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeHyperinstanceOSResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_dev_server_async(self, request):
-        r"""创建Lite Server
-
-        创建Lite Server接口用于创建LiteServer弹性云服务器、裸金属服务器及超节点服务器。该接口适用于以下场景：用户需要根据业务需求快速部署和配置不同类型的服务器资源。使用该接口的前提条件是用户已登录且具有创建Lite Server的权限，并且需要提供服务器类型、规格、网络配置等必要参数。创建操作完成后，系统将返回新创建的Lite Server实例信息，包括实例ID、状态等。若用户无权限、参数配置错误或资源不足，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerResponse`
-        """
-        http_info = self._create_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dev_server_async_invoker(self, request):
-        http_info = self._create_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_dev_server_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_dev_server_job_async(self, request):
-        r"""创建Lite Server任务
-
-        创建Lite Server任务接口用于在Lite Server上创建新的任务。该接口适用于以下场景：当用户需要在Lite Server上启动新的开发、测试或部署任务时，可以通过此接口创建并配置任务。使用该接口的前提条件是用户具有创建任务的权限，并且提供的任务配置参数符合要求。创建操作完成后，新的Lite Server任务将被成功创建，并返回任务ID和其他相关信息。若用户无权限操作、提供的参数不正确或系统资源不足，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDevServerJob
-        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerJobRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateDevServerJobResponse`
-        """
-        http_info = self._create_dev_server_job_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dev_server_job_async_invoker(self, request):
-        http_info = self._create_dev_server_job_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_dev_server_job_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDevServerJobResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_hyper_cluster_async(self, request):
-        r"""创建Hyper Cluster
-
-        创建Hyper Cluster接口用于在系统中创建一个新的Hyper Cluster。该接口适用于以下场景：当用户需要使用超节点网络时，可以通过此接口创建Hyper Cluster。使用该接口的前提条件是用户已登录并具有创建Hyper Cluster的权限，且系统中已配置了必要的资源。创建操作完成后，将生成一个新的超节点网络，并返回超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作、系统中缺少必要的资源或配置参数无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateHyperCluster
-        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateHyperClusterRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateHyperClusterResponse`
-        """
-        http_info = self._create_hyper_cluster_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_hyper_cluster_async_invoker(self, request):
-        http_info = self._create_hyper_cluster_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_hyper_cluster_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateHyperClusterResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_hyperinstance_tags_async(self, request):
-        r"""创建Lite Server超节点标签
-
-        创建Lite Server超节点标签接口用于为Lite Server超节点添加自定义标签。该接口适用于以下场景：当用户需要对Lite Server超节点进行分类管理或标记特定信息时，可以通过此接口为指定的超节点创建标签。使用该接口的前提条件是Lite Server超节点已存在，用户具有创建标签的权限。创建操作完成后，标签将被成功添加到指定的超节点上，用户可以通过标签进行快速查找和管理。若Lite Server超节点不存在、标签已存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateHyperinstanceTags
-        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceTagsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateHyperinstanceTagsResponse`
-        """
-        http_info = self._create_hyperinstance_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_hyperinstance_tags_async_invoker(self, request):
-        http_info = self._create_hyperinstance_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_hyperinstance_tags_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags/create",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateHyperinstanceTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_roce_network_async(self, request):
-        r"""创建RoCE网络
-
-        创建RoCE网络接口用于在系统中创建一个新的RoCE网络。该接口适用于以下场景：当用户需要为高性能计算或低延迟应用创建专用的RoCE网络时，可以通过此接口创建并配置RoCE网络。使用该接口的前提条件是用户已登录并具有创建RoCE网络的权限，且系统中已配置了必要的网络资源。创建操作完成后，将生成一个新的RoCE网络，并返回网络的详细信息，包括网络ID、子网信息、配置参数等。若用户无权限操作、系统中缺少必要的网络资源或网络配置参数无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateRoceNetwork
-        :type request: :class:`huaweicloudsdkmodelarts.v1.CreateRoceNetworkRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.CreateRoceNetworkResponse`
-        """
-        http_info = self._create_roce_network_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_roce_network_async_invoker(self, request):
-        http_info = self._create_roce_network_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_roce_network_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/networks",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateRoceNetworkResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_dev_server_async(self, request):
-        r"""删除Lite Server实例
-
-        删除Lite Server实例接口用于移除已创建的Lite Server实例。该接口适用于以下场景：当Lite Server按需实例不再需要使用时或者创建失败的实例以及处于ERROR状态时，用户可通过此接口删除指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已存在且用户具有管理员权限。删除操作完成后，Lite Server实例将被永久移除，相关资源也将被清理。若Lite Server实例不存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerResponse`
-        """
-        http_info = self._delete_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_dev_server_async_invoker(self, request):
-        http_info = self._delete_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_dev_server_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_dev_server_jobs_async(self, request):
-        r"""批量删除Lite Server Job
-
-        批量删除Lite Server Job接口用于批量移除已创建的Lite Server Job。该接口适用于以下场景：当多个Lite Server Job已完成、配置错误或需要清理资源时，用户可以通过此接口批量删除指定的Lite Server Job。使用该接口的前提条件是目标Lite Server Job已存在且用户具有管理员权限。删除操作完成后，指定的Lite Server Job将被永久移除，相关资源和配置也将被清理。若目标Lite Server Job不存在、用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteDevServerJobs
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerJobsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteDevServerJobsResponse`
-        """
-        http_info = self._delete_dev_server_jobs_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_dev_server_jobs_async_invoker(self, request):
-        http_info = self._delete_dev_server_jobs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_dev_server_jobs_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteDevServerJobsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_hyper_cluster_async(self, request):
-        r"""删除Hyper Cluster实例
-
-        删除Hyper Cluster实例接口用于移除已创建的Hyper Cluster。该接口适用于以下场景：当超节点网络配置错误或需要清理资源时，用户可通过此接口删除指定的超节点网络。使用该接口的前提条件是Hyper Cluster实例已存在且用户具有管理员权限。删除操作完成后，超节点网络将被永久移除，相关资源和配置也将被清理。若Hyper Cluster实例不存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteHyperCluster
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperClusterRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperClusterResponse`
-        """
-        http_info = self._delete_hyper_cluster_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_hyper_cluster_async_invoker(self, request):
-        http_info = self._delete_hyper_cluster_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_hyper_cluster_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteHyperClusterResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_hyperinstance_async(self, request):
-        r"""删除Lite Server超节点实例
-
-        删除Lite Server超节点实例接口用于删除按需超节点实例同时移除处于ERROR状态的Lite Server超节点实例。该接口适用于以下场景：当超节点实例因创建失败、或其他原因进入ERROR状态；按需超节点实例，用户可以通过此接口删除指定的超节点实例。使用该接口的前提条件是用户已登录并具有删除超节点实例的权限，且指定的超节点实例是按需且处于运行状态、或者处于ERROR状态。删除操作完成后，指定的超节点实例将被永久移除，相关资源也将被清理。若指定的超节点实例不存在、未处于ERROR状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceResponse`
-        """
-        http_info = self._delete_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_hyperinstance_async_invoker(self, request):
-        http_info = self._delete_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_hyperinstance_tags_async(self, request):
-        r"""删除Lite Server超节点标签
-
-        删除Lite Server超节点标签接口用于移除已创建的Lite Server超节点标签。该接口适用于以下场景：当用户需要清理不再需要的标签或修正标签错误时，可以通过此接口删除指定的超节点标签。使用该接口的前提条件是Lite Server超节点已存在，且该超节点上已存在要删除的标签，用户具有删除标签的权限。删除操作完成后，指定的标签将从超节点上移除，超节点的其他配置和数据保持不变。若Lite Server超节点不存在、标签不存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteHyperinstanceTags
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceTagsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DeleteHyperinstanceTagsResponse`
-        """
-        http_info = self._delete_hyperinstance_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_hyperinstance_tags_async_invoker(self, request):
-        http_info = self._delete_hyperinstance_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_hyperinstance_tags_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags/delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteHyperinstanceTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def detach_dev_server_volume_async(self, request):
-        r"""Lite Server服务器卸载磁盘
-
-        Lite Server服务器卸载磁盘接口用于从Lite Server服务器上卸载已挂载的磁盘。该接口适用于以下场景：当用户需要释放存储资源或重新分配磁盘时，可以通过此接口卸载指定的磁盘。使用该接口的前提条件是Lite Server服务器已创建且处于运行状态、或者停止状态，用户具有卸载磁盘的权限，且指定的磁盘已挂载到服务器上。卸载操作完成后，磁盘将从Lite Server服务器上成功卸载，用户可以将其挂载到其他服务器或进行其他操作。若Lite Server服务器不存在、指定的磁盘未挂载到服务器上，或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DetachDevServerVolume
-        :type request: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerVolumeRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerVolumeResponse`
-        """
-        http_info = self._detach_dev_server_volume_http_info(request)
-        return self._call_api(**http_info)
-
-    def detach_dev_server_volume_async_invoker(self, request):
-        http_info = self._detach_dev_server_volume_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _detach_dev_server_volume_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/detachvolume/{volume_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DetachDevServerVolumeResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-        if 'volume_id' in local_var_params:
-            path_params['volume_id'] = local_var_params['volume_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_dev_server_image_async(self, request):
-        r"""查询Lite Server镜像详情
-
-        查询Lite Server镜像详情接口用于获取指定Lite Server镜像的详细信息。该接口适用于以下场景：当用户需要了解某个Lite Server镜像的具体配置和属性，以便在创建或调整Lite Server实例时选择合适的镜像时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询镜像详情的权限，且指定的镜像已存在。查询操作完成后，接口将返回指定Lite Server镜像的详细信息，包括镜像ID、名称、操作系统、版本、创建时间等。若用户无权限操作、指定的镜像不存在或镜像ID无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetDevServerImage
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerImageRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerImageResponse`
-        """
-        http_info = self._get_dev_server_image_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_dev_server_image_async_invoker(self, request):
-        http_info = self._get_dev_server_image_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_dev_server_image_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/images/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetDevServerImageResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_dev_server_job_async(self, request):
-        r"""查询Lite Server Job详情
-
-        查询Lite Server Job详情接口用于获取指定Lite Server Job的详细信息。该接口适用于以下场景：当用户需要查看某个Lite Server Job的执行状态、配置参数、日志信息等详细数据时，可以通过此接口获取相关信息。使用该接口的前提条件是目标Lite Server Job已存在且用户具有查看权限。查询操作完成后，接口将返回指定Lite Server Job的详细信息，包括但不限于Job ID、状态、创建时间、执行时间、配置参数和日志等。若目标Lite Server Job不存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetDevServerJob
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobResponse`
-        """
-        http_info = self._get_dev_server_job_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_dev_server_job_async_invoker(self, request):
-        http_info = self._get_dev_server_job_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_dev_server_job_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetDevServerJobResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_dev_server_job_service_async(self, request):
-        r"""获取Lite Server 部署服务详情
-
-        根据服务id获取Lite Server部署服务详情。该接口适用于以下场景：当用户需要查看部署服务详情，以便查看已部署服务的状态、api等信息时，可以通过此接口获取服务详情。使用该接口的前提条件是用户具有查看服务的权限。查询操作完成后，接口将返回此部署服务的详细信息，包括名称、状态、描述、所用模型、实例详情等信息。若用户无权限操作或无相应id，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetDevServerJobService
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobServiceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobServiceResponse`
-        """
-        http_info = self._get_dev_server_job_service_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_dev_server_job_service_async_invoker(self, request):
-        http_info = self._get_dev_server_job_service_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_dev_server_job_service_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs/services/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetDevServerJobServiceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_dev_server_job_template_async(self, request):
-        r"""获取Lite Server Job模板详情
-
-        获取Lite Server Job模板详情接口用于获取指定Lite Server Job模板的详细信息。该接口适用于以下场景：当用户需要查看某个特定Job模板的详细配置，以便了解其参数设置、使用说明等信息时，可以通过此接口获取模板详情。查询操作完成后，接口将返回指定模板的详细信息，包括模板ID、名称、描述、配置参数等。若目标模板不存在，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetDevServerJobTemplate
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobTemplateRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerJobTemplateResponse`
-        """
-        http_info = self._get_dev_server_job_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_dev_server_job_template_async_invoker(self, request):
-        http_info = self._get_dev_server_job_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_dev_server_job_template_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs/templates/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetDevServerJobTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_dev_server_operation_async(self, request):
-        r"""查询Operation详情
-
-        查询Operation详情接口用于获取指定Operation的详细信息。该接口适用于以下场景：当用户需要了解某个Operation的具体执行情况和状态，以便进行故障排查或操作审计时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Operation详情的权限，且指定的Operation已存在。查询操作完成后，接口将返回指定Operation的详细信息，包括Operation ID、操作类型、执行状态、开始时间、结束时间、操作结果等。若用户无权限操作、指定的Operation不存在或Operation ID无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetDevServerOperation
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetDevServerOperationRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetDevServerOperationResponse`
-        """
-        http_info = self._get_dev_server_operation_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_dev_server_operation_async_invoker(self, request):
-        http_info = self._get_dev_server_operation_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_dev_server_operation_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/operation/{operation_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetDevServerOperationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-        if 'operation_id' in local_var_params:
-            path_params['operation_id'] = local_var_params['operation_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_hyper_cluster_async(self, request):
-        r"""查询Hyper Cluster实例详情
-
-        查询Hyper Cluster实例详情接口用于获取指定Hyper Cluster实例的详细信息。该接口适用于以下场景：当用户需要了解某个超节点网络的具体配置和状态，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Hyper Cluster详情的权限，且指定的超节点网络已存在。查询操作完成后，接口将返回指定超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作、指定的超节点网络不存在或ID无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetHyperCluster
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetHyperClusterRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetHyperClusterResponse`
-        """
-        http_info = self._get_hyper_cluster_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_hyper_cluster_async_invoker(self, request):
-        http_info = self._get_hyper_cluster_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_hyper_cluster_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetHyperClusterResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_hyperinstance_async(self, request):
-        r"""查询指定超节点实例详情
-
-        查询指定超节点实例详情接口用于获取特定Lite Server超节点实例的详细信息。该接口适用于以下场景：当用户需要查看某个具体超节点实例的配置、状态和使用情况时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点实例的权限，且指定的超节点实例已存在。查询操作完成后，接口将返回指定超节点实例的详细信息，包括实例ID、操作系统、运行状态、资源使用情况等。若用户无权限操作、指定的超节点实例不存在或实例ID无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetHyperinstanceResponse`
-        """
-        http_info = self._get_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_hyperinstance_async_invoker(self, request):
-        http_info = self._get_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_scale_evaluations_dev_server_async(self, request):
-        r"""查询Lite Server超节点扩缩容支持规格列表及容量测算
-
-        查询Lite Server超节点扩缩容支持规格列表及容量测算接口用于获取Lite Server超节点支持的扩缩容规格列表，并进行容量测算。该接口适用于以下场景：当用户需要了解Lite Server超节点支持的扩缩容选项，以便在调整超节点资源时选择合适的规格，并评估扩缩容后的资源需求时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点扩缩容规格的权限，且指定的超节点已存在。查询操作完成后，接口将返回支持的扩缩容规格列表及容量测算结果，包括规格ID、CPU、内存、存储等详细配置和扩缩容后的资源使用情况。若用户无权限操作、指定的超节点不存在或系统中没有可用的扩缩容规格，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetScaleEvaluationsDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetScaleEvaluationsDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetScaleEvaluationsDevServerResponse`
-        """
-        http_info = self._get_scale_evaluations_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_scale_evaluations_dev_server_async_invoker(self, request):
-        http_info = self._get_scale_evaluations_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_scale_evaluations_dev_server_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/scale-evaluations",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetScaleEvaluationsDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_topologies_async(self, request):
-        r"""查询实例的Tor信息
-
-        查询实例的Tor信息接口用于获取指定实例的Top-of-Rack（Tor）交换机相关信息。该接口适用于以下场景：当用户需要了解实例连接的Tor交换机的详细信息，以便进行网络配置时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询实例Tor信息的权限，且指定的实例已存在。查询操作完成后，接口将返回指定实例的Tor信息。若用户无权限操作、指定的实例不存在或实例未连接到Tor交换机，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetTopologies
-        :type request: :class:`huaweicloudsdkmodelarts.v1.GetTopologiesRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.GetTopologiesResponse`
-        """
-        http_info = self._get_topologies_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_topologies_async_invoker(self, request):
-        http_info = self._get_topologies_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_topologies_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/instance-physical-topologies",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetTopologiesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'resource_id' in local_var_params:
-            query_params.append(('resource_id', local_var_params['resource_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_all_dev_servers_async(self, request):
-        r"""查询租户Lite Server列表
-
-        查询租户Lite Server列表接口用于获取指定租户的所有Lite Server实例信息。该接口适用于以下场景：当用户需要查看其租户下所有Lite Server实例的详细信息，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询租户Lite Server列表的权限。查询操作完成后，接口将返回租户下所有Lite Server实例的详细信息，包括实例ID、名称、状态、资源配置等。若用户无权限操作或租户下没有Lite Server实例，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAllDevServers
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAllDevServersRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAllDevServersResponse`
-        """
-        http_info = self._list_all_dev_servers_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_all_dev_servers_async_invoker(self, request):
-        http_info = self._list_all_dev_servers_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_all_dev_servers_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/all",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAllDevServersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_all_hyperinstances_async(self, request):
-        r"""查询租户Hyperinstance列表
-
-        查询租户Hyperinstance列表接口用于获取指定租户的所有Hyperinstance实例信息。该接口适用于以下场景：当用户需要查看其租户下所有Hyperinstance实例的详细信息，以便进行管理和监控时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询租户Hyperinstance列表的权限。查询操作完成后，接口将返回租户下所有Hyperinstance实例的详细信息，包括实例ID、名称、状态、资源配置等。若用户无权限操作或租户下没有Hyperinstance实例，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListAllHyperinstances
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListAllHyperinstancesRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListAllHyperinstancesResponse`
-        """
-        http_info = self._list_all_hyperinstances_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_all_hyperinstances_async_invoker(self, request):
-        http_info = self._list_all_hyperinstances_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_all_hyperinstances_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/all",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAllHyperinstancesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_server_flavors_async(self, request):
-        r"""查询规格列表
-
-        查询规格列表接口用于获取系统中所有可用的资源规格信息。该接口适用于以下场景：当用户需要了解可用的资源规格，以便在创建或调整Lite Server实例时选择合适的配置时，可以通过此接口获取规格列表。使用该接口的前提条件是用户已登录并具有查询规格的权限。查询操作完成后，接口将返回所有可用的资源规格信息，包括规格ID、CPU、内存、存储等详细配置。若用户无权限操作或系统中没有可用的资源规格，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServerFlavors
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerFlavorsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerFlavorsResponse`
-        """
-        http_info = self._list_dev_server_flavors_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_server_flavors_async_invoker(self, request):
-        http_info = self._list_dev_server_flavors_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_server_flavors_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/flavors",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServerFlavorsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'server_type' in local_var_params:
-            query_params.append(('server_type', local_var_params['server_type']))
-        if 'arch' in local_var_params:
-            query_params.append(('arch', local_var_params['arch']))
-        if 'charging_mode' in local_var_params:
-            query_params.append(('charging_mode', local_var_params['charging_mode']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_server_images_async(self, request):
-        r"""查询Lite Server镜像列表
-
-        查询Lite Server镜像列表接口用于获取系统中所有可用的Lite Server镜像信息。该接口适用于以下场景：当用户需要了解可用的Lite Server镜像，以便在创建或调整Lite Server实例时选择合适的镜像时，可以通过此接口获取镜像列表。使用该接口的前提条件是用户已登录并具有查询镜像列表的权限。查询操作完成后，接口将返回所有可用的Lite Server镜像信息，包括镜像ID、名称、架构类型等。若用户无权限操作或系统中没有可用的镜像，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServerImages
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerImagesRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerImagesResponse`
-        """
-        http_info = self._list_dev_server_images_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_server_images_async_invoker(self, request):
-        http_info = self._list_dev_server_images_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_server_images_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/images",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServerImagesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'server_type' in local_var_params:
-            query_params.append(('server_type', local_var_params['server_type']))
-        if 'flavor_name' in local_var_params:
-            query_params.append(('flavor_name', local_var_params['flavor_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_server_job_templates_async(self, request):
-        r"""获取Lite Server Job模板列表
-
-        获取Lite Server Job模板列表接口用于获取可用的Lite Server Job模板列表。该接口适用于以下场景：当用户需要查看可用的Job模板，以便选择合适的模板来创建新的Lite Server任务时，可以通过此接口获取模板列表。查询操作完成后，接口将返回所有可用的Lite Server Job模板列表，包括模板ID、名称、描述等信息。若系统中无可用模板，接口将返回相应的信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServerJobTemplates
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobTemplatesRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobTemplatesResponse`
-        """
-        http_info = self._list_dev_server_job_templates_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_server_job_templates_async_invoker(self, request):
-        http_info = self._list_dev_server_job_templates_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_server_job_templates_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs/templates",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServerJobTemplatesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_server_jobs_async(self, request):
-        r"""查询Lite Server Job列表
-
-        查询Lite Server Job列表接口用于获取Lite Server Job的列表信息，并支持按照状态、ID等相关字段进行过滤。该接口适用于以下场景：当用户需要查看多个Lite Server Job的概要信息，例如在监控作业状态、排查问题或进行日常管理时，可以通过此接口获取符合过滤条件的Job列表。使用该接口的前提条件是用户具有查看权限。查询操作完成后，接口将返回符合条件的Lite Server Job列表，包括每个Job的ID、状态、创建时间等基本信息。若用户无权限操作或请求参数不正确，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServerJobs
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerJobsResponse`
-        """
-        http_info = self._list_dev_server_jobs_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_server_jobs_async_invoker(self, request):
-        http_info = self._list_dev_server_jobs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_server_jobs_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/jobs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServerJobsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'visible' in local_var_params:
-            query_params.append(('visible', local_var_params['visible']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_server_public_ip_async(self, request):
-        r"""查询已绑定的EIP
-
-        查询已绑定的EIP接口用于获取已绑定到Lite Server服务器上的弹性公网IP（EIP）信息。该接口适用于以下场景：当用户需要查看Lite Server服务器上已绑定的EIP及其详细信息时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询EIP的权限，且指定的Lite Server服务器已存在。查询操作完成后，接口将返回已绑定到Lite Server服务器上的EIP的详细信息，包括EIP地址、绑定时间、状态等。若Lite Server服务器不存在、未绑定EIP或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServerPublicIP
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServerPublicIPRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServerPublicIPResponse`
-        """
-        http_info = self._list_dev_server_public_ip_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_server_public_ip_async_invoker(self, request):
-        http_info = self._list_dev_server_public_ip_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_server_public_ip_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/publicips",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServerPublicIPResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dev_servers_async(self, request):
-        r"""查询用户所有Lite Server实例列表
-
-        查询用户所有Lite Server实例列表接口用于获取用户名下所有Lite Server实例的详细信息。该接口适用于以下场景：用户需要查看其所有Lite Server实例的状态、配置等信息，以便进行资源管理和监控。使用该接口的前提条件是用户已登录且具有查看Lite Server实例的权限。调用此接口后，系统将返回用户名下所有Lite Server实例的列表，包括实例ID、名称、状态、创建时间等信息。若用户无权限或未登录，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDevServers
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListDevServersRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListDevServersResponse`
-        """
-        http_info = self._list_dev_servers_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dev_servers_async_invoker(self, request):
-        http_info = self._list_dev_servers_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dev_servers_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDevServersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'owner' in local_var_params:
-            query_params.append(('owner', local_var_params['owner']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_hyper_cluster_async(self, request):
-        r"""查询Hyper Cluster详情列表
-
-        查询Hyper Cluster详情列表接口用于获取所有Hyper Cluster的详细信息。该接口适用于以下场景：当用户需要了解系统中所有超节点网络的配置和状态时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询Hyper Cluster详情的权限。查询操作完成后，接口将返回所有超节点网络的详细信息，包括ID、名称、子网信息等。若用户无权限操作或系统中没有Hyper Cluster，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListHyperCluster
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperClusterRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperClusterResponse`
-        """
-        http_info = self._list_hyper_cluster_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_hyper_cluster_async_invoker(self, request):
-        http_info = self._list_hyper_cluster_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_hyper_cluster_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyper-clusters",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListHyperClusterResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_hyperinstance_clusters_capacity_async(self, request):
-        r"""查询超节点hyperinstance-clusters逻辑容量测算结果
-
-        查询超节点hyperinstance-clusters逻辑容量测算结果接口用于获取指定超节点集群的逻辑容量测算结果。该接口适用于以下场景：当用户需要了解超节点集群的资源使用情况和容量规划，以便进行资源管理和优化时，可以通过此接口获取逻辑容量测算结果。使用该接口的前提条件是用户已登录并具有查询超节点集群逻辑容量的权限，且指定的超节点集群已存在。查询操作完成后，接口将返回指定超节点集群的逻辑容量测算结果，包括可用容量信息。若用户无权限操作、指定的超节点集群不存在或集群ID无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListHyperinstanceClustersCapacity
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceClustersCapacityRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstanceClustersCapacityResponse`
-        """
-        http_info = self._list_hyperinstance_clusters_capacity_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_hyperinstance_clusters_capacity_async_invoker(self, request):
-        http_info = self._list_hyperinstance_clusters_capacity_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_hyperinstance_clusters_capacity_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/cluster-capacity-evaluations",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListHyperinstanceClustersCapacityResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_hyperinstances_async(self, request):
-        r"""查询用户所有超节点实例详情
-
-        查询用户所有超节点实例详情接口用于获取用户所有Lite Server超节点实例的详细信息。该接口适用于以下场景：当用户需要查看其所有超节点实例的配置、状态和使用情况时，可以通过此接口获取相关信息。使用该接口的前提条件是用户已登录并具有查询超节点实例的权限。查询操作完成后，接口将返回所有超节点实例的详细信息，包括实例ID、操作系统、运行状态、资源使用情况等。若用户无权限操作或没有超节点实例，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListHyperinstances
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstancesRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListHyperinstancesResponse`
-        """
-        http_info = self._list_hyperinstances_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_hyperinstances_async_invoker(self, request):
-        http_info = self._list_hyperinstances_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_hyperinstances_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListHyperinstancesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def query_hyperinstance_tags_async(self, request):
-        r"""查询Lite Server超节点标签
-
-        查询Lite Server超节点标签接口用于获取Lite Server超节点上的所有标签信息。该接口适用于以下场景：当用户需要查看或管理Lite Server超节点的标签时，可以通过此接口查询指定超节点上的所有标签。使用该接口的前提条件是Lite Server超节点已存在，用户具有查询标签的权限。查询操作完成后，接口将返回超节点上的所有标签信息，包括标签名称和相关属性。若Lite Server超节点不存在或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for QueryHyperinstanceTags
-        :type request: :class:`huaweicloudsdkmodelarts.v1.QueryHyperinstanceTagsRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.QueryHyperinstanceTagsResponse`
-        """
-        http_info = self._query_hyperinstance_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def query_hyperinstance_tags_async_invoker(self, request):
-        http_info = self._query_hyperinstance_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _query_hyperinstance_tags_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "QueryHyperinstanceTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def reboot_dev_server_async(self, request):
-        r"""重启Lite Server实例
-
-        重启Lite Server实例接口用于重启正在运行的Lite Server实例。该接口适用于以下场景：当用户需要重启实例以应用配置更改、解决运行问题或进行系统维护时，可以通过此接口重启指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于运行状态，用户具有重启实例的权限。重启操作完成后，Lite Server实例将重新启动并进入运行状态，用户可以继续使用实例提供的服务。若Lite Server实例不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for RebootDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.RebootDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.RebootDevServerResponse`
-        """
-        http_info = self._reboot_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def reboot_dev_server_async_invoker(self, request):
-        http_info = self._reboot_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _reboot_dev_server_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/reboot",
-            "request_type": request.__class__.__name__,
-            "response_type": "RebootDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def reinstall_dev_server_os_async(self, request):
-        r"""重装Lite Server服务器操作系统镜像
-
-        重装Lite Server服务器操作系统镜像接口用于重新安装Lite Server服务器的操作系统镜像。该接口适用于以下场景：当用户需要更新操作系统版本、修复系统故障或重新配置系统环境时，可以通过此接口重装指定的Lite Server服务器操作系统镜像。使用该接口的前提条件是Lite Server服务器已存在且处于停止状态，用户具有重装操作系统的权限。重装操作完成后，Lite Server服务器将安装新的操作系统镜像，并重新进入运行状态，若Lite Server服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ReinstallDevServerOS
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ReinstallDevServerOSRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ReinstallDevServerOSResponse`
-        """
-        http_info = self._reinstall_dev_server_os_http_info(request)
-        return self._call_api(**http_info)
-
-    def reinstall_dev_server_os_async_invoker(self, request):
-        http_info = self._reinstall_dev_server_os_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _reinstall_dev_server_os_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/reinstallos",
-            "request_type": request.__class__.__name__,
-            "response_type": "ReinstallDevServerOSResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def scale_down_hyperinstance_async(self, request):
-        r"""缩容Lite Server超节点
-
-        缩容Lite Server超节点接口用于减少Lite Server超节点的资源容量。该接口适用于以下场景：当用户需要降低Lite Server超节点的资源使用，以节省成本或优化资源分配时，可以通过此接口进行缩容。使用该接口的前提条件是用户已登录并具有缩容超节点的权限，且指定的超节点已存在且处于运行状态。缩容操作完成后，超节点的资源容量将根据指定的规格进行调整，用户可以立即使用减少后的资源。若用户无权限操作、指定的超节点不存在、超节点已处于最小容量或指定的缩容规格无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ScaleDownHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ScaleDownHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ScaleDownHyperinstanceResponse`
-        """
-        http_info = self._scale_down_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def scale_down_hyperinstance_async_invoker(self, request):
-        http_info = self._scale_down_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _scale_down_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/live-scale-down",
-            "request_type": request.__class__.__name__,
-            "response_type": "ScaleDownHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def scale_up_hyperinstance_async(self, request):
-        r"""扩容Lite Server超节点
-
-        扩容Lite Server超节点接口用于增加Lite Server超节点的资源容量。该接口适用于以下场景：当用户需要提升Lite Server超节点的性能，以支持更多的负载或更大的数据处理需求时，可以通过此接口进行扩容。使用该接口的前提条件是用户已登录并具有扩容超节点的权限，且指定的超节点已存在且处于运行状态。扩容操作完成后，超节点的资源容量将根据指定的规格进行调整，用户可以立即使用增加的资源。若用户无权限操作、指定的超节点不存在、超节点已处于最大容量或指定的扩容规格无效，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ScaleUpHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ScaleUpHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ScaleUpHyperinstanceResponse`
-        """
-        http_info = self._scale_up_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def scale_up_hyperinstance_async_invoker(self, request):
-        http_info = self._scale_up_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _scale_up_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/live-scale-up",
-            "request_type": request.__class__.__name__,
-            "response_type": "ScaleUpHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_dev_server_async(self, request):
-        r"""查询Lite Server实例详情
-
-        查询Lite Server实例详情接口用于获取指定Lite Server实例的详细信息。该接口适用于以下场景：用户需要查看特定Lite Server实例的配置、状态、网络信息等详细数据，以便进行故障排查、资源管理和监控。使用该接口的前提条件是用户已登录且具有查看Lite Server实例的权限，并且需要提供有效的实例ID。查询操作完成后，系统将返回指定Lite Server实例的详细信息，包括实例ID、名称、状态、配置、网络配置等。若用户无权限、实例ID无效或实例不存在，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowDevServerResponse`
-        """
-        http_info = self._show_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_dev_server_async_invoker(self, request):
-        http_info = self._show_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_dev_server_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def start_dev_server_async(self, request):
-        r"""启动Lite Server实例
-
-        启动Lite Server实例接口用于启动已创建但未运行的Lite Server实例。该接口适用于以下场景：当用户需要开始使用Lite Server实例进行开发或测试时，可以通过此接口启动指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于停止状态，用户具有启动实例的权限。若Lite Server实例不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for StartDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.StartDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.StartDevServerResponse`
-        """
-        http_info = self._start_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def start_dev_server_async_invoker(self, request):
-        http_info = self._start_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _start_dev_server_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/start",
-            "request_type": request.__class__.__name__,
-            "response_type": "StartDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def start_hyperinstance_async(self, request):
-        r"""启动Lite Server超节点服务器
-
-        启动Lite Server超节点服务器接口用于启动已创建但未运行的Lite Server超节点服务器。该接口适用于以下场景：当用户需要开始使用Lite Server超节点服务器进行开发或测试时，可以通过此接口启动指定的超节点服务器。使用该接口的前提条件是Lite Server超节点服务器已创建且处于停止状态，用户具有启动超节点服务器的权限。启动操作完成后，超节点服务器将进入运行状态，用户可以访问和使用服务器提供的服务。若Lite Server超节点服务器不存在、已处于运行状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for StartHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.StartHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.StartHyperinstanceResponse`
-        """
-        http_info = self._start_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def start_hyperinstance_async_invoker(self, request):
-        http_info = self._start_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _start_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/start",
-            "request_type": request.__class__.__name__,
-            "response_type": "StartHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def stop_dev_server_async(self, request):
-        r"""停止Lite Server实例
-
-        停止Lite Server实例接口用于停止正在运行的Lite Server实例。该接口适用于以下场景：当用户需要停止Lite Server实例，以节省资源或进行维护时，可以通过此接口停止指定的Lite Server实例。使用该接口的前提条件是Lite Server实例已创建且处于运行状态，用户具有停止实例的权限。若Lite Server实例不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for StopDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.StopDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.StopDevServerResponse`
-        """
-        http_info = self._stop_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def stop_dev_server_async_invoker(self, request):
-        http_info = self._stop_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _stop_dev_server_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}/stop",
-            "request_type": request.__class__.__name__,
-            "response_type": "StopDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def stop_hyperinstance_async(self, request):
-        r"""停止Lite Server超节点服务器
-
-        停止Lite Server超节点服务器接口用于停止正在运行的Lite Server超节点服务器。该接口适用于以下场景：当用户需要暂停使用Lite Server超节点服务器，以节省资源或进行维护时，可以通过此接口停止指定的超节点服务器。使用该接口的前提条件是Lite Server超节点服务器已创建且处于运行状态或者停止失败状态，用户具有停止超节点服务器的权限。停止操作完成后，超节点服务器将进入停止状态，不再提供服务。若Lite Server超节点服务器不存在、已处于停止状态或用户无权限操作，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for StopHyperinstance
-        :type request: :class:`huaweicloudsdkmodelarts.v1.StopHyperinstanceRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.StopHyperinstanceResponse`
-        """
-        http_info = self._stop_hyperinstance_http_info(request)
-        return self._call_api(**http_info)
-
-    def stop_hyperinstance_async_invoker(self, request):
-        http_info = self._stop_hyperinstance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _stop_hyperinstance_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/hyperinstance/{id}/stop",
-            "request_type": request.__class__.__name__,
-            "response_type": "StopHyperinstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def sync_dev_servers_async(self, request):
-        r"""实时同步用户指定Lite Server实例状态
-
-        实时同步用户Lite Server实例状态接口用于实时获取并同步用户Lite Server实例的当前状态。该接口适用于以下场景：用户需要实时监控其Lite Server实例的运行状态，确保实例正常运行或及时发现并处理异常情况。使用该接口的前提条件是用户已登录并具有相应的权限，且Lite Server实例已创建并处于运行状态。接口调用成功后，将返回Lite Server实例的最新状态信息，包括但不限于实例ID、运行状态、资源使用情况等。若用户无权限操作或Lite Server实例不存在，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SyncDevServers
-        :type request: :class:`huaweicloudsdkmodelarts.v1.SyncDevServersRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.SyncDevServersResponse`
-        """
-        http_info = self._sync_dev_servers_http_info(request)
-        return self._call_api(**http_info)
-
-    def sync_dev_servers_async_invoker(self, request):
-        http_info = self._sync_dev_servers_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _sync_dev_servers_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/sync",
-            "request_type": request.__class__.__name__,
-            "response_type": "SyncDevServersResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'owner' in local_var_params:
-            query_params.append(('owner', local_var_params['owner']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_dev_server_async(self, request):
-        r"""修改Lite Server实例名称
-
-        修改DevServer实例名称接口用于更改已创建的DevServer实例的名称。该接口适用于以下场景：当用户需要对DevServer实例进行重命名以更好地反映实例的功能或用途时，或者在实例名称不再符合当前项目命名规范时进行更新。使用该接口的前提条件是DevServer实例已存在且用户具有对该实例的管理权限。修改操作完成后，实例的新名称将立即生效，并在所有相关视图和记录中更新。若DevServer实例不存在、用户无权限操作或新名称不符合命名规则，接口将返回相应的错误信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateDevServer
-        :type request: :class:`huaweicloudsdkmodelarts.v1.UpdateDevServerRequest`
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.UpdateDevServerResponse`
-        """
-        http_info = self._update_dev_server_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_dev_server_async_invoker(self, request):
-        http_info = self._update_dev_server_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_dev_server_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/dev-servers/{id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateDevServerResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'id' in local_var_params:
-            path_params['id'] = local_var_params['id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['ApiTokenAuth']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_image_async(self, request):
         r"""通过运行的实例保存成容器镜像
 
@@ -15818,6 +15885,16 @@ class ModelArtsAsyncClient(Client):
             query_params.append(('billing', local_var_params['billing']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'swr_path' in local_var_params:
+            query_params.append(('swr_path', local_var_params['swr_path']))
+        if 'pool_name' in local_var_params:
+            query_params.append(('pool_name', local_var_params['pool_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'username' in local_var_params:
+            query_params.append(('username', local_var_params['username']))
 
         header_params = {}
 
@@ -16128,6 +16205,16 @@ class ModelArtsAsyncClient(Client):
             query_params.append(('billing', local_var_params['billing']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'swr_path' in local_var_params:
+            query_params.append(('swr_path', local_var_params['swr_path']))
+        if 'pool_name' in local_var_params:
+            query_params.append(('pool_name', local_var_params['pool_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'username' in local_var_params:
+            query_params.append(('username', local_var_params['username']))
 
         header_params = {}
 

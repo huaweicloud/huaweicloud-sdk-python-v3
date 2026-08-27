@@ -29,7 +29,8 @@ class BackupV3:
         'backup_level': 'str',
         'backup_method': 'str',
         'use_detail': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'backup_mode': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class BackupV3:
         'backup_level': 'backup_level',
         'backup_method': 'backup_method',
         'use_detail': 'use_detail',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'backup_mode': 'backup_mode'
     }
 
-    def __init__(self, id=None, description=None, instance_id=None, instance_name=None, name=None, size=None, size_unit=None, status=None, created=None, updated=None, backup_type=None, backup_level=None, backup_method=None, use_detail=None, time_zone=None):
+    def __init__(self, id=None, description=None, instance_id=None, instance_name=None, name=None, size=None, size_unit=None, status=None, created=None, updated=None, backup_type=None, backup_level=None, backup_method=None, use_detail=None, time_zone=None, backup_mode=None):
         r"""BackupV3
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class BackupV3:
         :type use_detail: str
         :param time_zone: **参数解释**： UTC时区。 **取值范围**： 不涉及。
         :type time_zone: str
+        :param backup_mode: **参数解释**： 备份类型。 **取值范围**： - differential：差量备份。 - completed：全量备份。
+        :type backup_mode: str
         """
         
         
@@ -104,6 +108,7 @@ class BackupV3:
         self._backup_method = None
         self._use_detail = None
         self._time_zone = None
+        self._backup_mode = None
         self.discriminator = None
 
         if id is not None:
@@ -136,6 +141,8 @@ class BackupV3:
             self.use_detail = use_detail
         if time_zone is not None:
             self.time_zone = time_zone
+        if backup_mode is not None:
+            self.backup_mode = backup_mode
 
     @property
     def id(self):
@@ -466,6 +473,28 @@ class BackupV3:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def backup_mode(self):
+        r"""Gets the backup_mode of this BackupV3.
+
+        **参数解释**： 备份类型。 **取值范围**： - differential：差量备份。 - completed：全量备份。
+
+        :return: The backup_mode of this BackupV3.
+        :rtype: str
+        """
+        return self._backup_mode
+
+    @backup_mode.setter
+    def backup_mode(self, backup_mode):
+        r"""Sets the backup_mode of this BackupV3.
+
+        **参数解释**： 备份类型。 **取值范围**： - differential：差量备份。 - completed：全量备份。
+
+        :param backup_mode: The backup_mode of this BackupV3.
+        :type backup_mode: str
+        """
+        self._backup_mode = backup_mode
 
     def to_dict(self):
         result = {}
