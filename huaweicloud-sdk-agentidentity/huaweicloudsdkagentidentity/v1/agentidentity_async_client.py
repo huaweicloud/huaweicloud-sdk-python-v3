@@ -622,6 +622,69 @@ class AgentIdentityAsyncClient(Client):
 
         return http_info
 
+    def list_identity_providers_async(self, request):
+        r"""查询身份提供商
+
+        Lists identity providers.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListIdentityProviders
+        :type request: :class:`huaweicloudsdkagentidentity.v1.ListIdentityProvidersRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.ListIdentityProvidersResponse`
+        """
+        http_info = self._list_identity_providers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_identity_providers_async_invoker(self, request):
+        http_info = self._list_identity_providers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_identity_providers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/identity-providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIdentityProvidersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def oauth2_authorize_async(self, request):
         r"""OAuth2.0 Pushed Authorization Request (PAR) standard authorize API
 
@@ -1089,6 +1152,745 @@ class AgentIdentityAsyncClient(Client):
 
         return http_info
 
+    def create_policy_async(self, request):
+        r"""在指定策略集中创建策略
+
+        Creates a new policy in the specified policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePolicy
+        :type request: :class:`huaweicloudsdkagentidentity.v1.CreatePolicyRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.CreatePolicyResponse`
+        """
+        http_info = self._create_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_policy_async_invoker(self, request):
+        http_info = self._create_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_policy_async(self, request):
+        r"""删除策略
+
+        Deletes a policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePolicy
+        :type request: :class:`huaweicloudsdkagentidentity.v1.DeletePolicyRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.DeletePolicyResponse`
+        """
+        http_info = self._delete_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_policy_async_invoker(self, request):
+        http_info = self._delete_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_policy_async(self, request):
+        r"""查询策略详情
+
+        Gets details of a specific policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetPolicy
+        :type request: :class:`huaweicloudsdkagentidentity.v1.GetPolicyRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.GetPolicyResponse`
+        """
+        http_info = self._get_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_policy_async_invoker(self, request):
+        http_info = self._get_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_policies_async(self, request):
+        r"""查询策略列表
+
+        Lists policies in the specified policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPolicies
+        :type request: :class:`huaweicloudsdkagentidentity.v1.ListPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.ListPoliciesResponse`
+        """
+        http_info = self._list_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_policies_async_invoker(self, request):
+        http_info = self._list_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_policy_async(self, request):
+        r"""更新策略
+
+        Updates an existing policy.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePolicy
+        :type request: :class:`huaweicloudsdkagentidentity.v1.UpdatePolicyRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.UpdatePolicyResponse`
+        """
+        http_info = self._update_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_policy_async_invoker(self, request):
+        http_info = self._update_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_policy_engine_async(self, request):
+        r"""创建策略集
+
+        Creates a new policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePolicyEngine
+        :type request: :class:`huaweicloudsdkagentidentity.v1.CreatePolicyEngineRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.CreatePolicyEngineResponse`
+        """
+        http_info = self._create_policy_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_policy_engine_async_invoker(self, request):
+        http_info = self._create_policy_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_policy_engine_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/policy-engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_policy_engine_async(self, request):
+        r"""删除策略集
+
+        Deletes a policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePolicyEngine
+        :type request: :class:`huaweicloudsdkagentidentity.v1.DeletePolicyEngineRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.DeletePolicyEngineResponse`
+        """
+        http_info = self._delete_policy_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_policy_engine_async_invoker(self, request):
+        http_info = self._delete_policy_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_policy_engine_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_policy_engine_async(self, request):
+        r"""查询策略集详情
+
+        Gets details of a policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetPolicyEngine
+        :type request: :class:`huaweicloudsdkagentidentity.v1.GetPolicyEngineRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.GetPolicyEngineResponse`
+        """
+        http_info = self._get_policy_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_policy_engine_async_invoker(self, request):
+        http_info = self._get_policy_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_policy_engine_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetPolicyEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_policy_engine_attachments_async(self, request):
+        r"""查询策略集关联的实体列表
+
+        Lists the entities (gateways and token vaults) attached to the specified policy engine.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPolicyEngineAttachments
+        :type request: :class:`huaweicloudsdkagentidentity.v1.ListPolicyEngineAttachmentsRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.ListPolicyEngineAttachmentsResponse`
+        """
+        http_info = self._list_policy_engine_attachments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_policy_engine_attachments_async_invoker(self, request):
+        http_info = self._list_policy_engine_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policy_engine_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}/attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyEngineAttachmentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_policy_engines_async(self, request):
+        r"""查询策略集列表
+
+        Lists policy engines.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPolicyEngines
+        :type request: :class:`huaweicloudsdkagentidentity.v1.ListPolicyEnginesRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.ListPolicyEnginesResponse`
+        """
+        http_info = self._list_policy_engines_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_policy_engines_async_invoker(self, request):
+        http_info = self._list_policy_engines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policy_engines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/policy-engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyEnginesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_policy_engine_async(self, request):
+        r"""更新策略集
+
+        Updates a policy engine (description only).
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePolicyEngine
+        :type request: :class:`huaweicloudsdkagentidentity.v1.UpdatePolicyEngineRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.UpdatePolicyEngineResponse`
+        """
+        http_info = self._update_policy_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_policy_engine_async_invoker(self, request):
+        http_info = self._update_policy_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_policy_engine_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/policy-engines/{policy_engine_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_engine_id' in local_var_params:
+            path_params['policy_engine_id'] = local_var_params['policy_engine_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_sts_credential_provider_async(self, request):
         r"""创建STS凭证提供者
 
@@ -1462,6 +2264,73 @@ class AgentIdentityAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_token_vault_async(self, request):
+        r"""更新令牌保管库配置
+
+        Updates the token vault configuration including KMS and policy engine settings.
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTokenVault
+        :type request: :class:`huaweicloudsdkagentidentity.v1.UpdateTokenVaultRequest`
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.UpdateTokenVaultResponse`
+        """
+        http_info = self._update_token_vault_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_token_vault_async_invoker(self, request):
+        http_info = self._update_token_vault_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_token_vault_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/token-vaults/{token_vault_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTokenVaultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'token_vault_id' in local_var_params:
+            path_params['token_vault_id'] = local_var_params['token_vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

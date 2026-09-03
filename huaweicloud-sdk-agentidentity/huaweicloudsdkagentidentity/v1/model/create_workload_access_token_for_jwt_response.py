@@ -16,36 +16,29 @@ class CreateWorkloadAccessTokenForJwtResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'workload_access_token': 'str',
-        'expiration': 'datetime'
+        'workload_access_token': 'str'
     }
 
     attribute_map = {
-        'workload_access_token': 'workload_access_token',
-        'expiration': 'expiration'
+        'workload_access_token': 'workload_access_token'
     }
 
-    def __init__(self, workload_access_token=None, expiration=None):
+    def __init__(self, workload_access_token=None):
         r"""CreateWorkloadAccessTokenForJwtResponse
 
         The model defined in huaweicloud sdk
 
         :param workload_access_token: An opaque token representing the identity of both the workload and the user (or just the workload if not acting on behalf of a user)
         :type workload_access_token: str
-        :param expiration: The date and time on which the workload access token expire.
-        :type expiration: datetime
         """
         
         super().__init__()
 
         self._workload_access_token = None
-        self._expiration = None
         self.discriminator = None
 
         if workload_access_token is not None:
             self.workload_access_token = workload_access_token
-        if expiration is not None:
-            self.expiration = expiration
 
     @property
     def workload_access_token(self):
@@ -68,28 +61,6 @@ class CreateWorkloadAccessTokenForJwtResponse(SdkResponse):
         :type workload_access_token: str
         """
         self._workload_access_token = workload_access_token
-
-    @property
-    def expiration(self):
-        r"""Gets the expiration of this CreateWorkloadAccessTokenForJwtResponse.
-
-        The date and time on which the workload access token expire.
-
-        :return: The expiration of this CreateWorkloadAccessTokenForJwtResponse.
-        :rtype: datetime
-        """
-        return self._expiration
-
-    @expiration.setter
-    def expiration(self, expiration):
-        r"""Sets the expiration of this CreateWorkloadAccessTokenForJwtResponse.
-
-        The date and time on which the workload access token expire.
-
-        :param expiration: The expiration of this CreateWorkloadAccessTokenForJwtResponse.
-        :type expiration: datetime
-        """
-        self._expiration = expiration
 
     def to_dict(self):
         import warnings

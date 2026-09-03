@@ -29,7 +29,7 @@ class ScheduleEventInfo:
         'type': 'str',
         'extend_info': 'str',
         'execute_time': 'str',
-        'execution_time_window': 'object',
+        'execution_time_window': 'ExecuteWindow',
         'event_entities': 'list[EventEntity]'
     }
 
@@ -85,8 +85,8 @@ class ScheduleEventInfo:
         :type extend_info: str
         :param execute_time: **参数解释**：  事件的执行时间。UTC，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  **取值范围**：  不涉及。
         :type execute_time: str
-        :param execution_time_window: **参数解释**：  事件执行窗口。
-        :type execution_time_window: object
+        :param execution_time_window: 
+        :type execution_time_window: :class:`huaweicloudsdkgaussdb.v3.ExecuteWindow`
         :param event_entities: **参数解释**：  事件对象信息列表，包含事件对象ID和事件对象的执行状态
         :type event_entities: list[:class:`huaweicloudsdkgaussdb.v3.EventEntity`]
         """
@@ -456,10 +456,8 @@ class ScheduleEventInfo:
     def execution_time_window(self):
         r"""Gets the execution_time_window of this ScheduleEventInfo.
 
-        **参数解释**：  事件执行窗口。
-
         :return: The execution_time_window of this ScheduleEventInfo.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ExecuteWindow`
         """
         return self._execution_time_window
 
@@ -467,10 +465,8 @@ class ScheduleEventInfo:
     def execution_time_window(self, execution_time_window):
         r"""Sets the execution_time_window of this ScheduleEventInfo.
 
-        **参数解释**：  事件执行窗口。
-
         :param execution_time_window: The execution_time_window of this ScheduleEventInfo.
-        :type execution_time_window: object
+        :type execution_time_window: :class:`huaweicloudsdkgaussdb.v3.ExecuteWindow`
         """
         self._execution_time_window = execution_time_window
 

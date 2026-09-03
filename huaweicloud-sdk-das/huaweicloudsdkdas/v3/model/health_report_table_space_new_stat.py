@@ -19,7 +19,9 @@ class HealthReportTableSpaceNewStat:
         'table_top_resp': 'list[HealthReportTableSpaceQuerySpaceTopResp]',
         'rapid_growth_tables_resp': 'list[HealthReportTableSpaceQueryRapidGrowthTablesResp]',
         'no_primary_tables_resp': 'list[HealthReportTableSpaceQuerySpecialTablesResp]',
-        'no_index_tables_resp': 'list[HealthReportTableSpaceQuerySpecialTablesResp]'
+        'no_index_tables_resp': 'list[HealthReportTableSpaceQuerySpecialTablesResp]',
+        'analyze_success': 'bool',
+        'error_message': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class HealthReportTableSpaceNewStat:
         'table_top_resp': 'table_top_resp',
         'rapid_growth_tables_resp': 'rapid_growth_tables_resp',
         'no_primary_tables_resp': 'no_primary_tables_resp',
-        'no_index_tables_resp': 'no_index_tables_resp'
+        'no_index_tables_resp': 'no_index_tables_resp',
+        'analyze_success': 'analyze_success',
+        'error_message': 'error_message'
     }
 
-    def __init__(self, database_top_resp=None, table_top_resp=None, rapid_growth_tables_resp=None, no_primary_tables_resp=None, no_index_tables_resp=None):
+    def __init__(self, database_top_resp=None, table_top_resp=None, rapid_growth_tables_resp=None, no_primary_tables_resp=None, no_index_tables_resp=None, analyze_success=None, error_message=None):
         r"""HealthReportTableSpaceNewStat
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class HealthReportTableSpaceNewStat:
         :type no_primary_tables_resp: list[:class:`huaweicloudsdkdas.v3.HealthReportTableSpaceQuerySpecialTablesResp`]
         :param no_index_tables_resp: 无索引表列表。
         :type no_index_tables_resp: list[:class:`huaweicloudsdkdas.v3.HealthReportTableSpaceQuerySpecialTablesResp`]
+        :param analyze_success: 统计分析是否成功。
+        :type analyze_success: bool
+        :param error_message: 错误信息。
+        :type error_message: str
         """
         
         
@@ -54,6 +62,8 @@ class HealthReportTableSpaceNewStat:
         self._rapid_growth_tables_resp = None
         self._no_primary_tables_resp = None
         self._no_index_tables_resp = None
+        self._analyze_success = None
+        self._error_message = None
         self.discriminator = None
 
         if database_top_resp is not None:
@@ -66,6 +76,10 @@ class HealthReportTableSpaceNewStat:
             self.no_primary_tables_resp = no_primary_tables_resp
         if no_index_tables_resp is not None:
             self.no_index_tables_resp = no_index_tables_resp
+        if analyze_success is not None:
+            self.analyze_success = analyze_success
+        if error_message is not None:
+            self.error_message = error_message
 
     @property
     def database_top_resp(self):
@@ -176,6 +190,50 @@ class HealthReportTableSpaceNewStat:
         :type no_index_tables_resp: list[:class:`huaweicloudsdkdas.v3.HealthReportTableSpaceQuerySpecialTablesResp`]
         """
         self._no_index_tables_resp = no_index_tables_resp
+
+    @property
+    def analyze_success(self):
+        r"""Gets the analyze_success of this HealthReportTableSpaceNewStat.
+
+        统计分析是否成功。
+
+        :return: The analyze_success of this HealthReportTableSpaceNewStat.
+        :rtype: bool
+        """
+        return self._analyze_success
+
+    @analyze_success.setter
+    def analyze_success(self, analyze_success):
+        r"""Sets the analyze_success of this HealthReportTableSpaceNewStat.
+
+        统计分析是否成功。
+
+        :param analyze_success: The analyze_success of this HealthReportTableSpaceNewStat.
+        :type analyze_success: bool
+        """
+        self._analyze_success = analyze_success
+
+    @property
+    def error_message(self):
+        r"""Gets the error_message of this HealthReportTableSpaceNewStat.
+
+        错误信息。
+
+        :return: The error_message of this HealthReportTableSpaceNewStat.
+        :rtype: str
+        """
+        return self._error_message
+
+    @error_message.setter
+    def error_message(self, error_message):
+        r"""Sets the error_message of this HealthReportTableSpaceNewStat.
+
+        错误信息。
+
+        :param error_message: The error_message of this HealthReportTableSpaceNewStat.
+        :type error_message: str
+        """
+        self._error_message = error_message
 
     def to_dict(self):
         result = {}

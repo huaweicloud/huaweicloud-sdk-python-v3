@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ConnectionDetail:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'client_ip': 'str',
+        'count': 'int'
+    }
+
+    attribute_map = {
+        'client_ip': 'client_ip',
+        'count': 'count'
+    }
+
+    def __init__(self, client_ip=None, count=None):
+        r"""ConnectionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param client_ip: 客户端IP
+        :type client_ip: str
+        :param count: 连接数
+        :type count: int
+        """
+        
+        
+
+        self._client_ip = None
+        self._count = None
+        self.discriminator = None
+
+        if client_ip is not None:
+            self.client_ip = client_ip
+        if count is not None:
+            self.count = count
+
+    @property
+    def client_ip(self):
+        r"""Gets the client_ip of this ConnectionDetail.
+
+        客户端IP
+
+        :return: The client_ip of this ConnectionDetail.
+        :rtype: str
+        """
+        return self._client_ip
+
+    @client_ip.setter
+    def client_ip(self, client_ip):
+        r"""Sets the client_ip of this ConnectionDetail.
+
+        客户端IP
+
+        :param client_ip: The client_ip of this ConnectionDetail.
+        :type client_ip: str
+        """
+        self._client_ip = client_ip
+
+    @property
+    def count(self):
+        r"""Gets the count of this ConnectionDetail.
+
+        连接数
+
+        :return: The count of this ConnectionDetail.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ConnectionDetail.
+
+        连接数
+
+        :param count: The count of this ConnectionDetail.
+        :type count: int
+        """
+        self._count = count
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ConnectionDetail):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

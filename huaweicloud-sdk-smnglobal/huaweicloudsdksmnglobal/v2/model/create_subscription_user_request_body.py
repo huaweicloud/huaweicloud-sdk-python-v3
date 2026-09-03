@@ -20,7 +20,13 @@ class CreateSubscriptionUserRequestBody:
         'http': 'CreateSubscriptionUserRequestHttpEndpointInfo',
         'https': 'CreateSubscriptionUserRequestHttpsEndpointInfo',
         'sms': 'CreateSubscriptionUserRequestSmsEndpointInfo',
-        'email': 'CreateSubscriptionUserRequestEmailEndpointInfo'
+        'email': 'CreateSubscriptionUserRequestEmailEndpointInfo',
+        'callnotify': 'CreateSubscriptionUserRequestCallnotifyEndpointInfo',
+        'wechat': 'CreateSubscriptionUserRequestWechatEndpointInfo',
+        'dingding': 'CreateSubscriptionUserRequestDingdingEndpointInfo',
+        'feishu': 'CreateSubscriptionUserRequestFeishuEndpointInfo',
+        'welink': 'CreateSubscriptionUserRequestWelinkEndpointInfo',
+        'ding_talk_bot': 'CreateSubscriptionUserRequestDingTalkBotEndpointInfo'
     }
 
     attribute_map = {
@@ -29,10 +35,16 @@ class CreateSubscriptionUserRequestBody:
         'http': 'http',
         'https': 'https',
         'sms': 'sms',
-        'email': 'email'
+        'email': 'email',
+        'callnotify': 'callnotify',
+        'wechat': 'wechat',
+        'dingding': 'dingding',
+        'feishu': 'feishu',
+        'welink': 'welink',
+        'ding_talk_bot': 'ding_talk_bot'
     }
 
-    def __init__(self, name=None, group=None, http=None, https=None, sms=None, email=None):
+    def __init__(self, name=None, group=None, http=None, https=None, sms=None, email=None, callnotify=None, wechat=None, dingding=None, feishu=None, welink=None, ding_talk_bot=None):
         r"""CreateSubscriptionUserRequestBody
 
         The model defined in huaweicloud sdk
@@ -49,6 +61,18 @@ class CreateSubscriptionUserRequestBody:
         :type sms: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestSmsEndpointInfo`
         :param email: 
         :type email: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestEmailEndpointInfo`
+        :param callnotify: 
+        :type callnotify: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestCallnotifyEndpointInfo`
+        :param wechat: 
+        :type wechat: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWechatEndpointInfo`
+        :param dingding: 
+        :type dingding: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingdingEndpointInfo`
+        :param feishu: 
+        :type feishu: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestFeishuEndpointInfo`
+        :param welink: 
+        :type welink: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWelinkEndpointInfo`
+        :param ding_talk_bot: 
+        :type ding_talk_bot: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingTalkBotEndpointInfo`
         """
         
         
@@ -59,6 +83,12 @@ class CreateSubscriptionUserRequestBody:
         self._https = None
         self._sms = None
         self._email = None
+        self._callnotify = None
+        self._wechat = None
+        self._dingding = None
+        self._feishu = None
+        self._welink = None
+        self._ding_talk_bot = None
         self.discriminator = None
 
         self.name = name
@@ -72,6 +102,18 @@ class CreateSubscriptionUserRequestBody:
             self.sms = sms
         if email is not None:
             self.email = email
+        if callnotify is not None:
+            self.callnotify = callnotify
+        if wechat is not None:
+            self.wechat = wechat
+        if dingding is not None:
+            self.dingding = dingding
+        if feishu is not None:
+            self.feishu = feishu
+        if welink is not None:
+            self.welink = welink
+        if ding_talk_bot is not None:
+            self.ding_talk_bot = ding_talk_bot
 
     @property
     def name(self):
@@ -188,6 +230,114 @@ class CreateSubscriptionUserRequestBody:
         :type email: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestEmailEndpointInfo`
         """
         self._email = email
+
+    @property
+    def callnotify(self):
+        r"""Gets the callnotify of this CreateSubscriptionUserRequestBody.
+
+        :return: The callnotify of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestCallnotifyEndpointInfo`
+        """
+        return self._callnotify
+
+    @callnotify.setter
+    def callnotify(self, callnotify):
+        r"""Sets the callnotify of this CreateSubscriptionUserRequestBody.
+
+        :param callnotify: The callnotify of this CreateSubscriptionUserRequestBody.
+        :type callnotify: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestCallnotifyEndpointInfo`
+        """
+        self._callnotify = callnotify
+
+    @property
+    def wechat(self):
+        r"""Gets the wechat of this CreateSubscriptionUserRequestBody.
+
+        :return: The wechat of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWechatEndpointInfo`
+        """
+        return self._wechat
+
+    @wechat.setter
+    def wechat(self, wechat):
+        r"""Sets the wechat of this CreateSubscriptionUserRequestBody.
+
+        :param wechat: The wechat of this CreateSubscriptionUserRequestBody.
+        :type wechat: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWechatEndpointInfo`
+        """
+        self._wechat = wechat
+
+    @property
+    def dingding(self):
+        r"""Gets the dingding of this CreateSubscriptionUserRequestBody.
+
+        :return: The dingding of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingdingEndpointInfo`
+        """
+        return self._dingding
+
+    @dingding.setter
+    def dingding(self, dingding):
+        r"""Sets the dingding of this CreateSubscriptionUserRequestBody.
+
+        :param dingding: The dingding of this CreateSubscriptionUserRequestBody.
+        :type dingding: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingdingEndpointInfo`
+        """
+        self._dingding = dingding
+
+    @property
+    def feishu(self):
+        r"""Gets the feishu of this CreateSubscriptionUserRequestBody.
+
+        :return: The feishu of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestFeishuEndpointInfo`
+        """
+        return self._feishu
+
+    @feishu.setter
+    def feishu(self, feishu):
+        r"""Sets the feishu of this CreateSubscriptionUserRequestBody.
+
+        :param feishu: The feishu of this CreateSubscriptionUserRequestBody.
+        :type feishu: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestFeishuEndpointInfo`
+        """
+        self._feishu = feishu
+
+    @property
+    def welink(self):
+        r"""Gets the welink of this CreateSubscriptionUserRequestBody.
+
+        :return: The welink of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWelinkEndpointInfo`
+        """
+        return self._welink
+
+    @welink.setter
+    def welink(self, welink):
+        r"""Sets the welink of this CreateSubscriptionUserRequestBody.
+
+        :param welink: The welink of this CreateSubscriptionUserRequestBody.
+        :type welink: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestWelinkEndpointInfo`
+        """
+        self._welink = welink
+
+    @property
+    def ding_talk_bot(self):
+        r"""Gets the ding_talk_bot of this CreateSubscriptionUserRequestBody.
+
+        :return: The ding_talk_bot of this CreateSubscriptionUserRequestBody.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingTalkBotEndpointInfo`
+        """
+        return self._ding_talk_bot
+
+    @ding_talk_bot.setter
+    def ding_talk_bot(self, ding_talk_bot):
+        r"""Sets the ding_talk_bot of this CreateSubscriptionUserRequestBody.
+
+        :param ding_talk_bot: The ding_talk_bot of this CreateSubscriptionUserRequestBody.
+        :type ding_talk_bot: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestDingTalkBotEndpointInfo`
+        """
+        self._ding_talk_bot = ding_talk_bot
 
     def to_dict(self):
         result = {}

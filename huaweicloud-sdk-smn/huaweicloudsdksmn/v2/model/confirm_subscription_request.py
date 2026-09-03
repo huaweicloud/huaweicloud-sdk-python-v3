@@ -32,11 +32,11 @@ class ConfirmSubscriptionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
+        :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。当订阅类型为短信或邮件时，与token、endpoint参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功；当订阅类型为其他时，该参数必填，需与token同时设置。
         :type topic_urn: str
-        :param endpoint: 订阅终端地址。
+        :param endpoint: 订阅终端地址。仅当订阅类型为短信或邮件时可设置，与token、topic_urn参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功。
         :type endpoint: str
-        :param token: 确认订阅Token信息。
+        :param token: 确认订阅Token信息。（订阅链接中携带的token信息）
         :type token: str
         """
         
@@ -57,7 +57,7 @@ class ConfirmSubscriptionRequest:
     def topic_urn(self):
         r"""Gets the topic_urn of this ConfirmSubscriptionRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。当订阅类型为短信或邮件时，与token、endpoint参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功；当订阅类型为其他时，该参数必填，需与token同时设置。
 
         :return: The topic_urn of this ConfirmSubscriptionRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ConfirmSubscriptionRequest:
     def topic_urn(self, topic_urn):
         r"""Sets the topic_urn of this ConfirmSubscriptionRequest.
 
-        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
+        Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。当订阅类型为短信或邮件时，与token、endpoint参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功；当订阅类型为其他时，该参数必填，需与token同时设置。
 
         :param topic_urn: The topic_urn of this ConfirmSubscriptionRequest.
         :type topic_urn: str
@@ -79,7 +79,7 @@ class ConfirmSubscriptionRequest:
     def endpoint(self):
         r"""Gets the endpoint of this ConfirmSubscriptionRequest.
 
-        订阅终端地址。
+        订阅终端地址。仅当订阅类型为短信或邮件时可设置，与token、topic_urn参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功。
 
         :return: The endpoint of this ConfirmSubscriptionRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ConfirmSubscriptionRequest:
     def endpoint(self, endpoint):
         r"""Sets the endpoint of this ConfirmSubscriptionRequest.
 
-        订阅终端地址。
+        订阅终端地址。仅当订阅类型为短信或邮件时可设置，与token、topic_urn参数组合使用，三个参数中设置任意两个或全部设置均可确认订阅成功。
 
         :param endpoint: The endpoint of this ConfirmSubscriptionRequest.
         :type endpoint: str
@@ -101,7 +101,7 @@ class ConfirmSubscriptionRequest:
     def token(self):
         r"""Gets the token of this ConfirmSubscriptionRequest.
 
-        确认订阅Token信息。
+        确认订阅Token信息。（订阅链接中携带的token信息）
 
         :return: The token of this ConfirmSubscriptionRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ConfirmSubscriptionRequest:
     def token(self, token):
         r"""Sets the token of this ConfirmSubscriptionRequest.
 
-        确认订阅Token信息。
+        确认订阅Token信息。（订阅链接中携带的token信息）
 
         :param token: The token of this ConfirmSubscriptionRequest.
         :type token: str

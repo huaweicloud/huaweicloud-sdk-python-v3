@@ -16,7 +16,7 @@ class Available:
 
     openapi_types = {
         'value': 'Value',
-        'max_value': 'object',
+        'max_value': 'Value',
         'timestamp': 'str',
         'window': 'str'
     }
@@ -35,8 +35,8 @@ class Available:
 
         :param value: 
         :type value: :class:`huaweicloudsdkmodelarts.v1.Value`
-        :param max_value: 最大弹性资源量减去故障资源和热备节点的资源。
-        :type max_value: object
+        :param max_value: 
+        :type max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
         :param timestamp: UTC时间，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
         :type timestamp: str
         :param window: 统计间隔，1s表示1秒，1m表示1分钟，1h为1小时。
@@ -82,10 +82,8 @@ class Available:
     def max_value(self):
         r"""Gets the max_value of this Available.
 
-        最大弹性资源量减去故障资源和热备节点的资源。
-
         :return: The max_value of this Available.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.Value`
         """
         return self._max_value
 
@@ -93,10 +91,8 @@ class Available:
     def max_value(self, max_value):
         r"""Sets the max_value of this Available.
 
-        最大弹性资源量减去故障资源和热备节点的资源。
-
         :param max_value: The max_value of this Available.
-        :type max_value: object
+        :type max_value: :class:`huaweicloudsdkmodelarts.v1.Value`
         """
         self._max_value = max_value
 

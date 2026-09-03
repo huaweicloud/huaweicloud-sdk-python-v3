@@ -15,28 +15,35 @@ class CreateSubscriptionUserRequestSmsEndpointInfo:
     sensitive_list = []
 
     openapi_types = {
-        'endpoint': 'str'
+        'endpoint': 'str',
+        'verification_code_enabled': 'bool'
     }
 
     attribute_map = {
-        'endpoint': 'endpoint'
+        'endpoint': 'endpoint',
+        'verification_code_enabled': 'verification_code_enabled'
     }
 
-    def __init__(self, endpoint=None):
+    def __init__(self, endpoint=None, verification_code_enabled=None):
         r"""CreateSubscriptionUserRequestSmsEndpointInfo
 
         The model defined in huaweicloud sdk
 
         :param endpoint: 终端地址。必须是一个电话号码。
         :type endpoint: str
+        :param verification_code_enabled: 是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+        :type verification_code_enabled: bool
         """
         
         
 
         self._endpoint = None
+        self._verification_code_enabled = None
         self.discriminator = None
 
         self.endpoint = endpoint
+        if verification_code_enabled is not None:
+            self.verification_code_enabled = verification_code_enabled
 
     @property
     def endpoint(self):
@@ -59,6 +66,28 @@ class CreateSubscriptionUserRequestSmsEndpointInfo:
         :type endpoint: str
         """
         self._endpoint = endpoint
+
+    @property
+    def verification_code_enabled(self):
+        r"""Gets the verification_code_enabled of this CreateSubscriptionUserRequestSmsEndpointInfo.
+
+        是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+
+        :return: The verification_code_enabled of this CreateSubscriptionUserRequestSmsEndpointInfo.
+        :rtype: bool
+        """
+        return self._verification_code_enabled
+
+    @verification_code_enabled.setter
+    def verification_code_enabled(self, verification_code_enabled):
+        r"""Sets the verification_code_enabled of this CreateSubscriptionUserRequestSmsEndpointInfo.
+
+        是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+
+        :param verification_code_enabled: The verification_code_enabled of this CreateSubscriptionUserRequestSmsEndpointInfo.
+        :type verification_code_enabled: bool
+        """
+        self._verification_code_enabled = verification_code_enabled
 
     def to_dict(self):
         result = {}

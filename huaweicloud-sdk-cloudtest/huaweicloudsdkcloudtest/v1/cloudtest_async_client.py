@@ -104,6 +104,73 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def add_or_update_testsuite_info_using_async(self, request):
+        r"""添加测试套
+
+        添加测试套
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddOrUpdateTestsuiteInfoUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.AddOrUpdateTestsuiteInfoUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.AddOrUpdateTestsuiteInfoUsingResponse`
+        """
+        http_info = self._add_or_update_testsuite_info_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_or_update_testsuite_info_using_async_invoker(self, request):
+        http_info = self._add_or_update_testsuite_info_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_or_update_testsuite_info_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/testsuite",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddOrUpdateTestsuiteInfoUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_test_case_comment_async(self, request):
         r"""新增用例评论
 
@@ -2187,6 +2254,73 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_testsuite_infos_using_async(self, request):
+        r"""根据任务Id列表批量删除任务
+
+        根据任务Id列表批量删除任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTestsuiteInfosUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteTestsuiteInfosUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteTestsuiteInfosUsingResponse`
+        """
+        http_info = self._delete_testsuite_infos_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_testsuite_infos_using_async_invoker(self, request):
+        http_info = self._delete_testsuite_infos_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_testsuite_infos_using_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/projects/{service_id}/testsuite",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTestsuiteInfosUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -9139,6 +9273,75 @@ class CloudtestAsyncClient(Client):
 
         return http_info
 
+    def show_testsuite_info_using_async(self, request):
+        r"""根据任务id查询任务
+
+        根据任务id查询任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTestsuiteInfoUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestsuiteInfoUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestsuiteInfoUsingResponse`
+        """
+        http_info = self._show_testsuite_info_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_testsuite_info_using_async_invoker(self, request):
+        http_info = self._show_testsuite_info_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_testsuite_info_using_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{service_id}/testsuite/{suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTestsuiteInfoUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+        if 'suite_id' in local_var_params:
+            path_params['suite_id'] = local_var_params['suite_id']
+
+        query_params = []
+        if 'plan_id' in local_var_params:
+            query_params.append(('planId', local_var_params['plan_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_user_access_info_async(self, request):
         r"""获取租户订单信息
 
@@ -9259,6 +9462,75 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_testsuite_using_async(self, request):
+        r"""启动测试套
+
+        启动测试套
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartTestsuiteUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.StartTestsuiteUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.StartTestsuiteUsingResponse`
+        """
+        http_info = self._start_testsuite_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_testsuite_using_async_invoker(self, request):
+        http_info = self._start_testsuite_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_testsuite_using_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/projects/{service_id}/testsuite/{suite_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartTestsuiteUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+        if 'suite_id' in local_var_params:
+            path_params['suite_id'] = local_var_params['suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -9813,6 +10085,75 @@ class CloudtestAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_testsuite_info_using_async(self, request):
+        r"""更新测试套
+
+        更新测试套
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTestsuiteInfoUsing
+        :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestsuiteInfoUsingRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestsuiteInfoUsingResponse`
+        """
+        http_info = self._update_testsuite_info_using_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_testsuite_info_using_async_invoker(self, request):
+        http_info = self._update_testsuite_info_using_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_testsuite_info_using_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/projects/{service_id}/testsuite/{suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTestsuiteInfoUsingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+        if 'suite_id' in local_var_params:
+            path_params['suite_id'] = local_var_params['suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

@@ -1,3 +1,432 @@
+# 3.1.213 2026-09-03
+
+### HuaweiCloud SDK AgentIdentity
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListPolicyEngines`
+    - `CreatePolicyEngine`
+    - `GetPolicyEngine`
+    - `UpdatePolicyEngine`
+    - `DeletePolicyEngine`
+    - `ListPolicyEngineAttachments`
+    - `ListPolicies`
+    - `CreatePolicy`
+    - `GetPolicy`
+    - `UpdatePolicy`
+    - `DeletePolicy`
+    - `ListIdentityProviders`
+    - `UpdateTokenVault`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GetResourceOauth2Token**
+    - 响应参数变更
+      - `+ expires_at`
+  - **CreateWorkloadAccessToken**
+    - 响应参数变更
+      - `- expiration`
+  - **CreateWorkloadAccessTokenForJwt**
+    - 响应参数变更
+      - `- expiration`
+  - **CreateWorkloadAccessTokenForUserId**
+    - 响应参数变更
+      - `- expiration`
+  - **GetTokenVault**
+    - 响应参数变更
+      - `+ token_vault.urn`
+      - `+ token_vault.policy_engine_configuration`
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `AddOrUpdateTestsuiteInfoUsing`
+    - `DeleteTestsuiteInfosUsing`
+    - `ShowTestsuiteInfoUsing`
+    - `UpdateTestsuiteInfoUsing`
+    - `StartTestsuiteUsing`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListAllTypeInstances`
+    - `ShowIsSignedProtocol`
+    - `SignProtocolNew`
+    - `ChangeQuotaNew`
+    - `ShowInstanceLogUsage`
+    - `ListNotSetChargeModeInstance`
+    - `ShowOpeningInfo`
+    - `EnableQuota`
+    - `CreateBinlogTask`
+    - `DeleteExportTaskNew`
+    - `DeleteBinlogTask`
+    - `ListBinlogExports`
+    - `ShowFragmentSwitch`
+    - `ShowBinlogExportTaskInfo`
+    - `ShowBinlogTaskInfo`
+    - `ListBinlogFiles`
+    - `RetryBinlogTask`
+    - `SearchBinlogParse`
+    - `SearchErrorInfo4Api`
+    - `SearchErrorInfoSource4Api`
+    - `ShowBinlogParse`
+    - `StopBinlogTask`
+    - `UpdateSearchPathFlag`
+    - `DeleteDbObjNew`
+    - `ExecuteFormatSql`
+    - `ListDatabaseObjects`
+    - `ShowExecuteResultWithoutKey`
+    - `ShowExecuteResultWithoutKeyNoRetry`
+    - `ShowExecutionPlan`
+    - `ListSharedConnections`
+    - `CancelConnectionProcess`
+    - `ShowLatestDeadLockSnapshot4Api`
+    - `ShowMetaLock`
+    - `ShowMetaLockSnapshot`
+    - `ListConnectionProcesses`
+    - `ListSnapshots4Api`
+    - `ShowWaitingLocksSnapshot`
+    - `ExecuteLoginConnectionNew`
+    - `ImportExportObsObjects`
+    - `ListSchemaNames`
+    - `ExecuteSplitSql`
+    - `ExecuteTuning`
+    - `ShowTuningResult`
+    - `UpdateSharedInfoNew`
+    - `InvokeWdrReport`
+    - `ShowWdrSnapshot`
+    - `CreateWdrReport`
+    - `ExecuteTestConnectionNew`
+    - `VerifyConnectionNew`
+    - `CreateDbsConnection`
+    - `CreateFullSqlBucket`
+    - `DeleteFullSqlExportTaskObsFile`
+    - `ListFullSqlExportTasks`
+    - `ShowExecutionTimeTemplateTrend`
+    - `ShowSingleTemplateTrend`
+    - `ListSqlTemplateComparisons`
+    - `ListSqlTemplateDatabases`
+    - `ListSqlTemplates`
+    - `ShowSqlTemplateTrend`
+    - `ListTemplateDatabaseComparisons`
+    - `SearchNew`
+    - `AddTasksNew`
+    - `BatchAddFullSqlTasks`
+    - `ListTasksByBatchId`
+    - `ListTasksByTaskId`
+    - `ListTasksBySqlTemplateId`
+    - `CreateInstanceHealthReportTaskNew`
+    - `ShowInstanceHealthReport4Api`
+    - `ListInstanceHealthReportTasks`
+    - `CheckHealthReportTask`
+    - `SubscribeInstanceReportNew`
+    - `UnsubscribeInstanceReportNew`
+    - `ListSmnTopics`
+    - `BatchSetSqlSwitchNew`
+    - `ExportInstanceListNew`
+    - `ShowInstanceInfo`
+    - `ShowInstanceNodesInfo`
+    - `ListUserInstanceList`
+    - `ShowInstanceMetric`
+    - `SetSqlSwitchNew`
+    - `ListSqlLimitUserInstance`
+    - `SynchronizeInstanceListNew`
+    - `ShowSupportKeyString`
+    - `ShowKillProcessTask`
+    - `UpdateInstanceConfig`
+    - `ShowDdsConnectionStat`
+    - `ListDeadLockDatabases`
+    - `ListDeadLockDetail`
+    - `ShowDeadLockOriginData`
+    - `ShowDeadLockRelationship`
+    - `ShowDeadLockStatistics`
+    - `ShowDeadLockTrend`
+    - `ListFullDeadLocks`
+    - `CreateIndexUsageExportTaskNew`
+    - `ChangeDeadLockSwitchNew`
+    - `UpdateFullSqlSwitch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowLatestInstanceHealthReport**
+    - 响应参数变更
+      - `* start_at: number -> int64`
+      - `* end_at: number -> int64`
+      - `+ table_space_stat.analyze_success`
+      - `+ table_space_stat.error_message`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowFactoryDependInstances`、`ShowFactoryJobDependInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFactoryAlarmRules**
+    - 响应参数变更
+      - `+ alarm_rules_items_details.enable_recovery`
+      - `+ alarm_rules_items_details.enable_persistent_alarm`
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃以下接口：
+    - `NovaShowFlavorExtraSpecs`
+    - `RegisterServerMonitor`
+    - `AssociateServerVirtualIp`
+    - `DisassociateServerVirtualIp`
+    - `BatchAddServerGroupMember`
+    - `BatchDeleteServerGroupMember`
+    - `NovaAssociateSecurityGroup`
+    - `NovaDisassociateSecurityGroup`
+    - `NovaDeleteKeypair`
+    - `NovaShowKeypair`
+    - `NovaListServers`
+    - `NovaCreateServers`
+    - `NovaDeleteServer`
+    - `NovaShowServer`
+    - `NovaListServersDetails`
+    - `NovaAttachInterface`
+    - `NovaShowServerInterface`
+    - `NovaCreateKeypair`
+    - `NovaListKeypairs`
+    - `NovaListServerSecurityGroups`
+  - **ChangeServerChargeMode**
+    - 响应参数变更
+      - `+ job_id`
+  - **CreateServers**
+    - 请求参数变更
+      - `+ server.nics.efi_enable`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ChangeVolumeChargeMode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowKernelUpgradeCheckResult**
+    - 响应参数变更
+      - `+ upgrade_precheck_result`
+      - `+ updated_at`
+      - `+ upgrade_precheck_detail`
+      - `- job_ids`
+  - **SetInstanceScheduleEvents**
+    - 请求参数变更
+      - `+ event_schedule_window.planned_day`
+      - `+ event_schedule_window.start_time`
+      - `+ event_schedule_window.end_time`
+      - `* event_schedule_window: object -> object<EventScheduleWindow>`
+  - **ShowInstanceScheduleEvents**
+    - 响应参数变更
+      - `+ events.execution_time_window.planned_execution_day`
+      - `+ events.execution_time_window.start_time`
+      - `+ events.execution_time_window.end_time`
+      - `* events.execution_time_window: object -> object<ExecuteWindow>`
+
+### HuaweiCloud SDK ModelArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ShowFtDetail`
+    - `ShowFtMetrics`
+    - `ListFtArtifacts`
+    - `PublishFtArtifacts`
+    - `CountTrainingJobsByTags`
+    - `ListTrainingJobsByTags`
+    - `ValidateTrainingJobName`
+    - `ShowTrainingJobLogsFromAom`
+    - `ShowTrainingJobRoutePlan`
+    - `BatchDeleteTrainingJob`
+    - `ShowTrainingFlavorMaxAvailableResource`
+    - `ListTrainingJobTags`
+    - `ModifyTrainingQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPoolRuntimeMetrics**
+    - 响应参数变更
+      - `+ items.table.available.maxValue.cpu`
+      - `+ items.table.available.maxValue.memory`
+      - `+ items.table.available.maxValue.tnt004`
+      - `* items.table.available.maxValue: object -> object<Value>`
+      - `+ items.table.workload.allocated.infer`
+      - `+ items.table.workload.allocated.notebook`
+      - `+ items.table.workload.allocated.train`
+      - `+ items.table.workload.allocated.warmUpTask`
+      - `+ items.table.workload.allocated.x-infer`
+      - `+ items.table.workload.allocated.sum`
+      - `- items.table.workload.allocated.type`
+      - `- items.table.workload.allocated.total`
+      - `- items.table.workload.allocated.status`
+      - `* items.table.workload.allocated: object<WorkloadStatistics> -> object<WorkloadStatisticsInfo>`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBackupUsageAlarmConfig`
+    - `UpdateBackupUsageAlarmConfig`
+    - `ShowBackupUsageExceededInstances`
+    - `ListRetainBackups`
+    - `SetBackupRetainPolicy`
+    - `ShowBackupRetainPolicy`
+    - `UpdateInstanceBackupMethod`
+    - `ListInstanceAllProxyVersion`
+    - `ShowRestoreTables`
+    - `QueryNewBackupEncryption`
+    - `ModifyNewBackupEncrypt`
+    - `ShowMySqlProxySlowLogList`
+    - `SwitchMySqlProxySlowLog`
+    - `CreateBinlogMerge`
+    - `DeleteBinlogMerge`
+    - `GetInstancesOpsMetricNames`
+    - `ShowDiskSpaceDiagnosis`
+    - `CreateDiskSpaceDiagnosis`
+    - `ShowSqlDiagnosis`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SMN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSubscription**
+    - 请求参数变更
+      - `+ verification_code`
+  - **ListSubscriptions**
+    - 响应参数变更
+      - `+ subscriptions.extension`
+  - **AddSubscription**
+    - 请求参数变更
+      - `+ extension.verification_code_enabled`
+  - **ListSubscriptionsByTopic**
+    - 响应参数变更
+      - `+ subscriptions.extension`
+
+### HuaweiCloud SDK SMNGLOBAL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateSubscriptionUser**
+    - 请求参数变更
+      - `+ verification_code`
+  - **CreateSubscriptionUser**
+    - 请求参数变更
+      - `+ callnotify`
+      - `+ wechat`
+      - `+ dingding`
+      - `+ feishu`
+      - `+ welink`
+      - `+ ding_talk_bot`
+      - `+ sms.verification_code_enabled`
+  - **ListSubscriptionUser**
+    - 请求参数变更
+      - `+ protocol: enum value [callnotify,wechat,dingding,feishu,welink,ding_talk_bot]`
+    - 响应参数变更
+      - `+ subscription_users.callnotify`
+      - `+ subscription_users.wechat`
+      - `+ subscription_users.dingding`
+      - `+ subscription_users.feishu`
+      - `+ subscription_users.welink`
+      - `+ subscription_users.ding_talk_bot`
+      - `+ subscription_users.sms.verification_code_enabled`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListSkills`
+    - `CreateSkill`
+    - `ShowSkill`
+    - `UpdateSkill`
+    - `DeleteSkill`
+    - `ListCommonSkills`
+    - `ShowCommonSkill`
+    - `CreateUploadUrls`
+    - `BatchListSkillPackages`
+    - `ListSkillPackages`
+    - `CreateSkillPackage`
+    - `ShowSkillPackage`
+    - `UpdateSkillPackage`
+    - `DeleteSkillPackage`
+    - `CreateDownloadUrl`
+    - `ExpandSkillPackageRegion`
+    - `RemoveSkillPackageRegion`
+    - `ListCommonSkillPackages`
+    - `ShowCommonSkillPackage`
+    - `CreateSkillBindings`
+    - `DeleteSkillBindings`
+    - `UpdateSecurityPolicyControl`
+    - `ListSecurityPolicyControlResources`
+    - `ListCommonSkillResources`
+    - `ListSkillResources`
+    - `ListInstanceSkills`
+    - `AttachDesktopPoolUser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExportDesktopListNew**
+    - 请求参数变更
+      - `+ without_any_tag`
+  - **ListAgentInstances**
+    - 响应参数变更
+      - `+ agent_instances.security_policy_control`
+  - **ListDesktopsDetail**
+    - 请求参数变更
+      - `+ without_any_tag`
+
 # 3.1.212 2026-08-27
 
 ### HuaweiCloud SDK BMS

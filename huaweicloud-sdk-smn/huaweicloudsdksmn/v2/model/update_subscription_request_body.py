@@ -15,28 +15,36 @@ class UpdateSubscriptionRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'remark': 'str'
+        'remark': 'str',
+        'verification_code': 'str'
     }
 
     attribute_map = {
-        'remark': 'remark'
+        'remark': 'remark',
+        'verification_code': 'verification_code'
     }
 
-    def __init__(self, remark=None):
+    def __init__(self, remark=None, verification_code=None):
         r"""UpdateSubscriptionRequestBody
 
         The model defined in huaweicloud sdk
 
         :param remark: 订阅者备注。订阅者备注的最大长度为128byte。
         :type remark: str
+        :param verification_code: 订阅终端收到的验证码。
+        :type verification_code: str
         """
         
         
 
         self._remark = None
+        self._verification_code = None
         self.discriminator = None
 
-        self.remark = remark
+        if remark is not None:
+            self.remark = remark
+        if verification_code is not None:
+            self.verification_code = verification_code
 
     @property
     def remark(self):
@@ -59,6 +67,28 @@ class UpdateSubscriptionRequestBody:
         :type remark: str
         """
         self._remark = remark
+
+    @property
+    def verification_code(self):
+        r"""Gets the verification_code of this UpdateSubscriptionRequestBody.
+
+        订阅终端收到的验证码。
+
+        :return: The verification_code of this UpdateSubscriptionRequestBody.
+        :rtype: str
+        """
+        return self._verification_code
+
+    @verification_code.setter
+    def verification_code(self, verification_code):
+        r"""Sets the verification_code of this UpdateSubscriptionRequestBody.
+
+        订阅终端收到的验证码。
+
+        :param verification_code: The verification_code of this UpdateSubscriptionRequestBody.
+        :type verification_code: str
+        """
+        self._verification_code = verification_code
 
     def to_dict(self):
         result = {}

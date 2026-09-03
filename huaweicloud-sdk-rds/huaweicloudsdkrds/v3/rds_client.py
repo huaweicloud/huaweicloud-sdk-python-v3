@@ -1385,6 +1385,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def create_binlog_merge(self, request):
+        r"""合并Binlog
+
+        合并Binlog
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateBinlogMerge
+        :type request: :class:`huaweicloudsdkrds.v3.CreateBinlogMergeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateBinlogMergeResponse`
+        """
+        http_info = self._create_binlog_merge_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_binlog_merge_invoker(self, request):
+        http_info = self._create_binlog_merge_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_binlog_merge_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/packlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBinlogMergeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_configuration(self, request):
         r"""创建参数模板
 
@@ -1419,6 +1488,75 @@ class RdsClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_disk_space_diagnosis(self, request):
+        r"""磁盘容量趋势诊断
+
+        磁盘容量趋势诊断
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDiskSpaceDiagnosis
+        :type request: :class:`huaweicloudsdkrds.v3.CreateDiskSpaceDiagnosisRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateDiskSpaceDiagnosisResponse`
+        """
+        http_info = self._create_disk_space_diagnosis_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_disk_space_diagnosis_invoker(self, request):
+        http_info = self._create_disk_space_diagnosis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_disk_space_diagnosis_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/diagnosis/disk",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDiskSpaceDiagnosisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 
@@ -2155,6 +2293,75 @@ class RdsClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/delete-selection",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteBackupSelectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_binlog_merge(self, request):
+        r"""删除Binlog合并记录
+
+        删除Binlog合并记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteBinlogMerge
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteBinlogMergeRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteBinlogMergeResponse`
+        """
+        http_info = self._delete_binlog_merge_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_binlog_merge_invoker(self, request):
+        http_info = self._delete_binlog_merge_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_binlog_merge_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/packlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBinlogMergeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2989,6 +3196,75 @@ class RdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_instances_ops_metric_names(self, request):
+        r"""查询实例CES监控指标名称列表
+
+        查询实例CES监控指标名称列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetInstancesOpsMetricNames
+        :type request: :class:`huaweicloudsdkrds.v3.GetInstancesOpsMetricNamesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.GetInstancesOpsMetricNamesResponse`
+        """
+        http_info = self._get_instances_ops_metric_names_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_instances_ops_metric_names_invoker(self, request):
+        http_info = self._get_instances_ops_metric_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_instances_ops_metric_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops/metric-names",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetInstancesOpsMetricNamesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'metric_group' in local_var_params:
+            query_params.append(('metric_group', local_var_params['metric_group']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6377,6 +6653,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_retain_backups(self, request):
+        r"""查询被删除实例保留的备份
+
+        查询被删除实例保留的备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListRetainBackups
+        :type request: :class:`huaweicloudsdkrds.v3.ListRetainBackupsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListRetainBackupsResponse`
+        """
+        http_info = self._list_retain_backups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_retain_backups_invoker(self, request):
+        http_info = self._list_retain_backups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_retain_backups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/retain-backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRetainBackupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_schedule_events(self, request):
         r"""查询事件列表
 
@@ -7971,6 +8316,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def modify_new_backup_encrypt(self, request):
+        r"""设置备份加密开关
+
+        设置备份加密开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyNewBackupEncrypt
+        :type request: :class:`huaweicloudsdkrds.v3.ModifyNewBackupEncryptRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifyNewBackupEncryptResponse`
+        """
+        http_info = self._modify_new_backup_encrypt_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_new_backup_encrypt_invoker(self, request):
+        http_info = self._modify_new_backup_encrypt_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_new_backup_encrypt_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/encryption",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyNewBackupEncryptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_postgresql_hba_conf(self, request):
         r"""修改pg_hba.conf文件的单个或多个配置
 
@@ -8157,6 +8571,73 @@ class RdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def query_new_backup_encryption(self, request):
+        r"""查询未加密实例是否打开备份加密开关
+
+        查询未加密实例是否打开备份加密开关
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for QueryNewBackupEncryption
+        :type request: :class:`huaweicloudsdkrds.v3.QueryNewBackupEncryptionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.QueryNewBackupEncryptionResponse`
+        """
+        http_info = self._query_new_backup_encryption_http_info(request)
+        return self._call_api(**http_info)
+
+    def query_new_backup_encryption_invoker(self, request):
+        http_info = self._query_new_backup_encryption_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _query_new_backup_encryption_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/encryption",
+            "request_type": request.__class__.__name__,
+            "response_type": "QueryNewBackupEncryptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -8831,6 +9312,73 @@ class RdsClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_backup_retain_policy(self, request):
+        r"""设置备份保留策略
+
+        设置备份保留策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetBackupRetainPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.SetBackupRetainPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetBackupRetainPolicyResponse`
+        """
+        http_info = self._set_backup_retain_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_backup_retain_policy_invoker(self, request):
+        http_info = self._set_backup_retain_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_backup_retain_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backup-retain-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBackupRetainPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -10021,6 +10569,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def show_backup_retain_policy(self, request):
+        r"""查询备份保留策略
+
+        查询备份保留策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBackupRetainPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupRetainPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupRetainPolicyResponse`
+        """
+        http_info = self._show_backup_retain_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_backup_retain_policy_invoker(self, request):
+        http_info = self._show_backup_retain_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_retain_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backup-retain-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupRetainPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_backup_usage(self, request):
         r"""查询备份用量总览
 
@@ -10059,6 +10674,140 @@ class RdsClient(Client):
         query_params = []
         if 'engine' in local_var_params:
             query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_backup_usage_alarm_config(self, request):
+        r"""查询备份空间告警配置
+
+        查询备份空间告警配置，未配置时返回默认值。告警关闭时仅返回alarm_enabled字段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBackupUsageAlarmConfig
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupUsageAlarmConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupUsageAlarmConfigResponse`
+        """
+        http_info = self._show_backup_usage_alarm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_backup_usage_alarm_config_invoker(self, request):
+        http_info = self._show_backup_usage_alarm_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_usage_alarm_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/usage-alarm-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupUsageAlarmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_backup_usage_exceeded_instances(self, request):
+        r"""查询备份空间超阈值实例列表
+
+        查询当前项目和账号下备份空间使用量超过告警阈值的实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowBackupUsageExceededInstances
+        :type request: :class:`huaweicloudsdkrds.v3.ShowBackupUsageExceededInstancesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupUsageExceededInstancesResponse`
+        """
+        http_info = self._show_backup_usage_exceeded_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_backup_usage_exceeded_instances_invoker(self, request):
+        http_info = self._show_backup_usage_exceeded_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_usage_exceeded_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/usage-alarm/exceeded-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupUsageExceededInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -11271,6 +12020,75 @@ class RdsClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_restore_tables(self, request):
+        r"""获取已恢复库表信息
+
+        获取已恢复库表信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRestoreTables
+        :type request: :class:`huaweicloudsdkrds.v3.ShowRestoreTablesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowRestoreTablesResponse`
+        """
+        http_info = self._show_restore_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_restore_tables_invoker(self, request):
+        http_info = self._show_restore_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_restore_tables_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/get-restore-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRestoreTablesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -12723,6 +13541,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def update_backup_usage_alarm_config(self, request):
+        r"""修改备份空间告警配置
+
+        修改备份空间告警配置，包括告警开关、阈值百分比和增量百分比。关闭告警时不需要传阈值和增量参数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBackupUsageAlarmConfig
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateBackupUsageAlarmConfigRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateBackupUsageAlarmConfigResponse`
+        """
+        http_info = self._update_backup_usage_alarm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_backup_usage_alarm_config_invoker(self, request):
+        http_info = self._update_backup_usage_alarm_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_backup_usage_alarm_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/usage-alarm-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackupUsageAlarmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_configuration(self, request):
         r"""修改参数模板参数
 
@@ -13022,6 +13907,75 @@ class RdsClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/alias",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateInstanceAliasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instance_backup_method(self, request):
+        r"""切换实例备份方式
+
+        切换实例备份方式
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceBackupMethod
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceBackupMethodRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceBackupMethodResponse`
+        """
+        http_info = self._update_instance_backup_method_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instance_backup_method_invoker(self, request):
+        http_info = self._update_instance_backup_method_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_backup_method_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/method",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceBackupMethodResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -14960,6 +15914,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def show_disk_space_diagnosis(self, request):
+        r"""查询磁盘容量趋势诊断结果
+
+        查询磁盘容量趋势诊断结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiskSpaceDiagnosis
+        :type request: :class:`huaweicloudsdkrds.v3.ShowDiskSpaceDiagnosisRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowDiskSpaceDiagnosisResponse`
+        """
+        http_info = self._show_disk_space_diagnosis_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_disk_space_diagnosis_invoker(self, request):
+        http_info = self._show_disk_space_diagnosis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_disk_space_diagnosis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/diagnosis/disk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiskSpaceDiagnosisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_intelligent_kill_session_history(self, request):
         r"""查询一键kill会话历史
 
@@ -15073,6 +16094,81 @@ class RdsClient(Client):
         query_params = []
         if 'node_id' in local_var_params:
             query_params.append(('node_id', local_var_params['node_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_diagnosis(self, request):
+        r"""查询诊断项sql详情
+
+        查询诊断项sql详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSqlDiagnosis
+        :type request: :class:`huaweicloudsdkrds.v3.ShowSqlDiagnosisRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowSqlDiagnosisResponse`
+        """
+        http_info = self._show_sql_diagnosis_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_diagnosis_invoker(self, request):
+        http_info = self._show_sql_diagnosis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_diagnosis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/diagnosis/sql",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlDiagnosisResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'subcategory' in local_var_params:
+            query_params.append(('subcategory', local_var_params['subcategory']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -18109,6 +19205,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_instance_all_proxy_version(self, request):
+        r"""查询实例代理节点的引擎版本信息
+
+        获取某个实例下代理节点的引擎版本信息，用于版本升级判断。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceAllProxyVersion
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstanceAllProxyVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstanceAllProxyVersionResponse`
+        """
+        http_info = self._list_instance_all_proxy_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_all_proxy_version_invoker(self, request):
+        http_info = self._list_instance_all_proxy_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_all_proxy_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/engine-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceAllProxyVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def reset_pwd(self, request):
         r"""重置数据库密码
 
@@ -18352,6 +19515,154 @@ class RdsClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_my_sql_proxy_slow_log_list(self, request):
+        r"""查询数据库代理慢日志信息列表
+
+        查询数据库代理慢日志信息列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowMySqlProxySlowLogList
+        :type request: :class:`huaweicloudsdkrds.v3.ShowMySqlProxySlowLogListRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowMySqlProxySlowLogListResponse`
+        """
+        http_info = self._show_my_sql_proxy_slow_log_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_my_sql_proxy_slow_log_list_invoker(self, request):
+        http_info = self._show_my_sql_proxy_slow_log_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_my_sql_proxy_slow_log_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/slow-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMySqlProxySlowLogListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
+        if 'line_num' in local_var_params:
+            query_params.append(('line_num', local_var_params['line_num']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_my_sql_proxy_slow_log(self, request):
+        r"""更改数据库代理慢日志上报开关
+
+        更改数据库代理慢日志上报开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchMySqlProxySlowLog
+        :type request: :class:`huaweicloudsdkrds.v3.SwitchMySqlProxySlowLogRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SwitchMySqlProxySlowLogResponse`
+        """
+        http_info = self._switch_my_sql_proxy_slow_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_my_sql_proxy_slow_log_invoker(self, request):
+        http_info = self._switch_my_sql_proxy_slow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_my_sql_proxy_slow_log_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/slow-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchMySqlProxySlowLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
 
         query_params = []
 

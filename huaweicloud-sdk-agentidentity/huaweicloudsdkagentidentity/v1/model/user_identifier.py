@@ -13,6 +13,7 @@ class UserIdentifier:
                             and the value is json key in definition.
     """
     sensitive_list = []
+    sensitive_list.append('user_token')
 
     openapi_types = {
         'user_token': 'str',

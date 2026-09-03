@@ -25,7 +25,13 @@ class ListSubscriptionUserResponseItemInfo:
         'http': 'ListSubscriptionUserResponseHttpEndpointInfo',
         'https': 'ListSubscriptionUserResponseHttpsEndpointInfo',
         'sms': 'ListSubscriptionUserResponseSmsEndpointInfo',
-        'email': 'ListSubscriptionUserResponseEmailEndpointInfo'
+        'email': 'ListSubscriptionUserResponseEmailEndpointInfo',
+        'callnotify': 'ListSubscriptionUserResponseCallnotifyEndpointInfo',
+        'wechat': 'ListSubscriptionUserResponseWechatEndpointInfo',
+        'dingding': 'ListSubscriptionUserResponseDingdingEndpointInfo',
+        'feishu': 'ListSubscriptionUserResponseFeishuEndpointInfo',
+        'welink': 'ListSubscriptionUserResponseWelinkEndpointInfo',
+        'ding_talk_bot': 'ListSubscriptionUserResponseDingTalkBotEndpointInfo'
     }
 
     attribute_map = {
@@ -39,10 +45,16 @@ class ListSubscriptionUserResponseItemInfo:
         'http': 'http',
         'https': 'https',
         'sms': 'sms',
-        'email': 'email'
+        'email': 'email',
+        'callnotify': 'callnotify',
+        'wechat': 'wechat',
+        'dingding': 'dingding',
+        'feishu': 'feishu',
+        'welink': 'welink',
+        'ding_talk_bot': 'ding_talk_bot'
     }
 
-    def __init__(self, id=None, domain_id=None, name=None, status=None, group=None, create_time=None, update_time=None, http=None, https=None, sms=None, email=None):
+    def __init__(self, id=None, domain_id=None, name=None, status=None, group=None, create_time=None, update_time=None, http=None, https=None, sms=None, email=None, callnotify=None, wechat=None, dingding=None, feishu=None, welink=None, ding_talk_bot=None):
         r"""ListSubscriptionUserResponseItemInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +81,18 @@ class ListSubscriptionUserResponseItemInfo:
         :type sms: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseSmsEndpointInfo`
         :param email: 
         :type email: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseEmailEndpointInfo`
+        :param callnotify: 
+        :type callnotify: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseCallnotifyEndpointInfo`
+        :param wechat: 
+        :type wechat: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWechatEndpointInfo`
+        :param dingding: 
+        :type dingding: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingdingEndpointInfo`
+        :param feishu: 
+        :type feishu: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseFeishuEndpointInfo`
+        :param welink: 
+        :type welink: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWelinkEndpointInfo`
+        :param ding_talk_bot: 
+        :type ding_talk_bot: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingTalkBotEndpointInfo`
         """
         
         
@@ -84,6 +108,12 @@ class ListSubscriptionUserResponseItemInfo:
         self._https = None
         self._sms = None
         self._email = None
+        self._callnotify = None
+        self._wechat = None
+        self._dingding = None
+        self._feishu = None
+        self._welink = None
+        self._ding_talk_bot = None
         self.discriminator = None
 
         self.id = id
@@ -101,6 +131,18 @@ class ListSubscriptionUserResponseItemInfo:
             self.sms = sms
         if email is not None:
             self.email = email
+        if callnotify is not None:
+            self.callnotify = callnotify
+        if wechat is not None:
+            self.wechat = wechat
+        if dingding is not None:
+            self.dingding = dingding
+        if feishu is not None:
+            self.feishu = feishu
+        if welink is not None:
+            self.welink = welink
+        if ding_talk_bot is not None:
+            self.ding_talk_bot = ding_talk_bot
 
     @property
     def id(self):
@@ -327,6 +369,114 @@ class ListSubscriptionUserResponseItemInfo:
         :type email: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseEmailEndpointInfo`
         """
         self._email = email
+
+    @property
+    def callnotify(self):
+        r"""Gets the callnotify of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The callnotify of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseCallnotifyEndpointInfo`
+        """
+        return self._callnotify
+
+    @callnotify.setter
+    def callnotify(self, callnotify):
+        r"""Sets the callnotify of this ListSubscriptionUserResponseItemInfo.
+
+        :param callnotify: The callnotify of this ListSubscriptionUserResponseItemInfo.
+        :type callnotify: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseCallnotifyEndpointInfo`
+        """
+        self._callnotify = callnotify
+
+    @property
+    def wechat(self):
+        r"""Gets the wechat of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The wechat of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWechatEndpointInfo`
+        """
+        return self._wechat
+
+    @wechat.setter
+    def wechat(self, wechat):
+        r"""Sets the wechat of this ListSubscriptionUserResponseItemInfo.
+
+        :param wechat: The wechat of this ListSubscriptionUserResponseItemInfo.
+        :type wechat: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWechatEndpointInfo`
+        """
+        self._wechat = wechat
+
+    @property
+    def dingding(self):
+        r"""Gets the dingding of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The dingding of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingdingEndpointInfo`
+        """
+        return self._dingding
+
+    @dingding.setter
+    def dingding(self, dingding):
+        r"""Sets the dingding of this ListSubscriptionUserResponseItemInfo.
+
+        :param dingding: The dingding of this ListSubscriptionUserResponseItemInfo.
+        :type dingding: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingdingEndpointInfo`
+        """
+        self._dingding = dingding
+
+    @property
+    def feishu(self):
+        r"""Gets the feishu of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The feishu of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseFeishuEndpointInfo`
+        """
+        return self._feishu
+
+    @feishu.setter
+    def feishu(self, feishu):
+        r"""Sets the feishu of this ListSubscriptionUserResponseItemInfo.
+
+        :param feishu: The feishu of this ListSubscriptionUserResponseItemInfo.
+        :type feishu: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseFeishuEndpointInfo`
+        """
+        self._feishu = feishu
+
+    @property
+    def welink(self):
+        r"""Gets the welink of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The welink of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWelinkEndpointInfo`
+        """
+        return self._welink
+
+    @welink.setter
+    def welink(self, welink):
+        r"""Sets the welink of this ListSubscriptionUserResponseItemInfo.
+
+        :param welink: The welink of this ListSubscriptionUserResponseItemInfo.
+        :type welink: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseWelinkEndpointInfo`
+        """
+        self._welink = welink
+
+    @property
+    def ding_talk_bot(self):
+        r"""Gets the ding_talk_bot of this ListSubscriptionUserResponseItemInfo.
+
+        :return: The ding_talk_bot of this ListSubscriptionUserResponseItemInfo.
+        :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingTalkBotEndpointInfo`
+        """
+        return self._ding_talk_bot
+
+    @ding_talk_bot.setter
+    def ding_talk_bot(self, ding_talk_bot):
+        r"""Sets the ding_talk_bot of this ListSubscriptionUserResponseItemInfo.
+
+        :param ding_talk_bot: The ding_talk_bot of this ListSubscriptionUserResponseItemInfo.
+        :type ding_talk_bot: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseDingTalkBotEndpointInfo`
+        """
+        self._ding_talk_bot = ding_talk_bot
 
     def to_dict(self):
         result = {}

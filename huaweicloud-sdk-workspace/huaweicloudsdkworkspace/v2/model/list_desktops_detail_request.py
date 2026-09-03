@@ -40,6 +40,7 @@ class ListDesktopsDetailRequest:
         'subnet_id': 'str',
         'is_support_internet': 'bool',
         'availability_zone': 'str',
+        'without_any_tag': 'bool',
         'agent_version': 'str'
     }
 
@@ -69,10 +70,11 @@ class ListDesktopsDetailRequest:
         'subnet_id': 'subnet_id',
         'is_support_internet': 'is_support_internet',
         'availability_zone': 'availability_zone',
+        'without_any_tag': 'without_any_tag',
         'agent_version': 'agent_version'
     }
 
-    def __init__(self, status=None, user_name=None, user_id=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, domain_status=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, agent_version=None):
+    def __init__(self, status=None, user_name=None, user_id=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, domain_status=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None, without_any_tag=None, agent_version=None):
         r"""ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class ListDesktopsDetailRequest:
         :type is_support_internet: bool
         :param availability_zone: 查询可用区。
         :type availability_zone: str
+        :param without_any_tag: 是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+        :type without_any_tag: bool
         :param agent_version: agent版本。
         :type agent_version: str
         """
@@ -158,6 +162,7 @@ class ListDesktopsDetailRequest:
         self._subnet_id = None
         self._is_support_internet = None
         self._availability_zone = None
+        self._without_any_tag = None
         self._agent_version = None
         self.discriminator = None
 
@@ -211,6 +216,8 @@ class ListDesktopsDetailRequest:
             self.is_support_internet = is_support_internet
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
         if agent_version is not None:
             self.agent_version = agent_version
 
@@ -763,6 +770,28 @@ class ListDesktopsDetailRequest:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def without_any_tag(self):
+        r"""Gets the without_any_tag of this ListDesktopsDetailRequest.
+
+        是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+
+        :return: The without_any_tag of this ListDesktopsDetailRequest.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        r"""Sets the without_any_tag of this ListDesktopsDetailRequest.
+
+        是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+
+        :param without_any_tag: The without_any_tag of this ListDesktopsDetailRequest.
+        :type without_any_tag: bool
+        """
+        self._without_any_tag = without_any_tag
 
     @property
     def agent_version(self):

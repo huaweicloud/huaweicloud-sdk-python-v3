@@ -1,3 +1,432 @@
+# 3.1.213 2026-09-03
+
+### HuaweiCloud SDK AgentIdentity
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListPolicyEngines`
+    - `CreatePolicyEngine`
+    - `GetPolicyEngine`
+    - `UpdatePolicyEngine`
+    - `DeletePolicyEngine`
+    - `ListPolicyEngineAttachments`
+    - `ListPolicies`
+    - `CreatePolicy`
+    - `GetPolicy`
+    - `UpdatePolicy`
+    - `DeletePolicy`
+    - `ListIdentityProviders`
+    - `UpdateTokenVault`
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetResourceOauth2Token**
+    - changes of response param
+      - `+ expires_at`
+  - **CreateWorkloadAccessToken**
+    - changes of response param
+      - `- expiration`
+  - **CreateWorkloadAccessTokenForJwt**
+    - changes of response param
+      - `- expiration`
+  - **CreateWorkloadAccessTokenForUserId**
+    - changes of response param
+      - `- expiration`
+  - **GetTokenVault**
+    - changes of response param
+      - `+ token_vault.urn`
+      - `+ token_vault.policy_engine_configuration`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `AddOrUpdateTestsuiteInfoUsing`
+    - `DeleteTestsuiteInfosUsing`
+    - `ShowTestsuiteInfoUsing`
+    - `UpdateTestsuiteInfoUsing`
+    - `StartTestsuiteUsing`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListAllTypeInstances`
+    - `ShowIsSignedProtocol`
+    - `SignProtocolNew`
+    - `ChangeQuotaNew`
+    - `ShowInstanceLogUsage`
+    - `ListNotSetChargeModeInstance`
+    - `ShowOpeningInfo`
+    - `EnableQuota`
+    - `CreateBinlogTask`
+    - `DeleteExportTaskNew`
+    - `DeleteBinlogTask`
+    - `ListBinlogExports`
+    - `ShowFragmentSwitch`
+    - `ShowBinlogExportTaskInfo`
+    - `ShowBinlogTaskInfo`
+    - `ListBinlogFiles`
+    - `RetryBinlogTask`
+    - `SearchBinlogParse`
+    - `SearchErrorInfo4Api`
+    - `SearchErrorInfoSource4Api`
+    - `ShowBinlogParse`
+    - `StopBinlogTask`
+    - `UpdateSearchPathFlag`
+    - `DeleteDbObjNew`
+    - `ExecuteFormatSql`
+    - `ListDatabaseObjects`
+    - `ShowExecuteResultWithoutKey`
+    - `ShowExecuteResultWithoutKeyNoRetry`
+    - `ShowExecutionPlan`
+    - `ListSharedConnections`
+    - `CancelConnectionProcess`
+    - `ShowLatestDeadLockSnapshot4Api`
+    - `ShowMetaLock`
+    - `ShowMetaLockSnapshot`
+    - `ListConnectionProcesses`
+    - `ListSnapshots4Api`
+    - `ShowWaitingLocksSnapshot`
+    - `ExecuteLoginConnectionNew`
+    - `ImportExportObsObjects`
+    - `ListSchemaNames`
+    - `ExecuteSplitSql`
+    - `ExecuteTuning`
+    - `ShowTuningResult`
+    - `UpdateSharedInfoNew`
+    - `InvokeWdrReport`
+    - `ShowWdrSnapshot`
+    - `CreateWdrReport`
+    - `ExecuteTestConnectionNew`
+    - `VerifyConnectionNew`
+    - `CreateDbsConnection`
+    - `CreateFullSqlBucket`
+    - `DeleteFullSqlExportTaskObsFile`
+    - `ListFullSqlExportTasks`
+    - `ShowExecutionTimeTemplateTrend`
+    - `ShowSingleTemplateTrend`
+    - `ListSqlTemplateComparisons`
+    - `ListSqlTemplateDatabases`
+    - `ListSqlTemplates`
+    - `ShowSqlTemplateTrend`
+    - `ListTemplateDatabaseComparisons`
+    - `SearchNew`
+    - `AddTasksNew`
+    - `BatchAddFullSqlTasks`
+    - `ListTasksByBatchId`
+    - `ListTasksByTaskId`
+    - `ListTasksBySqlTemplateId`
+    - `CreateInstanceHealthReportTaskNew`
+    - `ShowInstanceHealthReport4Api`
+    - `ListInstanceHealthReportTasks`
+    - `CheckHealthReportTask`
+    - `SubscribeInstanceReportNew`
+    - `UnsubscribeInstanceReportNew`
+    - `ListSmnTopics`
+    - `BatchSetSqlSwitchNew`
+    - `ExportInstanceListNew`
+    - `ShowInstanceInfo`
+    - `ShowInstanceNodesInfo`
+    - `ListUserInstanceList`
+    - `ShowInstanceMetric`
+    - `SetSqlSwitchNew`
+    - `ListSqlLimitUserInstance`
+    - `SynchronizeInstanceListNew`
+    - `ShowSupportKeyString`
+    - `ShowKillProcessTask`
+    - `UpdateInstanceConfig`
+    - `ShowDdsConnectionStat`
+    - `ListDeadLockDatabases`
+    - `ListDeadLockDetail`
+    - `ShowDeadLockOriginData`
+    - `ShowDeadLockRelationship`
+    - `ShowDeadLockStatistics`
+    - `ShowDeadLockTrend`
+    - `ListFullDeadLocks`
+    - `CreateIndexUsageExportTaskNew`
+    - `ChangeDeadLockSwitchNew`
+    - `UpdateFullSqlSwitch`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowLatestInstanceHealthReport**
+    - changes of response param
+      - `* start_at: number -> int64`
+      - `* end_at: number -> int64`
+      - `+ table_space_stat.analyze_success`
+      - `+ table_space_stat.error_message`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ShowFactoryDependInstances`, `ShowFactoryJobDependInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFactoryAlarmRules**
+    - changes of response param
+      - `+ alarm_rules_items_details.enable_recovery`
+      - `+ alarm_rules_items_details.enable_persistent_alarm`
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the following APIs:
+    - `NovaShowFlavorExtraSpecs`
+    - `RegisterServerMonitor`
+    - `AssociateServerVirtualIp`
+    - `DisassociateServerVirtualIp`
+    - `BatchAddServerGroupMember`
+    - `BatchDeleteServerGroupMember`
+    - `NovaAssociateSecurityGroup`
+    - `NovaDisassociateSecurityGroup`
+    - `NovaDeleteKeypair`
+    - `NovaShowKeypair`
+    - `NovaListServers`
+    - `NovaCreateServers`
+    - `NovaDeleteServer`
+    - `NovaShowServer`
+    - `NovaListServersDetails`
+    - `NovaAttachInterface`
+    - `NovaShowServerInterface`
+    - `NovaCreateKeypair`
+    - `NovaListKeypairs`
+    - `NovaListServerSecurityGroups`
+  - **ChangeServerChargeMode**
+    - changes of response param
+      - `+ job_id`
+  - **CreateServers**
+    - changes of request param
+      - `+ server.nics.efi_enable`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ChangeVolumeChargeMode`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowKernelUpgradeCheckResult**
+    - changes of response param
+      - `+ upgrade_precheck_result`
+      - `+ updated_at`
+      - `+ upgrade_precheck_detail`
+      - `- job_ids`
+  - **SetInstanceScheduleEvents**
+    - changes of request param
+      - `+ event_schedule_window.planned_day`
+      - `+ event_schedule_window.start_time`
+      - `+ event_schedule_window.end_time`
+      - `* event_schedule_window: object -> object<EventScheduleWindow>`
+  - **ShowInstanceScheduleEvents**
+    - changes of response param
+      - `+ events.execution_time_window.planned_execution_day`
+      - `+ events.execution_time_window.start_time`
+      - `+ events.execution_time_window.end_time`
+      - `* events.execution_time_window: object -> object<ExecuteWindow>`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ShowFtDetail`
+    - `ShowFtMetrics`
+    - `ListFtArtifacts`
+    - `PublishFtArtifacts`
+    - `CountTrainingJobsByTags`
+    - `ListTrainingJobsByTags`
+    - `ValidateTrainingJobName`
+    - `ShowTrainingJobLogsFromAom`
+    - `ShowTrainingJobRoutePlan`
+    - `BatchDeleteTrainingJob`
+    - `ShowTrainingFlavorMaxAvailableResource`
+    - `ListTrainingJobTags`
+    - `ModifyTrainingQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPoolRuntimeMetrics**
+    - changes of response param
+      - `+ items.table.available.maxValue.cpu`
+      - `+ items.table.available.maxValue.memory`
+      - `+ items.table.available.maxValue.tnt004`
+      - `* items.table.available.maxValue: object -> object<Value>`
+      - `+ items.table.workload.allocated.infer`
+      - `+ items.table.workload.allocated.notebook`
+      - `+ items.table.workload.allocated.train`
+      - `+ items.table.workload.allocated.warmUpTask`
+      - `+ items.table.workload.allocated.x-infer`
+      - `+ items.table.workload.allocated.sum`
+      - `- items.table.workload.allocated.type`
+      - `- items.table.workload.allocated.total`
+      - `- items.table.workload.allocated.status`
+      - `* items.table.workload.allocated: object<WorkloadStatistics> -> object<WorkloadStatisticsInfo>`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowBackupUsageAlarmConfig`
+    - `UpdateBackupUsageAlarmConfig`
+    - `ShowBackupUsageExceededInstances`
+    - `ListRetainBackups`
+    - `SetBackupRetainPolicy`
+    - `ShowBackupRetainPolicy`
+    - `UpdateInstanceBackupMethod`
+    - `ListInstanceAllProxyVersion`
+    - `ShowRestoreTables`
+    - `QueryNewBackupEncryption`
+    - `ModifyNewBackupEncrypt`
+    - `ShowMySqlProxySlowLogList`
+    - `SwitchMySqlProxySlowLog`
+    - `CreateBinlogMerge`
+    - `DeleteBinlogMerge`
+    - `GetInstancesOpsMetricNames`
+    - `ShowDiskSpaceDiagnosis`
+    - `CreateDiskSpaceDiagnosis`
+    - `ShowSqlDiagnosis`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SMN
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSubscription**
+    - changes of request param
+      - `+ verification_code`
+  - **ListSubscriptions**
+    - changes of response param
+      - `+ subscriptions.extension`
+  - **AddSubscription**
+    - changes of request param
+      - `+ extension.verification_code_enabled`
+  - **ListSubscriptionsByTopic**
+    - changes of response param
+      - `+ subscriptions.extension`
+
+### HuaweiCloud SDK SMNGLOBAL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateSubscriptionUser**
+    - changes of request param
+      - `+ verification_code`
+  - **CreateSubscriptionUser**
+    - changes of request param
+      - `+ callnotify`
+      - `+ wechat`
+      - `+ dingding`
+      - `+ feishu`
+      - `+ welink`
+      - `+ ding_talk_bot`
+      - `+ sms.verification_code_enabled`
+  - **ListSubscriptionUser**
+    - changes of request param
+      - `+ protocol: enum value [callnotify,wechat,dingding,feishu,welink,ding_talk_bot]`
+    - changes of response param
+      - `+ subscription_users.callnotify`
+      - `+ subscription_users.wechat`
+      - `+ subscription_users.dingding`
+      - `+ subscription_users.feishu`
+      - `+ subscription_users.welink`
+      - `+ subscription_users.ding_talk_bot`
+      - `+ subscription_users.sms.verification_code_enabled`
+
+### HuaweiCloud SDK Workspace
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListSkills`
+    - `CreateSkill`
+    - `ShowSkill`
+    - `UpdateSkill`
+    - `DeleteSkill`
+    - `ListCommonSkills`
+    - `ShowCommonSkill`
+    - `CreateUploadUrls`
+    - `BatchListSkillPackages`
+    - `ListSkillPackages`
+    - `CreateSkillPackage`
+    - `ShowSkillPackage`
+    - `UpdateSkillPackage`
+    - `DeleteSkillPackage`
+    - `CreateDownloadUrl`
+    - `ExpandSkillPackageRegion`
+    - `RemoveSkillPackageRegion`
+    - `ListCommonSkillPackages`
+    - `ShowCommonSkillPackage`
+    - `CreateSkillBindings`
+    - `DeleteSkillBindings`
+    - `UpdateSecurityPolicyControl`
+    - `ListSecurityPolicyControlResources`
+    - `ListCommonSkillResources`
+    - `ListSkillResources`
+    - `ListInstanceSkills`
+    - `AttachDesktopPoolUser`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportDesktopListNew**
+    - changes of request param
+      - `+ without_any_tag`
+  - **ListAgentInstances**
+    - changes of response param
+      - `+ agent_instances.security_policy_control`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ without_any_tag`
+
 # 3.1.212 2026-08-27
 
 ### HuaweiCloud SDK BMS

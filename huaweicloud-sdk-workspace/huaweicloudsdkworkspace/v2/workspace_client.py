@@ -5024,6 +5024,148 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def list_common_skills(self, request):
+        r"""查询公共技能列表（只读）
+
+        企业租户查询公共技能列表（只读），支持按分类、状态过滤。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCommonSkills
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillsResponse`
+        """
+        http_info = self._list_common_skills_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_common_skills_invoker(self, request):
+        http_info = self._list_common_skills_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_common_skills_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/common-skills",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommonSkillsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'skill_name' in local_var_params:
+            query_params.append(('skill_name', local_var_params['skill_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_common_skill(self, request):
+        r"""查询公共技能详情（只读）
+
+        企业租户查询公共技能详情（只读）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCommonSkill
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowCommonSkillRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowCommonSkillResponse`
+        """
+        http_info = self._show_common_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_common_skill_invoker(self, request):
+        http_info = self._show_common_skill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_common_skill_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/common-skills/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommonSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def export_user_login_info_new(self, request):
         r"""导出连接记录(待废弃)
 
@@ -7334,6 +7476,8 @@ class WorkspaceClient(Client):
             query_params.append(('is_support_internet', local_var_params['is_support_internet']))
         if 'availability_zone' in local_var_params:
             query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'without_any_tag' in local_var_params:
+            query_params.append(('without_any_tag', local_var_params['without_any_tag']))
         if 'agent_version' in local_var_params:
             query_params.append(('agent_version', local_var_params['agent_version']))
 
@@ -8577,6 +8721,73 @@ class WorkspaceClient(Client):
             "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/volumes/batch-add",
             "request_type": request.__class__.__name__,
             "response_type": "AddDesktopPoolVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def attach_desktop_pool_user(self, request):
+        r"""桌面池绑定用户
+
+        将用户绑定到桌面池。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachDesktopPoolUser
+        :type request: :class:`huaweicloudsdkworkspace.v2.AttachDesktopPoolUserRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.AttachDesktopPoolUserResponse`
+        """
+        http_info = self._attach_desktop_pool_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_desktop_pool_user_invoker(self, request):
+        http_info = self._attach_desktop_pool_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_desktop_pool_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachDesktopPoolUserResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10610,6 +10821,8 @@ class WorkspaceClient(Client):
             query_params.append(('desktop_id', local_var_params['desktop_id']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'without_any_tag' in local_var_params:
+            query_params.append(('without_any_tag', local_var_params['without_any_tag']))
         if 'language' in local_var_params:
             query_params.append(('language', local_var_params['language']))
         if 'enterprise_project_id' in local_var_params:
@@ -21664,6 +21877,1684 @@ class WorkspaceClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_skill_bindings(self, request):
+        r"""创建技能绑定
+
+        批量绑定技能到实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSkillBindings
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateSkillBindingsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateSkillBindingsResponse`
+        """
+        http_info = self._create_skill_bindings_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_skill_bindings_invoker(self, request):
+        http_info = self._create_skill_bindings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_skill_bindings_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skill-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSkillBindingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_skill_bindings(self, request):
+        r"""删除技能绑定
+
+        批量解绑技能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSkillBindings
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteSkillBindingsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteSkillBindingsResponse`
+        """
+        http_info = self._delete_skill_bindings_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_skill_bindings_invoker(self, request):
+        http_info = self._delete_skill_bindings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_skill_bindings_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skill-bindings/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSkillBindingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_common_skill_resources(self, request):
+        r"""查询公共技能绑定的资源列表
+
+        查询公共技能绑定的资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCommonSkillResources
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillResourcesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillResourcesResponse`
+        """
+        http_info = self._list_common_skill_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_common_skill_resources_invoker(self, request):
+        http_info = self._list_common_skill_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_common_skill_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/common-skills/{skill_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommonSkillResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_skills(self, request):
+        r"""查询实例绑定的技能列表
+
+        查询实例绑定的技能列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceSkills
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListInstanceSkillsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListInstanceSkillsResponse`
+        """
+        http_info = self._list_instance_skills_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_skills_invoker(self, request):
+        http_info = self._list_instance_skills_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_skills_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/instances/{instance_id}/skills",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceSkillsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_policy_control_resources(self, request):
+        r"""查询安全策略管控资源列表
+
+        查询安全策略管控的资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityPolicyControlResources
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSecurityPolicyControlResourcesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSecurityPolicyControlResourcesResponse`
+        """
+        http_info = self._list_security_policy_control_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_policy_control_resources_invoker(self, request):
+        http_info = self._list_security_policy_control_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_policy_control_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/security-policy-control/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityPolicyControlResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_skill_resources(self, request):
+        r"""查询企业技能绑定的资源列表
+
+        查询企业自研技能绑定的资源列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSkillResources
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSkillResourcesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSkillResourcesResponse`
+        """
+        http_info = self._list_skill_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_skill_resources_invoker(self, request):
+        http_info = self._list_skill_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_skill_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSkillResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_policy_control(self, request):
+        r"""更新安全策略管控
+
+        批量更新实例的安全策略管控状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityPolicyControl
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateSecurityPolicyControlRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSecurityPolicyControlResponse`
+        """
+        http_info = self._update_security_policy_control_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_policy_control_invoker(self, request):
+        http_info = self._update_security_policy_control_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_policy_control_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills/security-policy-control",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityPolicyControlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_list_skill_packages(self, request):
+        r"""批量查询技能包
+
+        根据技能ID列表批量查询当前生效的技能包信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchListSkillPackages
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchListSkillPackagesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchListSkillPackagesResponse`
+        """
+        http_info = self._batch_list_skill_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_list_skill_packages_invoker(self, request):
+        http_info = self._batch_list_skill_packages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_list_skill_packages_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skill-packages/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListSkillPackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_download_url(self, request):
+        r"""生成下载地址
+
+        生成企业自研技能包的OBS预签名下载地址。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDownloadUrl
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateDownloadUrlRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDownloadUrlResponse`
+        """
+        http_info = self._create_download_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_download_url_invoker(self, request):
+        http_info = self._create_download_url_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_download_url_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}/download-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDownloadUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_skill_package(self, request):
+        r"""创建技能包
+
+        为企业自研技能上传新版本技能包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSkillPackage
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateSkillPackageRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateSkillPackageResponse`
+        """
+        http_info = self._create_skill_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_skill_package_invoker(self, request):
+        http_info = self._create_skill_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_skill_package_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSkillPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_upload_urls(self, request):
+        r"""生成上传地址
+
+        生成OBS预签名上传地址，用于企业自研技能包上传。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateUploadUrls
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateUploadUrlsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUploadUrlsResponse`
+        """
+        http_info = self._create_upload_urls_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_upload_urls_invoker(self, request):
+        http_info = self._create_upload_urls_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_upload_urls_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skill-packages/upload-urls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUploadUrlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_skill_package(self, request):
+        r"""删除技能包
+
+        删除企业自研技能的技能包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSkillPackage
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteSkillPackageRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteSkillPackageResponse`
+        """
+        http_info = self._delete_skill_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_skill_package_invoker(self, request):
+        http_info = self._delete_skill_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_skill_package_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSkillPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def expand_skill_package_region(self, request):
+        r"""扩展技能包区域
+
+        为企业自研技能包扩展新的OBS区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExpandSkillPackageRegion
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExpandSkillPackageRegionRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandSkillPackageRegionResponse`
+        """
+        http_info = self._expand_skill_package_region_http_info(request)
+        return self._call_api(**http_info)
+
+    def expand_skill_package_region_invoker(self, request):
+        http_info = self._expand_skill_package_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_skill_package_region_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandSkillPackageRegionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_common_skill_packages(self, request):
+        r"""查询公共技能包列表（只读）
+
+        企业租户查询公共技能的技能包列表（只读）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCommonSkillPackages
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillPackagesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListCommonSkillPackagesResponse`
+        """
+        http_info = self._list_common_skill_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_common_skill_packages_invoker(self, request):
+        http_info = self._list_common_skill_packages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_common_skill_packages_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/common-skills/{skill_id}/packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommonSkillPackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_skill_packages(self, request):
+        r"""查询技能包列表
+
+        查询企业自研技能的技能包列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSkillPackages
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSkillPackagesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSkillPackagesResponse`
+        """
+        http_info = self._list_skill_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_skill_packages_invoker(self, request):
+        http_info = self._list_skill_packages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_skill_packages_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSkillPackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_skill_package_region(self, request):
+        r"""移除技能包区域
+
+        批量移除企业自研技能包的OBS区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RemoveSkillPackageRegion
+        :type request: :class:`huaweicloudsdkworkspace.v2.RemoveSkillPackageRegionRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.RemoveSkillPackageRegionResponse`
+        """
+        http_info = self._remove_skill_package_region_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_skill_package_region_invoker(self, request):
+        http_info = self._remove_skill_package_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_skill_package_region_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}/regions/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveSkillPackageRegionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_common_skill_package(self, request):
+        r"""查询公共技能包详情（只读）
+
+        企业租户查询公共技能的技能包详情（只读）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCommonSkillPackage
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowCommonSkillPackageRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowCommonSkillPackageResponse`
+        """
+        http_info = self._show_common_skill_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_common_skill_package_invoker(self, request):
+        http_info = self._show_common_skill_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_common_skill_package_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/common-skills/{skill_id}/packages/{package_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommonSkillPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_skill_package(self, request):
+        r"""查询技能包详情
+
+        查询企业自研技能的技能包详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSkillPackage
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowSkillPackageRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowSkillPackageResponse`
+        """
+        http_info = self._show_skill_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_skill_package_invoker(self, request):
+        http_info = self._show_skill_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_skill_package_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_skill_package(self, request):
+        r"""更新技能包
+
+        更新企业自研技能的技能包信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSkillPackage
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateSkillPackageRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSkillPackageResponse`
+        """
+        http_info = self._update_skill_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_skill_package_invoker(self, request):
+        http_info = self._update_skill_package_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_skill_package_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}/packages/{package_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSkillPackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+        if 'package_id' in local_var_params:
+            path_params['package_id'] = local_var_params['package_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_skill(self, request):
+        r"""创建企业自研技能
+
+        创建企业自研技能，支持同时上传技能包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSkill
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateSkillRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateSkillResponse`
+        """
+        http_info = self._create_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_skill_invoker(self, request):
+        http_info = self._create_skill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_skill_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/ai-agents/skills",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_skill(self, request):
+        r"""删除企业自研技能
+
+        删除企业自研技能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSkill
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteSkillRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteSkillResponse`
+        """
+        http_info = self._delete_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_skill_invoker(self, request):
+        http_info = self._delete_skill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_skill_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_skills(self, request):
+        r"""查询企业自研技能列表
+
+        查询企业自研技能列表，支持按分类、状态过滤。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSkills
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSkillsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSkillsResponse`
+        """
+        http_info = self._list_skills_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_skills_invoker(self, request):
+        http_info = self._list_skills_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_skills_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/skills",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSkillsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'skill_name' in local_var_params:
+            query_params.append(('skill_name', local_var_params['skill_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_skill(self, request):
+        r"""查询企业自研技能详情
+
+        查询企业自研技能详情，包含技能包摘要列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSkill
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowSkillRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowSkillResponse`
+        """
+        http_info = self._show_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_skill_invoker(self, request):
+        http_info = self._show_skill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_skill_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_skill(self, request):
+        r"""更新企业自研技能
+
+        更新企业自研技能信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSkill
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateSkillRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSkillResponse`
+        """
+        http_info = self._update_skill_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_skill_invoker(self, request):
+        http_info = self._update_skill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_skill_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/ai-agents/skills/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSkillResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'skill_id' in local_var_params:
+            path_params['skill_id'] = local_var_params['skill_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

@@ -39,11 +39,11 @@ class ListSubscriptionUserRequest:
 
         :param name: 订阅用户名称。
         :type name: str
-        :param protocol: 协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件
+        :param protocol: 协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件 callnotify: 语音 wechat: 企业微信机器人 dingding: 钉钉群机器人 feishu: 飞书群机器人 welink: WeLink群机器人 ding_talk_bot: 个人钉钉协议
         :type protocol: str
         :param status: 订阅用户状态。 UNCONFIRMED：未确认 CONFIRMED：已确认 CANCELLED：已取消
         :type status: str
-        :param group: 订阅用户分组。
+        :param group: 订阅用户分组。该字段支持模糊查询。
         :type group: str
         :param offset: 偏移量。偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
         :type offset: int
@@ -100,7 +100,7 @@ class ListSubscriptionUserRequest:
     def protocol(self):
         r"""Gets the protocol of this ListSubscriptionUserRequest.
 
-        协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件
+        协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件 callnotify: 语音 wechat: 企业微信机器人 dingding: 钉钉群机器人 feishu: 飞书群机器人 welink: WeLink群机器人 ding_talk_bot: 个人钉钉协议
 
         :return: The protocol of this ListSubscriptionUserRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSubscriptionUserRequest:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListSubscriptionUserRequest.
 
-        协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件
+        协议。 http：HTTP终端 https：HTTPS终端 sms：短信 email：邮件 callnotify: 语音 wechat: 企业微信机器人 dingding: 钉钉群机器人 feishu: 飞书群机器人 welink: WeLink群机器人 ding_talk_bot: 个人钉钉协议
 
         :param protocol: The protocol of this ListSubscriptionUserRequest.
         :type protocol: str
@@ -144,7 +144,7 @@ class ListSubscriptionUserRequest:
     def group(self):
         r"""Gets the group of this ListSubscriptionUserRequest.
 
-        订阅用户分组。
+        订阅用户分组。该字段支持模糊查询。
 
         :return: The group of this ListSubscriptionUserRequest.
         :rtype: str
@@ -155,7 +155,7 @@ class ListSubscriptionUserRequest:
     def group(self, group):
         r"""Sets the group of this ListSubscriptionUserRequest.
 
-        订阅用户分组。
+        订阅用户分组。该字段支持模糊查询。
 
         :param group: The group of this ListSubscriptionUserRequest.
         :type group: str

@@ -17,8 +17,8 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
 
     openapi_types = {
         'success': 'bool',
-        'start_at': 'float',
-        'end_at': 'float',
+        'start_at': 'int',
+        'end_at': 'int',
         'task_id': 'str',
         'summary_info': 'HealthReportSummaryInfo',
         'instance_info': 'HealthReportInstanceInfo',
@@ -55,9 +55,9 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         :param success: 日报诊断是否成功
         :type success: bool
         :param start_at: 日报诊断区间的起始时间（Unix timestamp），单位：毫秒
-        :type start_at: float
+        :type start_at: int
         :param end_at: 日报诊断区间的结束时间（Unix timestamp），单位：毫秒
-        :type end_at: float
+        :type end_at: int
         :param task_id: 报告ID
         :type task_id: str
         :param summary_info: 
@@ -153,7 +153,7 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒
 
         :return: The start_at of this ShowLatestInstanceHealthReportResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._start_at
 
@@ -164,7 +164,7 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒
 
         :param start_at: The start_at of this ShowLatestInstanceHealthReportResponse.
-        :type start_at: float
+        :type start_at: int
         """
         self._start_at = start_at
 
@@ -175,7 +175,7 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒
 
         :return: The end_at of this ShowLatestInstanceHealthReportResponse.
-        :rtype: float
+        :rtype: int
         """
         return self._end_at
 
@@ -186,7 +186,7 @@ class ShowLatestInstanceHealthReportResponse(SdkResponse):
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒
 
         :param end_at: The end_at of this ShowLatestInstanceHealthReportResponse.
-        :type end_at: float
+        :type end_at: int
         """
         self._end_at = end_at
 

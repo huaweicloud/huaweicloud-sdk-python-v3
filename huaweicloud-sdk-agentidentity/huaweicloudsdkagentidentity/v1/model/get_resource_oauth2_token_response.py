@@ -20,17 +20,19 @@ class GetResourceOauth2TokenResponse(SdkResponse):
         'access_token': 'str',
         'authorization_url': 'str',
         'session_status': 'str',
-        'session_uri': 'str'
+        'session_uri': 'str',
+        'expires_at': 'datetime'
     }
 
     attribute_map = {
         'access_token': 'access_token',
         'authorization_url': 'authorization_url',
         'session_status': 'session_status',
-        'session_uri': 'session_uri'
+        'session_uri': 'session_uri',
+        'expires_at': 'expires_at'
     }
 
-    def __init__(self, access_token=None, authorization_url=None, session_status=None, session_uri=None):
+    def __init__(self, access_token=None, authorization_url=None, session_status=None, session_uri=None, expires_at=None):
         r"""GetResourceOauth2TokenResponse
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class GetResourceOauth2TokenResponse(SdkResponse):
         :type session_status: str
         :param session_uri: Unique identifier for the user&#39;s authentication session (matches request session_uri)
         :type session_uri: str
+        :param expires_at: Absolute expiration time of the access token in RFC 3339 format, UTC timezone.
+        :type expires_at: datetime
         """
         
         super().__init__()
@@ -51,6 +55,7 @@ class GetResourceOauth2TokenResponse(SdkResponse):
         self._authorization_url = None
         self._session_status = None
         self._session_uri = None
+        self._expires_at = None
         self.discriminator = None
 
         if access_token is not None:
@@ -61,6 +66,8 @@ class GetResourceOauth2TokenResponse(SdkResponse):
             self.session_status = session_status
         if session_uri is not None:
             self.session_uri = session_uri
+        if expires_at is not None:
+            self.expires_at = expires_at
 
     @property
     def access_token(self):
@@ -149,6 +156,28 @@ class GetResourceOauth2TokenResponse(SdkResponse):
         :type session_uri: str
         """
         self._session_uri = session_uri
+
+    @property
+    def expires_at(self):
+        r"""Gets the expires_at of this GetResourceOauth2TokenResponse.
+
+        Absolute expiration time of the access token in RFC 3339 format, UTC timezone.
+
+        :return: The expires_at of this GetResourceOauth2TokenResponse.
+        :rtype: datetime
+        """
+        return self._expires_at
+
+    @expires_at.setter
+    def expires_at(self, expires_at):
+        r"""Sets the expires_at of this GetResourceOauth2TokenResponse.
+
+        Absolute expiration time of the access token in RFC 3339 format, UTC timezone.
+
+        :param expires_at: The expires_at of this GetResourceOauth2TokenResponse.
+        :type expires_at: datetime
+        """
+        self._expires_at = expires_at
 
     def to_dict(self):
         import warnings

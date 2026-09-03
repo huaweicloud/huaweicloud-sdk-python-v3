@@ -15,28 +15,35 @@ class ListSubscriptionUserResponseSmsEndpointInfo:
     sensitive_list = []
 
     openapi_types = {
-        'endpoint': 'str'
+        'endpoint': 'str',
+        'verification_code_enabled': 'bool'
     }
 
     attribute_map = {
-        'endpoint': 'endpoint'
+        'endpoint': 'endpoint',
+        'verification_code_enabled': 'verification_code_enabled'
     }
 
-    def __init__(self, endpoint=None):
+    def __init__(self, endpoint=None, verification_code_enabled=None):
         r"""ListSubscriptionUserResponseSmsEndpointInfo
 
         The model defined in huaweicloud sdk
 
         :param endpoint: 终端地址。
         :type endpoint: str
+        :param verification_code_enabled: 是否启用验证码发送确认短信，默认为false。
+        :type verification_code_enabled: bool
         """
         
         
 
         self._endpoint = None
+        self._verification_code_enabled = None
         self.discriminator = None
 
         self.endpoint = endpoint
+        if verification_code_enabled is not None:
+            self.verification_code_enabled = verification_code_enabled
 
     @property
     def endpoint(self):
@@ -59,6 +66,28 @@ class ListSubscriptionUserResponseSmsEndpointInfo:
         :type endpoint: str
         """
         self._endpoint = endpoint
+
+    @property
+    def verification_code_enabled(self):
+        r"""Gets the verification_code_enabled of this ListSubscriptionUserResponseSmsEndpointInfo.
+
+        是否启用验证码发送确认短信，默认为false。
+
+        :return: The verification_code_enabled of this ListSubscriptionUserResponseSmsEndpointInfo.
+        :rtype: bool
+        """
+        return self._verification_code_enabled
+
+    @verification_code_enabled.setter
+    def verification_code_enabled(self, verification_code_enabled):
+        r"""Sets the verification_code_enabled of this ListSubscriptionUserResponseSmsEndpointInfo.
+
+        是否启用验证码发送确认短信，默认为false。
+
+        :param verification_code_enabled: The verification_code_enabled of this ListSubscriptionUserResponseSmsEndpointInfo.
+        :type verification_code_enabled: bool
+        """
+        self._verification_code_enabled = verification_code_enabled
 
     def to_dict(self):
         result = {}

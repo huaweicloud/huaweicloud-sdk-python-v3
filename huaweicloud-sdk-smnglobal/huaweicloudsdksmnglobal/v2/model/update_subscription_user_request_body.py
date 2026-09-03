@@ -16,15 +16,17 @@ class UpdateSubscriptionUserRequestBody:
 
     openapi_types = {
         'name': 'str',
-        'group': 'list[str]'
+        'group': 'list[str]',
+        'verification_code': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'group': 'group'
+        'group': 'group',
+        'verification_code': 'verification_code'
     }
 
-    def __init__(self, name=None, group=None):
+    def __init__(self, name=None, group=None, verification_code=None):
         r"""UpdateSubscriptionUserRequestBody
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class UpdateSubscriptionUserRequestBody:
         :type name: str
         :param group: 订阅用户分组。每个订阅分组只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符。
         :type group: list[str]
+        :param verification_code: 订阅终端收到的验证码。
+        :type verification_code: str
         """
         
         
 
         self._name = None
         self._group = None
+        self._verification_code = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if group is not None:
             self.group = group
+        if verification_code is not None:
+            self.verification_code = verification_code
 
     @property
     def name(self):
@@ -89,6 +96,28 @@ class UpdateSubscriptionUserRequestBody:
         :type group: list[str]
         """
         self._group = group
+
+    @property
+    def verification_code(self):
+        r"""Gets the verification_code of this UpdateSubscriptionUserRequestBody.
+
+        订阅终端收到的验证码。
+
+        :return: The verification_code of this UpdateSubscriptionUserRequestBody.
+        :rtype: str
+        """
+        return self._verification_code
+
+    @verification_code.setter
+    def verification_code(self, verification_code):
+        r"""Sets the verification_code of this UpdateSubscriptionUserRequestBody.
+
+        订阅终端收到的验证码。
+
+        :param verification_code: The verification_code of this UpdateSubscriptionUserRequestBody.
+        :type verification_code: str
+        """
+        self._verification_code = verification_code
 
     def to_dict(self):
         result = {}

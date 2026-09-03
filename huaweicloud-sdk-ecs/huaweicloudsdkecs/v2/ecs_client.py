@@ -183,10 +183,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpResponse`
         """
+        warnings.warn("Method 'associate_server_virtual_ip' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._associate_server_virtual_ip_http_info(request)
         return self._call_api(**http_info)
 
     def associate_server_virtual_ip_invoker(self, request):
+        warnings.warn("Method 'associate_server_virtual_ip_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._associate_server_virtual_ip_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -317,10 +319,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchAddServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerGroupMemberResponse`
         """
+        warnings.warn("Method 'batch_add_server_group_member' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_add_server_group_member_http_info(request)
         return self._call_api(**http_info)
 
     def batch_add_server_group_member_invoker(self, request):
+        warnings.warn("Method 'batch_add_server_group_member_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_add_server_group_member_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -587,10 +591,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerGroupMemberResponse`
         """
+        warnings.warn("Method 'batch_delete_server_group_member' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_server_group_member_http_info(request)
         return self._call_api(**http_info)
 
     def batch_delete_server_group_member_invoker(self, request):
+        warnings.warn("Method 'batch_delete_server_group_member_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._batch_delete_server_group_member_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -2420,10 +2426,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpResponse`
         """
+        warnings.warn("Method 'disassociate_server_virtual_ip' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._disassociate_server_virtual_ip_http_info(request)
         return self._call_api(**http_info)
 
     def disassociate_server_virtual_ip_invoker(self, request):
+        warnings.warn("Method 'disassociate_server_virtual_ip_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._disassociate_server_virtual_ip_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3891,10 +3899,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupResponse`
         """
+        warnings.warn("Method 'nova_associate_security_group' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_associate_security_group_http_info(request)
         return self._call_api(**http_info)
 
     def nova_associate_security_group_invoker(self, request):
+        warnings.warn("Method 'nova_associate_security_group_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_associate_security_group_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -3958,10 +3968,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceResponse`
         """
+        warnings.warn("Method 'nova_attach_interface' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_attach_interface_http_info(request)
         return self._call_api(**http_info)
 
     def nova_attach_interface_invoker(self, request):
+        warnings.warn("Method 'nova_attach_interface_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_attach_interface_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4027,10 +4039,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairResponse`
         """
+        warnings.warn("Method 'nova_create_keypair' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_create_keypair_http_info(request)
         return self._call_api(**http_info)
 
     def nova_create_keypair_invoker(self, request):
+        warnings.warn("Method 'nova_create_keypair_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_create_keypair_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4098,10 +4112,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersResponse`
         """
+        warnings.warn("Method 'nova_create_servers' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_create_servers_http_info(request)
         return self._call_api(**http_info)
 
     def nova_create_servers_invoker(self, request):
+        warnings.warn("Method 'nova_create_servers_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_create_servers_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4165,10 +4181,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairResponse`
         """
+        warnings.warn("Method 'nova_delete_keypair' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_delete_keypair_http_info(request)
         return self._call_api(**http_info)
 
     def nova_delete_keypair_invoker(self, request):
+        warnings.warn("Method 'nova_delete_keypair_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_delete_keypair_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4230,10 +4248,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteServerResponse`
         """
+        warnings.warn("Method 'nova_delete_server' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_delete_server_http_info(request)
         return self._call_api(**http_info)
 
     def nova_delete_server_invoker(self, request):
+        warnings.warn("Method 'nova_delete_server_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_delete_server_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4295,10 +4315,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupResponse`
         """
+        warnings.warn("Method 'nova_disassociate_security_group' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_disassociate_security_group_http_info(request)
         return self._call_api(**http_info)
 
     def nova_disassociate_security_group_invoker(self, request):
+        warnings.warn("Method 'nova_disassociate_security_group_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_disassociate_security_group_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4427,10 +4449,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListKeypairsResponse`
         """
+        warnings.warn("Method 'nova_list_keypairs' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_keypairs_http_info(request)
         return self._call_api(**http_info)
 
     def nova_list_keypairs_invoker(self, request):
+        warnings.warn("Method 'nova_list_keypairs_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_keypairs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4496,10 +4520,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsResponse`
         """
+        warnings.warn("Method 'nova_list_server_security_groups' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_server_security_groups_http_info(request)
         return self._call_api(**http_info)
 
     def nova_list_server_security_groups_invoker(self, request):
+        warnings.warn("Method 'nova_list_server_security_groups_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_server_security_groups_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4561,10 +4587,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersResponse`
         """
+        warnings.warn("Method 'nova_list_servers' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_servers_http_info(request)
         return self._call_api(**http_info)
 
     def nova_list_servers_invoker(self, request):
+        warnings.warn("Method 'nova_list_servers_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_servers_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4652,10 +4680,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsResponse`
         """
+        warnings.warn("Method 'nova_list_servers_details' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_servers_details_http_info(request)
         return self._call_api(**http_info)
 
     def nova_list_servers_details_invoker(self, request):
+        warnings.warn("Method 'nova_list_servers_details_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_list_servers_details_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4741,10 +4771,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowFlavorExtraSpecsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowFlavorExtraSpecsResponse`
         """
+        warnings.warn("Method 'nova_show_flavor_extra_specs' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_flavor_extra_specs_http_info(request)
         return self._call_api(**http_info)
 
     def nova_show_flavor_extra_specs_invoker(self, request):
+        warnings.warn("Method 'nova_show_flavor_extra_specs_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_flavor_extra_specs_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4806,10 +4838,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowKeypairResponse`
         """
+        warnings.warn("Method 'nova_show_keypair' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_keypair_http_info(request)
         return self._call_api(**http_info)
 
     def nova_show_keypair_invoker(self, request):
+        warnings.warn("Method 'nova_show_keypair_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_keypair_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4873,10 +4907,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerResponse`
         """
+        warnings.warn("Method 'nova_show_server' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_server_http_info(request)
         return self._call_api(**http_info)
 
     def nova_show_server_invoker(self, request):
+        warnings.warn("Method 'nova_show_server_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_server_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -4940,10 +4976,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerInterfaceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerInterfaceResponse`
         """
+        warnings.warn("Method 'nova_show_server_interface' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_server_interface_http_info(request)
         return self._call_api(**http_info)
 
     def nova_show_server_interface_invoker(self, request):
+        warnings.warn("Method 'nova_show_server_interface_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._nova_show_server_interface_http_info(request)
         return SyncInvoker(self, http_info)
 
@@ -5009,10 +5047,12 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorResponse`
         """
+        warnings.warn("Method 'register_server_monitor' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_server_monitor_http_info(request)
         return self._call_api(**http_info)
 
     def register_server_monitor_invoker(self, request):
+        warnings.warn("Method 'register_server_monitor_invoker' of EcsClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._register_server_monitor_http_info(request)
         return SyncInvoker(self, http_info)
 

@@ -17,7 +17,7 @@ class SetInstanceScheduleEventsRequestBody:
     openapi_types = {
         'operation_type': 'str',
         'event_instances': 'list[EventInstances]',
-        'event_schedule_window': 'object'
+        'event_schedule_window': 'EventScheduleWindow'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class SetInstanceScheduleEventsRequestBody:
         :type operation_type: str
         :param event_instances: **参数解释**：  事件信息。  **约束限制**：  批量事件个数不得超过20个。
         :type event_instances: list[:class:`huaweicloudsdkgaussdb.v3.EventInstances`]
-        :param event_schedule_window: **参数解释**：  事件执行窗口。  **约束限制**：  当operation_type为reservation时，该字段必传。
-        :type event_schedule_window: object
+        :param event_schedule_window: 
+        :type event_schedule_window: :class:`huaweicloudsdkgaussdb.v3.EventScheduleWindow`
         """
         
         
@@ -99,10 +99,8 @@ class SetInstanceScheduleEventsRequestBody:
     def event_schedule_window(self):
         r"""Gets the event_schedule_window of this SetInstanceScheduleEventsRequestBody.
 
-        **参数解释**：  事件执行窗口。  **约束限制**：  当operation_type为reservation时，该字段必传。
-
         :return: The event_schedule_window of this SetInstanceScheduleEventsRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.EventScheduleWindow`
         """
         return self._event_schedule_window
 
@@ -110,10 +108,8 @@ class SetInstanceScheduleEventsRequestBody:
     def event_schedule_window(self, event_schedule_window):
         r"""Sets the event_schedule_window of this SetInstanceScheduleEventsRequestBody.
 
-        **参数解释**：  事件执行窗口。  **约束限制**：  当operation_type为reservation时，该字段必传。
-
         :param event_schedule_window: The event_schedule_window of this SetInstanceScheduleEventsRequestBody.
-        :type event_schedule_window: object
+        :type event_schedule_window: :class:`huaweicloudsdkgaussdb.v3.EventScheduleWindow`
         """
         self._event_schedule_window = event_schedule_window
 

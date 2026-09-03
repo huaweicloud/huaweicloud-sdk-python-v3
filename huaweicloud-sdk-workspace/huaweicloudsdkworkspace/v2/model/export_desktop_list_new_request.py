@@ -20,6 +20,7 @@ class ExportDesktopListNewRequest:
         'desktop_ip': 'str',
         'desktop_id': 'str',
         'tag': 'str',
+        'without_any_tag': 'bool',
         'language': 'str',
         'enterprise_project_id': 'str',
         'desktop_type': 'str',
@@ -47,6 +48,7 @@ class ExportDesktopListNewRequest:
         'desktop_ip': 'desktop_ip',
         'desktop_id': 'desktop_id',
         'tag': 'tag',
+        'without_any_tag': 'without_any_tag',
         'language': 'language',
         'enterprise_project_id': 'enterprise_project_id',
         'desktop_type': 'desktop_type',
@@ -68,7 +70,7 @@ class ExportDesktopListNewRequest:
         'pool_enterprise_project_id': 'pool_enterprise_project_id'
     }
 
-    def __init__(self, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, tag=None, language=None, enterprise_project_id=None, desktop_type=None, status=None, user_names=None, sort_field=None, sort_type=None, user_attached=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None, connection_status_version=None, pool_id=None, include_pool=None, pool_name=None, pool_type=None, pool_in_maintenance_mode=None, pool_enterprise_project_id=None):
+    def __init__(self, computer_name=None, computer_names=None, desktop_ip=None, desktop_id=None, tag=None, without_any_tag=None, language=None, enterprise_project_id=None, desktop_type=None, status=None, user_names=None, sort_field=None, sort_type=None, user_attached=None, image_id=None, charge_mode=None, in_maintenance_mode=None, subnet_id=None, connection_status_version=None, pool_id=None, include_pool=None, pool_name=None, pool_type=None, pool_in_maintenance_mode=None, pool_enterprise_project_id=None):
         r"""ExportDesktopListNewRequest
 
         The model defined in huaweicloud sdk
@@ -81,8 +83,10 @@ class ExportDesktopListNewRequest:
         :type desktop_ip: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param tag: 桌面的标签。标签的键和标签的值用“&#x3D;”连接。
+        :param tag: 桌面的标签。标签的键和标签的值用”&#x3D;”连接。
         :type tag: str
+        :param without_any_tag: 是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+        :type without_any_tag: bool
         :param language: 语言。  - zh_CN：中文 - en_US：英文
         :type language: str
         :param enterprise_project_id: 企业项目ID。
@@ -130,6 +134,7 @@ class ExportDesktopListNewRequest:
         self._desktop_ip = None
         self._desktop_id = None
         self._tag = None
+        self._without_any_tag = None
         self._language = None
         self._enterprise_project_id = None
         self._desktop_type = None
@@ -161,6 +166,8 @@ class ExportDesktopListNewRequest:
             self.desktop_id = desktop_id
         if tag is not None:
             self.tag = tag
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
         self.language = language
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
@@ -291,7 +298,7 @@ class ExportDesktopListNewRequest:
     def tag(self):
         r"""Gets the tag of this ExportDesktopListNewRequest.
 
-        桌面的标签。标签的键和标签的值用“=”连接。
+        桌面的标签。标签的键和标签的值用”=”连接。
 
         :return: The tag of this ExportDesktopListNewRequest.
         :rtype: str
@@ -302,12 +309,34 @@ class ExportDesktopListNewRequest:
     def tag(self, tag):
         r"""Sets the tag of this ExportDesktopListNewRequest.
 
-        桌面的标签。标签的键和标签的值用“=”连接。
+        桌面的标签。标签的键和标签的值用”=”连接。
 
         :param tag: The tag of this ExportDesktopListNewRequest.
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def without_any_tag(self):
+        r"""Gets the without_any_tag of this ExportDesktopListNewRequest.
+
+        是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+
+        :return: The without_any_tag of this ExportDesktopListNewRequest.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        r"""Sets the without_any_tag of this ExportDesktopListNewRequest.
+
+        是否过滤不带标签的桌面，为true时只返回不带任何标签的桌面。
+
+        :param without_any_tag: The without_any_tag of this ExportDesktopListNewRequest.
+        :type without_any_tag: bool
+        """
+        self._without_any_tag = without_any_tag
 
     @property
     def language(self):

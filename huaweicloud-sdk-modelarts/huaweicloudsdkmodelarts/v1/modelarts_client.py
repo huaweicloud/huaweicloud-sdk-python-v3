@@ -708,6 +708,72 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def batch_delete_training_job(self, request):
+        r"""批量删除训练作业
+
+        批量删除训练作业接口用于一次性从ModelArts平台上移除多个已创建的训练作业。
+        该接口适用于以下场景：当用户需要集中清理多个已完成或不再需要的训练作业时，可以通过此接口批量删除，避免逐个调用删除接口。使用该接口的前提条件是待删除的训练作业均已存在、属于同一工作空间，且用户具有删除训练作业的权限。删除操作完成后，训练作业将从平台中永久移除，相关资源和配置也将被清理。若待删除作业数量超过100、作业不存在、作业不属于同一工作空间或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteTrainingJob
+        :type request: :class:`huaweicloudsdkmodelarts.v1.BatchDeleteTrainingJobRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.BatchDeleteTrainingJobResponse`
+        """
+        http_info = self._batch_delete_training_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_training_job_invoker(self, request):
+        http_info = self._batch_delete_training_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_training_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/training-jobs/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTrainingJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_dev_servers_action(self, request):
         r"""批量操作Lite Server实例
 
@@ -2033,6 +2099,76 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_training_jobs_by_tags(self, request):
+        r"""按标签统计训练作业资源数量
+
+        按标签统计训练作业资源数量接口用于根据标签等条件查询当前项目下符合条件的训练作业总数。
+        该接口适用于以下场景：当用户需要按标签键值、资源名称等条件统计训练作业数量时，可以通过此接口进行查询。使用该接口的前提条件是用户已登录并具有查看训练作业标签的权限。查询操作完成后，平台将返回符合条件的训练作业总数。若用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountTrainingJobsByTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.CountTrainingJobsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.CountTrainingJobsByTagsResponse`
+        """
+        http_info = self._count_training_jobs_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_training_jobs_by_tags_invoker(self, request):
+        http_info = self._count_training_jobs_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_training_jobs_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/modelarts-training-job/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountTrainingJobsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -6876,6 +7012,85 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def list_ft_artifacts(self, request):
+        r"""查询精调训练任务产物列表
+
+        查询精调训练任务产物列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFtArtifacts
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListFtArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListFtArtifactsResponse`
+        """
+        http_info = self._list_ft_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ft_artifacts_invoker(self, request):
+        http_info = self._list_ft_artifacts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ft_artifacts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/ft-artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFtArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
+
+        query_params = []
+        if 'steps' in local_var_params:
+            query_params.append(('steps', local_var_params['steps']))
+        if 'epoch' in local_var_params:
+            query_params.append(('epoch', local_var_params['epoch']))
+        if 'loss' in local_var_params:
+            query_params.append(('loss', local_var_params['loss']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'order_by_create_time_asc' in local_var_params:
+            query_params.append(('order_by_create_time_asc', local_var_params['order_by_create_time_asc']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_hyper_cluster(self, request):
         r"""查询Hyper Cluster详情列表
 
@@ -9266,6 +9481,74 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def list_training_job_tags(self, request):
+        r"""查询项目下训练作业标签列表
+
+        查询项目下训练作业标签列表接口用于获取指定项目下所有训练作业已使用的标签集合，按标签key聚合，每个key下包含所有不同的value。
+        该接口适用于以下场景：当用户需要了解项目下训练作业已使用的所有标签键值对，以便进行标签筛选、资源分类或管理时，可以通过此接口获取标签列表。使用该接口的前提条件是用户具有查看标签的权限。查询操作完成后，平台将返回项目下所有训练作业标签的聚合结果，按key分组，每个key下列出该key出现过的所有不同value。若用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrainingJobTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListTrainingJobTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListTrainingJobTagsResponse`
+        """
+        http_info = self._list_training_job_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_training_job_tags_invoker(self, request):
+        http_info = self._list_training_job_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_training_job_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/modelarts-training-job/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrainingJobTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_training_job_tasks(self, request):
         r"""查询训练作业的实例历史调度信息
 
@@ -9369,6 +9652,76 @@ class ModelArtsClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_training_jobs_by_tags(self, request):
+        r"""查询训练作业资源列表（按标签筛选）
+
+        查询训练作业资源列表接口用于按标签、资源名称等条件筛选项目下符合条件的训练作业资源，并返回每个作业的标签信息。
+        该接口适用于以下场景：当用户需要通过标签或资源名称筛选训练作业，以进行资源分类管理或批量操作时，可以通过此接口获取符合条件的作业资源列表。使用该接口的前提条件是用户具有查看标签的权限。查询操作完成后，平台将返回符合条件的作业资源列表及总数。若标签格式不合法、标签key重复或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrainingJobsByTags
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListTrainingJobsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListTrainingJobsByTagsResponse`
+        """
+        http_info = self._list_training_jobs_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_training_jobs_by_tags_invoker(self, request):
+        http_info = self._list_training_jobs_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_training_jobs_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/modelarts-training-job/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrainingJobsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -9591,6 +9944,72 @@ class ModelArtsClient(Client):
         path_params = {}
         if 'id' in local_var_params:
             path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_training_quotas(self, request):
+        r"""修改训练配额
+
+        修改训练配额接口用于修改用户在ModelArts服务中的训练资源配额信息。
+        该接口适用于以下场景：当管理员需要调整用户的训练资源配额（如作业个数配额、自动老化开关、配额告警通知等）时，可以通过此接口进行修改。使用该接口的前提条件是用户已登录并具有修改配额的权限。修改成功后，用户的训练资源配额将被更新。若用户无权限或配额信息无效，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyTrainingQuotas
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ModifyTrainingQuotasRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ModifyTrainingQuotasResponse`
+        """
+        http_info = self._modify_training_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_training_quotas_invoker(self, request):
+        http_info = self._modify_training_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_training_quotas_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/training-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyTrainingQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -9884,6 +10303,73 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def publish_ft_artifacts(self, request):
+        r"""发布精调训练产物为模型资产
+
+        训练任务运行成功后，将产生的模型信息发布到资产中心。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PublishFtArtifacts
+        :type request: :class:`huaweicloudsdkmodelarts.v1.PublishFtArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.PublishFtArtifactsResponse`
+        """
+        http_info = self._publish_ft_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_ft_artifacts_invoker(self, request):
+        http_info = self._publish_ft_artifacts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_ft_artifacts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/ft-artifacts/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishFtArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = ['ApiTokenAuth']
 
@@ -10992,6 +11478,137 @@ class ModelArtsClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'storage_id' in local_var_params:
             path_params['storage_id'] = local_var_params['storage_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ft_detail(self, request):
+        r"""查询精调训练作业详情
+
+        查询精调训练作业详情接口用于获取ModelArts平台上指定训练作业的详细信息。
+        该接口适用于以下场景：当用户需要查看特定训练作业的运行状态和配置信息时，可以通过此接口获取作业详情。使用该接口的前提条件是用户已知训练作业ID，并具有查看作业详情的权限。查询操作完成后，平台将返回包含训练作业的状态、配置、日志等详细信息。若训练作业ID不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFtDetail
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowFtDetailRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowFtDetailResponse`
+        """
+        http_info = self._show_ft_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ft_detail_invoker(self, request):
+        http_info = self._show_ft_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ft_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/ft-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFtDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ft_metrics(self, request):
+        r"""查询精调训练任务指标信息
+
+        查询精调训练任务指标信息，如：训练loss等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFtMetrics
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowFtMetricsRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowFtMetricsResponse`
+        """
+        http_info = self._show_ft_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ft_metrics_invoker(self, request):
+        http_info = self._show_ft_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ft_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/ft-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFtMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
 
         query_params = []
 
@@ -12801,6 +13418,74 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def show_training_flavor_max_available_resource(self, request):
+        r"""查询资源池规格最大可用资源
+
+        查询资源池规格最大可用资源接口用于获取指定资源池中指定资源规格可分配的最大CPU和内存资源。
+        该接口适用于以下场景：当用户需要在创建训练作业前了解资源池中某规格的可用资源上限，以便合理选择规格和节点数时，可以通过此接口进行查询。使用该接口的前提条件是用户已知资源池ID和资源规格ID，并具有查看训练资源的权限。查询操作完成后，平台将返回该规格在资源池中的最大可用CPU核数和内存大小。若资源池或规格不存在、或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrainingFlavorMaxAvailableResource
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingFlavorMaxAvailableResourceRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingFlavorMaxAvailableResourceResponse`
+        """
+        http_info = self._show_training_flavor_max_available_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_training_flavor_max_available_resource_invoker(self, request):
+        http_info = self._show_training_flavor_max_available_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_training_flavor_max_available_resource_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-pool-flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrainingFlavorMaxAvailableResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_training_job_details(self, request):
         r"""查询训练作业详情
 
@@ -12994,6 +13679,80 @@ class ModelArtsClient(Client):
 
         return http_info
 
+    def show_training_job_logs_from_aom(self, request):
+        r"""查询训练作业指定任务的日志
+
+        查询训练作业指定任务的日志接口用于获取ModelArts平台上指定训练作业任务的实时运行日志。
+        该接口适用于以下场景：当用户需要查看特定训练任务的运行日志以便排查问题或监控训练进度时，可以通过此接口获取日志内容。使用该接口的前提条件是用户已知训练作业ID和任务ID，并具有查看日志的权限。查询操作完成后，平台将返回包含日志内容、起止行号等信息。若训练作业ID或任务ID不存在、任务未生成日志或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrainingJobLogsFromAom
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingJobLogsFromAomRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingJobLogsFromAomResponse`
+        """
+        http_info = self._show_training_job_logs_from_aom_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_training_job_logs_from_aom_invoker(self, request):
+        http_info = self._show_training_job_logs_from_aom_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_training_job_logs_from_aom_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/logs/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrainingJobLogsFromAomResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'base_line' in local_var_params:
+            query_params.append(('base_line', local_var_params['base_line']))
+        if 'lines' in local_var_params:
+            query_params.append(('lines', local_var_params['lines']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_training_job_logs_preview(self, request):
         r"""查询训练作业指定任务的日志（预览）
 
@@ -13099,6 +13858,72 @@ class ModelArtsClient(Client):
             path_params['training_job_id'] = local_var_params['training_job_id']
         if 'task_id' in local_var_params:
             path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_training_job_route_plan(self, request):
+        r"""查询训练作业的路由规划信息
+
+        查询训练作业的路由规划信息接口用于获取指定训练作业在Ascend规格专属资源池下的路由规划（rank映射）结果。
+        该接口适用于以下场景：当用户在Ascend 910规格专属资源池上创建了多节点（节点数不少于3）训练作业，且需要查询作业实际生效的rank映射关系以进行性能调优或问题定位时，可以通过此接口获取路由规划信息。使用该接口的前提条件是用户已知训练作业ID，并具有查看作业详情的权限。查询操作完成后，平台将返回该作业的路由规划状态与rank映射结果。若训练作业不满足路由规划条件（非Ascend 910规格或节点数少于3），接口将返回状态为failed的默认rank映射结果；若训练作业ID不存在或用户无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrainingJobRoutePlan
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingJobRoutePlanRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ShowTrainingJobRoutePlanResponse`
+        """
+        http_info = self._show_training_job_route_plan_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_training_job_route_plan_invoker(self, request):
+        http_info = self._show_training_job_route_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_training_job_route_plan_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-jobs/{training_job_id}/route_plan",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrainingJobRoutePlanResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'training_job_id' in local_var_params:
+            path_params['training_job_id'] = local_var_params['training_job_id']
 
         query_params = []
 
@@ -14918,6 +15743,74 @@ class ModelArtsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_training_job_name(self, request):
+        r"""校验训练作业名称
+
+        校验训练作业名称接口用于校验ModelArts平台上创建训练作业的名称是否重复。
+        该接口适用于以下场景：当用户需要创建训练作业时，可以通过此接口校验训练作业名称是否存在，新创建的名称不存在时才能创建成功。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateTrainingJobName
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ValidateTrainingJobNameRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ValidateTrainingJobNameResponse`
+        """
+        http_info = self._validate_training_job_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_training_job_name_invoker(self, request):
+        http_info = self._validate_training_job_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_training_job_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/training-job-names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateTrainingJobNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'workspace_id' in local_var_params:
+            query_params.append(('workspace_id', local_var_params['workspace_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 

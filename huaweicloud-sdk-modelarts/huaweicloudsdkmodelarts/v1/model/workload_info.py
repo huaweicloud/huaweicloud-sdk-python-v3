@@ -15,8 +15,8 @@ class WorkloadInfo:
     sensitive_list = []
 
     openapi_types = {
-        'allocated': 'WorkloadStatistics',
-        'queue': 'WorkloadStatistics',
+        'allocated': 'WorkloadStatisticsInfo',
+        'queue': 'WorkloadStatisticsInfo',
         'timestamp': 'str',
         'window': 'str'
     }
@@ -34,9 +34,9 @@ class WorkloadInfo:
         The model defined in huaweicloud sdk
 
         :param allocated: 
-        :type allocated: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :type allocated: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         :param queue: 
-        :type queue: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :type queue: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         :param timestamp: UTC时间，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;。
         :type timestamp: str
         :param window: 统计间隔，1s表示1秒，1m表示一分钟，1h为一小时。
@@ -65,7 +65,7 @@ class WorkloadInfo:
         r"""Gets the allocated of this WorkloadInfo.
 
         :return: The allocated of this WorkloadInfo.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         """
         return self._allocated
 
@@ -74,7 +74,7 @@ class WorkloadInfo:
         r"""Sets the allocated of this WorkloadInfo.
 
         :param allocated: The allocated of this WorkloadInfo.
-        :type allocated: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :type allocated: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         """
         self._allocated = allocated
 
@@ -83,7 +83,7 @@ class WorkloadInfo:
         r"""Gets the queue of this WorkloadInfo.
 
         :return: The queue of this WorkloadInfo.
-        :rtype: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         """
         return self._queue
 
@@ -92,7 +92,7 @@ class WorkloadInfo:
         r"""Sets the queue of this WorkloadInfo.
 
         :param queue: The queue of this WorkloadInfo.
-        :type queue: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatistics`
+        :type queue: :class:`huaweicloudsdkmodelarts.v1.WorkloadStatisticsInfo`
         """
         self._queue = queue
 

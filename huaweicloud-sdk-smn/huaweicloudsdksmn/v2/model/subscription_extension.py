@@ -22,7 +22,8 @@ class SubscriptionExtension:
         'header': 'dict(str, str)',
         'app_key': 'str',
         'app_secret': 'str',
-        'robot_code': 'str'
+        'robot_code': 'str',
+        'verification_code_enabled': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class SubscriptionExtension:
         'header': 'header',
         'app_key': 'app_key',
         'app_secret': 'app_secret',
-        'robot_code': 'robot_code'
+        'robot_code': 'robot_code',
+        'verification_code_enabled': 'verification_code_enabled'
     }
 
-    def __init__(self, client_id=None, client_secret=None, keyword=None, sign_secret=None, header=None, app_key=None, app_secret=None, robot_code=None):
+    def __init__(self, client_id=None, client_secret=None, keyword=None, sign_secret=None, header=None, app_key=None, app_secret=None, robot_code=None, verification_code_enabled=None):
         r"""SubscriptionExtension
 
         The model defined in huaweicloud sdk
@@ -45,11 +47,11 @@ class SubscriptionExtension:
         :type client_id: str
         :param client_secret: 该字段为应用secret字段。当protocol值为welink时，该字段为必填字段，从welink方获取。
         :type client_secret: str
-        :param keyword: 该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
+        :param keyword: 该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段最多选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉页面创建自定义机器人时所填写的关键字之一。
         :type keyword: str
-        :param sign_secret: 这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        :param sign_secret: 这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者最多选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
         :type sign_secret: str
-        :param header: 该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\&quot;x-\&quot;开头，不能以\&quot;x-smn\&quot;开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+        :param header: 该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为开头和结尾，不得连续出现。 K/V不得超过10个 key需要以字母开头，不能以\&quot;x-smn\&quot;开头，正确示例:abc,x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
         :type header: dict(str, str)
         :param app_key: 个人钉钉appKey字段，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)。当订阅协议为dingTalkBot时，该字段必选。
         :type app_key: str
@@ -57,6 +59,8 @@ class SubscriptionExtension:
         :type app_secret: str
         :param robot_code: 个人钉钉robotCode字段，名称：机器人编码，字符长度限制64个，仅支持字母、数字、中划线(-)、下划线(_)，一般与appKey一致。当订阅协议为dingTalkBot时，该字段必选。
         :type robot_code: str
+        :param verification_code_enabled: 是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+        :type verification_code_enabled: bool
         """
         
         
@@ -69,6 +73,7 @@ class SubscriptionExtension:
         self._app_key = None
         self._app_secret = None
         self._robot_code = None
+        self._verification_code_enabled = None
         self.discriminator = None
 
         if client_id is not None:
@@ -87,6 +92,8 @@ class SubscriptionExtension:
             self.app_secret = app_secret
         if robot_code is not None:
             self.robot_code = robot_code
+        if verification_code_enabled is not None:
+            self.verification_code_enabled = verification_code_enabled
 
     @property
     def client_id(self):
@@ -136,7 +143,7 @@ class SubscriptionExtension:
     def keyword(self):
         r"""Gets the keyword of this SubscriptionExtension.
 
-        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
+        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段最多选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉页面创建自定义机器人时所填写的关键字之一。
 
         :return: The keyword of this SubscriptionExtension.
         :rtype: str
@@ -147,7 +154,7 @@ class SubscriptionExtension:
     def keyword(self, keyword):
         r"""Sets the keyword of this SubscriptionExtension.
 
-        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段二者必选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉自定义机器人中所填写的关键字之一。
+        该字段为关键字字段。当protocol值为feishu时，这里的keyword字段和sign_secret字段最多选其一。当用户在飞书或钉钉自定义机器人端添加关键字校验的安全策略时，这里的关键字必须是飞书或钉钉页面创建自定义机器人时所填写的关键字之一。
 
         :param keyword: The keyword of this SubscriptionExtension.
         :type keyword: str
@@ -158,7 +165,7 @@ class SubscriptionExtension:
     def sign_secret(self):
         r"""Gets the sign_secret of this SubscriptionExtension.
 
-        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者最多选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
 
         :return: The sign_secret of this SubscriptionExtension.
         :rtype: str
@@ -169,7 +176,7 @@ class SubscriptionExtension:
     def sign_secret(self, sign_secret):
         r"""Sets the sign_secret of this SubscriptionExtension.
 
-        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者必选且只能选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
+        这是加签密钥字段。当protocol协议为feishu时，这个字段和keyword字段二者最多选其一。密钥配置必须与客户在飞书或钉钉自定义机器人的密钥配置完全一致。例如，如果在飞书端配置了密钥并且没有配置关键字，则在此处填入从飞书获取的密钥字段，如果在飞书端没有配置密钥并且配置了关键字，则不填写该字段。
 
         :param sign_secret: The sign_secret of this SubscriptionExtension.
         :type sign_secret: str
@@ -180,7 +187,7 @@ class SubscriptionExtension:
     def header(self):
         r"""Gets the header of this SubscriptionExtension.
 
-        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\"x-\"开头，不能以\"x-smn\"开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为开头和结尾，不得连续出现。 K/V不得超过10个 key需要以字母开头，不能以\"x-smn\"开头，正确示例:abc,x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
 
         :return: The header of this SubscriptionExtension.
         :rtype: dict(str, str)
@@ -191,7 +198,7 @@ class SubscriptionExtension:
     def header(self, header):
         r"""Sets the header of this SubscriptionExtension.
 
-        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为结尾，不得连续出现。 K/V不得超过10个 key需要以\"x-\"开头，不能以\"x-smn\"开头，正确示例：x-abc-cba, x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
+        该字段为http header字段，用户可以在字段限制范围内自定义http header，header字段内容以KV对形式存在。当使用主题发送时，已确认的订阅发送消息会携带用户自定义的http header。 header应满足如下要求： key值限定为：包含英文字母([A-Za-z])、数字([0-9])、中划线(-)hyphens，中划线不得作为开头和结尾，不得连续出现。 K/V不得超过10个 key需要以字母开头，不能以\"x-smn\"开头，正确示例:abc,x-abc 所有K/V长度总和不得超过1024个字符 key不区分大小写 key值不可重复 value值限定为ASCII码，不支持中文或其他Unicode，支持空格
 
         :param header: The header of this SubscriptionExtension.
         :type header: dict(str, str)
@@ -263,6 +270,28 @@ class SubscriptionExtension:
         :type robot_code: str
         """
         self._robot_code = robot_code
+
+    @property
+    def verification_code_enabled(self):
+        r"""Gets the verification_code_enabled of this SubscriptionExtension.
+
+        是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+
+        :return: The verification_code_enabled of this SubscriptionExtension.
+        :rtype: bool
+        """
+        return self._verification_code_enabled
+
+    @verification_code_enabled.setter
+    def verification_code_enabled(self, verification_code_enabled):
+        r"""Sets the verification_code_enabled of this SubscriptionExtension.
+
+        是否启用验证码，默认为false。当protocol值为sms或callnotify，且该字段值设置为true时，发送订阅确认短信为验证码格式；该字段为false或者不存在时，发送的订阅确认短信为超链接格式。当protocol值为其他协议时，该字段不生效
+
+        :param verification_code_enabled: The verification_code_enabled of this SubscriptionExtension.
+        :type verification_code_enabled: bool
+        """
+        self._verification_code_enabled = verification_code_enabled
 
     def to_dict(self):
         result = {}

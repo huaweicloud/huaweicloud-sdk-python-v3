@@ -1,10 +1,10 @@
 # coding: utf-8
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DownloadHttpCertResponse(SdkResponse):
+class DownloadHttpCertResponse(SdkStreamResponse):
 
     """
     Attributes:
@@ -16,47 +16,20 @@ class DownloadHttpCertResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str'
     }
 
     attribute_map = {
-        'content_type': 'content-type'
     }
 
-    def __init__(self, content_type=None):
+    def __init__(self, response):
         r"""DownloadHttpCertResponse
 
         The model defined in huaweicloud sdk
 
-        :param content_type: 
-        :type content_type: str
         """
         
-        super().__init__()
-
-        self._content_type = None
+        super().__init__(response)
         self.discriminator = None
-
-        if content_type is not None:
-            self.content_type = content_type
-
-    @property
-    def content_type(self):
-        r"""Gets the content_type of this DownloadHttpCertResponse.
-
-        :return: The content_type of this DownloadHttpCertResponse.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        r"""Sets the content_type of this DownloadHttpCertResponse.
-
-        :param content_type: The content_type of this DownloadHttpCertResponse.
-        :type content_type: str
-        """
-        self._content_type = content_type
 
     def to_dict(self):
         import warnings

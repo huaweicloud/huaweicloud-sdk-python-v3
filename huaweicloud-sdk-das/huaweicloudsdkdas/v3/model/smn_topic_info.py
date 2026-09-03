@@ -1,0 +1,253 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class SmnTopicInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'topic_urn': 'str',
+        'name': 'str',
+        'display_name': 'str',
+        'push_policy': 'str',
+        'enterprise_project_id': 'str',
+        'topic_id': 'str'
+    }
+
+    attribute_map = {
+        'topic_urn': 'topic_urn',
+        'name': 'name',
+        'display_name': 'display_name',
+        'push_policy': 'push_policy',
+        'enterprise_project_id': 'enterprise_project_id',
+        'topic_id': 'topic_id'
+    }
+
+    def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None, topic_id=None):
+        r"""SmnTopicInfo
+
+        The model defined in huaweicloud sdk
+
+        :param topic_urn: Topic的唯一的资源标识
+        :type topic_urn: str
+        :param name: 创建topic的名字
+        :type name: str
+        :param display_name: Topic的显示名，推送邮件消息时，作为邮件发件人显示
+        :type display_name: str
+        :param push_policy: 消息推送的策略，0表示发送失败保留到失败队列，1表示直接丢弃发送失败的消息
+        :type push_policy: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param topic_id: 主题ID
+        :type topic_id: str
+        """
+        
+        
+
+        self._topic_urn = None
+        self._name = None
+        self._display_name = None
+        self._push_policy = None
+        self._enterprise_project_id = None
+        self._topic_id = None
+        self.discriminator = None
+
+        if topic_urn is not None:
+            self.topic_urn = topic_urn
+        if name is not None:
+            self.name = name
+        if display_name is not None:
+            self.display_name = display_name
+        if push_policy is not None:
+            self.push_policy = push_policy
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if topic_id is not None:
+            self.topic_id = topic_id
+
+    @property
+    def topic_urn(self):
+        r"""Gets the topic_urn of this SmnTopicInfo.
+
+        Topic的唯一的资源标识
+
+        :return: The topic_urn of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._topic_urn
+
+    @topic_urn.setter
+    def topic_urn(self, topic_urn):
+        r"""Sets the topic_urn of this SmnTopicInfo.
+
+        Topic的唯一的资源标识
+
+        :param topic_urn: The topic_urn of this SmnTopicInfo.
+        :type topic_urn: str
+        """
+        self._topic_urn = topic_urn
+
+    @property
+    def name(self):
+        r"""Gets the name of this SmnTopicInfo.
+
+        创建topic的名字
+
+        :return: The name of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this SmnTopicInfo.
+
+        创建topic的名字
+
+        :param name: The name of this SmnTopicInfo.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def display_name(self):
+        r"""Gets the display_name of this SmnTopicInfo.
+
+        Topic的显示名，推送邮件消息时，作为邮件发件人显示
+
+        :return: The display_name of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._display_name
+
+    @display_name.setter
+    def display_name(self, display_name):
+        r"""Sets the display_name of this SmnTopicInfo.
+
+        Topic的显示名，推送邮件消息时，作为邮件发件人显示
+
+        :param display_name: The display_name of this SmnTopicInfo.
+        :type display_name: str
+        """
+        self._display_name = display_name
+
+    @property
+    def push_policy(self):
+        r"""Gets the push_policy of this SmnTopicInfo.
+
+        消息推送的策略，0表示发送失败保留到失败队列，1表示直接丢弃发送失败的消息
+
+        :return: The push_policy of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._push_policy
+
+    @push_policy.setter
+    def push_policy(self, push_policy):
+        r"""Sets the push_policy of this SmnTopicInfo.
+
+        消息推送的策略，0表示发送失败保留到失败队列，1表示直接丢弃发送失败的消息
+
+        :param push_policy: The push_policy of this SmnTopicInfo.
+        :type push_policy: str
+        """
+        self._push_policy = push_policy
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this SmnTopicInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this SmnTopicInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this SmnTopicInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def topic_id(self):
+        r"""Gets the topic_id of this SmnTopicInfo.
+
+        主题ID
+
+        :return: The topic_id of this SmnTopicInfo.
+        :rtype: str
+        """
+        return self._topic_id
+
+    @topic_id.setter
+    def topic_id(self, topic_id):
+        r"""Sets the topic_id of this SmnTopicInfo.
+
+        主题ID
+
+        :param topic_id: The topic_id of this SmnTopicInfo.
+        :type topic_id: str
+        """
+        self._topic_id = topic_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, SmnTopicInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

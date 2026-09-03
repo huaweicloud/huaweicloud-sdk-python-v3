@@ -16,27 +16,35 @@ class TokenVault:
 
     openapi_types = {
         'token_vault_id': 'str',
+        'urn': 'str',
         'kms_configuration': 'KmsConfiguration',
+        'policy_engine_configuration': 'PolicyEngineConfiguration',
         'updated_at': 'datetime',
         'tags': 'list[Tag]'
     }
 
     attribute_map = {
         'token_vault_id': 'token_vault_id',
+        'urn': 'urn',
         'kms_configuration': 'kms_configuration',
+        'policy_engine_configuration': 'policy_engine_configuration',
         'updated_at': 'updated_at',
         'tags': 'tags'
     }
 
-    def __init__(self, token_vault_id=None, kms_configuration=None, updated_at=None, tags=None):
+    def __init__(self, token_vault_id=None, urn=None, kms_configuration=None, policy_engine_configuration=None, updated_at=None, tags=None):
         r"""TokenVault
 
         The model defined in huaweicloud sdk
 
         :param token_vault_id: The unique identifier of the token vault.
         :type token_vault_id: str
+        :param urn: TokenVault 对象统一资源标识（URN）。
+        :type urn: str
         :param kms_configuration: 
         :type kms_configuration: :class:`huaweicloudsdkagentidentity.v1.KmsConfiguration`
+        :param policy_engine_configuration: 
+        :type policy_engine_configuration: :class:`huaweicloudsdkagentidentity.v1.PolicyEngineConfiguration`
         :param updated_at: Timestamp in RFC 3339 format (UTC)
         :type updated_at: datetime
         :param tags: 自定义标签列表。
@@ -46,13 +54,18 @@ class TokenVault:
         
 
         self._token_vault_id = None
+        self._urn = None
         self._kms_configuration = None
+        self._policy_engine_configuration = None
         self._updated_at = None
         self._tags = None
         self.discriminator = None
 
         self.token_vault_id = token_vault_id
+        self.urn = urn
         self.kms_configuration = kms_configuration
+        if policy_engine_configuration is not None:
+            self.policy_engine_configuration = policy_engine_configuration
         self.updated_at = updated_at
         if tags is not None:
             self.tags = tags
@@ -80,6 +93,28 @@ class TokenVault:
         self._token_vault_id = token_vault_id
 
     @property
+    def urn(self):
+        r"""Gets the urn of this TokenVault.
+
+        TokenVault 对象统一资源标识（URN）。
+
+        :return: The urn of this TokenVault.
+        :rtype: str
+        """
+        return self._urn
+
+    @urn.setter
+    def urn(self, urn):
+        r"""Sets the urn of this TokenVault.
+
+        TokenVault 对象统一资源标识（URN）。
+
+        :param urn: The urn of this TokenVault.
+        :type urn: str
+        """
+        self._urn = urn
+
+    @property
     def kms_configuration(self):
         r"""Gets the kms_configuration of this TokenVault.
 
@@ -96,6 +131,24 @@ class TokenVault:
         :type kms_configuration: :class:`huaweicloudsdkagentidentity.v1.KmsConfiguration`
         """
         self._kms_configuration = kms_configuration
+
+    @property
+    def policy_engine_configuration(self):
+        r"""Gets the policy_engine_configuration of this TokenVault.
+
+        :return: The policy_engine_configuration of this TokenVault.
+        :rtype: :class:`huaweicloudsdkagentidentity.v1.PolicyEngineConfiguration`
+        """
+        return self._policy_engine_configuration
+
+    @policy_engine_configuration.setter
+    def policy_engine_configuration(self, policy_engine_configuration):
+        r"""Sets the policy_engine_configuration of this TokenVault.
+
+        :param policy_engine_configuration: The policy_engine_configuration of this TokenVault.
+        :type policy_engine_configuration: :class:`huaweicloudsdkagentidentity.v1.PolicyEngineConfiguration`
+        """
+        self._policy_engine_configuration = policy_engine_configuration
 
     @property
     def updated_at(self):

@@ -31,7 +31,7 @@ class MessageAttribute:
 
         The model defined in huaweicloud sdk
 
-        :param name: 属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
+        :param name: 属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(\\_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
         :type name: str
         :param type: 属性类型 STRING：字符串（String）类型 STRING_ARRAY：字符串数组（String.Array）类型 PROTOCOL：协议类型
         :type type: str
@@ -54,7 +54,7 @@ class MessageAttribute:
     def name(self):
         r"""Gets the name of this MessageAttribute.
 
-        属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
+        属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(\\_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
 
         :return: The name of this MessageAttribute.
         :rtype: str
@@ -65,7 +65,7 @@ class MessageAttribute:
     def name(self, name):
         r"""Sets the name of this MessageAttribute.
 
-        属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
+        属性名称。属性名称只能包含小写英文字母([a-z])、数字([0-9])、下划线(\\_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符
 
         :param name: The name of this MessageAttribute.
         :type name: str

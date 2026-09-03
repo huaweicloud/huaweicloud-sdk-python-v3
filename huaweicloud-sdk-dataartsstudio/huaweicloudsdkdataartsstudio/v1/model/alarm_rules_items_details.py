@@ -41,7 +41,9 @@ class AlarmRulesItemsDetails:
         'max_send_times': 'int',
         'send_interval': 'int',
         'duty_schedule_id': 'int',
-        'smn_config_id': 'str'
+        'smn_config_id': 'str',
+        'enable_recovery': 'bool',
+        'enable_persistent_alarm': 'bool'
     }
 
     attribute_map = {
@@ -71,10 +73,12 @@ class AlarmRulesItemsDetails:
         'max_send_times': 'max_send_times',
         'send_interval': 'send_interval',
         'duty_schedule_id': 'duty_schedule_id',
-        'smn_config_id': 'smn_config_id'
+        'smn_config_id': 'smn_config_id',
+        'enable_recovery': 'enable_recovery',
+        'enable_persistent_alarm': 'enable_persistent_alarm'
     }
 
-    def __init__(self, name=None, id=None, node_id=None, remind_type=None, topic_name=None, urn=None, notify_type=None, display_number=None, callee_number=None, complete_time=None, create_time=None, use_flag=None, create_user=None, rule_name=None, alarm_periods=None, job_directory=None, node_id_list=None, node_name_list=None, add_mode=None, subject_type=None, notify_method=None, protocol=None, other_persons=None, max_send_times=None, send_interval=None, duty_schedule_id=None, smn_config_id=None):
+    def __init__(self, name=None, id=None, node_id=None, remind_type=None, topic_name=None, urn=None, notify_type=None, display_number=None, callee_number=None, complete_time=None, create_time=None, use_flag=None, create_user=None, rule_name=None, alarm_periods=None, job_directory=None, node_id_list=None, node_name_list=None, add_mode=None, subject_type=None, notify_method=None, protocol=None, other_persons=None, max_send_times=None, send_interval=None, duty_schedule_id=None, smn_config_id=None, enable_recovery=None, enable_persistent_alarm=None):
         r"""AlarmRulesItemsDetails
 
         The model defined in huaweicloud sdk
@@ -133,6 +137,10 @@ class AlarmRulesItemsDetails:
         :type duty_schedule_id: int
         :param smn_config_id: smn配置id。
         :type smn_config_id: str
+        :param enable_recovery: 是否启用恢复通知，为true时作业恢复成功后发送恢复通知。
+        :type enable_recovery: bool
+        :param enable_persistent_alarm: 是否启用持续告警，为true时按发送间隔重复发送告警通知。
+        :type enable_persistent_alarm: bool
         """
         
         
@@ -164,6 +172,8 @@ class AlarmRulesItemsDetails:
         self._send_interval = None
         self._duty_schedule_id = None
         self._smn_config_id = None
+        self._enable_recovery = None
+        self._enable_persistent_alarm = None
         self.discriminator = None
 
         if name is not None:
@@ -220,6 +230,10 @@ class AlarmRulesItemsDetails:
             self.duty_schedule_id = duty_schedule_id
         if smn_config_id is not None:
             self.smn_config_id = smn_config_id
+        if enable_recovery is not None:
+            self.enable_recovery = enable_recovery
+        if enable_persistent_alarm is not None:
+            self.enable_persistent_alarm = enable_persistent_alarm
 
     @property
     def name(self):
@@ -814,6 +828,50 @@ class AlarmRulesItemsDetails:
         :type smn_config_id: str
         """
         self._smn_config_id = smn_config_id
+
+    @property
+    def enable_recovery(self):
+        r"""Gets the enable_recovery of this AlarmRulesItemsDetails.
+
+        是否启用恢复通知，为true时作业恢复成功后发送恢复通知。
+
+        :return: The enable_recovery of this AlarmRulesItemsDetails.
+        :rtype: bool
+        """
+        return self._enable_recovery
+
+    @enable_recovery.setter
+    def enable_recovery(self, enable_recovery):
+        r"""Sets the enable_recovery of this AlarmRulesItemsDetails.
+
+        是否启用恢复通知，为true时作业恢复成功后发送恢复通知。
+
+        :param enable_recovery: The enable_recovery of this AlarmRulesItemsDetails.
+        :type enable_recovery: bool
+        """
+        self._enable_recovery = enable_recovery
+
+    @property
+    def enable_persistent_alarm(self):
+        r"""Gets the enable_persistent_alarm of this AlarmRulesItemsDetails.
+
+        是否启用持续告警，为true时按发送间隔重复发送告警通知。
+
+        :return: The enable_persistent_alarm of this AlarmRulesItemsDetails.
+        :rtype: bool
+        """
+        return self._enable_persistent_alarm
+
+    @enable_persistent_alarm.setter
+    def enable_persistent_alarm(self, enable_persistent_alarm):
+        r"""Sets the enable_persistent_alarm of this AlarmRulesItemsDetails.
+
+        是否启用持续告警，为true时按发送间隔重复发送告警通知。
+
+        :param enable_persistent_alarm: The enable_persistent_alarm of this AlarmRulesItemsDetails.
+        :type enable_persistent_alarm: bool
+        """
+        self._enable_persistent_alarm = enable_persistent_alarm
 
     def to_dict(self):
         result = {}

@@ -22,7 +22,8 @@ class ListSubscriptionsItem:
         'endpoint': 'str',
         'remark': 'str',
         'status': 'int',
-        'filter_polices': 'list[SubscriptionsFilterPolicy]'
+        'filter_polices': 'list[SubscriptionsFilterPolicy]',
+        'extension': 'SubscriptionExtensionResponse'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListSubscriptionsItem:
         'endpoint': 'endpoint',
         'remark': 'remark',
         'status': 'status',
-        'filter_polices': 'filter_polices'
+        'filter_polices': 'filter_polices',
+        'extension': 'extension'
     }
 
-    def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None, filter_polices=None):
+    def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None, filter_polices=None, extension=None):
         r"""ListSubscriptionsItem
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListSubscriptionsItem:
         :type status: int
         :param filter_polices: 
         :type filter_polices: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
+        :param extension: 
+        :type extension: :class:`huaweicloudsdksmn.v2.SubscriptionExtensionResponse`
         """
         
         
@@ -69,6 +73,7 @@ class ListSubscriptionsItem:
         self._remark = None
         self._status = None
         self._filter_polices = None
+        self._extension = None
         self.discriminator = None
 
         self.topic_urn = topic_urn
@@ -80,6 +85,8 @@ class ListSubscriptionsItem:
         self.status = status
         if filter_polices is not None:
             self.filter_polices = filter_polices
+        if extension is not None:
+            self.extension = extension
 
     @property
     def topic_urn(self):
@@ -252,6 +259,24 @@ class ListSubscriptionsItem:
         :type filter_polices: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
         """
         self._filter_polices = filter_polices
+
+    @property
+    def extension(self):
+        r"""Gets the extension of this ListSubscriptionsItem.
+
+        :return: The extension of this ListSubscriptionsItem.
+        :rtype: :class:`huaweicloudsdksmn.v2.SubscriptionExtensionResponse`
+        """
+        return self._extension
+
+    @extension.setter
+    def extension(self, extension):
+        r"""Sets the extension of this ListSubscriptionsItem.
+
+        :param extension: The extension of this ListSubscriptionsItem.
+        :type extension: :class:`huaweicloudsdksmn.v2.SubscriptionExtensionResponse`
+        """
+        self._extension = extension
 
     def to_dict(self):
         result = {}

@@ -21241,6 +21241,81 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_factory_depend_instances(self, request):
+        r"""查询实例的上下游依赖
+
+        查询实例的上下游依赖
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFactoryDependInstances
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryDependInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryDependInstancesResponse`
+        """
+        http_info = self._show_factory_depend_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factory_depend_instances_invoker(self, request):
+        http_info = self._show_factory_depend_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_factory_depend_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/instances/{instance_id}/depend-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactoryDependInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'relation' in local_var_params:
+            query_params.append(('relation', local_var_params['relation']))
+        if 'depth' in local_var_params:
+            query_params.append(('depth', local_var_params['depth']))
+        if 'latest' in local_var_params:
+            query_params.append(('latest', local_var_params['latest']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_factory_env(self, request):
         r"""查询环境变量信息
 
@@ -21380,6 +21455,77 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_factory_job_depend_instances(self, request):
+        r"""查看作业的上下游依赖关系
+
+        提供对外接口，查看作业的上下游依赖关系及责任人。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFactoryJobDependInstances
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryJobDependInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryJobDependInstancesResponse`
+        """
+        http_info = self._show_factory_job_depend_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_factory_job_depend_instances_invoker(self, request):
+        http_info = self._show_factory_job_depend_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_factory_job_depend_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/jobs/{job_name}/depend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactoryJobDependInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+        if 'relation' in local_var_params:
+            query_params.append(('relation', local_var_params['relation']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 

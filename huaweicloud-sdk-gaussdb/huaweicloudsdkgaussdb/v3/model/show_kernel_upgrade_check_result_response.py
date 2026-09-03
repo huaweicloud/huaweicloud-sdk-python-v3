@@ -16,51 +16,109 @@ class ShowKernelUpgradeCheckResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_ids': 'list[str]'
+        'upgrade_precheck_result': 'str',
+        'updated_at': 'int',
+        'upgrade_precheck_detail': 'list[UpgradeDatabasePrecheckResult]'
     }
 
     attribute_map = {
-        'job_ids': 'job_ids'
+        'upgrade_precheck_result': 'upgrade_precheck_result',
+        'updated_at': 'updated_at',
+        'upgrade_precheck_detail': 'upgrade_precheck_detail'
     }
 
-    def __init__(self, job_ids=None):
+    def __init__(self, upgrade_precheck_result=None, updated_at=None, upgrade_precheck_detail=None):
         r"""ShowKernelUpgradeCheckResultResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_ids: **参数解释**：  预检查任务ID集合。  **取值范围**：  不涉及。
-        :type job_ids: list[str]
+        :param upgrade_precheck_result: **参数解释**：  预检查结果。  **取值范围**：  - true：成功。 - false：失败。
+        :type upgrade_precheck_result: str
+        :param updated_at: **参数解释**：  预检查完成时间。  **取值范围**：  格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。
+        :type updated_at: int
+        :param upgrade_precheck_detail: **参数解释**：  实例预检查详情。
+        :type upgrade_precheck_detail: list[:class:`huaweicloudsdkgaussdb.v3.UpgradeDatabasePrecheckResult`]
         """
         
         super().__init__()
 
-        self._job_ids = None
+        self._upgrade_precheck_result = None
+        self._updated_at = None
+        self._upgrade_precheck_detail = None
         self.discriminator = None
 
-        if job_ids is not None:
-            self.job_ids = job_ids
+        if upgrade_precheck_result is not None:
+            self.upgrade_precheck_result = upgrade_precheck_result
+        if updated_at is not None:
+            self.updated_at = updated_at
+        if upgrade_precheck_detail is not None:
+            self.upgrade_precheck_detail = upgrade_precheck_detail
 
     @property
-    def job_ids(self):
-        r"""Gets the job_ids of this ShowKernelUpgradeCheckResultResponse.
+    def upgrade_precheck_result(self):
+        r"""Gets the upgrade_precheck_result of this ShowKernelUpgradeCheckResultResponse.
 
-        **参数解释**：  预检查任务ID集合。  **取值范围**：  不涉及。
+        **参数解释**：  预检查结果。  **取值范围**：  - true：成功。 - false：失败。
 
-        :return: The job_ids of this ShowKernelUpgradeCheckResultResponse.
-        :rtype: list[str]
+        :return: The upgrade_precheck_result of this ShowKernelUpgradeCheckResultResponse.
+        :rtype: str
         """
-        return self._job_ids
+        return self._upgrade_precheck_result
 
-    @job_ids.setter
-    def job_ids(self, job_ids):
-        r"""Sets the job_ids of this ShowKernelUpgradeCheckResultResponse.
+    @upgrade_precheck_result.setter
+    def upgrade_precheck_result(self, upgrade_precheck_result):
+        r"""Sets the upgrade_precheck_result of this ShowKernelUpgradeCheckResultResponse.
 
-        **参数解释**：  预检查任务ID集合。  **取值范围**：  不涉及。
+        **参数解释**：  预检查结果。  **取值范围**：  - true：成功。 - false：失败。
 
-        :param job_ids: The job_ids of this ShowKernelUpgradeCheckResultResponse.
-        :type job_ids: list[str]
+        :param upgrade_precheck_result: The upgrade_precheck_result of this ShowKernelUpgradeCheckResultResponse.
+        :type upgrade_precheck_result: str
         """
-        self._job_ids = job_ids
+        self._upgrade_precheck_result = upgrade_precheck_result
+
+    @property
+    def updated_at(self):
+        r"""Gets the updated_at of this ShowKernelUpgradeCheckResultResponse.
+
+        **参数解释**：  预检查完成时间。  **取值范围**：  格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。
+
+        :return: The updated_at of this ShowKernelUpgradeCheckResultResponse.
+        :rtype: int
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        r"""Sets the updated_at of this ShowKernelUpgradeCheckResultResponse.
+
+        **参数解释**：  预检查完成时间。  **取值范围**：  格式为UNIX时间戳，单位是毫秒，时区为UTC标准时区。
+
+        :param updated_at: The updated_at of this ShowKernelUpgradeCheckResultResponse.
+        :type updated_at: int
+        """
+        self._updated_at = updated_at
+
+    @property
+    def upgrade_precheck_detail(self):
+        r"""Gets the upgrade_precheck_detail of this ShowKernelUpgradeCheckResultResponse.
+
+        **参数解释**：  实例预检查详情。
+
+        :return: The upgrade_precheck_detail of this ShowKernelUpgradeCheckResultResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.UpgradeDatabasePrecheckResult`]
+        """
+        return self._upgrade_precheck_detail
+
+    @upgrade_precheck_detail.setter
+    def upgrade_precheck_detail(self, upgrade_precheck_detail):
+        r"""Sets the upgrade_precheck_detail of this ShowKernelUpgradeCheckResultResponse.
+
+        **参数解释**：  实例预检查详情。
+
+        :param upgrade_precheck_detail: The upgrade_precheck_detail of this ShowKernelUpgradeCheckResultResponse.
+        :type upgrade_precheck_detail: list[:class:`huaweicloudsdkgaussdb.v3.UpgradeDatabasePrecheckResult`]
+        """
+        self._upgrade_precheck_detail = upgrade_precheck_detail
 
     def to_dict(self):
         import warnings

@@ -37,7 +37,8 @@ class AgentInstanceInfo:
         'user_name': 'str',
         'risks': 'list[AgentRisk]',
         'agent_version': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'security_policy_control': 'int'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class AgentInstanceInfo:
         'user_name': 'user_name',
         'risks': 'risks',
         'agent_version': 'agent_version',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'security_policy_control': 'security_policy_control'
     }
 
-    def __init__(self, id=None, instance_id=None, instance_name=None, desktop_id=None, region_id=None, ai_agent_type=None, agent_status=None, desktop_status=None, desktop_connection=None, model_config_status=None, channel_config_status=None, im_channel_configs=None, create_time=None, update_time=None, product_id=None, product_name=None, image_id=None, image_name=None, desktop_pool_id=None, user_name=None, risks=None, agent_version=None, enterprise_project_id=None):
+    def __init__(self, id=None, instance_id=None, instance_name=None, desktop_id=None, region_id=None, ai_agent_type=None, agent_status=None, desktop_status=None, desktop_connection=None, model_config_status=None, channel_config_status=None, im_channel_configs=None, create_time=None, update_time=None, product_id=None, product_name=None, image_id=None, image_name=None, desktop_pool_id=None, user_name=None, risks=None, agent_version=None, enterprise_project_id=None, security_policy_control=None):
         r"""AgentInstanceInfo
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class AgentInstanceInfo:
         :type agent_version: str
         :param enterprise_project_id: 企业项目 ID
         :type enterprise_project_id: str
+        :param security_policy_control: 安全策略管控，1&#x3D;开启，0&#x3D;关闭
+        :type security_policy_control: int
         """
         
         
@@ -144,6 +148,7 @@ class AgentInstanceInfo:
         self._risks = None
         self._agent_version = None
         self._enterprise_project_id = None
+        self._security_policy_control = None
         self.discriminator = None
 
         if id is not None:
@@ -192,6 +197,8 @@ class AgentInstanceInfo:
             self.agent_version = agent_version
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if security_policy_control is not None:
+            self.security_policy_control = security_policy_control
 
     @property
     def id(self):
@@ -698,6 +705,28 @@ class AgentInstanceInfo:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def security_policy_control(self):
+        r"""Gets the security_policy_control of this AgentInstanceInfo.
+
+        安全策略管控，1=开启，0=关闭
+
+        :return: The security_policy_control of this AgentInstanceInfo.
+        :rtype: int
+        """
+        return self._security_policy_control
+
+    @security_policy_control.setter
+    def security_policy_control(self, security_policy_control):
+        r"""Sets the security_policy_control of this AgentInstanceInfo.
+
+        安全策略管控，1=开启，0=关闭
+
+        :param security_policy_control: The security_policy_control of this AgentInstanceInfo.
+        :type security_policy_control: int
+        """
+        self._security_policy_control = security_policy_control
 
     def to_dict(self):
         result = {}

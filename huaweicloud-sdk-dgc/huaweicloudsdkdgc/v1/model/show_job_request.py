@@ -43,7 +43,7 @@ class ShowJobRequest:
         :type version: int
         :param dependencies: 返回下游依赖当前作业的作业，只返回第一层。
         :type dependencies: bool
-        :param get_job_submit_version: 该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+        :param get_job_submit_version: 该字段仅在version未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
         :type get_job_submit_version: bool
         """
         
@@ -158,7 +158,7 @@ class ShowJobRequest:
     def get_job_submit_version(self):
         r"""Gets the get_job_submit_version of this ShowJobRequest.
 
-        该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+        该字段仅在version未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
 
         :return: The get_job_submit_version of this ShowJobRequest.
         :rtype: bool
@@ -169,7 +169,7 @@ class ShowJobRequest:
     def get_job_submit_version(self, get_job_submit_version):
         r"""Sets the get_job_submit_version of this ShowJobRequest.
 
-        该字段仅在verion未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
+        该字段仅在version未设置时生效，true：作业最新提交版本，false：开发态作业（即最新保存版本）。
 
         :param get_job_submit_version: The get_job_submit_version of this ShowJobRequest.
         :type get_job_submit_version: bool

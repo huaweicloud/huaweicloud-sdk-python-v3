@@ -170,6 +170,7 @@ from huaweicloudsdksmn.v2.model.statistics_detail import StatisticsDetail
 from huaweicloudsdksmn.v2.model.subscribe_topic_request import SubscribeTopicRequest
 from huaweicloudsdksmn.v2.model.subscribe_topic_response import SubscribeTopicResponse
 from huaweicloudsdksmn.v2.model.subscription_extension import SubscriptionExtension
+from huaweicloudsdksmn.v2.model.subscription_extension_response import SubscriptionExtensionResponse
 from huaweicloudsdksmn.v2.model.subscriptions_filter_policy import SubscriptionsFilterPolicy
 from huaweicloudsdksmn.v2.model.sum_count_detail import SumCountDetail
 from huaweicloudsdksmn.v2.model.tag_match import TagMatch

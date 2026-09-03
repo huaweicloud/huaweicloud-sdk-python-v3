@@ -33,9 +33,9 @@ class ListTopicMessageStatisticsRequest:
 
         :param topic_urn: Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
         :type topic_urn: str
-        :param start_time: 起始时间
+        :param start_time: 起始时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
         :type end_time: str
         """
         
@@ -76,7 +76,7 @@ class ListTopicMessageStatisticsRequest:
     def start_time(self):
         r"""Gets the start_time of this ListTopicMessageStatisticsRequest.
 
-        起始时间
+        起始时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
 
         :return: The start_time of this ListTopicMessageStatisticsRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ListTopicMessageStatisticsRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListTopicMessageStatisticsRequest.
 
-        起始时间
+        起始时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
 
         :param start_time: The start_time of this ListTopicMessageStatisticsRequest.
         :type start_time: str
@@ -98,7 +98,7 @@ class ListTopicMessageStatisticsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListTopicMessageStatisticsRequest.
 
-        结束时间
+        结束时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
 
         :return: The end_time of this ListTopicMessageStatisticsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListTopicMessageStatisticsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListTopicMessageStatisticsRequest.
 
-        结束时间
+        结束时间，取UTC时区的整点时间(支持查询近31天的计量数据)。
 
         :param end_time: The end_time of this ListTopicMessageStatisticsRequest.
         :type end_time: str
