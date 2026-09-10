@@ -66,16 +66,12 @@ class ListOpsAgentMetricLabelValuesRequestBody:
         self._filter = None
         self.discriminator = None
 
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.start_time = start_time
+        self.end_time = end_time
         self.resource_id = resource_id
         self.resource_type = resource_type
-        if metric_name is not None:
-            self.metric_name = metric_name
-        if label_name is not None:
-            self.label_name = label_name
+        self.metric_name = metric_name
+        self.label_name = label_name
         if filter is not None:
             self.filter = filter
 

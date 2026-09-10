@@ -61,8 +61,10 @@ class EvaluationOpsModelConfig:
         self._frequency_penalty = None
         self.discriminator = None
 
-        self.model_id = model_id
-        self.model_name = model_name
+        if model_id is not None:
+            self.model_id = model_id
+        if model_name is not None:
+            self.model_name = model_name
         if temperature is not None:
             self.temperature = temperature
         if max_tokens is not None:

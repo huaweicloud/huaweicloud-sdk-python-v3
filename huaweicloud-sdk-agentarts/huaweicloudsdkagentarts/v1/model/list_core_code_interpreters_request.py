@@ -47,7 +47,7 @@ class ListCoreCodeInterpretersRequest:
         :type name: str
         :param offset: **参数解释：** 返回结果偏移量。 **约束限制：** 必须为非负整数。 **取值范围：** 0-100000。 **默认取值：** 0。 
         :type offset: int
-        :param limit: **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        :param limit: **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
         :type limit: int
         :param sort_key: **参数解释：** 排序字段 **约束范围：** 不涉及 **取值范围：** 必须是created_at或updated_at **默认取值：** 缺省值为created_at
         :type sort_key: str
@@ -143,7 +143,7 @@ class ListCoreCodeInterpretersRequest:
     def limit(self):
         r"""Gets the limit of this ListCoreCodeInterpretersRequest.
 
-        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
 
         :return: The limit of this ListCoreCodeInterpretersRequest.
         :rtype: int
@@ -154,7 +154,7 @@ class ListCoreCodeInterpretersRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCoreCodeInterpretersRequest.
 
-        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
 
         :param limit: The limit of this ListCoreCodeInterpretersRequest.
         :type limit: int

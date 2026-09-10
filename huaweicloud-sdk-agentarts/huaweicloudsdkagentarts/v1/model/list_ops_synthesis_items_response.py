@@ -16,20 +16,47 @@ class ListOpsSynthesisItemsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'items': 'list[EvaluationOpsSynthesisItem]'
     }
 
     attribute_map = {
+        'items': 'items'
     }
 
-    def __init__(self):
+    def __init__(self, items=None):
         r"""ListOpsSynthesisItemsResponse
 
         The model defined in huaweicloud sdk
 
+        :param items: 
+        :type items: list[:class:`huaweicloudsdkagentarts.v1.EvaluationOpsSynthesisItem`]
         """
         
         super().__init__()
+
+        self._items = None
         self.discriminator = None
+
+        if items is not None:
+            self.items = items
+
+    @property
+    def items(self):
+        r"""Gets the items of this ListOpsSynthesisItemsResponse.
+
+        :return: The items of this ListOpsSynthesisItemsResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.EvaluationOpsSynthesisItem`]
+        """
+        return self._items
+
+    @items.setter
+    def items(self, items):
+        r"""Sets the items of this ListOpsSynthesisItemsResponse.
+
+        :param items: The items of this ListOpsSynthesisItemsResponse.
+        :type items: list[:class:`huaweicloudsdkagentarts.v1.EvaluationOpsSynthesisItem`]
+        """
+        self._items = items
 
     def to_dict(self):
         import warnings

@@ -16,7 +16,7 @@ class UnsubscribePostpaidVolumeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[UnsubscribeVolumeResponseBody]'
+        'body': 'object'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class UnsubscribePostpaidVolumeResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkevs.v2.UnsubscribeVolumeResponseBody`]
+        :type body: object
         """
         
         super().__init__()
@@ -45,7 +45,7 @@ class UnsubscribePostpaidVolumeResponse(SdkResponse):
         r"""Gets the body of this UnsubscribePostpaidVolumeResponse.
 
         :return: The body of this UnsubscribePostpaidVolumeResponse.
-        :rtype: list[:class:`huaweicloudsdkevs.v2.UnsubscribeVolumeResponseBody`]
+        :rtype: object
         """
         return self._body
 
@@ -54,7 +54,7 @@ class UnsubscribePostpaidVolumeResponse(SdkResponse):
         r"""Sets the body of this UnsubscribePostpaidVolumeResponse.
 
         :param body: The body of this UnsubscribePostpaidVolumeResponse.
-        :type body: list[:class:`huaweicloudsdkevs.v2.UnsubscribeVolumeResponseBody`]
+        :type body: object
         """
         self._body = body
 

@@ -31,9 +31,9 @@ class SetBackupRetainPolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param auto: **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及       **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        :param auto: **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
         :type auto: str
-        :param manual: **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及      **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        :param manual: **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
         :type manual: str
         :param instanceids: **参数解释**  实例ID列表，实例ID是实例的唯一标识。  **约束限制**  不涉及。  **取值范围**  实例ID只能由英文字母、数字组成，长度为36个字符。  **默认取值**  不涉及。
         :type instanceids: list[str]
@@ -54,7 +54,7 @@ class SetBackupRetainPolicyRequestBody:
     def auto(self):
         r"""Gets the auto of this SetBackupRetainPolicyRequestBody.
 
-        **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及       **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
 
         :return: The auto of this SetBackupRetainPolicyRequestBody.
         :rtype: str
@@ -65,7 +65,7 @@ class SetBackupRetainPolicyRequestBody:
     def auto(self, auto):
         r"""Sets the auto of this SetBackupRetainPolicyRequestBody.
 
-        **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及       **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        **参数解释**  自动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
 
         :param auto: The auto of this SetBackupRetainPolicyRequestBody.
         :type auto: str
@@ -76,7 +76,7 @@ class SetBackupRetainPolicyRequestBody:
     def manual(self):
         r"""Gets the manual of this SetBackupRetainPolicyRequestBody.
 
-        **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及      **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
 
         :return: The manual of this SetBackupRetainPolicyRequestBody.
         :rtype: str
@@ -87,7 +87,7 @@ class SetBackupRetainPolicyRequestBody:
     def manual(self, manual):
         r"""Sets the manual of this SetBackupRetainPolicyRequestBody.
 
-        **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及      **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
+        **参数解释**  手动备份保留策略。NONE不保留，LAST保留最后一个，ALL全部保留。  **约束限制**  不涉及  **取值范围**  NONE、LAST、ALL  **默认取值**  不涉及。
 
         :param manual: The manual of this SetBackupRetainPolicyRequestBody.
         :type manual: str

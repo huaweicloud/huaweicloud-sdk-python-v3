@@ -20,6 +20,7 @@ class EvaluationOpsSynthesisTaskSummary:
         'scenario_type': 'str',
         'scenario_name': 'str',
         'scenario_description': 'str',
+        'stats': 'list[SynthesisTaskStats]',
         'status': 'str',
         'progress': 'int',
         'sample_count': 'int',
@@ -35,6 +36,7 @@ class EvaluationOpsSynthesisTaskSummary:
         'scenario_type': 'scenario_type',
         'scenario_name': 'scenario_name',
         'scenario_description': 'scenario_description',
+        'stats': 'stats',
         'status': 'status',
         'progress': 'progress',
         'sample_count': 'sample_count',
@@ -44,7 +46,7 @@ class EvaluationOpsSynthesisTaskSummary:
         'base_info': 'base_info'
     }
 
-    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, status=None, progress=None, sample_count=None, generated_count=None, model_config=None, seed_data=None, base_info=None):
+    def __init__(self, id=None, name=None, scenario_type=None, scenario_name=None, scenario_description=None, stats=None, status=None, progress=None, sample_count=None, generated_count=None, model_config=None, seed_data=None, base_info=None):
         r"""EvaluationOpsSynthesisTaskSummary
 
         The model defined in huaweicloud sdk
@@ -55,10 +57,12 @@ class EvaluationOpsSynthesisTaskSummary:
         :type name: str
         :param scenario_type: **参数解释：**   合成任务的技术场景类型。 **约束限制：**   枚举值。 **取值范围：**   seed_data等。 **默认取值：**   不涉及。 
         :type scenario_type: str
-        :param scenario_name: **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \&quot;基于种子数据泛化\&quot;。 **默认取值：** 不涉及。
+        :param scenario_name: **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \&quot;基于种子数据泛化\&quot;。 **默认取值：**   不涉及。 
         :type scenario_name: str
         :param scenario_description: **参数解释：**   合成任务背景的详细描述。 **约束限制：**   1-4000字符。 **取值范围：**   场景背景文本。 **默认取值：**   不涉及。 
         :type scenario_description: str
+        :param stats: **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
+        :type stats: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
         :param status: **参数解释：**   合成任务当前的生命周期状态。 **约束限制：**   枚举类型。 **取值范围：**   pending, running, completed, failed, stopped。 **默认取值：**   pending。 
         :type status: str
         :param progress: **参数解释：**   当前合成进度百分比。 **约束限制：**   0-100 整数。 **取值范围：**   0-100。 **默认取值：**   0。 
@@ -82,6 +86,7 @@ class EvaluationOpsSynthesisTaskSummary:
         self._scenario_type = None
         self._scenario_name = None
         self._scenario_description = None
+        self._stats = None
         self._status = None
         self._progress = None
         self._sample_count = None
@@ -101,6 +106,8 @@ class EvaluationOpsSynthesisTaskSummary:
             self.scenario_name = scenario_name
         if scenario_description is not None:
             self.scenario_description = scenario_description
+        if stats is not None:
+            self.stats = stats
         if status is not None:
             self.status = status
         if progress is not None:
@@ -186,7 +193,7 @@ class EvaluationOpsSynthesisTaskSummary:
     def scenario_name(self):
         r"""Gets the scenario_name of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \"基于种子数据泛化\"。 **默认取值：** 不涉及。
+        **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \"基于种子数据泛化\"。 **默认取值：**   不涉及。 
 
         :return: The scenario_name of this EvaluationOpsSynthesisTaskSummary.
         :rtype: str
@@ -197,7 +204,7 @@ class EvaluationOpsSynthesisTaskSummary:
     def scenario_name(self, scenario_name):
         r"""Sets the scenario_name of this EvaluationOpsSynthesisTaskSummary.
 
-        **参数解释：** 场景的友好展示名称。 **约束限制：** 1-4000字符。 **取值范围：** 如 \"基于种子数据泛化\"。 **默认取值：** 不涉及。
+        **参数解释：**   场景的友好展示名称。 **约束限制：**   1-4000字符。 **取值范围：**   如 \"基于种子数据泛化\"。 **默认取值：**   不涉及。 
 
         :param scenario_name: The scenario_name of this EvaluationOpsSynthesisTaskSummary.
         :type scenario_name: str
@@ -225,6 +232,28 @@ class EvaluationOpsSynthesisTaskSummary:
         :type scenario_description: str
         """
         self._scenario_description = scenario_description
+
+    @property
+    def stats(self):
+        r"""Gets the stats of this EvaluationOpsSynthesisTaskSummary.
+
+        **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
+
+        :return: The stats of this EvaluationOpsSynthesisTaskSummary.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
+        """
+        return self._stats
+
+    @stats.setter
+    def stats(self, stats):
+        r"""Sets the stats of this EvaluationOpsSynthesisTaskSummary.
+
+        **参数解释：**   合成任务的运行状态统计列表。 **约束限制：**   数组类型。 **取值范围：**   不涉及。 **默认取值：**   不涉及。 
+
+        :param stats: The stats of this EvaluationOpsSynthesisTaskSummary.
+        :type stats: list[:class:`huaweicloudsdkagentarts.v1.SynthesisTaskStats`]
+        """
+        self._stats = stats
 
     @property
     def status(self):

@@ -15,29 +15,43 @@ class ListCloudPhoneServerModelsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'product_type': 'int'
+        'product_type': 'int',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'product_type': 'product_type'
+        'product_type': 'product_type',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, product_type=None):
+    def __init__(self, product_type=None, marker=None, limit=None):
         r"""ListCloudPhoneServerModelsRequest
 
         The model defined in huaweicloud sdk
 
         :param product_type: 产品类型。 - 0：云手机 - 1：云手游
         :type product_type: int
+        :param marker: 分页标记。
+        :type marker: str
+        :param limit: 每页返回的服务器规格个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+        :type limit: int
         """
         
         
 
         self._product_type = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         if product_type is not None:
             self.product_type = product_type
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def product_type(self):
@@ -60,6 +74,50 @@ class ListCloudPhoneServerModelsRequest:
         :type product_type: int
         """
         self._product_type = product_type
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListCloudPhoneServerModelsRequest.
+
+        分页标记。
+
+        :return: The marker of this ListCloudPhoneServerModelsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListCloudPhoneServerModelsRequest.
+
+        分页标记。
+
+        :param marker: The marker of this ListCloudPhoneServerModelsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListCloudPhoneServerModelsRequest.
+
+        每页返回的服务器规格个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+
+        :return: The limit of this ListCloudPhoneServerModelsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListCloudPhoneServerModelsRequest.
+
+        每页返回的服务器规格个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+
+        :param limit: The limit of this ListCloudPhoneServerModelsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

@@ -167,6 +167,72 @@ class VpcClient(Client):
 
         return http_info
 
+    def attach_sub_network_interface(self, request):
+        r"""挂载辅助弹性网卡
+
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.AttachSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AttachSubNetworkInterfaceResponse`
+        """
+        http_info = self._attach_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_sub_network_interface_invoker(self, request):
+        http_info = self._attach_sub_network_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_sub_network_interface_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachSubNetworkInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_port_tags(self, request):
         r"""批量添加端口资源标签
 
@@ -367,6 +433,74 @@ class VpcClient(Client):
 
         return http_info
 
+    def batch_create_sub_network_interface_tags(self, request):
+        r"""批量添加辅助弹性网卡资源标签
+
+        为指定的辅助弹性网卡资源实例批量添加标签。
+        此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateSubNetworkInterfaceTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceTagsResponse`
+        """
+        http_info = self._batch_create_sub_network_interface_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_sub_network_interface_tags_invoker(self, request):
+        http_info = self._batch_create_sub_network_interface_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_sub_network_interface_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/{sub_network_interface_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSubNetworkInterfaceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_port_tags(self, request):
         r"""批量删除端口资源标签
 
@@ -435,6 +569,74 @@ class VpcClient(Client):
 
         return http_info
 
+    def batch_delete_sub_network_interface_tags(self, request):
+        r"""批量删除辅助弹性网卡资源标签
+
+        为指定的辅助弹性网卡资源实例批量删除标签。
+        此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteSubNetworkInterfaceTags
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchDeleteSubNetworkInterfaceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchDeleteSubNetworkInterfaceTagsResponse`
+        """
+        http_info = self._batch_delete_sub_network_interface_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_sub_network_interface_tags_invoker(self, request):
+        http_info = self._batch_delete_sub_network_interface_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_sub_network_interface_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/{sub_network_interface_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSubNetworkInterfaceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def count_ports_by_tags(self, request):
         r"""查询端口资源实例数量
 
@@ -460,6 +662,71 @@ class VpcClient(Client):
             "resource_path": "/v3/{project_id}/ports/resource-instances/count",
             "request_type": request.__class__.__name__,
             "response_type": "CountPortsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_sub_network_interfaces_by_tags(self, request):
+        r"""查询辅助弹性网卡资源实例数量
+
+        使用标签过滤查询辅助弹性网卡实例数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CountSubNetworkInterfacesByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.CountSubNetworkInterfacesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CountSubNetworkInterfacesByTagsResponse`
+        """
+        http_info = self._count_sub_network_interfaces_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_sub_network_interfaces_by_tags_invoker(self, request):
+        http_info = self._count_sub_network_interfaces_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_sub_network_interfaces_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountSubNetworkInterfacesByTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -732,6 +999,74 @@ class VpcClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_sub_network_interface_tag(self, request):
+        r"""添加辅助弹性网卡资源标签
+
+        给指定辅助弹性网卡资源实例增加标签信息。
+        此接口为幂等接口：创建时，如果创建的标签之前已经存在（key相同），则覆盖之前的标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSubNetworkInterfaceTag
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceTagResponse`
+        """
+        http_info = self._create_sub_network_interface_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sub_network_interface_tag_invoker(self, request):
+        http_info = self._create_sub_network_interface_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sub_network_interface_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/{sub_network_interface_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubNetworkInterfaceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
 
         query_params = []
 
@@ -1286,6 +1621,74 @@ class VpcClient(Client):
 
         return http_info
 
+    def delete_sub_network_interface_tag(self, request):
+        r"""删除辅助弹性网卡资源标签
+
+        删除指定辅助弹性网卡资源实例的标签信息
+        该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSubNetworkInterfaceTag
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceTagRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceTagResponse`
+        """
+        http_info = self._delete_sub_network_interface_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sub_network_interface_tag_invoker(self, request):
+        http_info = self._delete_sub_network_interface_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sub_network_interface_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/{sub_network_interface_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubNetworkInterfaceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
+        if 'tag_key' in local_var_params:
+            path_params['tag_key'] = local_var_params['tag_key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_traffic_mirror_filter(self, request):
         r"""删除流量镜像筛选条件
 
@@ -1517,6 +1920,71 @@ class VpcClient(Client):
         path_params = {}
         if 'virsubnet_cidr_reservation_id' in local_var_params:
             path_params['virsubnet_cidr_reservation_id'] = local_var_params['virsubnet_cidr_reservation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def detach_sub_network_interface(self, request):
+        r"""卸载辅助弹性网卡
+
+        辅助弹性网卡支持从云服务器网卡之间迁移，用户可以通过此接口从云服务器网卡中解绑辅助弹性网卡，再绑定辅助弹性网卡到其他云服务器网卡上。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetachSubNetworkInterface
+        :type request: :class:`huaweicloudsdkvpc.v3.DetachSubNetworkInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DetachSubNetworkInterfaceResponse`
+        """
+        http_info = self._detach_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_sub_network_interface_invoker(self, request):
+        http_info = self._detach_sub_network_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_sub_network_interface_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachSubNetworkInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
 
         query_params = []
 
@@ -1972,6 +2440,69 @@ class VpcClient(Client):
 
         return http_info
 
+    def list_sub_network_interface_tags(self, request):
+        r"""查询辅助弹性网卡项目标签
+
+        查询租户在指定项目下，辅助弹性网卡资源的所有标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubNetworkInterfaceTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfaceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfaceTagsResponse`
+        """
+        http_info = self._list_sub_network_interface_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_network_interface_tags_invoker(self, request):
+        http_info = self._list_sub_network_interface_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sub_network_interface_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubNetworkInterfaceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sub_network_interfaces(self, request):
         r"""查询租户下辅助弹性网卡列表
 
@@ -2039,6 +2570,75 @@ class VpcClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sub_network_interfaces_by_tags(self, request):
+        r"""查询辅助弹性网卡资源实例列表
+
+        使用标签过滤，查询辅助弹性网卡实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubNetworkInterfacesByTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesByTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesByTagsResponse`
+        """
+        http_info = self._list_sub_network_interfaces_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sub_network_interfaces_by_tags_invoker(self, request):
+        http_info = self._list_sub_network_interfaces_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sub_network_interfaces_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubNetworkInterfacesByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -3040,6 +3640,71 @@ class VpcClient(Client):
             "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowSubNetworkInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_network_interface_id' in local_var_params:
+            path_params['sub_network_interface_id'] = local_var_params['sub_network_interface_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sub_network_interface_tags(self, request):
+        r"""查询辅助弹性网卡资源标签
+
+        查询指定辅助弹性网卡实例的标签信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSubNetworkInterfaceTags
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceTagsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceTagsResponse`
+        """
+        http_info = self._show_sub_network_interface_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sub_network_interface_tags_invoker(self, request):
+        http_info = self._show_sub_network_interface_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sub_network_interface_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/sub-network-interfaces/{sub_network_interface_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubNetworkInterfaceTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

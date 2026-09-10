@@ -446,6 +446,77 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def associate_connection_cluster(self, request):
+        r"""绑定集群
+
+        该API用于在已创建的资源组网络连接中绑定集群。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AssociateConnectionCluster
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.AssociateConnectionClusterRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AssociateConnectionClusterResponse`
+        """
+        http_info = self._associate_connection_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def associate_connection_cluster_invoker(self, request):
+        http_info = self._associate_connection_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_connection_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration/connections/{connection_id}/associate-cluster",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateConnectionClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def associate_security_level_to_entitie(self, request):
         r"""资产关联密级
 
@@ -490,73 +561,6 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def authorize_data_connection(self, request):
-        r"""数据连接跨空间授权
-
-        数据连接跨空间授权。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for AuthorizeDataConnection
-        :type request: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeDataConnectionRequest`
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeDataConnectionResponse`
-        """
-        http_info = self._authorize_data_connection_http_info(request)
-        return self._call_api(**http_info)
-
-    def authorize_data_connection_invoker(self, request):
-        http_info = self._authorize_data_connection_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _authorize_data_connection_http_info(cls, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/datasources/authorize_datasource",
-            "request_type": request.__class__.__name__,
-            "response_type": "AuthorizeDataConnectionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'data_connection_id' in local_var_params:
-            query_params.append(('data_connection_id', local_var_params['data_connection_id']))
-        if 'workspace_id' in local_var_params:
-            query_params.append(('workspace_id', local_var_params['workspace_id']))
-
-        header_params = {}
 
         form_params = {}
 
@@ -838,6 +842,75 @@ class DataArtsStudioClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_bind_migration_resource_to_workspace(self, request):
+        r"""批量关联或取消关联数据集成资源到工作空间
+
+        批量关联或取消关联数据集成资源到工作空间，通过workspaces中的action字段区分操作类型。action为band表示关联，action为remove表示取消关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchBindMigrationResourceToWorkspace
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchBindMigrationResourceToWorkspaceRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchBindMigrationResourceToWorkspaceResponse`
+        """
+        http_info = self._batch_bind_migration_resource_to_workspace_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_bind_migration_resource_to_workspace_invoker(self, request):
+        http_info = self._batch_bind_migration_resource_to_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_bind_migration_resource_to_workspace_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/migration/batch-bind-workspace",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchBindMigrationResourceToWorkspaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1605,6 +1678,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_delete_workspaces(self, request):
+        r"""删除工作空间
+
+        删除工作空间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteWorkspaces
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteWorkspacesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteWorkspacesResponse`
+        """
+        http_info = self._batch_delete_workspaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_workspaces_invoker(self, request):
+        http_info = self._batch_delete_workspaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_workspaces_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/workspaces/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteWorkspacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_offline(self, request):
         r"""批量下线
 
@@ -2012,7 +2152,7 @@ class DataArtsStudioClient(Client):
     def cancel_factory_packages(self, request):
         r"""撤销任务包
 
-        撤销任务包
+        目前支持发布包管理中相关包的撤销，支持撤销多个任务包。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3241,6 +3381,77 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def create_cluster(self, request):
+        r"""创建集群
+
+        该API用于创建集群，该集群将会绑定用户指定的计算资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateClusterResponse`
+        """
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_code_table(self, request):
         r"""创建码表
 
@@ -3350,6 +3561,148 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_datasource_connection(self, request):
+        r"""创建资源组网络连接
+
+        该API用于创建与其他服务的资源组网络连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDatasourceConnection
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDatasourceConnectionResponse`
+        """
+        http_info = self._create_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_datasource_connection_invoker(self, request):
+        http_info = self._create_datasource_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datasource_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_datasource_connection_routes(self, request):
+        r"""创建路由
+
+        该API用于给资源组网络连接添加路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDatasourceConnectionRoutes
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDatasourceConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDatasourceConnectionRoutesResponse`
+        """
+        http_info = self._create_datasource_connection_routes_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_datasource_connection_routes_invoker(self, request):
+        http_info = self._create_datasource_connection_routes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datasource_connection_routes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration/connections/{connection_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceConnectionRoutesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -4068,7 +4421,7 @@ class DataArtsStudioClient(Client):
     def create_factory_supplement_data_instance(self, request):
         r"""创建补数据实例
 
-        创建补数据实例
+        创建一个补数据实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6509,6 +6862,148 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def delete_datasource_connection(self, request):
+        r"""删除资源组网络连接
+
+        该API用于删除已创建的DLI资源组网络连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDatasourceConnection
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDatasourceConnectionResponse`
+        """
+        http_info = self._delete_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_datasource_connection_invoker(self, request):
+        http_info = self._delete_datasource_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_datasource_connection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_datasource_connection_routes(self, request):
+        r"""删除路由
+
+        该API用于删除资源组网络连接添加的路由。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDatasourceConnectionRoutes
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDatasourceConnectionRoutesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDatasourceConnectionRoutesResponse`
+        """
+        http_info = self._delete_datasource_connection_routes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_datasource_connection_routes_invoker(self, request):
+        http_info = self._delete_datasource_connection_routes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_datasource_connection_routes_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/migration/connections/{connection_id}/routes/{route_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceConnectionRoutesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+        if 'route_name' in local_var_params:
+            path_params['route_name'] = local_var_params['route_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_design_aggregation_logic_table(self, request):
         r"""删除汇总表
 
@@ -8224,7 +8719,7 @@ class DataArtsStudioClient(Client):
     def deploy_factory_packages(self, request):
         r"""发布任务包
 
-        发布任务包
+        目前支持发布包管理中相关包的发布，支持发布多个任务包。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8274,6 +8769,79 @@ class DataArtsStudioClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_task_log(self, request):
+        r"""下载实时处理集成作业日志
+
+        获取range范围的日志内容，最多10MB。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadTaskLog
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.DownloadTaskLogRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DownloadTaskLogResponse`
+        """
+        http_info = self._download_task_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_task_log_invoker(self, request):
+        http_info = self._download_task_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_task_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration/tasks/{task_id}/logs/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadTaskLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'range' in local_var_params:
+            query_params.append(('range', local_var_params['range']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -11641,6 +12209,81 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_datasource_connections(self, request):
+        r"""查询资源组网络连接列表
+
+        该API用于查询该用户已创建的DLI资源组网络连接列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDatasourceConnections
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDatasourceConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDatasourceConnectionsResponse`
+        """
+        http_info = self._list_datasource_connections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_datasource_connections_invoker(self, request):
+        http_info = self._list_datasource_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datasource_connections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourceConnectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_derivative_indexes(self, request):
         r"""查找衍生指标
 
@@ -12311,7 +12954,7 @@ class DataArtsStudioClient(Client):
     def list_factory_alarm_info(self, request):
         r"""查询告警通知记录
 
-        查询告警通知记录
+        此接口可以查询指定时间段内的告警通知记录。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12461,7 +13104,7 @@ class DataArtsStudioClient(Client):
     def list_factory_job_instances_by_name(self, request):
         r"""查询指定作业的实例列表
 
-        查询指定作业的实例列表
+        根据作业名称精确查询作业实例列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12720,7 +13363,7 @@ class DataArtsStudioClient(Client):
     def list_factory_release_packages(self, request):
         r"""查询发布包列表
 
-        查询发布包列表
+        用于查询发布包的列表信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12953,7 +13596,7 @@ class DataArtsStudioClient(Client):
     def list_factory_task_completion(self, request):
         r"""查询任务完成情况
 
-        查询任务完成情况
+        查询任务完成情况。包括今天，昨天以及近7天的平均任务完成情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13020,7 +13663,7 @@ class DataArtsStudioClient(Client):
     def list_factory_task_overview(self, request):
         r"""查询实例运行状态
 
-        查询实例运行状态
+        此接口可以查询实例运行状态，包括当天、昨天、前天以及近7天的实例状态情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16210,10 +16853,81 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_task_logs(self, request):
+        r"""查询实时处理集成作业日志列表
+
+        查询实时处理集成作业日志列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTaskLogs
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListTaskLogsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTaskLogsResponse`
+        """
+        http_info = self._list_task_logs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_task_logs_invoker(self, request):
+        http_info = self._list_task_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration/tasks/{task_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_task_table_reference_detail(self, request):
         r"""查询单表的作业表引用详情
 
-        根据表名查询该表被哪些作业引用的详细信息，支持按输入输出类型、工作空间等条件筛选。
+        查询表被作业（调度中）引用详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -17267,7 +17981,7 @@ class DataArtsStudioClient(Client):
     def retry_factory_job_instance(self, request):
         r"""重跑作业实例
 
-        支持重跑作业实例以及上下游的作业实例。
+        支持重跑作业实例以及上下游的作业实例。该接口功能处于邀测阶段，后续将随功能公测逐步开放。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -18669,6 +19383,7 @@ class DataArtsStudioClient(Client):
     def set_factory_job_tags(self, request):
         r"""设置作业标签
 
+        此接口可以设置作业标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -20748,6 +21463,77 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def show_datasource_connection(self, request):
+        r"""查询资源组网络连接
+
+        该API用于查询该用户已创建的DLI资源组网络连接。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDatasourceConnection
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDatasourceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDatasourceConnectionResponse`
+        """
+        http_info = self._show_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_datasource_connection_invoker(self, request):
+        http_info = self._show_datasource_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_datasource_connection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasourceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_derivative_index_by_id(self, request):
         r"""查看衍生指标详情
 
@@ -21554,7 +22340,7 @@ class DataArtsStudioClient(Client):
     def show_factory_package_detail(self, request):
         r"""查询指定发布包详情
 
-        查询指定发布包详情
+        用于查询指定的发布包详情信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -21621,7 +22407,7 @@ class DataArtsStudioClient(Client):
     def show_factory_supplement_data(self, request):
         r"""查询补数据实例
 
-        查询补数据实例
+        查询补数据实例列表，支持分页查询。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -21978,6 +22764,75 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_job_monitor_info(self, request):
+        r"""查询实时处理集成作业监控指标
+
+        查询实时处理集成作业的子任务监控指标结果，包括各子任务的吞吐量、延迟等运行指标。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowJobMonitorInfo
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowJobMonitorInfoRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowJobMonitorInfoResponse`
+        """
+        http_info = self._show_job_monitor_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_job_monitor_info_invoker(self, request):
+        http_info = self._show_job_monitor_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_monitor_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration/tasks/{task_id}/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobMonitorInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -22665,6 +23520,76 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'instance' in local_var_params:
             header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_real_time_job_details(self, request):
+        r"""查询实时作业详情
+
+        查询实时作业的详细监控信息，包括作业运行状态、引擎版本、追踪URL及各子任务详情。
+        仅支持一键入湖（OneClickCDC）类型的实时作业。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRealTimeJobDetails
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowRealTimeJobDetailsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowRealTimeJobDetailsResponse`
+        """
+        http_info = self._show_real_time_job_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_real_time_job_details_invoker(self, request):
+        http_info = self._show_real_time_job_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_real_time_job_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/real-time-jobs/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRealTimeJobDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 
@@ -24402,7 +25327,7 @@ class DataArtsStudioClient(Client):
     def stop_factory_supplement_data_instance(self, request):
         r"""停止补数据实例
 
-        停止补数据实例
+        停止指定的补数据实例。只有补数据实例的状态是运行中，才能停止补数据实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -25097,6 +26022,79 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def update_datasource_connection_host_message(self, request):
+        r"""修改资源组网络连接的主机信息
+
+        该API用于在DLI资源组网络连接中修改数据源主机信息，仅支持全量覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDatasourceConnectionHostMessage
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDatasourceConnectionHostMessageRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDatasourceConnectionHostMessageResponse`
+        """
+        http_info = self._update_datasource_connection_host_message_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_datasource_connection_host_message_invoker(self, request):
+        http_info = self._update_datasource_connection_host_message_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_datasource_connection_host_message_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/migration/instances/{instance_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatasourceConnectionHostMessageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_design_aggregation_logic_table(self, request):
         r"""更新汇总表
 
@@ -25725,7 +26723,7 @@ class DataArtsStudioClient(Client):
     def update_factory_job_name(self, request):
         r"""修改作业名称
 
-        修改作业名称
+        对作业名称进行重命名操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -27081,6 +28079,75 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_work_space_old(self, request):
+        r"""修改工作空间
+
+        修改工作空间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateWorkSpaceOld
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkSpaceOldRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkSpaceOldResponse`
+        """
+        http_info = self._update_work_space_old_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_work_space_old_invoker(self, request):
+        http_info = self._update_work_space_old_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_work_space_old_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/{instance_id}/workspace/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkSpaceOldResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

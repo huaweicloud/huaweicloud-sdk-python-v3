@@ -16,47 +16,51 @@ class UpdateOpsSynthesisTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'id': 'id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, id=None):
         r"""UpdateOpsSynthesisTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param id: **参数解释：** 操作成功的合成任务唯一标识符。 **取值范围：** 系统生成的任务ID。 
+        :type id: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if id is not None:
+            self.id = id
 
     @property
-    def body(self):
-        r"""Gets the body of this UpdateOpsSynthesisTaskResponse.
+    def id(self):
+        r"""Gets the id of this UpdateOpsSynthesisTaskResponse.
 
-        :return: The body of this UpdateOpsSynthesisTaskResponse.
-        :rtype: object
+        **参数解释：** 操作成功的合成任务唯一标识符。 **取值范围：** 系统生成的任务ID。 
+
+        :return: The id of this UpdateOpsSynthesisTaskResponse.
+        :rtype: str
         """
-        return self._body
+        return self._id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this UpdateOpsSynthesisTaskResponse.
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this UpdateOpsSynthesisTaskResponse.
 
-        :param body: The body of this UpdateOpsSynthesisTaskResponse.
-        :type body: object
+        **参数解释：** 操作成功的合成任务唯一标识符。 **取值范围：** 系统生成的任务ID。 
+
+        :param id: The id of this UpdateOpsSynthesisTaskResponse.
+        :type id: str
         """
-        self._body = body
+        self._id = id
 
     def to_dict(self):
         import warnings

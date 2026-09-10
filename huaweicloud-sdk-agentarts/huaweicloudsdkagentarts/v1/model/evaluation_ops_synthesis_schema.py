@@ -15,26 +15,22 @@ class EvaluationOpsSynthesisSchema:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'name': 'str',
         'description': 'str',
         'synthesis_requirement': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
         'name': 'name',
         'description': 'description',
         'synthesis_requirement': 'synthesis_requirement'
     }
 
-    def __init__(self, id=None, name=None, description=None, synthesis_requirement=None):
+    def __init__(self, name=None, description=None, synthesis_requirement=None):
         r"""EvaluationOpsSynthesisSchema
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：**   合成字段的id。 **取值范围：**   由字母、数字、下划线组成。
-        :type id: str
         :param name: **参数解释：**   合成字段的名称。 **取值范围：**   长度1-100字符，由字母、数字、下划线组成。
         :type name: str
         :param description: **参数解释：**   合成字段的业务含义描述。 **取值范围：**   任意字符串。
@@ -45,41 +41,16 @@ class EvaluationOpsSynthesisSchema:
         
         
 
-        self._id = None
         self._name = None
         self._description = None
         self._synthesis_requirement = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
         self.name = name
         if description is not None:
             self.description = description
         if synthesis_requirement is not None:
             self.synthesis_requirement = synthesis_requirement
-
-    @property
-    def id(self):
-        r"""Gets the id of this EvaluationOpsSynthesisSchema.
-
-        **参数解释：**   合成字段的id。 **取值范围：**   由字母、数字、下划线组成。
-
-        :return: The id of this EvaluationOpsSynthesisSchema.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this EvaluationOpsSynthesisSchema.
-
-        **参数解释：**   合成字段的id。 **取值范围：**   由字母、数字、下划线组成。
-
-        :param id: The id of this EvaluationOpsSynthesisSchema.
-        :type id: str
-        """
-        self._id = id
 
     @property
     def name(self):

@@ -29,7 +29,7 @@ class ListResourceInstancesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。  - cph-server，云手机服务器
+        :param resource_type: 资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
         :type resource_type: str
         :param body: Body of the ListResourceInstancesRequest
         :type body: :class:`huaweicloudsdkcph.v1.ListResourceInstancesRequestBody`
@@ -49,7 +49,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type resource_type: str

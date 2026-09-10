@@ -104,6 +104,73 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def attach_dev_server_port_async(self, request):
+        r"""Lite Server服务器挂载网卡
+
+        Lite Server服务器挂载网卡
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachDevServerPort
+        :type request: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerPortRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.AttachDevServerPortResponse`
+        """
+        http_info = self._attach_dev_server_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_dev_server_port_async_invoker(self, request):
+        http_info = self._attach_dev_server_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_dev_server_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/attach-ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachDevServerPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def attach_dev_server_volume_async(self, request):
         r"""Lite Server服务器挂载磁盘
 
@@ -5319,6 +5386,73 @@ class ModelArtsAsyncClient(Client):
 
         return http_info
 
+    def detach_dev_server_port_async(self, request):
+        r"""Lite Server服务器卸载网卡
+
+        Lite Server服务器卸载网卡接口用于从服务器中移除指定的网络接口卡。该接口适用于以下场景：当服务器需要进行硬件维护、资源回收或网络配置调整时，用户可通过此接口卸载不再使用的网卡设备。使用该接口的前提条件是目标网卡已正确安装并处于可操作状态，且用户具有系统管理员权限。卸载操作完成后，网卡将从服务器配置中移除，相关驱动和网络参数也将被清除。若目标网卡不存在、用户权限不足或服务器处于运行状态，接口将返回对应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachDevServerPort
+        :type request: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerPortRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.DetachDevServerPortResponse`
+        """
+        http_info = self._detach_dev_server_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_dev_server_port_async_invoker(self, request):
+        http_info = self._detach_dev_server_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_dev_server_port_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dev-servers/{id}/detach-ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachDevServerPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def detach_dev_server_volume_async(self, request):
         r"""Lite Server服务器卸载磁盘
 
@@ -9737,6 +9871,69 @@ class ModelArtsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = ['ApiTokenAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_users_async(self, request):
+        r"""查询用户列表
+
+        查询用户列表接口用于获取系统中用户的列表信息。该接口适用于以下场景：当需要查看系统中所有用户或根据特定条件筛选用户时，管理员或系统可以通过此接口查询用户列表。使用该接口的前提条件是用户已存在且查询者具有相应的权限。查询操作完成后，接口将返回符合条件的用户列表；若系统中无用户或查询者无权限操作，接口将返回相应的错误信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUsers
+        :type request: :class:`huaweicloudsdkmodelarts.v1.ListUsersRequest`
+        :rtype: :class:`huaweicloudsdkmodelarts.v1.ListUsersResponse`
+        """
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_users_async_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/users/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['ApiTokenAuth']
 

@@ -15,28 +15,42 @@ class ListImageMembersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'image_id': 'str'
+        'image_id': 'str',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'image_id': 'image_id'
+        'image_id': 'image_id',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, image_id=None):
+    def __init__(self, image_id=None, marker=None, limit=None):
         r"""ListImageMembersRequest
 
         The model defined in huaweicloud sdk
 
         :param image_id: 镜像id。
         :type image_id: str
+        :param marker: 分页标记。
+        :type marker: str
+        :param limit: 每页返回的共享账号个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+        :type limit: int
         """
         
         
 
         self._image_id = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         self.image_id = image_id
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def image_id(self):
@@ -59,6 +73,50 @@ class ListImageMembersRequest:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListImageMembersRequest.
+
+        分页标记。
+
+        :return: The marker of this ListImageMembersRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListImageMembersRequest.
+
+        分页标记。
+
+        :param marker: The marker of this ListImageMembersRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListImageMembersRequest.
+
+        每页返回的共享账号个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+
+        :return: The limit of this ListImageMembersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListImageMembersRequest.
+
+        每页返回的共享账号个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
+
+        :param limit: The limit of this ListImageMembersRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

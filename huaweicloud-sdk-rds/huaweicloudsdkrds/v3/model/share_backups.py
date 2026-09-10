@@ -26,7 +26,7 @@ class ShareBackups:
         'instance_id': 'str',
         'instance_name': 'str',
         'instance_status': 'str',
-        'datastore': 'object',
+        'datastore': 'ShareBackupDatastore',
         'user_name': 'str'
     }
 
@@ -73,8 +73,8 @@ class ShareBackups:
         :type instance_name: str
         :param instance_status: 备份所在实例状态。
         :type instance_status: str
-        :param datastore: 数据库版本信息。
-        :type datastore: object
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkrds.v3.ShareBackupDatastore`
         :param user_name: 共享者用户名称。
         :type user_name: str
         """
@@ -369,10 +369,8 @@ class ShareBackups:
     def datastore(self):
         r"""Gets the datastore of this ShareBackups.
 
-        数据库版本信息。
-
         :return: The datastore of this ShareBackups.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkrds.v3.ShareBackupDatastore`
         """
         return self._datastore
 
@@ -380,10 +378,8 @@ class ShareBackups:
     def datastore(self, datastore):
         r"""Sets the datastore of this ShareBackups.
 
-        数据库版本信息。
-
         :param datastore: The datastore of this ShareBackups.
-        :type datastore: object
+        :type datastore: :class:`huaweicloudsdkrds.v3.ShareBackupDatastore`
         """
         self._datastore = datastore
 

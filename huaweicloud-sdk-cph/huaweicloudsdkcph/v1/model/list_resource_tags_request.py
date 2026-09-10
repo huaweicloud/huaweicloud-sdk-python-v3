@@ -29,7 +29,7 @@ class ListResourceTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。  - cph-server，云手机服务器
+        :param resource_type: 资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
         :type resource_type: str
         :param resource_id: 资源ID。
         :type resource_id: str
@@ -48,7 +48,7 @@ class ListResourceTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListResourceTagsRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :return: The resource_type of this ListResourceTagsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListResourceTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListResourceTagsRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :param resource_type: The resource_type of this ListResourceTagsRequest.
         :type resource_type: str

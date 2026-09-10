@@ -41,10 +41,8 @@ class UpdateOpsTraceFeedbackRequestBody:
         self._span_id = None
         self.discriminator = None
 
-        if feedback_operation is not None:
-            self.feedback_operation = feedback_operation
-        if span_id is not None:
-            self.span_id = span_id
+        self.feedback_operation = feedback_operation
+        self.span_id = span_id
 
     @property
     def feedback_operation(self):

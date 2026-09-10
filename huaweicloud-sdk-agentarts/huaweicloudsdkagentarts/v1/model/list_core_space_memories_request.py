@@ -69,7 +69,7 @@ class ListCoreSpaceMemoriesRequest:
         :type sort_by: str
         :param sort_order: **参数解释：**  排序方向，指定按升序还是降序排列结果。 **约束限制：**  不涉及。 **取值范围：** asc（升序）按从小到大顺序排序；desc（降序）按从大到小顺序排序。 **默认取值：** desc 
         :type sort_order: str
-        :param limit: **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        :param limit: **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
         :type limit: int
         :param offset: **参数解释：** 返回结果偏移量。 **约束限制：** 必须为非负整数。 **取值范围：** 0-100000。 **默认取值：** 0。 
         :type offset: int
@@ -339,7 +339,7 @@ class ListCoreSpaceMemoriesRequest:
     def limit(self):
         r"""Gets the limit of this ListCoreSpaceMemoriesRequest.
 
-        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
 
         :return: The limit of this ListCoreSpaceMemoriesRequest.
         :rtype: int
@@ -350,7 +350,7 @@ class ListCoreSpaceMemoriesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCoreSpaceMemoriesRequest.
 
-        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值1000。 **默认取值：** 1000。
+        **参数解释：** 限制数量。 **约束限制：** 不涉及。 **取值范围：** 正整数，最大值100。 **默认取值：** 100。
 
         :param limit: The limit of this ListCoreSpaceMemoriesRequest.
         :type limit: int

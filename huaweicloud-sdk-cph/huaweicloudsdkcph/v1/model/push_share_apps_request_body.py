@@ -43,7 +43,7 @@ class PushShareAppsRequestBody:
         :type bucket_name: str
         :param object_path: 合法的OBS对象key，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。
         :type object_path: str
-        :param server_ids: 云手机服务器ID列表。传入的服务器id个数范围为[1, 100]。
+        :param server_ids: 云手机服务器ID列表。传入的服务器id个数范围为[1, 20]。
         :type server_ids: list[str]
         """
         
@@ -155,7 +155,7 @@ class PushShareAppsRequestBody:
     def server_ids(self):
         r"""Gets the server_ids of this PushShareAppsRequestBody.
 
-        云手机服务器ID列表。传入的服务器id个数范围为[1, 100]。
+        云手机服务器ID列表。传入的服务器id个数范围为[1, 20]。
 
         :return: The server_ids of this PushShareAppsRequestBody.
         :rtype: list[str]
@@ -166,7 +166,7 @@ class PushShareAppsRequestBody:
     def server_ids(self, server_ids):
         r"""Sets the server_ids of this PushShareAppsRequestBody.
 
-        云手机服务器ID列表。传入的服务器id个数范围为[1, 100]。
+        云手机服务器ID列表。传入的服务器id个数范围为[1, 20]。
 
         :param server_ids: The server_ids of this PushShareAppsRequestBody.
         :type server_ids: list[str]

@@ -29,7 +29,7 @@ class UpdateOpsDatasetTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param dataset_id: **参数解释：** 评测集的唯一标识符（ID） **约束限制：** 由英文、数字、“-”、“_”组成，长度为1到64个字符。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1-64位字符串。 **默认取值：** 无。 
+        :param dataset_id: **参数解释：** 评测集的唯一标识符（ID）。可通过调用创建评测集接口获取，或通过查询评测集列表接口获取。 **约束限制：** 不涉及。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1~64个字符串。 **默认取值：** 无。
         :type dataset_id: str
         :param body: Body of the UpdateOpsDatasetTagsRequest
         :type body: :class:`huaweicloudsdkagentarts.v1.UpdateOpsResourceTagsRequestBody`
@@ -49,7 +49,7 @@ class UpdateOpsDatasetTagsRequest:
     def dataset_id(self):
         r"""Gets the dataset_id of this UpdateOpsDatasetTagsRequest.
 
-        **参数解释：** 评测集的唯一标识符（ID） **约束限制：** 由英文、数字、“-”、“_”组成，长度为1到64个字符。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1-64位字符串。 **默认取值：** 无。 
+        **参数解释：** 评测集的唯一标识符（ID）。可通过调用创建评测集接口获取，或通过查询评测集列表接口获取。 **约束限制：** 不涉及。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1~64个字符串。 **默认取值：** 无。
 
         :return: The dataset_id of this UpdateOpsDatasetTagsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateOpsDatasetTagsRequest:
     def dataset_id(self, dataset_id):
         r"""Sets the dataset_id of this UpdateOpsDatasetTagsRequest.
 
-        **参数解释：** 评测集的唯一标识符（ID） **约束限制：** 由英文、数字、“-”、“_”组成，长度为1到64个字符。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1-64位字符串。 **默认取值：** 无。 
+        **参数解释：** 评测集的唯一标识符（ID）。可通过调用创建评测集接口获取，或通过查询评测集列表接口获取。 **约束限制：** 不涉及。 **取值范围：** 由英文、数字、连字符(-)、下划线(_)组成的1~64个字符串。 **默认取值：** 无。
 
         :param dataset_id: The dataset_id of this UpdateOpsDatasetTagsRequest.
         :type dataset_id: str

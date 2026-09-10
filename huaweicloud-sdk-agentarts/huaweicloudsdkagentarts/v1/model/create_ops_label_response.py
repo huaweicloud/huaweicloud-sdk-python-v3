@@ -16,51 +16,51 @@ class CreateOpsLabelResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'label_id': 'str'
+        'data': 'str'
     }
 
     attribute_map = {
-        'label_id': 'label_id'
+        'data': 'data'
     }
 
-    def __init__(self, label_id=None):
+    def __init__(self, data=None):
         r"""CreateOpsLabelResponse
 
         The model defined in huaweicloud sdk
 
-        :param label_id: **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 字符串长度0-64。 **取值范围：** 字符长度0-64。 **默认值：** 不涉及 
-        :type label_id: str
+        :param data: **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 不涉及。 **取值范围：** 只能由英文字母、数字及连字符(-)组成，长度为0~64个字符。 
+        :type data: str
         """
         
         super().__init__()
 
-        self._label_id = None
+        self._data = None
         self.discriminator = None
 
-        if label_id is not None:
-            self.label_id = label_id
+        if data is not None:
+            self.data = data
 
     @property
-    def label_id(self):
-        r"""Gets the label_id of this CreateOpsLabelResponse.
+    def data(self):
+        r"""Gets the data of this CreateOpsLabelResponse.
 
-        **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 字符串长度0-64。 **取值范围：** 字符长度0-64。 **默认值：** 不涉及 
+        **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 不涉及。 **取值范围：** 只能由英文字母、数字及连字符(-)组成，长度为0~64个字符。 
 
-        :return: The label_id of this CreateOpsLabelResponse.
+        :return: The data of this CreateOpsLabelResponse.
         :rtype: str
         """
-        return self._label_id
+        return self._data
 
-    @label_id.setter
-    def label_id(self, label_id):
-        r"""Sets the label_id of this CreateOpsLabelResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this CreateOpsLabelResponse.
 
-        **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 字符串长度0-64。 **取值范围：** 字符长度0-64。 **默认值：** 不涉及 
+        **参数解释：** 创建成功的标签唯一标识符（ID）。 **约束限制：** 不涉及。 **取值范围：** 只能由英文字母、数字及连字符(-)组成，长度为0~64个字符。 
 
-        :param label_id: The label_id of this CreateOpsLabelResponse.
-        :type label_id: str
+        :param data: The data of this CreateOpsLabelResponse.
+        :type data: str
         """
-        self._label_id = label_id
+        self._data = data
 
     def to_dict(self):
         import warnings

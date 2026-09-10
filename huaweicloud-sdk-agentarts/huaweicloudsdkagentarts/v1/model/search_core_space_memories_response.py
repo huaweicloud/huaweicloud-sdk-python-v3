@@ -16,109 +16,47 @@ class SearchCoreSpaceMemoriesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'results': 'list[MemorySearchRespResults]',
-        'query': 'str',
-        'total': 'int'
+        'body': 'MemorySearchResp'
     }
 
     attribute_map = {
-        'results': 'results',
-        'query': 'query',
-        'total': 'total'
+        'body': 'body'
     }
 
-    def __init__(self, results=None, query=None, total=None):
+    def __init__(self, body=None):
         r"""SearchCoreSpaceMemoriesResponse
 
         The model defined in huaweicloud sdk
 
-        :param results: **参数解释：** 检索结果（按 Rerank 分数降序）。 **约束限制：** 不涉及。 **取值范围：** 0-100个。 **默认取值：** 不涉及。 
-        :type results: list[:class:`huaweicloudsdkagentarts.v1.MemorySearchRespResults`]
-        :param query: **参数解释：**  原始查询文本，与请求中的 query 参数一致。 **约束限制：**  不涉及。 **取值范围：** 长度0-2000字符。 **默认取值：** 0-2000 字符。 
-        :type query: str
-        :param total: **参数解释：**  符合条件的搜索结果总数，用于计算总页数。 **约束限制：**  不涉及。 **取值范围：**  0-2147483647 **默认取值：**  0-2147483647 
-        :type total: int
+        :param body: 
+        :type body: :class:`huaweicloudsdkagentarts.v1.MemorySearchResp`
         """
         
         super().__init__()
 
-        self._results = None
-        self._query = None
-        self._total = None
+        self._body = None
         self.discriminator = None
 
-        if results is not None:
-            self.results = results
-        if query is not None:
-            self.query = query
-        if total is not None:
-            self.total = total
+        if body is not None:
+            self.body = body
 
     @property
-    def results(self):
-        r"""Gets the results of this SearchCoreSpaceMemoriesResponse.
+    def body(self):
+        r"""Gets the body of this SearchCoreSpaceMemoriesResponse.
 
-        **参数解释：** 检索结果（按 Rerank 分数降序）。 **约束限制：** 不涉及。 **取值范围：** 0-100个。 **默认取值：** 不涉及。 
-
-        :return: The results of this SearchCoreSpaceMemoriesResponse.
-        :rtype: list[:class:`huaweicloudsdkagentarts.v1.MemorySearchRespResults`]
+        :return: The body of this SearchCoreSpaceMemoriesResponse.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.MemorySearchResp`
         """
-        return self._results
+        return self._body
 
-    @results.setter
-    def results(self, results):
-        r"""Sets the results of this SearchCoreSpaceMemoriesResponse.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this SearchCoreSpaceMemoriesResponse.
 
-        **参数解释：** 检索结果（按 Rerank 分数降序）。 **约束限制：** 不涉及。 **取值范围：** 0-100个。 **默认取值：** 不涉及。 
-
-        :param results: The results of this SearchCoreSpaceMemoriesResponse.
-        :type results: list[:class:`huaweicloudsdkagentarts.v1.MemorySearchRespResults`]
+        :param body: The body of this SearchCoreSpaceMemoriesResponse.
+        :type body: :class:`huaweicloudsdkagentarts.v1.MemorySearchResp`
         """
-        self._results = results
-
-    @property
-    def query(self):
-        r"""Gets the query of this SearchCoreSpaceMemoriesResponse.
-
-        **参数解释：**  原始查询文本，与请求中的 query 参数一致。 **约束限制：**  不涉及。 **取值范围：** 长度0-2000字符。 **默认取值：** 0-2000 字符。 
-
-        :return: The query of this SearchCoreSpaceMemoriesResponse.
-        :rtype: str
-        """
-        return self._query
-
-    @query.setter
-    def query(self, query):
-        r"""Sets the query of this SearchCoreSpaceMemoriesResponse.
-
-        **参数解释：**  原始查询文本，与请求中的 query 参数一致。 **约束限制：**  不涉及。 **取值范围：** 长度0-2000字符。 **默认取值：** 0-2000 字符。 
-
-        :param query: The query of this SearchCoreSpaceMemoriesResponse.
-        :type query: str
-        """
-        self._query = query
-
-    @property
-    def total(self):
-        r"""Gets the total of this SearchCoreSpaceMemoriesResponse.
-
-        **参数解释：**  符合条件的搜索结果总数，用于计算总页数。 **约束限制：**  不涉及。 **取值范围：**  0-2147483647 **默认取值：**  0-2147483647 
-
-        :return: The total of this SearchCoreSpaceMemoriesResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        r"""Sets the total of this SearchCoreSpaceMemoriesResponse.
-
-        **参数解释：**  符合条件的搜索结果总数，用于计算总页数。 **约束限制：**  不涉及。 **取值范围：**  0-2147483647 **默认取值：**  0-2147483647 
-
-        :param total: The total of this SearchCoreSpaceMemoriesResponse.
-        :type total: int
-        """
-        self._total = total
+        self._body = body
 
     def to_dict(self):
         import warnings

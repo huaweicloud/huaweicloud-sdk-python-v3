@@ -16,47 +16,51 @@ class CreateOpsEvaluatorResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'evaluator_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'evaluator_id': 'evaluator_id'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, evaluator_id=None):
         r"""CreateOpsEvaluatorResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param evaluator_id: **参数解释：** 成功创建后生成的评估器唯一标识符。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+        :type evaluator_id: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._evaluator_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if evaluator_id is not None:
+            self.evaluator_id = evaluator_id
 
     @property
-    def body(self):
-        r"""Gets the body of this CreateOpsEvaluatorResponse.
+    def evaluator_id(self):
+        r"""Gets the evaluator_id of this CreateOpsEvaluatorResponse.
 
-        :return: The body of this CreateOpsEvaluatorResponse.
-        :rtype: object
+        **参数解释：** 成功创建后生成的评估器唯一标识符。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+
+        :return: The evaluator_id of this CreateOpsEvaluatorResponse.
+        :rtype: str
         """
-        return self._body
+        return self._evaluator_id
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this CreateOpsEvaluatorResponse.
+    @evaluator_id.setter
+    def evaluator_id(self, evaluator_id):
+        r"""Sets the evaluator_id of this CreateOpsEvaluatorResponse.
 
-        :param body: The body of this CreateOpsEvaluatorResponse.
-        :type body: object
+        **参数解释：** 成功创建后生成的评估器唯一标识符。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。 
+
+        :param evaluator_id: The evaluator_id of this CreateOpsEvaluatorResponse.
+        :type evaluator_id: str
         """
-        self._body = body
+        self._evaluator_id = evaluator_id
 
     def to_dict(self):
         import warnings

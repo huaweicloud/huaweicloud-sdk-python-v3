@@ -29,9 +29,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：&#x3D;+-@，不能以_sys_开头。
+        :param key: 键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：&#x3D;+-@，不能以_sys_开头。 [- 弹性云手机不包含等号（&#x3D;）。](tag:hws_test)
         :type key: str
-        :param value: 值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：&#x3D;+-@，但首尾不能含有空格。
+        :param value: 值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：&#x3D;+-@，但首尾不能含有空格。 [- 弹性云手机不包含等号（&#x3D;）。](tag:hws_test)
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class Tag:
     def key(self):
         r"""Gets the key of this Tag.
 
-        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，不能以_sys_开头。
+        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，不能以_sys_开头。 [- 弹性云手机不包含等号（=）。](tag:hws_test)
 
         :return: The key of this Tag.
         :rtype: str
@@ -59,7 +59,7 @@ class Tag:
     def key(self, key):
         r"""Sets the key of this Tag.
 
-        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，不能以_sys_开头。
+        键。  - 最大长度127个unicode字符。          - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，不能以_sys_开头。 [- 弹性云手机不包含等号（=）。](tag:hws_test)
 
         :param key: The key of this Tag.
         :type key: str
@@ -70,7 +70,7 @@ class Tag:
     def value(self):
         r"""Gets the value of this Tag.
 
-        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空格。
+        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空格。 [- 弹性云手机不包含等号（=）。](tag:hws_test)
 
         :return: The value of this Tag.
         :rtype: str
@@ -81,7 +81,7 @@ class Tag:
     def value(self, value):
         r"""Sets the value of this Tag.
 
-        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空格。
+        值列表。  - 每个值最大长度255个unicode字符。 - 不能为空，可以包含任意语种字母、数字、空格和_.：=+-@，但首尾不能含有空格。 [- 弹性云手机不包含等号（=）。](tag:hws_test)
 
         :param value: The value of this Tag.
         :type value: str

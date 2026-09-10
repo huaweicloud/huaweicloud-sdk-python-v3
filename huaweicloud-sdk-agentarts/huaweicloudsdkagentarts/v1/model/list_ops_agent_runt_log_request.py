@@ -87,8 +87,7 @@ class ListOpsAgentRuntLogRequest:
         self.discriminator = None
 
         self.agent_run_id = agent_run_id
-        if log_type is not None:
-            self.log_type = log_type
+        self.log_type = log_type
         if resource_type is not None:
             self.resource_type = resource_type
         if user_id is not None:

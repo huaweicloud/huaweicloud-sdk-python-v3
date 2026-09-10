@@ -102,6 +102,138 @@ class CphClient(Client):
 
         return http_info
 
+    def attach_share_filesystem(self, request):
+        r"""挂载共享文件系统
+
+        将指定的共享文件系统挂载到多个云手机服务器。单个共享文件系统同时挂载的服务器数量建议不超过50台。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AttachShareFilesystem
+        :type request: :class:`huaweicloudsdkcph.v1.AttachShareFilesystemRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.AttachShareFilesystemResponse`
+        """
+        http_info = self._attach_share_filesystem_http_info(request)
+        return self._call_api(**http_info)
+
+    def attach_share_filesystem_invoker(self, request):
+        http_info = self._attach_share_filesystem_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_share_filesystem_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/servers/attach-share-filesystem",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachShareFilesystemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def authorize_scheduled_event(self, request):
+        r"""授权计划事件
+
+        授权计划事件。当系统上报计划事件时，需要对服务器进行“授权维护”操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AuthorizeScheduledEvent
+        :type request: :class:`huaweicloudsdkcph.v1.AuthorizeScheduledEventRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.AuthorizeScheduledEventResponse`
+        """
+        http_info = self._authorize_scheduled_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def authorize_scheduled_event_invoker(self, request):
+        http_info = self._authorize_scheduled_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_scheduled_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/scheduled-events/{event_id}/authorize",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeScheduledEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_tags(self, request):
         r"""批量添加标签
 
@@ -243,7 +375,7 @@ class CphClient(Client):
     def batch_export_cloud_phone_data(self, request):
         r"""导出云手机数据
 
-        批量导出云手机中的数据。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
+        批量导出云手机中的数据，不支持导出共享应用及其数据文件。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -574,7 +706,7 @@ class CphClient(Client):
     def create_cloud_phone_single_server(self, request):
         r"""创建云手机裸服务器
 
-        该接口创建的服务器仅包含服务器和服务器的镜像，不包含云手机实例和镜像等内容。若需要创建包含云手机实例的服务器，请使用创建云手机服务器接口。
+        该接口创建的服务器仅包含服务器和服务器的镜像，不包含云手机实例和镜像等内容。若需创建包含云手机实例的服务器，请使用创建云手机服务器接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1031,6 +1163,71 @@ class CphClient(Client):
 
         return http_info
 
+    def detach_share_filesystem(self, request):
+        r"""卸载共享文件系统
+
+        卸载多个云手机服务器上的共享文件系统
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DetachShareFilesystem
+        :type request: :class:`huaweicloudsdkcph.v1.DetachShareFilesystemRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.DetachShareFilesystemResponse`
+        """
+        http_info = self._detach_share_filesystem_http_info(request)
+        return self._call_api(**http_info)
+
+    def detach_share_filesystem_invoker(self, request):
+        http_info = self._detach_share_filesystem_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_share_filesystem_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/servers/detach-share-filesystem",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachShareFilesystemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def expand_phone_data_volume_size(self, request):
         r"""扩容云手机数据盘大小
 
@@ -1200,6 +1397,10 @@ class CphClient(Client):
         query_params = []
         if 'image_type' in local_var_params:
             query_params.append(('image_type', local_var_params['image_type']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1296,6 +1497,73 @@ class CphClient(Client):
 
         return http_info
 
+    def list_cloud_phone_server_model_offerings(self, request):
+        r"""查询云手机服务器规格售卖状态列表
+
+        查询客户有权限的可用区，及可用区内支持的服务器规格售卖状态列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCloudPhoneServerModelOfferings
+        :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelOfferingsRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelOfferingsResponse`
+        """
+        http_info = self._list_cloud_phone_server_model_offerings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cloud_phone_server_model_offerings_invoker(self, request):
+        http_info = self._list_cloud_phone_server_model_offerings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cloud_phone_server_model_offerings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/server-model-offerings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhoneServerModelOfferingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cloud_phone_server_models(self, request):
         r"""查询云手机服务器规格列表
 
@@ -1334,6 +1602,10 @@ class CphClient(Client):
         query_params = []
         if 'product_type' in local_var_params:
             query_params.append(('product_type', local_var_params['product_type']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1630,6 +1902,10 @@ class CphClient(Client):
             path_params['image_id'] = local_var_params['image_id']
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1985,6 +2261,163 @@ class CphClient(Client):
             path_params['resource_id'] = local_var_params['resource_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_scheduled_events(self, request):
+        r"""查询计划事件列表
+
+        查询服务器计划事件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListScheduledEvents
+        :type request: :class:`huaweicloudsdkcph.v1.ListScheduledEventsRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ListScheduledEventsResponse`
+        """
+        http_info = self._list_scheduled_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scheduled_events_invoker(self, request):
+        http_info = self._list_scheduled_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_scheduled_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/scheduled-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduledEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'event_id' in local_var_params:
+            query_params.append(('event_id', local_var_params['event_id']))
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
+        if 'publish_since' in local_var_params:
+            query_params.append(('publish_since', local_var_params['publish_since']))
+        if 'publish_until' in local_var_params:
+            query_params.append(('publish_until', local_var_params['publish_until']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+            collection_formats['state'] = 'csv'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_share_apps_snapshot(self, request):
+        r"""查询服务器已安装共享应用列表
+
+        该接口查询云手机服务器上最新采集的已安装的共享应用快照，采集在云手机服务器上定时每两小时执行一次。
+        注意存在以下限制：
+        1.云手机服务器安装不同的共享应用数量不能超过10000个，超过限制不会采集该服务器数据。
+        2.推送安装的共享应用包名只包含大小写字母、数字、下划线、点，不能以数字和下划线开头，点不能作为结尾且包名中至少有一个点，点后必须以字母开头，长度不超过128。不符合该限制的共享应用包名不会采集。
+        3.推送安装的共享应用版本只包含字母、数字、连字符、下划线、点，无空格，不能以连字符、点开头，长度不超过32。不符合该限制的共享应用包版本不会采集。
+        4.同一个服务器上同一个已安装的共享应用版本建议不要超过60个。超过会影响该应用的采集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListShareAppsSnapshot
+        :type request: :class:`huaweicloudsdkcph.v1.ListShareAppsSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.ListShareAppsSnapshotResponse`
+        """
+        http_info = self._list_share_apps_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_share_apps_snapshot_invoker(self, request):
+        http_info = self._list_share_apps_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_share_apps_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/servers/{server_id}/share-apps-snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListShareAppsSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'package_name' in local_var_params:
+            query_params.append(('package_name', local_var_params['package_name']))
 
         header_params = {}
 
@@ -2937,7 +3370,7 @@ class CphClient(Client):
     def update_image_member(self, request):
         r"""更新共享镜像接受信息
 
-        用户收到共享镜像后，选择接受或拒绝共享镜像。未接受的共享镜像无法使用。
+        用户收到共享镜像后，选择接受或者拒绝共享镜像。未接受的共享镜像无法使用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3133,6 +3566,73 @@ class CphClient(Client):
 
         return http_info
 
+    def update_scheduled_event(self, request):
+        r"""修改计划事件预约时间
+
+        更新计划事件的执行开始时间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateScheduledEvent
+        :type request: :class:`huaweicloudsdkcph.v1.UpdateScheduledEventRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.UpdateScheduledEventResponse`
+        """
+        http_info = self._update_scheduled_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scheduled_event_invoker(self, request):
+        http_info = self._update_scheduled_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_scheduled_event_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/scheduled-events/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduledEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_server_name(self, request):
         r"""修改云手机服务器名称
 
@@ -3204,7 +3704,7 @@ class CphClient(Client):
         r"""安装apk
 
         在云手机中安装apk。系统会将指定的apk文件下载后直接安装到云手机中。
-        支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk，如果一次传多个apk只有第一个安装成功；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
+        支持安装单apk应用和多apk应用。可使用install命令安装单apk应用，一次只支持安装一个apk，只能传一个apk；可使用install-multiple命令安装多apk应用（多apk应用为单个应用拆分成多个apk），一次只支持同一个应用的多个apk。该接口为异步接口。[接口调用前请先确保已完成CPH服务操作OBS桶的委托授权。委托CPH操作OBS桶请参见[委托CPH操作OBS桶](https://support.huaweicloud.com/bestpractice-cph/cph_bp_0050.html)。](tag:hws)
         - 管理面性能有限，对相同服务器批量执行的ADB命令，将会阻塞云手机其他任务执行。
         - 允许安装的apk大小限制为2G（即不可将obs桶内大于2G的apk安装到手机中），超过限制将返回错误。
         

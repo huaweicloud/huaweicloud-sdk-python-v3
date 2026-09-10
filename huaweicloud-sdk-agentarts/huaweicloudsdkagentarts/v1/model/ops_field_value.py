@@ -15,43 +15,108 @@ class OpsFieldValue:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'key': 'str',
         'type': 'str',
         'content_type': 'str',
-        'value': 'object'
+        'value': 'object',
+        'required': 'bool'
     }
 
     attribute_map = {
+        'id': 'id',
+        'key': 'key',
         'type': 'type',
         'content_type': 'content_type',
-        'value': 'value'
+        'value': 'value',
+        'required': 'required'
     }
 
-    def __init__(self, type=None, content_type=None, value=None):
+    def __init__(self, id=None, key=None, type=None, content_type=None, value=None, required=None):
         r"""OpsFieldValue
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释：** 唯一标识。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。
+        :type id: str
+        :param key: **参数解释：** 字段名。 **取值范围：** 标准的字符串。
+        :type key: str
         :param type: **参数解释：** 字段的数据类型。 **取值范围：** 如 string, integer, float 等。
         :type type: str
         :param content_type: **参数解释：** 内容展示类型。 **取值范围：** 如 text, markdown, image 等。
         :type content_type: str
         :param value: **参数解释：** 字段承载的实际业务数据。 **取值范围：** 根据type字段确定具体数据类型和格式。
         :type value: object
+        :param required: **参数解释：** 字段是否必填。 **取值范围：** 布尔值，true或者false。
+        :type required: bool
         """
         
         
 
+        self._id = None
+        self._key = None
         self._type = None
         self._content_type = None
         self._value = None
+        self._required = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if key is not None:
+            self.key = key
         if type is not None:
             self.type = type
         if content_type is not None:
             self.content_type = content_type
         if value is not None:
             self.value = value
+        if required is not None:
+            self.required = required
+
+    @property
+    def id(self):
+        r"""Gets the id of this OpsFieldValue.
+
+        **参数解释：** 唯一标识。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。
+
+        :return: The id of this OpsFieldValue.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this OpsFieldValue.
+
+        **参数解释：** 唯一标识。 **取值范围：** 符合通用唯一识别码(UUID)标准的字符串。
+
+        :param id: The id of this OpsFieldValue.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def key(self):
+        r"""Gets the key of this OpsFieldValue.
+
+        **参数解释：** 字段名。 **取值范围：** 标准的字符串。
+
+        :return: The key of this OpsFieldValue.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        r"""Sets the key of this OpsFieldValue.
+
+        **参数解释：** 字段名。 **取值范围：** 标准的字符串。
+
+        :param key: The key of this OpsFieldValue.
+        :type key: str
+        """
+        self._key = key
 
     @property
     def type(self):
@@ -118,6 +183,28 @@ class OpsFieldValue:
         :type value: object
         """
         self._value = value
+
+    @property
+    def required(self):
+        r"""Gets the required of this OpsFieldValue.
+
+        **参数解释：** 字段是否必填。 **取值范围：** 布尔值，true或者false。
+
+        :return: The required of this OpsFieldValue.
+        :rtype: bool
+        """
+        return self._required
+
+    @required.setter
+    def required(self, required):
+        r"""Sets the required of this OpsFieldValue.
+
+        **参数解释：** 字段是否必填。 **取值范围：** 布尔值，true或者false。
+
+        :param required: The required of this OpsFieldValue.
+        :type required: bool
+        """
+        self._required = required
 
     def to_dict(self):
         result = {}

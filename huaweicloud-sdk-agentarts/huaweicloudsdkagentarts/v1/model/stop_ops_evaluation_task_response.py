@@ -16,47 +16,80 @@ class StopOpsEvaluationTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'code': 'str',
+        'msg': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'code': 'code',
+        'msg': 'msg'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, code=None, msg=None):
         r"""StopOpsEvaluationTaskResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param code: **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
+        :type code: str
+        :param msg: **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
+        :type msg: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._code = None
+        self._msg = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if code is not None:
+            self.code = code
+        if msg is not None:
+            self.msg = msg
 
     @property
-    def body(self):
-        r"""Gets the body of this StopOpsEvaluationTaskResponse.
+    def code(self):
+        r"""Gets the code of this StopOpsEvaluationTaskResponse.
 
-        :return: The body of this StopOpsEvaluationTaskResponse.
-        :rtype: object
+        **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
+
+        :return: The code of this StopOpsEvaluationTaskResponse.
+        :rtype: str
         """
-        return self._body
+        return self._code
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this StopOpsEvaluationTaskResponse.
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this StopOpsEvaluationTaskResponse.
 
-        :param body: The body of this StopOpsEvaluationTaskResponse.
-        :type body: object
+        **参数解释：** 系统定义的标准化成功代码。 **取值范围：** 不涉及。 
+
+        :param code: The code of this StopOpsEvaluationTaskResponse.
+        :type code: str
         """
-        self._body = body
+        self._code = code
+
+    @property
+    def msg(self):
+        r"""Gets the msg of this StopOpsEvaluationTaskResponse.
+
+        **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
+
+        :return: The msg of this StopOpsEvaluationTaskResponse.
+        :rtype: str
+        """
+        return self._msg
+
+    @msg.setter
+    def msg(self, msg):
+        r"""Sets the msg of this StopOpsEvaluationTaskResponse.
+
+        **参数解释：** 成功描述。 **约束限制：** 字符串类型，最小长度为2，最大长度为512。 **取值范围：** 字符长度2-512，任意文本内容。 
+
+        :param msg: The msg of this StopOpsEvaluationTaskResponse.
+        :type msg: str
+        """
+        self._msg = msg
 
     def to_dict(self):
         import warnings

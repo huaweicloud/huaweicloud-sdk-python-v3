@@ -27,6 +27,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'status': 'int',
         'access_infos': 'list[PhoneAccessInfo]',
         '_property': 'str',
+        'custom_property': 'dict(str, str)',
         'metadata': 'ShowCloudPhoneDetailResponseBodyMetadata',
         'phone_data_volume': 'PhoneDataVolume',
         'imei': 'str',
@@ -51,6 +52,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'status': 'status',
         'access_infos': 'access_infos',
         '_property': 'property',
+        'custom_property': 'custom_property',
         'metadata': 'metadata',
         'phone_data_volume': 'phone_data_volume',
         'imei': 'imei',
@@ -63,7 +65,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         'update_time': 'update_time'
     }
 
-    def __init__(self, request_id=None, phone_name=None, server_id=None, phone_id=None, image_id=None, image_version=None, vnc_enable=None, phone_model_name=None, status=None, access_infos=None, _property=None, metadata=None, phone_data_volume=None, imei=None, type=None, traffic_type=None, volume_mode=None, availability_zone=None, has_encrypt=None, create_time=None, update_time=None):
+    def __init__(self, request_id=None, phone_name=None, server_id=None, phone_id=None, image_id=None, image_version=None, vnc_enable=None, phone_model_name=None, status=None, access_infos=None, _property=None, custom_property=None, metadata=None, phone_data_volume=None, imei=None, type=None, traffic_type=None, volume_mode=None, availability_zone=None, has_encrypt=None, create_time=None, update_time=None):
         r"""ShowCloudPhoneDetailResponse
 
         The model defined in huaweicloud sdk
@@ -90,6 +92,8 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         :type access_infos: list[:class:`huaweicloudsdkcph.v1.PhoneAccessInfo`]
         :param _property: 云手机属性字符串，不超过2048个字节。
         :type _property: str
+        :param custom_property: 云手机用户自定义属性键值对列表。
+        :type custom_property: dict(str, str)
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponseBodyMetadata`
         :param phone_data_volume: 
@@ -125,6 +129,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         self._status = None
         self._access_infos = None
         self.__property = None
+        self._custom_property = None
         self._metadata = None
         self._phone_data_volume = None
         self._imei = None
@@ -159,6 +164,8 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
             self.access_infos = access_infos
         if _property is not None:
             self._property = _property
+        if custom_property is not None:
+            self.custom_property = custom_property
         if metadata is not None:
             self.metadata = metadata
         if phone_data_volume is not None:
@@ -421,6 +428,28 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         :type _property: str
         """
         self.__property = _property
+
+    @property
+    def custom_property(self):
+        r"""Gets the custom_property of this ShowCloudPhoneDetailResponse.
+
+        云手机用户自定义属性键值对列表。
+
+        :return: The custom_property of this ShowCloudPhoneDetailResponse.
+        :rtype: dict(str, str)
+        """
+        return self._custom_property
+
+    @custom_property.setter
+    def custom_property(self, custom_property):
+        r"""Sets the custom_property of this ShowCloudPhoneDetailResponse.
+
+        云手机用户自定义属性键值对列表。
+
+        :param custom_property: The custom_property of this ShowCloudPhoneDetailResponse.
+        :type custom_property: dict(str, str)
+        """
+        self._custom_property = custom_property
 
     @property
     def metadata(self):

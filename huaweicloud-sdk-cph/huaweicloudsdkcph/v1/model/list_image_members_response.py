@@ -16,29 +16,36 @@ class ListImageMembersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'members': 'list[ListImageMembersView]'
+        'members': 'list[ListImageMembersView]',
+        'page_info': 'ListCloudPhoneImagesResponseBodyPageInfo'
     }
 
     attribute_map = {
-        'members': 'members'
+        'members': 'members',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, members=None):
+    def __init__(self, members=None, page_info=None):
         r"""ListImageMembersResponse
 
         The model defined in huaweicloud sdk
 
         :param members: 镜像成员详情
         :type members: list[:class:`huaweicloudsdkcph.v1.ListImageMembersView`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
         """
         
         super().__init__()
 
         self._members = None
+        self._page_info = None
         self.discriminator = None
 
         if members is not None:
             self.members = members
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def members(self):
@@ -61,6 +68,24 @@ class ListImageMembersResponse(SdkResponse):
         :type members: list[:class:`huaweicloudsdkcph.v1.ListImageMembersView`]
         """
         self._members = members
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListImageMembersResponse.
+
+        :return: The page_info of this ListImageMembersResponse.
+        :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListImageMembersResponse.
+
+        :param page_info: The page_info of this ListImageMembersResponse.
+        :type page_info: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

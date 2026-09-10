@@ -31,7 +31,7 @@ class ListAllCoreGatewayTagsRequest:
 
         :param offset: **参数解释：** 返回结果偏移量。 **约束限制：** 必须为非负整数。 **取值范围：** 0-100000。 **默认取值：** 0。 
         :type offset: int
-        :param limit: **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-1000。 **默认取值：** 1000。 
+        :param limit: **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-100。 **默认取值：** 100。 
         :type limit: int
         """
         
@@ -72,7 +72,7 @@ class ListAllCoreGatewayTagsRequest:
     def limit(self):
         r"""Gets the limit of this ListAllCoreGatewayTagsRequest.
 
-        **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-1000。 **默认取值：** 1000。 
+        **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-100。 **默认取值：** 100。 
 
         :return: The limit of this ListAllCoreGatewayTagsRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class ListAllCoreGatewayTagsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAllCoreGatewayTagsRequest.
 
-        **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-1000。 **默认取值：** 1000。 
+        **参数解释：** 查询记录数。 **约束限制：** 必须为正整数。 **取值范围：** 1-100。 **默认取值：** 100。 
 
         :param limit: The limit of this ListAllCoreGatewayTagsRequest.
         :type limit: int

@@ -29,7 +29,7 @@ class UpdateOpsEvaluatorTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param evaluator_id: **参数解释：** 评估器的唯一标识符（ID）。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :param evaluator_id: **参数解释：** 评估器的唯一标识符（ID）。可通过调用创建评估器接口获取，或通过查询评估器列表接口获取。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type evaluator_id: str
         :param body: Body of the UpdateOpsEvaluatorTagsRequest
         :type body: :class:`huaweicloudsdkagentarts.v1.UpdateOpsResourceTagsRequestBody`
@@ -49,7 +49,7 @@ class UpdateOpsEvaluatorTagsRequest:
     def evaluator_id(self):
         r"""Gets the evaluator_id of this UpdateOpsEvaluatorTagsRequest.
 
-        **参数解释：** 评估器的唯一标识符（ID）。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 评估器的唯一标识符（ID）。可通过调用创建评估器接口获取，或通过查询评估器列表接口获取。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The evaluator_id of this UpdateOpsEvaluatorTagsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateOpsEvaluatorTagsRequest:
     def evaluator_id(self, evaluator_id):
         r"""Sets the evaluator_id of this UpdateOpsEvaluatorTagsRequest.
 
-        **参数解释：** 评估器的唯一标识符（ID）。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        **参数解释：** 评估器的唯一标识符（ID）。可通过调用创建评估器接口获取，或通过查询评估器列表接口获取。用于在路径中精确定位需要进行标签更新操作的评估器实例。 **约束限制：** 长度为1到100个字符的字符串。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param evaluator_id: The evaluator_id of this UpdateOpsEvaluatorTagsRequest.
         :type evaluator_id: str

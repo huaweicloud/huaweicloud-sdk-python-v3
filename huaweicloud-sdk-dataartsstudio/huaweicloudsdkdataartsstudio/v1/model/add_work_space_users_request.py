@@ -29,7 +29,7 @@ class AddWorkSpaceUsersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workspace_id: 工作空间id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param body: Body of the AddWorkSpaceUsersRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigWorkspaceUserDto`
@@ -49,7 +49,7 @@ class AddWorkSpaceUsersRequest:
     def workspace_id(self):
         r"""Gets the workspace_id of this AddWorkSpaceUsersRequest.
 
-        工作空间id
+        工作空间ID
 
         :return: The workspace_id of this AddWorkSpaceUsersRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class AddWorkSpaceUsersRequest:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this AddWorkSpaceUsersRequest.
 
-        工作空间id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this AddWorkSpaceUsersRequest.
         :type workspace_id: str

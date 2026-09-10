@@ -35,7 +35,7 @@ class RunSyncCommandRequestBody:
 
         :param command: ADB命令，固定填写shell。
         :type command: str
-        :param content: 待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        :param content: 待执行的命令。  最大长度为2048字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）、问号（?）、等号（&#x3D;）、与（&amp;）、竖线（|）。
         :type content: str
         :param phone_ids: 云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
         :type phone_ids: list[str]
@@ -84,7 +84,7 @@ class RunSyncCommandRequestBody:
     def content(self):
         r"""Gets the content of this RunSyncCommandRequestBody.
 
-        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        待执行的命令。  最大长度为2048字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）、问号（?）、等号（=）、与（&）、竖线（|）。
 
         :return: The content of this RunSyncCommandRequestBody.
         :rtype: str
@@ -95,7 +95,7 @@ class RunSyncCommandRequestBody:
     def content(self, content):
         r"""Sets the content of this RunSyncCommandRequestBody.
 
-        待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
+        待执行的命令。  最大长度为2048字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）、问号（?）、等号（=）、与（&）、竖线（|）。
 
         :param content: The content of this RunSyncCommandRequestBody.
         :type content: str

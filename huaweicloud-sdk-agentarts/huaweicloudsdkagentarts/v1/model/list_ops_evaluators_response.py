@@ -16,47 +16,80 @@ class ListOpsEvaluatorsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'object'
+        'evaluators': 'list[ListOpsEvaluatorsResponseBodyEvaluators]',
+        'total': 'int'
     }
 
     attribute_map = {
-        'body': 'body'
+        'evaluators': 'evaluators',
+        'total': 'total'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, evaluators=None, total=None):
         r"""ListOpsEvaluatorsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: object
+        :param evaluators: **参数解释** 包含评估器元数据、配置信息及状态的详细信息列表。 **取值范围** 元素参考内部定义。 
+        :type evaluators: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorsResponseBodyEvaluators`]
+        :param total: **参数解释** 符合当前过滤条件的评估器总记录数，常用于分页。 **取值范围** 非负整数。 
+        :type total: int
         """
         
         super().__init__()
 
-        self._body = None
+        self._evaluators = None
+        self._total = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if evaluators is not None:
+            self.evaluators = evaluators
+        if total is not None:
+            self.total = total
 
     @property
-    def body(self):
-        r"""Gets the body of this ListOpsEvaluatorsResponse.
+    def evaluators(self):
+        r"""Gets the evaluators of this ListOpsEvaluatorsResponse.
 
-        :return: The body of this ListOpsEvaluatorsResponse.
-        :rtype: object
+        **参数解释** 包含评估器元数据、配置信息及状态的详细信息列表。 **取值范围** 元素参考内部定义。 
+
+        :return: The evaluators of this ListOpsEvaluatorsResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorsResponseBodyEvaluators`]
         """
-        return self._body
+        return self._evaluators
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this ListOpsEvaluatorsResponse.
+    @evaluators.setter
+    def evaluators(self, evaluators):
+        r"""Sets the evaluators of this ListOpsEvaluatorsResponse.
 
-        :param body: The body of this ListOpsEvaluatorsResponse.
-        :type body: object
+        **参数解释** 包含评估器元数据、配置信息及状态的详细信息列表。 **取值范围** 元素参考内部定义。 
+
+        :param evaluators: The evaluators of this ListOpsEvaluatorsResponse.
+        :type evaluators: list[:class:`huaweicloudsdkagentarts.v1.ListOpsEvaluatorsResponseBodyEvaluators`]
         """
-        self._body = body
+        self._evaluators = evaluators
+
+    @property
+    def total(self):
+        r"""Gets the total of this ListOpsEvaluatorsResponse.
+
+        **参数解释** 符合当前过滤条件的评估器总记录数，常用于分页。 **取值范围** 非负整数。 
+
+        :return: The total of this ListOpsEvaluatorsResponse.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this ListOpsEvaluatorsResponse.
+
+        **参数解释** 符合当前过滤条件的评估器总记录数，常用于分页。 **取值范围** 非负整数。 
+
+        :param total: The total of this ListOpsEvaluatorsResponse.
+        :type total: int
+        """
+        self._total = total
 
     def to_dict(self):
         import warnings

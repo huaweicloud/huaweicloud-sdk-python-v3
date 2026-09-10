@@ -36,8 +36,7 @@ class ShowSqlAutoSqlLimitingReq:
         self._node_ids = None
         self.discriminator = None
 
-        if node_ids is not None:
-            self.node_ids = node_ids
+        self.node_ids = node_ids
 
     @property
     def node_ids(self):

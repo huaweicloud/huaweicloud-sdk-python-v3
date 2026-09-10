@@ -18,6 +18,8 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         'sql_template': 'str',
         'database_name': 'str',
         'total_count': 'int',
+        'avg_execute_time': 'float',
+        'total_execute_time': 'float',
         'top_state_duration_list': 'list[ShowAnalysisSessionResultRespTopStateDuration]',
         'top_transaction_duration_list': 'list[ShowAnalysisSessionResultRespTopStateDuration]'
     }
@@ -26,11 +28,13 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         'sql_template': 'sql_template',
         'database_name': 'database_name',
         'total_count': 'total_count',
+        'avg_execute_time': 'avg_execute_time',
+        'total_execute_time': 'total_execute_time',
         'top_state_duration_list': 'top_state_duration_list',
         'top_transaction_duration_list': 'top_transaction_duration_list'
     }
 
-    def __init__(self, sql_template=None, database_name=None, total_count=None, top_state_duration_list=None, top_transaction_duration_list=None):
+    def __init__(self, sql_template=None, database_name=None, total_count=None, avg_execute_time=None, total_execute_time=None, top_state_duration_list=None, top_transaction_duration_list=None):
         r"""ShowAnalysisSessionResultRespSqlTemplates
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         :type database_name: str
         :param total_count: 总执行次数
         :type total_count: int
+        :param avg_execute_time: 平均执行耗时（秒）
+        :type avg_execute_time: float
+        :param total_execute_time: 总执行耗时（秒）
+        :type total_execute_time: float
         :param top_state_duration_list: 当前模板下状态持续时间长TOP会话列表
         :type top_state_duration_list: list[:class:`huaweicloudsdkdas.v3.ShowAnalysisSessionResultRespTopStateDuration`]
         :param top_transaction_duration_list: 当前模板下事务持续时间长TOP会话列表
@@ -52,6 +60,8 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         self._sql_template = None
         self._database_name = None
         self._total_count = None
+        self._avg_execute_time = None
+        self._total_execute_time = None
         self._top_state_duration_list = None
         self._top_transaction_duration_list = None
         self.discriminator = None
@@ -59,6 +69,8 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         self.sql_template = sql_template
         self.database_name = database_name
         self.total_count = total_count
+        self.avg_execute_time = avg_execute_time
+        self.total_execute_time = total_execute_time
         self.top_state_duration_list = top_state_duration_list
         self.top_transaction_duration_list = top_transaction_duration_list
 
@@ -127,6 +139,50 @@ class ShowAnalysisSessionResultRespSqlTemplates:
         :type total_count: int
         """
         self._total_count = total_count
+
+    @property
+    def avg_execute_time(self):
+        r"""Gets the avg_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+
+        平均执行耗时（秒）
+
+        :return: The avg_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+        :rtype: float
+        """
+        return self._avg_execute_time
+
+    @avg_execute_time.setter
+    def avg_execute_time(self, avg_execute_time):
+        r"""Sets the avg_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+
+        平均执行耗时（秒）
+
+        :param avg_execute_time: The avg_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+        :type avg_execute_time: float
+        """
+        self._avg_execute_time = avg_execute_time
+
+    @property
+    def total_execute_time(self):
+        r"""Gets the total_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+
+        总执行耗时（秒）
+
+        :return: The total_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+        :rtype: float
+        """
+        return self._total_execute_time
+
+    @total_execute_time.setter
+    def total_execute_time(self, total_execute_time):
+        r"""Sets the total_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+
+        总执行耗时（秒）
+
+        :param total_execute_time: The total_execute_time of this ShowAnalysisSessionResultRespSqlTemplates.
+        :type total_execute_time: float
+        """
+        self._total_execute_time = total_execute_time
 
     @property
     def top_state_duration_list(self):

@@ -15,6 +15,7 @@ class TbPosInfo:
     sensitive_list = []
 
     openapi_types = {
+        'schema_name': 'str',
         'origin_name': 'str',
         'name': 'str',
         'start': 'int',
@@ -22,17 +23,20 @@ class TbPosInfo:
     }
 
     attribute_map = {
+        'schema_name': 'schema_name',
         'origin_name': 'origin_name',
         'name': 'name',
         'start': 'start',
         'end': 'end'
     }
 
-    def __init__(self, origin_name=None, name=None, start=None, end=None):
+    def __init__(self, schema_name=None, origin_name=None, name=None, start=None, end=None):
         r"""TbPosInfo
 
         The model defined in huaweicloud sdk
 
+        :param schema_name: Schema名称
+        :type schema_name: str
         :param origin_name: 原始名称
         :type origin_name: str
         :param name: 名称
@@ -45,12 +49,15 @@ class TbPosInfo:
         
         
 
+        self._schema_name = None
         self._origin_name = None
         self._name = None
         self._start = None
         self._end = None
         self.discriminator = None
 
+        if schema_name is not None:
+            self.schema_name = schema_name
         if origin_name is not None:
             self.origin_name = origin_name
         if name is not None:
@@ -59,6 +66,28 @@ class TbPosInfo:
             self.start = start
         if end is not None:
             self.end = end
+
+    @property
+    def schema_name(self):
+        r"""Gets the schema_name of this TbPosInfo.
+
+        Schema名称
+
+        :return: The schema_name of this TbPosInfo.
+        :rtype: str
+        """
+        return self._schema_name
+
+    @schema_name.setter
+    def schema_name(self, schema_name):
+        r"""Sets the schema_name of this TbPosInfo.
+
+        Schema名称
+
+        :param schema_name: The schema_name of this TbPosInfo.
+        :type schema_name: str
+        """
+        self._schema_name = schema_name
 
     @property
     def origin_name(self):

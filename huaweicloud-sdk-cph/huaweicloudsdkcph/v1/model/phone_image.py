@@ -21,7 +21,8 @@ class PhoneImage:
         'os_name': 'str',
         'image_label': 'str',
         'image_id': 'str',
-        'is_support_encrypt': 'bool'
+        'is_support_encrypt': 'bool',
+        'receive_status': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class PhoneImage:
         'os_name': 'os_name',
         'image_label': 'image_label',
         'image_id': 'image_id',
-        'is_support_encrypt': 'is_support_encrypt'
+        'is_support_encrypt': 'is_support_encrypt',
+        'receive_status': 'receive_status'
     }
 
-    def __init__(self, image_name=None, os_type=None, is_public=None, os_name=None, image_label=None, image_id=None, is_support_encrypt=None):
+    def __init__(self, image_name=None, os_type=None, is_public=None, os_name=None, image_label=None, image_id=None, is_support_encrypt=None, receive_status=None):
         r"""PhoneImage
 
         The model defined in huaweicloud sdk
@@ -51,8 +53,10 @@ class PhoneImage:
         :type image_label: str
         :param image_id: 手机镜像唯一标识ID，不超过32个字节。
         :type image_id: str
-        :param is_support_encrypt: 当前镜像是否支持文件级加密
+        :param is_support_encrypt: 当前镜像是否支持文件级加密。
         :type is_support_encrypt: bool
+        :param receive_status: 共享镜像接收状态（0: 待接收，1: 已接收，2: 已拒绝）
+        :type receive_status: int
         """
         
         
@@ -64,6 +68,7 @@ class PhoneImage:
         self._image_label = None
         self._image_id = None
         self._is_support_encrypt = None
+        self._receive_status = None
         self.discriminator = None
 
         if image_name is not None:
@@ -80,6 +85,8 @@ class PhoneImage:
             self.image_id = image_id
         if is_support_encrypt is not None:
             self.is_support_encrypt = is_support_encrypt
+        if receive_status is not None:
+            self.receive_status = receive_status
 
     @property
     def image_name(self):
@@ -217,7 +224,7 @@ class PhoneImage:
     def is_support_encrypt(self):
         r"""Gets the is_support_encrypt of this PhoneImage.
 
-        当前镜像是否支持文件级加密
+        当前镜像是否支持文件级加密。
 
         :return: The is_support_encrypt of this PhoneImage.
         :rtype: bool
@@ -228,12 +235,34 @@ class PhoneImage:
     def is_support_encrypt(self, is_support_encrypt):
         r"""Sets the is_support_encrypt of this PhoneImage.
 
-        当前镜像是否支持文件级加密
+        当前镜像是否支持文件级加密。
 
         :param is_support_encrypt: The is_support_encrypt of this PhoneImage.
         :type is_support_encrypt: bool
         """
         self._is_support_encrypt = is_support_encrypt
+
+    @property
+    def receive_status(self):
+        r"""Gets the receive_status of this PhoneImage.
+
+        共享镜像接收状态（0: 待接收，1: 已接收，2: 已拒绝）
+
+        :return: The receive_status of this PhoneImage.
+        :rtype: int
+        """
+        return self._receive_status
+
+    @receive_status.setter
+    def receive_status(self, receive_status):
+        r"""Sets the receive_status of this PhoneImage.
+
+        共享镜像接收状态（0: 待接收，1: 已接收，2: 已拒绝）
+
+        :param receive_status: The receive_status of this PhoneImage.
+        :type receive_status: int
+        """
+        self._receive_status = receive_status
 
     def to_dict(self):
         result = {}

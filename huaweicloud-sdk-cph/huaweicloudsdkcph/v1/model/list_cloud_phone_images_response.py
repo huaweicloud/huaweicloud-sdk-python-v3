@@ -17,15 +17,17 @@ class ListCloudPhoneImagesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'phone_images': 'list[PhoneImage]'
+        'phone_images': 'list[PhoneImage]',
+        'page_info': 'ListCloudPhoneImagesResponseBodyPageInfo'
     }
 
     attribute_map = {
         'request_id': 'request_id',
-        'phone_images': 'phone_images'
+        'phone_images': 'phone_images',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, phone_images=None):
+    def __init__(self, request_id=None, phone_images=None, page_info=None):
         r"""ListCloudPhoneImagesResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListCloudPhoneImagesResponse(SdkResponse):
         :type request_id: str
         :param phone_images: 手机镜像信息。
         :type phone_images: list[:class:`huaweicloudsdkcph.v1.PhoneImage`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
         """
         
         super().__init__()
 
         self._request_id = None
         self._phone_images = None
+        self._page_info = None
         self.discriminator = None
 
         if request_id is not None:
             self.request_id = request_id
         if phone_images is not None:
             self.phone_images = phone_images
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def request_id(self):
@@ -90,6 +97,24 @@ class ListCloudPhoneImagesResponse(SdkResponse):
         :type phone_images: list[:class:`huaweicloudsdkcph.v1.PhoneImage`]
         """
         self._phone_images = phone_images
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListCloudPhoneImagesResponse.
+
+        :return: The page_info of this ListCloudPhoneImagesResponse.
+        :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListCloudPhoneImagesResponse.
+
+        :param page_info: The page_info of this ListCloudPhoneImagesResponse.
+        :type page_info: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponseBodyPageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

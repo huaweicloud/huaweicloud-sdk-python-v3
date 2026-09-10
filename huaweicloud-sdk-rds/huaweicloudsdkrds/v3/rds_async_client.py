@@ -1251,6 +1251,73 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def collect_instance_statistic_async(self, request):
+        r"""总览页面实例统计
+
+        总览页面实例统计
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectInstanceStatistic
+        :type request: :class:`huaweicloudsdkrds.v3.CollectInstanceStatisticRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CollectInstanceStatisticResponse`
+        """
+        http_info = self._collect_instance_statistic_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_instance_statistic_async_invoker(self, request):
+        http_info = self._collect_instance_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _collect_instance_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectInstanceStatisticResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def compare_configuration_async(self, request):
         r"""比较参数模板
 
@@ -3657,6 +3724,75 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_compute_resource_async(self, request):
+        r"""获取资源包详情
+
+        获取资源包详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListComputeResource
+        :type request: :class:`huaweicloudsdkrds.v3.ListComputeResourceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListComputeResourceResponse`
+        """
+        http_info = self._list_compute_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_compute_resource_async_invoker(self, request):
+        http_info = self._list_compute_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_compute_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/resource-package",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComputeResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_configuration_apply_histories_async(self, request):
         r"""查询参数组应用历史
 
@@ -5332,6 +5468,81 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_instances_resource_metrics_async(self, request):
+        r"""查询监控大盘列表
+
+        查询监控大盘列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstancesResourceMetrics
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesResourceMetricsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesResourceMetricsResponse`
+        """
+        http_info = self._list_instances_resource_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_resource_metrics_async_invoker(self, request):
+        http_info = self._list_instances_resource_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_resource_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/resource-monitoring",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResourceMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+        if 'search_field' in local_var_params:
+            query_params.append(('search_field', local_var_params['search_field']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instances_support_fast_restore_async(self, request):
         r"""获取实例是否能使用极速恢复
 
@@ -5886,6 +6097,73 @@ class RdsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_operate_record_async(self, request):
+        r"""查询指定实例的操作记录
+
+        查询指定实例的操作记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOperateRecord
+        :type request: :class:`huaweicloudsdkrds.v3.ListOperateRecordRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListOperateRecordResponse`
+        """
+        http_info = self._list_operate_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_operate_record_async_invoker(self, request):
+        http_info = self._list_operate_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_operate_record_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/operate-record",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOperateRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -12110,6 +12388,71 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def show_risk_info_async(self, request):
+        r"""查询指定实例的风险版本信息
+
+        查询指定实例的风险版本信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRiskInfo
+        :type request: :class:`huaweicloudsdkrds.v3.ShowRiskInfoRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowRiskInfoResponse`
+        """
+        http_info = self._show_risk_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_risk_info_async_invoker(self, request):
+        http_info = self._show_risk_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_risk_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/show-risk-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRiskInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_second_level_monitoring_async(self, request):
         r"""查询秒级监控策略
 
@@ -15778,6 +16121,142 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def get_instances_ops_resource_usage_async(self, request):
+        r"""查询资源利用率
+
+        查询资源利用率
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetInstancesOpsResourceUsage
+        :type request: :class:`huaweicloudsdkrds.v3.GetInstancesOpsResourceUsageRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.GetInstancesOpsResourceUsageResponse`
+        """
+        http_info = self._get_instances_ops_resource_usage_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_instances_ops_resource_usage_async_invoker(self, request):
+        http_info = self._get_instances_ops_resource_usage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_instances_ops_resource_usage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops/resource-usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetInstancesOpsResourceUsageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def query_auto_sql_limiting_async(self, request):
+        r"""查询自治限流规则
+
+        查询自治限流规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for QueryAutoSqlLimiting
+        :type request: :class:`huaweicloudsdkrds.v3.QueryAutoSqlLimitingRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.QueryAutoSqlLimitingResponse`
+        """
+        http_info = self._query_auto_sql_limiting_http_info(request)
+        return self._call_api(**http_info)
+
+    def query_auto_sql_limiting_async_invoker(self, request):
+        http_info = self._query_auto_sql_limiting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _query_auto_sql_limiting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops/auto-sql-limiting",
+            "request_type": request.__class__.__name__,
+            "response_type": "QueryAutoSqlLimitingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def rotate_audit_log_async(self, request):
         r"""触发审计日志轮转
 
@@ -15826,6 +16305,73 @@ class RdsAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_agency_policy_async(self, request):
+        r"""查询可收缩委托策略
+
+        查询可收缩委托策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAgencyPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ShowAgencyPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowAgencyPolicyResponse`
+        """
+        http_info = self._show_agency_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_policy_async_invoker(self, request):
+        http_info = self._show_agency_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_agency_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/agency/{agency_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_name' in local_var_params:
+            path_params['agency_name'] = local_var_params['agency_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -18555,6 +19101,75 @@ class RdsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_available_vpcs_async(self, request):
+        r"""根据实例ID和管理网子网信息，返回可用的数据子网
+
+        根据实例ID和管理网子网信息，返回可用的数据子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetAvailableVpcs
+        :type request: :class:`huaweicloudsdkrds.v3.GetAvailableVpcsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.GetAvailableVpcsResponse`
+        """
+        http_info = self._get_available_vpcs_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_available_vpcs_async_invoker(self, request):
+        http_info = self._get_available_vpcs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_available_vpcs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/available-vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetAvailableVpcsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'vpc_name' in local_var_params:
+            query_params.append(('vpc_name', local_var_params['vpc_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-TRACE-ID", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

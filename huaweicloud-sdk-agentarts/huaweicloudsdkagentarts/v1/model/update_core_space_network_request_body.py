@@ -15,76 +15,47 @@ class UpdateCoreSpaceNetworkRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'public_access_enable': 'bool',
-        'private_access_config': 'CoreSpacePrivateNetworkRequestBody'
+        'body': 'CreateCoreSpaceNetworkRequestBody'
     }
 
     attribute_map = {
-        'public_access_enable': 'public_access_enable',
-        'private_access_config': 'private_access_config'
+        'body': 'body'
     }
 
-    def __init__(self, public_access_enable=None, private_access_config=None):
+    def __init__(self, body=None):
         r"""UpdateCoreSpaceNetworkRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param public_access_enable: **参数解释：** 是否开启公网访问。 **约束限制：** 不涉及。 **取值范围：** - true: 开启公网访问 - false: 关闭公网访问 **默认取值：** false 
-        :type public_access_enable: bool
-        :param private_access_config: 
-        :type private_access_config: :class:`huaweicloudsdkagentarts.v1.CoreSpacePrivateNetworkRequestBody`
+        :param body: 
+        :type body: :class:`huaweicloudsdkagentarts.v1.CreateCoreSpaceNetworkRequestBody`
         """
         
         
 
-        self._public_access_enable = None
-        self._private_access_config = None
+        self._body = None
         self.discriminator = None
 
-        if public_access_enable is not None:
-            self.public_access_enable = public_access_enable
-        if private_access_config is not None:
-            self.private_access_config = private_access_config
+        if body is not None:
+            self.body = body
 
     @property
-    def public_access_enable(self):
-        r"""Gets the public_access_enable of this UpdateCoreSpaceNetworkRequestBody.
+    def body(self):
+        r"""Gets the body of this UpdateCoreSpaceNetworkRequestBody.
 
-        **参数解释：** 是否开启公网访问。 **约束限制：** 不涉及。 **取值范围：** - true: 开启公网访问 - false: 关闭公网访问 **默认取值：** false 
-
-        :return: The public_access_enable of this UpdateCoreSpaceNetworkRequestBody.
-        :rtype: bool
+        :return: The body of this UpdateCoreSpaceNetworkRequestBody.
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateCoreSpaceNetworkRequestBody`
         """
-        return self._public_access_enable
+        return self._body
 
-    @public_access_enable.setter
-    def public_access_enable(self, public_access_enable):
-        r"""Sets the public_access_enable of this UpdateCoreSpaceNetworkRequestBody.
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this UpdateCoreSpaceNetworkRequestBody.
 
-        **参数解释：** 是否开启公网访问。 **约束限制：** 不涉及。 **取值范围：** - true: 开启公网访问 - false: 关闭公网访问 **默认取值：** false 
-
-        :param public_access_enable: The public_access_enable of this UpdateCoreSpaceNetworkRequestBody.
-        :type public_access_enable: bool
+        :param body: The body of this UpdateCoreSpaceNetworkRequestBody.
+        :type body: :class:`huaweicloudsdkagentarts.v1.CreateCoreSpaceNetworkRequestBody`
         """
-        self._public_access_enable = public_access_enable
-
-    @property
-    def private_access_config(self):
-        r"""Gets the private_access_config of this UpdateCoreSpaceNetworkRequestBody.
-
-        :return: The private_access_config of this UpdateCoreSpaceNetworkRequestBody.
-        :rtype: :class:`huaweicloudsdkagentarts.v1.CoreSpacePrivateNetworkRequestBody`
-        """
-        return self._private_access_config
-
-    @private_access_config.setter
-    def private_access_config(self, private_access_config):
-        r"""Sets the private_access_config of this UpdateCoreSpaceNetworkRequestBody.
-
-        :param private_access_config: The private_access_config of this UpdateCoreSpaceNetworkRequestBody.
-        :type private_access_config: :class:`huaweicloudsdkagentarts.v1.CoreSpacePrivateNetworkRequestBody`
-        """
-        self._private_access_config = private_access_config
+        self._body = body
 
     def to_dict(self):
         result = {}

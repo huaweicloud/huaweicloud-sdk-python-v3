@@ -15,36 +15,30 @@ class ShowOpsAgentMetricTopNRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'group_by': 'list[str]',
         'start_time': 'str',
         'end_time': 'str',
         'metric_name': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
         'user_id': 'str',
-        'filter': 'list[MetricFilterParam]',
-        'top_number': 'int'
+        'filter': 'list[MetricFilterParam]'
     }
 
     attribute_map = {
-        'group_by': 'group_by',
         'start_time': 'start_time',
         'end_time': 'end_time',
         'metric_name': 'metric_name',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
         'user_id': 'user_id',
-        'filter': 'filter',
-        'top_number': 'top_number'
+        'filter': 'filter'
     }
 
-    def __init__(self, group_by=None, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None, top_number=None):
+    def __init__(self, start_time=None, end_time=None, metric_name=None, resource_id=None, resource_type=None, user_id=None, filter=None):
         r"""ShowOpsAgentMetricTopNRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param group_by: 分组名
-        :type group_by: list[str]
         :param start_time: 开始时间
         :type start_time: str
         :param end_time: 结束时间
@@ -59,13 +53,10 @@ class ShowOpsAgentMetricTopNRequestBody:
         :type user_id: str
         :param filter: 过滤条件
         :type filter: list[:class:`huaweicloudsdkagentarts.v1.MetricFilterParam`]
-        :param top_number: 待返回top数量
-        :type top_number: int
         """
         
         
 
-        self._group_by = None
         self._start_time = None
         self._end_time = None
         self._metric_name = None
@@ -73,11 +64,8 @@ class ShowOpsAgentMetricTopNRequestBody:
         self._resource_type = None
         self._user_id = None
         self._filter = None
-        self._top_number = None
         self.discriminator = None
 
-        if group_by is not None:
-            self.group_by = group_by
         self.start_time = start_time
         self.end_time = end_time
         self.metric_name = metric_name
@@ -89,30 +77,6 @@ class ShowOpsAgentMetricTopNRequestBody:
             self.user_id = user_id
         if filter is not None:
             self.filter = filter
-        if top_number is not None:
-            self.top_number = top_number
-
-    @property
-    def group_by(self):
-        r"""Gets the group_by of this ShowOpsAgentMetricTopNRequestBody.
-
-        分组名
-
-        :return: The group_by of this ShowOpsAgentMetricTopNRequestBody.
-        :rtype: list[str]
-        """
-        return self._group_by
-
-    @group_by.setter
-    def group_by(self, group_by):
-        r"""Sets the group_by of this ShowOpsAgentMetricTopNRequestBody.
-
-        分组名
-
-        :param group_by: The group_by of this ShowOpsAgentMetricTopNRequestBody.
-        :type group_by: list[str]
-        """
-        self._group_by = group_by
 
     @property
     def start_time(self):
@@ -267,28 +231,6 @@ class ShowOpsAgentMetricTopNRequestBody:
         :type filter: list[:class:`huaweicloudsdkagentarts.v1.MetricFilterParam`]
         """
         self._filter = filter
-
-    @property
-    def top_number(self):
-        r"""Gets the top_number of this ShowOpsAgentMetricTopNRequestBody.
-
-        待返回top数量
-
-        :return: The top_number of this ShowOpsAgentMetricTopNRequestBody.
-        :rtype: int
-        """
-        return self._top_number
-
-    @top_number.setter
-    def top_number(self, top_number):
-        r"""Sets the top_number of this ShowOpsAgentMetricTopNRequestBody.
-
-        待返回top数量
-
-        :param top_number: The top_number of this ShowOpsAgentMetricTopNRequestBody.
-        :type top_number: int
-        """
-        self._top_number = top_number
 
     def to_dict(self):
         result = {}

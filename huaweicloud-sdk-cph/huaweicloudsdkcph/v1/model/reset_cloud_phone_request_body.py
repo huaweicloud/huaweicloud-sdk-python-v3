@@ -16,7 +16,7 @@ class ResetCloudPhoneRequestBody:
 
     openapi_types = {
         'image_id': 'str',
-        'phones': 'list[PhoneProperty]'
+        'phones': 'list[ResetPhoneProperty]'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ResetCloudPhoneRequestBody:
         :param image_id: 云手机镜像。
         :type image_id: str
         :param phones: 云手机列表。
-        :type phones: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]
+        :type phones: list[:class:`huaweicloudsdkcph.v1.ResetPhoneProperty`]
         """
         
         
@@ -74,7 +74,7 @@ class ResetCloudPhoneRequestBody:
         云手机列表。
 
         :return: The phones of this ResetCloudPhoneRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]
+        :rtype: list[:class:`huaweicloudsdkcph.v1.ResetPhoneProperty`]
         """
         return self._phones
 
@@ -85,7 +85,7 @@ class ResetCloudPhoneRequestBody:
         云手机列表。
 
         :param phones: The phones of this ResetCloudPhoneRequestBody.
-        :type phones: list[:class:`huaweicloudsdkcph.v1.PhoneProperty`]
+        :type phones: list[:class:`huaweicloudsdkcph.v1.ResetPhoneProperty`]
         """
         self._phones = phones
 

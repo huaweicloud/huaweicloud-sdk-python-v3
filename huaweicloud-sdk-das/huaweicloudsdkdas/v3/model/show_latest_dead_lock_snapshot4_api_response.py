@@ -18,7 +18,7 @@ class ShowLatestDeadLockSnapshot4ApiResponse(SdkResponse):
     openapi_types = {
         'find_lock': 'bool',
         'happen_time': 'int',
-        'mysql_dead_lock': 'MySQLDeadLock'
+        'mysql_dead_lock': 'MySQLLatestDeadLock'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ShowLatestDeadLockSnapshot4ApiResponse(SdkResponse):
         :param happen_time: 发生时间（ms）
         :type happen_time: int
         :param mysql_dead_lock: 
-        :type mysql_dead_lock: :class:`huaweicloudsdkdas.v3.MySQLDeadLock`
+        :type mysql_dead_lock: :class:`huaweicloudsdkdas.v3.MySQLLatestDeadLock`
         """
         
         super().__init__()
@@ -103,7 +103,7 @@ class ShowLatestDeadLockSnapshot4ApiResponse(SdkResponse):
         r"""Gets the mysql_dead_lock of this ShowLatestDeadLockSnapshot4ApiResponse.
 
         :return: The mysql_dead_lock of this ShowLatestDeadLockSnapshot4ApiResponse.
-        :rtype: :class:`huaweicloudsdkdas.v3.MySQLDeadLock`
+        :rtype: :class:`huaweicloudsdkdas.v3.MySQLLatestDeadLock`
         """
         return self._mysql_dead_lock
 
@@ -112,7 +112,7 @@ class ShowLatestDeadLockSnapshot4ApiResponse(SdkResponse):
         r"""Sets the mysql_dead_lock of this ShowLatestDeadLockSnapshot4ApiResponse.
 
         :param mysql_dead_lock: The mysql_dead_lock of this ShowLatestDeadLockSnapshot4ApiResponse.
-        :type mysql_dead_lock: :class:`huaweicloudsdkdas.v3.MySQLDeadLock`
+        :type mysql_dead_lock: :class:`huaweicloudsdkdas.v3.MySQLLatestDeadLock`
         """
         self._mysql_dead_lock = mysql_dead_lock
 

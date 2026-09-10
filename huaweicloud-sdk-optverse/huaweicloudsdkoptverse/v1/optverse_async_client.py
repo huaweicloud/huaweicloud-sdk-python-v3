@@ -33,6 +33,1780 @@ class OptVerseAsyncClient(Client):
 
         return client_builder
 
+    def delete_model_asset_async(self, request):
+        r"""删除模型资产
+
+        删除模型资产。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteModelAsset
+        :type request: :class:`huaweicloudsdkoptverse.v1.DeleteModelAssetRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.DeleteModelAssetResponse`
+        """
+        http_info = self._delete_model_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_model_asset_async_invoker(self, request):
+        http_info = self._delete_model_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_model_asset_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset-manager/model-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteModelAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_model_assets_async(self, request):
+        r"""获取模型资产列表
+
+        获取模型资产列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListModelAssets
+        :type request: :class:`huaweicloudsdkoptverse.v1.ListModelAssetsRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ListModelAssetsResponse`
+        """
+        http_info = self._list_model_assets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_model_assets_async_invoker(self, request):
+        http_info = self._list_model_assets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_model_assets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset-manager/model-assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModelAssetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'asset_code' in local_var_params:
+            query_params.append(('asset_code', local_var_params['asset_code']))
+        if 'asset_source' in local_var_params:
+            query_params.append(('asset_source', local_var_params['asset_source']))
+        if 'asset_type' in local_var_params:
+            query_params.append(('asset_type', local_var_params['asset_type']))
+        if 'sub_asset_type' in local_var_params:
+            query_params.append(('sub_asset_type', local_var_params['sub_asset_type']))
+        if 'chat_id' in local_var_params:
+            query_params.append(('chat_id', local_var_params['chat_id']))
+        if 'asset_actions' in local_var_params:
+            query_params.append(('asset_actions', local_var_params['asset_actions']))
+            collection_formats['asset_actions'] = 'csv'
+        if 'asset_name' in local_var_params:
+            query_params.append(('asset_name', local_var_params['asset_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_model_asset_detail_async(self, request):
+        r"""查询资产详情
+
+        查询资产详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowModelAssetDetail
+        :type request: :class:`huaweicloudsdkoptverse.v1.ShowModelAssetDetailRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowModelAssetDetailResponse`
+        """
+        http_info = self._show_model_asset_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_model_asset_detail_async_invoker(self, request):
+        http_info = self._show_model_asset_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_model_asset_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset-manager/model-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModelAssetDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_model_asset_async(self, request):
+        r"""编辑模型资产
+
+        编辑模型资产描述。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateModelAsset
+        :type request: :class:`huaweicloudsdkoptverse.v1.UpdateModelAssetRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.UpdateModelAssetResponse`
+        """
+        http_info = self._update_model_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_model_asset_async_invoker(self, request):
+        http_info = self._update_model_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_model_asset_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asset-manager/model-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModelAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'asset_id' in local_var_params:
+            path_params['asset_id'] = local_var_params['asset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def cancel_chat_async(self, request):
+        r"""取消对话
+
+        取消对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.CancelChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.CancelChatResponse`
+        """
+        http_info = self._cancel_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_chat_async_invoker(self, request):
+        http_info = self._cancel_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_chat_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_chat_route_id' in local_var_params:
+            header_params['X-Chat-Route-Id'] = local_var_params['x_chat_route_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_artifacts_async(self, request):
+        r"""产物中心
+
+        创建产物中心产物。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateArtifacts
+        :type request: :class:`huaweicloudsdkoptverse.v1.CreateArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.CreateArtifactsResponse`
+        """
+        http_info = self._create_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_artifacts_async_invoker(self, request):
+        http_info = self._create_artifacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_artifacts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_chat_async(self, request):
+        r"""删除对话
+
+        删除对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.DeleteChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.DeleteChatResponse`
+        """
+        http_info = self._delete_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_chat_async_invoker(self, request):
+        http_info = self._delete_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_chat_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_file_async(self, request):
+        r"""下载文件
+
+        下载文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadFile
+        :type request: :class:`huaweicloudsdkoptverse.v1.DownloadFileRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.DownloadFileResponse`
+        """
+        http_info = self._download_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_file_async_invoker(self, request):
+        http_info = self._download_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/file/{filename}/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+        if 'filename' in local_var_params:
+            path_params['filename'] = local_var_params['filename']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_need_content' in local_var_params:
+            header_params['X-Need-Content'] = local_var_params['x_need_content']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_artifacts_async(self, request):
+        r"""获取产物中心列表
+
+        获取产物中心列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListArtifacts
+        :type request: :class:`huaweicloudsdkoptverse.v1.ListArtifactsRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ListArtifactsResponse`
+        """
+        http_info = self._list_artifacts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_artifacts_async_invoker(self, request):
+        http_info = self._list_artifacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_artifacts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/artifacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListArtifactsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_chat_async(self, request):
+        r"""获取对话列表
+
+        获取对话列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.ListChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ListChatResponse`
+        """
+        http_info = self._list_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_chat_async_invoker(self, request):
+        http_info = self._list_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_chat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'title' in local_var_params:
+            query_params.append(('title', local_var_params['title']))
+        if 'agent_type' in local_var_params:
+            query_params.append(('agent_type', local_var_params['agent_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def publish_chat_async(self, request):
+        r"""发布助手
+
+        发布助手。
+        发布前会校验当前助手最后一个阶段的文档是否已确认，确认后才可发布。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PublishChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.PublishChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.PublishChatResponse`
+        """
+        http_info = self._publish_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_chat_async_invoker(self, request):
+        http_info = self._publish_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_chat_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_chat_async(self, request):
+        r"""获取对话详情
+
+        获取对话详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.ShowChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowChatResponse`
+        """
+        http_info = self._show_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_chat_async_invoker(self, request):
+        http_info = self._show_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_chat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Chat-Route-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_chat_async(self, request):
+        r"""更新对话
+
+        更新对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateChat
+        :type request: :class:`huaweicloudsdkoptverse.v1.UpdateChatRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.UpdateChatResponse`
+        """
+        http_info = self._update_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_chat_async_invoker(self, request):
+        http_info = self._update_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_chat_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_file_async(self, request):
+        r"""上传文件
+
+        上传文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadFile
+        :type request: :class:`huaweicloudsdkoptverse.v1.UploadFileRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.UploadFileResponse`
+        """
+        http_info = self._upload_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_file_async_invoker(self, request):
+        http_info = self._upload_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/chats/file/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_chat_route_id' in local_var_params:
+            header_params['X-Chat-Route-Id'] = local_var_params['x_chat_route_id']
+
+        form_params = {}
+        if 'chat_id' in local_var_params:
+            form_params['chat_id'] = local_var_params['chat_id']
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'agent_type' in local_var_params:
+            form_params['agent_type'] = local_var_params['agent_type']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_model_service_async(self, request):
+        r"""创建模型服务
+
+        创建模型服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateModelService
+        :type request: :class:`huaweicloudsdkoptverse.v1.CreateModelServiceRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.CreateModelServiceResponse`
+        """
+        http_info = self._create_model_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_model_service_async_invoker(self, request):
+        http_info = self._create_model_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_model_service_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-service/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateModelServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_model_service_task_async(self, request):
+        r"""调用模型服务创建任务
+
+        调用模型服务创建任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateModelServiceTask
+        :type request: :class:`huaweicloudsdkoptverse.v1.CreateModelServiceTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.CreateModelServiceTaskResponse`
+        """
+        http_info = self._create_model_service_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_model_service_task_async_invoker(self, request):
+        http_info = self._create_model_service_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_model_service_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateModelServiceTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_model_service_async(self, request):
+        r"""删除模型服务
+
+        删除模型服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteModelService
+        :type request: :class:`huaweicloudsdkoptverse.v1.DeleteModelServiceRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.DeleteModelServiceResponse`
+        """
+        http_info = self._delete_model_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_model_service_async_invoker(self, request):
+        http_info = self._delete_model_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_model_service_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteModelServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_model_service_tasks_async(self, request):
+        r"""获取模型服务任务列表
+
+        获取模型服务任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListModelServiceTasks
+        :type request: :class:`huaweicloudsdkoptverse.v1.ListModelServiceTasksRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ListModelServiceTasksResponse`
+        """
+        http_info = self._list_model_service_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_model_service_tasks_async_invoker(self, request):
+        http_info = self._list_model_service_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_model_service_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModelServiceTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_model_service_detail_async(self, request):
+        r"""获取模型服务详情
+
+        获取模型服务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowModelServiceDetail
+        :type request: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceDetailRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceDetailResponse`
+        """
+        http_info = self._show_model_service_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_model_service_detail_async_invoker(self, request):
+        http_info = self._show_model_service_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_model_service_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModelServiceDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_model_service_list_async(self, request):
+        r"""获取模型服务列表
+
+        获取模型服务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowModelServiceList
+        :type request: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceListRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceListResponse`
+        """
+        http_info = self._show_model_service_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_model_service_list_async_invoker(self, request):
+        http_info = self._show_model_service_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_model_service_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/model-service/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModelServiceListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'infer_type' in local_var_params:
+            query_params.append(('infer_type', local_var_params['infer_type']))
+        if 'asset_id' in local_var_params:
+            query_params.append(('asset_id', local_var_params['asset_id']))
+        if 'asset_type' in local_var_params:
+            query_params.append(('asset_type', local_var_params['asset_type']))
+        if 'asset_sub_type' in local_var_params:
+            query_params.append(('asset_sub_type', local_var_params['asset_sub_type']))
+        if 'chip_type' in local_var_params:
+            query_params.append(('chip_type', local_var_params['chip_type']))
+        if 'platform' in local_var_params:
+            query_params.append(('platform', local_var_params['platform']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'use_type' in local_var_params:
+            query_params.append(('use_type', local_var_params['use_type']))
+        if 'model_name' in local_var_params:
+            query_params.append(('model_name', local_var_params['model_name']))
+        if 'service_name' in local_var_params:
+            query_params.append(('service_name', local_var_params['service_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_model_service_task_async(self, request):
+        r"""获取模型服务任务详情
+
+        获取模型服务任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowModelServiceTask
+        :type request: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceTaskRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.ShowModelServiceTaskResponse`
+        """
+        http_info = self._show_model_service_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_model_service_task_async_invoker(self, request):
+        http_info = self._show_model_service_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_model_service_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModelServiceTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_model_service_async(self, request):
+        r"""启动模型服务
+
+        启动模型服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartModelService
+        :type request: :class:`huaweicloudsdkoptverse.v1.StartModelServiceRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.StartModelServiceResponse`
+        """
+        http_info = self._start_model_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_model_service_async_invoker(self, request):
+        http_info = self._start_model_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_model_service_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartModelServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_model_service_async(self, request):
+        r"""停止模型服务
+
+        停止模型服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopModelService
+        :type request: :class:`huaweicloudsdkoptverse.v1.StopModelServiceRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.StopModelServiceResponse`
+        """
+        http_info = self._stop_model_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_model_service_async_invoker(self, request):
+        http_info = self._stop_model_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_model_service_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopModelServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_model_service_async(self, request):
+        r"""编辑推理服务
+
+        编辑推理服务，仅支持修改服务名称和服务描述。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateModelService
+        :type request: :class:`huaweicloudsdkoptverse.v1.UpdateModelServiceRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.UpdateModelServiceResponse`
+        """
+        http_info = self._update_model_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_model_service_async_invoker(self, request):
+        http_info = self._update_model_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_model_service_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModelServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_model_service_task_file_async(self, request):
+        r"""上传任务依赖的输入文件
+
+        上传任务依赖的输入文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadModelServiceTaskFile
+        :type request: :class:`huaweicloudsdkoptverse.v1.UploadModelServiceTaskFileRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.UploadModelServiceTaskFileResponse`
+        """
+        http_info = self._upload_model_service_task_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_model_service_task_file_async_invoker(self, request):
+        http_info = self._upload_model_service_task_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_model_service_task_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-service/services/{service_id}/files/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadModelServiceTaskFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_id' in local_var_params:
+            path_params['service_id'] = local_var_params['service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def publish_model_async(self, request):
+        r"""发布模型
+
+        发布训练任务生成的模型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PublishModel
+        :type request: :class:`huaweicloudsdkoptverse.v1.PublishModelRequest`
+        :rtype: :class:`huaweicloudsdkoptverse.v1.PublishModelResponse`
+        """
+        http_info = self._publish_model_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_model_async_invoker(self, request):
+        http_info = self._publish_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_model_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/model-train/model/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishModelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_evolve_task_async(self, request):
         r"""删除算法演化任务
 

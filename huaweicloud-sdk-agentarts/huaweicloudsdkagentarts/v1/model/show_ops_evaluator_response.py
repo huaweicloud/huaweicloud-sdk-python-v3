@@ -24,7 +24,8 @@ class ShowOpsEvaluatorResponse(SdkResponse):
         'builtin': 'bool',
         'latest_version': 'str',
         'current_version': 'EvaluationOpsCurrentVersion',
-        'base_info': 'OpsEvaluatorBaseInfo'
+        'base_info': 'OpsEvaluatorBaseInfo',
+        'tags': 'list[OpsTmsTag]'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowOpsEvaluatorResponse(SdkResponse):
         'builtin': 'builtin',
         'latest_version': 'latest_version',
         'current_version': 'current_version',
-        'base_info': 'base_info'
+        'base_info': 'base_info',
+        'tags': 'tags'
     }
 
-    def __init__(self, evaluator_id=None, name=None, description=None, evaluator_type=None, box_type=None, builtin=None, latest_version=None, current_version=None, base_info=None):
+    def __init__(self, evaluator_id=None, name=None, description=None, evaluator_type=None, box_type=None, builtin=None, latest_version=None, current_version=None, base_info=None, tags=None):
         r"""ShowOpsEvaluatorResponse
 
         The model defined in huaweicloud sdk
@@ -62,6 +64,8 @@ class ShowOpsEvaluatorResponse(SdkResponse):
         :type current_version: :class:`huaweicloudsdkagentarts.v1.EvaluationOpsCurrentVersion`
         :param base_info: 
         :type base_info: :class:`huaweicloudsdkagentarts.v1.OpsEvaluatorBaseInfo`
+        :param tags: **参数解释** 评估器绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制** 不涉及。 **取值范围** 不涉及。 
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
         """
         
         super().__init__()
@@ -75,6 +79,7 @@ class ShowOpsEvaluatorResponse(SdkResponse):
         self._latest_version = None
         self._current_version = None
         self._base_info = None
+        self._tags = None
         self.discriminator = None
 
         if evaluator_id is not None:
@@ -95,6 +100,8 @@ class ShowOpsEvaluatorResponse(SdkResponse):
             self.current_version = current_version
         if base_info is not None:
             self.base_info = base_info
+        if tags is not None:
+            self.tags = tags
 
     @property
     def evaluator_id(self):
@@ -285,6 +292,28 @@ class ShowOpsEvaluatorResponse(SdkResponse):
         :type base_info: :class:`huaweicloudsdkagentarts.v1.OpsEvaluatorBaseInfo`
         """
         self._base_info = base_info
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this ShowOpsEvaluatorResponse.
+
+        **参数解释** 评估器绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制** 不涉及。 **取值范围** 不涉及。 
+
+        :return: The tags of this ShowOpsEvaluatorResponse.
+        :rtype: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this ShowOpsEvaluatorResponse.
+
+        **参数解释** 评估器绑定的TMS标签列表。数组内每个元素为OpsTmsTag对象，包含标签的键值信息。 **约束限制** 不涉及。 **取值范围** 不涉及。 
+
+        :param tags: The tags of this ShowOpsEvaluatorResponse.
+        :type tags: list[:class:`huaweicloudsdkagentarts.v1.OpsTmsTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         import warnings

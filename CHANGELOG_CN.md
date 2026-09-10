@@ -1,3 +1,467 @@
+# 3.1.214 2026-09-10
+
+### HuaweiCloud SDK AgentArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `InvokeOpsFineGrainedEvaluation`
+    - `ListOpsModelTuningTasks`
+    - `CreateOpsModelTuningTask`
+    - `ShowOpsModelTuningTask`
+    - `UpdateOpsModelTuningTask`
+    - `DeleteOpsModelTuningTask`
+    - `ExecuteOpsModelTuningTask`
+    - `StopOpsModelTuningTask`
+    - `ListOpsModelTuningTaskMetrics`
+    - `ListOpsModelTuningTaskProducts`
+    - `ListOpsModelDeployments`
+    - `CreateOpsModelDeployment`
+    - `ShowOpsModelDeployment`
+    - `DeleteOpsModelDeployment`
+    - `StopOpsModelDeployment`
+    - `StartOpsModelDeployment`
+    - `ListOpsAgentTuningTasks`
+    - `CreateOpsAgentTuningTask`
+    - `ShowOpsAgentTuningTask`
+    - `UpdateOpsAgentTuningTask`
+    - `DeleteOpsAgentTuningTask`
+    - `ExecuteOpsAgentTuningTask`
+    - `StopOpsAgentTuningTask`
+    - `ListOpsAnalysisTasks`
+    - `CreateOpsAnalysisTask`
+    - `ShowOpsAnalysisTask`
+    - `UpdateOpsAnalysisTask`
+    - `DeleteOpsAnalysisTask`
+    - `PublishOpsAnalysisTask`
+    - `StopOpsAnalysisTask`
+    - `PauseOpsAnalysisTask`
+    - `ResumeOpsAnalysisTask`
+    - `ListOpsAnalysisTaskInstances`
+    - `ListOpsAnalysisTaskFailureAffectedSessions`
+    - `ListOpsModelTuningTasksByTags`
+    - `ShowOpsModelTuningTaskNumsByTags`
+    - `BatchCreateOpsModelTuningTaskTags`
+    - `BatchDeleteOpsModelTuningTaskTags`
+    - `ListOpsModelTuningTaskTags`
+    - `ListAllOpsModelTuningTaskTags`
+    - `ListOpsAgentTuningTasksByTags`
+    - `ShowOpsAgentTuningTaskNumsByTags`
+    - `BatchCreateOpsAgentTuningTaskTags`
+    - `BatchDeleteOpsAgentTuningTaskTags`
+    - `ListOpsAgentTuningTaskTags`
+    - `ListAllOpsAgentTuningTaskTags`
+    - `ListOpsAnalysisTasksByTags`
+    - `ShowOpsAnalysisTaskNumsByTags`
+    - `BatchCreateOpsAnalysisTaskTags`
+    - `BatchDeleteOpsAnalysisTaskTags`
+    - `ListOpsAnalysisTaskTags`
+    - `ListAllOpsAnalysisTaskTags`
+    - `ListOpsEvolutionQuotas`
+    - `StartOpsAgentTuningTaskForAnalysisTask`
+    - `GenerateOpsMultimodalUploadUrl`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StopOpsEvaluationTask**
+    - 响应参数变更
+      - `+ msg`
+      - `+ code`
+  - **CreateCoreSpaceCustomizedStrategy**
+    - 响应参数变更
+      - `+ body`
+      - `- updated_at`
+      - `- name`
+      - `- created_at`
+      - `- id`
+      - `- type`
+      - `- steps`
+      - `- origin_type`
+  - **UpdateCoreSpaceCustomizedStrategy**
+    - 请求参数变更
+      - `+ body`
+      - `- name`
+      - `- steps`
+    - 响应参数变更
+      - `+ body`
+      - `- updated_at`
+      - `- name`
+      - `- created_at`
+      - `- id`
+      - `- type`
+      - `- steps`
+      - `- origin_type`
+  - **ShowCoreSpaceJob**
+    - 响应参数变更
+      - `+ body`
+      - `- job_name`
+      - `- id`
+      - `- status`
+  - **ListCoreSpaceMemories**
+    - 响应参数变更
+      - `+ body`
+      - `- total`
+      - `- offset`
+      - `- limit`
+      - `- items`
+  - **SearchCoreSpaceMemories**
+    - 响应参数变更
+      - `+ body`
+      - `- total`
+      - `- query`
+      - `- results`
+  - **ShowOpsAgentMetricTopN**
+    - 请求参数变更
+      - `- group_by`
+      - `- top_number`
+  - **ListOpsAgentRuntLog**
+    - 请求参数变更
+      - `* log_type: optional -> required`
+  - **CreateOpsEvaluator**
+    - 响应参数变更
+      - `+ evaluator_id`
+  - **ShowCoreSpace**
+    - 响应参数变更
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **UpdateCoreSpace**
+    - 响应参数变更
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **UpdateCoreSpaceNetwork**
+    - 请求参数变更
+      - `+ body`
+      - `- public_access_enable`
+      - `- private_access_config`
+  - **UpdateOpsSynthesisTask**
+    - 响应参数变更
+      - `+ id`
+      - `- body`
+  - **ShowOpsSynthesisTask**
+    - 响应参数变更
+      - `- schemas.id`
+  - **ListOpsEvaluators**
+    - 响应参数变更
+      - `+ total`
+      - `+ evaluators`
+  - **ShowOpsEvaluator**
+    - 响应参数变更
+      - `+ tags`
+  - **CreateOpsLabel**
+    - 响应参数变更
+      - `+ data`
+      - `- label_id`
+  - **CreateCoreSpace**
+    - 响应参数变更
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **CreateOpsSynthesisTask**
+    - 请求参数变更
+      - `- schemas.id`
+  - **ListOpsSynthesisTasks**
+    - 响应参数变更
+      - `+ syntheses.stats`
+  - **ShowOpsEvaluationTasksCompareResult**
+    - 响应参数变更
+      - `* data.benchmark_group.evaluations.correction: object -> map<string, OpsCorrection>`
+
+### HuaweiCloud SDK CPH
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListShareAppsSnapshot`
+    - `ListCloudPhoneServerModelOfferings`
+    - `AttachShareFilesystem`
+    - `DetachShareFilesystem`
+    - `ListScheduledEvents`
+    - `AuthorizeScheduledEvent`
+    - `UpdateScheduledEvent`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCloudPhoneImages**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+    - 响应参数变更
+      - `+ page_info`
+      - `+ phone_images.receive_status`
+  - **ShowCloudPhoneDetail**
+    - 响应参数变更
+      - `+ custom_property`
+  - **ResetCloudPhone**
+    - 请求参数变更
+      - `+ phones.factory_reset_enabled`
+      - `* phones: list<PhoneProperty> -> list<ResetPhoneProperty>`
+  - **UpdateCloudPhoneProperty**
+    - 请求参数变更
+      - `+ phones.custom_property`
+  - **ListCloudPhoneServerModels**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+    - 响应参数变更
+      - `+ page_info`
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **ListResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **BatchCreateTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **BatchDeleteTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **ListImageMembers**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+    - 响应参数变更
+      - `+ page_info`
+  - **ListResourceInstances**
+    - 请求参数变更
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAnalysisSessionResult**
+    - 响应参数变更
+      - `+ sql_templates.avg_execute_time`
+      - `+ sql_templates.total_execute_time`
+  - **ShowTuning**
+    - 响应参数变更
+      - `+ tune_result.tb_pos_infos.schema_name`
+  - **ShowLatestDeadLockSnapshot4Api**
+    - 响应参数变更
+      - `+ mysql_dead_lock.time`
+      - `* mysql_dead_lock: object<MySQLDeadLock> -> object<MySQLLatestDeadLock>`
+  - **ShowTuningResult**
+    - 响应参数变更
+      - `+ tune_result.tb_pos_infos.schema_name`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchDeleteWorkspaces`
+    - `UpdateWorkSpaceOld`
+    - `ListTaskLogs`
+    - `DownloadTaskLog`
+    - `ShowJobMonitorInfo`
+    - `ListDatasourceConnections`
+    - `CreateDatasourceConnection`
+    - `ShowDatasourceConnection`
+    - `UpdateDatasourceConnectionHostMessage`
+    - `DeleteDatasourceConnection`
+    - `AssociateConnectionCluster`
+    - `CreateDatasourceConnectionRoutes`
+    - `DeleteDatasourceConnectionRoutes`
+    - `CreateCluster`
+    - `BatchBindMigrationResourceToWorkspace`
+    - `ShowRealTimeJobDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`AuthorizeDataConnection`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 废弃接口`ShowRestoreTables`
+
+### HuaweiCloud SDK ModelArts
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`AttachDevServerPort`、`DetachDevServerPort`、`ListUsers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OptVerse
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListChat`
+    - `ShowChat`
+    - `UpdateChat`
+    - `DeleteChat`
+    - `CancelChat`
+    - `PublishChat`
+    - `UploadFile`
+    - `DownloadFile`
+    - `ListArtifacts`
+    - `CreateArtifacts`
+    - `ShowModelServiceList`
+    - `CreateModelService`
+    - `ShowModelServiceDetail`
+    - `UpdateModelService`
+    - `DeleteModelService`
+    - `ListModelServiceTasks`
+    - `CreateModelServiceTask`
+    - `ShowModelServiceTask`
+    - `UploadModelServiceTaskFile`
+    - `StopModelService`
+    - `StartModelService`
+    - `ListModelAssets`
+    - `ShowModelAssetDetail`
+    - `UpdateModelAsset`
+    - `DeleteModelAsset`
+    - `PublishModel`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowRiskInfo`
+    - `QueryAutoSqlLimiting`
+    - `CollectInstanceStatistic`
+    - `GetInstancesOpsResourceUsage`
+    - `ListComputeResource`
+    - `ListOperateRecord`
+    - `ShowAgencyPolicy`
+    - `GetAvailableVpcs`
+    - `ListInstancesResourceMetrics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListShareBackups**
+    - 响应参数变更
+      - `+ backups.datastore.type`
+      - `+ backups.datastore.version`
+      - `* backups.datastore: object -> object<ShareBackupDatastore>`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CountSubNetworkInterfacesByTags`
+    - `ListSubNetworkInterfacesByTags`
+    - `ShowSubNetworkInterfaceTags`
+    - `CreateSubNetworkInterfaceTag`
+    - `BatchCreateSubNetworkInterfaceTags`
+    - `BatchDeleteSubNetworkInterfaceTags`
+    - `DeleteSubNetworkInterfaceTag`
+    - `ListSubNetworkInterfaceTags`
+    - `AttachSubNetworkInterface`
+    - `DetachSubNetworkInterface`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSubNetworkInterfaces**
+    - 响应参数变更
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **CreateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **BatchCreateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **ShowSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **UpdateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **MigrateSubNetworkInterface**
+    - 响应参数变更
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+
 # 3.1.213 2026-09-03
 
 ### HuaweiCloud SDK AgentIdentity

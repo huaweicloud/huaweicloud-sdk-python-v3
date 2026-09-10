@@ -1,3 +1,467 @@
+# 3.1.214 2026-09-10
+
+### HuaweiCloud SDK AgentArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `InvokeOpsFineGrainedEvaluation`
+    - `ListOpsModelTuningTasks`
+    - `CreateOpsModelTuningTask`
+    - `ShowOpsModelTuningTask`
+    - `UpdateOpsModelTuningTask`
+    - `DeleteOpsModelTuningTask`
+    - `ExecuteOpsModelTuningTask`
+    - `StopOpsModelTuningTask`
+    - `ListOpsModelTuningTaskMetrics`
+    - `ListOpsModelTuningTaskProducts`
+    - `ListOpsModelDeployments`
+    - `CreateOpsModelDeployment`
+    - `ShowOpsModelDeployment`
+    - `DeleteOpsModelDeployment`
+    - `StopOpsModelDeployment`
+    - `StartOpsModelDeployment`
+    - `ListOpsAgentTuningTasks`
+    - `CreateOpsAgentTuningTask`
+    - `ShowOpsAgentTuningTask`
+    - `UpdateOpsAgentTuningTask`
+    - `DeleteOpsAgentTuningTask`
+    - `ExecuteOpsAgentTuningTask`
+    - `StopOpsAgentTuningTask`
+    - `ListOpsAnalysisTasks`
+    - `CreateOpsAnalysisTask`
+    - `ShowOpsAnalysisTask`
+    - `UpdateOpsAnalysisTask`
+    - `DeleteOpsAnalysisTask`
+    - `PublishOpsAnalysisTask`
+    - `StopOpsAnalysisTask`
+    - `PauseOpsAnalysisTask`
+    - `ResumeOpsAnalysisTask`
+    - `ListOpsAnalysisTaskInstances`
+    - `ListOpsAnalysisTaskFailureAffectedSessions`
+    - `ListOpsModelTuningTasksByTags`
+    - `ShowOpsModelTuningTaskNumsByTags`
+    - `BatchCreateOpsModelTuningTaskTags`
+    - `BatchDeleteOpsModelTuningTaskTags`
+    - `ListOpsModelTuningTaskTags`
+    - `ListAllOpsModelTuningTaskTags`
+    - `ListOpsAgentTuningTasksByTags`
+    - `ShowOpsAgentTuningTaskNumsByTags`
+    - `BatchCreateOpsAgentTuningTaskTags`
+    - `BatchDeleteOpsAgentTuningTaskTags`
+    - `ListOpsAgentTuningTaskTags`
+    - `ListAllOpsAgentTuningTaskTags`
+    - `ListOpsAnalysisTasksByTags`
+    - `ShowOpsAnalysisTaskNumsByTags`
+    - `BatchCreateOpsAnalysisTaskTags`
+    - `BatchDeleteOpsAnalysisTaskTags`
+    - `ListOpsAnalysisTaskTags`
+    - `ListAllOpsAnalysisTaskTags`
+    - `ListOpsEvolutionQuotas`
+    - `StartOpsAgentTuningTaskForAnalysisTask`
+    - `GenerateOpsMultimodalUploadUrl`
+- _Bug Fix_
+  - None
+- _Change_
+  - **StopOpsEvaluationTask**
+    - changes of response param
+      - `+ msg`
+      - `+ code`
+  - **CreateCoreSpaceCustomizedStrategy**
+    - changes of response param
+      - `+ body`
+      - `- updated_at`
+      - `- name`
+      - `- created_at`
+      - `- id`
+      - `- type`
+      - `- steps`
+      - `- origin_type`
+  - **UpdateCoreSpaceCustomizedStrategy**
+    - changes of request param
+      - `+ body`
+      - `- name`
+      - `- steps`
+    - changes of response param
+      - `+ body`
+      - `- updated_at`
+      - `- name`
+      - `- created_at`
+      - `- id`
+      - `- type`
+      - `- steps`
+      - `- origin_type`
+  - **ShowCoreSpaceJob**
+    - changes of response param
+      - `+ body`
+      - `- job_name`
+      - `- id`
+      - `- status`
+  - **ListCoreSpaceMemories**
+    - changes of response param
+      - `+ body`
+      - `- total`
+      - `- offset`
+      - `- limit`
+      - `- items`
+  - **SearchCoreSpaceMemories**
+    - changes of response param
+      - `+ body`
+      - `- total`
+      - `- query`
+      - `- results`
+  - **ShowOpsAgentMetricTopN**
+    - changes of request param
+      - `- group_by`
+      - `- top_number`
+  - **ListOpsAgentRuntLog**
+    - changes of request param
+      - `* log_type: optional -> required`
+  - **CreateOpsEvaluator**
+    - changes of response param
+      - `+ evaluator_id`
+  - **ShowCoreSpace**
+    - changes of response param
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **UpdateCoreSpace**
+    - changes of response param
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **UpdateCoreSpaceNetwork**
+    - changes of request param
+      - `+ body`
+      - `- public_access_enable`
+      - `- private_access_config`
+  - **UpdateOpsSynthesisTask**
+    - changes of response param
+      - `+ id`
+      - `- body`
+  - **ShowOpsSynthesisTask**
+    - changes of response param
+      - `- schemas.id`
+  - **ListOpsEvaluators**
+    - changes of response param
+      - `+ total`
+      - `+ evaluators`
+  - **ShowOpsEvaluator**
+    - changes of response param
+      - `+ tags`
+  - **CreateOpsLabel**
+    - changes of response param
+      - `+ data`
+      - `- label_id`
+  - **CreateCoreSpace**
+    - changes of response param
+      - `+ body`
+      - `- memory_extract_enabled`
+      - `- vpc_id`
+      - `- message_ttl_hours`
+      - `- description`
+      - `- memory_strategies_builtin`
+      - `- created_at`
+      - `- memory_extract_max_tokens`
+      - `- private_access`
+      - `- encryption_config`
+      - `- tags`
+      - `- public_access`
+      - `- updated_at`
+      - `- api_key`
+      - `- memory_extract_max_messages`
+      - `- name`
+      - `- subnet_id`
+      - `- id`
+      - `- memory_extract_idle_seconds`
+      - `- memory_strategies_customized`
+      - `- status`
+  - **CreateOpsSynthesisTask**
+    - changes of request param
+      - `- schemas.id`
+  - **ListOpsSynthesisTasks**
+    - changes of response param
+      - `+ syntheses.stats`
+  - **ShowOpsEvaluationTasksCompareResult**
+    - changes of response param
+      - `* data.benchmark_group.evaluations.correction: object -> map<string, OpsCorrection>`
+
+### HuaweiCloud SDK CPH
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListShareAppsSnapshot`
+    - `ListCloudPhoneServerModelOfferings`
+    - `AttachShareFilesystem`
+    - `DetachShareFilesystem`
+    - `ListScheduledEvents`
+    - `AuthorizeScheduledEvent`
+    - `UpdateScheduledEvent`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCloudPhoneImages**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+      - `+ phone_images.receive_status`
+  - **ShowCloudPhoneDetail**
+    - changes of response param
+      - `+ custom_property`
+  - **ResetCloudPhone**
+    - changes of request param
+      - `+ phones.factory_reset_enabled`
+      - `* phones: list<PhoneProperty> -> list<ResetPhoneProperty>`
+  - **UpdateCloudPhoneProperty**
+    - changes of request param
+      - `+ phones.custom_property`
+  - **ListCloudPhoneServerModels**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListProjectTags**
+    - changes of request param
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **ListResourceTags**
+    - changes of request param
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **BatchCreateTags**
+    - changes of request param
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **BatchDeleteTags**
+    - changes of request param
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+  - **ListImageMembers**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListResourceInstances**
+    - changes of request param
+      - `+ resource_type: enum value [elastic-cloud-phone]`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAnalysisSessionResult**
+    - changes of response param
+      - `+ sql_templates.avg_execute_time`
+      - `+ sql_templates.total_execute_time`
+  - **ShowTuning**
+    - changes of response param
+      - `+ tune_result.tb_pos_infos.schema_name`
+  - **ShowLatestDeadLockSnapshot4Api**
+    - changes of response param
+      - `+ mysql_dead_lock.time`
+      - `* mysql_dead_lock: object<MySQLDeadLock> -> object<MySQLLatestDeadLock>`
+  - **ShowTuningResult**
+    - changes of response param
+      - `+ tune_result.tb_pos_infos.schema_name`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchDeleteWorkspaces`
+    - `UpdateWorkSpaceOld`
+    - `ListTaskLogs`
+    - `DownloadTaskLog`
+    - `ShowJobMonitorInfo`
+    - `ListDatasourceConnections`
+    - `CreateDatasourceConnection`
+    - `ShowDatasourceConnection`
+    - `UpdateDatasourceConnectionHostMessage`
+    - `DeleteDatasourceConnection`
+    - `AssociateConnectionCluster`
+    - `CreateDatasourceConnectionRoutes`
+    - `DeleteDatasourceConnectionRoutes`
+    - `CreateCluster`
+    - `BatchBindMigrationResourceToWorkspace`
+    - `ShowRealTimeJobDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `AuthorizeDataConnection`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Deprecate the API `ShowRestoreTables`
+
+### HuaweiCloud SDK ModelArts
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `AttachDevServerPort`, `DetachDevServerPort`, `ListUsers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OptVerse
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListChat`
+    - `ShowChat`
+    - `UpdateChat`
+    - `DeleteChat`
+    - `CancelChat`
+    - `PublishChat`
+    - `UploadFile`
+    - `DownloadFile`
+    - `ListArtifacts`
+    - `CreateArtifacts`
+    - `ShowModelServiceList`
+    - `CreateModelService`
+    - `ShowModelServiceDetail`
+    - `UpdateModelService`
+    - `DeleteModelService`
+    - `ListModelServiceTasks`
+    - `CreateModelServiceTask`
+    - `ShowModelServiceTask`
+    - `UploadModelServiceTaskFile`
+    - `StopModelService`
+    - `StartModelService`
+    - `ListModelAssets`
+    - `ShowModelAssetDetail`
+    - `UpdateModelAsset`
+    - `DeleteModelAsset`
+    - `PublishModel`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowRiskInfo`
+    - `QueryAutoSqlLimiting`
+    - `CollectInstanceStatistic`
+    - `GetInstancesOpsResourceUsage`
+    - `ListComputeResource`
+    - `ListOperateRecord`
+    - `ShowAgencyPolicy`
+    - `GetAvailableVpcs`
+    - `ListInstancesResourceMetrics`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListShareBackups**
+    - changes of response param
+      - `+ backups.datastore.type`
+      - `+ backups.datastore.version`
+      - `* backups.datastore: object -> object<ShareBackupDatastore>`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CountSubNetworkInterfacesByTags`
+    - `ListSubNetworkInterfacesByTags`
+    - `ShowSubNetworkInterfaceTags`
+    - `CreateSubNetworkInterfaceTag`
+    - `BatchCreateSubNetworkInterfaceTags`
+    - `BatchDeleteSubNetworkInterfaceTags`
+    - `DeleteSubNetworkInterfaceTag`
+    - `ListSubNetworkInterfaceTags`
+    - `AttachSubNetworkInterface`
+    - `DetachSubNetworkInterface`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSubNetworkInterfaces**
+    - changes of response param
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **CreateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **BatchCreateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **ShowSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **UpdateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interface.updated_at`
+      - `* sub_network_interface.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **MigrateSubNetworkInterface**
+    - changes of response param
+      - `+ sub_network_interfaces.updated_at`
+      - `* sub_network_interfaces.tags: list<ResourceTag> -> list<ResponseTag>`
+
 # 3.1.213 2026-09-03
 
 ### HuaweiCloud SDK AgentIdentity

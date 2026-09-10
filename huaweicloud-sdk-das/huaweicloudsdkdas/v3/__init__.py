@@ -422,6 +422,7 @@ from huaweicloudsdkdas.v3.model.meta_lock_info import MetaLockInfo
 from huaweicloudsdkdas.v3.model.metadata_lock import MetadataLock
 from huaweicloudsdkdas.v3.model.multi_nodes_single_metric_metrics import MultiNodesSingleMetricMetrics
 from huaweicloudsdkdas.v3.model.my_sql_dead_lock import MySQLDeadLock
+from huaweicloudsdkdas.v3.model.my_sql_latest_dead_lock import MySQLLatestDeadLock
 from huaweicloudsdkdas.v3.model.my_sql_transaction import MySQLTransaction
 from huaweicloudsdkdas.v3.model.node_info import NodeInfo
 from huaweicloudsdkdas.v3.model.node_wdr_dto import NodeWdrDto

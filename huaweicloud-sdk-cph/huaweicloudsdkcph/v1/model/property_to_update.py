@@ -16,15 +16,17 @@ class PropertyToUpdate:
 
     openapi_types = {
         'phone_id': 'str',
-        '_property': 'str'
+        '_property': 'str',
+        'custom_property': 'dict(str, str)'
     }
 
     attribute_map = {
         'phone_id': 'phone_id',
-        '_property': 'property'
+        '_property': 'property',
+        'custom_property': 'custom_property'
     }
 
-    def __init__(self, phone_id=None, _property=None):
+    def __init__(self, phone_id=None, _property=None, custom_property=None):
         r"""PropertyToUpdate
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class PropertyToUpdate:
         :type phone_id: str
         :param _property: 云手机属性列表，为Json格式字符串。
         :type _property: str
+        :param custom_property: 用户自定义属性键值对。若涉及 OS 系统属性，需遵循系统属性规范。注意：本字段与 property 字段的合并总长度不得超过 7800 字节。
+        :type custom_property: dict(str, str)
         """
         
         
 
         self._phone_id = None
         self.__property = None
+        self._custom_property = None
         self.discriminator = None
 
         self.phone_id = phone_id
         self._property = _property
+        if custom_property is not None:
+            self.custom_property = custom_property
 
     @property
     def phone_id(self):
@@ -87,6 +94,28 @@ class PropertyToUpdate:
         :type _property: str
         """
         self.__property = _property
+
+    @property
+    def custom_property(self):
+        r"""Gets the custom_property of this PropertyToUpdate.
+
+        用户自定义属性键值对。若涉及 OS 系统属性，需遵循系统属性规范。注意：本字段与 property 字段的合并总长度不得超过 7800 字节。
+
+        :return: The custom_property of this PropertyToUpdate.
+        :rtype: dict(str, str)
+        """
+        return self._custom_property
+
+    @custom_property.setter
+    def custom_property(self, custom_property):
+        r"""Sets the custom_property of this PropertyToUpdate.
+
+        用户自定义属性键值对。若涉及 OS 系统属性，需遵循系统属性规范。注意：本字段与 property 字段的合并总长度不得超过 7800 字节。
+
+        :param custom_property: The custom_property of this PropertyToUpdate.
+        :type custom_property: dict(str, str)
+        """
+        self._custom_property = custom_property
 
     def to_dict(self):
         result = {}

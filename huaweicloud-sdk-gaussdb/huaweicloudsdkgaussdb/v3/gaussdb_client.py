@@ -10738,10 +10738,12 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowRestoreTablesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowRestoreTablesResponse`
         """
+        warnings.warn("Method 'show_restore_tables' of GaussDBClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_restore_tables_http_info(request)
         return self._call_api(**http_info)
 
     def show_restore_tables_invoker(self, request):
+        warnings.warn("Method 'show_restore_tables_invoker' of GaussDBClient is deprecated and will be removed in the future versions", DeprecationWarning)
         http_info = self._show_restore_tables_http_info(request)
         return SyncInvoker(self, http_info)
 

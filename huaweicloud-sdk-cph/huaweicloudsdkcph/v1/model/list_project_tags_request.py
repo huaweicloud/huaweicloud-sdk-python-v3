@@ -31,7 +31,7 @@ class ListProjectTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。  - cph-server，云手机服务器
+        :param resource_type: 资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
         :type resource_type: str
         :param limit: 每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
         :type limit: int
@@ -56,7 +56,7 @@ class ListProjectTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListProjectTagsRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :return: The resource_type of this ListProjectTagsRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ListProjectTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListProjectTagsRequest.
 
-        资源类型。  - cph-server，云手机服务器
+        资源类型。  - cph-server，云手机服务器 [- elastic-cloud-phone, 弹性云手机实例](tag:hws_test)
 
         :param resource_type: The resource_type of this ListProjectTagsRequest.
         :type resource_type: str

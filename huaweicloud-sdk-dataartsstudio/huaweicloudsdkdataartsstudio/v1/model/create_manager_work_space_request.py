@@ -29,7 +29,7 @@ class CreateManagerWorkSpaceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: DataArtsStudio实例id
+        :param instance_id: DataArts Studio实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
         :type instance_id: str
         :param body: Body of the CreateManagerWorkSpaceRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceParams`
@@ -49,7 +49,7 @@ class CreateManagerWorkSpaceRequest:
     def instance_id(self):
         r"""Gets the instance_id of this CreateManagerWorkSpaceRequest.
 
-        DataArtsStudio实例id
+        DataArts Studio实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :return: The instance_id of this CreateManagerWorkSpaceRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateManagerWorkSpaceRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this CreateManagerWorkSpaceRequest.
 
-        DataArtsStudio实例id
+        DataArts Studio实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
         :param instance_id: The instance_id of this CreateManagerWorkSpaceRequest.
         :type instance_id: str

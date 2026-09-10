@@ -4091,6 +4091,1295 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def create_ops_agent_tuning_task_async(self, request):
+        r"""创建智能体优化任务
+
+        本接口用于创建一个全新的智能体优化任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateOpsAgentTuningTaskResponse`
+        """
+        http_info = self._create_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._create_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/agent-tuning-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ops_agent_tuning_task_async(self, request):
+        r"""删除智能体优化任务
+
+        本接口用于彻底删除指定的智能体优化任务记录，系统会同步清除数据库元数据。删除操作不可恢复，请谨慎操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteOpsAgentTuningTaskResponse`
+        """
+        http_info = self._delete_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._delete_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ops/agent-tuning-tasks/{agent_tuning_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_ops_agent_tuning_task_async(self, request):
+        r"""执行智能体优化任务
+
+        本接口用于正式触发处于草稿状态的任务，进入实际优化迭代阶段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ExecuteOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ExecuteOpsAgentTuningTaskResponse`
+        """
+        http_info = self._execute_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._execute_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/agent-tuning-tasks/{agent_tuning_task_id}/execute",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_agent_tuning_tasks_async(self, request):
+        r"""查询智能体优化任务列表
+
+        本接口用于查询当前租户下的智能体优化任务列表，支持通过任务名称、任务类型和任务状态进行过滤，并支持分页功能。同时，响应中会返回全局状态的分组统计信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAgentTuningTasks
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTasksRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTasksResponse`
+        """
+        http_info = self._list_ops_agent_tuning_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_agent_tuning_tasks_async_invoker(self, request):
+        http_info = self._list_ops_agent_tuning_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_agent_tuning_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/agent-tuning-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAgentTuningTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'analysis_task_id' in local_var_params:
+            query_params.append(('analysis_task_id', local_var_params['analysis_task_id']))
+        if 'tag_key_exists' in local_var_params:
+            query_params.append(('tag_key_exists', local_var_params['tag_key_exists']))
+            collection_formats['tag_key_exists'] = 'csv'
+        if 'tag_key_matches' in local_var_params:
+            query_params.append(('tag_key_matches', local_var_params['tag_key_matches']))
+            collection_formats['tag_key_matches'] = 'csv'
+        if 'tag_value_matches' in local_var_params:
+            query_params.append(('tag_value_matches', local_var_params['tag_value_matches']))
+            collection_formats['tag_value_matches'] = 'csv'
+        if 'tag_match_policy' in local_var_params:
+            query_params.append(('tag_match_policy', local_var_params['tag_match_policy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_agent_tuning_task_async(self, request):
+        r"""查询智能体优化任务详情
+
+        本接口根据唯一ID获取单个智能体优化任务的全量元数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsAgentTuningTaskResponse`
+        """
+        http_info = self._show_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._show_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/agent-tuning-tasks/{agent_tuning_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_ops_agent_tuning_task_async(self, request):
+        r"""停止智能体优化任务
+
+        本接口用于中断正在运行的智能体优化任务，任务流转为停止状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.StopOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StopOpsAgentTuningTaskResponse`
+        """
+        http_info = self._stop_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._stop_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/agent-tuning-tasks/{agent_tuning_task_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ops_agent_tuning_task_async(self, request):
+        r"""修改智能体优化任务
+
+        本接口用于更新指定任务的具体配置。为确保数据的一致性，系统严格限制仅处于“draft（草稿）”状态的任务才允许被修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOpsAgentTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsAgentTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsAgentTuningTaskResponse`
+        """
+        http_info = self._update_ops_agent_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ops_agent_tuning_task_async_invoker(self, request):
+        http_info = self._update_ops_agent_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ops_agent_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ops/agent-tuning-tasks/{agent_tuning_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOpsAgentTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ops_analysis_task_async(self, request):
+        r"""创建分析任务
+
+        本接口用于创建一个全新的分析任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateOpsAnalysisTaskResponse`
+        """
+        http_info = self._create_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ops_analysis_task_async_invoker(self, request):
+        http_info = self._create_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ops_analysis_task_async(self, request):
+        r"""删除分析任务
+
+        本接口用于彻底删除指定的分析任务记录，系统会同步清除数据库元数据。删除操作不可恢复，请谨慎操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteOpsAnalysisTaskResponse`
+        """
+        http_info = self._delete_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ops_analysis_task_async_invoker(self, request):
+        http_info = self._delete_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_analysis_task_failure_affected_sessions_async(self, request):
+        r"""查询分析任务的结果里的失败会话列表
+
+        本接口用于查询某个分析任务下、某个具体问题的明细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAnalysisTaskFailureAffectedSessions
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskFailureAffectedSessionsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskFailureAffectedSessionsResponse`
+        """
+        http_info = self._list_ops_analysis_task_failure_affected_sessions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_analysis_task_failure_affected_sessions_async_invoker(self, request):
+        http_info = self._list_ops_analysis_task_failure_affected_sessions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_analysis_task_failure_affected_sessions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/failures/{error_sub_category_name}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAnalysisTaskFailureAffectedSessionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+        if 'error_sub_category_name' in local_var_params:
+            path_params['error_sub_category_name'] = local_var_params['error_sub_category_name']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_analysis_task_instances_async(self, request):
+        r"""查询分析任务实例列表
+
+        本接口用于查询指定分析任务下的任务实例列表，支持通过任务状态进行过滤，并支持分页功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAnalysisTaskInstances
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskInstancesRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskInstancesResponse`
+        """
+        http_info = self._list_ops_analysis_task_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_analysis_task_instances_async_invoker(self, request):
+        http_info = self._list_ops_analysis_task_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_analysis_task_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/task-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAnalysisTaskInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_analysis_tasks_async(self, request):
+        r"""查询分析任务列表
+
+        本接口用于查询当前租户下的分析任务列表，支持通过任务名称、任务状态进行过滤，并支持分页功能。同时，响应中会返回全局状态的分组统计信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAnalysisTasks
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTasksRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTasksResponse`
+        """
+        http_info = self._list_ops_analysis_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_analysis_tasks_async_invoker(self, request):
+        http_info = self._list_ops_analysis_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_analysis_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/analysis-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAnalysisTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tag_key_exists' in local_var_params:
+            query_params.append(('tag_key_exists', local_var_params['tag_key_exists']))
+            collection_formats['tag_key_exists'] = 'csv'
+        if 'tag_key_matches' in local_var_params:
+            query_params.append(('tag_key_matches', local_var_params['tag_key_matches']))
+            collection_formats['tag_key_matches'] = 'csv'
+        if 'tag_value_matches' in local_var_params:
+            query_params.append(('tag_value_matches', local_var_params['tag_value_matches']))
+            collection_formats['tag_value_matches'] = 'csv'
+        if 'tag_match_policy' in local_var_params:
+            query_params.append(('tag_match_policy', local_var_params['tag_match_policy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def pause_ops_analysis_task_async(self, request):
+        r"""暂停分析任务
+
+        本接口用于暂停周期运行类型的分析任务，任务流转为暂停状态，在其期间不会触发周期任务的执行
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PauseOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.PauseOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.PauseOpsAnalysisTaskResponse`
+        """
+        http_info = self._pause_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def pause_ops_analysis_task_async_invoker(self, request):
+        http_info = self._pause_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def publish_ops_analysis_task_async(self, request):
+        r"""发布分析任务
+
+        本接口用于正式发布处于草稿状态的任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for PublishOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.PublishOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.PublishOpsAnalysisTaskResponse`
+        """
+        http_info = self._publish_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def publish_ops_analysis_task_async_invoker(self, request):
+        http_info = self._publish_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resume_ops_analysis_task_async(self, request):
+        r"""恢复被暂停的分析任务
+
+        本接口用于让暂停中的分析任务，恢复为会被触发的运行中状态。仅能作用于暂停状态的重复执行类任务上。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResumeOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ResumeOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ResumeOpsAnalysisTaskResponse`
+        """
+        http_info = self._resume_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def resume_ops_analysis_task_async_invoker(self, request):
+        http_info = self._resume_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resume_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/resume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_analysis_task_async(self, request):
+        r"""查询分析任务详情
+
+        本接口根据唯一ID获取单个分析任务的全量元数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsAnalysisTaskResponse`
+        """
+        http_info = self._show_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_analysis_task_async_invoker(self, request):
+        http_info = self._show_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_ops_agent_tuning_task_for_analysis_task_async(self, request):
+        r"""根据分析任务自动创建智能体优化任务
+
+        本接口用于根据分析任务自动创建智能体优化任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartOpsAgentTuningTaskForAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.StartOpsAgentTuningTaskForAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StartOpsAgentTuningTaskForAnalysisTaskResponse`
+        """
+        http_info = self._start_ops_agent_tuning_task_for_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_ops_agent_tuning_task_for_analysis_task_async_invoker(self, request):
+        http_info = self._start_ops_agent_tuning_task_for_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_ops_agent_tuning_task_for_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/tuning",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartOpsAgentTuningTaskForAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_ops_analysis_task_async(self, request):
+        r"""停止分析任务
+
+        本接口用于中断分析任务，任务流转为停止状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.StopOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StopOpsAnalysisTaskResponse`
+        """
+        http_info = self._stop_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_ops_analysis_task_async_invoker(self, request):
+        http_info = self._stop_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ops_analysis_task_async(self, request):
+        r"""修改分析任务
+
+        本接口用于更新指定任务的具体配置。为确保数据的一致性，系统严格限制仅处于“draft（草稿）”状态的任务才允许被修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOpsAnalysisTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsAnalysisTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsAnalysisTaskResponse`
+        """
+        http_info = self._update_ops_analysis_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ops_analysis_task_async_invoker(self, request):
+        http_info = self._update_ops_analysis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ops_analysis_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ops/analysis-tasks/{analysis_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOpsAnalysisTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_ops_dataset_items_async(self, request):
         r"""批量添加评测集条目
 
@@ -6498,6 +7787,84 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def invoke_ops_fine_grained_evaluation_async(self, request):
+        r"""细粒度评估
+
+        该接口提供细粒度评估能力，基于评估器维度，无需预先创建评测集和评估任务，只需指定评估器并传入待评估数据即可完成评估，评估结果通过流式（SSE）或非流式方式返回。
+        
+        适用场景：
+        - 场景1（dataset）：对已有的输入输出数据进行评估评分。
+        - 场景2（agent）：传入输入调用智能体获取输出后进行评估。
+        - 场景3（trace）：传入TraceId，从可观测子服务获取trace数据后进行评估。
+        
+        与现有评估任务流程的区别：
+        - 无需创建评测集，数据直接在请求中传入。
+        - 无需创建评估任务，即发即评。
+        - 评估结果默认不持久化，仅在响应中返回。
+        - 支持SSE流式返回，评估过程中实时推送结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for InvokeOpsFineGrainedEvaluation
+        :type request: :class:`huaweicloudsdkagentarts.v1.InvokeOpsFineGrainedEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.InvokeOpsFineGrainedEvaluationResponse`
+        """
+        http_info = self._invoke_ops_fine_grained_evaluation_http_info(request)
+        return self._call_api(**http_info)
+
+    def invoke_ops_fine_grained_evaluation_async_invoker(self, request):
+        http_info = self._invoke_ops_fine_grained_evaluation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invoke_ops_fine_grained_evaluation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/evaluators/{evaluator_id}/evaluations",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeOpsFineGrainedEvaluationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluator_id' in local_var_params:
+            path_params['evaluator_id'] = local_var_params['evaluator_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ops_evaluator_filter_options_async(self, request):
         r"""获取评估器筛选选项列表
 
@@ -7097,6 +8464,1269 @@ class AgentArtsAsyncClient(Client):
 
         return http_info
 
+    def list_ops_evolution_quotas_async(self, request):
+        r"""查询账号配额
+
+        获取当前认证账号的有效配额信息，包括配额类型、配额值和已使用数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsEvolutionQuotas
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsEvolutionQuotasRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsEvolutionQuotasResponse`
+        """
+        http_info = self._list_ops_evolution_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_evolution_quotas_async_invoker(self, request):
+        http_info = self._list_ops_evolution_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_evolution_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/evolution-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsEvolutionQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_agent_tuning_task_tags_async(self, request):
+        r"""批量添加智能体优化任务标签
+
+        批量添加智能体优化任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsAgentTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsAgentTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsAgentTuningTaskTagsResponse`
+        """
+        http_info = self._batch_create_ops_agent_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_agent_tuning_task_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_agent_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_agent_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/agent-tuning-tasks/{agent_tuning_task_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsAgentTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_analysis_task_tags_async(self, request):
+        r"""批量添加分析任务标签
+
+        批量添加分析任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsAnalysisTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsAnalysisTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsAnalysisTaskTagsResponse`
+        """
+        http_info = self._batch_create_ops_analysis_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_analysis_task_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_analysis_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_analysis_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/analysis-tasks/{analysis_task_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsAnalysisTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_create_ops_model_tuning_task_tags_async(self, request):
+        r"""批量添加模型优化任务标签
+
+        批量添加模型优化任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateOpsModelTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsModelTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchCreateOpsModelTuningTaskTagsResponse`
+        """
+        http_info = self._batch_create_ops_model_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_ops_model_tuning_task_tags_async_invoker(self, request):
+        http_info = self._batch_create_ops_model_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_ops_model_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/model-tuning-tasks/{task_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOpsModelTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_agent_tuning_task_tags_async(self, request):
+        r"""批量删除智能体优化任务标签
+
+        批量删除智能体优化任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsAgentTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsAgentTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsAgentTuningTaskTagsResponse`
+        """
+        http_info = self._batch_delete_ops_agent_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_agent_tuning_task_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_agent_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_agent_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/agent-tuning-tasks/{agent_tuning_task_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsAgentTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_analysis_task_tags_async(self, request):
+        r"""批量删除分析任务标签
+
+        批量删除分析任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsAnalysisTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsAnalysisTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsAnalysisTaskTagsResponse`
+        """
+        http_info = self._batch_delete_ops_analysis_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_analysis_task_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_analysis_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_analysis_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/analysis-tasks/{analysis_task_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsAnalysisTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_ops_model_tuning_task_tags_async(self, request):
+        r"""批量删除模型优化任务标签
+
+        批量删除模型优化任务标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOpsModelTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsModelTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.BatchDeleteOpsModelTuningTaskTagsResponse`
+        """
+        http_info = self._batch_delete_ops_model_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_ops_model_tuning_task_tags_async_invoker(self, request):
+        http_info = self._batch_delete_ops_model_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ops_model_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/model-tuning-tasks/{task_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOpsModelTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_agent_tuning_task_tags_async(self, request):
+        r"""查询账号下所有智能体优化任务标签列表
+
+        查询账号下所有智能体优化任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsAgentTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsAgentTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsAgentTuningTaskTagsResponse`
+        """
+        http_info = self._list_all_ops_agent_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_agent_tuning_task_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_agent_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_agent_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/agent-tuning-tasks/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsAgentTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_analysis_task_tags_async(self, request):
+        r"""查询账号下所有分析任务标签列表
+
+        查询账号下所有分析任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsAnalysisTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsAnalysisTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsAnalysisTaskTagsResponse`
+        """
+        http_info = self._list_all_ops_analysis_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_analysis_task_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_analysis_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_analysis_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/analysis-tasks/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsAnalysisTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_all_ops_model_tuning_task_tags_async(self, request):
+        r"""查询账号下所有模型优化任务标签列表
+
+        查询账号下所有模型优化任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAllOpsModelTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListAllOpsModelTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListAllOpsModelTuningTaskTagsResponse`
+        """
+        http_info = self._list_all_ops_model_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_ops_model_tuning_task_tags_async_invoker(self, request):
+        http_info = self._list_all_ops_model_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_ops_model_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/model-tuning-tasks/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllOpsModelTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_agent_tuning_task_tags_async(self, request):
+        r"""查询智能体优化任务标签列表
+
+        查询智能体优化任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAgentTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTaskTagsResponse`
+        """
+        http_info = self._list_ops_agent_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_agent_tuning_task_tags_async_invoker(self, request):
+        http_info = self._list_ops_agent_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_agent_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/agent-tuning-tasks/{agent_tuning_task_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAgentTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agent_tuning_task_id' in local_var_params:
+            path_params['agent_tuning_task_id'] = local_var_params['agent_tuning_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_agent_tuning_tasks_by_tags_async(self, request):
+        r"""根据标签查询智能体优化任务列表
+
+        根据标签查询智能体优化任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAgentTuningTasksByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTasksByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAgentTuningTasksByTagsResponse`
+        """
+        http_info = self._list_ops_agent_tuning_tasks_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_agent_tuning_tasks_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_agent_tuning_tasks_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_agent_tuning_tasks_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/agent-tuning-tasks/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAgentTuningTasksByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_analysis_task_tags_async(self, request):
+        r"""查询分析任务标签列表
+
+        查询分析任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAnalysisTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTaskTagsResponse`
+        """
+        http_info = self._list_ops_analysis_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_analysis_task_tags_async_invoker(self, request):
+        http_info = self._list_ops_analysis_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_analysis_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/analysis-tasks/{analysis_task_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAnalysisTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analysis_task_id' in local_var_params:
+            path_params['analysis_task_id'] = local_var_params['analysis_task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_analysis_tasks_by_tags_async(self, request):
+        r"""根据标签查询分析任务列表
+
+        根据标签查询分析任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsAnalysisTasksByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTasksByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsAnalysisTasksByTagsResponse`
+        """
+        http_info = self._list_ops_analysis_tasks_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_analysis_tasks_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_analysis_tasks_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_analysis_tasks_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/analysis-tasks/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsAnalysisTasksByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_tuning_task_tags_async(self, request):
+        r"""查询模型优化任务标签列表
+
+        查询模型优化任务标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelTuningTaskTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskTagsResponse`
+        """
+        http_info = self._list_ops_model_tuning_task_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_tuning_task_tags_async_invoker(self, request):
+        http_info = self._list_ops_model_tuning_task_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_tuning_task_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/model-tuning-tasks/{task_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelTuningTaskTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_tuning_tasks_by_tags_async(self, request):
+        r"""根据标签查询模型优化任务列表
+
+        根据标签查询模型优化任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelTuningTasksByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTasksByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTasksByTagsResponse`
+        """
+        http_info = self._list_ops_model_tuning_tasks_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_tuning_tasks_by_tags_async_invoker(self, request):
+        http_info = self._list_ops_model_tuning_tasks_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_tuning_tasks_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/model-tuning-tasks/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelTuningTasksByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_agent_tuning_task_nums_by_tags_async(self, request):
+        r"""根据标签查询智能体优化任务数量
+
+        根据标签查询智能体优化任务数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsAgentTuningTaskNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsAgentTuningTaskNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsAgentTuningTaskNumsByTagsResponse`
+        """
+        http_info = self._show_ops_agent_tuning_task_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_agent_tuning_task_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_agent_tuning_task_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_agent_tuning_task_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/agent-tuning-tasks/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsAgentTuningTaskNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_analysis_task_nums_by_tags_async(self, request):
+        r"""根据标签查询分析任务数量
+
+        根据标签查询分析任务数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsAnalysisTaskNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsAnalysisTaskNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsAnalysisTaskNumsByTagsResponse`
+        """
+        http_info = self._show_ops_analysis_task_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_analysis_task_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_analysis_task_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_analysis_task_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/analysis-tasks/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsAnalysisTaskNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_model_tuning_task_nums_by_tags_async(self, request):
+        r"""根据标签查询模型优化任务数量
+
+        根据标签查询模型优化任务数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsModelTuningTaskNumsByTags
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelTuningTaskNumsByTagsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelTuningTaskNumsByTagsResponse`
+        """
+        http_info = self._show_ops_model_tuning_task_nums_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_model_tuning_task_nums_by_tags_async_invoker(self, request):
+        http_info = self._show_ops_model_tuning_task_nums_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_model_tuning_task_nums_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/model-tuning-tasks/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsModelTuningTaskNumsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_ops_label_async(self, request):
         r"""创建标签
 
@@ -7346,6 +9976,1021 @@ class AgentArtsAsyncClient(Client):
         path_params = {}
         if 'label_id' in local_var_params:
             path_params['label_id'] = local_var_params['label_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ops_model_deployment_async(self, request):
+        r"""创建模型部署
+
+        本接口用于将模型产物发布为在线推理服务，需指定底层ModelArts资源（资源池、规格、实例数）与鉴权配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOpsModelDeployment
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateOpsModelDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateOpsModelDeploymentResponse`
+        """
+        http_info = self._create_ops_model_deployment_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ops_model_deployment_async_invoker(self, request):
+        http_info = self._create_ops_model_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ops_model_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOpsModelDeploymentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ops_model_deployment_async(self, request):
+        r"""删除模型部署
+
+        本接口用于彻底销毁指定的模型优化任务模型部署实例。除了清除数据库记录，还会联动底层平台彻底释放挂载的算力空间，操作不可逆。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOpsModelDeployment
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteOpsModelDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteOpsModelDeploymentResponse`
+        """
+        http_info = self._delete_ops_model_deployment_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ops_model_deployment_async_invoker(self, request):
+        http_info = self._delete_ops_model_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ops_model_deployment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ops/model-deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOpsModelDeploymentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_deployments_async(self, request):
+        r"""查询模型部署列表
+
+        本接口用于分页查询当前租户下的模型部署任务列表，支持按任务ID、状态、名称等多维度过滤，并返回全局状态统计。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelDeployments
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelDeploymentsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelDeploymentsResponse`
+        """
+        http_info = self._list_ops_model_deployments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_deployments_async_invoker(self, request):
+        http_info = self._list_ops_model_deployments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_deployments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelDeploymentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'model_service_name' in local_var_params:
+            query_params.append(('model_service_name', local_var_params['model_service_name']))
+        if 'model_name' in local_var_params:
+            query_params.append(('model_name', local_var_params['model_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_model_deployment_async(self, request):
+        r"""查询模型部署详情
+
+        本接口用于精确获取某个指定部署任务的全景元数据。与列表查询相比，它无需复杂过滤，直接通过唯一的 deployment_id 命中目标，返回包括绑定的智能体信息、上下游服务ID、最新运行状态以及最终生成的推理API调用地址等核心字段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsModelDeployment
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelDeploymentResponse`
+        """
+        http_info = self._show_ops_model_deployment_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_model_deployment_async_invoker(self, request):
+        http_info = self._show_ops_model_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_model_deployment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsModelDeploymentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_ops_model_deployment_async(self, request):
+        r"""启动模型部署
+
+        本接口用于启动已停止（stopped）的部署任务。系统会直接读取历史保留的资源与规格配置，重新向底层申请算力拉起服务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartOpsModelDeployment
+        :type request: :class:`huaweicloudsdkagentarts.v1.StartOpsModelDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StartOpsModelDeploymentResponse`
+        """
+        http_info = self._start_ops_model_deployment_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_ops_model_deployment_async_invoker(self, request):
+        http_info = self._start_ops_model_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_ops_model_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-deployments/{deployment_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartOpsModelDeploymentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_ops_model_deployment_async(self, request):
+        r"""停止模型部署
+
+        本接口用于对运行中的服务执行“软下线”。任务停止后将释放计算实例以停止计费，但会保留部署配置与服务端点记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopOpsModelDeployment
+        :type request: :class:`huaweicloudsdkagentarts.v1.StopOpsModelDeploymentRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StopOpsModelDeploymentResponse`
+        """
+        http_info = self._stop_ops_model_deployment_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_ops_model_deployment_async_invoker(self, request):
+        http_info = self._stop_ops_model_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_ops_model_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-deployments/{deployment_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopOpsModelDeploymentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ops_model_tuning_task_async(self, request):
+        r"""创建模型优化任务
+
+        本接口用于创建一个全新的模型优化任务。并配置训练任务中所使用的大模型、数据集与超参配置。
+        智能体优化的目的是对智能体或工作流中的大模型进行端到端的定向调优，通过强化学习算法提升模型在特定业务场景下的推理与表达能力。任务创建后默认进入“草稿”状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.CreateOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.CreateOpsModelTuningTaskResponse`
+        """
+        http_info = self._create_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._create_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-tuning-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ops_model_tuning_task_async(self, request):
+        r"""删除模型优化任务
+
+        本接口用于彻底删除指定的模型优化任务记录，系统会同步清除数据库元数据并通知底层平台清理相关临时空间。删除操作不可恢复，请谨慎操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.DeleteOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.DeleteOpsModelTuningTaskResponse`
+        """
+        http_info = self._delete_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._delete_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def execute_ops_model_tuning_task_async(self, request):
+        r"""执行模型优化任务
+
+        本接口用于正式触发处于草稿状态的任务，系统接单后将向底层计算平台正式提交训练作业，进入实际的算力调度与模型迭代阶段。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ExecuteOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ExecuteOpsModelTuningTaskResponse`
+        """
+        http_info = self._execute_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._execute_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}/execute",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_tuning_task_metrics_async(self, request):
+        r"""查询模型优化任务指标列表
+
+        本接口用于拉取训练过程中产生的核心评估指标数据，通常按迭代步数（Step/Epoch）时序返回。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelTuningTaskMetrics
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskMetricsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskMetricsResponse`
+        """
+        http_info = self._list_ops_model_tuning_task_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_tuning_task_metrics_async_invoker(self, request):
+        http_info = self._list_ops_model_tuning_task_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_tuning_task_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelTuningTaskMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_tuning_task_products_async(self, request):
+        r"""查询模型优化任务产物列表
+
+        本接口用于检索任务成功结束后生成的全部模型产物（Checkpoints/最终模型文件），包含产物的唯一标识、版本号及存储位置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelTuningTaskProducts
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskProductsRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTaskProductsResponse`
+        """
+        http_info = self._list_ops_model_tuning_task_products_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_tuning_task_products_async_invoker(self, request):
+        http_info = self._list_ops_model_tuning_task_products_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_tuning_task_products_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelTuningTaskProductsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ops_model_tuning_tasks_async(self, request):
+        r"""查询模型优化任务列表
+
+        本接口用于查询当前租户下的模型优化任务列表，支持通过任务名称和任务状态进行过滤，并支持分页功能。同时，响应中会返回全局状态的分组统计信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOpsModelTuningTasks
+        :type request: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTasksRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ListOpsModelTuningTasksResponse`
+        """
+        http_info = self._list_ops_model_tuning_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ops_model_tuning_tasks_async_invoker(self, request):
+        http_info = self._list_ops_model_tuning_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ops_model_tuning_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-tuning-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpsModelTuningTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tag_key_exists' in local_var_params:
+            query_params.append(('tag_key_exists', local_var_params['tag_key_exists']))
+            collection_formats['tag_key_exists'] = 'csv'
+        if 'tag_key_matches' in local_var_params:
+            query_params.append(('tag_key_matches', local_var_params['tag_key_matches']))
+            collection_formats['tag_key_matches'] = 'csv'
+        if 'tag_value_matches' in local_var_params:
+            query_params.append(('tag_value_matches', local_var_params['tag_value_matches']))
+            collection_formats['tag_value_matches'] = 'csv'
+        if 'tag_match_policy' in local_var_params:
+            query_params.append(('tag_match_policy', local_var_params['tag_match_policy']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ops_model_tuning_task_async(self, request):
+        r"""查询模型优化任务详情
+
+        本接口根据唯一ID获取单个模型优化任务的全量元数据，涵盖底层算力配置、详尽的超参数设定、数据集绑定及实时运行状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.ShowOpsModelTuningTaskResponse`
+        """
+        http_info = self._show_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._show_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_ops_model_tuning_task_async(self, request):
+        r"""停止模型优化任务
+
+        本接口用于中断正在运行的训练任务。执行后将立刻中止算力消耗并释放底层的GPU/NPU资源，任务流转为停止状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StopOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.StopOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.StopOpsModelTuningTaskResponse`
+        """
+        http_info = self._stop_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._stop_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ops_model_tuning_task_async(self, request):
+        r"""修改模型优化任务
+
+        本接口用于更新指定任务的具体配置。为确保训练逻辑与数据的一致性，系统严格限制仅处于“draft（草稿）”状态的任务才允许被修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOpsModelTuningTask
+        :type request: :class:`huaweicloudsdkagentarts.v1.UpdateOpsModelTuningTaskRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.UpdateOpsModelTuningTaskResponse`
+        """
+        http_info = self._update_ops_model_tuning_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ops_model_tuning_task_async_invoker(self, request):
+        http_info = self._update_ops_model_tuning_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ops_model_tuning_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ops/model-tuning-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOpsModelTuningTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
 
@@ -7967,6 +11612,79 @@ class AgentArtsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def generate_ops_multimodal_upload_url_async(self, request):
+        r"""获取多模态文件上传地址
+
+        该接口用于生成OBS预签名上传链接和对应的OBS路径，供用户上传多模态文件（如PPT等）。
+        用户使用返回的上传链接将文件上传至OBS后，可在细粒度评估接口中传入OBS路径进行评估。
+        **约束限制：**
+        - 同一用户未使用的上传链接数量上限为5个。
+        - 上传链接有效期为15分钟。
+        - 单个文件大小上限100MB。
+        - file_suffix仅支持ppt和pptx。
+        **典型应用场景：**
+        用户在使用PPT整体质量评估器进行评估前，先调用该接口获取上传地址，将PPT文件上传至OBS，然后在细粒度评估接口中传入OBS路径完成评估。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GenerateOpsMultimodalUploadUrl
+        :type request: :class:`huaweicloudsdkagentarts.v1.GenerateOpsMultimodalUploadUrlRequest`
+        :rtype: :class:`huaweicloudsdkagentarts.v1.GenerateOpsMultimodalUploadUrlResponse`
+        """
+        http_info = self._generate_ops_multimodal_upload_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def generate_ops_multimodal_upload_url_async_invoker(self, request):
+        http_info = self._generate_ops_multimodal_upload_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _generate_ops_multimodal_upload_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ops/evaluation-multimodal-upload-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "GenerateOpsMultimodalUploadUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -9648,7 +13366,7 @@ class AgentArtsAsyncClient(Client):
         return http_info
 
     def show_ops_agent_metric_top_n_async(self, request):
-        r"""查询单个指标的topN接口
+        r"""查询指标的topN
 
         查询单个指标的topN接口
         
@@ -9713,7 +13431,7 @@ class AgentArtsAsyncClient(Client):
         return http_info
 
     def show_ops_agent_metric_trend_async(self, request):
-        r"""查询某个指标的趋势图接口
+        r"""查询指标趋势图
 
         查询某个指标的趋势图接口
         
@@ -10292,7 +14010,7 @@ class AgentArtsAsyncClient(Client):
         return http_info
 
     def tag_ops_trace_label_async(self, request):
-        r"""trace数据打标签
+        r"""Trace数据标注
 
         trace数据打标签
         
@@ -10359,9 +14077,9 @@ class AgentArtsAsyncClient(Client):
         return http_info
 
     def update_ops_trace_feedback_async(self, request):
-        r"""trace数据点赞点踩
+        r"""trace数据点赞、点踩
 
-        trace数据点赞点踩
+        trace数据点赞、点踩
         
         Please refer to HUAWEI cloud API Explorer for details.
 

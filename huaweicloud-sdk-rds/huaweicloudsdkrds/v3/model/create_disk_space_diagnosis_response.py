@@ -28,7 +28,7 @@ class CreateDiskSpaceDiagnosisResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: **参数解释**：   下发结果。  **约束限制**：   不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：   不涉及。
+        :param result: **参数解释**：  下发结果。  **约束限制**：  不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：  不涉及。
         :type result: str
         """
         
@@ -44,7 +44,7 @@ class CreateDiskSpaceDiagnosisResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this CreateDiskSpaceDiagnosisResponse.
 
-        **参数解释**：   下发结果。  **约束限制**：   不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：   不涉及。
+        **参数解释**：  下发结果。  **约束限制**：  不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：  不涉及。
 
         :return: The result of this CreateDiskSpaceDiagnosisResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateDiskSpaceDiagnosisResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this CreateDiskSpaceDiagnosisResponse.
 
-        **参数解释**：   下发结果。  **约束限制**：   不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：   不涉及。
+        **参数解释**：  下发结果。  **约束限制**：  不涉及。  **取值范围**：  - success 代表后台开始诊断。  **默认取值**：  不涉及。
 
         :param result: The result of this CreateDiskSpaceDiagnosisResponse.
         :type result: str
